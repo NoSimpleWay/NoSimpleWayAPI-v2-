@@ -4,6 +4,7 @@
 #include <iostream>
 #include <glad/glad.h>
 
+
 namespace EGraphicCore
 {
 	static int SCREEN_WIDTH = 1920, SCREEN_HEIGHT = 1080;
@@ -26,7 +27,6 @@ constexpr unsigned int TOTAL_INDICES_COUNT					= INDICES_PER_SHAPE * MAX_SHAPES_
 class Batcher
 {
 private:
-	float										vertex_buffer[TOTAL_MAX_VERTICES_COUNT];	//vertex buffer for batcher
 	
 	unsigned int									last_vertice_buffer_index;				//last element of vertex buffer
 
