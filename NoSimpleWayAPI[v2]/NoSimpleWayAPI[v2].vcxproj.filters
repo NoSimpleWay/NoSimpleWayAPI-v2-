@@ -27,6 +27,9 @@
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.cpp">
       <Filter>NoSimpleWayAPI[v2]</Filter>
     </ClCompile>
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.cpp">
+      <Filter>NoSimpleWayAPI[v2]</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h">
