@@ -1,4 +1,9 @@
 #pragma once
+//#define STB_IMAGE_IMPLEMENTATION
+
+//#define STB_IMAGE_IMPLEMENTATION
+/**/#include <stb_image.h>
+
 #include <array>
 
 #include <iostream>
@@ -11,15 +16,29 @@
 /**/#include <GLFW/glfw3.h>
 #endif
 
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
+#ifndef _GLM_LINKER_
+	/**/#define _GLM_LINKER_
+	#include <glm/glm.hpp>
+	#include <glm/gtc/matrix_transform.hpp>
+	#include <glm/gtc/type_ptr.hpp>
+#endif
 
 #include <learnopengl/shader_s.h>
 
 #include <vector>
 
-#include <stb_image.h>
+
+//VERTEX BUFFER ARRAY
+constexpr unsigned int VERTICES_PER_SHAPE = 4;
+constexpr unsigned int MAX_SHAPES_COUNT = 1000;
+constexpr unsigned int EXPECTABLE_PARAMETERS_COUNT_FOR_VERTEX = 10;
+
+constexpr unsigned int TOTAL_MAX_VERTICES_COUNT = VERTICES_PER_SHAPE * MAX_SHAPES_COUNT * EXPECTABLE_PARAMETERS_COUNT_FOR_VERTEX;
+
+//INDICES ARRAY
+constexpr unsigned int INDICES_PER_SHAPE = (int)(VERTICES_PER_SHAPE * 1.5f);
+constexpr unsigned int TOTAL_INDICES_COUNT = INDICES_PER_SHAPE * MAX_SHAPES_COUNT;
+
 
 class ETextureAtlas;
 class Batcher;
@@ -27,11 +46,13 @@ class ETextureGabarite;
 
 namespace EGraphicCore
 {
+	
+
 	extern int			SCREEN_WIDTH, SCREEN_HEIGHT;
 	extern float			correction_x, correction_y;
-	extern Shader*			texture_atlas_putter_shader;
+	extern Shader*			shader_texture_atlas_putter;
 
-	extern glm::mat4		matrix_transform;
+	extern glm::mat4		matrix_transform_default;
 	extern Batcher*		default_batcher_for_texture_atlas;
 
 	extern GLFWwindow*		main_window;
@@ -40,6 +61,13 @@ namespace EGraphicCore
 	extern ETextureAtlas*	default_texture_atlas;
 	extern unsigned char*	image_data;
 	extern int			texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
+	extern ETextureAtlas*	default_texture_atlas;
+	extern float			delta_time;
+	extern float			saved_time_for_delta;
+
+
+
+	extern				std::vector<ETextureGabarite*> texture_gabarites_list;
 
 	extern void processInput(GLFWwindow* window);
 
@@ -47,15 +75,17 @@ namespace EGraphicCore
 	extern void recalculate_correction();
 
 	extern void switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas);
-	extern void make_transform_from_size(glm::mat4 _transform, float _size_x, float _size_y);
+	extern void make_transform_from_size(float _size_x, float _size_y);
 	//void load_texture(char const* _path, int _id);
 
 	extern void initiate_graphic_core();
-	extern std::vector<ETextureGabarite*> texture_gabarites_list;
+
+	
+
 	extern void load_texture(char const* _path, int _id);
 	extern ETextureGabarite* put_texture_to_atlas(std::string _name, ETextureAtlas* _atlas);
-	extern void fill_vertex_buffer_default(float _array[], int _start_offset, Batcher* _batch, float _x, float _y, float _w, float _h);
 	
+	extern void fill_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h);
 };
 
 typedef float EColor_4;
@@ -85,19 +115,10 @@ namespace zalupa
 
 
 
-//VERTEX BUFFER ARRAY
-constexpr unsigned int VERTICES_PER_SHAPE					= 4;
-constexpr unsigned int MAX_SHAPES_COUNT						= 1000;
-constexpr unsigned int EXPECTABLE_PARAMETERS_COUNT_FOR_VERTEX	= 10;
-
-constexpr unsigned int TOTAL_MAX_VERTICES_COUNT				= VERTICES_PER_SHAPE * MAX_SHAPES_COUNT * EXPECTABLE_PARAMETERS_COUNT_FOR_VERTEX;
-
-//INDICES ARRAY
-constexpr unsigned int INDICES_PER_SHAPE					= (int)(VERTICES_PER_SHAPE * 1.5f);
-constexpr unsigned int TOTAL_INDICES_COUNT					= INDICES_PER_SHAPE * MAX_SHAPES_COUNT;
 
 
-typedef										std::array<unsigned short, TOTAL_INDICES_COUNT> array_type;
+
+typedef										unsigned short  indice_type;
 
 
 
@@ -109,43 +130,23 @@ class Batcher
 {
 private:
 	
-	unsigned int									last_vertice_buffer_index;				//last element of vertex buffer
+	
 	unsigned int									VBO, VAO, EBO = 0;
 	unsigned short									parameters_count = 1;
 
-	float										vertex_buffer[TOTAL_MAX_VERTICES_COUNT];
+	GLuint										gl_vertex_attribute_id = 0;
+	unsigned short									gl_vertex_attribute_offset = 0;
+	
+
+	
 
 
 	//BATCHER VERTEX DATA SEGMENT
-	unsigned int									vertices_data_per_vertex;			//count of parameters for one vertices
+	unsigned int									vertices_data_per_vertex = 0;			//count of parameters for one vertices
 	//const std::array<int, 255>						indices_buffer[TOTAL_INDICES_COUNT] = generateData();	//indices array
 
 	
-	const array_type								indices_buffer = generateData();
-
-	array_type generateData() {
-		array_type a;
-		size_t indices_id		= 0;
-		size_t indices_order	= 0;
-
-		for (int i = 0; i < MAX_SHAPES_COUNT; i++) {
-			a[indices_id + 0] = indices_order + 0;
-			a[indices_id + 1] = indices_order + 1;
-			a[indices_id + 2] = indices_order + 3;
-
-			a[indices_id + 3] = indices_order + 1;
-			a[indices_id + 4] = indices_order + 2;
-			a[indices_id + 5] = indices_order + 3;
-
-			//std::
-
-			indices_id += 6;
-			indices_order += 4;
-
-			//std::cout << "Generated indices. Id->[" << std::to_string(i) << "]" << " indices count->["<< std::to_string(indices_id) << "]" << std::endl;
-		}
-		return a;
-	}
+	indice_type									indices_buffer[TOTAL_INDICES_COUNT]{};
 
 	
 	/*float color_red = 0.0f;
@@ -154,18 +155,28 @@ private:
 	float color_alpha	= 0.0f;*/
 
 public:
-	EColor_4 batch_color[4];
+	float										vertex_buffer[TOTAL_MAX_VERTICES_COUNT]{};
+	unsigned int									last_vertice_buffer_index = 0;				//last element of vertex buffer
+	EColor_4 batch_color[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
 
 	Batcher();
 	~Batcher();
 
 	void draw_call();
 
+	void set_total_attribute_count(GLsizei _attribute_count);
+	void register_new_vertex_attribute(GLint _subpameters_count);
 	
 	void set_color(const float(&_color)[4]);
 	void reset();
+
 	unsigned int get_last_id();
 	void set_last_id(unsigned int _id);
+
+	GLsizei										gl_vertex_attribute_total_count = 0;
+
+	
+	
 
 };
 
@@ -175,9 +186,9 @@ private:
 	int* atlas_size_x	= new int (0);
 	int* atlas_size_y	= new int (0);
 
-	unsigned short* framebuffer	= new unsigned short(0);
-	unsigned short* colorbuffer	= new unsigned short(0);
-	unsigned short* rbo			= new unsigned short(0);;
+	GLuint* framebuffer	= new GLuint(0);
+	GLuint* colorbuffer = new GLuint(0);
+	GLuint* rbo		= new GLuint(0);
 
 	
 
@@ -188,7 +199,7 @@ public:
 	unsigned short get_atlas_size_y();
 	unsigned short get_framebuffer();
 
-	ETextureAtlas	(float _size_x, float _size_y);
+	ETextureAtlas	(float _size_x, float _size_y, int _color_depth = GL_RGBA, int _byte_mode = GL_UNSIGNED_BYTE);
 	~ETextureAtlas	();
 
 	bool** free_space;

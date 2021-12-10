@@ -5,19 +5,24 @@
 
 namespace EGraphicCore
 {
-	int				SCREEN_WIDTH = 800, SCREEN_HEIGHT = 600;
-	float			correction_x = 1.0f, correction_y = 1.0f;
-	Shader*			texture_atlas_putter_shader;
+	int							SCREEN_WIDTH = 1920, SCREEN_HEIGHT = 1080;
+	float						correction_x = 1.0f, correction_y = 1.0f;
+	Shader*						shader_texture_atlas_putter;
 
-	glm::mat4			matrix_transform;
-	Batcher*			default_batcher_for_texture_atlas;
+	glm::mat4						matrix_transform_default;
+	Batcher*						default_batcher_for_texture_atlas;
 
-	GLFWwindow*		main_window;
+	GLFWwindow*					main_window;
 
-	unsigned int		texture[32];
-	ETextureAtlas*		default_texture_atlas;
-	unsigned char*		image_data;
-	int				texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
+	unsigned int					texture[32];
+	ETextureAtlas*					default_texture_atlas;
+	unsigned char*					image_data;
+	int							texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
+	std::vector<ETextureGabarite*>	texture_gabarites_list;
+	float						delta_time;
+	float						saved_time_for_delta;
+
+	//ETextureAtlas*					default_texture_atlas;
 
 
 	void processInput(GLFWwindow* window);
@@ -34,6 +39,66 @@ namespace EGraphicCore
 
 Batcher::Batcher()
 {
+
+	size_t indices_id = 0;
+	size_t indices_order = 0;
+
+	for (int i = 0; i < MAX_SHAPES_COUNT; i++) {
+		indices_buffer[indices_id + 0] = indices_order + 0;
+		indices_buffer[indices_id + 1] = indices_order + 1;
+		indices_buffer[indices_id + 2] = indices_order + 3;
+
+		indices_buffer[indices_id + 3] = indices_order + 1;
+		indices_buffer[indices_id + 4] = indices_order + 2;
+		indices_buffer[indices_id + 5] = indices_order + 3;
+
+		//std::
+
+		indices_id += 6;
+		indices_order += 4;
+
+		//std::cout << "Generated indices. Id->[" << std::to_string(i) << "]" << " indices count->["<< std::to_string(indices_id) << "]" << std::endl;
+	}
+
+	std::cout << "initiate" << std::endl;
+	glGenVertexArrays(1, &VAO);
+	glBindVertexArray(VAO);
+
+	glGenBuffers(1, &VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+
+	glGenBuffers(1, &EBO);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertex_buffer), vertex_buffer, GL_STATIC_DRAW);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices_buffer), indices_buffer, GL_STATIC_DRAW);
+
+	/*
+	std::cout << "initiate" << std::endl;
+	glGenVertexArrays(1, &VAO);
+	glBindVertexArray(VAO);
+
+	glGenBuffers(1, &VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+
+	glGenBuffers(1, &EBO);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertex_buffer), vertex_buffer, GL_STATIC_DRAW);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices_buffer), indices_buffer, GL_STATIC_DRAW);
+
+	// position attribute
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+	glEnableVertexAttribArray(0);
+	// color attribute
+	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(2 * sizeof(float)));
+	glEnableVertexAttribArray(1);
+	// texture coord attribute
+	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+	glEnableVertexAttribArray(2);
+	*/
+
+
 	//zzz(indices_buffer);
 	//indices_buffer = generateData();
 }
@@ -55,15 +120,21 @@ void Batcher::draw_call()
 	if (last_vertice_buffer_index > 0)
 	{
 		glBindBuffer(GL_ARRAY_BUFFER, VAO);
-		glBindVertexArray(VAO);
-
 		glBindBuffer(GL_ARRAY_BUFFER, VBO);
 		glBufferData(GL_ARRAY_BUFFER, sizeof(float) * last_vertice_buffer_index, vertex_buffer, GL_DYNAMIC_DRAW);
+		glBindVertexArray(VAO);
+		
 
 
 
-		glDrawElements(GL_TRIANGLES, 6 * (int)(last_vertice_buffer_index / parameters_count), GL_UNSIGNED_SHORT, 0);
+		glDrawElements(GL_TRIANGLES, 6 * (int)(last_vertice_buffer_index / (gl_vertex_attribute_total_count * 4)), GL_UNSIGNED_SHORT, 0);
+
+		//glDrawElements(GL_TRIANGLES, 6 * (last_vertice_buffer_index / 32), GL_UNSIGNED_INT, 0);
+
+		//std::cout << "Draw call! element [16] is: " << std::to_string(vertex_buffer[16]) << std::endl;
 	}
+
+	reset();
 }
 
 void Batcher::set_color(const float(&_color)[4])
@@ -86,6 +157,29 @@ unsigned int Batcher::get_last_id()
 void Batcher::set_last_id(unsigned int _id)
 {
 	last_vertice_buffer_index = _id;
+}
+
+void Batcher::set_total_attribute_count(GLsizei _attribute_count)
+{
+	gl_vertex_attribute_total_count = _attribute_count;
+}
+
+void Batcher::register_new_vertex_attribute(GLint _subpameters_count)
+{
+	glVertexAttribPointer
+	(
+		gl_vertex_attribute_id,
+		_subpameters_count,
+		GL_FLOAT,
+		GL_FALSE,
+		gl_vertex_attribute_total_count * sizeof(float),
+		(void*) ( gl_vertex_attribute_offset * sizeof(float) )
+	);
+
+	glEnableVertexAttribArray	(gl_vertex_attribute_id);
+
+	gl_vertex_attribute_id++;
+	gl_vertex_attribute_offset += _subpameters_count;
 }
 
 /*
@@ -127,19 +221,49 @@ unsigned short ETextureAtlas::get_framebuffer()
 	return *framebuffer;
 }
 
-ETextureAtlas::ETextureAtlas(float _size_x, float _size_y)
+ETextureAtlas::ETextureAtlas(float _size_x, float _size_y, int _color_depth, int _byte_mode)
 {
-	free_space = new bool* [_size_x];
 
-	for (unsigned short i = 0; i++; i++)
+	*atlas_size_x = _size_x;
+	*atlas_size_y = _size_y;
+
+	//////////////////////////////
+	glGenFramebuffers(1, framebuffer);
+	glBindFramebuffer(GL_FRAMEBUFFER, *framebuffer);
+
+	glGenTextures(1, colorbuffer);
+	glBindTexture(GL_TEXTURE_2D, *colorbuffer);
+
+	glTexImage2D(GL_TEXTURE_2D, 0, _color_depth, _size_x, _size_y, 0, GL_RGBA, _byte_mode, NULL);
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
+
+	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, *colorbuffer, 0);
+
+	// now that we actually created the framebuffer and added all attachments we want to check if it is actually complete now
+
+	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
 	{
-		free_space[i] = new bool[_size_y];
+		std::cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!" << std::endl;
+	}
 
-		for (int j = 0; j < _size_y; ++j)
+	glBindFramebuffer(GL_FRAMEBUFFER, 0);
+	//////////////////////////////////////
+
+	free_space = new bool* [(int)(_size_x / 4.0f)];
+
+	for (auto i = 0; i < (int)(_size_x / 4.0f); i++)
+	{
+		free_space[i] = new bool[(int)(_size_y / 4.0f)];
+
+		for (auto j = 0; j < (int)(_size_y / 4.0f); ++j)
 		{
 			free_space[i][j] = true;
 		}
 	}
+
+
 }
 
 ETextureAtlas::~ETextureAtlas()
@@ -156,26 +280,26 @@ void EGraphicCore::switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas)
 
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	glBlendEquation(GL_MAX);
 
-	make_transform_from_size(EGraphicCore::matrix_transform, _atlas->get_atlas_size_x() * 2.0f, _atlas->get_atlas_size_y() * 2.0f);
-	EGraphicCore::texture_atlas_putter_shader->use();	
-
-
+	make_transform_from_size(_atlas->get_atlas_size_x(), _atlas->get_atlas_size_y());
+	EGraphicCore::shader_texture_atlas_putter->use();	
 
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, EGraphicCore::texture[0]);
-	EGraphicCore::texture_atlas_putter_shader->setInt("texture1", 0);
+	EGraphicCore::shader_texture_atlas_putter->setInt("texture1", 0);
 	default_batcher_for_texture_atlas->set_color(EColorCollection::COLOR_WHITE);
+
+	
 }
 
-void EGraphicCore::make_transform_from_size(glm::mat4 _transform, float _size_x, float _size_y)
+void EGraphicCore::make_transform_from_size(float _size_x, float _size_y)
 {
-	_transform = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
-	_transform = glm::translate(EGraphicCore::matrix_transform, glm::vec3(-1, -1, 0.0f));
-	_transform = glm::scale(EGraphicCore::matrix_transform, glm::vec3(1.0f / _size_x, 1.0f / _size_y, 1.0f));
-
-	unsigned int transformLoc = glGetUniformLocation(EGraphicCore::texture_atlas_putter_shader->ID, "transform");
-	glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(EGraphicCore::matrix_transform));
+		EGraphicCore::matrix_transform_default = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+		EGraphicCore::matrix_transform_default = glm::translate(EGraphicCore::matrix_transform_default, glm::vec3(-1.0f, -1.0f, 0.0f));
+		EGraphicCore::matrix_transform_default = glm::scale(EGraphicCore::matrix_transform_default, glm::vec3(1.0f / _size_x * 2.0f, 1.0f / _size_y * 2.0f, 1.0f));
+		unsigned int transformLoc = glGetUniformLocation(EGraphicCore::shader_texture_atlas_putter->ID, "transform");
+		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(EGraphicCore::matrix_transform_default));
 }
 
 //void EGraphicCore::make_transform_from_size(glm::mat4 _transform)
@@ -205,7 +329,7 @@ void EGraphicCore::initiate_graphic_core()
 	glfwWindowHint(GLFW_DECORATED, NULL);
 
 	EGraphicCore::main_window = glfwCreateWindow(EGraphicCore::SCREEN_WIDTH, EGraphicCore::SCREEN_HEIGHT, "Window name", NULL, NULL);
-	std::cout << "[0]window is:" << (EGraphicCore::main_window) << std::endl;
+	//std::cout << "[0]window is:" << (EGraphicCore::main_window) << std::endl;
 
 	if (EGraphicCore::main_window == NULL)
 	{
@@ -213,16 +337,10 @@ void EGraphicCore::initiate_graphic_core()
 		glfwTerminate();
 		//return -1;
 	}
-	else
-	{
-		std::cout << "Hi, idiot, window is NOT null!" << std::endl;
-	}
 
 	glfwMakeContextCurrent(EGraphicCore::main_window);
 
 	glfwSetFramebufferSizeCallback(EGraphicCore::main_window, framebuffer_size_callback);
-	
-
 	glfwSetInputMode(EGraphicCore::main_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 
 	//glfwSetMousePos(0, 0);
@@ -232,7 +350,32 @@ void EGraphicCore::initiate_graphic_core()
 		//return -1;
 	}
 
+	EGraphicCore::shader_texture_atlas_putter = new Shader("data/#default.vs", "data/#default.fs");
+	EGraphicCore::shader_texture_atlas_putter->use();
+
 	EGraphicCore::default_batcher_for_texture_atlas = new Batcher();
+
+
+
+
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+	glViewport(0, 0, EGraphicCore::SCREEN_WIDTH, EGraphicCore::SCREEN_HEIGHT);
+	recalculate_correction();
+
+	glBindFramebuffer(GL_FRAMEBUFFER, 0);
+	glDisable(GL_DEPTH_TEST);
+	glBlendEquation(GL_FUNC_ADD);
+
+	EGraphicCore::default_texture_atlas = new ETextureAtlas(4096, 4096);
+	EGraphicCore::load_texture("data/textures/white_pixel.png", 0);
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, EGraphicCore::texture[0]);
+
+	EGraphicCore::shader_texture_atlas_putter->setInt("texture1", EGraphicCore::texture[0]);
+
+	//EWindow::default_texture_atlas = new ETextureAtlas(4096, 4096);
 }
 
 void EGraphicCore::load_texture(char const* _path, int _id)
@@ -294,7 +437,7 @@ ETextureGabarite* EGraphicCore::put_texture_to_atlas(std::string _name, ETexture
 		if (_name[i] == '\\') { _name[i] = '/'; }
 	}
 
-	ETextureGabarite* duplicate_gabarite = NULL;
+	ETextureGabarite* duplicate_gabarite = nullptr;
 
 	//search already loaded texture gabarite
 	for (ETextureGabarite* g : EGraphicCore::texture_gabarites_list)
@@ -313,90 +456,120 @@ ETextureGabarite* EGraphicCore::put_texture_to_atlas(std::string _name, ETexture
 
 		EGraphicCore::load_texture(_name.c_str(), 0);
 
+		//search free place for new texture
 		int place_x = 0;
 		int place_y = 0;
-		for (int x = 0; x < 1024; x++)
-			for (int y = 0; y < 1024; y++)
+		for (int x = 0; x < (int)(_atlas->get_atlas_size_x() / 4.0f); x++)
+			for (int y = 0; y < (int)(_atlas->get_atlas_size_y() / 4.0f); y++)
 			{
 				if (_atlas->can_place_here(x, y, ceil(EGraphicCore::last_texture_width / 4.0f), ceil(EGraphicCore::last_texture_height / 4.0f)))
 				{
 					place_x = x * 4;
 					place_y = y * 4;
 
-					x = 99999;
-					y = 99999;
+					break;
 				}
 			}
 
+		//
 		for (int x = (ceil)(place_x / 4.0f) - 2; x < (ceil)((place_x + EGraphicCore::last_texture_width) / 4.0f) + 2; x++)
 			for (int y = (ceil)(place_y / 4.0f) - 2; y < (ceil)((place_y + EGraphicCore::last_texture_height) / 4.0f) + 2; y++)
-				if ((x < 1024) & (y < 1024) & (x >= 0) & (y >= 0))
+				if
+				(
+					(x < (int)(_atlas->get_atlas_size_x() / 4.0f))
+					&
+					(y < (int)(_atlas->get_atlas_size_y() / 4.0f))
+					&
+					(x >= 0)
+					&
+					(y >= 0)
+				)
 				{
 					_atlas->free_space[x][y] = false;
 				}
+
+		EGraphicCore::default_batcher_for_texture_atlas->reset();
+		EGraphicCore::fill_vertex_buffer_default
+		(
+			EGraphicCore::default_batcher_for_texture_atlas->vertex_buffer,
+			EGraphicCore::default_batcher_for_texture_atlas->last_vertice_buffer_index,
+			place_x,
+			place_y,
+			EGraphicCore::last_texture_width,
+			EGraphicCore::last_texture_height
+		);
+
 	}
 
-	EGraphicCore::default_batcher_for_texture_atlas->reset();
-	EGraphicCore::default_batcher_for_texture_atlas->set_color(EColorCollection::COLOR_WHITE);
+	
 
-	glBlendEquation(GL_MAX);
+
+
 	return new_gabarite;
 }
 
-void EGraphicCore::fill_vertex_buffer_default(float _array[], int _start_offset, Batcher* _batch, float _x, float _y, float _w, float _h)
+void EGraphicCore::fill_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h)
 {
-	_array[_start_offset + 0] = (_x + _w);
-	_array[_start_offset + 1] = (_y + _h);
+	//address arithmetic, get pointer to buffer array, and move to +_offset
+	_array += _start_offset;
 
-	_array[_start_offset + 2] = _batch->batch_color[0];
-	_array[_start_offset + 3] = _batch->batch_color[1];
-	_array[_start_offset + 4] = _batch->batch_color[2];
-	_array[_start_offset + 5] = _batch->batch_color[3];
+	//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
+	_array[0] = (_x + _w);
+	_array[1] = (_y + _h);
 
-	_array[_start_offset + 6] = 1.0f;
-	_array[_start_offset + 7] = 1.0f;
+	_array[2] = 1.0f;
+	_array[3] = 1.0f;
+	_array[4] = 1.0f;
+	_array[5] = 1.0f;
+
+	_array[6] = 1.0f;
+	_array[7] = 1.0f;
 
 	//..
 	//.#
-	_array[_start_offset + 8] = (_x + _w);
-	_array[_start_offset + 9] = _y;
+	_array[8] = (_x + _w);
+	_array[9] = _y;
 
-	_array[_start_offset + 10] = _batch->batch_color[0];
-	_array[_start_offset + 11] = _batch->batch_color[1];
-	_array[_start_offset + 12] = _batch->batch_color[2];
-	_array[_start_offset + 13] = _batch->batch_color[3];
+	_array[10] = 1.0f;
+	_array[11] = 1.0f;
+	_array[12] = 1.0f;
+	_array[13] = 1.0f;
 
-	_array[_start_offset + 14] = 1.0f;
-	_array[_start_offset + 15] = 0.0f;
+	_array[14] = 1.0f;
+	_array[15] = 0.0f;
 
 	//..
 	//#.
-	_array[_start_offset + 16] = _x;
-	_array[_start_offset + 17] = _y;
+	_array[16] = _x;
+	_array[17] = _y;
 
-	_array[_start_offset + 18] = _batch->batch_color[0];
-	_array[_start_offset + 19] = _batch->batch_color[1];
-	_array[_start_offset + 20] = _batch->batch_color[2];
-	_array[_start_offset + 21] = _batch->batch_color[3];
+	_array[18] = 1.0f;
+	_array[19] = 1.0f;
+	_array[20] = 1.0f;
+	_array[21] = 1.0f;
 
-	_array[_start_offset + 22] = 0.0f;
-	_array[_start_offset + 23] = 0.0f;
+	_array[22] = 0.0f;
+	_array[23] = 0.0f;
 
 	//#.
 	//..
-	_array[_start_offset + 24] = _x;
-	_array[_start_offset + 25] = (_y + _h);
+	_array[24] = _x;
+	_array[25] = (_y + _h);
 
-	_array[_start_offset + 26] = _batch->batch_color[0];
-	_array[_start_offset + 27] = _batch->batch_color[1];
-	_array[_start_offset + 28] = _batch->batch_color[2];
-	_array[_start_offset + 29] = _batch->batch_color[3];
+	_array[26] = 1.0f;
+	_array[27] = 1.0f;
+	_array[28] = 1.0f;
+	_array[29] = 1.0f;
 
-	_array[_start_offset + 30] = 0.0f;
-	_array[_start_offset + 31] = 1.0f;
+	_array[30] = 0.0f;
+	_array[31] = 1.0f;
 
 	_start_offset += 32;
 }
+
+
+
+
 
 
 void EGraphicCore::processInput(GLFWwindow* window)

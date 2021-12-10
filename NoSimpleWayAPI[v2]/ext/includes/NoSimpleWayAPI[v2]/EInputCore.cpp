@@ -1,6 +1,19 @@
 #pragma once
 #include "EInputCore.h"
 
+namespace EInputCore
+{
+	int		scroll_direction;
+
+	bool		MOUSE_BUTTON_LEFT;
+	bool		MOUSE_BUTTON_RIGHT;
+	bool		MOUSE_BUTTON_MID;
+
+	bool		MOUSE_POSITION_X;
+	bool		MOUSE_POSITION_Y;
+
+	char		LAST_INPUTED_CHAR = NULL;
+};
 
 void EInputCore::initiate_input_core()
 {
