@@ -1,5 +1,12 @@
 #pragma once
-#include "EInputCore.h"
+
+
+#ifndef _E_INPUT_CORE_LINKER_
+	#define _E_INPUT_CORE_LINKER_
+	#include "EInputCore.h"
+#endif
+
+
 
 namespace EInputCore
 {
@@ -13,7 +20,18 @@ namespace EInputCore
 	bool		MOUSE_POSITION_Y;
 
 	char		LAST_INPUTED_CHAR = NULL;
+
+
+
 };
+
+
+std::string std::to_string(std::string _string)
+{
+	return _string;
+}
+
+
 
 void EInputCore::initiate_input_core()
 {
@@ -29,6 +47,25 @@ void EInputCore::initiate_input_core()
 		std::cout << "Window is NULL" << std::endl;
 	}
 }
+
+extern void EInputCore::simple_logger_with_parameter(std::string _text, std::string _parameter)
+{
+	std::cout << white << "------[" << green << _text << ":\t" << blue << _parameter << white << "]-------"  << std::endl;
+}
+
+void EInputCore::logger_param(std::string _text, std::string_view _parameter)
+{
+	simple_logger_with_parameter(_text, {_parameter.data(), _parameter.size()});
+}
+
+void EInputCore::logger_param(std::string _text, std::string _parameter)
+{
+	simple_logger_with_parameter(_text, _parameter);
+}
+
+
+
+
 
 void EInputCore::scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
@@ -94,4 +131,5 @@ void EInputCore::char_input_callback(GLFWwindow* window, unsigned int _char)
 
 	//EWindow::last_inputed_char = _char;
 }
+
 

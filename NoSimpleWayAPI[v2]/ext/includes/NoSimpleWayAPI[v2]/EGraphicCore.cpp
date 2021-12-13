@@ -70,8 +70,8 @@ Batcher::Batcher()
 	glGenBuffers(1, &EBO);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
 
-	glBufferData(GL_ARRAY_BUFFER, sizeof(vertex_buffer), vertex_buffer, GL_STATIC_DRAW);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices_buffer), indices_buffer, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER,			sizeof(vertex_buffer),	vertex_buffer,		GL_STATIC_DRAW);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER,	sizeof(indices_buffer),	indices_buffer,	GL_STATIC_DRAW);
 
 	/*
 	std::cout << "initiate" << std::endl;
@@ -120,14 +120,12 @@ void Batcher::draw_call()
 	if (last_vertice_buffer_index > 0)
 	{
 		glBindBuffer(GL_ARRAY_BUFFER, VAO);
+		glBindVertexArray(VAO);
+
 		glBindBuffer(GL_ARRAY_BUFFER, VBO);
 		glBufferData(GL_ARRAY_BUFFER, sizeof(float) * last_vertice_buffer_index, vertex_buffer, GL_DYNAMIC_DRAW);
-		glBindVertexArray(VAO);
 		
-
-
-
-		glDrawElements(GL_TRIANGLES, 6 * (int)(last_vertice_buffer_index / (gl_vertex_attribute_total_count * 4)), GL_UNSIGNED_SHORT, 0);
+		glDrawElements(GL_TRIANGLES, 6 * (int)(last_vertice_buffer_index / (gl_vertex_attribute_total_count * 4)), GL_UNSIGNED_INT, 0);
 
 		//glDrawElements(GL_TRIANGLES, 6 * (last_vertice_buffer_index / 32), GL_UNSIGNED_INT, 0);
 
@@ -195,7 +193,7 @@ bool ETextureAtlas::can_place_here(int _x, int _y, int _w, int _h)
 	for (int i = _y; i <= _y + _h; i++)
 	for (int j = _x; j <= _x + _w; j++)
 	{
-		if ((j >= *atlas_size_x) || (i >= *atlas_size_x))
+		if ((j * 4 >= *atlas_size_x) || (i * 4 >= *atlas_size_x))
 		{
 			return false;
 		}
@@ -219,6 +217,11 @@ unsigned short ETextureAtlas::get_atlas_size_y()
 unsigned short ETextureAtlas::get_framebuffer()
 {
 	return *framebuffer;
+}
+
+unsigned short ETextureAtlas::get_colorbuffer()
+{
+	return *colorbuffer;
 }
 
 ETextureAtlas::ETextureAtlas(float _size_x, float _size_y, int _color_depth, int _byte_mode)
@@ -354,6 +357,10 @@ void EGraphicCore::initiate_graphic_core()
 	EGraphicCore::shader_texture_atlas_putter->use();
 
 	EGraphicCore::default_batcher_for_texture_atlas = new Batcher();
+	EGraphicCore::default_batcher_for_texture_atlas->set_total_attribute_count(8);
+	EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(2);//position	| [x][y]
+	EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(4);//color		| [r][g][b][a]
+	EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(2);//UV texure	| [U][V]		|
 
 
 
@@ -430,11 +437,11 @@ void EGraphicCore::load_texture(char const* _path, int _id)
 	stbi_image_free(image_data);
 }
 
-ETextureGabarite* EGraphicCore::put_texture_to_atlas(std::string _name, ETextureAtlas* _atlas)
+ETextureGabarite* EGraphicCore::put_texture_to_atlas(std::string _full_path, ETextureAtlas* _atlas)
 {
-	for (int i = 0; i < _name.length(); i++)
+	for (int i = 0; i < _full_path.length(); i++)
 	{
-		if (_name[i] == '\\') { _name[i] = '/'; }
+		if (_full_path[i] == '\\') { _full_path[i] = '/'; }
 	}
 
 	ETextureGabarite* duplicate_gabarite = nullptr;
@@ -442,7 +449,7 @@ ETextureGabarite* EGraphicCore::put_texture_to_atlas(std::string _name, ETexture
 	//search already loaded texture gabarite
 	for (ETextureGabarite* g : EGraphicCore::texture_gabarites_list)
 	{
-		if (g->get_full_path() == _name)
+		if (g->get_full_path() == _full_path)
 		{
 			duplicate_gabarite = g;
 		}
@@ -454,12 +461,13 @@ ETextureGabarite* EGraphicCore::put_texture_to_atlas(std::string _name, ETexture
 	{
 		EGraphicCore::switch_to_texture_atlas_draw_mode(_atlas);
 
-		EGraphicCore::load_texture(_name.c_str(), 0);
+		EGraphicCore::load_texture(_full_path.c_str(), 0);
 
 		//search free place for new texture
-		int place_x = 0;
-		int place_y = 0;
+		int place_x = -1;
+		int place_y = -1;
 		for (int x = 0; x < (int)(_atlas->get_atlas_size_x() / 4.0f); x++)
+		{
 			for (int y = 0; y < (int)(_atlas->get_atlas_size_y() / 4.0f); y++)
 			{
 				if (_atlas->can_place_here(x, y, ceil(EGraphicCore::last_texture_width / 4.0f), ceil(EGraphicCore::last_texture_height / 4.0f)))
@@ -469,11 +477,14 @@ ETextureGabarite* EGraphicCore::put_texture_to_atlas(std::string _name, ETexture
 
 					break;
 				}
-			}
 
+				
+			}
+			if (place_x >= 0) { break; }
+		}
 		//
 		for (int x = (ceil)(place_x / 4.0f) - 2; x < (ceil)((place_x + EGraphicCore::last_texture_width) / 4.0f) + 2; x++)
-			for (int y = (ceil)(place_y / 4.0f) - 2; y < (ceil)((place_y + EGraphicCore::last_texture_height) / 4.0f) + 2; y++)
+		for (int y = (ceil)(place_y / 4.0f) - 2; y < (ceil)((place_y + EGraphicCore::last_texture_height) / 4.0f) + 2; y++)
 				if
 				(
 					(x < (int)(_atlas->get_atlas_size_x() / 4.0f))
@@ -498,7 +509,25 @@ ETextureGabarite* EGraphicCore::put_texture_to_atlas(std::string _name, ETexture
 			EGraphicCore::last_texture_width,
 			EGraphicCore::last_texture_height
 		);
+		EGraphicCore::default_batcher_for_texture_atlas->draw_call();
 
+		new_gabarite = new ETextureGabarite();
+
+		if (new_gabarite != nullptr)
+		{
+			new_gabarite->set_full_path(_full_path);
+			new_gabarite->set_name(_full_path.substr(_full_path.size() - 5, 4));
+
+			EInputCore::logger_param("Generate new gabarite", new_gabarite->get_full_path());
+			EGraphicCore::texture_gabarites_list.push_back(new_gabarite);
+		}
+
+		
+	}
+	else
+	{
+		new_gabarite = duplicate_gabarite;
+		EInputCore::logger_param("Use existed gabarite", new_gabarite->get_full_path());
 	}
 
 	
@@ -607,3 +636,20 @@ std::string_view ETextureGabarite::get_full_path()
 
 	return *full_path;
 }
+
+void ETextureGabarite::set_full_path(std::string _full_path)
+{
+	if (full_path != nullptr)
+	{
+		*full_path = _full_path;
+	}
+}
+
+void ETextureGabarite::set_name(std::string _name)
+{
+	*name = _name;
+}
+
+
+
+

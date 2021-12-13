@@ -38,5 +38,8 @@
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.h">
       <Filter>NoSimpleWayAPI[v2]</Filter>
     </ClInclude>
+    <ClInclude Include="ext\includes\ConsoleColor.h">
+      <Filter>NoSimpleWayAPI[v2]</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

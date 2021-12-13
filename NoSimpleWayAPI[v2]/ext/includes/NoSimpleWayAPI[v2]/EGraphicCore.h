@@ -23,6 +23,11 @@
 	#include <glm/gtc/type_ptr.hpp>
 #endif
 
+#ifndef _E_INPUT_CORE_LINKER_
+	#define _E_INPUT_CORE_LINKER_
+	#include "EInputCore.h"
+#endif
+
 #include <learnopengl/shader_s.h>
 
 #include <vector>
@@ -118,7 +123,7 @@ namespace zalupa
 
 
 
-typedef										unsigned short  indice_type;
+typedef										unsigned int  indice_type;
 
 
 
@@ -197,7 +202,9 @@ private:
 public:
 	unsigned short get_atlas_size_x();
 	unsigned short get_atlas_size_y();
+
 	unsigned short get_framebuffer();
+	unsigned short get_colorbuffer();
 
 	ETextureAtlas	(float _size_x, float _size_y, int _color_depth = GL_RGBA, int _byte_mode = GL_UNSIGNED_BYTE);
 	~ETextureAtlas	();
@@ -210,20 +217,27 @@ public:
 class ETextureGabarite
 {
 private:
-	std::string_view* full_path = new std::string_view("");
+	std::string_view* full_path	= new std::string_view("");
+	std::string_view* name		= new std::string_view("");
 
-	int* pos_x_in_pixels = new int(0);
-	int* pos_y_in_pixels = new int(0);
+	int* pos_x_in_pixels		= new int(0);
+	int* pos_y_in_pixels		= new int(0);
 
-	int* size_x_in_pixels = new int(0);
-	int* size_y_in_pixels = new int(0);
+	int* size_x_in_pixels		= new int(0);
+	int* size_y_in_pixels		= new int(0);
 
-	float* uv_start_x	= new float(0.0f);
-	float* uv_start_y	= new float(0.0f);
-	float* uv_end_x	= new float(0.0f);
-	float* uv_end_y	= new float(0.0f);
+	float* uv_start_x			= new float(0.0f);
+	float* uv_start_y			= new float(0.0f);
+	float* uv_end_x			= new float(0.0f);
+	float* uv_end_y			= new float(0.0f);
 
 public:
 	std::string_view get_full_path();
+	void set_full_path(std::string _full_path);
+
+	std::string_view get_name();
+	void set_name(std::string _name);
+
+	
 };
 

@@ -149,6 +149,7 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ext\includes\ConsoleColor.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.h" />
   </ItemGroup>
