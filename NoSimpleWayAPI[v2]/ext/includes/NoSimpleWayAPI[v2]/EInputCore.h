@@ -39,6 +39,9 @@ namespace EInputCore
 	extern void logger_param(std::string _text, std::string_view _parameter);
 	extern void logger_param(std::string _text, std::string _parameter);
 
+	extern void logger_simple_error(std::string _error);
+	extern void logger_simple_success(std::string _message);
+
 	template<typename T>
 	extern void logger_param(std::string _text, T _parameter)
 	{

@@ -117,9 +117,11 @@ namespace zalupa
 
 void ERenderBatcher::draw_call()
 {
-	if (last_vertice_buffer_index > 0)
+	//if (get_shader() == nullptr) { EInputCore::logger_simple_error("you mad?"); }
+	if ((last_vertice_buffer_index > 0) & (batcher_shader != nullptr))
 	{
 		batcher_shader->use();
+		apply_transform();
 
 		glBindBuffer(GL_ARRAY_BUFFER, VAO);
 		glBindVertexArray(VAO);
@@ -132,6 +134,10 @@ void ERenderBatcher::draw_call()
 		//glDrawElements(GL_TRIANGLES, 6 * (last_vertice_buffer_index / 32), GL_UNSIGNED_INT, 0);
 
 		//std::cout << "Draw call! element [16] is: " << std::to_string(vertex_buffer[16]) << std::endl;
+	}
+	else
+	{
+		if (batcher_shader == nullptr) { EInputCore::logger_simple_error("Shader is NULL"); }
 	}
 
 	reset();
@@ -171,15 +177,29 @@ void ERenderBatcher::apply_transform()
 			0.0f
 		)
 	);
-	matrix_transform = glm::scale(EGraphicCore::matrix_transform_default, glm::vec3(1.0f / transform_screen_size_x * 2.0f, 1.0f / transform_screen_size_y * 2.0f, 1.0f));
+	matrix_transform = glm::scale
+	(
+		EGraphicCore::matrix_transform_default, glm::vec3
+		(
+			1.0f / transform_screen_size_x * 2.0f * transform_zoom,
+			1.0f / transform_screen_size_y * 2.0f * transform_zoom,
+			1.0f
+		)
+	);
 
-	unsigned int transformLoc = glGetUniformLocation(EGraphicCore::shader_texture_atlas_putter->ID, "transform");
+	unsigned int transformLoc = glGetUniformLocation(batcher_shader->ID, "transform");
 	glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(EGraphicCore::matrix_transform_default));
 }
 
 void ERenderBatcher::set_shader(Shader* _shader)
 {
 	batcher_shader = _shader;
+	EInputCore::logger_simple_success("crete new shader");
+}
+
+Shader* ERenderBatcher::get_shader()
+{
+	return batcher_shader;
 }
 
 void ERenderBatcher::set_transform_position(float _x, float _y)
@@ -329,12 +349,11 @@ void EGraphicCore::switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas)
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	glBlendEquation(GL_MAX);
 
-	make_transform_from_size(nullptr, _atlas->get_atlas_size_x(), _atlas->get_atlas_size_y());
-	EGraphicCore::shader_texture_atlas_putter->use();	
+	make_transform_from_size(EGraphicCore::default_batcher_for_texture_atlas, _atlas->get_atlas_size_x(), _atlas->get_atlas_size_y());
 
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, EGraphicCore::texture[0]);
-	EGraphicCore::shader_texture_atlas_putter->setInt("texture1", 0);
+
 	default_batcher_for_texture_atlas->set_color(EColorCollection::COLOR_WHITE);
 
 	
@@ -346,7 +365,7 @@ void EGraphicCore::make_transform_from_size(ERenderBatcher* _batcher, float _siz
 		EGraphicCore::matrix_transform_default = glm::translate(EGraphicCore::matrix_transform_default, glm::vec3(-1.0f, -1.0f, 0.0f));
 		EGraphicCore::matrix_transform_default = glm::scale(EGraphicCore::matrix_transform_default, glm::vec3(1.0f / _size_x * 2.0f, 1.0f / _size_y * 2.0f, 1.0f));
 		
-		unsigned int transformLoc = glGetUniformLocation(EGraphicCore::shader_texture_atlas_putter->ID, "transform");
+		unsigned int transformLoc = glGetUniformLocation(_batcher->get_shader()->ID, "transform");
 		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(EGraphicCore::matrix_transform_default));
 }
 
@@ -398,15 +417,10 @@ void EGraphicCore::initiate_graphic_core()
 		//return -1;
 	}
 
-	EGraphicCore::shader_texture_atlas_putter = new Shader("data/#default.vs", "data/#default.fs");
-	EGraphicCore::shader_texture_atlas_putter->use();
+	//EGraphicCore::shader_texture_atlas_putter = new Shader("data/#default.vs", "data/#default.fs");
+	//EGraphicCore::shader_texture_atlas_putter->use();
 
-	EGraphicCore::default_batcher_for_texture_atlas = new ERenderBatcher();
-	EGraphicCore::default_batcher_for_texture_atlas->set_total_attribute_count(8);
-	EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(2);//position	| [x][y]
-	EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(4);//color		| [r][g][b][a]
-	EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(2);//UV texure	| [U][V]		|
-
+	
 
 
 
@@ -425,7 +439,20 @@ void EGraphicCore::initiate_graphic_core()
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, EGraphicCore::texture[0]);
 
-	EGraphicCore::shader_texture_atlas_putter->setInt("texture1", EGraphicCore::texture[0]);
+	EGraphicCore::default_batcher_for_texture_atlas = new ERenderBatcher();
+	EGraphicCore::default_batcher_for_texture_atlas->set_total_attribute_count(8);
+	EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(2);//position	| [x][y]
+	EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(4);//color		| [r][g][b][a]
+	EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(2);//UV texure	| [U][V]		|
+	EGraphicCore::default_batcher_for_texture_atlas->set_shader(new Shader("data/#default.vs", "data/#default.fs"));
+
+	EGraphicCore::default_batcher_for_texture_atlas->set_transform_screen_size
+	(
+		EGraphicCore::default_texture_atlas->get_atlas_size_x(),
+		EGraphicCore::default_texture_atlas->get_atlas_size_y()
+	);
+
+
 
 	//EWindow::default_texture_atlas = new ETextureAtlas(4096, 4096);
 }
@@ -545,7 +572,7 @@ ETextureGabarite* EGraphicCore::put_texture_to_atlas(std::string _full_path, ETe
 				}
 
 		EGraphicCore::default_batcher_for_texture_atlas->reset();
-		EGraphicCore::fill_vertex_buffer_default
+		ERenderCollection::fill_vertex_buffer_default
 		(
 			EGraphicCore::default_batcher_for_texture_atlas->vertex_buffer,
 			EGraphicCore::default_batcher_for_texture_atlas->last_vertice_buffer_index,
@@ -561,9 +588,25 @@ ETextureGabarite* EGraphicCore::put_texture_to_atlas(std::string _full_path, ETe
 		if (new_gabarite != nullptr)
 		{
 			new_gabarite->set_full_path(_full_path);
-			new_gabarite->set_name(_full_path.substr(_full_path.size() - 5, 4));
+			new_gabarite->set_name_based_on_full_path(_full_path);
 
-			EInputCore::logger_param("Generate new gabarite", new_gabarite->get_full_path());
+			new_gabarite->set_uv_parameters
+			(
+				place_x / (float)_atlas->get_atlas_size_x(),
+				place_y / (float)_atlas->get_atlas_size_y(),
+
+				EGraphicCore::last_texture_width	/ (float)_atlas->get_atlas_size_x(),
+				EGraphicCore::last_texture_height	/ (float)_atlas->get_atlas_size_y()
+			);
+
+			new_gabarite->set_real_texture_size
+			(
+				EGraphicCore::last_texture_width,
+				EGraphicCore::last_texture_height
+			);
+
+			EInputCore::logger_param("Generate new gabarite (full path)", new_gabarite->get_full_path());
+			EInputCore::logger_param("Generate new gabarite (name)", new_gabarite->get_name());
 			EGraphicCore::texture_gabarites_list.push_back(new_gabarite);
 		}
 
@@ -582,7 +625,7 @@ ETextureGabarite* EGraphicCore::put_texture_to_atlas(std::string _full_path, ETe
 	return new_gabarite;
 }
 
-void EGraphicCore::fill_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h)
+void ERenderCollection::fill_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h)
 {
 	//address arithmetic, get pointer to buffer array, and move to +_offset
 	_array += _start_offset;
@@ -641,6 +684,124 @@ void EGraphicCore::fill_vertex_buffer_default(float* _array, unsigned int& _star
 	_start_offset += 32;
 }
 
+void ERenderCollection::fill_vertex_buffer_textured_rectangle(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture)
+{
+	//address arithmetic, get pointer to buffer array, and move to +_offset
+	_array += _start_offset;
+
+	//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
+	_array[0] = (_x + _w);
+	_array[1] = (_y + _h);
+
+	_array[2] = 1.0f;
+	_array[3] = 1.0f;
+	_array[4] = 1.0f;
+	_array[5] = 1.0f;
+
+	_array[6] = *_texture->uv_end_x;
+	_array[7] = *_texture->uv_end_y;
+
+	//..
+	//.#
+	_array[8] = (_x + _w);
+	_array[9] = _y;
+
+	_array[10] = 1.0f;
+	_array[11] = 1.0f;
+	_array[12] = 1.0f;
+	_array[13] = 1.0f;
+
+	_array[14] = *_texture->uv_end_x;
+	_array[15] = *_texture->uv_start_y;
+
+	//..
+	//#.
+	_array[16] = _x;
+	_array[17] = _y;
+
+	_array[18] = 1.0f;
+	_array[19] = 1.0f;
+	_array[20] = 1.0f;
+	_array[21] = 1.0f;
+
+	_array[22] = *_texture->uv_start_x;
+	_array[23] = *_texture->uv_start_y;
+
+	//#.
+	//..
+	_array[24] = _x;
+	_array[25] = (_y + _h);
+
+	_array[26] = 1.0f;
+	_array[27] = 1.0f;
+	_array[28] = 1.0f;
+	_array[29] = 1.0f;
+
+	_array[30] = *_texture->uv_start_x;
+	_array[31] = *_texture->uv_end_y;
+
+	_start_offset += 32;
+}
+
+void ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture)
+{
+	//address arithmetic, get pointer to buffer array, and move to +_offset
+	_array += _start_offset;
+
+	//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
+	_array[0] = (_x + *_texture->size_x_in_pixels);
+	_array[1] = (_y + *_texture->size_y_in_pixels);
+
+	_array[2] = 1.0f;
+	_array[3] = 1.0f;
+	_array[4] = 1.0f;
+	_array[5] = 1.0f;
+
+	_array[6] = *_texture->uv_end_x;
+	_array[7] = *_texture->uv_end_y;
+
+	//..
+	//.#
+	_array[8] = (_x + *_texture->size_x_in_pixels);
+	_array[9] = _y;
+
+	_array[10] = 1.0f;
+	_array[11] = 1.0f;
+	_array[12] = 1.0f;
+	_array[13] = 1.0f;
+
+	_array[14] = *_texture->uv_end_x;
+	_array[15] = *_texture->uv_start_y;
+
+	//..
+	//#.
+	_array[16] = _x;
+	_array[17] = _y;
+
+	_array[18] = 1.0f;
+	_array[19] = 1.0f;
+	_array[20] = 1.0f;
+	_array[21] = 1.0f;
+
+	_array[22] = *_texture->uv_start_x;
+	_array[23] = *_texture->uv_start_y;
+
+	//#.
+	//..
+	_array[24] = _x;
+	_array[25] = (_y + *_texture->size_y_in_pixels);
+
+	_array[26] = 1.0f;
+	_array[27] = 1.0f;
+	_array[28] = 1.0f;
+	_array[29] = 1.0f;
+
+	_array[30] = *_texture->uv_start_x;
+	_array[31] = *_texture->uv_end_y;
+
+	_start_offset += 32;
+}
+
 
 
 
@@ -690,9 +851,54 @@ void ETextureGabarite::set_full_path(std::string _full_path)
 	}
 }
 
-void ETextureGabarite::set_name(std::string _name)
+std::string_view ETextureGabarite::get_name()
 {
-	*name = _name;
+	return *name;
+}
+
+void ETextureGabarite::set_name_based_on_full_path(std::string _name)
+{
+	int start_s	= 0;
+	int end_s		= 0;
+
+	for (int i = 0; i < _name.length(); i++)
+	{
+		if ((_name.at(i) == '/')||(_name.at(i) == '\\'))
+		{
+			start_s = i + 1;
+		}
+
+		if ((_name.at(i) == '.'))
+		{
+			end_s = i - 1;
+		}
+	}
+
+	*name = _name.substr(start_s, end_s - start_s + 1);
+}
+
+void ETextureGabarite::set_uv_parameters(float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y)
+{
+	*uv_start_x	= _uv_start_x;
+	*uv_start_y	= _uv_start_y;
+
+	*uv_end_x		= _uv_start_x + _uv_end_x;
+	*uv_end_y		= _uv_start_y + _uv_end_y;
+
+	EInputCore::logger_param("uv_start_x", *uv_start_x);
+	EInputCore::logger_param("uv_start_y", *uv_start_y);
+
+	EInputCore::logger_param("uv_end_x", *uv_end_x);
+	EInputCore::logger_param("uv_end_y", *uv_end_y);
+
+
+
+}
+
+void ETextureGabarite::set_real_texture_size(float _size_x, float _size_y)
+{
+	*size_x_in_pixels = _size_x;
+	*size_y_in_pixels = _size_y;
 }
 
 

@@ -49,6 +49,12 @@ class ETextureAtlas;
 class ERenderBatcher;
 class ETextureGabarite;
 
+namespace ERenderCollection
+{
+	extern void fill_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h);
+	extern void fill_vertex_buffer_textured_rectangle(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture);
+	extern void fill_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture);
+}
 namespace EGraphicCore
 {
 	
@@ -90,7 +96,7 @@ namespace EGraphicCore
 	extern void load_texture(char const* _path, int _id);
 	extern ETextureGabarite* put_texture_to_atlas(std::string _name, ETextureAtlas* _atlas);
 	
-	extern void fill_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h);
+	
 };
 
 typedef float EColor_4;
@@ -188,6 +194,7 @@ public:
 	void apply_transform();
 
 	void set_shader(Shader* _shader);
+	Shader* get_shader();
 
 	void set_transform_position		(float _x, float _y);
 	void set_transform_screen_size	(float _size_x, float _size_y);
@@ -232,26 +239,33 @@ public:
 class ETextureGabarite
 {
 private:
-	std::string_view* full_path	= new std::string_view("");
-	std::string_view* name		= new std::string_view("");
+	std::string* full_path		= new std::string("");
+	std::string* name			= new std::string("");
 
 	int* pos_x_in_pixels		= new int(0);
 	int* pos_y_in_pixels		= new int(0);
 
-	int* size_x_in_pixels		= new int(0);
-	int* size_y_in_pixels		= new int(0);
 
-	float* uv_start_x			= new float(0.0f);
-	float* uv_start_y			= new float(0.0f);
-	float* uv_end_x			= new float(0.0f);
-	float* uv_end_y			= new float(0.0f);
+
+
 
 public:
 	std::string_view get_full_path();
 	void set_full_path(std::string _full_path);
 
 	std::string_view get_name();
-	void set_name(std::string _name);
+	void set_name_based_on_full_path(std::string _name);
+
+	void set_uv_parameters		(float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y );
+	void set_real_texture_size	(float _size_x, float _size_y);
+
+	float* uv_start_x = new float(0.0f);
+	float* uv_start_y = new float(0.0f);
+	float* uv_end_x = new float(0.0f);
+	float* uv_end_y = new float(0.0f);
+
+	int* size_x_in_pixels = new int(0);
+	int* size_y_in_pixels = new int(0);
 
 	
 };

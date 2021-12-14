@@ -63,6 +63,16 @@ void EInputCore::logger_param(std::string _text, std::string _parameter)
 	simple_logger_with_parameter(_text, _parameter);
 }
 
+void EInputCore::logger_simple_error(std::string _error)
+{
+	std::cout << red << "^^^^^^^ ERROR: " << _error << std::endl;
+}
+
+void EInputCore::logger_simple_success(std::string _message)
+{
+	std::cout << green << "| Success: " << _message << " |" << std::endl;
+}
+
 
 
 

@@ -34,6 +34,16 @@ int main()
 			batcher->register_new_vertex_attribute(4);//color
 			batcher->register_new_vertex_attribute(2);//uv texture
 
+			batcher->set_shader(new Shader("data/#default.vs", "data/#default.fs"));
+			
+			batcher->set_transform_screen_size
+			(
+				EGraphicCore::SCREEN_WIDTH,
+				EGraphicCore::SCREEN_HEIGHT
+			);
+
+
+
 		ETextureGabarite* gudron = EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", EGraphicCore::default_texture_atlas);
 		gudron = EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", EGraphicCore::default_texture_atlas);
 		glBindFramebuffer(GL_FRAMEBUFFER, 0);
@@ -46,9 +56,10 @@ int main()
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, EGraphicCore::default_texture_atlas->get_colorbuffer());
 
-		EGraphicCore::shader_texture_atlas_putter->setInt("texture1", 0);
+		//EGraphicCore::shader_texture_atlas_putter->setInt("texture1", 0);
 		batcher->set_color(EColorCollection::COLOR_WHITE);
 
+		
 	while (!glfwWindowShouldClose(EGraphicCore::main_window))
 	{
 		clock_t time = clock();
@@ -61,7 +72,7 @@ int main()
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 
 
-		EGraphicCore::shader_texture_atlas_putter->use();
+//		EGraphicCore::shader_texture_atlas_putter->use();
 
 		EGraphicCore::make_transform_from_size(batcher, EGraphicCore::SCREEN_WIDTH, EGraphicCore::SCREEN_HEIGHT);
 
@@ -77,19 +88,18 @@ int main()
 		
 		
 		
-		for (int i = 0; i < 1; i++)
-		for (int j = 0; j < 1; j++)
+		for (int i = 0; i < 10; i++)
+		for (int j = 0; j < 10; j++)
 		{
-			EGraphicCore::fill_vertex_buffer_default
+			ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size
 			(
 				batcher->vertex_buffer,
 				batcher->last_vertice_buffer_index,
 
-				j * 110.0f + 5.0f,
+				j * 210.0f + 5.0f,
 				i * 110.0f + 5.0f,
 
-				1000.0f,
-				1000.0f
+				gudron
 			);
 
 			if (batcher->last_vertice_buffer_index + 32 >= MAX_SHAPES_COUNT * 32) { batcher->draw_call();}
