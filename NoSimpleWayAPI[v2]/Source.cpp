@@ -27,7 +27,7 @@ int main()
 
 	glfwSwapInterval(1);
 
-		Batcher* batcher = new Batcher();
+		ERenderBatcher* batcher = new ERenderBatcher();
 			batcher->set_total_attribute_count(8);
 
 			batcher->register_new_vertex_attribute(2);//position
@@ -63,7 +63,7 @@ int main()
 
 		EGraphicCore::shader_texture_atlas_putter->use();
 
-		EGraphicCore::make_transform_from_size(EGraphicCore::SCREEN_WIDTH, EGraphicCore::SCREEN_HEIGHT);
+		EGraphicCore::make_transform_from_size(batcher, EGraphicCore::SCREEN_WIDTH, EGraphicCore::SCREEN_HEIGHT);
 
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);

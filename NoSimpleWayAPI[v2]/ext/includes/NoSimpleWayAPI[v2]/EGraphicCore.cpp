@@ -10,7 +10,7 @@ namespace EGraphicCore
 	Shader*						shader_texture_atlas_putter;
 
 	glm::mat4						matrix_transform_default;
-	Batcher*						default_batcher_for_texture_atlas;
+	ERenderBatcher*						default_batcher_for_texture_atlas;
 
 	GLFWwindow*					main_window;
 
@@ -37,7 +37,7 @@ namespace EGraphicCore
 };
 
 
-Batcher::Batcher()
+ERenderBatcher::ERenderBatcher()
 {
 
 	size_t indices_id = 0;
@@ -103,7 +103,7 @@ Batcher::Batcher()
 	//indices_buffer = generateData();
 }
 
-Batcher::~Batcher()
+ERenderBatcher::~ERenderBatcher()
 {
 }
 
@@ -115,10 +115,12 @@ namespace zalupa
 }
 
 
-void Batcher::draw_call()
+void ERenderBatcher::draw_call()
 {
 	if (last_vertice_buffer_index > 0)
 	{
+		batcher_shader->use();
+
 		glBindBuffer(GL_ARRAY_BUFFER, VAO);
 		glBindVertexArray(VAO);
 
@@ -135,34 +137,76 @@ void Batcher::draw_call()
 	reset();
 }
 
-void Batcher::set_color(const float(&_color)[4])
+void ERenderBatcher::set_color(const float(&_color)[4])
 {
 	std::copy(std::begin(_color), std::end(_color), std::begin(batch_color));
 }
 
-void Batcher::reset()
+void ERenderBatcher::reset()
 {
 	set_last_id(0);
 	//indices_id = 0;
 	//indices_order = 0;
 }
 
-unsigned int Batcher::get_last_id()
+unsigned int ERenderBatcher::get_last_id()
 {
 	return last_vertice_buffer_index;
 }
 
-void Batcher::set_last_id(unsigned int _id)
+void ERenderBatcher::set_last_id(unsigned int _id)
 {
 	last_vertice_buffer_index = _id;
 }
 
-void Batcher::set_total_attribute_count(GLsizei _attribute_count)
+void ERenderBatcher::apply_transform()
+{
+	matrix_transform = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+	matrix_transform = glm::translate
+	(
+		EGraphicCore::matrix_transform_default, glm::vec3
+		(
+			-1.0f - ((transform_position_x * 2.0f) / transform_screen_size_x),
+			-1.0f - ((transform_position_y * 2.0f) / transform_screen_size_y),
+			0.0f
+		)
+	);
+	matrix_transform = glm::scale(EGraphicCore::matrix_transform_default, glm::vec3(1.0f / transform_screen_size_x * 2.0f, 1.0f / transform_screen_size_y * 2.0f, 1.0f));
+
+	unsigned int transformLoc = glGetUniformLocation(EGraphicCore::shader_texture_atlas_putter->ID, "transform");
+	glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(EGraphicCore::matrix_transform_default));
+}
+
+void ERenderBatcher::set_shader(Shader* _shader)
+{
+	batcher_shader = _shader;
+}
+
+void ERenderBatcher::set_transform_position(float _x, float _y)
+{
+	transform_position_x = _x;
+	transform_position_y = _y;
+
+
+}
+
+void ERenderBatcher::set_transform_screen_size(float _size_x, float _size_y)
+{
+	transform_screen_size_x = _size_x;
+	transform_screen_size_y = _size_y;
+}
+
+void ERenderBatcher::set_transform_zoom(float _zoom)
+{
+	transform_zoom = _zoom;
+}
+
+void ERenderBatcher::set_total_attribute_count(GLsizei _attribute_count)
 {
 	gl_vertex_attribute_total_count = _attribute_count;
 }
 
-void Batcher::register_new_vertex_attribute(GLint _subpameters_count)
+void ERenderBatcher::register_new_vertex_attribute(GLint _subpameters_count)
 {
 	glVertexAttribPointer
 	(
@@ -285,7 +329,7 @@ void EGraphicCore::switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas)
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	glBlendEquation(GL_MAX);
 
-	make_transform_from_size(_atlas->get_atlas_size_x(), _atlas->get_atlas_size_y());
+	make_transform_from_size(nullptr, _atlas->get_atlas_size_x(), _atlas->get_atlas_size_y());
 	EGraphicCore::shader_texture_atlas_putter->use();	
 
 	glActiveTexture(GL_TEXTURE0);
@@ -296,11 +340,12 @@ void EGraphicCore::switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas)
 	
 }
 
-void EGraphicCore::make_transform_from_size(float _size_x, float _size_y)
+void EGraphicCore::make_transform_from_size(ERenderBatcher* _batcher, float _size_x, float _size_y)
 {
 		EGraphicCore::matrix_transform_default = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
 		EGraphicCore::matrix_transform_default = glm::translate(EGraphicCore::matrix_transform_default, glm::vec3(-1.0f, -1.0f, 0.0f));
 		EGraphicCore::matrix_transform_default = glm::scale(EGraphicCore::matrix_transform_default, glm::vec3(1.0f / _size_x * 2.0f, 1.0f / _size_y * 2.0f, 1.0f));
+		
 		unsigned int transformLoc = glGetUniformLocation(EGraphicCore::shader_texture_atlas_putter->ID, "transform");
 		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(EGraphicCore::matrix_transform_default));
 }
@@ -356,7 +401,7 @@ void EGraphicCore::initiate_graphic_core()
 	EGraphicCore::shader_texture_atlas_putter = new Shader("data/#default.vs", "data/#default.fs");
 	EGraphicCore::shader_texture_atlas_putter->use();
 
-	EGraphicCore::default_batcher_for_texture_atlas = new Batcher();
+	EGraphicCore::default_batcher_for_texture_atlas = new ERenderBatcher();
 	EGraphicCore::default_batcher_for_texture_atlas->set_total_attribute_count(8);
 	EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(2);//position	| [x][y]
 	EGraphicCore::default_batcher_for_texture_atlas->register_new_vertex_attribute(4);//color		| [r][g][b][a]

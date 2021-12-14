@@ -46,7 +46,7 @@ constexpr unsigned int TOTAL_INDICES_COUNT = INDICES_PER_SHAPE * MAX_SHAPES_COUN
 
 
 class ETextureAtlas;
-class Batcher;
+class ERenderBatcher;
 class ETextureGabarite;
 
 namespace EGraphicCore
@@ -58,7 +58,7 @@ namespace EGraphicCore
 	extern Shader*			shader_texture_atlas_putter;
 
 	extern glm::mat4		matrix_transform_default;
-	extern Batcher*		default_batcher_for_texture_atlas;
+	extern ERenderBatcher*		default_batcher_for_texture_atlas;
 
 	extern GLFWwindow*		main_window;
 
@@ -80,7 +80,7 @@ namespace EGraphicCore
 	extern void recalculate_correction();
 
 	extern void switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas);
-	extern void make_transform_from_size(float _size_x, float _size_y);
+	extern void make_transform_from_size(ERenderBatcher* _batcher, float _size_x, float _size_y);
 	//void load_texture(char const* _path, int _id);
 
 	extern void initiate_graphic_core();
@@ -131,7 +131,7 @@ typedef										unsigned int  indice_type;
 
 
 
-class Batcher
+class ERenderBatcher
 {
 private:
 	
@@ -141,6 +141,13 @@ private:
 
 	GLuint										gl_vertex_attribute_id = 0;
 	unsigned short									gl_vertex_attribute_offset = 0;
+
+	glm::mat4										matrix_transform;
+	Shader*										batcher_shader;
+
+	float										transform_position_x,				transform_position_y;
+	float										transform_screen_size_x = 800.0f,		transform_screen_size_y = 600.0f;
+	float										transform_zoom = 1.0f;
 	
 
 	
@@ -164,8 +171,8 @@ public:
 	unsigned int									last_vertice_buffer_index = 0;				//last element of vertex buffer
 	EColor_4 batch_color[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
 
-	Batcher();
-	~Batcher();
+	ERenderBatcher();
+	~ERenderBatcher();
 
 	void draw_call();
 
@@ -177,6 +184,14 @@ public:
 
 	unsigned int get_last_id();
 	void set_last_id(unsigned int _id);
+
+	void apply_transform();
+
+	void set_shader(Shader* _shader);
+
+	void set_transform_position		(float _x, float _y);
+	void set_transform_screen_size	(float _size_x, float _size_y);
+	void set_transform_zoom			(float _zoom);
 
 	GLsizei										gl_vertex_attribute_total_count = 0;
 
