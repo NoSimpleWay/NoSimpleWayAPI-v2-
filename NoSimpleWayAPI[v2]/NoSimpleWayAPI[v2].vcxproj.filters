@@ -30,6 +30,9 @@
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.cpp">
       <Filter>NoSimpleWayAPI[v2]</Filter>
     </ClCompile>
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.cpp">
+      <Filter>NoSimpleWayAPI[v2]</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h">
@@ -39,6 +42,12 @@
       <Filter>NoSimpleWayAPI[v2]</Filter>
     </ClInclude>
     <ClInclude Include="ext\includes\ConsoleColor.h">
+      <Filter>NoSimpleWayAPI[v2]</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.h">
+      <Filter>NoSimpleWayAPI[v2]</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.h">
       <Filter>NoSimpleWayAPI[v2]</Filter>
     </ClInclude>
   </ItemGroup>

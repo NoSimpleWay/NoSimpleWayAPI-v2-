@@ -16,8 +16,8 @@ namespace EInputCore
 	bool		MOUSE_BUTTON_RIGHT;
 	bool		MOUSE_BUTTON_MID;
 
-	bool		MOUSE_POSITION_X;
-	bool		MOUSE_POSITION_Y;
+	double	MOUSE_POSITION_X;
+	double	MOUSE_POSITION_Y;
 
 	char		LAST_INPUTED_CHAR = NULL;
 

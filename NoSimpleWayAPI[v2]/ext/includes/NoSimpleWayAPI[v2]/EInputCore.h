@@ -21,8 +21,8 @@ namespace EInputCore
 	extern	 bool	MOUSE_BUTTON_RIGHT;
 	extern	 bool	MOUSE_BUTTON_MID;
 	
-	extern	 bool	MOUSE_POSITION_X;
-	extern	 bool	MOUSE_POSITION_Y;
+	extern	 double	MOUSE_POSITION_X;
+	extern	 double	MOUSE_POSITION_Y;
 	
 	extern	 char	LAST_INPUTED_CHAR;
 

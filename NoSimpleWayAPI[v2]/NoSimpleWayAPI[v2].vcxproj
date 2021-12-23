@@ -144,14 +144,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ext\includes\glad\glad.c" />
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ext\includes\ConsoleColor.h" />
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.h" />
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
