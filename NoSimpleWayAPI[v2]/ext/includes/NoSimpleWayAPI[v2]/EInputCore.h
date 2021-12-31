@@ -1,6 +1,6 @@
 #pragma once
 
-#ifndef _EGRAPHICCORE_
+#ifndef _E_GRAPHIC_CORE_ALREADY_LINKED_
 /**/#define _EGRAPHICCORE_
 /**/#include "EGraphicCore.h"
 #endif
@@ -16,22 +16,20 @@ namespace std
 namespace EInputCore
 {
 	extern	 int		scroll_direction;
-	
+
 	extern	 bool	MOUSE_BUTTON_LEFT;
 	extern	 bool	MOUSE_BUTTON_RIGHT;
 	extern	 bool	MOUSE_BUTTON_MID;
-	
+
 	extern	 double	MOUSE_POSITION_X;
 	extern	 double	MOUSE_POSITION_Y;
-	
-	extern	 char	LAST_INPUTED_CHAR;
 
-	
+	extern	 char	LAST_INPUTED_CHAR;
 
 	extern void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 	extern void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
 	extern void mouse_position_callback(GLFWwindow* window, double _x, double _y);
-	extern void char_input_callback(GLFWwindow* window, unsigned int _char); 
+	extern void char_input_callback(GLFWwindow* window, unsigned int _char);
 	extern void initiate_input_core();
 
 	extern void simple_logger_with_parameter(std::string _text, std::string _parameter);
@@ -50,9 +48,4 @@ namespace EInputCore
 		//std::cout << "------[" << _text << ": " << std::to_string(_parameter) << "]-------" << std::endl;
 		simple_logger_with_parameter(_text, std::to_string(_parameter));
 	}
-
-
-	
-
 }
-

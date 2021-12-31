@@ -16,6 +16,24 @@
     <Filter Include="NoSimpleWayAPI[v2]">
       <UniqueIdentifier>{508e20fa-e052-47be-a022-d3d5294c6196}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NoSimpleWayAPI[v2]\DataCore">
+      <UniqueIdentifier>{580b45cf-324e-4146-bbaa-c205589624a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NoSimpleWayAPI[v2]\GraphicCore">
+      <UniqueIdentifier>{ff6d45a9-8561-4825-be51-1a33dca77f3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NoSimpleWayAPI[v2]\GUICore">
+      <UniqueIdentifier>{9849c866-bd19-45f8-9d82-c51278b0b27e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NoSimpleWayAPI[v2]\IOCore">
+      <UniqueIdentifier>{999c03b3-63b2-4f03-9294-56257b6180d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NoSimpleWayAPI[v2]\EntityCore">
+      <UniqueIdentifier>{bb2c2db2-3051-43cb-b875-17df4c62bf32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{1714c94d-6f66-46e4-b550-d5919a41be83}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -24,31 +42,43 @@
     <ClCompile Include="ext\includes\glad\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.cpp">
+      <Filter>NoSimpleWayAPI[v2]\DataCore</Filter>
+    </ClCompile>
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.cpp">
-      <Filter>NoSimpleWayAPI[v2]</Filter>
+      <Filter>NoSimpleWayAPI[v2]\GraphicCore</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.cpp">
+      <Filter>NoSimpleWayAPI[v2]\GUICore</Filter>
     </ClCompile>
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.cpp">
-      <Filter>NoSimpleWayAPI[v2]</Filter>
+      <Filter>NoSimpleWayAPI[v2]\IOCore</Filter>
     </ClCompile>
-    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.cpp">
-      <Filter>NoSimpleWayAPI[v2]</Filter>
+    <ClCompile Include="EWindowMain.cpp">
+      <Filter>External</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h">
-      <Filter>NoSimpleWayAPI[v2]</Filter>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.h">
+      <Filter>NoSimpleWayAPI[v2]\DataCore</Filter>
     </ClInclude>
-    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.h">
-      <Filter>NoSimpleWayAPI[v2]</Filter>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h">
+      <Filter>NoSimpleWayAPI[v2]\GraphicCore</Filter>
     </ClInclude>
     <ClInclude Include="ext\includes\ConsoleColor.h">
-      <Filter>NoSimpleWayAPI[v2]</Filter>
+      <Filter>NoSimpleWayAPI[v2]\GraphicCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.h">
+      <Filter>NoSimpleWayAPI[v2]\GUICore</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.h">
+      <Filter>NoSimpleWayAPI[v2]\IOCore</Filter>
     </ClInclude>
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.h">
-      <Filter>NoSimpleWayAPI[v2]</Filter>
+      <Filter>NoSimpleWayAPI[v2]\EntityCore</Filter>
     </ClInclude>
-    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.h">
-      <Filter>NoSimpleWayAPI[v2]</Filter>
+    <ClInclude Include="EWindowMain.h">
+      <Filter>External</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -29,25 +29,25 @@ bool EClickableRegion::overlapped_by_mouse(EClickableRegion* _region)
 bool EClickableRegion::overlapped_by_mouse(EClickableRegion* _region, float _offset_x, float _offset_y, float _zoom)
 {
 	if
-	(
 		(
-			(_region != nullptr)
-			&&
-			(_region->master_entity != nullptr)
-		)
-		&
-		(
-			(EInputCore::MOUSE_POSITION_X >= (*_region->master_entity->position_x + *_region->region->position_x + _offset_x) * _zoom)
+			(
+				(_region != nullptr)
+				&&
+				(_region->master_entity != nullptr)
+				)
 			&
-			(EInputCore::MOUSE_POSITION_X <= (*_region->master_entity->position_x + *_region->region->position_x + *_region->region->size_x + _offset_x) * _zoom)
+			(
+				(EInputCore::MOUSE_POSITION_X >= (*_region->master_entity->offset_x + *_region->region->offset_x + _offset_x) * _zoom)
+				&
+				(EInputCore::MOUSE_POSITION_X <= (*_region->master_entity->offset_x + *_region->region->offset_x + *_region->region->size_x + _offset_x) * _zoom)
 
-			&
+				&
 
-			(EInputCore::MOUSE_POSITION_Y >= (*_region->master_entity->position_y + *_region->region->position_y + _offset_y) * _zoom)
-			&
-			(EInputCore::MOUSE_POSITION_Y <= (*_region->master_entity->position_y + *_region->region->position_y + *_region->region->size_y + _offset_y) * _zoom)
-		)
-	)
+				(EInputCore::MOUSE_POSITION_Y >= (*_region->master_entity->offset_y + *_region->region->offset_y + _offset_y) * _zoom)
+				&
+				(EInputCore::MOUSE_POSITION_Y <= (*_region->master_entity->offset_y + *_region->region->offset_y + *_region->region->size_y + _offset_y) * _zoom)
+				)
+			)
 	{
 		return true;
 	}

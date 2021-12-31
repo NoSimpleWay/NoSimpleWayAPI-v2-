@@ -143,16 +143,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EWindowMain.cpp" />
     <ClCompile Include="ext\includes\glad\glad.c" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.cpp" />
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EWindowMain.h" />
     <ClInclude Include="ext\includes\ConsoleColor.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h" />
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.h" />
   </ItemGroup>
