@@ -149,6 +149,7 @@
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.cpp" />
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>

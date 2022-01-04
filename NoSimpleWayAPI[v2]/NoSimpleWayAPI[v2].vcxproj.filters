@@ -57,6 +57,9 @@
     <ClCompile Include="EWindowMain.cpp">
       <Filter>External</Filter>
     </ClCompile>
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.cpp">
+      <Filter>NoSimpleWayAPI[v2]\EntityCore</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.h">

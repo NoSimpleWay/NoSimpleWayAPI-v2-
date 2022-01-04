@@ -1,10 +1,11 @@
 #pragma once
 
-#ifndef _E_INPUT_CORE_LINKER_
-#define _E_INPUT_CORE_LINKER_
+/**/
+#ifndef _E_INPUT_CORE_ALREADY_LINKED_
+#define _E_INPUT_CORE_ALREADY_LINKED_
 #include "EInputCore.h"
 #endif
-
+/**/
 namespace EInputCore
 {
 	int		scroll_direction;

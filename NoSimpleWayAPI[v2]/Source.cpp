@@ -7,6 +7,9 @@
 #include "NoSimpleWayAPI[v2]/EGUICore.h"
 #include "EWindowMain.h"
 
+#include <algorithm>
+#include <iterator>
+#include <chrono>
 
 //extern GLFWwindow* main_window{ nullptr };
 
@@ -51,6 +54,33 @@ int main()
 
 		EWindowMain::link_to_main_window = new EWindowMain();
 		EWindow::window_list.push_back(EWindowMain::link_to_main_window);
+
+		/*
+		
+		float *d_array = new float[100'000];
+		float s_array[100'000]{};
+
+		//EInputCore::logger_param("zzz elements", sizeof(zzz));
+		
+
+		for (int i = 0; i < 100'000; i++)
+		{
+			d_array[i] = i;
+		}
+
+		auto start = std::chrono::high_resolution_clock::now();
+		for (int z = 0; z < 100; z++)
+		{
+			memcpy(s_array, d_array, 100'000 * sizeof * d_array);
+		}
+		auto finish = std::chrono::high_resolution_clock::now();
+		EInputCore::logger_param("copy using [memcpy]", std::chrono::duration_cast<std::chrono::nanoseconds>(finish - start).count() / 1'000'000.0f);
+		
+		for (int z = 0; z < 50; z++)
+		{
+			EInputCore::logger_param("[" + std::to_string(z) + "]", s_array[z]);
+		}
+		*/
 
 	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))
 	{

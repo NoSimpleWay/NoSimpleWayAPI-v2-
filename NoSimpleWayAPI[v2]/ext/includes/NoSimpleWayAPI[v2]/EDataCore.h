@@ -14,6 +14,7 @@ class EDataContainer;
 class EClickableRegion;
 class ECustomData;
 class Entity;
+class ESpriteLayer;
 
 //link to method, who manipulate with data
 typedef void (*data_action_pointer)(Entity*, ECustomData*);
@@ -53,6 +54,8 @@ class EClickableRegion
 {
 public:
 	ERegionGabarite* region;
+
+	std::vector<ESpriteLayer*> sprite_layer_list;
 
 	std::vector<data_action_pointer> data_actions_list;
 	Entity* master_entity;

@@ -8,10 +8,20 @@ EWindowMain* EWindowMain::link_to_main_window;
 
 void EWindowMain::draw_additional(float _d)
 {
+
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_position(0.0f, 0.0f);
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_screen_size(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_zoom(1.0f);
 
+	for (int j = 0; j < CLUSTER_DIM_X; j++)
+	for (int i = 0; i < CLUSTER_DIM_Y; i++)
+	{
+		for (Entity* e : cluster_array[j][i]->entity_list)
+		{
+			e->draw(_d);
+		}
+
+	}
 
 	for (int i = 0; i < 10; i++)
 		for (int j = 0; j < 10; j++)

@@ -16,6 +16,8 @@
 
 /*********/
 class ERegionGabarite;
+class ECustomData;
+
 
 class Entity
 {
@@ -32,7 +34,8 @@ public:
 	std::vector<ESpriteLayer*> sprite_layer_list;
 
 	void draw(float _d);
-	void draw_sprite_layer();
+	void sprite_layer_generate_vertex_buffer();
+	void transfer_vertex_buffer_to_batcher();
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 	
 	
@@ -58,6 +61,14 @@ class EntityButton : public Entity
 {
 public:
 	ERegionGabarite* button_gabarite;
+
+	std::string* autoalign_id = new std::string("");
+
+	float* autoalight_offset_x_while_mathed_id = new float(0.0f);
+	float* autoalight_offset_y_while_mathed_id = new float(0.0f);
+	
+	float* autoalight_offset_x_while_not_mathed_id = new float(0.0f);
+	float* autoalight_offset_y_while_not_mathed_id = new float(0.0f);
 };
 
 class ECluster

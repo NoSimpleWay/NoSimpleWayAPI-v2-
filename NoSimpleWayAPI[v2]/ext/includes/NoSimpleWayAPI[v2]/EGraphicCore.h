@@ -23,10 +23,12 @@
 #include <glm/gtc/type_ptr.hpp>
 #endif
 
-#ifndef _E_INPUT_CORE_LINKER_
-#define _E_INPUT_CORE_LINKER_
+/**/
+#ifndef _E_INPUT_CORE_ALREADY_LINKED_
+#define _E_INPUT_CORE_ALREADY_LINKED_
 #include "EInputCore.h"
 #endif
+/**/
 
 #include <learnopengl/shader_s.h>
 
@@ -37,7 +39,7 @@ constexpr unsigned int VERTICES_PER_SHAPE = 4;
 constexpr unsigned int MAX_SHAPES_COUNT = 1000;
 constexpr unsigned int EXPECTABLE_PARAMETERS_COUNT_FOR_VERTEX = 10;
 
-constexpr unsigned int TOTAL_MAX_VERTICES_COUNT = VERTICES_PER_SHAPE * MAX_SHAPES_COUNT * EXPECTABLE_PARAMETERS_COUNT_FOR_VERTEX;
+constexpr unsigned int TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE = VERTICES_PER_SHAPE * MAX_SHAPES_COUNT * EXPECTABLE_PARAMETERS_COUNT_FOR_VERTEX;
 
 //INDICES ARRAY
 constexpr unsigned int INDICES_PER_SHAPE = (int)(VERTICES_PER_SHAPE * 1.5f);
@@ -47,11 +49,18 @@ class ETextureAtlas;
 class ERenderBatcher;
 class ETextureGabarite;
 
+class ESprite;
+class ESpriteLayer;
+
+
 namespace NS_ERenderCollection
 {
 	extern void fill_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h);
 	extern void fill_vertex_buffer_textured_rectangle(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture);
 	extern void fill_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture);
+
+	extern void call_render_default(ESprite* _sprite);
+	extern void call_render_textured_rectangle_real_size(ESprite* _sprite);
 }
 
 namespace NS_EGraphicCore
@@ -141,6 +150,7 @@ private:
 	//const std::array<int, 255>						indices_buffer[TOTAL_INDICES_COUNT] = generateData();	//indices array
 
 	indice_type									indices_buffer[TOTAL_INDICES_COUNT]{};
+	
 
 	/*float color_red = 0.0f;
 	float color_green	= 0.0f;
@@ -148,13 +158,16 @@ private:
 	float color_alpha	= 0.0f;*/
 
 public:
-	float										vertex_buffer[TOTAL_MAX_VERTICES_COUNT]{};
+	float										vertex_buffer[TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE]{};
 	unsigned int									last_vertice_buffer_index = 0;				//last element of vertex buffer
 	EColor_4 batch_color[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
+	
 
 	ERenderBatcher();
 	~ERenderBatcher();
 
+	void(*pointer_to_sprite_render)(ESprite* _sprite);
+	void render_sprite_call(ESprite* _sprite);
 	void draw_call();
 
 	void set_total_attribute_count(GLsizei _attribute_count);
@@ -266,13 +279,15 @@ public:
 	float* world_position_y = new float(0.0f);
 	float* world_position_z = new float(0.0f);
 
+	unsigned int* last_buffer_id = new unsigned int(0);
+
 	ERenderBatcher* batcher;
 	float *vertex_buffer;
 
 	void translate_sprites(float _x, float _y, float _z);
 	void generate_vertex_buffer_for_sprite_layer();
 
-	float* vertex_buffer;
+	//float* vertex_buffer;
 };
 
 

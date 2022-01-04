@@ -114,6 +114,14 @@ namespace zalupa
 	int zalupa3;
 }
 
+void ERenderBatcher::render_sprite_call(ESprite* _sprite)
+{
+	if (pointer_to_sprite_render != nullptr)
+	{
+		pointer_to_sprite_render(_sprite);
+	}
+}
+
 void ERenderBatcher::draw_call()
 {
 	//NS_EGraphicCore::make_transform_from_size(this, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
@@ -207,7 +215,7 @@ void ERenderBatcher::set_transform_zoom(float _zoom)
 
 bool ERenderBatcher::is_batcher_have_free_space(ERenderBatcher* _batcher)
 {
-	if (_batcher->last_vertice_buffer_index >= TOTAL_MAX_VERTICES_COUNT)
+	if (_batcher->last_vertice_buffer_index >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE)
 	{
 		_batcher->draw_call();
 		return false;
@@ -654,17 +662,19 @@ void NS_ERenderCollection::fill_vertex_buffer_default(float* _array, unsigned in
 	//address arithmetic, get pointer to buffer array, and move to +_offset
 	_array += _start_offset;
 
+	//.#
+	//..
 	//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
-	_array[0] = (_x + _w);
-	_array[1] = (_y + _h);
+	_array[0] = (_x + _w);//x
+	_array[1] = (_y + _h);//y
 
-	_array[2] = 1.0f;
-	_array[3] = 1.0f;
-	_array[4] = 1.0f;
-	_array[5] = 1.0f;
+	_array[2] = 1.0f;//r
+	_array[3] = 1.0f;//g
+	_array[4] = 1.0f;//b
+	_array[5] = 1.0f;//a
 
-	_array[6] = 1.0f;
-	_array[7] = 1.0f;
+	_array[6] = 1.0f;//u
+	_array[7] = 1.0f;//v
 
 	//..
 	//.#
@@ -828,6 +838,14 @@ void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size(float
 	
 }
 
+void NS_ERenderCollection::call_render_default(ESprite* _sprite)
+{
+}
+
+void NS_ERenderCollection::call_render_textured_rectangle_real_size(ESprite* _sprite)
+{
+}
+
 void NS_EGraphicCore::processInput(GLFWwindow* window)
 {
 }
@@ -946,10 +964,11 @@ void ESprite::generate_vertex_buffer_for_master_sprite_layer()
 {
 	if ((master_sprite_layer != nullptr) & (main_texture != nullptr))
 	{
+		//master_sprite_layer->batcher->pointer_to_render()
 		NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size
 		(
 			master_sprite_layer->vertex_buffer,
-			master_sprite_layer->batcher->last_vertice_buffer_index,
+			*master_sprite_layer->last_buffer_id,
 			*world_position_x,
 			*world_position_y + *world_position_z,
 			main_texture
