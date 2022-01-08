@@ -4,6 +4,7 @@
 #include "EWindowMain.h"
 #endif
 
+//class Entity;
 EWindowMain* EWindowMain::link_to_main_window;
 
 void EWindowMain::draw_additional(float _d)
@@ -16,6 +17,7 @@ void EWindowMain::draw_additional(float _d)
 	for (int j = 0; j < CLUSTER_DIM_X; j++)
 	for (int i = 0; i < CLUSTER_DIM_Y; i++)
 	{
+		if (!cluster_array[j][i]->entity_list.empty())
 		for (Entity* e : cluster_array[j][i]->entity_list)
 		{
 			e->draw(_d);
@@ -23,24 +25,6 @@ void EWindowMain::draw_additional(float _d)
 
 	}
 
-	for (int i = 0; i < 10; i++)
-		for (int j = 0; j < 10; j++)
-		{
-			NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size
-			(
-				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-				j * 160.0f + 5.0f,
-				i * 105.0f + 5.0f,
-
-				gudron
-			);
-
-			ERenderBatcher::is_batcher_have_free_space(NS_EGraphicCore::default_batcher_for_drawing);
-		}
-
-	NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 }
 
 void EWindowMain::update_additional(float _d)
@@ -59,13 +43,33 @@ void EWindowMain::update_additional(float _d)
 
 EWindowMain::EWindowMain()
 {
-	gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
+	//gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
 
 	for (int j = 0; j < CLUSTER_DIM_X; j++)
 	for (int i = 0; i < CLUSTER_DIM_Y; i++)
 	{
 		cluster_array[j][i] = new ECluster();
 	}
+
+	Entity* jc_entity = new Entity();
+	ESpriteLayer* jc_sprite_layer = new ESpriteLayer();
+	ESprite* jc_sprite = new ESprite();
+
+	jc_sprite->main_texture = NS_DefaultGabarites::texture_gabarite_gudron;
+
+	*jc_sprite->size_x = *NS_DefaultGabarites::texture_gabarite_gudron->size_x_in_pixels;
+	*jc_sprite->size_y = *NS_DefaultGabarites::texture_gabarite_gudron->size_y_in_pixels;
+	jc_sprite->master_sprite_layer = jc_sprite_layer;
+
+	jc_sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
+	jc_sprite_layer->batcher->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_rectangle_real_size;
+	
+
+	jc_sprite_layer->sprite_list.push_back(jc_sprite);
+	jc_entity->sprite_layer_list.push_back(jc_sprite_layer);
+	jc_entity->sprite_layer_generate_vertex_buffer();
+
+	cluster_array[0][0]->entity_list.push_back(jc_entity);
 }
 
 EWindowMain::~EWindowMain()

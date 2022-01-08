@@ -14,6 +14,13 @@
 #endif
 /**/
 
+/**/
+#ifndef _E_GUI_CORE_ALREADY_LINKED_
+#define _E_GUI_CORE_ALREADY_LINKED_
+#include "EGUICore.h"
+#endif
+/**/
+
 /*********/
 class ERegionGabarite;
 class ECustomData;
@@ -36,8 +43,10 @@ public:
 	void draw(float _d);
 	void sprite_layer_generate_vertex_buffer();
 	void transfer_vertex_buffer_to_batcher();
+	void calculate_all_world_positions();
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 	
+	void translate_entity(float _x, float _y, float _z);
 	
 	void update(float _d);
 	Entity();

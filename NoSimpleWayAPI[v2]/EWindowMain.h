@@ -29,7 +29,7 @@ public:
 	EWindowMain();
 	~EWindowMain();
 
-	ETextureGabarite* gudron;
+	//ETextureGabarite* gudron;
 
 	static EWindowMain* link_to_main_window;
 };

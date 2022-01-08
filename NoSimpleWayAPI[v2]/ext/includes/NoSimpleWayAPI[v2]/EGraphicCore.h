@@ -53,6 +53,8 @@ class ESprite;
 class ESpriteLayer;
 
 
+
+
 namespace NS_ERenderCollection
 {
 	extern void fill_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h);
@@ -67,19 +69,19 @@ namespace NS_EGraphicCore
 {
 	extern int			SCREEN_WIDTH, SCREEN_HEIGHT;
 	extern float			correction_x, correction_y;
-	extern Shader* shader_texture_atlas_putter;
+	extern Shader*			shader_texture_atlas_putter;
 
 	extern glm::mat4		matrix_transform_default;
-	extern ERenderBatcher* default_batcher_for_texture_atlas;
-	extern ERenderBatcher* default_batcher_for_drawing;
+	extern ERenderBatcher*	default_batcher_for_texture_atlas;
+	extern ERenderBatcher*	default_batcher_for_drawing;
 
-	extern GLFWwindow* main_window;
+	extern GLFWwindow*		main_window;
 
 	extern unsigned int		texture[32];
-	extern ETextureAtlas* default_texture_atlas;
-	extern unsigned char* image_data;
+	extern ETextureAtlas*	default_texture_atlas;
+	extern unsigned char*	image_data;
 	extern int			texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
-	extern ETextureAtlas* default_texture_atlas;
+	extern ETextureAtlas*	default_texture_atlas;
 	extern float			delta_time;
 	extern float			saved_time_for_delta;
 
@@ -101,7 +103,17 @@ namespace NS_EGraphicCore
 
 	void gl_set_texture_filtering(GLint _wrap_mode, GLint _filter);
 	void gl_set_blend_mode_default();
+
+	extern float current_offset_x;
+	extern float current_offset_y;
+	extern float current_zoom;
+
 };
+
+namespace NS_DefaultGabarites
+{
+	extern ETextureGabarite* texture_gabarite_gudron;
+}
 
 typedef float EColor_4;
 
@@ -284,7 +296,8 @@ public:
 	ERenderBatcher* batcher;
 	float *vertex_buffer;
 
-	void translate_sprites(float _x, float _y, float _z);
+	void translate_sprite_layer(float _x, float _y, float _z);
+	void translate_all_sprites(float _x, float _y, float _z);
 	void generate_vertex_buffer_for_sprite_layer();
 
 	//float* vertex_buffer;

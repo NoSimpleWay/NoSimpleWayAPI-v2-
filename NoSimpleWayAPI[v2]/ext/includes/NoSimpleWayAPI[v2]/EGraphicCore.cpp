@@ -24,6 +24,10 @@ namespace NS_EGraphicCore
 	float						delta_time;
 	float						saved_time_for_delta;
 
+	float current_offset_x;
+	float current_offset_y;
+	float current_zoom;
+
 	//ETextureAtlas*					default_texture_atlas;
 
 	void processInput(GLFWwindow* window);
@@ -39,6 +43,10 @@ namespace NS_EGraphicCore
 
 };
 
+namespace NS_DefaultGabarites
+{
+	ETextureGabarite* texture_gabarite_gudron;
+}
 ERenderBatcher::ERenderBatcher()
 {
 	size_t indices_id = 0;
@@ -465,7 +473,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 
 
-
+	NS_DefaultGabarites::texture_gabarite_gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
 	//EWindow::default_texture_atlas = new ETextureAtlas(4096, 4096);
 }
 
@@ -483,6 +491,9 @@ void NS_EGraphicCore::gl_set_blend_mode_default()
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	glBlendEquation(GL_FUNC_ADD);
 }
+
+	
+
 
 void NS_EGraphicCore::load_texture(char const* _path, int _id)
 {
@@ -844,6 +855,31 @@ void NS_ERenderCollection::call_render_default(ESprite* _sprite)
 
 void NS_ERenderCollection::call_render_textured_rectangle_real_size(ESprite* _sprite)
 {
+	EInputCore::logger_simple_success("call render texured rectangle");
+
+	//unsigned int zalupa;
+
+	if ((_sprite != nullptr) && (_sprite->main_texture != nullptr))
+	{
+		_sprite->master_sprite_layer->vertex_buffer = new float[100];
+
+		NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size
+		(
+			_sprite->master_sprite_layer->vertex_buffer,
+			*_sprite->master_sprite_layer->last_buffer_id,
+			*_sprite->world_position_x,
+			*_sprite->world_position_y,
+			_sprite->main_texture
+		);
+	}
+	else
+	{
+		if (_sprite == nullptr) { EInputCore::logger_simple_error("Sprite in call render textured rectangle is null"); }
+		else
+		{
+			if (_sprite->main_texture == nullptr) { EInputCore::logger_simple_error("Sprite texture in call render textured rectangle is null"); }
+		}
+	}
 }
 
 void NS_EGraphicCore::processInput(GLFWwindow* window)
@@ -894,6 +930,15 @@ std::string_view ETextureGabarite::get_name()
 	return *name;
 }
 
+void ESpriteLayer::translate_sprite_layer(float _x, float _y, float _z)
+{
+	*offset_x += _x;
+	*offset_y += _y;
+	*offset_z += _z;
+
+	translate_all_sprites(_x, _y, _z);
+}
+
 void ETextureGabarite::set_name_based_on_full_path(std::string _name)
 {
 	int start_s = 0;
@@ -937,7 +982,7 @@ void ETextureGabarite::set_real_texture_size(int _size_x, int _size_y)
 }
 
 
-void ESpriteLayer::translate_sprites(float _x, float _y, float _z)
+void ESpriteLayer::translate_all_sprites(float _x, float _y, float _z)
 {
 	for (ESprite* spr : sprite_list)
 	{
