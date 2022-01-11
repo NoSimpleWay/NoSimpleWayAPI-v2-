@@ -43,6 +43,11 @@ public:
 class ERegionGabarite
 {
 public:
+	ERegionGabarite();
+	~ERegionGabarite();
+
+	ERegionGabarite(float _offset_x, float _offset_y, float _size_x, float _size_y);
+
 	float* offset_x = new float(0.0f);
 	float* offset_y = new float(0.0f);
 
@@ -58,15 +63,28 @@ public:
 	float* world_position_y = new float(0.0f);
 };
 
+enum ClickableRegionSides
+{
+	CRS_SIDE_LEFT,
+	CRS_SIDE_RIGHT,
+	CRS_SIDE_DOWN,
+	CRS_SIDE_UP,
+	CRS_SIDE_MID
+};
 class EClickableRegion
 {
 public:
+	EClickableRegion();
+	~EClickableRegion();
+
 	ERegionGabarite* region;
 
 	std::vector<ESpriteLayer*> sprite_layer_list;
+	ESpriteLayer* internal_sprite_layer;
 
 	std::vector<data_action_pointer> data_actions_list;
 	Entity* master_entity;
+	ECustomData* master_custom_data;
 
 	bool* catched_side_left	= new bool (false);
 	bool* catched_side_right	= new bool (false);
@@ -74,11 +92,27 @@ public:
 	bool* catched_side_down	= new bool (false);
 	bool* catched_side_mid	= new bool (false);
 
+	bool* have_rama		= new bool (true);
+	bool* any_visual_changes	= new bool (true);
+
+	//float* internal_vertex_buffer;
+
 	static bool overlapped_by_mouse(EClickableRegion* _region, float _offset_x, float _offset_y, float _zoom);
 	static bool catched_side_by_mouse(float _x, float _y, float _size_x, float _size_y, float _offset_x, float _offset_y, float _zoom, float _catch_distance = 5.0f);
-	static void check_all_catches();
+	void check_all_catches();
 
+
+	
 	void update(float _d);
+	void draw(float _d);
+
+	void update_sides_visual(int _side, float _offset_x, float _offset_y, bool _catched);
+	void init_internal_sprite_layer();
+	bool set_catch_side(bool _catch_side, bool _set);
+
+	void change_buffer_color(int _side, const float(&_color)[4]);
+	void set_sides_position_and_sizes(int _side, float _x, float _y, float _z, float _w, float _h);
+	void refresh_border_sprites();
 };
 
 //////////////////////////////////////////////////////////////////////

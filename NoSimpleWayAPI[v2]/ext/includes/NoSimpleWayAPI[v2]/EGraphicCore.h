@@ -52,16 +52,17 @@ class ETextureGabarite;
 class ESprite;
 class ESpriteLayer;
 
-
+typedef float EColor_4;
 
 
 namespace NS_ERenderCollection
 {
 	extern void fill_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h);
-	extern void fill_vertex_buffer_textured_rectangle(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture);
+	extern void fill_vertex_buffer_textured_rectangle_with_custom_size(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture);
 	extern void fill_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture);
+	extern void fill_vertex_buffer_rama(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _t, ETextureGabarite* _texture);
 
-	extern void call_render_default(ESprite* _sprite);
+	extern void call_render_textured_rectangle_with_custom_size(ESprite* _sprite);
 	extern void call_render_textured_rectangle_real_size(ESprite* _sprite);
 }
 
@@ -108,14 +109,21 @@ namespace NS_EGraphicCore
 	extern float current_offset_y;
 	extern float current_zoom;
 
+	extern void set_active_color(const EColor_4(&_color)[4]);
+	extern void set_active_color(EColor_4* _color);
+
+	extern EColor_4 active_color[4];
+
 };
 
 namespace NS_DefaultGabarites
 {
 	extern ETextureGabarite* texture_gabarite_gudron;
+	extern ETextureGabarite* texture_gabarite_white_pixel;
+	//extern 
 }
 
-typedef float EColor_4;
+
 
 #ifndef _COLOR_COLLECTION_
 #define _COLOR_COLLECTION_
@@ -178,14 +186,14 @@ public:
 	ERenderBatcher();
 	~ERenderBatcher();
 
-	void(*pointer_to_sprite_render)(ESprite* _sprite);
-	void render_sprite_call(ESprite* _sprite);
+	//void(*pointer_to_sprite_render)(ESprite* _sprite);
+	//void render_sprite_call(ESprite* _sprite);
 	void draw_call();
 
 	void set_total_attribute_count(GLsizei _attribute_count);
 	void register_new_vertex_attribute(GLint _subpameters_count);
 
-	void set_color(const float(&_color)[4]);
+	void set_active_color(const float(&_color)[4]);
 	void reset();
 
 	unsigned int get_last_id();
@@ -260,8 +268,17 @@ public:
 class ESprite
 {
 public:
+	ESprite();
+	~ESprite();
+
+	void(*pointer_to_sprite_render)(ESprite* _sprite);
+
 	ETextureGabarite* main_texture;
 	ESpriteLayer* master_sprite_layer;
+
+	EColor_4* sprite_color = new float[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
+	void set_color(float _r, float _g, float _b, float _a);
+	void set_color(const float(&_color)[4]);
 
 	float* offset_x = new float(0.0f);
 	float* offset_y = new float(0.0f);
@@ -297,8 +314,11 @@ public:
 	float *vertex_buffer;
 
 	void translate_sprite_layer(float _x, float _y, float _z);
-	void translate_all_sprites(float _x, float _y, float _z);
-	void generate_vertex_buffer_for_sprite_layer();
+	void modify_buffer_translate_for_sprite_layer(float _x, float _y, float _z);
+	void generate_vertex_buffer_for_sprite_layer(std::string _text);
+
+	void transfer_vertex_buffer_to_batcher();
+	void translate_sprites(float _x, float _y, float _z);
 
 	//float* vertex_buffer;
 };

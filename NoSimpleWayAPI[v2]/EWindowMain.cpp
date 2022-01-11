@@ -51,23 +51,53 @@ EWindowMain::EWindowMain()
 		cluster_array[j][i] = new ECluster();
 	}
 
-	Entity* jc_entity = new Entity();
-	ESpriteLayer* jc_sprite_layer = new ESpriteLayer();
-	ESprite* jc_sprite = new ESprite();
+	//jc = Just Created
+	Entity*			jc_entity = new Entity();
+	ESpriteLayer*		jc_sprite_layer = new ESpriteLayer();
+	ESprite*			jc_sprite = new ESprite();
+	ECustomData*		jc_custom_data = new ECustomData();
+	ERegionGabarite*	jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 100.0f, 200.0f);
+	EClickableRegion*	jc_clickable_region = new EClickableRegion();
 
+	//push back objects
+	jc_entity->sprite_layer_list.push_back(jc_sprite_layer);
+	jc_entity->custom_data_list.push_back(jc_custom_data);
+	*jc_entity->offset_x = 30.0f;
+	*jc_entity->offset_y = 40.0f;
+	
+
+	jc_sprite_layer->sprite_list.push_back(jc_sprite);
+	jc_sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
+
+	jc_custom_data->clickable_region_list.push_back(jc_clickable_region);
+	jc_custom_data->master_entity = jc_entity;
+
+	jc_clickable_region->region = jc_region_gabarite;
+	jc_clickable_region->master_entity = jc_entity;
+	jc_clickable_region->master_custom_data = jc_custom_data;
+	
+
+	//create sprite
 	jc_sprite->main_texture = NS_DefaultGabarites::texture_gabarite_gudron;
 
 	*jc_sprite->size_x = *NS_DefaultGabarites::texture_gabarite_gudron->size_x_in_pixels;
 	*jc_sprite->size_y = *NS_DefaultGabarites::texture_gabarite_gudron->size_y_in_pixels;
+	jc_sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_rectangle_real_size;
 	jc_sprite->master_sprite_layer = jc_sprite_layer;
+	//
 
-	jc_sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
-	jc_sprite_layer->batcher->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_rectangle_real_size;
+	//attach batcher to sprite layer
+	
+	//
+	
+	jc_clickable_region->init_internal_sprite_layer();
+	jc_entity->calculate_all_world_positions();
+	jc_entity->sprite_layer_generate_vertex_buffer();
 	
 
-	jc_sprite_layer->sprite_list.push_back(jc_sprite);
-	jc_entity->sprite_layer_list.push_back(jc_sprite_layer);
-	jc_entity->sprite_layer_generate_vertex_buffer();
+	
+
+	
 
 	cluster_array[0][0]->entity_list.push_back(jc_entity);
 }

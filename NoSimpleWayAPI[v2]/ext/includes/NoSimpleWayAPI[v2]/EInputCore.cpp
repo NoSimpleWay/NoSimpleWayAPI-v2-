@@ -16,6 +16,12 @@ namespace EInputCore
 
 	double	MOUSE_POSITION_X;
 	double	MOUSE_POSITION_Y;
+	
+	double	MOUSE_PREV_X = -1.0;
+	double	MOUSE_PREV_Y = -1.0;
+
+	double	MOUSE_SPEED_X;
+	double	MOUSE_SPEED_Y;
 
 	char		LAST_INPUTED_CHAR = NULL;
 };
@@ -65,6 +71,7 @@ void EInputCore::logger_simple_success(std::string _message)
 	std::cout << green << "| Success: " << _message << " |" << std::endl;
 }
 
+
 void EInputCore::scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
 	//std::cout << "scroll: " << std::to_string(yoffset) << std::endl;
@@ -107,8 +114,23 @@ void EInputCore::mouse_button_callback(GLFWwindow* window, int button, int actio
 
 void EInputCore::mouse_position_callback(GLFWwindow* window, double _x, double _y)
 {
+	if ((EInputCore::MOUSE_PREV_X >= 0) & (EInputCore::MOUSE_PREV_Y >= 0))
+	{
+		EInputCore::MOUSE_SPEED_X = _x - EInputCore::MOUSE_PREV_X;
+		EInputCore::MOUSE_SPEED_Y = (NS_EGraphicCore::SCREEN_HEIGHT - _y) - EInputCore::MOUSE_PREV_Y;
+	}
+
 	EInputCore::MOUSE_POSITION_X = _x;
 	EInputCore::MOUSE_POSITION_Y = NS_EGraphicCore::SCREEN_HEIGHT - _y;
+
+	EInputCore::MOUSE_PREV_X = EInputCore::MOUSE_POSITION_X;
+	EInputCore::MOUSE_PREV_Y = EInputCore::MOUSE_POSITION_Y;
+
+
+	//EInputCore::logger_param("x", EInputCore::MOUSE_SPEED_X);
+	//EInputCore::logger_param("y", EInputCore::MOUSE_SPEED_Y);
+	//EInputCore::logger_param("x", EInputCore::MOUSE_POSITION_X);
+	//EInputCore::logger_param("y", EInputCore::MOUSE_POSITION_Y);
 }
 
 void EInputCore::char_input_callback(GLFWwindow* window, unsigned int _char)

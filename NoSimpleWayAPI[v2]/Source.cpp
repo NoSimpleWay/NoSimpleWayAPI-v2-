@@ -21,7 +21,11 @@ int main()
 
 // glfw window creation
 // --------------------
+	/*Entity* ent = nullptr;
+	std::cout << "entity pointer: " << ent << std::endl;
 
+	ent = new Entity();
+	std::cout << "entity pointer: " << ent << std::endl;*/
 
 	NS_EGraphicCore::initiate_graphic_core();
 	EInputCore::initiate_input_core();
@@ -49,7 +53,7 @@ int main()
 
 
 		//EGraphicCore::shader_texture_atlas_putter->setInt("texture1", 0);
-		NS_EGraphicCore::default_batcher_for_drawing->set_color(NS_EColorCollection::COLOR_WHITE);
+		NS_EGraphicCore::default_batcher_for_drawing->set_active_color(NS_EColorCollection::COLOR_WHITE);
 
 
 		EWindowMain::link_to_main_window = new EWindowMain();
@@ -116,10 +120,16 @@ int main()
 		for (EWindow* w : EWindow::window_list)
 		{
 			w->draw_default(NS_EGraphicCore::delta_time);
+			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+
 			w->draw_additional(NS_EGraphicCore::delta_time);
+			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 
 			w->GUI_draw_default(NS_EGraphicCore::delta_time);
+			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+
 			w->GUI_draw_additional(NS_EGraphicCore::delta_time);
+			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 		}
 		
 
@@ -127,6 +137,8 @@ int main()
 
 		EInputCore::LAST_INPUTED_CHAR	=	NULL;
 		EInputCore::scroll_direction	=	0;
+		EInputCore::MOUSE_SPEED_X = 0.0;
+		EInputCore::MOUSE_SPEED_Y = 0.0;
 	}
 
 	return 0;

@@ -24,9 +24,11 @@ namespace NS_EGraphicCore
 	float						delta_time;
 	float						saved_time_for_delta;
 
-	float current_offset_x;
-	float current_offset_y;
-	float current_zoom;
+	float current_offset_x	= 0.0f;
+	float current_offset_y	= 0.0f;
+	float current_zoom		= 1.0f;
+
+	EColor_4 active_color[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
 
 	//ETextureAtlas*					default_texture_atlas;
 
@@ -46,6 +48,7 @@ namespace NS_EGraphicCore
 namespace NS_DefaultGabarites
 {
 	ETextureGabarite* texture_gabarite_gudron;
+	ETextureGabarite* texture_gabarite_white_pixel;
 }
 ERenderBatcher::ERenderBatcher()
 {
@@ -121,14 +124,14 @@ namespace zalupa
 	int zalupa2;
 	int zalupa3;
 }
-
+/*
 void ERenderBatcher::render_sprite_call(ESprite* _sprite)
 {
 	if (pointer_to_sprite_render != nullptr)
 	{
 		pointer_to_sprite_render(_sprite);
 	}
-}
+}*/
 
 void ERenderBatcher::draw_call()
 {
@@ -160,7 +163,7 @@ void ERenderBatcher::draw_call()
 	reset();
 }
 
-void ERenderBatcher::set_color(const float(&_color)[4])
+void ERenderBatcher::set_active_color(const float(&_color)[4])
 {
 	std::copy(std::begin(_color), std::end(_color), std::begin(batch_color));
 }
@@ -361,7 +364,7 @@ void NS_EGraphicCore::switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas)
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::texture[0]);
 
-	default_batcher_for_texture_atlas->set_color(NS_EColorCollection::COLOR_WHITE);
+	default_batcher_for_texture_atlas->set_active_color(NS_EColorCollection::COLOR_WHITE);
 }
 
 void NS_EGraphicCore::make_transform_from_size(ERenderBatcher* _batcher, float _size_x, float _size_y)
@@ -472,8 +475,9 @@ void NS_EGraphicCore::initiate_graphic_core()
 	default_batcher_for_drawing->set_shader(new Shader("data/#default.vs", "data/#default.fs"));
 
 
-
+	NS_DefaultGabarites::texture_gabarite_white_pixel = NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_gabarite_gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
+	
 	//EWindow::default_texture_atlas = new ETextureAtlas(4096, 4096);
 }
 
@@ -490,6 +494,28 @@ void NS_EGraphicCore::gl_set_blend_mode_default()
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	glBlendEquation(GL_FUNC_ADD);
+}
+
+void NS_EGraphicCore::set_active_color(const EColor_4(&_color)[4])
+{
+	NS_EGraphicCore::active_color[0] = _color[0];
+	NS_EGraphicCore::active_color[1] = _color[1];
+	NS_EGraphicCore::active_color[2] = _color[2];
+	NS_EGraphicCore::active_color[3] = _color[3];
+}
+
+void NS_EGraphicCore::set_active_color(EColor_4 *_color)
+{
+	NS_EGraphicCore::active_color[0] = _color[0];
+	NS_EGraphicCore::active_color[1] = _color[1];
+	NS_EGraphicCore::active_color[2] = _color[2];
+	NS_EGraphicCore::active_color[3] = _color[3];
+
+	/*EInputCore::logger_param("COLOR [0]", _color[0]);
+	EInputCore::logger_param("COLOR [1]", _color[1]);
+	EInputCore::logger_param("COLOR [2]", _color[2]);
+	EInputCore::logger_param("COLOR [3]", _color[3]);
+	std::cout << "---------" << std::endl;*/
 }
 
 	
@@ -602,7 +628,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 						(x >= 0)
 						&
 						(y >= 0)
-						)
+					)
 				{
 					_atlas->free_space[x][y] = false;
 				}
@@ -630,8 +656,8 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 
 			new_gabarite->set_uv_parameters
 			(
-				place_x / (float)_atlas->get_atlas_size_x(),
-				place_y / (float)_atlas->get_atlas_size_y(),
+				(place_x) / (float)(_atlas->get_atlas_size_x()),
+				(place_y) / (float)(_atlas->get_atlas_size_y()),
 
 				(NS_EGraphicCore::last_texture_width - 1) / (float)_atlas->get_atlas_size_x(),
 				(NS_EGraphicCore::last_texture_height - 1) / (float)_atlas->get_atlas_size_y()
@@ -679,10 +705,10 @@ void NS_ERenderCollection::fill_vertex_buffer_default(float* _array, unsigned in
 	_array[0] = (_x + _w);//x
 	_array[1] = (_y + _h);//y
 
-	_array[2] = 1.0f;//r
-	_array[3] = 1.0f;//g
-	_array[4] = 1.0f;//b
-	_array[5] = 1.0f;//a
+	_array[2] = NS_EGraphicCore::active_color[0];//r
+	_array[3] = NS_EGraphicCore::active_color[1];//g
+	_array[4] = NS_EGraphicCore::active_color[2];//b
+	_array[5] = NS_EGraphicCore::active_color[3];//a
 
 	_array[6] = 1.0f;//u
 	_array[7] = 1.0f;//v
@@ -692,10 +718,10 @@ void NS_ERenderCollection::fill_vertex_buffer_default(float* _array, unsigned in
 	_array[8] = (_x + _w);
 	_array[9] = _y;
 
-	_array[10] = 1.0f;
-	_array[11] = 1.0f;
-	_array[12] = 1.0f;
-	_array[13] = 1.0f;
+	_array[10] = NS_EGraphicCore::active_color[0];
+	_array[11] = NS_EGraphicCore::active_color[1];
+	_array[12] = NS_EGraphicCore::active_color[2];
+	_array[13] = NS_EGraphicCore::active_color[3];
 
 	_array[14] = 1.0f;
 	_array[15] = 0.0f;
@@ -705,10 +731,10 @@ void NS_ERenderCollection::fill_vertex_buffer_default(float* _array, unsigned in
 	_array[16] = _x;
 	_array[17] = _y;
 
-	_array[18] = 1.0f;
-	_array[19] = 1.0f;
-	_array[20] = 1.0f;
-	_array[21] = 1.0f;
+	_array[18] = NS_EGraphicCore::active_color[0];
+	_array[19] = NS_EGraphicCore::active_color[1];
+	_array[20] = NS_EGraphicCore::active_color[2];
+	_array[21] = NS_EGraphicCore::active_color[3];
 
 	_array[22] = 0.0f;
 	_array[23] = 0.0f;
@@ -718,10 +744,10 @@ void NS_ERenderCollection::fill_vertex_buffer_default(float* _array, unsigned in
 	_array[24] = _x;
 	_array[25] = (_y + _h);
 
-	_array[26] = 1.0f;
-	_array[27] = 1.0f;
-	_array[28] = 1.0f;
-	_array[29] = 1.0f;
+	_array[26] = NS_EGraphicCore::active_color[0];
+	_array[27] = NS_EGraphicCore::active_color[1];
+	_array[28] = NS_EGraphicCore::active_color[2];
+	_array[29] = NS_EGraphicCore::active_color[3];
 
 	_array[30] = 0.0f;
 	_array[31] = 1.0f;
@@ -729,7 +755,22 @@ void NS_ERenderCollection::fill_vertex_buffer_default(float* _array, unsigned in
 	_start_offset += 32;
 }
 
-void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture)
+void NS_ERenderCollection::fill_vertex_buffer_rama(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _t, ETextureGabarite* _texture)
+{
+	//left (vertical)
+	fill_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y, _t, _h, _texture);
+
+	//right (vertical)
+	fill_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x + _h - _t, _y, _t, _h, _texture);
+
+	//down (horizontal)
+	fill_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y, _w, _t, _texture);
+
+	//up (horizontal)
+	fill_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y + _h - _t, _w, _t, _texture);
+}
+
+void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_with_custom_size(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture)
 {
 	//address arithmetic, get pointer to buffer array, and move to +_offset
 	_array += _start_offset;
@@ -738,10 +779,10 @@ void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle(float* _array, 
 	_array[0] = (_x + _w);
 	_array[1] = (_y + _h);
 
-	_array[2] = 1.0f;
-	_array[3] = 1.0f;
-	_array[4] = 1.0f;
-	_array[5] = 1.0f;
+	_array[2] = NS_EGraphicCore::active_color[0];
+	_array[3] = NS_EGraphicCore::active_color[1];
+	_array[4] = NS_EGraphicCore::active_color[2];
+	_array[5] = NS_EGraphicCore::active_color[3];
 
 	_array[6] = *_texture->uv_end_x;
 	_array[7] = *_texture->uv_end_y;
@@ -751,10 +792,10 @@ void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle(float* _array, 
 	_array[8] = (_x + _w);
 	_array[9] = _y;
 
-	_array[10] = 1.0f;
-	_array[11] = 1.0f;
-	_array[12] = 1.0f;
-	_array[13] = 1.0f;
+	_array[10] = NS_EGraphicCore::active_color[0];
+	_array[11] = NS_EGraphicCore::active_color[1];
+	_array[12] = NS_EGraphicCore::active_color[2];
+	_array[13] = NS_EGraphicCore::active_color[3];
 
 	_array[14] = *_texture->uv_end_x;
 	_array[15] = *_texture->uv_start_y;
@@ -764,10 +805,10 @@ void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle(float* _array, 
 	_array[16] = _x;
 	_array[17] = _y;
 
-	_array[18] = 1.0f;
-	_array[19] = 1.0f;
-	_array[20] = 1.0f;
-	_array[21] = 1.0f;
+	_array[18] = NS_EGraphicCore::active_color[0];
+	_array[19] = NS_EGraphicCore::active_color[1];
+	_array[20] = NS_EGraphicCore::active_color[2];
+	_array[21] = NS_EGraphicCore::active_color[3];
 
 	_array[22] = *_texture->uv_start_x;
 	_array[23] = *_texture->uv_start_y;
@@ -777,10 +818,10 @@ void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle(float* _array, 
 	_array[24] = _x;
 	_array[25] = (_y + _h);
 
-	_array[26] = 1.0f;
-	_array[27] = 1.0f;
-	_array[28] = 1.0f;
-	_array[29] = 1.0f;
+	_array[26] = NS_EGraphicCore::active_color[0];
+	_array[27] = NS_EGraphicCore::active_color[1];
+	_array[28] = NS_EGraphicCore::active_color[2];
+	_array[29] = NS_EGraphicCore::active_color[3];
 
 	_array[30] = *_texture->uv_start_x;
 	_array[31] = *_texture->uv_end_y;
@@ -797,10 +838,10 @@ void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size(float
 	_array[0] = (_x + *_texture->size_x_in_pixels);
 	_array[1] = (_y + *_texture->size_y_in_pixels);
 
-	_array[2] = 1.0f;
-	_array[3] = 1.0f;
-	_array[4] = 1.0f;
-	_array[5] = 1.0f;
+	_array[2] = NS_EGraphicCore::active_color[0];
+	_array[3] = NS_EGraphicCore::active_color[1];
+	_array[4] = NS_EGraphicCore::active_color[2];
+	_array[5] = NS_EGraphicCore::active_color[3];
 
 	_array[6] = *_texture->uv_end_x;
 	_array[7] = *_texture->uv_end_y;
@@ -810,10 +851,10 @@ void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size(float
 	_array[8] = (_x + *_texture->size_x_in_pixels);
 	_array[9] = _y;
 
-	_array[10] = 1.0f;
-	_array[11] = 1.0f;
-	_array[12] = 1.0f;
-	_array[13] = 1.0f;
+	_array[10] = NS_EGraphicCore::active_color[0];
+	_array[11] = NS_EGraphicCore::active_color[1];
+	_array[12] = NS_EGraphicCore::active_color[2];
+	_array[13] = NS_EGraphicCore::active_color[3];
 
 	_array[14] = *_texture->uv_end_x;
 	_array[15] = *_texture->uv_start_y;
@@ -823,10 +864,10 @@ void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size(float
 	_array[16] = _x;
 	_array[17] = _y;
 
-	_array[18] = 1.0f;
-	_array[19] = 1.0f;
-	_array[20] = 1.0f;
-	_array[21] = 1.0f;
+	_array[18] = NS_EGraphicCore::active_color[0];
+	_array[19] = NS_EGraphicCore::active_color[1];
+	_array[20] = NS_EGraphicCore::active_color[2];
+	_array[21] = NS_EGraphicCore::active_color[3];
 
 	_array[22] = *_texture->uv_start_x;
 	_array[23] = *_texture->uv_start_y;
@@ -836,10 +877,10 @@ void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size(float
 	_array[24] = _x;
 	_array[25] = (_y + *_texture->size_y_in_pixels);
 
-	_array[26] = 1.0f;
-	_array[27] = 1.0f;
-	_array[28] = 1.0f;
-	_array[29] = 1.0f;
+	_array[26] = NS_EGraphicCore::active_color[0];
+	_array[27] = NS_EGraphicCore::active_color[1];
+	_array[28] = NS_EGraphicCore::active_color[2];
+	_array[29] = NS_EGraphicCore::active_color[3];
 
 	_array[30] = *_texture->uv_start_x;
 	_array[31] = *_texture->uv_end_y;
@@ -849,13 +890,31 @@ void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size(float
 	
 }
 
-void NS_ERenderCollection::call_render_default(ESprite* _sprite)
+void NS_ERenderCollection::call_render_textured_rectangle_with_custom_size(ESprite* _sprite)
 {
+	NS_EGraphicCore::set_active_color(_sprite->sprite_color);
+
+	if ((_sprite != nullptr) && (_sprite->main_texture != nullptr))
+	{
+		NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			_sprite->master_sprite_layer->vertex_buffer,
+			*_sprite->master_sprite_layer->last_buffer_id,
+
+			*_sprite->world_position_x,
+			*_sprite->world_position_y,
+
+			*_sprite->size_x,
+			*_sprite->size_y,
+
+			_sprite->main_texture
+		);
+	}
 }
 
 void NS_ERenderCollection::call_render_textured_rectangle_real_size(ESprite* _sprite)
 {
-	EInputCore::logger_simple_success("call render texured rectangle");
+	//EInputCore::logger_simple_success("call render texured rectangle");
 
 	//unsigned int zalupa;
 
@@ -936,7 +995,7 @@ void ESpriteLayer::translate_sprite_layer(float _x, float _y, float _z)
 	*offset_y += _y;
 	*offset_z += _z;
 
-	translate_all_sprites(_x, _y, _z);
+	modify_buffer_translate_for_sprite_layer(_x, _y, _z);
 }
 
 void ETextureGabarite::set_name_based_on_full_path(std::string _name)
@@ -982,20 +1041,151 @@ void ETextureGabarite::set_real_texture_size(int _size_x, int _size_y)
 }
 
 
-void ESpriteLayer::translate_all_sprites(float _x, float _y, float _z)
+void ESpriteLayer::modify_buffer_translate_for_sprite_layer(float _x, float _y, float _z)
 {
+
+
+
+
+	for (int k = 0; k < 4; k++)
+	for (int i = 0; i < (int)(*last_buffer_id / 32); i++)
+	{
+			vertex_buffer[i * 32 + k * 8 + 0] += _x;
+			vertex_buffer[i * 32 + k * 8 + 1] += _y;
+	}
+
 	for (ESprite* spr : sprite_list)
 	{
-		spr->translate_sprite(_x, _y, _z);
+		*spr->offset_x += _x;
+		*spr->offset_y += _y;
+		*spr->offset_z += _z;
 	}
 }
 
-void ESpriteLayer::generate_vertex_buffer_for_sprite_layer()
+void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 {
-	for (ESprite* spr : sprite_list)
+
+	if
+	(
+		(!sprite_list.empty())
+		&
+		(
+			(batcher != nullptr)
+		)
+	)
 	{
-		spr->generate_vertex_buffer_for_master_sprite_layer();
+		*last_buffer_id = 0;
+
+		for (ESprite* spr : sprite_list)
+		{
+			if ((spr != nullptr) && (spr->pointer_to_sprite_render != nullptr))
+			{
+				EInputCore::logger_simple_success("try call render by pointer[" + std::to_string(_text) + "]");
+				spr->pointer_to_sprite_render(spr);
+			}
+			else
+			{
+				EInputCore::logger_simple_error("Sprite is null!");
+			}
+		}
 	}
+	else
+	{
+		//if (sl == nullptr) { EInputCore::logger_simple_error("SpriteList is null!"); }
+
+		if (batcher == nullptr)
+		{
+			EInputCore::logger_simple_error("[sprite layer batcher] is null");
+		}
+	}
+}
+
+void ESpriteLayer::transfer_vertex_buffer_to_batcher()
+{
+	if
+	(
+		(last_buffer_id > 0)
+		&&
+		(
+			(!sprite_list.empty())
+			&
+			(batcher != nullptr)
+		)
+	)
+	{
+		//memcpy();
+		//std::cout << "-------" << std::endl;
+
+		unsigned int vertices_buffer_capacity = MAX_SHAPES_COUNT * VERTICES_PER_SHAPE * batcher->gl_vertex_attribute_total_count;
+		//EInputCore::logger_param("vertices_buffer_capacity", vertices_buffer_capacity);
+
+		unsigned int passes = ceil(*last_buffer_id / (float)vertices_buffer_capacity);
+		//EInputCore::logger_param("passes", passes);
+
+		unsigned int data_size = *last_buffer_id;
+		//EInputCore::logger_param("data_size", data_size);
+
+
+		for (unsigned int i = 0; i < passes; i++)
+		{
+
+			memcpy
+			(
+				batcher->vertex_buffer + batcher->last_vertice_buffer_index,
+				vertex_buffer + (size_t)(i * vertices_buffer_capacity),
+				min(data_size, vertices_buffer_capacity) * sizeof(*vertex_buffer)
+			);
+
+			batcher->last_vertice_buffer_index += min(data_size, vertices_buffer_capacity);
+
+			if (batcher->last_vertice_buffer_index >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE)
+			{
+				batcher->draw_call();
+			}
+		}
+
+		
+		//std::copy(0, (int)(sizeof(sl->vertex_buffer)), std::begin(sl->batcher->vertex_buffer));
+	}
+}
+
+void ESpriteLayer::translate_sprites(float _x, float _y, float _z)
+{
+	*offset_x += _x;
+	*offset_y += _y;
+	*offset_z += _z;
+
+	for (int k = 0; k < 4; k++)
+	for (int i = 0; i < *last_buffer_id; i++)
+	{
+		vertex_buffer[i * batcher->gl_vertex_attribute_total_count * 4 + k * 8 + 0] += _x;
+		vertex_buffer[i * batcher->gl_vertex_attribute_total_count * 4 + k * 8 + 1] += _y;
+	}
+}
+
+ESprite::ESprite()
+{
+
+}
+
+ESprite::~ESprite()
+{
+}
+
+void ESprite::set_color(float _r, float _g, float _b, float _a)
+{
+	sprite_color[0] = _r;
+	sprite_color[1] = _g;
+	sprite_color[2] = _b;
+	sprite_color[3] = _a;
+}
+
+void ESprite::set_color(const float(&_color)[4])
+{
+	sprite_color[0] = _color[0];
+	sprite_color[1] = _color[1];
+	sprite_color[2] = _color[2];
+	sprite_color[3] = _color[3];
 }
 
 void ESprite::translate_sprite(float _x, float _y, float _z)

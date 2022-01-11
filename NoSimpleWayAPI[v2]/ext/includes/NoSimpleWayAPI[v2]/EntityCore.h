@@ -44,6 +44,7 @@ public:
 	void sprite_layer_generate_vertex_buffer();
 	void transfer_vertex_buffer_to_batcher();
 	void calculate_all_world_positions();
+	void modify_buffer_translate_for_entity(float _x, float _y, float _z);
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 	
 	void translate_entity(float _x, float _y, float _z);

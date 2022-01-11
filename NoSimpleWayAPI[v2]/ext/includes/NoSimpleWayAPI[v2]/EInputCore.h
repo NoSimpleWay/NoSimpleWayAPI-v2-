@@ -17,14 +17,20 @@ namespace EInputCore
 {
 	extern	 int		scroll_direction;
 
-	extern	 bool	MOUSE_BUTTON_LEFT;
-	extern	 bool	MOUSE_BUTTON_RIGHT;
-	extern	 bool	MOUSE_BUTTON_MID;
+	extern	bool		MOUSE_BUTTON_LEFT;
+	extern	bool		MOUSE_BUTTON_RIGHT;
+	extern	bool		MOUSE_BUTTON_MID;
 
-	extern	 double	MOUSE_POSITION_X;
-	extern	 double	MOUSE_POSITION_Y;
+	extern	double	MOUSE_POSITION_X;
+	extern	double	MOUSE_POSITION_Y;
 
-	extern	 char	LAST_INPUTED_CHAR;
+	extern	double	MOUSE_PREV_X;
+	extern	double	MOUSE_PREV_Y;
+
+	extern	double	MOUSE_SPEED_X;
+	extern	double	MOUSE_SPEED_Y;
+
+	extern	char		LAST_INPUTED_CHAR;
 
 	extern void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 	extern void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
@@ -39,6 +45,23 @@ namespace EInputCore
 
 	extern void logger_simple_error(std::string _error);
 	extern void logger_simple_success(std::string _message);
+
+	template<typename T>
+	extern std::string border_this_text(T _data, char _border_symbol)
+	{
+		static_assert(not std::is_same_v<T, std::string>, "T cannot be string");
+		static_assert(not std::is_same_v<T, std::string_view>, "T cannot be string_view");
+		//std::cout << "------[" << _text << ": " << std::to_string(_parameter) << "]-------" << std::endl;
+		//simple_logger_with_parameter(_z, std::to_string(_parameter));
+		char right_side = _border_symbol;
+
+		if (_border_symbol == '[') { right_side = ']'; }
+		if (_border_symbol == '(') { right_side = ')'; }
+		if (_border_symbol == '{') { right_side = '}'; }
+		if (_border_symbol == '<') { right_side = '>'; }
+
+		return (_border_symbol + std::to_string(_data) + right_side);
+	}
 
 	template<typename T>
 	extern void logger_param(std::string _text, T _parameter)
