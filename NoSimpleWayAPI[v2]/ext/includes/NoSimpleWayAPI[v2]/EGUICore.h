@@ -5,6 +5,8 @@
 /**/#include "EGraphicCore.h"
 #endif
 
+#include <vector>
+
 enum ENUM_ButtonAutoAlign
 {
 	BUTTON_AUTO_ALIGN__PUSH,								//push button to axis

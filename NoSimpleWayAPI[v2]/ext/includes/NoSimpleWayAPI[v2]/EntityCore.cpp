@@ -11,21 +11,7 @@
 
 void Entity::draw(float _d)
 {
-	//sprite_layer_generate_vertex_buffer();
 	transfer_vertex_buffer_to_batcher();
-
-	
-	/*NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size
-	(
-		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-		0 * 160.0f + 5.0f,
-		0 * 105.0f + 5.0f,
-
-		NS_DefaultGabarites::texture_gabarite_gudron
-	);*/
-	
 
 	NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 }
@@ -57,7 +43,7 @@ void Entity::sprite_layer_generate_vertex_buffer()
 					//EInputCore::logger_simple_success("try generate vertex buffer for sprite layer[]");
 					c_region->internal_sprite_layer->generate_vertex_buffer_for_sprite_layer("internal sprite layer");
 
-					for (int i = 0; i < *c_region->internal_sprite_layer->last_buffer_id; i++)
+					for (int i = 0; i < *c_region->internal_sprite_layer->last_buffer_id * 0; i++)
 					{
 						
 						EInputCore::logger_param(EInputCore::border_this_text(i, '['), c_region->internal_sprite_layer->vertex_buffer[i]);
@@ -80,7 +66,7 @@ void Entity::sprite_layer_generate_vertex_buffer()
 							}
 						}
 
-						EInputCore::logger_param("c_region->last_buffer_id", *c_region->internal_sprite_layer->last_buffer_id);
+						//EInputCore::logger_param("c_region->last_buffer_id", *c_region->internal_sprite_layer->last_buffer_id);
 					}
 				}
 			}
@@ -122,7 +108,7 @@ void Entity::transfer_vertex_buffer_to_batcher()
 					for (ESpriteLayer* s_layer:cl_region->sprite_layer_list)
 					if (s_layer != nullptr)
 					{
-						s_layer->transfer_vertex_buffer_to_batcher();
+						//s_layer->transfer_vertex_buffer_to_batcher();
 					}
 
 					if
@@ -134,6 +120,47 @@ void Entity::transfer_vertex_buffer_to_batcher()
 						//EInputCore::logger_param("internal sprite list vertex array count", *cl_region->internal_sprite_layer->last_buffer_id);
 
 						cl_region->internal_sprite_layer->transfer_vertex_buffer_to_batcher();
+					}
+
+					if
+					(
+						(cl_region->text_area != nullptr)
+						&&
+						(cl_region->text_area->sprite_layer != nullptr)
+					)
+					{
+						
+						cl_region->text_area->sprite_layer->transfer_vertex_buffer_to_batcher();
+
+						for (int i = 0; i < *cl_region->text_area->sprite_layer->last_buffer_id * 0; i++)
+						{
+
+							EInputCore::logger_param(EInputCore::border_this_text(i, '['), cl_region->text_area->sprite_layer->vertex_buffer[i]);
+
+							if ((i > 0))
+							{
+								if ((i + 1) % 8 == 0)
+								{
+									std::cout << white << "===" << std::endl;
+								}
+
+								if
+									(
+										((i + 7) % 8 == 0)
+										||
+										((i + 3) % 8 == 0)
+										)
+								{
+									std::cout << white << "-" << std::endl;
+								}
+							}
+
+							//EInputCore::logger_param("c_region->last_buffer_id", *cl_region->text_area->sprite_layer->last_buffer_id);
+						}
+					}
+					else
+					{
+						EInputCore::logger_simple_error("text area or text area sprite layer is null");
 					}
 				}
 			}

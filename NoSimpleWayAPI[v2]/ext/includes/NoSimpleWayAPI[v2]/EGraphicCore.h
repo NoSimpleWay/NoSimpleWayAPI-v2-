@@ -16,19 +16,32 @@
 /**/#include <GLFW/glfw3.h>
 #endif
 
+/////// /////// /////// /////// /////// /////// ///////
 #ifndef _GLM_LINKER_
 /**/#define _GLM_LINKER_
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #endif
+/////// /////// /////// /////// /////// /////// ///////
 
-/**/
+
+
+/////// /////// /////// /////// /////// /////// ///////
 #ifndef _E_INPUT_CORE_ALREADY_LINKED_
 #define _E_INPUT_CORE_ALREADY_LINKED_
 #include "EInputCore.h"
 #endif
-/**/
+/////// /////// /////// /////// /////// /////// ///////
+
+
+
+/////// /////// /////// /////// /////// /////// ///////
+#ifndef _E_TEXT_CORE_ALREADY_LINKED_
+/**/#define _E_TEXT_CORE_ALREADY_LINKED_
+/**/#include "ETextCore.h"
+#endif
+/////// /////// /////// /////// /////// /////// ///////
 
 #include <learnopengl/shader_s.h>
 
@@ -61,6 +74,8 @@ namespace NS_ERenderCollection
 	extern void fill_vertex_buffer_textured_rectangle_with_custom_size(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture);
 	extern void fill_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture);
 	extern void fill_vertex_buffer_rama(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _t, ETextureGabarite* _texture);
+	extern void fill_vertex_buffer_custom_uv(float* _array, unsigned int& _start_offset, float _x, float _y, float _size_x, float _size_y, float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y);
+	//extern void fill_vertex_buffer_text(float* _array, unsigned int& _start_offset, float _x, float _y, ETextArea* _area);
 
 	extern void call_render_textured_rectangle_with_custom_size(ESprite* _sprite);
 	extern void call_render_textured_rectangle_real_size(ESprite* _sprite);

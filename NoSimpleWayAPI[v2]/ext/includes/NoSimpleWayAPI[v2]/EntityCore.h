@@ -21,9 +21,12 @@
 #endif
 /**/
 
+#include <vector>
+
 /*********/
 class ERegionGabarite;
 class ECustomData;
+class ESpriteLayer;
 
 
 class Entity

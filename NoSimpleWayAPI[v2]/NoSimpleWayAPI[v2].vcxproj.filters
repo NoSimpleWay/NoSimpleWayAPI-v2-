@@ -34,6 +34,9 @@
     <Filter Include="External">
       <UniqueIdentifier>{1714c94d-6f66-46e4-b550-d5919a41be83}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NoSimpleWayAPI[v2]\TextCore">
+      <UniqueIdentifier>{90fdae0a-14a5-420c-97e9-a4d2bb468a96}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -60,6 +63,9 @@
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.cpp">
       <Filter>NoSimpleWayAPI[v2]\EntityCore</Filter>
     </ClCompile>
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\ETextCore.cpp">
+      <Filter>NoSimpleWayAPI[v2]\TextCore</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.h">
@@ -82,6 +88,9 @@
     </ClInclude>
     <ClInclude Include="EWindowMain.h">
       <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\ETextCore.h">
+      <Filter>NoSimpleWayAPI[v2]\TextCore</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

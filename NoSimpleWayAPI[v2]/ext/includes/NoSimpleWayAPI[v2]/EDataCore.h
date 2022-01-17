@@ -7,6 +7,11 @@
 #endif
 /**/
 
+#ifndef _E_TEXT_CORE_ALREADY_LINKED_
+/**/#define _E_TEXT_CORE_ALREADY_LINKED_
+/**/#include "ETextCore.h"
+#endif
+
 #include <vector>
 #include <string>
 
@@ -15,6 +20,7 @@ class EClickableRegion;
 class ECustomData;
 class Entity;
 class ESpriteLayer;
+//class ETextArea;
 
 //link to method, who manipulate with data
 //Entity*		= master entity, which store data object
@@ -22,6 +28,7 @@ class ESpriteLayer;
 //float		= delta time
 typedef void (*data_action_pointer)(Entity*, ECustomData*, float);
 
+class ETextArea;
 class ECustomData
 {
 public:
@@ -86,6 +93,8 @@ public:
 	Entity* master_entity;
 	ECustomData* master_custom_data;
 
+	ETextArea* text_area;
+
 	bool* catched_side_left	= new bool (false);
 	bool* catched_side_right	= new bool (false);
 	bool* catched_side_up	= new bool (false);	
@@ -94,6 +103,8 @@ public:
 
 	bool* have_rama		= new bool (true);
 	bool* any_visual_changes	= new bool (true);
+
+
 
 	//float* internal_vertex_buffer;
 

@@ -4,6 +4,8 @@
 #include "EWindowMain.h"
 #endif
 
+
+
 //class Entity;
 EWindowMain* EWindowMain::link_to_main_window;
 
@@ -54,10 +56,22 @@ EWindowMain::EWindowMain()
 	//jc = Just Created
 	Entity*			jc_entity = new Entity();
 	ESpriteLayer*		jc_sprite_layer = new ESpriteLayer();
+	ESpriteLayer*		jc_sprite_layer_for_text = new ESpriteLayer();
 	ESprite*			jc_sprite = new ESprite();
 	ECustomData*		jc_custom_data = new ECustomData();
 	ERegionGabarite*	jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 100.0f, 200.0f);
 	EClickableRegion*	jc_clickable_region = new EClickableRegion();
+	ETextArea*		jc_text_area = new ETextArea();
+
+	*jc_text_area->stored_text = "ABC\\nLOL\\nKEK";
+	jc_text_area->font = EFont::font_list.at(0);
+
+	jc_text_area->region_gabarite = jc_region_gabarite;
+	jc_text_area->sprite_layer = jc_sprite_layer_for_text;
+	jc_sprite_layer_for_text->batcher = NS_EGraphicCore::default_batcher_for_drawing;
+
+	
+	
 
 	//push back objects
 	jc_entity->sprite_layer_list.push_back(jc_sprite_layer);
@@ -75,6 +89,8 @@ EWindowMain::EWindowMain()
 	jc_clickable_region->region = jc_region_gabarite;
 	jc_clickable_region->master_entity = jc_entity;
 	jc_clickable_region->master_custom_data = jc_custom_data;
+
+	jc_clickable_region->text_area = jc_text_area;
 	
 
 	//create sprite
@@ -92,6 +108,10 @@ EWindowMain::EWindowMain()
 	
 	jc_clickable_region->init_internal_sprite_layer();
 	jc_entity->calculate_all_world_positions();
+
+	jc_text_area->generate_rows();
+	jc_text_area->generate_text();
+
 	jc_entity->sprite_layer_generate_vertex_buffer();
 	
 

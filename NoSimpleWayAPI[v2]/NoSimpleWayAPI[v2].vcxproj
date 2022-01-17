@@ -133,6 +133,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessToFile>false</PreprocessToFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -150,6 +151,7 @@
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.cpp" />
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\ETextCore.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +162,7 @@
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.h" />
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\ETextCore.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -478,7 +478,11 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_DefaultGabarites::texture_gabarite_white_pixel = NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_gabarite_gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
 	
-	//EWindow::default_texture_atlas = new ETextureAtlas(4096, 4096);
+	//font
+	EFont* new_font = NULL;
+	ETextureGabarite* font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/franklin_0.png", NS_EGraphicCore::default_texture_atlas);
+	new_font = new EFont("franklin", font_gabarite, NS_EGraphicCore::default_texture_atlas, false);
+	EFont::font_list.push_back(new_font);
 }
 
 void NS_EGraphicCore::gl_set_texture_filtering(GLint _wrap_mode, GLint _filter)
@@ -768,6 +772,69 @@ void NS_ERenderCollection::fill_vertex_buffer_rama(float* _array, unsigned int& 
 
 	//up (horizontal)
 	fill_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y + _h - _t, _w, _t, _texture);
+}
+
+void NS_ERenderCollection::fill_vertex_buffer_custom_uv(float* _array, unsigned int& _start_offset, float _x, float _y, float _size_x, float _size_y, float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y)
+{
+	//address arithmetic, get pointer to buffer array, and move to +_offset
+	_array += _start_offset;
+
+	//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
+	//.#
+	//..
+	_array[0] = (_x + _size_x);
+	_array[1] = (_y + _size_y);
+
+	_array[2] = NS_EGraphicCore::active_color[0];
+	_array[3] = NS_EGraphicCore::active_color[1];
+	_array[4] = NS_EGraphicCore::active_color[2];
+	_array[5] = NS_EGraphicCore::active_color[3];
+
+	_array[6] = _uv_end_x;
+	_array[7] = _uv_end_y;
+
+	EInputCore::logger_param("internal", _uv_end_y);
+
+	//..
+	//.#
+	_array[8] = (_x + _size_x);
+	_array[9] = _y;
+
+	_array[10] = NS_EGraphicCore::active_color[0];
+	_array[11] = NS_EGraphicCore::active_color[1];
+	_array[12] = NS_EGraphicCore::active_color[2];
+	_array[13] = NS_EGraphicCore::active_color[3];
+
+	_array[14] = _uv_end_x;
+	_array[15] = _uv_start_y;
+
+	//..
+	//#.
+	_array[16] = _x;
+	_array[17] = _y;
+
+	_array[18] = NS_EGraphicCore::active_color[0];
+	_array[19] = NS_EGraphicCore::active_color[1];
+	_array[20] = NS_EGraphicCore::active_color[2];
+	_array[21] = NS_EGraphicCore::active_color[3];
+
+	_array[22] = _uv_start_x;
+	_array[23] = _uv_start_y;
+
+	//#.
+	//..
+	_array[24] = _x;
+	_array[25] = (_y + _size_y);
+
+	_array[26] = NS_EGraphicCore::active_color[0];
+	_array[27] = NS_EGraphicCore::active_color[1];
+	_array[28] = NS_EGraphicCore::active_color[2];
+	_array[29] = NS_EGraphicCore::active_color[3];
+
+	_array[30] = _uv_start_x;
+	_array[31] = _uv_end_y;
+
+	_start_offset += 32;
 }
 
 void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_with_custom_size(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture)
@@ -1080,7 +1147,7 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 		{
 			if ((spr != nullptr) && (spr->pointer_to_sprite_render != nullptr))
 			{
-				EInputCore::logger_simple_success("try call render by pointer[" + std::to_string(_text) + "]");
+				//EInputCore::logger_simple_success("try call render by pointer[" + std::to_string(_text) + "]");
 				spr->pointer_to_sprite_render(spr);
 			}
 			else
@@ -1107,8 +1174,6 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 		(last_buffer_id > 0)
 		&&
 		(
-			(!sprite_list.empty())
-			&
 			(batcher != nullptr)
 		)
 	)
@@ -1146,6 +1211,10 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 
 		
 		//std::copy(0, (int)(sizeof(sl->vertex_buffer)), std::begin(sl->batcher->vertex_buffer));
+	}
+	else
+	{
+		if (batcher == nullptr) { EInputCore::logger_simple_error("batcher is null"); }
 	}
 }
 

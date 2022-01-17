@@ -1,4 +1,7 @@
 #pragma once
+
+
+
 #ifndef _E_GUI_CORE_ALREADY_LINKED_
 #define _E_GUI_CORE_ALREADY_LINKED_
 #include "NoSimpleWayAPI[v2]/EGUICore.h"
@@ -10,6 +13,14 @@
 #include "NoSimpleWayAPI[v2]/EntityCore.h"
 #endif
 /**/
+
+
+//#ifndef _E_TEXT_CORE_ALREADY_LINKED_
+///**/#define _E_TEXT_CORE_ALREADY_LINKED_
+///**/#include "NoSimpleWayAPI[v2]/ETextCore.h"
+//#endif
+
+
 
 constexpr int CLUSTER_DIM_X = 50;
 constexpr int CLUSTER_DIM_Y = 50;
