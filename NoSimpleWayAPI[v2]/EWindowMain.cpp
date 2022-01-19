@@ -11,6 +11,7 @@ EWindowMain* EWindowMain::link_to_main_window;
 
 void EWindowMain::draw_additional(float _d)
 {
+	
 
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_position(0.0f, 0.0f);
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_screen_size(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
@@ -27,6 +28,11 @@ void EWindowMain::draw_additional(float _d)
 
 	}
 
+	NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+	
+	
+	//if (EInputCore::key_pressed_once(GLFW_KEY_W))	{ EInputCore::logger_simple_success("WwWwW"); }
+	//if (EInputCore::key_holded(GLFW_KEY_W))			{ EInputCore::logger_simple_success("holded WwWwW"); }
 }
 
 void EWindowMain::update_additional(float _d)
@@ -34,11 +40,11 @@ void EWindowMain::update_additional(float _d)
 	for (int j = 0; j < CLUSTER_DIM_X; j++)
 	for (int i = 0; i < CLUSTER_DIM_Y; i++)
 	{
+		
 		for (Entity* el : cluster_array[j][i]->entity_list)
 		{
 			el->update(_d);
 		}
-		
 	}
 
 }
@@ -63,11 +69,14 @@ EWindowMain::EWindowMain()
 	EClickableRegion*	jc_clickable_region = new EClickableRegion();
 	ETextArea*		jc_text_area = new ETextArea();
 
+	jc_custom_data->data_actions_list.push_back(&EDataActionCollection::action_player_control);
+
 	*jc_text_area->stored_text = "ABC\\nLOL\\nKEK";
 	jc_text_area->font = EFont::font_list.at(0);
 
 	jc_text_area->region_gabarite = jc_region_gabarite;
 	jc_text_area->sprite_layer = jc_sprite_layer_for_text;
+	jc_text_area->master_clickable_region = jc_clickable_region;
 	jc_sprite_layer_for_text->batcher = NS_EGraphicCore::default_batcher_for_drawing;
 
 	

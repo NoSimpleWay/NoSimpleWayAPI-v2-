@@ -36,6 +36,7 @@ namespace EInputCore
 	extern void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
 	extern void mouse_position_callback(GLFWwindow* window, double _x, double _y);
 	extern void char_input_callback(GLFWwindow* window, unsigned int _char);
+	extern void key_input_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 	extern void initiate_input_core();
 
 	extern void simple_logger_with_parameter(std::string _text, std::string _parameter);
@@ -71,4 +72,12 @@ namespace EInputCore
 		//std::cout << "------[" << _text << ": " << std::to_string(_parameter) << "]-------" << std::endl;
 		simple_logger_with_parameter(_text, std::to_string(_parameter));
 	}
+
+	extern int key_state[512];
+	extern float key_hold_time[512];
+
+	extern bool key_pressed_once(int _key);
+	extern bool key_pressed(int _key);
+	extern bool key_holded(int _key, float _time);
+	//extern float key_is_holded[512];
 }

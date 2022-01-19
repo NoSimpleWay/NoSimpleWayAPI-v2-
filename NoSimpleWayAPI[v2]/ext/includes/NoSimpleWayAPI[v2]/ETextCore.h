@@ -14,6 +14,7 @@
 #include <vector>
 
 
+class EFontGlyph;
 
 enum AlignSide
 {
@@ -24,9 +25,14 @@ enum AlignSide
 
 
 class ERegionGabarite;
+
 class ETextureGabarite;
 class ESpriteLayer;
 class ETextureAtlas;
+
+class EClickableRegion;
+
+class ETextArea;
 
 /*
 
@@ -41,6 +47,10 @@ enum FONT_ENUM
 };
 
 
+namespace NS_FONT_UTILS
+{
+	extern ETextArea* active_text_area;
+};
 
 class EFont
 {
@@ -109,12 +119,61 @@ public:
 	std::vector<std::string*> row;
 	int* row_count = new int (0);
 
+	bool* translate_region_gabarite = new bool (false);
+
 	void generate_rows();
 	void generate_text();
 	void set_font(EFont* _font);
 
+	void translate(float _x, float _y);
+
+	EClickableRegion* master_clickable_region;
+
+	void update(float _d);
+	void draw();
+
 
 	ESpriteLayer* sprite_layer;
+	///
+	std::vector<EFontGlyph*> font_glyph_list;
+
+	int* selected_glyph_position = new int (0);
+	bool* flash_line_active = new bool(false);
+	float* flash_line_cooldown = new float(0.0f);
+	
+
+	//bool* selected_left_side = new bool(false);
+	float* jump_cooldown = new float(0.0f);
+
+	bool* text_area_active = new bool(false);
+
+	float* border_offset = new float(5.0f);
+
+	//static 
+};
+
+class EFontGlyph
+{
+public:
+	EFontGlyph(char _sym, float _pos_x, float _pos_y, float _size_x, float _size_y);
+	~EFontGlyph();
+
+	float* world_position_x = new float (0.0f);
+	float* world_position_y = new float (0.0f);
+
+	float* size_x = new float(0.0f);
+	float* size_y = new float(0.0f);
+
+	char* sym = new char(0);
+	int* row_id = new int(0);
+
+	int* storer_text_sym_id = new int(0);
+
+	bool* is_first_symbol = new bool (false);
+	bool* is_last_symbol = new bool (false);
+	bool* is_empty = new bool(false);
+
+	
 };
 
 

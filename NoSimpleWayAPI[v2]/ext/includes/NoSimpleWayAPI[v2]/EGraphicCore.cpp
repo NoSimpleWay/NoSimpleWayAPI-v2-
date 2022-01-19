@@ -5,7 +5,7 @@
 
 namespace NS_EGraphicCore
 {
-	int							SCREEN_WIDTH = 1920, SCREEN_HEIGHT = 1080;
+	int							SCREEN_WIDTH = 800, SCREEN_HEIGHT = 600;
 	float						correction_x = 1.0f, correction_y = 1.0f;
 	Shader* shader_texture_atlas_putter;
 
@@ -226,7 +226,7 @@ void ERenderBatcher::set_transform_zoom(float _zoom)
 
 bool ERenderBatcher::is_batcher_have_free_space(ERenderBatcher* _batcher)
 {
-	if (_batcher->last_vertice_buffer_index >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE)
+	if (_batcher->last_vertice_buffer_index + _batcher->gl_vertex_attribute_total_count >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE)
 	{
 		_batcher->draw_call();
 		return false;
@@ -395,11 +395,11 @@ void NS_EGraphicCore::initiate_graphic_core()
 	GLFWmonitor* monitor = glfwGetPrimaryMonitor();
 	const GLFWvidmode* mode = glfwGetVideoMode(monitor);
 
-	glfwWindowHint(GLFW_RED_BITS, mode->redBits);
+	/*glfwWindowHint(GLFW_RED_BITS, mode->redBits);
 	glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
 	glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
 	glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
-	glfwWindowHint(GLFW_DECORATED, NULL);
+	glfwWindowHint(GLFW_DECORATED, NULL);*/
 
 	NS_EGraphicCore::main_window = glfwCreateWindow(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT, "Window name", NULL, NULL);
 	//std::cout << "[0]window is:" << (EGraphicCore::main_window) << std::endl;
@@ -640,7 +640,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 		NS_EGraphicCore::default_batcher_for_texture_atlas->reset();
 
 
-		NS_ERenderCollection::fill_vertex_buffer_default
+		NS_ERenderCollection::add_data_to_vertex_buffer_default
 		(
 			NS_EGraphicCore::default_batcher_for_texture_atlas->vertex_buffer,
 			NS_EGraphicCore::default_batcher_for_texture_atlas->last_vertice_buffer_index,
@@ -660,11 +660,11 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 
 			new_gabarite->set_uv_parameters
 			(
-				(place_x) / (float)(_atlas->get_atlas_size_x()),
-				(place_y) / (float)(_atlas->get_atlas_size_y()),
+				(float)(place_x + 0.0f) / (float)(_atlas->get_atlas_size_x()),
+				(float)(place_y + 0.0f) / (float)(_atlas->get_atlas_size_y()),
 
-				(NS_EGraphicCore::last_texture_width - 1) / (float)_atlas->get_atlas_size_x(),
-				(NS_EGraphicCore::last_texture_height - 1) / (float)_atlas->get_atlas_size_y()
+				((float)(NS_EGraphicCore::last_texture_width) - 1.0f / (float)(last_texture_width)) / (float)_atlas->get_atlas_size_x(),
+				((float)(NS_EGraphicCore::last_texture_height) - 1.0f / (float)(last_texture_height)) / (float)_atlas->get_atlas_size_y()
 			);
 
 			new_gabarite->set_real_texture_size
@@ -698,7 +698,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 	return new_gabarite;
 }
 
-void NS_ERenderCollection::fill_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h)
+void NS_ERenderCollection::add_data_to_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h)
 {
 	//address arithmetic, get pointer to buffer array, and move to +_offset
 	_array += _start_offset;
@@ -759,22 +759,22 @@ void NS_ERenderCollection::fill_vertex_buffer_default(float* _array, unsigned in
 	_start_offset += 32;
 }
 
-void NS_ERenderCollection::fill_vertex_buffer_rama(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _t, ETextureGabarite* _texture)
+void NS_ERenderCollection::add_data_to_vertex_buffer_rama(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _t, ETextureGabarite* _texture)
 {
 	//left (vertical)
-	fill_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y, _t, _h, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y, _t, _h, _texture);
 
 	//right (vertical)
-	fill_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x + _h - _t, _y, _t, _h, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x + _h - _t, _y, _t, _h, _texture);
 
 	//down (horizontal)
-	fill_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y, _w, _t, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y, _w, _t, _texture);
 
 	//up (horizontal)
-	fill_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y + _h - _t, _w, _t, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y + _h - _t, _w, _t, _texture);
 }
 
-void NS_ERenderCollection::fill_vertex_buffer_custom_uv(float* _array, unsigned int& _start_offset, float _x, float _y, float _size_x, float _size_y, float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y)
+void NS_ERenderCollection::add_data_to_vertex_buffer_custom_uv(float* _array, unsigned int& _start_offset, float _x, float _y, float _size_x, float _size_y, float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y)
 {
 	//address arithmetic, get pointer to buffer array, and move to +_offset
 	_array += _start_offset;
@@ -793,7 +793,7 @@ void NS_ERenderCollection::fill_vertex_buffer_custom_uv(float* _array, unsigned 
 	_array[6] = _uv_end_x;
 	_array[7] = _uv_end_y;
 
-	EInputCore::logger_param("internal", _uv_end_y);
+	//EInputCore::logger_param("internal", _uv_end_y);
 
 	//..
 	//.#
@@ -837,7 +837,7 @@ void NS_ERenderCollection::fill_vertex_buffer_custom_uv(float* _array, unsigned 
 	_start_offset += 32;
 }
 
-void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_with_custom_size(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture)
+void NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture)
 {
 	//address arithmetic, get pointer to buffer array, and move to +_offset
 	_array += _start_offset;
@@ -896,7 +896,7 @@ void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_with_custom_siz
 	_start_offset += 32;
 }
 
-void NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture)
+void NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture)
 {
 	//address arithmetic, get pointer to buffer array, and move to +_offset
 	_array += _start_offset;
@@ -963,7 +963,7 @@ void NS_ERenderCollection::call_render_textured_rectangle_with_custom_size(ESpri
 
 	if ((_sprite != nullptr) && (_sprite->main_texture != nullptr))
 	{
-		NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_with_custom_size
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
 			_sprite->master_sprite_layer->vertex_buffer,
 			*_sprite->master_sprite_layer->last_buffer_id,
@@ -989,7 +989,7 @@ void NS_ERenderCollection::call_render_textured_rectangle_real_size(ESprite* _sp
 	{
 		_sprite->master_sprite_layer->vertex_buffer = new float[100];
 
-		NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_size
 		(
 			_sprite->master_sprite_layer->vertex_buffer,
 			*_sprite->master_sprite_layer->last_buffer_id,
@@ -1058,11 +1058,20 @@ std::string_view ETextureGabarite::get_name()
 
 void ESpriteLayer::translate_sprite_layer(float _x, float _y, float _z)
 {
+	/*
 	*offset_x += _x;
 	*offset_y += _y;
 	*offset_z += _z;
+	*/
 
-	modify_buffer_translate_for_sprite_layer(_x, _y, _z);
+	*world_position_x += _x;
+	*world_position_y += _y;
+	*world_position_z += _z;
+
+	translate_sprites(_x, _y, _z);
+	modify_buffer_position_for_sprite_layer(_x, _y, _z);
+
+
 }
 
 void ETextureGabarite::set_name_based_on_full_path(std::string _name)
@@ -1103,22 +1112,22 @@ void ETextureGabarite::set_uv_parameters(float _uv_start_x, float _uv_start_y, f
 
 void ETextureGabarite::set_real_texture_size(int _size_x, int _size_y)
 {
-	*size_x_in_pixels = _size_x - 1;
-	*size_y_in_pixels = _size_y - 1;
+	*size_x_in_pixels = _size_x;
+	*size_y_in_pixels = _size_y;
 }
 
 
-void ESpriteLayer::modify_buffer_translate_for_sprite_layer(float _x, float _y, float _z)
+void ESpriteLayer::modify_buffer_position_for_sprite_layer(float _x, float _y, float _z)
 {
 
 
 
 
 	for (int k = 0; k < 4; k++)
-	for (int i = 0; i < (int)(*last_buffer_id / 32); i++)
+	for (int i = 0; i < *last_buffer_id; i += 32)
 	{
-			vertex_buffer[i * 32 + k * 8 + 0] += _x;
-			vertex_buffer[i * 32 + k * 8 + 1] += _y;
+			vertex_buffer[i + k * 8 + 0] += _x;
+			vertex_buffer[i + k * 8 + 1] += _y;
 	}
 
 	for (ESprite* spr : sprite_list)
@@ -1220,16 +1229,18 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 
 void ESpriteLayer::translate_sprites(float _x, float _y, float _z)
 {
-	*offset_x += _x;
-	*offset_y += _y;
-	*offset_z += _z;
-
-	for (int k = 0; k < 4; k++)
-	for (int i = 0; i < *last_buffer_id; i++)
+	for (ESprite* spr : sprite_list)
 	{
-		vertex_buffer[i * batcher->gl_vertex_attribute_total_count * 4 + k * 8 + 0] += _x;
-		vertex_buffer[i * batcher->gl_vertex_attribute_total_count * 4 + k * 8 + 1] += _y;
+		*spr->offset_x += _x;
+		*spr->offset_y += _y;
+		*spr->offset_z += _z;
+
+		*spr->world_position_x += _x;
+		*spr->world_position_y += _y;
+		*spr->world_position_z += _z;
 	}
+
+
 }
 
 ESprite::ESprite()
@@ -1269,7 +1280,7 @@ void ESprite::generate_vertex_buffer_for_master_sprite_layer()
 	if ((master_sprite_layer != nullptr) & (main_texture != nullptr))
 	{
 		//master_sprite_layer->batcher->pointer_to_render()
-		NS_ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_size
 		(
 			master_sprite_layer->vertex_buffer,
 			*master_sprite_layer->last_buffer_id,

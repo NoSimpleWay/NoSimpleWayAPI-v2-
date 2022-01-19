@@ -89,7 +89,7 @@ int main()
 	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))
 	{
 
-
+		//GLFW_KEY_1
 		clock_t time = clock();
 
 		NS_EGraphicCore::delta_time = (time - NS_EGraphicCore::saved_time_for_delta) / 1000.0;
@@ -101,6 +101,8 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		glfwPollEvents();
+
+		
 
 
 
@@ -132,13 +134,26 @@ int main()
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 		}
 		
-
+		///reset input states
 		glfwSwapBuffers(NS_EGraphicCore::main_window);
 
-		EInputCore::LAST_INPUTED_CHAR	=	NULL;
+		for (int i = 0; i < 512; i++)
+		{
+			if (EInputCore::key_state[i] != GLFW_RELEASE)
+			{
+				EInputCore::key_hold_time[i] += NS_EGraphicCore::delta_time;
+			}
+			else
+			{
+				EInputCore::key_hold_time[i] = 0.0f;
+			}
+		}
+
+		EInputCore::LAST_INPUTED_CHAR	=	0;
 		EInputCore::scroll_direction	=	0;
 		EInputCore::MOUSE_SPEED_X = 0.0;
 		EInputCore::MOUSE_SPEED_Y = 0.0;
+		///////
 	}
 
 	return 0;

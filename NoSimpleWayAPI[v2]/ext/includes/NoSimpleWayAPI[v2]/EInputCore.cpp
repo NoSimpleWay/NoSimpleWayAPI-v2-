@@ -23,7 +23,28 @@ namespace EInputCore
 	double	MOUSE_SPEED_X;
 	double	MOUSE_SPEED_Y;
 
-	char		LAST_INPUTED_CHAR = NULL;
+	char		LAST_INPUTED_CHAR = 0;
+
+	int		key_state[512]{ false };
+	float	key_hold_time[512];
+
+	bool key_pressed_once(int _key)
+	{
+		if ((key_state[_key] != GLFW_RELEASE) & (key_hold_time[_key] <= 0.0f)) { return true; }
+		return false;
+	}
+
+	bool key_pressed(int _key)
+	{
+		if ((key_state[_key] != GLFW_RELEASE)) { return true; }
+		return false;
+	}
+
+	bool key_holded(int _key, float _time)
+	{
+		if ((key_state[_key] != GLFW_RELEASE) & (key_hold_time[_key] > _time)) { return true; }
+		return false;
+	}
 };
 
 std::string std::to_string(std::string _string)
@@ -39,6 +60,7 @@ void EInputCore::initiate_input_core()
 		glfwSetMouseButtonCallback(NS_EGraphicCore::main_window, EInputCore::mouse_button_callback);
 		glfwSetCursorPosCallback(NS_EGraphicCore::main_window, EInputCore::mouse_position_callback);
 		glfwSetCharCallback(NS_EGraphicCore::main_window, EInputCore::char_input_callback);
+		glfwSetKeyCallback(NS_EGraphicCore::main_window, EInputCore::key_input_callback);
 	}
 	else
 	{
@@ -143,9 +165,23 @@ void EInputCore::char_input_callback(GLFWwindow* window, unsigned int _char)
 		else
 			if (inputed_c > 255) { inputed_c -= 848; }
 
-	//cout << "input character: " << inputed_c << "|" << (int)_char << "[  " << (char)inputed_c << " ]" << " (" << _char << ")" << endl;
+	//std::cout << "input character: " << inputed_c << "|" << (int)_char << "[  " << (char)inputed_c << " ]" << " (" << _char << ")" << std::endl;
 
 	EInputCore::LAST_INPUTED_CHAR = (char)inputed_c;
 
 	//EWindow::last_inputed_char = _char;
+}
+
+void EInputCore::key_input_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+	key_state[key] = action;
+
+	//if (key_state)
+	
+	//if ((action == GLFW_PRESS) & (key == GLFW_KEY_W)) { logger_simple_success("WwWwW"); }
+	/*logger_simple_success("---");
+	logger_param("key", key);
+	logger_param("scancode", scancode);
+	logger_param("action", action);
+	logger_param("mods", mods);*/
 }

@@ -45,13 +45,13 @@ public:
 
 	void draw(float _d);
 	void sprite_layer_generate_vertex_buffer();
-	void transfer_vertex_buffer_to_batcher();
+	void transfer_all_vertex_buffers_to_batcher();
 	void calculate_all_world_positions();
 	void modify_buffer_translate_for_entity(float _x, float _y, float _z);
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 	
 	void translate_entity(float _x, float _y, float _z);
-	
+	void translate_all_sprite_layers(float _x, float _y, float _z);
 	void update(float _d);
 	Entity();
 	~Entity();

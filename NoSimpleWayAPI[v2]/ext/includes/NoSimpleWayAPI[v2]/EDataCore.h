@@ -44,6 +44,9 @@ public:
 	//WHAT do with data
 	std::vector<data_action_pointer> data_actions_list;
 
+	void draw();
+	void translate(float _x, float _y, float _z);
+
 	//std::vector<void (*)(Entity*, ECustomData*)> data_actions_list;
 };
 
@@ -68,6 +71,8 @@ public:
 
 	float* world_position_x = new float(0.0f);
 	float* world_position_y = new float(0.0f);
+
+	void translate(float _x, float _y);
 };
 
 enum ClickableRegionSides
@@ -111,11 +116,12 @@ public:
 	static bool overlapped_by_mouse(EClickableRegion* _region, float _offset_x, float _offset_y, float _zoom);
 	static bool catched_side_by_mouse(float _x, float _y, float _size_x, float _size_y, float _offset_x, float _offset_y, float _zoom, float _catch_distance = 5.0f);
 	void check_all_catches();
+	void translate(float _x, float _y, float _z);
 
 
 	
 	void update(float _d);
-	void draw(float _d);
+	void draw();
 
 	void update_sides_visual(int _side, float _offset_x, float _offset_y, bool _catched);
 	void init_internal_sprite_layer();
@@ -144,5 +150,6 @@ public:
 
 namespace EDataActionCollection
 {
-	void action_log_text(Entity* _entity, ECustomData* _custom_data);
+	void action_log_text			(Entity* _entity, ECustomData* _custom_data);
+	void action_player_control		(Entity* _entity, ECustomData* _custom_data, float _d);
 }

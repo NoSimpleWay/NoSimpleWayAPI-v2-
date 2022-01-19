@@ -11,9 +11,7 @@
 
 void Entity::draw(float _d)
 {
-	transfer_vertex_buffer_to_batcher();
-
-	NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+	transfer_all_vertex_buffers_to_batcher();
 }
 
 void Entity::sprite_layer_generate_vertex_buffer()
@@ -82,91 +80,21 @@ void Entity::sprite_layer_generate_vertex_buffer()
 	}
 }
 
-void Entity::transfer_vertex_buffer_to_batcher()
+void Entity::transfer_all_vertex_buffers_to_batcher()
 {
+
+	//sprite list for entity
 	if (!sprite_layer_list.empty())
 	{
 		for (ESpriteLayer* sl : sprite_layer_list)
-		if (sl != nullptr)
-		{
-			sl->transfer_vertex_buffer_to_batcher();
-		}
+		if (sl != nullptr) {sl->transfer_vertex_buffer_to_batcher();}
 	}
 
+	//custom data store clickable regions and text
 	if (!custom_data_list.empty())
 	{
 		for (ECustomData* c_data : custom_data_list)
-		if (c_data != nullptr)
-		{
-			if (!c_data->clickable_region_list.empty())
-			for (EClickableRegion* cl_region:c_data->clickable_region_list)
-			if (cl_region != nullptr)
-			{
-				if (cl_region->region != nullptr)
-				{
-					if(!cl_region->sprite_layer_list.empty())
-					for (ESpriteLayer* s_layer:cl_region->sprite_layer_list)
-					if (s_layer != nullptr)
-					{
-						//s_layer->transfer_vertex_buffer_to_batcher();
-					}
-
-					if
-					(
-						(cl_region->internal_sprite_layer != nullptr)
-					)
-					{
-						//EInputCore::logger_simple_success("try transfer VB to batcher [sprite layer elements:" + std::to_string(*cl_region->internal_sprite_layer->last_buffer_id) + "]");
-						//EInputCore::logger_param("internal sprite list vertex array count", *cl_region->internal_sprite_layer->last_buffer_id);
-
-						cl_region->internal_sprite_layer->transfer_vertex_buffer_to_batcher();
-					}
-
-					if
-					(
-						(cl_region->text_area != nullptr)
-						&&
-						(cl_region->text_area->sprite_layer != nullptr)
-					)
-					{
-						
-						cl_region->text_area->sprite_layer->transfer_vertex_buffer_to_batcher();
-
-						for (int i = 0; i < *cl_region->text_area->sprite_layer->last_buffer_id * 0; i++)
-						{
-
-							EInputCore::logger_param(EInputCore::border_this_text(i, '['), cl_region->text_area->sprite_layer->vertex_buffer[i]);
-
-							if ((i > 0))
-							{
-								if ((i + 1) % 8 == 0)
-								{
-									std::cout << white << "===" << std::endl;
-								}
-
-								if
-									(
-										((i + 7) % 8 == 0)
-										||
-										((i + 3) % 8 == 0)
-										)
-								{
-									std::cout << white << "-" << std::endl;
-								}
-							}
-
-							//EInputCore::logger_param("c_region->last_buffer_id", *cl_region->text_area->sprite_layer->last_buffer_id);
-						}
-					}
-					else
-					{
-						EInputCore::logger_simple_error("text area or text area sprite layer is null");
-					}
-				}
-			}
-
-			//if (c_data->inter)
-		}
+		if (c_data != nullptr) {c_data->draw();}
 	}
 	
 }
@@ -250,7 +178,7 @@ void Entity::modify_buffer_translate_for_entity(float _x, float _y, float _z)
 {
 	for (ESpriteLayer* s_layer : sprite_layer_list)
 	{
-		s_layer->modify_buffer_translate_for_sprite_layer(_x, _y, _z);
+		s_layer->modify_buffer_position_for_sprite_layer(_x, _y, _z);
 	}
 
 	for (ECustomData* c_data : custom_data_list)
@@ -259,12 +187,12 @@ void Entity::modify_buffer_translate_for_entity(float _x, float _y, float _z)
 		{
 			for (ESpriteLayer* s_layer : c_region->sprite_layer_list)
 			{
-				s_layer->modify_buffer_translate_for_sprite_layer(_x, _y, _z);
+				s_layer->modify_buffer_position_for_sprite_layer(_x, _y, _z);
 			}
 
 			if (c_region->internal_sprite_layer != nullptr)
 			{
-				c_region->internal_sprite_layer->modify_buffer_translate_for_sprite_layer(_x, _y, _z);
+				c_region->internal_sprite_layer->modify_buffer_position_for_sprite_layer(_x, _y, _z);
 			}
 		}
 
@@ -275,13 +203,23 @@ void Entity::modify_buffer_translate_for_entity(float _x, float _y, float _z)
 
 void Entity::translate_entity(float _x, float _y, float _z)
 {
+	//entity position
 	*offset_x += _x;
 	*offset_y += _y;
 	*offset_z += _z;
 
-	modify_buffer_translate_for_entity(_x, _y, _z);
+	translate_all_sprite_layers(_x, _y, _z);
+}
 
-	calculate_all_world_positions();
+void Entity::translate_all_sprite_layers(float _x, float _y, float _z)
+{
+	for (ESpriteLayer* s_layer : sprite_layer_list)
+	if (s_layer != nullptr) {s_layer->translate_sprite_layer(_x, _y, _z);}
+	
+	for (ECustomData* c_data : custom_data_list)
+	if (c_data != nullptr) {c_data->translate(_x, _y, _z);}
+
+
 }
 
 void Entity::update(float _d)
@@ -302,6 +240,8 @@ void Entity::update(float _d)
 		{
 			action_on_update_pointer(c_data->master_entity, c_data, _d);
 		}
+
+		//for (EClickableRegion* cl_region)
 	}
 }
 
