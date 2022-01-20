@@ -4,7 +4,12 @@
 #define STB_IMAGE_IMPLEMENTATION 
 #include "NoSimpleWayAPI[v2]/EGraphicCore.h"
 #include "NoSimpleWayAPI[v2]/EInputCore.h"
+#include "NoSimpleWayAPI[v2]/EGUICore.h"
+#include "EWindowMain.h"
 
+#include <algorithm>
+#include <iterator>
+#include <chrono>
 
 //extern GLFWwindow* main_window{ nullptr };
 
@@ -16,10 +21,16 @@ int main()
 
 // glfw window creation
 // --------------------
+	/*Entity* ent = nullptr;
+	std::cout << "entity pointer: " << ent << std::endl;
 
+	ent = new Entity();
+	std::cout << "entity pointer: " << ent << std::endl;*/
 
-	EGraphicCore::initiate_graphic_core();
+	NS_EGraphicCore::initiate_graphic_core();
 	EInputCore::initiate_input_core();
+
+	
 	
 	GLint max_tex_size;
 	glGetIntegerv(GL_MAX_TEXTURE_SIZE, &max_tex_size);
@@ -27,97 +38,122 @@ int main()
 
 	glfwSwapInterval(1);
 
-		ERenderBatcher* batcher = new ERenderBatcher();
-			batcher->set_total_attribute_count(8);
 
-			batcher->register_new_vertex_attribute(2);//position
-			batcher->register_new_vertex_attribute(4);//color
-			batcher->register_new_vertex_attribute(2);//uv texture
-
-			batcher->set_shader(new Shader("data/#default.vs", "data/#default.fs"));
 			
-			batcher->set_transform_screen_size
+			NS_EGraphicCore::default_batcher_for_drawing->set_transform_screen_size
 			(
-				EGraphicCore::SCREEN_WIDTH,
-				EGraphicCore::SCREEN_HEIGHT
+				NS_EGraphicCore::SCREEN_WIDTH,
+				NS_EGraphicCore::SCREEN_HEIGHT
 			);
 
 
 
-		ETextureGabarite* gudron = EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", EGraphicCore::default_texture_atlas);
-		gudron = EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", EGraphicCore::default_texture_atlas);
-		glBindFramebuffer(GL_FRAMEBUFFER, 0);
+		//ETextureGabarite* gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
+		//gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
 
-		glDisable(GL_DEPTH_TEST);
-		glBlendEquation(GL_FUNC_ADD);
-
-		glViewport(0, 0, EGraphicCore::SCREEN_WIDTH, EGraphicCore::SCREEN_HEIGHT);
-
-		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_2D, EGraphicCore::default_texture_atlas->get_colorbuffer());
 
 		//EGraphicCore::shader_texture_atlas_putter->setInt("texture1", 0);
-		batcher->set_color(EColorCollection::COLOR_WHITE);
+		NS_EGraphicCore::default_batcher_for_drawing->set_active_color(NS_EColorCollection::COLOR_WHITE);
+
+
+		EWindowMain::link_to_main_window = new EWindowMain();
+		EWindow::window_list.push_back(EWindowMain::link_to_main_window);
+
+		/*
+		
+		float *d_array = new float[100'000];
+		float s_array[100'000]{};
+
+		//EInputCore::logger_param("zzz elements", sizeof(zzz));
+		
+
+		for (int i = 0; i < 100'000; i++)
+		{
+			d_array[i] = i;
+		}
+
+		auto start = std::chrono::high_resolution_clock::now();
+		for (int z = 0; z < 100; z++)
+		{
+			memcpy(s_array, d_array, 100'000 * sizeof * d_array);
+		}
+		auto finish = std::chrono::high_resolution_clock::now();
+		EInputCore::logger_param("copy using [memcpy]", std::chrono::duration_cast<std::chrono::nanoseconds>(finish - start).count() / 1'000'000.0f);
+		
+		for (int z = 0; z < 50; z++)
+		{
+			EInputCore::logger_param("[" + std::to_string(z) + "]", s_array[z]);
+		}
+		*/
+
+	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))
+	{
+
+		//GLFW_KEY_1
+		clock_t time = clock();
+
+		NS_EGraphicCore::delta_time = (time - NS_EGraphicCore::saved_time_for_delta) / 1000.0;
+		NS_EGraphicCore::saved_time_for_delta = time;
 
 		
-	while (!glfwWindowShouldClose(EGraphicCore::main_window))
-	{
-		clock_t time = clock();
-		EGraphicCore::delta_time = (time - EGraphicCore::saved_time_for_delta) / 1000.0;
-		EGraphicCore::saved_time_for_delta = time;
-
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-
-
-//		EGraphicCore::shader_texture_atlas_putter->use();
-
-		EGraphicCore::make_transform_from_size(batcher, EGraphicCore::SCREEN_WIDTH, EGraphicCore::SCREEN_HEIGHT);
-
-		glEnable(GL_BLEND);
-		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-		glBlendEquation(GL_FUNC_ADD);
-
-		glfwPollEvents();
 
 		glClearColor(0.4f, 0.5f, 0.6f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+		glfwPollEvents();
+
+		
+
+
+
+		NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
+		NS_EGraphicCore::gl_set_blend_mode_default();
 		
 		
-		
-		for (int i = 0; i < 10; i++)
-		for (int j = 0; j < 10; j++)
+		for (EWindow* w : EWindow::window_list)
 		{
-			ERenderCollection::fill_vertex_buffer_textured_rectangle_real_size
-			(
-				batcher->vertex_buffer,
-				batcher->last_vertice_buffer_index,
+			w->update_default(NS_EGraphicCore::delta_time);
+			w->update_additional(NS_EGraphicCore::delta_time);
 
-				j * 210.0f + 5.0f,
-				i * 110.0f + 5.0f,
-
-				gudron
-			);
-
-			if (batcher->last_vertice_buffer_index + 32 >= MAX_SHAPES_COUNT * 32) { batcher->draw_call();}
-			//EGraphicCore::fill_vertex_buffer_default(batcher->vertex_buffer, batcher->last_vertice_buffer_index, batcher, 300.0f, 400.0f, 200.0f, 100.0f);
+			w->GUI_update_default(NS_EGraphicCore::delta_time);
+			w->GUI_update_additional(NS_EGraphicCore::delta_time);
 		}
-		batcher->draw_call();
-		//std::cout << "Delta time(ms): " << std::to_string(EGraphicCore::delta_time * 1000.0f) << std::endl;
 
+		for (EWindow* w : EWindow::window_list)
+		{
+			w->draw_default(NS_EGraphicCore::delta_time);
+			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 
-		//std::cout << "Last vertex buffer id: " << std::to_string(batcher->get_last_id()) << std::endl;
+			w->draw_additional(NS_EGraphicCore::delta_time);
+			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 
+			w->GUI_draw_default(NS_EGraphicCore::delta_time);
+			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+
+			w->GUI_draw_additional(NS_EGraphicCore::delta_time);
+			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+		}
 		
+		///reset input states
+		glfwSwapBuffers(NS_EGraphicCore::main_window);
 
-		glfwSwapBuffers(EGraphicCore::main_window);
-		//processInput(EGraphicCore::main_window);
+		for (int i = 0; i < 512; i++)
+		{
+			if (EInputCore::key_state[i] != GLFW_RELEASE)
+			{
+				EInputCore::key_hold_time[i] += NS_EGraphicCore::delta_time;
+			}
+			else
+			{
+				EInputCore::key_hold_time[i] = 0.0f;
+			}
+		}
 
-		EInputCore::LAST_INPUTED_CHAR	=	NULL;
+		EInputCore::LAST_INPUTED_CHAR	=	0;
 		EInputCore::scroll_direction	=	0;
+		EInputCore::MOUSE_SPEED_X = 0.0;
+		EInputCore::MOUSE_SPEED_Y = 0.0;
+		///////
 	}
 
 	return 0;
