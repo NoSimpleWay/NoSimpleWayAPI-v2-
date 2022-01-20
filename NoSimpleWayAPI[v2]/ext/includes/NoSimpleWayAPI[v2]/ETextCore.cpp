@@ -211,10 +211,10 @@ void EFont::load_font_littera(std::string _path)
 		std::cout << "Unable to open file";
 	}
 
-	for (int i = 0; i < 256; i++)
-	{
-		EInputCore::logger_param(EInputCore::border_this_text(i, '{'), UV_start_x[i]);
-	}
+	//for (int i = 0; i < 256; i++)
+	//{
+	//	EInputCore::logger_param(EInputCore::border_this_text(i, '{'), UV_start_x[i]);
+	//}
 }
 
 inline bool EFont::compare_with_key(std::string _data, std::string _key)

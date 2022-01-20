@@ -73,11 +73,6 @@ extern void EInputCore::simple_logger_with_parameter(std::string _text, std::str
 	std::cout << white << "------[" << green << _text << ":\t" << blue << _parameter << white << "]-------" << std::endl;
 }
 
-void EInputCore::logger_param(std::string _text, std::string_view _parameter)
-{
-	simple_logger_with_parameter(_text, { _parameter.data(), _parameter.size() });
-}
-
 void EInputCore::logger_param(std::string _text, std::string _parameter)
 {
 	simple_logger_with_parameter(_text, _parameter);
@@ -157,7 +152,7 @@ void EInputCore::mouse_position_callback(GLFWwindow* window, double _x, double _
 
 void EInputCore::char_input_callback(GLFWwindow* window, unsigned int _char)
 {
-	int inputed_c = (int)_char;
+	int inputed_c = _char;
 
 	if (inputed_c == 1025) { inputed_c = 168; }
 	else
