@@ -5,7 +5,7 @@
 
 namespace NS_EGraphicCore
 {
-	int							SCREEN_WIDTH = 800, SCREEN_HEIGHT = 600;
+	int							SCREEN_WIDTH = 1920, SCREEN_HEIGHT = 1080;
 	float						correction_x = 1.0f, correction_y = 1.0f;
 	Shader* shader_texture_atlas_putter;
 
@@ -395,11 +395,11 @@ void NS_EGraphicCore::initiate_graphic_core()
 	GLFWmonitor* monitor = glfwGetPrimaryMonitor();
 	const GLFWvidmode* mode = glfwGetVideoMode(monitor);
 
-	/*glfwWindowHint(GLFW_RED_BITS, mode->redBits);
+	glfwWindowHint(GLFW_RED_BITS, mode->redBits);
 	glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
 	glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
 	glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
-	glfwWindowHint(GLFW_DECORATED, NULL);*/
+	glfwWindowHint(GLFW_DECORATED, NULL);
 
 	NS_EGraphicCore::main_window = glfwCreateWindow(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT, "Window name", NULL, NULL);
 	//std::cout << "[0]window is:" << (EGraphicCore::main_window) << std::endl;
@@ -1038,7 +1038,7 @@ void NS_EGraphicCore::recalculate_correction()
 	}
 }
 
-std::string_view ETextureGabarite::get_full_path()
+std::string ETextureGabarite::get_full_path()
 {
 	return *full_path;
 }
@@ -1051,7 +1051,7 @@ void ETextureGabarite::set_full_path(std::string _full_path)
 	}
 }
 
-std::string_view ETextureGabarite::get_name()
+std::string ETextureGabarite::get_name()
 {
 	return *name;
 }
@@ -1103,11 +1103,11 @@ void ETextureGabarite::set_uv_parameters(float _uv_start_x, float _uv_start_y, f
 	*uv_end_x = _uv_start_x + _uv_size_x;
 	*uv_end_y = _uv_start_y + _uv_size_y;
 
-	EInputCore::logger_param("uv_start_x", *uv_start_x);
-	EInputCore::logger_param("uv_start_y", *uv_start_y);
+	//EInputCore::logger_param("uv_start_x", *uv_start_x);
+	//EInputCore::logger_param("uv_start_y", *uv_start_y);
 
-	EInputCore::logger_param("uv_end_x", *uv_end_x);
-	EInputCore::logger_param("uv_end_y", *uv_end_y);
+	//EInputCore::logger_param("uv_end_x", *uv_end_x);
+	//EInputCore::logger_param("uv_end_y", *uv_end_y);
 }
 
 void ETextureGabarite::set_real_texture_size(int _size_x, int _size_y)
@@ -1180,7 +1180,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 {
 	if
 	(
-		(last_buffer_id > 0)
+		(*last_buffer_id > 0)
 		&&
 		(
 			(batcher != nullptr)

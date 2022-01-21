@@ -7,7 +7,7 @@
 #include <array>
 
 #include <iostream>
-#include <string_view>
+#include <string>
 
 #include <glad/glad.h>
 
@@ -262,10 +262,10 @@ private:
 	int* pos_y_in_pixels = new int(0);
 
 public:
-	std::string_view get_full_path();
+	std::string get_full_path();
 	void set_full_path(std::string _full_path);
 
-	std::string_view get_name();
+	std::string get_name();
 	void set_name_based_on_full_path(std::string _name);
 
 	void set_uv_parameters(float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y);
