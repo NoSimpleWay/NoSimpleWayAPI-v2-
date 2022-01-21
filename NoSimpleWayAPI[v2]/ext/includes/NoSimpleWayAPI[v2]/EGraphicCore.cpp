@@ -5,7 +5,7 @@
 
 namespace NS_EGraphicCore
 {
-	int							SCREEN_WIDTH = 800, SCREEN_HEIGHT = 600;
+	int							SCREEN_WIDTH = 1920, SCREEN_HEIGHT = 1080;
 	float						correction_x = 1.0f, correction_y = 1.0f;
 	Shader* shader_texture_atlas_putter;
 
@@ -395,11 +395,11 @@ void NS_EGraphicCore::initiate_graphic_core()
 	GLFWmonitor* monitor = glfwGetPrimaryMonitor();
 	const GLFWvidmode* mode = glfwGetVideoMode(monitor);
 
-	/*glfwWindowHint(GLFW_RED_BITS, mode->redBits);
+	glfwWindowHint(GLFW_RED_BITS, mode->redBits);
 	glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
 	glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
 	glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
-	glfwWindowHint(GLFW_DECORATED, NULL);*/
+	glfwWindowHint(GLFW_DECORATED, NULL);
 
 	NS_EGraphicCore::main_window = glfwCreateWindow(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT, "Window name", NULL, NULL);
 	//std::cout << "[0]window is:" << (EGraphicCore::main_window) << std::endl;
@@ -626,11 +626,11 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 				if
 					(
 						(x < (int)(_atlas->get_atlas_size_x() / 4.0f))
-						&
+						&&
 						(y < (int)(_atlas->get_atlas_size_y() / 4.0f))
-						&
+						&&
 						(x >= 0)
-						&
+						&&
 						(y >= 0)
 					)
 				{
@@ -658,14 +658,17 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 			new_gabarite->set_full_path(_full_path);
 			new_gabarite->set_name_based_on_full_path(_full_path);
 
-			new_gabarite->set_uv_parameters
+			*new_gabarite->position_on_texture_atlas_x = place_x;
+			*new_gabarite->position_on_texture_atlas_y = place_y;
+
+			/*new_gabarite->set_uv_parameters
 			(
 				(float)(place_x + 0.0f) / (float)(_atlas->get_atlas_size_x()),
 				(float)(place_y + 0.0f) / (float)(_atlas->get_atlas_size_y()),
 
 				((float)(NS_EGraphicCore::last_texture_width) - 1.0f / (float)(last_texture_width)) / (float)_atlas->get_atlas_size_x(),
 				((float)(NS_EGraphicCore::last_texture_height) - 1.0f / (float)(last_texture_height)) / (float)_atlas->get_atlas_size_y()
-			);
+			);*/
 
 			new_gabarite->set_real_texture_size
 			(
@@ -675,6 +678,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 
 			EInputCore::logger_param("Generate new gabarite (full path)", new_gabarite->get_full_path());
 			EInputCore::logger_param("Generate new gabarite (name)", new_gabarite->get_name());
+
 			NS_EGraphicCore::texture_gabarites_list.push_back(new_gabarite);
 		}
 	}
@@ -896,6 +900,67 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_cus
 	_start_offset += 32;
 }
 
+void NS_ERenderCollection::add_data_to_vertex_buffer_sprite(float* _array, unsigned int& _start_offset, ESprite* _sprite)
+{
+	//address arithmetic, get pointer to buffer array, and move to +_offset
+	_array += _start_offset;
+
+	//.#
+	//..
+	//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
+	_array[0] = *_sprite->world_position_x + *_sprite->fragment_size_x;
+	_array[1] = *_sprite->world_position_y + *_sprite->fragment_size_y;
+
+	_array[2] = NS_EGraphicCore::active_color[0];
+	_array[3] = NS_EGraphicCore::active_color[1];
+	_array[4] = NS_EGraphicCore::active_color[2];
+	_array[5] = NS_EGraphicCore::active_color[3];
+
+	_array[6] = *_sprite->uv_end_x;
+	_array[7] = *_sprite->uv_end_y;
+
+	//..
+	//.#
+	_array[8] = *_sprite->world_position_x + *_sprite->fragment_size_x;
+	_array[9] = *_sprite->world_position_y;
+
+	_array[10] = NS_EGraphicCore::active_color[0];
+	_array[11] = NS_EGraphicCore::active_color[1];
+	_array[12] = NS_EGraphicCore::active_color[2];
+	_array[13] = NS_EGraphicCore::active_color[3];
+
+	_array[14] = *_sprite->uv_end_x;
+	_array[15] = *_sprite->uv_start_y;
+
+	//..
+	//#.
+	_array[16] = *_sprite->world_position_x;
+	_array[17] = *_sprite->world_position_y;
+
+	_array[18] = NS_EGraphicCore::active_color[0];
+	_array[19] = NS_EGraphicCore::active_color[1];
+	_array[20] = NS_EGraphicCore::active_color[2];
+	_array[21] = NS_EGraphicCore::active_color[3];
+
+	_array[22] = *_sprite->uv_start_x;
+	_array[23] = *_sprite->uv_start_y;
+
+	//#.
+	//..
+	_array[24]= *_sprite->world_position_x;
+	_array[25]= *_sprite->world_position_y + *_sprite->fragment_size_y;
+
+	_array[26] = NS_EGraphicCore::active_color[0];
+	_array[27] = NS_EGraphicCore::active_color[1];
+	_array[28] = NS_EGraphicCore::active_color[2];
+	_array[29] = NS_EGraphicCore::active_color[3];
+
+	_array[30] = *_sprite->uv_start_x;
+	_array[31] = *_sprite->uv_end_y;
+
+	_start_offset += 32;
+}
+
 void NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture)
 {
 	//address arithmetic, get pointer to buffer array, and move to +_offset
@@ -1038,9 +1103,14 @@ void NS_EGraphicCore::recalculate_correction()
 	}
 }
 
-std::string_view ETextureGabarite::get_full_path()
+std::string ETextureGabarite::get_full_path()
 {
 	return *full_path;
+}
+
+void ETextureGabarite::calculate_final_sizes()
+{
+
 }
 
 void ETextureGabarite::set_full_path(std::string _full_path)
@@ -1051,7 +1121,7 @@ void ETextureGabarite::set_full_path(std::string _full_path)
 	}
 }
 
-std::string_view ETextureGabarite::get_name()
+std::string ETextureGabarite::get_name()
 {
 	return *name;
 }
@@ -1103,11 +1173,11 @@ void ETextureGabarite::set_uv_parameters(float _uv_start_x, float _uv_start_y, f
 	*uv_end_x = _uv_start_x + _uv_size_x;
 	*uv_end_y = _uv_start_y + _uv_size_y;
 
-	EInputCore::logger_param("uv_start_x", *uv_start_x);
-	EInputCore::logger_param("uv_start_y", *uv_start_y);
+	//EInputCore::logger_param("uv_start_x", *uv_start_x);
+	//EInputCore::logger_param("uv_start_y", *uv_start_y);
 
-	EInputCore::logger_param("uv_end_x", *uv_end_x);
-	EInputCore::logger_param("uv_end_y", *uv_end_y);
+	//EInputCore::logger_param("uv_end_x", *uv_end_x);
+	//EInputCore::logger_param("uv_end_y", *uv_end_y);
 }
 
 void ETextureGabarite::set_real_texture_size(int _size_x, int _size_y)
@@ -1180,7 +1250,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 {
 	if
 	(
-		(last_buffer_id > 0)
+		(*last_buffer_id > 0)
 		&&
 		(
 			(batcher != nullptr)
@@ -1275,6 +1345,7 @@ void ESprite::translate_sprite(float _x, float _y, float _z)
 	*offset_z += _z;
 }
 
+
 void ESprite::generate_vertex_buffer_for_master_sprite_layer()
 {
 	if ((master_sprite_layer != nullptr) & (main_texture != nullptr))
@@ -1289,4 +1360,17 @@ void ESprite::generate_vertex_buffer_for_master_sprite_layer()
 			main_texture
 		);
 	}
+}
+
+
+void ESprite::sprite_calculate_uv()
+{
+	*size_x_in_pixels = *fragment_size_x;
+	*size_y_in_pixels = *fragment_size_y;
+
+	*uv_start_x = *main_texture->uv_start_x + *fragment_offset_x / main_texture->target_atlas->get_atlas_size_x();
+	*uv_start_y = *main_texture->uv_start_y + *fragment_offset_y / main_texture->target_atlas->get_atlas_size_y();
+
+	*uv_end_x = *uv_start_x + (*fragment_size_x - 1.0f / *fragment_size_x);
+	*uv_end_y = *uv_start_y + (*fragment_size_y - 1.0f / *fragment_size_y);
 }

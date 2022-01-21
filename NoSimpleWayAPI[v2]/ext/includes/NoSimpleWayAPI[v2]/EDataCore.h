@@ -118,10 +118,12 @@ public:
 	void check_all_catches();
 	void translate(float _x, float _y, float _z);
 
-
+	static EClickableRegion* active_clickable_region;
 	
 	void update(float _d);
 	void draw();
+
+	void redraw_text();
 
 	void update_sides_visual(int _side, float _offset_x, float _offset_y, bool _catched);
 	void init_internal_sprite_layer();

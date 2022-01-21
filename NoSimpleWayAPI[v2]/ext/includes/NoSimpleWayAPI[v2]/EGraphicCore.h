@@ -7,7 +7,7 @@
 #include <array>
 
 #include <iostream>
-#include <string_view>
+#include <string>
 
 #include <glad/glad.h>
 
@@ -70,34 +70,45 @@ typedef float EColor_4;
 
 namespace NS_ERenderCollection
 {
-	extern void add_data_to_vertex_buffer_default						(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h);
-	extern void add_data_to_vertex_buffer_textured_rectangle_with_custom_size	(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture);
-	extern void add_data_to_vertex_buffer_textured_rectangle_real_size		(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture);
-	extern void add_data_to_vertex_buffer_rama							(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _t, ETextureGabarite* _texture);
-	extern void add_data_to_vertex_buffer_custom_uv						(float* _array, unsigned int& _start_offset, float _x, float _y, float _size_x, float _size_y, float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y);
+	extern void add_data_to_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h);
+	extern void add_data_to_vertex_buffer_textured_rectangle_with_custom_size(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture);
+
+	extern void add_data_to_vertex_buffer_sprite(float* _array, unsigned int& _start_offset, ESprite* _sprite);
+
+	extern void add_data_to_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture);
+	extern void add_data_to_vertex_buffer_rama(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _t, ETextureGabarite* _texture);
+	extern void add_data_to_vertex_buffer_custom_uv(float* _array, unsigned int& _start_offset, float _x, float _y, float _size_x, float _size_y, float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y);
 	//extern void fill_vertex_buffer_text(float* _array, unsigned int& _start_offset, float _x, float _y, ETextArea* _area);
 
 	extern void call_render_textured_rectangle_with_custom_size(ESprite* _sprite);
 	extern void call_render_textured_rectangle_real_size(ESprite* _sprite);
+
+	extern float			border_left_side;
+	extern float			border_right_side;
+	extern float			border_up_side;
+	extern float			border_up_side;
+
+	extern unsigned int		subdivision_x;
+	extern unsigned int		subdivision_y;
 }
 
 namespace NS_EGraphicCore
 {
 	extern int			SCREEN_WIDTH, SCREEN_HEIGHT;
 	extern float			correction_x, correction_y;
-	extern Shader*			shader_texture_atlas_putter;
+	extern Shader* shader_texture_atlas_putter;
 
 	extern glm::mat4		matrix_transform_default;
-	extern ERenderBatcher*	default_batcher_for_texture_atlas;
-	extern ERenderBatcher*	default_batcher_for_drawing;
+	extern ERenderBatcher* default_batcher_for_texture_atlas;
+	extern ERenderBatcher* default_batcher_for_drawing;
 
-	extern GLFWwindow*		main_window;
+	extern GLFWwindow* main_window;
 
 	extern unsigned int		texture[32];
-	extern ETextureAtlas*	default_texture_atlas;
-	extern unsigned char*	image_data;
+	extern ETextureAtlas* default_texture_atlas;
+	extern unsigned char* image_data;
 	extern int			texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
-	extern ETextureAtlas*	default_texture_atlas;
+	extern ETextureAtlas* default_texture_atlas;
 	extern float			delta_time;
 	extern float			saved_time_for_delta;
 
@@ -185,7 +196,7 @@ private:
 	//const std::array<int, 255>						indices_buffer[TOTAL_INDICES_COUNT] = generateData();	//indices array
 
 	indice_type									indices_buffer[TOTAL_INDICES_COUNT]{};
-	
+
 
 	/*float color_red = 0.0f;
 	float color_green	= 0.0f;
@@ -196,7 +207,7 @@ public:
 	float										vertex_buffer[TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE]{};
 	unsigned int									last_vertice_buffer_index = 0;				//last element of vertex buffer
 	EColor_4 batch_color[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
-	
+
 
 	ERenderBatcher();
 	~ERenderBatcher();
@@ -262,10 +273,12 @@ private:
 	int* pos_y_in_pixels = new int(0);
 
 public:
-	std::string_view get_full_path();
+	ETextureAtlas* target_atlas = nullptr;
+
+	std::string get_full_path();
 	void set_full_path(std::string _full_path);
 
-	std::string_view get_name();
+	std::string get_name();
 	void set_name_based_on_full_path(std::string _name);
 
 	void set_uv_parameters(float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y);
@@ -276,8 +289,13 @@ public:
 	float* uv_end_x = new float(0.0f);
 	float* uv_end_y = new float(0.0f);
 
+	int* position_on_texture_atlas_x = new int(0);
+	int* position_on_texture_atlas_y = new int(0);
+
 	int* size_x_in_pixels = new int(0);
 	int* size_y_in_pixels = new int(0);
+
+	void calculate_final_sizes();
 };
 
 class ESprite
@@ -295,6 +313,28 @@ public:
 	void set_color(float _r, float _g, float _b, float _a);
 	void set_color(const float(&_color)[4]);
 
+	//minus size from diffirent side
+	float* fragment_offset_x = new float(0.0f);
+	float* fragment_offset_y = new float(0.0f);
+
+	float* fragment_size_x = new float(0.0f);
+	float* fragment_size_y = new float(0.0f);
+	//
+
+
+	// 
+	//final calculated fise with fragments
+	float* uv_start_x = new float(0.0f);
+	float* uv_start_y = new float(0.0f);
+
+	float* uv_end_x = new float(0.0f);
+	float* uv_end_y = new float(0.0f);
+
+	int* size_x_in_pixels = new int(0);
+	int* size_y_in_pixels = new int(0);
+	//
+
+	//position and size
 	float* offset_x = new float(0.0f);
 	float* offset_y = new float(0.0f);
 	float* offset_z = new float(0.0f);
@@ -303,11 +343,16 @@ public:
 	float* world_position_y = new float(0.0f);
 	float* world_position_z = new float(0.0f);
 
+
 	float* size_x = new float(0.0f);
 	float* size_y = new float(0.0f);
+	//what wrong
 
 	void translate_sprite(float _x, float _y, float _z);
 	void generate_vertex_buffer_for_master_sprite_layer();
+
+	void set_texture_gabarite(ETextureGabarite* _gabarite);
+	void sprite_calculate_uv();
 };
 
 class ESpriteLayer
@@ -326,7 +371,7 @@ public:
 	unsigned int* last_buffer_id = new unsigned int(0);
 
 	ERenderBatcher* batcher;
-	float *vertex_buffer;
+	float* vertex_buffer;
 
 	void translate_sprite_layer(float _x, float _y, float _z);
 	void translate_sprites(float _x, float _y, float _z);
@@ -335,9 +380,6 @@ public:
 	void generate_vertex_buffer_for_sprite_layer(std::string _text);
 
 	void transfer_vertex_buffer_to_batcher();
-
-
-	//float* vertex_buffer;
 };
 
 

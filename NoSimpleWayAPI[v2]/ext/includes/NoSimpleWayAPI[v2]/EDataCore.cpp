@@ -14,6 +14,10 @@
 #endif
 /**/
 
+
+EClickableRegion* EClickableRegion::active_clickable_region = nullptr;
+
+
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data)
 {
 	EInputCore::logger_param("Message", ((EDataContainerMessage*)_custom_data->data_container)->message);
@@ -58,16 +62,16 @@ bool EClickableRegion::overlapped_by_mouse(EClickableRegion* _region, float _off
 				&&
 				(_region->master_entity != nullptr)
 			)
-			&
+			&&
 			(
 				(EInputCore::MOUSE_POSITION_X >= ((double)*_region->region->world_position_x + (double)_offset_x) * _zoom)
-				&
+				&&
 				(EInputCore::MOUSE_POSITION_X <= ((double)*_region->region->world_position_x + (double)*_region->region->size_x + _offset_x) * _zoom)
 
-				&
+				&&
 
 				(EInputCore::MOUSE_POSITION_Y >= ((double)*_region->region->world_position_y + _offset_y) * _zoom)
-				&
+				&&
 				(EInputCore::MOUSE_POSITION_Y <= ((double)*_region->region->world_position_y + *_region->region->size_y + _offset_y) * _zoom)
 			)
 		)
@@ -84,13 +88,13 @@ bool EClickableRegion::catched_side_by_mouse(float _x, float _y, float _size_x, 
 	if
 	(
 		(EInputCore::MOUSE_POSITION_X >= (_x + _offset_x) * _zoom - _catch_distance)
-		&
+		&&
 		(EInputCore::MOUSE_POSITION_X <= (_x + _size_x + _offset_x + 2.0f) * _zoom + _catch_distance)
 
-		&
+		&&
 
 		(EInputCore::MOUSE_POSITION_Y >= (_y + _offset_y) * _zoom - _catch_distance)
-		&
+		&&
 		(EInputCore::MOUSE_POSITION_Y <= (_y + _size_y + _offset_y) * _zoom + _catch_distance)
 	)
 	{
@@ -169,6 +173,7 @@ void EClickableRegion::check_all_catches()
 
 				5.0f
 			);
+
 			if (*catched_side_down)
 			{
 				change_buffer_color(ClickableRegionSides::CRS_SIDE_DOWN, NS_EColorCollection::COLOR_GREEN);
@@ -244,6 +249,7 @@ void EClickableRegion::check_all_catches()
 		if (*catched_side_right)
 		{
 			*region->size_x += EInputCore::MOUSE_SPEED_X;
+			redraw_text();
 		}
 
 		if (*catched_side_down)
@@ -257,6 +263,7 @@ void EClickableRegion::check_all_catches()
 		if (*catched_side_up)
 		{
 			*region->size_y += EInputCore::MOUSE_SPEED_Y;
+			redraw_text();
 		}
 
 		if (*catched_side_mid)
@@ -275,11 +282,34 @@ void EClickableRegion::check_all_catches()
 
 		if ((*catched_side_left) || (*catched_side_right) || (*catched_side_up) || (*catched_side_down) || (*catched_side_mid))
 		{
-			
+
 			refresh_border_sprites();
 			master_entity->calculate_all_world_positions();
 			internal_sprite_layer->generate_vertex_buffer_for_sprite_layer("refresh sides sprites");
 		}
+	}
+
+	if
+	(
+		(
+			(*catched_side_left)
+			||
+			(*catched_side_right)
+			||
+			(*catched_side_up)
+			||
+			(*catched_side_down)
+			||
+			(*catched_side_mid)
+		)
+	)
+	{
+
+		if (EClickableRegion::active_clickable_region == nullptr) { EClickableRegion::active_clickable_region = this; }
+	}
+	else
+	{
+		if (EClickableRegion::active_clickable_region == this) { EClickableRegion::active_clickable_region = nullptr; }
 	}
 	
 }
@@ -332,6 +362,16 @@ void EClickableRegion::draw()
 	}
 }
 
+void EClickableRegion::redraw_text()
+{
+	//for (ETextArea* t_area:text_area)
+	if (text_area != nullptr)
+	{
+		text_area->generate_rows();
+		text_area->generate_text();
+	}
+}
+
 void EClickableRegion::update_sides_visual(int _side, float _offset_x, float _offset_y, bool _catched)
 {	
 	//left
@@ -374,6 +414,7 @@ void EClickableRegion::init_internal_sprite_layer()
 	{
 		jc_sprite = new ESprite();
 		jc_sprite->main_texture = NS_DefaultGabarites::texture_gabarite_white_pixel;
+		jc_sprite->sprite_calculate_uv();
 
 		jc_sprite->master_sprite_layer = internal_sprite_layer;
 		jc_sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_rectangle_with_custom_size;

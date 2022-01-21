@@ -67,7 +67,7 @@ EWindowMain::EWindowMain()
 	ECustomData*		jc_custom_data = new ECustomData();
 	ERegionGabarite*	jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 100.0f, 200.0f);
 	EClickableRegion*	jc_clickable_region = new EClickableRegion();
-	ETextArea*		jc_text_area = new ETextArea();
+	ETextArea*			jc_text_area = new ETextArea();
 
 	jc_custom_data->data_actions_list.push_back(&EDataActionCollection::action_player_control);
 
@@ -104,6 +104,7 @@ EWindowMain::EWindowMain()
 
 	//create sprite
 	jc_sprite->main_texture = NS_DefaultGabarites::texture_gabarite_gudron;
+	jc_sprite->sprite_calculate_uv();
 
 	*jc_sprite->size_x = *NS_DefaultGabarites::texture_gabarite_gudron->size_x_in_pixels;
 	*jc_sprite->size_y = *NS_DefaultGabarites::texture_gabarite_gudron->size_y_in_pixels;

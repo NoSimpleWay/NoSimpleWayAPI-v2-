@@ -39,6 +39,8 @@ int main()
 	glfwSwapInterval(1);
 
 
+
+
 			
 			NS_EGraphicCore::default_batcher_for_drawing->set_transform_screen_size
 			(
@@ -147,6 +149,7 @@ int main()
 			{
 				EInputCore::key_hold_time[i] = 0.0f;
 			}
+					
 		}
 
 		EInputCore::LAST_INPUTED_CHAR	=	0;

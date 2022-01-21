@@ -71,9 +71,6 @@
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.h">
       <Filter>NoSimpleWayAPI[v2]\DataCore</Filter>
     </ClInclude>
-    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h">
-      <Filter>NoSimpleWayAPI[v2]\GraphicCore</Filter>
-    </ClInclude>
     <ClInclude Include="ext\includes\ConsoleColor.h">
       <Filter>NoSimpleWayAPI[v2]\GraphicCore</Filter>
     </ClInclude>
@@ -91,6 +88,9 @@
     </ClInclude>
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\ETextCore.h">
       <Filter>NoSimpleWayAPI[v2]\TextCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h">
+      <Filter>NoSimpleWayAPI[v2]\GraphicCore</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

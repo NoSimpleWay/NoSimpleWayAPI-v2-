@@ -20,7 +20,8 @@ enum AlignSide
 {
 	AS_LEFT,
 	AS_MID,
-	AS_RIGHT
+	AS_RIGHT,
+	AS_DOWN
 };
 
 
@@ -108,7 +109,7 @@ public:
 
 	float* color = new float[4]{1.0f, 1.0f, 1.0f, 1.0f};
 	float* font_scale = new float(1.0f);
-	EFont* font;
+	EFont* font = nullptr;
 
 	float* down_offset = new float(20.0f);
 
@@ -124,10 +125,23 @@ public:
 	void generate_rows();
 	void generate_text();
 	void set_font(EFont* _font);
+	float get_row_width(std::string* _row);
 
 	void translate(float _x, float _y);
 
 	EClickableRegion* master_clickable_region;
+
+	//int* align_size_x = new int(AlignSide::AS_LEFT);
+	//int* align_size_y = new int(AlignSide::AS_DOWN);
+
+
+	//aligns
+	float* offset_by_gabarite_size_x = new float(0.5f);
+	float* offset_by_gabarite_size_y = new float(0.0f);
+
+	float* offset_by_text_size_x = new float(0.5f);
+	float* offset_by_text_size_y = new float(0.0f);
+	//
 
 	void update(float _d);
 	void draw();

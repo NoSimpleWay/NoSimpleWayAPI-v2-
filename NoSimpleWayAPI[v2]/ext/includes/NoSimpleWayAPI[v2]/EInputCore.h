@@ -41,7 +41,7 @@ namespace EInputCore
 
 	extern void simple_logger_with_parameter(std::string _text, std::string _parameter);
 
-	extern void logger_param(std::string _text, std::string_view _parameter);
+	extern void logger_param(std::string _text, std::string _parameter);
 	extern void logger_param(std::string _text, std::string _parameter);
 
 	extern void logger_simple_error(std::string _error);
@@ -51,7 +51,7 @@ namespace EInputCore
 	extern std::string border_this_text(T _data, char _border_symbol)
 	{
 		static_assert(not std::is_same_v<T, std::string>, "T cannot be string");
-		static_assert(not std::is_same_v<T, std::string_view>, "T cannot be string_view");
+		//static_assert(not std::is_same_v<T, std::string_view>, "T cannot be string_view");
 		//std::cout << "------[" << _text << ": " << std::to_string(_parameter) << "]-------" << std::endl;
 		//simple_logger_with_parameter(_z, std::to_string(_parameter));
 		char right_side = _border_symbol;
@@ -68,7 +68,7 @@ namespace EInputCore
 	extern void logger_param(std::string _text, T _parameter)
 	{
 		static_assert(not std::is_same_v<T, std::string>, "T cannot be string");
-		static_assert(not std::is_same_v<T, std::string_view>, "T cannot be string_view");
+		//static_assert(not std::is_same_v<T, std::string_view>, "T cannot be string_view");
 		//std::cout << "------[" << _text << ": " << std::to_string(_parameter) << "]-------" << std::endl;
 		simple_logger_with_parameter(_text, std::to_string(_parameter));
 	}
