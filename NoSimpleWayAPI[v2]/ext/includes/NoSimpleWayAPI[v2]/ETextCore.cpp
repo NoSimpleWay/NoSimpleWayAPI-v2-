@@ -809,7 +809,7 @@ void ETextArea::draw()
 
 	sprite_layer->transfer_vertex_buffer_to_batcher();
 
-	if ((*selected_glyph_position >= 0) & (*flash_line_active) & (*text_area_active))
+	if ((*selected_glyph_position >= 0) && (*flash_line_active) && (*text_area_active))
 	{
 		//EInputCore::logger_param("selected glyph position", *selected_glyph_position);
 		//EInputCore::logger_param("font_glyph_list.size()", font_glyph_list.size());
@@ -819,7 +819,7 @@ void ETextArea::draw()
 		//EInputCore::logger_simple_success("LOL");
 		ERenderBatcher::is_batcher_have_free_space(sprite_layer->batcher);
 
-		NS_EGraphicCore::set_active_color(NS_EColorCollection::COLOR_BLACK);
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLACK);
 
 		//if (*selected_left_side)
 		{

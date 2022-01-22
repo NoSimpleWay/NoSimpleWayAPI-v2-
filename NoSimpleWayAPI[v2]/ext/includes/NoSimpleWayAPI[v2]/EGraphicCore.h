@@ -65,6 +65,8 @@ class ETextureGabarite;
 class ESprite;
 class ESpriteLayer;
 
+class ERegionGabarite;
+
 typedef float EColor_4;
 
 
@@ -76,20 +78,28 @@ namespace NS_ERenderCollection
 	extern void add_data_to_vertex_buffer_sprite(float* _array, unsigned int& _start_offset, ESprite* _sprite);
 
 	extern void add_data_to_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture);
+
 	extern void add_data_to_vertex_buffer_rama(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _t, ETextureGabarite* _texture);
 	extern void add_data_to_vertex_buffer_custom_uv(float* _array, unsigned int& _start_offset, float _x, float _y, float _size_x, float _size_y, float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y);
 	//extern void fill_vertex_buffer_text(float* _array, unsigned int& _start_offset, float _x, float _y, ETextArea* _area);
 
 	extern void call_render_textured_rectangle_with_custom_size(ESprite* _sprite);
 	extern void call_render_textured_rectangle_real_size(ESprite* _sprite);
+	extern void call_render_textured_sprite(ESprite* _sprite);
 
-	extern float			border_left_side;
-	extern float			border_right_side;
-	extern float			border_up_side;
-	extern float			border_up_side;
+	extern float			border_left_size;
+	extern float			border_right_size;
+	extern float			border_up_size;
+	extern float			border_up_size;
 
 	extern unsigned int		subdivision_x;
 	extern unsigned int		subdivision_y;
+
+	//
+	//gabarite
+	//sprite layer
+	//texture
+	extern void generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite);
 }
 
 namespace NS_EGraphicCore
@@ -153,7 +163,7 @@ namespace NS_DefaultGabarites
 
 #ifndef _COLOR_COLLECTION_
 #define _COLOR_COLLECTION_
-namespace NS_EColorCollection
+namespace NS_EColorUtils
 {
 	const EColor_4 COLOR_WHITE[4]{ 1.0f,	1.0f,	1.0f,	1.0f };
 	const EColor_4 COLOR_BLACK[4]{ 0.0f,	0.0f,	0.0f,	1.0f };
@@ -162,6 +172,8 @@ namespace NS_EColorCollection
 	const EColor_4 COLOR_RED[4]{ 1.0f,	0.0f,	0.0f,	1.0f };
 	const EColor_4 COLOR_GREEN[4]{ 0.0f,	1.0f,	0.0f,	1.0f };
 	const EColor_4 COLOR_BLUE[4]{ 0.0f,	0.0f,	1.0f,	1.0f };
+
+	extern const EColor_4(&choose_from_two(const EColor_4(&_color1)[4], const EColor_4(&_color2)[4], bool _condition))[4];
 }
 #endif
 
@@ -329,9 +341,6 @@ public:
 
 	float* uv_end_x = new float(0.0f);
 	float* uv_end_y = new float(0.0f);
-
-	int* size_x_in_pixels = new int(0);
-	int* size_y_in_pixels = new int(0);
 	//
 
 	//position and size
@@ -353,6 +362,8 @@ public:
 
 	void set_texture_gabarite(ETextureGabarite* _gabarite);
 	void sprite_calculate_uv();
+
+	void reset_sprite();
 };
 
 class ESpriteLayer

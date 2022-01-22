@@ -100,15 +100,17 @@ EWindowMain::EWindowMain()
 	jc_clickable_region->master_custom_data = jc_custom_data;
 
 	jc_clickable_region->text_area = jc_text_area;
+	jc_clickable_region->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 	
 
 	//create sprite
-	jc_sprite->main_texture = NS_DefaultGabarites::texture_gabarite_gudron;
-	jc_sprite->sprite_calculate_uv();
+	jc_sprite->set_texture_gabarite(NS_DefaultGabarites::texture_gabarite_gudron);
+	///jc_sprite->main_texture = NS_DefaultGabarites::texture_gabarite_gudron;
+	//jc_sprite->sprite_calculate_uv();
 
 	*jc_sprite->size_x = *NS_DefaultGabarites::texture_gabarite_gudron->size_x_in_pixels;
 	*jc_sprite->size_y = *NS_DefaultGabarites::texture_gabarite_gudron->size_y_in_pixels;
-	jc_sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_rectangle_real_size;
+	jc_sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite;
 	jc_sprite->master_sprite_layer = jc_sprite_layer;
 	//
 
@@ -116,7 +118,7 @@ EWindowMain::EWindowMain()
 	
 	//
 	
-	jc_clickable_region->init_internal_sprite_layer();
+	//jc_clickable_region->init_internal_sprite_layer();
 	jc_entity->calculate_all_world_positions();
 
 	jc_text_area->generate_rows();

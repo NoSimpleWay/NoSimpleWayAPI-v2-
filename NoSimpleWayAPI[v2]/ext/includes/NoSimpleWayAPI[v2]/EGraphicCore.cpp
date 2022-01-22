@@ -45,6 +45,17 @@ namespace NS_EGraphicCore
 
 };
 
+namespace NS_ERenderCollection
+{
+	float			border_left_size;
+	float			border_right_size;
+	float			border_up_size;
+	float			border_down_size;
+
+	unsigned int		subdivision_x;
+	unsigned int		subdivision_y;
+}
+
 namespace NS_DefaultGabarites
 {
 	ETextureGabarite* texture_gabarite_gudron;
@@ -364,7 +375,7 @@ void NS_EGraphicCore::switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas)
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::texture[0]);
 
-	default_batcher_for_texture_atlas->set_active_color(NS_EColorCollection::COLOR_WHITE);
+	default_batcher_for_texture_atlas->set_active_color(NS_EColorUtils::COLOR_WHITE);
 }
 
 void NS_EGraphicCore::make_transform_from_size(ERenderBatcher* _batcher, float _size_x, float _size_y)
@@ -514,12 +525,6 @@ void NS_EGraphicCore::set_active_color(EColor_4 *_color)
 	NS_EGraphicCore::active_color[1] = _color[1];
 	NS_EGraphicCore::active_color[2] = _color[2];
 	NS_EGraphicCore::active_color[3] = _color[3];
-
-	/*EInputCore::logger_param("COLOR [0]", _color[0]);
-	EInputCore::logger_param("COLOR [1]", _color[1]);
-	EInputCore::logger_param("COLOR [2]", _color[2]);
-	EInputCore::logger_param("COLOR [3]", _color[3]);
-	std::cout << "---------" << std::endl;*/
 }
 
 	
@@ -661,14 +666,16 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 			*new_gabarite->position_on_texture_atlas_x = place_x;
 			*new_gabarite->position_on_texture_atlas_y = place_y;
 
-			/*new_gabarite->set_uv_parameters
+			new_gabarite->set_uv_parameters
 			(
 				(float)(place_x + 0.0f) / (float)(_atlas->get_atlas_size_x()),
 				(float)(place_y + 0.0f) / (float)(_atlas->get_atlas_size_y()),
 
 				((float)(NS_EGraphicCore::last_texture_width) - 1.0f / (float)(last_texture_width)) / (float)_atlas->get_atlas_size_x(),
 				((float)(NS_EGraphicCore::last_texture_height) - 1.0f / (float)(last_texture_height)) / (float)_atlas->get_atlas_size_y()
-			);*/
+			);
+
+			new_gabarite->target_atlas = _atlas;
 
 			new_gabarite->set_real_texture_size
 			(
@@ -908,8 +915,8 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_sprite(float* _array, unsig
 	//.#
 	//..
 	//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
-	_array[0] = *_sprite->world_position_x + *_sprite->fragment_size_x;
-	_array[1] = *_sprite->world_position_y + *_sprite->fragment_size_y;
+	_array[0] = *_sprite->world_position_x + *_sprite->size_x;
+	_array[1] = *_sprite->world_position_y + *_sprite->size_y;
 
 	_array[2] = NS_EGraphicCore::active_color[0];
 	_array[3] = NS_EGraphicCore::active_color[1];
@@ -921,7 +928,7 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_sprite(float* _array, unsig
 
 	//..
 	//.#
-	_array[8] = *_sprite->world_position_x + *_sprite->fragment_size_x;
+	_array[8] = *_sprite->world_position_x + *_sprite->size_x;
 	_array[9] = *_sprite->world_position_y;
 
 	_array[10] = NS_EGraphicCore::active_color[0];
@@ -948,7 +955,7 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_sprite(float* _array, unsig
 	//#.
 	//..
 	_array[24]= *_sprite->world_position_x;
-	_array[25]= *_sprite->world_position_y + *_sprite->fragment_size_y;
+	_array[25]= *_sprite->world_position_y + *_sprite->size_y;
 
 	_array[26] = NS_EGraphicCore::active_color[0];
 	_array[27] = NS_EGraphicCore::active_color[1];
@@ -1052,7 +1059,7 @@ void NS_ERenderCollection::call_render_textured_rectangle_real_size(ESprite* _sp
 
 	if ((_sprite != nullptr) && (_sprite->main_texture != nullptr))
 	{
-		_sprite->master_sprite_layer->vertex_buffer = new float[100];
+		//_sprite->master_sprite_layer->vertex_buffer = new float[100];
 
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_size
 		(
@@ -1069,6 +1076,154 @@ void NS_ERenderCollection::call_render_textured_rectangle_real_size(ESprite* _sp
 		else
 		{
 			if (_sprite->main_texture == nullptr) { EInputCore::logger_simple_error("Sprite texture in call render textured rectangle is null"); }
+		}
+	}
+}
+
+void NS_ERenderCollection::call_render_textured_sprite(ESprite* _sprite)
+{
+	//EInputCore::logger_simple_success("call render texured rectangle");
+
+	//unsigned int zalupa;
+
+	if ((_sprite != nullptr) && (_sprite->main_texture != nullptr))
+	{
+		//_sprite->master_sprite_layer->vertex_buffer = new float[100];
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_sprite
+		(
+			_sprite->master_sprite_layer->vertex_buffer,
+			*_sprite->master_sprite_layer->last_buffer_id,
+			_sprite
+		);
+	}
+	else
+	{
+		if (_sprite == nullptr) { EInputCore::logger_simple_error("Sprite in call render textured rectangle is null"); }
+		else
+		{
+			if (_sprite->main_texture == nullptr) { EInputCore::logger_simple_error("Sprite texture in call render textured rectangle is null"); }
+		}
+	}
+}
+
+
+
+void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite)
+{
+
+	//dinamic
+	int		total_divisions_x = 1;
+	int		total_divisions_y = 1;
+
+	float	final_fragment_count_x = 0.0f;
+	float	final_fragment_count_y = 0.0f;
+
+	int		count_of_generations_x = 0;
+	int		count_of_generations_y = 0;
+
+	float	base_offset_x = 0.0f;
+	float	base_offset_yz = 0.0f;
+
+	float	size_of_brick_x = *_texture_gabarite->size_x_in_pixels / (float)total_divisions_x;
+	float	size_of_brick_y = *_texture_gabarite->size_y_in_pixels / (float)total_divisions_y;
+
+	float	base_sprite_fragment_offset_x = 0.0f;
+	float	base_sprite_fragment_offset_y = 0.0f;
+
+	float	additional_offset_x = 0.0f;
+	float	additional_offset_yz = 0.0f;
+
+	int current_sprite_id = 0;
+	ESprite* current_sprite = nullptr;
+
+	//static
+	float full_mid_segment_size_x = *_region->size_x;
+	float full_mid_segment_size_y = *_region->size_y;
+
+	float cropped_mid_segment_size_x = full_mid_segment_size_x - NS_ERenderCollection::border_left_size - NS_ERenderCollection::border_right_size;
+	float final_mid_segment_size_y = full_mid_segment_size_y - NS_ERenderCollection::border_up_size - NS_ERenderCollection::border_down_size;
+
+	
+
+
+	//segment		seg_x	seg_y
+	//
+	//left bottom	0		0
+	//bottom		1		0
+	//right bottom	2		0 
+	//left mid		0		1 
+	//mid		q	1		1 
+	//rightmid		2		1 
+	//left up		0		2 
+	//up			1		2 
+	//rightup		2		2 
+	//
+
+	for (int i = _sprite_layer->sprite_list.size(); i < 10'000; i++)
+	{
+		_sprite_layer->sprite_list.push_back(new ESprite());
+	}
+
+	for (unsigned int seg_x = 0; seg_x < 3; seg_x++)
+	{
+		if ((seg_x == 0))
+		{
+			total_divisions_x = 1;
+			size_of_brick_x = NS_ERenderCollection::border_left_size;
+
+			base_offset_x = 0.0f;
+
+			final_fragment_count_x = 1.0f;
+			count_of_generations_x = 1;
+			
+			base_sprite_fragment_offset_x = 0.0f;
+		}
+		else
+		if ((seg_x == 1))
+		{
+			total_divisions_x = NS_ERenderCollection::subdivision_x + 1;
+			size_of_brick_x = *_texture_gabarite->size_x_in_pixels / (float)total_divisions_x;
+
+			base_offset_x = NS_ERenderCollection::border_left_size;
+
+			final_fragment_count_x = cropped_mid_segment_size_x / size_of_brick_x;
+			count_of_generations_x = ceil(final_fragment_count_x);
+		}
+		else
+		if ((seg_x == 2))
+		{
+			total_divisions_x = 1;
+			size_of_brick_x = NS_ERenderCollection::border_right_size;
+
+			base_offset_x = 0.0f;
+
+			final_fragment_count_x = 1.0f;
+			count_of_generations_x = 1;
+			
+			base_sprite_fragment_offset_x = NS_ERenderCollection::border_left_size;
+		}
+
+		for (unsigned int seg_y = 0; seg_y < 3; seg_y++)
+		{
+			additional_offset_x = base_offset_x;
+			additional_offset_yz = base_offset_yz;
+
+			for (int xx = 0; xx <= count_of_generations_x; xx++)//base_sprite_fragment_offset_x = full_mid_segment_size_x - NS_ERenderCollection::border_left_size;
+			{
+				
+				current_sprite = _sprite_layer->sprite_list.at(current_sprite_id);
+				current_sprite->reset_sprite();
+				for (int yy = 0; yy <= count_of_generations_y; yy++)
+				{
+					additional_offset_x += size_of_brick_x;
+				}//base_sprite_fragment_offset_x = full_mid_segment_size_x - NS_ERenderCollection::border_left_size;
+
+				additional_offset_yz += size_of_brick_y;
+
+				
+				current_sprite_id++;
+			}
 		}
 	}
 }
@@ -1214,13 +1369,17 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 	if
 	(
 		(!sprite_list.empty())
-		&
+		&&
 		(
 			(batcher != nullptr)
 		)
 	)
 	{
+		if (*last_buffer_id > 0) { delete[] vertex_buffer; }
 		*last_buffer_id = 0;
+		
+		
+		vertex_buffer = new float[sprite_list.size() * batcher->gl_vertex_attribute_total_count * 4];
 
 		for (ESprite* spr : sprite_list)
 		{
@@ -1231,7 +1390,9 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 			}
 			else
 			{
-				EInputCore::logger_simple_error("Sprite is null!");
+				if (spr == nullptr) { EInputCore::logger_simple_error("Sprite is null!"); }
+				else
+				if (spr->pointer_to_sprite_render == nullptr) { EInputCore::logger_simple_error("Pointer to render is null!"); }
 			}
 		}
 	}
@@ -1363,14 +1524,65 @@ void ESprite::generate_vertex_buffer_for_master_sprite_layer()
 }
 
 
+void ESprite::set_texture_gabarite(ETextureGabarite* _gabarite)
+{
+	main_texture = _gabarite;
+
+	*fragment_size_x = *_gabarite->size_x_in_pixels;
+	*fragment_size_y = *_gabarite->size_y_in_pixels;
+
+	*size_x = *_gabarite->size_x_in_pixels;
+	*size_y = *_gabarite->size_y_in_pixels;
+
+	sprite_calculate_uv();
+}
+
 void ESprite::sprite_calculate_uv()
 {
-	*size_x_in_pixels = *fragment_size_x;
-	*size_y_in_pixels = *fragment_size_y;
-
 	*uv_start_x = *main_texture->uv_start_x + *fragment_offset_x / main_texture->target_atlas->get_atlas_size_x();
 	*uv_start_y = *main_texture->uv_start_y + *fragment_offset_y / main_texture->target_atlas->get_atlas_size_y();
 
-	*uv_end_x = *uv_start_x + (*fragment_size_x - 1.0f / *fragment_size_x);
-	*uv_end_y = *uv_start_y + (*fragment_size_y - 1.0f / *fragment_size_y);
+	*uv_end_x = *uv_start_x + (*fragment_size_x - 1.0f / *fragment_size_x) / main_texture->target_atlas->get_atlas_size_x();
+	*uv_end_y = *uv_start_y + (*fragment_size_y - 1.0f / *fragment_size_y) / main_texture->target_atlas->get_atlas_size_y();
+
 }
+
+void ESprite::reset_sprite()
+{
+	main_texture = nullptr;
+
+	*fragment_offset_x	= 0.0f;
+	*fragment_offset_y	= 0.0f;
+
+	*fragment_size_x	= 0.0f;
+	*fragment_size_y	= 0.0f;
+
+
+	*uv_start_x			= 0.0f;
+	*uv_start_y			= 0.0f;
+
+	*uv_end_x			= 0.0f;
+	*uv_end_y			= 0.0f;
+
+	*offset_x			= 0.0f;
+	*offset_y			= 0.0f;
+	*offset_z			= 0.0f;
+
+	*world_position_x	= 0.0f;
+	*world_position_y	= 0.0f;
+	*world_position_z	= 0.0f;
+
+	*size_x				= (0.0f);
+	*size_y				= (0.0f);
+}
+
+EColor_4 const (&NS_EColorUtils::choose_from_two(const EColor_4(&_color1)[4], const EColor_4(&_color2)[4], bool _condition))[4]
+{
+	if (_condition)
+	{
+		return _color1;
+	}
+
+	return _color2;
+}
+

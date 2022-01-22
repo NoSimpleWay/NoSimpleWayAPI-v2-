@@ -55,7 +55,7 @@ int main()
 
 
 		//EGraphicCore::shader_texture_atlas_putter->setInt("texture1", 0);
-		NS_EGraphicCore::default_batcher_for_drawing->set_active_color(NS_EColorCollection::COLOR_WHITE);
+		NS_EGraphicCore::default_batcher_for_drawing->set_active_color(NS_EColorUtils::COLOR_WHITE);
 
 
 		EWindowMain::link_to_main_window = new EWindowMain();

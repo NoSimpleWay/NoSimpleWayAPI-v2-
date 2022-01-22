@@ -28,11 +28,21 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 	if
 	(
 		(EInputCore::key_pressed(GLFW_KEY_W))
-		&
+		&&
 		(NS_FONT_UTILS::active_text_area == nullptr)
 	)
 	{
 		_entity->translate_entity(0.0f, 100.0f * _d, 0.0f);
+	};
+
+	if
+	(
+		(EInputCore::key_pressed(GLFW_KEY_S))
+		&&
+		(NS_FONT_UTILS::active_text_area == nullptr)
+	)
+	{
+		_entity->translate_entity(0.0f, -100.0f * _d, 0.0f);
 	};
 }
 
@@ -126,10 +136,7 @@ void EClickableRegion::check_all_catches()
 				5.0f
 			);
 
-			if (*catched_side_left)
-			{ change_buffer_color(ClickableRegionSides::CRS_SIDE_LEFT, NS_EColorCollection::COLOR_GREEN); }
-			else
-			{ change_buffer_color(ClickableRegionSides::CRS_SIDE_LEFT, NS_EColorCollection::COLOR_BLACK); }
+			
 		
 		
 		
@@ -148,14 +155,7 @@ void EClickableRegion::check_all_catches()
 				5.0f
 			);
 
-			if (*catched_side_right)
-			{
-				change_buffer_color(ClickableRegionSides::CRS_SIDE_RIGHT, NS_EColorCollection::COLOR_GREEN);
-			}
-			else
-			{
-				change_buffer_color(ClickableRegionSides::CRS_SIDE_RIGHT, NS_EColorCollection::COLOR_BLACK);
-			}
+			
 		
 
 		
@@ -174,14 +174,7 @@ void EClickableRegion::check_all_catches()
 				5.0f
 			);
 
-			if (*catched_side_down)
-			{
-				change_buffer_color(ClickableRegionSides::CRS_SIDE_DOWN, NS_EColorCollection::COLOR_GREEN);
-			}
-			else
-			{
-				change_buffer_color(ClickableRegionSides::CRS_SIDE_DOWN, NS_EColorCollection::COLOR_BLACK);
-			}
+			
 
 		
 			*catched_side_up = catched_side_by_mouse
@@ -199,14 +192,7 @@ void EClickableRegion::check_all_catches()
 				5.0f
 			);
 
-			if (*catched_side_up)
-			{
-				change_buffer_color(ClickableRegionSides::CRS_SIDE_UP, NS_EColorCollection::COLOR_GREEN);
-			}
-			else
-			{
-				change_buffer_color(ClickableRegionSides::CRS_SIDE_UP, NS_EColorCollection::COLOR_BLACK);
-			}
+			
 		
 			*catched_side_mid = catched_side_by_mouse
 			(
@@ -222,14 +208,7 @@ void EClickableRegion::check_all_catches()
 
 				7.0f
 			);
-			if (*catched_side_mid)
-			{
-				change_buffer_color(ClickableRegionSides::CRS_SIDE_MID, NS_EColorCollection::COLOR_GREEN);
-			}
-			else
-			{
-				change_buffer_color(ClickableRegionSides::CRS_SIDE_MID, NS_EColorCollection::COLOR_BLACK);
-			}
+			
 		
 	}
 	else
@@ -237,13 +216,8 @@ void EClickableRegion::check_all_catches()
 
 		if (*catched_side_left)
 		{
-			//*region->offset_x			+= EInputCore::MOUSE_SPEED_X;
 			*region->size_x			-= EInputCore::MOUSE_SPEED_X;
-			//*region->world_position_x	+= EInputCore::MOUSE_SPEED_X;
-
 			translate(EInputCore::MOUSE_SPEED_X, 0.0f, 0.0f);
-
-			//region->
 		}
 
 		if (*catched_side_right)
@@ -255,9 +229,7 @@ void EClickableRegion::check_all_catches()
 		if (*catched_side_down)
 		{
 			translate(0.0f, EInputCore::MOUSE_SPEED_Y, 0.0f);
-			//*region->offset_y += EInputCore::MOUSE_SPEED_Y;
 			*region->size_y -= EInputCore::MOUSE_SPEED_Y;
-			//*region->world_position_y += EInputCore::MOUSE_SPEED_Y;
 		}
 
 		if (*catched_side_up)
@@ -269,23 +241,14 @@ void EClickableRegion::check_all_catches()
 		if (*catched_side_mid)
 		{
 			translate(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f);
-			/**region->offset_x += EInputCore::MOUSE_SPEED_X;
-			*region->world_position_x += EInputCore::MOUSE_SPEED_X;
-
-			*region->offset_y += EInputCore::MOUSE_SPEED_Y;
-			*region->world_position_y += EInputCore::MOUSE_SPEED_Y;*/
-
-			//*region->sprite
-			
-			//region->tr
 		}
 
 		if ((*catched_side_left) || (*catched_side_right) || (*catched_side_up) || (*catched_side_down) || (*catched_side_mid))
 		{
 
-			refresh_border_sprites();
-			master_entity->calculate_all_world_positions();
-			internal_sprite_layer->generate_vertex_buffer_for_sprite_layer("refresh sides sprites");
+			//refresh_border_sprites();
+			//master_entity->calculate_all_world_positions();
+			//internal_sprite_layer->generate_vertex_buffer_for_sprite_layer("refresh sides sprites");
 		}
 	}
 
@@ -328,7 +291,7 @@ void EClickableRegion::translate(float _x, float _y, float _z)
 	for (ESpriteLayer* s_layer : sprite_layer_list)
 	if (s_layer != nullptr) {s_layer->translate_sprite_layer(_x, _y, _z);}
 
-	if (internal_sprite_layer != nullptr) {internal_sprite_layer->translate_sprite_layer(_x, _y, _z);}
+	//if (internal_sprite_layer != nullptr) {internal_sprite_layer->translate_sprite_layer(_x, _y, _z);}
 
 	if (text_area != nullptr) { text_area->translate(_x, _y); }
 }
@@ -348,18 +311,106 @@ void EClickableRegion::draw()
 	if (!sprite_layer_list.empty())
 	{
 		for (ESpriteLayer* s_layer : sprite_layer_list)
-		{s_layer->transfer_vertex_buffer_to_batcher();}
+		{
+			s_layer->transfer_vertex_buffer_to_batcher();
+		}
 	}
 
-	if (internal_sprite_layer != nullptr)
+	if (batcher_for_default_draw != nullptr)
 	{
-		internal_sprite_layer->transfer_vertex_buffer_to_batcher();
+		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_left));
+		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_left)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			batcher_for_default_draw->vertex_buffer,
+			batcher_for_default_draw->last_vertice_buffer_index,
+
+			*region->world_position_x - 2.0f,
+			*region->world_position_y,
+
+			2.0f,
+			*region->size_y,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_right));
+		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_right)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			batcher_for_default_draw->vertex_buffer,
+			batcher_for_default_draw->last_vertice_buffer_index,
+
+			*region->world_position_x + *region->size_x,
+			*region->world_position_y,
+
+			2.0f,
+			*region->size_y,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_down));
+		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_down)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			batcher_for_default_draw->vertex_buffer,
+			batcher_for_default_draw->last_vertice_buffer_index,
+
+			*region->world_position_x - 2.0f,
+			*region->world_position_y - 2.0f,
+
+			*region->size_x + 4.0f,
+			2.0f,
+			
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_up));
+		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_up)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			batcher_for_default_draw->vertex_buffer,
+			batcher_for_default_draw->last_vertice_buffer_index,
+
+			*region->world_position_x - 2.0f,
+			*region->world_position_y + *region->size_y,
+
+			*region->size_x + 4.0f,
+			2.0f,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_mid));
+		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_mid)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			batcher_for_default_draw->vertex_buffer,
+			batcher_for_default_draw->last_vertice_buffer_index,
+
+			*region->world_position_x + *region->size_x / 2.0f - 3.0f,
+			*region->world_position_y + *region->size_y / 2.0f - 3.0f,
+
+			6.0f,
+			6.0f,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
 	}
 
 	if (text_area != nullptr)
 	{
 		text_area->draw();
 	}
+
+	
 }
 
 void EClickableRegion::redraw_text()
@@ -370,155 +421,6 @@ void EClickableRegion::redraw_text()
 		text_area->generate_rows();
 		text_area->generate_text();
 	}
-}
-
-void EClickableRegion::update_sides_visual(int _side, float _offset_x, float _offset_y, bool _catched)
-{	
-	//left
-	*internal_sprite_layer->sprite_list.at(_side)->offset_x = _offset_x;
-	*internal_sprite_layer->sprite_list.at(_side)->offset_y = _offset_y;
-
-	//*internal_sprite_layer->sprite_list.at(_side)->world_position_x = _offset_x;
-	//*internal_sprite_layer->sprite_list.at(_side)->world_position_y = _offset_y;
-
-	if (_catched)
-	{
-		if (!EInputCore::MOUSE_BUTTON_LEFT)
-		{
-			internal_sprite_layer->sprite_list.at(_side)->set_color(NS_EColorCollection::COLOR_GREEN);
-		}
-		else
-		{
-			internal_sprite_layer->sprite_list.at(_side)->set_color(NS_EColorCollection::COLOR_BLUE);
-		}
-	}
-	else
-	{
-		internal_sprite_layer->sprite_list.at(_side)->set_color(NS_EColorCollection::COLOR_BLACK);
-	}
-}
-
-void EClickableRegion::init_internal_sprite_layer()
-{
-	internal_sprite_layer = new ESpriteLayer();
-	internal_sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
-
-	ESprite* jc_sprite = nullptr;
-
-
-		//delete internal_sprite_layer->vertex_buffer;
-		internal_sprite_layer->vertex_buffer = new float[1000];
-
-
-	for (int i = 0; i < 5; i++)
-	{
-		jc_sprite = new ESprite();
-		jc_sprite->main_texture = NS_DefaultGabarites::texture_gabarite_white_pixel;
-		jc_sprite->sprite_calculate_uv();
-
-		jc_sprite->master_sprite_layer = internal_sprite_layer;
-		jc_sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_rectangle_with_custom_size;
-
-		internal_sprite_layer->sprite_list.push_back(jc_sprite);
-	}
-
-		refresh_border_sprites();
-}
-
-bool EClickableRegion::set_catch_side(bool _catch_side, bool _set)
-{
-	if (_catch_side != _set)
-	{
-		*any_visual_changes = true;
-	}
-
-	return _set;
-}
-
-void EClickableRegion::change_buffer_color(int _side, const float(&_color)[4])
-{
-	for (int i = 0; i < 4; i++)
-	{ 
-		internal_sprite_layer->vertex_buffer
-		[_side * 32 + 2 + 0 + 8 * i] = _color[0];
-
-		internal_sprite_layer->vertex_buffer
-		[_side * 32 + 2 + 1 + 8 * i] = _color[1];
-
-		internal_sprite_layer->vertex_buffer
-		[_side * 32 + 2 + 2 + 8 * i] = _color[2];
-
-		internal_sprite_layer->vertex_buffer
-		[_side * 32 + 2 + 3 + 8 * i] = _color[3];
-	}
-}
-
-void EClickableRegion::set_sides_position_and_sizes(int _side, float _x, float _y, float _z, float _w, float _h)
-{
-	*internal_sprite_layer->sprite_list.at(_side)->offset_x = _x;
-	*internal_sprite_layer->sprite_list.at(_side)->offset_y = _y;
-	*internal_sprite_layer->sprite_list.at(_side)->offset_z = _z;
-
-	*internal_sprite_layer->sprite_list.at(_side)->size_x = _w;
-	*internal_sprite_layer->sprite_list.at(_side)->size_y = _h;
-}
-
-void EClickableRegion::refresh_border_sprites()
-{
-	*internal_sprite_layer->sprite_list.at(ClickableRegionSides::CRS_SIDE_LEFT)->size_x = 2.0f;
-	*internal_sprite_layer->sprite_list.at(ClickableRegionSides::CRS_SIDE_LEFT)->size_y = *region->size_y + 4.0f;
-
-	*internal_sprite_layer->sprite_list.at(ClickableRegionSides::CRS_SIDE_RIGHT)->size_x = 2.0f;
-	*internal_sprite_layer->sprite_list.at(ClickableRegionSides::CRS_SIDE_RIGHT)->size_y = *region->size_y + 4.0f;
-
-	*internal_sprite_layer->sprite_list.at(ClickableRegionSides::CRS_SIDE_DOWN)->size_x = *region->size_x + 0.0f;
-	*internal_sprite_layer->sprite_list.at(ClickableRegionSides::CRS_SIDE_DOWN)->size_y = 2.0f;
-
-	*internal_sprite_layer->sprite_list.at(ClickableRegionSides::CRS_SIDE_UP)->size_x = *region->size_x + 0.0f;
-	*internal_sprite_layer->sprite_list.at(ClickableRegionSides::CRS_SIDE_UP)->size_y = 2.0f;
-
-	*internal_sprite_layer->sprite_list.at(ClickableRegionSides::CRS_SIDE_MID)->size_x = 6.0f;
-	*internal_sprite_layer->sprite_list.at(ClickableRegionSides::CRS_SIDE_MID)->size_y = 6.0f;
-
-	update_sides_visual
-	(
-		ClickableRegionSides::CRS_SIDE_LEFT,
-		*region->offset_x - 2.0f,
-		*region->offset_y - 2.0f,
-		*catched_side_left
-	);
-
-	update_sides_visual
-	(
-		ClickableRegionSides::CRS_SIDE_RIGHT,
-		*region->offset_x + *region->size_x + 0.0f,
-		*region->offset_y - 2.0f,
-		*catched_side_right
-	);
-
-	update_sides_visual
-	(
-		ClickableRegionSides::CRS_SIDE_DOWN,
-		*region->offset_x - 0.0f,
-		*region->offset_y - 2.0f,
-		*catched_side_down
-	);
-
-	update_sides_visual
-	(
-		ClickableRegionSides::CRS_SIDE_UP,
-		*region->offset_x - 0.0f,
-		*region->offset_y + *region->size_y + 0.0f,
-		*catched_side_up
-	);
-
-	update_sides_visual
-	(
-		ClickableRegionSides::CRS_SIDE_MID,
-		*region->offset_x + *region->size_x / 2.0f - 3.0f,
-		*region->offset_y + *region->size_y / 2.0f - 3.0f,
-		*catched_side_mid
-	);
 }
 
 ERegionGabarite::ERegionGabarite()

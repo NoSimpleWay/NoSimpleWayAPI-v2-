@@ -12,6 +12,11 @@
 /**/#include "ETextCore.h"
 #endif
 
+#ifndef _E_GRAPHIC_CORE_ALREADY_LINKED_
+/**/#define _E_GRAPHIC_CORE_ALREADY_LINKED_
+/**/#include "EGraphicCore.h"
+#endif
+
 #include <vector>
 #include <string>
 
@@ -20,6 +25,7 @@ class EClickableRegion;
 class ECustomData;
 class Entity;
 class ESpriteLayer;
+class ERenderBatcher;
 //class ETextArea;
 
 //link to method, who manipulate with data
@@ -122,16 +128,18 @@ public:
 	
 	void update(float _d);
 	void draw();
+	//void select_colo_for_border();
 
 	void redraw_text();
+	ERenderBatcher* batcher_for_default_draw;
 
-	void update_sides_visual(int _side, float _offset_x, float _offset_y, bool _catched);
-	void init_internal_sprite_layer();
-	bool set_catch_side(bool _catch_side, bool _set);
+	//void update_sides_visual(int _side, float _offset_x, float _offset_y, bool _catched);
+	//void init_internal_sprite_layer();
+	//bool set_catch_side(bool _catch_side, bool _set);
 
-	void change_buffer_color(int _side, const float(&_color)[4]);
-	void set_sides_position_and_sizes(int _side, float _x, float _y, float _z, float _w, float _h);
-	void refresh_border_sprites();
+	//void change_buffer_color(int _side, const float(&_color)[4]);
+	//void set_sides_position_and_sizes(int _side, float _x, float _y, float _z, float _w, float _h);
+	//void refresh_border_sprites();
 };
 
 //////////////////////////////////////////////////////////////////////
