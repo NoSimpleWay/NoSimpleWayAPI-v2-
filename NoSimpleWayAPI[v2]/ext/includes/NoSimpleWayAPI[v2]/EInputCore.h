@@ -1,5 +1,12 @@
 #pragma once
 
+/**/
+#ifndef _E_CLASS_LINKER_ALREADY_LINKED_
+#define _E_CLASS_LINKER_ALREADY_LINKED_
+#include "EClassLinker.h"
+#endif
+/**/
+
 #ifndef _E_GRAPHIC_CORE_ALREADY_LINKED_
 /**/#define _EGRAPHICCORE_
 /**/#include "EGraphicCore.h"
@@ -21,14 +28,14 @@ namespace EInputCore
 	extern	bool		MOUSE_BUTTON_RIGHT;
 	extern	bool		MOUSE_BUTTON_MID;
 
-	extern	double	MOUSE_POSITION_X;
-	extern	double	MOUSE_POSITION_Y;
+	extern	double		MOUSE_POSITION_X;
+	extern	double		MOUSE_POSITION_Y;
 
-	extern	double	MOUSE_PREV_X;
-	extern	double	MOUSE_PREV_Y;
+	extern	double		MOUSE_PREV_X;
+	extern	double		MOUSE_PREV_Y;
 
-	extern	double	MOUSE_SPEED_X;
-	extern	double	MOUSE_SPEED_Y;
+	extern	double		MOUSE_SPEED_X;
+	extern	double		MOUSE_SPEED_Y;
 
 	extern	char		LAST_INPUTED_CHAR;
 
@@ -73,11 +80,19 @@ namespace EInputCore
 		simple_logger_with_parameter(_text, std::to_string(_parameter));
 	}
 
-	extern int key_state[512];
-	extern float key_hold_time[512];
+	const unsigned int		key_count = 512;
+	extern int				key_state				[key_count];
+	extern float			key_hold_time			[key_count];
 
-	extern bool key_pressed_once(int _key);
-	extern bool key_pressed(int _key);
-	extern bool key_holded(int _key, float _time);
+	const unsigned int		mouse_key_count = 8;
+	extern float			mouse_button_state			[mouse_key_count];
+	extern float			mouse_hold_time			[mouse_key_count];
+	extern float			mouse_unhold_save_time	[mouse_key_count];
+
+	extern bool				key_pressed_once(int _key);
+	extern bool				key_pressed(int _key);
+	extern bool				key_holded(int _key, float _time);
+
+	extern bool				mouse_button_pressed_once(int _button);
 	//extern float key_is_holded[512];
 }

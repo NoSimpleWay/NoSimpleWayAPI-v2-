@@ -104,10 +104,6 @@ int main()
 
 		glfwPollEvents();
 
-		
-
-
-
 		NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
 		NS_EGraphicCore::gl_set_blend_mode_default();
 		
@@ -139,7 +135,7 @@ int main()
 		///reset input states
 		glfwSwapBuffers(NS_EGraphicCore::main_window);
 
-		for (int i = 0; i < 512; i++)
+		for (int i = 0; i < EInputCore::key_count; i++)
 		{
 			if (EInputCore::key_state[i] != GLFW_RELEASE)
 			{
@@ -148,8 +144,20 @@ int main()
 			else
 			{
 				EInputCore::key_hold_time[i] = 0.0f;
+			}		
+		}
+
+		for (int i = 0; i < EInputCore::mouse_key_count; i++)
+		{
+			if (EInputCore::mouse_button_state[i] != GLFW_RELEASE)
+			{
+				EInputCore::mouse_hold_time[i] += NS_EGraphicCore::delta_time;
 			}
-					
+			else
+			{
+				//EInputCore::mouse_unhold_save_time[i] = EInputCore::mouse_hold_time[i];
+				EInputCore::mouse_hold_time[i] = 0.0f;
+			}
 		}
 
 		EInputCore::LAST_INPUTED_CHAR	=	0;

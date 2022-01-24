@@ -1,6 +1,13 @@
 #pragma once
 
 /**/
+#ifndef _E_CLASS_LINKER_ALREADY_LINKED_
+#define _E_CLASS_LINKER_ALREADY_LINKED_
+#include "EClassLinker.h"
+#endif
+/**/
+
+/**/
 #ifndef	_ENTITY_CORE_ALREADY_LINKED_
 #define	_ENTITY_CORE_ALREADY_LINKED_
 #include "EntityCore.h"
@@ -19,13 +26,6 @@
 
 #include <vector>
 #include <string>
-
-class EDataContainer;
-class EClickableRegion;
-class ECustomData;
-class Entity;
-class ESpriteLayer;
-class ERenderBatcher;
 //class ETextArea;
 
 //link to method, who manipulate with data
@@ -34,21 +34,20 @@ class ERenderBatcher;
 //float		= delta time
 typedef void (*data_action_pointer)(Entity*, ECustomData*, float);
 
-class ETextArea;
 class ECustomData
 {
 public:
 	ECustomData();
 	~ECustomData();
 
-	Entity* master_entity;
+	Entity* parent_entity;
 
 	//data
 	EDataContainer* data_container;
 	std::vector<EClickableRegion*> clickable_region_list;
 
 	//WHAT do with data
-	std::vector<data_action_pointer> data_actions_list;
+	std::vector<data_action_pointer> actions_on_click_list;
 
 	void draw();
 	void translate(float _x, float _y, float _z);
@@ -66,6 +65,7 @@ public:
 
 	float* offset_x = new float(0.0f);
 	float* offset_y = new float(0.0f);
+	float* offset_z = new float(0.0f);
 
 	float* size_x = new float(0.0f);
 	float* size_y = new float(0.0f);
@@ -77,6 +77,7 @@ public:
 
 	float* world_position_x = new float(0.0f);
 	float* world_position_y = new float(0.0f);
+	float* world_position_z = new float(0.0f);
 
 	void translate(float _x, float _y);
 };
@@ -100,9 +101,9 @@ public:
 	std::vector<ESpriteLayer*> sprite_layer_list;
 	ESpriteLayer* internal_sprite_layer;
 
-	std::vector<data_action_pointer> data_actions_list;
-	Entity* master_entity;
-	ECustomData* master_custom_data;
+	std::vector<data_action_pointer> actions_on_click_list;
+	Entity* parent_entity;
+	ECustomData* parent_custom_data;
 
 	ETextArea* text_area;
 
@@ -115,7 +116,7 @@ public:
 	bool* have_rama		= new bool (true);
 	bool* any_visual_changes	= new bool (true);
 
-
+	bool* editable_borders = new bool(false);
 
 	//float* internal_vertex_buffer;
 
@@ -152,7 +153,7 @@ class EDataContainer
 class EDataContainerMessage : public EDataContainer
 {
 public:
-	std::string message;
+	std::string* message = new std::string("");
 };
 //////////////////////////////////////////////////////////////////////
 // actions section
@@ -160,6 +161,6 @@ public:
 
 namespace EDataActionCollection
 {
-	void action_log_text			(Entity* _entity, ECustomData* _custom_data);
+	void action_log_text			(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_player_control		(Entity* _entity, ECustomData* _custom_data, float _d);
 }

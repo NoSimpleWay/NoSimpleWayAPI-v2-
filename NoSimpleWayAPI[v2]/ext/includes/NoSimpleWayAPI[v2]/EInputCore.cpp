@@ -14,23 +14,29 @@ namespace EInputCore
 	bool		MOUSE_BUTTON_RIGHT;
 	bool		MOUSE_BUTTON_MID;
 
-	double	MOUSE_POSITION_X;
-	double	MOUSE_POSITION_Y;
+	double		MOUSE_POSITION_X;
+	double		MOUSE_POSITION_Y;
 	
-	double	MOUSE_PREV_X = -1.0;
-	double	MOUSE_PREV_Y = -1.0;
+	double		MOUSE_PREV_X = -1.0;
+	double		MOUSE_PREV_Y = -1.0;
 
-	double	MOUSE_SPEED_X;
-	double	MOUSE_SPEED_Y;
+	double		MOUSE_SPEED_X;
+	double		MOUSE_SPEED_Y;
+
+	int			key_state				[key_count]{ false };
+	float		key_hold_time			[key_count];
+
+	float		mouse_button_state			[mouse_key_count]{};
+	float		mouse_hold_time			[mouse_key_count]{};
+	float		mouse_unhold_save_time	[mouse_key_count]{};
 
 	char		LAST_INPUTED_CHAR = 0;
 
-	int		key_state[512]{ false };
-	float	key_hold_time[512];
+
 
 	bool key_pressed_once(int _key)
 	{
-		if ((key_state[_key] != GLFW_RELEASE) & (key_hold_time[_key] <= 0.0f)) { return true; }
+		if ((key_state[_key] != GLFW_RELEASE) && (key_hold_time[_key] <= 0.0f)) { return true; }
 		return false;
 	}
 
@@ -42,7 +48,15 @@ namespace EInputCore
 
 	bool key_holded(int _key, float _time)
 	{
-		if ((key_state[_key] != GLFW_RELEASE) & (key_hold_time[_key] > _time)) { return true; }
+		if ((key_state[_key] != GLFW_RELEASE) && (key_hold_time[_key] > _time)) { return true; }
+		return false;
+	}
+
+
+
+	bool mouse_button_pressed_once(int _button)
+	{
+		if ((mouse_button_state[_button] != GLFW_RELEASE) && (mouse_hold_time[_button] <= 0.0f)){ return true; }
 		return false;
 	}
 };
@@ -97,6 +111,9 @@ void EInputCore::scroll_callback(GLFWwindow* window, double xoffset, double yoff
 
 void EInputCore::mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 {
+
+	mouse_button_state[button] = action;
+
 	//if () 00:13:53 27.11.2019
 	if ((button == GLFW_MOUSE_BUTTON_LEFT) && (action == GLFW_PRESS))
 	{

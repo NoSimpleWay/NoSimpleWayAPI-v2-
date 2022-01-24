@@ -1,4 +1,12 @@
 #pragma once
+
+/**/
+#ifndef _E_CLASS_LINKER_ALREADY_LINKED_
+#define _E_CLASS_LINKER_ALREADY_LINKED_
+#include "EClassLinker.h"
+#endif
+/**/
+
 #ifndef _E_GRAPHIC_CORE_ALREADY_LINKED_
 /**/#define _E_GRAPHIC_CORE_ALREADY_LINKED_
 /**/#include "EGraphicCore.h"
