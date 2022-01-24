@@ -23,7 +23,7 @@ void EWindowMain::draw_additional(float _d)
 		if (!cluster_array[j][i]->entity_list.empty())
 		for (Entity* e : cluster_array[j][i]->entity_list)
 		{
-			e->draw(_d);
+			e->draw();
 		}
 
 	}
@@ -60,7 +60,7 @@ EWindowMain::EWindowMain()
 	}
 
 	//jc = Just Created
-	Entity*			jc_entity = new Entity();
+	Entity*				jc_entity = new Entity();
 	ESpriteLayer*		jc_sprite_layer = new ESpriteLayer();
 	ESpriteLayer*		jc_sprite_layer_for_text = new ESpriteLayer();
 	ESprite*			jc_sprite = new ESprite();
@@ -68,6 +68,9 @@ EWindowMain::EWindowMain()
 	ERegionGabarite*	jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 100.0f, 200.0f);
 	EClickableRegion*	jc_clickable_region = new EClickableRegion();
 	ETextArea*			jc_text_area = new ETextArea();
+	EButtonGroup*		jc_button_group = new EButtonGroup();
+	EButtonGroupRow*	jc_button_group_row = new EButtonGroupRow();
+	EntityButton*		jc_button = new EntityButton();
 
 	jc_custom_data->data_actions_list.push_back(&EDataActionCollection::action_player_control);
 
@@ -87,7 +90,7 @@ EWindowMain::EWindowMain()
 	jc_entity->custom_data_list.push_back(jc_custom_data);
 	*jc_entity->offset_x = 30.0f;
 	*jc_entity->offset_y = 40.0f;
-	
+	cluster_array[0][0]->entity_list.push_back(jc_entity);
 
 	jc_sprite_layer->sprite_list.push_back(jc_sprite);
 	jc_sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
@@ -126,12 +129,59 @@ EWindowMain::EWindowMain()
 
 	jc_entity->sprite_layer_generate_vertex_buffer();
 	
+	////////////////////////////////////////////////
+	jc_region_gabarite = new ERegionGabarite(100.0f, 100.0f, 500.0f, 300.0f);
+	jc_button_group->region = jc_region_gabarite;
+	jc_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
+	button_group_list.push_back(jc_button_group);
+
+	//button section
+	for (int i = 0; i < 20; i++)
+	{
+		jc_custom_data = new ECustomData();
+
+		jc_button->custom_data_list.push_back(jc_custom_data);
+		*jc_button->offset_x = 10.0f;
+		*jc_button->offset_y = 10.0f;
+
+		
+		jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 40.0f, 40.0f);
+		jc_button->button_gabarite = jc_region_gabarite;
+		jc_clickable_region = new EClickableRegion();
+		jc_clickable_region->region = jc_region_gabarite;
+		jc_clickable_region->master_entity = jc_button;
+		jc_clickable_region->master_custom_data = jc_custom_data;
+		jc_clickable_region->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
+
+		jc_custom_data->clickable_region_list.push_back(jc_clickable_region);
+		jc_custom_data->master_entity = jc_button;
+
+		jc_button_group->button_list.push_back(jc_button);
+
+		jc_button = new EntityButton();
+	}
+
+	jc_button_group->realign_all_buttons();
+	jc_button_group->calculate_all_world_positions();
+	
+	
+	
+	
+	
+	
+
+	//push back button
+
 
 	
 
 	
 
-	cluster_array[0][0]->entity_list.push_back(jc_entity);
+	
+
+
+
+
 }
 
 EWindowMain::~EWindowMain()

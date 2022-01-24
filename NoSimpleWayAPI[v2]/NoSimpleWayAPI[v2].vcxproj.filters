@@ -37,6 +37,9 @@
     <Filter Include="NoSimpleWayAPI[v2]\TextCore">
       <UniqueIdentifier>{90fdae0a-14a5-420c-97e9-a4d2bb468a96}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NoSimpleWayAPI[v2]\UTILS">
+      <UniqueIdentifier>{251943de-d38e-43df-ace6-21800b75e79e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -91,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h">
       <Filter>NoSimpleWayAPI[v2]\GraphicCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EClassLinker.h">
+      <Filter>NoSimpleWayAPI[v2]\UTILS</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

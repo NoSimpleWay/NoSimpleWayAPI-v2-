@@ -5,6 +5,20 @@
 /**/#include "EGraphicCore.h"
 #endif
 
+/**/
+#ifndef	_ENTITY_CORE_ALREADY_LINKED_
+#define	_ENTITY_CORE_ALREADY_LINKED_
+#include "EntityCore.h"
+#endif
+/**/
+
+/**/
+#ifndef _E_CLASS_LINKER_ALREADY_LINKED_
+#define _E_CLASS_LINKER_ALREADY_LINKED_
+#include "EClassLinker.h"
+#endif
+/**/
+
 #include <vector>
 
 enum ENUM_ButtonAutoAlign
@@ -15,7 +29,8 @@ enum ENUM_ButtonAutoAlign
 	BUTTON_AUTO_ALIGN__FREE								//set exactly position
 };
 
-class EButtonContainer;
+//class EButtonContainer;
+
 
 class EWindow
 {
@@ -26,7 +41,7 @@ public:
 	float* size_x = new float(0.0f);
 	float* size_y = new float(0.0f);
 
-	std::vector<EButtonContainer*> button_container_list;
+	std::vector<EButtonGroup*> button_container_list;
 	
 
 	void			update_default(float _d);
@@ -41,6 +56,7 @@ public:
 	void			GUI_draw_default(float _d);
 	virtual void	GUI_draw_additional(float _d);
 
+	std::vector<EButtonGroup*> button_group_list;
 
 
 	//////////////		_STATIC SECTION_		////////////////////////
@@ -50,12 +66,48 @@ public:
 	/////////////////////////////////////////////////////////////////////
 };
 
+
+
+class EButtonGroupRow
+{
+public:
+	ERegionGabarite* gabarite;
+	std::vector<EButtonGroup*> button_group_list;
+
+	EButtonGroup* parent_button_group;
+};
+
 class EButtonGroup
 {
-	//std::vector
+public:
+	//float* offset_x = new float(0.0f);
+	//float* offset_y = new float(0.0f);
+
+	//float* size_x = new float(0.0f);
+	//float* size_y = new float(0.0f);
+	ERenderBatcher* batcher_for_default_draw;
+
+	ERegionGabarite* region;
+
+	std::vector<EntityButton*> button_list;
+	std::vector<EButtonGroupRow*> group_row_list;
+	EButtonGroupRow* parent_group_row;
+
+	int* order_in_vector = new int(0);
+	static EButtonGroup* focused_button_group;
+
+	void update(float _d);
+	void draw();
+	void calculate_all_world_positions();
+	void realign_all_buttons();
 };
 
-class EButtonContainer
-{
-
-};
+//class EButtonContainer
+//{
+//	ERegionGabarite* gabarite;
+//
+//	void update(float _d);
+//	void draw();
+//
+//	std::vector<EButtonGroup*> button_group_list;
+//};

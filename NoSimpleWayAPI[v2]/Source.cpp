@@ -104,10 +104,6 @@ int main()
 
 		glfwPollEvents();
 
-		
-
-
-
 		NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
 		NS_EGraphicCore::gl_set_blend_mode_default();
 		

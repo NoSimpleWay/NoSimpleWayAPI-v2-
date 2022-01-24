@@ -519,6 +519,14 @@ void NS_EGraphicCore::set_active_color(const EColor_4(&_color)[4])
 	NS_EGraphicCore::active_color[3] = _color[3];
 }
 
+void NS_EGraphicCore::set_active_color_custom_alpha(const EColor_4(&_color)[4], float _alpha)
+{
+	NS_EGraphicCore::active_color[0] = _color[0];
+	NS_EGraphicCore::active_color[1] = _color[1];
+	NS_EGraphicCore::active_color[2] = _color[2];
+	NS_EGraphicCore::active_color[3] = _alpha;
+}
+
 void NS_EGraphicCore::set_active_color(EColor_4 *_color)
 {
 	NS_EGraphicCore::active_color[0] = _color[0];
@@ -773,16 +781,16 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_default(float* _array, unsi
 void NS_ERenderCollection::add_data_to_vertex_buffer_rama(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _t, ETextureGabarite* _texture)
 {
 	//left (vertical)
-	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y, _t, _h, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x - _t, _y, _t, _h, _texture);
 
 	//right (vertical)
-	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x + _h - _t, _y, _t, _h, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x + _w, _y, _t, _h, _texture);
 
 	//down (horizontal)
-	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y, _w, _t, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x - _t, _y - _t, _w + _t * 2.0f, _t, _texture);
 
 	//up (horizontal)
-	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y + _h - _t, _w, _t, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x - _t, _y + _h, _w + _t * 2.0f, _t, _texture);
 }
 
 void NS_ERenderCollection::add_data_to_vertex_buffer_custom_uv(float* _array, unsigned int& _start_offset, float _x, float _y, float _size_x, float _size_y, float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y)

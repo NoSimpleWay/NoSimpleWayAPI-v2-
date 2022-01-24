@@ -318,10 +318,30 @@ void EClickableRegion::draw()
 
 	if (batcher_for_default_draw != nullptr)
 	{
+		if (EClickableRegion::overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+		{
+			NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.2f);
+
+			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				batcher_for_default_draw->vertex_buffer,
+				batcher_for_default_draw->last_vertice_buffer_index,
+
+				*region->world_position_x,
+				*region->world_position_y,
+
+				*region->size_x,
+				*region->size_y,
+
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+		}
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_left));
 		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_left)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
+		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call();}
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
 			batcher_for_default_draw->vertex_buffer,
@@ -339,6 +359,7 @@ void EClickableRegion::draw()
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_right));
 		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_right)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
+		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
 			batcher_for_default_draw->vertex_buffer,
@@ -356,6 +377,7 @@ void EClickableRegion::draw()
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_down));
 		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_down)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
+		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
 			batcher_for_default_draw->vertex_buffer,
@@ -373,6 +395,7 @@ void EClickableRegion::draw()
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_up));
 		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_up)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
+		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
 			batcher_for_default_draw->vertex_buffer,
@@ -390,6 +413,7 @@ void EClickableRegion::draw()
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_mid));
 		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_mid)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
+		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
 			batcher_for_default_draw->vertex_buffer,
@@ -403,6 +427,10 @@ void EClickableRegion::draw()
 
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
+	}
+	else
+	{
+		if (batcher_for_default_draw == nullptr) { EInputCore::logger_simple_error("batcher for default draw is null!"); }
 	}
 
 	if (text_area != nullptr)

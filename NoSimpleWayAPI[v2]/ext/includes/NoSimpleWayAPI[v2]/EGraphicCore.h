@@ -25,7 +25,12 @@
 #endif
 /////// /////// /////// /////// /////// /////// ///////
 
-
+/**/
+#ifndef _E_CLASS_LINKER_ALREADY_LINKED_
+#define _E_CLASS_LINKER_ALREADY_LINKED_
+#include "EClassLinker.h"
+#endif
+/**/
 
 /////// /////// /////// /////// /////// /////// ///////
 #ifndef _E_INPUT_CORE_ALREADY_LINKED_
@@ -146,6 +151,7 @@ namespace NS_EGraphicCore
 	extern float current_zoom;
 
 	extern void set_active_color(const EColor_4(&_color)[4]);
+	extern void set_active_color_custom_alpha(const EColor_4(&_color)[4], float _alpha);
 	extern void set_active_color(EColor_4* _color);
 
 	extern EColor_4 active_color[4];

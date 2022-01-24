@@ -14,14 +14,18 @@ namespace EInputCore
 	bool		MOUSE_BUTTON_RIGHT;
 	bool		MOUSE_BUTTON_MID;
 
-	double	MOUSE_POSITION_X;
-	double	MOUSE_POSITION_Y;
+	double		MOUSE_POSITION_X;
+	double		MOUSE_POSITION_Y;
 	
-	double	MOUSE_PREV_X = -1.0;
-	double	MOUSE_PREV_Y = -1.0;
+	double		MOUSE_PREV_X = -1.0;
+	double		MOUSE_PREV_Y = -1.0;
 
-	double	MOUSE_SPEED_X;
-	double	MOUSE_SPEED_Y;
+	double		MOUSE_SPEED_X;
+	double		MOUSE_SPEED_Y;
+
+	float		mouse_key_state[3]{};
+	float		mouse_hold_time[3]{};
+	float		mouse_unhold_save_time[3]{};
 
 	char		LAST_INPUTED_CHAR = 0;
 
@@ -97,6 +101,9 @@ void EInputCore::scroll_callback(GLFWwindow* window, double xoffset, double yoff
 
 void EInputCore::mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 {
+
+	mouse_key_state[button] = action;
+
 	//if () 00:13:53 27.11.2019
 	if ((button == GLFW_MOUSE_BUTTON_LEFT) && (action == GLFW_PRESS))
 	{

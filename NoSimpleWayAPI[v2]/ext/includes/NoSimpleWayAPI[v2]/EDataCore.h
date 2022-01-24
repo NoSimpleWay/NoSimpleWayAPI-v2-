@@ -1,6 +1,13 @@
 #pragma once
 
 /**/
+#ifndef _E_CLASS_LINKER_ALREADY_LINKED_
+#define _E_CLASS_LINKER_ALREADY_LINKED_
+#include "EClassLinker.h"
+#endif
+/**/
+
+/**/
 #ifndef	_ENTITY_CORE_ALREADY_LINKED_
 #define	_ENTITY_CORE_ALREADY_LINKED_
 #include "EntityCore.h"
@@ -19,13 +26,6 @@
 
 #include <vector>
 #include <string>
-
-class EDataContainer;
-class EClickableRegion;
-class ECustomData;
-class Entity;
-class ESpriteLayer;
-class ERenderBatcher;
 //class ETextArea;
 
 //link to method, who manipulate with data
@@ -34,7 +34,6 @@ class ERenderBatcher;
 //float		= delta time
 typedef void (*data_action_pointer)(Entity*, ECustomData*, float);
 
-class ETextArea;
 class ECustomData
 {
 public:
@@ -66,6 +65,7 @@ public:
 
 	float* offset_x = new float(0.0f);
 	float* offset_y = new float(0.0f);
+	float* offset_z = new float(0.0f);
 
 	float* size_x = new float(0.0f);
 	float* size_y = new float(0.0f);
@@ -77,6 +77,7 @@ public:
 
 	float* world_position_x = new float(0.0f);
 	float* world_position_y = new float(0.0f);
+	float* world_position_z = new float(0.0f);
 
 	void translate(float _x, float _y);
 };

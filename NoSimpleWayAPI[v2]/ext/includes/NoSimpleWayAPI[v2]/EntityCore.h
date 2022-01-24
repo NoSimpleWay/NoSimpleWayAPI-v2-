@@ -1,6 +1,13 @@
 #pragma once
 
 /**/
+#ifndef _E_CLASS_LINKER_ALREADY_LINKED_
+#define _E_CLASS_LINKER_ALREADY_LINKED_
+#include "EClassLinker.h"
+#endif
+/**/
+
+/**/
 #ifndef	_DATA_CORE_ALREADY_LINKED_
 #define	_DATA_CORE_ALREADY_LINKED_
 #include "EDataCore.h"
@@ -38,12 +45,16 @@ public:
 	float* offset_y = new float(0.0f);
 	float* offset_z = new float(0.0f);
 
+	float* world_position_x = new float(0.0f);
+	float* world_position_y = new float(0.0f);
+	float* world_position_z = new float(0.0f);
+
 	std::vector<ECustomData*> custom_data_list;
 
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 	std::vector<ESpriteLayer*> sprite_layer_list;
 
-	void draw(float _d);
+	void draw();
 	void sprite_layer_generate_vertex_buffer();
 	void transfer_all_vertex_buffers_to_batcher();
 	void calculate_all_world_positions();

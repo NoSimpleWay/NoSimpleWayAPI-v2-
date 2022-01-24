@@ -163,6 +163,7 @@
   <ItemGroup>
     <ClInclude Include="EWindowMain.h" />
     <ClInclude Include="ext\includes\ConsoleColor.h" />
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EClassLinker.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.h" />

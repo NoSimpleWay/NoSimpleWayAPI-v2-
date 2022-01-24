@@ -1,5 +1,12 @@
 #pragma once
 
+/**/
+#ifndef _E_CLASS_LINKER_ALREADY_LINKED_
+#define _E_CLASS_LINKER_ALREADY_LINKED_
+#include "EClassLinker.h"
+#endif
+/**/
+
 #ifndef _E_GRAPHIC_CORE_ALREADY_LINKED_
 /**/#define _EGRAPHICCORE_
 /**/#include "EGraphicCore.h"
@@ -21,14 +28,18 @@ namespace EInputCore
 	extern	bool		MOUSE_BUTTON_RIGHT;
 	extern	bool		MOUSE_BUTTON_MID;
 
-	extern	double	MOUSE_POSITION_X;
-	extern	double	MOUSE_POSITION_Y;
+	extern	double		MOUSE_POSITION_X;
+	extern	double		MOUSE_POSITION_Y;
 
-	extern	double	MOUSE_PREV_X;
-	extern	double	MOUSE_PREV_Y;
+	extern	double		MOUSE_PREV_X;
+	extern	double		MOUSE_PREV_Y;
 
-	extern	double	MOUSE_SPEED_X;
-	extern	double	MOUSE_SPEED_Y;
+	extern	double		MOUSE_SPEED_X;
+	extern	double		MOUSE_SPEED_Y;
+
+	extern float		mouse_key_state[3];
+	extern float		mouse_hold_time[3];
+	extern float		mouse_unhold_save_time[3];
 
 	extern	char		LAST_INPUTED_CHAR;
 
