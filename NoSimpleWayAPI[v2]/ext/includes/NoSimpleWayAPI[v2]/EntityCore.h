@@ -88,11 +88,12 @@ public:
 
 	std::string* autoalign_id = new std::string("");
 
-	float* autoalight_offset_x_while_mathed_id = new float(0.0f);
-	float* autoalight_offset_y_while_mathed_id = new float(0.0f);
-	
-	float* autoalight_offset_x_while_not_mathed_id = new float(0.0f);
-	float* autoalight_offset_y_while_not_mathed_id = new float(0.0f);
+	float* autoalight_offset_x_mathed_id = new float(0.0f);
+	float* autoalight_offset_x_not_mathed_id = new float(0.0f);
+
+	EButtonGroup* parent_button_group;
+
+	bool* fixed_position = new bool(false);
 };
 
 class ECluster

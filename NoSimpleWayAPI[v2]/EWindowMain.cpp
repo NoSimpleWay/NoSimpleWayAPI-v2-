@@ -73,7 +73,8 @@ EWindowMain::EWindowMain()
 	EntityButton*		jc_button = new EntityButton();
 	
 
-	jc_custom_data->actions_on_click_list.push_back(&EDataActionCollection::action_player_control);
+
+	jc_custom_data->actions_on_update.push_back(&EDataActionCollection::action_player_control);
 
 	*jc_text_area->stored_text = "ABC\\nLOL\\nKEK";
 	jc_text_area->font = EFont::font_list.at(0);
@@ -105,7 +106,7 @@ EWindowMain::EWindowMain()
 
 	jc_clickable_region->text_area = jc_text_area;
 	jc_clickable_region->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
-	*jc_clickable_region->editable_borders = true;
+	//*jc_clickable_region->editable_borders = true;
 
 	//create sprite
 	jc_sprite->set_texture_gabarite(NS_DefaultGabarites::texture_gabarite_gudron);
@@ -131,13 +132,14 @@ EWindowMain::EWindowMain()
 	jc_entity->sprite_layer_generate_vertex_buffer();
 	
 	////////////////////////////////////////////////
-	jc_region_gabarite = new ERegionGabarite(100.0f, 100.0f, 500.0f, 300.0f);
+	jc_region_gabarite = new ERegionGabarite(100.0f, 100.0f, 500.0f, 100.0f);
 	jc_button_group->region = jc_region_gabarite;
 	jc_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 	button_group_list.push_back(jc_button_group);
 
+	EButtonGroup::add_horizontal_scroll_bar(jc_button_group);
 	//button section
-	for (int i = 0; i < 20; i++)
+	for (int i = 0; i < 50; i++)
 	{
 		jc_custom_data = new ECustomData();
 		EDataContainerMessage* jc_data_container_message = new EDataContainerMessage();
@@ -148,6 +150,8 @@ EWindowMain::EWindowMain()
 		jc_button->custom_data_list.push_back(jc_custom_data);
 		*jc_button->offset_x = 10.0f;
 		*jc_button->offset_y = 10.0f;
+		
+		*jc_button->fixed_position = false;
 
 		
 		jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 40.0f, 40.0f);
@@ -158,6 +162,7 @@ EWindowMain::EWindowMain()
 		jc_clickable_region->parent_entity = jc_button;
 		jc_clickable_region->parent_custom_data = jc_custom_data;
 		jc_clickable_region->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
+		jc_clickable_region->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
 
 		jc_clickable_region->actions_on_click_list.push_back(&EDataActionCollection::action_log_text);
 

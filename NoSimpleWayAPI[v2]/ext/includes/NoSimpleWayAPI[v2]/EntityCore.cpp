@@ -32,41 +32,10 @@ void Entity::sprite_layer_generate_vertex_buffer()
 			{
 				for (ESpriteLayer* s_layer:c_region->sprite_layer_list)
 				if (s_layer != nullptr)
-				{
-					s_layer->generate_vertex_buffer_for_sprite_layer("Clickable region sprite layer");
-				}
+				{s_layer->generate_vertex_buffer_for_sprite_layer("Clickable region sprite layer");}
 
 				if (c_region->internal_sprite_layer != nullptr)
-				{
-					//EInputCore::logger_simple_success("try generate vertex buffer for sprite layer[]");
-					c_region->internal_sprite_layer->generate_vertex_buffer_for_sprite_layer("internal sprite layer");
-
-					for (int i = 0; i < *c_region->internal_sprite_layer->last_buffer_id * 0; i++)
-					{
-						
-						EInputCore::logger_param(EInputCore::border_this_text(i, '['), c_region->internal_sprite_layer->vertex_buffer[i]);
-
-						if ((i > 0))
-						{
-							if ((i + 1) % 8 == 0)
-							{
-								std::cout << white << "===" << std::endl;
-							}
-
-							if
-								(
-									((i + 7) % 8 == 0)
-									||
-									((i + 3) % 8 == 0)
-									)
-							{
-								std::cout << white << "-" << std::endl;
-							}
-						}
-
-						//EInputCore::logger_param("c_region->last_buffer_id", *c_region->internal_sprite_layer->last_buffer_id);
-					}
-				}
+				{c_region->internal_sprite_layer->generate_vertex_buffer_for_sprite_layer("internal sprite layer");}
 			}
 
 			
@@ -233,19 +202,7 @@ void Entity::update(float _d)
 	for (ECustomData* c_data : custom_data_list)
 	if (c_data != nullptr)
 	{
-		for (EClickableRegion* cl_region:c_data->clickable_region_list)
-		if (cl_region != nullptr)
-		{
-			cl_region->update(_d);
-		}
-
-		for (data_action_pointer action_on_update_pointer:c_data->actions_on_click_list)
-		if ((action_on_update_pointer != nullptr) & (c_data->parent_entity != nullptr))
-		{
-			action_on_update_pointer(c_data->parent_entity, c_data, _d);
-		}
-
-		//for (EClickableRegion* cl_region)
+		c_data->update(_d);
 	}
 }
 

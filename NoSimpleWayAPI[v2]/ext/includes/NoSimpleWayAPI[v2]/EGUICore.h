@@ -96,10 +96,17 @@ public:
 	int* order_in_vector = new int(0);
 	static EButtonGroup* focused_button_group;
 
+	float* scroll_x = new float(0.0f);
+	float* scroll_y = new float(0.0f);
+
+	float* highest_point_y = new float(0.0f);
+
 	void update(float _d);
 	void draw();
 	void calculate_all_world_positions();
 	void realign_all_buttons();
+
+	static void add_horizontal_scroll_bar(EButtonGroup* _button_group);
 };
 
 //class EButtonContainer

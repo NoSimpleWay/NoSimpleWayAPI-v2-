@@ -47,9 +47,10 @@ public:
 	std::vector<EClickableRegion*> clickable_region_list;
 
 	//WHAT do with data
-	std::vector<data_action_pointer> actions_on_click_list;
+	std::vector<data_action_pointer> actions_on_update;
 
 	void draw();
+	void update(float _d);
 	void translate(float _x, float _y, float _z);
 
 	//std::vector<void (*)(Entity*, ECustomData*)> data_actions_list;
@@ -88,7 +89,9 @@ enum ClickableRegionSides
 	CRS_SIDE_RIGHT,
 	CRS_SIDE_DOWN,
 	CRS_SIDE_UP,
-	CRS_SIDE_MID
+	CRS_SIDE_MID,
+	CRS_SIDE_BODY,
+	CRS_SIDE_LAST_ELEMENT
 };
 class EClickableRegion
 {
@@ -107,16 +110,22 @@ public:
 
 	ETextArea* text_area;
 
-	bool* catched_side_left	= new bool (false);
+	bool* catched_side_left		= new bool (false);
 	bool* catched_side_right	= new bool (false);
-	bool* catched_side_up	= new bool (false);	
-	bool* catched_side_down	= new bool (false);
-	bool* catched_side_mid	= new bool (false);
+	bool* catched_side_up		= new bool (false);	
+	bool* catched_side_down		= new bool (false);
+	bool* catched_side_mid		= new bool (false);
 
-	bool* have_rama		= new bool (true);
+	bool* catched_body			= new bool (false);
+
+	bool* have_rama				= new bool (true);
 	bool* any_visual_changes	= new bool (true);
 
-	bool* editable_borders = new bool(false);
+	//bool* editable_borders		= new bool(false);
+	bool* can_catch_side		= new bool[CRS_SIDE_BODY]{false};
+
+	float* catch_offset_x		= new float (0.0f);
+	float* catch_offset_y		= new float (0.0f);
 
 	//float* internal_vertex_buffer;
 
@@ -129,18 +138,9 @@ public:
 	
 	void update(float _d);
 	void draw();
-	//void select_colo_for_border();
 
 	void redraw_text();
 	ERenderBatcher* batcher_for_default_draw;
-
-	//void update_sides_visual(int _side, float _offset_x, float _offset_y, bool _catched);
-	//void init_internal_sprite_layer();
-	//bool set_catch_side(bool _catch_side, bool _set);
-
-	//void change_buffer_color(int _side, const float(&_color)[4]);
-	//void set_sides_position_and_sizes(int _side, float _x, float _y, float _z, float _w, float _h);
-	//void refresh_border_sprites();
 };
 
 //////////////////////////////////////////////////////////////////////
@@ -155,12 +155,22 @@ class EDataContainerMessage : public EDataContainer
 public:
 	std::string* message = new std::string("");
 };
+
+class EDataContainerScrollBar : public EDataContainer
+{
+public:
+	float*	max_value	= new float(0.0f);
+	float*	value_pointer;
+
+	//EButtonGroup* parent_button_group;
+};
 //////////////////////////////////////////////////////////////////////
 // actions section
 //////////////////////////////////////////////////////////////////////
 
 namespace EDataActionCollection
 {
-	void action_log_text			(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_player_control		(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_log_text					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_player_control				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_update_slider				(Entity* _entity, ECustomData* _custom_data, float _d);
 }

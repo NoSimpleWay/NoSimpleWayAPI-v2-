@@ -56,6 +56,81 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 	};
 }
 
+void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	static EntityButton* entity_button = ((EntityButton*)_entity);
+	//EInputCore::logger_simple_success("@");
+
+	*entity_button->button_gabarite->size_y
+	=
+	*entity_button->parent_button_group->region->size_y;
+
+	*_entity->offset_x
+	=
+	*entity_button->parent_button_group->region->size_x
+	-
+	*entity_button->button_gabarite->size_x - 2.0f;
+
+	*_entity->world_position_x
+	=
+	*_entity->offset_x
+	+
+	*entity_button->parent_button_group->region->offset_x;
+
+	*((EDataContainerScrollBar*)_custom_data->data_container)->max_value
+	=
+	max(0.0f, *entity_button->parent_button_group->highest_point_y + 10.0f - *entity_button->parent_button_group->region->size_y);
+
+	if (EInputCore::mouse_button_state[GLFW_MOUSE_BUTTON_LEFT] != GLFW_RELEASE)
+	{
+		*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y += EInputCore::MOUSE_SPEED_Y;
+		
+		*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
+		=
+		max(2.0f, *_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y);
+		
+		*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
+		=
+		min
+		(
+			*entity_button->parent_button_group->region->size_y
+			-
+			*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->size_y - 2.0f,
+
+			*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
+		);
+
+
+		*((EDataContainerScrollBar*)_custom_data->data_container)->value_pointer
+		=
+		round
+		(
+			* _entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
+			/
+			(
+				*entity_button->parent_button_group->region->size_y
+				-
+				*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->size_y
+			)
+			*
+			*((EDataContainerScrollBar*)_custom_data->data_container)->max_value * -1.0f
+		);
+
+
+		//*entity_button->parent_button_group->scroll_y += 100.0f * _d;
+
+		//entity_button->parent_button_group->realign_all_buttons();
+		entity_button->parent_button_group->calculate_all_world_positions();
+		
+		//_entity->calculate_all_world_positions();
+	}
+
+	_entity->calculate_all_world_positions();
+	//_entity->
+
+
+}
+
 /*
 bool EClickableRegion::overlapped_by_mouse(EClickableRegion* _region)
 {
@@ -127,99 +202,149 @@ bool EClickableRegion::catched_side_by_mouse(float _x, float _y, float _size_x, 
 void EClickableRegion::check_all_catches()
 {
 	//bool previvous_state = false;
-
+	bool any_catch = false;
 	if (!EInputCore::MOUSE_BUTTON_LEFT)
 	{
-		
-			*catched_side_left = catched_side_by_mouse
-			(
-				*region->world_position_x,
-				*region->world_position_y,
+			if (can_catch_side[ClickableRegionSides::CRS_SIDE_LEFT])
+			{
+				*catched_side_left = catched_side_by_mouse
+				(
+					*region->world_position_x,
+					*region->world_position_y,
 
-				0.0f,
-				*region->size_y,
+					0.0f,
+					*region->size_y,
 
-				NS_EGraphicCore::current_offset_x,
-				NS_EGraphicCore::current_offset_y,
-				NS_EGraphicCore::current_zoom,
+					NS_EGraphicCore::current_offset_x,
+					NS_EGraphicCore::current_offset_y,
+					NS_EGraphicCore::current_zoom,
 
-				5.0f
-			);
-
+					5.0f
+				);
+			}
+			else
+			{
+				*catched_side_left = false;
+			}
 			
 		
 		
-		
-			*catched_side_right = catched_side_by_mouse
-			(
-				*region->world_position_x + *region->size_x,
-				*region->world_position_y,
+			if (can_catch_side[ClickableRegionSides::CRS_SIDE_RIGHT])
+			{
 
-				0.0f,
-				*region->size_y,
+				*catched_side_right = catched_side_by_mouse
+				(
+					*region->world_position_x + *region->size_x,
+					*region->world_position_y,
 
-				NS_EGraphicCore::current_offset_x,
-				NS_EGraphicCore::current_offset_y,
-				NS_EGraphicCore::current_zoom,
+					0.0f,
+					*region->size_y,
 
-				5.0f
-			);
+					NS_EGraphicCore::current_offset_x,
+					NS_EGraphicCore::current_offset_y,
+					NS_EGraphicCore::current_zoom,
 
+					5.0f
+				);
+			}
+			else
+			{
+				*catched_side_right = false;
+			}
 			
 		
 
-		
-			*catched_side_down = catched_side_by_mouse
-			(
-				*region->world_position_x,
-				*region->world_position_y,
+			if (can_catch_side[ClickableRegionSides::CRS_SIDE_DOWN])
+			{
+				*catched_side_down = catched_side_by_mouse
+				(
+					*region->world_position_x,
+					*region->world_position_y,
 
-				*region->size_x,
-				0.0f,
+					*region->size_x,
+					0.0f,
 
-				NS_EGraphicCore::current_offset_x,
-				NS_EGraphicCore::current_offset_y,
-				NS_EGraphicCore::current_zoom,
+					NS_EGraphicCore::current_offset_x,
+					NS_EGraphicCore::current_offset_y,
+					NS_EGraphicCore::current_zoom,
 
-				5.0f
-			);
-
+					5.0f
+				);
+			}
+			else
+			{
+				*catched_side_down = false;
+			}
 			
 
-		
-			*catched_side_up = catched_side_by_mouse
-			(
-				*region->world_position_x,
-				*region->world_position_y + *region->size_y,
+			if (can_catch_side[ClickableRegionSides::CRS_SIDE_UP])
+			{
+				*catched_side_up = catched_side_by_mouse
+				(
+					*region->world_position_x,
+					*region->world_position_y + *region->size_y,
 
-				*region->size_x,
-				0.0f,
+					*region->size_x,
+					0.0f,
 
-				NS_EGraphicCore::current_offset_x,
-				NS_EGraphicCore::current_offset_y,
-				NS_EGraphicCore::current_zoom,
+					NS_EGraphicCore::current_offset_x,
+					NS_EGraphicCore::current_offset_y,
+					NS_EGraphicCore::current_zoom,
 
-				5.0f
-			);
-
+					5.0f
+				);
+			}
+			else
+			{
+				*catched_side_up = false;
+			}
 			
-		
-			*catched_side_mid = catched_side_by_mouse
-			(
-				*region->world_position_x + *region->size_x / 2.0f,
-				*region->world_position_y + *region->size_y / 2.0f,
+			if (can_catch_side[ClickableRegionSides::CRS_SIDE_MID])
+			{
+				*catched_side_mid = catched_side_by_mouse
+				(
+					*region->world_position_x + *region->size_x / 2.0f,
+					*region->world_position_y + *region->size_y / 2.0f,
 
-				0.0f,
-				0.0f,
+					0.0f,
+					0.0f,
 
-				NS_EGraphicCore::current_offset_x,
-				NS_EGraphicCore::current_offset_y,
-				NS_EGraphicCore::current_zoom,
+					NS_EGraphicCore::current_offset_x,
+					NS_EGraphicCore::current_offset_y,
+					NS_EGraphicCore::current_zoom,
 
-				7.0f
-			);
+					7.0f
+				);
+			}
+			else
+			{
+				*catched_side_mid = false;
+			}
+
+			if ((can_catch_side[ClickableRegionSides::CRS_SIDE_BODY]) && (!any_catch))
+			{
+				*catched_body = catched_side_by_mouse
+				(
+					*region->world_position_x,
+					*region->world_position_y,
+
+					*region->size_x,
+					*region->size_y,
+
+					NS_EGraphicCore::current_offset_x,
+					NS_EGraphicCore::current_offset_y,
+					NS_EGraphicCore::current_zoom,
+
+					1.0f
+				);
+			}
+			else
+			{
+				*catched_body = false;
+			}
 			
-		
+			*catch_offset_x = EInputCore::MOUSE_POSITION_X - *region->world_position_x;
+			*catch_offset_y = EInputCore::MOUSE_POSITION_Y - *region->world_position_y;
 	}
 	else
 	{
@@ -256,9 +381,7 @@ void EClickableRegion::check_all_catches()
 		if ((*catched_side_left) || (*catched_side_right) || (*catched_side_up) || (*catched_side_down) || (*catched_side_mid))
 		{
 
-			//refresh_border_sprites();
-			//master_entity->calculate_all_world_positions();
-			//internal_sprite_layer->generate_vertex_buffer_for_sprite_layer("refresh sides sprites");
+
 		}
 	}
 
@@ -301,14 +424,14 @@ void EClickableRegion::translate(float _x, float _y, float _z)
 	for (ESpriteLayer* s_layer : sprite_layer_list)
 	if (s_layer != nullptr) {s_layer->translate_sprite_layer(_x, _y, _z);}
 
-	//if (internal_sprite_layer != nullptr) {internal_sprite_layer->translate_sprite_layer(_x, _y, _z);}
+
 
 	if (text_area != nullptr) { text_area->translate(_x, _y); }
 }
 
 void EClickableRegion::update(float _d)
 {
-	if ((*editable_borders) && (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT)))
+	if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
 	{
 		check_all_catches();
 	}
@@ -342,7 +465,7 @@ void EClickableRegion::draw()
 		}
 	}
 	
-	if ((batcher_for_default_draw != nullptr) && (*editable_borders) && (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT)))
+	if ((batcher_for_default_draw != nullptr) && (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT)))
 	{
 		if (EClickableRegion::overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
 		{
@@ -453,6 +576,28 @@ void EClickableRegion::draw()
 
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
+
+		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_body));
+		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_body)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+
+		if (*catched_body)
+		{
+			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				batcher_for_default_draw->vertex_buffer,
+				batcher_for_default_draw->last_vertice_buffer_index,
+
+				*region->world_position_x,
+				*region->world_position_y,
+
+				*region->size_x,
+				*region->size_y,
+
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+		}
 	}
 	else
 	{
@@ -519,6 +664,27 @@ void ECustomData::draw()
 	{
 		clickable_region->draw();
 	}
+}
+
+void ECustomData::update(float _d)
+{
+	for (data_action_pointer action_on_update_pointer : actions_on_update)
+	{
+		if ((action_on_update_pointer != nullptr) && (parent_entity != nullptr))
+		{
+			action_on_update_pointer(parent_entity, this, _d);
+		}
+	}
+
+	for (EClickableRegion* cl_region : clickable_region_list)
+	{
+		if (cl_region != nullptr)
+		{
+			cl_region->update(_d);
+		}
+	}
+
+
 }
 
 void ECustomData::translate(float _x, float _y, float _z)
