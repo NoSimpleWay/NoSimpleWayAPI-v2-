@@ -19,6 +19,7 @@ namespace NS_EGraphicCore
 	unsigned int					texture[32];
 	ETextureAtlas* default_texture_atlas;
 	unsigned char* image_data;
+	unsigned char* zalupa;
 	int							texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
 	std::vector<ETextureGabarite*>	texture_gabarites_list;
 	float						delta_time;
@@ -546,20 +547,32 @@ void NS_EGraphicCore::load_texture(char const* _path, int _id)
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	// set texture filtering parameters
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 	// load image, create texture and generate mipmaps
 	stbi_set_flip_vertically_on_load(true); // tell stb_image.h to flip loaded texture's on the y-axis.
 
 	//ifstream (_path)
 
 	image_data = stbi_load(_path, &texture_loader_width, &texture_loader_height, &nrChannels, STBI_rgb_alpha);
+	
+	//std::string sss = std::to_string(*image_data);
+	//EInputCore::logger_simple_success(sss);
+	
+	
+
 	if (image_data)
 	{
+		//for (int i = 0; i < texture_loader_width * texture_loader_height * 4; i++)
+		//{
+		//	image_data[i] = rand() % 256;
+		//}
+
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, texture_loader_width, texture_loader_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image_data);
 		//glGenerateMipmap(GL_TEXTURE_2D);
 
 		//cout << "loaded texture W:" << width << " H:" << height << endl;
+
 
 		last_texture_height = texture_loader_height;
 		last_texture_width = texture_loader_width;
@@ -570,12 +583,84 @@ void NS_EGraphicCore::load_texture(char const* _path, int _id)
 	}
 	else
 	{
-		image_data = stbi_load("data/textures/ERROR.png", &texture_loader_width, &texture_loader_height, &nrChannels, STBI_rgb_alpha);
-		if (image_data)
+		//image_data = stbi_load("data/textures/ERROR.png", &texture_loader_width, &texture_loader_height, &nrChannels, STBI_rgb_alpha);
+		
+		
+		last_texture_height = 100;
+		last_texture_width = 100;
+
+		texture_loader_width = 3;
+		texture_loader_height = 3;
+		//std::string error_string = "xxxÿxxxÿxxxÿxxxÿxxxÿxxxÿxxxÿxxxÿxxxÿxxxÿxxxÿxxxÿxxxÿxxxÿ   ÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ   ÿ";
+
+		//unsigned char zzz = 97;
+
+		int image_size = texture_loader_width * texture_loader_height * 4;
+		zalupa = new unsigned char[image_size]();
+
+		zalupa[0] = 0;
+		zalupa[1] = 0;
+		zalupa[2] = 0;
+		zalupa[3] = 255;
+
+		zalupa[4] = 255;
+		zalupa[5] = 0;
+		zalupa[6] = 255;
+		zalupa[7] = 255;
+
+		zalupa[8] = 0;
+		zalupa[9] = 0;
+		zalupa[10] = 0;
+		zalupa[11] = 255;
+
+
+
+		zalupa[12] = 255;
+		zalupa[13] = 0;
+		zalupa[14] = 255;
+		zalupa[15] = 255;
+
+		zalupa[16] = 0;
+		zalupa[17] = 0;
+		zalupa[18] = 0;
+		zalupa[19] = 255;
+
+		zalupa[20] = 255;
+		zalupa[21] = 0;
+		zalupa[22] = 255;
+		zalupa[23] = 255;
+
+
+
+		zalupa[24] = 0;
+		zalupa[25] = 0;
+		zalupa[26] = 0;
+		zalupa[27] = 255;
+
+		zalupa[28] = 255;
+		zalupa[29] = 0;
+		zalupa[30] = 255;
+		zalupa[31] = 255;
+
+		zalupa[32] = 0;
+		zalupa[33] = 0;
+		zalupa[34] = 0;
+		zalupa[35] = 255;
+
+		/*for (int i = 0; i < texture_loader_width * texture_loader_height; i++)
 		{
-			glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, texture_loader_width, texture_loader_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image_data);
-			last_texture_height = texture_loader_height;
-			last_texture_width = texture_loader_width;
+			zalupa[size_t(i + 0)] = 0;
+			zalupa[size_t(i + 1)] = 0;
+			zalupa[size_t(i + 2)] = 0;
+			zalupa[size_t(i + 3)] = 255;
+		}*/
+		//zalupa[0] = 0;
+
+		//std::cout << zalupa << std::endl;
+
+		if (zalupa)
+		{
+			glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, texture_loader_width, texture_loader_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, zalupa);
 		}
 		//cout << red << "Failed to load texture " << yellow << "(" << _path << ")" << green << endl;
 		std::cout << "Failed to load texture " << "(" << _path << ")" << std::endl;
@@ -1098,6 +1183,8 @@ void NS_ERenderCollection::call_render_textured_sprite(ESprite* _sprite)
 	{
 		//_sprite->master_sprite_layer->vertex_buffer = new float[100];
 
+		NS_EGraphicCore::set_active_color(_sprite->sprite_color);
+
 		NS_ERenderCollection::add_data_to_vertex_buffer_sprite
 		(
 			_sprite->master_sprite_layer->vertex_buffer,
@@ -1168,9 +1255,9 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 	//rightup		2		2 
 	//
 
-	for (int i = _sprite_layer->sprite_list.size(); i < 10'000; i++)
+	for (int i = _sprite_layer->sprite_frame_list.at(0)->sprite_list.size(); i < 10'000; i++)
 	{
-		_sprite_layer->sprite_list.push_back(new ESprite());
+		_sprite_layer->sprite_frame_list.at(0)->sprite_list.push_back(new ESprite());
 	}
 
 	for (unsigned int seg_x = 0; seg_x < 3; seg_x++)
@@ -1220,7 +1307,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 			for (int xx = 0; xx <= count_of_generations_x; xx++)//base_sprite_fragment_offset_x = full_mid_segment_size_x - NS_ERenderCollection::border_left_size;
 			{
 				
-				current_sprite = _sprite_layer->sprite_list.at(current_sprite_id);
+				current_sprite = _sprite_layer->sprite_frame_list.at(0)->sprite_list.at(current_sprite_id);
 				current_sprite->reset_sprite();
 				for (int yy = 0; yy <= count_of_generations_y; yy++)
 				{
@@ -1363,7 +1450,8 @@ void ESpriteLayer::modify_buffer_position_for_sprite_layer(float _x, float _y, f
 			vertex_buffer[i + k * 8 + 1] += _y;
 	}
 
-	for (ESprite* spr : sprite_list)
+	for (ESpriteFrame* frame:sprite_frame_list)
+	for (ESprite* spr : frame->sprite_list)
 	{
 		*spr->offset_x += _x;
 		*spr->offset_y += _y;
@@ -1376,7 +1464,7 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 
 	if
 	(
-		(!sprite_list.empty())
+		(!sprite_frame_list.empty())
 		&&
 		(
 			(batcher != nullptr)
@@ -1387,10 +1475,17 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 		*last_buffer_id = 0;
 		
 		
-		vertex_buffer = new float[sprite_list.size() * batcher->gl_vertex_attribute_total_count * 4];
+		vertex_buffer = new float[sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4];
 
-		for (ESprite* spr : sprite_list)
+		for (ESpriteFrame* frame:sprite_frame_list)
+		//for (ESprite* spr : frame->sprite_list)
 		{
+			ESprite* spr = frame->sprite_list.at(*frame->active_frame_id);
+			//EInputCore::logger_param("frame id", *frame->active_frame_id);
+			//EInputCore::logger_param("texture name", spr->main_texture->get_name());
+			//EInputCore::logger_param("memory", spr);
+
+			//std::cout << "memory location" << spr << std::endl;
 			if ((spr != nullptr) && (spr->pointer_to_sprite_render != nullptr))
 			{
 				//EInputCore::logger_simple_success("try call render by pointer[" + std::to_string(_text) + "]");
@@ -1468,7 +1563,8 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 
 void ESpriteLayer::translate_sprites(float _x, float _y, float _z)
 {
-	for (ESprite* spr : sprite_list)
+	for (ESpriteFrame* frame : sprite_frame_list)
+	for (ESprite* spr : frame->sprite_list)
 	{
 		*spr->offset_x += _x;
 		*spr->offset_y += _y;

@@ -65,11 +65,15 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	=
 	*entity_button->parent_button_group->region->size_y;
 
+
+
 	*_entity->offset_x
 	=
 	*entity_button->parent_button_group->region->size_x
 	-
 	*entity_button->button_gabarite->size_x - 2.0f;
+
+
 
 	*_entity->world_position_x
 	=
@@ -81,51 +85,65 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	=
 	max(0.0f, *entity_button->parent_button_group->highest_point_y + 10.0f - *entity_button->parent_button_group->region->size_y);
 
-	if (EInputCore::mouse_button_state[GLFW_MOUSE_BUTTON_LEFT] != GLFW_RELEASE)
+	if (*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->catched_body)
 	{
-		*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y += EInputCore::MOUSE_SPEED_Y;
-		
-		*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
-		=
-		max(2.0f, *_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y);
-		
-		*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
-		=
-		min
-		(
-			*entity_button->parent_button_group->region->size_y
-			-
-			*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->size_y - 2.0f,
+		*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->sprite_layer_list.at(0)->sprite_frame_list.at(0)->active_frame_id = 1;
+
+		if (EInputCore::mouse_button_state[GLFW_MOUSE_BUTTON_LEFT] != GLFW_RELEASE)
+		{
+			*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y += EInputCore::MOUSE_SPEED_Y;
 
 			*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
-		);
+				=
+				max(2.0f, *_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y);
+
+			*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
+				=
+				min
+				(
+					*entity_button->parent_button_group->region->size_y
+					-
+					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->size_y - 2.0f,
+
+					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
+				);
 
 
-		*((EDataContainerScrollBar*)_custom_data->data_container)->value_pointer
-		=
-		round
-		(
-			* _entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
-			/
-			(
-				*entity_button->parent_button_group->region->size_y
-				-
-				*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->size_y
-			)
-			*
-			*((EDataContainerScrollBar*)_custom_data->data_container)->max_value * -1.0f
-		);
+			*((EDataContainerScrollBar*)_custom_data->data_container)->value_pointer
+				=
+				round
+				(
+					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
+					/
+					(
+						*entity_button->parent_button_group->region->size_y
+						-
+						*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->size_y
+						)
+					*
+					*((EDataContainerScrollBar*)_custom_data->data_container)->max_value * -1.0f
+				);
 
 
-		//*entity_button->parent_button_group->scroll_y += 100.0f * _d;
+			//*entity_button->parent_button_group->scroll_y += 100.0f * _d;
 
-		//entity_button->parent_button_group->realign_all_buttons();
-		entity_button->parent_button_group->calculate_all_world_positions();
-		
-		//_entity->calculate_all_world_positions();
+			//entity_button->parent_button_group->realign_all_buttons();
+			entity_button->parent_button_group->calculate_all_world_positions();
+
+			//_entity->calculate_all_world_positions();
+		}
+	}
+	else
+	{
+		*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->sprite_layer_list.at(0)->sprite_frame_list.at(0)->active_frame_id = 0;
 	}
 
+	//*_entity->world_position_x = *entity_button->parent_button_group->region->world_position_x + *entity_button->parent_button_group->region->size_x - *entity_button->button_gabarite->size_x;
+	//*_entity->world_position_y = *entity_button->parent_button_group->region->world_position_y;
+
+	_entity->custom_data_list.at(0)->clickable_region_list.at(0)->sprite_layer_list.at(0)->generate_vertex_buffer_for_sprite_layer("");
 	_entity->calculate_all_world_positions();
+	_entity->sprite_layer_generate_vertex_buffer();
 	//_entity->
 
 
@@ -431,7 +449,7 @@ void EClickableRegion::translate(float _x, float _y, float _z)
 
 void EClickableRegion::update(float _d)
 {
-	if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
+	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
 	{
 		check_all_catches();
 	}

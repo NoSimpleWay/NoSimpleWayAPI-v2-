@@ -122,6 +122,7 @@ namespace NS_EGraphicCore
 	extern unsigned int		texture[32];
 	extern ETextureAtlas* default_texture_atlas;
 	extern unsigned char* image_data;
+	extern unsigned char* zalupa;
 	extern int			texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
 	extern ETextureAtlas* default_texture_atlas;
 	extern float			delta_time;
@@ -372,10 +373,16 @@ public:
 	void reset_sprite();
 };
 
-class ESpriteLayer
+class ESpriteFrame
 {
 public:
 	std::vector<ESprite*> sprite_list;
+	int* active_frame_id = new int(0);
+};
+class ESpriteLayer
+{
+public:
+	std::vector<ESpriteFrame*> sprite_frame_list;
 
 	float* offset_x = new float(0.0f);
 	float* offset_y = new float(0.0f);

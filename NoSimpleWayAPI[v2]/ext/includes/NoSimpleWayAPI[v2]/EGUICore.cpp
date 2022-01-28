@@ -81,7 +81,7 @@ void EButtonGroup::draw()
 
 	//EInputCore::logger_simple_success("draw button group");
 
-	NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GRAY);
+	NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
 	if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
 	NS_ERenderCollection::add_data_to_vertex_buffer_rama
 	(
@@ -176,14 +176,38 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	EDataContainerScrollBar* data_container = new EDataContainerScrollBar();
 	custom_data->actions_on_update.push_back(EDataActionCollection::action_update_slider);
 
-	ERegionGabarite* button_gabarite = new ERegionGabarite(0.0f, 0.0f, 20.0f, 20.0f);
+	//sprite and sprite layer
+		ESpriteLayer* sprite_layer = new ESpriteLayer();
+		sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
+
+		ESpriteFrame* sprite_frame = new ESpriteFrame();
+		ESprite* sprite = new ESprite();
+
+		sprite_layer->sprite_frame_list.push_back(sprite_frame);
+
+		sprite->set_texture_gabarite(NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_head.png", NS_EGraphicCore::default_texture_atlas));
+		sprite->master_sprite_layer = sprite_layer;
+		sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite;
+		sprite_frame->sprite_list.push_back(sprite);
+
+		sprite = new ESprite();
+		sprite->set_texture_gabarite(NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_head_active.png", NS_EGraphicCore::default_texture_atlas));
+		sprite->master_sprite_layer = sprite_layer;
+		sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite;
+		sprite_frame->sprite_list.push_back(sprite);
+
+
+		
+	//
+
+	ERegionGabarite* button_gabarite = new ERegionGabarite(0.0f, 0.0f, 14.0f, 14.0f);
 
 	EClickableRegion* cl_region = new EClickableRegion();
-	ERegionGabarite* clickable_gabarite = new ERegionGabarite(0.0f, 0.0f, 20.0f, 10.0f);
+	ERegionGabarite* clickable_gabarite = new ERegionGabarite(0.0f, 0.0f, 14.0f, 14.0f);
 	cl_region->region = clickable_gabarite;
 	cl_region->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 	cl_region->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
-
+	cl_region->sprite_layer_list.push_back(sprite_layer);
 	//r_gabarite->
 	but->custom_data_list.push_back(custom_data);
 	but->button_gabarite = button_gabarite;
@@ -197,4 +221,14 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	data_container->value_pointer = _button_group->scroll_y;
 
 	_button_group->button_list.push_back(but);
+
+	*but->world_position_x = *_button_group->region->offset_x + *_button_group->region->size_x - *but->button_gabarite->size_x;
+	*but->world_position_y = *_button_group->region->offset_y;
+
+	but->calculate_all_world_positions();
+	but->sprite_layer_generate_vertex_buffer();
+	sprite_layer->generate_vertex_buffer_for_sprite_layer("scroll bar sprite layer");
+
+	EInputCore::logger_param("world x", *sprite->world_position_x);
+
 }

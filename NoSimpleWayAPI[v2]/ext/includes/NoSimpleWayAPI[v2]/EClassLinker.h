@@ -16,6 +16,7 @@ class ETextureAtlas;
 class ETextureGabarite;
 class ESprite;
 class ESpriteLayer;
+class ESpriteFrame;
 
 class EWindow;
 class EButtonGroupRow;

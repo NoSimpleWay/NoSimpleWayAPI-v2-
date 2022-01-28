@@ -80,7 +80,8 @@ void Entity::calculate_all_world_positions()
 		*s_layer->world_position_y = *world_position_y + *s_layer->offset_y;
 		*s_layer->world_position_z = *world_position_z + *s_layer->offset_z;
 
-		for (ESprite* spr : s_layer->sprite_list)
+		for (ESpriteFrame* frame : s_layer->sprite_frame_list)
+		for (ESprite* spr : frame->sprite_list)
 		if (spr != nullptr)
 		{
 			//EInputCore::logger_simple_success("^^^");
@@ -106,17 +107,18 @@ void Entity::calculate_all_world_positions()
 					for (ESpriteLayer* s_layer : c_region->sprite_layer_list)
 						if (s_layer != nullptr)
 						{
-							*s_layer->world_position_x = *world_position_x + *s_layer->offset_x;
-							*s_layer->world_position_y = *world_position_y + *s_layer->offset_y;
-							*s_layer->world_position_z = *world_position_z + *s_layer->offset_z;
+							*s_layer->world_position_x = *world_position_x + *c_region->region->offset_x + *s_layer->offset_x;
+							*s_layer->world_position_y = *world_position_y + *c_region->region->offset_y + *s_layer->offset_y;
+							*s_layer->world_position_z = *world_position_z + *c_region->region->offset_z + *s_layer->offset_z;
 
-							for (ESprite* spr : s_layer->sprite_list)
+							for (ESpriteFrame* frame : s_layer->sprite_frame_list)
+							for (ESprite* spr : frame->sprite_list)
 								if (spr != nullptr)
 								{
 									//EInputCore::logger_simple_success("^^^");
-									*spr->world_position_x = *world_position_x + *s_layer->offset_x + *spr->offset_x;
-									*spr->world_position_y = *world_position_y + *s_layer->offset_y + *spr->offset_y;
-									*spr->world_position_z = *world_position_z + *s_layer->offset_z + *spr->offset_z;
+									*spr->world_position_x = *world_position_x + *c_region->region->offset_x+ *s_layer->offset_x + *spr->offset_x;
+									*spr->world_position_y = *world_position_y + *c_region->region->offset_y+ *s_layer->offset_y + *spr->offset_y;
+									*spr->world_position_z = *world_position_z + *c_region->region->offset_z+ *s_layer->offset_z + *spr->offset_z;
 								}
 						}
 
@@ -126,7 +128,8 @@ void Entity::calculate_all_world_positions()
 						*c_region->internal_sprite_layer->world_position_y = *world_position_y + *c_region->internal_sprite_layer->offset_y;
 						*c_region->internal_sprite_layer->world_position_z = *world_position_z + *c_region->internal_sprite_layer->offset_z;
 
-						for (ESprite* spr : c_region->internal_sprite_layer->sprite_list)
+						for (ESpriteFrame* frame : c_region->internal_sprite_layer->sprite_frame_list)
+						for (ESprite* spr : frame->sprite_list)
 							if (spr != nullptr)
 							{
 								//EInputCore::logger_simple_success("^^^");
