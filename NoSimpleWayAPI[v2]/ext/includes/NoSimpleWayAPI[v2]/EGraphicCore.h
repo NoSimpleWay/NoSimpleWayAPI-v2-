@@ -253,7 +253,7 @@ public:
 	void set_transform_screen_size(float _size_x, float _size_y);
 	void set_transform_zoom(float _zoom);
 
-	static bool is_batcher_have_free_space(ERenderBatcher* _batcher);
+	static bool check_batcher(ERenderBatcher* _batcher);
 
 	GLsizei										gl_vertex_attribute_total_count = 0;
 };

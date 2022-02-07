@@ -137,14 +137,14 @@ EWindowMain::EWindowMain()
 	jc_entity->sprite_layer_generate_vertex_buffer();
 	
 	////////////////////////////////////////////////
-	jc_region_gabarite = new ERegionGabarite(200.0f, 200.0f, 500.0f, 100.0f);
+	jc_region_gabarite = new ERegionGabarite(200.0f, 200.0f, 1000.0f, 300.0f);
 	jc_button_group->region = jc_region_gabarite;
 	jc_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 	button_group_list.push_back(jc_button_group);
 
 	EButtonGroup::add_horizontal_scroll_bar(jc_button_group);
 	//button section
-	for (int i = 0; i < 50; i++)
+	for (int i = 0; i < 500; i++)
 	{
 		jc_custom_data = new ECustomData();
 		EDataContainerMessage* jc_data_container_message = new EDataContainerMessage();

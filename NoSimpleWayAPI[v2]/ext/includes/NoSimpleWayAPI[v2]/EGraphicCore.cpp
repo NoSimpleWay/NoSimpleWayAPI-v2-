@@ -236,9 +236,9 @@ void ERenderBatcher::set_transform_zoom(float _zoom)
 	transform_zoom = _zoom;
 }
 
-bool ERenderBatcher::is_batcher_have_free_space(ERenderBatcher* _batcher)
+bool ERenderBatcher::check_batcher(ERenderBatcher* _batcher)
 {
-	if (_batcher->last_vertice_buffer_index + _batcher->gl_vertex_attribute_total_count >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE)
+	if (_batcher->last_vertice_buffer_index + _batcher->gl_vertex_attribute_total_count * VERTICES_PER_SHAPE >= _batcher->gl_vertex_attribute_total_count * VERTICES_PER_SHAPE * MAX_SHAPES_COUNT)
 	{
 		_batcher->draw_call();
 		return false;
