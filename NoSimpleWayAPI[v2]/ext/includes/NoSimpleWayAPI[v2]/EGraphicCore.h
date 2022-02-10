@@ -371,6 +371,8 @@ public:
 	void sprite_calculate_uv();
 
 	void reset_sprite();
+
+	void sprite_set_world_positions(float _x, float _y, float _z);
 };
 
 class ESpriteFrame
@@ -404,6 +406,8 @@ public:
 	void generate_vertex_buffer_for_sprite_layer(std::string _text);
 
 	void transfer_vertex_buffer_to_batcher();
+
+	void sprite_layer_set_world_position(float _x, float _y, float _z);
 };
 
 

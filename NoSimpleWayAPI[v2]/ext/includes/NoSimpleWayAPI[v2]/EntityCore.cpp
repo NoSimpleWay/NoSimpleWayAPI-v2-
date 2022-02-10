@@ -68,82 +68,24 @@ void Entity::transfer_all_vertex_buffers_to_batcher()
 	
 }
 
-void Entity::calculate_all_world_positions()
+void Entity::set_world_position(float _x, float _y, float _z)
 {
-	
+	*world_position_x = _x;
+	*world_position_y = _y;
+	*world_position_z = _z;
+
 	if (!sprite_layer_list.empty())
 	for (ESpriteLayer* s_layer : sprite_layer_list)
 	if (s_layer != nullptr)
-	{
-		
-		*s_layer->world_position_x = *world_position_x + *s_layer->offset_x;
-		*s_layer->world_position_y = *world_position_y + *s_layer->offset_y;
-		*s_layer->world_position_z = *world_position_z + *s_layer->offset_z;
-
-		for (ESpriteFrame* frame : s_layer->sprite_frame_list)
-		for (ESprite* spr : frame->sprite_list)
-		if (spr != nullptr)
-		{
-			//EInputCore::logger_simple_success("^^^");
-			*spr->world_position_x = *world_position_x + *s_layer->offset_x + *spr->offset_x;
-			*spr->world_position_y = *world_position_y + *s_layer->offset_y + *spr->offset_y;
-			*spr->world_position_z = *world_position_z + *s_layer->offset_z + *spr->offset_z;
-
-			//EInputCore::logger_simple_success("^^^");
-			//EInputCore::logger_param("sprite x", *spr->world_position_x);
-			//EInputCore::logger_param("sprite y", *spr->world_position_y);
-		}
-	}
+	{s_layer->sprite_layer_set_world_position(*world_position_x, *world_position_y, *world_position_z);}
 
 	for (ECustomData* c_data : custom_data_list)
-		if (c_data != nullptr)
-		{
-			for (EClickableRegion* c_region : c_data->clickable_region_list)
-				if (c_region != nullptr)
-				{
-					*c_region->region->world_position_x = *world_position_x + *world_position_z + *c_region->region->offset_x;
-					*c_region->region->world_position_y = *world_position_x + *world_position_z + *c_region->region->offset_y;
-
-					for (ESpriteLayer* s_layer : c_region->sprite_layer_list)
-						if (s_layer != nullptr)
-						{
-							*s_layer->world_position_x = *world_position_x + *c_region->region->offset_x + *s_layer->offset_x;
-							*s_layer->world_position_y = *world_position_y + *c_region->region->offset_y + *s_layer->offset_y;
-							*s_layer->world_position_z = *world_position_z + *c_region->region->offset_z + *s_layer->offset_z;
-
-							for (ESpriteFrame* frame : s_layer->sprite_frame_list)
-							for (ESprite* spr : frame->sprite_list)
-								if (spr != nullptr)
-								{
-									//EInputCore::logger_simple_success("^^^");
-									*spr->world_position_x = *world_position_x + *c_region->region->offset_x+ *s_layer->offset_x + *spr->offset_x;
-									*spr->world_position_y = *world_position_y + *c_region->region->offset_y+ *s_layer->offset_y + *spr->offset_y;
-									*spr->world_position_z = *world_position_z + *c_region->region->offset_z+ *s_layer->offset_z + *spr->offset_z;
-								}
-						}
-
-					if (c_region->internal_sprite_layer != nullptr)
-					{
-						*c_region->internal_sprite_layer->world_position_x = *world_position_x + *c_region->internal_sprite_layer->offset_x;
-						*c_region->internal_sprite_layer->world_position_y = *world_position_y + *c_region->internal_sprite_layer->offset_y;
-						*c_region->internal_sprite_layer->world_position_z = *world_position_z + *c_region->internal_sprite_layer->offset_z;
-
-						for (ESpriteFrame* frame : c_region->internal_sprite_layer->sprite_frame_list)
-						for (ESprite* spr : frame->sprite_list)
-							if (spr != nullptr)
-							{
-								//EInputCore::logger_simple_success("^^^");
-								*spr->world_position_x = *world_position_x + *c_region->internal_sprite_layer->offset_x + *spr->offset_x;
-								*spr->world_position_y = *world_position_y + *c_region->internal_sprite_layer->offset_y + *spr->offset_y;
-								*spr->world_position_z = *world_position_z + *c_region->internal_sprite_layer->offset_z + *spr->offset_z;
-							}
-					}
-
-					*c_region->region->world_position_x = *world_position_x + *c_region->region->offset_x;
-					*c_region->region->world_position_y = *world_position_y + *c_region->region->offset_y;
-
-				}
-		}
+	if (c_data != nullptr)
+	{
+		for (EClickableRegion* clickable_region : c_data->clickable_region_list)
+		if (clickable_region != nullptr)
+		{clickable_region->clickable_region_set_world_positions(*world_position_x, *world_position_y, *world_position_z);}
+	}
 }
 
 void Entity::modify_buffer_translate_for_entity(float _x, float _y, float _z)

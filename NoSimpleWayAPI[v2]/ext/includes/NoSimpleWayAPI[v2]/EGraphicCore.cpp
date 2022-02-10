@@ -1561,6 +1561,23 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 	}
 }
 
+void ESpriteLayer::sprite_layer_set_world_position(float _x, float _y, float _z)
+{
+
+	*world_position_x =_x + *offset_x;
+	*world_position_y =_y + *offset_y;
+	*world_position_z =_z + *offset_z;
+
+	for (ESpriteFrame* frame : sprite_frame_list)
+		for (ESprite* spr : frame->sprite_list)
+			if (spr != nullptr)
+			{
+				*spr->world_position_x = *world_position_x + *spr->offset_x;
+				*spr->world_position_y = *world_position_y + *spr->offset_y;
+				*spr->world_position_z = *world_position_z + *spr->offset_z;
+			}
+}
+
 void ESpriteLayer::translate_sprites(float _x, float _y, float _z)
 {
 	for (ESpriteFrame* frame : sprite_frame_list)
@@ -1678,6 +1695,13 @@ void ESprite::reset_sprite()
 
 	*size_x				= (0.0f);
 	*size_y				= (0.0f);
+}
+
+void ESprite::sprite_set_world_positions(float _x, float _y, float _z)
+{
+	*world_position_x = _x + *offset_x;
+	*world_position_y = _y + *offset_y;
+	*world_position_z = _z + *offset_z;
 }
 
 EColor_4 const (&NS_EColorUtils::choose_from_two(const EColor_4(&_color1)[4], const EColor_4(&_color2)[4], bool _condition))[4]

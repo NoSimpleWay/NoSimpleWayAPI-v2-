@@ -91,7 +91,7 @@ enum ClickableRegionSides
 	CRS_SIDE_UP,
 	CRS_SIDE_MID,
 	CRS_SIDE_BODY,
-	CRS_SIDE_LAST_ELEMENT
+	_CRS_SIDE_LAST_ELEMENT
 };
 class EClickableRegion
 {
@@ -122,7 +122,7 @@ public:
 	bool* any_visual_changes	= new bool (true);
 
 	//bool* editable_borders		= new bool(false);
-	bool* can_catch_side		= new bool[CRS_SIDE_BODY]{false};
+	bool* can_catch_side		= new bool[_CRS_SIDE_LAST_ELEMENT]{false};
 
 	float* catch_offset_x		= new float (0.0f);
 	float* catch_offset_y		= new float (0.0f);
@@ -140,6 +140,7 @@ public:
 	void draw();
 
 	void redraw_text();
+	void clickable_region_set_world_positions(float _x, float _y, float _z);
 	ERenderBatcher* batcher_for_default_draw;
 };
 

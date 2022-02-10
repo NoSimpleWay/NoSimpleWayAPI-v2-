@@ -95,7 +95,7 @@ EWindowMain::EWindowMain()
 	*jc_entity->offset_y = 40.0f;
 	*jc_entity->world_position_x = 30.0f;
 	*jc_entity->world_position_y = 40.0f;
-	//cluster_array[0][0]->entity_list.push_back(jc_entity);
+	cluster_array[0][0]->entity_list.push_back(jc_entity);
 
 	jc_sprite_frame->sprite_list.push_back(jc_sprite);
 
@@ -108,6 +108,12 @@ EWindowMain::EWindowMain()
 	jc_clickable_region->region = jc_region_gabarite;
 	jc_clickable_region->parent_entity = jc_entity;
 	jc_clickable_region->parent_custom_data = jc_custom_data;
+
+	jc_clickable_region->can_catch_side[0] = true;
+	jc_clickable_region->can_catch_side[1] = true;
+	jc_clickable_region->can_catch_side[2] = true;
+	jc_clickable_region->can_catch_side[3] = true;
+	jc_clickable_region->can_catch_side[4] = true;
 
 	jc_clickable_region->text_area = jc_text_area;
 	jc_clickable_region->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
@@ -129,7 +135,7 @@ EWindowMain::EWindowMain()
 	//
 	
 	//jc_clickable_region->init_internal_sprite_layer();
-	jc_entity->calculate_all_world_positions();
+	jc_entity->set_world_position(*jc_entity->offset_x, *jc_entity->offset_y, *jc_entity->offset_z);
 
 	jc_text_area->generate_rows();
 	jc_text_area->generate_text();
@@ -180,7 +186,7 @@ EWindowMain::EWindowMain()
 	}
 
 	jc_button_group->realign_all_buttons();
-	jc_button_group->calculate_all_world_positions();
+	jc_button_group->set_world_position();
 	
 	
 	

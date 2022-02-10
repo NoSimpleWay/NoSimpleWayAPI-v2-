@@ -110,7 +110,7 @@ void EButtonGroup::draw()
 	glDisable(GL_SCISSOR_TEST);
 }
 
-void EButtonGroup::calculate_all_world_positions()
+void EButtonGroup::set_world_position()
 {
 	*region->world_position_x = *region->offset_x;
 	*region->world_position_y = *region->offset_y;
@@ -130,7 +130,7 @@ void EButtonGroup::calculate_all_world_positions()
 				*but->world_position_y = *region->world_position_y + *but->offset_y + *scroll_y;
 			}
 
-			but->calculate_all_world_positions();
+			but->set_world_position(*but->world_position_x, *but->world_position_y, *but->world_position_z);
 		}
 	}
 }
@@ -225,7 +225,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	*but->world_position_x = *_button_group->region->offset_x + *_button_group->region->size_x - *but->button_gabarite->size_x;
 	*but->world_position_y = *_button_group->region->offset_y;
 
-	but->calculate_all_world_positions();
+	but->set_world_position(*but->offset_x, *but->offset_y, *but->offset_z);
 	but->sprite_layer_generate_vertex_buffer();
 	sprite_layer->generate_vertex_buffer_for_sprite_layer("scroll bar sprite layer");
 

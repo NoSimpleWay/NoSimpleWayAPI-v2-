@@ -128,7 +128,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			//*entity_button->parent_button_group->scroll_y += 100.0f * _d;
 
 			//entity_button->parent_button_group->realign_all_buttons();
-			entity_button->parent_button_group->calculate_all_world_positions();
+			entity_button->parent_button_group->set_world_position();
 
 			//_entity->calculate_all_world_positions();
 		}
@@ -142,7 +142,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	//*_entity->world_position_y = *entity_button->parent_button_group->region->world_position_y;
 
 	_entity->custom_data_list.at(0)->clickable_region_list.at(0)->sprite_layer_list.at(0)->generate_vertex_buffer_for_sprite_layer("");
-	_entity->calculate_all_world_positions();
+	_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
 	_entity->sprite_layer_generate_vertex_buffer();
 	//_entity->
 
@@ -645,6 +645,19 @@ void EClickableRegion::redraw_text()
 	{
 		text_area->generate_rows();
 		text_area->generate_text();
+	}
+}
+
+void EClickableRegion::clickable_region_set_world_positions(float _x, float _y, float _z)
+{
+	*region->world_position_x = _x + *region->offset_x;
+	*region->world_position_y = _y + *region->offset_y;
+	*region->world_position_z = _z + *region->offset_z;
+
+	for (ESpriteLayer* s_layer : sprite_layer_list)
+	if (s_layer != nullptr)
+	{
+		s_layer->sprite_layer_set_world_position(*region->world_position_x, *region->world_position_y, *region->world_position_z);
 	}
 }
 
