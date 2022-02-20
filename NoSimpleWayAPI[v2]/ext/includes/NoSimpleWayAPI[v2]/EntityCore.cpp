@@ -159,4 +159,20 @@ Entity::~Entity()
 {
 }
 
+ESprite* Entity::get_sprite_from_data(unsigned int _data_id, unsigned int _layer_id, unsigned int _frame_id, unsigned int _frame)
+{
+	/*if
+	(
+		(!custom_data_list.empty())
+		&&
+		(!custom_data_list.at(_data_id)->clickable_region_list)
+	)*/
+	return nullptr;
+}
+
+ESpriteLayer* Entity::get_sprite_layer_by_id(unsigned int id)
+{
+	return nullptr;
+}
+
 

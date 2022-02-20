@@ -143,7 +143,7 @@ EWindowMain::EWindowMain()
 	jc_entity->sprite_layer_generate_vertex_buffer();
 	
 	////////////////////////////////////////////////
-	jc_region_gabarite = new ERegionGabarite(200.0f, 200.0f, 1000.0f, 300.0f);
+	jc_region_gabarite = new ERegionGabarite(200.0f, 200.0f, 1000.0f, 150.0f);
 	jc_button_group->region = jc_region_gabarite;
 	jc_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 	button_group_list.push_back(jc_button_group);
@@ -181,6 +181,8 @@ EWindowMain::EWindowMain()
 		jc_custom_data->parent_entity = jc_button;
 
 		jc_button_group->button_list.push_back(jc_button);
+
+		jc_sprite_layer
 
 		jc_button = new EntityButton();
 	}

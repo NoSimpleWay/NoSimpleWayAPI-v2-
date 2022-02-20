@@ -66,6 +66,9 @@ public:
 	void update(float _d);
 	Entity();
 	~Entity();
+
+	ESprite* get_sprite_from_data(unsigned int _data_id, unsigned int _layer_id, unsigned int _frame_id, unsigned int _frame);
+	ESpriteLayer* get_sprite_layer_by_id(unsigned int id);
 };
 /*********/
 

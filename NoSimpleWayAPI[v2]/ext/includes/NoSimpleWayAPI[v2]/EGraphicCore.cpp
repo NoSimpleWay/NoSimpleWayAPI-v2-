@@ -1578,6 +1578,18 @@ void ESpriteLayer::sprite_layer_set_world_position(float _x, float _y, float _z)
 			}
 }
 
+ESpriteLayer* ESpriteLayer::create_default_sprite_layer(ETextureGabarite* _texture)
+{
+	ESpriteLayer*	jc_sprite_layer	=	new ESpriteLayer();
+	ESpriteFrame*	jc_sprite_frame	=	ESpriteFrame::create_default_sprite_frame();
+	ESprite*		jc_sprite		=	ESprite::create_default_sprite(_texture, jc_sprite_layer);
+
+	jc_sprite_layer->sprite_frame_list.push_back(jc_sprite_frame);
+	jc_sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
+
+	return jc_sprite_layer;
+}
+
 void ESpriteLayer::translate_sprites(float _x, float _y, float _z)
 {
 	for (ESpriteFrame* frame : sprite_frame_list)
@@ -1704,6 +1716,19 @@ void ESprite::sprite_set_world_positions(float _x, float _y, float _z)
 	*world_position_z = _z + *offset_z;
 }
 
+ESprite* ESprite::create_default_sprite(ETextureGabarite* _gabarite, ESpriteLayer* _sprite_layer)
+{
+	ESprite* jc_sprite = new ESprite();
+	jc_sprite->set_texture_gabarite(NS_DefaultGabarites::texture_gabarite_gudron);
+	jc_sprite->master_sprite_layer = _sprite_layer;
+
+	return jc_sprite;
+}
+
+//void ESprite::create_default_sprite_layer()
+//{
+//}
+
 EColor_4 const (&NS_EColorUtils::choose_from_two(const EColor_4(&_color1)[4], const EColor_4(&_color2)[4], bool _condition))[4]
 {
 	if (_condition)
@@ -1714,3 +1739,7 @@ EColor_4 const (&NS_EColorUtils::choose_from_two(const EColor_4(&_color1)[4], co
 	return _color2;
 }
 
+ESpriteFrame* ESpriteFrame::create_default_sprite_frame()
+{
+	return new ESpriteFrame();
+}

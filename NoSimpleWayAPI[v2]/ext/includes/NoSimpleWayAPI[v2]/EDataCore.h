@@ -53,6 +53,9 @@ public:
 	void update(float _d);
 	void translate(float _x, float _y, float _z);
 
+	ESprite*		get_sprite_by_id		(unsigned int _clickable_region_id, unsigned int _sprite_layer_id, unsigned int _frame_id, unsigned int _frame);
+	ESpriteLayer*	get_sprite_layer_by_id	(unsigned int _clickable_region_id, unsigned int _sprite_layer_id);
+	ESpriteFrame*	get_sprite_frame_by_id	(unsigned int _clickable_region_id, unsigned int _sprite_layer_id, unsigned int _frame_id);
 	//std::vector<void (*)(Entity*, ECustomData*)> data_actions_list;
 };
 

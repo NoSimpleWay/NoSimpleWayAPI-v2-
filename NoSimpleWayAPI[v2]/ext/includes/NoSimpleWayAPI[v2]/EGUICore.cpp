@@ -163,7 +163,7 @@ void EButtonGroup::realign_all_buttons()
 			*but->offset_y = 10.0f;
 		}
 
-		*highest_point_y = max(*highest_point_y, *but->offset_y + *but->button_gabarite->size_y);
+		*highest_point_y = max(*highest_point_y, *but->offset_y + *but->button_gabarite->size_y + 10.0f);
 		//EInputCore::logger_param("highest point y", *highest_point_y);
 		prev_button = but;
 	}

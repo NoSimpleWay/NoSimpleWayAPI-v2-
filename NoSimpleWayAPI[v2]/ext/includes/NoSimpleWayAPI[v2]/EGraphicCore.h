@@ -373,6 +373,10 @@ public:
 	void reset_sprite();
 
 	void sprite_set_world_positions(float _x, float _y, float _z);
+
+	static ESprite* create_default_sprite(ETextureGabarite* _gabarite, ESpriteLayer* _sprite_layer);
+
+	
 };
 
 class ESpriteFrame
@@ -380,6 +384,8 @@ class ESpriteFrame
 public:
 	std::vector<ESprite*> sprite_list;
 	int* active_frame_id = new int(0);
+
+	static ESpriteFrame* create_default_sprite_frame();
 };
 class ESpriteLayer
 {
@@ -408,6 +414,8 @@ public:
 	void transfer_vertex_buffer_to_batcher();
 
 	void sprite_layer_set_world_position(float _x, float _y, float _z);
+
+	static ESpriteLayer* create_default_sprite_layer(ETextureGabarite* _texture);
 };
 
 
