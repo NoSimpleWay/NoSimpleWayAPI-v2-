@@ -68,9 +68,9 @@ EWindowMain::EWindowMain()
 	ERegionGabarite*	jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 100.0f, 200.0f);
 	EClickableRegion*	jc_clickable_region = new EClickableRegion();
 	ETextArea*			jc_text_area = new ETextArea();
-	EButtonGroup*		jc_button_group = new EButtonGroup();
-	EButtonGroupRow*	jc_button_group_row = new EButtonGroupRow();
-	EntityButton*		jc_button = new EntityButton();
+	EButtonGroup*		jc_button_group;
+	EButtonGroupRow*	jc_button_group_row;
+	EntityButton*		jc_button;
 	ESpriteFrame*		jc_sprite_frame = new ESpriteFrame();
 	
 
@@ -140,18 +140,39 @@ EWindowMain::EWindowMain()
 	jc_text_area->generate_rows();
 	jc_text_area->generate_text();
 
-	jc_entity->sprite_layer_generate_vertex_buffer();
+	jc_entity->generate_vertex_buffer_for_all_sprite_layers();
 	
+	std::string random_texture_list[5] =
+	{
+		"Chaos_Orb_inventory_icon",
+		"Orb_of_Horizons_inventory_icon",
+		"Orb_of_Regret_inventory_icon",
+		"Orb_of_Scouring_inventory_icon",
+		"Orb_of_Transmutation_inventory_icon"
+	};
+
 	////////////////////////////////////////////////
-	jc_region_gabarite = new ERegionGabarite(200.0f, 200.0f, 1000.0f, 150.0f);
-	jc_button_group->region = jc_region_gabarite;
+	//main button group
+	jc_button_group = new EButtonGroup(); button_group_list.push_back(jc_button_group);
+	jc_region_gabarite = new ERegionGabarite(200.0f, 200.0f, 1200.0f, 500.0f); jc_button_group->region = jc_region_gabarite;
+	
+	jc_button_group_row = new EButtonGroupRow();
+	jc_region_gabarite = new ERegionGabarite(10.0f, 10.0f, 1200.0f, 250.0f); jc_button_group_row->gabarite = jc_region_gabarite;
+
 	jc_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
-	button_group_list.push_back(jc_button_group);
+	jc_button_group->group_row_list.push_back(jc_button_group_row);
+	
+	jc_button_group = new EButtonGroup(); jc_button_group_row->button_group_list.push_back(jc_button_group);
+	jc_region_gabarite = new ERegionGabarite(10.0f, 10.0f, 100.0f, 150.0f); jc_button_group->region = jc_region_gabarite;
+	jc_button_group->parent_group_row = jc_button_group_row;
+
+	jc_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 
 	EButtonGroup::add_horizontal_scroll_bar(jc_button_group);
 	//button section
-	for (int i = 0; i < 500; i++)
+	for (int i = 0; i < 10; i++)
 	{
+		jc_button = new EntityButton();
 		jc_custom_data = new ECustomData();
 		EDataContainerMessage* jc_data_container_message = new EDataContainerMessage();
 		*jc_data_container_message->message = "123";
@@ -161,11 +182,11 @@ EWindowMain::EWindowMain()
 		jc_button->custom_data_list.push_back(jc_custom_data);
 		*jc_button->offset_x = 10.0f;
 		*jc_button->offset_y = 10.0f;
-		
+
 		*jc_button->fixed_position = false;
 
-		
-		jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 40.0f, 40.0f);
+
+		jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 80.0f, 20.0f);
 		jc_button->button_gabarite = jc_region_gabarite;
 		jc_clickable_region = new EClickableRegion();
 
@@ -182,13 +203,99 @@ EWindowMain::EWindowMain()
 
 		jc_button_group->button_list.push_back(jc_button);
 
-		jc_sprite_layer
+		jc_sprite_layer = ESpriteLayer::create_default_sprite_layer(NS_EGraphicCore::put_texture_to_atlas("data/textures/button_bg.png", NS_EGraphicCore::default_texture_atlas));
+		jc_button->sprite_layer_list.push_back(jc_sprite_layer);
+		*jc_sprite_layer->sprite_frame_list[0]->sprite_list[0]->size_x = 70.0f;
+		*jc_sprite_layer->sprite_frame_list[0]->sprite_list[0]->size_y = 20.0f;
+		jc_sprite_layer->sprite_frame_list[0]->sprite_list[0]->sprite_calculate_uv();
 
-		jc_button = new EntityButton();
+
+
+		jc_text_area = new ETextArea();
+		jc_clickable_region->text_area = jc_text_area;
+		*jc_text_area->stored_text = "ABC\\nLOL\\nKEK";
+		jc_text_area->font = EFont::font_list.at(0);
+
+		jc_sprite_layer_for_text = new ESpriteLayer();
+		jc_text_area->region_gabarite = jc_region_gabarite;
+		jc_text_area->sprite_layer = jc_sprite_layer_for_text;
+		jc_text_area->master_clickable_region = jc_clickable_region;
+		jc_sprite_layer_for_text->batcher = NS_EGraphicCore::default_batcher_for_drawing;
+
+		jc_text_area->generate_rows();
+		jc_text_area->generate_text();
+
+		jc_button->sprite_layer_list.push_back(jc_sprite_layer);
+
+		jc_button->set_world_position(*jc_button->offset_x, *jc_button->offset_y, *jc_button->offset_z);
+		jc_button->generate_vertex_buffer_for_all_sprite_layers();
 	}
 
-	jc_button_group->realign_all_buttons();
-	jc_button_group->set_world_position();
+	for (int k = 0; k < 1; k++)
+	{
+		//sub button group [level 1]
+	
+
+			jc_button_group = new EButtonGroup(); jc_button_group_row->button_group_list.push_back(jc_button_group);
+			jc_region_gabarite = new ERegionGabarite(10.0f, 10.0f, 600.0f, 150.0f); jc_button_group->region = jc_region_gabarite;
+			jc_button_group->parent_group_row = jc_button_group_row;
+
+			jc_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
+
+			EButtonGroup::add_horizontal_scroll_bar(jc_button_group);
+		//button section
+		for (int i = 0; i < 60; i++)
+		{
+			jc_button = new EntityButton();
+			jc_custom_data = new ECustomData();
+			EDataContainerMessage* jc_data_container_message = new EDataContainerMessage();
+			*jc_data_container_message->message = "123";
+			//jc_custom_data->action
+
+			jc_custom_data->data_container = jc_data_container_message;
+			jc_button->custom_data_list.push_back(jc_custom_data);
+			*jc_button->offset_x = 10.0f;
+			*jc_button->offset_y = 10.0f;
+
+			*jc_button->fixed_position = false;
+
+
+			jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 40.0f, 40.0f);
+			jc_button->button_gabarite = jc_region_gabarite;
+			jc_clickable_region = new EClickableRegion();
+
+			jc_clickable_region->region = jc_region_gabarite;
+			jc_clickable_region->parent_entity = jc_button;
+			jc_clickable_region->parent_custom_data = jc_custom_data;
+			jc_clickable_region->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
+			jc_clickable_region->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
+
+			jc_clickable_region->actions_on_click_list.push_back(&EDataActionCollection::action_log_text);
+
+			jc_custom_data->clickable_region_list.push_back(jc_clickable_region);
+			jc_custom_data->parent_entity = jc_button;
+
+			jc_button_group->button_list.push_back(jc_button);
+
+			jc_sprite_layer = ESpriteLayer::create_default_sprite_layer(NS_EGraphicCore::put_texture_to_atlas("data/textures/button_bg.png", NS_EGraphicCore::default_texture_atlas));
+			jc_button->sprite_layer_list.push_back(jc_sprite_layer);
+
+			jc_sprite_layer = ESpriteLayer::create_default_sprite_layer(NS_EGraphicCore::put_texture_to_atlas("data/textures/" + random_texture_list[rand() % 5] + ".png", NS_EGraphicCore::default_texture_atlas));
+			*jc_sprite_layer->sprite_frame_list[0]->sprite_list[0]->size_x = 40.0f;
+			*jc_sprite_layer->sprite_frame_list[0]->sprite_list[0]->size_y = 40.0f;
+			jc_sprite_layer->sprite_frame_list[0]->sprite_list[0]->sprite_calculate_uv();
+
+			jc_button->sprite_layer_list.push_back(jc_sprite_layer);
+
+			jc_button->set_world_position(*jc_button->offset_x, *jc_button->offset_y, *jc_button->offset_z);
+			jc_button->generate_vertex_buffer_for_all_sprite_layers();
+		}
+	}
+
+	
+
+	button_group_list[0]->realign_all_buttons();
+	button_group_list[0]->set_world_position_and_redraw();
 	
 	
 	

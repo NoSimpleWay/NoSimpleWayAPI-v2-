@@ -58,7 +58,7 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 
 void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	static EntityButton* entity_button = ((EntityButton*)_entity);
+	EntityButton* entity_button = ((EntityButton*)_entity);
 	EDataContainerScrollBar* data_bar = ((EDataContainerScrollBar*)_custom_data->data_container);
 
 	//EInputCore::logger_simple_success("@");
@@ -75,11 +75,11 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	=
 	*_entity->offset_x
 	+
-	*entity_button->parent_button_group->region->offset_x;
+	*entity_button->parent_button_group->region->world_position_x;
 
 	*data_bar->max_value
 	=
-	max(0.0f, *entity_button->parent_button_group->highest_point_y + 10.0f - *entity_button->parent_button_group->region->size_y);
+	max(0.0f, *entity_button->parent_button_group->highest_point_y - *entity_button->parent_button_group->region->size_y);
 
 	if (*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->catched_body)
 	{
@@ -99,8 +99,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				(
 					*entity_button->parent_button_group->region->size_y
 					-
-					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->size_y - 2.0f,
-
+					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->size_y,
 					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
 				);
 
@@ -124,7 +123,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			//*entity_button->parent_button_group->scroll_y += 100.0f * _d;
 
 			entity_button->parent_button_group->realign_all_buttons();
-			entity_button->parent_button_group->set_world_position();
+			entity_button->parent_button_group->set_world_position_and_redraw();
 
 			//_entity->calculate_all_world_positions();
 		}
@@ -141,7 +140,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	_custom_data->get_sprite_layer_by_id(0, 0)->generate_vertex_buffer_for_sprite_layer("");
 	//_custom_data->clickable_region_list.at(0)->sprite_layer_list.at(0)->generate_vertex_buffer_for_sprite_layer("");
 	_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
-	_entity->sprite_layer_generate_vertex_buffer();
+	_entity->generate_vertex_buffer_for_all_sprite_layers();
 	//_entity->
 
 

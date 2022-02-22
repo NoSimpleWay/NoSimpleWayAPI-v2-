@@ -56,6 +56,8 @@ void EButtonGroup::update(float _d)
 	//clickable_region->update(_d);
 
 	//subgroup
+	//EButtonGroup* prev_group = nullptr;
+
 	for (EButtonGroupRow* row : group_row_list)
 	if (row != nullptr)
 	{
@@ -65,8 +67,8 @@ void EButtonGroup::update(float _d)
 		}
 	}
 
-	//final button groun, nt subgroup
-	if (group_row_list.empty())
+	//final button groun, not subgroup
+	//if (group_row_list.empty())
 	{
 		for (EntityButton* but : button_list)
 		{
@@ -99,23 +101,65 @@ void EButtonGroup::draw()
 	glEnable(GL_SCISSOR_TEST);
 	glScissor(*region->world_position_x, *region->world_position_y, *region->size_x, *region->size_y);
 
-	if (group_row_list.empty())
+	for (EntityButton* but : button_list)
+	{but->draw();}
+
+	for (EButtonGroupRow* row : group_row_list)
 	{
-		for (EntityButton* but : button_list)
-		{but->draw();}
+		for (EButtonGroup* group : row->button_group_list)
+		{
+			group->draw();
+		}
 	}
+
 
 	batcher_for_default_draw->draw_call();
 
 	glDisable(GL_SCISSOR_TEST);
 }
 
-void EButtonGroup::set_world_position()
+void EButtonGroup::set_world_position_and_redraw()
 {
-	*region->world_position_x = *region->offset_x;
-	*region->world_position_y = *region->offset_y;
+	if (parent_group_row == nullptr)
+	{
+		*region->world_position_x = *region->offset_x;
+		*region->world_position_y = *region->offset_y;
+	}
 
-	if (group_row_list.empty())
+	
+
+	
+
+	for (EButtonGroupRow* row:group_row_list)
+	{
+		EButtonGroup* prev_group = nullptr;
+
+		*row->gabarite->world_position_x = *region->world_position_x + *row->gabarite->offset_x;
+		*row->gabarite->world_position_y = *region->world_position_y + *row->gabarite->offset_y;
+		*row->gabarite->world_position_z = *region->world_position_z + *row->gabarite->offset_z;
+
+		for (EButtonGroup* group : row->button_group_list)
+		{
+			if (prev_group != nullptr)
+			{
+				*group->region->offset_x = *prev_group->region->offset_x + *prev_group->region->size_x;
+			}
+			else
+			{
+				prev_group = group; *group->region->offset_x = 0.0f;
+			}
+
+			*group->region->world_position_x = *row->gabarite->world_position_x + *group->region->offset_x;
+			*group->region->world_position_y = *row->gabarite->world_position_y + *group->region->offset_y;
+			*group->region->world_position_z = *row->gabarite->world_position_z + *group->region->offset_z;
+
+			
+
+			group->set_world_position_and_redraw();
+		}
+	}
+
+	//if (group_row_list.empty())
 	{
 		for (EntityButton* but : button_list)
 		{
@@ -131,8 +175,12 @@ void EButtonGroup::set_world_position()
 			}
 
 			but->set_world_position(*but->world_position_x, *but->world_position_y, *but->world_position_z);
+			but->generate_vertex_buffer_for_all_sprite_layers();
 		}
 	}
+	
+
+
 }
 
 void EButtonGroup::realign_all_buttons()
@@ -166,6 +214,17 @@ void EButtonGroup::realign_all_buttons()
 		*highest_point_y = max(*highest_point_y, *but->offset_y + *but->button_gabarite->size_y + 10.0f);
 		//EInputCore::logger_param("highest point y", *highest_point_y);
 		prev_button = but;
+	}
+
+	if (!group_row_list.empty())
+	{
+		for (EButtonGroupRow* row : group_row_list)
+		{
+			for (EButtonGroup* group : row->button_group_list)
+			{
+				group->realign_all_buttons();
+			}
+		}
 	}
 }
 
@@ -226,7 +285,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	*but->world_position_y = *_button_group->region->offset_y;
 
 	but->set_world_position(*but->offset_x, *but->offset_y, *but->offset_z);
-	but->sprite_layer_generate_vertex_buffer();
+	but->generate_vertex_buffer_for_all_sprite_layers();
 	sprite_layer->generate_vertex_buffer_for_sprite_layer("scroll bar sprite layer");
 
 	EInputCore::logger_param("world x", *sprite->world_position_x);

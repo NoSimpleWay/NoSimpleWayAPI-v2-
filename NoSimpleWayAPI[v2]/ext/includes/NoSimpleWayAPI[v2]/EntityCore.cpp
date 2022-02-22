@@ -14,7 +14,7 @@ void Entity::draw()
 	transfer_all_vertex_buffers_to_batcher();
 }
 
-void Entity::sprite_layer_generate_vertex_buffer()
+void Entity::generate_vertex_buffer_for_all_sprite_layers()
 {
 	if (!sprite_layer_list.empty())
 	{

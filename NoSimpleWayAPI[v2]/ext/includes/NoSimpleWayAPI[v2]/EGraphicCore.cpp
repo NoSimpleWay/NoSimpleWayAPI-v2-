@@ -776,8 +776,8 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 				NS_EGraphicCore::last_texture_height
 			);
 
-			EInputCore::logger_param("Generate new gabarite (full path)", new_gabarite->get_full_path());
-			EInputCore::logger_param("Generate new gabarite (name)", new_gabarite->get_name());
+			//EInputCore::logger_param("Generate new gabarite (full path)", new_gabarite->get_full_path());
+			//EInputCore::logger_param("Generate new gabarite (name)", new_gabarite->get_name());
 
 			NS_EGraphicCore::texture_gabarites_list.push_back(new_gabarite);
 		}
@@ -785,7 +785,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 	else
 	{
 		new_gabarite = duplicate_gabarite;
-		EInputCore::logger_param("Use existed gabarite", new_gabarite->get_full_path());
+		//EInputCore::logger_param("Use existed gabarite", new_gabarite->get_full_path());
 	}
 
 
@@ -1471,11 +1471,17 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 		)
 	)
 	{
-		if (*last_buffer_id > 0) { delete[] vertex_buffer; }
+		//if array is too small, delete and register new size
+		if (sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4 >= *last_buffer_id)
+		{
+			delete[] vertex_buffer; 
+			vertex_buffer = new float[sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4];
+		}
+
 		*last_buffer_id = 0;
 		
 		
-		vertex_buffer = new float[sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4];
+		
 
 		for (ESpriteFrame* frame:sprite_frame_list)
 		//for (ESprite* spr : frame->sprite_list)
@@ -1489,7 +1495,9 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 			if ((spr != nullptr) && (spr->pointer_to_sprite_render != nullptr))
 			{
 				//EInputCore::logger_simple_success("try call render by pointer[" + std::to_string(_text) + "]");
+				ERenderBatcher::check_batcher(batcher);
 				spr->pointer_to_sprite_render(spr);
+				//batcher->draw_call();
 			}
 			else
 			{
@@ -1546,7 +1554,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 
 			batcher->last_vertice_buffer_index += min(data_size, vertices_buffer_capacity);
 
-			if (batcher->last_vertice_buffer_index >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE)
+			if (batcher->last_vertice_buffer_index >= vertices_buffer_capacity)
 			{
 				batcher->draw_call();
 			}
@@ -1582,10 +1590,14 @@ ESpriteLayer* ESpriteLayer::create_default_sprite_layer(ETextureGabarite* _textu
 {
 	ESpriteLayer*	jc_sprite_layer	=	new ESpriteLayer();
 	ESpriteFrame*	jc_sprite_frame	=	ESpriteFrame::create_default_sprite_frame();
-	ESprite*		jc_sprite		=	ESprite::create_default_sprite(_texture, jc_sprite_layer);
+	ESprite*		jc_sprite		=	jc_sprite_frame->sprite_list[0];
 
 	jc_sprite_layer->sprite_frame_list.push_back(jc_sprite_frame);
 	jc_sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
+
+	jc_sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite;
+	jc_sprite->master_sprite_layer = jc_sprite_layer;
+	jc_sprite->set_texture_gabarite(_texture);
 
 	return jc_sprite_layer;
 }
@@ -1741,5 +1753,10 @@ EColor_4 const (&NS_EColorUtils::choose_from_two(const EColor_4(&_color1)[4], co
 
 ESpriteFrame* ESpriteFrame::create_default_sprite_frame()
 {
-	return new ESpriteFrame();
+	ESprite*		jc_sprite			= new ESprite();
+	ESpriteFrame*	jc_sprite_frame		= new ESpriteFrame();
+
+	jc_sprite_frame->sprite_list.push_back(jc_sprite);
+
+	return jc_sprite_frame;
 }

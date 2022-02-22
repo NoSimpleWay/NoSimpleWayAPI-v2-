@@ -103,7 +103,7 @@ public:
 
 	void update(float _d);
 	void draw();
-	void set_world_position();
+	void set_world_position_and_redraw();
 	void realign_all_buttons();
 
 	static void add_horizontal_scroll_bar(EButtonGroup* _button_group);
