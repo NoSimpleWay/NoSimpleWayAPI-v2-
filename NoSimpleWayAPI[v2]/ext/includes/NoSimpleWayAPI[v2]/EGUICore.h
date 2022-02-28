@@ -99,12 +99,17 @@ public:
 	float* scroll_x = new float(0.0f);
 	float* scroll_y = new float(0.0f);
 
-	float* highest_point_y = new float(0.0f);
+	float* highest_point_y = new float(100.0f);
+
+	float* higher_culling_line = new float(0.0f);
+	float* lower_culling_line = new float(0.0f);
 
 	void update(float _d);
 	void draw();
-	void set_world_position_and_redraw();
+
 	void realign_all_buttons();
+	void set_world_position_and_redraw();
+	
 
 	static void add_horizontal_scroll_bar(EButtonGroup* _button_group);
 };

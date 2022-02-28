@@ -36,6 +36,13 @@ void Entity::generate_vertex_buffer_for_all_sprite_layers()
 
 				if (c_region->internal_sprite_layer != nullptr)
 				{c_region->internal_sprite_layer->generate_vertex_buffer_for_sprite_layer("internal sprite layer");}
+
+				//for (ETextArea* ta:c_regio)
+				if (c_region->text_area != nullptr)
+				{
+					//c_region->text_area->generate_rows();
+					c_region->text_area->generate_text();
+				}
 			}
 
 			

@@ -375,6 +375,7 @@ public:
 	void sprite_set_world_positions(float _x, float _y, float _z);
 
 	static ESprite* create_default_sprite(ETextureGabarite* _gabarite, ESpriteLayer* _sprite_layer);
+	
 
 	
 };
@@ -416,6 +417,9 @@ public:
 	void sprite_layer_set_world_position(float _x, float _y, float _z);
 
 	static ESpriteLayer* create_default_sprite_layer(ETextureGabarite* _texture);
+
+	static ESprite* get_last_created_sprite(ESpriteLayer* _layer);
+	static void set_size_for_last_sprite(ESpriteLayer* _layer, float _size_x, float _size_y);
 };
 
 

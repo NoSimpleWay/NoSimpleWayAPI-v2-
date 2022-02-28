@@ -147,7 +147,7 @@ public:
 	float* offset_by_gabarite_size_x = new float(0.5f);
 	float* offset_by_gabarite_size_y = new float(0.0f);
 
-	float* offset_by_text_size_x = new float(0.5f);
+	float* offset_by_text_size_x = new float(-0.5f);
 	float* offset_by_text_size_y = new float(0.0f);
 	//
 

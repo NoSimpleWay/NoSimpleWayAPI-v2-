@@ -119,6 +119,9 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 					*data_bar->max_value * -1.0f
 				);
 
+			//EInputCore::logger_param("max value", *data_bar->max_value);
+			//EInputCore::logger_param("scroll value", *data_bar->value_pointer);
+
 
 			//*entity_button->parent_button_group->scroll_y += 100.0f * _d;
 
@@ -442,6 +445,19 @@ void EClickableRegion::translate(float _x, float _y, float _z)
 
 
 	if (text_area != nullptr) { text_area->translate(_x, _y); }
+}
+
+EClickableRegion* EClickableRegion::create_default_clickable_region(ERegionGabarite* _gabarite, Entity* _parent_entity, ECustomData* _custom_data)
+{
+	EClickableRegion* jc_clickable_region = new EClickableRegion();
+
+	jc_clickable_region->region = _gabarite;
+	jc_clickable_region->parent_entity = _parent_entity;
+	jc_clickable_region->parent_custom_data = _custom_data;
+
+	jc_clickable_region->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
+
+	return jc_clickable_region;
 }
 
 void EClickableRegion::update(float _d)

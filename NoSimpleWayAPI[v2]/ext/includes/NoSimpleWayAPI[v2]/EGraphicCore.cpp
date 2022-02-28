@@ -1602,6 +1602,25 @@ ESpriteLayer* ESpriteLayer::create_default_sprite_layer(ETextureGabarite* _textu
 	return jc_sprite_layer;
 }
 
+ESprite* ESpriteLayer::get_last_created_sprite(ESpriteLayer* _layer)
+{
+	int last_frame_id	= _layer->sprite_frame_list.size() - 1;
+	int last_sprite_id	= _layer->sprite_frame_list[last_frame_id]->sprite_list.size() - 1;
+
+	return _layer->sprite_frame_list[last_frame_id]->sprite_list[last_sprite_id];
+}
+
+void ESpriteLayer::set_size_for_last_sprite(ESpriteLayer* _layer, float _size_x, float _size_y)
+{
+	ESprite* last_sprite = ESpriteLayer::get_last_created_sprite(_layer);
+
+	*last_sprite->size_x = _size_x;
+	*last_sprite->size_y = _size_y;
+
+	last_sprite->sprite_calculate_uv();
+	
+}
+
 void ESpriteLayer::translate_sprites(float _x, float _y, float _z)
 {
 	for (ESpriteFrame* frame : sprite_frame_list)

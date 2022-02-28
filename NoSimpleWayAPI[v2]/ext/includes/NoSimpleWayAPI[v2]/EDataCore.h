@@ -138,6 +138,7 @@ public:
 	void translate(float _x, float _y, float _z);
 
 	static EClickableRegion* active_clickable_region;
+	static EClickableRegion* create_default_clickable_region(ERegionGabarite* _gabarite, Entity* _parent_entity, ECustomData* _custom_data);
 	
 	void update(float _d);
 	void draw();

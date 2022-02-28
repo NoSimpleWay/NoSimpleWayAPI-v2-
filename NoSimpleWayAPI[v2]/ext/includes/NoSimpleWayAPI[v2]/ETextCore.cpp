@@ -184,7 +184,7 @@ void EFont::load_font_littera(std::string _path)
 						UV_start_x[font_array_id] = *gabarite->uv_start_x + UV_start_x[font_array_id] / (float)texture_atlas->get_atlas_size_x();
 						UV_start_y[font_array_id] = *gabarite->uv_start_y + (*gabarite->size_y_in_pixels / (float)texture_atlas->get_atlas_size_y()) - UV_start_y[font_array_id] / (float)texture_atlas->get_atlas_size_y();
 
-						EInputCore::logger_param("final uv_size_y", UV_start_y[font_array_id]);
+						//EInputCore::logger_param("final uv_size_y", UV_start_y[font_array_id]);
 					}
 
 					//
@@ -308,12 +308,12 @@ void ETextArea::generate_rows()
 
 	*row_count = row.size();
 
-	EInputCore::logger_param("Stored text", *stored_text);
-	EInputCore::logger_param("Count of row", *row_count);
+	//EInputCore::logger_param("Stored text", *stored_text);
+	//EInputCore::logger_param("Count of row", *row_count);
 
 	for (std::string* str : row)
 	{
-		EInputCore::simple_logger_with_parameter("row", *str);
+		//EInputCore::simple_logger_with_parameter("row", *str);
 	}
 }
 
@@ -326,7 +326,7 @@ void ETextArea::generate_text()
 
 	float x_adding = 0.0f;
 	float y_adding = 0.0f;
-
+	float full_text_height = 0.0f;
 
 
 	EFontGlyph* temp_glyph = nullptr;
@@ -366,14 +366,17 @@ void ETextArea::generate_text()
 		int row_id = 0;
 		int id_for_stored_text_sym = 0;
 
-		y_adding = 18.0f * (row.size() - 1);
+		full_text_height = 14.0f * (row.size());
+		y_adding = full_text_height - 14.0f;
+		y_adding += *region_gabarite->size_y * *offset_by_gabarite_size_y;
+		y_adding += full_text_height * *offset_by_text_size_y;
 
 		for (std::string* str : row)
 		{
 			temp_s = *str;
 			str_lenght = temp_s.length();
 
-			x_adding = *region_gabarite->size_x * *offset_by_gabarite_size_x - get_row_width(str) * *offset_by_text_size_x;
+			x_adding = (*region_gabarite->size_x * *offset_by_gabarite_size_x) + (get_row_width(str) * *offset_by_text_size_x);
 			//_adding = *region_gabarite->size_y * *offset_by_gabarite_size_y + get_row_width(str) * *offset_by_text_size_y;
 
 
@@ -388,7 +391,7 @@ void ETextArea::generate_text()
 					*sprite_layer->last_buffer_id,
 
 					*region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
-					*region_gabarite->world_position_y - (font->size_y_in_pixels[target_symbol] - 14.0f + font->offset_y[target_symbol] * *font_scale - y_adding) ,
+					*region_gabarite->world_position_y - (font->size_y_in_pixels[target_symbol] - 15.0f + font->offset_y[target_symbol] * *font_scale - y_adding) ,
 
 					font->size_x_in_pixels[target_symbol] * *font_scale,
 					font->size_y_in_pixels[target_symbol] * *font_scale,
@@ -467,7 +470,7 @@ void ETextArea::generate_text()
 
 			//EInputCore::logger_param("last buffer id", *sprite_layer->last_buffer_id);
 
-			y_adding -= 18.0f;
+			y_adding -= 14.0f;
 		}
 	}
 	else

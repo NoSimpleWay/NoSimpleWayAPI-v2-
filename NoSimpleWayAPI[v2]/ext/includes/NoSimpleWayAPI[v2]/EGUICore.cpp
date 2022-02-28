@@ -82,6 +82,23 @@ void EButtonGroup::draw()
 	//clickable_region->draw();
 
 	//EInputCore::logger_simple_success("draw button group");
+	batcher_for_default_draw->draw_call();
+	glEnable(GL_SCISSOR_TEST);
+	if (parent_group_row == nullptr)
+	{
+		glScissor(*region->world_position_x, *region->world_position_y, *region->size_x, *region->size_y);
+	}
+	else
+	{
+		glScissor
+		(
+			*region->world_position_x,
+			*lower_culling_line,
+
+			*region->size_x,
+			max(0.0f, *higher_culling_line - *lower_culling_line)
+		);
+	}
 
 	NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
 	if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
@@ -89,28 +106,46 @@ void EButtonGroup::draw()
 	(
 		batcher_for_default_draw->vertex_buffer,
 		batcher_for_default_draw->last_vertice_buffer_index,
-		*region->world_position_x,
-		*region->world_position_y,
-		*region->size_x,
-		*region->size_y,
+		*region->world_position_x + 1.0f,
+		*region->world_position_y + 1.0f,
+		*region->size_x - 2.0f,
+		*region->size_y - 2.0f,
 		2.0f,
 		NS_DefaultGabarites::texture_gabarite_white_pixel
 	);
-	batcher_for_default_draw->draw_call();
 
-	glEnable(GL_SCISSOR_TEST);
-	glScissor(*region->world_position_x, *region->world_position_y, *region->size_x, *region->size_y);
-
-	for (EntityButton* but : button_list)
-	{but->draw();}
 
 	for (EButtonGroupRow* row : group_row_list)
 	{
+		/*NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_RED);
+		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+		NS_ERenderCollection::add_data_to_vertex_buffer_rama
+		(
+			batcher_for_default_draw->vertex_buffer,
+			batcher_for_default_draw->last_vertice_buffer_index,
+			*row->gabarite->world_position_x + 2.0f,
+			*row->gabarite->world_position_y + 2.0f,
+			*row->gabarite->size_x - 4.0f,
+			*row->gabarite->size_y - 4.0f,
+			2.0f,
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+		batcher_for_default_draw->draw_call();*/
+
 		for (EButtonGroup* group : row->button_group_list)
 		{
 			group->draw();
 		}
 	}
+
+	batcher_for_default_draw->draw_call();
+
+	
+
+	for (EntityButton* but : button_list)
+	{but->draw();}
+
+
 
 
 	batcher_for_default_draw->draw_call();
@@ -120,33 +155,61 @@ void EButtonGroup::draw()
 
 void EButtonGroup::set_world_position_and_redraw()
 {
+
+	//float minimal_culling_line_top		= 10000.0f;
+	//float minimal_culling_line_bottom	= -10000.0f;
+
 	if (parent_group_row == nullptr)
 	{
 		*region->world_position_x = *region->offset_x;
 		*region->world_position_y = *region->offset_y;
+
+		*higher_culling_line	= *region->world_position_y + *region->size_y;
+		*lower_culling_line		= *region->world_position_y;
+
+		//minimal_culling_line_top	= *higher_culling_line;
+		//minimal_culling_line_bottom	= *lower_culling_line;
 	}
 
 	
 
 	
+	EButtonGroup* prev_group = nullptr;
+	EButtonGroupRow* prev_row = nullptr;
 
 	for (EButtonGroupRow* row:group_row_list)
 	{
-		EButtonGroup* prev_group = nullptr;
+		
 
+
+		if (prev_row != nullptr)
+		{
+			*row->gabarite->offset_y = *prev_row->gabarite->offset_y + *prev_row->gabarite->size_y + 5.0f;
+		}
+		prev_row = row;
+		//*row->gabarite->offset_x = rand() % 100;
 		*row->gabarite->world_position_x = *region->world_position_x + *row->gabarite->offset_x;
+
 		*row->gabarite->world_position_y = *region->world_position_y + *row->gabarite->offset_y;
+		*row->gabarite->world_position_y += *scroll_y;
+
 		*row->gabarite->world_position_z = *region->world_position_z + *row->gabarite->offset_z;
 
+		//minimal_culling_line_top = *row->gabarite->world_position_y + *row->gabarite->size_y;
+		//minimal_culling_line_bottom = *row->gabarite->world_position_y;
+
+		prev_group = nullptr;
 		for (EButtonGroup* group : row->button_group_list)
 		{
+			
 			if (prev_group != nullptr)
 			{
 				*group->region->offset_x = *prev_group->region->offset_x + *prev_group->region->size_x;
 			}
 			else
 			{
-				prev_group = group; *group->region->offset_x = 0.0f;
+				 *group->region->offset_x = 0.0f;
+				 prev_group = group;
 			}
 
 			*group->region->world_position_x = *row->gabarite->world_position_x + *group->region->offset_x;
@@ -154,9 +217,28 @@ void EButtonGroup::set_world_position_and_redraw()
 			*group->region->world_position_z = *row->gabarite->world_position_z + *group->region->offset_z;
 
 			
+			*group->higher_culling_line = min(*row->gabarite->world_position_y + *row->gabarite->size_y, *higher_culling_line);
+			*group->higher_culling_line = min(*group->region->world_position_y + *group->region->size_y, *group->higher_culling_line);
 
+			//minimal_culling_line_top = *group->higher_culling_line;
+
+			//*lower_culling_line = max(*lower_culling_line, *row->gabarite->world_position_y);
+			//*group->lower_culling_line = *lower_culling_line;
+			*group->lower_culling_line = max(*row->gabarite->world_position_y, *lower_culling_line);
+			*group->lower_culling_line = max(*group->region->world_position_y, *group->lower_culling_line);
+
+			//minimal_culling_line_bottom = *group->lower_culling_line;
+
+			
+			//*group->highest_point_y = max(*group->highest_point_y, *row->gabarite->offset_y + *row->gabarite->size_y);
 			group->set_world_position_and_redraw();
+			
 		}
+		
+
+
+		if (parent_group_row == nullptr) { *highest_point_y = *prev_row->gabarite->offset_y + *prev_row->gabarite->size_y; }
+		//prev_row = row;
 	}
 
 	//if (group_row_list.empty())
@@ -175,6 +257,9 @@ void EButtonGroup::set_world_position_and_redraw()
 			}
 
 			but->set_world_position(*but->world_position_x, *but->world_position_y, *but->world_position_z);
+
+
+
 			but->generate_vertex_buffer_for_all_sprite_layers();
 		}
 	}
@@ -288,6 +373,6 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	but->generate_vertex_buffer_for_all_sprite_layers();
 	sprite_layer->generate_vertex_buffer_for_sprite_layer("scroll bar sprite layer");
 
-	EInputCore::logger_param("world x", *sprite->world_position_x);
+	//EInputCore::logger_param("world x", *sprite->world_position_x);
 
 }
