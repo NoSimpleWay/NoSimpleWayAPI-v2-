@@ -245,7 +245,7 @@ void EButtonGroup::set_world_position_and_redraw()
 	{
 		for (EntityButton* but : button_list)
 		{
-			if (*but->fixed_position)
+			if ((*but->fixed_position) && (true))
 			{
 				*but->world_position_x = *region->world_position_x + *but->offset_x;
 				*but->world_position_y = *region->world_position_y + *but->offset_y;
@@ -275,13 +275,13 @@ void EButtonGroup::realign_all_buttons()
 	*highest_point_y = 0.0f;
 
 	for (EntityButton* but : button_list)
-	if (!*but->fixed_position)
+	if ((!*but->fixed_position) || (false))
 	{
 		if (prev_button != nullptr)
 		{
-			
 			*but->offset_x = *prev_button->offset_x + *prev_button->button_gabarite->offset_x + *prev_button->button_gabarite->size_x + 5.0f;
 			*but->offset_y = *prev_button->offset_y;
+
 			if (*but->offset_x + *but->button_gabarite->size_x + 25.0f >= *region->size_x)
 			{
 				*but->offset_x = 10.0f;
@@ -299,6 +299,10 @@ void EButtonGroup::realign_all_buttons()
 		*highest_point_y = max(*highest_point_y, *but->offset_y + *but->button_gabarite->size_y + 10.0f);
 		//EInputCore::logger_param("highest point y", *highest_point_y);
 		prev_button = but;
+	}
+	else
+	{
+		//but->update(0.1f);
 	}
 
 	if (!group_row_list.empty())

@@ -23,8 +23,13 @@ void Entity::generate_vertex_buffer_for_all_sprite_layers()
 		{
 			sl->generate_vertex_buffer_for_sprite_layer("Entity sprite layers");
 		}
+	}
+	else
+	{
+		//EInputCore::logger_simple_error("SpriteList is empty!");
+	}
 
-		for (ECustomData* c_data : custom_data_list)
+	for (ECustomData* c_data : custom_data_list)
 		if (c_data != nullptr)
 		{
 			for (EClickableRegion* c_region:c_data->clickable_region_list)
@@ -47,13 +52,6 @@ void Entity::generate_vertex_buffer_for_all_sprite_layers()
 
 			
 		}
-
-		
-	}
-	else
-	{
-		//EInputCore::logger_simple_error("SpriteList is empty!");
-	}
 }
 
 void Entity::transfer_all_vertex_buffers_to_batcher()

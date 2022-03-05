@@ -134,16 +134,24 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	else
 	{
 		*_custom_data->clickable_region_list.at(0)->sprite_layer_list.at(0)->sprite_frame_list.at(0)->active_frame_id = 0;
+
+		_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
+		_entity->generate_vertex_buffer_for_all_sprite_layers();
 	}
 
 	//*_entity->world_position_x = *entity_button->parent_button_group->region->world_position_x + *entity_button->parent_button_group->region->size_x - *entity_button->button_gabarite->size_x;
 	//*_entity->world_position_y = *entity_button->parent_button_group->region->world_position_y;
 
 	//_entity->custom_data_list.at(0)->get_sprite_by_id(0, 0, 0, 0)->generate_vertex_buffer_for_sprite_layer("");
-	_custom_data->get_sprite_layer_by_id(0, 0)->generate_vertex_buffer_for_sprite_layer("");
+	
 	//_custom_data->clickable_region_list.at(0)->sprite_layer_list.at(0)->generate_vertex_buffer_for_sprite_layer("");
-	_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
-	_entity->generate_vertex_buffer_for_all_sprite_layers();
+
+
+
+	//_custom_data->get_sprite_layer_by_id(0, 0)->generate_vertex_buffer_for_sprite_layer("");
+	
+	
+
 	//_entity->
 
 
