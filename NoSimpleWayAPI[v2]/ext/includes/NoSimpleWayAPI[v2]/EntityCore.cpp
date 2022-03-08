@@ -89,7 +89,10 @@ void Entity::set_world_position(float _x, float _y, float _z)
 	{
 		for (EClickableRegion* clickable_region : c_data->clickable_region_list)
 		if (clickable_region != nullptr)
-		{clickable_region->clickable_region_set_world_positions(*world_position_x, *world_position_y, *world_position_z);}
+		//
+		{
+			clickable_region->clickable_region_set_world_positions(*world_position_x, *world_position_y, *world_position_z);
+		}
 	}
 }
 
@@ -131,16 +134,17 @@ void Entity::translate_entity(float _x, float _y, float _z)
 	*world_position_y += _y;
 	*world_position_z += _z;
 
+
 	translate_all_sprite_layers(_x, _y, _z);
 }
 
 void Entity::translate_all_sprite_layers(float _x, float _y, float _z)
 {
 	for (ESpriteLayer* s_layer : sprite_layer_list)
-	if (s_layer != nullptr) {s_layer->translate_sprite_layer(_x, _y, _z);}
+	if (s_layer != nullptr) {s_layer->translate_sprite_layer(_x, _y, _z, false);}
 	
 	for (ECustomData* c_data : custom_data_list)
-	if (c_data != nullptr) {c_data->translate(_x, _y, _z);}
+	if (c_data != nullptr) {c_data->translate_custom_data(_x, _y, _z, false);}
 
 
 }

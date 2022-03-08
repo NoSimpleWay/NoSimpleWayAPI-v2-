@@ -95,7 +95,7 @@ namespace NS_ERenderCollection
 	extern float			border_left_size;
 	extern float			border_right_size;
 	extern float			border_up_size;
-	extern float			border_up_size;
+	extern float			border_down_size;
 
 	extern unsigned int		subdivision_x;
 	extern unsigned int		subdivision_y;
@@ -387,6 +387,7 @@ public:
 	int* active_frame_id = new int(0);
 
 	static ESpriteFrame* create_default_sprite_frame();
+	static ESpriteFrame* create_default_sprite_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _parent_sprite_layer);
 };
 class ESpriteLayer
 {
@@ -406,8 +407,8 @@ public:
 	ERenderBatcher* batcher;
 	float* vertex_buffer;
 
-	void translate_sprite_layer(float _x, float _y, float _z);
-	void translate_sprites(float _x, float _y, float _z);
+	void translate_sprite_layer(float _x, float _y, float _z, bool _move_offset);
+	void translate_sprites(float _x, float _y, float _z, bool _move_offset);
 
 	void modify_buffer_position_for_sprite_layer(float _x, float _y, float _z);
 	void generate_vertex_buffer_for_sprite_layer(std::string _text);
@@ -420,6 +421,7 @@ public:
 
 	static ESprite* get_last_created_sprite(ESpriteLayer* _layer);
 	static void set_size_for_last_sprite(ESpriteLayer* _layer, float _size_x, float _size_y);
+	static void add_new_default_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _sprite_layer);
 };
 
 

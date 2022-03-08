@@ -35,6 +35,8 @@ void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custo
 
 void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	
+
 	if
 	(
 		(EInputCore::key_pressed(GLFW_KEY_W))
@@ -43,6 +45,7 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 	)
 	{
 		_entity->translate_entity(0.0f, 100.0f * _d, 0.0f);
+
 	};
 
 	if
@@ -53,7 +56,23 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 	)
 	{
 		_entity->translate_entity(0.0f, -100.0f * _d, 0.0f);
+
 	};
+
+	if
+	(
+		(EInputCore::key_pressed(GLFW_KEY_Z))
+		&&
+		(NS_FONT_UTILS::active_text_area == nullptr)
+	)
+	{ 
+		
+		NS_ERenderCollection::generate_brick_texture(_custom_data->clickable_region_list[0]->region, _entity->sprite_layer_list[0], NS_DefaultGabarites::texture_gabarite_gudron);
+		_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
+		_entity->generate_vertex_buffer_for_all_sprite_layers();
+		
+		
+	}
 }
 
 void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -378,7 +397,7 @@ void EClickableRegion::check_all_catches()
 		if (*catched_side_left)
 		{
 			*region->size_x			-= EInputCore::MOUSE_SPEED_X;
-			translate(EInputCore::MOUSE_SPEED_X, 0.0f, 0.0f);
+			translate_clickable_region(EInputCore::MOUSE_SPEED_X, 0.0f, 0.0f, true);
 		}
 
 		if (*catched_side_right)
@@ -389,7 +408,7 @@ void EClickableRegion::check_all_catches()
 
 		if (*catched_side_down)
 		{
-			translate(0.0f, EInputCore::MOUSE_SPEED_Y, 0.0f);
+			translate_clickable_region(0.0f, EInputCore::MOUSE_SPEED_Y, 0.0f, true);
 			*region->size_y -= EInputCore::MOUSE_SPEED_Y;
 		}
 
@@ -401,7 +420,7 @@ void EClickableRegion::check_all_catches()
 
 		if (*catched_side_mid)
 		{
-			translate(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f);
+			translate_clickable_region(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f, true);
 		}
 
 		if ((*catched_side_left) || (*catched_side_right) || (*catched_side_up) || (*catched_side_down) || (*catched_side_mid))
@@ -436,19 +455,22 @@ void EClickableRegion::check_all_catches()
 	
 }
 
-void EClickableRegion::translate(float _x, float _y, float _z)
+void EClickableRegion::translate_clickable_region(float _x, float _y, float _z, bool _move_offset)
 {
 	if (region != nullptr)
 	{
-		*region->offset_x += _x;
-		*region->offset_y += _y;
-
 		*region->world_position_x += _x;
 		*region->world_position_y += _y;
+
+		if (_move_offset)
+		{
+			*region->offset_x += _x;
+			*region->offset_y += _y;
+		}
 	}
 
 	for (ESpriteLayer* s_layer : sprite_layer_list)
-	if (s_layer != nullptr) {s_layer->translate_sprite_layer(_x, _y, _z);}
+	if (s_layer != nullptr) {s_layer->translate_sprite_layer(_x, _y, _z, false);}
 
 
 
@@ -747,12 +769,12 @@ void ECustomData::update(float _d)
 
 }
 
-void ECustomData::translate(float _x, float _y, float _z)
+void ECustomData::translate_custom_data(float _x, float _y, float _z, bool _move_offset)
 {
 	for (EClickableRegion* cl_region : clickable_region_list)
 	if (cl_region != nullptr)
 	{
-		cl_region->translate(_x, _y, _z);
+		cl_region->translate_clickable_region(_x, _y, _z, false);
 	}
 }
 

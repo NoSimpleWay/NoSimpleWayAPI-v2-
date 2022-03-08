@@ -51,7 +51,7 @@ public:
 
 	void draw();
 	void update(float _d);
-	void translate(float _x, float _y, float _z);
+	void translate_custom_data(float _x, float _y, float _z, bool _move_offset);
 
 	ESprite*		get_sprite_by_id		(unsigned int _clickable_region_id, unsigned int _sprite_layer_id, unsigned int _frame_id, unsigned int _frame);
 	ESpriteLayer*	get_sprite_layer_by_id	(unsigned int _clickable_region_id, unsigned int _sprite_layer_id);
@@ -135,7 +135,7 @@ public:
 	static bool overlapped_by_mouse(EClickableRegion* _region, float _offset_x, float _offset_y, float _zoom);
 	static bool catched_side_by_mouse(float _x, float _y, float _size_x, float _size_y, float _offset_x, float _offset_y, float _zoom, float _catch_distance = 5.0f);
 	void check_all_catches();
-	void translate(float _x, float _y, float _z);
+	void translate_clickable_region(float _x, float _y, float _z, bool _move_offset);
 
 	static EClickableRegion* active_clickable_region;
 	static EClickableRegion* create_default_clickable_region(ERegionGabarite* _gabarite, Entity* _parent_entity, ECustomData* _custom_data);
