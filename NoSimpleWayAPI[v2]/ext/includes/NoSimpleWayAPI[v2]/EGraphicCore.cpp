@@ -60,6 +60,7 @@ namespace NS_ERenderCollection
 namespace NS_DefaultGabarites
 {
 	ETextureGabarite* texture_gabarite_gudron;
+	ETextureGabarite* texture_rusted_bronze;
 	ETextureGabarite* texture_gabarite_white_pixel;
 }
 ERenderBatcher::ERenderBatcher()
@@ -489,6 +490,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 	NS_DefaultGabarites::texture_gabarite_white_pixel = NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_gabarite_gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_rusted_bronze = NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
 	
 	//font
 	EFont* new_font = NULL;
@@ -1197,7 +1199,7 @@ void NS_ERenderCollection::call_render_textured_sprite(ESprite* _sprite)
 		if (_sprite == nullptr) { EInputCore::logger_simple_error("Sprite in call render textured rectangle is null"); }
 		else
 		{
-			if (_sprite->main_texture == nullptr) { EInputCore::logger_simple_error("Sprite texture in call render textured rectangle is null"); }
+			if (_sprite->main_texture == nullptr) { EInputCore::logger_simple_error("[call_render_textured_sprite] sprite main texture is null"); }
 		}
 	}
 }
@@ -1207,39 +1209,54 @@ void NS_ERenderCollection::call_render_textured_sprite(ESprite* _sprite)
 void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite)
 {
 
-	//dinamic
-	int		total_divisions_x = 1;
-	int		total_divisions_y = 1;
+	//dynamic
+		int		total_divisions_x = 1;
+		int		total_divisions_y = 1;
 
-	float	final_fragment_count_x = 0.0f;
-	float	final_fragment_count_y = 0.0f;
+		//how many tiles need to fill region (X)
+		float	final_fragments_count_x = 0.0f;
+		//how many tiles need to fill region (Y)
+		float	final_fragments_count_y = 0.0f;
 
-	int		count_of_generations_x = 0;
-	int		count_of_generations_y = 0;
+		//cycle count x
+		int		count_of_generations_x = 0;
+		//cycles count y
+		int		count_of_generations_y = 0;
 
-	float	base_offset_x = 0.0f;
-	float	base_offset_yz = 0.0f;
+		//offset relative region start x
+		float	base_offset_x = 0.0f;
+		//offset relative region start y
+		float	base_offset_yz = 0.0f;
 
-	float	size_of_brick_x = *_texture_gabarite->size_x_in_pixels / (float)total_divisions_x;
-	float	size_of_brick_y = *_texture_gabarite->size_y_in_pixels / (float)total_divisions_y;
+		//size of one tile (x)
+		float	size_of_brick_x = *_texture_gabarite->size_x_in_pixels / (float)total_divisions_x;
+		//size of one tile (y)
+		float	size_of_brick_y = *_texture_gabarite->size_y_in_pixels / (float)total_divisions_y;
 
-	float	base_sprite_fragment_offset_x = 0.0f;
-	float	base_sprite_fragment_offset_y = 0.0f;
+		//uv offset in texture in pixels (x)
+		float	texture_offset_x = 0.0f;
+		//uv offset in texture in pixels (y)
+		float	texture_offset_y = 0.0f;
 
-	float	additional_offset_x = 0.0f;
-	float	additional_offset_yz = 0.0f;
+		//tile offset x
+		float	final_offset_x = 0.0f;
+		//tile offset y
+		float	final_offset_yz = 0.0f;
 
-	int current_sprite_id = 0;
-	ESprite* current_sprite = nullptr;
+		int current_sprite_frame_id = 0;
+		ESprite* current_sprite = nullptr;
 
 	//static
-	float full_mid_segment_size_x = *_region->size_x;
-	float full_mid_segment_size_y = *_region->size_y;
+		float full_segment_size_x = *_region->size_x;
+		float full_segment_size_y = *_region->size_y;
 
-	float cropped_mid_segment_size_x = full_mid_segment_size_x - NS_ERenderCollection::border_left_size - NS_ERenderCollection::border_right_size;
-	float final_mid_segment_size_y = full_mid_segment_size_y - NS_ERenderCollection::border_up_size - NS_ERenderCollection::border_down_size;
+		float cropped_mid_segment_size_x = full_segment_size_x - NS_ERenderCollection::border_left_size - NS_ERenderCollection::border_right_size;
+		float cropped_mid_segment_size_y = full_segment_size_y - NS_ERenderCollection::border_down_size - NS_ERenderCollection::border_up_size;
 
-	
+		float final_mid_segment_size_x = full_segment_size_x - NS_ERenderCollection::border_left_size - NS_ERenderCollection::border_right_size;
+		float final_mid_segment_size_y = full_segment_size_y - NS_ERenderCollection::border_up_size - NS_ERenderCollection::border_down_size;
+
+		EInputCore::logger_param("cropped segment x", cropped_mid_segment_size_x);
 
 
 	//segment		seg_x	seg_y
@@ -1252,75 +1269,162 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 	//rightmid		2		1 
 	//left up		0		2 
 	//up			1		2 
-	//rightup		2		2 
+	//right up		2		2
+	//
 	//
 
-	for (int i = _sprite_layer->sprite_frame_list.at(0)->sprite_list.size(); i < 10'000; i++)
+	if (true)
+	for (int i = _sprite_layer->sprite_frame_list.size(); i < 10'000; i++)
 	{
-		_sprite_layer->sprite_frame_list.at(0)->sprite_list.push_back(new ESprite());
+		//ESpriteLayer::add_new_default_frame_with_sprite(_texture_gabarite, _sprite_layer);
+		_sprite_layer->sprite_frame_list.push_back(ESpriteFrame::create_default_sprite_frame_with_sprite(_texture_gabarite, _sprite_layer));
 	}
 
-	for (unsigned int seg_x = 0; seg_x < 3; seg_x++)
+	for (ESpriteFrame* frm : _sprite_layer->sprite_frame_list)
 	{
-		if ((seg_x == 0))
-		{
-			total_divisions_x = 1;
-			size_of_brick_x = NS_ERenderCollection::border_left_size;
+		//frm->sprite_list[0]->reset_sprite();
+	}
 
-			base_offset_x = 0.0f;
-
-			final_fragment_count_x = 1.0f;
-			count_of_generations_x = 1;
-			
-			base_sprite_fragment_offset_x = 0.0f;
-		}
-		else
-		if ((seg_x == 1))
-		{
-			total_divisions_x = NS_ERenderCollection::subdivision_x + 1;
-			size_of_brick_x = *_texture_gabarite->size_x_in_pixels / (float)total_divisions_x;
-
-			base_offset_x = NS_ERenderCollection::border_left_size;
-
-			final_fragment_count_x = cropped_mid_segment_size_x / size_of_brick_x;
-			count_of_generations_x = ceil(final_fragment_count_x);
-		}
-		else
-		if ((seg_x == 2))
-		{
-			total_divisions_x = 1;
-			size_of_brick_x = NS_ERenderCollection::border_right_size;
-
-			base_offset_x = 0.0f;
-
-			final_fragment_count_x = 1.0f;
-			count_of_generations_x = 1;
-			
-			base_sprite_fragment_offset_x = NS_ERenderCollection::border_left_size;
-		}
-
-		for (unsigned int seg_y = 0; seg_y < 3; seg_y++)
-		{
-			additional_offset_x = base_offset_x;
-			additional_offset_yz = base_offset_yz;
-
-			for (int xx = 0; xx <= count_of_generations_x; xx++)//base_sprite_fragment_offset_x = full_mid_segment_size_x - NS_ERenderCollection::border_left_size;
+	if (true)
+	for (unsigned int seg_y = 0; seg_y < 3; seg_y++)
+	{
+	
+		//left border
+		
+			if ((seg_y == 0))//down
 			{
-				
-				current_sprite = _sprite_layer->sprite_frame_list.at(0)->sprite_list.at(current_sprite_id);
-				current_sprite->reset_sprite();
-				for (int yy = 0; yy <= count_of_generations_y; yy++)
+				total_divisions_y = 1;
+				size_of_brick_y = NS_ERenderCollection::border_down_size;
+
+				base_offset_yz = *_region->offset_y;
+
+				final_fragments_count_y = 1.0f;
+				count_of_generations_y = 1;
+
+				texture_offset_y = 0.0f;
+			}
+			else
+			//mid wall
+			if ((seg_y == 1))
+			{
+				total_divisions_y = NS_ERenderCollection::subdivision_y + 1;
+				size_of_brick_y = (*_texture_gabarite->size_y_in_pixels - NS_ERenderCollection::border_down_size - NS_ERenderCollection::border_up_size) / (float)total_divisions_y;
+
+				base_offset_yz = *_region->offset_y + NS_ERenderCollection::border_down_size + 0.0f;
+
+				final_fragments_count_y = cropped_mid_segment_size_y / size_of_brick_y;
+				count_of_generations_y = ceil(final_fragments_count_y);
+
+				texture_offset_y = NS_ERenderCollection::border_down_size;
+			}
+			else
+			if ((seg_y == 2))
+			{
+				total_divisions_y = 1;
+				size_of_brick_y = NS_ERenderCollection::border_up_size;
+
+				base_offset_yz = *_region->offset_y + cropped_mid_segment_size_y + NS_ERenderCollection::border_down_size + 0.0f;
+
+				final_fragments_count_y = 1.0f;
+				count_of_generations_y = 1;
+			
+				texture_offset_y = *_texture_gabarite->size_y_in_pixels - NS_ERenderCollection::border_up_size;
+			}
+
+		for (unsigned int seg_x = 0; seg_x < 3; seg_x++)
+		{
+			
+
+			
+			if ((seg_x == 0))
+			{
+				total_divisions_x = 1;
+				size_of_brick_x = NS_ERenderCollection::border_left_size;
+
+				base_offset_x = *_region->offset_x + 0.0f;
+
+				final_fragments_count_x = 1.0f;
+				count_of_generations_x = 1;
+			
+				texture_offset_x = 0.0f;
+			}
+			else
+			//mid wall
+			if ((seg_x == 1))
+			{
+				total_divisions_x = NS_ERenderCollection::subdivision_x + 1;
+				size_of_brick_x = (*_texture_gabarite->size_x_in_pixels - NS_ERenderCollection::border_left_size - NS_ERenderCollection::border_right_size) / (float)total_divisions_x;
+
+				base_offset_x = *_region->offset_x + NS_ERenderCollection::border_left_size + 0.0f;
+
+				final_fragments_count_x = (cropped_mid_segment_size_x - 0.0f) / size_of_brick_x;
+				count_of_generations_x = ceil(final_fragments_count_x);
+
+				texture_offset_x = NS_ERenderCollection::border_left_size;
+			}
+			else
+			if ((seg_x == 2))
+			{
+				total_divisions_x = 1;
+				size_of_brick_x = NS_ERenderCollection::border_right_size;
+
+				base_offset_x = *_region->offset_x + cropped_mid_segment_size_x + NS_ERenderCollection::border_left_size + 0.0f;
+
+				final_fragments_count_x = 1.0f;
+				count_of_generations_x = 1;
+			
+				texture_offset_x = *_texture_gabarite->size_x_in_pixels - NS_ERenderCollection::border_right_size;
+			}
+
+			
+			final_offset_yz = base_offset_yz;
+			for (int yy = 0; yy < count_of_generations_y; yy++)
+			{
+				final_offset_x = base_offset_x;
+
+				for (int xx = 0; xx < count_of_generations_x; xx++)//base_sprite_fragment_offset_x = full_mid_segment_size_x - NS_ERenderCollection::border_left_size;
 				{
-					additional_offset_x += size_of_brick_x;
+					current_sprite = _sprite_layer->sprite_frame_list.at(current_sprite_frame_id)->sprite_list.at(0);
+					current_sprite->reset_sprite();
+
+					current_sprite->set_texture_gabarite(_texture_gabarite);
+
+					*current_sprite->fragment_offset_x = texture_offset_x + (rand() % (total_divisions_x ) * size_of_brick_x);
+					*current_sprite->fragment_offset_y = texture_offset_y + (rand() % (total_divisions_y ) * size_of_brick_y);
+
+					*current_sprite->offset_x = final_offset_x;
+					*current_sprite->offset_y = final_offset_yz;
+
+					*current_sprite->fragment_size_x = min (final_fragments_count_x - xx, 1.0f) * size_of_brick_x;
+					*current_sprite->fragment_size_y = min (final_fragments_count_y - yy, 1.0f) * size_of_brick_y;
+
+					*current_sprite->size_x = *current_sprite->fragment_size_x;
+					*current_sprite->size_y = *current_sprite->fragment_size_y;
+
+					
+					current_sprite->sprite_calculate_uv();
+					final_offset_x += size_of_brick_x + 0.0f;
+
+					current_sprite_frame_id++;
+					
 				}//base_sprite_fragment_offset_x = full_mid_segment_size_x - NS_ERenderCollection::border_left_size;
 
-				additional_offset_yz += size_of_brick_y;
+				final_offset_yz += size_of_brick_y + 0.0f;
 
 				
-				current_sprite_id++;
+				
 			}
 		}
 	}
+
+	for (int i = current_sprite_frame_id; i < _sprite_layer->sprite_frame_list.size(); i++)
+	{
+		_sprite_layer->sprite_frame_list[i]->sprite_list[0]->reset_sprite();
+	}
+
+	//_sprite_layer->generate_vertex_buffer_for_sprite_layer("autobuilding");
+
+
 }
 
 void NS_EGraphicCore::processInput(GLFWwindow* window)
@@ -1376,19 +1480,23 @@ std::string ETextureGabarite::get_name()
 	return *name;
 }
 
-void ESpriteLayer::translate_sprite_layer(float _x, float _y, float _z)
+void ESpriteLayer::translate_sprite_layer(float _x, float _y, float _z, bool _move_offset)
 {
-	/*
-	*offset_x += _x;
-	*offset_y += _y;
-	*offset_z += _z;
-	*/
-
 	*world_position_x += _x;
 	*world_position_y += _y;
 	*world_position_z += _z;
 
-	translate_sprites(_x, _y, _z);
+	if (_move_offset)
+	{
+		*offset_x += _x;
+		*offset_y += _y;
+		*offset_z += _z;
+	}
+
+	//child elements, modify only world coordinates
+	translate_sprites(_x, _y, _z, false);
+
+
 	modify_buffer_position_for_sprite_layer(_x, _y, _z);
 
 
@@ -1492,7 +1600,7 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 			//EInputCore::logger_param("memory", spr);
 
 			//std::cout << "memory location" << spr << std::endl;
-			if ((spr != nullptr) && (spr->pointer_to_sprite_render != nullptr))
+			if ((spr != nullptr) && (*spr->size_x * *spr->size_y > 0) && (spr->pointer_to_sprite_render != nullptr))
 			{
 				//EInputCore::logger_simple_success("try call render by pointer[" + std::to_string(_text) + "]");
 				ERenderBatcher::check_batcher(batcher);
@@ -1589,7 +1697,7 @@ void ESpriteLayer::sprite_layer_set_world_position(float _x, float _y, float _z)
 ESpriteLayer* ESpriteLayer::create_default_sprite_layer(ETextureGabarite* _texture)
 {
 	ESpriteLayer*	jc_sprite_layer	=	new ESpriteLayer();
-	ESpriteFrame*	jc_sprite_frame	=	ESpriteFrame::create_default_sprite_frame();
+	ESpriteFrame*	jc_sprite_frame	=	ESpriteFrame::create_default_sprite_frame_with_sprite(_texture, jc_sprite_layer);
 	ESprite*		jc_sprite		=	jc_sprite_frame->sprite_list[0];
 
 	jc_sprite_layer->sprite_frame_list.push_back(jc_sprite_frame);
@@ -1621,18 +1729,26 @@ void ESpriteLayer::set_size_for_last_sprite(ESpriteLayer* _layer, float _size_x,
 	
 }
 
-void ESpriteLayer::translate_sprites(float _x, float _y, float _z)
+void ESpriteLayer::add_new_default_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _sprite_layer)
+{
+	_sprite_layer->sprite_frame_list.push_back(ESpriteFrame::create_default_sprite_frame_with_sprite(_texture_gabarite, _sprite_layer));
+}
+
+void ESpriteLayer::translate_sprites(float _x, float _y, float _z, bool _move_offset)
 {
 	for (ESpriteFrame* frame : sprite_frame_list)
 	for (ESprite* spr : frame->sprite_list)
 	{
-		*spr->offset_x += _x;
-		*spr->offset_y += _y;
-		*spr->offset_z += _z;
-
 		*spr->world_position_x += _x;
 		*spr->world_position_y += _y;
 		*spr->world_position_z += _z;
+
+		if (_move_offset)
+		{
+			*spr->offset_x += _x;
+			*spr->offset_y += _y;
+			*spr->offset_z += _z;
+		}
 	}
 
 
@@ -1692,11 +1808,20 @@ void ESprite::set_texture_gabarite(ETextureGabarite* _gabarite)
 {
 	main_texture = _gabarite;
 
-	*fragment_size_x = *_gabarite->size_x_in_pixels;
-	*fragment_size_y = *_gabarite->size_y_in_pixels;
 
-	*size_x = *_gabarite->size_x_in_pixels;
-	*size_y = *_gabarite->size_y_in_pixels;
+
+	if (_gabarite != nullptr)
+	{
+		*fragment_size_x = *_gabarite->size_x_in_pixels;
+		*fragment_size_y = *_gabarite->size_y_in_pixels;
+
+		*size_x = *_gabarite->size_x_in_pixels;
+		*size_y = *_gabarite->size_y_in_pixels;
+	}
+	else
+	{
+		EInputCore::logger_simple_error("[set texture gabarite] _gabarite is nullptr!");
+	}
 
 	sprite_calculate_uv();
 }
@@ -1750,7 +1875,13 @@ void ESprite::sprite_set_world_positions(float _x, float _y, float _z)
 ESprite* ESprite::create_default_sprite(ETextureGabarite* _gabarite, ESpriteLayer* _sprite_layer)
 {
 	ESprite* jc_sprite = new ESprite();
-	jc_sprite->set_texture_gabarite(NS_DefaultGabarites::texture_gabarite_gudron);
+
+	if (_gabarite != nullptr)
+	{
+		jc_sprite->set_texture_gabarite(_gabarite);
+	}
+
+	jc_sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite;
 	jc_sprite->master_sprite_layer = _sprite_layer;
 
 	return jc_sprite;
@@ -1772,10 +1903,25 @@ EColor_4 const (&NS_EColorUtils::choose_from_two(const EColor_4(&_color1)[4], co
 
 ESpriteFrame* ESpriteFrame::create_default_sprite_frame()
 {
-	ESprite*		jc_sprite			= new ESprite();
+	//ESprite*		jc_sprite			= new ESprite();
 	ESpriteFrame*	jc_sprite_frame		= new ESpriteFrame();
+
+	//jc_sprite_frame->sprite_list.push_back(jc_sprite);
+
+	return jc_sprite_frame;
+}
+
+ESpriteFrame* ESpriteFrame::create_default_sprite_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _parent_sprite_layer)
+{
+	ESprite* jc_sprite = ESprite::create_default_sprite(_texture_gabarite, _parent_sprite_layer);
+	ESpriteFrame* jc_sprite_frame = new ESpriteFrame();
 
 	jc_sprite_frame->sprite_list.push_back(jc_sprite);
 
 	return jc_sprite_frame;
 }
+
+//ESpriteFrame* ESpriteFrame::create_default_sprite_frame_with_sprite(*ETexturEeGabarite _texture_gabarite, *ESpriteLayer _parent_sprite_layer)
+//{
+//	return nullptr;
+//}
