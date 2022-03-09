@@ -61,6 +61,7 @@ namespace NS_DefaultGabarites
 {
 	ETextureGabarite* texture_gabarite_gudron;
 	ETextureGabarite* texture_rusted_bronze;
+	ETextureGabarite* texture_lead_and_gold;
 	ETextureGabarite* texture_gabarite_white_pixel;
 }
 ERenderBatcher::ERenderBatcher()
@@ -491,6 +492,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_DefaultGabarites::texture_gabarite_white_pixel = NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_gabarite_gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_rusted_bronze = NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_lead_and_gold = NS_EGraphicCore::put_texture_to_atlas("data/textures/Lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 	
 	//font
 	EFont* new_font = NULL;
@@ -1256,7 +1258,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 		float final_mid_segment_size_x = full_segment_size_x - NS_ERenderCollection::border_left_size - NS_ERenderCollection::border_right_size;
 		float final_mid_segment_size_y = full_segment_size_y - NS_ERenderCollection::border_up_size - NS_ERenderCollection::border_down_size;
 
-		EInputCore::logger_param("cropped segment x", cropped_mid_segment_size_x);
+		//EInputCore::logger_param("cropped segment x", cropped_mid_segment_size_x);
 
 
 	//segment		seg_x	seg_y

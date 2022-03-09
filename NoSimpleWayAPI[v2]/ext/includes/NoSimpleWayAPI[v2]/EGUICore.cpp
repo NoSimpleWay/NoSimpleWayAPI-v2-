@@ -100,19 +100,20 @@ void EButtonGroup::draw()
 		);
 	}
 
-	NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
-	if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
-	NS_ERenderCollection::add_data_to_vertex_buffer_rama
-	(
-		batcher_for_default_draw->vertex_buffer,
-		batcher_for_default_draw->last_vertice_buffer_index,
-		*region->world_position_x + 1.0f,
-		*region->world_position_y + 1.0f,
-		*region->size_x - 2.0f,
-		*region->size_y - 2.0f,
-		2.0f,
-		NS_DefaultGabarites::texture_gabarite_white_pixel
-	);
+
+	//NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
+	//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+	//NS_ERenderCollection::add_data_to_vertex_buffer_rama
+	//(
+	//	batcher_for_default_draw->vertex_buffer,
+	//	batcher_for_default_draw->last_vertice_buffer_index,
+	//	*region->world_position_x + 1.0f,
+	//	*region->world_position_y + 1.0f,
+	//	*region->size_x - 2.0f,
+	//	*region->size_y - 2.0f,
+	//	2.0f,
+	//	NS_DefaultGabarites::texture_gabarite_white_pixel
+	//);
 
 
 	for (EButtonGroupRow* row : group_row_list)

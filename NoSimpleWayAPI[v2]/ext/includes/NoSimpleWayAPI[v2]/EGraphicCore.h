@@ -163,6 +163,7 @@ namespace NS_DefaultGabarites
 {
 	extern ETextureGabarite* texture_gabarite_gudron;
 	extern ETextureGabarite* texture_rusted_bronze;
+	extern ETextureGabarite* texture_lead_and_gold;
 	extern ETextureGabarite* texture_gabarite_white_pixel;
 	//extern 
 }
