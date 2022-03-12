@@ -17,6 +17,7 @@
 
 EClickableRegion* EClickableRegion::active_clickable_region = nullptr;
 
+ERegionGabarite* ERegionGabarite::temporary_gabarite;
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)
 {
@@ -110,7 +111,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 			*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
 				=
-				max(0.0f, *_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y);
+				max(*entity_button->parent_button_group->border_bottom, *_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y);
 
 			*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
 				=
@@ -118,7 +119,9 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				(
 					*entity_button->parent_button_group->region->size_y
 					-
-					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->size_y,
+					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->size_y
+					-
+					*entity_button->parent_button_group->border_up,
 					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
 				);
 
@@ -127,12 +130,14 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				=
 				round
 				(
-					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
+					(*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y - *entity_button->parent_button_group->border_bottom)
 					/
 					(
 						*entity_button->parent_button_group->region->size_y
 						-
 						*_custom_data->clickable_region_list.at(0)->region->size_y
+						+
+						*entity_button->parent_button_group->border_up
 					)
 					*
 					*data_bar->max_value * -1.0f

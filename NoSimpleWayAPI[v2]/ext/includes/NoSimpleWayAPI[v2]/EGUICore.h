@@ -77,6 +77,7 @@ public:
 	EButtonGroup* parent_button_group;
 };
 
+
 class EButtonGroup
 {
 public:
@@ -109,7 +110,15 @@ public:
 
 	void realign_all_buttons();
 	void set_world_position_and_redraw();
+
+	ESpriteLayer* background_sprite_layer;
 	
+	float* border_bottom	= new float(0.0f);
+	float* border_up		= new float(0.0f);
+
+	float* border_left		= new float(0.0f);
+	float* border_right		= new float(0.0f);
+
 
 	static void add_horizontal_scroll_bar(EButtonGroup* _button_group);
 };

@@ -1275,8 +1275,8 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 	//
 	//
 
-	if (true)
-	for (int i = _sprite_layer->sprite_frame_list.size(); i < 10'000; i++)
+	if (false)
+	for (int i = _sprite_layer->sprite_frame_list.size(); i < 1'000; i++)
 	{
 		//ESpriteLayer::add_new_default_frame_with_sprite(_texture_gabarite, _sprite_layer);
 		_sprite_layer->sprite_frame_list.push_back(ESpriteFrame::create_default_sprite_frame_with_sprite(_texture_gabarite, _sprite_layer));
@@ -1386,6 +1386,11 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 
 				for (int xx = 0; xx < count_of_generations_x; xx++)//base_sprite_fragment_offset_x = full_mid_segment_size_x - NS_ERenderCollection::border_left_size;
 				{
+					if (current_sprite_frame_id >= _sprite_layer->sprite_frame_list.size())
+					{
+						_sprite_layer->sprite_frame_list.push_back(ESpriteFrame::create_default_sprite_frame_with_sprite(_texture_gabarite, _sprite_layer));
+					}
+
 					current_sprite = _sprite_layer->sprite_frame_list.at(current_sprite_frame_id)->sprite_list.at(0);
 					current_sprite->reset_sprite();
 
@@ -1707,7 +1712,9 @@ ESpriteLayer* ESpriteLayer::create_default_sprite_layer(ETextureGabarite* _textu
 
 	jc_sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite;
 	jc_sprite->master_sprite_layer = jc_sprite_layer;
-	jc_sprite->set_texture_gabarite(_texture);
+
+
+	//if (_texture != nullptr) { jc_sprite->set_texture_gabarite(_texture); }
 
 	return jc_sprite_layer;
 }

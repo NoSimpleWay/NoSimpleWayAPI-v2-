@@ -83,6 +83,12 @@ void EButtonGroup::draw()
 
 	//EInputCore::logger_simple_success("draw button group");
 	batcher_for_default_draw->draw_call();
+
+	if (background_sprite_layer != nullptr)
+	{
+		background_sprite_layer->transfer_vertex_buffer_to_batcher();
+	}
+
 	glEnable(GL_SCISSOR_TEST);
 	if (parent_group_row == nullptr)
 	{
@@ -100,20 +106,22 @@ void EButtonGroup::draw()
 		);
 	}
 
-
-	//NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
-	//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
-	//NS_ERenderCollection::add_data_to_vertex_buffer_rama
-	//(
-	//	batcher_for_default_draw->vertex_buffer,
-	//	batcher_for_default_draw->last_vertice_buffer_index,
-	//	*region->world_position_x + 1.0f,
-	//	*region->world_position_y + 1.0f,
-	//	*region->size_x - 2.0f,
-	//	*region->size_y - 2.0f,
-	//	2.0f,
-	//	NS_DefaultGabarites::texture_gabarite_white_pixel
-	//);
+	if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
+	{
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
+		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+		NS_ERenderCollection::add_data_to_vertex_buffer_rama
+		(
+			batcher_for_default_draw->vertex_buffer,
+			batcher_for_default_draw->last_vertice_buffer_index,
+			*region->world_position_x + 1.0f,
+			*region->world_position_y + 1.0f,
+			*region->size_x - 2.0f,
+			*region->size_y - 2.0f,
+			2.0f,
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+	}
 
 
 	for (EButtonGroupRow* row : group_row_list)
@@ -144,7 +152,15 @@ void EButtonGroup::draw()
 	
 
 	for (EntityButton* but : button_list)
-	{but->draw();}
+	if
+	(
+		(*but->world_position_y + *but->button_gabarite->size_y >= *lower_culling_line)
+		&&
+		(*but->world_position_y <= *higher_culling_line)
+	)
+	{
+		but->draw();
+	}
 
 
 
@@ -165,14 +181,14 @@ void EButtonGroup::set_world_position_and_redraw()
 		*region->world_position_x = *region->offset_x;
 		*region->world_position_y = *region->offset_y;
 
-		*higher_culling_line	= *region->world_position_y + *region->size_y;
-		*lower_culling_line		= *region->world_position_y;
+		*higher_culling_line	= *region->world_position_y + *region->size_y - *border_up;
+		*lower_culling_line		= *region->world_position_y + *border_bottom;
 
 		//minimal_culling_line_top	= *higher_culling_line;
 		//minimal_culling_line_bottom	= *lower_culling_line;
 	}
 
-	
+
 
 	
 	EButtonGroup* prev_group = nullptr;
@@ -187,6 +203,7 @@ void EButtonGroup::set_world_position_and_redraw()
 		{
 			*row->gabarite->offset_y = *prev_row->gabarite->offset_y + *prev_row->gabarite->size_y + 5.0f;
 		}
+
 		prev_row = row;
 		//*row->gabarite->offset_x = rand() % 100;
 		*row->gabarite->world_position_x = *region->world_position_x + *row->gabarite->offset_x;
@@ -205,7 +222,7 @@ void EButtonGroup::set_world_position_and_redraw()
 			
 			if (prev_group != nullptr)
 			{
-				*group->region->offset_x = *prev_group->region->offset_x + *prev_group->region->size_x;
+				*group->region->offset_x = *prev_group->region->offset_x + *prev_group->region->size_x + 5.0f;
 			}
 			else
 			{
@@ -214,23 +231,23 @@ void EButtonGroup::set_world_position_and_redraw()
 			}
 
 			*group->region->world_position_x = *row->gabarite->world_position_x + *group->region->offset_x;
-			*group->region->world_position_y = *row->gabarite->world_position_y + *group->region->offset_y;
+			*group->region->world_position_y = *row->gabarite->world_position_y + *group->region->offset_y + *border_bottom;
 			*group->region->world_position_z = *row->gabarite->world_position_z + *group->region->offset_z;
 
 			
 			*group->higher_culling_line = min(*row->gabarite->world_position_y + *row->gabarite->size_y, *higher_culling_line);
-			*group->higher_culling_line = min(*group->region->world_position_y + *group->region->size_y, *group->higher_culling_line);
+			*group->higher_culling_line = min(*group->region->world_position_y + *group->region->size_y - *group->border_up, *group->higher_culling_line);
 
 			//minimal_culling_line_top = *group->higher_culling_line;
 
 			//*lower_culling_line = max(*lower_culling_line, *row->gabarite->world_position_y);
 			//*group->lower_culling_line = *lower_culling_line;
 			*group->lower_culling_line = max(*row->gabarite->world_position_y, *lower_culling_line);
-			*group->lower_culling_line = max(*group->region->world_position_y, *group->lower_culling_line);
+			*group->lower_culling_line = max(*group->region->world_position_y + *group->border_bottom, *group->lower_culling_line);
 
 			//minimal_culling_line_bottom = *group->lower_culling_line;
 
-			
+
 			//*group->highest_point_y = max(*group->highest_point_y, *row->gabarite->offset_y + *row->gabarite->size_y);
 			group->set_world_position_and_redraw();
 			
@@ -240,6 +257,25 @@ void EButtonGroup::set_world_position_and_redraw()
 
 		if (parent_group_row == nullptr) { *highest_point_y = *prev_row->gabarite->offset_y + *prev_row->gabarite->size_y; }
 		//prev_row = row;
+	}
+
+	if
+	(
+		(background_sprite_layer != nullptr)
+		&&
+		(*region->world_position_y + *region->size_y >= *lower_culling_line)
+		&&
+		(*region->world_position_y <= *higher_culling_line)
+	)
+	{
+		background_sprite_layer->sprite_layer_set_world_position
+		(
+			*region->world_position_x,
+			*region->world_position_y,
+			*region->world_position_z
+		);
+
+		background_sprite_layer->generate_vertex_buffer_for_sprite_layer("Button group background");
 	}
 
 	//if (group_row_list.empty())
@@ -260,8 +296,15 @@ void EButtonGroup::set_world_position_and_redraw()
 			but->set_world_position(*but->world_position_x, *but->world_position_y, *but->world_position_z);
 
 
-
-			but->generate_vertex_buffer_for_all_sprite_layers();
+			if
+			(
+				(*but->world_position_y + *but->button_gabarite->size_y >= *lower_culling_line)
+				&&
+				(*but->world_position_y <= *higher_culling_line)
+			)
+			{
+				but->generate_vertex_buffer_for_all_sprite_layers();
+			}
 		}
 	}
 	

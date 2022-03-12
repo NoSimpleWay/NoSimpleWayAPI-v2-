@@ -84,6 +84,8 @@ public:
 	float* world_position_z = new float(0.0f);
 
 	void translate(float _x, float _y);
+
+	static ERegionGabarite* temporary_gabarite;
 };
 
 enum ClickableRegionSides
