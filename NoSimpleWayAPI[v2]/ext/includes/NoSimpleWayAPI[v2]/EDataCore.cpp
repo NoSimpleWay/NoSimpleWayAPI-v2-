@@ -17,7 +17,7 @@
 
 EClickableRegion* EClickableRegion::active_clickable_region = nullptr;
 
-ERegionGabarite* ERegionGabarite::temporary_gabarite;
+ERegionGabarite* ERegionGabarite::temporary_gabarite = new ERegionGabarite();
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)
 {
@@ -87,7 +87,13 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 
 
-	*_entity->offset_x = *entity_button->parent_button_group->region->size_x - *entity_button->button_gabarite->size_x - 2.0f;
+	*_entity->offset_x
+	=
+	*entity_button->parent_button_group->region->size_x
+	-
+	*entity_button->button_gabarite->size_x
+	-
+	*entity_button->parent_button_group->border_right;
 
 
 
@@ -101,28 +107,36 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	=
 	max(0.0f, *entity_button->parent_button_group->highest_point_y - *entity_button->parent_button_group->region->size_y);
 
-	if (*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->catched_body)
+	if (*_custom_data->clickable_region_list.at(0)->catched_body)
 	{
-		*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id = 1;
+		if (*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id != 1)
+		{
+			*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id = 1;
+			_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
+			_entity->generate_vertex_buffer_for_all_sprite_layers();
+		}
+		
+
+		
 
 		if (EInputCore::mouse_button_state[GLFW_MOUSE_BUTTON_LEFT] != GLFW_RELEASE)
 		{
-			*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y += EInputCore::MOUSE_SPEED_Y;
+			*_custom_data->clickable_region_list.at(0)->region->offset_y += EInputCore::MOUSE_SPEED_Y;
 
-			*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
+			*_custom_data->clickable_region_list.at(0)->region->offset_y
 				=
-				max(*entity_button->parent_button_group->border_bottom, *_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y);
+				max(*entity_button->parent_button_group->border_bottom, *_custom_data->clickable_region_list.at(0)->region->offset_y);
 
-			*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
+			*_custom_data->clickable_region_list.at(0)->region->offset_y
 				=
 				min
 				(
 					*entity_button->parent_button_group->region->size_y
 					-
-					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->size_y
+					*_custom_data->clickable_region_list.at(0)->region->size_y
 					-
 					*entity_button->parent_button_group->border_up,
-					*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y
+					*_custom_data->clickable_region_list.at(0)->region->offset_y
 				);
 
 
@@ -130,18 +144,26 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				=
 				round
 				(
-					(*_entity->custom_data_list.at(0)->clickable_region_list.at(0)->region->offset_y - *entity_button->parent_button_group->border_bottom)
+					//head position (990 - 7) = 983
+					(
+						*_custom_data->clickable_region_list.at(0)->region->offset_y
+						-
+						*entity_button->parent_button_group->border_bottom
+					)
 					/
 					(
-						*entity_button->parent_button_group->region->size_y
+						*entity_button->parent_button_group->region->size_y//1000
 						-
-						*_custom_data->clickable_region_list.at(0)->region->size_y
-						+
+						*_custom_data->clickable_region_list.at(0)->region->size_y//39
+						-
 						*entity_button->parent_button_group->border_up
+						-
+						*entity_button->parent_button_group->border_bottom//7
 					)
 					*
 					*data_bar->max_value * -1.0f
 				);
+
 
 			//EInputCore::logger_param("max value", *data_bar->max_value);
 			//EInputCore::logger_param("scroll value", *data_bar->value_pointer);
@@ -733,6 +755,17 @@ void ERegionGabarite::translate(float _x, float _y)
 
 	*world_position_x += _x;
 	*world_position_y += _y;
+}
+
+void ERegionGabarite::set_region_offset_and_size(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y)
+{
+	*offset_x = _offset_x;
+	*offset_y = _offset_y;
+	*offset_z = _offset_z;
+
+	*size_x = _size_x;
+	*size_y = _size_y;
+
 }
 
 ECustomData::ECustomData()

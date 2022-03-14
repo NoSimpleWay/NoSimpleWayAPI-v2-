@@ -86,9 +86,13 @@ public:
 
 	//float* size_x = new float(0.0f);
 	//float* size_y = new float(0.0f);
-	ERenderBatcher* batcher_for_default_draw;
 
-	ERegionGabarite* region;
+	EButtonGroup(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
+	~EButtonGroup();
+
+	ERenderBatcher* batcher_for_default_draw = nullptr;
+
+	ERegionGabarite* region = nullptr;
 
 	std::vector<EntityButton*> button_list;
 	std::vector<EButtonGroupRow*> group_row_list;
@@ -111,7 +115,7 @@ public:
 	void realign_all_buttons();
 	void set_world_position_and_redraw();
 
-	ESpriteLayer* background_sprite_layer;
+	ESpriteLayer* background_sprite_layer = nullptr;
 	
 	float* border_bottom	= new float(0.0f);
 	float* border_up		= new float(0.0f);
@@ -121,6 +125,7 @@ public:
 
 
 	static void add_horizontal_scroll_bar(EButtonGroup* _button_group);
+	static void set_borders(EButtonGroup* _group, float _left, float _right, float _bottom, float _up);
 };
 
 //class EButtonContainer

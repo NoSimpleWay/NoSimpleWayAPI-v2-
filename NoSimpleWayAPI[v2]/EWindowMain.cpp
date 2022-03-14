@@ -160,29 +160,19 @@ EWindowMain::EWindowMain()
 
 	////////////////////////////////////////////////
 	//main button group
-	main_button_group = new EButtonGroup();
+	main_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 1920.0f, 1000.0f);
 		main_button_group->background_sprite_layer = ESpriteLayer::create_default_sprite_layer(NS_DefaultGabarites::texture_gabarite_gudron);
 		
-		*main_button_group->border_bottom = 7.0f;
-		*main_button_group->border_up = 7.0f;
-			
+		EButtonGroup::set_borders(main_button_group, 7.0f, 7.0f, 7.0f, 7.0f);
 
 		button_group_list.push_back(main_button_group);
 		main_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
-		jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 1200.0f, 800.0f);
-		main_button_group->region = jc_region_gabarite;
+		//jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 1200.0f, 1000.0f);
+		//main_button_group->region = jc_region_gabarite;
 		EButtonGroup::add_horizontal_scroll_bar(main_button_group);
 		
-			NS_ERenderCollection::border_up_size = 7.0f;
-			NS_ERenderCollection::border_down_size = 7.0f;
-
-			NS_ERenderCollection::border_left_size = 7.0f;
-			NS_ERenderCollection::border_right_size = 7.0f;
-
-			NS_ERenderCollection::subdivision_x = 2.0f;
-			NS_ERenderCollection::subdivision_y = 2.0f;
-
-			NS_ERenderCollection::generate_brick_texture(jc_region_gabarite, main_button_group->background_sprite_layer, NS_DefaultGabarites::texture_lead_and_gold);
+			NS_ERenderCollection::set_borders_and_subdivisions(7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
+			NS_ERenderCollection::generate_brick_texture(main_button_group->region, main_button_group->background_sprite_layer, NS_DefaultGabarites::texture_lead_and_gold);
 			main_button_group->background_sprite_layer->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
 			main_button_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("init bg");
 
@@ -190,25 +180,33 @@ EWindowMain::EWindowMain()
 		{
 			//new row
 			jc_button_group_row = new EButtonGroupRow();
-			jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 1200.0f, 160.0f); jc_button_group_row->gabarite = jc_region_gabarite;
+			jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 1200.0f, 150.0f); jc_button_group_row->gabarite = jc_region_gabarite;
 			jc_button_group_row->parent_button_group = main_button_group;
 			main_button_group->group_row_list.push_back(jc_button_group_row);
 
 			//new group
-			jc_button_group = new EButtonGroup(); jc_button_group_row->button_group_list.push_back(jc_button_group);
-				
+			jc_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 100.0f, 150.0f); jc_button_group_row->button_group_list.push_back(jc_button_group);
+				EButtonGroup::set_borders(jc_button_group, 7.0f, 7.0f, 7.0f, 7.0f);
+				//*jc_button_group->border_left = 7.0f;
+				//*jc_button_group->border_bottom = 7.0f;
+				//*jc_button_group->border_up = 7.0f;
 
 			jc_button_group->parent_group_row = jc_button_group_row;
 			jc_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
-			jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 100.0f, 150.0f); jc_button_group->region = jc_region_gabarite;
+			//jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 100.0f, 150.0f); jc_button_group->region = jc_region_gabarite;
+				jc_button_group->background_sprite_layer = ESpriteLayer::create_default_sprite_layer(NS_DefaultGabarites::texture_gabarite_gudron);
 				
+				NS_ERenderCollection::set_borders_and_subdivisions(7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
+				NS_ERenderCollection::generate_brick_texture(jc_button_group->region, jc_button_group->background_sprite_layer, NS_DefaultGabarites::texture_lead_and_gold);
+				jc_button_group->background_sprite_layer->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
+				jc_button_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("init bg");
 			EButtonGroup::add_horizontal_scroll_bar(jc_button_group);
 
-			EInputCore::logger_param("row count", main_button_group->group_row_list.size());
+			//EInputCore::logger_param("row count", main_button_group->group_row_list.size());
 
 
 
-			//button section
+			//"ZZZ" buttons
 			for (int i = 0; i < 10; i++)
 			{
 				jc_button = new EntityButton();
@@ -268,21 +266,24 @@ EWindowMain::EWindowMain()
 				jc_button->generate_vertex_buffer_for_all_sprite_layers();
 			}
 
+			//items group
 			for (int k = 0; k < 1; k++)
 			{
 				//sub button group [level 1]
 
 
-				jc_button_group = new EButtonGroup(); jc_button_group_row->button_group_list.push_back(jc_button_group);
-				*jc_button_group->border_bottom = 7.0f;
-				*jc_button_group->border_up = 7.0f;
-				jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 600.0f, 150.0f); jc_button_group->region = jc_region_gabarite;
+				jc_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 600.0f, 150.0f); jc_button_group_row->button_group_list.push_back(jc_button_group);
+				EButtonGroup::set_borders(jc_button_group, 7.0f, 7.0f, 7.0f, 7.0f);
+				//*jc_button_group->border_bottom = 7.0f;
+				//*jc_button_group->border_up = 7.0f;
+				//jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 600.0f, 150.0f); jc_button_group->region = jc_region_gabarite;
 				jc_button_group->parent_group_row = jc_button_group_row;
 
 				jc_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 					jc_button_group->background_sprite_layer = ESpriteLayer::create_default_sprite_layer(NS_DefaultGabarites::texture_gabarite_gudron);
-
-					NS_ERenderCollection::generate_brick_texture(jc_region_gabarite, jc_button_group->background_sprite_layer, NS_DefaultGabarites::texture_lead_and_gold);
+					
+					NS_ERenderCollection::set_borders_and_subdivisions(7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
+					NS_ERenderCollection::generate_brick_texture(jc_button_group->region, jc_button_group->background_sprite_layer, NS_DefaultGabarites::texture_lead_and_gold);
 					jc_button_group->background_sprite_layer->sprite_layer_set_world_position
 					(
 						0.0f,
@@ -292,7 +293,7 @@ EWindowMain::EWindowMain()
 					jc_button_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("init bg");
 
 				EButtonGroup::add_horizontal_scroll_bar(jc_button_group);
-				//button section
+				//button item
 				for (int i = 0; i < 120; i++)
 				{
 					jc_button = new EntityButton();

@@ -62,6 +62,7 @@ namespace NS_DefaultGabarites
 	ETextureGabarite* texture_gabarite_gudron;
 	ETextureGabarite* texture_rusted_bronze;
 	ETextureGabarite* texture_lead_and_gold;
+	ETextureGabarite* texture_slider_bg_lead_and_gold;
 	ETextureGabarite* texture_gabarite_white_pixel;
 }
 ERenderBatcher::ERenderBatcher()
@@ -489,10 +490,11 @@ void NS_EGraphicCore::initiate_graphic_core()
 	default_batcher_for_drawing->set_shader(new Shader("data/#default.vs", "data/#default.fs"));
 
 
-	NS_DefaultGabarites::texture_gabarite_white_pixel = NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_gabarite_gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_rusted_bronze = NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_lead_and_gold = NS_EGraphicCore::put_texture_to_atlas("data/textures/Lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_gabarite_white_pixel		= NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_gabarite_gudron			= NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_rusted_bronze				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_slider_bg_lead_and_gold	= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 	
 	//font
 	EFont* new_font = NULL;
@@ -1208,6 +1210,19 @@ void NS_ERenderCollection::call_render_textured_sprite(ESprite* _sprite)
 
 
 
+void NS_ERenderCollection::set_borders_and_subdivisions(float _left, float _right, float _bottom, float _up, int _subdivision_x, int _subdivision_y)
+{
+	border_left_size = _left;
+	border_right_size = _right;
+
+	border_down_size = _bottom;
+	border_up_size = _up;
+
+	subdivision_x = _subdivision_x;
+	subdivision_y = _subdivision_y;
+
+}
+
 void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite)
 {
 
@@ -1725,6 +1740,18 @@ ESprite* ESpriteLayer::get_last_created_sprite(ESpriteLayer* _layer)
 	int last_sprite_id	= _layer->sprite_frame_list[last_frame_id]->sprite_list.size() - 1;
 
 	return _layer->sprite_frame_list[last_frame_id]->sprite_list[last_sprite_id];
+}
+
+ESpriteFrame* ESpriteLayer::get_last_sprite_frame(ESpriteLayer* _layer)
+{
+	if (!_layer->sprite_frame_list.empty())
+	{
+		return _layer->sprite_frame_list[_layer->sprite_frame_list.size() - 1];
+	}
+	else
+	{
+		return nullptr;
+	}
 }
 
 void ESpriteLayer::set_size_for_last_sprite(ESpriteLayer* _layer, float _size_x, float _size_y)
