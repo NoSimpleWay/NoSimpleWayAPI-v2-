@@ -97,6 +97,7 @@ public:
 	EButtonGroup* parent_button_group;
 
 	bool* fixed_position = new bool(false);
+	bool* update_when_scissored = new bool(false);
 };
 
 class ECluster

@@ -137,3 +137,17 @@ public:
 //
 //	std::vector<EButtonGroup*> button_group_list;
 //};
+
+class EGUIStyle
+{
+	float* style_border_left = new float(0.0f);
+	float* style_border_right = new float(0.0f);
+
+	float* style_border_up = new float(0.0f);
+	float* style_border_bottom = new float(0.0f);
+
+	ETextureGabarite* background_for_button_group	= nullptr;
+	ETextureGabarite* background_for_slider			= nullptr;
+	ETextureGabarite* slider_head_inactive			= nullptr;
+	ETextureGabarite* slider_head_active			= nullptr;
+};

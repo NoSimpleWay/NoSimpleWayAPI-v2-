@@ -74,6 +74,9 @@ void EButtonGroup::update(float _d)
 	//subgroup
 	//EButtonGroup* prev_group = nullptr;
 
+	//if (but->re*higher_culling_line)
+
+
 	for (EButtonGroupRow* row : group_row_list)
 	if (row != nullptr)
 	{
@@ -83,14 +86,26 @@ void EButtonGroup::update(float _d)
 		}
 	}
 
-	//final button groun, not subgroup
-	//if (group_row_list.empty())
 	{
 		for (EntityButton* but : button_list)
+		if
+		(
+			(*but->update_when_scissored)
+			||
+			(
+				(*but->button_gabarite->world_position_y <= *higher_culling_line + 7.0f)
+				&&
+				(*but->button_gabarite->world_position_y + *but->button_gabarite->size_y >= *lower_culling_line - 7.0f)
+			)
+		)
 		{
 			but->update(_d);
 		}
 	}
+
+	//final button groun, not subgroup
+	//if (group_row_list.empty())
+
 }
 
 void EButtonGroup::draw()
@@ -533,6 +548,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	but->button_gabarite = button_gabarite;
 	but->parent_button_group = _button_group;
 	*but->fixed_position = true;
+	*but->update_when_scissored = true;
 
 	custom_data->data_container = data_container;
 	custom_data->clickable_region_list.push_back(cl_region);

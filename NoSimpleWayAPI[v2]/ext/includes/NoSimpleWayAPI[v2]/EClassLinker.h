@@ -29,7 +29,7 @@ class EFontGlyph;
 class EDataTag;
 class EDataEntity;
 
-
+class EGUIStyle;
 
 
 

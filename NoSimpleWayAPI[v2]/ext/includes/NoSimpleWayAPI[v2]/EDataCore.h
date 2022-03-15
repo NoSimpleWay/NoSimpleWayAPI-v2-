@@ -87,6 +87,7 @@ public:
 
 	static ERegionGabarite* temporary_gabarite;
 	void set_region_offset_and_size(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
+	bool overlapped_by_mouse();
 };
 
 enum ClickableRegionSides

@@ -45,7 +45,7 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 		(NS_FONT_UTILS::active_text_area == nullptr)
 	)
 	{
-		_entity->translate_entity(0.0f, 100.0f * _d, 0.0f);
+		_entity->translate_entity(0.0f, 1000.0f * _d, 0.0f);
 
 	};
 
@@ -56,7 +56,7 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 		(NS_FONT_UTILS::active_text_area == nullptr)
 	)
 	{
-		_entity->translate_entity(0.0f, -100.0f * _d, 0.0f);
+		_entity->translate_entity(0.0f, -1000.0f * _d, 0.0f);
 
 	};
 
@@ -107,7 +107,16 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	=
 	max(0.0f, *entity_button->parent_button_group->highest_point_y - *entity_button->parent_button_group->region->size_y);
 
-	if (*_custom_data->clickable_region_list.at(0)->catched_body)
+	if
+	(
+		(
+			(EClickableRegion::active_clickable_region == nullptr)
+			||
+			(EClickableRegion::active_clickable_region == _custom_data->clickable_region_list.at(0))
+		)
+		&&
+		(*_custom_data->clickable_region_list.at(0)->catched_body)
+	)
 	{
 		if (*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id != 1)
 		{
@@ -469,7 +478,11 @@ void EClickableRegion::check_all_catches()
 			(*catched_side_down)
 			||
 			(*catched_side_mid)
+			||
+			(*catched_body)
 		)
+		&&
+		(EInputCore::MOUSE_BUTTON_LEFT)
 	)
 	{
 
@@ -766,6 +779,27 @@ void ERegionGabarite::set_region_offset_and_size(float _offset_x, float _offset_
 	*size_x = _size_x;
 	*size_y = _size_y;
 
+}
+
+bool ERegionGabarite::overlapped_by_mouse()
+{
+	if
+	(
+		(EInputCore::MOUSE_POSITION_X >= *world_position_x)
+		&&
+		(EInputCore::MOUSE_POSITION_X <= *world_position_x + *size_x)
+		&&
+		(EInputCore::MOUSE_POSITION_Y >= *world_position_y)
+		&&
+		(EInputCore::MOUSE_POSITION_Y <= *world_position_y + *size_y)
+	)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 ECustomData::ECustomData()

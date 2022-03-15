@@ -96,7 +96,7 @@ EWindowMain::EWindowMain()
 	*jc_entity->offset_y = 40.0f;
 	*jc_entity->world_position_x = 30.0f;
 	*jc_entity->world_position_y = 40.0f;
-	cluster_array[0][0]->entity_list.push_back(jc_entity);
+	//cluster_array[0][0]->entity_list.push_back(jc_entity);
 
 	//jc_sprite_frame->sprite_list.push_back(jc_sprite);
 
