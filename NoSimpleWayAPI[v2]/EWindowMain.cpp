@@ -158,6 +158,15 @@ EWindowMain::EWindowMain()
 		"Orb_of_Transmutation_inventory_icon"
 	};
 
+	std::string random_item_property[5] =
+	{
+		"Item level",
+		"Map tier",
+		"Links",
+		"Sockets",
+		"Require level"
+	};
+
 	////////////////////////////////////////////////
 	//main button group
 	main_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 1920.0f, 1000.0f);
@@ -185,7 +194,7 @@ EWindowMain::EWindowMain()
 			main_button_group->group_row_list.push_back(jc_button_group_row);
 
 			//new group
-			jc_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 100.0f, 150.0f); jc_button_group_row->button_group_list.push_back(jc_button_group);
+			jc_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 230.0f, 150.0f); jc_button_group_row->button_group_list.push_back(jc_button_group);
 				EButtonGroup::set_borders(jc_button_group, 7.0f, 7.0f, 7.0f, 7.0f);
 				//*jc_button_group->border_left = 7.0f;
 				//*jc_button_group->border_bottom = 7.0f;
@@ -208,11 +217,13 @@ EWindowMain::EWindowMain()
 
 			//"ZZZ" buttons
 			for (int i = 0; i < 10; i++)
+			for (int j = 0; j < 3; j++)
 			{
 				jc_button = new EntityButton();
 				jc_custom_data = new ECustomData();
 				EDataContainerMessage* jc_data_container_message = new EDataContainerMessage();
-				*jc_data_container_message->message = "123";
+				 *jc_data_container_message->message = "ItemLevel";
+				
 				//jc_custom_data->action
 
 				jc_custom_data->data_container = jc_data_container_message;
@@ -222,8 +233,11 @@ EWindowMain::EWindowMain()
 
 				*jc_button->fixed_position = false;
 
+				if (j == 0) { jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 100.0f, 20.0f); } else
+				if (j == 1) { jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 20.0f, 20.0f); } else
+				if (j == 2) { jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 50.0f, 20.0f); }
 
-				jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 70.0f, 20.0f);
+				//jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 70.0f, 20.0f);
 				jc_button->button_gabarite = jc_region_gabarite;
 
 				jc_clickable_region = EClickableRegion::create_default_clickable_region(jc_region_gabarite, jc_button, jc_custom_data);
@@ -236,14 +250,17 @@ EWindowMain::EWindowMain()
 				jc_button_group->button_list.push_back(jc_button);
 
 				jc_sprite_layer = ESpriteLayer::create_default_sprite_layer(NS_EGraphicCore::put_texture_to_atlas("data/textures/button_bg.png", NS_EGraphicCore::default_texture_atlas));
-				ESpriteLayer::set_size_for_last_sprite(jc_sprite_layer, 70.0f, 20.0f);
+				ESpriteLayer::set_size_for_last_sprite(jc_sprite_layer, *jc_region_gabarite->size_x, 20.0f);
 
 				jc_button->sprite_layer_list.push_back(jc_sprite_layer);
 
 
 				jc_text_area = new ETextArea();
 				jc_clickable_region->text_area = jc_text_area;
-				*jc_text_area->stored_text = "Zzz";
+
+				if (j == 0) { *jc_text_area->stored_text = random_item_property[rand() % 5]; } else
+				if (j == 1) { *jc_text_area->stored_text = "="; } else
+				if (j == 2) { *jc_text_area->stored_text = std::to_string(rand() % 100); }
 
 				*jc_text_area->offset_by_gabarite_size_y = 0.0f;
 				*jc_text_area->offset_by_text_size_y = -0.0f;
