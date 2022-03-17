@@ -62,6 +62,8 @@ namespace NS_DefaultGabarites
 	ETextureGabarite* texture_gabarite_gudron;
 	ETextureGabarite* texture_rusted_bronze;
 	ETextureGabarite* texture_lead_and_gold;
+	ETextureGabarite* texture_lapis_wood;
+	ETextureGabarite* texture_black_marble;
 	ETextureGabarite* texture_slider_bg_lead_and_gold;
 	ETextureGabarite* texture_gabarite_white_pixel;
 }
@@ -494,6 +496,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_DefaultGabarites::texture_gabarite_gudron			= NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_rusted_bronze				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_black_marble				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Black_marble.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_lapis_wood					= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_slider_bg_lead_and_gold	= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 	
 	//font
@@ -1679,7 +1683,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 			(
 				batcher->vertex_buffer + batcher->last_vertice_buffer_index,
 				vertex_buffer + (size_t)(i * vertices_buffer_capacity),
-				min(data_size, vertices_buffer_capacity) * sizeof(*vertex_buffer)
+				min(data_size - i * vertices_buffer_capacity, vertices_buffer_capacity) * sizeof(*vertex_buffer)
 			);
 
 			batcher->last_vertice_buffer_index += min(data_size, vertices_buffer_capacity);

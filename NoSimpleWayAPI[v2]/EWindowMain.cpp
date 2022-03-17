@@ -180,11 +180,12 @@ EWindowMain::EWindowMain()
 		//main_button_group->region = jc_region_gabarite;
 		EButtonGroup::add_horizontal_scroll_bar(main_button_group);
 		
-			NS_ERenderCollection::set_borders_and_subdivisions(7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
-			NS_ERenderCollection::generate_brick_texture(main_button_group->region, main_button_group->background_sprite_layer, NS_DefaultGabarites::texture_lead_and_gold);
+			NS_ERenderCollection::set_borders_and_subdivisions(5.0f, 5.0f, 5.0f, 5.0f, 2, 2);
+			NS_ERenderCollection::generate_brick_texture(main_button_group->region, main_button_group->background_sprite_layer, NS_DefaultGabarites::texture_black_marble);
 			main_button_group->background_sprite_layer->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
 			main_button_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("init bg");
 
+			NS_ERenderCollection::set_borders_and_subdivisions(7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
 		for (int z = 0; z < 10; z++)
 		{
 			//new row
