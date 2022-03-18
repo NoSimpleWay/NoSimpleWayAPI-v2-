@@ -577,3 +577,17 @@ void EButtonGroup::set_borders(EButtonGroup* _group, float _left, float _right, 
 	*_group->border_bottom	= _bottom;
 	*_group->border_up		= _up;
 }
+
+void EGUIStyle::set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, float _subdivision_x, float _subdivision_y)
+{
+	*_style->border_left	= _border_left;
+	*_style->border_right	= _border_right;
+
+	*_style->border_up		= _border_up;
+	*_style->border_bottom	= _border_bottom;
+
+
+
+	*_style->subdivision_x	= _subdivision_x;
+	*_style->subdivision_y	= _subdivision_y;
+}

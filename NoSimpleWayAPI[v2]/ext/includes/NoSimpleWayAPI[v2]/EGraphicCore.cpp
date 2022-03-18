@@ -500,6 +500,14 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_DefaultGabarites::texture_lapis_wood					= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_slider_bg_lead_and_gold	= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 	
+	//STYLE LIST//
+		//lead and gold
+		EGUIStyle* just_created_style = new EGUIStyle();
+		EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
+		just_created_style->slider_head_active				= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_head_lead_and_gold_active.png", NS_EGraphicCore::default_texture_atlas);
+		just_created_style->slider_head_inactive			= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_head_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+	
+		
 	//font
 	EFont* new_font = NULL;
 	ETextureGabarite* font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/franklin_0.png", NS_EGraphicCore::default_texture_atlas);

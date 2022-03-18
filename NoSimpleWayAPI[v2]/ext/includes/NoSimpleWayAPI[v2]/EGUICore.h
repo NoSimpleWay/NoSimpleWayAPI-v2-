@@ -137,17 +137,34 @@ public:
 //
 //	std::vector<EButtonGroup*> button_group_list;
 //};
-
+enum StyleList
+{
+	STYLE_LIST_LEAD_AND_GOLD
+};
 class EGUIStyle
 {
-	float* style_border_left = new float(0.0f);
-	float* style_border_right = new float(0.0f);
+public:
+	float* style_border_left	= new float(0.0f);
+	float* style_border_right	= new float(0.0f);
 
-	float* style_border_up = new float(0.0f);
-	float* style_border_bottom = new float(0.0f);
+	float* style_border_up		= new float(0.0f);
+	float* style_border_bottom	= new float(0.0f);
+
+	float* border_left			= new float(0.0f);
+	float* border_right			= new float(0.0f);
+
+	float* border_up			= new float(0.0f);
+	float* border_bottom		= new float(0.0f);
+
+	int* subdivision_x			= new int (0);
+	int* subdivision_y			= new int (0);
 
 	ETextureGabarite* background_for_button_group	= nullptr;
 	ETextureGabarite* background_for_slider			= nullptr;
 	ETextureGabarite* slider_head_inactive			= nullptr;
 	ETextureGabarite* slider_head_active			= nullptr;
+
+	static void set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, float _subdivision_x, float _subdivision_y);
+	
+	static std::vector<EGUIStyle*> style_list;
 };
