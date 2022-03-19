@@ -100,7 +100,7 @@ namespace NS_ERenderCollection
 	extern unsigned int		subdivision_x;
 	extern unsigned int		subdivision_y;
 
-	extern void				set_borders_and_subdivisions(float _left, float _right, float _bottom, float _up, int _subdivision_x, int _subdivision_y);
+	extern void				set_brick_borders_and_subdivisions(float _left, float _right, float _bottom, float _up, int _subdivision_x, int _subdivision_y);
 
 	//
 	//gabarite
@@ -168,6 +168,7 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_lead_and_gold;
 	extern ETextureGabarite* texture_lapis_wood;
 	extern ETextureGabarite* texture_black_marble;
+	extern ETextureGabarite* texture_dark_spruce;
 	extern ETextureGabarite* texture_slider_bg_lead_and_gold;
 	extern ETextureGabarite* texture_gabarite_white_pixel;
 	//extern 
@@ -382,7 +383,7 @@ public:
 	void sprite_set_world_positions(float _x, float _y, float _z);
 
 	static ESprite* create_default_sprite(ETextureGabarite* _gabarite, ESpriteLayer* _sprite_layer);
-	
+	static void set_size(ESprite* _sprite, float _size_x, float _size_y, float _size_z);
 
 	
 };
@@ -430,6 +431,8 @@ public:
 	static ESpriteFrame* get_last_sprite_frame(ESpriteLayer* _layer);
 	static void set_size_for_last_sprite(ESpriteLayer* _layer, float _size_x, float _size_y);
 	static void add_new_default_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _sprite_layer);
+
+	bool* disable_draw = new bool(false);
 };
 
 

@@ -234,6 +234,17 @@ ETextArea::ETextArea()
 {
 }
 
+ETextArea::ETextArea(EClickableRegion* _region, EFont* _font, std::string _text)
+{
+	region_gabarite = _region->region;
+	font = _font;
+	*stored_text = _text;
+
+	master_clickable_region = _region;
+
+	sprite_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
+}
+
 ETextArea::~ETextArea()
 {
 }

@@ -48,6 +48,7 @@ public:
 
 	//WHAT do with data
 	std::vector<data_action_pointer> actions_on_update;
+	std::vector<data_action_pointer> actions_on_change_style;
 
 	void draw();
 	void update(float _d);
@@ -66,6 +67,7 @@ public:
 	~ERegionGabarite();
 
 	ERegionGabarite(float _offset_x, float _offset_y, float _size_x, float _size_y);
+	ERegionGabarite(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
 
 	float* offset_x = new float(0.0f);
 	float* offset_y = new float(0.0f);
@@ -182,4 +184,5 @@ namespace EDataActionCollection
 	void action_log_text					(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_player_control				(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_update_slider				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_change_style				(Entity* _entity, ECustomData* _custom_data, float _d);
 }

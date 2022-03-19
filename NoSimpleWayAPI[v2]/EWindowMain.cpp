@@ -169,52 +169,28 @@ EWindowMain::EWindowMain()
 
 	////////////////////////////////////////////////
 	//main button group
-	main_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 1920.0f, 1000.0f);
-		main_button_group->background_sprite_layer = ESpriteLayer::create_default_sprite_layer(NS_DefaultGabarites::texture_gabarite_gudron);
-		
-		EButtonGroup::set_borders(main_button_group, 7.0f, 7.0f, 7.0f, 7.0f);
+	main_button_group = EButtonGroup::create_default_button_group
+	(
+		new ERegionGabarite(0.0f, 0.0f, 0.0f, 1920.0f, 1000.0f),
+		EGUIStyle::active_style
+	);
+	button_group_list.push_back(main_button_group);
 
-		button_group_list.push_back(main_button_group);
-		main_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
-		//jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 1200.0f, 1000.0f);
-		//main_button_group->region = jc_region_gabarite;
-		EButtonGroup::add_horizontal_scroll_bar(main_button_group);
 		
-			NS_ERenderCollection::set_borders_and_subdivisions(5.0f, 5.0f, 5.0f, 5.0f, 2, 2);
-			NS_ERenderCollection::generate_brick_texture(main_button_group->region, main_button_group->background_sprite_layer, NS_DefaultGabarites::texture_black_marble);
-			main_button_group->background_sprite_layer->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
-			main_button_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("init bg");
 
-			NS_ERenderCollection::set_borders_and_subdivisions(7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
+
 		for (int z = 0; z < 10; z++)
 		{
-			//new row
-			jc_button_group_row = new EButtonGroupRow();
-			jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 1200.0f, 150.0f); jc_button_group_row->gabarite = jc_region_gabarite;
-			jc_button_group_row->parent_button_group = main_button_group;
-			main_button_group->group_row_list.push_back(jc_button_group_row);
+			jc_button_group_row = EButtonGroup::add_default_row(main_button_group, new ERegionGabarite(0.0f, 0.0f, 1200.0f, 150.0f));
 
 			//new group
-			jc_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 230.0f, 150.0f); jc_button_group_row->button_group_list.push_back(jc_button_group);
-				EButtonGroup::set_borders(jc_button_group, 7.0f, 7.0f, 7.0f, 7.0f);
-				//*jc_button_group->border_left = 7.0f;
-				//*jc_button_group->border_bottom = 7.0f;
-				//*jc_button_group->border_up = 7.0f;
+			jc_button_group = EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(0.0f, 0.0f, 0.0f, 230.0f, 150.0f),
+				EGUIStyle::active_style
+			);
 
-			jc_button_group->parent_group_row = jc_button_group_row;
-			jc_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
-			//jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 100.0f, 150.0f); jc_button_group->region = jc_region_gabarite;
-				jc_button_group->background_sprite_layer = ESpriteLayer::create_default_sprite_layer(NS_DefaultGabarites::texture_gabarite_gudron);
-				
-				NS_ERenderCollection::set_borders_and_subdivisions(7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
-				NS_ERenderCollection::generate_brick_texture(jc_button_group->region, jc_button_group->background_sprite_layer, NS_DefaultGabarites::texture_lead_and_gold);
-				jc_button_group->background_sprite_layer->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
-				jc_button_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("init bg");
-			EButtonGroup::add_horizontal_scroll_bar(jc_button_group);
-
-			//EInputCore::logger_param("row count", main_button_group->group_row_list.size());
-
-
+			jc_button_group_row->add_group(jc_button_group);
 
 			//"ZZZ" buttons
 			for (int i = 0; i < 10; i++)
@@ -291,7 +267,7 @@ EWindowMain::EWindowMain()
 
 
 				jc_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 600.0f, 150.0f); jc_button_group_row->button_group_list.push_back(jc_button_group);
-				EButtonGroup::set_borders(jc_button_group, 7.0f, 7.0f, 7.0f, 7.0f);
+				EButtonGroup::set_offset_borders(jc_button_group, 7.0f, 7.0f, 7.0f, 7.0f);
 				//*jc_button_group->border_bottom = 7.0f;
 				//*jc_button_group->border_up = 7.0f;
 				//jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 600.0f, 150.0f); jc_button_group->region = jc_region_gabarite;
@@ -300,7 +276,7 @@ EWindowMain::EWindowMain()
 				jc_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 					jc_button_group->background_sprite_layer = ESpriteLayer::create_default_sprite_layer(NS_DefaultGabarites::texture_gabarite_gudron);
 					
-					NS_ERenderCollection::set_borders_and_subdivisions(7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
+					NS_ERenderCollection::set_brick_borders_and_subdivisions(7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
 					NS_ERenderCollection::generate_brick_texture(jc_button_group->region, jc_button_group->background_sprite_layer, NS_DefaultGabarites::texture_lead_and_gold);
 					jc_button_group->background_sprite_layer->sprite_layer_set_world_position
 					(
@@ -362,11 +338,132 @@ EWindowMain::EWindowMain()
 		}
 	
 
-	button_group_list[0]->realign_all_buttons();
-	button_group_list[0]->set_world_position_and_redraw();
+	main_button_group->realign_all_buttons();
+	main_button_group->set_world_position_and_redraw();
+	
+
+	main_button_group = EButtonGroup::create_default_button_group
+	(
+		new ERegionGabarite(800.0f, 100.0f, 0.0f, 400.0f, 600.0f),
+		EGUIStyle::active_style
+	);
+
+	//main row
+	jc_button_group_row	= EButtonGroup::add_default_row
+	(
+		main_button_group,
+		new ERegionGabarite(0.0f, 0.0f, 350.0f, 200.0f)
+	);
+
+		//group
+		jc_button_group_row->add_group
+		(
+			EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(0.0f, 0.0f, 0.0f, 350.0f, 200.0f),
+				EGUIStyle::active_style
+			)
+		);
+		jc_button_group = EButtonGroupRow::get_last_group(jc_button_group_row);
+
+			//subrow big
+			jc_button_group_row = EButtonGroup::add_default_row
+			(
+				jc_button_group,
+				new ERegionGabarite(0.0f, 0.0f, 334.0f, 130.0f)
+			);
+
+				//group
+				jc_button_group_row->add_group
+				(
+					EButtonGroup::create_default_button_group
+					(
+						new ERegionGabarite(0.0f, 0.0f, 0.0f, 334.0f, 130.0f),
+						EGUIStyle::active_style
+					)
+				);
+
+
+			//subrow small
+			jc_button_group_row = EButtonGroup::add_default_row
+			(
+				jc_button_group,
+				new ERegionGabarite(0.0f, 0.0f, 334.0f, 50.0f)
+			);
+
+				//group
+				jc_button_group_row->add_group
+				(
+					EButtonGroup::create_default_button_group
+					(
+						new ERegionGabarite(0.0f, 0.0f, 0.0f, 334.0f, 50.0f),
+						EGUIStyle::active_style
+					)
+				);
+
+				jc_button_group = EButtonGroupRow::get_last_group(jc_button_group_row);
+
+				if (jc_button_group != nullptr)
+				{
+					jc_button = new EntityButton();
+					jc_button->sprite_layer_list.push_back
+					(
+						ESpriteLayer::create_default_sprite_layer
+						(NS_EGraphicCore::put_texture_to_atlas("data/textures/button_bg_bright.png", NS_EGraphicCore::default_texture_atlas))
+					);
+
+					ESprite::set_size
+					(
+						Entity::get_last_sprite(jc_button),
+						100.0f,
+						20.0f,
+						0.0f
+					);
+
+					jc_button->set_world_position(*jc_button->offset_x, *jc_button->offset_y, *jc_button->offset_z);
+					jc_button->generate_vertex_buffer_for_all_sprite_layers();
+						jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 100.0f, 20.0f);
+
+						jc_custom_data = new ECustomData();
+							jc_button->custom_data_list.push_back(jc_custom_data);
+
+						jc_clickable_region =	EClickableRegion::create_default_clickable_region
+												(jc_region_gabarite, jc_button, jc_custom_data);
+
+						
+						jc_custom_data->clickable_region_list.push_back(jc_clickable_region);
+						jc_custom_data->parent_entity = jc_button;
+						jc_button->button_gabarite = jc_region_gabarite;
+
+						jc_text_area = new ETextArea(jc_clickable_region, EFont::font_list[0], "Select this style");
+						
+						*jc_text_area->offset_by_gabarite_size_x = 0.5f;
+						*jc_text_area->offset_by_gabarite_size_y = 0.5f;
+						
+						*jc_text_area->offset_by_text_size_x = -0.5f;
+						*jc_text_area->offset_by_text_size_y = -0.5f;
+
+
+						jc_text_area->generate_rows();
+						jc_text_area->generate_text();
+
+						jc_clickable_region->text_area = jc_text_area;
+
+						jc_button_group->button_list.push_back(jc_button);
+				}
+				else
+				{
+					EInputCore::logger_simple_error("jc_button group is NULL!");
+				}
+
+
 	
 	
 	
+	
+	button_group_list.push_back(main_button_group);
+	main_button_group->realign_all_buttons();
+	main_button_group->set_world_position_and_redraw();
 	
 	
 	

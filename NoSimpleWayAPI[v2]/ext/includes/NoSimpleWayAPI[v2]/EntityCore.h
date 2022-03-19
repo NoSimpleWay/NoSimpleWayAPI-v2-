@@ -1,5 +1,7 @@
 #pragma once
 
+#define _CHECK_VECTOR_BOUND(v, id) (id < v.size()) && (id >= 0)
+
 /**/
 #ifndef _E_CLASS_LINKER_ALREADY_LINKED_
 #define _E_CLASS_LINKER_ALREADY_LINKED_
@@ -69,6 +71,13 @@ public:
 
 	ESprite* get_sprite_from_data(unsigned int _data_id, unsigned int _layer_id, unsigned int _frame_id, unsigned int _frame);
 	ESpriteLayer* get_sprite_layer_by_id(unsigned int id);
+
+	ESprite*			get_sprite_from_entity(unsigned int _layer, unsigned int _frame, unsigned int _frame_id);
+	ESpriteFrame*		get_sprite_frame_from_layer(ESpriteLayer* _layer, unsigned int _frame_id);
+	ESprite*			get_sprite_from_sprite_frame(ESpriteFrame* _frame, unsigned int _id);
+	
+	static ESprite*		get_last_sprite(Entity* _en);
+	bool* disable_draw = new bool(false);
 };
 /*********/
 

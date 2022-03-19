@@ -106,6 +106,10 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	*data_bar->max_value
 	=
 	max(0.0f, *entity_button->parent_button_group->highest_point_y - *entity_button->parent_button_group->region->size_y);
+	if (*data_bar->max_value > 0)
+	{*_entity->disable_draw = false;}
+	else
+	{*_entity->disable_draw = true;}
 
 	if
 	(
@@ -116,6 +120,8 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 		)
 		&&
 		(*_custom_data->clickable_region_list.at(0)->catched_body)
+		&&
+		(*data_bar->max_value > 0.0f)
 	)
 	{
 		if (*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id != 1)
@@ -209,6 +215,21 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 	//_entity->
 
+
+}
+
+void EDataActionCollection::action_change_style(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	//cast to button entity
+	EntityButton*	target_button = ((EntityButton*)_entity);
+
+	//get "slider" sprite
+	ESprite*		target_sprite = target_button->get_sprite_from_entity(0, 0, 0);
+
+	if (target_sprite != nullptr)
+	{
+		target_sprite->set_texture_gabarite(target_button->parent_button_group->selected_style->background_for_slider);
+	}
 
 }
 
@@ -756,6 +777,16 @@ ERegionGabarite::ERegionGabarite(float _offset_x, float _offset_y, float _size_x
 {
 	*offset_x = _offset_x;
 	*offset_y = _offset_y;
+
+	*size_x = _size_x;
+	*size_y = _size_y;
+}
+
+ERegionGabarite::ERegionGabarite(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y)
+{
+	*offset_x = _offset_x;
+	*offset_y = _offset_y;
+	*offset_z = _offset_z;
 
 	*size_x = _size_x;
 	*size_y = _size_y;

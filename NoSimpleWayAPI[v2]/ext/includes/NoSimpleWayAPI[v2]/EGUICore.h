@@ -75,6 +75,16 @@ public:
 	std::vector<EButtonGroup*> button_group_list;
 
 	EButtonGroup* parent_button_group;
+
+	//wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+	EButtonGroupRow(ERegionGabarite* _region);
+	EButtonGroupRow();
+
+	void add_group(EButtonGroup* _group);
+	static EButtonGroup* get_last_group(EButtonGroupRow* _row);
+
+	
+	//static EButtonGroupRow* create_default_row(ERegionGabarite* _region);
 };
 
 
@@ -88,6 +98,7 @@ public:
 	//float* size_y = new float(0.0f);
 
 	EButtonGroup(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
+	EButtonGroup(ERegionGabarite* _gabarite);
 	~EButtonGroup();
 
 	ERenderBatcher* batcher_for_default_draw = nullptr;
@@ -96,7 +107,7 @@ public:
 
 	std::vector<EntityButton*> button_list;
 	std::vector<EButtonGroupRow*> group_row_list;
-	EButtonGroupRow* parent_group_row;
+	EButtonGroupRow* parent_group_row = nullptr;
 
 	int* order_in_vector = new int(0);
 	static EButtonGroup* focused_button_group;
@@ -123,9 +134,17 @@ public:
 	float* border_left		= new float(0.0f);
 	float* border_right		= new float(0.0f);
 
+	EGUIStyle* selected_style = nullptr;
 
 	static void add_horizontal_scroll_bar(EButtonGroup* _button_group);
-	static void set_borders(EButtonGroup* _group, float _left, float _right, float _bottom, float _up);
+	static void set_offset_borders(EButtonGroup* _group, float _left, float _right, float _bottom, float _up);
+	static void generate_brick_textured_bg(EButtonGroup* _group);
+
+	static void apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* _style);
+	static EButtonGroup* create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style);
+
+	static EButtonGroupRow* add_default_row(EButtonGroup* _group, ERegionGabarite* _region);
+	static EButtonGroupRow* get_last_created_row(EButtonGroup* _group);
 };
 
 //class EButtonContainer
@@ -144,27 +163,29 @@ enum StyleList
 class EGUIStyle
 {
 public:
-	float* style_border_left	= new float(0.0f);
-	float* style_border_right	= new float(0.0f);
+	float* offset_border_left	= new float(0.0f);
+	float* offset_border_right	= new float(0.0f);
+		   
+	float* offset_border_up		= new float(0.0f);
+	float* offset_border_bottom	= new float(0.0f);
 
-	float* style_border_up		= new float(0.0f);
-	float* style_border_bottom	= new float(0.0f);
-
-	float* border_left			= new float(0.0f);
-	float* border_right			= new float(0.0f);
-
-	float* border_up			= new float(0.0f);
-	float* border_bottom		= new float(0.0f);
+	float* brick_border_left	= new float(0.0f);
+	float* brick_border_right	= new float(0.0f);
+		   
+	float* brick_border_up		= new float(0.0f);
+	float* brick_border_bottom	= new float(0.0f);
 
 	int* subdivision_x			= new int (0);
 	int* subdivision_y			= new int (0);
 
-	ETextureGabarite* background_for_button_group	= nullptr;
-	ETextureGabarite* background_for_slider			= nullptr;
-	ETextureGabarite* slider_head_inactive			= nullptr;
-	ETextureGabarite* slider_head_active			= nullptr;
+	ETextureGabarite*	background_for_button_group	= nullptr;
+	ETextureGabarite*	background_for_slider		= nullptr;
+	ETextureGabarite*	slider_head_inactive		= nullptr;
+	ETextureGabarite*	slider_head_active			= nullptr;
 
+	static EGUIStyle*	active_style;
 	static void set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, float _subdivision_x, float _subdivision_y);
+	static void set_style_offset_borders(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom);
 	
 	static std::vector<EGUIStyle*> style_list;
 };

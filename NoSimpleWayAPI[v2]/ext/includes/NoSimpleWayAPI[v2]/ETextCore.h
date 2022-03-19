@@ -111,6 +111,7 @@ class ETextArea
 {
 public:
 	ETextArea();
+	ETextArea(EClickableRegion* _region, EFont* _font, std::string _text);
 	~ETextArea();
 
 	bool* error = new bool(false);

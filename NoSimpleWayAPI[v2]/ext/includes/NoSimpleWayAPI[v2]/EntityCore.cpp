@@ -11,7 +11,8 @@
 
 void Entity::draw()
 {
-	transfer_all_vertex_buffers_to_batcher();
+	if (!*disable_draw)
+	{transfer_all_vertex_buffers_to_batcher();}
 }
 
 void Entity::generate_vertex_buffer_for_all_sprite_layers()
@@ -179,9 +180,90 @@ ESprite* Entity::get_sprite_from_data(unsigned int _data_id, unsigned int _layer
 	return nullptr;
 }
 
-ESpriteLayer* Entity::get_sprite_layer_by_id(unsigned int id)
+ESpriteLayer* Entity::get_sprite_layer_by_id(unsigned int _id)
 {
+	if
+	(
+		(!sprite_layer_list.empty())
+		&&
+		(_id >= 0)
+		&&
+		(_id < sprite_layer_list.size())
+	)
+	{
+		return sprite_layer_list[_id];
+	}
+	else
+	{
+		return nullptr;
+	}
+}
+
+ESprite* Entity::get_sprite_from_entity(unsigned int _layer_id, unsigned int _frame, unsigned int _frame_id)
+{
+	//ESpriteLayer* sprite_layer = nullptr;
+	//ESpriteFrame* target_sprite_frame = nullptr;
+
+	//if (!sprite_layer_list.empty()) { sprite_layer =}
+	if
+	(
+		(_CHECK_VECTOR_BOUND(sprite_layer_list, _layer_id))
+		&&
+		(_CHECK_VECTOR_BOUND(sprite_layer_list[_layer_id]->sprite_frame_list, _frame))
+	)
+	{
+		return sprite_layer_list[_layer_id]->sprite_frame_list[_frame]->sprite_list[_frame_id];
+	}
+
+		//if (target_sprite_frame != nullptr)
+		//{return target_sprite_frame->sprite_list[_frame_id];}
+
 	return nullptr;
+}
+
+ESpriteFrame* Entity::get_sprite_frame_from_layer(ESpriteLayer* _layer, unsigned int _frame_id)
+{
+	if
+	(
+		(_layer != nullptr)
+		&&
+		(_CHECK_VECTOR_BOUND(_layer->sprite_frame_list, _frame_id))
+	)
+	{return _layer->sprite_frame_list[_frame_id]; }
+	else
+	{return nullptr;}
+}
+
+ESprite* Entity::get_sprite_from_sprite_frame(ESpriteFrame* _frame, unsigned int _id)
+{
+	if
+	(
+		(_frame != nullptr)
+		&&
+		(_CHECK_VECTOR_BOUND(_frame->sprite_list, _id))
+	)
+	{
+		return _frame->sprite_list[_id];
+	}
+
+	return nullptr;
+}
+
+ESprite* Entity::get_last_sprite(Entity* _entity)
+{
+	if
+	(
+		(_entity != nullptr)
+		&&
+		(!_entity->sprite_layer_list.empty())
+		&&
+		(!_entity->sprite_layer_list.back()->sprite_frame_list.empty())
+		&&
+		(!_entity->sprite_layer_list.back()->sprite_frame_list.back()->sprite_list.empty())
+	)
+	{return _entity->sprite_layer_list.back()->sprite_frame_list.back()->sprite_list.back(); }
+	else
+	{return nullptr;}
 }
 
 
