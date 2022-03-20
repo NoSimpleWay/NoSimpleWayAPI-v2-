@@ -8,6 +8,8 @@ std::vector<EWindow*> EWindow::window_list;
 
 EButtonGroup* EButtonGroup::focused_button_group = nullptr;
 
+
+
 void EWindow::update_default(float _d)
 {
 	
@@ -122,6 +124,7 @@ void EButtonGroup::draw()
 
 	glEnable(GL_SCISSOR_TEST);
 
+	//BG
 	if (background_sprite_layer != nullptr)
 	{
 		if (parent_group_row == nullptr)
@@ -209,10 +212,10 @@ void EButtonGroup::draw()
 			(
 				batcher_for_default_draw->vertex_buffer,
 				batcher_for_default_draw->last_vertice_buffer_index,
-				*row->gabarite->world_position_x + 2.0f,
-				*row->gabarite->world_position_y + 2.0f,
-				*row->gabarite->size_x - 4.0f,
-				*row->gabarite->size_y - 4.0f,
+				*row->gabarite->world_position_x + 0.0f,
+				*row->gabarite->world_position_y + 0.0f,
+				*row->gabarite->size_x - 0.0f,
+				*row->gabarite->size_y - 0.0f,
 				2.0f,
 				NS_DefaultGabarites::texture_gabarite_white_pixel
 			);
@@ -296,6 +299,8 @@ void EButtonGroup::set_world_position_and_redraw()
 
 		*row->gabarite->world_position_z = *region->world_position_z + *row->gabarite->offset_z;
 
+		*row->lowest_culling_line = max(*row->lowest_culling_line, *row->gabarite->world_position_y);
+
 		//minimal_culling_line_top = *row->gabarite->world_position_y + *row->gabarite->size_y;
 		//minimal_culling_line_bottom = *row->gabarite->world_position_y;
 
@@ -326,7 +331,10 @@ void EButtonGroup::set_world_position_and_redraw()
 			//*lower_culling_line = max(*lower_culling_line, *row->gabarite->world_position_y);
 			//*group->lower_culling_line = *lower_culling_line;
 			*group->lower_culling_line = max(*row->gabarite->world_position_y, *lower_culling_line);
-			*group->lower_culling_line = max(*group->region->world_position_y, *group->lower_culling_line);
+			//*group->lower_culling_line = max(*group->region->world_position_y, *group->lower_culling_line);
+			//*group->lower_culling_line = max(*row->parent_button_group->lower_culling_line, *group->lower_culling_line);
+
+			//*group->lower_culling_line = max(*group->region->world_position_y, *row->lowest_culling_line);
 
 			//minimal_culling_line_bottom = *group->lower_culling_line;
 
@@ -604,10 +612,10 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 		EButtonGroup::set_offset_borders
 		(
 			_group,
-			*EGUIStyle::active_style->offset_border_left,
-			*EGUIStyle::active_style->offset_border_right,
-			*EGUIStyle::active_style->offset_border_bottom,
-			*EGUIStyle::active_style->offset_border_up
+			*_style->offset_border_left,
+			*_style->offset_border_right,
+			*_style->offset_border_bottom,
+			*_style->offset_border_up
 		);
 	}
 
@@ -691,8 +699,9 @@ EButtonGroup* EButtonGroup::create_default_button_group(ERegionGabarite* _region
 }
 
 EGUIStyle* EGUIStyle::active_style = nullptr;
+int EGUIStyle::number = 0;
 
-void EGUIStyle::set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, float _subdivision_x, float _subdivision_y)
+void EGUIStyle::set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, int _subdivision_x, int _subdivision_y)
 {
 	*_style->brick_border_left		= _border_left;
 	*_style->brick_border_right		= _border_right;
@@ -713,6 +722,19 @@ void EGUIStyle::set_style_offset_borders(EGUIStyle* _style, float _border_left, 
 	*_style->offset_border_up		= _border_up;
 }
 
+void EGUIStyle::set_style_borders_and_subdivision_for_buttons(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, int _subdivision_x, int _subdivision_y)
+{
+	*_style->button_border_left		= _border_left;
+	*_style->button_border_right	= _border_right;
+
+	*_style->button_border_bottom	= _border_up;
+	*_style->button_border_up		= _border_bottom;
+
+	*_style->button_subdivision_x	= _subdivision_x;
+	*_style->button_subdivision_y	= _subdivision_y;
+}
+
+std::vector<EGUIStyle*> EGUIStyle::style_list;
 //EButtonGroupRow* EButtonGroupRow::create_default_row(ERegionGabarite* _region, EGUIStyle* _style)
 //{
 //	return nullptr;

@@ -430,6 +430,7 @@ public:
 	static ESprite* get_last_created_sprite(ESpriteLayer* _layer);
 	static ESpriteFrame* get_last_sprite_frame(ESpriteLayer* _layer);
 	static void set_size_for_last_sprite(ESpriteLayer* _layer, float _size_x, float _size_y);
+	static void set_offset_for_last_sprite(ESpriteLayer* _layer, float _offset_x, float _offset_y, float _offset_z );
 	static void add_new_default_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _sprite_layer);
 
 	bool* disable_draw = new bool(false);

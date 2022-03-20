@@ -266,4 +266,37 @@ ESprite* Entity::get_last_sprite(Entity* _entity)
 	{return nullptr;}
 }
 
+void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style)
+{
+	if ((_button != nullptr) && (_style != nullptr))
+	{
+		ESpriteLayer* last_layer = nullptr;
 
+		if (_button->sprite_layer_list.empty())
+		{
+			_button->sprite_layer_list.push_back
+			(ESpriteLayer::create_default_sprite_layer(nullptr));
+		}
+
+		last_layer = _button->sprite_layer_list[0];
+
+		NS_ERenderCollection::set_brick_borders_and_subdivisions
+		(
+			*_style->button_border_left,
+			*_style->button_border_right,
+			*_style->button_border_bottom,
+			*_style->button_border_up,
+
+			*_style->button_subdivision_x,
+			*_style->button_subdivision_y
+		);
+
+		NS_ERenderCollection::generate_brick_texture
+		(
+			_button->button_gabarite,
+			last_layer,
+			_style->backround_for_buttons
+		);
+	}
+	//_button->sprite_layer_list.pu
+}

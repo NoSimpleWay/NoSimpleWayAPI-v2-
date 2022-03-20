@@ -380,7 +380,9 @@ void ETextArea::generate_text()
 		full_text_height = 14.0f * (row.size());
 		y_adding = full_text_height - 14.0f;
 		y_adding += *region_gabarite->size_y * *offset_by_gabarite_size_y;
-		y_adding += full_text_height * *offset_by_text_size_y;
+
+		//vertical align
+		y_adding += (full_text_height - 2.0f) * *offset_by_text_size_y;
 
 		for (std::string* str : row)
 		{

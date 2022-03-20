@@ -107,6 +107,8 @@ public:
 
 	bool* fixed_position = new bool(false);
 	bool* update_when_scissored = new bool(false);
+
+	static void button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style);
 };
 
 class ECluster

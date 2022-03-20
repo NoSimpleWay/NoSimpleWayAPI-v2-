@@ -43,6 +43,8 @@ namespace NS_EGraphicCore
 
 	void initiate_graphic_core();
 
+	void create_styles();
+
 
 };
 
@@ -496,36 +498,98 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_DefaultGabarites::texture_gabarite_white_pixel		= NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_gabarite_gudron			= NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_rusted_bronze				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_black_marble				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Black_marble.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_dark_spruce				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Dark_spruce.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_lapis_wood					= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_slider_bg_lead_and_gold	= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 	
 	//STYLE LIST//
-		//lead and gold
-		EGUIStyle* just_created_style = new EGUIStyle();
-		EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
-		EGUIStyle::set_style_offset_borders(just_created_style, 7.0f, 7.0f, 7.0f, 7.0f);
+	create_styles();
 
-		just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
-		("data/textures/slider_head_lead_and_gold_active.png", NS_EGraphicCore::default_texture_atlas);
-		
-		just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
-		("data/textures/slider_head_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
-		
-		just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
-		("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
-		
-		just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
-		("data/textures/Lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
-		
-		EGUIStyle::active_style = just_created_style;
 	//font
 	EFont* new_font = NULL;
 	ETextureGabarite* font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/franklin_0.png", NS_EGraphicCore::default_texture_atlas);
 	new_font = new EFont("franklin", font_gabarite, NS_EGraphicCore::default_texture_atlas, false);
 	EFont::font_list.push_back(new_font);
+}
+
+void NS_EGraphicCore::create_styles()
+{
+	//*******************************
+	//lead and gold
+	EGUIStyle* just_created_style = new EGUIStyle();
+	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
+	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
+	EGUIStyle::set_style_offset_borders(just_created_style, 7.0f, 7.0f, 7.0f, 7.0f);
+
+	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/slider_head_lead_and_gold_active.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/slider_head_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/lead_and_gold/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+	EGUIStyle::active_style = just_created_style;
+	EGUIStyle::style_list.push_back(just_created_style);
+
+	//*******************************
+	//dark spruce
+	just_created_style = new EGUIStyle();
+	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 5.0f, 5.0f, 5.0f, 5.0f, 8, 0);
+	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
+	EGUIStyle::set_style_offset_borders(just_created_style, 5.0f, 5.0f, 5.0f, 5.0f);
+
+	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/slider_head_lead_and_gold_active.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/slider_head_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/dark_spruce/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
+	//EGUIStyle::active_style = just_created_style;
+	EGUIStyle::style_list.push_back(just_created_style);
+
+	//*******************************
+	//gray minimalism
+	just_created_style = new EGUIStyle();
+	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 1, 1);
+	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 1, 1);
+	EGUIStyle::set_style_offset_borders(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f);
+
+	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/slider_head_lead_and_gold_active.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/slider_head_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/gray_minimalism/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/gray_minimalism/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+	//EGUIStyle::active_style = just_created_style;
+	EGUIStyle::style_list.push_back(just_created_style);
+
+
 }
 
 void NS_EGraphicCore::gl_set_texture_filtering(GLint _wrap_mode, GLint _filter)
@@ -693,8 +757,8 @@ void NS_EGraphicCore::load_texture(char const* _path, int _id)
 		{
 			glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, texture_loader_width, texture_loader_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, zalupa);
 		}
-		//cout << red << "Failed to load texture " << yellow << "(" << _path << ")" << green << endl;
-		std::cout << "Failed to load texture " << "(" << _path << ")" << std::endl;
+		std::cout << red << "Failed to load texture " << yellow << "(" << _path << ")" << green << std::endl;
+		//std::cout << "Failed to load texture " << "(" << _path << ")" << std::endl;
 		//last_texture_h = 21;
 		//last_texture_w = 21;
 
@@ -1793,11 +1857,28 @@ void ESpriteLayer::set_size_for_last_sprite(ESpriteLayer* _layer, float _size_x,
 {
 	ESprite* last_sprite = ESpriteLayer::get_last_created_sprite(_layer);
 
-	*last_sprite->size_x = _size_x;
-	*last_sprite->size_y = _size_y;
+	if (last_sprite != nullptr)
+	{
+		*last_sprite->size_x = _size_x;
+		*last_sprite->size_y = _size_y;
 
-	last_sprite->sprite_calculate_uv();
+		last_sprite->sprite_calculate_uv();
+	}
 	
+}
+
+void ESpriteLayer::set_offset_for_last_sprite(ESpriteLayer* _layer, float _offset_x, float _offset_y, float _offset_z)
+{
+	ESprite* last_sprite = ESpriteLayer::get_last_created_sprite(_layer);
+
+	if (last_sprite != nullptr)
+	{
+		*last_sprite->offset_x = _offset_x;
+		*last_sprite->offset_y = _offset_y;
+		*last_sprite->offset_z = _offset_z;
+
+		last_sprite->sprite_calculate_uv();
+	}
 }
 
 void ESpriteLayer::add_new_default_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _sprite_layer)

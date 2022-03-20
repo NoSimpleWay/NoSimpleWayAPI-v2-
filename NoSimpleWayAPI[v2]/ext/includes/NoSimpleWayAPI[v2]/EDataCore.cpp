@@ -36,7 +36,7 @@ void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custo
 
 void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	
+	//int number = rand() % 1000000;
 
 	if
 	(
@@ -106,6 +106,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	*data_bar->max_value
 	=
 	max(0.0f, *entity_button->parent_button_group->highest_point_y - *entity_button->parent_button_group->region->size_y);
+	
 	if (*data_bar->max_value > 0)
 	{*_entity->disable_draw = false;}
 	else
@@ -180,9 +181,12 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				);
 
 
+
+
 			//EInputCore::logger_param("max value", *data_bar->max_value);
 			//EInputCore::logger_param("scroll value", *data_bar->value_pointer);
-
+			//EInputCore::logger_param("number", EGUIStyle::number);
+			//EGUIStyle::number++;
 
 			//*entity_button->parent_button_group->scroll_y += 100.0f * _d;
 

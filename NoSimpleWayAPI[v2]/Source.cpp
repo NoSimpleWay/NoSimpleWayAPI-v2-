@@ -110,6 +110,7 @@ int main()
 		
 		for (EWindow* w : EWindow::window_list)
 		{
+			
 			w->update_default(NS_EGraphicCore::delta_time);
 			w->update_additional(NS_EGraphicCore::delta_time);
 

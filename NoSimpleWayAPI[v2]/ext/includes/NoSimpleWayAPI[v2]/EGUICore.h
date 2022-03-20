@@ -83,6 +83,9 @@ public:
 	void add_group(EButtonGroup* _group);
 	static EButtonGroup* get_last_group(EButtonGroupRow* _row);
 
+	float* lowest_culling_line = new float(0.0f);
+	float* highest_culling_line = new float(10000.0f);
+
 	
 	//static EButtonGroupRow* create_default_row(ERegionGabarite* _region);
 };
@@ -163,29 +166,46 @@ enum StyleList
 class EGUIStyle
 {
 public:
-	float* offset_border_left	= new float(0.0f);
-	float* offset_border_right	= new float(0.0f);
-		   
-	float* offset_border_up		= new float(0.0f);
-	float* offset_border_bottom	= new float(0.0f);
 
-	float* brick_border_left	= new float(0.0f);
-	float* brick_border_right	= new float(0.0f);
-		   
-	float* brick_border_up		= new float(0.0f);
-	float* brick_border_bottom	= new float(0.0f);
+	static int number;
+	//button group
+	ETextureGabarite* background_for_button_group = nullptr;
+	float*	offset_border_left		= new float(0.0f);
+	float*	offset_border_right		= new float(0.0f);
+			
+	float*	offset_border_up		= new float(0.0f);
+	float*	offset_border_bottom	= new float(0.0f);
 
-	int* subdivision_x			= new int (0);
-	int* subdivision_y			= new int (0);
+	float*	brick_border_left		= new float(0.0f);
+	float*	brick_border_right		= new float(0.0f);
+			
+	float*	brick_border_up			= new float(0.0f);
+	float*	brick_border_bottom		= new float(0.0f);
 
-	ETextureGabarite*	background_for_button_group	= nullptr;
+	int*	subdivision_x			= new int (0);
+	int*	subdivision_y			= new int (0);
+
+	//button
+	ETextureGabarite* backround_for_buttons = nullptr;
+	float*	button_border_left		= new float (0.0f);
+	float*	button_border_right		= new float (0.0f);
+	float*	button_border_bottom	= new float (0.0f);
+	float*	button_border_up		= new float (0.0f);
+
+	int*	button_subdivision_x	= new int (0.0f);
+	int*	button_subdivision_y	= new int (0.0f);
+
+	
+
+
 	ETextureGabarite*	background_for_slider		= nullptr;
 	ETextureGabarite*	slider_head_inactive		= nullptr;
 	ETextureGabarite*	slider_head_active			= nullptr;
 
 	static EGUIStyle*	active_style;
-	static void set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, float _subdivision_x, float _subdivision_y);
+	static void set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, int _subdivision_x, int _subdivision_y);
 	static void set_style_offset_borders(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom);
+	static void set_style_borders_and_subdivision_for_buttons(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, int _subdivision_x, int _subdivision_y);
 	
 	static std::vector<EGUIStyle*> style_list;
 };
