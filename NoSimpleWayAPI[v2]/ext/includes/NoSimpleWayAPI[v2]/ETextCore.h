@@ -156,6 +156,8 @@ public:
 	void draw();
 
 
+	bool* can_be_edited = new bool(true);
+
 	ESpriteLayer* sprite_layer;
 	///
 	std::vector<EFontGlyph*> font_glyph_list;

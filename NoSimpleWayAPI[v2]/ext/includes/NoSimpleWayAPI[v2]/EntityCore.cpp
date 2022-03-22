@@ -12,7 +12,21 @@
 void Entity::draw()
 {
 	if (!*disable_draw)
-	{transfer_all_vertex_buffers_to_batcher();}
+	{
+		transfer_all_vertex_buffers_to_batcher();
+
+		//custom data store clickable regions and text
+		if (!custom_data_list.empty())
+		{
+			for (ECustomData* c_data : custom_data_list)
+				if (c_data != nullptr) { c_data->draw(); }
+		}
+	}
+
+	//for (ECustomData* custom_data :custom_data_list)
+	//{
+	//	custom_data->draw();
+	//}
 }
 
 void Entity::generate_vertex_buffer_for_all_sprite_layers()
@@ -65,12 +79,7 @@ void Entity::transfer_all_vertex_buffers_to_batcher()
 		if (sl != nullptr) {sl->transfer_vertex_buffer_to_batcher();}
 	}
 
-	//custom data store clickable regions and text
-	if (!custom_data_list.empty())
-	{
-		for (ECustomData* c_data : custom_data_list)
-		if (c_data != nullptr) {c_data->draw();}
-	}
+
 	
 }
 
@@ -299,4 +308,21 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 		);
 	}
 	//_button->sprite_layer_list.pu
+}
+
+void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
+{
+	ESprite* last_sprite = Entity::get_last_sprite(_but);
+
+	if
+	(
+		(last_sprite != nullptr)
+		&&
+		(_style != nullptr)
+		&&
+		(_style->background_for_slider != nullptr)
+	)
+	{
+		last_sprite->set_texture_gabarite(_style->background_for_slider);
+	}
 }

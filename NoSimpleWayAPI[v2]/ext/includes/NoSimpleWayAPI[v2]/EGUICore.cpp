@@ -672,13 +672,14 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 	{
 		//_group->selected_style = EGUIStyle::active_style;
 
-		for (EButtonGroupRow* row : _group->group_row_list)
-		if(row != nullptr)
-		for (EButtonGroup* group:row->button_group_list)
-		if (group != nullptr)
-		{
-			EButtonGroup::apply_style_to_button_group(group, EGUIStyle::active_style);
-		}
+		//for (EButtonGroupRow* row : _group->group_row_list)
+		//if(row != nullptr)
+		//for (EButtonGroup* group:row->button_group_list)
+		//if (group != nullptr)
+		//{
+		//	EButtonGroup::apply_style_to_button_group(group, EGUIStyle::active_style);
+		//}
+
 
 		EButtonGroup::set_offset_borders
 		(
@@ -688,7 +689,18 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 			*_style->offset_border_bottom,
 			*_style->offset_border_up
 		);
-	}
+
+		for (EntityButton* but : _group->button_list)
+		{
+			for (change_style_action csa : but->action_on_change_style_list)
+			{
+				csa(but, _style);
+			}
+		}
+
+
+
+}
 
 	
 
@@ -751,6 +763,19 @@ EButtonGroupRow* EButtonGroup::get_last_created_row(EButtonGroup* _group)
 	{return _group->group_row_list[_group->group_row_list.size() - 1]; }
 	else
 	{return nullptr;}
+}
+
+void EButtonGroup::change_style(EButtonGroup* _group, EGUIStyle* _style)
+{
+	for (EButtonGroupRow* row: _group->group_row_list)
+	if (row != nullptr)
+	for (EButtonGroup* group:row->button_group_list)
+	if (group != nullptr)
+	{
+		EButtonGroup::apply_style_to_button_group(group, _style);
+		EButtonGroup::change_style(group, _style);
+	};
+	
 }
 
 EButtonGroup* EButtonGroup::create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style)

@@ -49,6 +49,9 @@ public:
 	//WHAT do with data
 	std::vector<data_action_pointer> actions_on_update;
 	std::vector<data_action_pointer> actions_on_change_style;
+	std::vector<data_action_pointer> actions_on_draw;
+
+	
 
 	void draw();
 	void update(float _d);
@@ -185,4 +188,6 @@ namespace EDataActionCollection
 	void action_player_control				(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_update_slider				(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_change_style				(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_highlight_button_if_overlap (Entity* _entity, ECustomData* _custom_data, float _d);
 }

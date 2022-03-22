@@ -237,6 +237,30 @@ void EDataActionCollection::action_change_style(Entity* _entity, ECustomData* _c
 
 }
 
+void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if (((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
+	{
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.35f);
+		ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			*((EntityButton*)_entity)->button_gabarite->world_position_x,
+			*((EntityButton*)_entity)->button_gabarite->world_position_y,
+
+			*((EntityButton*)_entity)->button_gabarite->size_x,
+			*((EntityButton*)_entity)->button_gabarite->size_y,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+	
+		);
+	}
+}
+
 /*
 bool EClickableRegion::overlapped_by_mouse(EClickableRegion* _region)
 {
@@ -847,6 +871,12 @@ ECustomData::~ECustomData()
 
 void ECustomData::draw()
 {
+	for (data_action_pointer dap : actions_on_draw)
+	if (dap != nullptr)
+	{
+		dap(parent_entity, this, 0.1f);
+	}
+
 	if (!clickable_region_list.empty())
 	for (EClickableRegion* clickable_region : clickable_region_list)
 	if (clickable_region != nullptr)

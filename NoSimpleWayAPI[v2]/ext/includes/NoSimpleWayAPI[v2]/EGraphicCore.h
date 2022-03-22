@@ -412,8 +412,8 @@ public:
 
 	unsigned int* last_buffer_id = new unsigned int(0);
 
-	ERenderBatcher* batcher;
-	float* vertex_buffer;
+	ERenderBatcher* batcher = nullptr;
+	float* vertex_buffer = nullptr;
 
 	void translate_sprite_layer(float _x, float _y, float _z, bool _move_offset);
 	void translate_sprites(float _x, float _y, float _z, bool _move_offset);

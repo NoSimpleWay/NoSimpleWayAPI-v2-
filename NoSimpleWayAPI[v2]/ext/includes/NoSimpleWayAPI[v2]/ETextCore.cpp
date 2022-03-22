@@ -576,6 +576,8 @@ void ETextArea::update(float _d)
 	{
 		if
 			(
+				(*can_be_edited)
+				&&
 				(EInputCore::MOUSE_BUTTON_LEFT)
 				&&
 				(
@@ -637,6 +639,8 @@ void ETextArea::update(float _d)
 		//click into gabarite
 		if
 		(
+			(*can_be_edited)
+			&&
 			(EInputCore::MOUSE_POSITION_X >= *region_gabarite->world_position_x)
 			&&
 			(EInputCore::MOUSE_POSITION_X <= *region_gabarite->world_position_x + *region_gabarite->size_x)

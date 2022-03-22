@@ -391,7 +391,7 @@ EWindowMain::EWindowMain()
 		jc_button_group_row = EButtonGroup::add_default_row
 		(
 			main_button_group,
-			new ERegionGabarite(0.0f, 0.0f, 350.0f, 209.0f)
+			new ERegionGabarite(0.0f, 0.0f, 350.0f, 210.0f)
 		);
 
 		//group
@@ -399,7 +399,7 @@ EWindowMain::EWindowMain()
 		(
 			EButtonGroup::create_default_button_group
 			(
-				new ERegionGabarite(0.0f, 0.0f, 0.0f, 350.0f, 200.0f),
+				new ERegionGabarite(0.0f, 0.0f, 0.0f, 350.0f, 210.0f),
 				style
 			)
 		);
@@ -412,7 +412,7 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(0.0f, 0.0f, 330.0f, 130.0f)
 		);
 
-		//group
+		//group big
 		jc_button_group_row->add_group
 		(
 			EButtonGroup::create_default_button_group
@@ -449,14 +449,14 @@ EWindowMain::EWindowMain()
 
 		//subrow small
 		jc_button_group_row = EButtonGroup::add_default_row
-		(jc_button_group, new ERegionGabarite(0.0f, 0.0f, 330.0f, 50.0f));
+		(jc_button_group, new ERegionGabarite(0.0f, 0.0f, 330.0f, 57.0f));
 
 		//group
 		jc_button_group_row->add_group
 		(
 			EButtonGroup::create_default_button_group
 			(
-				new ERegionGabarite(0.0f, 0.0f, 0.0f, 330.0f, 50.0f),
+				new ERegionGabarite(0.0f, 0.0f, 0.0f, 330.0f, 57.0f),
 				style
 			)
 		);
@@ -474,19 +474,23 @@ EWindowMain::EWindowMain()
 				ESpriteLayer::create_default_sprite_layer
 				(NS_EGraphicCore::put_texture_to_atlas("data/textures/button_bg_bright.png", NS_EGraphicCore::default_texture_atlas))
 			);
+			jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 310.0f, 20.0f);
+			jc_button->button_gabarite = jc_region_gabarite;
 
 			ESprite::set_size
 			(
 				Entity::get_last_sprite(jc_button),
-				100.0f,
+				300.0f,
 				20.0f,
 				0.0f
 			);
 
+			EntityButton::button_generate_brick_bg(jc_button, style);
+
 			jc_button->set_world_position(*jc_button->offset_x, *jc_button->offset_y, *jc_button->offset_z);
 			jc_button->generate_vertex_buffer_for_all_sprite_layers();
-			jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 100.0f, 20.0f);
-			jc_button->button_gabarite = jc_region_gabarite;
+			
+			
 
 			jc_custom_data = new ECustomData();
 			jc_button->custom_data_list.push_back(jc_custom_data);
@@ -497,7 +501,8 @@ EWindowMain::EWindowMain()
 
 			jc_custom_data->clickable_region_list.push_back(jc_clickable_region);
 			jc_custom_data->parent_entity = jc_button;
-		
+			
+			jc_custom_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
 
 			jc_text_area = new ETextArea(jc_clickable_region, EFont::font_list[0], "Select this style");
 
@@ -507,6 +512,7 @@ EWindowMain::EWindowMain()
 			*jc_text_area->offset_by_text_size_x = -0.5f;
 			*jc_text_area->offset_by_text_size_y = -0.5f;
 
+			*jc_text_area->can_be_edited = false;
 
 			jc_text_area->generate_rows();
 			jc_text_area->generate_text();

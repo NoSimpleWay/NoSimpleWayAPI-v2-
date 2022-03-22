@@ -157,6 +157,8 @@ public:
 
 	static EButtonGroupRow* add_default_row(EButtonGroup* _group, ERegionGabarite* _region);
 	static EButtonGroupRow* get_last_created_row(EButtonGroup* _group);
+
+	static void change_style(EButtonGroup* _group, EGUIStyle* _style);
 };
 
 //class EButtonContainer

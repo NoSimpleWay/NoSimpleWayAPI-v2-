@@ -92,6 +92,9 @@ public:
 };
 
 
+typedef void (*change_style_action)(Entity*, EGUIStyle*);
+
+void action_change_style_slider(EntityButton* _but, EGUIStyle* _style);
 
 class EntityButton : public Entity
 {
@@ -107,6 +110,9 @@ public:
 
 	bool* fixed_position = new bool(false);
 	bool* update_when_scissored = new bool(false);
+
+
+	std::vector<change_style_action> action_on_change_style_list;
 
 	static void button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style);
 };
