@@ -588,6 +588,8 @@ void NS_EGraphicCore::create_styles()
 	("data/textures/styles/gray_minimalism/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
 	//EGUIStyle::active_style = just_created_style;
 	EGUIStyle::style_list.push_back(just_created_style);
+	EGUIStyle::style_list.push_back(just_created_style);
+	EGUIStyle::style_list.push_back(just_created_style);
 
 
 }

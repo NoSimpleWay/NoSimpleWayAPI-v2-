@@ -199,8 +199,8 @@ EWindowMain::EWindowMain()
 				jc_button = new EntityButton();
 				jc_custom_data = new ECustomData();
 				EDataContainerMessage* jc_data_container_message = new EDataContainerMessage();
-				 *jc_data_container_message->message = "ItemLevel";
-				
+				*jc_data_container_message->message = "ItemLevel";
+				jc_button->parent_button_group = jc_button_group;
 				//jc_custom_data->action
 
 				jc_custom_data->data_container = jc_data_container_message;
@@ -278,6 +278,7 @@ EWindowMain::EWindowMain()
 
 				jc_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 600.0f, 150.0f); jc_button_group_row->button_group_list.push_back(jc_button_group);
 				jc_button_group->selected_style = EGUIStyle::active_style;
+				jc_button_group->root_group = main_button_group;
 
 				EButtonGroup::set_offset_borders(jc_button_group, 7.0f, 7.0f, 7.0f, 7.0f);
 				//*jc_button_group->border_bottom = 7.0f;
@@ -303,6 +304,7 @@ EWindowMain::EWindowMain()
 				for (int i = 0; i < 120; i++)
 				{
 					jc_button = new EntityButton();
+					jc_button->parent_button_group = jc_button_group;
 					jc_custom_data = new ECustomData();
 					EDataContainerMessage* jc_data_container_message = new EDataContainerMessage();
 					*jc_data_container_message->message = "123";
@@ -384,7 +386,8 @@ EWindowMain::EWindowMain()
 	
 
 	for (EGUIStyle* style : EGUIStyle::style_list)
-	{//main row
+	{
+		//main row
 		jc_button_group_row = EButtonGroup::add_default_row
 		(
 			main_button_group,
@@ -406,7 +409,7 @@ EWindowMain::EWindowMain()
 		jc_button_group_row = EButtonGroup::add_default_row
 		(
 			jc_button_group,
-			new ERegionGabarite(0.0f, 0.0f, 334.0f, 130.0f)
+			new ERegionGabarite(0.0f, 0.0f, 330.0f, 130.0f)
 		);
 
 		//group
@@ -414,7 +417,7 @@ EWindowMain::EWindowMain()
 		(
 			EButtonGroup::create_default_button_group
 			(
-				new ERegionGabarite(0.0f, 0.0f, 0.0f, 334.0f, 130.0f),
+				new ERegionGabarite(0.0f, 0.0f, 0.0f, 330.0f, 130.0f),
 				style
 			)
 		);
@@ -428,6 +431,7 @@ EWindowMain::EWindowMain()
 					big_subgroup->button_list.push_back(jc_button);
 					jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 48.0f, 48.0f);
 					jc_button->button_gabarite = jc_region_gabarite;
+					jc_button->parent_button_group = jc_button_group;
 
 					jc_button->sprite_layer_list.push_back
 					(
@@ -445,14 +449,14 @@ EWindowMain::EWindowMain()
 
 		//subrow small
 		jc_button_group_row = EButtonGroup::add_default_row
-		(jc_button_group, new ERegionGabarite(0.0f, 0.0f, 334.0f, 50.0f));
+		(jc_button_group, new ERegionGabarite(0.0f, 0.0f, 330.0f, 50.0f));
 
 		//group
 		jc_button_group_row->add_group
 		(
 			EButtonGroup::create_default_button_group
 			(
-				new ERegionGabarite(0.0f, 0.0f, 0.0f, 334.0f, 50.0f),
+				new ERegionGabarite(0.0f, 0.0f, 0.0f, 330.0f, 50.0f),
 				style
 			)
 		);
@@ -463,6 +467,7 @@ EWindowMain::EWindowMain()
 		{
 			jc_button = new EntityButton();
 			jc_button_group->button_list.push_back(jc_button);
+			jc_button->parent_button_group = jc_button_group;
 
 			jc_button->sprite_layer_list.push_back
 			(

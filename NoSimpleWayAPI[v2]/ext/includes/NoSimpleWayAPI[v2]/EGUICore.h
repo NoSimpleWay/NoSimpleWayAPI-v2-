@@ -86,6 +86,10 @@ public:
 	float* lowest_culling_line = new float(0.0f);
 	float* highest_culling_line = new float(10000.0f);
 
+	float* highest_culling_line_for_bg	= new float(10000.0f);
+	float* lowest_culling_line_for_bg	= new float(0.0f);
+
+	EButtonGroup* root_group = nullptr;
 	
 	//static EButtonGroupRow* create_default_row(ERegionGabarite* _region);
 };
@@ -103,6 +107,8 @@ public:
 	EButtonGroup(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
 	EButtonGroup(ERegionGabarite* _gabarite);
 	~EButtonGroup();
+
+	EButtonGroup* root_group = nullptr;
 
 	ERenderBatcher* batcher_for_default_draw = nullptr;
 
@@ -122,6 +128,9 @@ public:
 
 	float* higher_culling_line = new float(0.0f);
 	float* lower_culling_line = new float(0.0f);
+
+	float* higher_culling_line_for_bg = new float(0.0f);
+	float* lower_culling_line_for_bg = new float(0.0f);
 
 	void update(float _d);
 	void draw();
