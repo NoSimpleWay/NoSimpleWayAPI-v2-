@@ -184,15 +184,15 @@ void EButtonGroup::draw()
 	}
 	else
 	{
-		if (root_group != nullptr)
+		//if (root_group != nullptr)
 		{
 			glScissor
 			(
 				*region->world_position_x,
-				*lower_culling_line + *border_bottom,
+				*lower_culling_line,
 
 				*region->size_x,
-				max(0.0f, *higher_culling_line - *lower_culling_line - *border_bottom - *border_up)
+				max(0.0f, *higher_culling_line - *lower_culling_line)
 			);
 		}
 	}
@@ -299,7 +299,7 @@ void EButtonGroup::set_world_position_and_redraw()
 
 		if (prev_row != nullptr)
 		{
-			*row->gabarite->offset_y = *prev_row->gabarite->offset_y + *prev_row->gabarite->size_y + *border_bottom;
+			*row->gabarite->offset_y = *prev_row->gabarite->offset_y + *prev_row->gabarite->size_y + 3.0f;
 		}
 		else
 		{
@@ -355,33 +355,50 @@ void EButtonGroup::set_world_position_and_redraw()
 			*group->higher_culling_line_for_bg = min
 			(
 				*group->region->world_position_y + *group->region->size_y,
-				*group->parent_group_row->parent_button_group->region->world_position_y + *group->parent_group_row->parent_button_group->region->size_y - *group->border_up
+				*region->world_position_y + *region->size_y - *border_up
 			);
 
 			*group->higher_culling_line_for_bg = min
 			(
 				*group->higher_culling_line_for_bg,
-				*group->parent_group_row->parent_button_group->higher_culling_line_for_bg
+				*higher_culling_line_for_bg
 			);
 
 
 			*group->lower_culling_line_for_bg = max
-			(*group->region->world_position_y, *group->parent_group_row->parent_button_group->region->world_position_y + *group->border_bottom);
+			(
+				*group->region->world_position_y,
+				*region->world_position_y + *border_bottom
+			);
 			
 			*group->lower_culling_line_for_bg = max
-			(*group->lower_culling_line_for_bg, *group->parent_group_row->parent_button_group->lower_culling_line_for_bg);
+			(
+				*group->lower_culling_line_for_bg,
+				*lower_culling_line_for_bg
+			);
 
 
 
-			*group->higher_culling_line = min(*row->gabarite->world_position_y + *row->gabarite->size_y, *higher_culling_line);
-			*group->higher_culling_line = min(*group->region->world_position_y + *group->region->size_y, *group->higher_culling_line);
+			*group->higher_culling_line = min
+			(
+				*group->region->world_position_y + *group->region->size_y - *group->border_up,
+				*region->world_position_y + *region->size_y - *border_up
+			);
+
+			*group->higher_culling_line = min
+			(
+				*group->higher_culling_line,
+				*higher_culling_line
+			);
+			//*group->higher_culling_line = min(*group->region->world_position_y + *group->region->size_y, *group->higher_culling_line);
 
 			//minimal_culling_line_top = *group->higher_culling_line;
 
 			//*lower_culling_line = max(*lower_culling_line, *row->gabarite->world_position_y);
 			//*group->lower_culling_line = *lower_culling_line;
 			
-			*group->lower_culling_line = max(*group->region->world_position_y, *group->parent_group_row->parent_button_group->lower_culling_line);
+			*group->lower_culling_line = max(*group->region->world_position_y + *group->border_bottom, *region->world_position_y + *border_bottom);
+			*group->lower_culling_line = max(*group->lower_culling_line, *lower_culling_line);
 			//*group->lower_culling_line = 0.0f;
 			//*group->lower_culling_line = max(*group->region->world_position_y, *group->lower_culling_line);
 			//*group->lower_culling_line = max(*row->parent_button_group->lower_culling_line, *group->lower_culling_line);

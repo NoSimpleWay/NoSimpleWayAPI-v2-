@@ -391,7 +391,7 @@ EWindowMain::EWindowMain()
 		jc_button_group_row = EButtonGroup::add_default_row
 		(
 			main_button_group,
-			new ERegionGabarite(0.0f, 0.0f, 350.0f, 200.0f)
+			new ERegionGabarite(0.0f, 0.0f, 350.0f, 209.0f)
 		);
 
 		//group
