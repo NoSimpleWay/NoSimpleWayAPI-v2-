@@ -197,6 +197,8 @@ EWindowMain::EWindowMain()
 			for (int j = 0; j < 3; j++)
 			{
 				jc_button = new EntityButton();
+				jc_button->action_on_change_style_list.push_back(&action_change_style_button);
+
 				jc_custom_data = new ECustomData();
 				EDataContainerMessage* jc_data_container_message = new EDataContainerMessage();
 				*jc_data_container_message->message = "ItemLevel";
@@ -304,6 +306,7 @@ EWindowMain::EWindowMain()
 				for (int i = 0; i < 120; i++)
 				{
 					jc_button = new EntityButton();
+					jc_button->action_on_change_style_list.push_back(&action_change_style_button);
 					jc_button->parent_button_group = jc_button_group;
 					jc_custom_data = new ECustomData();
 					EDataContainerMessage* jc_data_container_message = new EDataContainerMessage();
@@ -383,7 +386,7 @@ EWindowMain::EWindowMain()
 	//STYLE LIST BUTTON GROUP
 	main_button_group = EButtonGroup::create_default_button_group
 	(new ERegionGabarite(800.0f, 100.0f, 0.0f, 400.0f, 600.0f), EGUIStyle::active_style);
-	
+	//*main_button_group->can_change_style = false;
 
 	for (EGUIStyle* style : EGUIStyle::style_list)
 	{
@@ -404,6 +407,7 @@ EWindowMain::EWindowMain()
 			)
 		);
 		jc_button_group = EButtonGroupRow::get_last_group(jc_button_group_row);
+		*jc_button_group->can_change_style = false;
 
 		//subrow big
 		jc_button_group_row = EButtonGroup::add_default_row
@@ -425,9 +429,12 @@ EWindowMain::EWindowMain()
 
 			if (big_subgroup != nullptr)
 			{
+				*big_subgroup->can_change_style = false;
+
 				for (int i = 0; i < 20; i++)
 				{
 					jc_button = new EntityButton();
+					jc_button->action_on_change_style_list.push_back(&action_change_style_button);
 					big_subgroup->button_list.push_back(jc_button);
 					jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 48.0f, 48.0f);
 					jc_button->button_gabarite = jc_region_gabarite;
@@ -460,12 +467,14 @@ EWindowMain::EWindowMain()
 				style
 			)
 		);
-
 		jc_button_group = EButtonGroupRow::get_last_group(jc_button_group_row);
+		
 
 		if (jc_button_group != nullptr)
 		{
+			*jc_button_group->can_change_style = false;
 			jc_button = new EntityButton();
+			jc_button->action_on_change_style_list.push_back(&action_change_style_button);
 			jc_button_group->button_list.push_back(jc_button);
 			jc_button->parent_button_group = jc_button_group;
 
@@ -497,7 +506,7 @@ EWindowMain::EWindowMain()
 
 			jc_clickable_region = EClickableRegion::create_default_clickable_region
 			(jc_region_gabarite, jc_button, jc_custom_data);
-
+			jc_clickable_region->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_style);
 
 			jc_custom_data->clickable_region_list.push_back(jc_clickable_region);
 			jc_custom_data->parent_entity = jc_button;

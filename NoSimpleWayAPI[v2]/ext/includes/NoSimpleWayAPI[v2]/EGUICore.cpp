@@ -668,7 +668,7 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 {
 	
 
-	if (EGUIStyle::active_style != nullptr)
+	if ((EGUIStyle::active_style != nullptr) && (*_group->can_change_style))
 	{
 		//_group->selected_style = EGUIStyle::active_style;
 
@@ -680,6 +680,7 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 		//	EButtonGroup::apply_style_to_button_group(group, EGUIStyle::active_style);
 		//}
 
+		_group->selected_style = _style;
 
 		EButtonGroup::set_offset_borders
 		(
@@ -689,12 +690,18 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 			*_style->offset_border_bottom,
 			*_style->offset_border_up
 		);
+		
+
+		EButtonGroup::generate_brick_textured_bg(_group);
+
 
 		for (EntityButton* but : _group->button_list)
 		{
 			for (change_style_action csa : but->action_on_change_style_list)
 			{
 				csa(but, _style);
+
+				but->generate_vertex_buffer_for_all_sprite_layers();
 			}
 		}
 
@@ -767,15 +774,19 @@ EButtonGroupRow* EButtonGroup::get_last_created_row(EButtonGroup* _group)
 
 void EButtonGroup::change_style(EButtonGroup* _group, EGUIStyle* _style)
 {
+	EButtonGroup::apply_style_to_button_group(_group, _style);
+
+	//down to child elements
 	for (EButtonGroupRow* row: _group->group_row_list)
 	if (row != nullptr)
 	for (EButtonGroup* group:row->button_group_list)
 	if (group != nullptr)
 	{
-		EButtonGroup::apply_style_to_button_group(group, _style);
 		EButtonGroup::change_style(group, _style);
-	};
-	
+	}
+
+	_group->realign_all_buttons();
+	_group->set_world_position_and_redraw();
 }
 
 EButtonGroup* EButtonGroup::create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style)
@@ -783,14 +794,14 @@ EButtonGroup* EButtonGroup::create_default_button_group(ERegionGabarite* _region
 	EButtonGroup* just_created_button_group = new EButtonGroup(_region);
 
 	just_created_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
-	just_created_button_group->selected_style = _style;
+	
 
 	just_created_button_group->background_sprite_layer =
 	ESpriteLayer::create_default_sprite_layer(nullptr);
 
 	EButtonGroup::apply_style_to_button_group(just_created_button_group, _style);
 
-	EButtonGroup::generate_brick_textured_bg(just_created_button_group);
+
 	EButtonGroup::add_horizontal_scroll_bar(just_created_button_group);
 	just_created_button_group->root_group = just_created_button_group;
 

@@ -326,3 +326,8 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 		last_sprite->set_texture_gabarite(_style->background_for_slider);
 	}
 }
+
+void action_change_style_button(EntityButton* _but, EGUIStyle* _style)
+{
+	EntityButton::button_generate_brick_bg(_but, _style);
+}

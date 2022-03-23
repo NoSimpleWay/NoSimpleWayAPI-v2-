@@ -261,6 +261,19 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 	}
 }
 
+void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	for (EWindow* window : EWindow::window_list)
+	for (EButtonGroup* group:window->button_group_list)
+	{
+		EButtonGroup::change_style
+		(
+			group,
+			((EntityButton*)_entity)->parent_button_group->selected_style
+		);
+	}
+}
+
 /*
 bool EClickableRegion::overlapped_by_mouse(EClickableRegion* _region)
 {

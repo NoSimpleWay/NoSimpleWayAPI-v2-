@@ -92,9 +92,10 @@ public:
 };
 
 
-typedef void (*change_style_action)(Entity*, EGUIStyle*);
+typedef void (*change_style_action)(EntityButton*, EGUIStyle*);
 
-void action_change_style_slider(EntityButton* _but, EGUIStyle* _style);
+void action_change_style_slider		(EntityButton* _but, EGUIStyle* _style);
+void action_change_style_button		(EntityButton* _but, EGUIStyle* _style);
 
 class EntityButton : public Entity
 {

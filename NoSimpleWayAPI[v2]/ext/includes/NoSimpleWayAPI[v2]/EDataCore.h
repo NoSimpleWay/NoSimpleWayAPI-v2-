@@ -190,4 +190,5 @@ namespace EDataActionCollection
 	void action_change_style				(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_highlight_button_if_overlap (Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_style			(Entity* _entity, ECustomData* _custom_data, float _d);
 }

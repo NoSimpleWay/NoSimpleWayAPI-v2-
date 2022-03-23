@@ -500,7 +500,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_DefaultGabarites::texture_rusted_bronze				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_black_marble				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Black_marble.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_dark_spruce				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Dark_spruce.png", NS_EGraphicCore::default_texture_atlas);
+//	NS_DefaultGabarites::texture_dark_spruce				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Dark_spruce.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_dark_spruce				= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_lapis_wood					= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_slider_bg_lead_and_gold	= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 	
@@ -544,9 +545,9 @@ void NS_EGraphicCore::create_styles()
 	//*******************************
 	//dark spruce
 	just_created_style = new EGUIStyle();
-	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 5.0f, 5.0f, 5.0f, 5.0f, 8, 0);
+	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 6.0f, 6.0f, 6.0f, 6.0f, 8, 0);
 	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
-	EGUIStyle::set_style_offset_borders(just_created_style, 5.0f, 5.0f, 5.0f, 5.0f);
+	EGUIStyle::set_style_offset_borders(just_created_style, 6.0f, 6.0f, 6.0f, 6.0f);
 
 	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/slider_head_lead_and_gold_active.png", NS_EGraphicCore::default_texture_atlas);
@@ -569,7 +570,8 @@ void NS_EGraphicCore::create_styles()
 	//gray minimalism
 	just_created_style = new EGUIStyle();
 	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 1, 1);
-	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 1, 1);
+	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 1.0f, 1.0f, 1.0f, 1.0f, 0, 0);
+	
 	EGUIStyle::set_style_offset_borders(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f);
 
 	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
@@ -585,7 +587,7 @@ void NS_EGraphicCore::create_styles()
 	("data/textures/styles/gray_minimalism/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
 
 	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/gray_minimalism/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+	("data/textures/styles/gray_minimalism/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
 	//EGUIStyle::active_style = just_created_style;
 	EGUIStyle::style_list.push_back(just_created_style);
 	EGUIStyle::style_list.push_back(just_created_style);

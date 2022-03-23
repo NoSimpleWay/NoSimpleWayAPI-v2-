@@ -140,11 +140,13 @@ public:
 
 	ESpriteLayer* background_sprite_layer = nullptr;
 	
-	float* border_bottom	= new float(0.0f);
-	float* border_up		= new float(0.0f);
+	float*	border_bottom		= new float(0.0f);
+	float*	border_up			= new float(0.0f);
 
-	float* border_left		= new float(0.0f);
-	float* border_right		= new float(0.0f);
+	float*	border_left			= new float(0.0f);
+	float*	border_right		= new float(0.0f);
+
+	bool*	can_change_style	= new bool (true);
 
 	EGUIStyle* selected_style = nullptr;
 
