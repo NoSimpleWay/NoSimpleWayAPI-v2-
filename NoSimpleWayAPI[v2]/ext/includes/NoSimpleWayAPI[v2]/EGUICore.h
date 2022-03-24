@@ -182,43 +182,50 @@ public:
 
 	static int number;
 	//button group
-	ETextureGabarite* background_for_button_group = nullptr;
-	float*	offset_border_left		= new float(0.0f);
-	float*	offset_border_right		= new float(0.0f);
+	ETextureGabarite* background_for_button_group	= nullptr;
+	float*	offset_border_left						= new float(0.0f);
+	float*	offset_border_right						= new float(0.0f);
 			
-	float*	offset_border_up		= new float(0.0f);
-	float*	offset_border_bottom	= new float(0.0f);
+	float*	offset_border_up						= new float(0.0f);
+	float*	offset_border_bottom					= new float(0.0f);
 
-	float*	brick_border_left		= new float(0.0f);
-	float*	brick_border_right		= new float(0.0f);
+	float*	brick_border_left						= new float(0.0f);
+	float*	brick_border_right						= new float(0.0f);
 			
-	float*	brick_border_up			= new float(0.0f);
-	float*	brick_border_bottom		= new float(0.0f);
+	float*	brick_border_up							= new float(0.0f);
+	float*	brick_border_bottom						= new float(0.0f);
 
-	int*	subdivision_x			= new int (0);
-	int*	subdivision_y			= new int (0);
+	int*	subdivision_x							= new int (0);
+	int*	subdivision_y							= new int (0);
 
 	//button
-	ETextureGabarite* backround_for_buttons = nullptr;
-	float*	button_border_left		= new float (0.0f);
-	float*	button_border_right		= new float (0.0f);
-	float*	button_border_bottom	= new float (0.0f);
-	float*	button_border_up		= new float (0.0f);
+	ETextureGabarite* backround_for_buttons			= nullptr;
+	float*	button_border_left						= new float (0.0f);
+	float*	button_border_right						= new float (0.0f);
+	float*	button_border_bottom					= new float (0.0f);
+	float*	button_border_up						= new float (0.0f);
 
-	int*	button_subdivision_x	= new int (0.0f);
-	int*	button_subdivision_y	= new int (0.0f);
-
-	
+	int*	button_subdivision_x					= new int (0.0f);
+	int*	button_subdivision_y					= new int (0.0f);
 
 
+	//slider
 	ETextureGabarite*	background_for_slider		= nullptr;
 	ETextureGabarite*	slider_head_inactive		= nullptr;
 	ETextureGabarite*	slider_head_active			= nullptr;
+	float* slider_border_left						= new float(0.0f);
+	float* slider_border_right						= new float(0.0f);
+	float* slider_border_bottom						= new float(0.0f);
+	float* slider_border_up							= new float(0.0f);
+
+	int* slider_subdivision_x						= new int(0.0f);
+	int* slider_subdivision_y						= new int(0.0f);
 
 	static EGUIStyle*	active_style;
 	static void set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, int _subdivision_x, int _subdivision_y);
 	static void set_style_offset_borders(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom);
 	static void set_style_borders_and_subdivision_for_buttons(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, int _subdivision_x, int _subdivision_y);
+	static void set_style_borders_and_subdivision_for_slider_bg(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, int _subdivision_x, int _subdivision_y);
 	
 	static std::vector<EGUIStyle*> style_list;
 };

@@ -529,6 +529,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	ECustomData* custom_data = new ECustomData();
 	EDataContainerScrollBar* data_container = new EDataContainerScrollBar();
 	custom_data->actions_on_update.push_back(EDataActionCollection::action_update_slider);
+	but->action_on_change_style_list.push_back(action_change_style_slider);
 
 	EClickableRegion* cl_region = new EClickableRegion();
 
@@ -546,9 +547,18 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 			*_button_group->region->size_y - *_button_group->border_bottom - *_button_group->border_up
 		);
 
-		NS_ERenderCollection::set_brick_borders_and_subdivisions(5.0f, 5.0f, 5.0f, 5.0f, 0, 0);
+		NS_ERenderCollection::set_brick_borders_and_subdivisions
+		(
+			*_button_group->selected_style->slider_border_left,
+			*_button_group->selected_style->slider_border_right,
+			*_button_group->selected_style->slider_border_bottom,
+			*_button_group->selected_style->slider_border_up,
 
-		NS_ERenderCollection::generate_brick_texture(ERegionGabarite::temporary_gabarite, sprite_layer, NS_DefaultGabarites::texture_slider_bg_lead_and_gold);
+			*_button_group->selected_style->slider_subdivision_x,
+			*_button_group->selected_style->slider_subdivision_y
+		);
+
+		NS_ERenderCollection::generate_brick_texture(ERegionGabarite::temporary_gabarite, sprite_layer, _button_group->selected_style->background_for_slider);
 		sprite_layer->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
 		sprite_layer->generate_vertex_buffer_for_sprite_layer("init bg");
 
@@ -557,10 +567,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	=
 	ESpriteLayer::create_default_sprite_layer
 	(
-		NS_EGraphicCore::put_texture_to_atlas
-			(
-				"data/textures/slider_head_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas
-			)
+		_button_group->selected_style->slider_head_inactive
 	);
 	cl_region->sprite_layer_list.push_back(sprite_layer);
 
@@ -568,18 +575,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	//head_active
 	ESpriteLayer::get_last_sprite_frame(sprite_layer)
 	->
-	sprite_list.push_back
-	(
-		ESprite::create_default_sprite
-		(
-			NS_EGraphicCore::put_texture_to_atlas
-			(
-				"data/textures/slider_head_lead_and_gold_active.png", NS_EGraphicCore::default_texture_atlas
-			)
-			,
-			sprite_layer
-		)
-	);
+	sprite_list.push_back (ESprite::create_default_sprite (_button_group->selected_style->slider_head_active, sprite_layer));
 
 	
 	ERegionGabarite* clickable_gabarite
@@ -842,6 +838,17 @@ void EGUIStyle::set_style_borders_and_subdivision_for_buttons(EGUIStyle* _style,
 
 	*_style->button_subdivision_x	= _subdivision_x;
 	*_style->button_subdivision_y	= _subdivision_y;
+}
+
+void EGUIStyle::set_style_borders_and_subdivision_for_slider_bg(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, int _subdivision_x, int _subdivision_y)
+{
+	*_style->slider_border_left		= _border_left;
+	*_style->slider_border_right	= _border_right;
+	*_style->slider_border_up		= _border_up;
+	*_style->slider_border_bottom	= _border_bottom;
+
+	*_style->slider_subdivision_x	=	_subdivision_x;
+	*_style->slider_subdivision_y	=	_subdivision_y;
 }
 
 std::vector<EGUIStyle*> EGUIStyle::style_list;

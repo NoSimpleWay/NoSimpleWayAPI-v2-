@@ -312,19 +312,33 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 
 void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 {
-	ESprite* last_sprite = Entity::get_last_sprite(_but);
-
-	if
+	NS_ERenderCollection::set_brick_borders_and_subdivisions
 	(
-		(last_sprite != nullptr)
-		&&
-		(_style != nullptr)
-		&&
-		(_style->background_for_slider != nullptr)
-	)
-	{
-		last_sprite->set_texture_gabarite(_style->background_for_slider);
-	}
+		*_style->slider_border_left,
+		*_style->slider_border_right,
+		*_style->slider_border_bottom,
+		*_style->slider_border_up,
+		
+		*_style->slider_subdivision_x,
+		*_style->slider_subdivision_y
+	);
+
+	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
+	(
+		0.0f,
+		0.0f,
+		0.0f,
+		18.0f,
+		*_but->parent_button_group->region->size_y - *_but->parent_button_group->border_bottom - *_but->parent_button_group->border_up
+	);
+
+	NS_ERenderCollection::generate_brick_texture(ERegionGabarite::temporary_gabarite, _but->sprite_layer_list[0], _style->background_for_slider);
+	_but->sprite_layer_list[0]->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
+	_but->sprite_layer_list[0]->generate_vertex_buffer_for_sprite_layer("init bg");
+
+	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 0)->set_texture_gabarite(_style->slider_head_inactive);
+	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 1)->set_texture_gabarite(_style->slider_head_active);
+
 }
 
 void action_change_style_button(EntityButton* _but, EGUIStyle* _style)
