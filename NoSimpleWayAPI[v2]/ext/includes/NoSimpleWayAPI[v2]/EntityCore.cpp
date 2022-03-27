@@ -332,9 +332,81 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 		*_but->parent_button_group->region->size_y - *_but->parent_button_group->border_bottom - *_but->parent_button_group->border_up
 	);
 
-	NS_ERenderCollection::generate_brick_texture(ERegionGabarite::temporary_gabarite, _but->sprite_layer_list[0], _style->background_for_slider);
+	//offset by button_group
+	float total_group_height
+	=
+	*_but->parent_button_group->region->size_y
+	-
+	*_but->parent_button_group->border_bottom
+	-
+	*_but->parent_button_group->border_up;
+
+	//float current_height_percent
+	//=
+	//(
+	//	*_but->custom_data_list[0]->clickable_region_list[0]->region->offset_y
+	//	-
+	//	*_but->parent_button_group->border_bottom
+	//)
+	///
+	//(
+	//	total_group_height
+	//	-
+	//	*_but->custom_data_list[0]->clickable_region_list[0]->region->size_y
+	//);
+
+
+
+
+
+
+
+	NS_ERenderCollection::generate_brick_texture
+	(
+		ERegionGabarite::temporary_gabarite,
+		_but->sprite_layer_list[0],
+		_style->background_for_slider
+	);
+
+	*_but->sprite_layer_list[0]->offset_y = *_but->parent_button_group->border_bottom;
 	_but->sprite_layer_list[0]->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
 	_but->sprite_layer_list[0]->generate_vertex_buffer_for_sprite_layer("init bg");
+
+	//*_but->custom_data_list[0]->clickable_region_list[0]->region->offset_y
+	//=
+	//*_style->offset_border_bottom
+	//+
+	//(
+	//	(total_group_height - *_style->slider_head_inactive->size_y_in_pixels)
+	//	*
+	//	current_height_percent
+	//);
+
+	*_but->custom_data_list[0]->clickable_region_list[0]->region->size_y
+	=
+	*_style->slider_head_inactive->size_y_in_pixels;
+
+	*_but->custom_data_list[0]->clickable_region_list[0]->region->offset_y
+	=
+	round
+	(
+		(
+			total_group_height
+			-
+			*_but->custom_data_list[0]->clickable_region_list[0]->region->size_y
+		)
+		*
+		*(((EDataContainerScrollBar*)_but->custom_data_list[0]->data_container)->current_percent)
+		+
+		*_but->parent_button_group->border_bottom
+	)
+	;
+
+	//change clickable region size y
+
+
+	//change button gabarites size y
+	*_but->button_gabarite->size_y = *_style->slider_head_inactive->size_y_in_pixels;
 
 	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 0)->set_texture_gabarite(_style->slider_head_inactive);
 	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 1)->set_texture_gabarite(_style->slider_head_active);

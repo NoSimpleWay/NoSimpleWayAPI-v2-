@@ -176,6 +176,8 @@ public:
 	float*	max_value	= new float(0.0f);
 	float*	value_pointer;
 
+	float* current_percent = new float(0.0f);
+
 	//EButtonGroup* parent_button_group;
 };
 //////////////////////////////////////////////////////////////////////

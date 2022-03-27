@@ -91,6 +91,11 @@ void EButtonGroup::update(float _d)
 		{
 			_group->update(_d);
 		}
+
+		/*if (row->header_button_group != nullptr)
+		{
+			row->header_button_group->update(_d);
+		}*/
 	}
 
 	{
@@ -112,7 +117,11 @@ void EButtonGroup::update(float _d)
 
 	//final button groun, not subgroup
 	//if (group_row_list.empty())
-
+	
+	/*if (header_button_group != nullptr)
+	{
+		header_button_group->update(_d);
+	}*/
 }
 
 void EButtonGroup::draw()
@@ -127,41 +136,6 @@ void EButtonGroup::draw()
 	//BG
 	if (background_sprite_layer != nullptr)
 	{
-		/*if (parent_group_row == nullptr)
-		{
-			glScissor
-			(
-				*region->world_position_x,
-				*lower_culling_line,
-
-				*region->size_x,
-				max(0.0f, *higher_culling_line - *lower_culling_line)
-			);
-		}
-		else
-		{
-			float final_height = max(0.0f, *higher_culling_line - *lower_culling_line);
-			
-			final_height
-			=
-			min
-			(
-				final_height,
-				*parent_group_row->parent_button_group->region->world_position_y + *parent_group_row->parent_button_group->region->size_y
-				-
-				*region->world_position_y
-				-
-				*border_up);
-
-			glScissor
-			(
-				*region->world_position_x,
-				max(*lower_culling_line, *parent_group_row->parent_button_group->region->world_position_y + *border_bottom),
-
-				*region->size_x,
-				final_height
-			);
-		}*/
 		
 		glScissor
 		(
@@ -239,6 +213,8 @@ void EButtonGroup::draw()
 		{
 			group->draw();
 		}
+
+
 	}
 
 	batcher_for_default_draw->draw_call();
@@ -260,6 +236,20 @@ void EButtonGroup::draw()
 
 
 	batcher_for_default_draw->draw_call();
+
+	//if (header_button_group != nullptr)
+	//{
+	//	glScissor
+	//	(
+	//		*region->world_position_x,
+	//		*region->world_position_y,
+
+	//		*region->size_x,
+	//		*region->size_y
+	//	);
+
+	//	header_button_group->draw();
+	//}
 
 	glDisable(GL_SCISSOR_TEST);
 }
@@ -417,7 +407,16 @@ void EButtonGroup::set_world_position_and_redraw()
 		
 
 
-		if (parent_group_row == nullptr) { *highest_point_y = *prev_row->gabarite->offset_y + *prev_row->gabarite->size_y + *border_up; }
+		if (parent_group_row == nullptr)
+		{
+			*highest_point_y
+			=
+			*prev_row->gabarite->offset_y
+			+
+			*prev_row->gabarite->size_y
+			+
+			*border_up;
+		}
 		//prev_row = row;
 	}
 
@@ -502,7 +501,7 @@ void EButtonGroup::realign_all_buttons()
 			*but->offset_y = *but->parent_button_group->border_bottom + 3.0f;
 		}
 
-		*highest_point_y = max(*highest_point_y, *but->offset_y + *but->button_gabarite->size_y + 10.0f);
+		*highest_point_y = max(*highest_point_y, *but->offset_y + *but->button_gabarite->size_y + 3.0f);
 		//EInputCore::logger_param("highest point y", *highest_point_y);
 		prev_button = but;
 	}
@@ -583,7 +582,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 		new ERegionGabarite
 		(
 			0.0f,
-			7.0f,
+			*_button_group->border_bottom,
 			*ESpriteLayer::get_last_created_sprite(sprite_layer)->size_x,
 			*ESpriteLayer::get_last_created_sprite(sprite_layer)->size_y
 		);

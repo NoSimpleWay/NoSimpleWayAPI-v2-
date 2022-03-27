@@ -73,6 +73,7 @@ class EButtonGroupRow
 public:
 	ERegionGabarite* gabarite;
 	std::vector<EButtonGroup*> button_group_list;
+	//EButtonGroup* header_button_group;
 
 	EButtonGroup* parent_button_group;
 
@@ -107,6 +108,8 @@ public:
 	EButtonGroup(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
 	EButtonGroup(ERegionGabarite* _gabarite);
 	~EButtonGroup();
+
+	//EButtonGroup* header_button_group;
 
 	EButtonGroup* root_group = nullptr;
 

@@ -105,9 +105,21 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 	*data_bar->max_value
 	=
-	max(0.0f, *entity_button->parent_button_group->highest_point_y - *entity_button->parent_button_group->region->size_y);
+	max
+	(
+		0.0f,
+		*entity_button->parent_button_group->highest_point_y
+		-
+		(
+			*entity_button->parent_button_group->region->size_y
+			-
+			//*entity_button->parent_button_group->border_bottom
+			//-
+			*entity_button->parent_button_group->border_up
+		)
+	);
 	
-	if (*data_bar->max_value > 0)
+	if (*data_bar->max_value > 0.0f)
 	{*_entity->disable_draw = false;}
 	else
 	{*_entity->disable_draw = true;}
@@ -155,29 +167,36 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 					*_custom_data->clickable_region_list.at(0)->region->offset_y
 				);
 
+			*data_bar->current_percent
+			=
+			//head position (990 - 7) = 983
+			(
+				*_custom_data->clickable_region_list.at(0)->region->offset_y
+				-
+				*entity_button->parent_button_group->border_bottom
+			)
+			/
+			(
+				*entity_button->parent_button_group->region->size_y//1000
+				-
+				*_custom_data->clickable_region_list.at(0)->region->size_y//39
+				-
+				*entity_button->parent_button_group->border_up
+				-
+				*entity_button->parent_button_group->border_bottom//7
+			);
+
+			*data_bar->current_percent = min(*data_bar->current_percent, 1.0f);
 
 			*data_bar->value_pointer
 				=
 				round
 				(
-					//head position (990 - 7) = 983
-					(
-						*_custom_data->clickable_region_list.at(0)->region->offset_y
-						-
-						*entity_button->parent_button_group->border_bottom
-					)
-					/
-					(
-						*entity_button->parent_button_group->region->size_y//1000
-						-
-						*_custom_data->clickable_region_list.at(0)->region->size_y//39
-						-
-						*entity_button->parent_button_group->border_up
-						-
-						*entity_button->parent_button_group->border_bottom//7
-					)
+					*data_bar->current_percent
 					*
-					*data_bar->max_value * -1.0f
+					*data_bar->max_value
+					*
+					-1.0f
 				);
 
 
