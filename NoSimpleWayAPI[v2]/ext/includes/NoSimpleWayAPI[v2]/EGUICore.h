@@ -66,7 +66,17 @@ public:
 	/////////////////////////////////////////////////////////////////////
 };
 
+enum CullingLinesCalcMethod
+{
+	CLCM_BY_PARENT_GROUP,
+	CLCM_BY_HIMSELF
+};
 
+//enum ButtonRowType
+//{
+//	BRT_REGULAR,
+//	BRT_HEADER
+//};
 
 class EButtonGroupRow
 {
@@ -91,6 +101,8 @@ public:
 	float* lowest_culling_line_for_bg	= new float(0.0f);
 
 	EButtonGroup* root_group = nullptr;
+
+	
 	
 	//static EButtonGroupRow* create_default_row(ERegionGabarite* _region);
 };
@@ -109,7 +121,7 @@ public:
 	EButtonGroup(ERegionGabarite* _gabarite);
 	~EButtonGroup();
 
-	//EButtonGroup* header_button_group;
+	EButtonGroup* header_button_group;
 
 	EButtonGroup* root_group = nullptr;
 
@@ -164,6 +176,8 @@ public:
 	static EButtonGroupRow* get_last_created_row(EButtonGroup* _group);
 
 	static void change_style(EButtonGroup* _group, EGUIStyle* _style);
+
+	unsigned int* culling_lines_method = new unsigned int(CullingLinesCalcMethod::CLCM_BY_PARENT_GROUP);
 };
 
 //class EButtonContainer

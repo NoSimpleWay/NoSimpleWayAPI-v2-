@@ -539,10 +539,14 @@ EWindowMain::EWindowMain()
 
 
 
-
 		
 	}
-	
+
+	jc_button_group = EButtonGroup::create_default_button_group(new ERegionGabarite(0.0f, 0.0f, 0.0f, 400.0f, 30.0f), EGUIStyle::active_style);
+	*jc_button_group->culling_lines_method = CullingLinesCalcMethod::CLCM_BY_HIMSELF;
+	jc_button_group->root_group = main_button_group;
+	main_button_group->header_button_group = jc_button_group;
+
 	button_group_list.push_back(main_button_group);
 	main_button_group->realign_all_buttons();
 	main_button_group->set_world_position_and_redraw();
