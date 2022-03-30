@@ -745,12 +745,24 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 			*_group->selected_style->subdivision_y
 		);
 
-		NS_ERenderCollection::generate_brick_texture
-		(
-			_group->region,
-			_group->background_sprite_layer,
-			_group->selected_style->background_for_button_group
-		);
+		if (_group->root_group == _group)
+		{
+			NS_ERenderCollection::generate_brick_texture
+			(
+				_group->region,
+				_group->background_sprite_layer,
+				_group->selected_style->background_for_root_button_group
+			);
+		}
+		else
+		{
+			NS_ERenderCollection::generate_brick_texture
+			(
+				_group->region,
+				_group->background_sprite_layer,
+				_group->selected_style->background_for_button_group
+			);
+		}
 
 		if (_group->background_sprite_layer != nullptr)
 		{

@@ -535,8 +535,17 @@ void NS_EGraphicCore::create_styles()
 	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/lead_and_gold/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
 
+
+
+
 	just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->background_for_root_button_group = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+
+
 
 	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/lead_and_gold/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
@@ -562,8 +571,17 @@ void NS_EGraphicCore::create_styles()
 	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/dark_spruce/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
 
+
+
+
 	just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->background_for_root_button_group = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/dark_spruce/Root_group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+
+
 
 	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/dark_spruce/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
@@ -573,11 +591,13 @@ void NS_EGraphicCore::create_styles()
 	//*******************************
 	//gray minimalism
 	just_created_style = new EGUIStyle();
-	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 1, 1);
-	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 1.0f, 1.0f, 1.0f, 1.0f, 0, 0);
+	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 5.0f, 5.0f, 5.0f, 5.0f, 1, 1);
+	EGUIStyle::set_style_offset_borders(just_created_style, 5.0f, 5.0f, 5.0f, 5.0f);
+
+	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
 	EGUIStyle::set_style_borders_and_subdivision_for_slider_bg(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
 
-	EGUIStyle::set_style_offset_borders(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f);
+	
 
 	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/gray_minimalism/Slider_head_active.png", NS_EGraphicCore::default_texture_atlas);
@@ -588,14 +608,19 @@ void NS_EGraphicCore::create_styles()
 	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/gray_minimalism/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
 
+
+
 	just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/gray_minimalism/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->background_for_root_button_group = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/gray_minimalism/Root_group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+
 
 	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/gray_minimalism/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
 	//EGUIStyle::active_style = just_created_style;
-	EGUIStyle::style_list.push_back(just_created_style);
-	EGUIStyle::style_list.push_back(just_created_style);
 	EGUIStyle::style_list.push_back(just_created_style);
 
 
@@ -865,11 +890,11 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 
 			new_gabarite->set_uv_parameters
 			(
-				(float)(place_x + 0.0f) / (float)(_atlas->get_atlas_size_x()),
-				(float)(place_y + 0.0f) / (float)(_atlas->get_atlas_size_y()),
+				(float)(place_x) / (float)(_atlas->get_atlas_size_x()),
+				(float)(place_y) / (float)(_atlas->get_atlas_size_y()),
 
-				((float)(NS_EGraphicCore::last_texture_width) - 1.0f / (float)(last_texture_width)) / (float)_atlas->get_atlas_size_x(),
-				((float)(NS_EGraphicCore::last_texture_height) - 1.0f / (float)(last_texture_height)) / (float)_atlas->get_atlas_size_y()
+				(float)(NS_EGraphicCore::last_texture_width		- 1)	/ (float)(_atlas->get_atlas_size_x()),
+				(float)(NS_EGraphicCore::last_texture_height	- 1)	/ (float)(_atlas->get_atlas_size_y())
 			);
 
 			new_gabarite->target_atlas = _atlas;
@@ -1405,7 +1430,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 			for (unsigned int seg_y = 0; seg_y < 3; seg_y++)
 			{
 
-				//left border
+				//down border
 
 				if ((seg_y == 0))//down
 				{
@@ -1434,6 +1459,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 						texture_offset_y = NS_ERenderCollection::border_down_size;
 					}
 					else
+						//up border
 						if ((seg_y == 2))
 						{
 							total_divisions_y = 1;
@@ -1494,12 +1520,17 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 
 
 					final_offset_yz = base_offset_yz;
+
+					
+
 					for (int yy = 0; yy < count_of_generations_y; yy++)
 					{
 						final_offset_x = base_offset_x;
 
 						for (int xx = 0; xx < count_of_generations_x; xx++)//base_sprite_fragment_offset_x = full_mid_segment_size_x - NS_ERenderCollection::border_left_size;
 						{
+							
+
 							if (current_sprite_frame_id >= _sprite_layer->sprite_frame_list.size())
 							{
 								_sprite_layer->sprite_frame_list.push_back(ESpriteFrame::create_default_sprite_frame_with_sprite(_texture_gabarite, _sprite_layer));
@@ -1522,6 +1553,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 							*current_sprite->size_x = *current_sprite->fragment_size_x;
 							*current_sprite->size_y = *current_sprite->fragment_size_y;
 
+							//if ((seg_x == seg_y) && (seg_x == 1)) { *current_sprite->size_x = 0.0f; *current_sprite->size_x = 0.0f; }
 
 							current_sprite->sprite_calculate_uv();
 							final_offset_x += size_of_brick_x + 0.0f;
@@ -1992,8 +2024,8 @@ void ESprite::sprite_calculate_uv()
 	*uv_start_x = *main_texture->uv_start_x + *fragment_offset_x / main_texture->target_atlas->get_atlas_size_x();
 	*uv_start_y = *main_texture->uv_start_y + *fragment_offset_y / main_texture->target_atlas->get_atlas_size_y();
 
-	*uv_end_x = *uv_start_x + (*fragment_size_x - 1.0f / *fragment_size_x) / main_texture->target_atlas->get_atlas_size_x();
-	*uv_end_y = *uv_start_y + (*fragment_size_y - 1.0f / *fragment_size_y) / main_texture->target_atlas->get_atlas_size_y();
+	*uv_end_x = *uv_start_x + (*fragment_size_x) / main_texture->target_atlas->get_atlas_size_x();
+	*uv_end_y = *uv_start_y + (*fragment_size_y) / main_texture->target_atlas->get_atlas_size_y();
 
 }
 
