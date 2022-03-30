@@ -125,7 +125,7 @@ namespace NS_EGraphicCore
 	extern ETextureAtlas* default_texture_atlas;
 	extern unsigned char* image_data;
 	extern unsigned char* zalupa;
-	extern int			texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
+	extern int				texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
 	extern ETextureAtlas* default_texture_atlas;
 	extern float			delta_time;
 	extern float			saved_time_for_delta;

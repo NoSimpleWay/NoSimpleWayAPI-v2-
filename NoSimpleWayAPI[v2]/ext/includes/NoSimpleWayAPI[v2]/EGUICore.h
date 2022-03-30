@@ -200,6 +200,7 @@ public:
 	static int number;
 	//button group
 	ETextureGabarite* background_for_button_group	= nullptr;
+	ETextureGabarite* background_for_root_button_group = nullptr;
 	float*	offset_border_left						= new float(0.0f);
 	float*	offset_border_right						= new float(0.0f);
 			
