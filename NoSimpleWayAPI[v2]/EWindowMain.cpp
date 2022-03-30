@@ -181,12 +181,12 @@ EWindowMain::EWindowMain()
 
 		for (int z = 0; z < 10; z++)
 		{
-			jc_button_group_row = EButtonGroup::add_default_row(main_button_group, new ERegionGabarite(0.0f, 0.0f, 1200.0f, 150.0f));
+			jc_button_group_row = EButtonGroup::add_default_row(main_button_group, new ERegionGabarite(0.0f, 0.0f, 1200.0f, 160.0f));
 
 			//new group
 			jc_button_group = EButtonGroup::create_default_button_group
 			(
-				new ERegionGabarite(0.0f, 0.0f, 0.0f, 230.0f, 150.0f),
+				new ERegionGabarite(0.0f, 0.0f, 0.0f, 230.0f, 160.0f),
 				EGUIStyle::active_style
 			);
 
@@ -278,7 +278,7 @@ EWindowMain::EWindowMain()
 				//sub button group [level 1]
 
 
-				jc_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 600.0f, 150.0f); jc_button_group_row->button_group_list.push_back(jc_button_group);
+				jc_button_group = new EButtonGroup(0.0f, 0.0f, 0.0f, 1000.0f, 160.0f); jc_button_group_row->button_group_list.push_back(jc_button_group);
 				jc_button_group->selected_style = EGUIStyle::active_style;
 				jc_button_group->root_group = main_button_group;
 
@@ -303,7 +303,11 @@ EWindowMain::EWindowMain()
 
 				EButtonGroup::add_horizontal_scroll_bar(jc_button_group);
 				//button item
-				for (int i = 0; i < 120; i++)
+				int button_count = rand() % 10 + 1;
+				button_count *= rand() % 10 + 1;
+
+				for (int i = 0; i < button_count; i++)
+
 				{
 					jc_button = new EntityButton();
 					jc_button->action_on_change_style_list.push_back(&action_change_style_button);
