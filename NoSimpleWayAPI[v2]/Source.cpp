@@ -107,7 +107,9 @@ int main()
 		NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
 		NS_EGraphicCore::gl_set_blend_mode_default();
 		
-		
+		EButtonGroup::focused_button_group_with_slider = nullptr;
+		EButtonGroup::focused_button_group = nullptr;
+
 		for (EWindow* w : EWindow::window_list)
 		{
 			

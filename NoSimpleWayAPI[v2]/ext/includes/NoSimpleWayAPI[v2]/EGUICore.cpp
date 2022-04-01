@@ -8,7 +8,8 @@ std::vector<EWindow*> EWindow::window_list;
 
 EButtonGroup* EButtonGroup::focused_button_group = nullptr;
 
-
+//EButtonGroup* EButtonGroup::focused_button_group;
+EButtonGroup* EButtonGroup::focused_button_group_with_slider = nullptr;
 
 void EWindow::update_default(float _d)
 {
@@ -21,6 +22,13 @@ void EWindow::update_additional(float _d)
 
 void EWindow::GUI_update_default(float _d)
 {
+
+	for (EButtonGroup* b_group : button_group_list)
+	if (b_group != nullptr)
+	{
+		EButtonGroup::get_last_focused_group(b_group);
+	}
+
 	for (EButtonGroup* b_group : button_group_list)
 	if (b_group != nullptr)
 	{
@@ -147,8 +155,26 @@ void EButtonGroup::draw()
 		);
 
 		background_sprite_layer->transfer_vertex_buffer_to_batcher();
+
+		if (EButtonGroup::focused_button_group == this)
+		{
+			NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.073f);
+			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				batcher_for_default_draw->vertex_buffer,
+				batcher_for_default_draw->last_vertice_buffer_index,
+				*region->world_position_x + 0.0f,
+				*region->world_position_y + 0.0f,
+				*region->size_x - 0.0f,
+				*region->size_y - 0.0f,
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+		}
 		batcher_for_default_draw->draw_call();
 	}
+
+	
 
 	
 	//ELEMENTS
@@ -171,55 +197,6 @@ void EButtonGroup::draw()
 		}
 	}
 
-	if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
-	{
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
-		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
-		NS_ERenderCollection::add_data_to_vertex_buffer_rama
-		(
-			batcher_for_default_draw->vertex_buffer,
-			batcher_for_default_draw->last_vertice_buffer_index,
-			*region->world_position_x + 1.0f,
-			*region->world_position_y + 1.0f,
-			*region->size_x - 2.0f,
-			*region->size_y - 2.0f,
-			2.0f,
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-		);
-	}
-
-
-	for (EButtonGroupRow* row : group_row_list)
-	{
-		if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
-		{
-			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_RED);
-			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
-			NS_ERenderCollection::add_data_to_vertex_buffer_rama
-			(
-				batcher_for_default_draw->vertex_buffer,
-				batcher_for_default_draw->last_vertice_buffer_index,
-				*row->gabarite->world_position_x + 0.0f,
-				*row->gabarite->world_position_y + 0.0f,
-				*row->gabarite->size_x - 0.0f,
-				*row->gabarite->size_y - 0.0f,
-				2.0f,
-				NS_DefaultGabarites::texture_gabarite_white_pixel
-			);
-			batcher_for_default_draw->draw_call();
-		}
-
-		for (EButtonGroup* group : row->button_group_list)
-		{
-			group->draw();
-		}
-
-
-	}
-
-	batcher_for_default_draw->draw_call();
-
-	
 
 	for (EntityButton* but : button_list)
 	if
@@ -231,6 +208,21 @@ void EButtonGroup::draw()
 	{
 		but->draw();
 	}
+
+	//recursive draw
+	for (EButtonGroupRow* row : group_row_list)
+	{
+
+		for (EButtonGroup* group : row->button_group_list)
+		{
+			group->draw();
+		}
+
+
+	}
+
+	//draw call to prepare for header
+	batcher_for_default_draw->draw_call();
 
 	if (header_button_group != nullptr)
 	{
@@ -247,11 +239,84 @@ void EButtonGroup::draw()
 	}
 
 
+	//reset scissor
 	batcher_for_default_draw->draw_call();
 
 
 
 	glDisable(GL_SCISSOR_TEST);
+	
+	if (EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL))
+	{
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
+		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+		NS_ERenderCollection::add_data_to_vertex_buffer_rama
+		(
+			batcher_for_default_draw->vertex_buffer,
+			batcher_for_default_draw->last_vertice_buffer_index,
+			*region->world_position_x + 0.0f,
+			*region->world_position_y + 0.0f,
+			*region->size_x - 0.0f,
+			*region->size_y - 0.0f,
+			1.0f,
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+	}
+
+	if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+	{
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_CYAN);
+		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+		NS_ERenderCollection::add_data_to_vertex_buffer_rama
+		(
+			batcher_for_default_draw->vertex_buffer,
+			batcher_for_default_draw->last_vertice_buffer_index,
+			*region->world_position_x + 0.0f,
+			*lower_culling_line,
+			*region->size_x - 0.0f,
+			1.0f,
+			1.0f,
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_YELLOW);
+		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+		NS_ERenderCollection::add_data_to_vertex_buffer_rama
+		(
+			batcher_for_default_draw->vertex_buffer,
+			batcher_for_default_draw->last_vertice_buffer_index,
+			*region->world_position_x + 0.0f,
+			*higher_culling_line,
+			*region->size_x - 0.0f,
+			1.0f,
+			1.0f,
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+	}
+
+	if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
+	{
+		for (EButtonGroupRow* row : group_row_list)
+		{
+			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_RED);
+			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			NS_ERenderCollection::add_data_to_vertex_buffer_rama
+			(
+				batcher_for_default_draw->vertex_buffer,
+				batcher_for_default_draw->last_vertice_buffer_index,
+				*row->gabarite->world_position_x + 0.0f,
+				*row->gabarite->world_position_y + 0.0f,
+				*row->gabarite->size_x - 0.0f,
+				*row->gabarite->size_y - 0.0f,
+				1.0f,
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+			//batcher_for_default_draw->draw_call();
+		}
+	}
+
+	batcher_for_default_draw->draw_call();
+
 }
 
 void EButtonGroup::set_world_position_and_redraw()
@@ -283,7 +348,7 @@ void EButtonGroup::set_world_position_and_redraw()
 	)
 	{
 		*region->world_position_x = *root_group->region->offset_x + 0.0f;
-		*region->world_position_y = *root_group->region->offset_y + *root_group->region->size_y;
+		*region->world_position_y = *root_group->region->offset_y + *root_group->region->size_y - *region->size_y * 0.0f;
 
 		*higher_culling_line = *region->world_position_y + *region->size_y;
 		*lower_culling_line = *region->world_position_y;
@@ -295,16 +360,37 @@ void EButtonGroup::set_world_position_and_redraw()
 	if (header_button_group != nullptr) { header_button_group->set_world_position_and_redraw(); }
 
 
+	if (slider != nullptr)
+	{
+		*slider->offset_x
+			=
+			*region->size_x
+			-
+			*slider->button_gabarite->size_x
+			-
+			*border_right;
 
+
+
+		*slider->world_position_x
+			=
+			*slider->offset_x
+			+
+			*region->world_position_x;
+
+		slider->set_world_position(*slider->world_position_x, *slider->world_position_y, *slider->world_position_z);
+		slider->generate_vertex_buffer_for_all_sprite_layers();
+	}
 	
 	EButtonGroup* prev_group = nullptr;
 	EButtonGroupRow* prev_row = nullptr;
+	
 
 	for (EButtonGroupRow* row:group_row_list)
 	{
 		
 
-		*row->gabarite->offset_x = *border_left + 3.0f;
+		*row->gabarite->offset_x = *border_left;
 
 		if (prev_row != nullptr)
 		{
@@ -312,8 +398,11 @@ void EButtonGroup::set_world_position_and_redraw()
 		}
 		else
 		{
-			*row->gabarite->offset_y = *border_bottom + 3.0f;
+			*row->gabarite->offset_y = *border_bottom;
 		}
+
+
+		
 
 		//*row->gabarite->offset_y += *scroll_y;
 		prev_row = row;
@@ -325,33 +414,26 @@ void EButtonGroup::set_world_position_and_redraw()
 
 		*row->gabarite->world_position_z = *region->world_position_z + *row->gabarite->offset_z;
 
-		//*row->lowest_culling_line = max(*row->lowest_culling_line, *row->gabarite->world_position_y);
-
-		//*row->lowest_culling_line_for_bg = ;
-
-		//										master group											row world y
 
 
-		//*row->lowest_culling_line_for_bg = max
-		//(
-		//	*row->parent_button_group->region->world_position_y + 7.0f,
-		//	*row->gabarite->world_position_y
-		//);
-
-		//minimal_culling_line_top = *row->gabarite->world_position_y + *row->gabarite->size_y;
-		//minimal_culling_line_bottom = *row->gabarite->world_position_y;
 
 		prev_group = nullptr;
+
+		//if (*gabarite_size_mode_y == ButtonGroupGabariteSize::BGGS_EXACT_STRETCH) { *region->size_y = 0.0f; }
+		if (*row->gabarite_size_mode_y == ButtonGroupGabariteSize::BGGS_EXACT_STRETCH) { *row->gabarite->size_y = 0.0f; }
 		for (EButtonGroup* group : row->button_group_list)
 		{
-			
+			*group->region->offset_x = 0.0f;
+
 			if (prev_group != nullptr)
 			{
-				*group->region->offset_x = *prev_group->region->offset_x + *prev_group->region->size_x + 5.0f;
+				*group->region->offset_x = *prev_group->region->offset_x + *prev_group->region->size_x + 3.0f;
 			}
 			else
 			{
-				 //*group->region->offset_x = *group->border_left;
+
+				 *group->region->offset_y = 0.0f;
+
 				 prev_group = group;
 			}
 
@@ -360,6 +442,18 @@ void EButtonGroup::set_world_position_and_redraw()
 			*group->region->world_position_x = *row->gabarite->world_position_x + *group->region->offset_x;
 			*group->region->world_position_y = *row->gabarite->world_position_y + *group->region->offset_y;
 			*group->region->world_position_z = *row->gabarite->world_position_z + *group->region->offset_z;
+
+
+			if
+			(
+				(*row->gabarite_size_mode_y == ButtonGroupGabariteSize::BGGS_EXACT_STRETCH)
+				&&
+				(*group->region->offset_y + *group->region->size_y>= *row->gabarite->size_y)
+			)
+			{
+				*row->gabarite->size_y = *group->region->offset_y + *group->region->size_y;
+			}
+			
 
 			*group->higher_culling_line_for_bg = min
 			(
@@ -372,6 +466,7 @@ void EButtonGroup::set_world_position_and_redraw()
 				*group->higher_culling_line_for_bg,
 				*higher_culling_line_for_bg
 			);
+
 
 
 			*group->lower_culling_line_for_bg = max
@@ -399,27 +494,14 @@ void EButtonGroup::set_world_position_and_redraw()
 				*group->higher_culling_line,
 				*higher_culling_line
 			);
-			//*group->higher_culling_line = min(*group->region->world_position_y + *group->region->size_y, *group->higher_culling_line);
 
-			//minimal_culling_line_top = *group->higher_culling_line;
-
-			//*lower_culling_line = max(*lower_culling_line, *row->gabarite->world_position_y);
-			//*group->lower_culling_line = *lower_culling_line;
 			
 			*group->lower_culling_line = max(*group->region->world_position_y + *group->border_bottom, *region->world_position_y + *border_bottom);
 			*group->lower_culling_line = max(*group->lower_culling_line, *lower_culling_line);
-			//*group->lower_culling_line = 0.0f;
-			//*group->lower_culling_line = max(*group->region->world_position_y, *group->lower_culling_line);
-			//*group->lower_culling_line = max(*row->parent_button_group->lower_culling_line, *group->lower_culling_line);
-
-			//*group->lower_culling_line = max(*group->region->world_position_y, *row->lowest_culling_line);
-
-			//minimal_culling_line_bottom = *group->lower_culling_line;
-
-
-			//*group->highest_point_y = max(*group->highest_point_y, *row->gabarite->offset_y + *row->gabarite->size_y);
 			
 			
+			
+
 			group->set_world_position_and_redraw();
 			
 		}
@@ -438,6 +520,8 @@ void EButtonGroup::set_world_position_and_redraw()
 		}
 		//prev_row = row;
 	}
+
+
 
 	if
 	(
@@ -544,6 +628,9 @@ void EButtonGroup::realign_all_buttons()
 void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 {
 	EntityButton* but = new EntityButton();
+
+	_button_group->slider = but;
+
 	ECustomData* custom_data = new ECustomData();
 	EDataContainerScrollBar* data_container = new EDataContainerScrollBar();
 	custom_data->actions_on_update.push_back(EDataActionCollection::action_update_slider);
@@ -561,7 +648,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 			0.0f,
 			0.0f,
 			0.0f,
-			18.0f,
+			*_button_group->selected_style->slider_head_inactive->size_x_in_pixels,
 			*_button_group->region->size_y - *_button_group->border_bottom - *_button_group->border_up
 		);
 
@@ -610,23 +697,6 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	cl_region->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 	cl_region->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
 	
-		//sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
-
-		//ESpriteFrame* sprite_frame = new ESpriteFrame();
-		//ESprite* sprite = new ESprite();
-
-		//sprite_layer->sprite_frame_list.push_back(sprite_frame);
-
-		//sprite->set_texture_gabarite(NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_head_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas));
-		//sprite->master_sprite_layer = sprite_layer;
-		//sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite;
-		//sprite_frame->sprite_list.push_back(sprite);
-
-		/*sprite = new ESprite();
-		sprite->set_texture_gabarite(NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_head_lead_and_gold_active.png", NS_EGraphicCore::default_texture_atlas));
-		sprite->master_sprite_layer = sprite_layer;
-		sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite;
-		sprite_frame->sprite_list.push_back(sprite);*/
 
 
 		
@@ -745,7 +815,7 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 			*_group->selected_style->subdivision_y
 		);
 
-		if (_group->root_group == _group)
+		if (*_group->brick_background_type == BrickBackrgoundType::BBT_ROOT)
 		{
 			NS_ERenderCollection::generate_brick_texture
 			(
@@ -754,7 +824,7 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 				_group->selected_style->background_for_root_button_group
 			);
 		}
-		else
+		else if (*_group->brick_background_type == BrickBackrgoundType::BBT_REGULAR)
 		{
 			NS_ERenderCollection::generate_brick_texture
 			(
@@ -815,29 +885,97 @@ void EButtonGroup::change_style(EButtonGroup* _group, EGUIStyle* _style)
 	_group->set_world_position_and_redraw();
 }
 
-EButtonGroup* EButtonGroup::create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style)
+bool EButtonGroup::catched_by_mouse(EButtonGroup* _group)
+{
+	if
+	(
+		(*_group->higher_culling_line_for_bg > *_group->lower_culling_line_for_bg)
+		&&
+		(EInputCore::MOUSE_POSITION_X >= *_group->region->world_position_x)
+		&&
+		(EInputCore::MOUSE_POSITION_X <= *_group->region->world_position_x + *_group->region->size_x)
+		&&
+		(EInputCore::MOUSE_POSITION_Y >= *_group->lower_culling_line_for_bg)
+		&&
+		(EInputCore::MOUSE_POSITION_Y <= *_group->higher_culling_line_for_bg)
+	)
+	{
+		return true;
+	}
+
+	return false;
+}
+
+void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
+{
+	if
+	(
+
+		(EButtonGroup::catched_by_mouse(_group))
+	)
+	{
+		focused_button_group = _group;
+
+		if
+		(
+			(_group->slider != NULL)
+			&&
+			(!*_group->slider->disable_draw)
+		)
+		{focused_button_group_with_slider = _group;}
+	}
+
+	for (EButtonGroupRow* row : _group->group_row_list)
+	for (EButtonGroup* group : row->button_group_list)
+	{
+		get_last_focused_group(group);
+	}
+	//return nullptr;
+}
+
+//void EButtonGroup::get_focused_group(EButtonGroup* _group)
+//{
+//	if
+//	(
+//		(EButtonGroup::catched_by_mouse(_group))
+//	)
+//	{
+//		focused_button_group = _group;
+//	}
+//
+//	for (EButtonGroupRow* row : _group->group_row_list)
+//	for (EButtonGroup* group : row->button_group_list)
+//	{
+//		get_focused_group(group);
+//	}
+//	//return nullptr;
+//}
+
+EButtonGroup* EButtonGroup::create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style, unsigned int _bg_type)
 {
 	EButtonGroup* just_created_button_group = new EButtonGroup(_region);
 
+	*just_created_button_group->brick_background_type = _bg_type;
 	just_created_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 	
 
 	just_created_button_group->background_sprite_layer =
 	ESpriteLayer::create_default_sprite_layer(nullptr);
 
+	
 	EButtonGroup::apply_style_to_button_group(just_created_button_group, _style);
-
-
 	EButtonGroup::add_horizontal_scroll_bar(just_created_button_group);
-	just_created_button_group->root_group = just_created_button_group;
+	
 
 	return just_created_button_group;
 }
 
+
+
 EGUIStyle* EGUIStyle::active_style = nullptr;
 int EGUIStyle::number = 0;
 
-void EGUIStyle::set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, int _subdivision_x, int _subdivision_y)
+void EGUIStyle::set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up, int _subdivision_x, int _subdivision_y)
 {
 	*_style->brick_border_left		= _border_left;
 	*_style->brick_border_right		= _border_right;
@@ -849,7 +987,7 @@ void EGUIStyle::set_style_borders_and_subdivisions(EGUIStyle* _style, float _bor
 	*_style->subdivision_y	= _subdivision_y;
 }
 
-void EGUIStyle::set_style_offset_borders(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom)
+void EGUIStyle::set_style_offset_borders(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up)
 {
 	*_style->offset_border_left		= _border_left;
 	*_style->offset_border_right	= _border_right;
@@ -858,7 +996,7 @@ void EGUIStyle::set_style_offset_borders(EGUIStyle* _style, float _border_left, 
 	*_style->offset_border_up		= _border_up;
 }
 
-void EGUIStyle::set_style_borders_and_subdivision_for_buttons(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, int _subdivision_x, int _subdivision_y)
+void EGUIStyle::set_style_borders_and_subdivision_for_buttons(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up, int _subdivision_x, int _subdivision_y)
 {
 	*_style->button_border_left		= _border_left;
 	*_style->button_border_right	= _border_right;
@@ -870,7 +1008,7 @@ void EGUIStyle::set_style_borders_and_subdivision_for_buttons(EGUIStyle* _style,
 	*_style->button_subdivision_y	= _subdivision_y;
 }
 
-void EGUIStyle::set_style_borders_and_subdivision_for_slider_bg(EGUIStyle* _style, float _border_left, float _border_right, float _border_up, float _border_bottom, int _subdivision_x, int _subdivision_y)
+void EGUIStyle::set_style_borders_and_subdivision_for_slider_bg(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up, int _subdivision_x, int _subdivision_y)
 {
 	*_style->slider_border_left		= _border_left;
 	*_style->slider_border_right	= _border_right;

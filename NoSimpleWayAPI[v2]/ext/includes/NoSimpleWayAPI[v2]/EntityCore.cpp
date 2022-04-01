@@ -328,7 +328,7 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 		0.0f,
 		0.0f,
 		0.0f,
-		18.0f,
+		*_but->parent_button_group->selected_style->slider_head_inactive->size_x_in_pixels,
 		*_but->parent_button_group->region->size_y - *_but->parent_button_group->border_bottom - *_but->parent_button_group->border_up
 	);
 

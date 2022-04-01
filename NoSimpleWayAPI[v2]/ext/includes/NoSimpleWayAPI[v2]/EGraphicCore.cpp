@@ -520,11 +520,14 @@ void NS_EGraphicCore::create_styles()
 	//*******************************
 	//lead and gold
 	EGUIStyle* just_created_style = new EGUIStyle();
+	
 	EGUIStyle::set_style_borders_and_subdivisions					(just_created_style, 7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
+	EGUIStyle::set_style_offset_borders								(just_created_style, 7.0f, 7.0f, 7.0f, 7.0f);
+
 	EGUIStyle::set_style_borders_and_subdivision_for_buttons		(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
 	EGUIStyle::set_style_borders_and_subdivision_for_slider_bg		(just_created_style, 5.0f, 5.0f, 1.0f, 1.0f, 0, 0);
 
-	EGUIStyle::set_style_offset_borders(just_created_style, 7.0f, 7.0f, 7.0f, 7.0f);
+	
 
 	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/lead_and_gold/Slider_head_active.png", NS_EGraphicCore::default_texture_atlas);
@@ -542,7 +545,7 @@ void NS_EGraphicCore::create_styles()
 	("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
 
 	just_created_style->background_for_root_button_group = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+	("data/textures/styles/lead_and_gold/Root_group_bg.png", NS_EGraphicCore::default_texture_atlas);
 
 
 
@@ -620,6 +623,43 @@ void NS_EGraphicCore::create_styles()
 
 	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
 	("data/textures/styles/gray_minimalism/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
+	//EGUIStyle::active_style = just_created_style;
+	EGUIStyle::style_list.push_back(just_created_style);
+	//EGUIStyle::style_list.push_back(just_created_style);
+	//EGUIStyle::style_list.push_back(just_created_style);
+
+	//*******************************
+	//stone castle
+	just_created_style = new EGUIStyle();
+	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 11.0f, 11.0f, 11.0f, 18.0f, 2, 2);
+	EGUIStyle::set_style_offset_borders(just_created_style, 8.0f, 8.0f, 8.0f, 18.0f);
+
+	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
+	EGUIStyle::set_style_borders_and_subdivision_for_slider_bg(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
+
+
+
+	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/gray_minimalism/Slider_head_active.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/gray_minimalism/Slider_head_inactive.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/gray_minimalism/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+
+
+	just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/stone_castle/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+	just_created_style->background_for_root_button_group = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/stone_castle/Root_group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+
+
+	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
+	("data/textures/styles/stone_castle/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
 	//EGUIStyle::active_style = just_created_style;
 	EGUIStyle::style_list.push_back(just_created_style);
 
@@ -995,16 +1035,16 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_default(float* _array, unsi
 void NS_ERenderCollection::add_data_to_vertex_buffer_rama(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _t, ETextureGabarite* _texture)
 {
 	//left (vertical)
-	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x - _t, _y, _t, _h, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y + _t, _t, _h - _t * 2.0f, _texture);
 
 	//right (vertical)
-	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x + _w, _y, _t, _h, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x + _w - _t, _y + _t, _t, _h - _t * 2.0f, _texture);
 
 	//down (horizontal)
-	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x - _t, _y - _t, _w + _t * 2.0f, _t, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y, _w, _t, _texture);
 
 	//up (horizontal)
-	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x - _t, _y + _h, _w + _t * 2.0f, _t, _texture);
+	add_data_to_vertex_buffer_textured_rectangle_with_custom_size(_array, _start_offset, _x, _y + _h - _t, _w, _t, _texture);
 }
 
 void NS_ERenderCollection::add_data_to_vertex_buffer_custom_uv(float* _array, unsigned int& _start_offset, float _x, float _y, float _size_x, float _size_y, float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y)

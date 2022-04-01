@@ -8,7 +8,7 @@
 /**/
 namespace EInputCore
 {
-	int		scroll_direction;
+	int			scroll_direction;
 
 	bool		MOUSE_BUTTON_LEFT;
 	bool		MOUSE_BUTTON_RIGHT;

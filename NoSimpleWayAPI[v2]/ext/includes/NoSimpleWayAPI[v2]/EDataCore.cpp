@@ -130,27 +130,75 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			(EClickableRegion::active_clickable_region == nullptr)
 			||
 			(EClickableRegion::active_clickable_region == _custom_data->clickable_region_list.at(0))
+			||
+			(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
 		)
 		&&
-		(*_custom_data->clickable_region_list.at(0)->catched_body)
+		(
+			(*_custom_data->clickable_region_list.at(0)->catched_body)
+			||
+			(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
+		)
 		&&
 		(*data_bar->max_value > 0.0f)
 	)
 	{
-		if (*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id != 1)
+
+		
+
+		
+
+		if (*_custom_data->clickable_region_list.at(0)->catched_body)
 		{
-			*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id = 1;
-			_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
-			_entity->generate_vertex_buffer_for_all_sprite_layers();
+			if (EInputCore::mouse_button_state[GLFW_MOUSE_BUTTON_LEFT] != GLFW_RELEASE)
+			{
+				*_custom_data->clickable_region_list.at(0)->region->offset_y += EInputCore::MOUSE_SPEED_Y;
+			}
+
+			if (*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id != 1)
+			{
+				*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id = 1;
+
+				_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
+				_entity->generate_vertex_buffer_for_all_sprite_layers();
+			}
 		}
-		
 
-		
-
-		if (EInputCore::mouse_button_state[GLFW_MOUSE_BUTTON_LEFT] != GLFW_RELEASE)
+		if
+		(
+			(EInputCore::scroll_direction != 0)
+			&&
+			(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
+			&&
+			(*entity_button->parent_button_group->region->size_y > 10.0f)
+		)
 		{
-			*_custom_data->clickable_region_list.at(0)->region->offset_y += EInputCore::MOUSE_SPEED_Y;
+			*_custom_data->clickable_region_list.at(0)->region->offset_y
+			+=
+			(EInputCore::scroll_direction * EInputCore::scroll_direction * EInputCore::scroll_direction)
+			*
+			(*entity_button->parent_button_group->region->size_y  / *data_bar->max_value)
+			*
+			10.0f;
+		}
 
+		if
+		(
+			(
+				(EInputCore::mouse_button_state[GLFW_MOUSE_BUTTON_LEFT] != GLFW_RELEASE)
+				&&
+				(EInputCore::MOUSE_SPEED_Y != 0.0)
+				&&
+				(*_custom_data->clickable_region_list.at(0)->catched_body)
+			)
+			||
+			(
+				(EInputCore::scroll_direction != 0)
+				&&
+				(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
+			)
+		)
+		{
 			*_custom_data->clickable_region_list.at(0)->region->offset_y
 				=
 				max(*entity_button->parent_button_group->border_bottom, *_custom_data->clickable_region_list.at(0)->region->offset_y);
@@ -168,23 +216,23 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				);
 
 			*data_bar->current_percent
-			=
-			//head position (990 - 7) = 983
-			(
-				*_custom_data->clickable_region_list.at(0)->region->offset_y
-				-
-				*entity_button->parent_button_group->border_bottom
-			)
-			/
-			(
-				*entity_button->parent_button_group->region->size_y//1000
-				-
-				*_custom_data->clickable_region_list.at(0)->region->size_y//39
-				-
-				*entity_button->parent_button_group->border_up
-				-
-				*entity_button->parent_button_group->border_bottom//7
-			);
+				=
+				//head position (990 - 7) = 983
+				(
+					*_custom_data->clickable_region_list.at(0)->region->offset_y
+					-
+					*entity_button->parent_button_group->border_bottom
+					)
+				/
+				(
+					*entity_button->parent_button_group->region->size_y//1000
+					-
+					*_custom_data->clickable_region_list.at(0)->region->size_y//39
+					-
+					*entity_button->parent_button_group->border_up
+					-
+					*entity_button->parent_button_group->border_bottom//7
+					);
 
 			*data_bar->current_percent = min(*data_bar->current_percent, 1.0f);
 
@@ -202,26 +250,30 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 
 
-			//EInputCore::logger_param("max value", *data_bar->max_value);
-			//EInputCore::logger_param("scroll value", *data_bar->value_pointer);
-			//EInputCore::logger_param("number", EGUIStyle::number);
-			//EGUIStyle::number++;
-
-			//*entity_button->parent_button_group->scroll_y += 100.0f * _d;
-
 			entity_button->parent_button_group->realign_all_buttons();
 			entity_button->parent_button_group->set_world_position_and_redraw();
-
-			//_entity->calculate_all_world_positions();
 		}
 	}
 	else
 	{
-		*_custom_data->clickable_region_list.at(0)->sprite_layer_list.at(0)->sprite_frame_list.at(0)->active_frame_id = 0;
-
-		_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
-		_entity->generate_vertex_buffer_for_all_sprite_layers();
+		
 	}
+
+	if
+		(
+			(!*_custom_data->clickable_region_list.at(0)->catched_body)
+		)
+	{
+		if (*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id != 0)
+		{
+			*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id = 0;
+
+			_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
+			_entity->generate_vertex_buffer_for_all_sprite_layers();
+		}
+
+	}
+
 
 	//*_entity->world_position_x = *entity_button->parent_button_group->region->world_position_x + *entity_button->parent_button_group->region->size_x - *entity_button->button_gabarite->size_x;
 	//*_entity->world_position_y = *entity_button->parent_button_group->region->world_position_y;
@@ -365,8 +417,9 @@ void EClickableRegion::check_all_catches()
 {
 	//bool previvous_state = false;
 	bool any_catch = false;
-	if (!EInputCore::MOUSE_BUTTON_LEFT)
-	{
+
+		if (!EInputCore::MOUSE_BUTTON_LEFT)
+		{
 			if (can_catch_side[ClickableRegionSides::CRS_SIDE_LEFT])
 			{
 				*catched_side_left = catched_side_by_mouse
@@ -388,9 +441,9 @@ void EClickableRegion::check_all_catches()
 			{
 				*catched_side_left = false;
 			}
-			
-		
-		
+
+
+
 			if (can_catch_side[ClickableRegionSides::CRS_SIDE_RIGHT])
 			{
 
@@ -413,8 +466,8 @@ void EClickableRegion::check_all_catches()
 			{
 				*catched_side_right = false;
 			}
-			
-		
+
+
 
 			if (can_catch_side[ClickableRegionSides::CRS_SIDE_DOWN])
 			{
@@ -437,7 +490,7 @@ void EClickableRegion::check_all_catches()
 			{
 				*catched_side_down = false;
 			}
-			
+
 
 			if (can_catch_side[ClickableRegionSides::CRS_SIDE_UP])
 			{
@@ -460,7 +513,7 @@ void EClickableRegion::check_all_catches()
 			{
 				*catched_side_up = false;
 			}
-			
+
 			if (can_catch_side[ClickableRegionSides::CRS_SIDE_MID])
 			{
 				*catched_side_mid = catched_side_by_mouse
@@ -504,48 +557,50 @@ void EClickableRegion::check_all_catches()
 			{
 				*catched_body = false;
 			}
-			
+
 			*catch_offset_x = EInputCore::MOUSE_POSITION_X - *region->world_position_x;
 			*catch_offset_y = EInputCore::MOUSE_POSITION_Y - *region->world_position_y;
-	}
-	else
-	{
-
-		if (*catched_side_left)
-		{
-			*region->size_x			-= EInputCore::MOUSE_SPEED_X;
-			translate_clickable_region(EInputCore::MOUSE_SPEED_X, 0.0f, 0.0f, true);
 		}
-
-		if (*catched_side_right)
-		{
-			*region->size_x += EInputCore::MOUSE_SPEED_X;
-			redraw_text();
-		}
-
-		if (*catched_side_down)
-		{
-			translate_clickable_region(0.0f, EInputCore::MOUSE_SPEED_Y, 0.0f, true);
-			*region->size_y -= EInputCore::MOUSE_SPEED_Y;
-		}
-
-		if (*catched_side_up)
-		{
-			*region->size_y += EInputCore::MOUSE_SPEED_Y;
-			redraw_text();
-		}
-
-		if (*catched_side_mid)
-		{
-			translate_clickable_region(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f, true);
-		}
-
-		if ((*catched_side_left) || (*catched_side_right) || (*catched_side_up) || (*catched_side_down) || (*catched_side_mid))
+		else
 		{
 
+			if (*catched_side_left)
+			{
+				*region->size_x -= EInputCore::MOUSE_SPEED_X;
+				translate_clickable_region(EInputCore::MOUSE_SPEED_X, 0.0f, 0.0f, true);
+			}
 
+			if (*catched_side_right)
+			{
+				*region->size_x += EInputCore::MOUSE_SPEED_X;
+				redraw_text();
+			}
+
+			if (*catched_side_down)
+			{
+				translate_clickable_region(0.0f, EInputCore::MOUSE_SPEED_Y, 0.0f, true);
+				*region->size_y -= EInputCore::MOUSE_SPEED_Y;
+			}
+
+			if (*catched_side_up)
+			{
+				*region->size_y += EInputCore::MOUSE_SPEED_Y;
+				redraw_text();
+			}
+
+			if (*catched_side_mid)
+			{
+				translate_clickable_region(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f, true);
+			}
+
+			if ((*catched_side_left) || (*catched_side_right) || (*catched_side_up) || (*catched_side_down) || (*catched_side_mid))
+			{
+
+
+			}
 		}
-	}
+
+
 
 	if
 	(
@@ -614,6 +669,10 @@ EClickableRegion* EClickableRegion::create_default_clickable_region(ERegionGabar
 void EClickableRegion::update(float _d)
 {
 	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
+	//if
+	//(
+	//	(EButtonGroup::focused_button_group_with_slider->region == this->region)
+	//)
 	{
 		check_all_catches();
 	}

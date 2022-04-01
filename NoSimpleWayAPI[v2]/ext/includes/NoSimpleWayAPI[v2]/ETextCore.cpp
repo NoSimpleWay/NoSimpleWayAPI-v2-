@@ -403,8 +403,8 @@ void ETextArea::generate_text()
 					sprite_layer->vertex_buffer,
 					*sprite_layer->last_buffer_id,
 
-					*region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
-					*region_gabarite->world_position_y - (font->size_y_in_pixels[target_symbol] - 15.0f + font->offset_y[target_symbol] * *font_scale - y_adding) ,
+					round(*region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol]),
+					round(*region_gabarite->world_position_y - (font->size_y_in_pixels[target_symbol] - 15.0f + font->offset_y[target_symbol] * *font_scale - y_adding)),
 
 					font->size_x_in_pixels[target_symbol] * *font_scale,
 					font->size_y_in_pixels[target_symbol] * *font_scale,
