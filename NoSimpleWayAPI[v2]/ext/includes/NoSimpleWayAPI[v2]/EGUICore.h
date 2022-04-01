@@ -110,6 +110,7 @@ public:
 
 	unsigned int* gabarite_size_mode_y = new unsigned int(ButtonGroupGabariteSize::BGGS_CONSTANT);
 	
+	static void stretch_parent_group(EButtonGroupRow* _row, float _new_y_size);
 	//static EButtonGroupRow* create_default_row(ERegionGabarite* _region);
 };
 
@@ -166,8 +167,12 @@ public:
 	void update(float _d);
 	void draw();
 
-	void realign_all_buttons();
-	void set_world_position_and_redraw();
+		void realign_all_buttons();
+		void align_groups();
+		static void calculate_culling_lines(EButtonGroup* _group);
+		static void generate_vertex_buffer_for_group(EButtonGroup* _group);
+
+		static void refresh_button_group(EButtonGroup* _group);
 
 	ESpriteLayer* background_sprite_layer = nullptr;
 	
@@ -203,6 +208,8 @@ public:
 	static void get_last_focused_group(EButtonGroup* _group);
 	
 	static bool catched_by_mouse(EButtonGroup* _group);
+
+	static void stretch_parent_row(EButtonGroup* _group, float _new_y_size);
 
 };
 

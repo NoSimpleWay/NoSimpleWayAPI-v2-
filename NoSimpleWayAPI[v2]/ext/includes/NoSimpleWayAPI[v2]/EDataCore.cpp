@@ -118,6 +118,9 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			*entity_button->parent_button_group->border_up
 		)
 	);
+
+	//*data_bar->max_value = 1000.0f;
+	
 	
 	if (*data_bar->max_value > 0.0f)
 	{*_entity->disable_draw = false;}
@@ -248,10 +251,11 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				);
 
 
-
-
-			entity_button->parent_button_group->realign_all_buttons();
-			entity_button->parent_button_group->set_world_position_and_redraw();
+			EInputCore::logger_param("HPy", *entity_button->parent_button_group->highest_point_y);
+			EButtonGroup::refresh_button_group(entity_button->parent_button_group);
+			//entity_button->parent_button_group->realign_all_buttons();
+			//entity_button->parent_button_group->align_groups();
+			//EButtonGroup::calculate_culling_lines(entity_button->parent_button_group);
 		}
 	}
 	else
@@ -290,7 +294,9 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 	//_entity->
 
-
+	//*_entity->world_position_y = *entity_button->parent_button_group->region->world_position_y + *_entity->offset_y;
+	//_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
+	//_entity->generate_vertex_buffer_for_all_sprite_layers();
 }
 
 void EDataActionCollection::action_change_style(Entity* _entity, ECustomData* _custom_data, float _d)

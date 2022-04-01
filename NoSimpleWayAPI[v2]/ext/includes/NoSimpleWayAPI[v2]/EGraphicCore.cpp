@@ -5,7 +5,7 @@
 
 namespace NS_EGraphicCore
 {
-	int							SCREEN_WIDTH = 1920, SCREEN_HEIGHT = 1080;
+	int							SCREEN_WIDTH = 800, SCREEN_HEIGHT = 600;
 	float						correction_x = 1.0f, correction_y = 1.0f;
 	Shader* shader_texture_atlas_putter;
 
@@ -415,11 +415,11 @@ void NS_EGraphicCore::initiate_graphic_core()
 	GLFWmonitor* monitor = glfwGetPrimaryMonitor();
 	const GLFWvidmode* mode = glfwGetVideoMode(monitor);
 
-	glfwWindowHint(GLFW_RED_BITS, mode->redBits);
-	glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
-	glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
-	glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
-	glfwWindowHint(GLFW_DECORATED, NULL);
+	//glfwWindowHint(GLFW_RED_BITS, mode->redBits);
+	//glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
+	//glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
+	//glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
+	//glfwWindowHint(GLFW_DECORATED, NULL);
 
 	NS_EGraphicCore::main_window = glfwCreateWindow(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT, "Window name", NULL, NULL);
 	//std::cout << "[0]window is:" << (EGraphicCore::main_window) << std::endl;
@@ -449,8 +449,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
-	recalculate_correction();
+
 
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
 	glDisable(GL_DEPTH_TEST);
@@ -494,6 +493,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 	default_batcher_for_drawing->set_shader(new Shader("data/#default.vs", "data/#default.fs"));
 
+	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
+	recalculate_correction();
 
 	NS_DefaultGabarites::texture_gabarite_white_pixel		= NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_gabarite_gudron			= NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
@@ -1636,12 +1637,13 @@ void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, i
 	//width = round(width / 2.0f) * 2;
 	//height = round(height / 2.0f) * 2;
 	//glScissor(0, 0, 500, 500);
-	glfwSetWindowSize(NS_EGraphicCore::main_window, width, height);
 
-	glViewport(0, 0, width, height);
-	glfwGetWindowSize(window, &NS_EGraphicCore::SCREEN_WIDTH, &NS_EGraphicCore::SCREEN_WIDTH);
+	//glViewport(0, 0, width, height);
+	glfwGetWindowSize(window, &NS_EGraphicCore::SCREEN_WIDTH, &NS_EGraphicCore::SCREEN_HEIGHT);
+	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
+	
 
-	std::cout << "Resize event width:" << NS_EGraphicCore::SCREEN_WIDTH << " height: " << NS_EGraphicCore::SCREEN_WIDTH << std::endl;
+	std::cout << "Resize event width:" << NS_EGraphicCore::SCREEN_WIDTH << " height: " << NS_EGraphicCore::SCREEN_HEIGHT << std::endl;
 
 	recalculate_correction();
 }
@@ -1655,6 +1657,8 @@ void NS_EGraphicCore::recalculate_correction()
 
 		//std::cout << "helper correction_x: " << correction_x << " correction_y: " << correction_y << std::endl;
 	}
+
+	NS_EGraphicCore::default_batcher_for_drawing->set_transform_screen_size(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 }
 
 std::string ETextureGabarite::get_full_path()
