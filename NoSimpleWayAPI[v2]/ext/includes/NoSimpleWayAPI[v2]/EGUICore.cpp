@@ -243,19 +243,7 @@ void EButtonGroup::draw()
 	//draw call to prepare for header
 	batcher_for_default_draw->draw_call();
 
-	if (header_button_group != nullptr)
-	{
-		glScissor
-		(
-			*region->world_position_x,
-			*lower_culling_line,
 
-			*region->size_x,
-			max(0.0f, *higher_culling_line - *lower_culling_line)
-		);
-
-		header_button_group->draw();
-	}
 
 
 	//reset scissor
@@ -336,6 +324,11 @@ void EButtonGroup::draw()
 
 	batcher_for_default_draw->draw_call();
 
+	if (header_button_group != nullptr)
+	{
+		header_button_group->draw();
+	}
+
 }
 
 void EButtonGroup::align_groups()
@@ -361,10 +354,7 @@ void EButtonGroup::align_groups()
 		*region->world_position_y = *root_group->region->offset_y + *root_group->region->size_y - *region->size_y * 0.0f - *root_group->border_up;
 	}
 
-	if (header_button_group != nullptr)
-	{
-		header_button_group->align_groups();
-	}
+
 
 
 
@@ -480,7 +470,6 @@ void EButtonGroup::align_groups()
 	
 	
 
-
 }
 
 void EButtonGroup::calculate_culling_lines(EButtonGroup* _group)
@@ -567,10 +556,7 @@ void EButtonGroup::calculate_culling_lines(EButtonGroup* _group)
 		EButtonGroup::calculate_culling_lines(group);
 	}
 
-	if (_group->header_button_group != nullptr)
-	{
-		EButtonGroup::calculate_culling_lines(_group->header_button_group);
-	}
+
 }
 
 void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
@@ -578,10 +564,7 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 	if
 	(
 		(_group->background_sprite_layer != nullptr)
-		//&&
-		//(*region->world_position_y + *region->size_y >= *lower_culling_line)
-		//&&
-		//(*region->world_position_y <= *higher_culling_line)
+
 	)
 	{
 		_group->background_sprite_layer->sprite_layer_set_world_position
@@ -607,22 +590,19 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 			but->set_world_position(*but->world_position_x, *but->world_position_y, *but->world_position_z);
 
 
-			//if
-			//(
-			//	(*but->world_position_y + *but->button_gabarite->size_y >= *lower_culling_line)
-			//	&&
-			//	(*but->world_position_y <= *higher_culling_line)
-			//)
+			if
+			(
+				(*but->world_position_y + *but->button_gabarite->size_y >= *_group->lower_culling_line)
+				&&
+				(*but->world_position_y <= *_group->higher_culling_line)
+			)
 			{
 				but->generate_vertex_buffer_for_all_sprite_layers();
 			}
 		}
 	}
 
-	if (_group->header_button_group != nullptr)
-	{
-		EButtonGroup::generate_vertex_buffer_for_group(_group->header_button_group);
-	}
+
 }
 
 void EButtonGroup::refresh_button_group(EButtonGroup* _group)
@@ -637,6 +617,11 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 	for (EButtonGroup*		group:	row->button_group_list)
 	{
 		EButtonGroup::refresh_button_group(group);
+	}
+
+	if (_group->header_button_group != nullptr)
+	{
+		EButtonGroup::refresh_button_group(_group->header_button_group);
 	}
 }
 
@@ -868,29 +853,44 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 
 		_group->selected_style = _style;
 
-		EButtonGroup::set_offset_borders
-		(
-			_group,
-			*_style->offset_border_left,
-			*_style->offset_border_right,
-			*_style->offset_border_bottom,
-			*_style->offset_border_up
-		);
-		
-
-		EButtonGroup::generate_brick_textured_bg(_group);
-
-
-		for (EntityButton* but : _group->button_list)
+		if (*_group->button_group_type != ButtonGroupType::BGT_NO_BG_AND_SLIDER)
 		{
-			for (change_style_action csa : but->action_on_change_style_list)
-			{
-				csa(but, _style);
+			
 
-				but->generate_vertex_buffer_for_all_sprite_layers();
+			EButtonGroup::set_offset_borders
+			(
+				_group,
+				*_style->offset_border_left,
+				*_style->offset_border_right,
+				*_style->offset_border_bottom,
+				*_style->offset_border_up
+			);
+
+
+			EButtonGroup::generate_brick_textured_bg(_group);
+
+
+			for (EntityButton* but : _group->button_list)
+			{
+				for (change_style_action csa : but->action_on_change_style_list)
+				{
+					csa(but, _style);
+
+					but->generate_vertex_buffer_for_all_sprite_layers();
+				}
 			}
 		}
-
+		else
+		{
+			EButtonGroup::set_offset_borders
+			(
+				_group,
+				0.0f,
+				0.0f,
+				0.0f,
+				0.0f
+			);
+		}
 
 
 }
@@ -904,7 +904,7 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 
 void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 {
-	if ((_group != nullptr) && (_group->selected_style != nullptr))
+	if ((_group != nullptr) && (_group->selected_style != nullptr) && (*_group->button_group_type != ButtonGroupType::BGT_NO_BG_AND_SLIDER))
 	{
 		NS_ERenderCollection::set_brick_borders_and_subdivisions
 		(
@@ -917,7 +917,12 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 			*_group->selected_style->subdivision_y
 		);
 
-		if (*_group->brick_background_type == BrickBackrgoundType::BBT_ROOT)
+		if
+		(
+			(*_group->button_group_type == ButtonGroupType::BGT_ROOT)
+			||
+			(*_group->button_group_type == ButtonGroupType::BGT_HEADER)
+		)
 		{
 			NS_ERenderCollection::generate_brick_texture
 			(
@@ -926,7 +931,7 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 				_group->selected_style->background_for_root_button_group
 			);
 		}
-		else if (*_group->brick_background_type == BrickBackrgoundType::BBT_REGULAR)
+		else //if (*_group->button_group_type == ButtonGroupType::BGT_REGULAR)
 		{
 			NS_ERenderCollection::generate_brick_texture
 			(
@@ -1090,7 +1095,7 @@ EButtonGroup* EButtonGroup::create_default_button_group(ERegionGabarite* _region
 {
 	EButtonGroup* just_created_button_group = new EButtonGroup(_region);
 
-	*just_created_button_group->brick_background_type = _bg_type;
+	*just_created_button_group->button_group_type = _bg_type;
 	just_created_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 	
 
@@ -1099,7 +1104,16 @@ EButtonGroup* EButtonGroup::create_default_button_group(ERegionGabarite* _region
 
 	
 	EButtonGroup::apply_style_to_button_group(just_created_button_group, _style);
-	EButtonGroup::add_horizontal_scroll_bar(just_created_button_group);
+	
+	if
+	(
+			(*just_created_button_group->button_group_type != ButtonGroupType::BGT_NO_BG_AND_SLIDER)
+			&&
+			(*just_created_button_group->button_group_type != ButtonGroupType::BGT_HEADER)
+	)
+	{
+		EButtonGroup::add_horizontal_scroll_bar(just_created_button_group);
+	}
 	
 
 	return just_created_button_group;
@@ -1169,7 +1183,7 @@ EButtonGroupRow::EButtonGroupRow()
 {
 }
 
-void EButtonGroupRow::add_group(EButtonGroup* _group)
+EButtonGroup* EButtonGroupRow::add_group(EButtonGroup* _group)
 {
 	/*EButtonGroup* jc_group = EButtonGroup::create_default_button_group
 	(
@@ -1179,6 +1193,8 @@ void EButtonGroupRow::add_group(EButtonGroup* _group)
 	_group->root_group = root_group;
 	button_group_list.push_back(_group);
 	_group->parent_group_row = this;
+
+	return _group;
 }
 
 EButtonGroup* EButtonGroupRow::get_last_group(EButtonGroupRow* _row)

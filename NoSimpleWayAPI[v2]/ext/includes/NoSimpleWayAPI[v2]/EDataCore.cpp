@@ -251,7 +251,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				);
 
 
-			EInputCore::logger_param("HPy", *entity_button->parent_button_group->highest_point_y);
+			//EInputCore::logger_param("HPy", *entity_button->parent_button_group->highest_point_y);
 			EButtonGroup::refresh_button_group(entity_button->parent_button_group);
 			//entity_button->parent_button_group->realign_all_buttons();
 			//entity_button->parent_button_group->align_groups();

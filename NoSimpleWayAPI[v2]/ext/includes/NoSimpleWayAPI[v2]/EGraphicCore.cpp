@@ -641,13 +641,13 @@ void NS_EGraphicCore::create_styles()
 
 
 	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/gray_minimalism/Slider_head_active.png", NS_EGraphicCore::default_texture_atlas);
+	("data/textures/styles/stone_castle/Slider_head_active.png", NS_EGraphicCore::default_texture_atlas);
 
 	just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/gray_minimalism/Slider_head_inactive.png", NS_EGraphicCore::default_texture_atlas);
+	("data/textures/styles/stone_castle/Slider_head_inactive.png", NS_EGraphicCore::default_texture_atlas);
 
 	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/gray_minimalism/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
+	("data/textures/styles/stone_castle/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
 
 
 

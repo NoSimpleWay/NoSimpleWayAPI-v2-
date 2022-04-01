@@ -97,7 +97,7 @@ public:
 	EButtonGroupRow(ERegionGabarite* _region);
 	EButtonGroupRow();
 
-	void add_group(EButtonGroup* _group);
+	EButtonGroup* add_group(EButtonGroup* _group);
 	static EButtonGroup* get_last_group(EButtonGroupRow* _row);
 
 	float* lowest_culling_line = new float(0.0f);
@@ -114,10 +114,12 @@ public:
 	//static EButtonGroupRow* create_default_row(ERegionGabarite* _region);
 };
 
-enum BrickBackrgoundType
+enum ButtonGroupType
 {
-	BBT_REGULAR,
-	BBT_ROOT
+	BGT_REGULAR,
+	BGT_ROOT,
+	BGT_NO_BG_AND_SLIDER,
+	BGT_HEADER
 };
 
 
@@ -191,7 +193,7 @@ public:
 	static void generate_brick_textured_bg(EButtonGroup* _group);
 
 	static void apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* _style);
-	static EButtonGroup* create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style, unsigned int _bg_type = BrickBackrgoundType::BBT_REGULAR);
+	static EButtonGroup* create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style, unsigned int _bg_type = ButtonGroupType::BGT_REGULAR);
 
 	static EButtonGroupRow* add_default_row(EButtonGroup* _group, ERegionGabarite* _region);
 	static EButtonGroupRow* get_last_created_row(EButtonGroup* _group);
@@ -199,7 +201,7 @@ public:
 	static void change_style(EButtonGroup* _group, EGUIStyle* _style);
 
 	unsigned int* culling_lines_method		= new unsigned int(CullingLinesCalcMethod::CLCM_BY_PARENT_GROUP);
-	unsigned int* brick_background_type		= new unsigned int(BrickBackrgoundType::BBT_REGULAR);
+	unsigned int* button_group_type		= new unsigned int(ButtonGroupType::BGT_REGULAR);
 	unsigned int* gabarite_size_mode_y		= new unsigned int(ButtonGroupGabariteSize::BGGS_CONSTANT);
 
 	//static EButtonGroup* focused_button_group;

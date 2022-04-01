@@ -173,10 +173,10 @@ EWindowMain::EWindowMain()
 	(
 		new ERegionGabarite(0.0f, 0.0f, 0.0f, 1920.0f, 1000.0f),
 		EGUIStyle::active_style,
-		BrickBackrgoundType::BBT_ROOT
+		ButtonGroupType::BGT_ROOT
 	);
 		main_button_group->root_group = main_button_group;
-		*main_button_group->brick_background_type	= BrickBackrgoundType::BBT_ROOT;
+		*main_button_group->button_group_type	= ButtonGroupType::BGT_ROOT;
 		
 	button_group_list.push_back(main_button_group);
 
@@ -398,9 +398,9 @@ EWindowMain::EWindowMain()
 
 	//STYLE LIST BUTTON GROUP
 	main_button_group = EButtonGroup::create_default_button_group
-	(new ERegionGabarite(800.0f, 100.0f, 0.0f, 400.0f, 600.0f), EGUIStyle::active_style, BrickBackrgoundType::BBT_ROOT);
+	(new ERegionGabarite(800.0f, 100.0f, 0.0f, 400.0f, 600.0f), EGUIStyle::active_style, ButtonGroupType::BGT_ROOT);
 	main_button_group->root_group = main_button_group;
-	*main_button_group->brick_background_type = BrickBackrgoundType::BBT_ROOT;
+	*main_button_group->button_group_type = ButtonGroupType::BGT_ROOT;
 
 	//*main_button_group->can_change_style = false;
 
@@ -566,20 +566,68 @@ EWindowMain::EWindowMain()
 		
 	}
 
-	jc_button_group = EButtonGroup::create_default_button_group(new ERegionGabarite(0.0f, 0.0f, 0.0f, 400.0f, 40.0f), EGUIStyle::active_style, BrickBackrgoundType::BBT_ROOT);
+	//*******HEADER*******
+	
+	EButtonGroup* button_group_header = EButtonGroup::create_default_button_group
+	(new ERegionGabarite(0.0f, 0.0f, 0.0f, 400.0f, 40.0f), EGUIStyle::active_style, ButtonGroupType::BGT_HEADER);
 
-	*jc_button_group->culling_lines_method = CullingLinesCalcMethod::CLCM_BY_HIMSELF;
-	jc_button_group->root_group = main_button_group;
-	main_button_group->header_button_group = jc_button_group;
+	/**/main_button_group->header_button_group = button_group_header;
+	/**/*button_group_header->culling_lines_method = CullingLinesCalcMethod::CLCM_BY_HIMSELF;
+	/**/button_group_header->root_group = main_button_group;
+	/**/
+	/**/jc_button_group_row = EButtonGroup::add_default_row (button_group_header, new ERegionGabarite(0.0f, 0.0f, 400.0f, 10.0f));
+	///**/*button_group_header->gabarite_size_mode_y = ButtonGroupGabariteSize::BGGS_EXACT_STRETCH;
+			jc_button_group_row->add_group
+			(
+				EButtonGroup::create_default_button_group
+				(
+					new ERegionGabarite(0.0f, 0.0f, 0.0f, 355.0f, 28.0f),
+					EGUIStyle::active_style,
+					ButtonGroupType::BGT_NO_BG_AND_SLIDER
+				)
+			);
+
+			EButtonGroup* close_group = jc_button_group_row->add_group
+			(
+				EButtonGroup::create_default_button_group
+				(
+					new ERegionGabarite(0.0f, 0.0f, 0.0f, 28.0f, 28.0f),
+					EGUIStyle::active_style,
+					ButtonGroupType::BGT_NO_BG_AND_SLIDER
+				)
+			);
+
+					jc_button = new EntityButton();
+					jc_button->action_on_change_style_list.push_back(&action_change_style_button);
+					close_group->button_list.push_back(jc_button);
+					jc_button->parent_button_group = close_group;
+
+					jc_button->sprite_layer_list.push_back
+					(
+						ESpriteLayer::create_default_sprite_layer
+						(NS_EGraphicCore::put_texture_to_atlas("data/textures/button_bg_bright.png", NS_EGraphicCore::default_texture_atlas))
+					);
+					jc_region_gabarite = new ERegionGabarite(0.0f, 0.0f, 20.0f, 20.0f);
+					jc_button->button_gabarite = jc_region_gabarite;
+
+					ESprite::set_size
+					(
+						Entity::get_last_sprite(jc_button),
+						20.0f,
+						20.0f,
+						0.0f
+					);
+
+					EntityButton::button_generate_brick_bg(jc_button, EGUIStyle::active_style);
+
+					jc_button->set_world_position(*jc_button->offset_x, *jc_button->offset_y, *jc_button->offset_z);
+					jc_button->generate_vertex_buffer_for_all_sprite_layers();
+
+	
 
 	button_group_list.push_back(main_button_group);
 
 	EButtonGroup::refresh_button_group(main_button_group);
-	//main_button_group->realign_all_buttons();
-	//main_button_group->align_groups();
-	//EButtonGroup::calculate_culling_lines(main_button_group);
-
-	//push back button
 
 
 	
