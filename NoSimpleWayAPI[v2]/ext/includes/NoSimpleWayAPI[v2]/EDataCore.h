@@ -71,6 +71,7 @@ public:
 
 	ERegionGabarite(float _offset_x, float _offset_y, float _size_x, float _size_y);
 	ERegionGabarite(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
+	ERegionGabarite(float _size_x, float _size_y);
 
 	float* offset_x = new float(0.0f);
 	float* offset_y = new float(0.0f);

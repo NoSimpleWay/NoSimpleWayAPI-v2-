@@ -117,7 +117,7 @@ public:
 enum ButtonGroupType
 {
 	BGT_REGULAR,
-	BGT_ROOT,
+	BGT_DARKEN,
 	BGT_NO_BG_AND_SLIDER,
 	BGT_HEADER
 };
@@ -193,7 +193,13 @@ public:
 	static void generate_brick_textured_bg(EButtonGroup* _group);
 
 	static void apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* _style);
-	static EButtonGroup* create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style, unsigned int _bg_type = ButtonGroupType::BGT_REGULAR);
+
+	static EButtonGroup* create_base_button_group(ERegionGabarite* _region, EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg);
+	static EButtonGroup* create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style);
+	static EButtonGroup* create_root_button_group(ERegionGabarite* _region, EGUIStyle* _style);
+	static EButtonGroup* create_header_button_group(ERegionGabarite* _region, EGUIStyle* _style);
+	static EButtonGroup* create_invisible_button_group(ERegionGabarite* _region, EGUIStyle* _style);
+	
 
 	static EButtonGroupRow* add_default_row(EButtonGroup* _group, ERegionGabarite* _region);
 	static EButtonGroupRow* get_last_created_row(EButtonGroup* _group);
@@ -212,6 +218,8 @@ public:
 	static bool catched_by_mouse(EButtonGroup* _group);
 
 	static void stretch_parent_row(EButtonGroup* _group, float _new_y_size);
+
+	bool* have_bg = new bool(true);
 
 };
 
@@ -240,21 +248,37 @@ public:
 	static int number;
 	//button group
 	ETextureGabarite* background_for_button_group	= nullptr;
-	ETextureGabarite* background_for_root_button_group = nullptr;
 	float*	offset_border_left						= new float(0.0f);
 	float*	offset_border_right						= new float(0.0f);
 			
 	float*	offset_border_up						= new float(0.0f);
 	float*	offset_border_bottom					= new float(0.0f);
-
+	///
 	float*	brick_border_left						= new float(0.0f);
 	float*	brick_border_right						= new float(0.0f);
 			
 	float*	brick_border_up							= new float(0.0f);
 	float*	brick_border_bottom						= new float(0.0f);
-
+	///
 	int*	subdivision_x							= new int (0);
 	int*	subdivision_y							= new int (0);
+
+	//dark button group
+	ETextureGabarite* background_for_root_button_group	= nullptr;
+	float*	dark_offset_border_left						= new float(0.0f);
+	float*	dark_offset_border_right					= new float(0.0f);
+			
+	float*	dark_offset_border_up						= new float(0.0f);
+	float*	dark_offset_border_bottom					= new float(0.0f);
+	///
+	float*	dark_brick_border_left						= new float(0.0f);
+	float*	dark_brick_border_right						= new float(0.0f);
+			
+	float*	dark_brick_border_up						= new float(0.0f);
+	float*	dark_brick_border_bottom					= new float(0.0f);
+	///
+	int*	dark_subdivision_x							= new int(0);
+	int*	dark_subdivision_y							= new int(0);
 
 	//button
 	ETextureGabarite* backround_for_buttons			= nullptr;
@@ -262,7 +286,7 @@ public:
 	float*	button_border_right						= new float (0.0f);
 	float*	button_border_bottom					= new float (0.0f);
 	float*	button_border_up						= new float (0.0f);
-
+	///
 	int*	button_subdivision_x					= new int (0.0f);
 	int*	button_subdivision_y					= new int (0.0f);
 
@@ -275,13 +299,17 @@ public:
 	float* slider_border_right						= new float(0.0f);
 	float* slider_border_bottom						= new float(0.0f);
 	float* slider_border_up							= new float(0.0f);
-
+	///
 	int* slider_subdivision_x						= new int(0.0f);
 	int* slider_subdivision_y						= new int(0.0f);
 
 	static EGUIStyle*	active_style;
 	static void set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up, int _subdivision_x, int _subdivision_y);
+	static void set_style_dark_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up, int _subdivision_x, int _subdivision_y);
+	
 	static void set_style_offset_borders(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up);
+	static void set_style_dark_offset_borders(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up);
+	
 	static void set_style_borders_and_subdivision_for_buttons(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up, int _subdivision_x, int _subdivision_y);
 	static void set_style_borders_and_subdivision_for_slider_bg(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up, int _subdivision_x, int _subdivision_y);
 	

@@ -633,7 +633,7 @@ void NS_EGraphicCore::create_styles()
 	//stone castle
 	just_created_style = new EGUIStyle();
 	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 11.0f, 11.0f, 11.0f, 18.0f, 2, 2);
-	EGUIStyle::set_style_offset_borders(just_created_style, 8.0f, 8.0f, 8.0f, 18.0f);
+	EGUIStyle::set_style_offset_borders(just_created_style, 8.0f, 8.0f, 11.0f, 16.0f);
 
 	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
 	EGUIStyle::set_style_borders_and_subdivision_for_slider_bg(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
@@ -2065,11 +2065,14 @@ void ESprite::set_texture_gabarite(ETextureGabarite* _gabarite)
 
 void ESprite::sprite_calculate_uv()
 {
-	*uv_start_x = *main_texture->uv_start_x + *fragment_offset_x / main_texture->target_atlas->get_atlas_size_x();
-	*uv_start_y = *main_texture->uv_start_y + *fragment_offset_y / main_texture->target_atlas->get_atlas_size_y();
+	if (main_texture != nullptr)
+	{
+		*uv_start_x = *main_texture->uv_start_x + *fragment_offset_x / main_texture->target_atlas->get_atlas_size_x();
+		*uv_start_y = *main_texture->uv_start_y + *fragment_offset_y / main_texture->target_atlas->get_atlas_size_y();
 
-	*uv_end_x = *uv_start_x + (*fragment_size_x) / main_texture->target_atlas->get_atlas_size_x();
-	*uv_end_y = *uv_start_y + (*fragment_size_y) / main_texture->target_atlas->get_atlas_size_y();
+		*uv_end_x = *uv_start_x + (*fragment_size_x) / main_texture->target_atlas->get_atlas_size_x();
+		*uv_end_y = *uv_start_y + (*fragment_size_y) / main_texture->target_atlas->get_atlas_size_y();
+	}
 
 }
 

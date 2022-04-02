@@ -917,6 +917,12 @@ ERegionGabarite::ERegionGabarite(float _offset_x, float _offset_y, float _offset
 	*size_y = _size_y;
 }
 
+ERegionGabarite::ERegionGabarite(float _size_x, float _size_y)
+{
+	*size_x = _size_x;
+	*size_y = _size_y;
+}
+
 void ERegionGabarite::translate(float _x, float _y)
 {
 	*offset_x += _x;

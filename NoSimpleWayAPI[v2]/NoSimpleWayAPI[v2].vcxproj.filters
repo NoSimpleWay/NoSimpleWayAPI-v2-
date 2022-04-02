@@ -77,9 +77,6 @@
     <ClInclude Include="ext\includes\ConsoleColor.h">
       <Filter>NoSimpleWayAPI[v2]\GraphicCore</Filter>
     </ClInclude>
-    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.h">
-      <Filter>NoSimpleWayAPI[v2]\GUICore</Filter>
-    </ClInclude>
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.h">
       <Filter>NoSimpleWayAPI[v2]\IOCore</Filter>
     </ClInclude>
@@ -103,6 +100,9 @@
     </ClInclude>
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.h">
       <Filter>NoSimpleWayAPI[v2]\DataCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.h">
+      <Filter>NoSimpleWayAPI[v2]\GUICore</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
