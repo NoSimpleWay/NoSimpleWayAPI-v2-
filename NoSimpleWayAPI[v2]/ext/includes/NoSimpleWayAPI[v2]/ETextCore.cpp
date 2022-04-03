@@ -871,7 +871,7 @@ void ETextArea::draw()
 		//EInputCore::logger_simple_success("LOL");
 		ERenderBatcher::check_batcher(sprite_layer->batcher);
 
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLACK);
+		NS_EGraphicCore::set_active_color(color);
 
 		//if (*selected_left_side)
 		{

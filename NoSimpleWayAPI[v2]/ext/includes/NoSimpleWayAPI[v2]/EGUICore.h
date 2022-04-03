@@ -167,6 +167,9 @@ public:
 	float* higher_culling_line_for_bg = new float(0.0f);
 	float* lower_culling_line_for_bg = new float(0.0f);
 
+	float* base_height		= new float(0.0f);
+	float* base_width		= new float(0.0f);
+
 	void update(float _d);
 	void draw();
 

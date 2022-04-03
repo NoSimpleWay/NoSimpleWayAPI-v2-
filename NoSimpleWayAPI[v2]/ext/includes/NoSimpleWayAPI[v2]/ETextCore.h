@@ -116,7 +116,7 @@ public:
 
 	bool* error = new bool(false);
 
-	float* color = new float[4]{1.0f, 1.0f, 1.0f, 1.0f};
+	float* color = new float[4]{0.9f, 0.85f, 0.6f, 1.0f};
 	float* font_scale = new float(1.0f);
 	EFont* font = nullptr;
 

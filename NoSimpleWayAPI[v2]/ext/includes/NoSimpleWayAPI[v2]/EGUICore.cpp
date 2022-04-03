@@ -866,6 +866,8 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 		//}
 
 		
+		//*_group->region->size_x = *_group->base_width	+ *_group->border_left		+ *_group->border_right;
+		//*_group->region->size_y = *_group->base_height	+ *_group->border_bottom	+ *_group->border_up;
 
 		if (*_group->have_bg)
 		{
@@ -1176,6 +1178,9 @@ EButtonGroup* EButtonGroup::create_base_button_group(ERegionGabarite* _region, E
 {
 	EButtonGroup* just_created_button_group = new EButtonGroup(_region);
 	just_created_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
+
+	*just_created_button_group->base_width	= *_region->size_x;
+	*just_created_button_group->base_height	= *_region->size_y;
 
 	if (_default_bg)
 	{

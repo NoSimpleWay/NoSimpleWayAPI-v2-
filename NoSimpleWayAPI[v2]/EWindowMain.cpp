@@ -388,7 +388,7 @@ EWindowMain::EWindowMain()
 	for (EGUIStyle* style : EGUIStyle::style_list)
 	{
 		//main row
-		jc_button_group_row = EButtonGroup::add_default_row (main_button_group, new ERegionGabarite(0.0f, 0.0f, 350.0f, 10.0f));
+		jc_button_group_row = EButtonGroup::add_default_row (main_button_group, new ERegionGabarite(350.0f, 10.0f));
 		*jc_button_group_row->gabarite_size_mode_y = ButtonGroupGabariteSize::BGGS_EXACT_STRETCH;
 
 		//group with constant style
@@ -398,11 +398,11 @@ EWindowMain::EWindowMain()
 		*jc_button_group->gabarite_size_mode_y = ButtonGroupGabariteSize::BGGS_EXACT_STRETCH;
 
 		//subrow big
-		jc_button_group_row = EButtonGroup::add_default_row (jc_button_group, new ERegionGabarite(0.0f, 0.0f, 330.0f, 130.0f));
+		jc_button_group_row = EButtonGroup::add_default_row (jc_button_group, new ERegionGabarite(0.0f, 0.0f, 330.0f, 100.0f));
 
 		//group big
 		EButtonGroup* big_subgroup = jc_button_group_row->add_group
-		(EButtonGroup::create_default_button_group(new ERegionGabarite(0.0f, 0.0f, 0.0f, 330.0f, 130.0f),style));
+		(EButtonGroup::create_default_button_group(new ERegionGabarite(0.0f, 0.0f, 0.0f, 330.0f, 100.0f),style));
 
 			if (big_subgroup != nullptr)
 			{
