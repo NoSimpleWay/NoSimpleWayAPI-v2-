@@ -40,6 +40,7 @@ class EDataTag;
 class EDataEntity;
 
 class EGUIStyle;
+class EBrickStyle;
 
 
 

@@ -520,149 +520,336 @@ void NS_EGraphicCore::create_styles()
 {
 	//*******************************
 	//lead and gold
-	EGUIStyle* just_created_style = new EGUIStyle();
-	
-	EGUIStyle::set_style_borders_and_subdivisions					(just_created_style, 7.0f, 7.0f, 7.0f, 7.0f, 2, 2);
-	EGUIStyle::set_style_offset_borders								(just_created_style, 7.0f, 7.0f, 7.0f, 7.0f);
+	EGUIStyle* just_created_style = new EGUIStyle("lead_and_gold");
+		//***********************************************************
+		//main gutton group
+		EBrickStyle* jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-	EGUIStyle::set_style_borders_and_subdivision_for_buttons		(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
-	EGUIStyle::set_style_borders_and_subdivision_for_slider_bg		(just_created_style, 5.0f, 5.0f, 1.0f, 1.0f, 0, 0);
+		EBrickStyle::set_border_size		(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
+		EBrickStyle::set_offset_size		(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
+		EBrickStyle::set_subdivisions		(jc_brick, 2, 2);
 
-	
+		//***********************************************************
+		//darken gutton group
+			jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/lead_and_gold/Slider_head_active.png", NS_EGraphicCore::default_texture_atlas);
+		EBrickStyle::set_border_size(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
+		EBrickStyle::set_offset_size(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
 
-	just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/lead_and_gold/Slider_head_inactive.png", NS_EGraphicCore::default_texture_atlas);
+		//***********************************************************
+		//slider bg
+			jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/lead_and_gold/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
+		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head inactive
+			jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head active
+			jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//button background
+			jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
 
 
-
-	just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
-
-	just_created_style->background_for_root_button_group = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/lead_and_gold/Root_group_bg.png", NS_EGraphicCore::default_texture_atlas);
-
-
-
-
-	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/lead_and_gold/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
-
-	EGUIStyle::active_style = just_created_style;
+		EGUIStyle::active_style = just_created_style;
 	EGUIStyle::style_list.push_back(just_created_style);
 
 	//*******************************
 	//dark spruce
-	just_created_style = new EGUIStyle();
-	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 6.0f, 6.0f, 6.0f, 6.0f, 8, 0);
-	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
-	EGUIStyle::set_style_borders_and_subdivision_for_slider_bg(just_created_style, 3.0f, 3.0f, 3.0f, 3.0f, 0, 0);
+	just_created_style = new EGUIStyle("dark_spruce");
+		//***********************************************************
+		//main gutton group
+		jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-	EGUIStyle::set_style_offset_borders(just_created_style, 6.0f, 6.0f, 6.0f, 6.0f);
+		EBrickStyle::set_border_size		(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
+		EBrickStyle::set_offset_size		(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
+		EBrickStyle::set_subdivisions		(jc_brick, 8, 0);
 
-	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/dark_spruce/Slider_head_active.png", NS_EGraphicCore::default_texture_atlas);
+		//***********************************************************
+		//darken gutton group
+			jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-	just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/dark_spruce/Slider_head_inactive.png", NS_EGraphicCore::default_texture_atlas);
+		EBrickStyle::set_border_size(jc_brick, 6.0f, 6.0f, 6.0f, 6.0f);
+		EBrickStyle::set_offset_size(jc_brick, 6.0f, 6.0f, 6.0f, 6.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 3, 0);
 
-	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/dark_spruce/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
+		//***********************************************************
+		//slider bg
+			jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
+		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
+		//***********************************************************
+		//slider head inactive
+			jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-	just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+		//***********************************************************
+		//slider head active
+			jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-	just_created_style->background_for_root_button_group = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/dark_spruce/Root_group_bg.png", NS_EGraphicCore::default_texture_atlas);
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
+		//***********************************************************
+		//button background
+			jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-
-
-	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/dark_spruce/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
-	//EGUIStyle::active_style = just_created_style;
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 	EGUIStyle::style_list.push_back(just_created_style);
 
-	//*******************************
-	//gray minimalism
-	just_created_style = new EGUIStyle();
-	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 5.0f, 5.0f, 5.0f, 5.0f, 1, 1);
-	EGUIStyle::set_style_offset_borders(just_created_style, 5.0f, 5.0f, 5.0f, 5.0f);
+	//###########################################################
+	//GRAY MINIMALISM
+	just_created_style = new EGUIStyle("gray_minimalism");
+		//***********************************************************
+		//main gutton group
+		jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
-	EGUIStyle::set_style_borders_and_subdivision_for_slider_bg(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
+		EBrickStyle::set_border_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 1, 1);
 
-	
+		//***********************************************************
+		//darken gutton group
+		jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/gray_minimalism/Slider_head_active.png", NS_EGraphicCore::default_texture_atlas);
+		EBrickStyle::set_border_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 1, 1);
 
-	just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/gray_minimalism/Slider_head_inactive.png", NS_EGraphicCore::default_texture_atlas);
+		//***********************************************************
+		//slider bg
+		jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/gray_minimalism/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head inactive
+		jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head active
+		jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//button background
+		jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EGUIStyle::style_list.push_back(just_created_style);
+
+	//###########################################################
+	//STONE CASTLE
+	just_created_style = new EGUIStyle("stone_castle");
+		//***********************************************************
+		//main gutton group
+		jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 11.0f, 11.0f, 11.0f, 18.0f);
+		EBrickStyle::set_offset_size(jc_brick, 8.0f, 8.0f, 8.0f, 15.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
+
+		//***********************************************************
+		//darken gutton group
+		jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 11.0f, 11.0f, 11.0f, 18.0f);
+		EBrickStyle::set_offset_size(jc_brick, 7.0f, 7.0f, 6.0f, 4.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
+
+		//***********************************************************
+		//slider bg
+		jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head inactive
+		jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head active
+		jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//button background
+		jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EGUIStyle::style_list.push_back(just_created_style);
+
+
+	////*******************************
+	////gray minimalism
+	//just_created_style = new EGUIStyle();
+	//EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 5.0f, 5.0f, 5.0f, 5.0f, 1, 1);
+	//EGUIStyle::set_style_offset_borders(just_created_style, 5.0f, 5.0f, 5.0f, 5.0f);
+
+	//EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
+	//EGUIStyle::set_style_borders_and_subdivision_for_slider_bg(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
+
+	//
+
+	//just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/gray_minimalism/Slider_head_active.png", NS_EGraphicCore::default_texture_atlas);
+
+	//just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/gray_minimalism/Slider_head_inactive.png", NS_EGraphicCore::default_texture_atlas);
+
+	//just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/gray_minimalism/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
 
 
 
-	just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/gray_minimalism/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+	//just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/gray_minimalism/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
 
-	just_created_style->background_for_root_button_group = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/gray_minimalism/Root_group_bg.png", NS_EGraphicCore::default_texture_atlas);
+	//just_created_style->background_for_root_button_group = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/gray_minimalism/Root_group_bg.png", NS_EGraphicCore::default_texture_atlas);
 
 
 
-	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/gray_minimalism/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
-	//EGUIStyle::active_style = just_created_style;
-	EGUIStyle::style_list.push_back(just_created_style);
+	//just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/gray_minimalism/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
+	////EGUIStyle::active_style = just_created_style;
 	//EGUIStyle::style_list.push_back(just_created_style);
+	////EGUIStyle::style_list.push_back(just_created_style);
+	////EGUIStyle::style_list.push_back(just_created_style);
+
+	////*******************************
+	////stone castle
+	//just_created_style = new EGUIStyle();
+	//EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 11.0f, 11.0f, 11.0f, 18.0f, 2, 2);
+	//EGUIStyle::set_style_offset_borders(just_created_style, 8.0f, 8.0f, 11.0f, 16.0f);
+
+	//EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
+	//EGUIStyle::set_style_borders_and_subdivision_for_slider_bg(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
+
+
+
+	//just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/stone_castle/Slider_head_active.png", NS_EGraphicCore::default_texture_atlas);
+
+	//just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/stone_castle/Slider_head_inactive.png", NS_EGraphicCore::default_texture_atlas);
+
+	//just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/stone_castle/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+
+
+	//just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/stone_castle/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+	//just_created_style->background_for_root_button_group = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/stone_castle/Root_group_bg.png", NS_EGraphicCore::default_texture_atlas);
+
+
+
+	//just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
+	//("data/textures/styles/stone_castle/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
+	////EGUIStyle::active_style = just_created_style;
 	//EGUIStyle::style_list.push_back(just_created_style);
-
-	//*******************************
-	//stone castle
-	just_created_style = new EGUIStyle();
-	EGUIStyle::set_style_borders_and_subdivisions(just_created_style, 11.0f, 11.0f, 11.0f, 18.0f, 2, 2);
-	EGUIStyle::set_style_offset_borders(just_created_style, 8.0f, 8.0f, 11.0f, 16.0f);
-
-	EGUIStyle::set_style_borders_and_subdivision_for_buttons(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
-	EGUIStyle::set_style_borders_and_subdivision_for_slider_bg(just_created_style, 2.0f, 2.0f, 2.0f, 2.0f, 0, 0);
-
-
-
-	just_created_style->slider_head_active = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/stone_castle/Slider_head_active.png", NS_EGraphicCore::default_texture_atlas);
-
-	just_created_style->slider_head_inactive = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/stone_castle/Slider_head_inactive.png", NS_EGraphicCore::default_texture_atlas);
-
-	just_created_style->background_for_slider = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/stone_castle/Slider_bg.png", NS_EGraphicCore::default_texture_atlas);
-
-
-
-	just_created_style->background_for_button_group = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/stone_castle/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
-
-	just_created_style->background_for_root_button_group = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/stone_castle/Root_group_bg.png", NS_EGraphicCore::default_texture_atlas);
-
-
-
-	just_created_style->backround_for_buttons = NS_EGraphicCore::put_texture_to_atlas
-	("data/textures/styles/stone_castle/Button_bg.png", NS_EGraphicCore::default_texture_atlas);
-	//EGUIStyle::active_style = just_created_style;
-	EGUIStyle::style_list.push_back(just_created_style);
 
 
 }
@@ -970,6 +1157,16 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
 
 	return new_gabarite;
+}
+
+ETextureGabarite* NS_EGraphicCore::default_texture_load(std::string _name)
+{
+	return put_texture_to_atlas("data/textures/"+ _name + ".png", default_texture_atlas);
+}
+
+ETextureGabarite* NS_EGraphicCore::load_style_texture(EGUIStyle* _style, EBrickStyle* _brick)
+{
+	return put_texture_to_atlas("data/textures/styles/" + *_style->folder + "/" + * _brick->file_name + ".png", default_texture_atlas);
 }
 
 void NS_ERenderCollection::add_data_to_vertex_buffer_default(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h)

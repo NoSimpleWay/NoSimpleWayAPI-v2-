@@ -277,7 +277,7 @@ ESprite* Entity::get_last_sprite(Entity* _entity)
 
 void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style)
 {
-	if ((_button != nullptr) && (_style != nullptr))
+	if ((_button != nullptr) && (_style != nullptr) && (_style->button_bg != nullptr))
 	{
 		ESpriteLayer* last_layer = nullptr;
 
@@ -291,20 +291,20 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 
 		NS_ERenderCollection::set_brick_borders_and_subdivisions
 		(
-			*_style->button_border_left,
-			*_style->button_border_right,
-			*_style->button_border_bottom,
-			*_style->button_border_up,
+			*_style->button_bg->side_size_left,
+			*_style->button_bg->side_size_right,
+			*_style->button_bg->side_size_bottom,
+			*_style->button_bg->side_size_up,
 
-			*_style->button_subdivision_x,
-			*_style->button_subdivision_y
+			*_style->button_bg->subdivision_x,
+			*_style->button_bg->subdivision_y
 		);
 
 		NS_ERenderCollection::generate_brick_texture
 		(
 			_button->button_gabarite,
 			last_layer,
-			_style->backround_for_buttons
+			_style->button_bg->main_texture
 		);
 	}
 	//_button->sprite_layer_list.pu
@@ -314,13 +314,13 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 {
 	NS_ERenderCollection::set_brick_borders_and_subdivisions
 	(
-		*_style->slider_border_left,
-		*_style->slider_border_right,
-		*_style->slider_border_bottom,
-		*_style->slider_border_up,
+		*_style->slider_bg->side_size_left,
+		*_style->slider_bg->side_size_right,
+		*_style->slider_bg->side_size_bottom,
+		*_style->slider_bg->side_size_up,
 		
-		*_style->slider_subdivision_x,
-		*_style->slider_subdivision_y
+		*_style->slider_bg->subdivision_x,
+		*_style->slider_bg->subdivision_y
 	);
 
 	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
@@ -328,7 +328,7 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 		0.0f,
 		0.0f,
 		0.0f,
-		*_but->parent_button_group->selected_style->slider_head_inactive->size_x_in_pixels,
+		*_but->parent_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
 		*_but->parent_button_group->region->size_y - *_but->parent_button_group->border_bottom - *_but->parent_button_group->border_up
 	);
 
@@ -365,7 +365,7 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 	(
 		ERegionGabarite::temporary_gabarite,
 		_but->sprite_layer_list[0],
-		_style->background_for_slider
+		_style->slider_bg->main_texture
 	);
 
 	*_but->sprite_layer_list[0]->offset_y = *_but->parent_button_group->border_bottom;
@@ -384,7 +384,7 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 
 	*_but->custom_data_list[0]->clickable_region_list[0]->region->size_y
 	=
-	*_style->slider_head_inactive->size_y_in_pixels;
+	*_style->slider_inactive->main_texture->size_y_in_pixels;
 
 	*_but->custom_data_list[0]->clickable_region_list[0]->region->offset_y
 	=
@@ -406,10 +406,10 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 
 
 	//change button gabarites size y
-	*_but->button_gabarite->size_y = *_style->slider_head_inactive->size_y_in_pixels;
+	*_but->button_gabarite->size_y = *_style->slider_inactive->main_texture->size_y_in_pixels;
 
-	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 0)->set_texture_gabarite(_style->slider_head_inactive);
-	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 1)->set_texture_gabarite(_style->slider_head_active);
+	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 0)->set_texture_gabarite(_style->slider_inactive->main_texture);
+	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 1)->set_texture_gabarite(_style->slider_active->main_texture);
 
 }
 

@@ -150,6 +150,7 @@ public:
 	std::vector<EntityButton*> button_list;
 	std::vector<EButtonGroupRow*> group_row_list;
 	EButtonGroupRow* parent_group_row = nullptr;
+	EButtonGroup* parent_group = nullptr;
 
 	int* order_in_vector = new int(0);
 	static EButtonGroup* focused_button_group;
@@ -220,6 +221,8 @@ public:
 	static void stretch_parent_row(EButtonGroup* _group, float _new_y_size);
 
 	bool* have_bg = new bool(true);
+	bool* can_be_focused = new bool(true);
+	bool* is_active = new bool(true);
 
 };
 
@@ -240,78 +243,58 @@ enum StyleList
 };
 
 
+class EBrickStyle
+{
+public:
+	ETextureGabarite*									main_texture		= nullptr;
+	std::string*										file_name			= new std::string("Group_bg");
 
+	float*												side_size_left		= new float (0.0f);
+	float*												side_size_right		= new float (0.0f);
+	float*												side_size_bottom	= new float (0.0f);
+	float*												side_size_up		= new float (0.0f);
+
+	float*												side_offset_left	= new float (0.0f);
+	float*												side_offset_right	= new float (0.0f);
+	float*												side_offset_bottom	= new float (0.0f);
+	float*												side_offset_up		= new float (0.0f);
+
+	int*												subdivision_x		= new int (0);
+	int*												subdivision_y		= new int (0);
+
+	static void set_border_size							(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
+	static void set_offset_size							(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
+	static void set_subdivisions						(EBrickStyle* _brick, int _x, int _y);
+
+	EBrickStyle();
+	EBrickStyle(std::string _file_name);
+	~EBrickStyle();
+
+	static void apply_brick_parameters_to_button_group	(EButtonGroup* _group, EBrickStyle* _brick);
+};
 class EGUIStyle
 {
 public:
 
 	static int number;
-	//button group
-	ETextureGabarite* background_for_button_group	= nullptr;
-	float*	offset_border_left						= new float(0.0f);
-	float*	offset_border_right						= new float(0.0f);
-			
-	float*	offset_border_up						= new float(0.0f);
-	float*	offset_border_bottom					= new float(0.0f);
-	///
-	float*	brick_border_left						= new float(0.0f);
-	float*	brick_border_right						= new float(0.0f);
-			
-	float*	brick_border_up							= new float(0.0f);
-	float*	brick_border_bottom						= new float(0.0f);
-	///
-	int*	subdivision_x							= new int (0);
-	int*	subdivision_y							= new int (0);
 
-	//dark button group
-	ETextureGabarite* background_for_root_button_group	= nullptr;
-	float*	dark_offset_border_left						= new float(0.0f);
-	float*	dark_offset_border_right					= new float(0.0f);
-			
-	float*	dark_offset_border_up						= new float(0.0f);
-	float*	dark_offset_border_bottom					= new float(0.0f);
-	///
-	float*	dark_brick_border_left						= new float(0.0f);
-	float*	dark_brick_border_right						= new float(0.0f);
-			
-	float*	dark_brick_border_up						= new float(0.0f);
-	float*	dark_brick_border_bottom					= new float(0.0f);
-	///
-	int*	dark_subdivision_x							= new int(0);
-	int*	dark_subdivision_y							= new int(0);
+	EBrickStyle* button_group_main		= nullptr;
+	EBrickStyle* button_group_darken	= nullptr;
 
-	//button
-	ETextureGabarite* backround_for_buttons			= nullptr;
-	float*	button_border_left						= new float (0.0f);
-	float*	button_border_right						= new float (0.0f);
-	float*	button_border_bottom					= new float (0.0f);
-	float*	button_border_up						= new float (0.0f);
-	///
-	int*	button_subdivision_x					= new int (0.0f);
-	int*	button_subdivision_y					= new int (0.0f);
+	EBrickStyle* slider_bg				= nullptr;
+	EBrickStyle* button_bg				= nullptr;
+
+	EBrickStyle* slider_inactive		= nullptr;
+	EBrickStyle* slider_active			= nullptr;
+
+	std::string* folder					= new std::string("lead_and_gold");
 
 
-	//slider
-	ETextureGabarite*	background_for_slider		= nullptr;
-	ETextureGabarite*	slider_head_inactive		= nullptr;
-	ETextureGabarite*	slider_head_active			= nullptr;
-	float* slider_border_left						= new float(0.0f);
-	float* slider_border_right						= new float(0.0f);
-	float* slider_border_bottom						= new float(0.0f);
-	float* slider_border_up							= new float(0.0f);
-	///
-	int* slider_subdivision_x						= new int(0.0f);
-	int* slider_subdivision_y						= new int(0.0f);
 
-	static EGUIStyle*	active_style;
-	static void set_style_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up, int _subdivision_x, int _subdivision_y);
-	static void set_style_dark_borders_and_subdivisions(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up, int _subdivision_x, int _subdivision_y);
-	
-	static void set_style_offset_borders(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up);
-	static void set_style_dark_offset_borders(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up);
-	
-	static void set_style_borders_and_subdivision_for_buttons(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up, int _subdivision_x, int _subdivision_y);
-	static void set_style_borders_and_subdivision_for_slider_bg(EGUIStyle* _style, float _border_left, float _border_right, float _border_bottom, float _border_up, int _subdivision_x, int _subdivision_y);
-	
+	EGUIStyle();
+	EGUIStyle(std::string _folder);
+	~EGUIStyle();
+
 	static std::vector<EGUIStyle*> style_list;
+	static EGUIStyle* active_style;
 };

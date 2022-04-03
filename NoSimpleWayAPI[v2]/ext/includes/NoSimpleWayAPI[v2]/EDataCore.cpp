@@ -266,6 +266,8 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	if
 		(
 			(!*_custom_data->clickable_region_list.at(0)->catched_body)
+			&&
+			(_custom_data->get_sprite_frame_by_id(0, 0, 0) != nullptr)
 		)
 	{
 		if (*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id != 0)
@@ -308,9 +310,16 @@ void EDataActionCollection::action_change_style(Entity* _entity, ECustomData* _c
 	ESprite*		target_sprite = target_button->get_sprite_from_entity(0, 0, 0);
 
 	if (target_sprite != nullptr)
-	{
-		target_sprite->set_texture_gabarite(target_button->parent_button_group->selected_style->background_for_slider);
-	}
+	{													
+		target_sprite->set_texture_gabarite
+		(
+			target_button->			//button, which change style
+			parent_button_group->	//group, which contain this button
+			selected_style->		//style, used by group
+			slider_bg->				//"brick style" for sliders
+			main_texture			//texture from "brick style"
+		);
+	}									
 
 }
 
@@ -348,6 +357,19 @@ void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomDat
 			group,
 			((EntityButton*)_entity)->parent_button_group->selected_style
 		);
+	}
+}
+
+void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	//if
+	//(
+	//	(	((EntityButton*)_entity)->parent_button_group != nullptr	)
+	//	&&
+	//	(	((EntityButton*)_entity)->parent_button_group->parent_group != nullptr	)
+	//)
+	{
+		*(((EntityButton*)_entity)->parent_button_group->root_group->is_active) = false;
 	}
 }
 

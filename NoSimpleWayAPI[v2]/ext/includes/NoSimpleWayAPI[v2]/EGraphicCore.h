@@ -145,6 +145,8 @@ namespace NS_EGraphicCore
 
 	extern void load_texture(char const* _path, int _id);
 	extern ETextureGabarite* put_texture_to_atlas(std::string _name, ETextureAtlas* _atlas);
+	extern ETextureGabarite* default_texture_load(std::string _name);
+	extern ETextureGabarite* load_style_texture(EGUIStyle* _style, EBrickStyle* _brick);
 
 	void gl_set_texture_filtering(GLint _wrap_mode, GLint _filter);
 	void gl_set_blend_mode_default();
