@@ -42,6 +42,7 @@ public:
 
 	//ETextureGabarite* gudron;
 
+
 	static EWindowMain* link_to_main_window;
 };
 

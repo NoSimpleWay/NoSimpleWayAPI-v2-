@@ -3,6 +3,9 @@
 /**/#define _E_DATA_ENTITY_ALREADY_LINKED_
 /**/#include "EDataEntity.h"
 #endif
+
+std::vector<EDataEntity*> EDataEntity::data_entity_list;
+
 std::string DataEntityUtils::get_tag_value_by_name(int _id, std::string _name, EDataEntity* _data_entity)
 {
 	for (EDataTag* data_tag : _data_entity->tag_list)
@@ -18,4 +21,8 @@ std::string DataEntityUtils::get_tag_value_by_name(int _id, std::string _name, E
 	}
 
 	return "";
+}
+
+EDataEntity::EDataEntity()
+{
 }

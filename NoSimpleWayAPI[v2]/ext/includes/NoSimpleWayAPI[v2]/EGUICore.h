@@ -64,6 +64,8 @@ public:
 	static std::vector<EWindow*> window_list;
 
 	/////////////////////////////////////////////////////////////////////
+
+	std::vector<TestObject*> test_vector;
 };
 
 enum CullingLinesCalcMethod
@@ -145,7 +147,7 @@ public:
 
 	ERenderBatcher* batcher_for_default_draw = nullptr;
 
-	ERegionGabarite* region = nullptr;
+	ERegionGabarite* region_gabarite = nullptr;
 
 	std::vector<EntityButton*> button_list;
 	std::vector<EButtonGroupRow*> group_row_list;
@@ -198,14 +200,26 @@ public:
 
 	static void apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* _style);
 
-	static EButtonGroup* create_base_button_group(ERegionGabarite* _region, EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg);
-	static EButtonGroup* create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style);
-	static EButtonGroup* create_root_button_group(ERegionGabarite* _region, EGUIStyle* _style);
-	static EButtonGroup* create_header_button_group(ERegionGabarite* _region, EGUIStyle* _style);
-	static EButtonGroup* create_invisible_button_group(ERegionGabarite* _region, EGUIStyle* _style);
+	//base
+	static EButtonGroup* create_base_button_group		(ERegionGabarite* _region, EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg);
+	
+	//bg, slider, focusable, bright
+	static EButtonGroup* create_default_button_group	(ERegionGabarite* _region, EGUIStyle* _style);
+	
+	//bg, slider, focusable, dark, [no slider]
+	static EButtonGroup* create_root_button_group		(ERegionGabarite* _region, EGUIStyle* _style);
+	
+	//bg, dark, [unfocusable], [no slider]
+	static EButtonGroup* create_header_button_group		(ERegionGabarite* _region, EGUIStyle* _style);
+	
+	//[no bg], [not focusable], [no slider]
+	static EButtonGroup* create_invisible_button_group	(ERegionGabarite* _region, EGUIStyle* _style);
+	
+	//[no bg], focusable, slider
+	static EButtonGroup* create_button_group_without_bg	(ERegionGabarite* _region, EGUIStyle* _style);
 	
 
-	static EButtonGroupRow* add_default_row(EButtonGroup* _group, ERegionGabarite* _region);
+	static EButtonGroupRow* add_default_row_to_group(EButtonGroup* _group, ERegionGabarite* _region);
 	static EButtonGroupRow* get_last_created_row(EButtonGroup* _group);
 
 	static void change_style(EButtonGroup* _group, EGUIStyle* _style);

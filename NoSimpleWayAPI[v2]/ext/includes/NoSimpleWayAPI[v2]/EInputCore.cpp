@@ -102,6 +102,16 @@ void EInputCore::logger_simple_success(std::string _message)
 	std::cout << green << "| Success: " << _message << " |" << std::endl;
 }
 
+void EInputCore::logger_simple_try(std::string _message)
+{
+	std::cout << blue << "| Try: " << _message << " |" << std::endl;
+}
+
+void EInputCore::logger_simple_info(std::string _message)
+{
+	std::cout << white << "[info]: " << _message  << std::endl;
+}
+
 
 void EInputCore::scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {

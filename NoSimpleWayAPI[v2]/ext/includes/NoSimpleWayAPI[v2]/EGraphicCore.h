@@ -398,15 +398,20 @@ public:
 class ESpriteFrame
 {
 public:
+	~ESpriteFrame();
+
 	std::vector<ESprite*> sprite_list;
 	int* active_frame_id = new int(0);
 
 	static ESpriteFrame* create_default_sprite_frame();
 	static ESpriteFrame* create_default_sprite_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _parent_sprite_layer);
 };
+
 class ESpriteLayer
 {
 public:
+	~ESpriteLayer();
+
 	std::vector<ESpriteFrame*> sprite_frame_list;
 
 	float* offset_x = new float(0.0f);
@@ -422,6 +427,8 @@ public:
 	ERenderBatcher* batcher = nullptr;
 	float* vertex_buffer = nullptr;
 
+	bool* disable_draw = new bool(false);
+
 	void translate_sprite_layer(float _x, float _y, float _z, bool _move_offset);
 	void translate_sprites(float _x, float _y, float _z, bool _move_offset);
 
@@ -433,6 +440,17 @@ public:
 	void sprite_layer_set_world_position(float _x, float _y, float _z);
 
 	static ESpriteLayer* create_default_sprite_layer(ETextureGabarite* _texture);
+	static ESpriteLayer* create_default_sprite_layer_with_size_and_offset
+	(
+		ETextureGabarite* _texture,
+		float _offset_x,
+		float _offset_y,
+		float _offset_z,
+		float _size_x,
+		float _size_y,
+		float _size_z
+	);
+
 
 	static ESprite* get_last_created_sprite(ESpriteLayer* _layer);
 	static ESpriteFrame* get_last_sprite_frame(ESpriteLayer* _layer);
@@ -440,7 +458,7 @@ public:
 	static void set_offset_for_last_sprite(ESpriteLayer* _layer, float _offset_x, float _offset_y, float _offset_z );
 	static void add_new_default_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _sprite_layer);
 
-	bool* disable_draw = new bool(false);
+
 };
 
 

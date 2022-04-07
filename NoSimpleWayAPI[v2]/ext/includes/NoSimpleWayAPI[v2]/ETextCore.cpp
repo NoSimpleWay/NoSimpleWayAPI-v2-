@@ -234,9 +234,10 @@ ETextArea::ETextArea()
 {
 }
 
-ETextArea::ETextArea(EClickableRegion* _region, EFont* _font, std::string _text)
+ETextArea::ETextArea(EClickableArea* _region, EFont* _font, std::string _text)
 {
-	region_gabarite = _region->region;
+	ERegionGabarite::set_region_gabarite
+	(&region_gabarite, _region->region_gabarite);
 	font = _font;
 	*stored_text = _text;
 
@@ -247,6 +248,54 @@ ETextArea::ETextArea(EClickableRegion* _region, EFont* _font, std::string _text)
 
 ETextArea::~ETextArea()
 {
+	delete		error;
+	delete[]	color;
+	delete		font_scale;
+	//delete		&font;
+	delete		down_offset;
+
+	EInputCore::logger_simple_info("deleting text area");
+	if (region_gabarite != nullptr)
+	{
+		(*region_gabarite->pointers_to_this_object)--;
+
+		if (*region_gabarite->pointers_to_this_object <= 0)
+		{
+			delete region_gabarite;
+			EInputCore::logger_simple_success("deleting text area gabarite");
+		}
+	}
+
+	delete		stored_text;
+
+	for (std::string* _row : row) {delete _row;}
+	row.clear();
+	row.shrink_to_fit();
+
+	delete row_count;
+	delete translate_region_gabarite;
+	//delete& master_clickable_region;
+	delete offset_by_gabarite_size_x;
+	delete offset_by_gabarite_size_y;
+	delete offset_by_text_size_x;
+	delete offset_by_text_size_y;
+
+	delete can_be_edited;
+	delete sprite_layer;
+
+	for (EFontGlyph* glyph : font_glyph_list)
+	{delete glyph;}
+	font_glyph_list.clear();
+	font_glyph_list.shrink_to_fit();
+
+	delete selected_glyph_position;
+	delete flash_line_active;
+	delete flash_line_cooldown;
+
+	delete jump_cooldown;
+	delete text_area_active;
+	delete border_offset;
+
 }
 
 void ETextArea::generate_rows()
@@ -581,9 +630,9 @@ void ETextArea::update(float _d)
 				(EInputCore::MOUSE_BUTTON_LEFT)
 				&&
 				(
-					(EClickableRegion::active_clickable_region == nullptr)
+					(EClickableArea::active_clickable_region == nullptr)
 					||
-					(EClickableRegion::active_clickable_region == master_clickable_region)
+					(EClickableArea::active_clickable_region == master_clickable_region)
 				)
 				&&
 				(NS_FONT_UTILS::active_text_area == nullptr)
@@ -650,9 +699,9 @@ void ETextArea::update(float _d)
 			(EInputCore::MOUSE_POSITION_Y <= *region_gabarite->world_position_y + *region_gabarite->size_y)
 			&&
 			(
-				(EClickableRegion::active_clickable_region == nullptr)
+				(EClickableArea::active_clickable_region == nullptr)
 				||
-				(EClickableRegion::active_clickable_region == master_clickable_region)
+				(EClickableArea::active_clickable_region == master_clickable_region)
 			)
 		)
 		{ 
@@ -928,6 +977,45 @@ void ETextArea::draw()
 		100.0f,
 		NS_DefaultGabarites::texture_gabarite_white_pixel
 	);*/
+}
+
+void ETextArea::set_region(ETextArea* _text_area, ERegionGabarite* _region_gabarite)
+{
+	//if ()
+	if (_text_area->region_gabarite != _region_gabarite)
+	{
+		//old region lose 1 pointer to him
+		if (_text_area->region_gabarite != nullptr)
+		{_text_area->region_gabarite->pointers_to_this_object--;}
+
+		//this region have 1 more pointers to him
+		(*_region_gabarite->pointers_to_this_object)++;
+		_text_area->region_gabarite = _region_gabarite;
+	}
+}
+
+ETextArea* ETextArea::create_base_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text)
+{
+	ETextArea* jc_text_area = new ETextArea(_region_gabarite, _font, _text);
+
+	return jc_text_area;
+}
+
+ETextArea* ETextArea::create_centered_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text)
+{
+	ETextArea* jc_text_area = create_base_text_area(_region_gabarite, _font, _text);
+
+	*jc_text_area->offset_by_gabarite_size_x = 0.5f;
+	*jc_text_area->offset_by_gabarite_size_y = 0.5f;
+
+	*jc_text_area->offset_by_text_size_x = -0.5f;
+	*jc_text_area->offset_by_text_size_y = -0.5f;
+
+	//*jc_text_area->can_be_edited = false;
+	jc_text_area->generate_rows();
+	jc_text_area->generate_text();
+
+	return jc_text_area;
 }
 
 EFontGlyph::EFontGlyph(char _sym, float _pos_x, float _pos_y, float _size_x, float _size_y)

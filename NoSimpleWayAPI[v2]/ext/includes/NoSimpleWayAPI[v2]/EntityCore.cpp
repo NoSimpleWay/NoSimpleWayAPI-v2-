@@ -47,7 +47,7 @@ void Entity::generate_vertex_buffer_for_all_sprite_layers()
 	for (ECustomData* c_data : custom_data_list)
 		if (c_data != nullptr)
 		{
-			for (EClickableRegion* c_region:c_data->clickable_region_list)
+			for (EClickableArea* c_region:c_data->clickable_area_list)
 			if (c_region != nullptr)
 			{
 				for (ESpriteLayer* s_layer:c_region->sprite_layer_list)
@@ -97,13 +97,33 @@ void Entity::set_world_position(float _x, float _y, float _z)
 	for (ECustomData* c_data : custom_data_list)
 	if (c_data != nullptr)
 	{
-		for (EClickableRegion* clickable_region : c_data->clickable_region_list)
-		if (clickable_region != nullptr)
+		for (EClickableArea* clickable_area : c_data->clickable_area_list)
+		if (clickable_area != nullptr)
 		//
 		{
-			clickable_region->clickable_region_set_world_positions(*world_position_x, *world_position_y, *world_position_z);
+			clickable_area->clickable_region_set_world_positions(*world_position_x, *world_position_y, *world_position_z);
 		}
 	}
+}
+
+void Entity::set_world_position_w(ERegionGabarite* _region_gabarite)
+{
+	set_world_position
+	(
+		*_region_gabarite->world_position_x,
+		*_region_gabarite->world_position_y,
+		*_region_gabarite->world_position_z
+	);
+}
+
+void Entity::set_world_position_l(ERegionGabarite* _region_gabarite)
+{
+	set_world_position
+	(
+		*_region_gabarite->offset_x,
+		*_region_gabarite->offset_y,
+		*_region_gabarite->offset_z
+	);
 }
 
 void Entity::modify_buffer_translate_for_entity(float _x, float _y, float _z)
@@ -115,7 +135,7 @@ void Entity::modify_buffer_translate_for_entity(float _x, float _y, float _z)
 
 	for (ECustomData* c_data : custom_data_list)
 	{
-		for (EClickableRegion* c_region : c_data->clickable_region_list)
+		for (EClickableArea* c_region : c_data->clickable_area_list)
 		{
 			for (ESpriteLayer* s_layer : c_region->sprite_layer_list)
 			{
@@ -176,6 +196,45 @@ Entity::Entity()
 
 Entity::~Entity()
 {
+
+	//EInputCore::logger_simple_try("delete entity");
+
+	delete offset_x;
+	delete offset_y;
+	delete offset_z;
+
+	delete world_position_x;
+	delete world_position_y;
+	delete world_position_z;
+
+	//
+	
+	if (!custom_data_list.empty())
+	{
+		//std::vector<ECustomData*>::iterator ib = custom_data_list.begin(), ie = custom_data_list.end();
+		for (ECustomData* custom_data:custom_data_list)
+		{
+			delete custom_data;
+		}
+
+		custom_data_list.clear();
+		custom_data_list.shrink_to_fit();
+	}
+
+	if (!sprite_layer_list.empty())
+	{
+		for (ESpriteLayer* sl:sprite_layer_list)
+		{ delete sl; }
+
+		sprite_layer_list.clear();
+		sprite_layer_list.shrink_to_fit();
+
+	}
+
+	delete disable_draw;
+	delete need_remove;
+	//delete& custom_data_list;
+	//delete[] custom_data_list;
 }
 
 ESprite* Entity::get_sprite_from_data(unsigned int _data_id, unsigned int _layer_id, unsigned int _frame_id, unsigned int _frame)
@@ -275,6 +334,34 @@ ESprite* Entity::get_last_sprite(Entity* _entity)
 	{return nullptr;}
 }
 
+ECustomData* Entity::get_last_custom_data(Entity* _entity)
+{
+	if
+	(
+		(_entity != nullptr)
+		&&
+		(!_entity->custom_data_list.empty())
+	)
+	{return _entity->custom_data_list.back(); }
+	else
+	{return nullptr;}
+}
+
+EClickableArea* Entity::get_last_clickable_area(Entity* _entity)
+{
+	ECustomData* last_data = Entity::get_last_custom_data(_entity);
+
+	if
+	(
+		( last_data != nullptr )
+		&&
+		( !last_data->clickable_area_list.empty() )
+	)
+	{ return last_data->clickable_area_list.back(); }
+	else
+	{ return nullptr; }
+}
+
 void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style)
 {
 	if ((_button != nullptr) && (_style != nullptr) && (_style->button_bg != nullptr))
@@ -310,6 +397,89 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 	//_button->sprite_layer_list.pu
 }
 
+EntityButton* EntityButton::create_base_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row)
+{
+	EntityButton* jc_button = new EntityButton();
+	jc_button->parent_button_group = _parent_row;
+	ERegionGabarite::set_region_gabarite(&jc_button->button_gabarite, _region_gabarite);
+
+	EntityButton::button_generate_brick_bg(jc_button, _parent_row->selected_style);
+	jc_button->set_world_position_w(_region_gabarite);
+
+	jc_button->action_on_change_style_list.push_back(&action_change_style_button);
+
+	return jc_button;
+}
+
+EntityButton* EntityButton::create_default_button_with_custom_data(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row)
+{
+	EntityButton*	jc_button						= create_base_button(_region_gabarite, _parent_row);
+	ECustomData*	jc_custom_data					= new ECustomData();
+					jc_custom_data->parent_entity	= jc_button;
+
+	jc_button->custom_data_list.push_back(jc_custom_data);
+
+	return jc_button;
+}
+
+
+EntityButton* EntityButton::create_default_clickable_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap)
+{
+	EntityButton* jc_button = create_default_button_with_custom_data(_region_gabarite, _parent_group);
+
+	EClickableArea* jc_clickable_area = EClickableArea::create_default_clickable_region
+	(
+		_region_gabarite,
+		jc_button,
+		EntityButton::get_last_custom_data(jc_button)
+	);
+
+	jc_clickable_area->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
+	if (_dap != nullptr) { jc_clickable_area->actions_on_click_list.push_back(_dap); }
+	
+	ECustomData* last_data = Entity::get_last_custom_data(jc_button);
+	last_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
+
+	last_data->clickable_area_list.push_back(jc_clickable_area);
+
+	return jc_button;
+}
+
+EntityButton::~EntityButton()
+{
+	EInputCore::logger_simple_info("deleting entity button");
+	if (button_gabarite != nullptr)
+	{
+		(*button_gabarite->pointers_to_this_object)--;
+
+		EInputCore::logger_param("pointers left", *button_gabarite->pointers_to_this_object);
+
+		if (*button_gabarite->pointers_to_this_object <= 0)
+		{
+			
+			delete button_gabarite;
+			EInputCore::logger_simple_success("deleting button gabarite");
+		}
+	}
+
+	delete autoalign_id;
+	delete autoalight_offset_x_mathed_id;
+	delete autoalight_offset_x_not_mathed_id;
+
+	delete fixed_position;
+	delete update_when_scissored;
+
+	action_on_change_style_list.clear();
+	action_on_change_style_list.shrink_to_fit();
+
+	//EInputCore::logger_simple_try("delete entity button");
+
+	if (parent_button_group != nullptr)
+	{
+		EButtonGroup::refresh_button_group(parent_button_group);
+	}
+}
+
 void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 {
 	NS_ERenderCollection::set_brick_borders_and_subdivisions
@@ -329,13 +499,13 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 		0.0f,
 		0.0f,
 		*_but->parent_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
-		*_but->parent_button_group->region->size_y - *_but->parent_button_group->border_bottom - *_but->parent_button_group->border_up
+		*_but->parent_button_group->region_gabarite->size_y - *_but->parent_button_group->border_bottom - *_but->parent_button_group->border_up
 	);
 
 	//offset by button_group
 	float total_group_height
 	=
-	*_but->parent_button_group->region->size_y
+	*_but->parent_button_group->region_gabarite->size_y
 	-
 	*_but->parent_button_group->border_bottom
 	-
@@ -382,18 +552,18 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 	//	current_height_percent
 	//);
 
-	*_but->custom_data_list[0]->clickable_region_list[0]->region->size_y
+	*_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y
 	=
 	*_style->slider_inactive->main_texture->size_y_in_pixels;
 
-	*_but->custom_data_list[0]->clickable_region_list[0]->region->offset_y
+	*_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->offset_y
 	=
 	round
 	(
 		(
 			total_group_height
 			-
-			*_but->custom_data_list[0]->clickable_region_list[0]->region->size_y
+			*_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y
 		)
 		*
 		*(((EDataContainerScrollBar*)_but->custom_data_list[0]->data_container)->current_percent)

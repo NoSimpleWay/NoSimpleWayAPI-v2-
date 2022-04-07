@@ -11,7 +11,7 @@
 
 class ECustomData;
 class ERegionGabarite;
-class EClickableRegion;
+class EClickableArea;
 class EDataContainer;
 
 
@@ -36,12 +36,19 @@ class EFont;
 class ETextArea;
 class EFontGlyph;
 
-class EDataTag;
+struct EDataTag;
+struct RegisteredDataTag;
+struct ELocalisationText;
 class EDataEntity;
 
 class EGUIStyle;
 class EBrickStyle;
 
+class EWindowMain;
+
+class TestObject;
+
+class ETextParser;
 
 
-
+typedef void (*data_action_pointer)(Entity*, ECustomData*, float);

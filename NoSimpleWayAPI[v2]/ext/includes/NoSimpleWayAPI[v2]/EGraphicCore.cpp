@@ -504,7 +504,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 //	NS_DefaultGabarites::texture_dark_spruce				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Dark_spruce.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_dark_spruce				= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_lapis_wood					= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_slider_bg_lead_and_gold	= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_slider_bg_lead_and_gold	= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 	
 	//STYLE LIST//
 	create_styles();
@@ -1945,6 +1945,30 @@ std::string ETextureGabarite::get_name()
 	return *name;
 }
 
+ESpriteLayer::~ESpriteLayer()
+{
+	delete offset_x;
+	delete offset_y;
+	delete offset_z;
+
+	delete world_position_x;
+	delete world_position_y;
+	delete world_position_z;
+
+	delete last_buffer_id;
+
+	//delete &batcher;
+	delete vertex_buffer;
+	delete disable_draw;
+
+	for (ESpriteFrame* frame : sprite_frame_list)
+	{
+		delete frame;
+	}
+	sprite_frame_list.clear();
+	sprite_frame_list.shrink_to_fit();
+}
+
 void ESpriteLayer::translate_sprite_layer(float _x, float _y, float _z, bool _move_offset)
 {
 	*world_position_x += _x;
@@ -2179,12 +2203,42 @@ ESpriteLayer* ESpriteLayer::create_default_sprite_layer(ETextureGabarite* _textu
 	return jc_sprite_layer;
 }
 
+ESpriteLayer* ESpriteLayer::create_default_sprite_layer_with_size_and_offset(ETextureGabarite* _texture, float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y, float _size_z)
+{
+	ESpriteLayer* jc_sprite_layer = ESpriteLayer::create_default_sprite_layer(_texture);
+	ESprite* jc_sprite = ESpriteLayer::get_last_created_sprite(jc_sprite_layer);
+
+	if (jc_sprite != nullptr)
+	{
+		*jc_sprite->offset_x = _offset_x;
+		*jc_sprite->offset_y = _offset_y;
+		*jc_sprite->offset_z = _offset_z;
+
+		*jc_sprite->size_x = _size_x;
+		*jc_sprite->size_y = _size_y;
+		//*jc_sprite->siz = _offset_z;
+	}
+
+	return jc_sprite_layer;
+}
+
 ESprite* ESpriteLayer::get_last_created_sprite(ESpriteLayer* _layer)
 {
-	int last_frame_id	= _layer->sprite_frame_list.size() - 1;
-	int last_sprite_id	= _layer->sprite_frame_list[last_frame_id]->sprite_list.size() - 1;
+	if
+	(
+		(!_layer->sprite_frame_list.empty())
+		&&
+		(!(_layer->sprite_frame_list.back()->sprite_list.empty()))
+	)
+	{
+		return _layer->sprite_frame_list.back()->sprite_list.back();
+	}
+	else
+	{
+		return nullptr;
+	}
 
-	return _layer->sprite_frame_list[last_frame_id]->sprite_list[last_sprite_id];
+	
 }
 
 ESpriteFrame* ESpriteLayer::get_last_sprite_frame(ESpriteLayer* _layer)
@@ -2259,6 +2313,15 @@ ESprite::ESprite()
 
 ESprite::~ESprite()
 {
+	//delete &pointer_to_sprite_render;
+	//delete &main_texture;
+	//delete &master_sprite_layer;
+	delete[] sprite_color;
+
+	delete fragment_size_x;
+	delete fragment_size_y;
+	delete fragment_offset_x;
+	delete fragment_offset_y;
 }
 
 void ESprite::set_color(float _r, float _g, float _b, float _a)
@@ -2408,6 +2471,15 @@ EColor_4 const (&NS_EColorUtils::choose_from_two(const EColor_4(&_color1)[4], co
 	}
 
 	return _color2;
+}
+
+ESpriteFrame::~ESpriteFrame()
+{
+	for (ESprite* sl:sprite_list) { delete sl; }
+	sprite_list.clear();
+	sprite_list.shrink_to_fit();
+
+	delete active_frame_id;
 }
 
 ESpriteFrame* ESpriteFrame::create_default_sprite_frame()

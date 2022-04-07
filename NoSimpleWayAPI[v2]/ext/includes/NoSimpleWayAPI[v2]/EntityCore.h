@@ -60,6 +60,9 @@ public:
 	void generate_vertex_buffer_for_all_sprite_layers();
 	void transfer_all_vertex_buffers_to_batcher();
 	void set_world_position(float _x, float _y, float _z);
+	void set_world_position_w(ERegionGabarite* _region_gabarite);
+	void set_world_position_l(ERegionGabarite* _region_gabarite);
+
 	void modify_buffer_translate_for_entity(float _x, float _y, float _z);
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 	
@@ -77,7 +80,11 @@ public:
 	ESprite*			get_sprite_from_sprite_frame(ESpriteFrame* _frame, unsigned int _id);
 	
 	static ESprite*		get_last_sprite(Entity* _en);
-	bool* disable_draw = new bool(false);
+	bool* disable_draw	= new bool(false);
+	bool* need_remove	= new bool(false);
+
+	static ECustomData*		get_last_custom_data(Entity* _entity);
+	static EClickableArea*	get_last_clickable_area(Entity* _entity);
 };
 /*********/
 
@@ -97,9 +104,13 @@ typedef void (*change_style_action)(EntityButton*, EGUIStyle*);
 void action_change_style_slider		(EntityButton* _but, EGUIStyle* _style);
 void action_change_style_button		(EntityButton* _but, EGUIStyle* _style);
 
+
+
 class EntityButton : public Entity
 {
 public:
+	~EntityButton();
+
 	ERegionGabarite* button_gabarite;
 
 	std::string* autoalign_id = new std::string("");
@@ -116,6 +127,25 @@ public:
 	std::vector<change_style_action> action_on_change_style_list;
 
 	static void button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style);
+	static EntityButton* create_base_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row);
+	
+	static EntityButton* create_default_button_with_custom_data
+	(
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_row
+	);
+	
+	static EntityButton* create_default_clickable_button
+	(
+		ERegionGabarite*	_region_gabarite,
+		EButtonGroup*		_parent_row,
+		data_action_pointer _dap
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+		
+
+	);
+
+
 };
 
 class ECluster
@@ -123,3 +153,10 @@ class ECluster
 public:
 	std::vector<Entity*> entity_list;
 };
+
+class TestObject
+{
+	//std::vector<EntityButton*> test_vector;
+	long long* test_field;
+};
+

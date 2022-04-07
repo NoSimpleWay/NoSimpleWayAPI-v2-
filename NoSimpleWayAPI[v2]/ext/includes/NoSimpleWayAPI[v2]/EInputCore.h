@@ -53,6 +53,8 @@ namespace EInputCore
 
 	extern void logger_simple_error(std::string _error);
 	extern void logger_simple_success(std::string _message);
+	extern void logger_simple_try(std::string _message);
+	extern void logger_simple_info(std::string _message);
 
 	template<typename T>
 	extern std::string border_this_text(T _data, char _border_symbol)

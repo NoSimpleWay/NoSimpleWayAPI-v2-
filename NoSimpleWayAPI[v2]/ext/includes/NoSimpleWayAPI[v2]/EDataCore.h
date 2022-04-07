@@ -24,6 +24,9 @@
 /**/#include "EGraphicCore.h"
 #endif
 
+#include <iostream>
+#include <fstream>
+
 #include <vector>
 #include <string>
 //class ETextArea;
@@ -32,7 +35,7 @@
 //Entity*		= master entity, which store data object
 //ECustomData*	= data object, which call data action
 //float		= delta time
-typedef void (*data_action_pointer)(Entity*, ECustomData*, float);
+
 
 class ECustomData
 {
@@ -40,16 +43,18 @@ public:
 	ECustomData();
 	~ECustomData();
 
-	Entity* parent_entity;
+	Entity*				parent_entity	= nullptr;
 
 	//data
-	EDataContainer* data_container;
-	std::vector<EClickableRegion*> clickable_region_list;
+	EDataContainer*		data_container	= nullptr;
 
 	//WHAT do with data
 	std::vector<data_action_pointer> actions_on_update;
 	std::vector<data_action_pointer> actions_on_change_style;
 	std::vector<data_action_pointer> actions_on_draw;
+
+	//clickable regions list
+	std::vector<EClickableArea*> clickable_area_list;
 
 	
 
@@ -80,10 +85,10 @@ public:
 	float* size_x = new float(0.0f);
 	float* size_y = new float(0.0f);
 
-	float* border_left_offset = new float(0.0f);
+	/*float* border_left_offset = new float(0.0f);
 	float* border_right_offset = new float(0.0f);
 	float* border_up_offset = new float(0.0f);
-	float* border_down_offset = new float(0.0f);
+	float* border_down_offset = new float(0.0f);*/
 
 	float* world_position_x = new float(0.0f);
 	float* world_position_y = new float(0.0f);
@@ -94,6 +99,9 @@ public:
 	static ERegionGabarite* temporary_gabarite;
 	void set_region_offset_and_size(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
 	bool overlapped_by_mouse();
+
+	unsigned int* pointers_to_this_object = new unsigned int(0);
+	static void set_region_gabarite(ERegionGabarite** _destination, ERegionGabarite* _source);
 };
 
 enum ClickableRegionSides
@@ -106,18 +114,19 @@ enum ClickableRegionSides
 	CRS_SIDE_BODY,
 	_CRS_SIDE_LAST_ELEMENT
 };
-class EClickableRegion
+class EClickableArea
 {
 public:
-	EClickableRegion();
-	~EClickableRegion();
+	EClickableArea();
+	~EClickableArea();
 
-	ERegionGabarite* region;
+	ERegionGabarite* region_gabarite;
 
 	std::vector<ESpriteLayer*> sprite_layer_list;
 	ESpriteLayer* internal_sprite_layer;
 
 	std::vector<data_action_pointer> actions_on_click_list;
+	std::vector<data_action_pointer> actions_on_right_click_list;
 	Entity* parent_entity;
 	ECustomData* parent_custom_data;
 
@@ -142,13 +151,13 @@ public:
 
 	//float* internal_vertex_buffer;
 
-	static bool overlapped_by_mouse(EClickableRegion* _region, float _offset_x, float _offset_y, float _zoom);
+	static bool overlapped_by_mouse(EClickableArea* _region, float _offset_x, float _offset_y, float _zoom);
 	static bool catched_side_by_mouse(float _x, float _y, float _size_x, float _size_y, float _offset_x, float _offset_y, float _zoom, float _catch_distance = 5.0f);
 	void check_all_catches();
 	void translate_clickable_region(float _x, float _y, float _z, bool _move_offset);
 
-	static EClickableRegion* active_clickable_region;
-	static EClickableRegion* create_default_clickable_region(ERegionGabarite* _gabarite, Entity* _parent_entity, ECustomData* _custom_data);
+	static EClickableArea* active_clickable_region;
+	static EClickableArea* create_default_clickable_region(ERegionGabarite* _gabarite, Entity* _parent_entity, ECustomData* _custom_data);
 	
 	void update(float _d);
 	void draw();
@@ -169,6 +178,8 @@ class EDataContainerMessage : public EDataContainer
 {
 public:
 	std::string* message = new std::string("");
+
+	~EDataContainerMessage();
 };
 
 class EDataContainerScrollBar : public EDataContainer
@@ -179,6 +190,7 @@ public:
 
 	float* current_percent = new float(0.0f);
 
+	~EDataContainerScrollBar();
 	//EButtonGroup* parent_button_group;
 };
 //////////////////////////////////////////////////////////////////////
@@ -195,4 +207,30 @@ namespace EDataActionCollection
 	void action_highlight_button_if_overlap (Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_style			(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_close_root_group			(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_delete_entity				(Entity* _entity, ECustomData* _custom_data, float _d);
 }
+
+enum ActiveParserMode
+{
+	READ_CAPS_ACTION,
+	READ_ACTION,
+	READ_VALUE
+};
+
+
+
+class ETextParser
+{
+public:
+	static std::string		data_array[1000];
+	static void				data_entity_parse_file(std::string _file);
+
+	static EDataEntity*		last_created_data_entity;
+	static EDataTag*		last_created_data_tag;
+
+	static std::string		action_text_buffer;
+	static std::string		value_text_buffer;
+
+	static void				do_action(std::string _action_text, std::string _value);
+};

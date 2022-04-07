@@ -1,0 +1,12 @@
+REGISTER_TAG					[tag name]"ItemCostInChaoses"			[description]"How many chaoses cost item"
+
+NEW_DATA_ENTITY
+[new tag]"Path to icon"			[add tag value]"chaos_orb"
+
+[new tag]"ItemTag"				[add tag value]"currency"
+[new tag]"ItemTag"				[add tag value]"cost: mid"
+[new tag]"ItemTag"				[add tag value]"regular currency"
+[new tag]"ItemTag"				[add tag value]"world drop"
+[new tag]"ItemCostInChaoses"	[add tag value]"1"
+[new tag]"BaseClass"			[add tag value]"Stackable Currency"
+[new tag]"ItemLenght"			[add tag value]"1"
