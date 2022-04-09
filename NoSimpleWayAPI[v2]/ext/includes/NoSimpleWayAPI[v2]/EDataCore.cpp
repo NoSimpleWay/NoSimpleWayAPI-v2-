@@ -371,7 +371,7 @@ void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData
 	(
 		(	((EntityButton*)_entity)->parent_button_group != nullptr	)
 		&&
-		(	((EntityButton*)_entity)->parent_button_group->parent_group != nullptr	)
+		(	((EntityButton*)_entity)->parent_button_group->root_group != nullptr	)
 	)
 	{
 		*(((EntityButton*)_entity)->parent_button_group->root_group->is_active) = false;
@@ -1511,22 +1511,23 @@ void ETextParser::data_entity_parse_file(std::string _file)
 
 	file.close();
 
-	for (EDataEntity* data_entity : EDataEntity::data_entity_list)
-	{
-		for (EDataTag* data_tag : data_entity->tag_list)
-		{
-			EInputCore::logger_param("Tag name", *data_tag->tag_name);
 
-			for (std::string* str : data_tag->tag_value_list)
-			{
-				EInputCore::logger_param("Tag value", *str);
-			}
+	//for (EDataEntity* data_entity : EDataEntity::data_entity_list)
+	//{
+	//	for (EDataTag* data_tag : data_entity->tag_list)
+	//	{
+	//		EInputCore::logger_param("Tag name", *data_tag->tag_name);
 
-			EInputCore::logger_simple_info("");
-		}
-		EInputCore::logger_simple_info("-------");
-	}
-	EInputCore::logger_simple_info("");
+	//		for (std::string* str : data_tag->tag_value_list)
+	//		{
+	//			EInputCore::logger_param("Tag value", *str);
+	//		}
+
+	//		EInputCore::logger_simple_info("");
+	//	}
+	//	EInputCore::logger_simple_info("-------");
+	//}
+	//EInputCore::logger_simple_info("");
 }
 
 void ETextParser::do_action(std::string _action_text, std::string _value)
@@ -1535,14 +1536,14 @@ void ETextParser::do_action(std::string _action_text, std::string _value)
 	//EInputCore::simple_logger_with_parameter("action:", _action_text);
 	//EInputCore::simple_logger_with_parameter("value:", _value);
 
-	if (_action_text == "NEW_DATA_ENTITY")
+	if (_action_text == "ADD_NEW_DATA_ENTITY")
 	{
 		last_created_data_entity = new EDataEntity();
 
 		EDataEntity::data_entity_list.push_back(last_created_data_entity);
 	}
 	else
-	if (_action_text == "new tag")
+	if (_action_text == "tag")
 	{
 		last_created_data_tag = new EDataTag();
 		*last_created_data_tag->tag_name = _value;
@@ -1550,7 +1551,7 @@ void ETextParser::do_action(std::string _action_text, std::string _value)
 		last_created_data_entity->tag_list.push_back(last_created_data_tag);
 	}
 	else
-	if (_action_text == "add tag value")
+	if (_action_text == "value")
 	{
 		last_created_data_tag->tag_value_list.push_back(new std::string  (_value));
 	}
