@@ -6588,6 +6588,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -15517,6 +15527,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top base tier"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -16426,6 +16437,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17684,6 +17703,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17696,6 +17723,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17708,6 +17743,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17732,6 +17775,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17744,6 +17795,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17756,6 +17815,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17768,6 +17835,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17780,6 +17855,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17792,6 +17877,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17804,6 +17897,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17816,6 +17917,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17828,6 +17938,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17840,6 +17958,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17852,6 +17978,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17864,6 +17999,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17876,6 +18021,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17888,6 +18043,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top base tier"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17900,6 +18064,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top base tier"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17912,6 +18085,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17924,6 +18106,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17936,6 +18126,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17948,6 +18147,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17960,6 +18167,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17972,6 +18187,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17984,6 +18208,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17996,6 +18228,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18008,6 +18248,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18085,6 +18333,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18097,6 +18355,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18109,6 +18375,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18121,6 +18395,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18133,6 +18415,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18145,6 +18435,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18157,6 +18455,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18169,6 +18475,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18181,6 +18495,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18205,6 +18527,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18217,6 +18547,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18229,6 +18567,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18241,6 +18589,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18253,6 +18609,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18265,6 +18630,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18277,6 +18650,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18289,6 +18670,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18301,6 +18690,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18313,6 +18711,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18325,6 +18732,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18337,6 +18752,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18349,6 +18772,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18361,6 +18792,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18373,6 +18812,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18385,6 +18833,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -18397,6 +18853,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -24149,6 +24613,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -24941,6 +25413,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -24953,6 +25433,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -24965,6 +25453,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -24977,6 +25473,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -24989,6 +25493,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25001,6 +25513,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25013,6 +25533,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25025,6 +25553,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25037,6 +25573,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25049,6 +25593,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25061,6 +25613,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25073,6 +25633,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25085,6 +25653,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25097,6 +25673,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25109,6 +25694,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25121,6 +25714,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25133,6 +25734,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25169,6 +25778,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25181,6 +25798,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25193,6 +25818,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25205,6 +25838,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25217,6 +25858,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25229,6 +25878,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25253,6 +25910,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25265,6 +25930,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25277,6 +25952,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25289,6 +25972,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25301,6 +25992,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25313,6 +26012,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25325,6 +26032,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25337,6 +26053,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25349,6 +26073,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25361,6 +26093,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25373,6 +26115,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25385,6 +26135,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25397,6 +26155,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25421,6 +26188,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25433,6 +26208,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25445,6 +26228,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25457,6 +26250,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25469,6 +26270,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25481,6 +26290,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25493,6 +26310,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25505,6 +26330,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25517,6 +26350,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25529,6 +26371,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25553,6 +26404,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25565,6 +26426,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25577,6 +26446,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25589,6 +26466,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25601,6 +26486,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25613,6 +26508,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25625,6 +26528,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25637,6 +26548,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25649,6 +26568,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25661,6 +26588,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25673,6 +26610,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top base tier"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25685,6 +26631,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25697,6 +26651,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25709,6 +26671,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25721,6 +26691,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25733,6 +26711,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25745,6 +26731,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25757,6 +26751,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25769,6 +26771,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25781,6 +26791,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25793,6 +26811,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25817,6 +26843,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25829,6 +26863,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25841,6 +26883,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25851,8 +26901,18 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperBlade"
 	[tag]"base class"	[value]"Two Hand Swords"
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25865,6 +26925,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25877,6 +26945,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25889,6 +26967,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25901,6 +26987,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25913,6 +27007,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25925,6 +27027,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25937,6 +27047,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25949,6 +27067,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Common"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25961,6 +27088,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25973,6 +27108,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25985,6 +27128,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -25997,6 +27148,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26009,6 +27168,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26021,6 +27188,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26033,6 +27209,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26045,6 +27229,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26057,6 +27249,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26069,6 +27269,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26081,6 +27289,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26093,6 +27311,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26105,6 +27331,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26117,6 +27351,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26129,6 +27371,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -26141,6 +27392,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"Two-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
