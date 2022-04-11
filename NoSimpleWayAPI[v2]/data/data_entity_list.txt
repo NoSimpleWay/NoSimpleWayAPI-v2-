@@ -5413,7 +5413,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"heist item"
+	[tag]"item tag"		[value]"Heist base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -5720,7 +5720,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist item"
+	[tag]"item tag"		[value]"Heist base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -6341,7 +6341,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist item"
+	[tag]"item tag"		[value]"Heist base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -6356,6 +6356,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6368,6 +6370,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6380,6 +6384,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6392,6 +6398,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6404,6 +6412,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6416,6 +6426,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6428,6 +6440,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6440,6 +6454,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6452,6 +6468,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6464,6 +6482,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6476,6 +6496,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6488,6 +6510,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6500,6 +6524,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6512,6 +6538,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6524,6 +6552,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6536,6 +6566,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6548,6 +6580,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6560,6 +6594,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6572,6 +6608,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6584,6 +6622,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Boss drop"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -20354,6 +20395,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
