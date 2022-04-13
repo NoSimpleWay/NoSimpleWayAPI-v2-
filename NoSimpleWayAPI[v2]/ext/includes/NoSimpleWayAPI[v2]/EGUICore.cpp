@@ -238,6 +238,7 @@ void EButtonGroup::draw()
 		(*but->world_position_y <= *higher_culling_line)
 	)
 	{
+		
 		but->draw();
 	}
 
@@ -425,7 +426,7 @@ void EButtonGroup::align_groups()
 				*group->region_gabarite->offset_x = 0.0f;
 				
 
-				 prev_group = group;
+				
 			}
 
 			
@@ -458,6 +459,7 @@ void EButtonGroup::align_groups()
 				EButtonGroup::stretch_parent_row(group, *group->region_gabarite->offset_y + *group->region_gabarite->size_y);
 			}
 
+			prev_group = group;
 			group->align_groups();
 			
 		}
@@ -470,9 +472,7 @@ void EButtonGroup::align_groups()
 			=
 			*prev_row->gabarite->offset_y
 			+
-			*prev_row->gabarite->size_y
-			+
-			*border_up;
+			*prev_row->gabarite->size_y;
 		}
 		//prev_row = row;
 	}

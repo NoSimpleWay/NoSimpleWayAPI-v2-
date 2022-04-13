@@ -1158,16 +1158,16 @@ ECustomData::~ECustomData()
 	clickable_area_list.shrink_to_fit();
 
 	
-	for (data_action_pointer dap : actions_on_change_style)	{delete &dap;}
+	//for (data_action_pointer dap : actions_on_change_style)	{delete &dap;}
 	actions_on_change_style.clear();
 	actions_on_change_style.shrink_to_fit();
 
 	
-	for (data_action_pointer dap : actions_on_draw)			{delete	&dap;}
+	//for (data_action_pointer dap : actions_on_draw)			{delete	&dap;}
 	actions_on_draw.clear();
 	actions_on_draw.shrink_to_fit();
 
-	for (data_action_pointer dap : actions_on_update)		{delete &dap;}
+	//for (data_action_pointer dap : actions_on_update)		{delete &dap;}
 	actions_on_update.clear();
 	actions_on_update.shrink_to_fit();
 

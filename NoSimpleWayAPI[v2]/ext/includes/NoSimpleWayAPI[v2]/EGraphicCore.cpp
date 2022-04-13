@@ -244,9 +244,9 @@ void ERenderBatcher::set_transform_zoom(float _zoom)
 	transform_zoom = _zoom;
 }
 
-bool ERenderBatcher::check_batcher(ERenderBatcher* _batcher)
+bool ERenderBatcher::check_batcher(ERenderBatcher* _batcher, unsigned int _add)
 {
-	if (_batcher->last_vertice_buffer_index + _batcher->gl_vertex_attribute_total_count * VERTICES_PER_SHAPE >= _batcher->gl_vertex_attribute_total_count * VERTICES_PER_SHAPE * MAX_SHAPES_COUNT)
+	if (_batcher->last_vertice_buffer_index + _add >= _batcher->gl_vertex_attribute_total_count * VERTICES_PER_SHAPE * MAX_SHAPES_COUNT)
 	{
 		_batcher->draw_call();
 		return false;
@@ -2131,32 +2131,48 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 		//memcpy();
 		//std::cout << "-------" << std::endl;
 
+		//[32000]
 		unsigned int vertices_buffer_capacity = MAX_SHAPES_COUNT * VERTICES_PER_SHAPE * batcher->gl_vertex_attribute_total_count;
 		//EInputCore::logger_param("vertices_buffer_capacity", vertices_buffer_capacity);
 
 		unsigned int passes = ceil(*last_buffer_id / (float)vertices_buffer_capacity);
 		//EInputCore::logger_param("passes", passes);
 
+		//[31872]
 		unsigned int data_size = *last_buffer_id;
 		//EInputCore::logger_param("data_size", data_size);
 
 
 		for (unsigned int i = 0; i < passes; i++)
 		{
-
+			ERenderBatcher::check_batcher(batcher, data_size);
+			//31872 current
 			memcpy
 			(
 				batcher->vertex_buffer + batcher->last_vertice_buffer_index,
 				vertex_buffer + (size_t)(i * vertices_buffer_capacity),
-				min(data_size - i * vertices_buffer_capacity, vertices_buffer_capacity) * sizeof(*vertex_buffer)
+				min(data_size - i * vertices_buffer_capacity, vertices_buffer_capacity - batcher->last_vertice_buffer_index) * sizeof(*vertex_buffer)
 			);
 
-			batcher->last_vertice_buffer_index += min(data_size, vertices_buffer_capacity);
+			
+			batcher->last_vertice_buffer_index += min(data_size, vertices_buffer_capacity - batcher->last_vertice_buffer_index);
+			
+
+
+
+			/*if (batcher->last_vertice_buffer_index >= 30'000)
+			{
+				EInputCore::logger_param("last buffer id", batcher->last_vertice_buffer_index);
+				EInputCore::logger_param("data size", data_size);
+				std::cout << std::endl;
+			}*/
 
 			if (batcher->last_vertice_buffer_index >= vertices_buffer_capacity)
 			{
 				batcher->draw_call();
+				EInputCore::logger_simple_info("draw call, because vertex buffer is full!");
 			}
+			//ERenderBatcher::check_batcher(batcher);
 		}
 
 		

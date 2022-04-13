@@ -239,17 +239,22 @@ ETextArea::ETextArea(EClickableArea* _region, EFont* _font, std::string _text)
 	ERegionGabarite::set_region_gabarite
 	(&region_gabarite, _region->region_gabarite);
 	font = _font;
-	*stored_text = _text;
+	//*stored_text = _text;
 
 	master_clickable_region = _region;
 
 	sprite_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
+
+	ETextArea::change_text(_text);
+	//generate_rows();
+	//generate_text();
 }
 
 ETextArea::~ETextArea()
 {
 	delete		error;
 	delete[]	color;
+	delete[]	offset_border;
 	delete		font_scale;
 	//delete		&font;
 	delete		down_offset;
@@ -294,7 +299,7 @@ ETextArea::~ETextArea()
 
 	delete jump_cooldown;
 	delete text_area_active;
-	delete border_offset;
+	delete _unused_border_offset;
 
 }
 
@@ -814,8 +819,6 @@ void ETextArea::update(float _d)
 
 			//if delete all text
 
-			generate_rows();
-			generate_text();
 		}
 		
 	}
@@ -1003,19 +1006,108 @@ ETextArea* ETextArea::create_base_text_area(EClickableArea* _region_gabarite, EF
 
 ETextArea* ETextArea::create_centered_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text)
 {
-	ETextArea* jc_text_area = create_base_text_area(_region_gabarite, _font, _text);
+	if (_region_gabarite != nullptr)
+	{
+		ETextArea* jc_text_area = create_base_text_area(_region_gabarite, _font, _text);
 
-	*jc_text_area->offset_by_gabarite_size_x = 0.5f;
-	*jc_text_area->offset_by_gabarite_size_y = 0.5f;
+		*jc_text_area->offset_by_gabarite_size_x = 0.5f;
+		*jc_text_area->offset_by_gabarite_size_y = 0.5f;
 
-	*jc_text_area->offset_by_text_size_x = -0.5f;
-	*jc_text_area->offset_by_text_size_y = -0.5f;
+		*jc_text_area->offset_by_text_size_x = -0.5f;
+		*jc_text_area->offset_by_text_size_y = -0.5f;
 
-	//*jc_text_area->can_be_edited = false;
-	jc_text_area->generate_rows();
-	jc_text_area->generate_text();
+		//*jc_text_area->can_be_edited = false;
 
-	return jc_text_area;
+
+		return jc_text_area;
+	}
+	else
+	{
+		return nullptr;
+	}
+}
+
+void ETextArea::change_text(std::string _text)
+{
+	std::string		buffer		= "";
+	std::string		temp_text	= "";
+	float			x_size		= 0.0f;
+	bool split = false;
+
+	for (int i = 0; i < _text.size(); i++)
+	{
+		if
+		(
+			(i + 1 < _text.size())
+			&&
+			(_text[i] == '\\')
+			&&
+			(_text[i + 1] == '\\')
+		)
+		{
+			x_size = 0.0f;
+		}
+
+		if
+		(
+			(_text[i] != '\\')
+			&&
+			(
+				(_text[max (i - 1, 0)] != '\\')
+				||
+				(i == 0)
+			)
+		)
+		{
+			
+
+			int sym_id = (int)(_text[i]);
+			if (sym_id <= 0) { sym_id += 256; }
+
+			//ignore space symbol after split
+			if
+			(
+				(i < 0)
+				||
+				(
+					(_text[i] != ' ')
+					||
+					(x_size > 0.01f)
+				)
+			)
+			{ buffer += _text[i]; }
+
+			x_size += font->advance[sym_id];
+
+			if (x_size + offset_border[BorderSide::LEFT] >= *region_gabarite->size_x - offset_border[BorderSide::RIGHT])
+			{
+				//EInputCore::logger_param("text splitted", buffer);
+				//EInputCore::logger_param("size", x_size + offset_border[BorderSide::LEFT]);
+				//EInputCore::logger_param("border", *region_gabarite->size_x - offset_border[BorderSide::RIGHT]);
+				//std::cout << std::endl;
+				//if (_text[i] != ' '){ buffer += _text[i]; }
+				if (_text[min(i + 1, _text.size() - 1)] != ' ')
+				{buffer += "-\\n";}
+				else
+				{buffer += "\\n";}
+				x_size = 0.0f;
+			}
+			else
+			{
+				
+			}
+		}
+	}
+
+
+
+	if (stored_text != nullptr)
+	{
+		*stored_text = buffer;
+
+		generate_rows();
+		generate_text();
+	}
 }
 
 EFontGlyph::EFontGlyph(char _sym, float _pos_x, float _pos_y, float _size_x, float _size_y)

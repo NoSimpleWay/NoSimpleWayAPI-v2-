@@ -106,6 +106,14 @@ public:
 };
 
 
+enum BorderSide
+{
+	LEFT,
+	RIGHT,
+	BOTTOM,
+	UP,
+	_LAST_ELEMENT
+};
 
 class ETextArea
 {
@@ -137,6 +145,8 @@ public:
 	float get_row_width(std::string* _row);
 
 	void translate(float _x, float _y);
+
+	float* offset_border = new float[BorderSide::_LAST_ELEMENT] {0.0f};
 
 	EClickableArea* master_clickable_region;
 
@@ -172,11 +182,13 @@ public:
 
 	bool* text_area_active = new bool(false);
 
-	float* border_offset = new float(5.0f);
+	float* _unused_border_offset = new float(5.0f);
 
 	static void set_region(ETextArea* _text_area, ERegionGabarite* _region_gabarite);
 	static ETextArea* create_base_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
 	static ETextArea* create_centered_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
+
+	void change_text(std::string _text);
 	//static 
 };
 

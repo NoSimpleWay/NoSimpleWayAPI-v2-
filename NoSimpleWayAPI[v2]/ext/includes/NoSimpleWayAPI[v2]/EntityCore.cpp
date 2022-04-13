@@ -362,6 +362,19 @@ EClickableArea* Entity::get_last_clickable_area(Entity* _entity)
 	{ return nullptr; }
 }
 
+void Entity::add_text_area_to_last_clickable_region(EntityButton* _button, ETextArea* _text_area)
+{
+	if (_button != nullptr)
+	{
+		EClickableArea* last_clickable_area = get_last_clickable_area(_button);
+
+		if (last_clickable_area != nullptr)
+		{
+			last_clickable_area->text_area = _text_area;
+		}
+	}
+}
+
 void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style)
 {
 	if ((_button != nullptr) && (_style != nullptr) && (_style->button_bg != nullptr))

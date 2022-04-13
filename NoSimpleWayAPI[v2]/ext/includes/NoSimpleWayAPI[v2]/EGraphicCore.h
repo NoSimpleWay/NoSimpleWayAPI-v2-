@@ -268,7 +268,7 @@ public:
 	void set_transform_screen_size(float _size_x, float _size_y);
 	void set_transform_zoom(float _zoom);
 
-	static bool check_batcher(ERenderBatcher* _batcher);
+	static bool check_batcher(ERenderBatcher* _batcher,unsigned int _add = 0);
 
 	GLsizei										gl_vertex_attribute_total_count = 0;
 };
