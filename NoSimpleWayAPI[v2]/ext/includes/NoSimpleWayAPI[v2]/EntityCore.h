@@ -147,6 +147,8 @@ public:
 
 	);
 
+	bool can_get_access_to_style();
+
 
 
 

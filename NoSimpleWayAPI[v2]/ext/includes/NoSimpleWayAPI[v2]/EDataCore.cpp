@@ -128,9 +128,15 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	
 	
 	if (*data_bar->max_value > 0.0f)
-	{*_entity->disable_draw = false;}
+	{
+
+
+		*_entity->disable_draw = false;
+	}
 	else
-	{*_entity->disable_draw = true;}
+	{
+		*_entity->disable_draw = true;
+	}
 
 	if
 	(

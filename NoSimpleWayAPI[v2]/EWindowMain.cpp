@@ -103,7 +103,7 @@ EWindowMain::EWindowMain()
 	ERegionGabarite::set_region_gabarite (&jc_text_area->region_gabarite, jc_region_gabarite);
 
 	jc_text_area->sprite_layer = jc_sprite_layer_for_text;
-	jc_text_area->master_clickable_region = jc_clickable_area;
+	jc_text_area->parent_clickable_region = jc_clickable_area;
 	jc_sprite_layer_for_text->batcher = NS_EGraphicCore::default_batcher_for_drawing;
 
 	
@@ -183,7 +183,7 @@ EWindowMain::EWindowMain()
 		for (int z = 0; z < 10; z++)
 		{
 			jc_button_group_row = EButtonGroup::add_default_row_to_group(main_button_group, new ERegionGabarite(0.0f, 0.0f, 1200.0f, 160.0f));
-			*jc_button_group_row->gabarite_size_mode_y = ButtonGroupGabariteSize::BGGS_EXACT_STRETCH;
+			*jc_button_group_row->gabarite_size_mode_y = GroupStretchMode::EXACT_STRETCH;
 
 			//*jc_button_group_row->
 
@@ -346,13 +346,14 @@ EWindowMain::EWindowMain()
 
 		//main row
 		jc_button_group_row = EButtonGroup::add_default_row_to_group (main_button_group, new ERegionGabarite(350.0f, 10.0f));
-		*jc_button_group_row->gabarite_size_mode_y = ButtonGroupGabariteSize::BGGS_EXACT_STRETCH;
+		*jc_button_group_row->gabarite_size_mode_y = GroupStretchMode::EXACT_STRETCH;
 
 		//group with constant style
 		jc_button_group = jc_button_group_row->add_group
 		(EButtonGroup::create_default_button_group (new ERegionGabarite(350.0f, 10.0f + *style->button_group_main->side_offset_up), style));
 		*jc_button_group->can_change_style = false;
-		*jc_button_group->gabarite_size_mode_y = ButtonGroupGabariteSize::BGGS_EXACT_STRETCH;
+		*jc_button_group->gabarite_size_mode_x = GroupStretchMode::EXACT_STRETCH;
+		*jc_button_group->gabarite_size_mode_y = GroupStretchMode::EXACT_STRETCH;
 
 		//subrow big
 		jc_button_group_row = EButtonGroup::add_default_row_to_group
@@ -361,6 +362,7 @@ EWindowMain::EWindowMain()
 		//group big
 		EButtonGroup* big_subgroup = jc_button_group_row->add_group
 		(EButtonGroup::create_default_button_group (new ERegionGabarite (0.0f, 0.0f, horizontal_side, 100.0f) ,style));
+		*big_subgroup->gabarite_size_mode_x = GroupStretchMode::EXACT_STRETCH;
 
 			if (big_subgroup != nullptr)
 			{
@@ -394,7 +396,8 @@ EWindowMain::EWindowMain()
 		(
 			EButtonGroup::create_default_button_group
 			(new ERegionGabarite(horizontal_side, 20.0f + *style->button_group_main->side_offset_bottom + *style->button_group_main->side_offset_up + 8.0f), style)
-		);		
+		);
+		*jc_button_group->gabarite_size_mode_x = GroupStretchMode::EXACT_STRETCH;
 
 		//select button
 		if (jc_button_group != nullptr)

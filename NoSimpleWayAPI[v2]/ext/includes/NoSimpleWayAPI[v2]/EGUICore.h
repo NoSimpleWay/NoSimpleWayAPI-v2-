@@ -80,10 +80,10 @@ enum CullingLinesCalcMethod
 //	BRT_HEADER
 //};
 
-enum ButtonGroupGabariteSize
+enum GroupStretchMode
 {
-	BGGS_CONSTANT,
-	BGGS_EXACT_STRETCH
+	CONSTANT,
+	EXACT_STRETCH
 };
 
 class EButtonGroupRow
@@ -110,7 +110,7 @@ public:
 
 	EButtonGroup* root_group = nullptr;
 
-	unsigned int* gabarite_size_mode_y = new unsigned int(ButtonGroupGabariteSize::BGGS_CONSTANT);
+	unsigned int* gabarite_size_mode_y = new unsigned int(GroupStretchMode::CONSTANT);
 	
 	static void stretch_parent_group(EButtonGroupRow* _row, float _new_y_size);
 	//static EButtonGroupRow* create_default_row(ERegionGabarite* _region);
@@ -176,9 +176,10 @@ public:
 	void draw();
 
 		void realign_all_buttons();
-		void align_groups();
+		void align_and_stretch_row();
 		static void calculate_culling_lines(EButtonGroup* _group);
 		static void generate_vertex_buffer_for_group(EButtonGroup* _group);
+		void align_groups();
 
 		static void refresh_button_group(EButtonGroup* _group);
 
@@ -226,7 +227,9 @@ public:
 
 	unsigned int* culling_lines_method		= new unsigned int(CullingLinesCalcMethod::CLCM_BY_PARENT_GROUP);
 	unsigned int* button_group_type		= new unsigned int(ButtonGroupType::BGT_REGULAR);
-	unsigned int* gabarite_size_mode_y		= new unsigned int(ButtonGroupGabariteSize::BGGS_CONSTANT);
+
+	unsigned int* gabarite_size_mode_x		= new unsigned int(GroupStretchMode::CONSTANT);
+	unsigned int* gabarite_size_mode_y		= new unsigned int(GroupStretchMode::CONSTANT);
 
 	//static EButtonGroup* focused_button_group;
 

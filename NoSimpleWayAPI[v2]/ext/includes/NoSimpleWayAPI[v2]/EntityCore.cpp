@@ -371,9 +371,11 @@ void Entity::add_text_area_to_last_clickable_region(EntityButton* _button, EText
 		if (last_clickable_area != nullptr)
 		{
 			last_clickable_area->text_area = _text_area;
+			_text_area->parent_entity = _button;
 
 			if ((_button->parent_button_group != nullptr) && (_button->parent_button_group->selected_style != nullptr))
 			{
+				//apply color correction from style
 				for (int i = 0; i < 4; i++)
 				{
 					last_clickable_area->text_area->color[i]
@@ -468,6 +470,11 @@ EntityButton* EntityButton::create_default_clickable_button(ERegionGabarite* _re
 	last_data->clickable_area_list.push_back(jc_clickable_area);
 
 	return jc_button;
+}
+
+bool EntityButton::can_get_access_to_style()
+{
+	return false;
 }
 
 EntityButton::~EntityButton()

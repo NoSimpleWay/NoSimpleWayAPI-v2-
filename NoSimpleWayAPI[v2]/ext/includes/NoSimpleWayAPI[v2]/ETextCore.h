@@ -165,7 +165,8 @@ public:
 
 	float* offset_border = new float[BorderSide::_LAST_ELEMENT] {0.0f};
 
-	EClickableArea* master_clickable_region;
+	EClickableArea* parent_clickable_region;
+	EntityButton* parent_entity;
 
 	//int* align_size_x = new int(AlignSide::AS_LEFT);
 	//int* align_size_y = new int(AlignSide::AS_DOWN);
@@ -206,6 +207,8 @@ public:
 	static ETextArea* create_centered_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
 
 	void change_text(std::string _text);
+
+	bool can_get_access_to_group_style();
 	//static 
 };
 

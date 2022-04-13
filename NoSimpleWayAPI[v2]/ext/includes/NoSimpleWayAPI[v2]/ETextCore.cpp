@@ -241,7 +241,7 @@ ETextArea::ETextArea(EClickableArea* _region, EFont* _font, std::string _text)
 	font = _font;
 	//*stored_text = _text;
 
-	master_clickable_region = _region;
+	parent_clickable_region = _region;
 
 	sprite_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
 
@@ -435,10 +435,22 @@ void ETextArea::generate_text()
 
 		full_text_height = 14.0f * (row.size());
 		y_adding = full_text_height - 14.0f;
-		y_adding += *region_gabarite->size_y * *offset_by_gabarite_size_y;
+		
+		float border_offset_bottom	= 0.0f;
+		float border_offset_top		= 0.0f;
+
+		if (can_get_access_to_group_style())
+		{
+			border_offset_bottom	= *parent_entity->parent_button_group->selected_style->button_bg->side_offset_bottom;
+			border_offset_top		= *parent_entity->parent_button_group->selected_style->button_bg->side_offset_up;
+		}
+
+		y_adding += (*region_gabarite->size_y - border_offset_bottom - border_offset_top) * *offset_by_gabarite_size_y;
 
 		//vertical align
 		y_adding += (full_text_height - 2.0f) * *offset_by_text_size_y;
+		y_adding += border_offset_bottom;
+
 
 		for (std::string* str : row)
 		{
@@ -639,7 +651,7 @@ void ETextArea::update(float _d)
 				(
 					(EClickableArea::active_clickable_region == nullptr)
 					||
-					(EClickableArea::active_clickable_region == master_clickable_region)
+					(EClickableArea::active_clickable_region == parent_clickable_region)
 				)
 				&&
 				(NS_FONT_UTILS::active_text_area == nullptr)
@@ -708,7 +720,7 @@ void ETextArea::update(float _d)
 			(
 				(EClickableArea::active_clickable_region == nullptr)
 				||
-				(EClickableArea::active_clickable_region == master_clickable_region)
+				(EClickableArea::active_clickable_region == parent_clickable_region)
 			)
 		)
 		{ 
@@ -1110,6 +1122,21 @@ void ETextArea::change_text(std::string _text)
 		generate_rows();
 		generate_text();
 	}
+}
+
+bool ETextArea::can_get_access_to_group_style()
+{
+	if
+	(
+		(parent_entity != nullptr)
+		&&
+		(parent_entity->parent_button_group != nullptr)
+		&&
+		(parent_entity->parent_button_group->selected_style != nullptr)
+	)
+	{return true;}
+	else
+	{return false;}
 }
 
 EFontGlyph::EFontGlyph(char _sym, float _pos_x, float _pos_y, float _size_x, float _size_y)

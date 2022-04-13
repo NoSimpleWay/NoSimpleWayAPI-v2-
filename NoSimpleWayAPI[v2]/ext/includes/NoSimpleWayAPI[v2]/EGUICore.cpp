@@ -345,7 +345,7 @@ void EButtonGroup::draw()
 
 }
 
-void EButtonGroup::align_groups()
+void EButtonGroup::align_and_stretch_row()
 {
 	*highest_point_y = 0.0f;
 	//float minimal_culling_line_top		= 10000.0f;
@@ -383,6 +383,30 @@ void EButtonGroup::align_groups()
 
 		*row->gabarite->offset_x = *border_left;
 
+		*row->gabarite->size_x = *region_gabarite->size_x - *border_left - *border_right;
+
+		if
+		(
+			(row->parent_button_group != nullptr)
+			&&
+			(row->parent_button_group->slider != nullptr)
+			&&
+			(!(*row->parent_button_group->slider->disable_draw))
+			&&
+			(parent_group_row == nullptr)
+		)
+		{
+			*row->gabarite->size_x -= *row->parent_button_group->slider->button_gabarite->size_x;
+		}
+		else
+		{
+			//if (row->parent_button_group == nullptr) { EInputCore::logger_simple_error("parent group is null"); }
+			//else
+			//if (row->parent_button_group->slider == nullptr) { EInputCore::logger_simple_error("slider is null"); }
+			//else
+			//if (*row->parent_button_group->slider->disable_draw) { EInputCore::logger_simple_error("slider disabled"); }
+		}
+
 		if (prev_row != nullptr)
 		{
 			*row->gabarite->offset_y = *prev_row->gabarite->offset_y + *prev_row->gabarite->size_y + 3.0f;
@@ -410,24 +434,75 @@ void EButtonGroup::align_groups()
 
 		prev_group = nullptr;
 
-		//if (*gabarite_size_mode_y == ButtonGroupGabariteSize::BGGS_EXACT_STRETCH) { *region->size_y = 0.0f; }
-		//if (*row->gabarite_size_mode_y == ButtonGroupGabariteSize::BGGS_EXACT_STRETCH) { *row->gabarite->size_y = 0.0f; }
+
+		//stretch row
+		for (EButtonGroup* group : row->button_group_list)
+		{	if
+			(
+				(group->parent_group_row != nullptr)
+				&&
+				(*group->region_gabarite->offset_y + *group->region_gabarite->size_y >= *row->gabarite->size_y)
+			)
+			{
+				EButtonGroup::stretch_parent_row(group, *group->region_gabarite->offset_y + *group->region_gabarite->size_y);
+			}
+
+			prev_group = group;
+			group->align_and_stretch_row();
+			
+		}
+
+		
+	}
+
+	if (parent_group_row == nullptr)
+	{
+		*highest_point_y
+		=
+		*prev_row->gabarite->offset_y
+		+
+		*prev_row->gabarite->size_y;
+	}
+
+	for (EButtonGroupRow* row : group_row_list)
+	{
+		float total_size_x		= 0.0f;
+		float target_size_x		= *row->gabarite->size_x;
+		float resize_multiplier	= 1.0f;
+		
+		
 		for (EButtonGroup* group : row->button_group_list)
 		{
-			
+			if (*group->gabarite_size_mode_x == GroupStretchMode::EXACT_STRETCH)
+			{total_size_x += *group->region_gabarite->size_x;}
+
+			if (*group->gabarite_size_mode_x == GroupStretchMode::CONSTANT)
+			{target_size_x -= *group->region_gabarite->size_x;}
+		}
+
+		if (total_size_x > 0) { resize_multiplier = target_size_x / total_size_x; }
+
+
+		prev_group = nullptr;
+		for (EButtonGroup* group : row->button_group_list)
+		{
+			if
+			(
+				(resize_multiplier != 1.0f)
+				&&
+				(*group->gabarite_size_mode_x == GroupStretchMode::EXACT_STRETCH)
+			)
+			{
+				*group->region_gabarite->size_x *= resize_multiplier;
+				EButtonGroup::generate_brick_textured_bg(group);
+			}
+
 			*group->region_gabarite->offset_y = 0.0f;
 
 			if (prev_group != nullptr)
-			{
-				*group->region_gabarite->offset_x = *prev_group->region_gabarite->offset_x + *prev_group->region_gabarite->size_x + 3.0f;
-			}
+			{*group->region_gabarite->offset_x = *prev_group->region_gabarite->offset_x + *prev_group->region_gabarite->size_x + 3.0f;}
 			else
-			{
-				*group->region_gabarite->offset_x = 0.0f;
-				
-
-				
-			}
+			{*group->region_gabarite->offset_x = 0.0f;}
 
 			
 
@@ -435,50 +510,9 @@ void EButtonGroup::align_groups()
 			*group->region_gabarite->world_position_y = *row->gabarite->world_position_y + *group->region_gabarite->offset_y;
 			*group->region_gabarite->world_position_z = *row->gabarite->world_position_z + *group->region_gabarite->offset_z;
 
-
-
-			//if
-			//(
-			//	(*row->gabarite_size_mode_y == ButtonGroupGabariteSize::BGGS_EXACT_STRETCH)
-			//	&&
-			//	(*group->region->offset_y + *group->region->size_y>= *row->gabarite->size_y)
-			//)
-			//{
-			//	*row->gabarite->size_y = *group->region->offset_y + *group->region->size_y;
-			//}
-
-			if
-			(
-				(group->parent_group_row != nullptr)
-				&&
-				(*group->region_gabarite->offset_y + *group->region_gabarite->size_y >= *row->gabarite->size_y)
-				//&&
-				//(EInputCore::key_pressed(LEFT_ALT_PRESSED))
-			)
-			{
-				EButtonGroup::stretch_parent_row(group, *group->region_gabarite->offset_y + *group->region_gabarite->size_y);
-			}
-
 			prev_group = group;
-			group->align_groups();
-			
 		}
-		
-
-
-		if (parent_group_row == nullptr)
-		{
-			*highest_point_y
-			=
-			*prev_row->gabarite->offset_y
-			+
-			*prev_row->gabarite->size_y;
-		}
-		//prev_row = row;
 	}
-
-
-
 
 
 	
@@ -619,12 +653,18 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 
 }
 
+void EButtonGroup::align_groups()
+{
+}
+
 void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 {
 	
-	_group->align_groups();
+	_group->align_and_stretch_row();
 	EButtonGroup::calculate_culling_lines(_group);
 	_group->realign_all_buttons();
+	_group->align_groups();
+
 	EButtonGroup::generate_vertex_buffer_for_group(_group);
 
 	for (EButtonGroupRow*	row:	_group->group_row_list)
@@ -733,6 +773,8 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	EntityButton* but = new EntityButton();
 
 	_button_group->slider = but;
+
+	//*but->disable_draw = true;
 
 	ECustomData* custom_data = new ECustomData();
 	EDataContainerScrollBar* data_container = new EDataContainerScrollBar();
@@ -1304,7 +1346,7 @@ void EButtonGroupRow::stretch_parent_group(EButtonGroupRow* _row, float _new_y_s
 {
 	EButtonGroup* p_group = _row->parent_button_group;
 
-	if (*p_group->gabarite_size_mode_y == ButtonGroupGabariteSize::BGGS_EXACT_STRETCH)
+	if (*p_group->gabarite_size_mode_y == GroupStretchMode::EXACT_STRETCH)
 	{
 		*p_group->region_gabarite->size_y = _new_y_size;
 		EButtonGroup::generate_brick_textured_bg(p_group);
