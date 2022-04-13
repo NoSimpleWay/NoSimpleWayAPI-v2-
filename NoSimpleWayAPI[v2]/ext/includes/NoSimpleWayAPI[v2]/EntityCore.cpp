@@ -371,6 +371,18 @@ void Entity::add_text_area_to_last_clickable_region(EntityButton* _button, EText
 		if (last_clickable_area != nullptr)
 		{
 			last_clickable_area->text_area = _text_area;
+
+			if ((_button->parent_button_group != nullptr) && (_button->parent_button_group->selected_style != nullptr))
+			{
+				for (int i = 0; i < 4; i++)
+				{
+					last_clickable_area->text_area->color[i]
+					=
+					last_clickable_area->text_area->stored_color[i]
+					*
+					_button->parent_button_group->selected_style->text_color_multiplier[i];
+				}
+			}
 		}
 	}
 }
@@ -599,4 +611,14 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 void action_change_style_button(EntityButton* _but, EGUIStyle* _style)
 {
 	EntityButton::button_generate_brick_bg(_but, _style);
+
+	for (ECustomData* custom_data:_but->custom_data_list)
+	for (EClickableArea* clickable_area:custom_data->clickable_area_list)
+	if (clickable_area->text_area != nullptr)
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			clickable_area->text_area->color[i] = clickable_area->text_area->stored_color[i] * _style->text_color_multiplier[i];
+		}
+	}
 }

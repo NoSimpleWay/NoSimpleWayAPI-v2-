@@ -417,7 +417,9 @@ void ETextArea::generate_text()
 			(font != nullptr)
 		)
 	{
-		NS_EGraphicCore::set_active_color(color);
+		//if (*selected_color_table == TextColorArray::FREE)
+		{NS_EGraphicCore::set_active_color(color);}
+
 		*sprite_layer->last_buffer_id = 0;
 
 		if (sprite_layer->vertex_buffer != nullptr)

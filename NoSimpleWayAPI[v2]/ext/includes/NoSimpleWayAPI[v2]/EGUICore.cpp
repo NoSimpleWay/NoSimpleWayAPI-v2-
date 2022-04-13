@@ -898,15 +898,7 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 			EButtonGroup::generate_brick_textured_bg(_group);
 
 
-			for (EntityButton* but : _group->button_list)
-			{
-				for (change_style_action csa : but->action_on_change_style_list)
-				{
-					csa(but, _style);
-
-					but->generate_vertex_buffer_for_all_sprite_layers();
-				}
-			}
+			
 		}
 		else
 		{
@@ -918,6 +910,16 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 				0.0f,
 				0.0f
 			);
+		}
+
+		for (EntityButton* but : _group->button_list)
+		{
+			for (change_style_action csa : but->action_on_change_style_list)
+			{
+				csa(but, _style);
+
+				but->generate_vertex_buffer_for_all_sprite_layers();
+			}
 		}
 
 
@@ -1202,6 +1204,7 @@ EButtonGroup* EButtonGroup::create_button_group_without_bg(ERegionGabarite* _reg
 		bgroup_with_slider,
 		bgroup_default_bg
 	);
+
 	*just_created_button_group->can_be_focused = true;
 
 	return just_created_button_group;
@@ -1380,3 +1383,19 @@ EGUIStyle::EGUIStyle(std::string _folder)
 EGUIStyle::~EGUIStyle()
 {
 }
+
+void EGUIStyle::set_color_multiplier(float _r, float _g, float _b, float _a)
+{
+	text_color_multiplier[0] = _r;
+	text_color_multiplier[1] = _g;
+	text_color_multiplier[2] = _b;
+	text_color_multiplier[3] = _a;
+}
+
+//void EGUIStyle::set_color_array(unsigned int _id, float _r, float _g, float _b, float _a)
+//{
+	/*text_color_array[_id][0] = _r;
+	text_color_array[_id][0] = _g;
+	text_color_array[_id][1] = _b;
+	text_color_array[_id][2] = _a;*/
+//}

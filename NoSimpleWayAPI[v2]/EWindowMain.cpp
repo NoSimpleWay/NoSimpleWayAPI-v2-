@@ -463,7 +463,7 @@ EWindowMain::EWindowMain()
 			//EButtonGroup* close_group = jc_button_group_row->add_group
 			//close_group->parent_group = button_group_header;
 					jc_button = new EntityButton();
-					jc_button->action_on_change_style_list.push_back(&action_change_style_button);
+					//jc_button->action_on_change_style_list.push_back(&action_change_style_button);
 					close_group->button_list.push_back(jc_button);
 					jc_button->parent_button_group = close_group;
 
@@ -518,10 +518,12 @@ EWindowMain::EWindowMain()
 			nullptr
 		);
 
+		//NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
 		ETextureGabarite* gab = NS_EGraphicCore::default_texture_load("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", data_entity));
 		float resize_factor = 38.0f / max(*gab->size_x_in_pixels, *gab->size_y_in_pixels);
 		resize_factor = min(resize_factor, 1.0f);
 
+		
 		if (DataEntityUtils::get_tag_value_by_name(0, "icon path", data_entity) != "")
 		//add 2nd layer (icon)
 		{

@@ -289,24 +289,28 @@ public:
 
 	static void apply_brick_parameters_to_button_group	(EButtonGroup* _group, EBrickStyle* _brick);
 };
+
+
+
 class EGUIStyle
 {
 public:
 
 	static int number;
 
-	EBrickStyle* button_group_main		= nullptr;
-	EBrickStyle* button_group_darken	= nullptr;
+	EBrickStyle*	button_group_main				= nullptr;
+	EBrickStyle*	button_group_darken				= nullptr;
 
-	EBrickStyle* slider_bg				= nullptr;
-	EBrickStyle* button_bg				= nullptr;
+	EBrickStyle*	slider_bg						= nullptr;
+	EBrickStyle*	button_bg						= nullptr;
 
-	EBrickStyle* slider_inactive		= nullptr;
-	EBrickStyle* slider_active			= nullptr;
+	EBrickStyle*	slider_inactive					= nullptr;
+	EBrickStyle*	slider_active					= nullptr;
 
-	std::string* folder					= new std::string("lead_and_gold");
-
-
+	std::string*	folder							= new std::string("lead_and_gold");
+	float			text_color_multiplier[4]		= { 1.0f, 1.0f, 1.0f, 1.0f };
+	
+	//float text_color_array[16][4];
 
 	EGUIStyle();
 	EGUIStyle(std::string _folder);
@@ -314,4 +318,7 @@ public:
 
 	static std::vector<EGUIStyle*> style_list;
 	static EGUIStyle* active_style;
+
+	//void set_color_array(unsigned int _id, float _r, float _g, float _b, float _a);
+	void set_color_multiplier(float _r, float _g, float _b, float _a);
 };

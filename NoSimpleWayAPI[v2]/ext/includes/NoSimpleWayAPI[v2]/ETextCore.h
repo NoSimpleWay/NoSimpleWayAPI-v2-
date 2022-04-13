@@ -115,6 +115,21 @@ enum BorderSide
 	_LAST_ELEMENT
 };
 
+enum TextColorArray
+{
+	FREE,
+	WHITE,
+	GRAY,
+	BLACK,
+	RED,
+	ORANGE,
+	YELLOW,
+	GREEN,
+	CYAN,
+	BLUE,
+	MAGENTA
+};
+
 class ETextArea
 {
 public:
@@ -124,7 +139,9 @@ public:
 
 	bool* error = new bool(false);
 
-	float* color = new float[4]{0.9f, 0.85f, 0.6f, 1.0f};
+	float* color = new float[4]{0.9f, 0.5f, 0.25f, 1.0f};
+	float* stored_color = new float[4]{1.0f, 1.0f, 1.0f, 1.0f};
+	unsigned int* selected_color_table = new unsigned int(TextColorArray::FREE);
 	float* font_scale = new float(1.0f);
 	EFont* font = nullptr;
 
