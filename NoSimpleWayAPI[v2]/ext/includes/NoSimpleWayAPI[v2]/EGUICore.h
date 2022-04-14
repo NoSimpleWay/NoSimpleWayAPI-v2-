@@ -56,7 +56,7 @@ public:
 	void			GUI_draw_default(float _d);
 	virtual void	GUI_draw_additional(float _d);
 
-	std::vector<EButtonGroup*> button_group_list;
+	std::vector<EButtonGroup*> group_list;
 
 
 	//////////////		_STATIC SECTION_		////////////////////////
@@ -83,38 +83,39 @@ enum CullingLinesCalcMethod
 enum GroupStretchMode
 {
 	CONSTANT,
-	EXACT_STRETCH
+	EXACT_STRETCH,
+	PARENT_SIZE
 };
 
-class EButtonGroupRow
-{
-public:
-	ERegionGabarite* gabarite;
-	std::vector<EButtonGroup*> button_group_list;
-	//EButtonGroup* header_button_group;
-
-	EButtonGroup* parent_button_group;
-
-	//wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-	EButtonGroupRow(ERegionGabarite* _region);
-	EButtonGroupRow();
-
-	EButtonGroup* add_group(EButtonGroup* _group);
-	static EButtonGroup* get_last_group(EButtonGroupRow* _row);
-
-	float* lowest_culling_line = new float(0.0f);
-	float* highest_culling_line = new float(10000.0f);
-
-	float* highest_culling_line_for_bg	= new float(10000.0f);
-	float* lowest_culling_line_for_bg	= new float(0.0f);
-
-	EButtonGroup* root_group = nullptr;
-
-	unsigned int* gabarite_size_mode_y = new unsigned int(GroupStretchMode::CONSTANT);
-	
-	static void stretch_parent_group(EButtonGroupRow* _row, float _new_y_size);
-	//static EButtonGroupRow* create_default_row(ERegionGabarite* _region);
-};
+//class EButtonGroupRow
+//{
+//public:
+//	ERegionGabarite* gabarite;
+//	std::vector<EButtonGroup*> button_group_list;
+//	//EButtonGroup* header_button_group;
+//
+//	EButtonGroup* parent_button_group;
+//
+//	//wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+//	EButtonGroupRow(ERegionGabarite* _region);
+//	EButtonGroupRow();
+//
+//	EButtonGroup* add_group(EButtonGroup* _group);
+//	static EButtonGroup* get_last_group(EButtonGroupRow* _row);
+//
+//	float* lowest_culling_line = new float(0.0f);
+//	float* highest_culling_line = new float(10000.0f);
+//
+//	float* highest_culling_line_for_bg	= new float(10000.0f);
+//	float* lowest_culling_line_for_bg	= new float(0.0f);
+//
+//	EButtonGroup* root_group = nullptr;
+//
+//	unsigned int* gabarite_size_mode_y = new unsigned int(GroupStretchMode::CONSTANT);
+//	
+//	static void stretch_parent_group(EButtonGroupRow* _row, float _new_y_size);
+//	//static EButtonGroupRow* create_default_row(ERegionGabarite* _region);
+//};
 
 enum ButtonGroupType
 {
@@ -150,8 +151,9 @@ public:
 	ERegionGabarite* region_gabarite = nullptr;
 
 	std::vector<EntityButton*> button_list;
-	std::vector<EButtonGroupRow*> group_row_list;
-	EButtonGroupRow* parent_group_row = nullptr;
+	//std::vector<EButtonGroupRow*> group_row_list;
+	//EButtonGroupRow* parent_group_row = nullptr;
+	std::vector<EButtonGroup*> group_list;
 	EButtonGroup* parent_group = nullptr;
 
 	int* order_in_vector = new int(0);
@@ -220,8 +222,8 @@ public:
 	static EButtonGroup* create_button_group_without_bg	(ERegionGabarite* _region, EGUIStyle* _style);
 	
 
-	static EButtonGroupRow* add_default_row_to_group(EButtonGroup* _group, ERegionGabarite* _region);
-	static EButtonGroupRow* get_last_created_row(EButtonGroup* _group);
+	//static EButtonGroupRow* add_default_row_to_group(EButtonGroup* _group, ERegionGabarite* _region);
+	//static EButtonGroupRow* get_last_created_row(EButtonGroup* _group);
 
 	static void change_style(EButtonGroup* _group, EGUIStyle* _style);
 
@@ -238,11 +240,15 @@ public:
 	
 	static bool catched_by_mouse(EButtonGroup* _group);
 
-	static void stretch_parent_row(EButtonGroup* _group, float _new_y_size);
+	static void stretch_parent_group(EButtonGroup* _group, float _new_y_size);
 
 	bool* have_bg = new bool(true);
 	bool* can_be_focused = new bool(true);
 	bool* is_active = new bool(true);
+
+	bool* force_new_line = new bool(false);
+
+	EButtonGroup* add_group(EButtonGroup* _new_group);
 
 };
 

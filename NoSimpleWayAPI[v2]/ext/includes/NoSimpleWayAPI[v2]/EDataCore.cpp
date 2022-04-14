@@ -361,7 +361,7 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	for (EWindow* window : EWindow::window_list)
-	for (EButtonGroup* group:window->button_group_list)
+	for (EButtonGroup* group:window->group_list)
 	{
 		EButtonGroup::change_style
 		(
@@ -1060,6 +1060,10 @@ ERegionGabarite::ERegionGabarite(float _offset_x, float _offset_y, float _offset
 	*offset_x = _offset_x;
 	*offset_y = _offset_y;
 	*offset_z = _offset_z;
+	
+	*world_position_x = _offset_x;
+	*world_position_y = _offset_y;
+	*world_position_z = _offset_z;
 
 	*size_x = _size_x;
 	*size_y = _size_y;

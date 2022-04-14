@@ -29,7 +29,7 @@ class ESpriteLayer;
 class ESpriteFrame;
 
 class EWindow;
-class EButtonGroupRow;
+//class EButtonGroupRow;
 class EButtonGroup;
 
 class EFont;
