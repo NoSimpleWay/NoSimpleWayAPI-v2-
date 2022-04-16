@@ -558,9 +558,9 @@ void ETextArea::generate_text()
 	{
 		if (!*error)
 		{
-			if (sprite_layer == nullptr) { EInputCore::logger_simple_error("sprite layer is null!"); }
-			if (region_gabarite == nullptr) { EInputCore::logger_simple_error("region gabarite is null!"); }
-			if (font == nullptr) { EInputCore::logger_simple_error("font is null!"); }
+			if (sprite_layer == nullptr) { EInputCore::logger_simple_error("sprite layer in [text area] is null!"); }
+			if (region_gabarite == nullptr) { EInputCore::logger_simple_error("region gabarite in [text area] is null!"); }
+			if (font == nullptr) { EInputCore::logger_simple_error("font in [text area] is null!"); }
 
 			*error = true;
 		}

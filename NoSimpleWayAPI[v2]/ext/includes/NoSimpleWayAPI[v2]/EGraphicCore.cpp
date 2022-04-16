@@ -1964,9 +1964,9 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 	}
 	else
 	{
-		if (_region == nullptr)				{ EInputCore::logger_simple_error("_region is null!"); }
-		if (_sprite_layer == nullptr)		{ EInputCore::logger_simple_error("_sprite_layer is null!"); }
-		if (_texture_gabarite == nullptr)	{ EInputCore::logger_simple_error("_texture gabarite is null!"); }
+		if (_region == nullptr)				{ EInputCore::logger_simple_error("_region in [brick generator] is null!"); }
+		if (_sprite_layer == nullptr)		{ EInputCore::logger_simple_error("_sprite_layer in [brick generator] is null!"); }
+		if (_texture_gabarite == nullptr)	{ EInputCore::logger_simple_error("_texture gabarite in [brick generator] is null!"); }
 	}
 }
 

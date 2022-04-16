@@ -82,9 +82,9 @@ enum CullingLinesCalcMethod
 
 enum GroupStretchMode
 {
-	CONSTANT,
-	EXACT_STRETCH,
-	PARENT_SIZE
+	CONSTANT,					//do not resize button group
+	STRETCHED_FILL_VOID,		//resife to fill empty space
+	STRETCHED_ONLY_BY_PARENT	//resize only to fill vertical/horizontal space
 };
 
 //class EButtonGroupRow
@@ -125,6 +125,12 @@ enum ButtonGroupType
 	BGT_HEADER
 };
 
+enum ChildAlignMode
+{
+	ALIGN_VERTICAL,
+	ALIGN_HORIZONTAL,
+	ALIGN_FREE
+};
 
 class EButtonGroup
 {
@@ -228,10 +234,13 @@ public:
 	static void change_style(EButtonGroup* _group, EGUIStyle* _style);
 
 	unsigned int* culling_lines_method		= new unsigned int(CullingLinesCalcMethod::CLCM_BY_PARENT_GROUP);
-	unsigned int* button_group_type		= new unsigned int(ButtonGroupType::BGT_REGULAR);
+	unsigned int* button_group_type			= new unsigned int(ButtonGroupType::BGT_REGULAR);
 
-	unsigned int* gabarite_size_mode_x		= new unsigned int(GroupStretchMode::CONSTANT);
-	unsigned int* gabarite_size_mode_y		= new unsigned int(GroupStretchMode::CONSTANT);
+	//unsigned int* gabarite_size_mode_x		= new unsigned int(GroupStretchMode::CONSTANT);
+	//unsigned int* gabarite_size_mode_y		= new unsigned int(GroupStretchMode::CONSTANT);
+
+	unsigned int* stretch_mode				= new unsigned int(GroupStretchMode::CONSTANT);
+	unsigned int* child_align_mode			= new unsigned int(ChildAlignMode::ALIGN_VERTICAL);
 
 	//static EButtonGroup* focused_button_group;
 
@@ -249,6 +258,8 @@ public:
 	bool* force_new_line = new bool(false);
 
 	EButtonGroup* add_group(EButtonGroup* _new_group);
+
+
 
 };
 
