@@ -129,13 +129,11 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	
 	if (*data_bar->max_value > 0.0f)
 	{
-
-
-		*_entity->disable_draw = false;
+		//*_entity->disable_draw = false;
 	}
 	else
 	{
-		*_entity->disable_draw = true;
+		//*_entity->disable_draw = true;
 	}
 
 	if
@@ -363,11 +361,7 @@ void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomDat
 	for (EWindow* window : EWindow::window_list)
 	for (EButtonGroup* group:window->group_list)
 	{
-		EButtonGroup::change_style
-		(
-			group,
-			((EntityButton*)_entity)->parent_button_group->selected_style
-		);
+		EButtonGroup::change_style (group,((EntityButton*)_entity)->parent_button_group->selected_style);
 	}
 }
 

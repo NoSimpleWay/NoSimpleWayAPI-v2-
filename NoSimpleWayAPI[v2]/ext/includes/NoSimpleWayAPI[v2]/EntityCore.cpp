@@ -584,9 +584,9 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 	//	current_height_percent
 	//);
 
-	*_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y
-	=
-	*_style->slider_inactive->main_texture->size_y_in_pixels;
+	*_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = *_style->slider_inactive->main_texture->size_x_in_pixels;
+
+	*_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = *_style->slider_inactive->main_texture->size_y_in_pixels;
 
 	*_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->offset_y
 	=
@@ -608,6 +608,7 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 
 
 	//change button gabarites size y
+	*_but->button_gabarite->size_x = *_style->slider_inactive->main_texture->size_x_in_pixels;
 	*_but->button_gabarite->size_y = *_style->slider_inactive->main_texture->size_y_in_pixels;
 
 	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 0)->set_texture_gabarite(_style->slider_inactive->main_texture);

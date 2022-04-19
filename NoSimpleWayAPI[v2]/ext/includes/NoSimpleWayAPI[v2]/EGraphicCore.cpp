@@ -603,9 +603,11 @@ void NS_EGraphicCore::create_styles()
 
 	//*******************************
 	//dark spruce
-	just_created_style = new EGUIStyle("dark_spruce");
+		just_created_style = new EGUIStyle("dark_spruce");
 		//***********************************************************
 		//main gutton group
+		just_created_style->set_color_multiplier(0.9f, 0.85f, 0.8f, 1.0f);
+
 		jc_brick = new EBrickStyle("Group_bg");
 		just_created_style->button_group_main = jc_brick;
 		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
@@ -858,7 +860,7 @@ void NS_EGraphicCore::create_styles()
 		EGUIStyle::style_list.push_back(just_created_style);
 
 		//###########################################################
-		//MODERN
+	//MODERN
 		just_created_style = new EGUIStyle("modern");
 		//***********************************************************
 		//main gutton group
@@ -888,8 +890,8 @@ void NS_EGraphicCore::create_styles()
 		just_created_style->slider_bg = jc_brick;
 		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
-		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 0.0f, 0.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 0.0f, 0.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
 		//***********************************************************
@@ -898,8 +900,8 @@ void NS_EGraphicCore::create_styles()
 		just_created_style->slider_inactive = jc_brick;
 		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
 		//***********************************************************
@@ -908,8 +910,8 @@ void NS_EGraphicCore::create_styles()
 		just_created_style->slider_active = jc_brick;
 		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
 		//***********************************************************

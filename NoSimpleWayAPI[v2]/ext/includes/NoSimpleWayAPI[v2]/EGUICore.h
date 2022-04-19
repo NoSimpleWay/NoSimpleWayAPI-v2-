@@ -183,11 +183,18 @@ public:
 	void update(float _d);
 	void draw();
 
-		void realign_all_buttons();
-		void align_and_stretch_row();
-		static void calculate_culling_lines(EButtonGroup* _group);
-		static void generate_vertex_buffer_for_group(EButtonGroup* _group);
+		
+		void substretch_groups_y();
+		void check_slider();
+
+		void group_stretch_x();
+		void group_stretch_y();
+
 		void align_groups();
+		static void calculate_culling_lines(EButtonGroup* _group);
+		void realign_all_buttons();
+		static void generate_vertex_buffer_for_group(EButtonGroup* _group);
+		
 
 		static void refresh_button_group(EButtonGroup* _group);
 
@@ -255,7 +262,15 @@ public:
 	bool* can_be_focused = new bool(true);
 	bool* is_active = new bool(true);
 
-	bool* force_new_line = new bool(false);
+	bool* force_new_line					= new bool(false);
+	bool* parent_have_slider				= new bool(false);
+	bool* need_redraw						= new bool(false);
+	bool* can_be_stretched_by_child			= new bool(false);
+
+	bool* stretch_x_by_parent_size			= new bool(false);
+	bool* stretch_y_by_parent_size			= new bool(false);
+
+	bool* have_slider						= new bool(false);
 
 	EButtonGroup* add_group(EButtonGroup* _new_group);
 
