@@ -849,7 +849,7 @@ void EClickableArea::update(float _d)
 
 void EClickableArea::draw()
 {
-	if ((parent_custom_data != nullptr)&&(*parent_custom_data->is_second_pass)) { EInputCore::logger_simple_info("idiot?"); }
+	//if ((parent_custom_data != nullptr)&&(*parent_custom_data->is_second_pass)) { EInputCore::logger_simple_info("idiot?"); }
 	if (!sprite_layer_list.empty())
 	{
 		for (ESpriteLayer* s_layer : sprite_layer_list)
@@ -1007,7 +1007,7 @@ void EClickableArea::draw()
 
 	if (text_area != nullptr)
 	{
-		if (*parent_custom_data->is_second_pass) { EInputCore::logger_simple_info(*text_area->stored_text); }
+		//if (*parent_custom_data->is_second_pass) { EInputCore::logger_simple_info(*text_area->stored_text); }
 
 		text_area->draw();
 	}
@@ -1220,27 +1220,29 @@ void ECustomData::draw()//(if (but->description_data != nullptr) { but->descript
 void ECustomData::draw_second_pass()
 {
 
-	if (*is_second_pass)
-	{
-		EInputCore::logger_simple_info("draw second pass");
-	}
-	else
-	{
-		//EInputCore::logger_simple_info("you drunk?");
-	}
+	//if (*is_second_pass)
+	//{
+	//	EInputCore::logger_simple_info("draw second pass");
+	//}
+	//else
+	//{
+	//	EInputCore::logger_simple_info("you drunk?");
+	//}
 
-	//if ((!*disable_draw) && (*is_second_pass))
+	//std::cout << std::endl;
+
+	if ((!*disable_draw) && (*is_second_pass))
 	{
 		
-		if (*is_second_pass)
-		{
-			EInputCore::logger_simple_info("draw custom data");
-		}
-	/*	for (data_action_pointer dap : actions_on_draw)
+		//if (*is_second_pass)
+		//{
+		//	EInputCore::logger_simple_info("draw custom data");
+		//}
+		for (data_action_pointer dap : actions_on_draw)
 			if (dap != nullptr)
 			{
 				dap(parent_entity, this, 0.1f);
-			}*/
+			}
 
 		for (EClickableArea* clickable_area : clickable_area_list)
 		if (clickable_area != nullptr)

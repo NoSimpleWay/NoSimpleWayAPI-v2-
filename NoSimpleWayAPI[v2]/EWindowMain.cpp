@@ -97,7 +97,7 @@ EWindowMain::EWindowMain()
 
 
 	main_button_group = EButtonGroup::create_root_button_group(new ERegionGabarite(100.0f, 0.0f, 0.0f, 800.0f, 600.0f), EGUIStyle::active_style);
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 1; i++)
 	{
 		jc_button_group = main_button_group->add_group
 		(
@@ -107,7 +107,17 @@ EWindowMain::EWindowMain()
 				EGUIStyle::active_style
 			)
 		);
-		*jc_button_group->stretch_mode = GroupStretchMode::CONSTANT;
+		//*jc_button_group->stretch_mode = GroupStretchMode::CONSTANT;
+		*jc_button_group->stretch_x_by_parent_size = true;
+
+		jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(30.0f, 30.0f), jc_button_group, nullptr);
+		jc_button_group->button_list.push_back(jc_button);
+		*(jc_button->custom_data_list.at(0)->is_second_pass) = false;
+
+		jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(30.0f, 30.0f), jc_button_group, nullptr);
+		jc_button_group->button_list.push_back(jc_button);
+		jc_button->add_description("123");
+		*(jc_button->custom_data_list.at(1)->is_second_pass) = true;
 	}
 	//group_list.push_back(main_button_group);
 	//EButtonGroup::refresh_button_group(main_button_group);
@@ -350,10 +360,12 @@ EWindowMain::EWindowMain()
 					
 					group_for_items->button_list.push_back(jc_button);
 
+					int selected_data_entity = rand() % EDataEntity::data_entity_list.size();
+
 					ETextureGabarite* item_icon
 					=
 					NS_EGraphicCore::default_texture_load
-					("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_list[rand() % EDataEntity::data_entity_list.size()]));
+					("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_list[selected_data_entity]));
 
 					if (item_icon != nullptr)
 					{
@@ -375,7 +387,9 @@ EWindowMain::EWindowMain()
 						);
 					}
 
-					jc_button->add_description("123");
+					//jc_button->add_description("123");
+					jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", EDataEntity::data_entity_list[selected_data_entity]));
+					
 					//add 2nd layer (icon)
 					//if (DataEntityUtils::get_tag_value_by_name(0, "icon path", data_entity) != "")
 					

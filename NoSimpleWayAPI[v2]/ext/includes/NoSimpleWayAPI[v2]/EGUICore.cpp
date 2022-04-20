@@ -54,23 +54,6 @@ void EWindow::GUI_draw_default(float _d)
 	if ((b_group != nullptr) && (*b_group->is_active))
 	{
 		b_group->draw();
-
-		for (EntityButton* but : b_group->button_list)
-		if
-		(
-			(*but->world_position_y + *but->button_gabarite->size_y >= *b_group->lower_culling_line)
-			&&
-			(*but->world_position_y <= *b_group->higher_culling_line)
-		)
-		{but->draw_second_pass();}
-
-
-	}
-
-	for (EButtonGroup* b_group : group_list)
-	if ((b_group != nullptr) && (*b_group->is_active))
-	{
-		
 	}
 }
 
@@ -80,16 +63,21 @@ void EWindow::GUI_draw_additional(float _d)
 
 void EWindow::GUI_draw_second_pass(float _d)
 {	
-	glDisable(GL_SCISSOR_TEST);
+	//glDisable(GL_SCISSOR_TEST);
+
+	//for (EButtonGroup* b_group : group_list)
+	//{
+	//	b_group->draw_second_pass();
+
+	//	if (b_group->header_button_group != nullptr)
+	//	{b_group->header_button_group->draw_second_pass();}
+	//}
 
 	for (EButtonGroup* b_group : group_list)
+	if ((b_group != nullptr) && (*b_group->is_active))
 	{
 		b_group->draw_second_pass();
-
-		if (b_group->header_button_group != nullptr)
-		{b_group->header_button_group->draw_second_pass();}
 	}
-
 
 }
 
@@ -376,6 +364,8 @@ void EButtonGroup::draw_second_pass()
 	{
 		but->draw_second_pass();
 	}
+
+	for (EButtonGroup* group : group_list) { group->draw_second_pass(); }
 }
 
 void EButtonGroup::align_groups()

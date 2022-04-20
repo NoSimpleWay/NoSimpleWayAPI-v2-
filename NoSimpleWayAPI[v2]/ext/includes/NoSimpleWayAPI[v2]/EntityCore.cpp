@@ -33,7 +33,6 @@ void Entity::draw_second_pass()
 {
 	if (!*disable_draw)
 	{
-
 		//custom data store clickable regions and text
 		if (!custom_data_list.empty())
 		{
@@ -41,6 +40,11 @@ void Entity::draw_second_pass()
 				if (c_data != nullptr) { c_data->draw_second_pass(); }
 		}
 	}
+	else
+	{
+		//EInputCore::logger_simple_info("scond pass entity disabled draw");
+	}
+
 }
 
 void Entity::generate_vertex_buffer_for_all_sprite_layers()
@@ -507,11 +511,11 @@ void EntityButton::add_description(std::string _text)
 		new ERegionGabarite
 		(
 			3.0f,
-			-17.0f,
+			-10.0f,
 			0.0f,
 
-			80.0f,
-			20.0f
+			120.0f,
+			40.0f
 		),
 		this,
 		jc_data
@@ -522,8 +526,14 @@ void EntityButton::add_description(std::string _text)
 		jc_clickable_area
 		,
 		EFont::font_list[0],
-		"Description"
+		_text//"Description"
 	);
+
+	jc_text->offset_border[BorderSide::LEFT] = 5.0f;
+	jc_text->offset_border[BorderSide::RIGHT] = 5.0f;
+	*jc_text->offset_by_gabarite_size_x = 0.05f;
+	*jc_text->offset_by_text_size_x = 0.00f;
+	jc_text->change_text(_text);
 
 	jc_text->generate_rows();
 	jc_text->generate_text();
