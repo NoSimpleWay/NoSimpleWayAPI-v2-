@@ -13,7 +13,7 @@ void Entity::draw()
 {
 	if (!*disable_draw)
 	{
-		transfer_all_vertex_buffers_to_batcher();
+		{transfer_all_vertex_buffers_to_batcher();}
 
 		//custom data store clickable regions and text
 		if (!custom_data_list.empty())
@@ -27,6 +27,20 @@ void Entity::draw()
 	//{
 	//	custom_data->draw();
 	//}
+}
+
+void Entity::draw_second_pass()
+{
+	if (!*disable_draw)
+	{
+
+		//custom data store clickable regions and text
+		if (!custom_data_list.empty())
+		{
+			for (ECustomData* c_data : custom_data_list)
+				if (c_data != nullptr) { c_data->draw_second_pass(); }
+		}
+	}
 }
 
 void Entity::generate_vertex_buffer_for_all_sprite_layers()
@@ -444,6 +458,7 @@ EntityButton* EntityButton::create_default_button_with_custom_data(ERegionGabari
 	ECustomData*	jc_custom_data					= new ECustomData();
 					jc_custom_data->parent_entity	= jc_button;
 
+					//*jc_custom_data->is_second_pass = true;
 	jc_button->custom_data_list.push_back(jc_custom_data);
 
 	return jc_button;
@@ -475,6 +490,69 @@ EntityButton* EntityButton::create_default_clickable_button(ERegionGabarite* _re
 bool EntityButton::can_get_access_to_style()
 {
 	return false;
+}
+
+void EntityButton::add_description(std::string _text)
+{
+	ECustomData*		jc_data				= new ECustomData();
+	*jc_data->is_second_pass = true;
+
+	jc_data->actions_on_update.push_back(&EDataActionCollection::action_switch_description);
+	jc_data->parent_entity = this;
+	*jc_data->disable_draw = true;
+
+	EClickableArea*		jc_clickable_area	=
+	EClickableArea::create_default_clickable_region
+	(
+		new ERegionGabarite
+		(
+			3.0f,
+			-17.0f,
+			0.0f,
+
+			80.0f,
+			20.0f
+		),
+		this,
+		jc_data
+	);
+
+	ETextArea* jc_text = ETextArea::create_centered_text_area
+	(
+		jc_clickable_area
+		,
+		EFont::font_list[0],
+		"Description"
+	);
+
+	jc_text->generate_rows();
+	jc_text->generate_text();
+
+	jc_data->clickable_area_list.push_back(jc_clickable_area);
+	jc_clickable_area->text_area = jc_text;
+	jc_clickable_area->sprite_layer_list.push_back(ESpriteLayer::create_default_sprite_layer(nullptr));
+
+
+	NS_ERenderCollection::set_brick_borders_and_subdivisions
+	(
+		*parent_button_group->selected_style->button_bg->side_size_left,
+		*parent_button_group->selected_style->button_bg->side_size_right,
+		*parent_button_group->selected_style->button_bg->side_size_bottom,
+		*parent_button_group->selected_style->button_bg->side_size_up,
+
+		*parent_button_group->selected_style->button_bg->subdivision_x,
+		*parent_button_group->selected_style->button_bg->subdivision_y
+	);
+
+	NS_ERenderCollection::generate_brick_texture
+	(
+		jc_clickable_area->region_gabarite,
+		jc_clickable_area->sprite_layer_list[0],
+		parent_button_group->selected_style->button_bg->main_texture
+	);
+
+
+	custom_data_list.push_back(jc_data);
 }
 
 EntityButton::~EntityButton()

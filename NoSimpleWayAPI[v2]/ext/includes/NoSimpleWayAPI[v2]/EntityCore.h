@@ -57,6 +57,8 @@ public:
 	std::vector<ESpriteLayer*> sprite_layer_list;
 
 	void draw();
+	void draw_second_pass();
+
 	void generate_vertex_buffer_for_all_sprite_layers();
 	void transfer_all_vertex_buffers_to_batcher();
 	void set_world_position(float _x, float _y, float _z);
@@ -149,6 +151,8 @@ public:
 
 	bool can_get_access_to_style();
 
+	//ECustomData* description_data;
+	void add_description(std::string _text);
 
 
 

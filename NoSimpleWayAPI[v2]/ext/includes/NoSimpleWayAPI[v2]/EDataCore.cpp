@@ -353,6 +353,7 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 	
 		);
+
 	}
 }
 
@@ -389,6 +390,19 @@ void EDataActionCollection::action_delete_entity(Entity* _entity, ECustomData* _
 	//}
 
 	//EInputCore::logger_simple_try("set 'need remove' flag");
+}
+
+void EDataActionCollection::action_switch_description(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if (((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
+	{
+		*_custom_data->disable_draw = false;
+	}
+	else
+	{
+		*_custom_data->disable_draw = true;
+	}
+
 }
 
 /*
@@ -835,6 +849,7 @@ void EClickableArea::update(float _d)
 
 void EClickableArea::draw()
 {
+	if ((parent_custom_data != nullptr)&&(*parent_custom_data->is_second_pass)) { EInputCore::logger_simple_info("idiot?"); }
 	if (!sprite_layer_list.empty())
 	{
 		for (ESpriteLayer* s_layer : sprite_layer_list)
@@ -992,6 +1007,8 @@ void EClickableArea::draw()
 
 	if (text_area != nullptr)
 	{
+		if (*parent_custom_data->is_second_pass) { EInputCore::logger_simple_info(*text_area->stored_text); }
+
 		text_area->draw();
 	}
 
@@ -1180,19 +1197,57 @@ ECustomData::~ECustomData()
 
 }
 
-void ECustomData::draw()
+void ECustomData::draw()//(if (but->description_data != nullptr) { but->description_data->draw(); })
 {
-	for (data_action_pointer dap : actions_on_draw)
-	if (dap != nullptr)
+
+
+	if ((!*disable_draw)&&(!*is_second_pass))
 	{
-		dap(parent_entity, this, 0.1f);
+		
+		//if (_second_pass) { EInputCore::logger_simple_info("???"); }
+		for (data_action_pointer dap : actions_on_draw)
+		if (dap != nullptr)
+		{
+			dap(parent_entity, this, 0.1f);
+		}
+
+		for (EClickableArea* clickable_area : clickable_area_list)
+		if (clickable_area != nullptr)
+		{clickable_area->draw();}
+	}
+}
+
+void ECustomData::draw_second_pass()
+{
+
+	if (*is_second_pass)
+	{
+		EInputCore::logger_simple_info("draw second pass");
+	}
+	else
+	{
+		//EInputCore::logger_simple_info("you drunk?");
 	}
 
-	if (!clickable_area_list.empty())
-	for (EClickableArea* clickable_area : clickable_area_list)
-	if (clickable_area != nullptr)
+	//if ((!*disable_draw) && (*is_second_pass))
 	{
-		clickable_area->draw();
+		
+		if (*is_second_pass)
+		{
+			EInputCore::logger_simple_info("draw custom data");
+		}
+	/*	for (data_action_pointer dap : actions_on_draw)
+			if (dap != nullptr)
+			{
+				dap(parent_entity, this, 0.1f);
+			}*/
+
+		for (EClickableArea* clickable_area : clickable_area_list)
+		if (clickable_area != nullptr)
+		{
+			
+			clickable_area->draw();
+		}
 	}
 }
 

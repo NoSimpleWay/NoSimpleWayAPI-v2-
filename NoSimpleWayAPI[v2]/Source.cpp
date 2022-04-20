@@ -131,8 +131,13 @@ int main()
 			w->GUI_draw_default(NS_EGraphicCore::delta_time);
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 
+			//w->GUI_draw_second_pass(NS_EGraphicCore::delta_time);
+			//`NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+
 			w->GUI_draw_additional(NS_EGraphicCore::delta_time);
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+
+
 		}
 		
 		///reset input states

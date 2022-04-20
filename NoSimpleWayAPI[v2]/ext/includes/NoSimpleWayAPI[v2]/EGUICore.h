@@ -57,7 +57,7 @@ public:
 	virtual void	GUI_draw_additional(float _d);
 
 	std::vector<EButtonGroup*> group_list;
-
+	void			GUI_draw_second_pass(float _d);
 
 	//////////////		_STATIC SECTION_		////////////////////////
 
@@ -182,6 +182,7 @@ public:
 
 	void update(float _d);
 	void draw();
+	void draw_second_pass();
 
 		
 		void substretch_groups_y();

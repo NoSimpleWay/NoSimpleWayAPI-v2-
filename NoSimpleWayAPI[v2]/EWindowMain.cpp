@@ -375,6 +375,7 @@ EWindowMain::EWindowMain()
 						);
 					}
 
+					jc_button->add_description("123");
 					//add 2nd layer (icon)
 					//if (DataEntityUtils::get_tag_value_by_name(0, "icon path", data_entity) != "")
 					

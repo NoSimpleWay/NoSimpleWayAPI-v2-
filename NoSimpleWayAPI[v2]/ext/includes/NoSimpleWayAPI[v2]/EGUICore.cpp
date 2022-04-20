@@ -54,11 +54,43 @@ void EWindow::GUI_draw_default(float _d)
 	if ((b_group != nullptr) && (*b_group->is_active))
 	{
 		b_group->draw();
+
+		for (EntityButton* but : b_group->button_list)
+		if
+		(
+			(*but->world_position_y + *but->button_gabarite->size_y >= *b_group->lower_culling_line)
+			&&
+			(*but->world_position_y <= *b_group->higher_culling_line)
+		)
+		{but->draw_second_pass();}
+
+
+	}
+
+	for (EButtonGroup* b_group : group_list)
+	if ((b_group != nullptr) && (*b_group->is_active))
+	{
+		
 	}
 }
 
 void EWindow::GUI_draw_additional(float _d)
 {
+}
+
+void EWindow::GUI_draw_second_pass(float _d)
+{	
+	glDisable(GL_SCISSOR_TEST);
+
+	for (EButtonGroup* b_group : group_list)
+	{
+		b_group->draw_second_pass();
+
+		if (b_group->header_button_group != nullptr)
+		{b_group->header_button_group->draw_second_pass();}
+	}
+
+
 }
 
 EButtonGroup::EButtonGroup(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y)
@@ -236,20 +268,17 @@ void EButtonGroup::draw()
 	)
 	{but->draw();}
 
+
+
+
 	//recursive draw
 
 
-		for (EButtonGroup* group : group_list){group->draw();}
+	for (EButtonGroup* group : group_list){group->draw();}
 
 
 
 	//draw call to prepare for header
-	batcher_for_default_draw->draw_call();
-
-
-
-
-	//reset scissor
 	batcher_for_default_draw->draw_call();
 
 
@@ -328,10 +357,25 @@ void EButtonGroup::draw()
 	batcher_for_default_draw->draw_call();
 
 	if (header_button_group != nullptr)
-	{
-		header_button_group->draw();
-	}
+	{header_button_group->draw();}
 
+
+}
+
+void EButtonGroup::draw_second_pass()
+{
+	
+
+	for (EntityButton* but : button_list)
+	if
+	(
+		(*but->world_position_y + *but->button_gabarite->size_y >= *lower_culling_line)
+		&&
+		(*but->world_position_y <= *higher_culling_line)
+	)
+	{
+		but->draw_second_pass();
+	}
 }
 
 void EButtonGroup::align_groups()

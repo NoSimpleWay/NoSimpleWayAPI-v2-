@@ -59,6 +59,8 @@ public:
 	
 
 	void draw();
+	void draw_second_pass();
+
 	void update(float _d);
 	void translate_custom_data(float _x, float _y, float _z, bool _move_offset);
 
@@ -66,6 +68,9 @@ public:
 	ESpriteLayer*	get_sprite_layer_by_id	(unsigned int _clickable_region_id, unsigned int _sprite_layer_id);
 	ESpriteFrame*	get_sprite_frame_by_id	(unsigned int _clickable_region_id, unsigned int _sprite_layer_id, unsigned int _frame_id);
 	//std::vector<void (*)(Entity*, ECustomData*)> data_actions_list;
+
+	bool* is_second_pass	= new bool(false);
+	bool* disable_draw		= new bool(false);
 };
 
 class ERegionGabarite
@@ -143,7 +148,7 @@ public:
 	bool* have_rama				= new bool (true);
 	bool* any_visual_changes	= new bool (true);
 
-	//bool* editable_borders		= new bool(false);
+	//bool* editable_borders	= new bool(false);
 	bool* can_catch_side		= new bool[_CRS_SIDE_LAST_ELEMENT]{false};
 
 	float* catch_offset_x		= new float (0.0f);
@@ -209,6 +214,8 @@ namespace EDataActionCollection
 	void action_close_root_group			(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_delete_entity				(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_switch_description			(Entity* _entity, ECustomData* _custom_data, float _d);
 }
 
 enum ActiveParserMode
