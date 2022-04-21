@@ -122,11 +122,11 @@ namespace NS_EGraphicCore
 	extern GLFWwindow* main_window;
 
 	extern unsigned int		texture[32];
-	extern ETextureAtlas* default_texture_atlas;
-	extern unsigned char* image_data;
-	extern unsigned char* zalupa;
+	extern ETextureAtlas*	default_texture_atlas;
+	extern unsigned char*	image_data;
+	extern unsigned char*	zalupa;
 	extern int				texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
-	extern ETextureAtlas* default_texture_atlas;
+	//extern ETextureAtlas*	default_texture_atlas;
 	extern float			delta_time;
 	extern float			saved_time_for_delta;
 
@@ -144,6 +144,7 @@ namespace NS_EGraphicCore
 	extern void initiate_graphic_core();
 
 	extern void load_texture(char const* _path, int _id);
+
 	extern ETextureGabarite* put_texture_to_atlas(std::string _name, ETextureAtlas* _atlas);
 	extern ETextureGabarite* default_texture_load(std::string _name);
 	extern ETextureGabarite* load_style_texture(EGUIStyle* _style, EBrickStyle* _brick);

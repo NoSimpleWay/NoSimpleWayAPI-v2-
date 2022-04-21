@@ -13,6 +13,7 @@ namespace NS_EGraphicCore
 
 	ERenderBatcher* default_batcher_for_texture_atlas;
 	ERenderBatcher* default_batcher_for_drawing;
+	ERenderBatcher* pbr_batcher;
 
 	GLFWwindow* main_window;
 
@@ -376,10 +377,20 @@ void NS_EGraphicCore::switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas)
 	//glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	//glClear(GL_COLOR_BUFFER_BIT);
 
-	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	glBlendEquation(GL_MAX);
+	//glEnable(GL_BLEND);
+	//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	//glBlendEquation(GL_MAX);
 
+	//back blend mode
+	glEnable(GL_BLEND);
+	glBlendFuncSeparate(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA, GL_ONE);
+	glBlendEquation(GL_FUNC_ADD);
+
+	//normal blend mode
+	//glEnable(GL_BLEND);
+	//glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, GL_ONE_MINUS_DST_ALPHA, GL_ONE);
+	//glBlendEquation(GL_FUNC_ADD);
+		
 	make_transform_from_size(NS_EGraphicCore::default_batcher_for_texture_atlas, _atlas->get_atlas_size_x(), _atlas->get_atlas_size_y());
 
 	glActiveTexture(GL_TEXTURE0);
@@ -484,15 +495,27 @@ void NS_EGraphicCore::initiate_graphic_core()
 	default_batcher_for_drawing = new ERenderBatcher();
 	default_batcher_for_drawing->set_total_attribute_count(8);		//[x][y][r][g][b][a][u][v]
 
-	default_batcher_for_drawing->register_new_vertex_attribute(2);	//position	1[x]	2[y]	#	#
-	default_batcher_for_drawing->register_new_vertex_attribute(4);	//color		1[r]	2[g]	3[b]	4[a]
-	default_batcher_for_drawing->register_new_vertex_attribute(2);	//uv texture	1[u]	2[v]	#	#
-
-	//total
-	//[0][32][64][96][128][164]===164 bits(32 bytes) per vertex ===32*4 (128) bytes per shape
-	//[x][y][r][g][b][a][u][v]
+	default_batcher_for_drawing->register_new_vertex_attribute(2);	//position		1[x]	2[y]	#		#
+	default_batcher_for_drawing->register_new_vertex_attribute(4);	//color			1[r]	2[g]	3[b]	4[a]
+	default_batcher_for_drawing->register_new_vertex_attribute(2);	//uv texture	1[u]	2[v]	#		#
 
 	default_batcher_for_drawing->set_shader(new Shader("data/#default.vs", "data/#default.fs"));
+	//total
+	//8 floats, * 4 byte(per float) = 32 byte per vertex ===32*4 (128) bytes per shape
+	//[x][y][r][g][b][a][u][v]
+
+	pbr_batcher = new ERenderBatcher();								//|1 |2 |3 |4 |5 |6 |7 |8 |9 |10|11|12|13|
+	pbr_batcher->set_total_attribute_count(13);		//[x][y][z][r][g][b][a][u][v][u][v][u][v]
+
+	pbr_batcher->register_new_vertex_attribute(3);	//position			1[x]	2[y]	3[z]	#
+	pbr_batcher->register_new_vertex_attribute(4);	//color				1[r]	2[g]	3[b]	4[a]
+	pbr_batcher->register_new_vertex_attribute(2);	//uv texture		1[u]	2[v]	#		#
+	pbr_batcher->register_new_vertex_attribute(2);	//reflection		1[u]	2[v]	#		#
+	pbr_batcher->register_new_vertex_attribute(2);	//normal gloss map	1[u]	2[v]	#		#
+	//total
+	//13 floats, * 4 byte(per float) = 32 byte per vertex ===32*4 (128) bytes per shape
+
+
 
 	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 	recalculate_correction();
