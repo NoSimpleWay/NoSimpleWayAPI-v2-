@@ -755,7 +755,7 @@ void NS_EGraphicCore::create_styles()
 		EGUIStyle::style_list.push_back(just_created_style);
 
 		//###########################################################
-			//STONE CASTLE
+		//STONE CASTLE
 		just_created_style = new EGUIStyle("stone_castle");
 		//***********************************************************
 		//main gutton group
@@ -763,9 +763,9 @@ void NS_EGraphicCore::create_styles()
 		just_created_style->button_group_main = jc_brick;
 		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-		EBrickStyle::set_border_size(jc_brick, 11.0f, 11.0f, 11.0f, 18.0f);
-		EBrickStyle::set_offset_size(jc_brick, 8.0f, 8.0f, 8.0f, 15.0f);
-		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
+		EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 2, 0);
 
 		//***********************************************************
 		//darken gutton group
