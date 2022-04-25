@@ -7,9 +7,9 @@ namespace NS_EGraphicCore
 {
 	int							SCREEN_WIDTH = 800, SCREEN_HEIGHT = 600;
 	float						correction_x = 1.0f, correction_y = 1.0f;
-	Shader* shader_texture_atlas_putter;
+	Shader*						shader_texture_atlas_putter;
 
-	glm::mat4						matrix_transform_default;
+	glm::mat4					matrix_transform_default;
 
 	ERenderBatcher* default_batcher_for_texture_atlas;
 	ERenderBatcher* default_batcher_for_drawing;
@@ -322,7 +322,7 @@ unsigned short ETextureAtlas::get_colorbuffer()
 	return *colorbuffer;
 }
 
-ETextureAtlas::ETextureAtlas(float _size_x, float _size_y, int _color_depth, int _byte_mode)
+ETextureAtlas::ETextureAtlas(int _size_x, int _size_y, int _color_depth, int _byte_mode)
 {
 	*atlas_size_x = _size_x;
 	*atlas_size_y = _size_y;
@@ -382,21 +382,21 @@ void NS_EGraphicCore::switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas)
 	//glBlendEquation(GL_MAX);
 
 	//back blend mode
-	glEnable(GL_BLEND);
-	glBlendFuncSeparate(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA, GL_ONE);
-	glBlendEquation(GL_FUNC_ADD);
+	//glEnable(GL_BLEND);
+	//glBlendFuncSeparate(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA, GL_ONE);
+	//glBlendEquation(GL_FUNC_ADD);
 
 	//normal blend mode
 	//glEnable(GL_BLEND);
 	//glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, GL_ONE_MINUS_DST_ALPHA, GL_ONE);
 	//glBlendEquation(GL_FUNC_ADD);
 		
-	make_transform_from_size(NS_EGraphicCore::default_batcher_for_texture_atlas, _atlas->get_atlas_size_x(), _atlas->get_atlas_size_y());
+	//make_transform_from_size(NS_EGraphicCore::default_batcher_for_texture_atlas, _atlas->get_atlas_size_x(), _atlas->get_atlas_size_y());
 
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::texture[0]);
 
-	default_batcher_for_texture_atlas->set_active_color(NS_EColorUtils::COLOR_WHITE);
+	//default_batcher_for_texture_atlas->set_active_color(NS_EColorUtils::COLOR_WHITE);
 }
 
 void NS_EGraphicCore::make_transform_from_size(ERenderBatcher* _batcher, float _size_x, float _size_y)
@@ -406,6 +406,16 @@ void NS_EGraphicCore::make_transform_from_size(ERenderBatcher* _batcher, float _
 	NS_EGraphicCore::matrix_transform_default = glm::scale(NS_EGraphicCore::matrix_transform_default, glm::vec3(1.0f / _size_x * 2.0f, 1.0f / _size_y * 2.0f, 1.0f));
 
 
+}
+
+void NS_EGraphicCore::switch_to_this_FBO(ETextureAtlas* _atlas)
+{
+	NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
+	glViewport(0, 0, _atlas->get_atlas_size_x(), _atlas->get_atlas_size_y());
+	glBindFramebuffer(GL_FRAMEBUFFER, _atlas->get_framebuffer());
+
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::texture[0]);
 }
 
 //void EGraphicCore::make_transform_from_size(glm::mat4 _transform)
@@ -466,6 +476,11 @@ void NS_EGraphicCore::initiate_graphic_core()
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
 	glDisable(GL_DEPTH_TEST);
 	glBlendEquation(GL_FUNC_ADD);
+
+	for (int i = 0; i < texture_reflection_levels; i++)
+	{
+		NS_EGraphicCore::default_texture_atlas = new ETextureAtlas(2048 / (i + 1), 1024 / (i + 1));
+	}
 
 	NS_EGraphicCore::default_texture_atlas = new ETextureAtlas(4096, 4096);
 	NS_EGraphicCore::load_texture("data/textures/white_pixel.png", 0);
@@ -565,8 +580,8 @@ void NS_EGraphicCore::create_styles()
 		just_created_style->button_group_main = jc_brick;
 		jc_brick->main_texture = NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-		EBrickStyle::set_border_size		(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
-		EBrickStyle::set_offset_size		(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
+		EBrickStyle::set_border_size		(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size		(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
 		EBrickStyle::set_subdivisions		(jc_brick, 2, 2);
 
 		//***********************************************************
@@ -1224,6 +1239,10 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 
 	if (duplicate_gabarite == nullptr)
 	{
+		glEnable(GL_BLEND);
+		glBlendFuncSeparate(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA, GL_ONE);
+		glBlendEquation(GL_FUNC_ADD);
+
 		NS_EGraphicCore::switch_to_texture_atlas_draw_mode(_atlas);
 
 		NS_EGraphicCore::load_texture(_full_path.c_str(), 0);

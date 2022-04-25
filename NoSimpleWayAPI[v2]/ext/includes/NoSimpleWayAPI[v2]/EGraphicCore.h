@@ -109,20 +109,25 @@ namespace NS_ERenderCollection
 	extern void generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite);
 }
 
+const int texture_reflection_levels = 5;
+
 namespace NS_EGraphicCore
 {
-	extern int			SCREEN_WIDTH, SCREEN_HEIGHT;
+	extern int				SCREEN_WIDTH, SCREEN_HEIGHT;
 	extern float			correction_x, correction_y;
-	extern Shader* shader_texture_atlas_putter;
+	extern Shader*			shader_texture_atlas_putter;
 
 	extern glm::mat4		matrix_transform_default;
 	extern ERenderBatcher* default_batcher_for_texture_atlas;
 	extern ERenderBatcher* default_batcher_for_drawing;
 
-	extern GLFWwindow* main_window;
+	extern GLFWwindow*		main_window;
 
 	extern unsigned int		texture[32];
+
 	extern ETextureAtlas*	default_texture_atlas;
+	extern ETextureAtlas*	reflection_texture[texture_reflection_levels];
+
 	extern unsigned char*	image_data;
 	extern unsigned char*	zalupa;
 	extern int				texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
@@ -130,7 +135,7 @@ namespace NS_EGraphicCore
 	extern float			delta_time;
 	extern float			saved_time_for_delta;
 
-	extern				std::vector<ETextureGabarite*> texture_gabarites_list;
+	extern					std::vector<ETextureGabarite*> texture_gabarites_list;
 
 	extern void processInput(GLFWwindow* window);
 
@@ -139,6 +144,7 @@ namespace NS_EGraphicCore
 
 	extern void switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas);
 	extern void make_transform_from_size(ERenderBatcher* _batcher, float _size_x, float _size_y);
+	extern void switch_to_this_FBO(ETextureAtlas* _atlas);
 	//void load_texture(char const* _path, int _id);
 
 	extern void initiate_graphic_core();
@@ -291,7 +297,7 @@ public:
 	unsigned short get_framebuffer();
 	unsigned short get_colorbuffer();
 
-	ETextureAtlas(float _size_x, float _size_y, int _color_depth = GL_RGBA, int _byte_mode = GL_UNSIGNED_BYTE);
+	ETextureAtlas(int _size_x, int _size_y, int _color_depth = GL_RGBA, int _byte_mode = GL_UNSIGNED_BYTE);
 	~ETextureAtlas();
 
 	bool** free_space;
