@@ -14,6 +14,7 @@ namespace NS_EGraphicCore
 	ERenderBatcher* default_batcher_for_texture_atlas;
 	ERenderBatcher* default_batcher_for_drawing;
 	ERenderBatcher* pbr_batcher;
+	ERenderBatcher* skydome_batcher;
 
 	GLFWwindow* main_window;
 
@@ -519,7 +520,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	//8 floats, * 4 byte(per float) = 32 byte per vertex ===32*4 (128) bytes per shape
 	//[x][y][r][g][b][a][u][v]
 
-	pbr_batcher = new ERenderBatcher();								//|1 |2 |3 |4 |5 |6 |7 |8 |9 |10|11|12|13|
+	pbr_batcher = new ERenderBatcher();				//|1 |2 |3 |4 |5 |6 |7 |8 |9 |10|11|12|13|
 	pbr_batcher->set_total_attribute_count(13);		//[x][y][z][r][g][b][a][u][v][u][v][u][v]
 
 	pbr_batcher->register_new_vertex_attribute(3);	//position			1[x]	2[y]	3[z]	#
@@ -527,10 +528,21 @@ void NS_EGraphicCore::initiate_graphic_core()
 	pbr_batcher->register_new_vertex_attribute(2);	//uv texture		1[u]	2[v]	#		#
 	pbr_batcher->register_new_vertex_attribute(2);	//reflection		1[u]	2[v]	#		#
 	pbr_batcher->register_new_vertex_attribute(2);	//normal gloss map	1[u]	2[v]	#		#
+
+	pbr_batcher->set_shader(new Shader("data/#default.vs", "data/#default.fs"));
 	//total
 	//13 floats, * 4 byte(per float) = 32 byte per vertex ===32*4 (128) bytes per shape
 
 
+	//pbr_skydbatcher = new ERenderBatcher();			//|1 |2 |3 |4 |5 |6 |7 |8 |9 |10|11|12|13|
+	skydome_batcher = new ERenderBatcher();				//|1 |2 |3 |4 |5 |6 |7 |8 |9 |10|11|12|13|
+	skydome_batcher->set_total_attribute_count(8);		//[x][y][z][r][g][b][a][u][v][u][v][u][v]
+
+	skydome_batcher->register_new_vertex_attribute(2);	//position			1[x]	2[y]	#		#
+	skydome_batcher->register_new_vertex_attribute(4);	//color				1[r]	2[g]	3[b]	4[a]
+	skydome_batcher->register_new_vertex_attribute(2);	//uv texture		1[u]	2[v]	#		#
+
+	skydome_batcher->set_shader(new Shader("data/simple_blur.vs", "data/simple_blur.fs"));
 
 	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 	recalculate_correction();

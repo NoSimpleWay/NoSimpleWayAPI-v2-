@@ -118,8 +118,12 @@ namespace NS_EGraphicCore
 	extern Shader*			shader_texture_atlas_putter;
 
 	extern glm::mat4		matrix_transform_default;
+
+	//batchers
 	extern ERenderBatcher* default_batcher_for_texture_atlas;
 	extern ERenderBatcher* default_batcher_for_drawing;
+	extern ERenderBatcher* pbr_batcher;
+	extern ERenderBatcher* skydome_batcher;
 
 	extern GLFWwindow*		main_window;
 
