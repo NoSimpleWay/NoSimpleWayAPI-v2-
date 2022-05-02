@@ -199,7 +199,7 @@ void EFont::load_font_littera(std::string _path)
 					sub_data += line.at(i);
 				}
 			}
-			if (show_console_info) { std::cout << std::endl; }
+			//if (show_console_info) { std::cout << std::endl; }
 
 			font_array_id++;
 		}

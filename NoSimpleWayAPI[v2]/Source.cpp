@@ -130,9 +130,11 @@ int main()
 
 			w->GUI_draw_default(NS_EGraphicCore::delta_time);
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+			//NS_EGraphicCore::pbr_batcher->draw_call();
 
 			w->GUI_draw_additional(NS_EGraphicCore::delta_time);
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+			//NS_EGraphicCore::pbr_batcher->draw_call();
 		}
 		
 		for (EWindow* w : EWindow::window_list)
@@ -141,6 +143,34 @@ int main()
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 		}
 		
+			NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
+
+			for (int i = 0; i < texture_skydome_levels; i++)
+			{
+				if (EInputCore::key_pressed(GLFW_KEY_1 + i))
+				{
+					NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());
+
+					NS_ERenderCollection::add_data_to_vertex_buffer_default
+					(
+						NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+						NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+						0.0,
+						0.0f,
+						1024.0f,
+						1024.0f
+					);
+
+					NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+				}
+
+				
+			}
+		
+
+		NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
+
 		///reset input states
 		glfwSwapBuffers(NS_EGraphicCore::main_window);
 

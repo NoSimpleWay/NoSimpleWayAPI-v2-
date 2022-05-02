@@ -49,12 +49,12 @@
 /////// /////// /////// /////// /////// /////// ///////
 
 #include <learnopengl/shader_s.h>
-
 #include <vector>
+#include <filesystem>
 
 //VERTEX BUFFER ARRAY
 constexpr unsigned int VERTICES_PER_SHAPE = 4;
-constexpr unsigned int MAX_SHAPES_COUNT = 1000;
+constexpr unsigned int MAX_SHAPES_COUNT = 3000;
 constexpr unsigned int EXPECTABLE_PARAMETERS_COUNT_FOR_VERTEX = 10;
 
 constexpr unsigned int TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE = VERTICES_PER_SHAPE * MAX_SHAPES_COUNT * EXPECTABLE_PARAMETERS_COUNT_FOR_VERTEX;
@@ -81,6 +81,8 @@ namespace NS_ERenderCollection
 	extern void add_data_to_vertex_buffer_textured_rectangle_with_custom_size(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture);
 
 	extern void add_data_to_vertex_buffer_sprite(float* _array, unsigned int& _start_offset, ESprite* _sprite);
+	extern void add_data_to_vertex_buffer_sprite_test(float* _array, unsigned int& _start_offset, ESprite* _sprite);
+	extern void add_data_to_vertex_buffer_sprite_PBR(float* _array, unsigned int& _start_offset, ESprite* _sprite);
 
 	extern void add_data_to_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture);
 
@@ -91,6 +93,8 @@ namespace NS_ERenderCollection
 	extern void call_render_textured_rectangle_with_custom_size(ESprite* _sprite);
 	extern void call_render_textured_rectangle_real_size(ESprite* _sprite);
 	extern void call_render_textured_sprite(ESprite* _sprite);
+	extern void call_render_textured_sprite_test(ESprite* _sprite);
+	extern void call_render_textured_sprite_PBR(ESprite* _sprite);
 
 	extern float			border_left_size;
 	extern float			border_right_size;
@@ -109,7 +113,7 @@ namespace NS_ERenderCollection
 	extern void generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite);
 }
 
-const int texture_reflection_levels = 5;
+const int texture_skydome_levels = 5;
 
 namespace NS_EGraphicCore
 {
@@ -123,6 +127,7 @@ namespace NS_EGraphicCore
 	extern ERenderBatcher* default_batcher_for_texture_atlas;
 	extern ERenderBatcher* default_batcher_for_drawing;
 	extern ERenderBatcher* pbr_batcher;
+	extern ERenderBatcher* test_batcher;
 	extern ERenderBatcher* skydome_batcher;
 
 	extern GLFWwindow*		main_window;
@@ -130,7 +135,7 @@ namespace NS_EGraphicCore
 	extern unsigned int		texture[32];
 
 	extern ETextureAtlas*	default_texture_atlas;
-	extern ETextureAtlas*	reflection_texture[texture_reflection_levels];
+	extern ETextureAtlas*	skydome_texture_atlas[texture_skydome_levels];
 
 	extern unsigned char*	image_data;
 	extern unsigned char*	zalupa;
@@ -156,7 +161,8 @@ namespace NS_EGraphicCore
 	extern void load_texture(char const* _path, int _id);
 
 	extern ETextureGabarite* put_texture_to_atlas(std::string _name, ETextureAtlas* _atlas);
-	extern ETextureGabarite* default_texture_load(std::string _name);
+	extern ETextureGabarite* load_from_textures_folder(std::string _name);
+	extern ETextureGabarite* load_texture_to_default_atlas(std::string _name);
 	extern ETextureGabarite* load_style_texture(EGUIStyle* _style, EBrickStyle* _brick);
 
 	void gl_set_texture_filtering(GLint _wrap_mode, GLint _filter);
@@ -172,6 +178,11 @@ namespace NS_EGraphicCore
 
 	extern EColor_4 active_color[4];
 
+	extern void set_source_FBO(int _GL_texture_id, unsigned int _colorbuffer_id);
+	extern void set_target_FBO(unsigned int _framebuffer_id);
+
+	extern ETextureGabarite* get_gabarite_from_full_path_and_suffix(ETextureGabarite* _gabarite, std::string _suffix);
+
 };
 
 namespace NS_DefaultGabarites
@@ -183,7 +194,11 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_black_marble;
 	extern ETextureGabarite* texture_dark_spruce;
 	extern ETextureGabarite* texture_slider_bg_lead_and_gold;
+
 	extern ETextureGabarite* texture_gabarite_white_pixel;
+	extern ETextureGabarite* texture_gabarite_normal_map_placeholder;
+	extern ETextureGabarite* texture_gabarite_gloss_map_placeholder;
+	extern ETextureGabarite* texture_gabarite_skydome;
 	//extern 
 }
 
@@ -226,7 +241,7 @@ private:
 	unsigned int									VBO, VAO, EBO = 0;
 	unsigned short									parameters_count = 1;
 
-	GLuint										gl_vertex_attribute_id = 0;
+	GLuint											gl_vertex_attribute_id = 0;
 	unsigned short									gl_vertex_attribute_offset = 0;
 
 	glm::mat4										matrix_transform;
@@ -352,6 +367,9 @@ public:
 	void(*pointer_to_sprite_render)(ESprite* _sprite);
 
 	ETextureGabarite* main_texture;
+	ETextureGabarite* normal_texture;
+	ETextureGabarite* gloss_texture;
+
 	ESpriteLayer* master_sprite_layer;
 
 	EColor_4* sprite_color = new float[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
@@ -376,6 +394,26 @@ public:
 	float* uv_end_y = new float(0.0f);
 	//
 
+
+	// 
+	//final calculated fise with fragments
+	float* normal_uv_start_x = new float(0.0f);
+	float* normal_uv_start_y = new float(0.0f);
+		   
+	float* normal_uv_end_x = new float(0.0f);
+	float* normal_uv_end_y = new float(0.0f);
+	//
+
+
+	// 
+	//final calculated fise with fragments
+	float* gloss_uv_start_x = new float(0.0f);
+	float* gloss_uv_start_y = new float(0.0f);
+		   
+	float* gloss_uv_end_x = new float(0.0f);
+	float* gloss_uv_end_y = new float(0.0f);
+	//
+
 	//position and size
 	float* offset_x = new float(0.0f);
 	float* offset_y = new float(0.0f);
@@ -388,6 +426,7 @@ public:
 
 	float* size_x = new float(0.0f);
 	float* size_y = new float(0.0f);
+	float* size_z = new float(0.0f);
 	//what wrong
 
 	void translate_sprite(float _x, float _y, float _z);
@@ -434,6 +473,7 @@ public:
 	float* world_position_z = new float(0.0f);
 
 	unsigned int* last_buffer_id = new unsigned int(0);
+	unsigned int* total_capacity = new unsigned int(0);
 
 	ERenderBatcher* batcher = nullptr;
 	float* vertex_buffer = nullptr;
@@ -451,6 +491,8 @@ public:
 	void sprite_layer_set_world_position(float _x, float _y, float _z);
 
 	static ESpriteLayer* create_default_sprite_layer(ETextureGabarite* _texture);
+	void make_as_PBR();
+
 	static ESpriteLayer* create_default_sprite_layer_with_size_and_offset
 	(
 		ETextureGabarite* _texture,

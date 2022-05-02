@@ -10,8 +10,8 @@ in vec2 TexCoord;
 uniform sampler2D texture1;
 uniform sampler2D texture2;
 
-uniform float blur_size_x = 1.0f/4096.0f;
-uniform float blur_size_y = 1.0f/4096.0f;
+uniform float blur_size_x = 1.0f/20480.0f;
+uniform float blur_size_y = 1.0f/20480.0f;
 
 vec3 result_color;
 
@@ -20,13 +20,13 @@ void main()
 	// linearly interpolate between both textures (80% container, 20% awesomeface)
 	result_color = vec3(0.0f, 0.0f, 0.0f);
 	
-	for (int i = -1; i <= 1; i++)
-	for (int j = -1; j <= 1; j++)
+	for (int i = -2; i <= 2; i++)
+	for (int j = -2; j <= 2; j++)
 	{
 		result_color += texture(texture1, TexCoord + vec2(blur_size_x * j, blur_size_y * i)).rgb;
 	}
 	
-	result_color /= vec3(9.0f);	
+	result_color /= vec3(25.0f);	
 	
 	FragColor.rgb = result_color;
 	FragColor.a = 1.0f;

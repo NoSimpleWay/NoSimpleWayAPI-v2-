@@ -364,7 +364,7 @@ EWindowMain::EWindowMain()
 
 					ETextureGabarite* item_icon
 					=
-					NS_EGraphicCore::default_texture_load
+					NS_EGraphicCore::load_from_textures_folder
 					("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_list[selected_data_entity]));
 
 					if (item_icon != nullptr)
@@ -465,7 +465,7 @@ EWindowMain::EWindowMain()
 
 					ETextureGabarite* item_icon
 						=
-						NS_EGraphicCore::default_texture_load
+						NS_EGraphicCore::load_from_textures_folder
 						("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_list[rand() % EDataEntity::data_entity_list.size()]));
 
 					if (item_icon != nullptr)
@@ -588,7 +588,7 @@ EWindowMain::EWindowMain()
 					close_group->button_list.push_back(jc_button);
 					jc_button->parent_button_group = close_group;
 
-					jc_button->sprite_layer_list.push_back (ESpriteLayer::create_default_sprite_layer (NS_EGraphicCore::default_texture_load("button_close")));
+					jc_button->sprite_layer_list.push_back (ESpriteLayer::create_default_sprite_layer (NS_EGraphicCore::load_from_textures_folder("button_close")));
 
 					jc_region_gabarite = new ERegionGabarite(20.0f, 20.0f);
 					jc_button->button_gabarite = jc_region_gabarite;
@@ -642,7 +642,7 @@ EWindowMain::EWindowMain()
 		);
 
 		//NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
-		ETextureGabarite* gab = NS_EGraphicCore::default_texture_load("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", data_entity));
+		ETextureGabarite* gab = NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", data_entity));
 		float resize_factor = 38.0f / max(*gab->size_x_in_pixels, *gab->size_y_in_pixels);
 		resize_factor = min(resize_factor, 1.0f);
 
@@ -717,7 +717,7 @@ EWindowMain::EWindowMain()
 	close_group->button_list.push_back(jc_button);
 	jc_button->parent_button_group = close_group;
 
-	jc_button->sprite_layer_list.push_back(ESpriteLayer::create_default_sprite_layer(NS_EGraphicCore::default_texture_load("button_close")));
+	jc_button->sprite_layer_list.push_back(ESpriteLayer::create_default_sprite_layer(NS_EGraphicCore::load_from_textures_folder("button_close")));
 
 	jc_region_gabarite = new ERegionGabarite(20.0f, 20.0f);
 	jc_button->button_gabarite = jc_region_gabarite;

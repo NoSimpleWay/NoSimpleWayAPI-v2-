@@ -224,6 +224,8 @@ void EButtonGroup::draw()
 		);
 	}
 	batcher_for_default_draw->draw_call();
+	NS_EGraphicCore::pbr_batcher->draw_call();
+	NS_EGraphicCore::test_batcher->draw_call();
 
 	
 	//ELEMENTS
@@ -254,7 +256,7 @@ void EButtonGroup::draw()
 		&&
 		(*but->world_position_y <= *higher_culling_line)
 	)
-	{but->draw();}
+	{/*but->draw();*/ }
 
 
 
@@ -267,7 +269,8 @@ void EButtonGroup::draw()
 
 
 	//draw call to prepare for header
-	batcher_for_default_draw->draw_call();
+	NS_EGraphicCore::pbr_batcher->draw_call();
+	NS_EGraphicCore::test_batcher->draw_call();
 
 
 
@@ -343,6 +346,8 @@ void EButtonGroup::draw()
 	}
 
 	batcher_for_default_draw->draw_call();
+	NS_EGraphicCore::pbr_batcher->draw_call();
+	NS_EGraphicCore::test_batcher->draw_call();
 
 	if (header_button_group != nullptr)
 	{header_button_group->draw();}
@@ -842,7 +847,7 @@ void EButtonGroup::check_slider()
 				*have_slider = true;
 				//EInputCore::logger_param("summ", child_elements_height_summ);
 				//EInputCore::logger_param("size y", *region_gabarite->size_y - 6.0f - *border_bottom - *border_up);
-				std::cout << std::endl;
+				//std::cout << std::endl;
 
 				for (EButtonGroup* group : group_list)
 				{
@@ -1498,6 +1503,8 @@ EButtonGroup* EButtonGroup::create_base_button_group(ERegionGabarite* _region, E
 	if (_have_bg)
 	{ 
 		just_created_button_group->background_sprite_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
+		just_created_button_group->background_sprite_layer->make_as_PBR();
+
 		EButtonGroup::apply_style_to_button_group(just_created_button_group, _style);
 	}
 	else
