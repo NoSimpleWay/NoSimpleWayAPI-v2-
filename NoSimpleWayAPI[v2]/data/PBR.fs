@@ -19,16 +19,16 @@ uniform sampler2D SD_array[6];
 
 
 
-uniform float brightness_multiplier = 10.0f;
+uniform float brightness_multiplier = 1.0f;
 uniform float input_gloss = 1.0f;
 uniform float skydome_light_power = 1.0f;
 uniform float free_top_light = 0.45f;
 uniform float direct_sun_matte_multiplier = 1.0f;
 
-uniform float sun_position_x;
-uniform float sun_position_y;
+uniform float sun_position_x = 0.5f;
+uniform float sun_position_y = 0.5f;
 
-uniform float sun_zenith;
+uniform float sun_zenith = 1.0f;
 
 uniform float screen_offset_x;
 uniform float screen_offset_y;
@@ -69,13 +69,15 @@ void main()
 	//gloss_power = 1.0f - (ReflectionTexCoord.y - 0.333f) * 3.0f ;
 	//gloss_power = input_gloss;
 	gloss_power = texture(texture1, GlossMapTexCoord).b;
-	
+	gloss_power = 0.75f;
 	
 	
 	
 	level = (1.0f - gloss_power) * 4.0f;
 	
 	glossy_flat = clamp(int(floor(level)), 0, 4);
+	//glossy_flat = 0;
+	
 	interpolation_B = level - glossy_flat;
 	interpolation_A = 1.0f - interpolation_B;
 	
@@ -118,11 +120,14 @@ void main()
 	//total_angle = (angle_x + angle_y) / 2.0f;
 	
 	//reflect_coord = vec2(gl_FragCoord.x / 1920.0f * 0.3f + 0.3f + normal_x, gl_FragCoord.y / 1080.0f * 0.3f + 0.3f + normal_y);
+	
+	//normal_x = 0.0f;
+	//normal_y = 0.0f;
 	reflect_coord =
 	vec2
 	(
 		gl_FragCoord.x / 1920.0f * 0.3333f + 0.3333f + normal_x * 0.333f,
-		((WorldPosition[1] + screen_offset_y) / 1080.0f * abs(normal_y) + WorldPosition[2] / 1080.0f * (1.0f - abs(normal_y))) * 0.333f + 0.333f + 0.333f * normal_y
+		((WorldPosition[1] + screen_offset_y) / 1080.0f * abs(1.0f - normal_y) + WorldPosition[2] / 1080.0f * (abs(normal_y))) * 0.333f + 0.333f + 0.333f * normal_y
 	);
 	
 	/*
@@ -166,17 +171,18 @@ void main()
 	}  
 	else
 	{                                                                                                                                                                   
-		c_r = clamp ((texture(SD_array[5], reflect_coord).r) * brightness_multiplier, 0.0f, 2.0f);
-		c_g = clamp ((texture(SD_array[5], reflect_coord).g) * brightness_multiplier, 0.0f, 1.9f);
-		c_b = clamp ((texture(SD_array[5], reflect_coord).b) * brightness_multiplier, 0.0f, 1.8f);
+		c_r = clamp ((texture(SD_array[4], reflect_coord).r) * brightness_multiplier, 0.0f, 2.0f);
+		c_g = clamp ((texture(SD_array[4], reflect_coord).g) * brightness_multiplier, 0.0f, 1.9f);
+		c_b = clamp ((texture(SD_array[4], reflect_coord).b) * brightness_multiplier, 0.0f, 1.8f);
 	}
 	
 	gloss_result = gloss_power;
 	//gloss_result = 1.0f;
 	
-	AO_bottom_shade_factor = max(0.0f, (WorldPosition[2] / (WorldPosition[2] + 100.0f + 100.0f * (1.0f - gloss_result))) * (1.0f - normal_y) + normal_y);
+	/*AO_bottom_shade_factor = max(0.0f, (WorldPosition[2] / (WorldPosition[2] + 100.0f + 100.0f * (1.0f - gloss_result))) * (1.0f - normal_y) + normal_y);
 	AO_bottom_shade_factor = 1.0f - pow(1.0f - AO_bottom_shade_factor, 2);
-	AO_bottom_shade_factor = AO_bottom_shade_factor / 2.0f + 0.5f;
+	AO_bottom_shade_factor = AO_bottom_shade_factor / 2.0f + 0.5f;*/
+	AO_bottom_shade_factor = 1.0f;
 	
 	matte_result_sun = (1.0f - gloss_power) * total_angle;
 	matte_result_sun *= direct_sun_matte_multiplier;
@@ -198,9 +204,9 @@ void main()
 	*
 	vec4
 	(
-		c_r * gloss_result + (matte_result_sun * 1.20f + matte_result_sky	* 0.740f)	* sun_zenith					* AO_bottom_shade_factor,
-		c_g * gloss_result + (matte_result_sun * 1.15f + matte_result_sky	* 0.770f)	* pow(sun_zenith, 1.5f)			* AO_bottom_shade_factor,
-		c_b * gloss_result + (matte_result_sun * 1.10f + matte_result_sky	* 0.800f)	* pow(sun_zenith, 2.0f)			* AO_bottom_shade_factor,
+		c_r * gloss_result + (matte_result_sun * 1.00f + matte_result_sky	* 1.000f)	* sun_zenith					* AO_bottom_shade_factor,
+		c_g * gloss_result + (matte_result_sun * 1.00f + matte_result_sky	* 1.000f)	* pow(sun_zenith, 1.5f)			* AO_bottom_shade_factor,
+		c_b * gloss_result + (matte_result_sun * 1.00f + matte_result_sky	* 1.000f)	* pow(sun_zenith, 2.0f)			* AO_bottom_shade_factor,
 	1.0f
 	);
 		FragColor.a = 1.0f;
@@ -234,8 +240,8 @@ void main()
 	*/
 	
 	//FragColor = texture(texture1, GlossMapTexCoord);	
-
-	
+	//FragColor = vec4(c_r, c_g, c_b, 1.0f);
+	//FragColor = vec4(WorldPosition.x / 1920.0f, WorldPosition.y / 1080.0f, 0.0f, 1.0f);
 	
 	/*
 	FragColor.r = (WorldPosition[0] + screen_offset_x) / 1920.0f;
