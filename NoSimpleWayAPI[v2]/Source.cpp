@@ -129,8 +129,9 @@ int main()
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 
 			w->GUI_draw_default(NS_EGraphicCore::delta_time);
+			NS_EGraphicCore::pbr_batcher->draw_call();
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
-			//NS_EGraphicCore::pbr_batcher->draw_call();
+
 
 			w->GUI_draw_additional(NS_EGraphicCore::delta_time);
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
@@ -140,7 +141,9 @@ int main()
 		for (EWindow* w : EWindow::window_list)
 		{
 			w->GUI_draw_second_pass(NS_EGraphicCore::delta_time);
+			NS_EGraphicCore::pbr_batcher->draw_call();
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+
 		}
 		
 			NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);

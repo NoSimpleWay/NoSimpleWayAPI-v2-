@@ -605,7 +605,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
 
 	for (int i = 0; i < texture_skydome_levels; i++)
-	{NS_EGraphicCore::skydome_texture_atlas[i] = new ETextureAtlas(2048 / (pow(2.0, i * 2)), 2048 / (pow(2.0, i * 2)));}
+	{NS_EGraphicCore::skydome_texture_atlas[i] = new ETextureAtlas(2048 / (pow(2.0, i * 1)), 2048 / (pow(2.0, i * 1)));}
 
 
 
@@ -641,8 +641,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
 		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
 
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * 0.5f);
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * 0.5f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * 2.0f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * 2.0f);
 
 		NS_EGraphicCore::skydome_batcher->set_transform_screen_size (1.0f,1.0f);
 		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
@@ -2752,13 +2752,13 @@ ESpriteLayer* ESpriteLayer::create_default_sprite_layer(ETextureGabarite* _textu
 void ESpriteLayer::make_as_PBR()
 {
 
-	//batcher = NS_EGraphicCore::pbr_batcher;
+	batcher = NS_EGraphicCore::pbr_batcher;
 	
-	/*for (ESpriteFrame* frame:sprite_frame_list)
+	for (ESpriteFrame* frame:sprite_frame_list)
 	for (ESprite* spr:frame->sprite_list)
 	{
 		spr->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite_PBR;
-	}*/
+	}
 }
 
 ESpriteLayer* ESpriteLayer::create_default_sprite_layer_with_size_and_offset(ETextureGabarite* _texture, float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y, float _size_z)
@@ -2936,6 +2936,9 @@ void ESprite::set_texture_gabarite(ETextureGabarite* _gabarite)
 
 		*size_x = *_gabarite->size_x_in_pixels;
 		*size_y = *_gabarite->size_y_in_pixels;
+
+		normal_texture	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_gabarite, "[normal_map]");
+		gloss_texture	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_gabarite, "[gloss_map]");
 	}
 	else
 	{

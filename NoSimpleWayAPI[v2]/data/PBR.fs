@@ -19,7 +19,7 @@ uniform sampler2D SD_array[6];
 
 
 
-uniform float brightness_multiplier = 1.0f;
+uniform float brightness_multiplier = 1.5f;
 uniform float input_gloss = 1.0f;
 uniform float skydome_light_power = 1.0f;
 uniform float free_top_light = 0.45f;
@@ -69,7 +69,8 @@ void main()
 	//gloss_power = 1.0f - (ReflectionTexCoord.y - 0.333f) * 3.0f ;
 	//gloss_power = input_gloss;
 	gloss_power = texture(texture1, GlossMapTexCoord).b;
-	gloss_power = 0.75f;
+	//gloss_power = 0.2f;
+	//gloss_power = clamp (WorldPosition.y / 1080.0f * 2.0f, 0.0f, 1.0f);
 	
 	
 	
@@ -126,8 +127,9 @@ void main()
 	reflect_coord =
 	vec2
 	(
-		gl_FragCoord.x / 1920.0f * 0.3333f + 0.3333f + normal_x * 0.333f,
-		((WorldPosition[1] + screen_offset_y) / 1080.0f * abs(1.0f - normal_y) + WorldPosition[2] / 1080.0f * (abs(normal_y))) * 0.333f + 0.333f + 0.333f * normal_y
+		//base offset		screen position offset					//normal offset
+		0.3333f				+ gl_FragCoord.x / 1920.0f * 0.3333f	+  normal_x * 0.333f,
+		((WorldPosition[1] + screen_offset_y) / 1080.0f * abs(1.0f - normal_y) + WorldPosition[2] / 1080.0f * (abs(normal_y))) * 0.333f + 0.303f + 0.333f * normal_y
 	);
 	
 	/*
@@ -199,8 +201,8 @@ void main()
 
 	
 	FragColor = texture(texture1, TexCoord)
-	//*
-	//ourColor
+	*
+	ourColor
 	*
 	vec4
 	(
@@ -209,7 +211,8 @@ void main()
 		c_b * gloss_result + (matte_result_sun * 1.00f + matte_result_sky	* 1.000f)	* pow(sun_zenith, 2.0f)			* AO_bottom_shade_factor,
 	1.0f
 	);
-		FragColor.a = 1.0f;
+	
+	//FragColor.a = 1.0f;
 	//FragColor = texture(texture1, TexCoord);
 	//FragColor = texture(normal_gloss_map_texture, NormalGlossMapTexCoord);
 	

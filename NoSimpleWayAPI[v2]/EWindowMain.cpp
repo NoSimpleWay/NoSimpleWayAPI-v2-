@@ -372,19 +372,21 @@ EWindowMain::EWindowMain()
 						float resize_factor = 38.0f / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
 						resize_factor = min(resize_factor, 1.0f);
 
-						jc_button->sprite_layer_list.push_back
-						(
-							ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-							(item_icon,
-								(44.0f - *item_icon->size_x_in_pixels * resize_factor) / 2.0f,
-								(44.0f - *item_icon->size_y_in_pixels * resize_factor) / 2.0f,
-								3.0f,
+						ESpriteLayer* second_button_layer =
+						ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+						(item_icon,
+							(44.0f - *item_icon->size_x_in_pixels * resize_factor) / 2.0f,
+							(44.0f - *item_icon->size_y_in_pixels * resize_factor) / 2.0f,
+							3.0f,
 
-								*item_icon->size_x_in_pixels * resize_factor,
-								*item_icon->size_y_in_pixels* resize_factor,
-								0.0f
-							)
+							*item_icon->size_x_in_pixels * resize_factor,
+							*item_icon->size_y_in_pixels * resize_factor,
+							0.0f
 						);
+
+						jc_button->sprite_layer_list.push_back (second_button_layer);
+
+						second_button_layer->make_as_PBR();
 					}
 
 					//jc_button->add_description("123");

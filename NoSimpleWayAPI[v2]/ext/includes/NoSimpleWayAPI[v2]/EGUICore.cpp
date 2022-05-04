@@ -223,8 +223,10 @@ void EButtonGroup::draw()
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
 	}
-	batcher_for_default_draw->draw_call();
+
 	NS_EGraphicCore::pbr_batcher->draw_call();
+	batcher_for_default_draw->draw_call();
+
 	NS_EGraphicCore::test_batcher->draw_call();
 
 	
@@ -256,8 +258,9 @@ void EButtonGroup::draw()
 		&&
 		(*but->world_position_y <= *higher_culling_line)
 	)
-	{/*but->draw();*/ }
-
+	{but->draw();}
+	NS_EGraphicCore::pbr_batcher->draw_call();//draw pbg bg
+	batcher_for_default_draw->draw_call();//draw text to default batcher
 
 
 
@@ -269,8 +272,9 @@ void EButtonGroup::draw()
 
 
 	//draw call to prepare for header
-	NS_EGraphicCore::pbr_batcher->draw_call();
 	NS_EGraphicCore::test_batcher->draw_call();
+	NS_EGraphicCore::pbr_batcher->draw_call();
+	
 
 
 
@@ -345,8 +349,9 @@ void EButtonGroup::draw()
 		}
 	}
 
-	batcher_for_default_draw->draw_call();
 	NS_EGraphicCore::pbr_batcher->draw_call();
+	batcher_for_default_draw->draw_call();
+	
 	NS_EGraphicCore::test_batcher->draw_call();
 
 	if (header_button_group != nullptr)
@@ -1038,10 +1043,9 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 		//head inactive
 		sprite_layer
 		=
-		ESpriteLayer::create_default_sprite_layer
-		(
-			_button_group->selected_style->slider_inactive->main_texture
-		);
+		ESpriteLayer::create_default_sprite_layer(_button_group->selected_style->slider_inactive->main_texture);
+
+
 		cl_region->sprite_layer_list.push_back(sprite_layer);
 
 
@@ -1049,6 +1053,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 		ESpriteLayer::get_last_sprite_frame(sprite_layer)
 		->
 		sprite_list.push_back (ESprite::create_default_sprite (_button_group->selected_style->slider_active->main_texture, sprite_layer));
+		sprite_layer->make_as_PBR();	
 	}
 	else
 	{

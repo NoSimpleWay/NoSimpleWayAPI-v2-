@@ -18,8 +18,7 @@ void Entity::draw()
 		//custom data store clickable regions and text
 		if (!custom_data_list.empty())
 		{
-			for (ECustomData* c_data : custom_data_list)
-				if (c_data != nullptr) { c_data->draw(); }
+			for (ECustomData* c_data : custom_data_list) if (c_data != nullptr) { c_data->draw(); }
 		}
 	}
 
@@ -499,11 +498,11 @@ bool EntityButton::can_get_access_to_style()
 void EntityButton::add_description(std::string _text)
 {
 	ECustomData*		jc_data				= new ECustomData();
-	*jc_data->is_second_pass = true;
+	*jc_data->is_second_pass				= true;
 
 	jc_data->actions_on_update.push_back(&EDataActionCollection::action_switch_description);
-	jc_data->parent_entity = this;
-	*jc_data->disable_draw = true;
+	jc_data->parent_entity					= this;
+	*jc_data->disable_draw					= true;
 
 	EClickableArea*		jc_clickable_area	=
 	EClickableArea::create_default_clickable_region
