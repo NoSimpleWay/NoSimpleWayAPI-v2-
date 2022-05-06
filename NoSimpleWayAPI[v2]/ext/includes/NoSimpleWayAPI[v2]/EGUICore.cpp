@@ -357,6 +357,7 @@ void EButtonGroup::draw()
 	if (header_button_group != nullptr)
 	{header_button_group->draw();}
 
+	draw_second_pass();
 
 }
 
@@ -1036,7 +1037,15 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 			*_button_group->selected_style->slider_bg->subdivision_y
 		);
 
-		NS_ERenderCollection::generate_brick_texture(ERegionGabarite::temporary_gabarite, sprite_layer, _button_group->selected_style->slider_bg->main_texture);
+		NS_ERenderCollection::generate_brick_texture
+		(
+			ERegionGabarite::temporary_gabarite,
+			sprite_layer,
+			_button_group->selected_style->slider_bg->main_texture,
+			_button_group->selected_style->slider_bg->normal_map_texture,
+			_button_group->selected_style->slider_bg->gloss_map_texture
+		);
+
 		sprite_layer->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
 		sprite_layer->generate_vertex_buffer_for_sprite_layer("init bg");
 
@@ -1044,7 +1053,12 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 		sprite_layer
 		=
 		ESpriteLayer::create_default_sprite_layer(_button_group->selected_style->slider_inactive->main_texture);
-
+			ESpriteLayer::get_last_created_sprite(sprite_layer)->set_texture_gabarite
+			(
+				_button_group->selected_style->slider_inactive->main_texture,
+				_button_group->selected_style->slider_inactive->normal_map_texture,
+				_button_group->selected_style->slider_inactive->gloss_map_texture
+			);
 
 		cl_region->sprite_layer_list.push_back(sprite_layer);
 
@@ -1053,6 +1067,12 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 		ESpriteLayer::get_last_sprite_frame(sprite_layer)
 		->
 		sprite_list.push_back (ESprite::create_default_sprite (_button_group->selected_style->slider_active->main_texture, sprite_layer));
+		ESpriteLayer::get_last_created_sprite(sprite_layer)->set_texture_gabarite
+		(
+			_button_group->selected_style->slider_active->main_texture,
+			_button_group->selected_style->slider_active->normal_map_texture,
+			_button_group->selected_style->slider_active->gloss_map_texture
+		);
 		sprite_layer->make_as_PBR();	
 	}
 	else
@@ -1158,9 +1178,6 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 			{ EBrickStyle::apply_brick_parameters_to_button_group(_group, _style->button_group_darken); }
 
 			EButtonGroup::generate_brick_textured_bg(_group);
-
-
-			
 		}
 		else
 		{
@@ -1180,11 +1197,11 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 			{
 				csa(but, _style);
 
-				but->generate_vertex_buffer_for_all_sprite_layers();
+				//but->generate_vertex_buffer_for_all_sprite_layers();
 			}
 		}
 
-		_group->refresh_button_group(_group);
+		//_group->refresh_button_group(_group);
 }
 
 	
@@ -1220,7 +1237,9 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 			(
 				_group->region_gabarite,
 				_group->background_sprite_layer,
-				_group->selected_style->button_group_darken->main_texture
+				_group->selected_style->button_group_darken->main_texture,
+				_group->selected_style->button_group_darken->normal_map_texture,
+				_group->selected_style->button_group_darken->gloss_map_texture
 			);
 		}
 		else //if (*_group->button_group_type == ButtonGroupType::BGT_REGULAR)
@@ -1240,15 +1259,13 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 			(
 				_group->region_gabarite,
 				_group->background_sprite_layer,
-				_group->selected_style->button_group_main->main_texture
+				_group->selected_style->button_group_main->main_texture,
+				_group->selected_style->button_group_main->normal_map_texture,
+				_group->selected_style->button_group_main->gloss_map_texture
 			);
 		}
 
-		if (_group->background_sprite_layer != nullptr)
-		{
-			_group->background_sprite_layer->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
-			_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("Generate brick texture");
-		}
+
 	}
 }
 
@@ -1289,7 +1306,7 @@ void EButtonGroup::change_style(EButtonGroup* _group, EGUIStyle* _style)
 		EButtonGroup::change_style(group, _style);
 	}
 
-	EButtonGroup::refresh_button_group(_group);
+	
 	//_group->realign_all_buttons();
 	//_group->align_groups();
 	//EButtonGroup::calculate_culling_lines(_group);
@@ -1297,6 +1314,8 @@ void EButtonGroup::change_style(EButtonGroup* _group, EGUIStyle* _style)
 	{
 		EButtonGroup::change_style(_group->header_button_group, _style);
 	}
+
+	EButtonGroup::refresh_button_group(_group);
 }
 
 bool EButtonGroup::catched_by_mouse(EButtonGroup* _group)

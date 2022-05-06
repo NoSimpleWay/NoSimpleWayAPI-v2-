@@ -110,7 +110,7 @@ namespace NS_ERenderCollection
 	//gabarite
 	//sprite layer
 	//texture
-	extern void generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite);
+	extern void generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite, ETextureGabarite* _normal_map_gabarite = nullptr, ETextureGabarite* _gloss_map_gabarite = nullptr);
 }
 
 const int texture_skydome_levels = 5;
@@ -160,10 +160,10 @@ namespace NS_EGraphicCore
 
 	extern void load_texture(char const* _path, int _id);
 
-	extern ETextureGabarite* put_texture_to_atlas(std::string _name, ETextureAtlas* _atlas);
-	extern ETextureGabarite* load_from_textures_folder(std::string _name);
-	extern ETextureGabarite* load_texture_to_default_atlas(std::string _name);
-	extern ETextureGabarite* load_style_texture(EGUIStyle* _style, EBrickStyle* _brick);
+	extern ETextureGabarite*	put_texture_to_atlas(std::string _name, ETextureAtlas* _atlas);
+	extern ETextureGabarite*	load_from_textures_folder(std::string _name);
+	extern ETextureGabarite*	load_texture_to_default_atlas(std::string _name);
+	extern void					load_style_texture(EGUIStyle* _style, EBrickStyle* _brick);
 
 	void gl_set_texture_filtering(GLint _wrap_mode, GLint _filter);
 	void gl_set_blend_mode_default();
@@ -432,7 +432,7 @@ public:
 	void translate_sprite(float _x, float _y, float _z);
 	void generate_vertex_buffer_for_master_sprite_layer();
 
-	void set_texture_gabarite(ETextureGabarite* _gabarite);
+	void set_texture_gabarite(ETextureGabarite* _gabarite, ETextureGabarite* _normal_map_gabarite, ETextureGabarite* _gloss_map_gabarite);
 	void sprite_calculate_uv();
 
 	void reset_sprite();

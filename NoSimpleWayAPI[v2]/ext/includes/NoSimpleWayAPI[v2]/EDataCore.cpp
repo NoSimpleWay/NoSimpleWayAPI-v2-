@@ -73,7 +73,7 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 	)
 	{ 
 		
-		NS_ERenderCollection::generate_brick_texture(_custom_data->clickable_area_list[0]->region_gabarite, _entity->sprite_layer_list[0], NS_DefaultGabarites::texture_lead_and_gold);
+		NS_ERenderCollection::generate_brick_texture(_custom_data->clickable_area_list[0]->region_gabarite, _entity->sprite_layer_list[0], NS_DefaultGabarites::texture_lead_and_gold, nullptr, nullptr);
 		_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
 		_entity->generate_vertex_buffer_for_all_sprite_layers();
 		
@@ -310,27 +310,29 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	//_entity->generate_vertex_buffer_for_all_sprite_layers();
 }
 
-void EDataActionCollection::action_change_style(Entity* _entity, ECustomData* _custom_data, float _d)
-{
-	//cast to button entity
-	EntityButton*	target_button = ((EntityButton*)_entity);
-
-	//get "slider" sprite
-	ESprite*		target_sprite = target_button->get_sprite_from_entity(0, 0, 0);
-
-	if (target_sprite != nullptr)
-	{													
-		target_sprite->set_texture_gabarite
-		(
-			target_button->			//button, which change style
-			parent_button_group->	//group, which contain this button
-			selected_style->		//style, used by group
-			slider_bg->				//"brick style" for sliders
-			main_texture			//texture from "brick style"
-		);
-	}									
-
-}
+//void EDataActionCollection::action_change_style(Entity* _entity, ECustomData* _custom_data, float _d)
+//{
+//	//cast to button entity
+//	EntityButton*	target_button = ((EntityButton*)_entity);
+//
+//	//get "slider" sprite
+//	ESprite*		target_sprite = target_button->get_sprite_from_entity(0, 0, 0);
+//
+//	if (target_sprite != nullptr)
+//	{													
+//		target_sprite->set_texture_gabarite
+//		(
+//			target_button->			//button, which change style
+//			parent_button_group->	//group, which contain this button
+//			selected_style->		//style, used by group
+//			slider_bg->				//"brick style" for sliders
+//			main_texture,			//texture from "brick style"
+//			nullptr,
+//			nullptr
+//		);
+//	}									
+//
+//}
 
 void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, ECustomData* _custom_data, float _d)
 {
@@ -368,14 +370,21 @@ void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomDat
 
 void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	EButtonGroup* _group = ((EntityButton*)_entity)->parent_button_group;
+
 	if
 	(
-		(	((EntityButton*)_entity)->parent_button_group != nullptr	)
+		( _group != nullptr )
 		&&
-		(	((EntityButton*)_entity)->parent_button_group->root_group != nullptr	)
+		( _group->root_group != nullptr )
 	)
 	{
-		*(((EntityButton*)_entity)->parent_button_group->root_group->is_active) = false;
+		*_group->root_group->is_active = false;
+
+		EClickableArea::active_clickable_region = nullptr;
+
+		//for (ECustomData* dt:_group->region_gabarite
+		//if (EClickableArea::active_clickable_region == *(((EntityButton*)_entity)->parent_button_group)
 	}
 }
 

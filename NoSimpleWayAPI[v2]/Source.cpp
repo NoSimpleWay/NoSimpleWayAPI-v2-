@@ -110,6 +110,11 @@ int main()
 		EButtonGroup::focused_button_group_with_slider = nullptr;
 		EButtonGroup::focused_button_group = nullptr;
 
+		/*if (*EClickableArea::active_clickable_region->parent_entity->disable_draw)
+		{
+
+		}*/
+
 		for (EWindow* w : EWindow::window_list)
 		{
 			
@@ -131,7 +136,10 @@ int main()
 			w->GUI_draw_default(NS_EGraphicCore::delta_time);
 			NS_EGraphicCore::pbr_batcher->draw_call();
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
-
+			
+			//w->GUI_draw_second_pass(NS_EGraphicCore::delta_time);
+			//NS_EGraphicCore::pbr_batcher->draw_call();
+			//NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 
 			w->GUI_draw_additional(NS_EGraphicCore::delta_time);
 			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
@@ -140,9 +148,7 @@ int main()
 		
 		for (EWindow* w : EWindow::window_list)
 		{
-			w->GUI_draw_second_pass(NS_EGraphicCore::delta_time);
-			NS_EGraphicCore::pbr_batcher->draw_call();
-			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+
 
 		}
 		
@@ -170,6 +176,24 @@ int main()
 
 				
 			}
+
+			if (EInputCore::key_pressed(GLFW_KEY_0))
+			{
+				NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
+
+				NS_ERenderCollection::add_data_to_vertex_buffer_default
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+					0.0,
+					0.0f,
+					NS_EGraphicCore::default_texture_atlas->get_atlas_size_x(),
+					NS_EGraphicCore::default_texture_atlas->get_atlas_size_y()
+				);
+
+				NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+			}
+	
 		
 
 		NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());

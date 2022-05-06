@@ -299,7 +299,10 @@ enum StyleList
 class EBrickStyle
 {
 public:
-	ETextureGabarite*									main_texture		= nullptr;
+	ETextureGabarite*									main_texture			= nullptr;
+	ETextureGabarite*									normal_map_texture		= nullptr;
+	ETextureGabarite*									gloss_map_texture		= nullptr;
+
 	std::string*										file_name			= new std::string("Group_bg");
 
 	float*												side_size_left		= new float (0.0f);

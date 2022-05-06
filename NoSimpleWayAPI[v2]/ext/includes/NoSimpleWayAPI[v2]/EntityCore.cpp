@@ -435,7 +435,9 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 		(
 			_button->button_gabarite,
 			last_layer,
-			_style->button_bg->main_texture
+			_style->button_bg->main_texture,
+			_style->button_bg->normal_map_texture,
+			_style->button_bg->gloss_map_texture
 		);
 	}
 	//_button->sprite_layer_list.pu
@@ -530,7 +532,7 @@ void EntityButton::add_description(std::string _text)
 
 	jc_text->offset_border[BorderSide::LEFT] = 5.0f;
 	jc_text->offset_border[BorderSide::RIGHT] = 5.0f;
-	*jc_text->offset_by_gabarite_size_x = 0.05f;
+	*jc_text->offset_by_gabarite_size_x = 0.00f;
 	*jc_text->offset_by_text_size_x = 0.00f;
 	jc_text->change_text(_text);
 
@@ -557,7 +559,9 @@ void EntityButton::add_description(std::string _text)
 	(
 		jc_clickable_area->region_gabarite,
 		jc_clickable_area->sprite_layer_list[0],
-		parent_button_group->selected_style->button_bg->main_texture
+		parent_button_group->selected_style->button_bg->main_texture,
+		parent_button_group->selected_style->button_bg->normal_map_texture,
+		parent_button_group->selected_style->button_bg->gloss_map_texture
 	);
 
 
@@ -654,7 +658,9 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 	(
 		ERegionGabarite::temporary_gabarite,
 		_but->sprite_layer_list[0],
-		_style->slider_bg->main_texture
+		_style->slider_bg->main_texture,
+		_style->slider_bg->normal_map_texture,
+		_style->slider_bg->gloss_map_texture
 	);
 
 	*_but->sprite_layer_list[0]->offset_y = *_but->parent_button_group->border_bottom;
@@ -698,8 +704,21 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 	*_but->button_gabarite->size_x = *_style->slider_inactive->main_texture->size_x_in_pixels;
 	*_but->button_gabarite->size_y = *_style->slider_inactive->main_texture->size_y_in_pixels;
 
-	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 0)->set_texture_gabarite(_style->slider_inactive->main_texture);
-	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 1)->set_texture_gabarite(_style->slider_active->main_texture);
+	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 0)->set_texture_gabarite
+	(
+		_style->slider_inactive->main_texture,
+		_style->slider_inactive->normal_map_texture,
+		_style->slider_inactive->gloss_map_texture
+	);
+
+	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 1)->set_texture_gabarite
+	(
+		_style->slider_active->main_texture,
+		_style->slider_active->normal_map_texture,
+		_style->slider_active->gloss_map_texture
+	);
+
+
 
 }
 

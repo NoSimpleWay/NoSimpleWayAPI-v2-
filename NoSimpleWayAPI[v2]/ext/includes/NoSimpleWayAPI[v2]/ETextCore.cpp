@@ -458,6 +458,7 @@ void ETextArea::generate_text()
 			str_lenght = temp_s.length();
 
 			x_adding = (*region_gabarite->size_x * *offset_by_gabarite_size_x) + (get_row_width(str) * *offset_by_text_size_x);
+			x_adding += offset_border[BorderSide::LEFT];
 			//_adding = *region_gabarite->size_y * *offset_by_gabarite_size_y + get_row_width(str) * *offset_by_text_size_y;
 
 
@@ -1075,13 +1076,43 @@ void ETextArea::change_text(std::string _text)
 		{
 			
 
-			int sym_id = (int)(_text[i]);
-			if (sym_id <= 0) { sym_id += 256; }
+			//if (i + 1 <= _text.size())
+			{
+				int sym_id = (int)(_text[i]);
+				if (sym_id <= 0) { sym_id += 256; }
+
+				x_size += font->advance[sym_id];
+
+				if
+				(
+					(x_size + offset_border[BorderSide::LEFT] + 5.0f >= *region_gabarite->size_x - offset_border[BorderSide::RIGHT])
+				)
+				{
+					//EInputCore::logger_param("text splitted", buffer);
+					//EInputCore::logger_param("size", x_size + offset_border[BorderSide::LEFT]);
+					//EInputCore::logger_param("border", *region_gabarite->size_x - offset_border[BorderSide::RIGHT]);
+					//std::cout << std::endl;
+					//if (_text[i] != ' '){ buffer += _text[i]; }
+					if (_text[min(i , _text.size() - 1)] != ' ')
+					{
+						buffer += "-\\n";
+					}
+					else
+					{
+						buffer += "\\n";
+					}
+					x_size = 0.0f;
+				}
+				else
+				{
+
+				}
+			}
 
 			//ignore space symbol after split
 			if
 			(
-				(i < 0)
+				(i == 0)
 				||
 				(
 					(_text[i] != ' ')
@@ -1091,25 +1122,7 @@ void ETextArea::change_text(std::string _text)
 			)
 			{ buffer += _text[i]; }
 
-			x_size += font->advance[sym_id];
 
-			if (x_size + offset_border[BorderSide::LEFT] >= *region_gabarite->size_x - offset_border[BorderSide::RIGHT])
-			{
-				//EInputCore::logger_param("text splitted", buffer);
-				//EInputCore::logger_param("size", x_size + offset_border[BorderSide::LEFT]);
-				//EInputCore::logger_param("border", *region_gabarite->size_x - offset_border[BorderSide::RIGHT]);
-				//std::cout << std::endl;
-				//if (_text[i] != ' '){ buffer += _text[i]; }
-				if (_text[min(i + 1, _text.size() - 1)] != ' ')
-				{buffer += "-\\n";}
-				else
-				{buffer += "\\n";}
-				x_size = 0.0f;
-			}
-			else
-			{
-				
-			}
 		}
 	}
 

@@ -386,7 +386,7 @@ EWindowMain::EWindowMain()
 
 						jc_button->sprite_layer_list.push_back (second_button_layer);
 
-						second_button_layer->make_as_PBR();
+						//second_button_layer->make_as_PBR();
 					}
 
 					//jc_button->add_description("123");
@@ -678,10 +678,10 @@ EWindowMain::EWindowMain()
 		);
 			*jc_text_area->can_be_edited = false;
 
-			*jc_text_area->offset_by_gabarite_size_x = 0.2;
+			*jc_text_area->offset_by_gabarite_size_x = 0.0;
 			*jc_text_area->offset_by_text_size_x = 0.0;
 
-			jc_text_area->offset_border[BorderSide::LEFT] = 65.0f;
+			jc_text_area->offset_border[BorderSide::LEFT] = 60.0f;
 			jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", data_entity));
 
 		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
