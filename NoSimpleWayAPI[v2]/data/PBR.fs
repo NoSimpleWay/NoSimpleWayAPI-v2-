@@ -70,7 +70,7 @@ vec3 sun_light_matte = vec3(1.5f, 1.5f, 1.0f);
 vec3 sun_light;
 
 vec3 sky_light_gloss = vec3(0.9f, 1.1f, 1.2f);
-vec3 sky_light_matte = vec3(1.0f, 1.0f, 1.0f);
+vec3 sky_light_matte = vec3(0.7f, 0.75f, 0.8f);
 vec3 sky_light;
 
 
@@ -100,7 +100,8 @@ void main()
 	//dist_x /= (1080.0f / 1920.0f);
 	
 	dist_total = length(vec2(dist_x, dist_y)) * (0.0f + 1.0f);
-	dist_total = clamp(1.0f - (dist_total - 0.075f) * (0.5f + gloss_power * gloss_power * gloss_power * 50.0f), 0.0f, 1.0f);
+	//dist_total = 1.0f - dist_total;
+	dist_total = clamp(1.0f - (dist_total - 0.075f )* (1.0f + gloss_power * 10.0), 0.0f, 1.0f);
 	
 	sun_light = (sun_light_gloss * gloss_power	+	sun_light_matte * (1.0f - gloss_power))	*	dist_total * 1.0f;
 	sky_light = (sky_light_gloss * gloss_power	+	sky_light_matte * (1.0f - gloss_power));
@@ -167,6 +168,7 @@ void main()
 	*
 	ourColor.rgb;
 	
+	//FragColor.rgb = vec3(dist_total);
 	FragColor.a = texture(texture1, TexCoord).a * ourColor.a;
 	//FragColor.rgb = vec3(dist_total);
 	//FragColor.rgb = vec3(reflect_coord.x, reflect_coord.y, 1.0f);

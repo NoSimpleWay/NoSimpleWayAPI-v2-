@@ -580,12 +580,18 @@ void EButtonGroup::calculate_culling_lines(EButtonGroup* _group)
 
 void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 {
-	for (EButtonGroup* group : _group->group_list)
-	if ((*group->need_redraw) && (true))
-	{
-			EButtonGroup::generate_brick_textured_bg(group);
+	//for (EButtonGroup* group : _group->group_list)
+	//if ((*group->need_redraw) && (true))
+	//{
+	//		EButtonGroup::generate_brick_textured_bg(group);
 
-			*group->need_redraw = false;
+	//		*group->need_redraw = false;
+	//}
+
+	if ((*_group->need_redraw))
+	{
+		EButtonGroup::generate_brick_textured_bg(_group);
+		*_group->need_redraw = false;
 	}
 
 	if (_group->background_sprite_layer != nullptr)
@@ -600,17 +606,17 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 		_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("Button group background");
 	}
 
-	if (_group->slider != nullptr)
-	{
-		for (change_style_action csa : _group->slider->action_on_change_style_list)
-		{
-			//csa(_group->slider, _group->selected_style);
+	//if (_group->slider != nullptr)
+	//{
+	//	for (change_style_action csa : _group->slider->action_on_change_style_list)
+	//	{
+	//		//csa(_group->slider, _group->selected_style);
 
-			//_group->slider->generate_vertex_buffer_for_all_sprite_layers();
-		}
-		_group->slider->set_world_position(*_group->slider->world_position_x, *_group->slider->world_position_y, *_group->slider->world_position_z);
-		_group->slider->generate_vertex_buffer_for_all_sprite_layers();
-	}
+	//		//_group->slider->generate_vertex_buffer_for_all_sprite_layers();
+	//	}
+	//	_group->slider->set_world_position(*_group->slider->world_position_x, *_group->slider->world_position_y, *_group->slider->world_position_z);
+	//	_group->slider->generate_vertex_buffer_for_all_sprite_layers();
+	//}
 
 	//if (group_row_list.empty())
 	{

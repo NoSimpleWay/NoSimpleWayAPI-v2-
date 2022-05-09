@@ -47,7 +47,7 @@ void Entity::draw_second_pass()
 }
 
 void Entity::generate_vertex_buffer_for_all_sprite_layers()
-{
+{	
 	if (!sprite_layer_list.empty())
 	{
 		for (ESpriteLayer* sl : sprite_layer_list)
@@ -77,7 +77,7 @@ void Entity::generate_vertex_buffer_for_all_sprite_layers()
 				//for (ETextArea* ta:c_regio)
 				if (c_region->text_area != nullptr)
 				{
-					//c_region->text_area->generate_rows();
+					//c_region->text_area->generate_rows();	
 					c_region->text_area->generate_text();
 				}
 			}
