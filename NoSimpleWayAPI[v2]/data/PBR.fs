@@ -26,7 +26,7 @@ uniform float free_top_light = 0.45f;
 uniform float direct_sun_matte_multiplier = 1.0f;
 
 uniform float sun_position_x = 0.5f;
-uniform float sun_position_y = 0.75f;
+uniform float sun_position_y = 0.5f;
 
 uniform float sun_zenith = 1.0f;
 
@@ -92,14 +92,14 @@ void main()
 	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 2.0f;
 	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 2.0f;
 	
-	reflect_pos_x = gl_FragCoord.x / 1920.0f + normal_x;
-	reflect_pos_y = WorldPosition.y / 1080.0f + normal_y;
+	reflect_pos_x = 0.333f + (gl_FragCoord.x / 1920.0f + normal_x) * 0.333f;
+	reflect_pos_y = 0.333f + (WorldPosition.y / 1080.0f + normal_y) * 0.333f;
 	
-	dist_x = reflect_pos_x - sun_position_x;
-	dist_y = reflect_pos_y - sun_position_y;
-	//dist_x /= (1080.0f / 1920.0f);
+	dist_x = (reflect_pos_x - sun_position_x);
+	dist_y = (reflect_pos_y - sun_position_y);
+	dist_x /= (1080.0f / 1920.0f);
 	
-	dist_total = length(vec2(dist_x, dist_y)) * (0.0f + 1.0f);
+	dist_total = length(vec2(dist_x, dist_y)) * (0.0f + 3.0f);
 	//dist_total = 1.0f - dist_total;
 	dist_total = clamp(1.0f - (dist_total - 0.075f )* (1.0f + gloss_power * 10.0), 0.0f, 1.0f);
 	
@@ -110,10 +110,10 @@ void main()
 	vec2
 	(
 		//base offset		screen position offset					//normal offset
-		0.3333f				+ reflect_pos_x * 0.3333f,
+		reflect_pos_x,
 		
 		
-		0.333f				+ reflect_pos_y * 0.333f
+		reflect_pos_y
 	);
 
 
