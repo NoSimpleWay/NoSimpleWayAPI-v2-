@@ -92,12 +92,12 @@ void main()
 	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 2.0f;
 	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 2.0f;
 	
-	reflect_pos_x = gl_FragCoord.x / 1920.0f + normal_x * 0.333f;
-	reflect_pos_y = WorldPosition.y / 1080.0f * (1.0f - abs(normal_y))	+	WorldPosition.z / 1080.0f * abs(normal_y) + normal_y * 0.333f;
+	reflect_pos_x = gl_FragCoord.x / 1920.0f + normal_x;
+	reflect_pos_y = WorldPosition.y / 1080.0f + normal_y;
 	
 	dist_x = reflect_pos_x - sun_position_x;
 	dist_y = reflect_pos_y - sun_position_y;
-	dist_x /= (1080.0f / 1920.0f);
+	//dist_x /= (1080.0f / 1920.0f);
 	
 	dist_total = length(vec2(dist_x, dist_y)) * (0.0f + 1.0f);
 	dist_total = clamp(1.0f - (dist_total - 0.075f) * (0.5f + gloss_power * gloss_power * gloss_power * 50.0f), 0.0f, 1.0f);
@@ -109,10 +109,10 @@ void main()
 	vec2
 	(
 		//base offset		screen position offset					//normal offset
-		0.3333f				+ reflect_pos_x * 0.3333f	+  normal_x * 0.333f * 0.0f,
+		0.3333f				+ reflect_pos_x * 0.3333f,
 		
 		
-		0.333f				+ reflect_pos_y * 0.333f	+ 0.333f * normal_y * 0.0f
+		0.333f				+ reflect_pos_y * 0.333f
 	);
 
 
@@ -168,6 +168,8 @@ void main()
 	ourColor.rgb;
 	
 	FragColor.a = texture(texture1, TexCoord).a * ourColor.a;
+	//FragColor.rgb = vec3(dist_total);
+	//FragColor.rgb = vec3(reflect_coord.x, reflect_coord.y, 1.0f);
 	//FragColor.rgb = texture(texture1, TexCoord).rgb * ourColor.rgb;
 	//FragColor.rgb =  (sky_light) * (1.0f - gloss_result) + (sun_light);
 	//FragColor.rgb =  vec3(sun_light);
