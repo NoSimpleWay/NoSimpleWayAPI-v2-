@@ -182,7 +182,7 @@ namespace NS_EGraphicCore
 	extern void set_target_FBO(unsigned int _framebuffer_id);
 
 	extern ETextureGabarite* get_gabarite_from_full_path_and_suffix(ETextureGabarite* _gabarite, std::string _suffix);
-
+	extern float global_normal_multiplier;
 };
 
 namespace NS_DefaultGabarites
