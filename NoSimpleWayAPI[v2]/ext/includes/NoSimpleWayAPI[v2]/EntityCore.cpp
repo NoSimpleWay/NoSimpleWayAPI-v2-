@@ -539,7 +539,12 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 	);
 
 	jc_clickable_area->sprite_layer_list.push_back(jc_sprite_layer);
+	
+	ETextArea* jc_text_area = ETextArea::create_centered_to_right_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "1.0");
+	jc_text_area->offset_border[BorderSide::RIGHT] = 6.0f;
+	*jc_text_area->can_be_edited = false;
 
+	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 	return jc_button;
 }
 

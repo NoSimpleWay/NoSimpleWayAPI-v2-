@@ -205,6 +205,7 @@ public:
 	static void set_region(ETextArea* _text_area, ERegionGabarite* _region_gabarite);
 	static ETextArea* create_base_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
 	static ETextArea* create_centered_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
+	static ETextArea* create_centered_to_right_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
 
 	void change_text(std::string _text);
 

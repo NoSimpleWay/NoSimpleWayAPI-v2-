@@ -422,11 +422,72 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 	EDataContainerRadialButton* data_container = (EDataContainerRadialButton*)_custom_data->data_container;
 	void* d_pointer = data_container->value_pointer;
 
-	if (*data_container->stored_type == StoredPointerType::STORED_TYPE_FLOAT)
-	{*_custom_data->get_sprite_by_id(0, 0, 1, 0)->offset_x = *(float*)(d_pointer) * 100.0f;}
+	ESprite* radial_sprite = _custom_data->get_sprite_by_id(0, 0, 0, 0);
+	ESprite* dot_sprite		= _custom_data->get_sprite_by_id(0, 0, 1, 0);
+	
+	//if (EClickableArea::active_clickable_region != nullptr)
+	//{*EClickableArea::active_clickable_region->region_gabarite->size_x += 10.0f * _d;}
 
-	_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
-	_entity->generate_vertex_buffer_for_all_sprite_layers();
+
+	float size = *((EntityButton*)_entity)->button_gabarite->size_y;
+	float value = 0.0f;
+	if
+	(
+		(d_pointer != nullptr)
+		&&
+		(EInputCore::MOUSE_BUTTON_LEFT)
+		&&
+		(
+			(EClickableArea::active_clickable_region == nullptr)
+			||
+			(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
+		)
+	)
+	{
+		if (*data_container->stored_type == StoredPointerType::STORED_TYPE_FLOAT)
+		{
+			if (EInputCore::MOUSE_POSITION_X <= *radial_sprite->world_position_x + size / 2.0f)
+			{*(float*)(d_pointer) += (EInputCore::MOUSE_SPEED_Y) * 0.002f;}
+			else
+			{*(float*)(d_pointer) -= (EInputCore::MOUSE_SPEED_Y) * 0.002f;}
+
+			if (EInputCore::MOUSE_POSITION_Y <= *radial_sprite->world_position_y + size / 2.0f)
+			{*(float*)(d_pointer) -= (EInputCore::MOUSE_SPEED_X) * 0.002f;}
+			else
+			{*(float*)(d_pointer) += (EInputCore::MOUSE_SPEED_X) * 0.002f;}
+
+			*(float*)(d_pointer) = min(*(float*)(d_pointer), *data_container->max_value);
+			*(float*)(d_pointer) = max(*(float*)(d_pointer), *data_container->min_value);
+
+			*dot_sprite->offset_x
+			=
+			size / 2.0f
+			- 
+			*dot_sprite->size_x / 2.0f
+			+
+			sin(*(float*)(d_pointer) * 6.28f * 0.8f + 0.628f ) * (size / 2.0f - 8.0f);
+
+
+
+
+			*dot_sprite->offset_y
+			=
+			size / 2.0f
+			-
+			*dot_sprite->size_x / 2.0f
+			+
+			cos(*(float*)(d_pointer) * 6.28f * 0.8f + 0.628f) * (size / 2.0f - 8.0f);
+
+			_custom_data->clickable_area_list[0]->text_area->change_text(std::to_string(*(float*)(d_pointer)));
+			
+		}
+
+
+		_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
+		_entity->generate_vertex_buffer_for_all_sprite_layers();
+	}
+
+
 
 	
 }

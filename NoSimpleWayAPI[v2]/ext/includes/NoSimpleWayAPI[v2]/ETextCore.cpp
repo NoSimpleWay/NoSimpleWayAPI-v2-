@@ -457,7 +457,20 @@ void ETextArea::generate_text()
 			temp_s = *str;
 			str_lenght = temp_s.length();
 
-			x_adding = (*region_gabarite->size_x * *offset_by_gabarite_size_x) + (get_row_width(str) * *offset_by_text_size_x);
+			x_adding
+			=
+			(
+				(
+					*region_gabarite->size_x
+					-
+					offset_border[BorderSide::RIGHT]
+				)
+				*
+				*offset_by_gabarite_size_x
+			)
+			+
+			(get_row_width(str) * *offset_by_text_size_x);
+
 			x_adding += offset_border[BorderSide::LEFT];
 			//_adding = *region_gabarite->size_y * *offset_by_gabarite_size_y + get_row_width(str) * *offset_by_text_size_y;
 
@@ -1040,6 +1053,30 @@ ETextArea* ETextArea::create_centered_text_area(EClickableArea* _region_gabarite
 	{
 		return nullptr;
 	}
+}
+
+ETextArea* ETextArea::create_centered_to_right_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text)
+{
+	if (_region_gabarite != nullptr)
+	{
+		ETextArea* jc_text_area = create_base_text_area(_region_gabarite, _font, _text);
+
+		*jc_text_area->offset_by_gabarite_size_x = 1.0f;
+		*jc_text_area->offset_by_gabarite_size_y = 0.5f;
+
+		*jc_text_area->offset_by_text_size_x = -1.0f;
+		*jc_text_area->offset_by_text_size_y = -0.5f;
+
+		//*jc_text_area->can_be_edited = false;
+
+
+		return jc_text_area;
+	}
+	else
+	{
+		return nullptr;
+	}
+
 }
 
 void ETextArea::change_text(std::string _text)
