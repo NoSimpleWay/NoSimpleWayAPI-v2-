@@ -26,9 +26,12 @@ uniform float free_top_light = 0.45f;
 uniform float direct_sun_matte_multiplier = 1.0f;
 
 uniform float sun_position_x = 0.5f;
-uniform float sun_position_y = 0.5f;
+uniform float sun_position_y = 0.55f;
 
 uniform float sun_zenith = 1.0f;
+
+uniform float normal_map_multiplier = 1.0f;
+uniform float gloss_map_multiplier = 1.0f;
 
 uniform float screen_offset_x;
 uniform float screen_offset_y;
@@ -78,7 +81,7 @@ float AO_bottom_shade_factor;
 
 void main()
 {
-	gloss_power = texture(texture1, GlossMapTexCoord).b;
+	gloss_power = min(texture(texture1, GlossMapTexCoord).b * gloss_map_multiplier, 1.0f);
 	//gloss_power = 0.2f;
 	level = (1.0f - gloss_power) * 4.0f;
 	
@@ -89,8 +92,8 @@ void main()
 	interpolation_A = 1.0f - interpolation_B;
 	
 	
-	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 2.0f;
-	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 2.0f;
+	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 2.0f * normal_map_multiplier;
+	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 2.0f * normal_map_multiplier;
 	
 	reflect_pos_x = 0.333f * (normal_x + 1.0f)		+ (gl_FragCoord.x / 1920.0f		* (1.0f - abs(normal_x)))	* 0.333f + 0.333 / 2.0f * abs(normal_x);
 	reflect_pos_y = 0.333f * (normal_y + 1.0f)		+ (WorldPosition.y / 1080.0f	* (1.0f - abs(normal_y)))	* 0.333f + 0.333 / 2.0f * abs(normal_y);

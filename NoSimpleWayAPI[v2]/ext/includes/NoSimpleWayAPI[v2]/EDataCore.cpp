@@ -431,6 +431,19 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 
 	float size = *((EntityButton*)_entity)->button_gabarite->size_y;
 	float value = 0.0f;
+	float shift_multiplier = 1.0f;
+	float direction_x = 1.0f;
+
+	if (EInputCore::MOUSE_SPEED_X < 0.0f) { direction_x = -1.0f; }
+
+	if
+	(
+		(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+		||
+		(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
+	)
+	{shift_multiplier = 0.1f;}
+
 	if
 	(
 		(d_pointer != nullptr)
@@ -446,15 +459,17 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 	{
 		if (*data_container->stored_type == StoredPointerType::STORED_TYPE_FLOAT)
 		{
-			if (EInputCore::MOUSE_POSITION_X <= *radial_sprite->world_position_x + size / 2.0f)
-			{*(float*)(d_pointer) += (EInputCore::MOUSE_SPEED_Y) * 0.002f;}
-			else
-			{*(float*)(d_pointer) -= (EInputCore::MOUSE_SPEED_Y) * 0.002f;}
+			//if (EInputCore::MOUSE_POSITION_X <= *radial_sprite->world_position_x + size / 2.0f)
+			//{*(float*)(d_pointer) += (EInputCore::MOUSE_SPEED_Y) * 0.002f;}
+			//else
+			//{*(float*)(d_pointer) -= (EInputCore::MOUSE_SPEED_Y) * 0.002f;}
 
-			if (EInputCore::MOUSE_POSITION_Y <= *radial_sprite->world_position_y + size / 2.0f)
-			{*(float*)(d_pointer) -= (EInputCore::MOUSE_SPEED_X) * 0.002f;}
-			else
-			{*(float*)(d_pointer) += (EInputCore::MOUSE_SPEED_X) * 0.002f;}
+			//if (EInputCore::MOUSE_POSITION_Y <= *radial_sprite->world_position_y + size / 2.0f)
+			//{*(float*)(d_pointer) -= (EInputCore::MOUSE_SPEED_X) * 0.002f;}
+			//else
+			//{*(float*)(d_pointer) += (EInputCore::MOUSE_SPEED_X) * 0.002f;}
+
+			*(float*)(d_pointer) += pow(EInputCore::MOUSE_SPEED_X, 2) * direction_x * 0.001f * shift_multiplier; 
 
 			*(float*)(d_pointer) = min(*(float*)(d_pointer), *data_container->max_value);
 			*(float*)(d_pointer) = max(*(float*)(d_pointer), *data_container->min_value);

@@ -209,7 +209,7 @@ class EDataContainerRadialButton : public EDataContainer
 {
 public:
 	float* min_value = new float(0.0f);
-	float* max_value = new float(1.0f);
+	float* max_value = new float(5.0f);
 
 	void* value_pointer = nullptr;
 

@@ -29,6 +29,8 @@ void EWindowMain::draw_additional(float _d)
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_screen_size(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_zoom(1.0f);
 
+
+
 	for (int j = 0; j < CLUSTER_DIM_X; j++)
 	for (int i = 0; i < CLUSTER_DIM_Y; i++)
 	{
@@ -752,7 +754,7 @@ EWindowMain::EWindowMain()
 	/////		world parameter		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	main_button_group = EButtonGroup::create_root_button_group
-	(new ERegionGabarite(400.0f, 20.0f, 0.0f, 200, 100.0f), EGUIStyle::active_style);
+	(new ERegionGabarite(400.0f, 20.0f, 0.0f, 200, 160.0f), EGUIStyle::active_style);
 	main_button_group->root_group = main_button_group;
 	*main_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	*main_button_group->stretch_mode = GroupStretchMode::CONSTANT;
@@ -762,15 +764,25 @@ EWindowMain::EWindowMain()
 		*jc_button_group->stretch_x_by_parent_size = true;
 		*jc_button_group->stretch_y_by_parent_size = true;
 
-		jc_button = EntityButton::create_default_radial_button
-		(
-			new ERegionGabarite(100.0f, 38.0f),
-			jc_button_group
-		);
+			jc_button = EntityButton::create_default_radial_button
+			(
+				new ERegionGabarite(100.0f, 38.0f),
+				jc_button_group
+			);
 
-		((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::global_normal_multiplier;
+			((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::global_normal_multiplier;
 
-		jc_button_group->button_list.push_back(jc_button);
+			jc_button_group->button_list.push_back(jc_button);
+			// // // // // // //
+			jc_button = EntityButton::create_default_radial_button
+			(
+				new ERegionGabarite(100.0f, 38.0f),
+				jc_button_group
+			);
+
+			((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::global_gloss_multiplier;
+
+			jc_button_group->button_list.push_back(jc_button);
 
 
 	group_list.push_back(main_button_group);

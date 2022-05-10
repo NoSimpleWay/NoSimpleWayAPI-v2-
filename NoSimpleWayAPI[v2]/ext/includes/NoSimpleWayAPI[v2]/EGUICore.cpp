@@ -50,9 +50,27 @@ void EWindow::draw_additional(float _d)
 
 void EWindow::GUI_draw_default(float _d)
 {
+
+
+
 	for (EButtonGroup* b_group : group_list)
 	if ((b_group != nullptr) && (*b_group->is_active))
 	{
+		for (int i = 0; i < texture_skydome_levels; i++)
+		{
+			glActiveTexture(GL_TEXTURE1 + i);
+
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+
+			glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());//1
+			NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", i + 1);
+		}
+
+		NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("normal_map_multiplier",	NS_EGraphicCore::global_normal_multiplier);
+		NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("gloss_map_multiplier",	NS_EGraphicCore::global_gloss_multiplier);
 		b_group->draw();
 	}
 }
@@ -168,6 +186,8 @@ void EButtonGroup::draw()
 	//EInputCore::logger_simple_success("draw button group");
 	batcher_for_default_draw->draw_call();
 
+	
+
 	glDisable(GL_SCISSOR_TEST);
 	//glDisable(GL_SCISSOR_TEST);
 	/* */if (root_group == this)
@@ -223,7 +243,7 @@ void EButtonGroup::draw()
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
 	}
-
+	
 	NS_EGraphicCore::pbr_batcher->draw_call();
 	batcher_for_default_draw->draw_call();
 

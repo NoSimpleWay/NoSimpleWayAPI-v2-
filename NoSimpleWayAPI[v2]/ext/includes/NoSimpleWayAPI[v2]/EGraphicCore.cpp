@@ -33,10 +33,11 @@ namespace NS_EGraphicCore
 	float							delta_time;
 	float							saved_time_for_delta;
 
-	float							current_offset_x	= 0.0f;
-	float							current_offset_y	= 0.0f;
-	float							current_zoom		= 1.0f;
-	float							global_normal_multiplier = 1.0f;
+	float							current_offset_x			= 0.0f;
+	float							current_offset_y			= 0.0f;
+	float							current_zoom				= 1.0f;
+	float							global_normal_multiplier	= 1.0f;
+	float							global_gloss_multiplier		= 1.0f;
 
 	EColor_4 active_color[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
 
@@ -179,19 +180,7 @@ void ERenderBatcher::draw_call()
 
 		//batcher_shader->setInt("texture1", 0);
 
-		if (gl_vertex_attribute_total_count >= 10)
-		{
-			for (int i = 0; i < texture_skydome_levels; i++)
-			{
-				glActiveTexture(GL_TEXTURE1 + i);
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());//1
-				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", i + 1);
-			}
-		}
+
 
 
 		glBindBuffer(GL_ARRAY_BUFFER, VAO);
