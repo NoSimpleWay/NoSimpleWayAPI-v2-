@@ -142,11 +142,15 @@ public:
 	static EntityButton* create_default_clickable_button
 	(
 		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_row,
+		EButtonGroup*		_parent_group,
 		data_action_pointer _dap
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
-		
-
+	);
+	
+	static EntityButton* create_default_radial_button
+	(
+		ERegionGabarite*	_region_gabarite,
+		EButtonGroup*		_parent_group
 	);
 
 	bool can_get_access_to_style();

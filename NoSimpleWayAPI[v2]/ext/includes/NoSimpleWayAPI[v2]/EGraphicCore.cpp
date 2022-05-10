@@ -36,6 +36,7 @@ namespace NS_EGraphicCore
 	float							current_offset_x	= 0.0f;
 	float							current_offset_y	= 0.0f;
 	float							current_zoom		= 1.0f;
+	float							global_normal_multiplier = 1.0f;
 
 	EColor_4 active_color[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
 

@@ -414,6 +414,23 @@ void EDataActionCollection::action_switch_description(Entity* _entity, ECustomDa
 
 }
 
+void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	//*_custom_data->get_sprite_by_id(0, 0, 1, 0)->offset_x = (rand() % 100) * 1.0f;
+	//_entity->
+
+	EDataContainerRadialButton* data_container = (EDataContainerRadialButton*)_custom_data->data_container;
+	void* d_pointer = data_container->value_pointer;
+
+	if (*data_container->stored_type == StoredPointerType::STORED_TYPE_FLOAT)
+	{*_custom_data->get_sprite_by_id(0, 0, 1, 0)->offset_x = *(float*)(d_pointer) * 100.0f;}
+
+	_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
+	_entity->generate_vertex_buffer_for_all_sprite_layers();
+
+	
+}
+
 /*
 bool EClickableRegion::overlapped_by_mouse(EClickableRegion* _region)
 {
@@ -1625,4 +1642,12 @@ void ETextParser::do_action(std::string _action_text, std::string _value)
 	{
 		last_created_data_tag->tag_value_list.push_back(new std::string  (_value));
 	}
+}
+
+EDataContainerRadialButton::~EDataContainerRadialButton()
+{
+	delete min_value;
+	delete max_value;
+	delete current_percent;
+	delete stored_type;
 }

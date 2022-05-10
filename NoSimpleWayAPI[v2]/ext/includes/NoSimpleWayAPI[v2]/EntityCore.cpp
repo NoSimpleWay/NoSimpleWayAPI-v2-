@@ -492,6 +492,57 @@ EntityButton* EntityButton::create_default_clickable_button(ERegionGabarite* _re
 	return jc_button;
 }
 
+EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group)
+{
+	EntityButton* jc_button = create_default_button_with_custom_data(_region_gabarite, _parent_group);
+	unsigned int square_size = min(*_region_gabarite->size_x, *_region_gabarite->size_y);
+
+	EClickableArea* jc_clickable_area = EClickableArea::create_default_clickable_region
+	(
+		_region_gabarite,
+		jc_button,
+		EntityButton::get_last_custom_data(jc_button)
+	);
+
+
+
+	jc_clickable_area->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
+	
+	ECustomData* last_data = Entity::get_last_custom_data(jc_button);
+	last_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
+
+	last_data->clickable_area_list.push_back(jc_clickable_area);
+	last_data->actions_on_update.push_back(&EDataActionCollection::action_update_radial_button);
+
+
+	//create data container
+	EDataContainerRadialButton* jc_data_container = new EDataContainerRadialButton();
+	last_data->data_container = jc_data_container;
+
+	ESpriteLayer* jc_sprite_layer = ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+	(
+		NS_EGraphicCore::load_from_textures_folder("buttons/radiance_button"),
+
+		0.0f,
+		0.0f,
+		0.0f,
+
+		square_size,
+		square_size,
+		0.0f
+	);
+
+	ESpriteLayer::add_new_default_frame_with_sprite
+	(
+		NS_EGraphicCore::load_from_textures_folder("buttons/radiance_button_dot"),
+		jc_sprite_layer
+	);
+
+	jc_clickable_area->sprite_layer_list.push_back(jc_sprite_layer);
+
+	return jc_button;
+}
+
 bool EntityButton::can_get_access_to_style()
 {
 	return false;

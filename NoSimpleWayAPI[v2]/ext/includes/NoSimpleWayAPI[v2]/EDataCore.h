@@ -198,6 +198,29 @@ public:
 	~EDataContainerScrollBar();
 	//EButtonGroup* parent_button_group;
 };
+
+enum class StoredPointerType
+{
+	STORED_TYPE_FLOAT,
+	STORED_TYPE_INT
+};
+
+class EDataContainerRadialButton : public EDataContainer
+{
+public:
+	float* min_value = new float(0.0f);
+	float* max_value = new float(1.0f);
+
+	void* value_pointer = nullptr;
+
+	float* current_percent = new float(0.0f);
+	float* step_multiplier = new float(1.0f);
+
+	StoredPointerType* stored_type = new StoredPointerType(StoredPointerType::STORED_TYPE_FLOAT);
+
+	~EDataContainerRadialButton();
+	//EButtonGroup* parent_button_group;
+};
 //////////////////////////////////////////////////////////////////////
 // actions section
 //////////////////////////////////////////////////////////////////////
@@ -216,6 +239,8 @@ namespace EDataActionCollection
 	void action_delete_entity				(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_switch_description			(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_update_radial_button		(Entity* _entity, ECustomData* _custom_data, float _d);
 }
 
 enum ActiveParserMode
