@@ -748,6 +748,34 @@ EWindowMain::EWindowMain()
 	EButtonGroup::refresh_button_group(main_button_group);
 
 
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	/////		world parameter		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	main_button_group = EButtonGroup::create_root_button_group
+	(new ERegionGabarite(20.0f, 20.0f, 0.0f, 200, 100.0f), EGUIStyle::active_style);
+	main_button_group->root_group = main_button_group;
+	*main_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	*main_button_group->stretch_mode = GroupStretchMode::CONSTANT;
+
+	jc_button_group = main_button_group->add_group
+		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 580.0f), EGUIStyle::active_style));
+		*jc_button_group->stretch_x_by_parent_size = true;
+		*jc_button_group->stretch_y_by_parent_size = true;
+
+		jc_button = EntityButton::create_default_radial_button
+		(
+			new ERegionGabarite(100.0f, 38.0f),
+			jc_button_group
+		);
+
+		((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->min_value = &NS_EGraphicCore::global_normal_multiplier;
+
+		jc_button_group->button_list.push_back(jc_button);
+
+
+	group_list.push_back(main_button_group);
+	EButtonGroup::refresh_button_group(main_button_group);
+
 }
 
 EWindowMain::~EWindowMain()
