@@ -15,7 +15,7 @@ uniform sampler2D texture1;
 uniform sampler2D normal_map_texture;
 uniform sampler2D gloss_map_texture;
 
-uniform sampler2D SD_array[6];
+uniform sampler2D SD_array[7];
 
 
 
@@ -73,7 +73,7 @@ vec3 sun_light_matte = vec3(1.5f, 1.5f, 1.0f);
 vec3 sun_light;
 
 vec3 sky_light_gloss = vec3(0.9f, 1.1f, 1.2f);
-vec3 sky_light_matte = vec3(1.0f, 1.0f, 1.0f);
+vec3 sky_light_matte = vec3(0.85f, 0.875f, 0.9f);
 vec3 sky_light;
 
 
@@ -81,12 +81,14 @@ float AO_bottom_shade_factor;
 
 void main()
 {
+	
 	gloss_power = min(texture(texture1, GlossMapTexCoord).b * gloss_map_multiplier, 1.0f);
 	//gloss_power = 0.2f;
 	level = (1.0f - gloss_power) * 4.0f;
+	//level = 0.0f;
 	
 	glossy_flat = clamp(int(floor(level)), 0, 4);
-	//glossy_flat = 0;
+	//glossy_flat = 4 - glossy_flat;
 	
 	interpolation_B = level - glossy_flat;
 	interpolation_A = 1.0f - interpolation_B;
@@ -180,6 +182,7 @@ void main()
 	//FragColor.rgb =  vec3(sun_light);
 	//FragColor.rgb =  vec3(texture(texture1, NormalMapTexCoord));	FragColor.a = 1.0;
 	//FragColor.rgb =  vec3(texture(texture1, GlossMapTexCoord));	FragColor.a = 1.0;
+	//FragColor.rgb =  vec3(c_r, c_g, c_b);	FragColor.a = 1.0;
 
 }
 

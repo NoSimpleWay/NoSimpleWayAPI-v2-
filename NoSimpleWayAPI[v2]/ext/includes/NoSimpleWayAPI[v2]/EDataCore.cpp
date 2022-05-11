@@ -336,7 +336,12 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	if (((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
+	if
+	(
+		(EButtonGroup::focused_button_group == ((EntityButton*)_entity)->parent_button_group)
+		&&
+		(((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
+	)
 	{
 		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.35f);
 		ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
@@ -451,8 +456,6 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 		(EInputCore::MOUSE_BUTTON_LEFT)
 		&&
 		(
-			(EClickableArea::active_clickable_region == nullptr)
-			||
 			(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
 		)
 	)
@@ -857,12 +860,11 @@ void EClickableArea::check_all_catches()
 		(EInputCore::MOUSE_BUTTON_LEFT)
 	)
 	{
-
-		if (EClickableArea::active_clickable_region == nullptr) { EClickableArea::active_clickable_region = this; }
+		 //EClickableArea::active_clickable_region = this; 
 	}
 	else
 	{
-		if (EClickableArea::active_clickable_region == this) { EClickableArea::active_clickable_region = nullptr; }
+		//if (EClickableArea::active_clickable_region == this) { EClickableArea::active_clickable_region = nullptr; }
 	}
 	
 }
@@ -914,12 +916,15 @@ void EClickableArea::update(float _d)
 		check_all_catches();
 	}
 
-
 	//left click
 	for (data_action_pointer dap : actions_on_click_list)
 	if
 	(
 		(dap != nullptr)
+		&&
+		(parent_entity != nullptr)
+		&&
+		(EButtonGroup::focused_button_group == ((EntityButton*)parent_entity)->parent_button_group)
 		&&
 		(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
 		&&
@@ -934,6 +939,10 @@ void EClickableArea::update(float _d)
 	if
 	(
 		(dap != nullptr)
+		&&
+		(parent_entity != nullptr)
+		&&
+		(EButtonGroup::focused_button_group == ((EntityButton*)parent_entity)->parent_button_group)
 		&&
 		(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
 		&&
@@ -984,7 +993,9 @@ void EClickableArea::draw()
 		}
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_left));
-		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_left)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_left)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		//if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
 		ERenderBatcher::check_batcher(batcher_for_default_draw);
 
@@ -1003,7 +1014,8 @@ void EClickableArea::draw()
 		);
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_right));
-		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_right)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_right)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
 		ERenderBatcher::check_batcher(batcher_for_default_draw);
 
@@ -1022,7 +1034,8 @@ void EClickableArea::draw()
 		);
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_down));
-		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_down)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_down)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
 		ERenderBatcher::check_batcher(batcher_for_default_draw);
 
@@ -1041,7 +1054,8 @@ void EClickableArea::draw()
 		);
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_up));
-		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_up)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_up)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
 		ERenderBatcher::check_batcher(batcher_for_default_draw);
 
@@ -1060,7 +1074,8 @@ void EClickableArea::draw()
 		);
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_mid));
-		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_mid)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_mid)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
 		ERenderBatcher::check_batcher(batcher_for_default_draw);
 
@@ -1080,7 +1095,8 @@ void EClickableArea::draw()
 
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_body));
-		if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_body)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_body)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
 		if (*catched_body)
 		{

@@ -109,6 +109,7 @@ int main()
 		
 		EButtonGroup::focused_button_group_with_slider = nullptr;
 		EButtonGroup::focused_button_group = nullptr;
+		if (!EInputCore::MOUSE_BUTTON_LEFT) { EClickableArea::active_clickable_region = nullptr; }
 
 		/*if (*EClickableArea::active_clickable_region->parent_entity->disable_draw)
 		{
@@ -196,8 +197,9 @@ int main()
 	
 		
 
-		NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
-
+	//	NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
+			//glActiveTexture(GL_TEXTURE0);
+			//glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());//1
 		///reset input states
 		glfwSwapBuffers(NS_EGraphicCore::main_window);
 

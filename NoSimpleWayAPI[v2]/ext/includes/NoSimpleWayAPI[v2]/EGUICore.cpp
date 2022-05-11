@@ -29,6 +29,17 @@ void EWindow::GUI_update_default(float _d)
 		EButtonGroup::get_last_focused_group(b_group);
 	}
 
+	if (EButtonGroup::focused_button_group != nullptr)
+	{
+		for (EntityButton* but : EButtonGroup::focused_button_group->button_list)
+		for (ECustomData* data:but->custom_data_list)
+		for (EClickableArea* c_area:data->clickable_area_list)
+		if ((!EInputCore::MOUSE_BUTTON_LEFT)&&(*c_area->catched_body))
+		{
+			EClickableArea::active_clickable_region = c_area;
+		}
+	}
+
 	for (EButtonGroup* b_group : group_list)
 	if ((b_group != nullptr) && (*b_group->is_active))
 	{
@@ -56,21 +67,7 @@ void EWindow::GUI_draw_default(float _d)
 	for (EButtonGroup* b_group : group_list)
 	if ((b_group != nullptr) && (*b_group->is_active))
 	{
-		for (int i = 0; i < texture_skydome_levels; i++)
-		{
-			glActiveTexture(GL_TEXTURE1 + i);
-
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-
-			glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());//1
-			NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", i + 1);
-		}
-
-		NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("normal_map_multiplier",	NS_EGraphicCore::global_normal_multiplier);
-		NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("gloss_map_multiplier",	NS_EGraphicCore::global_gloss_multiplier);
+		
 		b_group->draw();
 	}
 }
@@ -190,7 +187,8 @@ void EButtonGroup::draw()
 
 	glDisable(GL_SCISSOR_TEST);
 	//glDisable(GL_SCISSOR_TEST);
-	/* */if (root_group == this)
+	//		SHADOW		//
+	/* */if ((root_group == this) && (false))
 	/* */ {
 	/* */	NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLACK, 0.335f);
 	/* */	if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
@@ -209,28 +207,42 @@ void EButtonGroup::draw()
 
 	glEnable(GL_SCISSOR_TEST);
 
+	glScissor
+	(
+		*region_gabarite->world_position_x,
+		*lower_culling_line_for_bg,
+
+		*region_gabarite->size_x,
+		max(0.0f, *higher_culling_line_for_bg - *lower_culling_line_for_bg)
+	);
 	//BG
 	if ((background_sprite_layer != nullptr)&&(*have_bg))
 	{
 		
-		glScissor
-		(
-			*region_gabarite->world_position_x,
-			*lower_culling_line_for_bg,
-
-			*region_gabarite->size_x,
-			max(0.0f, *higher_culling_line_for_bg - *lower_culling_line_for_bg)
-		);
+		
 
 		background_sprite_layer->transfer_vertex_buffer_to_batcher();
-
-		
-		
 	}
 
 	if (EButtonGroup::focused_button_group == this)
 	{
-		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.073f);
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.13f);
+		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			batcher_for_default_draw->vertex_buffer,
+			batcher_for_default_draw->last_vertice_buffer_index,
+			*region_gabarite->world_position_x + 0.0f,
+			*region_gabarite->world_position_y + 0.0f,
+			*region_gabarite->size_x - 0.0f,
+			*region_gabarite->size_y - 0.0f,
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+	}
+
+	if (EButtonGroup::focused_button_group_with_slider == this)
+	{
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLUE, 0.13f);
 		if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
@@ -1509,7 +1521,7 @@ EButtonGroup* EButtonGroup::create_invisible_button_group(ERegionGabarite* _regi
 		bgroup_darken_bg
 	);
 
-	*just_created_button_group->can_be_focused = false;
+	//*just_created_button_group->can_be_focused = false;
 
 	return just_created_button_group;
 }
