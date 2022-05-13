@@ -238,6 +238,7 @@ public:
 
 	EntityButton*					pointer_to_search_bar;
 	EButtonGroup*					pointer_to_group_with_data_entities;
+	EButtonGroup*					pointer_to_group_item_receiver;
 
 };
 
@@ -246,28 +247,36 @@ class EDataContainerEntityDataHolder : public EDataContainer
 public:
 	EDataEntity* stored_data_entity;
 };
+
+class EDataContainerStoreTargetGroup : public EDataContainer
+{
+public:
+	EButtonGroup* target_group;
+};
 //////////////////////////////////////////////////////////////////////
 // actions section
 //////////////////////////////////////////////////////////////////////
 
 namespace EDataActionCollection
 {
-	void action_log_text					(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_player_control				(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_update_slider				(Entity* _entity, ECustomData* _custom_data, float _d);
-	//void action_change_style				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_log_text						(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_player_control					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_update_slider					(Entity* _entity, ECustomData* _custom_data, float _d);
+	//void action_change_style					(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_highlight_button_if_overlap (Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_select_this_style			(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_close_root_group			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_highlight_button_if_overlap		(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_style				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_close_root_group				(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_delete_entity				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_delete_entity					(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_switch_description			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_switch_description				(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_update_radial_button		(Entity* _entity, ECustomData* _custom_data, float _d);
-	//void action_type_text					(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_type_text					(ETextArea* _text_area);
+	void action_update_radial_button			(Entity* _entity, ECustomData* _custom_data, float _d);
+	//void action_type_text						(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_type_text						(ETextArea* _text_area);
+	void action_open_data_entity_filter_group	(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_item_to_group_receiver		(Entity* _entity, ECustomData* _custom_data, float _d);
 
 }
 

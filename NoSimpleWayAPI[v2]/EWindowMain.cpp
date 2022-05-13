@@ -198,7 +198,7 @@ EWindowMain::EWindowMain()
 
 	////////////////////////////////////////////////
 	//main button group
-	main_button_group = EButtonGroup::create_root_button_group
+	main_button_group = EButtonGroup::create_button_group_without_bg
 	(
 		new ERegionGabarite(1920.0f, 1000.0f),
 		EGUIStyle::active_style
@@ -297,15 +297,20 @@ EWindowMain::EWindowMain()
 
 					float vertical_borders = *group_side->border_left + *group_side->border_right;
 
-
-					EntityButton*
-
 					//add new button
+					EntityButton*
 					small_button = EntityButton::create_default_clickable_button
-					(new ERegionGabarite(130.0f, 18.0f), group_side, nullptr);
+					(
+						new ERegionGabarite(130.0f, 18.0f),
+						group_side,
+						&EDataActionCollection::action_open_data_entity_filter_group
+					);
+					
+					EDataContainerStoreTargetGroup* data_store_target_group = new EDataContainerStoreTargetGroup();
+					EntityButton::get_last_custom_data(small_button)->data_container = data_store_target_group;
 
 					jc_text_area = ETextArea::create_centered_text_area
-					(EntityButton::get_last_clickable_area(small_button), EFont::font_list[0], "Add new button");
+					(EntityButton::get_last_clickable_area(small_button), EFont::font_list[0], "Add new item");
 
 					*jc_text_area->can_be_edited = false;
 					Entity::add_text_area_to_last_clickable_region(small_button, jc_text_area);
@@ -341,6 +346,8 @@ EWindowMain::EWindowMain()
 					*group_for_items->stretch_y_by_parent_size = true;
 
 					massive_game_item->add_group(group_for_items);
+
+					data_store_target_group->target_group = group_for_items;
 				////////////////////////
 
 
@@ -353,53 +360,19 @@ EWindowMain::EWindowMain()
 
 				for (int i = 0; i < button_count; i++)
 				{
-					//button with clickable region, and brick bg
-					jc_button = EntityButton::create_default_clickable_button
-					(new ERegionGabarite(44.0f, 44.0f), group_for_items,	nullptr);
-
-					//delete action on right click
-					Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
-					
-					group_for_items->button_list.push_back(jc_button);
-
 					int selected_data_entity = rand() % EDataEntity::data_entity_list.size();
 
-					ETextureGabarite* item_icon
-					=
-					NS_EGraphicCore::load_from_textures_folder
-					("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_list[selected_data_entity]));
+					//button with clickable region, and brick bg
+					jc_button = EntityButton::create_item_button
+					(
+						nullptr,
+						group_for_items,
+						EDataEntity::data_entity_list[selected_data_entity]
+					);
 
-					if (item_icon != nullptr)
-					{
-						float resize_factor = 38.0f / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
-						resize_factor = min(resize_factor, 1.0f);
-
-						ESpriteLayer* second_button_layer =
-						ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-						(item_icon,
-							(44.0f - *item_icon->size_x_in_pixels * resize_factor) / 2.0f,
-							(44.0f - *item_icon->size_y_in_pixels * resize_factor) / 2.0f,
-							3.0f,
-
-							*item_icon->size_x_in_pixels * resize_factor,
-							*item_icon->size_y_in_pixels * resize_factor,
-							0.0f
-						);
-
-						jc_button->sprite_layer_list.push_back (second_button_layer);
-
-						//second_button_layer->make_as_PBR();
-					}
-
-					//jc_button->add_description("123");
-					jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", EDataEntity::data_entity_list[selected_data_entity]));
+					group_for_items->button_list.push_back(jc_button);
 					
-					//add 2nd layer (icon)
-					//if (DataEntityUtils::get_tag_value_by_name(0, "icon path", data_entity) != "")
-					
-					{
 
-					}
 			}
 		}
 	
@@ -621,16 +594,18 @@ EWindowMain::EWindowMain()
 	main_button_group->root_group = main_button_group;
 	*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	*main_button_group->stretch_mode = GroupStretchMode::CONSTANT;
-	
+	EButtonGroup::data_entity_filter = main_button_group;
+
 	EDataContainerDataEntitySearchGroup* jc_data_container_for_search_group= new EDataContainerDataEntitySearchGroup();
 	main_button_group->data_container = jc_data_container_for_search_group;
+	*main_button_group->is_active = false;
 	// // //	DATA ENTITY LIST	// // //
 	jc_button_group = main_button_group->add_group
 	(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 480.0f), EGUIStyle::active_style));
 	*jc_button_group->stretch_x_by_parent_size = true;
 	*jc_button_group->stretch_y_by_parent_size = true;
 		jc_data_container_for_search_group->pointer_to_group_with_data_entities = jc_button_group;
-
+		
 	unsigned int counter = 0;
 	for (EDataEntity* data_entity: EDataEntity::data_entity_list)
 	{
@@ -638,12 +613,14 @@ EWindowMain::EWindowMain()
 		(
 			new ERegionGabarite(260.0f, 44.0f),
 			jc_button_group,
-			nullptr
+			&EDataActionCollection::action_add_item_to_group_receiver
 		);
 
-		//EDataContainerEntityDataHolder* data_holder = new EDataContainerEntityDataHolder();
-		//data_holder->stored_data_entity = data_entity;
-		//jc_button->custom_data_list[0]->data_container = data_holder;
+		
+		EDataContainerEntityDataHolder* data_holder = new EDataContainerEntityDataHolder();
+		data_holder->stored_data_entity = data_entity;
+		EntityButton::get_last_custom_data(jc_button)->data_container = data_holder;
+
 		//EInputCore::logger_param("size of tag list", data_holder->stored_data_entity->tag_list.size());
 
 		jc_button->pointer_to_data_entity = data_entity;

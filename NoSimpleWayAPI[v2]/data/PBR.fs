@@ -19,7 +19,7 @@ uniform sampler2D SD_array[7];
 
 
 
-uniform float brightness_multiplier = 1.0f;
+uniform float brightness_multiplier = 1.5f;
 uniform float input_gloss = 1.0f;
 uniform float skydome_light_power = 1.0f;
 uniform float free_top_light = 0.45f;
@@ -156,6 +156,8 @@ void main()
 		c_b = clamp ((texture(SD_array[4], reflect_coord).b) * brightness_multiplier, 0.0f, 1.8f);
 	}
 	
+
+	
 	gloss_result = gloss_power;
 	
 	
@@ -182,6 +184,7 @@ void main()
 	//FragColor.rgb =  vec3(sun_light);
 	//FragColor.rgb =  vec3(texture(texture1, NormalMapTexCoord));	FragColor.a = 1.0;
 	//FragColor.rgb =  vec3(texture(texture1, GlossMapTexCoord));	FragColor.a = 1.0;
+	
 	//FragColor.rgb =  vec3(c_r, c_g, c_b);	FragColor.a = 1.0;
 
 }

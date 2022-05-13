@@ -10,6 +10,7 @@ EButtonGroup* EButtonGroup::focused_button_group = nullptr;
 
 //EButtonGroup* EButtonGroup::focused_button_group;
 EButtonGroup* EButtonGroup::focused_button_group_with_slider = nullptr;
+EButtonGroup* EButtonGroup::data_entity_filter = nullptr;
 
 void EWindow::update_default(float _d)
 {
@@ -955,6 +956,8 @@ void EButtonGroup::realign_all_buttons()
 		)
 		&&
 		(!*but->disable_draw)
+		&&
+		(!*but->disabled)
 	)
 	{
 		if (prev_button != nullptr)

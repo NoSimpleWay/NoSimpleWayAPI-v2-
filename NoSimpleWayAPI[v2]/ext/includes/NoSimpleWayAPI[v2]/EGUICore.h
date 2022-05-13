@@ -277,6 +277,9 @@ public:
 
 	EDataContainer* data_container			= nullptr;
 
+	//static fuck_you_leatherman
+	static EButtonGroup* data_entity_filter;
+
 
 
 };

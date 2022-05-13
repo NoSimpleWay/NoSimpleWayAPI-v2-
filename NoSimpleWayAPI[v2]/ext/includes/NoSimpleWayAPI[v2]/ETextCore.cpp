@@ -816,11 +816,21 @@ void ETextArea::update(float _d)
 
 	if
 	(
-		(EInputCore::key_pressed_once(GLFW_KEY_BACKSPACE))
+		(
+			(EInputCore::key_pressed_once(GLFW_KEY_BACKSPACE))
+			||
+			(
+				(EInputCore::key_holded(GLFW_KEY_BACKSPACE, 0.25f))
+				&&
+				(*jump_cooldown <= 0)
+			)
+		)
 		&&
 		(*text_area_active)
 	)
 	{
+		*jump_cooldown = 0.1f;
+
 		int target_glyph_id = min(*selected_glyph_position, font_glyph_list.size() -1);
 		EFontGlyph* target_glyph = font_glyph_list.at(target_glyph_id);
 

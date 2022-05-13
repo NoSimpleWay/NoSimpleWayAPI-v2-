@@ -200,7 +200,7 @@ void ERenderBatcher::draw_call()
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
 
 				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());//1
-				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", 1);
+				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", i + 1);
 
 			}
 
