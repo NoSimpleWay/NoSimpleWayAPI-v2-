@@ -97,10 +97,10 @@ void main()
 	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 2.0f * normal_map_multiplier;
 	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 2.0f * normal_map_multiplier;
 	
-	reflect_pos_x = 0.333f * (normal_x + 1.0f)		+ (gl_FragCoord.x / 1920.0f		* (1.0f - abs(normal_x)))	* 0.333f + 0.333 / 2.0f * abs(normal_x);
+	reflect_pos_x = 0.999f * (normal_x + 1.0f)		+ (gl_FragCoord.x / 1920.0f		* (1.0f - abs(normal_x)))	* 0.999f + 0.999 / 2.0f * abs(normal_x);
 	reflect_pos_y = 0.333f * (normal_y + 1.0f)		+ (WorldPosition.y / 1080.0f	* (1.0f - abs(normal_y)))	* 0.333f + 0.333 / 2.0f * abs(normal_y);
 	
-	dist_x = (reflect_pos_x - sun_position_x);
+	dist_x = (reflect_pos_x * 0.333f - sun_position_x);
 	dist_y = (reflect_pos_y - sun_position_y);
 	dist_x /= (1080.0f / 1920.0f);
 	

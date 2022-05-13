@@ -796,6 +796,8 @@ void ETextArea::update(float _d)
 		{
 			(*selected_glyph_position) -= 2;
 		}
+
+		for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) { dap(this); }
 	}
 
 	//BACKSPACE key - erase left sided symbol
@@ -833,13 +835,17 @@ void ETextArea::update(float _d)
 			stored_text->erase(target_sym_id , 1);
 
 			//std::string ss(target_glyph->sym, 1);
-			EInputCore::logger_param("IS EMPTY", *font_glyph_list.at(target_glyph_id - 1)->is_empty);
+			//EInputCore::logger_param("IS EMPTY", *font_glyph_list.at(target_glyph_id - 1)->is_empty);
 
 			if ((target_glyph_id - 1 >= 0) && (*font_glyph_list.at(target_glyph_id - 1)->is_empty)) { (*selected_glyph_position) += 1; }
-
 			(*selected_glyph_position) -= 1;
 
+			change_text(*stored_text);
 			
+			//if ((parent_clickable_region != nullptr) && (parent_clickable_region->parent_custom_data != nullptr))
+			//{
+				for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) {dap(this);}
+			//}
 			
 
 			//if (row.at(*target_glyph->row_id)->length() <= 1) { (*selected_glyph_position) -= 1; }
@@ -1187,6 +1193,21 @@ bool ETextArea::can_get_access_to_group_style()
 	{return true;}
 	else
 	{return false;}
+}
+
+EButtonGroup* ETextArea::get_root_group()
+{
+	if
+	(
+		(parent_entity != nullptr)
+		&&
+		(((EntityButton*)parent_entity)->parent_button_group != nullptr)
+	)
+	{
+		return ((EntityButton*)parent_entity)->parent_button_group->root_group;
+	}
+	else
+	{return nullptr;}
 }
 
 EFontGlyph::EFontGlyph(char _sym, float _pos_x, float _pos_y, float _size_x, float _size_y)

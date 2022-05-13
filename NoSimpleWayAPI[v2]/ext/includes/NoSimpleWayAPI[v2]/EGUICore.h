@@ -275,6 +275,8 @@ public:
 
 	EButtonGroup* add_group(EButtonGroup* _new_group);
 
+	EDataContainer* data_container			= nullptr;
+
 
 
 };

@@ -157,7 +157,7 @@ public:
 
 	//ECustomData* description_data;
 	void add_description(std::string _text);
-
+	EDataEntity* pointer_to_data_entity;
 
 
 };

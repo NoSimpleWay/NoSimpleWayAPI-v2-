@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 
 #define STB_IMAGE_IMPLEMENTATION 
@@ -11,6 +11,7 @@
 #include <iterator>
 #include <chrono>
 
+//#pragma execution_character_set( "utf-8" )
 //extern GLFWwindow* main_window{ nullptr };
 
 
@@ -18,8 +19,18 @@
 int main()
 {
 	
-
-// glfw window creation
+	//SetConsoleOutputCP(65001);
+	//printf("Testing unicode -- English -- Ελληνικά -- Español -- Русский. aäbcdefghijklmnoöpqrsßtuüvwxyz\n");
+	// 
+	// 
+	// 
+	// 
+	//std::string drunk = "you drunk?";
+	//std::cout << drunk;
+	// glfw window creation
+	// 
+	// 
+	EInputCore::logger_simple_info(EStringUtils::to_lower("ZaLuPa АЯая"));
 // --------------------
 	/*Entity* ent = nullptr;
 	std::cout << "entity pointer: " << ent << std::endl;

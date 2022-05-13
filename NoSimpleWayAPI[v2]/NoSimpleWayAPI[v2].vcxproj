@@ -172,6 +172,7 @@
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\ETextCore.h" />
+    <ClInclude Include="Helpers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
