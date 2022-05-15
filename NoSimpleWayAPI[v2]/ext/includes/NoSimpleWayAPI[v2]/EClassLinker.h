@@ -49,6 +49,8 @@ class EWindowMain;
 class TestObject;
 
 class ETextParser;
+class EDataContainer;
 
 
 typedef void (*data_action_pointer)(Entity*, ECustomData*, float);
+typedef void (*text_actions_pointer)(ETextArea*);

@@ -84,6 +84,7 @@ public:
 	static ESprite*		get_last_sprite(Entity* _en);
 	bool* disable_draw	= new bool(false);
 	bool* need_remove	= new bool(false);
+	bool* disabled		= new bool(false);
 
 	static ECustomData*		get_last_custom_data(Entity* _entity);
 	static EClickableArea*	get_last_clickable_area(Entity* _entity);
@@ -146,6 +147,15 @@ public:
 		data_action_pointer _dap
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
+
+	
+	static EntityButton* create_item_button
+	(
+		ERegionGabarite*	_region_gabarite,
+		EButtonGroup*		_parent_group,
+		EDataEntity*		_data_entity
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
 	
 	static EntityButton* create_default_radial_button
 	(
@@ -157,7 +167,7 @@ public:
 
 	//ECustomData* description_data;
 	void add_description(std::string _text);
-
+	EDataEntity* pointer_to_data_entity;
 
 
 };

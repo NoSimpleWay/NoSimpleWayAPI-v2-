@@ -275,6 +275,11 @@ public:
 
 	EButtonGroup* add_group(EButtonGroup* _new_group);
 
+	EDataContainer* data_container			= nullptr;
+
+	//static fuck_you_leatherman
+	static EButtonGroup* data_entity_filter;
+
 
 
 };

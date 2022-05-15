@@ -19,7 +19,7 @@ uniform sampler2D SD_array[7];
 
 
 
-uniform float brightness_multiplier = 1.0f;
+uniform float brightness_multiplier = 1.5f;
 uniform float input_gloss = 1.0f;
 uniform float skydome_light_power = 1.0f;
 uniform float free_top_light = 0.45f;
@@ -97,10 +97,10 @@ void main()
 	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 2.0f * normal_map_multiplier;
 	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 2.0f * normal_map_multiplier;
 	
-	reflect_pos_x = 0.333f * (normal_x + 1.0f)		+ (gl_FragCoord.x / 1920.0f		* (1.0f - abs(normal_x)))	* 0.333f + 0.333 / 2.0f * abs(normal_x);
+	reflect_pos_x = 0.999f * (normal_x + 1.0f)		+ (gl_FragCoord.x / 1920.0f		* (1.0f - abs(normal_x)))	* 0.999f + 0.999 / 2.0f * abs(normal_x);
 	reflect_pos_y = 0.333f * (normal_y + 1.0f)		+ (WorldPosition.y / 1080.0f	* (1.0f - abs(normal_y)))	* 0.333f + 0.333 / 2.0f * abs(normal_y);
 	
-	dist_x = (reflect_pos_x - sun_position_x);
+	dist_x = (reflect_pos_x * 0.333f - sun_position_x);
 	dist_y = (reflect_pos_y - sun_position_y);
 	dist_x /= (1080.0f / 1920.0f);
 	
@@ -156,6 +156,8 @@ void main()
 		c_b = clamp ((texture(SD_array[4], reflect_coord).b) * brightness_multiplier, 0.0f, 1.8f);
 	}
 	
+
+	
 	gloss_result = gloss_power;
 	
 	
@@ -182,6 +184,7 @@ void main()
 	//FragColor.rgb =  vec3(sun_light);
 	//FragColor.rgb =  vec3(texture(texture1, NormalMapTexCoord));	FragColor.a = 1.0;
 	//FragColor.rgb =  vec3(texture(texture1, GlossMapTexCoord));	FragColor.a = 1.0;
+	
 	//FragColor.rgb =  vec3(c_r, c_g, c_b);	FragColor.a = 1.0;
 
 }

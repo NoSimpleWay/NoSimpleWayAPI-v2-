@@ -210,6 +210,10 @@ public:
 	void change_text(std::string _text);
 
 	bool can_get_access_to_group_style();
+
+	std::vector<text_actions_pointer> action_on_change_text;
+
+	EButtonGroup* get_root_group();
 	//static 
 };
 

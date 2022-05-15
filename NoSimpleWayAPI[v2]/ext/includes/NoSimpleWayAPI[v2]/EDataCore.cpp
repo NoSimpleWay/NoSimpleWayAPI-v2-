@@ -510,6 +510,137 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 	
 }
 
+void EDataActionCollection::action_type_text(ETextArea* _text_area)
+{
+	//EInputCore::logger_param("stored text",  * _text_area->stored_text);
+
+	
+	//(
+	//	(_text_area != nullptr)
+	//	&&
+	//	(_text_area->parent_clickable_region != nullptr)
+	//	&&
+	//	(_text_area->parent_clickable_region->parent_custom_data != nullptr)
+	//	&&
+	//	(_text_area->parent_clickable_region->parent_custom_data->parent_entity != nullptr)
+	//	&&
+	//	(((EntityButton*)_text_area->parent_clickable_region->parent_custom_data->parent_entity)->parent_button_group != nullptr)
+	//	&&
+	//	(((EntityButton*)_text_area->parent_clickable_region->parent_custom_data->parent_entity)->parent_button_group->root_group != nullptr)
+
+	//)
+	if (_text_area->get_root_group() != nullptr)
+	{
+		EDataContainerDataEntitySearchGroup* data_container = (EDataContainerDataEntitySearchGroup*)_text_area->get_root_group()->data_container;
+		
+		if
+		(
+			(data_container != nullptr)
+			&&
+			(data_container->pointer_to_group_with_data_entities != nullptr)
+		)
+		{
+			for (EntityButton* but:data_container->pointer_to_group_with_data_entities->button_list)
+			if (but != data_container->pointer_to_group_with_data_entities->slider)
+			{
+				//if (rand() % 2 == 0){*but->disable_draw = true;} else { *but->disable_draw = false; }
+				bool match = false;
+				//EDataContainerEntityDataHolder* data_holder = (EDataContainerEntityDataHolder*)but->custom_data_list[0]->data_container;
+				EDataEntity* target_data_entity = but->pointer_to_data_entity;
+				std::string value = "";
+				std::string search_text = EStringUtils::to_lower(*_text_area->stored_text);
+
+				bool tag_search_mode	= false;
+				bool cost_search_mode	= false;
+
+				if ((search_text.length() > 0) && (search_text[0] == '*'))
+				{
+					tag_search_mode = true;
+
+					search_text = search_text.substr(1);
+				}
+
+				if ((search_text.length() > 0) && (search_text[0] == '$'))
+				{
+					cost_search_mode = true;
+
+					search_text = search_text.substr(1);
+				}
+
+				//EInputCore::logger_param("size of tag list", target_data_entity->tag_list.size());
+
+				for (EDataTag* tag: target_data_entity->tag_list)
+				{
+					value = EStringUtils::to_lower (*tag->tag_value_list[0]);
+
+					if (tag_search_mode)
+					{
+						if ((*tag->tag_name == "item tag") && (value.find(search_text) != std::string::npos)) { match = true; }
+					}
+					else
+					if (cost_search_mode)
+					{
+						if ((*tag->tag_name == "worth") && (value.find(search_text) != std::string::npos)) { match = true; }
+					}
+					else
+					{
+						if ((*tag->tag_name == "name EN") && (value.find(search_text) != std::string::npos)) { match = true; }
+						if ((*tag->tag_name == "name RU") && (value.find(search_text) != std::string::npos)) { match = true; }
+					}
+
+					//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
+				}
+
+				if (match) { *but->disabled = false; }
+				else { *but->disabled = true; }
+
+			}
+
+			//*data_container->pointer_to_target_group_send_item->is_active = false;
+
+			EButtonGroup::refresh_button_group(data_container->pointer_to_group_with_data_entities);
+			//data_container->pointer_to_target_group_send_item->button_list.clear();
+
+			//EButtonGroup::refresh_button_group(data_container->pointer_to_target_group_send_item);
+		}
+	}
+}
+
+void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EDataContainerStoreTargetGroup* data = ((EDataContainerStoreTargetGroup*)_custom_data->data_container);
+
+	*EButtonGroup::data_entity_filter->is_active = true;
+	((EDataContainerDataEntitySearchGroup*)EButtonGroup::data_entity_filter->data_container)->pointer_to_group_item_receiver = data->target_group;
+}
+
+void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EInputCore::logger_simple_info("try add new button");
+
+	EButtonGroup* parent_group = ((EntityButton*)_entity)->parent_button_group;
+	EButtonGroup* root_group = parent_group->root_group;
+	EDataContainerDataEntitySearchGroup* data = (EDataContainerDataEntitySearchGroup*)root_group->data_container;
+	EButtonGroup* receiver = data->pointer_to_group_item_receiver;
+	EDataContainerEntityDataHolder* data_entity_holder = (EDataContainerEntityDataHolder*)_custom_data->data_container;
+
+	EntityButton* jc_button = EntityButton::create_item_button
+	(
+		new ERegionGabarite(45.0f, 45.0f),
+		receiver,
+		data_entity_holder->stored_data_entity
+	);
+
+	receiver->button_list.push_back(jc_button);
+	//receiver->button_list.clear();
+	EButtonGroup::refresh_button_group(receiver);
+}
+
+//void EDataActionCollection::action_type_text(Entity* _entity, ECustomData* _custom_data, float _d)
+//{
+//
+//}
+
 /*
 bool EClickableRegion::overlapped_by_mouse(EClickableRegion* _region)
 {
@@ -1742,4 +1873,44 @@ EDataContainerRadialButton::~EDataContainerRadialButton()
 	delete max_value;
 	delete current_percent;
 	delete stored_type;
+}
+
+std::string EStringUtils::to_lower(std::string _text)
+{
+	std::string output_string = "";
+	int char_id = 0;
+
+	//EInputCore::logger_param("drunk?", _text.length());
+	for (int i = 0; i < _text.length(); i++)
+	{
+		char_id = (int)_text[i];
+		std::string drunker = "" + _text[i];
+
+		//EInputCore::logger_param("char", drunker);
+		//EInputCore::logger_param("id", char_id);
+		//std::cout << " " << _text[i] << std::endl;
+
+		if
+		(
+			(
+				(char_id >= 65)
+				&&
+				(char_id <= 90)
+			)
+			||
+			(
+				(char_id >= -64)
+				&&
+				(char_id <= -33)
+			)
+		)
+		{
+			output_string += (char)(char_id + 32);
+		}
+		else
+		{
+			output_string += _text[i];
+		}
+	}
+	return output_string;
 }
