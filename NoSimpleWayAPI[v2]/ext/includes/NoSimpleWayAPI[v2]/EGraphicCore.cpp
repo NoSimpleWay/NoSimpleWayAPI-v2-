@@ -2234,7 +2234,7 @@ void NS_ERenderCollection::call_render_textured_sprite_PBR(ESprite* _sprite)
 		}
 		else
 		{
-			if (_sprite == nullptr) { EInputCore::logger_simple_error("Sprite in call render textured rectangle is null"); }
+			if (_sprite == nullptr) { EInputCore::logger_simple_error("[call_render_textured_sprite_PBR]Sprite is null"); }
 			else
 			{
 				if (_sprite->main_texture == nullptr) { EInputCore::logger_simple_error("[call_render_textured_sprite_PBR] sprite main texture is null"); }
@@ -2667,24 +2667,25 @@ void ETextureGabarite::set_real_texture_size(int _size_x, int _size_y)
 
 void ESpriteLayer::modify_buffer_position_for_sprite_layer(float _x, float _y, float _z)
 {
-
-
-
-
-	for (int k = 0; k < 4; k++)
-	for (int i = 0; i < *last_buffer_id; i += 32)
+	for (int k = 0; k < 4; k++)																	//4 vertex
+	for (int i = 0; i < *last_buffer_id; i += batcher->gl_vertex_attribute_total_count * 4)		//1 shape = attribute counts * 4 vertex
 	{
-			vertex_buffer[i + k * 8 + 0] += _x;
-			vertex_buffer[i + k * 8 + 1] += _y;
+			vertex_buffer[i + k * batcher->gl_vertex_attribute_total_count + batcher->array_offset_for_x] += _x;								//offset 0 = x
+			vertex_buffer[i + k * batcher->gl_vertex_attribute_total_count + batcher->array_offset_for_y] += _y;								//offset 1 = y
+
+			//offset z
+			if (batcher->array_offset_for_z >= 0) { vertex_buffer[i + k * batcher->gl_vertex_attribute_total_count + batcher->array_offset_for_z] += _z; } 								
 	}
 
-	for (ESpriteFrame* frame:sprite_frame_list)
-	for (ESprite* spr : frame->sprite_list)
-	{
-		*spr->offset_x += _x;
-		*spr->offset_y += _y;
-		*spr->offset_z += _z;
-	}
+	
+
+	//for (ESpriteFrame* frame:sprite_frame_list)
+	//for (ESprite* spr : frame->sprite_list)
+	//{
+	//	*spr->offset_x += _x;
+	//	*spr->offset_y += _y;
+	//	*spr->offset_z += _z;
+	//}
 }
 
 void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)

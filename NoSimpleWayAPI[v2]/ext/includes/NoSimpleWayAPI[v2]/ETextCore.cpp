@@ -601,16 +601,18 @@ float ETextArea::get_row_width(std::string* _row)
 	return total_width;
 }
 
-void ETextArea::translate(float _x, float _y)
+void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_coordinate)
 {
-	if (*translate_region_gabarite)
+	*region_gabarite->world_position_x += _x;
+	*region_gabarite->world_position_y += _y;
+
+	if (_translate_local_coordinate)
 	{
 		*region_gabarite->offset_x += _x;
 		*region_gabarite->offset_y += _y;
-
-		*region_gabarite->world_position_x += _x;
-		*region_gabarite->world_position_y += _y;
 	}
+
+	
 
 	sprite_layer->modify_buffer_position_for_sprite_layer(_x, _y, 0.0f);
 
