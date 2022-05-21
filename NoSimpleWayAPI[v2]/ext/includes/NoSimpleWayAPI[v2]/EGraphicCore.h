@@ -298,6 +298,10 @@ public:
 	static bool check_batcher(ERenderBatcher* _batcher,unsigned int _add = 0);
 
 	GLsizei										gl_vertex_attribute_total_count = 0;
+
+	int array_offset_for_x = 0;
+	int array_offset_for_y = 1;
+	int array_offset_for_z = -1;
 };
 
 class ETextureAtlas
@@ -481,8 +485,8 @@ public:
 
 	bool* disable_draw = new bool(false);
 
-	void translate_sprite_layer(float _x, float _y, float _z, bool _move_offset);
-	void translate_sprites(float _x, float _y, float _z, bool _move_offset);
+	void translate_sprite_layer	(float _x, float _y, float _z, bool _move_offset);
+	void translate_sprites		(float _x, float _y, float _z, bool _move_offset);
 
 	void modify_buffer_position_for_sprite_layer(float _x, float _y, float _z);
 	void generate_vertex_buffer_for_sprite_layer(std::string _text);

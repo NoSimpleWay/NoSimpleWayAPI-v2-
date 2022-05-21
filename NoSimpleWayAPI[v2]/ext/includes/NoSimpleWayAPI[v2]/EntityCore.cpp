@@ -187,18 +187,20 @@ void Entity::translate_entity(float _x, float _y, float _z)
 	*world_position_z += _z;
 
 
-	translate_all_sprite_layers(_x, _y, _z);
+	translate_sprite_layer(_x, _y, _z);
+	translate_custom_data(_x, _y, _z);
 }
 
-void Entity::translate_all_sprite_layers(float _x, float _y, float _z)
+void Entity::translate_sprite_layer(float _x, float _y, float _z)
 {
 	for (ESpriteLayer* s_layer : sprite_layer_list)
 	if (s_layer != nullptr) {s_layer->translate_sprite_layer(_x, _y, _z, false);}
-	
+}
+
+void Entity::translate_custom_data(float _x, float _y, float _z)
+{
 	for (ECustomData* c_data : custom_data_list)
 	if (c_data != nullptr) {c_data->translate_custom_data(_x, _y, _z, false);}
-
-
 }
 
 void Entity::update(float _d)

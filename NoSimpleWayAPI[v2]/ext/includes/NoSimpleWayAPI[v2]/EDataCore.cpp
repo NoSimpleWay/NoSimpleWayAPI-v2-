@@ -396,6 +396,7 @@ void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData
 void EDataActionCollection::action_delete_entity(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	*_entity->need_remove = true;
+	//_entity->translate_entity(20.0f, 20.0f, 20.0f);
 	//((EWindowMain*)EWindow::window_list[0])->
 
 	//for (TestObject* to : EWindow::window_list[0]->test_vector)
@@ -1017,9 +1018,7 @@ void EClickableArea::translate_clickable_region(float _x, float _y, float _z, bo
 	for (ESpriteLayer* s_layer : sprite_layer_list)
 	if (s_layer != nullptr) {s_layer->translate_sprite_layer(_x, _y, _z, false);}
 
-
-
-	if (text_area != nullptr) { text_area->translate(_x, _y); }
+	if (text_area != nullptr) { text_area->translate(_x, _y, 0.0f, false); }
 }
 
 EClickableArea* EClickableArea::create_default_clickable_region(ERegionGabarite* _gabarite, Entity* _parent_entity, ECustomData* _custom_data)

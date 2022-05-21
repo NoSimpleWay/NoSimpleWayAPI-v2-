@@ -1432,6 +1432,17 @@ EButtonGroup* EButtonGroup::add_group(EButtonGroup* _new_group)
 	return _new_group;
 }
 
+void EButtonGroup::translate(float _x, float _y, float _z, bool _affect_child)
+{
+	for (EntityButton* button : button_list)
+	{
+		button->translate_entity(_x, _y, _z);
+	}
+
+	for (EButtonGroup* group : group_list)
+	{group->translate(_x, _y, _z, false);}
+}
+
 void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 {
 	if

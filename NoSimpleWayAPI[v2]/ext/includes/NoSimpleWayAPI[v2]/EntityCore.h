@@ -69,7 +69,10 @@ public:
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 	
 	void translate_entity(float _x, float _y, float _z);
-	void translate_all_sprite_layers(float _x, float _y, float _z);
+
+	void translate_sprite_layer(float _x, float _y, float _z);
+	void translate_custom_data(float _x, float _y, float _z);
+
 	void update(float _d);
 	Entity();
 	~Entity();

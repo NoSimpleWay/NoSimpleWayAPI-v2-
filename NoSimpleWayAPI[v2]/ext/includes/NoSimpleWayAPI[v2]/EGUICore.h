@@ -26,7 +26,7 @@ enum ENUM_ButtonAutoAlign
 	BUTTON_AUTO_ALIGN__PUSH,								//push button to axis
 	BUTTON_AUTO_ALIGN__RESET_CURRENT_AXIS_AND_PUSH_ANOTHER,	//transfer button to new column/row, and reset current axis
 	BUTTON_AUTO_ALIGN__PUSH_WITH_EXTRA_SPACE,				//push and add more space between previvous button
-	BUTTON_AUTO_ALIGN__FREE								//set exactly position
+	BUTTON_AUTO_ALIGN__FREE									//set exactly position
 };
 
 //class EButtonContainer;
@@ -280,6 +280,7 @@ public:
 	//static fuck_you_leatherman
 	static EButtonGroup* data_entity_filter;
 
+	void translate(float _x, float _y, float _z, bool _affect_child);
 
 
 };

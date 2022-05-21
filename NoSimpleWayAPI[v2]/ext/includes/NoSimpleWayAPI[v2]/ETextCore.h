@@ -161,7 +161,7 @@ public:
 	void set_font(EFont* _font);
 	float get_row_width(std::string* _row);
 
-	void translate(float _x, float _y);
+	void translate(float _x, float _y, float _z, bool _translate_local_coordinate);
 
 	float* offset_border = new float[BorderSide::_LAST_ELEMENT] {0.0f};
 
