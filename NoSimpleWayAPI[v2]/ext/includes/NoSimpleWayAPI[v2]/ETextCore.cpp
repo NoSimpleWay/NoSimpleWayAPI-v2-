@@ -498,25 +498,29 @@ void ETextArea::generate_text()
 					font->UV_start_y[target_symbol] * *font_scale
 				);
 
-				temp_glyph = new EFontGlyph
-				(
-					target_symbol,
+				//no sence generate glyphs to text, which can be edited
+				if (*can_be_edited)
+				{
+					temp_glyph = new EFontGlyph
+					(
+						target_symbol,
 
-					*region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
-					*region_gabarite->world_position_y + y_adding,
+						*region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
+						*region_gabarite->world_position_y + y_adding,
 
-					font->size_x_in_pixels[target_symbol] * *font_scale,
-					font->size_y_in_pixels[target_symbol] * *font_scale
-				);
+						font->size_x_in_pixels[target_symbol] * *font_scale,
+						font->size_y_in_pixels[target_symbol] * *font_scale
+					);
 
-				if (i == 0)			{ *temp_glyph->is_first_symbol	= true; }
-				if (i == str_lenght - 1)	{ *temp_glyph->is_last_symbol		= true; }
+					if (i == 0) { *temp_glyph->is_first_symbol = true; }
+					if (i == str_lenght - 1) { *temp_glyph->is_last_symbol = true; }
 
-				*temp_glyph->row_id = row_id;
-				*temp_glyph->storer_text_sym_id = id_for_stored_text_sym;
-				id_for_stored_text_sym++;
+					*temp_glyph->row_id = row_id;
+					*temp_glyph->storer_text_sym_id = id_for_stored_text_sym;
+					id_for_stored_text_sym++;
 
-				font_glyph_list.push_back(temp_glyph);
+					font_glyph_list.push_back(temp_glyph);
+				}
 
 				/*NS_ERenderCollection::fill_vertex_buffer_custom_uv
 				(
@@ -603,15 +607,22 @@ float ETextArea::get_row_width(std::string* _row)
 
 void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_coordinate)
 {
-	*region_gabarite->world_position_x += _x;
-	*region_gabarite->world_position_y += _y;
-
-	if (_translate_local_coordinate)
+	if
+	(
+		(parent_entity == nullptr)
+		||
+		(region_gabarite != ((EntityButton*)parent_entity)->button_gabarite)
+	)
 	{
-		*region_gabarite->offset_x += _x;
-		*region_gabarite->offset_y += _y;
-	}
+		*region_gabarite->world_position_x += _x;
+		*region_gabarite->world_position_y += _y;
 
+		if (_translate_local_coordinate)
+		{
+			*region_gabarite->offset_x += _x;
+			*region_gabarite->offset_y += _y;
+		}
+	}
 	
 
 	sprite_layer->modify_buffer_position_for_sprite_layer(_x, _y, 0.0f);

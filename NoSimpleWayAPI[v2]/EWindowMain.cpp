@@ -208,7 +208,7 @@ EWindowMain::EWindowMain()
 		*main_button_group->child_align_mode	= ChildAlignMode::ALIGN_VERTICAL;
 		//*main_button_group->stretch_mode		= GroupStretchMode::CONSTANT;
 		
-		for (int z = 0; z < 10; z++)
+		for (int z = 0; z < 50; z++)
 		{
 			EButtonGroup* filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 160.0f), EGUIStyle::active_style);
 			
@@ -353,10 +353,11 @@ EWindowMain::EWindowMain()
 
 
 				//button item
-				int button_count	= rand() % 5 + 1;
-				button_count		*= rand() % 5 + 1;
-				button_count		*= rand() % 5 + 1;
-				button_count		*= rand() % 5 + 1;
+				int button_count	= rand() % 3 + 1;
+				button_count		*= rand() % 3 + 1;
+				button_count		*= rand() % 3 + 1;
+				button_count		*= rand() % 3 + 1;
+				button_count		*= rand() % 3 + 1;
 
 				for (int i = 0; i < button_count; i++)
 				{

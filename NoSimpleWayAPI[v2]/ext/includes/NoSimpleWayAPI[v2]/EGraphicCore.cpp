@@ -2600,13 +2600,14 @@ ESpriteLayer::~ESpriteLayer()
 	sprite_frame_list.shrink_to_fit();
 }
 
-void ESpriteLayer::translate_sprite_layer(float _x, float _y, float _z, bool _move_offset)
+void ESpriteLayer::translate_sprite_layer(float _x, float _y, float _z, bool _move_positions)
 {
+
 	*world_position_x += _x;
 	*world_position_y += _y;
 	*world_position_z += _z;
 
-	if (_move_offset)
+	if (_move_positions)
 	{
 		*offset_x += _x;
 		*offset_y += _y;
@@ -2614,7 +2615,7 @@ void ESpriteLayer::translate_sprite_layer(float _x, float _y, float _z, bool _mo
 	}
 
 	//child elements, modify only world coordinates
-	translate_sprites(_x, _y, _z, false);
+	//translate_sprites(_x, _y, _z, false);
 
 
 	modify_buffer_position_for_sprite_layer(_x, _y, _z);

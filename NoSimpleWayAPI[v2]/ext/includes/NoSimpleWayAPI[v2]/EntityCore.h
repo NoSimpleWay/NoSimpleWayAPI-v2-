@@ -68,10 +68,10 @@ public:
 	void modify_buffer_translate_for_entity(float _x, float _y, float _z);
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 	
-	void translate_entity(float _x, float _y, float _z);
+	void translate_entity(float _x, float _y, float _z, bool _move_positions);
 
-	void translate_sprite_layer(float _x, float _y, float _z);
-	void translate_custom_data(float _x, float _y, float _z);
+	void translate_sprite_layer(float _x, float _y, float _z, bool _move_locals);
+	void translate_custom_data(float _x, float _y, float _z, bool _move_locals);
 
 	void update(float _d);
 	Entity();

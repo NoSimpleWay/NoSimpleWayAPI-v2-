@@ -175,29 +175,32 @@ void Entity::modify_buffer_translate_for_entity(float _x, float _y, float _z)
 
 }
 
-void Entity::translate_entity(float _x, float _y, float _z)
+void Entity::translate_entity(float _x, float _y, float _z, bool _move_positions)
 {
-	//entity position
-	*offset_x += _x;
-	*offset_y += _y;
-	*offset_z += _z;
 
 	*world_position_x += _x;
 	*world_position_y += _y;
 	*world_position_z += _z;
 
+	//entity position
+	if (_move_positions)
+	{
+		*offset_x += _x;
+		*offset_y += _y;
+		*offset_z += _z;
+	}
 
-	translate_sprite_layer(_x, _y, _z);
-	translate_custom_data(_x, _y, _z);
+	translate_sprite_layer(_x, _y, _z, false);
+	translate_custom_data(_x, _y, _z, false);
 }
 
-void Entity::translate_sprite_layer(float _x, float _y, float _z)
+void Entity::translate_sprite_layer(float _x, float _y, float _z, bool _move_locals)
 {
 	for (ESpriteLayer* s_layer : sprite_layer_list)
 	if (s_layer != nullptr) {s_layer->translate_sprite_layer(_x, _y, _z, false);}
 }
 
-void Entity::translate_custom_data(float _x, float _y, float _z)
+void Entity::translate_custom_data(float _x, float _y, float _z, bool _move_locals)
 {
 	for (ECustomData* c_data : custom_data_list)
 	if (c_data != nullptr) {c_data->translate_custom_data(_x, _y, _z, false);}

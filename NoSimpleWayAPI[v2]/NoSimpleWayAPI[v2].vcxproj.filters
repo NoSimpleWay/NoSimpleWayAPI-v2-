@@ -72,6 +72,9 @@
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EDataEntity.cpp">
       <Filter>NoSimpleWayAPI[v2]\DataCore</Filter>
     </ClCompile>
+    <ClCompile Include="Helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ext\includes\ConsoleColor.h">

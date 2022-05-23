@@ -50,7 +50,7 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 		(NS_FONT_UTILS::active_text_area == nullptr)
 	)
 	{
-		_entity->translate_entity(0.0f, 1000.0f * _d, 0.0f);
+		_entity->translate_entity(0.0f, 1000.0f * _d, 0.0f, true);
 
 	};
 
@@ -61,7 +61,7 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 		(NS_FONT_UTILS::active_text_area == nullptr)
 	)
 	{
-		_entity->translate_entity(0.0f, -1000.0f * _d, 0.0f);
+		_entity->translate_entity(0.0f, -1000.0f * _d, 0.0f, true);
 
 	};
 
@@ -187,7 +187,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 		{
 			*_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 			+=
-			(EInputCore::scroll_direction * EInputCore::scroll_direction * EInputCore::scroll_direction)
+			(EInputCore::scroll_direction * EInputCore::scroll_direction * EInputCore::scroll_direction * 2)
 			*
 			(*entity_button->parent_button_group->region_gabarite->size_y  / *data_bar->max_value)
 			*
@@ -248,6 +248,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 			*data_bar->current_percent = min(*data_bar->current_percent, 1.0f);
 
+			float old_value = *data_bar->value_pointer;
 			*data_bar->value_pointer
 				=
 				round
@@ -258,10 +259,30 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 					*
 					-1.0f
 				);
-
+			float new_value = *data_bar->value_pointer;
+			float diff = new_value - old_value;
 
 			//EInputCore::logger_param("HPy", *entity_button->parent_button_group->highest_point_y);
-			EButtonGroup::refresh_button_group(entity_button->parent_button_group);
+			//EButtonGroup::refresh_button_group(entity_button->parent_button_group);
+			for (EButtonGroup* group : entity_button->parent_button_group->group_list)
+			{
+				group->translate(0.0f, diff, 0.0f, true);
+			}
+
+			for (EntityButton* button : entity_button->parent_button_group->button_list)
+			if (button != entity_button)
+			{
+				button->translate_entity(0.0f, diff, 0.0f, true);
+			}
+
+			EButtonGroup::calculate_culling_lines(entity_button->parent_button_group);
+			//_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
+			
+			_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
+			entity_button->generate_vertex_buffer_for_all_sprite_layers();
+			
+			//EButtonGroup::generate_vertex_buffer_for_group(entity_button->parent_button_group);
+			
 			//entity_button->parent_button_group->realign_all_buttons();
 			//entity_button->parent_button_group->align_groups();
 			//EButtonGroup::calculate_culling_lines(entity_button->parent_button_group);
@@ -1007,11 +1028,13 @@ void EClickableArea::translate_clickable_region(float _x, float _y, float _z, bo
 	{
 		*region_gabarite->world_position_x += _x;
 		*region_gabarite->world_position_y += _y;
+		*region_gabarite->world_position_z += _z;
 
 		if (_move_offset)
 		{
 			*region_gabarite->offset_x += _x;
 			*region_gabarite->offset_y += _y;
+			*region_gabarite->offset_z += _z;
 		}
 	}
 
@@ -1379,6 +1402,11 @@ void ERegionGabarite::set_region_gabarite(ERegionGabarite** _target_region, EReg
 {
 	//EInputCore::logger_simple_try("set region");
 
+	if (_source_region->root_owner == nullptr)
+	{
+		_source_region->root_owner = _source_region;
+	}
+
 	if (*_target_region != _source_region)
 	{
 		
@@ -1386,6 +1414,7 @@ void ERegionGabarite::set_region_gabarite(ERegionGabarite** _target_region, EReg
 		//old region lose 1 pointer to him
 		
 
+		//target region lose 1 owner
 		if (*_target_region != nullptr)
 		{
 			//EInputCore::logger_simple_success("decrease");

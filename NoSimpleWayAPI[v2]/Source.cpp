@@ -6,6 +6,7 @@
 #include "NoSimpleWayAPI[v2]/EInputCore.h"
 #include "NoSimpleWayAPI[v2]/EGUICore.h"
 #include "EWindowMain.h"
+#include "Helpers.h"
 
 #include <algorithm>
 #include <iterator>
@@ -99,6 +100,31 @@ int main()
 		}
 		*/
 
+		//std::vector<<ETestObject 
+	
+		for (int i = 0; i < 1'000'000; i++)
+		{
+			ETestObject::test_object_vector.push_back(new ETestObject());
+		}
+
+		auto start = std::chrono::high_resolution_clock::now();
+			for (int i = 0; i < 1'000'000 - 1; i++)
+			{
+				*ETestObject::test_object_vector[i + 1]->b = *ETestObject::test_object_vector[i]->b + 1;
+			}
+		auto finish = std::chrono::high_resolution_clock::now();
+		EInputCore::logger_param("pointer", std::chrono::duration_cast<std::chrono::nanoseconds>(finish - start).count() / 1'000'000.0f);
+
+		start = std::chrono::high_resolution_clock::now();
+		for (int i = 0; i < 1'000'000 - 1; i++)
+		{
+			ETestObject::test_object_vector[i + 1]->a = ETestObject::test_object_vector[i]->a + 1;
+			
+		}
+		finish = std::chrono::high_resolution_clock::now();
+		EInputCore::logger_param("non-pointer", std::chrono::duration_cast<std::chrono::nanoseconds>(finish - start).count() / 1'000'000.0f);
+	
+
 	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))
 	{
 
@@ -119,10 +145,12 @@ int main()
 		NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
 		NS_EGraphicCore::gl_set_blend_mode_default();
 		
-		EButtonGroup::focused_button_group_with_slider = nullptr;
 		EButtonGroup::focused_button_group = nullptr;
+		if (EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
+		{
+			EButtonGroup::focused_button_group_with_slider = nullptr;
+		}
 		if (!EInputCore::MOUSE_BUTTON_LEFT) { EClickableArea::active_clickable_region = nullptr; }
-
 		/*if (*EClickableArea::active_clickable_region->parent_entity->disable_draw)
 		{
 
