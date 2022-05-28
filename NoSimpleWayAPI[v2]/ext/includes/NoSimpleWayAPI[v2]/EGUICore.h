@@ -280,9 +280,9 @@ public:
 	//static fuck_you_leatherman
 	static EButtonGroup* data_entity_filter;
 
-	void translate(float _x, float _y, float _z, bool _affect_child);
-
-
+	void translate							(float _x, float _y, float _z, bool _affect_child);
+	void translate_child_elements			(float _x, float _y, float _z);
+	bool can_see_this_group();
 };
 
 //class EButtonContainer

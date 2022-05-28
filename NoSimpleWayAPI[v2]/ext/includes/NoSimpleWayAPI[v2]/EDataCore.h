@@ -109,6 +109,12 @@ public:
 	unsigned int* pointer_id = new unsigned int(0);
 	static void set_region_gabarite(ERegionGabarite** _destination, ERegionGabarite* _source);
 	void* root_owner;
+
+	float phantom_translate_x;
+	float phantom_translate_y;
+	float phantom_translate_z;
+
+	bool have_phantom_translation;
 };
 
 enum ClickableRegionSides
