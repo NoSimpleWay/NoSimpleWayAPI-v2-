@@ -264,18 +264,25 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 			//EInputCore::logger_param("HPy", *entity_button->parent_button_group->highest_point_y);
 			//EButtonGroup::refresh_button_group(entity_button->parent_button_group);
-			for (EButtonGroup* group : entity_button->parent_button_group->group_list)
-			{
-				group->translate(0.0f, diff, 0.0f, true);
-			}
+			entity_button->parent_button_group->translate_content(0.0f, diff, 0.0f, false);
+			//for (EButtonGroup* group : entity_button->parent_button_group->group_list)
+			//{
+			//	group->translate(0.0f, diff, 0.0f, true);
+			//}
 
-			for (EntityButton* button : entity_button->parent_button_group->button_list)
-			if (button != entity_button)
-			{
-				button->translate_entity(0.0f, diff, 0.0f, true);
-			}
+			//for (EntityButton* button : entity_button->parent_button_group->button_list)
+			//if (button != entity_button)
+			//{
+			//	button->translate_entity(0.0f, diff, 0.0f, true);
+			//}
 
-			EButtonGroup::calculate_culling_lines(entity_button->parent_button_group);
+			////EButtonGroup::calculate_culling_lines(entity_button->parent_button_group);
+
+			//for (EButtonGroup* group : entity_button->parent_button_group->group_list)
+			//{
+			//	//group->phantom_translate_if_need();
+
+			//}
 			//_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
 			
 			_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);

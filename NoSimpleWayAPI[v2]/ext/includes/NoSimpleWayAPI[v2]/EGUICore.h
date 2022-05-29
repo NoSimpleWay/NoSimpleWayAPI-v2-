@@ -281,8 +281,9 @@ public:
 	static EButtonGroup* data_entity_filter;
 
 	void translate							(float _x, float _y, float _z, bool _affect_child);
-	void translate_child_elements			(float _x, float _y, float _z);
+	void translate_content					(float _x, float _y, float _z, bool _move_slider);
 	bool can_see_this_group();
+	void phantom_translate_if_need					();
 };
 
 //class EButtonContainer

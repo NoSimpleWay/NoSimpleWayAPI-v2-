@@ -102,27 +102,27 @@ int main()
 
 		//std::vector<<ETestObject 
 	
-		for (int i = 0; i < 1'000'000; i++)
-		{
-			ETestObject::test_object_vector.push_back(new ETestObject());
-		}
+		//for (int i = 0; i < 1'000'000; i++)
+		//{
+		//	ETestObject::test_object_vector.push_back(new ETestObject());
+		//}
 
-		auto start = std::chrono::high_resolution_clock::now();
-			for (int i = 0; i < 1'000'000 - 1; i++)
-			{
-				*ETestObject::test_object_vector[i + 1]->b = *ETestObject::test_object_vector[i]->b + 1;
-			}
-		auto finish = std::chrono::high_resolution_clock::now();
-		EInputCore::logger_param("pointer", std::chrono::duration_cast<std::chrono::nanoseconds>(finish - start).count() / 1'000'000.0f);
+		//auto start = std::chrono::high_resolution_clock::now();
+		//	for (int i = 0; i < 1'000'000 - 1; i++)
+		//	{
+		//		*ETestObject::test_object_vector[i + 1]->b = *ETestObject::test_object_vector[i]->b + 1;
+		//	}
+		//auto finish = std::chrono::high_resolution_clock::now();
+		//EInputCore::logger_param("pointer", std::chrono::duration_cast<std::chrono::nanoseconds>(finish - start).count() / 1'000'000.0f);
 
-		start = std::chrono::high_resolution_clock::now();
-		for (int i = 0; i < 1'000'000 - 1; i++)
-		{
-			ETestObject::test_object_vector[i + 1]->a = ETestObject::test_object_vector[i]->a + 1;
-			
-		}
-		finish = std::chrono::high_resolution_clock::now();
-		EInputCore::logger_param("non-pointer", std::chrono::duration_cast<std::chrono::nanoseconds>(finish - start).count() / 1'000'000.0f);
+		//start = std::chrono::high_resolution_clock::now();
+		//for (int i = 0; i < 1'000'000 - 1; i++)
+		//{
+		//	ETestObject::test_object_vector[i + 1]->a = ETestObject::test_object_vector[i]->a + 1;
+		//	
+		//}
+		//finish = std::chrono::high_resolution_clock::now();
+		//EInputCore::logger_param("non-pointer", std::chrono::duration_cast<std::chrono::nanoseconds>(finish - start).count() / 1'000'000.0f);
 	
 
 	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))

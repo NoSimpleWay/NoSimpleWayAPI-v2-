@@ -157,32 +157,8 @@ void EButtonGroup::update(float _d)
 	//if (but->re*higher_culling_line)
 
 	//invisible elements become visible
-	if (can_see_this_group())
-	{
-		if (region_gabarite->have_phantom_translation)
-		{
-			//region_gabarite->have_phantom_translation = false;
 
-			//do child elements actual world positions
-			translate_child_elements
-			(
-				region_gabarite->phantom_translate_x,
-				region_gabarite->phantom_translate_y,
-				region_gabarite->phantom_translate_z
-			);
 
-			region_gabarite->have_phantom_translation = false;
-
-			region_gabarite->phantom_translate_x = 0.0f;
-			region_gabarite->phantom_translate_y = 0.0f;
-			region_gabarite->phantom_translate_z = 0.0f;
-		}
-	}
-
-		for (EButtonGroup* _group : group_list)
-		{
-			_group->update(_d);
-		}
 
 		/*if (row->header_button_group != nullptr)
 		{
@@ -223,6 +199,18 @@ void EButtonGroup::update(float _d)
 	{
 		header_button_group->update(_d);
 	}
+
+	if (can_see_this_group())
+	{
+		phantom_translate_if_need();
+		calculate_culling_lines(this);
+	}
+
+	for (EButtonGroup* _group : group_list)
+	{
+		_group->update(_d);
+	}
+
 }
 
 void EButtonGroup::draw()
@@ -1256,18 +1244,20 @@ void EButtonGroup::set_offset_borders(EButtonGroup* _group, float _left, float _
 
 void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* _style)
 {
-	_group->translate_child_elements
-	(
-		_group->region_gabarite->phantom_translate_x,
-		_group->region_gabarite->phantom_translate_y,
-		_group->region_gabarite->phantom_translate_z
-	);
+	//_group->translate_child_elements
+	//(
+	//	_group->region_gabarite->phantom_translate_x,
+	//	_group->region_gabarite->phantom_translate_y,
+	//	_group->region_gabarite->phantom_translate_z
+	//);
 
-	_group->region_gabarite->have_phantom_translation = false;
+	//_group->region_gabarite->have_phantom_translation = false;
 
-	_group->region_gabarite->phantom_translate_x = 0.0f;
-	_group->region_gabarite->phantom_translate_y = 0.0f;
-	_group->region_gabarite->phantom_translate_z = 0.0f;
+	//_group->region_gabarite->phantom_translate_x = 0.0f;
+	//_group->region_gabarite->phantom_translate_y = 0.0f;
+	//_group->region_gabarite->phantom_translate_z = 0.0f;
+
+	_group->phantom_translate_if_need();
 
 	if (*_group->can_change_style) {_group->selected_style = _style;}
 
@@ -1522,7 +1512,7 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 
 	if (can_see_this_group())
 	{
-		translate_child_elements(_x, _y, _z);
+		translate_content(_x, _y, _z, true);
 	}
 	else
 	{
@@ -1534,39 +1524,22 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 	}
 
 
-	//{
-	//	region_gabarite->have_phantom_translation = false;
-
-	//	*region_gabarite->world_position_x += region_gabarite->phantom_translate_x;
-	//	*region_gabarite->world_position_y += region_gabarite->phantom_translate_y;
-	//	*region_gabarite->world_position_z += region_gabarite->phantom_translate_z;
-
-	//	region_gabarite->phantom_translate_x = 0.0f;
-	//	region_gabarite->phantom_translate_y = 0.0f;
-	//	region_gabarite->phantom_translate_z = 0.0f;
-	//}
-
 	
 }
 
-void EButtonGroup::translate_child_elements(float _x, float _y, float _z)
+void EButtonGroup::translate_content(float _x, float _y, float _z, bool _move_slider)
 {
-		//*need_redraw = true;
-		if (background_sprite_layer != nullptr)
+		if ((background_sprite_layer != nullptr) && (_move_slider))
 		{
 			background_sprite_layer->translate_sprite_layer(_x, _y, _z, false);
 		}
 
 		for (EntityButton* button : button_list)
-		{
-			button->translate_entity(_x, _y, _z, false);
-		}
+		if ((_move_slider) || (button != slider))
+		{button->translate_entity(_x, _y, _z, true);}
 
 		for (EButtonGroup* group : group_list)
-		{
-			group->translate(_x, _y, _z, false);
-		}
-
+		{group->translate(_x, _y, _z, false);}
 }
 
 bool EButtonGroup::can_see_this_group()
@@ -1593,6 +1566,28 @@ bool EButtonGroup::can_see_this_group()
 	{return true;}
 	else
 	{return false;}
+}
+
+void EButtonGroup::phantom_translate_if_need()
+{
+	if (region_gabarite->have_phantom_translation)
+	{
+		translate_content
+		(
+			region_gabarite->phantom_translate_x,
+			region_gabarite->phantom_translate_y,
+			region_gabarite->phantom_translate_z,
+			true
+		);
+
+		region_gabarite->have_phantom_translation = false;
+
+		region_gabarite->phantom_translate_x = 0.0f;
+		region_gabarite->phantom_translate_y = 0.0f;
+		region_gabarite->phantom_translate_z = 0.0f;
+
+
+	}
 }
 
 void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
