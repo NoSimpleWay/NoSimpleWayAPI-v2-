@@ -164,52 +164,52 @@ void EButtonGroup::update(float _d)
 		{
 			row->header_button_group->update(_d);
 		}*/
-
-	if (!button_list.empty())
-	for (unsigned int i = 0; i < button_list.size(); i++)
-	if (*button_list[i]->need_remove)
+	if (can_see_this_group())
 	{
-		EntityButton* but = button_list[i];
-		button_list.erase(button_list.begin() + i);
-		delete but;
-		i--;
-	}
-
-	{
-		for (EntityButton* but : button_list)
-		if
-		(
-			(*but->update_when_scissored)
-			||
-			(
-				(*but->button_gabarite->world_position_y <= *higher_culling_line + *border_bottom)
-				&&
-				(*but->button_gabarite->world_position_y + *but->button_gabarite->size_y >= *lower_culling_line - *border_up)
-			)
-		)
+		if (!button_list.empty())
+		for (unsigned int i = 0; i < button_list.size(); i++)
+		if (*button_list[i]->need_remove)
 		{
-			but->update(_d);
+			EntityButton* but = button_list[i];
+			button_list.erase(button_list.begin() + i);
+			delete but;
+			i--;
+		}
+
+		{
+			for (EntityButton* but : button_list)
+			if
+			(
+				(*but->update_when_scissored)
+				||
+				(
+					(*but->button_gabarite->world_position_y <= *higher_culling_line + *border_bottom)
+					&&
+					(*but->button_gabarite->world_position_y + *but->button_gabarite->size_y >= *lower_culling_line - *border_up)
+				)
+			)
+			{
+				but->update(_d);
+			}
+		}
+
+		//final button groun, not subgroup
+		//if (group_row_list.empty())
+	
+		if (header_button_group != nullptr)
+		{header_button_group->update(_d);}
+
+	
+		phantom_translate_if_need();
+		calculate_culling_lines(this);
+
+		for (EButtonGroup* _group : group_list)
+		{
+			_group->update(_d);
 		}
 	}
 
-	//final button groun, not subgroup
-	//if (group_row_list.empty())
-	
-	if (header_button_group != nullptr)
-	{
-		header_button_group->update(_d);
-	}
 
-	if (can_see_this_group())
-	{
-		phantom_translate_if_need();
-		calculate_culling_lines(this);
-	}
-
-	for (EButtonGroup* _group : group_list)
-	{
-		_group->update(_d);
-	}
 
 }
 
