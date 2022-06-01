@@ -223,20 +223,20 @@ public:
 	EFontGlyph(char _sym, float _pos_x, float _pos_y, float _size_x, float _size_y);
 	~EFontGlyph();
 
-	float* world_position_x = new float (0.0f);
-	float* world_position_y = new float (0.0f);
+	float world_position_x = 0.0f;
+	float world_position_y = 0.0f;
 
-	float* size_x = new float(0.0f);
-	float* size_y = new float(0.0f);
+	float size_x = 0.0f;
+	float size_y = 0.0f;
 
-	char* sym = new char(0);
-	int* row_id = new int(0);
+	char sym = 0;
+	int row_id = 0;
 
-	int* storer_text_sym_id = new int(0);
+	int storer_text_sym_id = 0;
 
-	bool* is_first_symbol = new bool (false);
-	bool* is_last_symbol = new bool (false);
-	bool* is_empty = new bool(false);
+	bool is_first_symbol	= false;
+	bool is_last_symbol		= false;
+	bool is_empty			= false;
 
 	
 };

@@ -551,7 +551,7 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 	}
 
 	//jc_button->add_description("123");
-	jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+	//jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
 
 	return jc_button;
 }

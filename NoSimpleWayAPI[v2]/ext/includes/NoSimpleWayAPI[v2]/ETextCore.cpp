@@ -512,11 +512,11 @@ void ETextArea::generate_text()
 						font->size_y_in_pixels[target_symbol] * *font_scale
 					);
 
-					if (i == 0) { *temp_glyph->is_first_symbol = true; }
-					if (i == str_lenght - 1) { *temp_glyph->is_last_symbol = true; }
+					if (i == 0) { temp_glyph->is_first_symbol = true; }
+					if (i == str_lenght - 1) { temp_glyph->is_last_symbol = true; }
 
-					*temp_glyph->row_id = row_id;
-					*temp_glyph->storer_text_sym_id = id_for_stored_text_sym;
+					temp_glyph->row_id = row_id;
+					temp_glyph->storer_text_sym_id = id_for_stored_text_sym;
 					id_for_stored_text_sym++;
 
 					font_glyph_list.push_back(temp_glyph);
@@ -558,10 +558,10 @@ void ETextArea::generate_text()
 				5.0f
 			);
 
-			*temp_glyph->row_id = row_id;
-			*temp_glyph->storer_text_sym_id = id_for_stored_text_sym;
+			temp_glyph->row_id = row_id;
+			temp_glyph->storer_text_sym_id = id_for_stored_text_sym;
 			font_glyph_list.push_back(temp_glyph);
-			*temp_glyph->is_empty = true;
+			temp_glyph->is_empty = true;
 			//*temp_glyph->is_first_symbol = true;
 
 			row_id++;
@@ -630,8 +630,8 @@ void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_co
 	for (EFontGlyph* f_glyph : font_glyph_list)
 	if (f_glyph != nullptr)
 	{
-		*f_glyph->world_position_x += _x;
-		*f_glyph->world_position_y += _y;
+		f_glyph->world_position_x += _x;
+		f_glyph->world_position_y += _y;
 	}
 }
 
@@ -690,20 +690,20 @@ void ETextArea::update(float _d)
 
 				if
 					(
-						(EInputCore::MOUSE_POSITION_X >= *glyph->world_position_x)
+						(EInputCore::MOUSE_POSITION_X >= glyph->world_position_x)
 						&&
-						(EInputCore::MOUSE_POSITION_X <= *glyph->world_position_x + *glyph->size_x)
+						(EInputCore::MOUSE_POSITION_X <= glyph->world_position_x + glyph->size_x)
 						&&
-						(EInputCore::MOUSE_POSITION_Y >= *glyph->world_position_y)
+						(EInputCore::MOUSE_POSITION_Y >= glyph->world_position_y)
 						&&
-						(EInputCore::MOUSE_POSITION_Y <= *glyph->world_position_y + *glyph->size_y)
+						(EInputCore::MOUSE_POSITION_Y <= glyph->world_position_y + glyph->size_y)
 						)
 				{
 					//*selected_glyph_position = glyph_id;
 					//*selected_glyph_position = -1;
 					//NS_FONT_UTILS::active_text_area = this;
 
-					if (EInputCore::MOUSE_POSITION_X <= *glyph->world_position_x + *glyph->size_x / 2.0f)
+					if (EInputCore::MOUSE_POSITION_X <= glyph->world_position_x + glyph->size_x / 2.0f)
 					{
 						*selected_glyph_position = glyph_id;
 						//*selected_left_side = true;
@@ -773,7 +773,7 @@ void ETextArea::update(float _d)
 	//insert new char to text
 	if ((*text_area_active) && (EInputCore::LAST_INPUTED_CHAR != 0))
 	{
-		int target_id = *font_glyph_list.at(min(*selected_glyph_position, font_glyph_list.size() - 1))->storer_text_sym_id + 0;
+		int target_id = font_glyph_list.at(min(*selected_glyph_position, font_glyph_list.size() - 1))->storer_text_sym_id + 0;
 		//if (!*selected_left_side) { target_id++;}
 
 		std::string temp_s(1, EInputCore::LAST_INPUTED_CHAR);
@@ -847,8 +847,8 @@ void ETextArea::update(float _d)
 		int target_glyph_id = min(*selected_glyph_position, font_glyph_list.size() -1);
 		EFontGlyph* target_glyph = font_glyph_list.at(target_glyph_id);
 
-		int target_row_id = *target_glyph->row_id;
-		int target_sym_id = *target_glyph->storer_text_sym_id - 1;
+		int target_row_id = target_glyph->row_id;
+		int target_sym_id = target_glyph->storer_text_sym_id - 1;
 
 		//if (*selected_left_side) { target_sym_id--; }
 
@@ -860,7 +860,7 @@ void ETextArea::update(float _d)
 			//std::string ss(target_glyph->sym, 1);
 			//EInputCore::logger_param("IS EMPTY", *font_glyph_list.at(target_glyph_id - 1)->is_empty);
 
-			if ((target_glyph_id - 1 >= 0) && (*font_glyph_list.at(target_glyph_id - 1)->is_empty)) { (*selected_glyph_position) += 1; }
+			if ((target_glyph_id - 1 >= 0) && (font_glyph_list.at(target_glyph_id - 1)->is_empty)) { (*selected_glyph_position) += 1; }
 			(*selected_glyph_position) -= 1;
 
 			change_text(*stored_text);
@@ -902,7 +902,7 @@ void ETextArea::update(float _d)
 		*flash_line_cooldown = 0.5f;
 		*flash_line_active = true;
 
-		if (*font_glyph_list.at(*selected_glyph_position)->is_first_symbol)
+		if (font_glyph_list.at(*selected_glyph_position)->is_first_symbol)
 		{
 			//if (!(*selected_left_side)) { *selected_left_side = true; }
 			//else
@@ -942,7 +942,7 @@ void ETextArea::update(float _d)
 		*flash_line_cooldown = 0.5f;
 		*flash_line_active = true;
 
-		if (*font_glyph_list.at(*selected_glyph_position)->is_last_symbol)
+		if (font_glyph_list.at(*selected_glyph_position)->is_last_symbol)
 		{
 			//if (*selected_left_side) { *selected_left_side = false; }
 			//else
@@ -988,8 +988,8 @@ void ETextArea::draw()
 			(
 				sprite_layer->batcher->vertex_buffer,
 				sprite_layer->batcher->last_vertice_buffer_index,
-				*active_glyph->world_position_x,
-				*active_glyph->world_position_y,
+				active_glyph->world_position_x,
+				active_glyph->world_position_y,
 				2.0f,
 				15.0f,
 				NS_DefaultGabarites::texture_gabarite_white_pixel
@@ -1235,29 +1235,29 @@ EButtonGroup* ETextArea::get_root_group()
 
 EFontGlyph::EFontGlyph(char _sym, float _pos_x, float _pos_y, float _size_x, float _size_y)
 {
-	*world_position_x = _pos_x;
-	*world_position_y = _pos_y;
+	world_position_x = _pos_x;
+	world_position_y = _pos_y;
 
-	*size_x = _size_x;
-	*size_y = _size_y;
+	size_x = _size_x;
+	size_y = _size_y;
 
-	*sym = _sym;
+	sym = _sym;
 }
 
 EFontGlyph::~EFontGlyph()
 {
-	delete world_position_x;
-	delete world_position_y;
+	//delete world_position_x;
+	//delete world_position_y;
 
-	delete size_x;
-	delete size_y;
+	//delete size_x;
+	//delete size_y;
 
-	delete sym;
-	delete row_id;
+	//delete sym;
+	//delete row_id;
 
-	delete storer_text_sym_id;
+	//delete storer_text_sym_id;
 
-	delete is_first_symbol;
-	delete is_last_symbol;
-	delete is_empty;
+	//delete is_first_symbol;
+	//delete is_last_symbol;
+	//delete is_empty;
 }

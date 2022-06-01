@@ -118,28 +118,31 @@ EWindowMain::EWindowMain()
 		main_button_group->root_group = main_button_group;
 		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
-		EInputCore::logger_param("memory[EButtonGroup]", sizeof EButtonGroup);
-	for (int i = 0; i < 500 * 1; i++)
-	{
-		EButtonGroup* test_group = main_button_group->add_group
-		(EButtonGroup::create_default_button_group(new ERegionGabarite(100.0f, 200.0f), EGUIStyle::active_style));
-		*test_group->can_be_stretched_by_child = true;
-
-		*test_group->stretch_x_by_parent_size = true;
-		*test_group->stretch_y_by_parent_size = false;
-
-		for (int k = 0; k < 20; k++)
+		//EInputCore::logger_param("memory[EButtonGroup]", sizeof EButtonGroup);
+		if (false)
 		{
-			EntityButton* test_button = EntityButton::create_default_clickable_button(new ERegionGabarite(64.0f, 64.0f), test_group, nullptr);
-			test_group->button_list.push_back(test_button);
+			for (int i = 0; i < 500 * 1; i++)
+			{
+				EButtonGroup* test_group = main_button_group->add_group
+				(EButtonGroup::create_default_button_group(new ERegionGabarite(100.0f, 200.0f), EGUIStyle::active_style));
+				*test_group->can_be_stretched_by_child = true;
+
+				*test_group->stretch_x_by_parent_size = true;
+				*test_group->stretch_y_by_parent_size = false;
+
+				for (int k = 0; k < 20; k++)
+				{
+					EntityButton* test_button = EntityButton::create_default_clickable_button(new ERegionGabarite(64.0f, 64.0f), test_group, nullptr);
+					test_group->button_list.push_back(test_button);
+				}
+			}
+			group_list.push_back(main_button_group);
+			EButtonGroup::refresh_button_group(main_button_group);
 		}
-	}
-	group_list.push_back(main_button_group);
-	EButtonGroup::refresh_button_group(main_button_group);
 	////////////////////////////////////////////////
 
 	//filters block imitator
-	if (false)
+	if (true)
 	{
 		main_button_group = EButtonGroup::create_button_group_without_bg
 		(
@@ -181,7 +184,8 @@ EWindowMain::EWindowMain()
 
 				//"ZZZ" buttons
 
-				for (int i = 0; i < 10; i++)
+				int parameters_count = (rand() % 4) * (rand() % 4);
+				for (int i = 0; i < parameters_count; i++)
 					for (int j = 0; j < 3; j++)
 					{
 						if (j == 0) { jc_region_gabarite = new ERegionGabarite(100.0f, 20.0f); }
@@ -205,11 +209,11 @@ EWindowMain::EWindowMain()
 
 						if ((jc_text_area != nullptr) && (jc_text_area->stored_text != nullptr))
 						{
-							if (j == 0) { jc_text_area->change_text(random_item_property[rand() % 5]); }
+							if (j == 0) { *jc_text_area->can_be_edited = false; jc_text_area->change_text(random_item_property[rand() % 5]); }
 							else
-								if (j == 1) { jc_text_area->change_text("="); }
+								if (j == 1) { *jc_text_area->can_be_edited = false; jc_text_area->change_text("="); }
 								else
-									if (j == 2) { jc_text_area->change_text(std::to_string(rand() % 100)); }
+									if (j == 2) { *jc_text_area->can_be_edited = true; jc_text_area->change_text(std::to_string(rand() % 100)); }
 						}
 					}
 			}
@@ -323,6 +327,8 @@ EWindowMain::EWindowMain()
 		group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
+
+	//TODO: change pointer to non-pointer in font glyph
 
 	
 
