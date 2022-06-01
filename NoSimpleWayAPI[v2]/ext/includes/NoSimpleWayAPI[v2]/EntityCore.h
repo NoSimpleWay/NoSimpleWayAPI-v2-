@@ -43,13 +43,13 @@ class Entity
 private:
 
 public:
-	float* offset_x = new float(0.0f);
-	float* offset_y = new float(0.0f);
-	float* offset_z = new float(0.0f);
+	float offset_x = 0.0f;
+	float offset_y = 0.0f;
+	float offset_z = 0.0f;
 
-	float* world_position_x = new float(0.0f);
-	float* world_position_y = new float(0.0f);
-	float* world_position_z = new float(0.0f);
+	float world_position_x = 0.0f;
+	float world_position_y = 0.0f;
+	float world_position_z = 0.0f;
 
 	std::vector<ECustomData*> custom_data_list;
 
@@ -85,9 +85,9 @@ public:
 	ESprite*			get_sprite_from_sprite_frame(ESpriteFrame* _frame, unsigned int _id);
 	
 	static ESprite*		get_last_sprite(Entity* _en);
-	bool* disable_draw	= new bool(false);
-	bool* need_remove	= new bool(false);
-	bool* disabled		= new bool(false);
+	bool disable_draw	= false;
+	bool need_remove	= false;
+	bool disabled		= false;
 
 	static ECustomData*		get_last_custom_data(Entity* _entity);
 	static EClickableArea*	get_last_clickable_area(Entity* _entity);
@@ -121,10 +121,10 @@ public:
 
 	ERegionGabarite* button_gabarite;
 
-	std::string* autoalign_id = new std::string("");
+	//std::string* autoalign_id = new std::string("");
 
-	float* autoalight_offset_x_mathed_id = new float(0.0f);
-	float* autoalight_offset_x_not_mathed_id = new float(0.0f);
+	//float* autoalight_offset_x_mathed_id = new float(0.0f);
+	//float* autoalight_offset_x_not_mathed_id = new float(0.0f);
 
 	EButtonGroup* parent_button_group;
 

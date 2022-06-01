@@ -530,7 +530,7 @@ EWindowMain::EWindowMain()
 		jc_custom_data->parent_entity = jc_button;
 		jc_custom_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
 
-		jc_button->set_world_position(*jc_button->offset_x, *jc_button->offset_y, *jc_button->offset_z);
+		jc_button->set_world_position(jc_button->offset_x, jc_button->offset_y, jc_button->offset_z);
 		jc_button->generate_vertex_buffer_for_all_sprite_layers();
 
 
@@ -694,7 +694,7 @@ EWindowMain::EWindowMain()
 		jc_custom_data->parent_entity = jc_button;
 		jc_custom_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
 
-		jc_button->set_world_position(*jc_button->offset_x, *jc_button->offset_y, *jc_button->offset_z);
+		jc_button->set_world_position(jc_button->offset_x, jc_button->offset_y, jc_button->offset_z);
 		jc_button->generate_vertex_buffer_for_all_sprite_layers();
 
 

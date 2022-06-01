@@ -16,7 +16,7 @@
 
 void Entity::draw()
 {
-	if ((!*disable_draw) && (!*disabled))
+	if ((!disable_draw) && (!disabled))
 	{
 		{transfer_all_vertex_buffers_to_batcher();}
 
@@ -35,7 +35,7 @@ void Entity::draw()
 
 void Entity::draw_second_pass()
 {
-	if ((!*disable_draw) && (!*disabled))
+	if ((!disable_draw) && (!disabled))
 	{
 		//custom data store clickable regions and text
 		if (!custom_data_list.empty())
@@ -107,14 +107,14 @@ void Entity::transfer_all_vertex_buffers_to_batcher()
 
 void Entity::set_world_position(float _x, float _y, float _z)
 {
-	*world_position_x = _x;
-	*world_position_y = _y;
-	*world_position_z = _z;
+	world_position_x = _x;
+	world_position_y = _y;
+	world_position_z = _z;
 
 	if (!sprite_layer_list.empty())
 	for (ESpriteLayer* s_layer : sprite_layer_list)
 	if (s_layer != nullptr)
-	{s_layer->sprite_layer_set_world_position(*world_position_x, *world_position_y, *world_position_z);}
+	{s_layer->sprite_layer_set_world_position(world_position_x, world_position_y, world_position_z);}
 
 	for (ECustomData* c_data : custom_data_list)
 	if (c_data != nullptr)
@@ -123,7 +123,7 @@ void Entity::set_world_position(float _x, float _y, float _z)
 		if (clickable_area != nullptr)
 		//
 		{
-			clickable_area->clickable_region_set_world_positions(*world_position_x, *world_position_y, *world_position_z);
+			clickable_area->clickable_region_set_world_positions(world_position_x, world_position_y, world_position_z);
 		}
 	}
 }
@@ -178,16 +178,16 @@ void Entity::modify_buffer_translate_for_entity(float _x, float _y, float _z)
 void Entity::translate_entity(float _x, float _y, float _z, bool _move_positions)
 {
 
-	*world_position_x += _x;
-	*world_position_y += _y;
-	*world_position_z += _z;
+	world_position_x += _x;
+	world_position_y += _y;
+	world_position_z += _z;
 
 	//entity position
 	if (_move_positions)
 	{
-		*offset_x += _x;
-		*offset_y += _y;
-		*offset_z += _z;
+		offset_x += _x;
+		offset_y += _y;
+		offset_z += _z;
 	}
 
 	translate_sprite_layer(_x, _y, _z, false);
@@ -210,7 +210,7 @@ void Entity::update(float _d)
 {
 	//translate_entity(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f);
 
-	if (!*disabled)
+	if (!disabled)
 	for (ECustomData* c_data : custom_data_list)
 	if (c_data != nullptr)
 	{
@@ -227,13 +227,13 @@ Entity::~Entity()
 
 	//EInputCore::logger_simple_try("delete entity");
 
-	delete offset_x;
-	delete offset_y;
-	delete offset_z;
+	//delete offset_x;
+	//delete offset_y;
+	//delete offset_z;
 
-	delete world_position_x;
-	delete world_position_y;
-	delete world_position_z;
+	//delete world_position_x;
+	//delete world_position_y;
+	//delete world_position_z;
 
 	//
 	
@@ -259,8 +259,8 @@ Entity::~Entity()
 
 	}
 
-	delete disable_draw;
-	delete need_remove;
+	//delete disable_draw;
+	//delete need_remove;
 	//delete& custom_data_list;
 	//delete[] custom_data_list;
 }
@@ -705,9 +705,9 @@ EntityButton::~EntityButton()
 		}
 	}
 
-	delete autoalign_id;
-	delete autoalight_offset_x_mathed_id;
-	delete autoalight_offset_x_not_mathed_id;
+	//delete autoalign_id;
+	//delete autoalight_offset_x_mathed_id;
+	//delete autoalight_offset_x_not_mathed_id;
 
 	delete fixed_position;
 	delete update_when_scissored;

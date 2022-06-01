@@ -168,7 +168,7 @@ void EButtonGroup::update(float _d)
 	{
 		if (!button_list.empty())
 		for (unsigned int i = 0; i < button_list.size(); i++)
-		if (*button_list[i]->need_remove)
+		if (button_list[i]->need_remove)
 		{
 			EntityButton* but = button_list[i];
 			button_list.erase(button_list.begin() + i);
@@ -327,9 +327,9 @@ void EButtonGroup::draw()
 		for (EntityButton* but : button_list)
 			if
 				(
-					(*but->world_position_y + but->button_gabarite->size_y >= *lower_culling_line)
+					(but->world_position_y + but->button_gabarite->size_y >= *lower_culling_line)
 					&&
-					(*but->world_position_y <= *higher_culling_line)
+					(but->world_position_y <= *higher_culling_line)
 					)
 			{
 				but->draw();
@@ -445,9 +445,9 @@ void EButtonGroup::draw_second_pass()
 	for (EntityButton* but : button_list)
 	if
 	(
-		(*but->world_position_y + but->button_gabarite->size_y >= *lower_culling_line)
+		(but->world_position_y + but->button_gabarite->size_y >= *lower_culling_line)
 		&&
-		(*but->world_position_y <= *higher_culling_line)
+		(but->world_position_y <= *higher_culling_line)
 	)
 	{
 		but->draw_second_pass();
@@ -699,7 +699,7 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 	{
 		for (EntityButton* but : _group->button_list)
 		{
-			but->set_world_position(*but->world_position_x, *but->world_position_y, *but->world_position_z);
+			but->set_world_position(but->world_position_x, but->world_position_y, but->world_position_z);
 
 
 			//if
@@ -787,7 +787,7 @@ void EButtonGroup::group_stretch_x()
 
 	unsigned int	dynamic_elements_count		= 0;
 
-	if ((slider != nullptr) && (!*slider->disable_draw))
+	if ((slider != nullptr) && (!slider->disable_draw))
 	{
 		slider_effect = slider->button_gabarite->size_x + 3.0f;
 	}
@@ -891,7 +891,7 @@ void EButtonGroup::check_slider()
 	*have_slider = true;//have no slider by default
 
 	if (slider != nullptr)
-	{*slider->disable_draw = true;}
+	{slider->disable_draw = true;}
 
 	float child_elements_height_summ = 0.0f;
 	float max_y = 0.0f;
@@ -932,7 +932,7 @@ void EButtonGroup::check_slider()
 		{
 			if (slider != nullptr)
 			{
-				*slider->disable_draw = false;
+				slider->disable_draw = false;
 				*have_slider = true;
 				//EInputCore::logger_param("summ", child_elements_height_summ);
 				//EInputCore::logger_param("size y", *region_gabarite->size_y - 6.0f - *border_bottom - *border_up);
@@ -949,7 +949,7 @@ void EButtonGroup::check_slider()
 		{
 			if (slider != nullptr)
 			{
-				*slider->disable_draw = true;
+				slider->disable_draw = true;
 				*have_slider = false;
 				for (EButtonGroup* group : group_list)
 				{*group->parent_have_slider = false;}//parent have no slider
@@ -999,52 +999,52 @@ void EButtonGroup::realign_all_buttons()
 			(false)
 		)
 		&&
-		(!*but->disable_draw)
+		(!but->disable_draw)
 		&&
-		(!*but->disabled)
+		(!but->disabled)
 	)
 	{
 		if (prev_button != nullptr)
 		{
-			*but->offset_x = *prev_button->offset_x + prev_button->button_gabarite->offset_x + prev_button->button_gabarite->size_x + 3.0f;
-			*but->offset_y = *prev_button->offset_y;
+			but->offset_x = prev_button->offset_x + prev_button->button_gabarite->offset_x + prev_button->button_gabarite->size_x + 3.0f;
+			but->offset_y = prev_button->offset_y;
 
 			if (slider != nullptr) { slider_additional = slider->button_gabarite->size_x + 3.0f; }
 
-			if (*but->offset_x + but->button_gabarite->size_x + slider_additional >= region_gabarite->size_x)
+			if (but->offset_x + but->button_gabarite->size_x + slider_additional >= region_gabarite->size_x)
 			{
-				*but->offset_x = *but->parent_button_group->border_left + 2.0f;
-				*but->offset_y += but->button_gabarite->size_y + 3.0f;
+				but->offset_x = *but->parent_button_group->border_left + 2.0f;
+				but->offset_y += but->button_gabarite->size_y + 3.0f;
 			}
 
 			
 		}
 		else
 		{
-			*but->offset_x = *but->parent_button_group->border_left + 2.0f;
-			*but->offset_y = *but->parent_button_group->border_bottom + 2.0f;
+			but->offset_x = *but->parent_button_group->border_left + 2.0f;
+			but->offset_y = *but->parent_button_group->border_bottom + 2.0f;
 		}
 
 		if ((*but->fixed_position) && (true))
 		{
-			*but->world_position_x = but->parent_button_group->region_gabarite->world_position_x + *but->offset_x;
-			*but->world_position_y = but->parent_button_group->region_gabarite->world_position_y + *but->offset_y;
+			but->world_position_x = but->parent_button_group->region_gabarite->world_position_x + but->offset_x;
+			but->world_position_y = but->parent_button_group->region_gabarite->world_position_y + but->offset_y;
 		}
 		else
 		{
-			*but->world_position_x = but->parent_button_group->region_gabarite->world_position_x + *but->offset_x + *but->parent_button_group->scroll_x;
-			*but->world_position_y = but->parent_button_group->region_gabarite->world_position_y + *but->offset_y + *but->parent_button_group->scroll_y;
+			but->world_position_x = but->parent_button_group->region_gabarite->world_position_x + but->offset_x + *but->parent_button_group->scroll_x;
+			but->world_position_y = but->parent_button_group->region_gabarite->world_position_y + but->offset_y + *but->parent_button_group->scroll_y;
 
 
 			//*but->world_position_x = *but->parent_button_group->region->world_position_x + *but->parent_button_group->scroll_y;
 			//*but->world_position_y = *but->parent_button_group->region->world_position_y;
 		}
 
-		*highest_point_y = max(*highest_point_y, *but->offset_y + but->button_gabarite->size_y + 3.0f);
+		*highest_point_y = max(*highest_point_y, but->offset_y + but->button_gabarite->size_y + 3.0f);
 
 		if ((slider != nullptr) && (*highest_point_y > region_gabarite->size_y - 0.0f - *border_up))
 		{
-			*slider->disable_draw = false;
+			slider->disable_draw = false;
 
 			for (EButtonGroup* group : group_list) {*group->have_slider = true;}
 		}
@@ -1060,7 +1060,7 @@ void EButtonGroup::realign_all_buttons()
 
 	if (slider != nullptr)
 	{
-		*slider->offset_x
+		slider->offset_x
 			=
 			region_gabarite->size_x
 			-
@@ -1070,14 +1070,14 @@ void EButtonGroup::realign_all_buttons()
 
 
 
-		*slider->world_position_x
+		slider->world_position_x
 			=
-			*slider->offset_x
+			slider->offset_x
 			+
 			region_gabarite->world_position_x;
 
-		*slider->offset_y = 0.0f;
-		*slider->world_position_y = region_gabarite->world_position_y;
+		slider->offset_y = 0.0f;
+		slider->world_position_y = region_gabarite->world_position_y;
 	}
 
 	for (EButtonGroup* group : group_list) { group->realign_all_buttons(); }
@@ -1222,10 +1222,10 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 
 	_button_group->button_list.push_back(but);
 
-	*but->world_position_x = _button_group->region_gabarite->offset_x + _button_group->region_gabarite->size_x - but->button_gabarite->size_x;
-	*but->world_position_y = _button_group->region_gabarite->offset_y;
+	but->world_position_x = _button_group->region_gabarite->offset_x + _button_group->region_gabarite->size_x - but->button_gabarite->size_x;
+	but->world_position_y = _button_group->region_gabarite->offset_y;
 
-	but->set_world_position(*but->offset_x, *but->offset_y, *but->offset_z);
+	but->set_world_position(but->offset_x, but->offset_y, but->offset_z);
 	but->generate_vertex_buffer_for_all_sprite_layers();
 	sprite_layer->generate_vertex_buffer_for_sprite_layer("scroll bar sprite layer");
 
@@ -1605,7 +1605,7 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 		(
 			(_group->slider != NULL)
 			&&
-			(!*_group->slider->disable_draw)
+			(!_group->slider->disable_draw)
 			&&
 			(EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
 		)
