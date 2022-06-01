@@ -445,7 +445,7 @@ void ETextArea::generate_text()
 			border_offset_top		= *parent_entity->parent_button_group->selected_style->button_bg->side_offset_up;
 		}
 
-		y_adding += (*region_gabarite->size_y - border_offset_bottom - border_offset_top) * *offset_by_gabarite_size_y;
+		y_adding += (region_gabarite->size_y - border_offset_bottom - border_offset_top) * *offset_by_gabarite_size_y;
 
 		//vertical align
 		y_adding += (full_text_height - 2.0f) * *offset_by_text_size_y;
@@ -461,7 +461,7 @@ void ETextArea::generate_text()
 			=
 			(
 				(
-					*region_gabarite->size_x
+					region_gabarite->size_x
 					-
 					offset_border[BorderSide::RIGHT]
 				)
@@ -485,8 +485,8 @@ void ETextArea::generate_text()
 					sprite_layer->vertex_buffer,
 					*sprite_layer->last_buffer_id,
 
-					round(*region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol]),
-					round(*region_gabarite->world_position_y - (font->size_y_in_pixels[target_symbol] - 15.0f + font->offset_y[target_symbol] * *font_scale - y_adding)),
+					round(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol]),
+					round(region_gabarite->world_position_y - (font->size_y_in_pixels[target_symbol] - 15.0f + font->offset_y[target_symbol] * *font_scale - y_adding)),
 
 					font->size_x_in_pixels[target_symbol] * *font_scale,
 					font->size_y_in_pixels[target_symbol] * *font_scale,
@@ -505,8 +505,8 @@ void ETextArea::generate_text()
 					(
 						target_symbol,
 
-						*region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
-						*region_gabarite->world_position_y + y_adding,
+						region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
+						region_gabarite->world_position_y + y_adding,
 
 						font->size_x_in_pixels[target_symbol] * *font_scale,
 						font->size_y_in_pixels[target_symbol] * *font_scale
@@ -551,8 +551,8 @@ void ETextArea::generate_text()
 			(
 				0,
 
-				*region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
-				*region_gabarite->world_position_y + y_adding,
+				region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
+				region_gabarite->world_position_y + y_adding,
 
 				5.0f,
 				5.0f
@@ -614,13 +614,13 @@ void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_co
 		(region_gabarite != ((EntityButton*)parent_entity)->button_gabarite)
 	)
 	{
-		*region_gabarite->world_position_x += _x;
-		*region_gabarite->world_position_y += _y;
+		region_gabarite->world_position_x += _x;
+		region_gabarite->world_position_y += _y;
 
 		if (_translate_local_coordinate)
 		{
-			*region_gabarite->offset_x += _x;
-			*region_gabarite->offset_y += _y;
+			region_gabarite->offset_x += _x;
+			region_gabarite->offset_y += _y;
 		}
 	}
 	
@@ -736,13 +736,13 @@ void ETextArea::update(float _d)
 		(
 			(*can_be_edited)
 			&&
-			(EInputCore::MOUSE_POSITION_X >= *region_gabarite->world_position_x)
+			(EInputCore::MOUSE_POSITION_X >= region_gabarite->world_position_x)
 			&&
-			(EInputCore::MOUSE_POSITION_X <= *region_gabarite->world_position_x + *region_gabarite->size_x)
+			(EInputCore::MOUSE_POSITION_X <= region_gabarite->world_position_x + region_gabarite->size_x)
 			&&
-			(EInputCore::MOUSE_POSITION_Y >= *region_gabarite->world_position_y)
+			(EInputCore::MOUSE_POSITION_Y >= region_gabarite->world_position_y)
 			&&
-			(EInputCore::MOUSE_POSITION_Y <= *region_gabarite->world_position_y + *region_gabarite->size_y)
+			(EInputCore::MOUSE_POSITION_Y <= region_gabarite->world_position_y + region_gabarite->size_y)
 			&&
 			(
 				(EClickableArea::active_clickable_region == nullptr)
@@ -1151,7 +1151,7 @@ void ETextArea::change_text(std::string _text)
 
 				if
 				(
-					(x_size + offset_border[BorderSide::LEFT] + 5.0f >= *region_gabarite->size_x - offset_border[BorderSide::RIGHT])
+					(x_size + offset_border[BorderSide::LEFT] + 5.0f >= region_gabarite->size_x - offset_border[BorderSide::RIGHT])
 				)
 				{
 					//EInputCore::logger_param("text splitted", buffer);

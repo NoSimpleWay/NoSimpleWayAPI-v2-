@@ -162,7 +162,7 @@ public:
 	std::vector<EButtonGroup*> group_list;
 	EButtonGroup* parent_group = nullptr;
 
-	int* order_in_vector = new int(0);
+	//int* order_in_vector = new int(0);
 	static EButtonGroup* focused_button_group;
 	static EButtonGroup* focused_button_group_with_slider;
 

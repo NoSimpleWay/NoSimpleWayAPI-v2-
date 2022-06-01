@@ -83,21 +83,21 @@ public:
 	ERegionGabarite(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
 	ERegionGabarite(float _size_x, float _size_y);
 
-	float* offset_x = new float(0.0f);
-	float* offset_y = new float(0.0f);
-	float* offset_z = new float(0.0f);
+	float offset_x = 0.0f;
+	float offset_y = 0.0f;
+	float offset_z = 0.0f;
 
-	float* size_x = new float(0.0f);
-	float* size_y = new float(0.0f);
+	float size_x = 0.0f;
+	float size_y = 0.0f;
 
 	/*float* border_left_offset = new float(0.0f);
 	float* border_right_offset = new float(0.0f);
 	float* border_up_offset = new float(0.0f);
 	float* border_down_offset = new float(0.0f);*/
 
-	float* world_position_x = new float(0.0f);
-	float* world_position_y = new float(0.0f);
-	float* world_position_z = new float(0.0f);
+	float world_position_x = 0.0f;
+	float world_position_y = 0.0f;
+	float world_position_z = 0.0f;
 
 	void translate(float _x, float _y);
 

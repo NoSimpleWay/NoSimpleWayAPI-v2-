@@ -88,15 +88,15 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 	//EInputCore::logger_simple_success("@");
 
-	*entity_button->button_gabarite->size_y = *entity_button->parent_button_group->region_gabarite->size_y;
+	entity_button->button_gabarite->size_y = entity_button->parent_button_group->region_gabarite->size_y;
 
 
 
 	*_entity->offset_x
 	=
-	*entity_button->parent_button_group->region_gabarite->size_x
+	entity_button->parent_button_group->region_gabarite->size_x
 	-
-	*entity_button->button_gabarite->size_x
+	entity_button->button_gabarite->size_x
 	-
 	*entity_button->parent_button_group->border_right;
 
@@ -106,7 +106,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	=
 	*_entity->offset_x
 	+
-	*entity_button->parent_button_group->region_gabarite->world_position_x;
+	entity_button->parent_button_group->region_gabarite->world_position_x;
 
 	*data_bar->max_value
 	=
@@ -116,7 +116,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 		*entity_button->parent_button_group->highest_point_y
 		-
 		(
-			*entity_button->parent_button_group->region_gabarite->size_y
+			entity_button->parent_button_group->region_gabarite->size_y
 			-
 			//*entity_button->parent_button_group->border_bottom
 			//-
@@ -164,7 +164,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 		{
 			if (EInputCore::mouse_button_state[GLFW_MOUSE_BUTTON_LEFT] != GLFW_RELEASE)
 			{
-				*_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y += EInputCore::MOUSE_SPEED_Y;
+				_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y += EInputCore::MOUSE_SPEED_Y;
 			}
 
 			if (*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id != 1)
@@ -182,14 +182,14 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			&&
 			(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
 			&&
-			(*entity_button->parent_button_group->region_gabarite->size_y > 10.0f)
+			(entity_button->parent_button_group->region_gabarite->size_y > 10.0f)
 		)
 		{
-			*_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
+			_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 			+=
 			(EInputCore::scroll_direction * EInputCore::scroll_direction * EInputCore::scroll_direction * 2)
 			*
-			(*entity_button->parent_button_group->region_gabarite->size_y  / *data_bar->max_value)
+			(entity_button->parent_button_group->region_gabarite->size_y  / *data_bar->max_value)
 			*
 			10.0f;
 		}
@@ -211,35 +211,35 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			)
 		)
 		{
-			*_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
+			_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 				=
-				max(*entity_button->parent_button_group->border_bottom, *_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y);
+				max(*entity_button->parent_button_group->border_bottom, _custom_data->clickable_area_list.at(0)->region_gabarite->offset_y);
 
-			*_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
+			_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 				=
 				min
 				(
-					*entity_button->parent_button_group->region_gabarite->size_y
+					entity_button->parent_button_group->region_gabarite->size_y
 					-
-					*_custom_data->clickable_area_list.at(0)->region_gabarite->size_y
+					_custom_data->clickable_area_list.at(0)->region_gabarite->size_y
 					-
 					*entity_button->parent_button_group->border_up,
-					*_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
+					_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 				);
 
 			*data_bar->current_percent
 				=
 				//head position (990 - 7) = 983
 				(
-					*_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
+					_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 					-
 					*entity_button->parent_button_group->border_bottom
 					)
 				/
 				(
-					*entity_button->parent_button_group->region_gabarite->size_y//1000
+					entity_button->parent_button_group->region_gabarite->size_y//1000
 					-
-					*_custom_data->clickable_area_list.at(0)->region_gabarite->size_y//39
+					_custom_data->clickable_area_list.at(0)->region_gabarite->size_y//39
 					-
 					*entity_button->parent_button_group->border_up
 					-
@@ -379,11 +379,11 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-			*((EntityButton*)_entity)->button_gabarite->world_position_x,
-			*((EntityButton*)_entity)->button_gabarite->world_position_y,
+			((EntityButton*)_entity)->button_gabarite->world_position_x,
+			((EntityButton*)_entity)->button_gabarite->world_position_y,
 
-			*((EntityButton*)_entity)->button_gabarite->size_x,
-			*((EntityButton*)_entity)->button_gabarite->size_y,
+			((EntityButton*)_entity)->button_gabarite->size_x,
+			((EntityButton*)_entity)->button_gabarite->size_y,
 
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 	
@@ -463,7 +463,7 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 	//{*EClickableArea::active_clickable_region->region_gabarite->size_x += 10.0f * _d;}
 
 
-	float size = *((EntityButton*)_entity)->button_gabarite->size_y;
+	float size = ((EntityButton*)_entity)->button_gabarite->size_y;
 	float value = 0.0f;
 	float shift_multiplier = 1.0f;
 	float direction_x = 1.0f;
@@ -772,15 +772,15 @@ bool EClickableArea::overlapped_by_mouse(EClickableArea* _region, float _offset_
 			)
 			&&
 			(
-				(EInputCore::MOUSE_POSITION_X >= ((double)*_region->region_gabarite->world_position_x + (double)_offset_x) * _zoom)
+				(EInputCore::MOUSE_POSITION_X >= ((double)_region->region_gabarite->world_position_x + (double)_offset_x) * _zoom)
 				&&
-				(EInputCore::MOUSE_POSITION_X <= ((double)*_region->region_gabarite->world_position_x + (double)*_region->region_gabarite->size_x + _offset_x) * _zoom)
+				(EInputCore::MOUSE_POSITION_X <= ((double)_region->region_gabarite->world_position_x + (double)_region->region_gabarite->size_x + _offset_x) * _zoom)
 
 				&&
 
-				(EInputCore::MOUSE_POSITION_Y >= ((double)*_region->region_gabarite->world_position_y + _offset_y) * _zoom)
+				(EInputCore::MOUSE_POSITION_Y >= ((double)_region->region_gabarite->world_position_y + _offset_y) * _zoom)
 				&&
-				(EInputCore::MOUSE_POSITION_Y <= ((double)*_region->region_gabarite->world_position_y + *_region->region_gabarite->size_y + _offset_y) * _zoom)
+				(EInputCore::MOUSE_POSITION_Y <= ((double)_region->region_gabarite->world_position_y + _region->region_gabarite->size_y + _offset_y) * _zoom)
 			)
 		)
 	{
@@ -823,11 +823,11 @@ void EClickableArea::check_all_catches()
 			{
 				*catched_side_left = catched_side_by_mouse
 				(
-					*region_gabarite->world_position_x,
-					*region_gabarite->world_position_y,
+					region_gabarite->world_position_x,
+					region_gabarite->world_position_y,
 
 					0.0f,
-					*region_gabarite->size_y,
+					region_gabarite->size_y,
 
 					NS_EGraphicCore::current_offset_x,
 					NS_EGraphicCore::current_offset_y,
@@ -848,11 +848,11 @@ void EClickableArea::check_all_catches()
 
 				*catched_side_right = catched_side_by_mouse
 				(
-					*region_gabarite->world_position_x + *region_gabarite->size_x,
-					*region_gabarite->world_position_y,
+					region_gabarite->world_position_x + region_gabarite->size_x,
+					region_gabarite->world_position_y,
 
 					0.0f,
-					*region_gabarite->size_y,
+					region_gabarite->size_y,
 
 					NS_EGraphicCore::current_offset_x,
 					NS_EGraphicCore::current_offset_y,
@@ -872,10 +872,10 @@ void EClickableArea::check_all_catches()
 			{
 				*catched_side_down = catched_side_by_mouse
 				(
-					*region_gabarite->world_position_x,
-					*region_gabarite->world_position_y,
+					region_gabarite->world_position_x,
+					region_gabarite->world_position_y,
 
-					*region_gabarite->size_x,
+					region_gabarite->size_x,
 					0.0f,
 
 					NS_EGraphicCore::current_offset_x,
@@ -895,10 +895,10 @@ void EClickableArea::check_all_catches()
 			{
 				*catched_side_up = catched_side_by_mouse
 				(
-					*region_gabarite->world_position_x,
-					*region_gabarite->world_position_y + *region_gabarite->size_y,
+					region_gabarite->world_position_x,
+					region_gabarite->world_position_y + region_gabarite->size_y,
 
-					*region_gabarite->size_x,
+					region_gabarite->size_x,
 					0.0f,
 
 					NS_EGraphicCore::current_offset_x,
@@ -917,8 +917,8 @@ void EClickableArea::check_all_catches()
 			{
 				*catched_side_mid = catched_side_by_mouse
 				(
-					*region_gabarite->world_position_x + *region_gabarite->size_x / 2.0f,
-					*region_gabarite->world_position_y + *region_gabarite->size_y / 2.0f,
+					region_gabarite->world_position_x + region_gabarite->size_x / 2.0f,
+					region_gabarite->world_position_y + region_gabarite->size_y / 2.0f,
 
 					0.0f,
 					0.0f,
@@ -939,11 +939,11 @@ void EClickableArea::check_all_catches()
 			{
 				*catched_body = catched_side_by_mouse
 				(
-					*region_gabarite->world_position_x,
-					*region_gabarite->world_position_y,
+					region_gabarite->world_position_x,
+					region_gabarite->world_position_y,
 
-					*region_gabarite->size_x,
-					*region_gabarite->size_y,
+					region_gabarite->size_x,
+					region_gabarite->size_y,
 
 					NS_EGraphicCore::current_offset_x,
 					NS_EGraphicCore::current_offset_y,
@@ -957,33 +957,33 @@ void EClickableArea::check_all_catches()
 				*catched_body = false;
 			}
 
-			*catch_offset_x = EInputCore::MOUSE_POSITION_X - *region_gabarite->world_position_x;
-			*catch_offset_y = EInputCore::MOUSE_POSITION_Y - *region_gabarite->world_position_y;
+			*catch_offset_x = EInputCore::MOUSE_POSITION_X - region_gabarite->world_position_x;
+			*catch_offset_y = EInputCore::MOUSE_POSITION_Y - region_gabarite->world_position_y;
 		}
 		else
 		{
 
 			if (*catched_side_left)
 			{
-				*region_gabarite->size_x -= EInputCore::MOUSE_SPEED_X;
+				region_gabarite->size_x -= EInputCore::MOUSE_SPEED_X;
 				translate_clickable_region(EInputCore::MOUSE_SPEED_X, 0.0f, 0.0f, true);
 			}
 
 			if (*catched_side_right)
 			{
-				*region_gabarite->size_x += EInputCore::MOUSE_SPEED_X;
+				region_gabarite->size_x += EInputCore::MOUSE_SPEED_X;
 				redraw_text();
 			}
 
 			if (*catched_side_down)
 			{
 				translate_clickable_region(0.0f, EInputCore::MOUSE_SPEED_Y, 0.0f, true);
-				*region_gabarite->size_y -= EInputCore::MOUSE_SPEED_Y;
+				region_gabarite->size_y -= EInputCore::MOUSE_SPEED_Y;
 			}
 
 			if (*catched_side_up)
 			{
-				*region_gabarite->size_y += EInputCore::MOUSE_SPEED_Y;
+				region_gabarite->size_y += EInputCore::MOUSE_SPEED_Y;
 				redraw_text();
 			}
 
@@ -1033,15 +1033,15 @@ void EClickableArea::translate_clickable_region(float _x, float _y, float _z, bo
 {
 	if (region_gabarite != nullptr)
 	{
-		*region_gabarite->world_position_x += _x;
-		*region_gabarite->world_position_y += _y;
-		*region_gabarite->world_position_z += _z;
+		region_gabarite->world_position_x += _x;
+		region_gabarite->world_position_y += _y;
+		region_gabarite->world_position_z += _z;
 
 		if (_move_offset)
 		{
-			*region_gabarite->offset_x += _x;
-			*region_gabarite->offset_y += _y;
-			*region_gabarite->offset_z += _z;
+			region_gabarite->offset_x += _x;
+			region_gabarite->offset_y += _y;
+			region_gabarite->offset_z += _z;
 		}
 	}
 
@@ -1142,11 +1142,11 @@ void EClickableArea::draw()
 				batcher_for_default_draw->vertex_buffer,
 				batcher_for_default_draw->last_vertice_buffer_index,
 
-				*region_gabarite->world_position_x,
-				*region_gabarite->world_position_y,
+				region_gabarite->world_position_x,
+				region_gabarite->world_position_y,
 
-				*region_gabarite->size_x,
-				*region_gabarite->size_y,
+				region_gabarite->size_x,
+				region_gabarite->size_y,
 
 				NS_DefaultGabarites::texture_gabarite_white_pixel
 			);
@@ -1164,11 +1164,11 @@ void EClickableArea::draw()
 			batcher_for_default_draw->vertex_buffer,
 			batcher_for_default_draw->last_vertice_buffer_index,
 
-			*region_gabarite->world_position_x - 2.0f,
-			*region_gabarite->world_position_y,
+			region_gabarite->world_position_x - 2.0f,
+			region_gabarite->world_position_y,
 
 			2.0f,
-			*region_gabarite->size_y,
+			region_gabarite->size_y,
 
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
@@ -1184,11 +1184,11 @@ void EClickableArea::draw()
 			batcher_for_default_draw->vertex_buffer,
 			batcher_for_default_draw->last_vertice_buffer_index,
 
-			*region_gabarite->world_position_x + *region_gabarite->size_x,
-			*region_gabarite->world_position_y,
+			region_gabarite->world_position_x + region_gabarite->size_x,
+			region_gabarite->world_position_y,
 
 			2.0f,
-			*region_gabarite->size_y,
+			region_gabarite->size_y,
 
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
@@ -1204,10 +1204,10 @@ void EClickableArea::draw()
 			batcher_for_default_draw->vertex_buffer,
 			batcher_for_default_draw->last_vertice_buffer_index,
 
-			*region_gabarite->world_position_x - 2.0f,
-			*region_gabarite->world_position_y - 2.0f,
+			region_gabarite->world_position_x - 2.0f,
+			region_gabarite->world_position_y - 2.0f,
 
-			*region_gabarite->size_x + 4.0f,
+			region_gabarite->size_x + 4.0f,
 			2.0f,
 			
 			NS_DefaultGabarites::texture_gabarite_white_pixel
@@ -1224,10 +1224,10 @@ void EClickableArea::draw()
 			batcher_for_default_draw->vertex_buffer,
 			batcher_for_default_draw->last_vertice_buffer_index,
 
-			*region_gabarite->world_position_x - 2.0f,
-			*region_gabarite->world_position_y + *region_gabarite->size_y,
+			region_gabarite->world_position_x - 2.0f,
+			region_gabarite->world_position_y + region_gabarite->size_y,
 
-			*region_gabarite->size_x + 4.0f,
+			region_gabarite->size_x + 4.0f,
 			2.0f,
 
 			NS_DefaultGabarites::texture_gabarite_white_pixel
@@ -1244,8 +1244,8 @@ void EClickableArea::draw()
 			batcher_for_default_draw->vertex_buffer,
 			batcher_for_default_draw->last_vertice_buffer_index,
 
-			*region_gabarite->world_position_x + *region_gabarite->size_x / 2.0f - 3.0f,
-			*region_gabarite->world_position_y + *region_gabarite->size_y / 2.0f - 3.0f,
+			region_gabarite->world_position_x + region_gabarite->size_x / 2.0f - 3.0f,
+			region_gabarite->world_position_y + region_gabarite->size_y / 2.0f - 3.0f,
 
 			6.0f,
 			6.0f,
@@ -1266,11 +1266,11 @@ void EClickableArea::draw()
 				batcher_for_default_draw->vertex_buffer,
 				batcher_for_default_draw->last_vertice_buffer_index,
 
-				*region_gabarite->world_position_x,
-				*region_gabarite->world_position_y,
+				region_gabarite->world_position_x,
+				region_gabarite->world_position_y,
 
-				*region_gabarite->size_x,
-				*region_gabarite->size_y,
+				region_gabarite->size_x,
+				region_gabarite->size_y,
 
 				NS_DefaultGabarites::texture_gabarite_white_pixel
 			);
@@ -1305,14 +1305,14 @@ void EClickableArea::redraw_text()
 
 void EClickableArea::clickable_region_set_world_positions(float _x, float _y, float _z)
 {
-	*region_gabarite->world_position_x = _x + *region_gabarite->offset_x;
-	*region_gabarite->world_position_y = _y + *region_gabarite->offset_y;
-	*region_gabarite->world_position_z = _z + *region_gabarite->offset_z;
+	region_gabarite->world_position_x = _x + region_gabarite->offset_x;
+	region_gabarite->world_position_y = _y + region_gabarite->offset_y;
+	region_gabarite->world_position_z = _z + region_gabarite->offset_z;
 
 	for (ESpriteLayer* s_layer : sprite_layer_list)
 	if (s_layer != nullptr)
 	{
-		s_layer->sprite_layer_set_world_position(*region_gabarite->world_position_x, *region_gabarite->world_position_y, *region_gabarite->world_position_z);
+		s_layer->sprite_layer_set_world_position(region_gabarite->world_position_x, region_gabarite->world_position_y, region_gabarite->world_position_z);
 	}
 }
 
@@ -1337,50 +1337,50 @@ ERegionGabarite::~ERegionGabarite()
 
 ERegionGabarite::ERegionGabarite(float _offset_x, float _offset_y, float _size_x, float _size_y)
 {
-	*offset_x = _offset_x;
-	*offset_y = _offset_y;
+	offset_x = _offset_x;
+	offset_y = _offset_y;
 
-	*size_x = _size_x;
-	*size_y = _size_y;
+	size_x = _size_x;
+	size_y = _size_y;
 }
 
 ERegionGabarite::ERegionGabarite(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y)
 {
-	*offset_x = _offset_x;
-	*offset_y = _offset_y;
-	*offset_z = _offset_z;
+	offset_x = _offset_x;
+	offset_y = _offset_y;
+	offset_z = _offset_z;
 	
-	*world_position_x = _offset_x;
-	*world_position_y = _offset_y;
-	*world_position_z = _offset_z;
+	world_position_x = _offset_x;
+	world_position_y = _offset_y;
+	world_position_z = _offset_z;
 
-	*size_x = _size_x;
-	*size_y = _size_y;
+	size_x = _size_x;
+	size_y = _size_y;
 }
 
 ERegionGabarite::ERegionGabarite(float _size_x, float _size_y)
 {
-	*size_x = _size_x;
-	*size_y = _size_y;
+	size_x = _size_x;
+	size_y = _size_y;
 }
 
 void ERegionGabarite::translate(float _x, float _y)
 {
-	*offset_x += _x;
-	*offset_y += _y;
+	offset_x += _x;
+	offset_y += _y;
 
-	*world_position_x += _x;
-	*world_position_y += _y;
+	world_position_x += _x;
+	world_position_y += _y;
 }
 
 void ERegionGabarite::set_region_offset_and_size(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y)
 {
-	*offset_x = _offset_x;
-	*offset_y = _offset_y;
-	*offset_z = _offset_z;
+	offset_x = _offset_x;
+	offset_y = _offset_y;
+	offset_z = _offset_z;
 
-	*size_x = _size_x;
-	*size_y = _size_y;
+	size_x = _size_x;
+	size_y = _size_y;
 
 }
 
@@ -1388,13 +1388,13 @@ bool ERegionGabarite::overlapped_by_mouse()
 {
 	if
 	(
-		(EInputCore::MOUSE_POSITION_X >= *world_position_x)
+		(EInputCore::MOUSE_POSITION_X >= world_position_x)
 		&&
-		(EInputCore::MOUSE_POSITION_X <= *world_position_x + *size_x)
+		(EInputCore::MOUSE_POSITION_X <= world_position_x + size_x)
 		&&
-		(EInputCore::MOUSE_POSITION_Y >= *world_position_y)
+		(EInputCore::MOUSE_POSITION_Y >= world_position_y)
 		&&
-		(EInputCore::MOUSE_POSITION_Y <= *world_position_y + *size_y)
+		(EInputCore::MOUSE_POSITION_Y <= world_position_y + size_y)
 	)
 	{
 		return true;

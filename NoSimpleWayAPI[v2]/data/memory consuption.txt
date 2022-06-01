@@ -1,0 +1,4 @@
+megabytes[clear]:			232
+megabytes[1000 groups]:		534
+diff:						302
+memeory per group:			0.3 mb

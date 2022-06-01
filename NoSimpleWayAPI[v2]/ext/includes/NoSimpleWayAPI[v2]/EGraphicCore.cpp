@@ -2307,8 +2307,8 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 		ESpriteFrame* jc_sprite_frame = nullptr;
 
 		//static
-		float full_segment_size_x = *_region->size_x;
-		float full_segment_size_y = *_region->size_y;
+		float full_segment_size_x = _region->size_x;
+		float full_segment_size_y = _region->size_y;
 
 		float cropped_mid_segment_size_x = full_segment_size_x - NS_ERenderCollection::border_left_size - NS_ERenderCollection::border_right_size;
 		float cropped_mid_segment_size_y = full_segment_size_y - NS_ERenderCollection::border_down_size - NS_ERenderCollection::border_up_size;
@@ -2706,6 +2706,7 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 		{
 			delete[] vertex_buffer; 
 			vertex_buffer = new float[sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4];
+			//EInputCore::logger_param("length", sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4);
 			*total_capacity = sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4;
 		}
 

@@ -132,9 +132,9 @@ void Entity::set_world_position_w(ERegionGabarite* _region_gabarite)
 {
 	set_world_position
 	(
-		*_region_gabarite->world_position_x,
-		*_region_gabarite->world_position_y,
-		*_region_gabarite->world_position_z
+		_region_gabarite->world_position_x,
+		_region_gabarite->world_position_y,
+		_region_gabarite->world_position_z
 	);
 }
 
@@ -142,9 +142,9 @@ void Entity::set_world_position_l(ERegionGabarite* _region_gabarite)
 {
 	set_world_position
 	(
-		*_region_gabarite->offset_x,
-		*_region_gabarite->offset_y,
-		*_region_gabarite->offset_z
+		_region_gabarite->offset_x,
+		_region_gabarite->offset_y,
+		_region_gabarite->offset_z
 	);
 }
 
@@ -559,7 +559,7 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group)
 {
 	EntityButton* jc_button = create_default_button_with_custom_data(_region_gabarite, _parent_group);
-	unsigned int square_size = min(*_region_gabarite->size_x, *_region_gabarite->size_y);
+	unsigned int square_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
 
 	EClickableArea* jc_clickable_area = EClickableArea::create_default_clickable_region
 	(
@@ -742,13 +742,13 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 		0.0f,
 		0.0f,
 		*_but->parent_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
-		*_but->parent_button_group->region_gabarite->size_y - *_but->parent_button_group->border_bottom - *_but->parent_button_group->border_up
+		_but->parent_button_group->region_gabarite->size_y - *_but->parent_button_group->border_bottom - *_but->parent_button_group->border_up
 	);
 
 	//offset by button_group
 	float total_group_height
 	=
-	*_but->parent_button_group->region_gabarite->size_y
+	_but->parent_button_group->region_gabarite->size_y
 	-
 	*_but->parent_button_group->border_bottom
 	-
@@ -797,18 +797,18 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 	//	current_height_percent
 	//);
 
-	*_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = *_style->slider_inactive->main_texture->size_x_in_pixels;
+	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = *_style->slider_inactive->main_texture->size_x_in_pixels;
 
-	*_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = *_style->slider_inactive->main_texture->size_y_in_pixels;
+	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = *_style->slider_inactive->main_texture->size_y_in_pixels;
 
-	*_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->offset_y
+	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->offset_y
 	=
 	round
 	(
 		(
 			total_group_height
 			-
-			*_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y
+			_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y
 		)
 		*
 		*(((EDataContainerScrollBar*)_but->custom_data_list[0]->data_container)->current_percent)
@@ -821,8 +821,8 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 
 
 	//change button gabarites size y
-	*_but->button_gabarite->size_x = *_style->slider_inactive->main_texture->size_x_in_pixels;
-	*_but->button_gabarite->size_y = *_style->slider_inactive->main_texture->size_y_in_pixels;
+	_but->button_gabarite->size_x = *_style->slider_inactive->main_texture->size_x_in_pixels;
+	_but->button_gabarite->size_y = *_style->slider_inactive->main_texture->size_y_in_pixels;
 
 	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 0)->set_texture_gabarite
 	(
