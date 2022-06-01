@@ -1,4 +1,11 @@
+_______BEFORE OPTIMIZING_______
 megabytes[clear]:			232
 megabytes[1000 groups]:		534
 diff:						302
 memeory per group:			0.3 mb
+
+_______AFTER OPTIMIZING_______
+megabytes[clear]:			232
+megabytes[1000 groups]:		379
+diff:						147
+memeory per group:			0.147 mb

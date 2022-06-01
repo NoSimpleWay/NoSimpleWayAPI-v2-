@@ -506,22 +506,22 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 			*(float*)(d_pointer) = min(*(float*)(d_pointer), *data_container->max_value);
 			*(float*)(d_pointer) = max(*(float*)(d_pointer), *data_container->min_value);
 
-			*dot_sprite->offset_x
+			dot_sprite->offset_x
 			=
 			size / 2.0f
 			- 
-			*dot_sprite->size_x / 2.0f
+			dot_sprite->size_x / 2.0f
 			+
 			sin(*(float*)(d_pointer) * 6.28f * 0.8f + 0.628f ) * (size / 2.0f - 8.0f);
 
 
 
 
-			*dot_sprite->offset_y
+			dot_sprite->offset_y
 			=
 			size / 2.0f
 			-
-			*dot_sprite->size_x / 2.0f
+			dot_sprite->size_x / 2.0f
 			+
 			cos(*(float*)(d_pointer) * 6.28f * 0.8f + 0.628f) * (size / 2.0f - 8.0f);
 

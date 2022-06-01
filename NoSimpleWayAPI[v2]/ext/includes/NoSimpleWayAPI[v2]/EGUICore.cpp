@@ -1180,8 +1180,8 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 		(
 			0.0f,
 			*_button_group->border_bottom,
-			*ESpriteLayer::get_last_created_sprite(sprite_layer)->size_x,
-			*ESpriteLayer::get_last_created_sprite(sprite_layer)->size_y
+			ESpriteLayer::get_last_created_sprite(sprite_layer)->size_x,
+			ESpriteLayer::get_last_created_sprite(sprite_layer)->size_y
 		);
 
 
@@ -1202,8 +1202,8 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	(
 		0.0f,
 		0.0f,
-		*ESpriteLayer::get_last_created_sprite(sprite_layer)->size_x,
-		*ESpriteLayer::get_last_created_sprite(sprite_layer)->size_y
+		ESpriteLayer::get_last_created_sprite(sprite_layer)->size_x,
+		ESpriteLayer::get_last_created_sprite(sprite_layer)->size_y
 	);
 
 	

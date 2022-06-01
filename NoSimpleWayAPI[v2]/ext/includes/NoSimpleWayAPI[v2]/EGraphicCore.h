@@ -382,56 +382,56 @@ public:
 	void set_color(const float(&_color)[4]);
 
 	//minus size from diffirent side
-	float* fragment_offset_x = new float(0.0f);
-	float* fragment_offset_y = new float(0.0f);
+	float fragment_offset_x = 0.0f;
+	float fragment_offset_y = 0.0f;
 
-	float* fragment_size_x = new float(0.0f);
-	float* fragment_size_y = new float(0.0f);
+	float fragment_size_x = 0.0f;
+	float fragment_size_y = 0.0f;
 	//
 
 
 	// 
 	//final calculated fise with fragments
-	float* uv_start_x = new float(0.0f);
-	float* uv_start_y = new float(0.0f);
+	float uv_start_x = 0.0f;
+	float uv_start_y = 0.0f;
 
-	float* uv_end_x = new float(0.0f);
-	float* uv_end_y = new float(0.0f);
+	float uv_end_x = 0.0f;
+	float uv_end_y = 0.0f;
 	//
 
 
 	// 
 	//final calculated fise with fragments
-	float* normal_uv_start_x = new float(0.0f);
-	float* normal_uv_start_y = new float(0.0f);
-		   
-	float* normal_uv_end_x = new float(0.0f);
-	float* normal_uv_end_y = new float(0.0f);
+	float normal_uv_start_x = 0.0f;
+	float normal_uv_start_y = 0.0f;
+		  
+	float normal_uv_end_x = 0.0f;
+	float normal_uv_end_y = 0.0f;
 	//
 
 
 	// 
 	//final calculated fise with fragments
-	float* gloss_uv_start_x = new float(0.0f);
-	float* gloss_uv_start_y = new float(0.0f);
-		   
-	float* gloss_uv_end_x = new float(0.0f);
-	float* gloss_uv_end_y = new float(0.0f);
+	float gloss_uv_start_x =0.0f;
+	float gloss_uv_start_y =0.0f;
+		  
+	float gloss_uv_end_x = 0.0f;
+	float gloss_uv_end_y = 0.0f;
 	//
 
 	//position and size
-	float* offset_x = new float(0.0f);
-	float* offset_y = new float(0.0f);
-	float* offset_z = new float(0.0f);
+	float offset_x =0.0f;
+	float offset_y =0.0f;
+	float offset_z =0.0f;
 
-	float* world_position_x = new float(0.0f);
-	float* world_position_y = new float(0.0f);
-	float* world_position_z = new float(0.0f);
+	float world_position_x = 0.0f;
+	float world_position_y = 0.0f;
+	float world_position_z = 0.0f;
 
 
-	float* size_x = new float(0.0f);
-	float* size_y = new float(0.0f);
-	float* size_z = new float(0.0f);
+	float size_x = 0.0f;
+	float size_y = 0.0f;
+	float size_z = 0.0f;
 	//what wrong
 
 	void translate_sprite(float _x, float _y, float _z);

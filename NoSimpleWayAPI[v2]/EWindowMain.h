@@ -35,7 +35,7 @@ public:
 	virtual void	draw_additional(float _d);
 	virtual void	update_additional(float _d);
 
-	ECluster* cluster_array[CLUSTER_DIM_X][CLUSTER_DIM_Y];
+	//ECluster* cluster_array[CLUSTER_DIM_X][CLUSTER_DIM_Y];
 
 	EWindowMain();
 	~EWindowMain();

@@ -31,16 +31,16 @@ void EWindowMain::draw_additional(float _d)
 
 
 
-	for (int j = 0; j < CLUSTER_DIM_X; j++)
-	for (int i = 0; i < CLUSTER_DIM_Y; i++)
-	{
-		if (!cluster_array[j][i]->entity_list.empty())
-		for (Entity* e : cluster_array[j][i]->entity_list)
-		{
-			e->draw();
-		}
+	//for (int j = 0; j < CLUSTER_DIM_X; j++)
+	//for (int i = 0; i < CLUSTER_DIM_Y; i++)
+	//{
+	//	if (!cluster_array[j][i]->entity_list.empty())
+	//	for (Entity* e : cluster_array[j][i]->entity_list)
+	//	{
+	//		e->draw();
+	//	}
 
-	}
+	//}
 
 	NS_EGraphicCore::default_batcher_for_drawing->draw_call();
 	
@@ -51,15 +51,15 @@ void EWindowMain::draw_additional(float _d)
 
 void EWindowMain::update_additional(float _d)
 {
-	for (int j = 0; j < CLUSTER_DIM_X; j++)
-	for (int i = 0; i < CLUSTER_DIM_Y; i++)
-	{
-		
-		for (Entity* el : cluster_array[j][i]->entity_list)
-		{
-			el->update(_d);
-		}
-	}
+	//for (int j = 0; j < CLUSTER_DIM_X; j++)
+	//for (int i = 0; i < CLUSTER_DIM_Y; i++)
+	//{
+	//	
+	//	for (Entity* el : cluster_array[j][i]->entity_list)
+	//	{
+	//		el->update(_d);
+	//	}
+	//}
 
 }
 
@@ -74,11 +74,11 @@ EWindowMain::EWindowMain()
 
 	ETextParser::data_entity_parse_file("data/data_entity_list.txt");
 
-	for (int j = 0; j < CLUSTER_DIM_X; j++)
-	for (int i = 0; i < CLUSTER_DIM_Y; i++)
-	{
-		cluster_array[j][i] = new ECluster();
-	}
+	//for (int j = 0; j < CLUSTER_DIM_X; j++)
+	//for (int i = 0; i < CLUSTER_DIM_Y; i++)
+	//{
+	//	cluster_array[j][i] = new ECluster();
+	//}
 
 	//jc = Just Created
 	Entity*				jc_entity = new Entity();
@@ -94,89 +94,6 @@ EWindowMain::EWindowMain()
 	//EButtonGroupRow*	jc_button_group_row;
 	EntityButton*		jc_button;
 	ESpriteFrame*		jc_sprite_frame = new ESpriteFrame();
-	
-
-
-
-	main_button_group = EButtonGroup::create_root_button_group(new ERegionGabarite(100.0f, 0.0f, 0.0f, 800.0f, 600.0f), EGUIStyle::active_style);
-	for (int i = 0; i < 1; i++)
-	{
-		jc_button_group = main_button_group->add_group
-		(
-			EButtonGroup::create_default_button_group
-			(
-				new ERegionGabarite(200.0f, 100.0f),
-				EGUIStyle::active_style
-			)
-		);
-		//*jc_button_group->stretch_mode = GroupStretchMode::CONSTANT;
-		*jc_button_group->stretch_x_by_parent_size = true;
-
-		jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(30.0f, 30.0f), jc_button_group, nullptr);
-		jc_button_group->button_list.push_back(jc_button);
-		*(jc_button->custom_data_list.at(0)->is_second_pass) = false;
-
-		jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(30.0f, 30.0f), jc_button_group, nullptr);
-		jc_button_group->button_list.push_back(jc_button);
-		jc_button->add_description("123");
-		*(jc_button->custom_data_list.at(1)->is_second_pass) = true;
-	}
-	//group_list.push_back(main_button_group);
-	//EButtonGroup::refresh_button_group(main_button_group);
-
-
-
-	jc_custom_data->actions_on_update.push_back(&EDataActionCollection::action_player_control);
-
-	*jc_text_area->stored_text = "ABC\\nLOL\\nKEK";
-	jc_text_area->font = EFont::font_list.at(0);
-
-	ERegionGabarite::set_region_gabarite (&jc_text_area->region_gabarite, jc_region_gabarite);
-
-	jc_text_area->sprite_layer = jc_sprite_layer_for_text;
-	jc_text_area->parent_clickable_region = jc_clickable_area;
-	jc_sprite_layer_for_text->batcher = NS_EGraphicCore::default_batcher_for_drawing;
-
-	
-	
-
-	//push back objects
-	jc_entity->sprite_layer_list.push_back(jc_sprite_layer);
-	jc_entity->custom_data_list.push_back(jc_custom_data);
-	*jc_entity->offset_x = 30.0f;
-	*jc_entity->offset_y = 40.0f;
-	*jc_entity->world_position_x = 30.0f;
-	*jc_entity->world_position_y = 40.0f;
-	//cluster_array[0][0]->entity_list.push_back(jc_entity);
-
-	//jc_sprite_frame->sprite_list.push_back(jc_sprite);
-
-	//jc_sprite_layer->sprite_frame_list.push_back(jc_sprite_frame);
-	jc_sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
-
-	jc_custom_data->clickable_area_list.push_back(jc_clickable_area);
-	jc_custom_data->parent_entity = jc_entity;
-	ERegionGabarite::set_region_gabarite (&jc_clickable_area->region_gabarite, jc_region_gabarite);
-	//jc_clickable_area->region_gabarite = jc_region_gabarite;
-
-	jc_clickable_area->parent_entity = jc_entity;
-	jc_clickable_area->parent_custom_data = jc_custom_data;
-
-	jc_clickable_area->can_catch_side[0] = true;
-	jc_clickable_area->can_catch_side[1] = true;
-	jc_clickable_area->can_catch_side[2] = true;
-	jc_clickable_area->can_catch_side[3] = true;
-	jc_clickable_area->can_catch_side[4] = true;
-
-	jc_clickable_area->text_area = jc_text_area;
-	jc_clickable_area->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
-
-	jc_entity->set_world_position(*jc_entity->offset_x, *jc_entity->offset_y, *jc_entity->offset_z);
-
-	jc_text_area->generate_rows();
-	jc_text_area->generate_text();
-
-	jc_entity->generate_vertex_buffer_for_all_sprite_layers();
 	
 	std::string random_texture_list[5] =
 	{
@@ -202,7 +119,7 @@ EWindowMain::EWindowMain()
 		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
 		EInputCore::logger_param("memory[EButtonGroup]", sizeof EButtonGroup);
-	for (int i = 0; i < 1000 * 1; i++)
+	for (int i = 0; i < 500 * 1; i++)
 	{
 		EButtonGroup* test_group = main_button_group->add_group
 		(EButtonGroup::create_default_button_group(new ERegionGabarite(100.0f, 200.0f), EGUIStyle::active_style));
@@ -211,16 +128,17 @@ EWindowMain::EWindowMain()
 		*test_group->stretch_x_by_parent_size = true;
 		*test_group->stretch_y_by_parent_size = false;
 
-		for (int k = 0; k < 0; k++)
+		for (int k = 0; k < 20; k++)
 		{
-			EntityButton* test_button = EntityButton::create_default_clickable_button(new ERegionGabarite(32.0f, 32.0f), test_group, nullptr);
+			EntityButton* test_button = EntityButton::create_default_clickable_button(new ERegionGabarite(64.0f, 64.0f), test_group, nullptr);
 			test_group->button_list.push_back(test_button);
 		}
 	}
 	group_list.push_back(main_button_group);
 	EButtonGroup::refresh_button_group(main_button_group);
 	////////////////////////////////////////////////
-	//main button group
+
+	//filters block imitator
 	if (false)
 	{
 		main_button_group = EButtonGroup::create_button_group_without_bg
@@ -405,13 +323,11 @@ EWindowMain::EWindowMain()
 		group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
-	//main_button_group->realign_all_buttons();
-	//main_button_group->align_groups();
-	//EButtonGroup::calculate_culling_lines(main_button_group);
+
 	
 
 	//STYLE LIST BUTTON GROUP
-	if (false)
+	if (true)
 	{
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(400.0f, 100.0f, 0.0f, 400.0f, 600.0f), EGUIStyle::active_style);

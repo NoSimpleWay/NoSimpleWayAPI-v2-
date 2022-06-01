@@ -1830,55 +1830,55 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_sprite(float* _array, unsig
 	//.#
 	//..
 	//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
-	_array[0] = *_sprite->world_position_x + *_sprite->size_x;
-	_array[1] = *_sprite->world_position_y + *_sprite->size_y;
+	_array[0] = _sprite->world_position_x + _sprite->size_x;
+	_array[1] = _sprite->world_position_y + _sprite->size_y;
 
 	_array[2] = NS_EGraphicCore::active_color[0];
 	_array[3] = NS_EGraphicCore::active_color[1];
 	_array[4] = NS_EGraphicCore::active_color[2];
 	_array[5] = NS_EGraphicCore::active_color[3];
 
-	_array[6] = *_sprite->uv_end_x;
-	_array[7] = *_sprite->uv_end_y;
+	_array[6] = _sprite->uv_end_x;
+	_array[7] = _sprite->uv_end_y;
 
 	//..
 	//.#
-	_array[8] = *_sprite->world_position_x + *_sprite->size_x;
-	_array[9] = *_sprite->world_position_y;
+	_array[8] = _sprite->world_position_x + _sprite->size_x;
+	_array[9] = _sprite->world_position_y;
 
 	_array[10] = NS_EGraphicCore::active_color[0];
 	_array[11] = NS_EGraphicCore::active_color[1];
 	_array[12] = NS_EGraphicCore::active_color[2];
 	_array[13] = NS_EGraphicCore::active_color[3];
 
-	_array[14] = *_sprite->uv_end_x;
-	_array[15] = *_sprite->uv_start_y;
+	_array[14] = _sprite->uv_end_x;
+	_array[15] = _sprite->uv_start_y;
 
 	//..
 	//#.
-	_array[16] = *_sprite->world_position_x;
-	_array[17] = *_sprite->world_position_y;
+	_array[16] = _sprite->world_position_x;
+	_array[17] = _sprite->world_position_y;
 
 	_array[18] = NS_EGraphicCore::active_color[0];
 	_array[19] = NS_EGraphicCore::active_color[1];
 	_array[20] = NS_EGraphicCore::active_color[2];
 	_array[21] = NS_EGraphicCore::active_color[3];
 
-	_array[22] = *_sprite->uv_start_x;
-	_array[23] = *_sprite->uv_start_y;
+	_array[22] = _sprite->uv_start_x;
+	_array[23] = _sprite->uv_start_y;
 
 	//#.
 	//..
-	_array[24]= *_sprite->world_position_x;
-	_array[25]= *_sprite->world_position_y + *_sprite->size_y;
+	_array[24]= _sprite->world_position_x;
+	_array[25]= _sprite->world_position_y + _sprite->size_y;
 
 	_array[26] = NS_EGraphicCore::active_color[0];
 	_array[27] = NS_EGraphicCore::active_color[1];
 	_array[28] = NS_EGraphicCore::active_color[2];
 	_array[29] = NS_EGraphicCore::active_color[3];
 
-	_array[30] = *_sprite->uv_start_x;
-	_array[31] = *_sprite->uv_end_y;
+	_array[30] = _sprite->uv_start_x;
+	_array[31] = _sprite->uv_end_y;
 
 	_start_offset += 32;
 }
@@ -1892,59 +1892,59 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_sprite_test(float* _array, 
 	//.#
 	//..
 	//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
-	_array[0] = *_sprite->world_position_x + *_sprite->size_x;
-	_array[1] = *_sprite->world_position_y + *_sprite->size_y;
-	_array[2] = *_sprite->world_position_z + *_sprite->size_z;
+	_array[0] = _sprite->world_position_x + _sprite->size_x;
+	_array[1] = _sprite->world_position_y + _sprite->size_y;
+	_array[2] = _sprite->world_position_z + _sprite->size_z;
 
 	_array[3] = NS_EGraphicCore::active_color[0];
 	_array[4] = NS_EGraphicCore::active_color[1];
 	_array[5] = NS_EGraphicCore::active_color[2];
 	_array[6] = NS_EGraphicCore::active_color[3];
 
-	_array[7] = *_sprite->uv_end_x;
-	_array[8] = *_sprite->uv_end_y;
+	_array[7] = _sprite->uv_end_x;
+	_array[8] = _sprite->uv_end_y;
 
 	//..
 	//.#
-	_array[9] = *_sprite->world_position_x + *_sprite->size_x;
-	_array[10] = *_sprite->world_position_y;
-	_array[11] = *_sprite->world_position_z;
+	_array[9] = _sprite->world_position_x + _sprite->size_x;
+	_array[10] = _sprite->world_position_y;
+	_array[11] = _sprite->world_position_z;
 
 	_array[12] = NS_EGraphicCore::active_color[0];
 	_array[13] = NS_EGraphicCore::active_color[1];
 	_array[14] = NS_EGraphicCore::active_color[2];
 	_array[15] = NS_EGraphicCore::active_color[3];
 
-	_array[16] = *_sprite->uv_end_x;
-	_array[17] = *_sprite->uv_start_y;
+	_array[16] = _sprite->uv_end_x;
+	_array[17] = _sprite->uv_start_y;
 
 	//..
 	//#.
-	_array[18] = *_sprite->world_position_x;
-	_array[19] = *_sprite->world_position_y;
-	_array[20] = *_sprite->world_position_z;
+	_array[18] = _sprite->world_position_x;
+	_array[19] = _sprite->world_position_y;
+	_array[20] = _sprite->world_position_z;
 
 	_array[21] = NS_EGraphicCore::active_color[0];
 	_array[22] = NS_EGraphicCore::active_color[1];
 	_array[23] = NS_EGraphicCore::active_color[2];
 	_array[24] = NS_EGraphicCore::active_color[3];
 
-	_array[25] = *_sprite->uv_start_x;
-	_array[26] = *_sprite->uv_start_y;
+	_array[25] = _sprite->uv_start_x;
+	_array[26] = _sprite->uv_start_y;
 
 	//#.
 	//..
-	_array[27] = *_sprite->world_position_x;
-	_array[28] = *_sprite->world_position_y + *_sprite->size_y;
-	_array[29] = *_sprite->world_position_z + *_sprite->size_z;
+	_array[27] = _sprite->world_position_x;
+	_array[28] = _sprite->world_position_y + _sprite->size_y;
+	_array[29] = _sprite->world_position_z + _sprite->size_z;
 
 	_array[30] = NS_EGraphicCore::active_color[0];
 	_array[31] = NS_EGraphicCore::active_color[1];
 	_array[32] = NS_EGraphicCore::active_color[2];
 	_array[33] = NS_EGraphicCore::active_color[3];
 
-	_array[34] = *_sprite->uv_start_x;
-	_array[35] = *_sprite->uv_end_y;
+	_array[34] = _sprite->uv_start_x;
+	_array[35] = _sprite->uv_end_y;
 
 	_start_offset += 48;
 }
@@ -1959,83 +1959,83 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_sprite_PBR(float* _array, u
 		//.#
 		//..
 		//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
-		_array[0] = *_sprite->world_position_x + *_sprite->size_x;
-		_array[1] = *_sprite->world_position_y + *_sprite->size_y;
-		_array[2] = *_sprite->world_position_z + *_sprite->size_z;
+		_array[0] = _sprite->world_position_x + _sprite->size_x;
+		_array[1] = _sprite->world_position_y + _sprite->size_y;
+		_array[2] = _sprite->world_position_z + _sprite->size_z;
 
 		_array[3] = NS_EGraphicCore::active_color[0];
 		_array[4] = NS_EGraphicCore::active_color[1];
 		_array[5] = NS_EGraphicCore::active_color[2];
 		_array[6] = NS_EGraphicCore::active_color[3];
 
-		_array[7] = *_sprite->uv_end_x;
-		_array[8] = *_sprite->uv_end_y;
+		_array[7] = _sprite->uv_end_x;
+		_array[8] = _sprite->uv_end_y;
 
-		_array[9] = *_sprite->normal_uv_end_x;
-		_array[10] = *_sprite->normal_uv_end_y;
+		_array[9] = _sprite->normal_uv_end_x;
+		_array[10] = _sprite->normal_uv_end_y;
 
-		_array[11] = *_sprite->gloss_uv_end_x;
-		_array[12] = *_sprite->gloss_uv_end_y;
+		_array[11] = _sprite->gloss_uv_end_x;
+		_array[12] = _sprite->gloss_uv_end_y;
 
 		//..
 		//.#
-		_array[13] = *_sprite->world_position_x + *_sprite->size_x;
-		_array[14] = *_sprite->world_position_y;
-		_array[15] = *_sprite->world_position_z;
+		_array[13] = _sprite->world_position_x + _sprite->size_x;
+		_array[14] = _sprite->world_position_y;
+		_array[15] = _sprite->world_position_z;
 
 		_array[16] = NS_EGraphicCore::active_color[0];
 		_array[17] = NS_EGraphicCore::active_color[1];
 		_array[18] = NS_EGraphicCore::active_color[2];
 		_array[19] = NS_EGraphicCore::active_color[3];
 
-		_array[20] = *_sprite->uv_end_x;
-		_array[21] = *_sprite->uv_start_y;
+		_array[20] = _sprite->uv_end_x;
+		_array[21] = _sprite->uv_start_y;
 
-		_array[22] = *_sprite->normal_uv_end_x;
-		_array[23] = *_sprite->normal_uv_start_y;
+		_array[22] = _sprite->normal_uv_end_x;
+		_array[23] = _sprite->normal_uv_start_y;
 
-		_array[24] = *_sprite->gloss_uv_end_x;
-		_array[25] = *_sprite->gloss_uv_start_y;
+		_array[24] = _sprite->gloss_uv_end_x;
+		_array[25] = _sprite->gloss_uv_start_y;
 
 		//..
 		//#.
-		_array[26] = *_sprite->world_position_x;
-		_array[27] = *_sprite->world_position_y;
-		_array[28] = *_sprite->world_position_z;
+		_array[26] = _sprite->world_position_x;
+		_array[27] = _sprite->world_position_y;
+		_array[28] = _sprite->world_position_z;
 
 		_array[29] = NS_EGraphicCore::active_color[0];
 		_array[30] = NS_EGraphicCore::active_color[1];
 		_array[31] = NS_EGraphicCore::active_color[2];
 		_array[32] = NS_EGraphicCore::active_color[3];
 
-		_array[33] = *_sprite->uv_start_x;
-		_array[34] = *_sprite->uv_start_y;
+		_array[33] = _sprite->uv_start_x;
+		_array[34] = _sprite->uv_start_y;
 
-		_array[35] = *_sprite->normal_uv_start_x;
-		_array[36] = *_sprite->normal_uv_start_y;
+		_array[35] = _sprite->normal_uv_start_x;
+		_array[36] = _sprite->normal_uv_start_y;
 
-		_array[37] = *_sprite->gloss_uv_start_x;
-		_array[38] = *_sprite->gloss_uv_start_y;
+		_array[37] = _sprite->gloss_uv_start_x;
+		_array[38] = _sprite->gloss_uv_start_y;
 
 		//#.
 		//..
-		_array[39] = *_sprite->world_position_x;
-		_array[40] = *_sprite->world_position_y + *_sprite->size_y;
-		_array[41] = *_sprite->world_position_z + *_sprite->size_z;
+		_array[39] = _sprite->world_position_x;
+		_array[40] = _sprite->world_position_y + _sprite->size_y;
+		_array[41] = _sprite->world_position_z + _sprite->size_z;
 
 		_array[42] = NS_EGraphicCore::active_color[0];
 		_array[43] = NS_EGraphicCore::active_color[1];
 		_array[44] = NS_EGraphicCore::active_color[2];
 		_array[45] = NS_EGraphicCore::active_color[3];
 
-		_array[46] = *_sprite->uv_start_x;
-		_array[47] = *_sprite->uv_end_y;
+		_array[46] = _sprite->uv_start_x;
+		_array[47] = _sprite->uv_end_y;
 
-		_array[48] = *_sprite->normal_uv_start_x;
-		_array[49] = *_sprite->normal_uv_end_y;
+		_array[48] = _sprite->normal_uv_start_x;
+		_array[49] = _sprite->normal_uv_end_y;
 
-		_array[50] = *_sprite->gloss_uv_start_x;
-		_array[51] = *_sprite->gloss_uv_end_y;
+		_array[50] = _sprite->gloss_uv_start_x;
+		_array[51] = _sprite->gloss_uv_end_y;
 
 		_start_offset += 52;
 	}
@@ -2113,11 +2113,11 @@ void NS_ERenderCollection::call_render_textured_rectangle_with_custom_size(ESpri
 			_sprite->master_sprite_layer->vertex_buffer,
 			*_sprite->master_sprite_layer->last_buffer_id,
 
-			*_sprite->world_position_x,
-			*_sprite->world_position_y,
+			_sprite->world_position_x,
+			_sprite->world_position_y,
 
-			*_sprite->size_x,
-			*_sprite->size_y,
+			_sprite->size_x,
+			_sprite->size_y,
 
 			_sprite->main_texture
 		);
@@ -2138,8 +2138,8 @@ void NS_ERenderCollection::call_render_textured_rectangle_real_size(ESprite* _sp
 		(
 			_sprite->master_sprite_layer->vertex_buffer,
 			*_sprite->master_sprite_layer->last_buffer_id,
-			*_sprite->world_position_x,
-			*_sprite->world_position_y,
+			_sprite->world_position_x,
+			_sprite->world_position_y,
 			_sprite->main_texture
 		);
 	}
@@ -2472,17 +2472,17 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 
 							current_sprite->set_texture_gabarite(_texture_gabarite, _normal_map_gabarite, _gloss_map_gabarite);
 
-							*current_sprite->fragment_offset_x = texture_offset_x + selected_random_x;
-							*current_sprite->fragment_offset_y = texture_offset_y + selected_random_y;
+							current_sprite->fragment_offset_x = texture_offset_x + selected_random_x;
+							current_sprite->fragment_offset_y = texture_offset_y + selected_random_y;
 
-							*current_sprite->offset_x = final_offset_x;
-							*current_sprite->offset_y = final_offset_yz;
+							current_sprite->offset_x = final_offset_x;
+							current_sprite->offset_y = final_offset_yz;
 
-							*current_sprite->fragment_size_x = min(final_fragments_count_x - xx, 1.0f) * size_of_brick_x;
-							*current_sprite->fragment_size_y = min(final_fragments_count_y - yy, 1.0f) * size_of_brick_y;
+							current_sprite->fragment_size_x = min(final_fragments_count_x - xx, 1.0f) * size_of_brick_x;
+							current_sprite->fragment_size_y = min(final_fragments_count_y - yy, 1.0f) * size_of_brick_y;
 
-							*current_sprite->size_x = *current_sprite->fragment_size_x;
-							*current_sprite->size_y = *current_sprite->fragment_size_y;
+							current_sprite->size_x = current_sprite->fragment_size_x;
+							current_sprite->size_y = current_sprite->fragment_size_y;
 
 							//if ((seg_x == seg_y) && (seg_x == 1)) { *current_sprite->size_x = 0.0f; *current_sprite->size_x = 0.0f; }
 
@@ -2702,7 +2702,7 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 	)
 	{
 		//if array is too small, delete and register new size
-		if (sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4 >= *last_buffer_id)
+		//if (sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4 >= *last_buffer_id)
 		{
 			delete[] vertex_buffer; 
 			vertex_buffer = new float[sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4];
@@ -2724,7 +2724,7 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 			//EInputCore::logger_param("memory", spr);
 
 			//std::cout << "memory location" << spr << std::endl;
-			if ((spr != nullptr) && (*spr->size_x * *spr->size_y > 0) && (spr->pointer_to_sprite_render != nullptr))
+			if ((spr != nullptr) && (spr->size_x * spr->size_y > 0) && (spr->pointer_to_sprite_render != nullptr))
 			{
 				//EInputCore::logger_simple_success("try call render by pointer[" + std::to_string(_text) + "]");
 				//NS_EGraphicCore::set_active_color(spr->sprite_color);
@@ -2831,9 +2831,9 @@ void ESpriteLayer::sprite_layer_set_world_position(float _x, float _y, float _z)
 		for (ESprite* spr : frame->sprite_list)
 			if (spr != nullptr)
 			{
-				*spr->world_position_x = *world_position_x + *spr->offset_x;
-				*spr->world_position_y = *world_position_y + *spr->offset_y;
-				*spr->world_position_z = *world_position_z + *spr->offset_z;
+				spr->world_position_x = *world_position_x + spr->offset_x;
+				spr->world_position_y = *world_position_y + spr->offset_y;
+				spr->world_position_z = *world_position_z + spr->offset_z;
 			}
 }
 
@@ -2874,12 +2874,12 @@ ESpriteLayer* ESpriteLayer::create_default_sprite_layer_with_size_and_offset(ETe
 
 	if (jc_sprite != nullptr)
 	{
-		*jc_sprite->offset_x = _offset_x;
-		*jc_sprite->offset_y = _offset_y;
-		*jc_sprite->offset_z = _offset_z;
+		jc_sprite->offset_x = _offset_x;
+		jc_sprite->offset_y = _offset_y;
+		jc_sprite->offset_z = _offset_z;
 
-		*jc_sprite->size_x = _size_x;
-		*jc_sprite->size_y = _size_y;
+		jc_sprite->size_x = _size_x;
+		jc_sprite->size_y = _size_y;
 		//*jc_sprite->siz = _offset_z;
 	}
 
@@ -2923,8 +2923,8 @@ void ESpriteLayer::set_size_for_last_sprite(ESpriteLayer* _layer, float _size_x,
 
 	if (last_sprite != nullptr)
 	{
-		*last_sprite->size_x = _size_x;
-		*last_sprite->size_y = _size_y;
+		last_sprite->size_x = _size_x;
+		last_sprite->size_y = _size_y;
 
 		last_sprite->sprite_calculate_uv();
 	}
@@ -2937,9 +2937,9 @@ void ESpriteLayer::set_offset_for_last_sprite(ESpriteLayer* _layer, float _offse
 
 	if (last_sprite != nullptr)
 	{
-		*last_sprite->offset_x = _offset_x;
-		*last_sprite->offset_y = _offset_y;
-		*last_sprite->offset_z = _offset_z;
+		last_sprite->offset_x = _offset_x;
+		last_sprite->offset_y = _offset_y;
+		last_sprite->offset_z = _offset_z;
 
 		last_sprite->sprite_calculate_uv();
 	}
@@ -2955,15 +2955,15 @@ void ESpriteLayer::translate_sprites(float _x, float _y, float _z, bool _move_of
 	for (ESpriteFrame* frame : sprite_frame_list)
 	for (ESprite* spr : frame->sprite_list)
 	{
-		*spr->world_position_x += _x;
-		*spr->world_position_y += _y;
-		*spr->world_position_z += _z;
+		spr->world_position_x += _x;
+		spr->world_position_y += _y;
+		spr->world_position_z += _z;
 
 		if (_move_offset)
 		{
-			*spr->offset_x += _x;
-			*spr->offset_y += _y;
-			*spr->offset_z += _z;
+			spr->offset_x += _x;
+			spr->offset_y += _y;
+			spr->offset_z += _z;
 		}
 	}
 
@@ -2982,10 +2982,10 @@ ESprite::~ESprite()
 	//delete &master_sprite_layer;
 	delete[] sprite_color;
 
-	delete fragment_size_x;
-	delete fragment_size_y;
-	delete fragment_offset_x;
-	delete fragment_offset_y;
+	//delete fragment_size_x;
+	//delete fragment_size_y;
+	//delete fragment_offset_x;
+	//delete fragment_offset_y;
 }
 
 void ESprite::set_color(float _r, float _g, float _b, float _a)
@@ -3006,9 +3006,9 @@ void ESprite::set_color(const float(&_color)[4])
 
 void ESprite::translate_sprite(float _x, float _y, float _z)
 {
-	*offset_x += _x;
-	*offset_y += _y;
-	*offset_z += _z;
+	offset_x += _x;
+	offset_y += _y;
+	offset_z += _z;
 }
 
 
@@ -3021,8 +3021,8 @@ void ESprite::generate_vertex_buffer_for_master_sprite_layer()
 		(
 			master_sprite_layer->vertex_buffer,
 			*master_sprite_layer->last_buffer_id,
-			*world_position_x,
-			*world_position_y + *world_position_z,
+			world_position_x,
+			world_position_y + world_position_z,
 			main_texture
 		);
 	}
@@ -3037,11 +3037,11 @@ void ESprite::set_texture_gabarite(ETextureGabarite* _gabarite, ETextureGabarite
 
 	if (_gabarite != nullptr)
 	{
-		*fragment_size_x = *_gabarite->size_x_in_pixels;
-		*fragment_size_y = *_gabarite->size_y_in_pixels;
+		fragment_size_x = *_gabarite->size_x_in_pixels;
+		fragment_size_y = *_gabarite->size_y_in_pixels;
 
-		*size_x = *_gabarite->size_x_in_pixels;
-		*size_y = *_gabarite->size_y_in_pixels;
+		size_x = *_gabarite->size_x_in_pixels;
+		size_y = *_gabarite->size_y_in_pixels;
 
 		//normal_texture	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_gabarite, "[normal_map]");
 		//gloss_texture	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_gabarite, "[gloss_map]");
@@ -3061,45 +3061,45 @@ void ESprite::sprite_calculate_uv()
 {
 	if (main_texture != nullptr)
 	{
-		*uv_start_x = *main_texture->uv_start_x + *fragment_offset_x / main_texture->target_atlas->get_atlas_size_x();
-		*uv_start_y = *main_texture->uv_start_y + *fragment_offset_y / main_texture->target_atlas->get_atlas_size_y();
+		uv_start_x = *main_texture->uv_start_x + fragment_offset_x / main_texture->target_atlas->get_atlas_size_x();
+		uv_start_y = *main_texture->uv_start_y + fragment_offset_y / main_texture->target_atlas->get_atlas_size_y();
 
-		*uv_end_x = *uv_start_x + (*fragment_size_x) / main_texture->target_atlas->get_atlas_size_x();
-		*uv_end_y = *uv_start_y + (*fragment_size_y) / main_texture->target_atlas->get_atlas_size_y();
+		uv_end_x = uv_start_x + (fragment_size_x) / main_texture->target_atlas->get_atlas_size_x();
+		uv_end_y = uv_start_y + (fragment_size_y) / main_texture->target_atlas->get_atlas_size_y();
 	}
 
 	if (normal_texture != nullptr)
 	{
-		*normal_uv_start_x = *normal_texture->uv_start_x + *fragment_offset_x / normal_texture->target_atlas->get_atlas_size_x();
-		*normal_uv_start_y = *normal_texture->uv_start_y + *fragment_offset_y / normal_texture->target_atlas->get_atlas_size_y();
+		normal_uv_start_x = *normal_texture->uv_start_x + fragment_offset_x / normal_texture->target_atlas->get_atlas_size_x();
+		normal_uv_start_y = *normal_texture->uv_start_y + fragment_offset_y / normal_texture->target_atlas->get_atlas_size_y();
 		 
-		*normal_uv_end_x = *normal_uv_start_x + (*fragment_size_x) / normal_texture->target_atlas->get_atlas_size_x();
-		*normal_uv_end_y = *normal_uv_start_y + (*fragment_size_y) / normal_texture->target_atlas->get_atlas_size_y();
+		normal_uv_end_x = normal_uv_start_x + (fragment_size_x) / normal_texture->target_atlas->get_atlas_size_x();
+		normal_uv_end_y = normal_uv_start_y + (fragment_size_y) / normal_texture->target_atlas->get_atlas_size_y();
 	}
 	else
 	{
-		*normal_uv_start_x	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_x;
-		*normal_uv_start_y	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_y;
+		normal_uv_start_x	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_x;
+		normal_uv_start_y	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_y;
 
-		*normal_uv_end_x	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_x;
-		*normal_uv_end_y	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_y;
+		normal_uv_end_x	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_x;
+		normal_uv_end_y	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_y;
 	}
 
 	if (gloss_texture != nullptr)
 	{
-		*gloss_uv_start_x	= *gloss_texture->uv_start_x + *fragment_offset_x / gloss_texture->target_atlas->get_atlas_size_x();
-		*gloss_uv_start_y	= *gloss_texture->uv_start_y + *fragment_offset_y / gloss_texture->target_atlas->get_atlas_size_y();
+		gloss_uv_start_x	= *gloss_texture->uv_start_x + fragment_offset_x / gloss_texture->target_atlas->get_atlas_size_x();
+		gloss_uv_start_y	= *gloss_texture->uv_start_y + fragment_offset_y / gloss_texture->target_atlas->get_atlas_size_y();
 
-		*gloss_uv_end_x		= *gloss_uv_start_x + (*fragment_size_x) / gloss_texture->target_atlas->get_atlas_size_x();
-		*gloss_uv_end_y		= *gloss_uv_start_y + (*fragment_size_y) / gloss_texture->target_atlas->get_atlas_size_y();
+		gloss_uv_end_x		= gloss_uv_start_x + (fragment_size_x) / gloss_texture->target_atlas->get_atlas_size_x();
+		gloss_uv_end_y		= gloss_uv_start_y + (fragment_size_y) / gloss_texture->target_atlas->get_atlas_size_y();
 	}
 	else
 	{
-		*gloss_uv_start_x	= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_x;
-		*gloss_uv_start_y	= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_y;
-		 
-		*gloss_uv_end_x		= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_x;
-		*gloss_uv_end_y		= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_y;
+		gloss_uv_start_x	= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_x;
+		gloss_uv_start_y	= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_y;
+		
+		gloss_uv_end_x		= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_x;
+		gloss_uv_end_y		= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_y;
 	}
 
 }
@@ -3108,36 +3108,47 @@ void ESprite::reset_sprite()
 {
 	main_texture = nullptr;
 
-	*fragment_offset_x	= 0.0f;
-	*fragment_offset_y	= 0.0f;
+	fragment_offset_x	= 0.0f;
+	fragment_offset_y	= 0.0f;
 
-	*fragment_size_x	= 0.0f;
-	*fragment_size_y	= 0.0f;
+	fragment_size_x		= 0.0f;
+	fragment_size_y		= 0.0f;
 
+	uv_start_x			= 0.0f;
+	uv_start_y			= 0.0f;
 
-	*uv_start_x			= 0.0f;
-	*uv_start_y			= 0.0f;
+	uv_end_x			= 0.0f;
+	uv_end_y			= 0.0f;
 
-	*uv_end_x			= 0.0f;
-	*uv_end_y			= 0.0f;
+	gloss_uv_start_x	= 0.0f;
+	gloss_uv_start_y	= 0.0f;
 
-	*offset_x			= 0.0f;
-	*offset_y			= 0.0f;
-	*offset_z			= 0.0f;
+	gloss_uv_end_x		= 0.0f;
+	gloss_uv_end_y		= 0.0f;
 
-	*world_position_x	= 0.0f;
-	*world_position_y	= 0.0f;
-	*world_position_z	= 0.0f;
+	normal_uv_start_x	= 0.0f;
+	normal_uv_start_y	= 0.0f;
 
-	*size_x				= (0.0f);
-	*size_y				= (0.0f);
+	normal_uv_end_x		= 0.0f;
+	normal_uv_end_y		= 0.0f;
+
+	offset_x			= 0.0f;
+	offset_y			= 0.0f;
+	offset_z			= 0.0f;
+
+	world_position_x	= 0.0f;
+	world_position_y	= 0.0f;
+	world_position_z	= 0.0f;
+
+	size_x				= (0.0f);
+	size_y				= (0.0f);
 }
 
 void ESprite::sprite_set_world_positions(float _x, float _y, float _z)
 {
-	*world_position_x = _x + *offset_x;
-	*world_position_y = _y + *offset_y;
-	*world_position_z = _z + *offset_z;
+	world_position_x = _x + offset_x;
+	world_position_y = _y + offset_y;
+	world_position_z = _z + offset_z;
 }
 
 ESprite* ESprite::create_default_sprite(ETextureGabarite* _gabarite, ESpriteLayer* _sprite_layer)
@@ -3157,8 +3168,8 @@ ESprite* ESprite::create_default_sprite(ETextureGabarite* _gabarite, ESpriteLaye
 
 void ESprite::set_size(ESprite* _sprite, float _size_x, float _size_y, float _size_z)
 {
-	*_sprite->size_x = _size_x;
-	*_sprite->size_y = _size_y;
+	_sprite->size_x = _size_x;
+	_sprite->size_y = _size_y;
 
 	_sprite->sprite_calculate_uv();
 }
