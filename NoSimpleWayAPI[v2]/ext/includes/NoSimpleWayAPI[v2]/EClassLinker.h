@@ -50,7 +50,7 @@ class TestObject;
 
 class ETextParser;
 class EDataContainer;
-
+class EBrickPlane;
 
 typedef void (*data_action_pointer)(Entity*, ECustomData*, float);
 typedef void (*text_actions_pointer)(ETextArea*);

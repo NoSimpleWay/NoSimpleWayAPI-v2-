@@ -516,7 +516,20 @@ public:
 	static void set_offset_for_last_sprite(ESpriteLayer* _layer, float _offset_x, float _offset_y, float _offset_z );
 	static void add_new_default_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _sprite_layer);
 
+	std::vector <EBrickPlane*>
 
+};
+
+class EBrickPlane
+{
+public:
+	ERegionGabarite*	region_gabarite;
+
+	ETextureGabarite*	main_texture;
+	ETextureGabarite*	normal_map_texture;
+	ETextureGabarite*	gloss_texture;
+
+	ESpriteLayer*		parent_sprite_layer;
 };
 
 

@@ -247,7 +247,6 @@ public:
 	//unsigned int* gabarite_size_mode_x		= new unsigned int(GroupStretchMode::CONSTANT);
 	//unsigned int* gabarite_size_mode_y		= new unsigned int(GroupStretchMode::CONSTANT);
 
-	unsigned int* stretch_mode				= new unsigned int(GroupStretchMode::CONSTANT);
 	unsigned int* child_align_mode			= new unsigned int(ChildAlignMode::ALIGN_VERTICAL);
 
 	//static EButtonGroup* focused_button_group;
