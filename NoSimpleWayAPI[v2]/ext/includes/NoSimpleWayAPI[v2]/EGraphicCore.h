@@ -104,6 +104,8 @@ namespace NS_ERenderCollection
 	extern unsigned int		subdivision_x;
 	extern unsigned int		subdivision_y;
 
+	extern bool				temporary_sprites;
+
 	extern void				set_brick_borders_and_subdivisions(float _left, float _right, float _bottom, float _up, int _subdivision_x, int _subdivision_y);
 
 	//
@@ -412,8 +414,8 @@ public:
 
 	// 
 	//final calculated fise with fragments
-	float gloss_uv_start_x =0.0f;
-	float gloss_uv_start_y =0.0f;
+	float gloss_uv_start_x = 0.0f;
+	float gloss_uv_start_y = 0.0f;
 		  
 	float gloss_uv_end_x = 0.0f;
 	float gloss_uv_end_y = 0.0f;
@@ -457,6 +459,8 @@ public:
 
 	std::vector<ESprite*> sprite_list;
 	int* active_frame_id = new int(0);
+
+	bool marked_as_temporary = false;
 
 	static ESpriteFrame* create_default_sprite_frame();
 	static ESpriteFrame* create_default_sprite_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _parent_sprite_layer);
@@ -516,7 +520,7 @@ public:
 	static void set_offset_for_last_sprite(ESpriteLayer* _layer, float _offset_x, float _offset_y, float _offset_z );
 	static void add_new_default_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _sprite_layer);
 
-	std::vector <EBrickPlane*>
+	std::vector <EBrickPlane*> brick_plane_list;
 
 };
 

@@ -73,7 +73,7 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 	)
 	{ 
 		
-		NS_ERenderCollection::generate_brick_texture(_custom_data->clickable_area_list[0]->region_gabarite, _entity->sprite_layer_list[0], NS_DefaultGabarites::texture_lead_and_gold, nullptr, nullptr);
+		//NS_ERenderCollection::generate_brick_texture(_custom_data->clickable_area_list[0]->region_gabarite, _entity->sprite_layer_list[0], NS_DefaultGabarites::texture_lead_and_gold, nullptr, nullptr);
 		_entity->set_world_position(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
 		_entity->generate_vertex_buffer_for_all_sprite_layers();
 		

@@ -65,8 +65,10 @@ namespace NS_ERenderCollection
 	float			border_up_size;
 	float			border_down_size;
 
-	unsigned int		subdivision_x;
-	unsigned int		subdivision_y;
+	unsigned int	subdivision_x;
+	unsigned int	subdivision_y;
+
+	bool			temporary_sprites = false;
 }
 
 namespace NS_DefaultGabarites
@@ -2466,6 +2468,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 							selected_random_x = (rand() % (total_divisions_x)*size_of_brick_x);
 							selected_random_y = (rand() % (total_divisions_y)*size_of_brick_y);
 
+							_sprite_layer->sprite_frame_list.at(current_sprite_frame_id)->marked_as_temporary = temporary_sprites;
 							current_sprite = _sprite_layer->sprite_frame_list.at(current_sprite_frame_id)->sprite_list.at(0);
 							//current_sprite->reset_sprite();
 							current_sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite_PBR;
@@ -2715,9 +2718,12 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 		
 		
 
-		for (ESpriteFrame* frame:sprite_frame_list)
+		//for (ESpriteFrame* frame:sprite_frame_list)
+		for (unsigned int i = 0; i < sprite_frame_list.size(); i++)
+		//for (unsigned int i = 0; i < s)
 		//for (ESprite* spr : frame->sprite_list)
 		{
+			ESpriteFrame* frame = sprite_frame_list[i];
 			ESprite* spr = frame->sprite_list.at(*frame->active_frame_id);
 			//EInputCore::logger_param("frame id", *frame->active_frame_id);
 			//EInputCore::logger_param("texture name", spr->main_texture->get_name());
@@ -2737,6 +2743,20 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 				if (spr == nullptr) { EInputCore::logger_simple_error("Sprite is null!"); }
 				else
 				if (spr->pointer_to_sprite_render == nullptr) { EInputCore::logger_simple_error("Pointer to render is null!"); }
+			}
+
+			
+		}
+
+		for (unsigned int i = 0; i < sprite_frame_list.size(); i++)
+		{
+			//ESpriteFrame* frame = sprite_frame_list[i];
+			if (sprite_frame_list[i]->marked_as_temporary)
+			{
+				delete sprite_frame_list[i];
+				sprite_frame_list.erase(sprite_frame_list.begin() + i);
+				
+				i--;
 			}
 		}
 	}

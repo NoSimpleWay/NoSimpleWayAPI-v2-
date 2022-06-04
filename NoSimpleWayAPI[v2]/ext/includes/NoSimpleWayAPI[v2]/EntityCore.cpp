@@ -442,6 +442,7 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 			*_style->button_bg->subdivision_y
 		);
 
+		NS_ERenderCollection::temporary_sprites = false;
 		NS_ERenderCollection::generate_brick_texture
 		(
 			_button->button_gabarite,
@@ -675,6 +676,7 @@ void EntityButton::add_description(std::string _text)
 		*parent_button_group->selected_style->button_bg->subdivision_y
 	);
 
+	NS_ERenderCollection::temporary_sprites = true;
 	NS_ERenderCollection::generate_brick_texture
 	(
 		jc_clickable_area->region_gabarite,
@@ -773,7 +775,7 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 
 
 
-
+	NS_ERenderCollection::temporary_sprites = false;
 	NS_ERenderCollection::generate_brick_texture
 	(
 		ERegionGabarite::temporary_gabarite,

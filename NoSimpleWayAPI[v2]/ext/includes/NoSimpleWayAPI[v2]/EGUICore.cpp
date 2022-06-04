@@ -231,9 +231,9 @@ void EButtonGroup::draw()
 		glDisable(GL_SCISSOR_TEST);
 		//glDisable(GL_SCISSOR_TEST);
 		//		SHADOW		//
-		/* */if ((root_group == this) && (false))
+		/* */if ((root_group == this) && (true))
 			/* */ {
-			/* */	NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLACK, 0.335f);
+			/* */	NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLACK, 0.335f * 2.0f);
 			/* */	if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
 			/* */	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 			/* */(
@@ -265,7 +265,7 @@ void EButtonGroup::draw()
 			background_sprite_layer->transfer_vertex_buffer_to_batcher();
 		}
 
-		if (EButtonGroup::focused_button_group == this)
+		if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group == this))
 		{
 			NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.13f);
 			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
@@ -281,7 +281,7 @@ void EButtonGroup::draw()
 			);
 		}
 
-		if (EButtonGroup::focused_button_group_with_slider == this)
+		if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group_with_slider == this))
 		{
 			NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLUE, 0.13f);
 			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
@@ -498,13 +498,16 @@ void EButtonGroup::align_groups()
 
 
 
+			//if (*group->have_bg)
+			//{group->region_gabarite->offset_y = *border_bottom + 3.0f;}
+			//else
+			{group->region_gabarite->offset_y = *border_bottom + 0.0f;}
 
-			group->region_gabarite->offset_y = *border_bottom + 3.0f;
 			if (prev_group != nullptr)
 			{
 				if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 				{
-					group->region_gabarite->offset_x = *border_left + 3.0f;
+					group->region_gabarite->offset_x = *border_left + 0.0f;
 					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + 3.0f; 
 				}
 				else
@@ -516,7 +519,10 @@ void EButtonGroup::align_groups()
 			}
 			else
 			{
-				group->region_gabarite->offset_x = *border_left + 3.0f;
+				//if (*group->have_bg)
+				//{group->region_gabarite->offset_x = *border_left + 3.0f;}
+				//else
+				{group->region_gabarite->offset_x = *border_left;}
 			}
 
 			
@@ -683,17 +689,17 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 		_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("Button group background");
 	}
 
-	//if (_group->slider != nullptr)
-	//{
-	//	for (change_style_action csa : _group->slider->action_on_change_style_list)
-	//	{
-	//		//csa(_group->slider, _group->selected_style);
+	if (_group->slider != nullptr)
+	{
+		for (change_style_action csa : _group->slider->action_on_change_style_list)
+		{
+			csa(_group->slider, _group->selected_style);
 
-	//		//_group->slider->generate_vertex_buffer_for_all_sprite_layers();
-	//	}
-	//	_group->slider->set_world_position(*_group->slider->world_position_x, *_group->slider->world_position_y, *_group->slider->world_position_z);
-	//	_group->slider->generate_vertex_buffer_for_all_sprite_layers();
-	//}
+			_group->slider->generate_vertex_buffer_for_all_sprite_layers();
+		}
+		_group->slider->set_world_position(_group->slider->world_position_x, _group->slider->world_position_y, _group->slider->world_position_z);
+		_group->slider->generate_vertex_buffer_for_all_sprite_layers();
+	}
 
 	//if (group_row_list.empty())
 	{
@@ -792,9 +798,14 @@ void EButtonGroup::group_stretch_x()
 		slider_effect = slider->button_gabarite->size_x + 3.0f;
 	}
 
+	float shrink_size = 0.0f;
+	if (!*have_bg) { shrink_size = 0.0f; }
+
 	if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 	{
-		target_size = region_gabarite->size_x - *border_left - *border_right - (group_list.size() - 1) * 3.0f - 6.0f;
+
+
+		target_size = region_gabarite->size_x - *border_left - *border_right - (group_list.size() - 1) * 3.0f - shrink_size;
 		target_size -= slider_effect;
 
 		for (EButtonGroup* group : group_list)
@@ -813,7 +824,7 @@ void EButtonGroup::group_stretch_x()
 
 	if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 	{
-		target_size = region_gabarite->size_x - *border_left - *border_right - 6.0f;
+		target_size = region_gabarite->size_x - *border_left - *border_right - shrink_size;
 		target_size -= slider_effect;
 
 		dynamic_elements_count = 1;
@@ -847,9 +858,13 @@ void EButtonGroup::group_stretch_y()
 
 	unsigned int	dynamic_elements_count		= 0;
 
+	float shrink_size = 0.0f;
+	if (!*have_bg) { shrink_size = 0.0f; }
+
 	if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 	{
-		target_size = region_gabarite->size_y - *border_bottom - *border_up - (group_list.size() - 1) * 3.0f - 6.0f;
+
+		target_size = region_gabarite->size_y - *border_bottom - *border_up - (group_list.size() - 1) * 3.0f - shrink_size;
 
 		for (EButtonGroup* group : group_list)
 		{
@@ -867,7 +882,7 @@ void EButtonGroup::group_stretch_y()
 
 	if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 	{
-		target_size = region_gabarite->size_y - *border_bottom - *border_up - 6.0f;
+		target_size = region_gabarite->size_y - *border_bottom - *border_up - shrink_size;
 		dynamic_elements_count = 1;
 	}
 
@@ -1120,28 +1135,28 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 			);
 		
 
-		NS_ERenderCollection::set_brick_borders_and_subdivisions
-		(
-			*_button_group->selected_style->slider_bg->side_size_left,
-			*_button_group->selected_style->slider_bg->side_size_right,
-			*_button_group->selected_style->slider_bg->side_size_bottom,
-			*_button_group->selected_style->slider_bg->side_size_up,
+		//NS_ERenderCollection::set_brick_borders_and_subdivisions
+		//(
+		//	*_button_group->selected_style->slider_bg->side_size_left,
+		//	*_button_group->selected_style->slider_bg->side_size_right,
+		//	*_button_group->selected_style->slider_bg->side_size_bottom,
+		//	*_button_group->selected_style->slider_bg->side_size_up,
 
-			*_button_group->selected_style->slider_bg->subdivision_x,
-			*_button_group->selected_style->slider_bg->subdivision_y
-		);
+		//	*_button_group->selected_style->slider_bg->subdivision_x,
+		//	*_button_group->selected_style->slider_bg->subdivision_y
+		//);
 
-		NS_ERenderCollection::generate_brick_texture
-		(
-			ERegionGabarite::temporary_gabarite,
-			sprite_layer,
-			_button_group->selected_style->slider_bg->main_texture,
-			_button_group->selected_style->slider_bg->normal_map_texture,
-			_button_group->selected_style->slider_bg->gloss_map_texture
-		);
+		//NS_ERenderCollection::generate_brick_texture
+		//(
+		//	ERegionGabarite::temporary_gabarite,
+		//	sprite_layer,
+		//	_button_group->selected_style->slider_bg->main_texture,
+		//	_button_group->selected_style->slider_bg->normal_map_texture,
+		//	_button_group->selected_style->slider_bg->gloss_map_texture
+		//);
 
-		sprite_layer->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
-		sprite_layer->generate_vertex_buffer_for_sprite_layer("init bg");
+		//sprite_layer->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
+		//sprite_layer->generate_vertex_buffer_for_sprite_layer("init bg");
 
 		//head inactive
 		sprite_layer
@@ -1324,12 +1339,15 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 	if ((_group != nullptr) && (_group->selected_style != nullptr) && (_group->background_sprite_layer != nullptr))
 	{
 
+		NS_ERenderCollection::temporary_sprites = true;
 
 		if
 		(
 			(*_group->button_group_type == ButtonGroupType::BGT_DARKEN)
 		)
 		{
+			
+
 			NS_ERenderCollection::set_brick_borders_and_subdivisions
 			(
 				*_group->selected_style->button_group_darken->side_size_left,

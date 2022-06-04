@@ -118,7 +118,7 @@ EWindowMain::EWindowMain()
 		main_button_group->root_group = main_button_group;
 		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
-		//EInputCore::logger_param("memory[EButtonGroup]", sizeof EButtonGroup);
+		//test blocks
 		if (false)
 		{
 			for (int i = 0; i < 500 * 1; i++)
@@ -141,10 +141,10 @@ EWindowMain::EWindowMain()
 		}
 	////////////////////////////////////////////////
 
-	//filters block imitator
+	//filters block
 	if (true)
 	{
-		main_button_group = EButtonGroup::create_button_group_without_bg
+		main_button_group = EButtonGroup::create_root_button_group
 		(
 			new ERegionGabarite(1920.0f, 1000.0f),
 			EGUIStyle::active_style
@@ -154,9 +154,9 @@ EWindowMain::EWindowMain()
 		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		//*main_button_group->stretch_mode		= GroupStretchMode::CONSTANT;
 
-		for (int z = 0; z < 500; z++)
+		for (int z = 0; z < 100; z++)
 		{
-			EButtonGroup* filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 160.0f), EGUIStyle::active_style);
+			EButtonGroup* filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 170.0f), EGUIStyle::active_style);
 
 			*filter_block_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 			//*filter_block_group->stretch_mode		= GroupStretchMode::STRETCHED_ONLY_BY_PARENT;
@@ -166,11 +166,12 @@ EWindowMain::EWindowMain()
 
 			main_button_group->add_group(filter_block_group);
 
+			//left side for equational parameters
 			if (true)
 			{//new group
 				EButtonGroup* left_group = EButtonGroup::create_default_button_group
 				(
-					new ERegionGabarite(230.0f, 160.0f),
+					new ERegionGabarite(210.0f, 160.0f),
 					EGUIStyle::active_style
 				);
 
@@ -178,21 +179,19 @@ EWindowMain::EWindowMain()
 				*left_group->stretch_y_by_parent_size = true;
 
 				*left_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-				//*left_group->stretch_mode		= GroupStretchMode::STRETCHED_ONLY_BY_PARENT;
 
 				filter_block_group->add_group(left_group);
 
 				//"ZZZ" buttons
-
-				int parameters_count = (rand() % 4) * (rand() % 4);
+				int parameters_count = (rand() % 4) * (rand() % 4) * (rand() % 4);
 				for (int i = 0; i < parameters_count; i++)
 					for (int j = 0; j < 3; j++)
 					{
 						if (j == 0) { jc_region_gabarite = new ERegionGabarite(100.0f, 20.0f); }
 						else
-							if (j == 1) { jc_region_gabarite = new ERegionGabarite(20.0f, 20.0f); }
-							else
-								if (j == 2) { jc_region_gabarite = new ERegionGabarite(50.0f, 20.0f); }
+						if (j == 1) { jc_region_gabarite = new ERegionGabarite(20.0f, 20.0f); }
+						else
+						if (j == 2) { jc_region_gabarite = new ERegionGabarite(50.0f, 20.0f); }
 
 						jc_button = EntityButton::create_default_clickable_button
 						(
@@ -534,7 +533,7 @@ EWindowMain::EWindowMain()
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
 	//DATA ENTITY
-	if (false)
+	if (true)
 	{
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(900.0f, 100.0f, 0.0f, 900.0f, 600.0f), EGUIStyle::active_style);
