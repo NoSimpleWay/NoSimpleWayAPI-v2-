@@ -508,12 +508,12 @@ void EButtonGroup::align_groups()
 				if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 				{
 					group->region_gabarite->offset_x = *border_left + 0.0f;
-					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + 3.0f; 
+					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + 5.0f; 
 				}
 				else
 				if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 				{
-					group->region_gabarite->offset_x = prev_group->region_gabarite->offset_x + prev_group->region_gabarite->size_x + 3.0f;
+					group->region_gabarite->offset_x = prev_group->region_gabarite->offset_x + prev_group->region_gabarite->size_x + 1.0f;
 					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y;
 				}
 			}
@@ -557,7 +557,7 @@ void EButtonGroup::align_groups()
 			+
 			prev_group->region_gabarite->size_y
 			-
-			3.0f
+			0.0f
 			,
 			*highest_point_y
 		);
@@ -799,13 +799,13 @@ void EButtonGroup::group_stretch_x()
 	}
 
 	float shrink_size = 0.0f;
-	if (!*have_bg) { shrink_size = 0.0f; }
+	//if (!*have_bg) { shrink_size = 0.0f; }
 
 	if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 	{
 
 
-		target_size = region_gabarite->size_x - *border_left - *border_right - (group_list.size() - 1) * 3.0f - shrink_size;
+		target_size = region_gabarite->size_x - *border_left - *border_right - (group_list.size() - 1) * 1.0f - shrink_size;
 		target_size -= slider_effect;
 
 		for (EButtonGroup* group : group_list)
@@ -839,7 +839,7 @@ void EButtonGroup::group_stretch_x()
 	{
 		if ((*group->stretch_x_by_parent_size) && (group->region_gabarite->size_x != final_size))
 		{
-			group->region_gabarite->size_x = final_size;
+			group->region_gabarite->size_x = round(final_size);
 			*group->need_redraw = true;
 		}
 	}
@@ -864,7 +864,7 @@ void EButtonGroup::group_stretch_y()
 	if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 	{
 
-		target_size = region_gabarite->size_y - *border_bottom - *border_up - (group_list.size() - 1) * 3.0f - shrink_size;
+		target_size = region_gabarite->size_y - *border_bottom - *border_up - (group_list.size() - 1) * 5.0f - shrink_size;
 
 		for (EButtonGroup* group : group_list)
 		{
@@ -893,7 +893,7 @@ void EButtonGroup::group_stretch_y()
 	{
 		if ((*group->stretch_y_by_parent_size) && (group->region_gabarite->size_y != final_size))
 		{
-			group->region_gabarite->size_y = final_size;
+			group->region_gabarite->size_y = round(final_size);
 			*group->need_redraw = true;
 		}
 	}

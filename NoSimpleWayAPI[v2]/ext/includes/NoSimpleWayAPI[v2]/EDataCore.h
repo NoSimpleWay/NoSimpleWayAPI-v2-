@@ -234,8 +234,8 @@ public:
 struct DataEntityFilter
 {
 public:
-	std::string* tag_name = new std::string("");
-	std::vector<std::string*>	required_value;
+	std::string* target_tag_name = new std::string("");
+	std::vector<std::string*>	suitable_values_list;
 };
 
 class EDataContainerDataEntitySearchGroup : public EDataContainer

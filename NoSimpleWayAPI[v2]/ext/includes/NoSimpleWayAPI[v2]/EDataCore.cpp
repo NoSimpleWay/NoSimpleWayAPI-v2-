@@ -574,6 +574,9 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 			{
 				//if (rand() % 2 == 0){*but->disable_draw = true;} else { *but->disable_draw = false; }
 				bool match = false;
+
+
+
 				//EDataContainerEntityDataHolder* data_holder = (EDataContainerEntityDataHolder*)but->custom_data_list[0]->data_container;
 				EDataEntity* target_data_entity = but->pointer_to_data_entity;
 				std::string value = "";
@@ -581,6 +584,8 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 
 				bool tag_search_mode	= false;
 				bool cost_search_mode	= false;
+
+
 
 				if ((search_text.length() > 0) && (search_text[0] == '*'))
 				{
@@ -598,9 +603,26 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 
 				//EInputCore::logger_param("size of tag list", target_data_entity->tag_list.size());
 
+				bool tag_require_match = true;
 				for (EDataTag* tag: target_data_entity->tag_list)
 				{
 					value = EStringUtils::to_lower (*tag->tag_value_list[0]);
+
+					
+					//if (data_container->required_tag_list.empty()) { tag_require_match = true; }
+					for (DataEntityFilter* filter : data_container->required_tag_list)
+					{
+						if ((tag_require_match) && (*filter->target_tag_name == *tag->tag_name) && (!filter->suitable_values_list.empty()))
+						{
+							//potentially fail match
+							tag_require_match = false;
+
+							for (std::string* str : filter->suitable_values_list)
+							{
+								if ((*str == "") || (*str == value)) { tag_require_match = true; }
+							}
+						}
+					}
 
 					if (tag_search_mode)
 					{
@@ -619,8 +641,8 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 
 					//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
 				}
-
-				if (match) { but->disabled = false; }
+				//tag_require_match = false;
+				if ((match) && (tag_require_match)) { but->disabled = false; }
 				else { but->disabled = true; }
 
 			}
