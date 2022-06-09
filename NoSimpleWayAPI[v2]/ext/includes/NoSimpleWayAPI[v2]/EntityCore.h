@@ -159,6 +159,15 @@ public:
 		EDataEntity*		_data_entity
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
+
+	
+	static EntityButton* create_wide_item_button
+	(
+		ERegionGabarite*	_region_gabarite,
+		EButtonGroup*		_parent_group,
+		EDataEntity*		_data_entity
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
 	
 	static EntityButton* create_default_radial_button
 	(

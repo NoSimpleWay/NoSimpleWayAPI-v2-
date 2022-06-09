@@ -154,10 +154,11 @@ EWindowMain::EWindowMain()
 		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		//*main_button_group->stretch_mode		= GroupStretchMode::CONSTANT;
 
+		//std::string[3]
 		for (int z = 0; z < 100; z++)
 		{
 			//whole filter block
-			EButtonGroup* filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 170.0f), EGUIStyle::active_style);
+			EButtonGroup* filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 200.0f), EGUIStyle::active_style);
 
 			*filter_block_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
@@ -219,159 +220,200 @@ EWindowMain::EWindowMain()
 
 			//####### ITEM GROUP //#######
 			//massive
-			EButtonGroup* massive_game_item = EButtonGroup::create_default_button_group(new ERegionGabarite(800.0f, 160.0f), EGUIStyle::active_style);
-			filter_block_group->add_group(massive_game_item);
-
-			*massive_game_item->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-			//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
-
-			*massive_game_item->stretch_x_by_parent_size = true;
-			*massive_game_item->stretch_y_by_parent_size = true;
-
-			////////////////////////
-			//small subrow for additional buttons
-
-				//side group for buttons
-			EButtonGroup* group_side = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(134.0f, 160.0f - 14.0f), EGUIStyle::active_style);
-			massive_game_item->add_group(group_side);
-			//row_game_item->add_group(group_side);
-			*group_side->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-			//*group_side->stretch_mode		= GroupStretchMode::STRETCHED_ONLY_BY_PARENT;
-
-			*group_side->stretch_x_by_parent_size = false;
-			*group_side->stretch_y_by_parent_size = true;
-
-			float vertical_borders = *group_side->border_left + *group_side->border_right;
-
-			//add new button
-			EntityButton*
-				small_button = EntityButton::create_default_clickable_button
-				(
-					new ERegionGabarite(130.0f, 18.0f),
-					group_side,
-					&EDataActionCollection::action_open_data_entity_filter_group
-				);
-
-			EDataContainerStoreTargetGroup* data_store_target_group = new EDataContainerStoreTargetGroup();
-			EntityButton::get_last_custom_data(small_button)->data_container = data_store_target_group;
-
-			jc_text_area = ETextArea::create_centered_text_area
-			(EntityButton::get_last_clickable_area(small_button), EFont::font_list[0], "Add new item");
-
-			*jc_text_area->can_be_edited = false;
-			Entity::add_text_area_to_last_clickable_region(small_button, jc_text_area);
-
-			group_side->button_list.push_back(small_button);
-
-			//remove all buttons
-			small_button = EntityButton::create_default_clickable_button
-			(new ERegionGabarite(130.0f, 18.0f), group_side, nullptr);
-
-			jc_text_area = ETextArea::create_centered_text_area
-			(EntityButton::get_last_clickable_area(small_button), EFont::font_list[0], "");
-			jc_text_area->change_text("Remove all buttons");
-
-			*jc_text_area->can_be_edited = false;
-			Entity::add_text_area_to_last_clickable_region(small_button, jc_text_area);
-
-			group_side->button_list.push_back(small_button);
-			////////////////////////
-
-
-
-			////////////////////////
-			//big subrow for items
-			EButtonGroup*
-				group_for_items = EButtonGroup::create_button_group_without_bg
-				(new ERegionGabarite(600.0f, 130.0f), EGUIStyle::active_style);
-
-			*group_for_items->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-			//*group_for_items->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
-
-			*group_for_items->stretch_x_by_parent_size = true;
-			*group_for_items->stretch_y_by_parent_size = true;
-
-			massive_game_item->add_group(group_for_items);
-
-			data_store_target_group->target_group = group_for_items;
-			////////////////////////
-
-
-
-			//button item
-			int button_count = rand() % 3 + 1;
-			button_count *= rand() % 3 + 1;
-			button_count *= rand() % 3 + 1;
-			button_count *= rand() % 3 + 1;
-			button_count *= rand() % 3 + 1;
-
-			for (int i = 0; i < button_count; i++)
-			{
-				int selected_data_entity = rand() % EDataEntity::data_entity_list.size();
-
-				//button with clickable region, and brick bg
-				jc_button = EntityButton::create_item_button
-				(
-					nullptr,
-					group_for_items,
-					EDataEntity::data_entity_list[selected_data_entity]
-				);
-
-				group_for_items->button_list.push_back(jc_button);
-
-
-			}
-
-			//non-item list
-			//massive
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-				EButtonGroup* non_item_massive = EButtonGroup::create_root_button_group(new ERegionGabarite(800.0f, 160.0f), EGUIStyle::active_style);
-				filter_block_group->add_group(non_item_massive);
-
-				*non_item_massive->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+			EButtonGroup* verical_item_element = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(800.0f, 160.0f), EGUIStyle::active_style);
+				filter_block_group->add_group(verical_item_element);
+				*verical_item_element->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 				//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
 
-				*non_item_massive->stretch_x_by_parent_size = true;
-				*non_item_massive->stretch_y_by_parent_size = true;
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-				for (int i = 0; i < 5; i++)
-				if (rand() % 4 == 0)
+				*verical_item_element->stretch_x_by_parent_size = true;
+				*verical_item_element->stretch_y_by_parent_size = true;
+			for (int r = 0; r < 3; r++)
+			if (rand() % 3 == 0)
+			{
+
+
+				EButtonGroup* massive_game_item = EButtonGroup::create_default_button_group(new ERegionGabarite(800.0f, 100.0f), EGUIStyle::active_style);
+				
+				verical_item_element->add_group(massive_game_item);
+				*massive_game_item->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
+
+				*massive_game_item->stretch_x_by_parent_size = true;
+				*massive_game_item->stretch_y_by_parent_size = false;
+
+				////////////////////////
+				//small subrow for additional buttons
+
+					//side group for buttons
+				EButtonGroup* group_side = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(134.0f, 160.0f - 14.0f), EGUIStyle::active_style);
+				massive_game_item->add_group(group_side);
+				//row_game_item->add_group(group_side);
+				*group_side->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				//*group_side->stretch_mode		= GroupStretchMode::STRETCHED_ONLY_BY_PARENT;
+
+				*group_side->stretch_x_by_parent_size = false;
+				*group_side->stretch_y_by_parent_size = true;
+
+				float vertical_borders = *group_side->border_left + *group_side->border_right;
+
+				//add new button
+				EntityButton*
+					small_button = EntityButton::create_default_clickable_button
+					(
+						new ERegionGabarite(130.0f, 18.0f),
+						group_side,
+						&EDataActionCollection::action_open_data_entity_filter_group
+					);
+
+				EDataContainerStoreTargetGroup* data_store_target_group = new EDataContainerStoreTargetGroup();
+				EntityButton::get_last_custom_data(small_button)->data_container = data_store_target_group;
+
+				jc_text_area = ETextArea::create_centered_text_area
+				(EntityButton::get_last_clickable_area(small_button), EFont::font_list[0], "Add new item");
+
+				*jc_text_area->can_be_edited = false;
+				Entity::add_text_area_to_last_clickable_region(small_button, jc_text_area);
+
+				group_side->button_list.push_back(small_button);
+
+				//remove all buttons
+				small_button = EntityButton::create_default_clickable_button
+				(new ERegionGabarite(130.0f, 18.0f), group_side, nullptr);
+
+				jc_text_area = ETextArea::create_centered_text_area
+				(EntityButton::get_last_clickable_area(small_button), EFont::font_list[0], "");
+				jc_text_area->change_text("Remove all buttons");
+
+				*jc_text_area->can_be_edited = false;
+				Entity::add_text_area_to_last_clickable_region(small_button, jc_text_area);
+
+				group_side->button_list.push_back(small_button);
+				////////////////////////
+
+
+
+				////////////////////////
+				//big subrow for items
+				EButtonGroup*
+					group_for_items = EButtonGroup::create_button_group_without_bg
+					(new ERegionGabarite(600.0f, 130.0f), EGUIStyle::active_style);
+
+				*group_for_items->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				//*group_for_items->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
+
+				*group_for_items->stretch_x_by_parent_size = true;
+				*group_for_items->stretch_y_by_parent_size = true;
+
+				massive_game_item->add_group(group_for_items);
+
+				data_store_target_group->target_group = group_for_items;
+				////////////////////////
+
+
+				std::vector <EDataEntity*> suitable_data_entity;
+				//regular items
+				//button item
+				if (r == 0)
 				{
-					EButtonGroup* non_item_vertical = EButtonGroup::create_default_button_group(new ERegionGabarite(800.0f, 100.0f), EGUIStyle::active_style);
-					non_item_massive->add_group(non_item_vertical);
-					*non_item_vertical->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-					//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
+					int button_count = rand() % 3 + 1;
+					button_count *= rand() % 3 + 1;
+					button_count *= rand() % 3 + 1;
+					button_count *= rand() % 3 + 1;
+					button_count *= rand() % 3 + 1;
 
-					*non_item_vertical->stretch_x_by_parent_size = true;
-					*non_item_vertical->stretch_y_by_parent_size = false;
-					////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-					EButtonGroup* non_item_left_side = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(80.0f, 160.0f - 14.0f), EGUIStyle::active_style);
-					non_item_vertical->add_group(non_item_left_side);
-					//row_game_item->add_group(group_side);
-					*non_item_left_side->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-					//*group_side->stretch_mode		= GroupStretchMode::STRETCHED_ONLY_BY_PARENT;
+						suitable_data_entity.clear();
+						for (EDataEntity* de : EDataEntity::data_entity_list)
+						{
+							if (DataEntityUtils::get_tag_value_by_name(0, "data type", de) == "Game item")
+							{
+								suitable_data_entity.push_back(de);
+							}
+						}
 
-					*non_item_left_side->stretch_x_by_parent_size = false;
-					*non_item_left_side->stretch_y_by_parent_size = true;
+					for (int i = 0; i < button_count; i++)
+					{
+						
 
-						EntityButton* button_non_item_left = EntityButton::create_default_clickable_button(new ERegionGabarite(60.0f, 15.0f), non_item_left_side, nullptr);
-						jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(button_non_item_left), EFont::font_list[0], "Remove");
-						EntityButton::add_text_area_to_last_clickable_region(button_non_item_left, jc_text_area);
-						non_item_left_side->button_list.push_back(button_non_item_left);
-					////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+						int selected_data_entity = rand() % suitable_data_entity.size();
 
-					EButtonGroup*
-						group_for_non_items = EButtonGroup::create_button_group_without_bg
-						(new ERegionGabarite(600.0f, 130.0f), EGUIStyle::active_style);
+						//button with clickable region, and brick bg
+						jc_button = EntityButton::create_item_button
+						(
+							nullptr,
+							group_for_items,
+							suitable_data_entity[selected_data_entity]
+						);
 
-					*group_for_non_items->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-					//*group_for_items->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
+						group_for_items->button_list.push_back(jc_button);
 
-					*group_for_non_items->stretch_x_by_parent_size = true;
-					*group_for_non_items->stretch_y_by_parent_size = true;
 
-					non_item_vertical->add_group(group_for_non_items);
+					}
 				}
+
+				if (r == 1)
+				{
+					int button_count = rand() % 3 + 1;
+					button_count *= rand() % 3 + 1;
+
+						suitable_data_entity.clear();
+						for (EDataEntity* de : EDataEntity::data_entity_list)
+						{
+							if (DataEntityUtils::get_tag_value_by_name(0, "data type", de) == "Base Class")
+							{
+								suitable_data_entity.push_back(de);
+							}
+						}
+
+					for (int i = 0; i < button_count; i++)
+					{
+						
+
+						int selected_data_entity = rand() % suitable_data_entity.size();
+
+						//button with clickable region, and brick bg
+						jc_button = EntityButton::create_wide_item_button
+						(
+							nullptr,
+							group_for_items,
+							suitable_data_entity[selected_data_entity]
+						);
+
+						group_for_items->button_list.push_back(jc_button);
+
+
+					}
+				}
+
+				if (r == 2)
+				{
+	
+						suitable_data_entity.clear();
+						for (EDataEntity* de : EDataEntity::data_entity_list)
+						{
+							if (DataEntityUtils::get_tag_value_by_name(0, "data type", de) == "Influence")
+							{
+								suitable_data_entity.push_back(de);
+							}
+						}
+
+
+						for (int k = 0; k < suitable_data_entity.size(); k++)
+						{
+							if (rand() % 3 == 0)
+							{
+								jc_button = EntityButton::create_wide_item_button
+								(
+									nullptr,
+									group_for_items,
+									suitable_data_entity[k]
+								);
+
+								group_for_items->button_list.push_back(jc_button);
+							}
+						}
+				}
+			}
+			
 
 
 

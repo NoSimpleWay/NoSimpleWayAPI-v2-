@@ -557,6 +557,71 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 	return jc_button;
 }
 
+EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity)
+{
+		EntityButton* jc_button = EntityButton::create_default_clickable_button
+		(
+			new ERegionGabarite(150.0f, 34.0f),
+			_parent_group,
+			nullptr
+		);
+		EDataContainerEntityDataHolder* data = new EDataContainerEntityDataHolder();
+		data->stored_data_entity = _data_entity;
+
+		EntityButton::get_last_custom_data(jc_button)->data_container = data;
+
+		//delete action on right click
+		Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
+
+		//_parent_group->button_list.push_back(jc_button);
+
+		//int selected_data_entity = _data_entity;
+
+		ETextureGabarite* item_icon
+			=
+			NS_EGraphicCore::load_from_textures_folder
+			("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity));
+
+		if (item_icon != nullptr)
+		{
+			float resize_factor = 30.0f / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
+			resize_factor = min(resize_factor, 1.0f);
+
+			ESpriteLayer* second_button_layer =
+				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+				(item_icon,
+					4.0f,
+					2.0f,
+					3.0f,
+
+					*item_icon->size_x_in_pixels * resize_factor,
+					*item_icon->size_y_in_pixels * resize_factor,
+					0.0f
+				);
+
+			jc_button->sprite_layer_list.push_back(second_button_layer);
+
+			//second_button_layer->make_as_PBR();
+		}
+
+		ETextArea* jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+		*jc_text_area->offset_by_gabarite_size_x = 0.0;
+		*jc_text_area->offset_by_text_size_x = 0.0;
+
+		jc_text_area->offset_border[BorderSide::LEFT] = 37.0f;
+		//jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", data_entity));
+
+		*jc_text_area->can_be_edited = false;
+		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+
+		//jc_button->add_description("123");
+		jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+
+
+
+		return jc_button;
+}
+
 EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group)
 {
 	EntityButton* jc_button = create_default_button_with_custom_data(_region_gabarite, _parent_group);
