@@ -38,6 +38,9 @@ namespace NS_EGraphicCore
 	float							current_zoom				= 1.0f;
 	float							global_normal_multiplier	= 1.0f;
 	float							global_gloss_multiplier		= 1.0f;
+	float							sun_x						= 0.5f;
+	float							sun_y						= 0.5f;
+	float							ground_level				= 0.5f;
 
 	EColor_4 active_color[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
 
@@ -192,6 +195,10 @@ void ERenderBatcher::draw_call()
 			glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
 			NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
 
+			
+
+
+
 			for (int i = 0; i < texture_skydome_levels; i++)
 			{
 				glActiveTexture(GL_TEXTURE1 + i);
@@ -210,6 +217,9 @@ void ERenderBatcher::draw_call()
 
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("normal_map_multiplier", NS_EGraphicCore::global_normal_multiplier);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("gloss_map_multiplier", NS_EGraphicCore::global_gloss_multiplier);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_position_x", NS_EGraphicCore::sun_x);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_position_y", NS_EGraphicCore::sun_y);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("ground_level", NS_EGraphicCore::ground_level);
 		}
 
 		glBindBuffer(GL_ARRAY_BUFFER, VAO);
@@ -661,8 +671,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
 		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
 
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * 2.0f);
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * 2.0f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * 1.0f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * 1.0f);
 
 		NS_EGraphicCore::skydome_batcher->set_transform_screen_size (1.0f,1.0f);
 		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
@@ -732,7 +742,7 @@ void NS_EGraphicCore::create_styles()
 		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
 		EBrickStyle::set_border_size(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
-		EBrickStyle::set_offset_size(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
+		EBrickStyle::set_offset_size(jc_brick, 8.0f, 8.0f, 8.0f, 8.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
 
 		//***********************************************************

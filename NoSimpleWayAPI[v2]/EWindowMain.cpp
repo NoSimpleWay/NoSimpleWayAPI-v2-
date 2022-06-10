@@ -227,6 +227,8 @@ EWindowMain::EWindowMain()
 
 				*verical_item_element->stretch_x_by_parent_size = true;
 				*verical_item_element->stretch_y_by_parent_size = true;
+
+				std::string select_window_tags[3] = { "game item", "base Class", "influence" };
 			for (int r = 0; r < 3; r++)
 			if (rand() % 3 == 0)
 			{
@@ -267,6 +269,7 @@ EWindowMain::EWindowMain()
 
 				EDataContainerStoreTargetGroup* data_store_target_group = new EDataContainerStoreTargetGroup();
 				EntityButton::get_last_custom_data(small_button)->data_container = data_store_target_group;
+				data_store_target_group->search_tag = select_window_tags[r];
 
 				jc_text_area = ETextArea::create_centered_text_area
 				(EntityButton::get_last_clickable_area(small_button), EFont::font_list[0], "Add new item");
@@ -819,7 +822,7 @@ EWindowMain::EWindowMain()
 		/////		world parameter		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		main_button_group = EButtonGroup::create_root_button_group
-		(new ERegionGabarite(400.0f, 20.0f, 0.0f, 200, 160.0f), EGUIStyle::active_style);
+		(new ERegionGabarite(400.0f, 20.0f, 0.0f, 256, 300.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
 		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
@@ -830,22 +833,54 @@ EWindowMain::EWindowMain()
 
 		jc_button = EntityButton::create_default_radial_button
 		(
-			new ERegionGabarite(100.0f, 38.0f),
-			jc_button_group
+			new ERegionGabarite(170.0f, 38.0f),
+			jc_button_group,
+			"Нормаль:"
 		);
-
 		((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::global_normal_multiplier;
-
 		jc_button_group->button_list.push_back(jc_button);
+
 		// // // // // // //
 		jc_button = EntityButton::create_default_radial_button
 		(
-			new ERegionGabarite(100.0f, 38.0f),
-			jc_button_group
+			new ERegionGabarite(170.0f, 38.0f),
+			jc_button_group,
+			"Глянец:"
 		);
-
 		((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::global_gloss_multiplier;
+		jc_button_group->button_list.push_back(jc_button);
 
+		// // // // // // //
+		jc_button = EntityButton::create_default_radial_button
+		(
+			new ERegionGabarite(170.0f, 38.0f),
+			jc_button_group,
+			"Солнце X:"
+		);
+		((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::sun_x;
+		*((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
+		jc_button_group->button_list.push_back(jc_button);
+
+		// // // // // // //
+		jc_button = EntityButton::create_default_radial_button
+		(
+			new ERegionGabarite(170.0f, 38.0f),
+			jc_button_group,
+			"Солнце Y:"
+		);
+		((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::sun_y;
+		*((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
+		jc_button_group->button_list.push_back(jc_button);
+
+		// // // // // // //
+		jc_button = EntityButton::create_default_radial_button
+		(
+			new ERegionGabarite(170.0f, 38.0f),
+			jc_button_group,
+			"Уровень грунта:"
+		);
+		((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::ground_level;
+		*((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 		jc_button_group->button_list.push_back(jc_button);
 
 

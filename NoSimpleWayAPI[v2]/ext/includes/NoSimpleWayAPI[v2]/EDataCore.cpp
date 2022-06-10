@@ -525,7 +525,7 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 			+
 			cos(*(float*)(d_pointer) * 6.28f * 0.8f + 0.628f) * (size / 2.0f - 8.0f);
 
-			_custom_data->clickable_area_list[0]->text_area->change_text(std::to_string(*(float*)(d_pointer)));
+			_custom_data->clickable_area_list[0]->text_area->change_text(data_container->text + "\\n" + std::to_string(*(float*)(d_pointer)));
 			
 		}
 
@@ -660,9 +660,20 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EDataContainerStoreTargetGroup* data = ((EDataContainerStoreTargetGroup*)_custom_data->data_container);
+	EDataContainerDataEntitySearchGroup* DE_list_group = (EDataContainerDataEntitySearchGroup*)EButtonGroup::data_entity_filter->data_container;
 
 	*EButtonGroup::data_entity_filter->is_active = true;
-	((EDataContainerDataEntitySearchGroup*)EButtonGroup::data_entity_filter->data_container)->pointer_to_group_item_receiver = data->target_group;
+	DE_list_group->pointer_to_group_item_receiver = data->target_group;
+
+	if
+	(
+		(!DE_list_group->required_tag_list.empty())
+		&&
+		(!DE_list_group->required_tag_list[0]->suitable_values_list.empty())
+	)
+	{
+		*DE_list_group->required_tag_list[0]->suitable_values_list[0] = data->search_tag;
+	}
 }
 
 void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d)

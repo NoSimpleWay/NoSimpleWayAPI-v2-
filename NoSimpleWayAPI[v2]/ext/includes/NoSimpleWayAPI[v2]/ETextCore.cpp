@@ -1108,6 +1108,29 @@ ETextArea* ETextArea::create_centered_to_right_text_area(EClickableArea* _region
 
 }
 
+ETextArea* ETextArea::create_centered_to_left_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text)
+{
+	if (_region_gabarite != nullptr)
+	{
+		ETextArea* jc_text_area = create_base_text_area(_region_gabarite, _font, _text);
+
+		*jc_text_area->offset_by_gabarite_size_x = 0.0f;
+		*jc_text_area->offset_by_gabarite_size_y = 0.5f;
+
+		*jc_text_area->offset_by_text_size_x = 0.0f;
+		*jc_text_area->offset_by_text_size_y = -0.5f;
+
+		//*jc_text_area->can_be_edited = false;
+
+
+		return jc_text_area;
+	}
+	else
+	{
+		return nullptr;
+	}
+}
+
 void ETextArea::change_text(std::string _text)
 {
 	std::string		buffer		= "";
@@ -1123,22 +1146,30 @@ void ETextArea::change_text(std::string _text)
 			&&
 			(_text[i] == '\\')
 			&&
-			(_text[i + 1] == '\\')
+			(_text[i + 1] == 'n')
 		)
 		{
 			x_size = 0.0f;
-		}
 
-		if
-		(
-			(_text[i] != '\\')
-			&&
-			(
-				(_text[max (i - 1, 0)] != '\\')
-				||
-				(i == 0)
-			)
-		)
+			buffer += "\\n";
+			i++;
+
+			//if (buffer[0] == 'M')
+			//{
+			//	EInputCore::logger_simple_info("reset x_size");
+			//}
+		}
+		else
+		//if
+		//(
+		//	(_text[i] != 'n')
+		//	&&
+		//	(
+		//		(_text[max (i - 1, 0)] != '\\')
+		//		||
+		//		(i == 0)
+		//	)
+		//)
 		{
 			
 
@@ -1154,6 +1185,12 @@ void ETextArea::change_text(std::string _text)
 					(x_size + offset_border[BorderSide::LEFT] + 5.0f >= region_gabarite->size_x - offset_border[BorderSide::RIGHT])
 				)
 				{
+					/*if (buffer[0] == 'M')
+					{
+						EInputCore::logger_param("unfinished buffer", buffer);
+						EInputCore::logger_param("x_size", x_size);
+						std::cout << std::endl;
+					}*/
 					//EInputCore::logger_param("text splitted", buffer);
 					//EInputCore::logger_param("size", x_size + offset_border[BorderSide::LEFT]);
 					//EInputCore::logger_param("border", *region_gabarite->size_x - offset_border[BorderSide::RIGHT]);
@@ -1167,6 +1204,9 @@ void ETextArea::change_text(std::string _text)
 					{
 						buffer += "\\n";
 					}
+
+					
+
 					x_size = 0.0f;
 				}
 				else
@@ -1197,7 +1237,7 @@ void ETextArea::change_text(std::string _text)
 	if (stored_text != nullptr)
 	{
 		*stored_text = buffer;
-
+		//if (buffer[0] == 'Ì') { EInputCore::logger_param("buffer", buffer); }
 		generate_rows();
 		generate_text();
 	}

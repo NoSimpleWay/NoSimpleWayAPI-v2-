@@ -172,7 +172,8 @@ public:
 	static EntityButton* create_default_radial_button
 	(
 		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_group
+		EButtonGroup*		_parent_group,
+		std::string _text
 	);
 
 	bool can_get_access_to_style();

@@ -604,12 +604,13 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 			//second_button_layer->make_as_PBR();
 		}
 
-		ETextArea* jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area (Entity::get_last_clickable_area(jc_button), EFont::font_list[0], DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
 		*jc_text_area->offset_by_gabarite_size_x = 0.0;
 		*jc_text_area->offset_by_text_size_x = 0.0;
 
 		jc_text_area->offset_border[BorderSide::LEFT] = 37.0f;
-		//jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", data_entity));
+
+		jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
 
 		*jc_text_area->can_be_edited = false;
 		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
@@ -622,7 +623,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		return jc_button;
 }
 
-EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group)
+EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, std::string _text)
 {
 	EntityButton* jc_button = create_default_button_with_custom_data(_region_gabarite, _parent_group);
 	unsigned int square_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
@@ -649,6 +650,8 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 	EDataContainerRadialButton* jc_data_container = new EDataContainerRadialButton();
 	last_data->data_container = jc_data_container;
 
+	jc_data_container->text = _text;
+
 	ESpriteLayer* jc_sprite_layer = ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 	(
 		NS_EGraphicCore::load_from_textures_folder("buttons/radiance_button"),
@@ -673,6 +676,11 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 	ETextArea* jc_text_area = ETextArea::create_centered_to_right_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "1.0");
 	jc_text_area->offset_border[BorderSide::RIGHT] = 6.0f;
 	*jc_text_area->can_be_edited = false;
+
+	//jc_text_area->change_text("123\\n456");
+	//*jc_text_area->stored_text = "123\\n456";
+	//jc_text_area->generate_rows();
+	//jc_text_area->generate_text();
 
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 	return jc_button;

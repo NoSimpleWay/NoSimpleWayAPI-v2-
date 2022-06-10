@@ -28,7 +28,7 @@ uniform float direct_sun_matte_multiplier = 1.0f;
 uniform float sun_position_x = 0.5f;
 uniform float sun_position_y = 0.55f;
 
-uniform float sun_zenith = 1.0f;
+uniform float ground_level = 0.5f;
 
 uniform float normal_map_multiplier = 1.0f;
 uniform float gloss_map_multiplier = 1.0f;
@@ -40,6 +40,9 @@ uniform float screen_offset_z;
 float c_r;
 float c_g;
 float c_b;
+float c_a;
+
+vec4 c_rgba;
 
 
 
@@ -99,18 +102,9 @@ void main()
 	
 	reflect_pos_x = 0.999f * (normal_x + 1.0f)		+ (gl_FragCoord.x / 1920.0f		* (1.0f - abs(normal_x)))	* 0.999f + 0.999 / 2.0f * abs(normal_x);
 	reflect_pos_y = 0.333f * (normal_y + 1.0f)		+ (WorldPosition.y / 1080.0f	* (1.0f - abs(normal_y)))	* 0.333f + 0.333 / 2.0f * abs(normal_y);
+	//((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 	
-	dist_x = (reflect_pos_x * 0.333f - sun_position_x);
-	dist_y = (reflect_pos_y - sun_position_y);
-	dist_x /= (1080.0f / 1920.0f);
-	
-	dist_total = length(vec2(dist_x, dist_y)) * (0.0f + 3.0f);
-	//dist_total = 1.0f - dist_total;
-	dist_total = clamp(1.0f - (dist_total - 0.075f )* (1.0f + gloss_power * 10.0), 0.0f, 1.0f);
-	
-	sun_light = (sun_light_gloss * gloss_power	+	sun_light_matte * (1.0f - gloss_power))	*	dist_total * 1.0f;
-	sky_light = (sky_light_gloss * gloss_power	+	sky_light_matte * (1.0f - gloss_power));
-	
+	//reflect_pos_y += (ground_level * 2.0f - 1.0f);
 	reflect_coord =
 	vec2
 	(
@@ -120,43 +114,40 @@ void main()
 		
 		reflect_pos_y
 	);
-
-
-	if (glossy_flat == 0)
-	{
-		c_r = clamp ((texture(SD_array[0], reflect_coord).r * interpolation_A + texture(SD_array[1], reflect_coord).r * interpolation_B) * brightness_multiplier, 0.0f, 2.0f);
-		c_g = clamp ((texture(SD_array[0], reflect_coord).g * interpolation_A + texture(SD_array[1], reflect_coord).g * interpolation_B) * brightness_multiplier, 0.0f, 1.9f);
-		c_b = clamp ((texture(SD_array[0], reflect_coord).b * interpolation_A + texture(SD_array[1], reflect_coord).b * interpolation_B) * brightness_multiplier, 0.0f, 1.8f);
-	}
-	else
-	if (glossy_flat == 1)
-	{
-		c_r = clamp ((texture(SD_array[1], reflect_coord).r * interpolation_A + texture(SD_array[2], reflect_coord).r * interpolation_B) * brightness_multiplier, 0.0f, 2.0f);
-		c_g = clamp ((texture(SD_array[1], reflect_coord).g * interpolation_A + texture(SD_array[2], reflect_coord).g * interpolation_B) * brightness_multiplier, 0.0f, 1.9f);
-		c_b = clamp ((texture(SD_array[1], reflect_coord).b * interpolation_A + texture(SD_array[2], reflect_coord).b * interpolation_B) * brightness_multiplier, 0.0f, 1.8f);
-	}
-	else
-	if (glossy_flat == 2)
-	{
-		c_r = clamp ((texture(SD_array[2], reflect_coord).r * interpolation_A + texture(SD_array[3], reflect_coord).r * interpolation_B) * brightness_multiplier, 0.0f, 2.0f);
-		c_g = clamp ((texture(SD_array[2], reflect_coord).g * interpolation_A + texture(SD_array[3], reflect_coord).g * interpolation_B) * brightness_multiplier, 0.0f, 1.9f);
-		c_b = clamp ((texture(SD_array[2], reflect_coord).b * interpolation_A + texture(SD_array[3], reflect_coord).b * interpolation_B) * brightness_multiplier, 0.0f, 1.8f);
-	}                                                                                                                                                                   
-	else
-	if (glossy_flat == 3)
-	{
-		c_r = clamp ((texture(SD_array[3], reflect_coord).r * interpolation_A + texture(SD_array[4], reflect_coord).r * interpolation_B) * brightness_multiplier, 0.0f, 2.0f);
-		c_g = clamp ((texture(SD_array[3], reflect_coord).g * interpolation_A + texture(SD_array[4], reflect_coord).g * interpolation_B) * brightness_multiplier, 0.0f, 1.9f);
-		c_b = clamp ((texture(SD_array[3], reflect_coord).b * interpolation_A + texture(SD_array[4], reflect_coord).b * interpolation_B) * brightness_multiplier, 0.0f, 1.8f);
-	}  
-	else
-	{                                                                                                                                                                   
-		c_r = clamp ((texture(SD_array[4], reflect_coord).r) * brightness_multiplier, 0.0f, 2.0f);
-		c_g = clamp ((texture(SD_array[4], reflect_coord).g) * brightness_multiplier, 0.0f, 1.9f);
-		c_b = clamp ((texture(SD_array[4], reflect_coord).b) * brightness_multiplier, 0.0f, 1.8f);
-	}
+	
 	
 
+	
+	if (glossy_flat == 0)
+	{c_rgba = clamp ((texture(SD_array[0], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_A + texture(SD_array[1], reflect_coord+ vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_B), vec4(0.0f), vec4(2.0f, 1.9f, 1.8f, 1.0f));}
+	else
+	if (glossy_flat == 1)
+	{c_rgba = clamp ((texture(SD_array[1], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_A + texture(SD_array[2], reflect_coord+ vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_B), vec4(0.0f), vec4(2.0f, 1.9f, 1.8f, 1.0f));}
+	else
+	if (glossy_flat == 2)
+	{c_rgba = clamp ((texture(SD_array[2], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_A + texture(SD_array[3], reflect_coord+ vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_B), vec4(0.0f), vec4(2.0f, 1.9f, 1.8f, 1.0f));}                                                                                                                                                                   
+	else
+	if (glossy_flat == 3)
+	{c_rgba = clamp ((texture(SD_array[3], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_A + texture(SD_array[4], reflect_coord+ vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_B), vec4(0.0f), vec4(2.0f, 1.9f, 1.8f, 1.0f));}  
+	else
+	{c_rgba = clamp (texture(SD_array[4], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)), vec4(0.0f), vec4(2.0f, 1.9f, 1.8f, 1.0f));}
+	
+	dist_x = (reflect_pos_x * 0.333f - sun_position_x);
+	dist_y = (reflect_pos_y - sun_position_y);
+	dist_x /= (1080.0f / 1920.0f);
+	
+	dist_total = length(vec2(dist_x, dist_y)) * (0.0f + 3.0f);
+	dist_total /= 1.0f + (c_rgba.a) * 0.333f;
+	//dist_total = 1.0f - dist_total;
+	dist_total = clamp(1.0f - (dist_total - 0.075f )* (1.0f + gloss_power * 10.0), 0.0f, 1.0f);
+	
+	sun_light = (sun_light_gloss * gloss_power	+	sun_light_matte * (1.0f - gloss_power))	* dist_total * (1.0f - c_rgba.a);
+	sky_light = (sky_light_gloss * gloss_power	+	sky_light_matte * (1.0f - gloss_power));
+	//sky_light += texture(SD_array[4], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)).a;
+	
+	
+
+	//sun_light *= 1.0f - c_rgba.a;
 	
 	gloss_result = gloss_power;
 	
@@ -166,11 +157,11 @@ void main()
 	texture(texture1, TexCoord).rgb
 	*
 	(
-		vec3 (c_r, c_g, c_b ) * gloss_result
+		vec3(c_rgba) * brightness_multiplier * gloss_result
 		+
-		vec3 (sky_light) * (1.0f - gloss_result)
+		sky_light * (1.0f - gloss_result)
 		+
-		vec3 (sun_light) * 2.0f * gloss_result
+		sun_light * 2.0f * gloss_result
 	)
 	*
 	ourColor.rgb;

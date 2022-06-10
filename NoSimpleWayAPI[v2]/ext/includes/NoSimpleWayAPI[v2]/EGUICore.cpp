@@ -508,7 +508,7 @@ void EButtonGroup::align_groups()
 				if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 				{
 					group->region_gabarite->offset_x = *border_left + 0.0f;
-					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + 5.0f; 
+					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + 10.0f; 
 				}
 				else
 				if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
@@ -864,7 +864,7 @@ void EButtonGroup::group_stretch_y()
 	if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 	{
 
-		target_size = region_gabarite->size_y - *border_bottom - *border_up - (group_list.size() - 1) * 5.0f - shrink_size;
+		target_size = region_gabarite->size_y - *border_bottom - *border_up - (group_list.size() - 1) * 10.0f - shrink_size;
 
 		for (EButtonGroup* group : group_list)
 		{

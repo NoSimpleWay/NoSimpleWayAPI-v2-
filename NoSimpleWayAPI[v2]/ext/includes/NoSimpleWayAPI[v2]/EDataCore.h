@@ -225,6 +225,8 @@ public:
 	float* current_percent = new float(0.0f);
 	float* step_multiplier = new float(1.0f);
 
+	std::string text = "";
+
 	StoredPointerType* stored_type = new StoredPointerType(StoredPointerType::STORED_TYPE_FLOAT);
 
 	~EDataContainerRadialButton();
@@ -260,6 +262,7 @@ class EDataContainerStoreTargetGroup : public EDataContainer
 {
 public:
 	EButtonGroup* target_group;
+	std::string search_tag = "";
 };
 //////////////////////////////////////////////////////////////////////
 // actions section
