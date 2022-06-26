@@ -11487,18 +11487,6 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Flask"
-	[tag]"name RU"		[value]"Флакон"
-
-	[tag]"icon path"	[value]"Flask"
-	[tag]"base class"	[value]"Flasks"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
 	[tag]"name EN"		[value]"Ambush Mitts"
 	[tag]"name RU"		[value]"Перчатки разбойника"
 
@@ -16954,30 +16942,6 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Key"
-	[tag]"name RU"		[value]"Ключ (бледный совет)"
-
-	[tag]"icon path"	[value]"The_Pale_Court_inventory_icon"
-	[tag]"base class"	[value]"Map Fragments"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Mortal"
-	[tag]"name RU"		[value]"Смертное (манящая бездна)"
-
-	[tag]"icon path"	[value]"The_Alluring_Abyss_inventory_icon"
-	[tag]"base class"	[value]"Map Fragments"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
 	[tag]"name EN"		[value]"Mortal Grief"
 	[tag]"name RU"		[value]"Смертное уныние"
 
@@ -17383,17 +17347,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Sacrifice at"
-	[tag]"name RU"		[value]"Жертва (вершина жертвоприношений)"
-
-	[tag]"icon path"	[value]"The_Apex_of_Sacrifice_inventory_icon"
-	[tag]"base class"	[value]"Map Fragments"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -32269,7 +32222,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"cost"				[value]"alt"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"Dread Banner"
+	[tag]"icon path"		[value]"DreadBanner"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
@@ -32685,7 +32638,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"gem color"		[value]"blue"
 	[tag]"require level"	[value]"34"
-	[tag]"act"				[value]"3"
+	[tag]"act"				[value]"4"
 	[tag]"cost"				[value]"chance"
 	[tag]"is active"		[value]"true"
 	
@@ -33265,19 +33218,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"LightningTendrils"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Gem"
-
-	[tag]"name EN"			[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"name RU"			[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	
-	[tag]"gem color"		[value]"blue"
-	[tag]"require level"	[value]"1"
-	[tag]"act"				[value]"1"
-	[tag]"cost"				[value]"wis"
-	[tag]"is active"		[value]"true"
-	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
@@ -34267,8 +34207,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"gem color"		[value]"blue"
 	[tag]"require level"	[value]"34"
-	[tag]"act"				[value]"chance"
-	[tag]"cost"				[value]"4"
+	[tag]"act"				[value]"4"
+	[tag]"cost"				[value]"chance"
 	[tag]"is active"		[value]"true"
 	
 	[tag]"icon path"		[value]"SummonCarrionGolem"
@@ -35018,282 +34958,282 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Vengeance"
+	[tag]"name RU"			[value]"Отмщение"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"red"
+	[tag]"require level"	[value]"24"
+	[tag]"act"				[value]"3"
+	[tag]"cost"				[value]"alt"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"Vengeance"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Venom Gyre"
+	[tag]"name RU"			[value]"Круг яда"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"green"
+	[tag]"require level"	[value]"12"
+	[tag]"act"				[value]"1"
+	[tag]"cost"				[value]"transmut"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"VenomGyre"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Vigilant Strike"
+	[tag]"name RU"			[value]"Расчётливый удар"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"red"
+	[tag]"require level"	[value]"1"
+	[tag]"act"				[value]"1"
+	[tag]"cost"				[value]"wisdom"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"VigilantStrike"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Viper Strike"
+	[tag]"name RU"			[value]"Удар гадюки"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"green"
+	[tag]"require level"	[value]"1"
+	[tag]"act"				[value]"1"
+	[tag]"cost"				[value]"wisdom"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"ViperStrike"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Vitality"
+	[tag]"name RU"			[value]"Живучесть"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"red"
+	[tag]"require level"	[value]"10"
+	[tag]"act"				[value]"1"
+	[tag]"cost"				[value]"transmut"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"Vitality"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Void Sphere"
+	[tag]"name RU"			[value]"Сфера пустоты"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"blue"
+	[tag]"require level"	[value]"34"
+	[tag]"act"				[value]"4"
+	[tag]"cost"				[value]"chance"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"VoidSphere"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Volatile Dead"
+	[tag]"name RU"			[value]"Нестабильный труп"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"green"
+	[tag]"require level"	[value]"12"
+	[tag]"act"				[value]"1"
+	[tag]"cost"				[value]"transmut"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"VolatileDead"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Vortex"
+	[tag]"name RU"			[value]"Пурга"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"blue"
+	[tag]"require level"	[value]"28"
+	[tag]"act"				[value]"3"
+	[tag]"cost"				[value]"chance"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"Vortex"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Vulnerability"
+	[tag]"name RU"			[value]"Беззащитность"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"red"
+	[tag]"require level"	[value]"24"
+	[tag]"act"				[value]"3"
+	[tag]"cost"				[value]"alt"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"Vulnerability"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"War Banner"
+	[tag]"name RU"			[value]"Знамя войны"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"red"
+	[tag]"require level"	[value]"1"
+	[tag]"act"				[value]"1"
+	[tag]"cost"				[value]"wisdom	"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"WarBanner"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Warlord's Mark"
+	[tag]"name RU"			[value]"Метка вождя"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"red"
+	[tag]"require level"	[value]"24"
+	[tag]"act"				[value]"3"
+	[tag]"cost"				[value]"alt"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"WarlordsMark"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Wave of Conviction"
+	[tag]"name RU"			[value]"Волна осуждения"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"blue"
+	[tag]"require level"	[value]"16"
+	[tag]"act"				[value]"2"
+	[tag]"cost"				[value]"alt"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"WaveofConviction"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Whirling Blades"
+	[tag]"name RU"			[value]"Шквал клинков"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"green"
+	[tag]"require level"	[value]"10"
+	[tag]"act"				[value]"1"
+	[tag]"cost"				[value]"transmut"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"WhirlingBlades"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Wild Strike"
+	[tag]"name RU"			[value]"Шальной удар"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"green"
+	[tag]"require level"	[value]"28"
+	[tag]"act"				[value]"3"
+	[tag]"cost"				[value]"chance"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"WildStrike"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Winter Orb"
+	[tag]"name RU"			[value]"Зимняя сфера"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"blue"
+	[tag]"require level"	[value]"28"
+	[tag]"act"				[value]"3"
+	[tag]"cost"				[value]"chance"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"WinterOrb"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Wintertide Brand"
+	[tag]"name RU"			[value]"Клеймо зимы"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"blue"
+	[tag]"require level"	[value]"12"
+	[tag]"act"				[value]"1"
+	[tag]"cost"				[value]"transmut"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"WintertideBrand"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Wither"
+	[tag]"name RU"			[value]"Увядание"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"blue"
+	[tag]"require level"	[value]"10"
+	[tag]"act"				[value]"1"
+	[tag]"cost"				[value]"transmut"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"Wither"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Withering Step"
+	[tag]"name RU"			[value]"Губительный шаг"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"green"
+	[tag]"require level"	[value]"10"
+	[tag]"act"				[value]"1"
+	[tag]"cost"				[value]"transmut"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"WitheringStep"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Wrath"
+	[tag]"name RU"			[value]"Грозный гнев"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"blue"
+	[tag]"require level"	[value]"24"
+	[tag]"act"				[value]"3"
+	[tag]"cost"				[value]"alt"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"Wrath"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
+	[tag]"name EN"			[value]"Zealotry"
+	[tag]"name RU"			[value]"Фанатизм"
 	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"?"
-	[tag]"cost"				[value]"?"
+	[tag]"gem color"		[value]"blue"
+	[tag]"require level"	[value]"24"
+	[tag]"act"				[value]"3"
+	[tag]"cost"				[value]"alt"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"Zealotry"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"

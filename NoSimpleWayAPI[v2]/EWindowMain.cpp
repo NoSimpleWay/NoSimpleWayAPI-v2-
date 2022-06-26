@@ -65,6 +65,13 @@ void EWindowMain::update_additional(float _d)
 
 EWindowMain::EWindowMain()
 {
+	EInputCore::logger_param("registered data entity filter size", DataEntityFilter::registered_data_entity_filter_list.size());
+
+	DataEntityFilter* jc_filter = nullptr;
+
+	jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
 	//for(int i = 0; i < 1'000'000; i++)
 	//{
 	//	test_vector.push_back(new TestObject());
@@ -228,7 +235,7 @@ EWindowMain::EWindowMain()
 				*verical_item_element->stretch_x_by_parent_size = true;
 				*verical_item_element->stretch_y_by_parent_size = true;
 
-				std::string select_window_tags[3] = { "game item", "base Class", "influence" };
+				std::string select_window_tags[3] = { "game item", "base class", "influence" };
 			for (int r = 0; r < 3; r++)
 			if (rand() % 3 == 0)
 			{
@@ -661,11 +668,14 @@ EWindowMain::EWindowMain()
 		main_button_group->data_container = jc_data_container_for_search_group;
 		*main_button_group->is_active = false;
 
-		DataEntityFilter* data_filter_rule = new DataEntityFilter();
-			*data_filter_rule->target_tag_name		= "data type";
-			data_filter_rule->suitable_values_list.push_back(new std::string("game item"));
+		DataEntityFilter* data_entity_filter = new DataEntityFilter();
+			data_entity_filter->target_tag_name		= "data type";
+			data_entity_filter->suitable_values_list.push_back("game item");
 
-		jc_data_container_for_search_group->required_tag_list.push_back(data_filter_rule);
+		EFilterRule* jc_filter_rule = new EFilterRule();
+		jc_filter_rule->required_tag_list.push_back(data_entity_filter);
+
+		jc_data_container_for_search_group->target_rule = new EFilterRule();
 
 		// // //	DATA ENTITY LIST	// // //
 		jc_button_group = main_button_group->add_group
