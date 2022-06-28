@@ -33740,20 +33740,6 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
-	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"cost"				[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"is active"		[value]"true"
-	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Gem"
-
 	[tag]"name EN"			[value]"Scorching Ray"
 	[tag]"name RU"			[value]"Опаляющий луч"
 	
@@ -33959,7 +33945,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"cost"				[value]"transmut"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"SmokeMine"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
@@ -33975,19 +33961,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"icon path"		[value]"SnipersMark"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"		[value]"Gem"
-
-	[tag]"name EN"			[value]"Precision"
-	[tag]"name RU"			[value]"Точность"
-	
-	[tag]"gem color"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"require level"	[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"act"				[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"cost"				[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
-	[tag]"is active"		[value]"true"
-	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
@@ -34127,7 +34100,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"cost"				[value]"wisdom"
 	[tag]"is active"		[value]"true"
 	
-	[tag]"icon path"		[value]"qqqqqqqqqqqqqqqqqqqqqqqqqqq"
+	[tag]"icon path"		[value]"Steelskin"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"

@@ -558,9 +558,9 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 	//	(((EntityButton*)_text_area->parent_clickable_region->parent_custom_data->parent_entity)->parent_button_group->root_group != nullptr)
 
 	//)
-	if (_text_area->get_root_group() != nullptr)
+	if ((_text_area != nullptr) && (_text_area->get_root_group() != nullptr))
 	{
-		EDataContainerDataEntitySearchGroup* data_container = (EDataContainerDataEntitySearchGroup*)_text_area->get_root_group()->data_container;
+		EDataContainer_ButtonGroupForDataEntities* data_container = (EDataContainer_ButtonGroupForDataEntities*)_text_area->get_root_group()->data_container;
 		
 		if
 		(
@@ -656,21 +656,37 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 
 			//EButtonGroup::refresh_button_group(data_container->pointer_to_target_group_send_item);
 		}
+		else
+		{
+			if 
+			(data_container == nullptr) {EInputCore::logger_simple_error("data container is NULL!"); }
+			else if
+			(data_container->pointer_to_group_with_data_entities == nullptr) {EInputCore::logger_simple_error("target button group is NULL!"); }
+			else if
+			(data_container->target_rule == nullptr) {EInputCore::logger_simple_error("filter rule is NULL!"); }
+		}
+	}
+	else
+	{
+		if (_text_area == nullptr) { EInputCore::logger_simple_error("text area is NULL!"); }
+		else
+			if (_text_area->get_root_group() == nullptr) { EInputCore::logger_simple_error("root group is NULL!"); }
 	}
 }
 
-std::vector<DataEntityFilter*> DataEntityFilter::registered_data_entity_filter_list(RegisteredDataEntityFilter::_RDEF_LAST_ELEMENT_);
+std::vector<EFilterRule*> EFilterRule::registered_filter_rules(RegisteredFilterRules::_RDEF_LAST_ELEMENT_);
 
 void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EDataContainerStoreTargetGroup* button_data_container = ((EDataContainerStoreTargetGroup*)_custom_data->data_container);
-	EDataContainerDataEntitySearchGroup* button_group_data_container = (EDataContainerDataEntitySearchGroup*)EButtonGroup::data_entity_filter->data_container;
+	EDataContainer_ButtonGroupForDataEntities* button_group_data_container = (EDataContainer_ButtonGroupForDataEntities*)EButtonGroup::data_entity_filter->data_container;
 
 	*EButtonGroup::data_entity_filter->is_active = true;
 	button_group_data_container->pointer_to_group_item_receiver = button_data_container->target_group;
 
-	//button_group_data_container->target_rule = button_data_container->filter_rule;
+	button_group_data_container->target_rule = button_data_container->filter_rule;
 
+	EDataActionCollection::action_type_text(button_group_data_container->filter_text_area);
 	/* OUTDATED */
 	//if
 	//(
@@ -691,9 +707,9 @@ void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, E
 
 	EButtonGroup* parent_group = ((EntityButton*)_entity)->parent_button_group;
 	EButtonGroup* root_group = parent_group->root_group;
-	EDataContainerDataEntitySearchGroup* data = (EDataContainerDataEntitySearchGroup*)root_group->data_container;
+	EDataContainer_ButtonGroupForDataEntities* data = (EDataContainer_ButtonGroupForDataEntities*)root_group->data_container;
 	EButtonGroup* receiver = data->pointer_to_group_item_receiver;
-	EDataContainerEntityDataHolder* data_entity_holder = (EDataContainerEntityDataHolder*)_custom_data->data_container;
+	EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
 
 	EntityButton* jc_button = EntityButton::create_item_button
 	(

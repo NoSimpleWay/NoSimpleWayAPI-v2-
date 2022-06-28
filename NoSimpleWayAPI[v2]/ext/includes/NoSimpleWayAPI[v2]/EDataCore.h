@@ -233,11 +233,12 @@ public:
 	//EButtonGroup* parent_button_group;
 };
 
-enum RegisteredDataEntityFilter
+enum RegisteredFilterRules
 {
-	RDEF_OBTAINABLE_GAME_ITEM,
-	RDEF_BASE_CLASS,
-	RDEF_SKILL_GEMS,
+	FILTER_RULE_OBTAINABLE_GAME_ITEM,
+	FILTER_RULE_BASE_CLASS,
+	FILTER_RULE_SKILL_GEMS,
+	FILTER_RULE_INFLUENCE,
 	_RDEF_LAST_ELEMENT_
 };
 
@@ -248,8 +249,6 @@ struct DataEntityFilter
 public:
 	std::string target_tag_name = "";
 	std::vector<std::string>	suitable_values_list;
-
-	static	std::vector<DataEntityFilter*> registered_data_entity_filter_list;
 };
 
 class EFilterRule
@@ -257,9 +256,11 @@ class EFilterRule
 public:
 	std::vector<DataEntityFilter*>	required_tag_list;
 	std::vector<DataEntityFilter*>	banned_tag_list;
+
+	static	std::vector<EFilterRule*> registered_filter_rules;
 };
 
-class EDataContainerDataEntitySearchGroup : public EDataContainer
+class EDataContainer_ButtonGroupForDataEntities : public EDataContainer
 {
 public:
 	//std::vector<DataEntityFilter*>	required_tag_list;
@@ -269,10 +270,11 @@ public:
 	EntityButton*					pointer_to_search_bar;
 	EButtonGroup*					pointer_to_group_with_data_entities;
 	EButtonGroup*					pointer_to_group_item_receiver;
+	ETextArea*						filter_text_area;
 
 };
 
-class EDataContainerEntityDataHolder : public EDataContainer
+class EDataContainer_DataEntityHolder : public EDataContainer
 {
 public:
 	EDataEntity* stored_data_entity;

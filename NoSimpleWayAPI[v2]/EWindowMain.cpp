@@ -65,13 +65,50 @@ void EWindowMain::update_additional(float _d)
 
 EWindowMain::EWindowMain()
 {
-	EInputCore::logger_param("registered data entity filter size", DataEntityFilter::registered_data_entity_filter_list.size());
+	EInputCore::logger_param("registered data entity filter size", EFilterRule::registered_filter_rules.size());
 
+	EFilterRule* jc_filter_rule = nullptr;
 	DataEntityFilter* jc_filter = nullptr;
 
-	jc_filter = new DataEntityFilter();
+
+	//game items
+	jc_filter_rule = new EFilterRule();
+		jc_filter = new DataEntityFilter();
+
 		jc_filter->target_tag_name = "data type";
 		jc_filter->suitable_values_list.push_back("game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM] = jc_filter_rule;
+
+	//base class
+	jc_filter_rule = new EFilterRule();
+		jc_filter = new DataEntityFilter();
+
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("base class");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_BASE_CLASS] = jc_filter_rule;
+
+	//influence
+	jc_filter_rule = new EFilterRule();
+		jc_filter = new DataEntityFilter();
+
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("influence");
+
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_INFLUENCE] = jc_filter_rule;
+
+	//gem
+	jc_filter_rule = new EFilterRule();
+		jc_filter = new DataEntityFilter();
+
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("gem");
+
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_SKILL_GEMS] = jc_filter_rule;
+
 	//for(int i = 0; i < 1'000'000; i++)
 	//{
 	//	test_vector.push_back(new TestObject());
@@ -149,7 +186,7 @@ EWindowMain::EWindowMain()
 	////////////////////////////////////////////////
 
 	//filters block
-	if (true)
+	if (false)
 	{
 		main_button_group = EButtonGroup::create_root_button_group
 		(
@@ -236,6 +273,14 @@ EWindowMain::EWindowMain()
 				*verical_item_element->stretch_y_by_parent_size = true;
 
 				std::string select_window_tags[3] = { "game item", "base class", "influence" };
+
+			RegisteredFilterRules rule_id[3] =
+			{
+				RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM,
+				RegisteredFilterRules::FILTER_RULE_BASE_CLASS,
+				RegisteredFilterRules::FILTER_RULE_INFLUENCE
+			};
+
 			for (int r = 0; r < 3; r++)
 			if (rand() % 3 == 0)
 			{
@@ -276,7 +321,7 @@ EWindowMain::EWindowMain()
 
 				EDataContainerStoreTargetGroup* data_store_target_group = new EDataContainerStoreTargetGroup();
 				EntityButton::get_last_custom_data(small_button)->data_container = data_store_target_group;
-				data_store_target_group->search_tag = select_window_tags[r];
+				data_store_target_group->filter_rule = EFilterRule::registered_filter_rules[rule_id[r]];
 
 				jc_text_area = ETextArea::create_centered_text_area
 				(EntityButton::get_last_clickable_area(small_button), EFont::font_list[0], "Add new item");
@@ -385,7 +430,8 @@ EWindowMain::EWindowMain()
 						(
 							nullptr,
 							group_for_items,
-							suitable_data_entity[selected_data_entity]
+							suitable_data_entity[selected_data_entity],
+							EFont::font_list[0]
 						);
 
 						group_for_items->button_list.push_back(jc_button);
@@ -415,7 +461,8 @@ EWindowMain::EWindowMain()
 								(
 									nullptr,
 									group_for_items,
-									suitable_data_entity[k]
+									suitable_data_entity[k],
+									EFont::font_list[0]
 								);
 
 								group_for_items->button_list.push_back(jc_button);
@@ -655,6 +702,7 @@ EWindowMain::EWindowMain()
 		group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
+
 	//DATA ENTITY
 	if (true)
 	{
@@ -664,7 +712,7 @@ EWindowMain::EWindowMain()
 		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		EButtonGroup::data_entity_filter = main_button_group;
 
-		EDataContainerDataEntitySearchGroup* jc_data_container_for_search_group = new EDataContainerDataEntitySearchGroup();
+		EDataContainer_ButtonGroupForDataEntities* jc_data_container_for_search_group = new EDataContainer_ButtonGroupForDataEntities();
 		main_button_group->data_container = jc_data_container_for_search_group;
 		*main_button_group->is_active = false;
 
@@ -695,7 +743,7 @@ EWindowMain::EWindowMain()
 			);
 
 
-			EDataContainerEntityDataHolder* data_holder = new EDataContainerEntityDataHolder();
+			EDataContainer_DataEntityHolder* data_holder = new EDataContainer_DataEntityHolder();
 			data_holder->stored_data_entity = data_entity;
 			EntityButton::get_last_custom_data(jc_button)->data_container = data_holder;
 
@@ -766,9 +814,14 @@ EWindowMain::EWindowMain()
 		jc_data_container_for_search_group->pointer_to_search_bar = jc_button;
 
 		jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Chaos orb");
+		jc_data_container_for_search_group->filter_text_area = jc_text_area;
 		jc_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_text);
 		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 		jc_button_group->button_list.push_back(jc_button);
+
+		
+
+
 
 		EDataActionCollection::action_type_text(jc_text_area);
 
@@ -826,8 +879,11 @@ EWindowMain::EWindowMain()
 
 		group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
+	}
 
-
+	//world parameters
+	if (true)
+	{
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		/////		world parameter		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -896,6 +952,71 @@ EWindowMain::EWindowMain()
 
 		group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
+	}
+
+
+	if (true)
+	{
+		main_button_group = EButtonGroup::create_root_button_group
+		(new ERegionGabarite(400.0f, 400.0f, 0.0f, 512.0f, 800.0f), EGUIStyle::active_style);
+		main_button_group->root_group = main_button_group;
+		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+
+		jc_button_group = main_button_group->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(256.0f, 150.0f), EGUIStyle::active_style));
+		*jc_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+		*jc_button_group->stretch_x_by_parent_size = true;
+		*jc_button_group->stretch_y_by_parent_size = true;
+
+		std::vector <EDataEntity*> suitable_data_entity_list;
+		for (EDataEntity* de : EDataEntity::data_entity_list)
+		{
+			if
+			(
+				EStringUtils::to_lower
+				(
+					DataEntityUtils::get_tag_value_by_name	(0, "data type", de)
+				)
+				==
+				"gem"
+			)
+			{
+				suitable_data_entity_list.push_back(de);
+			}
+		}
+
+		for (int i = 0; i < 6; i++)
+		{
+			jc_button = EntityButton::create_wide_item_button
+			(
+				new ERegionGabarite(480.0f, 64.0f),
+				jc_button_group,
+				suitable_data_entity_list[rand() % suitable_data_entity_list.size()],
+				EFont::font_list[1]
+			);
+			jc_button_group->button_list.push_back(jc_button);
+			//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_open_data_entity_filter_group);
+
+		
+			EDataContainerStoreTargetGroup* data_container_entity_filter = new EDataContainerStoreTargetGroup();
+				data_container_entity_filter->target_group = EButtonGroup::data_entity_filter;
+				data_container_entity_filter->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_SKILL_GEMS];
+
+			ECustomData* custom_data_for_gem_button = new ECustomData();
+				custom_data_for_gem_button->data_container = data_container_entity_filter;
+		
+			EClickableArea* clickable_area_for_gem_button = EClickableArea::create_default_clickable_region(jc_button->button_gabarite, jc_button, custom_data_for_gem_button);
+				clickable_area_for_gem_button->actions_on_click_list.push_back(&EDataActionCollection::action_open_data_entity_filter_group);
+				custom_data_for_gem_button->clickable_area_list.push_back(clickable_area_for_gem_button);
+			
+
+			jc_button->custom_data_list.push_back(custom_data_for_gem_button);
+		}
+
+		group_list.push_back(main_button_group);
+		EButtonGroup::refresh_button_group(main_button_group);
+
+
+
 	}
 }
 

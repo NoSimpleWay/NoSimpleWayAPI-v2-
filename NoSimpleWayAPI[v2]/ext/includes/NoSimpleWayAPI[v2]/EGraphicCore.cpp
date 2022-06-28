@@ -671,8 +671,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
 		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
 
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * 1.0f);
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * 1.0f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * 2.0f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * 2.0f);
 
 		NS_EGraphicCore::skydome_batcher->set_transform_screen_size (1.0f,1.0f);
 		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
@@ -701,8 +701,14 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 	//font
 	EFont* new_font = NULL;
-	ETextureGabarite* font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/franklin_0.png", NS_EGraphicCore::default_texture_atlas);
+	ETextureGabarite* font_gabarite = nullptr;
+
+	font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/franklin_0.png", NS_EGraphicCore::default_texture_atlas);
 	new_font = new EFont("franklin", font_gabarite, NS_EGraphicCore::default_texture_atlas, false);
+	EFont::font_list.push_back(new_font);
+
+	font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/bahn_0.png", NS_EGraphicCore::default_texture_atlas);
+	new_font = new EFont("bahn", font_gabarite, NS_EGraphicCore::default_texture_atlas, false);
 	EFont::font_list.push_back(new_font);
 }
 

@@ -52,7 +52,7 @@ class ETextArea;
 enum FONT_ENUM
 {
 		FE_DEFAULT,
-		FE_DOT
+		FE_BAHN
 };
 
 

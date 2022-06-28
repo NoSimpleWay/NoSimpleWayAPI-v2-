@@ -165,7 +165,8 @@ public:
 	(
 		ERegionGabarite*	_region_gabarite,
 		EButtonGroup*		_parent_group,
-		EDataEntity*		_data_entity
+		EDataEntity*		_data_entity,
+		EFont*				_font
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 	

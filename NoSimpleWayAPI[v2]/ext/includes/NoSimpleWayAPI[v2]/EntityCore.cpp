@@ -512,7 +512,7 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 		_parent_group,
 		nullptr
 	);
-	EDataContainerEntityDataHolder* data = new EDataContainerEntityDataHolder();
+	EDataContainer_DataEntityHolder* data = new EDataContainer_DataEntityHolder();
 	data->stored_data_entity = _data_entity;
 
 	EntityButton::get_last_custom_data(jc_button)->data_container = data;
@@ -557,15 +557,15 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 	return jc_button;
 }
 
-EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity)
+EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity, EFont* _font)
 {
 		EntityButton* jc_button = EntityButton::create_default_clickable_button
 		(
-			new ERegionGabarite(150.0f, 34.0f),
+			_region_gabarite,
 			_parent_group,
 			nullptr
 		);
-		EDataContainerEntityDataHolder* data = new EDataContainerEntityDataHolder();
+		EDataContainer_DataEntityHolder* data = new EDataContainer_DataEntityHolder();
 		data->stored_data_entity = _data_entity;
 
 		EntityButton::get_last_custom_data(jc_button)->data_container = data;
@@ -581,17 +581,19 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 			=
 			NS_EGraphicCore::load_from_textures_folder
 			("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity));
+		
+		float resize_factor = 0.0f;
 
 		if (item_icon != nullptr)
 		{
-			float resize_factor = 30.0f / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
+			resize_factor = (_region_gabarite->size_y - *_parent_group->border_bottom - *_parent_group->border_up) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
 			resize_factor = min(resize_factor, 1.0f);
 
 			ESpriteLayer* second_button_layer =
 				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 				(item_icon,
-					4.0f,
-					2.0f,
+					*_parent_group->border_bottom,
+					*_parent_group->border_up,
 					3.0f,
 
 					*item_icon->size_x_in_pixels * resize_factor,
@@ -604,11 +606,11 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 			//second_button_layer->make_as_PBR();
 		}
 
-		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area (Entity::get_last_clickable_area(jc_button), EFont::font_list[0], DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area (Entity::get_last_clickable_area(jc_button), _font, DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
 		*jc_text_area->offset_by_gabarite_size_x = 0.0;
 		*jc_text_area->offset_by_text_size_x = 0.0;
 
-		jc_text_area->offset_border[BorderSide::LEFT] = 37.0f;
+		jc_text_area->offset_border[BorderSide::LEFT] = *item_icon->size_x_in_pixels * resize_factor + *_parent_group->border_left + 3.0f;
 
 		jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
 
