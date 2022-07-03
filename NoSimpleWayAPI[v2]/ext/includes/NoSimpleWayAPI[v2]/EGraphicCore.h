@@ -190,6 +190,14 @@ namespace NS_EGraphicCore
 	extern float sun_x;
 	extern float sun_y;
 
+	extern float sun_size;
+	extern float sun_blur;
+	extern float sun_bright;
+	extern float sun_exp;
+
+	extern float time_total;
+	extern float move_multiplier;
+
 	extern float ground_level;
 };
 

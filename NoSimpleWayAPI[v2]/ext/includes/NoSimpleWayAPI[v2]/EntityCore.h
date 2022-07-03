@@ -119,6 +119,8 @@ class EntityButton : public Entity
 public:
 	~EntityButton();
 
+
+	bool force_draw = true;
 	ERegionGabarite* button_gabarite;
 
 	//std::string* autoalign_id = new std::string("");
@@ -128,22 +130,22 @@ public:
 
 	EButtonGroup* parent_button_group;
 
-	bool* fixed_position = new bool(false);
-	bool* update_when_scissored = new bool(false);
+	bool fixed_position			= false;
+	bool update_when_scissored	= false;
 
 
 	std::vector<change_style_action> action_on_change_style_list;
 
-	static void button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style);
-	static EntityButton* create_base_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row);
+	static void				button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style);
+	static EntityButton*	create_base_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row);
 	
-	static EntityButton* create_default_button_with_custom_data
+	static EntityButton*	create_default_button_with_custom_data
 	(
 		ERegionGabarite* _region_gabarite,
 		EButtonGroup* _parent_row
 	);
 	
-	static EntityButton* create_default_clickable_button
+	static EntityButton*	create_default_clickable_button
 	(
 		ERegionGabarite*	_region_gabarite,
 		EButtonGroup*		_parent_group,
@@ -152,7 +154,7 @@ public:
 	);
 
 	
-	static EntityButton* create_item_button
+	static EntityButton*	create_item_button
 	(
 		ERegionGabarite*	_region_gabarite,
 		EButtonGroup*		_parent_group,
@@ -161,7 +163,7 @@ public:
 	);
 
 	
-	static EntityButton* create_wide_item_button
+	static EntityButton*	create_wide_item_button
 	(
 		ERegionGabarite*	_region_gabarite,
 		EButtonGroup*		_parent_group,
@@ -175,6 +177,14 @@ public:
 		ERegionGabarite*	_region_gabarite,
 		EButtonGroup*		_parent_group,
 		std::string _text
+	);
+	
+	static EntityButton* create_default_crosshair_slider
+	(
+		ERegionGabarite*	_region_gabarite,
+		EButtonGroup*		_parent_group,
+		float*				pointer_x,
+		float*				pointer_y
 	);
 
 	bool can_get_access_to_style();

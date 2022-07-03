@@ -233,6 +233,22 @@ public:
 	//EButtonGroup* parent_button_group;
 };
 
+class EDataContainer_CrosshairSlider : public EDataContainer
+{
+public:
+	float min_x				= 0.0f;
+	float max_x				= 1.0f;
+
+	float min_y				= 0.0f;
+	float max_y				= 1.0f;
+
+	float current_value_x	= 0.5f;
+	float current_value_y	= 0.5f;
+
+	float* target_pointer_x	= nullptr;
+	float* target_pointer_y	= nullptr;
+};
+
 enum RegisteredFilterRules
 {
 	FILTER_RULE_OBTAINABLE_GAME_ITEM,
@@ -311,6 +327,9 @@ namespace EDataActionCollection
 	void action_type_text						(ETextArea* _text_area);
 	void action_open_data_entity_filter_group	(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_add_item_to_group_receiver		(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_update_crosshair_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_crosshair_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
 
 }
 

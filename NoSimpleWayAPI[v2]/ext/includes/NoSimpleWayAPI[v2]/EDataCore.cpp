@@ -456,39 +456,53 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 	EDataContainerRadialButton* data_container = (EDataContainerRadialButton*)_custom_data->data_container;
 	void* d_pointer = data_container->value_pointer;
 
-	ESprite* radial_sprite = _custom_data->get_sprite_by_id(0, 0, 0, 0);
-	ESprite* dot_sprite		= _custom_data->get_sprite_by_id(0, 0, 1, 0);
+
 	
 	//if (EClickableArea::active_clickable_region != nullptr)
 	//{*EClickableArea::active_clickable_region->region_gabarite->size_x += 10.0f * _d;}
 
 
-	float size = ((EntityButton*)_entity)->button_gabarite->size_y;
-	float value = 0.0f;
-	float shift_multiplier = 1.0f;
-	float direction_x = 1.0f;
 
-	if (EInputCore::MOUSE_SPEED_X < 0.0f) { direction_x = -1.0f; }
+
+
 
 	if
-	(
-		(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-		||
-		(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
-	)
-	{shift_multiplier = 0.1f;}
-
-	if
-	(
-		(d_pointer != nullptr)
-		&&
-		(EInputCore::MOUSE_BUTTON_LEFT)
-		&&
 		(
-			(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
+			(d_pointer != nullptr)
+			&&//button pressed or first draw
+			(
+				(((EntityButton*)_entity)->force_draw)
+				||
+				(
+					(EInputCore::MOUSE_BUTTON_LEFT)
+					&&
+					(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
+				)
+			)
 		)
-	)
 	{
+		float size = ((EntityButton*)_entity)->button_gabarite->size_y;
+		float value = 0.0f;
+		float shift_multiplier = 1.0f;
+		float direction_x = 1.0f;
+
+		ESprite* radial_sprite = _custom_data->get_sprite_by_id(0, 0, 0, 0);
+		ESprite* dot_sprite = _custom_data->get_sprite_by_id(0, 0, 1, 0);
+
+		if (EInputCore::MOUSE_SPEED_X < 0.0f) { direction_x = -1.0f; }
+
+		if
+		(
+			(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+			||
+			(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
+		)
+		{
+			shift_multiplier = 0.1f;
+		}
+
+		((EntityButton*)_entity)->force_draw = false;
+
 		if (*data_container->stored_type == StoredPointerType::STORED_TYPE_FLOAT)
 		{
 			//if (EInputCore::MOUSE_POSITION_X <= *radial_sprite->world_position_x + size / 2.0f)
@@ -721,6 +735,82 @@ void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, E
 	receiver->button_list.push_back(jc_button);
 	//receiver->button_list.clear();
 	EButtonGroup::refresh_button_group(receiver);
+}
+
+void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if
+	(
+		(((EntityButton*)_entity)->force_draw)
+		||
+		(
+			(EInputCore::MOUSE_BUTTON_LEFT)
+			&&
+			(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
+		)
+	)
+	{
+		((EntityButton*)_entity)->force_draw = false;
+
+		ERegionGabarite* gab = _custom_data->clickable_area_list[0]->region_gabarite;
+		EDataContainer_CrosshairSlider* data = static_cast<EDataContainer_CrosshairSlider*>(_custom_data->data_container);
+
+		float value = (EInputCore::MOUSE_POSITION_X - gab->world_position_x) / gab->size_x;
+		value = max(value, 0.0f);
+		value = min(value, 1.0f);
+
+		data->current_value_x = value;
+		*data->target_pointer_x = value * data->max_x;
+
+
+
+		value = (EInputCore::MOUSE_POSITION_Y - gab->world_position_y) / gab->size_y;
+		value = max(value, 0.0f);
+		value = min(value, 1.0f);
+		*data->target_pointer_y = value * data->max_y;
+
+		static_cast<EDataContainer_CrosshairSlider*>(_custom_data->data_container)->current_value_y = value;
+
+	}
+
+}
+
+void EDataActionCollection::action_draw_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 1.00f);
+
+	//|
+	ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		((EntityButton*)_entity)->button_gabarite->world_position_x + ((EntityButton*)_entity)->button_gabarite->size_x * ((EDataContainer_CrosshairSlider*)_custom_data->data_container)->current_value_x,
+		((EntityButton*)_entity)->button_gabarite->world_position_y,
+
+		1.0f,
+		((EntityButton*)_entity)->button_gabarite->size_y,
+
+		NS_DefaultGabarites::texture_gabarite_white_pixel
+	);
+
+
+	//___
+	ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		((EntityButton*)_entity)->button_gabarite->world_position_x,
+		((EntityButton*)_entity)->button_gabarite->world_position_y + ((EntityButton*)_entity)->button_gabarite->size_y * ((EDataContainer_CrosshairSlider*)_custom_data->data_container)->current_value_y,
+
+		((EntityButton*)_entity)->button_gabarite->size_x,
+		1.0f,
+
+		NS_DefaultGabarites::texture_gabarite_white_pixel
+	);
 }
 
 //void EDataActionCollection::action_type_text(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1547,15 +1637,17 @@ void ECustomData::draw()//(if (but->description_data != nullptr) { but->descript
 	{
 		
 		//if (_second_pass) { EInputCore::logger_simple_info("???"); }
-		for (data_action_pointer dap : actions_on_draw)
-		if (dap != nullptr)
-		{
-			dap(parent_entity, this, 0.1f);
-		}
+
 
 		for (EClickableArea* clickable_area : clickable_area_list)
 		if (clickable_area != nullptr)
 		{clickable_area->draw();}
+
+		for (data_action_pointer dap : actions_on_draw)
+		if (dap != nullptr)
+		{
+				dap(parent_entity, this, 0.1f);
+		}
 	}
 }
 

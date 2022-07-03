@@ -134,7 +134,7 @@ int main()
 		NS_EGraphicCore::delta_time = (time - NS_EGraphicCore::saved_time_for_delta) / 1000.0;
 		NS_EGraphicCore::saved_time_for_delta = time;
 
-		
+		NS_EGraphicCore::time_total += NS_EGraphicCore::delta_time;
 
 		//glClearColor(0.4f, 0.5f, 0.6f, 1.0f);
 		glClearColor(0.025f, 0.0375f, 0.05f, 1.0f);

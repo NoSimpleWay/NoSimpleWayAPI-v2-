@@ -29,6 +29,12 @@ uniform float sun_position_x = 0.5f;
 uniform float sun_position_y = 0.55f;
 
 uniform float ground_level = 0.5f;
+uniform float sun_size = 0.075f;
+uniform float sun_blur = 0.075f;
+uniform float sun_bright = 0.075f;
+uniform float sun_exp = 2.0f;
+uniform float time = 0.0f;
+uniform float move_multiplier = 1.0f;
 
 uniform float normal_map_multiplier = 1.0f;
 uniform float gloss_map_multiplier = 1.0f;
@@ -109,7 +115,7 @@ void main()
 	vec2
 	(
 		//base offset		screen position offset					//normal offset
-		reflect_pos_x,
+		reflect_pos_x  + time / 50.0f * move_multiplier,
 		
 		
 		reflect_pos_y
@@ -136,11 +142,13 @@ void main()
 	dist_y = (reflect_pos_y - sun_position_y);
 	dist_x /= (1080.0f / 1920.0f);
 	
-	dist_total = length(vec2(dist_x, dist_y)) * (0.0f + 3.0f);
-	dist_total /= 1.0f + (c_rgba.a) * 0.333f;
+	dist_total = length(vec2(dist_x, dist_y)) - sun_size / 10.0f;
+	//dist_total = pow(dist_total, 2.0);
+	dist_total /= 1.0f + (c_rgba.a) * 1.000f;
 	//dist_total = 1.0f - dist_total;
-	dist_total = clamp(1.0f - (dist_total - 0.075f )* (1.0f + gloss_power * 10.0), 0.0f, 1.0f);
-	
+	dist_total = clamp(1.0f  - (dist_total * sun_blur * 1000.0f) * (0.005f + gloss_power), 0.0f, 1.0f);
+	//dist_total*=dist_total;
+	dist_total = pow (dist_total, sun_exp);
 	sun_light = (sun_light_gloss * gloss_power	+	sun_light_matte * (1.0f - gloss_power))	* dist_total * (1.0f - c_rgba.a);
 	sky_light = (sky_light_gloss * gloss_power	+	sky_light_matte * (1.0f - gloss_power));
 	//sky_light += texture(SD_array[4], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)).a;
@@ -161,7 +169,7 @@ void main()
 		+
 		sky_light * (1.0f - gloss_result)
 		+
-		sun_light * 2.0f * gloss_result
+		sun_light * sun_bright * gloss_result
 	)
 	*
 	ourColor.rgb;

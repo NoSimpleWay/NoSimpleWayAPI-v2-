@@ -577,10 +577,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 		//int selected_data_entity = _data_entity;
 
-		ETextureGabarite* item_icon
-			=
-			NS_EGraphicCore::load_from_textures_folder
-			("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity));
+		ETextureGabarite* item_icon = NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity));
 		
 		float resize_factor = 0.0f;
 
@@ -688,6 +685,69 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 	return jc_button;
 }
 
+EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, float* _pointer_x, float* _pointer_y)
+{
+	EntityButton* jc_button = create_default_button_with_custom_data(_region_gabarite, _parent_group);
+
+	EClickableArea* jc_clickable_area = EClickableArea::create_default_clickable_region
+	(
+		_region_gabarite,
+		jc_button,
+		EntityButton::get_last_custom_data(jc_button)
+	);
+
+
+
+	jc_clickable_area->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
+
+	ECustomData* last_data = Entity::get_last_custom_data(jc_button);
+	//update
+	last_data->actions_on_update.push_back(&EDataActionCollection::action_update_crosshair_slider);
+
+
+	//draw
+	last_data->actions_on_draw.push_back(&EDataActionCollection::action_draw_crosshair_slider);
+	//last_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
+	
+
+	last_data->clickable_area_list.push_back(jc_clickable_area);
+
+
+
+	//create data container
+	EDataContainer_CrosshairSlider* jc_data_container = new EDataContainer_CrosshairSlider();
+	jc_data_container->target_pointer_x = _pointer_x;
+	jc_data_container->target_pointer_y = _pointer_y;
+	last_data->data_container = jc_data_container;
+
+	ESpriteLayer* jc_sprite_layer = ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+	(
+		NS_EGraphicCore::load_from_textures_folder("skydome"),
+
+		0.0f,
+		0.0f,
+		0.0f,
+
+		_region_gabarite->size_x,
+		_region_gabarite->size_y,
+		0.0f
+	);
+
+	jc_clickable_area->sprite_layer_list.push_back(jc_sprite_layer);
+
+	//ETextArea* jc_text_area = ETextArea::create_centered_to_right_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "1.0");
+	//jc_text_area->offset_border[BorderSide::RIGHT] = 6.0f;
+	//*jc_text_area->can_be_edited = false;
+
+	//jc_text_area->change_text("123\\n456");
+	//*jc_text_area->stored_text = "123\\n456";
+	//jc_text_area->generate_rows();
+	//jc_text_area->generate_text();
+
+	//Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+	return jc_button;
+}
+
 bool EntityButton::can_get_access_to_style()
 {
 	return false;
@@ -786,8 +846,8 @@ EntityButton::~EntityButton()
 	//delete autoalight_offset_x_mathed_id;
 	//delete autoalight_offset_x_not_mathed_id;
 
-	delete fixed_position;
-	delete update_when_scissored;
+	//delete fixed_position;
+	//delete update_when_scissored;
 
 	action_on_change_style_list.clear();
 	action_on_change_style_list.shrink_to_fit();

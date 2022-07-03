@@ -180,7 +180,7 @@ void EButtonGroup::update(float _d)
 			for (EntityButton* but : button_list)
 			if
 			(
-				(*but->update_when_scissored)
+				(but->update_when_scissored)
 				||
 				(
 					(but->button_gabarite->world_position_y <= *higher_culling_line + *border_bottom)
@@ -1009,7 +1009,7 @@ void EButtonGroup::realign_all_buttons()
 	if
 	(
 		(
-			(!*but->fixed_position)
+			(!but->fixed_position)
 			||
 			(false)
 		)
@@ -1040,7 +1040,7 @@ void EButtonGroup::realign_all_buttons()
 			but->offset_y = *but->parent_button_group->border_bottom + 2.0f;
 		}
 
-		if ((*but->fixed_position) && (true))
+		if ((but->fixed_position) && (true))
 		{
 			but->world_position_x = but->parent_button_group->region_gabarite->world_position_x + but->offset_x;
 			but->world_position_y = but->parent_button_group->region_gabarite->world_position_y + but->offset_y;
@@ -1226,8 +1226,8 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	but->custom_data_list.push_back(custom_data);
 	but->button_gabarite = button_gabarite;
 	but->parent_button_group = _button_group;
-	*but->fixed_position = true;
-	*but->update_when_scissored = true;
+	but->fixed_position = true;
+	but->update_when_scissored = true;
 
 	custom_data->data_container = data_container;
 	custom_data->clickable_area_list.push_back(cl_region);
