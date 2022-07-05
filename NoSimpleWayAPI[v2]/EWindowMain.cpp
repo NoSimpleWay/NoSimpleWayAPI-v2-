@@ -1073,7 +1073,7 @@ EWindowMain::EWindowMain()
 
 
 	//skill gems
-	if (true)
+	if (false)
 	{
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(820.0f, 0.0f, 0.0f, 512.0f, 800.0f), EGUIStyle::active_style);
