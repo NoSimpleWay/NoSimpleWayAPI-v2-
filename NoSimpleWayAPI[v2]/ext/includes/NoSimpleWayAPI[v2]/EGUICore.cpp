@@ -12,6 +12,8 @@ EButtonGroup* EButtonGroup::focused_button_group = nullptr;
 EButtonGroup* EButtonGroup::focused_button_group_with_slider = nullptr;
 EButtonGroup* EButtonGroup::data_entity_filter = nullptr;
 
+constexpr float BUTTON_GROUP_Y_DISTANCE = 3.0f;
+
 void EWindow::update_default(float _d)
 {
 	
@@ -406,6 +408,12 @@ void EButtonGroup::draw()
 		if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
 		{
 			for (EButtonGroup* group : group_list)
+			if
+			(
+				(EButtonGroup::focused_button_group == group)
+				||
+				(EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL))
+			)
 			{
 				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_RED);
 				if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
@@ -420,6 +428,8 @@ void EButtonGroup::draw()
 					1.0f,
 					NS_DefaultGabarites::texture_gabarite_white_pixel
 				);
+
+				//EInputCore::logger_param("size y", group->region_gabarite->size_y);
 				//batcher_for_default_draw->draw_call();
 			}
 		}
@@ -508,12 +518,12 @@ void EButtonGroup::align_groups()
 				if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 				{
 					group->region_gabarite->offset_x = *border_left + 0.0f;
-					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + 10.0f; 
+					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + BUTTON_GROUP_Y_DISTANCE;
 				}
 				else
 				if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 				{
-					group->region_gabarite->offset_x = prev_group->region_gabarite->offset_x + prev_group->region_gabarite->size_x + 1.0f;
+					group->region_gabarite->offset_x = prev_group->region_gabarite->offset_x + prev_group->region_gabarite->size_x + 0.0f;
 					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y;
 				}
 			}
@@ -522,7 +532,8 @@ void EButtonGroup::align_groups()
 				//if (*group->have_bg)
 				//{group->region_gabarite->offset_x = *border_left + 3.0f;}
 				//else
-				{group->region_gabarite->offset_x = *border_left;}
+				group->region_gabarite->offset_x = *border_left;
+				group->region_gabarite->offset_y = *border_bottom;
 			}
 
 			
@@ -864,16 +875,19 @@ void EButtonGroup::group_stretch_y()
 	if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 	{
 
-		target_size = region_gabarite->size_y - *border_bottom - *border_up - (group_list.size() - 1) * 10.0f - shrink_size;
+		target_size = max(region_gabarite->size_y, min_size_y) - *border_bottom - *border_up - (group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE - shrink_size - 1.0;
 
 		for (EButtonGroup* group : group_list)
 		{
+			group->region_gabarite->size_y = max(group->region_gabarite->size_y, group->min_size_y);
+
 			if (*group->stretch_y_by_parent_size)
 			{
 				dynamic_elements_count++;
 			}
 			else
 			{
+
 				target_size					-= group->region_gabarite->size_y;
 				constant_element_sizes_y	+= group->region_gabarite->size_y;
 			}
@@ -882,7 +896,8 @@ void EButtonGroup::group_stretch_y()
 
 	if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 	{
-		target_size = region_gabarite->size_y - *border_bottom - *border_up - shrink_size;
+
+		target_size = region_gabarite->size_y - *border_bottom - *border_up - shrink_size - 0.0f;
 		dynamic_elements_count = 1;
 	}
 
@@ -891,11 +906,16 @@ void EButtonGroup::group_stretch_y()
 	//final_size = 100.0f;
 	for (EButtonGroup* group : group_list)
 	{
-		if ((*group->stretch_y_by_parent_size) && (group->region_gabarite->size_y != final_size))
+		if (*group->stretch_y_by_parent_size)
 		{
-			group->region_gabarite->size_y = round(final_size);
-			*group->need_redraw = true;
+			group->region_gabarite->size_y = round(max(final_size, group->min_size_y));
+			//group->region_gabarite->size_y = round(max(final_size, 0.0f));
+			//group->region_gabarite->size_y = round(final_size);
 		}
+
+		//group->region_gabarite->size_y = round(max(group->region_gabarite->size_y, min_size_y));
+
+		*group->need_redraw = true;
 	}
 
 	for (EButtonGroup* group : group_list) { group->group_stretch_y(); }
@@ -911,19 +931,19 @@ void EButtonGroup::check_slider()
 	float child_elements_height_summ = 0.0f;
 	float max_y = 0.0f;
 	//stretchable group cannot have slider
-	if (*can_be_stretched_by_child)
-	{
-		for (EButtonGroup* group : group_list)
-		{*group->parent_have_slider = false;}//parent have no slider
-	}
-	else//potentially, can have slider
+	//if (*can_be_stretched_by_child)
+	//{
+	//	for (EButtonGroup* group : group_list)
+	//	{*group->parent_have_slider = false;}//parent have no slider
+	//}
+	//else//potentially, can have slider
 	{
 		if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 		{
-			child_elements_height_summ = ((float)group_list.size() - 1.0f) * 3.0f;
+			child_elements_height_summ = ((float)group_list.size() - 1.0f) * BUTTON_GROUP_Y_DISTANCE;
 
 			for (EButtonGroup* group : group_list)
-			if (!*group->stretch_y_by_parent_size)//constant size
+			//if (!*group->stretch_y_by_parent_size)//constant size
 			{
 				child_elements_height_summ += group->region_gabarite->size_y;//*szOID_ROOT_PROGRAM_AUTO_UPDATE_CA_REVOCATION
 			}
@@ -933,7 +953,7 @@ void EButtonGroup::check_slider()
 		{
 
 			for (EButtonGroup* group : group_list)
-			if (!*group->stretch_y_by_parent_size)//constant size
+			//if (!*group->stretch_y_by_parent_size)//constant size
 			{
 				max_y = max(max_y, group->region_gabarite->size_y);//*szOID_ROOT_PROGRAM_AUTO_UPDATE_CA_REVOCATION
 			}
@@ -943,7 +963,7 @@ void EButtonGroup::check_slider()
 
 		
 
-		if (child_elements_height_summ > region_gabarite->size_y - 3.0f - *border_bottom - *border_up)
+		if (child_elements_height_summ - 1.0f > region_gabarite->size_y - *border_bottom - *border_up)
 		{
 			if (slider != nullptr)
 			{
@@ -979,10 +999,12 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 {
 	
 	_group->substretch_groups_y();
-	_group->check_slider();
+	//_group->check_slider();
 
 	_group->group_stretch_y();
+	_group->check_slider();
 	_group->group_stretch_x();
+
 
 	_group->align_groups();
 	EButtonGroup::calculate_culling_lines(_group);
@@ -1272,6 +1294,7 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 	//_group->region_gabarite->phantom_translate_y = 0.0f;
 	//_group->region_gabarite->phantom_translate_z = 0.0f;
 
+	*_group->need_redraw = true;
 	_group->phantom_translate_if_need();
 
 	if (*_group->can_change_style) {_group->selected_style = _style;}

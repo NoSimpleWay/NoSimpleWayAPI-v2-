@@ -293,13 +293,13 @@ EWindowMain::EWindowMain()
 				//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
 
 				*massive_game_item->stretch_x_by_parent_size = true;
-				*massive_game_item->stretch_y_by_parent_size = false;
+				*massive_game_item->stretch_y_by_parent_size = true;
 
 				////////////////////////
 				//small subrow for additional buttons
 
-					//side group for buttons
-				EButtonGroup* group_side = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(134.0f, 160.0f - 14.0f), EGUIStyle::active_style);
+				//side group for buttons
+				EButtonGroup* group_side = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(134.0f, 80.0f), EGUIStyle::active_style);
 				massive_game_item->add_group(group_side);
 				//row_game_item->add_group(group_side);
 				*group_side->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
@@ -349,9 +349,7 @@ EWindowMain::EWindowMain()
 
 				////////////////////////
 				//big subrow for items
-				EButtonGroup*
-					group_for_items = EButtonGroup::create_button_group_without_bg
-					(new ERegionGabarite(600.0f, 130.0f), EGUIStyle::active_style);
+				EButtonGroup* group_for_items = EButtonGroup::create_button_group_without_bg (new ERegionGabarite(600.0f, 80.0f), EGUIStyle::active_style);
 
 				*group_for_items->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 				//*group_for_items->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
@@ -368,8 +366,11 @@ EWindowMain::EWindowMain()
 				std::vector <EDataEntity*> suitable_data_entity;
 				//regular items
 				//button item
+				massive_game_item->min_size_y = 20.0f;
 				if (r == 0)
 				{
+					massive_game_item->min_size_y = 120.0f;
+
 					int button_count = rand() % 3 + 1;
 					button_count *= rand() % 3 + 1;
 					button_count *= rand() % 3 + 1;
@@ -405,6 +406,7 @@ EWindowMain::EWindowMain()
 					}
 				}
 
+				//base class
 				if (r == 1)
 				{
 					int button_count = rand() % 3 + 1;
@@ -440,6 +442,7 @@ EWindowMain::EWindowMain()
 					}
 				}
 
+				//influences
 				if (r == 2)
 				{
 	

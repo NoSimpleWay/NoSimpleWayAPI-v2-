@@ -184,6 +184,8 @@ public:
 	void draw();
 	void draw_second_pass();
 
+	float min_size_y = 10.0f;
+
 		
 		void substretch_groups_y();
 		void check_slider();

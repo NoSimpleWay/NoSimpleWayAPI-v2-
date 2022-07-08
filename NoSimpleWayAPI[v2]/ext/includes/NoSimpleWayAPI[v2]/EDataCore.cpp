@@ -665,6 +665,7 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 
 			//*data_container->pointer_to_target_group_send_item->is_active = false;
 
+			//data_container->pointer_to_group_with_data_entities->realign_all_buttons();
 			EButtonGroup::refresh_button_group(data_container->pointer_to_group_with_data_entities);
 			//data_container->pointer_to_target_group_send_item->button_list.clear();
 
