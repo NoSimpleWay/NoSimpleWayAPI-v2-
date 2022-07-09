@@ -502,7 +502,70 @@ EWindowMain::EWindowMain()
 
 	//TODO: change pointer to non-pointer in font glyph
 
-	
+	//skill gems
+	if (true)
+	{
+		main_button_group = EButtonGroup::create_root_button_group
+		(new ERegionGabarite(10.0f, 10.0f, 0.0f, 512.0f, 800.0f), EGUIStyle::active_style);
+		main_button_group->root_group = main_button_group;
+		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+
+		jc_button_group = main_button_group->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(256.0f, 150.0f), EGUIStyle::active_style));
+		*jc_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+		*jc_button_group->stretch_x_by_parent_size = true;
+		*jc_button_group->stretch_y_by_parent_size = true;
+
+		std::vector <EDataEntity*> suitable_data_entity_list;
+		for (EDataEntity* de : EDataEntity::data_entity_list)
+		{
+			if
+				(
+					EStringUtils::to_lower
+					(
+						DataEntityUtils::get_tag_value_by_name(0, "data type", de)
+					)
+					==
+					"gem"
+					)
+			{
+				suitable_data_entity_list.push_back(de);
+			}
+		}
+
+		for (int i = 0; i < 6; i++)
+		{
+			jc_button = EntityButton::create_wide_item_button
+			(
+				new ERegionGabarite(480.0f, 64.0f),
+				jc_button_group,
+				suitable_data_entity_list[rand() % suitable_data_entity_list.size()],
+				EFont::font_list[1]
+			);
+			jc_button_group->button_list.push_back(jc_button);
+			//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_open_data_entity_filter_group);
+
+
+			EDataContainerStoreTargetGroup* data_container_entity_filter = new EDataContainerStoreTargetGroup();
+			data_container_entity_filter->target_group = EButtonGroup::data_entity_filter;
+			data_container_entity_filter->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_SKILL_GEMS];
+
+			ECustomData* custom_data_for_gem_button = new ECustomData();
+			custom_data_for_gem_button->data_container = data_container_entity_filter;
+
+			EClickableArea* clickable_area_for_gem_button = EClickableArea::create_default_clickable_region(jc_button->button_gabarite, jc_button, custom_data_for_gem_button);
+			clickable_area_for_gem_button->actions_on_click_list.push_back(&EDataActionCollection::action_open_data_entity_filter_group);
+			custom_data_for_gem_button->clickable_area_list.push_back(clickable_area_for_gem_button);
+
+
+			jc_button->custom_data_list.push_back(custom_data_for_gem_button);
+		}
+
+		group_list.push_back(main_button_group);
+		EButtonGroup::refresh_button_group(main_button_group);
+
+
+
+	}
 
 	//STYLE LIST BUTTON GROUP
 	if (true)
@@ -1075,70 +1138,7 @@ EWindowMain::EWindowMain()
 
 
 
-	//skill gems
-	if (false)
-	{
-		main_button_group = EButtonGroup::create_root_button_group
-		(new ERegionGabarite(820.0f, 0.0f, 0.0f, 512.0f, 800.0f), EGUIStyle::active_style);
-		main_button_group->root_group = main_button_group;
-		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
-		jc_button_group = main_button_group->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(256.0f, 150.0f), EGUIStyle::active_style));
-		*jc_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-		*jc_button_group->stretch_x_by_parent_size = true;
-		*jc_button_group->stretch_y_by_parent_size = true;
-
-		std::vector <EDataEntity*> suitable_data_entity_list;
-		for (EDataEntity* de : EDataEntity::data_entity_list)
-		{
-			if
-			(
-				EStringUtils::to_lower
-				(
-					DataEntityUtils::get_tag_value_by_name	(0, "data type", de)
-				)
-				==
-				"gem"
-			)
-			{
-				suitable_data_entity_list.push_back(de);
-			}
-		}
-
-		for (int i = 0; i < 6; i++)
-		{
-			jc_button = EntityButton::create_wide_item_button
-			(
-				new ERegionGabarite(480.0f, 64.0f),
-				jc_button_group,
-				suitable_data_entity_list[rand() % suitable_data_entity_list.size()],
-				EFont::font_list[1]
-			);
-			jc_button_group->button_list.push_back(jc_button);
-			//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_open_data_entity_filter_group);
-
-		
-			EDataContainerStoreTargetGroup* data_container_entity_filter = new EDataContainerStoreTargetGroup();
-				data_container_entity_filter->target_group = EButtonGroup::data_entity_filter;
-				data_container_entity_filter->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_SKILL_GEMS];
-
-			ECustomData* custom_data_for_gem_button = new ECustomData();
-				custom_data_for_gem_button->data_container = data_container_entity_filter;
-		
-			EClickableArea* clickable_area_for_gem_button = EClickableArea::create_default_clickable_region(jc_button->button_gabarite, jc_button, custom_data_for_gem_button);
-				clickable_area_for_gem_button->actions_on_click_list.push_back(&EDataActionCollection::action_open_data_entity_filter_group);
-				custom_data_for_gem_button->clickable_area_list.push_back(clickable_area_for_gem_button);
-			
-
-			jc_button->custom_data_list.push_back(custom_data_for_gem_button);
-		}
-
-		group_list.push_back(main_button_group);
-		EButtonGroup::refresh_button_group(main_button_group);
-
-
-
-	}
 }
 
 EWindowMain::~EWindowMain()
