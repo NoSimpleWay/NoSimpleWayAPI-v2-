@@ -1378,7 +1378,7 @@ void NS_EGraphicCore::create_styles()
 
 			EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
 			EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 7, 3);
+			EBrickStyle::set_subdivisions(jc_brick, 2, 2);
 
 			//***********************************************************
 		//darken gutton group
@@ -1386,9 +1386,9 @@ void NS_EGraphicCore::create_styles()
 			just_created_style->button_group_darken = jc_brick;
 			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 3, 3);
+			EBrickStyle::set_border_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+			EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+			EBrickStyle::set_subdivisions(jc_brick, 2, 2);
 
 			//***********************************************************
 			//slider bg
