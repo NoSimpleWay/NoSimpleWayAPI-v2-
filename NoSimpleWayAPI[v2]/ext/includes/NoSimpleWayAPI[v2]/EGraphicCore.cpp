@@ -684,8 +684,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
 		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
 
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * 1.0f);
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * 1.0f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * (1.0f / i + 1.0f));
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * (1.0f / i + 1.0f));
 
 		NS_EGraphicCore::skydome_batcher->set_transform_screen_size (1.0f,1.0f);
 		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
@@ -795,6 +795,16 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
 		//***********************************************************
+		//slider head round
+		jc_brick = new EBrickStyle("Slider_head_round");
+		just_created_style->round_slider = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
 		//button background
 		jc_brick = new EBrickStyle("Button_bg");
 		just_created_style->button_bg = jc_brick;
@@ -840,8 +850,8 @@ void NS_EGraphicCore::create_styles()
 		just_created_style->slider_bg = jc_brick;
 		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
-		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
+		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
+		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
 		//***********************************************************
@@ -858,6 +868,16 @@ void NS_EGraphicCore::create_styles()
 		//slider head active
 			jc_brick = new EBrickStyle("Slider_head_active");
 		just_created_style->slider_active = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head round
+		jc_brick = new EBrickStyle("Slider_head_round");
+		just_created_style->round_slider = jc_brick;
 		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
 		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);

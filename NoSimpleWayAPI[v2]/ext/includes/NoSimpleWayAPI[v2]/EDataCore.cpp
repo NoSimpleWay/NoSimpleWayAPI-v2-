@@ -371,7 +371,7 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 		(((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
 	)
 	{
-		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.35f);
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.15f);
 		ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
 
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
@@ -723,33 +723,33 @@ void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, E
 	EButtonGroup* parent_group = ((EntityButton*)_entity)->parent_button_group;
 	EButtonGroup* root_group = parent_group->root_group;
 	EDataContainer_ButtonGroupForDataEntities* data = (EDataContainer_ButtonGroupForDataEntities*)root_group->data_container;
-	EButtonGroup* receiver = data->pointer_to_group_item_receiver;
-	EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
+EButtonGroup* receiver = data->pointer_to_group_item_receiver;
+EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
 
-	EntityButton* jc_button = EntityButton::create_item_button
-	(
-		new ERegionGabarite(45.0f, 45.0f),
-		receiver,
-		data_entity_holder->stored_data_entity
-	);
+EntityButton* jc_button = EntityButton::create_item_button
+(
+	new ERegionGabarite(45.0f, 45.0f),
+	receiver,
+	data_entity_holder->stored_data_entity
+);
 
-	receiver->button_list.push_back(jc_button);
-	//receiver->button_list.clear();
-	EButtonGroup::refresh_button_group(receiver);
+receiver->button_list.push_back(jc_button);
+//receiver->button_list.clear();
+EButtonGroup::refresh_button_group(receiver);
 }
 
 void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	if
-	(
-		(((EntityButton*)_entity)->force_draw)
-		||
 		(
-			(EInputCore::MOUSE_BUTTON_LEFT)
-			&&
-			(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
-		)
-	)
+			(((EntityButton*)_entity)->force_draw)
+			||
+			(
+				(EInputCore::MOUSE_BUTTON_LEFT)
+				&&
+				(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
+				)
+			)
 	{
 		((EntityButton*)_entity)->force_draw = false;
 
@@ -812,6 +812,42 @@ void EDataActionCollection::action_draw_crosshair_slider(Entity* _entity, ECusto
 
 		NS_DefaultGabarites::texture_gabarite_white_pixel
 	);
+}
+
+void EDataActionCollection::action_update_vertical_named_slider(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EDataContainer_VerticalNamedSlider* data = static_cast<EDataContainer_VerticalNamedSlider*>(_custom_data->data_container);
+	if
+	(
+		(EInputCore::MOUSE_BUTTON_LEFT)
+		&&
+		(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
+	)
+	{
+		float current_x = *data->pointer_to_head->world_position_x;
+		
+		float target_x = EInputCore::MOUSE_POSITION_X;
+	
+		if
+		(
+			(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+			||
+			(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
+		)
+		{target_x = *data->pointer_to_head->world_position_x + EInputCore::MOUSE_SPEED_X * 0.1f;}
+
+		target_x = max(target_x, *data->pointer_to_bg->world_position_x);
+		target_x = min(target_x, *data->pointer_to_bg->world_position_x + data->operable_area_size_x);
+
+		float d_x = target_x - current_x;
+
+		data->pointer_to_head->translate_sprite_layer(d_x, 0.0f, 0.0f, true);
+		
+
+		data->current_value = (*data->pointer_to_head->world_position_x - *data->pointer_to_bg->world_position_x) / data->operable_area_size_x;
+		//EInputCore::logger_param("Value", data->current_value);
+	}
+
 }
 
 //void EDataActionCollection::action_type_text(Entity* _entity, ECustomData* _custom_data, float _d)

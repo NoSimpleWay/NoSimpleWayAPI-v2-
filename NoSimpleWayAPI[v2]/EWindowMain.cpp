@@ -503,7 +503,7 @@ EWindowMain::EWindowMain()
 	//TODO: change pointer to non-pointer in font glyph
 
 	//skill gems
-	if (true)
+	if (false)
 	{
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(10.0f, 10.0f, 0.0f, 512.0f, 800.0f), EGUIStyle::active_style);
@@ -520,13 +520,10 @@ EWindowMain::EWindowMain()
 		{
 			if
 				(
-					EStringUtils::to_lower
-					(
-						DataEntityUtils::get_tag_value_by_name(0, "data type", de)
-					)
+					EStringUtils::to_lower(DataEntityUtils::get_tag_value_by_name(0, "data type", de))
 					==
 					"gem"
-					)
+				)
 			{
 				suitable_data_entity_list.push_back(de);
 			}
@@ -963,7 +960,7 @@ EWindowMain::EWindowMain()
 		*jc_button_group->stretch_x_by_parent_size = true;
 		*jc_button_group->stretch_y_by_parent_size = false;
 		
-		// // // // // // //
+		// // // // // // // // // // // // //// // // // // // //
 		jc_button = EntityButton::create_default_radial_button
 		(
 			new ERegionGabarite(170.0f, 38.0f),
@@ -972,9 +969,9 @@ EWindowMain::EWindowMain()
 		);
 		((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::global_gloss_multiplier;
 		jc_button_group->button_list.push_back(jc_button);
-		// // // // // // //
+		// // // // // // //// // // // // // //// // // // // // //
 
-		// // // // // // //
+		// // // // // // //// // // // // // //// // // // // // //
 		jc_button = EntityButton::create_default_radial_button
 		(
 			new ERegionGabarite(170.0f, 38.0f),
@@ -983,9 +980,20 @@ EWindowMain::EWindowMain()
 		);
 		((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::global_normal_multiplier;
 		jc_button_group->button_list.push_back(jc_button);
-		// // // // // // //
+		// // // // // // //// // // // // // //// // // // // // //
 
+		// // // // // // //// // // // // // //// // // // // // //
+		jc_button = EntityButton::create_vertical_named_slider
+		(
 
+			new ERegionGabarite(170.0f, 38.0f),
+			jc_button_group,
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			"TEST:"
+		);
+		jc_button_group->button_list.push_back(jc_button);
+		// // // // // // //// // // // // // //// // // // // // //
 
 
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//

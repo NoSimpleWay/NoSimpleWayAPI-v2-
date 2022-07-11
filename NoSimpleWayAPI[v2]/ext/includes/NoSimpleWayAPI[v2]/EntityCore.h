@@ -172,6 +172,16 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 	
+	static EntityButton*	create_vertical_named_slider
+	(
+		ERegionGabarite*	_region_gabarite,
+		EButtonGroup*		_parent_group,
+		EFont*				_font,
+		EGUIStyle*			_style,
+		std::string			_text
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
+	
 	static EntityButton* create_default_radial_button
 	(
 		ERegionGabarite*	_region_gabarite,

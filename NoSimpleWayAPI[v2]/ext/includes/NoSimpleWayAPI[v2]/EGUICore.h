@@ -354,6 +354,8 @@ public:
 	EBrickStyle*	slider_inactive					= nullptr;
 	EBrickStyle*	slider_active					= nullptr;
 
+	EBrickStyle*	round_slider					= nullptr;
+
 	std::string*	folder							= new std::string("lead_and_gold");
 	float			text_color_multiplier[4]		= { 1.0f, 1.0f, 1.0f, 1.0f };
 	

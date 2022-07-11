@@ -293,7 +293,22 @@ public:
 class EDataContainer_DataEntityHolder : public EDataContainer
 {
 public:
-	EDataEntity* stored_data_entity;
+	EDataEntity*	stored_data_entity;
+};
+
+class EDataContainer_VerticalNamedSlider : public EDataContainer
+{
+public:
+	ESpriteLayer*	pointer_to_head;
+	ESpriteLayer*	pointer_to_bg;
+
+	EGUIStyle*		style;
+
+	float			operable_area_size_x;
+	float			current_value;
+	float			max_value;
+
+	float*			pointer_to_value;
 };
 
 class EDataContainerStoreTargetGroup : public EDataContainer
@@ -330,6 +345,8 @@ namespace EDataActionCollection
 
 	void action_update_crosshair_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_draw_crosshair_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
+	
+	void action_update_vertical_named_slider	(Entity* _entity, ECustomData* _custom_data, float _d);
 
 }
 

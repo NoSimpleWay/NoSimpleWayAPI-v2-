@@ -622,6 +622,88 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		return jc_button;
 }
 
+EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, std::string _text)
+{
+	EntityButton* jc_button = EntityButton::create_default_clickable_button
+	(
+		_region_gabarite,
+		_parent_group,
+		nullptr
+	);
+
+	EDataContainer_VerticalNamedSlider* data = new EDataContainer_VerticalNamedSlider();
+	EntityButton::get_last_custom_data(jc_button)->data_container = data;
+	data->style = _style;
+	data->operable_area_size_x = _region_gabarite->size_x - *_style->round_slider->main_texture->size_x_in_pixels;
+
+	EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_update_vertical_named_slider);
+
+	ESpriteLayer* bg_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
+	data->pointer_to_bg = bg_layer;
+
+	NS_ERenderCollection::set_brick_borders_and_subdivisions
+	(
+		*_style->slider_bg->side_size_left,
+		*_style->slider_bg->side_size_right,
+		*_style->slider_bg->side_size_bottom,
+		*_style->slider_bg->side_size_up,
+				 
+		*_style->slider_bg->subdivision_x,
+		*_style->slider_bg->subdivision_y
+	);
+
+	NS_ERenderCollection::temporary_sprites = false;
+
+	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
+	(
+		0.0f,
+		0.0f,
+		0.0f,
+		jc_button->button_gabarite->size_x,
+		15.0f
+	);
+
+	NS_ERenderCollection::generate_brick_texture
+	(
+		ERegionGabarite::temporary_gabarite,
+		bg_layer,
+		_style->slider_bg->main_texture,
+		_style->slider_bg->normal_map_texture,
+		_style->slider_bg->gloss_map_texture
+	);
+
+	jc_button->sprite_layer_list.push_back(bg_layer);
+
+
+	ESpriteLayer* head_layer = ESpriteLayer::create_default_sprite_layer(_style->round_slider->main_texture);
+	data->pointer_to_head = head_layer;
+	jc_button->sprite_layer_list.push_back(head_layer);
+	//delete action on right click
+	//Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
+
+	//_parent_group->button_list.push_back(jc_button);
+
+	//int selected_data_entity = _data_entity;
+
+	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
+	*jc_text_area->offset_by_gabarite_size_x = 0.0;
+	*jc_text_area->offset_by_text_size_x = 0.0;
+
+	*jc_text_area->offset_by_gabarite_size_y = 1.0;
+	*jc_text_area->offset_by_text_size_y = -1.0;
+
+	//jc_text_area->offset_border[BorderSide::LEFT] = *item_icon->size_x_in_pixels * resize_factor + *_parent_group->border_left + 3.0f;
+
+	jc_text_area->change_text(_text);
+
+	*jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+
+
+
+	return jc_button;
+}
+
 EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, std::string _text)
 {
 	EntityButton* jc_button = create_default_button_with_custom_data(_region_gabarite, _parent_group);
