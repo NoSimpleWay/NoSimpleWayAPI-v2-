@@ -72,8 +72,8 @@
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EDataEntity.cpp">
       <Filter>NoSimpleWayAPI[v2]\DataCore</Filter>
     </ClCompile>
-    <ClCompile Include="Helpers.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\Helpers.cpp">
+      <Filter>NoSimpleWayAPI[v2]\UTILS</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -95,9 +95,6 @@
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h">
       <Filter>NoSimpleWayAPI[v2]\GraphicCore</Filter>
     </ClInclude>
-    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EClassLinker.h">
-      <Filter>NoSimpleWayAPI[v2]\UTILS</Filter>
-    </ClInclude>
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataEntity.h">
       <Filter>NoSimpleWayAPI[v2]\DataCore</Filter>
     </ClInclude>
@@ -107,7 +104,10 @@
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.h">
       <Filter>NoSimpleWayAPI[v2]\GUICore</Filter>
     </ClInclude>
-    <ClInclude Include="Helpers.h">
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EClassLinker.h">
+      <Filter>NoSimpleWayAPI[v2]\UTILS</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\Helpers.h">
       <Filter>NoSimpleWayAPI[v2]\UTILS</Filter>
     </ClInclude>
   </ItemGroup>

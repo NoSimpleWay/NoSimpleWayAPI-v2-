@@ -30,6 +30,13 @@
 #endif
 /**/
 
+/**/
+#ifndef	_HELPERS_ALREADY_LINKED_
+#define	_HELPERS_ALREADY_LINKED_
+#include "Helpers.h"
+#endif
+/**/
+
 #include <vector>
 
 /*********/
@@ -182,6 +189,16 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 	
+	static EntityButton*	create_named_color_button
+	(
+		ERegionGabarite*		_region_gabarite,
+		EButtonGroup*			_parent_group,
+		EFont*					_font,
+		EGUIStyle*				_style,
+		std::string				_text,
+		Helper::hsvrgba_color* _color
+	);
+	
 	static EntityButton* create_default_radial_button
 	(
 		ERegionGabarite*	_region_gabarite,
@@ -194,8 +211,11 @@ public:
 		ERegionGabarite*	_region_gabarite,
 		EButtonGroup*		_parent_group,
 		float*				pointer_x,
-		float*				pointer_y
+		float*				pointer_y,
+		std::string			_texture
 	);
+
+
 
 	bool can_get_access_to_style();
 

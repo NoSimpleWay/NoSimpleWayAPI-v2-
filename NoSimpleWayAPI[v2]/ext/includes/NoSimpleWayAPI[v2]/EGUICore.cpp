@@ -46,7 +46,24 @@ void EWindow::GUI_update_default(float _d)
 		for (EntityButton* but : EButtonGroup::focused_button_group->button_list)
 		for (ECustomData* data:but->custom_data_list)
 		for (EClickableArea* c_area:data->clickable_area_list)
-		if ((!EInputCore::MOUSE_BUTTON_LEFT)&&(*c_area->catched_body))
+		if
+		(
+			(!EInputCore::MOUSE_BUTTON_LEFT)
+			&&
+			(*c_area->catched_body)
+			&&
+			(
+				(c_area->parent_entity == nullptr)
+				||
+				(
+					(c_area->parent_entity != nullptr)
+					&&
+					(!c_area->parent_entity->disable_draw)
+					&&
+					(!c_area->parent_entity->disabled)
+				)
+			)
+		)
 		{
 			EClickableArea::active_clickable_region = c_area;
 		}
@@ -205,13 +222,50 @@ void EButtonGroup::update(float _d)
 		phantom_translate_if_need();
 		calculate_culling_lines(this);
 
+		for (group_update_action gua : actions_on_update)
+		{
+			gua(this);
+		}
+
 		for (EButtonGroup* _group : group_list)
 		{
 			_group->update(_d);
 		}
 	}
 
-
+	if
+	(
+		(EInputCore::MOUSE_BUTTON_LEFT)
+		&&
+		(root_group != nullptr)
+		&&
+		(root_group->can_be_moved)
+		&&
+		(
+			(EButtonGroup::focused_button_group == this)
+			//||
+			//(EButtonGroup::focused_button_group == root_group)
+		)
+		&&
+		(EClickableArea::active_clickable_region == nullptr))
+	{
+		root_group->translate(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f, true);
+	}
+	else
+	{
+		if (debug_translation)
+		{
+			if (root_group == nullptr) { EInputCore::logger_simple_error("root group is null!"); }
+			else
+			if (!root_group->can_be_moved) { EInputCore::logger_simple_error("group cannot be moved!"); }
+			else
+			if (EButtonGroup::focused_button_group != this) { EInputCore::logger_simple_error("this group not focused"); }
+			else
+			if
+			(EClickableArea::active_clickable_region != nullptr)
+			{EInputCore::logger_simple_error("focused some clickable region");}
+		}
+	}
 
 }
 
@@ -266,6 +320,7 @@ void EButtonGroup::draw()
 		{
 			background_sprite_layer->transfer_vertex_buffer_to_batcher();
 		}
+
 
 		if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group == this))
 		{
@@ -336,6 +391,9 @@ void EButtonGroup::draw()
 			{
 				but->draw();
 			}
+
+
+
 		NS_EGraphicCore::pbr_batcher->draw_call();//draw pbg bg
 		batcher_for_default_draw->draw_call();//draw text to default batcher
 
@@ -374,7 +432,7 @@ void EButtonGroup::draw()
 			);
 		}
 
-		if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+		if ((EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT)) && (false))
 		{
 			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_CYAN);
 			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
@@ -434,9 +492,22 @@ void EButtonGroup::draw()
 			}
 		}
 
+		
+		
+
 		NS_EGraphicCore::pbr_batcher->draw_call();
 		batcher_for_default_draw->draw_call();
+		NS_EGraphicCore::test_batcher->draw_call();
 
+			glEnable(GL_SCISSOR_TEST);
+			glScissor(region_gabarite->world_position_x, region_gabarite->world_position_y, region_gabarite->size_x, region_gabarite->size_y);
+			for (group_draw_action gda : actions_on_draw)
+			{
+				gda(this);
+			}
+
+		NS_EGraphicCore::pbr_batcher->draw_call();
+		batcher_for_default_draw->draw_call();
 		NS_EGraphicCore::test_batcher->draw_call();
 
 		if (header_button_group != nullptr)
@@ -1638,6 +1709,8 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 		(*_group->can_be_focused)
 		&&
 		(EButtonGroup::catched_by_mouse(_group))
+		&&
+		(!EInputCore::MOUSE_BUTTON_LEFT)
 	)
 	{
 		focused_button_group = _group;
@@ -1753,6 +1826,99 @@ EButtonGroup* EButtonGroup::create_button_group_without_bg(ERegionGabarite* _reg
 	*just_created_button_group->can_be_focused = true;
 
 	return just_created_button_group;
+}
+
+EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, EGUIStyle* _style)
+{
+	EButtonGroup* main_group = create_root_button_group(_region, _style);
+	main_group->root_group = main_group;
+	Helper::hsvrgba_color* HRA_color = new Helper::hsvrgba_color();
+
+
+	*main_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	main_group->actions_on_draw.push_back(&EDataActionCollection::action_draw_color_rectangle_for_group);
+	main_group->actions_on_update.push_back(&EDataActionCollection::action_convert_HSV_to_RGB);
+	EDataContainer_Group_ColorEditor* data = new EDataContainer_Group_ColorEditor();
+	data->target_color = HRA_color;
+		//
+		//data->pointer_to_H		= new float(1.0f);
+		//data->pointer_to_S		= new float(1.0f);
+		//data->pointer_to_V		= new float(1.0f);
+		//data->pointer_to_alpha	= new float(1.0f);
+
+	main_group->data_container = data;
+
+	//**********************************************************************************************************************************************
+	//**********************************************************************************************************************************************
+	EButtonGroup* left_part = main_group->add_group(create_default_button_group(new ERegionGabarite(256.0f, 285.0f), _style));
+	*left_part->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	*left_part->stretch_x_by_parent_size = false;
+	*left_part->stretch_y_by_parent_size = true;
+
+
+	//**********************************************************************************************************************************************
+	EButtonGroup* value_and_alpha_part = left_part->add_group(create_default_button_group(new ERegionGabarite(10.0f, 100.0f), _style));
+	*value_and_alpha_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	*value_and_alpha_part->stretch_x_by_parent_size = true;
+	*value_and_alpha_part->stretch_y_by_parent_size = true;
+
+		// // // // // // //
+		EntityButton* 
+		jc_button = EntityButton::create_vertical_named_slider(new ERegionGabarite(240.0f, 30.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Прозрачность");
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->a;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
+		value_and_alpha_part->button_list.push_back(jc_button);
+		// // // // // // //
+
+		// // // // // // //
+		
+		jc_button = EntityButton::create_vertical_named_slider(new ERegionGabarite(240.0f, 30.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Яркость");
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->v;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
+		value_and_alpha_part->button_list.push_back(jc_button);
+		// // // // // // //
+
+
+
+	//**********************************************************************************************************************************************
+	EButtonGroup* hue_part = left_part->add_group(create_default_button_group(new ERegionGabarite(0.0f, 270.0f), _style));
+	*hue_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	*hue_part->stretch_x_by_parent_size = true;
+	*hue_part->stretch_y_by_parent_size = false;
+
+	// // // // // // //
+	jc_button = EntityButton::create_default_crosshair_slider
+	(
+		new ERegionGabarite(256.0f, 256.0f),
+		hue_part,
+		&HRA_color->h,
+		&HRA_color->s,
+		"hue_saturation"
+	);
+
+	EDataContainer_CrosshairSlider* crosshair_data = (EDataContainer_CrosshairSlider*)EntityButton::get_last_custom_data(jc_button)->data_container;
+	crosshair_data->min_x = 0.0f;
+	crosshair_data->max_x = 360.0f;
+
+	crosshair_data->min_y = 0.0f;
+	crosshair_data->max_y = 1.0f;
+	hue_part->button_list.push_back(jc_button);
+	// // // // // // //
+
+
+	//**********************************************************************************************************************************************
+	//**********************************************************************************************************************************************
+	EButtonGroup* right_part = main_group->add_group(create_default_button_group(new ERegionGabarite(256.0f, 100.0f), _style));
+	//right_part->debug_translation = true;
+	*right_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	*right_part->stretch_x_by_parent_size = true;
+	*right_part->stretch_y_by_parent_size = true;
+
+	data->pointer_to_color_box_group = right_part;
+
+	
+
+	return main_group;
 }
 
 EButtonGroup* EButtonGroup::create_base_button_group(ERegionGabarite* _region, EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg)

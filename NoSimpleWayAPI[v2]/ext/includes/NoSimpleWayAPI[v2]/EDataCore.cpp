@@ -19,6 +19,13 @@
 /**/#include "EDataEntity.h"
 #endif
 
+/**/
+#ifndef	_HELPERS_ALREADY_LINKED_
+#define	_HELPERS_ALREADY_LINKED_
+#include "Helpers.h"
+#endif
+/**/
+
 
 EClickableArea* EClickableArea::active_clickable_region = nullptr;
 
@@ -574,7 +581,7 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 	//)
 	if ((_text_area != nullptr) && (_text_area->get_root_group() != nullptr))
 	{
-		EDataContainer_ButtonGroupForDataEntities* data_container = (EDataContainer_ButtonGroupForDataEntities*)_text_area->get_root_group()->data_container;
+		EDataContainer_Group_DataEntitiesSearch* data_container = (EDataContainer_Group_DataEntitiesSearch*)_text_area->get_root_group()->data_container;
 		
 		if
 		(
@@ -694,7 +701,7 @@ std::vector<EFilterRule*> EFilterRule::registered_filter_rules(RegisteredFilterR
 void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EDataContainerStoreTargetGroup* button_data_container = ((EDataContainerStoreTargetGroup*)_custom_data->data_container);
-	EDataContainer_ButtonGroupForDataEntities* button_group_data_container = (EDataContainer_ButtonGroupForDataEntities*)EButtonGroup::data_entity_filter->data_container;
+	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EButtonGroup::data_entity_filter->data_container;
 
 	*EButtonGroup::data_entity_filter->is_active = true;
 	button_group_data_container->pointer_to_group_item_receiver = button_data_container->target_group;
@@ -722,7 +729,7 @@ void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, E
 
 	EButtonGroup* parent_group = ((EntityButton*)_entity)->parent_button_group;
 	EButtonGroup* root_group = parent_group->root_group;
-	EDataContainer_ButtonGroupForDataEntities* data = (EDataContainer_ButtonGroupForDataEntities*)root_group->data_container;
+	EDataContainer_Group_DataEntitiesSearch* data = (EDataContainer_Group_DataEntitiesSearch*)root_group->data_container;
 EButtonGroup* receiver = data->pointer_to_group_item_receiver;
 EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
 
@@ -845,9 +852,101 @@ void EDataActionCollection::action_update_vertical_named_slider(Entity* _entity,
 		
 
 		data->current_value = (*data->pointer_to_head->world_position_x - *data->pointer_to_bg->world_position_x) / data->operable_area_size_x;
+
+		//change text to [stored_text] + slider value * max_value. Example: "Gloss: 0.75"
+		if (data->pointer_to_text_area != nullptr)
+		{data->pointer_to_text_area->change_text(data->stored_text + ": " + Helper::float_to_string_with_precision(data->current_value * data->max_value, 100.0f));}
+
+		if (data->pointer_to_value != nullptr)
+		{
+			*data->pointer_to_value = data->current_value * data->max_value;
+		}
+
+		if (data->additional_action_on_slide != nullptr)
+		{
+			data->additional_action_on_slide(_entity, _custom_data, _d);
+		}
 		//EInputCore::logger_param("Value", data->current_value);
 	}
 
+}
+
+void EDataActionCollection::action_convert_HSV_to_RGB(EButtonGroup* _group)
+{
+	//EInputCore::logger_simple_info("?");
+	Helper::hsv2rgb(static_cast<EDataContainer_Group_ColorEditor*>(_group->data_container)->target_color);
+}
+
+void EDataActionCollection::action_draw_color_rectangle_for_group(EButtonGroup* _group)
+{
+	if ((_group != nullptr) && (_group->data_container != nullptr))
+	{
+		//EInputCore::logger_simple_info("?");
+		EDataContainer_Group_ColorEditor* data = static_cast<EDataContainer_Group_ColorEditor*>(_group->data_container);
+		NS_EGraphicCore::set_active_color
+		(
+			data->target_color->r,
+			data->target_color->g,
+			data->target_color->b,
+			data->target_color->a
+		);
+
+		if (_group->batcher_for_default_draw->last_vertice_buffer_index + _group->batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { _group->batcher_for_default_draw->draw_call(); }
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			_group->batcher_for_default_draw->vertex_buffer,
+			_group->batcher_for_default_draw->last_vertice_buffer_index,
+			data->pointer_to_color_box_group->region_gabarite->world_position_x + 0.0f,
+			data->pointer_to_color_box_group->region_gabarite->world_position_y + 0.0f,
+			data->pointer_to_color_box_group->region_gabarite->size_x - 0.0f,
+			data->pointer_to_color_box_group->region_gabarite->size_y - 0.0f,
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+	}
+}
+
+void EDataActionCollection::action_draw_stored_color_as_box(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if ((_custom_data != nullptr) && (_custom_data->data_container != nullptr))
+	{
+		EDataContainer_Button_StoreColor* data = static_cast<EDataContainer_Button_StoreColor*>(_custom_data->data_container);
+		EntityButton* button = static_cast<EntityButton*>(_entity);
+		if (data->stored_color != nullptr)
+		{
+			
+			NS_EGraphicCore::set_active_color
+			(
+				data->stored_color->r,
+				data->stored_color->g,
+				data->stored_color->b,
+				data->stored_color->a
+			);
+
+			ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+				button->button_gabarite->world_position_x + *button->parent_button_group->border_left,
+				button->button_gabarite->world_position_y + *button->parent_button_group->border_bottom,
+				button->button_gabarite->size_x - *button->parent_button_group->border_left - *button->parent_button_group->border_right,
+				button->button_gabarite->size_y - *button->parent_button_group->border_bottom - *button->parent_button_group->border_up - 15.0f,
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+		}
+
+	}
+}
+
+void EDataActionCollection::action_convert_HSV_to_RGB(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EButtonGroup* root = static_cast<EntityButton*>(_entity)->parent_button_group->root_group;
+
+	if ((root != nullptr) && (root->data_container != nullptr) && (static_cast<EDataContainer_Group_ColorEditor*>(root->data_container)->target_color != nullptr))
+	{
+		Helper::hsv2rgb(static_cast<EDataContainer_Group_ColorEditor*>(root->data_container)->target_color);
+	}
 }
 
 //void EDataActionCollection::action_type_text(Entity* _entity, ECustomData* _custom_data, float _d)

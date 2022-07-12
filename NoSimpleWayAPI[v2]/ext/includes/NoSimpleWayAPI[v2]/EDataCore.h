@@ -24,6 +24,13 @@
 /**/#include "EGraphicCore.h"
 #endif
 
+/**/
+#ifndef	_HELPERS_ALREADY_LINKED_
+#define	_HELPERS_ALREADY_LINKED_
+#include "Helpers.h"
+#endif
+/**/
+
 #include <iostream>
 #include <fstream>
 
@@ -276,7 +283,7 @@ public:
 	static	std::vector<EFilterRule*> registered_filter_rules;
 };
 
-class EDataContainer_ButtonGroupForDataEntities : public EDataContainer
+class EDataContainer_Group_DataEntitiesSearch : public EDataContainer
 {
 public:
 	//std::vector<DataEntityFilter*>	required_tag_list;
@@ -290,6 +297,27 @@ public:
 
 };
 
+class EDataContainer_Group_ColorEditor : public EDataContainer
+{
+public:
+
+	//Helper::
+	//float*							pointer_to_H;
+	//float*							pointer_to_S;
+	//float*							pointer_to_V;
+
+	//float*							pointer_to_red;
+	//float*							pointer_to_green;
+	//float*							pointer_to_blue;
+
+	//float*							pointer_to_alpha;
+
+	Helper::hsvrgba_color*				target_color;
+
+	EButtonGroup*						pointer_to_color_box_group;
+};
+
+
 class EDataContainer_DataEntityHolder : public EDataContainer
 {
 public:
@@ -299,16 +327,22 @@ public:
 class EDataContainer_VerticalNamedSlider : public EDataContainer
 {
 public:
-	ESpriteLayer*	pointer_to_head;
-	ESpriteLayer*	pointer_to_bg;
+	ESpriteLayer*			pointer_to_head;
+	ESpriteLayer*			pointer_to_bg;
 
-	EGUIStyle*		style;
+	EGUIStyle*				style;
 
-	float			operable_area_size_x;
-	float			current_value;
-	float			max_value;
+	std::string				stored_text;
+	ETextArea*				pointer_to_text_area;
 
-	float*			pointer_to_value;
+	float					operable_area_size_x;
+	float					current_value;
+	float					max_value;
+
+	float*					pointer_to_value;
+
+	data_action_pointer		additional_action_on_slide;
+	//EDataContainer*			additional_data_container;
 };
 
 class EDataContainerStoreTargetGroup : public EDataContainer
@@ -317,6 +351,12 @@ public:
 	EButtonGroup* target_group;
 	std::string search_tag = "";
 	EFilterRule* filter_rule;
+};
+
+class EDataContainer_Button_StoreColor : public EDataContainer
+{
+public:
+	Helper::hsvrgba_color* stored_color;
 };
 //////////////////////////////////////////////////////////////////////
 // actions section
@@ -347,6 +387,12 @@ namespace EDataActionCollection
 	void action_draw_crosshair_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
 	
 	void action_update_vertical_named_slider	(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_convert_HSV_to_RGB				(Entity* _entity, ECustomData* _custom_data, float _d);
+	
+	void action_convert_HSV_to_RGB				(EButtonGroup* _group);
+	void action_draw_color_rectangle_for_group	(EButtonGroup* _group);
+
+	void action_draw_stored_color_as_box		(Entity* _entity, ECustomData* _custom_data, float _d);
 
 }
 

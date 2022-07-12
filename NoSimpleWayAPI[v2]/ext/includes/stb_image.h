@@ -1971,7 +1971,7 @@ typedef struct
      int            eob_run;
      int            jfif;
      int            app14_color_transform; // Adobe APP14 tag
-     int            rgb;
+     int            rgba_color;
 
      int scan_n, order[4];
      int restart_interval, todo;
@@ -3266,12 +3266,12 @@ static int stbi__process_frame_header(stbi__jpeg* z, int scan)
 
      if (Lf != 8 + 3 * s->img_n) return stbi__err("bad SOF len", "Corrupt JPEG");
 
-     z->rgb = 0;
+     z->rgba_color = 0;
      for (i = 0; i < s->img_n; ++i) {
-          static const unsigned char rgb[3] = { 'R', 'G', 'B' };
+          static const unsigned char rgba_color[3] = { 'R', 'G', 'B' };
           z->img_comp[i].id = stbi__get8(s);
-          if (s->img_n == 3 && z->img_comp[i].id == rgb[i])
-               ++z->rgb;
+          if (s->img_n == 3 && z->img_comp[i].id == rgba_color[i])
+               ++z->rgba_color;
           q = stbi__get8(s);
           z->img_comp[i].h = (q >> 4);  if (!z->img_comp[i].h || z->img_comp[i].h > 4) return stbi__err("bad H", "Corrupt JPEG");
           z->img_comp[i].v = q & 15;    if (!z->img_comp[i].v || z->img_comp[i].v > 4) return stbi__err("bad V", "Corrupt JPEG");
@@ -3844,7 +3844,7 @@ static stbi_uc* load_jpeg_image(stbi__jpeg* z, int* out_x, int* out_y, int* comp
      // determine actual number of components to generate
      n = req_comp ? req_comp : z->s->img_n >= 3 ? 3 : 1;
 
-     is_rgb = z->s->img_n == 3 && (z->rgb == 3 || (z->app14_color_transform == 0 && !z->jfif));
+     is_rgb = z->s->img_n == 3 && (z->rgba_color == 3 || (z->app14_color_transform == 0 && !z->jfif));
 
      if (z->s->img_n == 3 && n < 3 && !is_rgb)
           decode_n = 1;

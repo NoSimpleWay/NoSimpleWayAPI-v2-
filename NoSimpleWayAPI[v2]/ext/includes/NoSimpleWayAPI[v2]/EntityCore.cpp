@@ -210,7 +210,7 @@ void Entity::update(float _d)
 {
 	//translate_entity(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f);
 
-	if (!disabled)
+	if ((!disabled) && (!disable_draw))
 	for (ECustomData* c_data : custom_data_list)
 	if (c_data != nullptr)
 	{
@@ -635,6 +635,7 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	EntityButton::get_last_custom_data(jc_button)->data_container = data;
 	data->style = _style;
 	data->operable_area_size_x = _region_gabarite->size_x - *_style->round_slider->main_texture->size_x_in_pixels;
+	
 
 	EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_update_vertical_named_slider);
 
@@ -693,6 +694,43 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	*jc_text_area->offset_by_text_size_y = -1.0;
 
 	//jc_text_area->offset_border[BorderSide::LEFT] = *item_icon->size_x_in_pixels * resize_factor + *_parent_group->border_left + 3.0f;
+
+	jc_text_area->change_text(_text);
+	data->pointer_to_text_area = jc_text_area;
+	data->stored_text = _text;
+
+	*jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+
+
+
+	return jc_button;
+}
+
+EntityButton* EntityButton::create_named_color_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, std::string _text, Helper::hsvrgba_color* _color)
+{
+	EntityButton* jc_button = EntityButton::create_default_clickable_button
+	(
+		_region_gabarite,
+		_parent_group,
+		nullptr
+	);
+
+	EDataContainer_Button_StoreColor* data = new EDataContainer_Button_StoreColor();
+	EntityButton::get_last_custom_data(jc_button)->data_container = data;
+	data->stored_color = _color;
+
+
+	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_stored_color_as_box);
+
+	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
+	*jc_text_area->offset_by_gabarite_size_x = 0.0;
+	*jc_text_area->offset_by_text_size_x = 0.0;
+
+	*jc_text_area->offset_by_gabarite_size_y = 1.0;
+	*jc_text_area->offset_by_text_size_y = -1.0;
+
+	jc_text_area->offset_border[BorderSide::LEFT] = *_parent_group->border_left;
 
 	jc_text_area->change_text(_text);
 
@@ -767,7 +805,7 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 	return jc_button;
 }
 
-EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, float* _pointer_x, float* _pointer_y)
+EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, float* _pointer_x, float* _pointer_y, std::string _texture)
 {
 	EntityButton* jc_button = create_default_button_with_custom_data(_region_gabarite, _parent_group);
 
@@ -802,20 +840,25 @@ EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _re
 	jc_data_container->target_pointer_y = _pointer_y;
 	last_data->data_container = jc_data_container;
 
-	ESpriteLayer* jc_sprite_layer = ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-	(
-		NS_EGraphicCore::load_from_textures_folder("skydome"),
+	if (_texture != "")
+	{
+		ESpriteLayer* jc_sprite_layer = ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+		(
+			NS_EGraphicCore::load_from_textures_folder(_texture),
 
-		0.0f,
-		0.0f,
-		0.0f,
+			0.0f,
+			0.0f,
+			0.0f,
 
-		_region_gabarite->size_x,
-		_region_gabarite->size_y,
-		0.0f
-	);
+			_region_gabarite->size_x,
+			_region_gabarite->size_y,
+			0.0f
+		);
+		
+		jc_clickable_area->sprite_layer_list.push_back(jc_sprite_layer);
+	}
 
-	jc_clickable_area->sprite_layer_list.push_back(jc_sprite_layer);
+	
 
 	//ETextArea* jc_text_area = ETextArea::create_centered_to_right_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "1.0");
 	//jc_text_area->offset_border[BorderSide::RIGHT] = 6.0f;

@@ -177,6 +177,7 @@ namespace NS_EGraphicCore
 	extern void set_active_color(const EColor_4(&_color)[4]);
 	extern void set_active_color_custom_alpha(const EColor_4(&_color)[4], float _alpha);
 	extern void set_active_color(EColor_4* _color);
+	extern void set_active_color(float _r, float _g, float _b, float _a);
 
 	extern EColor_4 active_color[4];
 
@@ -199,6 +200,25 @@ namespace NS_EGraphicCore
 	extern float move_multiplier;
 
 	extern float ground_level;
+
+	typedef struct RgbColor
+	{
+		unsigned char r;
+		unsigned char g;
+		unsigned char b;
+	} RgbColor;
+
+	typedef struct HsvColor
+	{
+		unsigned char h;
+		unsigned char s;
+		unsigned char v;
+	} HsvColor;
+
+	extern RgbColor HsvToRgb(HsvColor hsv);
+
+
+	extern HsvColor RgbToHsv(RgbColor rgb);
 };
 
 namespace NS_DefaultGabarites

@@ -159,7 +159,7 @@
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\ETextCore.cpp" />
-    <ClCompile Include="Helpers.cpp" />
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\Helpers.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -173,7 +173,7 @@
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\ETextCore.h" />
-    <ClInclude Include="Helpers.h" />
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\Helpers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -194,6 +194,7 @@ EWindowMain::EWindowMain()
 			EGUIStyle::active_style
 		);
 		main_button_group->root_group = main_button_group;
+		main_button_group->can_be_moved = false;
 
 		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		//*main_button_group->stretch_mode		= GroupStretchMode::CONSTANT;
@@ -491,6 +492,26 @@ EWindowMain::EWindowMain()
 
 				*cosmetic_segment->stretch_x_by_parent_size = false;
 				*cosmetic_segment->stretch_y_by_parent_size = true;
+
+				// // // // // // //// // // // // // //// // // // // // //
+				Helper::hsvrgba_color* HRA_color = new Helper::hsvrgba_color();
+				HRA_color->h = 90.0f;
+				HRA_color->s = 0.7f;
+				HRA_color->v = 0.8f;
+				HRA_color->a = 0.9f;
+
+				jc_button = EntityButton::create_named_color_button
+				(
+
+					new ERegionGabarite(170.0f, 38.0f),
+					cosmetic_segment,
+					EFont::font_list[0],
+					EGUIStyle::active_style,
+					"Цвет",
+					HRA_color
+				);
+				cosmetic_segment->button_list.push_back(jc_button);
+				// // // // // // //// // // // // // //// // // // // // //
 				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		}
 
@@ -775,7 +796,7 @@ EWindowMain::EWindowMain()
 		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		EButtonGroup::data_entity_filter = main_button_group;
 
-		EDataContainer_ButtonGroupForDataEntities* jc_data_container_for_search_group = new EDataContainer_ButtonGroupForDataEntities();
+		EDataContainer_Group_DataEntitiesSearch* jc_data_container_for_search_group = new EDataContainer_Group_DataEntitiesSearch();
 		main_button_group->data_container = jc_data_container_for_search_group;
 		*main_button_group->is_active = false;
 
@@ -960,25 +981,40 @@ EWindowMain::EWindowMain()
 		*jc_button_group->stretch_x_by_parent_size = true;
 		*jc_button_group->stretch_y_by_parent_size = false;
 		
-		// // // // // // // // // // // // //// // // // // // //
-		jc_button = EntityButton::create_default_radial_button
-		(
-			new ERegionGabarite(170.0f, 38.0f),
-			jc_button_group,
-			"Глянец:"
-		);
-		((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::global_gloss_multiplier;
-		jc_button_group->button_list.push_back(jc_button);
-		// // // // // // //// // // // // // //// // // // // // //
+		//// // // // // // // // // // // // //// // // // // // //
+		//jc_button = EntityButton::create_default_radial_button
+		//(
+		//	new ERegionGabarite(170.0f, 38.0f),
+		//	jc_button_group,
+		//	"Глянец:"
+		//);
+		//((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::global_gloss_multiplier;
+		//jc_button_group->button_list.push_back(jc_button);
+		//// // // // // // //// // // // // // //// // // // // // //
+
+		//// // // // // // //// // // // // // //// // // // // // //
+		//jc_button = EntityButton::create_default_radial_button
+		//(
+		//	new ERegionGabarite(170.0f, 38.0f),
+		//	jc_button_group,
+		//	"Нормаль:"
+		//);
+		//((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::global_normal_multiplier;
+		//jc_button_group->button_list.push_back(jc_button);
+		//// // // // // // //// // // // // // //// // // // // // //
 
 		// // // // // // //// // // // // // //// // // // // // //
-		jc_button = EntityButton::create_default_radial_button
+		jc_button = EntityButton::create_vertical_named_slider
 		(
+
 			new ERegionGabarite(170.0f, 38.0f),
 			jc_button_group,
-			"Нормаль:"
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			"Глянец"
 		);
-		((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->value_pointer = &NS_EGraphicCore::global_normal_multiplier;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::global_gloss_multiplier;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 2.0f;
 		jc_button_group->button_list.push_back(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
 
@@ -990,10 +1026,16 @@ EWindowMain::EWindowMain()
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			"TEST:"
+			"Нормаль"
 		);
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::global_normal_multiplier;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 2.0f;
 		jc_button_group->button_list.push_back(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
+
+
+
+
 
 
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
@@ -1017,7 +1059,8 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(128.0f, 128.0f),
 			jc_button_group,
 			&NS_EGraphicCore::sun_x,
-			&NS_EGraphicCore::sun_y
+			&NS_EGraphicCore::sun_y,
+			"skydome"
 		);
 
 		EDataContainer_CrosshairSlider* crosshair_data = (EDataContainer_CrosshairSlider*)EntityButton::get_last_custom_data(jc_button)->data_container;
@@ -1144,7 +1187,16 @@ EWindowMain::EWindowMain()
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
 
+	if (true)
+	{
+		main_button_group = EButtonGroup::create_color_editor_group(new ERegionGabarite(200.0f, 200.0f, 300.0f, 380.0f), EGUIStyle::active_style);
+		main_button_group->root_group = main_button_group;
+		//main_button_group->can_be_moved = true;
 
+		group_list.push_back(main_button_group);
+		EButtonGroup::refresh_button_group(main_button_group);
+		
+	}
 
 
 }

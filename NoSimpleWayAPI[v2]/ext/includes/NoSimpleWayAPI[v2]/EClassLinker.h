@@ -53,4 +53,6 @@ class EDataContainer;
 class EBrickPlane;
 
 typedef void (*data_action_pointer)(Entity*, ECustomData*, float);
+typedef void (*group_draw_action)(EButtonGroup*);
+typedef void (*group_update_action)(EButtonGroup*);
 typedef void (*text_actions_pointer)(ETextArea*);

@@ -2,11 +2,37 @@
 #include <string>
 
 #define STB_IMAGE_IMPLEMENTATION 
-#include "NoSimpleWayAPI[v2]/EGraphicCore.h"
-#include "NoSimpleWayAPI[v2]/EInputCore.h"
-#include "NoSimpleWayAPI[v2]/EGUICore.h"
-#include "EWindowMain.h"
-#include "Helpers.h"
+
+#ifndef		_E_GRAPHIC_CORE_ALREADY_LINKED_
+	#define _E_GRAPHIC_CORE_ALREADY_LINKED_
+	#include "NoSimpleWayAPI[v2]/EGraphicCore.h"
+#endif
+
+
+/**/
+#ifndef		_E_INPUT_CORE_ALREADY_LINKED_
+	#define _E_INPUT_CORE_ALREADY_LINKED_
+	#include "NoSimpleWayAPI[v2]/EInputCore.h"
+#endif
+
+#ifndef		_E_GUI_CORE_ALREADY_LINKED_
+	#define _E_GUI_CORE_ALREADY_LINKED_
+	#include "NoSimpleWayAPI[v2]/EGUICore.h"
+#endif
+
+
+#ifndef		_E_MAIN_WINDOW_ALREADY_LINKED_
+	#define _E_MAIN_WINDOW_ALREADY_LINKED_
+	#include "EWindowMain.h"
+#endif
+
+
+/**/
+#ifndef		_HELPERS_ALREADY_LINKED_
+	#define	_HELPERS_ALREADY_LINKED_
+	#include "NoSimpleWayAPI[v2]/Helpers.h"
+#endif
+/**/
 
 #include <algorithm>
 #include <iterator>
@@ -31,7 +57,7 @@ int main()
 	// glfw window creation
 	// 
 	// 
-	EInputCore::logger_simple_info(EStringUtils::to_lower("ZaLuPa АЯая"));
+	//`	EInputCore::logger_simple_info(EStringUtils::to_lower("ZaLuPa АЯая"));
 // --------------------
 	/*Entity* ent = nullptr;
 	std::cout << "entity pointer: " << ent << std::endl;
@@ -145,7 +171,7 @@ int main()
 		NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
 		NS_EGraphicCore::gl_set_blend_mode_default();
 		
-		EButtonGroup::focused_button_group = nullptr;
+		if (!EInputCore::MOUSE_BUTTON_LEFT) { EButtonGroup::focused_button_group = nullptr; }
 		if (EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
 		{
 			EButtonGroup::focused_button_group_with_slider = nullptr;

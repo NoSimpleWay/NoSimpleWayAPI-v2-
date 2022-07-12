@@ -141,6 +141,8 @@ public:
 	//float* size_x = new float(0.0f);
 	//float* size_y = new float(0.0f);
 
+	bool debug_translation = false;
+	bool can_be_moved = true;
 
 	EButtonGroup(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
 	EButtonGroup(ERegionGabarite* _gabarite);
@@ -236,6 +238,8 @@ public:
 	
 	//[no bg], focusable, slider
 	static EButtonGroup* create_button_group_without_bg	(ERegionGabarite* _region, EGUIStyle* _style);
+
+	static EButtonGroup* create_color_editor_group		(ERegionGabarite* _region, EGUIStyle* _style);
 	
 
 	//static EButtonGroupRow* add_default_row_to_group(EButtonGroup* _group, ERegionGabarite* _region);
@@ -264,19 +268,23 @@ public:
 	bool* can_be_focused = new bool(true);
 	bool* is_active = new bool(true);
 
-	bool* force_new_line					= new bool(false);
-	bool* parent_have_slider				= new bool(false);
-	bool* need_redraw						= new bool(false);
-	bool* can_be_stretched_by_child			= new bool(false);
+	bool* force_new_line									= new bool(false);
+	bool* parent_have_slider								= new bool(false);
+	bool* need_redraw										= new bool(false);
+	bool* can_be_stretched_by_child							= new bool(false);
 
-	bool* stretch_x_by_parent_size			= new bool(false);
-	bool* stretch_y_by_parent_size			= new bool(false);
+	bool* stretch_x_by_parent_size							= new bool(false);
+	bool* stretch_y_by_parent_size							= new bool(false);
 
-	bool* have_slider						= new bool(false);
+	bool* have_slider										= new bool(false);
 
 	EButtonGroup* add_group(EButtonGroup* _new_group);
 
-	EDataContainer* data_container			= nullptr;
+	EDataContainer*						data_container		= nullptr;
+
+	std::vector<group_update_action>	actions_on_update;
+	std::vector<group_draw_action>		actions_on_draw;
+
 
 	//static fuck_you_leatherman
 	static EButtonGroup* data_entity_filter;
