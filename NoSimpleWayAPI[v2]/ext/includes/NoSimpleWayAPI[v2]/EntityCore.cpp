@@ -638,6 +638,7 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	
 
 	EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_update_vertical_named_slider);
+	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_vertical_named_slider);
 
 	ESpriteLayer* bg_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
 	data->pointer_to_bg = bg_layer;
@@ -676,9 +677,9 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	jc_button->sprite_layer_list.push_back(bg_layer);
 
 
-	ESpriteLayer* head_layer = ESpriteLayer::create_default_sprite_layer(_style->round_slider->main_texture);
+	/*ESpriteLayer* head_layer = ESpriteLayer::create_default_sprite_layer(_style->round_slider->main_texture);
 	data->pointer_to_head = head_layer;
-	jc_button->sprite_layer_list.push_back(head_layer);
+	jc_button->sprite_layer_list.push_back(head_layer);*/
 	//delete action on right click
 	//Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
 
@@ -722,6 +723,7 @@ EntityButton* EntityButton::create_named_color_button(ERegionGabarite* _region_g
 
 
 	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_stored_color_as_box);
+	EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_open_color_group);
 
 	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
 	*jc_text_area->offset_by_gabarite_size_x = 0.0;

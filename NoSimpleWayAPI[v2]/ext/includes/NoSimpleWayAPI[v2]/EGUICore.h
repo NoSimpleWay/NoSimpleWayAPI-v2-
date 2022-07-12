@@ -288,6 +288,7 @@ public:
 
 	//static fuck_you_leatherman
 	static EButtonGroup* data_entity_filter;
+	static EButtonGroup* color_editor_group;
 
 	void translate							(float _x, float _y, float _z, bool _affect_child);
 	void translate_content					(float _x, float _y, float _z, bool _move_slider);

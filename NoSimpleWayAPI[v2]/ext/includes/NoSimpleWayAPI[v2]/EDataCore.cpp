@@ -723,6 +723,25 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 	//}
 }
 
+void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if (_custom_data->data_container != nullptr)
+	{
+		EDataContainer_Button_StoreColor* button_data	= static_cast<EDataContainer_Button_StoreColor*>(_custom_data->data_container);
+		EDataContainer_Group_ColorEditor* group_data	= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
+
+		group_data->target_color = button_data->stored_color;
+
+		group_data->crosshair_slider_data_container->target_pointer_x = &group_data->target_color->h;
+		group_data->crosshair_slider_data_container->target_pointer_y = &group_data->target_color->s;
+
+		group_data->slider_data_value_container->pointer_to_value = &group_data->target_color->v;
+		group_data->slider_data_alpha_container->pointer_to_value = &group_data->target_color->a;
+
+		*EButtonGroup::color_editor_group->is_active = true;
+	}
+}
+
 void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EInputCore::logger_simple_info("try add new button");
@@ -747,10 +766,22 @@ EButtonGroup::refresh_button_group(receiver);
 
 void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	EDataContainer_CrosshairSlider* data = static_cast<EDataContainer_CrosshairSlider*>(_custom_data->data_container);
+
+	float value = (*data->target_pointer_x) / data->max_x;
+	value = max(value, 0.0f);
+	value = min(value, 1.0f);
+	data->current_value_x = value;
+	
+	value = (*data->target_pointer_y) / data->max_y;
+	value = max(value, 0.0f);
+	value = min(value, 1.0f);
+	data->current_value_y = value;
+
 	if
 		(
-			(((EntityButton*)_entity)->force_draw)
-			||
+			//(((EntityButton*)_entity)->force_draw)
+			//||
 			(
 				(EInputCore::MOUSE_BUTTON_LEFT)
 				&&
@@ -761,7 +792,7 @@ void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECus
 		((EntityButton*)_entity)->force_draw = false;
 
 		ERegionGabarite* gab = _custom_data->clickable_area_list[0]->region_gabarite;
-		EDataContainer_CrosshairSlider* data = static_cast<EDataContainer_CrosshairSlider*>(_custom_data->data_container);
+		
 
 		float value = (EInputCore::MOUSE_POSITION_X - gab->world_position_x) / gab->size_x;
 		value = max(value, 0.0f);
@@ -785,9 +816,7 @@ void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECus
 
 void EDataActionCollection::action_draw_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 1.00f);
-
-	//|
+	NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_WHITE, 1.00f);
 	ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
 	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 	(
@@ -819,11 +848,56 @@ void EDataActionCollection::action_draw_crosshair_slider(Entity* _entity, ECusto
 
 		NS_DefaultGabarites::texture_gabarite_white_pixel
 	);
+
+	NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLACK, 1.00f);
+	ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		((EntityButton*)_entity)->button_gabarite->world_position_x + ((EntityButton*)_entity)->button_gabarite->size_x * ((EDataContainer_CrosshairSlider*)_custom_data->data_container)->current_value_x,
+		((EntityButton*)_entity)->button_gabarite->world_position_y + ((EntityButton*)_entity)->button_gabarite->size_y * ((EDataContainer_CrosshairSlider*)_custom_data->data_container)->current_value_y - 2.0f,
+
+		1.0f,
+		5.0f,
+
+		NS_DefaultGabarites::texture_gabarite_white_pixel
+	);
+
+
+	//___
+	ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		((EntityButton*)_entity)->button_gabarite->world_position_x + ((EntityButton*)_entity)->button_gabarite->size_x * ((EDataContainer_CrosshairSlider*)_custom_data->data_container)->current_value_x - 2.0f,
+		((EntityButton*)_entity)->button_gabarite->world_position_y + ((EntityButton*)_entity)->button_gabarite->size_y * ((EDataContainer_CrosshairSlider*)_custom_data->data_container)->current_value_y,
+
+		5.0f,
+		1.0f,
+
+		NS_DefaultGabarites::texture_gabarite_white_pixel
+	);
 }
 
 void EDataActionCollection::action_update_vertical_named_slider(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EDataContainer_VerticalNamedSlider* data = static_cast<EDataContainer_VerticalNamedSlider*>(_custom_data->data_container);
+
+	float original_value = *data->pointer_to_value / data->max_value;
+
+	if (original_value != data->current_value)
+	{
+		data->current_value = original_value;
+		
+		if (data->pointer_to_text_area != nullptr)
+		{data->pointer_to_text_area->change_text(data->stored_text + ": " + Helper::float_to_string_with_precision(data->current_value * data->max_value, 100.0f));}
+	}
+
+	
 	if
 	(
 		(EInputCore::MOUSE_BUTTON_LEFT)
@@ -831,44 +905,62 @@ void EDataActionCollection::action_update_vertical_named_slider(Entity* _entity,
 		(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
 	)
 	{
-		float current_x = *data->pointer_to_head->world_position_x;
-		
-		float target_x = EInputCore::MOUSE_POSITION_X;
-	
 		if
 		(
 			(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 			||
 			(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
 		)
-		{target_x = *data->pointer_to_head->world_position_x + EInputCore::MOUSE_SPEED_X * 0.1f;}
+		{data->current_value += (EInputCore::MOUSE_SPEED_X * 0.1f) / data->operable_area_size_x;}
+		else
+		{data->current_value = (EInputCore::MOUSE_POSITION_X - *data->pointer_to_bg->world_position_x) / data->operable_area_size_x;}
 
-		target_x = max(target_x, *data->pointer_to_bg->world_position_x);
-		target_x = min(target_x, *data->pointer_to_bg->world_position_x + data->operable_area_size_x);
+		data->current_value = max(data->current_value, 0.0f);
+		data->current_value = min(data->current_value, 1.0f);
 
-		float d_x = target_x - current_x;
-
-		data->pointer_to_head->translate_sprite_layer(d_x, 0.0f, 0.0f, true);
-		
-
-		data->current_value = (*data->pointer_to_head->world_position_x - *data->pointer_to_bg->world_position_x) / data->operable_area_size_x;
 
 		//change text to [stored_text] + slider value * max_value. Example: "Gloss: 0.75"
-		if (data->pointer_to_text_area != nullptr)
-		{data->pointer_to_text_area->change_text(data->stored_text + ": " + Helper::float_to_string_with_precision(data->current_value * data->max_value, 100.0f));}
+		
 
 		if (data->pointer_to_value != nullptr)
-		{
-			*data->pointer_to_value = data->current_value * data->max_value;
-		}
+		{*data->pointer_to_value = data->current_value * data->max_value;}
 
 		if (data->additional_action_on_slide != nullptr)
 		{
 			data->additional_action_on_slide(_entity, _custom_data, _d);
 		}
+
+		if (data->pointer_to_text_area != nullptr)
+		{
+			data->pointer_to_text_area->change_text(data->stored_text + ": " + Helper::float_to_string_with_precision(data->current_value * data->max_value, 100.0f));
+		}
 		//EInputCore::logger_param("Value", data->current_value);
 	}
 
+
+
+}
+
+void EDataActionCollection::action_draw_vertical_named_slider(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EDataContainer_VerticalNamedSlider* data = static_cast<EDataContainer_VerticalNamedSlider*>(_custom_data->data_container);
+	EntityButton* button = static_cast<EntityButton*>(_entity);
+	if (data->style != nullptr)
+	{
+
+		
+		ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+			*data->pointer_to_bg->world_position_x + data->operable_area_size_x * data->current_value,
+			*data->pointer_to_bg->world_position_y,
+			data->style->round_slider->main_texture
+		);
+	}
 }
 
 void EDataActionCollection::action_convert_HSV_to_RGB(EButtonGroup* _group)

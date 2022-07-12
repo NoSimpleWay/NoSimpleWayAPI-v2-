@@ -10,7 +10,9 @@ EButtonGroup* EButtonGroup::focused_button_group = nullptr;
 
 //EButtonGroup* EButtonGroup::focused_button_group;
 EButtonGroup* EButtonGroup::focused_button_group_with_slider = nullptr;
+
 EButtonGroup* EButtonGroup::data_entity_filter = nullptr;
+EButtonGroup* EButtonGroup::color_editor_group = nullptr;
 
 constexpr float BUTTON_GROUP_Y_DISTANCE = 3.0f;
 
@@ -509,6 +511,7 @@ void EButtonGroup::draw()
 		NS_EGraphicCore::pbr_batcher->draw_call();
 		batcher_for_default_draw->draw_call();
 		NS_EGraphicCore::test_batcher->draw_call();
+		glDisable(GL_SCISSOR_TEST);
 
 		if (header_button_group != nullptr)
 		{
@@ -1850,7 +1853,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	//**********************************************************************************************************************************************
 	//**********************************************************************************************************************************************
-	EButtonGroup* left_part = main_group->add_group(create_default_button_group(new ERegionGabarite(256.0f, 285.0f), _style));
+	EButtonGroup* left_part = main_group->add_group(create_default_button_group(new ERegionGabarite(285.0f, 285.0f), _style));
 	*left_part->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	*left_part->stretch_x_by_parent_size = false;
 	*left_part->stretch_y_by_parent_size = true;
@@ -1868,6 +1871,8 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->a;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 		value_and_alpha_part->button_list.push_back(jc_button);
+
+		data->slider_data_alpha_container = static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container);
 		// // // // // // //
 
 		// // // // // // //
@@ -1876,8 +1881,9 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->v;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 		value_and_alpha_part->button_list.push_back(jc_button);
-		// // // // // // //
 
+		data->slider_data_value_container = static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container);
+		// // // // // // //
 
 
 	//**********************************************************************************************************************************************
@@ -1902,6 +1908,9 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	crosshair_data->min_y = 0.0f;
 	crosshair_data->max_y = 1.0f;
+
+	data->crosshair_slider_data_container = crosshair_data;
+
 	hue_part->button_list.push_back(jc_button);
 	// // // // // // //
 

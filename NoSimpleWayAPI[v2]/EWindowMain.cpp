@@ -495,15 +495,16 @@ EWindowMain::EWindowMain()
 
 				// // // // // // //// // // // // // //// // // // // // //
 				Helper::hsvrgba_color* HRA_color = new Helper::hsvrgba_color();
-				HRA_color->h = 90.0f;
-				HRA_color->s = 0.7f;
-				HRA_color->v = 0.8f;
-				HRA_color->a = 0.9f;
+				HRA_color->h = rand() % 360;
+				HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
+				HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
+				HRA_color->a = 1.0f - pow((rand() % 100) / 100.0f, 4.0);
+				Helper::hsv2rgb(HRA_color);
 
 				jc_button = EntityButton::create_named_color_button
 				(
 
-					new ERegionGabarite(170.0f, 38.0f),
+					new ERegionGabarite(242.0f, 38.0f),
 					cosmetic_segment,
 					EFont::font_list[0],
 					EGUIStyle::active_style,
@@ -1189,8 +1190,10 @@ EWindowMain::EWindowMain()
 
 	if (true)
 	{
-		main_button_group = EButtonGroup::create_color_editor_group(new ERegionGabarite(200.0f, 200.0f, 300.0f, 380.0f), EGUIStyle::active_style);
+		main_button_group = EButtonGroup::create_color_editor_group(new ERegionGabarite(200.0f, 200.0f, 320.0f, 380.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
+		*main_button_group->is_active = false;
+		EButtonGroup::color_editor_group = main_button_group;
 		//main_button_group->can_be_moved = true;
 
 		group_list.push_back(main_button_group);

@@ -297,6 +297,27 @@ public:
 
 };
 
+class EDataContainer_VerticalNamedSlider : public EDataContainer
+{
+public:
+	//ESpriteLayer*			pointer_to_head;
+	ESpriteLayer*			pointer_to_bg;
+
+	EGUIStyle* style;
+
+	std::string				stored_text;
+	ETextArea*				pointer_to_text_area;
+
+	float					operable_area_size_x;
+	float					current_value;
+	float					max_value;
+
+	float* pointer_to_value;
+
+	data_action_pointer		additional_action_on_slide;
+	//EDataContainer*			additional_data_container;
+};
+
 class EDataContainer_Group_ColorEditor : public EDataContainer
 {
 public:
@@ -315,6 +336,11 @@ public:
 	Helper::hsvrgba_color*				target_color;
 
 	EButtonGroup*						pointer_to_color_box_group;
+
+	EDataContainer_VerticalNamedSlider* slider_data_value_container;
+	EDataContainer_VerticalNamedSlider* slider_data_alpha_container;
+
+	EDataContainer_CrosshairSlider*		crosshair_slider_data_container;
 };
 
 
@@ -324,26 +350,7 @@ public:
 	EDataEntity*	stored_data_entity;
 };
 
-class EDataContainer_VerticalNamedSlider : public EDataContainer
-{
-public:
-	ESpriteLayer*			pointer_to_head;
-	ESpriteLayer*			pointer_to_bg;
 
-	EGUIStyle*				style;
-
-	std::string				stored_text;
-	ETextArea*				pointer_to_text_area;
-
-	float					operable_area_size_x;
-	float					current_value;
-	float					max_value;
-
-	float*					pointer_to_value;
-
-	data_action_pointer		additional_action_on_slide;
-	//EDataContainer*			additional_data_container;
-};
 
 class EDataContainerStoreTargetGroup : public EDataContainer
 {
@@ -380,13 +387,18 @@ namespace EDataActionCollection
 	void action_update_radial_button			(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void action_type_text						(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_type_text						(ETextArea* _text_area);
+
 	void action_open_data_entity_filter_group	(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_color_group				(Entity* _entity, ECustomData* _custom_data, float _d);
+
 	void action_add_item_to_group_receiver		(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_update_crosshair_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_draw_crosshair_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
 	
 	void action_update_vertical_named_slider	(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_vertical_named_slider		(Entity* _entity, ECustomData* _custom_data, float _d);
+
 	void action_convert_HSV_to_RGB				(Entity* _entity, ECustomData* _custom_data, float _d);
 	
 	void action_convert_HSV_to_RGB				(EButtonGroup* _group);
