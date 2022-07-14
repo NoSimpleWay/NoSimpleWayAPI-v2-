@@ -328,6 +328,12 @@ bool ERenderBatcher::check_batcher(ERenderBatcher* _batcher, unsigned int _add)
 	return true;
 }
 
+bool ERenderBatcher::if_have_space_for_data(ERenderBatcher* _batcher, unsigned int _add)
+{
+	return check_batcher(_batcher, _batcher->gl_vertex_attribute_total_count * VERTICES_PER_SHAPE * _add);
+}
+
+
 void ERenderBatcher::set_total_attribute_count(GLsizei _attribute_count)
 {
 	gl_vertex_attribute_total_count = _attribute_count;
@@ -831,7 +837,7 @@ void NS_EGraphicCore::create_styles()
 		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
 		EBrickStyle::set_border_size		(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
-		EBrickStyle::set_offset_size		(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
+		EBrickStyle::set_offset_size		(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
 		EBrickStyle::set_subdivisions		(jc_brick, 8, 0);
 
 		//***********************************************************
@@ -3090,7 +3096,7 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 			{
 				//EInputCore::logger_simple_success("try call render by pointer[" + std::to_string(_text) + "]");
 				//NS_EGraphicCore::set_active_color(spr->sprite_color);
-				ERenderBatcher::check_batcher(batcher);
+				ERenderBatcher::if_have_space_for_data(batcher, 1);
 				spr->pointer_to_sprite_render(spr);
 				//batcher->draw_call();
 			}

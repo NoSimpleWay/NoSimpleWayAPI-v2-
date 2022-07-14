@@ -20,6 +20,7 @@ void Entity::draw()
 	{
 		{transfer_all_vertex_buffers_to_batcher();}
 
+
 		//custom data store clickable regions and text
 		if (!custom_data_list.empty())
 		{
@@ -720,7 +721,7 @@ EntityButton* EntityButton::create_named_color_button(ERegionGabarite* _region_g
 	EDataContainer_Button_StoreColor* data = new EDataContainer_Button_StoreColor();
 	EntityButton::get_last_custom_data(jc_button)->data_container = data;
 	data->stored_color = _color;
-
+	//std::cout << data->stored_color << std::endl;
 
 	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_stored_color_as_box);
 	EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_open_color_group);

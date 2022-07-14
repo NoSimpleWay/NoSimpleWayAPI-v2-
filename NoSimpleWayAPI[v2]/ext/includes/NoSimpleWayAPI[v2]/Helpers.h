@@ -30,6 +30,8 @@ public:
 		float a = 1.0f;			// a fraction between 0 and 1
 	};
 
+	static std::vector<hsvrgba_color*> registered_color_list;
+
 	struct rgba_color {
 		double r;       // a fraction between 0 and 1
 		double g;       // a fraction between 0 and 1

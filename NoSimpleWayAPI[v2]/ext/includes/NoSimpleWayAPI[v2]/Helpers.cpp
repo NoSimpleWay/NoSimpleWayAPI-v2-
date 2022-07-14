@@ -4,6 +4,7 @@ ETestObject::ETestObject()
 {
 }
 
+std::vector<Helper::hsvrgba_color*> Helper::registered_color_list;
 std::vector <ETestObject*> ETestObject::test_object_vector;
 
 std::string Helper::float_to_string(float _f)

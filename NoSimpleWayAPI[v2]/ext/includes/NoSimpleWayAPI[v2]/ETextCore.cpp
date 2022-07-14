@@ -978,7 +978,7 @@ void ETextArea::draw()
 		active_glyph = font_glyph_list.at(min(*selected_glyph_position, font_glyph_list.size() - 1));
 
 		//EInputCore::logger_simple_success("LOL");
-		ERenderBatcher::check_batcher(sprite_layer->batcher);
+		ERenderBatcher::if_have_space_for_data(sprite_layer->batcher, 1);
 
 		NS_EGraphicCore::set_active_color(color);
 

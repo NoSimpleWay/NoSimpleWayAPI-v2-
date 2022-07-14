@@ -200,11 +200,13 @@ public:
 		void realign_all_buttons();
 		static void generate_vertex_buffer_for_group(EButtonGroup* _group);
 		
-
+		void expand_to_workspace_size();
 		static void refresh_button_group(EButtonGroup* _group);
 
 	ESpriteLayer* background_sprite_layer = nullptr;
 	
+	bool can_resize_to_workspace_size = true;
+
 	float*	border_bottom		= new float(0.0f);
 	float*	border_up			= new float(0.0f);
 
@@ -294,6 +296,8 @@ public:
 	void translate_content					(float _x, float _y, float _z, bool _move_slider);
 	bool can_see_this_group();
 	void phantom_translate_if_need					();
+
+	EntityButton* selected_button;
 };
 
 //class EButtonContainer

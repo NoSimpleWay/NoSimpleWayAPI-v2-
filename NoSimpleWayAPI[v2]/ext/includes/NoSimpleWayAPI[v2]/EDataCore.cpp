@@ -379,7 +379,7 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 	)
 	{
 		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.15f);
-		ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
@@ -739,6 +739,52 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 		group_data->slider_data_alpha_container->pointer_to_value = &group_data->target_color->a;
 
 		*EButtonGroup::color_editor_group->is_active = true;
+		
+		
+		//int id = 0;
+		if (group_data->pointer_to_color_collection_group != nullptr)
+		for (EntityButton* but : group_data->pointer_to_color_collection_group->button_list)
+		{
+			//std::cout << static_cast<EDataContainer_Button_StoreColor*>(but->custom_data_list[0]->data_container)->stored_color << std::endl;
+			//std::cout << button_data->stored_color << std::endl;
+			//std::cout << Helper::registered_color_list[0] << std::endl;
+			
+			if (static_cast<EDataContainer_Button_StoreColor*>(but->custom_data_list[0]->data_container)->stored_color == button_data->stored_color)
+			{
+			
+				group_data->pointer_to_color_collection_group->selected_button = but;
+				break;
+			}
+
+			//id++;
+		}
+		else
+		{
+			EInputCore::logger_simple_error("pointer to color group is null!");
+		}
+		//EDataContainer_Button_StoreColor* data_color = nullptr;
+		//if (group_data->pointer_to_color_collection_group != nullptr)
+		//{
+		//	EInputCore::logger_simple_info("check all data conainers");
+		//	for (EntityButton* but : group_data->pointer_to_color_box_group->button_list)
+		//	{
+		//		for (ECustomData* cd : but->custom_data_list)
+		//		if (typeid(EDataContainer_Button_StoreColor) == typeid(cd->data_container))
+		//		{
+		//			//EInputCore::logger_param("type ID left", typeid(cd->data_container))
+		//			EInputCore::logger_simple_success("EDC_B_SC founded!");
+
+	
+		//		}
+		//		else
+		//		{
+		//			EInputCore::logger_simple_error("data container is not color");
+
+		//			std::cout << typeid(EDataContainer_Button_StoreColor).raw_name() << std::endl;
+		//			std::cout << typeid((cd->data_container)).raw_name() << std::endl;
+		//		}
+		//	}
+		//}
 	}
 }
 
@@ -817,7 +863,7 @@ void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECus
 void EDataActionCollection::action_draw_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_WHITE, 1.00f);
-	ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 	(
 		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
@@ -834,7 +880,7 @@ void EDataActionCollection::action_draw_crosshair_slider(Entity* _entity, ECusto
 
 
 	//___
-	ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 	(
 		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
@@ -850,7 +896,7 @@ void EDataActionCollection::action_draw_crosshair_slider(Entity* _entity, ECusto
 	);
 
 	NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLACK, 1.00f);
-	ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 	(
 		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
@@ -867,7 +913,7 @@ void EDataActionCollection::action_draw_crosshair_slider(Entity* _entity, ECusto
 
 
 	//___
-	ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 	(
 		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
@@ -949,7 +995,7 @@ void EDataActionCollection::action_draw_vertical_named_slider(Entity* _entity, E
 	{
 
 		
-		ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_size
@@ -1014,7 +1060,7 @@ void EDataActionCollection::action_draw_stored_color_as_box(Entity* _entity, ECu
 				data->stored_color->a
 			);
 
-			ERenderBatcher::check_batcher(NS_EGraphicCore::default_batcher_for_drawing);
+			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 
 			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 			(
@@ -1039,6 +1085,12 @@ void EDataActionCollection::action_convert_HSV_to_RGB(Entity* _entity, ECustomDa
 	{
 		Helper::hsv2rgb(static_cast<EDataContainer_Group_ColorEditor*>(root->data_container)->target_color);
 	}
+}
+
+void EDataActionCollection::action_select_this_button(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if (static_cast<EntityButton*>(_entity)->parent_button_group != nullptr)
+	{ static_cast<EntityButton*>(_entity)->parent_button_group->selected_button = static_cast<EntityButton*>(_entity); }
 }
 
 //void EDataActionCollection::action_type_text(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1511,7 +1563,7 @@ void EClickableArea::draw()
 		{
 			NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.2f);
 
-			ERenderBatcher::check_batcher(batcher_for_default_draw);
+			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
 
 			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 			(
@@ -1533,7 +1585,7 @@ void EClickableArea::draw()
 		//if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
-		ERenderBatcher::check_batcher(batcher_for_default_draw);
+		ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
 
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
@@ -1553,7 +1605,7 @@ void EClickableArea::draw()
 		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_right)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
-		ERenderBatcher::check_batcher(batcher_for_default_draw);
+		ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
 
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
@@ -1573,7 +1625,7 @@ void EClickableArea::draw()
 		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_down)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
-		ERenderBatcher::check_batcher(batcher_for_default_draw);
+		ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
 
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
@@ -1593,7 +1645,7 @@ void EClickableArea::draw()
 		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_up)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
-		ERenderBatcher::check_batcher(batcher_for_default_draw);
+		ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
 
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
@@ -1613,7 +1665,7 @@ void EClickableArea::draw()
 		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_mid)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
-		ERenderBatcher::check_batcher(batcher_for_default_draw);
+		ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
 
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
@@ -1636,7 +1688,7 @@ void EClickableArea::draw()
 
 		if (*catched_body)
 		{
-			ERenderBatcher::check_batcher(batcher_for_default_draw);
+			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
 			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 			(
 				batcher_for_default_draw->vertex_buffer,

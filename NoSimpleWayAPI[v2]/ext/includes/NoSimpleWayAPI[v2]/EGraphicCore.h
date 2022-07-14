@@ -331,6 +331,7 @@ public:
 	void set_transform_zoom(float _zoom);
 
 	static bool check_batcher(ERenderBatcher* _batcher,unsigned int _add = 0);
+	static bool if_have_space_for_data(ERenderBatcher* _batcher, unsigned int _add = 0);
 
 	GLsizei										gl_vertex_attribute_total_count = 0;
 

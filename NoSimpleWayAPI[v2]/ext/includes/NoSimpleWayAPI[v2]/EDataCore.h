@@ -336,6 +336,7 @@ public:
 	Helper::hsvrgba_color*				target_color;
 
 	EButtonGroup*						pointer_to_color_box_group;
+	EButtonGroup*						pointer_to_color_collection_group;
 
 	EDataContainer_VerticalNamedSlider* slider_data_value_container;
 	EDataContainer_VerticalNamedSlider* slider_data_alpha_container;
@@ -400,6 +401,7 @@ namespace EDataActionCollection
 	void action_draw_vertical_named_slider		(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_convert_HSV_to_RGB				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_button				(Entity* _entity, ECustomData* _custom_data, float _d);
 	
 	void action_convert_HSV_to_RGB				(EButtonGroup* _group);
 	void action_draw_color_rectangle_for_group	(EButtonGroup* _group);

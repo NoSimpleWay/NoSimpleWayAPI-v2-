@@ -317,11 +317,10 @@ void EButtonGroup::draw()
 			region_gabarite->size_x,
 			max(0.0f, *higher_culling_line_for_bg - *lower_culling_line_for_bg)
 		);
+
 		//BG
 		if ((background_sprite_layer != nullptr) && (*have_bg))
-		{
-			background_sprite_layer->transfer_vertex_buffer_to_batcher();
-		}
+		{background_sprite_layer->transfer_vertex_buffer_to_batcher();}
 
 
 		if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group == this))
@@ -392,6 +391,29 @@ void EButtonGroup::draw()
 					)
 			{
 				but->draw();
+
+				if (selected_button == but)
+				{
+					NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_YELLOW, 1.0f);
+					ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+
+					NS_ERenderCollection::add_data_to_vertex_buffer_rama
+					(
+						NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+						NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+						but->button_gabarite->world_position_x - 3.0f,
+						but->button_gabarite->world_position_y - 3.0f,
+
+						but->button_gabarite->size_x + 6.0f,
+						but->button_gabarite->size_y + 6.0f,
+
+						5.0f,
+
+						NS_DefaultGabarites::texture_gabarite_white_pixel
+
+					);
+				}
 			}
 
 
@@ -420,7 +442,8 @@ void EButtonGroup::draw()
 		if (EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL))
 		{
 			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
-			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
 			NS_ERenderCollection::add_data_to_vertex_buffer_rama
 			(
 				batcher_for_default_draw->vertex_buffer,
@@ -437,7 +460,8 @@ void EButtonGroup::draw()
 		if ((EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT)) && (false))
 		{
 			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_CYAN);
-			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
 			NS_ERenderCollection::add_data_to_vertex_buffer_rama
 			(
 				batcher_for_default_draw->vertex_buffer,
@@ -451,7 +475,8 @@ void EButtonGroup::draw()
 			);
 
 			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_YELLOW);
-			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
 			NS_ERenderCollection::add_data_to_vertex_buffer_rama
 			(
 				batcher_for_default_draw->vertex_buffer,
@@ -476,7 +501,8 @@ void EButtonGroup::draw()
 			)
 			{
 				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_RED);
-				if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+				//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+				ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
 				NS_ERenderCollection::add_data_to_vertex_buffer_rama
 				(
 					batcher_for_default_draw->vertex_buffer,
@@ -504,9 +530,7 @@ void EButtonGroup::draw()
 			glEnable(GL_SCISSOR_TEST);
 			glScissor(region_gabarite->world_position_x, region_gabarite->world_position_y, region_gabarite->size_x, region_gabarite->size_y);
 			for (group_draw_action gda : actions_on_draw)
-			{
-				gda(this);
-			}
+			{gda(this);}
 
 		NS_EGraphicCore::pbr_batcher->draw_call();
 		batcher_for_default_draw->draw_call();
@@ -514,9 +538,7 @@ void EButtonGroup::draw()
 		glDisable(GL_SCISSOR_TEST);
 
 		if (header_button_group != nullptr)
-		{
-			header_button_group->draw();
-		}
+		{header_button_group->draw();}
 
 		draw_second_pass();
 	}
@@ -819,7 +841,7 @@ void EButtonGroup::substretch_groups_y()
 	EButtonGroup* prev_group = nullptr;
 	if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 	{
-		total_y += ((float)(group_list.size()) - 1.0f) * 3.0f;
+		total_y += ((float)(group_list.size()) - 1.0f) * BUTTON_GROUP_Y_DISTANCE;
 
 		for (EButtonGroup* group : group_list)
 		if (!*group->stretch_y_by_parent_size)
@@ -854,10 +876,10 @@ void EButtonGroup::substretch_groups_y()
 			&&
 			(*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 			&&
-			(total_y + 6.0f > region_gabarite->size_y)
+			(total_y > region_gabarite->size_y)
 		)
 		{
-			EButtonGroup::stretch_parent_group(this, total_y + 6.0f);
+			EButtonGroup::stretch_parent_group(this, total_y);
 		}
 	}
 
@@ -1069,9 +1091,25 @@ void EButtonGroup::check_slider()
 	for (EButtonGroup* group : group_list) { group->check_slider(); }
 }
 
+void EButtonGroup::expand_to_workspace_size()
+{
+	if (can_resize_to_workspace_size)
+	{
+		region_gabarite->size_x = *base_width + *border_left + *border_right;
+		region_gabarite->size_y = *base_height + *border_bottom + *border_up;
+	}
+
+	for (EButtonGroup* group : group_list)
+	{
+		group->expand_to_workspace_size();
+	}
+}
+
 void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 {
 	
+	_group->expand_to_workspace_size();
+
 	_group->substretch_groups_y();
 	//_group->check_slider();
 
@@ -1124,7 +1162,7 @@ void EButtonGroup::realign_all_buttons()
 
 			if (but->offset_x + but->button_gabarite->size_x + slider_additional >= region_gabarite->size_x)
 			{
-				but->offset_x = *but->parent_button_group->border_left + 2.0f;
+				but->offset_x = *but->parent_button_group->border_left;
 				but->offset_y += but->button_gabarite->size_y + 3.0f;
 			}
 
@@ -1132,8 +1170,8 @@ void EButtonGroup::realign_all_buttons()
 		}
 		else
 		{
-			but->offset_x = *but->parent_button_group->border_left + 2.0f;
-			but->offset_y = *but->parent_button_group->border_bottom + 2.0f;
+			but->offset_x = *but->parent_button_group->border_left;
+			but->offset_y = *but->parent_button_group->border_bottom;
 		}
 
 		if ((but->fixed_position) && (true))
@@ -1151,7 +1189,7 @@ void EButtonGroup::realign_all_buttons()
 			//*but->world_position_y = *but->parent_button_group->region->world_position_y;
 		}
 
-		*highest_point_y = max(*highest_point_y, but->offset_y + but->button_gabarite->size_y + 3.0f);
+		*highest_point_y = max(*highest_point_y, but->offset_y + but->button_gabarite->size_y + 0.0f);
 
 		if ((slider != nullptr) && (*highest_point_y > region_gabarite->size_y - 0.0f - *border_up))
 		{
@@ -1835,7 +1873,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 {
 	EButtonGroup* main_group = create_root_button_group(_region, _style);
 	main_group->root_group = main_group;
-	Helper::hsvrgba_color* HRA_color = new Helper::hsvrgba_color();
+	Helper::hsvrgba_color* HRA_color = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
 
 
 	*main_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
@@ -1917,15 +1955,49 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	//**********************************************************************************************************************************************
 	//**********************************************************************************************************************************************
-	EButtonGroup* right_part = main_group->add_group(create_default_button_group(new ERegionGabarite(256.0f, 100.0f), _style));
+	EButtonGroup* color_box = main_group->add_group(create_default_button_group(new ERegionGabarite(35.0f, 10.0f), _style));
 	//right_part->debug_translation = true;
-	*right_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-	*right_part->stretch_x_by_parent_size = true;
-	*right_part->stretch_y_by_parent_size = true;
+	*color_box->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	*color_box->stretch_x_by_parent_size = false;
+	*color_box->stretch_y_by_parent_size = true;
+	data->pointer_to_color_box_group = color_box;
 
-	data->pointer_to_color_box_group = right_part;
+	//**********************************************************************************************************************************************
+	//**********************************************************************************************************************************************
+	EButtonGroup* color_collection = main_group->add_group(create_default_button_group(new ERegionGabarite(256.0f, 100.0f), _style));
+	//right_part->debug_translation = true;
+	*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	*color_collection->stretch_x_by_parent_size = true;
+	*color_collection->stretch_y_by_parent_size = true;
+	data->pointer_to_color_collection_group = color_collection;
 
-	
+	for (int i = 0; i < Helper::registered_color_list.size(); i++)
+	{
+		// // // // // // //// // // // // // //// // // // // // //
+		Helper::hsvrgba_color* HRA_color = Helper::registered_color_list[i];
+		//HRA_color->h = rand() % 360;
+		//HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
+		//HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
+		//HRA_color->a = 1.0f - pow((rand() % 100) / 100.0f, 4.0);
+
+		
+		//std::cout << Helper::registered_color_list[0] << std::endl;
+		jc_button = EntityButton::create_named_color_button
+		(
+			//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+
+			new ERegionGabarite(80.0f, 38.0f),
+			color_collection,
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			"Цвет",
+			HRA_color
+		);
+		//std::cout << HRA_color << std::endl;
+		Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
+		color_collection->button_list.push_back(jc_button);
+		// // // // // // //// // // // // // //// // // // // // //
+	}
 
 	return main_group;
 }
