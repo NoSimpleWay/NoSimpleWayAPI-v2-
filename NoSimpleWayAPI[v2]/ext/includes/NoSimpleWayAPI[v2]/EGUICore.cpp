@@ -1743,6 +1743,18 @@ void EButtonGroup::phantom_translate_if_need()
 	}
 }
 
+void EButtonGroup::select_this_button(EntityButton* _but)
+{
+	selected_button = _but;
+
+	EInputCore::logger_simple_info("invoke all select action in group");
+	for (group_select_action gsa : actions_on_select_button)
+	{
+		EInputCore::logger_simple_info("invoke select action");
+		gsa(this);
+	}
+}
+
 void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 {
 	if
@@ -1879,6 +1891,8 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	*main_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	main_group->actions_on_draw.push_back(&EDataActionCollection::action_draw_color_rectangle_for_group);
 	main_group->actions_on_update.push_back(&EDataActionCollection::action_convert_HSV_to_RGB);
+
+	
 	EDataContainer_Group_ColorEditor* data = new EDataContainer_Group_ColorEditor();
 	data->target_color = HRA_color;
 		//
@@ -1964,12 +1978,40 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	//**********************************************************************************************************************************************
 	//**********************************************************************************************************************************************
-	EButtonGroup* color_collection = main_group->add_group(create_default_button_group(new ERegionGabarite(256.0f, 100.0f), _style));
+	EButtonGroup* color_collection_frame = main_group->add_group(create_default_button_group(new ERegionGabarite(256.0f, 100.0f), _style));
 	//right_part->debug_translation = true;
-	*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-	*color_collection->stretch_x_by_parent_size = true;
-	*color_collection->stretch_y_by_parent_size = true;
-	data->pointer_to_color_collection_group = color_collection;
+	*color_collection_frame->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	*color_collection_frame->stretch_x_by_parent_size = true;
+	*color_collection_frame->stretch_y_by_parent_size = true;
+	
+	
+	EButtonGroup* control_button_segment = color_collection_frame->add_group(create_default_button_group(new ERegionGabarite(256.0f, 50.0f), _style));
+	*control_button_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	*control_button_segment->stretch_x_by_parent_size = true;
+	*control_button_segment->stretch_y_by_parent_size = false;
+	
+	//button "unbind color"
+	jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(150.0f, 20.0f), control_button_segment, &EDataActionCollection::action_unbing_color);
+	ETextArea* jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Отвязать от шаблона");
+	*jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+	control_button_segment->button_list.push_back(jc_button);
+	
+	//button "register new color"
+	jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(150.0f, 20.0f), control_button_segment, &EDataActionCollection::action_create_new_color);
+	jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Создать шаблон цвета");
+	*jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+	control_button_segment->button_list.push_back(jc_button);
+
+	
+
+	EButtonGroup* color_segment = color_collection_frame->add_group(create_default_button_group(new ERegionGabarite(256.0f, 40.0f), _style));
+	*color_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	*color_segment->stretch_x_by_parent_size = true;
+	*color_segment->stretch_y_by_parent_size = true;
+	data->pointer_to_color_collection_group = color_segment;
+	color_segment->actions_on_select_button.push_back(&EDataActionCollection::action_set_new_color_to_button);
 
 	for (int i = 0; i < Helper::registered_color_list.size(); i++)
 	{
@@ -1987,7 +2029,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 			//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
 			new ERegionGabarite(80.0f, 38.0f),
-			color_collection,
+			color_segment,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
 			"Цвет",
@@ -1995,7 +2037,8 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 		);
 		//std::cout << HRA_color << std::endl;
 		Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
-		color_collection->button_list.push_back(jc_button);
+
+		color_segment->button_list.push_back(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
 	}
 

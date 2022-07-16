@@ -28,6 +28,8 @@ public:
 		float s = 1.0f;		// a fraction between 0 and 360
 		float v = 1.0f;		// a fraction between 0 and 1
 		float a = 1.0f;			// a fraction between 0 and 1
+
+		void set_color(hsvrgba_color* _HRA_color);
 	};
 
 	static std::vector<hsvrgba_color*> registered_color_list;
@@ -45,6 +47,8 @@ public:
 		double v;       // a fraction between 0 and 1
 		double a;       // a fraction between 0 and 1
 	};
+
+
 
 
 

@@ -318,6 +318,12 @@ public:
 	//EDataContainer*			additional_data_container;
 };
 
+class EDataContainer_Button_StoreColor : public EDataContainer
+{
+public:
+	Helper::hsvrgba_color* stored_color;
+};
+
 class EDataContainer_Group_ColorEditor : public EDataContainer
 {
 public:
@@ -338,10 +344,20 @@ public:
 	EButtonGroup*						pointer_to_color_box_group;
 	EButtonGroup*						pointer_to_color_collection_group;
 
+
+
+
+	//data containers of color ajust buttons
 	EDataContainer_VerticalNamedSlider* slider_data_value_container;
 	EDataContainer_VerticalNamedSlider* slider_data_alpha_container;
 
 	EDataContainer_CrosshairSlider*		crosshair_slider_data_container;
+
+
+
+
+	EDataContainer_Button_StoreColor*	target_data_container_with_color;						
+
 };
 
 
@@ -361,11 +377,7 @@ public:
 	EFilterRule* filter_rule;
 };
 
-class EDataContainer_Button_StoreColor : public EDataContainer
-{
-public:
-	Helper::hsvrgba_color* stored_color;
-};
+
 //////////////////////////////////////////////////////////////////////
 // actions section
 //////////////////////////////////////////////////////////////////////
@@ -389,6 +401,7 @@ namespace EDataActionCollection
 	//void action_type_text						(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_type_text						(ETextArea* _text_area);
 
+	/*	open groups	*/
 	void action_open_data_entity_filter_group	(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_color_group				(Entity* _entity, ECustomData* _custom_data, float _d);
 
@@ -403,10 +416,21 @@ namespace EDataActionCollection
 	void action_convert_HSV_to_RGB				(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_button				(Entity* _entity, ECustomData* _custom_data, float _d);
 	
-	void action_convert_HSV_to_RGB				(EButtonGroup* _group);
-	void action_draw_color_rectangle_for_group	(EButtonGroup* _group);
+	//group section
+		//draw
+		void action_draw_color_rectangle_for_group	(EButtonGroup* _group);
 
-	void action_draw_stored_color_as_box		(Entity* _entity, ECustomData* _custom_data, float _d);
+		//update
+		void action_convert_HSV_to_RGB				(EButtonGroup* _group);
+
+		//select
+		void action_set_new_color_to_button			(EButtonGroup* _group);
+	
+
+	void action_draw_stored_color_as_box						(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_transfer_pointer_to_color_data_container		(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_unbing_color									(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_create_new_color								(Entity* _entity, ECustomData* _custom_data, float _d);
 
 }
 

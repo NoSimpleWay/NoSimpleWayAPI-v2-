@@ -499,10 +499,11 @@ EWindowMain::EWindowMain()
 
 
 
-
+			std::string decorative_element_name[3] = { "Цвет фона","Цвет текста","Цвет рамки" };
 			//####### COSMETIC SEGMENT #######
 			//block
 			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			
 				EButtonGroup* cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(256.0f, 160.0f), EGUIStyle::active_style);
 				filter_block_group->add_group(cosmetic_segment);
 
@@ -512,6 +513,9 @@ EWindowMain::EWindowMain()
 				*cosmetic_segment->stretch_x_by_parent_size = false;
 				*cosmetic_segment->stretch_y_by_parent_size = true;
 
+				for (int clr = 0; clr < 3; clr++)
+				if (rand() % 3 == 0)
+				{
 				// // // // // // //// // // // // // //// // // // // // //
 				Helper::hsvrgba_color* HRA_color = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
 				//HRA_color->h = rand() % 360;
@@ -521,15 +525,18 @@ EWindowMain::EWindowMain()
 
 				jc_button = EntityButton::create_named_color_button
 				(
-
 					new ERegionGabarite(242.0f, 38.0f),
 					cosmetic_segment,
 					EFont::font_list[0],
 					EGUIStyle::active_style,
-					"Цвет",
+					decorative_element_name[clr],
 					HRA_color
 				);
+				EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_transfer_pointer_to_color_data_container);
+				//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
+
 				cosmetic_segment->button_list.push_back(jc_button);
+			}
 				// // // // // // //// // // // // // //// // // // // // //
 				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		}
@@ -1163,7 +1170,7 @@ EWindowMain::EWindowMain()
 
 	if (true)
 	{
-		main_button_group = EButtonGroup::create_color_editor_group(new ERegionGabarite(200.0f, 200.0f, 620.0f, 380.0f), EGUIStyle::active_style);
+		main_button_group = EButtonGroup::create_color_editor_group(new ERegionGabarite(200.0f, 200.0f, 860.0f, 380.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
 		*main_button_group->is_active = false;
 		EButtonGroup::color_editor_group = main_button_group;

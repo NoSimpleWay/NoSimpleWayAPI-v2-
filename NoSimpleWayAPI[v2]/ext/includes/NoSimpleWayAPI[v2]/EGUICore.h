@@ -284,8 +284,9 @@ public:
 
 	EDataContainer*						data_container		= nullptr;
 
-	std::vector<group_update_action>	actions_on_update;
-	std::vector<group_draw_action>		actions_on_draw;
+	std::vector<group_update_action>		actions_on_update;
+	std::vector<group_draw_action>			actions_on_draw;
+	std::vector<group_select_action>		actions_on_select_button;
 
 
 	//static fuck_you_leatherman
@@ -298,6 +299,8 @@ public:
 	void phantom_translate_if_need					();
 
 	EntityButton* selected_button;
+
+	void select_this_button(EntityButton* _but);
 };
 
 //class EButtonContainer
