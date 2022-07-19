@@ -530,7 +530,8 @@ EWindowMain::EWindowMain()
 					EFont::font_list[0],
 					EGUIStyle::active_style,
 					decorative_element_name[clr],
-					HRA_color
+					HRA_color,
+					ColorButtonMode::CBM_OPEN_WINDOW
 				);
 				EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_transfer_pointer_to_color_data_container);
 				//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);

@@ -730,6 +730,11 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 		EDataContainer_Button_StoreColor* button_data	= static_cast<EDataContainer_Button_StoreColor*>(_custom_data->data_container);
 		EDataContainer_Group_ColorEditor* group_data	= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
 
+		if ((button_data->selected_mode == ColorButtonMode::CBM_SELECT_COLOR) && (!button_data->stored_color->is_from_collection))
+		{
+			delete button_data->stored_color;
+		}
+
 		group_data->target_color = button_data->stored_color;
 
 		group_data->crosshair_slider_data_container->target_pointer_x = &group_data->target_color->h;
@@ -759,6 +764,8 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 		}
 		else
 		{EInputCore::logger_simple_error("pointer to color group is null!");}
+
+
 	}
 }
 
@@ -1071,15 +1078,16 @@ void EDataActionCollection::action_unbing_color(Entity* _entity, ECustomData* _c
 	EButtonGroup*						parent_group	= static_cast<EntityButton*>(_entity)->parent_button_group;
 	EButtonGroup*						root_group		= parent_group->root_group;
 	EDataContainer_Group_ColorEditor*	group_data		= static_cast<EDataContainer_Group_ColorEditor*>(root_group->data_container);
-	EDataContainer_Button_StoreColor*	button_data		= group_data->target_data_container_with_color;
+	EDataContainer_Button_StoreColor*	target_button_data		= group_data->target_data_container_with_color;
 
 	//get current color
-	Helper::hsvrgba_color* original_color = button_data->stored_color;
+	Helper::hsvrgba_color* original_color = target_button_data->stored_color;
 
 	//create non-binded color
 	Helper::hsvrgba_color* HRA_color = new Helper::hsvrgba_color();
 	HRA_color->set_color(original_color);//apply old color to non-binded
-	button_data->stored_color = HRA_color;
+	HRA_color->is_from_collection = false;
+	target_button_data->stored_color = HRA_color;
 
 	group_data->crosshair_slider_data_container->target_pointer_x = &HRA_color->h;
 	group_data->crosshair_slider_data_container->target_pointer_y = &HRA_color->s;
@@ -1138,7 +1146,8 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 		EFont::font_list[0],
 		EGUIStyle::active_style,
 		"Цвет",
-		HRA_color
+		HRA_color,
+		ColorButtonMode::CBM_SELECT_COLOR
 	);
 	Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
 	group_data->pointer_to_color_collection_group->button_list.push_back(jc_button);

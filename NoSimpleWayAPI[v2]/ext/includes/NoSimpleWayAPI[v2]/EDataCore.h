@@ -318,10 +318,12 @@ public:
 	//EDataContainer*			additional_data_container;
 };
 
+
 class EDataContainer_Button_StoreColor : public EDataContainer
 {
 public:
 	Helper::hsvrgba_color* stored_color;
+	ColorButtonMode selected_mode = ColorButtonMode::CBM_OPEN_WINDOW;
 };
 
 class EDataContainer_Group_ColorEditor : public EDataContainer

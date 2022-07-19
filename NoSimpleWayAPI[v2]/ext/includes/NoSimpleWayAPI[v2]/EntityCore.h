@@ -196,7 +196,8 @@ public:
 		EFont*					_font,
 		EGUIStyle*				_style,
 		std::string				_text,
-		Helper::hsvrgba_color* _color
+		Helper::hsvrgba_color* _color,
+		ColorButtonMode			_mode
 	);
 	
 	static EntityButton* create_default_radial_button

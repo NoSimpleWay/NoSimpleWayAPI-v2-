@@ -2,6 +2,13 @@
 #include <vector>
 #include <string>
 
+enum class ColorButtonMode
+{
+	CBM_OPEN_WINDOW,
+	CBM_SELECT_COLOR
+
+};
+
 class ETestObject
 {
 public:
@@ -30,6 +37,8 @@ public:
 		float a = 1.0f;			// a fraction between 0 and 1
 
 		void set_color(hsvrgba_color* _HRA_color);
+
+		bool is_from_collection = true;
 	};
 
 	static std::vector<hsvrgba_color*> registered_color_list;

@@ -709,7 +709,7 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	return jc_button;
 }
 
-EntityButton* EntityButton::create_named_color_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, std::string _text, Helper::hsvrgba_color* _color)
+EntityButton* EntityButton::create_named_color_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, std::string _text, Helper::hsvrgba_color* _color, ColorButtonMode _mode)
 {
 	EntityButton* jc_button = EntityButton::create_default_clickable_button
 	(
@@ -719,8 +719,11 @@ EntityButton* EntityButton::create_named_color_button(ERegionGabarite* _region_g
 	);
 
 	EDataContainer_Button_StoreColor* data = new EDataContainer_Button_StoreColor();
+	//if (!data->stored_color->is_from_collection)
 	EntityButton::get_last_custom_data(jc_button)->data_container = data;
 	data->stored_color = _color;
+	data->selected_mode = _mode;
+
 	//std::cout << data->stored_color << std::endl;
 
 	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_stored_color_as_box);

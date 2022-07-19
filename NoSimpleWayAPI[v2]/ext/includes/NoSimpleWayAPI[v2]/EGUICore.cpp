@@ -2033,8 +2033,10 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 			EFont::font_list[0],
 			EGUIStyle::active_style,
 			"Цвет",
-			HRA_color
+			HRA_color,
+			ColorButtonMode::CBM_SELECT_COLOR
 		);
+
 		//std::cout << HRA_color << std::endl;
 		Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
 
