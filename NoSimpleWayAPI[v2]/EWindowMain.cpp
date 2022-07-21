@@ -158,9 +158,7 @@ EWindowMain::EWindowMain()
 	};
 
 
-	main_button_group = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(1920.0f, 1000.0f),	EGUIStyle::active_style);
-		main_button_group->root_group = main_button_group;
-		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+
 
 		//test blocks
 		if (false)
@@ -180,7 +178,7 @@ EWindowMain::EWindowMain()
 					test_group->button_list.push_back(test_button);
 				}
 			}
-			group_list.push_back(main_button_group);
+			button_group_list.push_back(main_button_group);
 			EButtonGroup::refresh_button_group(main_button_group);
 		}
 	////////////////////////////////////////////////
@@ -211,6 +209,8 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(1920.0f, 1000.0f),
 			EGUIStyle::active_style
 		);
+		main_button_group->actions_on_resize_window.push_back(&EDataActionCollection::action_resize_to_full_window);
+
 		main_button_group->root_group = main_button_group;
 		main_button_group->can_be_moved = false;
 		main_button_group->can_resize_to_workspace_size = false;
@@ -222,7 +222,7 @@ EWindowMain::EWindowMain()
 		for (int z = 0; z < 100; z++)
 		{
 			//whole filter block
-			EButtonGroup* filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 200.0f), EGUIStyle::active_style);
+			EButtonGroup* filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 400.0f), EGUIStyle::active_style);
 
 			*filter_block_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
@@ -544,11 +544,9 @@ EWindowMain::EWindowMain()
 
 
 
-		group_list.push_back(main_button_group);
+		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
-
-	//TODO: change pointer to non-pointer in font glyph
 
 	//skill gems
 	if (false)
@@ -605,7 +603,7 @@ EWindowMain::EWindowMain()
 			jc_button->custom_data_list.push_back(custom_data_for_gem_button);
 		}
 
-		group_list.push_back(main_button_group);
+		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
 
 
@@ -765,7 +763,7 @@ EWindowMain::EWindowMain()
 
 
 
-		group_list.push_back(main_button_group);
+		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
 
@@ -943,7 +941,7 @@ EWindowMain::EWindowMain()
 		jc_button->generate_vertex_buffer_for_all_sprite_layers();
 
 
-		group_list.push_back(main_button_group);
+		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
 
@@ -996,7 +994,7 @@ EWindowMain::EWindowMain()
 			"Глянец"
 		);
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::global_gloss_multiplier;
-		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 2.0f;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 4.0f;
 		jc_button_group->button_list.push_back(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
 
@@ -1165,7 +1163,7 @@ EWindowMain::EWindowMain()
 		jc_button_group->button_list.push_back(jc_button);
 		// // // // // // //
 
-		group_list.push_back(main_button_group);
+		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
 
@@ -1177,7 +1175,7 @@ EWindowMain::EWindowMain()
 		EButtonGroup::color_editor_group = main_button_group;
 		//main_button_group->can_be_moved = true;
 
-		group_list.push_back(main_button_group);
+		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
 		
 		

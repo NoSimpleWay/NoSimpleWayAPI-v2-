@@ -427,6 +427,9 @@ namespace EDataActionCollection
 
 		//select
 		void action_set_new_color_to_button			(EButtonGroup* _group);
+
+		//window resize
+		void action_resize_to_full_window			(EButtonGroup* _group);
 	
 
 	void action_draw_stored_color_as_box						(Entity* _entity, ECustomData* _custom_data, float _d);

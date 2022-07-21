@@ -56,7 +56,7 @@ public:
 	void			GUI_draw_default(float _d);
 	virtual void	GUI_draw_additional(float _d);
 
-	std::vector<EButtonGroup*> group_list;
+	std::vector<EButtonGroup*> button_group_list;
 	void			GUI_draw_second_pass(float _d);
 
 	//////////////		_STATIC SECTION_		////////////////////////
@@ -132,6 +132,11 @@ enum ChildAlignMode
 	ALIGN_FREE
 };
 
+typedef void (*group_draw_action)			(EButtonGroup*);
+typedef void (*group_update_action)			(EButtonGroup*);
+typedef void (*group_select_action)			(EButtonGroup*);
+typedef void (*group_window_resize_action)	(EButtonGroup*);
+
 class EButtonGroup
 {
 public:
@@ -179,8 +184,8 @@ public:
 	float* higher_culling_line_for_bg = new float(0.0f);
 	float* lower_culling_line_for_bg = new float(0.0f);
 
-	float* base_height		= new float(0.0f);
-	float* base_width		= new float(0.0f);
+	float base_height;
+	float base_width;
 
 	void update(float _d);
 	void draw();
@@ -284,9 +289,10 @@ public:
 
 	EDataContainer*						data_container		= nullptr;
 
-	std::vector<group_update_action>		actions_on_update;
-	std::vector<group_draw_action>			actions_on_draw;
-	std::vector<group_select_action>		actions_on_select_button;
+	std::vector<group_update_action>			actions_on_update;
+	std::vector<group_draw_action>				actions_on_draw;
+	std::vector<group_select_action>			actions_on_select_button;
+	std::vector<group_window_resize_action>		actions_on_resize_window;
 
 
 	//static fuck_you_leatherman

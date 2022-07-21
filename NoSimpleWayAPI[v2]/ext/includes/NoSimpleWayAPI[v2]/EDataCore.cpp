@@ -402,7 +402,7 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	for (EWindow* window : EWindow::window_list)
-	for (EButtonGroup* group:window->group_list)
+	for (EButtonGroup* group:window->button_group_list)
 	{
 		EButtonGroup::change_style (group,((EntityButton*)_entity)->parent_button_group->selected_style);
 	}
@@ -1002,6 +1002,21 @@ void EDataActionCollection::action_set_new_color_to_button(EButtonGroup* _group)
 	static_cast<EDataContainer_Group_ColorEditor*>(_group->root_group->data_container)->target_data_container_with_color->stored_color
 	=
 	static_cast<EDataContainer_Group_ColorEditor*>(_group->root_group->data_container)->target_color;
+}
+
+void EDataActionCollection::action_resize_to_full_window(EButtonGroup* _group)
+{
+	_group->region_gabarite->size_x = NS_EGraphicCore::SCREEN_WIDTH;
+	_group->region_gabarite->size_y = NS_EGraphicCore::SCREEN_HEIGHT;
+
+	_group->base_width				= NS_EGraphicCore::SCREEN_WIDTH;
+	_group->base_height				= NS_EGraphicCore::SCREEN_HEIGHT;
+
+	//EInputCore::logger_simple_info("group resized");
+
+	EButtonGroup::change_style(_group, _group->selected_style);
+	//EButtonGroup::apply_style_to_button_group(_group, _group->selected_style);
+	//EButtonGroup::refresh_button_group(_group);
 }
 
 void EDataActionCollection::action_draw_color_rectangle_for_group(EButtonGroup* _group)

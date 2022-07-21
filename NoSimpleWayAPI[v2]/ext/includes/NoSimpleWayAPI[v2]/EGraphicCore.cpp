@@ -7,7 +7,7 @@
 
 namespace NS_EGraphicCore
 {
-	int								SCREEN_WIDTH = 800, SCREEN_HEIGHT = 600;
+	int								SCREEN_WIDTH = 1920, SCREEN_HEIGHT = 1080;
 	float							correction_x = 1.0f, correction_y = 1.0f;
 	Shader*							shader_texture_atlas_putter;
 
@@ -184,22 +184,19 @@ void ERenderBatcher::draw_call()
 	//if (get_shader() == nullptr) { EInputCore::logger_simple_error("you mad?"); }
 	if ((last_vertice_buffer_index > 0) && (batcher_shader != nullptr))
 	{
-		NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
 		
 		batcher_shader->use();
 		apply_transform();
 
 		//batcher_shader->setInt("texture1", 0);
 
-		if (gl_vertex_attribute_total_count > 10)
+		if (gl_vertex_attribute_total_count > 12)
 		{
 			glActiveTexture(GL_TEXTURE0);
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+
 			glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
-			NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
+			//NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
 
 			
 
@@ -208,13 +205,10 @@ void ERenderBatcher::draw_call()
 			for (int i = 0; i < texture_skydome_levels; i++)
 			{
 				glActiveTexture(GL_TEXTURE1 + i);
-
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-
 				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());//1
+
+
+				
 				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", i + 1);
 
 			}
@@ -503,10 +497,10 @@ void NS_EGraphicCore::switch_to_this_FBO(ETextureAtlas* _atlas)
 void NS_EGraphicCore::initiate_graphic_core()
 {
 	glfwInit();
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 4);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	glfwWindowHint(GLFW_SAMPLES, 2);
+	//glfwWindowHint(GLFW_SAMPLES, 0);
 
 #ifdef __APPLE__
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
@@ -690,6 +684,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
 		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
 
+		NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
 		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * (1.0f / i + 1.0f));
 		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * (1.0f / i + 1.0f));
 
@@ -738,7 +733,7 @@ void NS_EGraphicCore::create_styles()
 	EGUIStyle* just_created_style = new EGUIStyle("lead_and_gold");
 		//***********************************************************
 		//main gutton group
-		/*just_created_style->set_color_array(TextColorArray::WHITE,		0.9f,	0.85f,	0.6f,	1.0f);
+		/*just_created_style->set_color_array(TextColorArray::WHITE,	0.9f,	0.85f,	0.6f,	1.0f);
 		just_created_style->set_color_array(TextColorArray::GRAY,		0.7f,	0.68f,	0.65f,	1.0f);
 		just_created_style->set_color_array(TextColorArray::BLACK,		0.5f,	0.48f,	0.46f,	1.0f);
 		just_created_style->set_color_array(TextColorArray::RED,		1.0f,	0.3f,	0.15f,	1.0f);
@@ -2896,11 +2891,28 @@ void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, i
 	//glViewport(0, 0, width, height);
 	glfwGetWindowSize(window, &NS_EGraphicCore::SCREEN_WIDTH, &NS_EGraphicCore::SCREEN_HEIGHT);
 	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
+
+
 	
 
 	std::cout << "Resize event width:" << NS_EGraphicCore::SCREEN_WIDTH << " height: " << NS_EGraphicCore::SCREEN_HEIGHT << std::endl;
 
 	recalculate_correction();
+
+	//EInputCore::logger_param("window list size", EWindow::button_group_list);
+	for (EWindow* w : EWindow::window_list)
+	{
+		//EInputCore::logger_simple_info("window list");
+		for (EButtonGroup* bg : w->button_group_list)
+		{
+			//EInputCore::logger_simple_info("button group list");
+			for (group_window_resize_action gwra : bg->actions_on_resize_window)
+			{
+				//EInputCore::logger_simple_info("try call GWRA");
+				gwra(bg);
+			}
+		}
+	}
 }
 
 void NS_EGraphicCore::recalculate_correction()
@@ -3188,7 +3200,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 			if (batcher->last_vertice_buffer_index >= vertices_buffer_capacity)
 			{
 				batcher->draw_call();
-				EInputCore::logger_simple_info("draw call, because vertex buffer is full!");
+				//EInputCore::logger_simple_info("draw call, because vertex buffer is full!");
 			}
 			//ERenderBatcher::check_batcher(batcher);
 		}

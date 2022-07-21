@@ -103,11 +103,14 @@ void main()
 	interpolation_A = 1.0f - interpolation_B;
 	
 	
-	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 2.0f * normal_map_multiplier;
-	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 2.0f * normal_map_multiplier;
+	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 0.665f * normal_map_multiplier;
+	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 0.665f * normal_map_multiplier;
 	
-	reflect_pos_x = 0.999f * (normal_x + 1.0f)		+ (gl_FragCoord.x / 1920.0f		* (1.0f - abs(normal_x)))	* 0.999f + 0.999 / 2.0f * abs(normal_x);
-	reflect_pos_y = 0.333f * (normal_y + 1.0f)		+ (WorldPosition.y / 1080.0f	* (1.0f - abs(normal_y)))	* 0.333f + 0.333 / 2.0f * abs(normal_y);
+	reflect_pos_x =  (gl_FragCoord.x / 2880.0f	* (1.0f - abs(normal_x))) * 0.333f + 0.333f + normal_x;
+	reflect_pos_y =  (WorldPosition.y / 1800.0f	* (1.0f - abs(normal_y))) * 0.333f + 0.333f + normal_y;
+	
+	//reflect_pos_x = gl_FragCoord.x / 2880.0f;
+	//reflect_pos_y = WorldPosition.y / 1800.0f;
 	//((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 	
 	//reflect_pos_y += (ground_level * 2.0f - 1.0f);
@@ -138,9 +141,9 @@ void main()
 	else
 	{c_rgba = clamp (texture(SD_array[4], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)), vec4(0.0f), vec4(2.0f, 1.9f, 1.8f, 1.0f));}
 	
-	dist_x = (reflect_pos_x * 0.333f - sun_position_x);
+	dist_x = (reflect_pos_x - sun_position_x);
 	dist_y = (reflect_pos_y - sun_position_y);
-	dist_x /= (1080.0f / 1920.0f);
+	dist_x /= (1800.0f / 2880.0f);
 	
 	dist_total = length(vec2(dist_x, dist_y)) - sun_size / 10.0f;
 	//dist_total = pow(dist_total, 2.0);

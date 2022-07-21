@@ -28,7 +28,7 @@ void EWindow::update_additional(float _d)
 void EWindow::GUI_update_default(float _d)
 {
 
-	for (EButtonGroup* b_group : group_list)
+	for (EButtonGroup* b_group : button_group_list)
 	if
 	(
 		(b_group != nullptr)
@@ -71,7 +71,7 @@ void EWindow::GUI_update_default(float _d)
 		}
 	}
 
-	for (EButtonGroup* b_group : group_list)
+	for (EButtonGroup* b_group : button_group_list)
 	if
 	(
 		(b_group != nullptr)
@@ -103,7 +103,7 @@ void EWindow::GUI_draw_default(float _d)
 {
 
 
-	for (EButtonGroup* b_group : group_list)
+	for (EButtonGroup* b_group : button_group_list)
 	if
 	(
 		(b_group != nullptr)
@@ -136,7 +136,7 @@ void EWindow::GUI_draw_second_pass(float _d)
 	//	{b_group->header_button_group->draw_second_pass();}
 	//}
 	int counter = 0;
-	for (EButtonGroup* b_group : group_list)
+	for (EButtonGroup* b_group : button_group_list)
 	if ((b_group != nullptr) && (*b_group->is_active) && (counter <= 10))
 	{
 		b_group->draw_second_pass();
@@ -778,7 +778,7 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 	//		*group->need_redraw = false;
 	//}
 
-	if ((*_group->need_redraw))
+	//if ((*_group->need_redraw))
 	{
 		EButtonGroup::generate_brick_textured_bg(_group);
 		*_group->need_redraw = false;
@@ -1095,8 +1095,8 @@ void EButtonGroup::expand_to_workspace_size()
 {
 	if (can_resize_to_workspace_size)
 	{
-		region_gabarite->size_x = *base_width + *border_left + *border_right;
-		region_gabarite->size_y = *base_height + *border_bottom + *border_up;
+		region_gabarite->size_x = base_width + *border_left + *border_right;
+		region_gabarite->size_y = base_height + *border_bottom + *border_up;
 	}
 
 	for (EButtonGroup* group : group_list)
@@ -1435,7 +1435,7 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 			if ((*_group->button_group_type == ButtonGroupType::BGT_DARKEN) && (_style->button_group_darken != nullptr))
 			{ EBrickStyle::apply_brick_parameters_to_button_group(_group, _style->button_group_darken); }
 
-			EButtonGroup::generate_brick_textured_bg(_group);
+			//EButtonGroup::generate_brick_textured_bg(_group);
 		}
 		else
 		{
@@ -1455,7 +1455,7 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 			{
 				csa(but, _style);
 
-				but->generate_vertex_buffer_for_all_sprite_layers();
+				//but->generate_vertex_buffer_for_all_sprite_layers();
 			}
 		}
 
@@ -2053,8 +2053,8 @@ EButtonGroup* EButtonGroup::create_base_button_group(ERegionGabarite* _region, E
 	EButtonGroup* just_created_button_group = new EButtonGroup(_region);
 	just_created_button_group->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
 
-	*just_created_button_group->base_width	= _region->size_x;
-	*just_created_button_group->base_height	= _region->size_y;
+	just_created_button_group->base_width	= _region->size_x;
+	just_created_button_group->base_height	= _region->size_y;
 
 	if (_default_bg)
 	{

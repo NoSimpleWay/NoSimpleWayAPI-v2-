@@ -168,7 +168,7 @@ int main()
 
 		glfwPollEvents();
 
-		NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
+		//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
 		NS_EGraphicCore::gl_set_blend_mode_default();
 		
 		if (!EInputCore::MOUSE_BUTTON_LEFT) { EButtonGroup::focused_button_group = nullptr; }
@@ -219,7 +219,7 @@ int main()
 
 		}
 		
-			NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+			//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
 			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
 
 			for (int i = 0; i < texture_skydome_levels; i++)
