@@ -690,20 +690,20 @@ void ETextArea::update(float _d)
 
 				if
 					(
-						(EInputCore::MOUSE_POSITION_X >= glyph->world_position_x)
+						(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= glyph->world_position_x)
 						&&
-						(EInputCore::MOUSE_POSITION_X <= glyph->world_position_x + glyph->size_x)
+						(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= glyph->world_position_x + glyph->size_x)
 						&&
-						(EInputCore::MOUSE_POSITION_Y >= glyph->world_position_y)
+						(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= glyph->world_position_y)
 						&&
-						(EInputCore::MOUSE_POSITION_Y <= glyph->world_position_y + glyph->size_y)
+						(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= glyph->world_position_y + glyph->size_y)
 						)
 				{
 					//*selected_glyph_position = glyph_id;
 					//*selected_glyph_position = -1;
 					//NS_FONT_UTILS::active_text_area = this;
 
-					if (EInputCore::MOUSE_POSITION_X <= glyph->world_position_x + glyph->size_x / 2.0f)
+					if (EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= glyph->world_position_x + glyph->size_x / 2.0f)
 					{
 						*selected_glyph_position = glyph_id;
 						//*selected_left_side = true;
@@ -736,13 +736,13 @@ void ETextArea::update(float _d)
 		(
 			(*can_be_edited)
 			&&
-			(EInputCore::MOUSE_POSITION_X >= region_gabarite->world_position_x)
+			(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_x)
 			&&
-			(EInputCore::MOUSE_POSITION_X <= region_gabarite->world_position_x + region_gabarite->size_x)
+			(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_x + region_gabarite->size_x)
 			&&
-			(EInputCore::MOUSE_POSITION_Y >= region_gabarite->world_position_y)
+			(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_y)
 			&&
-			(EInputCore::MOUSE_POSITION_Y <= region_gabarite->world_position_y + region_gabarite->size_y)
+			(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_y + region_gabarite->size_y)
 			&&
 			(
 				(EClickableArea::active_clickable_region == nullptr)

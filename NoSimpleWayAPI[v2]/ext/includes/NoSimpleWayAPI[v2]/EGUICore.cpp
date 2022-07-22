@@ -110,9 +110,7 @@ void EWindow::GUI_draw_default(float _d)
 		&&
 		(*b_group->is_active)
 		&&
-		(b_group->region_gabarite->world_position_y <= 1920.0f)
-		&&
-		(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y >= 0.0f)
+		(b_group->can_see_this_group())
 
 	)
 	{
@@ -251,7 +249,7 @@ void EButtonGroup::update(float _d)
 		&&
 		(EClickableArea::active_clickable_region == nullptr))
 	{
-		root_group->translate(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f, true);
+		root_group->translate(EInputCore::MOUSE_SPEED_X / NS_EGraphicCore::current_zoom, EInputCore::MOUSE_SPEED_Y / NS_EGraphicCore::current_zoom, 0.0f, true);
 	}
 	else
 	{
@@ -311,11 +309,11 @@ void EButtonGroup::draw()
 
 		glScissor
 		(
-			region_gabarite->world_position_x,
-			*lower_culling_line_for_bg,
+			region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
+			*lower_culling_line_for_bg * NS_EGraphicCore::current_zoom,
 
-			region_gabarite->size_x,
-			max(0.0f, *higher_culling_line_for_bg - *lower_culling_line_for_bg)
+			region_gabarite->size_x * NS_EGraphicCore::current_zoom,
+			max(0.0f, *higher_culling_line_for_bg - *lower_culling_line_for_bg) * NS_EGraphicCore::current_zoom
 		);
 
 		//BG
@@ -364,7 +362,13 @@ void EButtonGroup::draw()
 		//ELEMENTS
 		if (parent_group == nullptr)
 		{
-			glScissor(region_gabarite->world_position_x, region_gabarite->world_position_y, region_gabarite->size_x, region_gabarite->size_y);
+			glScissor
+			(
+				region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
+				region_gabarite->world_position_y * NS_EGraphicCore::current_zoom,
+				region_gabarite->size_x * NS_EGraphicCore::current_zoom,
+				region_gabarite->size_y * NS_EGraphicCore::current_zoom
+			);
 		}
 		else
 		{
@@ -372,11 +376,11 @@ void EButtonGroup::draw()
 			{
 				glScissor
 				(
-					region_gabarite->world_position_x,
-					*lower_culling_line,
+					region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
+					*lower_culling_line * NS_EGraphicCore::current_zoom,
 
-					region_gabarite->size_x,
-					max(0.0f, *higher_culling_line - *lower_culling_line)
+					region_gabarite->size_x* NS_EGraphicCore::current_zoom,
+					max(0.0f, *higher_culling_line - *lower_culling_line) * NS_EGraphicCore::current_zoom
 				);
 			}
 		}
@@ -528,7 +532,13 @@ void EButtonGroup::draw()
 		NS_EGraphicCore::test_batcher->draw_call();
 
 			glEnable(GL_SCISSOR_TEST);
-			glScissor(region_gabarite->world_position_x, region_gabarite->world_position_y, region_gabarite->size_x, region_gabarite->size_y);
+			glScissor
+			(
+				region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
+				region_gabarite->world_position_y * NS_EGraphicCore::current_zoom,
+				region_gabarite->size_x * NS_EGraphicCore::current_zoom,
+				region_gabarite->size_y * NS_EGraphicCore::current_zoom
+			);
 			for (group_draw_action gda : actions_on_draw)
 			{gda(this);}
 
@@ -946,7 +956,7 @@ void EButtonGroup::group_stretch_x()
 	{
 		if ((*group->stretch_x_by_parent_size) && (group->region_gabarite->size_x != final_size))
 		{
-			group->region_gabarite->size_x = round(final_size);
+			group->region_gabarite->size_x = (final_size);
 			*group->need_redraw = true;
 		}
 	}
@@ -983,7 +993,6 @@ void EButtonGroup::group_stretch_y()
 			}
 			else
 			{
-
 				target_size					-= group->region_gabarite->size_y;
 				constant_element_sizes_y	+= group->region_gabarite->size_y;
 			}
@@ -1004,7 +1013,7 @@ void EButtonGroup::group_stretch_y()
 	{
 		if (*group->stretch_y_by_parent_size)
 		{
-			group->region_gabarite->size_y = round(max(final_size, group->min_size_y));
+			group->region_gabarite->size_y = (max(final_size, group->min_size_y));
 			//group->region_gabarite->size_y = round(max(final_size, 0.0f));
 			//group->region_gabarite->size_y = round(final_size);
 		}
@@ -1583,15 +1592,15 @@ bool EButtonGroup::catched_by_mouse(EButtonGroup* _group)
 {
 	if
 	(
-		(*_group->higher_culling_line_for_bg > *_group->lower_culling_line_for_bg)
+		(*_group->higher_culling_line_for_bg * NS_EGraphicCore::current_zoom > *_group->lower_culling_line_for_bg * NS_EGraphicCore::current_zoom)
 		&&
-		(EInputCore::MOUSE_POSITION_X >= _group->region_gabarite->world_position_x)
+		(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= _group->region_gabarite->world_position_x)
 		&&
-		(EInputCore::MOUSE_POSITION_X <= _group->region_gabarite->world_position_x + _group->region_gabarite->size_x)
+		(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= _group->region_gabarite->world_position_x + _group->region_gabarite->size_x)
 		&&
-		(EInputCore::MOUSE_POSITION_Y >= *_group->lower_culling_line_for_bg)
+		(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= *_group->lower_culling_line_for_bg)
 		&&
-		(EInputCore::MOUSE_POSITION_Y <= *_group->higher_culling_line_for_bg)
+		(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= *_group->higher_culling_line_for_bg)
 	)
 	{
 		return true;
@@ -1646,9 +1655,9 @@ EButtonGroup* EButtonGroup::add_group(EButtonGroup* _new_group)
 void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 {
 
-	region_gabarite->world_position_x += _x;
-	region_gabarite->world_position_y += _y;
-	region_gabarite->world_position_z += _z;
+	region_gabarite->world_position_x += (_x);
+	region_gabarite->world_position_y += (_y);
+	region_gabarite->world_position_z += (_z);
 
 	*higher_culling_line += _y;
 	*higher_culling_line_for_bg += _y;
@@ -1658,22 +1667,22 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 
 	if (_move_positions)
 	{
-		region_gabarite->offset_x += _x;
-		region_gabarite->offset_y += _y;
-		region_gabarite->offset_z += _z;
+		region_gabarite->offset_x += (_x);
+		region_gabarite->offset_y += (_y);
+		region_gabarite->offset_z += (_z);
 	}
 
 	if (can_see_this_group())
 	{
-		translate_content(_x, _y, _z, true);
+		translate_content((_x), (_y), (_z), true);
 	}
 	else
 	{
 		region_gabarite->have_phantom_translation = true;
 
-		region_gabarite->phantom_translate_x += _x;
-		region_gabarite->phantom_translate_y += _y;
-		region_gabarite->phantom_translate_z += _z;
+		region_gabarite->phantom_translate_x += (_x);
+		region_gabarite->phantom_translate_y += (_y);
+		region_gabarite->phantom_translate_z += (_z);
 	}
 
 
@@ -1706,13 +1715,13 @@ bool EButtonGroup::can_see_this_group()
 	(
 		(*is_active)
 		&&
-		(region_gabarite->world_position_x <= NS_EGraphicCore::SCREEN_WIDTH)
+		(region_gabarite->world_position_x <= NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom)
 		&&
 		(region_gabarite->world_position_x + region_gabarite->size_x > 0.0f)
 
 		&&
 
-		(region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT)
+		(region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
 		&&
 		(region_gabarite->world_position_y + region_gabarite->size_y > 0.0f)
 	)

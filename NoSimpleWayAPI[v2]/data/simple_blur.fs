@@ -25,7 +25,7 @@ void main()
 	for (int i = -8; i <= 8; i++)
 	for (int j = -8; j <= 8; j++)
 	{
-		mul = 1.0f / (i*i + j*j + 1);
+		mul = 1.0f / ((i*i + j*j) + 1);
 		
 		result_color += texture(texture1, TexCoord + vec2(blur_size_x * j, blur_size_y * i)).rgba * mul;
 		divis += mul;

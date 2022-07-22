@@ -35,7 +35,7 @@ namespace NS_EGraphicCore
 
 	float							current_offset_x			= 0.0f;
 	float							current_offset_y			= 0.0f;
-	float							current_zoom				= 1.0f;
+	float							current_zoom				= 1.5f;
 	float							global_normal_multiplier	= 1.0f;
 	float							global_gloss_multiplier		= 1.0f;
 	float							sun_x						= 0.5f;
@@ -184,7 +184,7 @@ void ERenderBatcher::draw_call()
 	//if (get_shader() == nullptr) { EInputCore::logger_simple_error("you mad?"); }
 	if ((last_vertice_buffer_index > 0) && (batcher_shader != nullptr))
 	{
-		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+		
 		
 		batcher_shader->use();
 		apply_transform();
@@ -194,9 +194,10 @@ void ERenderBatcher::draw_call()
 		if (gl_vertex_attribute_total_count > 12)
 		{
 			glActiveTexture(GL_TEXTURE0);
+			NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
 
 			glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
-			//NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
 
 			
 
@@ -206,7 +207,7 @@ void ERenderBatcher::draw_call()
 			{
 				glActiveTexture(GL_TEXTURE1 + i);
 				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());//1
-
+				NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
 
 				
 				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", i + 1);
@@ -224,6 +225,9 @@ void ERenderBatcher::draw_call()
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_bright", NS_EGraphicCore::sun_bright);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_exp", NS_EGraphicCore::sun_exp);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("ground_level", NS_EGraphicCore::ground_level);
+
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("scr_x", NS_EGraphicCore::SCREEN_WIDTH);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("scr_y", NS_EGraphicCore::SCREEN_HEIGHT);
 
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("time",NS_EGraphicCore::time_total);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("move_multiplier",NS_EGraphicCore::move_multiplier);
@@ -277,10 +281,22 @@ void ERenderBatcher::apply_transform()
 	//NS_EGraphicCore::make_transform_from_size(this, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 	NS_EGraphicCore::matrix_transform_default = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
 	NS_EGraphicCore::matrix_transform_default = glm::translate(NS_EGraphicCore::matrix_transform_default, glm::vec3(-1.0f, -1.0f, 0.0f));
-	NS_EGraphicCore::matrix_transform_default = glm::scale(NS_EGraphicCore::matrix_transform_default, glm::vec3(2.0f / transform_screen_size_x, 2.0f / transform_screen_size_y, 1.0f));
+
+	NS_EGraphicCore::matrix_transform_default = glm::scale
+	(
+		NS_EGraphicCore::matrix_transform_default, glm::vec3
+		(
+			2.0f / transform_screen_size_x,
+			2.0f / transform_screen_size_y,
+			1.0f
+		)
+	);
 
 	unsigned int transformLoc = glGetUniformLocation(batcher_shader->ID, "transform");
 	glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(NS_EGraphicCore::matrix_transform_default));
+
+	unsigned int zoom_loc = glGetUniformLocation(batcher_shader->ID, "zoom");
+	glUniform1f(zoom_loc, NS_EGraphicCore::current_zoom);
 }
 
 void ERenderBatcher::set_shader(Shader* _shader)
@@ -645,7 +661,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_DefaultGabarites::texture_gabarite_skydome						= NS_EGraphicCore::put_texture_to_atlas("data/textures/skydome.png", NS_EGraphicCore::default_texture_atlas);
 	//NS_DefaultGabarites::texture_slider_bg_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 	
-	NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+	NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_NEAREST);
 
 	for (int i = 0; i < texture_skydome_levels; i++)
 	{NS_EGraphicCore::skydome_texture_atlas[i] = new ETextureAtlas(2048 / (pow(2.0, i * 1)), 2048 / (pow(2.0, i * 1)));}
@@ -654,6 +670,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 	{
 		set_source_FBO(GL_TEXTURE0, default_texture_atlas->get_colorbuffer());
+		NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
 		set_target_FBO(skydome_texture_atlas[0]->get_framebuffer());
 
 		NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
@@ -682,9 +699,10 @@ void NS_EGraphicCore::initiate_graphic_core()
 	{
 		
 		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
-		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
-
 		NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
+		NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+
 		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * (1.0f / i + 1.0f));
 		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * (1.0f / i + 1.0f));
 
@@ -1826,6 +1844,9 @@ void NS_EGraphicCore::load_texture(char const* _path, int _id)
 
 ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, ETextureAtlas* _atlas)
 {
+	float stored_zoom = NS_EGraphicCore::current_zoom;
+	NS_EGraphicCore::current_zoom = 1.0f;
+
 	for (int i = 0; i < _full_path.length(); i++)
 	{
 		if (_full_path[i] == '\\') { _full_path[i] = '/'; }
@@ -1955,6 +1976,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 	//glActiveTexture(GL_TEXTURE0);
 	//glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
 
+	NS_EGraphicCore::current_zoom = stored_zoom;
 	return new_gabarite;
 }
 
@@ -3455,20 +3477,20 @@ void ESprite::sprite_calculate_uv()
 {
 	if (main_texture != nullptr)
 	{
-		uv_start_x = *main_texture->uv_start_x + fragment_offset_x / main_texture->target_atlas->get_atlas_size_x();
-		uv_start_y = *main_texture->uv_start_y + fragment_offset_y / main_texture->target_atlas->get_atlas_size_y();
+		uv_start_x = *main_texture->uv_start_x + (fragment_offset_x + 0.5f) / main_texture->target_atlas->get_atlas_size_x();
+		uv_start_y = *main_texture->uv_start_y + (fragment_offset_y + 0.5f) / main_texture->target_atlas->get_atlas_size_y();
 
-		uv_end_x = uv_start_x + (fragment_size_x) / main_texture->target_atlas->get_atlas_size_x();
-		uv_end_y = uv_start_y + (fragment_size_y) / main_texture->target_atlas->get_atlas_size_y();
+		uv_end_x = uv_start_x + (fragment_size_x - 1.5f) / main_texture->target_atlas->get_atlas_size_x();
+		uv_end_y = uv_start_y + (fragment_size_y - 1.5f) / main_texture->target_atlas->get_atlas_size_y();
 	}
 
 	if (normal_texture != nullptr)
 	{
-		normal_uv_start_x = *normal_texture->uv_start_x + fragment_offset_x / normal_texture->target_atlas->get_atlas_size_x();
-		normal_uv_start_y = *normal_texture->uv_start_y + fragment_offset_y / normal_texture->target_atlas->get_atlas_size_y();
+		normal_uv_start_x = *normal_texture->uv_start_x + (fragment_offset_x + 0.5f) / normal_texture->target_atlas->get_atlas_size_x();
+		normal_uv_start_y = *normal_texture->uv_start_y + (fragment_offset_y + 0.5f) / normal_texture->target_atlas->get_atlas_size_y();
 		 
-		normal_uv_end_x = normal_uv_start_x + (fragment_size_x) / normal_texture->target_atlas->get_atlas_size_x();
-		normal_uv_end_y = normal_uv_start_y + (fragment_size_y) / normal_texture->target_atlas->get_atlas_size_y();
+		normal_uv_end_x = normal_uv_start_x + (fragment_size_x - 1.5f) / normal_texture->target_atlas->get_atlas_size_x();
+		normal_uv_end_y = normal_uv_start_y + (fragment_size_y - 1.5f) / normal_texture->target_atlas->get_atlas_size_y();
 	}
 	else
 	{
@@ -3481,11 +3503,11 @@ void ESprite::sprite_calculate_uv()
 
 	if (gloss_texture != nullptr)
 	{
-		gloss_uv_start_x	= *gloss_texture->uv_start_x + fragment_offset_x / gloss_texture->target_atlas->get_atlas_size_x();
-		gloss_uv_start_y	= *gloss_texture->uv_start_y + fragment_offset_y / gloss_texture->target_atlas->get_atlas_size_y();
+		gloss_uv_start_x	= *gloss_texture->uv_start_x + (fragment_offset_x + 0.5f) / gloss_texture->target_atlas->get_atlas_size_x();
+		gloss_uv_start_y	= *gloss_texture->uv_start_y + (fragment_offset_y + 0.5f) / gloss_texture->target_atlas->get_atlas_size_y();
 
-		gloss_uv_end_x		= gloss_uv_start_x + (fragment_size_x) / gloss_texture->target_atlas->get_atlas_size_x();
-		gloss_uv_end_y		= gloss_uv_start_y + (fragment_size_y) / gloss_texture->target_atlas->get_atlas_size_y();
+		gloss_uv_end_x		= gloss_uv_start_x +(fragment_size_x - 1.5f) / gloss_texture->target_atlas->get_atlas_size_x();
+		gloss_uv_end_y		= gloss_uv_start_y +(fragment_size_y - 1.5f) / gloss_texture->target_atlas->get_atlas_size_y();
 	}
 	else
 	{

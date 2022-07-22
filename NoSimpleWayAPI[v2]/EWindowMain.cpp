@@ -206,7 +206,7 @@ EWindowMain::EWindowMain()
 	{
 		main_button_group = EButtonGroup::create_root_button_group
 		(
-			new ERegionGabarite(1920.0f, 1000.0f),
+			new ERegionGabarite(192.0f, 100.0f),
 			EGUIStyle::active_style
 		);
 		main_button_group->actions_on_resize_window.push_back(&EDataActionCollection::action_resize_to_full_window);
@@ -222,7 +222,7 @@ EWindowMain::EWindowMain()
 		for (int z = 0; z < 100; z++)
 		{
 			//whole filter block
-			EButtonGroup* filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 400.0f), EGUIStyle::active_style);
+			EButtonGroup* filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 200.0f), EGUIStyle::active_style);
 
 			*filter_block_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
@@ -1010,6 +1010,22 @@ EWindowMain::EWindowMain()
 		);
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::global_normal_multiplier;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 2.0f;
+		jc_button_group->button_list.push_back(jc_button);
+		// // // // // // //// // // // // // //// // // // // // //
+
+		// // // // // // //// // // // // // //// // // // // // //
+		jc_button = EntityButton::create_vertical_named_slider
+		(
+
+			new ERegionGabarite(170.0f, 38.0f),
+			jc_button_group,
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			"Çóì"
+		);
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::current_zoom;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 2.0f;
+		EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_force_resize_callback);
 		jc_button_group->button_list.push_back(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
 

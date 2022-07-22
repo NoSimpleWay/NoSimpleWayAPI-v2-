@@ -13,10 +13,11 @@ out vec2 GlossMapTexCoord;
 out vec3 WorldPosition;
 
 uniform mat4 transform;
+uniform float zoom = 1.0f;
 
 void main()
 {
-	gl_Position = transform * vec4(aPos.x, aPos.y + aPos.z, 1.0, 1.0);
+	gl_Position = transform * vec4(aPos.x * zoom, (aPos.y + aPos.z) * zoom, 1.0, 1.0);
 	
 	ourColor = aColor;
 	TexCoord = vec2(aTexCoord.x, aTexCoord.y);
@@ -28,8 +29,8 @@ void main()
 	=
 	vec3
 	(
-		aPos[0],
-		aPos[1],
+		aPos[0] * zoom,
+		aPos[1] * zoom,
 		aPos[2]
 	);
 	

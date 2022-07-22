@@ -417,6 +417,8 @@ namespace EDataActionCollection
 
 	void action_convert_HSV_to_RGB				(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_button				(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_force_resize_callback			(Entity* _entity, ECustomData* _custom_data, float _d);
 	
 	//group section
 		//draw

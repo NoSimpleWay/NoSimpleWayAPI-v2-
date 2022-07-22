@@ -43,6 +43,9 @@ uniform float screen_offset_x;
 uniform float screen_offset_y;
 uniform float screen_offset_z;
 
+uniform float scr_x;
+uniform float scr_y;
+
 float c_r;
 float c_g;
 float c_b;
@@ -106,8 +109,8 @@ void main()
 	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 0.665f * normal_map_multiplier;
 	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 0.665f * normal_map_multiplier;
 	
-	reflect_pos_x =  (gl_FragCoord.x / 2880.0f	* (1.0f - abs(normal_x))) * 0.333f + 0.333f + normal_x;
-	reflect_pos_y =  (WorldPosition.y / 1800.0f	* (1.0f - abs(normal_y))) * 0.333f + 0.333f + normal_y;
+	reflect_pos_x =  (gl_FragCoord.x	/ scr_x	* (1.0f - abs(normal_x))) * 0.333f + 0.333f + normal_x;
+	reflect_pos_y =  (WorldPosition.y	/ scr_y	* (1.0f - abs(normal_y))) * 0.333f + 0.333f + normal_y;
 	
 	//reflect_pos_x = gl_FragCoord.x / 2880.0f;
 	//reflect_pos_y = WorldPosition.y / 1800.0f;
@@ -143,7 +146,7 @@ void main()
 	
 	dist_x = (reflect_pos_x - sun_position_x);
 	dist_y = (reflect_pos_y - sun_position_y);
-	dist_x /= (1800.0f / 2880.0f);
+	dist_x /= (scr_y / scr_x);
 	
 	dist_total = length(vec2(dist_x, dist_y)) - sun_size / 10.0f;
 	//dist_total = pow(dist_total, 2.0);

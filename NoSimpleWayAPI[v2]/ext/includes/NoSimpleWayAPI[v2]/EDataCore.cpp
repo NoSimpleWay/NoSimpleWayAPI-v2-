@@ -258,7 +258,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			float old_value = *data_bar->value_pointer;
 			*data_bar->value_pointer
 				=
-				round
+				
 				(
 					*data_bar->current_percent
 					*
@@ -821,7 +821,7 @@ void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECus
 		ERegionGabarite* gab = _custom_data->clickable_area_list[0]->region_gabarite;
 		
 
-		float value = (EInputCore::MOUSE_POSITION_X - gab->world_position_x) / gab->size_x;
+		float value = (EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom - gab->world_position_x) / gab->size_x;
 		value = max(value, 0.0f);
 		value = min(value, 1.0f);
 
@@ -830,7 +830,7 @@ void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECus
 
 
 
-		value = (EInputCore::MOUSE_POSITION_Y - gab->world_position_y) / gab->size_y;
+		value = (EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom - gab->world_position_y) / gab->size_y;
 		value = max(value, 0.0f);
 		value = min(value, 1.0f);
 		*data->target_pointer_y = value * data->max_y;
@@ -938,9 +938,9 @@ void EDataActionCollection::action_update_vertical_named_slider(Entity* _entity,
 			||
 			(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
 		)
-		{data->current_value += (EInputCore::MOUSE_SPEED_X * 0.1f) / data->operable_area_size_x;}
+		{data->current_value += (EInputCore::MOUSE_SPEED_X / NS_EGraphicCore::current_zoom * 0.1f) / data->operable_area_size_x;}
 		else
-		{data->current_value = (EInputCore::MOUSE_POSITION_X - *data->pointer_to_bg->world_position_x) / data->operable_area_size_x;}
+		{data->current_value = (EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom - *data->pointer_to_bg->world_position_x) / data->operable_area_size_x;}
 
 		data->current_value = max(data->current_value, 0.0f);
 		data->current_value = min(data->current_value, 1.0f);
@@ -1006,11 +1006,11 @@ void EDataActionCollection::action_set_new_color_to_button(EButtonGroup* _group)
 
 void EDataActionCollection::action_resize_to_full_window(EButtonGroup* _group)
 {
-	_group->region_gabarite->size_x = NS_EGraphicCore::SCREEN_WIDTH;
-	_group->region_gabarite->size_y = NS_EGraphicCore::SCREEN_HEIGHT;
-
-	_group->base_width				= NS_EGraphicCore::SCREEN_WIDTH;
-	_group->base_height				= NS_EGraphicCore::SCREEN_HEIGHT;
+	_group->region_gabarite->size_x = (NS_EGraphicCore::SCREEN_WIDTH	/ NS_EGraphicCore::current_zoom);
+	_group->region_gabarite->size_y = (NS_EGraphicCore::SCREEN_HEIGHT	/ NS_EGraphicCore::current_zoom);
+																		
+	_group->base_width				= (NS_EGraphicCore::SCREEN_WIDTH	/ NS_EGraphicCore::current_zoom);
+	_group->base_height				= (NS_EGraphicCore::SCREEN_HEIGHT	/ NS_EGraphicCore::current_zoom);
 
 	//EInputCore::logger_simple_info("group resized");
 
@@ -1195,6 +1195,31 @@ void EDataActionCollection::action_select_this_button(Entity* _entity, ECustomDa
 	else
 	{
 		EInputCore::logger_simple_error("parent group is null!");
+	}
+}
+
+void EDataActionCollection::action_force_resize_callback(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if
+	(
+		(EInputCore::MOUSE_BUTTON_LEFT)
+		&&
+		(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
+	)
+	{
+		for (EWindow* w : EWindow::window_list)
+		{
+			//EInputCore::logger_simple_info("window list");
+			for (EButtonGroup* bg : w->button_group_list)
+			{
+				//EInputCore::logger_simple_info("button group list");
+				for (group_window_resize_action gwra : bg->actions_on_resize_window)
+				{
+					//EInputCore::logger_simple_info("try call GWRA");
+					gwra(bg);
+				}
+			}
+		}
 	}
 }
 
@@ -1490,8 +1515,8 @@ void EClickableArea::check_all_catches()
 				*catched_body = false;
 			}
 
-			*catch_offset_x = EInputCore::MOUSE_POSITION_X - region_gabarite->world_position_x;
-			*catch_offset_y = EInputCore::MOUSE_POSITION_Y - region_gabarite->world_position_y;
+			*catch_offset_x = EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom - region_gabarite->world_position_x;
+			*catch_offset_y = EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom - region_gabarite->world_position_y;
 		}
 		else
 		{
@@ -1921,13 +1946,13 @@ bool ERegionGabarite::overlapped_by_mouse()
 {
 	if
 	(
-		(EInputCore::MOUSE_POSITION_X >= world_position_x)
+		(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= world_position_x)
 		&&
-		(EInputCore::MOUSE_POSITION_X <= world_position_x + size_x)
+		(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= world_position_x + size_x)
 		&&
-		(EInputCore::MOUSE_POSITION_Y >= world_position_y)
+		(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= world_position_y)
 		&&
-		(EInputCore::MOUSE_POSITION_Y <= world_position_y + size_y)
+		(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= world_position_y + size_y)
 	)
 	{
 		return true;
