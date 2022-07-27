@@ -302,11 +302,15 @@ public:
 	void translate							(float _x, float _y, float _z, bool _affect_child);
 	void translate_content					(float _x, float _y, float _z, bool _move_slider);
 	bool can_see_this_group();
-	void phantom_translate_if_need					();
+	void phantom_translate_if_need();
 
 	EntityButton* selected_button;
 
 	void select_this_button(EntityButton* _but);
+
+	bool phantom_redraw = false;
+
+	int seed = 0;
 };
 
 //class EButtonContainer

@@ -282,6 +282,12 @@ void EButtonGroup::draw()
 		//(*region_gabarite->world_position_y + *region_gabarite->size_y >= *lower_culling_line_for_bg)
 	)
 	{
+		if (phantom_redraw)
+		{
+			EButtonGroup::generate_vertex_buffer_for_group(this);
+			phantom_redraw = false;
+		}
+
 		batcher_for_default_draw->draw_call();
 
 		glDisable(GL_SCISSOR_TEST);
@@ -780,65 +786,49 @@ void EButtonGroup::calculate_culling_lines(EButtonGroup* _group)
 
 void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 {
-	//for (EButtonGroup* group : _group->group_list)
-	//if ((*group->need_redraw) && (true))
-	//{
-	//		EButtonGroup::generate_brick_textured_bg(group);
 
-	//		*group->need_redraw = false;
-	//}
-
-	//if ((*_group->need_redraw))
+	if (_group->can_see_this_group())
 	{
 		EButtonGroup::generate_brick_textured_bg(_group);
 		*_group->need_redraw = false;
-	}
 
-	if (_group->background_sprite_layer != nullptr)
-	{
-		_group->background_sprite_layer->sprite_layer_set_world_position
-		(
-			_group->region_gabarite->world_position_x,
-			_group->region_gabarite->world_position_y,
-			_group->region_gabarite->world_position_z
-		);
-
-		_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("Button group background");
-	}
-
-	if (_group->slider != nullptr)
-	{
-		for (change_style_action csa : _group->slider->action_on_change_style_list)
+		if (_group->background_sprite_layer != nullptr)
 		{
-			csa(_group->slider, _group->selected_style);
+			_group->background_sprite_layer->sprite_layer_set_world_position
+			(
+				_group->region_gabarite->world_position_x,
+				_group->region_gabarite->world_position_y,
+				_group->region_gabarite->world_position_z
+			);
 
+			_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("Button group background");
+		}
+
+		if (_group->slider != nullptr)
+		{
+			for (change_style_action csa : _group->slider->action_on_change_style_list)
+			{
+				csa(_group->slider, _group->selected_style);
+
+				_group->slider->generate_vertex_buffer_for_all_sprite_layers();
+			}
+			_group->slider->set_world_position(_group->slider->world_position_x, _group->slider->world_position_y, _group->slider->world_position_z);
 			_group->slider->generate_vertex_buffer_for_all_sprite_layers();
 		}
-		_group->slider->set_world_position(_group->slider->world_position_x, _group->slider->world_position_y, _group->slider->world_position_z);
-		_group->slider->generate_vertex_buffer_for_all_sprite_layers();
-	}
 
-	//if (group_row_list.empty())
-	{
+		
 		for (EntityButton* but : _group->button_list)
 		{
 			but->set_world_position(but->world_position_x, but->world_position_y, but->world_position_z);
-
-
-			//if
-			//(
-			//	(*but->world_position_y + *but->button_gabarite->size_y >= *_group->lower_culling_line)
-			//	&&
-			//	(*but->world_position_y <= *_group->higher_culling_line)
-			//)
-			{
-				but->generate_vertex_buffer_for_all_sprite_layers();
-			}
+			but->generate_vertex_buffer_for_all_sprite_layers();
 		}
+
+		for (EButtonGroup* group : _group->group_list) { EButtonGroup::generate_vertex_buffer_for_group(group); }
 	}
-
-	for (EButtonGroup* group : _group->group_list) { EButtonGroup::generate_vertex_buffer_for_group(group); }
-
+	else
+	{
+		_group->phantom_redraw = true;
+	}
 }
 
 void EButtonGroup::substretch_groups_y()
@@ -1132,12 +1122,6 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 	_group->realign_all_buttons();
 
 	EButtonGroup::generate_vertex_buffer_for_group(_group);
-
-	//for (EButtonGroup* group: _group->group_list)
-	//{EButtonGroup::refresh_button_group(group);}
-
-	if (_group->header_button_group != nullptr)
-	{EButtonGroup::refresh_button_group(_group->header_button_group);}
 }
 
 void EButtonGroup::realign_all_buttons()
@@ -1482,6 +1466,7 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 {
 	if ((_group != nullptr) && (_group->selected_style != nullptr) && (_group->background_sprite_layer != nullptr))
 	{
+		if (_group->seed == 0) { _group->seed = rand() % 70000; }
 
 		NS_ERenderCollection::temporary_sprites = true;
 
@@ -1525,6 +1510,7 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 				*_group->selected_style->button_group_main->subdivision_y
 			);
 
+			srand(_group->seed);
 			NS_ERenderCollection::generate_brick_texture
 			(
 				_group->region_gabarite,
@@ -1569,21 +1555,10 @@ void EButtonGroup::change_style(EButtonGroup* _group, EGUIStyle* _style)
 {
 	EButtonGroup::apply_style_to_button_group(_group, _style);
 
-	//down to child elements
+	//recursive down to child elements
 	for (EButtonGroup* group:_group->group_list)
 	if (group != nullptr)
-	{
-		EButtonGroup::change_style(group, _style);
-	}
-
-	
-	//_group->realign_all_buttons();
-	//_group->align_groups();
-	//EButtonGroup::calculate_culling_lines(_group);
-	if (_group->header_button_group != nullptr)
-	{
-		EButtonGroup::change_style(_group->header_button_group, _style);
-	}
+	{EButtonGroup::change_style(group, _style);}
 
 	EButtonGroup::refresh_button_group(_group);
 }
