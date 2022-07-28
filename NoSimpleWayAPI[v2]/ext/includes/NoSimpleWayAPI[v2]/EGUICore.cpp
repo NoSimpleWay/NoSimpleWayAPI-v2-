@@ -810,7 +810,7 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 			{
 				csa(_group->slider, _group->selected_style);
 
-				_group->slider->generate_vertex_buffer_for_all_sprite_layers();
+				//_group->slider->generate_vertex_buffer_for_all_sprite_layers();
 			}
 			_group->slider->set_world_position(_group->slider->world_position_x, _group->slider->world_position_y, _group->slider->world_position_z);
 			_group->slider->generate_vertex_buffer_for_all_sprite_layers();
@@ -1235,6 +1235,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 
 	ECustomData* custom_data = new ECustomData();
 	EDataContainerScrollBar* data_container = new EDataContainerScrollBar();
+	
 	custom_data->actions_on_update.push_back(EDataActionCollection::action_update_slider);
 	but->action_on_change_style_list.push_back(action_change_style_slider);
 

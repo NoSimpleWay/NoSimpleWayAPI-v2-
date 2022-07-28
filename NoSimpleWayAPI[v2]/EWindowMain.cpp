@@ -204,7 +204,7 @@ EWindowMain::EWindowMain()
 	//filters block
 	if (true)
 	{
-		main_button_group = EButtonGroup::create_root_button_group
+		main_button_group = EButtonGroup::create_button_group_without_bg
 		(
 			new ERegionGabarite(192.0f, 100.0f),
 			EGUIStyle::active_style

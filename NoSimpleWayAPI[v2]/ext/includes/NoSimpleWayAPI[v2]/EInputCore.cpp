@@ -187,7 +187,7 @@ void EInputCore::char_input_callback(GLFWwindow* window, unsigned int _char)
 		else
 			if (inputed_c > 255) { inputed_c -= 848; }
 
-	std::cout << "input character: " << inputed_c << "|" << (int)_char << "[  " << (char)inputed_c << " ]" << " (" << _char << ")" << std::endl;
+	//std::cout << "input character: " << inputed_c << "|" << (int)_char << "[  " << (char)inputed_c << " ]" << " (" << _char << ")" << std::endl;
 	//EInputCore::logger_simple_info(std::to_string((int)'É'));
 	EInputCore::LAST_INPUTED_CHAR = (char)inputed_c;
 

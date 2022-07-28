@@ -1933,8 +1933,8 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 
 			new_gabarite->set_uv_parameters
 			(
-				(float)(place_x) / (float)(_atlas->get_atlas_size_x()),
-				(float)(place_y) / (float)(_atlas->get_atlas_size_y()),
+				(float)(place_x + 0.5f) / (float)(_atlas->get_atlas_size_x()),
+				(float)(place_y + 0.5f) / (float)(_atlas->get_atlas_size_y()),
 
 				(float)(NS_EGraphicCore::last_texture_width		- 1)	/ (float)(_atlas->get_atlas_size_x()),
 				(float)(NS_EGraphicCore::last_texture_height	- 1)	/ (float)(_atlas->get_atlas_size_y())
@@ -3182,45 +3182,62 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 		//std::cout << "-------" << std::endl;
 
 		//[32000]
-		unsigned int vertices_buffer_capacity = MAX_SHAPES_COUNT * VERTICES_PER_SHAPE * EXPECTABLE_PARAMETERS_COUNT_FOR_VERTEX;
+		//size of BATCHER vertex array
+		unsigned int batcher_size = TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE - 200;
 		//EInputCore::logger_param("vertices_buffer_capacity", vertices_buffer_capacity);
-
-		unsigned int passes = ceil(*last_buffer_id / (float)vertices_buffer_capacity);
-		//EInputCore::logger_param("passes", passes);
-
+		
 		//[31872]
-		unsigned int data_size = *last_buffer_id;
+		//size of SPRITE LAYER vertex array
+		unsigned int remaining_data = *last_buffer_id;
 		//EInputCore::logger_param("data_size", data_size);
 
+		//sprite layer array can be bigger than batcher array. in this case we need copy sprite array partially
+		//unsigned int passes = ceil(layer_data_count / (float)batcher_size);
+		//EInputCore::logger_param("passes", passes);
 
-		for (unsigned int i = 0; i < passes; i++)
+		unsigned int copy_start = 0;
+		unsigned int batcher_free_space = batcher_size - batcher->last_vertice_buffer_index;
+		unsigned int data_part = 0;
+
+		for (;;)
 		{
-			ERenderBatcher::check_batcher(batcher, data_size);
-			//31872 current
-			memcpy
-			(
-				batcher->vertex_buffer + batcher->last_vertice_buffer_index,
-				vertex_buffer + (size_t)(i * vertices_buffer_capacity),
-				min(data_size - i * vertices_buffer_capacity, vertices_buffer_capacity - batcher->last_vertice_buffer_index) * sizeof(*vertex_buffer)
-			);
 
 			
-			batcher->last_vertice_buffer_index += min(data_size, vertices_buffer_capacity - batcher->last_vertice_buffer_index);
-			
 
-
-
-			/*if (batcher->last_vertice_buffer_index >= 30'000)
+			//if batcher have free space
+			if (batcher_free_space > 0)
 			{
-				EInputCore::logger_param("last buffer id", batcher->last_vertice_buffer_index);
-				EInputCore::logger_param("data size", data_size);
-				std::cout << std::endl;
-			}*/
+				data_part = min(remaining_data, batcher_free_space);
 
-			if (batcher->last_vertice_buffer_index >= vertices_buffer_capacity)
+				memcpy
+				(
+					batcher->vertex_buffer + batcher->last_vertice_buffer_index,	//add to batcher vertex buffer
+					vertex_buffer + (copy_start),							//get from sprite layer vertex buffer
+					data_part * sizeof(float)
+				);
+
+				copy_start += data_part;
+
+				batcher->last_vertice_buffer_index += data_part;
+				remaining_data -= data_part;
+				batcher_free_space -= data_part;
+
+
+				//if (batcher->last_vertice_buffer_index >= batcher_size)
+				//{
+				//	batcher->draw_call();
+				//	batcher_free_space = batcher_size;
+				//}
+			}
+			else
 			{
 				batcher->draw_call();
-				//EInputCore::logger_simple_info("draw call, because vertex buffer is full!");
+				batcher_free_space = batcher_size;
+			}
+
+			if (remaining_data == 0)
+			{
+				break;
 			}
 			//ERenderBatcher::check_batcher(batcher);
 		}
@@ -3475,8 +3492,8 @@ void ESprite::sprite_calculate_uv()
 {
 	if (main_texture != nullptr)
 	{
-		uv_start_x = *main_texture->uv_start_x + (fragment_offset_x + 0.5f) / main_texture->target_atlas->get_atlas_size_x();
-		uv_start_y = *main_texture->uv_start_y + (fragment_offset_y + 0.5f) / main_texture->target_atlas->get_atlas_size_y();
+		uv_start_x = *main_texture->uv_start_x + (fragment_offset_x + 0.0f) / main_texture->target_atlas->get_atlas_size_x();
+		uv_start_y = *main_texture->uv_start_y + (fragment_offset_y + 0.0f) / main_texture->target_atlas->get_atlas_size_y();
 
 		uv_end_x = uv_start_x + (fragment_size_x - 1.5f) / main_texture->target_atlas->get_atlas_size_x();
 		uv_end_y = uv_start_y + (fragment_size_y - 1.5f) / main_texture->target_atlas->get_atlas_size_y();
@@ -3484,8 +3501,8 @@ void ESprite::sprite_calculate_uv()
 
 	if (normal_texture != nullptr)
 	{
-		normal_uv_start_x = *normal_texture->uv_start_x + (fragment_offset_x + 0.5f) / normal_texture->target_atlas->get_atlas_size_x();
-		normal_uv_start_y = *normal_texture->uv_start_y + (fragment_offset_y + 0.5f) / normal_texture->target_atlas->get_atlas_size_y();
+		normal_uv_start_x = *normal_texture->uv_start_x + (fragment_offset_x + 0.0f) / normal_texture->target_atlas->get_atlas_size_x();
+		normal_uv_start_y = *normal_texture->uv_start_y + (fragment_offset_y + 0.0f) / normal_texture->target_atlas->get_atlas_size_y();
 		 
 		normal_uv_end_x = normal_uv_start_x + (fragment_size_x - 1.5f) / normal_texture->target_atlas->get_atlas_size_x();
 		normal_uv_end_y = normal_uv_start_y + (fragment_size_y - 1.5f) / normal_texture->target_atlas->get_atlas_size_y();
@@ -3501,8 +3518,8 @@ void ESprite::sprite_calculate_uv()
 
 	if (gloss_texture != nullptr)
 	{
-		gloss_uv_start_x	= *gloss_texture->uv_start_x + (fragment_offset_x + 0.5f) / gloss_texture->target_atlas->get_atlas_size_x();
-		gloss_uv_start_y	= *gloss_texture->uv_start_y + (fragment_offset_y + 0.5f) / gloss_texture->target_atlas->get_atlas_size_y();
+		gloss_uv_start_x	= *gloss_texture->uv_start_x + (fragment_offset_x + 0.0f) / gloss_texture->target_atlas->get_atlas_size_x();
+		gloss_uv_start_y	= *gloss_texture->uv_start_y + (fragment_offset_y + 0.0f) / gloss_texture->target_atlas->get_atlas_size_y();
 
 		gloss_uv_end_x		= gloss_uv_start_x +(fragment_size_x - 1.5f) / gloss_texture->target_atlas->get_atlas_size_x();
 		gloss_uv_end_y		= gloss_uv_start_y +(fragment_size_y - 1.5f) / gloss_texture->target_atlas->get_atlas_size_y();
