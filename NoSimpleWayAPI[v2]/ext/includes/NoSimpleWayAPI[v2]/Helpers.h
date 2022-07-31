@@ -26,22 +26,34 @@ public:
 	static std::string float_to_string(float _f);
 	static std::string float_to_string_with_precision(float _f, float _precision);
 
+
+
 	struct hsvrgba_color
 	{
-		float r = 1.0f;			// a fraction between 0 and 1
-		float g;			// a fraction between 0 and 1
-		float b;			// a fraction between 0 and 1
-		float h = 360.0f;		// angle in degrees
-		float s = 1.0f;		// a fraction between 0 and 360
-		float v = 1.0f;		// a fraction between 0 and 1
-		float a = 1.0f;			// a fraction between 0 and 1
+		float r = 1.0f;			//	red
+		float g;				//	green
+		float b;				//	blue
+
+		float h = 360.0f;		//	HUE
+		float s = 1.0f;			//	saturation
+		float v = 1.0f;			//	value
+
+		float a = 1.0f;			//	alpha
 
 		void set_color(hsvrgba_color* _HRA_color);
 
 		bool is_from_collection = true;
+
+		//unsigned int pointers_to_color = 0;
 	};
 
-	static std::vector<hsvrgba_color*> registered_color_list;
+	struct HRA_color_collection
+	{
+		hsvrgba_color	target_color;
+		std::string		name;
+	};
+
+	static std::vector<HRA_color_collection*> registered_color_list;
 
 	struct rgba_color {
 		double r;       // a fraction between 0 and 1

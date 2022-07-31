@@ -84,7 +84,7 @@ vec3 sun_light_gloss = vec3(1.5f, 1.0f, 0.5f);
 vec3 sun_light_matte = vec3(1.5f, 1.5f, 1.0f);
 vec3 sun_light;
 
-vec3 sky_light_gloss = vec3(0.9f, 1.1f, 1.2f);
+vec3 sky_light_gloss = vec3(0.8f, 1.1f, 1.3f);
 vec3 sky_light_matte = vec3(0.85f, 0.875f, 0.9f);
 vec3 sky_light;
 
@@ -109,8 +109,10 @@ void main()
 	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 0.665f * normal_map_multiplier;
 	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 0.665f * normal_map_multiplier;
 	
-	reflect_pos_x =  (gl_FragCoord.x	/ scr_x	* (1.0f - abs(normal_x))) * 0.333f + 0.333f + normal_x;
-	reflect_pos_y =  (WorldPosition.y	/ scr_y	* (1.0f - abs(normal_y))) * 0.333f + 0.333f + normal_y;
+	reflect_pos_x =  (gl_FragCoord.x	/ scr_x	* (1.0f - abs(normal_x))) * 0.75f + 0.333f + normal_x;
+	//reflect_pos_x *= scr_x / scr_y;
+	
+	reflect_pos_y =  (WorldPosition.y	/ scr_y	* (1.0f - abs(normal_y))) * 0.75f + 0.25f + normal_y;
 	
 	//reflect_pos_x = gl_FragCoord.x / 2880.0f;
 	//reflect_pos_y = WorldPosition.y / 1800.0f;
@@ -121,7 +123,7 @@ void main()
 	vec2
 	(
 		//base offset		screen position offset					//normal offset
-		reflect_pos_x  + time / 50.0f * move_multiplier,
+		(reflect_pos_x) * scr_x / scr_y - 0.333f / 1.0f + time / 50.0f * move_multiplier,
 		
 		
 		reflect_pos_y
@@ -171,9 +173,9 @@ void main()
 	texture(texture1, TexCoord).rgb
 	*
 	(
-		vec3(c_rgba) * brightness_multiplier * gloss_result
+		vec3(c_rgba)
 		+
-		sky_light * (1.0f - gloss_result)
+		sky_light * (1.0f - gloss_result) * 0.35f
 		+
 		sun_light * sun_bright * gloss_result
 	)

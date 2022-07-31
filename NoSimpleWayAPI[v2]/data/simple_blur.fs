@@ -22,10 +22,10 @@ void main()
 	// linearly interpolate between both textures (80% container, 20% awesomeface)
 	result_color = vec4(0.0f);
 	
-	for (int i = -8; i <= 8; i++)
-	for (int j = -8; j <= 8; j++)
+	for (int i = -4; i <= 4; i++)
+	for (int j = -4; j <= 4; j++)
 	{
-		mul = 1.0f / ((i*i + j*j) + 1);
+		mul = 1.0f / ((i*i + j*j) + 1.0f) * (texture(texture1, TexCoord).a * 0.2f + 0.8f);
 		
 		result_color += texture(texture1, TexCoord + vec2(blur_size_x * j, blur_size_y * i)).rgba * mul;
 		divis += mul;
@@ -33,8 +33,10 @@ void main()
 	
 	result_color /= divis;	
 	//result_color.a += 0.2;
+	//result_color.a = 1.0;
 	
 	FragColor.rgba = result_color;
+	//FragColor.rgba = texture(texture1, TexCoord);
 	//FragColor.a = 1.0f;
 	//FragColor.r = gl_FragCoord.x / 1920.0f;
 	//FragColor.g = gl_FragCoord.y / 1080.0f;

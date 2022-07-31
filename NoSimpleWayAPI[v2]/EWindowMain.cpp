@@ -188,16 +188,19 @@ EWindowMain::EWindowMain()
 	/*	REGISTER COLORS	*/
 		for (int i = 0; i < 20; i++)
 		{
-			Helper::hsvrgba_color* HRA_color = new Helper::hsvrgba_color();
+			Helper::hsvrgba_color HRA_color;
 
-			HRA_color->h = rand() % 360;
-			HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
-			HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
-			HRA_color->a = 1.0f - pow((rand() % 100) / 100.0f, 4.0);
+			HRA_color.h = rand() % 360;
+			HRA_color.s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
+			HRA_color.v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
+			HRA_color.a = 1.0f - pow((rand() % 100) / 100.0f, 4.0);
 
-			Helper::hsv2rgb(HRA_color);
+			Helper::hsv2rgb(&HRA_color);
 
-			Helper::registered_color_list.push_back(HRA_color);
+			Helper::HRA_color_collection* HRA_collection = new Helper::HRA_color_collection();
+			HRA_collection->target_color = HRA_color;
+
+			Helper::registered_color_list.push_back(HRA_collection);
 		}
 	/*------------------*/
 
@@ -517,7 +520,8 @@ EWindowMain::EWindowMain()
 				if (rand() % 3 == 0)
 				{
 				// // // // // // //// // // // // // //// // // // // // //
-				Helper::hsvrgba_color* HRA_color = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
+				Helper::HRA_color_collection*	HRA_collection = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
+				Helper::hsvrgba_color*			HRA_color = &HRA_collection->target_color;
 				//HRA_color->h = rand() % 360;
 				//HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
 				//HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
@@ -530,10 +534,11 @@ EWindowMain::EWindowMain()
 					EFont::font_list[0],
 					EGUIStyle::active_style,
 					decorative_element_name[clr],
+					HRA_collection,
 					HRA_color,
 					ColorButtonMode::CBM_OPEN_WINDOW
 				);
-				EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_transfer_pointer_to_color_data_container);
+				//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_transfer_pointer_to_color_data_container);
 				//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
 
 				cosmetic_segment->button_list.push_back(jc_button);

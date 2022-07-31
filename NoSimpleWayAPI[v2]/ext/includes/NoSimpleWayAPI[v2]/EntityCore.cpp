@@ -709,7 +709,17 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	return jc_button;
 }
 
-EntityButton* EntityButton::create_named_color_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, std::string _text, Helper::hsvrgba_color* _color, ColorButtonMode _mode)
+EntityButton* EntityButton::create_named_color_button
+(
+	ERegionGabarite*				_region_gabarite,
+	EButtonGroup*					_parent_group,
+	EFont*							_font,
+	EGUIStyle*						_style,
+	std::string						_text,
+	Helper::HRA_color_collection*	_color_collection,
+	Helper::hsvrgba_color*			_color,
+	ColorButtonMode					_mode
+)
 {
 	EntityButton* jc_button = EntityButton::create_default_clickable_button
 	(

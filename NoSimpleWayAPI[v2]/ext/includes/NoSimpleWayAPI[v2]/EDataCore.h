@@ -341,13 +341,10 @@ public:
 
 	//float*							pointer_to_alpha;
 
-	Helper::hsvrgba_color*				target_color;
+	Helper::hsvrgba_color*				work_color;
 
 	EButtonGroup*						pointer_to_color_box_group;
 	EButtonGroup*						pointer_to_color_collection_group;
-
-
-
 
 	//data containers of color ajust buttons
 	EDataContainer_VerticalNamedSlider* slider_data_value_container;

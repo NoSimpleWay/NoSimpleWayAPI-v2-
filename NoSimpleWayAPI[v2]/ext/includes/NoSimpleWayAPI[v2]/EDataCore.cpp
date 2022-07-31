@@ -727,45 +727,101 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 {
 	if (_custom_data->data_container != nullptr)
 	{
-		EDataContainer_Button_StoreColor* button_data	= static_cast<EDataContainer_Button_StoreColor*>(_custom_data->data_container);
-		EDataContainer_Group_ColorEditor* group_data	= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
-
-		if ((button_data->selected_mode == ColorButtonMode::CBM_SELECT_COLOR) && (!button_data->stored_color->is_from_collection))
-		{
-			delete button_data->stored_color;
-		}
-
-		group_data->target_color = button_data->stored_color;
-
-		group_data->crosshair_slider_data_container->target_pointer_x = &group_data->target_color->h;
-		group_data->crosshair_slider_data_container->target_pointer_y = &group_data->target_color->s;
-
-		group_data->slider_data_value_container->pointer_to_value = &group_data->target_color->v;
-		group_data->slider_data_alpha_container->pointer_to_value = &group_data->target_color->a;
-
-		//group_data->target_data_with_color = static_cast<EDataContainer_Button_StoreColor*>(_custom_data->data_container);
 		*EButtonGroup::color_editor_group->is_active = true;
-		
-		
-		//int id = 0;
-		if (group_data->pointer_to_color_collection_group != nullptr)
-		for (EntityButton* but : group_data->pointer_to_color_collection_group->button_list)
-		{
-			//;
-			
-			if (static_cast<EDataContainer_Button_StoreColor*>(but->custom_data_list[0]->data_container)->stored_color == button_data->stored_color)
-			{
 
-				group_data->pointer_to_color_collection_group->selected_button = but;
-				break;
+		EDataContainer_Button_StoreColor*	button_data		= static_cast<EDataContainer_Button_StoreColor*>(_custom_data->data_container);
+		EDataContainer_Group_ColorEditor*	group_data		= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
+		//Helper::hsvrgba_color*				master_color	= nullptr;
+		EDataContainer_Button_StoreColor*	master_data		= group_data->target_data_container_with_color;
+
+
+		//set target button to button group
+		if (button_data->selected_mode == ColorButtonMode::CBM_OPEN_WINDOW)
+		{
+			group_data->pointer_to_color_collection_group->selected_button = nullptr;
+			group_data->target_data_container_with_color = button_data;
+
+			if (group_data->pointer_to_color_collection_group != nullptr)
+				for (EntityButton* but : group_data->pointer_to_color_collection_group->button_list)
+				{
+					if (static_cast<EDataContainer_Button_StoreColor*>(but->custom_data_list[0]->data_container)->stored_color == button_data->stored_color)
+					{
+						group_data->pointer_to_color_collection_group->selected_button = but;
+						break;
+					}
+				}
+			else
+			{
+				EInputCore::logger_simple_error("pointer to color group is null!");
 			}
 
-			//id++;
+			master_data = group_data->target_data_container_with_color;
+			group_data->work_color = master_data->stored_color;
 		}
-		else
-		{EInputCore::logger_simple_error("pointer to color group is null!");}
+
+		//color data container from target button
+		//if (group_data->target_data_container_with_color != nullptr)
+		//{
+			//master_color = group_data->target_data_container_with_color->stored_color;
+		//}
 
 
+
+		//set new color to master_button
+		if ((button_data->selected_mode == ColorButtonMode::CBM_SELECT_COLOR) && (master_data->stored_color != nullptr))
+		{
+			if
+				(
+					(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+					||
+					(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
+					)
+			{
+				//if color not from collection, remove personal color
+				if (!master_data->stored_color->is_from_collection)
+				{
+					delete master_data->stored_color;
+					
+					master_data->stored_color->is_from_collection = true;
+				}
+
+				master_data->stored_color = button_data->stored_color;
+
+				group_data->pointer_to_color_collection_group->selected_button = static_cast<EntityButton*>(_entity);
+				group_data->work_color = button_data->stored_color;
+			}
+			else
+			{
+				//if color from collection, create personal color
+				if (master_data != nullptr)
+				{
+					if (master_data->stored_color->is_from_collection)
+					{
+						master_data->stored_color = new Helper::hsvrgba_color();
+						master_data->stored_color->is_from_collection = false;
+					}
+
+					master_data->stored_color->set_color(button_data->stored_color);
+					//button_data->stored_color->set_color(button_data->stored_color);
+
+					group_data->pointer_to_color_collection_group->selected_button = nullptr;
+
+					group_data->work_color = master_data->stored_color;
+				}
+			}
+		}
+
+		//set work color from button
+		
+
+		group_data->crosshair_slider_data_container->target_pointer_x = &group_data->work_color->h;
+		group_data->crosshair_slider_data_container->target_pointer_y = &group_data->work_color->s;
+
+		group_data->slider_data_value_container->pointer_to_value = &group_data->work_color->v;
+		group_data->slider_data_alpha_container->pointer_to_value = &group_data->work_color->a;
+
+		
+		
 	}
 }
 
@@ -993,7 +1049,7 @@ void EDataActionCollection::action_draw_vertical_named_slider(Entity* _entity, E
 void EDataActionCollection::action_convert_HSV_to_RGB(EButtonGroup* _group)
 {
 	//EInputCore::logger_simple_info("?");
-	Helper::hsv2rgb(static_cast<EDataContainer_Group_ColorEditor*>(_group->data_container)->target_color);
+	Helper::hsv2rgb(static_cast<EDataContainer_Group_ColorEditor*>(_group->data_container)->work_color);
 }
 
 void EDataActionCollection::action_set_new_color_to_button(EButtonGroup* _group)
@@ -1001,7 +1057,7 @@ void EDataActionCollection::action_set_new_color_to_button(EButtonGroup* _group)
 	EInputCore::logger_simple_info("@");
 	static_cast<EDataContainer_Group_ColorEditor*>(_group->root_group->data_container)->target_data_container_with_color->stored_color
 	=
-	static_cast<EDataContainer_Group_ColorEditor*>(_group->root_group->data_container)->target_color;
+	static_cast<EDataContainer_Group_ColorEditor*>(_group->root_group->data_container)->work_color;
 }
 
 void EDataActionCollection::action_resize_to_full_window(EButtonGroup* _group)
@@ -1027,10 +1083,10 @@ void EDataActionCollection::action_draw_color_rectangle_for_group(EButtonGroup* 
 		EDataContainer_Group_ColorEditor* data = static_cast<EDataContainer_Group_ColorEditor*>(_group->data_container);
 		NS_EGraphicCore::set_active_color
 		(
-			data->target_color->r,
-			data->target_color->g,
-			data->target_color->b,
-			data->target_color->a
+			data->work_color->r,
+			data->work_color->g,
+			data->work_color->b,
+			data->work_color->a
 		);
 
 		if (_group->batcher_for_default_draw->last_vertice_buffer_index + _group->batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { _group->batcher_for_default_draw->draw_call(); }
@@ -1110,7 +1166,7 @@ void EDataActionCollection::action_unbing_color(Entity* _entity, ECustomData* _c
 	group_data->slider_data_value_container->pointer_to_value = &HRA_color->v;
 	group_data->slider_data_alpha_container->pointer_to_value = &HRA_color->a;
 
-	group_data->target_color = HRA_color;
+	group_data->work_color = HRA_color;
 
 	
 
@@ -1136,21 +1192,28 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 	EDataContainer_Button_StoreColor* button_data = group_data->target_data_container_with_color;
 
 	//get current color
-	Helper::hsvrgba_color* original_color = button_data->stored_color;
+	Helper::hsvrgba_color* original_color = group_data->work_color;
 
 	//create non-binded color
-	Helper::hsvrgba_color* HRA_color = new Helper::hsvrgba_color();
-	HRA_color->set_color(original_color);//apply old color to non-binded
-	button_data->stored_color = HRA_color;
-	Helper::registered_color_list.push_back(HRA_color);
+	Helper::hsvrgba_color			HRA_color;
+	Helper::HRA_color_collection*	HRA_collection = new Helper::HRA_color_collection();
 
-	group_data->crosshair_slider_data_container->target_pointer_x = &HRA_color->h;
-	group_data->crosshair_slider_data_container->target_pointer_y = &HRA_color->s;
+	HRA_color.set_color(original_color);//apply old color to non-binded
+	HRA_collection->target_color = HRA_color;
 
-	group_data->slider_data_value_container->pointer_to_value = &HRA_color->v;
-	group_data->slider_data_alpha_container->pointer_to_value = &HRA_color->a;
+	//button_data->stored_color = &HRA_color;
+	
+	
 
-	group_data->target_color = HRA_color;
+	Helper::registered_color_list.push_back(HRA_collection);
+
+	//group_data->crosshair_slider_data_container->target_pointer_x = &HRA_color.h;
+	//group_data->crosshair_slider_data_container->target_pointer_y = &HRA_color.s;
+
+	//group_data->slider_data_value_container->pointer_to_value = &HRA_color.v;
+	//group_data->slider_data_alpha_container->pointer_to_value = &HRA_color.a;
+
+	//group_data->work_color = &HRA_color;
 
 	EntityButton* jc_button = EntityButton::create_named_color_button
 	(
@@ -1161,14 +1224,15 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 		EFont::font_list[0],
 		EGUIStyle::active_style,
 		"Цвет",
-		HRA_color,
+		HRA_collection,
+		&HRA_collection->target_color,
 		ColorButtonMode::CBM_SELECT_COLOR
 	);
-	Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
+	//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
 	group_data->pointer_to_color_collection_group->button_list.push_back(jc_button);
 	EButtonGroup::refresh_button_group(root_group);	
 
-	group_data->pointer_to_color_collection_group->selected_button = jc_button;
+	//group_data->pointer_to_color_collection_group->selected_button = jc_button;
 
 
 
@@ -1179,9 +1243,9 @@ void EDataActionCollection::action_convert_HSV_to_RGB(Entity* _entity, ECustomDa
 {
 	EButtonGroup* root = static_cast<EntityButton*>(_entity)->parent_button_group->root_group;
 
-	if ((root != nullptr) && (root->data_container != nullptr) && (static_cast<EDataContainer_Group_ColorEditor*>(root->data_container)->target_color != nullptr))
+	if ((root != nullptr) && (root->data_container != nullptr) && (static_cast<EDataContainer_Group_ColorEditor*>(root->data_container)->work_color != nullptr))
 	{
-		Helper::hsv2rgb(static_cast<EDataContainer_Group_ColorEditor*>(root->data_container)->target_color);
+		Helper::hsv2rgb(static_cast<EDataContainer_Group_ColorEditor*>(root->data_container)->work_color);
 	}
 }
 

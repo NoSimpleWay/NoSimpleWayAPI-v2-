@@ -1870,7 +1870,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 {
 	EButtonGroup* main_group = create_root_button_group(_region, _style);
 	main_group->root_group = main_group;
-	Helper::hsvrgba_color* HRA_color = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
+	Helper::hsvrgba_color* HRA_color = &Helper::registered_color_list[rand() % Helper::registered_color_list.size()]->target_color;
 
 
 	*main_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
@@ -1879,7 +1879,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	
 	EDataContainer_Group_ColorEditor* data = new EDataContainer_Group_ColorEditor();
-	data->target_color = HRA_color;
+	data->work_color = HRA_color;
 		//
 		//data->pointer_to_H		= new float(1.0f);
 		//data->pointer_to_S		= new float(1.0f);
@@ -2001,7 +2001,8 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	for (int i = 0; i < Helper::registered_color_list.size(); i++)
 	{
 		// // // // // // //// // // // // // //// // // // // // //
-		Helper::hsvrgba_color* HRA_color = Helper::registered_color_list[i];
+		Helper::HRA_color_collection*	HRA_collection	= Helper::registered_color_list[i];
+		Helper::hsvrgba_color*			HRA_color		= &HRA_collection->target_color;
 		//HRA_color->h = rand() % 360;
 		//HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
 		//HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
@@ -2018,12 +2019,13 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 			EFont::font_list[0],
 			EGUIStyle::active_style,
 			"Цвет",
+			HRA_collection,
 			HRA_color,
 			ColorButtonMode::CBM_SELECT_COLOR
 		);
 
 		//std::cout << HRA_color << std::endl;
-		Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
+		//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
 
 		color_segment->button_list.push_back(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
