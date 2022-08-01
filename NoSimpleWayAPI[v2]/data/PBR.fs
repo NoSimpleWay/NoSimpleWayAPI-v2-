@@ -226,7 +226,7 @@ void main()
 	
 	dist_total = length(vec2(dist_x, dist_y)) - sun_size / 10.0f;
 	//dist_total = pow(dist_total, 2.0);
-	dist_total /= 1.0f + (c_rgba.a) * 1.000f;
+	dist_total /= 1.0f + (c_rgba.a) * 2.000f;
 	//dist_total = 1.0f - dist_total;
 	dist_total = clamp(1.0f  - (dist_total * sun_blur * 1000.0f) * (0.005f + gloss_power), 0.0f, 1.0f);
 	//dist_total*=dist_total;
@@ -276,11 +276,13 @@ void main()
 	texture(texture1, TexCoord).rgb
 	*
 	(
-		vec3(c_rgba * 1.0f) * gloss_result * 2.0f + vec3(1.0f - gloss_result)
+		vec3(c_rgba * 1.0f)// * (2.0f - c_rgba.a)
+		+
+		sky_light * free_sky_light
+		+
+		(free_sky_light + direct_sun_light + indirect_sun_light)
 		//vec3(c_rgba) * 2.0f
 	)
-	*
-	(sky_light * free_sky_light + direct_sun_light + indirect_sun_light)
 	*
 	ourColor.rgb;
 	

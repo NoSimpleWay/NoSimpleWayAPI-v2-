@@ -35,7 +35,7 @@ namespace NS_EGraphicCore
 
 	float							current_offset_x					= 0.0f;
 	float							current_offset_y					= 0.0f;
-	float							current_zoom						= 1.5f;
+	float							current_zoom						= 1.0f;
 	float							global_normal_multiplier			= 1.0f;
 	float							global_free_sky_light_multiplier	= 0.45f;
 	float							global_gloss_multiplier				= 1.0f;
@@ -673,7 +673,16 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_NEAREST);
 
 	for (int i = 0; i < texture_skydome_levels; i++)
-	{NS_EGraphicCore::skydome_texture_atlas[i] = new ETextureAtlas(1024 / (pow(2.0, i * 1)), 1024 / (pow(2.0, i * 1)));}
+	{
+		NS_EGraphicCore::skydome_texture_atlas[i]
+		=
+		new ETextureAtlas
+		(
+			max(1024 / (pow(2.0, i * 1)), 64)
+			,
+			max(1024 / (pow(2.0, i * 1)), 64)
+		);
+	}
 
 
 	NS_EGraphicCore::skydome_batcher->get_shader()->use();
@@ -740,8 +749,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * 0.5f);
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * 0.5f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * 0.5f * i);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * 0.5f * i);
 
 		NS_EGraphicCore::skydome_batcher->set_transform_screen_size (1.0f,1.0f);
 		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);

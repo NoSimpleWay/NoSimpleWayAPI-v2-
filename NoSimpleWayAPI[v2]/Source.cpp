@@ -236,8 +236,8 @@ int main()
 						NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 						0.0,
 						0.0f,
-						1920.0f,
-						1920.0f
+						1024.0f,
+						1024.0f
 					);
 
 					NS_EGraphicCore::default_batcher_for_drawing->draw_call();
