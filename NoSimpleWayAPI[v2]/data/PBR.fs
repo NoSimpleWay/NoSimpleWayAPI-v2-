@@ -22,13 +22,13 @@ uniform sampler2D SD_array[7];
 uniform float brightness_multiplier = 1.5f;
 uniform float input_gloss = 1.0f;
 uniform float skydome_light_power = 1.0f;
-uniform float free_top_light = 0.45f;
+uniform float free_sky_light = 0.45f;
 uniform float direct_sun_matte_multiplier = 1.0f;
 
 uniform float sun_position_x = 0.5f;
 uniform float sun_position_y = 0.55f;
 
-uniform float ground_level = 0.5f;
+uniform float ground_level = 0.333f;
 uniform float sun_size = 0.075f;
 uniform float sun_blur = 0.075f;
 uniform float sun_bright = 0.075f;
@@ -80,39 +80,49 @@ float dist_x;
 float dist_y;
 float dist_total;
 
-vec3 sun_light_gloss = vec3(1.5f, 1.0f, 0.5f);
-vec3 sun_light_matte = vec3(1.5f, 1.5f, 1.0f);
-vec3 sun_light;
+vec3 sun_light_gloss = vec3(1.8f, 1.0f, 0.5f);
+vec3 sun_light_matte = vec3(1.7f, 1.0f, 0.8f);
 
-vec3 sky_light_gloss = vec3(0.8f, 1.1f, 1.3f);
+vec3 direct_sun_light;
+vec3 indirect_sun_light;
+
+vec3 sky_light_gloss = vec3(0.9f, 1.0f, 1.1f);
 vec3 sky_light_matte = vec3(0.85f, 0.875f, 0.9f);
 vec3 sky_light;
 
 
 float AO_bottom_shade_factor;
 
+int steps = 5;
+
+float fast_gloss;
+
 void main()
 {
 	
-	gloss_power = min(texture(texture1, GlossMapTexCoord).b * gloss_map_multiplier, 1.0f);
+	gloss_power = clamp(texture(texture1, GlossMapTexCoord).b * gloss_map_multiplier, 0.0f, 1.0f);
 	//gloss_power = 0.2f;
-	level = (1.0f - gloss_power) * 4.0f;
+	
+	fast_gloss = max(gloss_power - 0.5f, 0.0f) * 2.000f;
+	
+	level = (1.0f - fast_gloss) * steps;
+	//level = (level - 0.5) * 2.000f;
 	//level = 0.0f;
 	
-	glossy_flat = clamp(int(floor(level)), 0, 4);
+	glossy_flat = clamp(int(floor(level)), 0, steps);
 	//glossy_flat = 4 - glossy_flat;
 	
 	interpolation_B = level - glossy_flat;
 	interpolation_A = 1.0f - interpolation_B;
 	
 	
-	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 0.665f * normal_map_multiplier;
-	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 0.665f * normal_map_multiplier;
+	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 0.333f * normal_map_multiplier;
+	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 0.333f * normal_map_multiplier;
 	
-	reflect_pos_x =  (gl_FragCoord.x	/ scr_x	* (1.0f - abs(normal_x))) * 0.75f + 0.333f + normal_x;
+	reflect_pos_x =  (gl_FragCoord.x	/ scr_x	* (1.0f - abs(normal_x))) * 0.333f + 0.333f + normal_x;
 	//reflect_pos_x *= scr_x / scr_y;
 	
-	reflect_pos_y =  (WorldPosition.y	/ scr_y	* (1.0f - abs(normal_y))) * 0.75f + 0.25f + normal_y;
+	reflect_pos_y =  (WorldPosition.y	/ scr_y	* (1.0f - abs(normal_y))) * 0.333f + 0.333f + normal_y;
 	
 	//reflect_pos_x = gl_FragCoord.x / 2880.0f;
 	//reflect_pos_y = WorldPosition.y / 1800.0f;
@@ -123,28 +133,117 @@ void main()
 	vec2
 	(
 		//base offset		screen position offset					//normal offset
-		(reflect_pos_x) * scr_x / scr_y - 0.333f / 1.0f + time / 50.0f * move_multiplier,
+		reflect_pos_x * 3.0f * scr_x / scr_y - 0.333f / 1.0f + time / 50.0f * move_multiplier,
 		
 		
-		reflect_pos_y
+		reflect_pos_y * 3.0f + 0.8f + ground_level
 	);
 	
 	
-
+	//interpolation_A = 1.0f;
+	//interpolation_B = 0.0f;
 	
 	if (glossy_flat == 0)
-	{c_rgba = clamp ((texture(SD_array[0], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_A + texture(SD_array[1], reflect_coord+ vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_B), vec4(0.0f), vec4(2.0f, 1.9f, 1.8f, 1.0f));}
+	{
+		c_rgba
+		=
+		clamp
+		(
+			(
+				texture(SD_array[0], reflect_coord) * interpolation_A
+				+
+				texture(SD_array[1], reflect_coord) * interpolation_B
+			),
+			vec4(0.0f),
+			vec4(2.0f, 1.9f, 1.8f, 1.0f)
+		);
+		
+		//c_rgba = vec4(1.0f, 0.0f, 0.0f, 1.0f);
+	}
 	else
 	if (glossy_flat == 1)
-	{c_rgba = clamp ((texture(SD_array[1], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_A + texture(SD_array[2], reflect_coord+ vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_B), vec4(0.0f), vec4(2.0f, 1.9f, 1.8f, 1.0f));}
+	{
+		c_rgba
+		=
+		clamp
+		(
+			(
+				texture(SD_array[1], reflect_coord) * interpolation_A
+				+
+				texture(SD_array[2], reflect_coord) * interpolation_B
+			),
+			vec4(0.0f),
+			vec4(2.0f, 1.9f, 1.8f, 1.0f)
+		);
+		
+		//c_rgba = vec4(0.0f, 1.0f, 0.0f, 1.0f);
+	}
 	else
 	if (glossy_flat == 2)
-	{c_rgba = clamp ((texture(SD_array[2], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_A + texture(SD_array[3], reflect_coord+ vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_B), vec4(0.0f), vec4(2.0f, 1.9f, 1.8f, 1.0f));}                                                                                                                                                                   
+	{
+		c_rgba
+		=
+		clamp
+		(
+			(
+				texture(SD_array[2], reflect_coord) * interpolation_A
+				+
+				texture(SD_array[3], reflect_coord) * interpolation_B
+			),
+			vec4(0.0f),
+			vec4(2.0f, 1.9f, 1.8f, 1.0f)
+		);
+		
+		//c_rgba = vec4(0.0f, 0.0f, 1.0f, 1.0f);
+	}
 	else
 	if (glossy_flat == 3)
-	{c_rgba = clamp ((texture(SD_array[3], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_A + texture(SD_array[4], reflect_coord+ vec2(0.0f, ground_level * 2.0f - 1.0f)) * interpolation_B), vec4(0.0f), vec4(2.0f, 1.9f, 1.8f, 1.0f));}  
+	{
+		c_rgba
+		=
+		clamp
+		(
+			(
+				texture(SD_array[3], reflect_coord) * interpolation_A
+				+
+				texture(SD_array[4], reflect_coord) * interpolation_B
+			),
+			vec4(0.0f),
+			vec4(2.0f, 1.9f, 1.8f, 1.0f)
+		);
+		
+		//c_rgba = vec4(0.0f, 0.0f, 0.0f, 1.0f);
+	}
 	else
-	{c_rgba = clamp (texture(SD_array[4], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)), vec4(0.0f), vec4(2.0f, 1.9f, 1.8f, 1.0f));}
+	if (glossy_flat == 4)
+	{
+		c_rgba
+		=
+		clamp
+		(
+			(
+				texture(SD_array[4], reflect_coord) * interpolation_A
+				+
+				texture(SD_array[5], reflect_coord) * interpolation_B
+			),
+			vec4(0.0f),
+			vec4(2.0f, 1.9f, 1.8f, 1.0f)
+		);
+		
+		//c_rgba = vec4(0.0f, 0.0f, 0.0f, 1.0f);
+	}
+	else
+	{
+		c_rgba
+		=
+		clamp
+		(
+			texture(SD_array[5], reflect_coord),
+			vec4(0.0f),
+			vec4(2.0f, 1.9f, 1.8f, 1.0f)
+		);
+		//c_rgba = vec4(1.0f, 1.0f, 1.0f, 1.0f);
+	}
 	
 	dist_x = (reflect_pos_x - sun_position_x);
 	dist_y = (reflect_pos_y - sun_position_y);
@@ -157,7 +256,16 @@ void main()
 	dist_total = clamp(1.0f  - (dist_total * sun_blur * 1000.0f) * (0.005f + gloss_power), 0.0f, 1.0f);
 	//dist_total*=dist_total;
 	dist_total = pow (dist_total, sun_exp);
-	sun_light = (sun_light_gloss * gloss_power	+	sun_light_matte * (1.0f - gloss_power))	* dist_total * (1.0f - c_rgba.a);
+	
+	gloss_result = gloss_power;
+	
+
+		direct_sun_light = (sun_light_gloss * gloss_power	+	sun_light_matte * (1.0f - gloss_power))	* dist_total * (1.0f - c_rgba.a);
+		direct_sun_light *= sun_bright * (gloss_result);
+		
+		indirect_sun_light = vec3(1.0f) / (1.0f + length(vec2(normal_x * 3.333f - (sun_position_x - 0.5f), normal_y * 3.333f - (sun_position_y - 0.5f))) * 10.0f) * (1.0f - gloss_result);
+	
+	
 	sky_light = (sky_light_gloss * gloss_power	+	sky_light_matte * (1.0f - gloss_power));
 	//sky_light += texture(SD_array[4], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)).a;
 	
@@ -165,7 +273,7 @@ void main()
 
 	//sun_light *= 1.0f - c_rgba.a;
 	
-	gloss_result = gloss_power;
+	
 	
 	
 	FragColor.rgb
@@ -173,11 +281,12 @@ void main()
 	texture(texture1, TexCoord).rgb
 	*
 	(
-		vec3(c_rgba)
+		vec3(c_rgba * 1.0f) * gloss_result * 2.0f + vec3(1.0f - gloss_result)
+		//vec3(c_rgba) * 2.0f
 		+
-		sky_light * (1.0f - gloss_result) * 0.35f
+		sky_light * (1.0f) * free_sky_light
 		+
-		sun_light * sun_bright * gloss_result
+		direct_sun_light + indirect_sun_light
 	)
 	*
 	ourColor.rgb;

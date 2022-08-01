@@ -115,7 +115,13 @@ namespace NS_ERenderCollection
 	extern void generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite, ETextureGabarite* _normal_map_gabarite = nullptr, ETextureGabarite* _gloss_map_gabarite = nullptr);
 }
 
-const int texture_skydome_levels = 5;
+const int texture_skydome_levels = 6;
+//[0] 1024
+//[1] 512
+//[2] 256
+//[3] 128
+//[4] 64
+//[5] 32
 
 namespace NS_EGraphicCore
 {
@@ -187,6 +193,8 @@ namespace NS_EGraphicCore
 	extern ETextureGabarite* get_gabarite_from_full_path_and_suffix(ETextureGabarite* _gabarite, std::string _suffix);
 	extern float global_normal_multiplier;
 	extern float global_gloss_multiplier;
+
+	extern float global_free_sky_light_multiplier;
 
 	extern float sun_x;
 	extern float sun_y;

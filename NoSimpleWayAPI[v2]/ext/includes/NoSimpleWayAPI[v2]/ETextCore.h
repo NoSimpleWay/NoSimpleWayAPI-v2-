@@ -61,24 +61,26 @@ namespace NS_FONT_UTILS
 	extern ETextArea* active_text_area;
 };
 
+constexpr size_t EFont_array_dim = 65536u;
+
 class EFont
 {
 public:
 
 
-	float UV_start_x[512];
-	float UV_start_y[512];
+	float UV_start_x[EFont_array_dim];
+	float UV_start_y[EFont_array_dim];
 
-	float UV_size_x[512];
-	float UV_size_y[512];
+	float UV_size_x[EFont_array_dim];
+	float UV_size_y[EFont_array_dim];
 
-	float offset_x[512];
-	float offset_y[512];
+	float offset_x[EFont_array_dim];
+	float offset_y[EFont_array_dim];
 
-	float advance[512];
+	float advance[EFont_array_dim];
 
-	float size_x_in_pixels[512];
-	float size_y_in_pixels[512];
+	float size_x_in_pixels[EFont_array_dim];
+	float size_y_in_pixels[EFont_array_dim];
 
 	std::string name;
 

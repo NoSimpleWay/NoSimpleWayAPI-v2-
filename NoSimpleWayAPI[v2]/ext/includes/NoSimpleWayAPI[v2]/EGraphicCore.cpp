@@ -33,20 +33,21 @@ namespace NS_EGraphicCore
 	float							delta_time;
 	float							saved_time_for_delta;
 
-	float							current_offset_x			= 0.0f;
-	float							current_offset_y			= 0.0f;
-	float							current_zoom				= 1.5f;
-	float							global_normal_multiplier	= 1.0f;
-	float							global_gloss_multiplier		= 1.0f;
-	float							sun_x						= 0.5f;
-	float							sun_y						= 0.5f;
-	float							sun_size					= 0.075f;
-	float							sun_blur					= 0.0075f;
-	float							sun_bright					= 3.000f;
-	float							sun_exp						= 2.300f;
-	float							ground_level				= 0.51f;
-	float							time_total					= 0.00f;
-	float							move_multiplier				= 1.00f;
+	float							current_offset_x					= 0.0f;
+	float							current_offset_y					= 0.0f;
+	float							current_zoom						= 1.5f;
+	float							global_normal_multiplier			= 1.0f;
+	float							global_free_sky_light_multiplier	= 0.45f;
+	float							global_gloss_multiplier				= 1.0f;
+	float							sun_x								= 0.5f;
+	float							sun_y								= 0.5f;
+	float							sun_size							= 0.075f;
+	float							sun_blur							= 0.0075f;
+	float							sun_bright							= 3.000f;
+	float							sun_exp								= 2.300f;
+	float							ground_level						= 0.30f;
+	float							time_total							= 0.00f;
+	float							move_multiplier						= 1.00f;
 
 	EColor_4 active_color[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
 
@@ -236,6 +237,8 @@ void ERenderBatcher::draw_call()
 
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("time",NS_EGraphicCore::time_total);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("move_multiplier",NS_EGraphicCore::move_multiplier);
+
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("free_sky_light",NS_EGraphicCore::global_free_sky_light_multiplier);
 		}
 
 		glBindBuffer(GL_ARRAY_BUFFER, VAO);
@@ -737,8 +740,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * 0.5f * sqrt(i * i));
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * 0.5f * sqrt(i * i));
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * 0.5f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * 0.5f);
 
 		NS_EGraphicCore::skydome_batcher->set_transform_screen_size (1.0f,1.0f);
 		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
@@ -761,9 +764,14 @@ void NS_EGraphicCore::initiate_graphic_core()
 			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 		NS_EGraphicCore::skydome_batcher->draw_call();
 
-		
 
+		//restore default viewport setting
+		set_target_FBO(0);
+		set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
+		glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 
+		glDisable(GL_DEPTH_TEST);
+		glBlendEquation(GL_FUNC_ADD);
 	}
 
 	//STYLE LIST//

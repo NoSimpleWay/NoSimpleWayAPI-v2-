@@ -192,6 +192,8 @@ int main()
 			w->GUI_update_additional(NS_EGraphicCore::delta_time);
 		}
 
+		NS_EGraphicCore::current_zoom = max(NS_EGraphicCore::current_zoom, 0.5f);
+
 		for (EWindow* w : EWindow::window_list)
 		{
 			w->draw_default(NS_EGraphicCore::delta_time);

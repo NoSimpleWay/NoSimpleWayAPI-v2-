@@ -132,59 +132,88 @@ void EFont::load_font_littera(std::string _path)
 							else
 								if (font_array_id > 255) { font_array_id -= 848; }
 
+
+						if (font_array_id >= EFont_array_dim)
+						{
+							EInputCore::logger_simple_error
+							(
+								"font_array_id more than "
+								+
+								std::to_string(EFont_array_dim)
+								+
+								" ("
+								+
+								std::to_string(font_array_id)
+								+
+								") data: "
+								+
+								line
+								+
+								" "
+								+
+								_path
+							); }
+						if (font_array_id < 0) { EInputCore::logger_simple_error("font_array_id less than 0 (" + std::to_string(font_array_id) + ") data: " + sub_data + " " + _path); }
 						//if (show_console_info) std::cout << white << "subdata:" << sub_data << " id:" << font_array_id << " sym:" << (char)(font_array_id) << std::endl;
 					}
 
-					if (compare_with_key(sub_data, "x="))
+					if ((font_array_id < 512) && (font_array_id >= 0))
 					{
-						if (show_console_info) std::cout << "x pos | " << get_float_from_sub_data(sub_data) << " |" << std::endl;
-						UV_start_x[font_array_id] = get_float_from_sub_data(sub_data);
+						if (compare_with_key(sub_data, "x="))
+						{
+							if (show_console_info) std::cout << "x pos | " << get_float_from_sub_data(sub_data) << " |" << std::endl;
+							UV_start_x[font_array_id] = get_float_from_sub_data(sub_data);
+						}
+
+						if (compare_with_key(sub_data, "y="))
+						{
+							if (show_console_info) std::cout << "y pos | " << get_float_from_sub_data(sub_data) << " |" << std::endl;
+							UV_start_y[font_array_id] = get_float_from_sub_data(sub_data);
+						}
+
+						if (compare_with_key(sub_data, "width="))
+						{
+							if (show_console_info) std::cout << "x size | " << get_float_from_sub_data(sub_data) << " |" << std::endl;
+							size_x_in_pixels[font_array_id] = UV_size_x[font_array_id] = get_float_from_sub_data(sub_data);
+						}
+
+						if (compare_with_key(sub_data, "height="))
+						{
+							size_y_in_pixels[font_array_id] = UV_size_y[font_array_id] = get_float_from_sub_data(sub_data);
+							if (show_console_info) std::cout << "y size | " << UV_size_y[font_array_id] << " |" << std::endl;
+						}
+
+						if (compare_with_key(sub_data, "xoffset="))
+						{
+							if (show_console_info) std::cout << "x offset | " << get_float_from_sub_data(sub_data) << " |" << std::endl;
+							offset_x[font_array_id] = get_float_from_sub_data(sub_data);
+						}
+
+						if (compare_with_key(sub_data, "yoffset="))
+						{
+							offset_y[font_array_id] = get_float_from_sub_data(sub_data);
+							if (show_console_info) std::cout << "y offset | size_y=" << UV_size_y[font_array_id] << " offset=" << get_float_from_sub_data(sub_data) << " result=" << offset_y[font_array_id] << " |" << std::endl;
+						}
+
+						if (compare_with_key(sub_data, "xadvance="))
+						{
+							if (show_console_info) std::cout << "advance | " << get_float_from_sub_data(sub_data) << " |" << std::endl;
+
+							if (show_console_info) { std::cout << "font_array_id=" << font_array_id << std::endl; }
+							advance[font_array_id] = get_float_from_sub_data(sub_data);
+
+							UV_size_x[font_array_id] = UV_size_x[font_array_id] / (float)texture_atlas->get_atlas_size_x();
+							UV_size_y[font_array_id] = UV_size_y[font_array_id] / (float)texture_atlas->get_atlas_size_y();
+
+							UV_start_x[font_array_id] = *gabarite->uv_start_x + UV_start_x[font_array_id] / (float)texture_atlas->get_atlas_size_x();
+							UV_start_y[font_array_id] = *gabarite->uv_start_y + (*gabarite->size_y_in_pixels / (float)texture_atlas->get_atlas_size_y()) - UV_start_y[font_array_id] / (float)texture_atlas->get_atlas_size_y();
+
+							//EInputCore::logger_param("final uv_size_y", UV_start_y[font_array_id]);
+						}
 					}
-
-					if (compare_with_key(sub_data, "y="))
+					else
 					{
-						if (show_console_info) std::cout << "y pos | " << get_float_from_sub_data(sub_data) << " |" << std::endl;
-						UV_start_y[font_array_id] = get_float_from_sub_data(sub_data);
-					}
-
-					if (compare_with_key(sub_data, "width="))
-					{
-						if (show_console_info) std::cout << "x size | " << get_float_from_sub_data(sub_data) << " |" << std::endl;
-						size_x_in_pixels[font_array_id] = UV_size_x[font_array_id] = get_float_from_sub_data(sub_data);
-					}
-
-					if (compare_with_key(sub_data, "height="))
-					{
-						size_y_in_pixels[font_array_id] = UV_size_y[font_array_id] = get_float_from_sub_data(sub_data);
-						if (show_console_info) std::cout << "y size | " << UV_size_y[font_array_id] << " |" << std::endl;
-					}
-
-					if (compare_with_key(sub_data, "xoffset="))
-					{
-						if (show_console_info) std::cout << "x offset | " << get_float_from_sub_data(sub_data) << " |" << std::endl;
-						offset_x[font_array_id] = get_float_from_sub_data(sub_data);
-					}
-
-					if (compare_with_key(sub_data, "yoffset="))
-					{
-						offset_y[font_array_id] = get_float_from_sub_data(sub_data);
-						if (show_console_info) std::cout << "y offset | size_y=" << UV_size_y[font_array_id] << " offset=" << get_float_from_sub_data(sub_data) << " result=" << offset_y[font_array_id] << " |" << std::endl;
-					}
-
-					if (compare_with_key(sub_data, "xadvance="))
-					{
-						if (show_console_info) std::cout << "advance | " << get_float_from_sub_data(sub_data) << " |" << std::endl;
-
-						if (show_console_info) { std::cout << "font_array_id=" << font_array_id << std::endl; }
-						advance[font_array_id] = get_float_from_sub_data(sub_data);
-
-						UV_size_x[font_array_id] = UV_size_x[font_array_id] / (float)texture_atlas->get_atlas_size_x();
-						UV_size_y[font_array_id] = UV_size_y[font_array_id] / (float)texture_atlas->get_atlas_size_y();
-
-						UV_start_x[font_array_id] = *gabarite->uv_start_x + UV_start_x[font_array_id] / (float)texture_atlas->get_atlas_size_x();
-						UV_start_y[font_array_id] = *gabarite->uv_start_y + (*gabarite->size_y_in_pixels / (float)texture_atlas->get_atlas_size_y()) - UV_start_y[font_array_id] / (float)texture_atlas->get_atlas_size_y();
-
-						//EInputCore::logger_param("final uv_size_y", UV_start_y[font_array_id]);
+						
 					}
 
 					//

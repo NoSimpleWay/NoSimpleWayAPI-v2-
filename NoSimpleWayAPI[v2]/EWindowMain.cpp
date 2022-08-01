@@ -957,12 +957,12 @@ EWindowMain::EWindowMain()
 		/////		world parameter		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		main_button_group = EButtonGroup::create_root_button_group
-		(new ERegionGabarite(400.0f, 00.0f, 0.0f, 400, 300.0f), EGUIStyle::active_style);
+		(new ERegionGabarite(400.0f, 100.0f, 0.0f, 400, 500.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
 		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
 		jc_button_group = main_button_group->add_group
-		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 50.0f), EGUIStyle::active_style));
+		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 100.0f), EGUIStyle::active_style));
 		*jc_button_group->stretch_x_by_parent_size = true;
 		*jc_button_group->stretch_y_by_parent_size = false;
 		
@@ -1034,6 +1034,22 @@ EWindowMain::EWindowMain()
 		jc_button_group->button_list.push_back(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
 
+		// // // // // // //// // // // // // //// // // // // // //
+		jc_button = EntityButton::create_vertical_named_slider
+		(
+
+			new ERegionGabarite(170.0f, 38.0f),
+			jc_button_group,
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			"Засветка неба"
+		);
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::global_free_sky_light_multiplier;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 2.0f;
+		//EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_force_resize_callback);
+		jc_button_group->button_list.push_back(jc_button);
+		// // // // // // //// // // // // // //// // // // // // //
+
 
 
 
@@ -1041,23 +1057,23 @@ EWindowMain::EWindowMain()
 
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 		EButtonGroup* button_group_sun_main = main_button_group->add_group
-		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 160.0f), EGUIStyle::active_style));
+		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 200.0f), EGUIStyle::active_style));
 		*button_group_sun_main->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 		*button_group_sun_main->stretch_x_by_parent_size = true;
 		*button_group_sun_main->stretch_y_by_parent_size = false;
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
-		jc_button_group = button_group_sun_main->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(140.0f, 140.0f), EGUIStyle::active_style));
+		jc_button_group = button_group_sun_main->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(160.0f, 160.0f), EGUIStyle::active_style));
 		*jc_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-		*jc_button_group->stretch_x_by_parent_size = true;
 		*jc_button_group->stretch_x_by_parent_size = false;
+		*jc_button_group->stretch_y_by_parent_size = true;
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 
 		// // // // // // //
 		jc_button = EntityButton::create_default_crosshair_slider
 		(
-			new ERegionGabarite(128.0f, 128.0f),
+			new ERegionGabarite(148.0f, 148.0f),
 			jc_button_group,
 			&NS_EGraphicCore::sun_x,
 			&NS_EGraphicCore::sun_y,
@@ -1074,10 +1090,10 @@ EWindowMain::EWindowMain()
 		// // // // // // //
 
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
-		jc_button_group = button_group_sun_main->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(140.0f, 140.0f), EGUIStyle::active_style));
+		jc_button_group = button_group_sun_main->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(160.0f, 160.0f), EGUIStyle::active_style));
 		*jc_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		*jc_button_group->stretch_x_by_parent_size = true;
-		*jc_button_group->stretch_x_by_parent_size = true;
+		*jc_button_group->stretch_y_by_parent_size = true;
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 
 		// // // // // // // //
