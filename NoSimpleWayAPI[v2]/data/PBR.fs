@@ -147,15 +147,10 @@ void main()
 	{
 		c_rgba
 		=
-		clamp
 		(
-			(
-				texture(SD_array[0], reflect_coord) * interpolation_A
-				+
-				texture(SD_array[1], reflect_coord) * interpolation_B
-			),
-			vec4(0.0f),
-			vec4(2.0f, 1.9f, 1.8f, 1.0f)
+			texture(SD_array[0], reflect_coord) * interpolation_A
+			+
+			texture(SD_array[1], reflect_coord) * interpolation_B
 		);
 		
 		//c_rgba = vec4(1.0f, 0.0f, 0.0f, 1.0f);
@@ -165,15 +160,10 @@ void main()
 	{
 		c_rgba
 		=
-		clamp
 		(
-			(
-				texture(SD_array[1], reflect_coord) * interpolation_A
-				+
-				texture(SD_array[2], reflect_coord) * interpolation_B
-			),
-			vec4(0.0f),
-			vec4(2.0f, 1.9f, 1.8f, 1.0f)
+			texture(SD_array[1], reflect_coord) * interpolation_A
+			+
+			texture(SD_array[2], reflect_coord) * interpolation_B
 		);
 		
 		//c_rgba = vec4(0.0f, 1.0f, 0.0f, 1.0f);
@@ -183,15 +173,10 @@ void main()
 	{
 		c_rgba
 		=
-		clamp
 		(
-			(
-				texture(SD_array[2], reflect_coord) * interpolation_A
-				+
-				texture(SD_array[3], reflect_coord) * interpolation_B
-			),
-			vec4(0.0f),
-			vec4(2.0f, 1.9f, 1.8f, 1.0f)
+			texture(SD_array[2], reflect_coord) * interpolation_A
+			+
+			texture(SD_array[3], reflect_coord) * interpolation_B
 		);
 		
 		//c_rgba = vec4(0.0f, 0.0f, 1.0f, 1.0f);
@@ -201,15 +186,10 @@ void main()
 	{
 		c_rgba
 		=
-		clamp
 		(
-			(
-				texture(SD_array[3], reflect_coord) * interpolation_A
-				+
-				texture(SD_array[4], reflect_coord) * interpolation_B
-			),
-			vec4(0.0f),
-			vec4(2.0f, 1.9f, 1.8f, 1.0f)
+			texture(SD_array[3], reflect_coord) * interpolation_A
+			+
+			texture(SD_array[4], reflect_coord) * interpolation_B
 		);
 		
 		//c_rgba = vec4(0.0f, 0.0f, 0.0f, 1.0f);
@@ -219,15 +199,10 @@ void main()
 	{
 		c_rgba
 		=
-		clamp
 		(
-			(
-				texture(SD_array[4], reflect_coord) * interpolation_A
-				+
-				texture(SD_array[5], reflect_coord) * interpolation_B
-			),
-			vec4(0.0f),
-			vec4(2.0f, 1.9f, 1.8f, 1.0f)
+			texture(SD_array[4], reflect_coord) * interpolation_A
+			+
+			texture(SD_array[5], reflect_coord) * interpolation_B
 		);
 		
 		//c_rgba = vec4(0.0f, 0.0f, 0.0f, 1.0f);
@@ -263,7 +238,27 @@ void main()
 		direct_sun_light = (sun_light_gloss * gloss_power	+	sun_light_matte * (1.0f - gloss_power))	* dist_total * (1.0f - c_rgba.a);
 		direct_sun_light *= sun_bright * (gloss_result);
 		
-		indirect_sun_light = vec3(1.0f) / (1.0f + length(vec2(normal_x * 3.333f - (sun_position_x - 0.5f), normal_y * 3.333f - (sun_position_y - 0.5f))) * 10.0f) * (1.0f - gloss_result);
+		indirect_sun_light
+		=
+		(
+		max
+			(
+				vec3(1.0f)
+				-
+				length
+				(
+					vec2
+					(
+						normal_x * 3.333f - (sun_position_x - 0.5f),
+						normal_y * 3.333f - (sun_position_y - 0.5f)
+					)
+				) * 3.0f
+				,
+				0.0f
+			)
+		)
+		*
+		(1.0f - gloss_result);
 	
 	
 	sky_light = (sky_light_gloss * gloss_power	+	sky_light_matte * (1.0f - gloss_power));
@@ -283,11 +278,9 @@ void main()
 	(
 		vec3(c_rgba * 1.0f) * gloss_result * 2.0f + vec3(1.0f - gloss_result)
 		//vec3(c_rgba) * 2.0f
-		+
-		sky_light * (1.0f) * free_sky_light
-		+
-		direct_sun_light + indirect_sun_light
 	)
+	*
+	(sky_light * free_sky_light + direct_sun_light + indirect_sun_light)
 	*
 	ourColor.rgb;
 	
