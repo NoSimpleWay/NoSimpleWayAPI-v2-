@@ -157,6 +157,7 @@ void EFont::load_font_littera(std::string _path)
 						//if (show_console_info) std::cout << white << "subdata:" << sub_data << " id:" << font_array_id << " sym:" << (char)(font_array_id) << std::endl;
 					}
 
+
 					if ((font_array_id < 512) && (font_array_id >= 0))
 					{
 						if (compare_with_key(sub_data, "x="))

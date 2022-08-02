@@ -97,6 +97,8 @@ int steps = 5;
 
 float fast_gloss;
 
+float indirect_sun_angle = 0.0f;
+
 void main()
 {
 	
@@ -235,33 +237,31 @@ void main()
 	gloss_result = gloss_power;
 	
 
-		direct_sun_light = (sun_light_gloss * gloss_power	+	sun_light_matte * (1.0f - gloss_power))	* dist_total * (1.0f - c_rgba.a);
+		direct_sun_light = mix(sun_light_matte, sun_light_gloss, gloss_power) * dist_total * (1.0f - c_rgba.a);
 		direct_sun_light *= sun_bright * (gloss_result);
 		
-		indirect_sun_light
-		=
-		(
+		indirect_sun_angle
+		= 
 		max
+		(
+			1.0f
+			-
+			length
 			(
-				vec3(1.0f)
-				-
-				length
+				vec2
 				(
-					vec2
-					(
-						normal_x * 3.333f - (sun_position_x - 0.5f),
-						normal_y * 3.333f - (sun_position_y - 0.5f)
-					)
-				) * 3.0f
-				,
-				0.0f
-			)
-		)
-		*
-		(1.0f - gloss_result);
+					normal_x * 3.333f - (sun_position_x - 0.5f),
+					normal_y * 3.333f - (sun_position_y - 0.5f)
+				)
+			) * 3.0f
+			,
+			0.0f
+		);
+			
+		indirect_sun_light = vec3(indirect_sun_angle) * (1.0f - gloss_result);
+		indirect_sun_light = vec3(1.0f);
 	
-	
-	sky_light = (sky_light_gloss * gloss_power	+	sky_light_matte * (1.0f - gloss_power));
+	sky_light = mix(sky_light_matte, sky_light_gloss, gloss_power);
 	//sky_light += texture(SD_array[4], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)).a;
 	
 	
@@ -277,10 +277,11 @@ void main()
 	*
 	(
 		vec3(c_rgba * 1.0f)// * (2.0f - c_rgba.a)
+		//vec3(c_rgba * 1.0f) * gloss_result * 2.0f + vec3(1.0f - gloss_result)
 		+
 		sky_light * free_sky_light
 		+
-		(free_sky_light + direct_sun_light + indirect_sun_light)
+		(free_sky_light + direct_sun_light + indirect_sun_light * 1.0f)
 		//vec3(c_rgba) * 2.0f
 	)
 	*
