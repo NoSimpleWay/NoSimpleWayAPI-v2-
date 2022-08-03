@@ -38,6 +38,8 @@
 #include <iterator>
 #include <chrono>
 
+
+
 //#pragma execution_character_set( "utf-8" )
 //extern GLFWwindow* main_window{ nullptr };
 
@@ -153,7 +155,7 @@ int main()
 
 	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))
 	{
-
+		Sleep(10.0f);
 		//GLFW_KEY_1
 		clock_t time = clock();
 

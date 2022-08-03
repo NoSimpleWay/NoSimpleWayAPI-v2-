@@ -75,7 +75,6 @@ public:
 
 	static void rgb2hsv(hsvrgba_color* col)
 	{
-		hsva_color         out;
 		double      min, max, delta;
 
 		min = col->r < col->g ? col->r : col->g;
@@ -123,7 +122,6 @@ public:
 	{
 		double      hh, p, q, t, ff;
 		long        i;
-		rgba_color         in;
 
 		if (col->s <= 0.0f) {       // < is bogus, just shuts up warnings
 			col->r = col->v;

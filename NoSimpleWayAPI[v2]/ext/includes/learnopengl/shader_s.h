@@ -96,6 +96,11 @@ public:
         //gluniformsa(glGetUniformLocation(ID, name.c_str()), value); 
     }
 
+    //void setVec3f(const std::string &name, float value) const
+    //{ 
+    //    glUniform3fv(glGetUniformLocation(ID, name.c_str()), &v[0]);
+    //}
+
 private:
     // utility function for checking shader compilation/linking errors.
     // ------------------------------------------------------------------------

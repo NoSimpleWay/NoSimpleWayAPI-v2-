@@ -48,6 +48,13 @@
 #endif
 /////// /////// /////// /////// /////// /////// ///////
 
+/**/
+#ifndef	_HELPERS_ALREADY_LINKED_
+#define	_HELPERS_ALREADY_LINKED_
+#include "Helpers.h"
+#endif
+/**/
+
 #include <learnopengl/shader_s.h>
 #include <vector>
 #include <filesystem>
@@ -195,6 +202,7 @@ namespace NS_EGraphicCore
 	extern float global_gloss_multiplier;
 
 	extern float global_free_sky_light_multiplier;
+	extern float global_reflection_multiplier;
 
 	extern float sun_x;
 	extern float sun_y;
@@ -206,6 +214,10 @@ namespace NS_EGraphicCore
 
 	extern float time_total;
 	extern float move_multiplier;
+
+	extern float sun_flat_decay;
+
+	extern Helper::hsvrgba_color sun_color;
 
 	extern float ground_level;
 
