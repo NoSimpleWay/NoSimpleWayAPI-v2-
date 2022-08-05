@@ -295,6 +295,8 @@ public:
 	EButtonGroup*					pointer_to_group_item_receiver;
 	ETextArea*						filter_text_area;
 
+	data_action_pointer				action_on_select_for_button;
+
 };
 
 class EDataContainer_VerticalNamedSlider : public EDataContainer
@@ -374,6 +376,14 @@ public:
 	EButtonGroup* target_group;
 	std::string search_tag = "";
 	EFilterRule* filter_rule;
+
+	data_action_pointer	target_action_on_click;
+};
+
+class EDataContainer_Group_FilterBlock : public EDataContainer
+{
+public:
+
 };
 
 
@@ -404,7 +414,8 @@ namespace EDataActionCollection
 	void action_open_data_entity_filter_group	(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_color_group				(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_add_item_to_group_receiver		(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_item_to_group_receiver			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_wide_item_to_group_receiver		(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_update_crosshair_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_draw_crosshair_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -416,6 +427,8 @@ namespace EDataActionCollection
 	void action_select_this_button				(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_force_resize_callback			(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_invoke_data_entity_group_action	(Entity* _entity, ECustomData* _custom_data, float _d);
 	
 	//group section
 		//draw

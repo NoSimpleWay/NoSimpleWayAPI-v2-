@@ -247,6 +247,10 @@ public:
 	static EButtonGroup* create_button_group_without_bg	(ERegionGabarite* _region, EGUIStyle* _style);
 
 	static EButtonGroup* create_color_editor_group		(ERegionGabarite* _region, EGUIStyle* _style);
+
+	EButtonGroup* add_close_group_and_return_workspace_group(ERegionGabarite* _region, EGUIStyle* _style);
+
+
 	
 
 	//static EButtonGroupRow* add_default_row_to_group(EButtonGroup* _group, ERegionGabarite* _region);

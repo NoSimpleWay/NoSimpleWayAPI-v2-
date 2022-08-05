@@ -553,7 +553,7 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 	}
 
 	//jc_button->add_description("123");
-	jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+	//jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
 
 	return jc_button;
 }
@@ -584,14 +584,14 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 		if (item_icon != nullptr)
 		{
-			resize_factor = (_region_gabarite->size_y - *_parent_group->border_bottom - *_parent_group->border_up) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
+			resize_factor = (_region_gabarite->size_y - *_parent_group->border_bottom - *_parent_group->border_up - 6.0f) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
 			resize_factor = min(resize_factor, 1.0f);
 
 			ESpriteLayer* second_button_layer =
 				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 				(item_icon,
-					*_parent_group->border_bottom,
-					*_parent_group->border_up,
+					*_parent_group->border_bottom + 3.0f,
+					*_parent_group->border_up + 3.0f,
 					3.0f,
 
 					*item_icon->size_x_in_pixels * resize_factor,
@@ -608,7 +608,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		*jc_text_area->offset_by_gabarite_size_x = 0.0;
 		*jc_text_area->offset_by_text_size_x = 0.0;
 
-		jc_text_area->offset_border[BorderSide::LEFT] = *item_icon->size_x_in_pixels * resize_factor + *_parent_group->border_left + 3.0f;
+		jc_text_area->offset_border[BorderSide::LEFT] = *item_icon->size_x_in_pixels * resize_factor + *_parent_group->border_left + 7.0f;
 
 		jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
 
@@ -616,7 +616,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 
 		//jc_button->add_description("123");
-		jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+		//jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
 
 
 
@@ -695,7 +695,7 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	*jc_text_area->offset_by_gabarite_size_y = 1.0;
 	*jc_text_area->offset_by_text_size_y = -1.0;
 
-	//jc_text_area->offset_border[BorderSide::LEFT] = *item_icon->size_x_in_pixels * resize_factor + *_parent_group->border_left + 3.0f;
+	jc_text_area->offset_border[BorderSide::LEFT] = *_parent_group->border_left + 3.0f;
 
 	jc_text_area->change_text(_text);
 	data->pointer_to_text_area = jc_text_area;
@@ -997,7 +997,7 @@ EntityButton::~EntityButton()
 
 	if (parent_button_group != nullptr)
 	{
-		EButtonGroup::refresh_button_group(parent_button_group);
+		EButtonGroup::refresh_button_group(parent_button_group->root_group);
 	}
 }
 

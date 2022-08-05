@@ -504,6 +504,8 @@ void ETextArea::generate_text()
 			x_adding += offset_border[BorderSide::LEFT];
 			//_adding = *region_gabarite->size_y * *offset_by_gabarite_size_y + get_row_width(str) * *offset_by_text_size_y;
 
+			float px = 0.5f / NS_EGraphicCore::default_texture_atlas->get_atlas_size_x();
+			float py = 0.5f / NS_EGraphicCore::default_texture_atlas->get_atlas_size_y();
 
 			for (int i = 0; i < str_lenght; i++)
 			{
@@ -518,14 +520,14 @@ void ETextArea::generate_text()
 					round(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol]),
 					round(region_gabarite->world_position_y - (font->size_y_in_pixels[target_symbol] - 15.0f + font->offset_y[target_symbol] * *font_scale - y_adding)),
 
-					font->size_x_in_pixels[target_symbol] * *font_scale,
-					font->size_y_in_pixels[target_symbol] * *font_scale,
+					(font->size_x_in_pixels[target_symbol] * *font_scale),
+					(font->size_y_in_pixels[target_symbol] * *font_scale),
 
-					font->UV_start_x[target_symbol],
-					font->UV_start_y[target_symbol] - font->UV_size_y[target_symbol],
+					font->UV_start_x[target_symbol] + px,
+					font->UV_start_y[target_symbol] - font->UV_size_y[target_symbol] + py,
 
-					font->UV_start_x[target_symbol] + font->UV_size_x[target_symbol],
-					font->UV_start_y[target_symbol] * *font_scale
+					font->UV_start_x[target_symbol] + px + font->UV_size_x[target_symbol],
+					font->UV_start_y[target_symbol] + py * *font_scale
 				);
 
 				//no sence generate glyphs to text, which can be edited
@@ -1018,8 +1020,8 @@ void ETextArea::draw()
 			(
 				sprite_layer->batcher->vertex_buffer,
 				sprite_layer->batcher->last_vertice_buffer_index,
-				active_glyph->world_position_x,
-				active_glyph->world_position_y,
+				round(active_glyph->world_position_x),
+				round(active_glyph->world_position_y),
 				2.0f,
 				15.0f,
 				NS_DefaultGabarites::texture_gabarite_white_pixel

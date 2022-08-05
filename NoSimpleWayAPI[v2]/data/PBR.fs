@@ -252,8 +252,8 @@ void main()
 			(
 				vec2
 				(
-					normal_x * 3.333f - (sun_position_x - 0.5f),
-					normal_y * 3.333f - (sun_position_y - 0.5f)
+					normal_x * 3.333f - (sun_position_x - 0.5f) * 3.333f,
+					normal_y * 3.333f - (sun_position_y - 0.5f) * 3.333f
 				)
 			)
 			-
@@ -262,7 +262,7 @@ void main()
 			0.0f
 		)
 		*
-		4.0f;
+		1.0f;
 		
 		indirect_sun_angle = clamp(indirect_sun_angle, 0.0f, 1.0f);
 		

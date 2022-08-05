@@ -74,7 +74,7 @@ int main()
 	
 	GLint max_tex_size;
 	glGetIntegerv(GL_MAX_TEXTURE_SIZE, &max_tex_size);
-	//logger_param("max_texture_size:", max_tex_size);
+	EInputCore::logger_param("max_texture_size:", max_tex_size);
 
 	glfwSwapInterval(1);
 
@@ -151,11 +151,11 @@ int main()
 		//}
 		//finish = std::chrono::high_resolution_clock::now();
 		//EInputCore::logger_param("non-pointer", std::chrono::duration_cast<std::chrono::nanoseconds>(finish - start).count() / 1'000'000.0f);
-	
+		//EInputCore::logger_param("max texture_size", GL_MAX_TEXTURE_SIZE);
 
 	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))
 	{
-		Sleep(10.0f);
+		//Sleep(1.0f);
 		//GLFW_KEY_1
 		clock_t time = clock();
 
@@ -258,8 +258,8 @@ int main()
 					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 					0.0,
 					0.0f,
-					NS_EGraphicCore::default_texture_atlas->get_atlas_size_x(),
-					NS_EGraphicCore::default_texture_atlas->get_atlas_size_y()
+					1000.0f,
+					1000.0f
 				);
 
 				NS_EGraphicCore::default_batcher_for_drawing->draw_call();

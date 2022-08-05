@@ -301,10 +301,10 @@ void EButtonGroup::draw()
 			/* */(
 				/* */		batcher_for_default_draw->vertex_buffer,
 				/* */		batcher_for_default_draw->last_vertice_buffer_index,
-				/* */		region_gabarite->world_position_x - 3.0f,
-				/* */		region_gabarite->world_position_y - 3.0f,
-				/* */		region_gabarite->size_x + 6.0f,
-				/* */		region_gabarite->size_y + 6.0f,
+				/* */		region_gabarite->world_position_x - 6.0f,
+				/* */		region_gabarite->world_position_y - 6.0f,
+				/* */		region_gabarite->size_x + 12.0f,
+				/* */		region_gabarite->size_y + 12.0f,
 				/* */		NS_DefaultGabarites::texture_gabarite_white_pixel
 			/* */);
 			/* */
@@ -1873,11 +1873,14 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	Helper::hsvrgba_color* HRA_color = &Helper::registered_color_list[rand() % Helper::registered_color_list.size()]->target_color;
 
 
-	*main_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	*main_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	main_group->actions_on_draw.push_back(&EDataActionCollection::action_draw_color_rectangle_for_group);
 	main_group->actions_on_update.push_back(&EDataActionCollection::action_convert_HSV_to_RGB);
 
 	
+	EButtonGroup* workspace_group = main_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), _style);
+	*workspace_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+
 	EDataContainer_Group_ColorEditor* data = new EDataContainer_Group_ColorEditor();
 	data->work_color = HRA_color;
 		//
@@ -1890,7 +1893,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	//**********************************************************************************************************************************************
 	//**********************************************************************************************************************************************
-	EButtonGroup* left_part = main_group->add_group(create_default_button_group(new ERegionGabarite(285.0f, 285.0f), _style));
+	EButtonGroup* left_part = workspace_group->add_group(create_default_button_group(new ERegionGabarite(285.0f, 285.0f), _style));
 	*left_part->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	*left_part->stretch_x_by_parent_size = false;
 	*left_part->stretch_y_by_parent_size = true;
@@ -1954,7 +1957,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	//**********************************************************************************************************************************************
 	//**********************************************************************************************************************************************
-	EButtonGroup* color_box = main_group->add_group(create_default_button_group(new ERegionGabarite(35.0f, 10.0f), _style));
+	EButtonGroup* color_box = workspace_group->add_group(create_default_button_group(new ERegionGabarite(35.0f, 10.0f), _style));
 	//right_part->debug_translation = true;
 	*color_box->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	*color_box->stretch_x_by_parent_size = false;
@@ -1963,7 +1966,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	//**********************************************************************************************************************************************
 	//**********************************************************************************************************************************************
-	EButtonGroup* color_collection_frame = main_group->add_group(create_default_button_group(new ERegionGabarite(256.0f, 100.0f), _style));
+	EButtonGroup* color_collection_frame = workspace_group->add_group(create_default_button_group(new ERegionGabarite(256.0f, 100.0f), _style));
 	//right_part->debug_translation = true;
 	*color_collection_frame->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	*color_collection_frame->stretch_x_by_parent_size = true;
@@ -2014,11 +2017,11 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 		(
 			//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
-			new ERegionGabarite(80.0f, 38.0f),
+			new ERegionGabarite(120.0f, 38.0f),
 			color_segment,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			"Цвет",
+			HRA_collection->name,
 			HRA_collection,
 			HRA_color,
 			ColorButtonMode::CBM_SELECT_COLOR
@@ -2032,6 +2035,96 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	}
 
 	return main_group;
+}
+
+EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGabarite* _region, EGUIStyle* _style)
+{
+
+
+	EButtonGroup* workspace_group =
+	EButtonGroup::create_button_group_without_bg
+	(
+		new ERegionGabarite(100.0f, 100.0f),
+		_style
+	);
+
+	*workspace_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	*workspace_group->stretch_x_by_parent_size = true;
+	*workspace_group->stretch_y_by_parent_size = true;
+
+	add_group(workspace_group);
+
+	/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+	EButtonGroup* close_group =
+	EButtonGroup::create_default_button_group
+	(
+		new ERegionGabarite(30.0f, _region->size_y),
+		_style
+	);
+
+	*close_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	*close_group->stretch_x_by_parent_size = true;
+	*close_group->stretch_y_by_parent_size = false;
+
+	add_group(close_group);
+	/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+	EButtonGroup* close_group_left =
+		close_group->add_group
+		(
+			EButtonGroup::create_button_group_without_bg
+			(
+				new ERegionGabarite(30.0f, _region->size_y),
+				_style
+			)
+		);
+
+	*close_group_left->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	*close_group_left->stretch_x_by_parent_size = true;
+	*close_group_left->stretch_y_by_parent_size = true;
+
+	
+	/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+	EButtonGroup* close_group_right =
+	close_group->add_group
+	(
+		EButtonGroup::create_button_group_without_bg
+		(
+			new ERegionGabarite(20.0f, _region->size_y),
+			_style
+		)
+	);
+
+	*close_group_right->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	*close_group_right->stretch_x_by_parent_size = false;
+	*close_group_right->stretch_y_by_parent_size = true;
+
+		EntityButton* jc_button = EntityButton::create_default_clickable_button
+		(
+			new ERegionGabarite(20.0f, 20.0f),
+			close_group_right,
+			&EDataActionCollection::action_close_root_group
+		);
+
+		jc_button->sprite_layer_list.push_back
+		(
+			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+			(
+				NS_EGraphicCore::load_from_textures_folder("button_close"),
+
+				0.0f,
+				0.0f,
+				0.0f,
+
+				20.0f,
+				20.0f,
+				00.0f
+			)
+		);
+		close_group_right->button_list.push_back(jc_button);
+
+	
+
+	return workspace_group;
 }
 
 EButtonGroup* EButtonGroup::create_base_button_group(ERegionGabarite* _region, EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg)

@@ -183,10 +183,10 @@ EWindowMain::EWindowMain()
 		}
 	////////////////////////////////////////////////
 
-
+		std::string color_names_list[] = {"Never", "Gonna", "Give","You","Up","Never","Gonna","Ley","You","Down","Never","Gonna","Run","Arround","And", "Desert", "You"};
 
 	/*	REGISTER COLORS	*/
-		for (int i = 0; i < 20; i++)
+		for (int i = 0; i < 17; i++)
 		{
 			Helper::hsvrgba_color HRA_color;
 
@@ -198,6 +198,7 @@ EWindowMain::EWindowMain()
 			Helper::hsv2rgb(&HRA_color);
 
 			Helper::HRA_color_collection* HRA_collection = new Helper::HRA_color_collection();
+			HRA_collection->name = color_names_list[i];
 			HRA_collection->target_color = HRA_color;
 
 			Helper::registered_color_list.push_back(HRA_collection);
@@ -225,30 +226,60 @@ EWindowMain::EWindowMain()
 		for (int z = 0; z < 100; z++)
 		{
 			//whole filter block
-			EButtonGroup* filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 200.0f), EGUIStyle::active_style);
+			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			EButtonGroup* parent_for_container_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 180.0f), EGUIStyle::active_style);
+			*parent_for_container_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
-			*filter_block_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+			*parent_for_container_group->stretch_x_by_parent_size = true;
+			*parent_for_container_group->stretch_y_by_parent_size = false;
 
-			*filter_block_group->stretch_x_by_parent_size = true;
-			*filter_block_group->stretch_y_by_parent_size = false;
+			main_button_group->add_group(parent_for_container_group);
 
-			main_button_group->add_group(filter_block_group);
+			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			EButtonGroup* bottom_section_for_conditions = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 180.0f), EGUIStyle::active_style);
+				*bottom_section_for_conditions->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				*bottom_section_for_conditions->stretch_x_by_parent_size = true;
+				*bottom_section_for_conditions->stretch_y_by_parent_size = true;
+				parent_for_container_group->add_group(bottom_section_for_conditions);
+
+			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			EButtonGroup* top_section_for_configurator_buttos = EButtonGroup::create_default_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 20.0f), EGUIStyle::active_style);
+				*top_section_for_configurator_buttos->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				*top_section_for_configurator_buttos->stretch_x_by_parent_size = true;
+				*top_section_for_configurator_buttos->stretch_y_by_parent_size = false;
+				parent_for_container_group->add_group(top_section_for_configurator_buttos);
+
+				EntityButton* jc_button = EntityButton::create_default_clickable_button
+				(
+					new ERegionGabarite(150.0f, 20.0f),
+					top_section_for_configurator_buttos,
+					nullptr
+				);
+
+				jc_text_area = ETextArea::create_centered_text_area
+				(EntityButton::get_last_clickable_area(jc_button), EFont::font_list[0], "");
+				jc_text_area->change_text("Добавить условие");
+
+				*jc_text_area->can_be_edited = false;
+				Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+
+				top_section_for_configurator_buttos->button_list.push_back(jc_button);
 
 			//left side for equational parameters
 			if (true)
 			{//new group
-				EButtonGroup* left_group = EButtonGroup::create_default_button_group
+				EButtonGroup* non_list_condition_group = EButtonGroup::create_default_button_group
 				(
 					new ERegionGabarite(210.0f, 160.0f),
 					EGUIStyle::active_style
 				);
 
-				*left_group->stretch_x_by_parent_size = false;
-				*left_group->stretch_y_by_parent_size = true;
+				*non_list_condition_group->stretch_x_by_parent_size = false;
+				*non_list_condition_group->stretch_y_by_parent_size = true;
 
-				*left_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				*non_list_condition_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
-				filter_block_group->add_group(left_group);
+				bottom_section_for_conditions->add_group(non_list_condition_group);
 
 				//"ZZZ" buttons
 				int parameters_count = (rand() % 4) * (rand() % 4) * (rand() % 4);
@@ -264,11 +295,11 @@ EWindowMain::EWindowMain()
 						jc_button = EntityButton::create_default_clickable_button
 						(
 							jc_region_gabarite,
-							left_group,
+							non_list_condition_group,
 							nullptr
 						);
 
-						left_group->button_list.push_back(jc_button);
+						non_list_condition_group->button_list.push_back(jc_button);
 
 
 						jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "!");
@@ -287,13 +318,13 @@ EWindowMain::EWindowMain()
 
 			//####### ITEM GROUP //#######
 			//massive
-			EButtonGroup* verical_item_element = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(800.0f, 160.0f), EGUIStyle::active_style);
-				filter_block_group->add_group(verical_item_element);
-				*verical_item_element->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+			EButtonGroup* list_condition_group = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(800.0f, 160.0f), EGUIStyle::active_style);
+				bottom_section_for_conditions->add_group(list_condition_group);
+				*list_condition_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 				//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
 
-				*verical_item_element->stretch_x_by_parent_size = true;
-				*verical_item_element->stretch_y_by_parent_size = true;
+				*list_condition_group->stretch_x_by_parent_size = true;
+				*list_condition_group->stretch_y_by_parent_size = true;
 
 				std::string select_window_tags[3] = { "game item", "base class", "influence" };
 
@@ -309,42 +340,54 @@ EWindowMain::EWindowMain()
 			{
 
 
-				EButtonGroup* massive_game_item = EButtonGroup::create_default_button_group(new ERegionGabarite(800.0f, 100.0f), EGUIStyle::active_style);
+				EButtonGroup* list_condition_group_container = EButtonGroup::create_default_button_group(new ERegionGabarite(800.0f, 100.0f), EGUIStyle::active_style);
 				
-				verical_item_element->add_group(massive_game_item);
-				*massive_game_item->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				list_condition_group->add_group(list_condition_group_container);
+				*list_condition_group_container->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 				//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
 
-				*massive_game_item->stretch_x_by_parent_size = true;
-				*massive_game_item->stretch_y_by_parent_size = true;
+				*list_condition_group_container->stretch_x_by_parent_size = true;
+				*list_condition_group_container->stretch_y_by_parent_size = true;
 
 				////////////////////////
 				//small subrow for additional buttons
 
 				//side group for buttons
-				EButtonGroup* group_side = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(134.0f, 80.0f), EGUIStyle::active_style);
-				massive_game_item->add_group(group_side);
+				EButtonGroup* list_left_part_group = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(134.0f, 80.0f), EGUIStyle::active_style);
+				list_condition_group_container->add_group(list_left_part_group);
 				//row_game_item->add_group(group_side);
-				*group_side->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				*list_left_part_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 				//*group_side->stretch_mode		= GroupStretchMode::STRETCHED_ONLY_BY_PARENT;
 
-				*group_side->stretch_x_by_parent_size = false;
-				*group_side->stretch_y_by_parent_size = true;
+				*list_left_part_group->stretch_x_by_parent_size = false;
+				*list_left_part_group->stretch_y_by_parent_size = true;
 
-				float vertical_borders = *group_side->border_left + *group_side->border_right;
+				float vertical_borders = *list_left_part_group->border_left + *list_left_part_group->border_right;
 
 				//add new button
 				EntityButton*
 					small_button = EntityButton::create_default_clickable_button
 					(
 						new ERegionGabarite(130.0f, 18.0f),
-						group_side,
+						list_left_part_group,
 						&EDataActionCollection::action_open_data_entity_filter_group
 					);
 
-				EDataContainerStoreTargetGroup* data_store_target_group = new EDataContainerStoreTargetGroup();
-				EntityButton::get_last_custom_data(small_button)->data_container = data_store_target_group;
+				EDataContainerStoreTargetGroup*
+				data_store_target_group = new EDataContainerStoreTargetGroup();
 				data_store_target_group->filter_rule = EFilterRule::registered_filter_rules[rule_id[r]];
+				
+				//game item
+				if (r == 0) { data_store_target_group->target_action_on_click = &EDataActionCollection::action_add_item_to_group_receiver; }
+
+				//class
+				if (r == 1) { data_store_target_group->target_action_on_click = &EDataActionCollection::action_add_wide_item_to_group_receiver; }
+				
+				//influence
+				if (r == 2) { data_store_target_group->target_action_on_click = &EDataActionCollection::action_add_wide_item_to_group_receiver; }
+
+				EntityButton::get_last_custom_data(small_button)->data_container = data_store_target_group;
+				
 
 				jc_text_area = ETextArea::create_centered_text_area
 				(EntityButton::get_last_clickable_area(small_button), EFont::font_list[0], "Add new item");
@@ -352,47 +395,47 @@ EWindowMain::EWindowMain()
 				*jc_text_area->can_be_edited = false;
 				Entity::add_text_area_to_last_clickable_region(small_button, jc_text_area);
 
-				group_side->button_list.push_back(small_button);
+				list_left_part_group->button_list.push_back(small_button);
 
 				//remove all buttons
 				small_button = EntityButton::create_default_clickable_button
-				(new ERegionGabarite(130.0f, 18.0f), group_side, nullptr);
+				(new ERegionGabarite(130.0f, 18.0f), list_left_part_group, nullptr);
 
 				jc_text_area = ETextArea::create_centered_text_area
 				(EntityButton::get_last_clickable_area(small_button), EFont::font_list[0], "");
-				jc_text_area->change_text("Remove all buttons");
+				jc_text_area->change_text("Удалить блок");
 
 				*jc_text_area->can_be_edited = false;
 				Entity::add_text_area_to_last_clickable_region(small_button, jc_text_area);
 
-				group_side->button_list.push_back(small_button);
+				list_left_part_group->button_list.push_back(small_button);
 				////////////////////////
 
 
 
 				////////////////////////
 				//big subrow for items
-				EButtonGroup* group_for_items = EButtonGroup::create_button_group_without_bg (new ERegionGabarite(600.0f, 80.0f), EGUIStyle::active_style);
+				EButtonGroup* list_main_part_group = EButtonGroup::create_button_group_without_bg (new ERegionGabarite(600.0f, 80.0f), EGUIStyle::active_style);
 
-				*group_for_items->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				*list_main_part_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 				//*group_for_items->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
 
-				*group_for_items->stretch_x_by_parent_size = true;
-				*group_for_items->stretch_y_by_parent_size = true;
+				*list_main_part_group->stretch_x_by_parent_size = true;
+				*list_main_part_group->stretch_y_by_parent_size = true;
 
-				massive_game_item->add_group(group_for_items);
+				list_condition_group_container->add_group(list_main_part_group);
 
-				data_store_target_group->target_group = group_for_items;
+				data_store_target_group->target_group = list_main_part_group;
 				////////////////////////
 
 
 				std::vector <EDataEntity*> suitable_data_entity;
 				//regular items
 				//button item
-				massive_game_item->min_size_y = 20.0f;
+				list_condition_group_container->min_size_y = 20.0f;
 				if (r == 0)
 				{
-					massive_game_item->min_size_y = 120.0f;
+					list_condition_group_container->min_size_y = 120.0f;
 
 					int button_count = rand() % 3 + 1;
 					button_count *= rand() % 3 + 1;
@@ -419,11 +462,11 @@ EWindowMain::EWindowMain()
 						jc_button = EntityButton::create_item_button
 						(
 							nullptr,
-							group_for_items,
+							list_main_part_group,
 							suitable_data_entity[selected_data_entity]
 						);
 
-						group_for_items->button_list.push_back(jc_button);
+						list_main_part_group->button_list.push_back(jc_button);
 
 
 					}
@@ -454,12 +497,12 @@ EWindowMain::EWindowMain()
 						jc_button = EntityButton::create_wide_item_button
 						(
 							new ERegionGabarite(200.0f, 40.0f),
-							group_for_items,
+							list_main_part_group,
 							suitable_data_entity[selected_data_entity],
 							EFont::font_list[0]
 						);
 
-						group_for_items->button_list.push_back(jc_button);
+						list_main_part_group->button_list.push_back(jc_button);
 
 
 					}
@@ -486,12 +529,12 @@ EWindowMain::EWindowMain()
 								jc_button = EntityButton::create_wide_item_button
 								(
 									new ERegionGabarite(200.0f, 40.0f),
-									group_for_items,
+									list_main_part_group,
 									suitable_data_entity[k],
 									EFont::font_list[0]
 								);
 
-								group_for_items->button_list.push_back(jc_button);
+								list_main_part_group->button_list.push_back(jc_button);
 							}
 						}
 				}
@@ -508,7 +551,7 @@ EWindowMain::EWindowMain()
 			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			
 				EButtonGroup* cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(256.0f, 160.0f), EGUIStyle::active_style);
-				filter_block_group->add_group(cosmetic_segment);
+				bottom_section_for_conditions->add_group(cosmetic_segment);
 
 				*cosmetic_segment->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 				//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
@@ -619,11 +662,19 @@ EWindowMain::EWindowMain()
 	if (true)
 	{
 		main_button_group = EButtonGroup::create_root_button_group
-		(new ERegionGabarite(400.0f, 300.0f, 0.0f, 400.0f, 600.0f), EGUIStyle::active_style);
+		(new ERegionGabarite(400.0f, 300.0f, 0.0f, 410.0f, 600.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
 		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		*main_button_group->can_be_stretched_by_child = false;
+
+		//main_button_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 40.0f), EGUIStyle::active_style);
 		//*main_button_group->can_change_style = false;
+
+		EButtonGroup* worspace_group = main_button_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);;
+		*worspace_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+		*worspace_group->stretch_x_by_parent_size = true;
+		*worspace_group->stretch_y_by_parent_size = true;
+
 
 		float horizontal_side = 350.0f;
 		float max_size_x = 0.0f;
@@ -640,7 +691,7 @@ EWindowMain::EWindowMain()
 
 			//group with constant style
 			EButtonGroup*
-			style_group = main_button_group->add_group
+			style_group = worspace_group->add_group
 			(EButtonGroup::create_root_button_group(new ERegionGabarite(max_size_x, 20.0f), style));
 			style_group->can_resize_to_workspace_size = false;
 			*style_group->can_be_stretched_by_child = true;
@@ -808,7 +859,7 @@ EWindowMain::EWindowMain()
 			(
 				new ERegionGabarite(260.0f, 44.0f),
 				jc_button_group,
-				&EDataActionCollection::action_add_item_to_group_receiver
+				&EDataActionCollection::action_invoke_data_entity_group_action
 			);
 
 
@@ -1219,7 +1270,7 @@ EWindowMain::EWindowMain()
 
 	if (true)
 	{
-		main_button_group = EButtonGroup::create_color_editor_group(new ERegionGabarite(200.0f, 200.0f, 860.0f, 380.0f), EGUIStyle::active_style);
+		main_button_group = EButtonGroup::create_color_editor_group(new ERegionGabarite(200.0f, 200.0f, 980.0f, 380.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
 		*main_button_group->is_active = false;
 		EButtonGroup::color_editor_group = main_button_group;

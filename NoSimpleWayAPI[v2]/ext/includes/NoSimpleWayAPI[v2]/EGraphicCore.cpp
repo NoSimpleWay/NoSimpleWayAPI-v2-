@@ -40,18 +40,18 @@ namespace NS_EGraphicCore
 	float							global_normal_multiplier			= 1.0f;
 
 	float							global_free_sky_light_multiplier	= 0.35f;
-	float							global_reflection_multiplier		= 1.0f;
+	float							global_reflection_multiplier		= 2.0f;
 
 	float							global_gloss_multiplier				= 1.0f;
 	float							sun_x								= 0.5f;
-	float							sun_y								= 0.65f;
-	float							sun_size							= 0.075f;
-	float							sun_blur							= 0.075f;
-	float							sun_bright							= 7.000f;
+	float							sun_y								= 0.60f;
+	float							sun_size							= 0.175f;
+	float							sun_blur							= 0.75f;
+	float							sun_bright							= 21.000f;
 	float							sun_exp								= 3.300f;
 	float							ground_level						= 0.215f;
 	float							time_total							= 0.00f;
-	float							move_multiplier						= 1.00f;
+	float							move_multiplier						= 2.35f;
 	float							sun_flat_decay						= 0.05f;
 
 	Helper::hsvrgba_color			sun_color;
@@ -599,8 +599,10 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 
 
+	GLint max_tex_size;
+	glGetIntegerv(GL_MAX_TEXTURE_SIZE, &max_tex_size);
 
-	NS_EGraphicCore::default_texture_atlas = new ETextureAtlas(4096, 4096);
+	NS_EGraphicCore::default_texture_atlas = new ETextureAtlas(min(max_tex_size,8192), min(8192, max_tex_size));
 	NS_EGraphicCore::load_texture("data/textures/white_pixel.png", 0);
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::texture[0]);
@@ -683,13 +685,13 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 	NS_DefaultGabarites::texture_gabarite_white_pixel					= NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
 
-	NS_DefaultGabarites::texture_gabarite_gudron						= NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_rusted_bronze							= NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_lead_and_gold							= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_black_marble							= NS_EGraphicCore::put_texture_to_atlas("data/textures/Black_marble.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_gabarite_gudron						= NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_rusted_bronze							= NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_lead_and_gold							= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_black_marble							= NS_EGraphicCore::put_texture_to_atlas("data/textures/Black_marble.png", NS_EGraphicCore::default_texture_atlas);
 //	NS_DefaultGabarites::texture_dark_spruce							= NS_EGraphicCore::put_texture_to_atlas("data/textures/Dark_spruce.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_dark_spruce							= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_lapis_wood								= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_dark_spruce							= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_lapis_wood								= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
 
 	NS_DefaultGabarites::texture_gabarite_skydome						= NS_EGraphicCore::put_texture_to_atlas("data/textures/skydome.png", NS_EGraphicCore::default_texture_atlas);
 	//NS_DefaultGabarites::texture_slider_bg_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
@@ -2046,8 +2048,8 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 				(float)(place_x + 0.5f) / (float)(_atlas->get_atlas_size_x()),
 				(float)(place_y + 0.5f) / (float)(_atlas->get_atlas_size_y()),
 
-				(float)(NS_EGraphicCore::last_texture_width		- 1)	/ (float)(_atlas->get_atlas_size_x()),
-				(float)(NS_EGraphicCore::last_texture_height	- 1)	/ (float)(_atlas->get_atlas_size_y())
+				(float)(NS_EGraphicCore::last_texture_width		- 1.0f)	/ (float)(_atlas->get_atlas_size_x()),
+				(float)(NS_EGraphicCore::last_texture_height	- 1.0f)	/ (float)(_atlas->get_atlas_size_y())
 			);
 
 			new_gabarite->target_atlas = _atlas;
@@ -3605,8 +3607,8 @@ void ESprite::sprite_calculate_uv()
 		uv_start_x = *main_texture->uv_start_x + (fragment_offset_x + 0.0f) / main_texture->target_atlas->get_atlas_size_x();
 		uv_start_y = *main_texture->uv_start_y + (fragment_offset_y + 0.0f) / main_texture->target_atlas->get_atlas_size_y();
 
-		uv_end_x = uv_start_x + (fragment_size_x - 1.5f) / main_texture->target_atlas->get_atlas_size_x();
-		uv_end_y = uv_start_y + (fragment_size_y - 1.5f) / main_texture->target_atlas->get_atlas_size_y();
+		uv_end_x = uv_start_x + (fragment_size_x - 1.0f) / main_texture->target_atlas->get_atlas_size_x();
+		uv_end_y = uv_start_y + (fragment_size_y - 1.0f) / main_texture->target_atlas->get_atlas_size_y();
 	}
 
 	if (normal_texture != nullptr)
@@ -3614,8 +3616,8 @@ void ESprite::sprite_calculate_uv()
 		normal_uv_start_x = *normal_texture->uv_start_x + (fragment_offset_x + 0.0f) / normal_texture->target_atlas->get_atlas_size_x();
 		normal_uv_start_y = *normal_texture->uv_start_y + (fragment_offset_y + 0.0f) / normal_texture->target_atlas->get_atlas_size_y();
 		 
-		normal_uv_end_x = normal_uv_start_x + (fragment_size_x - 1.5f) / normal_texture->target_atlas->get_atlas_size_x();
-		normal_uv_end_y = normal_uv_start_y + (fragment_size_y - 1.5f) / normal_texture->target_atlas->get_atlas_size_y();
+		normal_uv_end_x = normal_uv_start_x + (fragment_size_x - 1.0f) / normal_texture->target_atlas->get_atlas_size_x();
+		normal_uv_end_y = normal_uv_start_y + (fragment_size_y - 1.0f) / normal_texture->target_atlas->get_atlas_size_y();
 	}
 	else
 	{
@@ -3631,8 +3633,8 @@ void ESprite::sprite_calculate_uv()
 		gloss_uv_start_x	= *gloss_texture->uv_start_x + (fragment_offset_x + 0.0f) / gloss_texture->target_atlas->get_atlas_size_x();
 		gloss_uv_start_y	= *gloss_texture->uv_start_y + (fragment_offset_y + 0.0f) / gloss_texture->target_atlas->get_atlas_size_y();
 
-		gloss_uv_end_x		= gloss_uv_start_x +(fragment_size_x - 1.5f) / gloss_texture->target_atlas->get_atlas_size_x();
-		gloss_uv_end_y		= gloss_uv_start_y +(fragment_size_y - 1.5f) / gloss_texture->target_atlas->get_atlas_size_y();
+		gloss_uv_end_x		= gloss_uv_start_x +(fragment_size_x - 1.0f) / gloss_texture->target_atlas->get_atlas_size_x();
+		gloss_uv_end_y		= gloss_uv_start_y +(fragment_size_y - 1.0f) / gloss_texture->target_atlas->get_atlas_size_y();
 	}
 	else
 	{

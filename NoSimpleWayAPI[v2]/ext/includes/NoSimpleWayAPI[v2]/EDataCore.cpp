@@ -704,9 +704,10 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EButtonGroup::data_entity_filter->data_container;
 
 	*EButtonGroup::data_entity_filter->is_active = true;
-	button_group_data_container->pointer_to_group_item_receiver = button_data_container->target_group;
 
+	button_group_data_container->pointer_to_group_item_receiver = button_data_container->target_group;
 	button_group_data_container->target_rule = button_data_container->filter_rule;
+	button_group_data_container->action_on_select_for_button = button_data_container->target_action_on_click;
 
 	EDataActionCollection::action_type_text(button_group_data_container->filter_text_area);
 	/* OUTDATED */
@@ -832,19 +833,40 @@ void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, E
 	EButtonGroup* parent_group = ((EntityButton*)_entity)->parent_button_group;
 	EButtonGroup* root_group = parent_group->root_group;
 	EDataContainer_Group_DataEntitiesSearch* data = (EDataContainer_Group_DataEntitiesSearch*)root_group->data_container;
-EButtonGroup* receiver = data->pointer_to_group_item_receiver;
-EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
+	EButtonGroup* receiver = data->pointer_to_group_item_receiver;
+	EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
 
-EntityButton* jc_button = EntityButton::create_item_button
-(
-	new ERegionGabarite(45.0f, 45.0f),
-	receiver,
-	data_entity_holder->stored_data_entity
-);
+	EntityButton* jc_button = EntityButton::create_item_button
+	(
+		new ERegionGabarite(45.0f, 45.0f),
+		receiver,
+		data_entity_holder->stored_data_entity
+	);
 
-receiver->button_list.push_back(jc_button);
-//receiver->button_list.clear();
-EButtonGroup::refresh_button_group(receiver);
+	receiver->button_list.push_back(jc_button);
+	//receiver->button_list.clear();
+	EButtonGroup::refresh_button_group(receiver->root_group);
+}
+
+void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EButtonGroup*								parent_group		= ((EntityButton*)_entity)->parent_button_group;
+	EButtonGroup*								root_group			= parent_group->root_group;
+	EDataContainer_Group_DataEntitiesSearch*	data				= (EDataContainer_Group_DataEntitiesSearch*)root_group->data_container;
+	EButtonGroup*								receiver			= data->pointer_to_group_item_receiver;
+	EDataContainer_DataEntityHolder*			data_entity_holder	= (EDataContainer_DataEntityHolder*)_custom_data->data_container;
+
+	EntityButton* jc_button = EntityButton::create_wide_item_button
+	(
+		new ERegionGabarite(200.0f, 40.0f),
+		receiver,
+		data_entity_holder->stored_data_entity,
+		EFont::font_list[0]
+	);
+
+	receiver->button_list.push_back(jc_button);
+	//receiver->button_list.clear();
+	EButtonGroup::refresh_button_group(receiver->root_group);
 }
 
 void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1284,6 +1306,21 @@ void EDataActionCollection::action_force_resize_callback(Entity* _entity, ECusto
 				}
 			}
 		}
+	}
+}
+
+void EDataActionCollection::action_invoke_data_entity_group_action(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if
+	(
+		(static_cast<EntityButton*>(_entity)->parent_button_group != nullptr)
+		&&
+		(static_cast<EntityButton*>(_entity)->parent_button_group->root_group != nullptr)
+	)
+	{
+		//data container in root group							//cast to button
+		static_cast<EDataContainer_Group_DataEntitiesSearch*>(static_cast<EntityButton*>(_entity)->parent_button_group->root_group->data_container)->
+		action_on_select_for_button(_entity, _custom_data, _d);
 	}
 }
 
