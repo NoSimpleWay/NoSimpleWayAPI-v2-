@@ -243,7 +243,7 @@ EWindowMain::EWindowMain()
 				parent_for_container_group->add_group(bottom_section_for_conditions);
 
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			EButtonGroup* top_section_for_configurator_buttos = EButtonGroup::create_default_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 20.0f), EGUIStyle::active_style);
+			EButtonGroup* top_section_for_configurator_buttos = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 20.0f), EGUIStyle::active_style);
 				*top_section_for_configurator_buttos->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 				*top_section_for_configurator_buttos->stretch_x_by_parent_size = true;
 				*top_section_for_configurator_buttos->stretch_y_by_parent_size = false;
@@ -255,6 +255,12 @@ EWindowMain::EWindowMain()
 					top_section_for_configurator_buttos,
 					nullptr
 				);
+
+				EDataContainer_Button_OpenButtonGroup* data_open_group = new EDataContainer_Button_OpenButtonGroup();
+				data_open_group->master_group = parent_for_container_group;
+				data_open_group->target_group = EButtonGroup::data_entity_filter;
+
+				EntityButton::get_last_custom_data(jc_button)->data_container = data_open_group;
 
 				jc_text_area = ETextArea::create_centered_text_area
 				(EntityButton::get_last_clickable_area(jc_button), EFont::font_list[0], "");

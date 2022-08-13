@@ -1324,6 +1324,12 @@ void EDataActionCollection::action_invoke_data_entity_group_action(Entity* _enti
 	}
 }
 
+void EDataActionCollection::action_set_button_group_as_active(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EDataContainer_Button_OpenButtonGroup* button_data = static_cast<EDataContainer_Button_OpenButtonGroup*>(_custom_data->data_container);
+
+}
+
 //void EDataActionCollection::action_type_text(Entity* _entity, ECustomData* _custom_data, float _d)
 //{
 //

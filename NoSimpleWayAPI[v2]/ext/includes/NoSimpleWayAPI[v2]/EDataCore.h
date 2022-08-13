@@ -386,6 +386,13 @@ public:
 
 };
 
+class EDataContainer_Button_OpenButtonGroup : public EDataContainer
+{
+public:
+	EButtonGroup* master_group;
+	EButtonGroup* target_group;
+};
+
 
 //////////////////////////////////////////////////////////////////////
 // actions section
@@ -429,7 +436,7 @@ namespace EDataActionCollection
 	void action_force_resize_callback			(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_invoke_data_entity_group_action	(Entity* _entity, ECustomData* _custom_data, float _d);
-	
+	void action_set_button_group_as_active		(Entity* _entity, ECustomData* _custom_data, float _d);
 	//group section
 		//draw
 		void action_draw_color_rectangle_for_group	(EButtonGroup* _group);
