@@ -219,7 +219,7 @@ EWindowMain::EWindowMain()
 		main_button_group->can_be_moved = false;
 		main_button_group->can_resize_to_workspace_size = false;
 
-		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		//*main_button_group->stretch_mode		= GroupStretchMode::CONSTANT;
 
 		//std::string[3]
@@ -228,7 +228,7 @@ EWindowMain::EWindowMain()
 			//whole filter block
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			EButtonGroup* whole_filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 180.0f), EGUIStyle::active_style);
-			*whole_filter_block_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+			whole_filter_block_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
 			*whole_filter_block_group->stretch_x_by_parent_size = true;
 			*whole_filter_block_group->stretch_y_by_parent_size = false;
@@ -250,7 +250,7 @@ EWindowMain::EWindowMain()
 			//left additional section
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			EButtonGroup* left_control_section = EButtonGroup::create_default_button_group(new ERegionGabarite(50.0f, 20.0f), EGUIStyle::active_style);
-				*left_control_section->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+				left_control_section->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 				*left_control_section->stretch_x_by_parent_size = false;
 				*left_control_section->stretch_y_by_parent_size = true;
 				whole_filter_block_group->add_group(left_control_section);
@@ -306,7 +306,7 @@ EWindowMain::EWindowMain()
 				*non_list_condition_group->stretch_x_by_parent_size = false;
 				*non_list_condition_group->stretch_y_by_parent_size = true;
 
-				*non_list_condition_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				non_list_condition_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
 				whole_filter_block_group->add_group(non_list_condition_group);
 
@@ -350,7 +350,7 @@ EWindowMain::EWindowMain()
 			EButtonGroup* listed_condition_segment = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(800.0f, 160.0f), EGUIStyle::active_style);
 
 				
-				*listed_condition_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+				listed_condition_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 				//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
 
 				*listed_condition_segment->stretch_x_by_parent_size = true;
@@ -377,7 +377,7 @@ EWindowMain::EWindowMain()
 				EButtonGroup* list_condition_group_container = EButtonGroup::create_default_button_group(new ERegionGabarite(800.0f, 100.0f), EGUIStyle::active_style);
 				
 				listed_condition_segment->add_group(list_condition_group_container);
-				*list_condition_group_container->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				list_condition_group_container->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 				//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
 
 				*list_condition_group_container->stretch_x_by_parent_size = true;
@@ -390,7 +390,7 @@ EWindowMain::EWindowMain()
 				EButtonGroup* list_left_part_group = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(134.0f, 80.0f), EGUIStyle::active_style);
 				list_condition_group_container->add_group(list_left_part_group);
 				//row_game_item->add_group(group_side);
-				*list_left_part_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				list_left_part_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 				//*group_side->stretch_mode		= GroupStretchMode::STRETCHED_ONLY_BY_PARENT;
 
 				*list_left_part_group->stretch_x_by_parent_size = false;
@@ -451,7 +451,7 @@ EWindowMain::EWindowMain()
 				//big subrow for items
 				EButtonGroup* list_main_part_group = EButtonGroup::create_button_group_without_bg (new ERegionGabarite(600.0f, 80.0f), EGUIStyle::active_style);
 
-				*list_main_part_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				list_main_part_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 				//*group_for_items->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
 
 				*list_main_part_group->stretch_x_by_parent_size = true;
@@ -587,7 +587,7 @@ EWindowMain::EWindowMain()
 				EButtonGroup* cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(256.0f, 160.0f), EGUIStyle::active_style);
 				
 
-				*cosmetic_segment->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				cosmetic_segment->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 				//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
 
 				*cosmetic_segment->stretch_x_by_parent_size = false;
@@ -639,10 +639,10 @@ EWindowMain::EWindowMain()
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(10.0f, 10.0f, 0.0f, 512.0f, 800.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
-		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
 		jc_button_group = main_button_group->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(256.0f, 150.0f), EGUIStyle::active_style));
-		*jc_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+		jc_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 		*jc_button_group->stretch_x_by_parent_size = true;
 		*jc_button_group->stretch_y_by_parent_size = true;
 
@@ -701,14 +701,14 @@ EWindowMain::EWindowMain()
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(400.0f, 300.0f, 0.0f, 410.0f, 600.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
-		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		*main_button_group->can_be_stretched_by_child = false;
 
 		//main_button_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 40.0f), EGUIStyle::active_style);
 		//*main_button_group->can_change_style = false;
 
 		EButtonGroup* worspace_group = main_button_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);;
-		*worspace_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+		worspace_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		*worspace_group->stretch_x_by_parent_size = true;
 		*worspace_group->stretch_y_by_parent_size = true;
 
@@ -866,7 +866,7 @@ EWindowMain::EWindowMain()
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(900.0f, 100.0f, 0.0f, 900.0f, 600.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
-		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		EButtonGroup::data_entity_filter = main_button_group;
 
 		EDataContainer_Group_DataEntitiesSearch* jc_data_container_for_search_group = new EDataContainer_Group_DataEntitiesSearch();
@@ -987,7 +987,7 @@ EWindowMain::EWindowMain()
 		(new ERegionGabarite(900.0f, 43.0f), EGUIStyle::active_style);
 
 		button_group_header->parent_group = main_button_group;
-		*button_group_header->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+		button_group_header->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 		//*button_group_header->is_active = false;
 		//*main_button_group->is_active = false;
 		/**/main_button_group->header_button_group = button_group_header;
@@ -997,7 +997,7 @@ EWindowMain::EWindowMain()
 		/**///jc_button_group_row = EButtonGroup::add_default_row_to_group(button_group_header, new ERegionGabarite(800.0f, 10.0f));
 		///**/*button_group_header->gabarite_size_mode_y = ButtonGroupGabariteSize::BGGS_EXACT_STRETCH;
 		EButtonGroup* left_sided_close_group = button_group_header->add_group(EButtonGroup::create_invisible_button_group(new ERegionGabarite(855.0f, 28.0f), EGUIStyle::active_style));
-		*left_sided_close_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+		left_sided_close_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
 		EButtonGroup* close_group = button_group_header->add_group
 		(EButtonGroup::create_invisible_button_group(new ERegionGabarite(28.0f, 28.0f), EGUIStyle::active_style));
@@ -1048,7 +1048,7 @@ EWindowMain::EWindowMain()
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(400.0f, 100.0f, 0.0f, 400, 600.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
-		*main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 		//*----------------------------		SUN SECTION		-------------------------------------------------------*//
@@ -1098,14 +1098,14 @@ EWindowMain::EWindowMain()
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 		EButtonGroup* button_group_sun_main = main_button_group->add_group
 		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 250.0f), EGUIStyle::active_style));
-		*button_group_sun_main->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+		button_group_sun_main->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 		*button_group_sun_main->stretch_x_by_parent_size = true;
 		*button_group_sun_main->stretch_y_by_parent_size = false;
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 		jc_button_group = button_group_sun_main->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(160.0f, 160.0f), EGUIStyle::active_style));
-		*jc_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+		jc_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 		*jc_button_group->stretch_x_by_parent_size = false;
 		*jc_button_group->stretch_y_by_parent_size = true;
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
@@ -1131,7 +1131,7 @@ EWindowMain::EWindowMain()
 
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 		jc_button_group = button_group_sun_main->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(160.0f, 160.0f), EGUIStyle::active_style));
-		*jc_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+		jc_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		*jc_button_group->stretch_x_by_parent_size = true;
 		*jc_button_group->stretch_y_by_parent_size = true;
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
@@ -1317,6 +1317,32 @@ EWindowMain::EWindowMain()
 		EButtonGroup::refresh_button_group(main_button_group);
 		
 		
+	}
+
+	//add content to filter block group
+	if (true)
+	{
+		EButtonGroup*
+		add_content_group = EButtonGroup::create_root_button_group(new ERegionGabarite(500.0f, 300.0f), EGUIStyle::active_style);
+		add_content_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+
+		*add_content_group->stretch_x_by_parent_size = false;
+		*add_content_group->stretch_y_by_parent_size = false;
+
+		EButtonGroup*
+		filter_block_operation_segment
+		=
+		add_content_group->add_group
+		(
+			EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(100.0f, 100.0f),
+				EGUIStyle::active_style
+			)
+		);
+
+		button_group_list.push_back(add_content_group);
+		EButtonGroup::refresh_button_group(add_content_group);
 	}
 
 

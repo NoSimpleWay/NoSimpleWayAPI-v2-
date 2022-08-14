@@ -998,15 +998,15 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-		//***********************************************************
-		//slider head round
-		jc_brick = new EBrickStyle("Slider_head_round");
-		just_created_style->round_slider = jc_brick;
-		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		////***********************************************************
+		////slider head round
+		//jc_brick = new EBrickStyle("Slider_head_round");
+		//just_created_style->round_slider = jc_brick;
+		//NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		//EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		//EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		//EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
 		//***********************************************************
 		//button background

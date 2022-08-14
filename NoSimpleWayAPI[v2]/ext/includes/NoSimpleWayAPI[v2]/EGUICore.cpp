@@ -11,8 +11,9 @@ EButtonGroup* EButtonGroup::focused_button_group = nullptr;
 //EButtonGroup* EButtonGroup::focused_button_group;
 EButtonGroup* EButtonGroup::focused_button_group_with_slider = nullptr;
 
-EButtonGroup* EButtonGroup::data_entity_filter = nullptr;
-EButtonGroup* EButtonGroup::color_editor_group = nullptr;
+EButtonGroup* EButtonGroup::data_entity_filter					= nullptr;
+EButtonGroup* EButtonGroup::color_editor_group					= nullptr;
+EButtonGroup* EButtonGroup::add_content_to_filter_block_group	= nullptr;
 
 constexpr float BUTTON_GROUP_Y_DISTANCE = 3.0f;
 
@@ -627,13 +628,13 @@ void EButtonGroup::align_groups()
 
 			if (prev_group != nullptr)
 			{
-				if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
+				if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 				{
 					group->region_gabarite->offset_x = *border_left + 0.0f;
 					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + BUTTON_GROUP_Y_DISTANCE;
 				}
 				else
-				if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
+				if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 				{
 					group->region_gabarite->offset_x = prev_group->region_gabarite->offset_x + prev_group->region_gabarite->size_x + 0.0f;
 					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y;
@@ -839,7 +840,7 @@ void EButtonGroup::substretch_groups_y()
 	float max_y = 0.0f;
 
 	EButtonGroup* prev_group = nullptr;
-	if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
+	if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 	{
 		total_y += ((float)(group_list.size()) - 1.0f) * BUTTON_GROUP_Y_DISTANCE;
 
@@ -850,7 +851,7 @@ void EButtonGroup::substretch_groups_y()
 		}
 	}
 
-	if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
+	if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 	{
 		for (EButtonGroup* group : group_list)
 		if (!*group->stretch_y_by_parent_size)
@@ -874,7 +875,7 @@ void EButtonGroup::substretch_groups_y()
 			//(*stretch_mode == GroupStretchMode::STRETCHED_FILL_VOID)
 			(*can_be_stretched_by_child)
 			&&
-			(*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
+			(child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 			&&
 			(total_y > region_gabarite->size_y)
 		)
@@ -908,7 +909,7 @@ void EButtonGroup::group_stretch_x()
 	float shrink_size = 0.0f;
 	//if (!*have_bg) { shrink_size = 0.0f; }
 
-	if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
+	if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 	{
 
 
@@ -929,7 +930,7 @@ void EButtonGroup::group_stretch_x()
 		}
 	}
 
-	if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
+	if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 	{
 		target_size = region_gabarite->size_x - *border_left - *border_right - shrink_size;
 		target_size -= slider_effect;
@@ -968,7 +969,7 @@ void EButtonGroup::group_stretch_y()
 	float shrink_size = 0.0f;
 	if (!*have_bg) { shrink_size = 0.0f; }
 
-	if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
+	if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 	{
 
 		target_size = max(region_gabarite->size_y, min_size_y) - *border_bottom - *border_up - (group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE - shrink_size - 1.0;
@@ -989,7 +990,7 @@ void EButtonGroup::group_stretch_y()
 		}
 	}
 
-	if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
+	if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 	{
 
 		target_size = region_gabarite->size_y - *border_bottom - *border_up - shrink_size - 0.0f;
@@ -1033,7 +1034,7 @@ void EButtonGroup::check_slider()
 	//}
 	//else//potentially, can have slider
 	{
-		if (*child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
+		if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 		{
 			child_elements_height_summ = ((float)group_list.size() - 1.0f) * BUTTON_GROUP_Y_DISTANCE;
 
@@ -1044,7 +1045,7 @@ void EButtonGroup::check_slider()
 			}
 		}
 
-		if (*child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
+		if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 		{
 
 			for (EButtonGroup* group : group_list)
@@ -1598,7 +1599,7 @@ void EButtonGroup::stretch_parent_group(EButtonGroup* _group, float _new_y_size)
 		&&
 		(*_parent->can_be_stretched_by_child)
 		&&
-		(*_parent->child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
+		(_parent->child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 		&&
 		(
 			_parent->region_gabarite->offset_y
@@ -1873,13 +1874,13 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	Helper::hsvrgba_color* HRA_color = &Helper::registered_color_list[rand() % Helper::registered_color_list.size()]->target_color;
 
 
-	*main_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	main_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	main_group->actions_on_draw.push_back(&EDataActionCollection::action_draw_color_rectangle_for_group);
 	main_group->actions_on_update.push_back(&EDataActionCollection::action_convert_HSV_to_RGB);
 
 	
 	EButtonGroup* workspace_group = main_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), _style);
-	*workspace_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	workspace_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
 	EDataContainer_Group_ColorEditor* data = new EDataContainer_Group_ColorEditor();
 	data->work_color = HRA_color;
@@ -1894,14 +1895,14 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	//**********************************************************************************************************************************************
 	//**********************************************************************************************************************************************
 	EButtonGroup* left_part = workspace_group->add_group(create_default_button_group(new ERegionGabarite(285.0f, 285.0f), _style));
-	*left_part->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	left_part->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	*left_part->stretch_x_by_parent_size = false;
 	*left_part->stretch_y_by_parent_size = true;
 
 
 	//**********************************************************************************************************************************************
 	EButtonGroup* value_and_alpha_part = left_part->add_group(create_default_button_group(new ERegionGabarite(10.0f, 100.0f), _style));
-	*value_and_alpha_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	value_and_alpha_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	*value_and_alpha_part->stretch_x_by_parent_size = true;
 	*value_and_alpha_part->stretch_y_by_parent_size = true;
 
@@ -1928,7 +1929,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	//**********************************************************************************************************************************************
 	EButtonGroup* hue_part = left_part->add_group(create_default_button_group(new ERegionGabarite(0.0f, 270.0f), _style));
-	*hue_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	hue_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	*hue_part->stretch_x_by_parent_size = true;
 	*hue_part->stretch_y_by_parent_size = false;
 
@@ -1959,7 +1960,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	//**********************************************************************************************************************************************
 	EButtonGroup* color_box = workspace_group->add_group(create_default_button_group(new ERegionGabarite(35.0f, 10.0f), _style));
 	//right_part->debug_translation = true;
-	*color_box->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	color_box->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	*color_box->stretch_x_by_parent_size = false;
 	*color_box->stretch_y_by_parent_size = true;
 	data->pointer_to_color_box_group = color_box;
@@ -1968,13 +1969,13 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	//**********************************************************************************************************************************************
 	EButtonGroup* color_collection_frame = workspace_group->add_group(create_default_button_group(new ERegionGabarite(256.0f, 100.0f), _style));
 	//right_part->debug_translation = true;
-	*color_collection_frame->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	color_collection_frame->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	*color_collection_frame->stretch_x_by_parent_size = true;
 	*color_collection_frame->stretch_y_by_parent_size = true;
 	
 	
 	EButtonGroup* control_button_segment = color_collection_frame->add_group(create_default_button_group(new ERegionGabarite(256.0f, 50.0f), _style));
-	*control_button_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	control_button_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	*control_button_segment->stretch_x_by_parent_size = true;
 	*control_button_segment->stretch_y_by_parent_size = false;
 	
@@ -1995,7 +1996,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	
 
 	EButtonGroup* color_segment = color_collection_frame->add_group(create_default_button_group(new ERegionGabarite(256.0f, 40.0f), _style));
-	*color_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	color_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	*color_segment->stretch_x_by_parent_size = true;
 	*color_segment->stretch_y_by_parent_size = true;
 	data->pointer_to_color_collection_group = color_segment;
@@ -2048,7 +2049,7 @@ EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGa
 		_style
 	);
 
-	*workspace_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	workspace_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	*workspace_group->stretch_x_by_parent_size = true;
 	*workspace_group->stretch_y_by_parent_size = true;
 
@@ -2062,7 +2063,7 @@ EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGa
 		_style
 	);
 
-	*close_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	close_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	*close_group->stretch_x_by_parent_size = true;
 	*close_group->stretch_y_by_parent_size = false;
 
@@ -2078,7 +2079,7 @@ EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGa
 			)
 		);
 
-	*close_group_left->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	close_group_left->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	*close_group_left->stretch_x_by_parent_size = true;
 	*close_group_left->stretch_y_by_parent_size = true;
 
@@ -2094,7 +2095,7 @@ EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGa
 		)
 	);
 
-	*close_group_right->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	close_group_right->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	*close_group_right->stretch_x_by_parent_size = false;
 	*close_group_right->stretch_y_by_parent_size = true;
 

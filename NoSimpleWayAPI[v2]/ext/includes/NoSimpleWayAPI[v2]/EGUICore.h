@@ -264,7 +264,7 @@ public:
 	//unsigned int* gabarite_size_mode_x		= new unsigned int(GroupStretchMode::CONSTANT);
 	//unsigned int* gabarite_size_mode_y		= new unsigned int(GroupStretchMode::CONSTANT);
 
-	unsigned int* child_align_mode			= new unsigned int(ChildAlignMode::ALIGN_VERTICAL);
+	unsigned int child_align_mode			= ChildAlignMode::ALIGN_VERTICAL;
 
 	//static EButtonGroup* focused_button_group;
 
@@ -302,6 +302,7 @@ public:
 	//static fuck_you_leatherman
 	static EButtonGroup* data_entity_filter;
 	static EButtonGroup* color_editor_group;
+	static EButtonGroup* add_content_to_filter_block_group;
 
 	void translate							(float _x, float _y, float _z, bool _affect_child);
 	void translate_content					(float _x, float _y, float _z, bool _move_slider);
