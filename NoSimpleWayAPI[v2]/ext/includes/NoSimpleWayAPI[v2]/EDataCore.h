@@ -393,6 +393,19 @@ public:
 	EButtonGroup* target_group;
 };
 
+class EDataContainer_Group_WholeFilterBlock : public EDataContainer
+{
+public:
+	EButtonGroup* pointer_to_non_listed_segment;
+	EButtonGroup* pointer_to_listed_segment;
+	EButtonGroup* pointer_to_cosmetic_segment;
+};
+
+class EDataContainer_Group_FilterBlockNonListedSegment : public EDataContainer
+{
+public:
+};
+
 
 //////////////////////////////////////////////////////////////////////
 // actions section
