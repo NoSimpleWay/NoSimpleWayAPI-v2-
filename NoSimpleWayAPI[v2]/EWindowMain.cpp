@@ -27,7 +27,7 @@ void EWindowMain::draw_additional(float _d)
 
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_position(0.0f, 0.0f);
 	NS_EGraphicCore::default_batcher_for_drawing->set_transform_screen_size(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
-	NS_EGraphicCore::default_batcher_for_drawing->set_transform_zoom(1.0f);
+	NS_EGraphicCore::default_batcher_for_drawing->set_transform_zoom(1.0f); 
 
 
 
