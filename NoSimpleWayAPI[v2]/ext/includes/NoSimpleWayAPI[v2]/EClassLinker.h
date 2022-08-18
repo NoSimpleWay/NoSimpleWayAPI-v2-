@@ -52,6 +52,9 @@ class ETextParser;
 class EDataContainer;
 class EBrickPlane;
 
+class ELocalisationText;
+class FilterBlockAttribute;
+
 typedef void (*data_action_pointer)(Entity*, ECustomData*, float);
 
 struct hsvrgba_color;

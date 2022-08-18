@@ -29,6 +29,10 @@ enum ENUM_ButtonAutoAlign
 	BUTTON_AUTO_ALIGN__FREE									//set exactly position
 };
 
+#define NSW_dynamic_autosize	true
+#define NSW_static_autosize		false
+
+
 //class EButtonContainer;
 
 
@@ -42,7 +46,7 @@ public:
 	float* size_y = new float(0.0f);
 
 	std::vector<EButtonGroup*> button_container_list;
-	
+
 
 	void			update_default(float _d);
 	virtual void	update_additional(float _d);
@@ -193,32 +197,36 @@ public:
 
 	float min_size_y = 10.0f;
 
-		
-		void substretch_groups_y();
-		void check_slider();
 
-		void group_stretch_x();
-		void group_stretch_y();
+	void substretch_groups_y();
+	void check_slider();
 
-		void align_groups();
-		static void calculate_culling_lines(EButtonGroup* _group);
-		void realign_all_buttons();
-		static void generate_vertex_buffer_for_group(EButtonGroup* _group);
-		
-		void expand_to_workspace_size();
-		static void refresh_button_group(EButtonGroup* _group);
+	void group_stretch_x();
+	void group_stretch_y();
+
+	void align_groups();
+	static void calculate_culling_lines(EButtonGroup* _group);
+	void realign_all_buttons();
+	static void generate_vertex_buffer_for_group(EButtonGroup* _group);
+
+	void expand_to_workspace_size();
+
+	static void refresh_button_group(EButtonGroup* _group);
+
+	static void change_group(EButtonGroup* _group);
+
 
 	ESpriteLayer* background_sprite_layer = nullptr;
-	
+
 	bool can_resize_to_workspace_size = true;
 
-	float*	border_bottom		= new float(0.0f);
-	float*	border_up			= new float(0.0f);
+	float* border_bottom = new float(0.0f);
+	float* border_up = new float(0.0f);
 
-	float*	border_left			= new float(0.0f);
-	float*	border_right		= new float(0.0f);
+	float* border_left = new float(0.0f);
+	float* border_right = new float(0.0f);
 
-	bool*	can_change_style	= new bool (true);
+	bool* can_change_style = new bool(true);
 
 	EGUIStyle* selected_style = nullptr;
 
@@ -229,48 +237,48 @@ public:
 	static void apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* _style);
 
 	//base
-	static EButtonGroup* create_base_button_group		(ERegionGabarite* _region, EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg);
-	
-	//bg, slider, focusable, bright
-	static EButtonGroup* create_default_button_group	(ERegionGabarite* _region, EGUIStyle* _style);
-	
-	//bg, slider, focusable, dark, [no slider]
-	static EButtonGroup* create_root_button_group		(ERegionGabarite* _region, EGUIStyle* _style);
-	
-	//bg, dark, [unfocusable], [no slider]
-	static EButtonGroup* create_header_button_group		(ERegionGabarite* _region, EGUIStyle* _style);
-	
-	//[no bg], [not focusable], [no slider]
-	static EButtonGroup* create_invisible_button_group	(ERegionGabarite* _region, EGUIStyle* _style);
-	
-	//[no bg], focusable, slider
-	static EButtonGroup* create_button_group_without_bg	(ERegionGabarite* _region, EGUIStyle* _style);
+	static EButtonGroup* create_base_button_group(ERegionGabarite* _region, EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg);
 
-	static EButtonGroup* create_color_editor_group		(ERegionGabarite* _region, EGUIStyle* _style);
+	//bg, slider, focusable, bright
+	static EButtonGroup* create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style);
+
+	//bg, slider, focusable, dark, [no slider]
+	static EButtonGroup* create_root_button_group(ERegionGabarite* _region, EGUIStyle* _style);
+
+	//bg, dark, [unfocusable], [no slider]
+	static EButtonGroup* create_header_button_group(ERegionGabarite* _region, EGUIStyle* _style);
+
+	//[no bg], [not focusable], [no slider]
+	static EButtonGroup* create_invisible_button_group(ERegionGabarite* _region, EGUIStyle* _style);
+
+	//[no bg], focusable, slider
+	static EButtonGroup* create_button_group_without_bg(ERegionGabarite* _region, EGUIStyle* _style);
+
+	static EButtonGroup* create_color_editor_group(ERegionGabarite* _region, EGUIStyle* _style);
 
 	EButtonGroup* add_close_group_and_return_workspace_group(ERegionGabarite* _region, EGUIStyle* _style);
 
 
-	
+
 
 	//static EButtonGroupRow* add_default_row_to_group(EButtonGroup* _group, ERegionGabarite* _region);
 	//static EButtonGroupRow* get_last_created_row(EButtonGroup* _group);
 
 	static void change_style(EButtonGroup* _group, EGUIStyle* _style);
 
-	unsigned int* culling_lines_method		= new unsigned int(CullingLinesCalcMethod::CLCM_BY_PARENT_GROUP);
-	unsigned int* button_group_type			= new unsigned int(ButtonGroupType::BGT_REGULAR);
+	unsigned int* culling_lines_method = new unsigned int(CullingLinesCalcMethod::CLCM_BY_PARENT_GROUP);
+	unsigned int* button_group_type = new unsigned int(ButtonGroupType::BGT_REGULAR);
 
 	//unsigned int* gabarite_size_mode_x		= new unsigned int(GroupStretchMode::CONSTANT);
 	//unsigned int* gabarite_size_mode_y		= new unsigned int(GroupStretchMode::CONSTANT);
 
-	unsigned int child_align_mode			= ChildAlignMode::ALIGN_VERTICAL;
+	unsigned int child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
 	//static EButtonGroup* focused_button_group;
 
 	//static void get_focused_group(EButtonGroup* _group);
 	static void get_last_focused_group(EButtonGroup* _group);
-	
+
 	static bool catched_by_mouse(EButtonGroup* _group);
 
 	static void stretch_parent_group(EButtonGroup* _group, float _new_y_size);
@@ -279,19 +287,19 @@ public:
 	bool* can_be_focused = new bool(true);
 	bool* is_active = new bool(true);
 
-	bool* force_new_line									= new bool(false);
-	bool* parent_have_slider								= new bool(false);
-	bool* need_redraw										= new bool(false);
-	bool* can_be_stretched_by_child							= new bool(false);
+	bool* force_new_line = new bool(false);
+	bool* parent_have_slider = new bool(false);
+	bool* need_redraw = new bool(false);
+	bool* can_be_stretched_by_child = new bool(false);
 
-	bool* stretch_x_by_parent_size							= new bool(false);
-	bool* stretch_y_by_parent_size							= new bool(false);
+	bool* stretch_x_by_parent_size = new bool(false);
+	bool* stretch_y_by_parent_size = new bool(false);
 
-	bool* have_slider										= new bool(false);
+	bool* have_slider = new bool(false);
 
 	EButtonGroup* add_group(EButtonGroup* _new_group);
 
-	EDataContainer*						data_container		= nullptr;
+	EDataContainer* data_container = nullptr;
 
 	std::vector<group_update_action>			actions_on_update;
 	std::vector<group_draw_action>				actions_on_draw;
@@ -304,8 +312,8 @@ public:
 	static EButtonGroup* color_editor_group;
 	static EButtonGroup* add_content_to_filter_block_group;
 
-	void translate							(float _x, float _y, float _z, bool _affect_child);
-	void translate_content					(float _x, float _y, float _z, bool _move_slider);
+	void translate(float _x, float _y, float _z, bool _affect_child);
+	void translate_content(float _x, float _y, float _z, bool _move_slider);
 	bool can_see_this_group();
 	void phantom_translate_if_need();
 
@@ -316,6 +324,8 @@ public:
 	bool phantom_redraw = false;
 
 	int seed = 0;
+
+	EButtonGroup* set_parameters(ChildAlignMode _child_align_mode, bool _autosize_x, bool _autosize_y);
 };
 
 //class EButtonContainer
@@ -338,34 +348,34 @@ enum StyleList
 class EBrickStyle
 {
 public:
-	ETextureGabarite*									main_texture			= nullptr;
-	ETextureGabarite*									normal_map_texture		= nullptr;
-	ETextureGabarite*									gloss_map_texture		= nullptr;
+	ETextureGabarite* main_texture = nullptr;
+	ETextureGabarite* normal_map_texture = nullptr;
+	ETextureGabarite* gloss_map_texture = nullptr;
 
-	std::string*										file_name			= new std::string("Group_bg");
+	std::string* file_name = new std::string("Group_bg");
 
-	float*												side_size_left		= new float (0.0f);
-	float*												side_size_right		= new float (0.0f);
-	float*												side_size_bottom	= new float (0.0f);
-	float*												side_size_up		= new float (0.0f);
+	float* side_size_left = new float(0.0f);
+	float* side_size_right = new float(0.0f);
+	float* side_size_bottom = new float(0.0f);
+	float* side_size_up = new float(0.0f);
 
-	float*												side_offset_left	= new float (0.0f);
-	float*												side_offset_right	= new float (0.0f);
-	float*												side_offset_bottom	= new float (0.0f);
-	float*												side_offset_up		= new float (0.0f);
+	float* side_offset_left = new float(0.0f);
+	float* side_offset_right = new float(0.0f);
+	float* side_offset_bottom = new float(0.0f);
+	float* side_offset_up = new float(0.0f);
 
-	int*												subdivision_x		= new int (0);
-	int*												subdivision_y		= new int (0);
+	int* subdivision_x = new int(0);
+	int* subdivision_y = new int(0);
 
-	static void set_border_size							(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
-	static void set_offset_size							(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
-	static void set_subdivisions						(EBrickStyle* _brick, int _x, int _y);
+	static void set_border_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
+	static void set_offset_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
+	static void set_subdivisions(EBrickStyle* _brick, int _x, int _y);
 
 	EBrickStyle();
 	EBrickStyle(std::string _file_name);
 	~EBrickStyle();
 
-	static void apply_brick_parameters_to_button_group	(EButtonGroup* _group, EBrickStyle* _brick);
+	static void apply_brick_parameters_to_button_group(EButtonGroup* _group, EBrickStyle* _brick);
 };
 
 
@@ -376,20 +386,20 @@ public:
 
 	static int number;
 
-	EBrickStyle*	button_group_main				= nullptr;
-	EBrickStyle*	button_group_darken				= nullptr;
+	EBrickStyle* button_group_main = nullptr;
+	EBrickStyle* button_group_darken = nullptr;
 
-	EBrickStyle*	slider_bg						= nullptr;
-	EBrickStyle*	button_bg						= nullptr;
+	EBrickStyle* slider_bg = nullptr;
+	EBrickStyle* button_bg = nullptr;
 
-	EBrickStyle*	slider_inactive					= nullptr;
-	EBrickStyle*	slider_active					= nullptr;
+	EBrickStyle* slider_inactive = nullptr;
+	EBrickStyle* slider_active = nullptr;
 
-	EBrickStyle*	round_slider					= nullptr;
+	EBrickStyle* round_slider = nullptr;
 
-	std::string*	folder							= new std::string("lead_and_gold");
-	float			text_color_multiplier[4]		= { 1.0f, 1.0f, 1.0f, 1.0f };
-	
+	std::string* folder = new std::string("lead_and_gold");
+	float			text_color_multiplier[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
+
 	//float text_color_array[16][4];
 
 	EGUIStyle();

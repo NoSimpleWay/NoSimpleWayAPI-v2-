@@ -889,6 +889,29 @@ EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _re
 	return jc_button;
 }
 
+EntityButton* EntityButton::create_default_clickable_button_with_unedible_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, std::string _text)
+{
+	EntityButton*
+	jc_button = EntityButton::create_default_clickable_button
+	(
+		_region_gabarite,
+		_parent_group,
+		_dap
+	);
+
+
+	ETextArea*
+	jc_text_area = ETextArea::create_centered_text_area
+	(EntityButton::get_last_clickable_area(jc_button), EFont::font_list[0], _text);
+
+	jc_text_area->change_text(_text);
+
+	*jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+
+	return jc_button;
+}
+
 bool EntityButton::can_get_access_to_style()
 {
 	return false;

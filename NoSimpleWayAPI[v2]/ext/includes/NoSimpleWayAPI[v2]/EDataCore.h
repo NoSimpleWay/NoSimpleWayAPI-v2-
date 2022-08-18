@@ -393,6 +393,12 @@ public:
 	EButtonGroup* target_group;
 };
 
+class EDataContainer_Button_AddContentToFilterBlock : public EDataContainer
+{
+public:
+	FilterBlockAttribute* target_attribute;
+};
+
 class EDataContainer_Group_WholeFilterBlock : public EDataContainer
 {
 public:
@@ -404,6 +410,15 @@ public:
 class EDataContainer_Group_FilterBlockNonListedSegment : public EDataContainer
 {
 public:
+};
+
+
+
+
+class EDataContainer_Group_AddContentToFilterBlock : public EDataContainer
+{
+public:
+	EButtonGroup* target_filter_block;
 };
 
 
@@ -431,25 +446,27 @@ namespace EDataActionCollection
 	void action_type_text						(ETextArea* _text_area);
 
 	/*	open groups	*/
-	void action_open_data_entity_filter_group	(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_open_color_group				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_data_entity_filter_group		(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_color_group					(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_add_item_to_group_receiver			(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_add_wide_item_to_group_receiver		(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_update_crosshair_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_draw_crosshair_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_update_crosshair_slider				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_crosshair_slider				(Entity* _entity, ECustomData* _custom_data, float _d);
 	
-	void action_update_vertical_named_slider	(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_draw_vertical_named_slider		(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_update_vertical_named_slider		(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_vertical_named_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_convert_HSV_to_RGB				(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_select_this_button				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_convert_HSV_to_RGB					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_button					(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_force_resize_callback			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_force_resize_callback				(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_invoke_data_entity_group_action	(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_set_button_group_as_active		(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_invoke_data_entity_group_action		(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_set_button_group_as_active			(Entity* _entity, ECustomData* _custom_data, float _d);
+
+
 	//group section
 		//draw
 		void action_draw_color_rectangle_for_group	(EButtonGroup* _group);

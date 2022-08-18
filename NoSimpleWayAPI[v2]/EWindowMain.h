@@ -28,6 +28,40 @@ constexpr int CLUSTER_DIM_Y = 50;
 constexpr int CLUSTER_SIZE_X = 300;
 constexpr int CLUSTER_SIZE_Y = 300;
 
+namespace EDataActionCollection
+{
+	void action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_content_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
+}
+
+enum FilterAttributeType
+{
+	FILTER_ATTRIBUTE_TYPE_NON_LISTED,
+	FILTER_ATTRIBUTE_TYPE_LISTED,
+	FILTER_ATTRIBUTE_TYPE_COSMETIC
+};
+
+enum FilterAttributeValueType
+{
+	FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER,
+	FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST,
+	FILTER_ATTRIBUTE_VALUE_TYPE_TEXT,
+	FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY
+};
+
+class FilterBlockAttribute
+{
+public:
+	FilterAttributeType			filter_attribute_type;
+	FilterAttributeValueType	filter_attribute_value_type;
+
+	bool have_operator = false;
+
+	ELocalisationText			localisation;
+};
+
+static std::vector<FilterBlockAttribute*> registered_filter_block_attributes;
+
 class EWindowMain : public EWindow
 {
 public:
@@ -42,8 +76,8 @@ public:
 
 	//ETextureGabarite* gudron;
 
-
 	static EWindowMain* link_to_main_window;
+
 };
 
 

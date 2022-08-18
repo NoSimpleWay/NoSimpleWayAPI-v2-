@@ -217,7 +217,14 @@ public:
 		std::string			_texture
 	);
 
-
+	static EntityButton* create_default_clickable_button_with_unedible_text
+	(
+		ERegionGabarite*	_region_gabarite,
+		EButtonGroup*		_parent_group,
+		data_action_pointer _dap,
+		std::string			_text
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
 
 	bool can_get_access_to_style();
 

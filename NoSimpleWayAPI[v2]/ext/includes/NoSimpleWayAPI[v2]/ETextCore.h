@@ -63,6 +63,25 @@ namespace NS_FONT_UTILS
 
 constexpr size_t EFont_array_dim = 65536u;
 
+#define NSW_localisation_EN 0
+#define NSW_localisation_RU 1
+#define NSW_localisation_placeholder_2 2
+#define NSW_localisation_placeholder_3 3
+#define NSW_localisation_placeholder_4 4
+#define NSW_localisation_placeholder_5 5
+#define NSW_localisation_placeholder_6 6
+
+constexpr size_t NSW_languages_count = 2;
+//0 - EN
+//1 - RU
+
+class ELocalisationText
+{
+public:
+	std::string base_name = "";
+	std::string localisations[NSW_languages_count];
+};
+
 class EFont
 {
 public:
@@ -83,6 +102,7 @@ public:
 	float size_y_in_pixels[EFont_array_dim];
 
 	std::string name;
+	
 
 	EFont(std::string _name, ETextureGabarite* _g, ETextureAtlas* _atlas, bool _not_cyrrilic);
 
@@ -152,6 +172,7 @@ public:
 	ERegionGabarite* region_gabarite;
 
 	std::string* stored_text = new std::string("");
+	ELocalisationText localisation_text;
 
 	std::vector<std::string*> row;
 	int* row_count = new int (0);

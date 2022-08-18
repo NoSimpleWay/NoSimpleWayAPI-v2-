@@ -48,9 +48,9 @@ namespace DataEntityUtils
 	extern std::string get_tag_value_by_name(int _id, std::string _name, EDataEntity* _data_entity);
 }
 
-struct ELocalisationText
-{
-public:
-	std::string* RU_value = new std::string("");
-	std::string* EN_value = new std::string("");
-};
+//struct ELocalisationText
+//{
+//public:
+//	std::string* RU_value = new std::string("");
+//	std::string* EN_value = new std::string("");
+//};

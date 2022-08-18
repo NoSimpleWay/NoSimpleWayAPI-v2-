@@ -1125,6 +1125,23 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 	EButtonGroup::generate_vertex_buffer_for_group(_group);
 }
 
+void EButtonGroup::change_group(EButtonGroup* _group)
+{
+	_group->substretch_groups_y();
+	//_group->check_slider();
+
+	_group->group_stretch_y();
+	_group->check_slider();
+	_group->group_stretch_x();
+
+
+	_group->align_groups();
+	EButtonGroup::calculate_culling_lines(_group);
+	_group->realign_all_buttons();
+
+	EButtonGroup::generate_vertex_buffer_for_group(_group);
+}
+
 void EButtonGroup::realign_all_buttons()
 {
 	EntityButton* prev_button = nullptr;
@@ -1741,6 +1758,16 @@ void EButtonGroup::select_this_button(EntityButton* _but)
 	}
 }
 
+EButtonGroup* EButtonGroup::set_parameters(ChildAlignMode _child_align_mode, bool _autosize_x, bool _autosize_y)
+{
+	child_align_mode = _child_align_mode;
+
+	*stretch_x_by_parent_size = _autosize_x;
+	*stretch_y_by_parent_size = _autosize_y;
+
+	return this;
+}
+
 void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 {
 	if
@@ -1817,6 +1844,8 @@ EButtonGroup* EButtonGroup::create_root_button_group(ERegionGabarite* _region, E
 		bgroup_with_slider,
 		bgroup_darken_bg
 	);
+
+	just_created_button_group->root_group = just_created_button_group;
 
 	return just_created_button_group;
 }
