@@ -805,7 +805,7 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 				{
 					if (master_data->stored_color->is_from_collection)
 					{
-						master_data->stored_color = new Helper::hsvrgba_color();
+						master_data->stored_color = new Helper::HSVRGBAColor();
 						master_data->stored_color->is_from_collection = false;
 					}
 
@@ -1181,10 +1181,10 @@ void EDataActionCollection::action_unbing_color(Entity* _entity, ECustomData* _c
 	EDataContainer_Button_StoreColor*	target_button_data		= group_data->target_data_container_with_color;
 
 	//get current color
-	Helper::hsvrgba_color* original_color = target_button_data->stored_color;
+	Helper::HSVRGBAColor* original_color = target_button_data->stored_color;
 
 	//create non-binded color
-	Helper::hsvrgba_color* HRA_color = new Helper::hsvrgba_color();
+	Helper::HSVRGBAColor* HRA_color = new Helper::HSVRGBAColor();
 	HRA_color->set_color(original_color);//apply old color to non-binded
 	HRA_color->is_from_collection = false;
 	target_button_data->stored_color = HRA_color;
@@ -1221,10 +1221,10 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 	EDataContainer_Button_StoreColor* button_data = group_data->target_data_container_with_color;
 
 	//get current color
-	Helper::hsvrgba_color* original_color = group_data->work_color;
+	Helper::HSVRGBAColor* original_color = group_data->work_color;
 
 	//create non-binded color
-	Helper::hsvrgba_color			HRA_color;
+	Helper::HSVRGBAColor			HRA_color;
 	Helper::HRA_color_collection*	HRA_collection = new Helper::HRA_color_collection();
 
 	HRA_color.set_color(original_color);//apply old color to non-binded
@@ -1990,6 +1990,11 @@ void EClickableArea::clickable_region_set_world_positions(float _x, float _y, fl
 		s_layer->sprite_layer_set_world_position(region_gabarite->world_position_x, region_gabarite->world_position_y, region_gabarite->world_position_z);
 	}
 }
+
+//void EClickableArea::set_color(const float(&_color)[4])
+//{
+//	color
+//}
 
 ERegionGabarite::ERegionGabarite()
 {

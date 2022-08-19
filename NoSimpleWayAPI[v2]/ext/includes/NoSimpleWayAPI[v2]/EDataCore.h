@@ -186,6 +186,8 @@ public:
 	void redraw_text();
 	void clickable_region_set_world_positions(float _x, float _y, float _z);
 	ERenderBatcher* batcher_for_default_draw;
+
+
 };
 
 //////////////////////////////////////////////////////////////////////
@@ -324,7 +326,7 @@ public:
 class EDataContainer_Button_StoreColor : public EDataContainer
 {
 public:
-	Helper::hsvrgba_color* stored_color;
+	Helper::HSVRGBAColor* stored_color;
 	ColorButtonMode selected_mode = ColorButtonMode::CBM_OPEN_WINDOW;
 };
 
@@ -343,7 +345,7 @@ public:
 
 	//float*							pointer_to_alpha;
 
-	Helper::hsvrgba_color*				work_color;
+	Helper::HSVRGBAColor*				work_color;
 
 	EButtonGroup*						pointer_to_color_box_group;
 	EButtonGroup*						pointer_to_color_collection_group;
@@ -410,9 +412,10 @@ public:
 class EDataContainer_Group_FilterBlockNonListedSegment : public EDataContainer
 {
 public:
+	EntityButton* target_button_with_attribute_name;
+	EntityButton* target_button_with_condition;
+	EntityButton* target_button_with_value;
 };
-
-
 
 
 class EDataContainer_Group_AddContentToFilterBlock : public EDataContainer

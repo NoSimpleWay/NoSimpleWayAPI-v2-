@@ -197,7 +197,7 @@ public:
 		EGUIStyle*						_style,
 		std::string						_text,
 		Helper::HRA_color_collection*	_collection,
-		Helper::hsvrgba_color*			_color,
+		Helper::HSVRGBAColor*			_color,
 		ColorButtonMode					_mode
 	);
 	
@@ -218,6 +218,15 @@ public:
 	);
 
 	static EntityButton* create_default_clickable_button_with_unedible_text
+	(
+		ERegionGabarite*	_region_gabarite,
+		EButtonGroup*		_parent_group,
+		data_action_pointer _dap,
+		std::string			_text
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
+
+	static EntityButton* create_default_clickable_button_with_text
 	(
 		ERegionGabarite*	_region_gabarite,
 		EButtonGroup*		_parent_group,

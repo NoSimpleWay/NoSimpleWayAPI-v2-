@@ -141,6 +141,15 @@ typedef void (*group_update_action)			(EButtonGroup*);
 typedef void (*group_select_action)			(EButtonGroup*);
 typedef void (*group_window_resize_action)	(EButtonGroup*);
 
+class FreshCreatedGroup
+{
+public:
+	EButtonGroup* just_created_group;
+	EButtonGroup* target_group;
+};
+
+
+
 class EButtonGroup
 {
 public:
@@ -326,6 +335,8 @@ public:
 	int seed = 0;
 
 	EButtonGroup* set_parameters(ChildAlignMode _child_align_mode, bool _autosize_x, bool _autosize_y);
+
+	static std::vector<FreshCreatedGroup*> fresh_created_block_list;
 };
 
 //class EButtonContainer

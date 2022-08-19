@@ -18,8 +18,11 @@
 #endif
 /**/
 
+#include <chrono>
+
 //class Entity;
-EWindowMain* EWindowMain::link_to_main_window;
+EWindowMain*	EWindowMain::link_to_main_window;
+EButtonGroup*	EWindowMain::select_rarity_button_group;
 
 void EWindowMain::draw_additional(float _d)
 {
@@ -62,6 +65,24 @@ void EWindowMain::update_additional(float _d)
 	//}
 
 }
+
+void EDataActionCollection::action_select_this_text_variant(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	ETextArea* target_text_area = EntityButton::get_last_clickable_area(static_cast<EDataContainer_Group_TextSelectorFromVariants*>(EWindowMain::select_rarity_button_group->data_container)->target_button)->text_area;
+
+	target_text_area->localisation_text = EntityButton::get_last_clickable_area(static_cast<EntityButton*>(_entity))->text_area->localisation_text;
+	//*target_text_area->stored_text = *EntityButton::get_last_clickable_area(static_cast<EntityButton*>(_entity))->text_area->stored_text;
+
+	target_text_area->stored_color = EntityButton::get_last_clickable_area(static_cast<EntityButton*>(_entity))->text_area->stored_color;
+	target_text_area->color = EntityButton::get_last_clickable_area(static_cast<EntityButton*>(_entity))->text_area->color;
+
+	target_text_area->change_text(*EntityButton::get_last_clickable_area(static_cast<EntityButton*>(_entity))->text_area->stored_text);
+
+	*EWindowMain::select_rarity_button_group->is_active = false;
+
+
+}
+
 
 EWindowMain::EWindowMain()
 {
@@ -242,7 +263,7 @@ EWindowMain::EWindowMain()
 	/*	REGISTER COLORS	*/
 		for (int i = 0; i < 17; i++)
 		{
-			Helper::hsvrgba_color HRA_color;
+			Helper::HSVRGBAColor HRA_color;
 
 			HRA_color.h = rand() % 360;
 			HRA_color.s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
@@ -351,7 +372,7 @@ EWindowMain::EWindowMain()
 			{//new group
 				EButtonGroup* non_list_condition_group = EButtonGroup::create_default_button_group
 				(
-					new ERegionGabarite(210.0f, 160.0f),
+					new ERegionGabarite(250.0f, 160.0f),
 					EGUIStyle::active_style
 				);
 
@@ -360,29 +381,53 @@ EWindowMain::EWindowMain()
 				*non_list_condition_group->stretch_x_by_parent_size = false;
 				*non_list_condition_group->stretch_y_by_parent_size = true;
 
-				non_list_condition_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+				non_list_condition_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
 				whole_filter_block_group->add_group(non_list_condition_group);
 
 				//"ZZZ" buttons
 				int parameters_count = (rand() % 4) * (rand() % 4) * (rand() % 4);
 				for (int i = 0; i < parameters_count; i++)
+				{
+					EButtonGroup* non_listed_line = non_list_condition_group->add_group
+					(
+						EButtonGroup::create_invisible_button_group
+						(
+							new ERegionGabarite(10.0f, 22.0f),
+							EGUIStyle::active_style
+						)
+						->
+						set_parameters
+						(
+							ChildAlignMode::ALIGN_VERTICAL,
+							NSW_dynamic_autosize,
+							NSW_static_autosize
+						)
+					);
+
+					auto non_listed_line_data = new EDataContainer_Group_FilterBlockNonListedSegment();
+					non_listed_line->data_container = non_listed_line_data;
+
 					for (int j = 0; j < 3; j++)
 					{
-						if (j == 0) { jc_region_gabarite = new ERegionGabarite(100.0f, 20.0f); }
+						if (j == 0)
+						{
+							jc_region_gabarite = new ERegionGabarite(100.0f, 20.0f);
+							
+						}
 						else
 						if (j == 1) { jc_region_gabarite = new ERegionGabarite(20.0f, 20.0f); }
 						else
-						if (j == 2) { jc_region_gabarite = new ERegionGabarite(50.0f, 20.0f); }
+						if (j == 2) { jc_region_gabarite = new ERegionGabarite(100.0f, 20.0f); }
 
 						jc_button = EntityButton::create_default_clickable_button
 						(
 							jc_region_gabarite,
-							non_list_condition_group,
+							non_listed_line,
 							nullptr
 						);
 
-						non_list_condition_group->button_list.push_back(jc_button);
+						non_listed_line->button_list.push_back(jc_button);
 
 
 						jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "!");
@@ -390,13 +435,26 @@ EWindowMain::EWindowMain()
 
 						if ((jc_text_area != nullptr) && (jc_text_area->stored_text != nullptr))
 						{
-							if (j == 0) { *jc_text_area->can_be_edited = false; jc_text_area->change_text(random_item_property[rand() % 5]); }
+							if (j == 0)
+							{
+								*jc_text_area->can_be_edited = false; jc_text_area->change_text(random_item_property[rand() % 5]);
+								non_listed_line_data->target_button_with_attribute_name = jc_button;
+							}
 							else
-								if (j == 1) { *jc_text_area->can_be_edited = false; jc_text_area->change_text("="); }
-								else
-									if (j == 2) { *jc_text_area->can_be_edited = true; jc_text_area->change_text(std::to_string(rand() % 100)); }
+							if (j == 1)
+							{
+								*jc_text_area->can_be_edited = false; jc_text_area->change_text("=");
+								non_listed_line_data->target_button_with_condition = jc_button;
+							}
+							else
+							if (j == 2)
+							{
+								*jc_text_area->can_be_edited = true; jc_text_area->change_text(std::to_string(rand() % 100));
+								non_listed_line_data->target_button_with_value = jc_button;
+							}
 						}
 					}
+				}
 			}
 
 			//####### ITEM GROUP //#######
@@ -655,7 +713,7 @@ EWindowMain::EWindowMain()
 				{
 				// // // // // // //// // // // // // //// // // // // // //
 				Helper::HRA_color_collection*	HRA_collection = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
-				Helper::hsvrgba_color*			HRA_color = &HRA_collection->target_color;
+				Helper::HSVRGBAColor*			HRA_color = &HRA_collection->target_color;
 				//HRA_color->h = rand() % 360;
 				//HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
 				//HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
@@ -1380,7 +1438,7 @@ EWindowMain::EWindowMain()
 	{
 		EButtonGroup*
 		add_content_group = EButtonGroup::create_root_button_group(new ERegionGabarite(100.0f, 100.0f, 800.0f, 300.0f), EGUIStyle::active_style);
-		add_content_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+		add_content_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
 		*add_content_group->stretch_x_by_parent_size = false;
 		*add_content_group->stretch_y_by_parent_size = false;
@@ -1390,12 +1448,17 @@ EWindowMain::EWindowMain()
 
 		EDataContainer_Group_AddContentToFilterBlock* data_container = new EDataContainer_Group_AddContentToFilterBlock();
 		add_content_group->data_container = data_container;
+
+		EButtonGroup* workspace_group
+		=
+		add_content_group->add_close_group_and_return_workspace_group(new ERegionGabarite(10.0f, 20.0f), EGUIStyle::active_style);
 		
-		///
+		workspace_group->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
 		EButtonGroup*
 		filter_block_operation_segment
 		=
-		add_content_group->add_group
+		workspace_group->add_group
 		(
 			EButtonGroup::create_default_button_group (new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
@@ -1411,7 +1474,7 @@ EWindowMain::EWindowMain()
 		EButtonGroup*
 		non_listed_segment
 		=
-		add_content_group->add_group
+			workspace_group->add_group
 		(
 			EButtonGroup::create_default_button_group (new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
@@ -1423,7 +1486,7 @@ EWindowMain::EWindowMain()
 		EButtonGroup*
 		listed_segment
 		=
-		add_content_group->add_group
+			workspace_group->add_group
 		(
 			EButtonGroup::create_default_button_group (new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
@@ -1433,7 +1496,7 @@ EWindowMain::EWindowMain()
 		EButtonGroup*
 		cosmetic_segment
 		=
-		add_content_group->add_group
+			workspace_group->add_group
 		(
 			EButtonGroup::create_default_button_group (new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
@@ -1470,6 +1533,37 @@ EWindowMain::EWindowMain()
 		EButtonGroup::refresh_button_group(add_content_group);
 	}
 
+
+	//rarity selector
+	if (true)
+	{
+		EButtonGroup* whole_rarity_list_group = EButtonGroup::create_root_button_group(new ERegionGabarite(100.0f, 120.0f), EGUIStyle::active_style);
+		EButtonGroup* workspace_rarity_group = whole_rarity_list_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);
+		workspace_rarity_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+		select_rarity_button_group = whole_rarity_list_group;
+
+		auto data_text_selector = new EDataContainer_Group_TextSelectorFromVariants();
+		whole_rarity_list_group->data_container = data_text_selector;
+
+		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(100.0f, 20.0f), workspace_rarity_group, &EDataActionCollection::action_select_this_text_variant, "Обычный");
+		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(1.0f, 1.0f, 1.0f, 1.0f);
+		workspace_rarity_group->button_list.push_back(jc_button);
+
+		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(100.0f, 20.0f), workspace_rarity_group, &EDataActionCollection::action_select_this_text_variant, "Магический");
+		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(0.4f, 0.5f, 1.0f, 1.0f);
+		workspace_rarity_group->button_list.push_back(jc_button);
+
+		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(100.0f, 20.0f), workspace_rarity_group, &EDataActionCollection::action_select_this_text_variant, "Редкий");
+		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(1.0f, 1.0f, 0.25f, 1.0f);
+		workspace_rarity_group->button_list.push_back(jc_button);
+
+		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(100.0f, 20.0f), workspace_rarity_group, &EDataActionCollection::action_select_this_text_variant, "Уникальный");
+		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(1.0f, 0.50f, 0.25f, 1.0f);
+		workspace_rarity_group->button_list.push_back(jc_button);
+
+		button_group_list.push_back(whole_rarity_list_group);
+		EButtonGroup::refresh_button_group(whole_rarity_list_group);
+	}
 
 
 }
@@ -1510,41 +1604,137 @@ void EDataActionCollection::action_add_content_to_filter_block(Entity* _entity, 
 
 		EntityButton* jc_button = nullptr;
 
+		std::string temp_rarity[] = { "Нормальный", "Магический", "Редкий", "Уникальный" };
+		/*EColor_4	temp_colors[4][4] =
+		{
+			{1.0f, 1.0f, 1.0f, 1.0f},
+			{0.5f, 0.6f, 1.0f, 1.0f},
+			{1.0f, 1.0f, 0.25f, 1.0f},
+			{1.0f, 0.5f, 0.250f, 1.0f}
+		};*/
+
+		Helper::HSVRGBAColor rarity_color[4];
+
+		Helper::HSVRGBAColor temp_color;
+
+		//normal
+		temp_color.set_color_RGBA(1.0f, 1.0f, 1.0f, 1.0f);
+		rarity_color[0] = temp_color;
+
+		//magic
+		temp_color.set_color_RGBA(0.5f, 0.6f, 1.0f, 1.0f);
+		rarity_color[1] = temp_color;
+
+		//rare
+		temp_color.set_color_RGBA(1.0f, 1.0f, 0.25f, 1.0f);
+		rarity_color[2] = temp_color;
+
+		//rauniquere
+		//unique
+		temp_color.set_color_RGBA(1.0f, 0.5f, 0.250f, 1.0f);
+		rarity_color[3] = temp_color;
+
 		if (add_content_button_data->target_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED)
 		{
 			target_group_for_content = whole_filter_block_data->pointer_to_non_listed_segment;
 
+			EButtonGroup* non_listed_line =
+			EButtonGroup::create_invisible_button_group
+			(
+				new ERegionGabarite(20.0f, 22.0f),
+				EGUIStyle::active_style
+			)
+			->
+			set_parameters
+			(
+				ChildAlignMode::ALIGN_VERTICAL,
+				NSW_dynamic_autosize,
+				NSW_static_autosize
+			);
+
+
+			EInputCore::logger_simple_info("create fresh block");
+			FreshCreatedGroup* fresh_created_group = new FreshCreatedGroup();
+			fresh_created_group->target_group		= whole_filter_block_data->pointer_to_non_listed_segment;
+			fresh_created_group->just_created_group = non_listed_line;
+			EButtonGroup::fresh_created_block_list.push_back(fresh_created_group);
+			EInputCore::logger_param("size", EButtonGroup::fresh_created_block_list.size());
+
+			auto non_listed_line_data = new EDataContainer_Group_FilterBlockNonListedSegment();
+			non_listed_line->data_container = non_listed_line_data;
+
+			//target_group_for_content->add_group(non_listed_line);
+			//non_listed_line->parent_group = target_group_for_content;
+
 			jc_button = EntityButton::create_default_clickable_button_with_unedible_text
 			(
 				new ERegionGabarite(100.0f, 20.0f),
-				target_group_for_content,
+				non_listed_line,
 				nullptr,
 				add_content_button_data->target_attribute->localisation.localisations[0]
 			); 
-			target_group_for_content->button_list.push_back(jc_button);
+			non_listed_line->button_list.push_back(jc_button);
 
+
+			//condition operator
 			if (add_content_button_data->target_attribute->have_operator)
 			{
-				jc_button = EntityButton::create_default_clickable_button_with_unedible_text
+				jc_button = EntityButton::create_default_clickable_button_with_text
 				(
 					new ERegionGabarite(20.0f, 20.0f),
-					target_group_for_content,
+					non_listed_line,
 					nullptr,
 					"="
 				);
-				target_group_for_content->button_list.push_back(jc_button);
+				non_listed_line->button_list.push_back(jc_button);
 			}
 
-			jc_button = EntityButton::create_default_clickable_button_with_unedible_text
-			(
-				new ERegionGabarite(50.0f, 20.0f),
-				target_group_for_content,
-				nullptr,
-				"78"
-			);
-			target_group_for_content->button_list.push_back(jc_button);
+			srand(std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count());
 
-			EButtonGroup::change_group(target_group_for_content);
+			EInputCore::logger_param("current time", std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count());
+			int rarity_id = rand() % 4;
+
+			std::string text = std::to_string(rand() % 100 + 1);
+			if (add_content_button_data->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
+			{
+
+				text = temp_rarity[rarity_id];
+
+				jc_button = EntityButton::create_default_clickable_button_with_unedible_text
+				(
+					new ERegionGabarite(100.0f, 20.0f),
+					non_listed_line,
+					&EDataActionCollection::action_open_rarity_selector,
+					text
+				);
+			}
+			else
+			{
+				jc_button = EntityButton::create_default_clickable_button_with_text
+				(
+					new ERegionGabarite(100.0f, 20.0f),
+					non_listed_line,
+					nullptr,
+					text
+				);
+			}
+
+
+
+			if (add_content_button_data->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
+			{
+				/*(EntityButton::get_last_clickable_area(jc_button)->text_area->color[0]) = temp_colors[rarity_id][0];
+				(EntityButton::get_last_clickable_area(jc_button)->text_area->color[1]) = temp_colors[rarity_id][1];
+				(EntityButton::get_last_clickable_area(jc_button)->text_area->color[2]) = temp_colors[rarity_id][2];
+				(EntityButton::get_last_clickable_area(jc_button)->text_area->color[3]) = temp_colors[rarity_id][3];
+
+				(EntityButton::get_last_clickable_area(jc_button)->text_area->stored_color = temp_colors[rarity_id];*/
+
+				EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(&rarity_color[rarity_id]);
+			}
+			non_listed_line->button_list.push_back(jc_button);
+
+			//EButtonGroup::change_group(target_group_for_content);
 
 			/*if (j == 0) { jc_region_gabarite = new ERegionGabarite(100.0f, 20.0f); }
 			else
@@ -1559,4 +1749,23 @@ void EDataActionCollection::action_add_content_to_filter_block(Entity* _entity, 
 		//{ 
 		//	*taget_group_for_content->is_active = false; 
 		//}
+
+		if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+		{
+			*EButtonGroup::add_content_to_filter_block_group->is_active = false;
+		}
+
 }
+
+void EDataActionCollection::action_open_rarity_selector(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	*EWindowMain::select_rarity_button_group->is_active = true;
+
+	static_cast<EDataContainer_Group_TextSelectorFromVariants*>(EWindowMain::select_rarity_button_group->data_container)->target_button = static_cast<EntityButton*>(_entity);
+	//reg
+	EWindowMain::select_rarity_button_group->region_gabarite->offset_x = static_cast<EntityButton*>(_entity)->button_gabarite->world_position_x;
+	EWindowMain::select_rarity_button_group->region_gabarite->offset_y = static_cast<EntityButton*>(_entity)->button_gabarite->world_position_y + static_cast<EntityButton*>(_entity)->button_gabarite->size_y + 3.0f;
+
+	EButtonGroup::refresh_button_group(EWindowMain::select_rarity_button_group);
+}
+

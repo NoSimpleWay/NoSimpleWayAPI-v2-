@@ -19,6 +19,13 @@
 #endif
 /**/
 
+/**/
+#ifndef	_HELPERS_ALREADY_LINKED_
+#define	_HELPERS_ALREADY_LINKED_
+#include "Helpers.h"
+#endif
+/**/
+
 #include <vector>
 
 
@@ -51,8 +58,8 @@ class ETextArea;
 
 enum FONT_ENUM
 {
-		FE_DEFAULT,
-		FE_BAHN
+	FE_DEFAULT,
+	FE_BAHN
 };
 
 
@@ -102,7 +109,7 @@ public:
 	float size_y_in_pixels[EFont_array_dim];
 
 	std::string name;
-	
+
 
 	EFont(std::string _name, ETextureGabarite* _g, ETextureAtlas* _atlas, bool _not_cyrrilic);
 
@@ -161,8 +168,9 @@ public:
 
 	bool* error = new bool(false);
 
-	float* color = new float[4]{0.9f, 0.5f, 0.25f, 1.0f};
-	float* stored_color = new float[4]{1.0f, 1.0f, 1.0f, 1.0f};
+	Helper::HSVRGBAColor color;
+	Helper::HSVRGBAColor stored_color;
+
 	unsigned int* selected_color_table = new unsigned int(TextColorArray::FREE);
 	float* font_scale = new float(1.0f);
 	EFont* font = nullptr;
@@ -175,9 +183,9 @@ public:
 	ELocalisationText localisation_text;
 
 	std::vector<std::string*> row;
-	int* row_count = new int (0);
+	int* row_count = new int(0);
 
-	bool* translate_region_gabarite = new bool (false);
+	bool* translate_region_gabarite = new bool(false);
 
 	void generate_rows();
 	void generate_text();
@@ -213,10 +221,10 @@ public:
 	///
 	std::vector<EFontGlyph*> font_glyph_list;
 
-	int* selected_glyph_position = new int (0);
+	int* selected_glyph_position = new int(0);
 	bool* flash_line_active = new bool(false);
 	float* flash_line_cooldown = new float(0.0f);
-	
+
 
 	//bool* selected_left_side = new bool(false);
 	float* jump_cooldown = new float(0.0f);
@@ -239,6 +247,9 @@ public:
 
 	EButtonGroup* get_root_group();
 	//static 
+	void set_color(const float(&_color)[4]);
+	void set_color(Helper::HSVRGBAColor* _color);
+	void set_color(float _r, float _g, float _b, float _a);
 };
 
 class EFontGlyph
@@ -258,11 +269,11 @@ public:
 
 	int storer_text_sym_id = 0;
 
-	bool is_first_symbol	= false;
-	bool is_last_symbol		= false;
-	bool is_empty			= false;
+	bool is_first_symbol = false;
+	bool is_last_symbol = false;
+	bool is_empty = false;
 
-	
+
 };
 
 

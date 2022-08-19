@@ -28,10 +28,23 @@ constexpr int CLUSTER_DIM_Y = 50;
 constexpr int CLUSTER_SIZE_X = 300;
 constexpr int CLUSTER_SIZE_Y = 300;
 
+//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
+class EDataContainer_Group_TextSelectorFromVariants : public EDataContainer
+{
+public:
+	EntityButton* target_button;
+};
+//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
+
+
 namespace EDataActionCollection
 {
 	void action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_add_content_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
+
+
+	void action_open_rarity_selector(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_text_variant(Entity* _entity, ECustomData* _custom_data, float _d);
 }
 
 enum FilterAttributeType
@@ -60,6 +73,8 @@ public:
 	ELocalisationText			localisation;
 };
 
+
+
 static std::vector<FilterBlockAttribute*> registered_filter_block_attributes;
 
 class EWindowMain : public EWindow
@@ -77,6 +92,8 @@ public:
 	//ETextureGabarite* gudron;
 
 	static EWindowMain* link_to_main_window;
+
+	static EButtonGroup* select_rarity_button_group;
 
 };
 

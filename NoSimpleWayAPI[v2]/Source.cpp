@@ -152,7 +152,7 @@ int main()
 		//finish = std::chrono::high_resolution_clock::now();
 		//EInputCore::logger_param("non-pointer", std::chrono::duration_cast<std::chrono::nanoseconds>(finish - start).count() / 1'000'000.0f);
 		//EInputCore::logger_param("max texture_size", GL_MAX_TEXTURE_SIZE);
-
+		srand(time(nullptr));
 	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))
 	{
 		//Sleep(1.0f);
@@ -163,6 +163,8 @@ int main()
 		NS_EGraphicCore::saved_time_for_delta = time;
 
 		NS_EGraphicCore::time_total += NS_EGraphicCore::delta_time;
+		//EInputCore::logger_param("size", EButtonGroup::fresh_created_block_list.size());
+
 
 		//glClearColor(0.4f, 0.5f, 0.6f, 1.0f);
 		glClearColor(0.025f, 0.0375f, 0.05f, 1.0f);
@@ -302,6 +304,24 @@ int main()
 		EInputCore::scroll_direction	=	0;
 		EInputCore::MOUSE_SPEED_X = 0.0;
 		EInputCore::MOUSE_SPEED_Y = 0.0;
+
+		if (!EButtonGroup::fresh_created_block_list.empty())
+		{
+			for (FreshCreatedGroup* fcg : EButtonGroup::fresh_created_block_list)
+			{
+				fcg->target_group->add_group(fcg->just_created_group);
+
+				EButtonGroup::change_group(fcg->just_created_group);
+				EButtonGroup::change_group(fcg->target_group);
+
+
+
+			};
+
+			EButtonGroup::fresh_created_block_list.clear();
+			EButtonGroup::fresh_created_block_list.shrink_to_fit();
+
+		}
 		///////
 	}
 

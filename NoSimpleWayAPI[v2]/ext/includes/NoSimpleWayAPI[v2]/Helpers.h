@@ -13,7 +13,7 @@ class ETestObject
 {
 public:
 	int a;
-	int *b = new int(0);
+	int* b = new int(0);
 
 	ETestObject();
 
@@ -28,11 +28,11 @@ public:
 
 
 
-	struct hsvrgba_color
+	struct HSVRGBAColor
 	{
 		float r = 1.0f;			//	red
-		float g;				//	green
-		float b;				//	blue
+		float g = 0.9f;				//	green
+		float b = 0.8f;				//	blue
 
 		float h = 360.0f;		//	HUE
 		float s = 1.0f;			//	saturation
@@ -40,7 +40,10 @@ public:
 
 		float a = 1.0f;			//	alpha
 
-		void set_color(hsvrgba_color* _HRA_color);
+		void set_color(HSVRGBAColor* _HRA_color);
+
+		void set_color_RGBA(float _r, float _g, float _b, float _a);
+		void set_color_HSVA(float _h, float _s, float _v, float _a);
 
 		bool is_from_collection = true;
 
@@ -49,31 +52,17 @@ public:
 
 	struct HRA_color_collection
 	{
-		hsvrgba_color	target_color;
+		HSVRGBAColor	target_color;
 		std::string		name;
 	};
 
 	static std::vector<HRA_color_collection*> registered_color_list;
 
-	struct rgba_color {
-		double r;       // a fraction between 0 and 1
-		double g;       // a fraction between 0 and 1
-		double b;       // a fraction between 0 and 1
-		double a;       // a fraction between 0 and 1
-	};
-
-	struct hsva_color {
-		double h;       // angle in degrees
-		double s;       // a fraction between 0 and 1
-		double v;       // a fraction between 0 and 1
-		double a;       // a fraction between 0 and 1
-	};
 
 
 
 
-
-	static void rgb2hsv(hsvrgba_color* col)
+	static void rgb2hsv(HSVRGBAColor* col)
 	{
 		double      min, max, delta;
 
@@ -118,7 +107,7 @@ public:
 	}
 
 
-	static void hsv2rgb(hsvrgba_color* col)
+	static void hsv2rgb(HSVRGBAColor* col)
 	{
 		double      hh, p, q, t, ff;
 		long        i;

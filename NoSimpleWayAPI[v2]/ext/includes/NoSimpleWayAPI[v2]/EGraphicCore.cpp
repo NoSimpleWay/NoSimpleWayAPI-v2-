@@ -54,7 +54,7 @@ namespace NS_EGraphicCore
 	float							move_multiplier						= 2.35f;
 	float							sun_flat_decay						= 0.05f;
 
-	Helper::hsvrgba_color			sun_color;
+	Helper::HSVRGBAColor			sun_color;
 
 	EColor_4 active_color[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
 
@@ -1701,6 +1701,14 @@ void NS_EGraphicCore::set_active_color(float _r, float _g, float _b, float _a)
 	NS_EGraphicCore::active_color[1] = _g;
 	NS_EGraphicCore::active_color[2] = _b;
 	NS_EGraphicCore::active_color[3] = _a;
+}
+
+void NS_EGraphicCore::set_active_color(Helper::HSVRGBAColor* _color)
+{
+	NS_EGraphicCore::active_color[0] = _color->r;
+	NS_EGraphicCore::active_color[1] = _color->g;
+	NS_EGraphicCore::active_color[2] = _color->b;
+	NS_EGraphicCore::active_color[3] = _color->a;
 }
 
 void NS_EGraphicCore::set_source_FBO(int _GL_texture_id, unsigned int _colorbuffer_id)

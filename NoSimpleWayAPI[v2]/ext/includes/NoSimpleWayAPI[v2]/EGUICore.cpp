@@ -15,7 +15,11 @@ EButtonGroup* EButtonGroup::data_entity_filter					= nullptr;
 EButtonGroup* EButtonGroup::color_editor_group					= nullptr;
 EButtonGroup* EButtonGroup::add_content_to_filter_block_group	= nullptr;
 
+std::vector<FreshCreatedGroup*> EButtonGroup::fresh_created_block_list;
+
 constexpr float BUTTON_GROUP_Y_DISTANCE = 3.0f;
+
+
 
 void EWindow::update_default(float _d)
 {
@@ -165,6 +169,20 @@ EButtonGroup::EButtonGroup(ERegionGabarite* _region)
 
 EButtonGroup::~EButtonGroup()
 {
+	if ((region_gabarite != nullptr))
+	{
+		region_gabarite->pointers_to_this_object--;
+
+		if (*region_gabarite->pointers_to_this_object <= 0) { delete region_gabarite; }
+
+		for (int i = 0; i < button_list.size(); i++)
+		{
+			delete button_list[i];
+		}
+
+		button_list.clear();
+		button_list.shrink_to_fit();
+	}
 }
 
 void EButtonGroup::update(float _d)
@@ -903,7 +921,7 @@ void EButtonGroup::group_stretch_x()
 
 	if ((slider != nullptr) && (!slider->disable_draw))
 	{
-		slider_effect = slider->button_gabarite->size_x + 3.0f;
+		slider_effect = slider->button_gabarite->size_x + 0.0f;
 	}
 
 	float shrink_size = 0.0f;
@@ -1169,7 +1187,7 @@ void EButtonGroup::realign_all_buttons()
 			but->offset_x = prev_button->offset_x + prev_button->button_gabarite->offset_x + prev_button->button_gabarite->size_x + 3.0f;
 			but->offset_y = prev_button->offset_y;
 
-			if (slider != nullptr) { slider_additional = slider->button_gabarite->size_x + 3.0f; }
+			if (slider != nullptr) { slider_additional = slider->button_gabarite->size_x + 0.0f; }
 
 			if (but->offset_x + but->button_gabarite->size_x + slider_additional >= region_gabarite->size_x)
 			{
@@ -1900,7 +1918,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 {
 	EButtonGroup* main_group = create_root_button_group(_region, _style);
 	main_group->root_group = main_group;
-	Helper::hsvrgba_color* HRA_color = &Helper::registered_color_list[rand() % Helper::registered_color_list.size()]->target_color;
+	Helper::HSVRGBAColor* HRA_color = &Helper::registered_color_list[rand() % Helper::registered_color_list.size()]->target_color;
 
 
 	main_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
@@ -2035,7 +2053,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	{
 		// // // // // // //// // // // // // //// // // // // // //
 		Helper::HRA_color_collection*	HRA_collection	= Helper::registered_color_list[i];
-		Helper::hsvrgba_color*			HRA_color		= &HRA_collection->target_color;
+		Helper::HSVRGBAColor*			HRA_color		= &HRA_collection->target_color;
 		//HRA_color->h = rand() % 360;
 		//HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
 		//HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
@@ -2070,6 +2088,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGabarite* _region, EGUIStyle* _style)
 {
 
+	child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
 	EButtonGroup* workspace_group =
 	EButtonGroup::create_button_group_without_bg

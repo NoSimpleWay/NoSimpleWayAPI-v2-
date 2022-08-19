@@ -404,15 +404,16 @@ void Entity::add_text_area_to_last_clickable_region(EntityButton* _button, EText
 
 			if ((_button->parent_button_group != nullptr) && (_button->parent_button_group->selected_style != nullptr))
 			{
+				last_clickable_area->text_area->color = last_clickable_area->text_area->stored_color;
 				//apply color correction from style
-				for (int i = 0; i < 4; i++)
-				{
-					last_clickable_area->text_area->color[i]
-					=
-					last_clickable_area->text_area->stored_color[i]
-					*
-					_button->parent_button_group->selected_style->text_color_multiplier[i];
-				}
+				//for (int i = 0; i < 4; i++)
+				//{
+				//	last_clickable_area->text_area->color[i]
+				//	=
+				//	last_clickable_area->text_area->stored_color[i]
+				//	*
+				//	_button->parent_button_group->selected_style->text_color_multiplier[i];
+				//}
 			}
 		}
 	}
@@ -717,7 +718,7 @@ EntityButton* EntityButton::create_named_color_button
 	EGUIStyle*						_style,
 	std::string						_text,
 	Helper::HRA_color_collection*	_color_collection,
-	Helper::hsvrgba_color*			_color,
+	Helper::HSVRGBAColor*			_color,
 	ColorButtonMode					_mode
 )
 {
@@ -912,6 +913,29 @@ EntityButton* EntityButton::create_default_clickable_button_with_unedible_text(E
 	return jc_button;
 }
 
+EntityButton* EntityButton::create_default_clickable_button_with_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, std::string _text)
+{
+	EntityButton*
+		jc_button = EntityButton::create_default_clickable_button
+		(
+			_region_gabarite,
+			_parent_group,
+			_dap
+		);
+
+
+	ETextArea*
+		jc_text_area = ETextArea::create_centered_text_area
+		(EntityButton::get_last_clickable_area(jc_button), EFont::font_list[0], _text);
+
+	jc_text_area->change_text(_text);
+
+	*jc_text_area->can_be_edited = true;
+	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+
+	return jc_button;
+}
+
 bool EntityButton::can_get_access_to_style()
 {
 	return false;
@@ -1020,7 +1044,7 @@ EntityButton::~EntityButton()
 
 	if (parent_button_group != nullptr)
 	{
-		EButtonGroup::refresh_button_group(parent_button_group->root_group);
+		EButtonGroup::change_group(parent_button_group->root_group);
 	}
 }
 
@@ -1151,9 +1175,11 @@ void action_change_style_button(EntityButton* _but, EGUIStyle* _style)
 	for (EClickableArea* clickable_area:custom_data->clickable_area_list)
 	if (clickable_area->text_area != nullptr)
 	{
-		for (int i = 0; i < 4; i++)
-		{
-			clickable_area->text_area->color[i] = clickable_area->text_area->stored_color[i] * _style->text_color_multiplier[i];
-		}
+		clickable_area->text_area->color = clickable_area->text_area->stored_color;
+
+		//for (int i = 0; i < 4; i++)
+		//{
+		//	clickable_area->text_area->color[i] = clickable_area->text_area->stored_color[i] * _style->text_color_multiplier[i];
+		//}
 	}
 }

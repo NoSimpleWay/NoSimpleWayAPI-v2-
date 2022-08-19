@@ -152,7 +152,8 @@ void EFont::load_font_littera(std::string _path)
 								" "
 								+
 								_path
-							); }
+							);
+						}
 						if (font_array_id < 0) { EInputCore::logger_simple_error("font_array_id less than 0 (" + std::to_string(font_array_id) + ") data: " + sub_data + " " + _path); }
 						//if (show_console_info) std::cout << white << "subdata:" << sub_data << " id:" << font_array_id << " sym:" << (char)(font_array_id) << std::endl;
 					}
@@ -214,7 +215,7 @@ void EFont::load_font_littera(std::string _path)
 					}
 					else
 					{
-						
+
 					}
 
 					//
@@ -283,7 +284,7 @@ ETextArea::ETextArea(EClickableArea* _region, EFont* _font, std::string _text)
 ETextArea::~ETextArea()
 {
 	delete		error;
-	delete[]	color;
+	//delete[]	color;
 	delete[]	offset_border;
 	delete		font_scale;
 	//delete		&font;
@@ -303,7 +304,7 @@ ETextArea::~ETextArea()
 
 	delete		stored_text;
 
-	for (std::string* _row : row) {delete _row;}
+	for (std::string* _row : row) { delete _row; }
 	row.clear();
 	row.shrink_to_fit();
 
@@ -319,7 +320,9 @@ ETextArea::~ETextArea()
 	delete sprite_layer;
 
 	for (EFontGlyph* glyph : font_glyph_list)
-	{delete glyph;}
+	{
+		delete glyph;
+	}
 	font_glyph_list.clear();
 	font_glyph_list.shrink_to_fit();
 
@@ -367,7 +370,7 @@ void ETextArea::generate_rows()
 		{
 			next_sym = (*stored_text)[i + 1];
 
-			
+
 
 			//EInputCore::logger_simple_success("-=-=-=-=-=-=-");
 			z = sym;
@@ -445,10 +448,10 @@ void ETextArea::generate_text()
 			(region_gabarite != nullptr)
 			&&
 			(font != nullptr)
-		)
+			)
 	{
 		//if (*selected_color_table == TextColorArray::FREE)
-		{NS_EGraphicCore::set_active_color(color);}
+		{NS_EGraphicCore::set_active_color(&color); }
 
 		*sprite_layer->last_buffer_id = 0;
 
@@ -456,7 +459,7 @@ void ETextArea::generate_text()
 		{
 			delete sprite_layer->vertex_buffer;
 		}
-		
+
 
 		sprite_layer->vertex_buffer = new float[sprite_layer->batcher->gl_vertex_attribute_total_count * stored_text->length() * 4];
 
@@ -465,14 +468,14 @@ void ETextArea::generate_text()
 
 		full_text_height = 14.0f * (row.size());
 		y_adding = full_text_height - 14.0f;
-		
-		float border_offset_bottom	= 0.0f;
-		float border_offset_top		= 0.0f;
+
+		float border_offset_bottom = 0.0f;
+		float border_offset_top = 0.0f;
 
 		if (can_get_access_to_group_style())
 		{
-			border_offset_bottom	= *parent_entity->parent_button_group->selected_style->button_bg->side_offset_bottom;
-			border_offset_top		= *parent_entity->parent_button_group->selected_style->button_bg->side_offset_up;
+			border_offset_bottom = *parent_entity->parent_button_group->selected_style->button_bg->side_offset_bottom;
+			border_offset_top = *parent_entity->parent_button_group->selected_style->button_bg->side_offset_up;
 		}
 
 		y_adding += (region_gabarite->size_y - border_offset_bottom - border_offset_top) * *offset_by_gabarite_size_y;
@@ -488,18 +491,18 @@ void ETextArea::generate_text()
 			str_lenght = temp_s.length();
 
 			x_adding
-			=
-			(
+				=
 				(
-					region_gabarite->size_x
-					-
-					offset_border[BorderSide::RIGHT]
-				)
-				*
-				*offset_by_gabarite_size_x
-			)
-			+
-			(get_row_width(str) * *offset_by_text_size_x);
+					(
+						region_gabarite->size_x
+						-
+						offset_border[BorderSide::RIGHT]
+						)
+					*
+					*offset_by_gabarite_size_x
+					)
+				+
+				(get_row_width(str) * *offset_by_text_size_x);
 
 			x_adding += offset_border[BorderSide::LEFT];
 			//_adding = *region_gabarite->size_y * *offset_by_gabarite_size_y + get_row_width(str) * *offset_by_text_size_y;
@@ -640,11 +643,11 @@ float ETextArea::get_row_width(std::string* _row)
 void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_coordinate)
 {
 	if
-	(
-		(parent_entity == nullptr)
-		||
-		(region_gabarite != ((EntityButton*)parent_entity)->button_gabarite)
-	)
+		(
+			(parent_entity == nullptr)
+			||
+			(region_gabarite != ((EntityButton*)parent_entity)->button_gabarite)
+			)
 	{
 		region_gabarite->world_position_x += _x;
 		region_gabarite->world_position_y += _y;
@@ -655,16 +658,16 @@ void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_co
 			region_gabarite->offset_y += _y;
 		}
 	}
-	
+
 
 	sprite_layer->modify_buffer_position_for_sprite_layer(_x, _y, 0.0f);
 
 	for (EFontGlyph* f_glyph : font_glyph_list)
-	if (f_glyph != nullptr)
-	{
-		f_glyph->world_position_x += _x;
-		f_glyph->world_position_y += _y;
-	}
+		if (f_glyph != nullptr)
+		{
+			f_glyph->world_position_x += _x;
+			f_glyph->world_position_y += _y;
+		}
 }
 
 void ETextArea::update(float _d)
@@ -697,7 +700,7 @@ void ETextArea::update(float _d)
 	//}
 	//generate_rows();
 	//generate_text();
-	
+
 	//click to glyph
 	if (!font_glyph_list.empty())
 	{
@@ -711,10 +714,10 @@ void ETextArea::update(float _d)
 					(EClickableArea::active_clickable_region == nullptr)
 					||
 					(EClickableArea::active_clickable_region == parent_clickable_region)
-				)
+					)
 				&&
 				(NS_FONT_UTILS::active_text_area == nullptr)
-			)
+				)
 			for (EFontGlyph* glyph : font_glyph_list)
 			{
 
@@ -759,30 +762,30 @@ void ETextArea::update(float _d)
 	}
 
 	if
-	(
-		(EInputCore::MOUSE_BUTTON_LEFT)
-	)
+		(
+			(EInputCore::MOUSE_BUTTON_LEFT)
+			)
 	{
 		//click into gabarite
 		if
-		(
-			(*can_be_edited)
-			&&
-			(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_x)
-			&&
-			(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_x + region_gabarite->size_x)
-			&&
-			(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_y)
-			&&
-			(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_y + region_gabarite->size_y)
-			&&
 			(
-				(EClickableArea::active_clickable_region == nullptr)
-				||
-				(EClickableArea::active_clickable_region == parent_clickable_region)
-			)
-		)
-		{ 
+				(*can_be_edited)
+				&&
+				(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_x)
+				&&
+				(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_x + region_gabarite->size_x)
+				&&
+				(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_y)
+				&&
+				(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_y + region_gabarite->size_y)
+				&&
+				(
+					(EClickableArea::active_clickable_region == nullptr)
+					||
+					(EClickableArea::active_clickable_region == parent_clickable_region)
+					)
+				)
+		{
 			if ((!row.empty()) && (!*text_area_active) && (NS_FONT_UTILS::active_text_area == nullptr))
 			{
 				*text_area_active = true;
@@ -796,11 +799,11 @@ void ETextArea::update(float _d)
 			*text_area_active = false;
 
 			*selected_glyph_position = -1;
-			NS_FONT_UTILS::active_text_area = nullptr; 
+			NS_FONT_UTILS::active_text_area = nullptr;
 		}
 	}
 
-	
+
 
 	//insert new char to text
 	if ((*text_area_active) && (EInputCore::LAST_INPUTED_CHAR != 0))
@@ -829,15 +832,15 @@ void ETextArea::update(float _d)
 		generate_text();
 
 		if
-		(
-			(target_id > 0)
-			&&
 			(
-				(EInputCore::LAST_INPUTED_CHAR == 'n')
+				(target_id > 0)
 				&&
-				(stored_text->at(target_id - 1) == '\\')
-			)
-		)
+				(
+					(EInputCore::LAST_INPUTED_CHAR == 'n')
+					&&
+					(stored_text->at(target_id - 1) == '\\')
+					)
+				)
 		{
 			(*selected_glyph_position) -= 2;
 		}
@@ -847,11 +850,11 @@ void ETextArea::update(float _d)
 
 	//BACKSPACE key - erase left sided symbol
 	if
-	(
-		(EInputCore::key_pressed_once(GLFW_KEY_ENTER))
-		&&
-		(*text_area_active)
-	)
+		(
+			(EInputCore::key_pressed_once(GLFW_KEY_ENTER))
+			&&
+			(*text_area_active)
+			)
 	{
 		//*selected_glyph_position = -1;
 		*text_area_active = false;
@@ -860,23 +863,23 @@ void ETextArea::update(float _d)
 	}
 
 	if
-	(
 		(
-			(EInputCore::key_pressed_once(GLFW_KEY_BACKSPACE))
-			||
 			(
-				(EInputCore::key_holded(GLFW_KEY_BACKSPACE, 0.25f))
-				&&
-				(*jump_cooldown <= 0)
+				(EInputCore::key_pressed_once(GLFW_KEY_BACKSPACE))
+				||
+				(
+					(EInputCore::key_holded(GLFW_KEY_BACKSPACE, 0.25f))
+					&&
+					(*jump_cooldown <= 0)
+					)
+				)
+			&&
+			(*text_area_active)
 			)
-		)
-		&&
-		(*text_area_active)
-	)
 	{
 		*jump_cooldown = 0.1f;
 
-		int target_glyph_id = min(*selected_glyph_position, font_glyph_list.size() -1);
+		int target_glyph_id = min(*selected_glyph_position, font_glyph_list.size() - 1);
 		EFontGlyph* target_glyph = font_glyph_list.at(target_glyph_id);
 
 		int target_row_id = target_glyph->row_id;
@@ -887,7 +890,7 @@ void ETextArea::update(float _d)
 		if (target_sym_id >= 0)
 		{
 
-			stored_text->erase(target_sym_id , 1);
+			stored_text->erase(target_sym_id, 1);
 
 			//std::string ss(target_glyph->sym, 1);
 			//EInputCore::logger_param("IS EMPTY", *font_glyph_list.at(target_glyph_id - 1)->is_empty);
@@ -896,38 +899,38 @@ void ETextArea::update(float _d)
 			(*selected_glyph_position) -= 1;
 
 			change_text(*stored_text);
-			
+
 			//if ((parent_clickable_region != nullptr) && (parent_clickable_region->parent_custom_data != nullptr))
 			//{
-				for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) {dap(this);}
+			for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) { dap(this); }
 			//}
-			
+
 
 			//if (row.at(*target_glyph->row_id)->length() <= 1) { (*selected_glyph_position) -= 1; }
-			
+
 
 			//if delete all text
 
 		}
-		
+
 	}
 
 	if
-	(
 		(
-			(EInputCore::key_pressed_once(GLFW_KEY_LEFT))
-			||
 			(
-				(EInputCore::key_holded(GLFW_KEY_LEFT, 0.25f))
-				&&
-				(*jump_cooldown <= 0)
+				(EInputCore::key_pressed_once(GLFW_KEY_LEFT))
+				||
+				(
+					(EInputCore::key_holded(GLFW_KEY_LEFT, 0.25f))
+					&&
+					(*jump_cooldown <= 0)
+					)
+				)
+			&&
+			(*text_area_active)
+			&&
+			(*selected_glyph_position >= 0)
 			)
-		)
-		&&
-		(*text_area_active)
-		&&
-		(*selected_glyph_position >= 0)
-	)
 	{
 		*jump_cooldown = 0.1f;
 
@@ -953,21 +956,21 @@ void ETextArea::update(float _d)
 	}
 
 	if
-	(
 		(
-			(EInputCore::key_pressed_once(GLFW_KEY_RIGHT))
-			||
 			(
-				(EInputCore::key_holded(GLFW_KEY_RIGHT, 0.25f))
-				&&
-				(*jump_cooldown <= 0)
+				(EInputCore::key_pressed_once(GLFW_KEY_RIGHT))
+				||
+				(
+					(EInputCore::key_holded(GLFW_KEY_RIGHT, 0.25f))
+					&&
+					(*jump_cooldown <= 0)
+					)
+				)
+			&&
+			(*text_area_active)
+			&&
+			(*selected_glyph_position >= 0)
 			)
-		)
-		&&
-		(*text_area_active)
-		&&
-		(*selected_glyph_position >= 0)
-	)
 	{
 		*jump_cooldown = 0.1f;
 
@@ -985,7 +988,7 @@ void ETextArea::update(float _d)
 					*selected_glyph_position = min(*selected_glyph_position + 1, font_glyph_list.size() - 1);
 				}
 			}
-			
+
 		}
 		else
 		{
@@ -1012,7 +1015,7 @@ void ETextArea::draw()
 		//EInputCore::logger_simple_success("LOL");
 		ERenderBatcher::if_have_space_for_data(sprite_layer->batcher, 1);
 
-		NS_EGraphicCore::set_active_color(color);
+		NS_EGraphicCore::set_active_color(&color);
 
 		//if (*selected_left_side)
 		{
@@ -1045,7 +1048,7 @@ void ETextArea::draw()
 	/*if ((*selected_glyph_position < 0) & (*flash_line_active) & (*text_area_active))
 	{
 		NS_EGraphicCore::set_active_color(NS_EColorCollection::COLOR_GREEN);
-		
+
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
 			sprite_layer->batcher->vertex_buffer,
@@ -1078,7 +1081,9 @@ void ETextArea::set_region(ETextArea* _text_area, ERegionGabarite* _region_gabar
 	{
 		//old region lose 1 pointer to him
 		if (_text_area->region_gabarite != nullptr)
-		{_text_area->region_gabarite->pointers_to_this_object--;}
+		{
+			_text_area->region_gabarite->pointers_to_this_object--;
+		}
 
 		//this region have 1 more pointers to him
 		(*_region_gabarite->pointers_to_this_object)++;
@@ -1165,21 +1170,21 @@ ETextArea* ETextArea::create_centered_to_left_text_area(EClickableArea* _region_
 
 void ETextArea::change_text(std::string _text)
 {
-	std::string		buffer		= "";
-	std::string		temp_text	= "";
-	float			x_size		= 0.0f;
+	std::string		buffer = "";
+	std::string		temp_text = "";
+	float			x_size = 0.0f;
 	bool split = false;
 
 	for (int i = 0; i < _text.size(); i++)
 	{
 		if
-		(
-			(i + 1 < _text.size())
-			&&
-			(_text[i] == '\\')
-			&&
-			(_text[i + 1] == 'n')
-		)
+			(
+				(i + 1 < _text.size())
+				&&
+				(_text[i] == '\\')
+				&&
+				(_text[i + 1] == 'n')
+				)
 		{
 			x_size = 0.0f;
 
@@ -1192,18 +1197,18 @@ void ETextArea::change_text(std::string _text)
 			//}
 		}
 		else
-		//if
-		//(
-		//	(_text[i] != 'n')
-		//	&&
-		//	(
-		//		(_text[max (i - 1, 0)] != '\\')
-		//		||
-		//		(i == 0)
-		//	)
-		//)
+			//if
+			//(
+			//	(_text[i] != 'n')
+			//	&&
+			//	(
+			//		(_text[max (i - 1, 0)] != '\\')
+			//		||
+			//		(i == 0)
+			//	)
+			//)
 		{
-			
+
 
 			//if (i + 1 <= _text.size())
 			{
@@ -1213,9 +1218,9 @@ void ETextArea::change_text(std::string _text)
 				x_size += font->advance[sym_id];
 
 				if
-				(
-					(x_size + offset_border[BorderSide::LEFT] + 5.0f >= region_gabarite->size_x - offset_border[BorderSide::RIGHT])
-				)
+					(
+						(x_size + offset_border[BorderSide::LEFT] + 5.0f >= region_gabarite->size_x - offset_border[BorderSide::RIGHT])
+						)
 				{
 					/*if (buffer[0] == 'M')
 					{
@@ -1228,7 +1233,7 @@ void ETextArea::change_text(std::string _text)
 					//EInputCore::logger_param("border", *region_gabarite->size_x - offset_border[BorderSide::RIGHT]);
 					//std::cout << std::endl;
 					//if (_text[i] != ' '){ buffer += _text[i]; }
-					if (_text[min(i , _text.size() - 1)] != ' ')
+					if (_text[min(i, _text.size() - 1)] != ' ')
 					{
 						buffer += "-\\n";
 					}
@@ -1237,7 +1242,7 @@ void ETextArea::change_text(std::string _text)
 						buffer += "\\n";
 					}
 
-					
+
 
 					x_size = 0.0f;
 				}
@@ -1249,16 +1254,18 @@ void ETextArea::change_text(std::string _text)
 
 			//ignore space symbol after split
 			if
-			(
-				(i == 0)
-				||
 				(
-					(_text[i] != ' ')
+					(i == 0)
 					||
-					(x_size > 0.01f)
-				)
-			)
-			{ buffer += _text[i]; }
+					(
+						(_text[i] != ' ')
+						||
+						(x_size > 0.01f)
+						)
+					)
+			{
+				buffer += _text[i];
+			}
 
 
 		}
@@ -1278,31 +1285,56 @@ void ETextArea::change_text(std::string _text)
 bool ETextArea::can_get_access_to_group_style()
 {
 	if
-	(
-		(parent_entity != nullptr)
-		&&
-		(parent_entity->parent_button_group != nullptr)
-		&&
-		(parent_entity->parent_button_group->selected_style != nullptr)
-	)
-	{return true;}
+		(
+			(parent_entity != nullptr)
+			&&
+			(parent_entity->parent_button_group != nullptr)
+			&&
+			(parent_entity->parent_button_group->selected_style != nullptr)
+			)
+	{
+		return true;
+	}
 	else
-	{return false;}
+	{
+		return false;
+	}
 }
 
 EButtonGroup* ETextArea::get_root_group()
 {
 	if
-	(
-		(parent_entity != nullptr)
-		&&
-		(((EntityButton*)parent_entity)->parent_button_group != nullptr)
-	)
+		(
+			(parent_entity != nullptr)
+			&&
+			(((EntityButton*)parent_entity)->parent_button_group != nullptr)
+			)
 	{
 		return ((EntityButton*)parent_entity)->parent_button_group->root_group;
 	}
 	else
-	{return nullptr;}
+	{
+		return nullptr;
+	}
+}
+
+void ETextArea::set_color(const float(&_color)[4])
+{
+	//*color
+}
+
+
+
+void ETextArea::set_color(Helper::HSVRGBAColor* _color)
+{
+	color = *_color;
+	stored_color = *_color;
+}
+
+void ETextArea::set_color(float _r, float _g, float _b, float _a)
+{
+	stored_color.set_color_RGBA(_r, _g, _b, _a);
+	color.set_color_RGBA(_r, _g, _b, _a);
 }
 
 EFontGlyph::EFontGlyph(char _sym, float _pos_x, float _pos_y, float _size_x, float _size_y)
