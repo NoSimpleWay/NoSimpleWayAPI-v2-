@@ -585,14 +585,14 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 		if (item_icon != nullptr)
 		{
-			resize_factor = (_region_gabarite->size_y - *_parent_group->border_bottom - *_parent_group->border_up - 6.0f) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
+			resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
 			resize_factor = min(resize_factor, 1.0f);
 
 			ESpriteLayer* second_button_layer =
 				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 				(item_icon,
-					*_parent_group->border_bottom + 3.0f,
-					*_parent_group->border_up + 3.0f,
+					_parent_group->border_bottom + 3.0f,
+					_parent_group->border_up + 3.0f,
 					3.0f,
 
 					*item_icon->size_x_in_pixels * resize_factor,
@@ -609,7 +609,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		*jc_text_area->offset_by_gabarite_size_x = 0.0;
 		*jc_text_area->offset_by_text_size_x = 0.0;
 
-		jc_text_area->offset_border[BorderSide::LEFT] = *item_icon->size_x_in_pixels * resize_factor + *_parent_group->border_left + 7.0f;
+		jc_text_area->offset_border[BorderSide::LEFT] = *item_icon->size_x_in_pixels * resize_factor + _parent_group->border_left + 7.0f;
 
 		jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
 
@@ -696,7 +696,7 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	*jc_text_area->offset_by_gabarite_size_y = 1.0;
 	*jc_text_area->offset_by_text_size_y = -1.0;
 
-	jc_text_area->offset_border[BorderSide::LEFT] = *_parent_group->border_left + 3.0f;
+	jc_text_area->offset_border[BorderSide::LEFT] = _parent_group->border_left + 3.0f;
 
 	jc_text_area->change_text(_text);
 	data->pointer_to_text_area = jc_text_area;
@@ -747,7 +747,7 @@ EntityButton* EntityButton::create_named_color_button
 	*jc_text_area->offset_by_gabarite_size_y = 1.0;
 	*jc_text_area->offset_by_text_size_y = -1.0;
 
-	jc_text_area->offset_border[BorderSide::LEFT] = *_parent_group->border_left;
+	jc_text_area->offset_border[BorderSide::LEFT] = _parent_group->border_left;
 
 	jc_text_area->change_text(_text);
 
@@ -1018,11 +1018,11 @@ EntityButton::~EntityButton()
 	EInputCore::logger_simple_info("deleting entity button");
 	if (button_gabarite != nullptr)
 	{
-		(*button_gabarite->pointers_to_this_object)--;
+		(button_gabarite->pointers_to_this_object)--;
 
-		EInputCore::logger_param("pointers left", *button_gabarite->pointers_to_this_object);
+		EInputCore::logger_param("pointers left", button_gabarite->pointers_to_this_object);
 
-		if (*button_gabarite->pointers_to_this_object <= 0)
+		if (button_gabarite->pointers_to_this_object <= 0)
 		{
 			
 			delete button_gabarite;
@@ -1067,7 +1067,7 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 		0.0f,
 		0.0f,
 		*_but->parent_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
-		_but->parent_button_group->region_gabarite->size_y - *_but->parent_button_group->border_bottom - *_but->parent_button_group->border_up
+		_but->parent_button_group->region_gabarite->size_y - _but->parent_button_group->border_bottom - _but->parent_button_group->border_up
 	);
 
 	//offset by button_group
@@ -1075,9 +1075,9 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 	=
 	_but->parent_button_group->region_gabarite->size_y
 	-
-	*_but->parent_button_group->border_bottom
+	_but->parent_button_group->border_bottom
 	-
-	*_but->parent_button_group->border_up;
+	_but->parent_button_group->border_up;
 
 	//float current_height_percent
 	//=
@@ -1108,7 +1108,7 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 		_style->slider_bg->gloss_map_texture
 	);
 
-	*_but->sprite_layer_list[0]->offset_y = *_but->parent_button_group->border_bottom;
+	*_but->sprite_layer_list[0]->offset_y = _but->parent_button_group->border_bottom;
 	_but->sprite_layer_list[0]->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
 	_but->sprite_layer_list[0]->generate_vertex_buffer_for_sprite_layer("init bg");
 
@@ -1138,7 +1138,7 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 		*
 		*(((EDataContainerScrollBar*)_but->custom_data_list[0]->data_container)->current_percent)
 		+
-		*_but->parent_button_group->border_bottom
+		_but->parent_button_group->border_bottom
 	)
 	;
 

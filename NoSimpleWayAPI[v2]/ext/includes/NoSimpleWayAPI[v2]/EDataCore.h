@@ -112,7 +112,7 @@ public:
 	void set_region_offset_and_size(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
 	bool overlapped_by_mouse();
 
-	unsigned int* pointers_to_this_object = new unsigned int(0);
+	unsigned int pointers_to_this_object = 0;
 	unsigned int* pointer_id = new unsigned int(0);
 	static void set_region_gabarite(ERegionGabarite** _destination, ERegionGabarite* _source);
 	void* root_owner;

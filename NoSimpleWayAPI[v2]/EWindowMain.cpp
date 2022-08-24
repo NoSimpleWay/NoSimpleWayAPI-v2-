@@ -508,7 +508,7 @@ EWindowMain::EWindowMain()
 				*list_left_part_group->stretch_x_by_parent_size = false;
 				*list_left_part_group->stretch_y_by_parent_size = true;
 
-				float vertical_borders = *list_left_part_group->border_left + *list_left_part_group->border_right;
+				float vertical_borders = list_left_part_group->border_left + list_left_part_group->border_right;
 
 				//add new button
 				EntityButton*
@@ -1094,56 +1094,7 @@ EWindowMain::EWindowMain()
 
 		EDataActionCollection::action_type_text(jc_text_area);
 
-		//*******HEADER*******
-		EButtonGroup* button_group_header = EButtonGroup::create_header_button_group
-		(new ERegionGabarite(900.0f, 43.0f), EGUIStyle::active_style);
-
-		button_group_header->parent_group = main_button_group;
-		button_group_header->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-		//*button_group_header->is_active = false;
-		//*main_button_group->is_active = false;
-		/**/main_button_group->header_button_group = button_group_header;
-		/**/*button_group_header->culling_lines_method = CullingLinesCalcMethod::CLCM_BY_HIMSELF;
-		/**/button_group_header->root_group = main_button_group;
-		/**/
-		/**///jc_button_group_row = EButtonGroup::add_default_row_to_group(button_group_header, new ERegionGabarite(800.0f, 10.0f));
-		///**/*button_group_header->gabarite_size_mode_y = ButtonGroupGabariteSize::BGGS_EXACT_STRETCH;
-		EButtonGroup* left_sided_close_group = button_group_header->add_group(EButtonGroup::create_invisible_button_group(new ERegionGabarite(855.0f, 28.0f), EGUIStyle::active_style));
-		left_sided_close_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-
-		EButtonGroup* close_group = button_group_header->add_group
-		(EButtonGroup::create_invisible_button_group(new ERegionGabarite(28.0f, 28.0f), EGUIStyle::active_style));
-
-		//EButtonGroup* close_group = jc_button_group_row->add_group
-		//close_group->parent_group = button_group_header;
-		jc_button = new EntityButton();
-		jc_button->action_on_change_style_list.push_back(&action_change_style_button);
-		close_group->button_list.push_back(jc_button);
-		jc_button->parent_button_group = close_group;
-
-		jc_button->sprite_layer_list.push_back(ESpriteLayer::create_default_sprite_layer(NS_EGraphicCore::load_from_textures_folder("button_close")));
-
-		jc_region_gabarite = new ERegionGabarite(20.0f, 20.0f);
-		jc_button->button_gabarite = jc_region_gabarite;
-
-		//EntityButton::button_generate_brick_bg(jc_button, EGUIStyle::active_style);
-
-		//ECustomData* close_custom_data
-
-		jc_custom_data = new ECustomData();
-		jc_button->custom_data_list.push_back(jc_custom_data);
-
-		jc_clickable_area = EClickableArea::create_default_clickable_region(jc_region_gabarite, jc_button, jc_custom_data);
-		jc_clickable_area->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
-		//jc_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_style);
-		jc_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_close_root_group);
-
-		jc_custom_data->clickable_area_list.push_back(jc_clickable_area);
-		jc_custom_data->parent_entity = jc_button;
-		jc_custom_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
-
-		jc_button->set_world_position(jc_button->offset_x, jc_button->offset_y, jc_button->offset_z);
-		jc_button->generate_vertex_buffer_for_all_sprite_layers();
+		
 
 
 		button_group_list.push_back(main_button_group);

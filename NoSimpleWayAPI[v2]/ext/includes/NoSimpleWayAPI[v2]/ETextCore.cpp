@@ -293,9 +293,9 @@ ETextArea::~ETextArea()
 	EInputCore::logger_simple_info("deleting text area");
 	if (region_gabarite != nullptr)
 	{
-		(*region_gabarite->pointers_to_this_object)--;
+		(region_gabarite->pointers_to_this_object)--;
 
-		if (*region_gabarite->pointers_to_this_object <= 0)
+		if (region_gabarite->pointers_to_this_object <= 0)
 		{
 			delete region_gabarite;
 			EInputCore::logger_simple_success("deleting text area gabarite");
@@ -1086,7 +1086,7 @@ void ETextArea::set_region(ETextArea* _text_area, ERegionGabarite* _region_gabar
 		}
 
 		//this region have 1 more pointers to him
-		(*_region_gabarite->pointers_to_this_object)++;
+		(_region_gabarite->pointers_to_this_object)++;
 		_text_area->region_gabarite = _region_gabarite;
 	}
 }

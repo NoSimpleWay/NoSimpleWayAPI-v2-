@@ -166,7 +166,7 @@ public:
 	EButtonGroup(ERegionGabarite* _gabarite);
 	~EButtonGroup();
 
-	EButtonGroup* header_button_group;
+	//EButtonGroup* header_button_group;
 
 	EButtonGroup* root_group = nullptr;
 
@@ -186,16 +186,16 @@ public:
 	static EButtonGroup* focused_button_group;
 	static EButtonGroup* focused_button_group_with_slider;
 
-	float* scroll_x = new float(0.0f);
-	float* scroll_y = new float(0.0f);
+	float scroll_x = (0.0f);
+	float scroll_y = (0.0f);
 
-	float* highest_point_y = new float(0.0f);
+	float highest_point_y = (0.0f);
 
-	float* higher_culling_line = new float(0.0f);
-	float* lower_culling_line = new float(0.0f);
+	float higher_culling_line			= 0.0f;
+	float lower_culling_line			= 0.0f;
 
-	float* higher_culling_line_for_bg = new float(0.0f);
-	float* lower_culling_line_for_bg = new float(0.0f);
+	float higher_culling_line_for_bg	= 0.0f;
+	float lower_culling_line_for_bg		= 0.0f;
 
 	float base_height;
 	float base_width;
@@ -229,11 +229,11 @@ public:
 
 	bool can_resize_to_workspace_size = true;
 
-	float* border_bottom = new float(0.0f);
-	float* border_up = new float(0.0f);
+	float border_bottom	=  (0.0f);
+	float border_up		=  (0.0f);
 
-	float* border_left = new float(0.0f);
-	float* border_right = new float(0.0f);
+	float border_left	=  (0.0f);
+	float border_right	=  (0.0f);
 
 	bool* can_change_style = new bool(true);
 

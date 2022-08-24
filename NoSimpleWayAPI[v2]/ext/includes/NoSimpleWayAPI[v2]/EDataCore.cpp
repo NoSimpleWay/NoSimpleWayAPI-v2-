@@ -112,7 +112,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	-
 	entity_button->button_gabarite->size_x
 	-
-	*entity_button->parent_button_group->border_right;
+	entity_button->parent_button_group->border_right;
 
 
 
@@ -127,14 +127,14 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	max
 	(
 		0.0f,
-		*entity_button->parent_button_group->highest_point_y
+		entity_button->parent_button_group->highest_point_y
 		-
 		(
 			entity_button->parent_button_group->region_gabarite->size_y
 			-
 			//*entity_button->parent_button_group->border_bottom
 			//-
-			*entity_button->parent_button_group->border_up
+			entity_button->parent_button_group->border_up
 		)
 	);
 
@@ -227,7 +227,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 		{
 			_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 				=
-				max(*entity_button->parent_button_group->border_bottom, _custom_data->clickable_area_list.at(0)->region_gabarite->offset_y);
+				max(entity_button->parent_button_group->border_bottom, _custom_data->clickable_area_list.at(0)->region_gabarite->offset_y);
 
 			_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 				=
@@ -237,7 +237,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 					-
 					_custom_data->clickable_area_list.at(0)->region_gabarite->size_y
 					-
-					*entity_button->parent_button_group->border_up,
+					entity_button->parent_button_group->border_up,
 					_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 				);
 
@@ -247,7 +247,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				(
 					_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 					-
-					*entity_button->parent_button_group->border_bottom
+					entity_button->parent_button_group->border_bottom
 					)
 				/
 				(
@@ -255,9 +255,9 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 					-
 					_custom_data->clickable_area_list.at(0)->region_gabarite->size_y//39
 					-
-					*entity_button->parent_button_group->border_up
+					entity_button->parent_button_group->border_up
 					-
-					*entity_button->parent_button_group->border_bottom//7
+					entity_button->parent_button_group->border_bottom//7
 					);
 
 			*data_bar->current_percent = min(*data_bar->current_percent, 1.0f);
@@ -1155,10 +1155,10 @@ void EDataActionCollection::action_draw_stored_color_as_box(Entity* _entity, ECu
 			(
 				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-				button->button_gabarite->world_position_x + *button->parent_button_group->border_left,
-				button->button_gabarite->world_position_y + *button->parent_button_group->border_bottom,
-				button->button_gabarite->size_x - *button->parent_button_group->border_left - *button->parent_button_group->border_right,
-				button->button_gabarite->size_y - *button->parent_button_group->border_bottom - *button->parent_button_group->border_up - 15.0f,
+				button->button_gabarite->world_position_x + button->parent_button_group->border_left,
+				button->button_gabarite->world_position_y + button->parent_button_group->border_bottom,
+				button->button_gabarite->size_x - button->parent_button_group->border_left - button->parent_button_group->border_right,
+				button->button_gabarite->size_y - button->parent_button_group->border_bottom - button->parent_button_group->border_up - 15.0f,
 				NS_DefaultGabarites::texture_gabarite_white_pixel
 			);
 		}
@@ -1363,11 +1363,11 @@ EClickableArea::~EClickableArea()
 	EInputCore::logger_simple_info("deleting clickable area");
 	if (region_gabarite != nullptr)
 	{
-		(*region_gabarite->pointers_to_this_object)--;
+		(region_gabarite->pointers_to_this_object)--;
 
-		EInputCore::logger_param("pointers left", *region_gabarite->pointers_to_this_object);
+		EInputCore::logger_param("pointers left", region_gabarite->pointers_to_this_object);
 
-		if (*region_gabarite->pointers_to_this_object <= 0)
+		if (region_gabarite->pointers_to_this_object <= 0)
 		{
 			delete region_gabarite;
 			EInputCore::logger_simple_success("deleting clickable area");
@@ -2105,7 +2105,7 @@ void ERegionGabarite::set_region_gabarite(ERegionGabarite** _target_region, EReg
 		if (*_target_region != nullptr)
 		{
 			//EInputCore::logger_simple_success("decrease");
-			((*_target_region)->pointers_to_this_object)--; 
+			(*_target_region)->pointers_to_this_object--; 
 		}
 		else
 		{
@@ -2113,7 +2113,7 @@ void ERegionGabarite::set_region_gabarite(ERegionGabarite** _target_region, EReg
 		}
 
 		//this region have 1 more pointers to him
-		(*_source_region->pointers_to_this_object)++;
+		(_source_region->pointers_to_this_object)++;
 		
 	}
 	else
