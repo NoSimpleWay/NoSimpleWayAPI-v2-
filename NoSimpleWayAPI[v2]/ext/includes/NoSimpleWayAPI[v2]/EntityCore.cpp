@@ -237,7 +237,7 @@ Entity::~Entity()
 	//delete world_position_z;
 
 	//
-	
+	EInputCore::logger_simple_info("deleting base entity");
 	if (!custom_data_list.empty())
 	{
 		//std::vector<ECustomData*>::iterator ib = custom_data_list.begin(), ie = custom_data_list.end();
@@ -936,6 +936,34 @@ EntityButton* EntityButton::create_default_clickable_button_with_text(ERegionGab
 	return jc_button;
 }
 
+EntityButton* EntityButton::create_default_clickable_button_with_icon(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite)
+{
+	EntityButton* jc_button = EntityButton::create_default_clickable_button(_region_gabarite, _parent_group, _dap);
+	
+	float min_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
+
+	float offset_x = (_region_gabarite->size_x - min_size - 4.0f) / 2.0f + 2.0f;
+	float offset_y = (_region_gabarite->size_y - min_size - 4.0f) / 2.0f + 2.0f;
+
+	jc_button->sprite_layer_list.push_back
+	(
+		ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+		(
+			_gabarite,
+
+			offset_x,
+			offset_y,
+			0.0f,
+
+			min_size,
+			min_size,
+			00.0f
+		)
+	);
+
+	return jc_button;
+}
+
 bool EntityButton::can_get_access_to_style()
 {
 	return false;
@@ -1015,7 +1043,7 @@ void EntityButton::add_description(std::string _text)
 
 EntityButton::~EntityButton()
 {
-	EInputCore::logger_simple_info("deleting entity button");
+	EInputCore::logger_simple_success("deleting entity button");
 	if (button_gabarite != nullptr)
 	{
 		(button_gabarite->pointers_to_this_object)--;
@@ -1042,7 +1070,7 @@ EntityButton::~EntityButton()
 
 	//EInputCore::logger_simple_try("delete entity button");
 
-	if (parent_button_group != nullptr)
+	if ((parent_button_group != nullptr) && (!parent_button_group->need_remove))
 	{
 		EButtonGroup::change_group(parent_button_group->root_group);
 	}
@@ -1108,7 +1136,7 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 		_style->slider_bg->gloss_map_texture
 	);
 
-	*_but->sprite_layer_list[0]->offset_y = _but->parent_button_group->border_bottom;
+	_but->sprite_layer_list[0]->offset_y = _but->parent_button_group->border_bottom;
 	_but->sprite_layer_list[0]->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
 	_but->sprite_layer_list[0]->generate_vertex_buffer_for_sprite_layer("init bg");
 

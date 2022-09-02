@@ -269,7 +269,7 @@ void ERenderBatcher::draw_call()
 		glBindVertexArray(VAO);
 
 		glBindBuffer(GL_ARRAY_BUFFER, VBO);
-		glBufferData(GL_ARRAY_BUFFER, sizeof(float) * last_vertice_buffer_index, vertex_buffer, GL_DYNAMIC_DRAW);
+		glBufferData(GL_ARRAY_BUFFER, sizeof(float) * last_vertice_buffer_index, &vertex_buffer, GL_STREAM_DRAW);
 
 		//							 6 indices																  4 vertex to form shape
 		glDrawElements(GL_TRIANGLES, 6 * (int)(last_vertice_buffer_index / (gl_vertex_attribute_total_count * 4)), GL_UNSIGNED_INT, 0);
@@ -2610,7 +2610,7 @@ void NS_ERenderCollection::call_render_textured_rectangle_with_custom_size(ESpri
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
 			_sprite->master_sprite_layer->vertex_buffer,
-			*_sprite->master_sprite_layer->last_buffer_id,
+			_sprite->master_sprite_layer->last_buffer_id,
 
 			_sprite->world_position_x,
 			_sprite->world_position_y,
@@ -2636,7 +2636,7 @@ void NS_ERenderCollection::call_render_textured_rectangle_real_size(ESprite* _sp
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_size
 		(
 			_sprite->master_sprite_layer->vertex_buffer,
-			*_sprite->master_sprite_layer->last_buffer_id,
+			_sprite->master_sprite_layer->last_buffer_id,
 			_sprite->world_position_x,
 			_sprite->world_position_y,
 			_sprite->main_texture
@@ -2667,7 +2667,7 @@ void NS_ERenderCollection::call_render_textured_sprite(ESprite* _sprite)
 		NS_ERenderCollection::add_data_to_vertex_buffer_sprite
 		(
 			_sprite->master_sprite_layer->vertex_buffer,
-			*_sprite->master_sprite_layer->last_buffer_id,
+			_sprite->master_sprite_layer->last_buffer_id,
 			_sprite
 		);
 	}
@@ -2697,7 +2697,7 @@ void NS_ERenderCollection::call_render_textured_sprite_test(ESprite* _sprite)
 		NS_ERenderCollection::add_data_to_vertex_buffer_sprite_test
 		(
 			_sprite->master_sprite_layer->vertex_buffer,
-			*_sprite->master_sprite_layer->last_buffer_id,
+			_sprite->master_sprite_layer->last_buffer_id,
 			_sprite
 		);
 	}
@@ -2727,7 +2727,7 @@ void NS_ERenderCollection::call_render_textured_sprite_PBR(ESprite* _sprite)
 			NS_ERenderCollection::add_data_to_vertex_buffer_sprite_PBR
 			(
 				_sprite->master_sprite_layer->vertex_buffer,
-				*_sprite->master_sprite_layer->last_buffer_id,
+				_sprite->master_sprite_layer->last_buffer_id,
 				_sprite
 			);
 		}
@@ -2834,6 +2834,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 	//right up		2		2
 	//
 	//
+	// 
 		//EInputCore::logger_simple_info("invoke brick generator");
 		if (false)
 			for (int i = _sprite_layer->sprite_frame_list.size(); i < 1'000; i++)
@@ -2845,7 +2846,11 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 		for (ESpriteFrame* frm : _sprite_layer->sprite_frame_list)
 		{
 			//frm->sprite_list[0]->reset_sprite();
+			delete frm;
 		}
+
+		_sprite_layer->sprite_frame_list.clear();
+		_sprite_layer->sprite_frame_list.shrink_to_fit();
 
 		if (true)
 			for (unsigned int seg_y = 0; seg_y < 3; seg_y++)
@@ -3093,21 +3098,15 @@ std::string ETextureGabarite::get_name()
 	return *name;
 }
 
+int ESpriteLayer::data_copies_count = 0;
+int ESpriteLayer::data_copy_calls = 0;
+
 ESpriteLayer::~ESpriteLayer()
 {
-	delete offset_x;
-	delete offset_y;
-	delete offset_z;
-
-	delete world_position_x;
-	delete world_position_y;
-	delete world_position_z;
-
-	delete last_buffer_id;
 
 	//delete &batcher;
 	delete vertex_buffer;
-	delete disable_draw;
+
 
 	for (ESpriteFrame* frame : sprite_frame_list)
 	{
@@ -3120,15 +3119,15 @@ ESpriteLayer::~ESpriteLayer()
 void ESpriteLayer::translate_sprite_layer(float _x, float _y, float _z, bool _move_positions)
 {
 
-	*world_position_x += _x;
-	*world_position_y += _y;
-	*world_position_z += _z;
+	world_position_x += _x;
+	world_position_y += _y;
+	world_position_z += _z;
 
 	if (_move_positions)
 	{
-		*offset_x += _x;
-		*offset_y += _y;
-		*offset_z += _z;
+		offset_x += _x;
+		offset_y += _y;
+		offset_z += _z;
 	}
 
 	//child elements, modify only world coordinates
@@ -3186,7 +3185,7 @@ void ETextureGabarite::set_real_texture_size(int _size_x, int _size_y)
 void ESpriteLayer::modify_buffer_position_for_sprite_layer(float _x, float _y, float _z)
 {
 	for (int k = 0; k < 4; k++)																	//4 vertex
-	for (int i = 0; i < *last_buffer_id; i += batcher->gl_vertex_attribute_total_count * 4)		//1 shape = attribute counts * 4 vertex
+	for (int i = 0; i < last_buffer_id; i += batcher->gl_vertex_attribute_total_count * 4)		//1 shape = attribute counts * 4 vertex
 	{
 			vertex_buffer[i + k * batcher->gl_vertex_attribute_total_count + batcher->array_offset_for_x] += _x;								//offset 0 = x
 			vertex_buffer[i + k * batcher->gl_vertex_attribute_total_count + batcher->array_offset_for_y] += _y;								//offset 1 = y
@@ -3224,10 +3223,10 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 			delete[] vertex_buffer; 
 			vertex_buffer = new float[sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4];
 			//EInputCore::logger_param("length", sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4);
-			*total_capacity = sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4;
+			total_capacity = sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4;
 		}
 
-		*last_buffer_id = 0;
+		last_buffer_id = 0;
 		
 		
 		
@@ -3262,17 +3261,17 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 			
 		}
 
-		for (unsigned int i = 0; i < sprite_frame_list.size(); i++)
-		{
-			//ESpriteFrame* frame = sprite_frame_list[i];
-			if (sprite_frame_list[i]->marked_as_temporary)
-			{
-				delete sprite_frame_list[i];
-				sprite_frame_list.erase(sprite_frame_list.begin() + i);
-				
-				i--;
-			}
-		}
+		//for (unsigned int i = 0; i < sprite_frame_list.size(); i++)
+		//{
+		//	//ESpriteFrame* frame = sprite_frame_list[i];
+		//	if (sprite_frame_list[i]->marked_as_temporary)
+		//	{
+		//		delete sprite_frame_list[i];
+		//		sprite_frame_list.erase(sprite_frame_list.begin() + i);
+		//		
+		//		i--;
+		//	}
+		//}
 	}
 	else
 	{
@@ -3289,13 +3288,13 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 {
 	if
 	(
-		(*last_buffer_id > 0)
+		(last_buffer_id > 0)
 		&&
 		(
 			(batcher != nullptr)
 		)
 		&&
-		(!*disable_draw)
+		(!disable_draw)
 	)
 	{
 		//memcpy();
@@ -3308,7 +3307,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 		
 		//[31872]
 		//size of SPRITE LAYER vertex array
-		unsigned int remaining_data = *last_buffer_id;
+		int remaining_data = last_buffer_id;
 		//EInputCore::logger_param("data_size", data_size);
 
 		//sprite layer array can be bigger than batcher array. in this case we need copy sprite array partially
@@ -3329,12 +3328,16 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 			{
 				data_part = min(remaining_data, batcher_free_space);
 
+				data_copy_calls++;
+
 				memcpy
 				(
 					batcher->vertex_buffer + batcher->last_vertice_buffer_index,	//add to batcher vertex buffer
-					vertex_buffer + (copy_start),							//get from sprite layer vertex buffer
+					vertex_buffer + (copy_start),									//get from sprite layer vertex buffer
 					data_part * sizeof(float)
 				);
+
+				data_copies_count += data_part * sizeof(float);
 
 				copy_start += data_part;
 
@@ -3355,7 +3358,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 				batcher_free_space = batcher_size;
 			}
 
-			if (remaining_data == 0)
+			if (remaining_data <= 0)
 			{
 				break;
 			}
@@ -3374,17 +3377,17 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 void ESpriteLayer::sprite_layer_set_world_position(float _x, float _y, float _z)
 {
 
-	*world_position_x =_x + *offset_x;
-	*world_position_y =_y + *offset_y;
-	*world_position_z =_z + *offset_z;
+	world_position_x =_x + offset_x;
+	world_position_y =_y + offset_y;
+	world_position_z =_z + offset_z;
 
 	for (ESpriteFrame* frame : sprite_frame_list)
 		for (ESprite* spr : frame->sprite_list)
 			if (spr != nullptr)
 			{
-				spr->world_position_x = *world_position_x + spr->offset_x;
-				spr->world_position_y = *world_position_y + spr->offset_y;
-				spr->world_position_z = *world_position_z + spr->offset_z;
+				spr->world_position_x = world_position_x + spr->offset_x;
+				spr->world_position_y = world_position_y + spr->offset_y;
+				spr->world_position_z = world_position_z + spr->offset_z;
 			}
 }
 
@@ -3571,7 +3574,7 @@ void ESprite::generate_vertex_buffer_for_master_sprite_layer()
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_size
 		(
 			master_sprite_layer->vertex_buffer,
-			*master_sprite_layer->last_buffer_id,
+			master_sprite_layer->last_buffer_id,
 			world_position_x,
 			world_position_y + world_position_z,
 			main_texture

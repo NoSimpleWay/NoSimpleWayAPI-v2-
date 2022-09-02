@@ -149,6 +149,13 @@ public:
 };
 
 
+enum class ButtonAlignType
+{
+	BUTTON_ALIGN_LEFT,
+	BUTTON_ALIGN_MID,
+	BUTTON_ALIGN_RIGHT
+
+};
 
 class EButtonGroup
 {
@@ -158,6 +165,8 @@ public:
 
 	//float* size_x = new float(0.0f);
 	//float* size_y = new float(0.0f);
+
+	ButtonAlignType button_align_type = ButtonAlignType::BUTTON_ALIGN_LEFT;
 
 	bool debug_translation = false;
 	bool can_be_moved = true;
@@ -185,6 +194,8 @@ public:
 	//int* order_in_vector = new int(0);
 	static EButtonGroup* focused_button_group;
 	static EButtonGroup* focused_button_group_with_slider;
+
+	bool need_remove = false;
 
 	float scroll_x = (0.0f);
 	float scroll_y = (0.0f);
@@ -216,6 +227,7 @@ public:
 	void align_groups();
 	static void calculate_culling_lines(EButtonGroup* _group);
 	void realign_all_buttons();
+	void align_button_in_gabarite(std::vector<EntityButton*>& button_vector, float slider_additional);
 	static void generate_vertex_buffer_for_group(EButtonGroup* _group);
 
 	void expand_to_workspace_size();
@@ -292,19 +304,19 @@ public:
 
 	static void stretch_parent_group(EButtonGroup* _group, float _new_y_size);
 
-	bool* have_bg = new bool(true);
-	bool* can_be_focused = new bool(true);
-	bool* is_active = new bool(true);
+	bool have_bg					= (true);
+	bool can_be_focused				= (true);
+	bool is_active					= (true);
 
-	bool* force_new_line = new bool(false);
-	bool* parent_have_slider = new bool(false);
-	bool* need_redraw = new bool(false);
-	bool* can_be_stretched_by_child = new bool(false);
+	bool force_new_line				= (false);
+	bool parent_have_slider			= (false);
+	bool need_redraw				= (false);
+	bool can_be_stretched_by_child	= (false);
 
-	bool* stretch_x_by_parent_size = new bool(false);
-	bool* stretch_y_by_parent_size = new bool(false);
+	bool stretch_x_by_parent_size	= (false);
+	bool stretch_y_by_parent_size	= (false);
 
-	bool* have_slider = new bool(false);
+	bool have_slider				= (false);
 
 	EButtonGroup* add_group(EButtonGroup* _new_group);
 

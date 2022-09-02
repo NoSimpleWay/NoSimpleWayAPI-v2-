@@ -38,8 +38,6 @@
 #include <iterator>
 #include <chrono>
 
-
-
 //#pragma execution_character_set( "utf-8" )
 //extern GLFWwindow* main_window{ nullptr };
 
@@ -155,7 +153,10 @@ int main()
 		srand(time(nullptr));
 	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))
 	{
-		//Sleep(1.0f);
+		ESpriteLayer::data_copies_count = 0;
+		ESpriteLayer::data_copy_calls = 0;
+
+		Sleep(1.0f);
 		//GLFW_KEY_1
 		clock_t time = clock();
 
@@ -323,6 +324,9 @@ int main()
 
 		}
 		///////
+
+		//EInputCore::logger_param("data calls", ESpriteLayer::data_copy_calls);
+		//EInputCore::logger_param("data copied", ESpriteLayer::data_copies_count);
 	}
 
 	return 0;

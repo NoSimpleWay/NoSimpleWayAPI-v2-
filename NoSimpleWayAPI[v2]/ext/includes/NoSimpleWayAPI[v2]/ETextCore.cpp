@@ -453,7 +453,7 @@ void ETextArea::generate_text()
 		//if (*selected_color_table == TextColorArray::FREE)
 		{NS_EGraphicCore::set_active_color(&color); }
 
-		*sprite_layer->last_buffer_id = 0;
+		sprite_layer->last_buffer_id = 0;
 
 		if (sprite_layer->vertex_buffer != nullptr)
 		{
@@ -518,7 +518,7 @@ void ETextArea::generate_text()
 				NS_ERenderCollection::add_data_to_vertex_buffer_custom_uv
 				(
 					sprite_layer->vertex_buffer,
-					*sprite_layer->last_buffer_id,
+					sprite_layer->last_buffer_id,
 
 					round(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol]),
 					round(region_gabarite->world_position_y - (font->size_y_in_pixels[target_symbol] - 15.0f + font->offset_y[target_symbol] * *font_scale - y_adding)),

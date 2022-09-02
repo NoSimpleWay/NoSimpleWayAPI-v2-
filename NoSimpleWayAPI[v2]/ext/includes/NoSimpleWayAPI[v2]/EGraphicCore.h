@@ -332,6 +332,7 @@ public:
 	//void(*pointer_to_sprite_render)(ESprite* _sprite);
 	//void render_sprite_call(ESprite* _sprite);
 	void draw_call();
+	void direct_draw_call();
 
 	void set_total_attribute_count(GLsizei _attribute_count);
 	void register_new_vertex_attribute(GLint _subpameters_count);
@@ -528,21 +529,21 @@ public:
 
 	std::vector<ESpriteFrame*> sprite_frame_list;
 
-	float* offset_x = new float(0.0f);
-	float* offset_y = new float(0.0f);
-	float* offset_z = new float(0.0f);
+	float offset_x = (0.0f);
+	float offset_y = (0.0f);
+	float offset_z = (0.0f);
 
-	float* world_position_x = new float(0.0f);
-	float* world_position_y = new float(0.0f);
-	float* world_position_z = new float(0.0f);
+	float world_position_x = (0.0f);
+	float world_position_y = (0.0f);
+	float world_position_z = (0.0f);
 
-	unsigned int* last_buffer_id = new unsigned int(0);
-	unsigned int* total_capacity = new unsigned int(0);
+	unsigned int last_buffer_id = (0);
+	unsigned int total_capacity = (0);
 
 	ERenderBatcher* batcher = nullptr;
 	float* vertex_buffer = nullptr;
 
-	bool* disable_draw = new bool(false);
+	bool disable_draw = false;
 
 	void translate_sprite_layer	(float _x, float _y, float _z, bool _move_offset);
 	void translate_sprites		(float _x, float _y, float _z, bool _move_offset);
@@ -574,6 +575,9 @@ public:
 	static void set_size_for_last_sprite(ESpriteLayer* _layer, float _size_x, float _size_y);
 	static void set_offset_for_last_sprite(ESpriteLayer* _layer, float _offset_x, float _offset_y, float _offset_z );
 	static void add_new_default_frame_with_sprite(ETextureGabarite* _texture_gabarite, ESpriteLayer* _sprite_layer);
+
+	static int data_copies_count;
+	static int data_copy_calls;
 
 	std::vector <EBrickPlane*> brick_plane_list;
 

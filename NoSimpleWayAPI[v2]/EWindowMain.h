@@ -28,6 +28,8 @@ constexpr int CLUSTER_DIM_Y = 50;
 constexpr int CLUSTER_SIZE_X = 300;
 constexpr int CLUSTER_SIZE_Y = 300;
 
+
+
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
 class EDataContainer_Group_TextSelectorFromVariants : public EDataContainer
 {
@@ -39,12 +41,16 @@ public:
 
 namespace EDataActionCollection
 {
-	void action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_add_content_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_add_content_window				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_content_to_filter_block			(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
-	void action_open_rarity_selector(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_select_this_text_variant(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_rarity_selector				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_quality_selector				(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_select_this_text_variant			(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_mark_parent_group_as_removed		(Entity* _entity, ECustomData* _custom_data, float _d);
 }
 
 enum FilterAttributeType
@@ -59,7 +65,8 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER,
 	FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST,
 	FILTER_ATTRIBUTE_VALUE_TYPE_TEXT,
-	FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY
+	FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY,
+	FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST,
 };
 
 class FilterBlockAttribute
@@ -72,6 +79,8 @@ public:
 
 	ELocalisationText			localisation;
 };
+
+static void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_group, FilterBlockAttribute* _filter_block_attribute);
 
 
 
@@ -94,6 +103,8 @@ public:
 	static EWindowMain* link_to_main_window;
 
 	static EButtonGroup* select_rarity_button_group;
+	static EButtonGroup* select_quality_button_group;
+
 
 };
 
