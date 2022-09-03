@@ -42,7 +42,7 @@ public:
 namespace EDataActionCollection
 {
 	void action_open_add_content_window				(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_add_content_to_filter_block			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_selected_content_to_filter_block			(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	void action_open_rarity_selector				(Entity* _entity, ECustomData* _custom_data, float _d);

@@ -1612,19 +1612,65 @@ EWindowMain::EWindowMain()
 		EButtonGroup::add_content_to_filter_block_group = add_content_group;
 		add_content_group->is_active = false;
 
-		EDataContainer_Group_AddContentToFilterBlock* data_container = new EDataContainer_Group_AddContentToFilterBlock();
-		add_content_group->data_container = data_container;
+		EDataContainer_Group_AddContentToFilterBlock* content_group_data_container = new EDataContainer_Group_AddContentToFilterBlock();
+		add_content_group->data_container = content_group_data_container;
 
+		////////////////////////////////////////////////////////////////////////////////////////////////////
 		EButtonGroup* workspace_group
 		=
 		add_content_group->add_close_group_and_return_workspace_group(new ERegionGabarite(10.0f, 20.0f), EGUIStyle::active_style);
-		
-		workspace_group->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		workspace_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup* content_list_group
+		=
+		workspace_group->add_group
+		(
+			EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(10.0f, 10.0f),
+				EGUIStyle::active_style
+			)
+		);
+		content_list_group->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup* search_bar_group
+		=
+		workspace_group->add_group
+		(
+			EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(10.0f, 30.0f),
+				EGUIStyle::active_style
+			)
+		);
+		search_bar_group->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+
+		jc_button = EntityButton::create_default_clickable_button_with_text
+		(
+			new ERegionGabarite(800.0f, 30.0f),
+			search_bar_group,
+			nullptr,
+			""
+		);
+
+		//add pointer to clickable are in "add content to filter block group"
+		content_group_data_container->typing_text_area	= EntityButton::get_last_text_area(jc_button);
+
+		auto multi_search_data_container				= new EDataContainer_Button_MultiGroupButtonSearcher();
+
+		Entity::get_last_custom_data(jc_button)->data_container = multi_search_data_container;
+		Entity::get_last_clickable_area(jc_button)->text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_text_multiblock_searcher);
+
+		search_bar_group->button_list.push_back(jc_button);
+		search_bar_group->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////
 		EButtonGroup*
 		filter_block_operation_segment
 		=
-		workspace_group->add_group
+		content_list_group->add_group
 		(
 			EButtonGroup::create_default_button_group (new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
@@ -1634,14 +1680,14 @@ EWindowMain::EWindowMain()
 		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(160.0f, 20.0f), filter_block_operation_segment, nullptr, "Добавить новый блок");
 		filter_block_operation_segment->button_list.push_back(jc_button);
 
-		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(160.0f, 20.0f), filter_block_operation_segment, nullptr, "Клонировать этот блок");
-		filter_block_operation_segment->button_list.push_back(jc_button);
+		//jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(160.0f, 20.0f), filter_block_operation_segment, nullptr, "Клонировать этот блок");
+		//filter_block_operation_segment->button_list.push_back(jc_button);
 
 		///
 		EButtonGroup*
 		non_listed_segment
 		=
-			workspace_group->add_group
+		content_list_group->add_group
 		(
 			EButtonGroup::create_default_button_group (new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
@@ -1653,7 +1699,7 @@ EWindowMain::EWindowMain()
 		EButtonGroup*
 		listed_segment
 		=
-			workspace_group->add_group
+		content_list_group->add_group
 		(
 			EButtonGroup::create_default_button_group (new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
@@ -1664,12 +1710,17 @@ EWindowMain::EWindowMain()
 		EButtonGroup*
 		cosmetic_segment
 		=
-			workspace_group->add_group
+		content_list_group->add_group
 		(
 			EButtonGroup::create_default_button_group (new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
 		);
 		cosmetic_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+
+		multi_search_data_container->target_group_list.push_back(content_list_group);
+		multi_search_data_container->target_group_list.push_back(non_listed_segment);
+		multi_search_data_container->target_group_list.push_back(listed_segment);
+		multi_search_data_container->target_group_list.push_back(cosmetic_segment);
 
 		EButtonGroup* target_group = nullptr;
 		for (FilterBlockAttribute* fba : registered_filter_block_attributes)
@@ -1683,13 +1734,16 @@ EWindowMain::EWindowMain()
 
 			jc_button = EntityButton::create_default_clickable_button_with_unedible_text
 			(
-				new ERegionGabarite(160.0f, 20.0f),
+				new ERegionGabarite(160.0f, 30.0f),
 				target_group,
-				&EDataActionCollection::action_add_content_to_filter_block,
+				&EDataActionCollection::action_add_selected_content_to_filter_block,
 				fba->localisation.localisations[NSW_localisation_EN]
 			);
 
 			EntityButton::get_last_custom_data(jc_button)->data_container = add_content_data;
+			
+			//set localisations to text area
+			EntityButton::get_last_clickable_area(jc_button)->text_area->localisation_text = fba->localisation;
 
 			target_group->button_list.push_back(jc_button); 
 
@@ -1780,14 +1834,21 @@ void EDataActionCollection::action_open_add_content_window(Entity* _entity, ECus
 		EDataContainer_Button_OpenButtonGroup*			button_plus_data			= static_cast<EDataContainer_Button_OpenButtonGroup*>			(_custom_data->data_container);
 		EDataContainer_Group_WholeFilterBlock*			whole_filter_block_data		= static_cast<EDataContainer_Group_WholeFilterBlock*>			(button_plus_data->master_group->data_container);
 		EDataContainer_Group_AddContentToFilterBlock*	add_content_block_data		= static_cast<EDataContainer_Group_AddContentToFilterBlock*>	(EButtonGroup::add_content_to_filter_block_group->data_container);
+		ETextArea*										typing_text_area			= add_content_block_data->typing_text_area;
+		
+		typing_text_area->change_text("");
+		typing_text_area->outclick_protection = true;
+		//for ()
 
+		for (text_actions_pointer dap : typing_text_area->action_on_change_text) if (dap != nullptr) { dap(typing_text_area); }
+		//typing_text_area->activate_this_text_area();
 
 		{ add_content_block_data->target_filter_block = button_plus_data->master_group; }
 
 		//if (taget_group_for_content != nullptr) { taget_group_for_content->button_list.clear(); }
 }
 
-void EDataActionCollection::action_add_content_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)
+void EDataActionCollection::action_add_selected_content_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 
 		EDataContainer_Button_AddContentToFilterBlock* button_content_data = static_cast<EDataContainer_Button_AddContentToFilterBlock*>	(_custom_data->data_container);
@@ -1849,6 +1910,7 @@ void EDataActionCollection::action_open_quality_selector(Entity* _entity, ECusto
 //4) remove button
 void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, FilterBlockAttribute* _filter_block_attribute)
 {
+	float button_height = 22.0f;
 	//filter block have 4 sectors
 	//1) control
 	//2) non_listed
@@ -1892,7 +1954,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 		EButtonGroup* non_listed_line =
 			EButtonGroup::create_invisible_button_group
 			(
-				new ERegionGabarite(20.0f, 22.0f),
+				new ERegionGabarite(20.0f, button_height),
 				EGUIStyle::active_style
 			)
 			->
@@ -1919,7 +1981,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 
 		jc_button = EntityButton::create_default_clickable_button_with_unedible_text
 		(
-			new ERegionGabarite(100.0f, 20.0f),
+			new ERegionGabarite(100.0f, button_height),
 			non_listed_line,
 			nullptr,
 			_filter_block_attribute->localisation.localisations[0]
@@ -1932,7 +1994,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 		{
 			jc_button = EntityButton::create_default_clickable_button_with_text
 			(
-				new ERegionGabarite(20.0f, 20.0f),
+				new ERegionGabarite(20.0f, button_height),
 				non_listed_line,
 				nullptr,
 				"="
@@ -1953,7 +2015,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 
 			jc_button = EntityButton::create_default_clickable_button_with_unedible_text
 			(
-				new ERegionGabarite(100.0f, 20.0f),
+				new ERegionGabarite(100.0f, button_height),
 				non_listed_line,
 				&EDataActionCollection::action_open_rarity_selector,
 				text
@@ -1968,7 +2030,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 
 			jc_button = EntityButton::create_default_clickable_button_with_unedible_text
 			(
-				new ERegionGabarite(100.0f, 20.0f),
+				new ERegionGabarite(100.0f, button_height),
 				non_listed_line,
 				&EDataActionCollection::action_open_quality_selector,
 				text
@@ -1978,7 +2040,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 		{
 			jc_button = EntityButton::create_default_clickable_button_with_text
 			(
-				new ERegionGabarite(100.0f, 20.0f),
+				new ERegionGabarite(100.0f, button_height),
 				non_listed_line,
 				nullptr,
 				text
@@ -1991,7 +2053,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 
 		jc_button = EntityButton::create_default_clickable_button_with_icon
 		(
-			new ERegionGabarite(20.0f, 20.0f),
+			new ERegionGabarite(button_height, button_height),
 			non_listed_line,
 			&EDataActionCollection::action_mark_parent_group_as_removed,
 			NS_EGraphicCore::load_from_textures_folder("button_close")

@@ -391,6 +391,20 @@ EClickableArea* Entity::get_last_clickable_area(Entity* _entity)
 	{ return nullptr; }
 }
 
+ETextArea* Entity::get_last_text_area(Entity* _entity)
+{
+	EClickableArea* last_clickable_area = get_last_clickable_area(_entity);
+	
+	if (last_clickable_area != nullptr)
+	{
+		//TextArea* last_text_area =
+
+		return last_clickable_area->text_area;
+	}
+
+	return nullptr;
+}
+
 void Entity::add_text_area_to_last_clickable_region(EntityButton* _button, ETextArea* _text_area)
 {
 	if (_button != nullptr)

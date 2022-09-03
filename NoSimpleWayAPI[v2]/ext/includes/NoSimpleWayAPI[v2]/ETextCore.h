@@ -210,9 +210,13 @@ public:
 	float* offset_by_text_size_x = new float(-0.5f);
 	float* offset_by_text_size_y = new float(0.0f);
 	//
+	bool outclick_protection = false;
 
 	void update(float _d);
+	void activate_this_text_area();
 	void draw();
+
+	void text_area_set_active_and_select_glyph();
 
 
 	bool* can_be_edited = new bool(true);

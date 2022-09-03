@@ -705,102 +705,73 @@ void ETextArea::update(float _d)
 	if (!font_glyph_list.empty())
 	{
 		if
+		(
+			(*can_be_edited)
+			&&
+			(EInputCore::MOUSE_BUTTON_LEFT)
+			&&
 			(
-				(*can_be_edited)
-				&&
-				(EInputCore::MOUSE_BUTTON_LEFT)
-				&&
-				(
-					(EClickableArea::active_clickable_region == nullptr)
-					||
-					(EClickableArea::active_clickable_region == parent_clickable_region)
-					)
-				&&
-				(NS_FONT_UTILS::active_text_area == nullptr)
-				)
-			for (EFontGlyph* glyph : font_glyph_list)
-			{
-
-
-
-				if
-					(
-						(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= glyph->world_position_x)
-						&&
-						(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= glyph->world_position_x + glyph->size_x)
-						&&
-						(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= glyph->world_position_y)
-						&&
-						(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= glyph->world_position_y + glyph->size_y)
-						)
-				{
-					//*selected_glyph_position = glyph_id;
-					//*selected_glyph_position = -1;
-					//NS_FONT_UTILS::active_text_area = this;
-
-					if (EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= glyph->world_position_x + glyph->size_x / 2.0f)
-					{
-						*selected_glyph_position = glyph_id;
-						//*selected_left_side = true;
-						//*selected_glyph_position = glyph_id;
-					}
-					else
-					{
-						*selected_glyph_position = glyph_id + 1;
-						//*selected_left_side = false;
-						//*selected_glyph_position = min(glyph_id, font_glyph_list.size() - 1);
-					}
-
-					*text_area_active = true;
-					*selected_glyph_position = min(*selected_glyph_position, font_glyph_list.size() - 1);
-					NS_FONT_UTILS::active_text_area = this;
-					break;
-				}
-
-				glyph_id++;
-			}
+				(EClickableArea::active_clickable_region == nullptr)
+				||
+				(EClickableArea::active_clickable_region == parent_clickable_region)
+			)
+			&&
+			(NS_FONT_UTILS::active_text_area == nullptr)
+		)
+		{text_area_set_active_and_select_glyph();}
 	}
 
 	if
-		(
+	(
 			(EInputCore::MOUSE_BUTTON_LEFT)
-			)
+	)
 	{
 		//click into gabarite
 		if
+		(
+			//only editable text areas can be set as active
+			(*can_be_edited)
+			&&
 			(
-				(*can_be_edited)
-				&&
-				(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_x)
-				&&
-				(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_x + region_gabarite->size_x)
-				&&
-				(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_y)
-				&&
-				(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_y + region_gabarite->size_y)
-				&&
+				//outclick protection
+				//or
+				//click direct to text area without any active regions on another buttons 
+				(outclick_protection)
+				||
 				(
-					(EClickableArea::active_clickable_region == nullptr)
-					||
-					(EClickableArea::active_clickable_region == parent_clickable_region)
+					(
+						(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_x)
+						&&
+						(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_x + region_gabarite->size_x)
+						&&
+						(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_y)
+						&&
+						(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_y + region_gabarite->size_y)
+					)
+					&&
+					(
+						(EClickableArea::active_clickable_region == nullptr)
+						||
+						(EClickableArea::active_clickable_region == parent_clickable_region)
 					)
 				)
+			)
+		)
 		{
-			if ((!row.empty()) && (!*text_area_active) && (NS_FONT_UTILS::active_text_area == nullptr))
-			{
-				*text_area_active = true;
-				*selected_glyph_position = font_glyph_list.size() - 1;
-
-				NS_FONT_UTILS::active_text_area = this;
-			}
+			activate_this_text_area();
 		}
 		else//declick,
 		{
+			//if 
 			*text_area_active = false;
 
 			*selected_glyph_position = -1;
 			NS_FONT_UTILS::active_text_area = nullptr;
 		}
+	}
+	else
+	{
+		outclick_protection = false;
 	}
 
 
@@ -999,6 +970,17 @@ void ETextArea::update(float _d)
 	*jump_cooldown -= _d;
 }
 
+void ETextArea::activate_this_text_area()
+{
+	if ((!row.empty()) && (!*text_area_active) && (NS_FONT_UTILS::active_text_area == nullptr))
+	{
+		*text_area_active = true;
+		*selected_glyph_position = font_glyph_list.size() - 1;
+
+		NS_FONT_UTILS::active_text_area = this;
+	}
+}
+
 void ETextArea::draw()
 {
 	EFontGlyph* active_glyph = nullptr;
@@ -1072,6 +1054,52 @@ void ETextArea::draw()
 		100.0f,
 		NS_DefaultGabarites::texture_gabarite_white_pixel
 	);*/
+}
+
+void ETextArea::text_area_set_active_and_select_glyph()
+{
+	int glyph_id = 0;
+	for (EFontGlyph* glyph : font_glyph_list)
+	{
+
+
+
+		if
+			(
+				(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= glyph->world_position_x)
+				&&
+				(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= glyph->world_position_x + glyph->size_x)
+				&&
+				(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= glyph->world_position_y)
+				&&
+				(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= glyph->world_position_y + glyph->size_y)
+				)
+		{
+			//*selected_glyph_position = glyph_id;
+			//*selected_glyph_position = -1;
+			//NS_FONT_UTILS::active_text_area = this;
+
+			if (EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= glyph->world_position_x + glyph->size_x / 2.0f)
+			{
+				*selected_glyph_position = glyph_id;
+				//*selected_left_side = true;
+				//*selected_glyph_position = glyph_id;
+			}
+			else
+			{
+				*selected_glyph_position = glyph_id + 1;
+				//*selected_left_side = false;
+				//*selected_glyph_position = min(glyph_id, font_glyph_list.size() - 1);
+			}
+
+			*text_area_active = true;
+			*selected_glyph_position = min(*selected_glyph_position, font_glyph_list.size() - 1);
+			NS_FONT_UTILS::active_text_area = this;
+			break;
+		}
+
+		glyph_id++;
+	}
 }
 
 void ETextArea::set_region(ETextArea* _text_area, ERegionGabarite* _region_gabarite)

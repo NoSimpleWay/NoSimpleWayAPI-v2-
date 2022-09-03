@@ -96,8 +96,9 @@ public:
 	bool need_remove	= false;
 	bool disabled		= false;
 
-	static ECustomData*		get_last_custom_data(Entity* _entity);
-	static EClickableArea*	get_last_clickable_area(Entity* _entity);
+	static ECustomData*		get_last_custom_data	(Entity* _entity);
+	static EClickableArea*	get_last_clickable_area	(Entity* _entity);
+	static ETextArea*		get_last_text_area		(Entity* _entity);
 
 	static void add_text_area_to_last_clickable_region(EntityButton* _button, ETextArea* _text_area);
 };

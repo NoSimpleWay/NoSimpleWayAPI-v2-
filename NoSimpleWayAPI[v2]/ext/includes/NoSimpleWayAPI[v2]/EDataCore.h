@@ -421,7 +421,15 @@ public:
 class EDataContainer_Group_AddContentToFilterBlock : public EDataContainer
 {
 public:
-	EButtonGroup* target_filter_block;
+	EButtonGroup*	target_filter_block;
+
+	ETextArea*		typing_text_area;
+};
+
+class EDataContainer_Button_MultiGroupButtonSearcher : public EDataContainer
+{
+public:
+	std::vector <EButtonGroup*> target_group_list;
 };
 
 
@@ -431,22 +439,23 @@ public:
 
 namespace EDataActionCollection
 {
-	void action_log_text						(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_player_control					(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_update_slider					(Entity* _entity, ECustomData* _custom_data, float _d);
-	//void action_change_style					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_log_text							(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_player_control						(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_update_slider						(Entity* _entity, ECustomData* _custom_data, float _d);
+	//void action_change_style						(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_highlight_button_if_overlap		(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_select_this_style				(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_close_root_group				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_highlight_button_if_overlap			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_style					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_close_root_group					(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_delete_entity					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_delete_entity						(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_switch_description				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_switch_description					(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_update_radial_button			(Entity* _entity, ECustomData* _custom_data, float _d);
-	//void action_type_text						(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_type_text						(ETextArea* _text_area);
+	void action_update_radial_button				(Entity* _entity, ECustomData* _custom_data, float _d);
+	//void action_type_text							(Entity* _entity, ECustomData* _custom_data, float _d);
+
+
 
 	/*	open groups	*/
 	void action_open_data_entity_filter_group		(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -469,6 +478,10 @@ namespace EDataActionCollection
 	void action_invoke_data_entity_group_action		(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_set_button_group_as_active			(Entity* _entity, ECustomData* _custom_data, float _d);
 
+
+	//type text
+	void action_type_text							(ETextArea* _text_area);
+	void action_type_text_multiblock_searcher		(ETextArea* _text_area);
 
 	//group section
 		//draw

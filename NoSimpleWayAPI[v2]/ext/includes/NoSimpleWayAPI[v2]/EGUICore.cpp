@@ -1070,7 +1070,10 @@ void EButtonGroup::check_slider()
 	have_slider = true;//have no slider by default
 
 	if (slider != nullptr)
-	{slider->disable_draw = true;}
+	{
+		slider->disable_draw	= true;
+		slider->disabled		= true;
+	}
 
 	float child_elements_height_summ = 0.0f;
 	float max_y = 0.0f;
@@ -1111,8 +1114,9 @@ void EButtonGroup::check_slider()
 		{
 			if (slider != nullptr)
 			{
-				slider->disable_draw = false;
-				have_slider = true;
+				slider->disable_draw	= false;
+				slider->disabled		= false;
+				have_slider				= true;
 				//EInputCore::logger_param("summ", child_elements_height_summ);
 				//EInputCore::logger_param("size y", *region_gabarite->size_y - 6.0f - *border_bottom - *border_up);
 				//std::cout << std::endl;
@@ -1128,8 +1132,9 @@ void EButtonGroup::check_slider()
 		{
 			if (slider != nullptr)
 			{
-				slider->disable_draw = true;
-				have_slider = false;
+				slider->disable_draw	= true;
+				slider->disabled		= true;
+				have_slider				= false;
 				for (EButtonGroup* group : group_list)
 				{group->parent_have_slider = false;}//parent have no slider
 			}
@@ -1168,6 +1173,7 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 
 	_group->align_groups();
 	EButtonGroup::calculate_culling_lines(_group);
+
 	_group->realign_all_buttons();
 
 	EButtonGroup::generate_vertex_buffer_for_group(_group);
@@ -1217,7 +1223,10 @@ void EButtonGroup::realign_all_buttons()
 		bool new_lined = false;
 		if (prev_button != nullptr)
 		{
-			button_vector.push_back(prev_button);
+			if (!but->fixed_position)
+			{
+				button_vector.push_back(prev_button);
+			}
 
 
 			but->offset_x = prev_button->offset_x + prev_button->button_gabarite->offset_x + prev_button->button_gabarite->size_x + 3.0f;
@@ -1225,7 +1234,7 @@ void EButtonGroup::realign_all_buttons()
 			
 			
 
-			if (slider != nullptr) { slider_additional = slider->button_gabarite->size_x + 0.0f; }
+			if ((slider != nullptr) && (!slider->disabled) && (!slider->disable_draw) && (have_slider)) { slider_additional = slider->button_gabarite->size_x + 0.0f; } else { slider_additional = 0.0f; }
 
 
 			//new line
@@ -1257,40 +1266,25 @@ void EButtonGroup::realign_all_buttons()
 
 
 
-		if ((but->fixed_position) && (true))
-		{
-			but->world_position_x = but->parent_button_group->region_gabarite->world_position_x + but->offset_x;
-			but->world_position_y = but->parent_button_group->region_gabarite->world_position_y + but->offset_y;
-		}
-		else
-		{
-			but->world_position_x = but->parent_button_group->region_gabarite->world_position_x + but->offset_x + but->parent_button_group->scroll_x;
-			but->world_position_y = but->parent_button_group->region_gabarite->world_position_y + but->offset_y + but->parent_button_group->scroll_y;
 
 
-			//*but->world_position_x = *but->parent_button_group->region->world_position_x + *but->parent_button_group->scroll_y;
-			//*but->world_position_y = *but->parent_button_group->region->world_position_y;
-		}
-
-		if ((new_lined) || (but == button_list.back()))
+		if ((new_lined))
 		{
 			
+			if ((new_lined) && (but->custom_data_list[0]->clickable_area_list[0]->text_area != nullptr))
+			{
+				//EInputCore::logger_param("new lined", *but->custom_data_list[0]->clickable_area_list[0]->text_area->stored_text);
+			}
 			align_button_in_gabarite(button_vector, slider_additional);
+			//EInputCore::logger_simple_info("invoke);
 
-			if (but == button_list.back()) { button_vector.push_back(but); align_button_in_gabarite(button_vector, slider_additional);}
 			new_lined = false;
 		}
 
 
 		highest_point_y = max(highest_point_y, but->offset_y + but->button_gabarite->size_y + 0.0f);
 
-		if ((slider != nullptr) && (highest_point_y > region_gabarite->size_y - 0.0f - border_up))
-		{
-			slider->disable_draw = false;
 
-			for (EButtonGroup* group : group_list) {group->have_slider = true;}
-		}
-		//EInputCore::logger_param("highest point y", *highest_point_y);
 		prev_button = but;
 	}
 	else
@@ -1298,12 +1292,26 @@ void EButtonGroup::realign_all_buttons()
 		//but->update(0.1f);
 	}
 
+	if (prev_button != nullptr)
+	{
+		if (!prev_button->fixed_position)
+		{
+			button_vector.push_back(prev_button);
+			align_button_in_gabarite(button_vector, slider_additional);
+		}
+
+		
+	}
+
+
 	//if (!button_vector.empty())
 	//{
 	//	align_button_in_gabarite(button_vector, slider_additional);
 	//}
 
 
+
+		//EInputCore::logger_param("highest point y", *highest_point_y);
 
 	if (slider != nullptr)
 	{
@@ -1327,6 +1335,22 @@ void EButtonGroup::realign_all_buttons()
 		slider->world_position_y = region_gabarite->world_position_y;
 	}
 
+	if ((slider != nullptr) && (highest_point_y > region_gabarite->size_y - 0.0f - border_up))
+	{
+		slider->disable_draw	= false;
+		slider->disabled		= false;
+
+		if (!have_slider)
+		{
+			have_slider = true;
+			this->realign_all_buttons();
+		}
+
+		
+
+		for (EButtonGroup* group : group_list) { group->parent_have_slider = true; }
+	}
+
 	for (EButtonGroup* group : group_list) { group->realign_all_buttons(); }
 }
 
@@ -1334,21 +1358,40 @@ void EButtonGroup::align_button_in_gabarite(std::vector<EntityButton*>& button_v
 {
 	float total_width = (button_vector.size() - 1) * 3.0f + slider_additional;
 
+	//EInputCore::logger_param("slider_additional", slider_additional);
+
+	int id = 0;
 	for (EntityButton* but_temp : button_vector)
+	if (!but_temp->fixed_position)
 	{
 		total_width += but_temp->button_gabarite->size_x;
+
+		//EInputCore::logger_param("button[" + std::to_string(id) + "]", but_temp->button_gabarite->size_x);
+		id++;
 	}
 
 	float free_space = 0.0f;
 	if (button_align_type == ButtonAlignType::BUTTON_ALIGN_MID) { free_space = (region_gabarite->size_x - total_width) / 2.0f; }
 	if (button_align_type == ButtonAlignType::BUTTON_ALIGN_RIGHT) { free_space = (region_gabarite->size_x - total_width); }
 
+
 	for (EntityButton* but_temp : button_vector)
-		if (!but_temp->fixed_position)
+	{
+		if ((but_temp->fixed_position) && (true))
 		{
-			but_temp->offset_x += free_space;
-			but_temp->world_position_x += free_space;
+			but_temp->world_position_x = but_temp->parent_button_group->region_gabarite->world_position_x + but_temp->offset_x;
+			but_temp->world_position_y = but_temp->parent_button_group->region_gabarite->world_position_y + but_temp->offset_y;
 		}
+		else
+		{
+			but_temp->world_position_x = but_temp->parent_button_group->region_gabarite->world_position_x + but_temp->offset_x + but_temp->parent_button_group->scroll_x + free_space;
+			but_temp->world_position_y = but_temp->parent_button_group->region_gabarite->world_position_y + but_temp->offset_y + but_temp->parent_button_group->scroll_y;
+
+
+			//*but->world_position_x = *but->parent_button_group->region->world_position_x + *but->parent_button_group->scroll_y;
+			//*but->world_position_y = *but->parent_button_group->region->world_position_y;
+		}
+	}
 
 	button_vector.clear();
 }

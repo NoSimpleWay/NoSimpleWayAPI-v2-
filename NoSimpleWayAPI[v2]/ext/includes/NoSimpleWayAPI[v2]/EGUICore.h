@@ -226,7 +226,9 @@ public:
 
 	void align_groups();
 	static void calculate_culling_lines(EButtonGroup* _group);
+
 	void realign_all_buttons();
+
 	void align_button_in_gabarite(std::vector<EntityButton*>& button_vector, float slider_additional);
 	static void generate_vertex_buffer_for_group(EButtonGroup* _group);
 
