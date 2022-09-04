@@ -487,7 +487,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Rare base"
 	
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1021,7 +1021,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Rare base"
 	
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1152,6 +1152,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"League: abyss"
 	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Boss loot"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -1872,7 +1873,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Item for str based character"
-	[tag]"item tag"		[value]"Item for int based character"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
@@ -1894,7 +1894,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
 	[tag]"item tag"		[value]"Item for dex based character"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Armour piece"
@@ -1917,7 +1917,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
@@ -2027,7 +2027,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Item for dex based character"
-	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Item for str based character"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
@@ -2137,7 +2137,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Item for str based character"
 	[tag]"item tag"		[value]"Item for dex based character"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Armour piece"
@@ -2226,7 +2225,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"3"
 
 	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for str based character"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
@@ -3331,6 +3330,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3343,6 +3348,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -11825,7 +11836,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Rare base"
 		
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -11908,7 +11919,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Rare base"	
 		
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -19825,6 +19836,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Cerulean_Ring"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Rare base"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19921,6 +19936,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Opal_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Rare base"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19981,6 +20000,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Steel_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Good for attack build"
+
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20000,20 +20024,8 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Two-Stone"
-	[tag]"name RU"		[value]"с двумя камнями"
-
-	[tag]"icon path"	[value]"Two_stone"
-	[tag]"base class"	[value]"Rings"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
 	[tag]"name EN"		[value]"Two-Stone Ring"
-	[tag]"name RU"		[value]"Кольцо с двумя камнями!!!"
+	[tag]"name RU"		[value]"Кольцо с двумя камнями"
 
 	[tag]"icon path"	[value]"Two-Stone_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
@@ -28191,6 +28203,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Convoking_Wand_inventory_icon"
 	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Rare base"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -29003,6 +29019,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"seaglass_amulet"
 	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Good for attack build"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -29051,7 +29069,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Rare base"
 		
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -29061,6 +29079,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"artillery_quiver"
 	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Good for attack build"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -29073,6 +29093,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"IoliteRing"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Rare base"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

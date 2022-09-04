@@ -157,6 +157,7 @@ enum class ButtonAlignType
 
 };
 
+constexpr float DISTANCE_BETWEEN_BUTTONS = 5.0f;
 class EButtonGroup
 {
 public:

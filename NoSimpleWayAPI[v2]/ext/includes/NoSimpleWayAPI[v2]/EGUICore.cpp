@@ -17,7 +17,7 @@ EButtonGroup* EButtonGroup::add_content_to_filter_block_group	= nullptr;
 
 std::vector<FreshCreatedGroup*> EButtonGroup::fresh_created_block_list;
 
-constexpr float BUTTON_GROUP_Y_DISTANCE = 3.0f;
+constexpr float BUTTON_GROUP_Y_DISTANCE = 2.0f;
 
 
 
@@ -1229,19 +1229,19 @@ void EButtonGroup::realign_all_buttons()
 			}
 
 
-			but->offset_x = prev_button->offset_x + prev_button->button_gabarite->offset_x + prev_button->button_gabarite->size_x + 3.0f;
+			but->offset_x = prev_button->offset_x + prev_button->button_gabarite->offset_x + prev_button->button_gabarite->size_x + DISTANCE_BETWEEN_BUTTONS;
 			but->offset_y = prev_button->offset_y;
 			
 			
 
-			if ((slider != nullptr) && (!slider->disabled) && (!slider->disable_draw) && (have_slider)) { slider_additional = slider->button_gabarite->size_x + 0.0f; } else { slider_additional = 0.0f; }
+			if ((slider != nullptr) && (!slider->disabled) && (!slider->disable_draw) && (have_slider)) { slider_additional = slider->button_gabarite->size_x + 1.0f; } else { slider_additional = 0.0f; }
 
 
 			//new line
 			if (but->offset_x + but->button_gabarite->size_x + slider_additional >= region_gabarite->size_x)
 			{
 				but->offset_x = but->parent_button_group->border_left;
-				but->offset_y += but->button_gabarite->size_y + 3.0f;
+				but->offset_y += but->button_gabarite->size_y + DISTANCE_BETWEEN_BUTTONS;
 
 				new_lined = true;
 				
@@ -1356,7 +1356,7 @@ void EButtonGroup::realign_all_buttons()
 
 void EButtonGroup::align_button_in_gabarite(std::vector<EntityButton*>& button_vector, float slider_additional)
 {
-	float total_width = (button_vector.size() - 1) * 3.0f + slider_additional;
+	float total_width = (button_vector.size() - 1) * DISTANCE_BETWEEN_BUTTONS + slider_additional;
 
 	//EInputCore::logger_param("slider_additional", slider_additional);
 

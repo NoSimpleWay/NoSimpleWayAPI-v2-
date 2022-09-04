@@ -595,18 +595,23 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 		ETextureGabarite* item_icon = NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity));
 		
-		float resize_factor = 0.0f;
+		float resize_factor	= 0.0f;
+		float offset_x = 0.0f;
+		float offset_y = 0.0f;
 
 		if (item_icon != nullptr)
 		{
 			resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
 			resize_factor = min(resize_factor, 1.0f);
 
+			offset_x = (_region_gabarite->size_y - *item_icon->size_x_in_pixels * resize_factor) / 2.0f;
+			offset_y = (_region_gabarite->size_y - *item_icon->size_y_in_pixels * resize_factor) / 2.0f;
+
 			ESpriteLayer* second_button_layer =
 				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 				(item_icon,
-					_parent_group->border_bottom + 3.0f,
-					_parent_group->border_up + 3.0f,
+					_parent_group->border_bottom	+ offset_x,
+					_parent_group->border_up		+ offset_y,
 					3.0f,
 
 					*item_icon->size_x_in_pixels * resize_factor,
@@ -623,7 +628,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		*jc_text_area->offset_by_gabarite_size_x = 0.0;
 		*jc_text_area->offset_by_text_size_x = 0.0;
 
-		jc_text_area->offset_border[BorderSide::LEFT] = *item_icon->size_x_in_pixels * resize_factor + _parent_group->border_left + 7.0f;
+		jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y;
 
 		jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
 

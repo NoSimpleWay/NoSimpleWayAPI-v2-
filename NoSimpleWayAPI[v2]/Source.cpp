@@ -156,7 +156,7 @@ int main()
 		ESpriteLayer::data_copies_count = 0;
 		ESpriteLayer::data_copy_calls = 0;
 
-		Sleep(1.0f);
+		//Sleep(1.0f);
 		//GLFW_KEY_1
 		clock_t time = clock();
 

@@ -41,16 +41,16 @@ public:
 
 namespace EDataActionCollection
 {
-	void action_open_add_content_window				(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_add_selected_content_to_filter_block			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_add_content_window					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_selected_content_to_filter_block	(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
-	void action_open_rarity_selector				(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_open_quality_selector				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_rarity_selector					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_quality_selector					(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_select_this_text_variant			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_text_variant				(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_mark_parent_group_as_removed		(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_mark_parent_group_as_removed			(Entity* _entity, ECustomData* _custom_data, float _d);
 }
 
 enum FilterAttributeType
@@ -74,6 +74,7 @@ class FilterBlockAttribute
 public:
 	FilterAttributeType			filter_attribute_type;
 	FilterAttributeValueType	filter_attribute_value_type;
+	EFilterRule*				filter_rule;
 
 	bool have_operator = false;
 
@@ -96,6 +97,7 @@ public:
 	//ECluster* cluster_array[CLUSTER_DIM_X][CLUSTER_DIM_Y];
 
 	EWindowMain();
+	void register_filter_rules();
 	~EWindowMain();
 
 	//ETextureGabarite* gudron;

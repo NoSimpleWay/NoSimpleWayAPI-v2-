@@ -680,7 +680,7 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 			//*data_container->pointer_to_target_group_send_item->is_active = false;
 
 			//data_container->pointer_to_group_with_data_entities->realign_all_buttons();
-			EButtonGroup::refresh_button_group(data_container->pointer_to_group_with_data_entities);
+			EButtonGroup::refresh_button_group(data_container->pointer_to_group_with_data_entities->root_group);
 			//data_container->pointer_to_target_group_send_item->button_list.clear();
 
 			//EButtonGroup::refresh_button_group(data_container->pointer_to_target_group_send_item);
@@ -940,7 +940,7 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 
 	receiver->button_list.push_back(jc_button);
 	//receiver->button_list.clear();
-	EButtonGroup::refresh_button_group(receiver->root_group);
+	EButtonGroup::change_group(receiver);
 }
 
 void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d)
