@@ -265,6 +265,7 @@ enum RegisteredFilterRules
 	FILTER_RULE_SKILL_GEMS,
 	FILTER_RULE_INFLUENCE,
 	FILTER_RULE_EXPLICITS,
+	FILTER_RULE_CLUSTER_PASSIVE,
 	_RDEF_LAST_ELEMENT_
 };
 
@@ -433,6 +434,15 @@ public:
 	std::vector <EButtonGroup*> target_group_list;
 };
 
+class EDataContainer_Button_BoolSwitcher : public EDataContainer
+{
+public:
+	ETextureGabarite* texture_gabarite_on;
+	ETextureGabarite* texture_gabarite_off;
+
+	bool* target_value;
+};
+
 
 //////////////////////////////////////////////////////////////////////
 // actions section
@@ -479,6 +489,11 @@ namespace EDataActionCollection
 	void action_invoke_data_entity_group_action		(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_set_button_group_as_active			(Entity* _entity, ECustomData* _custom_data, float _d);
 
+	void action_switch_boolean_value				(Entity* _entity, ECustomData* _custom_data, float _d);
+	
+	void action_transfer_pointer_to_color_data_container(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_unbing_color(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_create_new_color(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text
 	void action_type_text							(ETextArea* _text_area);
@@ -497,11 +512,12 @@ namespace EDataActionCollection
 		//window resize
 		void action_resize_to_full_window			(EButtonGroup* _group);
 	
+	//draw actions
+	void action_draw_boolean_switcher				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_stored_color_as_box			(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_draw_stored_color_as_box						(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_transfer_pointer_to_color_data_container		(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_unbing_color									(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_create_new_color								(Entity* _entity, ECustomData* _custom_data, float _d);
+
+
 
 }
 
@@ -519,6 +535,7 @@ class ETextParser
 public:
 	static std::string		data_array[1000];
 	static void				data_entity_parse_file(std::string _file);
+	static void				data_read_explicit_file_and_generate_data_entity(std::string _file);
 
 	static EDataEntity*		last_created_data_entity;
 	static EDataTag*		last_created_data_tag;

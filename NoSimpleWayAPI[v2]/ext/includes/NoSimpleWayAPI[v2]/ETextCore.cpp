@@ -762,11 +762,19 @@ void ETextArea::update(float _d)
 		}
 		else//declick,
 		{
-			//if 
-			*text_area_active = false;
+			if (*text_area_active)
+			{
+				//if 
+				*text_area_active = false;
 
-			*selected_glyph_position = -1;
-			NS_FONT_UTILS::active_text_area = nullptr;
+				*selected_glyph_position = -1;
+
+				NS_FONT_UTILS::active_text_area = nullptr;
+
+				//this text area is no more as active
+				//if (EClickableArea::active_clickable_region == parent_clickable_region)
+				//{EClickableArea::active_clickable_region = nullptr;}
+			}
 		}
 	}
 	else
@@ -825,12 +833,13 @@ void ETextArea::update(float _d)
 			(EInputCore::key_pressed_once(GLFW_KEY_ENTER))
 			&&
 			(*text_area_active)
-			)
+		)
 	{
 		//*selected_glyph_position = -1;
 		*text_area_active = false;
 
 		NS_FONT_UTILS::active_text_area = nullptr;
+		//EClickableArea::active_clickable_region = nullptr;
 	}
 
 	if
@@ -1200,19 +1209,109 @@ void ETextArea::change_text(std::string _text)
 {
 	std::string		buffer = "";
 	std::string		temp_text = "";
+
 	float			x_size = 0.0f;
-	bool split = false;
+	float			block_size = 0.0f;
+
+	bool			split = false;
+	char			target_sym = 0;
+	int				sym_id = 0;
 
 	for (int i = 0; i < _text.size(); i++)
 	{
+		target_sym = _text[i];
+		
+		
+
 		if
-			(
-				(i + 1 < _text.size())
-				&&
-				(_text[i] == '\\')
-				&&
-				(_text[i + 1] == 'n')
-				)
+		(
+			(i + 1 < _text.size())
+			&&
+			(_text[i] == '\\')
+			&&
+			(_text[i + 1] == 'n')
+		)
+		{
+			x_size = 0.0f;
+			block_size = 0.0f;
+
+			buffer += temp_text + "\\n";
+			i++;
+
+			temp_text = "";
+		}
+		else
+		{
+			
+			sym_id = (int)(_text[i]);
+			
+			
+			//non space character
+			if (target_sym != ' ')
+			{
+				temp_text += target_sym;
+				block_size += font->advance[sym_id];
+				x_size += font->advance[sym_id];
+			}
+			else
+			{
+				if (x_size + offset_border[BorderSide::LEFT] + 0.0f < region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 0.0f)
+				{
+					x_size += font->advance[sym_id];
+				}
+			}
+
+			if ((target_sym == ' ')||(i >= _text.size() - 1))
+			{
+				//need to transfer text to new line?
+				if (x_size + offset_border[BorderSide::LEFT] + 5.0f >= region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 5.0f)
+				{
+					buffer += "\\n";
+					//buffer += "[" + Helper::float_to_string_with_precision(x_size + offset_border[BorderSide::LEFT] + 5.0f, 2.0f) + "/" + Helper::float_to_string_with_precision(region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 5.0f, 2.0f) + "]";
+					buffer += temp_text;
+					
+					temp_text = "";
+					x_size = block_size;
+				}
+
+				if (target_sym == ' ')
+				{
+					buffer += temp_text + " ";
+					//EInputCore::logger_param("space advance", font->advance[sym_id]);
+				}
+				else
+				if (i >= _text.size() - 1) { buffer += temp_text; }
+
+				temp_text = "";
+				block_size = 0.0f;
+			}	
+		}
+
+	}
+
+	//*stored_text = buffer + temp_text;
+
+	if (stored_text != nullptr)
+	{
+		*stored_text = buffer;
+
+		//if (temp_text != "") { *stored_text += " " + temp_text; }
+		//if (buffer[0] == 'Ì') { EInputCore::logger_param("buffer", buffer); }
+		generate_rows();
+		generate_text();
+	}
+	//legacy method
+	if (false)
+	for (int i = 0; i < _text.size(); i++)
+	{
+		if
+		(
+			(i + 1 < _text.size())
+			&&
+			(_text[i] == '\\')
+			&&
+			(_text[i + 1] == 'n')
+		)
 		{
 			x_size = 0.0f;
 
@@ -1246,9 +1345,9 @@ void ETextArea::change_text(std::string _text)
 				x_size += font->advance[sym_id];
 
 				if
-					(
-						(x_size + offset_border[BorderSide::LEFT] + 5.0f >= region_gabarite->size_x - offset_border[BorderSide::RIGHT])
-						)
+				(
+					(x_size + offset_border[BorderSide::LEFT] + 5.0f >= region_gabarite->size_x - offset_border[BorderSide::RIGHT])
+				)
 				{
 					/*if (buffer[0] == 'M')
 					{
@@ -1301,13 +1400,7 @@ void ETextArea::change_text(std::string _text)
 
 
 
-	if (stored_text != nullptr)
-	{
-		*stored_text = buffer;
-		//if (buffer[0] == 'Ì') { EInputCore::logger_param("buffer", buffer); }
-		generate_rows();
-		generate_text();
-	}
+
 }
 
 bool ETextArea::can_get_access_to_group_style()

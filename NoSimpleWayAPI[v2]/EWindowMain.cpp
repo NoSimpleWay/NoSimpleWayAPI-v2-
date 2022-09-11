@@ -368,7 +368,7 @@ EWindowMain::EWindowMain()
 
 
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		jc_localisation.base_name = "HasExplicitMod ";
+		jc_localisation.base_name = "HasExplicitMod";
 		jc_localisation.localisations[NSW_localisation_EN] = "Explicit mode";
 		jc_localisation.localisations[NSW_localisation_RU] = "Префикс/суффикс";
 
@@ -381,8 +381,208 @@ EWindowMain::EWindowMain()
 		jc_filter_block_attribute->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS];
 
 		registered_filter_block_attributes.push_back(jc_filter_block_attribute);
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name								= "EnchantmentPassiveNode";
+		jc_localisation.localisations[NSW_localisation_EN]		= "Cluster passive";
+		jc_localisation.localisations[NSW_localisation_RU]		= "Пассивки кластера";
+
+		jc_filter_block_attribute								= new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation					= jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type		= FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type	= FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
+		jc_filter_block_attribute->have_operator				= false;
+
+		jc_filter_block_attribute->filter_rule					= EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_CLUSTER_PASSIVE];
+
+		registered_filter_block_attributes.push_back(jc_filter_block_attribute);
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name								= "HasInfluence";
+		jc_localisation.localisations[NSW_localisation_EN]		= "Influence";
+		jc_localisation.localisations[NSW_localisation_RU]		= "Влияние";
+
+		jc_filter_block_attribute								= new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation					= jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type		= FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type	= FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
+		jc_filter_block_attribute->have_operator				= false;
+
+		jc_filter_block_attribute->filter_rule					= EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_INFLUENCE];
+
+		registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	/*_____________________________________________________________________________________________________*/
 
+
+
+
+
+	/*____________________________________BOOLEAN SECTION___________________________________________________*/
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "AnyEnchantment";
+		jc_localisation.localisations[NSW_localisation_EN] = "Any enchantment";
+		jc_localisation.localisations[NSW_localisation_RU] = "Есть зачарование";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+		//jc_filter_block_attribute->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS];
+
+		registered_filter_block_attributes.push_back(jc_filter_block_attribute);
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "AlternateQuality";
+		jc_localisation.localisations[NSW_localisation_EN] = "Alternate quality";
+		jc_localisation.localisations[NSW_localisation_RU] = "Альтернативное качество";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "Replica";
+		jc_localisation.localisations[NSW_localisation_EN] = "Replica";
+		jc_localisation.localisations[NSW_localisation_RU] = "Реплика";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "Identified";
+		jc_localisation.localisations[NSW_localisation_EN] = "Identified";
+		jc_localisation.localisations[NSW_localisation_RU] = "Опознан";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "Corrupted";
+		jc_localisation.localisations[NSW_localisation_EN] = "Corrupted";
+		jc_localisation.localisations[NSW_localisation_RU] = "Осквернён";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "Mirrored";
+		jc_localisation.localisations[NSW_localisation_EN] = "Mirrored";
+		jc_localisation.localisations[NSW_localisation_RU] = "Отражён";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "ElderItem";
+		jc_localisation.localisations[NSW_localisation_EN] = "Elder item";
+		jc_localisation.localisations[NSW_localisation_RU] = "Предмет Древнего";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "ShaperItem";
+		jc_localisation.localisations[NSW_localisation_EN] = "Shaper item";
+		jc_localisation.localisations[NSW_localisation_RU] = "Предмет Создателя";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "FracturedItem";
+		jc_localisation.localisations[NSW_localisation_EN] = "Fractured item";
+		jc_localisation.localisations[NSW_localisation_RU] = "Расколотый предмет";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "SynthesisedItem";
+		jc_localisation.localisations[NSW_localisation_EN] = "Synthesised item";
+		jc_localisation.localisations[NSW_localisation_RU] = "Синтезированный предмет";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "ElderMap";
+		jc_localisation.localisations[NSW_localisation_EN] = "Elder map";
+		jc_localisation.localisations[NSW_localisation_RU] = "Карта Древнего";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "ShapedMap";
+		jc_localisation.localisations[NSW_localisation_EN] = "Shaped map";
+		jc_localisation.localisations[NSW_localisation_RU] = "Карта Создателя";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name = "BlightedMap";
+		jc_localisation.localisations[NSW_localisation_EN] = "Blighted map";
+		jc_localisation.localisations[NSW_localisation_RU] = "Карта скверны";
+
+		jc_filter_block_attribute = new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation = jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+		jc_filter_block_attribute->have_operator = false;
+
+		//jc_filter_block_attribute->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS];
+
+		registered_filter_block_attributes.push_back(jc_filter_block_attribute);
+	/*_____________________________________________________________________________________________________*/
 
 
 
@@ -400,6 +600,7 @@ EWindowMain::EWindowMain()
 	//gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
 
 	ETextParser::data_entity_parse_file("data/data_entity_list.txt");
+	ETextParser::data_read_explicit_file_and_generate_data_entity("data/explicits_list.txt");
 
 	//for (int j = 0; j < CLUSTER_DIM_X; j++)
 	//for (int i = 0; i < CLUSTER_DIM_Y; i++)
@@ -1128,7 +1329,7 @@ EWindowMain::EWindowMain()
 	if (true)
 	{
 		main_button_group = EButtonGroup::create_root_button_group
-		(new ERegionGabarite(900.0f, 100.0f, 0.0f, 900.0f, 600.0f), EGUIStyle::active_style);
+		(new ERegionGabarite(900.0f, 100.0f, 0.0f, 1200.0f, 600.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		EButtonGroup::data_entity_filter = main_button_group;
@@ -1154,6 +1355,7 @@ EWindowMain::EWindowMain()
 		jc_button_group->stretch_y_by_parent_size = true;
 		jc_data_container_for_search_group->pointer_to_group_with_data_entities = jc_button_group;
 		jc_button_group->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+		//jc_button_group->debug_translation = true;
 
 		unsigned int counter = 0;
 		for (EDataEntity* data_entity : EDataEntity::data_entity_list)
@@ -1161,7 +1363,7 @@ EWindowMain::EWindowMain()
 			
 			jc_button = EntityButton::create_wide_item_button
 			(
-				new ERegionGabarite(270.0f, 64.0f),
+				new ERegionGabarite(300.0f, 48.0f),
 				jc_button_group,
 				data_entity,
 				EFont::font_list[0]
@@ -1189,7 +1391,7 @@ EWindowMain::EWindowMain()
 		);
 		jc_data_container_for_search_group->pointer_to_search_bar = jc_button;
 
-		jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Chaos orb");
+		jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "");
 		jc_data_container_for_search_group->filter_text_area = jc_text_area;
 		jc_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_text);
 		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
@@ -1470,6 +1672,23 @@ EWindowMain::EWindowMain()
 		EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_force_resize_callback);
 		jc_button_group->button_list.push_back(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
+
+
+
+		// // // // // // //// // // // // // //// // // // // // //
+		jc_button = EntityButton::create_default_bool_switcher_button
+		(
+			new ERegionGabarite(22.0f, 22.0f),
+			jc_button_group,
+			EDataActionCollection::action_switch_boolean_value,
+			NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
+			NS_EGraphicCore::load_from_textures_folder("box_switcher_off")
+		);
+
+		jc_button_group->button_list.push_back(jc_button);
+		// // // // // // //// // // // // // //// // // // // // //
+
+
 
 		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
@@ -1765,6 +1984,16 @@ void EWindowMain::register_filter_rules()
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS] = jc_filter_rule;
+
+	//cluster passives
+	jc_filter_rule = new EFilterRule();
+	jc_filter = new DataEntityFilter();
+
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("cluster passive");
+
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_CLUSTER_PASSIVE] = jc_filter_rule;
 }
 
 EWindowMain::~EWindowMain()
@@ -1910,7 +2139,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 				NSW_dynamic_autosize,
 				NSW_static_autosize
 			);
-		non_listed_line->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+		non_listed_line->button_align_type = ButtonAlignType::BUTTON_ALIGN_LEFT;
 
 		//EInputCore::logger_simple_info("create fresh block");
 		FreshCreatedGroup* fresh_created_group = new FreshCreatedGroup();
@@ -1925,6 +2154,17 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 		//target_group_for_content->add_group(non_listed_line);
 		//non_listed_line->parent_group = target_group_for_content;
 
+		///////////////////////////////////////////////////////////////////////////////////////////////
+		jc_button = EntityButton::create_default_clickable_button_with_icon
+		(
+			new ERegionGabarite(button_height, button_height),
+			non_listed_line,
+			&EDataActionCollection::action_mark_parent_group_as_removed,
+			NS_EGraphicCore::load_from_textures_folder("button_close")
+		);
+		non_listed_line->button_list.push_back(jc_button);
+
+		///////////////////////////////////////////////////////////////////////////////////////////////
 		jc_button = EntityButton::create_default_clickable_button_with_unedible_text
 		(
 			new ERegionGabarite(160.0f, button_height),
@@ -1940,7 +2180,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 		{
 			jc_button = EntityButton::create_default_clickable_button_with_text
 			(
-				new ERegionGabarite(20.0f, button_height),
+				new ERegionGabarite(button_height, button_height),
 				non_listed_line,
 				nullptr,
 				"="
@@ -1960,58 +2200,71 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 		int rarity_id = rand() % 4;
 
 		std::string text = std::to_string(rand() % 100 + 1);
-		if (_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
+
+		switch (_filter_block_attribute->filter_attribute_value_type)
 		{
+			case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST:
+			{
+				text = temp_rarity[rarity_id];
 
-			text = temp_rarity[rarity_id];
+				jc_button = EntityButton::create_default_clickable_button_with_unedible_text
+				(
+					new ERegionGabarite(100.0f + input_field_additional_width, button_height),
+					non_listed_line,
+					&EDataActionCollection::action_open_rarity_selector,
+					text
+				);
 
-			jc_button = EntityButton::create_default_clickable_button_with_unedible_text
-			(
-				new ERegionGabarite(100.0f + input_field_additional_width, button_height),
-				non_listed_line,
-				&EDataActionCollection::action_open_rarity_selector,
-				text
-			);
+				EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(&rarity_color[rarity_id]);
+			
+				break;
+			}
+			
+			case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST:
+			{
+				text = "Аномальный";
 
-			EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(&rarity_color[rarity_id]);
+				jc_button = EntityButton::create_default_clickable_button_with_unedible_text
+				(
+					new ERegionGabarite(100.0f + input_field_additional_width, button_height),
+					non_listed_line,
+					&EDataActionCollection::action_open_quality_selector,
+					text
+				);
+
+				break;
+			}
+			
+			case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER:
+			{
+				jc_button = EntityButton::create_default_bool_switcher_button
+				(
+					new ERegionGabarite(22.0f, 22.0f),
+					non_listed_line,
+					EDataActionCollection::action_switch_boolean_value,
+					NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
+					NS_EGraphicCore::load_from_textures_folder("box_switcher_off")
+				);
+
+				break;
+			}
+
+			default:
+			{
+				jc_button = EntityButton::create_default_clickable_button_with_text
+				(
+					new ERegionGabarite(100.0f + input_field_additional_width, button_height),
+					non_listed_line,
+					nullptr,
+					text
+				);
+			}
 		}
-		else
-		if (_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
-		{
-			text = "Аномальный";
-
-			jc_button = EntityButton::create_default_clickable_button_with_unedible_text
-			(
-				new ERegionGabarite(100.0f + input_field_additional_width, button_height),
-				non_listed_line,
-				&EDataActionCollection::action_open_quality_selector,
-				text
-			);
-		}
-		else
-		{
-			jc_button = EntityButton::create_default_clickable_button_with_text
-			(
-				new ERegionGabarite(100.0f + input_field_additional_width, button_height),
-				non_listed_line,
-				nullptr,
-				text
-			);
-		}
-
 
 
 		non_listed_line->button_list.push_back(jc_button);
 
-		jc_button = EntityButton::create_default_clickable_button_with_icon
-		(
-			new ERegionGabarite(button_height, button_height),
-			non_listed_line,
-			&EDataActionCollection::action_mark_parent_group_as_removed,
-			NS_EGraphicCore::load_from_textures_folder("button_close")
-		);
 
-		non_listed_line->button_list.push_back(jc_button);
 		//EButtonGroup::change_group(target_group_for_content);
 
 		/*if (j == 0) { jc_region_gabarite = new ERegionGabarite(100.0f, 20.0f); }

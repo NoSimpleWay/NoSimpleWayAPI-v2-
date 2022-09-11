@@ -245,6 +245,16 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
+	static EntityButton* create_default_bool_switcher_button
+	(
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		data_action_pointer _dap,
+		ETextureGabarite* _gabarite_on,
+		ETextureGabarite* _gabarite_off
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
+
 	bool can_get_access_to_style();
 
 	//ECustomData* description_data;

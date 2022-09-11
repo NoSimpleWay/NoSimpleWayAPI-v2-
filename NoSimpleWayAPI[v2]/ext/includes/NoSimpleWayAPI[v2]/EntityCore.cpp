@@ -579,7 +579,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		(
 			_region_gabarite,
 			_parent_group,
-			nullptr
+			&EDataActionCollection::action_invoke_data_entity_group_action
 		);
 		EDataContainer_DataEntityHolder* data = new EDataContainer_DataEntityHolder();
 		data->stored_data_entity = _data_entity;
@@ -983,6 +983,28 @@ EntityButton* EntityButton::create_default_clickable_button_with_icon(ERegionGab
 	return jc_button;
 }
 
+EntityButton* EntityButton::create_default_bool_switcher_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite_on, ETextureGabarite* _gabarite_off)
+{
+	EntityButton* jc_button = EntityButton::create_default_clickable_button(_region_gabarite, _parent_group, _dap);
+
+	auto data_container = new EDataContainer_Button_BoolSwitcher();
+
+	data_container->target_value = new bool(false);
+	data_container->texture_gabarite_on = _gabarite_on;
+	data_container->texture_gabarite_off = _gabarite_off;
+
+
+
+	EntityButton::get_last_custom_data(jc_button)->data_container = data_container;
+	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.insert
+	(
+		EntityButton::get_last_custom_data(jc_button)->actions_on_draw.begin(),
+		&EDataActionCollection::action_draw_boolean_switcher
+	);
+
+	return jc_button;
+}
+
 bool EntityButton::can_get_access_to_style()
 {
 	return false;
@@ -1091,7 +1113,8 @@ EntityButton::~EntityButton()
 
 	if ((parent_button_group != nullptr) && (!parent_button_group->need_remove))
 	{
-		EButtonGroup::change_group(parent_button_group->root_group);
+		//EButtonGroup::change_group(parent_button_group->root_group);
+		EButtonGroup::change_group(parent_button_group->parent_group);
 	}
 }
 

@@ -313,7 +313,12 @@ void EButtonGroup::update(float _d)
 			else
 			if
 			(EClickableArea::active_clickable_region != nullptr)
-			{EInputCore::logger_simple_error("focused some clickable region");}
+			{
+				EInputCore::logger_simple_error("focused some clickable region");
+
+				EInputCore::logger_param("x", EClickableArea::active_clickable_region->region_gabarite->world_position_x);
+				EInputCore::logger_param("y", EClickableArea::active_clickable_region->region_gabarite->world_position_y);
+			}
 		}
 	}
 
@@ -1204,6 +1209,17 @@ void EButtonGroup::realign_all_buttons()
 
 	std::vector<EntityButton*> button_vector;
 
+	for (EntityButton* but : button_list)
+	for (ECustomData* cd : but->custom_data_list)
+	for (EClickableArea* c_area:cd->clickable_area_list)
+	{
+		*c_area->catched_body		= false;
+		*c_area->catched_side_down	= false;
+		*c_area->catched_side_up	= false;
+		*c_area->catched_side_left	= false;
+		*c_area->catched_side_right	= false;
+		*c_area->catched_side_mid	= false;
+	}
 
 	for (EntityButton* but : button_list)
 	if
@@ -1282,7 +1298,9 @@ void EButtonGroup::realign_all_buttons()
 		}
 
 
-		highest_point_y = max(highest_point_y, but->offset_y + but->button_gabarite->size_y + 0.0f);
+		highest_point_y	= max(highest_point_y, but->offset_y + but->button_gabarite->size_y + 0.0f);
+		//scroll_y		= min(scroll_y, highest_point_y);
+
 
 
 		prev_button = but;
@@ -1350,6 +1368,12 @@ void EButtonGroup::realign_all_buttons()
 
 		for (EButtonGroup* group : group_list) { group->parent_have_slider = true; }
 	}
+
+	//if (scroll_y - region_gabarite->size_y < -highest_point_y)
+	//{
+	//	scroll_y = -highest_point_y;
+	//	realign_all_buttons();
+	//}
 
 	for (EButtonGroup* group : group_list) { group->realign_all_buttons(); }
 }

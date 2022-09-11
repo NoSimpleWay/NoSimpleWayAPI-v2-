@@ -590,6 +590,8 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 	{
 		EDataContainer_Group_DataEntitiesSearch* data_container = (EDataContainer_Group_DataEntitiesSearch*)_text_area->get_root_group()->data_container;
 		
+		//EClickableArea::active_clickable_region = nullptr;
+
 		if
 		(
 			(data_container != nullptr)
@@ -599,9 +601,20 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 			(data_container->target_rule != nullptr)
 		)
 		{
+			data_container->pointer_to_group_with_data_entities->scroll_y = 0.0f;
+
 			for (EntityButton* but:data_container->pointer_to_group_with_data_entities->button_list)
 			if (but != data_container->pointer_to_group_with_data_entities->slider)
 			{
+
+				//for (ECustomData* cd:but->custom_data_list)
+				//for (EClickableArea* cl_area:cd->clickable_area_list)
+				//{
+				//	if (EClickableArea::active_clickable_region == cl_area)
+				//	{
+				//		EClickableArea::active_clickable_region = nullptr;
+				//	}
+				//}
 				//if (rand() % 2 == 0){*but->disable_draw = true;} else { *but->disable_draw = false; }
 				bool match = false;
 
@@ -774,6 +787,7 @@ std::vector<EFilterRule*> EFilterRule::registered_filter_rules(RegisteredFilterR
 
 void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	EInputCore::logger_simple_info("???");
 	EDataContainerStoreTargetGroup* button_data_container = ((EDataContainerStoreTargetGroup*)_custom_data->data_container);
 	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EButtonGroup::data_entity_filter->data_container;
 
@@ -930,14 +944,23 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 	EButtonGroup*								receiver			= data->pointer_to_group_item_receiver;
 	EDataContainer_DataEntityHolder*			data_entity_holder	= (EDataContainer_DataEntityHolder*)_custom_data->data_container;
 
+	EInputCore::logger_simple_info("!!!");
+
+	float temp_width = 300.0f;
+
+	//if (data->target_rule. )
 	EntityButton* jc_button = EntityButton::create_wide_item_button
 	(
-		new ERegionGabarite(200.0f, 40.0f),
+		new ERegionGabarite(temp_width, 40.0f),
 		receiver,
 		data_entity_holder->stored_data_entity,
 		EFont::font_list[0]
 	);
 
+	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+	{
+		root_group->is_active = false;
+	}
 	receiver->button_list.push_back(jc_button);
 	//receiver->button_list.clear();
 	EButtonGroup::change_group(receiver);
@@ -1171,6 +1194,46 @@ void EDataActionCollection::action_resize_to_full_window(EButtonGroup* _group)
 	//EButtonGroup::refresh_button_group(_group);
 }
 
+void EDataActionCollection::action_draw_boolean_switcher(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	auto data_container = static_cast <EDataContainer_Button_BoolSwitcher*> (_custom_data->data_container);
+
+	if (*data_container->target_value)
+	{
+		NS_EGraphicCore::set_active_color(1.0f, 1.0f, 1.0f, 1.0f);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			((EntityButton*)_entity)->button_gabarite->world_position_x,
+			((EntityButton*)_entity)->button_gabarite->world_position_y,
+
+			((EntityButton*)_entity)->button_gabarite->size_x,
+			((EntityButton*)_entity)->button_gabarite->size_y,
+
+			data_container->texture_gabarite_on
+		);
+	}
+	else
+	{
+		NS_EGraphicCore::set_active_color(1.0f, 1.0f, 1.0f, 1.0f);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			((EntityButton*)_entity)->button_gabarite->world_position_x,
+			((EntityButton*)_entity)->button_gabarite->world_position_y,
+
+			((EntityButton*)_entity)->button_gabarite->size_x,
+			((EntityButton*)_entity)->button_gabarite->size_y,
+
+			data_container->texture_gabarite_off
+		);
+	}
+}
+
 void EDataActionCollection::action_draw_color_rectangle_for_group(EButtonGroup* _group)
 {
 	if ((_group != nullptr) && (_group->data_container != nullptr))
@@ -1402,6 +1465,13 @@ void EDataActionCollection::action_set_button_group_as_active(Entity* _entity, E
 {
 	EDataContainer_Button_OpenButtonGroup* button_data = static_cast<EDataContainer_Button_OpenButtonGroup*>(_custom_data->data_container);
 	button_data->target_group->is_active = true;
+}
+
+void EDataActionCollection::action_switch_boolean_value(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	*(static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value)
+	=
+	!*(static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value);
 }
 
 
@@ -2462,8 +2532,11 @@ void ETextParser::data_entity_parse_file(std::string _file)
 						)
 					)
 			{
-				if ((raw_char == ']')) { EInputCore::logger_simple_error("** ] **"); }
-				if ((raw_char == '[')) { EInputCore::logger_simple_error("** [ **"); }
+				if (!raw_text_mode)
+				{
+					if ((raw_char == ']')) { EInputCore::logger_simple_error("** ] **"); }
+					if ((raw_char == '[')) { EInputCore::logger_simple_error("** [ **"); }
+				}
 
 
 				buffer_text += raw_char;
@@ -2622,6 +2695,68 @@ void ETextParser::data_entity_parse_file(std::string _file)
 	//	EInputCore::logger_simple_info("-------");
 	//}
 	//EInputCore::logger_simple_info("");
+}
+
+void ETextParser::data_read_explicit_file_and_generate_data_entity(std::string _file)
+{
+	std::ofstream writabro;
+	writabro.open("data_entity_for_explicits.txt");
+
+	std::ifstream file;
+	std::string str;
+
+	file.open(_file);
+
+	std::string	temp_string	= "";
+	char		target_sym	= 0;
+
+	std::string temp_array[256];
+	int temp_array_id = 0;
+
+	while (std::getline(file, str))
+	{
+		temp_array_id = 0;
+
+		for (int i = 0; i < str.length(); i++)
+		{
+			
+			target_sym = str[i];
+
+			if (target_sym != '\t')
+			{
+				temp_string += target_sym;
+			}
+			else
+			{
+				temp_array[temp_array_id] = temp_string;
+				temp_string = "";
+
+				temp_array_id++;
+			}
+		}
+
+		//for (int i = 0; i < temp_array_id; i++)
+		{
+			writabro << std::endl;
+			writabro << "ADD_NEW_DATA_ENTITY" << std::endl;
+			//writabro << std::endl;
+			writabro << "\t[tag]\"data type\"\t[value]\"Explicit\"" << std::endl;
+			writabro << std::endl;
+			writabro << "\t[tag]\"base name\"\t[value]\"" << temp_array[1] << "\"" << std::endl;
+			writabro << std::endl;
+			writabro << "\t[tag]\"name EN\"\t\t[value]\"[" << temp_array[1] << "]" << temp_array[3] << "\"" << std::endl;
+			writabro << "\t[tag]\"name RU\"\t\t[value]\"[" << temp_array[6] << "]" << temp_array[8] << "\"" << std::endl;
+			writabro << std::endl;
+			writabro << "\t[tag]\"icon path\"\t[value]\"Active\"" << std::endl;
+		}
+	}
+
+	file.close();
+
+	
+	
+	//for 
+	writabro.close();
 }
 
 void ETextParser::do_action(std::string _action_text, std::string _value)

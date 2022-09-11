@@ -151,6 +151,7 @@ int main()
 		//EInputCore::logger_param("non-pointer", std::chrono::duration_cast<std::chrono::nanoseconds>(finish - start).count() / 1'000'000.0f);
 		//EInputCore::logger_param("max texture_size", GL_MAX_TEXTURE_SIZE);
 		srand(time(nullptr));
+
 	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))
 	{
 		ESpriteLayer::data_copies_count = 0;
@@ -176,12 +177,13 @@ int main()
 		//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
 		NS_EGraphicCore::gl_set_blend_mode_default();
 		
-		if (!EInputCore::MOUSE_BUTTON_LEFT) { EButtonGroup::focused_button_group = nullptr; }
+		if (!EInputCore::MOUSE_BUTTON_LEFT) { EButtonGroup::focused_button_group = nullptr; EClickableArea::active_clickable_region = nullptr; }
 		if (EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
 		{
 			EButtonGroup::focused_button_group_with_slider = nullptr;
 		}
-		if (!EInputCore::MOUSE_BUTTON_LEFT) { EClickableArea::active_clickable_region = nullptr; }
+		
+		//if (!EInputCore::MOUSE_BUTTON_LEFT) { EClickableArea::active_clickable_region = nullptr; }
 		/*if (*EClickableArea::active_clickable_region->parent_entity->disable_draw)
 		{
 
