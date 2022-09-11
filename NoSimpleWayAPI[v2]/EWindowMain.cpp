@@ -1369,7 +1369,7 @@ EWindowMain::EWindowMain()
 				EFont::font_list[0]
 			);
 
-			jc_button->pointer_to_data_entity = data_entity;
+
 
 			
 			jc_button_group->button_list.push_back(jc_button);

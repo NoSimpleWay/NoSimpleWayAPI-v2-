@@ -581,13 +581,16 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 			_parent_group,
 			&EDataActionCollection::action_invoke_data_entity_group_action
 		);
-		EDataContainer_DataEntityHolder* data = new EDataContainer_DataEntityHolder();
-		data->stored_data_entity = _data_entity;
 
-		EntityButton::get_last_custom_data(jc_button)->data_container = data;
+		EDataContainer_DataEntityHolder* data_holder = new EDataContainer_DataEntityHolder();
+		data_holder->stored_data_entity = _data_entity;
+		EntityButton::get_last_custom_data(jc_button)->data_container = data_holder;
+		EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_invoke_data_entity_group_action);
+
+		jc_button->pointer_to_data_entity = _data_entity;
 
 		//delete action on right click
-		Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
+		//Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
 
 		//_parent_group->button_list.push_back(jc_button);
 
