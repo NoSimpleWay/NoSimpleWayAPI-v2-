@@ -276,37 +276,12 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			float new_value = *data_bar->value_pointer;
 			float diff = new_value - old_value;
 
-			//EInputCore::logger_param("HPy", *entity_button->parent_button_group->highest_point_y);
-			//EButtonGroup::refresh_button_group(entity_button->parent_button_group);
 			entity_button->parent_button_group->translate_content(0.0f, diff, 0.0f, false);
-			//for (EButtonGroup* group : entity_button->parent_button_group->group_list)
-			//{
-			//	group->translate(0.0f, diff, 0.0f, true);
-			//}
-
-			//for (EntityButton* button : entity_button->parent_button_group->button_list)
-			//if (button != entity_button)
-			//{
-			//	button->translate_entity(0.0f, diff, 0.0f, true);
-			//}
-
-			////EButtonGroup::calculate_culling_lines(entity_button->parent_button_group);
-
-			//for (EButtonGroup* group : entity_button->parent_button_group->group_list)
-			//{
-			//	//group->phantom_translate_if_need();
-
-			//}
-			//_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
 			
 			_entity->set_world_position(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
 			entity_button->generate_vertex_buffer_for_all_sprite_layers();
-			
-			//EButtonGroup::generate_vertex_buffer_for_group(entity_button->parent_button_group);
-			
-			//entity_button->parent_button_group->realign_all_buttons();
-			//entity_button->parent_button_group->align_groups();
-			//EButtonGroup::calculate_culling_lines(entity_button->parent_button_group);
+
+			//EInputCore::logger_param("scroll_y", *data_bar->value_pointer);
 		}
 	}
 	else
@@ -438,6 +413,8 @@ void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData
 void EDataActionCollection::action_delete_entity(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	_entity->need_remove = true;
+
+	EInputCore::logger_simple_info("try mark as removed");
 	//_entity->translate_entity(20.0f, 20.0f, 20.0f);
 	//((EWindowMain*)EWindow::window_list[0])->
 
@@ -1921,8 +1898,24 @@ void EClickableArea::update(float _d)
 		(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_RIGHT))
 	)
 	{
+		//EInputCore::logger_simple_info("DAP");
 		dap(parent_entity, parent_custom_data, _d);
 	}
+
+	if
+	(
+		(parent_entity != nullptr)
+		&&
+		(EButtonGroup::focused_button_group == ((EntityButton*)parent_entity)->parent_button_group)
+		&&
+		(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+		&&
+		(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_RIGHT))
+	)
+	{
+		EInputCore::logger_param("action on right click size", actions_on_right_click_list.size());
+	}
+
 
 	if (text_area != nullptr)
 	{
@@ -2700,7 +2693,7 @@ void ETextParser::data_entity_parse_file(std::string _file)
 void ETextParser::data_read_explicit_file_and_generate_data_entity(std::string _file)
 {
 	std::ofstream writabro;
-	writabro.open("data_entity_for_explicits.txt");
+	writabro.open("data_entity_for_enchantment.txt");
 
 	std::ifstream file;
 	std::string str;
@@ -2722,11 +2715,22 @@ void ETextParser::data_read_explicit_file_and_generate_data_entity(std::string _
 			
 			target_sym = str[i];
 
+			//end of line
+			if (i + 1 >= str.length())
+			{
+				temp_string += target_sym;
+
+				temp_array[temp_array_id] = temp_string;
+				temp_string = "";
+
+				temp_array_id++;
+			}
+			else//not separator, symbol
 			if (target_sym != '\t')
 			{
 				temp_string += target_sym;
 			}
-			else
+			else//separator
 			{
 				temp_array[temp_array_id] = temp_string;
 				temp_string = "";
@@ -2740,12 +2744,12 @@ void ETextParser::data_read_explicit_file_and_generate_data_entity(std::string _
 			writabro << std::endl;
 			writabro << "ADD_NEW_DATA_ENTITY" << std::endl;
 			//writabro << std::endl;
-			writabro << "\t[tag]\"data type\"\t[value]\"Explicit\"" << std::endl;
+			writabro << "\t[tag]\"data type\"\t[value]\"Enchantment\"" << std::endl;
 			writabro << std::endl;
-			writabro << "\t[tag]\"base name\"\t[value]\"" << temp_array[1] << "\"" << std::endl;
+			writabro << "\t[tag]\"base name\"\t[value]\"" << temp_array[0] << "\"" << std::endl;
 			writabro << std::endl;
-			writabro << "\t[tag]\"name EN\"\t\t[value]\"[" << temp_array[1] << "]" << temp_array[3] << "\"" << std::endl;
-			writabro << "\t[tag]\"name RU\"\t\t[value]\"[" << temp_array[6] << "]" << temp_array[8] << "\"" << std::endl;
+			writabro << "\t[tag]\"name EN\"\t\t[value]\"[" << temp_array[1] << "]" << temp_array[2] << "\"" << std::endl;
+			writabro << "\t[tag]\"name RU\"\t\t[value]\"[" << temp_array[4] << "]" << temp_array[5] << "\"" << std::endl;
 			writabro << std::endl;
 			writabro << "\t[tag]\"icon path\"\t[value]\"Active\"" << std::endl;
 		}

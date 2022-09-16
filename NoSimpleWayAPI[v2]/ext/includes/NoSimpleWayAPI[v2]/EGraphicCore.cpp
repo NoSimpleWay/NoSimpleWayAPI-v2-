@@ -819,8 +819,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 	EFont* new_font = NULL;
 	ETextureGabarite* font_gabarite = nullptr;
 
-	font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/franklin_0.png", NS_EGraphicCore::default_texture_atlas);
-	new_font = new EFont("franklin", font_gabarite, NS_EGraphicCore::default_texture_atlas, false);
+	font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/palatino_0.png", NS_EGraphicCore::default_texture_atlas);
+	new_font = new EFont("palatino", font_gabarite, NS_EGraphicCore::default_texture_atlas, false);
 	EFont::font_list.push_back(new_font);
 
 	font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/bahn_0.png", NS_EGraphicCore::default_texture_atlas);

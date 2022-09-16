@@ -590,7 +590,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		jc_button->pointer_to_data_entity = _data_entity;
 
 		//delete action on right click
-		//Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
+		Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
 
 		//_parent_group->button_list.push_back(jc_button);
 
@@ -1118,6 +1118,7 @@ EntityButton::~EntityButton()
 	{
 		//EButtonGroup::change_group(parent_button_group->root_group);
 		EButtonGroup::change_group(parent_button_group->parent_group);
+		parent_button_group->refresh_buttons_in_group();
 	}
 }
 

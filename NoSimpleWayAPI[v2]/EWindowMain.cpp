@@ -413,6 +413,22 @@ EWindowMain::EWindowMain()
 		jc_filter_block_attribute->filter_rule					= EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_INFLUENCE];
 
 		registered_filter_block_attributes.push_back(jc_filter_block_attribute);
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_localisation.base_name								= "HasEnchantment";
+		jc_localisation.localisations[NSW_localisation_EN]		= "Enchantment";
+		jc_localisation.localisations[NSW_localisation_RU]		= "Зачарование";
+
+		jc_filter_block_attribute								= new FilterBlockAttribute();
+		jc_filter_block_attribute->localisation					= jc_localisation;
+		jc_filter_block_attribute->filter_attribute_type		= FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
+		jc_filter_block_attribute->filter_attribute_value_type	= FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
+		jc_filter_block_attribute->have_operator				= false;
+
+		jc_filter_block_attribute->filter_rule					= EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT];
+
+		registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	/*_____________________________________________________________________________________________________*/
 
 
@@ -600,7 +616,7 @@ EWindowMain::EWindowMain()
 	//gudron = NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
 
 	ETextParser::data_entity_parse_file("data/data_entity_list.txt");
-	ETextParser::data_read_explicit_file_and_generate_data_entity("data/explicits_list.txt");
+	ETextParser::data_read_explicit_file_and_generate_data_entity("data/Enchantmets list.txt");
 
 	//for (int j = 0; j < CLUSTER_DIM_X; j++)
 	//for (int i = 0; i < CLUSTER_DIM_Y; i++)
@@ -781,7 +797,7 @@ EWindowMain::EWindowMain()
 			{//new group
 				EButtonGroup* non_list_condition_group = EButtonGroup::create_default_button_group
 				(
-					new ERegionGabarite(340.0f, 160.0f),
+					new ERegionGabarite(420.0f, 160.0f),
 					EGUIStyle::active_style
 				);
 				
@@ -1994,6 +2010,16 @@ void EWindowMain::register_filter_rules()
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_CLUSTER_PASSIVE] = jc_filter_rule;
+
+	//enchantments from lab
+	jc_filter_rule = new EFilterRule();
+	jc_filter = new DataEntityFilter();
+
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("enchantment");
+
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT] = jc_filter_rule;
 }
 
 EWindowMain::~EWindowMain()
@@ -2167,7 +2193,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 		///////////////////////////////////////////////////////////////////////////////////////////////
 		jc_button = EntityButton::create_default_clickable_button_with_unedible_text
 		(
-			new ERegionGabarite(160.0f, button_height),
+			new ERegionGabarite(200.0f, button_height),
 			non_listed_line,
 			nullptr,
 			_filter_block_attribute->localisation.localisations[0]
@@ -2180,7 +2206,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 		{
 			jc_button = EntityButton::create_default_clickable_button_with_text
 			(
-				new ERegionGabarite(button_height, button_height),
+				new ERegionGabarite(button_height * 2.0f, button_height),
 				non_listed_line,
 				nullptr,
 				"="
@@ -2191,7 +2217,7 @@ void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_filter_block, 
 		}
 		else
 		{
-			input_field_additional_width = 20.0f + DISTANCE_BETWEEN_BUTTONS;
+			input_field_additional_width = button_height * 2.0f + DISTANCE_BETWEEN_BUTTONS;
 		}
 
 		srand(std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count());

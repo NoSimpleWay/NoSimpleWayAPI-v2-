@@ -237,6 +237,8 @@ void EButtonGroup::update(float _d)
 
 	if (can_see_this_group())
 	{
+
+		//need remove button
 		if (!button_list.empty())
 		for (unsigned int i = 0; i < button_list.size(); i++)
 		if (button_list[i]->need_remove)
@@ -245,6 +247,10 @@ void EButtonGroup::update(float _d)
 			button_list.erase(button_list.begin() + i);
 			delete but;
 			i--;
+
+			//change_group(this);
+
+			//refresh_buttons_in_group();
 		}
 
 		{
@@ -1198,11 +1204,36 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 	EButtonGroup::calculate_culling_lines(_group);
 	_group->realign_all_buttons();
 
+	//prevert empty space
+	//if (_group->scroll_y < -(_group->highest_point_y_for_buttons - _group->region_gabarite->size_y))
+	//{
+	//	_group->scroll_y = 0.0f;
+	//	//_group->realign_all_buttons();
+	//}
+
 	EButtonGroup::generate_vertex_buffer_for_group(_group);
+}
+
+void EButtonGroup::refresh_buttons_in_group()
+{
+	
+
+	//prevert empty space
+	if (scroll_y < -(highest_point_y_for_buttons - region_gabarite->size_y))
+	{
+		scroll_y = -(highest_point_y_for_buttons - region_gabarite->size_y);
+		realign_all_buttons();
+	}
+
+	
+
+	EButtonGroup::generate_vertex_buffer_for_group(this);
 }
 
 void EButtonGroup::realign_all_buttons()
 {
+	highest_point_y_for_buttons = 0.0f;
+
 	EntityButton* prev_button = nullptr;
 
 	float slider_additional = 0.0f;
@@ -1297,8 +1328,11 @@ void EButtonGroup::realign_all_buttons()
 			new_lined = false;
 		}
 
-
-		highest_point_y	= max(highest_point_y, but->offset_y + but->button_gabarite->size_y + 0.0f);
+		if (!but->fixed_position)
+		{
+			highest_point_y_for_buttons = max(highest_point_y_for_buttons, but->offset_y + but->button_gabarite->size_y + 0.0f);
+		}
+		
 		//scroll_y		= min(scroll_y, highest_point_y);
 
 
@@ -1317,10 +1351,9 @@ void EButtonGroup::realign_all_buttons()
 			button_vector.push_back(prev_button);
 			align_button_in_gabarite(button_vector, slider_additional);
 		}
-
-		
 	}
 
+	highest_point_y = max(highest_point_y, highest_point_y_for_buttons);
 
 	//if (!button_vector.empty())
 	//{
@@ -1369,11 +1402,7 @@ void EButtonGroup::realign_all_buttons()
 		for (EButtonGroup* group : group_list) { group->parent_have_slider = true; }
 	}
 
-	//if (scroll_y - region_gabarite->size_y < -highest_point_y)
-	//{
-	//	scroll_y = -highest_point_y;
-	//	realign_all_buttons();
-	//}
+	//float current_scroll = region_gabarite->size_y - scroll_y;
 
 	for (EButtonGroup* group : group_list) { group->realign_all_buttons(); }
 }
