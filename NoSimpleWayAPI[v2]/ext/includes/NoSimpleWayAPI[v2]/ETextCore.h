@@ -187,8 +187,10 @@ public:
 
 	bool* translate_region_gabarite = new bool(false);
 
+	void change_text(std::string _text);
 	void generate_rows();
 	void generate_text();
+
 	void set_font(EFont* _font);
 	float get_row_width(std::string* _row);
 
@@ -243,7 +245,7 @@ public:
 	static ETextArea* create_centered_to_right_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
 	static ETextArea* create_centered_to_left_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
 
-	void change_text(std::string _text);
+	
 
 	bool can_get_access_to_group_style();
 

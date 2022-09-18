@@ -366,21 +366,15 @@ void ETextArea::generate_rows()
 		sym = (*stored_text)[i];
 
 		std::string z;
-		if (i + 1 < data_length)//can read next symbol
+		if (i < data_length)//can read next symbol
 		{
-			next_sym = (*stored_text)[i + 1];
-
-
-
-			//EInputCore::logger_simple_success("-=-=-=-=-=-=-");
-			z = sym;
-			//EInputCore::logger_param("current sym", z);
-
-			z = next_sym;
-			//EInputCore::logger_param("next sym", z);
+			if (i + 1 < data_length)
+			{next_sym = (*stored_text)[i + 1];}
+			else
+			{next_sym = 0;}
 
 			//new line
-			if ((sym == '\\') && (next_sym == 'n'))
+			if((sym == '\\') && (next_sym == 'n'))
 			{
 				stop_writing = true;
 
@@ -388,6 +382,14 @@ void ETextArea::generate_rows()
 				temp_s = "";
 
 				i++;
+			}
+			else
+			if(sym == '\n')
+			{
+				stop_writing = true;
+
+				row.push_back(new std::string(temp_s));
+				temp_s = "";
 			}
 		}
 		else//end of text
@@ -600,7 +602,15 @@ void ETextArea::generate_text()
 			//*temp_glyph->is_first_symbol = true;
 
 			row_id++;
-			id_for_stored_text_sym += 2;
+
+			if ((*stored_text)[id_for_stored_text_sym] == '\n')
+			{
+				id_for_stored_text_sym += 1;
+			}
+			else
+			{
+				id_for_stored_text_sym += 2;
+			}
 
 			//EInputCore::logger_param("last buffer id", *sprite_layer->last_buffer_id);
 
@@ -715,8 +725,8 @@ void ETextArea::update(float _d)
 				||
 				(EClickableArea::active_clickable_region == parent_clickable_region)
 			)
-			&&
-			(NS_FONT_UTILS::active_text_area == nullptr)
+			//&&
+			//(NS_FONT_UTILS::active_text_area == nullptr)
 		)
 		{text_area_set_active_and_select_glyph();}
 	}
@@ -821,7 +831,7 @@ void ETextArea::update(float _d)
 					)
 				)
 		{
-			(*selected_glyph_position) -= 2;
+			(*selected_glyph_position) -= 1;
 		}
 
 		for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) { dap(this); }
@@ -835,11 +845,44 @@ void ETextArea::update(float _d)
 			(*text_area_active)
 		)
 	{
-		//*selected_glyph_position = -1;
-		*text_area_active = false;
+		if
+		(
+			(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+			||
+			(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
+		)
+		{
+			int target_id = font_glyph_list.at(min(*selected_glyph_position, font_glyph_list.size() - 1))->storer_text_sym_id + 0;
+			//if (!*selected_left_side) { target_id++;}
 
-		NS_FONT_UTILS::active_text_area = nullptr;
-		//EClickableArea::active_clickable_region = nullptr;
+			std::string temp_s(1, '\n');
+			//EInputCore::logger_param("last inputed char", temp_s);
+
+			//std::cout << EInputCore::LAST_INPUTED_CHAR << std::endl;
+			if (*selected_glyph_position >= 0)
+			{
+				stored_text->insert(target_id, temp_s);
+				//*stored_text = "1234567";
+				(*selected_glyph_position)++;
+			}
+			else
+			{
+				*stored_text = temp_s;
+				//*selected_left_side = false;
+				*selected_glyph_position = 0;
+			}
+
+			generate_rows();
+			generate_text();
+		}
+		else
+		{
+			//*selected_glyph_position = -1;
+			*text_area_active = false;
+
+			NS_FONT_UTILS::active_text_area = nullptr;
+			//EClickableArea::active_clickable_region = nullptr;
+		}
 	}
 
 	if
@@ -875,7 +918,7 @@ void ETextArea::update(float _d)
 			//std::string ss(target_glyph->sym, 1);
 			//EInputCore::logger_param("IS EMPTY", *font_glyph_list.at(target_glyph_id - 1)->is_empty);
 
-			if ((target_glyph_id - 1 >= 0) && (font_glyph_list.at(target_glyph_id - 1)->is_empty)) { (*selected_glyph_position) += 1; }
+			//if ((target_glyph_id - 1 >= 0) && (font_glyph_list.at(target_glyph_id - 1)->is_empty)) { (*selected_glyph_position) += 1; }
 			(*selected_glyph_position) -= 1;
 
 			change_text(*stored_text);
@@ -917,22 +960,10 @@ void ETextArea::update(float _d)
 		*flash_line_cooldown = 0.5f;
 		*flash_line_active = true;
 
-		if (font_glyph_list.at(*selected_glyph_position)->is_first_symbol)
-		{
-			//if (!(*selected_left_side)) { *selected_left_side = true; }
-			//else
-			{
-				if (*selected_glyph_position > 0)
-				{
-					//*selected_left_side = false;
-					*selected_glyph_position = max(*selected_glyph_position - 1, 0);
-				}
-			}
-		}
-		else
-		{
-			*selected_glyph_position = max(*selected_glyph_position - 1, 0);
-		}
+
+		//*selected_left_side = false;
+		*selected_glyph_position = max(*selected_glyph_position - 1, 0);
+
 	}
 
 	if
@@ -957,23 +988,9 @@ void ETextArea::update(float _d)
 		*flash_line_cooldown = 0.5f;
 		*flash_line_active = true;
 
-		if (font_glyph_list.at(*selected_glyph_position)->is_last_symbol)
-		{
-			//if (*selected_left_side) { *selected_left_side = false; }
-			//else
-			{
-				if (*selected_glyph_position < font_glyph_list.size() - 1)
-				{
-					//*selected_left_side = true;
-					*selected_glyph_position = min(*selected_glyph_position + 1, font_glyph_list.size() - 1);
-				}
-			}
 
-		}
-		else
-		{
-			*selected_glyph_position = min(*selected_glyph_position + 1, font_glyph_list.size() - 1);
-		}
+		*selected_glyph_position = min(*selected_glyph_position + 1, font_glyph_list.size() - 1);
+
 	}
 
 	*jump_cooldown -= _d;
