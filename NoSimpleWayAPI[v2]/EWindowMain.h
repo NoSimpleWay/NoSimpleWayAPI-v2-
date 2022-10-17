@@ -37,8 +37,20 @@ public:
 	EntityButton* target_button;
 };
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
+class EDataContainer_Button_StoreParentFilterBlock : public EDataContainer
+{
+public:
+	EButtonGroup* parent_filter_block;
+};
+//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
 
 
+class EntityButtonFilterBlock : public EntityButton
+{
+public:
+	EButtonGroup* parent_filter_block;
+
+};
 namespace EDataActionCollection
 {
 	void action_open_add_content_window					(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -51,6 +63,8 @@ namespace EDataActionCollection
 	void action_select_this_text_variant				(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_mark_parent_group_as_removed			(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_generate_filter_block_text				(Entity* _entity, ECustomData* _custom_data, float _d);
 }
 
 enum FilterAttributeType
@@ -82,8 +96,8 @@ public:
 	ELocalisationText			localisation;
 };
 
-static void add_non_listed_buttons_to_filter_block(EButtonGroup* _target_group, FilterBlockAttribute* _filter_block_attribute);
-
+static void add_filter_block_buttons_to_filter_block	(EButtonGroup* _target_group, FilterBlockAttribute* _filter_block_attribute);
+static std::string generate_filter_block_text				(EButtonGroup* _button_group);
 
 
 static std::vector<FilterBlockAttribute*> registered_filter_block_attributes;

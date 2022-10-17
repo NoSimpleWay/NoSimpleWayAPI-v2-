@@ -415,9 +415,11 @@ public:
 class EDataContainer_Group_FilterBlockNonListedSegment : public EDataContainer
 {
 public:
-	EntityButton* target_button_with_attribute_name;
-	EntityButton* target_button_with_condition;
-	EntityButton* target_button_with_value;
+	EntityButton*			 target_button_with_attribute_name;
+	EntityButton*			 target_button_with_condition;
+	EntityButton*			 target_button_with_value;
+
+	FilterBlockAttribute*	target_filter_block_attribute;
 };
 
 

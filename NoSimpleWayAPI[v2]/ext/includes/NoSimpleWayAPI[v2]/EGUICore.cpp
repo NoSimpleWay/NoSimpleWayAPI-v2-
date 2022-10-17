@@ -1288,7 +1288,7 @@ void EButtonGroup::realign_all_buttons()
 			if (but->offset_x + but->button_gabarite->size_x + slider_additional >= region_gabarite->size_x)
 			{
 				but->offset_x = but->parent_button_group->border_left;
-				but->offset_y += but->button_gabarite->size_y + DISTANCE_BETWEEN_BUTTONS;
+				but->offset_y += prev_button->button_gabarite->size_y + DISTANCE_BETWEEN_BUTTONS;
 
 				new_lined = true;
 				

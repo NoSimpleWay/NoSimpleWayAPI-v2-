@@ -602,7 +602,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	GLint max_tex_size;
 	glGetIntegerv(GL_MAX_TEXTURE_SIZE, &max_tex_size);
 
-	NS_EGraphicCore::default_texture_atlas = new ETextureAtlas(min(max_tex_size,8192), min(8192, max_tex_size));
+	NS_EGraphicCore::default_texture_atlas = new ETextureAtlas(min(max_tex_size,8192), min(8192 / 2, max_tex_size));
 	NS_EGraphicCore::load_texture("data/textures/white_pixel.png", 0);
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::texture[0]);
