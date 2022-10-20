@@ -82,6 +82,7 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY,
 	FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST,
 	FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER,
+	FILTER_ATTRIBUTE_VALUE_TYPE_COLOR
 };
 
 class FilterBlockAttribute
@@ -94,6 +95,10 @@ public:
 	bool have_operator = false;
 
 	ELocalisationText			localisation;
+
+	//std::string					data_entity_tag_filtration;
+
+	bool						always_present;
 };
 
 static void add_filter_block_buttons_to_filter_block	(EButtonGroup* _target_group, FilterBlockAttribute* _filter_block_attribute);
@@ -101,6 +106,7 @@ static std::string generate_filter_block_text				(EButtonGroup* _button_group);
 
 
 static std::vector<FilterBlockAttribute*> registered_filter_block_attributes;
+static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::string _attribute_name, EButtonGroup* _parent);
 
 class EWindowMain : public EWindow
 {

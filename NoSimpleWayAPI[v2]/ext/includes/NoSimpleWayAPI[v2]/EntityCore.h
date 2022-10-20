@@ -251,7 +251,8 @@ public:
 		EButtonGroup* _parent_group,
 		data_action_pointer _dap,
 		ETextureGabarite* _gabarite_on,
-		ETextureGabarite* _gabarite_off
+		ETextureGabarite* _gabarite_off,
+		bool* _target_bool = nullptr
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 

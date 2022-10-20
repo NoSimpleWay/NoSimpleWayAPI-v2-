@@ -375,7 +375,7 @@ public:
 
 
 
-class EDataContainerStoreTargetGroup : public EDataContainer
+class EDataContainer_Group_StoreFilterRuleForDataEntitySearcher : public EDataContainer
 {
 public:
 	EButtonGroup* target_group;
@@ -407,9 +407,20 @@ public:
 class EDataContainer_Group_WholeFilterBlock : public EDataContainer
 {
 public:
-	EButtonGroup* pointer_to_non_listed_segment;
-	EButtonGroup* pointer_to_listed_segment;
-	EButtonGroup* pointer_to_cosmetic_segment;
+	EButtonGroup*	pointer_to_non_listed_segment;
+	EButtonGroup*	pointer_to_listed_segment;
+	EButtonGroup*	pointer_to_cosmetic_segment;
+
+
+	//color section
+	EntityButton*	pointer_to_bg_color;
+	bool			bg_color_enabled = true;
+
+	EntityButton*	pointer_to_text_color;
+	bool			text_color_enabled = true;
+
+	EntityButton*	pointer_to_rama_color;
+	bool			rama_color_enabled = true;
 };
 
 class EDataContainer_Group_FilterBlockNonListedSegment : public EDataContainer
@@ -420,6 +431,14 @@ public:
 	EntityButton*			 target_button_with_value;
 
 	FilterBlockAttribute*	target_filter_block_attribute;
+};
+
+class EDataContainer_Group_FilterBlockListedSegment : public EDataContainer
+{
+public:
+	EButtonGroup*			group_with_listed_buttons;
+
+	std::string				filter_attribute_name;
 };
 
 

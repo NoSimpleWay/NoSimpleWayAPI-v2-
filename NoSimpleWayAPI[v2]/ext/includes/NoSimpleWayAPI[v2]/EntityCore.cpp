@@ -585,7 +585,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		EDataContainer_DataEntityHolder* data_holder = new EDataContainer_DataEntityHolder();
 		data_holder->stored_data_entity = _data_entity;
 		EntityButton::get_last_custom_data(jc_button)->data_container = data_holder;
-		EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_invoke_data_entity_group_action);
+		//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_invoke_data_entity_group_action);
 
 		jc_button->pointer_to_data_entity = _data_entity;
 
@@ -634,6 +634,12 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y;
 
 		jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+
+		//////localistation//////
+			jc_text_area->localisation_text.base_name							= DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+			jc_text_area->localisation_text.localisations[NSW_localisation_EN]	= DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+			jc_text_area->localisation_text.localisations[NSW_localisation_RU]	= DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
+		////////////////////////
 
 		*jc_text_area->can_be_edited = false;
 		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
@@ -986,15 +992,26 @@ EntityButton* EntityButton::create_default_clickable_button_with_icon(ERegionGab
 	return jc_button;
 }
 
-EntityButton* EntityButton::create_default_bool_switcher_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite_on, ETextureGabarite* _gabarite_off)
+EntityButton* EntityButton::create_default_bool_switcher_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite_on, ETextureGabarite* _gabarite_off, bool* _target_bool)
 {
 	EntityButton* jc_button = EntityButton::create_default_clickable_button(_region_gabarite, _parent_group, _dap);
 
 	auto data_container = new EDataContainer_Button_BoolSwitcher();
 
-	data_container->target_value = new bool(false);
+	
 	data_container->texture_gabarite_on = _gabarite_on;
 	data_container->texture_gabarite_off = _gabarite_off;
+
+	if (_target_bool != nullptr)
+	{
+		data_container->target_value = _target_bool;
+	}
+	else
+	{
+		EInputCore::logger_simple_error("Target bool is NULL, generate new bool!");
+		data_container->target_value = new bool(false);
+	}
+
 
 
 

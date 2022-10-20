@@ -765,7 +765,7 @@ std::vector<EFilterRule*> EFilterRule::registered_filter_rules(RegisteredFilterR
 void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EInputCore::logger_simple_info("???");
-	EDataContainerStoreTargetGroup* button_data_container = ((EDataContainerStoreTargetGroup*)_custom_data->data_container);
+	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* button_data_container = ((EDataContainer_Group_StoreFilterRuleForDataEntitySearcher*)_custom_data->data_container);
 	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EButtonGroup::data_entity_filter->data_container;
 
 	EButtonGroup::data_entity_filter->is_active = true;
@@ -922,6 +922,7 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 	EDataContainer_DataEntityHolder*			data_entity_holder	= (EDataContainer_DataEntityHolder*)_custom_data->data_container;
 
 	EInputCore::logger_simple_info("!!!");
+	//EInputCore::logger_simple_info(std::to_string(_entity->custom_data_list[0]->ac));
 
 	float temp_width = 300.0f;
 
@@ -938,6 +939,7 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 	{
 		root_group->is_active = false;
 	}
+
 	receiver->button_list.push_back(jc_button);
 	//receiver->button_list.clear();
 	EButtonGroup::change_group(receiver);
@@ -1174,6 +1176,7 @@ void EDataActionCollection::action_resize_to_full_window(EButtonGroup* _group)
 void EDataActionCollection::action_draw_boolean_switcher(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	auto data_container = static_cast <EDataContainer_Button_BoolSwitcher*> (_custom_data->data_container);
+
 
 	if (*data_container->target_value)
 	{
@@ -1425,6 +1428,7 @@ void EDataActionCollection::action_force_resize_callback(Entity* _entity, ECusto
 
 void EDataActionCollection::action_invoke_data_entity_group_action(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	EInputCore::logger_simple_info("wtf");
 	if
 	(
 		(static_cast<EntityButton*>(_entity)->parent_button_group != nullptr)
@@ -1446,9 +1450,12 @@ void EDataActionCollection::action_set_button_group_as_active(Entity* _entity, E
 
 void EDataActionCollection::action_switch_boolean_value(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	*(static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value)
-	=
-	!*(static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value);
+	if (static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value != nullptr)
+	{
+		*(static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value)
+		=
+		!*(static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value);
+	}
 }
 
 
