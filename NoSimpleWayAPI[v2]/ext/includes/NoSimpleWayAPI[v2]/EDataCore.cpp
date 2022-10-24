@@ -584,29 +584,17 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 			if (but != data_container->pointer_to_group_with_data_entities->slider)
 			{
 
-				//for (ECustomData* cd:but->custom_data_list)
-				//for (EClickableArea* cl_area:cd->clickable_area_list)
-				//{
-				//	if (EClickableArea::active_clickable_region == cl_area)
-				//	{
-				//		EClickableArea::active_clickable_region = nullptr;
-				//	}
-				//}
-				//if (rand() % 2 == 0){*but->disable_draw = true;} else { *but->disable_draw = false; }
-				bool match = false;
+				bool matched_by_input = false;
 
-
-
-				//EDataContainerEntityDataHolder* data_holder = (EDataContainerEntityDataHolder*)but->custom_data_list[0]->data_container;
 				EDataEntity* target_data_entity = but->pointer_to_data_entity;
-				std::string value = "";
+				std::string tag_value = "";
 				std::string search_text = EStringUtils::to_lower(*_text_area->stored_text);
 
 				bool tag_search_mode	= false;
 				bool cost_search_mode	= false;
 
 
-
+				//search by tags
 				if ((search_text.length() > 0) && (search_text[0] == '*'))
 				{
 					tag_search_mode = true;
@@ -614,6 +602,7 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 					search_text = search_text.substr(1);
 				}
 
+				//search by cost
 				if ((search_text.length() > 0) && (search_text[0] == '$'))
 				{
 					cost_search_mode = true;
@@ -621,48 +610,50 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 					search_text = search_text.substr(1);
 				}
 
-				//EInputCore::logger_param("size of tag list", target_data_entity->tag_list.size());
+				bool required_tag_match = true;
 
-				bool tag_require_match = true;
-				for (EDataTag* tag: target_data_entity->tag_list)
+				//for every data entity tag
+				for (EDataTag* data_entity_tag: target_data_entity->tag_list)
 				{
-					value = EStringUtils::to_lower (*tag->tag_value_list[0]);
+					//tag value
+					tag_value = EStringUtils::to_lower (*data_entity_tag->tag_value_list[0]);
 
-					
-					//if (data_container->required_tag_list.empty()) { tag_require_match = true; }
-					for (DataEntityFilter* filter : data_container->target_rule->required_tag_list)
-					{
-						if ((tag_require_match) && (filter->target_tag_name == *tag->tag_name) && (!filter->suitable_values_list.empty()))
+					for (DataEntityFilter* required_tag_filter : data_container->target_rule->required_tag_list)
+					{	
+						//find required tag
+						if ((required_tag_match) && (required_tag_filter->target_tag_name == *data_entity_tag->tag_name) && (!required_tag_filter->suitable_values_list.empty()))
 						{
 							//potentially fail match
-							tag_require_match = false;
+							required_tag_match = false;
 
-							for (std::string str : filter->suitable_values_list)
+							//one of suitable list
+							for (std::string suitable_str : required_tag_filter->suitable_values_list)
 							{
-								if ((str == "") || (str == value)) { tag_require_match = true; }
+								if ((suitable_str == "") || (EStringUtils::to_lower(suitable_str) == tag_value))
+								{ required_tag_match = true; }//have at least 1 match from suitable list
 							}
 						}
 					}
 
 					if (tag_search_mode)
 					{
-						if ((*tag->tag_name == "item tag") && (value.find(search_text) != std::string::npos)) { match = true; }
+						if ((*data_entity_tag->tag_name == "item tag") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
 					}
 					else
 					if (cost_search_mode)
 					{
-						if ((*tag->tag_name == "worth") && (value.find(search_text) != std::string::npos)) { match = true; }
+						if ((*data_entity_tag->tag_name == "worth") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
 					}
 					else
 					{
-						if ((*tag->tag_name == "name EN") && (value.find(search_text) != std::string::npos)) { match = true; }
-						if ((*tag->tag_name == "name RU") && (value.find(search_text) != std::string::npos)) { match = true; }
+						if ((*data_entity_tag->tag_name == "name EN") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+						if ((*data_entity_tag->tag_name == "name RU") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
 					}
 
 					//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
 				}
 				//tag_require_match = false;
-				if ((match) && (tag_require_match)) { but->disabled = false; }
+				if ((matched_by_input) && (required_tag_match)) { but->disabled = false; }
 				else { but->disabled = true; }
 
 			}
@@ -702,9 +693,9 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 
 	
 
-	for (EButtonGroup*		bg			:multisearch_data_container->target_group_list)
-	for (EntityButton*		but			:bg->button_list)
-	if (but != bg->slider)
+	for (EButtonGroup*		button_group	:multisearch_data_container->target_group_list)
+	for (EntityButton*		but				:button_group->button_list)
+	if (but != button_group->slider)
 	{
 		match = false;
 
@@ -754,13 +745,14 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 			} 
 		}
 
-		bg->scroll_y = 0.0f;
-		EButtonGroup::change_group(bg);
+		button_group->scroll_y = 0.0f;
+		EButtonGroup::change_group(button_group);
 	}
 }
 
 
-std::vector<EFilterRule*> EFilterRule::registered_filter_rules(RegisteredFilterRules::_RDEF_LAST_ELEMENT_);
+std::vector<EFilterRule*> EFilterRule::registered_global_filter_rules(RegisteredFilterRules::_RDEF_LAST_ELEMENT_);
+std::vector<EFilterRule*> EFilterRule::registered_filter_rules_for_list;
 
 void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {

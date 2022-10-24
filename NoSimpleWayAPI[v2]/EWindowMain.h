@@ -49,8 +49,15 @@ class EntityButtonFilterBlock : public EntityButton
 {
 public:
 	EButtonGroup* parent_filter_block;
-
 };
+
+class EntityButtonFilterRule : public EntityButton
+{
+public:
+	EFilterRule*								target_filter_rule;
+	EDataContainer_Group_DataEntitiesSearch*	target_data_container;
+};
+
 namespace EDataActionCollection
 {
 	void action_open_add_content_window					(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -65,6 +72,8 @@ namespace EDataActionCollection
 	void action_mark_parent_group_as_removed			(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_generate_filter_block_text				(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_select_this_filter_variant				(Entity* _entity, ECustomData* _custom_data, float _d);
 }
 
 enum FilterAttributeType

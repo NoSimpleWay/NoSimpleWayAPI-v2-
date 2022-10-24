@@ -7283,7 +7283,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-
+	
+	[tag]"worth"		[value]"Common"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -7295,7 +7297,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-
+	
+	[tag]"worth"		[value]"Moderate"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -7307,7 +7311,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-
+	
+	[tag]"worth"		[value]"Trash"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -7319,7 +7325,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Deleted"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -7331,6 +7341,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7343,6 +7355,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7352,6 +7366,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Akil's Prophecy"
 	[tag]"name RU"		[value]"Пророчество Акила"
+	
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
@@ -7367,6 +7383,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7379,6 +7397,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7391,6 +7411,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7403,6 +7425,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7415,6 +7439,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7427,6 +7453,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7439,6 +7467,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7451,6 +7481,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7463,6 +7495,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7475,6 +7509,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7487,7 +7523,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"worth"		[value]"Trash"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -7499,6 +7537,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7511,6 +7550,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7523,7 +7563,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-
+	[tag]"worth"		[value]"Common"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -7535,6 +7576,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7547,6 +7589,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7559,6 +7602,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7571,6 +7615,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7583,6 +7628,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7595,6 +7641,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7607,6 +7654,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7619,6 +7667,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7631,6 +7680,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7643,6 +7693,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7655,6 +7706,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7667,6 +7719,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7679,6 +7732,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7691,6 +7745,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7703,6 +7758,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7715,6 +7771,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7727,6 +7784,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7739,6 +7797,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7751,6 +7810,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7763,6 +7823,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7775,6 +7836,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7787,6 +7849,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7799,6 +7862,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7808,6 +7872,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Draped in Dreams"
 	[tag]"name RU"		[value]"Облачённый в мечты"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
@@ -7823,6 +7888,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7835,6 +7901,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7847,6 +7914,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7859,6 +7927,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7871,6 +7940,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7883,6 +7953,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7895,6 +7966,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7907,6 +7979,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7919,7 +7993,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"worth"		[value]"Trash"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -7931,6 +8007,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7943,6 +8020,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7955,6 +8033,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7967,6 +8046,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7979,6 +8059,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7991,6 +8072,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8003,6 +8085,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8015,6 +8098,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8027,6 +8111,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8039,6 +8124,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8051,6 +8137,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Very Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8063,6 +8150,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8075,6 +8163,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8087,6 +8176,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8099,6 +8189,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8111,6 +8202,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8123,6 +8215,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8135,6 +8228,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8147,6 +8241,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8159,6 +8254,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8171,6 +8267,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8183,6 +8280,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8195,6 +8293,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8207,6 +8306,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8219,6 +8319,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8231,6 +8332,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8243,6 +8345,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8255,6 +8358,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8267,6 +8371,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8279,6 +8384,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8291,6 +8397,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8299,10 +8406,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Merciless Armament"
-	[tag]"name RU"		[value]"Merciless Armament"
+	[tag]"name RU"		[value]"Безжалостное орудие"
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8315,6 +8423,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8327,6 +8436,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8339,6 +8449,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8351,6 +8462,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8363,6 +8475,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8375,6 +8488,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8387,6 +8501,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8399,6 +8514,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8411,6 +8527,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8423,6 +8540,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8435,6 +8553,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8447,6 +8566,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8459,6 +8579,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8471,6 +8592,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8483,6 +8605,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8495,6 +8618,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8507,6 +8631,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8519,6 +8644,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8531,6 +8657,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8543,6 +8670,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8555,6 +8683,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8567,6 +8696,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8579,6 +8709,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8591,6 +8722,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8603,6 +8736,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8615,6 +8749,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8627,6 +8762,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8639,6 +8775,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8651,6 +8788,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8663,6 +8801,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8675,6 +8814,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8687,6 +8827,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8699,6 +8840,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8711,6 +8853,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8723,6 +8866,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8735,6 +8879,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8747,6 +8892,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8759,6 +8905,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8779,6 +8926,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8791,6 +8939,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8803,6 +8952,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8815,6 +8965,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8827,6 +8978,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8839,6 +8991,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8851,6 +9004,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8863,6 +9017,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8875,6 +9030,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8887,6 +9043,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -15439,7 +15596,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"worth"		[value]"Medium"
+	[tag]"worth"		[value]"Moderate"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -15579,7 +15736,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"worth"		[value]"Medium"
+	[tag]"worth"		[value]"Moderate"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"

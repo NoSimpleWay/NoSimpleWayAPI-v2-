@@ -126,6 +126,13 @@ void EDataActionCollection::action_generate_filter_block_text(Entity* _entity, E
 	CloseClipboard();
 }
 
+void EDataActionCollection::action_select_this_filter_variant(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonFilterRule* filter_button = static_cast<EntityButtonFilterRule*>(_entity);
+	filter_button->target_data_container->target_rule = filter_button->target_filter_rule;
+	EDataActionCollection::action_type_text(filter_button->target_data_container->filter_text_area);
+}
+
 
 EWindowMain::EWindowMain()
 {
@@ -382,7 +389,7 @@ EWindowMain::EWindowMain()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
 	jc_filter_block_attribute->have_operator = false;
 
-	jc_filter_block_attribute->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM];
+	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM];
 
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -396,7 +403,7 @@ EWindowMain::EWindowMain()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
 	jc_filter_block_attribute->have_operator = false;
 
-	jc_filter_block_attribute->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS];
+	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS];
 
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -410,7 +417,7 @@ EWindowMain::EWindowMain()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
 	jc_filter_block_attribute->have_operator = false;
 
-	jc_filter_block_attribute->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_CLUSTER_PASSIVE];
+	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_CLUSTER_PASSIVE];
 
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 
@@ -426,7 +433,7 @@ EWindowMain::EWindowMain()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
 	jc_filter_block_attribute->have_operator = false;
 
-	jc_filter_block_attribute->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_INFLUENCE];
+	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_INFLUENCE];
 
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 
@@ -442,7 +449,7 @@ EWindowMain::EWindowMain()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
 	jc_filter_block_attribute->have_operator = false;
 
-	jc_filter_block_attribute->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT];
+	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT];
 
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	/*_____________________________________________________________________________________________________*/
@@ -908,7 +915,7 @@ EWindowMain::EWindowMain()
 
 					EButtonGroup* main_listed_group = create_block_for_listed_segment
 					(
-						EFilterRule::registered_filter_rules[rule_id[r]],
+						EFilterRule::registered_global_filter_rules[rule_id[r]],
 						base_name_for_attribute[r],
 						listed_condition_segment
 					);
@@ -1161,7 +1168,7 @@ EWindowMain::EWindowMain()
 
 			EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_entity_filter = new EDataContainer_Group_StoreFilterRuleForDataEntitySearcher();
 			data_container_entity_filter->target_group = EButtonGroup::data_entity_filter;
-			data_container_entity_filter->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_SKILL_GEMS];
+			data_container_entity_filter->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_SKILL_GEMS];
 
 			ECustomData* custom_data_for_gem_button = new ECustomData();
 			custom_data_for_gem_button->data_container = data_container_entity_filter;
@@ -1372,11 +1379,52 @@ EWindowMain::EWindowMain()
 		// // //	DATA ENTITY LIST	// // //
 		jc_button_group = main_button_group->add_group
 		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 480.0f), EGUIStyle::active_style));
+		jc_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 		jc_button_group->stretch_x_by_parent_size = true;
 		jc_button_group->stretch_y_by_parent_size = true;
-		jc_data_container_for_search_group->pointer_to_group_with_data_entities = jc_button_group;
 		jc_button_group->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
-		//jc_button_group->debug_translation = true;
+
+
+
+
+
+
+
+
+		/// LEFT SIDE FOR BUTTONS
+		EButtonGroup* left_side_for_data_entity_buttons = jc_button_group->add_group
+		(
+			EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(890.0f, 480.0f),
+				EGUIStyle::active_style
+			)
+		)->set_parameters
+		(
+			ChildAlignMode::ALIGN_HORIZONTAL,
+			NSW_dynamic_autosize,
+			NSW_dynamic_autosize
+		);
+
+		/// RIGHT SIDE FOR FILTERS
+		EButtonGroup* right_side_for_filter_rule_buttons = jc_button_group->add_group
+		(
+			EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(180.0f, 480.0f),
+				EGUIStyle::active_style
+			)
+		)->set_parameters
+		(
+			ChildAlignMode::ALIGN_VERTICAL,
+			NSW_static_autosize,
+			NSW_dynamic_autosize
+		);
+
+
+		jc_data_container_for_search_group->pointer_to_group_with_data_entities		= left_side_for_data_entity_buttons;
+		jc_data_container_for_search_group->pointer_to_group_with_filter_rules_list	= right_side_for_filter_rule_buttons;
+
 
 		unsigned int counter = 0;
 		for (EDataEntity* data_entity : EDataEntity::data_entity_list)
@@ -1385,17 +1433,35 @@ EWindowMain::EWindowMain()
 			jc_button = EntityButton::create_wide_item_button
 			(
 				new ERegionGabarite(300.0f, 48.0f),
-				jc_button_group,
+				left_side_for_data_entity_buttons,
 				data_entity,
 				EFont::font_list[0]
 			);
 
-
-
-
-			jc_button_group->button_list.push_back(jc_button);
+			left_side_for_data_entity_buttons->button_list.push_back(jc_button);
 
 			counter++;
+		}
+
+		for (int i = 0; i < EFilterRule::registered_filter_rules_for_list.size(); i++)
+		{
+			EntityButtonFilterRule* filter_button = static_cast<EntityButtonFilterRule*>
+			(
+				EntityButton::create_default_clickable_button_with_unedible_text
+				(
+					new ERegionGabarite(150.0f, 22.0f),
+					right_side_for_filter_rule_buttons,
+					&EDataActionCollection::action_select_this_filter_variant,
+					EFilterRule::registered_filter_rules_for_list[i]->localisation_text->localisations[NSW_localisation_EN]
+				)
+			);
+
+			Entity::get_last_text_area(filter_button)->localisation_text = *EFilterRule::registered_filter_rules_for_list[i]->localisation_text;
+
+			filter_button->target_filter_rule		= EFilterRule::registered_filter_rules_for_list[i];
+			filter_button->target_data_container	= jc_data_container_for_search_group;
+
+			right_side_for_filter_rule_buttons->button_list.push_back(filter_button);
 		}
 
 		//search bar group
@@ -2024,16 +2090,21 @@ void EWindowMain::register_filter_rules()
 	EFilterRule* jc_filter_rule = nullptr;
 	DataEntityFilter* jc_filter = nullptr;
 
-
+	// // // GLOBAL // // //
+	////////////////////////////////////////////////////////////////////////////////////////////
 	//game items
 	jc_filter_rule = new EFilterRule();
-	jc_filter = new DataEntityFilter();
 
-	jc_filter->target_tag_name = "data type";
-	jc_filter->suitable_values_list.push_back("game item");
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM] = jc_filter_rule;
 
+	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM] = jc_filter_rule;
+
+	////////////////////////////////////////////////////////////////////////////////////////////
 	//base class
 	jc_filter_rule = new EFilterRule();
 	jc_filter = new DataEntityFilter();
@@ -2041,8 +2112,10 @@ void EWindowMain::register_filter_rules()
 	jc_filter->target_tag_name = "data type";
 	jc_filter->suitable_values_list.push_back("base class");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_BASE_CLASS] = jc_filter_rule;
+	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_BASE_CLASS] = jc_filter_rule;
 
+
+	////////////////////////////////////////////////////////////////////////////////////////////
 	//influence
 	jc_filter_rule = new EFilterRule();
 	jc_filter = new DataEntityFilter();
@@ -2051,8 +2124,9 @@ void EWindowMain::register_filter_rules()
 	jc_filter->suitable_values_list.push_back("influence");
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_INFLUENCE] = jc_filter_rule;
+	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_INFLUENCE] = jc_filter_rule;
 
+	////////////////////////////////////////////////////////////////////////////////////////////
 	//gem
 	jc_filter_rule = new EFilterRule();
 	jc_filter = new DataEntityFilter();
@@ -2061,8 +2135,9 @@ void EWindowMain::register_filter_rules()
 	jc_filter->suitable_values_list.push_back("gem");
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_SKILL_GEMS] = jc_filter_rule;
+	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_SKILL_GEMS] = jc_filter_rule;
 
+	////////////////////////////////////////////////////////////////////////////////////////////
 	//explicit
 	jc_filter_rule = new EFilterRule();
 	jc_filter = new DataEntityFilter();
@@ -2071,8 +2146,9 @@ void EWindowMain::register_filter_rules()
 	jc_filter->suitable_values_list.push_back("explicit");
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS] = jc_filter_rule;
+	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS] = jc_filter_rule;
 
+	////////////////////////////////////////////////////////////////////////////////////////////
 	//cluster passives
 	jc_filter_rule = new EFilterRule();
 	jc_filter = new DataEntityFilter();
@@ -2081,8 +2157,9 @@ void EWindowMain::register_filter_rules()
 	jc_filter->suitable_values_list.push_back("cluster passive");
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_CLUSTER_PASSIVE] = jc_filter_rule;
+	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_CLUSTER_PASSIVE] = jc_filter_rule;
 
+	////////////////////////////////////////////////////////////////////////////////////////////
 	//enchantments from lab
 	jc_filter_rule = new EFilterRule();
 	jc_filter = new DataEntityFilter();
@@ -2091,7 +2168,50 @@ void EWindowMain::register_filter_rules()
 	jc_filter->suitable_values_list.push_back("enchantment");
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT] = jc_filter_rule;
+	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT] = jc_filter_rule;
+
+
+
+	// // // BUTTON LIST // // //
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//ALL DIVINATIONS
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trash divinations";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Мусорные гадальные карты";
+	jc_filter_rule->tag = "game item";
+
+	// trash
+	// common
+	// moderate
+	// rare
+	// expensive
+	// very expensive
+	
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+			jc_filter->target_tag_name = "data type";
+			jc_filter->suitable_values_list.push_back("game item");
+			jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+			jc_filter->target_tag_name = "base class";
+			jc_filter->suitable_values_list.push_back("divination card");
+			jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+			jc_filter->target_tag_name = "worth";
+			jc_filter->suitable_values_list.push_back("trash");
+			jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
 }
 
 EWindowMain::~EWindowMain()

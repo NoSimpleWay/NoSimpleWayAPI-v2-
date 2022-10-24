@@ -38,7 +38,6 @@ class EFontGlyph;
 
 struct EDataTag;
 struct RegisteredDataTag;
-struct ELocalisationText;
 class EDataEntity;
 
 class EGUIStyle;
