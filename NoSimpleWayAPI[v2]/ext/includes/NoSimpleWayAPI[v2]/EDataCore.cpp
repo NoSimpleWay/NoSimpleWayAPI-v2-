@@ -355,9 +355,13 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 {
 	if
 	(
-		(EButtonGroup::focused_button_group == ((EntityButton*)_entity)->parent_button_group)
-		&&
-		(((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
+		(
+			(EButtonGroup::focused_button_group == ((EntityButton*)_entity)->parent_button_group)
+			&&
+			(((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
+		)
+		||
+		(((EntityButton*)_entity)->button_gabarite->have_phantom_translation)
 	)
 	{
 		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.15f);
@@ -544,7 +548,7 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 	
 }
 
-void EDataActionCollection::action_type_text(ETextArea* _text_area)
+void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text_area)
 {
 	//EInputCore::logger_param("stored text",  * _text_area->stored_text);
 
@@ -611,49 +615,71 @@ void EDataActionCollection::action_type_text(ETextArea* _text_area)
 				}
 
 				bool required_tag_match = true;
+				bool required_tag_value_match = true;
 
-				//for every data entity tag
-				for (EDataTag* data_entity_tag: target_data_entity->tag_list)
+				//for every required tag
+				for (DataEntityFilter* required_tag_filter : data_container->target_rule->required_tag_list)
+				if ((required_tag_match) && (required_tag_value_match))//if tag match still not failed
 				{
-					//tag value
-					tag_value = EStringUtils::to_lower (*data_entity_tag->tag_value_list[0]);
+					//potentially fail match
+					required_tag_match			= false;
+					required_tag_value_match	= false;
+					//2 ways to fail match:
+					//1) item have no required tag
+					//2) item have required tag, but value of this tag not math with no one suitable tag list
+					
 
-					for (DataEntityFilter* required_tag_filter : data_container->target_rule->required_tag_list)
+					//for every required tag
+					for (EDataTag* data_entity_tag : target_data_entity->tag_list)
 					{	
-						//find required tag
-						if ((required_tag_match) && (required_tag_filter->target_tag_name == *data_entity_tag->tag_name) && (!required_tag_filter->suitable_values_list.empty()))
+						tag_value = *data_entity_tag->tag_value_list[0];
+						
+						//compare data entity tag and requaire tag from filter rule
+						if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, required_tag_filter->target_tag_name)))
 						{
-							//potentially fail match
-							required_tag_match = false;
+							required_tag_match = true;
 
-							//one of suitable list
-							for (std::string suitable_str : required_tag_filter->suitable_values_list)
+							//empty suitable list means what any value is acceptable
+							if (required_tag_filter->suitable_values_list.empty())
+							{required_tag_value_match = true;}
+							else
+							for (std::string suitable_str : required_tag_filter->suitable_values_list)//one of suitable list
 							{
-								if ((suitable_str == "") || (EStringUtils::to_lower(suitable_str) == tag_value))
-								{ required_tag_match = true; }//have at least 1 match from suitable list
+								if
+								(
+									//empty suitable text means 'any value suitable'
+									(suitable_str == "")
+									||
+									(EStringUtils::compare_ignoring_case(suitable_str, tag_value))
+								)
+								{required_tag_value_match = true;}
 							}
 						}
 					}
 
-					if (tag_search_mode)
+					//search by input
+					for (EDataTag* data_entity_tag : target_data_entity->tag_list)
 					{
-						if ((*data_entity_tag->tag_name == "item tag") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-					}
-					else
-					if (cost_search_mode)
-					{
-						if ((*data_entity_tag->tag_name == "worth") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-					}
-					else
-					{
-						if ((*data_entity_tag->tag_name == "name EN") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-						if ((*data_entity_tag->tag_name == "name RU") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+						if (tag_search_mode)
+						{
+							if ((*data_entity_tag->tag_name == "item tag") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+						}
+						else
+							if (cost_search_mode)
+							{
+								if ((*data_entity_tag->tag_name == "worth") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+							}
+								else
+								{
+									if ((*data_entity_tag->tag_name == "name EN") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+									if ((*data_entity_tag->tag_name == "name RU") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+								}
 					}
 
 					//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
 				}
 				//tag_require_match = false;
-				if ((matched_by_input) && (required_tag_match)) { but->disabled = false; }
+				if ((matched_by_input) && (required_tag_match) && (required_tag_value_match)) { but->disabled = false; }
 				else { but->disabled = true; }
 
 			}
@@ -766,7 +792,7 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 	button_group_data_container->target_rule = button_data_container->filter_rule;
 	button_group_data_container->action_on_select_for_button = button_data_container->target_action_on_click;
 
-	EDataActionCollection::action_type_text(button_group_data_container->filter_text_area);
+	EDataActionCollection::action_type_search_data_entity_text(button_group_data_container->filter_text_area);
 	/* OUTDATED */
 	//if
 	//(
@@ -2835,4 +2861,10 @@ std::string EStringUtils::to_lower(std::string _text)
 		}
 	}
 	return output_string;
+}
+
+bool EStringUtils::compare_ignoring_case(std::string _text1, std::string _text2)
+{
+
+	return to_lower(_text1) == to_lower(_text2);
 }

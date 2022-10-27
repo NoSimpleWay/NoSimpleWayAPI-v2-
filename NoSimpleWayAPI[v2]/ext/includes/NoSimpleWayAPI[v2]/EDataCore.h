@@ -532,7 +532,7 @@ namespace EDataActionCollection
 	void action_create_new_color(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text
-	void action_type_text(ETextArea* _text_area);
+	void action_type_search_data_entity_text(ETextArea* _text_area);
 	void action_type_text_multiblock_searcher(ETextArea* _text_area);
 
 	//group section
@@ -585,5 +585,6 @@ public:
 class EStringUtils
 {
 public:
-	static std::string to_lower(std::string _text);
+	static std::string	to_lower(std::string _text);
+	static bool			compare_ignoring_case(std::string _text1, std::string _text2);
 };

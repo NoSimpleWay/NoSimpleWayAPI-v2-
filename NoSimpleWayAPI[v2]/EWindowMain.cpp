@@ -130,7 +130,7 @@ void EDataActionCollection::action_select_this_filter_variant(Entity* _entity, E
 {
 	EntityButtonFilterRule* filter_button = static_cast<EntityButtonFilterRule*>(_entity);
 	filter_button->target_data_container->target_rule = filter_button->target_filter_rule;
-	EDataActionCollection::action_type_text(filter_button->target_data_container->filter_text_area);
+	EDataActionCollection::action_type_search_data_entity_text(filter_button->target_data_container->filter_text_area);
 }
 
 
@@ -1480,7 +1480,7 @@ EWindowMain::EWindowMain()
 
 		jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "");
 		jc_data_container_for_search_group->filter_text_area = jc_text_area;
-		jc_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_text);
+		jc_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_search_data_entity_text);
 		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 		jc_button_group->button_list.push_back(jc_button);
 
@@ -1488,7 +1488,7 @@ EWindowMain::EWindowMain()
 
 
 
-		EDataActionCollection::action_type_text(jc_text_area);
+		EDataActionCollection::action_type_search_data_entity_text(jc_text_area);
 
 
 
@@ -2171,7 +2171,14 @@ void EWindowMain::register_filter_rules()
 	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT] = jc_filter_rule;
 
 
-
+	// <cost list>
+	// trash
+	// common
+	// moderate
+	// rare
+	// expensive
+	// very expensive
+	
 	// // // BUTTON LIST // // //
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//ALL DIVINATIONS
@@ -2181,13 +2188,6 @@ void EWindowMain::register_filter_rules()
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Мусорные гадальные карты";
 	jc_filter_rule->tag = "game item";
 
-	// trash
-	// common
-	// moderate
-	// rare
-	// expensive
-	// very expensive
-	
 		//filter by game item
 		jc_filter = new DataEntityFilter();
 			jc_filter->target_tag_name = "data type";
@@ -2209,6 +2209,32 @@ void EWindowMain::register_filter_rules()
 			jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
+		EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//Heist league
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("League: Heist");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+		
+		//
 		EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 

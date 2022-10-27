@@ -1187,8 +1187,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item height"	[value]"League: heist"
-	[tag]"item height"	[value]"World drop"
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1204,8 +1204,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item height"	[value]"League: heist"
-	[tag]"item height"	[value]"World drop"
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1221,8 +1221,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item height"	[value]"League: heist"
-	[tag]"item height"	[value]"World drop"
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1238,8 +1238,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item height"	[value]"League: heist"
-	[tag]"item height"	[value]"World drop"
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1255,8 +1255,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item height"	[value]"League: heist"
-	[tag]"item height"	[value]"World drop"
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1272,8 +1272,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item height"	[value]"League: heist"
-	[tag]"item height"	[value]"World drop"
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1289,8 +1289,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item height"	[value]"League: heist"
-	[tag]"item height"	[value]"World drop"
+	[tag]"item tag"	 	[value]"League: heist"
+	[tag]"item tag"	 	[value]"World drop"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1306,8 +1306,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item height"	[value]"League: heist"
-	[tag]"item height"	[value]"World drop"
+	[tag]"item tag"	 	[value]"League: heist"
+	[tag]"item tag"	 	[value]"World drop"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1323,8 +1323,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item height"	[value]"League: heist"
-	[tag]"item height"	[value]"World drop"
+	[tag]"item tag"	 	[value]"League: heist"
+	[tag]"item tag"	 	[value]"World drop"
 	
 	[tag]"worth"		[value]"Common"
 

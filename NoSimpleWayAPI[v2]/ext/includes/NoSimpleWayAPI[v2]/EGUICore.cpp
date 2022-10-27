@@ -255,18 +255,40 @@ void EButtonGroup::update(float _d)
 
 		{
 			for (EntityButton* but : button_list)
-			if
-			(
-				(but->update_when_scissored)
-				||
-				(
-					(but->button_gabarite->world_position_y <= higher_culling_line + border_bottom)
-					&&
-					(but->button_gabarite->world_position_y + but->button_gabarite->size_y >= lower_culling_line - border_up)
-				)
-			)
 			{
-				but->update(_d);
+
+				//can see this button
+				if
+					(
+						(but->update_when_scissored)
+						||
+						(
+							(but->button_gabarite->world_position_y + but->button_gabarite->phantom_translate_y <= higher_culling_line + 0.0f)
+							&&
+							(but->button_gabarite->world_position_y + but->button_gabarite->phantom_translate_y + but->button_gabarite->size_y >= lower_culling_line - 0.0f)
+						)
+					)
+				{
+					//phantom translation
+					if (but->button_gabarite->have_phantom_translation)
+					{
+						but->button_gabarite->have_phantom_translation = false;
+
+						but->translate_entity
+						(
+							but->button_gabarite->phantom_translate_x,
+							but->button_gabarite->phantom_translate_y,
+							but->button_gabarite->phantom_translate_z,
+							true
+						);
+
+						but->button_gabarite->phantom_translate_x = 0.0f;
+						but->button_gabarite->phantom_translate_y = 0.0f;
+						but->button_gabarite->phantom_translate_z = 0.0f;
+					}
+
+					but->update(_d);
+				}
 			}
 		}
 
@@ -456,10 +478,10 @@ void EButtonGroup::draw()
 		for (EntityButton* but : button_list)
 			if
 				(
-					(but->world_position_y + but->button_gabarite->size_y >= lower_culling_line)
+					(but->world_position_y + but->button_gabarite->phantom_translate_y + but->button_gabarite->size_y >= lower_culling_line)
 					&&
-					(but->world_position_y <= higher_culling_line)
-					)
+					(but->world_position_y + but->button_gabarite->phantom_translate_y <= higher_culling_line)
+				)
 			{
 				but->draw();
 
@@ -627,9 +649,9 @@ void EButtonGroup::draw_second_pass()
 	for (EntityButton* but : button_list)
 	if
 	(
-		(but->world_position_y + but->button_gabarite->size_y >= lower_culling_line)
+		(but->world_position_y + but->button_gabarite->phantom_translate_y + but->button_gabarite->size_y >= lower_culling_line)
 		&&
-		(but->world_position_y <= higher_culling_line)
+		(but->world_position_y + but->button_gabarite->phantom_translate_y <= higher_culling_line)
 	)
 	{
 		but->draw_second_pass();
@@ -1241,15 +1263,22 @@ void EButtonGroup::realign_all_buttons()
 	std::vector<EntityButton*> button_vector;
 
 	for (EntityButton* but : button_list)
-	for (ECustomData* cd : but->custom_data_list)
-	for (EClickableArea* c_area:cd->clickable_area_list)
 	{
-		*c_area->catched_body		= false;
-		*c_area->catched_side_down	= false;
-		*c_area->catched_side_up	= false;
-		*c_area->catched_side_left	= false;
-		*c_area->catched_side_right	= false;
-		*c_area->catched_side_mid	= false;
+		but->button_gabarite->have_phantom_translation = false;
+		but->button_gabarite->phantom_translate_x = 0.0f;
+		but->button_gabarite->phantom_translate_y = 0.0f;
+		but->button_gabarite->phantom_translate_z = 0.0f;
+
+		for (ECustomData* cd : but->custom_data_list)
+			for (EClickableArea* c_area : cd->clickable_area_list)
+			{
+				*c_area->catched_body = false;
+				*c_area->catched_side_down = false;
+				*c_area->catched_side_up = false;
+				*c_area->catched_side_left = false;
+				*c_area->catched_side_right = false;
+				*c_area->catched_side_mid = false;
+			}
 	}
 
 	for (EntityButton* but : button_list)
@@ -1859,11 +1888,7 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 	region_gabarite->world_position_y += (_y);
 	region_gabarite->world_position_z += (_z);
 
-	higher_culling_line += _y;
-	higher_culling_line_for_bg += _y;
-
-	lower_culling_line += _y;
-	lower_culling_line_for_bg += _y;
+	
 
 	if (_move_positions)
 	{
@@ -1885,7 +1910,11 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 		region_gabarite->phantom_translate_z += (_z);
 	}
 
+	higher_culling_line += _y;
+	higher_culling_line_for_bg += _y;
 
+	lower_culling_line += _y;
+	lower_culling_line_for_bg += _y;
 	
 }
 
@@ -1898,7 +1927,29 @@ void EButtonGroup::translate_content(float _x, float _y, float _z, bool _move_sl
 
 		for (EntityButton* button : button_list)
 		if ((_move_slider) || (button != slider))
-		{button->translate_entity(_x, _y, _z, true);}
+		{
+			if
+			(
+				(
+					(button->button_gabarite->world_position_y <= higher_culling_line)
+					&&
+					(button->button_gabarite->world_position_y + button->button_gabarite->size_y >= lower_culling_line)
+				)
+				//||
+				//(button == slider)
+			)
+			{
+				button->translate_entity(_x, _y, _z, true);
+			}
+			else
+			{
+				button->button_gabarite->have_phantom_translation = true;
+
+				button->button_gabarite->phantom_translate_x += _x;
+				button->button_gabarite->phantom_translate_y += _y;
+				button->button_gabarite->phantom_translate_z += _z;
+			}
+		}
 
 		for (EButtonGroup* group : group_list)
 		{group->translate(_x, _y, _z, false);}
