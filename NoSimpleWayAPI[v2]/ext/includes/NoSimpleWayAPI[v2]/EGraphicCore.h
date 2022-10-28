@@ -429,11 +429,11 @@ public:
 
 	void(*pointer_to_sprite_render)(ESprite* _sprite);
 
-	ETextureGabarite* main_texture;
-	ETextureGabarite* normal_texture;
-	ETextureGabarite* gloss_texture;
+	ETextureGabarite* main_texture		= nullptr;
+	ETextureGabarite* normal_texture	= nullptr;
+	ETextureGabarite* gloss_texture		= nullptr;
 
-	ESpriteLayer* master_sprite_layer;
+	ESpriteLayer* master_sprite_layer	= nullptr;
 
 	EColor_4* sprite_color = new float[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
 	void set_color(float _r, float _g, float _b, float _a);

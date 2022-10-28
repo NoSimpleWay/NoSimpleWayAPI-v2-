@@ -1367,7 +1367,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 
 	[tag]"worth"		[value]"Common"
 
@@ -1390,7 +1390,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Rare base"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -1567,7 +1567,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 
 	[tag]"worth"		[value]"Common"
 
@@ -2322,7 +2322,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -2386,7 +2386,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 
 	[tag]"worth"		[value]"Common"
 
@@ -2875,7 +2875,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 
 	[tag]"worth"		[value]"Common"
 
@@ -2919,7 +2919,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 
 	[tag]"worth"		[value]"Common"
 
@@ -2943,7 +2943,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 
 	[tag]"worth"		[value]"Common"
 
@@ -3375,7 +3375,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 
 	[tag]"worth"		[value]"Common"
 
@@ -3397,7 +3397,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 
 	[tag]"worth"		[value]"Common"
 
@@ -3779,7 +3779,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -3822,7 +3822,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -4035,7 +4035,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -4336,7 +4336,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -4379,7 +4379,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -4484,7 +4484,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -4532,7 +4532,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Rare base"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -5465,7 +5465,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -5588,7 +5588,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -5609,7 +5609,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -5792,7 +5792,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -5953,7 +5953,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -6046,7 +6046,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -6858,7 +6858,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -6874,7 +6874,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Item for melee"
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
@@ -7067,7 +7066,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -11887,7 +11886,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -11930,7 +11929,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -12205,7 +12204,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -12452,7 +12451,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -12495,7 +12494,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -12621,7 +12620,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -14251,7 +14250,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -14272,7 +14271,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -14499,7 +14498,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -14664,7 +14663,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -14769,7 +14768,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -14812,7 +14811,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -14857,7 +14856,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -14880,7 +14879,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -15297,7 +15296,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -16149,7 +16148,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -18518,7 +18517,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -18579,7 +18578,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -18644,7 +18643,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -18665,7 +18664,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -18686,7 +18685,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -18727,7 +18726,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -18788,7 +18787,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -19210,7 +19209,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -19291,7 +19290,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -19312,7 +19311,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -19413,7 +19412,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -20311,7 +20310,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -20426,7 +20425,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -20509,7 +20508,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -20848,7 +20847,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -20970,7 +20969,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -21113,7 +21112,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -21392,7 +21391,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -21435,7 +21434,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -21510,7 +21509,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Offhand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -22071,7 +22070,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Offhand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -22459,7 +22458,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Offhand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -22892,7 +22891,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -22975,7 +22974,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Offhand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -26414,7 +26413,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -26773,7 +26772,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Two-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -26896,7 +26895,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Two-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -27091,7 +27090,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Two-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -27112,7 +27111,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Two-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -27351,7 +27350,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Two-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"Top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -27808,7 +27807,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Two-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -27929,7 +27928,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Two-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -28112,7 +28111,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Two-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"top base tier"
+	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 

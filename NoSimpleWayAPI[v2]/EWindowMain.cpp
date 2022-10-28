@@ -2209,7 +2209,7 @@ void EWindowMain::register_filter_rules()
 			jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
-		EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
 		////////////////////////////////////////////////////////////////////////////////////////////
@@ -2235,7 +2235,7 @@ void EWindowMain::register_filter_rules()
 		//
 		
 		//
-		EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
 }

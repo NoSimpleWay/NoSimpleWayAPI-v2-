@@ -391,6 +391,8 @@ void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomDat
 	for (EButtonGroup* group:window->button_group_list)
 	{
 		EButtonGroup::change_style (group,((EntityButton*)_entity)->parent_button_group->selected_style);
+
+		EButtonGroup::refresh_button_group(group);
 	}
 }
 

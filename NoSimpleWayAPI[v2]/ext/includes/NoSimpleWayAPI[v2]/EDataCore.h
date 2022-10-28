@@ -288,7 +288,7 @@ public:
 class EFilterRule
 {
 public:
-	ELocalisationText*					localisation_text;
+	ELocalisationText*					localisation_text = nullptr;
 
 	std::vector<DataEntityFilter*>		required_tag_list;
 	std::vector<DataEntityFilter*>		banned_tag_list;
@@ -297,7 +297,7 @@ public:
 	static	std::vector<EFilterRule*>	registered_filter_rules_for_list;
 
 	
-	std::string							tag;
+	std::string							tag = "";
 };
 
 class EDataContainer_Group_DataEntitiesSearch : public EDataContainer

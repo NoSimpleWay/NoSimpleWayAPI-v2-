@@ -78,7 +78,7 @@ constexpr size_t EFont_array_dim = 65536u;
 #define NSW_localisation_placeholder_5 5
 #define NSW_localisation_placeholder_6 6
 
-constexpr size_t NSW_languages_count = 2;
+constexpr unsigned int NSW_languages_count = 2;
 //0 - EN
 //1 - RU
 
@@ -86,7 +86,7 @@ class ELocalisationText
 {
 public:
 	std::string base_name = "";
-	std::string localisations[NSW_languages_count];
+	std::string localisations[NSW_languages_count] = {""};
 };
 
 class EFont

@@ -1653,26 +1653,13 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 	//_group->region_gabarite->phantom_translate_y = 0.0f;
 	//_group->region_gabarite->phantom_translate_z = 0.0f;
 
-	_group->need_redraw = true;
+	//_group->need_redraw = true;
 	_group->phantom_translate_if_need();
 
 	if (*_group->can_change_style) {_group->selected_style = _style;}
 
 	if ((EGUIStyle::active_style != nullptr) && (*_group->can_change_style))
 	{
-		//_group->selected_style = EGUIStyle::active_style;
-
-		//for (EButtonGroupRow* row : _group->group_row_list)
-		//if(row != nullptr)
-		//for (EButtonGroup* group:row->button_group_list)
-		//if (group != nullptr)
-		//{
-		//	EButtonGroup::apply_style_to_button_group(group, EGUIStyle::active_style);
-		//}
-
-		
-		//*_group->region->size_x = *_group->base_width	+ *_group->border_left		+ *_group->border_right;
-		//*_group->region->size_y = *_group->base_height	+ *_group->border_bottom	+ *_group->border_up;
 
 		if (_group->have_bg)
 		{
@@ -1696,15 +1683,7 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 			);
 		}
 
-		for (EntityButton* but : _group->button_list)
-		{
-			for (change_style_action csa : but->action_on_change_style_list)
-			{
-				csa(but, _style);
 
-				//but->generate_vertex_buffer_for_all_sprite_layers();
-			}
-		}
 
 		//_group->refresh_button_group(_group);
 }
@@ -1814,7 +1793,7 @@ void EButtonGroup::change_style(EButtonGroup* _group, EGUIStyle* _style)
 	if (group != nullptr)
 	{EButtonGroup::change_style(group, _style);}
 
-	EButtonGroup::refresh_button_group(_group);
+	
 }
 
 bool EButtonGroup::catched_by_mouse(EButtonGroup* _group)

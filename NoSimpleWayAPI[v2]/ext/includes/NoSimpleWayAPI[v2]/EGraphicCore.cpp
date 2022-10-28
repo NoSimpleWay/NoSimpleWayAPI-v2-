@@ -2759,6 +2759,15 @@ void NS_ERenderCollection::set_brick_borders_and_subdivisions(float _left, float
 
 void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite, ETextureGabarite* _normal_map_gabarite, ETextureGabarite* _gloss_map_gabarite)
 {
+	if (false)
+		for (int i = _sprite_layer->sprite_frame_list.size(); i < 1'000; i++)
+		{
+			//ESpriteLayer::add_new_default_frame_with_sprite(_texture_gabarite, _sprite_layer);
+			_sprite_layer->sprite_frame_list.push_back(ESpriteFrame::create_default_sprite_frame_with_sprite(_texture_gabarite, _sprite_layer));
+		}
+
+
+
 	if ((_region != nullptr) && (_sprite_layer != nullptr) && (_texture_gabarite != nullptr))
 	{
 		_sprite_layer->batcher = NS_EGraphicCore::pbr_batcher;
@@ -2836,21 +2845,32 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 	//
 	// 
 		//EInputCore::logger_simple_info("invoke brick generator");
-		if (false)
-			for (int i = _sprite_layer->sprite_frame_list.size(); i < 1'000; i++)
-			{
-				//ESpriteLayer::add_new_default_frame_with_sprite(_texture_gabarite, _sprite_layer);
-				_sprite_layer->sprite_frame_list.push_back(ESpriteFrame::create_default_sprite_frame_with_sprite(_texture_gabarite, _sprite_layer));
-			}
 
-		for (ESpriteFrame* frm : _sprite_layer->sprite_frame_list)
+		//std::cout << "try delete [" << std::to_string(_sprite_layer->sprite_frame_list.size()) << "] sprite frames" << std::endl;
+
+		if (!_sprite_layer->sprite_frame_list.empty())
 		{
-			//frm->sprite_list[0]->reset_sprite();
-			delete frm;
+			for (int i = 0; i < _sprite_layer->sprite_frame_list.size(); i++)
+				//for (ESpriteFrame* frm : _sprite_layer->sprite_frame_list)
+			{
+				//frm->sprite_list[0]->reset_sprite();
+				//std::cout << "deleting sprite frame at[" << std::to_string(i) << "]" << std::endl;
+
+				delete _sprite_layer->sprite_frame_list.at(i);
+			}
+			//_sprite_layer->last_buffer_id = 0;
+			//_sprite_layer->total_capacity = 0;
+
+			_sprite_layer->sprite_frame_list.clear();
+			_sprite_layer->sprite_frame_list.shrink_to_fit();
 		}
 
-		_sprite_layer->sprite_frame_list.clear();
-		_sprite_layer->sprite_frame_list.shrink_to_fit();
+		//std::cout << "successed deleted" << std::endl;
+
+
+
+
+		//std::cout << "successed deleted" << std::endl;
 
 		if (true)
 			for (unsigned int seg_y = 0; seg_y < 3; seg_y++)
@@ -3534,7 +3554,7 @@ ESprite::~ESprite()
 	//delete &pointer_to_sprite_render;
 	//delete &main_texture;
 	//delete &master_sprite_layer;
-	delete[] sprite_color;
+	delete sprite_color;
 
 	//delete fragment_size_x;
 	//delete fragment_size_y;

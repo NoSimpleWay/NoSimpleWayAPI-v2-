@@ -441,11 +441,12 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 
 		if (_button->sprite_layer_list.empty())
 		{
+			std::cout << "auto generate sprite layer!" << std::endl;
 			_button->sprite_layer_list.push_back
 			(ESpriteLayer::create_default_sprite_layer(nullptr));
 		}
 
-		last_layer = _button->sprite_layer_list[0];
+		last_layer = _button->sprite_layer_list.front();
 
 		NS_ERenderCollection::set_brick_borders_and_subdivisions
 		(
@@ -459,6 +460,7 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 		);
 
 		NS_ERenderCollection::temporary_sprites = false;
+
 		NS_ERenderCollection::generate_brick_texture
 		(
 			_button->button_gabarite,
@@ -476,6 +478,8 @@ EntityButton* EntityButton::create_base_button(ERegionGabarite* _region_gabarite
 	EntityButton* jc_button = new EntityButton();
 	jc_button->parent_button_group = _parent_row;
 	ERegionGabarite::set_region_gabarite(&jc_button->button_gabarite, _region_gabarite);
+
+	jc_button->sprite_layer_list.push_back(ESpriteLayer::create_default_sprite_layer(nullptr));
 
 	EntityButton::button_generate_brick_bg(jc_button, _parent_row->selected_style);
 	jc_button->set_world_position_w(_region_gabarite);
