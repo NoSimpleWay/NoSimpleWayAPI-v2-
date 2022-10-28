@@ -1653,7 +1653,7 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 	//_group->region_gabarite->phantom_translate_y = 0.0f;
 	//_group->region_gabarite->phantom_translate_z = 0.0f;
 
-	//_group->need_redraw = true;
+	_group->need_redraw = true;
 	_group->phantom_translate_if_need();
 
 	if (*_group->can_change_style) {_group->selected_style = _style;}
@@ -1793,7 +1793,7 @@ void EButtonGroup::change_style(EButtonGroup* _group, EGUIStyle* _style)
 	if (group != nullptr)
 	{EButtonGroup::change_style(group, _style);}
 
-	
+	//if (_group->parent_group == nullptr) { EButtonGroup::refresh_button_group(_group); }
 }
 
 bool EButtonGroup::catched_by_mouse(EButtonGroup* _group)
@@ -1913,6 +1913,10 @@ void EButtonGroup::translate_content(float _x, float _y, float _z, bool _move_sl
 					(button->button_gabarite->world_position_y <= higher_culling_line)
 					&&
 					(button->button_gabarite->world_position_y + button->button_gabarite->size_y >= lower_culling_line)
+					&&
+					(!button->disabled)
+					&&
+					(!button->disable_draw)
 				)
 				//||
 				//(button == slider)

@@ -128,9 +128,24 @@ void EDataActionCollection::action_generate_filter_block_text(Entity* _entity, E
 
 void EDataActionCollection::action_select_this_filter_variant(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	EntityButtonFilterRule* filter_button = static_cast<EntityButtonFilterRule*>(_entity);
-	filter_button->target_data_container->target_rule = filter_button->target_filter_rule;
-	EDataActionCollection::action_type_search_data_entity_text(filter_button->target_data_container->filter_text_area);
+	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EButtonGroup::data_entity_filter->data_container;
+	
+	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+	{
+		EntityButtonFilterRule* filter_button = (EntityButtonFilterRule*)_entity;
+
+		//std::cout << filter_button->target_data_container->target_rule << std::endl;
+
+		//filter_button->target_data_container->target_rule = filter_button->target_filter_rule;
+		button_group_data_container->target_rule = filter_button->target_filter_rule;
+	}
+	//else
+	//{
+	//	button_group_data_container->target_rule = EFilterRule::registered_filter_rules_for_list[0];
+	//}
+	
+	EDataActionCollection::action_type_search_data_entity_text(button_group_data_container->filter_text_area);
+	
 }
 
 
@@ -2209,6 +2224,188 @@ void EWindowMain::register_filter_rules()
 			jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//Heist league
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("League: Heist");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+		
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//Heist league
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Deleted items";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Удалённые предметы";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Deleted");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+		
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//Heist league
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Atlas bases";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Базы атласа";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Rare base");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+		
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//Heist league
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Top tier base";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лучшие базы предметов";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Top tier base");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+		
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//Heist league
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "League: Ritual";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига: Ритуал";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("League: Ritual");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+		
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//Heist league
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("League: Heist");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+		
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//Heist league
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("League: Heist");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+		
+		//
 		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 

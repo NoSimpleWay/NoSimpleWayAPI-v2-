@@ -1190,7 +1190,7 @@ void EDataActionCollection::action_resize_to_full_window(EButtonGroup* _group)
 
 	EButtonGroup::change_style(_group, _group->selected_style);
 	//EButtonGroup::apply_style_to_button_group(_group, _group->selected_style);
-	//EButtonGroup::refresh_button_group(_group);
+	EButtonGroup::refresh_button_group(_group);
 }
 
 void EDataActionCollection::action_draw_boolean_switcher(Entity* _entity, ECustomData* _custom_data, float _d)

@@ -56,6 +56,7 @@ class EntityButtonFilterRule : public EntityButton
 public:
 	EFilterRule*								target_filter_rule;
 	EDataContainer_Group_DataEntitiesSearch*	target_data_container;
+
 };
 
 namespace EDataActionCollection
