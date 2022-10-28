@@ -111,7 +111,14 @@ void EDataActionCollection::action_mark_parent_group_as_removed(Entity* _entity,
 void EDataActionCollection::action_generate_filter_block_text(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	//const char* output = (*_custom_data->clickable_area_list.back()->text_area->stored_text).c_str();
-	std::string str = generate_filter_block_text(static_cast<EDataContainer_Button_StoreParentFilterBlock*>(_custom_data->data_container)->parent_filter_block);
+	std::string str = "";
+
+	EButtonGroup* filter_block_massive = static_cast<EDataContainer_Button_StoreParentFilterBlock*>(_custom_data->data_container)->parent_filter_block->root_group;
+	for (EButtonGroup* group : filter_block_massive->group_list)
+	{
+		str += generate_filter_block_text(group);
+		str += '\n';
+	}
 
 	const char* output = str.c_str();
 	const size_t len = strlen(output) + 1;
@@ -138,12 +145,14 @@ void EDataActionCollection::action_select_this_filter_variant(Entity* _entity, E
 
 		//filter_button->target_data_container->target_rule = filter_button->target_filter_rule;
 		button_group_data_container->target_rule = filter_button->target_filter_rule;
+
+		filter_button->parent_button_group->selected_button = filter_button;
 	}
 	//else
 	//{
 	//	button_group_data_container->target_rule = EFilterRule::registered_filter_rules_for_list[0];
 	//}
-	
+	//static_cast<EntityButtonFilterRule*> 
 	EDataActionCollection::action_type_search_data_entity_text(button_group_data_container->filter_text_area);
 	
 }
@@ -852,7 +861,7 @@ EWindowMain::EWindowMain()
 			//generate filter block text
 			jc_button = EntityButton::create_default_clickable_button_with_unedible_text
 			(
-				new ERegionGabarite(50.0f, 80.0f),
+				new ERegionGabarite(50.0f, 22.0f),
 				left_control_section,
 				&EDataActionCollection::action_generate_filter_block_text,
 				"Gen"
@@ -1065,8 +1074,21 @@ EWindowMain::EWindowMain()
 
 
 
+			ELocalisationText ltext[3];
 
-			std::string decorative_element_name[3] = { "Цвет фона","Цвет текста","Цвет рамки" };
+			ltext[0].base_name = "SetBackgroundColor";
+			ltext[0].localisations[NSW_localisation_EN] = "Background color";
+			ltext[0].localisations[NSW_localisation_RU] = "Цвет фона";
+
+			ltext[1].base_name = "SetTextColor";
+			ltext[1].localisations[NSW_localisation_EN] = "Text color";
+			ltext[1].localisations[NSW_localisation_RU] = "Цвет текста";
+
+			ltext[2].base_name = "SetBorderColor";
+			ltext[2].localisations[NSW_localisation_EN] = "Border color";
+			ltext[2].localisations[NSW_localisation_RU] = "Цвет рамки";
+
+			//std::string decorative_element_name[3] = { "Цвет фона","Цвет текста","Цвет рамки" };
 			//####### COSMETIC SEGMENT #######
 			//block
 			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1100,21 +1122,23 @@ EWindowMain::EWindowMain()
 					cosmetic_segment,
 					EFont::font_list[0],
 					EGUIStyle::active_style,
-					decorative_element_name[clr],
+					ltext[clr].localisations[NSW_localisation_EN],
 					HRA_collection,
 					HRA_color,
 					ColorButtonMode::CBM_OPEN_WINDOW
 				);
+				Entity::get_last_text_area(jc_button)->localisation_text = ltext[clr];
 				//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_transfer_pointer_to_color_data_container);
 				//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
 
 				cosmetic_segment->button_list.push_back(jc_button);
 
-				bool* target_bool = nullptr;
-				if (clr == 0) { whole_block_data->pointer_to_bg_color = jc_button; target_bool = &whole_block_data->bg_color_enabled; }
-				if (clr == 1) { whole_block_data->pointer_to_text_color = jc_button; target_bool = &whole_block_data->text_color_enabled; }
-				if (clr == 2) { whole_block_data->pointer_to_rama_color = jc_button; target_bool = &whole_block_data->rama_color_enabled; }
+				bool* target_bool = &whole_block_data->color_check[clr];
+				//if (clr == 0) { whole_block_data->pointer_to_bg_color = jc_button;		target_bool = &whole_block_data->bg_color_enabled; }
+				//if (clr == 1) { whole_block_data->pointer_to_text_color = jc_button;	target_bool = &whole_block_data->text_color_enabled; }
+				//if (clr == 2) { whole_block_data->pointer_to_rama_color = jc_button;	target_bool = &whole_block_data->rama_color_enabled; }
 
+				whole_block_data->pointer_to_color_button[clr] = jc_button;
 
 
 
@@ -1128,6 +1152,8 @@ EWindowMain::EWindowMain()
 					NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
 					target_bool
 				);
+
+				whole_block_data->pointer_to_color_check_button[clr] = jc_button;
 
 				cosmetic_segment->button_list.push_back(jc_button);
 			}
@@ -1241,7 +1267,7 @@ EWindowMain::EWindowMain()
 			style_group->can_resize_to_workspace_size = false;
 			style_group->can_be_stretched_by_child = true;
 
-			style_group->stretch_x_by_parent_size = false;
+			style_group->stretch_x_by_parent_size = true;
 			style_group->stretch_y_by_parent_size = false;
 
 			*style_group->can_change_style = false;
@@ -1252,7 +1278,7 @@ EWindowMain::EWindowMain()
 			//group for prewiev button
 			EButtonGroup* buttons_simulator = style_group->add_group
 			(EButtonGroup::create_default_button_group(new ERegionGabarite(horizontal_side, 100.0f), style));
-			buttons_simulator->stretch_x_by_parent_size = false;
+			buttons_simulator->stretch_x_by_parent_size = true;
 			buttons_simulator->stretch_y_by_parent_size = false;
 
 			if (buttons_simulator != nullptr)
@@ -1315,7 +1341,7 @@ EWindowMain::EWindowMain()
 				(new ERegionGabarite(horizontal_side, 24.0f), style)
 			);
 
-			jc_button_group->stretch_x_by_parent_size = false;
+			jc_button_group->stretch_x_by_parent_size = true;
 			jc_button_group->stretch_y_by_parent_size = false;
 
 			//select button
@@ -1372,7 +1398,7 @@ EWindowMain::EWindowMain()
 	if (true)
 	{
 		main_button_group = EButtonGroup::create_root_button_group
-		(new ERegionGabarite(900.0f, 100.0f, 0.0f, 1200.0f, 600.0f), EGUIStyle::active_style);
+		(new ERegionGabarite(900.0f, 100.0f, 0.0f, 1250.0f, 600.0f), EGUIStyle::active_style);
 		main_button_group->root_group = main_button_group;
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		EButtonGroup::data_entity_filter = main_button_group;
@@ -1426,7 +1452,7 @@ EWindowMain::EWindowMain()
 		(
 			EButtonGroup::create_default_button_group
 			(
-				new ERegionGabarite(180.0f, 480.0f),
+				new ERegionGabarite(250.0f, 480.0f),
 				EGUIStyle::active_style
 			)
 		)->set_parameters
@@ -1435,12 +1461,14 @@ EWindowMain::EWindowMain()
 			NSW_static_autosize,
 			NSW_dynamic_autosize
 		);
-
+		//right_side_for_filter_rule_buttons->can
 
 		jc_data_container_for_search_group->pointer_to_group_with_data_entities		= left_side_for_data_entity_buttons;
 		jc_data_container_for_search_group->pointer_to_group_with_filter_rules_list	= right_side_for_filter_rule_buttons;
 
 
+
+		//buttons for data entity
 		unsigned int counter = 0;
 		for (EDataEntity* data_entity : EDataEntity::data_entity_list)
 		{
@@ -1464,12 +1492,14 @@ EWindowMain::EWindowMain()
 			(
 				EntityButton::create_default_clickable_button_with_unedible_text
 				(
-					new ERegionGabarite(150.0f, 22.0f),
+					new ERegionGabarite(170.0f, 28.0f),
 					right_side_for_filter_rule_buttons,
 					&EDataActionCollection::action_select_this_filter_variant,
 					EFilterRule::registered_filter_rules_for_list[i]->localisation_text->localisations[NSW_localisation_EN]
 				)
 			);
+
+			//filter_button->
 
 			Entity::get_last_text_area(filter_button)->localisation_text = *EFilterRule::registered_filter_rules_for_list[i]->localisation_text;
 
@@ -2195,8 +2225,28 @@ void EWindowMain::register_filter_rules()
 	// very expensive
 	
 	// // // BUTTON LIST // // //
+	
 	////////////////////////////////////////////////////////////////////////////////////////////
-	//ALL DIVINATIONS
+	//ALL ITEMS
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "All items";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Все предметы";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//TRASH DIVINATIONS
 	jc_filter_rule = new EFilterRule();
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trash divinations";
@@ -2226,8 +2276,169 @@ void EWindowMain::register_filter_rules()
 
 		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-
+		
 		////////////////////////////////////////////////////////////////////////////////////////////
+		//TRASH DIVINATIONS
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Common divinations";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Дешёвые гадальные карты";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("divination card");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "worth";
+		jc_filter->suitable_values_list.push_back("common");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+		
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//TRASH DIVINATIONS
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Moderate divinations";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Хорошие гадальные карты";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("divination card");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "worth";
+		jc_filter->suitable_values_list.push_back("moderate");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+		
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//TRASH DIVINATIONS
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Rare divinations";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Ценные гадальные карты";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("divination card");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "worth";
+		jc_filter->suitable_values_list.push_back("rare");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+		
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//TRASH DIVINATIONS
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Expensive divinations";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Дорогие гадальные карты";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("divination card");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "worth";
+		jc_filter->suitable_values_list.push_back("expensive");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+		
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//TRASH DIVINATIONS
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Very expensive divinations";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Очень дорогие гадальные карты";
+		jc_filter_rule->tag = "game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("divination card");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "worth";
+		jc_filter->suitable_values_list.push_back("very expensive");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	
+
+	////////////////////////////////////////////////////////////////////////////////////////////
 		//Heist league
 		jc_filter_rule = new EFilterRule();
 		jc_filter_rule->localisation_text = new ELocalisationText();
@@ -2848,9 +3059,9 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 
 	auto whole_block_data = static_cast<EDataContainer_Group_WholeFilterBlock*>(_button_group->data_container);
 
-	EButtonGroup* non_listed_section = whole_block_data->pointer_to_non_listed_segment;
-	EButtonGroup* listed_section = whole_block_data->pointer_to_listed_segment;
-	EButtonGroup* cosmetic_section = whole_block_data->pointer_to_cosmetic_segment;
+	EButtonGroup* non_listed_section	= whole_block_data->pointer_to_non_listed_segment;
+	EButtonGroup* listed_section		= whole_block_data->pointer_to_listed_segment;
+	EButtonGroup* cosmetic_section		= whole_block_data->pointer_to_cosmetic_segment;
 
 	//NON-LISTED
 	for (EButtonGroup* n_listed : non_listed_section->group_list)
@@ -2956,18 +3167,43 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 	}
 
 	//COSMETIC
-	for (EButtonGroup* cosmetic_section : listed_section->group_list)
-	{
+
 		//auto container = static_cast<EDataContainer*>(listed->data_container);
-		for (EntityButton* cbut : cosmetic_section->button_list)
-			if (cbut != cosmetic_section->slider)
+		//for (EntityButton* cbut : cosmetic_section->button_list)
+		//if (cbut != cosmetic_section->slider)
+		//{
+		//	//if
+		//	//(
+		//	//	cbut->custom_data_list[0]->data_container == 
+		//	//)
+		//}
+
+		auto cosmetic_data = static_cast<EDataContainer_Group_WholeFilterBlock*>(whole_block_data);
+		ETextArea* tarea = nullptr;
+
+		for (int i = 0; i < 3; i++)
+		{
+			result_string += '\t';
+			if (!cosmetic_data->color_check[i])
 			{
-				//if
-				//(
-				//	cbut->custom_data_list[0]->data_container == 
-				//)
+				result_string += "#";
 			}
-	}
+			tarea = Entity::get_last_text_area(cosmetic_data->pointer_to_color_button[i]);
+			
+			if (tarea != nullptr)
+			{
+				result_string += tarea->localisation_text.base_name;
+			}
+			auto store_color_data = static_cast<EDataContainer_Button_StoreColor*>(Entity::get_last_custom_data(cosmetic_data->pointer_to_color_button[i])->data_container);
+
+			result_string += " " + std::to_string((int)round(store_color_data->stored_color->r * 255.0f));
+			result_string += " " + std::to_string((int)round(store_color_data->stored_color->g * 255.0f));
+			result_string += " " + std::to_string((int)round(store_color_data->stored_color->b * 255.0f));
+			result_string += " " + std::to_string((int)round(store_color_data->stored_color->a * 255.0f));
+
+			result_string += '\r';
+			result_string += '\n';
+		}
 
 
 	return result_string;

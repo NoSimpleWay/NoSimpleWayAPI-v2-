@@ -427,14 +427,9 @@ public:
 
 
 	//color section
-	EntityButton* pointer_to_bg_color;
-	bool			bg_color_enabled = true;
-
-	EntityButton* pointer_to_text_color;
-	bool			text_color_enabled = true;
-
-	EntityButton* pointer_to_rama_color;
-	bool			rama_color_enabled = true;
+	EntityButton*	pointer_to_color_button[3];
+	EntityButton*	pointer_to_color_check_button[3];
+	bool			color_check[3];
 };
 
 class EDataContainer_Group_FilterBlockNonListedSegment : public EDataContainer

@@ -984,7 +984,7 @@ void EButtonGroup::group_stretch_x()
 
 	if ((slider != nullptr) && (!slider->disable_draw))
 	{
-		slider_effect = slider->button_gabarite->size_x + 0.0f;
+		slider_effect = slider->button_gabarite->size_x + 3.0f;
 	}
 
 	float shrink_size = 0.0f;

@@ -640,7 +640,18 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
 
 		//////localistation//////
-			jc_text_area->localisation_text.base_name							= DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+			std::string base_name_value = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
+
+			//if base name exist, set
+			if (base_name_value != "")
+			{
+				jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
+			}
+			else//use english localisation
+			{
+				jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+			}
+
 			jc_text_area->localisation_text.localisations[NSW_localisation_EN]	= DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
 			jc_text_area->localisation_text.localisations[NSW_localisation_RU]	= DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
 		////////////////////////
