@@ -1683,7 +1683,15 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 			);
 		}
 
+		for (EntityButton* but : _group->button_list)
+		{
+			for (change_style_action csa : but->action_on_change_style_list)
+			{
+				csa(but, _style);
 
+				//but->generate_vertex_buffer_for_all_sprite_layers();
+			}
+		}
 
 		//_group->refresh_button_group(_group);
 }

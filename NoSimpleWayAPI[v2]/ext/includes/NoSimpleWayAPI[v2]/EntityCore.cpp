@@ -446,7 +446,7 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 			(ESpriteLayer::create_default_sprite_layer(nullptr));
 		}
 
-		last_layer = _button->sprite_layer_list.front();
+		last_layer = _button->sprite_layer_list.at(0);
 
 		NS_ERenderCollection::set_brick_borders_and_subdivisions
 		(

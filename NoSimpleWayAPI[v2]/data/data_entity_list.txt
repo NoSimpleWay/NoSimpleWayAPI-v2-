@@ -4674,13 +4674,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
-	[tag]"item tag"		[value]"League: Ritual"
 	[tag]"item tag"		[value]"Item for int based character"
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Ritual base top"
-	
+	[tag]"item tag"		[value]"League: Ritual"
 		
 	[tag]"worth"		[value]"Common"
 
