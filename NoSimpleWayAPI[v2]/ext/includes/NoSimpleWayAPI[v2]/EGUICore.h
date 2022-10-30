@@ -45,7 +45,7 @@ public:
 	float* size_x = new float(0.0f);
 	float* size_y = new float(0.0f);
 
-	std::vector<EButtonGroup*> button_container_list;
+	//std::vector<EButtonGroup*> button_container_list;
 
 
 	void			update_default(float _d);
@@ -354,6 +354,10 @@ public:
 	EButtonGroup* set_parameters(ChildAlignMode _child_align_mode, bool _autosize_x, bool _autosize_y);
 
 	static std::vector<FreshCreatedGroup*> fresh_created_block_list;
+
+	EWindow* parent_window;
+
+	void move_to_foreground();
 };
 
 //class EButtonContainer

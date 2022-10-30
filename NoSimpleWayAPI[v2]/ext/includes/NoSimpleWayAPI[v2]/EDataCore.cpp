@@ -786,6 +786,7 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EButtonGroup::data_entity_filter->data_container;
 
 	EButtonGroup::data_entity_filter->is_active = true;
+	EButtonGroup::data_entity_filter->move_to_foreground();
 
 	button_group_data_container->pointer_to_group_item_receiver = button_data_container->target_group;
 	button_group_data_container->target_rule = button_data_container->filter_rule;
@@ -811,6 +812,7 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 	if (_custom_data->data_container != nullptr)
 	{
 		EButtonGroup::color_editor_group->is_active = true;
+		EButtonGroup::color_editor_group->move_to_foreground();
 
 		EDataContainer_Button_StoreColor*	button_data		= static_cast<EDataContainer_Button_StoreColor*>(_custom_data->data_container);
 		EDataContainer_Group_ColorEditor*	group_data		= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
@@ -1463,6 +1465,7 @@ void EDataActionCollection::action_set_button_group_as_active(Entity* _entity, E
 {
 	EDataContainer_Button_OpenButtonGroup* button_data = static_cast<EDataContainer_Button_OpenButtonGroup*>(_custom_data->data_container);
 	button_data->target_group->is_active = true;
+	button_data->target_group->move_to_foreground();
 }
 
 void EDataActionCollection::action_switch_boolean_value(Entity* _entity, ECustomData* _custom_data, float _d)

@@ -311,6 +311,7 @@ void EButtonGroup::update(float _d)
 		}
 	}
 
+	//move group by mouse
 	if
 	(
 		(EInputCore::MOUSE_BUTTON_LEFT)
@@ -327,6 +328,7 @@ void EButtonGroup::update(float _d)
 		&&
 		(EClickableArea::active_clickable_region == nullptr))
 	{
+		root_group->move_to_foreground();
 		root_group->translate(EInputCore::MOUSE_SPEED_X / NS_EGraphicCore::current_zoom, EInputCore::MOUSE_SPEED_Y / NS_EGraphicCore::current_zoom, 0.0f, true);
 	}
 	else
@@ -2016,6 +2018,38 @@ EButtonGroup* EButtonGroup::set_parameters(ChildAlignMode _child_align_mode, boo
 	return this;
 }
 
+void EButtonGroup::move_to_foreground()
+{
+	if ((parent_window != nullptr) && (parent_window->button_group_list.back() != this))
+	{
+		//EButtonGroup* target_group = nullptr;
+
+		int target_id = -1;
+
+		for (int i = 0; i < parent_window->button_group_list.size(); i++)
+		if (parent_window->button_group_list[i] == this)
+		{
+			target_id = i;
+			 
+			break;
+		}
+
+		if (target_id >= 0)
+		{
+			EButtonGroup* swap_group = this;
+
+			for (int i = target_id; i < parent_window->button_group_list.size() - 1; i++)
+			{
+				parent_window->button_group_list[i] = parent_window->button_group_list[i + 1];
+			}
+
+			parent_window->button_group_list.back() = swap_group;
+		}
+
+		//parent_window->button_group_list.
+	}
+}
+
 void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 {
 	if
@@ -2170,21 +2204,21 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	//**********************************************************************************************************************************************
 	//**********************************************************************************************************************************************
-	EButtonGroup* left_part = workspace_group->add_group(create_default_button_group(new ERegionGabarite(285.0f, 285.0f), _style));
+	EButtonGroup* left_part = workspace_group->add_group(create_default_button_group(new ERegionGabarite(265.0f, 285.0f), _style));
 	left_part->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	left_part->stretch_x_by_parent_size = false;
 	left_part->stretch_y_by_parent_size = true;
 
 
 	//**********************************************************************************************************************************************
-	EButtonGroup* value_and_alpha_part = left_part->add_group(create_default_button_group(new ERegionGabarite(10.0f, 100.0f), _style));
+	EButtonGroup* value_and_alpha_part = left_part->add_group(create_default_button_group(new ERegionGabarite(265.0f, 100.0f), _style));
 	value_and_alpha_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	value_and_alpha_part->stretch_x_by_parent_size = true;
 	value_and_alpha_part->stretch_y_by_parent_size = true;
 
 		// // // // // // //
 		EntityButton* 
-		jc_button = EntityButton::create_vertical_named_slider(new ERegionGabarite(240.0f, 30.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Прозрачность");
+		jc_button = EntityButton::create_vertical_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Прозрачность");
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->a;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 		value_and_alpha_part->button_list.push_back(jc_button);
@@ -2194,7 +2228,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 		// // // // // // //
 		
-		jc_button = EntityButton::create_vertical_named_slider(new ERegionGabarite(240.0f, 30.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Яркость");
+		jc_button = EntityButton::create_vertical_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Яркость");
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->v;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 		value_and_alpha_part->button_list.push_back(jc_button);
@@ -2204,7 +2238,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 
 	//**********************************************************************************************************************************************
-	EButtonGroup* hue_part = left_part->add_group(create_default_button_group(new ERegionGabarite(0.0f, 270.0f), _style));
+	EButtonGroup* hue_part = left_part->add_group(create_default_button_group(new ERegionGabarite(265.0f, 260.0f), _style));
 	hue_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	hue_part->stretch_x_by_parent_size = true;
 	hue_part->stretch_y_by_parent_size = false;
@@ -2256,14 +2290,14 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	control_button_segment->stretch_y_by_parent_size = false;
 	
 	//button "unbind color"
-	jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(150.0f, 20.0f), control_button_segment, &EDataActionCollection::action_unbing_color);
+	jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_unbing_color);
 	ETextArea* jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Отвязать от шаблона");
 	*jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 	control_button_segment->button_list.push_back(jc_button);
 	
 	//button "register new color"
-	jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(150.0f, 20.0f), control_button_segment, &EDataActionCollection::action_create_new_color);
+	jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_create_new_color);
 	jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Создать шаблон цвета");
 	*jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);

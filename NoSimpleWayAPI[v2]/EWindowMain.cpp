@@ -786,6 +786,8 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT),
 			EGUIStyle::active_style
 		);
+		main_button_group->parent_window = this;
+
 		main_button_group->actions_on_resize_window.push_back(&EDataActionCollection::action_resize_to_full_window);
 
 		main_button_group->root_group = main_button_group;
@@ -1172,6 +1174,7 @@ EWindowMain::EWindowMain()
 	{
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(10.0f, 10.0f, 0.0f, 512.0f, 800.0f), EGUIStyle::active_style);
+		main_button_group->parent_window = this;
 		main_button_group->root_group = main_button_group;
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
@@ -1234,6 +1237,7 @@ EWindowMain::EWindowMain()
 	{
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(400.0f, 300.0f, 0.0f, 410.0f, 600.0f), EGUIStyle::active_style);
+		main_button_group->parent_window = this;
 		main_button_group->root_group = main_button_group;
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		main_button_group->can_be_stretched_by_child = false;
@@ -1399,6 +1403,7 @@ EWindowMain::EWindowMain()
 	{
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(900.0f, 100.0f, 0.0f, 1250.0f, 600.0f), EGUIStyle::active_style);
+		main_button_group->parent_window = this;
 		main_button_group->root_group = main_button_group;
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		EButtonGroup::data_entity_filter = main_button_group;
@@ -1551,6 +1556,7 @@ EWindowMain::EWindowMain()
 
 		main_button_group = EButtonGroup::create_root_button_group
 		(new ERegionGabarite(400.0f, 100.0f, 0.0f, 400, 600.0f), EGUIStyle::active_style);
+		main_button_group->parent_window = this;
 		main_button_group->root_group = main_button_group;
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
@@ -1830,7 +1836,8 @@ EWindowMain::EWindowMain()
 	//color editor
 	if (true)
 	{
-		main_button_group = EButtonGroup::create_color_editor_group(new ERegionGabarite(200.0f, 200.0f, 980.0f, 380.0f), EGUIStyle::active_style);
+		main_button_group = EButtonGroup::create_color_editor_group(new ERegionGabarite(200.0f, 200.0f, 980.0f, 420.0f), EGUIStyle::active_style);
+		main_button_group->parent_window = this;
 		main_button_group->root_group = main_button_group;
 		main_button_group->is_active = false;
 		EButtonGroup::color_editor_group = main_button_group;
@@ -1847,6 +1854,7 @@ EWindowMain::EWindowMain()
 	{
 		EButtonGroup*
 			add_content_group = EButtonGroup::create_root_button_group(new ERegionGabarite(100.0f, 100.0f, 900.0f, 400.0f), EGUIStyle::active_style);
+		add_content_group->parent_window = this;
 		add_content_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
 		add_content_group->stretch_x_by_parent_size = false;
@@ -2005,6 +2013,7 @@ EWindowMain::EWindowMain()
 		ELocalisationText ltext;
 
 		EButtonGroup* whole_rarity_list_group = EButtonGroup::create_root_button_group(new ERegionGabarite(100.0f, 120.0f), EGUIStyle::active_style);
+		whole_rarity_list_group->parent_window = this;
 		EButtonGroup* workspace_rarity_group = whole_rarity_list_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);
 		workspace_rarity_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		select_rarity_button_group = whole_rarity_list_group;
@@ -2078,6 +2087,7 @@ EWindowMain::EWindowMain()
 		ELocalisationText ltext;
 
 		EButtonGroup* whole_quality_list_group = EButtonGroup::create_root_button_group(new ERegionGabarite(100.0f, 120.0f), EGUIStyle::active_style);
+		whole_quality_list_group->parent_window = this;
 		EButtonGroup* workspace_quality_group = whole_quality_list_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);
 		workspace_quality_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		select_quality_button_group = whole_quality_list_group;
@@ -2656,6 +2666,7 @@ EWindowMain::~EWindowMain()
 void EDataActionCollection::action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EButtonGroup::add_content_to_filter_block_group->is_active = true;
+	EButtonGroup::add_content_to_filter_block_group->move_to_foreground();
 
 	//_custom_data
 	EDataContainer_Button_OpenButtonGroup* button_plus_data = static_cast<EDataContainer_Button_OpenButtonGroup*>			(_custom_data->data_container);
@@ -2708,6 +2719,7 @@ void EDataActionCollection::action_add_selected_content_to_filter_block(Entity* 
 void EDataActionCollection::action_open_rarity_selector(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::select_rarity_button_group->is_active = true;
+	EWindowMain::select_rarity_button_group->move_to_foreground();
 
 	static_cast<EDataContainer_Group_TextSelectorFromVariants*>(EWindowMain::select_rarity_button_group->data_container)->target_button = static_cast<EntityButton*>(_entity);
 	//reg
@@ -2720,6 +2732,7 @@ void EDataActionCollection::action_open_rarity_selector(Entity* _entity, ECustom
 void EDataActionCollection::action_open_quality_selector(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::select_quality_button_group->is_active = true;
+	EWindowMain::select_quality_button_group->move_to_foreground();
 
 	static_cast<EDataContainer_Group_TextSelectorFromVariants*>(EWindowMain::select_quality_button_group->data_container)->target_button = static_cast<EntityButton*>(_entity);
 	//reg
