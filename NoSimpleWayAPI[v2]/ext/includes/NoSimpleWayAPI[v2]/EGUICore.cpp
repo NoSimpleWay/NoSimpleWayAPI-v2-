@@ -16,6 +16,7 @@ EButtonGroup* EButtonGroup::data_entity_filter					= nullptr;
 EButtonGroup* EButtonGroup::color_editor_group					= nullptr;
 EButtonGroup* EButtonGroup::add_content_to_filter_block_group	= nullptr;
 EButtonGroup* EButtonGroup::header_line							= nullptr;
+EButtonGroup* EButtonGroup::loot_filter_list					= nullptr;
 
 std::vector<FreshCreatedGroup*> EButtonGroup::fresh_created_block_list;
 
@@ -38,7 +39,11 @@ void EWindow::GUI_update_default(float _d)
 	for (int i = 0; i < button_group_list.size(); i++)
 	if ((button_group_list[i] != nullptr) && (button_group_list[i]->need_remove))
 	{
-		delete button_group_list[i];
+		if (!disable_deleting)
+		{
+			delete button_group_list[i];
+		}
+
 		EInputCore::logger_simple_success("Need remove [" + std::to_string(i) + "] element of button group list");
 
 		button_group_list.erase(button_group_list.begin() + i);
@@ -186,17 +191,32 @@ EButtonGroup::~EButtonGroup()
 	{
 		region_gabarite->pointers_to_this_object--;
 
-		if (region_gabarite->pointers_to_this_object <= 0) { delete region_gabarite; }
+		if (region_gabarite->pointers_to_this_object <= 0)
+		{
+			if (!disable_deleting)
+			{
+				delete region_gabarite;
+			}
+		}
 	}
 
 	for (int i = 0; i < button_list.size(); i++)
-	{delete button_list[i];}
+	{
+		if (!disable_deleting)
+		{
+			delete button_list[i];
+		}
+
+	}
 	button_list.clear();
 	button_list.shrink_to_fit();
 
 	for (int i = 0; i < group_list.size(); i++)
 	{
-		delete group_list[i];
+		if (!disable_deleting)
+		{
+			delete group_list[i];
+		}
 	};
 	group_list.clear();
 	group_list.shrink_to_fit();
@@ -224,7 +244,10 @@ void EButtonGroup::update(float _d)
 	for (int i = 0; i < group_list.size(); i++)
 	if ((group_list[i] != nullptr) && (group_list[i]->need_remove))
 	{
-		delete group_list[i];
+		if (!disable_deleting)
+		{
+			delete group_list[i];
+		}
 		EInputCore::logger_simple_success("Need remove [" + std::to_string(i) + "] child element of button group list");
 
 		group_list.erase(group_list.begin() + i);
@@ -237,23 +260,36 @@ void EButtonGroup::update(float _d)
 		}
 	}
 
+	bool any_button_order_change = false;
+
+	if (!button_list.empty())
+	for (unsigned int i = 0; i < button_list.size(); i++)
+	if (button_list[i]->need_remove)
+	{
+		any_button_order_change = true;
+
+		if (debug_deleting) EInputCore::logger_simple_info("Detect 'need remove', try remove");
+		if (!disable_deleting)
+		{
+			delete button_list[i];
+		}
+
+		button_list.erase(button_list.begin() + i);
+		
+		i--;
+
+	}
+
+	if (any_button_order_change)
+	{
+		EButtonGroup::change_group(this);
+	}
+
 	if (can_see_this_group())
 	{
 
 		//need remove button
-		if (!button_list.empty())
-		for (unsigned int i = 0; i < button_list.size(); i++)
-		if (button_list[i]->need_remove)
-		{
-			EntityButton* but = button_list[i];
-			button_list.erase(button_list.begin() + i);
-			delete but;
-			i--;
-
-			//change_group(this);
-
-			//refresh_buttons_in_group();
-		}
+		
 
 		{
 			for (EntityButton* but : button_list)

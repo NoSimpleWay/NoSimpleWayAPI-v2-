@@ -505,6 +505,7 @@ public:
 	static ESprite* create_default_sprite(ETextureGabarite* _gabarite, ESpriteLayer* _sprite_layer);
 	static void set_size(ESprite* _sprite, float _size_x, float _size_y, float _size_z);
 
+	bool marked_as_deleted;
 	
 };
 

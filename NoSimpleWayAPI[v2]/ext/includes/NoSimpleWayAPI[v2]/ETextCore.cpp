@@ -283,56 +283,65 @@ ETextArea::ETextArea(EClickableArea* _region, EFont* _font, std::string _text)
 
 ETextArea::~ETextArea()
 {
-	delete		error;
-	//delete[]	color;
-	delete[]	offset_border;
-	delete		font_scale;
-	//delete		&font;
-	delete		down_offset;
-
-	EInputCore::logger_simple_info("deleting text area");
-	if (region_gabarite != nullptr)
+	if (!disable_deleting)
 	{
-		(region_gabarite->pointers_to_this_object)--;
+		delete		error;
+		//delete[]	color;
+		
+		delete[]	offset_border;
+		//delete	offset_border;
 
-		if (region_gabarite->pointers_to_this_object <= 0)
+		delete		font_scale;
+		//delete		&font;
+		delete		down_offset;
+
+		EInputCore::logger_simple_info("deleting text area");
+		if (region_gabarite != nullptr)
 		{
-			delete region_gabarite;
-			EInputCore::logger_simple_success("deleting text area gabarite");
+			(region_gabarite->pointers_to_this_object)--;
+
+			if (region_gabarite->pointers_to_this_object <= 0)
+			{
+				if (!disable_deleting)
+				{
+					delete region_gabarite;
+				}
+				EInputCore::logger_simple_success("deleting text area gabarite");
+			}
 		}
+
+		delete		stored_text;
+
+		for (std::string* _row : row) { delete _row; }
+		row.clear();
+		row.shrink_to_fit();
+
+		delete row_count;
+		delete translate_region_gabarite;
+		//delete& master_clickable_region;
+		delete offset_by_gabarite_size_x;
+		delete offset_by_gabarite_size_y;
+		delete offset_by_text_size_x;
+		delete offset_by_text_size_y;
+
+		delete can_be_edited;
+		delete sprite_layer;
+
+		for (EFontGlyph* glyph : font_glyph_list)
+		{
+			delete glyph;
+		}
+		font_glyph_list.clear();
+		font_glyph_list.shrink_to_fit();
+
+		delete selected_glyph_position;
+		delete flash_line_active;
+		delete flash_line_cooldown;
+
+		delete jump_cooldown;
+		delete text_area_active;
+		delete _unused_border_offset;
 	}
-
-	delete		stored_text;
-
-	for (std::string* _row : row) { delete _row; }
-	row.clear();
-	row.shrink_to_fit();
-
-	delete row_count;
-	delete translate_region_gabarite;
-	//delete& master_clickable_region;
-	delete offset_by_gabarite_size_x;
-	delete offset_by_gabarite_size_y;
-	delete offset_by_text_size_x;
-	delete offset_by_text_size_y;
-
-	delete can_be_edited;
-	delete sprite_layer;
-
-	for (EFontGlyph* glyph : font_glyph_list)
-	{
-		delete glyph;
-	}
-	font_glyph_list.clear();
-	font_glyph_list.shrink_to_fit();
-
-	delete selected_glyph_position;
-	delete flash_line_active;
-	delete flash_line_cooldown;
-
-	delete jump_cooldown;
-	delete text_area_active;
-	delete _unused_border_offset;
 
 }
 
@@ -351,7 +360,10 @@ void ETextArea::generate_rows()
 		for (int i = 0; i < row.size(); i++)
 			if (row.at(i) != nullptr)
 			{
-				delete row.at(i);
+				if (!disable_deleting)
+				{
+					delete row.at(i);
+				}
 			}
 
 		row.clear();
@@ -435,7 +447,10 @@ void ETextArea::generate_text()
 	{
 		for (int i = 0; i < font_glyph_list.size(); i++)
 		{
-			delete font_glyph_list.at(i);
+			if (!disable_deleting)
+			{
+				delete font_glyph_list.at(i);
+			}
 		}
 
 		font_glyph_list.clear();
@@ -450,7 +465,7 @@ void ETextArea::generate_text()
 			(region_gabarite != nullptr)
 			&&
 			(font != nullptr)
-			)
+		)
 	{
 		//if (*selected_color_table == TextColorArray::FREE)
 		{NS_EGraphicCore::set_active_color(&color); }
@@ -459,7 +474,10 @@ void ETextArea::generate_text()
 
 		if (sprite_layer->vertex_buffer != nullptr)
 		{
-			delete sprite_layer->vertex_buffer;
+			if (!disable_deleting)
+			{
+				delete sprite_layer->vertex_buffer;
+			}
 		}
 
 

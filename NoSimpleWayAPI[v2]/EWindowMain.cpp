@@ -19,11 +19,23 @@
 /**/
 
 #include <chrono>
+#include <windows.h>
+#include <Lmcons.h>
+#include <shlobj.h>
+
+#define _SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING
+#include <experimental/filesystem>
 
 //class Entity;
-EWindowMain* EWindowMain::link_to_main_window;
-EButtonGroup* EWindowMain::select_rarity_button_group;
-EButtonGroup* EWindowMain::select_quality_button_group;
+EWindowMain*	EWindowMain::link_to_main_window;
+
+EButtonGroup*	EWindowMain::select_rarity_button_group;
+EButtonGroup*	EWindowMain::select_quality_button_group;
+
+
+
+std::string		EWindowMain::username;
+std::string		EWindowMain::path_of_exile_folder;
 
 void EWindowMain::draw_additional(float _d)
 {
@@ -157,11 +169,59 @@ void EDataActionCollection::action_select_this_filter_variant(Entity* _entity, E
 	
 }
 
+void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EButtonGroup::loot_filter_list->is_active = true;
+	EButtonGroup::loot_filter_list->move_to_foreground();
+	EWindowMain::load_loot_filter_list();
+	EButtonGroup::refresh_button_group(EButtonGroup::loot_filter_list);
+
+}
+
 
 EWindowMain::EWindowMain()
 {
 
+	//REGISTER USERNAME
+	TCHAR name[UNLEN + 1];
+	DWORD size = UNLEN + 1;
+
+	if (GetUserName(name, &size))
+	{
+		//std::string zalupa = *(new std::string(name));
+
+		username = EStringUtils::UTF8_to_ANSI(name);
+		std::cout << "Hello, " << username << "!\n";
+	}
+	else
+	{
+		std::cout << "Hello, unnamed person!\n";
+	}
+
+	//DEFINE PATH TO FOLDER WITH LOOT-FILTERS
+	CHAR my_documents[MAX_PATH];
+	HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, my_documents);
+
+	if (result != S_OK)
+	{
+		std::cout << "Error: " << result << "\n";
+	}
+	else
+	{
+		/*
+		for (int i = 0; i < MAX_PATH; i++)
+		{
+			cout << "symbol at " << i << "is= " << my_documents[i] << endl;
+		}
+		*/
+
+		path_of_exile_folder = (std::string)my_documents + "\\My Games\\Path of Exile\\";
+		std::cout << "Path to loot-filters folder: " << path_of_exile_folder << "\n";
+
+	}
+
 	register_filter_rules();
+
 
 	FilterBlockAttribute* jc_filter_block_attribute;
 	ELocalisationText		jc_localisation;
@@ -2141,6 +2201,83 @@ EWindowMain::EWindowMain()
 		whole_quality_list_group->is_active = false;
 	}
 
+	//loot-filter list
+	{
+		main_button_group = EButtonGroup::create_root_button_group
+		(
+			new ERegionGabarite(512.0f, 256.0f, 1060.0f, 512.0f),
+			EGUIStyle::active_style
+		);
+		EButtonGroup::loot_filter_list = main_button_group;
+
+		auto whole_loot_filter_group = static_cast<EButtonGroupLootFilterList*>(main_button_group);
+
+
+		main_button_group->parent_window = this;
+
+		main_button_group->root_group = main_button_group;
+		main_button_group->can_be_moved = true;
+		main_button_group->can_resize_to_workspace_size_x = true;
+		main_button_group->can_resize_to_workspace_size_y = true;
+
+		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+
+		EButtonGroup* loot_filters_list_workspace_part = main_button_group->add_close_group_and_return_workspace_group
+		(
+			new ERegionGabarite(1.0f, 20.0f),
+			EGUIStyle::active_style
+		)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+		///////////////		LOOT-FILTERS LIST PART		///////////////
+		EButtonGroup* loot_filter_list_part = loot_filters_list_workspace_part->add_group
+		(
+			EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(1.0f, 1.0f),
+				EGUIStyle::active_style
+			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
+		);
+
+		///////////////		SEARCH INPUT PART		///////////////
+		EButtonGroup* search_input_part = loot_filters_list_workspace_part->add_group
+		(
+			EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(1.0f, 32.0f),
+				EGUIStyle::active_style
+			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize)
+		);
+
+
+		/// set data parameters
+		whole_loot_filter_group->part_with_list = loot_filter_list_part;
+
+
+
+		load_loot_filter_list();
+
+		for (int i = 0; i < 2; i++)
+		{
+			EntityButton* but = EntityButton::create_default_clickable_button_with_unedible_text
+			(
+				new ERegionGabarite(128.0f, 32.0f),
+				loot_filter_list_part,
+				nullptr,
+				"ZZZ"
+			);
+			loot_filter_list_part->button_list.push_back(but);
+		}
+
+		button_group_list.push_back(main_button_group);
+		EButtonGroup::refresh_button_group(main_button_group);
+	}
+
+
+	////////////////////////////////////////////////////////////////
+	// 
+	//		#LOCKED VECTOR ORDER
+	// 
+	//////////////////////////////////////////////////////////////// 
 	//head button group
 	{
 		main_button_group = EButtonGroup::create_root_button_group
@@ -2189,7 +2326,7 @@ EWindowMain::EWindowMain()
 				(
 					new ERegionGabarite(45.0f, 45.0f),
 					top_section,
-					nullptr,
+					&EDataActionCollection::action_open_loot_filters_list_window,
 					NS_EGraphicCore::load_from_textures_folder("button_open")
 				)
 			);
@@ -2230,6 +2367,8 @@ EWindowMain::EWindowMain()
 		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
+
+
 
 }
 
@@ -2754,6 +2893,102 @@ void EWindowMain::register_filter_rules()
 EWindowMain::~EWindowMain()
 {
 
+}
+
+void EWindowMain::load_loot_filter_list()
+{
+	//EString::loot_filter_path_list.clear();
+	//EString::loot_filter_name_list.clear();
+
+	auto			loot_filter_group	= static_cast<EButtonGroupLootFilterList*>(EButtonGroup::loot_filter_list);
+	EButtonGroup*	part_with_list		= loot_filter_group->part_with_list;
+
+	std::vector<EntityButton*> deleted_buttons;
+
+	//EInputCore::logger_param("size of elements - part_with_list->button_list", part_with_list->button_list.size());
+
+	for (int i = 0; i < part_with_list->button_list.size(); i++)
+	{
+		EntityButton* but = part_with_list->button_list[i];
+
+		if (but != part_with_list->slider)
+		{
+			but->need_remove	= true;
+			but->disabled		= true;
+			but->disable_draw	= true;
+
+			//part_with_list->button_list.erase(part_with_list->button_list.begin() + i);
+			
+			//i--;
+
+			
+		}
+	}
+
+	//for (int z = 0; z < (deleted_buttons.size()) - 1; z++ )
+	//{
+	//	std::cout << "---------------------------------------------------------------------------------------------------" << std::endl;
+
+	//	EInputCore::logger_param("try delete " , std::to_string(z) + "/" + std::to_string(deleted_buttons.size()));
+	//	//delete deleted_buttons[i];
+	//	EInputCore::logger_simple_success("deleted");
+	//}
+
+
+
+
+	//part_with_list->button_list.clear();
+	
+	//part_with_list->button_list.shrink_to_fit();
+
+	for (auto& p : std::experimental::filesystem::directory_iterator(path_of_exile_folder))
+	{
+		std::string filter_path			= p.path().u8string();
+
+		std::string loot_filter_name	= p.path().filename().u8string();
+
+		//EInputCore::logger_param("detect file:", filter_path);
+		//writer << custom_sound << endl;;
+
+
+
+
+		if
+		(
+			(loot_filter_name.length() >= 8)
+			&&
+			(EStringUtils::to_lower(loot_filter_name.substr(loot_filter_name.length() - 7, 7)) == ".filter")
+		)
+		{
+
+			
+			//cout <<"It sound!" << '\n'<<'\n';
+
+			//for (int i = 0; i < 10; i ++)
+			{
+				EntityButton* loot_filter_button = EntityButton::create_default_clickable_button_with_unedible_text
+				(
+					new ERegionGabarite(256.0f, 48.0f),
+					part_with_list,
+					nullptr,
+					EStringUtils::UTF8_to_ANSI(loot_filter_name.substr(0, loot_filter_name.length() - 7))
+				);
+
+				//EInputCore::logger_simple_info("try push back");
+
+				part_with_list->button_list.push_back(loot_filter_button);
+			}
+			//EInputCore::logger_simple_success("push back");
+
+			//EInputCore::logger_simple_success("It filter!");
+			//EStringUtils::loot_filter_path_list.push_back(UTF8_to_ANSI(loot_filter_name));
+			//EStringUtils::loot_filter_name_list.push_back(UTF8_to_ANSI(p.path().filename().u8string().substr(0, p.path().filename().u8string().length() - 7)));
+
+			//std::cout << "It filter! " << p.path().filename().u8string() << '\n' << '\n';
+
+			//ESound::custom_drop_sound.push_back(ESound::engine->addSoundSourceFromFile(custom_sound.c_str()));
+		}
+	}
 }
 
 void EDataActionCollection::action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d)

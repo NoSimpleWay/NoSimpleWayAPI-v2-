@@ -197,7 +197,7 @@ public:
 	void translate(float _x, float _y, float _z, bool _translate_local_coordinate);
 
 	float* offset_border = new float[BorderSide::_LAST_ELEMENT] {0.0f};
-
+	
 	EClickableArea* parent_clickable_region;
 	EntityButton* parent_entity;
 

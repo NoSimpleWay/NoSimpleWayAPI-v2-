@@ -2765,6 +2765,13 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 
 	if ((_region != nullptr) && (_sprite_layer != nullptr) && (_texture_gabarite != nullptr))
 	{
+		for (int i = 0; i < _sprite_layer->sprite_frame_list.size(); i++)
+		{
+			delete _sprite_layer->sprite_frame_list[i];
+		}
+		_sprite_layer->sprite_frame_list.resize(0);
+		_sprite_layer->sprite_frame_list.shrink_to_fit();
+
 		_sprite_layer->batcher = NS_EGraphicCore::pbr_batcher;
 
 		//dynamic
@@ -3011,6 +3018,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 		//	_sprite_layer->sprite_frame_list[i]->sprite_list[0]->reset_sprite();
 		//}
 
+			if (false)
 		if (!_sprite_layer->sprite_frame_list.empty())
 		{
 			for (int i = current_sprite_frame_id; i < _sprite_layer->sprite_frame_list.size(); i++)
@@ -3019,7 +3027,10 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 				//frm->sprite_list[0]->reset_sprite();
 				//std::cout << "deleting sprite frame at[" << std::to_string(i) << "]" << std::endl;
 
-				delete _sprite_layer->sprite_frame_list.at(i);
+				if (!disable_deleting)
+				{
+					delete _sprite_layer->sprite_frame_list.at(i);
+				}
 			}
 			//_sprite_layer->last_buffer_id = 0;
 			//_sprite_layer->total_capacity = 0;
@@ -3186,7 +3197,10 @@ ESpriteLayer::~ESpriteLayer()
 {
 
 	//delete &batcher;
-	delete vertex_buffer;
+	if (!disable_deleting)
+	{
+		delete vertex_buffer;
+	}
 
 
 	for (ESpriteFrame* frame : sprite_frame_list)
@@ -3302,6 +3316,7 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 		//if (sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4 >= *last_buffer_id)
 		{
 			delete[] vertex_buffer; 
+			//delete vertex_buffer; 
 			vertex_buffer = new float[sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4];
 			//EInputCore::logger_param("length", sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4);
 			total_capacity = sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4;
@@ -3616,6 +3631,7 @@ ESprite::~ESprite()
 	//delete &main_texture;
 	//delete &master_sprite_layer;
 	delete[] sprite_color;
+	//delete sprite_color;
 
 	//delete fragment_size_x;
 	//delete fragment_size_y;
@@ -3825,15 +3841,21 @@ EColor_4 const (&NS_EColorUtils::choose_from_two(const EColor_4(&_color1)[4], co
 
 ESpriteFrame::~ESpriteFrame()
 {
-	for (int i = 0; i < sprite_list.size() * 0; i++)
+	if (!disable_deleting)
 	{
-		delete sprite_list.at(i);
+		for (int i = 0; i < sprite_list.size() /* * 0*/; i++)
+		{
+			delete sprite_list.at(i);
+		}
 	}
 	//for (ESprite* sl:sprite_list) { delete sl; }
 	sprite_list.clear();
 	sprite_list.shrink_to_fit();
 
-	delete active_frame_id;
+	if (!disable_deleting)
+	{
+		delete active_frame_id;
+	}
 }
 
 ESpriteFrame* ESpriteFrame::create_default_sprite_frame()

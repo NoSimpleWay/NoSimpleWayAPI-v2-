@@ -30,6 +30,8 @@ constexpr int CLUSTER_SIZE_Y = 300;
 
 
 
+
+
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
 class EDataContainer_Group_TextSelectorFromVariants : public EDataContainer
 {
@@ -44,7 +46,7 @@ public:
 };
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
 
-
+//BUTTONS
 class EntityButtonFilterBlock : public EntityButton
 {
 public:
@@ -54,27 +56,42 @@ public:
 class EntityButtonFilterRule : public EntityButton
 {
 public:
-	EFilterRule*								target_filter_rule;
-	EDataContainer_Group_DataEntitiesSearch*	target_data_container;
+	EFilterRule* target_filter_rule;
+	EDataContainer_Group_DataEntitiesSearch* target_data_container;
 
 };
 
+
+
+//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
+//EButtonGroup
+class EButtonGroupLootFilterList : public EButtonGroup
+{
+public:
+	EButtonGroup* part_with_list;
+	ETextArea* input_field;
+};
+
+
+
 namespace EDataActionCollection
 {
-	void action_open_add_content_window					(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_add_selected_content_to_filter_block	(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_selected_content_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
-	void action_open_rarity_selector					(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_open_quality_selector					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_rarity_selector(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_quality_selector(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_select_this_text_variant				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_text_variant(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_mark_parent_group_as_removed			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_mark_parent_group_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_generate_filter_block_text				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_generate_filter_block_text(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_select_this_filter_variant				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_filter_variant(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_open_loot_filters_list_window(Entity* _entity, ECustomData* _custom_data, float _d);
 }
 
 enum FilterAttributeType
@@ -100,7 +117,7 @@ class FilterBlockAttribute
 public:
 	FilterAttributeType			filter_attribute_type;
 	FilterAttributeValueType	filter_attribute_value_type;
-	EFilterRule*				filter_rule;
+	EFilterRule* filter_rule;
 
 	bool have_operator = false;
 
@@ -111,8 +128,8 @@ public:
 	bool						always_present;
 };
 
-static void add_filter_block_buttons_to_filter_block	(EButtonGroup* _target_group, FilterBlockAttribute* _filter_block_attribute);
-static std::string generate_filter_block_text				(EButtonGroup* _button_group);
+static void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_group, FilterBlockAttribute* _filter_block_attribute);
+static std::string generate_filter_block_text(EButtonGroup* _button_group);
 
 
 static std::vector<FilterBlockAttribute*> registered_filter_block_attributes;
@@ -137,6 +154,13 @@ public:
 
 	static EButtonGroup* select_rarity_button_group;
 	static EButtonGroup* select_quality_button_group;
+
+	static std::string username;
+	static std::string path_of_exile_folder;
+
+	static void load_loot_filter_list();
+
+	//static bool disable_deleting = true;
 
 
 };

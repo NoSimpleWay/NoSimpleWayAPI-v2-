@@ -347,6 +347,7 @@ public:
 	static EButtonGroup* color_editor_group;
 	static EButtonGroup* add_content_to_filter_block_group;
 	static EButtonGroup* header_line;
+	static EButtonGroup* loot_filter_list;
 
 	void translate(float _x, float _y, float _z, bool _affect_child);
 	void translate_content(float _x, float _y, float _z, bool _move_slider);

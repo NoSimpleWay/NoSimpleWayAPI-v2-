@@ -237,26 +237,54 @@ Entity::~Entity()
 	//delete world_position_z;
 
 	//
-	EInputCore::logger_simple_info("deleting base entity");
+	if (debug_deleting)EInputCore::logger_simple_info("start deleting base entity");
 	if (!custom_data_list.empty())
 	{
+		if (debug_deleting)EInputCore::logger_simple_info("start deleting custom data");
+
 		//std::vector<ECustomData*>::iterator ib = custom_data_list.begin(), ie = custom_data_list.end();
 		for (ECustomData* custom_data:custom_data_list)
 		{
-			delete custom_data;
+			if (debug_deleting)EInputCore::logger_simple_info("try delete custom data");
+			if (!disable_deleting)
+			{
+				delete custom_data;
+			}
+			if (debug_deleting)EInputCore::logger_simple_success("custom data deleted");
+
 		}
+
+		if (debug_deleting)EInputCore::logger_simple_success("all custom data deleted");
 
 		custom_data_list.clear();
 		custom_data_list.shrink_to_fit();
+
+		if (debug_deleting)EInputCore::logger_simple_success("custom data list cleared and shrinked");
+
+
 	}
+	
 
 	if (!sprite_layer_list.empty())
 	{
+		if (debug_deleting)EInputCore::logger_simple_info("start deleting sprite layers");
+		
 		for (ESpriteLayer* sl:sprite_layer_list)
-		{ delete sl; }
+		{ 
+			if (debug_deleting)EInputCore::logger_simple_info("try delete sprite layer");
+			if (!disable_deleting)
+			{
+				delete sl;
+			}
+			if (debug_deleting)EInputCore::logger_simple_success("delete sprite layer");
+
+		}
+		if (debug_deleting)EInputCore::logger_simple_success("all sprite layers deleted");
 
 		sprite_layer_list.clear();
 		sprite_layer_list.shrink_to_fit();
+
+		if (debug_deleting)EInputCore::logger_simple_success("sprite layer list cleared and shrinked");
 
 	}
 
@@ -1119,18 +1147,23 @@ void EntityButton::add_description(std::string _text)
 
 EntityButton::~EntityButton()
 {
-	EInputCore::logger_simple_success("deleting entity button");
+	if (debug_deleting) EInputCore::logger_simple_info("try deleting entity button");
 	if (button_gabarite != nullptr)
 	{
 		(button_gabarite->pointers_to_this_object)--;
 
-		EInputCore::logger_param("pointers left", button_gabarite->pointers_to_this_object);
+		if (debug_deleting) EInputCore::logger_param("pointers to button gabarite left", button_gabarite->pointers_to_this_object);
 
 		if (button_gabarite->pointers_to_this_object <= 0)
 		{
-			
-			delete button_gabarite;
-			EInputCore::logger_simple_success("deleting button gabarite");
+			if (debug_deleting) EInputCore::logger_simple_info("try delete button gabarite");
+
+			if (!disable_deleting)
+			{
+				delete button_gabarite;
+			}
+
+			if (debug_deleting) EInputCore::logger_simple_success("delete button gabarite");
 		}
 	}
 
@@ -1141,17 +1174,18 @@ EntityButton::~EntityButton()
 	//delete fixed_position;
 	//delete update_when_scissored;
 
+	if (debug_deleting) EInputCore::logger_simple_info("try clear and shrink action on change style");
 	action_on_change_style_list.clear();
 	action_on_change_style_list.shrink_to_fit();
-
+	if (debug_deleting) EInputCore::logger_simple_success("clear and shrink action on change style");
 	//EInputCore::logger_simple_try("delete entity button");
 
-	if ((parent_button_group != nullptr) && (!parent_button_group->need_remove))
-	{
-		//EButtonGroup::change_group(parent_button_group->root_group);
-		EButtonGroup::change_group(parent_button_group->parent_group);
-		parent_button_group->refresh_buttons_in_group();
-	}
+	//if ((parent_button_group != nullptr) && (!parent_button_group->need_remove))
+	//{
+	//	//EButtonGroup::change_group(parent_button_group->root_group);
+	//	EButtonGroup::change_group(parent_button_group->parent_group);
+	//	parent_button_group->refresh_buttons_in_group();
+	//}
 }
 
 void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)

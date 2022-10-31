@@ -9,6 +9,9 @@
 #define bgroup_default_bg true
 #define bgroup_darken_bg false
 
+#define disable_deleting	false
+#define debug_deleting		false
+
 class ECustomData;
 class ERegionGabarite;
 class EClickableArea;
