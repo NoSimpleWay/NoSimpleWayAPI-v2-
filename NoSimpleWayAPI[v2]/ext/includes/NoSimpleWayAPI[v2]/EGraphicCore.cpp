@@ -3071,6 +3071,9 @@ void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, i
 			{
 				//EInputCore::logger_simple_info("try call GWRA");
 				gwra(bg);
+
+				//EButtonGroup::change_style(bg, bg->selected_style);
+				//EButtonGroup::refresh_button_group(bg);
 			}
 		}
 	}

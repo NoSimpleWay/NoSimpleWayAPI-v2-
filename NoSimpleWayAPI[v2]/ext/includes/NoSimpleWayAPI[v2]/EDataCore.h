@@ -288,7 +288,7 @@ public:
 class EFilterRule
 {
 public:
-	ELocalisationText*					localisation_text = nullptr;
+	ELocalisationText* localisation_text = nullptr;
 
 	std::vector<DataEntityFilter*>		required_tag_list;
 	std::vector<DataEntityFilter*>		banned_tag_list;
@@ -296,7 +296,7 @@ public:
 	static	std::vector<EFilterRule*>	registered_global_filter_rules;
 	static	std::vector<EFilterRule*>	registered_filter_rules_for_list;
 
-	
+
 	std::string							tag = "";
 };
 
@@ -427,8 +427,8 @@ public:
 
 
 	//color section
-	EntityButton*	pointer_to_color_button[3];
-	EntityButton*	pointer_to_color_check_button[3];
+	EntityButton* pointer_to_color_button[3];
+	EntityButton* pointer_to_color_check_button[3];
 	bool			color_check[3];
 };
 
@@ -542,6 +542,7 @@ namespace EDataActionCollection
 
 	//window resize
 	void action_resize_to_full_window(EButtonGroup* _group);
+	void action_resize_to_full_window_only_x(EButtonGroup* _group);
 
 	//draw actions
 	void action_draw_boolean_switcher(Entity* _entity, ECustomData* _custom_data, float _d);

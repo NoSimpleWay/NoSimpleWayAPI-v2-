@@ -195,6 +195,7 @@ public:
 	//int* order_in_vector = new int(0);
 	static EButtonGroup* focused_button_group;
 	static EButtonGroup* focused_button_group_with_slider;
+	static EButtonGroup* catched_group_for_translation;
 
 	bool need_remove = false;
 
@@ -244,7 +245,8 @@ public:
 
 	ESpriteLayer* background_sprite_layer = nullptr;
 
-	bool can_resize_to_workspace_size = true;
+	bool can_resize_to_workspace_size_x = true;
+	bool can_resize_to_workspace_size_y = true;
 
 	float border_bottom	=  (0.0f);
 	float border_up		=  (0.0f);
@@ -309,19 +311,21 @@ public:
 
 	static void stretch_parent_group(EButtonGroup* _group, float _new_y_size);
 
-	bool have_bg					= (true);
-	bool can_be_focused				= (true);
-	bool is_active					= (true);
+	bool have_bg						= (true);
+	bool can_be_focused					= (true);
+	bool is_active						= (true);
 
-	bool force_new_line				= (false);
-	bool parent_have_slider			= (false);
-	bool need_redraw				= (false);
-	bool can_be_stretched_by_child	= (false);
+	bool force_new_line					= (false);
+	bool parent_have_slider				= (false);
+	bool need_redraw					= (false);
+	bool can_be_stretched_by_child		= (false);
 
-	bool stretch_x_by_parent_size	= (false);
-	bool stretch_y_by_parent_size	= (false);
+	bool stretch_x_by_parent_size		= (false);
+	bool stretch_y_by_parent_size		= (false);
 
-	bool have_slider				= (false);
+	bool have_slider					= (false);
+
+	bool can_change_position_in_vector	= true;
 
 	EButtonGroup* add_group(EButtonGroup* _new_group);
 

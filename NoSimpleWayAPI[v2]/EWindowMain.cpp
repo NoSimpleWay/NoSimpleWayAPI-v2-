@@ -792,7 +792,8 @@ EWindowMain::EWindowMain()
 
 		main_button_group->root_group = main_button_group;
 		main_button_group->can_be_moved = false;
-		main_button_group->can_resize_to_workspace_size = false;
+		main_button_group->can_resize_to_workspace_size_x = false;
+		main_button_group->can_resize_to_workspace_size_y = false;
 
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		//*main_button_group->stretch_mode		= GroupStretchMode::CONSTANT;
@@ -1268,7 +1269,9 @@ EWindowMain::EWindowMain()
 			EButtonGroup*
 				style_group = worspace_group->add_group
 				(EButtonGroup::create_root_button_group(new ERegionGabarite(max_size_x, 20.0f), style));
-			style_group->can_resize_to_workspace_size = false;
+			style_group->can_resize_to_workspace_size_x = false;
+			style_group->can_resize_to_workspace_size_y = false;
+
 			style_group->can_be_stretched_by_child = true;
 
 			style_group->stretch_x_by_parent_size = true;
@@ -2137,6 +2140,93 @@ EWindowMain::EWindowMain()
 		whole_quality_list_group->is_active = false;
 	}
 
+	//head button group
+	{
+		main_button_group = EButtonGroup::create_root_button_group
+		(
+			new ERegionGabarite(NS_EGraphicCore::SCREEN_WIDTH, 76.0f),
+			EGUIStyle::active_style
+		);
+		main_button_group->region_gabarite->offset_y = NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom - main_button_group->region_gabarite->size_y;
+
+		main_button_group->parent_window = this;
+
+		main_button_group->root_group = main_button_group;
+		main_button_group->can_be_moved = false;
+		main_button_group->can_resize_to_workspace_size_x = false;
+		main_button_group->can_resize_to_workspace_size_y = true;
+
+		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+
+		main_button_group->actions_on_resize_window.push_back(&EDataActionCollection::action_resize_to_full_window_only_x);
+
+		EButtonGroup* bottom_section = main_button_group->add_group
+		(
+			EButtonGroup::create_button_group_without_bg
+			(
+				new ERegionGabarite(1.0f, 1.0f),
+				EGUIStyle::active_style
+			)
+		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+		EButtonGroup* top_section = main_button_group->add_group
+		(
+			EButtonGroup::create_button_group_without_bg
+			(
+				new ERegionGabarite(1.0f, 46.0f),
+				EGUIStyle::active_style
+			)
+		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+		
+		//////////////////////////////////////////////////////
+
+			jc_button = static_cast<EntityButtonFilterBlock*>
+			(
+				EntityButton::create_default_clickable_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section,
+					nullptr,
+					NS_EGraphicCore::load_from_textures_folder("button_open")
+				)
+			);
+			top_section->button_list.push_back(jc_button);
+
+		//////////////////////////////////////////////////////
+
+			jc_button = static_cast<EntityButtonFilterBlock*>
+			(
+				EntityButton::create_default_clickable_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section,
+					nullptr,
+					NS_EGraphicCore::load_from_textures_folder("button_save")
+				)
+			);
+			top_section->button_list.push_back(jc_button);
+
+		//////////////////////////////////////////////////////
+
+		for (int i = 0; i < 5; i++)
+		{
+			jc_button = EntityButton::create_default_clickable_button_with_unedible_text
+			(
+				new ERegionGabarite(120.0f, 26.0f),
+				bottom_section,
+				&EDataActionCollection::action_select_this_button,
+				"Filter tab #" + std::to_string(i)
+			);
+
+			bottom_section->button_list.push_back(jc_button);
+		}
+
+		//////////////////////////////////////////////////////
+
+
+		button_group_list.push_back(main_button_group);
+		EButtonGroup::refresh_button_group(main_button_group);
+	}
 
 }
 

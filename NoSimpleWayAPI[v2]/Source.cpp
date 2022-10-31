@@ -177,7 +177,14 @@ int main()
 		//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
 		NS_EGraphicCore::gl_set_blend_mode_default();
 		
-		if (!EInputCore::MOUSE_BUTTON_LEFT) { EButtonGroup::focused_button_group = nullptr; EClickableArea::active_clickable_region = nullptr; }
+		if (!EInputCore::MOUSE_BUTTON_LEFT)
+		{
+			EButtonGroup::focused_button_group			= nullptr;
+			EButtonGroup::catched_group_for_translation = nullptr;
+			EClickableArea::active_clickable_region		= nullptr;
+
+		}
+
 		if (EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
 		{
 			EButtonGroup::focused_button_group_with_slider = nullptr;

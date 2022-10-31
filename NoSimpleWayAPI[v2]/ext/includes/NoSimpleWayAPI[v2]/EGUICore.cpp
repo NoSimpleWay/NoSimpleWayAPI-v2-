@@ -7,6 +7,7 @@
 std::vector<EWindow*> EWindow::window_list;
 
 EButtonGroup* EButtonGroup::focused_button_group = nullptr;
+EButtonGroup* EButtonGroup::catched_group_for_translation = nullptr;
 
 //EButtonGroup* EButtonGroup::focused_button_group;
 EButtonGroup* EButtonGroup::focused_button_group_with_slider = nullptr;
@@ -326,9 +327,22 @@ void EButtonGroup::update(float _d)
 			//(EButtonGroup::focused_button_group == root_group)
 		)
 		&&
-		(EClickableArea::active_clickable_region == nullptr))
+		(EClickableArea::active_clickable_region == nullptr)
+		&&
+		(
+			(EButtonGroup::catched_group_for_translation == root_group)
+			||
+			(EButtonGroup::catched_group_for_translation == nullptr)
+		)
+	)
 	{
-		root_group->move_to_foreground();
+		if (EButtonGroup::catched_group_for_translation == nullptr)
+		{
+			EButtonGroup::catched_group_for_translation = root_group;
+			root_group->move_to_foreground();
+		}
+
+		
 		root_group->translate(EInputCore::MOUSE_SPEED_X / NS_EGraphicCore::current_zoom, EInputCore::MOUSE_SPEED_Y / NS_EGraphicCore::current_zoom, 0.0f, true);
 	}
 	else
@@ -888,21 +902,16 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 			_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("Button group background");
 		}
 
-		if (_group->slider != nullptr)
-		{
-			for (change_style_action csa : _group->slider->action_on_change_style_list)
-			{
-				csa(_group->slider, _group->selected_style);
-
-				//_group->slider->generate_vertex_buffer_for_all_sprite_layers();
-			}
-			_group->slider->set_world_position(_group->slider->world_position_x, _group->slider->world_position_y, _group->slider->world_position_z);
-			_group->slider->generate_vertex_buffer_for_all_sprite_layers();
-		}
 
 		
 		for (EntityButton* but : _group->button_list)
 		{
+			for (change_style_action csa : but->action_on_change_style_list)
+			{
+				csa(but, _group->selected_style);
+
+				//_group->slider->generate_vertex_buffer_for_all_sprite_layers();
+			}
 			but->set_world_position(but->world_position_x, but->world_position_y, but->world_position_z);
 			but->generate_vertex_buffer_for_all_sprite_layers();
 		}
@@ -1181,9 +1190,14 @@ void EButtonGroup::check_slider()
 
 void EButtonGroup::expand_to_workspace_size()
 {
-	if (can_resize_to_workspace_size)
+	if (can_resize_to_workspace_size_x)
 	{
 		region_gabarite->size_x = base_width + border_left + border_right;
+		
+	}
+
+	if (can_resize_to_workspace_size_y)
+	{
 		region_gabarite->size_y = base_height + border_bottom + border_up;
 	}
 
@@ -1196,7 +1210,10 @@ void EButtonGroup::expand_to_workspace_size()
 void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 {
 	
+
+
 	_group->expand_to_workspace_size();
+
 
 	_group->substretch_groups_y();
 	//_group->check_slider();
@@ -1655,6 +1672,8 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 	//_group->region_gabarite->phantom_translate_y = 0.0f;
 	//_group->region_gabarite->phantom_translate_z = 0.0f;
 
+
+
 	_group->need_redraw = true;
 	_group->phantom_translate_if_need();
 
@@ -1685,18 +1704,20 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 			);
 		}
 
+
+
 		for (EntityButton* but : _group->button_list)
 		{
 			for (change_style_action csa : but->action_on_change_style_list)
 			{
-				csa(but, _style);
+				//csa(but, _style);
 
 				//but->generate_vertex_buffer_for_all_sprite_layers();
 			}
 		}
 
 		//_group->refresh_button_group(_group);
-}
+	}
 
 	
 
@@ -2020,11 +2041,12 @@ EButtonGroup* EButtonGroup::set_parameters(ChildAlignMode _child_align_mode, boo
 
 void EButtonGroup::move_to_foreground()
 {
-	if ((parent_window != nullptr) && (parent_window->button_group_list.back() != this))
+	if ((can_change_position_in_vector) && (parent_window != nullptr))
 	{
 		//EButtonGroup* target_group = nullptr;
 
-		int target_id = -1;
+		int target_id	= -1;
+		int last_id		= -1;
 
 		for (int i = 0; i < parent_window->button_group_list.size(); i++)
 		if (parent_window->button_group_list[i] == this)
@@ -2034,16 +2056,22 @@ void EButtonGroup::move_to_foreground()
 			break;
 		}
 
-		if (target_id >= 0)
+		for (int i = target_id + 1; i < parent_window->button_group_list.size() - 1; i++)
+		if (parent_window->button_group_list[i]->can_change_position_in_vector)
+		{
+			last_id = i;
+		}
+
+		if ((target_id >= 0) && (last_id >= 0))
 		{
 			EButtonGroup* swap_group = this;
 
-			for (int i = target_id; i < parent_window->button_group_list.size() - 1; i++)
+			for (int i = target_id; i < last_id; i++)
 			{
 				parent_window->button_group_list[i] = parent_window->button_group_list[i + 1];
 			}
 
-			parent_window->button_group_list.back() = swap_group;
+			parent_window->button_group_list[last_id] = swap_group;
 		}
 
 		//parent_window->button_group_list.

@@ -1185,11 +1185,30 @@ void EDataActionCollection::action_resize_to_full_window(EButtonGroup* _group)
 	_group->base_width				= (NS_EGraphicCore::SCREEN_WIDTH	/ NS_EGraphicCore::current_zoom);
 	_group->base_height				= (NS_EGraphicCore::SCREEN_HEIGHT	/ NS_EGraphicCore::current_zoom);
 
+	EButtonGroup::refresh_button_group(_group);
 	//EInputCore::logger_simple_info("group resized");
 
-	EButtonGroup::change_style(_group, _group->selected_style);
-	//EButtonGroup::apply_style_to_button_group(_group, _group->selected_style);
-	EButtonGroup::refresh_button_group(_group);
+	//EButtonGroup::change_style(_group, _group->selected_style);
+	////EButtonGroup::apply_style_to_button_group(_group, _group->selected_style);
+	//EButtonGroup::refresh_button_group(_group);
+}
+
+void EDataActionCollection::action_resize_to_full_window_only_x(EButtonGroup* _group)
+{
+
+	_group->region_gabarite->size_x = ((NS_EGraphicCore::SCREEN_WIDTH ) / NS_EGraphicCore::current_zoom);
+	_group->base_width = _group->region_gabarite->size_x;
+
+	_group->expand_to_workspace_size();
+
+	
+	_group->region_gabarite->offset_y = NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom - _group->region_gabarite->size_y;
+	EButtonGroup::change_group(_group);
+	//EInputCore::logger_simple_info("group resized");
+
+	//EButtonGroup::change_style(_group, _group->selected_style);
+	////EButtonGroup::apply_style_to_button_group(_group, _group->selected_style);
+	//EButtonGroup::refresh_button_group(_group);
 }
 
 void EDataActionCollection::action_draw_boolean_switcher(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1439,6 +1458,9 @@ void EDataActionCollection::action_force_resize_callback(Entity* _entity, ECusto
 				{
 					//EInputCore::logger_simple_info("try call GWRA");
 					gwra(bg);
+
+					//EButtonGroup::change_style(bg, bg->selected_style);
+					//EButtonGroup::refresh_button_group(bg);
 				}
 			}
 		}
