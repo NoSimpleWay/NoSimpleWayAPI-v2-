@@ -797,7 +797,8 @@ EWindowMain::EWindowMain()
 
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		//*main_button_group->stretch_mode		= GroupStretchMode::CONSTANT;
-
+		main_button_group->dynamic_autosize_for_window = true;
+		autosize_group_list.push_back(main_button_group);
 		//std::string[3]
 		for (int z = 0; z < 100; z++)
 		{
@@ -2147,6 +2148,7 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(NS_EGraphicCore::SCREEN_WIDTH, 76.0f),
 			EGUIStyle::active_style
 		);
+		EButtonGroup::header_line = main_button_group;
 		main_button_group->region_gabarite->offset_y = NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom - main_button_group->region_gabarite->size_y;
 
 		main_button_group->parent_window = this;
@@ -2159,7 +2161,8 @@ EWindowMain::EWindowMain()
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
 		main_button_group->actions_on_resize_window.push_back(&EDataActionCollection::action_resize_to_full_window_only_x);
-
+		main_button_group->dynamic_autosize_for_window = false;
+		autosize_group_list.push_back(main_button_group);
 		EButtonGroup* bottom_section = main_button_group->add_group
 		(
 			EButtonGroup::create_button_group_without_bg

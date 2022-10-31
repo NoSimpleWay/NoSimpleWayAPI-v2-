@@ -15,6 +15,7 @@ EButtonGroup* EButtonGroup::focused_button_group_with_slider = nullptr;
 EButtonGroup* EButtonGroup::data_entity_filter					= nullptr;
 EButtonGroup* EButtonGroup::color_editor_group					= nullptr;
 EButtonGroup* EButtonGroup::add_content_to_filter_block_group	= nullptr;
+EButtonGroup* EButtonGroup::header_line							= nullptr;
 
 std::vector<FreshCreatedGroup*> EButtonGroup::fresh_created_block_list;
 
@@ -2014,6 +2015,16 @@ void EButtonGroup::phantom_translate_if_need()
 		region_gabarite->phantom_translate_z = 0.0f;
 
 
+	}
+}
+
+void EButtonGroup::recursive_phantom_translate_if_need()
+{
+	phantom_translate_if_need();
+
+	for (EButtonGroup* group : group_list)
+	{
+		group->recursive_phantom_translate_if_need();
 	}
 }
 

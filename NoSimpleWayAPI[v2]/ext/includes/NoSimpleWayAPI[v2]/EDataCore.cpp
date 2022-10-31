@@ -1185,6 +1185,12 @@ void EDataActionCollection::action_resize_to_full_window(EButtonGroup* _group)
 	_group->base_width				= (NS_EGraphicCore::SCREEN_WIDTH	/ NS_EGraphicCore::current_zoom);
 	_group->base_height				= (NS_EGraphicCore::SCREEN_HEIGHT	/ NS_EGraphicCore::current_zoom);
 
+	//if (EButtonGroup::header_line != nullptr)
+	//{
+	//	_group->base_height -=				EButtonGroup::header_line->base_height;
+	//	_group->region_gabarite->size_y -=	EButtonGroup::header_line->base_height;
+	//}
+
 	EButtonGroup::refresh_button_group(_group);
 	//EInputCore::logger_simple_info("group resized");
 
@@ -1450,18 +1456,81 @@ void EDataActionCollection::action_force_resize_callback(Entity* _entity, ECusto
 	{
 		for (EWindow* w : EWindow::window_list)
 		{
+			int dynamic_elements = 0;
+			float static_elements_total_size = 0.0f;
+
+			float full_size_x			= NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom;
+			float free_dynamic_size_y	= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom;
+			
+
+
+			for (EButtonGroup* bg : w->autosize_group_list)
+			{
+				
+
+				bg->region_gabarite->size_x	= full_size_x;
+				bg->base_width				= full_size_x;
+
+
+
+				if (bg->dynamic_autosize_for_window)
+				{
+					dynamic_elements++;
+				}
+				else
+				{
+					free_dynamic_size_y -= bg->region_gabarite->size_y;
+				}
+			}
+
 			//EInputCore::logger_simple_info("window list");
-			for (EButtonGroup* bg : w->button_group_list)
+			for (EButtonGroup* bg : w->autosize_group_list)
 			{
 				//EInputCore::logger_simple_info("button group list");
-				for (group_window_resize_action gwra : bg->actions_on_resize_window)
-				{
+
+
+					if (bg->dynamic_autosize_for_window)
+					{
+						bg->base_height				= free_dynamic_size_y / (float)dynamic_elements;
+						bg->region_gabarite->size_y = free_dynamic_size_y / (float)dynamic_elements;
+					}
+
 					//EInputCore::logger_simple_info("try call GWRA");
-					gwra(bg);
+					//gwra(bg);
 
 					//EButtonGroup::change_style(bg, bg->selected_style);
 					//EButtonGroup::refresh_button_group(bg);
+
+			}
+
+			EButtonGroup* prev_group = nullptr;
+			for (EButtonGroup* bg : w->autosize_group_list)
+			{
+				if (prev_group == nullptr)
+				{
+					bg->region_gabarite->offset_x = 0.0f;
+					bg->region_gabarite->offset_y = 0.0f;
 				}
+				else
+				{
+					bg->region_gabarite->offset_x = 0.0f;
+					bg->region_gabarite->offset_y = (prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y);
+				}
+
+				prev_group = bg;
+			}
+
+			for (EButtonGroup* bg : w->autosize_group_list)
+			{
+				//bg->expand_to_workspace_size();
+				//bg->phantom_translate_if_need();
+				bg->recursive_phantom_translate_if_need();
+			}
+
+			for (EButtonGroup* bg : w->autosize_group_list)
+			{
+
+				EButtonGroup::refresh_button_group(bg);
 			}
 		}
 	}

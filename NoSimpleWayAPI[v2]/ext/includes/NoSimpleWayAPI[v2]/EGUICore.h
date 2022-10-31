@@ -39,6 +39,9 @@ enum ENUM_ButtonAutoAlign
 class EWindow
 {
 public:
+	std::vector<EButtonGroup*> button_group_list;
+	std::vector<EButtonGroup*> autosize_group_list;
+
 	float* position_x = new float(0.0f);
 	float* position_y = new float(0.0f);
 
@@ -59,9 +62,9 @@ public:
 
 	void			GUI_draw_default(float _d);
 	virtual void	GUI_draw_additional(float _d);
-
-	std::vector<EButtonGroup*> button_group_list;
 	void			GUI_draw_second_pass(float _d);
+
+
 
 	//////////////		_STATIC SECTION_		////////////////////////
 
@@ -327,6 +330,8 @@ public:
 
 	bool can_change_position_in_vector	= true;
 
+	bool dynamic_autosize_for_window	= false;
+
 	EButtonGroup* add_group(EButtonGroup* _new_group);
 
 	EDataContainer* data_container = nullptr;
@@ -341,11 +346,13 @@ public:
 	static EButtonGroup* data_entity_filter;
 	static EButtonGroup* color_editor_group;
 	static EButtonGroup* add_content_to_filter_block_group;
+	static EButtonGroup* header_line;
 
 	void translate(float _x, float _y, float _z, bool _affect_child);
 	void translate_content(float _x, float _y, float _z, bool _move_slider);
 	bool can_see_this_group();
 	void phantom_translate_if_need();
+	void recursive_phantom_translate_if_need();
 
 	EntityButton* selected_button;
 
