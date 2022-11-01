@@ -178,14 +178,20 @@ void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity
 	//}
 	
 
-	EWindowMain::loot_filter_editor->need_remove = true;
+	
 
 	
-	EButtonGroup::loot_filter_list->is_active = true;
-	EButtonGroup::loot_filter_list->move_to_foreground();
+	EButtonGroup::existing_loot_filter_list->is_active = true;
+	EButtonGroup::existing_loot_filter_list->move_to_foreground();
 	EWindowMain::load_loot_filter_list();
-	EButtonGroup::refresh_button_group(EButtonGroup::loot_filter_list);
+	EButtonGroup::refresh_button_group(EButtonGroup::existing_loot_filter_list);
 
+}
+
+void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EWindowMain::loot_filter_editor->need_remove = true;
+	EButtonGroup::existing_loot_filter_list->is_active = false;
 }
 
 
@@ -758,7 +764,7 @@ EWindowMain::EWindowMain()
 
 
 
-	//ETextParser::data_entity_parse_file("data/data_entity_list.txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list.txt");
 
 
 
@@ -2297,10 +2303,10 @@ EWindowMain::EWindowMain()
 	{
 		main_button_group = EButtonGroup::create_root_button_group
 		(
-			new ERegionGabarite(512.0f, 256.0f, 1060.0f, 512.0f),
+			new ERegionGabarite(512.0f, 256.0f, 1020.0f, 512.0f),
 			EGUIStyle::active_style
 		);
-		EButtonGroup::loot_filter_list = main_button_group;
+		EButtonGroup::existing_loot_filter_list = main_button_group;
 
 		auto whole_loot_filter_group = static_cast<EButtonGroupLootFilterList*>(main_button_group);
 
@@ -2989,7 +2995,7 @@ void EWindowMain::load_loot_filter_list()
 	//EString::loot_filter_path_list.clear();
 	//EString::loot_filter_name_list.clear();
 
-	auto			loot_filter_group	= static_cast<EButtonGroupLootFilterList*>(EButtonGroup::loot_filter_list);
+	auto			loot_filter_group	= static_cast<EButtonGroupLootFilterList*>(EButtonGroup::existing_loot_filter_list);
 	EButtonGroup*	part_with_list		= loot_filter_group->part_with_list;
 
 	std::vector<EntityButton*> deleted_buttons;
@@ -3058,7 +3064,13 @@ void EWindowMain::load_loot_filter_list()
 			//for (int i = 0; i < 10; i ++)
 			{
 				EntityButtonForFilterBlock* loot_filter_button = new EntityButtonForFilterBlock();
-				loot_filter_button->make_default_button_with_unedible_text(new ERegionGabarite(256.0f, 32.0f), part_with_list, nullptr, loot_filter_name);
+				loot_filter_button->make_default_button_with_unedible_text
+				(
+					new ERegionGabarite(325.0f, 32.0f),
+					part_with_list,
+					&EDataActionCollection::action_select_this_loot_filter_from_list,
+					loot_filter_name
+				);
 
 				part_with_list->button_list.push_back(loot_filter_button);
 			}

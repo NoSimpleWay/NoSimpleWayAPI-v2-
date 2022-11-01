@@ -54,42 +54,53 @@ void Entity::draw_second_pass()
 
 void Entity::generate_vertex_buffer_for_all_sprite_layers()
 {	
-	if (!sprite_layer_list.empty())
+	if (be_visible_last_time)
 	{
-		for (ESpriteLayer* sl : sprite_layer_list)
-		if (sl != nullptr)
+		if (!sprite_layer_list.empty())
 		{
-			sl->generate_vertex_buffer_for_sprite_layer("Entity sprite layers");
+			for (ESpriteLayer* sl : sprite_layer_list)
+				if (sl != nullptr)
+				{
+					sl->generate_vertex_buffer_for_sprite_layer("Entity sprite layers");
+				}
 		}
+		else
+		{
+			//EInputCore::logger_simple_error("SpriteList is empty!");
+		}
+
+		for (ECustomData* c_data : custom_data_list)
+			if (c_data != nullptr)
+			{
+				for (EClickableArea* c_region : c_data->clickable_area_list)
+					if (c_region != nullptr)
+					{
+						for (ESpriteLayer* s_layer : c_region->sprite_layer_list)
+							if (s_layer != nullptr)
+							{
+								s_layer->generate_vertex_buffer_for_sprite_layer("Clickable region sprite layer");
+							}
+
+						if (c_region->internal_sprite_layer != nullptr)
+						{
+							c_region->internal_sprite_layer->generate_vertex_buffer_for_sprite_layer("internal sprite layer");
+						}
+
+						//for (ETextArea* ta:c_regio)
+						if (c_region->text_area != nullptr)
+						{
+							//c_region->text_area->generate_rows();	
+							c_region->text_area->generate_text();
+						}
+					}
+
+
+			}
 	}
 	else
 	{
-		//EInputCore::logger_simple_error("SpriteList is empty!");
+		have_phantom_draw = true;
 	}
-
-	for (ECustomData* c_data : custom_data_list)
-		if (c_data != nullptr)
-		{
-			for (EClickableArea* c_region:c_data->clickable_area_list)
-			if (c_region != nullptr)
-			{
-				for (ESpriteLayer* s_layer:c_region->sprite_layer_list)
-				if (s_layer != nullptr)
-				{s_layer->generate_vertex_buffer_for_sprite_layer("Clickable region sprite layer");}
-
-				if (c_region->internal_sprite_layer != nullptr)
-				{c_region->internal_sprite_layer->generate_vertex_buffer_for_sprite_layer("internal sprite layer");}
-
-				//for (ETextArea* ta:c_regio)
-				if (c_region->text_area != nullptr)
-				{
-					//c_region->text_area->generate_rows();	
-					c_region->text_area->generate_text();
-				}
-			}
-
-			
-		}
 }
 
 void Entity::transfer_all_vertex_buffers_to_batcher()

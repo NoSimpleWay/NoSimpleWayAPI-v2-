@@ -16,7 +16,7 @@ EButtonGroup* EButtonGroup::data_entity_filter					= nullptr;
 EButtonGroup* EButtonGroup::color_editor_group					= nullptr;
 EButtonGroup* EButtonGroup::add_content_to_filter_block_group	= nullptr;
 EButtonGroup* EButtonGroup::header_line							= nullptr;
-EButtonGroup* EButtonGroup::loot_filter_list					= nullptr;
+EButtonGroup* EButtonGroup::existing_loot_filter_list					= nullptr;
 
 std::vector<FreshCreatedGroup*> EButtonGroup::fresh_created_block_list;
 
@@ -310,6 +310,15 @@ void EButtonGroup::update(float _d)
 						)
 					)
 				{
+					if ((!but->disabled) && (!but->disable_draw))
+					{
+						but->be_visible_last_time = true;
+					}
+					else
+					{
+						but->be_visible_last_time = false;
+					}
+
 					//phantom translation
 					if (but->button_gabarite->have_phantom_translation)
 					{
@@ -329,6 +338,10 @@ void EButtonGroup::update(float _d)
 					}
 
 					but->update(_d);
+				}
+				else
+				{
+					but->be_visible_last_time = false;
 				}
 			}
 		}
@@ -539,6 +552,30 @@ void EButtonGroup::draw()
 					(but->world_position_y + but->button_gabarite->phantom_translate_y <= higher_culling_line)
 				)
 			{
+
+
+				
+
+				if ((but->have_phantom_draw) || (EInputCore::key_pressed(GLFW_KEY_TAB)))
+				{
+					but->have_phantom_draw = false;
+					but->be_visible_last_time = true;
+
+				
+					{
+						for (change_style_action csa : but->action_on_change_style_list)
+						{
+							csa(but, selected_style);
+
+							//_group->slider->generate_vertex_buffer_for_all_sprite_layers();
+						}
+						but->set_world_position(but->world_position_x, but->world_position_y, but->world_position_z);
+						but->generate_vertex_buffer_for_all_sprite_layers();
+					}
+
+					//but->generate_vertex_buffer_for_all_sprite_layers();
+				}
+
 				but->draw();
 
 				if (selected_button == but)
@@ -551,13 +588,13 @@ void EButtonGroup::draw()
 						NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 						NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-						but->button_gabarite->world_position_x - 3.0f,
-						but->button_gabarite->world_position_y - 3.0f,
+						but->button_gabarite->world_position_x - 1.0f,
+						but->button_gabarite->world_position_y - 1.0f,
 
-						but->button_gabarite->size_x + 6.0f,
-						but->button_gabarite->size_y + 6.0f,
+						but->button_gabarite->size_x + 1.0f,
+						but->button_gabarite->size_y + 1.0f,
 
-						5.0f,
+						3.0f,
 
 						NS_DefaultGabarites::texture_gabarite_white_pixel
 
@@ -945,6 +982,7 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 
 		
 		for (EntityButton* but : _group->button_list)
+		if (but->be_visible_last_time)
 		{
 			for (change_style_action csa : but->action_on_change_style_list)
 			{
@@ -954,6 +992,10 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 			}
 			but->set_world_position(but->world_position_x, but->world_position_y, but->world_position_z);
 			but->generate_vertex_buffer_for_all_sprite_layers();
+		}
+		else
+		{
+			but->have_phantom_draw = true;
 		}
 
 		for (EButtonGroup* group : _group->group_list) { EButtonGroup::generate_vertex_buffer_for_group(group); }

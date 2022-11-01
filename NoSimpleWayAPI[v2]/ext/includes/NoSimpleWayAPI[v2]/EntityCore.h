@@ -101,6 +101,9 @@ public:
 	static ETextArea*		get_last_text_area		(Entity* _entity);
 
 	static void add_text_area_to_last_clickable_region(EntityButton* _button, ETextArea* _text_area);
+
+	bool have_phantom_draw		= false;
+	bool be_visible_last_time	= true;
 };
 /*********/
 

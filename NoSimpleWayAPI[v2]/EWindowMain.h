@@ -98,6 +98,7 @@ namespace EDataActionCollection
 
 	void action_open_loot_filters_list_window(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_mark_button_group_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_loot_filter_from_list(Entity* _entity, ECustomData* _custom_data, float _d);
 }
 
 enum FilterAttributeType

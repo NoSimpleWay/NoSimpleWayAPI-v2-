@@ -360,8 +360,10 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 				&&
 				(((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
 				)
-			||
-			(((EntityButton*)_entity)->button_gabarite->have_phantom_translation)
+				||
+				(((EntityButton*)_entity)->button_gabarite->have_phantom_translation)
+				||
+				(((EntityButton*)_entity)->have_phantom_draw)
 			)
 	{
 		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.15f);
