@@ -185,7 +185,17 @@ EButtonGroup::EButtonGroup(ERegionGabarite* _region)
 
 EButtonGroup::~EButtonGroup()
 {
-	EInputCore::logger_simple_success("Destructor [for button group] called");
+	if (debug_deleting) { EInputCore::logger_simple_success("Destructor [for button group] called"); }
+
+	for (int i = 0; i < group_list.size(); i++)
+	{
+		if (!disable_deleting)
+		{
+			delete group_list[i];
+		}
+	};
+	group_list.clear();
+	group_list.shrink_to_fit();
 
 	if ((region_gabarite != nullptr))
 	{
@@ -204,6 +214,7 @@ EButtonGroup::~EButtonGroup()
 	{
 		if (!disable_deleting)
 		{
+			if (debug_deleting) EInputCore::logger_simple_info("try delete button");
 			delete button_list[i];
 		}
 
@@ -211,15 +222,7 @@ EButtonGroup::~EButtonGroup()
 	button_list.clear();
 	button_list.shrink_to_fit();
 
-	for (int i = 0; i < group_list.size(); i++)
-	{
-		if (!disable_deleting)
-		{
-			delete group_list[i];
-		}
-	};
-	group_list.clear();
-	group_list.shrink_to_fit();
+
 
 }
 
@@ -246,7 +249,7 @@ void EButtonGroup::update(float _d)
 	{
 		if (!disable_deleting)
 		{
-			delete group_list[i];
+			//delete group_list[i];
 		}
 		EInputCore::logger_simple_success("Need remove [" + std::to_string(i) + "] child element of button group list");
 
@@ -2365,14 +2368,18 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	control_button_segment->stretch_y_by_parent_size = false;
 	
 	//button "unbind color"
-	jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_unbing_color);
+	jc_button = new EntityButton();
+	jc_button->make_as_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_unbing_color);
+
 	ETextArea* jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Отвязать от шаблона");
 	*jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 	control_button_segment->button_list.push_back(jc_button);
 	
 	//button "register new color"
-	jc_button = EntityButton::create_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_create_new_color);
+	jc_button = new EntityButton();
+	jc_button->make_as_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_create_new_color);
+
 	jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Создать шаблон цвета");
 	*jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
@@ -2485,7 +2492,8 @@ EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGa
 	close_group_right->stretch_x_by_parent_size = false;
 	close_group_right->stretch_y_by_parent_size = true;
 
-		EntityButton* jc_button = EntityButton::create_default_clickable_button
+		EntityButton* jc_button = new EntityButton();
+		jc_button->make_as_default_clickable_button
 		(
 			new ERegionGabarite(20.0f, 20.0f),
 			close_group_right,

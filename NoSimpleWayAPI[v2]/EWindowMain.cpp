@@ -31,6 +31,7 @@ EWindowMain*	EWindowMain::link_to_main_window;
 
 EButtonGroup*	EWindowMain::select_rarity_button_group;
 EButtonGroup*	EWindowMain::select_quality_button_group;
+EButtonGroup*	EWindowMain::loot_filter_editor;
 
 
 
@@ -171,6 +172,15 @@ void EDataActionCollection::action_select_this_filter_variant(Entity* _entity, E
 
 void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	//for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
+	//{
+	//	group->need_remove = true;
+	//}
+	
+
+	EWindowMain::loot_filter_editor->need_remove = true;
+
+	
 	EButtonGroup::loot_filter_list->is_active = true;
 	EButtonGroup::loot_filter_list->move_to_foreground();
 	EWindowMain::load_loot_filter_list();
@@ -748,7 +758,11 @@ EWindowMain::EWindowMain()
 
 
 
-	ETextParser::data_entity_parse_file("data/data_entity_list.txt");
+	//ETextParser::data_entity_parse_file("data/data_entity_list.txt");
+
+
+
+
 	//ETextParser::data_read_explicit_file_and_generate_data_entity("data/Enchantmets list.txt");
 
 	//for (int j = 0; j < CLUSTER_DIM_X; j++)
@@ -807,7 +821,9 @@ EWindowMain::EWindowMain()
 
 			for (int k = 0; k < 20; k++)
 			{
-				EntityButton* test_button = EntityButton::create_default_clickable_button(new ERegionGabarite(64.0f, 64.0f), test_group, nullptr);
+				EntityButton* test_button = new EntityButton();
+				test_button->make_as_default_clickable_button(new ERegionGabarite(64.0f, 64.0f), test_group, nullptr);
+
 				test_group->button_list.push_back(test_button);
 			}
 		}
@@ -858,6 +874,8 @@ EWindowMain::EWindowMain()
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		//*main_button_group->stretch_mode		= GroupStretchMode::CONSTANT;
 		main_button_group->dynamic_autosize_for_window = true;
+
+		loot_filter_editor = main_button_group;
 		autosize_group_list.push_back(main_button_group);
 		//std::string[3]
 		for (int z = 0; z < 100; z++)
@@ -892,7 +910,8 @@ EWindowMain::EWindowMain()
 			left_control_section->stretch_y_by_parent_size = true;
 			whole_filter_block_group->add_group(left_control_section);
 
-			EntityButton* jc_button = EntityButton::create_default_clickable_button
+			EntityButton* jc_button = new EntityButton();
+			jc_button->make_as_default_clickable_button
 			(
 				new ERegionGabarite(50.0f, 50.0f),
 				left_control_section,
@@ -923,7 +942,8 @@ EWindowMain::EWindowMain()
 			left_control_section->button_list.push_back(jc_button);
 
 			//generate filter block text
-			jc_button = EntityButton::create_default_clickable_button_with_unedible_text
+			jc_button = new EntityButton();
+			jc_button->make_default_button_with_unedible_text
 			(
 				new ERegionGabarite(50.0f, 22.0f),
 				left_control_section,
@@ -1039,6 +1059,7 @@ EWindowMain::EWindowMain()
 						}
 
 						//create listed button
+						if (!suitable_data_entity.empty())
 						for (int i = 0; i < button_count; i++)
 						{
 
@@ -1078,6 +1099,7 @@ EWindowMain::EWindowMain()
 							}
 						}
 
+						if (!suitable_data_entity.empty())
 						for (int i = 0; i < button_count; i++)
 						{
 
@@ -1207,7 +1229,8 @@ EWindowMain::EWindowMain()
 
 
 
-				jc_button = EntityButton::create_default_bool_switcher_button
+				jc_button = new EntityButton();
+				jc_button->make_default_bool_switcher_button
 				(
 					new ERegionGabarite(30.0f, 30.0f),
 					cosmetic_segment,
@@ -1353,10 +1376,12 @@ EWindowMain::EWindowMain()
 			{
 				*buttons_simulator->can_change_style = false;
 
+				if (!EDataEntity::data_entity_list.empty())
 				for (int i = 0; i < 17; i++)
 				{
 
-					jc_button = EntityButton::create_default_clickable_button
+					jc_button = new EntityButton();
+					jc_button->make_as_default_clickable_button
 					(
 						new ERegionGabarite(40.0f, 40.0f),
 						buttons_simulator,
@@ -1418,7 +1443,8 @@ EWindowMain::EWindowMain()
 
 				*jc_button_group->can_change_style = false;
 
-				jc_button = EntityButton::create_default_clickable_button
+				jc_button = new EntityButton();
+				jc_button->make_as_default_clickable_button
 				(
 					new ERegionGabarite
 					(
@@ -1557,15 +1583,13 @@ EWindowMain::EWindowMain()
 
 		for (int i = 0; i < EFilterRule::registered_filter_rules_for_list.size(); i++)
 		{
-			EntityButtonFilterRule* filter_button = static_cast<EntityButtonFilterRule*>
+			EntityButtonFilterRule* filter_button = new EntityButtonFilterRule();
+			filter_button->make_default_button_with_unedible_text
 			(
-				EntityButton::create_default_clickable_button_with_unedible_text
-				(
-					new ERegionGabarite(170.0f, 28.0f),
-					right_side_for_filter_rule_buttons,
-					&EDataActionCollection::action_select_this_filter_variant,
-					EFilterRule::registered_filter_rules_for_list[i]->localisation_text->localisations[NSW_localisation_EN]
-				)
+				new ERegionGabarite(170.0f, 28.0f),
+				right_side_for_filter_rule_buttons,
+				&EDataActionCollection::action_select_this_filter_variant,
+				EFilterRule::registered_filter_rules_for_list[i]->localisation_text->localisations[NSW_localisation_EN]
 			);
 
 			//filter_button->
@@ -1584,7 +1608,8 @@ EWindowMain::EWindowMain()
 		jc_button_group->stretch_x_by_parent_size = true;
 		jc_button_group->stretch_y_by_parent_size = false;
 
-		jc_button = EntityButton::create_default_clickable_button
+		jc_button = new EntityButton();
+		jc_button->make_as_default_clickable_button
 		(
 			new ERegionGabarite(800.0f, 25.0f),
 			jc_button_group,
@@ -1878,7 +1903,8 @@ EWindowMain::EWindowMain()
 
 
 		// // // // // // //// // // // // // //// // // // // // //
-		jc_button = EntityButton::create_default_bool_switcher_button
+		jc_button = new EntityButtonForFilterBlock();
+		jc_button->make_default_bool_switcher_button
 		(
 			new ERegionGabarite(22.0f, 22.0f),
 			jc_button_group,
@@ -1962,7 +1988,8 @@ EWindowMain::EWindowMain()
 			);
 		search_bar_group->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
-		jc_button = EntityButton::create_default_clickable_button_with_text
+		jc_button = new EntityButton();
+		jc_button->make_default_button_with_edible_text
 		(
 			new ERegionGabarite(800.0f, 30.0f),
 			search_bar_group,
@@ -1992,7 +2019,15 @@ EWindowMain::EWindowMain()
 			);
 		filter_block_operation_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
-		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(160.0f, 20.0f), filter_block_operation_segment, nullptr, "Добавить новый блок");
+		jc_button = new EntityButtonFilterRule();
+		jc_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(160.0f, 20.0f),
+			filter_block_operation_segment,
+			nullptr,
+			"Добавить новый блок"
+		);
+
 		filter_block_operation_segment->button_list.push_back(jc_button);
 
 		//jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(160.0f, 20.0f), filter_block_operation_segment, nullptr, "Клонировать этот блок");
@@ -2048,7 +2083,8 @@ EWindowMain::EWindowMain()
 				if (fba->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED) { target_group = listed_segment; }
 				if (fba->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC) { target_group = cosmetic_segment; }
 
-				jc_button = EntityButton::create_default_clickable_button_with_unedible_text
+				jc_button = new EntityButtonFilterRule();
+				jc_button->make_default_button_with_unedible_text
 				(
 					new ERegionGabarite(160.0f, 30.0f),
 					target_group,
@@ -2090,7 +2126,15 @@ EWindowMain::EWindowMain()
 
 
 		//normal
-		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(100.0f, 20.0f), workspace_rarity_group, &EDataActionCollection::action_select_this_text_variant, "Обычный");
+		jc_button = new EntityButtonFilterRule();
+		jc_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(100.0f, 20.0f),
+			workspace_rarity_group,
+			&EDataActionCollection::action_select_this_text_variant,
+			"Обычный"
+		);
+
 		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(1.0f, 1.0f, 1.0f, 1.0f);
 		workspace_rarity_group->button_list.push_back(jc_button);
 
@@ -2102,7 +2146,15 @@ EWindowMain::EWindowMain()
 		EntityButton::get_last_text_area(jc_button)->localisation_text = ltext;
 
 		//magic
-		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(100.0f, 20.0f), workspace_rarity_group, &EDataActionCollection::action_select_this_text_variant, "Магический");
+		jc_button = new EntityButtonFilterRule();
+		jc_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(100.0f, 20.0f),
+			workspace_rarity_group,
+			&EDataActionCollection::action_select_this_text_variant,
+			"Магический"
+		);
+
 		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(0.4f, 0.5f, 1.0f, 1.0f);
 		workspace_rarity_group->button_list.push_back(jc_button);
 
@@ -2115,7 +2167,15 @@ EWindowMain::EWindowMain()
 		EntityButton::get_last_text_area(jc_button)->localisation_text = ltext;
 
 		//rare
-		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(100.0f, 20.0f), workspace_rarity_group, &EDataActionCollection::action_select_this_text_variant, "Редкий");
+		jc_button = new EntityButtonFilterRule();
+		jc_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(100.0f, 20.0f),
+			workspace_rarity_group,
+			&EDataActionCollection::action_select_this_text_variant,
+			"Редкий"
+		);
+
 		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(1.0f, 1.0f, 0.25f, 1.0f);
 		workspace_rarity_group->button_list.push_back(jc_button);
 
@@ -2127,7 +2187,15 @@ EWindowMain::EWindowMain()
 		EntityButton::get_last_text_area(jc_button)->localisation_text = ltext;
 
 		//unique
-		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(100.0f, 20.0f), workspace_rarity_group, &EDataActionCollection::action_select_this_text_variant, "Уникальный");
+		jc_button = new EntityButtonFilterRule();
+		jc_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(100.0f, 20.0f),
+			workspace_rarity_group,
+			&EDataActionCollection::action_select_this_text_variant,
+			"Уникальный"
+		);
+
 		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(1.0f, 0.50f, 0.25f, 1.0f);
 		workspace_rarity_group->button_list.push_back(jc_button);
 
@@ -2160,7 +2228,15 @@ EWindowMain::EWindowMain()
 		whole_quality_list_group->data_container = data_text_selector;
 
 		//anomalous
-		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(100.0f, 20.0f), workspace_quality_group, &EDataActionCollection::action_select_this_text_variant, "Аномальный");
+		jc_button = new EntityButtonFilterRule();
+		jc_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(100.0f, 20.0f),
+			workspace_quality_group,
+			&EDataActionCollection::action_select_this_text_variant,
+			"Аномальный"
+		);
+
 		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(1.0f, 0.8f, 0.8f, 1.0f);
 		workspace_quality_group->button_list.push_back(jc_button);
 
@@ -2172,7 +2248,15 @@ EWindowMain::EWindowMain()
 		EntityButton::get_last_text_area(jc_button)->localisation_text = ltext;
 
 		//divergent
-		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(100.0f, 20.0f), workspace_quality_group, &EDataActionCollection::action_select_this_text_variant, "Искривлённый");
+		jc_button = new EntityButtonFilterRule();
+		jc_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(100.0f, 20.0f),
+			workspace_quality_group,
+			&EDataActionCollection::action_select_this_text_variant,
+			"Искривлённый"
+		);
+
 		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(0.8f, 1.0f, 0.8f, 1.0f);
 		workspace_quality_group->button_list.push_back(jc_button);
 
@@ -2184,7 +2268,15 @@ EWindowMain::EWindowMain()
 		EntityButton::get_last_text_area(jc_button)->localisation_text = ltext;
 
 		//phantasmal
-		jc_button = EntityButton::create_default_clickable_button_with_unedible_text(new ERegionGabarite(100.0f, 20.0f), workspace_quality_group, &EDataActionCollection::action_select_this_text_variant, "Фантомный");
+		jc_button = new EntityButtonFilterRule();
+		jc_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(100.0f, 20.0f),
+			workspace_quality_group,
+			&EDataActionCollection::action_select_this_text_variant,
+			"Фантомный"
+		);
+
 		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(0.8f, 0.8f, 1.0f, 1.0f);
 		workspace_quality_group->button_list.push_back(jc_button);
 
@@ -2256,9 +2348,9 @@ EWindowMain::EWindowMain()
 
 		load_loot_filter_list();
 
-		for (int i = 0; i < 2; i++)
+		/*for (int i = 0; i < 2; i++)
 		{
-			EntityButton* but = EntityButton::create_default_clickable_button_with_unedible_text
+			EntityButton* but = EntityButton::make_default_button_with_unedible_text
 			(
 				new ERegionGabarite(128.0f, 32.0f),
 				loot_filter_list_part,
@@ -2266,7 +2358,7 @@ EWindowMain::EWindowMain()
 				"ZZZ"
 			);
 			loot_filter_list_part->button_list.push_back(but);
-		}
+		}*/
 
 		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
@@ -2320,29 +2412,25 @@ EWindowMain::EWindowMain()
 		
 		//////////////////////////////////////////////////////
 
-			jc_button = static_cast<EntityButtonFilterBlock*>
+			jc_button = new EntityButtonForFilterBlock();
+			jc_button->make_as_default_button_with_icon
 			(
-				EntityButton::create_default_clickable_button_with_icon
-				(
-					new ERegionGabarite(45.0f, 45.0f),
-					top_section,
-					&EDataActionCollection::action_open_loot_filters_list_window,
-					NS_EGraphicCore::load_from_textures_folder("button_open")
-				)
+				new ERegionGabarite(45.0f, 45.0f),
+				top_section,
+				&EDataActionCollection::action_open_loot_filters_list_window,
+				NS_EGraphicCore::load_from_textures_folder("button_open")
 			);
 			top_section->button_list.push_back(jc_button);
 
 		//////////////////////////////////////////////////////
 
-			jc_button = static_cast<EntityButtonFilterBlock*>
+			jc_button = new EntityButtonForFilterBlock();
+			jc_button->make_as_default_button_with_icon
 			(
-				EntityButton::create_default_clickable_button_with_icon
-				(
 					new ERegionGabarite(45.0f, 45.0f),
 					top_section,
 					nullptr,
 					NS_EGraphicCore::load_from_textures_folder("button_save")
-				)
 			);
 			top_section->button_list.push_back(jc_button);
 
@@ -2350,7 +2438,8 @@ EWindowMain::EWindowMain()
 
 		for (int i = 0; i < 5; i++)
 		{
-			jc_button = EntityButton::create_default_clickable_button_with_unedible_text
+			jc_button = new EntityButtonFilterRule();
+			jc_button->make_default_button_with_unedible_text
 			(
 				new ERegionGabarite(120.0f, 26.0f),
 				bottom_section,
@@ -2913,13 +3002,15 @@ void EWindowMain::load_loot_filter_list()
 
 		if (but != part_with_list->slider)
 		{
-			but->need_remove	= true;
+	/*		but->need_remove	= true;
 			but->disabled		= true;
-			but->disable_draw	= true;
+			but->disable_draw	= true;*/
 
-			//part_with_list->button_list.erase(part_with_list->button_list.begin() + i);
+			delete but;
+
+			part_with_list->button_list.erase(part_with_list->button_list.begin() + i);
 			
-			//i--;
+			i--;
 
 			
 		}
@@ -2966,15 +3057,8 @@ void EWindowMain::load_loot_filter_list()
 
 			//for (int i = 0; i < 10; i ++)
 			{
-				EntityButton* loot_filter_button = EntityButton::create_default_clickable_button_with_unedible_text
-				(
-					new ERegionGabarite(256.0f, 48.0f),
-					part_with_list,
-					nullptr,
-					EStringUtils::UTF8_to_ANSI(loot_filter_name.substr(0, loot_filter_name.length() - 7))
-				);
-
-				//EInputCore::logger_simple_info("try push back");
+				EntityButtonForFilterBlock* loot_filter_button = new EntityButtonForFilterBlock();
+				loot_filter_button->make_default_button_with_unedible_text(new ERegionGabarite(256.0f, 32.0f), part_with_list, nullptr, loot_filter_name);
 
 				part_with_list->button_list.push_back(loot_filter_button);
 			}
@@ -3088,7 +3172,7 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 	//EDataContainer_Group_WholeFilterBlock store pointers to each segemnt
 	auto whole_filter_block_data = static_cast<EDataContainer_Group_WholeFilterBlock*>(_target_filter_block->data_container);
 
-	EntityButtonFilterBlock* jc_button;
+	EntityButtonForFilterBlock* jc_button;
 
 	std::string temp_rarity[] = { "Нормальный", "Магический", "Редкий", "Уникальный" };
 	EButtonGroup* target_group_for_content;
@@ -3146,16 +3230,14 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 
 		/*CLOSE BUTTON*/
 		///////////////////////////////////////////////////////////////////////////////////////////////
-		jc_button = static_cast<EntityButtonFilterBlock*>
-			(
-				EntityButton::create_default_clickable_button_with_icon
-				(
+		jc_button = new EntityButtonForFilterBlock();
+		jc_button->make_as_default_button_with_icon
+		(
 					new ERegionGabarite(button_height, button_height),
 					non_listed_line,
 					&EDataActionCollection::action_mark_parent_group_as_removed,
 					NS_EGraphicCore::load_from_textures_folder("button_close")
-				)
-				);
+		);
 		non_listed_line->button_list.push_back(jc_button);
 		jc_button->parent_filter_block = _target_filter_block;
 		///////////////////////////////////////////////////////////////////////////////////////////////
@@ -3168,16 +3250,15 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 
 		/*ATTRIBUTE NAME BUTTON*/
 		///////////////////////////////////////////////////////////////////////////////////////////////
-		jc_button = static_cast<EntityButtonFilterBlock*>
-			(
-				EntityButton::create_default_clickable_button_with_unedible_text
-				(
-					new ERegionGabarite(200.0f, button_height),
-					non_listed_line,
-					nullptr,
-					_filter_block_attribute->localisation.localisations[0]
-				)
-				);
+		jc_button = new EntityButtonForFilterBlock();
+		jc_button->make_default_button_with_unedible_text
+		(
+				new ERegionGabarite(200.0f, button_height),
+				non_listed_line,
+				nullptr,
+				_filter_block_attribute->localisation.localisations[0]
+		);
+
 		jc_button->parent_filter_block = _target_filter_block;
 
 		ETextArea* last_text_area = Entity::get_last_text_area(jc_button);
@@ -3199,16 +3280,15 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 		//condition operator
 		if (_filter_block_attribute->have_operator)
 		{
-			jc_button = static_cast<EntityButtonFilterBlock*>
-				(
-					EntityButton::create_default_clickable_button_with_text
-					(
+			jc_button = new EntityButtonForFilterBlock();
+			jc_button->make_default_button_with_edible_text
+			(
 						new ERegionGabarite(button_height * 2.0f, button_height),
 						non_listed_line,
 						nullptr,
 						"="
-					)
-					);
+			);
+
 			jc_button->parent_filter_block = _target_filter_block;
 
 			non_listed_line->button_list.push_back(jc_button);
@@ -3236,16 +3316,15 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 		{
 			text = temp_rarity[rarity_id];
 
-			jc_button = static_cast<EntityButtonFilterBlock*>
-				(
-					EntityButton::create_default_clickable_button_with_unedible_text
-					(
-						new ERegionGabarite(100.0f + input_field_additional_width, button_height),
-						non_listed_line,
-						&EDataActionCollection::action_open_rarity_selector,
-						text
-					)
-					);
+			jc_button = new EntityButtonForFilterBlock();
+			jc_button->make_default_button_with_unedible_text
+			(
+				new ERegionGabarite(100.0f + input_field_additional_width, button_height),
+				non_listed_line,
+				&EDataActionCollection::action_open_rarity_selector,
+				text
+			);
+
 			jc_button->parent_filter_block = _target_filter_block;
 
 			EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(&rarity_color[rarity_id]);
@@ -3259,17 +3338,15 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 		case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST:
 		{
 			text = "Аномальный";
+			jc_button = new EntityButtonForFilterBlock();
+			jc_button->make_default_button_with_unedible_text
+			(
+				new ERegionGabarite(100.0f + input_field_additional_width, button_height),
+				non_listed_line,
+				&EDataActionCollection::action_open_quality_selector,
+				text
+			);
 
-			jc_button = static_cast<EntityButtonFilterBlock*>
-				(
-					EntityButton::create_default_clickable_button_with_unedible_text
-					(
-						new ERegionGabarite(100.0f + input_field_additional_width, button_height),
-						non_listed_line,
-						&EDataActionCollection::action_open_quality_selector,
-						text
-					)
-					);
 			jc_button->parent_filter_block = _target_filter_block;
 
 			Entity::get_last_text_area(jc_button)->localisation_text = _filter_block_attribute->localisation;
@@ -3281,17 +3358,17 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 
 		case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER:
 		{
-			jc_button = static_cast<EntityButtonFilterBlock*>
-				(
-					EntityButton::create_default_bool_switcher_button
-					(
+			jc_button = new EntityButtonForFilterBlock();
+			jc_button->make_default_bool_switcher_button
+			(
 						new ERegionGabarite(22.0f, 22.0f),
 						non_listed_line,
 						EDataActionCollection::action_switch_boolean_value,
 						NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
 						NS_EGraphicCore::load_from_textures_folder("box_switcher_off")
-					)
-					);
+
+			);
+
 			jc_button->parent_filter_block = _target_filter_block;
 
 			non_listed_line_data->target_button_with_value = jc_button;
@@ -3301,16 +3378,14 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 
 		default:
 		{
-			jc_button = static_cast<EntityButtonFilterBlock*>
-				(
-					EntityButton::create_default_clickable_button_with_text
-					(
+			jc_button = new EntityButtonForFilterBlock();
+			jc_button->make_default_button_with_edible_text
+			(
 						new ERegionGabarite(100.0f + input_field_additional_width, button_height),
 						non_listed_line,
 						nullptr,
 						text
-					)
-					);
+			);
 			jc_button->parent_filter_block = _target_filter_block;
 
 			Entity::get_last_text_area(jc_button)->localisation_text = _filter_block_attribute->localisation;
@@ -3591,14 +3666,14 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::st
 
 	////////////////////////
 	//ADD NEW ITEM BUTTON
-	EntityButton*
-		small_button = EntityButton::create_default_clickable_button_with_unedible_text
-		(
-			new ERegionGabarite(130.0f, 18.0f),
-			listed_group_left_side,
-			&EDataActionCollection::action_open_data_entity_filter_group,
-			"Add new item"
-		);
+	EntityButton*	small_button = new EntityButtonForFilterBlock();
+					small_button->make_default_button_with_unedible_text
+					(
+						new ERegionGabarite(130.0f, 18.0f),
+						listed_group_left_side,
+						&EDataActionCollection::action_open_data_entity_filter_group,
+						"Add new item"
+					);
 
 
 	//data conatainer with filter rule (for data entity list)
@@ -3613,7 +3688,8 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::st
 
 	////////////////////////
 	//REMOVE ALL BUTTONS
-	small_button = EntityButton::create_default_clickable_button_with_unedible_text
+	small_button = new EntityButtonForFilterBlock();
+	small_button->make_default_button_with_unedible_text
 	(
 		new ERegionGabarite(130.0f, 18.0f),
 		listed_group_left_side,
@@ -3643,4 +3719,14 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::st
 	////////////////////////
 
 	return main_listed_group;
+}
+
+EntityButtonForFilterBlock::EntityButtonForFilterBlock()
+{
+	if (debug_deleting) EInputCore::logger_simple_info("<EntityButtonFilterBlock> created");
+}
+
+EntityButtonForFilterBlock::~EntityButtonForFilterBlock()
+{
+	if (debug_deleting) EInputCore::logger_simple_info("Called <EntityButtonFilterBlock> destructor");
 }

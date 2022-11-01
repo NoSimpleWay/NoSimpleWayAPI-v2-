@@ -47,17 +47,22 @@ public:
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
 
 //BUTTONS
-class EntityButtonFilterBlock : public EntityButton
+class EntityButtonForFilterBlock : public EntityButton
 {
 public:
 	EButtonGroup* parent_filter_block;
+	//~EntityButtonFilterBlock
+	//int a;
+	//EntityButtonFilterBlock() : a(0) {};
+	EntityButtonForFilterBlock();
+	~EntityButtonForFilterBlock();
 };
 
 class EntityButtonFilterRule : public EntityButton
 {
 public:
-	EFilterRule* target_filter_rule;
-	EDataContainer_Group_DataEntitiesSearch* target_data_container;
+	EFilterRule								*target_filter_rule;
+	EDataContainer_Group_DataEntitiesSearch	*target_data_container;
 
 };
 
@@ -68,8 +73,8 @@ public:
 class EButtonGroupLootFilterList : public EButtonGroup
 {
 public:
-	EButtonGroup* part_with_list;
-	ETextArea* input_field;
+	EButtonGroup*	part_with_list;
+	ETextArea*		input_field;
 };
 
 
@@ -92,6 +97,7 @@ namespace EDataActionCollection
 	void action_select_this_filter_variant(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_open_loot_filters_list_window(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_mark_button_group_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
 }
 
 enum FilterAttributeType
@@ -154,6 +160,7 @@ public:
 
 	static EButtonGroup* select_rarity_button_group;
 	static EButtonGroup* select_quality_button_group;
+	static EButtonGroup* loot_filter_editor;
 
 	static std::string username;
 	static std::string path_of_exile_folder;

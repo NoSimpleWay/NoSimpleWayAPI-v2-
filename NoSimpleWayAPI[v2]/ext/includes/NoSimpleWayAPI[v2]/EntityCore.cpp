@@ -225,7 +225,7 @@ Entity::Entity()
 
 Entity::~Entity()
 {
-
+	if (debug_deleting) { EInputCore::logger_simple_info("Called <Entity> destructor"); }
 	//EInputCore::logger_simple_try("delete entity");
 
 	//delete offset_x;
@@ -501,65 +501,62 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 	//_button->sprite_layer_list.pu
 }
 
-EntityButton* EntityButton::create_base_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row)
+
+void EntityButton::init(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group)
 {
-	EntityButton* jc_button = new EntityButton();
-	jc_button->parent_button_group = _parent_row;
-	ERegionGabarite::set_region_gabarite(&jc_button->button_gabarite, _region_gabarite);
+	parent_button_group = _parent_group;
+	ERegionGabarite::set_region_gabarite(&button_gabarite, _region_gabarite);
 
-	jc_button->sprite_layer_list.push_back(ESpriteLayer::create_default_sprite_layer(nullptr));
+	sprite_layer_list.push_back(ESpriteLayer::create_default_sprite_layer(nullptr));
 
-	EntityButton::button_generate_brick_bg(jc_button, _parent_row->selected_style);
-	jc_button->set_world_position_w(_region_gabarite);
+	EntityButton::button_generate_brick_bg(this, _parent_group->selected_style);
+	set_world_position_w(_region_gabarite);
 
-	jc_button->action_on_change_style_list.push_back(&action_change_style_button);
-
-	return jc_button;
+	action_on_change_style_list.push_back(&action_change_style_button);
 }
 
-EntityButton* EntityButton::create_default_button_with_custom_data(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row)
+void EntityButton::add_default_custom_data(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row)
 {
-	EntityButton*	jc_button						= create_base_button(_region_gabarite, _parent_row);
+	init (_region_gabarite, _parent_row);
 	ECustomData*	jc_custom_data					= new ECustomData();
-					jc_custom_data->parent_entity	= jc_button;
+					jc_custom_data->parent_entity	= this;
 
 					//*jc_custom_data->is_second_pass = true;
-	jc_button->custom_data_list.push_back(jc_custom_data);
-
-	return jc_button;
+	custom_data_list.push_back(jc_custom_data);
 }
 
 
-EntityButton* EntityButton::create_default_clickable_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap)
+void EntityButton::make_as_default_clickable_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap)
 {
-	EntityButton* jc_button = create_default_button_with_custom_data(_region_gabarite, _parent_group);
+	add_default_custom_data(_region_gabarite, _parent_group);
 
 	EClickableArea* jc_clickable_area = EClickableArea::create_default_clickable_region
 	(
 		_region_gabarite,
-		jc_button,
-		EntityButton::get_last_custom_data(jc_button)
+		this,
+		EntityButton::get_last_custom_data(this)
 	);
 
 	jc_clickable_area->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
 	if (_dap != nullptr) { jc_clickable_area->actions_on_click_list.push_back(_dap); }
 	
-	ECustomData* last_data = Entity::get_last_custom_data(jc_button);
+	ECustomData* last_data = Entity::get_last_custom_data(this);
 	last_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
 
 	last_data->clickable_area_list.push_back(jc_clickable_area);
-
-	return jc_button;
 }
 
 EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity)
 {
-	EntityButton* jc_button = EntityButton::create_default_clickable_button
+	EntityButton* jc_button = new EntityButton();
+
+	jc_button->make_as_default_clickable_button
 	(
 		new ERegionGabarite(44.0f, 44.0f),
 		_parent_group,
 		nullptr
 	);
+
 	EDataContainer_DataEntityHolder* data = new EDataContainer_DataEntityHolder();
 	data->stored_data_entity = _data_entity;
 
@@ -607,7 +604,9 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 
 EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity, EFont* _font)
 {
-		EntityButton* jc_button = EntityButton::create_default_clickable_button
+		EntityButton* jc_button = new EntityButton();
+
+		jc_button->make_as_default_clickable_button
 		(
 			_region_gabarite,
 			_parent_group,
@@ -697,7 +696,9 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, std::string _text)
 {
-	EntityButton* jc_button = EntityButton::create_default_clickable_button
+	EntityButton* jc_button = new EntityButton();
+
+	jc_button->make_as_default_clickable_button
 	(
 		_region_gabarite,
 		_parent_group,
@@ -793,7 +794,9 @@ EntityButton* EntityButton::create_named_color_button
 	ColorButtonMode					_mode
 )
 {
-	EntityButton* jc_button = EntityButton::create_default_clickable_button
+	EntityButton* jc_button = new EntityButton();
+
+	jc_button->make_as_default_clickable_button
 	(
 		_region_gabarite,
 		_parent_group,
@@ -832,7 +835,10 @@ EntityButton* EntityButton::create_named_color_button
 
 EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, std::string _text)
 {
-	EntityButton* jc_button = create_default_button_with_custom_data(_region_gabarite, _parent_group);
+	EntityButton* jc_button = new EntityButton();
+
+	jc_button->add_default_custom_data(_region_gabarite, _parent_group);
+
 	unsigned int square_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
 
 	EClickableArea* jc_clickable_area = EClickableArea::create_default_clickable_region
@@ -895,7 +901,9 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 
 EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, float* _pointer_x, float* _pointer_y, std::string _texture)
 {
-	EntityButton* jc_button = create_default_button_with_custom_data(_region_gabarite, _parent_group);
+	EntityButton* jc_button = new EntityButton();
+
+	jc_button->add_default_custom_data(_region_gabarite, _parent_group);
 
 	EClickableArea* jc_clickable_area = EClickableArea::create_default_clickable_region
 	(
@@ -961,10 +969,13 @@ EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _re
 	return jc_button;
 }
 
-EntityButton* EntityButton::create_default_clickable_button_with_unedible_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, std::string _text)
+
+
+void EntityButton::make_default_button_with_unedible_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, std::string _text)
 {
-	EntityButton*
-	jc_button = EntityButton::create_default_clickable_button
+	
+
+	make_as_default_clickable_button
 	(
 		_region_gabarite,
 		_parent_group,
@@ -974,20 +985,18 @@ EntityButton* EntityButton::create_default_clickable_button_with_unedible_text(E
 
 	ETextArea*
 	jc_text_area = ETextArea::create_centered_text_area
-	(EntityButton::get_last_clickable_area(jc_button), EFont::font_list[0], _text);
+	(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _text);
 
 	jc_text_area->change_text(_text);
 
 	*jc_text_area->can_be_edited = false;
-	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
-
-	return jc_button;
+	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
 }
 
-EntityButton* EntityButton::create_default_clickable_button_with_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, std::string _text)
+void EntityButton::make_default_button_with_edible_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, std::string _text)
 {
-	EntityButton*
-		jc_button = EntityButton::create_default_clickable_button
+
+	make_as_default_clickable_button
 		(
 			_region_gabarite,
 			_parent_group,
@@ -997,26 +1006,26 @@ EntityButton* EntityButton::create_default_clickable_button_with_text(ERegionGab
 
 	ETextArea*
 		jc_text_area = ETextArea::create_centered_text_area
-		(EntityButton::get_last_clickable_area(jc_button), EFont::font_list[0], _text);
+		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _text);
 
 	jc_text_area->change_text(_text);
 
 	*jc_text_area->can_be_edited = true;
-	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
-
-	return jc_button;
+	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
 }
 
-EntityButton* EntityButton::create_default_clickable_button_with_icon(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite)
+void EntityButton::make_as_default_button_with_icon(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite)
 {
-	EntityButton* jc_button = EntityButton::create_default_clickable_button(_region_gabarite, _parent_group, _dap);
+
+
+	make_as_default_clickable_button(_region_gabarite, _parent_group, _dap);
 	
 	float min_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
 
 	float offset_x = (_region_gabarite->size_x - min_size - 4.0f) / 2.0f + 2.0f;
 	float offset_y = (_region_gabarite->size_y - min_size - 4.0f) / 2.0f + 2.0f;
 
-	jc_button->sprite_layer_list.push_back
+	sprite_layer_list.push_back
 	(
 		ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 		(
@@ -1031,13 +1040,13 @@ EntityButton* EntityButton::create_default_clickable_button_with_icon(ERegionGab
 			00.0f
 		)
 	);
-
-	return jc_button;
 }
 
-EntityButton* EntityButton::create_default_bool_switcher_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite_on, ETextureGabarite* _gabarite_off, bool* _target_bool)
+void EntityButton::make_default_bool_switcher_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite_on, ETextureGabarite* _gabarite_off, bool* _target_bool)
 {
-	EntityButton* jc_button = EntityButton::create_default_clickable_button(_region_gabarite, _parent_group, _dap);
+
+
+	make_as_default_clickable_button(_region_gabarite, _parent_group, _dap);
 
 	auto data_container = new EDataContainer_Button_BoolSwitcher();
 
@@ -1058,15 +1067,20 @@ EntityButton* EntityButton::create_default_bool_switcher_button(ERegionGabarite*
 
 
 
-	EntityButton::get_last_custom_data(jc_button)->data_container = data_container;
-	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.insert
+	EntityButton::get_last_custom_data(this)->data_container = data_container;
+	EntityButton::get_last_custom_data(this)->actions_on_draw.insert
 	(
-		EntityButton::get_last_custom_data(jc_button)->actions_on_draw.begin(),
+		EntityButton::get_last_custom_data(this)->actions_on_draw.begin(),
 		&EDataActionCollection::action_draw_boolean_switcher
 	);
-
-	return jc_button;
 }
+
+
+
+
+
+
+
 
 bool EntityButton::can_get_access_to_style()
 {
@@ -1145,9 +1159,17 @@ void EntityButton::add_description(std::string _text)
 	custom_data_list.push_back(jc_data);
 }
 
+EntityButton::EntityButton()
+{
+	if (debug_deleting) EInputCore::logger_simple_info("<Entity Button created>");
+}
+
 EntityButton::~EntityButton()
 {
 	if (debug_deleting) EInputCore::logger_simple_info("try deleting entity button");
+
+	if (debug_deleting) EInputCore::logger_simple_info("Called <EntityButton> destructor");
+
 	if (button_gabarite != nullptr)
 	{
 		(button_gabarite->pointers_to_this_object)--;

@@ -82,7 +82,7 @@ public:
 
 	void update(float _d);
 	Entity();
-	~Entity();
+	virtual ~Entity();
 
 	ESprite* get_sprite_from_data(unsigned int _data_id, unsigned int _layer_id, unsigned int _frame_id, unsigned int _frame);
 	ESpriteLayer* get_sprite_layer_by_id(unsigned int id);
@@ -125,7 +125,8 @@ void action_change_style_button		(EntityButton* _but, EGUIStyle* _style);
 class EntityButton : public Entity
 {
 public:
-	~EntityButton();
+	EntityButton();
+	virtual ~EntityButton();
 
 
 	bool force_draw = true;
@@ -145,15 +146,21 @@ public:
 	std::vector<change_style_action> action_on_change_style_list;
 
 	static void				button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style);
-	static EntityButton*	create_base_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row);
+
+
+	void init
+	(
+		ERegionGabarite*	_region_gabarite,
+		EButtonGroup*		_parent_row
+	);
 	
-	static EntityButton*	create_default_button_with_custom_data
+	void add_default_custom_data
 	(
 		ERegionGabarite* _region_gabarite,
 		EButtonGroup* _parent_row
 	);
 	
-	static EntityButton*	create_default_clickable_button
+	void make_as_default_clickable_button
 	(
 		ERegionGabarite*	_region_gabarite,
 		EButtonGroup*		_parent_group,
@@ -218,7 +225,7 @@ public:
 		std::string			_texture
 	);
 
-	static EntityButton* create_default_clickable_button_with_unedible_text
+	void make_default_button_with_unedible_text
 	(
 		ERegionGabarite*	_region_gabarite,
 		EButtonGroup*		_parent_group,
@@ -227,7 +234,7 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
-	static EntityButton* create_default_clickable_button_with_text
+	void make_default_button_with_edible_text
 	(
 		ERegionGabarite*	_region_gabarite,
 		EButtonGroup*		_parent_group,
@@ -236,7 +243,7 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
-	static EntityButton* create_default_clickable_button_with_icon
+	void make_as_default_button_with_icon
 	(
 		ERegionGabarite* _region_gabarite,
 		EButtonGroup* _parent_group,
@@ -245,7 +252,7 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
-	static EntityButton* create_default_bool_switcher_button
+	void make_default_bool_switcher_button
 	(
 		ERegionGabarite* _region_gabarite,
 		EButtonGroup* _parent_group,

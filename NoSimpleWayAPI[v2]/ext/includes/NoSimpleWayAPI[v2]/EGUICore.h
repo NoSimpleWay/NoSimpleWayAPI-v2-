@@ -177,7 +177,7 @@ public:
 
 	EButtonGroup(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
 	EButtonGroup(ERegionGabarite* _gabarite);
-	~EButtonGroup();
+	virtual ~EButtonGroup();
 
 	//EButtonGroup* header_button_group;
 
