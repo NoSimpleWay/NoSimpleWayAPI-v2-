@@ -434,10 +434,10 @@ void EButtonGroup::draw()
 		//(*region_gabarite->world_position_y + *region_gabarite->size_y >= *lower_culling_line_for_bg)
 	)
 	{
-		if (phantom_redraw)
+		if (group_phantom_redraw)
 		{
 			EButtonGroup::generate_vertex_buffer_for_group(this);
-			phantom_redraw = false;
+			group_phantom_redraw = false;
 		}
 
 		//batcher_for_default_draw->draw_call();
@@ -556,19 +556,26 @@ void EButtonGroup::draw()
 
 				
 
-				if ((but->have_phantom_draw) || (EInputCore::key_pressed(GLFW_KEY_TAB)))
+				if
+				(
+					(but->have_phantom_draw)
+					||
+					(
+						(EInputCore::key_pressed(GLFW_KEY_TAB))
+						&&
+						(true)
+					)
+				)
 				{
 					but->have_phantom_draw = false;
 					but->be_visible_last_time = true;
 
 				
+					//generate vertex buffer for buttons
 					{
-						for (change_style_action csa : but->action_on_change_style_list)
-						{
-							csa(but, selected_style);
+						for (change_style_action csa : but->action_on_generate_vertex_buffer)
+						{csa(but, selected_style);}
 
-							//_group->slider->generate_vertex_buffer_for_all_sprite_layers();
-						}
 						but->set_world_position(but->world_position_x, but->world_position_y, but->world_position_z);
 						but->generate_vertex_buffer_for_all_sprite_layers();
 					}
@@ -962,7 +969,10 @@ void EButtonGroup::calculate_culling_lines(EButtonGroup* _group)
 void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 {
 
-	if (_group->can_see_this_group())
+	if
+		(
+			(_group->can_see_this_group())
+		)
 	{
 		EButtonGroup::generate_brick_textured_bg(_group);
 		_group->need_redraw = false;
@@ -980,18 +990,17 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 		}
 
 
-		
+		//button visible, go generate vertex!
 		for (EntityButton* but : _group->button_list)
 		if (but->be_visible_last_time)
 		{
-			for (change_style_action csa : but->action_on_change_style_list)
-			{
-				csa(but, _group->selected_style);
+			for (change_style_action csa : but->action_on_generate_vertex_buffer)
+			{csa(but, _group->selected_style);}
 
-				//_group->slider->generate_vertex_buffer_for_all_sprite_layers();
-			}
 			but->set_world_position(but->world_position_x, but->world_position_y, but->world_position_z);
 			but->generate_vertex_buffer_for_all_sprite_layers();
+
+			but->have_phantom_draw = false;
 		}
 		else
 		{
@@ -1002,7 +1011,7 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 	}
 	else
 	{
-		_group->phantom_redraw = true;
+		_group->group_phantom_redraw = true;
 	}
 }
 
@@ -1236,7 +1245,7 @@ void EButtonGroup::check_slider()
 
 		
 
-		if (child_elements_height_summ - 1.0f > region_gabarite->size_y - border_bottom - border_up)
+		if (child_elements_height_summ - 0.0f > region_gabarite->size_y - border_bottom - border_up)
 		{
 			if (slider != nullptr)
 			{
@@ -1591,7 +1600,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 	EDataContainerScrollBar* data_container = new EDataContainerScrollBar();
 	
 	custom_data->actions_on_update.push_back(EDataActionCollection::action_update_slider);
-	but->action_on_change_style_list.push_back(action_change_style_slider);
+	but->action_on_generate_vertex_buffer.push_back(action_change_style_slider);
 
 	EClickableArea* cl_region = new EClickableArea();
 
@@ -1786,16 +1795,11 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 			);
 		}
 
-
-
-		for (EntityButton* but : _group->button_list)
+		//set slider head size
+		if (_group->slider != nullptr)
 		{
-			for (change_style_action csa : but->action_on_change_style_list)
-			{
-				//csa(but, _style);
-
-				//but->generate_vertex_buffer_for_all_sprite_layers();
-			}
+			_group->slider->button_gabarite->size_x = *_group->selected_style->slider_inactive->main_texture->size_x_in_pixels;
+			_group->slider->button_gabarite->size_y = *_group->selected_style->slider_inactive->main_texture->size_y_in_pixels;
 		}
 
 		//_group->refresh_button_group(_group);
@@ -2597,7 +2601,7 @@ EButtonGroup* EButtonGroup::create_base_button_group(ERegionGabarite* _region, E
 
 		just_created_button_group->border_bottom	= 0.0f;
 		just_created_button_group->border_left		= 0.0f;
-		just_created_button_group->border_right	= 0.0f;
+		just_created_button_group->border_right		= 0.0f;
 		just_created_button_group->border_up		= 0.0f;
 	}
 

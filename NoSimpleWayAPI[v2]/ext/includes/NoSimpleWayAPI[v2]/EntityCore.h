@@ -146,7 +146,7 @@ public:
 	bool update_when_scissored	= false;
 
 
-	std::vector<change_style_action> action_on_change_style_list;
+	std::vector<change_style_action> action_on_generate_vertex_buffer;
 
 	static void				button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style);
 

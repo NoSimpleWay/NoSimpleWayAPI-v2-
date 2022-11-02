@@ -523,7 +523,7 @@ void EntityButton::init(ERegionGabarite* _region_gabarite, EButtonGroup* _parent
 	EntityButton::button_generate_brick_bg(this, _parent_group->selected_style);
 	set_world_position_w(_region_gabarite);
 
-	action_on_change_style_list.push_back(&action_change_style_button);
+	action_on_generate_vertex_buffer.push_back(&action_change_style_button);
 }
 
 void EntityButton::add_default_custom_data(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row)
@@ -1208,8 +1208,8 @@ EntityButton::~EntityButton()
 	//delete update_when_scissored;
 
 	if (debug_deleting) EInputCore::logger_simple_info("try clear and shrink action on change style");
-	action_on_change_style_list.clear();
-	action_on_change_style_list.shrink_to_fit();
+	action_on_generate_vertex_buffer.clear();
+	action_on_generate_vertex_buffer.shrink_to_fit();
 	if (debug_deleting) EInputCore::logger_simple_success("clear and shrink action on change style");
 	//EInputCore::logger_simple_try("delete entity button");
 

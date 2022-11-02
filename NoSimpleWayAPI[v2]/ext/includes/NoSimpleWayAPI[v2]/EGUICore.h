@@ -359,7 +359,7 @@ public:
 
 	void select_this_button(EntityButton* _but);
 
-	bool phantom_redraw = false;
+	bool group_phantom_redraw = false;
 
 	int seed = 0;
 
