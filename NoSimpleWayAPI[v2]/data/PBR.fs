@@ -120,14 +120,18 @@ void main()
 	interpolation_A = 1.0f - interpolation_B;
 	
 	
-	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 0.333f * normal_map_multiplier;
-	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 0.333f * normal_map_multiplier;
+	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 2.000f * normal_map_multiplier;
+	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 2.000f * normal_map_multiplier;
 	
-	reflect_pos_x =  (gl_FragCoord.x	/ scr_x	* (1.0f - abs(normal_x))) * 0.333f + 0.333f + normal_x;
+	normal_x = clamp(normal_x, -1.0f, 1.0f);
+	normal_y = clamp(normal_y, -1.0f, 1.0f);
+
+	reflect_pos_x =  (gl_FragCoord.x	/ scr_x	* (1.0f - abs(normal_x))) * 0.333f + normal_x * 0.166666f + 0.333f;
+	reflect_pos_x = clamp(reflect_pos_x, 0.0f, 1.0f);
 	//reflect_pos_x *= scr_x / scr_y;
 	
-	reflect_pos_y =  (WorldPosition.y	/ scr_y	* (1.0f - abs(normal_y))) * 0.333f + 0.333f + normal_y;
-	
+	reflect_pos_y =  (WorldPosition.y	/ scr_y	* (1.0f - abs(normal_y))) * 0.333f  + normal_y * 0.166666f + 0.333f;
+	reflect_pos_y = clamp(reflect_pos_y, 0.0f, 1.0f);
 	//reflect_pos_x = gl_FragCoord.x / 2880.0f;
 	//reflect_pos_y = WorldPosition.y / 1800.0f;
 	//((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
@@ -282,17 +286,22 @@ void main()
 	
 	FragColor.rgb
 	=
-	texture(texture1, TexCoord).rgb
-	*
+	clamp
 	(
-		//vec3(c_rgba * 1.0f)// * (2.0f - c_rgba.a)
-		mix(vec3(0.0f), c_rgba.rgb * reflection_multiplier, min(gloss_result * 2.0f, 1.0f))
-		+
-		mix(indirect_sun_light, direct_sun_light, min(gloss_result * 2.0f, 1.0f))
-		//vec3(c_rgba) * 2.0f
-	)
-	*
-	ourColor.rgb;
+		texture(texture1, TexCoord).rgb
+		*
+		(
+			//vec3(c_rgba * 1.0f)// * (2.0f - c_rgba.a)
+			mix(vec3(0.0f), c_rgba.rgb * reflection_multiplier, min(gloss_result * 2.0f, 1.0f))
+			+
+			mix(indirect_sun_light, direct_sun_light, min(gloss_result * 2.0f, 1.0f))
+			//vec3(c_rgba) * 2.0f
+		)
+		*
+		ourColor.rgb,
+		vec3(0.0f),
+		vec3(1.0f)
+	);
 	
 	//FragColor.rgb = vec3(dist_total);
 	FragColor.a = texture(texture1, TexCoord).a * ourColor.a;
