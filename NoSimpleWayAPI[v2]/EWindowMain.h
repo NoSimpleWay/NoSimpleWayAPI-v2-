@@ -58,6 +58,15 @@ public:
 	~EntityButtonForFilterBlock();
 };
 
+class EntityButtonForLootFilterSelector : public EntityButton
+{
+public:
+	std::string	full_path;
+
+	EntityButtonForLootFilterSelector();
+	~EntityButtonForLootFilterSelector();
+};
+
 class EntityButtonFilterRule : public EntityButton
 {
 public:
@@ -99,6 +108,9 @@ namespace EDataActionCollection
 	void action_open_loot_filters_list_window(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_mark_button_group_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_loot_filter_from_list(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_all_entity_buttons_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_save_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d);
+	//void 
 }
 
 enum FilterAttributeType
@@ -124,7 +136,7 @@ class FilterBlockAttribute
 public:
 	FilterAttributeType			filter_attribute_type;
 	FilterAttributeValueType	filter_attribute_value_type;
-	EFilterRule* filter_rule;
+	EFilterRule*				filter_rule;
 
 	bool have_operator = false;
 
@@ -166,7 +178,10 @@ public:
 	static std::string username;
 	static std::string path_of_exile_folder;
 
-	static void load_loot_filter_list();
+	static void				load_loot_filter_list();
+
+	static void				open_loot_filter(std::string _full_path);
+	static EButtonGroup*	create_filter_block(EButtonGroup* _target_whole_group);
 
 	//static bool disable_deleting = true;
 

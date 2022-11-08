@@ -27,11 +27,11 @@
 #include <experimental/filesystem>
 
 //class Entity;
-EWindowMain*	EWindowMain::link_to_main_window;
+EWindowMain* EWindowMain::link_to_main_window;
 
-EButtonGroup*	EWindowMain::select_rarity_button_group;
-EButtonGroup*	EWindowMain::select_quality_button_group;
-EButtonGroup*	EWindowMain::loot_filter_editor;
+EButtonGroup* EWindowMain::select_rarity_button_group;
+EButtonGroup* EWindowMain::select_quality_button_group;
+EButtonGroup* EWindowMain::loot_filter_editor;
 
 
 
@@ -149,7 +149,7 @@ void EDataActionCollection::action_generate_filter_block_text(Entity* _entity, E
 void EDataActionCollection::action_select_this_filter_variant(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EButtonGroup::data_entity_filter->data_container;
-	
+
 	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
 		EntityButtonFilterRule* filter_button = (EntityButtonFilterRule*)_entity;
@@ -167,7 +167,7 @@ void EDataActionCollection::action_select_this_filter_variant(Entity* _entity, E
 	//}
 	//static_cast<EntityButtonFilterRule*> 
 	EDataActionCollection::action_type_search_data_entity_text(button_group_data_container->filter_text_area);
-	
+
 }
 
 void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -176,11 +176,11 @@ void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity
 	//{
 	//	group->need_remove = true;
 	//}
-	
 
-	
 
-	
+
+
+
 	EButtonGroup::existing_loot_filter_list->is_active = true;
 	EButtonGroup::existing_loot_filter_list->move_to_foreground();
 	EWindowMain::load_loot_filter_list();
@@ -190,8 +190,55 @@ void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity
 
 void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	EWindowMain::loot_filter_editor->need_remove = true;
+	//EWindowMain::loot_filter_editor->need_remove = true;
 	EButtonGroup::existing_loot_filter_list->is_active = false;
+
+	EWindowMain::open_loot_filter(((EntityButtonForLootFilterSelector*)_entity)->full_path);
+	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+
+}
+
+void EDataActionCollection::action_add_all_entity_buttons_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	auto data_entity_container = static_cast<EDataContainer_Group_DataEntitiesSearch*>(static_cast<EntityButton*>(_entity)->parent_button_group->root_group->data_container);
+
+	if ((data_entity_container != nullptr) && (data_entity_container->pointer_to_group_with_data_entities != nullptr))
+	{
+		for (EntityButton* but : data_entity_container->pointer_to_group_with_data_entities->button_list)
+			if
+				(
+					(but != data_entity_container->pointer_to_group_with_data_entities->slider)
+					&&
+					(!but->disabled)
+					&&
+					(!but->disable_draw)
+					)
+			{
+				data_entity_container->action_on_select_for_button(but, Entity::get_last_custom_data(but), _d);
+			}
+	}
+
+
+}
+
+void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	std::string str = "";
+
+	//EButtonGroup* filter_block_massive = static_cast<EDataContainer_Button_StoreParentFilterBlock*>(_custom_data->data_container)->parent_filter_block->root_group;
+	//for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
+	for (int i = EWindowMain::loot_filter_editor->group_list.size() - 1; i >= 0; i--)
+	{
+		str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i]);
+		str += '\n';
+		str += '\n';
+	}
+
+	std::ofstream writabro;
+
+	writabro.open(EWindowMain::path_of_exile_folder + "/AwakenedDaDEditor.filter");
+	writabro << str;
+	writabro.close();
 }
 
 
@@ -478,7 +525,7 @@ EWindowMain::EWindowMain()
 
 
 	/*____________________________________LISTED SECTION___________________________________________________*/
-		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "BaseType";
 	jc_localisation.localisations[NSW_localisation_EN] = "Game item";
 	jc_localisation.localisations[NSW_localisation_RU] = "Предмет";
@@ -490,6 +537,20 @@ EWindowMain::EWindowMain()
 	jc_filter_block_attribute->have_operator = false;
 
 	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM];
+
+	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "Class";
+	jc_localisation.localisations[NSW_localisation_EN] = "Item class";
+	jc_localisation.localisations[NSW_localisation_RU] = "Класс предмета";
+
+	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
+	jc_filter_block_attribute->have_operator = false;
+
+	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_BASE_CLASS];
 
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -761,6 +822,19 @@ EWindowMain::EWindowMain()
 
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "SetFontSize";
+	jc_localisation.localisations[NSW_localisation_EN] = "Font size";
+	jc_localisation.localisations[NSW_localisation_RU] = "Размер текста";
+
+	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->always_present = true;
+
+	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -883,376 +957,12 @@ EWindowMain::EWindowMain()
 
 		loot_filter_editor = main_button_group;
 		autosize_group_list.push_back(main_button_group);
-		//std::string[3]
-		for (int z = 0; z < 100; z++)
+
+		for (int z = 0; z < 0; z++)
 		{
-			//whole filter block
-			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			EButtonGroup* whole_filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 200.0f), EGUIStyle::active_style);
-			whole_filter_block_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-
-			whole_filter_block_group->stretch_x_by_parent_size = true;
-			whole_filter_block_group->stretch_y_by_parent_size = false;
-
-
-			main_button_group->add_group(whole_filter_block_group);
-
-			EDataContainer_Group_WholeFilterBlock* whole_block_data = new EDataContainer_Group_WholeFilterBlock();
-			whole_filter_block_group->data_container = whole_block_data;
-
-			////main bottom section
-			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			//EButtonGroup* bottom_section_for_conditions = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 180.0f), EGUIStyle::active_style);
-			//	*bottom_section_for_conditions->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-			//	*bottom_section_for_conditions->stretch_x_by_parent_size = true;
-			//	*bottom_section_for_conditions->stretch_y_by_parent_size = true;
-			//	whole_filter_block_group->add_group(bottom_section_for_conditions);
-
-			//left additional section
-			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			EButtonGroup* left_control_section = EButtonGroup::create_default_button_group(new ERegionGabarite(50.0f, 20.0f), EGUIStyle::active_style);
-			left_control_section->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
-			left_control_section->stretch_x_by_parent_size = false;
-			left_control_section->stretch_y_by_parent_size = true;
-			whole_filter_block_group->add_group(left_control_section);
-
-			EntityButton* jc_button = new EntityButton();
-			jc_button->make_as_default_clickable_button
-			(
-				new ERegionGabarite(50.0f, 50.0f),
-				left_control_section,
-				&EDataActionCollection::action_open_add_content_window
-			);
-
-			EDataContainer_Button_OpenButtonGroup* data_open_group = new EDataContainer_Button_OpenButtonGroup();
-			data_open_group->master_group = whole_filter_block_group;
-			data_open_group->target_group = EButtonGroup::data_entity_filter;
-
-			ESpriteLayer* jc_sprite_layer = ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-			(
-				NS_EGraphicCore::load_from_textures_folder("button_plus"),
-
-				5.0f,
-				5.0f,
-				0.0f,
-
-				40.0f,
-				40.0f,
-				0.0f
-			);
-
-			jc_button->sprite_layer_list.push_back(jc_sprite_layer);
-
-			EntityButton::get_last_custom_data(jc_button)->data_container = data_open_group;
-
-			left_control_section->button_list.push_back(jc_button);
-
-			//generate filter block text
-			jc_button = new EntityButton();
-			jc_button->make_default_button_with_unedible_text
-			(
-				new ERegionGabarite(50.0f, 22.0f),
-				left_control_section,
-				&EDataActionCollection::action_generate_filter_block_text,
-				"Gen"
-			);
-
-			auto gen_data = new EDataContainer_Button_StoreParentFilterBlock();
-			gen_data->parent_filter_block = whole_filter_block_group;
-			jc_button->custom_data_list.back()->data_container = gen_data;
-
-			left_control_section->button_list.push_back(jc_button);
-
-			//left side for equational parameters
-			if (true)
-			{//new group
-				EButtonGroup* non_list_condition_group = EButtonGroup::create_default_button_group
-				(
-					new ERegionGabarite(420.0f, 160.0f),
-					EGUIStyle::active_style
-				);
-
-
-				whole_block_data->pointer_to_non_listed_segment = non_list_condition_group;
-
-				non_list_condition_group->stretch_x_by_parent_size = false;
-				non_list_condition_group->stretch_y_by_parent_size = true;
-
-				non_list_condition_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
-
-				whole_filter_block_group->add_group(non_list_condition_group);
-
-				//"ZZZ" buttons
-				int parameters_count = (rand() % 4) * (rand() % 4);
-				int rnd = 0;
-				for (int i = 0; i < parameters_count; i++)
-				{
-					rnd = rand() % registered_filter_block_attributes.size();
-					if ((registered_filter_block_attributes.size() > 0) && (registered_filter_block_attributes[rnd]->filter_attribute_type == FILTER_ATTRIBUTE_TYPE_NON_LISTED))
-					{
-						add_filter_block_buttons_to_filter_block(whole_filter_block_group, registered_filter_block_attributes[rnd]);
-					}
-				}
-			}
-
-			//####### ITEM GROUP //#######
-			//massive
-			EButtonGroup* listed_condition_segment = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(800.0f, 160.0f), EGUIStyle::active_style);
-			listed_condition_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
-			listed_condition_segment->stretch_x_by_parent_size = true;
-			listed_condition_segment->stretch_y_by_parent_size = true;
-
-			whole_block_data->pointer_to_listed_segment = listed_condition_segment;
-
-			std::string select_window_tags[3] = { "game item", "base class", "influence" };
-
-			whole_filter_block_group->add_group(listed_condition_segment);
-
-			RegisteredFilterRules rule_id[3] =
-			{
-				RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM,
-				RegisteredFilterRules::FILTER_RULE_BASE_CLASS,
-				RegisteredFilterRules::FILTER_RULE_INFLUENCE
-			};
-
-			std::string base_name_for_attribute[3] =
-			{
-				"BaseType",
-				"Class",
-				"HasInfluence",
-			};
-
-			for (int r = 0; r < 3; r++)
-				if (rand() % 3 == 0)
-				{
-
-
-					EButtonGroup* main_listed_group = create_block_for_listed_segment
-					(
-						EFilterRule::registered_global_filter_rules[rule_id[r]],
-						base_name_for_attribute[r],
-						listed_condition_segment
-					);
-
-					std::vector <EDataEntity*> suitable_data_entity;
-					//regular items
-					//button item
-					//main_listed_group->min_size_y = 20.0f;
-
-					ELocalisationText ltext;
-
-					EButtonGroup* listed_group_main_section = static_cast<EDataContainer_Group_FilterBlockListedSegment*>(main_listed_group->data_container)->group_with_listed_buttons;
-					//game item
-					if (r == 0)
-					{
-						//d_container->filter_attribute_name = "BaseType";
-
-						//main_listed_group->min_size_y = 120.0f;
-
-						int button_count = rand() % 3 + 1;
-						button_count *= rand() % 3 + 1;
-						button_count *= rand() % 3 + 1;
-						button_count *= rand() % 3 + 1;
-						button_count *= rand() % 3 + 1;
-
-						suitable_data_entity.clear();
-						for (EDataEntity* de : EDataEntity::data_entity_list)
-						{
-							if (DataEntityUtils::get_tag_value_by_name(0, "data type", de) == "Game item")
-							{
-								suitable_data_entity.push_back(de);
-							}
-						}
-
-						//create listed button
-						if (!suitable_data_entity.empty())
-						for (int i = 0; i < button_count; i++)
-						{
-
-
-							int selected_data_entity = rand() % suitable_data_entity.size();
-
-							//button with clickable region, and brick bg
-							jc_button = EntityButton::create_wide_item_button
-							(
-								new ERegionGabarite(200.0f, 40.0f),
-								listed_group_main_section,
-								suitable_data_entity[selected_data_entity],
-								EFont::font_list[0]
-							);
-							Entity::get_last_text_area(jc_button)->stored_color.set_color_RGBA(1.0f, 0.9f, 0.5f, 1.0f);
-
-
-
-							listed_group_main_section->button_list.push_back(jc_button);
-						}
-					}
-
-					//base class
-					if (r == 1)
-					{
-						//d_container->filter_attribute_name = "Class";
-
-						int button_count = rand() % 3 + 1;
-						button_count *= rand() % 3 + 1;
-
-						suitable_data_entity.clear();
-						for (EDataEntity* de : EDataEntity::data_entity_list)
-						{
-							if (DataEntityUtils::get_tag_value_by_name(0, "data type", de) == "Base Class")
-							{
-								suitable_data_entity.push_back(de);
-							}
-						}
-
-						if (!suitable_data_entity.empty())
-						for (int i = 0; i < button_count; i++)
-						{
-
-
-							int selected_data_entity = rand() % suitable_data_entity.size();
-
-							//button with clickable region, and brick bg
-							jc_button = EntityButton::create_wide_item_button
-							(
-								new ERegionGabarite(200.0f, 40.0f),
-								listed_group_main_section,
-								suitable_data_entity[selected_data_entity],
-								EFont::font_list[0]
-							);
-							Entity::get_last_text_area(jc_button)->stored_color.set_color_RGBA(0.5f, 1.0f, 0.5f, 1.0f);
-
-							listed_group_main_section->button_list.push_back(jc_button);
-
-
-						}
-					}
-
-					//influences
-					if (r == 2)
-					{
-						//d_container->filter_attribute_name = "HasInfluence";
-
-						suitable_data_entity.clear();
-						for (EDataEntity* de : EDataEntity::data_entity_list)
-						{
-							if (DataEntityUtils::get_tag_value_by_name(0, "data type", de) == "Influence")
-							{
-								suitable_data_entity.push_back(de);
-							}
-						}
-
-
-						for (int k = 0; k < suitable_data_entity.size(); k++)
-						{
-							if (rand() % 3 == 0)
-							{
-								jc_button = EntityButton::create_wide_item_button
-								(
-									new ERegionGabarite(200.0f, 40.0f),
-									listed_group_main_section,
-									suitable_data_entity[k],
-									EFont::font_list[0]
-								);
-								Entity::get_last_text_area(jc_button)->stored_color.set_color_RGBA(1.0f, 0.6f, 0.5f, 1.0f);
-
-								listed_group_main_section->button_list.push_back(jc_button);
-							}
-						}
-					}
-				}
-
-
-
-
-
-			ELocalisationText ltext[3];
-
-			ltext[0].base_name = "SetBackgroundColor";
-			ltext[0].localisations[NSW_localisation_EN] = "Background color";
-			ltext[0].localisations[NSW_localisation_RU] = "Цвет фона";
-
-			ltext[1].base_name = "SetTextColor";
-			ltext[1].localisations[NSW_localisation_EN] = "Text color";
-			ltext[1].localisations[NSW_localisation_RU] = "Цвет текста";
-
-			ltext[2].base_name = "SetBorderColor";
-			ltext[2].localisations[NSW_localisation_EN] = "Border color";
-			ltext[2].localisations[NSW_localisation_RU] = "Цвет рамки";
-
-			//std::string decorative_element_name[3] = { "Цвет фона","Цвет текста","Цвет рамки" };
-			//####### COSMETIC SEGMENT #######
-			//block
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-			EButtonGroup* cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(256.0f, 160.0f), EGUIStyle::active_style);
-
-
-			cosmetic_segment->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-			//*massive_game_item->stretch_mode		= GroupStretchMode::STRETCHED_FILL_VOID;
-
-			cosmetic_segment->stretch_x_by_parent_size = false;
-			cosmetic_segment->stretch_y_by_parent_size = true;
-
-			whole_block_data->pointer_to_cosmetic_segment = cosmetic_segment;
-			whole_filter_block_group->add_group(cosmetic_segment);
-
-			for (int clr = 0; clr < 3; clr++)
-				//if (rand() % 3 == 0)
-			{
-				// // // // // // //// // // // // // //// // // // // // //
-				Helper::HRA_color_collection* HRA_collection = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
-				Helper::HSVRGBAColor* HRA_color = &HRA_collection->target_color;
-				//HRA_color->h = rand() % 360;
-				//HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
-				//HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
-				//HRA_color->a = 1.0f - pow((rand() % 100) / 100.0f, 4.0);
-
-				jc_button = EntityButton::create_named_color_button
-				(
-					new ERegionGabarite(212.0f, 30.0f),
-					cosmetic_segment,
-					EFont::font_list[0],
-					EGUIStyle::active_style,
-					ltext[clr].localisations[NSW_localisation_EN],
-					HRA_collection,
-					HRA_color,
-					ColorButtonMode::CBM_OPEN_WINDOW
-				);
-				Entity::get_last_text_area(jc_button)->localisation_text = ltext[clr];
-				//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_transfer_pointer_to_color_data_container);
-				//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
-
-				cosmetic_segment->button_list.push_back(jc_button);
-
-				bool* target_bool = &whole_block_data->color_check[clr];
-				//if (clr == 0) { whole_block_data->pointer_to_bg_color = jc_button;		target_bool = &whole_block_data->bg_color_enabled; }
-				//if (clr == 1) { whole_block_data->pointer_to_text_color = jc_button;	target_bool = &whole_block_data->text_color_enabled; }
-				//if (clr == 2) { whole_block_data->pointer_to_rama_color = jc_button;	target_bool = &whole_block_data->rama_color_enabled; }
-
-				whole_block_data->pointer_to_color_button[clr] = jc_button;
-
-
-
-
-				jc_button = new EntityButton();
-				jc_button->make_default_bool_switcher_button
-				(
-					new ERegionGabarite(30.0f, 30.0f),
-					cosmetic_segment,
-					EDataActionCollection::action_switch_boolean_value,
-					NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
-					NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
-					target_bool
-				);
-
-				whole_block_data->pointer_to_color_check_button[clr] = jc_button;
-
-				cosmetic_segment->button_list.push_back(jc_button);
-			}
-			// // // // // // //// // // // // // //// // // // // // //
-			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			create_filter_block(main_button_group);
 		}
+
 
 
 
@@ -1383,44 +1093,44 @@ EWindowMain::EWindowMain()
 				*buttons_simulator->can_change_style = false;
 
 				if (!EDataEntity::data_entity_list.empty())
-				for (int i = 0; i < 17; i++)
-				{
-
-					jc_button = new EntityButton();
-					jc_button->make_as_default_clickable_button
-					(
-						new ERegionGabarite(40.0f, 40.0f),
-						buttons_simulator,
-						nullptr
-					);
-
-					ETextureGabarite* item_icon
-						=
-						NS_EGraphicCore::load_from_textures_folder
-						("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_list[rand() % EDataEntity::data_entity_list.size()]));
-
-					if (item_icon != nullptr)
+					for (int i = 0; i < 17; i++)
 					{
-						float resize_factor = 32.0f / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
-						resize_factor = min(resize_factor, 1.0f);
 
-						jc_button->sprite_layer_list.push_back
+						jc_button = new EntityButton();
+						jc_button->make_as_default_clickable_button
 						(
-							ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-							(item_icon,
-								(40.0f - *item_icon->size_x_in_pixels * resize_factor) / 2.0f,
-								(40.0f - *item_icon->size_y_in_pixels * resize_factor) / 2.0f,
-								3.0f,
-
-								*item_icon->size_x_in_pixels * resize_factor,
-								*item_icon->size_y_in_pixels * resize_factor,
-								0.0f
-							)
+							new ERegionGabarite(40.0f, 40.0f),
+							buttons_simulator,
+							nullptr
 						);
-					}
 
-					buttons_simulator->button_list.push_back(jc_button);
-				}
+						ETextureGabarite* item_icon
+							=
+							NS_EGraphicCore::load_from_textures_folder
+							("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_list[rand() % EDataEntity::data_entity_list.size()]));
+
+						if (item_icon != nullptr)
+						{
+							float resize_factor = 32.0f / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
+							resize_factor = min(resize_factor, 1.0f);
+
+							jc_button->sprite_layer_list.push_back
+							(
+								ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+								(item_icon,
+									(40.0f - *item_icon->size_x_in_pixels * resize_factor) / 2.0f,
+									(40.0f - *item_icon->size_y_in_pixels * resize_factor) / 2.0f,
+									3.0f,
+
+									*item_icon->size_x_in_pixels * resize_factor,
+									*item_icon->size_y_in_pixels * resize_factor,
+									0.0f
+								)
+							);
+						}
+
+						buttons_simulator->button_list.push_back(jc_button);
+					}
 
 			}
 
@@ -1511,7 +1221,7 @@ EWindowMain::EWindowMain()
 
 		DataEntityFilter* data_entity_filter = new DataEntityFilter();
 		data_entity_filter->target_tag_name = "data type";
-		data_entity_filter->suitable_values_list.push_back("game item");
+		data_entity_filter->suitable_values_list.push_back("Game item");
 
 		EFilterRule* jc_filter_rule = new EFilterRule();
 		jc_filter_rule->required_tag_list.push_back(data_entity_filter);
@@ -1564,8 +1274,8 @@ EWindowMain::EWindowMain()
 		);
 		//right_side_for_filter_rule_buttons->can
 
-		jc_data_container_for_search_group->pointer_to_group_with_data_entities		= left_side_for_data_entity_buttons;
-		jc_data_container_for_search_group->pointer_to_group_with_filter_rules_list	= right_side_for_filter_rule_buttons;
+		jc_data_container_for_search_group->pointer_to_group_with_data_entities = left_side_for_data_entity_buttons;
+		jc_data_container_for_search_group->pointer_to_group_with_filter_rules_list = right_side_for_filter_rule_buttons;
 
 
 
@@ -1576,7 +1286,7 @@ EWindowMain::EWindowMain()
 
 			jc_button = EntityButton::create_wide_item_button
 			(
-				new ERegionGabarite(300.0f, 48.0f),
+				new ERegionGabarite(220.0f, 40.0f),
 				left_side_for_data_entity_buttons,
 				data_entity,
 				EFont::font_list[0]
@@ -1592,7 +1302,7 @@ EWindowMain::EWindowMain()
 			EntityButtonFilterRule* filter_button = new EntityButtonFilterRule();
 			filter_button->make_default_button_with_unedible_text
 			(
-				new ERegionGabarite(170.0f, 28.0f),
+				new ERegionGabarite(200.0f, 28.0f),
 				right_side_for_filter_rule_buttons,
 				&EDataActionCollection::action_select_this_filter_variant,
 				EFilterRule::registered_filter_rules_for_list[i]->localisation_text->localisations[NSW_localisation_EN]
@@ -1602,8 +1312,8 @@ EWindowMain::EWindowMain()
 
 			Entity::get_last_text_area(filter_button)->localisation_text = *EFilterRule::registered_filter_rules_for_list[i]->localisation_text;
 
-			filter_button->target_filter_rule		= EFilterRule::registered_filter_rules_for_list[i];
-			filter_button->target_data_container	= jc_data_container_for_search_group;
+			filter_button->target_filter_rule = EFilterRule::registered_filter_rules_for_list[i];
+			filter_button->target_data_container = jc_data_container_for_search_group;
 
 			right_side_for_filter_rule_buttons->button_list.push_back(filter_button);
 		}
@@ -1639,11 +1349,27 @@ EWindowMain::EWindowMain()
 
 
 		button_group_list.push_back(main_button_group);
+
+
+
+		///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	
+		jc_button = new EntityButton();
+		jc_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(256.0f, 25.0f),
+			jc_button_group,
+			&EDataActionCollection::action_add_all_entity_buttons_to_filter_block,
+			"Add all these items"
+		);
+
+		jc_button_group->button_list.push_back(jc_button);
+		///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	
+
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
 
 	//world parameters
-	if (true)
+	if (false)
 	{
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		/////		world parameter		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1921,8 +1647,62 @@ EWindowMain::EWindowMain()
 
 		jc_button_group->button_list.push_back(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
+		EntityButtonVariantRouter* button_variant_router = new EntityButtonVariantRouter();
+		button_variant_router->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(60.0f, 30.0f),
+			jc_button_group,
+			EDataActionCollection::action_rotate_variant,
+			nullptr
+		);
+
+		button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
+		//
+		ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], "|?|");
+		button_variant_router->pointer_to_text_area = jc_text_area;
+
+		*jc_text_area->can_be_edited = false;
+		Entity::add_text_area_to_last_clickable_region(button_variant_router, jc_text_area);
 
 
+		//
+		RouterVariant* router_variant = nullptr;
+		ELocalisationText* local_text = nullptr;
+
+		router_variant = new RouterVariant();
+		local_text = new ELocalisationText();
+
+		local_text->base_name = "Show";
+		local_text->localisations[NSW_localisation_EN] = "Loot: Visible";
+		local_text->localisations[NSW_localisation_RU] = "Лут: Виден";
+		router_variant->localisation = local_text;
+
+		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color->set_color_RGBA(0.8f, 1.0f, 0.8f, 1.0f);
+
+		button_variant_router->router_variant_list.push_back(*router_variant);
+
+
+		router_variant = new RouterVariant();
+		local_text = new ELocalisationText();
+
+		local_text->base_name = "Hide";
+		local_text->localisations[NSW_localisation_EN] = "Loot: hidden";
+		local_text->localisations[NSW_localisation_RU] = "Лут: скрыт";
+		router_variant->localisation = local_text;
+
+		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color->set_color_RGBA(0.8f, 0.5f, 0.45f, 1.0f);
+
+		button_variant_router->router_variant_list.push_back(*router_variant);
+
+
+		button_variant_router->select_variant(0);
+
+
+
+		jc_button_group->button_list.push_back(button_variant_router);
+		// // // // // // //// // // // // // //// // // // // // //
 
 		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
@@ -2415,30 +2195,35 @@ EWindowMain::EWindowMain()
 				EGUIStyle::active_style
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
-		
-		//////////////////////////////////////////////////////
-
-			jc_button = new EntityButtonForFilterBlock();
-			jc_button->make_as_default_button_with_icon
-			(
-				new ERegionGabarite(45.0f, 45.0f),
-				top_section,
-				&EDataActionCollection::action_open_loot_filters_list_window,
-				NS_EGraphicCore::load_from_textures_folder("button_open")
-			);
-			top_section->button_list.push_back(jc_button);
 
 		//////////////////////////////////////////////////////
 
-			jc_button = new EntityButtonForFilterBlock();
-			jc_button->make_as_default_button_with_icon
-			(
-					new ERegionGabarite(45.0f, 45.0f),
-					top_section,
-					nullptr,
-					NS_EGraphicCore::load_from_textures_folder("button_save")
-			);
-			top_section->button_list.push_back(jc_button);
+		jc_button = new EntityButtonForFilterBlock();
+		jc_button->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(45.0f, 45.0f),
+			top_section,
+			&EDataActionCollection::action_open_loot_filters_list_window,
+			NS_EGraphicCore::load_from_textures_folder("button_open")
+		);
+		top_section->button_list.push_back(jc_button);
+
+		//////////////////////////////////////////////////////
+
+		jc_button = new EntityButtonForFilterBlock();
+
+		jc_button->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(45.0f, 45.0f),
+			top_section,
+			&EDataActionCollection::action_save_lootfilter,
+			NS_EGraphicCore::load_from_textures_folder("button_save")
+		);
+		//auto data_container = new EDataContainer_Button_StoreParentFilterBlock();
+		//data_container->parent_filter_block = top_section;
+
+		//EntityButton::get_last_custom_data(jc_button)->
+		top_section->button_list.push_back(jc_button);
 
 		//////////////////////////////////////////////////////
 
@@ -2477,11 +2262,11 @@ void EWindowMain::register_filter_rules()
 	//game items
 	jc_filter_rule = new EFilterRule();
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
+	//filter by game item
+	jc_filter = new DataEntityFilter();
 
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM] = jc_filter_rule;
@@ -2492,7 +2277,7 @@ void EWindowMain::register_filter_rules()
 	jc_filter = new DataEntityFilter();
 
 	jc_filter->target_tag_name = "data type";
-	jc_filter->suitable_values_list.push_back("base class");
+	jc_filter->suitable_values_list.push_back("Base Class");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_BASE_CLASS] = jc_filter_rule;
 
@@ -2503,7 +2288,7 @@ void EWindowMain::register_filter_rules()
 	jc_filter = new DataEntityFilter();
 
 	jc_filter->target_tag_name = "data type";
-	jc_filter->suitable_values_list.push_back("influence");
+	jc_filter->suitable_values_list.push_back("Influence");
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_INFLUENCE] = jc_filter_rule;
@@ -2514,7 +2299,7 @@ void EWindowMain::register_filter_rules()
 	jc_filter = new DataEntityFilter();
 
 	jc_filter->target_tag_name = "data type";
-	jc_filter->suitable_values_list.push_back("gem");
+	jc_filter->suitable_values_list.push_back("Gem");
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_SKILL_GEMS] = jc_filter_rule;
@@ -2525,7 +2310,7 @@ void EWindowMain::register_filter_rules()
 	jc_filter = new DataEntityFilter();
 
 	jc_filter->target_tag_name = "data type";
-	jc_filter->suitable_values_list.push_back("explicit");
+	jc_filter->suitable_values_list.push_back("Explicit");
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS] = jc_filter_rule;
@@ -2536,7 +2321,7 @@ void EWindowMain::register_filter_rules()
 	jc_filter = new DataEntityFilter();
 
 	jc_filter->target_tag_name = "data type";
-	jc_filter->suitable_values_list.push_back("cluster passive");
+	jc_filter->suitable_values_list.push_back("Cluster passive");
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_CLUSTER_PASSIVE] = jc_filter_rule;
@@ -2547,7 +2332,7 @@ void EWindowMain::register_filter_rules()
 	jc_filter = new DataEntityFilter();
 
 	jc_filter->target_tag_name = "data type";
-	jc_filter->suitable_values_list.push_back("enchantment");
+	jc_filter->suitable_values_list.push_back("Enchantment");
 
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT] = jc_filter_rule;
@@ -2560,428 +2345,428 @@ void EWindowMain::register_filter_rules()
 	// rare
 	// expensive
 	// very expensive
-	
+
 	// // // BUTTON LIST // // //
-	
+
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//ALL ITEMS
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "All items";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Все предметы";
-		jc_filter_rule->tag = "game item";
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "All items";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Все предметы";
+	jc_filter_rule->tag = "Game item";
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
 
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//TRASH DIVINATIONS
 	jc_filter_rule = new EFilterRule();
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trash divinations";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Мусорные гадальные карты";
-	jc_filter_rule->tag = "game item";
+	jc_filter_rule->tag = "Game item";
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-			jc_filter->target_tag_name = "data type";
-			jc_filter->suitable_values_list.push_back("game item");
-			jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-			jc_filter->target_tag_name = "base class";
-			jc_filter->suitable_values_list.push_back("divination card");
-			jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "base class";
+	jc_filter->suitable_values_list.push_back("Divination card");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-			jc_filter->target_tag_name = "worth";
-			jc_filter->suitable_values_list.push_back("trash");
-			jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "worth";
+	jc_filter->suitable_values_list.push_back("Trash");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-		
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//TRASH DIVINATIONS
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Common divinations";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Дешёвые гадальные карты";
-		jc_filter_rule->tag = "game item";
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//TRASH DIVINATIONS
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Common divinations";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Дешёвые гадальные карты";
+	jc_filter_rule->tag = "Game item";
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "base class";
-		jc_filter->suitable_values_list.push_back("divination card");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "worth";
-		jc_filter->suitable_values_list.push_back("common");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "base class";
+	jc_filter->suitable_values_list.push_back("Divination card");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-		
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//TRASH DIVINATIONS
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Moderate divinations";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Хорошие гадальные карты";
-		jc_filter_rule->tag = "game item";
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "worth";
+	jc_filter->suitable_values_list.push_back("Common");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "base class";
-		jc_filter->suitable_values_list.push_back("divination card");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//TRASH DIVINATIONS
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Moderate divinations";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Хорошие гадальные карты";
+	jc_filter_rule->tag = "Game item";
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "worth";
-		jc_filter->suitable_values_list.push_back("moderate");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-		
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//TRASH DIVINATIONS
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Rare divinations";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Ценные гадальные карты";
-		jc_filter_rule->tag = "game item";
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "base class";
+	jc_filter->suitable_values_list.push_back("Divination card");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "worth";
+	jc_filter->suitable_values_list.push_back("Moderate");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "base class";
-		jc_filter->suitable_values_list.push_back("divination card");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "worth";
-		jc_filter->suitable_values_list.push_back("rare");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//TRASH DIVINATIONS
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Rare divinations";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Ценные гадальные карты";
+	jc_filter_rule->tag = "Game item";
 
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-		
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//TRASH DIVINATIONS
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Expensive divinations";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Дорогие гадальные карты";
-		jc_filter_rule->tag = "game item";
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "base class";
+	jc_filter->suitable_values_list.push_back("Divination card");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "base class";
-		jc_filter->suitable_values_list.push_back("divination card");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "worth";
+	jc_filter->suitable_values_list.push_back("Rare");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "worth";
-		jc_filter->suitable_values_list.push_back("expensive");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-		
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//TRASH DIVINATIONS
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Very expensive divinations";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Очень дорогие гадальные карты";
-		jc_filter_rule->tag = "game item";
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//TRASH DIVINATIONS
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Expensive divinations";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Дорогие гадальные карты";
+	jc_filter_rule->tag = "Game item";
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "base class";
-		jc_filter->suitable_values_list.push_back("divination card");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "base class";
+	jc_filter->suitable_values_list.push_back("Divination card");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by class "divination"
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "worth";
-		jc_filter->suitable_values_list.push_back("very expensive");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "worth";
+	jc_filter->suitable_values_list.push_back("Expensive");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
-	
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//TRASH DIVINATIONS
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Very expensive divinations";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Очень дорогие гадальные карты";
+	jc_filter_rule->tag = "Game item";
+
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "base class";
+	jc_filter->suitable_values_list.push_back("Divination card");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "worth";
+	jc_filter->suitable_values_list.push_back("Very expensive");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
 
 	////////////////////////////////////////////////////////////////////////////////////////////
 		//Heist league
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
-		jc_filter_rule->tag = "game item";
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist bases";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Базы кражи";
+	jc_filter_rule->tag = "Game item";
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter "item tag" by 
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "item tag";
-		jc_filter->suitable_values_list.push_back("League: Heist");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-		
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Heist base");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//Heist league
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Deleted items";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Удалённые предметы";
-		jc_filter_rule->tag = "game item";
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//D
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Deleted items";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Удалённые предметы";
+	jc_filter_rule->tag = "Game item";
 
-		//filter "item tag" by 
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "item tag";
-		jc_filter->suitable_values_list.push_back("Deleted");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-		
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//Heist league
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Atlas bases";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Базы атласа";
-		jc_filter_rule->tag = "game item";
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Deleted");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
-		//filter "item tag" by 
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "item tag";
-		jc_filter->suitable_values_list.push_back("Rare base");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-		
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Atlas bases
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Atlas bases";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Базы атласа";
+	jc_filter_rule->tag = "Game item";
 
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//Heist league
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Top tier base";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лучшие базы предметов";
-		jc_filter_rule->tag = "game item";
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Rare base");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter "item tag" by 
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "item tag";
-		jc_filter->suitable_values_list.push_back("Top tier base");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-		
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//Heist league
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "League: Ritual";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига: Ритуал";
-		jc_filter_rule->tag = "game item";
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Top tier bases
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Top tier base";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лучшие базы предметов";
+	jc_filter_rule->tag = "Game item";
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter "item tag" by 
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "item tag";
-		jc_filter->suitable_values_list.push_back("League: Ritual");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-		
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Top tier base");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//Heist league
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
-		jc_filter_rule->tag = "game item";
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Ritual league
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "League: Ritual";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига: Ритуал";
+	jc_filter_rule->tag = "Game item";
 
-		//filter "item tag" by 
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "item tag";
-		jc_filter->suitable_values_list.push_back("League: Heist");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-		
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//Heist league
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
-		jc_filter_rule->tag = "game item";
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("League: Ritual");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
-		//filter "item tag" by 
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "item tag";
-		jc_filter->suitable_values_list.push_back("League: Heist");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-		
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Heist league
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
+	jc_filter_rule->tag = "Game item";
 
-		////////////////////////////////////////////////////////////////////////////////////////////
-		//Heist league
-		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
-		jc_filter_rule->tag = "game item";
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter by game item
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "data type";
-		jc_filter->suitable_values_list.push_back("game item");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("League: Heist");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
 
-		//filter "item tag" by 
-		jc_filter = new DataEntityFilter();
-		jc_filter->target_tag_name = "item tag";
-		jc_filter->suitable_values_list.push_back("League: Heist");
-		jc_filter_rule->required_tag_list.push_back(jc_filter);
-		//
-		
-		//
-		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Kalandra league
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "kalandra league";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Каландра'";
+	jc_filter_rule->tag = "Game item";
+
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Introduced: Kalandra league");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Heist league
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
+	jc_filter_rule->tag = "Game item";
+
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("League: Heist");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
 }
 
@@ -2995,8 +2780,8 @@ void EWindowMain::load_loot_filter_list()
 	//EString::loot_filter_path_list.clear();
 	//EString::loot_filter_name_list.clear();
 
-	auto			loot_filter_group	= static_cast<EButtonGroupLootFilterList*>(EButtonGroup::existing_loot_filter_list);
-	EButtonGroup*	part_with_list		= loot_filter_group->part_with_list;
+	auto			loot_filter_group = static_cast<EButtonGroupLootFilterList*>(EButtonGroup::existing_loot_filter_list);
+	EButtonGroup* part_with_list = loot_filter_group->part_with_list;
 
 	std::vector<EntityButton*> deleted_buttons;
 
@@ -3008,17 +2793,17 @@ void EWindowMain::load_loot_filter_list()
 
 		if (but != part_with_list->slider)
 		{
-	/*		but->need_remove	= true;
-			but->disabled		= true;
-			but->disable_draw	= true;*/
+			/*		but->need_remove	= true;
+					but->disabled		= true;
+					but->disable_draw	= true;*/
 
 			delete but;
 
 			part_with_list->button_list.erase(part_with_list->button_list.begin() + i);
-			
+
 			i--;
 
-			
+
 		}
 	}
 
@@ -3035,14 +2820,14 @@ void EWindowMain::load_loot_filter_list()
 
 
 	//part_with_list->button_list.clear();
-	
+
 	//part_with_list->button_list.shrink_to_fit();
 
 	for (auto& p : std::experimental::filesystem::directory_iterator(path_of_exile_folder))
 	{
-		std::string filter_path			= p.path().u8string();
+		std::string filter_path = p.path().u8string();
 
-		std::string loot_filter_name	= p.path().filename().u8string();
+		std::string loot_filter_name = p.path().filename().u8string();
 
 		//EInputCore::logger_param("detect file:", filter_path);
 		//writer << custom_sound << endl;;
@@ -3051,19 +2836,19 @@ void EWindowMain::load_loot_filter_list()
 
 
 		if
-		(
-			(loot_filter_name.length() >= 8)
-			&&
-			(EStringUtils::to_lower(loot_filter_name.substr(loot_filter_name.length() - 7, 7)) == ".filter")
-		)
+			(
+				(loot_filter_name.length() >= 8)
+				&&
+				(EStringUtils::to_lower(loot_filter_name.substr(loot_filter_name.length() - 7, 7)) == ".filter")
+				)
 		{
 
-			
+
 			//cout <<"It sound!" << '\n'<<'\n';
 
 			//for (int i = 0; i < 10; i ++)
 			{
-				EntityButtonForFilterBlock* loot_filter_button = new EntityButtonForFilterBlock();
+				EntityButtonForLootFilterSelector* loot_filter_button = new EntityButtonForLootFilterSelector();
 				loot_filter_button->make_default_button_with_unedible_text
 				(
 					new ERegionGabarite(325.0f, 32.0f),
@@ -3071,6 +2856,7 @@ void EWindowMain::load_loot_filter_list()
 					&EDataActionCollection::action_select_this_loot_filter_from_list,
 					loot_filter_name
 				);
+				loot_filter_button->full_path = filter_path;
 
 				part_with_list->button_list.push_back(loot_filter_button);
 			}
@@ -3085,6 +2871,531 @@ void EWindowMain::load_loot_filter_list()
 			//ESound::custom_drop_sound.push_back(ESound::engine->addSoundSourceFromFile(custom_sound.c_str()));
 		}
 	}
+}
+
+//enum class ReadLootFilterState
+//{
+//	BEGIN,
+//	ATTRIBUTE_NAME,
+//	WTF
+//};
+
+void EWindowMain::open_loot_filter(std::string _full_path)
+{
+	EInputCore::logger_param("open loot filter", _full_path);
+
+	std::ifstream file;
+	std::string full_line;
+
+	file.open(_full_path);
+
+	std::string buffer_text = "";
+
+	bool space_is_not_separator = false;
+	bool comment_mode = false;
+
+	int data_part = 0;
+	int value_array_id = 0;
+	int matched_id_for_color_button = -1;
+
+	EntityButton* matched_button = nullptr;
+
+	EButtonGroup* jc_filter_block = nullptr;
+
+	std::string attribute_text = "";
+	std::string condition_text = "";
+	std::string value_array[512] = {};
+
+	Helper::HSVRGBAColor* target_HRA_color;
+	bool* target_color_bool;
+
+	FilterBlockAttribute* matched_filter_block_attribute = nullptr;
+
+
+
+	while (std::getline(file, full_line))
+	{
+		data_part = 0;
+		value_array_id = 0;
+		matched_id_for_color_button = -1;
+		matched_button = nullptr;
+
+		buffer_text = "";
+
+		space_is_not_separator = false;
+		comment_mode = false;
+
+		condition_text = "";
+
+		matched_filter_block_attribute = nullptr;
+		target_HRA_color = nullptr;
+
+		EDataContainer_Group_WholeFilterBlock*			whole_block_container	= nullptr;
+		EDataContainer_Group_FilterBlockListedSegment*	listed_container		= nullptr;
+
+		target_color_bool = nullptr;
+
+		for (int i = 0; i < full_line.length(); i++)
+		{
+			char current_sym = full_line.at(i);
+
+			if (current_sym == '"') { space_is_not_separator = !space_is_not_separator; }
+
+			if
+				(
+					(
+						(current_sym != ' ')
+						||
+						(space_is_not_separator)
+						)
+					&&
+					(current_sym != '\t')
+					&&
+					(current_sym != '\r')
+					&&
+					(current_sym != '\n')
+					&&
+					(i + 1 < full_line.length())
+					)
+			{
+				if (current_sym != '"')
+				{
+					buffer_text += current_sym;
+				}
+			}
+			else
+			{
+				//force add symbol
+				if
+					(
+						(
+							(current_sym != ' ')
+							||
+							(space_is_not_separator)
+							)
+						&&
+						(current_sym != '\t')
+						&&
+						(current_sym != '\r')
+						&&
+						(current_sym != '\n')
+						&&
+						(i + 1 >= full_line.length())
+						)
+				{
+					if (current_sym != '"')
+					{
+						buffer_text += current_sym;
+					}
+				}
+
+				if (buffer_text != "")
+				{
+					//attribute name
+					if (data_part == 0)
+					{
+						EInputCore::logger_param("buffer text", buffer_text);
+
+						if
+						(
+								(EStringUtils::compare_ignoring_case(buffer_text, "show"))
+								||
+								(EStringUtils::compare_ignoring_case(buffer_text, "hide"))
+						)
+						{
+							jc_filter_block = create_filter_block(loot_filter_editor);
+
+							whole_block_container = (EDataContainer_Group_WholeFilterBlock*)(jc_filter_block->data_container);
+							
+						}
+						else
+						{
+							matched_filter_block_attribute = nullptr;
+
+							for (int b = 0; b < registered_filter_block_attributes.size(); b++)
+							{
+								FilterBlockAttribute* attribute = registered_filter_block_attributes[b];
+
+								if (EStringUtils::compare_ignoring_case(buffer_text, attribute->localisation.base_name))
+								{
+									matched_filter_block_attribute = attribute;
+								}
+							}
+
+							if (matched_filter_block_attribute != nullptr)
+							{
+								add_filter_block_buttons_to_filter_block(jc_filter_block, matched_filter_block_attribute);
+
+								whole_block_container = (EDataContainer_Group_WholeFilterBlock*)(jc_filter_block->data_container);
+
+								if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC)
+								{
+									for (int b = 0; b < 3; b++)
+									{
+										if (Entity::get_last_text_area(whole_block_container->pointer_to_color_button[b])->localisation_text.base_name == matched_filter_block_attribute->localisation.base_name)
+										{
+											//matched_button = whole_block_container->pointer_to_color_button[b];
+											target_HRA_color = ((EDataContainer_Button_StoreColor*)(Entity::get_last_custom_data(whole_block_container->pointer_to_color_button[b])->data_container))->stored_color;
+											target_color_bool = &whole_block_container->color_check[b];
+										}
+									}
+
+									//target_HRA_color = ((EDataContainer_Button_StoreColor*)(Entity::get_last_custom_data(whole_block_container->pointer_to_color_button[0])->data_container))->stored_color;
+									//target_color_bool = &whole_block_container->color_check[0];
+								}
+							}
+						}
+					}
+
+					//condition operator
+					if (data_part == 1)
+					{
+						if
+							(
+								(buffer_text == "<=")
+								||
+								(buffer_text == "=")
+								||
+								(buffer_text == "==")
+								||
+								(buffer_text == ">=")
+								||
+								(buffer_text == "<>")
+								)
+						{
+							condition_text = buffer_text;
+						}
+						else
+						{
+							condition_text = "";
+							data_part = 2;
+						}
+					}
+
+					//values
+					if (data_part >= 2)
+					{
+						EInputCore::logger_param("value", buffer_text);
+						//value_array[value_array_id] = buffer_text;
+
+						//value_array_id++;
+
+						if (matched_filter_block_attribute != nullptr)
+						{
+							
+							
+
+
+							if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED)
+							{
+								whole_block_container = (EDataContainer_Group_WholeFilterBlock*)(jc_filter_block->data_container);
+								listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(whole_block_container->pointer_to_listed_segment->group_list.back()->data_container);
+
+								EFilterRule* filter_rule = listed_container->data_container_with_filter_rule->filter_rule;
+
+								int xxx = 0;
+								for (EDataEntity* de : EDataEntity::data_entity_list)
+								{
+									if
+										(
+											(
+												(DataEntityUtils::get_tag_value_by_name(0, "name EN", de) == buffer_text)
+												||
+												(DataEntityUtils::get_tag_value_by_name(0, "base name", de) == buffer_text)
+												)
+											&&
+											(EFilterRule::matched_by_filter_rule(de, filter_rule, ""))
+											)
+									{
+										EntityButton* wide_button = EntityButton::create_wide_item_button
+										(
+											new ERegionGabarite(220.0f, 40.0f),
+											((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons,
+											de,
+											EFont::font_list[0]
+										);
+
+										((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons->button_list.push_back(wide_button);
+										//EButtonGroup::change_group(((EDataContainer_Group_FilterBlockListedSegment*)d_container)->group_with_listed_buttons);
+									}
+
+									xxx++;
+								}
+							}
+
+							if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC)
+							{
+								whole_block_container = (EDataContainer_Group_WholeFilterBlock*)(jc_filter_block->data_container);
+
+								if (matched_filter_block_attribute->localisation.base_name == "SetFontSize")
+								{
+
+									whole_block_container->text_size = (std::stoi(buffer_text) - 18) / 27.0f;
+
+									whole_block_container->text_size = max(whole_block_container->text_size, 0.0f);
+									whole_block_container->text_size = min(whole_block_container->text_size, 1.0f);
+
+									whole_block_container->text_size_bool = true;
+									//d_container->
+								}
+
+								if (target_HRA_color != nullptr)
+								{
+									if (data_part == 2) { target_HRA_color->r = std::stoi(buffer_text) / 255.0f; }
+									if (data_part == 3) { target_HRA_color->g = std::stoi(buffer_text) / 255.0f; }
+									if (data_part == 4) { target_HRA_color->b = std::stoi(buffer_text) / 255.0f; }
+									if (data_part == 5) { target_HRA_color->a = std::stoi(buffer_text) / 255.0f; Helper::rgb2hsv(target_HRA_color); *target_color_bool = true; }
+								}
+
+								
+
+
+
+							}
+						}
+					}
+
+					//value_array[data_part] = buffer_text;
+
+					buffer_text = "";
+					data_part++;
+				}
+			}
+
+		}
+	}
+
+	file.close();
+
+}
+
+EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group)
+{
+
+	EInputCore::logger_simple_info("create new block!");
+	//whole filter block
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+		whole_filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 150.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+	_target_whole_group->add_group(whole_filter_block_group);
+
+	EDataContainer_Group_WholeFilterBlock*
+		whole_block_data = new EDataContainer_Group_WholeFilterBlock();
+	whole_filter_block_group->data_container = whole_block_data;
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	//left additional section
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+		left_control_section = EButtonGroup::create_default_button_group(new ERegionGabarite(50.0f, 20.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+
+	whole_filter_block_group->add_group(left_control_section);
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	///////////		BUTTON PLUS		///////////
+	EntityButton*
+		jc_button = new EntityButton();
+	jc_button->make_as_default_button_with_icon
+	(
+		new ERegionGabarite(50.0f, 50.0f),
+		left_control_section,
+		&EDataActionCollection::action_open_add_content_window,
+		NS_EGraphicCore::load_from_textures_folder("button_plus")
+	);
+
+	EDataContainer_Button_OpenButtonGroup*
+		data_open_group = new EDataContainer_Button_OpenButtonGroup();
+	data_open_group->master_group = whole_filter_block_group;
+	data_open_group->target_group = EButtonGroup::data_entity_filter;
+
+	EntityButton::get_last_custom_data(jc_button)->data_container = data_open_group;
+
+	left_control_section->button_list.push_back(jc_button);
+	////////////////
+
+	///////////		BUTTON GEN		///////////
+	//generate filter block text
+	jc_button = new EntityButton();
+	jc_button->make_default_button_with_unedible_text
+	(
+		new ERegionGabarite(50.0f, 22.0f),
+		left_control_section,
+		&EDataActionCollection::action_generate_filter_block_text,
+		"Gen"
+	);
+
+	auto gen_data = new EDataContainer_Button_StoreParentFilterBlock();
+	gen_data->parent_filter_block = whole_filter_block_group;
+	jc_button->custom_data_list.back()->data_container = gen_data;
+
+	left_control_section->button_list.push_back(jc_button);
+	////////////////
+
+
+	//left side for equational parameters
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		EButtonGroup*
+			non_list_condition_group = EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(420.0f, 160.0f),
+				EGUIStyle::active_style
+			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+
+
+		whole_block_data->pointer_to_non_listed_segment = non_list_condition_group;
+
+		whole_filter_block_group->add_group(non_list_condition_group);
+
+	}
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	//####### ITEM GROUP //#######
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+		listed_condition_segment = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(800.0f, 160.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+
+	//root group data ontaner
+	whole_block_data->pointer_to_listed_segment = listed_condition_segment;
+
+
+	whole_filter_block_group->add_group(listed_condition_segment);
+
+
+
+	//cosmetic segment
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+		cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(256.0f, 160.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);;
+
+	ELocalisationText ltext[3];
+
+	ltext[0].base_name = "SetBackgroundColor";
+	ltext[0].localisations[NSW_localisation_EN] = "Background color";
+	ltext[0].localisations[NSW_localisation_RU] = "Цвет фона";
+
+	ltext[1].base_name = "SetTextColor";
+	ltext[1].localisations[NSW_localisation_EN] = "Text color";
+	ltext[1].localisations[NSW_localisation_RU] = "Цвет текста";
+
+	ltext[2].base_name = "SetBorderColor";
+	ltext[2].localisations[NSW_localisation_EN] = "Border color";
+	ltext[2].localisations[NSW_localisation_RU] = "Цвет рамки";
+
+	//root group data container
+	whole_block_data->pointer_to_cosmetic_segment = cosmetic_segment;
+	whole_filter_block_group->add_group(cosmetic_segment);
+
+	//color buttons
+	for (int clr = 0; clr < 3; clr++)
+	{
+		// // // // // // //// // // // // // //// // // // // // //
+		Helper::HRA_color_collection* HRA_collection = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
+		Helper::HSVRGBAColor* HRA_color = &HRA_collection->target_color;
+
+		jc_button = EntityButton::create_named_color_button
+		(
+			new ERegionGabarite(200.0f, 30.0f),
+			cosmetic_segment,
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			ltext[clr].localisations[NSW_localisation_EN],
+			HRA_collection,
+			HRA_color,
+			ColorButtonMode::CBM_OPEN_WINDOW
+		);
+		Entity::get_last_text_area(jc_button)->localisation_text = ltext[clr];
+
+
+		cosmetic_segment->button_list.push_back(jc_button);
+
+		bool*
+			target_bool = &whole_block_data->color_check[clr];
+		whole_block_data->pointer_to_color_button[clr] = jc_button;
+
+
+
+
+		jc_button = new EntityButton();
+		jc_button->make_default_bool_switcher_button
+		(
+			new ERegionGabarite(30.0f, 30.0f),
+			cosmetic_segment,
+			EDataActionCollection::action_switch_boolean_value,
+			NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
+			NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
+			target_bool
+		);
+
+		whole_block_data->pointer_to_color_check_button[clr] = jc_button;
+
+		cosmetic_segment->button_list.push_back(jc_button);
+	}
+
+
+	//font size slider
+	// // // // // // //// // // // // // //// // // // // // //
+	jc_button = EntityButton::create_vertical_named_slider
+	(
+
+		new ERegionGabarite(200.0f, 30.0f),
+		cosmetic_segment,
+		EFont::font_list[0],
+		EGUIStyle::active_style,
+		"Font size"
+	);
+
+	ETextArea*
+		last_text_area = Entity::get_last_text_area(jc_button);
+
+	last_text_area->localisation_text.base_name = "SetFontSize";
+	last_text_area->localisation_text.localisations[NSW_localisation_EN] = "Font size";
+	last_text_area->localisation_text.localisations[NSW_localisation_RU] = "Размер текста";
+
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_block_data->text_size;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
+
+	whole_block_data->text_size_button = jc_button;
+
+	cosmetic_segment->button_list.push_back(jc_button);
+	// // // // // // //// // // // // // //// // // // // // //
+
+
+	//font size switcher
+	// // // // // // //// // // // // // //// // // // // // //
+	bool* target_bool = &whole_block_data->text_size_bool;
+
+	jc_button = new EntityButton();
+	jc_button->make_default_bool_switcher_button
+	(
+		new ERegionGabarite(30.0f, 30.0f),
+		cosmetic_segment,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
+		NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
+		target_bool
+	);
+	whole_block_data->text_size_switch_button = jc_button;
+
+	cosmetic_segment->button_list.push_back(jc_button);
+	// // // // // // //// // // // // // //// // // // // // //
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	return whole_filter_block_group;
 }
 
 void EDataActionCollection::action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -3245,10 +3556,10 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 		jc_button = new EntityButtonForFilterBlock();
 		jc_button->make_as_default_button_with_icon
 		(
-					new ERegionGabarite(button_height, button_height),
-					non_listed_line,
-					&EDataActionCollection::action_mark_parent_group_as_removed,
-					NS_EGraphicCore::load_from_textures_folder("button_close")
+			new ERegionGabarite(button_height, button_height),
+			non_listed_line,
+			&EDataActionCollection::action_mark_parent_group_as_removed,
+			NS_EGraphicCore::load_from_textures_folder("button_close")
 		);
 		non_listed_line->button_list.push_back(jc_button);
 		jc_button->parent_filter_block = _target_filter_block;
@@ -3265,10 +3576,10 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 		jc_button = new EntityButtonForFilterBlock();
 		jc_button->make_default_button_with_unedible_text
 		(
-				new ERegionGabarite(200.0f, button_height),
-				non_listed_line,
-				nullptr,
-				_filter_block_attribute->localisation.localisations[0]
+			new ERegionGabarite(200.0f, button_height),
+			non_listed_line,
+			nullptr,
+			_filter_block_attribute->localisation.localisations[0]
 		);
 
 		jc_button->parent_filter_block = _target_filter_block;
@@ -3295,10 +3606,10 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 			jc_button = new EntityButtonForFilterBlock();
 			jc_button->make_default_button_with_edible_text
 			(
-						new ERegionGabarite(button_height * 2.0f, button_height),
-						non_listed_line,
-						nullptr,
-						"="
+				new ERegionGabarite(button_height * 2.0f, button_height),
+				non_listed_line,
+				nullptr,
+				"="
 			);
 
 			jc_button->parent_filter_block = _target_filter_block;
@@ -3373,11 +3684,11 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 			jc_button = new EntityButtonForFilterBlock();
 			jc_button->make_default_bool_switcher_button
 			(
-						new ERegionGabarite(22.0f, 22.0f),
-						non_listed_line,
-						EDataActionCollection::action_switch_boolean_value,
-						NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
-						NS_EGraphicCore::load_from_textures_folder("box_switcher_off")
+				new ERegionGabarite(22.0f, 22.0f),
+				non_listed_line,
+				EDataActionCollection::action_switch_boolean_value,
+				NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
+				NS_EGraphicCore::load_from_textures_folder("box_switcher_off")
 
 			);
 
@@ -3393,10 +3704,10 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 			jc_button = new EntityButtonForFilterBlock();
 			jc_button->make_default_button_with_edible_text
 			(
-						new ERegionGabarite(100.0f + input_field_additional_width, button_height),
-						non_listed_line,
-						nullptr,
-						text
+				new ERegionGabarite(100.0f + input_field_additional_width, button_height),
+				non_listed_line,
+				nullptr,
+				text
 			);
 			jc_button->parent_filter_block = _target_filter_block;
 
@@ -3436,7 +3747,12 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 	}
 
 
-	if (_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC)
+	if
+		(
+			(_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC)
+			&&
+			(false)
+			)
 	{
 		target_group_for_content = whole_filter_block_data->pointer_to_cosmetic_segment;
 
@@ -3487,9 +3803,9 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 
 	auto whole_block_data = static_cast<EDataContainer_Group_WholeFilterBlock*>(_button_group->data_container);
 
-	EButtonGroup* non_listed_section	= whole_block_data->pointer_to_non_listed_segment;
-	EButtonGroup* listed_section		= whole_block_data->pointer_to_listed_segment;
-	EButtonGroup* cosmetic_section		= whole_block_data->pointer_to_cosmetic_segment;
+	EButtonGroup* non_listed_section = whole_block_data->pointer_to_non_listed_segment;
+	EButtonGroup* listed_section = whole_block_data->pointer_to_listed_segment;
+	EButtonGroup* cosmetic_section = whole_block_data->pointer_to_cosmetic_segment;
 
 	//NON-LISTED
 	for (EButtonGroup* n_listed : non_listed_section->group_list)
@@ -3557,11 +3873,13 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 	}
 
 	//LISTED
+
 	for (EButtonGroup* listed : listed_section->group_list)
 	{
 		auto container = static_cast<EDataContainer_Group_FilterBlockListedSegment*>(listed->data_container);
 
-		if (container != nullptr)
+
+		if ((container != nullptr) && (container->group_with_listed_buttons->button_list.size() > 1))
 		{
 			result_string += '\t' + container->filter_attribute_name;
 
@@ -3606,32 +3924,44 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 		//	//)
 		//}
 
-		auto cosmetic_data = static_cast<EDataContainer_Group_WholeFilterBlock*>(whole_block_data);
-		ETextArea* tarea = nullptr;
+	auto cosmetic_data = static_cast<EDataContainer_Group_WholeFilterBlock*>(whole_block_data);
+	ETextArea* tarea = nullptr;
 
-		for (int i = 0; i < 3; i++)
+	for (int i = 0; i < 3; i++)
+	{
+		result_string += '\t';
+		if (!cosmetic_data->color_check[i])
 		{
-			result_string += '\t';
-			if (!cosmetic_data->color_check[i])
-			{
-				result_string += "#";
-			}
-			tarea = Entity::get_last_text_area(cosmetic_data->pointer_to_color_button[i]);
-			
-			if (tarea != nullptr)
-			{
-				result_string += tarea->localisation_text.base_name;
-			}
-			auto store_color_data = static_cast<EDataContainer_Button_StoreColor*>(Entity::get_last_custom_data(cosmetic_data->pointer_to_color_button[i])->data_container);
-
-			result_string += " " + std::to_string((int)round(store_color_data->stored_color->r * 255.0f));
-			result_string += " " + std::to_string((int)round(store_color_data->stored_color->g * 255.0f));
-			result_string += " " + std::to_string((int)round(store_color_data->stored_color->b * 255.0f));
-			result_string += " " + std::to_string((int)round(store_color_data->stored_color->a * 255.0f));
-
-			result_string += '\r';
-			result_string += '\n';
+			result_string += "#";
 		}
+		tarea = Entity::get_last_text_area(cosmetic_data->pointer_to_color_button[i]);
+
+		if (tarea != nullptr)
+		{
+			result_string += tarea->localisation_text.base_name;
+		}
+		auto store_color_data = static_cast<EDataContainer_Button_StoreColor*>(Entity::get_last_custom_data(cosmetic_data->pointer_to_color_button[i])->data_container);
+
+		result_string += " " + std::to_string((int)round(store_color_data->stored_color->r * 255.0f));
+		result_string += " " + std::to_string((int)round(store_color_data->stored_color->g * 255.0f));
+		result_string += " " + std::to_string((int)round(store_color_data->stored_color->b * 255.0f));
+		result_string += " " + std::to_string((int)round(store_color_data->stored_color->a * 255.0f));
+
+		result_string += '\r';
+		result_string += '\n';
+	}
+
+
+	//font size
+	if (!cosmetic_data->text_size_bool)
+	{
+		result_string += "#";
+	}
+	tarea = Entity::get_last_text_area(cosmetic_data->text_size_button);
+
+	result_string += tarea->localisation_text.base_name;
+
+	result_string += " " + std::to_string((int)(round(18.0f + cosmetic_data->text_size * 27.0f)));
 
 
 	return result_string;
@@ -3653,6 +3983,8 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::st
 	//data container, store pointer to group with listed buttons
 	auto d_container = new EDataContainer_Group_FilterBlockListedSegment();
 	d_container->filter_attribute_name = _attribute_name;
+
+
 	main_listed_group->data_container = d_container;
 
 	_parent->add_group(main_listed_group);
@@ -3678,22 +4010,24 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::st
 
 	////////////////////////
 	//ADD NEW ITEM BUTTON
-	EntityButton*	small_button = new EntityButtonForFilterBlock();
-					small_button->make_default_button_with_unedible_text
-					(
-						new ERegionGabarite(130.0f, 18.0f),
-						listed_group_left_side,
-						&EDataActionCollection::action_open_data_entity_filter_group,
-						"Add new item"
-					);
+	EntityButton* small_button = new EntityButtonForFilterBlock();
+	small_button->make_default_button_with_unedible_text
+	(
+		new ERegionGabarite(130.0f, 18.0f),
+		listed_group_left_side,
+		&EDataActionCollection::action_open_data_entity_filter_group,
+		"Add new item"
+	);
 
 
 	//data conatainer with filter rule (for data entity list)
 	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher*
-		data_store_target_group = new EDataContainer_Group_StoreFilterRuleForDataEntitySearcher();
-	data_store_target_group->filter_rule = _filter_rule;
-	data_store_target_group->target_action_on_click = &EDataActionCollection::action_add_wide_item_to_group_receiver;
-	EntityButton::get_last_custom_data(small_button)->data_container = data_store_target_group;
+		data_store_filter_rule = new EDataContainer_Group_StoreFilterRuleForDataEntitySearcher();
+	data_store_filter_rule->filter_rule = _filter_rule;
+	data_store_filter_rule->target_action_on_click = &EDataActionCollection::action_add_wide_item_to_group_receiver;
+	EntityButton::get_last_custom_data(small_button)->data_container = data_store_filter_rule;
+
+	d_container->data_container_with_filter_rule = data_store_filter_rule;
 
 	listed_group_left_side->button_list.push_back(small_button);
 	////////////////////////
@@ -3725,7 +4059,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::st
 		);
 
 	main_listed_group->add_group(listed_group_main_section);
-	data_store_target_group->target_group = listed_group_main_section;
+	data_store_filter_rule->target_group = listed_group_main_section;
 
 	d_container->group_with_listed_buttons = listed_group_main_section;
 	////////////////////////
@@ -3741,4 +4075,12 @@ EntityButtonForFilterBlock::EntityButtonForFilterBlock()
 EntityButtonForFilterBlock::~EntityButtonForFilterBlock()
 {
 	if (debug_deleting) EInputCore::logger_simple_info("Called <EntityButtonFilterBlock> destructor");
+}
+
+EntityButtonForLootFilterSelector::EntityButtonForLootFilterSelector()
+{
+}
+
+EntityButtonForLootFilterSelector::~EntityButtonForLootFilterSelector()
+{
 }

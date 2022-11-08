@@ -595,96 +595,11 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 
 
 					EDataEntity* target_data_entity = but->pointer_to_data_entity;
-					std::string tag_value = "";
-					std::string search_text = EStringUtils::to_lower(*_text_area->stored_text);
-
-					bool tag_search_mode = false;
-					bool cost_search_mode = false;
-
-
-					//search by tags
-					if ((search_text.length() > 0) && (search_text[0] == '*'))
-					{
-						tag_search_mode = true;
-						search_text = search_text.substr(1);
-					}
-
-					//search by cost
-					if ((search_text.length() > 0) && (search_text[0] == '$'))
-					{
-						cost_search_mode = true;
-						search_text = search_text.substr(1);
-					}
-
-					bool matched_by_input = false;
-					bool required_tag_match = true;
-					bool required_tag_value_match = true;
-
-					//search by input
-					for (EDataTag* data_entity_tag : target_data_entity->tag_list)
-						if (!matched_by_input)
-						{
-							tag_value = EStringUtils::to_lower(*data_entity_tag->tag_value_list[0]);
-							//if (*data_entity_tag->tag_name == "name EN") {EInputCore::logger_param("name EN", ) }
-							if ((*data_entity_tag->tag_name == "base name") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-							else
-								if ((*data_entity_tag->tag_name == "name EN") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-								else
-									if ((*data_entity_tag->tag_name == "name RU") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-						}
-
-					//for every required tag
-					for (DataEntityFilter* required_tag_filter : data_container->target_rule->required_tag_list)
-						if ((required_tag_match) && (required_tag_value_match) && (matched_by_input))//if tag match still not failed
-						{
-							//potentially fail match
-							required_tag_match = false;
-							required_tag_value_match = false;
-							//2 ways to fail match:
-							//1) item have no required tag
-							//2) item have required tag, but value of this tag not math with no one suitable tag list
-
-
-							//for every required tag
-							for (EDataTag* data_entity_tag : target_data_entity->tag_list)
-							{
-								tag_value = EStringUtils::to_lower(*data_entity_tag->tag_value_list[0]);
-
-								//compare data entity tag and requaire tag from filter rule
-								if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, required_tag_filter->target_tag_name)))
-								{
-									required_tag_match = true;
-
-									//empty suitable list means what any value is acceptable
-									if (required_tag_filter->suitable_values_list.empty())
-									{
-										required_tag_value_match = true;
-									}
-									else
-										for (std::string suitable_str : required_tag_filter->suitable_values_list)//one of suitable list
-										{
-											if
-												(
-													//empty suitable text means 'any value suitable'
-													(suitable_str == "")
-													||
-													(EStringUtils::compare_ignoring_case(suitable_str, tag_value))
-													)
-											{
-												required_tag_value_match = true;
-											}
-										}
-								}
-							}
-
-
-
-							//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
-						}
+					bool matched = EFilterRule::matched_by_filter_rule(target_data_entity, data_container->target_rule, *_text_area->stored_text);
 
 
 					//tag_require_match = false;
-					if ((matched_by_input) && (required_tag_match) && (required_tag_value_match)) { but->disabled = false; }
+					if (matched) { but->disabled = false; }
 					else { but->disabled = true; }
 
 				}
@@ -947,7 +862,7 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 	EInputCore::logger_simple_info("!!!");
 	//EInputCore::logger_simple_info(std::to_string(_entity->custom_data_list[0]->ac));
 
-	float temp_width = 300.0f;
+	float temp_width = 220.0f;
 
 	//if (data->target_rule. )
 	EntityButton* jc_button = EntityButton::create_wide_item_button
@@ -1099,7 +1014,7 @@ void EDataActionCollection::action_update_vertical_named_slider(Entity* _entity,
 
 		if (data->pointer_to_text_area != nullptr)
 		{
-			data->pointer_to_text_area->change_text(data->stored_text + ": " + Helper::float_to_string_with_precision(data->current_value * data->max_value, 100.0f));
+			data->pointer_to_text_area->change_text(data->stored_text + ": " + Helper::float_to_string_with_precision(data->current_value * data->max_value, 10.0f));
 		}
 	}
 
@@ -1550,7 +1465,7 @@ void EDataActionCollection::action_force_resize_callback(Entity* _entity, ECusto
 
 void EDataActionCollection::action_invoke_data_entity_group_action(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	EInputCore::logger_simple_info("wtf");
+	//EInputCore::logger_simple_info("wtf");
 	if
 		(
 			(static_cast<EntityButton*>(_entity)->parent_button_group != nullptr)
@@ -1579,6 +1494,22 @@ void EDataActionCollection::action_switch_boolean_value(Entity* _entity, ECustom
 			=
 			!*(static_cast<EDataContainer_Button_BoolSwitcher*>(_custom_data->data_container)->target_value);
 	}
+}
+
+void EDataActionCollection::action_rotate_variant(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonVariantRouter* button_variant_router = (EntityButtonVariantRouter*)_entity;
+	
+	//select next variant
+	button_variant_router->selected_variant++;
+
+	//full cycle passed, reset to start
+	if (button_variant_router->selected_variant >= button_variant_router->router_variant_list.size())
+	{
+		button_variant_router->selected_variant = 0;
+	}
+
+	button_variant_router->select_variant(button_variant_router->selected_variant);
 }
 
 
@@ -2958,13 +2889,13 @@ EDataContainerRadialButton::~EDataContainerRadialButton()
 std::string EStringUtils::to_lower(std::string _text)
 {
 	std::string output_string = "";
-	int char_id = 0;
+	unsigned char char_id;
 
 	//EInputCore::logger_param("drunk?", _text.length());
-	for (int i = 0; i < _text.length(); i++)
+	for (unsigned short i = 0; i < _text.length(); i++)
 	{
-		char_id = (int)_text[i];
-		std::string drunker = "" + _text[i];
+		char_id = (unsigned char)_text[i];
+		//std::string drunker = "" + _text[i];
 
 		//EInputCore::logger_param("char", drunker);
 		//EInputCore::logger_param("id", char_id);
@@ -2985,7 +2916,7 @@ std::string EStringUtils::to_lower(std::string _text)
 					)
 				)
 		{
-			output_string += (char)(char_id + 32);
+			output_string += (unsigned char)(char_id + 32);
 		}
 		else
 		{
@@ -3092,4 +3023,107 @@ std::string EStringUtils::UTF8_to_ANSI(std::string _text)
 
 	return sValid;
 	//return std::string();
+}
+
+bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule* _filter_rule, std::string _search_text)
+{
+	std::string tag_value = "";
+	std::string search_text = "";
+
+	bool tag_search_mode = false;
+	bool cost_search_mode = false;
+
+
+
+
+	bool matched_by_input = false;
+	bool required_tag_match = true;
+	bool required_tag_value_match = true;
+
+	//search by input
+	if (_search_text != "")
+	{
+		search_text = EStringUtils::to_lower(_search_text);
+
+		//search by tags
+		if (search_text[0] == '*')
+		{
+			tag_search_mode = true;
+			search_text = search_text.substr(1);
+		}
+
+		//search by cost
+		if (search_text[0] == '$')
+		{
+			cost_search_mode = true;
+			search_text = search_text.substr(1);
+		}
+
+		for (EDataTag* data_entity_tag : _data_entity->tag_list)
+		if (!matched_by_input)
+		{
+			tag_value = EStringUtils::to_lower(*data_entity_tag->tag_value_list[0]);
+			//if (*data_entity_tag->tag_name == "name EN") {EInputCore::logger_param("name EN", ) }
+			if ((*data_entity_tag->tag_name == "base name") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+			else
+				if ((*data_entity_tag->tag_name == "name EN") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+				else
+					if ((*data_entity_tag->tag_name == "name RU") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+		}
+	}
+	else
+	{
+		matched_by_input = true;
+	}
+
+	//for every required tag
+	for (DataEntityFilter* required_tag_filter : _filter_rule->required_tag_list)
+		if ((required_tag_match) && (required_tag_value_match) && (matched_by_input))//if tag match still not failed
+		{
+			//potentially fail match
+			required_tag_match = false;
+			required_tag_value_match = false;
+			//2 ways to fail match:
+			//1) item have no required tag
+			//2) item have required tag, but value of this tag not math with no one suitable tag list
+
+
+			//for every required tag
+			for (EDataTag* data_entity_tag : _data_entity->tag_list)
+			{
+				tag_value = *data_entity_tag->tag_value_list[0];
+
+				//compare data entity tag and requaire tag from filter rule
+				if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, required_tag_filter->target_tag_name)))
+				{
+					required_tag_match = true;
+
+					//empty suitable list means what any value is acceptable
+					if (required_tag_filter->suitable_values_list.empty())
+					{
+						required_tag_value_match = true;
+					}
+					else
+						for (std::string suitable_str : required_tag_filter->suitable_values_list)//one of suitable list
+						{
+							if
+								(
+									//empty suitable text means 'any value suitable'
+									(suitable_str == "")
+									||
+									(EStringUtils::compare_ignoring_case(suitable_str, tag_value))
+									)
+							{
+								required_tag_value_match = true;
+							}
+						}
+				}
+			}
+
+
+
+			//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
+		}
+
+	return (matched_by_input && required_tag_match && required_tag_value_match);
 }

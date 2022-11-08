@@ -275,6 +275,29 @@ public:
 
 };
 
+struct RouterVariant
+{
+public:
+	ELocalisationText*			localisation;
+	Helper::HSVRGBAColor*		color;
+	ETextureGabarite*			texture;
+};
+
+
+class EntityButtonVariantRouter : public EntityButton
+{
+public:
+	int							selected_variant;
+	std::vector<RouterVariant>	router_variant_list;
+
+	ESpriteLayer*				layer_with_icon;
+	ETextArea*					pointer_to_text_area;
+
+	~EntityButtonVariantRouter();
+
+	void select_variant(int _variant_id);
+
+};
 class ECluster
 {
 public:

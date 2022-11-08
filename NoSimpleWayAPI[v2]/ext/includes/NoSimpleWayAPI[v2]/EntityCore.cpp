@@ -649,14 +649,16 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 			resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
 			resize_factor = min(resize_factor, 1.0f);
 
-			offset_x = (_region_gabarite->size_y - *item_icon->size_x_in_pixels * resize_factor) / 2.0f;
-			offset_y = (_region_gabarite->size_y - *item_icon->size_y_in_pixels * resize_factor) / 2.0f;
+			offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_x_in_pixels * resize_factor) / 2.0f;
+			offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_y_in_pixels * resize_factor) / 2.0f;
 
 			ESpriteLayer* second_button_layer =
 				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-				(item_icon,
-					_parent_group->border_bottom	+ offset_x,
-					_parent_group->border_up		+ offset_y,
+				(
+					item_icon,
+
+					_parent_group->border_left			+ offset_x,
+					_parent_group->border_bottom		+ offset_y,
 					3.0f,
 
 					*item_icon->size_x_in_pixels * resize_factor,
@@ -1354,5 +1356,27 @@ void action_change_style_button(EntityButton* _but, EGUIStyle* _style)
 		//{
 		//	clickable_area->text_area->color[i] = clickable_area->text_area->stored_color[i] * _style->text_color_multiplier[i];
 		//}
+	}
+}
+
+EntityButtonVariantRouter::~EntityButtonVariantRouter()
+{
+}
+
+void EntityButtonVariantRouter::select_variant(int _variant_id)
+{
+	if (layer_with_icon != nullptr)
+	{
+		layer_with_icon->sprite_frame_list[0]->sprite_list[0]->main_texture = router_variant_list[selected_variant].texture;
+
+		pointer_to_text_area->localisation_text	= *router_variant_list[selected_variant].localisation;
+		pointer_to_text_area->stored_color		= *(router_variant_list[selected_variant].color);
+		pointer_to_text_area->color				= *(router_variant_list[selected_variant].color);
+		pointer_to_text_area->change_text(pointer_to_text_area->localisation_text.localisations[NSW_localisation_EN]);
+
+		//redraw
+		set_world_position(world_position_x, world_position_y, world_position_z);
+		generate_vertex_buffer_for_all_sprite_layers();
+
 	}
 }
