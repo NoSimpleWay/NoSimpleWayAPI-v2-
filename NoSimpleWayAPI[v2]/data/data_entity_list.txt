@@ -91125,25 +91125,7 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Primal Crystallised Lifeforce"
-	[tag]"name RU"		[value]"ѕервобытна€ кристализованна€ жизненна€ сила"
-
-	[tag]"icon path"	[value]"PrimalLifeforce"
-	
-	[tag]"base class"	[value]"Stackable Currency"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"Introduced: Kalandra league"
-	
-	[tag]"worth"		[value]"Common"
-	
+		
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -91211,24 +91193,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	
-	[tag]"worth"		[value]"Common"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Primal Crystallised Lifeforce"
-	[tag]"name RU"		[value]"ѕервобытна€ кристализованна€ жизненна€ сила"
-
-	[tag]"icon path"	[value]"PrimalLifeforce"
-	
-	[tag]"base class"	[value]"Stackable Currency"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"Introduced: Kalandra league"
-	
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Very expensive"
 	
 	
 ADD_NEW_DATA_ENTITY

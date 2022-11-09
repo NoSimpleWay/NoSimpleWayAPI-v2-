@@ -595,7 +595,9 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 
 
 					EDataEntity* target_data_entity = but->pointer_to_data_entity;
-					bool matched = EFilterRule::matched_by_filter_rule(target_data_entity, data_container->target_rule, *_text_area->stored_text);
+					bool matched = false;
+					//if (target_data_entity->)
+					matched = EFilterRule::matched_by_filter_rule(target_data_entity, data_container->target_rule, *_text_area->stored_text);
 
 
 					//tag_require_match = false;
@@ -1215,10 +1217,17 @@ void EDataActionCollection::action_draw_color_rectangle_for_group(EButtonGroup* 
 
 void EDataActionCollection::action_draw_stored_color_as_box(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	
+
 	if ((_custom_data != nullptr) && (_custom_data->data_container != nullptr))
 	{
 		EDataContainer_Button_StoreColor* data = static_cast<EDataContainer_Button_StoreColor*>(_custom_data->data_container);
 		EntityButton* button = static_cast<EntityButton*>(_entity);
+
+		EBrickStyle* style = button->parent_button_group->selected_style->button_bg;
+
+		float size_y = button->button_gabarite->size_y - *style->side_size_bottom - *style->side_size_up - 15.0f;
+
 		if (data->stored_color != nullptr)
 		{
 
@@ -1232,16 +1241,40 @@ void EDataActionCollection::action_draw_stored_color_as_box(Entity* _entity, ECu
 
 			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 
-			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-			(
-				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-				button->button_gabarite->world_position_x + button->parent_button_group->border_left,
-				button->button_gabarite->world_position_y + button->parent_button_group->border_bottom,
-				button->button_gabarite->size_x - button->parent_button_group->border_left - button->parent_button_group->border_right,
-				button->button_gabarite->size_y - button->parent_button_group->border_bottom - button->parent_button_group->border_up - 15.0f,
-				NS_DefaultGabarites::texture_gabarite_white_pixel
-			);
+			if (size_y > 12.0f)
+			{
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+					button->button_gabarite->world_position_x + *style->side_size_left + 1.0f,
+					button->button_gabarite->world_position_y + *style->side_size_bottom + 1.0f,
+
+					button->button_gabarite->size_x - *style->side_size_left - *style->side_size_right - 2.0f,
+					size_y - 2.0f,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+			}
+			else
+			{
+				size_y += 15.0f;
+
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+					button->button_gabarite->world_position_x + button->button_gabarite->size_x - *style->side_size_right - size_y + 1.0f,
+					button->button_gabarite->world_position_y + *style->side_size_bottom + 1.0f,
+
+					size_y - 2.0f,
+					size_y - 2.0f,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+			}
 		}
 
 	}
@@ -2848,17 +2881,85 @@ void ETextParser::data_read_explicit_file_and_generate_data_entity(std::string _
 	writabro.close();
 }
 
+void ETextParser::split_data_entity_list_to_named_structs()
+{
+	//std::vector<EDataEntity*>* target_named_list = nullptr;
+	DataEntityNamedStruct* target_named_struct	= nullptr;\
+	std::string data_type_name					= "";
+	std::string data_entity_name				= "";
+
+	int arr[16] = {};
+	
+
+	for (EDataEntity* data_entity : EDataEntity::data_entity_global_list)
+	{
+		int index = 0;
+
+		data_type_name = DataEntityUtils::get_tag_value_by_name(0, "data type", data_entity);
+
+		data_entity_name = DataEntityUtils::get_tag_value_by_name(0, "base name", data_entity);
+
+		if (data_entity_name == "") { data_entity_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", data_entity); }
+
+		if (data_entity_name != "")
+		{
+			//EInputCore::logger_param("Hash of [" + data_entity_name + "]", std::to_string(EStringUtils::hashFunction(data_entity_name) & 0x000000000000000F));
+			
+			index = EStringUtils::hashFunction(data_entity_name) & 0x000000000000000F;
+			index = min(index, 16);
+			index = max(index, 0);
+
+			arr[index]++;
+		}
+
+		if (data_type_name != "")
+		{
+			target_named_struct = nullptr;
+
+			for (DataEntityNamedStruct* named_struct : EDataEntity::data_entity_named_structs)
+			{
+				if (named_struct->name == data_type_name) { target_named_struct = named_struct; }
+			}
+
+			if (target_named_struct == nullptr)//create new named struct
+			{
+				DataEntityNamedStruct*
+				jc_struct		= new DataEntityNamedStruct();
+				jc_struct->name	= data_type_name;
+
+				jc_struct->data_entity_list[index].push_back(data_entity);
+				EDataEntity::data_entity_named_structs.push_back(jc_struct);
+
+				//EInputCore::logger_simple_info("[" + data_type_name + "] create new named struct!");
+			}
+			else
+			{
+				//EInputCore::logger_simple_info("[" + data_type_name + "] moved to [" + target_named_struct->name + "] struct");
+				target_named_struct->data_entity_list[index].push_back(data_entity);
+			}
+		}
+	}
+
+	for (int i = 0; i < 16; i++)
+	{
+		EInputCore::logger_param("id [" + std::to_string(i) + "]", arr[i]);
+	}
+}
+
+
 void ETextParser::do_action(std::string _action_text, std::string _value)
 {
 	//EInputCore::logger_simple_info("do action");
 	//EInputCore::simple_logger_with_parameter("action:", _action_text);
 	//EInputCore::simple_logger_with_parameter("value:", _value);
 
+	//std::vector<DataEntityNamedList*>* pointer_to_named_list = nullptr;
+
 	if (_action_text == "ADD_NEW_DATA_ENTITY")
 	{
 		last_created_data_entity = new EDataEntity();
 
-		EDataEntity::data_entity_list.push_back(last_created_data_entity);
+		EDataEntity::data_entity_global_list.push_back(last_created_data_entity);
 	}
 	else
 		if (_action_text == "tag")
@@ -3023,6 +3124,19 @@ std::string EStringUtils::UTF8_to_ANSI(std::string _text)
 
 	return sValid;
 	//return std::string();
+}
+
+const int PRIME_CONST = 431;
+int EStringUtils::hashFunction(std::string _input)
+{
+	int hashCode = 0;
+
+	for (int i = 0; i < _input.length(); i++)
+	{
+		hashCode += (_input[i] * (int)pow(PRIME_CONST, i) % 1337) ;
+	}
+
+	return hashCode % 278;
 }
 
 bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule* _filter_rule, std::string _search_text)

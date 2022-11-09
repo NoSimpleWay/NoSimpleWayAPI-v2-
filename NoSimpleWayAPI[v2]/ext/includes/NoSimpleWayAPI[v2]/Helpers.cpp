@@ -26,6 +26,8 @@ std::string Helper::float_to_string_with_precision(float _f, float _precision)
 	return float_to_string(round(_f * _precision) / _precision);
 }
 
+
+
 void Helper::HSVRGBAColor::set_color(HSVRGBAColor* _HRA_color)
 {
 	h = _HRA_color->h;

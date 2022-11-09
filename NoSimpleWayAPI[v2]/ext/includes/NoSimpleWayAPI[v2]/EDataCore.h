@@ -290,6 +290,8 @@ class EFilterRule
 public:
 	ELocalisationText* localisation_text = nullptr;
 
+	std::string focused_by_data_type = "";
+
 	std::vector<DataEntityFilter*>		required_tag_list;
 	std::vector<DataEntityFilter*>		banned_tag_list;
 
@@ -581,6 +583,7 @@ public:
 	static std::string		data_array[1000];
 	static void				data_entity_parse_file(std::string _file);
 	static void				data_read_explicit_file_and_generate_data_entity(std::string _file);
+	static void				split_data_entity_list_to_named_structs();
 
 	static EDataEntity* last_created_data_entity;
 	static EDataTag* last_created_data_tag;
@@ -598,4 +601,6 @@ public:
 	static bool			compare_ignoring_case(std::string _text1, std::string _text2);
 	static bool			A_contains_B_ignore_case(std::string _text_A, std::string _text_B);
 	static std::string	UTF8_to_ANSI(std::string _text);
+
+	static int hashFunction(std::string _input);
 };

@@ -25,6 +25,10 @@ class Helper
 public:
 	static std::string float_to_string(float _f);
 	static std::string float_to_string_with_precision(float _f, float _precision);
+	
+
+
+
 
 
 

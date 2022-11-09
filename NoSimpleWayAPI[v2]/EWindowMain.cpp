@@ -839,6 +839,7 @@ EWindowMain::EWindowMain()
 
 
 	ETextParser::data_entity_parse_file("data/data_entity_list.txt");
+	ETextParser::split_data_entity_list_to_named_structs();
 
 
 
@@ -985,7 +986,7 @@ EWindowMain::EWindowMain()
 		jc_button_group->stretch_y_by_parent_size = true;
 
 		std::vector <EDataEntity*> suitable_data_entity_list;
-		for (EDataEntity* de : EDataEntity::data_entity_list)
+		for (EDataEntity* de : EDataEntity::data_entity_global_list)
 		{
 			if
 				(
@@ -1092,7 +1093,7 @@ EWindowMain::EWindowMain()
 			{
 				*buttons_simulator->can_change_style = false;
 
-				if (!EDataEntity::data_entity_list.empty())
+				if (!EDataEntity::data_entity_global_list.empty())
 					for (int i = 0; i < 17; i++)
 					{
 
@@ -1107,7 +1108,7 @@ EWindowMain::EWindowMain()
 						ETextureGabarite* item_icon
 							=
 							NS_EGraphicCore::load_from_textures_folder
-							("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_list[rand() % EDataEntity::data_entity_list.size()]));
+							("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_global_list[rand() % EDataEntity::data_entity_global_list.size()]));
 
 						if (item_icon != nullptr)
 						{
@@ -1281,7 +1282,7 @@ EWindowMain::EWindowMain()
 
 		//buttons for data entity
 		unsigned int counter = 0;
-		for (EDataEntity* data_entity : EDataEntity::data_entity_list)
+		for (EDataEntity* data_entity : EDataEntity::data_entity_global_list)
 		{
 
 			jc_button = EntityButton::create_wide_item_button
@@ -2261,6 +2262,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//game items
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
 
 	//filter by game item
 	jc_filter = new DataEntityFilter();
@@ -2274,6 +2276,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//base class
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Base Class";
+
 	jc_filter = new DataEntityFilter();
 
 	jc_filter->target_tag_name = "data type";
@@ -2285,7 +2289,10 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//influence
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Influence";
+
 	jc_filter = new DataEntityFilter();
+
 
 	jc_filter->target_tag_name = "data type";
 	jc_filter->suitable_values_list.push_back("Influence");
@@ -2296,6 +2303,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//gem
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Gem";
+
 	jc_filter = new DataEntityFilter();
 
 	jc_filter->target_tag_name = "data type";
@@ -2307,6 +2316,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//explicit
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Explicit";
+
 	jc_filter = new DataEntityFilter();
 
 	jc_filter->target_tag_name = "data type";
@@ -2318,6 +2329,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//cluster passives
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Cluster passive";
+
 	jc_filter = new DataEntityFilter();
 
 	jc_filter->target_tag_name = "data type";
@@ -2329,6 +2342,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//enchantments from lab
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Enchantment";
+
 	jc_filter = new DataEntityFilter();
 
 	jc_filter->target_tag_name = "data type";
@@ -2351,6 +2366,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//ALL ITEMS
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "All items";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Все предметы";
@@ -2370,6 +2387,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//TRASH DIVINATIONS
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trash divinations";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Мусорные гадальные карты";
@@ -2402,6 +2421,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//TRASH DIVINATIONS
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Common divinations";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Дешёвые гадальные карты";
@@ -2434,6 +2455,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//TRASH DIVINATIONS
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Moderate divinations";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Хорошие гадальные карты";
@@ -2466,6 +2489,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//TRASH DIVINATIONS
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Rare divinations";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Ценные гадальные карты";
@@ -2498,6 +2523,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//TRASH DIVINATIONS
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Expensive divinations";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Дорогие гадальные карты";
@@ -2530,6 +2557,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//TRASH DIVINATIONS
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Very expensive divinations";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Очень дорогие гадальные карты";
@@ -2563,6 +2592,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 		//Heist league
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist bases";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Базы кражи";
@@ -2589,6 +2620,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//D
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Deleted items";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Удалённые предметы";
@@ -2615,6 +2648,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//Atlas bases
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Atlas bases";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Базы атласа";
@@ -2641,6 +2676,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//Top tier bases
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Top tier base";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лучшие базы предметов";
@@ -2667,6 +2704,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//Ritual league
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "League: Ritual";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига: Ритуал";
@@ -2693,6 +2732,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//Heist league
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
@@ -2719,6 +2760,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//Kalandra league
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "kalandra league";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Каландра'";
@@ -2745,6 +2788,8 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//Heist league
 	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->focused_by_data_type = "Game item";
+
 	jc_filter_rule->localisation_text = new ELocalisationText();
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist league";
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Кража'";
@@ -2994,7 +3039,7 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 					//attribute name
 					if (data_part == 0)
 					{
-						EInputCore::logger_param("buffer text", buffer_text);
+						//EInputCore::logger_param("buffer text", buffer_text);
 
 						if
 						(
@@ -3075,7 +3120,7 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 					//values
 					if (data_part >= 2)
 					{
-						EInputCore::logger_param("value", buffer_text);
+						//EInputCore::logger_param("value", buffer_text);
 						//value_array[value_array_id] = buffer_text;
 
 						//value_array_id++;
@@ -3092,9 +3137,23 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 								listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(whole_block_container->pointer_to_listed_segment->group_list.back()->data_container);
 
 								EFilterRule* filter_rule = listed_container->data_container_with_filter_rule->filter_rule;
+								std::string data_type_text = filter_rule->focused_by_data_type;
+
+								std::vector<EDataEntity*>* target_data_entity_list = &EDataEntity::data_entity_global_list;
+
+								for (DataEntityNamedStruct* named_struct : EDataEntity::data_entity_named_structs)
+								{
+									int
+									index = EStringUtils::hashFunction(buffer_text) & 0x000000000000000F;
+									index = min(index, 16);
+									index = max(index, 0);
+
+									//arr[index]++;
+									if (named_struct->name == data_type_text) { target_data_entity_list = &named_struct->data_entity_list[index]; break; }
+								}
 
 								int xxx = 0;
-								for (EDataEntity* de : EDataEntity::data_entity_list)
+								for (EDataEntity* de : *target_data_entity_list)
 								{
 									if
 										(
@@ -3172,7 +3231,7 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group)
 {
 
-	EInputCore::logger_simple_info("create new block!");
+	//EInputCore::logger_simple_info("create new block!");
 	//whole filter block
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
@@ -3279,22 +3338,22 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 	//cosmetic segment
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
-		cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(256.0f, 160.0f), EGUIStyle::active_style)
+		cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(165.0f, 160.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);;
 
 	ELocalisationText ltext[3];
 
 	ltext[0].base_name = "SetBackgroundColor";
-	ltext[0].localisations[NSW_localisation_EN] = "Background color";
-	ltext[0].localisations[NSW_localisation_RU] = "Цвет фона";
+	ltext[0].localisations[NSW_localisation_EN] = "Background";
+	ltext[0].localisations[NSW_localisation_RU] = "Фон";
 
 	ltext[1].base_name = "SetTextColor";
-	ltext[1].localisations[NSW_localisation_EN] = "Text color";
-	ltext[1].localisations[NSW_localisation_RU] = "Цвет текста";
+	ltext[1].localisations[NSW_localisation_EN] = "Text";
+	ltext[1].localisations[NSW_localisation_RU] = "Текст";
 
 	ltext[2].base_name = "SetBorderColor";
-	ltext[2].localisations[NSW_localisation_EN] = "Border color";
-	ltext[2].localisations[NSW_localisation_RU] = "Цвет рамки";
+	ltext[2].localisations[NSW_localisation_EN] = "Border";
+	ltext[2].localisations[NSW_localisation_RU] = "Рамка";
 
 	//root group data container
 	whole_block_data->pointer_to_cosmetic_segment = cosmetic_segment;
@@ -3309,7 +3368,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 
 		jc_button = EntityButton::create_named_color_button
 		(
-			new ERegionGabarite(200.0f, 30.0f),
+			new ERegionGabarite(120.0f, 25.0f),
 			cosmetic_segment,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
@@ -3333,7 +3392,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 		jc_button = new EntityButton();
 		jc_button->make_default_bool_switcher_button
 		(
-			new ERegionGabarite(30.0f, 30.0f),
+			new ERegionGabarite(25.0f, 25.0f),
 			cosmetic_segment,
 			EDataActionCollection::action_switch_boolean_value,
 			NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
@@ -3352,7 +3411,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 	jc_button = EntityButton::create_vertical_named_slider
 	(
 
-		new ERegionGabarite(200.0f, 30.0f),
+		new ERegionGabarite(120.0f, 30.0f),
 		cosmetic_segment,
 		EFont::font_list[0],
 		EGUIStyle::active_style,
@@ -3382,7 +3441,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 	jc_button = new EntityButton();
 	jc_button->make_default_bool_switcher_button
 	(
-		new ERegionGabarite(30.0f, 30.0f),
+		new ERegionGabarite(25.0f, 30.0f),
 		cosmetic_segment,
 		EDataActionCollection::action_switch_boolean_value,
 		NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),

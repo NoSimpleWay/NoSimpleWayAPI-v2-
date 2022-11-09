@@ -32,6 +32,13 @@ public:
 
 };
 
+struct DataEntityNamedStruct
+{
+public:
+	std::vector <std::vector<EDataEntity*>> data_entity_list{16};
+	std::string name = "";
+};
+
 class EDataEntity
 {
 public:
@@ -39,8 +46,9 @@ public:
 
 	std::vector<EDataTag*> tag_list;
 
-	static std::vector<EDataEntity*> data_entity_list;
+	static std::vector<EDataEntity*> data_entity_global_list;
 
+	static std::vector<DataEntityNamedStruct*> data_entity_named_structs;
 };
 
 namespace DataEntityUtils

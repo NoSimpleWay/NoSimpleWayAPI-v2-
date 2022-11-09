@@ -486,8 +486,8 @@ void ETextArea::generate_text()
 		int row_id = 0;
 		int id_for_stored_text_sym = 0;
 
-		full_text_height = 14.0f * (row.size());
-		y_adding = full_text_height - 14.0f;
+		full_text_height = 12.0f * (row.size());
+		y_adding = full_text_height - 12.0f;
 
 		float border_offset_bottom = 0.0f;
 		float border_offset_top = 0.0f;
