@@ -2673,10 +2673,13 @@ void NS_ERenderCollection::call_render_textured_sprite(ESprite* _sprite)
 	}
 	else
 	{
-		if (_sprite == nullptr) { EInputCore::logger_simple_error("Sprite in call render textured rectangle is null"); }
-		else
+		if (NSW_debug_graphic_to_console)
 		{
-			if (_sprite->main_texture == nullptr) { EInputCore::logger_simple_error("[call_render_textured_sprite] sprite main texture is null"); }
+			if (_sprite == nullptr) { EInputCore::logger_simple_error("Sprite in call render textured rectangle is null"); }
+			else
+			{
+				if (_sprite->main_texture == nullptr) { EInputCore::logger_simple_error("[call_render_textured_sprite] sprite main texture is null"); }
+			}
 		}
 	}
 }

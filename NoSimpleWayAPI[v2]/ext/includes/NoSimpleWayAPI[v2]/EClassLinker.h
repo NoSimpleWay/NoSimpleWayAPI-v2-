@@ -62,3 +62,5 @@ typedef void (*data_action_pointer)(Entity*, ECustomData*, float);
 struct hsvrgba_color;
 
 typedef void (*text_actions_pointer)(ETextArea*);
+
+class EntityButtonVariantRouter;

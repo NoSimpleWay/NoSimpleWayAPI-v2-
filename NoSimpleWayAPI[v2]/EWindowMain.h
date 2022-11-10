@@ -86,6 +86,27 @@ public:
 	ETextArea*		input_field;
 };
 
+class EButtonGroupTopControlSection : public EButtonGroup
+{
+public:
+	EDataContainer_Group_WholeFilterBlock*	pointer_to_whole_filter_block_data_container	= nullptr;
+	EButtonGroup*							pointer_to_filter_block_group					= nullptr;
+
+	EButtonGroupTopControlSection(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite){};
+
+	float box_size_x = 180.0f;
+
+	ETextureGabarite* example_text_texture[2] =
+	{ 
+		NS_EGraphicCore::load_from_textures_folder("example_text"),
+		NS_EGraphicCore::load_from_textures_folder("example_text_half")
+	};
+
+	ETextureGabarite* example_text_bg = NS_EGraphicCore::load_from_textures_folder("example_text_bg");
+
+	void draw();
+};
+
 
 
 namespace EDataActionCollection

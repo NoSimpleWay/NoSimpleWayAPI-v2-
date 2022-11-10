@@ -59,6 +59,8 @@
 #include <vector>
 #include <filesystem>
 
+#define NSW_debug_graphic_to_console false
+
 //VERTEX BUFFER ARRAY
 constexpr unsigned int VERTICES_PER_SHAPE = 4;
 constexpr unsigned int MAX_SHAPES_COUNT = 10000;

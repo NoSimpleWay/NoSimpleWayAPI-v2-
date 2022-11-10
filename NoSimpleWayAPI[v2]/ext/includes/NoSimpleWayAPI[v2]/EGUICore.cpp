@@ -183,6 +183,10 @@ EButtonGroup::EButtonGroup(ERegionGabarite* _region)
 	//region_gabarite = _region;
 }
 
+EButtonGroup::EButtonGroup()
+{
+}
+
 EButtonGroup::~EButtonGroup()
 {
 	if (debug_deleting) { EInputCore::logger_simple_success("Destructor [for button group] called"); }
@@ -2612,6 +2616,48 @@ EButtonGroup* EButtonGroup::create_base_button_group(ERegionGabarite* _region, E
 
 
 	return just_created_button_group;
+}
+
+void EButtonGroup::init_button_group(EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg)
+{
+	batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
+
+	base_width	= region_gabarite->size_x;
+	base_height	= region_gabarite->size_y;
+
+	if (_default_bg)
+	{
+		*button_group_type = ButtonGroupType::BGT_REGULAR;
+	}
+	else
+	{
+		*button_group_type = ButtonGroupType::BGT_DARKEN;
+	}
+
+	have_bg = _have_bg;
+
+	if (_have_bg)
+	{ 
+		background_sprite_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
+		background_sprite_layer->make_as_PBR();
+
+		EButtonGroup::apply_style_to_button_group(this, _style);
+	}
+	else
+	{
+		EButtonGroup::apply_style_to_button_group(this, _style);
+
+		border_bottom	= 0.0f;
+		border_left		= 0.0f;
+		border_right		= 0.0f;
+		border_up		= 0.0f;
+	}
+
+	if (_have_slider)
+	{
+		EButtonGroup::add_horizontal_scroll_bar(this);
+	}
+
 }
 
 

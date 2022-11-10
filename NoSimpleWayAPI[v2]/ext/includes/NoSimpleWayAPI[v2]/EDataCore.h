@@ -65,6 +65,7 @@ public:
 	std::vector<data_action_pointer> actions_on_update;
 	std::vector<data_action_pointer> actions_on_change_style;
 	std::vector<data_action_pointer> actions_on_draw;
+	std::vector<data_action_pointer> actions_on_pre_draw;
 
 	//clickable regions list
 	std::vector<EClickableArea*> clickable_area_list;
@@ -425,21 +426,28 @@ public:
 class EDataContainer_Group_WholeFilterBlock : public EDataContainer
 {
 public:
-	EButtonGroup*	pointer_to_non_listed_segment;
-	EButtonGroup*	pointer_to_listed_segment;
-	EButtonGroup*	pointer_to_cosmetic_segment;
+	EButtonGroup*				pointer_to_non_listed_segment;
+	EButtonGroup*				pointer_to_listed_segment;
+	EButtonGroup*				pointer_to_preview_box_segment;
+	EButtonGroup*				pointer_to_top_control_block;
+	EButtonGroup*				pointer_to_cosmetic_segment;
 
 
 	//color section
-	EntityButton*	pointer_to_color_button[3];
-	EntityButton*	pointer_to_color_check_button[3];
+	EntityButton*				pointer_to_color_button[3];
+	EntityButton*				pointer_to_color_check_button[3];
 
-	bool			color_check[3];
+	bool						color_check[3];
+	Helper::HSVRGBAColor*		pointer_to_HRA_color[3];
 	
-	EntityButton*	text_size_button;
-	EntityButton*	text_size_switch_button;
-	bool			text_size_bool;
-	float			text_size;
+	//font size
+	EntityButton*				text_size_button;
+	EntityButton*				text_size_switch_button;
+	bool						text_size_bool;
+	float						text_size;
+
+	EntityButtonVariantRouter*	button_show_hide;
+
 };
 
 class EDataContainer_Group_FilterBlockNonListedSegment : public EDataContainer

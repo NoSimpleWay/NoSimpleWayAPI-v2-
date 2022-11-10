@@ -177,6 +177,7 @@ public:
 
 	EButtonGroup(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
 	EButtonGroup(ERegionGabarite* _gabarite);
+	EButtonGroup();
 	virtual ~EButtonGroup();
 
 	//EButtonGroup* header_button_group;
@@ -218,7 +219,7 @@ public:
 	float base_width;
 
 	void update(float _d);
-	void draw();
+	virtual void draw();
 	void draw_second_pass();
 
 	float min_size_y = 10.0f;
@@ -269,6 +270,7 @@ public:
 
 	//base
 	static EButtonGroup* create_base_button_group(ERegionGabarite* _region, EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg);
+	void init_button_group(EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg);
 
 	//bg, slider, focusable, bright
 	static EButtonGroup* create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style);

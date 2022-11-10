@@ -1365,8 +1365,12 @@ EntityButtonVariantRouter::~EntityButtonVariantRouter()
 
 void EntityButtonVariantRouter::select_variant(int _variant_id)
 {
+	selected_variant = _variant_id;
+
 	if (layer_with_icon != nullptr)
 	{
+		//6999999999999999999999999999999, 10 november 2022, cat, stop, pls
+
 		layer_with_icon->sprite_frame_list[0]->sprite_list[0]->main_texture = router_variant_list[selected_variant].texture;
 
 		pointer_to_text_area->localisation_text	= *router_variant_list[selected_variant].localisation;

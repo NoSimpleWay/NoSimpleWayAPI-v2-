@@ -1647,63 +1647,7 @@ EWindowMain::EWindowMain()
 		);
 
 		jc_button_group->button_list.push_back(jc_button);
-		// // // // // // //// // // // // // //// // // // // // //
-		EntityButtonVariantRouter* button_variant_router = new EntityButtonVariantRouter();
-		button_variant_router->make_as_default_button_with_icon
-		(
-			new ERegionGabarite(60.0f, 30.0f),
-			jc_button_group,
-			EDataActionCollection::action_rotate_variant,
-			nullptr
-		);
-
-		button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
-		//
-		ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], "|?|");
-		button_variant_router->pointer_to_text_area = jc_text_area;
-
-		*jc_text_area->can_be_edited = false;
-		Entity::add_text_area_to_last_clickable_region(button_variant_router, jc_text_area);
-
-
-		//
-		RouterVariant* router_variant = nullptr;
-		ELocalisationText* local_text = nullptr;
-
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Show";
-		local_text->localisations[NSW_localisation_EN] = "Loot: Visible";
-		local_text->localisations[NSW_localisation_RU] = "Лут: Виден";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new Helper::HSVRGBAColor();
-		router_variant->color->set_color_RGBA(0.8f, 1.0f, 0.8f, 1.0f);
-
-		button_variant_router->router_variant_list.push_back(*router_variant);
-
-
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Hide";
-		local_text->localisations[NSW_localisation_EN] = "Loot: hidden";
-		local_text->localisations[NSW_localisation_RU] = "Лут: скрыт";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new Helper::HSVRGBAColor();
-		router_variant->color->set_color_RGBA(0.8f, 0.5f, 0.45f, 1.0f);
-
-		button_variant_router->router_variant_list.push_back(*router_variant);
-
-
-		button_variant_router->select_variant(0);
-
-
-
-		jc_button_group->button_list.push_back(button_variant_router);
-		// // // // // // //// // // // // // //// // // // // // //
+		
 
 		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
@@ -3051,6 +2995,17 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 							jc_filter_block = create_filter_block(loot_filter_editor);
 
 							whole_block_container = (EDataContainer_Group_WholeFilterBlock*)(jc_filter_block->data_container);
+
+							if (EStringUtils::compare_ignoring_case(buffer_text, "show"))
+							{
+								((EntityButtonVariantRouter*)(whole_block_container->button_show_hide))->select_variant(1);
+							}
+							else
+							{
+								((EntityButtonVariantRouter*)(whole_block_container->button_show_hide))->select_variant(0);
+							}
+
+							
 							
 						}
 						else
@@ -3235,8 +3190,8 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 	//whole filter block
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
-		whole_filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(0.0f, 0.0f, 1200.0f, 150.0f), EGUIStyle::active_style)
-		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+		whole_filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(1200.0f, 200.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 
 	_target_whole_group->add_group(whole_filter_block_group);
 
@@ -3246,6 +3201,30 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+	//workspace bottom part
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup* workspace_part = EButtonGroup::create_default_button_group(new ERegionGabarite(1200.0f, 150.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+		whole_filter_block_group->add_group(workspace_part);
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	//control top part
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroupTopControlSection* control_part = new EButtonGroupTopControlSection(new ERegionGabarite(1200.0f, 20.0f));
+		control_part->init_button_group(EGUIStyle::active_style, false, false, true);
+		control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+		control_part->pointer_to_whole_filter_block_data_container = whole_block_data;
+
+		whole_block_data->pointer_to_top_control_block = control_part;
+		whole_filter_block_group->add_group(control_part);
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 	//left additional section
@@ -3254,8 +3233,77 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 		left_control_section = EButtonGroup::create_default_button_group(new ERegionGabarite(50.0f, 20.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 
-	whole_filter_block_group->add_group(left_control_section);
+	workspace_part->add_group(left_control_section);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	//button router
+	// // // // // // //// // // // // // //// // // // // // //
+	EntityButtonVariantRouter* button_variant_router = new EntityButtonVariantRouter();
+	button_variant_router->make_as_default_button_with_icon
+	(
+		new ERegionGabarite(120.0f, 20.0f),
+		control_part,
+		EDataActionCollection::action_rotate_variant,
+		nullptr
+	);
+
+	button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
+	//
+	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], "|?|");
+	button_variant_router->pointer_to_text_area = jc_text_area;
+
+	*jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(button_variant_router, jc_text_area);
+
+
+	//
+	RouterVariant* router_variant = nullptr;
+	ELocalisationText* local_text = nullptr;
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Hide";
+	local_text->localisations[NSW_localisation_EN] = "Loot: hidden";
+	local_text->localisations[NSW_localisation_RU] = "Лут: скрыт";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(1.0f, 0.5f, 0.45f, 1.0f);
+
+	button_variant_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Show";
+	local_text->localisations[NSW_localisation_EN] = "Loot: Visible";
+	local_text->localisations[NSW_localisation_RU] = "Лут: Виден";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(0.8f, 1.0f, 0.8f, 1.0f);
+
+	button_variant_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+
+
+
+	button_variant_router->select_variant(1);
+
+
+
+	control_part->button_list.push_back(button_variant_router);
+
+	whole_block_data->button_show_hide = button_variant_router;
+	// // // // // // //// // // // // // //// // // // // // //
 
 
 
@@ -3312,7 +3360,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 
 		whole_block_data->pointer_to_non_listed_segment = non_list_condition_group;
 
-		whole_filter_block_group->add_group(non_list_condition_group);
+		workspace_part->add_group(non_list_condition_group);
 
 	}
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -3331,15 +3379,24 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 	whole_block_data->pointer_to_listed_segment = listed_condition_segment;
 
 
-	whole_filter_block_group->add_group(listed_condition_segment);
+	workspace_part->add_group(listed_condition_segment);
+	
+	//cosmetic segment
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+		filter_preview_box_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(100.0f, 160.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 
+	workspace_part->add_group(filter_preview_box_segment);
+	//whole_block_data->pointer_to_preview_box_segment = filter_preview_box_segment;
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 	//cosmetic segment
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
 		cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(165.0f, 160.0f), EGUIStyle::active_style)
-		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);;
+		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 	ELocalisationText ltext[3];
 
@@ -3357,14 +3414,22 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 
 	//root group data container
 	whole_block_data->pointer_to_cosmetic_segment = cosmetic_segment;
-	whole_filter_block_group->add_group(cosmetic_segment);
+	workspace_part->add_group(cosmetic_segment);
 
 	//color buttons
 	for (int clr = 0; clr < 3; clr++)
 	{
 		// // // // // // //// // // // // // //// // // // // // //
-		Helper::HRA_color_collection* HRA_collection = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
-		Helper::HSVRGBAColor* HRA_color = &HRA_collection->target_color;
+		//Helper::HRA_color_collection* HRA_collection = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
+		Helper::HSVRGBAColor* HRA_color = new Helper::HSVRGBAColor();
+		HRA_color->h = rand() % 360;
+		HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
+		HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
+		HRA_color->a = 1.0f - pow((rand() % 100) / 100.0f, 4.0);
+
+		Helper::hsv2rgb(HRA_color);
+		
+		whole_block_data->pointer_to_HRA_color[clr] = HRA_color;
 
 		jc_button = EntityButton::create_named_color_button
 		(
@@ -3373,7 +3438,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 			EFont::font_list[0],
 			EGUIStyle::active_style,
 			ltext[clr].localisations[NSW_localisation_EN],
-			HRA_collection,
+			nullptr,
 			HRA_color,
 			ColorButtonMode::CBM_OPEN_WINDOW
 		);
@@ -4142,4 +4207,123 @@ EntityButtonForLootFilterSelector::EntityButtonForLootFilterSelector()
 
 EntityButtonForLootFilterSelector::~EntityButtonForLootFilterSelector()
 {
+}
+
+void EButtonGroupTopControlSection::draw()
+{
+	EButtonGroup::draw();
+
+	EDataContainer_Group_WholeFilterBlock* d_con = pointer_to_whole_filter_block_data_container;
+	
+	float font_size_rescale = 0.4f + d_con->text_size * 0.6f;
+
+	float rescale_factor = min((box_size_x * font_size_rescale) / (float)(*example_text_texture[0]->size_x_in_pixels + 6.0f), (region_gabarite->size_y * font_size_rescale) / (float)(*example_text_texture[0]->size_y_in_pixels + 6.0f));
+	rescale_factor = min(rescale_factor, 1.0f);
+
+	int array_id = round(1.0f - rescale_factor);
+	
+	//rescale_factor *= font_size_rescale;
+
+	float
+		pos_x =
+		pointer_to_whole_filter_block_data_container->pointer_to_top_control_block->region_gabarite->world_position_x
+		+
+		pointer_to_whole_filter_block_data_container->pointer_to_top_control_block->region_gabarite->size_x;
+
+	
+
+	float
+		pos_y = pointer_to_whole_filter_block_data_container->pointer_to_top_control_block->region_gabarite->world_position_y;
+	
+	pos_x -= box_size_x * (font_size_rescale * 0.5f + 0.5f);
+	//pos_x += box_size_x * (1.0f - font_size_rescale) * 0.5f;
+
+	pos_y += region_gabarite->size_y * (1.0f - font_size_rescale) * 0.5f;
+
+	//static background
+	NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		//x pos
+		pos_x,
+
+		//y pos
+		pos_y,
+
+		box_size_x				 * font_size_rescale,
+		region_gabarite->size_y	 * font_size_rescale,
+
+		example_text_bg
+
+	);
+	
+
+
+	
+
+	NS_EGraphicCore::set_active_color(d_con->pointer_to_HRA_color[0]);
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		//x pos
+		pos_x,
+
+		//y pos
+		pos_y,
+
+		box_size_x				* font_size_rescale,
+		region_gabarite->size_y	* font_size_rescale,
+
+		NS_DefaultGabarites::texture_gabarite_white_pixel
+
+	);
+
+	NS_EGraphicCore::set_active_color(d_con->pointer_to_HRA_color[1]);
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		//x pos
+		pos_x + (box_size_x * font_size_rescale - *example_text_texture[0]->size_x_in_pixels * rescale_factor) / 2.0f,
+
+		//y pos
+		pos_y + (region_gabarite->size_y * font_size_rescale - *example_text_texture[0]->size_y_in_pixels * rescale_factor) / 2.0f - 1.0f * font_size_rescale,
+
+		*example_text_texture[0]->size_x_in_pixels * rescale_factor,
+		*example_text_texture[0]->size_y_in_pixels * rescale_factor,
+
+		example_text_texture[array_id]
+	);
+
+	NS_EGraphicCore::set_active_color(d_con->pointer_to_HRA_color[2]);
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+	NS_ERenderCollection::add_data_to_vertex_buffer_rama
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		//x pos
+		pos_x,
+
+		//y pos
+		pos_y,
+
+		box_size_x * font_size_rescale,
+		region_gabarite->size_y * font_size_rescale,
+
+		2.0f * (font_size_rescale * 0.5f + 0.5f),
+
+		NS_DefaultGabarites::texture_gabarite_white_pixel
+
+	);
+	//std::cout << "!";
 }

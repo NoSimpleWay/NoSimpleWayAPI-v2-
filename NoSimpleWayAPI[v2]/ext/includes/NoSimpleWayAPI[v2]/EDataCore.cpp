@@ -2410,7 +2410,11 @@ void ECustomData::draw()//(if (but->description_data != nullptr) { but->descript
 	{
 
 		//if (_second_pass) { EInputCore::logger_simple_info("???"); }
-
+		for (data_action_pointer dap : actions_on_pre_draw)
+			if (dap != nullptr)
+			{
+				dap(parent_entity, this, 0.1f);
+			}
 
 		for (EClickableArea* clickable_area : clickable_area_list)
 			if (clickable_area != nullptr)
