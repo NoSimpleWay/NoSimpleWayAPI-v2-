@@ -218,7 +218,8 @@ public:
 	float base_height;
 	float base_width;
 
-	void update(float _d);
+	virtual void update(float _d);
+	//virtual void post_update(float _d);
 	virtual void draw();
 	void draw_second_pass();
 

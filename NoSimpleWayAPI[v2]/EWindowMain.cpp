@@ -2930,7 +2930,7 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 		matched_filter_block_attribute = nullptr;
 		target_HRA_color = nullptr;
 
-		EDataContainer_Group_WholeFilterBlock*			whole_block_container	= nullptr;
+		EButtonGroupFilterBlock*						whole_block_container	= nullptr;
 		EDataContainer_Group_FilterBlockListedSegment*	listed_container		= nullptr;
 
 		target_color_bool = nullptr;
@@ -3005,7 +3005,7 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 						{
 							jc_filter_block = create_filter_block(loot_filter_editor);
 
-							whole_block_container = (EDataContainer_Group_WholeFilterBlock*)(jc_filter_block->data_container);
+							whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
 
 							if (EStringUtils::compare_ignoring_case(buffer_text, "show"))
 							{
@@ -3037,7 +3037,7 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 							{
 								add_filter_block_buttons_to_filter_block(jc_filter_block, matched_filter_block_attribute);
 
-								whole_block_container = (EDataContainer_Group_WholeFilterBlock*)(jc_filter_block->data_container);
+								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
 
 								if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC)
 								{
@@ -3099,7 +3099,7 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 
 							if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED)
 							{
-								whole_block_container = (EDataContainer_Group_WholeFilterBlock*)(jc_filter_block->data_container);
+								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
 								listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(whole_block_container->pointer_to_listed_segment->group_list.back()->data_container);
 
 								EFilterRule* filter_rule = listed_container->data_container_with_filter_rule->filter_rule;
@@ -3150,7 +3150,7 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 
 							if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC)
 							{
-								whole_block_container = (EDataContainer_Group_WholeFilterBlock*)(jc_filter_block->data_container);
+								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
 
 								if (matched_filter_block_attribute->localisation.base_name == "SetFontSize")
 								{
@@ -3194,21 +3194,19 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 
 }
 
-EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group)
+EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group)
 {
 
 	//EInputCore::logger_simple_info("create new block!");
 	//whole filter block
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	EButtonGroup*
-		whole_filter_block_group = EButtonGroup::create_root_button_group(new ERegionGabarite(1200.0f, 200.0f), EGUIStyle::active_style)
-		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+	EButtonGroupFilterBlock*
+	whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 200.0f));
+	whole_filter_block_group->init_button_group(EGUIStyle::active_style, true, true, false);
+	whole_filter_block_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 
 	_target_whole_group->add_group(whole_filter_block_group);
 
-	EDataContainer_Group_WholeFilterBlock*
-		whole_block_data = new EDataContainer_Group_WholeFilterBlock();
-	whole_filter_block_group->data_container = whole_block_data;
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -3227,9 +3225,9 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 		control_part->init_button_group(EGUIStyle::active_style, false, false, true);
 		control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 
-		control_part->pointer_to_whole_filter_block_data_container = whole_block_data;
+		control_part->pointer_to_filter_block_group = whole_filter_block_group;
 
-		whole_block_data->pointer_to_top_control_block = control_part;
+		whole_filter_block_group->pointer_to_top_control_block = control_part;
 		whole_filter_block_group->add_group(control_part);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -3304,7 +3302,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 	button_variant_router->router_variant_list.push_back(*router_variant);
 	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
 	control_part->button_list.push_back(button_variant_router);
-	whole_block_data->button_show_hide = button_variant_router;
+	whole_filter_block_group->button_show_hide = button_variant_router;
 
 
 
@@ -3550,7 +3548,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 
-		whole_block_data->pointer_to_non_listed_segment = non_list_condition_group;
+		whole_filter_block_group->pointer_to_non_listed_segment = non_list_condition_group;
 
 		workspace_part->add_group(non_list_condition_group);
 
@@ -3568,7 +3566,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 
 
 	//root group data ontaner
-	whole_block_data->pointer_to_listed_segment = listed_condition_segment;
+	whole_filter_block_group->pointer_to_listed_segment = listed_condition_segment;
 
 
 	workspace_part->add_group(listed_condition_segment);
@@ -3605,7 +3603,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 	ltext[2].localisations[NSW_localisation_RU] = "Рамка";
 
 	//root group data container
-	whole_block_data->pointer_to_cosmetic_segment = cosmetic_segment;
+	whole_filter_block_group->pointer_to_cosmetic_segment = cosmetic_segment;
 	workspace_part->add_group(cosmetic_segment);
 
 	//color buttons
@@ -3637,13 +3635,13 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 		Entity::get_last_text_area(jc_button)->localisation_text = ltext[clr];
 		
 		
-		whole_block_data->pointer_to_HRA_color[clr] = &((EDataContainer_Button_StoreColor*)(EntityButton::get_last_custom_data(jc_button)->data_container))->stored_color;
+		whole_filter_block_group->pointer_to_HRA_color[clr] = &((EDataContainer_Button_StoreColor*)(EntityButton::get_last_custom_data(jc_button)->data_container))->stored_color;
 
 		cosmetic_segment->button_list.push_back(jc_button);
 
 		bool*
-			target_bool = &whole_block_data->color_check[clr];
-		whole_block_data->pointer_to_color_button[clr] = jc_button;
+			target_bool = &whole_filter_block_group->color_check[clr];
+		whole_filter_block_group->pointer_to_color_button[clr] = jc_button;
 
 
 
@@ -3659,7 +3657,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 			target_bool
 		);
 
-		whole_block_data->pointer_to_color_check_button[clr] = jc_button;
+		whole_filter_block_group->pointer_to_color_check_button[clr] = jc_button;
 
 		cosmetic_segment->button_list.push_back(jc_button);
 	}
@@ -3684,10 +3682,10 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 	last_text_area->localisation_text.localisations[NSW_localisation_EN] = "Font size";
 	last_text_area->localisation_text.localisations[NSW_localisation_RU] = "Размер текста";
 
-	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_block_data->text_size;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_filter_block_group->text_size;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 
-	whole_block_data->text_size_button = jc_button;
+	whole_filter_block_group->text_size_button = jc_button;
 
 	cosmetic_segment->button_list.push_back(jc_button);
 	// // // // // // //// // // // // // //// // // // // // //
@@ -3695,7 +3693,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 
 	//font size switcher
 	// // // // // // //// // // // // // //// // // // // // //
-	bool* target_bool = &whole_block_data->text_size_bool;
+	bool* target_bool = &whole_filter_block_group->text_size_bool;
 
 	jc_button = new EntityButton();
 	jc_button->make_default_bool_switcher_button
@@ -3707,7 +3705,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 		NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
 		target_bool
 	);
-	whole_block_data->text_size_switch_button = jc_button;
+	whole_filter_block_group->text_size_switch_button = jc_button;
 
 	cosmetic_segment->button_list.push_back(jc_button);
 	// // // // // // //// // // // // // //// // // // // // //
@@ -3723,7 +3721,7 @@ void EDataActionCollection::action_open_add_content_window(Entity* _entity, ECus
 
 	//_custom_data
 	EDataContainer_Button_OpenButtonGroup* button_plus_data = static_cast<EDataContainer_Button_OpenButtonGroup*>			(_custom_data->data_container);
-	EDataContainer_Group_WholeFilterBlock* whole_filter_block_data = static_cast<EDataContainer_Group_WholeFilterBlock*>			(button_plus_data->master_group->data_container);
+	EButtonGroupFilterBlock* whole_filter_block_data = static_cast<EButtonGroupFilterBlock*>			(button_plus_data->master_group);
 	EDataContainer_Group_AddContentToFilterBlock* add_content_block_data = static_cast<EDataContainer_Group_AddContentToFilterBlock*>	(EButtonGroup::add_content_to_filter_block_group->data_container);
 	ETextArea* typing_text_area = add_content_block_data->typing_text_area;
 
@@ -3748,7 +3746,7 @@ void EDataActionCollection::action_add_selected_content_to_filter_block(Entity* 
 	EDataContainer_Group_AddContentToFilterBlock* add_content_group_data = static_cast<EDataContainer_Group_AddContentToFilterBlock*>	(EButtonGroup::add_content_to_filter_block_group->data_container);
 	EButtonGroup* whole_button_group = add_content_group_data->target_filter_block;
 
-	EDataContainer_Group_WholeFilterBlock* whole_filter_block_data = static_cast<EDataContainer_Group_WholeFilterBlock*>			(whole_button_group->data_container);
+	EButtonGroupFilterBlock* whole_filter_block_data = static_cast<EButtonGroupFilterBlock*>			(whole_button_group);
 	EDataContainer_Button_AddContentToFilterBlock* add_content_button_data = static_cast<EDataContainer_Button_AddContentToFilterBlock*>	(_custom_data->data_container);
 
 	EButtonGroup* target_group_for_content = nullptr;
@@ -3811,7 +3809,7 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 	//4) cosmetic
 	//
 	//EDataContainer_Group_WholeFilterBlock store pointers to each segemnt
-	auto whole_filter_block_data = static_cast<EDataContainer_Group_WholeFilterBlock*>(_target_filter_block->data_container);
+	auto whole_filter_block_data = static_cast<EButtonGroupFilterBlock*>(_target_filter_block);
 
 	EntityButtonForFilterBlock* jc_button;
 
@@ -4119,7 +4117,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 	result_string += '\r';
 	result_string += '\n';
 
-	auto whole_block_data = static_cast<EDataContainer_Group_WholeFilterBlock*>(_button_group->data_container);
+	auto whole_block_data = static_cast<EButtonGroupFilterBlock*>(_button_group);
 
 	EButtonGroup* non_listed_section = whole_block_data->pointer_to_non_listed_segment;
 	EButtonGroup* listed_section = whole_block_data->pointer_to_listed_segment;
@@ -4242,7 +4240,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 		//	//)
 		//}
 
-	auto cosmetic_data = static_cast<EDataContainer_Group_WholeFilterBlock*>(whole_block_data);
+	auto cosmetic_data = static_cast<EButtonGroupFilterBlock*>(whole_block_data);
 	ETextArea* tarea = nullptr;
 
 	for (int i = 0; i < 3; i++)
@@ -4407,7 +4405,7 @@ void EButtonGroupTopControlSection::draw()
 {
 	EButtonGroup::draw();
 
-	EDataContainer_Group_WholeFilterBlock* d_con = pointer_to_whole_filter_block_data_container;
+	EButtonGroupFilterBlock* d_con = pointer_to_filter_block_group;
 	
 	float font_size_rescale = 0.4f + d_con->text_size * 0.6f;
 
@@ -4420,14 +4418,14 @@ void EButtonGroupTopControlSection::draw()
 
 	float
 		pos_x =
-		pointer_to_whole_filter_block_data_container->pointer_to_top_control_block->region_gabarite->world_position_x
+		pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->world_position_x
 		+
-		pointer_to_whole_filter_block_data_container->pointer_to_top_control_block->region_gabarite->size_x;
+		pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->size_x;
 
 	
 
 	float
-		pos_y = pointer_to_whole_filter_block_data_container->pointer_to_top_control_block->region_gabarite->world_position_y;
+		pos_y = pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->world_position_y;
 	
 	pos_x -= box_size_x * (font_size_rescale * 0.5f + 0.5f);
 	//pos_x += box_size_x * (1.0f - font_size_rescale) * 0.5f;
@@ -4520,4 +4518,29 @@ void EButtonGroupTopControlSection::draw()
 
 	);
 	//std::cout << "!";
+}
+
+void EButtonGroupFilterBlock::update(float _d)
+{
+	EButtonGroup::update(_d);
+
+	if (EButtonGroup::catched_by_mouse(this))
+	{
+		if (!pointer_to_top_control_block->is_active)
+		{
+			pointer_to_top_control_block->is_active = true;
+			pointer_to_top_control_block->group_phantom_redraw = true;
+
+			//change_group(pointer_to_top_control_block);
+		}
+	}
+	else
+	{
+		if (pointer_to_top_control_block->is_active)
+		{
+			pointer_to_top_control_block->is_active = false;
+			pointer_to_top_control_block->group_phantom_redraw = true;
+			//change_group(pointer_to_top_control_block);
+		}
+	};
 }

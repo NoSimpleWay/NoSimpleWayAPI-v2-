@@ -64,3 +64,4 @@ struct hsvrgba_color;
 typedef void (*text_actions_pointer)(ETextArea*);
 
 class EntityButtonVariantRouter;
+class EButtonGroupFilterBlock;
