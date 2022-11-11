@@ -440,6 +440,8 @@ void ETextArea::generate_text()
 	float y_adding = 0.0f;
 	float full_text_height = 0.0f;
 
+	float line_height = 13.0f;
+
 
 	EFontGlyph* temp_glyph = nullptr;
 
@@ -486,8 +488,8 @@ void ETextArea::generate_text()
 		int row_id = 0;
 		int id_for_stored_text_sym = 0;
 
-		full_text_height = 12.0f * (row.size());
-		y_adding = full_text_height - 12.0f;
+		full_text_height = line_height * (row.size());
+		y_adding = full_text_height;
 
 		float border_offset_bottom = 0.0f;
 		float border_offset_top = 0.0f;
@@ -501,7 +503,7 @@ void ETextArea::generate_text()
 		y_adding += (region_gabarite->size_y - border_offset_bottom - border_offset_top) * *offset_by_gabarite_size_y;
 
 		//vertical align
-		y_adding += (full_text_height - 2.0f) * *offset_by_text_size_y;
+		y_adding += (full_text_height + 0.0f) * *offset_by_text_size_y;
 		y_adding += border_offset_bottom;
 
 
@@ -541,7 +543,7 @@ void ETextArea::generate_text()
 					sprite_layer->last_buffer_id,
 
 					round(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol]),
-					round(region_gabarite->world_position_y - (font->size_y_in_pixels[target_symbol] - 15.0f + font->offset_y[target_symbol] * *font_scale - y_adding)),
+					round(region_gabarite->world_position_y - ((font->size_y_in_pixels[target_symbol] - 0.0f) + font->offset_y[target_symbol] * *font_scale - y_adding) + 4.0f),
 
 					(font->size_x_in_pixels[target_symbol] * *font_scale),
 					(font->size_y_in_pixels[target_symbol] * *font_scale),
@@ -632,7 +634,7 @@ void ETextArea::generate_text()
 
 			//EInputCore::logger_param("last buffer id", *sprite_layer->last_buffer_id);
 
-			y_adding -= 14.0f;
+			y_adding -= line_height;
 		}
 	}
 	else
@@ -1240,6 +1242,29 @@ ETextArea* ETextArea::create_centered_to_left_text_area(EClickableArea* _region_
 	}
 }
 
+ETextArea* ETextArea::create_bottomed_to_left_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text)
+{
+	if (_region_gabarite != nullptr)
+	{
+		ETextArea* jc_text_area = create_base_text_area(_region_gabarite, _font, _text);
+
+		*jc_text_area->offset_by_gabarite_size_x = 0.0f;
+		*jc_text_area->offset_by_gabarite_size_y = 0.0f;
+
+		*jc_text_area->offset_by_text_size_x = 0.0f;
+		*jc_text_area->offset_by_text_size_y = 0.0f;
+
+		//*jc_text_area->can_be_edited = false;
+
+
+		return jc_text_area;
+	}
+	else
+	{
+		return nullptr;
+	}
+}
+
 void ETextArea::change_text(std::string _text)
 {
 	std::string		buffer = "";
@@ -1252,7 +1277,7 @@ void ETextArea::change_text(std::string _text)
 	char			target_sym = 0;
 	int				sym_id = 0;
 
-	for (int i = 0; i < _text.size(); i++)
+	for (int i = 0; i < _text.length(); i++)
 	{
 		target_sym = _text[i];
 		
@@ -1260,18 +1285,25 @@ void ETextArea::change_text(std::string _text)
 
 		if
 		(
-			(i + 1 < _text.size())
-			&&
-			(_text[i] == '\\')
-			&&
-			(_text[i + 1] == 'n')
+			(
+				(i + 1 < _text.length())
+				&&
+				(_text[i] == '\\')
+				&&
+				(_text[i + 1] == 'n')
+			)
+			||
+			(
+				(_text[i] == '\n')
+			)
 		)
 		{
+			//EInputCore::logger_simple_info("trigger [\n]");
 			x_size = 0.0f;
 			block_size = 0.0f;
 
-			buffer += temp_text + "\\n";
-			i++;
+			buffer += temp_text + '\n';
+			if (_text[i] == '\\'){i++;}
 
 			temp_text = "";
 		}
@@ -1285,11 +1317,13 @@ void ETextArea::change_text(std::string _text)
 			if (target_sym != ' ')
 			{
 				temp_text += target_sym;
+
 				block_size += font->advance[sym_id];
 				x_size += font->advance[sym_id];
 			}
 			else
 			{
+				//block_size = 0.0f;
 				if (x_size + offset_border[BorderSide::LEFT] + 0.0f < region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 0.0f)
 				{
 					x_size += font->advance[sym_id];
@@ -1299,14 +1333,15 @@ void ETextArea::change_text(std::string _text)
 			if ((target_sym == ' ')||(i >= _text.size() - 1))
 			{
 				//need to transfer text to new line?
-				if (x_size + offset_border[BorderSide::LEFT] + 5.0f >= region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 5.0f)
+				if (x_size + offset_border[BorderSide::LEFT] + 0.0f >= region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 5.0f)
 				{
-					buffer += "\\n";
+					buffer += '\n';
 					//buffer += "[" + Helper::float_to_string_with_precision(x_size + offset_border[BorderSide::LEFT] + 5.0f, 2.0f) + "/" + Helper::float_to_string_with_precision(region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 5.0f, 2.0f) + "]";
 					buffer += temp_text;
 					
 					temp_text = "";
 					x_size = block_size;
+					//block_size = 0.0f;
 				}
 
 				if (target_sym == ' ')
@@ -1318,6 +1353,8 @@ void ETextArea::change_text(std::string _text)
 				if (i >= _text.size() - 1) { buffer += temp_text; }
 
 				temp_text = "";
+
+				//x_size = 0.0f;
 				block_size = 0.0f;
 			}	
 		}

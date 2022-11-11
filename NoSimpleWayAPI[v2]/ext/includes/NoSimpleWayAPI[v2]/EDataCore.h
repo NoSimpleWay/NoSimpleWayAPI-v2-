@@ -438,7 +438,7 @@ public:
 	EntityButton*				pointer_to_color_check_button[3];
 
 	bool						color_check[3];
-	Helper::HSVRGBAColor*		pointer_to_HRA_color[3];
+	Helper::HSVRGBAColor**		pointer_to_HRA_color[3];
 	
 	//font size
 	EntityButton*				text_size_button;

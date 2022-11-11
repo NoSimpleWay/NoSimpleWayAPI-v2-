@@ -1371,11 +1371,52 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 	{
 		//6999999999999999999999999999999, 10 november 2022, cat, stop, pls
 
-		layer_with_icon->sprite_frame_list[0]->sprite_list[0]->main_texture = router_variant_list[selected_variant].texture;
+		if (router_variant_list[selected_variant].texture != nullptr)
+		{
+			//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->main_texture = router_variant_list[selected_variant].texture;
+
+			EBrickStyle* brick_style = parent_button_group->selected_style->button_bg;
+			float resize_factor =
+				min
+				(
+					(button_gabarite->size_x	- *brick_style->side_offset_bottom	- *brick_style->side_offset_up)		/ (float)(*router_variant_list[selected_variant].texture->size_x_in_pixels)
+					,
+					(button_gabarite->size_y	- *brick_style->side_offset_left	- *brick_style->side_offset_right)	/ (float)(*router_variant_list[selected_variant].texture->size_y_in_pixels)
+				);
+
+			//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->offset_x = *brick_style->side_offset_left;
+			//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->offset_y = *brick_style->side_offset_bottom;
+			//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->offset_z = 0.0f;
+
+
+			layer_with_icon->sprite_frame_list[0]->sprite_list[0]->set_texture_gabarite_with_size_and_offset
+			(
+				router_variant_list[selected_variant].texture,
+				nullptr,
+				nullptr,
+
+				*brick_style->side_offset_left,
+				*brick_style->side_offset_bottom,
+				0.0f,
+
+				*router_variant_list[selected_variant].texture->size_x_in_pixels * resize_factor,
+				*router_variant_list[selected_variant].texture->size_y_in_pixels * resize_factor,
+				0.0f
+			);
+
+			pointer_to_text_area->offset_border[BorderSide::LEFT] = 30.0f;
+		}
+		else
+		{
+			pointer_to_text_area->offset_border[BorderSide::LEFT] = 0.0f;
+		}
+		pointer_to_text_area->offset_border[BorderSide::RIGHT] = 0.0f;
+		
 
 		pointer_to_text_area->localisation_text	= *router_variant_list[selected_variant].localisation;
 		pointer_to_text_area->stored_color		= *(router_variant_list[selected_variant].color);
 		pointer_to_text_area->color				= *(router_variant_list[selected_variant].color);
+
 		pointer_to_text_area->change_text(pointer_to_text_area->localisation_text.localisations[NSW_localisation_EN]);
 
 		//redraw

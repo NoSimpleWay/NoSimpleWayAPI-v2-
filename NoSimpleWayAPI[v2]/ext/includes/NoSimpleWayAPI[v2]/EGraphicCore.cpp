@@ -3712,6 +3712,37 @@ void ESprite::set_texture_gabarite(ETextureGabarite* _gabarite, ETextureGabarite
 	sprite_calculate_uv();
 }
 
+void ESprite::set_texture_gabarite_with_size_and_offset(ETextureGabarite* _gabarite, ETextureGabarite* _normal_map_gabarite, ETextureGabarite* _gloss_map_gabarite, float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y, float _size_z)
+{
+	main_texture = _gabarite;
+
+	offset_x = _offset_x;
+	offset_y = _offset_y;
+	offset_z = _offset_z;
+
+
+	if (_gabarite != nullptr)
+	{
+		fragment_size_x = _size_x;
+		fragment_size_y = _size_y;
+
+		size_x = _size_x;
+		size_y = _size_y;
+
+		//normal_texture	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_gabarite, "[normal_map]");
+		//gloss_texture	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_gabarite, "[gloss_map]");
+
+		normal_texture = _normal_map_gabarite;
+		gloss_texture = _gloss_map_gabarite;
+	}
+	else
+	{
+		EInputCore::logger_simple_error("[set texture gabarite] _gabarite is nullptr!");
+	}
+
+	sprite_calculate_uv();
+}
+
 void ESprite::sprite_calculate_uv()
 {
 	if (main_texture != nullptr)

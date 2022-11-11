@@ -265,14 +265,14 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			float old_value = *data_bar->value_pointer;
 			*data_bar->value_pointer
 				=
-
+				round
 				(
 					*data_bar->current_percent
 					*
 					*data_bar->max_value
 					*
 					-1.0f
-					);
+				);
 			float new_value = *data_bar->value_pointer;
 			float diff = new_value - old_value;
 

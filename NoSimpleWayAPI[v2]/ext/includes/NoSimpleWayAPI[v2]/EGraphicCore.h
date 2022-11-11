@@ -497,7 +497,8 @@ public:
 	void translate_sprite(float _x, float _y, float _z);
 	void generate_vertex_buffer_for_master_sprite_layer();
 
-	void set_texture_gabarite(ETextureGabarite* _gabarite, ETextureGabarite* _normal_map_gabarite, ETextureGabarite* _gloss_map_gabarite);
+	void set_texture_gabarite						(ETextureGabarite* _gabarite, ETextureGabarite* _normal_map_gabarite, ETextureGabarite* _gloss_map_gabarite);
+	void set_texture_gabarite_with_size_and_offset	(ETextureGabarite* _gabarite, ETextureGabarite* _normal_map_gabarite, ETextureGabarite* _gloss_map_gabarite, float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y, float _size_z);
 	void sprite_calculate_uv();
 
 	void reset_sprite();

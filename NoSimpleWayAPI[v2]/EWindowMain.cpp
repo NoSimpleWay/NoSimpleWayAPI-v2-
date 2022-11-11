@@ -190,7 +190,18 @@ void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity
 
 void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	
 	//EWindowMain::loot_filter_editor->need_remove = true;
+
+	
+
+	for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
+	{
+		group->need_remove = true;
+	}
+
+	EWindowMain::loot_filter_editor->group_list.clear();
+
 	EButtonGroup::existing_loot_filter_list->is_active = false;
 
 	EWindowMain::open_loot_filter(((EntityButtonForLootFilterSelector*)_entity)->full_path);
@@ -3212,7 +3223,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 	
 	//control top part
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		EButtonGroupTopControlSection* control_part = new EButtonGroupTopControlSection(new ERegionGabarite(1200.0f, 20.0f));
+		EButtonGroupTopControlSection* control_part = new EButtonGroupTopControlSection(new ERegionGabarite(1200.0f, 30.0f));
 		control_part->init_button_group(EGUIStyle::active_style, false, false, true);
 		control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 
@@ -3244,7 +3255,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 	EntityButtonVariantRouter* button_variant_router = new EntityButtonVariantRouter();
 	button_variant_router->make_as_default_button_with_icon
 	(
-		new ERegionGabarite(120.0f, 20.0f),
+		new ERegionGabarite(120.0f, 30.0f),
 		control_part,
 		EDataActionCollection::action_rotate_variant,
 		nullptr
@@ -3292,19 +3303,200 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 
 	button_variant_router->router_variant_list.push_back(*router_variant);
 	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-
-
-
-	button_variant_router->select_variant(1);
-
-
-
 	control_part->button_list.push_back(button_variant_router);
-
 	whole_block_data->button_show_hide = button_variant_router;
-	// // // // // // //// // // // // // //// // // // // // //
 
+
+
+
+	std::string base_names[5] =
+	{
+		"Start",
+		"Low",
+		"Default",
+		"Rich",
+		"Very rich",
+	};
+
+	std::string EN_names[5] =
+	{
+		"Start",
+		"Low",
+		"Default",
+		"Rich",
+		"Very rich",
+	};
+
+	std::string RU_names[5] =
+	{
+		"Стартовый",
+		"Ранний",
+		"Нормальный",
+		"Поздный",
+		"Максимальный",
+	};
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	for (int i = 0; i < 5; i++)
+	{
+		button_variant_router = new EntityButtonVariantRouter();
+		button_variant_router->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(120.0f, 29.0f),
+			control_part,
+			EDataActionCollection::action_rotate_variant,
+			nullptr
+		);
+
+		button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
+
+		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], "|?|");
+		button_variant_router->pointer_to_text_area = jc_text_area;
+
+		*jc_text_area->can_be_edited = false;
+		Entity::add_text_area_to_last_clickable_region(button_variant_router, jc_text_area);
+
+		
+
+		//	0
+		/*************************************************************************************/
+		router_variant = new RouterVariant();
+		local_text = new ELocalisationText();
+
+		local_text->base_name = base_names[i] + '\n' + "Full ignore";
+		local_text->localisations[NSW_localisation_EN] = EN_names[i] + '\n' + "Full ignore";
+		local_text->localisations[NSW_localisation_RU] = RU_names[i] + '\n' + "Игнорирование";
+		router_variant->localisation = local_text;
+
+		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color->set_color_RGBA(1.0f, 0.0f, 0.0f, 1.0f);
+
+		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_full_ignore");
+
+		button_variant_router->router_variant_list.push_back(*router_variant);
+		/*************************************************************************************/
+
+		//	1
+		/*************************************************************************************/
+		router_variant = new RouterVariant();
+		local_text = new ELocalisationText();
+
+		local_text->base_name = base_names[i] + '\n' + "Hide";
+		local_text->localisations[NSW_localisation_EN] = EN_names[i] + '\n' + "Hide";
+		local_text->localisations[NSW_localisation_RU] = RU_names[i] + '\n' + "Скрыт";
+		router_variant->localisation = local_text;
+
+		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color->set_color_RGBA(0.7f, 0.7f, 0.7f, 1.0f);
+
+		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_hide");
+
+		button_variant_router->router_variant_list.push_back(*router_variant);
+		/*************************************************************************************/
+
+		//	2
+		/*************************************************************************************/
+		router_variant = new RouterVariant();
+		local_text = new ELocalisationText();
+
+		local_text->base_name = base_names[i] + '\n' + "Strong ignore";
+		local_text->localisations[NSW_localisation_EN] = EN_names[i] + '\n' + "Strong ignore";
+		local_text->localisations[NSW_localisation_RU] = RU_names[i] + '\n' + "Сильный игнор";
+		router_variant->localisation = local_text;
+
+		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color->set_color_RGBA(1.0f, 0.5f, 0.45f, 1.0f);
+
+		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_strong_ignore");
+
+		button_variant_router->router_variant_list.push_back(*router_variant);
+		/*************************************************************************************/
+
+		//	3
+		/*************************************************************************************/
+		router_variant = new RouterVariant();
+		local_text = new ELocalisationText();
+
+		local_text->base_name = base_names[i] + "\n" + "Soft ignore";
+		local_text->localisations[NSW_localisation_EN] = EN_names[i] + "\n" + "Soft ignore";
+		local_text->localisations[NSW_localisation_RU] = RU_names[i] + "\n" + "Слабый игнор";
+		router_variant->localisation = local_text;
+
+		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
+
+		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_soft_ignore");
+
+		button_variant_router->router_variant_list.push_back(*router_variant);
+		/*************************************************************************************/
+
+		//	4
+		/*************************************************************************************/
+		router_variant = new RouterVariant();
+		local_text = new ELocalisationText();
+
+		local_text->base_name = base_names[i] + "\n" + "Default";
+		local_text->localisations[NSW_localisation_EN] = EN_names[i] + "\n" + "Default";
+		local_text->localisations[NSW_localisation_RU] = RU_names[i] + "\n" + "Обычный";
+		router_variant->localisation = local_text;
+
+		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color->set_color_RGBA(0.9f, 0.95f, 1.0f, 1.0f);
+
+		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_default");
+
+		button_variant_router->router_variant_list.push_back(*router_variant);
+		/*************************************************************************************/
+
+		//	5
+		/*************************************************************************************/
+		router_variant = new RouterVariant();
+		local_text = new ELocalisationText();
+
+		local_text->base_name = base_names[i] + "\n" + "Soft focus";
+		local_text->localisations[NSW_localisation_EN] = EN_names[i] + "\\n" + "Soft focus";
+		local_text->localisations[NSW_localisation_RU] = RU_names[i] + "\n" + "Слабый фокус";
+		router_variant->localisation = local_text;
+
+		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color->set_color_RGBA(0.8f, 1.0f, 0.9f, 1.0f);
+
+		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_soft_focus");
+
+		button_variant_router->router_variant_list.push_back(*router_variant);
+		/*************************************************************************************/
+
+		//	6
+		/*************************************************************************************/
+		router_variant = new RouterVariant();
+		local_text = new ELocalisationText();
+
+		local_text->base_name = base_names[i] + "\n" + "Strong focus";
+		local_text->localisations[NSW_localisation_EN] = EN_names[i] + "\n" + "Strong focus";
+		local_text->localisations[NSW_localisation_RU] = RU_names[i] + "\n" + "Сильный фокус";
+		router_variant->localisation = local_text;
+
+		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color->set_color_RGBA(0.6f, 1.0f, 0.8f, 1.0f);
+
+		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_strong_focus");
+
+		button_variant_router->router_variant_list.push_back(*router_variant);
+		/*************************************************************************************/
+
+
+
+
+
+		button_variant_router->select_variant(4);
+
+
+
+		control_part->button_list.push_back(button_variant_router);
+
+		//whole_block_data->button_show_hide = button_variant_router;
+		
+	}
+	// // // // // // //// // // // // // //// // // // // // //
 
 
 	///////////		BUTTON PLUS		///////////
@@ -3429,7 +3621,7 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 
 		Helper::hsv2rgb(HRA_color);
 		
-		whole_block_data->pointer_to_HRA_color[clr] = HRA_color;
+		
 
 		jc_button = EntityButton::create_named_color_button
 		(
@@ -3443,7 +3635,9 @@ EButtonGroup* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group
 			ColorButtonMode::CBM_OPEN_WINDOW
 		);
 		Entity::get_last_text_area(jc_button)->localisation_text = ltext[clr];
-
+		
+		
+		whole_block_data->pointer_to_HRA_color[clr] = &((EDataContainer_Button_StoreColor*)(EntityButton::get_last_custom_data(jc_button)->data_container))->stored_color;
 
 		cosmetic_segment->button_list.push_back(jc_button);
 
@@ -4265,7 +4459,7 @@ void EButtonGroupTopControlSection::draw()
 
 	
 
-	NS_EGraphicCore::set_active_color(d_con->pointer_to_HRA_color[0]);
+	NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[0]);
 	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 	(
@@ -4285,7 +4479,7 @@ void EButtonGroupTopControlSection::draw()
 
 	);
 
-	NS_EGraphicCore::set_active_color(d_con->pointer_to_HRA_color[1]);
+	NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[1]);
 	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 	(
@@ -4304,7 +4498,7 @@ void EButtonGroupTopControlSection::draw()
 		example_text_texture[array_id]
 	);
 
-	NS_EGraphicCore::set_active_color(d_con->pointer_to_HRA_color[2]);
+	NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[2]);
 	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 	NS_ERenderCollection::add_data_to_vertex_buffer_rama
 	(
