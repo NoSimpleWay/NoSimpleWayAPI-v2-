@@ -160,6 +160,12 @@ enum class ButtonAlignType
 
 };
 
+enum class ChildElementsAlignDirection
+{
+	BOTTOM_TO_TOP,
+	TOP_TO_BOTTOM
+};
+
 constexpr float DISTANCE_BETWEEN_BUTTONS = 5.0f;
 class EButtonGroup
 {
@@ -373,6 +379,8 @@ public:
 	EWindow* parent_window;
 
 	void move_to_foreground();
+
+	ChildElementsAlignDirection child_align_direction = ChildElementsAlignDirection::BOTTOM_TO_TOP;
 };
 
 //class EButtonContainer

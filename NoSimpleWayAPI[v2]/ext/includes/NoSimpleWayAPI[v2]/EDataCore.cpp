@@ -135,7 +135,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				//*entity_button->parent_button_group->border_bottom
 				//-
 				entity_button->parent_button_group->border_up
-				)
+			)
 		);
 
 	//*data_bar->max_value = 1000.0f;
@@ -197,7 +197,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
 				&&
 				(entity_button->parent_button_group->region_gabarite->size_y > 10.0f)
-				)
+			)
 		{
 			_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 				+=
@@ -263,16 +263,37 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			*data_bar->current_percent = min(*data_bar->current_percent, 1.0f);
 
 			float old_value = *data_bar->value_pointer;
-			*data_bar->value_pointer
-				=
-				round
-				(
-					*data_bar->current_percent
-					*
-					*data_bar->max_value
-					*
-					-1.0f
-				);
+			
+			if (entity_button->parent_button_group->child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
+			{
+				*data_bar->value_pointer
+					=
+					round
+					(
+						*data_bar->current_percent
+						*
+						*data_bar->max_value
+						*
+						-1.0f
+					);
+			}
+			else
+			if (entity_button->parent_button_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+			{
+				*data_bar->value_pointer
+					=
+					round
+					(
+						(1.0f - *data_bar->current_percent)
+						*
+						*data_bar->max_value
+						*
+						1.0f
+					);
+			}
+
+			EInputCore::logger_param("value pointer", *data_bar->value_pointer);
+
 			float new_value = *data_bar->value_pointer;
 			float diff = new_value - old_value;
 

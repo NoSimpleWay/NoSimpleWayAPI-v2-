@@ -113,27 +113,27 @@ class EButtonGroupFilterBlock : public EButtonGroup
 public:
 	EButtonGroupFilterBlock(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	EButtonGroup* pointer_to_non_listed_segment;
-	EButtonGroup* pointer_to_listed_segment;
-	EButtonGroup* pointer_to_preview_box_segment;
-	EButtonGroup* pointer_to_top_control_block;
-	EButtonGroup* pointer_to_cosmetic_segment;
+	EButtonGroup*				pointer_to_non_listed_segment;
+	EButtonGroup*				pointer_to_listed_segment;
+	EButtonGroup*				pointer_to_preview_box_segment;
+	EButtonGroup*				pointer_to_top_control_block;
+	EButtonGroup*				pointer_to_cosmetic_segment;
 
 
 	//color section
-	EntityButton* pointer_to_color_button[3];
-	EntityButton* pointer_to_color_check_button[3];
+	EntityButton*				pointer_to_color_button[3];
+	EntityButton*				pointer_to_color_check_button[3];
 
 	bool						color_check[3];
-	Helper::HSVRGBAColor** pointer_to_HRA_color[3];
+	Helper::HSVRGBAColor**		pointer_to_HRA_color[3];
 
 	//font size
-	EntityButton* text_size_button;
-	EntityButton* text_size_switch_button;
+	EntityButton*				text_size_button;
+	EntityButton*				text_size_switch_button;
 	bool						text_size_bool;
 	float						text_size;
 
-	EntityButtonVariantRouter* button_show_hide;
+	EntityButtonVariantRouter*	button_show_hide;
 
 	void update(float _d);
 };
@@ -232,6 +232,8 @@ public:
 	static std::string path_of_exile_folder;
 
 	static void				load_loot_filter_list();
+
+	static bool text_is_condition(std::string& buffer_text);
 
 	static void				open_loot_filter(std::string _full_path);
 	static EButtonGroupFilterBlock*	create_filter_block(EButtonGroup* _target_whole_group);

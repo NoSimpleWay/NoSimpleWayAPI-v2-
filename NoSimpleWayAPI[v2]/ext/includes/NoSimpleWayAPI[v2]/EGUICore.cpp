@@ -815,8 +815,17 @@ void EButtonGroup::align_groups()
 			{
 				if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 				{
-					group->region_gabarite->offset_x = border_left + 0.0f;
-					group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + BUTTON_GROUP_Y_DISTANCE;
+					if (child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
+					{
+						group->region_gabarite->offset_x = border_left + 0.0f;
+						group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + BUTTON_GROUP_Y_DISTANCE;
+					}
+					else
+					if (child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+					{
+						group->region_gabarite->offset_x = border_left + 0.0f;
+						group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y - group->region_gabarite->size_y - BUTTON_GROUP_Y_DISTANCE;
+					}
 				}
 				else
 				if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
@@ -830,15 +839,32 @@ void EButtonGroup::align_groups()
 				//if (*group->have_bg)
 				//{group->region_gabarite->offset_x = *border_left + 3.0f;}
 				//else
-				group->region_gabarite->offset_x = border_left;
-				group->region_gabarite->offset_y = border_bottom;
+				if (child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
+				{
+					group->region_gabarite->offset_x = border_left;
+					group->region_gabarite->offset_y = border_bottom;
+				}
+				else
+				if (child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+				{
+					group->region_gabarite->offset_x = border_left;
+					group->region_gabarite->offset_y = region_gabarite->size_y - group->region_gabarite->size_y - border_up;
+				}
 			}
 
 			
 			
 
 			group->region_gabarite->world_position_x = region_gabarite->world_position_x + group->region_gabarite->offset_x;
-			group->region_gabarite->world_position_y = region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y;
+
+			if (child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
+			{group->region_gabarite->world_position_y = region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y;}
+			else
+			if (child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+			{
+				group->region_gabarite->world_position_y = region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y;
+			}
+
 			group->region_gabarite->world_position_z = region_gabarite->world_position_z + group->region_gabarite->offset_z;
 
 			
@@ -858,18 +884,35 @@ void EButtonGroup::align_groups()
 
 	if (prev_group != nullptr)
 	{
-		highest_point_y
-		=
-		max
-		(
-			prev_group->region_gabarite->offset_y
-			+
-			prev_group->region_gabarite->size_y
-			-
-			0.0f
-			,
+		if (child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
+		{
 			highest_point_y
-		);
+			=
+			max
+			(
+				prev_group->region_gabarite->offset_y
+				+
+				prev_group->region_gabarite->size_y
+				-
+				0.0f
+				,
+				highest_point_y
+			);
+		}
+		else
+		if (child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+		{
+			highest_point_y
+			=
+			max
+			(
+				region_gabarite->size_y
+				- 
+				prev_group->region_gabarite->offset_y
+				,
+				highest_point_y
+			);
+		}
 	}
 
 	
