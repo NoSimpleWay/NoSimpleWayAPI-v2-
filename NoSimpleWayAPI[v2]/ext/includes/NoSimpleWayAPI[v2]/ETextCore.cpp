@@ -1558,3 +1558,7 @@ EFontGlyph::~EFontGlyph()
 	//delete is_last_symbol;
 	//delete is_empty;
 }
+
+ELocalisationText::ELocalisationText()
+{
+}

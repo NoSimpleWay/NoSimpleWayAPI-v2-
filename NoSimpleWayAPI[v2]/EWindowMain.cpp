@@ -29,14 +29,16 @@
 //class Entity;
 EWindowMain* EWindowMain::link_to_main_window;
 
-EButtonGroup* EWindowMain::select_rarity_button_group;
-EButtonGroup* EWindowMain::select_quality_button_group;
-EButtonGroup* EWindowMain::loot_filter_editor;
+EButtonGroup*		EWindowMain::select_rarity_button_group;
+EButtonGroup*		EWindowMain::select_quality_button_group;
+EButtonGroup*		EWindowMain::loot_filter_editor;
 
 
 
-std::string		EWindowMain::username;
-std::string		EWindowMain::path_of_exile_folder;
+std::string			EWindowMain::username;
+std::string			EWindowMain::path_of_exile_folder;
+
+RouterVariant*		EWindowMain::registered_rarity_router_variants[NSW_registered_rarity_count];
 
 void EWindowMain::draw_additional(float _d)
 {
@@ -297,8 +299,49 @@ EWindowMain::EWindowMain()
 
 	register_filter_rules();
 
+	ELocalisationText* localisation_text = nullptr;
 
-	FilterBlockAttribute* jc_filter_block_attribute;
+	//Normal
+	localisation_text = new ELocalisationText();
+	registered_rarity_router_variants[0] = new RouterVariant();
+	registered_rarity_router_variants[0]->localisation = localisation_text;
+	registered_rarity_router_variants[0]->color = new Helper::HSVRGBAColor();
+	registered_rarity_router_variants[0]->color->set_color_RGBA(0.9f, 0.95f, 1.0f, 1.0f);
+	localisation_text->base_name = "Normal";
+	localisation_text->localisations[NSW_localisation_EN] = "Normal";
+	localisation_text->localisations[NSW_localisation_RU] = "Обычная";
+
+	//Magic
+	localisation_text = new ELocalisationText();
+	registered_rarity_router_variants[1] = new RouterVariant();
+	registered_rarity_router_variants[1]->localisation = localisation_text;
+	registered_rarity_router_variants[1]->color = new Helper::HSVRGBAColor();
+	registered_rarity_router_variants[1]->color->set_color_RGBA(0.5f, 0.7f, 1.0f, 1.0f);
+	localisation_text->base_name = "Magic";
+	localisation_text->localisations[NSW_localisation_EN] = "Magic";
+	localisation_text->localisations[NSW_localisation_RU] = "Магическая";
+
+	//Rare
+	localisation_text = new ELocalisationText();
+	registered_rarity_router_variants[2] = new RouterVariant();
+	registered_rarity_router_variants[2]->localisation = localisation_text;
+	registered_rarity_router_variants[2]->color = new Helper::HSVRGBAColor();
+	registered_rarity_router_variants[2]->color->set_color_RGBA(1.0f, 0.9f, 0.35f, 1.0f);
+	localisation_text->base_name = "Rare";
+	localisation_text->localisations[NSW_localisation_EN] = "Rare";
+	localisation_text->localisations[NSW_localisation_RU] = "Редкая";
+
+	//Unique
+	registered_rarity_router_variants[3] = new RouterVariant();
+	registered_rarity_router_variants[3]->localisation = localisation_text;
+	registered_rarity_router_variants[3]->color = new Helper::HSVRGBAColor();
+	registered_rarity_router_variants[3]->color->set_color_RGBA(0.5f, 0.25f, 0.125f, 1.0f);
+	localisation_text->base_name = "Unique";
+	localisation_text->localisations[NSW_localisation_EN] = "Unique";
+	localisation_text->localisations[NSW_localisation_RU] = "Уникальная";
+
+
+	FilterBlockAttribute*	jc_filter_block_attribute;
 	ELocalisationText		jc_localisation;
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2905,6 +2948,8 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 {
 	EInputCore::logger_param("open loot filter", _full_path);
 
+	loot_filter_editor->scroll_y = 1.0f;
+
 	std::ifstream file;
 	std::string full_line;
 
@@ -2925,7 +2970,7 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 
 	std::string attribute_text = "";
 	std::string condition_text = "";
-	std::string value_array[512] = {};
+	//std::string value_array[512] = {};
 
 	Helper::HSVRGBAColor* target_HRA_color;
 	bool* target_color_bool;
@@ -3143,8 +3188,7 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 										(last_non_listed_container != nullptr)
 										&&
 										(matched_filter_block_attribute != nullptr)
-										
-										)
+									)
 								{
 									if
 									(
@@ -4131,7 +4175,7 @@ void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_filter_block
 			else
 				if (j == 2) { jc_region_gabarite = new ERegionGabarite(50.0f, 20.0f); }*/
 
-		EInputCore::logger_param("vector size", whole_filter_block_data->pointer_to_non_listed_segment->group_list.size());
+		//EInputCore::logger_param("vector size", whole_filter_block_data->pointer_to_non_listed_segment->group_list.size());
 	}
 
 

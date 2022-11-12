@@ -207,6 +207,8 @@ static std::string generate_filter_block_text(EButtonGroup* _button_group);
 static std::vector<FilterBlockAttribute*> registered_filter_block_attributes;
 static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::string _attribute_name, EButtonGroup* _parent);
 
+#define NSW_registered_rarity_count 3
+
 class EWindowMain : public EWindow
 {
 public:
@@ -231,13 +233,13 @@ public:
 	static std::string username;
 	static std::string path_of_exile_folder;
 
-	static void				load_loot_filter_list();
+	static void						load_loot_filter_list();
 
-	static bool text_is_condition(std::string& buffer_text);
+	static bool						text_is_condition(std::string& buffer_text);
 
-	static void				open_loot_filter(std::string _full_path);
+	static void						open_loot_filter(std::string _full_path);
 	static EButtonGroupFilterBlock*	create_filter_block(EButtonGroup* _target_whole_group);
-
+	static RouterVariant*			registered_rarity_router_variants[NSW_registered_rarity_count];
 	//static bool disable_deleting = true;
 
 

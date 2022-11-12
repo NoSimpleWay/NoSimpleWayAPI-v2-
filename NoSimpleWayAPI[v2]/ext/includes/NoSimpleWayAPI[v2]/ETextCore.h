@@ -85,6 +85,7 @@ constexpr unsigned int NSW_languages_count = 2;
 class ELocalisationText
 {
 public:
+	ELocalisationText();
 	std::string base_name = "";
 	std::string localisations[NSW_languages_count] = {""};
 };

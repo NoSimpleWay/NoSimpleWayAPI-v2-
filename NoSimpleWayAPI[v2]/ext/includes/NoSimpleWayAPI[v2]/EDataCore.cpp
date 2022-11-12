@@ -292,7 +292,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 					);
 			}
 
-			EInputCore::logger_param("value pointer", *data_bar->value_pointer);
+			//EInputCore::logger_param("value pointer", *data_bar->value_pointer);
 
 			float new_value = *data_bar->value_pointer;
 			float diff = new_value - old_value;
