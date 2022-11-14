@@ -636,50 +636,61 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 		//_parent_group->button_list.push_back(jc_button);
 
-		//int selected_data_entity = _data_entity;
 
-		ETextureGabarite* item_icon = NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity));
-		
-		float resize_factor	= 0.0f;
-		float offset_x = 0.0f;
-		float offset_y = 0.0f;
-
-		if (item_icon != nullptr)
-		{
-			resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
-			resize_factor = min(resize_factor, 1.0f);
-
-			offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_x_in_pixels * resize_factor) / 2.0f;
-			offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_y_in_pixels * resize_factor) / 2.0f;
-
-			ESpriteLayer* second_button_layer =
-				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-				(
-					item_icon,
-
-					_parent_group->border_left			+ offset_x,
-					_parent_group->border_bottom		+ offset_y,
-					3.0f,
-
-					*item_icon->size_x_in_pixels * resize_factor,
-					*item_icon->size_y_in_pixels * resize_factor,
-					0.0f
-				);
-
-			jc_button->sprite_layer_list.push_back(second_button_layer);
-
-			//second_button_layer->make_as_PBR();
-		}
-
-		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area (Entity::get_last_clickable_area(jc_button), _font, DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+		//create text area
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, "");
 		*jc_text_area->offset_by_gabarite_size_x = 0.0;
 		*jc_text_area->offset_by_text_size_x = 0.0;
 
 		jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y;
 
-		jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+		*jc_text_area->can_be_edited = false;
+		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		//////localistation//////
+		if (_data_entity != nullptr)
+		{
+
+			ETextureGabarite* item_icon = NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity));
+
+			float resize_factor = 0.0f;
+			float offset_x = 0.0f;
+			float offset_y = 0.0f;
+
+			if (item_icon != nullptr)
+			{
+				resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
+				resize_factor = min(resize_factor, 1.0f);
+
+				offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_x_in_pixels * resize_factor) / 2.0f;
+				offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_y_in_pixels * resize_factor) / 2.0f;
+
+				ESpriteLayer* second_button_layer =
+					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+					(
+						item_icon,
+
+						_parent_group->border_left + offset_x,
+						_parent_group->border_bottom + offset_y,
+						3.0f,
+
+						*item_icon->size_x_in_pixels * resize_factor,
+						*item_icon->size_y_in_pixels * resize_factor,
+						0.0f
+					);
+
+				jc_button->sprite_layer_list.push_back(second_button_layer);
+
+				//second_button_layer->make_as_PBR();
+			}
+		
+
+			
+
+			jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+
+			//////localistation//////
 			std::string base_name_value = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
 
 			//if base name exist, set
@@ -692,17 +703,45 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 				jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
 			}
 
-			jc_text_area->localisation_text.localisations[NSW_localisation_EN]	= DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
-			jc_text_area->localisation_text.localisations[NSW_localisation_RU]	= DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
-		////////////////////////
+			jc_text_area->localisation_text.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+			jc_text_area->localisation_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
+			////////////////////////
+		}
+		else
+		{
+			ETextureGabarite* item_icon = NS_EGraphicCore::load_from_textures_folder("undefined_item");
 
-		*jc_text_area->can_be_edited = false;
-		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+			float resize_factor = 0.0f;
+			float offset_x = 0.0f;
+			float offset_y = 0.0f;
 
-		//jc_button->add_description("123");
-		//jc_button->add_description(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+			if (item_icon != nullptr)
+			{
+				resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
+				resize_factor = min(resize_factor, 1.0f);
 
+				offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_x_in_pixels * resize_factor) / 2.0f;
+				offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_y_in_pixels * resize_factor) / 2.0f;
 
+				ESpriteLayer* second_button_layer =
+					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+					(
+						item_icon,
+
+						_parent_group->border_left + offset_x,
+						_parent_group->border_bottom + offset_y,
+						3.0f,
+
+						*item_icon->size_x_in_pixels * resize_factor,
+						*item_icon->size_y_in_pixels * resize_factor,
+						0.0f
+					);
+
+				jc_button->sprite_layer_list.push_back(second_button_layer);
+
+				//second_button_layer->make_as_PBR();
+			}
+		}
 
 		return jc_button;
 }

@@ -1052,7 +1052,7 @@ void ETextArea::draw()
 				sprite_layer->batcher->vertex_buffer,
 				sprite_layer->batcher->last_vertice_buffer_index,
 				round(active_glyph->world_position_x),
-				round(active_glyph->world_position_y),
+				round(active_glyph->world_position_y) - 15.0f,
 				2.0f,
 				15.0f,
 				NS_DefaultGabarites::texture_gabarite_white_pixel

@@ -342,6 +342,7 @@ public:
 	bool dynamic_autosize_for_window	= false;
 
 	EButtonGroup* add_group(EButtonGroup* _new_group);
+	EButtonGroup* add_group_scecific_position(EButtonGroup* _new_group, int _specific_position);
 
 	EDataContainer* data_container = nullptr;
 

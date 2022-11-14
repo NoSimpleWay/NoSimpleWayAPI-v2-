@@ -303,6 +303,7 @@ public:
 
 
 	std::string							tag = "";
+	float								min_y_size = 100.0f;
 };
 
 class EDataContainer_Group_DataEntitiesSearch : public EDataContainer
@@ -475,7 +476,7 @@ public:
 class EDataContainer_Group_AddContentToFilterBlock : public EDataContainer
 {
 public:
-	EButtonGroup* target_filter_block;
+	EButtonGroupFilterBlock* target_filter_block;
 
 	ETextArea* typing_text_area;
 };

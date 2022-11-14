@@ -50,7 +50,8 @@ public:
 class EntityButtonForFilterBlock : public EntityButton
 {
 public:
-	EButtonGroup* parent_filter_block;
+	EButtonGroupFilterBlock*			parent_filter_block;
+	FilterBlockAttribute*				used_filter_block_attribute;
 	//~EntityButtonFilterBlock
 	//int a;
 	//EntityButtonFilterBlock() : a(0) {};
@@ -113,29 +114,40 @@ class EButtonGroupFilterBlock : public EButtonGroup
 public:
 	EButtonGroupFilterBlock(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	EButtonGroup*				pointer_to_non_listed_segment;
-	EButtonGroup*				pointer_to_listed_segment;
-	EButtonGroup*				pointer_to_preview_box_segment;
-	EButtonGroup*				pointer_to_top_control_block;
-	EButtonGroup*				pointer_to_cosmetic_segment;
+	EButtonGroup*					pointer_to_non_listed_segment;
+	EButtonGroup*					pointer_to_listed_segment;
+	EButtonGroup*					pointer_to_preview_box_segment;
+	EButtonGroup*					pointer_to_top_control_block;
+	EButtonGroup*					pointer_to_cosmetic_segment;
 
 
 	//color section
-	EntityButton*				pointer_to_color_button[3];
-	EntityButton*				pointer_to_color_check_button[3];
+	EntityButton*					pointer_to_color_button[3];
+	EntityButton*					pointer_to_color_check_button[3];
 
-	bool						color_check[3];
-	Helper::HSVRGBAColor**		pointer_to_HRA_color[3];
+	bool							color_check[3];
+	Helper::HSVRGBAColor**			pointer_to_HRA_color[3];
 
 	//font size
-	EntityButton*				text_size_button;
-	EntityButton*				text_size_switch_button;
-	bool						text_size_bool;
-	float						text_size;
+	EntityButton*					text_size_button;
+	EntityButton*					text_size_switch_button;
+	bool							text_size_bool;
+	float							text_size;
 
-	EntityButtonVariantRouter*	button_show_hide;
+	EntityButtonVariantRouter*		button_show_hide;
+
+	//EButtonGroupFilterBlockAsText*	target_filter_block_as_text_group;
 
 	void update(float _d);
+};
+
+class EButtonGroupFilterBlockAsText : public EButtonGroup
+{
+	EButtonGroupFilterBlockAsText(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	EButtonGroupFilterBlock* target_filter_block;
+
+	static EButtonGroupFilterBlockAsText* create_filter_block_as_text_group(EButtonGroupFilterBlock* _target_filter_block);
 };
 
 
@@ -162,6 +174,15 @@ namespace EDataActionCollection
 	void action_mark_button_group_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_loot_filter_from_list(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_add_all_entity_buttons_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_import_filter_text_from_clipboard(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_text_as_item(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_new_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
+
+
+
+
+
+
 	void action_save_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void 
 }
@@ -200,7 +221,7 @@ public:
 	bool						always_present;
 };
 
-static void add_filter_block_buttons_to_filter_block(EButtonGroup* _target_group, FilterBlockAttribute* _filter_block_attribute);
+static void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_group, FilterBlockAttribute* _filter_block_attribute);
 static std::string generate_filter_block_text(EButtonGroup* _button_group);
 
 
@@ -239,10 +260,14 @@ public:
 	static bool						text_is_condition(std::string& buffer_text);
 
 	static void						open_loot_filter(std::string _full_path);
-	static EButtonGroupFilterBlock*	create_filter_block(EButtonGroup* _target_whole_group);
+	static EButtonGroupFilterBlock*	create_filter_block(EButtonGroup* _target_whole_group, int _specific_position);
+
+	static void						parse_filter_text_lines(EButtonGroupFilterBlock* _target_filter_block);
 
 	static RouterVariant*			registered_rarity_router_variants					[NSW_registered_rarity_count];
 	static RouterVariant*			registered_alternate_gem_quality_router_variants	[NSW_registered_altered_gem_quality_count];
+
+	static std::vector < std::string> filter_text_lines;
 	//static bool disable_deleting = true;
 
 

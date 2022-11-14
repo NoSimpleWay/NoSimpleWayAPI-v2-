@@ -7305,7 +7305,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Astral protection"
+	[tag]"name EN"		[value]"Astral Protection"
 	[tag]"name RU"		[value]"Астральная защита"
 
 	[tag]"icon path"	[value]"Card"
@@ -7519,7 +7519,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Azure rage"
+	[tag]"name EN"		[value]"Azure Rage"
 	[tag]"name RU"		[value]"Лазурная ярость"
 
 	[tag]"icon path"	[value]"Card"
@@ -30403,6 +30403,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30416,6 +30418,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30430,6 +30434,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30443,6 +30449,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30456,6 +30464,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30469,6 +30479,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30483,6 +30495,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30496,6 +30510,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30509,6 +30525,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30522,6 +30540,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30535,6 +30555,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30548,6 +30570,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30561,6 +30585,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30574,6 +30600,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30586,6 +30614,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sacred_orb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30598,6 +30628,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedBlessing"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30610,6 +30642,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedChromaticOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30622,6 +30656,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedOrbofFusing"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30634,6 +30670,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedJewellersOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30646,6 +30684,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedExaltedOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30658,6 +30698,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedMythicOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30670,6 +30712,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedBlacksmithsWhetstone"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30682,6 +30726,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedArmourersScrap"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30694,6 +30740,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedChaosOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30706,6 +30754,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedDivineTeardrop"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30718,6 +30768,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"KalguuranDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30730,6 +30782,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"FossilCrit"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30742,6 +30796,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"FossilAttributes"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30766,6 +30822,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TulFlawlessBreachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30778,6 +30836,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"EshFlawlessBreachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30790,6 +30850,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"UulnetolFlawlessBreachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30802,6 +30864,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ChayulasFlawlessBreachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30814,6 +30878,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"UnrelentingTimelessKaruiEmblem"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30826,6 +30892,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"UnrelentingTimelessMarakethEmblem"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30838,6 +30906,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"UnrelentingTimelessEternalEmblem"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30850,6 +30920,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"UnrelentingTimelessTemplarEmblem"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30862,6 +30934,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"UnrelentingTimelessVaalEmblem"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30874,6 +30948,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30886,6 +30962,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30898,6 +30976,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30910,6 +30990,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30922,6 +31004,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ExpeditionIncubator"
 	[tag]"base class"	[value]"Incubator"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30934,6 +31018,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"UnsetAmulet"
 	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30947,6 +31033,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30960,6 +31048,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30973,6 +31063,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30986,6 +31078,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30999,6 +31093,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31012,6 +31108,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31025,6 +31123,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31038,6 +31138,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31051,6 +31153,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31065,6 +31169,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31078,6 +31184,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31091,6 +31199,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31104,6 +31214,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31116,6 +31228,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Surveyors_Compass"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31128,6 +31242,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ChargedCompass"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31140,6 +31256,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"LesserEldritchEmber"
 	[tag]"base class"	[value]"Stackable Currency"
+
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31164,6 +31282,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GrandEldritchEmber"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31176,6 +31296,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ExceptionalEldritchEmber"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31188,6 +31310,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"LesserEldritchIchor"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31212,6 +31336,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GrandEldritchIchor"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31224,6 +31350,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ExceptionalEldritchIchor"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31236,6 +31364,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"OrbofConflict"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31248,6 +31378,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"orb_of_dominance"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31260,6 +31392,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"EldritchChaosOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31272,6 +31406,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"EldritchExaltedOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31284,6 +31420,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"EldritchOrbofAnnulment"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31296,6 +31434,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ScoutingReport"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31308,6 +31448,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ScoutingReport"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31320,6 +31462,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ScoutingReport"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31332,6 +31476,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ScoutingReport"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31344,6 +31490,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ScoutingReport"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31356,6 +31504,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ScoutingReport"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31368,6 +31518,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ScoutingReport"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31380,6 +31532,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ScoutingReport"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31392,6 +31546,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ScoutingReport"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31404,6 +31560,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Oil_extractor"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31416,6 +31574,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Al-Hezmins_Crest"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31428,6 +31588,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Barans_Crest_png"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31440,6 +31602,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Droxs_Crest"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31452,6 +31616,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Veritanias_Crest"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31464,6 +31630,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Ceremonial_Voidstone"
 	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31476,6 +31644,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Decayed_Voidstone"
 	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31488,6 +31658,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GraspingVoidstone"
 	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31500,6 +31672,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"OmniscientVoidstone"
 	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31512,6 +31686,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Writhing_Invitation"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31524,6 +31700,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Screaming_Invitation"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31536,6 +31714,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Polaric_Invitation"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31548,6 +31728,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incandescent_Invitation"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31560,6 +31742,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Maven_invitation_atlas"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31570,8 +31754,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Maven's Invitation: The Elderslayers"
 	[tag]"name RU"		[value]"Приглашение Мейвен: Убийцы Древнего"
 
-	[tag]"icon path"	[value]"Maven_invitation_atlas"
+	[tag]"icon path"	[value]"MavenInvitationTheElderslayers"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31584,6 +31770,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Feather_quiver"
 	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -31596,6 +31784,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Blazing_quiver"
 	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -31608,6 +31798,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vile_quiver"
 	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -31620,6 +31812,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Heavy_quiver"
 	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -31632,6 +31826,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Primal_quiver"
 	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -31642,8 +31838,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Atlas Book of Skill"
 	[tag]"name RU"		[value]"Книга умений Атласа"
 
-	[tag]"icon path"	[value]"Book_of_the_atlas"
+	[tag]"icon path"	[value]"AtlasSkillBook"
 	[tag]"base class"	[value]"Quest Items"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31656,6 +31854,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Living_compass"
 	[tag]"base class"	[value]"Quest Items"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31668,6 +31868,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Luminous_astrolabe"
 	[tag]"base class"	[value]"Quest Items"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31680,6 +31882,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Writhing_Invitation_quest"
 	[tag]"base class"	[value]"Quest Items"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31690,8 +31894,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Screaming Invitation"
 	[tag]"name RU"		[value]"Кричащее приглашение"
 
-	[tag]"icon path"	[value]"Screaming_Invitation_quest"
+	[tag]"icon path"	[value]"Screaming_Invitation"
 	[tag]"base class"	[value]"Quest Items"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31716,7 +31922,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incandescent_Invitation_quest"
 	[tag]"base class"	[value]"Quest Items"
-
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
