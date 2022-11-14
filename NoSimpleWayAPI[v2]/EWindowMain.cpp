@@ -39,6 +39,7 @@ std::string			EWindowMain::username;
 std::string			EWindowMain::path_of_exile_folder;
 
 RouterVariant*		EWindowMain::registered_rarity_router_variants[NSW_registered_rarity_count];
+RouterVariant*		EWindowMain::registered_alternate_gem_quality_router_variants[NSW_registered_altered_gem_quality_count];
 
 void EWindowMain::draw_additional(float _d)
 {
@@ -299,8 +300,9 @@ EWindowMain::EWindowMain()
 
 	register_filter_rules();
 
-	ELocalisationText* localisation_text = nullptr;
 
+	/*		REGISTER RARITIES		*/	
+	ELocalisationText* localisation_text = nullptr;
 	//Normal
 	localisation_text = new ELocalisationText();
 	registered_rarity_router_variants[0] = new RouterVariant();
@@ -332,15 +334,60 @@ EWindowMain::EWindowMain()
 	localisation_text->localisations[NSW_localisation_RU] = "Редкая";
 
 	//Unique
+	localisation_text = new ELocalisationText();
 	registered_rarity_router_variants[3] = new RouterVariant();
 	registered_rarity_router_variants[3]->localisation = localisation_text;
 	registered_rarity_router_variants[3]->color = new Helper::HSVRGBAColor();
-	registered_rarity_router_variants[3]->color->set_color_RGBA(0.5f, 0.25f, 0.125f, 1.0f);
+	registered_rarity_router_variants[3]->color->set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
 	localisation_text->base_name = "Unique";
 	localisation_text->localisations[NSW_localisation_EN] = "Unique";
 	localisation_text->localisations[NSW_localisation_RU] = "Уникальная";
 
 
+	/*		REGISTER ALTERNATE QUALITIES		*/
+	//Anomalous
+	localisation_text = new ELocalisationText();
+
+	localisation_text->base_name = "Anomalous";
+	localisation_text->localisations[NSW_localisation_EN] = "Anomalous";
+	localisation_text->localisations[NSW_localisation_RU] = "Аномальный";
+
+	registered_alternate_gem_quality_router_variants[0] = new RouterVariant();
+	registered_alternate_gem_quality_router_variants[0]->localisation = localisation_text;
+	registered_alternate_gem_quality_router_variants[0]->color = new Helper::HSVRGBAColor();
+	registered_alternate_gem_quality_router_variants[0]->color->set_color_RGBA(0.9f, 0.95f, 1.0f, 1.0f);
+
+
+	//Divergent
+	localisation_text = new ELocalisationText();
+
+	localisation_text->base_name = "Divergent";
+	localisation_text->localisations[NSW_localisation_EN] = "Divergent";
+	localisation_text->localisations[NSW_localisation_RU] = "Искривлённый";
+
+	registered_alternate_gem_quality_router_variants[1] = new RouterVariant();
+	registered_alternate_gem_quality_router_variants[1]->localisation = localisation_text;
+	registered_alternate_gem_quality_router_variants[1]->color = new Helper::HSVRGBAColor();
+	registered_alternate_gem_quality_router_variants[1]->color->set_color_RGBA(0.9f, 0.95f, 1.0f, 1.0f);
+
+
+	//Phantasmal
+	localisation_text = new ELocalisationText();
+
+	localisation_text->base_name = "Phantasmal";
+	localisation_text->localisations[NSW_localisation_EN] = "Phantasmal";
+	localisation_text->localisations[NSW_localisation_RU] = "Фантомный";
+
+	registered_alternate_gem_quality_router_variants[2] = new RouterVariant();
+	registered_alternate_gem_quality_router_variants[2]->localisation = localisation_text;
+	registered_alternate_gem_quality_router_variants[2]->color = new Helper::HSVRGBAColor();
+	registered_alternate_gem_quality_router_variants[2]->color->set_color_RGBA(0.9f, 0.95f, 1.0f, 1.0f);
+
+
+
+
+
+	/*		REGISTER FILTER BLOCK ATTRIBUTES		*/
 	FilterBlockAttribute*	jc_filter_block_attribute;
 	ELocalisationText		jc_localisation;
 
@@ -3217,9 +3264,26 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 										}
 
 									}
+
+									if
+									(matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
+									{
+										for (RouterVariant* rv : registered_rarity_router_variants)
+										{
+											if (EStringUtils::compare_ignoring_case(rv->localisation->base_name, buffer_text))
+											{
+												EntityButton::get_last_text_area(last_non_listed_container->target_button_with_value)->localisation_text = *rv->localisation;
+												
+												EntityButton::get_last_text_area(last_non_listed_container->target_button_with_value)->stored_color = *rv->color;
+												EntityButton::get_last_text_area(last_non_listed_container->target_button_with_value)->color = *rv->color;
+
+												EntityButton::get_last_text_area(last_non_listed_container->target_button_with_value)->change_text(rv->localisation->localisations[NSW_localisation_EN]);
+
+
+											}
+										}
+									}
 								}
-
-
 							}
 
 							if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED)
@@ -3485,9 +3549,9 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant = new RouterVariant();
 		local_text = new ELocalisationText();
 
-		local_text->base_name = base_names[i] + '\n' + "Full ignore";
-		local_text->localisations[NSW_localisation_EN] = EN_names[i] + '\n' + "Full ignore";
-		local_text->localisations[NSW_localisation_RU] = RU_names[i] + '\n' + "Игнорирование";
+		local_text->base_name = base_names[i];
+		local_text->localisations[NSW_localisation_EN] = EN_names[i];
+		local_text->localisations[NSW_localisation_RU] = RU_names[i];
 		router_variant->localisation = local_text;
 
 		router_variant->color = new Helper::HSVRGBAColor();
@@ -3503,9 +3567,9 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant = new RouterVariant();
 		local_text = new ELocalisationText();
 
-		local_text->base_name = base_names[i] + '\n' + "Hide";
-		local_text->localisations[NSW_localisation_EN] = EN_names[i] + '\n' + "Hide";
-		local_text->localisations[NSW_localisation_RU] = RU_names[i] + '\n' + "Скрыт";
+		local_text->base_name = base_names[i];
+		local_text->localisations[NSW_localisation_EN] = EN_names[i];
+		local_text->localisations[NSW_localisation_RU] = RU_names[i];
 		router_variant->localisation = local_text;
 
 		router_variant->color = new Helper::HSVRGBAColor();
@@ -3521,9 +3585,9 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant = new RouterVariant();
 		local_text = new ELocalisationText();
 
-		local_text->base_name = base_names[i] + '\n' + "Strong ignore";
-		local_text->localisations[NSW_localisation_EN] = EN_names[i] + '\n' + "Strong ignore";
-		local_text->localisations[NSW_localisation_RU] = RU_names[i] + '\n' + "Сильный игнор";
+		local_text->base_name = base_names[i];
+		local_text->localisations[NSW_localisation_EN] = EN_names[i];
+		local_text->localisations[NSW_localisation_RU] = RU_names[i];
 		router_variant->localisation = local_text;
 
 		router_variant->color = new Helper::HSVRGBAColor();
@@ -3534,32 +3598,32 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_router->router_variant_list.push_back(*router_variant);
 		/*************************************************************************************/
 
+		////	3
+		///*************************************************************************************/
+		//router_variant = new RouterVariant();
+		//local_text = new ELocalisationText();
+
+		//local_text->base_name = base_names[i] + "\n" + "Soft ignore";
+		//local_text->localisations[NSW_localisation_EN] = EN_names[i] + "\n" + "Soft ignore";
+		//local_text->localisations[NSW_localisation_RU] = RU_names[i] + "\n" + "Слабый игнор";
+		//router_variant->localisation = local_text;
+
+		//router_variant->color = new Helper::HSVRGBAColor();
+		//router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
+
+		//router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_soft_ignore");
+
+		//button_variant_router->router_variant_list.push_back(*router_variant);
+		///*************************************************************************************/
+
 		//	3
 		/*************************************************************************************/
 		router_variant = new RouterVariant();
 		local_text = new ELocalisationText();
 
-		local_text->base_name = base_names[i] + "\n" + "Soft ignore";
-		local_text->localisations[NSW_localisation_EN] = EN_names[i] + "\n" + "Soft ignore";
-		local_text->localisations[NSW_localisation_RU] = RU_names[i] + "\n" + "Слабый игнор";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new Helper::HSVRGBAColor();
-		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
-
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_soft_ignore");
-
-		button_variant_router->router_variant_list.push_back(*router_variant);
-		/*************************************************************************************/
-
-		//	4
-		/*************************************************************************************/
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = base_names[i] + "\n" + "Default";
-		local_text->localisations[NSW_localisation_EN] = EN_names[i] + "\n" + "Default";
-		local_text->localisations[NSW_localisation_RU] = RU_names[i] + "\n" + "Обычный";
+		local_text->base_name = base_names[i];
+		local_text->localisations[NSW_localisation_EN] = EN_names[i];
+		local_text->localisations[NSW_localisation_RU] = RU_names[i];
 		router_variant->localisation = local_text;
 
 		router_variant->color = new Helper::HSVRGBAColor();
@@ -3570,32 +3634,32 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_router->router_variant_list.push_back(*router_variant);
 		/*************************************************************************************/
 
-		//	5
+		////	5
+		///*************************************************************************************/
+		//router_variant = new RouterVariant();
+		//local_text = new ELocalisationText();
+
+		//local_text->base_name = base_names[i] + "\n" + "Soft focus";
+		//local_text->localisations[NSW_localisation_EN] = EN_names[i];
+		//local_text->localisations[NSW_localisation_RU] = RU_names[i];
+		//router_variant->localisation = local_text;
+
+		//router_variant->color = new Helper::HSVRGBAColor();
+		//router_variant->color->set_color_RGBA(0.8f, 1.0f, 0.9f, 1.0f);
+
+		//router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_soft_focus");
+
+		//button_variant_router->router_variant_list.push_back(*router_variant);
+		///*************************************************************************************/
+
+		//	4
 		/*************************************************************************************/
 		router_variant = new RouterVariant();
 		local_text = new ELocalisationText();
 
-		local_text->base_name = base_names[i] + "\n" + "Soft focus";
-		local_text->localisations[NSW_localisation_EN] = EN_names[i] + "\\n" + "Soft focus";
-		local_text->localisations[NSW_localisation_RU] = RU_names[i] + "\n" + "Слабый фокус";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new Helper::HSVRGBAColor();
-		router_variant->color->set_color_RGBA(0.8f, 1.0f, 0.9f, 1.0f);
-
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_soft_focus");
-
-		button_variant_router->router_variant_list.push_back(*router_variant);
-		/*************************************************************************************/
-
-		//	6
-		/*************************************************************************************/
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = base_names[i] + "\n" + "Strong focus";
-		local_text->localisations[NSW_localisation_EN] = EN_names[i] + "\n" + "Strong focus";
-		local_text->localisations[NSW_localisation_RU] = RU_names[i] + "\n" + "Сильный фокус";
+		local_text->base_name = base_names[i];
+		local_text->localisations[NSW_localisation_EN] = EN_names[i];
+		local_text->localisations[NSW_localisation_RU] = RU_names[i];
 		router_variant->localisation = local_text;
 
 		router_variant->color = new Helper::HSVRGBAColor();
@@ -3610,7 +3674,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 
 
-		button_variant_router->select_variant(4);
+		button_variant_router->select_variant(3);
 
 
 

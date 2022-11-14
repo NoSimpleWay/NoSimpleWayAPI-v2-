@@ -207,7 +207,8 @@ static std::string generate_filter_block_text(EButtonGroup* _button_group);
 static std::vector<FilterBlockAttribute*> registered_filter_block_attributes;
 static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::string _attribute_name, EButtonGroup* _parent);
 
-#define NSW_registered_rarity_count 3
+#define NSW_registered_rarity_count					4//	1|normal		2|magic			3|rare				4|unique
+#define NSW_registered_altered_gem_quality_count	3//	1|anomalous		2|divergent		3|phantasmal		4|unique
 
 class EWindowMain : public EWindow
 {
@@ -239,7 +240,9 @@ public:
 
 	static void						open_loot_filter(std::string _full_path);
 	static EButtonGroupFilterBlock*	create_filter_block(EButtonGroup* _target_whole_group);
-	static RouterVariant*			registered_rarity_router_variants[NSW_registered_rarity_count];
+
+	static RouterVariant*			registered_rarity_router_variants					[NSW_registered_rarity_count];
+	static RouterVariant*			registered_alternate_gem_quality_router_variants	[NSW_registered_altered_gem_quality_count];
 	//static bool disable_deleting = true;
 
 
