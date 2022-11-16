@@ -549,6 +549,7 @@ namespace EDataActionCollection
 	void action_create_new_color						(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_rotate_variant							(Entity* _entity, ECustomData* _custom_data, float _d);
+	//void action_active_filter_block						(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text
 	void action_type_search_data_entity_text(ETextArea* _text_area);

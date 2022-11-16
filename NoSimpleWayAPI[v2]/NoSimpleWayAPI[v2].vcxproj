@@ -165,6 +165,7 @@
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.cpp" />
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\ESound.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\ETextCore.cpp" />
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\Helpers.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -172,6 +173,7 @@
   <ItemGroup>
     <ClInclude Include="EWindowMain.h" />
     <ClInclude Include="ext\includes\ConsoleColor.h" />
+    <ClInclude Include="ext\includes\irr\irrKlang.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EClassLinker.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EDataEntity.h" />
@@ -179,6 +181,7 @@
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGUICore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EInputCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EntityCore.h" />
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\ESound.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\ETextCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\Helpers.h" />
   </ItemGroup>

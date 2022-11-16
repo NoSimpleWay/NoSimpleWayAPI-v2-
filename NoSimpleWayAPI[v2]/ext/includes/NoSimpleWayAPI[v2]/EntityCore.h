@@ -118,6 +118,8 @@ public:
 };
 
 
+
+
 typedef void (*change_style_action)(EntityButton*, EGUIStyle*);
 
 void action_change_style_slider		(EntityButton* _but, EGUIStyle* _style);
@@ -275,6 +277,11 @@ public:
 
 };
 
+
+
+
+
+
 struct RouterVariant
 {
 public:
@@ -298,11 +305,21 @@ public:
 	void select_variant(int _variant_id);
 
 };
+
+class EntityButtonButtonGroupActivator : public EntityButton
+{
+public:
+	EButtonGroup* target_group;
+};
+
 class ECluster
 {
 public:
 	std::vector<Entity*> entity_list;
 };
+
+
+
 
 class TestObject
 {

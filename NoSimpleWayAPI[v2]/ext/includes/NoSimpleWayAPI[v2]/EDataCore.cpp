@@ -1535,9 +1535,12 @@ void EDataActionCollection::action_invoke_data_entity_group_action(Entity* _enti
 
 void EDataActionCollection::action_set_button_group_as_active(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	EDataContainer_Button_OpenButtonGroup* button_data = static_cast<EDataContainer_Button_OpenButtonGroup*>(_custom_data->data_container);
-	button_data->target_group->is_active = true;
-	button_data->target_group->move_to_foreground();
+	if (((EntityButtonButtonGroupActivator*)_entity)->target_group != nullptr)
+	{
+		//EDataContainer_Button_OpenButtonGroup* button_data = static_cast<EDataContainer_Button_OpenButtonGroup*>(_custom_data->data_container);
+		((EntityButtonButtonGroupActivator*)_entity)->target_group->is_active = true;
+		((EntityButtonButtonGroupActivator*)_entity)->target_group->move_to_foreground();
+	}
 }
 
 void EDataActionCollection::action_switch_boolean_value(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1565,6 +1568,14 @@ void EDataActionCollection::action_rotate_variant(Entity* _entity, ECustomData* 
 
 	button_variant_router->select_variant(button_variant_router->selected_variant);
 }
+
+//void EDataActionCollection::action_active_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)
+//{
+//	if (((EntityButtonButtonGroupActivator*)_entity)->target_group != nullptr)
+//	{
+//		((EntityButtonButtonGroupActivator*)_entity)->target_group->is_active = true;
+//	}
+//}
 
 
 

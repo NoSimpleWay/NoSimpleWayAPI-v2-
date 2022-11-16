@@ -75,6 +75,9 @@
     <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\Helpers.cpp">
       <Filter>NoSimpleWayAPI[v2]\UTILS</Filter>
     </ClCompile>
+    <ClCompile Include="ext\includes\NoSimpleWayAPI[v2]\ESound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ext\includes\ConsoleColor.h">
@@ -109,6 +112,12 @@
     </ClInclude>
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\EGraphicCore.h">
       <Filter>NoSimpleWayAPI[v2]\GraphicCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\includes\irr\irrKlang.h">
+      <Filter>NoSimpleWayAPI[v2]\UTILS</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\ESound.h">
+      <Filter>NoSimpleWayAPI[v2]\UTILS</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

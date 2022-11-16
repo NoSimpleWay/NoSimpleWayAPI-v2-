@@ -251,6 +251,7 @@ public:
 	static EButtonGroup* select_rarity_button_group;
 	static EButtonGroup* select_quality_button_group;
 	static EButtonGroup* loot_filter_editor;
+	static EButtonGroup* world_parameters;
 
 	static std::string username;
 	static std::string path_of_exile_folder;

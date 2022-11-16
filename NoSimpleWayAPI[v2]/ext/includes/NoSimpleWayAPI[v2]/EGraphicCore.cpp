@@ -69,6 +69,7 @@ namespace NS_EGraphicCore
 	void make_transform_from_size(glm::mat4 _transform, float _size_x, float _size_y);
 
 	void initiate_graphic_core();
+	//void initiate_sound_core();
 
 	void create_styles();
 
@@ -838,6 +839,11 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 	Helper::rgb2hsv(&NS_EGraphicCore::sun_color);
 }
+
+//void NS_EGraphicCore::initiate_sound_core()
+//{
+//
+//}
 
 void NS_EGraphicCore::create_styles()
 {

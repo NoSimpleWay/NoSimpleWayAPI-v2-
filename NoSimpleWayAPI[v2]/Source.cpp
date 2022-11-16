@@ -38,6 +38,13 @@
 #include <iterator>
 #include <chrono>
 
+/**/
+#ifndef _ESOUND_ALREADY_LINKED_
+#define _ESOUND_ALREADY_LINKED_
+#include <NoSimpleWayAPI[v2]/ESound.h>
+#endif
+/**/
+
 //#pragma execution_character_set( "utf-8" )
 //extern GLFWwindow* main_window{ nullptr };
 
@@ -67,6 +74,8 @@ int main()
 
 	NS_EGraphicCore::initiate_graphic_core();
 	EInputCore::initiate_input_core();
+	ESound::irrKlang_initiate_sound_engine();
+	ESound::engine->play2D(ESound::shootSound);
 
 	
 	
