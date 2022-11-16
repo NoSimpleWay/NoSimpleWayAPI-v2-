@@ -14,6 +14,12 @@
 #endif
 /**/
 
+/**/
+#ifndef _ESOUND_ALREADY_LINKED_
+#define _ESOUND_ALREADY_LINKED_
+#include "NoSimpleWayAPI[v2]/ESound.h"
+#endif
+/**/
 
 //#ifndef _E_TEXT_CORE_ALREADY_LINKED_
 ///**/#define _E_TEXT_CORE_ALREADY_LINKED_
@@ -56,7 +62,7 @@ public:
 	//int a;
 	//EntityButtonFilterBlock() : a(0) {};
 	EntityButtonForFilterBlock();
-	~EntityButtonForFilterBlock();
+	virtual ~EntityButtonForFilterBlock();
 };
 
 class EntityButtonForLootFilterSelector : public EntityButton
@@ -73,6 +79,16 @@ class EntityButtonFilterRule : public EntityButton
 public:
 	EFilterRule								*target_filter_rule;
 	EDataContainer_Group_DataEntitiesSearch	*target_data_container;
+
+};
+
+class EntityButtonFilterSound : public EntityButtonForFilterBlock
+{
+public:
+	irrklang::ISoundSource* target_sound;
+	irrklang::ISoundSource* target_sound;
+	std::string				full_path;
+
 
 };
 
@@ -151,6 +167,18 @@ class EButtonGroupFilterBlockAsText : public EButtonGroup
 };
 
 
+class EButtonGroupSoundList : public EButtonGroup
+{
+public:
+	EButtonGroup*				part_with_list;
+	ETextArea*					input_field;
+
+	EButtonGroupSoundList(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	std::vector<ENamedSound*>*	pointer_to_sound_list;
+	//EntityButton
+	void refresh_sound_list();
+};
 
 
 namespace EDataActionCollection
@@ -231,6 +259,7 @@ static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, 
 #define NSW_registered_rarity_count					4//	1|normal		2|magic			3|rare				4|unique
 #define NSW_registered_altered_gem_quality_count	3//	1|anomalous		2|divergent		3|phantasmal		4|unique
 
+
 class EWindowMain : public EWindow
 {
 public:
@@ -256,19 +285,23 @@ public:
 	static std::string username;
 	static std::string path_of_exile_folder;
 
-	static void						load_loot_filter_list();
+	static void							load_loot_filter_list();
+	static void							load_custom_sound_list();
 
-	static bool						text_is_condition(std::string& buffer_text);
+	static bool							text_is_condition(std::string& buffer_text);
 
-	static void						open_loot_filter(std::string _full_path);
-	static EButtonGroupFilterBlock*	create_filter_block(EButtonGroup* _target_whole_group, int _specific_position);
+	static void							open_loot_filter(std::string _full_path);
+	static EButtonGroupFilterBlock*		create_filter_block(EButtonGroup* _target_whole_group, int _specific_position);
 
-	static void						parse_filter_text_lines(EButtonGroupFilterBlock* _target_filter_block);
+	static void							parse_filter_text_lines(EButtonGroupFilterBlock* _target_filter_block);
 
-	static RouterVariant*			registered_rarity_router_variants					[NSW_registered_rarity_count];
-	static RouterVariant*			registered_alternate_gem_quality_router_variants	[NSW_registered_altered_gem_quality_count];
+	static RouterVariant*				registered_rarity_router_variants					[NSW_registered_rarity_count];
+	static RouterVariant*				registered_alternate_gem_quality_router_variants	[NSW_registered_altered_gem_quality_count];
 
-	static std::vector < std::string> filter_text_lines;
+	static std::vector < std::string>	filter_text_lines;
+
+	static								std::vector<ENamedSound*> default_sound_list;
+	static								std::vector<ENamedSound*> custom_sound_list;
 	//static bool disable_deleting = true;
 
 

@@ -359,6 +359,8 @@ public:
 	static EButtonGroup* header_line;
 	static EButtonGroup* existing_loot_filter_list;
 
+	static EButtonGroupSoundList* sound_list_group;
+
 	void translate(float _x, float _y, float _z, bool _affect_child);
 	void translate_content(float _x, float _y, float _z, bool _move_slider);
 	bool can_see_this_group();

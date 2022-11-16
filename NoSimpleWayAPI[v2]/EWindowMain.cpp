@@ -25,6 +25,8 @@
 #endif
 /**/
 
+
+
 #include <chrono>
 #include <windows.h>
 #include <Lmcons.h>
@@ -45,13 +47,16 @@ EButtonGroup* EWindowMain::world_parameters;
 
 
 
-std::string					EWindowMain::username;
-std::string					EWindowMain::path_of_exile_folder;
+std::string								EWindowMain::username;
+std::string								EWindowMain::path_of_exile_folder;
 
-RouterVariant* EWindowMain::registered_rarity_router_variants[NSW_registered_rarity_count];
-RouterVariant* EWindowMain::registered_alternate_gem_quality_router_variants[NSW_registered_altered_gem_quality_count];
+RouterVariant*							EWindowMain::registered_rarity_router_variants[NSW_registered_rarity_count];
+RouterVariant*							EWindowMain::registered_alternate_gem_quality_router_variants[NSW_registered_altered_gem_quality_count];
 
-std::vector < std::string>	EWindowMain::filter_text_lines;
+std::vector < std::string>				EWindowMain::filter_text_lines;
+
+std::vector<ENamedSound*>				EWindowMain::default_sound_list;
+std::vector<ENamedSound*>				EWindowMain::custom_sound_list;
 
 void EWindowMain::draw_additional(float _d)
 {
@@ -2268,7 +2273,74 @@ EWindowMain::EWindowMain()
 		whole_quality_list_group->is_active = false;
 	}
 
-	//loot-filter list
+	//filter sound list
+	{
+		EButtonGroupSoundList* main_sound_group = new EButtonGroupSoundList(new ERegionGabarite(512.0f, 256.0f, 1020.0f, 512.0f));
+		main_sound_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+
+		EButtonGroup::sound_list_group = main_sound_group;
+
+		//auto whole_loot_filter_group = static_cast<EButtonGroupLootFilterList*>(main_sound_group);
+
+
+		main_sound_group->parent_window = this;
+
+		main_sound_group->root_group = main_sound_group;
+		main_sound_group->can_be_moved = true;
+		main_sound_group->can_resize_to_workspace_size_x = true;
+		main_sound_group->can_resize_to_workspace_size_y = true;
+
+		main_sound_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+
+		EButtonGroup* loot_filters_list_workspace_part = main_sound_group->add_close_group_and_return_workspace_group
+		(
+			new ERegionGabarite(1.0f, 20.0f),
+			EGUIStyle::active_style
+		)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+		///////////////		LOOT-FILTERS LIST PART		///////////////
+		EButtonGroup* loot_filter_list_part = loot_filters_list_workspace_part->add_group
+		(
+			EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(1.0f, 1.0f),
+				EGUIStyle::active_style
+			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
+		);
+
+		///////////////		SEARCH INPUT PART		///////////////
+		EButtonGroup* search_input_part = loot_filters_list_workspace_part->add_group
+		(
+			EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(1.0f, 32.0f),
+				EGUIStyle::active_style
+			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize)
+		);
+
+
+		/// set data parameters
+		main_sound_group->part_with_list = loot_filter_list_part;
+
+
+
+		//load_loot_filter_list();
+
+		/*for (int i = 0; i < 2; i++)
+		{
+			EntityButton* but = EntityButton::make_default_button_with_unedible_text
+			(
+				new ERegionGabarite(128.0f, 32.0f),
+				loot_filter_list_part,
+				nullptr,
+				"ZZZ"
+			);
+			loot_filter_list_part->button_list.push_back(but);
+		}*/
+
+		button_group_list.push_back(main_sound_group);
+		EButtonGroup::refresh_button_group(main_sound_group);
+	}	//loot-filter list
 	{
 		main_button_group = EButtonGroup::create_root_button_group
 		(
@@ -3060,7 +3132,7 @@ void EWindowMain::load_loot_filter_list()
 	//EString::loot_filter_name_list.clear();
 
 	auto			loot_filter_group = static_cast<EButtonGroupLootFilterList*>(EButtonGroup::existing_loot_filter_list);
-	EButtonGroup* part_with_list = loot_filter_group->part_with_list;
+	EButtonGroup*	part_with_list = loot_filter_group->part_with_list;
 
 	std::vector<EntityButton*> deleted_buttons;
 
@@ -3119,7 +3191,7 @@ void EWindowMain::load_loot_filter_list()
 				(loot_filter_name.length() >= 8)
 				&&
 				(EStringUtils::to_lower(loot_filter_name.substr(loot_filter_name.length() - 7, 7)) == ".filter")
-				)
+			)
 		{
 
 
@@ -3133,7 +3205,7 @@ void EWindowMain::load_loot_filter_list()
 					new ERegionGabarite(325.0f, 32.0f),
 					part_with_list,
 					&EDataActionCollection::action_select_this_loot_filter_from_list,
-					loot_filter_name
+					loot_filter_name.substr(0, loot_filter_name.length() - 7)
 				);
 				loot_filter_button->full_path = filter_path;
 
@@ -3148,6 +3220,69 @@ void EWindowMain::load_loot_filter_list()
 			//std::cout << "It filter! " << p.path().filename().u8string() << '\n' << '\n';
 
 			//ESound::custom_drop_sound.push_back(ESound::engine->addSoundSourceFromFile(custom_sound.c_str()));
+		}
+	}
+}
+
+void EWindowMain::load_custom_sound_list()
+{
+	EButtonGroupSoundList*		sound_group			= EButtonGroup::sound_list_group;
+	EButtonGroup*				part_with_list		= sound_group->part_with_list;
+
+	//EInputCore::logger_param("size of elements - part_with_list->button_list", part_with_list->button_list.size());
+
+
+
+	//for (int z = 0; z < (deleted_buttons.size()) - 1; z++ )
+	//{
+	//	std::cout << "---------------------------------------------------------------------------------------------------" << std::endl;
+
+	//	EInputCore::logger_param("try delete " , std::to_string(z) + "/" + std::to_string(deleted_buttons.size()));
+	//	//delete deleted_buttons[i];
+	//	EInputCore::logger_simple_success("deleted");
+	//}
+
+
+
+
+	//part_with_list->button_list.clear();
+
+	//part_with_list->button_list.shrink_to_fit();
+
+	for (auto& p : std::experimental::filesystem::directory_iterator(path_of_exile_folder))
+	{
+		std::string sound_path = p.path().u8string();
+
+		std::string sound_name = p.path().filename().u8string();
+
+		//EInputCore::logger_param("detect file:", filter_path);
+		//writer << custom_sound << endl;;
+
+
+
+
+		if
+		(
+			(sound_name.length() >= 8)
+			&&
+			(
+				(EStringUtils::to_lower(sound_name.substr(sound_name.length() - 4, 4)) == ".mp3")
+				||
+				(EStringUtils::to_lower(sound_name.substr(sound_name.length() - 4, 4)) == ".wav")
+			)
+		)
+		{
+			ENamedSound* named_sound = new ENamedSound("data/sounds/" + sound_name);
+			ELocalisationText l_text;
+			l_text.base_name = sound_name;
+			l_text.localisations[NSW_localisation_EN] = sound_name;
+			l_text.localisations[NSW_localisation_RU] = sound_name;
+			
+			
+			//{
+			//	
+			//}
+
 		}
 	}
 }
@@ -5038,4 +5173,39 @@ EButtonGroupFilterBlockAsText* EButtonGroupFilterBlockAsText::create_filter_bloc
 	//_target_filter_block
 
 	return nullptr;
+}
+
+void EButtonGroupSoundList::refresh_sound_list()
+{
+
+	for (int i = 0; i < part_with_list->button_list.size(); i++)
+	{
+		EntityButton* but = part_with_list->button_list[i];
+
+		if (but != part_with_list->slider)
+		{
+
+			delete but;
+
+			part_with_list->button_list.erase(part_with_list->button_list.begin() + i);
+
+			i--;
+		}
+	}
+
+	for (ENamedSound* n_sound : *pointer_to_sound_list)
+	{
+		EntityButtonFilterSound* sound_button = new EntityButtonFilterSound();
+		sound_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(325.0f, 32.0f),
+			part_with_list,
+			nullptr,
+			n_sound->localisation_text.localisations[NSW_localisation_EN]
+		);
+
+		sound_button->full_path = n_sound->full_path;
+
+		part_with_list->button_list.push_back(sound_button);
+	}
 }

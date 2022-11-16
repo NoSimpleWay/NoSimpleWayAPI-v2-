@@ -12,11 +12,13 @@ EButtonGroup* EButtonGroup::catched_group_for_translation = nullptr;
 //EButtonGroup* EButtonGroup::focused_button_group;
 EButtonGroup* EButtonGroup::focused_button_group_with_slider = nullptr;
 
-EButtonGroup* EButtonGroup::data_entity_filter = nullptr;
-EButtonGroup* EButtonGroup::color_editor_group = nullptr;
-EButtonGroup* EButtonGroup::add_content_to_filter_block_group = nullptr;
-EButtonGroup* EButtonGroup::header_line = nullptr;
-EButtonGroup* EButtonGroup::existing_loot_filter_list = nullptr;
+EButtonGroup*			data_entity_filter = nullptr;
+EButtonGroup*			color_editor_group = nullptr;
+EButtonGroup*			add_content_to_filter_block_group = nullptr;
+EButtonGroup*			header_line = nullptr;
+EButtonGroup*			existing_loot_filter_list = nullptr;
+
+EButtonGroupSoundList*	sound_list_group = nullptr;
 
 std::vector<FreshCreatedGroup*> EButtonGroup::fresh_created_block_list;
 

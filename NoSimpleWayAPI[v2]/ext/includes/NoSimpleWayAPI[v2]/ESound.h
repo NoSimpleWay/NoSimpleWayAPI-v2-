@@ -6,6 +6,11 @@
 #endif
 /**/
 
+#ifndef _E_TEXT_CORE_ALREADY_LINKED_
+/**/#define _E_TEXT_CORE_ALREADY_LINKED_
+/**/#include "ETextCore.h"
+#endif
+
 
 class ESound{
 public:
@@ -13,4 +18,16 @@ public:
 
 	static irrklang::ISoundEngine* engine;
 	static irrklang::ISoundSource* shootSound;
+
+	
+};
+
+class ENamedSound
+{
+public:
+	ELocalisationText			localisation_text;
+	irrklang::ISoundSource*		sound;
+	std::string					full_path;
+
+	ENamedSound(std::string _path);
 };
