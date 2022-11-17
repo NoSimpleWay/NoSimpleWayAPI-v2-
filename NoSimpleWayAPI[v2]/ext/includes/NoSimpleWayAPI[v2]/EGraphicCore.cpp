@@ -35,7 +35,10 @@ namespace NS_EGraphicCore
 
 	float							current_offset_x					= 0.0f;
 	float							current_offset_y					= 0.0f;
+
+	float							stored_zoom							= 1.0f;
 	float							current_zoom						= 1.0f;
+
 
 	float							global_normal_multiplier			= 1.0f;
 
@@ -852,10 +855,18 @@ void NS_EGraphicCore::create_styles()
 	EGUIStyle* just_created_style	= nullptr;
 	EBrickStyle* jc_brick			= nullptr;
 
+	ELocalisationText l_text;
 	//lead and gold
 	if (true)
 	{
+		
+
 		just_created_style = new EGUIStyle("lead_and_gold");
+		l_text.base_name = "lead_and_gold";
+		l_text.localisations[NSW_localisation_EN] = "Lead and Gold";
+		l_text.localisations[NSW_localisation_RU] = "Свинец и Золото";
+		just_created_style->localisation_text = l_text;
+
 		//***********************************************************
 		//main gutton group
 		/*just_created_style->set_color_array(TextColorArray::WHITE,	0.9f,	0.85f,	0.6f,	1.0f);
@@ -952,6 +963,10 @@ void NS_EGraphicCore::create_styles()
 	if (true)
 	{
 		just_created_style = new EGUIStyle("dark_spruce");
+		l_text.base_name = "dark_spruce";
+		l_text.localisations[NSW_localisation_EN] = "Dark spruce";
+		l_text.localisations[NSW_localisation_RU] = "Тёмная ель";
+		just_created_style->localisation_text = l_text;
 		//***********************************************************
 		//main gutton group
 		just_created_style->set_color_multiplier(0.9f, 0.85f, 0.8f, 1.0f);
@@ -1031,6 +1046,10 @@ void NS_EGraphicCore::create_styles()
 	if (true)
 	{
 		just_created_style = new EGUIStyle("gray_minimalism");
+		l_text.base_name = "gray_minimalism";
+		l_text.localisations[NSW_localisation_EN] = "Strict gray";
+		l_text.localisations[NSW_localisation_RU] = "Строгий серый";
+		just_created_style->localisation_text = l_text;
 		//***********************************************************
 		//main gutton group
 		jc_brick = new EBrickStyle("Group_bg");
@@ -1099,6 +1118,10 @@ void NS_EGraphicCore::create_styles()
 			//###########################################################
 			//STONE CASTLE
 			just_created_style = new EGUIStyle("stone_castle");
+			l_text.base_name = "stone_castle";
+			l_text.localisations[NSW_localisation_EN] = "Stone castle";
+			l_text.localisations[NSW_localisation_RU] = "Каменный замок";
+			just_created_style->localisation_text = l_text;
 			//***********************************************************
 			//main gutton group
 			jc_brick = new EBrickStyle("Group_bg");
@@ -1167,6 +1190,10 @@ void NS_EGraphicCore::create_styles()
 			//###########################################################
 			//NEON VEIN
 			just_created_style = new EGUIStyle("neon_vein");
+			l_text.base_name = "neon_vein";
+			l_text.localisations[NSW_localisation_EN] = "Neon vein";
+			l_text.localisations[NSW_localisation_RU] = "Неоновая жила";
+			just_created_style->localisation_text = l_text;
 			//***********************************************************
 			//main gutton group
 			jc_brick = new EBrickStyle("Group_bg");
@@ -1233,11 +1260,15 @@ void NS_EGraphicCore::create_styles()
 
 
 		//modern
-		if (true)
+		if (false)
 		{
 			//###########################################################
 			//MODERN
 			just_created_style = new EGUIStyle("modern");
+			l_text.base_name = "modern";
+			l_text.localisations[NSW_localisation_EN] = "Modern";
+			l_text.localisations[NSW_localisation_RU] = "Модерн";
+			just_created_style->localisation_text = l_text;
 			//***********************************************************
 			//main gutton group
 			just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
@@ -1303,11 +1334,15 @@ void NS_EGraphicCore::create_styles()
 		}
 
 		//red velvet
-		if (true)
+		if (false)
 		{
 			//###########################################################
 			//MODERN
 			just_created_style = new EGUIStyle("red_velvet");
+			l_text.base_name = "red_velvet";
+			l_text.localisations[NSW_localisation_EN] = "Red velvet";
+			l_text.localisations[NSW_localisation_RU] = "Красный бархат";
+			just_created_style->localisation_text = l_text;
 			//***********************************************************
 			//main gutton group
 			//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
@@ -1380,6 +1415,10 @@ void NS_EGraphicCore::create_styles()
 			//###########################################################
 			//MODERN
 			just_created_style = new EGUIStyle("gasoline_stains");
+			l_text.base_name = "gasoline_stains";
+			l_text.localisations[NSW_localisation_EN] = "Gasoline stains";
+			l_text.localisations[NSW_localisation_RU] = "Пятная бензина";
+			just_created_style->localisation_text = l_text;
 			//***********************************************************
 			//main gutton group
 			//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
@@ -1451,6 +1490,10 @@ void NS_EGraphicCore::create_styles()
 			//###########################################################
 			//MODERN
 			just_created_style = new EGUIStyle("lines");
+			l_text.base_name = "lines";
+			l_text.localisations[NSW_localisation_EN] = "Lines";
+			l_text.localisations[NSW_localisation_RU] = "Линии";
+			just_created_style->localisation_text = l_text;
 			//***********************************************************
 			//main gutton group
 			//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
@@ -1516,12 +1559,91 @@ void NS_EGraphicCore::create_styles()
 			EGUIStyle::style_list.push_back(just_created_style);
 		}
 
+		//path of black
+		if (true)
+		{
+			//###########################################################
+			//MODERN
+			just_created_style = new EGUIStyle("path_of_black");
+			l_text.base_name = "pah_of_black";
+			l_text.localisations[NSW_localisation_EN] = "Path of Black";
+			l_text.localisations[NSW_localisation_RU] = "Чёрная дорога";
+			just_created_style->localisation_text = l_text;
+			//***********************************************************
+			//main gutton group
+			//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
+			just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
+
+			jc_brick = new EBrickStyle("Group_bg");
+			just_created_style->button_group_main = jc_brick;
+			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+			EBrickStyle::set_subdivisions(jc_brick, 2, 2);
+
+			//***********************************************************
+		//darken gutton group
+			jc_brick = new EBrickStyle("Root_group_bg");
+			just_created_style->button_group_darken = jc_brick;
+			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+			EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+			//***********************************************************
+			//slider bg
+			jc_brick = new EBrickStyle("Slider_bg");
+			just_created_style->slider_bg = jc_brick;
+			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+			//***********************************************************
+			//slider head inactive
+			jc_brick = new EBrickStyle("Slider_head_inactive");
+			just_created_style->slider_inactive = jc_brick;
+			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+			//***********************************************************
+			//slider head active
+			jc_brick = new EBrickStyle("Slider_head_active");
+			just_created_style->slider_active = jc_brick;
+			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+			//***********************************************************
+			//button background
+			jc_brick = new EBrickStyle("Button_bg");
+			just_created_style->button_bg = jc_brick;
+			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+			EGUIStyle::style_list.push_back(just_created_style);
+		}
+
 		//basalt
 		if (true)
 		{
 			//###########################################################
 			//MODERN
 			just_created_style = new EGUIStyle("basalt");
+			l_text.base_name = "basalt";
+			l_text.localisations[NSW_localisation_EN] = "Basalt";
+			l_text.localisations[NSW_localisation_RU] = "Базальт";
+			just_created_style->localisation_text = l_text;
 			//***********************************************************
 			//main gutton group
 			//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);

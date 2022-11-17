@@ -6,23 +6,23 @@
 
 std::vector<EWindow*> EWindow::window_list;
 
-EButtonGroup* EButtonGroup::focused_button_group = nullptr;
-EButtonGroup* EButtonGroup::catched_group_for_translation = nullptr;
+EButtonGroup*					EButtonGroup::focused_button_group = nullptr;
+EButtonGroup*					EButtonGroup::catched_group_for_translation = nullptr;
 
 //EButtonGroup* EButtonGroup::focused_button_group;
-EButtonGroup* EButtonGroup::focused_button_group_with_slider = nullptr;
+EButtonGroup*					EButtonGroup::focused_button_group_with_slider = nullptr;
 
-EButtonGroup*			data_entity_filter = nullptr;
-EButtonGroup*			color_editor_group = nullptr;
-EButtonGroup*			add_content_to_filter_block_group = nullptr;
-EButtonGroup*			header_line = nullptr;
-EButtonGroup*			existing_loot_filter_list = nullptr;
+EButtonGroup*					EButtonGroup::data_entity_filter = nullptr;
+EButtonGroup*					EButtonGroup::color_editor_group = nullptr;
+EButtonGroup*					EButtonGroup::add_content_to_filter_block_group = nullptr;
+EButtonGroup*					EButtonGroup::header_line = nullptr;
+EButtonGroup*					EButtonGroup::existing_loot_filter_list = nullptr;
 
-EButtonGroupSoundList*	sound_list_group = nullptr;
+EButtonGroupSoundList*			EButtonGroup::sound_list_group = nullptr;
 
-std::vector<FreshCreatedGroup*> EButtonGroup::fresh_created_block_list;
+std::vector<FreshCreatedGroup*>	EButtonGroup::fresh_created_block_list;
 
-constexpr float BUTTON_GROUP_Y_DISTANCE = 2.0f;
+constexpr float BUTTON_GROUP_Y_DISTANCE = 0.0f;
 
 
 
@@ -1155,7 +1155,7 @@ void EButtonGroup::group_stretch_x()
 	{
 
 
-		target_size = region_gabarite->size_x - border_left - border_right - (group_list.size() - 1) * 1.0f - shrink_size;
+		target_size = region_gabarite->size_x - border_left - border_right - (group_list.size() - 1) * 0.0f - shrink_size;
 		target_size -= slider_effect;
 
 		for (EButtonGroup* group : group_list)
@@ -1214,7 +1214,7 @@ void EButtonGroup::group_stretch_y()
 	if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 	{
 
-		target_size = max(region_gabarite->size_y, min_size_y) - border_bottom - border_up - (group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE - shrink_size - 1.0;
+		target_size = max(region_gabarite->size_y, min_size_y) - border_bottom - border_up - (group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE - shrink_size - 0.0;
 
 		for (EButtonGroup* group : group_list)
 		{
@@ -1235,18 +1235,19 @@ void EButtonGroup::group_stretch_y()
 	if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 	{
 
-		target_size = region_gabarite->size_y - border_bottom - border_up - shrink_size - 0.0f;
+		target_size = region_gabarite->size_y - border_bottom - border_up - shrink_size + 0.0f;
 		dynamic_elements_count = 1;
 	}
 
-	if (dynamic_elements_count > 0) { final_size = target_size / float(dynamic_elements_count); }
+	if (dynamic_elements_count > 0) { final_size = round(target_size / float(dynamic_elements_count)); }
+	//if (dynamic_elements_count == 1) { final_size = round(target_size + 1.0f); }
 
 	//final_size = 100.0f;
 	for (EButtonGroup* group : group_list)
 	{
 		if (group->stretch_y_by_parent_size)
 		{
-			group->region_gabarite->size_y = (max(final_size, group->min_size_y));
+			group->region_gabarite->size_y = round(max(final_size, group->min_size_y));
 			//group->region_gabarite->size_y = round(max(final_size, 0.0f));
 			//group->region_gabarite->size_y = round(final_size);
 		}

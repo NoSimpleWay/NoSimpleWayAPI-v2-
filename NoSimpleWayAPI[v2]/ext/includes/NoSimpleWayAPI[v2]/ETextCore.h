@@ -1,5 +1,27 @@
 #pragma once
 
+#ifndef _ELOCALISATION_ALREADY_LINKED_
+	#define _ELOCALISATION_ALREADY_LINKED_
+	
+	#include <string>
+	#define NSW_localisation_EN 0
+	#define NSW_localisation_RU 1
+	#define NSW_localisation_placeholder_2 2
+	#define NSW_localisation_placeholder_3 3
+	#define NSW_localisation_placeholder_4 4
+	#define NSW_localisation_placeholder_5 5
+	#define NSW_localisation_placeholder_6 6
+
+	constexpr unsigned int NSW_languages_count = 2;
+	class ELocalisationText
+	{
+	public:
+		ELocalisationText();
+		std::string base_name = "";
+		std::string localisations[NSW_languages_count] = { "" };
+	};
+#endif
+
 /**/
 #ifndef _E_CLASS_LINKER_ALREADY_LINKED_
 #define _E_CLASS_LINKER_ALREADY_LINKED_
@@ -28,8 +50,12 @@
 
 #include <vector>
 
-
+#ifndef _E_TEXT_CORE_ALREADY_LINKED_
+#define _E_TEXT_CORE_ALREADY_LINKED_
 class EFontGlyph;
+
+
+
 
 enum AlignSide
 {
@@ -70,25 +96,11 @@ namespace NS_FONT_UTILS
 
 constexpr size_t EFont_array_dim = 65536u;
 
-#define NSW_localisation_EN 0
-#define NSW_localisation_RU 1
-#define NSW_localisation_placeholder_2 2
-#define NSW_localisation_placeholder_3 3
-#define NSW_localisation_placeholder_4 4
-#define NSW_localisation_placeholder_5 5
-#define NSW_localisation_placeholder_6 6
 
-constexpr unsigned int NSW_languages_count = 2;
 //0 - EN
 //1 - RU
 
-class ELocalisationText
-{
-public:
-	ELocalisationText();
-	std::string base_name = "";
-	std::string localisations[NSW_languages_count] = {""};
-};
+
 
 class EFont
 {
@@ -287,4 +299,4 @@ public:
 
 };
 
-
+#endif

@@ -1,7 +1,9 @@
-#ifndef _E_TEXT_CORE_ALREADY_LINKED_
-/**/#define _E_TEXT_CORE_ALREADY_LINKED_
+//#ifndef _E_TEXT_CORE_ALREADY_LINKED_
+///**/#define _E_TEXT_CORE_ALREADY_LINKED_
+///**/#include "ETextCore.h"
+
 /**/#include "ETextCore.h"
-#endif
+
 
 namespace NS_FONT_UTILS
 {

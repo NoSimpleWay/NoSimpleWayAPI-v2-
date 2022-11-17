@@ -1,6 +1,8 @@
 #pragma once
 //#define STB_IMAGE_IMPLEMENTATION
 
+/**/#include "ETextCore.h"
+
 //#define STB_IMAGE_IMPLEMENTATION
 /**/#include <stb_image.h>
 
@@ -42,10 +44,12 @@
 
 
 /////// /////// /////// /////// /////// /////// ///////
-#ifndef _E_TEXT_CORE_ALREADY_LINKED_
-/**/#define _E_TEXT_CORE_ALREADY_LINKED_
-/**/#include "ETextCore.h"
-#endif
+//#ifndef _E_TEXT_CORE_ALREADY_LINKED_
+///**/#define _E_TEXT_CORE_ALREADY_LINKED_
+///**/#include "ETextCore.h"
+/// 
+
+
 /////// /////// /////// /////// /////// /////// ///////
 
 /**/
@@ -187,6 +191,8 @@ namespace NS_EGraphicCore
 
 	extern float current_offset_x;
 	extern float current_offset_y;
+
+	extern float stored_zoom;
 	extern float current_zoom;
 
 	extern void set_active_color(const EColor_4(&_color)[4]);

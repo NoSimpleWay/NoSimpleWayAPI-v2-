@@ -2,6 +2,7 @@
 
 #define _CHECK_VECTOR_BOUND(v, id) (id < v.size()) && (id >= 0)
 
+#include "ETextCore.h"
 /**/
 #ifndef _E_CLASS_LINKER_ALREADY_LINKED_
 #define _E_CLASS_LINKER_ALREADY_LINKED_

@@ -361,6 +361,62 @@ void EDataActionCollection::action_add_new_filter_block(Entity* _entity, ECustom
 	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
 }
 
+void EDataActionCollection::action_open_custom_sound_list(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EButtonGroup::sound_list_group->is_active = true;
+	EButtonGroup::sound_list_group->move_to_foreground();
+
+	EButtonGroup::sound_list_group->pointer_to_sound_list = &EWindowMain::custom_sound_list;
+
+	EWindowMain::load_custom_sound_list();
+
+
+	EButtonGroup::sound_list_group->refresh_sound_list();
+	EButtonGroup::refresh_button_group(EButtonGroup::sound_list_group);
+}
+
+void EDataActionCollection::action_play_attached_sound(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if
+	(
+		(static_cast<EntityButtonFilterSound*>(_entity)->target_sound != nullptr)
+		&&
+		(static_cast<EntityButtonFilterSound*>(_entity)->target_sound->sound != nullptr)
+	)
+	{
+		ESound::engine->play2D(((EntityButtonFilterSound*)_entity)->target_sound->sound);
+	}
+	else
+	{
+		if (static_cast<EntityButtonFilterSound*>(_entity)->target_sound == nullptr)
+		{
+			EInputCore::logger_simple_error("target named sound is NULL!");
+		}
+		else
+		{
+			if (static_cast<EntityButtonFilterSound*>(_entity)->target_sound->sound == nullptr)
+			{
+				EInputCore::logger_simple_error("stored sound is NULL!");
+			}
+		}
+	}
+}
+
+void EDataActionCollection::action_invoke_button_action_in_sound_group(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonFilterSound* sound_button = static_cast<EntityButtonFilterSound*>(_entity);
+
+	if (sound_button->target_sound_group != nullptr)
+	{
+		if (sound_button->target_sound_group->action_on_select_for_button != nullptr)
+		{
+			sound_button->target_sound_group->action_on_select_for_button(sound_button, _custom_data, _d);
+		}
+
+		sound_button->target_sound_group->is_active = false;
+	}
+}
+
 void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	std::string str = "";
@@ -1408,7 +1464,7 @@ EWindowMain::EWindowMain()
 
 
 				//text area
-				jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Select this style");
+				jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Select <" + style->localisation_text.localisations[NSW_localisation_EN] + ">");
 				*jc_text_area->can_be_edited = false;
 				Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 
@@ -1876,7 +1932,7 @@ EWindowMain::EWindowMain()
 			EGUIStyle::active_style,
 			"Çóì"
 		);
-		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::current_zoom;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::stored_zoom;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 2.0f;
 		EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_force_resize_callback);
 		jc_button_group->button_list.push_back(jc_button);
@@ -2494,6 +2550,22 @@ EWindowMain::EWindowMain()
 			top_section,
 			&EDataActionCollection::action_set_button_group_as_active,
 			NS_EGraphicCore::load_from_textures_folder("button_world_parameters")
+		);
+		button_activator->target_group = EWindowMain::world_parameters;
+		top_section->button_list.push_back(button_activator);
+		//////////////////////////////////////////////////////
+
+
+
+		//////////////////////////////////////////////////////
+		button_activator = new EntityButtonButtonGroupActivator();
+
+		button_activator->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(45.0f, 45.0f),
+			top_section,
+			&EDataActionCollection::action_open_custom_sound_list,
+			NS_EGraphicCore::load_from_textures_folder("button_custom_sound")
 		);
 		button_activator->target_group = EWindowMain::world_parameters;
 		top_section->button_list.push_back(button_activator);
@@ -3226,40 +3298,17 @@ void EWindowMain::load_loot_filter_list()
 
 void EWindowMain::load_custom_sound_list()
 {
-	EButtonGroupSoundList*		sound_group			= EButtonGroup::sound_list_group;
-	EButtonGroup*				part_with_list		= sound_group->part_with_list;
+	for (int i = 0; i < EWindowMain::custom_sound_list.size(); i++)
+	{
+		delete EWindowMain::custom_sound_list[i];
+	}
 
-	//EInputCore::logger_param("size of elements - part_with_list->button_list", part_with_list->button_list.size());
-
-
-
-	//for (int z = 0; z < (deleted_buttons.size()) - 1; z++ )
-	//{
-	//	std::cout << "---------------------------------------------------------------------------------------------------" << std::endl;
-
-	//	EInputCore::logger_param("try delete " , std::to_string(z) + "/" + std::to_string(deleted_buttons.size()));
-	//	//delete deleted_buttons[i];
-	//	EInputCore::logger_simple_success("deleted");
-	//}
-
-
-
-
-	//part_with_list->button_list.clear();
-
-	//part_with_list->button_list.shrink_to_fit();
-
+	EWindowMain::custom_sound_list.clear();
 	for (auto& p : std::experimental::filesystem::directory_iterator(path_of_exile_folder))
 	{
 		std::string sound_path = p.path().u8string();
 
 		std::string sound_name = p.path().filename().u8string();
-
-		//EInputCore::logger_param("detect file:", filter_path);
-		//writer << custom_sound << endl;;
-
-
-
 
 		if
 		(
@@ -3272,17 +3321,14 @@ void EWindowMain::load_custom_sound_list()
 			)
 		)
 		{
-			ENamedSound* named_sound = new ENamedSound("data/sounds/" + sound_name);
+			ENamedSound* named_sound = new ENamedSound(path_of_exile_folder + "/" + sound_name);
 			ELocalisationText l_text;
 			l_text.base_name = sound_name;
 			l_text.localisations[NSW_localisation_EN] = sound_name;
 			l_text.localisations[NSW_localisation_RU] = sound_name;
-			
-			
-			//{
-			//	
-			//}
+			named_sound->localisation_text = l_text;
 
+			EWindowMain::custom_sound_list.push_back(named_sound);
 		}
 	}
 }
@@ -3362,7 +3408,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	//workspace bottom part
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	EButtonGroup* workspace_part = EButtonGroup::create_default_button_group(new ERegionGabarite(1200.0f, 150.0f), EGUIStyle::active_style)
+	EButtonGroup* workspace_part = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(1200.0f, 150.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
 	whole_filter_block_group->add_group(workspace_part);
@@ -3789,7 +3835,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		jc_button = EntityButton::create_named_color_button
 		(
-			new ERegionGabarite(120.0f, 25.0f),
+			new ERegionGabarite(120.0f, 22.0f),
 			cosmetic_segment,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
@@ -3815,7 +3861,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		jc_button = new EntityButton();
 		jc_button->make_default_bool_switcher_button
 		(
-			new ERegionGabarite(25.0f, 25.0f),
+			new ERegionGabarite(22.0f, 22.0f),
 			cosmetic_segment,
 			EDataActionCollection::action_switch_boolean_value,
 			NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
@@ -5193,19 +5239,30 @@ void EButtonGroupSoundList::refresh_sound_list()
 		}
 	}
 
-	for (ENamedSound* n_sound : *pointer_to_sound_list)
+	if (pointer_to_sound_list != nullptr)
 	{
-		EntityButtonFilterSound* sound_button = new EntityButtonFilterSound();
-		sound_button->make_default_button_with_unedible_text
-		(
-			new ERegionGabarite(325.0f, 32.0f),
-			part_with_list,
-			nullptr,
-			n_sound->localisation_text.localisations[NSW_localisation_EN]
-		);
+		for (ENamedSound* n_sound : *pointer_to_sound_list)
+		{
+			EntityButtonFilterSound* sound_button = new EntityButtonFilterSound();
+			sound_button->make_default_button_with_unedible_text
+			(
+				new ERegionGabarite(325.0f, 32.0f),
+				part_with_list,
+				&EDataActionCollection::action_invoke_button_action_in_sound_group,
+				n_sound->localisation_text.localisations[NSW_localisation_EN]
+			);
 
-		sound_button->full_path = n_sound->full_path;
+			sound_button->full_path = n_sound->full_path;
+			sound_button->target_sound = n_sound;
+			sound_button->target_sound_group = EButtonGroup::sound_list_group;
 
-		part_with_list->button_list.push_back(sound_button);
+			Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
+
+			part_with_list->button_list.push_back(sound_button);
+		}
+	}
+	else
+	{
+		EInputCore::logger_simple_error("pointer to sound list is NULL!");
 	}
 }

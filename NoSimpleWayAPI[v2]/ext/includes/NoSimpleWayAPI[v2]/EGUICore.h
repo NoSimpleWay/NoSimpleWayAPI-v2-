@@ -1,4 +1,44 @@
 #pragma once
+#include <string>
+
+#include <vector>
+#include <NoSimpleWayAPI[v2]/ETextCore.h>
+class ELocalisationText;
+class EBrickStyle;
+class EGUIStyle
+{
+public:
+
+	static int number;
+
+	EBrickStyle* button_group_main = nullptr;
+	EBrickStyle* button_group_darken = nullptr;
+
+	EBrickStyle* slider_bg = nullptr;
+	EBrickStyle* button_bg = nullptr;
+
+	EBrickStyle* slider_inactive = nullptr;
+	EBrickStyle* slider_active = nullptr;
+
+	EBrickStyle* round_slider = nullptr;
+
+	std::string* folder = new std::string("lead_and_gold");
+	float		text_color_multiplier[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
+
+	//float text_color_array[16][4];
+
+	EGUIStyle();
+	EGUIStyle(std::string _folder);
+	~EGUIStyle();
+
+	static std::vector<EGUIStyle*> style_list;
+	static EGUIStyle* active_style;
+
+	ELocalisationText	localisation_text;
+
+	//void set_color_array(unsigned int _id, float _r, float _g, float _b, float _a);
+	void set_color_multiplier(float _r, float _g, float _b, float _a);
+};
 
 #ifndef _E_GRAPHIC_CORE_ALREADY_LINKED_
 /**/#define _E_GRAPHIC_CORE_ALREADY_LINKED_
@@ -12,14 +52,18 @@
 #endif
 /**/
 
-/**/
-#ifndef _E_CLASS_LINKER_ALREADY_LINKED_
-#define _E_CLASS_LINKER_ALREADY_LINKED_
-#include "EClassLinker.h"
-#endif
-/**/
 
-#include <vector>
+
+//#ifndef _E_TEXT_CORE_ALREADY_LINKED_
+///**/#define _E_TEXT_CORE_ALREADY_LINKED_
+///**/#include "ETextCore.h"
+//#endif
+
+
+
+
+
+
 
 enum ENUM_ButtonAutoAlign
 {
@@ -436,37 +480,3 @@ public:
 	static void apply_brick_parameters_to_button_group(EButtonGroup* _group, EBrickStyle* _brick);
 };
 
-
-
-class EGUIStyle
-{
-public:
-
-	static int number;
-
-	EBrickStyle* button_group_main = nullptr;
-	EBrickStyle* button_group_darken = nullptr;
-
-	EBrickStyle* slider_bg = nullptr;
-	EBrickStyle* button_bg = nullptr;
-
-	EBrickStyle* slider_inactive = nullptr;
-	EBrickStyle* slider_active = nullptr;
-
-	EBrickStyle* round_slider = nullptr;
-
-	std::string* folder = new std::string("lead_and_gold");
-	float			text_color_multiplier[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
-
-	//float text_color_array[16][4];
-
-	EGUIStyle();
-	EGUIStyle(std::string _folder);
-	~EGUIStyle();
-
-	static std::vector<EGUIStyle*> style_list;
-	static EGUIStyle* active_style;
-
-	//void set_color_array(unsigned int _id, float _r, float _g, float _b, float _a);
-	void set_color_multiplier(float _r, float _g, float _b, float _a);
-};

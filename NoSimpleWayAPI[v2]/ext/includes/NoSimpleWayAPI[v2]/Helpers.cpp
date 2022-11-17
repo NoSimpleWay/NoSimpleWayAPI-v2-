@@ -23,7 +23,7 @@ std::string Helper::float_to_string(float _f)
 
 std::string Helper::float_to_string_with_precision(float _f, float _precision)
 {
-	return float_to_string(round(_f * _precision) / _precision);
+	return float_to_string(lround(_f * _precision) / _precision);
 }
 
 

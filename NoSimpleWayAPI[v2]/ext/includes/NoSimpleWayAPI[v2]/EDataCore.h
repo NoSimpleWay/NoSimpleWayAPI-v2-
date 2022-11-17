@@ -7,10 +7,12 @@
 #endif
 /**/
 
-#ifndef _E_TEXT_CORE_ALREADY_LINKED_
-/**/#define _E_TEXT_CORE_ALREADY_LINKED_
-/**/#include "ETextCore.h"
-#endif
+//#ifndef _E_TEXT_CORE_ALREADY_LINKED_
+///**/#define _E_TEXT_CORE_ALREADY_LINKED_
+///**/
+//#endif
+
+#include "ETextCore.h"
 
 /**/
 #ifndef	_HELPERS_ALREADY_LINKED_

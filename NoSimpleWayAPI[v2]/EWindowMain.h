@@ -85,9 +85,10 @@ public:
 class EntityButtonFilterSound : public EntityButtonForFilterBlock
 {
 public:
-	irrklang::ISoundSource* target_sound;
-	irrklang::ISoundSource* target_sound;
+	ENamedSound*			 target_sound;
+	//irrklang::ISoundSource* target_sound;
 	std::string				full_path;
+	EButtonGroupSoundList*	target_sound_group;
 
 
 };
@@ -176,6 +177,8 @@ public:
 	EButtonGroupSoundList(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	std::vector<ENamedSound*>*	pointer_to_sound_list;
+
+	data_action_pointer			action_on_select_for_button;
 	//EntityButton
 	void refresh_sound_list();
 };
@@ -205,6 +208,9 @@ namespace EDataActionCollection
 	void action_import_filter_text_from_clipboard(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_add_text_as_item(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_add_new_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_custom_sound_list(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_play_attached_sound(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_invoke_button_action_in_sound_group(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
