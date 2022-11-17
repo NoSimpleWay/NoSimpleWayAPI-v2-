@@ -3321,7 +3321,7 @@ void EWindowMain::load_custom_sound_list()
 			)
 		)
 		{
-			ENamedSound* named_sound = new ENamedSound(path_of_exile_folder + "/" + sound_name);
+			ENamedSound* named_sound = new ENamedSound(path_of_exile_folder + sound_name);
 			ELocalisationText l_text;
 			l_text.base_name = sound_name;
 			l_text.localisations[NSW_localisation_EN] = sound_name;
