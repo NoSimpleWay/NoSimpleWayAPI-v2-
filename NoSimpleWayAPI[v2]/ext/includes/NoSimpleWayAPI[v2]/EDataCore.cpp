@@ -380,12 +380,18 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 				(EButtonGroup::focused_button_group == ((EntityButton*)_entity)->parent_button_group)
 				&&
 				(((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
-				)
-				||
-				(((EntityButton*)_entity)->button_gabarite->have_phantom_translation)
-				||
-				(((EntityButton*)_entity)->have_phantom_draw)
 			)
+			&&
+			(
+				(static_cast<EntityButton*>(_entity)->suppressor == nullptr)
+				||
+				(*static_cast<EntityButton*>(_entity)->suppressor)
+			)
+			||
+			(((EntityButton*)_entity)->button_gabarite->have_phantom_translation)
+			||
+			(((EntityButton*)_entity)->have_phantom_draw)
+		)
 	{
 		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.15f);
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
@@ -2341,7 +2347,7 @@ bool ERegionGabarite::overlapped_by_mouse()
 			(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= world_position_y)
 			&&
 			(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= world_position_y + size_y)
-			)
+		)
 	{
 		return true;
 	}

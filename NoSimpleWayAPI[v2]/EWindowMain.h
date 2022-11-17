@@ -153,6 +153,16 @@ public:
 
 	EntityButtonVariantRouter*		button_show_hide;
 
+
+	EntityButtonFilterSound*		pointer_to_custom_sound_button;
+	bool							custom_sound_suppressor_bool;
+
+	EntityButtonFilterSound*		pointer_to_game_sound_button;
+	bool							game_sound_suppressor_bool;
+
+	EntityButtonVariantRouter*		pointer_to_minimap_icon_color_router;
+	bool							minimap_icon_color_suppressor_bool;
+
 	//EButtonGroupFilterBlockAsText*	target_filter_block_as_text_group;
 
 	void update(float _d);

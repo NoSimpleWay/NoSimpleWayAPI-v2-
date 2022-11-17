@@ -3452,7 +3452,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	(
 		new ERegionGabarite(120.0f, 29.0f),
 		control_part,
-		EDataActionCollection::action_rotate_variant,
+		&EDataActionCollection::action_rotate_variant,
 		nullptr
 	);
 
@@ -3727,6 +3727,9 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	left_control_section->button_list.push_back(jc_button);
 	////////////////
 
+
+
+
 	///////////		BUTTON GEN		///////////
 	//generate filter block text
 	jc_button = new EntityButton();
@@ -3744,6 +3747,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	left_control_section->button_list.push_back(jc_button);
 	////////////////
+
+
 
 
 	//left side for equational parameters
@@ -3779,16 +3784,344 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 
 	workspace_part->add_group(listed_condition_segment);
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
 	//secondary cosmetic segment
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
-		secondary_cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(165.0f, 160.0f), EGUIStyle::active_style)
-		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
+		secondary_cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(200.0f, 160.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 
-	workspace_part->add_group(secondary_cosmetic_segment);
+		workspace_part->add_group(secondary_cosmetic_segment);
+
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup*
+		secondary_bottom_section_for_sounds
+		= EButtonGroup::create_button_group_without_bg(new ERegionGabarite(200.0f, 160.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+		secondary_cosmetic_segment->add_group(secondary_bottom_section_for_sounds);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup*
+		secondary_mid_section_for_minimap_icon
+		= EButtonGroup::create_button_group_without_bg(new ERegionGabarite(200.0f, 160.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+		secondary_cosmetic_segment->add_group(secondary_mid_section_for_minimap_icon);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup*
+		secondary_top_section_for_ray
+		= EButtonGroup::create_button_group_without_bg(new ERegionGabarite(200.0f, 160.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+		secondary_cosmetic_segment->add_group(secondary_top_section_for_ray);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	//whole_block_data->pointer_to_preview_box_segment = filter_preview_box_segment;
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+	/*			SECONDARY COSMETIC SEGMENT BUTTONS [sounds, ray, minimap icon]			*/		
+
+		//USER SOUND
+		// 
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EntityButtonFilterSound*
+		sound_button = new EntityButtonFilterSound();
+		sound_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(150.0f, 22.0f),
+			secondary_bottom_section_for_sounds,
+			nullptr,
+			"User sound"
+		);
+		sound_button->suppressor = &whole_filter_block_group->custom_sound_suppressor_bool;
+		whole_filter_block_group->pointer_to_custom_sound_button = sound_button;
+		secondary_bottom_section_for_sounds->button_list.push_back(sound_button);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		//	switcher
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_button = new EntityButton();
+		jc_button->make_default_bool_switcher_button
+		(
+			new ERegionGabarite(22.0f, 22.0f),
+			secondary_bottom_section_for_sounds,
+			EDataActionCollection::action_switch_boolean_value,
+			NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
+			NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
+			&whole_filter_block_group->custom_sound_suppressor_bool
+		);
+		secondary_bottom_section_for_sounds->button_list.push_back(jc_button);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+		//INGAME SOUND
+		//	text
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		sound_button = new EntityButtonFilterSound();
+		sound_button->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(150.0f, 22.0f),
+			secondary_bottom_section_for_sounds,
+			nullptr,
+			"Game sound"
+		);
+		sound_button->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
+
+		secondary_bottom_section_for_sounds->button_list.push_back(sound_button);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		//	switcher
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_button = new EntityButton();
+		jc_button->make_default_bool_switcher_button
+		(
+			new ERegionGabarite(22.0f, 22.0f),
+			secondary_bottom_section_for_sounds,
+			EDataActionCollection::action_switch_boolean_value,
+			NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
+			NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
+			&whole_filter_block_group->game_sound_suppressor_bool
+		);
+		secondary_bottom_section_for_sounds->button_list.push_back(jc_button);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+		//INGAME SOUND
+		//	text
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//jc_button = new EntityButtonFilterSound();
+		button_variant_router = new EntityButtonVariantRouter();
+		button_variant_router->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(150.0f, 22.0f),
+			secondary_mid_section_for_minimap_icon,
+			&EDataActionCollection::action_rotate_variant,
+			nullptr
+		);
+		button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
+
+		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], "|?|");
+		button_variant_router->pointer_to_text_area = jc_text_area;
+
+		*jc_text_area->can_be_edited = false;
+		Entity::add_text_area_to_last_clickable_region(button_variant_router, jc_text_area);
+
+		button_variant_router->suppressor = &whole_filter_block_group->minimap_icon_color_suppressor_bool;
+		whole_filter_block_group->pointer_to_minimap_icon_color_router = button_variant_router;
+
+
+		//routers
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			router_variant = new RouterVariant();
+			local_text = new ELocalisationText();
+
+			local_text->base_name = "Red";
+			local_text->localisations[NSW_localisation_EN] = "Red";
+			local_text->localisations[NSW_localisation_RU] = "Красный";
+			router_variant->localisation = local_text;
+
+			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color->set_color_RGBA(1.0f, 0.4f, 0.25f, 1.0f);
+
+			button_variant_router->router_variant_list.push_back(*router_variant);
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			router_variant = new RouterVariant();
+			local_text = new ELocalisationText();
+
+			local_text->base_name = "Green";
+			local_text->localisations[NSW_localisation_EN] = "Green";
+			local_text->localisations[NSW_localisation_RU] = "Зелёный";
+			router_variant->localisation = local_text;
+
+			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color->set_color_RGBA(0.25f, 1.0f, 0.4f, 1.0f);
+
+			button_variant_router->router_variant_list.push_back(*router_variant);
+			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			router_variant = new RouterVariant();
+			local_text = new ELocalisationText();
+
+			local_text->base_name = "Blue";
+			local_text->localisations[NSW_localisation_EN] = "Blue";
+			local_text->localisations[NSW_localisation_RU] = "Синий";
+			router_variant->localisation = local_text;
+
+			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color->set_color_RGBA(0.25f, 0.4f, 1.0f, 1.0f);
+
+			button_variant_router->router_variant_list.push_back(*router_variant);
+			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			router_variant = new RouterVariant();
+			local_text = new ELocalisationText();
+
+			local_text->base_name = "Brown";
+			local_text->localisations[NSW_localisation_EN] = "Brown";
+			local_text->localisations[NSW_localisation_RU] = "Коричневый";
+			router_variant->localisation = local_text;
+
+			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color->set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
+
+			button_variant_router->router_variant_list.push_back(*router_variant);
+			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			router_variant = new RouterVariant();
+			local_text = new ELocalisationText();
+
+			local_text->base_name = "White";
+			local_text->localisations[NSW_localisation_EN] = "White";
+			local_text->localisations[NSW_localisation_RU] = "Белый";
+			router_variant->localisation = local_text;
+
+			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color->set_color_RGBA(1.0f, 1.0f, 1.0f, 1.0f);
+
+			button_variant_router->router_variant_list.push_back(*router_variant);
+			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			router_variant = new RouterVariant();
+			local_text = new ELocalisationText();
+
+			local_text->base_name = "Yellow";
+			local_text->localisations[NSW_localisation_EN] = "Yellow";
+			local_text->localisations[NSW_localisation_RU] = "Жёлтый";
+			router_variant->localisation = local_text;
+
+			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color->set_color_RGBA(1.0f, 1.0f, 0.25f, 1.0f);
+
+			button_variant_router->router_variant_list.push_back(*router_variant);
+			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			router_variant = new RouterVariant();
+			local_text = new ELocalisationText();
+
+			local_text->base_name = "Cyan";
+			local_text->localisations[NSW_localisation_EN] = "Cyan";
+			local_text->localisations[NSW_localisation_RU] = "Голубой";
+			router_variant->localisation = local_text;
+
+			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color->set_color_RGBA(0.25f, 0.8f, 1.0f, 1.0f);
+
+			button_variant_router->router_variant_list.push_back(*router_variant);
+			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			router_variant = new RouterVariant();
+			local_text = new ELocalisationText();
+
+			local_text->base_name = "Grey";
+			local_text->localisations[NSW_localisation_EN] = "Grey";
+			local_text->localisations[NSW_localisation_RU] = "Серый";
+			router_variant->localisation = local_text;
+
+			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color->set_color_RGBA(0.55f, 0.55f, 0.55f, 1.0f);
+
+			button_variant_router->router_variant_list.push_back(*router_variant);
+			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			router_variant = new RouterVariant();
+			local_text = new ELocalisationText();
+
+			local_text->base_name = "Orange";
+			local_text->localisations[NSW_localisation_EN] = "Orange";
+			local_text->localisations[NSW_localisation_RU] = "Оранжевый";
+			router_variant->localisation = local_text;
+
+			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color->set_color_RGBA(1.0f, 0.65f, 0.1f, 1.0f);
+
+			button_variant_router->router_variant_list.push_back(*router_variant);
+			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			router_variant = new RouterVariant();
+			local_text = new ELocalisationText();
+
+			local_text->base_name = "Pink";
+			local_text->localisations[NSW_localisation_EN] = "Pink";
+			local_text->localisations[NSW_localisation_RU] = "Розовый";
+			router_variant->localisation = local_text;
+
+			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color->set_color_RGBA(1.0f, 0.5f, 1.0f, 1.0f);
+
+			button_variant_router->router_variant_list.push_back(*router_variant);
+			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			router_variant = new RouterVariant();
+			local_text = new ELocalisationText();
+
+			local_text->base_name = "Purple";
+			local_text->localisations[NSW_localisation_EN] = "Purple";
+			local_text->localisations[NSW_localisation_RU] = "Фиолетовый";
+			router_variant->localisation = local_text;
+
+			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color->set_color_RGBA(0.8f, 0.1f, 0.9f, 1.0f);
+
+			button_variant_router->router_variant_list.push_back(*router_variant);
+			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			button_variant_router->select_variant(0);
+
+
+		secondary_mid_section_for_minimap_icon->button_list.push_back(button_variant_router);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		//	switcher
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		jc_button = new EntityButton();
+		jc_button->make_default_bool_switcher_button
+		(
+			new ERegionGabarite(22.0f, 22.0f),
+			secondary_mid_section_for_minimap_icon,
+			EDataActionCollection::action_switch_boolean_value,
+			NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
+			NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
+			&whole_filter_block_group->minimap_icon_color_suppressor_bool
+		);
+		secondary_mid_section_for_minimap_icon->button_list.push_back(jc_button);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	/*=========================================================================*/
 
 
 
@@ -3845,7 +4178,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			ColorButtonMode::CBM_OPEN_WINDOW
 		);
 		Entity::get_last_text_area(jc_button)->localisation_text = ltext[clr];
-
+		jc_button->suppressor = &whole_filter_block_group->color_check[clr];
 
 		whole_filter_block_group->pointer_to_HRA_color[clr] = &((EDataContainer_Button_StoreColor*)(EntityButton::get_last_custom_data(jc_button)->data_container))->stored_color;
 
@@ -3886,6 +4219,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		EGUIStyle::active_style,
 		"Font size"
 	);
+	jc_button->suppressor = &whole_filter_block_group->text_size_bool;
 
 	ETextArea*
 		last_text_area = Entity::get_last_text_area(jc_button);
@@ -5110,7 +5444,6 @@ void EButtonGroupTopControlSection::draw()
 		region_gabarite->size_y * font_size_rescale,
 
 		example_text_bg
-
 	);
 
 

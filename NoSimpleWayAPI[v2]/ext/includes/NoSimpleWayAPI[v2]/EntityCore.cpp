@@ -1211,6 +1211,41 @@ void EntityButton::add_description(std::string _text)
 	custom_data_list.push_back(jc_data);
 }
 
+void EntityButton::draw()
+{
+	Entity::draw();
+
+	if ((suppressor != nullptr) && (!*suppressor))
+	{
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GRAY, 0.85f);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			//x pos
+			button_gabarite->world_position_x,
+
+			//y pos
+			button_gabarite->world_position_y,
+
+			button_gabarite->size_x,
+			button_gabarite->size_y,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+	}
+}
+
+void EntityButton::update(float _d)
+{
+	//if ((suppressor == nullptr) || (*suppressor))
+	//{
+		Entity::update(_d);
+	//}
+}
+
 EntityButton::EntityButton()
 {
 	if (debug_deleting) EInputCore::logger_simple_info("<Entity Button created>");

@@ -64,7 +64,7 @@ public:
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 	std::vector<ESpriteLayer*> sprite_layer_list;
 
-	void draw();
+	virtual void draw();
 	void draw_second_pass();
 
 	void generate_vertex_buffer_for_all_sprite_layers();
@@ -81,7 +81,7 @@ public:
 	void translate_sprite_layer(float _x, float _y, float _z, bool _move_locals);
 	void translate_custom_data(float _x, float _y, float _z, bool _move_locals);
 
-	void update(float _d);
+	virtual void update(float _d);
 	Entity();
 	virtual ~Entity();
 
@@ -275,6 +275,9 @@ public:
 	void add_description(std::string _text);
 	EDataEntity* pointer_to_data_entity;
 
+	void draw();
+	void update(float _d);
+	bool* suppressor = nullptr;
 
 };
 

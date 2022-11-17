@@ -273,17 +273,18 @@ namespace NS_DefaultGabarites
 #define _COLOR_COLLECTION_
 namespace NS_EColorUtils
 {
-	const EColor_4 COLOR_WHITE[4]	{ 1.0f,	1.0f,	1.0f,	1.0f };
-	const EColor_4 COLOR_BLACK[4]	{ 0.0f,	0.0f,	0.0f,	1.0f };
-	const EColor_4 COLOR_GRAY[4]	{ 0.5f,	0.5f,	0.5f,	1.0f };
+	const EColor_4 COLOR_WHITE[4]		{ 1.0f,		1.0f,	1.0f,	1.0f };
+	const EColor_4 COLOR_BLACK[4]		{ 0.0f,		0.0f,	0.0f,	1.0f };
+	const EColor_4 COLOR_GRAY[4]		{ 0.5f,		0.5f,	0.5f,	1.0f };
+	const EColor_4 COLOR_DARK_GRAY[4]	{ 0.25f,	0.25f,	0.25f,	1.0f };
 
-	const EColor_4 COLOR_RED[4]		{ 1.0f,	0.0f,	0.0f,	1.0f };
-	const EColor_4 COLOR_GREEN[4]	{ 0.0f,	1.0f,	0.0f,	1.0f };
-	const EColor_4 COLOR_BLUE[4]	{ 0.0f,	0.0f,	1.0f,	1.0f };
+	const EColor_4 COLOR_RED[4]			{ 1.0f,		0.0f,	0.0f,	1.0f };
+	const EColor_4 COLOR_GREEN[4]		{ 0.0f,		1.0f,	0.0f,	1.0f };
+	const EColor_4 COLOR_BLUE[4]		{ 0.0f,		0.0f,	1.0f,	1.0f };
 
-	const EColor_4 COLOR_YELLOW[4]	{ 1.0f,	1.0f,	0.0f,	1.0f };
-	const EColor_4 COLOR_PINK[4]	{ 1.0f,	0.0f,	1.0f,	1.0f };
-	const EColor_4 COLOR_CYAN[4]	{ 0.0f,	1.0f,	1.0f,	1.0f };
+	const EColor_4 COLOR_YELLOW[4]		{ 1.0f,		1.0f,	0.0f,	1.0f };
+	const EColor_4 COLOR_PINK[4]		{ 1.0f,		0.0f,	1.0f,	1.0f };
+	const EColor_4 COLOR_CYAN[4]		{ 0.0f,		1.0f,	1.0f,	1.0f };
 	
 
 	extern const EColor_4(&choose_from_two(const EColor_4(&_color1)[4], const EColor_4(&_color2)[4], bool _condition))[4];
