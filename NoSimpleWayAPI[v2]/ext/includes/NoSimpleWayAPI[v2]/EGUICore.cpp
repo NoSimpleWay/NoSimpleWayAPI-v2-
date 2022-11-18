@@ -294,7 +294,12 @@ void EButtonGroup::update(float _d)
 		EButtonGroup::change_group(this);
 	}
 
-	if (can_see_this_group())
+	if
+	(
+		(can_see_this_group())
+		&&
+		(is_active)
+	)
 	{
 
 		//need remove button
@@ -434,11 +439,13 @@ void EButtonGroup::draw()
 	//EInputCore::logger_simple_success("draw button group");
 	if
 		(
-			can_see_this_group()
+			(can_see_this_group())
+			&&
+			(is_active)
 			//(*region_gabarite->world_position_y <= *higher_culling_line_for_bg)
 			//&&
 			//(*region_gabarite->world_position_y + *region_gabarite->size_y >= *lower_culling_line_for_bg)
-			)
+		)
 	{
 		if (group_phantom_redraw)
 		{
@@ -882,8 +889,10 @@ void EButtonGroup::align_groups()
 
 
 
-
-		prev_group = group;
+		if (!group->disable_gabarite)
+		{
+			prev_group = group;
+		}
 
 		group->align_groups();
 
@@ -1159,6 +1168,7 @@ void EButtonGroup::group_stretch_x()
 		target_size -= slider_effect;
 
 		for (EButtonGroup* group : group_list)
+		if (!group->disable_gabarite)
 		{
 			if (group->stretch_x_by_parent_size)
 			{
@@ -1186,6 +1196,7 @@ void EButtonGroup::group_stretch_x()
 
 	//final_size = 100.0f;
 	for (EButtonGroup* group : group_list)
+	if (!group->disable_gabarite)
 	{
 		if ((group->stretch_x_by_parent_size) && (group->region_gabarite->size_x != final_size))
 		{
@@ -1217,6 +1228,7 @@ void EButtonGroup::group_stretch_y()
 		target_size = max(region_gabarite->size_y, min_size_y) - border_bottom - border_up - (group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE - shrink_size - 0.0;
 
 		for (EButtonGroup* group : group_list)
+		if (!group->disable_gabarite)
 		{
 			group->region_gabarite->size_y = max(group->region_gabarite->size_y, group->min_size_y);
 
@@ -1244,6 +1256,7 @@ void EButtonGroup::group_stretch_y()
 
 	//final_size = 100.0f;
 	for (EButtonGroup* group : group_list)
+	if (!group->disable_gabarite)
 	{
 		if (group->stretch_y_by_parent_size)
 		{
@@ -1386,18 +1399,20 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 
 void EButtonGroup::change_group(EButtonGroup* _group)
 {
-	_group->substretch_groups_y();
-	//_group->check_slider();
+	if (!_group->disable_gabarite)
+	{
+		_group->substretch_groups_y();
+		//_group->check_slider();
 
-	_group->group_stretch_y();
-	_group->check_slider();
-	_group->group_stretch_x();
+		_group->group_stretch_y();
+		_group->check_slider();
+		_group->group_stretch_x();
 
 
-	_group->align_groups();
-	EButtonGroup::calculate_culling_lines(_group);
-	_group->realign_all_buttons();
-
+		_group->align_groups();
+		EButtonGroup::calculate_culling_lines(_group);
+		_group->realign_all_buttons();
+	}
 	//prevert empty space
 	//if (_group->scroll_y < -(_group->highest_point_y_for_buttons - _group->region_gabarite->size_y))
 	//{
@@ -2156,8 +2171,8 @@ bool EButtonGroup::can_see_this_group()
 
 	if
 		(
-			(is_active)
-			&&
+			//(is_active)
+			//&&
 			(region_gabarite->world_position_x <= NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom)
 			&&
 			(region_gabarite->world_position_x + region_gabarite->size_x > 0.0f)
@@ -2906,3 +2921,91 @@ void EGUIStyle::set_color_multiplier(float _r, float _g, float _b, float _a)
 	text_color_array[_id][1] = _b;
 	text_color_array[_id][2] = _a;*/
 	//}
+
+EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_button_group(EWindow* _target_window, EntityButtonVariantRouter* _router_button)
+{
+	int elements_count = round(_router_button->router_variant_list.size() / 2.0f);
+
+	float y_size = min (elements_count * _router_button->button_gabarite->size_y + DISTANCE_BETWEEN_BUTTONS * (elements_count - 1) + 40.0f, 310.0f);
+	EInputCore::logger_simple_info("ZZZ");
+
+	//		MAIN GROUP
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EButtonGroupRouterVariant*
+	main_group = new EButtonGroupRouterVariant
+	(
+		new ERegionGabarite
+		(
+			_router_button->button_gabarite->world_position_x,
+			min(_router_button->button_gabarite->world_position_y, NS_EGraphicCore::SCREEN_HEIGHT - y_size - 30.0f),
+
+			_router_button->button_gabarite->size_x * 2.0f + 30.0f,
+			y_size
+		)
+	);
+
+	main_group->region_gabarite->offset_x -= main_group->region_gabarite->size_x + 5.0f + *EGUIStyle::active_style->button_group_darken->side_offset_left + *EGUIStyle::active_style->button_group_darken->side_offset_right;
+
+	main_group->init_button_group(EGUIStyle::active_style, true, true, false);
+	main_group->root_group = main_group;
+	main_group->actions_on_close.push_back(&EDataActionCollection::action_delete_vertical_router_variants_group);
+	main_group->target_router_button = _router_button;
+
+
+	main_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_static_autosize);
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//_router_button->opened_router_group = main_group;
+
+
+	//		WORKSPACE GROUP
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EButtonGroup* workspace_group = main_group->add_close_group_and_return_workspace_group
+	(
+		new ERegionGabarite(1.0f, 20.0f),
+		EGUIStyle::active_style
+	);
+	workspace_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+	workspace_group->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	//		CREATE VARIANTS BUTTON
+	int id = 0;
+	for (RouterVariant rv : _router_button->router_variant_list)
+	{
+		EntityButtonVariantRouterSelector*
+		variant_button = new EntityButtonVariantRouterSelector();
+		variant_button->make_as_default_button_with_icon_and_text
+		(
+			new ERegionGabarite(_router_button->button_gabarite->size_x, _router_button->button_gabarite->size_y),
+			workspace_group,
+			&EDataActionCollection::action_select_rotate_variant_from_list,
+			rv.texture,
+			rv.localisation->localisations[NSW_localisation_EN]
+		);
+
+		variant_button->id = id;
+		variant_button->parent_router_group = main_group;
+
+		Entity::get_last_text_area(variant_button)->stored_color	= *rv.color;
+		Entity::get_last_text_area(variant_button)->color			= *rv.color;
+
+		workspace_group->button_list.push_back(variant_button);
+
+		id++;
+	}
+
+	_target_window->button_group_list.push_back(main_group);
+	EButtonGroup::refresh_button_group(main_group);
+
+
+
+
+	return main_group;
+}
+
+EButtonGroupRouterVariant::~EButtonGroupRouterVariant()
+{
+	target_router_button->opened_router_group = nullptr;
+}

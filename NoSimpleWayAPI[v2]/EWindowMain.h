@@ -93,6 +93,15 @@ public:
 
 };
 
+class EntityButtonVariantRouterForFilterBlock : public EntityButtonVariantRouter
+{
+public:
+	EButtonGroupFilterBlock* parent_filter_block;
+
+	~EntityButtonVariantRouterForFilterBlock();
+
+};
+
 
 
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
@@ -113,7 +122,7 @@ public:
 
 	EButtonGroupTopControlSection(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite){};
 
-	float box_size_x = 180.0f;
+	float box_size_x = 160.0f;
 
 	ETextureGabarite* example_text_texture[2] =
 	{ 
@@ -134,8 +143,18 @@ public:
 	EButtonGroup*					pointer_to_non_listed_segment;
 	EButtonGroup*					pointer_to_listed_segment;
 	EButtonGroup*					pointer_to_preview_box_segment;
-	EButtonGroup*					pointer_to_top_control_block;
+
+
+
 	EButtonGroup*					pointer_to_cosmetic_segment;
+	EButtonGroup*					pointer_to_sound_segment;
+	EButtonGroup*					pointer_to_minimap_segment;
+
+	EButtonGroup*					pointer_to_top_control_block;
+	EButtonGroup*					pointer_to_control_group_left_show_hide;
+	EButtonGroup*					pointer_to_control_group_mid_import;
+	EButtonGroup*					pointer_to_control_group_mid_versions;
+	EButtonGroup*					pointer_to_control_group_mid_show_hide_cosmetic;
 
 
 	//color section
@@ -177,7 +196,6 @@ class EButtonGroupFilterBlockAsText : public EButtonGroup
 	static EButtonGroupFilterBlockAsText* create_filter_block_as_text_group(EButtonGroupFilterBlock* _target_filter_block);
 };
 
-
 class EButtonGroupSoundList : public EButtonGroup
 {
 public:
@@ -192,7 +210,6 @@ public:
 	//EntityButton
 	void refresh_sound_list();
 };
-
 
 namespace EDataActionCollection
 {
@@ -221,6 +238,7 @@ namespace EDataActionCollection
 	void action_open_custom_sound_list(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_play_attached_sound(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_invoke_button_action_in_sound_group(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_show_hide_cosmetic_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 

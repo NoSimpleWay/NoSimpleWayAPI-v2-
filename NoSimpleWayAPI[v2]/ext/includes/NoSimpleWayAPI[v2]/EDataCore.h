@@ -551,6 +551,7 @@ namespace EDataActionCollection
 	void action_create_new_color						(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_rotate_variant							(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_rotate_variant_from_list			(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void action_active_filter_block						(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text
@@ -575,7 +576,8 @@ namespace EDataActionCollection
 	void action_draw_boolean_switcher(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_draw_stored_color_as_box(Entity* _entity, ECustomData* _custom_data, float _d);
 
-
+	//close
+	void action_delete_vertical_router_variants_group(EButtonGroup* _group);
 
 
 }

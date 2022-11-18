@@ -430,15 +430,20 @@ void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData
 	EButtonGroup* _group = ((EntityButton*)_entity)->parent_button_group;
 
 	if
-		(
-			(_group != nullptr)
-			&&
-			(_group->root_group != nullptr)
-			)
+	(
+		(_group != nullptr)
+		&&
+		(_group->root_group != nullptr)
+	)
 	{
 		_group->root_group->is_active = false;
 
 		EClickableArea::active_clickable_region = nullptr;
+
+		for (group_close_action aoc : _group->root_group->actions_on_close)
+		{
+			aoc(_group->root_group);
+		}
 
 		//for (ECustomData* dt:_group->region_gabarite
 		//if (EClickableArea::active_clickable_region == *(((EntityButton*)_entity)->parent_button_group)
@@ -1307,6 +1312,14 @@ void EDataActionCollection::action_draw_stored_color_as_box(Entity* _entity, ECu
 	}
 }
 
+void EDataActionCollection::action_delete_vertical_router_variants_group(EButtonGroup* _group)
+{
+	EButtonGroupRouterVariant* group_vertical_variant = static_cast<EButtonGroupRouterVariant*>(_group);
+
+	group_vertical_variant->need_remove = true;
+	group_vertical_variant->target_router_button->opened_router_group = nullptr;
+}
+
 void EDataActionCollection::action_transfer_pointer_to_color_data_container(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container)->target_data_container_with_color
@@ -1563,16 +1576,45 @@ void EDataActionCollection::action_rotate_variant(Entity* _entity, ECustomData* 
 {
 	EntityButtonVariantRouter* button_variant_router = (EntityButtonVariantRouter*)_entity;
 	
-	//select next variant
-	button_variant_router->selected_variant++;
-
-	//full cycle passed, reset to start
-	if (button_variant_router->selected_variant >= button_variant_router->router_variant_list.size())
+	if (button_variant_router->rotate_variant_mode == RotateVariantMode::SELECT_NEXT)
 	{
-		button_variant_router->selected_variant = 0;
-	}
+		//select next variant
+		button_variant_router->selected_variant++;
 
-	button_variant_router->select_variant(button_variant_router->selected_variant);
+		//full cycle passed, reset to start
+		if (button_variant_router->selected_variant >= button_variant_router->router_variant_list.size())
+		{
+			button_variant_router->selected_variant = 0;
+		}
+
+		button_variant_router->select_variant(button_variant_router->selected_variant);
+	}
+	else
+	if (button_variant_router->rotate_variant_mode == RotateVariantMode::OPEN_CHOOSE_WINDOW)
+	{
+		if (button_variant_router->opened_router_group == nullptr)
+		{
+			button_variant_router->opened_router_group = EButtonGroupRouterVariant::create_router_variant_button_group(button_variant_router->parent_button_group->root_group->parent_window, button_variant_router);
+		}
+	}
+}
+
+void EDataActionCollection::action_select_rotate_variant_from_list(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonVariantRouterSelector*
+	router_selector_button = static_cast<EntityButtonVariantRouterSelector*>(_entity);
+
+	EButtonGroupRouterVariant*
+	target_group = router_selector_button->parent_router_group;
+
+	EntityButtonVariantRouter*
+	target_button = target_group->target_router_button;
+
+
+
+	target_button->select_variant(router_selector_button->id);
+	target_group->need_remove = true;
+	target_group->is_active = false;
 }
 
 //void EDataActionCollection::action_active_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)

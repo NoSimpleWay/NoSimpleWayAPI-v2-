@@ -258,6 +258,16 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
+	void make_as_default_button_with_icon_and_text
+	(
+		ERegionGabarite*	_region_gabarite,
+		EButtonGroup*		_parent_group,
+		data_action_pointer	_dap,
+		ETextureGabarite*	_gabarite,
+		std::string&		_text	
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
+
 	void make_default_bool_switcher_button
 	(
 		ERegionGabarite* _region_gabarite,
@@ -294,6 +304,11 @@ public:
 	ETextureGabarite*			texture;
 };
 
+enum class RotateVariantMode
+{
+	SELECT_NEXT,
+	OPEN_CHOOSE_WINDOW
+};
 
 class EntityButtonVariantRouter : public EntityButton
 {
@@ -304,9 +319,13 @@ public:
 	ESpriteLayer*				layer_with_icon;
 	ETextArea*					pointer_to_text_area;
 
-	~EntityButtonVariantRouter();
+	virtual ~EntityButtonVariantRouter();
 
 	void select_variant(int _variant_id);
+
+	RotateVariantMode			rotate_variant_mode = RotateVariantMode::SELECT_NEXT;
+
+	EButtonGroupRouterVariant*	opened_router_group;
 
 };
 
@@ -314,6 +333,13 @@ class EntityButtonButtonGroupActivator : public EntityButton
 {
 public:
 	EButtonGroup* target_group;
+};
+
+class EntityButtonVariantRouterSelector : public EntityButton
+{
+public:
+	int							id = 0;
+	EButtonGroupRouterVariant*	parent_router_group;
 };
 
 class ECluster

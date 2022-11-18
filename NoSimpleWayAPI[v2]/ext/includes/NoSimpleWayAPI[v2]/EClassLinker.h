@@ -19,6 +19,7 @@ class EDataContainer;
 
 
 
+
 class Entity;
 class EntityPhysicalObject;
 class EntityButton;
@@ -67,3 +68,4 @@ class EntityButtonVariantRouter;
 class EButtonGroupFilterBlock;
 
 class EButtonGroupSoundList;
+class EButtonGroupRouterVariant;

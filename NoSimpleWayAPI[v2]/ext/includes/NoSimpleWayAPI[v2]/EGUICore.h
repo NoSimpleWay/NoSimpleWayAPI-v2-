@@ -187,6 +187,7 @@ typedef void (*group_draw_action)			(EButtonGroup*);
 typedef void (*group_update_action)			(EButtonGroup*);
 typedef void (*group_select_action)			(EButtonGroup*);
 typedef void (*group_window_resize_action)	(EButtonGroup*);
+typedef void (*group_close_action)			(EButtonGroup*);
 
 class FreshCreatedGroup
 {
@@ -370,6 +371,7 @@ public:
 	bool have_bg						= (true);
 	bool can_be_focused					= (true);
 	bool is_active						= (true);
+	bool disable_gabarite				= (false);
 
 	bool force_new_line					= (false);
 	bool parent_have_slider				= (false);
@@ -394,6 +396,7 @@ public:
 	std::vector<group_draw_action>				actions_on_draw;
 	std::vector<group_select_action>			actions_on_select_button;
 	std::vector<group_window_resize_action>		actions_on_resize_window;
+	std::vector<group_close_action>				actions_on_close;
 
 
 	//static fuck_you_leatherman
@@ -430,6 +433,20 @@ public:
 	ChildElementsAlignDirection child_align_direction = ChildElementsAlignDirection::BOTTOM_TO_TOP;
 };
 
+
+
+class EButtonGroupRouterVariant: public EButtonGroup
+{
+
+public:
+	EntityButtonVariantRouter* target_router_button = nullptr;
+
+	static EButtonGroupRouterVariant* create_router_variant_button_group(EWindow* _target_window, EntityButtonVariantRouter* _router_button);
+	
+	EButtonGroupRouterVariant(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	~EButtonGroupRouterVariant();
+};
 //class EButtonContainer
 //{
 //	ERegionGabarite* gabarite;

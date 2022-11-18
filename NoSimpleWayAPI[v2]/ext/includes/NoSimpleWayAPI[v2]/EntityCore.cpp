@@ -1094,6 +1094,69 @@ void EntityButton::make_as_default_button_with_icon(ERegionGabarite* _region_gab
 	);
 }
 
+void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite, std::string& _text)
+{
+	make_as_default_clickable_button(_region_gabarite, _parent_group, _dap);
+	
+	float min_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
+
+	if (_gabarite != nullptr)
+	{
+		int
+			max_size = max(*_gabarite->size_x_in_pixels, *_gabarite->size_y_in_pixels);
+		max_size = min(max_size, 1.0f);
+
+		float
+			resize_factor = max_size;
+		resize_factor = min(resize_factor, 1.0f);
+
+		float icon_size_x = round(*_gabarite->size_x_in_pixels * resize_factor);
+		float icon_size_y = round(*_gabarite->size_y_in_pixels * resize_factor);
+
+		float offset_x = (_region_gabarite->size_y - icon_size_x) / 2.0f;
+		float offset_y = (_region_gabarite->size_y - icon_size_y) / 2.0f;
+
+		sprite_layer_list.push_back
+		(
+			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+			(
+				_gabarite,
+
+				offset_x,
+				offset_y,
+				0.0f,
+
+				icon_size_x,
+				icon_size_y,
+				0.0f
+			)
+		);
+	}
+	ETextArea* jc_text_area;
+	if (_gabarite != nullptr)
+	{
+		jc_text_area = ETextArea::create_centered_to_left_text_area
+		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _text);
+
+		jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y;
+	}
+	else
+	{
+		jc_text_area = ETextArea::create_centered_text_area
+		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _text);
+
+		jc_text_area->offset_border[BorderSide::LEFT] = 4.0f;
+	}
+	
+
+	
+
+	jc_text_area->change_text(_text);
+
+	*jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
+}
+
 void EntityButton::make_default_bool_switcher_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite_on, ETextureGabarite* _gabarite_off, bool* _target_bool)
 {
 
@@ -1435,6 +1498,13 @@ void action_change_style_button(EntityButton* _but, EGUIStyle* _style)
 
 EntityButtonVariantRouter::~EntityButtonVariantRouter()
 {
+	if (opened_router_group != nullptr)
+	{
+		opened_router_group->need_remove = true;
+
+		opened_router_group = nullptr;
+		
+	}
 }
 
 void EntityButtonVariantRouter::select_variant(int _variant_id)
@@ -1469,8 +1539,8 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 				nullptr,
 				nullptr,
 
-				*brick_style->side_offset_left,
-				*brick_style->side_offset_bottom,
+				(button_gabarite->size_y - *router_variant_list[selected_variant].texture->size_x_in_pixels) / 2.0f,
+				(button_gabarite->size_y - *router_variant_list[selected_variant].texture->size_y_in_pixels) / 2.0f,
 				0.0f,
 
 				*router_variant_list[selected_variant].texture->size_x_in_pixels * resize_factor,
@@ -1478,7 +1548,7 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 				0.0f
 			);
 
-			pointer_to_text_area->offset_border[BorderSide::LEFT] = 30.0f;
+			pointer_to_text_area->offset_border[BorderSide::LEFT] = button_gabarite->size_y;
 		}
 		else
 		{
