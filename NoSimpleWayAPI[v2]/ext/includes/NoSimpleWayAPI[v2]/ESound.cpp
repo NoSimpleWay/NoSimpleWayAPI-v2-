@@ -21,3 +21,8 @@ ENamedSound::ENamedSound(std::string _path)
 	sound = ESound::engine->addSoundSourceFromFile(_path.c_str());
 	full_path = _path;
 }
+
+ENamedSound::~ENamedSound()
+{
+	//delete sound;
+}

@@ -34,4 +34,5 @@ public:
 	std::string					full_path;
 
 	ENamedSound(std::string _path);
+	~ENamedSound();
 };

@@ -180,6 +180,8 @@ public:
 	bool							game_sound_suppressor_bool;
 
 	EntityButtonVariantRouter*		pointer_to_minimap_icon_color_router;
+	EntityButtonVariantRouter*		pointer_to_minimap_icon_size_router;
+	EntityButtonVariantRouter*		pointer_to_minimap_icon_shape_router;
 	bool							minimap_icon_color_suppressor_bool;
 
 	//EButtonGroupFilterBlockAsText*	target_filter_block_as_text_group;

@@ -9,25 +9,25 @@ namespace NS_EGraphicCore
 {
 	int								SCREEN_WIDTH = 1620, SCREEN_HEIGHT = 880;
 	float							correction_x = 1.0f, correction_y = 1.0f;
-	Shader*							shader_texture_atlas_putter;
+	Shader* shader_texture_atlas_putter;
 
 	glm::mat4						matrix_transform_default;
 
-	ERenderBatcher*					default_batcher_for_texture_atlas;
-	ERenderBatcher*					default_batcher_for_drawing;
-	ERenderBatcher*					pbr_batcher;
-	ERenderBatcher*					test_batcher;
-	ERenderBatcher*					skydome_batcher;
+	ERenderBatcher* default_batcher_for_texture_atlas;
+	ERenderBatcher* default_batcher_for_drawing;
+	ERenderBatcher* pbr_batcher;
+	ERenderBatcher* test_batcher;
+	ERenderBatcher* skydome_batcher;
 
-	GLFWwindow*						main_window;
+	GLFWwindow* main_window;
 
 	unsigned int					texture[32];
 
-	ETextureAtlas*					default_texture_atlas;
-	ETextureAtlas*					skydome_texture_atlas[texture_skydome_levels];
+	ETextureAtlas* default_texture_atlas;
+	ETextureAtlas* skydome_texture_atlas[texture_skydome_levels];
 
-	unsigned char*					image_data;
-	unsigned char*					zalupa;
+	unsigned char* image_data;
+	unsigned char* zalupa;
 	int								texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
 	std::vector<ETextureGabarite*>	texture_gabarites_list;
 	float							delta_time;
@@ -64,6 +64,7 @@ namespace NS_EGraphicCore
 	//ETextureAtlas*					default_texture_atlas;
 
 	void processInput(GLFWwindow* window);
+
 
 	void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 	void recalculate_correction();
@@ -196,8 +197,8 @@ void ERenderBatcher::draw_call()
 	//if (get_shader() == nullptr) { EInputCore::logger_simple_error("you mad?"); }
 	if ((last_vertice_buffer_index > 0) && (batcher_shader != nullptr))
 	{
-		
-		
+
+
 		batcher_shader->use();
 		apply_transform();
 
@@ -211,7 +212,7 @@ void ERenderBatcher::draw_call()
 			glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
 			NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
 
-			
+
 
 
 
@@ -227,7 +228,7 @@ void ERenderBatcher::draw_call()
 				//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
 				//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 				//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
-				
+
 				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", i + 1);
 			}
 
@@ -248,11 +249,11 @@ void ERenderBatcher::draw_call()
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("scr_x", NS_EGraphicCore::SCREEN_WIDTH);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("scr_y", NS_EGraphicCore::SCREEN_HEIGHT);
 
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("time",NS_EGraphicCore::time_total);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("move_multiplier",NS_EGraphicCore::move_multiplier);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("time", NS_EGraphicCore::time_total);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("move_multiplier", NS_EGraphicCore::move_multiplier);
 
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("free_sky_light",NS_EGraphicCore::global_free_sky_light_multiplier);
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("reflection_multiplier",NS_EGraphicCore::global_reflection_multiplier);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("free_sky_light", NS_EGraphicCore::global_free_sky_light_multiplier);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("reflection_multiplier", NS_EGraphicCore::global_reflection_multiplier);
 
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[0]", 1.0f);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[1]", 0.2f);
@@ -472,7 +473,9 @@ ETextureAtlas::ETextureAtlas(int _size_x, int _size_y, int _color_depth, int _by
 	// now that we actually created the framebuffer and added all attachments we want to check if it is actually complete now
 
 	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
-	{std::cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!" << std::endl;}
+	{
+		std::cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!" << std::endl;
+	}
 
 	//glBindFramebuffer(GL_FRAMEBUFFER, 0);
 	//////////////////////////////////////
@@ -484,7 +487,9 @@ ETextureAtlas::ETextureAtlas(int _size_x, int _size_y, int _color_depth, int _by
 		free_space[i] = new bool[(int)(_size_y / 4.0f)];
 
 		for (auto j = 0; j < (int)(_size_y / 4.0f); ++j)
-		{free_space[i][j] = true;}
+		{
+			free_space[i][j] = true;
+		}
 	}
 }
 
@@ -514,7 +519,7 @@ void NS_EGraphicCore::switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas)
 	//glEnable(GL_BLEND);
 	//glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, GL_ONE_MINUS_DST_ALPHA, GL_ONE);
 	//glBlendEquation(GL_FUNC_ADD);
-		
+
 	//make_transform_from_size(NS_EGraphicCore::default_batcher_for_texture_atlas, _atlas->get_atlas_size_x(), _atlas->get_atlas_size_y());
 
 	glActiveTexture(GL_TEXTURE0);
@@ -606,7 +611,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	GLint max_tex_size;
 	glGetIntegerv(GL_MAX_TEXTURE_SIZE, &max_tex_size);
 
-	NS_EGraphicCore::default_texture_atlas = new ETextureAtlas(min(max_tex_size,8192), min(8192 / 2, max_tex_size));
+	NS_EGraphicCore::default_texture_atlas = new ETextureAtlas(min(max_tex_size, 8192), min(8192 / 2, max_tex_size));
 	NS_EGraphicCore::load_texture("data/textures/white_pixel.png", 0);
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::texture[0]);
@@ -684,10 +689,10 @@ void NS_EGraphicCore::initiate_graphic_core()
 	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 	recalculate_correction();
 
-	NS_DefaultGabarites::texture_gabarite_normal_map_placeholder		= NS_EGraphicCore::put_texture_to_atlas("data/textures/normal_map_placeholder.png", NS_EGraphicCore::default_texture_atlas);
-	NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder			= NS_EGraphicCore::put_texture_to_atlas("data/textures/gloss_map_placeholder.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_gabarite_normal_map_placeholder = NS_EGraphicCore::put_texture_to_atlas("data/textures/normal_map_placeholder.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder = NS_EGraphicCore::put_texture_to_atlas("data/textures/gloss_map_placeholder.png", NS_EGraphicCore::default_texture_atlas);
 
-	NS_DefaultGabarites::texture_gabarite_white_pixel					= NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_gabarite_white_pixel = NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
 
 	//NS_DefaultGabarites::texture_gabarite_gudron						= NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
 	//NS_DefaultGabarites::texture_rusted_bronze							= NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
@@ -697,21 +702,21 @@ void NS_EGraphicCore::initiate_graphic_core()
 	//NS_DefaultGabarites::texture_dark_spruce							= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
 	//NS_DefaultGabarites::texture_lapis_wood								= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
 
-	NS_DefaultGabarites::texture_gabarite_skydome						= NS_EGraphicCore::put_texture_to_atlas("data/textures/skydome.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_gabarite_skydome = NS_EGraphicCore::put_texture_to_atlas("data/textures/skydome.png", NS_EGraphicCore::default_texture_atlas);
 	//NS_DefaultGabarites::texture_slider_bg_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
-	
+
 	NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_NEAREST);
 
 	for (int i = 0; i < texture_skydome_levels; i++)
 	{
 		NS_EGraphicCore::skydome_texture_atlas[i]
-		=
-		new ETextureAtlas
-		(
-			max(1024 / (pow(2.0, i * 1)), 64)
-			,
-			max(1024 / (pow(2.0, i * 1)), 64)
-		);
+			=
+			new ETextureAtlas
+			(
+				max(1024 / (pow(2.0, i * 1)), 64)
+				,
+				max(1024 / (pow(2.0, i * 1)), 64)
+			);
 	}
 
 
@@ -743,21 +748,21 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 		glViewport(0, 0, skydome_texture_atlas[0]->get_atlas_size_x(), skydome_texture_atlas[0]->get_atlas_size_y());
 
-			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-			(
-				NS_EGraphicCore::skydome_batcher->vertex_buffer,
-				NS_EGraphicCore::skydome_batcher->last_vertice_buffer_index,
-				0.0f,
-				0.0f,
-				1.0f,
-				1.0f,
-				NS_DefaultGabarites::texture_gabarite_skydome
-			);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::skydome_batcher->vertex_buffer,
+			NS_EGraphicCore::skydome_batcher->last_vertice_buffer_index,
+			0.0f,
+			0.0f,
+			1.0f,
+			1.0f,
+			NS_DefaultGabarites::texture_gabarite_skydome
+		);
 
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 		NS_EGraphicCore::skydome_batcher->draw_call();
 	}
 
@@ -765,7 +770,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	float blur_table[texture_skydome_levels] = { 0.15f, 0.20f, 0.25f, 0.5f, 1.0f, 2.0f };
 	for (int i = 1; i < texture_skydome_levels; i++)
 	{
-		
+
 		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
 
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
@@ -785,25 +790,25 @@ void NS_EGraphicCore::initiate_graphic_core()
 		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * blur_table[i - 1]);
 		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * blur_table[i - 1]);
 
-		NS_EGraphicCore::skydome_batcher->set_transform_screen_size (1.0f,1.0f);
+		NS_EGraphicCore::skydome_batcher->set_transform_screen_size(1.0f, 1.0f);
 		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
 
 		glViewport(0, 0, skydome_texture_atlas[i]->get_atlas_size_x(), skydome_texture_atlas[i]->get_atlas_size_y());
 
-			NS_ERenderCollection::add_data_to_vertex_buffer_default
-			(
-				NS_EGraphicCore::skydome_batcher->vertex_buffer,
-				NS_EGraphicCore::skydome_batcher->last_vertice_buffer_index,
-				0.0f,
-				0.0f,
-				1.0f,
-				1.0f
-			);
+		NS_ERenderCollection::add_data_to_vertex_buffer_default
+		(
+			NS_EGraphicCore::skydome_batcher->vertex_buffer,
+			NS_EGraphicCore::skydome_batcher->last_vertice_buffer_index,
+			0.0f,
+			0.0f,
+			1.0f,
+			1.0f
+		);
 
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 		NS_EGraphicCore::skydome_batcher->draw_call();
 
 
@@ -851,15 +856,15 @@ void NS_EGraphicCore::initiate_graphic_core()
 void NS_EGraphicCore::create_styles()
 {
 	//*******************************
-	
-	EGUIStyle* just_created_style	= nullptr;
-	EBrickStyle* jc_brick			= nullptr;
+
+	EGUIStyle* just_created_style = nullptr;
+	EBrickStyle* jc_brick = nullptr;
 
 	ELocalisationText l_text;
 	//lead and gold
 	if (true)
 	{
-		
+
 
 		just_created_style = new EGUIStyle("lead_and_gold");
 		l_text.base_name = "lead_and_gold";
@@ -1111,603 +1116,603 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 		EGUIStyle::style_list.push_back(just_created_style);
 	}
-		
+
 	//stone
 	if (false)
-		{
-			//###########################################################
-			//STONE CASTLE
-			just_created_style = new EGUIStyle("stone_castle");
-			l_text.base_name = "stone_castle";
-			l_text.localisations[NSW_localisation_EN] = "Stone castle";
-			l_text.localisations[NSW_localisation_RU] = "Каменный замок";
-			just_created_style->localisation_text = l_text;
-			//***********************************************************
-			//main gutton group
-			jc_brick = new EBrickStyle("Group_bg");
-			just_created_style->button_group_main = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 2, 0);
-
-			//***********************************************************
-			//darken gutton group
-			jc_brick = new EBrickStyle("Root_group_bg");
-			just_created_style->button_group_darken = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 11.0f, 11.0f, 11.0f, 18.0f);
-			EBrickStyle::set_offset_size(jc_brick, 7.0f, 7.0f, 6.0f, 4.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 2, 2);
-
-			//***********************************************************
-			//slider bg
-			jc_brick = new EBrickStyle("Slider_bg");
-			just_created_style->slider_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider head inactive
-			jc_brick = new EBrickStyle("Slider_head_inactive");
-			just_created_style->slider_inactive = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider head active
-			jc_brick = new EBrickStyle("Slider_head_active");
-			just_created_style->slider_active = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//button background
-			jc_brick = new EBrickStyle("Button_bg");
-			just_created_style->button_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-			EGUIStyle::style_list.push_back(just_created_style);
-		}
-
-		//neon
-		if (false)
-		{
-			//###########################################################
-			//NEON VEIN
-			just_created_style = new EGUIStyle("neon_vein");
-			l_text.base_name = "neon_vein";
-			l_text.localisations[NSW_localisation_EN] = "Neon vein";
-			l_text.localisations[NSW_localisation_RU] = "Неоновая жила";
-			just_created_style->localisation_text = l_text;
-			//***********************************************************
-			//main gutton group
-			jc_brick = new EBrickStyle("Group_bg");
-			just_created_style->button_group_main = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
-			EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 3, 2);
-
-			//***********************************************************
-			//darken gutton group
-			jc_brick = new EBrickStyle("Root_group_bg");
-			just_created_style->button_group_darken = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
-			EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 3, 2);
-
-			//***********************************************************
-			//slider bg
-			jc_brick = new EBrickStyle("Slider_bg");
-			just_created_style->slider_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
-			EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider head inactive
-			jc_brick = new EBrickStyle("Slider_head_inactive");
-			just_created_style->slider_inactive = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider head active
-			jc_brick = new EBrickStyle("Slider_head_active");
-			just_created_style->slider_active = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//button background
-			jc_brick = new EBrickStyle("Button_bg");
-			just_created_style->button_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-			EGUIStyle::style_list.push_back(just_created_style);
-		}
-
-
-
-
-		//modern
-		if (false)
-		{
-			//###########################################################
-			//MODERN
-			just_created_style = new EGUIStyle("modern");
-			l_text.base_name = "modern";
-			l_text.localisations[NSW_localisation_EN] = "Modern";
-			l_text.localisations[NSW_localisation_RU] = "Модерн";
-			just_created_style->localisation_text = l_text;
-			//***********************************************************
-			//main gutton group
-			just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
-
-			jc_brick = new EBrickStyle("Group_bg");
-			just_created_style->button_group_main = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//darken gutton group
-			jc_brick = new EBrickStyle("Root_group_bg");
-			just_created_style->button_group_darken = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider bg
-			jc_brick = new EBrickStyle("Slider_bg");
-			just_created_style->slider_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 0.0f, 0.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 0.0f, 0.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider head inactive
-			jc_brick = new EBrickStyle("Slider_head_inactive");
-			just_created_style->slider_inactive = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider head active
-			jc_brick = new EBrickStyle("Slider_head_active");
-			just_created_style->slider_active = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//button background
-			jc_brick = new EBrickStyle("Button_bg");
-			just_created_style->button_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 5.0f, 5.0f, 6.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 6.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-			EGUIStyle::style_list.push_back(just_created_style);
-		}
-
-		//red velvet
-		if (false)
-		{
-			//###########################################################
-			//MODERN
-			just_created_style = new EGUIStyle("red_velvet");
-			l_text.base_name = "red_velvet";
-			l_text.localisations[NSW_localisation_EN] = "Red velvet";
-			l_text.localisations[NSW_localisation_RU] = "Красный бархат";
-			just_created_style->localisation_text = l_text;
-			//***********************************************************
-			//main gutton group
-			//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
-			just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
-
-			jc_brick = new EBrickStyle("Group_bg");
-			just_created_style->button_group_main = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
-			EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 2, 2);
-
-			//***********************************************************
-			//darken gutton group
-			jc_brick = new EBrickStyle("Root_group_bg");
-			just_created_style->button_group_darken = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider bg
-			jc_brick = new EBrickStyle("Slider_bg");
-			just_created_style->slider_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 3.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider head inactive
-			jc_brick = new EBrickStyle("Slider_head_inactive");
-			just_created_style->slider_inactive = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider head active
-			jc_brick = new EBrickStyle("Slider_head_active");
-			just_created_style->slider_active = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//button background
-			jc_brick = new EBrickStyle("Button_bg");
-			just_created_style->button_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 1, 1);
-			EGUIStyle::style_list.push_back(just_created_style);
-		}
-
-
-		//gasoline
-		if (false)
-		{
-			//###########################################################
-			//MODERN
-			just_created_style = new EGUIStyle("gasoline_stains");
-			l_text.base_name = "gasoline_stains";
-			l_text.localisations[NSW_localisation_EN] = "Gasoline stains";
-			l_text.localisations[NSW_localisation_RU] = "Пятная бензина";
-			just_created_style->localisation_text = l_text;
-			//***********************************************************
-			//main gutton group
-			//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
-			just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
-
-			jc_brick = new EBrickStyle("Group_bg");
-			just_created_style->button_group_main = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
-			EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 3, 3);
-
-			//***********************************************************
-			//darken gutton group
-			jc_brick = new EBrickStyle("Root_group_bg");
-			just_created_style->button_group_darken = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider bg
-			jc_brick = new EBrickStyle("Slider_bg");
-			just_created_style->slider_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 3.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider head inactive
-			jc_brick = new EBrickStyle("Slider_head_inactive");
-			just_created_style->slider_inactive = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//slider head active
-			jc_brick = new EBrickStyle("Slider_head_active");
-			just_created_style->slider_active = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-
-			//***********************************************************
-			//button background
-			jc_brick = new EBrickStyle("Button_bg");
-			just_created_style->button_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 1, 1);
-			EGUIStyle::style_list.push_back(just_created_style);
-		}
-		
-		//lines
-		if (false)
-		{
-			//###########################################################
-			//MODERN
-			just_created_style = new EGUIStyle("lines");
-			l_text.base_name = "lines";
-			l_text.localisations[NSW_localisation_EN] = "Lines";
-			l_text.localisations[NSW_localisation_RU] = "Линии";
-			just_created_style->localisation_text = l_text;
-			//***********************************************************
-			//main gutton group
-			//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
-			just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
-
-			jc_brick = new EBrickStyle("Group_bg");
-			just_created_style->button_group_main = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
-
-			EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 3, 3);
-
-			//***********************************************************
+	{
+		//###########################################################
+		//STONE CASTLE
+		just_created_style = new EGUIStyle("stone_castle");
+		l_text.base_name = "stone_castle";
+		l_text.localisations[NSW_localisation_EN] = "Stone castle";
+		l_text.localisations[NSW_localisation_RU] = "Каменный замок";
+		just_created_style->localisation_text = l_text;
+		//***********************************************************
+		//main gutton group
+		jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 2, 0);
+
+		//***********************************************************
 		//darken gutton group
-			jc_brick = new EBrickStyle("Root_group_bg");
-			just_created_style->button_group_darken = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 3, 3);
+		EBrickStyle::set_border_size(jc_brick, 11.0f, 11.0f, 11.0f, 18.0f);
+		EBrickStyle::set_offset_size(jc_brick, 7.0f, 7.0f, 6.0f, 4.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
 
-			//***********************************************************
-			//slider bg
-			jc_brick = new EBrickStyle("Slider_bg");
-			just_created_style->slider_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//slider bg
+		jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
-			EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-			//***********************************************************
-			//slider head inactive
-			jc_brick = new EBrickStyle("Slider_head_inactive");
-			just_created_style->slider_inactive = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//slider head inactive
+		jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-			//***********************************************************
-			//slider head active
-			jc_brick = new EBrickStyle("Slider_head_active");
-			just_created_style->slider_active = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//slider head active
+		jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-			//***********************************************************
-			//button background
-			jc_brick = new EBrickStyle("Button_bg");
-			just_created_style->button_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//button background
+		jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-			EGUIStyle::style_list.push_back(just_created_style);
-		}
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EGUIStyle::style_list.push_back(just_created_style);
+	}
 
-		//path of black
-		if (true)
-		{
-			//###########################################################
-			//MODERN
-			just_created_style = new EGUIStyle("path_of_black");
-			l_text.base_name = "pah_of_black";
-			l_text.localisations[NSW_localisation_EN] = "Path of Black";
-			l_text.localisations[NSW_localisation_RU] = "Чёрная дорога";
-			just_created_style->localisation_text = l_text;
-			//***********************************************************
-			//main gutton group
-			//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
-			just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
+	//neon
+	if (false)
+	{
+		//###########################################################
+		//NEON VEIN
+		just_created_style = new EGUIStyle("neon_vein");
+		l_text.base_name = "neon_vein";
+		l_text.localisations[NSW_localisation_EN] = "Neon vein";
+		l_text.localisations[NSW_localisation_RU] = "Неоновая жила";
+		just_created_style->localisation_text = l_text;
+		//***********************************************************
+		//main gutton group
+		jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			jc_brick = new EBrickStyle("Group_bg");
-			just_created_style->button_group_main = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
+		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 3, 2);
 
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 2, 2);
-
-			//***********************************************************
+		//***********************************************************
 		//darken gutton group
-			jc_brick = new EBrickStyle("Root_group_bg");
-			just_created_style->button_group_darken = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
+		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 3, 2);
 
-			//***********************************************************
-			//slider bg
-			jc_brick = new EBrickStyle("Slider_bg");
-			just_created_style->slider_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//slider bg
+		jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
+		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-			//***********************************************************
-			//slider head inactive
-			jc_brick = new EBrickStyle("Slider_head_inactive");
-			just_created_style->slider_inactive = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//slider head inactive
+		jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-			//***********************************************************
-			//slider head active
-			jc_brick = new EBrickStyle("Slider_head_active");
-			just_created_style->slider_active = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//slider head active
+		jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-			//***********************************************************
-			//button background
-			jc_brick = new EBrickStyle("Button_bg");
-			just_created_style->button_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//button background
+		jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-			EGUIStyle::style_list.push_back(just_created_style);
-		}
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EGUIStyle::style_list.push_back(just_created_style);
+	}
 
-		//basalt
-		if (true)
-		{
-			//###########################################################
-			//MODERN
-			just_created_style = new EGUIStyle("basalt");
-			l_text.base_name = "basalt";
-			l_text.localisations[NSW_localisation_EN] = "Basalt";
-			l_text.localisations[NSW_localisation_RU] = "Базальт";
-			just_created_style->localisation_text = l_text;
-			//***********************************************************
-			//main gutton group
-			//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
-			just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
 
-			jc_brick = new EBrickStyle("Group_bg");
-			just_created_style->button_group_main = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 2, 2);
 
-			//***********************************************************
+	//modern
+	if (false)
+	{
+		//###########################################################
+		//MODERN
+		just_created_style = new EGUIStyle("modern");
+		l_text.base_name = "modern";
+		l_text.localisations[NSW_localisation_EN] = "Modern";
+		l_text.localisations[NSW_localisation_RU] = "Модерн";
+		just_created_style->localisation_text = l_text;
+		//***********************************************************
+		//main gutton group
+		just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
+
+		jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
 		//darken gutton group
-			jc_brick = new EBrickStyle("Root_group_bg");
-			just_created_style->button_group_darken = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
-			EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 2, 2);
+		EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-			//***********************************************************
-			//slider bg
-			jc_brick = new EBrickStyle("Slider_bg");
-			just_created_style->slider_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//slider bg
+		jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
-			EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 0.0f, 0.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 0.0f, 0.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-			//***********************************************************
-			//slider head inactive
-			jc_brick = new EBrickStyle("Slider_head_inactive");
-			just_created_style->slider_inactive = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//slider head inactive
+		jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-			//***********************************************************
-			//slider head active
-			jc_brick = new EBrickStyle("Slider_head_active");
-			just_created_style->slider_active = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//slider head active
+		jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-			//***********************************************************
-			//button background
-			jc_brick = new EBrickStyle("Button_bg");
-			just_created_style->button_bg = jc_brick;
-			NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+		//***********************************************************
+		//button background
+		jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-			EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-			EBrickStyle::set_subdivisions(jc_brick, 0, 0);
-			EGUIStyle::style_list.push_back(just_created_style);
-		}
+		EBrickStyle::set_border_size(jc_brick, 5.0f, 5.0f, 6.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 6.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EGUIStyle::style_list.push_back(just_created_style);
+	}
+
+	//red velvet
+	if (false)
+	{
+		//###########################################################
+		//MODERN
+		just_created_style = new EGUIStyle("red_velvet");
+		l_text.base_name = "red_velvet";
+		l_text.localisations[NSW_localisation_EN] = "Red velvet";
+		l_text.localisations[NSW_localisation_RU] = "Красный бархат";
+		just_created_style->localisation_text = l_text;
+		//***********************************************************
+		//main gutton group
+		//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
+		just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
+
+		jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
+		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
+
+		//***********************************************************
+		//darken gutton group
+		jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider bg
+		jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 3.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head inactive
+		jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head active
+		jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//button background
+		jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 1, 1);
+		EGUIStyle::style_list.push_back(just_created_style);
+	}
+
+
+	//gasoline
+	if (false)
+	{
+		//###########################################################
+		//MODERN
+		just_created_style = new EGUIStyle("gasoline_stains");
+		l_text.base_name = "gasoline_stains";
+		l_text.localisations[NSW_localisation_EN] = "Gasoline stains";
+		l_text.localisations[NSW_localisation_RU] = "Пятная бензина";
+		just_created_style->localisation_text = l_text;
+		//***********************************************************
+		//main gutton group
+		//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
+		just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
+
+		jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 3, 3);
+
+		//***********************************************************
+		//darken gutton group
+		jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider bg
+		jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 3.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head inactive
+		jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head active
+		jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_offset_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//button background
+		jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 1, 1);
+		EGUIStyle::style_list.push_back(just_created_style);
+	}
+
+	//lines
+	if (false)
+	{
+		//###########################################################
+		//MODERN
+		just_created_style = new EGUIStyle("lines");
+		l_text.base_name = "lines";
+		l_text.localisations[NSW_localisation_EN] = "Lines";
+		l_text.localisations[NSW_localisation_RU] = "Линии";
+		just_created_style->localisation_text = l_text;
+		//***********************************************************
+		//main gutton group
+		//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
+		just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
+
+		jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 3, 3);
+
+		//***********************************************************
+	//darken gutton group
+		jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 3, 3);
+
+		//***********************************************************
+		//slider bg
+		jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head inactive
+		jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head active
+		jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//button background
+		jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EGUIStyle::style_list.push_back(just_created_style);
+	}
+
+	//path of black
+	if (true)
+	{
+		//###########################################################
+		//MODERN
+		just_created_style = new EGUIStyle("path_of_black");
+		l_text.base_name = "pah_of_black";
+		l_text.localisations[NSW_localisation_EN] = "Path of Black";
+		l_text.localisations[NSW_localisation_RU] = "Чёрная дорога";
+		just_created_style->localisation_text = l_text;
+		//***********************************************************
+		//main gutton group
+		//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
+		just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
+
+		jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
+
+		//***********************************************************
+	//darken gutton group
+		jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider bg
+		jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head inactive
+		jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head active
+		jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//button background
+		jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EGUIStyle::style_list.push_back(just_created_style);
+	}
+
+	//basalt
+	if (true)
+	{
+		//###########################################################
+		//MODERN
+		just_created_style = new EGUIStyle("basalt");
+		l_text.base_name = "basalt";
+		l_text.localisations[NSW_localisation_EN] = "Basalt";
+		l_text.localisations[NSW_localisation_RU] = "Базальт";
+		just_created_style->localisation_text = l_text;
+		//***********************************************************
+		//main gutton group
+		//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
+		just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
+
+		jc_brick = new EBrickStyle("Group_bg");
+		just_created_style->button_group_main = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
+
+		//***********************************************************
+	//darken gutton group
+		jc_brick = new EBrickStyle("Root_group_bg");
+		just_created_style->button_group_darken = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
+
+		//***********************************************************
+		//slider bg
+		jc_brick = new EBrickStyle("Slider_bg");
+		just_created_style->slider_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head inactive
+		jc_brick = new EBrickStyle("Slider_head_inactive");
+		just_created_style->slider_inactive = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//slider head active
+		jc_brick = new EBrickStyle("Slider_head_active");
+		just_created_style->slider_active = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		//***********************************************************
+		//button background
+		jc_brick = new EBrickStyle("Button_bg");
+		just_created_style->button_bg = jc_brick;
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+		EGUIStyle::style_list.push_back(just_created_style);
+	}
 
 	////*******************************
 	////gray minimalism
@@ -1815,7 +1820,7 @@ void NS_EGraphicCore::set_active_color_custom_alpha(const EColor_4(&_color)[4], 
 	NS_EGraphicCore::active_color[3] = _alpha;
 }
 
-void NS_EGraphicCore::set_active_color(EColor_4 *_color)
+void NS_EGraphicCore::set_active_color(EColor_4* _color)
 {
 	NS_EGraphicCore::active_color[0] = _color[0];
 	NS_EGraphicCore::active_color[1] = _color[1];
@@ -1852,9 +1857,9 @@ void NS_EGraphicCore::set_target_FBO(unsigned int _framebuffer_id)
 
 ETextureGabarite* NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(ETextureGabarite* _gabarite, std::string _suffix)
 {
-	std::string full_path		= _gabarite->get_full_path();
+	std::string full_path = _gabarite->get_full_path();
 	//																	4 = ".png"
-	std::string final_path		= full_path.insert(full_path.length() - 4, _suffix);
+	std::string final_path = full_path.insert(full_path.length() - 4, _suffix);
 	//std::string final_path	=
 
 	//EInputCore::logger_param("final_path", final_path);
@@ -1949,7 +1954,7 @@ NS_EGraphicCore::HsvColor NS_EGraphicCore::RgbToHsv(RgbColor rgb)
 	return hsv;
 }
 
-	
+
 
 
 void NS_EGraphicCore::load_texture(char const* _path, int _id)
@@ -1968,11 +1973,11 @@ void NS_EGraphicCore::load_texture(char const* _path, int _id)
 	//ifstream (_path)
 
 	image_data = stbi_load(_path, &texture_loader_width, &texture_loader_height, &nrChannels, STBI_rgb_alpha);
-	
+
 	//std::string sss = std::to_string(*image_data);
 	//EInputCore::logger_simple_success(sss);
-	
-	
+
+
 
 	if (image_data)
 	{
@@ -1997,8 +2002,8 @@ void NS_EGraphicCore::load_texture(char const* _path, int _id)
 	else
 	{
 		//image_data = stbi_load("data/textures/ERROR.png", &texture_loader_width, &texture_loader_height, &nrChannels, STBI_rgb_alpha);
-		
-		
+
+
 		last_texture_height = 100;
 		last_texture_width = 100;
 
@@ -2150,7 +2155,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 						(x >= 0)
 						&&
 						(y >= 0)
-					)
+						)
 				{
 					_atlas->free_space[x][y] = false;
 				}
@@ -2184,8 +2189,8 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 				(float)(place_x + 0.5f) / (float)(_atlas->get_atlas_size_x()),
 				(float)(place_y + 0.5f) / (float)(_atlas->get_atlas_size_y()),
 
-				(float)(NS_EGraphicCore::last_texture_width		- 1.0f)	/ (float)(_atlas->get_atlas_size_x()),
-				(float)(NS_EGraphicCore::last_texture_height	- 1.0f)	/ (float)(_atlas->get_atlas_size_y())
+				(float)(NS_EGraphicCore::last_texture_width - 1.0f) / (float)(_atlas->get_atlas_size_x()),
+				(float)(NS_EGraphicCore::last_texture_height - 1.0f) / (float)(_atlas->get_atlas_size_y())
 			);
 
 			new_gabarite->target_atlas = _atlas;
@@ -2216,7 +2221,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 	glDisable(GL_DEPTH_TEST);
 	glBlendEquation(GL_FUNC_ADD);
 
-	
+
 
 
 	//glActiveTexture(GL_TEXTURE0);
@@ -2228,7 +2233,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 
 ETextureGabarite* NS_EGraphicCore::load_from_textures_folder(std::string _name)
 {
-	return put_texture_to_atlas("data/textures/"+ _name + ".png", default_texture_atlas);
+	return put_texture_to_atlas("data/textures/" + _name + ".png", default_texture_atlas);
 }
 
 ETextureGabarite* NS_EGraphicCore::load_texture_to_default_atlas(std::string _name)
@@ -2238,13 +2243,17 @@ ETextureGabarite* NS_EGraphicCore::load_texture_to_default_atlas(std::string _na
 
 void NS_EGraphicCore::load_style_texture(EGUIStyle* _style, EBrickStyle* _brick)
 {
-	_brick->main_texture		= put_texture_to_atlas("data/textures/styles/" + *_style->folder + "/" + * _brick->file_name + ".png", default_texture_atlas);
-	
+	_brick->main_texture = put_texture_to_atlas("data/textures/styles/" + *_style->folder + "/" + *_brick->file_name + ".png", default_texture_atlas);
+
 	if (std::filesystem::exists("data/textures/styles/" + *_style->folder + "/" + *_brick->file_name + "[normal_map].png"))
-	{ _brick->normal_map_texture = put_texture_to_atlas("data/textures/styles/" + *_style->folder + "/" + *_brick->file_name + "[normal_map].png", default_texture_atlas); }
+	{
+		_brick->normal_map_texture = put_texture_to_atlas("data/textures/styles/" + *_style->folder + "/" + *_brick->file_name + "[normal_map].png", default_texture_atlas);
+	}
 
 	if (std::filesystem::exists("data/textures/styles/" + *_style->folder + "/" + *_brick->file_name + "[gloss_map].png"))
-	{ _brick->gloss_map_texture = put_texture_to_atlas("data/textures/styles/" + *_style->folder + "/" + *_brick->file_name + "[gloss_map].png", default_texture_atlas);}
+	{
+		_brick->gloss_map_texture = put_texture_to_atlas("data/textures/styles/" + *_style->folder + "/" + *_brick->file_name + "[gloss_map].png", default_texture_atlas);
+	}
 	else
 	{
 		//EInputCore::logger_simple_error("Error! Cannot load: " + *_brick->file_name);
@@ -2496,8 +2505,8 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_sprite(float* _array, unsig
 
 	//#.
 	//..
-	_array[24]= _sprite->world_position_x;
-	_array[25]= _sprite->world_position_y + _sprite->size_y;
+	_array[24] = _sprite->world_position_x;
+	_array[25] = _sprite->world_position_y + _sprite->size_y;
 
 	_array[26] = NS_EGraphicCore::active_color[0];
 	_array[27] = NS_EGraphicCore::active_color[1];
@@ -2726,7 +2735,7 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_siz
 
 	_start_offset += 32;
 
-	
+
 }
 
 void NS_ERenderCollection::call_render_textured_rectangle_with_custom_size(ESprite* _sprite)
@@ -3085,7 +3094,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 
 					final_offset_yz = base_offset_yz;
 
-					
+
 
 					for (int yy = 0; yy < count_of_generations_y; yy++)
 					{
@@ -3093,14 +3102,14 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 
 						for (int xx = 0; xx < count_of_generations_x; xx++)//base_sprite_fragment_offset_x = full_mid_segment_size_x - NS_ERenderCollection::border_left_size;
 						{
-							
+
 
 							if (current_sprite_frame_id >= _sprite_layer->sprite_frame_list.size())
 							{
 								//EInputCore::logger_simple_info("create new sprite");
 								//jc_sprite_frame->sprite_list.back()->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite_PBR;
 								//jc_sprite_frame->sprite_list.back()->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite_PBR;
-								
+
 								jc_sprite_frame = ESpriteFrame::create_default_sprite_frame_with_sprite(_texture_gabarite, _sprite_layer);
 								_sprite_layer->sprite_frame_list.push_back(jc_sprite_frame);
 							}
@@ -3150,24 +3159,24 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 		//}
 
 		if (true)
-		if (!_sprite_layer->sprite_frame_list.empty())
-		{
-			for (int i = current_sprite_frame_id; i < _sprite_layer->sprite_frame_list.size(); i++)
-				//for (ESpriteFrame* frm : _sprite_layer->sprite_frame_list)
+			if (!_sprite_layer->sprite_frame_list.empty())
 			{
-				//frm->sprite_list[0]->reset_sprite();
-				//std::cout << "deleting sprite frame at[" << std::to_string(i) << "]" << std::endl;
-
-				if (!disable_deleting)
+				for (int i = current_sprite_frame_id; i < _sprite_layer->sprite_frame_list.size(); i++)
+					//for (ESpriteFrame* frm : _sprite_layer->sprite_frame_list)
 				{
-					delete _sprite_layer->sprite_frame_list.at(i);
+					//frm->sprite_list[0]->reset_sprite();
+					//std::cout << "deleting sprite frame at[" << std::to_string(i) << "]" << std::endl;
+
+					if (!disable_deleting)
+					{
+						delete _sprite_layer->sprite_frame_list.at(i);
+					}
 				}
+				//_sprite_layer->last_buffer_id = 0;
+				//_sprite_layer->total_capacity = 0;
+				_sprite_layer->sprite_frame_list.resize(current_sprite_frame_id);
+				_sprite_layer->sprite_frame_list.shrink_to_fit();
 			}
-			//_sprite_layer->last_buffer_id = 0;
-			//_sprite_layer->total_capacity = 0;
-			_sprite_layer->sprite_frame_list.resize(current_sprite_frame_id);
-			_sprite_layer->sprite_frame_list.shrink_to_fit();
-		}
 
 		//_sprite_layer->generate_vertex_buffer_for_sprite_layer("autobuilding");
 
@@ -3175,14 +3184,84 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 	}
 	else
 	{
-		if (_region == nullptr)				{ EInputCore::logger_simple_error("_region in [brick generator] is null!"); }
-		if (_sprite_layer == nullptr)		{ EInputCore::logger_simple_error("_sprite_layer in [brick generator] is null!"); }
-		if (_texture_gabarite == nullptr)	{ EInputCore::logger_simple_error("_texture gabarite in [brick generator] is null!"); }
+		if (_region == nullptr) { EInputCore::logger_simple_error("_region in [brick generator] is null!"); }
+		if (_sprite_layer == nullptr) { EInputCore::logger_simple_error("_sprite_layer in [brick generator] is null!"); }
+		if (_texture_gabarite == nullptr) { EInputCore::logger_simple_error("_texture gabarite in [brick generator] is null!"); }
 	}
 }
 
 void NS_EGraphicCore::processInput(GLFWwindow* window)
 {
+}
+
+void NS_EGraphicCore::refresh_autosize_groups(EWindow* _window)
+{
+	int dynamic_elements = 0;
+	float static_elements_total_size = 0.0f;
+
+	float full_size_x = NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom;
+	float free_dynamic_size_y = NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom;
+
+
+
+	for (EButtonGroup* bg : _window->autosize_group_list)
+	{
+		bg->region_gabarite->size_x = full_size_x;
+		bg->base_width = full_size_x;
+
+
+
+		if (bg->dynamic_autosize_for_window)
+		{
+			dynamic_elements++;
+		}
+		else
+		{
+			free_dynamic_size_y -= bg->region_gabarite->size_y;
+		}
+	}
+
+	//EInputCore::logger_simple_info("window list");
+	for (EButtonGroup* bg : _window->autosize_group_list)
+	{
+
+
+		if (bg->dynamic_autosize_for_window)
+		{
+			bg->base_height = free_dynamic_size_y / (float)dynamic_elements;
+			bg->region_gabarite->size_y = free_dynamic_size_y / (float)dynamic_elements;
+		}
+	}
+
+	EButtonGroup* prev_group = nullptr;
+	for (EButtonGroup* bg : _window->autosize_group_list)
+	{
+		if (prev_group == nullptr)
+		{
+			bg->region_gabarite->offset_x = 0.0f;
+			bg->region_gabarite->offset_y = 0.0f;
+		}
+		else
+		{
+			bg->region_gabarite->offset_x = 0.0f;
+			bg->region_gabarite->offset_y = (prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y);
+		}
+
+		prev_group = bg;
+	}
+
+	for (EButtonGroup* bg : _window->autosize_group_list)
+	{
+		//bg->expand_to_workspace_size();
+		//bg->phantom_translate_if_need();
+		bg->recursive_phantom_translate_if_need();
+	}
+
+	for (EButtonGroup* bg : _window->autosize_group_list)
+	{
+
+		EButtonGroup::refresh_button_group(bg);
+	}
 }
 
 void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, int height)
@@ -3196,7 +3275,7 @@ void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, i
 	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 
 
-	
+
 
 	std::cout << "Resize event width:" << NS_EGraphicCore::SCREEN_WIDTH << " height: " << NS_EGraphicCore::SCREEN_HEIGHT << std::endl;
 
@@ -3204,82 +3283,7 @@ void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, i
 
 	for (EWindow* w : EWindow::window_list)
 	{
-		int dynamic_elements = 0;
-		float static_elements_total_size = 0.0f;
-
-		float full_size_x = NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom;
-		float free_dynamic_size_y = NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom;
-
-
-
-		for (EButtonGroup* bg : w->autosize_group_list)
-		{
-
-
-			bg->region_gabarite->size_x = full_size_x;
-			bg->base_width = full_size_x;
-
-
-
-			if (bg->dynamic_autosize_for_window)
-			{
-				dynamic_elements++;
-			}
-			else
-			{
-				free_dynamic_size_y -= bg->region_gabarite->size_y;
-			}
-		}
-
-		//EInputCore::logger_simple_info("window list");
-		for (EButtonGroup* bg : w->autosize_group_list)
-		{
-			//EInputCore::logger_simple_info("button group list");
-
-
-			if (bg->dynamic_autosize_for_window)
-			{
-				bg->base_height = free_dynamic_size_y / (float)dynamic_elements;
-				bg->region_gabarite->size_y = free_dynamic_size_y / (float)dynamic_elements;
-			}
-
-			//EInputCore::logger_simple_info("try call GWRA");
-			//gwra(bg);
-
-			//EButtonGroup::change_style(bg, bg->selected_style);
-			//EButtonGroup::refresh_button_group(bg);
-
-		}
-
-		EButtonGroup* prev_group = nullptr;
-		for (EButtonGroup* bg : w->autosize_group_list)
-		{
-			if (prev_group == nullptr)
-			{
-				bg->region_gabarite->offset_x = 0.0f;
-				bg->region_gabarite->offset_y = 0.0f;
-			}
-			else
-			{
-				bg->region_gabarite->offset_x = 0.0f;
-				bg->region_gabarite->offset_y = (prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y);
-			}
-
-			prev_group = bg;
-		}
-
-		for (EButtonGroup* bg : w->autosize_group_list)
-		{
-			//bg->expand_to_workspace_size();
-			//bg->phantom_translate_if_need();
-			bg->recursive_phantom_translate_if_need();
-		}
-
-		for (EButtonGroup* bg : w->autosize_group_list)
-		{
-
-			EButtonGroup::refresh_button_group(bg);
-		}
+		refresh_autosize_groups(w);
 	}
 }
 
@@ -3411,16 +3415,16 @@ void ETextureGabarite::set_real_texture_size(int _size_x, int _size_y)
 void ESpriteLayer::modify_buffer_position_for_sprite_layer(float _x, float _y, float _z)
 {
 	for (int k = 0; k < 4; k++)																	//4 vertex
-	for (int i = 0; i < last_buffer_id; i += batcher->gl_vertex_attribute_total_count * 4)		//1 shape = attribute counts * 4 vertex
-	{
+		for (int i = 0; i < last_buffer_id; i += batcher->gl_vertex_attribute_total_count * 4)		//1 shape = attribute counts * 4 vertex
+		{
 			vertex_buffer[i + k * batcher->gl_vertex_attribute_total_count + batcher->array_offset_for_x] += _x;								//offset 0 = x
 			vertex_buffer[i + k * batcher->gl_vertex_attribute_total_count + batcher->array_offset_for_y] += _y;								//offset 1 = y
 
 			//offset z
-			if (batcher->array_offset_for_z >= 0) { vertex_buffer[i + k * batcher->gl_vertex_attribute_total_count + batcher->array_offset_for_z] += _z; } 								
-	}
+			if (batcher->array_offset_for_z >= 0) { vertex_buffer[i + k * batcher->gl_vertex_attribute_total_count + batcher->array_offset_for_z] += _z; }
+		}
 
-	
+
 
 	//for (ESpriteFrame* frame:sprite_frame_list)
 	//for (ESprite* spr : frame->sprite_list)
@@ -3435,19 +3439,19 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 {
 
 	if
-	(
-		(!sprite_frame_list.empty())
-		&&
 		(
-			(batcher != nullptr)
-		)
-	)
+			(!sprite_frame_list.empty())
+			&&
+			(
+				(batcher != nullptr)
+				)
+			)
 	{
 		//if array is too small, delete and register new size
 		//if (sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4 >= *last_buffer_id)
 		if ((total_capacity > 0) && (vertex_buffer != nullptr))
 		{
-			delete[] vertex_buffer; 
+			delete[] vertex_buffer;
 		}
 
 		vertex_buffer = new float[sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4];
@@ -3455,14 +3459,14 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 		total_capacity = sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4;
 
 		last_buffer_id = 0;
-		
-		
-		
+
+
+
 
 		//for (ESpriteFrame* frame:sprite_frame_list)
 		for (unsigned int i = 0; i < sprite_frame_list.size(); i++)
-		//for (unsigned int i = 0; i < s)
-		//for (ESprite* spr : frame->sprite_list)
+			//for (unsigned int i = 0; i < s)
+			//for (ESprite* spr : frame->sprite_list)
 		{
 			ESpriteFrame* frame = sprite_frame_list[i];
 			ESprite* spr = frame->sprite_list.at(*frame->active_frame_id);
@@ -3483,10 +3487,10 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 			{
 				if (spr == nullptr) { EInputCore::logger_simple_error("Sprite is null!"); }
 				else
-				if (spr->pointer_to_sprite_render == nullptr) { EInputCore::logger_simple_error("Pointer to render is null!"); }
+					if (spr->pointer_to_sprite_render == nullptr) { EInputCore::logger_simple_error("Pointer to render is null!"); }
 			}
 
-			
+
 		}
 
 		//for (unsigned int i = 0; i < sprite_frame_list.size(); i++)
@@ -3515,15 +3519,15 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 {
 	if
-	(
-		(last_buffer_id > 0)
-		&&
 		(
-			(batcher != nullptr)
-		)
-		&&
-		(!disable_draw)
-	)
+			(last_buffer_id > 0)
+			&&
+			(
+				(batcher != nullptr)
+				)
+			&&
+			(!disable_draw)
+			)
 	{
 		//memcpy();
 		//std::cout << "-------" << std::endl;
@@ -3532,7 +3536,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 		//size of BATCHER vertex array
 		unsigned int batcher_size = TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE - 200;
 		//EInputCore::logger_param("vertices_buffer_capacity", vertices_buffer_capacity);
-		
+
 		//[31872]
 		//size of SPRITE LAYER vertex array
 		int remaining_data = last_buffer_id;
@@ -3549,7 +3553,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 		for (;;)
 		{
 
-			
+
 
 			//if batcher have free space
 			if (batcher_free_space > 0)
@@ -3593,7 +3597,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 			//ERenderBatcher::check_batcher(batcher);
 		}
 
-		
+
 		//std::copy(0, (int)(sizeof(sl->vertex_buffer)), std::begin(sl->batcher->vertex_buffer));
 	}
 	else
@@ -3605,9 +3609,9 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 void ESpriteLayer::sprite_layer_set_world_position(float _x, float _y, float _z)
 {
 
-	world_position_x =_x + offset_x;
-	world_position_y =_y + offset_y;
-	world_position_z =_z + offset_z;
+	world_position_x = _x + offset_x;
+	world_position_y = _y + offset_y;
+	world_position_z = _z + offset_z;
 
 	for (ESpriteFrame* frame : sprite_frame_list)
 		for (ESprite* spr : frame->sprite_list)
@@ -3621,9 +3625,9 @@ void ESpriteLayer::sprite_layer_set_world_position(float _x, float _y, float _z)
 
 ESpriteLayer* ESpriteLayer::create_default_sprite_layer(ETextureGabarite* _texture)
 {
-	ESpriteLayer*	jc_sprite_layer	=	new ESpriteLayer();
-	ESpriteFrame*	jc_sprite_frame	=	ESpriteFrame::create_default_sprite_frame_with_sprite(_texture, jc_sprite_layer);
-	ESprite*		jc_sprite		=	jc_sprite_frame->sprite_list[0];
+	ESpriteLayer* jc_sprite_layer = new ESpriteLayer();
+	ESpriteFrame* jc_sprite_frame = ESpriteFrame::create_default_sprite_frame_with_sprite(_texture, jc_sprite_layer);
+	ESprite* jc_sprite = jc_sprite_frame->sprite_list[0];
 
 	jc_sprite_layer->sprite_frame_list.push_back(jc_sprite_frame);
 	jc_sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
@@ -3641,12 +3645,12 @@ void ESpriteLayer::make_as_PBR()
 {
 
 	batcher = NS_EGraphicCore::pbr_batcher;
-	
-	for (ESpriteFrame* frame:sprite_frame_list)
-	for (ESprite* spr:frame->sprite_list)
-	{
-		spr->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite_PBR;
-	}
+
+	for (ESpriteFrame* frame : sprite_frame_list)
+		for (ESprite* spr : frame->sprite_list)
+		{
+			spr->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite_PBR;
+		}
 }
 
 ESpriteLayer* ESpriteLayer::create_default_sprite_layer_with_size_and_offset(ETextureGabarite* _texture, float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y, float _size_z)
@@ -3671,11 +3675,11 @@ ESpriteLayer* ESpriteLayer::create_default_sprite_layer_with_size_and_offset(ETe
 ESprite* ESpriteLayer::get_last_created_sprite(ESpriteLayer* _layer)
 {
 	if
-	(
-		(!_layer->sprite_frame_list.empty())
-		&&
-		(!(_layer->sprite_frame_list.back()->sprite_list.empty()))
-	)
+		(
+			(!_layer->sprite_frame_list.empty())
+			&&
+			(!(_layer->sprite_frame_list.back()->sprite_list.empty()))
+			)
 	{
 		return _layer->sprite_frame_list.back()->sprite_list.back();
 	}
@@ -3684,7 +3688,7 @@ ESprite* ESpriteLayer::get_last_created_sprite(ESpriteLayer* _layer)
 		return nullptr;
 	}
 
-	
+
 }
 
 ESpriteFrame* ESpriteLayer::get_last_sprite_frame(ESpriteLayer* _layer)
@@ -3710,7 +3714,7 @@ void ESpriteLayer::set_size_for_last_sprite(ESpriteLayer* _layer, float _size_x,
 
 		last_sprite->sprite_calculate_uv();
 	}
-	
+
 }
 
 void ESpriteLayer::set_offset_for_last_sprite(ESpriteLayer* _layer, float _offset_x, float _offset_y, float _offset_z)
@@ -3735,19 +3739,19 @@ void ESpriteLayer::add_new_default_frame_with_sprite(ETextureGabarite* _texture_
 void ESpriteLayer::translate_sprites(float _x, float _y, float _z, bool _move_offset)
 {
 	for (ESpriteFrame* frame : sprite_frame_list)
-	for (ESprite* spr : frame->sprite_list)
-	{
-		spr->world_position_x += _x;
-		spr->world_position_y += _y;
-		spr->world_position_z += _z;
-
-		if (_move_offset)
+		for (ESprite* spr : frame->sprite_list)
 		{
-			spr->offset_x += _x;
-			spr->offset_y += _y;
-			spr->offset_z += _z;
+			spr->world_position_x += _x;
+			spr->world_position_y += _y;
+			spr->world_position_z += _z;
+
+			if (_move_offset)
+			{
+				spr->offset_x += _x;
+				spr->offset_y += _y;
+				spr->offset_z += _z;
+			}
 		}
-	}
 
 
 }
@@ -3828,9 +3832,9 @@ void ESprite::set_texture_gabarite(ETextureGabarite* _gabarite, ETextureGabarite
 
 		//normal_texture	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_gabarite, "[normal_map]");
 		//gloss_texture	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_gabarite, "[gloss_map]");
-		
-		normal_texture	= _normal_map_gabarite;
-		gloss_texture	= _gloss_map_gabarite;
+
+		normal_texture = _normal_map_gabarite;
+		gloss_texture = _gloss_map_gabarite;
 	}
 	else
 	{
@@ -3886,34 +3890,34 @@ void ESprite::sprite_calculate_uv()
 	{
 		normal_uv_start_x = *normal_texture->uv_start_x + (fragment_offset_x + 0.0f) / normal_texture->target_atlas->get_atlas_size_x();
 		normal_uv_start_y = *normal_texture->uv_start_y + (fragment_offset_y + 0.0f) / normal_texture->target_atlas->get_atlas_size_y();
-		 
+
 		normal_uv_end_x = normal_uv_start_x + (fragment_size_x - 1.0f) / normal_texture->target_atlas->get_atlas_size_x();
 		normal_uv_end_y = normal_uv_start_y + (fragment_size_y - 1.0f) / normal_texture->target_atlas->get_atlas_size_y();
 	}
 	else
 	{
-		normal_uv_start_x	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_x;
-		normal_uv_start_y	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_y;
+		normal_uv_start_x = *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_x;
+		normal_uv_start_y = *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_y;
 
-		normal_uv_end_x	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_x;
-		normal_uv_end_y	= *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_y;
+		normal_uv_end_x = *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_x;
+		normal_uv_end_y = *NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_y;
 	}
 
 	if (gloss_texture != nullptr)
 	{
-		gloss_uv_start_x	= *gloss_texture->uv_start_x + (fragment_offset_x + 0.0f) / gloss_texture->target_atlas->get_atlas_size_x();
-		gloss_uv_start_y	= *gloss_texture->uv_start_y + (fragment_offset_y + 0.0f) / gloss_texture->target_atlas->get_atlas_size_y();
+		gloss_uv_start_x = *gloss_texture->uv_start_x + (fragment_offset_x + 0.0f) / gloss_texture->target_atlas->get_atlas_size_x();
+		gloss_uv_start_y = *gloss_texture->uv_start_y + (fragment_offset_y + 0.0f) / gloss_texture->target_atlas->get_atlas_size_y();
 
-		gloss_uv_end_x		= gloss_uv_start_x +(fragment_size_x - 1.0f) / gloss_texture->target_atlas->get_atlas_size_x();
-		gloss_uv_end_y		= gloss_uv_start_y +(fragment_size_y - 1.0f) / gloss_texture->target_atlas->get_atlas_size_y();
+		gloss_uv_end_x = gloss_uv_start_x + (fragment_size_x - 1.0f) / gloss_texture->target_atlas->get_atlas_size_x();
+		gloss_uv_end_y = gloss_uv_start_y + (fragment_size_y - 1.0f) / gloss_texture->target_atlas->get_atlas_size_y();
 	}
 	else
 	{
-		gloss_uv_start_x	= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_x;
-		gloss_uv_start_y	= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_y;
-		
-		gloss_uv_end_x		= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_x;
-		gloss_uv_end_y		= *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_y;
+		gloss_uv_start_x = *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_x;
+		gloss_uv_start_y = *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_y;
+
+		gloss_uv_end_x = *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_x;
+		gloss_uv_end_y = *NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder->uv_start_y;
 	}
 
 }
@@ -3922,40 +3926,40 @@ void ESprite::reset_sprite()
 {
 	main_texture = nullptr;
 
-	fragment_offset_x	= 0.0f;
-	fragment_offset_y	= 0.0f;
+	fragment_offset_x = 0.0f;
+	fragment_offset_y = 0.0f;
 
-	fragment_size_x		= 0.0f;
-	fragment_size_y		= 0.0f;
+	fragment_size_x = 0.0f;
+	fragment_size_y = 0.0f;
 
-	uv_start_x			= 0.0f;
-	uv_start_y			= 0.0f;
+	uv_start_x = 0.0f;
+	uv_start_y = 0.0f;
 
-	uv_end_x			= 0.0f;
-	uv_end_y			= 0.0f;
+	uv_end_x = 0.0f;
+	uv_end_y = 0.0f;
 
-	gloss_uv_start_x	= 0.0f;
-	gloss_uv_start_y	= 0.0f;
+	gloss_uv_start_x = 0.0f;
+	gloss_uv_start_y = 0.0f;
 
-	gloss_uv_end_x		= 0.0f;
-	gloss_uv_end_y		= 0.0f;
+	gloss_uv_end_x = 0.0f;
+	gloss_uv_end_y = 0.0f;
 
-	normal_uv_start_x	= 0.0f;
-	normal_uv_start_y	= 0.0f;
+	normal_uv_start_x = 0.0f;
+	normal_uv_start_y = 0.0f;
 
-	normal_uv_end_x		= 0.0f;
-	normal_uv_end_y		= 0.0f;
+	normal_uv_end_x = 0.0f;
+	normal_uv_end_y = 0.0f;
 
-	offset_x			= 0.0f;
-	offset_y			= 0.0f;
-	offset_z			= 0.0f;
+	offset_x = 0.0f;
+	offset_y = 0.0f;
+	offset_z = 0.0f;
 
-	world_position_x	= 0.0f;
-	world_position_y	= 0.0f;
-	world_position_z	= 0.0f;
+	world_position_x = 0.0f;
+	world_position_y = 0.0f;
+	world_position_z = 0.0f;
 
-	size_x				= (0.0f);
-	size_y				= (0.0f);
+	size_x = (0.0f);
+	size_y = (0.0f);
 }
 
 void ESprite::sprite_set_world_positions(float _x, float _y, float _z)
@@ -4024,7 +4028,7 @@ ESpriteFrame::~ESpriteFrame()
 ESpriteFrame* ESpriteFrame::create_default_sprite_frame()
 {
 	//ESprite*		jc_sprite			= new ESprite();
-	ESpriteFrame*	jc_sprite_frame		= new ESpriteFrame();
+	ESpriteFrame* jc_sprite_frame = new ESpriteFrame();
 
 	//jc_sprite_frame->sprite_list.push_back(jc_sprite);
 

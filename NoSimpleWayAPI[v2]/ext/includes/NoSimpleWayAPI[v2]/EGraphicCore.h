@@ -248,6 +248,8 @@ namespace NS_EGraphicCore
 
 
 	extern HsvColor RgbToHsv(RgbColor rgb);
+
+	extern void refresh_autosize_groups(EWindow* _window);
 };
 
 namespace NS_DefaultGabarites
