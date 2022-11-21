@@ -321,7 +321,8 @@ public:
 
 	virtual ~EntityButtonVariantRouter();
 
-	void select_variant(int _variant_id);
+	void select_variant			(int _variant_id);
+	int seach_id_by_base_name	(std::string& _base_name);
 
 	RotateVariantMode			rotate_variant_mode = RotateVariantMode::SELECT_NEXT;
 

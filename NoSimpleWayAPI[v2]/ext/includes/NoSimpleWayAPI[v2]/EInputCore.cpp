@@ -87,9 +87,18 @@ extern void EInputCore::simple_logger_with_parameter(std::string _text, std::str
 	std::cout << white << "------[" << green << _text << ":\t" << blue << _parameter << white << "]-------" << std::endl;
 }
 
+void EInputCore::simple_logger_with_parameter_and_warning(std::string _text, std::string _parameter)
+{
+	std::cout << white << "------[" << yellow << _text << ":\t" << blue << _parameter << white << "]-------" << std::endl;
+}
+
 void EInputCore::logger_param(std::string _text, std::string _parameter)
 {
 	simple_logger_with_parameter(_text, _parameter);
+}
+void EInputCore::logger_param_with_warning(std::string _text, std::string _parameter)
+{
+	simple_logger_with_parameter_and_warning(_text, _parameter);
 }
 
 void EInputCore::logger_simple_error(std::string _error)

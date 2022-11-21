@@ -1094,6 +1094,10 @@ EWindowMain::EWindowMain()
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+
+
+
+
 	/*____________________________________COSMETIC SECTION___________________________________________________*/
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "SetBackgroundColor";
@@ -1136,13 +1140,26 @@ EWindowMain::EWindowMain()
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "SetFontSize";
-	jc_localisation.localisations[NSW_localisation_EN] = "Font size";
+	jc_localisation.localisations[NSW_localisation_EN] = "Text size";
 	jc_localisation.localisations[NSW_localisation_RU] = "Размер текста";
 
 	jc_filter_block_attribute = new FilterBlockAttribute();
 	jc_filter_block_attribute->localisation = jc_localisation;
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_SLIDER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->always_present = true;
+
+	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "MinimapIcon";
+	jc_localisation.localisations[NSW_localisation_EN] = "Minimap icon";
+	jc_localisation.localisations[NSW_localisation_RU] = "Иконка";
+
+	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON;
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->always_present = true;
 
@@ -3390,8 +3407,10 @@ bool EWindowMain::text_is_condition(std::string& buffer_text)
 		(buffer_text == ">")
 		||
 		(buffer_text == ">=")
+		//||
+		//(buffer_text == "<>")
 		||
-		(buffer_text == "<>");
+		(buffer_text == "!");
 }
 
 void EWindowMain::open_loot_filter(std::string _full_path)
@@ -4945,6 +4964,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
 
+								//EInputCore::logger_param("found registered attribure", buffer_text);
 
 								////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 								if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED)
@@ -4968,10 +4988,19 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										}
 									}
 
+									if (matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON)
+									{
+										whole_block_container->minimap_icon_color_suppressor_bool = true;
+									}
+
 									//target_HRA_color = ((EDataContainer_Button_StoreColor*)(Entity::get_last_custom_data(whole_block_container->pointer_to_color_button[0])->data_container))->stored_color;
 									//target_color_bool = &whole_block_container->color_check[0];
 								}
 								////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							}
+							else
+							{
+								//EInputCore::logger_param_with_warning("UNREGISTERED attribure!", buffer_text);
 							}
 						}
 					}
@@ -5182,6 +5211,9 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							{
 								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
 
+
+								//		FONT SIZE
+								//EInputCore::logger_param("buffer text is", buffer_text);
 								if (matched_filter_block_attribute->localisation.base_name == "SetFontSize")
 								{
 
@@ -5194,12 +5226,36 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									//d_container->
 								}
 
+								//		BOX COLOR
 								if (target_HRA_color != nullptr)
 								{
 									if (data_part == 2) { target_HRA_color->r = std::stoi(buffer_text) / 255.0f; }
 									if (data_part == 3) { target_HRA_color->g = std::stoi(buffer_text) / 255.0f; }
 									if (data_part == 4) { target_HRA_color->b = std::stoi(buffer_text) / 255.0f; }
 									if (data_part == 5) { target_HRA_color->a = std::stoi(buffer_text) / 255.0f; Helper::rgb2hsv(target_HRA_color); *target_color_bool = true; }
+								}
+
+								//		MINIMAP ICON
+								if (matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON)
+								{
+									EntityButtonVariantRouter* router_button_size	= whole_block_container->pointer_to_minimap_icon_size_router;
+									EntityButtonVariantRouter* router_button_color	= whole_block_container->pointer_to_minimap_icon_color_router;
+									EntityButtonVariantRouter* router_button_shape	= whole_block_container->pointer_to_minimap_icon_shape_router;
+									
+									if (data_part == 2)
+									{
+										router_button_size->select_variant (router_button_size->seach_id_by_base_name(buffer_text));
+									}
+
+									if (data_part == 3)
+									{
+										router_button_color->select_variant (router_button_color->seach_id_by_base_name(buffer_text));
+									}
+
+									if (data_part == 4)
+									{
+										router_button_shape->select_variant (router_button_shape->seach_id_by_base_name(buffer_text));
+									}
 								}
 
 
@@ -5631,14 +5687,13 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 	std::string result_string = "";
 
 	result_string += "Show";
-	result_string += '\r';
 	result_string += '\n';
 
 	auto whole_block_data = static_cast<EButtonGroupFilterBlock*>(_button_group);
 
-	EButtonGroup* non_listed_section = whole_block_data->pointer_to_non_listed_segment;
-	EButtonGroup* listed_section = whole_block_data->pointer_to_listed_segment;
-	EButtonGroup* cosmetic_section = whole_block_data->pointer_to_cosmetic_segment;
+	EButtonGroup* non_listed_section	= whole_block_data->pointer_to_non_listed_segment;
+	EButtonGroup* listed_section		= whole_block_data->pointer_to_listed_segment;
+	EButtonGroup* cosmetic_section		= whole_block_data->pointer_to_cosmetic_segment;
 
 	//NON-LISTED
 	for (EButtonGroup* n_listed : non_listed_section->group_list)
@@ -5701,12 +5756,10 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 			result_string += Entity::get_last_text_area(container->target_button_with_value)->localisation_text.base_name;
 		}
 
-		result_string += '\r';
 		result_string += '\n';
 	}
 
 	//LISTED
-
 	for (EButtonGroup* listed : listed_section->group_list)
 	{
 		auto container = static_cast<EDataContainer_Group_FilterBlockListedSegment*>(listed->data_container);
@@ -5735,7 +5788,6 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 					id++;
 				}
 
-			result_string += '\r';
 			result_string += '\n';
 		}
 		else
@@ -5780,7 +5832,6 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 		result_string += " " + std::to_string((int)round(store_color_data->stored_color->b * 255.0f));
 		result_string += " " + std::to_string((int)round(store_color_data->stored_color->a * 255.0f));
 
-		result_string += '\r';
 		result_string += '\n';
 	}
 
@@ -5792,10 +5843,39 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 	}
 	tarea = Entity::get_last_text_area(cosmetic_data->text_size_button);
 
-	result_string += tarea->localisation_text.base_name;
+	//result_string += tarea->localisation_text.base_name;
+	result_string += "\tSetFontSize";
 
 	result_string += " " + std::to_string((int)(round(18.0f + cosmetic_data->text_size * 27.0f)));
+	result_string += '\n';
 
+
+
+
+	//		MINIMAP ICONS
+	//////////////////////////////////////////////////////////////////
+
+	//		MINIMAP ICON
+	if (!whole_block_data->minimap_icon_color_suppressor_bool)
+	{
+		result_string += "#";
+	}
+	result_string += "\tMinimapIcon";
+	EntityButtonVariantRouter* button_router_size	= whole_block_data->pointer_to_minimap_icon_size_router;
+	EntityButtonVariantRouter* button_router_color	= whole_block_data->pointer_to_minimap_icon_color_router;
+	EntityButtonVariantRouter* button_router_shape	= whole_block_data->pointer_to_minimap_icon_shape_router;
+
+	//		add size name to line
+	result_string += ' ' + button_router_size->router_variant_list[button_router_size->selected_variant].localisation->base_name;
+
+	//		add color name to line
+	result_string += ' ' + button_router_color->router_variant_list[button_router_color->selected_variant].localisation->base_name;
+
+	//		add shape name to line
+	result_string += ' ' + button_router_shape->router_variant_list[button_router_shape->selected_variant].localisation->base_name;
+	
+	result_string += '\n';
+	//////////////////////////////////////////////////////////////////
 
 	return result_string;
 }

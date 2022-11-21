@@ -179,9 +179,15 @@ public:
 	EntityButtonFilterSound*		pointer_to_game_sound_button;
 	bool							game_sound_suppressor_bool;
 
+
+
+	//		MINIMAP ICONS SECTION
 	EntityButtonVariantRouter*		pointer_to_minimap_icon_color_router;
 	EntityButtonVariantRouter*		pointer_to_minimap_icon_size_router;
 	EntityButtonVariantRouter*		pointer_to_minimap_icon_shape_router;
+
+
+
 	bool							minimap_icon_color_suppressor_bool;
 
 	//EButtonGroupFilterBlockAsText*	target_filter_block_as_text_group;
@@ -266,7 +272,10 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY,
 	FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST,
 	FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER,
-	FILTER_ATTRIBUTE_VALUE_TYPE_COLOR
+	FILTER_ATTRIBUTE_VALUE_TYPE_COLOR,
+	FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON,
+	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_SLIDER
+
 };
 
 class FilterBlockAttribute

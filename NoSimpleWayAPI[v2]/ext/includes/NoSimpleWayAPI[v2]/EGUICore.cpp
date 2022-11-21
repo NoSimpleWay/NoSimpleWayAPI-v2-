@@ -2927,7 +2927,7 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 	int elements_count = round(_router_button->router_variant_list.size() / 2.0f);
 
 	float y_size = min (elements_count * _router_button->button_gabarite->size_y + DISTANCE_BETWEEN_BUTTONS * (elements_count - 1) + 40.0f, 310.0f);
-	EInputCore::logger_simple_info("ZZZ");
+	//EInputCore::logger_simple_info("ZZZ");
 
 	//		MAIN GROUP
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2937,7 +2937,7 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 		new ERegionGabarite
 		(
 			_router_button->button_gabarite->world_position_x,
-			min(_router_button->button_gabarite->world_position_y, NS_EGraphicCore::SCREEN_HEIGHT - y_size - 30.0f),
+			min(_router_button->button_gabarite->world_position_y, NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom - y_size - 30.0f),
 
 			_router_button->button_gabarite->size_x * 2.0f + 30.0f,
 			y_size
