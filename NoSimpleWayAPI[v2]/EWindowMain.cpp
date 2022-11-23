@@ -62,6 +62,39 @@ std::vector < std::string>				EWindowMain::filter_text_lines;
 std::vector<ENamedSound*>				EWindowMain::default_sound_list;
 std::vector<ENamedSound*>				EWindowMain::custom_sound_list;
 
+namespace NS_DefaultGabarites
+{
+	ETextureGabarite* texture_example_text_for_preview_box;
+	ETextureGabarite* texture_example_text_for_preview_box_half;
+	ETextureGabarite* texture_example_text_bg_for_preview_box;
+
+	ETextureGabarite* texture_loot_version_full_ignore;
+	ETextureGabarite* texture_loot_version_hide;
+	ETextureGabarite* texture_loot_version_ignore;
+	ETextureGabarite* texture_loot_version_default;
+	ETextureGabarite* texture_loot_version_focus;
+
+	ETextureGabarite* texture_show_hide_visual_editor;
+	ETextureGabarite* texture_show_hide_visual_editor_deactivate;
+
+	ETextureGabarite* texture_minimap_shape_circle;
+	ETextureGabarite* texture_minimap_shape_diamond;
+	ETextureGabarite* texture_minimap_shape_hexagon;
+	ETextureGabarite* texture_minimap_shape_square;
+	ETextureGabarite* texture_minimap_shape_star;
+	ETextureGabarite* texture_minimap_shape_triangle;
+	ETextureGabarite* texture_minimap_shape_cross;
+	ETextureGabarite* texture_minimap_shape_moon;
+	ETextureGabarite* texture_minimap_shape_raindrop;
+	ETextureGabarite* texture_minimap_shape_kite;
+	ETextureGabarite* texture_minimap_shape_pentagon;
+	ETextureGabarite* texture_minimap_shape_upside_down_house;
+
+	ETextureGabarite* texture_button_plus;
+
+
+}
+
 void EWindowMain::draw_additional(float _d)
 {
 
@@ -313,7 +346,7 @@ void EDataActionCollection::action_import_filter_text_from_clipboard(Entity* _en
 	CloseClipboard();
 
 	EWindowMain::parse_filter_text_lines(static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block);
-	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+	//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 
 
 }
@@ -510,6 +543,38 @@ EWindowMain::EWindowMain()
 	}
 
 	register_filter_rules();
+
+
+	NS_DefaultGabarites::texture_example_text_bg_for_preview_box		= NS_EGraphicCore::put_texture_to_atlas("data/textures/example_text_bg.png",	NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_example_text_for_preview_box			= NS_EGraphicCore::put_texture_to_atlas("data/textures/example_text.png",		NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_example_text_for_preview_box_half		= NS_EGraphicCore::put_texture_to_atlas("data/textures/example_text_half.png",	NS_EGraphicCore::default_texture_atlas);
+
+
+	NS_DefaultGabarites::texture_loot_version_full_ignore				= NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_full_ignore");
+	NS_DefaultGabarites::texture_loot_version_hide						= NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_hide");
+	NS_DefaultGabarites::texture_loot_version_ignore					= NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_strong_ignore");
+	NS_DefaultGabarites::texture_loot_version_default					= NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_default");
+	NS_DefaultGabarites::texture_loot_version_focus						= NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_strong_focus");
+
+
+	NS_DefaultGabarites::texture_show_hide_visual_editor				= NS_EGraphicCore::load_from_textures_folder("buttons/button_show_hide_visual_editor");
+	NS_DefaultGabarites::texture_show_hide_visual_editor_deactivate		= NS_EGraphicCore::load_from_textures_folder("buttons/button_show_hide_visual_editor_deactivate");
+	NS_DefaultGabarites::texture_button_plus							= NS_EGraphicCore::load_from_textures_folder("buttons/button_plus");
+
+	NS_DefaultGabarites::texture_minimap_shape_circle					= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[circle]");
+	NS_DefaultGabarites::texture_minimap_shape_diamond					= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[diamond]");
+	NS_DefaultGabarites::texture_minimap_shape_hexagon					= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[hexagon]");
+	NS_DefaultGabarites::texture_minimap_shape_square					= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[square]");
+	NS_DefaultGabarites::texture_minimap_shape_star						= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[star]");
+	NS_DefaultGabarites::texture_minimap_shape_triangle					= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[triangle]");
+	NS_DefaultGabarites::texture_minimap_shape_cross					= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[cross]");
+	NS_DefaultGabarites::texture_minimap_shape_moon						= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[moon]");
+	NS_DefaultGabarites::texture_minimap_shape_raindrop					= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[raindrop]");
+	NS_DefaultGabarites::texture_minimap_shape_kite						= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[kite]");
+	NS_DefaultGabarites::texture_minimap_shape_pentagon					= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[pentagon]");
+	NS_DefaultGabarites::texture_minimap_shape_upside_down_house		= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[upside_down_house]");
+
+
 
 
 	/*		REGISTER RARITIES		*/
@@ -844,6 +909,7 @@ EWindowMain::EWindowMain()
 	jc_localisation.localisations[NSW_localisation_RU] = "Предмет";
 
 	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->button_x_size_override = 200.0f;
 	jc_filter_block_attribute->localisation = jc_localisation;
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
@@ -858,6 +924,7 @@ EWindowMain::EWindowMain()
 	jc_localisation.localisations[NSW_localisation_RU] = "Класс предмета";
 
 	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->button_x_size_override = 150.0f;
 	jc_filter_block_attribute->localisation = jc_localisation;
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
@@ -868,10 +935,13 @@ EWindowMain::EWindowMain()
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "HasExplicitMod";
+
 	jc_localisation.localisations[NSW_localisation_EN] = "Explicit mode";
 	jc_localisation.localisations[NSW_localisation_RU] = "Префикс/суффикс";
 
 	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->button_x_size_override = 250.0f;
+
 	jc_filter_block_attribute->localisation = jc_localisation;
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
@@ -882,10 +952,13 @@ EWindowMain::EWindowMain()
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "EnchantmentPassiveNode";
+
 	jc_localisation.localisations[NSW_localisation_EN] = "Cluster passive";
 	jc_localisation.localisations[NSW_localisation_RU] = "Пассивки кластера";
 
 	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->button_x_size_override = 200.0f;
+
 	jc_filter_block_attribute->localisation = jc_localisation;
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
@@ -902,6 +975,8 @@ EWindowMain::EWindowMain()
 	jc_localisation.localisations[NSW_localisation_RU] = "Влияние";
 
 	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->button_x_size_override = 150.0f;
+
 	jc_filter_block_attribute->localisation = jc_localisation;
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
@@ -918,6 +993,8 @@ EWindowMain::EWindowMain()
 	jc_localisation.localisations[NSW_localisation_RU] = "Зачарование";
 
 	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->button_x_size_override = 200.0f;
+
 	jc_filter_block_attribute->localisation = jc_localisation;
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
@@ -1980,6 +2057,7 @@ EWindowMain::EWindowMain()
 		);
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::stored_zoom;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 2.0f;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->force_shift = true;
 		EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_force_resize_callback);
 		jc_button_group->button_list.push_back(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
@@ -1993,8 +2071,8 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(22.0f, 22.0f),
 			jc_button_group,
 			EDataActionCollection::action_switch_boolean_value,
-			NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
-			NS_EGraphicCore::load_from_textures_folder("box_switcher_off")
+			NS_DefaultGabarites::texture_bool_switcher_activated_box,
+			NS_DefaultGabarites::texture_bool_switcher_deactivated_box
 		);
 
 		jc_button_group->button_list.push_back(jc_button);
@@ -2070,8 +2148,9 @@ EWindowMain::EWindowMain()
 			);
 		search_bar_group->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
-		jc_button = new EntityButton();
-		jc_button->make_default_button_with_edible_text
+		EntityButtonMultiSearch*
+			button_multisearch = new EntityButtonMultiSearch();
+		button_multisearch->make_default_button_with_edible_text
 		(
 			new ERegionGabarite(800.0f, 30.0f),
 			search_bar_group,
@@ -2080,14 +2159,13 @@ EWindowMain::EWindowMain()
 		);
 
 		//add pointer to clickable are in "add content to filter block group"
-		content_group_data_container->typing_text_area = EntityButton::get_last_text_area(jc_button);
+		content_group_data_container->typing_text_area = EntityButton::get_last_text_area(button_multisearch);
 
-		auto multi_search_data_container = new EDataContainer_Button_MultiGroupButtonSearcher();
+		//auto multi_search_data_container = new EntityButtonMultiSearch();
 
-		Entity::get_last_custom_data(jc_button)->data_container = multi_search_data_container;
-		Entity::get_last_clickable_area(jc_button)->text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_text_multiblock_searcher);
+		Entity::get_last_clickable_area(button_multisearch)->text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_text_multiblock_searcher);
 
-		search_bar_group->button_list.push_back(jc_button);
+		search_bar_group->button_list.push_back(button_multisearch);
 		search_bar_group->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2149,10 +2227,10 @@ EWindowMain::EWindowMain()
 			);
 		cosmetic_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
-		multi_search_data_container->target_group_list.push_back(content_list_group);
-		multi_search_data_container->target_group_list.push_back(non_listed_segment);
-		multi_search_data_container->target_group_list.push_back(listed_segment);
-		multi_search_data_container->target_group_list.push_back(cosmetic_segment);
+		button_multisearch->target_group_list.push_back(content_list_group);
+		button_multisearch->target_group_list.push_back(non_listed_segment);
+		button_multisearch->target_group_list.push_back(listed_segment);
+		button_multisearch->target_group_list.push_back(cosmetic_segment);
 
 		EButtonGroup* target_group = nullptr;
 		for (FilterBlockAttribute* fba : registered_filter_block_attributes)
@@ -2378,8 +2456,10 @@ EWindowMain::EWindowMain()
 	//filter sound list
 	{
 		EWindowMain::load_custom_sound_list();
-		EButtonGroupSoundList* main_sound_group = new EButtonGroupSoundList(new ERegionGabarite(512.0f, 256.0f, 1020.0f, 512.0f));
+		EButtonGroupSoundList*
+			main_sound_group = new EButtonGroupSoundList(new ERegionGabarite(512.0f, 256.0f, 1020.0f, 512.0f));
 		main_sound_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+		main_sound_group->is_active = false;
 
 		EButtonGroup::sound_list_group = main_sound_group;
 
@@ -2395,14 +2475,14 @@ EWindowMain::EWindowMain()
 
 		main_sound_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
-		EButtonGroup* loot_filters_list_workspace_part = main_sound_group->add_close_group_and_return_workspace_group
+		EButtonGroup* sound_list_workspace_part = main_sound_group->add_close_group_and_return_workspace_group
 		(
 			new ERegionGabarite(1.0f, 20.0f),
 			EGUIStyle::active_style
 		)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
-		///////////////		LOOT-FILTERS LIST PART		///////////////
-		EButtonGroup* loot_filter_list_part = loot_filters_list_workspace_part->add_group
+		///////////////		SOUNDS LIST PART		///////////////
+		EButtonGroup* sound_list_part = sound_list_workspace_part->add_group
 		(
 			EButtonGroup::create_default_button_group
 			(
@@ -2410,9 +2490,10 @@ EWindowMain::EWindowMain()
 				EGUIStyle::active_style
 			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
 		);
+		//
 
 		///////////////		SEARCH INPUT PART		///////////////
-		EButtonGroup* search_input_part = loot_filters_list_workspace_part->add_group
+		EButtonGroup* search_input_part = sound_list_workspace_part->add_group
 		(
 			EButtonGroup::create_default_button_group
 			(
@@ -2420,26 +2501,31 @@ EWindowMain::EWindowMain()
 				EGUIStyle::active_style
 			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize)
 		);
+		search_input_part->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+
+
+
+		EntityButtonMultiSearch*
+			button_multisearch = new EntityButtonMultiSearch();
+		button_multisearch->make_default_button_with_edible_text
+		(
+			new ERegionGabarite(800.0f, 28.0f),
+			search_input_part,
+			nullptr,
+			""
+		);
+		button_multisearch->target_group_list.push_back(sound_list_part);
+		EntityButton::get_last_text_area(button_multisearch)->action_on_change_text.push_back(&EDataActionCollection::action_type_text_multiblock_searcher);
+
+
+		search_input_part->button_list.push_back(button_multisearch);
+
 
 
 		/// set data parameters
-		main_sound_group->part_with_list = loot_filter_list_part;
+		main_sound_group->part_with_list = sound_list_part;
 
 
-
-		//load_loot_filter_list();
-
-		/*for (int i = 0; i < 2; i++)
-		{
-			EntityButton* but = EntityButton::make_default_button_with_unedible_text
-			(
-				new ERegionGabarite(128.0f, 32.0f),
-				loot_filter_list_part,
-				nullptr,
-				"ZZZ"
-			);
-			loot_filter_list_part->button_list.push_back(but);
-		}*/
 
 		button_group_list.push_back(main_sound_group);
 		EButtonGroup::refresh_button_group(main_sound_group);
@@ -2483,14 +2569,33 @@ EWindowMain::EWindowMain()
 		);
 
 		///////////////		SEARCH INPUT PART		///////////////
-		EButtonGroup* search_input_part = loot_filters_list_workspace_part->add_group
-		(
-			EButtonGroup::create_default_button_group
+		EButtonGroup*
+			search_input_part = loot_filters_list_workspace_part->add_group
 			(
-				new ERegionGabarite(1.0f, 32.0f),
-				EGUIStyle::active_style
-			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize)
+				EButtonGroup::create_default_button_group
+				(
+					new ERegionGabarite(1.0f, 32.0f),
+					EGUIStyle::active_style
+				)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize)
+			);
+		search_input_part->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+
+
+
+		EntityButtonMultiSearch*
+			button_multisearch = new EntityButtonMultiSearch();
+		button_multisearch->make_default_button_with_edible_text
+		(
+			new ERegionGabarite(800.0f, 28.0f),
+			search_input_part,
+			nullptr,
+			""
 		);
+		button_multisearch->target_group_list.push_back(loot_filter_list_part);
+		EntityButton::get_last_text_area(button_multisearch)->action_on_change_text.push_back(&EDataActionCollection::action_type_text_multiblock_searcher);
+
+
+		search_input_part->button_list.push_back(button_multisearch);
 
 
 		/// set data parameters
@@ -3445,7 +3550,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//whole filter block
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroupFilterBlock*
-		whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 200.0f));
+	whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 200.0f));
 	whole_filter_block_group->init_button_group(EGUIStyle::active_style, true, true, false);
 	whole_filter_block_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 
@@ -3483,8 +3588,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	whole_filter_block_group->add_group(control_part);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		//left section for preview
-		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//left section for preview
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
 		control_part_left_show_hide_section = new EButtonGroup(new ERegionGabarite(140.0f, 30.0f));
 	control_part_left_show_hide_section->init_button_group(EGUIStyle::active_style, false, false, true);
@@ -3544,7 +3649,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//right section for preview box
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
-		control_part_right_preview_box = new EButtonGroup(new ERegionGabarite(165.0f, 30.0f));
+		control_part_right_preview_box = new EButtonGroup(new ERegionGabarite(200.0f, 30.0f));
 	control_part_right_preview_box->init_button_group(EGUIStyle::active_style, false, false, true);
 	control_part_right_preview_box->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 
@@ -3711,7 +3816,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.0f, 0.0f, 1.0f);
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_full_ignore");
+		router_variant->texture = NS_DefaultGabarites::texture_loot_version_full_ignore;
 
 		button_variant_router->router_variant_list.push_back(*router_variant);
 		/*************************************************************************************/
@@ -3729,7 +3834,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.7f, 0.7f, 0.7f, 1.0f);
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_hide");
+		router_variant->texture = NS_DefaultGabarites::texture_loot_version_hide;
 
 		button_variant_router->router_variant_list.push_back(*router_variant);
 		/*************************************************************************************/
@@ -3747,7 +3852,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.5f, 0.45f, 1.0f);
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_strong_ignore");
+		router_variant->texture = NS_DefaultGabarites::texture_loot_version_ignore;
 
 		button_variant_router->router_variant_list.push_back(*router_variant);
 		/*************************************************************************************/
@@ -3783,7 +3888,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.9f, 0.95f, 1.0f, 1.0f);
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_default");
+		router_variant->texture = NS_DefaultGabarites::texture_loot_version_default;
 
 		button_variant_router->router_variant_list.push_back(*router_variant);
 		/*************************************************************************************/
@@ -3819,7 +3924,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.6f, 1.0f, 0.8f, 1.0f);
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_strong_focus");
+		router_variant->texture = NS_DefaultGabarites::texture_loot_version_focus;
 
 		button_variant_router->router_variant_list.push_back(*router_variant);
 		/*************************************************************************************/
@@ -3881,7 +3986,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	router_variant->color = new Helper::HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.6f, 1.0f, 0.8f, 1.0f);
 
-	router_variant->texture = NS_EGraphicCore::load_from_textures_folder("button_show_hide_visual_editor");
+	router_variant->texture = NS_DefaultGabarites::texture_show_hide_visual_editor;
 
 	button_variant_FB_router->router_variant_list.push_back(*router_variant);
 	/*************************************************************************************/
@@ -3899,7 +4004,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	router_variant->color = new Helper::HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.6f, 1.0f, 0.8f, 1.0f);
 
-	router_variant->texture = NS_EGraphicCore::load_from_textures_folder("button_show_hide_visual_editor_deactivate");
+	router_variant->texture = NS_DefaultGabarites::texture_show_hide_visual_editor_deactivate;
 
 	button_variant_FB_router->router_variant_list.push_back(*router_variant);
 	/*************************************************************************************/
@@ -3920,7 +4025,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		new ERegionGabarite(50.0f, 50.0f),
 		left_control_section,
 		&EDataActionCollection::action_open_add_content_window,
-		NS_EGraphicCore::load_from_textures_folder("button_plus")
+		NS_DefaultGabarites::texture_button_plus
 	);
 
 	EDataContainer_Button_OpenButtonGroup*
@@ -3984,7 +4089,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		listed_condition_segment = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(800.0f, 160.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
-
+	//listed_condition_segment->button_size_x_override = 200.0f;
 	//root group data ontaner
 	whole_filter_block_group->pointer_to_listed_segment = listed_condition_segment;
 
@@ -4068,8 +4173,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		new ERegionGabarite(22.0f, 22.0f),
 		sound_cosmetic_segment,
 		EDataActionCollection::action_switch_boolean_value,
-		NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
-		NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
+		NS_DefaultGabarites::texture_bool_switcher_activated_box,
+		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 		&whole_filter_block_group->custom_sound_suppressor_bool
 	);
 	sound_cosmetic_segment->button_list.push_back(jc_button);
@@ -4109,8 +4214,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		new ERegionGabarite(22.0f, 22.0f),
 		sound_cosmetic_segment,
 		EDataActionCollection::action_switch_boolean_value,
-		NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
-		NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
+		NS_DefaultGabarites::texture_bool_switcher_activated_box,
+		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 		&whole_filter_block_group->game_sound_suppressor_bool
 	);
 	sound_cosmetic_segment->button_list.push_back(jc_button);
@@ -4327,8 +4432,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			new ERegionGabarite(22.0f, 22.0f),
 			minimap_cosmetic_segment,
 			EDataActionCollection::action_switch_boolean_value,
-			NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
-			NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
+			NS_DefaultGabarites::texture_bool_switcher_activated_box,
+			NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 			&whole_filter_block_group->minimap_icon_color_suppressor_bool
 		);
 		minimap_cosmetic_segment->button_list.push_back(jc_button);
@@ -4454,7 +4559,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Круг";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[circle]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_circle;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4473,7 +4578,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Алмаз";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[diamond]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_diamond;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4492,7 +4597,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Шестиугольник";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[hexagon]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_hexagon;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4509,7 +4614,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Квадрат";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[square]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_square;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4526,7 +4631,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Звезда";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[star]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_star;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4543,7 +4648,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Треугольник";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[triangle]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_triangle;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4560,7 +4665,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Крест";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[cross]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_cross;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4577,7 +4682,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Полумесяц";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[moon]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_moon;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4594,7 +4699,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Капля";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[raindrop]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_raindrop;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4611,7 +4716,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Змей";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[kite]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_kite;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4628,7 +4733,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Пятиугольник";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[pentagon]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_pentagon;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4647,7 +4752,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Маркер";
 		router_variant->localisation = local_text;
 
-		router_variant->texture = NS_EGraphicCore::load_from_textures_folder("minimap_icon_shape[upside_down_house]");
+		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_upside_down_house;
 
 		router_variant->color = new Helper::HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
@@ -4739,8 +4844,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			new ERegionGabarite(22.0f, 22.0f),
 			cosmetic_segment,
 			EDataActionCollection::action_switch_boolean_value,
-			NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
-			NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
+			NS_DefaultGabarites::texture_bool_switcher_activated_box,
+			NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 			target_bool
 		);
 
@@ -4789,8 +4894,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		new ERegionGabarite(25.0f, 30.0f),
 		cosmetic_segment,
 		EDataActionCollection::action_switch_boolean_value,
-		NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
-		NS_EGraphicCore::load_from_textures_folder("box_switcher_off"),
+		NS_DefaultGabarites::texture_bool_switcher_activated_box,
+		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 		target_bool
 	);
 	whole_filter_block_group->text_size_switch_button = jc_button;
@@ -5238,23 +5343,23 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								//		MINIMAP ICON
 								if (matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON)
 								{
-									EntityButtonVariantRouter* router_button_size	= whole_block_container->pointer_to_minimap_icon_size_router;
-									EntityButtonVariantRouter* router_button_color	= whole_block_container->pointer_to_minimap_icon_color_router;
-									EntityButtonVariantRouter* router_button_shape	= whole_block_container->pointer_to_minimap_icon_shape_router;
-									
+									EntityButtonVariantRouter* router_button_size = whole_block_container->pointer_to_minimap_icon_size_router;
+									EntityButtonVariantRouter* router_button_color = whole_block_container->pointer_to_minimap_icon_color_router;
+									EntityButtonVariantRouter* router_button_shape = whole_block_container->pointer_to_minimap_icon_shape_router;
+
 									if (data_part == 2)
 									{
-										router_button_size->select_variant (router_button_size->seach_id_by_base_name(buffer_text));
+										router_button_size->select_variant(router_button_size->seach_id_by_base_name(buffer_text));
 									}
 
 									if (data_part == 3)
 									{
-										router_button_color->select_variant (router_button_color->seach_id_by_base_name(buffer_text));
+										router_button_color->select_variant(router_button_color->seach_id_by_base_name(buffer_text));
 									}
 
 									if (data_part == 4)
 									{
-										router_button_shape->select_variant (router_button_shape->seach_id_by_base_name(buffer_text));
+										router_button_shape->select_variant(router_button_shape->seach_id_by_base_name(buffer_text));
 									}
 								}
 
@@ -5402,7 +5507,7 @@ void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_f
 	//if selected content is non-listed
 	if (_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED)
 	{
-		EInputCore::logger_simple_info("add new non listed button");
+		//EInputCore::logger_simple_info("add new non listed button");
 		target_group_for_content = whole_filter_block_data->pointer_to_non_listed_segment;
 
 		EButtonGroup* non_listed_line =
@@ -5502,7 +5607,7 @@ void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_f
 		}
 		else
 		{
-			input_field_additional_width = button_height * 2.0f + DISTANCE_BETWEEN_BUTTONS;
+			input_field_additional_width = button_height * 2.0f + BUTTON_FORCE_FIELD_SIZE;
 
 			non_listed_line_data->target_button_with_condition = nullptr;
 		}
@@ -5571,9 +5676,8 @@ void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_f
 				new ERegionGabarite(22.0f, 22.0f),
 				non_listed_line,
 				EDataActionCollection::action_switch_boolean_value,
-				NS_EGraphicCore::load_from_textures_folder("box_switcher_on"),
-				NS_EGraphicCore::load_from_textures_folder("box_switcher_off")
-
+				NS_DefaultGabarites::texture_bool_switcher_activated_box,
+				NS_DefaultGabarites::texture_bool_switcher_deactivated_box
 			);
 
 			jc_button->parent_filter_block = _target_filter_block;
@@ -5627,6 +5731,7 @@ void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_f
 		EButtonGroup* listed_condition_group_container = create_block_for_listed_segment
 		(
 			_filter_block_attribute->filter_rule,
+			_filter_block_attribute,
 			_filter_block_attribute->localisation.base_name,
 			target_group_for_content
 		);
@@ -5691,9 +5796,9 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 
 	auto whole_block_data = static_cast<EButtonGroupFilterBlock*>(_button_group);
 
-	EButtonGroup* non_listed_section	= whole_block_data->pointer_to_non_listed_segment;
-	EButtonGroup* listed_section		= whole_block_data->pointer_to_listed_segment;
-	EButtonGroup* cosmetic_section		= whole_block_data->pointer_to_cosmetic_segment;
+	EButtonGroup* non_listed_section = whole_block_data->pointer_to_non_listed_segment;
+	EButtonGroup* listed_section = whole_block_data->pointer_to_listed_segment;
+	EButtonGroup* cosmetic_section = whole_block_data->pointer_to_cosmetic_segment;
 
 	//NON-LISTED
 	for (EButtonGroup* n_listed : non_listed_section->group_list)
@@ -5861,9 +5966,9 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 		result_string += "#";
 	}
 	result_string += "\tMinimapIcon";
-	EntityButtonVariantRouter* button_router_size	= whole_block_data->pointer_to_minimap_icon_size_router;
-	EntityButtonVariantRouter* button_router_color	= whole_block_data->pointer_to_minimap_icon_color_router;
-	EntityButtonVariantRouter* button_router_shape	= whole_block_data->pointer_to_minimap_icon_shape_router;
+	EntityButtonVariantRouter* button_router_size = whole_block_data->pointer_to_minimap_icon_size_router;
+	EntityButtonVariantRouter* button_router_color = whole_block_data->pointer_to_minimap_icon_color_router;
+	EntityButtonVariantRouter* button_router_shape = whole_block_data->pointer_to_minimap_icon_shape_router;
 
 	//		add size name to line
 	result_string += ' ' + button_router_size->router_variant_list[button_router_size->selected_variant].localisation->base_name;
@@ -5873,16 +5978,17 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 
 	//		add shape name to line
 	result_string += ' ' + button_router_shape->router_variant_list[button_router_shape->selected_variant].localisation->base_name;
-	
+
 	result_string += '\n';
 	//////////////////////////////////////////////////////////////////
 
 	return result_string;
 }
 
-EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::string _attribute_name, EButtonGroup* _parent)
+EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, FilterBlockAttribute* _attribute, std::string _attribute_name, EButtonGroup* _parent)
 {
-	EButtonGroup* main_listed_group = EButtonGroup::create_default_button_group(new ERegionGabarite(800.0f, _filter_rule->min_y_size), EGUIStyle::active_style)
+	EButtonGroup*
+	main_listed_group = EButtonGroup::create_default_button_group(new ERegionGabarite(800.0f, _filter_rule->min_y_size), EGUIStyle::active_style)
 		->
 		set_parameters
 		(
@@ -5895,6 +6001,16 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::st
 
 	//data container, store pointer to group with listed buttons
 	auto d_container = new EDataContainer_Group_FilterBlockListedSegment();
+	
+	//if ((_attribute != nullptr) && (_override_attribute_name == ""))
+	//{
+	//	d_container->filter_attribute_name = _attribute->localisation.base_name;
+	//}
+	//else
+	//{
+	//	d_container->filter_attribute_name = _override_attribute_name;
+	//}
+
 	d_container->filter_attribute_name = _attribute_name;
 
 
@@ -5962,7 +6078,8 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::st
 
 	////////////////////////
 	//MAIN SECTION
-	EButtonGroup* listed_group_main_section = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(600.0f, 80.0f), EGUIStyle::active_style)
+	EButtonGroup*
+	listed_group_main_section = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(600.0f, 80.0f), EGUIStyle::active_style)
 		->
 		set_parameters
 		(
@@ -5970,6 +6087,15 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::st
 			NSW_dynamic_autosize,
 			NSW_dynamic_autosize
 		);
+
+	if (_attribute != nullptr)
+	{
+		listed_group_main_section->button_size_x_override = _attribute->button_x_size_override;
+	}
+	else
+	{
+		listed_group_main_section->button_size_x_override = 200.0f;
+	}
 
 	main_listed_group->add_group(listed_group_main_section);
 	data_store_filter_rule->target_group = listed_group_main_section;

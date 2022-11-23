@@ -266,6 +266,12 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_gabarite_normal_map_placeholder;
 	extern ETextureGabarite* texture_gabarite_gloss_map_placeholder;
 	extern ETextureGabarite* texture_gabarite_skydome;
+
+	extern ETextureGabarite* texture_bool_switcher_activated_box;
+	extern ETextureGabarite* texture_bool_switcher_deactivated_box;
+
+	extern ETextureGabarite* texture_button_radiance;
+	extern ETextureGabarite* texture_button_radiance_dot;
 	//extern 
 }
 

@@ -343,6 +343,8 @@ public:
 
 	float* pointer_to_value;
 
+	bool					force_shift = false;
+
 	data_action_pointer		additional_action_on_slide;
 	//EDataContainer*			additional_data_container;
 };
@@ -483,11 +485,11 @@ public:
 	ETextArea* typing_text_area;
 };
 
-class EDataContainer_Button_MultiGroupButtonSearcher : public EDataContainer
-{
-public:
-	std::vector <EButtonGroup*> target_group_list;
-};
+//class EDataContainer_Button_MultiGroupButtonSearcher : public EDataContainer
+//{
+//public:
+//	std::vector <EButtonGroup*> target_group_list;
+//};
 
 class EDataContainer_Button_BoolSwitcher : public EDataContainer
 {

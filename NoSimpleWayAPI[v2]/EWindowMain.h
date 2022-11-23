@@ -36,6 +36,36 @@ constexpr int CLUSTER_SIZE_Y = 300;
 
 
 
+namespace NS_DefaultGabarites
+{
+	extern ETextureGabarite* texture_example_text_for_preview_box;
+	extern ETextureGabarite* texture_example_text_for_preview_box_half;
+	extern ETextureGabarite* texture_example_text_bg_for_preview_box;
+
+	extern ETextureGabarite* texture_loot_version_full_ignore;
+	extern ETextureGabarite* texture_loot_version_hide;
+	extern ETextureGabarite* texture_loot_version_ignore;
+	extern ETextureGabarite* texture_loot_version_default;
+	extern ETextureGabarite* texture_loot_version_focus;
+
+	extern ETextureGabarite* texture_show_hide_visual_editor;
+	extern ETextureGabarite* texture_show_hide_visual_editor_deactivate;
+
+	extern ETextureGabarite* texture_minimap_shape_circle;
+	extern ETextureGabarite* texture_minimap_shape_diamond;
+	extern ETextureGabarite* texture_minimap_shape_hexagon;
+	extern ETextureGabarite* texture_minimap_shape_square;
+	extern ETextureGabarite* texture_minimap_shape_star;
+	extern ETextureGabarite* texture_minimap_shape_triangle;
+	extern ETextureGabarite* texture_minimap_shape_cross;
+	extern ETextureGabarite* texture_minimap_shape_moon;
+	extern ETextureGabarite* texture_minimap_shape_raindrop;
+	extern ETextureGabarite* texture_minimap_shape_kite;
+	extern ETextureGabarite* texture_minimap_shape_pentagon;
+	extern ETextureGabarite* texture_minimap_shape_upside_down_house;
+
+	extern ETextureGabarite* texture_button_plus;
+}
 
 
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
@@ -56,8 +86,8 @@ public:
 class EntityButtonForFilterBlock : public EntityButton
 {
 public:
-	EButtonGroupFilterBlock*			parent_filter_block;
-	FilterBlockAttribute*				used_filter_block_attribute;
+	EButtonGroupFilterBlock* parent_filter_block;
+	FilterBlockAttribute* used_filter_block_attribute;
 	//~EntityButtonFilterBlock
 	//int a;
 	//EntityButtonFilterBlock() : a(0) {};
@@ -77,18 +107,18 @@ public:
 class EntityButtonFilterRule : public EntityButton
 {
 public:
-	EFilterRule								*target_filter_rule;
-	EDataContainer_Group_DataEntitiesSearch	*target_data_container;
+	EFilterRule* target_filter_rule;
+	EDataContainer_Group_DataEntitiesSearch* target_data_container;
 
 };
 
 class EntityButtonFilterSound : public EntityButtonForFilterBlock
 {
 public:
-	ENamedSound*			 target_sound;
+	ENamedSound* target_sound;
 	//irrklang::ISoundSource* target_sound;
 	std::string				full_path;
-	EButtonGroupSoundList*	target_sound_group;
+	EButtonGroupSoundList* target_sound_group;
 
 
 };
@@ -109,8 +139,8 @@ public:
 class EButtonGroupLootFilterList : public EButtonGroup
 {
 public:
-	EButtonGroup*	part_with_list;
-	ETextArea*		input_field;
+	EButtonGroup* part_with_list;
+	ETextArea* input_field;
 };
 
 class EButtonGroupTopControlSection : public EButtonGroup
@@ -118,19 +148,19 @@ class EButtonGroupTopControlSection : public EButtonGroup
 public:
 
 	//EDataContainer_Group_WholeFilterBlock*	pointer_to_whole_filter_block_data_container	= nullptr;
-	EButtonGroupFilterBlock*				pointer_to_filter_block_group					= nullptr;
+	EButtonGroupFilterBlock* pointer_to_filter_block_group = nullptr;
 
-	EButtonGroupTopControlSection(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite){};
+	EButtonGroupTopControlSection(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	float box_size_x = 160.0f;
 
 	ETextureGabarite* example_text_texture[2] =
-	{ 
-		NS_EGraphicCore::load_from_textures_folder("example_text"),
-		NS_EGraphicCore::load_from_textures_folder("example_text_half")
+	{
+		NS_DefaultGabarites::texture_example_text_for_preview_box,
+		NS_DefaultGabarites::texture_example_text_for_preview_box_half
 	};
 
-	ETextureGabarite* example_text_bg = NS_EGraphicCore::load_from_textures_folder("example_text_bg");
+	ETextureGabarite* example_text_bg = NS_DefaultGabarites::texture_example_text_bg_for_preview_box;
 
 	void draw();
 };
@@ -140,51 +170,51 @@ class EButtonGroupFilterBlock : public EButtonGroup
 public:
 	EButtonGroupFilterBlock(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	EButtonGroup*					pointer_to_non_listed_segment;
-	EButtonGroup*					pointer_to_listed_segment;
-	EButtonGroup*					pointer_to_preview_box_segment;
+	EButtonGroup* pointer_to_non_listed_segment;
+	EButtonGroup* pointer_to_listed_segment;
+	EButtonGroup* pointer_to_preview_box_segment;
 
 
 
-	EButtonGroup*					pointer_to_cosmetic_segment;
-	EButtonGroup*					pointer_to_sound_segment;
-	EButtonGroup*					pointer_to_minimap_segment;
+	EButtonGroup* pointer_to_cosmetic_segment;
+	EButtonGroup* pointer_to_sound_segment;
+	EButtonGroup* pointer_to_minimap_segment;
 
-	EButtonGroup*					pointer_to_top_control_block;
-	EButtonGroup*					pointer_to_control_group_left_show_hide;
-	EButtonGroup*					pointer_to_control_group_mid_import;
-	EButtonGroup*					pointer_to_control_group_mid_versions;
-	EButtonGroup*					pointer_to_control_group_mid_show_hide_cosmetic;
+	EButtonGroup* pointer_to_top_control_block;
+	EButtonGroup* pointer_to_control_group_left_show_hide;
+	EButtonGroup* pointer_to_control_group_mid_import;
+	EButtonGroup* pointer_to_control_group_mid_versions;
+	EButtonGroup* pointer_to_control_group_mid_show_hide_cosmetic;
 
 
 	//color section
-	EntityButton*					pointer_to_color_button[3];
-	EntityButton*					pointer_to_color_check_button[3];
+	EntityButton* pointer_to_color_button[3];
+	EntityButton* pointer_to_color_check_button[3];
 
 	bool							color_check[3];
-	Helper::HSVRGBAColor**			pointer_to_HRA_color[3];
+	Helper::HSVRGBAColor** pointer_to_HRA_color[3];
 
 	//font size
-	EntityButton*					text_size_button;
-	EntityButton*					text_size_switch_button;
+	EntityButton* text_size_button;
+	EntityButton* text_size_switch_button;
 	bool							text_size_bool;
 	float							text_size;
 
-	EntityButtonVariantRouter*		button_show_hide;
+	EntityButtonVariantRouter* button_show_hide;
 
 
-	EntityButtonFilterSound*		pointer_to_custom_sound_button;
+	EntityButtonFilterSound* pointer_to_custom_sound_button;
 	bool							custom_sound_suppressor_bool;
 
-	EntityButtonFilterSound*		pointer_to_game_sound_button;
+	EntityButtonFilterSound* pointer_to_game_sound_button;
 	bool							game_sound_suppressor_bool;
 
 
 
 	//		MINIMAP ICONS SECTION
-	EntityButtonVariantRouter*		pointer_to_minimap_icon_color_router;
-	EntityButtonVariantRouter*		pointer_to_minimap_icon_size_router;
-	EntityButtonVariantRouter*		pointer_to_minimap_icon_shape_router;
+	EntityButtonVariantRouter* pointer_to_minimap_icon_color_router;
+	EntityButtonVariantRouter* pointer_to_minimap_icon_size_router;
+	EntityButtonVariantRouter* pointer_to_minimap_icon_shape_router;
 
 
 
@@ -207,12 +237,12 @@ class EButtonGroupFilterBlockAsText : public EButtonGroup
 class EButtonGroupSoundList : public EButtonGroup
 {
 public:
-	EButtonGroup*				part_with_list;
-	ETextArea*					input_field;
+	EButtonGroup* part_with_list;
+	ETextArea* input_field;
 
 	EButtonGroupSoundList(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	std::vector<ENamedSound*>*	pointer_to_sound_list;
+	std::vector<ENamedSound*>* pointer_to_sound_list;
 
 	data_action_pointer			action_on_select_for_button;
 	//EntityButton
@@ -257,6 +287,7 @@ namespace EDataActionCollection
 	//void 
 }
 
+
 enum FilterAttributeType
 {
 	FILTER_ATTRIBUTE_TYPE_NON_LISTED,
@@ -283,7 +314,7 @@ class FilterBlockAttribute
 public:
 	FilterAttributeType			filter_attribute_type;
 	FilterAttributeValueType	filter_attribute_value_type;
-	EFilterRule*				filter_rule;
+	EFilterRule* filter_rule;
 
 	bool have_operator = false;
 
@@ -292,6 +323,7 @@ public:
 	//std::string					data_entity_tag_filtration;
 
 	bool						always_present;
+	float						button_x_size_override = 0.0f;
 };
 
 static void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_group, FilterBlockAttribute* _filter_block_attribute);
@@ -299,7 +331,7 @@ static std::string generate_filter_block_text(EButtonGroup* _button_group);
 
 
 static std::vector<FilterBlockAttribute*> registered_filter_block_attributes;
-static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, std::string _attribute_name, EButtonGroup* _parent);
+static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, FilterBlockAttribute* _attribute, std::string _attribute_name, EButtonGroup* _parent);
 
 #define NSW_registered_rarity_count					4//	1|normal		2|magic			3|rare				4|unique
 #define NSW_registered_altered_gem_quality_count	3//	1|anomalous		2|divergent		3|phantasmal		4|unique
@@ -340,8 +372,8 @@ public:
 
 	static void							parse_filter_text_lines(EButtonGroupFilterBlock* _target_filter_block);
 
-	static RouterVariant*				registered_rarity_router_variants					[NSW_registered_rarity_count];
-	static RouterVariant*				registered_alternate_gem_quality_router_variants	[NSW_registered_altered_gem_quality_count];
+	static RouterVariant* registered_rarity_router_variants[NSW_registered_rarity_count];
+	static RouterVariant* registered_alternate_gem_quality_router_variants[NSW_registered_altered_gem_quality_count];
 
 	static std::vector < std::string>	filter_text_lines;
 

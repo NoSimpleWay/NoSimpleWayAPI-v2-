@@ -56,6 +56,14 @@ void Entity::generate_vertex_buffer_for_all_sprite_layers()
 {	
 	if (be_visible_last_time)
 	{
+		for (ECustomData* custom_data : custom_data_list)
+		for (EClickableArea* clickable_area:custom_data->clickable_area_list)
+		{
+			if (clickable_area->text_area != nullptr)
+			{
+				clickable_area->text_area->change_text(*clickable_area->text_area->stored_text);
+			}
+		}
 		if (!sprite_layer_list.empty())
 		{
 			for (ESpriteLayer* sl : sprite_layer_list)

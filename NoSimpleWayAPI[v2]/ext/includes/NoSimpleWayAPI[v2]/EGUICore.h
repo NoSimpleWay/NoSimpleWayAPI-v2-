@@ -211,7 +211,11 @@ enum class ChildElementsAlignDirection
 	TOP_TO_BOTTOM
 };
 
-constexpr float DISTANCE_BETWEEN_BUTTONS = 5.0f;
+constexpr float BUTTON_FORCE_FIELD_SIZE = 2.0f;
+
+constexpr auto NSW_RECURSIVE			= true;
+constexpr auto NSW_ONLY_TARGET			= false;
+
 class EButtonGroup
 {
 public:
@@ -289,11 +293,13 @@ public:
 	void realign_all_buttons();
 
 	void align_button_in_gabarite(std::vector<EntityButton*>& button_vector, float slider_additional);
-	static void generate_vertex_buffer_for_group(EButtonGroup* _group);
+	static void generate_vertex_buffer_for_group(EButtonGroup* _group, bool _recursive = NSW_RECURSIVE);
 
 	void expand_to_workspace_size();
 
 	static void refresh_button_group(EButtonGroup* _group);
+
+
 
 	static void change_group(EButtonGroup* _group);
 	void refresh_buttons_in_group();
@@ -431,6 +437,8 @@ public:
 	void move_to_foreground();
 
 	ChildElementsAlignDirection child_align_direction = ChildElementsAlignDirection::BOTTOM_TO_TOP;
+
+	float button_size_x_override = 0.0f;
 };
 
 

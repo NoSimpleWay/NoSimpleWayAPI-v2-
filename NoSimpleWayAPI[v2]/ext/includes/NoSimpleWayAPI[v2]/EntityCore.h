@@ -295,7 +295,7 @@ public:
 
 
 
-
+//		ROUTER VARIANT BUTTON
 struct RouterVariant
 {
 public:
@@ -309,6 +309,7 @@ enum class RotateVariantMode
 	SELECT_NEXT,
 	OPEN_CHOOSE_WINDOW
 };
+
 
 class EntityButtonVariantRouter : public EntityButton
 {
@@ -330,11 +331,20 @@ public:
 
 };
 
+
+
+
+
+
+
 class EntityButtonButtonGroupActivator : public EntityButton
 {
 public:
 	EButtonGroup* target_group;
 };
+
+
+
 
 class EntityButtonVariantRouterSelector : public EntityButton
 {
@@ -342,6 +352,17 @@ public:
 	int							id = 0;
 	EButtonGroupRouterVariant*	parent_router_group;
 };
+
+
+class EntityButtonMultiSearch : public EntityButton
+{
+public:
+	std::vector <EButtonGroup*> target_group_list;
+};
+
+
+
+
 
 class ECluster
 {

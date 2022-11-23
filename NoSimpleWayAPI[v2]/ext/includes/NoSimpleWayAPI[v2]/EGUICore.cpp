@@ -449,8 +449,12 @@ void EButtonGroup::draw()
 	{
 		if (group_phantom_redraw)
 		{
-			EButtonGroup::generate_vertex_buffer_for_group(this);
+			//EButtonGroup::change_group(this);
+			
+			EButtonGroup::generate_vertex_buffer_for_group(this, NSW_RECURSIVE);
 			group_phantom_redraw = false;
+
+			//EInputCore::logger_simple_info("Phantom redraw!");
 		}
 
 		//batcher_for_default_draw->draw_call();
@@ -578,9 +582,9 @@ void EButtonGroup::draw()
 						(
 							(EInputCore::key_pressed(GLFW_KEY_TAB))
 							&&
-							(true)
-							)
+							(false)
 						)
+					)
 				{
 					but->have_phantom_draw = false;
 					but->be_visible_last_time = true;
@@ -873,14 +877,10 @@ void EButtonGroup::align_groups()
 		group->region_gabarite->world_position_x = region_gabarite->world_position_x + group->region_gabarite->offset_x;
 
 		if (child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
-		{
-			group->region_gabarite->world_position_y = region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y;
-		}
+		{group->region_gabarite->world_position_y = region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y;}
 		else
-			if (child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
-			{
-				group->region_gabarite->world_position_y = region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y;
-			}
+		if (child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+		{group->region_gabarite->world_position_y = region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y;}
 
 		group->region_gabarite->world_position_z = region_gabarite->world_position_z + group->region_gabarite->offset_z;
 
@@ -1032,14 +1032,38 @@ void EButtonGroup::calculate_culling_lines(EButtonGroup* _group)
 	for (EButtonGroup* group : _group->group_list) { EButtonGroup::calculate_culling_lines(group); }
 }
 
-void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
+void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _recursive)
 {
 
 	if
-		(
-			(_group->can_see_this_group())
-			)
+	(
+		(_group->can_see_this_group())
+	)
 	{
+		_group->group_phantom_redraw = false;
+
+		//	
+		EButtonGroup* parent_group = _group->parent_group;
+		if (parent_group != nullptr)
+		{
+			_group->region_gabarite->world_position_x = parent_group->region_gabarite->world_position_x + _group->region_gabarite->offset_x;
+
+			if (parent_group->child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
+			{
+				_group->region_gabarite->world_position_y = parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y;
+			}
+			else
+				if (parent_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+				{
+					_group->region_gabarite->world_position_y = parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y;
+				}
+
+			_group->region_gabarite->world_position_z = parent_group->region_gabarite->world_position_z + _group->region_gabarite->offset_z;
+		}
+
+		_group->phantom_translate_if_need();
+
+
 		EButtonGroup::generate_brick_textured_bg(_group);
 		_group->need_redraw = false;
 
@@ -1075,7 +1099,10 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group)
 				but->have_phantom_draw = true;
 			}
 
-		for (EButtonGroup* group : _group->group_list) { EButtonGroup::generate_vertex_buffer_for_group(group); }
+		if (_recursive)
+		{
+			for (EButtonGroup* group : _group->group_list) { EButtonGroup::generate_vertex_buffer_for_group(group); }
+		}
 	}
 	else
 	{
@@ -1295,7 +1322,7 @@ void EButtonGroup::check_slider()
 	{
 		if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 		{
-			child_elements_height_summ = ((float)group_list.size() - 1.0f) * BUTTON_GROUP_Y_DISTANCE;
+			child_elements_height_summ = ((float)group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE;
 
 			for (EButtonGroup* group : group_list)
 				//if (!*group->stretch_y_by_parent_size)//constant size
@@ -1397,6 +1424,8 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 	EButtonGroup::generate_vertex_buffer_for_group(_group);
 }
 
+
+
 void EButtonGroup::change_group(EButtonGroup* _group)
 {
 	if (!_group->disable_gabarite)
@@ -1419,6 +1448,7 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 	//	_group->scroll_y = 0.0f;
 	//	//_group->realign_all_buttons();
 	//}
+
 
 	EButtonGroup::generate_vertex_buffer_for_group(_group);
 }
@@ -1449,6 +1479,43 @@ void EButtonGroup::realign_all_buttons()
 
 	std::vector<EntityButton*> button_vector;
 
+	float	total_available_x_space;
+	float	total_button_gabarite_x;
+	int		button_capacity;
+	float	free_space_for_buttons;
+	float	buttons_need_additional_size;
+	
+	if ((slider != nullptr) && (!slider->disabled) && (!slider->disable_draw) && (have_slider))
+	{ slider_additional = slider->button_gabarite->size_x + 3.0f; }
+	else
+	{ slider_additional = 0.0f; }
+
+	if (button_size_x_override > 0.0f)
+	{
+		total_available_x_space			= region_gabarite->size_x - border_left - border_right - slider_additional;
+
+		total_button_gabarite_x			= button_size_x_override + BUTTON_FORCE_FIELD_SIZE * 2.0f;
+		button_capacity					= floor(total_available_x_space / total_button_gabarite_x);
+
+		if (button_capacity > 0)
+		{
+			free_space_for_buttons = total_available_x_space - total_button_gabarite_x * button_capacity - BUTTON_FORCE_FIELD_SIZE * 2.0f;
+			buttons_need_additional_size = floor(free_space_for_buttons / button_capacity);
+
+			for (EntityButton* but : button_list)
+			if (but != slider)
+			{
+				but->button_gabarite->size_x = button_size_x_override + buttons_need_additional_size;
+			}
+		}
+		else
+		for (EntityButton* but : button_list)
+		if (but != slider)
+		{
+			but->button_gabarite->size_x = button_size_x_override;
+		}
+	}
+
 	for (EntityButton* but : button_list)
 	{
 		but->button_gabarite->have_phantom_translation = false;
@@ -1459,12 +1526,12 @@ void EButtonGroup::realign_all_buttons()
 		for (ECustomData* cd : but->custom_data_list)
 			for (EClickableArea* c_area : cd->clickable_area_list)
 			{
-				*c_area->catched_body = false;
-				*c_area->catched_side_down = false;
-				*c_area->catched_side_up = false;
-				*c_area->catched_side_left = false;
+				*c_area->catched_body		= false;
+				*c_area->catched_side_down	= false;
+				*c_area->catched_side_up	= false;
+				*c_area->catched_side_left	= false;
 				*c_area->catched_side_right = false;
-				*c_area->catched_side_mid = false;
+				*c_area->catched_side_mid	= false;
 			}
 	}
 
@@ -1475,12 +1542,12 @@ void EButtonGroup::realign_all_buttons()
 					(!but->fixed_position)
 					||
 					(false)
-					)
+				)
 				&&
 				(!but->disable_draw)
 				&&
 				(!but->disabled)
-				)
+			)
 		{
 
 			bool new_lined = false;
@@ -1492,20 +1559,19 @@ void EButtonGroup::realign_all_buttons()
 				}
 
 
-				but->offset_x = prev_button->offset_x + prev_button->button_gabarite->offset_x + prev_button->button_gabarite->size_x + DISTANCE_BETWEEN_BUTTONS;
+				but->offset_x = prev_button->offset_x + prev_button->button_gabarite->offset_x + prev_button->button_gabarite->size_x + BUTTON_FORCE_FIELD_SIZE * 2.0f;
 				but->offset_y = prev_button->offset_y;
 
 
 
-				if ((slider != nullptr) && (!slider->disabled) && (!slider->disable_draw) && (have_slider)) { slider_additional = slider->button_gabarite->size_x + 1.0f; }
-				else { slider_additional = 0.0f; }
+
 
 
 				//new line
-				if (but->offset_x + but->button_gabarite->size_x + slider_additional >= region_gabarite->size_x)
+				if (but->offset_x + but->button_gabarite->size_x + slider_additional + BUTTON_FORCE_FIELD_SIZE >= region_gabarite->size_x)
 				{
-					but->offset_x = but->parent_button_group->border_left;
-					but->offset_y += prev_button->button_gabarite->size_y + DISTANCE_BETWEEN_BUTTONS;
+					but->offset_x = but->parent_button_group->border_left + BUTTON_FORCE_FIELD_SIZE;
+					but->offset_y += prev_button->button_gabarite->size_y + BUTTON_FORCE_FIELD_SIZE * 2.0f;
 
 					new_lined = true;
 
@@ -1522,7 +1588,7 @@ void EButtonGroup::realign_all_buttons()
 			}
 			else
 			{
-				but->offset_x = but->parent_button_group->border_left;
+				but->offset_x = but->parent_button_group->border_left + BUTTON_FORCE_FIELD_SIZE;
 				but->offset_y = but->parent_button_group->border_bottom;
 
 				//button_vector.push_back(but);
@@ -1626,7 +1692,7 @@ void EButtonGroup::realign_all_buttons()
 
 void EButtonGroup::align_button_in_gabarite(std::vector<EntityButton*>& button_vector, float slider_additional)
 {
-	float total_width = (button_vector.size() - 1) * DISTANCE_BETWEEN_BUTTONS + slider_additional;
+	float total_width = button_vector.size() * BUTTON_FORCE_FIELD_SIZE * 2.0f + slider_additional;
 
 	//EInputCore::logger_param("slider_additional", slider_additional);
 
@@ -1843,8 +1909,8 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 
 
 
-	_group->need_redraw = true;
-	_group->phantom_translate_if_need();
+	//_group->need_redraw = true;
+	_group->recursive_phantom_translate_if_need();
 
 	if (*_group->can_change_style) { _group->selected_style = _style; }
 
@@ -2140,8 +2206,8 @@ void EButtonGroup::translate_content(float _x, float _y, float _z, bool _move_sl
 						&&
 						(!button->disable_draw)
 						)
-					//||
-					//(button == slider)
+						||
+						(button == slider)
 					)
 			{
 				button->translate_entity(_x, _y, _z, true);
@@ -2924,9 +2990,9 @@ void EGUIStyle::set_color_multiplier(float _r, float _g, float _b, float _a)
 
 EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_button_group(EWindow* _target_window, EntityButtonVariantRouter* _router_button)
 {
-	int elements_count = round(_router_button->router_variant_list.size() / 2.0f);
+	int elements_count = ceil(_router_button->router_variant_list.size() / 2.0f);
 
-	float y_size = min (elements_count * _router_button->button_gabarite->size_y + DISTANCE_BETWEEN_BUTTONS * (elements_count - 1) + 40.0f, 310.0f);
+	float y_size = min (elements_count * _router_button->button_gabarite->size_y + BUTTON_FORCE_FIELD_SIZE * 2.0f * elements_count + 40.0f, 310.0f);
 	//EInputCore::logger_simple_info("ZZZ");
 
 	//		MAIN GROUP

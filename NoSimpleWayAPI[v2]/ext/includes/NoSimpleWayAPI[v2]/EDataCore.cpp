@@ -416,13 +416,28 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 
 void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	EGUIStyle::active_style = ((EntityButton*)_entity)->parent_button_group->selected_style;
+	
 	for (EWindow* window : EWindow::window_list)
-		for (EButtonGroup* group : window->button_group_list)
-		{
-			EButtonGroup::change_style(group, ((EntityButton*)_entity)->parent_button_group->selected_style);
+	for (EButtonGroup* group : window->button_group_list)
+	{
+		EButtonGroup::change_style(group, ((EntityButton*)_entity)->parent_button_group->selected_style);
+	}
 
-			EButtonGroup::refresh_button_group(group);
-		}
+	for (EWindow* w : EWindow::window_list)
+	{
+		NS_EGraphicCore::refresh_autosize_groups(w);
+	}
+
+
+
+	for (EWindow* window : EWindow::window_list)
+	for (EButtonGroup* group : window->button_group_list)
+	{
+		EButtonGroup::refresh_button_group(group);
+		//group->group_phantom_redraw = true;
+	}
+
 }
 
 void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -672,59 +687,62 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 
 void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _text_area)
 {
-	auto		multisearch_data_container = static_cast<EDataContainer_Button_MultiGroupButtonSearcher*>(_text_area->parent_clickable_region->parent_custom_data->data_container);
-	std::string	inputed_text = *_text_area->stored_text;
+	if (_text_area->parent_entity != nullptr)
+	{
+		auto		multisearch_data_container = static_cast<EntityButtonMultiSearch*>(_text_area->parent_entity);
+		std::string	inputed_text = *_text_area->stored_text;
 
-	bool match = false;
+		bool match = false;
 
-	//std::string inputed_text = EStringUtils::to_lower(target_text);
+		//std::string inputed_text = EStringUtils::to_lower(target_text);
 
-	for (EButtonGroup* button_group : multisearch_data_container->target_group_list)
-		for (EntityButton* but : button_group->button_list)
-			if (but != button_group->slider)
-			{
-				match = false;
+		for (EButtonGroup* button_group : multisearch_data_container->target_group_list)
+			for (EntityButton* but : button_group->button_list)
+				if (but != button_group->slider)
+				{
+					match = false;
 
-				for (ECustomData* c_data : but->custom_data_list)
-					for (EClickableArea* c_area : c_data->clickable_area_list)
-						if (c_area->text_area != nullptr)
-						{
-							//stored text
-							if (EStringUtils::A_contains_B_ignore_case(*c_area->text_area->stored_text, inputed_text))
+					for (ECustomData* c_data : but->custom_data_list)
+						for (EClickableArea* c_area : c_data->clickable_area_list)
+							if (c_area->text_area != nullptr)
 							{
-								match = true;
-							}
-
-							//search on localisations text
-							for (int i = 0; i < NSW_languages_count; i++)
-							{
-								if (EStringUtils::A_contains_B_ignore_case(c_area->text_area->localisation_text.localisations[i], inputed_text))
+								//stored text
+								if (EStringUtils::A_contains_B_ignore_case(*c_area->text_area->stored_text, inputed_text))
 								{
 									match = true;
 								}
+
+								//search on localisations text
+								for (int i = 0; i < NSW_languages_count; i++)
+								{
+									if (EStringUtils::A_contains_B_ignore_case(c_area->text_area->localisation_text.localisations[i], inputed_text))
+									{
+										match = true;
+									}
+								}
+
+								//base name
+								if (EStringUtils::A_contains_B_ignore_case(c_area->text_area->localisation_text.base_name, inputed_text))
+								{
+									match = true;
+								}
+
+								if (match)
+								{
+									but->disabled = false;
+									but->disable_draw = false;
+								}
+								else
+								{
+									but->disabled = true;
+									but->disable_draw = true;
+								}
 							}
 
-							//base name
-							if (EStringUtils::A_contains_B_ignore_case(c_area->text_area->localisation_text.base_name, inputed_text))
-							{
-								match = true;
-							}
-
-							if (match)
-							{
-								but->disabled = false;
-								but->disable_draw = false;
-							}
-							else
-							{
-								but->disabled = true;
-								but->disable_draw = true;
-							}
-						}
-
-				button_group->scroll_y = 0.0f;
-				EButtonGroup::change_group(button_group);
-			}
+					button_group->scroll_y = 0.0f;
+					EButtonGroup::change_group(button_group);
+				}
+	}
 }
 
 
@@ -1055,10 +1073,10 @@ void EDataActionCollection::action_update_vertical_named_slider(Entity* _entity,
 
 	if
 		(
-			(EInputCore::MOUSE_BUTTON_LEFT)
+			((EInputCore::MOUSE_BUTTON_LEFT)||(data->force_shift))
 			&&
 			(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
-			)
+		)
 	{
 		if
 			(

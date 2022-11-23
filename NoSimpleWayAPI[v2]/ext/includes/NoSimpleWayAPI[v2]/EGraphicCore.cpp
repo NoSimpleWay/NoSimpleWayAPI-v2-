@@ -107,6 +107,12 @@ namespace NS_DefaultGabarites
 	ETextureGabarite* texture_gabarite_normal_map_placeholder;
 	ETextureGabarite* texture_gabarite_gloss_map_placeholder;
 	ETextureGabarite* texture_gabarite_skydome;
+
+	ETextureGabarite* texture_bool_switcher_activated_box;
+	ETextureGabarite* texture_bool_switcher_deactivated_box;
+
+	ETextureGabarite* texture_button_radiance;
+	ETextureGabarite* texture_button_radiance_dot;
 }
 ERenderBatcher::ERenderBatcher()
 {
@@ -694,15 +700,21 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 	NS_DefaultGabarites::texture_gabarite_white_pixel = NS_EGraphicCore::put_texture_to_atlas("data/textures/white_pixel.png", NS_EGraphicCore::default_texture_atlas);
 
-	//NS_DefaultGabarites::texture_gabarite_gudron						= NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
-	//NS_DefaultGabarites::texture_rusted_bronze							= NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
-	//NS_DefaultGabarites::texture_lead_and_gold							= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
-	//NS_DefaultGabarites::texture_black_marble							= NS_EGraphicCore::put_texture_to_atlas("data/textures/Black_marble.png", NS_EGraphicCore::default_texture_atlas);
-//	NS_DefaultGabarites::texture_dark_spruce							= NS_EGraphicCore::put_texture_to_atlas("data/textures/Dark_spruce.png", NS_EGraphicCore::default_texture_atlas);
-	//NS_DefaultGabarites::texture_dark_spruce							= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
-	//NS_DefaultGabarites::texture_lapis_wood								= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_gabarite_gudron				= NS_EGraphicCore::put_texture_to_atlas("data/textures/gudron_roof.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_rusted_bronze				= NS_EGraphicCore::put_texture_to_atlas("data/textures/Rusted_bronze.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/lead_and_gold/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_black_marble					= NS_EGraphicCore::put_texture_to_atlas("data/textures/Black_marble.png", NS_EGraphicCore::default_texture_atlas);
+//	NS_DefaultGabarites::texture_dark_spruce					= NS_EGraphicCore::put_texture_to_atlas("data/textures/Dark_spruce.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_dark_spruce					= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
+	//NS_DefaultGabarites::texture_lapis_wood					= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
 
-	NS_DefaultGabarites::texture_gabarite_skydome = NS_EGraphicCore::put_texture_to_atlas("data/textures/skydome.png", NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_gabarite_skydome				= NS_EGraphicCore::put_texture_to_atlas("data/textures/skydome.png",			NS_EGraphicCore::default_texture_atlas);
+
+	NS_DefaultGabarites::texture_bool_switcher_activated_box	= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/box_switcher_on.png",		NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_bool_switcher_deactivated_box	= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/box_switcher_off.png",		NS_EGraphicCore::default_texture_atlas);
+	
+	NS_DefaultGabarites::texture_button_radiance				= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/radiance_button.png",		NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_button_radiance_dot			= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/radiance_button_dot.png",	NS_EGraphicCore::default_texture_atlas);
 	//NS_DefaultGabarites::texture_slider_bg_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 
 	NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_NEAREST);
