@@ -641,6 +641,7 @@ void EButtonGroup::draw()
 
 
 		for (EButtonGroup* group : group_list) { group->draw(); }
+		
 
 
 
@@ -734,7 +735,7 @@ void EButtonGroup::draw()
 				}
 		}
 
-
+		for (EButtonGroup* group : group_list) { group->post_draw(); }
 
 
 		NS_EGraphicCore::pbr_batcher->draw_call();
@@ -763,6 +764,10 @@ void EButtonGroup::draw()
 
 		//draw_second_pass();
 	}
+}
+
+void EButtonGroup::post_draw()
+{
 }
 
 void EButtonGroup::draw_second_pass()
@@ -1506,6 +1511,18 @@ void EButtonGroup::realign_all_buttons()
 			if (but != slider)
 			{
 				but->button_gabarite->size_x = button_size_x_override + buttons_need_additional_size;
+
+				for (ECustomData*		custom_data:	but->custom_data_list)
+				for (EClickableArea*	clickable_area:	custom_data->clickable_area_list)
+				{
+					if (clickable_area->text_area != nullptr)
+					{
+						if (clickable_area->text_area->localisation_text.base_name != "")
+						{
+							clickable_area->text_area->change_text(clickable_area->text_area->localisation_text.localisations[NSW_localisation_EN]);
+						}
+					}
+				}
 			}
 		}
 		else
@@ -1513,6 +1530,19 @@ void EButtonGroup::realign_all_buttons()
 		if (but != slider)
 		{
 			but->button_gabarite->size_x = button_size_x_override;
+
+			for (ECustomData*		custom_data:	but->custom_data_list)
+			for (EClickableArea*	clickable_area:	custom_data->clickable_area_list)
+			{
+				if (clickable_area->text_area != nullptr)
+				{
+					if (clickable_area->text_area->localisation_text.base_name != "")
+					{
+						clickable_area->text_area->change_text(clickable_area->text_area->localisation_text.localisations[NSW_localisation_EN]);
+					}
+				}
+			}
+
 		}
 	}
 

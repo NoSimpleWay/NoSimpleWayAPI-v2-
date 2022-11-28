@@ -276,6 +276,7 @@ public:
 	virtual void update(float _d);
 	//virtual void post_update(float _d);
 	virtual void draw();
+	virtual void post_draw();
 	void draw_second_pass();
 
 	float min_size_y = 10.0f;

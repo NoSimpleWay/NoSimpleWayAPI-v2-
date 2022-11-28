@@ -115,10 +115,11 @@ public:
 class EntityButtonFilterSound : public EntityButtonForFilterBlock
 {
 public:
-	ENamedSound* target_sound;
+	ENamedSound*			stored_sound;
 	//irrklang::ISoundSource* target_sound;
 	std::string				full_path;
-	EButtonGroupSoundList* target_sound_group;
+	EButtonGroupSoundList*	target_sound_group;
+	~EntityButtonFilterSound();
 
 
 };
@@ -221,7 +222,7 @@ public:
 	bool							minimap_icon_color_suppressor_bool;
 
 	//EButtonGroupFilterBlockAsText*	target_filter_block_as_text_group;
-
+	void post_draw();
 	void update(float _d);
 };
 
@@ -242,9 +243,10 @@ public:
 
 	EButtonGroupSoundList(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	std::vector<ENamedSound*>* pointer_to_sound_list;
+	std::vector<ENamedSound*>*	pointer_to_sound_list;
 
 	data_action_pointer			action_on_select_for_button;
+	EntityButtonFilterSound*	target_sound_button;
 	//EntityButton
 	void refresh_sound_list();
 };
@@ -277,6 +279,7 @@ namespace EDataActionCollection
 	void action_play_attached_sound(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_invoke_button_action_in_sound_group(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_show_hide_cosmetic_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_sound_for_target_button(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 

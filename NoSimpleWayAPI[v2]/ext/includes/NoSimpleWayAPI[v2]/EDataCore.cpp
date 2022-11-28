@@ -1073,7 +1073,7 @@ void EDataActionCollection::action_update_vertical_named_slider(Entity* _entity,
 
 	if
 		(
-			((EInputCore::MOUSE_BUTTON_LEFT)||(data->force_shift))
+			(EInputCore::MOUSE_BUTTON_LEFT)
 			&&
 			(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
 		)
@@ -1083,7 +1083,9 @@ void EDataActionCollection::action_update_vertical_named_slider(Entity* _entity,
 				(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 				||
 				(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
-				)
+				||
+				(data->force_shift)
+			)
 		{
 			data->current_value += (EInputCore::MOUSE_SPEED_X / NS_EGraphicCore::current_zoom * 0.1f) / data->operable_area_size_x;
 		}

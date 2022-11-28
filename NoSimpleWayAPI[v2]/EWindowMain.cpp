@@ -415,23 +415,23 @@ void EDataActionCollection::action_play_attached_sound(Entity* _entity, ECustomD
 {
 	if
 		(
-			(static_cast<EntityButtonFilterSound*>(_entity)->target_sound != nullptr)
+			(static_cast<EntityButtonFilterSound*>(_entity)->stored_sound != nullptr)
 			&&
-			(static_cast<EntityButtonFilterSound*>(_entity)->target_sound->sound != nullptr)
+			(static_cast<EntityButtonFilterSound*>(_entity)->stored_sound->sound != nullptr)
 			)
 	{
-		static_cast<EntityButtonFilterSound*>(_entity)->target_sound->sound->setDefaultVolume(0.2f);
-		ESound::engine->play2D(((EntityButtonFilterSound*)_entity)->target_sound->sound);
+		static_cast<EntityButtonFilterSound*>(_entity)->stored_sound->sound->setDefaultVolume(0.2f);
+		ESound::engine->play2D(((EntityButtonFilterSound*)_entity)->stored_sound->sound);
 	}
 	else
 	{
-		if (static_cast<EntityButtonFilterSound*>(_entity)->target_sound == nullptr)
+		if (static_cast<EntityButtonFilterSound*>(_entity)->stored_sound == nullptr)
 		{
 			EInputCore::logger_simple_error("target named sound is NULL!");
 		}
 		else
 		{
-			if (static_cast<EntityButtonFilterSound*>(_entity)->target_sound->sound == nullptr)
+			if (static_cast<EntityButtonFilterSound*>(_entity)->stored_sound->sound == nullptr)
 			{
 				EInputCore::logger_simple_error("stored sound is NULL!");
 			}
@@ -477,6 +477,11 @@ void EDataActionCollection::action_show_hide_cosmetic_blocks(Entity* _entity, EC
 
 
 	EButtonGroup::change_group(but->parent_filter_block);
+}
+
+void EDataActionCollection::action_select_this_sound_for_target_button(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+
 }
 
 void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -2531,6 +2536,9 @@ EWindowMain::EWindowMain()
 		EButtonGroup::refresh_button_group(main_sound_group);
 	}	//loot-filter list
 
+
+
+
 	//loot filters list
 	{
 		main_button_group = EButtonGroup::create_root_button_group
@@ -2723,7 +2731,7 @@ EWindowMain::EWindowMain()
 			&EDataActionCollection::action_open_custom_sound_list,
 			NS_EGraphicCore::load_from_textures_folder("button_custom_sound")
 		);
-		button_activator->target_group = EWindowMain::world_parameters;
+		//button_activator->target_group = EWindowMain::world_parameters;
 		top_section->button_list.push_back(button_activator);
 		//////////////////////////////////////////////////////
 
@@ -4092,7 +4100,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//listed_condition_segment->button_size_x_override = 200.0f;
 	//root group data ontaner
 	whole_filter_block_group->pointer_to_listed_segment = listed_condition_segment;
-
+	listed_condition_segment->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
 
 	workspace_part->add_group(listed_condition_segment);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -4107,7 +4115,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 	EButtonGroup*
 		sound_cosmetic_segment
-		= EButtonGroup::create_default_button_group(new ERegionGabarite(200.0f, 160.0f), EGUIStyle::active_style)
+		= EButtonGroup::create_default_button_group(new ERegionGabarite(178.0f, 160.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 	sound_cosmetic_segment->is_active = false;
@@ -4125,7 +4133,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
 		minimap_cosmetic_segment
-		= EButtonGroup::create_default_button_group(new ERegionGabarite(200.0f, 160.0f), EGUIStyle::active_style)
+		= EButtonGroup::create_default_button_group(new ERegionGabarite(156.0f, 160.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 	minimap_cosmetic_segment->is_active = false;
@@ -4157,7 +4165,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	(
 		new ERegionGabarite(150.0f, 22.0f),
 		sound_cosmetic_segment,
-		nullptr,
+		&EDataActionCollection::action_open_custom_sound_list,
 		"User sound"
 	);
 	sound_button->suppressor = &whole_filter_block_group->custom_sound_suppressor_bool;
@@ -4231,7 +4239,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
 		button_variant_FB_router->make_as_default_button_with_icon
 		(
-			new ERegionGabarite(150.0f, 22.0f),
+			new ERegionGabarite(124.0f, 22.0f),
 			minimap_cosmetic_segment,
 			&EDataActionCollection::action_rotate_variant,
 			nullptr
@@ -6242,6 +6250,33 @@ void EButtonGroupTopControlSection::draw()
 	//std::cout << "!";
 }
 
+void EButtonGroupFilterBlock::post_draw()
+{
+	EButtonGroup::post_draw();
+
+	if (button_show_hide->selected_variant == 0)
+	{
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GRAY, 0.5f);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			//x pos
+			region_gabarite->world_position_x,
+
+			//y pos
+			region_gabarite->world_position_y,
+
+			region_gabarite->size_x,
+			region_gabarite->size_y,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+	}
+}
+
 void EButtonGroupFilterBlock::update(float _d)
 {
 	EButtonGroup::update(_d);
@@ -6315,7 +6350,7 @@ void EButtonGroupSoundList::refresh_sound_list()
 			);
 
 			sound_button->full_path = n_sound->full_path;
-			sound_button->target_sound = n_sound;
+			sound_button->stored_sound = n_sound;
 			sound_button->target_sound_group = EButtonGroup::sound_list_group;
 
 			Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
@@ -6331,4 +6366,9 @@ void EButtonGroupSoundList::refresh_sound_list()
 
 EntityButtonVariantRouterForFilterBlock::~EntityButtonVariantRouterForFilterBlock()
 {
+}
+
+EntityButtonFilterSound::~EntityButtonFilterSound()
+{
+	ESound::engine->removeSoundSource(stored_sound->sound);
 }

@@ -188,7 +188,7 @@ int main()
 		//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
 		NS_EGraphicCore::gl_set_blend_mode_default();
 		
-		NS_EGraphicCore::current_zoom = round(NS_EGraphicCore::stored_zoom * 20.0f) / 20.0f;
+		NS_EGraphicCore::current_zoom = round(NS_EGraphicCore::stored_zoom * 50.0f) / 50.0f;
 		NS_EGraphicCore::current_zoom = max(NS_EGraphicCore::current_zoom, 0.5f);
 
 		if (!EInputCore::MOUSE_BUTTON_LEFT)
