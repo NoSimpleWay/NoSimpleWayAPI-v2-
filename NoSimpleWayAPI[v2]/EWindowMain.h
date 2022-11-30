@@ -115,7 +115,7 @@ public:
 class EntityButtonFilterSound : public EntityButtonForFilterBlock
 {
 public:
-	ENamedSound*			stored_sound;
+	ENamedSound*			stored_named_sound;
 	//irrklang::ISoundSource* target_sound;
 	std::string				full_path;
 	EButtonGroupSoundList*	target_sound_group;
@@ -238,8 +238,8 @@ class EButtonGroupFilterBlockAsText : public EButtonGroup
 class EButtonGroupSoundList : public EButtonGroup
 {
 public:
-	EButtonGroup* part_with_list;
-	ETextArea* input_field;
+	EButtonGroup*	part_with_list;
+	ETextArea*		input_field;
 
 	EButtonGroupSoundList(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
@@ -276,6 +276,7 @@ namespace EDataActionCollection
 	void action_add_text_as_item(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_add_new_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_custom_sound_list(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_ingame_sound_list(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_play_attached_sound(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_invoke_button_action_in_sound_group(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_show_hide_cosmetic_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -308,7 +309,10 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER,
 	FILTER_ATTRIBUTE_VALUE_TYPE_COLOR,
 	FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON,
-	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_SLIDER
+	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_SLIDER,
+	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_INGAME_SOUND,
+	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND
+
 
 };
 
@@ -366,7 +370,9 @@ public:
 	static std::string path_of_exile_folder;
 
 	static void							load_loot_filter_list();
+
 	static void							load_custom_sound_list();
+	static void							load_ingame_sound_list();
 
 	static bool							text_is_condition(std::string& buffer_text);
 
