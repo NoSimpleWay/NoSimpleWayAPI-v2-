@@ -381,9 +381,9 @@ void EDataActionCollection::action_add_new_filter_block(Entity* _entity, ECustom
 {
 	int position = -1;
 
-	EDataContainer* base_container = ((EntityButton*)_entity)->parent_button_group->root_group->data_container;
-	EDataContainer_Group_AddContentToFilterBlock* data_container = (EDataContainer_Group_AddContentToFilterBlock*)base_container;
-	EButtonGroupFilterBlock* filter_block = data_container->target_filter_block;
+	EDataContainer*									base_container = ((EntityButton*)_entity)->parent_button_group->root_group->data_container;
+	EDataContainer_Group_AddContentToFilterBlock*	data_container = (EDataContainer_Group_AddContentToFilterBlock*)base_container;
+	EButtonGroupFilterBlock*						filter_block = data_container->target_filter_block;
 
 	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
 	{
@@ -522,6 +522,7 @@ void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _tex
 			filter_block->is_active = true;
 			//filter_block->region_gabarite->size_y = 100.0f;
 			filter_block->disable_gabarite = false;
+			
 		}
 		else
 		{
@@ -531,8 +532,10 @@ void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _tex
 		}
 
 		//group->recursive_phantom_translate_if_need();
+		//filter_block->scroll_y = 0.0f;
 	}
 
+	EWindowMain::loot_filter_editor->scroll_y = 0.0f;
 	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
 	//EButtonGroup::change_group(EWindowMain::loot_filter_editor);
 }
@@ -1473,7 +1476,7 @@ EWindowMain::EWindowMain()
 		search_button = new EntityButton();
 		search_button->make_default_button_with_edible_text
 		(
-			new ERegionGabarite(128.0f, 30.0f),
+			new ERegionGabarite(256.0f, 30.0f),
 			main_button_group,
 			nullptr,
 			""
@@ -5341,6 +5344,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	// // // // // // //// // // // // // //// // // // // // //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	EInputCore::logger_param("size of subgroups", workspace_part->group_list.size());
 	return whole_filter_block_group;
 }
 

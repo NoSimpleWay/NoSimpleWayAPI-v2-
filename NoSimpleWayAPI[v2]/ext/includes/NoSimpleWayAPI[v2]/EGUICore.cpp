@@ -2406,23 +2406,27 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 {
 	if
 		(
+			(_group->is_active)
+			&&
+			(!_group->disable_gabarite)
+			&&
 			(_group->can_be_focused)
 			&&
 			(EButtonGroup::catched_by_mouse(_group))
 			&&
 			(!EInputCore::MOUSE_BUTTON_LEFT)
-			)
+		)
 	{
 		focused_button_group = _group;
 
 		if
-			(
-				(_group->slider != NULL)
-				&&
-				(!_group->slider->disable_draw)
-				&&
-				(EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
-				)
+		(
+			(_group->slider != NULL)
+			&&
+			(!_group->slider->disable_draw)
+			&&
+			(EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
+		)
 		{
 			focused_button_group_with_slider = _group;
 		}
