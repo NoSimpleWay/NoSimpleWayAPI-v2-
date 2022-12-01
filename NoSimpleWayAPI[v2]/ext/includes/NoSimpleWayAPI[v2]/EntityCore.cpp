@@ -61,7 +61,7 @@ void Entity::generate_vertex_buffer_for_all_sprite_layers()
 		{
 			if (clickable_area->text_area != nullptr)
 			{
-				clickable_area->text_area->change_text(*clickable_area->text_area->stored_text);
+				clickable_area->text_area->change_text(clickable_area->text_area->original_text);
 			}
 		}
 		if (!sprite_layer_list.empty())
@@ -97,6 +97,7 @@ void Entity::generate_vertex_buffer_for_all_sprite_layers()
 						//for (ETextArea* ta:c_regio)
 						if (c_region->text_area != nullptr)
 						{
+							//c_region->text_area->change_text(c_region->text_area->original_text);
 							//c_region->text_area->generate_rows();	
 							c_region->text_area->generate_text();
 						}

@@ -165,6 +165,8 @@ int main()
 
 	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))
 	{
+
+
 		ESpriteLayer::data_copies_count = 0;
 		ESpriteLayer::data_copy_calls = 0;
 
@@ -209,6 +211,9 @@ int main()
 		{
 
 		}*/
+
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 		for (EWindow* w : EWindow::window_list)
 		{

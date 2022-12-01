@@ -631,7 +631,7 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 				(data_container->pointer_to_group_with_data_entities != nullptr)
 				&&
 				(data_container->target_rule != nullptr)
-				)
+			)
 		{
 			data_container->pointer_to_group_with_data_entities->scroll_y = 0.0f;
 
@@ -644,7 +644,7 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 					EDataEntity* target_data_entity = but->pointer_to_data_entity;
 					bool matched = false;
 					//if (target_data_entity->)
-					matched = EFilterRule::matched_by_filter_rule(target_data_entity, data_container->target_rule, *_text_area->stored_text);
+					matched = EFilterRule::matched_by_filter_rule(target_data_entity, data_container->target_rule, _text_area->original_text);
 
 
 					//tag_require_match = false;
@@ -690,7 +690,7 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 	if (_text_area->parent_entity != nullptr)
 	{
 		auto		multisearch_data_container = static_cast<EntityButtonMultiSearch*>(_text_area->parent_entity);
-		std::string	inputed_text = *_text_area->stored_text;
+		std::string	inputed_text = _text_area->original_text;
 
 		bool match = false;
 
@@ -707,7 +707,7 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 							if (c_area->text_area != nullptr)
 							{
 								//stored text
-								if (EStringUtils::A_contains_B_ignore_case(*c_area->text_area->stored_text, inputed_text))
+								if (EStringUtils::A_contains_B_ignore_case(c_area->text_area->original_text, inputed_text))
 								{
 									match = true;
 								}

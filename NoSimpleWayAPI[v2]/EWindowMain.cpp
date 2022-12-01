@@ -156,7 +156,7 @@ void EDataActionCollection::action_select_this_text_variant(Entity* _entity, ECu
 	target_text_area->color = clicked_button_text_area->color;
 	target_text_area->localisation_text = clicked_button_text_area->localisation_text;
 
-	target_text_area->change_text(*clicked_button_text_area->stored_text);
+	target_text_area->change_text(clicked_button_text_area->original_text);
 
 	root_group->is_active = false;
 }
@@ -366,9 +366,9 @@ void EDataActionCollection::action_add_text_as_item(Entity* _entity, ECustomData
 	data_entity_container->pointer_to_group_item_receiver->button_list.push_back(wide_button);
 
 	ELocalisationText l_text;
-	l_text.base_name = *data_entity_container->filter_text_area->stored_text;
-	l_text.localisations[NSW_localisation_EN] = *data_entity_container->filter_text_area->stored_text;
-	l_text.localisations[NSW_localisation_RU] = *data_entity_container->filter_text_area->stored_text;
+	l_text.base_name = data_entity_container->filter_text_area->original_text;
+	l_text.localisations[NSW_localisation_EN] = data_entity_container->filter_text_area->original_text;
+	l_text.localisations[NSW_localisation_RU] = data_entity_container->filter_text_area->original_text;
 
 	Entity::get_last_text_area(wide_button)->localisation_text = l_text;
 	Entity::get_last_text_area(wide_button)->change_text(l_text.localisations[NSW_localisation_EN]);
@@ -517,7 +517,7 @@ void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _tex
 	{
 		EButtonGroupFilterBlock* filter_block = static_cast<EButtonGroupFilterBlock*>(group);
 
-		if (EWindowMain::filter_block_contains_this_text(filter_block, _text_area->stored_text))
+		if (EWindowMain::filter_block_contains_this_text(filter_block, &_text_area->original_text))
 		{
 			filter_block->is_active = true;
 			//filter_block->region_gabarite->size_y = 100.0f;
@@ -1483,6 +1483,11 @@ EWindowMain::EWindowMain()
 		);
 		search_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_search_filter_block_text);
 
+		search_button->main_text_area->gray_text = new ELocalisationText();
+		search_button->main_text_area->gray_text->localisations[NSW_localisation_EN] = "Search...";
+		search_button->main_text_area->gray_text->localisations[NSW_localisation_RU] = "Поиск...";
+		//search_button->main_text_area->change_text("");
+
 		main_button_group->button_list.push_back(search_button);
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		button_group_list.push_back(main_button_group);
@@ -1886,19 +1891,26 @@ EWindowMain::EWindowMain()
 		jc_button_group->stretch_y_by_parent_size = false;
 
 		jc_button = new EntityButton();
-		jc_button->make_as_default_clickable_button
+		jc_button->make_default_button_with_edible_text
 		(
 			new ERegionGabarite(700.0f, 25.0f),
 			jc_button_group,
-			nullptr
+			nullptr,
+			""
 		);
+
+		jc_data_container_for_search_group->filter_text_area = jc_button->main_text_area;
+
+		jc_button->main_text_area->gray_text = new ELocalisationText();
+		jc_button->main_text_area->gray_text->localisations[NSW_localisation_EN] = "Type search text...";
+		jc_button->main_text_area->gray_text->localisations[NSW_localisation_RU] = "Напишите текст поиска...";
+
+		jc_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_search_data_entity_text);
+		
 		jc_data_container_for_search_group->pointer_to_search_bar = jc_button;
 
-		jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "");
-		jc_data_container_for_search_group->filter_text_area = jc_text_area;
-		jc_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_search_data_entity_text);
-		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 		jc_button_group->button_list.push_back(jc_button);
+
 
 
 
@@ -2307,6 +2319,10 @@ EWindowMain::EWindowMain()
 			""
 		);
 
+		button_multisearch->main_text_area->gray_text = new ELocalisationText();
+		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_EN] = "Type attribute name...";
+		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_RU] = "Напишите название атрибута...";
+
 		//add pointer to clickable are in "add content to filter block group"
 		content_group_data_container->typing_text_area = EntityButton::get_last_text_area(button_multisearch);
 
@@ -2666,6 +2682,11 @@ EWindowMain::EWindowMain()
 			nullptr,
 			""
 		);
+
+		button_multisearch->main_text_area->gray_text = new ELocalisationText();
+		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_EN] = "Type sound name...";
+		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_RU] = "Напишите название звука...";
+
 		button_multisearch->target_group_list.push_back(sound_list_part);
 		EntityButton::get_last_text_area(button_multisearch)->action_on_change_text.push_back(&EDataActionCollection::action_type_text_multiblock_searcher);
 
@@ -2746,6 +2767,11 @@ EWindowMain::EWindowMain()
 			nullptr,
 			""
 		);
+
+		button_multisearch->main_text_area->gray_text = new ELocalisationText();
+		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_EN] = "Type loot-filter name...";
+		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_RU] = "Напишите название лут-фильтра...";
+
 		button_multisearch->target_group_list.push_back(loot_filter_list_part);
 		EntityButton::get_last_text_area(button_multisearch)->action_on_change_text.push_back(&EDataActionCollection::action_type_text_multiblock_searcher);
 
@@ -6257,6 +6283,10 @@ void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_f
 				text
 			);
 
+			jc_button->main_text_area->gray_text = new ELocalisationText();
+			jc_button->main_text_area->gray_text->localisations[NSW_localisation_EN] = "value";
+			jc_button->main_text_area->gray_text->localisations[NSW_localisation_RU] = "значение";
+
 			jc_button->parent_filter_block = _target_filter_block;
 			jc_button->used_filter_block_attribute = _filter_block_attribute;
 
@@ -6377,7 +6407,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 		if (container->target_button_with_condition != nullptr)
 		{
 			result_string += " ";
-			result_string += *(Entity::get_last_text_area(container->target_button_with_condition)->stored_text);
+			result_string += (Entity::get_last_text_area(container->target_button_with_condition)->original_text);
 		}
 
 		//bool attribute
@@ -6403,7 +6433,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 				)
 		{
 			result_string += " ";
-			result_string += *(Entity::get_last_text_area(container->target_button_with_value)->stored_text);
+			result_string += (Entity::get_last_text_area(container->target_button_with_value)->original_text);
 		}
 
 		if (container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)

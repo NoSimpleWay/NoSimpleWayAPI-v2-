@@ -357,6 +357,13 @@ void ETextArea::generate_rows()
 	bool stop_writing = false;
 	/// /// /// /// /// /// ///
 
+	//if ((*stored_text == "") && (gray_text != nullptr))
+	//{
+	//	*stored_text = gray_text->localisations[NSW_localisation_EN];
+
+	//	indicate_gray_text = true;
+	//}
+
 	if (!row.empty())
 	{
 		for (int i = 0; i < row.size(); i++)
@@ -472,7 +479,10 @@ void ETextArea::generate_text()
 		)
 	{
 		//if (*selected_color_table == TextColorArray::FREE)
+		if (!indicate_gray_text)
 		{NS_EGraphicCore::set_active_color(&color); }
+		else
+		{NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GRAY); }
 
 		sprite_layer->last_buffer_id = 0;
 
@@ -652,6 +662,18 @@ void ETextArea::generate_text()
 	}
 }
 
+std::string ETextArea::get_stored_text()
+{
+	if (!indicate_gray_text)
+	{
+		return *stored_text;
+	}
+	else
+	{
+		return "";
+	}
+}
+
 void ETextArea::set_font(EFont* _font)
 {
 	font = _font;
@@ -704,7 +726,9 @@ void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_co
 
 void ETextArea::update(float _d)
 {
-	int glyph_id = 0;
+	//if (false)
+	{
+		int glyph_id = 0;
 
 	if (*flash_line_cooldown > 0)
 	{
@@ -737,58 +761,54 @@ void ETextArea::update(float _d)
 	if (!font_glyph_list.empty())
 	{
 		if
-		(
-			(*can_be_edited)
-			&&
-			(EInputCore::MOUSE_BUTTON_LEFT)
-			&&
 			(
-				(EClickableArea::active_clickable_region == nullptr)
-				||
-				(EClickableArea::active_clickable_region == parent_clickable_region)
+				(*can_be_edited)
+				&&
+				(EInputCore::MOUSE_BUTTON_LEFT)
+				&&
+				(
+					(EClickableArea::active_clickable_region == nullptr)
+					||
+					(EClickableArea::active_clickable_region == parent_clickable_region)
+				)
+				&&
+				(is_overlapped_by_mouse())
+				//&&
+				//(NS_FONT_UTILS::active_text_area == nullptr)
 			)
-			//&&
-			//(NS_FONT_UTILS::active_text_area == nullptr)
-		)
-		{text_area_set_active_and_select_glyph();}
+		{
+			text_area_set_active_and_select_glyph();
+		}
 	}
 
 	if
-	(
+		(
 			(EInputCore::MOUSE_BUTTON_LEFT)
-	)
+		)
 	{
 		//click into gabarite
 		if
-		(
-			//only editable text areas can be set as active
-			(*can_be_edited)
-			&&
 			(
-				//outclick protection
-				//or
-				//click direct to text area without any active regions on another buttons 
-				(outclick_protection)
-				||
+				//only editable text areas can be set as active
+				(*can_be_edited)
+				&&
 				(
+					//outclick protection
+					//or
+					//click direct to text area without any active regions on another buttons 
+					(outclick_protection)
+					||
 					(
-						(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_x)
+						(is_overlapped_by_mouse())
 						&&
-						(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_x + region_gabarite->size_x)
-						&&
-						(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_y)
-						&&
-						(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_y + region_gabarite->size_y)
-					)
-					&&
-					(
-						(EClickableArea::active_clickable_region == nullptr)
-						||
-						(EClickableArea::active_clickable_region == parent_clickable_region)
+						(
+							(EClickableArea::active_clickable_region == nullptr)
+							||
+							(EClickableArea::active_clickable_region == parent_clickable_region)
+							)
+						)
 					)
 				)
-			)
-		)
 		{
 			activate_this_text_area();
 		}
@@ -802,6 +822,13 @@ void ETextArea::update(float _d)
 				*selected_glyph_position = -1;
 
 				NS_FONT_UTILS::active_text_area = nullptr;
+
+
+				if ((*stored_text == "") && (!indicate_gray_text))
+				{
+					change_text("");
+					indicate_gray_text = true;
+				}
 
 				//this text area is no more as active
 				//if (EClickableArea::active_clickable_region == parent_clickable_region)
@@ -859,20 +886,21 @@ void ETextArea::update(float _d)
 		for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) { dap(this); }
 	}
 
-	//BACKSPACE key - erase left sided symbol
+
 	if
 		(
 			(EInputCore::key_pressed_once(GLFW_KEY_ENTER))
 			&&
 			(*text_area_active)
-		)
+			)
 	{
+		//		ENTER IS NEW LINE
 		if
-		(
-			(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-			||
-			(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
-		)
+			(
+				(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+				||
+				(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
+				)
 		{
 			int target_id = font_glyph_list.at(min(*selected_glyph_position, font_glyph_list.size() - 1))->storer_text_sym_id + 0;
 			//if (!*selected_left_side) { target_id++;}
@@ -897,16 +925,26 @@ void ETextArea::update(float _d)
 			generate_rows();
 			generate_text();
 		}
+		//ENTER IS END TEXT TYPING
 		else
 		{
 			//*selected_glyph_position = -1;
 			*text_area_active = false;
 
 			NS_FONT_UTILS::active_text_area = nullptr;
+
+			if (*stored_text == "")
+			{
+				change_text("");
+				indicate_gray_text = true;
+			}
+
+
 			//EClickableArea::active_clickable_region = nullptr;
 		}
 	}
 
+	//BACKSPACE key - erase left sided symbol
 	if
 		(
 			(
@@ -935,7 +973,7 @@ void ETextArea::update(float _d)
 		if (target_sym_id >= 0)
 		{
 
-			stored_text->erase(target_sym_id, 1);
+			original_text.erase(target_sym_id, 1);
 
 			//std::string ss(target_glyph->sym, 1);
 			//EInputCore::logger_param("IS EMPTY", *font_glyph_list.at(target_glyph_id - 1)->is_empty);
@@ -943,7 +981,7 @@ void ETextArea::update(float _d)
 			//if ((target_glyph_id - 1 >= 0) && (font_glyph_list.at(target_glyph_id - 1)->is_empty)) { (*selected_glyph_position) += 1; }
 			(*selected_glyph_position) -= 1;
 
-			change_text(*stored_text);
+			change_text(original_text);
 
 			//if ((parent_clickable_region != nullptr) && (parent_clickable_region->parent_custom_data != nullptr))
 			//{
@@ -1017,15 +1055,33 @@ void ETextArea::update(float _d)
 
 	*jump_cooldown -= _d;
 }
+}
+
+bool ETextArea::is_overlapped_by_mouse()
+{
+	return
+		(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_x)
+		&&
+		(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_x + region_gabarite->size_x)
+		&&
+		(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= region_gabarite->world_position_y)
+		&&
+		(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= region_gabarite->world_position_y + region_gabarite->size_y);
+}
 
 void ETextArea::activate_this_text_area()
 {
+
+
 	if ((!row.empty()) && (!*text_area_active) && (NS_FONT_UTILS::active_text_area == nullptr))
 	{
 		*text_area_active = true;
 		*selected_glyph_position = font_glyph_list.size() - 1;
 
 		NS_FONT_UTILS::active_text_area = this;
+
+
+		if (original_text == "") { change_text(""); }
 	}
 }
 
@@ -1106,10 +1162,12 @@ void ETextArea::draw()
 
 void ETextArea::text_area_set_active_and_select_glyph()
 {
+
+
 	int glyph_id = 0;
 	for (EFontGlyph* glyph : font_glyph_list)
 	{
-
+		
 
 
 		if
@@ -1140,9 +1198,15 @@ void ETextArea::text_area_set_active_and_select_glyph()
 				//*selected_glyph_position = min(glyph_id, font_glyph_list.size() - 1);
 			}
 
+
 			*text_area_active = true;
 			*selected_glyph_position = min(*selected_glyph_position, font_glyph_list.size() - 1);
 			NS_FONT_UTILS::active_text_area = this;
+
+			if (original_text == "") { change_text(""); }
+
+
+
 			break;
 		}
 
@@ -1279,6 +1343,21 @@ void ETextArea::change_text(std::string _text)
 	char			target_sym = 0;
 	int				sym_id = 0;
 
+	original_text = _text;
+	//EInputCore::logger_param("change text", _text);
+	if
+	(
+		(_text == "")
+		&&
+		(gray_text != nullptr)
+		&&
+		(!(*text_area_active))
+	)
+	{
+		indicate_gray_text = true;
+		_text = gray_text->localisations[NSW_localisation_EN];
+	}
+
 	for (int i = 0; i < _text.length(); i++)
 	{
 		target_sym = _text[i];
@@ -1367,12 +1446,18 @@ void ETextArea::change_text(std::string _text)
 
 	if (stored_text != nullptr)
 	{
+		
 		*stored_text = buffer;
 
 		//if (temp_text != "") { *stored_text += " " + temp_text; }
 		//if (buffer[0] == 'Ì') { EInputCore::logger_param("buffer", buffer); }
 		generate_rows();
 		generate_text();
+
+		//if (indicate_gray_text)
+		//{
+		//	*stored_text = "";
+		//}
 	}
 	//legacy method
 	if (false)

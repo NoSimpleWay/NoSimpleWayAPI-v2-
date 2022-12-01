@@ -18,7 +18,7 @@
 	public:
 		ELocalisationText();
 		std::string base_name = "";
-		std::string localisations[NSW_languages_count] = { "" };
+		std::string localisations[NSW_languages_count] = { "1" };
 	};
 #endif
 
@@ -192,8 +192,11 @@ public:
 
 	ERegionGabarite* region_gabarite;
 
-	std::string* stored_text = new std::string("");
-	ELocalisationText localisation_text;
+	std::string			original_text = "";
+	std::string*		stored_text = new std::string("");
+	ELocalisationText	localisation_text;
+	ELocalisationText*	gray_text;
+	bool				indicate_gray_text = false;
 
 	std::vector<std::string*> row;
 	int* row_count = new int(0);
@@ -203,6 +206,8 @@ public:
 	void change_text(std::string _text);
 	void generate_rows();
 	void generate_text();
+
+	std::string get_stored_text();
 
 	void set_font(EFont* _font);
 	float get_row_width(std::string* _row);
@@ -228,6 +233,7 @@ public:
 	bool outclick_protection = false;
 
 	void update(float _d);
+	bool is_overlapped_by_mouse();
 	void activate_this_text_area();
 	void draw();
 
