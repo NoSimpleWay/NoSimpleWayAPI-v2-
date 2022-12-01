@@ -3266,7 +3266,7 @@ void NS_EGraphicCore::refresh_autosize_groups(EWindow* _window)
 	{
 		//bg->expand_to_workspace_size();
 		//bg->phantom_translate_if_need();
-		bg->recursive_phantom_translate_if_need();
+		//bg->recursive_phantom_translate_if_need();
 	}
 
 	for (EButtonGroup* bg : _window->autosize_group_list)

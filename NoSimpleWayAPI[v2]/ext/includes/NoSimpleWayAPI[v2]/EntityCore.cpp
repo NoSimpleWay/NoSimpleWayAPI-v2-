@@ -556,6 +556,8 @@ void EntityButton::make_as_default_clickable_button(ERegionGabarite* _region_gab
 		EntityButton::get_last_custom_data(this)
 	);
 
+	main_clickable_area = jc_clickable_area;
+
 	jc_clickable_area->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
 	if (_dap != nullptr) { jc_clickable_area->actions_on_click_list.push_back(_dap); }
 	
@@ -655,6 +657,8 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 		*jc_text_area->can_be_edited = false;
 		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+
+		jc_button->main_text_area = jc_text_area;
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		if (_data_entity != nullptr)
@@ -874,6 +878,7 @@ EntityButton* EntityButton::create_named_color_button
 	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_stored_color_as_box);
 	EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_open_color_group);
 
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
 	*jc_text_area->offset_by_gabarite_size_x = 0.0;
 	*jc_text_area->offset_by_text_size_x = 0.0;
@@ -887,6 +892,9 @@ EntityButton* EntityButton::create_named_color_button
 
 	*jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+
+	jc_button->main_text_area = jc_text_area;
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -907,6 +915,8 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 		jc_button,
 		EntityButton::get_last_custom_data(jc_button)
 	);
+
+	jc_button->main_clickable_area = jc_clickable_area;
 
 
 
@@ -956,6 +966,9 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 	//jc_text_area->generate_text();
 
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+
+	jc_button->main_text_area = jc_text_area;
+
 	return jc_button;
 }
 
@@ -972,6 +985,7 @@ EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _re
 		EntityButton::get_last_custom_data(jc_button)
 	);
 
+	jc_button->main_clickable_area = jc_clickable_area;
 
 
 	jc_clickable_area->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
@@ -1051,6 +1065,8 @@ void EntityButton::make_default_button_with_unedible_text(ERegionGabarite* _regi
 
 	*jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
+
+	main_text_area = jc_text_area;
 }
 
 void EntityButton::make_default_button_with_edible_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, std::string _text)
@@ -1072,6 +1088,8 @@ void EntityButton::make_default_button_with_edible_text(ERegionGabarite* _region
 
 	*jc_text_area->can_be_edited = true;
 	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
+
+	main_text_area = jc_text_area;
 }
 
 void EntityButton::make_as_default_button_with_icon(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite)
@@ -1155,6 +1173,8 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 
 		jc_text_area->offset_border[BorderSide::LEFT] = 4.0f;
 	}
+
+	main_text_area = jc_text_area;
 	
 
 	

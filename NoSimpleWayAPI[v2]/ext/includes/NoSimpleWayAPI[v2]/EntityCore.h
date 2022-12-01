@@ -134,6 +134,7 @@ public:
 	EntityButton();
 	virtual ~EntityButton();
 
+	bool disable_force_field = true;
 
 	bool force_draw = true;
 	ERegionGabarite* button_gabarite;
@@ -288,6 +289,9 @@ public:
 	void draw();
 	void update(float _d);
 	bool* suppressor = nullptr;
+
+	ETextArea*		main_text_area;
+	EClickableArea* main_clickable_area;
 
 };
 

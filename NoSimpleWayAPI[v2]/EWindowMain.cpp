@@ -511,6 +511,32 @@ void EDataActionCollection::action_select_this_sound_for_target_button(Entity* _
 
 }
 
+void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _text_area)
+{
+	for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
+	{
+		EButtonGroupFilterBlock* filter_block = static_cast<EButtonGroupFilterBlock*>(group);
+
+		if (EWindowMain::filter_block_contains_this_text(filter_block, _text_area->stored_text))
+		{
+			filter_block->is_active = true;
+			//filter_block->region_gabarite->size_y = 100.0f;
+			filter_block->disable_gabarite = false;
+		}
+		else
+		{
+			filter_block->is_active = false;
+			//filter_block->region_gabarite->size_y = 1.0f;
+			filter_block->disable_gabarite = true;
+		}
+
+		//group->recursive_phantom_translate_if_need();
+	}
+
+	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+	//EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+}
+
 void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	std::string str = "";
@@ -1287,6 +1313,32 @@ EWindowMain::EWindowMain()
 
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "PlayAlertSound";
+	jc_localisation.localisations[NSW_localisation_EN] = "Game sound";
+	jc_localisation.localisations[NSW_localisation_RU] = "Стандартный звук";
+
+	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_INGAME_SOUND;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->always_present = true;
+
+	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "PlayAlertSoundPositional";
+	jc_localisation.localisations[NSW_localisation_EN] = "Game sound (positional)";
+	jc_localisation.localisations[NSW_localisation_RU] = "Стандартный звук (позиционно)";
+
+	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_INGAME_SOUND;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->always_present = true;
+
+	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -1387,6 +1439,55 @@ EWindowMain::EWindowMain()
 	}
 	/*------------------*/
 
+	//		SEARCH BOTTOM LINE
+	{
+		main_button_group = EButtonGroup::create_root_button_group
+		(
+			new ERegionGabarite(0.0f, 0.0f, 1020.0f, 32.0f),
+			EGUIStyle::active_style
+		);
+
+
+		main_button_group->parent_window = this;
+
+		main_button_group->root_group = main_button_group;
+		main_button_group->can_be_moved = false;
+		main_button_group->can_resize_to_workspace_size_x = false;
+		main_button_group->can_resize_to_workspace_size_y = true;
+
+		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+
+		main_button_group->actions_on_resize_window.push_back(&EDataActionCollection::action_resize_to_full_window_only_x);
+		main_button_group->dynamic_autosize_for_window = false;
+		autosize_group_list.push_back(main_button_group);
+
+		//for (int z = 0; z < 0; z++)
+		//{
+		//	create_filter_block(main_button_group);
+		//}
+
+
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EntityButton*
+		search_button = new EntityButton();
+		search_button->make_default_button_with_edible_text
+		(
+			new ERegionGabarite(128.0f, 30.0f),
+			main_button_group,
+			nullptr,
+			""
+		);
+		search_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_search_filter_block_text);
+
+		main_button_group->button_list.push_back(search_button);
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		button_group_list.push_back(main_button_group);
+		EButtonGroup::refresh_button_group(main_button_group);
+
+
+	}
+
 	//filters block
 	if (true)
 	{
@@ -1421,7 +1522,7 @@ EWindowMain::EWindowMain()
 
 
 
-		button_group_list.push_back(main_button_group);
+		button_group_list.insert( button_group_list.begin(), main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
 
@@ -3527,8 +3628,8 @@ void EWindowMain::load_custom_sound_list()
 					(EStringUtils::to_lower(sound_name.substr(sound_name.length() - 4, 4)) == ".mp3")
 					||
 					(EStringUtils::to_lower(sound_name.substr(sound_name.length() - 4, 4)) == ".wav")
-					)
 				)
+			)
 		{
 			ENamedSound* named_sound = new ENamedSound(path_of_exile_folder + p.path().filename().u8string());
 			ELocalisationText l_text;
@@ -3556,7 +3657,7 @@ void EWindowMain::load_ingame_sound_list()
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert06.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "6";
 	l_text.localisations[NSW_localisation_EN] = "Something worth!";
 	l_text.localisations[NSW_localisation_RU] = "Что-то ценное!";
 	named_sound->localisation_text = l_text;
@@ -3566,7 +3667,7 @@ void EWindowMain::load_ingame_sound_list()
 
 	
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert01.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "1";
 	l_text.localisations[NSW_localisation_EN] = "Iron drum 1";
 	l_text.localisations[NSW_localisation_RU] = "Железный барабан 1";
 	named_sound->localisation_text = l_text;
@@ -3575,7 +3676,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert10.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "10";
 	l_text.localisations[NSW_localisation_EN] = "Iron drum 2";
 	l_text.localisations[NSW_localisation_RU] = "Железный барабан 2";
 	named_sound->localisation_text = l_text;
@@ -3587,7 +3688,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert13.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "13";
 	l_text.localisations[NSW_localisation_EN] = "Iron drum 3";
 	l_text.localisations[NSW_localisation_RU] = "Железный барабан 3";
 	named_sound->localisation_text = l_text;
@@ -3598,7 +3699,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert03.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "3";
 	l_text.localisations[NSW_localisation_EN] = "Drum 1";
 	l_text.localisations[NSW_localisation_RU] = "Барабан 1";
 	named_sound->localisation_text = l_text;
@@ -3607,7 +3708,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert11.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "11";
 	l_text.localisations[NSW_localisation_EN] = "Drum 2";
 	l_text.localisations[NSW_localisation_RU] = "Барабан 2";
 	named_sound->localisation_text = l_text;
@@ -3616,7 +3717,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert16.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "16";
 	l_text.localisations[NSW_localisation_EN] = "Drum 3";
 	l_text.localisations[NSW_localisation_RU] = "Барабан 3";
 	named_sound->localisation_text = l_text;
@@ -3626,7 +3727,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert02.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "2";
 	l_text.localisations[NSW_localisation_EN] = "Drum 4";
 	l_text.localisations[NSW_localisation_RU] = "Барабан 4";
 	named_sound->localisation_text = l_text;
@@ -3635,7 +3736,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert04.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "4";
 	l_text.localisations[NSW_localisation_EN] = "Echo 1";
 	l_text.localisations[NSW_localisation_RU] = "Эхо 1";
 	named_sound->localisation_text = l_text;
@@ -3646,7 +3747,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert05.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "5";
 	l_text.localisations[NSW_localisation_EN] = "Echo 2";
 	l_text.localisations[NSW_localisation_RU] = "Эхо 2";
 	named_sound->localisation_text = l_text;
@@ -3657,7 +3758,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert07.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "7";
 	l_text.localisations[NSW_localisation_EN] = "Echo 3";
 	l_text.localisations[NSW_localisation_RU] = "Эхо 3";
 	named_sound->localisation_text = l_text;
@@ -3671,7 +3772,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert08.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "8";
 	l_text.localisations[NSW_localisation_EN] = "Echo 4";
 	l_text.localisations[NSW_localisation_RU] = "Эхо 4";
 	named_sound->localisation_text = l_text;
@@ -3685,7 +3786,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert09.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "9";
 	l_text.localisations[NSW_localisation_EN] = "Echo 5";
 	l_text.localisations[NSW_localisation_RU] = "Эхо 5";
 	named_sound->localisation_text = l_text;
@@ -3696,7 +3797,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert14.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "14";
 	l_text.localisations[NSW_localisation_EN] = "Echo 6";
 	l_text.localisations[NSW_localisation_RU] = "Эхо 6";
 	named_sound->localisation_text = l_text;
@@ -3708,7 +3809,7 @@ void EWindowMain::load_ingame_sound_list()
 
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert15.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "15";
 	l_text.localisations[NSW_localisation_EN] = "Echo 7";
 	l_text.localisations[NSW_localisation_RU] = "Эхо 7";
 	named_sound->localisation_text = l_text;
@@ -3717,7 +3818,7 @@ void EWindowMain::load_ingame_sound_list()
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	named_sound = new ENamedSound("data/sounds/default_drop_sound/ItemFilterAlert12.wav");
-	l_text.base_name = "ItemFilterAlert01";
+	l_text.base_name = "12";
 	l_text.localisations[NSW_localisation_EN] = "Glass";
 	l_text.localisations[NSW_localisation_RU] = "Стекло";
 	named_sound->localisation_text = l_text;
@@ -3885,12 +3986,14 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//right section for preview box
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
-		control_part_right_preview_box = new EButtonGroup(new ERegionGabarite(200.0f, 30.0f));
+	control_part_right_preview_box = new EButtonGroup(new ERegionGabarite(200.0f, 30.0f));
 	control_part_right_preview_box->init_button_group(EGUIStyle::active_style, false, false, true);
 	control_part_right_preview_box->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 	whole_filter_block_group->pointer_to_preview_box_segment = control_part_right_preview_box;
 	control_part->add_group(control_part_right_preview_box);
+
+	whole_filter_block_group->pointer_to_top_control_block_right_section = control_part_right_preview_box;
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*			===============================			*/
@@ -3914,7 +4017,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//		SHOW/HIDE LOOT BUTTON ROUTER
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////////////
-	EntityButtonVariantRouter* button_variant_router = new EntityButtonVariantRouter();
+	EntityButtonVariantRouterForFilterBlock* button_variant_router = new EntityButtonVariantRouterForFilterBlock();
 	button_variant_router->make_as_default_button_with_icon
 	(
 		new ERegionGabarite(120.0f, 29.0f),
@@ -4020,7 +4123,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
 	for (int i = 0; i < 5; i++)
 	{
-		button_variant_router = new EntityButtonVariantRouter();
+		button_variant_router = new EntityButtonVariantRouterForFilterBlock();
 		button_variant_router->make_as_default_button_with_icon
 		(
 			new ERegionGabarite(120.0f, 29.0f),
@@ -4439,10 +4542,14 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		&EDataActionCollection::action_open_ingame_sound_list,
 		"Game sound"
 	);
+	Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
 	sound_button->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
-
+	whole_filter_block_group->pointer_to_game_sound_button = sound_button;
 	sound_cosmetic_segment->button_list.push_back(sound_button);
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+
 
 	//	switcher
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -4459,6 +4566,99 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	sound_cosmetic_segment->button_list.push_back(jc_button);
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+	//	volume
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_button = EntityButton::create_vertical_named_slider
+	(
+
+		new ERegionGabarite(150.0f, 30.0f),
+		sound_cosmetic_segment,
+		EFont::font_list[0],
+		EGUIStyle::active_style,
+		"Volume"
+	);
+	jc_button->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
+
+	ETextArea*
+		last_text_area = Entity::get_last_text_area(jc_button);
+
+	last_text_area->localisation_text.base_name = "Volume";
+	last_text_area->localisation_text.localisations[NSW_localisation_EN] = "Volume";
+	last_text_area->localisation_text.localisations[NSW_localisation_RU] = "Громкость";
+
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_filter_block_group->sound_volume_value;
+	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
+
+	whole_filter_block_group->sound_volume = jc_button;
+	sound_cosmetic_segment->button_list.push_back(jc_button);
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	//		POSITIONAL/NOT POSITIONAL SOUND ROUTER
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
+	button_variant_FB_router->make_as_default_button_with_icon
+	(
+		new ERegionGabarite(150.0f, 22.0f),
+		sound_cosmetic_segment,
+		&EDataActionCollection::action_rotate_variant,
+		nullptr
+	);
+	button_variant_FB_router->parent_filter_block = whole_filter_block_group;
+
+
+	button_variant_FB_router->rotate_variant_mode = RotateVariantMode::SELECT_NEXT;
+
+	button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
+
+	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+	button_variant_FB_router->pointer_to_text_area = jc_text_area;
+
+	*jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
+
+	button_variant_FB_router->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
+	whole_filter_block_group->pointer_to_positional_variant_button = button_variant_FB_router;
+
+
+	//routers
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Not positional";
+	local_text->localisations[NSW_localisation_EN] = "Not positional";
+	local_text->localisations[NSW_localisation_RU] = "Не позиционный";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(0.65f, 0.5f, 0.4f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	/// 
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Positional";
+	local_text->localisations[NSW_localisation_EN] = "Positional";
+	local_text->localisations[NSW_localisation_RU] = "Позиционный";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(0.8f, 0.9f, 0.6f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	button_variant_FB_router->select_variant(0);
+
+	sound_cosmetic_segment->button_list.push_back(button_variant_FB_router);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 	//		MINIMAP ICONS SEGMENT
@@ -4766,7 +4966,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//jc_button = new EntityButtonFilterSound();
-		button_variant_router = new EntityButtonVariantRouter();
+		button_variant_router = new EntityButtonVariantRouterForFilterBlock();
 		button_variant_router->make_as_default_button_with_icon
 		(
 			new ERegionGabarite(150.0f, 41.0f),
@@ -5106,8 +5306,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	);
 	jc_button->suppressor = &whole_filter_block_group->text_size_bool;
 
-	ETextArea*
-		last_text_area = Entity::get_last_text_area(jc_button);
+	last_text_area = Entity::get_last_text_area(jc_button);
 
 	last_text_area->localisation_text.base_name = "SetFontSize";
 	last_text_area->localisation_text.localisations[NSW_localisation_EN] = "Font size";
@@ -5253,7 +5452,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 				if (buffer_text != "")
 				{
 					//attribute name
-					if (data_part == 0)
+					if (data_part == DataOrderNames::ATTRIBUTE)
 					{
 						//EInputCore::logger_param("buffer text", buffer_text);
 
@@ -5343,6 +5542,16 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										//EInputCore::logger_simple_info("user_sound");
 									}
 
+
+									if (matched_filter_block_attribute->localisation.base_name == "PlayAlertSoundPositional")
+									{
+										whole_block_container->pointer_to_positional_variant_button->select_variant(1);
+									}
+									else
+									if (matched_filter_block_attribute->localisation.base_name == "PlayAlertSound")
+									{
+										whole_block_container->pointer_to_positional_variant_button->select_variant(0);
+									}
 									//target_HRA_color = ((EDataContainer_Button_StoreColor*)(Entity::get_last_custom_data(whole_block_container->pointer_to_color_button[0])->data_container))->stored_color;
 									//target_color_bool = &whole_block_container->color_check[0];
 								}
@@ -5360,7 +5569,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 					}
 
 					//condition operator
-					if (data_part == 1)
+					if (data_part == DataOrderNames::CONDITION_OPERATOR)
 					{
 						if (text_is_condition(buffer_text))
 						{
@@ -5393,7 +5602,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 					}
 
 					//values
-					if (data_part >= 2)
+					if (data_part >= DataOrderNames::VALUE)
 					{
 						//EInputCore::logger_param("value", buffer_text);
 						//value_array[value_array_id] = buffer_text;
@@ -5615,23 +5824,67 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								//		USER SOUND
 								if (matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND)
 								{
-									ENamedSound* matched_named_sound = nullptr;
+									//parameter order - name
+									if (data_part == 2)
+									{
+										ENamedSound* matched_named_sound = nullptr;
 
-									for (ENamedSound* named_sound : EWindowMain::custom_sound_list)
-										if (named_sound->localisation_text.base_name == buffer_text)
+										for (ENamedSound* named_sound : EWindowMain::custom_sound_list)
+											if (named_sound->localisation_text.base_name == buffer_text)
+											{
+												EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
+
+												matched_named_sound = named_sound;
+											}
+
+										if (matched_named_sound == nullptr)
 										{
-											//EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
-
-											matched_named_sound = named_sound;
+											EInputCore::logger_param_with_warning("undefined sound", buffer_text);
 										}
 
-									if (matched_named_sound == nullptr)
-									{
-										//EInputCore::logger_param_with_warning("undefined sound", buffer_text);
+										whole_block_container->pointer_to_custom_sound_button->stored_named_sound = matched_named_sound;
+										whole_block_container->custom_sound_suppressor_bool = true;
 									}
-
-									whole_block_container->pointer_to_custom_sound_button->stored_named_sound = matched_named_sound;
 								}
+
+									//		INGAME SOUND
+									if (matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_INGAME_SOUND)
+									{
+										if (data_part == 2)
+										{
+											ENamedSound* matched_named_sound = nullptr;
+
+											for (ENamedSound* named_sound : EWindowMain::default_sound_list)
+												if (named_sound->localisation_text.base_name == buffer_text)
+												{
+													EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
+
+													matched_named_sound = named_sound;
+												}
+
+											if (matched_named_sound == nullptr)
+											{
+												EInputCore::logger_param_with_warning("undefined sound", buffer_text);
+											}
+
+
+											whole_block_container->pointer_to_game_sound_button->stored_named_sound = matched_named_sound;
+											whole_block_container->game_sound_suppressor_bool = true;
+
+										}
+										else
+										if (data_part == 3)
+										{
+											float
+											value = std::stoi(buffer_text) / 300.0f;
+											value = max(value, 0.0f);
+											value = min(value, 1.0f);
+
+											whole_block_container->sound_volume_value = value;
+										}
+
+
+									}
 
 
 
@@ -5650,6 +5903,37 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 		}
 	}
+}
+
+bool EWindowMain::filter_block_contains_this_text(EButtonGroupFilterBlock* _target_filter_block, std::string* _text)
+{
+	for (EButtonGroup* listed_segment : _target_filter_block->pointer_to_listed_segment->group_list)
+	{
+		auto listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(listed_segment->data_container);
+
+		for (EntityButton* wide_button : listed_container->group_with_listed_buttons->button_list)
+		if
+		(
+			(wide_button != _target_filter_block->slider)
+			&&
+			(wide_button->main_text_area != nullptr)
+		)
+		{
+			if
+			(
+				(EStringUtils::A_contains_B_ignore_case(wide_button->main_text_area->localisation_text.base_name, *_text))
+				||
+				(EStringUtils::A_contains_B_ignore_case(wide_button->main_text_area->localisation_text.localisations[NSW_localisation_EN], *_text))
+				||
+				(EStringUtils::A_contains_B_ignore_case(wide_button->main_text_area->localisation_text.localisations[NSW_localisation_RU], *_text))
+			)
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
 }
 
 void EDataActionCollection::action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -6252,6 +6536,43 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 	result_string += '\n';
 	//////////////////////////////////////////////////////////////////
 
+
+	//		USER SOUND
+	if (whole_block_data->pointer_to_custom_sound_button->stored_named_sound != nullptr)
+	{
+		if (!whole_block_data->custom_sound_suppressor_bool)
+		{
+			result_string += "#";
+		}
+		result_string += "\tCustomAlertSound";
+		//if (whole_block_data->pointer_to_positional_variant_button->selected_variant == 1) { result_string }
+
+
+		result_string += " \"" + whole_block_data->pointer_to_custom_sound_button->stored_named_sound->localisation_text.base_name + '"';
+
+		result_string += '\n';
+	}
+
+
+
+
+
+	//		INGAME SOUNDS
+	if (whole_block_data->pointer_to_game_sound_button->stored_named_sound != nullptr)
+	{
+		if (!whole_block_data->custom_sound_suppressor_bool)
+		{
+			result_string += "#";
+		}
+		result_string += "\tPlayAlertSound";
+		if (whole_block_data->pointer_to_positional_variant_button->selected_variant == 1) { result_string += "Positional"; }
+
+
+		result_string += ' ' + whole_block_data->pointer_to_game_sound_button->stored_named_sound->localisation_text.base_name;
+		result_string += ' ' + std::to_string(int(whole_block_data->sound_volume_value * 300.0f));
+		result_string += '\n';
+	}
+
 	return result_string;
 }
 
@@ -6445,10 +6766,11 @@ void EButtonGroupTopControlSection::draw()
 		example_text_bg
 	);
 
+	float box_x = pos_x;
+	float box_y = pos_y;
 
 
-
-
+	//		PREVIEW BACKGROUND
 	NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[0]);
 	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
@@ -6469,6 +6791,7 @@ void EButtonGroupTopControlSection::draw()
 
 	);
 
+	//		PREVIEW TEXT
 	NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[1]);
 	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
@@ -6488,6 +6811,7 @@ void EButtonGroupTopControlSection::draw()
 		example_text_texture[array_id]
 	);
 
+	//		PREVIEW RAMA
 	NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[2]);
 	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 	NS_ERenderCollection::add_data_to_vertex_buffer_rama
@@ -6509,6 +6833,53 @@ void EButtonGroupTopControlSection::draw()
 		NS_DefaultGabarites::texture_gabarite_white_pixel
 
 	);
+
+
+
+
+	//		MINIMAP ICON PREVIEW
+	if (pointer_to_filter_block_group->minimap_icon_color_suppressor_bool)
+	{
+		EntityButtonVariantRouter* shape_router_button = pointer_to_filter_block_group->pointer_to_minimap_icon_shape_router;
+		RouterVariant* shape_router = &(shape_router_button->router_variant_list[shape_router_button->selected_variant]);
+
+
+		EntityButtonVariantRouter* color_router_button = pointer_to_filter_block_group->pointer_to_minimap_icon_color_router;
+		RouterVariant* color_router = &(color_router_button->router_variant_list[color_router_button->selected_variant]);
+
+
+		EntityButtonVariantRouter* size_router_button = pointer_to_filter_block_group->pointer_to_minimap_icon_size_router;
+
+
+
+		rescale_factor = pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->size_y / (float)(*shape_router->texture->size_y_in_pixels);
+
+		rescale_factor *= 1.0f - 0.25f * size_router_button->selected_variant;
+
+		rescale_factor = max(rescale_factor, 0.25f);
+		rescale_factor = min(rescale_factor, 1.0f);
+
+		float shape_x_size = *shape_router->texture->size_x_in_pixels * rescale_factor;
+
+		NS_EGraphicCore::set_active_color(color_router->color);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			//x pos
+			box_x - shape_x_size - 1.0f,
+
+			//y pos
+			box_y,
+
+			shape_x_size,
+			*shape_router->texture->size_y_in_pixels * rescale_factor,
+
+			shape_router->texture
+		);
+	}
 	//std::cout << "!";
 }
 
@@ -6518,7 +6889,14 @@ void EButtonGroupFilterBlock::post_draw()
 
 	if (button_show_hide->selected_variant == 0)
 	{
-		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GRAY, 0.5f);
+		if (!EButtonGroup::catched_by_mouse(this))
+		{
+			NS_EGraphicCore::set_active_color(0.3f, 0.25f, 0.2f, 0.6f);
+		}
+		else
+		{
+			NS_EGraphicCore::set_active_color(0.3f, 0.3f, 0.3f, 0.3f);
+		}
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(

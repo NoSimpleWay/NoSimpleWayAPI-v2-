@@ -182,6 +182,8 @@ public:
 	EButtonGroup* pointer_to_minimap_segment;
 
 	EButtonGroup* pointer_to_top_control_block;
+	EButtonGroup* pointer_to_top_control_block_right_section;
+
 	EButtonGroup* pointer_to_control_group_left_show_hide;
 	EButtonGroup* pointer_to_control_group_mid_import;
 	EButtonGroup* pointer_to_control_group_mid_versions;
@@ -201,29 +203,40 @@ public:
 	bool							text_size_bool;
 	float							text_size;
 
-	EntityButtonVariantRouter* button_show_hide;
+	EntityButtonVariantRouterForFilterBlock* button_show_hide;
 
 
 	EntityButtonFilterSound* pointer_to_custom_sound_button;
 	bool							custom_sound_suppressor_bool;
 
-	EntityButtonFilterSound* pointer_to_game_sound_button;
+	EntityButtonFilterSound*		pointer_to_game_sound_button;
 	bool							game_sound_suppressor_bool;
+	EntityButton*					sound_volume;
+	float							sound_volume_value;
 
 
 
 	//		MINIMAP ICONS SECTION
-	EntityButtonVariantRouter* pointer_to_minimap_icon_color_router;
-	EntityButtonVariantRouter* pointer_to_minimap_icon_size_router;
-	EntityButtonVariantRouter* pointer_to_minimap_icon_shape_router;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_color_router;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_size_router;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_shape_router;
+	
+	EntityButtonVariantRouterForFilterBlock* pointer_to_positional_variant_button;
 
 
 
-	bool							minimap_icon_color_suppressor_bool;
+	bool						minimap_icon_color_suppressor_bool;
 
 	//EButtonGroupFilterBlockAsText*	target_filter_block_as_text_group;
 	void post_draw();
 	void update(float _d);
+};
+
+enum DataOrderNames
+{
+	ATTRIBUTE,
+	CONDITION_OPERATOR,
+	VALUE
 };
 
 class EButtonGroupFilterBlockAsText : public EButtonGroup
@@ -283,6 +296,8 @@ namespace EDataActionCollection
 	void action_select_this_sound_for_target_button(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
+	//type text
+	void action_type_search_filter_block_text(ETextArea* _text_area);
 
 
 
@@ -388,6 +403,7 @@ public:
 
 	static								std::vector<ENamedSound*> default_sound_list;
 	static								std::vector<ENamedSound*> custom_sound_list;
+	static bool							filter_block_contains_this_text(EButtonGroupFilterBlock* _target_filter_block, std::string* _text);
 	//static bool disable_deleting = true;
 
 

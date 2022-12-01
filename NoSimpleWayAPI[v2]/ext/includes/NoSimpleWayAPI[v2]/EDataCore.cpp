@@ -3255,7 +3255,7 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 									(suitable_str == "")
 									||
 									(EStringUtils::compare_ignoring_case(suitable_str, tag_value))
-									)
+								)
 							{
 								required_tag_value_match = true;
 							}

@@ -822,6 +822,7 @@ void EButtonGroup::align_groups()
 
 	//stretch row
 	for (EButtonGroup* group : group_list)
+	if (!group->disable_gabarite)
 	{
 		//bool need_redraw = false;
 
@@ -894,7 +895,7 @@ void EButtonGroup::align_groups()
 
 
 
-		if (!group->disable_gabarite)
+		//if ((!group->disable_gabarite) && (group->is_active))
 		{
 			prev_group = group;
 		}
@@ -1408,7 +1409,7 @@ void EButtonGroup::expand_to_workspace_size()
 void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 {
 
-
+	_group->recursive_phantom_translate_if_need();
 
 	_group->expand_to_workspace_size();
 
@@ -1435,6 +1436,8 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 {
 	if (!_group->disable_gabarite)
 	{
+		_group->recursive_phantom_translate_if_need();
+
 		_group->substretch_groups_y();
 		//_group->check_slider();
 
@@ -1504,7 +1507,7 @@ void EButtonGroup::realign_all_buttons()
 
 		if (button_capacity > 0)
 		{
-			free_space_for_buttons = total_available_x_space - total_button_gabarite_x * button_capacity - BUTTON_FORCE_FIELD_SIZE * 2.0f;
+			free_space_for_buttons = total_available_x_space - total_button_gabarite_x * button_capacity;
 			buttons_need_additional_size = floor(free_space_for_buttons / button_capacity);
 
 			for (EntityButton* but : button_list)
@@ -1600,8 +1603,18 @@ void EButtonGroup::realign_all_buttons()
 				//new line
 				if (but->offset_x + but->button_gabarite->size_x + slider_additional + BUTTON_FORCE_FIELD_SIZE >= region_gabarite->size_x)
 				{
-					but->offset_x = but->parent_button_group->border_left + BUTTON_FORCE_FIELD_SIZE;
-					but->offset_y += prev_button->button_gabarite->size_y + BUTTON_FORCE_FIELD_SIZE * 2.0f;
+					if (!but->disable_force_field)
+					{
+						but->offset_x = but->parent_button_group->border_left + BUTTON_FORCE_FIELD_SIZE;
+						but->offset_y += prev_button->button_gabarite->size_y + BUTTON_FORCE_FIELD_SIZE * 2.0f;
+					}
+					else
+					{
+						but->offset_x = but->parent_button_group->border_left;
+						but->offset_y += prev_button->button_gabarite->size_y + 2.0f;
+					}
+
+					
 
 					new_lined = true;
 
@@ -1618,7 +1631,15 @@ void EButtonGroup::realign_all_buttons()
 			}
 			else
 			{
-				but->offset_x = but->parent_button_group->border_left + BUTTON_FORCE_FIELD_SIZE;
+				if (!but->disable_force_field)
+				{
+					but->offset_x = but->parent_button_group->border_left + BUTTON_FORCE_FIELD_SIZE;
+				}
+				else
+				{
+					but->offset_x = but->parent_button_group->border_left;
+				}
+
 				but->offset_y = but->parent_button_group->border_bottom;
 
 				//button_vector.push_back(but);
@@ -1940,7 +1961,7 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 
 
 	//_group->need_redraw = true;
-	_group->recursive_phantom_translate_if_need();
+	//_group->recursive_phantom_translate_if_need();
 
 	if (*_group->can_change_style) { _group->selected_style = _style; }
 
