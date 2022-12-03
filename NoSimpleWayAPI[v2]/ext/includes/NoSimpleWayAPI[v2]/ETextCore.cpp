@@ -824,7 +824,7 @@ void ETextArea::update(float _d)
 				NS_FONT_UTILS::active_text_area = nullptr;
 
 
-				if ((*stored_text == "") && (!indicate_gray_text))
+				if ((original_text == "") && (!indicate_gray_text))
 				{
 					change_text("");
 					indicate_gray_text = true;
@@ -855,30 +855,31 @@ void ETextArea::update(float _d)
 		//std::cout << EInputCore::LAST_INPUTED_CHAR << std::endl;
 		if (*selected_glyph_position >= 0)
 		{
-			stored_text->insert(target_id, temp_s);
+			original_text.insert(target_id, temp_s);
 			//*stored_text = "1234567";
 			(*selected_glyph_position)++;
 		}
 		else
 		{
-			*stored_text = temp_s;
+			original_text = temp_s;
 			//*selected_left_side = false;
 			*selected_glyph_position = 0;
 		}
 
-		generate_rows();
-		generate_text();
+		change_text(original_text);
+		/*generate_rows();
+		generate_text();*/
 
 		if
+		(
+			(target_id > 0)
+			&&
 			(
-				(target_id > 0)
+				(EInputCore::LAST_INPUTED_CHAR == 'n')
 				&&
-				(
-					(EInputCore::LAST_INPUTED_CHAR == 'n')
-					&&
-					(stored_text->at(target_id - 1) == '\\')
-					)
-				)
+				(original_text.at(target_id - 1) == '\\')
+			)
+		)
 		{
 			(*selected_glyph_position) -= 1;
 		}
@@ -911,19 +912,20 @@ void ETextArea::update(float _d)
 			//std::cout << EInputCore::LAST_INPUTED_CHAR << std::endl;
 			if (*selected_glyph_position >= 0)
 			{
-				stored_text->insert(target_id, temp_s);
+				original_text.insert(target_id, temp_s);
 				//*stored_text = "1234567";
 				(*selected_glyph_position)++;
 			}
 			else
 			{
-				*stored_text = temp_s;
+				original_text = temp_s;
 				//*selected_left_side = false;
 				*selected_glyph_position = 0;
 			}
 
-			generate_rows();
-			generate_text();
+			change_text(original_text);
+			/*generate_rows();
+			generate_text();*/
 		}
 		//ENTER IS END TEXT TYPING
 		else
@@ -933,7 +935,7 @@ void ETextArea::update(float _d)
 
 			NS_FONT_UTILS::active_text_area = nullptr;
 
-			if (*stored_text == "")
+			if (original_text == "")
 			{
 				change_text("");
 				indicate_gray_text = true;
@@ -1357,13 +1359,15 @@ void ETextArea::change_text(std::string _text)
 		indicate_gray_text = true;
 		_text = gray_text->localisations[NSW_localisation_EN];
 	}
+	else
+	{
+		indicate_gray_text = false;
+	}
 
 	for (int i = 0; i < _text.length(); i++)
 	{
 		target_sym = _text[i];
 		
-		
-
 		if
 		(
 			(
