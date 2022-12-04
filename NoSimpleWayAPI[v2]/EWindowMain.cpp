@@ -48,6 +48,7 @@ EButtonGroup* EWindowMain::select_rarity_button_group;
 EButtonGroup* EWindowMain::select_quality_button_group;
 EButtonGroup* EWindowMain::loot_filter_editor;
 EButtonGroup* EWindowMain::world_parameters;
+EButtonGroup* EWindowMain::tab_list_group;
 
 
 
@@ -58,6 +59,7 @@ RouterVariant* EWindowMain::registered_rarity_router_variants[NSW_registered_rar
 RouterVariant* EWindowMain::registered_alternate_gem_quality_router_variants[NSW_registered_altered_gem_quality_count];
 
 std::vector < std::string>				EWindowMain::filter_text_lines;
+std::vector <EButtonGroup*>				EWindowMain::filter_block_tabs = std::vector<EButtonGroup*>(filter_tabs_count);
 
 std::vector<ENamedSound*>				EWindowMain::default_sound_list;
 std::vector<ENamedSound*>				EWindowMain::custom_sound_list;
@@ -254,14 +256,17 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 
 	for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
 	{
-		group->need_remove = true;
+		//group->need_remove = true;
+		delete group;
 	}
 
 	EWindowMain::loot_filter_editor->group_list.clear();
 
 	EButtonGroup::existing_loot_filter_list->is_active = false;
 
-	EWindowMain::open_loot_filter(((EntityButtonForLootFilterSelector*)_entity)->full_path);
+	EWindowMain::tab_list_group->selected_button->main_text_area->change_text(((EntityButtonForLootFilterSelector*)_entity)->filter_name);
+
+	EWindowMain::open_loot_filter(((EntityButtonForLootFilterSelector*)_entity)->loot_filter_full_path);
 	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 
 }
@@ -508,6 +513,42 @@ void EDataActionCollection::action_select_this_sound_for_target_button(Entity* _
 	{
 		sound_group->target_sound_button->stored_named_sound = static_cast<EntityButtonFilterSound*>(_entity)->stored_named_sound;
 	}
+
+}
+
+void EDataActionCollection::action_select_this_tab(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonFilterBlockTab* tab_button = static_cast<EntityButtonFilterBlockTab*>(_entity);
+
+	
+
+	int id = -1;
+
+	//search matched EButtonGroup
+	for (int i = 0; i < EWindowMain::link_to_main_window->button_group_list.size(); i++)
+	if (EWindowMain::link_to_main_window->button_group_list[i] == EWindowMain::loot_filter_editor)
+	{
+		EWindowMain::link_to_main_window->button_group_list[i] = EWindowMain::filter_block_tabs[tab_button->tab_id];
+		break;
+	}
+
+	for (int i = 0; i < EWindowMain::link_to_main_window->autosize_group_list.size(); i++)
+	if (EWindowMain::link_to_main_window->autosize_group_list[i] == EWindowMain::loot_filter_editor)
+	{
+		EWindowMain::link_to_main_window->autosize_group_list[i] = EWindowMain::filter_block_tabs[tab_button->tab_id];
+		break;
+	}
+
+
+
+	EWindowMain::loot_filter_editor = EWindowMain::filter_block_tabs[tab_button->tab_id];
+
+	for (EWindow* w : EWindow::window_list)
+	{
+		NS_EGraphicCore::refresh_autosize_groups(w);
+	}
+
+	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
 
 }
 
@@ -1499,28 +1540,33 @@ EWindowMain::EWindowMain()
 	//filters block
 	if (true)
 	{
-		main_button_group = EButtonGroup::create_button_group_without_bg
-		(
-			new ERegionGabarite(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT),
-			EGUIStyle::active_style
-		);
-		main_button_group->parent_window = this;
+		for (int i = 0; i < filter_tabs_count; i++)
+		{
+			main_button_group = EButtonGroup::create_button_group_without_bg
+			(
+				new ERegionGabarite(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT),
+				EGUIStyle::active_style
+			);
+			main_button_group->parent_window = this;
 
-		main_button_group->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
+			main_button_group->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
 
-		main_button_group->actions_on_resize_window.push_back(&EDataActionCollection::action_resize_to_full_window);
+			main_button_group->actions_on_resize_window.push_back(&EDataActionCollection::action_resize_to_full_window);
 
-		main_button_group->root_group = main_button_group;
-		main_button_group->can_be_moved = false;
-		main_button_group->can_resize_to_workspace_size_x = false;
-		main_button_group->can_resize_to_workspace_size_y = false;
+			main_button_group->root_group = main_button_group;
+			main_button_group->can_be_moved = false;
+			main_button_group->can_resize_to_workspace_size_x = false;
+			main_button_group->can_resize_to_workspace_size_y = false;
 
-		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
-		//*main_button_group->stretch_mode		= GroupStretchMode::CONSTANT;
-		main_button_group->dynamic_autosize_for_window = true;
+			main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+			//*main_button_group->stretch_mode		= GroupStretchMode::CONSTANT;
+			main_button_group->dynamic_autosize_for_window = true;
 
-		loot_filter_editor = main_button_group;
-		autosize_group_list.push_back(main_button_group);
+			filter_block_tabs[i] = main_button_group;
+		}
+
+		loot_filter_editor = filter_block_tabs[0];
+		autosize_group_list.push_back(filter_block_tabs[0]);
 
 		//for (int z = 0; z < 0; z++)
 		//{
@@ -1530,8 +1576,8 @@ EWindowMain::EWindowMain()
 
 
 
-		button_group_list.insert( button_group_list.begin(), main_button_group);
-		EButtonGroup::refresh_button_group(main_button_group);
+		button_group_list.insert( button_group_list.begin(), filter_block_tabs[0]);
+		EButtonGroup::refresh_button_group(filter_block_tabs[0]);
 	}
 
 	//skill gems
@@ -2832,7 +2878,7 @@ EWindowMain::EWindowMain()
 		main_button_group->actions_on_resize_window.push_back(&EDataActionCollection::action_resize_to_full_window_only_x);
 		main_button_group->dynamic_autosize_for_window = false;
 		autosize_group_list.push_back(main_button_group);
-		EButtonGroup* bottom_section = main_button_group->add_group
+		EButtonGroup* bottom_tab_section = main_button_group->add_group
 		(
 			EButtonGroup::create_button_group_without_bg
 			(
@@ -2910,16 +2956,25 @@ EWindowMain::EWindowMain()
 
 		for (int i = 0; i < 5; i++)
 		{
-			jc_button = new EntityButtonFilterRule();
-			jc_button->make_default_button_with_unedible_text
+			EntityButtonFilterBlockTab* tab_button = new EntityButtonFilterBlockTab();
+
+			tab_button->make_default_button_with_unedible_text
 			(
-				new ERegionGabarite(120.0f, 26.0f),
-				bottom_section,
-				&EDataActionCollection::action_select_this_button,
+				new ERegionGabarite(200.0f, 26.0f),
+				bottom_tab_section,
+				&EDataActionCollection::action_select_this_tab,
 				"Filter tab #" + std::to_string(i)
 			);
 
-			bottom_section->button_list.push_back(jc_button);
+			tab_list_group = bottom_tab_section;
+			tab_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
+
+			tab_button->tab_id = i;
+			tab_button->target_filter_editor = filter_block_tabs[i];
+
+			bottom_tab_section->button_list.push_back(tab_button);
+
+			if (i == 0) { bottom_tab_section->selected_button = tab_button; }
 		}
 
 		//////////////////////////////////////////////////////
@@ -3587,7 +3642,8 @@ void EWindowMain::load_loot_filter_list()
 	{
 		std::string filter_path = p.path().u8string();
 
-		std::string loot_filter_name = p.path().filename().u8string();
+		std::string loot_filter_full_name = p.path().filename().u8string();
+		std::string loot_filter_name = loot_filter_full_name.substr(0, loot_filter_full_name.length() - 7);
 
 		//EInputCore::logger_param("detect file:", filter_path);
 		//writer << custom_sound << endl;;
@@ -3597,9 +3653,9 @@ void EWindowMain::load_loot_filter_list()
 
 		if
 			(
-				(loot_filter_name.length() >= 8)
+				(loot_filter_full_name.length() >= 8)
 				&&
-				(EStringUtils::to_lower(loot_filter_name.substr(loot_filter_name.length() - 7, 7)) == ".filter")
+				(EStringUtils::to_lower(loot_filter_full_name.substr(loot_filter_full_name.length() - 7, 7)) == ".filter")
 				)
 		{
 
@@ -3614,9 +3670,10 @@ void EWindowMain::load_loot_filter_list()
 					new ERegionGabarite(325.0f, 32.0f),
 					part_with_list,
 					&EDataActionCollection::action_select_this_loot_filter_from_list,
-					loot_filter_name.substr(0, loot_filter_name.length() - 7)
+					loot_filter_name
 				);
-				loot_filter_button->full_path = filter_path;
+				loot_filter_button->loot_filter_full_path = filter_path;
+				loot_filter_button->filter_name = loot_filter_name;
 
 				part_with_list->button_list.push_back(loot_filter_button);
 			}
@@ -5370,7 +5427,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	// // // // // // //// // // // // // //// // // // // // //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	EInputCore::logger_param("size of subgroups", workspace_part->group_list.size());
+	//EInputCore::logger_param("size of subgroups", workspace_part->group_list.size());
 	return whole_filter_block_group;
 }
 
@@ -5862,14 +5919,14 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										for (ENamedSound* named_sound : EWindowMain::custom_sound_list)
 											if (named_sound->localisation_text.base_name == buffer_text)
 											{
-												EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
+												//EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
 
 												matched_named_sound = named_sound;
 											}
 
 										if (matched_named_sound == nullptr)
 										{
-											EInputCore::logger_param_with_warning("undefined sound", buffer_text);
+											//EInputCore::logger_param_with_warning("undefined sound", buffer_text);
 										}
 
 										whole_block_container->pointer_to_custom_sound_button->stored_named_sound = matched_named_sound;
@@ -5887,14 +5944,14 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 											for (ENamedSound* named_sound : EWindowMain::default_sound_list)
 												if (named_sound->localisation_text.base_name == buffer_text)
 												{
-													EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
+													//EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
 
 													matched_named_sound = named_sound;
 												}
 
 											if (matched_named_sound == nullptr)
 											{
-												EInputCore::logger_param_with_warning("undefined sound", buffer_text);
+												//EInputCore::logger_param_with_warning("undefined sound", buffer_text);
 											}
 
 

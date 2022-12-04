@@ -98,7 +98,8 @@ public:
 class EntityButtonForLootFilterSelector : public EntityButton
 {
 public:
-	std::string	full_path;
+	std::string	loot_filter_full_path;
+	std::string	filter_name;
 
 	EntityButtonForLootFilterSelector();
 	~EntityButtonForLootFilterSelector();
@@ -133,7 +134,13 @@ public:
 
 };
 
+class EntityButtonFilterBlockTab : public EntityButton
+{
+public:
+	int tab_id = 0;
 
+	EButtonGroup* target_filter_editor;
+};
 
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
 //EButtonGroup
@@ -294,6 +301,7 @@ namespace EDataActionCollection
 	void action_invoke_button_action_in_sound_group(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_show_hide_cosmetic_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_sound_for_target_button(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_tab(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text
@@ -359,6 +367,7 @@ static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, 
 #define NSW_registered_altered_gem_quality_count	3//	1|anomalous		2|divergent		3|phantasmal		4|unique
 
 
+constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow
 {
 public:
@@ -380,6 +389,7 @@ public:
 	static EButtonGroup* select_quality_button_group;
 	static EButtonGroup* loot_filter_editor;
 	static EButtonGroup* world_parameters;
+	static EButtonGroup* tab_list_group;
 
 	static std::string username;
 	static std::string path_of_exile_folder;
@@ -405,6 +415,8 @@ public:
 	static								std::vector<ENamedSound*> custom_sound_list;
 	static bool							filter_block_contains_this_text(EButtonGroupFilterBlock* _target_filter_block, std::string* _text);
 	//static bool disable_deleting = true;
+
+	static std::vector <EButtonGroup*> filter_block_tabs;
 
 
 };
