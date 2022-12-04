@@ -229,6 +229,7 @@ public:
 	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_shape_router;
 	
 	EntityButtonVariantRouterForFilterBlock* pointer_to_positional_variant_button;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_disable_enable_drop_sound;
 
 
 
@@ -334,7 +335,10 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON,
 	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_SLIDER,
 	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_INGAME_SOUND,
-	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND
+	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND,
+	FILTER_ATTRIBUTE_VALUE_TYPE_DISABLE_DROP_SOUND,
+	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND
+
 
 
 };

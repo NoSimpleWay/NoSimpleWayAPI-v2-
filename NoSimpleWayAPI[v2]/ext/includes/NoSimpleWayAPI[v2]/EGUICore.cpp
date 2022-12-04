@@ -3097,13 +3097,21 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 	{
 		EntityButtonVariantRouterSelector*
 		variant_button = new EntityButtonVariantRouterSelector();
+
+		std::string text = rv.localisation->localisations[NSW_localisation_EN];
+
+		if (rv.localisation_for_select_window->localisations[NSW_localisation_EN] != "")
+		{
+			text = rv.localisation_for_select_window->localisations[NSW_localisation_EN];
+		}
+
 		variant_button->make_as_default_button_with_icon_and_text
 		(
 			new ERegionGabarite(_router_button->button_gabarite->size_x, _router_button->button_gabarite->size_y),
 			workspace_group,
 			&EDataActionCollection::action_select_rotate_variant_from_list,
 			rv.texture,
-			rv.localisation->localisations[NSW_localisation_EN]
+			text
 		);
 
 		variant_button->id = id;

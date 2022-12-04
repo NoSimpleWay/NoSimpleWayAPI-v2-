@@ -306,6 +306,7 @@ public:
 	ELocalisationText*			localisation;
 	Helper::HSVRGBAColor*		color;
 	ETextureGabarite*			texture;
+	ELocalisationText*			localisation_for_select_window;
 };
 
 enum class RotateVariantMode

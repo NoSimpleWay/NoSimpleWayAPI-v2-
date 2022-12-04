@@ -468,7 +468,9 @@ public:
 class EDataContainer_Group_FilterBlockListedSegment : public EDataContainer
 {
 public:
-	EButtonGroup* group_with_listed_buttons;
+	EButtonGroup*			group_with_listed_buttons;
+
+	EntityButtonVariantRouterForFilterBlock* match_mode_router_button;
 
 	std::string				filter_attribute_name;
 
