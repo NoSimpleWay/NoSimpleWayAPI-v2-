@@ -32515,6 +32515,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"ElderInfluence"
 	
 ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Influence"
+
+	[tag]"base name"	[value]"None"
+	[tag]"name EN"		[value]"No influence"
+	[tag]"name RU"		[value]"Без влияния"
+
+	[tag]"icon path"	[value]"NoInfluence"
+	
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"		[value]"Gem"
 
 	[tag]"name EN"			[value]"Ancestral Cry"

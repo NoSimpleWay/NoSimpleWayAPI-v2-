@@ -126,12 +126,12 @@ void main()
 	normal_x = clamp(normal_x, -1.0f, 1.0f);
 	normal_y = clamp(normal_y, -1.0f, 1.0f);
 
-	reflect_pos_x =  (gl_FragCoord.x	/ scr_x	* (1.0f - abs(normal_x))) * 0.333f + normal_x * 0.166666f + 0.333f;
-	reflect_pos_x = clamp(reflect_pos_x, 0.0f, 1.0f);
+	reflect_pos_x =  0.333f + (gl_FragCoord.x	/ scr_x	* (1.0f - abs(normal_x * 0.0f))) * 0.333f + normal_x * 0.1666f;
+	//reflect_pos_x = clamp(reflect_pos_x, 0.0f, 1.0f);
 	//reflect_pos_x *= scr_x / scr_y;
 	
-	reflect_pos_y =  (WorldPosition.y	/ scr_y	* (1.0f - abs(normal_y))) * 0.333f  + normal_y * 0.166666f + 0.333f;
-	reflect_pos_y = clamp(reflect_pos_y, 0.0f, 1.0f);
+	reflect_pos_y =  0.333 + (WorldPosition.y	/ scr_y	* (1.0f - abs(normal_y * 0.0f))) * 0.333f + normal_y * 0.1666f;
+	//reflect_pos_y = clamp(reflect_pos_y, 0.0f, 1.0f);
 	//reflect_pos_x = gl_FragCoord.x / 2880.0f;
 	//reflect_pos_y = WorldPosition.y / 1800.0f;
 	//((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
@@ -141,10 +141,10 @@ void main()
 	vec2
 	(
 		//base offset		screen position offset					//normal offset
-		reflect_pos_x * 3.0f * scr_x / scr_y - 0.333f / 1.0f + time / 50.0f * move_multiplier,
+		clamp(reflect_pos_x, 0.0f, 1.0f) * 2.0f * scr_x / scr_y + time / 50.0f * move_multiplier,
 		
 		
-		reflect_pos_y * 3.0f + 0.8f + ground_level
+		clamp(reflect_pos_y, 0.0f, 1.0f) * 2.0f - ground_level - 0.0f
 	);
 	
 	
@@ -228,8 +228,8 @@ void main()
 		//c_rgba = vec4(1.0f, 1.0f, 1.0f, 1.0f);
 	}
 	
-	dist_x = (reflect_pos_x - sun_position_x);
-	dist_y = (reflect_pos_y - sun_position_y);
+	dist_x = reflect_pos_x - (sun_position_x);
+	dist_y = reflect_pos_y - (sun_position_y);
 	dist_x /= (scr_y / scr_x);
 	
 	dist_total = length(vec2(dist_x, dist_y)) - sun_size / 10.0f;
@@ -256,8 +256,8 @@ void main()
 			(
 				vec2
 				(
-					normal_x * 3.333f - (sun_position_x - 0.5f) * 3.333f,
-					normal_y * 3.333f - (sun_position_y - 0.5f) * 3.333f
+					normal_x * 3.0f + (sun_position_x - 0.5f) * 3.0f,
+					normal_y * 3.0f + (sun_position_y - 0.5f) * 3.0f
 				)
 			)
 			-
@@ -302,6 +302,10 @@ void main()
 		vec3(0.0f),
 		vec3(1.0f)
 	);
+	
+	//FragColor.r = (reflect_pos_x);
+	//FragColor.g = (reflect_pos_y);
+	//FragColor.b = 0.5f;
 	
 	//FragColor.rgb = vec3(dist_total);
 	FragColor.a = texture(texture1, TexCoord).a * ourColor.a;

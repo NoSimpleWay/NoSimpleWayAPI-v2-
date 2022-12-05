@@ -3023,7 +3023,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//game items
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 120.0f;
+	jc_filter_rule->min_y_size = 90.0f;
 	jc_filter_rule->focused_by_data_type = "Game item";
 
 	//filter by game item
@@ -3038,7 +3038,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//base class
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 60.0f;
+	jc_filter_rule->min_y_size = 80.0f;
 	jc_filter_rule->focused_by_data_type = "Base Class";
 
 	jc_filter = new DataEntityFilter();
@@ -3052,7 +3052,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//influence
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 50.0f;
+	jc_filter_rule->min_y_size = 80.0f;
 	jc_filter_rule->focused_by_data_type = "Influence";
 
 	jc_filter = new DataEntityFilter();
@@ -3080,7 +3080,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//explicit
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 60.0f;
+	jc_filter_rule->min_y_size = 80.0f;
 	jc_filter_rule->focused_by_data_type = "Explicit";
 
 	jc_filter = new DataEntityFilter();
@@ -3094,7 +3094,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//cluster passives
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 50.0f;
+	jc_filter_rule->min_y_size = 80.0f;
 	jc_filter_rule->focused_by_data_type = "Cluster passive";
 
 	jc_filter = new DataEntityFilter();
@@ -3108,7 +3108,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//enchantments from lab
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 50.0f;
+	jc_filter_rule->min_y_size = 80.0f;
 	jc_filter_rule->focused_by_data_type = "Enchantment";
 
 	jc_filter = new DataEntityFilter();
@@ -7019,7 +7019,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, FilterB
 	EntityButtonVariantRouterForFilterBlock* button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
 	button_variant_FB_router->make_as_default_button_with_icon
 	(
-		new ERegionGabarite(128.0f, 29.0f),
+		new ERegionGabarite(130.0f, 29.0f),
 		listed_group_left_side,
 		EDataActionCollection::action_rotate_variant,
 		nullptr
