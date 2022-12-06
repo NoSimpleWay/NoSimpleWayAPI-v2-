@@ -191,7 +191,7 @@ void EDataActionCollection::action_generate_filter_block_text(Entity* _entity, E
 	EButtonGroup* filter_block_massive = static_cast<EDataContainer_Button_StoreParentFilterBlock*>(_custom_data->data_container)->parent_filter_block->root_group;
 	for (EButtonGroup* group : filter_block_massive->group_list)
 	{
-		str += generate_filter_block_text(group);
+		str += generate_filter_block_text(group, FilterBlockSaveMode::VERSION_ORIGINAL);
 		str += '\n';
 	}
 
@@ -636,7 +636,7 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 	//for (int i = EWindowMain::loot_filter_editor->group_list.size() - 1; i >= 0; i--)
 	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
 	{
-		str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i]);
+		str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_ORIGINAL);
 		str += '\n';
 		str += '\n';
 	}
@@ -4397,11 +4397,11 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	std::string base_names[5] =
 	{
-		"Very soft",
-		"Soft",
-		"Regular",
-		"Strict",
-		"Very striñt",
+		"very_soft",
+		"soft",
+		"regular",
+		"strict",
+		"very_striñt",
 	};
 
 	std::string EN_names[5] =
@@ -4425,11 +4425,11 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	
 	std::string base_names_for_select_window[5] =
 	{
-		"Full ignore",
-		"Hide",
-		"Ignore",
-		"Default",
-		"Focus"
+		"very_soft",
+		"soft",
+		"regular",
+		"strict",
+		"very_striñå"
 	};
 
 	std::string EN_names_for_select_window[5] =
@@ -4462,6 +4462,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			EDataActionCollection::action_rotate_variant,
 			nullptr
 		);
+
+		whole_filter_block_group->version_routers[i] = button_variant_router;
 
 		button_variant_router->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
 
@@ -7328,14 +7330,39 @@ void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 }
 
-std::string generate_filter_block_text(EButtonGroup* _button_group)
+
+std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode = FilterBlockSaveMode::VERSION_ORIGINAL)
 {
 	std::string result_string = "";
 
-	result_string += "Show";
+	auto whole_block_data = static_cast<EButtonGroupFilterBlock*>(_button_group);
+
+	if (whole_block_data->button_show_hide->selected_variant == 0)
+	{
+		result_string += "Hide";
+	}
+	else
+	{
+		result_string += "Show";
+	}
+
 	result_string += '\n';
 
-	auto whole_block_data = static_cast<EButtonGroupFilterBlock*>(_button_group);
+
+
+	if (_save_mode == FilterBlockSaveMode::VERSION_ORIGINAL)
+	{
+		result_string += "\t#version_control";
+
+		for (int i = 0; i < 5; i++)
+		{
+			result_string += " " + whole_block_data->version_routers[i]->router_variant_list[whole_block_data->version_routers[i]->selected_variant].localisation->base_name;
+		}
+
+		result_string += '\n';
+	}
+
+	
 
 	EButtonGroup* non_listed_section = whole_block_data->pointer_to_non_listed_segment;
 	EButtonGroup* listed_section = whole_block_data->pointer_to_listed_segment;

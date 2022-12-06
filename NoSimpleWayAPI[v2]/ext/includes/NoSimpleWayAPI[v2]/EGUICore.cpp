@@ -96,20 +96,26 @@ void EWindow::GUI_update_default(float _d)
 					}
 	}
 
-	for (EButtonGroup* b_group : button_group_list)
-		if
-			(
-				(b_group != nullptr)
-				&&
-				(b_group->is_active)
-				//&&
-				//(*b_group->region_gabarite->world_position_y										<= *b_group->higher_culling_line_for_bg)
-				//&&
-				//(*b_group->region_gabarite->world_position_y + *b_group->region_gabarite->size_y	>= *b_group->lower_culling_line_for_bg)
-				)
-		{
-			b_group->update(_d);
-		}
+	int id = 0;
+	for (int i = 0; i < button_group_list.size(); i++)
+	{
+		EButtonGroup* b_group = button_group_list[i];
+		//for (EButtonGroup* b_group : button_group_list)
+			if
+				(
+					(b_group != nullptr)
+					&&
+					(b_group->is_active)
+					//&&
+					//(*b_group->region_gabarite->world_position_y										<= *b_group->higher_culling_line_for_bg)
+					//&&
+					//(*b_group->region_gabarite->world_position_y + *b_group->region_gabarite->size_y	>= *b_group->lower_culling_line_for_bg)
+					)
+			{
+				b_group->update(_d);
+				id++;
+			}
+	}
 }
 
 void EWindow::GUI_update_additional(float _d)

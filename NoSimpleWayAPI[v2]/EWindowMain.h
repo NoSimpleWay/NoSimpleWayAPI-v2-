@@ -242,6 +242,8 @@ public:
 	EntityButtonVariantRouterForFilterBlock*	pointer_to_ray_color_router;
 	EntityButtonVariantRouterForFilterBlock*	pointer_to_temporary_option_router;
 	bool										ray_suppressor;
+
+	EntityButtonVariantRouterForFilterBlock*	version_routers[5] = {nullptr};
 	
 
 
@@ -386,7 +388,17 @@ public:
 };
 
 static void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_group, FilterBlockAttribute* _filter_block_attribute);
-static std::string generate_filter_block_text(EButtonGroup* _button_group);
+
+enum class FilterBlockSaveMode
+{
+	VERSION_ORIGINAL,
+	VERSION_VERY_SOFT,
+	VERSION_SOFT,
+	VERSION_DEFAULT,
+	VERSION_STRICT,
+	VERSION_VERY_STRICT
+};
+static std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode);
 
 
 static std::vector<FilterBlockAttribute*> registered_filter_block_attributes;
