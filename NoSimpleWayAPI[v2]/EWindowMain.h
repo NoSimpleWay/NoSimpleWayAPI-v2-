@@ -65,6 +65,8 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_minimap_shape_upside_down_house;
 
 	extern ETextureGabarite* texture_button_plus;
+
+	extern ETextureGabarite* texture_ray;
 }
 
 
@@ -187,6 +189,8 @@ public:
 	EButtonGroup* pointer_to_cosmetic_segment;
 	EButtonGroup* pointer_to_sound_segment;
 	EButtonGroup* pointer_to_minimap_segment;
+	EButtonGroup* pointer_to_ray_segment;
+	EButtonGroup* pointer_to_ray_preview_segment;
 
 	EButtonGroup* pointer_to_top_control_block;
 	EButtonGroup* pointer_to_top_control_block_right_section;
@@ -230,9 +234,14 @@ public:
 
 
 	//		MINIMAP ICONS SECTION
-	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_color_router;
-	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_size_router;
-	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_shape_router;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_minimap_icon_color_router;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_minimap_icon_size_router;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_minimap_icon_shape_router;
+
+	//		RAY SECTION
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_ray_color_router;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_temporary_option_router;
+	bool										ray_suppressor;
 	
 
 
@@ -245,6 +254,13 @@ public:
 	void update(float _d);
 };
 
+class EButtonGroupNewLootFilter : public EButtonGroup
+{
+public:
+	EButtonGroupNewLootFilter(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	EntityButton* input_field_button;
+};
 enum DataOrderNames
 {
 	ATTRIBUTE,
@@ -308,6 +324,7 @@ namespace EDataActionCollection
 	void action_show_hide_cosmetic_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_sound_for_target_button(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_tab(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_create_new_loot_filter_with_name(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text
@@ -344,7 +361,8 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_TYPE_DISABLE_DROP_SOUND,
 	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND,
 	FILTER_ATTRIBUTE_VALUE_TYPE_DISABLE_DROP_SOUND_IF_ALERT,
-	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND_IF_ALERT
+	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND_IF_ALERT,
+	FILTER_ATTRIBUTE_VALUE_TYPE_RAY
 
 
 
@@ -401,6 +419,7 @@ public:
 	static EButtonGroup* loot_filter_editor;
 	static EButtonGroup* world_parameters;
 	static EButtonGroup* tab_list_group;
+	static EButtonGroup* create_new_loot_filter_group;
 
 	static std::string username;
 	static std::string path_of_exile_folder;

@@ -58,10 +58,12 @@ void EWindow::GUI_update_default(float _d)
 				&&
 				(b_group->is_active)
 				&&
+				(!b_group->disable_gabarite)
+				&&
 				(b_group->region_gabarite->world_position_y <= b_group->higher_culling_line_for_bg)
 				&&
 				(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y >= b_group->lower_culling_line_for_bg)
-				)
+			)
 		{
 			EButtonGroup::get_last_focused_group(b_group);
 		}
@@ -500,7 +502,16 @@ void EButtonGroup::draw()
 
 		if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group == this))
 		{
-			NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.13f);
+
+			if (is_active)
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.13f);
+			}
+			else
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_RED, 0.13f);;
+			}
+
 			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
 			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 			(
@@ -902,6 +913,10 @@ void EButtonGroup::align_groups()
 
 		group->align_groups();
 
+	}
+	else
+	{
+		//group->region_gabarite->world_position_x = 99999.9f;
 	}
 
 
@@ -2405,18 +2420,22 @@ void EButtonGroup::move_to_foreground()
 void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 {
 	if
-		(
-			(_group->is_active)
-			&&
-			(!_group->disable_gabarite)
-			&&
-			(_group->can_be_focused)
-			&&
-			(EButtonGroup::catched_by_mouse(_group))
-			&&
-			(!EInputCore::MOUSE_BUTTON_LEFT)
-		)
+	(
+		(_group->is_active)
+		&&
+		(!_group->disable_gabarite)
+		&&
+		(_group->can_be_focused)
+		&&
+		(EButtonGroup::catched_by_mouse(_group))
+		&&
+		(!EInputCore::MOUSE_BUTTON_LEFT)
+		&&
+		(!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+	)
 	{
+
+		//std::cout << "Focus:" << _group << std::endl;
 		focused_button_group = _group;
 
 		if
@@ -2433,7 +2452,12 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 	}
 
 
-
+	if
+	(
+		(_group->is_active)
+		&&
+		(!_group->disable_gabarite)
+	)
 	for (EButtonGroup* group : _group->group_list)
 	{
 		get_last_focused_group(group);

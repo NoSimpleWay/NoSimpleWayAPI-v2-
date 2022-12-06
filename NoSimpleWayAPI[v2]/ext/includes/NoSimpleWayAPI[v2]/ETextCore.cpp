@@ -773,7 +773,8 @@ void ETextArea::update(float _d)
 				)
 				&&
 				(is_overlapped_by_mouse())
-				//&&
+				&&
+				(EButtonGroup::catched_group_for_translation == nullptr)
 				//(NS_FONT_UTILS::active_text_area == nullptr)
 			)
 		{
@@ -788,27 +789,29 @@ void ETextArea::update(float _d)
 	{
 		//click into gabarite
 		if
+		(
+			//only editable text areas can be set as active
+			(*can_be_edited)
+			&&
 			(
-				//only editable text areas can be set as active
-				(*can_be_edited)
-				&&
+				//outclick protection
+				//or
+				//click direct to text area without any active regions on another buttons 
+				(outclick_protection)
+				||
 				(
-					//outclick protection
-					//or
-					//click direct to text area without any active regions on another buttons 
-					(outclick_protection)
-					||
+					(is_overlapped_by_mouse())
+					&&
 					(
-						(is_overlapped_by_mouse())
-						&&
-						(
-							(EClickableArea::active_clickable_region == nullptr)
-							||
-							(EClickableArea::active_clickable_region == parent_clickable_region)
-							)
-						)
+						(EClickableArea::active_clickable_region == nullptr)
+						||
+						(EClickableArea::active_clickable_region == parent_clickable_region)
 					)
 				)
+				&&
+				(EButtonGroup::catched_group_for_translation == nullptr)
+			)
+		)
 		{
 			activate_this_text_area();
 		}
@@ -1181,7 +1184,7 @@ void ETextArea::text_area_set_active_and_select_glyph()
 				(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= glyph->world_position_y)
 				&&
 				(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= glyph->world_position_y + glyph->size_y)
-				)
+			)
 		{
 			//*selected_glyph_position = glyph_id;
 			//*selected_glyph_position = -1;

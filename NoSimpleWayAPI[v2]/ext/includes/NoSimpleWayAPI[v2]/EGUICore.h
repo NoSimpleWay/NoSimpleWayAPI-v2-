@@ -219,6 +219,8 @@ constexpr auto NSW_ONLY_TARGET			= false;
 class EButtonGroup
 {
 public:
+
+	std::string debug_name = "";
 	//float* offset_x = new float(0.0f);
 	//float* offset_y = new float(0.0f);
 

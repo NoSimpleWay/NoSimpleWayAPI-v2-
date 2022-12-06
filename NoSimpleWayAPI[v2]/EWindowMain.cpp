@@ -49,6 +49,7 @@ EButtonGroup* EWindowMain::select_quality_button_group;
 EButtonGroup* EWindowMain::loot_filter_editor;
 EButtonGroup* EWindowMain::world_parameters;
 EButtonGroup* EWindowMain::tab_list_group;
+EButtonGroup* EWindowMain::create_new_loot_filter_group;
 
 
 
@@ -93,6 +94,8 @@ namespace NS_DefaultGabarites
 	ETextureGabarite* texture_minimap_shape_upside_down_house;
 
 	ETextureGabarite* texture_button_plus;
+
+	ETextureGabarite* texture_ray;
 
 
 }
@@ -400,7 +403,7 @@ void EDataActionCollection::action_add_new_filter_block(Entity* _entity, ECustom
 
 	EWindowMain::create_filter_block(EWindowMain::loot_filter_editor, position);
 
-	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 }
 
 void EDataActionCollection::action_open_custom_sound_list(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -481,20 +484,23 @@ void EDataActionCollection::action_show_hide_cosmetic_blocks(Entity* _entity, EC
 	auto but = static_cast<EntityButtonVariantRouterForFilterBlock*>(_entity);
 
 	//but->parent_filter_block->pointer_to_cosmetic_segment	->is_active			= but->selected_variant;
-	but->parent_filter_block->pointer_to_sound_segment->is_active = but->selected_variant;
-	but->parent_filter_block->pointer_to_minimap_segment->is_active = but->selected_variant;
+	but->parent_filter_block->pointer_to_sound_segment->is_active										= but->selected_variant;
+	but->parent_filter_block->pointer_to_minimap_segment->is_active										= but->selected_variant;
+	but->parent_filter_block->pointer_to_ray_segment->is_active											= but->selected_variant;
 
 
 
-	//but->parent_filter_block->pointer_to_cosmetic_segment	->disable_gabarite	= 1 - but->selected_variant;
-	but->parent_filter_block->pointer_to_sound_segment->disable_gabarite = 1 - but->selected_variant;
-	but->parent_filter_block->pointer_to_minimap_segment->disable_gabarite = 1 - but->selected_variant;
+	//but->parent_filter_block->pointer_to_cosmetic_segment	->disable_gabarite							= 1 - but->selected_variant;
+	but->parent_filter_block->pointer_to_sound_segment->disable_gabarite								= 1 - but->selected_variant;
+	but->parent_filter_block->pointer_to_minimap_segment->disable_gabarite								= 1 - but->selected_variant;
+	but->parent_filter_block->pointer_to_ray_segment->disable_gabarite									= 1 - but->selected_variant;
 
 
 
-	but->parent_filter_block->pointer_to_cosmetic_segment->region_gabarite->have_phantom_translation = false;
-	but->parent_filter_block->pointer_to_sound_segment->region_gabarite->have_phantom_translation = false;
-	but->parent_filter_block->pointer_to_minimap_segment->region_gabarite->have_phantom_translation = false;
+	but->parent_filter_block->pointer_to_cosmetic_segment->region_gabarite->have_phantom_translation	= false;
+	but->parent_filter_block->pointer_to_sound_segment->region_gabarite->have_phantom_translation		= false;
+	but->parent_filter_block->pointer_to_minimap_segment->region_gabarite->have_phantom_translation		= false;
+	but->parent_filter_block->pointer_to_ray_segment->region_gabarite->have_phantom_translation			= false;
 
 
 
@@ -552,6 +558,46 @@ void EDataActionCollection::action_select_this_tab(Entity* _entity, ECustomData*
 
 }
 
+void EDataActionCollection::action_create_new_loot_filter_with_name(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButton* but = static_cast<EntityButton*>(_entity);
+
+	if
+	(
+		(but->parent_button_group != nullptr)
+		&&
+		(but->parent_button_group->root_group != nullptr)
+	)
+	{
+		std::string new_loot_filter_name = static_cast<EButtonGroupNewLootFilter*>(but->parent_button_group->root_group)->input_field_button->main_text_area->original_text;
+
+		EntityButtonFilterBlockTab*
+		tab = static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button);
+
+		EButtonGroup*
+		filter_editor = tab->target_filter_editor;
+
+		for (EButtonGroup* button_group : filter_editor->group_list)
+		{
+			delete button_group;
+		};
+
+		filter_editor->group_list.clear();
+		filter_editor->group_list.shrink_to_fit();
+
+		tab->main_text_area->change_text(new_loot_filter_name);
+
+		EButtonGroupFilterBlock* created_filter_block = EWindowMain::create_filter_block(filter_editor , -1);
+
+		filter_editor->scroll_y = 0.0f;
+		EButtonGroup::refresh_button_group(filter_editor);
+
+		EWindowMain::create_new_loot_filter_group->is_active = false;
+
+		EDataActionCollection::action_save_lootfilter(_entity, _custom_data, _d);
+	}
+}
+
 void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _text_area)
 {
 	for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
@@ -597,9 +643,25 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 
 	std::ofstream writabro;
 
-	writabro.open(EWindowMain::path_of_exile_folder + "/AwakenedDaDEditor.filter");
-	writabro << str;
-	writabro.close();
+	//writabro.open(EWindowMain::path_of_exile_folder + "/AwakenedDaDEditor.filter");
+	if 
+	(
+		(EWindowMain::tab_list_group != nullptr)
+		&&
+		(EWindowMain::tab_list_group->selected_button != nullptr)
+		&&
+		(EWindowMain::tab_list_group->selected_button->main_text_area != nullptr)
+	)
+	{
+		writabro.open(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter");
+		writabro << str;
+		writabro.close();
+	}
+	else
+	{
+		EInputCore::logger_simple_error("something wrong, cannot get loot-filter name!");
+	}
+	
 }
 
 
@@ -662,6 +724,8 @@ EWindowMain::EWindowMain()
 	NS_DefaultGabarites::texture_show_hide_visual_editor				= NS_EGraphicCore::load_from_textures_folder("buttons/button_show_hide_visual_editor");
 	NS_DefaultGabarites::texture_show_hide_visual_editor_deactivate		= NS_EGraphicCore::load_from_textures_folder("buttons/button_show_hide_visual_editor_deactivate");
 	NS_DefaultGabarites::texture_button_plus							= NS_EGraphicCore::load_from_textures_folder("buttons/button_plus");
+
+	NS_DefaultGabarites::texture_ray									= NS_EGraphicCore::load_from_textures_folder("ray");
 
 	NS_DefaultGabarites::texture_minimap_shape_circle					= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[circle]");
 	NS_DefaultGabarites::texture_minimap_shape_diamond					= NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[diamond]");
@@ -1448,6 +1512,19 @@ EWindowMain::EWindowMain()
 
 	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "PlayEffect";
+	jc_localisation.localisations[NSW_localisation_EN] = "Loot ray";
+	jc_localisation.localisations[NSW_localisation_RU] = "Луч дропа";
+
+	jc_filter_block_attribute = new FilterBlockAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RAY;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->always_present = true;
+
+	registered_filter_block_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -1602,6 +1679,7 @@ EWindowMain::EWindowMain()
 
 	}
 
+	//NEW BUTTON GROUP
 	//filters block
 	if (true)
 	{
@@ -1644,6 +1722,9 @@ EWindowMain::EWindowMain()
 		button_group_list.insert( button_group_list.begin(), filter_block_tabs[0]);
 		EButtonGroup::refresh_button_group(filter_block_tabs[0]);
 	}
+	
+
+
 
 	//skill gems
 	if (false)
@@ -1877,6 +1958,68 @@ EWindowMain::EWindowMain()
 
 		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
+	}
+	
+	//Create new loot-filter
+	{
+		EButtonGroupNewLootFilter*
+		main_loot_filter_group = new EButtonGroupNewLootFilter(new ERegionGabarite(100.0f, 100.0f, 300.0f, 80.0f));
+		main_loot_filter_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+		main_loot_filter_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		main_loot_filter_group->root_group = main_loot_filter_group;
+		main_loot_filter_group->is_active = true;
+		main_loot_filter_group->parent_window = this;
+
+		main_loot_filter_group->can_resize_to_workspace_size_x = true;
+		main_loot_filter_group->can_resize_to_workspace_size_y = true;
+
+		EWindowMain::create_new_loot_filter_group = main_loot_filter_group;
+		EButtonGroup*
+		new_loot_filter_workspace_group = main_loot_filter_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100, 20.0f), EGUIStyle::active_style);
+		new_loot_filter_workspace_group->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		new_loot_filter_workspace_group->can_resize_to_workspace_size_x = true;
+		new_loot_filter_workspace_group->can_resize_to_workspace_size_y = true;
+
+
+		////////////////////////
+		EntityButton*
+		button_input_field = new EntityButton();
+		button_input_field->make_default_button_with_edible_text
+		(
+			new ERegionGabarite(240.0f, 30.0f),
+			new_loot_filter_workspace_group,
+			nullptr,
+			""
+		);
+		ELocalisationText*
+		ltext = new ELocalisationText();
+		ltext->base_name = "Type new loot filter name";
+		ltext->localisations[NSW_localisation_EN] = "Type new loot filter name";
+		ltext->localisations[NSW_localisation_RU] = "Напишите название лут-фильтра";
+
+		button_input_field->main_text_area->gray_text = ltext;
+
+		new_loot_filter_workspace_group->button_list.push_back(button_input_field);
+		////////////////////////
+
+		////////////////////////
+		EntityButton*
+		button_accept = new EntityButton();
+		button_accept->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(50.0f, 30.0f),
+			new_loot_filter_workspace_group,
+			&EDataActionCollection::action_create_new_loot_filter_with_name,
+			"OK"
+		);
+
+		new_loot_filter_workspace_group->button_list.push_back(button_accept);
+		////////////////////////
+
+		main_loot_filter_group->input_field_button = button_input_field;
+
+		button_group_list.push_back(main_loot_filter_group);
+		EButtonGroup::refresh_button_group(main_loot_filter_group);
 	}
 
 	//DATA ENTITY
@@ -4041,6 +4184,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 256.0f));
 	whole_filter_block_group->init_button_group(EGUIStyle::active_style, true, true, false);
 	whole_filter_block_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+	whole_filter_block_group->debug_name = "Whole filter block";
 
 	if (_specific_position < 0)
 	{
@@ -4060,6 +4204,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
 	whole_filter_block_group->add_group(workspace_part);
+	workspace_part->debug_name = "Filter blcok workspace part";
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -4071,6 +4216,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 
 	control_part->pointer_to_filter_block_group = whole_filter_block_group;
+	control_part->debug_name = "Control part";
 
 	whole_filter_block_group->pointer_to_top_control_block = control_part;
 	whole_filter_block_group->add_group(control_part);
@@ -4082,6 +4228,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		control_part_left_show_hide_section = new EButtonGroup(new ERegionGabarite(140.0f, 30.0f));
 	control_part_left_show_hide_section->init_button_group(EGUIStyle::active_style, false, false, true);
 	control_part_left_show_hide_section->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
+	control_part_left_show_hide_section->debug_name = "Left show/hide";
 
 	whole_filter_block_group->pointer_to_control_group_left_show_hide = control_part_left_show_hide_section;
 	control_part->add_group(control_part_left_show_hide_section);
@@ -4097,6 +4244,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		control_part_mid_import = new EButtonGroup(new ERegionGabarite(215.0f, 30.0f));
 	control_part_mid_import->init_button_group(EGUIStyle::active_style, false, false, true);
 	control_part_mid_import->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
+	control_part_mid_import->debug_name = "Mid part import";
 
 	whole_filter_block_group->pointer_to_control_group_mid_import = control_part_mid_import;
 	control_part->add_group(control_part_mid_import);
@@ -4111,6 +4259,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		control_part_mid_versions = new EButtonGroup(new ERegionGabarite(200.0f, 30.0f));
 	control_part_mid_versions->init_button_group(EGUIStyle::active_style, false, false, true);
 	control_part_mid_versions->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+	control_part_mid_versions->debug_name = "Versions";
 
 	whole_filter_block_group->pointer_to_control_group_mid_versions = control_part_mid_versions;
 	control_part->add_group(control_part_mid_versions);
@@ -4127,6 +4276,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		control_part_mid_show_hide_cosmetic = new EButtonGroup(new ERegionGabarite(110.0f, 30.0f));
 	control_part_mid_show_hide_cosmetic->init_button_group(EGUIStyle::active_style, false, false, true);
 	control_part_mid_show_hide_cosmetic->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
+	control_part_mid_show_hide_cosmetic->debug_name = "Show/hide cosmetic";
 
 	whole_filter_block_group->pointer_to_control_group_mid_versions = control_part_mid_show_hide_cosmetic;
 	control_part->add_group(control_part_mid_show_hide_cosmetic);
@@ -4222,7 +4372,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	button_variant_router->router_variant_list.push_back(*router_variant);
 	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
+	button_variant_router->select_variant(1);
 
 	control_part->button_list.push_back(button_variant_router);
 	whole_filter_block_group->button_show_hide = button_variant_router;
@@ -4671,6 +4821,18 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	/*			SECONDARY COSMETIC SEGMENT GROUP		*/
 
+	//		RAY
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+	EButtonGroup* ray_cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(156.0f, 160.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+
+	ray_cosmetic_segment->is_active = false;
+	ray_cosmetic_segment->disable_gabarite = true;
+
+	workspace_part->add_group(ray_cosmetic_segment);
+	whole_filter_block_group->pointer_to_ray_segment = ray_cosmetic_segment;
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+
 	//		SOUND
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 		EButtonGroup*
@@ -4709,17 +4871,18 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	//		MINIMAP ICON
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	EButtonGroup*
+		EButtonGroup*
 		minimap_cosmetic_segment
 		= EButtonGroup::create_default_button_group(new ERegionGabarite(156.0f, 160.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 
-	minimap_cosmetic_segment->is_active = false;
-	minimap_cosmetic_segment->disable_gabarite = true;
+		minimap_cosmetic_segment->is_active = false;
+		minimap_cosmetic_segment->disable_gabarite = true;
 
-	workspace_part->add_group(minimap_cosmetic_segment);
-	whole_filter_block_group->pointer_to_minimap_segment = minimap_cosmetic_segment;
+		workspace_part->add_group(minimap_cosmetic_segment);
+		whole_filter_block_group->pointer_to_minimap_segment = minimap_cosmetic_segment;
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 
 
@@ -4777,7 +4940,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
 		button_variant_FB_router->make_as_default_button_with_icon
 		(
-			new ERegionGabarite(145.0f, 22.0f),
+			new ERegionGabarite(170.0f, 22.0f),
 			bottom_user_sound_section,
 			&EDataActionCollection::action_rotate_variant,
 			nullptr
@@ -4890,7 +5053,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	jc_button = EntityButton::create_vertical_named_slider
 	(
 
-		new ERegionGabarite(145.0f, 30.0f),
+		new ERegionGabarite(170.0f, 30.0f),
 		mid_ingame_sound_section,
 		EFont::font_list[0],
 		EGUIStyle::active_style,
@@ -4919,7 +5082,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
 		button_variant_FB_router->make_as_default_button_with_icon
 		(
-			new ERegionGabarite(145.0f, 22.0f),
+			new ERegionGabarite(170.0f, 22.0f),
 			mid_ingame_sound_section,
 			&EDataActionCollection::action_rotate_variant,
 			nullptr
@@ -4984,7 +5147,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
 	button_variant_FB_router->make_as_default_button_with_icon
 	(
-		new ERegionGabarite(145.0f, 40.0f),
+		new ERegionGabarite(170.0f, 40.0f),
 		top_drop_sound_section,
 		&EDataActionCollection::action_rotate_variant,
 		nullptr
@@ -5645,13 +5808,24 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	/*=========================================================================*/
 
 
+	//		RAY PREVIEW
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+		ray_preview = EButtonGroup::create_invisible_button_group(new ERegionGabarite(32.0f, 160.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
+
+	ray_preview->is_active = true;
+	ray_preview->disable_gabarite = false;
+
+	whole_filter_block_group->pointer_to_ray_preview_segment = ray_preview;
+	workspace_part->add_group(ray_preview);
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
-	//cosmetic segment
+	//		MAIN COLORS EDIT
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
-		cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(165.0f, 160.0f), EGUIStyle::active_style)
+		cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(150.0f, 160.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 	cosmetic_segment->is_active = true;
@@ -5767,7 +5941,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	jc_button = new EntityButton();
 	jc_button->make_default_bool_switcher_button
 	(
-		new ERegionGabarite(25.0f, 30.0f),
+		new ERegionGabarite(22.0f, 22.0f),
 		cosmetic_segment,
 		EDataActionCollection::action_switch_boolean_value,
 		NS_DefaultGabarites::texture_bool_switcher_activated_box,
@@ -5779,6 +5953,296 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	cosmetic_segment->button_list.push_back(jc_button);
 	// // // // // // //// // // // // // //// // // // // // //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+
+	//		MINIMAP RAY
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
+	button_variant_FB_router->make_as_default_button_with_icon
+	(
+		new ERegionGabarite(125.0f, 22.0f),
+		ray_cosmetic_segment,
+		&EDataActionCollection::action_rotate_variant,
+		nullptr
+	);
+	button_variant_FB_router->parent_filter_block = whole_filter_block_group;
+
+
+	button_variant_FB_router->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
+
+	button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
+
+	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+	button_variant_FB_router->pointer_to_text_area = jc_text_area;
+
+	*jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
+
+	button_variant_FB_router->suppressor = &whole_filter_block_group->ray_suppressor;
+	whole_filter_block_group->pointer_to_ray_color_router = button_variant_FB_router;
+
+
+	//routers
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Red";
+	local_text->localisations[NSW_localisation_EN] = "Red";
+	local_text->localisations[NSW_localisation_RU] = "Красный";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(1.0f, 0.2f, 0.1f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Green";
+	local_text->localisations[NSW_localisation_EN] = "Green";
+	local_text->localisations[NSW_localisation_RU] = "Зелёный";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(0.25f, 1.0f, 0.4f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Blue";
+	local_text->localisations[NSW_localisation_EN] = "Blue";
+	local_text->localisations[NSW_localisation_RU] = "Синий";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(0.25f, 0.4f, 1.0f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Brown";
+	local_text->localisations[NSW_localisation_EN] = "Brown";
+	local_text->localisations[NSW_localisation_RU] = "Коричневый";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "White";
+	local_text->localisations[NSW_localisation_EN] = "White";
+	local_text->localisations[NSW_localisation_RU] = "Белый";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(1.0f, 1.0f, 1.0f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Yellow";
+	local_text->localisations[NSW_localisation_EN] = "Yellow";
+	local_text->localisations[NSW_localisation_RU] = "Жёлтый";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(1.0f, 1.0f, 0.25f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Cyan";
+	local_text->localisations[NSW_localisation_EN] = "Cyan";
+	local_text->localisations[NSW_localisation_RU] = "Голубой";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(0.25f, 0.8f, 1.0f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Grey";
+	local_text->localisations[NSW_localisation_EN] = "Grey";
+	local_text->localisations[NSW_localisation_RU] = "Серый";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(0.55f, 0.55f, 0.55f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Orange";
+	local_text->localisations[NSW_localisation_EN] = "Orange";
+	local_text->localisations[NSW_localisation_RU] = "Оранжевый";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(1.0f, 0.65f, 0.1f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Pink";
+	local_text->localisations[NSW_localisation_EN] = "Pink";
+	local_text->localisations[NSW_localisation_RU] = "Розовый";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(1.0f, 0.5f, 1.0f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Purple";
+	local_text->localisations[NSW_localisation_EN] = "Purple";
+	local_text->localisations[NSW_localisation_RU] = "Фиолетовый";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(0.8f, 0.1f, 0.9f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	button_variant_FB_router->select_variant(0);
+
+
+	ray_cosmetic_segment->button_list.push_back(button_variant_FB_router);
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//font size switcher
+	// // // // // // //// // // // // // //// // // // // // //
+	target_bool = &whole_filter_block_group->ray_suppressor;
+
+	jc_button = new EntityButton();
+	jc_button->make_default_bool_switcher_button
+	(
+		new ERegionGabarite(25.0f, 25.0f),
+		ray_cosmetic_segment,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_DefaultGabarites::texture_bool_switcher_activated_box,
+		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+		target_bool
+	);
+	whole_filter_block_group->text_size_switch_button = jc_button;
+
+	ray_cosmetic_segment->button_list.push_back(jc_button);
+	// // // // // // //// // // // // // //// // // // // // //
+
+
+
+
+
+	//		MINIMAP RAY [temp?]
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
+	button_variant_FB_router->make_as_default_button_with_icon
+	(
+		new ERegionGabarite(150.0f, 22.0f),
+		ray_cosmetic_segment,
+		&EDataActionCollection::action_rotate_variant,
+		nullptr
+	);
+	button_variant_FB_router->parent_filter_block = whole_filter_block_group;
+
+
+	button_variant_FB_router->rotate_variant_mode = RotateVariantMode::SELECT_NEXT;
+
+	button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
+
+	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+	button_variant_FB_router->pointer_to_text_area = jc_text_area;
+
+	*jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
+
+	button_variant_FB_router->suppressor = &whole_filter_block_group->ray_suppressor;
+	whole_filter_block_group->pointer_to_temporary_option_router = button_variant_FB_router;
+
+
+	//routers
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Constant";
+	local_text->localisations[NSW_localisation_EN] = "Constant";
+	local_text->localisations[NSW_localisation_RU] = "Постоянный";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Temp";
+	local_text->localisations[NSW_localisation_EN] = "Temporary";
+	local_text->localisations[NSW_localisation_RU] = "Временный";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color->set_color_RGBA(0.6f, 0.6f, 0.6f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(*router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+	button_variant_FB_router->select_variant(0);
+
+
+	ray_cosmetic_segment->button_list.push_back(button_variant_FB_router);
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 	//EInputCore::logger_param("size of subgroups", workspace_part->group_list.size());
 	return whole_filter_block_group;
@@ -6026,6 +6490,11 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										{
 											whole_block_container->pointer_to_optional_user_sound->select_variant(1);
 										}
+									}
+
+									if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RAY) && (!comment_mode))
+									{
+										whole_block_container->ray_suppressor = true;
 									}
 									//target_HRA_color = ((EDataContainer_Button_StoreColor*)(Entity::get_last_custom_data(whole_block_container->pointer_to_color_button[0])->data_container))->stored_color;
 									//target_color_bool = &whole_block_container->color_check[0];
@@ -6343,44 +6812,60 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								}
 							
 									
-									//		INGAME SOUND
+								//		INGAME SOUND
 								if (matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_INGAME_SOUND)
+								{
+									if (data_part == 2)
 									{
-										if (data_part == 2)
-										{
-											ENamedSound* matched_named_sound = nullptr;
+										ENamedSound* matched_named_sound = nullptr;
 
-											for (ENamedSound* named_sound : EWindowMain::default_sound_list)
-												if (named_sound->localisation_text.base_name == buffer_text)
-												{
-													//EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
-
-													matched_named_sound = named_sound;
-												}
-
-											if (matched_named_sound == nullptr)
+										for (ENamedSound* named_sound : EWindowMain::default_sound_list)
+											if (named_sound->localisation_text.base_name == buffer_text)
 											{
-												//EInputCore::logger_param_with_warning("undefined sound", buffer_text);
+												//EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
+
+												matched_named_sound = named_sound;
 											}
 
-
-											whole_block_container->pointer_to_game_sound_button->stored_named_sound = matched_named_sound;
-											if (!comment_mode) { whole_block_container->game_sound_suppressor_bool = true; }
-
-										}
-										else
-										if (data_part == 3)
+										if (matched_named_sound == nullptr)
 										{
-											float
-											value = std::stoi(buffer_text) / 300.0f;
-											value = max(value, 0.0f);
-											value = min(value, 1.0f);
-
-											whole_block_container->sound_volume_value = value;
+											//EInputCore::logger_param_with_warning("undefined sound", buffer_text);
 										}
 
+
+										whole_block_container->pointer_to_game_sound_button->stored_named_sound = matched_named_sound;
+										if (!comment_mode) { whole_block_container->game_sound_suppressor_bool = true; }
 
 									}
+									else
+									if (data_part == 3)
+									{
+										float
+										value = std::stoi(buffer_text) / 300.0f;
+										value = max(value, 0.0f);
+										value = min(value, 1.0f);
+
+										whole_block_container->sound_volume_value = value;
+									}
+
+
+								}
+
+								//		RAY
+								if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RAY) && (!comment_mode))
+								{
+									EntityButtonVariantRouter* ray_router = whole_block_container->pointer_to_ray_color_router;
+
+									if (data_part == 2)
+									{
+										ray_router->select_variant(ray_router->seach_id_by_base_name(buffer_text));
+									}
+
+									if ((data_part == 3) && (buffer_text == "Temp"))
+									{
+										whole_block_container->pointer_to_temporary_option_router->select_variant(1);
+									}
+								}
 								
 
 
@@ -7093,6 +7578,23 @@ std::string generate_filter_block_text(EButtonGroup* _button_group)
 		result_string += '\n';
 	}
 
+	result_string += '\t';
+	if (!whole_block_data->ray_suppressor)
+	{
+		result_string += "#";
+	}
+	result_string += "PlayEffect";
+
+	result_string += ' ';
+	result_string += whole_block_data->pointer_to_ray_color_router->router_variant_list[whole_block_data->pointer_to_ray_color_router->selected_variant].localisation->base_name;
+	
+	if (whole_block_data->pointer_to_temporary_option_router->selected_variant == 1)
+	{
+		result_string += ' ';
+		result_string += whole_block_data->pointer_to_temporary_option_router->router_variant_list[1].localisation->base_name;
+	}
+	
+	result_string += '\n';
 	//if (whole_block_data->pointer_to_disable_enable_drop_sound->selected_variant == 1)
 	//{
 	//	result_string += "\tDisableDropSound\n";
@@ -7472,6 +7974,37 @@ void EButtonGroupTopControlSection::draw()
 			*shape_router->texture->size_y_in_pixels * rescale_factor,
 
 			shape_router->texture
+		);
+	}
+
+	pos_x = pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->world_position_x;
+	pos_x += (pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->size_x - *NS_DefaultGabarites::texture_ray->size_x_in_pixels) / 2.0f;
+
+	pos_y = pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->world_position_y;
+
+	if (pointer_to_filter_block_group->ray_suppressor)
+	{
+		EntityButtonVariantRouter* ray_color_router = pointer_to_filter_block_group->pointer_to_ray_color_router;
+
+		NS_EGraphicCore::set_active_color(ray_color_router->router_variant_list[ray_color_router->selected_variant].color);
+
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			//x pos
+			pos_x,
+
+			//y pos
+			pos_y,
+
+			*NS_DefaultGabarites::texture_ray->size_x_in_pixels,
+			*NS_DefaultGabarites::texture_ray->size_y_in_pixels,
+			
+
+			NS_DefaultGabarites::texture_ray
 		);
 	}
 	//std::cout << "!";
