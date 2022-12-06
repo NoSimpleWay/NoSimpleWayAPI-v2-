@@ -449,7 +449,7 @@ void ETextArea::generate_text()
 	float y_adding = 0.0f;
 	float full_text_height = 0.0f;
 
-	float line_height = 13.0f;
+	float line_height = 14.0f;
 
 
 	EFontGlyph* temp_glyph = nullptr;

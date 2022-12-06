@@ -130,7 +130,7 @@ void main()
 	//reflect_pos_x = clamp(reflect_pos_x, 0.0f, 1.0f);
 	//reflect_pos_x *= scr_x / scr_y;
 	
-	reflect_pos_y =  0.333 + (WorldPosition.y	/ scr_y	* (1.0f - abs(normal_y * 0.0f))) * 0.333f + normal_y * 0.1666f;
+	reflect_pos_y =  0.333f + (WorldPosition.y	/ scr_y	* (1.0f - abs(normal_y * 0.0f))) * 0.333f + normal_y * 0.1666f;
 	//reflect_pos_y = clamp(reflect_pos_y, 0.0f, 1.0f);
 	//reflect_pos_x = gl_FragCoord.x / 2880.0f;
 	//reflect_pos_y = WorldPosition.y / 1800.0f;
@@ -256,8 +256,8 @@ void main()
 			(
 				vec2
 				(
-					normal_x * 3.0f + (sun_position_x - 0.5f) * 3.0f,
-					normal_y * 3.0f + (sun_position_y - 0.5f) * 3.0f
+					0.5f + normal_x * 0.1666f - (sun_position_x - 0.5f) * 3.0f,
+					0.5f + normal_y * 0.1666f - (sun_position_y - 0.5f) * 3.0f
 				)
 			)
 			-

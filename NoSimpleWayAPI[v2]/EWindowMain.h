@@ -213,13 +213,19 @@ public:
 	EntityButtonVariantRouterForFilterBlock* button_show_hide;
 
 
-	EntityButtonFilterSound* pointer_to_custom_sound_button;
-	bool							custom_sound_suppressor_bool;
+	//sounds
+	EntityButtonFilterSound*					pointer_to_custom_sound_button;
+	bool										custom_sound_suppressor_bool;
 
-	EntityButtonFilterSound*		pointer_to_game_sound_button;
-	bool							game_sound_suppressor_bool;
-	EntityButton*					sound_volume;
-	float							sound_volume_value;
+	EntityButtonFilterSound*					pointer_to_game_sound_button;
+	bool										game_sound_suppressor_bool;
+	EntityButton*								sound_volume;
+	float										sound_volume_value;
+
+	
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_positional_variant_button;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_disable_enable_drop_sound;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_optional_user_sound;
 
 
 
@@ -228,8 +234,7 @@ public:
 	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_size_router;
 	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_shape_router;
 	
-	EntityButtonVariantRouterForFilterBlock* pointer_to_positional_variant_button;
-	EntityButtonVariantRouterForFilterBlock* pointer_to_disable_enable_drop_sound;
+
 
 
 
@@ -337,7 +342,9 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_INGAME_SOUND,
 	FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND,
 	FILTER_ATTRIBUTE_VALUE_TYPE_DISABLE_DROP_SOUND,
-	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND
+	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND,
+	FILTER_ATTRIBUTE_VALUE_TYPE_DISABLE_DROP_SOUND_IF_ALERT,
+	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND_IF_ALERT
 
 
 

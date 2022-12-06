@@ -3100,7 +3100,7 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 
 		std::string text = rv.localisation->localisations[NSW_localisation_EN];
 
-		if (rv.localisation_for_select_window->localisations[NSW_localisation_EN] != "")
+		if ((rv.localisation_for_select_window != nullptr) && (rv.localisation_for_select_window->localisations[NSW_localisation_EN] != ""))
 		{
 			text = rv.localisation_for_select_window->localisations[NSW_localisation_EN];
 		}
