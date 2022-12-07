@@ -65,6 +65,9 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_minimap_shape_upside_down_house;
 
 	extern ETextureGabarite* texture_button_plus;
+	extern ETextureGabarite* texture_button_move_up;
+	extern ETextureGabarite* texture_button_move_down;
+	extern ETextureGabarite* texture_button_remove_filter_block;
 
 	extern ETextureGabarite* texture_ray;
 }
@@ -143,6 +146,25 @@ public:
 
 	EButtonGroup* target_filter_editor;
 };
+
+
+
+
+class EntityButtonForListedSegment : public EntityButtonForFilterBlock
+{
+public:
+	EButtonGroup* listed_group;
+	//~EntityButtonFilterBlock
+	//int a;
+	//EntityButtonFilterBlock() : a(0) {};
+	EntityButtonForListedSegment();
+	virtual ~EntityButtonForListedSegment();
+};
+
+
+
+
+
 
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
 //EButtonGroup
@@ -327,6 +349,13 @@ namespace EDataActionCollection
 	void action_select_this_sound_for_target_button(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_tab(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_create_new_loot_filter_with_name(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_new_lootfilter_group(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_remove_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_move_filter_block_up(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_move_filter_block_down(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_delete_listed_segment(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text
@@ -344,7 +373,9 @@ enum FilterAttributeType
 {
 	FILTER_ATTRIBUTE_TYPE_NON_LISTED,
 	FILTER_ATTRIBUTE_TYPE_LISTED,
-	FILTER_ATTRIBUTE_TYPE_COSMETIC
+	FILTER_ATTRIBUTE_TYPE_COSMETIC,
+	FILTER_ATTRIBUTE_TYPE_CONFIG
+
 };
 
 enum FilterAttributeValueType
@@ -364,7 +395,14 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND,
 	FILTER_ATTRIBUTE_VALUE_TYPE_DISABLE_DROP_SOUND_IF_ALERT,
 	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND_IF_ALERT,
-	FILTER_ATTRIBUTE_VALUE_TYPE_RAY
+	FILTER_ATTRIBUTE_VALUE_TYPE_RAY,
+
+
+	FILTER_ATTRIBUTE_VALUE_CONFIG_VERSIONS,
+
+
+
+	FILTER_ATTRIBUTE_VALUE_OLD_VERSION_AUTOGEN,
 
 
 
@@ -385,18 +423,20 @@ public:
 
 	bool						always_present;
 	float						button_x_size_override = 0.0f;
+
+	bool						commentary_config = false;
 };
 
 static void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_group, FilterBlockAttribute* _filter_block_attribute);
 
 enum class FilterBlockSaveMode
 {
-	VERSION_ORIGINAL,
-	VERSION_VERY_SOFT,
-	VERSION_SOFT,
-	VERSION_DEFAULT,
-	VERSION_STRICT,
-	VERSION_VERY_STRICT
+	VERSION_ORIGINAL		= -1,
+	VERSION_VERY_SOFT		= 0,
+	VERSION_SOFT			= 1,
+	VERSION_DEFAULT			= 2,
+	VERSION_STRICT			= 3,
+	VERSION_VERY_STRICT		= 4
 };
 static std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode);
 
@@ -431,7 +471,7 @@ public:
 	static EButtonGroup* loot_filter_editor;
 	static EButtonGroup* world_parameters;
 	static EButtonGroup* tab_list_group;
-	static EButtonGroup* create_new_loot_filter_group;
+	static EButtonGroupNewLootFilter* create_new_loot_filter_group;
 
 	static std::string username;
 	static std::string path_of_exile_folder;
@@ -459,7 +499,7 @@ public:
 	//static bool disable_deleting = true;
 
 	static std::vector <EButtonGroup*> filter_block_tabs;
-
+	static void write_loot_filter_to_disc(std::string _full_path, std::string* _data);
 
 };
 

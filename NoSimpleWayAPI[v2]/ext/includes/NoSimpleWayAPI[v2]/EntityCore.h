@@ -259,6 +259,15 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
+	void make_as_default_button_with_full_icon
+	(
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		data_action_pointer _dap,
+		ETextureGabarite* _gabarite
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
+
 	void make_as_default_button_with_icon_and_text
 	(
 		ERegionGabarite*	_region_gabarite,
@@ -334,6 +343,8 @@ public:
 
 	EButtonGroupRouterVariant*	opened_router_group;
 
+
+	int height_division = 2;
 };
 
 

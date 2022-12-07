@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include <string>
+#include <algorithm>
 
 enum class ColorButtonMode
 {
@@ -115,6 +116,10 @@ public:
 	{
 		double      hh, p, q, t, ff;
 		long        i;
+
+		col->s = std::clamp(col->s, 0.0f, 1.0f);
+		col->v = std::clamp(col->v, 0.0f, 1.0f);
+
 
 		if (col->s <= 0.0f) {       // < is bogus, just shuts up warnings
 			col->r = col->v;

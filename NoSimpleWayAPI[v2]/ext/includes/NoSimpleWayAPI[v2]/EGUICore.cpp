@@ -39,17 +39,21 @@ void EWindow::GUI_update_default(float _d)
 {
 
 	for (int i = 0; i < button_group_list.size(); i++)
-		if ((button_group_list[i] != nullptr) && (button_group_list[i]->need_remove))
+	if ((button_group_list[i] != nullptr) && (button_group_list[i]->need_remove))
+	{
+		if (!disable_deleting)
 		{
-			if (!disable_deleting)
-			{
-				delete button_group_list[i];
-			}
-
-			EInputCore::logger_simple_success("Need remove [" + std::to_string(i) + "] element of button group list");
-
-			button_group_list.erase(button_group_list.begin() + i);
+			delete button_group_list[i];
 		}
+
+		EInputCore::logger_simple_success("Need remove [" + std::to_string(i) + "] element of button group list");
+
+		button_group_list.erase(button_group_list.begin() + i);
+
+		//any_remove = true;
+	}
+
+
 
 	for (EButtonGroup* b_group : button_group_list)
 		if
@@ -257,25 +261,33 @@ void EButtonGroup::update(float _d)
 		{
 			row->header_button_group->update(_d);
 		}*/
+	bool any_remove = false;
 
 	for (int i = 0; i < group_list.size(); i++)
-		if ((group_list[i] != nullptr) && (group_list[i]->need_remove))
+	if ((group_list[i] != nullptr) && (group_list[i]->need_remove))
+	{
+		if (!disable_deleting)
 		{
-			if (!disable_deleting)
-			{
-				//delete group_list[i];
-			}
-			EInputCore::logger_simple_success("Need remove [" + std::to_string(i) + "] child element of button group list");
-
-			group_list.erase(group_list.begin() + i);
-
-			i--;
-
-			if (parent_group != nullptr)
-			{
-				change_group(parent_group);
-			}
+			//delete group_list[i];
 		}
+		EInputCore::logger_simple_success("Need remove [" + std::to_string(i) + "] child element of button group list");
+
+		group_list.erase(group_list.begin() + i);
+
+		i--;
+
+		//if (parent_group != nullptr)
+		//{
+		//	change_group(parent_group);
+		//}
+
+		any_remove = true;
+	}
+
+	if (any_remove)
+	{
+		EButtonGroup::change_group(this);
+	}
 
 	bool any_button_order_change = false;
 
@@ -3075,7 +3087,7 @@ void EGUIStyle::set_color_multiplier(float _r, float _g, float _b, float _a)
 
 EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_button_group(EWindow* _target_window, EntityButtonVariantRouter* _router_button)
 {
-	int elements_count = ceil(_router_button->router_variant_list.size() / 2.0f);
+	int elements_count = ceil(_router_button->router_variant_list.size() / (float)(_router_button->height_division));
 
 	float y_size = min (elements_count * _router_button->button_gabarite->size_y + BUTTON_FORCE_FIELD_SIZE * 2.0f * elements_count + 40.0f, 310.0f);
 	//EInputCore::logger_simple_info("ZZZ");
@@ -3090,7 +3102,7 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 			_router_button->button_gabarite->world_position_x,
 			min(_router_button->button_gabarite->world_position_y, NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom - y_size - 30.0f),
 
-			_router_button->button_gabarite->size_x * 2.0f + 30.0f,
+			_router_button->button_gabarite->size_x * _router_button->height_division + 30.0f,
 			y_size
 		)
 	);

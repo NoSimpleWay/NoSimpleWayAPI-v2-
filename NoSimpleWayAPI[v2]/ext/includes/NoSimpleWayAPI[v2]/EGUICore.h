@@ -457,6 +457,8 @@ public:
 	EButtonGroupRouterVariant(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	~EButtonGroupRouterVariant();
+
+	
 };
 //class EButtonContainer
 //{

@@ -1121,6 +1121,28 @@ void EntityButton::make_as_default_button_with_icon(ERegionGabarite* _region_gab
 	);
 }
 
+void EntityButton::make_as_default_button_with_full_icon(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite)
+{
+	make_as_default_clickable_button(_region_gabarite, _parent_group, _dap);
+
+
+	sprite_layer_list.push_back
+	(
+		ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+		(
+			_gabarite,
+
+			0.0f,
+			0.0f,
+			0.0f,
+
+			_region_gabarite->size_x,
+			_region_gabarite->size_y,
+			0.0f
+		)
+	);
+}
+
 void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite, std::string& _text)
 {
 	make_as_default_clickable_button(_region_gabarite, _parent_group, _dap);
