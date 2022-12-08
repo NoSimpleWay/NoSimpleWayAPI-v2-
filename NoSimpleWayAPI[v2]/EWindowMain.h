@@ -438,6 +438,17 @@ enum class FilterBlockSaveMode
 	VERSION_STRICT			= 3,
 	VERSION_VERY_STRICT		= 4
 };
+
+enum LootFilterVersionDescription
+{
+	LOOT_VERSION_FULL_IGNORE,
+	LOOT_VERSION_HIDE,
+	LOOT_VERSION_IGNORE,
+	LOOT_VERSION_DEFAULT,
+	LOOT_VERSION_FOCUS
+
+};
+
 static std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode);
 
 

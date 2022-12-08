@@ -2911,6 +2911,503 @@ void NS_ERenderCollection::set_brick_borders_and_subdivisions(float _left, float
 
 }
 
+void NS_ERenderCollection::add_data_to_vertex_buffer_shade(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _shade_size, ETextureGabarite* _texture)
+{
+	//address arithmetic, get pointer to buffer array, and move to +_offset
+	_array += _start_offset;
+	//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
+
+	//...
+	//...
+	//#..
+	
+
+		//.#
+		//..
+		_array[0] = (_x);
+		_array[1] = (_y);
+
+		_array[2] = NS_EGraphicCore::active_color[0];
+		_array[3] = NS_EGraphicCore::active_color[1];
+		_array[4] = NS_EGraphicCore::active_color[2];
+		_array[5] = NS_EGraphicCore::active_color[3];
+
+		_array[6] = *_texture->uv_end_x;
+		_array[7] = *_texture->uv_end_y;
+
+		//..
+		//.#
+		_array[8] = (_x);
+		_array[9] = _y - _shade_size;
+
+		_array[10] = NS_EGraphicCore::active_color[0];
+		_array[11] = NS_EGraphicCore::active_color[1];
+		_array[12] = NS_EGraphicCore::active_color[2];
+		_array[13] = 0.0f;
+
+		_array[14] = *_texture->uv_end_x;
+		_array[15] = *_texture->uv_start_y;
+
+		//..
+		//#.
+		_array[16] = _x - _shade_size;
+		_array[17] = _y - _shade_size;
+
+		_array[18] = NS_EGraphicCore::active_color[0];
+		_array[19] = NS_EGraphicCore::active_color[1];
+		_array[20] = NS_EGraphicCore::active_color[2];
+		_array[21] = 0.0f;
+
+		_array[22] = *_texture->uv_start_x;
+		_array[23] = *_texture->uv_start_y;
+
+		//#.
+		//..
+		_array[24] = _x - _shade_size;
+		_array[25] = _y;
+
+		_array[26] = NS_EGraphicCore::active_color[0];
+		_array[27] = NS_EGraphicCore::active_color[1];
+		_array[28] = NS_EGraphicCore::active_color[2];
+		_array[29] = 0.0f;
+
+		_array[30] = *_texture->uv_start_x;
+		_array[31] = *_texture->uv_end_y;
+
+		_start_offset += 32;
+
+	//...
+	//#..
+	//...
+
+
+		//.#
+		//..
+		_array += 32;
+
+		_array[0] = (_x);
+		_array[1] = (_y + _h);
+
+		_array[2] = NS_EGraphicCore::active_color[0];
+		_array[3] = NS_EGraphicCore::active_color[1];
+		_array[4] = NS_EGraphicCore::active_color[2];
+		_array[5] = NS_EGraphicCore::active_color[3];
+
+		_array[6] = *_texture->uv_end_x;
+		_array[7] = *_texture->uv_end_y;
+
+		//..
+		//.#
+		_array[8] = (_x);
+		_array[9] = _y;
+
+		_array[10] = NS_EGraphicCore::active_color[0];
+		_array[11] = NS_EGraphicCore::active_color[1];
+		_array[12] = NS_EGraphicCore::active_color[2];
+		_array[13] = NS_EGraphicCore::active_color[3];
+
+		_array[14] = *_texture->uv_end_x;
+		_array[15] = *_texture->uv_start_y;
+
+		//..
+		//#.
+		_array[16] = _x - _shade_size;
+		_array[17] = _y;
+
+		_array[18] = NS_EGraphicCore::active_color[0];
+		_array[19] = NS_EGraphicCore::active_color[1];
+		_array[20] = NS_EGraphicCore::active_color[2];
+		_array[21] = 0.0f;
+
+		_array[22] = *_texture->uv_start_x;
+		_array[23] = *_texture->uv_start_y;
+
+		//#.
+		//..
+		_array[24] = _x - _shade_size;
+		_array[25] = _y + _h;
+
+		_array[26] = NS_EGraphicCore::active_color[0];
+		_array[27] = NS_EGraphicCore::active_color[1];
+		_array[28] = NS_EGraphicCore::active_color[2];
+		_array[29] = 0.0f;
+
+		_array[30] = *_texture->uv_start_x;
+		_array[31] = *_texture->uv_end_y;
+
+		_start_offset += 32;
+	
+	
+	//#..
+	//...
+	//...
+
+
+		//..
+		//.#
+		_array += 32;
+
+		_array[0] = (_x);
+		_array[1] = (_y + _h);
+
+		_array[2] = NS_EGraphicCore::active_color[0];
+		_array[3] = NS_EGraphicCore::active_color[1];
+		_array[4] = NS_EGraphicCore::active_color[2];
+		_array[5] = NS_EGraphicCore::active_color[3];
+
+		_array[6] = *_texture->uv_end_x;
+		_array[7] = *_texture->uv_end_y;
+
+		//.#
+		//..
+		_array[8] = (_x);
+		_array[9] = _y + _h + _shade_size;
+
+		_array[10] = NS_EGraphicCore::active_color[0];
+		_array[11] = NS_EGraphicCore::active_color[1];
+		_array[12] = NS_EGraphicCore::active_color[2];
+		_array[13] = 0.0f;
+
+		_array[14] = *_texture->uv_end_x;
+		_array[15] = *_texture->uv_start_y;
+
+		//#.
+		//..
+		_array[16] = _x - _shade_size;
+		_array[17] = _y + _h + _shade_size;
+
+		_array[18] = NS_EGraphicCore::active_color[0];
+		_array[19] = NS_EGraphicCore::active_color[1];
+		_array[20] = NS_EGraphicCore::active_color[2];
+		_array[21] = 0.0f;
+
+		_array[22] = *_texture->uv_start_x;
+		_array[23] = *_texture->uv_start_y;
+
+		//..
+		//#.
+		_array[24] = _x - _shade_size;
+		_array[25] = _y + _h;
+
+		_array[26] = NS_EGraphicCore::active_color[0];
+		_array[27] = NS_EGraphicCore::active_color[1];
+		_array[28] = NS_EGraphicCore::active_color[2];
+		_array[29] = 0.0f;
+
+		_array[30] = *_texture->uv_start_x;
+		_array[31] = *_texture->uv_end_y;
+
+		_start_offset += 32;
+
+	//...
+	//...
+	//..#
+	
+
+		//#.
+		//..
+		_array += 32;
+
+		_array[0] = (_x + _w);
+		_array[1] = (_y);
+
+		_array[2] = NS_EGraphicCore::active_color[0];
+		_array[3] = NS_EGraphicCore::active_color[1];
+		_array[4] = NS_EGraphicCore::active_color[2];
+		_array[5] = NS_EGraphicCore::active_color[3];
+
+		_array[6] = *_texture->uv_end_x;
+		_array[7] = *_texture->uv_end_y;
+
+		//..
+		//#.
+		_array[8] = (_x + _w);
+		_array[9] = _y - _shade_size;
+
+		_array[10] = NS_EGraphicCore::active_color[0];
+		_array[11] = NS_EGraphicCore::active_color[1];
+		_array[12] = NS_EGraphicCore::active_color[2];
+		_array[13] = 0.0f;
+
+		_array[14] = *_texture->uv_end_x;
+		_array[15] = *_texture->uv_start_y;
+
+		//..
+		//.#
+		_array[16] = _x + _w + _shade_size;
+		_array[17] = _y - _shade_size;
+
+		_array[18] = NS_EGraphicCore::active_color[0];
+		_array[19] = NS_EGraphicCore::active_color[1];
+		_array[20] = NS_EGraphicCore::active_color[2];
+		_array[21] = 0.0f;
+
+		_array[22] = *_texture->uv_start_x;
+		_array[23] = *_texture->uv_start_y;
+
+		//.#
+		//..
+		_array[24] = _x + _w + _shade_size;
+		_array[25] = _y;
+
+		_array[26] = NS_EGraphicCore::active_color[0];
+		_array[27] = NS_EGraphicCore::active_color[1];
+		_array[28] = NS_EGraphicCore::active_color[2];
+		_array[29] = 0.0f;
+
+		_array[30] = *_texture->uv_start_x;
+		_array[31] = *_texture->uv_end_y;
+
+		_start_offset += 32;
+
+	//...
+	//..#
+	//...
+
+
+		//#.
+		//..
+		_array += 32;
+
+		_array[0] = (_x + _w);
+		_array[1] = (_y + _h);
+
+		_array[2] = NS_EGraphicCore::active_color[0];
+		_array[3] = NS_EGraphicCore::active_color[1];
+		_array[4] = NS_EGraphicCore::active_color[2];
+		_array[5] = NS_EGraphicCore::active_color[3];
+
+		_array[6] = *_texture->uv_end_x;
+		_array[7] = *_texture->uv_end_y;
+
+		//..
+		//#.
+		_array[8] = (_x + _w);
+		_array[9] = _y;
+
+		_array[10] = NS_EGraphicCore::active_color[0];
+		_array[11] = NS_EGraphicCore::active_color[1];
+		_array[12] = NS_EGraphicCore::active_color[2];
+		_array[13] = NS_EGraphicCore::active_color[3];
+
+		_array[14] = *_texture->uv_end_x;
+		_array[15] = *_texture->uv_start_y;
+
+		//..
+		//.#
+		_array[16] = _x + _w + _shade_size;
+		_array[17] = _y;
+
+		_array[18] = NS_EGraphicCore::active_color[0];
+		_array[19] = NS_EGraphicCore::active_color[1];
+		_array[20] = NS_EGraphicCore::active_color[2];
+		_array[21] = 0.0f;
+
+		_array[22] = *_texture->uv_start_x;
+		_array[23] = *_texture->uv_start_y;
+
+		//.#
+		//..
+		_array[24] = _x + _w + _shade_size;
+		_array[25] = _y + _h;
+
+		_array[26] = NS_EGraphicCore::active_color[0];
+		_array[27] = NS_EGraphicCore::active_color[1];
+		_array[28] = NS_EGraphicCore::active_color[2];
+		_array[29] = 0.0f;
+
+		_array[30] = *_texture->uv_start_x;
+		_array[31] = *_texture->uv_end_y;
+
+		_start_offset += 32;
+	
+	
+	//..#
+	//...
+	//...
+
+
+		//..
+		//#.
+		_array += 32;
+
+		_array[0] = (_x + _w);
+		_array[1] = (_y + _h);
+
+		_array[2] = NS_EGraphicCore::active_color[0];
+		_array[3] = NS_EGraphicCore::active_color[1];
+		_array[4] = NS_EGraphicCore::active_color[2];
+		_array[5] = NS_EGraphicCore::active_color[3];
+
+		_array[6] = *_texture->uv_end_x;
+		_array[7] = *_texture->uv_end_y;
+
+		//#.
+		//..
+		_array[8] = (_x + _w);
+		_array[9] = _y + _h + _shade_size;
+
+		_array[10] = NS_EGraphicCore::active_color[0];
+		_array[11] = NS_EGraphicCore::active_color[1];
+		_array[12] = NS_EGraphicCore::active_color[2];
+		_array[13] = 0.0f;
+
+		_array[14] = *_texture->uv_end_x;
+		_array[15] = *_texture->uv_start_y;
+
+		//.#
+		//..
+		_array[16] = _x + _w + _shade_size;
+		_array[17] = _y + _h + _shade_size;
+
+		_array[18] = NS_EGraphicCore::active_color[0];
+		_array[19] = NS_EGraphicCore::active_color[1];
+		_array[20] = NS_EGraphicCore::active_color[2];
+		_array[21] = 0.0f;
+
+		_array[22] = *_texture->uv_start_x;
+		_array[23] = *_texture->uv_start_y;
+
+		//..
+		//.#
+		_array[24] = _x + _w + _shade_size;
+		_array[25] = _y + _h;
+
+		_array[26] = NS_EGraphicCore::active_color[0];
+		_array[27] = NS_EGraphicCore::active_color[1];
+		_array[28] = NS_EGraphicCore::active_color[2];
+		_array[29] = 0.0f;
+
+		_array[30] = *_texture->uv_start_x;
+		_array[31] = *_texture->uv_end_y;
+
+		_start_offset += 32;
+
+	//...
+	//...
+	//.#.
+
+
+		//#.
+		//..
+		_array += 32;
+
+		_array[0] = (_x);
+		_array[1] = (_y);
+
+		_array[2] = NS_EGraphicCore::active_color[0];
+		_array[3] = NS_EGraphicCore::active_color[1];
+		_array[4] = NS_EGraphicCore::active_color[2];
+		_array[5] = NS_EGraphicCore::active_color[3];
+
+		_array[6] = *_texture->uv_end_x;
+		_array[7] = *_texture->uv_end_y;
+
+		//..
+		//#.
+		_array[8] = (_x);
+		_array[9] = _y - _shade_size;
+
+		_array[10] = NS_EGraphicCore::active_color[0];
+		_array[11] = NS_EGraphicCore::active_color[1];
+		_array[12] = NS_EGraphicCore::active_color[2];
+		_array[13] = 0.0f;
+
+		_array[14] = *_texture->uv_end_x;
+		_array[15] = *_texture->uv_start_y;
+
+		//..
+		//.#
+		_array[16] = _x + _w;
+		_array[17] = _y - _shade_size;
+
+		_array[18] = NS_EGraphicCore::active_color[0];
+		_array[19] = NS_EGraphicCore::active_color[1];
+		_array[20] = NS_EGraphicCore::active_color[2];
+		_array[21] = 0.0f;
+
+		_array[22] = *_texture->uv_start_x;
+		_array[23] = *_texture->uv_start_y;
+
+		//.#
+		//..
+		_array[24] = _x + _w;
+		_array[25] = _y;
+
+		_array[26] = NS_EGraphicCore::active_color[0];
+		_array[27] = NS_EGraphicCore::active_color[1];
+		_array[28] = NS_EGraphicCore::active_color[2];
+		_array[29] = NS_EGraphicCore::active_color[3];
+
+		_array[30] = *_texture->uv_start_x;
+		_array[31] = *_texture->uv_end_y;
+
+		_start_offset += 32;
+
+	//.#.
+	//...
+	//...
+
+
+		//..
+		//#.
+		_array += 32;
+
+		_array[0] = (_x);
+		_array[1] = (_y + _h);
+
+		_array[2] = NS_EGraphicCore::active_color[0];
+		_array[3] = NS_EGraphicCore::active_color[1];
+		_array[4] = NS_EGraphicCore::active_color[2];
+		_array[5] = NS_EGraphicCore::active_color[3];
+
+		_array[6] = *_texture->uv_end_x;
+		_array[7] = *_texture->uv_end_y;
+
+		//..
+		//.#
+		_array[8] = (_x + _w);
+		_array[9] = _y + _h;
+
+		_array[10] = NS_EGraphicCore::active_color[0];
+		_array[11] = NS_EGraphicCore::active_color[1];
+		_array[12] = NS_EGraphicCore::active_color[2];
+		_array[13] = NS_EGraphicCore::active_color[3];
+
+		_array[14] = *_texture->uv_end_x;
+		_array[15] = *_texture->uv_start_y;
+
+		//.#
+		//..
+		_array[16] = _x + _w;
+		_array[17] = _y + _h +  _shade_size;
+
+		_array[18] = NS_EGraphicCore::active_color[0];
+		_array[19] = NS_EGraphicCore::active_color[1];
+		_array[20] = NS_EGraphicCore::active_color[2];
+		_array[21] = 0.0f;
+
+		_array[22] = *_texture->uv_start_x;
+		_array[23] = *_texture->uv_start_y;
+
+		//#.
+		//..
+		_array[24] = _x;
+		_array[25] = _y + _h + _shade_size;
+
+		_array[26] = NS_EGraphicCore::active_color[0];
+		_array[27] = NS_EGraphicCore::active_color[1];
+		_array[28] = NS_EGraphicCore::active_color[2];
+		_array[29] = 0.0f;
+
+		_array[30] = *_texture->uv_start_x;
+		_array[31] = *_texture->uv_end_y;
+
+		_start_offset += 32;
+
+
+}
+
 void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite, ETextureGabarite* _normal_map_gabarite, ETextureGabarite* _gloss_map_gabarite)
 {
 

@@ -7630,75 +7630,110 @@ void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode = FilterBlockSaveMode::VERSION_ORIGINAL)
 {
-	std::string result_string = "";
-
+	
 	auto whole_block_data = static_cast<EButtonGroupFilterBlock*>(_button_group);
 
-	if (whole_block_data->button_show_hide->selected_variant == 0)
-	{
-		result_string += "Hide";
-	}
-	else
-	{
-		result_string += "Show";
-	}
+	float	temp_size = whole_block_data->text_size;
+	int		selected_version = -1;
 
-	result_string += '\n';
+	bool	lower_focus = false;
+	bool	raised_focus = false;
 
+	bool	ignore_sound = false;
+	bool	ignore_minimap_elements = false;
 
+	int		version_id = (int)(_save_mode);
 
-	if (_save_mode == FilterBlockSaveMode::VERSION_ORIGINAL)
-	{
-		result_string += "\t#config_VersionControl";
-
-		for (int i = 0; i < 5; i++)
-		{
-			result_string += " " + whole_block_data->version_routers[i]->router_variant_list[whole_block_data->version_routers[i]->selected_variant].localisation->base_name;
-		}
-
-		result_string += '\n';
-	}
-
-	int
-	version_id = (int)(_save_mode);
+	EntityButtonVariantRouterForFilterBlock* version_router = nullptr;
 
 	
-
-
-
-	//auto bg_color_data = static_cast<EDataContainer_Button_StoreColor*>(Entity::get_last_custom_data(whole_block_data->pointer_to_color_button[0])->data_container);
-	//auto bg_color = bg_color_data->stored_color;
-	Helper::HSVRGBAColor temp_colors[3];
-
-	for (int i = 0; i < 3; i++)
-	{
-		temp_colors[i].set_color(static_cast<EDataContainer_Button_StoreColor*>(Entity::get_last_custom_data(whole_block_data->pointer_to_color_button[i])->data_container)->stored_color);
-	}
-	//EInputCore::logger_param("version id", version_id);
-
-	//	Full ignore	0
-	//	Hide		1
-	//	Ignore		2
-	//	Default		3
-	//	Focus		4
-
-	//font size
-	float
-	temp_size = whole_block_data->text_size;
-	//original sevrion store original colors, sounds, and etc...
+	//not original version can modify colors, fonts, sounds and etc...
 	if (_save_mode != FilterBlockSaveMode::VERSION_ORIGINAL)
 	{
 		//matched router button
-		EntityButtonVariantRouterForFilterBlock*
 		version_router = whole_block_data->version_routers[version_id];
 
 		//version of loot colors
-		int
 		selected_version = version_router->selected_variant;
 
-		
+		if
+		(
+			(selected_version == LootFilterVersionDescription::LOOT_VERSION_HIDE)
+			||
+			(selected_version == LootFilterVersionDescription::LOOT_VERSION_IGNORE)
+		)
+		{
+			lower_focus = true;
+			ignore_sound = true;
+			ignore_minimap_elements = true;
+		}
+
+		if (selected_version == LootFilterVersionDescription::LOOT_VERSION_FOCUS)
+		{
+			raised_focus = true;
+		}
+	}
+
+
+	//if version is not FULL_IGNORE, or if VERSION_ORIGINAL
+	if ((selected_version != LootFilterVersionDescription::LOOT_VERSION_FULL_IGNORE) || (_save_mode == FilterBlockSaveMode::VERSION_ORIGINAL))
+	{
+		std::string result_string = "";
+
+
+
+		if ((whole_block_data->button_show_hide->selected_variant == 0) || (selected_version == LootFilterVersionDescription::LOOT_VERSION_HIDE))
+		{
+			result_string += "Hide";
+		}
+		else
+		{
+			result_string += "Show";
+		}
+
+		result_string += '\n';
+
+
+
+		if (_save_mode == FilterBlockSaveMode::VERSION_ORIGINAL)
+		{
+			result_string += "\t#config_VersionControl";
+
+			for (int i = 0; i < 5; i++)
+			{
+				result_string += " " + whole_block_data->version_routers[i]->router_variant_list[whole_block_data->version_routers[i]->selected_variant].localisation->base_name;
+			}
+
+			result_string += '\n';
+		}
+
+
+
+
+
+
+
+		//auto bg_color_data = static_cast<EDataContainer_Button_StoreColor*>(Entity::get_last_custom_data(whole_block_data->pointer_to_color_button[0])->data_container);
+		//auto bg_color = bg_color_data->stored_color;
+		Helper::HSVRGBAColor temp_colors[3];
+
+		for (int i = 0; i < 3; i++)
+		{
+			temp_colors[i].set_color(static_cast<EDataContainer_Button_StoreColor*>(Entity::get_last_custom_data(whole_block_data->pointer_to_color_button[i])->data_container)->stored_color);
+		}
+		//EInputCore::logger_param("version id", version_id);
+
+		//	Full ignore	0
+		//	Hide		1
+		//	Ignore		2
+		//	Default		3
+		//	Focus		4
+
+		//font size
+
+
 		//if hide or ignore, reduce saturation, brightness, and size
-		if ((selected_version == 1) || (selected_version == 2))
+		if (lower_focus)
 		{
 			for (int i = 0; i < 3; i++)
 			{
@@ -7712,7 +7747,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 		}
 
 		//if focus, increase saturation, brightness, and size
-		if (selected_version == 4)
+		if (raised_focus)
 		{
 			for (int i = 0; i < 3; i++)
 			{
@@ -7724,279 +7759,295 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 
 			temp_size *= 1.8f;
 		}
-	}
 
 
 
-	EButtonGroup* non_listed_section = whole_block_data->pointer_to_non_listed_segment;
-	EButtonGroup* listed_section = whole_block_data->pointer_to_listed_segment;
-	EButtonGroup* cosmetic_section = whole_block_data->pointer_to_cosmetic_segment;
+		EButtonGroup* non_listed_section = whole_block_data->pointer_to_non_listed_segment;
+		EButtonGroup* listed_section = whole_block_data->pointer_to_listed_segment;
+		EButtonGroup* cosmetic_section = whole_block_data->pointer_to_cosmetic_segment;
 
-	//NON-LISTED
-	for (EButtonGroup* n_listed : non_listed_section->group_list)
-	{
-		auto container = static_cast<EDataContainer_Group_FilterBlockNonListedSegment*>(n_listed->data_container);
-
-		result_string
-			+=
-			'\t'
-			+
-			container->
-			target_button_with_attribute_name->
-			custom_data_list.back()->
-			clickable_area_list.back()->
-			text_area->
-			localisation_text.base_name;
-
-		if (container->target_button_with_condition != nullptr)
+		//NON-LISTED
+		for (EButtonGroup* n_listed : non_listed_section->group_list)
 		{
-			result_string += " ";
-			result_string += (Entity::get_last_text_area(container->target_button_with_condition)->original_text);
-		}
+			auto container = static_cast<EDataContainer_Group_FilterBlockNonListedSegment*>(n_listed->data_container);
 
-		//bool attribute
-		if (container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
-		{
-			result_string += " ";
-			if (*static_cast <EDataContainer_Button_BoolSwitcher*>(container->target_button_with_value->custom_data_list.back()->data_container)->target_value)
+			result_string
+				+=
+				'\t'
+				+
+				container->
+				target_button_with_attribute_name->
+				custom_data_list.back()->
+				clickable_area_list.back()->
+				text_area->
+				localisation_text.base_name;
+
+			if (container->target_button_with_condition != nullptr)
 			{
-				result_string += "True";
-			}
-			else
-			{
-				result_string += "False";
-			}
-		}
-
-		//bool attribute
-		if
-			(
-				(container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
-				||
-				(container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
-				)
-		{
-			result_string += " ";
-			result_string += (Entity::get_last_text_area(container->target_button_with_value)->original_text);
-		}
-
-		if (container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
-		{
-			result_string += " ";
-			result_string += Entity::get_last_text_area(container->target_button_with_value)->localisation_text.base_name;
-		}
-
-
-		if (container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
-		{
-			result_string += " ";
-			result_string += Entity::get_last_text_area(container->target_button_with_value)->localisation_text.base_name;
-		}
-
-		result_string += '\n';
-	}
-
-	//LISTED
-	for (EButtonGroup* listed : listed_section->group_list)
-	{
-		auto container = static_cast<EDataContainer_Group_FilterBlockListedSegment*>(listed->data_container);
-
-		
-		if ((container != nullptr) && (container->group_with_listed_buttons->button_list.size() > 1))
-		{
-			result_string += '\t' + container->filter_attribute_name;
-
-			if (container->match_mode_router_button->selected_variant == 1)
-			{
-				result_string += " ==";
+				result_string += " ";
+				result_string += (Entity::get_last_text_area(container->target_button_with_condition)->original_text);
 			}
 
-			int id = 0;
-
-			for (EntityButton* listed_button : container->group_with_listed_buttons->button_list)\
-				if (listed_button != container->group_with_listed_buttons->slider)
+			//bool attribute
+			if (container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
+			{
+				result_string += " ";
+				if (*static_cast <EDataContainer_Button_BoolSwitcher*>(container->target_button_with_value->custom_data_list.back()->data_container)->target_value)
 				{
-
-					if (Entity::get_last_text_area(listed_button) != nullptr)
-					{
-						result_string += " ";
-						result_string += '"' + Entity::get_last_text_area(listed_button)->localisation_text.base_name + '"';
-					}
-					else
-					{
-						EInputCore::logger_simple_error("TextArea is NULL! [" + std::to_string(id) + "]");
-					}
-
-					id++;
+					result_string += "True";
 				}
+				else
+				{
+					result_string += "False";
+				}
+			}
+
+			//bool attribute
+			if
+				(
+					(container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+					||
+					(container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
+					)
+			{
+				result_string += " ";
+				result_string += (Entity::get_last_text_area(container->target_button_with_value)->original_text);
+			}
+
+			if (container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
+			{
+				result_string += " ";
+				result_string += Entity::get_last_text_area(container->target_button_with_value)->localisation_text.base_name;
+			}
+
+
+			if (container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
+			{
+				result_string += " ";
+				result_string += Entity::get_last_text_area(container->target_button_with_value)->localisation_text.base_name;
+			}
 
 			result_string += '\n';
 		}
-		else
+
+		//LISTED
+		for (EButtonGroup* listed : listed_section->group_list)
 		{
-			EInputCore::logger_simple_error("listed button group have no data container!");
+			auto container = static_cast<EDataContainer_Group_FilterBlockListedSegment*>(listed->data_container);
+
+
+			if ((container != nullptr) && (container->group_with_listed_buttons->button_list.size() > 1))
+			{
+				result_string += '\t' + container->filter_attribute_name;
+
+				if (container->match_mode_router_button->selected_variant == 1)
+				{
+					result_string += " ==";
+				}
+
+				int id = 0;
+
+				for (EntityButton* listed_button : container->group_with_listed_buttons->button_list)\
+					if (listed_button != container->group_with_listed_buttons->slider)
+					{
+
+						if (Entity::get_last_text_area(listed_button) != nullptr)
+						{
+							result_string += " ";
+							result_string += '"' + Entity::get_last_text_area(listed_button)->localisation_text.base_name + '"';
+						}
+						else
+						{
+							EInputCore::logger_simple_error("TextArea is NULL! [" + std::to_string(id) + "]");
+						}
+
+						id++;
+					}
+
+				result_string += '\n';
+			}
+			else
+			{
+				EInputCore::logger_simple_error("listed button group have no data container!");
+			}
+
 		}
 
-	}
+		//COSMETIC
 
-	//COSMETIC
+			//auto container = static_cast<EDataContainer*>(listed->data_container);
+			//for (EntityButton* cbut : cosmetic_section->button_list)
+			//if (cbut != cosmetic_section->slider)
+			//{
+			//	//if
+			//	//(
+			//	//	cbut->custom_data_list[0]->data_container == 
+			//	//)
+			//}
 
-		//auto container = static_cast<EDataContainer*>(listed->data_container);
-		//for (EntityButton* cbut : cosmetic_section->button_list)
-		//if (cbut != cosmetic_section->slider)
+		auto cosmetic_data = whole_block_data;
+		ETextArea* tarea = nullptr;
+
+		for (int i = 0; i < 3; i++)
+		{
+			result_string += '\t';
+			if (!cosmetic_data->color_check[i])
+			{
+				result_string += "#";
+			}
+			tarea = Entity::get_last_text_area(cosmetic_data->pointer_to_color_button[i]);
+
+			if (tarea != nullptr)
+			{
+				result_string += tarea->localisation_text.base_name;
+			}
+			//auto store_color_data = static_cast<EDataContainer_Button_StoreColor*>(Entity::get_last_custom_data(cosmetic_data->pointer_to_color_button[i])->data_container);
+
+			result_string += " " + std::to_string((int)round(temp_colors[i].r * 255.0f));
+			result_string += " " + std::to_string((int)round(temp_colors[i].g * 255.0f));
+			result_string += " " + std::to_string((int)round(temp_colors[i].b * 255.0f));
+			result_string += " " + std::to_string((int)round(temp_colors[i].a * 255.0f));
+
+			result_string += '\n';
+		}
+
+
+		//font size
+		result_string += '\t';
+		if (!cosmetic_data->text_size_bool)
+		{
+			result_string += "#";
+		}
+		tarea = Entity::get_last_text_area(cosmetic_data->text_size_button);
+
+		//result_string += tarea->localisation_text.base_name;
+		result_string += "SetFontSize";
+
+		result_string += " " + std::to_string((int)(round(18.0f + temp_size * 27.0f)));
+		result_string += '\n';
+
+
+
+
+		//		MINIMAP ICONS
+		//////////////////////////////////////////////////////////////////
+
+		//		MINIMAP ICON
+		if (!ignore_minimap_elements)
+		{
+			result_string += '\t';
+			if (!whole_block_data->minimap_icon_color_suppressor_bool)
+			{
+				result_string += "#";
+			}
+			result_string += "MinimapIcon";
+			EntityButtonVariantRouter* button_router_size = whole_block_data->pointer_to_minimap_icon_size_router;
+			EntityButtonVariantRouter* button_router_color = whole_block_data->pointer_to_minimap_icon_color_router;
+			EntityButtonVariantRouter* button_router_shape = whole_block_data->pointer_to_minimap_icon_shape_router;
+
+			//		add size name to line
+			result_string += ' ' + button_router_size->router_variant_list[button_router_size->selected_variant].localisation->base_name;
+
+			//		add color name to line
+			result_string += ' ' + button_router_color->router_variant_list[button_router_color->selected_variant].localisation->base_name;
+
+			//		add shape name to line
+			result_string += ' ' + button_router_shape->router_variant_list[button_router_shape->selected_variant].localisation->base_name;
+
+			result_string += '\n';
+
+
+
+			//RAY
+			result_string += '\t';
+			if (!whole_block_data->ray_suppressor)
+			{
+				result_string += "#";
+			}
+			result_string += "PlayEffect";
+
+			result_string += ' ';
+			result_string += whole_block_data->pointer_to_ray_color_router->router_variant_list[whole_block_data->pointer_to_ray_color_router->selected_variant].localisation->base_name;
+
+			if (whole_block_data->pointer_to_temporary_option_router->selected_variant == 1)
+			{
+				result_string += ' ';
+				result_string += whole_block_data->pointer_to_temporary_option_router->router_variant_list[1].localisation->base_name;
+			}
+
+			result_string += '\n';
+		}
+		//////////////////////////////////////////////////////////////////
+
+		if (!ignore_sound)
+		{
+			//		USER SOUND
+			if (whole_block_data->pointer_to_custom_sound_button->stored_named_sound != nullptr)
+			{
+				result_string += '\t';
+				if (!whole_block_data->custom_sound_suppressor_bool)
+				{
+					result_string += "#";
+				}
+				result_string += "CustomAlertSound";
+				//if (whole_block_data->pointer_to_positional_variant_button->selected_variant == 1) { result_string }
+				if (whole_block_data->pointer_to_optional_user_sound->selected_variant == 1) { result_string += "Optional"; }
+
+				result_string += " \"" + whole_block_data->pointer_to_custom_sound_button->stored_named_sound->localisation_text.base_name + '"';
+
+				result_string += '\n';
+			}
+
+
+
+
+
+			//		INGAME SOUNDS
+			if (whole_block_data->pointer_to_game_sound_button->stored_named_sound != nullptr)
+			{
+				result_string += '\t';
+				if (!whole_block_data->custom_sound_suppressor_bool)
+				{
+					result_string += "#";
+				}
+				result_string += "PlayAlertSound";
+				if (whole_block_data->pointer_to_positional_variant_button->selected_variant == 1) { result_string += "Positional"; }
+
+
+				result_string += ' ' + whole_block_data->pointer_to_game_sound_button->stored_named_sound->localisation_text.base_name;
+				result_string += ' ' + std::to_string(int(whole_block_data->sound_volume_value * 300.0f));
+				result_string += '\n';
+			}
+
+			//ENABLE/DISABLE DROP SOUND
+			EntityButtonVariantRouterForFilterBlock* drop_sound_router_button = whole_block_data->pointer_to_disable_enable_drop_sound;
+
+			if (drop_sound_router_button->selected_variant > 0)
+			{
+				result_string += '\t';
+				result_string += drop_sound_router_button->router_variant_list[drop_sound_router_button->selected_variant].localisation->base_name;
+				result_string += '\n';
+			}
+		}
+
+
+
+		//if (whole_block_data->pointer_to_disable_enable_drop_sound->selected_variant == 1)
 		//{
-		//	//if
-		//	//(
-		//	//	cbut->custom_data_list[0]->data_container == 
-		//	//)
+		//	result_string += "\tDisableDropSound\n";
 		//}
 
-	auto cosmetic_data = whole_block_data;
-	ETextArea* tarea = nullptr;
+		//if (whole_block_data->pointer_to_disable_enable_drop_sound->selected_variant == 2)
+		//{
+		//	result_string += "\tEnableDropSound\n";
+		//}
 
-	for (int i = 0; i < 3; i++)
-	{
-		result_string += '\t';
-		if (!cosmetic_data->color_check[i])
-		{
-			result_string += "#";
-		}
-		tarea = Entity::get_last_text_area(cosmetic_data->pointer_to_color_button[i]);
-
-		if (tarea != nullptr)
-		{
-			result_string += tarea->localisation_text.base_name;
-		}
-		//auto store_color_data = static_cast<EDataContainer_Button_StoreColor*>(Entity::get_last_custom_data(cosmetic_data->pointer_to_color_button[i])->data_container);
-
-		result_string += " " + std::to_string((int)round(temp_colors[i].r * 255.0f));
-		result_string += " " + std::to_string((int)round(temp_colors[i].g * 255.0f));
-		result_string += " " + std::to_string((int)round(temp_colors[i].b * 255.0f));
-		result_string += " " + std::to_string((int)round(temp_colors[i].a * 255.0f));
-
-		result_string += '\n';
+		return result_string;
 	}
-
-
-	//font size
-	result_string += '\t';
-	if (!cosmetic_data->text_size_bool)
+	else
 	{
-		result_string += "#";
+		return "";
 	}
-	tarea = Entity::get_last_text_area(cosmetic_data->text_size_button);
-
-	//result_string += tarea->localisation_text.base_name;
-	result_string += "SetFontSize";
-
-	result_string += " " + std::to_string((int)(round(18.0f + temp_size * 27.0f)));
-	result_string += '\n';
-
-
-
-
-	//		MINIMAP ICONS
-	//////////////////////////////////////////////////////////////////
-
-	//		MINIMAP ICON
-	result_string += '\t';
-	if (!whole_block_data->minimap_icon_color_suppressor_bool)
-	{
-		result_string += "#";
-	}
-	result_string += "MinimapIcon";
-	EntityButtonVariantRouter* button_router_size = whole_block_data->pointer_to_minimap_icon_size_router;
-	EntityButtonVariantRouter* button_router_color = whole_block_data->pointer_to_minimap_icon_color_router;
-	EntityButtonVariantRouter* button_router_shape = whole_block_data->pointer_to_minimap_icon_shape_router;
-
-	//		add size name to line
-	result_string += ' ' + button_router_size->router_variant_list[button_router_size->selected_variant].localisation->base_name;
-
-	//		add color name to line
-	result_string += ' ' + button_router_color->router_variant_list[button_router_color->selected_variant].localisation->base_name;
-
-	//		add shape name to line
-	result_string += ' ' + button_router_shape->router_variant_list[button_router_shape->selected_variant].localisation->base_name;
-
-	result_string += '\n';
-	//////////////////////////////////////////////////////////////////
-
-
-	//		USER SOUND
-	if (whole_block_data->pointer_to_custom_sound_button->stored_named_sound != nullptr)
-	{
-		result_string += '\t';
-		if (!whole_block_data->custom_sound_suppressor_bool)
-		{
-			result_string += "#";
-		}
-		result_string += "CustomAlertSound";
-		//if (whole_block_data->pointer_to_positional_variant_button->selected_variant == 1) { result_string }
-		if (whole_block_data->pointer_to_optional_user_sound->selected_variant == 1) { result_string += "Optional"; }
-
-		result_string += " \"" + whole_block_data->pointer_to_custom_sound_button->stored_named_sound->localisation_text.base_name + '"';
-
-		result_string += '\n';
-	}
-
-
-
-
-
-	//		INGAME SOUNDS
-	if (whole_block_data->pointer_to_game_sound_button->stored_named_sound != nullptr)
-	{
-		result_string += '\t';
-		if (!whole_block_data->custom_sound_suppressor_bool)
-		{
-			result_string += "#";
-		}
-		result_string += "PlayAlertSound";
-		if (whole_block_data->pointer_to_positional_variant_button->selected_variant == 1) { result_string += "Positional"; }
-
-
-		result_string += ' ' + whole_block_data->pointer_to_game_sound_button->stored_named_sound->localisation_text.base_name;
-		result_string += ' ' + std::to_string(int(whole_block_data->sound_volume_value * 300.0f));
-		result_string += '\n';
-	}
-
-	EntityButtonVariantRouterForFilterBlock* drop_sound_router_button = whole_block_data->pointer_to_disable_enable_drop_sound;
-
-	if (drop_sound_router_button->selected_variant > 0)
-	{
-		result_string += '\t';
-		result_string += drop_sound_router_button->router_variant_list[drop_sound_router_button->selected_variant].localisation->base_name;
-		result_string += '\n';
-	}
-
-	result_string += '\t';
-	if (!whole_block_data->ray_suppressor)
-	{
-		result_string += "#";
-	}
-	result_string += "PlayEffect";
-
-	result_string += ' ';
-	result_string += whole_block_data->pointer_to_ray_color_router->router_variant_list[whole_block_data->pointer_to_ray_color_router->selected_variant].localisation->base_name;
-	
-	if (whole_block_data->pointer_to_temporary_option_router->selected_variant == 1)
-	{
-		result_string += ' ';
-		result_string += whole_block_data->pointer_to_temporary_option_router->router_variant_list[1].localisation->base_name;
-	}
-	
-	result_string += '\n';
-	//if (whole_block_data->pointer_to_disable_enable_drop_sound->selected_variant == 1)
-	//{
-	//	result_string += "\tDisableDropSound\n";
-	//}
-
-	//if (whole_block_data->pointer_to_disable_enable_drop_sound->selected_variant == 2)
-	//{
-	//	result_string += "\tEnableDropSound\n";
-	//}
-
-	return result_string;
 }
 
 EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, FilterBlockAttribute* _attribute, std::string _attribute_name, EButtonGroup* _parent)
