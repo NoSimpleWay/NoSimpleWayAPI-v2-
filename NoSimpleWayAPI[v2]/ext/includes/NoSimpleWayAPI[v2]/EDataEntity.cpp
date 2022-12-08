@@ -24,6 +24,18 @@ std::string DataEntityUtils::get_tag_value_by_name(int _id, std::string _name, E
 	return "";
 }
 
+bool DataEntityUtils::is_exist_tag_by_name_and_value(int _id, std::string _name, std::string _value, EDataEntity* _data_entity)
+{
+	for (EDataTag* data_tag : _data_entity->tag_list)
+	{
+		if ((*data_tag->tag_name == _name) && (*data_tag->tag_value_list[_id] == _value))
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
 EDataEntity::EDataEntity()
 {
 }

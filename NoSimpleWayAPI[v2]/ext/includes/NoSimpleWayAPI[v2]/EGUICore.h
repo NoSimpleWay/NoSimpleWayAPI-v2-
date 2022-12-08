@@ -231,6 +231,9 @@ public:
 
 	bool debug_translation = false;
 	bool can_be_moved = true;
+	bool have_shadow = true;
+
+	float shadow_size = 32.0f;
 
 	EButtonGroup(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
 	EButtonGroup(ERegionGabarite* _gabarite);

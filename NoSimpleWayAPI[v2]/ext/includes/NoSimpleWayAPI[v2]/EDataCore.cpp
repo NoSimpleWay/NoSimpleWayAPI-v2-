@@ -925,6 +925,19 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 		EFont::font_list[0]
 	);
 
+if
+(
+	(data_entity_holder->stored_data_entity != nullptr)
+	&&
+	(DataEntityUtils::is_exist_tag_by_name_and_value(0, "explicit tag", "base name collision", data_entity_holder->stored_data_entity))
+)
+	{
+		jc_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = jc_button->main_text_area->localisation_text.base_name;
+		jc_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = jc_button->main_text_area->localisation_text.base_name;
+
+		jc_button->main_text_area->change_text(jc_button->main_text_area->localisation_text.base_name);
+	}
+
 	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
 		root_group->is_active = false;
@@ -3032,27 +3045,38 @@ std::string EStringUtils::to_lower(std::string _text)
 		//std::cout << " " << _text[i] << std::endl;
 
 		if
-			(
+		(
+				//latin characters set [A-Z]
 				(
 					(char_id >= 65)
 					&&
 					(char_id <= 90)
-					)
-				||
-				(
-					(char_id >= -64)
-					&&
-					(char_id <= -33)
-					)
 				)
+				||
+				//cyryllic characters set [А-Я](без Ё)
+				(
+					(char_id >= 192)
+					&&
+					(char_id <= 223)
+				)
+		)
 		{
 			output_string += (unsigned char)(char_id + 32);
 		}
 		else
 		{
-			output_string += _text[i];
+			//Ё
+			if (char_id == 168)
+			{ output_string += (unsigned char)(184); }
+			else//no changes
+			output_string+= _text[i];
 		}
 	}
+
+	//EInputCore::logger
+
+	//output_string;
+
 	return output_string;
 }
 

@@ -70,3 +70,4 @@ class EButtonGroupFilterBlock;
 class EButtonGroupSoundList;
 class EButtonGroupRouterVariant;
 class EntityButtonVariantRouterForFilterBlock;
+class EntityButtonForFilterBlock;

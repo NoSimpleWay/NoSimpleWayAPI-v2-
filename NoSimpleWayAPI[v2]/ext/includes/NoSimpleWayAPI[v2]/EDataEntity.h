@@ -54,6 +54,7 @@ public:
 namespace DataEntityUtils
 {
 	extern std::string get_tag_value_by_name(int _id, std::string _name, EDataEntity* _data_entity);
+	extern bool is_exist_tag_by_name_and_value(int _id, std::string _name, std::string _value, EDataEntity* _data_entity);
 }
 
 //struct ELocalisationText

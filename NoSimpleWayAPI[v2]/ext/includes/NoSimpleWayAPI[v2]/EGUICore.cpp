@@ -50,6 +50,8 @@ void EWindow::GUI_update_default(float _d)
 
 		button_group_list.erase(button_group_list.begin() + i);
 
+		i--;
+
 		//any_remove = true;
 	}
 
@@ -499,7 +501,7 @@ void EButtonGroup::draw()
 		/* */
 			}
 
-		if (root_group == this)
+		if ((have_shadow) && (root_group == this))
 		{
 			NS_EGraphicCore::set_active_color(0.01f, 0.02f, 0.04f, 1.0f);
 			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 8);
@@ -511,7 +513,7 @@ void EButtonGroup::draw()
 				region_gabarite->world_position_y,
 				region_gabarite->size_x,
 				region_gabarite->size_y,
-				32.0f,
+				shadow_size,
 				NS_DefaultGabarites::texture_gabarite_white_pixel
 			);
 		}
@@ -2466,8 +2468,8 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 		(EButtonGroup::catched_by_mouse(_group))
 		&&
 		(!EInputCore::MOUSE_BUTTON_LEFT)
-		&&
-		(!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+		//&&
+		//(!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	)
 	{
 
