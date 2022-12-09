@@ -720,45 +720,50 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
 	
 	//VERY SOFT
+	str = "";
 	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
 	{
-		str = generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_VERY_SOFT);
+		str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_VERY_SOFT);
 		str += '\n';
 		str += '\n';
 	}
 	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#0 very soft].filter", &str);
 	
 	//SOFT
+	str = "";
 	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
 	{
-		str = generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_SOFT);
+		str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_SOFT);
 		str += '\n';
 		str += '\n';
 	}
 	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#1 soft].filter", &str);
 	
 	//DEFAULT
+	str = "";
 	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
 	{
-		str = generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_DEFAULT);
+		str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_DEFAULT);
 		str += '\n';
 		str += '\n';
 	}
 	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#2 default].filter", &str);
 	
 	//STRICT
+	str = "";
 	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
 	{
-		str = generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_STRICT);
+		str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_STRICT);
 		str += '\n';
 		str += '\n';
 	}
 	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#3 strict].filter", &str);
 	
 	//VERY STRICT
+	str = "";
 	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
 	{
-		str = generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_VERY_STRICT);
+		str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_VERY_STRICT);
 		str += '\n';
 		str += '\n';
 	}
@@ -6797,7 +6802,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							}
 							else
 							{
-								EInputCore::logger_param_with_warning("UNREGISTERED attribure!", buffer_text);
+								if (!comment_mode) { EInputCore::logger_param_with_warning("UNREGISTERED attribure!", buffer_text); }
 							}
 						}
 					}
@@ -6860,7 +6865,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							//EInputCore::logger_param("f_sym", f_sym);
 
 
-							if ((matched_filter_block_attribute->input_field_for_listed) && (text_is_condition(f_sym)))
+							if ((matched_filter_block_attribute!=nullptr) && (matched_filter_block_attribute->input_field_for_listed) && (text_is_condition(f_sym)))
 							{
 								listed_container->input_field->main_text_area->change_text(buffer_text);
 								data_part = DataOrderNames::CONDITION_OPERATOR;
@@ -8092,7 +8097,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 			if (whole_block_data->pointer_to_game_sound_button->stored_named_sound != nullptr)
 			{
 				result_string += '\t';
-				if (!whole_block_data->custom_sound_suppressor_bool)
+				if (!whole_block_data->game_sound_suppressor_bool)
 				{
 					result_string += "#";
 				}

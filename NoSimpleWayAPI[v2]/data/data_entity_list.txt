@@ -31282,7 +31282,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Fracturing orb"
+	[tag]"name EN"		[value]"Fracturing Orb"
 	[tag]"name RU"		[value]"Раскалывающая сфера"
 
 	[tag]"icon path"	[value]"FracturingOrb"
