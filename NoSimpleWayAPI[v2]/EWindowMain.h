@@ -317,6 +317,27 @@ public:
 	void refresh_sound_list();
 };
 
+
+
+
+
+
+
+
+class EDataContainer_Group_FilterBlockListedSegment : public EDataContainer
+{
+public:
+	EButtonGroup* group_with_listed_buttons;
+
+	EntityButtonVariantRouterForFilterBlock* match_mode_router_button;
+
+	std::string				filter_attribute_name;
+
+	//EntityButton*			button_with;
+	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
+	EntityButtonForFilterBlock* input_field;
+};
+
 namespace EDataActionCollection
 {
 	void action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -415,7 +436,9 @@ public:
 	FilterAttributeValueType	filter_attribute_value_type;
 	EFilterRule* filter_rule;
 
-	bool have_operator = false;
+	bool have_operator			= false;
+	bool input_field_for_listed	= false;
+	bool have_exact_match		= false;
 
 	ELocalisationText			localisation;
 
@@ -427,7 +450,7 @@ public:
 	bool						commentary_config = false;
 };
 
-static void add_filter_block_buttons_to_filter_block(EButtonGroupFilterBlock* _target_group, FilterBlockAttribute* _filter_block_attribute);
+static void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_group, FilterBlockAttribute* _filter_block_attribute);
 
 enum class FilterBlockSaveMode
 {
@@ -438,6 +461,17 @@ enum class FilterBlockSaveMode
 	VERSION_STRICT			= 3,
 	VERSION_VERY_STRICT		= 4
 };
+
+enum LootFilterVersionDescription
+{
+	LOOT_VERSION_FULL_IGNORE,
+	LOOT_VERSION_HIDE,
+	LOOT_VERSION_IGNORE,
+	LOOT_VERSION_DEFAULT,
+	LOOT_VERSION_FOCUS
+
+};
+
 static std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode);
 
 
