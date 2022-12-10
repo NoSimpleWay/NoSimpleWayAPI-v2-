@@ -306,6 +306,8 @@ public:
 
 	std::string							tag = "";
 	float								min_y_size = 100.0f;
+
+	data_action_pointer					stored_action_for_data_entity_group;
 };
 
 class EDataContainer_Group_DataEntitiesSearch : public EDataContainer
@@ -465,18 +467,7 @@ public:
 	FilterBlockAttribute* target_filter_block_attribute;
 };
 
-class EDataContainer_Group_FilterBlockListedSegment : public EDataContainer
-{
-public:
-	EButtonGroup*			group_with_listed_buttons;
 
-	EntityButtonVariantRouterForFilterBlock* match_mode_router_button;
-
-	std::string				filter_attribute_name;
-
-	//EntityButton*			button_with;
-	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
-};
 
 
 class EDataContainer_Group_AddContentToFilterBlock : public EDataContainer

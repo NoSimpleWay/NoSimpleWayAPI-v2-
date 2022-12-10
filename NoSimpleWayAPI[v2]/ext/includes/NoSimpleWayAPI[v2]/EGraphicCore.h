@@ -121,6 +121,8 @@ namespace NS_ERenderCollection
 
 	extern void				set_brick_borders_and_subdivisions(float _left, float _right, float _bottom, float _up, int _subdivision_x, int _subdivision_y);
 
+	extern void				add_data_to_vertex_buffer_shade(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _shade_size, ETextureGabarite* _texture);
+
 	//
 	//gabarite
 	//sprite layer
