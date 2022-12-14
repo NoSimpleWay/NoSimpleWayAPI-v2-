@@ -12,7 +12,7 @@ EButtonGroup*					EButtonGroup::catched_group_for_translation = nullptr;
 //EButtonGroup* EButtonGroup::focused_button_group;
 EButtonGroup*					EButtonGroup::focused_button_group_with_slider = nullptr;
 
-EButtonGroup*					EButtonGroup::data_entity_filter = nullptr;
+
 EButtonGroup*					EButtonGroup::color_editor_group = nullptr;
 EButtonGroup*					EButtonGroup::add_content_to_filter_block_group = nullptr;
 EButtonGroup*					EButtonGroup::header_line = nullptr;
@@ -1869,7 +1869,7 @@ void EButtonGroup::add_horizontal_scroll_bar(EButtonGroup* _button_group)
 			0.0f,
 			0.0f,
 			0.0f,
-			*_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
+			_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
 			_button_group->region_gabarite->size_y - _button_group->border_bottom - _button_group->border_up
 		);
 
@@ -2050,8 +2050,8 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 		//set slider head size
 		if (_group->slider != nullptr)
 		{
-			_group->slider->button_gabarite->size_x = *_group->selected_style->slider_inactive->main_texture->size_x_in_pixels;
-			_group->slider->button_gabarite->size_y = *_group->selected_style->slider_inactive->main_texture->size_y_in_pixels;
+			_group->slider->button_gabarite->size_x = _group->selected_style->slider_inactive->main_texture->size_x_in_pixels;
+			_group->slider->button_gabarite->size_y = _group->selected_style->slider_inactive->main_texture->size_y_in_pixels;
 		}
 
 		//_group->refresh_button_group(_group);

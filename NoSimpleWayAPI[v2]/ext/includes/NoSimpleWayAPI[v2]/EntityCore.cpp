@@ -598,18 +598,18 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 
 	if (item_icon != nullptr)
 	{
-		float resize_factor = 38.0f / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
+		float resize_factor = 38.0f / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
 		resize_factor = min(resize_factor, 1.0f);
 
 		ESpriteLayer* second_button_layer =
 			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 			(item_icon,
-				(44.0f - *item_icon->size_x_in_pixels * resize_factor) / 2.0f,
-				(44.0f - *item_icon->size_y_in_pixels * resize_factor) / 2.0f,
+				(44.0f - item_icon->size_x_in_pixels * resize_factor) / 2.0f,
+				(44.0f - item_icon->size_y_in_pixels * resize_factor) / 2.0f,
 				3.0f,
 
-				*item_icon->size_x_in_pixels * resize_factor,
-				*item_icon->size_y_in_pixels * resize_factor,
+				item_icon->size_x_in_pixels * resize_factor,
+				item_icon->size_y_in_pixels * resize_factor,
 				0.0f
 			);
 
@@ -673,11 +673,11 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 			if (item_icon != nullptr)
 			{
-				resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
+				resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
 				resize_factor = min(resize_factor, 1.0f);
 
-				offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_x_in_pixels * resize_factor) / 2.0f;
-				offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_y_in_pixels * resize_factor) / 2.0f;
+				offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
+				offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
 
 				ESpriteLayer* second_button_layer =
 					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
@@ -688,8 +688,8 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 						_parent_group->border_bottom + offset_y,
 						3.0f,
 
-						*item_icon->size_x_in_pixels * resize_factor,
-						*item_icon->size_y_in_pixels * resize_factor,
+						item_icon->size_x_in_pixels * resize_factor,
+						item_icon->size_y_in_pixels * resize_factor,
 						0.0f
 					);
 
@@ -730,11 +730,11 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 			if (item_icon != nullptr)
 			{
-				resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
+				resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
 				resize_factor = min(resize_factor, 1.0f);
 
-				offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_x_in_pixels * resize_factor) / 2.0f;
-				offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - *item_icon->size_y_in_pixels * resize_factor) / 2.0f;
+				offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
+				offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
 
 				ESpriteLayer* second_button_layer =
 					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
@@ -745,8 +745,8 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 						_parent_group->border_bottom + offset_y,
 						3.0f,
 
-						*item_icon->size_x_in_pixels * resize_factor,
-						*item_icon->size_y_in_pixels * resize_factor,
+						item_icon->size_x_in_pixels * resize_factor,
+						item_icon->size_y_in_pixels * resize_factor,
 						0.0f
 					);
 
@@ -773,7 +773,7 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	EDataContainer_VerticalNamedSlider* data = new EDataContainer_VerticalNamedSlider();
 	EntityButton::get_last_custom_data(jc_button)->data_container = data;
 	data->style = _style;
-	data->operable_area_size_x = _region_gabarite->size_x - *_style->round_slider->main_texture->size_x_in_pixels;
+	data->operable_area_size_x = _region_gabarite->size_x - _style->round_slider->main_texture->size_x_in_pixels;
 	
 
 	EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_update_vertical_named_slider);
@@ -1152,15 +1152,15 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 	if (_gabarite != nullptr)
 	{
 		int
-			max_size = max(*_gabarite->size_x_in_pixels, *_gabarite->size_y_in_pixels);
+			max_size = max(_gabarite->size_x_in_pixels, _gabarite->size_y_in_pixels);
 		max_size = min(max_size, 1.0f);
 
 		float
 			resize_factor = max_size;
 		resize_factor = min(resize_factor, 1.0f);
 
-		float icon_size_x = round(*_gabarite->size_x_in_pixels * resize_factor);
-		float icon_size_y = round(*_gabarite->size_y_in_pixels * resize_factor);
+		float icon_size_x = round(_gabarite->size_x_in_pixels * resize_factor);
+		float icon_size_y = round(_gabarite->size_y_in_pixels * resize_factor);
 
 		float offset_x = (_region_gabarite->size_y - icon_size_x) / 2.0f;
 		float offset_y = (_region_gabarite->size_y - icon_size_y) / 2.0f;
@@ -1429,7 +1429,7 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 		0.0f,
 		0.0f,
 		0.0f,
-		*_but->parent_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
+		_but->parent_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
 		_but->parent_button_group->region_gabarite->size_y - _but->parent_button_group->border_bottom - _but->parent_button_group->border_up
 	);
 
@@ -1485,9 +1485,9 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 	//	current_height_percent
 	//);
 
-	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = *_style->slider_inactive->main_texture->size_x_in_pixels;
+	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = _style->slider_inactive->main_texture->size_x_in_pixels;
 
-	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = *_style->slider_inactive->main_texture->size_y_in_pixels;
+	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = _style->slider_inactive->main_texture->size_y_in_pixels;
 
 	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->offset_y
 	=
@@ -1509,8 +1509,8 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 
 
 	//change button gabarites size y
-	_but->button_gabarite->size_x = *_style->slider_inactive->main_texture->size_x_in_pixels;
-	_but->button_gabarite->size_y = *_style->slider_inactive->main_texture->size_y_in_pixels;
+	_but->button_gabarite->size_x = _style->slider_inactive->main_texture->size_x_in_pixels;
+	_but->button_gabarite->size_y = _style->slider_inactive->main_texture->size_y_in_pixels;
 
 	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 0)->set_texture_gabarite
 	(
@@ -1576,9 +1576,9 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 				float resize_factor =
 					min
 					(
-						(button_gabarite->size_x - *brick_style->side_offset_bottom - *brick_style->side_offset_up) / (float)(*router_variant_list[selected_variant].texture->size_x_in_pixels)
+						(button_gabarite->size_x - *brick_style->side_offset_bottom - *brick_style->side_offset_up) / (float)(router_variant_list[selected_variant].texture->size_x_in_pixels)
 						,
-						(button_gabarite->size_y - *brick_style->side_offset_left - *brick_style->side_offset_right) / (float)(*router_variant_list[selected_variant].texture->size_y_in_pixels)
+						(button_gabarite->size_y - *brick_style->side_offset_left - *brick_style->side_offset_right) / (float)(router_variant_list[selected_variant].texture->size_y_in_pixels)
 					);
 
 				//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->offset_x = *brick_style->side_offset_left;
@@ -1592,12 +1592,12 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 					nullptr,
 					nullptr,
 
-					(button_gabarite->size_y - *router_variant_list[selected_variant].texture->size_x_in_pixels) / 2.0f,
-					(button_gabarite->size_y - *router_variant_list[selected_variant].texture->size_y_in_pixels) / 2.0f,
+					(button_gabarite->size_y - router_variant_list[selected_variant].texture->size_x_in_pixels) / 2.0f,
+					(button_gabarite->size_y - router_variant_list[selected_variant].texture->size_y_in_pixels) / 2.0f,
 					0.0f,
 
-					*router_variant_list[selected_variant].texture->size_x_in_pixels * resize_factor,
-					*router_variant_list[selected_variant].texture->size_y_in_pixels * resize_factor,
+					router_variant_list[selected_variant].texture->size_x_in_pixels * resize_factor,
+					router_variant_list[selected_variant].texture->size_y_in_pixels * resize_factor,
 					0.0f
 				);
 

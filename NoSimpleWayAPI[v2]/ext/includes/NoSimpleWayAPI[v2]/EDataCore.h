@@ -519,7 +519,7 @@ namespace EDataActionCollection
 
 
 	/*	open groups	*/
-	void action_open_data_entity_filter_group			(Entity* _entity, ECustomData* _custom_data, float _d);
+
 	void action_open_color_group						(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_add_item_to_group_receiver				(Entity* _entity, ECustomData* _custom_data, float _d);

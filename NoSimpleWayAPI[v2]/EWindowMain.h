@@ -285,6 +285,7 @@ public:
 
 	EntityButton* input_field_button;
 };
+
 enum DataOrderNames
 {
 	ATTRIBUTE,
@@ -317,8 +318,22 @@ public:
 	void refresh_sound_list();
 };
 
+class EButtonGroupDataEntity : public EButtonGroup
+{
+public:
 
+	int data_entity_id = 0;
 
+	EntityButton* main_input_field;
+
+	EButtonGroup* main_left_side = nullptr;
+
+	EButtonGroupDataEntity(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	void update(float _d);
+};
+
+//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
 
 
 
@@ -377,6 +392,8 @@ namespace EDataActionCollection
 	void action_move_filter_block_down(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_delete_listed_segment(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text
@@ -500,12 +517,13 @@ public:
 
 	static EWindowMain* link_to_main_window;
 
-	static EButtonGroup* select_rarity_button_group;
-	static EButtonGroup* select_quality_button_group;
-	static EButtonGroup* loot_filter_editor;
-	static EButtonGroup* world_parameters;
-	static EButtonGroup* tab_list_group;
-	static EButtonGroupNewLootFilter* create_new_loot_filter_group;
+	static EButtonGroup*				select_rarity_button_group;
+	static EButtonGroup*				select_quality_button_group;
+	static EButtonGroup*				loot_filter_editor;
+	static EButtonGroup*				world_parameters;
+	static EButtonGroup*				tab_list_group;
+	static EButtonGroupNewLootFilter*	create_new_loot_filter_group;
+	static EButtonGroupDataEntity*		data_entity_filter;
 
 	static std::string username;
 	static std::string path_of_exile_folder;
@@ -534,6 +552,7 @@ public:
 
 	static std::vector <EButtonGroup*> filter_block_tabs;
 	static void write_loot_filter_to_disc(std::string _full_path, std::string* _data);
+
 
 };
 

@@ -165,7 +165,14 @@ int main()
 
 	while (!glfwWindowShouldClose(NS_EGraphicCore::main_window))
 	{
-
+		if (!ETextureGabarite::incomplete_gabarites_list.empty())
+		{
+			for (int i = 0; i < min(16, ETextureGabarite::incomplete_gabarites_list.size()); i++)
+			{
+				NS_EGraphicCore::complete_texture_gabarite(ETextureGabarite::incomplete_gabarites_list[0 + i]);
+				ETextureGabarite::incomplete_gabarites_list.erase(ETextureGabarite::incomplete_gabarites_list.begin() + i);
+			}
+		}
 
 		ESpriteLayer::data_copies_count = 0;
 		ESpriteLayer::data_copy_calls = 0;

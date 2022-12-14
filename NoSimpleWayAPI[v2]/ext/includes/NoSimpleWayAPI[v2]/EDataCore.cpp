@@ -749,33 +749,7 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 std::vector<EFilterRule*> EFilterRule::registered_global_filter_rules(RegisteredFilterRules::_RDEF_LAST_ELEMENT_);
 std::vector<EFilterRule*> EFilterRule::registered_filter_rules_for_list;
 
-void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d)
-{
-	EInputCore::logger_simple_info("???");
-	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* button_data_container = ((EDataContainer_Group_StoreFilterRuleForDataEntitySearcher*)_custom_data->data_container);
-	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EButtonGroup::data_entity_filter->data_container;
 
-	EButtonGroup::data_entity_filter->is_active = true;
-	EButtonGroup::data_entity_filter->move_to_foreground();
-
-	button_group_data_container->pointer_to_group_item_receiver = button_data_container->target_group;
-	button_group_data_container->target_rule = button_data_container->filter_rule;
-	button_group_data_container->action_on_select_for_button = button_data_container->target_action_on_click;
-
-	EDataActionCollection::action_type_search_data_entity_text(button_group_data_container->filter_text_area);
-	/* OUTDATED */
-	//if
-	//(
-	//	(data_container_with_rule->target_rule != nullptr)
-	//	&&
-	//	(!data_container_with_rule->target_rule->required_tag_list.empty())
-	//	&&
-	//	(!data_container_with_rule->target_rule->required_tag_list[0]->suitable_values_list.empty())
-	//)
-	//{
-	//	data_container_with_rule->target_rule->required_tag_list[0]->suitable_values_list[0] = data->search_tag;
-	//}
-}
 
 void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {

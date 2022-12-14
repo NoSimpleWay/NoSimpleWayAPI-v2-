@@ -44,12 +44,13 @@
 //class Entity;
 EWindowMain* EWindowMain::link_to_main_window;
 
-EButtonGroup* EWindowMain::select_rarity_button_group;
-EButtonGroup* EWindowMain::select_quality_button_group;
-EButtonGroup* EWindowMain::loot_filter_editor;
-EButtonGroup* EWindowMain::world_parameters;
-EButtonGroup* EWindowMain::tab_list_group;
-EButtonGroupNewLootFilter* EWindowMain::create_new_loot_filter_group;
+EButtonGroup*				EWindowMain::select_rarity_button_group;
+EButtonGroup*				EWindowMain::select_quality_button_group;
+EButtonGroup*				EWindowMain::loot_filter_editor;
+EButtonGroup*				EWindowMain::world_parameters;
+EButtonGroup*				EWindowMain::tab_list_group;
+EButtonGroupNewLootFilter*	EWindowMain::create_new_loot_filter_group;
+EButtonGroupDataEntity*		EWindowMain::data_entity_filter = nullptr;
 
 
 
@@ -213,7 +214,7 @@ void EDataActionCollection::action_generate_filter_block_text(Entity* _entity, E
 
 void EDataActionCollection::action_select_this_filter_variant(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EButtonGroup::data_entity_filter->data_container;
+	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EWindowMain::data_entity_filter->data_container;
 
 	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
@@ -670,6 +671,35 @@ void EDataActionCollection::action_move_filter_block_down(Entity* _entity, ECust
 void EDataActionCollection::action_delete_listed_segment(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	static_cast<EntityButtonForListedSegment*>(_entity)->listed_group->need_remove = true;
+}
+
+void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+
+		EInputCore::logger_simple_info("???");
+		EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* button_data_container = ((EDataContainer_Group_StoreFilterRuleForDataEntitySearcher*)_custom_data->data_container);
+		EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EWindowMain::data_entity_filter->data_container;
+
+		EWindowMain::data_entity_filter->is_active = true;
+		EWindowMain::data_entity_filter->move_to_foreground();
+
+		button_group_data_container->pointer_to_group_item_receiver = button_data_container->target_group;
+		button_group_data_container->target_rule = button_data_container->filter_rule;
+		button_group_data_container->action_on_select_for_button = button_data_container->target_action_on_click;
+
+		EDataActionCollection::action_type_search_data_entity_text(button_group_data_container->filter_text_area);
+		/* OUTDATED */
+		//if
+		//(
+		//	(data_container_with_rule->target_rule != nullptr)
+		//	&&
+		//	(!data_container_with_rule->target_rule->required_tag_list.empty())
+		//	&&
+		//	(!data_container_with_rule->target_rule->required_tag_list[0]->suitable_values_list.empty())
+		//)
+		//{
+		//	data_container_with_rule->target_rule->required_tag_list[0]->suitable_values_list[0] = data->search_tag;
+		//}
 }
 
 void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _text_area)
@@ -1694,6 +1724,10 @@ EWindowMain::EWindowMain()
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	ETextParser::data_entity_parse_file("data/data_entity_list.txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[influence].txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[base_class].txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[explicit].txt");
+
 	ETextParser::split_data_entity_list_to_named_structs();
 
 
@@ -1933,7 +1967,7 @@ EWindowMain::EWindowMain()
 
 
 			EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_entity_filter = new EDataContainer_Group_StoreFilterRuleForDataEntitySearcher();
-			data_container_entity_filter->target_group = EButtonGroup::data_entity_filter;
+			data_container_entity_filter->target_group = EWindowMain::data_entity_filter;
 			data_container_entity_filter->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_SKILL_GEMS];
 
 			ECustomData* custom_data_for_gem_button = new ECustomData();
@@ -2032,19 +2066,19 @@ EWindowMain::EWindowMain()
 
 						if (item_icon != nullptr)
 						{
-							float resize_factor = 32.0f / max(*item_icon->size_x_in_pixels, *item_icon->size_y_in_pixels);
+							float resize_factor = 32.0f / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
 							resize_factor = min(resize_factor, 1.0f);
 
 							jc_button->sprite_layer_list.push_back
 							(
 								ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 								(item_icon,
-									(40.0f - *item_icon->size_x_in_pixels * resize_factor) / 2.0f,
-									(40.0f - *item_icon->size_y_in_pixels * resize_factor) / 2.0f,
+									(40.0f - item_icon->size_x_in_pixels * resize_factor) / 2.0f,
+									(40.0f - item_icon->size_y_in_pixels * resize_factor) / 2.0f,
 									3.0f,
 
-									*item_icon->size_x_in_pixels * resize_factor,
-									*item_icon->size_y_in_pixels * resize_factor,
+									item_icon->size_x_in_pixels * resize_factor,
+									item_icon->size_y_in_pixels * resize_factor,
 									0.0f
 								)
 							);
@@ -2190,17 +2224,19 @@ EWindowMain::EWindowMain()
 	//DATA ENTITY
 	if (true)
 	{
-		main_button_group = EButtonGroup::create_root_button_group
-		(new ERegionGabarite(900.0f, 100.0f, 0.0f, 1250.0f, 600.0f), EGUIStyle::active_style);
-		main_button_group->parent_window = this;
-		main_button_group->root_group = main_button_group;
-		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
-		EButtonGroup::data_entity_filter = main_button_group;
+		EButtonGroupDataEntity*
+		data_entity_main_group = new EButtonGroupDataEntity(new ERegionGabarite(900.0f, 100.0f, 0.0f, 1250.0f, 600.0f));
+		data_entity_main_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_darken_bg);
+
+		data_entity_main_group->parent_window = this;
+		data_entity_main_group->root_group = data_entity_main_group;
+		data_entity_main_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+		EWindowMain::data_entity_filter = data_entity_main_group;
 
 
 		EDataContainer_Group_DataEntitiesSearch* jc_data_container_for_search_group = new EDataContainer_Group_DataEntitiesSearch();
-		main_button_group->data_container = jc_data_container_for_search_group;
-		main_button_group->is_active = false;
+		data_entity_main_group->data_container = jc_data_container_for_search_group;
+		data_entity_main_group->is_active = false;
 
 		DataEntityFilter* data_entity_filter = new DataEntityFilter();
 		data_entity_filter->target_tag_name = "data type";
@@ -2211,7 +2247,7 @@ EWindowMain::EWindowMain()
 
 		jc_data_container_for_search_group->target_rule = new EFilterRule();
 
-		EButtonGroup* workspace_part = main_button_group->add_close_group_and_return_workspace_group(new ERegionGabarite(200.0f, 20.0f), EGUIStyle::active_style);
+		EButtonGroup* workspace_part = data_entity_main_group->add_close_group_and_return_workspace_group(new ERegionGabarite(200.0f, 20.0f), EGUIStyle::active_style);
 
 		// // //	DATA ENTITY LIST	// // //
 		jc_button_group = workspace_part->add_group
@@ -2243,6 +2279,8 @@ EWindowMain::EWindowMain()
 			NSW_dynamic_autosize
 		);
 
+		data_entity_main_group->main_left_side = left_side_for_data_entity_buttons;
+
 		/// RIGHT SIDE FOR FILTERS
 		EButtonGroup* right_side_for_filter_rule_buttons = jc_button_group->add_group
 		(
@@ -2264,23 +2302,23 @@ EWindowMain::EWindowMain()
 
 
 
-		//buttons for data entity
-		unsigned int counter = 0;
-		for (EDataEntity* data_entity : EDataEntity::data_entity_global_list)
-		{
+		////buttons for data entity
+		//unsigned int counter = 0;
+		//for (EDataEntity* data_entity : EDataEntity::data_entity_global_list)
+		//{
 
-			jc_button = EntityButton::create_wide_item_button
-			(
-				new ERegionGabarite(300.0f, 50.0f),
-				left_side_for_data_entity_buttons,
-				data_entity,
-				EFont::font_list[0]
-			);
+		//	jc_button = EntityButton::create_wide_item_button
+		//	(
+		//		new ERegionGabarite(300.0f, 50.0f),
+		//		left_side_for_data_entity_buttons,
+		//		data_entity,
+		//		EFont::font_list[0]
+		//	);
 
-			left_side_for_data_entity_buttons->button_list.push_back(jc_button);
+		//	left_side_for_data_entity_buttons->button_list.push_back(jc_button);
 
-			counter++;
-		}
+		//	counter++;
+		//}
 
 		for (int i = 0; i < EFilterRule::registered_filter_rules_for_list.size(); i++)
 		{
@@ -2318,6 +2356,8 @@ EWindowMain::EWindowMain()
 			""
 		);
 
+		data_entity_main_group->main_input_field = jc_button;
+
 		jc_data_container_for_search_group->filter_text_area = jc_button->main_text_area;
 
 		jc_button->main_text_area->gray_text = new ELocalisationText();
@@ -2335,12 +2375,12 @@ EWindowMain::EWindowMain()
 
 
 
-		EDataActionCollection::action_type_search_data_entity_text(jc_text_area);
+		
 
 
 
 
-		button_group_list.push_back(main_button_group);
+		button_group_list.push_back(data_entity_main_group);
 
 		///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	
 		jc_button = new EntityButton();
@@ -2368,7 +2408,7 @@ EWindowMain::EWindowMain()
 		jc_button_group->button_list.push_back(jc_button);
 		///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	
 
-		EButtonGroup::refresh_button_group(main_button_group);
+		EButtonGroup::refresh_button_group(data_entity_main_group);
 	}
 
 	//world parameters
@@ -4985,7 +5025,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		EDataContainer_Button_OpenButtonGroup*
 		data_open_group = new EDataContainer_Button_OpenButtonGroup();
 		data_open_group->master_group = whole_filter_block_group;
-		data_open_group->target_group = EButtonGroup::data_entity_filter;
+		data_open_group->target_group = EWindowMain::data_entity_filter;
 
 		EntityButton::get_last_custom_data(jc_button)->data_container = data_open_group;
 
@@ -8388,7 +8428,7 @@ void EButtonGroupTopControlSection::draw()
 
 	float font_size_rescale = 0.4f + d_con->text_size * 0.6f;
 
-	float rescale_factor = min((box_size_x * font_size_rescale) / (float)(*example_text_texture[0]->size_x_in_pixels + 6.0f), (region_gabarite->size_y * font_size_rescale) / (float)(*example_text_texture[0]->size_y_in_pixels + 6.0f));
+	float rescale_factor = min((box_size_x * font_size_rescale) / (float)(example_text_texture[0]->size_x_in_pixels + 6.0f), (region_gabarite->size_y * font_size_rescale) / (float)(example_text_texture[0]->size_y_in_pixels + 6.0f));
 	rescale_factor = min(rescale_factor, 1.0f);
 
 	int array_id = round(1.0f - rescale_factor);
@@ -8465,13 +8505,13 @@ void EButtonGroupTopControlSection::draw()
 		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
 		//x pos
-		pos_x + (box_size_x * font_size_rescale - *example_text_texture[0]->size_x_in_pixels * rescale_factor) / 2.0f,
+		pos_x + (box_size_x * font_size_rescale - example_text_texture[0]->size_x_in_pixels * rescale_factor) / 2.0f,
 
 		//y pos
-		pos_y + (region_gabarite->size_y * font_size_rescale - *example_text_texture[0]->size_y_in_pixels * rescale_factor) / 2.0f - 1.0f * font_size_rescale,
+		pos_y + (region_gabarite->size_y * font_size_rescale - example_text_texture[0]->size_y_in_pixels * rescale_factor) / 2.0f - 1.0f * font_size_rescale,
 
-		*example_text_texture[0]->size_x_in_pixels * rescale_factor,
-		*example_text_texture[0]->size_y_in_pixels * rescale_factor,
+		example_text_texture[0]->size_x_in_pixels * rescale_factor,
+		example_text_texture[0]->size_y_in_pixels * rescale_factor,
 
 		example_text_texture[array_id]
 	);
@@ -8517,14 +8557,14 @@ void EButtonGroupTopControlSection::draw()
 
 
 
-		rescale_factor = pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->size_y / (float)(*shape_router->texture->size_y_in_pixels);
+		rescale_factor = pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->size_y / (float)(shape_router->texture->size_y_in_pixels);
 
 		rescale_factor *= 1.0f - 0.25f * size_router_button->selected_variant;
 
 		rescale_factor = max(rescale_factor, 0.25f);
 		rescale_factor = min(rescale_factor, 1.0f);
 
-		float shape_x_size = *shape_router->texture->size_x_in_pixels * rescale_factor;
+		float shape_x_size = shape_router->texture->size_x_in_pixels * rescale_factor;
 
 		NS_EGraphicCore::set_active_color(color_router->color);
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
@@ -8540,14 +8580,14 @@ void EButtonGroupTopControlSection::draw()
 			box_y,
 
 			shape_x_size,
-			*shape_router->texture->size_y_in_pixels * rescale_factor,
+			shape_router->texture->size_y_in_pixels * rescale_factor,
 
 			shape_router->texture
 		);
 	}
 
 	pos_x = pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->world_position_x;
-	pos_x += (pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->size_x - *NS_DefaultGabarites::texture_ray->size_x_in_pixels) / 2.0f;
+	pos_x += (pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->size_x - NS_DefaultGabarites::texture_ray->size_x_in_pixels) / 2.0f;
 
 	pos_y = pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->world_position_y;
 
@@ -8569,8 +8609,8 @@ void EButtonGroupTopControlSection::draw()
 			//y pos
 			pos_y,
 
-			*NS_DefaultGabarites::texture_ray->size_x_in_pixels,
-			*NS_DefaultGabarites::texture_ray->size_y_in_pixels,
+			NS_DefaultGabarites::texture_ray->size_x_in_pixels,
+			NS_DefaultGabarites::texture_ray->size_y_in_pixels,
 			
 
 			NS_DefaultGabarites::texture_ray
@@ -8715,4 +8755,40 @@ EntityButtonForListedSegment::EntityButtonForListedSegment()
 
 EntityButtonForListedSegment::~EntityButtonForListedSegment()
 {
+}
+
+void EButtonGroupDataEntity::update(float _d)
+{
+	EButtonGroup::update(_d);
+
+	//buttons for data entity
+	unsigned int counter = 0;
+	for (int i = 0; i < 10; i++)
+	if (data_entity_id < EDataEntity::data_entity_global_list.size())
+	{
+		EntityButton* jc_button = EntityButton::create_wide_item_button
+		(
+			new ERegionGabarite(300.0f, 50.0f),
+			main_left_side,
+			EDataEntity::data_entity_global_list[data_entity_id],
+			EFont::font_list[0]
+		);
+
+		main_left_side->button_list.push_back(jc_button);
+
+		//counter++;
+
+
+		data_entity_id++;
+
+		if (data_entity_id == EDataEntity::data_entity_global_list.size())
+		{
+			
+			EButtonGroup::refresh_button_group(EWindowMain::data_entity_filter);
+			EDataActionCollection::action_type_search_data_entity_text(main_input_field->main_text_area);
+		}
+	}
+
+
+	
 }

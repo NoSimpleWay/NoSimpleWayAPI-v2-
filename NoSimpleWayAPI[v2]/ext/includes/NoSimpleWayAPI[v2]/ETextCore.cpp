@@ -209,8 +209,8 @@ void EFont::load_font_littera(std::string _path)
 							UV_size_x[font_array_id] = UV_size_x[font_array_id] / (float)texture_atlas->get_atlas_size_x();
 							UV_size_y[font_array_id] = UV_size_y[font_array_id] / (float)texture_atlas->get_atlas_size_y();
 
-							UV_start_x[font_array_id] = *gabarite->uv_start_x + UV_start_x[font_array_id] / (float)texture_atlas->get_atlas_size_x();
-							UV_start_y[font_array_id] = *gabarite->uv_start_y + (*gabarite->size_y_in_pixels / (float)texture_atlas->get_atlas_size_y()) - UV_start_y[font_array_id] / (float)texture_atlas->get_atlas_size_y();
+							UV_start_x[font_array_id] = gabarite->uv_start_x + UV_start_x[font_array_id] / (float)texture_atlas->get_atlas_size_x();
+							UV_start_y[font_array_id] = gabarite->uv_start_y + (gabarite->size_y_in_pixels / (float)texture_atlas->get_atlas_size_y()) - UV_start_y[font_array_id] / (float)texture_atlas->get_atlas_size_y();
 
 							//EInputCore::logger_param("final uv_size_y", UV_start_y[font_array_id]);
 						}

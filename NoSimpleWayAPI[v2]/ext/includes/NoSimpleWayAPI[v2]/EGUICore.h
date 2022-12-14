@@ -412,7 +412,7 @@ public:
 
 
 	//static fuck_you_leatherman
-	static EButtonGroup* data_entity_filter;
+
 	static EButtonGroup* color_editor_group;
 	static EButtonGroup* add_content_to_filter_block_group;
 	static EButtonGroup* header_line;

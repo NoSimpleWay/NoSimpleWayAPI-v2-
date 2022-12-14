@@ -162,12 +162,13 @@ namespace NS_EGraphicCore
 
 	extern unsigned char*	image_data;
 	extern unsigned char*	zalupa;
-	extern int				texture_loader_width, texture_loader_height, nrChannels, last_texture_width, last_texture_height;
+	extern int				nrChannels;
+	extern int				texture_loader_width, texture_loader_height,  last_texture_width, last_texture_height;
 	//extern ETextureAtlas*	default_texture_atlas;
 	extern float			delta_time;
 	extern float			saved_time_for_delta;
 
-	extern					std::vector<ETextureGabarite*> texture_gabarites_list;
+	extern					std::vector<std::vector<ETextureGabarite*>> texture_gabarites_list;
 
 	extern void processInput(GLFWwindow* window);
 
@@ -182,11 +183,15 @@ namespace NS_EGraphicCore
 	extern void initiate_graphic_core();
 
 	extern void load_texture(char const* _path, int _id);
+	extern void get_png_image_dimensions(std::string& file_path, unsigned int& width, unsigned int& height);
+	extern bool getPngSize(const char* fileName, int& _x, int& _y);
+
 
 	extern ETextureGabarite*	put_texture_to_atlas(std::string _name, ETextureAtlas* _atlas);
 	extern ETextureGabarite*	load_from_textures_folder(std::string _name);
 	extern ETextureGabarite*	load_texture_to_default_atlas(std::string _name);
 	extern void					load_style_texture(EGUIStyle* _style, EBrickStyle* _brick);
+	extern void					complete_texture_gabarite(ETextureGabarite* _texture_gabarite);
 
 	void gl_set_texture_filtering(GLint _wrap_mode, GLint _filter);
 	void gl_set_blend_mode_default();
@@ -411,8 +416,8 @@ private:
 	std::string* full_path = new std::string("");
 	std::string* name = new std::string("");
 
-	int* pos_x_in_pixels = new int(0);
-	int* pos_y_in_pixels = new int(0);
+	int pos_x_in_pixels = (0);
+	int pos_y_in_pixels = (0);
 
 public:
 	ETextureAtlas* target_atlas = nullptr;
@@ -426,18 +431,28 @@ public:
 	void set_uv_parameters(float _uv_start_x, float _uv_start_y, float _uv_end_x, float _uv_end_y);
 	void set_real_texture_size(int _size_x, int _size_y);
 
-	float* uv_start_x = new float(0.0f);
-	float* uv_start_y = new float(0.0f);
-	float* uv_end_x = new float(0.0f);
-	float* uv_end_y = new float(0.0f);
+	float uv_start_x = (0.0f);
+	float uv_start_y = (0.0f);
+	float uv_end_x = (0.0f);
+	float uv_end_y = (0.0f);
 
-	int* position_on_texture_atlas_x = new int(0);
-	int* position_on_texture_atlas_y = new int(0);
+	float uv_size_x = 0.0f;
+	float uv_size_y = 0.0f;
 
-	int* size_x_in_pixels = new int(0);
-	int* size_y_in_pixels = new int(0);
+	int position_on_texture_atlas_x = (-1);
+	int position_on_texture_atlas_y = (-1);
+
+	int size_x_in_pixels = (0);
+	int size_y_in_pixels = (0);
 
 	void calculate_final_sizes();
+
+	//bool incomplete = false;
+
+	static std::vector<ETextureGabarite*> incomplete_gabarites_list;
+
+	//int x_position_on_atlas = -1;
+	//int y_position_on_atlas = -1;
 };
 
 class ESprite
