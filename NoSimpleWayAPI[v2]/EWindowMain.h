@@ -201,6 +201,7 @@ class EButtonGroupFilterBlock : public EButtonGroup
 {
 public:
 	EButtonGroupFilterBlock(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+	~EButtonGroupFilterBlock();
 
 	EButtonGroup* pointer_to_non_listed_segment;
 	EButtonGroup* pointer_to_listed_segment;
@@ -386,6 +387,9 @@ namespace EDataActionCollection
 	void action_select_this_tab(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_create_new_loot_filter_with_name(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_new_lootfilter_group(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_clone_block(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void generate_filter_lines_from_text(std::string& full_text);
 
 	void action_remove_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_move_filter_block_up(Entity* _entity, ECustomData* _custom_data, float _d);

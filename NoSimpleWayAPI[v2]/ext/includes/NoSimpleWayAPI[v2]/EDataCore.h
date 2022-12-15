@@ -464,6 +464,8 @@ public:
 	EntityButton* target_button_with_condition;
 	EntityButton* target_button_with_value;
 
+	EntityButtonVariantRouterForFilterBlock* rarity_router_button;
+
 	FilterBlockAttribute* target_filter_block_attribute;
 };
 

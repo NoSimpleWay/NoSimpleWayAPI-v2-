@@ -2,7 +2,7 @@
 //#define STB_IMAGE_IMPLEMENTATION
 
 /**/#include "ETextCore.h"
-
+//#include <ios>
 //#define STB_IMAGE_IMPLEMENTATION
 /**/#include <stb_image.h>
 

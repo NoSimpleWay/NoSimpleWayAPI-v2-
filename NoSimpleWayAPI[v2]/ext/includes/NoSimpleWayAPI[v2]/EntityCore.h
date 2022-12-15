@@ -288,6 +288,7 @@ public:
 		bool* _target_bool = nullptr
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
+	
 
 	bool can_get_access_to_style();
 
@@ -312,10 +313,15 @@ public:
 struct RouterVariant
 {
 public:
-	ELocalisationText*			localisation;
+	ELocalisationText*			localisation = nullptr;
 	Helper::HSVRGBAColor*		color;
-	ETextureGabarite*			texture;
+	ETextureGabarite*			texture = nullptr;
 	ELocalisationText*			localisation_for_select_window;
+	
+	bool						do_not_delete_me = false;
+
+	~RouterVariant();
+
 };
 
 enum class RotateVariantMode
@@ -328,20 +334,31 @@ enum class RotateVariantMode
 class EntityButtonVariantRouter : public EntityButton
 {
 public:
+	virtual ~EntityButtonVariantRouter();
+
 	int							selected_variant;
-	std::vector<RouterVariant>	router_variant_list;
+	std::vector<RouterVariant*>	router_variant_list;
 
 	ESpriteLayer*				layer_with_icon;
 	ETextArea*					pointer_to_text_area;
 
-	virtual ~EntityButtonVariantRouter();
 
-	void select_variant			(int _variant_id);
-	int seach_id_by_base_name	(std::string& _base_name);
+
+	void select_variant							(int _variant_id);
+	void select_variant_by_base_name			(std::string& _base_name);
+	int seach_id_by_base_name					(std::string& _base_name);
 
 	RotateVariantMode			rotate_variant_mode = RotateVariantMode::SELECT_NEXT;
 
 	EButtonGroupRouterVariant*	opened_router_group;
+
+	void make_default_router_variant_button
+	(
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		data_action_pointer _dap
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
 
 
 	int height_division = 2;

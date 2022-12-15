@@ -2130,11 +2130,16 @@ void NS_EGraphicCore::load_texture(char const* _path, int _id)
 
 void NS_EGraphicCore::get_png_image_dimensions(std::string& file_path, unsigned int& width, unsigned int& height)
 {
-	unsigned char buf[8];
+	unsigned char buf[9];
+	unsigned char full[17];
 
-	std::ifstream in(file_path);
-	in.seekg(16);
+	std::ifstream in(file_path, std::ios_base::in | std::ios_base::binary);
+	in.read(reinterpret_cast<char*>(&full), 16);
+	//in.seekg(16);
 	in.read(reinterpret_cast<char*>(&buf), 8);
+
+	buf[8] = '\0';
+	full[16] = '\0';
 
 	std::string zzz;
 
@@ -2147,6 +2152,9 @@ void NS_EGraphicCore::get_png_image_dimensions(std::string& file_path, unsigned 
 	if ((width >= 10000) || (height >= 10000))
 	{
 		EInputCore::logger_param_with_warning("PNG header readed incorrect", file_path);
+		
+		width = 1000;
+		height = 1000;
 
 		for (int i = 0; i < 8; i++)
 		{

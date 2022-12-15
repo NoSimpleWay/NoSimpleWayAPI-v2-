@@ -1248,6 +1248,27 @@ void EntityButton::make_default_bool_switcher_button(ERegionGabarite* _region_ga
 
 
 
+void EntityButtonVariantRouter::make_default_router_variant_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap)
+{
+	make_as_default_button_with_icon
+	(
+		_region_gabarite,
+		_parent_group,
+		_dap,
+		nullptr
+	);
+
+	//parent_filter_block = static_cast<EButtonGroupFilterBlock*>(_parent_group);
+
+	layer_with_icon = sprite_layer_list.back();
+
+	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(this), EFont::font_list[0], "|?|");
+	pointer_to_text_area = jc_text_area;
+
+	*jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
+}
+
 bool EntityButton::can_get_access_to_style()
 {
 	return false;
@@ -1554,8 +1575,19 @@ EntityButtonVariantRouter::~EntityButtonVariantRouter()
 		opened_router_group->need_remove = true;
 
 		opened_router_group = nullptr;
-		
 	}
+
+	for (RouterVariant* rv : router_variant_list)
+	if (rv != nullptr)
+	{
+		delete rv;
+	}
+
+	router_variant_list.clear();
+	router_variant_list.shrink_to_fit();
+
+
+
 }
 
 void EntityButtonVariantRouter::select_variant(int _variant_id)
@@ -1568,7 +1600,7 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 		{
 			//6999999999999999999999999999999, 10 november 2022, cat, stop, pls
 
-			if (router_variant_list[selected_variant].texture != nullptr)
+			if (router_variant_list[selected_variant]->texture != nullptr)
 			{
 				//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->main_texture = router_variant_list[selected_variant].texture;
 
@@ -1576,9 +1608,9 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 				float resize_factor =
 					min
 					(
-						(button_gabarite->size_x - *brick_style->side_offset_bottom - *brick_style->side_offset_up) / (float)(router_variant_list[selected_variant].texture->size_x_in_pixels)
+						(button_gabarite->size_x - *brick_style->side_offset_bottom - *brick_style->side_offset_up) / (float)(router_variant_list[selected_variant]->texture->size_x_in_pixels)
 						,
-						(button_gabarite->size_y - *brick_style->side_offset_left - *brick_style->side_offset_right) / (float)(router_variant_list[selected_variant].texture->size_y_in_pixels)
+						(button_gabarite->size_y - *brick_style->side_offset_left - *brick_style->side_offset_right) / (float)(router_variant_list[selected_variant]->texture->size_y_in_pixels)
 					);
 
 				//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->offset_x = *brick_style->side_offset_left;
@@ -1588,16 +1620,16 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 
 				layer_with_icon->sprite_frame_list[0]->sprite_list[0]->set_texture_gabarite_with_size_and_offset
 				(
-					router_variant_list[selected_variant].texture,
+					router_variant_list[selected_variant]->texture,
 					nullptr,
 					nullptr,
 
-					(button_gabarite->size_y - router_variant_list[selected_variant].texture->size_x_in_pixels) / 2.0f,
-					(button_gabarite->size_y - router_variant_list[selected_variant].texture->size_y_in_pixels) / 2.0f,
+					(button_gabarite->size_y - router_variant_list[selected_variant]->texture->size_x_in_pixels) / 2.0f,
+					(button_gabarite->size_y - router_variant_list[selected_variant]->texture->size_y_in_pixels) / 2.0f,
 					0.0f,
 
-					router_variant_list[selected_variant].texture->size_x_in_pixels * resize_factor,
-					router_variant_list[selected_variant].texture->size_y_in_pixels * resize_factor,
+					router_variant_list[selected_variant]->texture->size_x_in_pixels * resize_factor,
+					router_variant_list[selected_variant]->texture->size_y_in_pixels * resize_factor,
 					0.0f
 				);
 
@@ -1610,9 +1642,9 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 			pointer_to_text_area->offset_border[BorderSide::RIGHT] = 0.0f;
 
 
-			pointer_to_text_area->localisation_text = *router_variant_list[selected_variant].localisation;
-			pointer_to_text_area->stored_color = *(router_variant_list[selected_variant].color);
-			pointer_to_text_area->color = *(router_variant_list[selected_variant].color);
+			pointer_to_text_area->localisation_text = *router_variant_list[selected_variant]->localisation;
+			pointer_to_text_area->stored_color = *(router_variant_list[selected_variant]->color);
+			pointer_to_text_area->color = *(router_variant_list[selected_variant]->color);
 
 			pointer_to_text_area->change_text(pointer_to_text_area->localisation_text.localisations[NSW_localisation_EN]);
 
@@ -1624,13 +1656,18 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 	}
 }
 
+void EntityButtonVariantRouter::select_variant_by_base_name(std::string& _base_name)
+{
+	select_variant(seach_id_by_base_name(_base_name));
+}
+
 int EntityButtonVariantRouter::seach_id_by_base_name(std::string& _base_name)
 {
 	//int id = 0;
 
 	for (int i = 0; i < router_variant_list.size(); i++)
 	{
-		if (router_variant_list[i].localisation->base_name == _base_name)
+		if (router_variant_list[i]->localisation->base_name == _base_name)
 		{
 			return i;
 		}
@@ -1638,4 +1675,18 @@ int EntityButtonVariantRouter::seach_id_by_base_name(std::string& _base_name)
 		//id++;
 	}
 		return -1;
+}
+
+RouterVariant::~RouterVariant()
+{
+	if (!do_not_delete_me)
+	{
+		//EInputCore::logger_simple_info("~RouterVariant");
+
+		if (localisation != nullptr) { delete localisation; }
+		if (color != nullptr) { delete color; }
+		if (localisation_for_select_window != nullptr) { delete localisation_for_select_window; }
+
+		//EInputCore::logger_simple_success("~RouterVariant deleted");
+	}
 }

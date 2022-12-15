@@ -393,9 +393,9 @@ void EButtonGroup::update(float _d)
 			gua(this);
 		}
 
-		for (EButtonGroup* _group : group_list)
+		for (int i = 0; i < group_list.size(); i++)
 		{
-			_group->update(_d);
+			group_list[i]->update(_d);
 		}
 	}
 
@@ -3160,16 +3160,16 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 
 	//		CREATE VARIANTS BUTTON
 	int id = 0;
-	for (RouterVariant rv : _router_button->router_variant_list)
+	for (RouterVariant* rv : _router_button->router_variant_list)
 	{
 		EntityButtonVariantRouterSelector*
 		variant_button = new EntityButtonVariantRouterSelector();
 
-		std::string text = rv.localisation->localisations[NSW_localisation_EN];
+		std::string text = rv->localisation->localisations[NSW_localisation_EN];
 
-		if ((rv.localisation_for_select_window != nullptr) && (rv.localisation_for_select_window->localisations[NSW_localisation_EN] != ""))
+		if ((rv->localisation_for_select_window != nullptr) && (rv->localisation_for_select_window->localisations[NSW_localisation_EN] != ""))
 		{
-			text = rv.localisation_for_select_window->localisations[NSW_localisation_EN];
+			text = rv->localisation_for_select_window->localisations[NSW_localisation_EN];
 		}
 
 		variant_button->make_as_default_button_with_icon_and_text
@@ -3177,15 +3177,15 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 			new ERegionGabarite(_router_button->button_gabarite->size_x, _router_button->button_gabarite->size_y),
 			workspace_group,
 			&EDataActionCollection::action_select_rotate_variant_from_list,
-			rv.texture,
+			rv->texture,
 			text
 		);
 
 		variant_button->id = id;
 		variant_button->parent_router_group = main_group;
 
-		Entity::get_last_text_area(variant_button)->stored_color	= *rv.color;
-		Entity::get_last_text_area(variant_button)->color			= *rv.color;
+		Entity::get_last_text_area(variant_button)->stored_color	= *rv->color;
+		Entity::get_last_text_area(variant_button)->color			= *rv->color;
 
 		workspace_group->button_list.push_back(variant_button);
 
