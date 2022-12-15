@@ -205,7 +205,6 @@ int main()
 			EButtonGroup::focused_button_group			= nullptr;
 			EButtonGroup::catched_group_for_translation = nullptr;
 			EClickableArea::active_clickable_region		= nullptr;
-
 		}
 
 		if (EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)

@@ -74,15 +74,14 @@ void EWindow::GUI_update_default(float _d)
 			EButtonGroup::get_last_focused_group(b_group);
 		}
 
-	if ((EButtonGroup::focused_button_group != nullptr))
+	if ((EButtonGroup::focused_button_group != nullptr) && (!EInputCore::MOUSE_BUTTON_LEFT))
 	{
 		for (EntityButton* but : EButtonGroup::focused_button_group->button_list)
 			for (ECustomData* data : but->custom_data_list)
+				if (but->be_visible_last_time)
 				for (EClickableArea* c_area : data->clickable_area_list)
 					if
 						(
-							(!EInputCore::MOUSE_BUTTON_LEFT)
-							&&
 							(*c_area->catched_body)
 							&&
 							(
@@ -94,9 +93,9 @@ void EWindow::GUI_update_default(float _d)
 									(!c_area->parent_entity->disable_draw)
 									&&
 									(!c_area->parent_entity->disabled)
-									)
 								)
 							)
+						)
 					{
 						EClickableArea::active_clickable_region = c_area;
 					}
@@ -112,15 +111,17 @@ void EWindow::GUI_update_default(float _d)
 					(b_group != nullptr)
 					&&
 					(b_group->is_active)
-					//&&
-					//(*b_group->region_gabarite->world_position_y										<= *b_group->higher_culling_line_for_bg)
-					//&&
-					//(*b_group->region_gabarite->world_position_y + *b_group->region_gabarite->size_y	>= *b_group->lower_culling_line_for_bg)
-					)
+					&&
+					(b_group->region_gabarite->world_position_y										<= b_group->higher_culling_line_for_bg)
+					&&
+					(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y	>= b_group->lower_culling_line_for_bg)
+				)
 			{
 				b_group->update(_d);
 				id++;
 			}
+
+			b_group->background_update(_d);
 	}
 }
 
@@ -452,6 +453,10 @@ void EButtonGroup::update(float _d)
 		}
 	}
 
+}
+
+void EButtonGroup::background_update(float _d)
+{
 }
 
 void EButtonGroup::draw()

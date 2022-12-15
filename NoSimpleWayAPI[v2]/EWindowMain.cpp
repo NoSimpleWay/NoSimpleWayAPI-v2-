@@ -8757,9 +8757,9 @@ EntityButtonForListedSegment::~EntityButtonForListedSegment()
 {
 }
 
-void EButtonGroupDataEntity::update(float _d)
+void EButtonGroupDataEntity::background_update(float _d)
 {
-	EButtonGroup::update(_d);
+	EButtonGroup::background_update(_d);
 
 	//buttons for data entity
 	unsigned int counter = 0;

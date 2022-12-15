@@ -158,16 +158,16 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
 				||
 				(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
-				)
+			)
 			&&
 			(
 				(*_custom_data->clickable_area_list.at(0)->catched_body)
 				||
 				(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
-				)
+			)
 			&&
 			(*data_bar->max_value > 0.0f)
-			)
+		)
 	{
 
 
@@ -216,7 +216,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 					(EInputCore::MOUSE_SPEED_Y != 0.0)
 					&&
 					(*_custom_data->clickable_area_list.at(0)->catched_body)
-					)
+				)
 				||
 				(
 					(EInputCore::scroll_direction != 0)

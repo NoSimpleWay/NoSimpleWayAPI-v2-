@@ -279,6 +279,8 @@ public:
 	float base_width;
 
 	virtual void update(float _d);
+	virtual void background_update(float _d);
+
 	//virtual void post_update(float _d);
 	virtual void draw();
 	virtual void post_draw();
