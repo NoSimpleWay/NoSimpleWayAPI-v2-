@@ -651,12 +651,12 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		//create text area
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, "");
-		*jc_text_area->offset_by_gabarite_size_x = 0.0;
-		*jc_text_area->offset_by_text_size_x = 0.0;
+		jc_text_area->offset_by_gabarite_size_x = 0.0;
+		jc_text_area->offset_by_text_size_x = 0.0;
 
 		jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y;
 
-		*jc_text_area->can_be_edited = false;
+		jc_text_area->can_be_edited = false;
 		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 
 		jc_button->main_text_area = jc_text_area;
@@ -723,6 +723,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		else
 		{
 			ETextureGabarite* item_icon = NS_EGraphicCore::load_from_textures_folder("undefined_item");
+			NS_EGraphicCore::complete_texture_gabarite(item_icon);
 
 			float resize_factor = 0.0f;
 			float offset_x = 0.0f;
@@ -827,11 +828,11 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	//int selected_data_entity = _data_entity;
 
 	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
-	*jc_text_area->offset_by_gabarite_size_x = 0.0;
-	*jc_text_area->offset_by_text_size_x = 0.0;
+	jc_text_area->offset_by_gabarite_size_x = 0.0;
+	jc_text_area->offset_by_text_size_x = 0.0;
 
-	*jc_text_area->offset_by_gabarite_size_y = 1.0;
-	*jc_text_area->offset_by_text_size_y = -1.0;
+	jc_text_area->offset_by_gabarite_size_y = 1.0;
+	jc_text_area->offset_by_text_size_y = -1.0;
 
 	jc_text_area->offset_border[BorderSide::LEFT] = _parent_group->border_left + 3.0f;
 
@@ -839,7 +840,7 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	data->pointer_to_text_area = jc_text_area;
 	data->stored_text = _text;
 
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 
 
@@ -881,17 +882,17 @@ EntityButton* EntityButton::create_named_color_button
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
-	*jc_text_area->offset_by_gabarite_size_x = 0.0;
-	*jc_text_area->offset_by_text_size_x = 0.0;
+	jc_text_area->offset_by_gabarite_size_x = 0.0;
+	jc_text_area->offset_by_text_size_x = 0.0;
 
-	*jc_text_area->offset_by_gabarite_size_y = 1.0;
-	*jc_text_area->offset_by_text_size_y = -1.0;
+	jc_text_area->offset_by_gabarite_size_y = 1.0;
+	jc_text_area->offset_by_text_size_y = -1.0;
 
 	jc_text_area->offset_border[BorderSide::LEFT] = _parent_group->border_left;
 
 	jc_text_area->change_text(_text);
 
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 
 	jc_button->main_text_area = jc_text_area;
@@ -959,10 +960,10 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 	
 	ETextArea* jc_text_area = ETextArea::create_centered_to_right_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "1.0");
 	jc_text_area->offset_border[BorderSide::RIGHT] = 6.0f;
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 
 	//jc_text_area->change_text("123\\n456");
-	//*jc_text_area->stored_text = "123\\n456";
+	//jc_text_area->stored_text = "123\\n456";
 	//jc_text_area->generate_rows();
 	//jc_text_area->generate_text();
 
@@ -1033,10 +1034,10 @@ EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _re
 
 	//ETextArea* jc_text_area = ETextArea::create_centered_to_right_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "1.0");
 	//jc_text_area->offset_border[BorderSide::RIGHT] = 6.0f;
-	//*jc_text_area->can_be_edited = false;
+	//jc_text_area->can_be_edited = false;
 
 	//jc_text_area->change_text("123\\n456");
-	//*jc_text_area->stored_text = "123\\n456";
+	//jc_text_area->stored_text = "123\\n456";
 	//jc_text_area->generate_rows();
 	//jc_text_area->generate_text();
 
@@ -1064,7 +1065,7 @@ void EntityButton::make_default_button_with_unedible_text(ERegionGabarite* _regi
 
 	jc_text_area->change_text(_text);
 
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
 
 	main_text_area = jc_text_area;
@@ -1087,7 +1088,7 @@ void EntityButton::make_default_button_with_edible_text(ERegionGabarite* _region
 
 	jc_text_area->change_text(_text);
 
-	*jc_text_area->can_be_edited = true;
+	jc_text_area->can_be_edited = true;
 	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
 
 	main_text_area = jc_text_area;
@@ -1204,7 +1205,7 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 
 	jc_text_area->change_text(_text);
 
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
 }
 
@@ -1265,7 +1266,7 @@ void EntityButtonVariantRouter::make_default_router_variant_button(ERegionGabari
 	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(this), EFont::font_list[0], "|?|");
 	pointer_to_text_area = jc_text_area;
 
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
 }
 
@@ -1309,8 +1310,8 @@ void EntityButton::add_description(std::string _text)
 
 	jc_text->offset_border[BorderSide::LEFT] = 5.0f;
 	jc_text->offset_border[BorderSide::RIGHT] = 5.0f;
-	*jc_text->offset_by_gabarite_size_x = 0.00f;
-	*jc_text->offset_by_text_size_x = 0.00f;
+	jc_text->offset_by_gabarite_size_x = 0.00f;
+	jc_text->offset_by_text_size_x = 0.00f;
 	jc_text->change_text(_text);
 
 	jc_text->generate_rows();

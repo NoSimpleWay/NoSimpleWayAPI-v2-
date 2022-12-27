@@ -202,10 +202,22 @@ int main()
 
 		if (!EInputCore::MOUSE_BUTTON_LEFT)
 		{
-			EButtonGroup::focused_button_group			= nullptr;
-			EButtonGroup::catched_group_for_translation = nullptr;
-			EClickableArea::active_clickable_region		= nullptr;
+			EButtonGroup::focused_button_group							= nullptr;
+			EButtonGroup::focused_button_group_mouse_unpressed			= nullptr;
+			EButtonGroup::catched_group_for_translation					= nullptr;
+			EClickableArea::active_clickable_region						= nullptr;
+			EButtonGroup::vector_moving_group							= nullptr;
 		}
+
+		//if (EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
+		//{
+		//	for (EButtonGroup* group : EButtonGroup::selected_groups)
+		//	{
+		//		group->is_selected = false;
+		//	}
+
+		//	EButtonGroup::selected_groups.clear();
+		//}
 
 		if (EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
 		{

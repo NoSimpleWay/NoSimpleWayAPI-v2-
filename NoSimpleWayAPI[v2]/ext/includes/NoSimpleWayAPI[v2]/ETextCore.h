@@ -179,29 +179,30 @@ public:
 	ETextArea(EClickableArea* _region, EFont* _font, std::string _text);
 	~ETextArea();
 
-	bool* error = new bool(false);
+	//bool* error = new bool(false);
 
 	Helper::HSVRGBAColor color;
 	Helper::HSVRGBAColor stored_color;
 
-	unsigned int* selected_color_table = new unsigned int(TextColorArray::FREE);
-	float* font_scale = new float(1.0f);
+	//unsigned int* selected_color_table = new unsigned int(TextColorArray::FREE);
+	float font_scale = 1.0f;
 	EFont* font = nullptr;
 
-	float* down_offset = new float(20.0f);
+	float down_offset = 20.0f;
 
 	ERegionGabarite* region_gabarite;
 
 	std::string			original_text = "";
-	std::string*		stored_text = new std::string("");
+	std::string			stored_text = "";
+
 	ELocalisationText	localisation_text;
-	ELocalisationText*	gray_text;
+	ELocalisationText	gray_text;
 	bool				indicate_gray_text = false;
 
 	std::vector<std::string*> row;
-	int* row_count = new int(0);
+	int row_count =  0;
 
-	bool* translate_region_gabarite = new bool(false);
+	bool translate_region_gabarite =  false;
 
 	void change_text(std::string _text);
 	void generate_rows();
@@ -214,7 +215,7 @@ public:
 
 	void translate(float _x, float _y, float _z, bool _translate_local_coordinate);
 
-	float* offset_border = new float[BorderSide::_LAST_ELEMENT] {0.0f};
+	float offset_border[BorderSide::_LAST_ELEMENT] {0.0f};
 	
 	EClickableArea* parent_clickable_region;
 	EntityButton* parent_entity;
@@ -224,11 +225,11 @@ public:
 
 
 	//aligns
-	float* offset_by_gabarite_size_x = new float(0.5f);
-	float* offset_by_gabarite_size_y = new float(0.0f);
-
-	float* offset_by_text_size_x = new float(-0.5f);
-	float* offset_by_text_size_y = new float(0.0f);
+	float offset_by_gabarite_size_x = 0.5f;
+	float offset_by_gabarite_size_y = 0.0f;
+		
+	float offset_by_text_size_x = -0.5f;
+	float offset_by_text_size_y = 0.0f;
 	//
 	bool outclick_protection = false;
 
@@ -240,23 +241,23 @@ public:
 	void text_area_set_active_and_select_glyph();
 
 
-	bool* can_be_edited = new bool(true);
+	bool can_be_edited = true;
 
 	ESpriteLayer* sprite_layer;
 	///
 	std::vector<EFontGlyph*> font_glyph_list;
 
-	int* selected_glyph_position = new int(0);
-	bool* flash_line_active = new bool(false);
-	float* flash_line_cooldown = new float(0.0f);
+	int selected_glyph_position = (0);
+	bool flash_line_active = false;
+	float flash_line_cooldown = 0.0f;
 
 
 	//bool* selected_left_side = new bool(false);
-	float* jump_cooldown = new float(0.0f);
+	float jump_cooldown = 0.0f;
 
-	bool* text_area_active = new bool(false);
+	bool text_area_active = false;
 
-	float* _unused_border_offset = new float(5.0f);
+	float _unused_border_offset = 5.0f;
 
 	static void set_region(ETextArea* _text_area, ERegionGabarite* _region_gabarite);
 	static ETextArea* create_base_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);

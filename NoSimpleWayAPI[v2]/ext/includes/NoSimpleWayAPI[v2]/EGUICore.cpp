@@ -6,17 +6,30 @@
 
 std::vector<EWindow*> EWindow::window_list;
 
-EButtonGroup*					EButtonGroup::focused_button_group = nullptr;
-EButtonGroup*					EButtonGroup::catched_group_for_translation = nullptr;
+EButtonGroup*					EButtonGroup::focused_button_group					= nullptr;
+EButtonGroup*					EButtonGroup::focused_button_group_for_select		= nullptr;
+EButtonGroup*					EButtonGroup::focused_button_group_mouse_unpressed	= nullptr;
+EButtonGroup*					EButtonGroup::catched_group_for_translation			= nullptr;
+EButtonGroup*					EButtonGroup::vector_moving_group					= nullptr;
+EButtonGroup*					EButtonGroup::parent_vector_moving_group			= nullptr;
+
+
+
+EButtonGroup*					EButtonGroup::parent_for_selected_groups			= nullptr;
+EButtonGroup*					EButtonGroup::first_selected_element				= nullptr;
+EButtonGroup*					EButtonGroup::last_selected_element					= nullptr;
+std::vector<EButtonGroup*>		EButtonGroup::selected_groups;
+
+
 
 //EButtonGroup* EButtonGroup::focused_button_group;
-EButtonGroup*					EButtonGroup::focused_button_group_with_slider = nullptr;
+EButtonGroup*					EButtonGroup::focused_button_group_with_slider	= nullptr;
 
 
-EButtonGroup*					EButtonGroup::color_editor_group = nullptr;
-EButtonGroup*					EButtonGroup::add_content_to_filter_block_group = nullptr;
-EButtonGroup*					EButtonGroup::header_line = nullptr;
-EButtonGroup*					EButtonGroup::existing_loot_filter_list = nullptr;
+EButtonGroup*					EButtonGroup::color_editor_group				= nullptr;
+EButtonGroup*					EButtonGroup::add_content_to_filter_block_group	= nullptr;
+EButtonGroup*					EButtonGroup::header_line						= nullptr;
+EButtonGroup*					EButtonGroup::existing_loot_filter_list			= nullptr;
 
 EButtonGroupSoundList*			EButtonGroup::sound_list_group = nullptr;
 
@@ -37,7 +50,7 @@ void EWindow::update_additional(float _d)
 
 void EWindow::GUI_update_default(float _d)
 {
-
+	//DELETE
 	for (int i = 0; i < button_group_list.size(); i++)
 	if ((button_group_list[i] != nullptr) && (button_group_list[i]->need_remove))
 	{
@@ -56,6 +69,79 @@ void EWindow::GUI_update_default(float _d)
 	}
 
 
+	int catched_group_id	= -1;
+
+
+
+	//MOVING
+	if ((EButtonGroup::parent_vector_moving_group != nullptr) && (EButtonGroup::vector_moving_group != nullptr))
+	{
+		//MOUSE CATCHED ID
+		for (int i = 0; i < EButtonGroup::parent_vector_moving_group->group_list.size(); i++)
+		if
+		(
+				(EButtonGroup::catched_by_mouse(EButtonGroup::parent_vector_moving_group->group_list[i]))
+		)
+		{
+			catched_group_id = i;
+			break;
+		}
+		
+
+		if (EButtonGroup::selected_groups.empty())
+		{	
+			int moved_group_id		= -1;
+
+			//VECTOR MOVING ID
+			for (int i = 0; i < EButtonGroup::parent_vector_moving_group->group_list.size(); i++)
+				if (EButtonGroup::parent_vector_moving_group->group_list[i] == EButtonGroup::vector_moving_group)
+				{
+					moved_group_id = i;
+					break;
+				}
+
+
+
+			if ((moved_group_id != -1) && (catched_group_id != -1) && (catched_group_id != moved_group_id))
+			{
+
+
+				EButtonGroup::parent_vector_moving_group->group_list.erase(EButtonGroup::parent_vector_moving_group->group_list.begin() + moved_group_id);
+				EButtonGroup::parent_vector_moving_group->group_list.insert(EButtonGroup::parent_vector_moving_group->group_list.begin() + catched_group_id, EButtonGroup::vector_moving_group);
+
+				EButtonGroup::refresh_button_group(EButtonGroup::parent_vector_moving_group);
+			}
+		}
+		else
+		{
+
+
+			if (catched_group_id <= EButtonGroup::parent_vector_moving_group->group_list.size() - EButtonGroup::selected_groups.size())
+			{
+				std::vector<EButtonGroup*>::iterator start_erasing = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), EButtonGroup::selected_groups.front());
+				std::vector<EButtonGroup*>::iterator end_erasing = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), EButtonGroup::selected_groups.back());
+
+				//if ((first_moved_group_id != -1) && (last_moved_group_id != -1) && (catched_group_id != -1))
+				{
+
+					EButtonGroup::parent_vector_moving_group->group_list.erase(start_erasing, end_erasing + 1);
+					EButtonGroup::parent_vector_moving_group->group_list.insert(EButtonGroup::parent_vector_moving_group->group_list.begin() + catched_group_id, EButtonGroup::selected_groups.begin(), EButtonGroup::selected_groups.end());
+					//for (int i = EButtonGroup::selected_groups.size() - 1; i >= 0; i--)
+					//{
+					//	EButtonGroup::parent_vector_moving_group->group_list.insert(EButtonGroup::parent_vector_moving_group->group_list.begin() + catched_group_id, EButtonGroup::selected_groups[i]);
+					//}
+					//EButtonGroup::parent_vector_moving_group->align_groups();
+
+					//for (EButtonGroup* group : EButtonGroup::selected_groups)
+					//{
+					//	EButtonGroup::change_group(group);
+					//}
+					EButtonGroup::change_group(EButtonGroup::parent_vector_moving_group);
+				}
+			}
+		}
+	}
+
 
 	for (EButtonGroup* b_group : button_group_list)
 		if
@@ -73,6 +159,82 @@ void EWindow::GUI_update_default(float _d)
 		{
 			EButtonGroup::get_last_focused_group(b_group);
 		}
+
+
+	if (EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
+	{
+		for (EButtonGroup* group : EButtonGroup::selected_groups)
+		{
+			group->is_selected = false;
+		}
+
+		EButtonGroup::selected_groups.clear();
+
+		EButtonGroup::first_selected_element		= nullptr;
+		EButtonGroup::last_selected_element			= nullptr;
+
+		EButtonGroup::parent_for_selected_groups	= nullptr;
+
+	}
+
+	//SELECT
+	if
+	(
+		(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+		&&
+		(EButtonGroup::focused_button_group_for_select != nullptr)
+	)
+	{
+		if (EButtonGroup::first_selected_element == nullptr)
+		{
+			EButtonGroup::first_selected_element		= EButtonGroup::focused_button_group_for_select;
+			EButtonGroup::last_selected_element			= EButtonGroup::focused_button_group_for_select;
+
+			EButtonGroup::parent_for_selected_groups	= EButtonGroup::focused_button_group_for_select->parent_group;
+		}
+		else
+		{
+			EButtonGroup::last_selected_element			= EButtonGroup::focused_button_group_for_select;
+		}
+
+		for (EButtonGroup* group : EButtonGroup::selected_groups)
+		{
+			group->is_selected = false;
+		}
+
+		EButtonGroup::selected_groups.clear();
+
+		if ((EButtonGroup::first_selected_element != EButtonGroup::last_selected_element) && (EButtonGroup::parent_for_selected_groups != nullptr))
+		{
+
+
+			int first_id = -1;
+			int last_id = -1;
+
+			for (int i = 0; i < EButtonGroup::parent_for_selected_groups->group_list.size(); i++)
+			{
+				if (EButtonGroup::parent_for_selected_groups->group_list[i] == EButtonGroup::first_selected_element) { first_id = i; break; }
+			}
+
+			for (int i = 0; i < EButtonGroup::parent_for_selected_groups->group_list.size(); i++)
+			{
+				if (EButtonGroup::parent_for_selected_groups->group_list[i] == EButtonGroup::last_selected_element) { last_id = i; break; }
+			}
+
+			if ((first_id != -1) && (last_id != -1))
+			{
+				int first_element	= min(first_id, last_id);
+				int last_element	= max(first_id, last_id);
+
+				for (int i = first_element; i <= last_element; i++)
+				{
+					EButtonGroup::parent_for_selected_groups->group_list[i]->is_selected = true;
+					EButtonGroup::selected_groups.push_back(EButtonGroup::parent_for_selected_groups->group_list[i]);
+				}
+			}
+		}
+	}
+
 
 	if ((EButtonGroup::focused_button_group != nullptr) && (!EInputCore::MOUSE_BUTTON_LEFT))
 	{
@@ -143,14 +305,13 @@ void EWindow::GUI_draw_default(float _d)
 
 	for (EButtonGroup* b_group : button_group_list)
 		if
-			(
-				(b_group != nullptr)
-				&&
-				(b_group->is_active)
-				&&
-				(b_group->can_see_this_group())
-
-				)
+		(
+			(b_group != nullptr)
+			&&
+			(b_group->is_active)
+			&&
+			(b_group->can_see_this_group())
+		)
 		{
 			b_group->draw();
 		}
@@ -409,7 +570,7 @@ void EButtonGroup::update(float _d)
 			(root_group->can_be_moved)
 			&&
 			(
-				(EButtonGroup::focused_button_group == this)
+				(EButtonGroup::focused_button_group_mouse_unpressed == this)
 				//||
 				//(EButtonGroup::focused_button_group == root_group)
 				)
@@ -486,28 +647,16 @@ void EButtonGroup::draw()
 
 		//batcher_for_default_draw->draw_call();
 
-		glDisable(GL_SCISSOR_TEST);
-		//glDisable(GL_SCISSOR_TEST);
-		//		SHADOW		//
-		/* */if ((root_group == this) && (false))
-		/* */ {
-		/* */	NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLACK, 0.335f * 2.0f);
-		/* */	if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
-		/* */	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		/* */	(	
-		/* */			batcher_for_default_draw->vertex_buffer,
-		/* */			batcher_for_default_draw->last_vertice_buffer_index,
-		/* */			region_gabarite->world_position_x - 6.0f,
-		/* */			region_gabarite->world_position_y - 6.0f,
-		/* */			region_gabarite->size_x + 12.0f,
-		/* */			region_gabarite->size_y + 12.0f,
-		/* */			NS_DefaultGabarites::texture_gabarite_white_pixel
-		/* */	);
-		/* */
-			}
+		
 
+		//BLURED SHADOW
 		if ((have_shadow) && (root_group == this))
 		{
+
+			batcher_for_default_draw->draw_call();
+
+			glDisable(GL_SCISSOR_TEST);
+
 			NS_EGraphicCore::set_active_color(0.01f, 0.02f, 0.04f, 1.0f);
 			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 8);
 			NS_ERenderCollection::add_data_to_vertex_buffer_shade
@@ -521,12 +670,16 @@ void EButtonGroup::draw()
 				shadow_size,
 				NS_DefaultGabarites::texture_gabarite_white_pixel
 			);
+
+			batcher_for_default_draw->draw_call();
+
+			
 		}
 
 		//batcher_for_default_draw->draw_call();
-		batcher_for_default_draw->draw_call();
+		
+		//BEGIN DRAW SCISSORED ELEMENTS
 		glEnable(GL_SCISSOR_TEST);
-
 		glScissor
 		(
 			region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
@@ -542,7 +695,7 @@ void EButtonGroup::draw()
 			background_sprite_layer->transfer_vertex_buffer_to_batcher();
 		}
 
-
+		//DEBUG HIGHLIGHT - FOCUSED BUTTON GROUP
 		if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group == this))
 		{
 
@@ -568,6 +721,33 @@ void EButtonGroup::draw()
 			);
 		}
 
+		//DEBUG HIGHLIGHT - FOCUSED UNPRESSED MOUSE BUTTON GROUP
+		if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group_mouse_unpressed == this))
+		{
+
+			if (is_active)
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLUE, 0.13f);
+			}
+			else
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_RED, 0.13f);;
+			}
+
+			if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				batcher_for_default_draw->vertex_buffer,
+				batcher_for_default_draw->last_vertice_buffer_index,
+				region_gabarite->world_position_x + 0.0f,
+				region_gabarite->world_position_y + 0.0f,
+				region_gabarite->size_x - 0.0f,
+				region_gabarite->size_y - 0.0f,
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+		}
+
+		//DEBUG HIGHLIGHT - FOCUSED SLIDER GROUP
 		if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group_with_slider == this))
 		{
 			NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLUE, 0.13f);
@@ -767,7 +947,7 @@ void EButtonGroup::draw()
 						(EButtonGroup::focused_button_group == group)
 						||
 						(EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL))
-						)
+					)
 				{
 					NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_RED);
 					//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
@@ -788,6 +968,46 @@ void EButtonGroup::draw()
 					//batcher_for_default_draw->draw_call();
 				}
 		}
+
+		if (is_selected)
+		{
+
+			NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.5f);
+			//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				batcher_for_default_draw->vertex_buffer,
+				batcher_for_default_draw->last_vertice_buffer_index,
+				region_gabarite->world_position_x + 0.0f,
+				region_gabarite->world_position_y + 0.0f,
+				region_gabarite->size_x - 0.0f,
+				region_gabarite->size_y - 0.0f,
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+		}
+
+		if (EButtonGroup::vector_moving_group == this)
+		{
+
+			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
+			//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
+			NS_ERenderCollection::add_data_to_vertex_buffer_rama
+			(
+				batcher_for_default_draw->vertex_buffer,
+				batcher_for_default_draw->last_vertice_buffer_index,
+				region_gabarite->world_position_x + 0.0f,
+				region_gabarite->world_position_y + 0.0f,
+				region_gabarite->size_x - 0.0f,
+				region_gabarite->size_y - 0.0f,
+				16.0f,
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+		}
+
+
+
 
 		for (EButtonGroup* group : group_list) { group->post_draw(); }
 
@@ -2471,8 +2691,8 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 		(_group->can_be_focused)
 		&&
 		(EButtonGroup::catched_by_mouse(_group))
-		&&
-		(!EInputCore::MOUSE_BUTTON_LEFT)
+		//&&
+		
 		//&&
 		//(!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	)
@@ -2480,6 +2700,16 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 
 		//std::cout << "Focus:" << _group << std::endl;
 		focused_button_group = _group;
+
+		if (!EInputCore::MOUSE_BUTTON_LEFT)
+		{
+			focused_button_group_mouse_unpressed = _group;
+		}
+
+		if (_group->focusable_for_select)
+		{
+			EButtonGroup::focused_button_group_for_select = _group;
+		}
 
 		if
 		(
@@ -2721,7 +2951,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	jc_button->make_as_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_unbing_color);
 
 	ETextArea* jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Отвязать от шаблона");
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 	control_button_segment->button_list.push_back(jc_button);
 
@@ -2730,7 +2960,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	jc_button->make_as_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_create_new_color);
 
 	jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Создать шаблон цвета");
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 	control_button_segment->button_list.push_back(jc_button);
 

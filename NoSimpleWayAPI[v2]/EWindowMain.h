@@ -65,8 +65,11 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_minimap_shape_upside_down_house;
 
 	extern ETextureGabarite* texture_button_plus;
+
 	extern ETextureGabarite* texture_button_move_up;
 	extern ETextureGabarite* texture_button_move_down;
+	extern ETextureGabarite* texture_button_move;
+
 	extern ETextureGabarite* texture_button_remove_filter_block;
 
 	extern ETextureGabarite* texture_ray;
@@ -392,8 +395,10 @@ namespace EDataActionCollection
 	void generate_filter_lines_from_text(std::string& full_text);
 
 	void action_remove_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
+
 	void action_move_filter_block_up(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_move_filter_block_down(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_move_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_delete_listed_segment(Entity* _entity, ECustomData* _custom_data, float _d);
 

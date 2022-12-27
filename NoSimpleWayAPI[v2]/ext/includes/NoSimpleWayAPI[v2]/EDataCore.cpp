@@ -158,12 +158,16 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
 				||
 				(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
+				||
+				(EButtonGroup::parent_vector_moving_group != nullptr)
 			)
 			&&
 			(
 				(*_custom_data->clickable_area_list.at(0)->catched_body)
 				||
 				(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
+				||
+				(EButtonGroup::parent_vector_moving_group != nullptr)
 			)
 			&&
 			(*data_bar->max_value > 0.0f)
@@ -199,9 +203,9 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 				(entity_button->parent_button_group->region_gabarite->size_y > 10.0f)
 			)
 		{
-			_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
+				_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 				+=
-				(EInputCore::scroll_direction * EInputCore::scroll_direction * EInputCore::scroll_direction * 2)
+				(pow(EInputCore::scroll_direction, 5.0) * 2.0f)
 				*
 				(entity_button->parent_button_group->region_gabarite->size_y / *data_bar->max_value)
 				*
@@ -222,14 +226,14 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 					(EInputCore::scroll_direction != 0)
 					&&
 					(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
-					)
 				)
+			)
 		{
-			_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
+				_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 				=
 				max(entity_button->parent_button_group->border_bottom, _custom_data->clickable_area_list.at(0)->region_gabarite->offset_y);
 
-			_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
+				_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
 				=
 				min
 				(
@@ -1983,21 +1987,21 @@ void EClickableArea::update(float _d)
 
 	//left click
 	for (data_action_pointer dap : actions_on_click_list)
-		if
-			(
+	if
+	(
 				(dap != nullptr)
 				&&
 				(parent_entity != nullptr)
 				&&
-				(EButtonGroup::focused_button_group == ((EntityButton*)parent_entity)->parent_button_group)
+				(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
 				&&
 				(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
 				&&
 				(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
-				)
-		{
-			dap(parent_entity, parent_custom_data, _d);
-		}
+	)
+	{
+		dap(parent_entity, parent_custom_data, _d);
+	}
 
 	//right click
 	for (data_action_pointer dap : actions_on_right_click_list)
@@ -2007,7 +2011,7 @@ void EClickableArea::update(float _d)
 				&&
 				(parent_entity != nullptr)
 				&&
-				(EButtonGroup::focused_button_group == ((EntityButton*)parent_entity)->parent_button_group)
+				(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
 				&&
 				(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
 				&&
@@ -2018,19 +2022,19 @@ void EClickableArea::update(float _d)
 			dap(parent_entity, parent_custom_data, _d);
 		}
 
-	if
-		(
-			(parent_entity != nullptr)
-			&&
-			(EButtonGroup::focused_button_group == ((EntityButton*)parent_entity)->parent_button_group)
-			&&
-			(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
-			&&
-			(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_RIGHT))
-			)
-	{
-		EInputCore::logger_param("action on right click size", actions_on_right_click_list.size());
-	}
+	//if
+	//	(
+	//		(parent_entity != nullptr)
+	//		&&
+	//		(EButtonGroup::focused_button_group == ((EntityButton*)parent_entity)->parent_button_group)
+	//		&&
+	//		(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+	//		&&
+	//		(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_RIGHT))
+	//		)
+	//{
+	//	//EInputCore::logger_param("action on right click size", actions_on_right_click_list.size());
+	//}
 
 
 	if (text_area != nullptr)

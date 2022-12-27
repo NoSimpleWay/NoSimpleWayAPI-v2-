@@ -232,6 +232,8 @@ public:
 	bool debug_translation = false;
 	bool can_be_moved = true;
 	bool have_shadow = true;
+	bool is_selected = false;
+	bool focusable_for_select = false;
 
 	float shadow_size = 32.0f;
 
@@ -258,8 +260,20 @@ public:
 
 	//int* order_in_vector = new int(0);
 	static EButtonGroup* focused_button_group;
+	static EButtonGroup* focused_button_group_for_select;
+	static EButtonGroup* focused_button_group_mouse_unpressed;
 	static EButtonGroup* focused_button_group_with_slider;
 	static EButtonGroup* catched_group_for_translation;
+
+	//MOVE GROUPS ORDER IN VECTOR
+	static EButtonGroup* vector_moving_group;
+	static EButtonGroup* parent_vector_moving_group;
+
+	//SELECTED GROUPS
+	static EButtonGroup* parent_for_selected_groups;
+	static EButtonGroup* first_selected_element;
+	static EButtonGroup* last_selected_element;
+	static std::vector<EButtonGroup*> selected_groups;
 
 	bool need_remove = false;
 

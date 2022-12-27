@@ -95,8 +95,11 @@ namespace NS_DefaultGabarites
 	ETextureGabarite* texture_minimap_shape_upside_down_house;
 
 	ETextureGabarite* texture_button_plus;
+
 	ETextureGabarite* texture_button_move_up;
 	ETextureGabarite* texture_button_move_down;
+	ETextureGabarite* texture_button_move;
+
 	ETextureGabarite* texture_button_remove_filter_block;
 
 	ETextureGabarite* texture_ray;
@@ -743,6 +746,12 @@ void EDataActionCollection::action_move_filter_block_down(Entity* _entity, ECust
 	}
 }
 
+void EDataActionCollection::action_move_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EButtonGroup::vector_moving_group			= static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block;
+	EButtonGroup::parent_vector_moving_group	= static_cast<EntityButtonForFilterBlock*>(_entity)->parent_button_group->root_group;
+}
+
 void EDataActionCollection::action_delete_listed_segment(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	static_cast<EntityButtonForListedSegment*>(_entity)->listed_group->need_remove = true;
@@ -937,8 +946,11 @@ EWindowMain::EWindowMain()
 	NS_DefaultGabarites::texture_show_hide_visual_editor_deactivate		= NS_EGraphicCore::load_from_textures_folder("buttons/button_show_hide_visual_editor_deactivate");
 
 	NS_DefaultGabarites::texture_button_plus							= NS_EGraphicCore::load_from_textures_folder("buttons/button_plus");
+
 	NS_DefaultGabarites::texture_button_move_up							= NS_EGraphicCore::load_from_textures_folder("buttons/button_move_up");
 	NS_DefaultGabarites::texture_button_move_down						= NS_EGraphicCore::load_from_textures_folder("buttons/button_move_down");
+	NS_DefaultGabarites::texture_button_move							= NS_EGraphicCore::load_from_textures_folder("buttons/button_move");
+
 	NS_DefaultGabarites::texture_button_remove_filter_block				= NS_EGraphicCore::load_from_textures_folder("buttons/button_remove_filter_block");
 
 	NS_DefaultGabarites::texture_ray									= NS_EGraphicCore::load_from_textures_folder("ray");
@@ -1933,16 +1945,16 @@ EWindowMain::EWindowMain()
 		search_button = new EntityButton();
 		search_button->make_default_button_with_edible_text
 		(
-			new ERegionGabarite(256.0f, 30.0f),
+			new ERegionGabarite(300.0f, 30.0f),
 			main_button_group,
 			nullptr,
 			""
 		);
 		search_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_search_filter_block_text);
 
-		search_button->main_text_area->gray_text = new ELocalisationText();
-		search_button->main_text_area->gray_text->localisations[NSW_localisation_EN] = "Search...";
-		search_button->main_text_area->gray_text->localisations[NSW_localisation_RU] = "Поиск...";
+		search_button->main_text_area->gray_text =  ELocalisationText();
+		search_button->main_text_area->gray_text.localisations[NSW_localisation_EN] = "Search...";
+		search_button->main_text_area->gray_text.localisations[NSW_localisation_RU] = "Поиск...";
 		//search_button->main_text_area->change_text("");
 
 		main_button_group->button_list.push_back(search_button);
@@ -2208,7 +2220,7 @@ EWindowMain::EWindowMain()
 
 				//text area
 				jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Select <" + style->localisation_text.localisations[NSW_localisation_EN] + ">");
-				*jc_text_area->can_be_edited = false;
+				jc_text_area->can_be_edited = false;
 				Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 
 
@@ -2265,11 +2277,11 @@ EWindowMain::EWindowMain()
 			nullptr,
 			""
 		);
-		ELocalisationText*
-		ltext = new ELocalisationText();
-		ltext->base_name = "Type new loot filter name";
-		ltext->localisations[NSW_localisation_EN] = "Type new loot filter name";
-		ltext->localisations[NSW_localisation_RU] = "Напишите название лут-фильтра";
+
+		ELocalisationText ltext;
+		ltext.base_name = "Type new loot filter name";
+		ltext.localisations[NSW_localisation_EN] = "Type new loot filter name";
+		ltext.localisations[NSW_localisation_RU] = "Напишите название лут-фильтра";
 
 		button_input_field->main_text_area->gray_text = ltext;
 
@@ -2435,9 +2447,9 @@ EWindowMain::EWindowMain()
 
 		jc_data_container_for_search_group->filter_text_area = jc_button->main_text_area;
 
-		jc_button->main_text_area->gray_text = new ELocalisationText();
-		jc_button->main_text_area->gray_text->localisations[NSW_localisation_EN] = "Type search text...";
-		jc_button->main_text_area->gray_text->localisations[NSW_localisation_RU] = "Напишите текст поиска...";
+		jc_button->main_text_area->gray_text = ELocalisationText();
+		jc_button->main_text_area->gray_text.localisations[NSW_localisation_EN] = "Type search text...";
+		jc_button->main_text_area->gray_text.localisations[NSW_localisation_RU] = "Напишите текст поиска...";
 
 		jc_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_search_data_entity_text);
 		
@@ -2853,9 +2865,9 @@ EWindowMain::EWindowMain()
 			""
 		);
 
-		button_multisearch->main_text_area->gray_text = new ELocalisationText();
-		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_EN] = "Type attribute name...";
-		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_RU] = "Напишите название атрибута...";
+		button_multisearch->main_text_area->gray_text = ELocalisationText();
+		button_multisearch->main_text_area->gray_text.localisations[NSW_localisation_EN] = "Type attribute name...";
+		button_multisearch->main_text_area->gray_text.localisations[NSW_localisation_RU] = "Напишите название атрибута...";
 
 		//add pointer to clickable are in "add content to filter block group"
 		content_group_data_container->typing_text_area = EntityButton::get_last_text_area(button_multisearch);
@@ -3233,9 +3245,9 @@ EWindowMain::EWindowMain()
 			""
 		);
 
-		button_multisearch->main_text_area->gray_text = new ELocalisationText();
-		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_EN] = "Type sound name...";
-		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_RU] = "Напишите название звука...";
+		button_multisearch->main_text_area->gray_text = ELocalisationText();
+		button_multisearch->main_text_area->gray_text.localisations[NSW_localisation_EN] = "Type sound name...";
+		button_multisearch->main_text_area->gray_text.localisations[NSW_localisation_RU] = "Напишите название звука...";
 
 		button_multisearch->target_group_list.push_back(sound_list_part);
 		EntityButton::get_last_text_area(button_multisearch)->action_on_change_text.push_back(&EDataActionCollection::action_type_text_multiblock_searcher);
@@ -3318,9 +3330,9 @@ EWindowMain::EWindowMain()
 			""
 		);
 
-		button_multisearch->main_text_area->gray_text = new ELocalisationText();
-		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_EN] = "Type loot-filter name...";
-		button_multisearch->main_text_area->gray_text->localisations[NSW_localisation_RU] = "Напишите название лут-фильтра...";
+		button_multisearch->main_text_area->gray_text = ELocalisationText();
+		button_multisearch->main_text_area->gray_text.localisations[NSW_localisation_EN] = "Type loot-filter name...";
+		button_multisearch->main_text_area->gray_text.localisations[NSW_localisation_RU] = "Напишите название лут-фильтра...";
 
 		button_multisearch->target_group_list.push_back(loot_filter_list_part);
 		EntityButton::get_last_text_area(button_multisearch)->action_on_change_text.push_back(&EDataActionCollection::action_type_text_multiblock_searcher);
@@ -4528,6 +4540,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	whole_filter_block_group->init_button_group(EGUIStyle::active_style, true, true, false);
 	whole_filter_block_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	whole_filter_block_group->debug_name = "Whole filter block";
+	whole_filter_block_group->focusable_for_select = true;
 
 	if (_specific_position < 0)
 	{
@@ -4675,7 +4688,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], "|?|");
 	button_variant_router->pointer_to_text_area = jc_text_area;
 
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(button_variant_router, jc_text_area);
 
 
@@ -4816,7 +4829,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], "|?|");
 		button_variant_router->pointer_to_text_area = jc_text_area;
 
-		*jc_text_area->can_be_edited = false;
+		jc_text_area->can_be_edited = false;
 		Entity::add_text_area_to_last_clickable_region(button_variant_router, jc_text_area);
 
 
@@ -5037,7 +5050,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
 	button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
 
 	//control_part_mid_show_hide_cosmetic->button_list.push_back(button_variant_FB_router);
@@ -5130,35 +5143,53 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		bottom_section_for_block_control->button_list.push_back(jc_button);
 	////////////////
 	
-	///////////		BUTTON MOVE DOWN		///////////
+		if (false)
+		{
+			///////////		BUTTON MOVE DOWN		///////////
+			EntityButtonForFilterBlock*
+				move_down_button = new EntityButtonForFilterBlock();
+			move_down_button->make_as_default_button_with_full_icon
+			(
+				new ERegionGabarite(40.0f, 15.0f),
+				bottom_section_for_block_control,
+				&EDataActionCollection::action_move_filter_block_down,
+				NS_DefaultGabarites::texture_button_move_down
+			);
+			move_down_button->parent_filter_block = whole_filter_block_group;
+
+			bottom_section_for_block_control->button_list.push_back(move_down_button);
+			////////////////
+
+			///////////		BUTTON MOVE UP		///////////
+			EntityButtonForFilterBlock*
+				move_up_button = new EntityButtonForFilterBlock();
+			move_up_button->make_as_default_button_with_full_icon
+			(
+				new ERegionGabarite(40.0f, 15.0f),
+				bottom_section_for_block_control,
+				&EDataActionCollection::action_move_filter_block_up,
+				NS_DefaultGabarites::texture_button_move_up
+			);
+			move_up_button->parent_filter_block = whole_filter_block_group;
+
+			bottom_section_for_block_control->button_list.push_back(move_up_button);
+			////////////////
+		}
+
+		///////////		BUTTON MOVE		///////////
 		EntityButtonForFilterBlock*
-		move_down_button = new EntityButtonForFilterBlock();
-		move_down_button->make_as_default_button_with_full_icon
+		move_button = new EntityButtonForFilterBlock();
+		move_button->make_as_default_button_with_full_icon
 		(
 			new ERegionGabarite(40.0f, 15.0f),
 			bottom_section_for_block_control,
-			&EDataActionCollection::action_move_filter_block_down,
-			NS_DefaultGabarites::texture_button_move_down
+			&EDataActionCollection::action_move_filter_block,
+			NS_DefaultGabarites::texture_button_move
 		);
-		move_down_button->parent_filter_block = whole_filter_block_group;
+		move_button->parent_filter_block = whole_filter_block_group;
 
-		bottom_section_for_block_control->button_list.push_back(move_down_button);
+		bottom_section_for_block_control->button_list.push_back(move_button);
 		////////////////
-
-	///////////		BUTTON MOVE UP		///////////
-		EntityButtonForFilterBlock*
-		move_up_button = new EntityButtonForFilterBlock();
-		move_up_button->make_as_default_button_with_full_icon
-		(
-			new ERegionGabarite(40.0f, 15.0f),
-			bottom_section_for_block_control,
-			&EDataActionCollection::action_move_filter_block_up,
-			NS_DefaultGabarites::texture_button_move_up
-		);
-		move_up_button->parent_filter_block = whole_filter_block_group;
-
-		bottom_section_for_block_control->button_list.push_back(move_up_button);
-	////////////////
 
 
 
@@ -5379,7 +5410,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
 		button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
-		*jc_text_area->can_be_edited = false;
+		jc_text_area->can_be_edited = false;
 		Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
 
 		button_variant_FB_router->suppressor = &whole_filter_block_group->custom_sound_suppressor_bool;
@@ -5521,7 +5552,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
 		button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
-		*jc_text_area->can_be_edited = false;
+		jc_text_area->can_be_edited = false;
 		Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
 
 		button_variant_FB_router->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
@@ -5587,7 +5618,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
 	button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
 
 	//button_variant_FB_router->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
@@ -5710,7 +5741,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
 		button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
-		*jc_text_area->can_be_edited = false;
+		jc_text_area->can_be_edited = false;
 		Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
 
 		button_variant_FB_router->suppressor = &whole_filter_block_group->minimap_icon_color_suppressor_bool;
@@ -5926,7 +5957,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
 		button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
-		*jc_text_area->can_be_edited = false;
+		jc_text_area->can_be_edited = false;
 		Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
 
 		button_variant_FB_router->suppressor = &whole_filter_block_group->minimap_icon_color_suppressor_bool;
@@ -6006,7 +6037,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], "|?|");
 		button_variant_router->pointer_to_text_area = jc_text_area;
 
-		*jc_text_area->can_be_edited = false;
+		jc_text_area->can_be_edited = false;
 		Entity::add_text_area_to_last_clickable_region(button_variant_router, jc_text_area);
 
 		button_variant_router->suppressor = &whole_filter_block_group->minimap_icon_color_suppressor_bool;
@@ -6400,7 +6431,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
 	button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
 
 	button_variant_FB_router->suppressor = &whole_filter_block_group->ray_suppressor;
@@ -6621,7 +6652,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
 	button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
-	*jc_text_area->can_be_edited = false;
+	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
 
 	button_variant_FB_router->suppressor = &whole_filter_block_group->ray_suppressor;
@@ -7867,9 +7898,9 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 					text
 				);
 
-				jc_button->main_text_area->gray_text = new ELocalisationText();
-				jc_button->main_text_area->gray_text->localisations[NSW_localisation_EN] = "value";
-				jc_button->main_text_area->gray_text->localisations[NSW_localisation_RU] = "значение";
+				jc_button->main_text_area->gray_text = ELocalisationText();
+				jc_button->main_text_area->gray_text.localisations[NSW_localisation_EN] = "value";
+				jc_button->main_text_area->gray_text.localisations[NSW_localisation_RU] = "значение";
 
 				jc_button->parent_filter_block = _target_filter_block;
 				jc_button->used_filter_block_attribute = _filter_block_attribute;
@@ -8515,7 +8546,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, FilterB
 		ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
 		button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
-		*jc_text_area->can_be_edited = false;
+		jc_text_area->can_be_edited = false;
 		Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);*/
 
 		//control_part_mid_show_hide_cosmetic->button_list.push_back(button_variant_FB_router);
@@ -8579,10 +8610,9 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, FilterB
 		);
 		d_container->input_field = input_field;
 
-		ELocalisationText*
-		ltext = new ELocalisationText();
-		ltext->localisations[NSW_localisation_EN] = "condition";
-		ltext->localisations[NSW_localisation_RU] = "условие";
+		ELocalisationText ltext = ELocalisationText();
+		ltext.localisations[NSW_localisation_EN] = "condition";
+		ltext.localisations[NSW_localisation_RU] = "условие";
 
 		input_field->main_text_area->gray_text = ltext;
 
