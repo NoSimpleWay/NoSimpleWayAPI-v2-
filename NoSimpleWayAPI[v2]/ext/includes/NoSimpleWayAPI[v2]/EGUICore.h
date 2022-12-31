@@ -310,7 +310,7 @@ public:
 	void group_stretch_y();
 
 	void align_groups();
-	static void calculate_culling_lines(EButtonGroup* _group);
+	static void calculate_culling_lines(EButtonGroup* _group, bool _recursive);
 
 	void realign_all_buttons();
 

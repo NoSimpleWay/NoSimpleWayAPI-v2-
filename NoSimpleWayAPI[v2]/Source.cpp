@@ -206,7 +206,7 @@ int main()
 			EButtonGroup::focused_button_group_mouse_unpressed			= nullptr;
 			EButtonGroup::catched_group_for_translation					= nullptr;
 			EClickableArea::active_clickable_region						= nullptr;
-			EButtonGroup::vector_moving_group							= nullptr;
+			//EButtonGroup::vector_moving_group							= nullptr;
 		}
 
 		//if (EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
@@ -271,7 +271,13 @@ int main()
 
 
 		}
-		
+
+		if (!EInputCore::MOUSE_BUTTON_LEFT)
+		{
+			EButtonGroup::vector_moving_group			= nullptr;
+			EButtonGroup::parent_vector_moving_group	= nullptr;
+		}
+
 			//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
 			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
 
