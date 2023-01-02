@@ -7368,9 +7368,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	
-	[tag]"worth"		[value]"Trash"
-	
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"worth"		[value]"Common	"
 	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7413,8 +7411,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -10626,8 +10623,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -12060,7 +12056,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19309,7 +19304,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
-	[tag]"item tag"		[value]"Top tier base"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -31194,8 +31188,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
@@ -31256,7 +31249,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
 
@@ -31272,7 +31265,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
 
@@ -31318,7 +31311,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
 
@@ -31334,7 +31327,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Expensive"
+	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
 
@@ -31351,6 +31344,22 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dying Anguish"
+	[tag]"name RU"		[value]"Смертельная тоска"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
 
@@ -31382,7 +31391,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
 
@@ -31398,7 +31407,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
 
@@ -31414,7 +31423,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
 
@@ -31430,7 +31439,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
 
