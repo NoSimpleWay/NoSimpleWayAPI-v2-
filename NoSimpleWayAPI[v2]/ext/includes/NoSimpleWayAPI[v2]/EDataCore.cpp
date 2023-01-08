@@ -352,6 +352,87 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 	//_entity->generate_vertex_buffer_for_all_sprite_layers();
 }
 
+void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonVerticalSlider* slider = static_cast<EntityButtonVerticalSlider*>(_entity);
+
+	if ((EButtonGroup::focused_button_group_with_slider == slider->parent_button_group) && (EInputCore::scroll_direction != 0))
+	{
+		float scroll_speed = 3.0f;
+
+		slider->scroll_speed += pow(EInputCore::scroll_direction, 3.0) * scroll_speed / slider->max_value * -1.0f;
+	}
+
+	if
+	(
+		(
+			(EInputCore::MOUSE_BUTTON_LEFT)
+			&&
+			(EClickableArea::active_clickable_region == slider->main_clickable_area)
+		)
+		||
+		(
+			slider->scroll_speed != 0.0f
+		)
+	)
+	{
+		float multiplier = 1.0f;
+
+		
+
+		float old_value = *((float*)slider->pointer_to_target_value);
+
+		//float value = 0.0f;
+
+		//left click drag
+		if
+		(
+			(EInputCore::MOUSE_BUTTON_LEFT)
+			&&
+			(EClickableArea::active_clickable_region == slider->main_clickable_area)
+		)
+		{
+			slider->scroll_speed = 0.0f;
+			slider->current_value = (EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom - slider->button_gabarite->world_position_y) / slider->workspace_height;
+		}
+
+
+		slider->current_value += slider->scroll_speed;
+		//slider->current_value = (slider->current_value);
+		
+		if ((slider->current_value <= 0.0f) || (slider->current_value >= 1.0f)) { slider->scroll_speed = 0.0f; }
+		slider->current_value = std::clamp(slider->current_value, 0.0f, 1.0f);
+
+		if (slider->parent_button_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+		{
+			//multiplier = -1.0f;
+			*((float*)slider->pointer_to_target_value) = (1.0f - slider->current_value) * slider->max_value * -1.0f;
+		}
+		else
+		{
+			multiplier = 1.0f;
+			*((float*)slider->pointer_to_target_value) = (slider->current_value) * slider->max_value;
+		}
+		*((float*)slider->pointer_to_target_value) = round(*((float*)slider->pointer_to_target_value));
+
+		//*((float*)slider->pointer_to_target_value) = round(*((float*)slider->pointer_to_target_value));
+		
+
+		if (old_value != *((float*)slider->pointer_to_target_value))
+		{
+			float translate_value = (*((float*)slider->pointer_to_target_value) - old_value);
+		
+			slider->parent_button_group->translate_content(0.0f, round(translate_value * multiplier) , 0.0f, false);
+		}
+		
+		//EButtonGroup::change_group(slider->parent_button_group);
+	}
+
+	slider->scroll_speed *= pow(0.1f, _d);
+	if ((slider->scroll_speed * slider->scroll_speed * -slider->max_value) < 0.00005f) { slider->scroll_speed = 0.0f; }
+
+}
+
 //void EDataActionCollection::action_change_style(Entity* _entity, ECustomData* _custom_data, float _d)
 //{
 //	//cast to button entity
@@ -1045,7 +1126,7 @@ void EDataActionCollection::action_draw_crosshair_slider(Entity* _entity, ECusto
 	);
 }
 
-void EDataActionCollection::action_update_vertical_named_slider(Entity* _entity, ECustomData* _custom_data, float _d)
+void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EDataContainer_VerticalNamedSlider* data = static_cast<EDataContainer_VerticalNamedSlider*>(_custom_data->data_container);
 
@@ -1113,7 +1194,7 @@ void EDataActionCollection::action_update_vertical_named_slider(Entity* _entity,
 
 }
 
-void EDataActionCollection::action_draw_vertical_named_slider(Entity* _entity, ECustomData* _custom_data, float _d)
+void EDataActionCollection::action_draw_horizontal_named_slider(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EDataContainer_VerticalNamedSlider* data = static_cast<EDataContainer_VerticalNamedSlider*>(_custom_data->data_container);
 	EntityButton* button = static_cast<EntityButton*>(_entity);
@@ -1132,6 +1213,48 @@ void EDataActionCollection::action_draw_vertical_named_slider(Entity* _entity, E
 			data->pointer_to_bg->world_position_y,
 			data->style->round_slider->main_texture
 		);
+	}
+}
+
+void EDataActionCollection::action_draw_vertical_named_slider(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonVerticalSlider* slider = static_cast<EntityButtonVerticalSlider*>(_entity);
+
+	if
+		(
+			(slider->slider_inactive != nullptr)
+			&&
+			(slider->slider_inactive->main_texture != nullptr)
+			&&
+			(slider->slider_inactive->normal_map_texture != nullptr)
+			&&
+			(slider->slider_inactive->gloss_map_texture != nullptr)
+		)
+	{
+
+
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::pbr_batcher, 1);
+
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
+		NS_ERenderCollection::add_data_to_vertex_buffer_texture_gabarite_PBR
+		(
+			NS_EGraphicCore::pbr_batcher->vertex_buffer,
+			NS_EGraphicCore::pbr_batcher->last_vertice_buffer_index,
+
+			slider->world_position_x,
+			slider->world_position_y + slider->workspace_height * slider->current_value,
+
+			slider->slider_inactive->main_texture->size_x_in_pixels,
+			slider->slider_inactive->main_texture->size_y_in_pixels,
+
+			slider->slider_inactive->main_texture,
+			slider->slider_inactive->gloss_map_texture,
+			slider->slider_inactive->normal_map_texture
+		);
+	}
+	else
+	{
+		//EInputCore::logger_simple_error("NULL textures on slider head!");
 	}
 }
 

@@ -2347,6 +2347,11 @@ void NS_EGraphicCore::load_style_texture(EGUIStyle* _style, EBrickStyle* _brick)
 	{
 		_brick->normal_map_texture = put_texture_to_atlas("data/textures/styles/" + *_style->folder + "/" + *_brick->file_name + "[normal_map].png", default_texture_atlas);
 	}
+	else
+	{
+		_brick->normal_map_texture = NS_DefaultGabarites::texture_gabarite_normal_map_placeholder;
+		//EInputCore::logger_simple_error("data/textures/styles/" + *_style->folder + "/" + *_brick->file_name + "[normal_map].png " + "not exist");
+	}
 
 	if (std::filesystem::exists("data/textures/styles/" + *_style->folder + "/" + *_brick->file_name + "[gloss_map].png"))
 	{
@@ -2354,6 +2359,8 @@ void NS_EGraphicCore::load_style_texture(EGUIStyle* _style, EBrickStyle* _brick)
 	}
 	else
 	{
+		_brick->gloss_map_texture = NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder;
+		//EInputCore::logger_simple_error("data/textures/styles/" + *_style->folder + "/" + *_brick->file_name + "[gloss_map].png " + "not exist");
 		//EInputCore::logger_simple_error("Error! Cannot load: " + *_brick->file_name);
 	}
 }
@@ -2806,6 +2813,97 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_sprite_PBR(float* _array, u
 
 		_array[50] = _sprite->gloss_uv_start_x;
 		_array[51] = _sprite->gloss_uv_end_y;
+
+		_start_offset += 52;
+	}
+}
+
+void NS_ERenderCollection::add_data_to_vertex_buffer_texture_gabarite_PBR(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture, ETextureGabarite* _gloss, ETextureGabarite* _normal)
+{
+	{
+		//address arithmetic, get pointer to buffer array, and move to +_offset
+		_array += _start_offset;
+
+		//.#
+		//..
+		//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
+		_array[0] = _x + _w;
+		_array[1] = _y + _h;
+		_array[2] = 0.0f;
+
+		_array[3] = NS_EGraphicCore::active_color[0];
+		_array[4] = NS_EGraphicCore::active_color[1];
+		_array[5] = NS_EGraphicCore::active_color[2];
+		_array[6] = NS_EGraphicCore::active_color[3];
+
+		_array[7] = _texture->uv_end_x;
+		_array[8] = _texture->uv_end_y;
+
+		_array[9] = _normal->uv_end_x;
+		_array[10] = _normal->uv_end_y;
+
+		_array[11] = _gloss->uv_end_x;
+		_array[12] = _gloss->uv_end_y;
+
+		//..
+		//.#
+		_array[13] = _x + _w;
+		_array[14] = _y;
+		_array[15] = 0.0f;
+
+		_array[16] = NS_EGraphicCore::active_color[0];
+		_array[17] = NS_EGraphicCore::active_color[1];
+		_array[18] = NS_EGraphicCore::active_color[2];
+		_array[19] = NS_EGraphicCore::active_color[3];
+
+		_array[20] = _texture->uv_end_x;
+		_array[21] = _texture->uv_start_y;
+
+		_array[22] = _normal->uv_end_x;
+		_array[23] = _normal->uv_start_y;
+
+		_array[24] = _gloss->uv_end_x;
+		_array[25] = _gloss->uv_start_y;
+
+		//..
+		//#.
+		_array[26] = _x;
+		_array[27] = _y;
+		_array[28] = 0.0f;
+
+		_array[29] = NS_EGraphicCore::active_color[0];
+		_array[30] = NS_EGraphicCore::active_color[1];
+		_array[31] = NS_EGraphicCore::active_color[2];
+		_array[32] = NS_EGraphicCore::active_color[3];
+
+		_array[33] = _texture->uv_start_x;
+		_array[34] = _texture->uv_start_y;
+
+		_array[35] = _normal->uv_start_x;
+		_array[36] = _normal->uv_start_y;
+
+		_array[37] = _gloss->uv_start_x;
+		_array[38] = _gloss->uv_start_y;
+
+		//#.
+		//..
+		_array[39] = _x;
+		_array[40] = _y + _h;
+		_array[41] = 0.0f;
+
+		_array[42] = NS_EGraphicCore::active_color[0];
+		_array[43] = NS_EGraphicCore::active_color[1];
+		_array[44] = NS_EGraphicCore::active_color[2];
+		_array[45] = NS_EGraphicCore::active_color[3];
+
+		_array[46] = _texture->uv_start_x;
+		_array[47] = _texture->uv_end_y;
+
+		_array[48] = _normal->uv_start_x;
+		_array[49] = _normal->uv_end_y;
+
+		_array[50] = _gloss->uv_start_x;
+		_array[51] = _gloss->uv_end_y;
 
 		_start_offset += 52;
 	}
@@ -4521,7 +4619,7 @@ void ESprite::sprite_calculate_uv()
 		uv_end_y = uv_start_y + (fragment_size_y - 1.0f) / main_texture->target_atlas->get_atlas_size_y();
 	}
 
-	if (normal_texture != nullptr)
+	if ((normal_texture != nullptr) && (normal_texture != NS_DefaultGabarites::texture_gabarite_normal_map_placeholder))
 	{
 		normal_uv_start_x = normal_texture->uv_start_x + (fragment_offset_x + 0.0f) / normal_texture->target_atlas->get_atlas_size_x();
 		normal_uv_start_y = normal_texture->uv_start_y + (fragment_offset_y + 0.0f) / normal_texture->target_atlas->get_atlas_size_y();
@@ -4538,7 +4636,7 @@ void ESprite::sprite_calculate_uv()
 		normal_uv_end_y = NS_DefaultGabarites::texture_gabarite_normal_map_placeholder->uv_start_y;
 	}
 
-	if (gloss_texture != nullptr)
+	if ((gloss_texture != nullptr) && (gloss_texture != NS_DefaultGabarites::texture_gabarite_gloss_map_placeholder))
 	{
 		gloss_uv_start_x = gloss_texture->uv_start_x + (fragment_offset_x + 0.0f) / gloss_texture->target_atlas->get_atlas_size_x();
 		gloss_uv_start_y = gloss_texture->uv_start_y + (fragment_offset_y + 0.0f) / gloss_texture->target_atlas->get_atlas_size_y();

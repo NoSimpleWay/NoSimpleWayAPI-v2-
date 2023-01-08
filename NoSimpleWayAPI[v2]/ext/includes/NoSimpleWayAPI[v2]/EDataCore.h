@@ -505,6 +505,7 @@ namespace EDataActionCollection
 	void action_log_text(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_player_control(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_update_slider(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_update_vertical_slider(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void action_change_style						(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_highlight_button_if_overlap(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -530,7 +531,9 @@ namespace EDataActionCollection
 	void action_update_crosshair_slider					(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_draw_crosshair_slider					(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_update_vertical_named_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_update_horizontal_named_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
+	//void action_update_horizontal_named_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_horizontal_named_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_draw_vertical_named_slider				(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_convert_HSV_to_RGB						(Entity* _entity, ECustomData* _custom_data, float _d);

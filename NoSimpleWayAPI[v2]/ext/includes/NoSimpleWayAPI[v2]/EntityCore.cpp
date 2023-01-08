@@ -542,6 +542,7 @@ void EntityButton::add_default_custom_data(ERegionGabarite* _region_gabarite, EB
 					jc_custom_data->parent_entity	= this;
 
 					//*jc_custom_data->is_second_pass = true;
+	main_custom_data = jc_custom_data;
 	custom_data_list.push_back(jc_custom_data);
 }
 
@@ -777,8 +778,8 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	data->operable_area_size_x = _region_gabarite->size_x - _style->round_slider->main_texture->size_x_in_pixels;
 	
 
-	EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_update_vertical_named_slider);
-	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_vertical_named_slider);
+	EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_update_horizontal_named_slider);
+	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_horizontal_named_slider);
 
 	ESpriteLayer* bg_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
 	data->pointer_to_bg = bg_layer;
@@ -1569,6 +1570,73 @@ void action_change_style_button(EntityButton* _but, EGUIStyle* _style)
 	}
 }
 
+void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style)
+{
+	NS_ERenderCollection::set_brick_borders_and_subdivisions
+	(
+		*_style->slider_bg->side_size_left,
+		*_style->slider_bg->side_size_right,
+		*_style->slider_bg->side_size_bottom,
+		*_style->slider_bg->side_size_up,
+
+		*_style->slider_bg->subdivision_x,
+		*_style->slider_bg->subdivision_y
+	);
+
+	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
+	(
+		0.0f,
+		0.0f,
+		0.0f,
+		_but->parent_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
+		_but->parent_button_group->region_gabarite->size_y - _but->parent_button_group->border_bottom - _but->parent_button_group->border_up
+	);
+
+	//offset by button_group
+	float total_group_height
+		=
+		_but->parent_button_group->region_gabarite->size_y
+		-
+		_but->parent_button_group->border_bottom
+		-
+		_but->parent_button_group->border_up;
+
+
+
+
+
+
+
+	NS_ERenderCollection::temporary_sprites = false;
+	NS_ERenderCollection::generate_brick_texture
+	(
+		ERegionGabarite::temporary_gabarite,
+		_but->sprite_layer_list[0],
+		_style->slider_bg->main_texture,
+		_style->slider_bg->normal_map_texture,
+		_style->slider_bg->gloss_map_texture
+	);
+
+
+	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = _style->slider_inactive->main_texture->size_x_in_pixels;
+	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = total_group_height;
+
+
+
+	//change clickable region size y
+
+
+	//change button gabarites size y
+	_but->button_gabarite->size_x = _style->slider_inactive->main_texture->size_x_in_pixels;
+	_but->button_gabarite->size_y = total_group_height;
+
+	EntityButtonVerticalSlider* slider = static_cast<EntityButtonVerticalSlider*>(_but);
+	slider->workspace_height = total_group_height - _style->slider_inactive->main_texture->size_y_in_pixels;
+	slider->max_value = -(_but->parent_button_group->highest_point_y - _but->parent_button_group->region_gabarite->size_y);
+
+	slider->max_value = min(slider->max_value, 0.0f);
+}
+
 EntityButtonVariantRouter::~EntityButtonVariantRouter()
 {
 	if (opened_router_group != nullptr)
@@ -1690,4 +1758,8 @@ RouterVariant::~RouterVariant()
 
 		//EInputCore::logger_simple_success("~RouterVariant deleted");
 	}
+}
+
+EntityButtonVerticalSlider::~EntityButtonVerticalSlider()
+{
 }

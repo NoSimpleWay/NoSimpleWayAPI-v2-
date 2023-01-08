@@ -81,6 +81,7 @@ public:
 	void translate_sprite_layer(float _x, float _y, float _z, bool _move_locals);
 	void translate_custom_data(float _x, float _y, float _z, bool _move_locals);
 
+
 	virtual void update(float _d);
 	Entity();
 	virtual ~Entity();
@@ -123,8 +124,9 @@ public:
 
 typedef void (*change_style_action)(EntityButton*, EGUIStyle*);
 
-void action_change_style_slider		(EntityButton* _but, EGUIStyle* _style);
-void action_change_style_button		(EntityButton* _but, EGUIStyle* _style);
+void action_change_style_slider					(EntityButton* _but, EGUIStyle* _style);
+void action_change_style_button					(EntityButton* _but, EGUIStyle* _style);
+void action_change_style_vertical_slider		(EntityButton* _but, EGUIStyle* _style);
 
 
 
@@ -302,6 +304,7 @@ public:
 
 	ETextArea*		main_text_area;
 	EClickableArea* main_clickable_area;
+	ECustomData*	main_custom_data;
 
 };
 
@@ -393,8 +396,31 @@ public:
 	std::vector <EButtonGroup*> target_group_list;
 };
 
+enum class TargetPointerType
+{
+	POINTER_TYPE_FLOAT,
+	POINTER_TYPE_INT
 
+};
+class EntityButtonVerticalSlider : public EntityButton
+{
+public:
+	virtual ~EntityButtonVerticalSlider();
 
+	float workspace_height	= 0.0f;
+
+	float max_value			= 0.0f;
+	float current_value		= 0.0f;
+	
+	void* pointer_to_target_value;
+
+	EBrickStyle* slider_active;
+	EBrickStyle* slider_inactive;
+
+	float scroll_speed = 0.0f;
+
+	TargetPointerType target_pointer_type = TargetPointerType::POINTER_TYPE_FLOAT;
+};	
 
 
 class ECluster
