@@ -6969,10 +6969,11 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EButtonGroup* _target_whole_group, int _specific_position)
 {
 	EButtonGroupFilterBlockSeparator* whole_separator_block =  new EButtonGroupFilterBlockSeparator(new ERegionGabarite(1200.0f, 20.0f));
-	whole_separator_block->init_button_group(EGUIStyle::active_style, true, true, false);
+	whole_separator_block->init_button_group(EGUIStyle::active_style, false, false, false);
 	whole_separator_block->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	whole_separator_block->debug_name = "Whole separator";
 	whole_separator_block->focusable_for_select = true;
+	whole_separator_block->additional_y_distance = 8.0f;
 
 	//		SHRINKER
 	/////////////////////////////////////////////////////////////////////////////////////////////
