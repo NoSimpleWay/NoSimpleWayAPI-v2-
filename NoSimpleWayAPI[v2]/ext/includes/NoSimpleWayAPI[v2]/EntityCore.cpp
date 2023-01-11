@@ -1154,11 +1154,11 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 	if (_gabarite != nullptr)
 	{
 		int
-			max_size = max(_gabarite->size_x_in_pixels, _gabarite->size_y_in_pixels);
-		max_size = min(max_size, 1.0f);
+		max_size = max(_gabarite->size_x_in_pixels, _gabarite->size_y_in_pixels);
+		max_size = max(max_size, 4.0f);
 
 		float
-			resize_factor = max_size;
+		resize_factor = (_region_gabarite->size_y - 4.0f) / max_size;
 		resize_factor = min(resize_factor, 1.0f);
 
 		float icon_size_x = round(_gabarite->size_x_in_pixels * resize_factor);
@@ -1189,7 +1189,7 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 		jc_text_area = ETextArea::create_centered_to_left_text_area
 		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _text);
 
-		jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y;
+		jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y + 3.0f;
 	}
 	else
 	{

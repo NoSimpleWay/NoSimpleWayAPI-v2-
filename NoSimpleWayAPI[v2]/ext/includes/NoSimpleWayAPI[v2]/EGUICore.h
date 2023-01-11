@@ -229,11 +229,14 @@ public:
 
 	ButtonAlignType button_align_type = ButtonAlignType::BUTTON_ALIGN_LEFT;
 
-	bool debug_translation = false;
-	bool can_be_moved = true;
-	bool have_shadow = true;
-	bool is_selected = false;
-	bool focusable_for_select = false;
+	bool debug_translation		= false;
+	bool can_be_moved			= true;
+	bool have_shadow			= true;
+	bool is_selected			= false;
+	bool focusable_for_select	= false;
+	bool hidden_by_search		= false;
+
+	virtual bool is_visible();
 
 	float shadow_size = 32.0f;
 
@@ -319,6 +322,7 @@ public:
 
 	void expand_to_workspace_size();
 
+	virtual void button_group_prechange();
 	static void refresh_button_group(EButtonGroup* _group);
 
 
@@ -337,6 +341,8 @@ public:
 
 	float border_left	=  (0.0f);
 	float border_right	=  (0.0f);
+
+	float additional_y_distance = 0.0f;
 
 	bool* can_change_style = new bool(true);
 

@@ -629,6 +629,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -643,6 +644,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -657,6 +659,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -671,6 +674,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -685,6 +689,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -699,6 +704,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -713,6 +719,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -727,6 +734,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -741,6 +749,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -755,6 +764,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -769,6 +779,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -783,6 +794,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -797,6 +809,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -811,6 +824,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -825,6 +839,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -839,6 +854,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -853,6 +869,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -867,6 +884,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -881,6 +899,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -895,6 +914,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -909,6 +929,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -923,6 +944,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -937,6 +959,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -951,6 +974,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -965,6 +989,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -7395,6 +7420,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
+
+	[tag]"item tag"		[value]"League: Ritual"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -7566,7 +7593,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7688,6 +7715,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
 
+	[tag]"item tag"		[value]"League: Ritual"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -7805,7 +7834,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 
@@ -8005,6 +8034,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8018,6 +8049,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8163,6 +8196,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8229,7 +8264,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8297,6 +8332,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8453,6 +8490,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8559,6 +8598,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8858,6 +8899,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8951,6 +8994,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -9233,6 +9278,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"The Astromancer"
 	[tag]"name RU"		[value]"Астромант"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
@@ -9310,6 +9357,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -9881,7 +9930,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -10128,7 +10177,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -10206,7 +10255,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -10493,7 +10542,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -10559,6 +10608,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -10846,6 +10897,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -11247,7 +11300,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -11391,7 +11444,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -11731,6 +11785,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17518,6 +17574,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"blood_filled_vessel"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"League: Ritual"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18388,6 +18446,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"maven_writ"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -24253,6 +24313,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"crescent_splinter"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -24957,6 +25019,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"unmaking_orb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25101,6 +25165,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ritual_splinter"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25113,6 +25179,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ritual_vessel"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -29533,7 +29601,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -29624,7 +29692,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30530,7 +30598,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 
@@ -31605,7 +31673,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"orb_of_dominance"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

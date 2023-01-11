@@ -1,5 +1,3 @@
-
-	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 

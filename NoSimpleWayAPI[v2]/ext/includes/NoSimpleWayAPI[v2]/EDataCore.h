@@ -308,6 +308,8 @@ public:
 	float								min_y_size = 100.0f;
 
 	data_action_pointer					stored_action_for_data_entity_group;
+
+	ETextureGabarite*					icon_texture;
 };
 
 class EDataContainer_Group_DataEntitiesSearch : public EDataContainer

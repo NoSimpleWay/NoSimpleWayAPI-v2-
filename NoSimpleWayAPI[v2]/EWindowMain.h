@@ -164,7 +164,11 @@ public:
 	virtual ~EntityButtonForListedSegment();
 };
 
-
+class EntityButtonMoveButtonGroup : public EntityButton
+{
+public:
+	EButtonGroup* parent_group_for_moving;
+};
 
 
 
@@ -241,6 +245,7 @@ public:
 	float							text_size;
 
 	EntityButtonVariantRouterForFilterBlock* button_show_hide;
+	EntityButtonVariantRouterForFilterBlock* button_continue;
 
 
 	//sounds
@@ -280,6 +285,26 @@ public:
 	//EButtonGroupFilterBlockAsText*	target_filter_block_as_text_group;
 	void post_draw();
 	void update(float _d);
+	void button_group_prechange();
+
+	bool is_visible();
+	bool is_expanded = false;
+};
+
+class EButtonGroupFilterBlockSeparator : public EButtonGroup
+{
+public:
+	EButtonGroupFilterBlockSeparator(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	EntityButton*	pointer_to_description_button;
+	bool			is_expanded = false;
+};
+
+class EButtonGroupFilterBlockEditor : public EButtonGroup
+{
+public:
+	EButtonGroupFilterBlockEditor(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+	void button_group_prechange();
 };
 
 class EButtonGroupNewLootFilter : public EButtonGroup
@@ -331,10 +356,14 @@ public:
 	EntityButton* main_input_field;
 
 	EButtonGroup* main_left_side = nullptr;
+	EButtonGroup* right_side_for_filters = nullptr;
 
 	EButtonGroupDataEntity(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
+	void update(float _d);
 	void background_update(float _d);
+
+	EButtonGroup* focused_part = nullptr;
 };
 
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
@@ -391,6 +420,7 @@ namespace EDataActionCollection
 	void action_create_new_loot_filter_with_name(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_new_lootfilter_group(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_clone_block(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_separator_block(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void generate_filter_lines_from_text(std::string& full_text);
 
@@ -399,10 +429,13 @@ namespace EDataActionCollection
 	void action_move_filter_block_up(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_move_filter_block_down(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_move_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_move_button_group(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_delete_listed_segment(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_change_separator_shrink_flag(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text
@@ -443,9 +476,11 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_TYPE_DISABLE_DROP_SOUND_IF_ALERT,
 	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND_IF_ALERT,
 	FILTER_ATTRIBUTE_VALUE_TYPE_RAY,
+	FILTER_ATTRIBUTE_VALUE_TYPE_CONTINUE,
 
 
 	FILTER_ATTRIBUTE_VALUE_CONFIG_VERSIONS,
+	FILTER_ATTRIBUTE_VALUE_CONFIG_SEPARATOR,
 
 
 
@@ -468,7 +503,7 @@ public:
 
 	ELocalisationText			localisation;
 
-	//std::string					data_entity_tag_filtration;
+	std::string					data_entity_tag_filtration;
 
 	bool						always_present;
 	float						button_x_size_override = 0.0f;
@@ -498,7 +533,8 @@ enum LootFilterVersionDescription
 
 };
 
-static std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode);
+static std::string generate_filter_block_text			(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode);
+static std::string generate_filter_block_separator_text	(EButtonGroupFilterBlockSeparator* _separator, FilterBlockSaveMode _save_mode);
 
 
 static std::vector<FilterBlockAttribute*> registered_filter_block_attributes;
@@ -526,26 +562,27 @@ public:
 
 	static EWindowMain* link_to_main_window;
 
-	static EButtonGroup*				select_rarity_button_group;
-	static EButtonGroup*				select_quality_button_group;
-	static EButtonGroup*				loot_filter_editor;
-	static EButtonGroup*				world_parameters;
-	static EButtonGroup*				tab_list_group;
-	static EButtonGroupNewLootFilter*	create_new_loot_filter_group;
-	static EButtonGroupDataEntity*		data_entity_filter;
+	static EButtonGroup*								select_rarity_button_group;
+	static EButtonGroup*								select_quality_button_group;
+	static EButtonGroupFilterBlockEditor*				loot_filter_editor;
+	static EButtonGroup*								world_parameters;
+	static EButtonGroup*								tab_list_group;
+	static EButtonGroupNewLootFilter*					create_new_loot_filter_group;
+	static EButtonGroupDataEntity*						data_entity_filter;
 
 	static std::string username;
 	static std::string path_of_exile_folder;
 
-	static void							load_loot_filter_list();
+	static void									load_loot_filter_list();
 
-	static void							load_custom_sound_list();
-	static void							load_ingame_sound_list();
+	static void									load_custom_sound_list();
+	static void									load_ingame_sound_list();
 
-	static bool							text_is_condition(std::string& buffer_text);
+	static bool									text_is_condition(std::string& buffer_text);
 
-	static void							open_loot_filter(std::string _full_path);
-	static EButtonGroupFilterBlock*		create_filter_block(EButtonGroup* _target_whole_group, int _specific_position);
+	static void									open_loot_filter(std::string _full_path);
+	static EButtonGroupFilterBlock*				create_filter_block(EButtonGroup* _target_whole_group, int _specific_position);
+	static EButtonGroupFilterBlockSeparator*	create_filter_block_separator(EButtonGroup* _target_whole_group, int _specific_position);
 
 	static void							parse_filter_text_lines(EButtonGroupFilterBlock* _target_filter_block);
 
@@ -559,7 +596,7 @@ public:
 	static bool							filter_block_contains_this_text(EButtonGroupFilterBlock* _target_filter_block, std::string* _text);
 	//static bool disable_deleting = true;
 
-	static std::vector <EButtonGroup*> filter_block_tabs;
+	static std::vector <EButtonGroupFilterBlockEditor*> filter_block_tabs;
 	static void write_loot_filter_to_disc(std::string _full_path, std::string* _data);
 
 
