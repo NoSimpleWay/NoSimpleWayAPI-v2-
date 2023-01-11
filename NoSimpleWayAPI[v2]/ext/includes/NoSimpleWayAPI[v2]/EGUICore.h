@@ -324,6 +324,7 @@ public:
 
 	virtual void button_group_prechange();
 	static void refresh_button_group(EButtonGroup* _group);
+	void realign_groups();
 
 
 

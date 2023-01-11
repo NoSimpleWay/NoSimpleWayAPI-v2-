@@ -271,8 +271,6 @@ void EWindow::GUI_update_default(float _d)
 				(
 					(b_group != nullptr)
 					&&
-					(b_group->is_active)
-					&&
 					(b_group->region_gabarite->world_position_y										<= b_group->higher_culling_line_for_bg)
 					&&
 					(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y	>= b_group->lower_culling_line_for_bg)
@@ -309,7 +307,7 @@ void EWindow::GUI_draw_default(float _d)
 		(
 			(b_group != nullptr)
 			&&
-			(b_group->is_active)
+			(b_group->is_visible())
 			&&
 			(b_group->can_see_this_group())
 		)
@@ -498,9 +496,9 @@ void EButtonGroup::update(float _d)
 
 	if
 	(
-		(can_see_this_group())
+		(is_visible())
 		&&
-		(is_active)
+		(can_see_this_group())
 	)
 	{
 
@@ -653,7 +651,9 @@ void EButtonGroup::draw()
 			//(*region_gabarite->world_position_y + *region_gabarite->size_y >= *lower_culling_line_for_bg)
 		)
 	{
-		if (is_visible())
+		bool visibility = is_visible();
+
+		if (visibility)
 		{
 			if (group_phantom_redraw)
 			{
@@ -1393,7 +1393,10 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 
 	if
 	(
+		(_group->is_visible())
+		&&
 		(_group->can_see_this_group())
+
 	)
 	{
 		_group->group_phantom_redraw = false;
@@ -1798,6 +1801,27 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 	}
 
 	EButtonGroup::generate_vertex_buffer_for_group(_group);
+}
+
+void EButtonGroup::realign_groups()
+{
+	recursive_phantom_translate_if_need();
+
+	//button_group_prechange();
+
+	expand_to_workspace_size();
+
+
+	substretch_groups_y();
+	//_group->check_slider();
+
+	group_stretch_y();
+	check_slider();
+	group_stretch_x();
+
+
+	align_groups();
+	EButtonGroup::calculate_culling_lines(this, true);
 }
 
 
@@ -2637,7 +2661,12 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 		region_gabarite->offset_z += (_z);
 	}
 
-	if (can_see_this_group())
+	if
+	(
+		(is_visible())
+		&&
+		(can_see_this_group())
+	)
 	{
 		translate_content((_x), (_y), (_z), true);
 	}
@@ -2670,18 +2699,22 @@ void EButtonGroup::translate_content(float _x, float _y, float _z, bool _move_sl
 		{
 			if
 				(
+					(is_visible())
+					&&
 					(
-						(button->button_gabarite->world_position_y <= higher_culling_line)
-						&&
-						(button->button_gabarite->world_position_y + button->button_gabarite->size_y >= lower_culling_line)
-						&&
-						(!button->disabled)
-						&&
-						(!button->disable_draw)
+						(
+							(button->button_gabarite->world_position_y <= higher_culling_line)
+							&&
+							(button->button_gabarite->world_position_y + button->button_gabarite->size_y >= lower_culling_line)
+							&&
+							(!button->disabled)
+							&&
+							(!button->disable_draw)
 						)
 						||
 						(button == slider)
 					)
+				)
 			{
 				button->translate_entity(_x, _y, _z, true);
 			}

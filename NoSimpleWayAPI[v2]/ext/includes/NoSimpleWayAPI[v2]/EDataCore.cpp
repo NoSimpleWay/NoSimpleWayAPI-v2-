@@ -857,6 +857,7 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 
 			if (group_data->pointer_to_color_collection_group != nullptr)
 				for (EntityButton* but : group_data->pointer_to_color_collection_group->button_list)
+				if (but != group_data->pointer_to_color_collection_group->slider)
 				{
 					if (static_cast<EDataContainer_Button_StoreColor*>(but->custom_data_list[0]->data_container)->stored_color == button_data->stored_color)
 					{

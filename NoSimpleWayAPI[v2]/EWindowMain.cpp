@@ -285,6 +285,8 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 	EWindowMain::tab_list_group->selected_button->main_text_area->change_text(((EntityButtonForLootFilterSelector*)_entity)->filter_name);
 
 	EWindowMain::open_loot_filter(((EntityButtonForLootFilterSelector*)_entity)->loot_filter_full_path);
+	
+	//EWindowMain::loot_filter_editor->realign_groups();
 	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 
 }
@@ -4708,19 +4710,21 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 
 	parse_filter_text_lines(nullptr);
 
-	for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
-	{
-		if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(group))
-		{
-			EInputCore::logger_simple_info("It FilterBlock!");
-		}
-		else
-		{
-			EInputCore::logger_simple_info("It NOT FilterBlock!");
-		}
-	}
+	//for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
+	//{
+	//	if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(group))
+	//	{
+	//		EInputCore::logger_simple_info("It FilterBlock!");
+	//	}
+	//	else
+	//	{
+	//		EInputCore::logger_simple_info("It NOT FilterBlock!");
+	//	}
+	//}
 
 	file.close();
+
+	//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 
 }
 
@@ -6968,6 +6972,7 @@ EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EBu
 	whole_separator_block->init_button_group(EGUIStyle::active_style, true, true, false);
 	whole_separator_block->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	whole_separator_block->debug_name = "Whole separator";
+	whole_separator_block->focusable_for_select = true;
 
 	//		SHRINKER
 	/////////////////////////////////////////////////////////////////////////////////////////////
@@ -7801,7 +7806,11 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 										
 									}
-									if ((data_part == 3) && (buffer_text == "shrinked")) { jc_filter_block_separator->is_expanded = false; }
+									if ((data_part == 3) && (buffer_text == "shrinked"))
+									{
+										jc_filter_block_separator->is_expanded = false;
+										//jc_filter_block->is_expanded = false;
+									}
 								}
 
 
@@ -9282,36 +9291,46 @@ EButtonGroupFilterBlock::~EButtonGroupFilterBlock()
 
 void EButtonGroupFilterBlock::post_draw()
 {
-	EButtonGroup::post_draw();
-
-	if (button_show_hide->selected_variant == 0)
+	if
+	(
+		(is_visible())
+		&&
+		(can_see_this_group())
+	)
 	{
-		if (!EButtonGroup::catched_by_mouse(this))
+		EButtonGroup::post_draw();
+
+
+		if (button_show_hide->selected_variant == 0)
 		{
-			NS_EGraphicCore::set_active_color(0.3f, 0.25f, 0.2f, 0.6f);
+			if (!EButtonGroup::catched_by_mouse(this))
+			{
+				NS_EGraphicCore::set_active_color(0.3f, 0.25f, 0.2f, 0.6f);
+			}
+			else
+			{
+				NS_EGraphicCore::set_active_color(0.3f, 0.3f, 0.3f, 0.3f);
+			}
+			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+				//x pos
+				region_gabarite->world_position_x,
+
+				//y pos
+				region_gabarite->world_position_y,
+
+				region_gabarite->size_x,
+				region_gabarite->size_y,
+
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
 		}
-		else
-		{
-			NS_EGraphicCore::set_active_color(0.3f, 0.3f, 0.3f, 0.3f);
-		}
-		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-			//x pos
-			region_gabarite->world_position_x,
-
-			//y pos
-			region_gabarite->world_position_y,
-
-			region_gabarite->size_x,
-			region_gabarite->size_y,
-
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-		);
 	}
+
 }
 
 void EButtonGroupFilterBlock::update(float _d)
@@ -9345,7 +9364,16 @@ void EButtonGroupFilterBlock::button_group_prechange()
 
 bool EButtonGroupFilterBlock::is_visible()
 {
-	return EButtonGroup::is_visible() && is_expanded;
+	//if (EButtonGroup::is_visible() && is_expanded && false)
+	//{
+	//	EInputCore::logger_simple_info("You are ebanutyi? YES");
+	//}
+	//else
+	//{
+	//	EInputCore::logger_simple_info("You are ebanutyi? NO");
+	//}
+
+	return EButtonGroup::is_visible() && is_expanded && true;
 }
 
 EButtonGroupFilterBlockAsText* EButtonGroupFilterBlockAsText::create_filter_block_as_text_group(EButtonGroupFilterBlock* _target_filter_block)
