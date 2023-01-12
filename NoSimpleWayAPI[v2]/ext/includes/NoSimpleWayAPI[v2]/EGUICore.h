@@ -216,6 +216,11 @@ constexpr float BUTTON_FORCE_FIELD_SIZE = 2.0f;
 constexpr auto NSW_RECURSIVE			= true;
 constexpr auto NSW_ONLY_TARGET			= false;
 
+enum class MoveVectorMethod
+{
+	METHOD_DRAG		= 0,
+	METHOD_PRESS	= 1
+};
 class EButtonGroup
 {
 public:
@@ -249,7 +254,7 @@ public:
 
 	EButtonGroup* root_group = nullptr;
 
-	EntityButton* slider = nullptr;
+	EntityButtonVerticalSlider* slider = nullptr;
 
 	ERenderBatcher* batcher_for_default_draw = nullptr;
 
@@ -277,6 +282,8 @@ public:
 	static EButtonGroup* first_selected_element;
 	static EButtonGroup* last_selected_element;
 	static std::vector<EButtonGroup*> selected_groups;
+
+	static MoveVectorMethod move_vector_mode;
 
 	bool need_remove = false;
 
@@ -349,7 +356,7 @@ public:
 
 	EGUIStyle* selected_style = nullptr;
 
-	static void add_horizontal_scroll_bar(EButtonGroup* _button_group);
+	static void add_vertical_scroll_bar(EButtonGroup* _button_group);
 	static void set_offset_borders(EButtonGroup* _group, float _left, float _right, float _bottom, float _up);
 	static void generate_brick_textured_bg(EButtonGroup* _group);
 
@@ -468,6 +475,11 @@ public:
 	ChildElementsAlignDirection child_align_direction = ChildElementsAlignDirection::BOTTOM_TO_TOP;
 
 	float button_size_x_override = 0.0f;
+
+	float max_highlight_time	= 0.35f;
+	float highlight_time		= 0.0f;
+
+	void highlight_this_group();
 };
 
 

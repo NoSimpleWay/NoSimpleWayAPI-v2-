@@ -4110,7 +4110,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Rawhide Boots"
 	[tag]"name RU"		[value]"—ыром€тые поножи"
 
-	[tag]"icon path"	[value]"Buckskin_Tower_Shield_inventory_icon"
+	[tag]"icon path"	[value]"Rawhide_Boots_inventory_icon"
 	[tag]"base class"	[value]"Boots"
 
 	[tag]"item width"	[value]"2"

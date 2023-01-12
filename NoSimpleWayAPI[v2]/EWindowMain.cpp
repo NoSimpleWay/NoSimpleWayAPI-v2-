@@ -99,6 +99,7 @@ namespace NS_DefaultGabarites
 	ETextureGabarite* texture_button_move_up;
 	ETextureGabarite* texture_button_move_down;
 	ETextureGabarite* texture_button_move;
+	ETextureGabarite* texture_button_cut;
 
 	ETextureGabarite* texture_button_remove_filter_block;
 
@@ -429,7 +430,14 @@ void EDataActionCollection::action_add_new_filter_block(Entity* _entity, ECustom
 
 	EWindowMain::create_filter_block(EWindowMain::loot_filter_editor, position);
 
+	EWindowMain::loot_filter_editor->group_list[position]->highlight_this_group();
+
 	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+
+	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+	{
+		EButtonGroup::add_content_to_filter_block_group->is_active = false;
+	}
 }
 
 void EDataActionCollection::action_open_custom_sound_list(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -638,6 +646,8 @@ void EDataActionCollection::action_clone_block(Entity* _entity, ECustomData* _cu
 		if (EWindowMain::loot_filter_editor->group_list[i] == filter_block)
 		{
 			position = i;
+
+			
 		}
 	}
 
@@ -651,7 +661,14 @@ void EDataActionCollection::action_clone_block(Entity* _entity, ECustomData* _cu
 
 	EWindowMain::parse_filter_text_lines(filter_block);
 
+	EWindowMain::loot_filter_editor->group_list[position]->highlight_this_group();
+
 	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+
+	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+	{
+		EButtonGroup::add_content_to_filter_block_group->is_active = false;
+	}
 }
 
 void EDataActionCollection::action_add_separator_block(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -673,6 +690,11 @@ void EDataActionCollection::action_add_separator_block(Entity* _entity, ECustomD
 	EWindowMain::create_filter_block_separator(EWindowMain::loot_filter_editor, position);
 
 	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+
+	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+	{
+		EButtonGroup::add_content_to_filter_block_group->is_active = false;
+	}
 }
 
 void EDataActionCollection::generate_filter_lines_from_text(std::string& full_text)
@@ -774,12 +796,16 @@ void EDataActionCollection::action_move_filter_block(Entity* _entity, ECustomDat
 {
 	EButtonGroup::vector_moving_group			= static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block;
 	EButtonGroup::parent_vector_moving_group	= static_cast<EntityButtonForFilterBlock*>(_entity)->parent_button_group->root_group;
+
+	EButtonGroup::move_vector_mode				= MoveVectorMethod::METHOD_DRAG;
 }
 
 void EDataActionCollection::action_move_button_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	EButtonGroup::vector_moving_group			= static_cast<EntityButtonMoveButtonGroup*>(_entity)->parent_button_group;
+	EButtonGroup::vector_moving_group			= static_cast<EntityButtonMoveButtonGroup*>(_entity)->target_group_for_moving;
 	EButtonGroup::parent_vector_moving_group	= static_cast<EntityButtonMoveButtonGroup*>(_entity)->parent_group_for_moving;
+
+	EButtonGroup::move_vector_mode				= static_cast<EntityButtonMoveButtonGroup*>(_entity)->move_method;
 }
 
 void EDataActionCollection::action_delete_listed_segment(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -838,6 +864,7 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 void EDataActionCollection::action_change_separator_shrink_flag(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EButtonGroup::change_group(static_cast<EntityButton*>(_entity)->parent_button_group->root_group);
+	static_cast<EntityButton*>(_entity)->parent_button_group->highlight_this_group();
 }
 
 void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _text_area)
@@ -1064,6 +1091,7 @@ EWindowMain::EWindowMain()
 	NS_DefaultGabarites::texture_button_move_up							= NS_EGraphicCore::load_from_textures_folder("buttons/button_move_up");
 	NS_DefaultGabarites::texture_button_move_down						= NS_EGraphicCore::load_from_textures_folder("buttons/button_move_down");
 	NS_DefaultGabarites::texture_button_move							= NS_EGraphicCore::load_from_textures_folder("buttons/button_move");
+	NS_DefaultGabarites::texture_button_cut								= NS_EGraphicCore::load_from_textures_folder("buttons/button_cut");
 
 	NS_DefaultGabarites::texture_button_remove_filter_block				= NS_EGraphicCore::load_from_textures_folder("buttons/button_remove_filter_block");
 
@@ -2074,6 +2102,7 @@ EWindowMain::EWindowMain()
 
 		main_button_group->actions_on_resize_window.push_back(&EDataActionCollection::action_resize_to_full_window_only_x);
 		main_button_group->dynamic_autosize_for_window = false;
+		main_button_group->shadow_size = 8.0f;
 		autosize_group_list.push_back(main_button_group);
 
 		//for (int z = 0; z < 0; z++)
@@ -2388,6 +2417,7 @@ EWindowMain::EWindowMain()
 	}
 	
 	//Create new loot-filter
+	if (true)
 	{
 		EButtonGroupNewLootFilter*
 		main_loot_filter_group = new EButtonGroupNewLootFilter(new ERegionGabarite(100.0f, 100.0f, 300.0f, 80.0f));
@@ -3561,6 +3591,8 @@ EWindowMain::EWindowMain()
 
 		main_button_group->actions_on_resize_window.push_back(&EDataActionCollection::action_resize_to_full_window_only_x);
 		main_button_group->dynamic_autosize_for_window = false;
+		main_button_group->shadow_size = 8.0f;
+
 		autosize_group_list.push_back(main_button_group);
 		EButtonGroup* bottom_tab_section = main_button_group->add_group
 		(
@@ -3580,7 +3612,7 @@ EWindowMain::EWindowMain()
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 
-		top_section->shadow_size = 8.0f;
+		
 
 		//////////////////////////////////////////////////////
 
@@ -4728,7 +4760,7 @@ void EWindowMain::open_loot_filter(std::string _full_path)
 
 }
 
-EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_whole_group, int _specific_position = -1)
+EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_editor, int _specific_position = -1)
 {
 
 	//EInputCore::logger_simple_info("create new block!");
@@ -4744,11 +4776,11 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	if (_specific_position < 0)
 	{
-		_target_whole_group->add_group(whole_filter_block_group);
+		_target_editor->add_group(whole_filter_block_group);
 	}
 	else
 	{
-		_target_whole_group->add_group_scecific_position(whole_filter_block_group, _specific_position);
+		_target_editor->add_group_scecific_position(whole_filter_block_group, _specific_position);
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -5440,18 +5472,41 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		}
 
 		///////////		BUTTON MOVE		///////////
-		EntityButtonForFilterBlock*
-		move_button = new EntityButtonForFilterBlock();
+		EntityButtonMoveButtonGroup*
+		move_button = new EntityButtonMoveButtonGroup();
 		move_button->make_as_default_button_with_full_icon
 		(
 			new ERegionGabarite(40.0f, 15.0f),
 			bottom_section_for_block_control,
-			&EDataActionCollection::action_move_filter_block,
+			&EDataActionCollection::action_move_button_group,
 			NS_DefaultGabarites::texture_button_move
 		);
-		move_button->parent_filter_block = whole_filter_block_group;
+		move_button->target_group_for_moving	= whole_filter_block_group;
+		move_button->parent_group_for_moving	= _target_editor;
+		move_button->move_method				= MoveVectorMethod::METHOD_DRAG;
 
 		bottom_section_for_block_control->button_list.push_back(move_button);
+		////////////////
+
+
+
+
+
+		///////////		BUTTON CUT		///////////
+		EntityButtonMoveButtonGroup*
+		cut_button = new EntityButtonMoveButtonGroup();
+		cut_button->make_as_default_button_with_full_icon
+		(
+			new ERegionGabarite(40.0f, 15.0f),
+			bottom_section_for_block_control,
+			&EDataActionCollection::action_move_button_group,
+			NS_DefaultGabarites::texture_button_cut
+		);
+		cut_button->target_group_for_moving	= whole_filter_block_group;
+		cut_button->parent_group_for_moving		= _target_editor;
+		cut_button->move_method					= MoveVectorMethod::METHOD_PRESS;
+
+		bottom_section_for_block_control->button_list.push_back(cut_button);
 		////////////////
 
 
@@ -6966,7 +7021,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	return whole_filter_block_group;
 }
 
-EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EButtonGroup* _target_whole_group, int _specific_position)
+EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EButtonGroup* _target_editor, int _specific_position)
 {
 	EButtonGroupFilterBlockSeparator* whole_separator_block =  new EButtonGroupFilterBlockSeparator(new ERegionGabarite(1200.0f, 20.0f));
 	whole_separator_block->init_button_group(EGUIStyle::active_style, false, false, false);
@@ -7004,7 +7059,9 @@ EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EBu
 		&EDataActionCollection::action_move_button_group,
 		NS_DefaultGabarites::texture_button_move
 	);
-	move_button->parent_group_for_moving = _target_whole_group;
+	move_button->target_group_for_moving	= whole_separator_block;
+	move_button->parent_group_for_moving	= _target_editor;
+	move_button->move_method				= MoveVectorMethod::METHOD_DRAG;
 	
 	whole_separator_block->button_list.push_back(move_button);
 	/////////////////////////////////////////////////////////////////////////////////////////////
@@ -7035,11 +7092,11 @@ EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EBu
 
 	if (_specific_position < 0)
 	{
-		_target_whole_group->add_group(whole_separator_block);
+		_target_editor->add_group(whole_separator_block);
 	}
 	else
 	{
-		_target_whole_group->add_group_scecific_position(whole_separator_block, _specific_position);
+		_target_editor->add_group_scecific_position(whole_separator_block, _specific_position);
 	}
 
 	return whole_separator_block;

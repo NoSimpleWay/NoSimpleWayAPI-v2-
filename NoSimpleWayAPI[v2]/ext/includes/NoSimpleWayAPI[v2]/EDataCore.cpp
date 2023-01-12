@@ -356,13 +356,16 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 {
 	EntityButtonVerticalSlider* slider = static_cast<EntityButtonVerticalSlider*>(_entity);
 
+	slider->current_value = *((float*)slider->pointer_to_target_value);
+
 	if ((EButtonGroup::focused_button_group_with_slider == slider->parent_button_group) && (EInputCore::scroll_direction != 0))
 	{
-		float scroll_speed = 3.0f;
+		float scroll_speed = 5.0f;
 
-		slider->scroll_speed += pow(EInputCore::scroll_direction, 3.0) * scroll_speed / slider->max_value * -1.0f;
+		slider->scroll_speed += pow(EInputCore::scroll_direction, 5.0) * scroll_speed * -1.0f;
 	}
 
+	float total_value = slider->max_value - slider->min_value;
 	if
 	(
 		(
@@ -377,7 +380,6 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 	)
 	{
 		float multiplier = 1.0f;
-
 		
 
 		float old_value = *((float*)slider->pointer_to_target_value);
@@ -393,26 +395,45 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 		)
 		{
 			slider->scroll_speed = 0.0f;
+
 			slider->current_value = (EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom - slider->button_gabarite->world_position_y) / slider->workspace_height;
+			slider->current_value = slider->min_value + slider->current_value * total_value;
 		}
 
 
 		slider->current_value += slider->scroll_speed;
 		//slider->current_value = (slider->current_value);
 		
-		if ((slider->current_value <= 0.0f) || (slider->current_value >= 1.0f)) { slider->scroll_speed = 0.0f; }
-		slider->current_value = std::clamp(slider->current_value, 0.0f, 1.0f);
+		if
+		(
+			(slider->min_value < slider->max_value)
+			&&
+			(
+				(slider->current_value <= slider->min_value)
+				||
+				(slider->current_value >= slider->max_value)
+			)
+		)
+		{slider->scroll_speed = 0.0f;}
 
-		if (slider->parent_button_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
-		{
-			//multiplier = -1.0f;
-			*((float*)slider->pointer_to_target_value) = (1.0f - slider->current_value) * slider->max_value * -1.0f;
-		}
-		else
-		{
-			multiplier = 1.0f;
-			*((float*)slider->pointer_to_target_value) = (slider->current_value) * slider->max_value;
-		}
+		if
+		(
+			(slider->min_value > slider->max_value)
+			&&
+			(
+				(slider->current_value >= slider->min_value)
+				||
+				(slider->current_value <= slider->max_value)
+			)
+		)
+		{slider->scroll_speed = 0.0f;}
+
+		//clamp border values
+		slider->current_value = std::clamp(slider->current_value, min(slider->min_value, slider->max_value), max(slider->min_value, slider->max_value));
+
+
+		multiplier = 1.0f;
+		*((float*)slider->pointer_to_target_value) = (slider->current_value);
 		*((float*)slider->pointer_to_target_value) = round(*((float*)slider->pointer_to_target_value));
 
 		//*((float*)slider->pointer_to_target_value) = round(*((float*)slider->pointer_to_target_value));
@@ -428,10 +449,16 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 		//EButtonGroup::change_group(slider->parent_button_group);
 	}
 
-	slider->scroll_speed *= pow(0.1f, _d);
-	if ((slider->scroll_speed * slider->scroll_speed * -slider->max_value) < 0.00005f) { slider->scroll_speed = 0.0f; }
+	slider->scroll_speed *= pow(0.01f, _d);
+	if ((slider->scroll_speed * slider->scroll_speed) < 0.0005f) { slider->scroll_speed = 0.0f; }
+
+	
+	slider->current_value_percent = (slider->current_value - slider->min_value) / total_value;
+	
 
 }
+
+
 
 //void EDataActionCollection::action_change_style(Entity* _entity, ECustomData* _custom_data, float _d)
 //{
@@ -1243,7 +1270,7 @@ void EDataActionCollection::action_draw_vertical_named_slider(Entity* _entity, E
 			NS_EGraphicCore::pbr_batcher->last_vertice_buffer_index,
 
 			slider->world_position_x,
-			slider->world_position_y + slider->workspace_height * slider->current_value,
+			slider->world_position_y + slider->workspace_height * slider->current_value_percent,
 
 			slider->slider_inactive->main_texture->size_x_in_pixels,
 			slider->slider_inactive->main_texture->size_y_in_pixels,

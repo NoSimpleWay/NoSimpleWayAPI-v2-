@@ -1632,9 +1632,23 @@ void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style)
 
 	EntityButtonVerticalSlider* slider = static_cast<EntityButtonVerticalSlider*>(_but);
 	slider->workspace_height = total_group_height - _style->slider_inactive->main_texture->size_y_in_pixels;
-	slider->max_value = -(_but->parent_button_group->highest_point_y - _but->parent_button_group->region_gabarite->size_y);
 
-	slider->max_value = min(slider->max_value, 0.0f);
+	if (_but->parent_button_group->child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
+	{
+		slider->min_value = 0.0f;
+
+		slider->max_value = -(_but->parent_button_group->highest_point_y - _but->parent_button_group->region_gabarite->size_y);
+		slider->max_value = min(slider->max_value, 0.0f);
+	}
+	else
+	if (_but->parent_button_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+	{
+		slider->min_value = (_but->parent_button_group->highest_point_y - _but->parent_button_group->region_gabarite->size_y);
+		slider->min_value = max(slider->min_value, 0.0f);
+
+		slider->max_value = 0.0f;
+
+	}
 }
 
 EntityButtonVariantRouter::~EntityButtonVariantRouter()

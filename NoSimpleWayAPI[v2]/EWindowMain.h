@@ -69,6 +69,7 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_button_move_up;
 	extern ETextureGabarite* texture_button_move_down;
 	extern ETextureGabarite* texture_button_move;
+	extern ETextureGabarite* texture_button_cut;
 
 	extern ETextureGabarite* texture_button_remove_filter_block;
 
@@ -167,7 +168,9 @@ public:
 class EntityButtonMoveButtonGroup : public EntityButton
 {
 public:
+	EButtonGroup* target_group_for_moving;
 	EButtonGroup* parent_group_for_moving;
+	MoveVectorMethod move_method = MoveVectorMethod::METHOD_DRAG;
 };
 
 
@@ -581,7 +584,7 @@ public:
 	static bool									text_is_condition(std::string& buffer_text);
 
 	static void									open_loot_filter(std::string _full_path);
-	static EButtonGroupFilterBlock*				create_filter_block(EButtonGroup* _target_whole_group, int _specific_position);
+	static EButtonGroupFilterBlock*				create_filter_block(EButtonGroup* _target_editor, int _specific_position);
 	static EButtonGroupFilterBlockSeparator*	create_filter_block_separator(EButtonGroup* _target_whole_group, int _specific_position);
 
 	static void							parse_filter_text_lines(EButtonGroupFilterBlock* _target_filter_block);

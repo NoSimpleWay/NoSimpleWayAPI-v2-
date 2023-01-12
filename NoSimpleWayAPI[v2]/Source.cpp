@@ -272,7 +272,7 @@ int main()
 
 		}
 
-		if (!EInputCore::MOUSE_BUTTON_LEFT)
+		if ((!EInputCore::MOUSE_BUTTON_LEFT) && (EButtonGroup::move_vector_mode == MoveVectorMethod::METHOD_DRAG))
 		{
 			EButtonGroup::vector_moving_group			= nullptr;
 			EButtonGroup::parent_vector_moving_group	= nullptr;

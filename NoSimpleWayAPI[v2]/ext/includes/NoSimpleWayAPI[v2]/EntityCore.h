@@ -407,9 +407,12 @@ class EntityButtonVerticalSlider : public EntityButton
 public:
 	virtual ~EntityButtonVerticalSlider();
 
-	float workspace_height	= 0.0f;
+	float workspace_height			= 0.0f;
 
-	float max_value			= 0.0f;
+	float min_value					= 0.0f;
+	float max_value					= 0.0f;
+
+	float current_value_percent		= 0.0f;
 	float current_value		= 0.0f;
 	
 	void* pointer_to_target_value;
