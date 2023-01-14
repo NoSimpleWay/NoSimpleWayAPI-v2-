@@ -7890,36 +7890,57 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 bool EWindowMain::filter_block_contains_this_text(EButtonGroupFilterBlock* _target_filter_block, std::string* _text)
 {
-	
+	bool any_match = true;
+	bool listed_match = false;
+
 	{
-		for (EButtonGroup* listed_segment : _target_filter_block->pointer_to_listed_segment->group_list)
+		
+		//if (_target_filter_block->pointer_to_listed_segment->group_list.empty()) { any_match = true; }
+		for (EButtonGroup* listed_block : _target_filter_block->pointer_to_listed_segment->group_list)
 		{
-			auto listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(listed_segment->data_container);
+			//listed_match = false;
+
+			any_match = false;
+
+			auto listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(listed_block->data_container);
+
+			if
+			(
+				(listed_container->group_with_listed_buttons->button_list.empty())
+				||
+				(listed_container->group_with_listed_buttons->button_list.back() == listed_container->group_with_listed_buttons->slider)
+
+			)
+			{
+				any_match = true;
+			}
 
 			for (EntityButton* wide_button : listed_container->group_with_listed_buttons->button_list)
 				if
-					(
-						(wide_button != _target_filter_block->slider)
-						&&
-						(wide_button->main_text_area != nullptr)
-						)
+				(
+					(wide_button != _target_filter_block->slider)
+					&&
+					(wide_button->main_text_area != nullptr)
+				)
 				{
 					if
-						(
-							(EStringUtils::A_contains_B_ignore_case(wide_button->main_text_area->localisation_text.base_name, *_text))
-							||
-							(EStringUtils::A_contains_B_ignore_case(wide_button->main_text_area->localisation_text.localisations[NSW_localisation_EN], *_text))
-							||
-							(EStringUtils::A_contains_B_ignore_case(wide_button->main_text_area->localisation_text.localisations[NSW_localisation_RU], *_text))
-							)
+					(
+						(EStringUtils::A_contains_B_ignore_case(wide_button->main_text_area->localisation_text.base_name, *_text))
+						||
+						(EStringUtils::A_contains_B_ignore_case(wide_button->main_text_area->localisation_text.localisations[NSW_localisation_EN], *_text))
+						||
+						(EStringUtils::A_contains_B_ignore_case(wide_button->main_text_area->localisation_text.localisations[NSW_localisation_RU], *_text))
+					)
 					{
-						return true;
+						any_match = true;
+						break;
 					}
 				}
+
 		}
 	}
 
-	return false;
+	return any_match;
 }
 
 void EWindowMain::write_loot_filter_to_disc(std::string _full_path, std::string* _data)
