@@ -1504,7 +1504,14 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 
 		//button visible, go generate vertex!
 		for (EntityButton* but : _group->button_list)
-			if (but->be_visible_last_time)
+			if
+			(
+				(but->be_visible_last_time)
+				&&
+				(!but->disable_draw)
+				&&
+				(!but->disabled)
+			)
 			{
 				for (change_style_action csa : but->action_on_generate_vertex_buffer)
 				{

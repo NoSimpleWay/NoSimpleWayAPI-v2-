@@ -760,8 +760,8 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 
 
 					//tag_require_match = false;
-					if (matched) { but->disabled = false; }
-					else { but->disabled = true; }
+					if (matched) { but->disabled = false; but->disable_draw = false; }
+					else { but->disabled = true; but->disable_draw = true;}
 
 				}
 
