@@ -96,7 +96,7 @@ class EntityButtonForFilterBlock : public EntityButton
 {
 public:
 	EButtonGroupFilterBlock* parent_filter_block;
-	FilterBlockAttribute* used_filter_block_attribute;
+	GameItemAttribute* used_filter_block_attribute;
 	//~EntityButtonFilterBlock
 	//int a;
 	//EntityButtonFilterBlock() : a(0) {};
@@ -245,7 +245,7 @@ public:
 	EntityButton* text_size_button;
 	EntityButton* text_size_switch_button;
 	bool							text_size_bool;
-	float							text_size;
+	float							text_size = 0.5f;
 
 	EntityButtonVariantRouterForFilterBlock* button_show_hide;
 	EntityButtonVariantRouterForFilterBlock* button_continue;
@@ -258,7 +258,7 @@ public:
 	EntityButtonFilterSound*					pointer_to_game_sound_button;
 	bool										game_sound_suppressor_bool;
 	EntityButton*								sound_volume;
-	float										sound_volume_value;
+	float										sound_volume_value = 1.0f;
 
 	
 	EntityButtonVariantRouterForFilterBlock*	pointer_to_positional_variant_button;
@@ -298,7 +298,7 @@ class EButtonGroupFilterBlockSeparator : public EButtonGroup
 {
 public:
 	EButtonGroupFilterBlockSeparator(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
-
+	~EButtonGroupFilterBlockSeparator();
 	EntityButton*	pointer_to_description_button;
 	bool			is_expanded = false;
 };
@@ -367,6 +367,15 @@ public:
 	void background_update(float _d);
 
 	EButtonGroup* focused_part = nullptr;
+};
+
+class EButtonGroupBottomFilterBlockControl : public EButtonGroup
+{
+public:
+	EButtonGroupBottomFilterBlockControl(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	EntityButton* search_button;
+	EntityButton* search_button_clear;
 };
 
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
@@ -439,6 +448,7 @@ namespace EDataActionCollection
 	void action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_change_separator_shrink_flag(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_clear_text(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text
@@ -493,7 +503,7 @@ enum FilterAttributeValueType
 
 };
 
-class FilterBlockAttribute
+class GameItemAttribute
 {
 public:
 	FilterAttributeType			filter_attribute_type;
@@ -514,7 +524,7 @@ public:
 	bool						commentary_config = false;
 };
 
-static void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_group, FilterBlockAttribute* _filter_block_attribute);
+static void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_group, GameItemAttribute* _filter_block_attribute);
 
 enum class FilterBlockSaveMode
 {
@@ -540,8 +550,8 @@ static std::string generate_filter_block_text			(EButtonGroup* _button_group, Fi
 static std::string generate_filter_block_separator_text	(EButtonGroupFilterBlockSeparator* _separator, FilterBlockSaveMode _save_mode);
 
 
-static std::vector<FilterBlockAttribute*> registered_filter_block_attributes;
-static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, FilterBlockAttribute* _attribute, std::string _attribute_name, EButtonGroup* _parent);
+static std::vector<GameItemAttribute*> registered_game_item_attributes;
+static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameItemAttribute* _attribute, std::string _attribute_name, EButtonGroup* _parent);
 
 #define NSW_registered_rarity_count					4//	1|normal		2|magic			3|rare				4|unique
 #define NSW_registered_altered_gem_quality_count	3//	1|anomalous		2|divergent		3|phantasmal		4|unique
@@ -572,6 +582,7 @@ public:
 	static EButtonGroup*								tab_list_group;
 	static EButtonGroupNewLootFilter*					create_new_loot_filter_group;
 	static EButtonGroupDataEntity*						data_entity_filter;
+	static EButtonGroupBottomFilterBlockControl*		bottom_filter_block_control;
 
 	static std::string username;
 	static std::string path_of_exile_folder;
@@ -601,6 +612,28 @@ public:
 
 	static std::vector <EButtonGroupFilterBlockEditor*> filter_block_tabs;
 	static void write_loot_filter_to_disc(std::string _full_path, std::string* _data);
+
+
+};
+
+class EGameItemAttributeContainer
+{
+public:
+	GameItemAttribute*	item_attribute;
+
+	std::string			attribute_value;
+};
+
+class EGameItem
+{
+public:
+	EDataEntity*								stored_data_entity;
+
+	std::vector<EGameItemAttributeContainer*>	attributes_list;
+	ETextureGabarite*							icon;
+	ELocalisationText							localised_name;
+
+	std::vector<EButtonGroupFilterBlock*>		matched_filter_blocks;
 
 
 };

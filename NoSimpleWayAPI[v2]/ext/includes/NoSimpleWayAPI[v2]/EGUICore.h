@@ -213,14 +213,22 @@ enum class ChildElementsAlignDirection
 
 constexpr float BUTTON_FORCE_FIELD_SIZE = 2.0f;
 
-constexpr auto NSW_RECURSIVE			= true;
-constexpr auto NSW_ONLY_TARGET			= false;
+constexpr auto NSW_RECURSIVE = true;
+constexpr auto NSW_ONLY_TARGET = false;
 
 enum class MoveVectorMethod
 {
-	METHOD_DRAG		= 0,
-	METHOD_PRESS	= 1
+	METHOD_DRAG = 0,
+	METHOD_PRESS = 1
 };
+
+enum class GroupSearchStatus
+{
+	SEARCH_STATUS_IGNORE,
+	SEARCH_STATUS_MATCHED,
+	SEARCH_STATUS_REJECTED
+};
+
 class EButtonGroup
 {
 public:
@@ -234,12 +242,13 @@ public:
 
 	ButtonAlignType button_align_type = ButtonAlignType::BUTTON_ALIGN_LEFT;
 
-	bool debug_translation		= false;
-	bool can_be_moved			= true;
-	bool have_shadow			= true;
-	bool is_selected			= false;
-	bool focusable_for_select	= false;
-	bool hidden_by_search		= false;
+	bool debug_translation = false;
+	bool can_be_moved = true;
+	bool have_shadow = true;
+	bool is_selected = false;
+	bool focusable_for_select = false;
+	//bool hidden_by_search = false;
+	GroupSearchStatus group_search_status = GroupSearchStatus::SEARCH_STATUS_IGNORE;
 
 	virtual bool is_visible();
 
@@ -293,11 +302,11 @@ public:
 	float highest_point_y = (0.0f);
 	float highest_point_y_for_buttons = (0.0f);
 
-	float higher_culling_line			= 0.0f;
-	float lower_culling_line			= 0.0f;
+	float higher_culling_line = 0.0f;
+	float lower_culling_line = 0.0f;
 
-	float higher_culling_line_for_bg	= 0.0f;
-	float lower_culling_line_for_bg		= 0.0f;
+	float higher_culling_line_for_bg = 0.0f;
+	float lower_culling_line_for_bg = 0.0f;
 
 	float base_height;
 	float base_width;
@@ -344,11 +353,11 @@ public:
 	bool can_resize_to_workspace_size_x = true;
 	bool can_resize_to_workspace_size_y = true;
 
-	float border_bottom	=  (0.0f);
-	float border_up		=  (0.0f);
+	float border_bottom = (0.0f);
+	float border_up = (0.0f);
 
-	float border_left	=  (0.0f);
-	float border_right	=  (0.0f);
+	float border_left = (0.0f);
+	float border_right = (0.0f);
 
 	float additional_y_distance = 0.0f;
 
@@ -410,24 +419,24 @@ public:
 
 	static void stretch_parent_group(EButtonGroup* _group, float _new_y_size);
 
-	bool have_bg						= (true);
-	bool can_be_focused					= (true);
-	bool is_active						= (true);
-	bool disable_gabarite				= (false);
+	bool have_bg = (true);
+	bool can_be_focused = (true);
+	bool is_active = (true);
+	bool disable_gabarite = (false);
 
-	bool force_new_line					= (false);
-	bool parent_have_slider				= (false);
-	bool need_redraw					= (false);
-	bool can_be_stretched_by_child		= (false);
+	bool force_new_line = (false);
+	bool parent_have_slider = (false);
+	bool need_redraw = (false);
+	bool can_be_stretched_by_child = (false);
 
-	bool stretch_x_by_parent_size		= (false);
-	bool stretch_y_by_parent_size		= (false);
+	bool stretch_x_by_parent_size = (false);
+	bool stretch_y_by_parent_size = (false);
 
-	bool have_slider					= (false);
+	bool have_slider = (false);
 
-	bool can_change_position_in_vector	= true;
+	bool can_change_position_in_vector = true;
 
-	bool dynamic_autosize_for_window	= false;
+	bool dynamic_autosize_for_window = false;
 
 	EButtonGroup* add_group(EButtonGroup* _new_group);
 	EButtonGroup* add_group_scecific_position(EButtonGroup* _new_group, int _specific_position);
@@ -476,27 +485,27 @@ public:
 
 	float button_size_x_override = 0.0f;
 
-	float max_highlight_time	= 0.35f;
-	float highlight_time		= 0.0f;
+	float max_highlight_time = 0.35f;
+	float highlight_time = 0.0f;
 
 	void highlight_this_group();
 };
 
 
 
-class EButtonGroupRouterVariant: public EButtonGroup
+class EButtonGroupRouterVariant : public EButtonGroup
 {
 
 public:
 	EntityButtonVariantRouter* target_router_button = nullptr;
 
 	static EButtonGroupRouterVariant* create_router_variant_button_group(EWindow* _target_window, EntityButtonVariantRouter* _router_button);
-	
+
 	EButtonGroupRouterVariant(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	~EButtonGroupRouterVariant();
 
-	
+
 };
 //class EButtonContainer
 //{

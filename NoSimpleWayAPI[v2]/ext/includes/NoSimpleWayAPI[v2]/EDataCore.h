@@ -429,7 +429,7 @@ public:
 class EDataContainer_Button_AddContentToFilterBlock : public EDataContainer
 {
 public:
-	FilterBlockAttribute* target_attribute;
+	GameItemAttribute* target_attribute;
 };
 //
 //class EDataContainer_Group_WholeFilterBlock : public EDataContainer
@@ -468,7 +468,7 @@ public:
 
 	EntityButtonVariantRouterForFilterBlock* rarity_router_button;
 
-	FilterBlockAttribute* target_filter_block_attribute;
+	GameItemAttribute* target_filter_block_attribute;
 };
 
 

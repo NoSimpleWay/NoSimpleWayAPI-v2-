@@ -745,7 +745,7 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 				(data_container->target_rule != nullptr)
 			)
 		{
-			data_container->pointer_to_group_with_data_entities->scroll_y = 0.0f;
+			//data_container->pointer_to_group_with_data_entities->scroll_y = 0.0f;
 
 			for (EntityButton* but : data_container->pointer_to_group_with_data_entities->button_list)
 				if (but != data_container->pointer_to_group_with_data_entities->slider)
@@ -769,6 +769,7 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 
 			//data_container->pointer_to_group_with_data_entities->realign_all_buttons();
 			EButtonGroup::refresh_button_group(data_container->pointer_to_group_with_data_entities->root_group);
+			//EButtonGroup::change_group(data_container->pointer_to_group_with_data_entities);
 			//data_container->pointer_to_target_group_send_item->button_list.clear();
 
 			//EButtonGroup::refresh_button_group(data_container->pointer_to_target_group_send_item);
@@ -799,9 +800,9 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 
 void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _text_area)
 {
-	if (_text_area->parent_entity != nullptr)
+	if (_text_area->parent_entity_for_text_area != nullptr)
 	{
-		auto		multisearch_data_container = static_cast<EntityButtonMultiSearch*>(_text_area->parent_entity);
+		auto		multisearch_data_container = static_cast<EntityButtonMultiSearch*>(_text_area->parent_entity_for_text_area);
 		std::string	inputed_text = _text_area->original_text;
 
 		bool match = false;
@@ -851,7 +852,7 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 								}
 							}
 
-					button_group->scroll_y = 0.0f;
+					//button_group->scroll_y = 0.0f;
 					EButtonGroup::change_group(button_group);
 				}
 	}

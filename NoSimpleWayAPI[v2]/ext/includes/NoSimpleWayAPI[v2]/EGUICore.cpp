@@ -385,7 +385,7 @@ void EWindow::GUI_draw_second_pass(float _d)
 bool EButtonGroup::is_visible()
 {
 	
-	return is_active && !hidden_by_search;
+	return (is_active) && (group_search_status != GroupSearchStatus::SEARCH_STATUS_REJECTED);
 }
 
 EButtonGroup::EButtonGroup(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y)
@@ -1811,7 +1811,7 @@ void EButtonGroup::check_slider()
 				}
 				
 				//reset scroll_y, because no slider = no scroll
-				scroll_y = 0.0f; //parent have no slider
+				//scroll_y = 0.0f; //parent have no slider
 			}
 		}
 	}
@@ -1947,11 +1947,11 @@ void EButtonGroup::refresh_buttons_in_group()
 
 
 	//prevert empty space
-	if (scroll_y < -(highest_point_y_for_buttons - region_gabarite->size_y))
-	{
-		scroll_y = -(highest_point_y_for_buttons - region_gabarite->size_y);
-		realign_all_buttons();
-	}
+	//if (scroll_y < -(highest_point_y_for_buttons - region_gabarite->size_y))
+	//{
+	//	scroll_y = -(highest_point_y_for_buttons - region_gabarite->size_y);
+	//	realign_all_buttons();
+	//}
 
 
 
@@ -2201,21 +2201,32 @@ void EButtonGroup::realign_all_buttons()
 		slider->world_position_y = region_gabarite->world_position_y;
 	}
 
-	if ((slider != nullptr) && (highest_point_y > region_gabarite->size_y - 0.0f - border_up))
+
+	
+	if (slider != nullptr)
 	{
-		slider->disable_draw = false;
-		slider->disabled = false;
-
-		if (!have_slider)
+		//slider become active, get additional border in right side
+		if ((!have_slider)&&(highest_point_y > region_gabarite->size_y - 0.0f - border_up))
 		{
-			have_slider = true;
-			this->realign_all_buttons();
+			slider->disable_draw = false;
+			slider->disabled = false;
+
+			if (!have_slider)
+			{
+				have_slider = true;
+				this->realign_all_buttons();
+			}
+
+			EInputCore::logger_simple_info("activate slider");
+
+			for (EButtonGroup* group : group_list) { group->parent_have_slider = true; }
 		}
-
-
-
-		for (EButtonGroup* group : group_list) { group->parent_have_slider = true; }
+		else//no slider, no additional right border, if have any scroll, reset and realign
+		{
+			//if ((have_slider) && (scroll_y != 0.0f)) { scroll_y = 0.0f; this->realign_all_buttons(); EInputCore::logger_simple_info("reset slider"); }
+		}
 	}
+
 
 	//float current_scroll = region_gabarite->size_y - scroll_y;
 

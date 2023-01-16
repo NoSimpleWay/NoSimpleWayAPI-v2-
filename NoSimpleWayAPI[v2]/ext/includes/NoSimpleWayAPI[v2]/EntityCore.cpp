@@ -462,7 +462,7 @@ void Entity::add_text_area_to_last_clickable_region(EntityButton* _button, EText
 		if (last_clickable_area != nullptr)
 		{
 			last_clickable_area->text_area = _text_area;
-			_text_area->parent_entity = _button;
+			_text_area->parent_entity_for_text_area = _button;
 
 			if ((_button->parent_button_group != nullptr) && (_button->parent_button_group->selected_style != nullptr))
 			{
@@ -1617,7 +1617,7 @@ void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style)
 		_style->slider_bg->gloss_map_texture
 	);
 
-
+	_but->sprite_layer_list[0]->offset_y = _but->parent_button_group->border_bottom;
 	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = _style->slider_inactive->main_texture->size_x_in_pixels;
 	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = total_group_height;
 

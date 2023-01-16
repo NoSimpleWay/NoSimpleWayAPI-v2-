@@ -56,7 +56,7 @@ class EDataContainer;
 class EBrickPlane;
 
 class ELocalisationText;
-class FilterBlockAttribute;
+class GameItemAttribute;
 
 typedef void (*data_action_pointer)(Entity*, ECustomData*, float);
 

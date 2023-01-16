@@ -218,7 +218,7 @@ public:
 	float offset_border[BorderSide::_LAST_ELEMENT] {0.0f};
 	
 	EClickableArea* parent_clickable_region;
-	EntityButton* parent_entity;
+	EntityButton* parent_entity_for_text_area;
 
 	//int* align_size_x = new int(AlignSide::AS_LEFT);
 	//int* align_size_y = new int(AlignSide::AS_DOWN);
@@ -280,6 +280,8 @@ public:
 	void set_color(const float(&_color)[4]);
 	void set_color(Helper::HSVRGBAColor* _color);
 	void set_color(float _r, float _g, float _b, float _a);
+
+	float type_cooldown = 0.0f;
 };
 
 class EFontGlyph

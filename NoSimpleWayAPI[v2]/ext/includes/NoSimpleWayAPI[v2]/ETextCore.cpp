@@ -508,8 +508,8 @@ void ETextArea::generate_text()
 
 		if (can_get_access_to_group_style())
 		{
-			border_offset_bottom = *parent_entity->parent_button_group->selected_style->button_bg->side_offset_bottom;
-			border_offset_top = *parent_entity->parent_button_group->selected_style->button_bg->side_offset_up;
+			border_offset_bottom = *parent_entity_for_text_area->parent_button_group->selected_style->button_bg->side_offset_bottom;
+			border_offset_top = *parent_entity_for_text_area->parent_button_group->selected_style->button_bg->side_offset_up;
 		}
 
 		y_adding += (region_gabarite->size_y - border_offset_bottom - border_offset_top) * offset_by_gabarite_size_y;
@@ -575,7 +575,8 @@ void ETextArea::generate_text()
 						target_symbol,
 
 						region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
-						region_gabarite->world_position_y + y_adding,
+						region_gabarite->world_position_y + y_adding - line_height,
+
 
 						font->size_x_in_pixels[target_symbol] * font_scale,
 						font->size_y_in_pixels[target_symbol] * font_scale
@@ -621,7 +622,7 @@ void ETextArea::generate_text()
 				0,
 
 				region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
-				region_gabarite->world_position_y + y_adding,
+				region_gabarite->world_position_y + y_adding - line_height,
 
 				5.0f,
 				5.0f
@@ -698,9 +699,9 @@ void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_co
 {
 	if
 		(
-			(parent_entity == nullptr)
+			(parent_entity_for_text_area == nullptr)
 			||
-			(region_gabarite != ((EntityButton*)parent_entity)->button_gabarite)
+			(region_gabarite != ((EntityButton*)parent_entity_for_text_area)->button_gabarite)
 			)
 	{
 		region_gabarite->world_position_x += _x;
@@ -726,6 +727,16 @@ void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_co
 
 void ETextArea::update(float _d)
 {
+
+	if (type_cooldown > 0.0f)
+	{
+		type_cooldown -= _d;
+
+		if (type_cooldown <= 0.0f)
+		{
+			for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) { dap(this); }
+		}
+	}
 	//if (false)
 	{
 		int glyph_id = 0;
@@ -785,6 +796,8 @@ void ETextArea::update(float _d)
 	if
 		(
 			(EInputCore::MOUSE_BUTTON_LEFT)
+			&&
+			(true)
 		)
 	{
 		//click into gabarite
@@ -887,7 +900,8 @@ void ETextArea::update(float _d)
 			(selected_glyph_position) -= 1;
 		}
 
-		for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) { dap(this); }
+		//for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) { dap(this); }
+		type_cooldown = 0.2f;
 	}
 
 
@@ -990,9 +1004,10 @@ void ETextArea::update(float _d)
 
 			//if ((parent_clickable_region != nullptr) && (parent_clickable_region->parent_custom_data != nullptr))
 			//{
-			for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) { dap(this); }
+			//for (text_actions_pointer dap : action_on_change_text) if (dap != nullptr) { dap(this); }
+			
 			//}
-
+			type_cooldown = 0.2f;
 
 			//if (row.at(*target_glyph->row_id)->length() <= 1) { (selected_glyph_position) -= 1; }
 
@@ -1012,8 +1027,8 @@ void ETextArea::update(float _d)
 					(EInputCore::key_holded(GLFW_KEY_LEFT, 0.25f))
 					&&
 					(jump_cooldown <= 0)
-					)
 				)
+			)
 			&&
 			(text_area_active)
 			&&
@@ -1115,7 +1130,7 @@ void ETextArea::draw()
 				sprite_layer->batcher->vertex_buffer,
 				sprite_layer->batcher->last_vertice_buffer_index,
 				round(active_glyph->world_position_x),
-				round(active_glyph->world_position_y) - 15.0f,
+				round(active_glyph->world_position_y),
 				2.0f,
 				15.0f,
 				NS_DefaultGabarites::texture_gabarite_white_pixel
@@ -1177,13 +1192,17 @@ void ETextArea::text_area_set_active_and_select_glyph()
 
 		if
 			(
-				(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= glyph->world_position_x)
-				&&
-				(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= glyph->world_position_x + glyph->size_x)
-				&&
-				(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= glyph->world_position_y)
-				&&
-				(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= glyph->world_position_y + glyph->size_y)
+				(
+					(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= glyph->world_position_x)
+					&&
+					(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= glyph->world_position_x + glyph->size_x)
+					&&
+					(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= glyph->world_position_y)
+					//&&
+					//(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= glyph->world_position_y + glyph->size_y)
+				)
+				//||
+				//(rand() % 10 == 0)
 			)
 		{
 			//selected_glyph_position = glyph_id;
@@ -1209,7 +1228,7 @@ void ETextArea::text_area_set_active_and_select_glyph()
 			NS_FONT_UTILS::active_text_area = this;
 
 			if (original_text == "") { change_text(""); }
-
+			flash_line_active = true;
 
 
 			break;
@@ -1217,6 +1236,8 @@ void ETextArea::text_area_set_active_and_select_glyph()
 
 		glyph_id++;
 	}
+
+	//selected_glyph_position = rand() % font_glyph_list.size();
 }
 
 void ETextArea::set_region(ETextArea* _text_area, ERegionGabarite* _region_gabarite)
@@ -1572,32 +1593,28 @@ void ETextArea::change_text(std::string _text)
 bool ETextArea::can_get_access_to_group_style()
 {
 	if
-		(
-			(parent_entity != nullptr)
+	(
+			(parent_entity_for_text_area != nullptr)
 			&&
-			(parent_entity->parent_button_group != nullptr)
+			(parent_entity_for_text_area->parent_button_group != nullptr)
 			&&
-			(parent_entity->parent_button_group->selected_style != nullptr)
-			)
-	{
-		return true;
-	}
+			(parent_entity_for_text_area->parent_button_group->selected_style != nullptr)
+	)
+	{return true;}
 	else
-	{
-		return false;
-	}
+	{return false;}
 }
 
 EButtonGroup* ETextArea::get_root_group()
 {
 	if
-		(
-			(parent_entity != nullptr)
-			&&
-			(((EntityButton*)parent_entity)->parent_button_group != nullptr)
-			)
+	(
+		(parent_entity_for_text_area != nullptr)
+		&&
+		(((EntityButton*)parent_entity_for_text_area)->parent_button_group != nullptr)
+	)
 	{
-		return ((EntityButton*)parent_entity)->parent_button_group->root_group;
+		return ((EntityButton*)parent_entity_for_text_area)->parent_button_group->root_group;
 	}
 	else
 	{
