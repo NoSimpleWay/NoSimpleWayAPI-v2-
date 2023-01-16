@@ -1737,6 +1737,7 @@ void EButtonGroup::group_stretch_y()
 void EButtonGroup::check_slider()
 {
 	have_slider = true;//have no slider by default
+	scroll_y = 0.0f;
 
 	if (slider != nullptr)
 	{
@@ -1795,6 +1796,8 @@ void EButtonGroup::check_slider()
 					//EInputCore::logger_param("group size y", *group->region_gabarite->size_y);
 					group->parent_have_slider = true;
 				}//parent have no slider
+
+				scroll_y = slider->current_value;
 			}
 		}
 		else
@@ -1961,6 +1964,26 @@ void EButtonGroup::refresh_buttons_in_group()
 void EButtonGroup::realign_all_buttons()
 {
 	highest_point_y_for_buttons = 0.0f;
+
+	if ((slider != nullptr) && (have_slider))
+	{
+		scroll_y = slider->current_value;
+		
+		if (child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+		{
+			scroll_y = min(scroll_y, slider->min_value);
+		}
+		else
+		if (child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
+		{
+			scroll_y = max(scroll_y, slider->max_value);
+		}
+		
+	}
+	else
+	{
+		scroll_y = 0.0f;
+	}
 
 	EntityButton* prev_button = nullptr;
 
@@ -2206,30 +2229,33 @@ void EButtonGroup::realign_all_buttons()
 	if (slider != nullptr)
 	{
 		//slider become active, get additional border in right side
-		if ((!have_slider)&&(highest_point_y > region_gabarite->size_y - 0.0f - border_up))
+		if ((!have_slider)&&(highest_point_y_for_buttons > region_gabarite->size_y - 0.0f - border_up))
 		{
 			slider->disable_draw = false;
 			slider->disabled = false;
 
-			if (!have_slider)
-			{
+			//if (!have_slider)
+			//{
 				have_slider = true;
 				this->realign_all_buttons();
-			}
+			//}
 
-			EInputCore::logger_simple_info("activate slider");
+			//EInputCore::logger_simple_info("activate slider");
+				//scroll_y = slider->current_value;
 
 			for (EButtonGroup* group : group_list) { group->parent_have_slider = true; }
 		}
 		else//no slider, no additional right border, if have any scroll, reset and realign
 		{
-			//if ((have_slider) && (scroll_y != 0.0f)) { scroll_y = 0.0f; this->realign_all_buttons(); EInputCore::logger_simple_info("reset slider"); }
+			
 		}
+
+		//scroll_y = slider->current_value;
 	}
 
 
 	//float current_scroll = region_gabarite->size_y - scroll_y;
-
+	
 	for (EButtonGroup* group : group_list) { group->realign_all_buttons(); }
 }
 
