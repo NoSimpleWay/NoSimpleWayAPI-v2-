@@ -903,7 +903,8 @@ void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _tex
 		}
 
 
-	//EWindowMain::loot_filter_editor->scroll_y = 0.0f;
+	EWindowMain::loot_filter_editor->scroll_y = 0.0f;
+	EWindowMain::loot_filter_editor->slider->current_value = 0.0f;
 	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
 	//EButtonGroup::change_group(EWindowMain::loot_filter_editor);
 }
