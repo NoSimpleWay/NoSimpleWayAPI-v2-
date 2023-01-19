@@ -483,7 +483,7 @@ void Entity::add_text_area_to_last_clickable_region(EntityButton* _button, EText
 
 void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style)
 {
-	if ((_button != nullptr) && (_style != nullptr) && (_style->button_bg != nullptr))
+	if ((_button != nullptr) && (_style != nullptr) && (_style->button_bg != nullptr) && (!_button->do_not_generate_bg))
 	{
 		ESpriteLayer* last_layer = nullptr;
 

@@ -501,7 +501,7 @@ void ETextArea::generate_text()
 		int id_for_stored_text_sym = 0;
 
 		full_text_height = line_height * (row.size());
-		y_adding = full_text_height;
+		y_adding = full_text_height * font_scale;
 
 		float border_offset_bottom = 0.0f;
 		float border_offset_top = 0.0f;
@@ -515,7 +515,7 @@ void ETextArea::generate_text()
 		y_adding += (region_gabarite->size_y - border_offset_bottom - border_offset_top) * offset_by_gabarite_size_y;
 
 		//vertical align
-		y_adding += (full_text_height + 0.0f) * offset_by_text_size_y;
+		y_adding += (full_text_height + 0.0f) * offset_by_text_size_y * font_scale;
 		y_adding += border_offset_bottom;
 
 
@@ -531,12 +531,12 @@ void ETextArea::generate_text()
 						region_gabarite->size_x
 						-
 						offset_border[BorderSide::RIGHT]
-						)
+					)
 					*
 					offset_by_gabarite_size_x
-					)
+				)
 				+
-				(get_row_width(str) * offset_by_text_size_x);
+				(get_row_width(str) * offset_by_text_size_x) * font_scale;
 
 			x_adding += offset_border[BorderSide::LEFT];
 			//_adding = *region_gabarite->size_y * offset_by_gabarite_size_y + get_row_width(str) * offset_by_text_size_y;
@@ -554,8 +554,8 @@ void ETextArea::generate_text()
 					sprite_layer->vertex_buffer,
 					sprite_layer->last_buffer_id,
 
-					round(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol]),
-					round(region_gabarite->world_position_y - ((font->size_y_in_pixels[target_symbol] - 0.0f) + font->offset_y[target_symbol] * font_scale - y_adding) + 4.0f),
+					(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol]),
+					(region_gabarite->world_position_y - ((font->size_y_in_pixels[target_symbol] + font->offset_y[target_symbol]) * font_scale - y_adding) + 4.0f * font_scale),
 
 					(font->size_x_in_pixels[target_symbol] * font_scale),
 					(font->size_y_in_pixels[target_symbol] * font_scale),
@@ -647,7 +647,7 @@ void ETextArea::generate_text()
 
 			//EInputCore::logger_param("last buffer id", *sprite_layer->last_buffer_id);
 
-			y_adding -= line_height;
+			y_adding -= line_height * font_scale;
 		}
 	}
 	else
@@ -1129,8 +1129,8 @@ void ETextArea::draw()
 			(
 				sprite_layer->batcher->vertex_buffer,
 				sprite_layer->batcher->last_vertice_buffer_index,
-				round(active_glyph->world_position_x),
-				round(active_glyph->world_position_y),
+				(active_glyph->world_position_x),
+				(active_glyph->world_position_y),
 				2.0f,
 				15.0f,
 				NS_DefaultGabarites::texture_gabarite_white_pixel

@@ -150,6 +150,8 @@ public:
 
 	bool fixed_position			= false;
 	bool update_when_scissored	= false;
+	bool align_even_if_hidden	= false;
+	bool do_not_generate_bg		= false;
 
 
 	std::vector<change_style_action> action_on_generate_vertex_buffer;

@@ -50,8 +50,9 @@ EButtonGroupFilterBlockEditor*				EWindowMain::loot_filter_editor;
 EButtonGroup*								EWindowMain::world_parameters;
 EButtonGroup*								EWindowMain::tab_list_group;
 EButtonGroupNewLootFilter*					EWindowMain::create_new_loot_filter_group;
-EButtonGroupDataEntity*						EWindowMain::data_entity_filter = nullptr;
-EButtonGroupBottomFilterBlockControl*		EWindowMain::bottom_filter_block_control = nullptr;
+EButtonGroupDataEntity*						EWindowMain::data_entity_filter				= nullptr;
+EButtonGroupBottomFilterBlockControl*		EWindowMain::bottom_filter_block_control	= nullptr;
+EButtonGroupLootSimulator*					EWindowMain::loot_simulator_button_group	= nullptr;
 
 
 
@@ -878,6 +879,50 @@ void EDataActionCollection::action_clear_text(Entity* _entity, ECustomData* _cus
 	}
 }
 
+void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		//x pos
+		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_x,
+
+		//y pos
+		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_y,
+
+		static_cast<EntityButton*>(_entity)->button_gabarite->size_x,
+		static_cast<EntityButton*>(_entity)->button_gabarite->size_y,
+
+		NS_DefaultGabarites::texture_gabarite_white_pixel
+	);
+
+
+	NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_RED);
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+	NS_ERenderCollection::add_data_to_vertex_buffer_rama
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		//x pos
+		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_x,
+
+		//y pos
+		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_y,
+
+		static_cast<EntityButton*>(_entity)->button_gabarite->size_x,
+		static_cast<EntityButton*>(_entity)->button_gabarite->size_y,
+
+		3.0f,
+
+		NS_DefaultGabarites::texture_gabarite_white_pixel
+	);
+}
+
 void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _text_area)
 {
 
@@ -1032,7 +1077,6 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#4 very strict].filter", &str);
 	
 }
-
 
 EWindowMain::EWindowMain()
 {
@@ -2092,9 +2136,9 @@ EWindowMain::EWindowMain()
 	//		SEARCH BOTTOM LINE
 	{
 		EButtonGroupBottomFilterBlockControl* main_bottom_filter_block_control = new EButtonGroupBottomFilterBlockControl(new ERegionGabarite(0.0f, 0.0f, 1020.0f, 32.0f));
-		(
-			EButtonGroup::create_root_button_group
-		);
+		//(
+		//	EButtonGroup::create_root_button_group
+		//);
 		main_bottom_filter_block_control->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_darken_bg);
 
 		main_bottom_filter_block_control->parent_window = this;
@@ -2167,6 +2211,8 @@ EWindowMain::EWindowMain()
 
 
 	}
+
+
 
 	//NEW BUTTON GROUP
 	//filters block
@@ -2999,6 +3045,85 @@ EWindowMain::EWindowMain()
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
 
+	//		LOOT SIMULATOR
+	{
+		////////////////////////////////
+		EButtonGroupLootSimulator*
+			main_loot_simulator_group = new EButtonGroupLootSimulator(new ERegionGabarite(100.0f, 100.0f, 900.0f, 500.0f));
+
+		main_loot_simulator_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_darken_bg);
+		main_loot_simulator_group->root_group = main_loot_simulator_group;
+		main_loot_simulator_group->parent_window = this;
+		////////////////////////////////
+		EButtonGroup*
+			workspace_part = main_loot_simulator_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);
+
+		////////////////////////////////
+		EButtonGroup*
+			bottom_loot_part = new EButtonGroup(new ERegionGabarite(90.0f, 90.0f));
+		bottom_loot_part->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
+		bottom_loot_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		workspace_part->add_group(bottom_loot_part);
+
+		////////////////////////////////
+		EButtonGroup*
+			top_control_part = new EButtonGroup(new ERegionGabarite(90.0f, 40.0f));
+		top_control_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+		top_control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+		workspace_part->add_group(top_control_part);
+
+		////////////////////////////////
+		EButtonGroup*
+			left_loot_part = new EButtonGroup(new ERegionGabarite(10.0f, 10.0f));
+		left_loot_part->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
+		left_loot_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		bottom_loot_part->add_group(left_loot_part);
+
+		////////////////////////////////
+		EButtonGroup*
+			right_loot_part = new EButtonGroup(new ERegionGabarite(200.0f, 10.0f));
+		right_loot_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+		right_loot_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+		bottom_loot_part->add_group(right_loot_part);
+
+
+		for (int i = 0; i < 100; i++)
+		{
+			EntityButtonLootItem*
+			loot_item = new EntityButtonLootItem();
+			loot_item->align_even_if_hidden = true;
+			loot_item->do_not_generate_bg = true;
+
+			float size_multiplier = (rand() % 65) / 100.0f + 0.35f;
+
+			loot_item->make_default_button_with_unedible_text
+			(
+				new ERegionGabarite(250.0f * size_multiplier, 40.0f * size_multiplier),
+				left_loot_part,
+				nullptr,
+				"The loop"
+			);
+			loot_item->main_text_area->font_scale = size_multiplier * 2.0f;
+			loot_item->main_custom_data->actions_on_pre_draw.push_back(EDataActionCollection::action_draw_loot_button);
+			loot_item->main_text_area->set_color((rand() % 256) / 256.0f, (rand() % 256) / 256.0f, (rand() % 256) / 256.0f, 1.0f);
+
+			
+
+			//if (rand() % 3 == 0)
+			//{
+			//	loot_item->disable_draw = true;
+			//}
+
+
+
+			left_loot_part->button_list.push_back(loot_item);
+		}
+
+
+
+		button_group_list.push_back(main_loot_simulator_group);
+		EButtonGroup::refresh_button_group(main_loot_simulator_group);
+	}
 
 	//color editor
 	if (true)
@@ -3593,6 +3718,8 @@ EWindowMain::EWindowMain()
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
 
+
+	
 
 	////////////////////////////////////////////////////////////////
 	// 
@@ -8648,7 +8775,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 				text_area->
 				localisation_text.base_name;
 
-			if (container->target_button_with_condition != nullptr)
+			if ((container->target_button_with_condition != nullptr) && (container->target_button_with_condition->main_text_area->original_text != ""))
 			{
 				result_string += " ";
 				result_string += (Entity::get_last_text_area(container->target_button_with_condition)->original_text);
@@ -8711,10 +8838,18 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 					result_string += " ==";
 				}
 
-				if (container->input_field != nullptr)
+				if ((container->input_field != nullptr))
 				{
-					result_string += " " + container->input_field->main_text_area->original_text;
+					if (container->input_field->main_text_area->original_text != "")
+					{ 
+						result_string += " " + container->input_field->main_text_area->original_text;
+					}
+					else
+					{
+						result_string += ">=1" + container->input_field->main_text_area->original_text;
+					}
 				}
+
 
 				int id = 0;
 
@@ -9670,5 +9805,13 @@ void EButtonGroupFilterBlockEditor::button_group_prechange()
 }
 
 EButtonGroupFilterBlockSeparator::~EButtonGroupFilterBlockSeparator()
+{
+}
+
+EntityButtonLootItem::EntityButtonLootItem()
+{
+}
+
+EntityButtonLootItem::~EntityButtonLootItem()
 {
 }

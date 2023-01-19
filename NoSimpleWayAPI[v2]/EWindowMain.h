@@ -125,10 +125,10 @@ public:
 class EntityButtonFilterSound : public EntityButtonForFilterBlock
 {
 public:
-	ENamedSound*			stored_named_sound;
+	ENamedSound* stored_named_sound;
 	//irrklang::ISoundSource* target_sound;
 	std::string				full_path;
-	EButtonGroupSoundList*	target_sound_group;
+	EButtonGroupSoundList* target_sound_group;
 	~EntityButtonFilterSound();
 
 
@@ -252,33 +252,33 @@ public:
 
 
 	//sounds
-	EntityButtonFilterSound*					pointer_to_custom_sound_button;
+	EntityButtonFilterSound* pointer_to_custom_sound_button;
 	bool										custom_sound_suppressor_bool;
 
-	EntityButtonFilterSound*					pointer_to_game_sound_button;
+	EntityButtonFilterSound* pointer_to_game_sound_button;
 	bool										game_sound_suppressor_bool;
-	EntityButton*								sound_volume;
+	EntityButton* sound_volume;
 	float										sound_volume_value = 1.0f;
 
-	
-	EntityButtonVariantRouterForFilterBlock*	pointer_to_positional_variant_button;
-	EntityButtonVariantRouterForFilterBlock*	pointer_to_disable_enable_drop_sound;
-	EntityButtonVariantRouterForFilterBlock*	pointer_to_optional_user_sound;
+
+	EntityButtonVariantRouterForFilterBlock* pointer_to_positional_variant_button;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_disable_enable_drop_sound;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_optional_user_sound;
 
 
 
 	//		MINIMAP ICONS SECTION
-	EntityButtonVariantRouterForFilterBlock*	pointer_to_minimap_icon_color_router;
-	EntityButtonVariantRouterForFilterBlock*	pointer_to_minimap_icon_size_router;
-	EntityButtonVariantRouterForFilterBlock*	pointer_to_minimap_icon_shape_router;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_color_router;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_size_router;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_shape_router;
 
 	//		RAY SECTION
-	EntityButtonVariantRouterForFilterBlock*	pointer_to_ray_color_router;
-	EntityButtonVariantRouterForFilterBlock*	pointer_to_temporary_option_router;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_ray_color_router;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_temporary_option_router;
 	bool										ray_suppressor;
 
-	EntityButtonVariantRouterForFilterBlock*	version_routers[5] = {nullptr};
-	
+	EntityButtonVariantRouterForFilterBlock* version_routers[5] = { nullptr };
+
 
 
 
@@ -299,7 +299,7 @@ class EButtonGroupFilterBlockSeparator : public EButtonGroup
 public:
 	EButtonGroupFilterBlockSeparator(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 	~EButtonGroupFilterBlockSeparator();
-	EntityButton*	pointer_to_description_button;
+	EntityButton* pointer_to_description_button;
 	bool			is_expanded = false;
 };
 
@@ -337,15 +337,15 @@ class EButtonGroupFilterBlockAsText : public EButtonGroup
 class EButtonGroupSoundList : public EButtonGroup
 {
 public:
-	EButtonGroup*	part_with_list;
-	ETextArea*		input_field;
+	EButtonGroup* part_with_list;
+	ETextArea* input_field;
 
 	EButtonGroupSoundList(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	std::vector<ENamedSound*>*	pointer_to_sound_list;
+	std::vector<ENamedSound*>* pointer_to_sound_list;
 
 	data_action_pointer			action_on_select_for_button;
-	EntityButtonFilterSound*	target_sound_button;
+	EntityButtonFilterSound* target_sound_button;
 	//EntityButton
 	void refresh_sound_list();
 };
@@ -376,6 +376,12 @@ public:
 
 	EntityButton* search_button;
 	EntityButton* search_button_clear;
+};
+
+class EButtonGroupLootSimulator : public EButtonGroup
+{
+public:
+	EButtonGroupLootSimulator(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 };
 
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
@@ -449,6 +455,7 @@ namespace EDataActionCollection
 
 	void action_change_separator_shrink_flag(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_clear_text(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_loot_button(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text
@@ -510,9 +517,9 @@ public:
 	FilterAttributeValueType	filter_attribute_value_type;
 	EFilterRule* filter_rule;
 
-	bool have_operator			= false;
-	bool input_field_for_listed	= false;
-	bool have_exact_match		= false;
+	bool have_operator = false;
+	bool input_field_for_listed = false;
+	bool have_exact_match = false;
 
 	ELocalisationText			localisation;
 
@@ -528,12 +535,12 @@ static void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _t
 
 enum class FilterBlockSaveMode
 {
-	VERSION_ORIGINAL		= -1,
-	VERSION_VERY_SOFT		= 0,
-	VERSION_SOFT			= 1,
-	VERSION_DEFAULT			= 2,
-	VERSION_STRICT			= 3,
-	VERSION_VERY_STRICT		= 4
+	VERSION_ORIGINAL = -1,
+	VERSION_VERY_SOFT = 0,
+	VERSION_SOFT = 1,
+	VERSION_DEFAULT = 2,
+	VERSION_STRICT = 3,
+	VERSION_VERY_STRICT = 4
 };
 
 enum LootFilterVersionDescription
@@ -546,8 +553,8 @@ enum LootFilterVersionDescription
 
 };
 
-static std::string generate_filter_block_text			(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode);
-static std::string generate_filter_block_separator_text	(EButtonGroupFilterBlockSeparator* _separator, FilterBlockSaveMode _save_mode);
+static std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode);
+static std::string generate_filter_block_separator_text(EButtonGroupFilterBlockSeparator* _separator, FilterBlockSaveMode _save_mode);
 
 
 static std::vector<GameItemAttribute*> registered_game_item_attributes;
@@ -575,14 +582,15 @@ public:
 
 	static EWindowMain* link_to_main_window;
 
-	static EButtonGroup*								select_rarity_button_group;
-	static EButtonGroup*								select_quality_button_group;
-	static EButtonGroupFilterBlockEditor*				loot_filter_editor;
-	static EButtonGroup*								world_parameters;
-	static EButtonGroup*								tab_list_group;
-	static EButtonGroupNewLootFilter*					create_new_loot_filter_group;
-	static EButtonGroupDataEntity*						data_entity_filter;
-	static EButtonGroupBottomFilterBlockControl*		bottom_filter_block_control;
+	static EButtonGroup* select_rarity_button_group;
+	static EButtonGroup* select_quality_button_group;
+	static EButtonGroupFilterBlockEditor* loot_filter_editor;
+	static EButtonGroup* world_parameters;
+	static EButtonGroup* tab_list_group;
+	static EButtonGroupNewLootFilter* create_new_loot_filter_group;
+	static EButtonGroupDataEntity* data_entity_filter;
+	static EButtonGroupBottomFilterBlockControl* bottom_filter_block_control;
+	static EButtonGroupLootSimulator* loot_simulator_button_group;
 
 	static std::string username;
 	static std::string path_of_exile_folder;
@@ -595,8 +603,8 @@ public:
 	static bool									text_is_condition(std::string& buffer_text);
 
 	static void									open_loot_filter(std::string _full_path);
-	static EButtonGroupFilterBlock*				create_filter_block(EButtonGroup* _target_editor, int _specific_position);
-	static EButtonGroupFilterBlockSeparator*	create_filter_block_separator(EButtonGroup* _target_whole_group, int _specific_position);
+	static EButtonGroupFilterBlock* create_filter_block(EButtonGroup* _target_editor, int _specific_position);
+	static EButtonGroupFilterBlockSeparator* create_filter_block_separator(EButtonGroup* _target_whole_group, int _specific_position);
 
 	static void							parse_filter_text_lines(EButtonGroupFilterBlock* _target_filter_block);
 
@@ -616,10 +624,14 @@ public:
 
 };
 
+
+
+
+//		LOOT SIMULATOR ELEMENTS
 class EGameItemAttributeContainer
 {
 public:
-	GameItemAttribute*	item_attribute;
+	GameItemAttribute* item_attribute;
 
 	std::string			attribute_value;
 };
@@ -627,15 +639,24 @@ public:
 class EGameItem
 {
 public:
-	EDataEntity*								stored_data_entity;
+	EDataEntity* stored_data_entity;
 
 	std::vector<EGameItemAttributeContainer*>	attributes_list;
-	ETextureGabarite*							icon;
+	ETextureGabarite* icon;
 	ELocalisationText							localised_name;
+
+
+};
+
+class EntityButtonLootItem : public EntityButton
+{
+public:
+	EGameItem* stored_game_item;
 
 	std::vector<EButtonGroupFilterBlock*>		matched_filter_blocks;
 
-
+	EntityButtonLootItem();
+	~EntityButtonLootItem();
 };
 
 
