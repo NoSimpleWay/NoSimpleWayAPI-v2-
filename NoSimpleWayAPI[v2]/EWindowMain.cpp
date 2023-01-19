@@ -50,8 +50,9 @@ EButtonGroupFilterBlockEditor*				EWindowMain::loot_filter_editor;
 EButtonGroup*								EWindowMain::world_parameters;
 EButtonGroup*								EWindowMain::tab_list_group;
 EButtonGroupNewLootFilter*					EWindowMain::create_new_loot_filter_group;
-EButtonGroupDataEntity*						EWindowMain::data_entity_filter = nullptr;
-EButtonGroupBottomFilterBlockControl*		EWindowMain::bottom_filter_block_control = nullptr;
+EButtonGroupDataEntity*						EWindowMain::data_entity_filter				= nullptr;
+EButtonGroupBottomFilterBlockControl*		EWindowMain::bottom_filter_block_control	= nullptr;
+EButtonGroupLootSimulator*					EWindowMain::loot_simulator_button_group	= nullptr;
 
 
 
@@ -878,6 +879,100 @@ void EDataActionCollection::action_clear_text(Entity* _entity, ECustomData* _cus
 	}
 }
 
+void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonLootItem* loot_button = static_cast<EntityButtonLootItem*>(_entity);
+
+
+	if (loot_button->matched_bg_color != nullptr)
+	{
+		NS_EGraphicCore::set_active_color(*loot_button->matched_bg_color);
+	}
+	else
+	{
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
+	}
+
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+	NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		//x pos
+		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_x,
+
+		//y pos
+		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_y,
+
+		static_cast<EntityButton*>(_entity)->button_gabarite->size_x,
+		static_cast<EntityButton*>(_entity)->button_gabarite->size_y,
+
+		NS_DefaultGabarites::texture_gabarite_white_pixel
+	);
+
+
+	if (loot_button->matched_rama_color != nullptr)
+	{
+		NS_EGraphicCore::set_active_color(*loot_button->matched_rama_color);
+	}
+	else
+	{
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_RED);
+	}
+
+	ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+	NS_ERenderCollection::add_data_to_vertex_buffer_rama
+	(
+		NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+		//x pos
+		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_x,
+
+		//y pos
+		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_y,
+
+		static_cast<EntityButton*>(_entity)->button_gabarite->size_x,
+		static_cast<EntityButton*>(_entity)->button_gabarite->size_y,
+
+		3.0f,
+
+		NS_DefaultGabarites::texture_gabarite_white_pixel
+	);
+}
+
+void EDataActionCollection::action_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+
+	std::vector<EButtonGroupFilterBlock*> filter_block_vector;
+
+	for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
+	if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(group))//filter block)
+	{
+		filter_block_vector.push_back(static_cast<EButtonGroupFilterBlock*>(group));
+	}
+
+
+	for (EntityButton* but : EWindowMain::loot_simulator_button_group->pointer_to_loot_buttons_segment->button_list)
+	if (but != EWindowMain::loot_simulator_button_group->pointer_to_loot_buttons_segment->slider)
+	{
+		EntityButtonLootItem*
+		loot_button = static_cast<EntityButtonLootItem*>(but);
+
+		EButtonGroupFilterBlock*
+		random_block = static_cast<EButtonGroupFilterBlock*>(filter_block_vector[rand() % filter_block_vector.size()]);
+
+		EDataContainer_Button_StoreColor*
+		color_container = static_cast<EDataContainer_Button_StoreColor*>(random_block->pointer_to_color_button[0]->main_custom_data->data_container);
+		loot_button->matched_bg_color = &color_container->stored_color;
+
+		color_container = static_cast<EDataContainer_Button_StoreColor*>(random_block->pointer_to_color_button[2]->main_custom_data->data_container);
+		loot_button->matched_rama_color = &color_container->stored_color;
+	}
+
+}
+
 void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _text_area)
 {
 
@@ -1032,7 +1127,6 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#4 very strict].filter", &str);
 	
 }
-
 
 EWindowMain::EWindowMain()
 {
@@ -2092,9 +2186,9 @@ EWindowMain::EWindowMain()
 	//		SEARCH BOTTOM LINE
 	{
 		EButtonGroupBottomFilterBlockControl* main_bottom_filter_block_control = new EButtonGroupBottomFilterBlockControl(new ERegionGabarite(0.0f, 0.0f, 1020.0f, 32.0f));
-		(
-			EButtonGroup::create_root_button_group
-		);
+		//(
+		//	EButtonGroup::create_root_button_group
+		//);
 		main_bottom_filter_block_control->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_darken_bg);
 
 		main_bottom_filter_block_control->parent_window = this;
@@ -2167,6 +2261,8 @@ EWindowMain::EWindowMain()
 
 
 	}
+
+
 
 	//NEW BUTTON GROUP
 	//filters block
@@ -2999,6 +3095,107 @@ EWindowMain::EWindowMain()
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
 
+	//		LOOT SIMULATOR
+	{
+		////////////////////////////////
+		EButtonGroupLootSimulator*
+		main_loot_simulator_group = new EButtonGroupLootSimulator(new ERegionGabarite(100.0f, 100.0f, 900.0f, 500.0f));
+
+		main_loot_simulator_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_darken_bg);
+		main_loot_simulator_group->root_group = main_loot_simulator_group;
+		main_loot_simulator_group->parent_window = this;
+
+		loot_simulator_button_group = main_loot_simulator_group;
+		////////////////////////////////
+		EButtonGroup*
+			workspace_part = main_loot_simulator_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);
+
+		////////////////////////////////
+		EButtonGroup*
+		bottom_loot_part = new EButtonGroup(new ERegionGabarite(90.0f, 90.0f));
+		bottom_loot_part->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
+		bottom_loot_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		
+		
+		workspace_part->add_group(bottom_loot_part);
+
+		////////////////////////////////
+		EButtonGroup*
+			top_control_part = new EButtonGroup(new ERegionGabarite(90.0f, 40.0f));
+		top_control_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+		top_control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+		workspace_part->add_group(top_control_part);
+
+		////////////////////////////////
+		EButtonGroup*
+			left_loot_part = new EButtonGroup(new ERegionGabarite(10.0f, 10.0f));
+		left_loot_part->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
+		left_loot_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		bottom_loot_part->add_group(left_loot_part);
+
+		main_loot_simulator_group->pointer_to_loot_buttons_segment = left_loot_part;
+
+		////////////////////////////////
+		EButtonGroup*
+			right_loot_part = new EButtonGroup(new ERegionGabarite(200.0f, 10.0f));
+		right_loot_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+		right_loot_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+		bottom_loot_part->add_group(right_loot_part);
+
+		//
+		for (int i = 0; i < 100; i++)
+		{
+			EntityButtonLootItem*
+			loot_item = new EntityButtonLootItem();
+			loot_item->align_even_if_hidden = true;
+			loot_item->do_not_generate_bg = true;
+
+			float size_multiplier = (rand() % 65) / 100.0f + 0.35f;
+
+			loot_item->make_default_button_with_unedible_text
+			(
+				new ERegionGabarite(250.0f * size_multiplier, 40.0f * size_multiplier),
+				left_loot_part,
+				nullptr,
+				"The loop"
+			);
+			loot_item->main_text_area->font_scale = size_multiplier * 2.0f;
+			loot_item->main_custom_data->actions_on_pre_draw.push_back(EDataActionCollection::action_draw_loot_button);
+			loot_item->main_text_area->set_color((rand() % 256) / 256.0f, (rand() % 256) / 256.0f, (rand() % 256) / 256.0f, 1.0f);
+
+			
+
+			//if (rand() % 3 == 0)
+			//{
+			//	loot_item->disable_draw = true;
+			//}
+
+
+
+			left_loot_part->button_list.push_back(loot_item);
+		}
+
+
+		//		BUTTON REFRESH LOOT SIMULATOR
+		EntityButton*
+		button_refresh = new EntityButton();
+		button_refresh->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(30.0f, 30.0f),
+			top_control_part,
+			&EDataActionCollection::action_refresh_loot_simulator ,
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_refresh_loot_simulator")
+		);
+
+		
+		top_control_part->button_list.push_back(button_refresh);
+
+
+
+
+		button_group_list.push_back(main_loot_simulator_group);
+		EButtonGroup::refresh_button_group(main_loot_simulator_group);
+	}
 
 	//color editor
 	if (true)
@@ -3593,6 +3790,8 @@ EWindowMain::EWindowMain()
 		EButtonGroup::refresh_button_group(main_button_group);
 	}
 
+
+	
 
 	////////////////////////////////////////////////////////////////
 	// 
@@ -7160,8 +7359,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 	GameItemAttribute* matched_filter_block_attribute = nullptr;
 
-	EDataContainer_Group_FilterBlockNonListedSegment* last_non_listed_container = nullptr;
-	EButtonGroup* last_non_listed_group = nullptr;
+	EButtonGroupNonListedLine* last_non_listed_line = nullptr;
 	EntityButtonFilterSound* last_custom_sound_button = nullptr;
 
 	for (std::string str_line : filter_text_lines)
@@ -7184,7 +7382,6 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 		EButtonGroupFilterBlock* whole_block_container = nullptr;
 		EDataContainer_Group_FilterBlockListedSegment* listed_container = nullptr;
-		last_non_listed_container = nullptr;
 
 		target_color_bool = nullptr;
 
@@ -7356,8 +7553,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								{
 									if (!jc_filter_block->pointer_to_non_listed_segment->group_list.empty())
 									{
-										last_non_listed_group = jc_filter_block->pointer_to_non_listed_segment->group_list.back();
-										last_non_listed_container = (EDataContainer_Group_FilterBlockNonListedSegment*)(last_non_listed_group->data_container);
+										last_non_listed_line = static_cast<EButtonGroupNonListedLine*>(jc_filter_block->pointer_to_non_listed_segment->group_list.back());
 									}
 								}
 								////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -7482,9 +7678,9 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							{
 								condition_text = buffer_text;
 
-								if ((last_non_listed_container != nullptr) && (last_non_listed_container->target_button_with_condition != nullptr))
+								if ((last_non_listed_line != nullptr) && (last_non_listed_line->target_button_with_condition != nullptr))
 								{
-									last_non_listed_container->target_button_with_condition->main_text_area->change_text(condition_text);
+									last_non_listed_line->target_button_with_condition->main_text_area->change_text(condition_text);
 								}
 							}
 							else
@@ -7494,16 +7690,16 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 								if
 									(
-										(last_non_listed_container != nullptr)
+										(last_non_listed_line != nullptr)
 										&&
-										(last_non_listed_container->target_button_with_condition != nullptr)
+										(last_non_listed_line->target_button_with_condition != nullptr)
 										&&
 										(matched_filter_block_attribute != nullptr)
 										&&
 										(matched_filter_block_attribute->have_operator)
 										)
 								{
-									Entity::get_last_text_area(last_non_listed_container->target_button_with_condition)->change_text("=");
+									Entity::get_last_text_area(last_non_listed_line->target_button_with_condition)->change_text("=");
 								}
 							}
 
@@ -7542,7 +7738,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							{
 								if
 									(
-										(last_non_listed_container != nullptr)
+										(last_non_listed_line != nullptr)
 										&&
 										(matched_filter_block_attribute != nullptr)
 										)
@@ -7555,10 +7751,10 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 												(matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
 												)
 											&&
-											(Entity::get_last_text_area(last_non_listed_container->target_button_with_value) != nullptr)
+											(Entity::get_last_text_area(last_non_listed_line->target_button_with_value) != nullptr)
 											)
 									{
-										Entity::get_last_text_area(last_non_listed_container->target_button_with_value)->change_text(buffer_text);
+										Entity::get_last_text_area(last_non_listed_line->target_button_with_value)->change_text(buffer_text);
 									}
 
 									if
@@ -7566,11 +7762,11 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									{
 										if (EStringUtils::to_lower(buffer_text) == "true")
 										{
-											*static_cast <EDataContainer_Button_BoolSwitcher*>(last_non_listed_container->target_button_with_value->custom_data_list.back()->data_container)->target_value = true;
+											*static_cast <EDataContainer_Button_BoolSwitcher*>(last_non_listed_line->target_button_with_value->custom_data_list.back()->data_container)->target_value = true;
 										}
 										else
 										{
-											*static_cast <EDataContainer_Button_BoolSwitcher*>(last_non_listed_container->target_button_with_value->custom_data_list.back()->data_container)->target_value = false;
+											*static_cast <EDataContainer_Button_BoolSwitcher*>(last_non_listed_line->target_button_with_value->custom_data_list.back()->data_container)->target_value = false;
 										}
 
 									}
@@ -7593,7 +7789,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 											}
 										}*/
 
-										last_non_listed_container->rarity_router_button->select_variant_by_base_name(buffer_text);
+										last_non_listed_line->rarity_router_button->select_variant_by_base_name(buffer_text);
 									}
 
 									if
@@ -7603,12 +7799,12 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										{
 											if (EStringUtils::compare_ignoring_case(qv->localisation->base_name, buffer_text))
 											{
-												EntityButton::get_last_text_area(last_non_listed_container->target_button_with_value)->localisation_text = *qv->localisation;
+												EntityButton::get_last_text_area(last_non_listed_line->target_button_with_value)->localisation_text = *qv->localisation;
 
-												EntityButton::get_last_text_area(last_non_listed_container->target_button_with_value)->stored_color = *qv->color;
-												EntityButton::get_last_text_area(last_non_listed_container->target_button_with_value)->color = *qv->color;
+												EntityButton::get_last_text_area(last_non_listed_line->target_button_with_value)->stored_color = *qv->color;
+												EntityButton::get_last_text_area(last_non_listed_line->target_button_with_value)->color = *qv->color;
 
-												EntityButton::get_last_text_area(last_non_listed_container->target_button_with_value)->change_text(qv->localisation->localisations[NSW_localisation_EN]);
+												EntityButton::get_last_text_area(last_non_listed_line->target_button_with_value)->change_text(qv->localisation->localisations[NSW_localisation_EN]);
 											}
 										}
 									}
@@ -8130,26 +8326,24 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 		//EInputCore::logger_simple_info("add new non listed button");
 		target_group_for_content = whole_filter_block_data->pointer_to_non_listed_segment;
 
-		EButtonGroup* non_listed_line =
-			EButtonGroup::create_invisible_button_group
-			(
-				new ERegionGabarite(20.0f, button_height),
-				EGUIStyle::active_style
-			)
-			->
-			set_parameters
-			(
-				ChildAlignMode::ALIGN_VERTICAL,
-				NSW_dynamic_autosize,
-				NSW_static_autosize
-			);
+		EButtonGroupNonListedLine*
+		non_listed_line = new EButtonGroupNonListedLine(new ERegionGabarite(20.0f, button_height));
+		non_listed_line->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_without_slider, bgroup_default_bg);
+
+		
+
+		non_listed_line->set_parameters
+		(
+			ChildAlignMode::ALIGN_VERTICAL,
+			NSW_dynamic_autosize,
+			NSW_static_autosize
+		);
 		non_listed_line->button_align_type = ButtonAlignType::BUTTON_ALIGN_LEFT;
 
 		whole_filter_block_data->pointer_to_non_listed_segment->add_group(non_listed_line);
 
-		auto non_listed_line_data = new EDataContainer_Group_FilterBlockNonListedSegment();
-		non_listed_line_data->target_filter_block_attribute = _game_item_attribute;
-		non_listed_line->data_container = non_listed_line_data;
+		
+		non_listed_line->target_filter_block_attribute = _game_item_attribute;
 
 		/*CLOSE BUTTON*/
 		///////////////////////////////////////////////////////////////////////////////////////////////
@@ -8192,7 +8386,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 		ETextArea* last_text_area = Entity::get_last_text_area(jc_button);
 		if (last_text_area != nullptr) { last_text_area->localisation_text = _game_item_attribute->localisation; }
-		non_listed_line_data->target_button_with_attribute_name = jc_button;
+		non_listed_line->target_button_with_attribute_name = jc_button;
 
 		non_listed_line->button_list.push_back(jc_button);
 		///////////////////////////////////////////////////////////////////////////////////////////////
@@ -8223,13 +8417,13 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 			non_listed_line->button_list.push_back(jc_button);
 
-			non_listed_line_data->target_button_with_condition = jc_button;
+			non_listed_line->target_button_with_condition = jc_button;
 		}
 		else
 		{
 			input_field_additional_width = button_height * 2.0f + BUTTON_FORCE_FIELD_SIZE;
 
-			non_listed_line_data->target_button_with_condition = nullptr;
+			non_listed_line->target_button_with_condition = nullptr;
 		}
 		///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -8261,7 +8455,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 				//EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(&rarity_color[rarity_id]);
 				//Entity::get_last_text_area(jc_button)->localisation_text = _filter_block_attribute->localisation;
 
-				//non_listed_line_data->target_button_with_value = jc_button;
+				//non_listed_line->target_button_with_value = jc_button;
 
 				EntityButtonVariantRouterForFilterBlock*
 					rarity_button = new EntityButtonVariantRouterForFilterBlock();
@@ -8274,7 +8468,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 					rarity_button->parent_filter_block = _target_filter_block;
 					rarity_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
 
-					non_listed_line_data->rarity_router_button = rarity_button;
+					non_listed_line->rarity_router_button = rarity_button;
 					non_listed_line->button_list.push_back(rarity_button);
 
 					RouterVariant* router_variant	= nullptr;
@@ -8362,7 +8556,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 				Entity::get_last_text_area(jc_button)->localisation_text = _game_item_attribute->localisation;
 
-				non_listed_line_data->target_button_with_value = jc_button;
+				non_listed_line->target_button_with_value = jc_button;
 				non_listed_line->button_list.push_back(jc_button);
 
 				break;
@@ -8383,7 +8577,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 				jc_button->parent_filter_block = _target_filter_block;
 				jc_button->used_filter_block_attribute = _game_item_attribute;
 
-				non_listed_line_data->target_button_with_value = jc_button;
+				non_listed_line->target_button_with_value = jc_button;
 				non_listed_line->button_list.push_back(jc_button);
 
 				break;
@@ -8409,7 +8603,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 				Entity::get_last_text_area(jc_button)->localisation_text = _game_item_attribute->localisation;
 				
-				non_listed_line_data->target_button_with_value = jc_button;
+				non_listed_line->target_button_with_value = jc_button;
 				non_listed_line->button_list.push_back(jc_button);
 			}
 
@@ -8635,7 +8829,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 		//NON-LISTED
 		for (EButtonGroup* n_listed : non_listed_section->group_list)
 		{
-			auto container = static_cast<EDataContainer_Group_FilterBlockNonListedSegment*>(n_listed->data_container);
+			EButtonGroupNonListedLine* container = static_cast<EButtonGroupNonListedLine*>(n_listed);
 
 			result_string
 				+=
@@ -8648,7 +8842,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 				text_area->
 				localisation_text.base_name;
 
-			if (container->target_button_with_condition != nullptr)
+			if ((container->target_button_with_condition != nullptr) && (container->target_button_with_condition->main_text_area->original_text != ""))
 			{
 				result_string += " ";
 				result_string += (Entity::get_last_text_area(container->target_button_with_condition)->original_text);
@@ -8711,10 +8905,18 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 					result_string += " ==";
 				}
 
-				if (container->input_field != nullptr)
+				if ((container->input_field != nullptr))
 				{
-					result_string += " " + container->input_field->main_text_area->original_text;
+					if (container->input_field->main_text_area->original_text != "")
+					{ 
+						result_string += " " + container->input_field->main_text_area->original_text;
+					}
+					else
+					{
+						result_string += ">=1" + container->input_field->main_text_area->original_text;
+					}
 				}
+
 
 				int id = 0;
 
@@ -9670,5 +9872,17 @@ void EButtonGroupFilterBlockEditor::button_group_prechange()
 }
 
 EButtonGroupFilterBlockSeparator::~EButtonGroupFilterBlockSeparator()
+{
+}
+
+EntityButtonLootItem::EntityButtonLootItem()
+{
+}
+
+EntityButtonLootItem::~EntityButtonLootItem()
+{
+}
+
+void EntityButtonLootItem::get_matched_filter_blocks()
 {
 }

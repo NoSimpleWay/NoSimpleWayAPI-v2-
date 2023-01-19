@@ -459,17 +459,17 @@ public:
 //
 //};
 
-class EDataContainer_Group_FilterBlockNonListedSegment : public EDataContainer
-{
-public:
-	EntityButton* target_button_with_attribute_name;
-	EntityButton* target_button_with_condition;
-	EntityButton* target_button_with_value;
-
-	EntityButtonVariantRouterForFilterBlock* rarity_router_button;
-
-	GameItemAttribute* target_filter_block_attribute;
-};
+//class EDataContainer_Group_FilterBlockNonListedSegment : public EDataContainer
+//{
+//public:
+//	EntityButton* target_button_with_attribute_name;
+//	EntityButton* target_button_with_condition;
+//	EntityButton* target_button_with_value;
+//
+//	EntityButtonVariantRouterForFilterBlock* rarity_router_button;
+//
+//	GameItemAttribute* target_filter_block_attribute;
+//};
 
 
 

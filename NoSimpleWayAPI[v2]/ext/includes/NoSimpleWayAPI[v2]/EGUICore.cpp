@@ -2081,9 +2081,15 @@ void EButtonGroup::realign_all_buttons()
 					(false)
 				)
 				&&
-				(!but->disable_draw)
-				&&
-				(!but->disabled)
+				(
+					(
+						(!but->disable_draw)
+						&&
+						(!but->disabled)
+					)
+					||
+					(but->align_even_if_hidden)
+				)
 			)
 		{
 
@@ -2107,15 +2113,24 @@ void EButtonGroup::realign_all_buttons()
 				//new line
 				if (but->offset_x + but->button_gabarite->size_x + slider_additional + BUTTON_FORCE_FIELD_SIZE >= region_gabarite->size_x)
 				{
+					float max_size_y = 0.0f;
+
+					for (EntityButton* bbb : button_vector)
+					{
+						max_size_y = max(bbb->button_gabarite->size_y, max_size_y);
+					}
+
 					if (!but->disable_force_field)
 					{
 						but->offset_x = but->parent_button_group->border_left + BUTTON_FORCE_FIELD_SIZE;
-						but->offset_y += prev_button->button_gabarite->size_y + BUTTON_FORCE_FIELD_SIZE * 2.0f;
+						but->offset_y += max_size_y + BUTTON_FORCE_FIELD_SIZE * 2.0f;
 					}
 					else
 					{
 						but->offset_x = but->parent_button_group->border_left;
-						but->offset_y += prev_button->button_gabarite->size_y + 2.0f;
+
+						
+						but->offset_y += max_size_y + 2.0f;
 					}
 
 					

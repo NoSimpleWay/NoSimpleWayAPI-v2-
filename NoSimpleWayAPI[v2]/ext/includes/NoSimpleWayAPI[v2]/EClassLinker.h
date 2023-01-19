@@ -12,6 +12,8 @@
 #define disable_deleting	false
 #define debug_deleting		false
 
+
+
 class ECustomData;
 class ERegionGabarite;
 class EClickableArea;
