@@ -252,13 +252,13 @@ public:
 
 
 	//sounds
-	EntityButtonFilterSound* pointer_to_custom_sound_button;
-	bool	custom_sound_suppressor_bool;
+	EntityButtonFilterSound*					pointer_to_custom_sound_button;
+	bool										custom_sound_suppressor_bool;
 
-	EntityButtonFilterSound* pointer_to_game_sound_button;
-	bool	game_sound_suppressor_bool;
-	EntityButton* sound_volume;
-	float	sound_volume_value = 1.0f;
+	EntityButtonFilterSound*					pointer_to_game_sound_button;
+	bool										game_sound_suppressor_bool;
+	EntityButton*								sound_volume;
+	float										sound_volume_value = 1.0f;
 
 
 	EntityButtonVariantRouterForFilterBlock* pointer_to_positional_variant_button;
@@ -378,30 +378,6 @@ public:
 	EntityButton* search_button_clear;
 };
 
-class EButtonGroupLootSimulator : public EButtonGroup
-{
-public:
-	EButtonGroupLootSimulator(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
-
-	EButtonGroup* pointer_to_loot_buttons_segment;
-};
-
-class EButtonGroupNonListedLine : public EButtonGroup
-{
-public:
-	EButtonGroupNonListedLine(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
-
-	EntityButton* target_button_with_attribute_name;
-	EntityButton* target_button_with_condition;
-	EntityButton* target_button_with_value;
-
-	EntityButtonVariantRouterForFilterBlock* rarity_router_button;
-
-	GameItemAttribute* target_filter_block_attribute;
-};
-
-
-
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
 
 
@@ -473,8 +449,6 @@ namespace EDataActionCollection
 
 	void action_change_separator_shrink_flag(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_clear_text(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_draw_loot_button(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text
@@ -664,26 +638,9 @@ public:
 	ETextureGabarite* icon;
 	ELocalisationText							localised_name;
 
-
-
-
-};
-
-class EntityButtonLootItem : public EntityButton
-{
-public:
-	EGameItem* stored_game_item;
-
 	std::vector<EButtonGroupFilterBlock*>		matched_filter_blocks;
 
-	Helper::HSVRGBAColor**						matched_bg_color;
-	Helper::HSVRGBAColor**						matched_text_color;
-	Helper::HSVRGBAColor**						matched_rama_color;
 
-	EntityButtonLootItem();
-	~EntityButtonLootItem();
-
-	void get_matched_filter_blocks();
 };
 
 
