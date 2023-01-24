@@ -252,13 +252,13 @@ public:
 
 
 	//sounds
-	EntityButtonFilterSound*					pointer_to_custom_sound_button;
-	bool										custom_sound_suppressor_bool;
+	EntityButtonFilterSound* pointer_to_custom_sound_button;
+	bool	custom_sound_suppressor_bool;
 
-	EntityButtonFilterSound*					pointer_to_game_sound_button;
-	bool										game_sound_suppressor_bool;
-	EntityButton*								sound_volume;
-	float										sound_volume_value = 1.0f;
+	EntityButtonFilterSound* pointer_to_game_sound_button;
+	bool	game_sound_suppressor_bool;
+	EntityButton* sound_volume;
+	float	sound_volume_value = 1.0f;
 
 
 	EntityButtonVariantRouterForFilterBlock* pointer_to_positional_variant_button;
@@ -378,6 +378,34 @@ public:
 	EntityButton* search_button_clear;
 };
 
+class EButtonGroupLootSimulator : public EButtonGroup
+{
+public:
+	EButtonGroupLootSimulator(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	EButtonGroup* pointer_to_loot_buttons_segment;
+
+	
+	static bool this_group_is_matched	(EGameItem* _game_item, EButtonGroupFilterBlock* _filter_block);
+	static bool is_condition_satisfied	(int _left, std::string _operator, int _right);
+};
+
+class EButtonGroupNonListedLine : public EButtonGroup
+{
+public:
+	EButtonGroupNonListedLine(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	EntityButton* target_button_with_attribute_name;
+	EntityButton* target_button_with_condition;
+	EntityButton* target_button_with_value;
+
+	EntityButtonVariantRouterForFilterBlock* rarity_router_button;
+
+	GameItemAttribute* target_filter_block_attribute;
+};
+
+
+
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
 
 
@@ -449,6 +477,10 @@ namespace EDataActionCollection
 
 	void action_change_separator_shrink_flag(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_clear_text(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_loot_button(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_refresh_loot_simulator_sizes(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_highlight_matched_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text
@@ -503,12 +535,23 @@ enum FilterAttributeValueType
 
 };
 
+enum DefaultGameAttributeEnum
+{
+	GAME_ATTRIBUTE_HEIGHT,
+	GAME_ATTRIBUTE_WIDTH,
+	GAME_ATTRIBUTE_BASE_CLASS,
+	GAME_ATTRIBUTE_BASE_TYPE,
+
+	_GAME_ATTRIBUTE_LAST_ELEMENT
+
+};
+
 class GameItemAttribute
 {
 public:
 	FilterAttributeType			filter_attribute_type;
 	FilterAttributeValueType	filter_attribute_value_type;
-	EFilterRule* filter_rule;
+	EFilterRule*				filter_rule;
 
 	bool have_operator = false;
 	bool input_field_for_listed = false;
@@ -522,6 +565,10 @@ public:
 	float						button_x_size_override = 0.0f;
 
 	bool						commentary_config = false;
+
+	static GameItemAttribute* get_attribute_by_name(std::vector<GameItemAttribute*> *_vector, std::string _name);
+
+	static GameItemAttribute* default_game_attribute[DefaultGameAttributeEnum::_GAME_ATTRIBUTE_LAST_ELEMENT];
 };
 
 static void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_group, GameItemAttribute* _filter_block_attribute);
@@ -614,6 +661,8 @@ public:
 	static std::vector <EButtonGroupFilterBlockEditor*> filter_block_tabs;
 	static void write_loot_filter_to_disc(std::string _full_path, std::string* _data);
 
+	static void register_loot_simulator_patterns();
+
 
 };
 
@@ -624,23 +673,137 @@ public:
 class EGameItemAttributeContainer
 {
 public:
-	GameItemAttribute* item_attribute;
+	GameItemAttribute*	target_attribute;
 
-	std::string			attribute_value;
+	std::string			attribute_value_str;
+	int					attribute_value_int;
+	bool				attribute_value_bool;
 };
 
 class EGameItem
 {
 public:
-	EDataEntity* stored_data_entity;
+	EDataEntity*								stored_data_entity;
 
-	std::vector<EGameItemAttributeContainer*>	attributes_list;
-	ETextureGabarite* icon;
+	std::vector<EGameItemAttributeContainer>	attribute_container_list;
+	ETextureGabarite*							icon;
 	ELocalisationText							localised_name;
+	int											quantity;
 
-	std::vector<EButtonGroupFilterBlock*>		matched_filter_blocks;
+	void import_base_attributes_from_data_entity();
+
+	
 
 
 };
 
+class EntityButtonLootItem : public EntityButton
+{
+public:
+	EGameItem*				stored_game_item;
 
+	std::vector<EButtonGroupFilterBlock*>		matched_filter_blocks;
+
+	Helper::HSVRGBAColor**	matched_bg_color;
+	Helper::HSVRGBAColor**	matched_text_color;
+	Helper::HSVRGBAColor**	matched_rama_color;
+
+	float*					matched_size;
+
+	EntityButtonLootItem();
+	~EntityButtonLootItem();
+
+	void get_matched_filter_blocks();
+	void get_matched_filter_blocks_list(EButtonGroupFilterBlockEditor* _filter_block_editor);
+};
+
+
+
+
+
+
+struct LootSimulatorTagFilter
+{
+public:
+	std::string					target_tag;
+	std::vector<std::string>	suitable_tags;
+	std::vector<std::string>	banned_tags;
+};
+
+
+struct GameAttributeGenerator
+{
+public:
+	EGameItemAttributeContainer* target_attribute_container;
+	void virtual execute_generation(EGameItem* _game_item);
+};
+
+//	Random int between MIN and MAX, powered by "generator pow"  min + (pow(rand, generator_pow)  * (max - min))
+struct GameAttributeGeneratorMinMaxInt : public GameAttributeGenerator
+{
+public:
+	int min_value;
+	int max_value;
+
+	float generator_pow = 1.0f;
+
+	virtual void execute_generation(EGameItem* _game_item);
+};
+
+struct GameAttributeGeneratorQuantity : public GameAttributeGeneratorMinMaxInt
+{
+public:
+	void execute_generation(EGameItem* _game_item);
+};
+
+//	Generate sockets and colors
+struct GameAttributeGeneratorSocketsLinksColours : public GameAttributeGenerator
+{
+public:
+	int		sockets_min_value;
+	int		sockets_max_value;
+	float	sockets_pow = 1.0f;
+
+	int		links_min;
+	int		links_max;
+	float	links_pow = 1.0f;
+
+	int		color_red_weight	= 100;
+	int		color_green_weight	= 100;
+	int		color_blue_weight	= 100;
+	int		color_white_weight	= 0;
+	int		color_abyss_weight	= 0;
+	int		color_delve_weight	= 0;
+
+	void execute_generation(EGameItem* _game_item);
+};
+
+struct GameItemGenerator
+{
+public:
+	GameItemGenerator();
+
+	std::vector<GameAttributeGenerator*>	attribute_generators_list;
+
+	std::string								filtered_by_exact_name;
+	std::vector<LootSimulatorTagFilter*>	filtered_by_tags;
+
+	ELocalisationText						localisation;
+	ETextureGabarite*						icon;
+
+	EGameItem*								generate_game_item();
+
+};
+
+class LootSimulatorPattern
+{
+public:
+	ELocalisationText							localised_name;
+	ETextureGabarite*							icon;	
+
+	LootSimulatorPattern();
+
+	std::vector<GameItemGenerator*>				game_item_generator_list;
+
+	static std::vector<LootSimulatorPattern*>	registered_loot_simulater_pattern_list;
+};

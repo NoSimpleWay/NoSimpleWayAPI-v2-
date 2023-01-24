@@ -2216,7 +2216,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 	//search already loaded texture gabarite
 	int
 	index = EStringUtils::hashFunction(_full_path) & 0x000000000000000F;
-	index = min(index, 16);
+	index = min(index, 15);
 	index = max(index, 0);
 
 	for (ETextureGabarite* g : NS_EGraphicCore::texture_gabarites_list[index])

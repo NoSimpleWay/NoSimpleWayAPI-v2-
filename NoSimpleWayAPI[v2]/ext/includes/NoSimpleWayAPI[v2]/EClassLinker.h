@@ -75,3 +75,4 @@ class EntityButtonVariantRouterForFilterBlock;
 class EntityButtonForFilterBlock;
 
 class EntityButtonVerticalSlider;
+class EGameItem;

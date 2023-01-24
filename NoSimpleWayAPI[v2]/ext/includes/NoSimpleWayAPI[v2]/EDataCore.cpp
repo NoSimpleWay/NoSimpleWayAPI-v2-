@@ -3078,7 +3078,7 @@ void ETextParser::split_data_entity_list_to_named_structs()
 			//EInputCore::logger_param("Hash of [" + data_entity_name + "]", std::to_string(EStringUtils::hashFunction(data_entity_name) & 0x000000000000000F));
 			
 			index = EStringUtils::hashFunction(data_entity_name) & 0x000000000000000F;
-			index = min(index, 16);
+			index = min(index, 15);
 			index = max(index, 0);
 
 			arr[index]++;
