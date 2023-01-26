@@ -388,6 +388,7 @@ public:
 	
 	static bool this_group_is_matched	(EGameItem* _game_item, EButtonGroupFilterBlock* _filter_block);
 	static bool is_condition_satisfied	(int _left, std::string _operator, int _right);
+	static bool is_sockets_matched(std::string _block, std::string _operator, std::string _item);
 };
 
 class EButtonGroupNonListedLine : public EButtonGroup
@@ -601,7 +602,7 @@ static std::vector<GameItemAttribute*> registered_game_item_attributes;
 static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameItemAttribute* _attribute, std::string _attribute_name, EButtonGroup* _parent);
 
 #define NSW_registered_rarity_count					4//	1|normal		2|magic			3|rare				4|unique
-#define NSW_registered_altered_gem_quality_count	3//	1|anomalous		2|divergent		3|phantasmal		4|unique
+#define NSW_registered_altered_gem_quality_count	4//	1|superior		2|anomalous		3|divergent			4|phantasmal
 
 
 constexpr int filter_tabs_count = 5;
@@ -673,11 +674,13 @@ public:
 class EGameItemAttributeContainer
 {
 public:
-	GameItemAttribute*	target_attribute;
+	GameItemAttribute*			target_attribute;
 
-	std::string			attribute_value_str;
-	int					attribute_value_int;
-	bool				attribute_value_bool;
+	std::string					attribute_value_str;
+	int							attribute_value_int;
+	bool						attribute_value_bool;
+
+	std::vector<std::string>	listed_value_list;
 };
 
 class EGameItem
@@ -775,6 +778,12 @@ public:
 	int		color_abyss_weight	= 0;
 	int		color_delve_weight	= 0;
 
+	void execute_generation(EGameItem* _game_item);
+};
+
+struct GameAttributeGeneratorMapInfluence : public GameAttributeGenerator
+{
+public:
 	void execute_generation(EGameItem* _game_item);
 };
 

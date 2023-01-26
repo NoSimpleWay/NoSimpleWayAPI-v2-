@@ -24421,6 +24421,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"CrusaderExalt"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -24461,6 +24463,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Deregulation-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -24501,6 +24505,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Electroshock-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -24605,6 +24611,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Facetor's-Lens"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -24673,6 +24681,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragmentation-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -24753,6 +24763,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Haemocombustion-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -24807,6 +24819,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"HunterExalt"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25278,6 +25292,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"AdjudicatorExalt"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25372,6 +25388,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"League: Ritual"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25384,6 +25402,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"RoguesMarker"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"48"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25528,6 +25548,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25610,6 +25632,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Stacked_Deck_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"50"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25740,6 +25764,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Time-light-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -26102,6 +26128,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"WarlordExalt"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30397,6 +30427,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"EnkindlingOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"40"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30409,6 +30441,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"InstillingOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"40"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30421,6 +30455,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Coinage"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31063,6 +31099,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31091,6 +31129,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"8"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31105,6 +31145,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"35"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31119,6 +31161,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31133,6 +31177,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31147,6 +31193,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31161,6 +31209,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"12"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31175,6 +31225,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"68"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31896,6 +31948,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"68"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31922,6 +31976,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"78"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31936,6 +31992,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"81"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31950,6 +32008,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"68"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31962,6 +32022,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GreaterEldritchIchor"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"73"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31976,6 +32038,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"78"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31990,6 +32054,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"81"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32004,6 +32070,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32018,6 +32086,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"League: Ritual"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32032,6 +32102,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"78"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32046,6 +32118,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"78"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32060,6 +32134,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"78"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32074,6 +32150,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32088,6 +32166,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32102,6 +32182,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32116,6 +32198,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32130,6 +32214,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32144,6 +32230,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32158,6 +32246,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32172,6 +32262,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"81"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32186,6 +32278,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32200,6 +32294,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -47136,6 +47232,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"PrimalLifeforce"
 	
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -47154,6 +47252,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"VividLifeforce"
 	
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -47171,6 +47271,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"WildLifeforce"
 	
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -47188,6 +47290,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SacredLifeforce"
 	
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

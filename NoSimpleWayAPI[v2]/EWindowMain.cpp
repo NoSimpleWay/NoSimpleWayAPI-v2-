@@ -163,9 +163,9 @@ void EDataActionCollection::action_select_this_text_variant(Entity* _entity, ECu
 	EDataContainer* root_container = root_group->data_container;
 
 
-	ETextArea* target_text_area = EntityButton::get_last_clickable_area(static_cast<EDataContainer_Group_TextSelectorFromVariants*>(root_container)->target_button)->text_area;
+	ETextArea* target_text_area = static_cast<EDataContainer_Group_TextSelectorFromVariants*>(root_container)->target_button->main_text_area;
 
-	target_text_area->localisation_text = clicked_button_text_area->localisation_text;
+	//target_text_area->localisation_text = clicked_button_text_area->localisation_text;
 	//*target_text_area->stored_text = *EntityButton::get_last_clickable_area(static_cast<EntityButton*>(_entity))->text_area->stored_text;
 
 	//transfer parameters from [select rarity button] to [non-listed button]
@@ -173,7 +173,7 @@ void EDataActionCollection::action_select_this_text_variant(Entity* _entity, ECu
 	target_text_area->color = clicked_button_text_area->color;
 	target_text_area->localisation_text = clicked_button_text_area->localisation_text;
 
-	target_text_area->change_text(clicked_button_text_area->original_text);
+	target_text_area->change_text(clicked_button_text_area->localisation_text.localisations[NSW_localisation_EN]);
 
 	root_group->is_active = false;
 }
@@ -977,10 +977,10 @@ void EDataActionCollection::action_refresh_loot_simulator(Entity* _entity, ECust
 
 
 	//
-	for (int i = 0; i < 1; i++)
+	for (int i = 0; i < LootSimulatorPattern::registered_loot_simulater_pattern_list[0]->game_item_generator_list.size(); i++)
 	{
 
-		EGameItem* game_item = LootSimulatorPattern::registered_loot_simulater_pattern_list[0]->game_item_generator_list[0]->generate_game_item();
+		EGameItem* game_item = LootSimulatorPattern::registered_loot_simulater_pattern_list[0]->game_item_generator_list[i]->generate_game_item();
 		//EInputCore::logger_param("WTF", game_item->attribute_container_list[0].target_attribute->localisation.base_name);
 
 		EntityButtonLootItem*
@@ -1371,10 +1371,10 @@ EWindowMain::EWindowMain()
 	localisation_text->localisations[NSW_localisation_EN] = "Anomalous";
 	localisation_text->localisations[NSW_localisation_RU] = "Аномальный";
 
-	registered_alternate_gem_quality_router_variants[0] = new RouterVariant();
-	registered_alternate_gem_quality_router_variants[0]->localisation = localisation_text;
-	registered_alternate_gem_quality_router_variants[0]->color = new Helper::HSVRGBAColor();
-	registered_alternate_gem_quality_router_variants[0]->color->set_color_RGBA(0.9f, 0.95f, 1.0f, 1.0f);
+	registered_alternate_gem_quality_router_variants[1] = new RouterVariant();
+	registered_alternate_gem_quality_router_variants[1]->localisation = localisation_text;
+	registered_alternate_gem_quality_router_variants[1]->color = new Helper::HSVRGBAColor();
+	registered_alternate_gem_quality_router_variants[1]->color->set_color_RGBA(1.0f, 0.4f, 0.4f, 1.0f);
 
 
 	//Divergent
@@ -1384,10 +1384,10 @@ EWindowMain::EWindowMain()
 	localisation_text->localisations[NSW_localisation_EN] = "Divergent";
 	localisation_text->localisations[NSW_localisation_RU] = "Искривлённый";
 
-	registered_alternate_gem_quality_router_variants[1] = new RouterVariant();
-	registered_alternate_gem_quality_router_variants[1]->localisation = localisation_text;
-	registered_alternate_gem_quality_router_variants[1]->color = new Helper::HSVRGBAColor();
-	registered_alternate_gem_quality_router_variants[1]->color->set_color_RGBA(0.9f, 0.95f, 1.0f, 1.0f);
+	registered_alternate_gem_quality_router_variants[2] = new RouterVariant();
+	registered_alternate_gem_quality_router_variants[2]->localisation = localisation_text;
+	registered_alternate_gem_quality_router_variants[2]->color = new Helper::HSVRGBAColor();
+	registered_alternate_gem_quality_router_variants[2]->color->set_color_RGBA(0.4f, 1.0f, 0.4f, 1.0f);
 
 
 	//Phantasmal
@@ -1397,10 +1397,10 @@ EWindowMain::EWindowMain()
 	localisation_text->localisations[NSW_localisation_EN] = "Phantasmal";
 	localisation_text->localisations[NSW_localisation_RU] = "Фантомный";
 
-	registered_alternate_gem_quality_router_variants[2] = new RouterVariant();
-	registered_alternate_gem_quality_router_variants[2]->localisation = localisation_text;
-	registered_alternate_gem_quality_router_variants[2]->color = new Helper::HSVRGBAColor();
-	registered_alternate_gem_quality_router_variants[2]->color->set_color_RGBA(0.9f, 0.95f, 1.0f, 1.0f);
+	registered_alternate_gem_quality_router_variants[3] = new RouterVariant();
+	registered_alternate_gem_quality_router_variants[3]->localisation = localisation_text;
+	registered_alternate_gem_quality_router_variants[3]->color = new Helper::HSVRGBAColor();
+	registered_alternate_gem_quality_router_variants[3]->color->set_color_RGBA(0.4f, 0.4f, 1.0f, 1.0f);
 
 
 
@@ -3615,65 +3615,24 @@ EWindowMain::EWindowMain()
 		auto data_text_selector = new EDataContainer_Group_TextSelectorFromVariants();
 		whole_quality_list_group->data_container = data_text_selector;
 
-		//anomalous
-		jc_button = new EntityButtonFilterRule();
-		jc_button->make_default_button_with_unedible_text
-		(
-			new ERegionGabarite(100.0f, 20.0f),
-			workspace_quality_group,
-			&EDataActionCollection::action_select_this_text_variant,
-			"Аномальный"
-		);
 
-		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(1.0f, 0.8f, 0.8f, 1.0f);
-		workspace_quality_group->button_list.push_back(jc_button);
+		for (int i = 0; i < NSW_registered_altered_gem_quality_count; i++)
+		{
+			jc_button = new EntityButtonFilterRule();
+			jc_button->make_default_button_with_unedible_text
+			(
+				new ERegionGabarite(100.0f, 20.0f),
+				workspace_quality_group,
+				&EDataActionCollection::action_select_this_text_variant,
+				""
+			);
 
-		ltext.base_name = "Anomalous";
+			jc_button->main_text_area->set_color(registered_alternate_gem_quality_router_variants[i]->color);
+			jc_button->main_text_area->change_text(registered_alternate_gem_quality_router_variants[i]->localisation->localisations[NSW_localisation_EN]);
+			EntityButton::get_last_text_area(jc_button)->localisation_text = *registered_alternate_gem_quality_router_variants[i]->localisation;
 
-		ltext.localisations[NSW_localisation_EN] = "Anomalous";
-		ltext.localisations[NSW_localisation_RU] = "Аномальный";
-
-		EntityButton::get_last_text_area(jc_button)->localisation_text = ltext;
-
-		//divergent
-		jc_button = new EntityButtonFilterRule();
-		jc_button->make_default_button_with_unedible_text
-		(
-			new ERegionGabarite(100.0f, 20.0f),
-			workspace_quality_group,
-			&EDataActionCollection::action_select_this_text_variant,
-			"Искривлённый"
-		);
-
-		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(0.8f, 1.0f, 0.8f, 1.0f);
-		workspace_quality_group->button_list.push_back(jc_button);
-
-		ltext.base_name = "Divergent";
-
-		ltext.localisations[NSW_localisation_EN] = "Divergent";
-		ltext.localisations[NSW_localisation_RU] = "Искривлённый";
-
-		EntityButton::get_last_text_area(jc_button)->localisation_text = ltext;
-
-		//phantasmal
-		jc_button = new EntityButtonFilterRule();
-		jc_button->make_default_button_with_unedible_text
-		(
-			new ERegionGabarite(100.0f, 20.0f),
-			workspace_quality_group,
-			&EDataActionCollection::action_select_this_text_variant,
-			"Фантомный"
-		);
-
-		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(0.8f, 0.8f, 1.0f, 1.0f);
-		workspace_quality_group->button_list.push_back(jc_button);
-
-		ltext.base_name = "Phantasmal";
-
-		ltext.localisations[NSW_localisation_EN] = "Phantasmal";
-		ltext.localisations[NSW_localisation_RU] = "Фантомный";
-
-		EntityButton::get_last_text_area(jc_button)->localisation_text = ltext;
+			workspace_quality_group->button_list.push_back(jc_button);
+		}
 
 		button_group_list.push_back(whole_quality_list_group);
 		EButtonGroup::refresh_button_group(whole_quality_list_group);
@@ -8295,34 +8254,152 @@ void EWindowMain::register_loot_simulator_patterns()
 
 
 
-		/////////////////////////////			ITEM GENERATOR			/////////////////////////////////////////////
-		game_item_generator = new GameItemGenerator();
-		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-		game_item_generator->filtered_by_exact_name = "Chaos Orb";
-
-		/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
+		/////////////////////////////			ITEM GENERATOR (CHAOS ORB)			/////////////////////////////////////////////
 		{
-			//		attribute
-			EGameItemAttributeContainer*
-			attribute_container = new EGameItemAttributeContainer;
-			attribute_container->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "StackSize");
+			game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
-			//		value
-			GameAttributeGeneratorQuantity*
-			value_generator = new GameAttributeGeneratorQuantity;
-			game_item_generator->attribute_generators_list.push_back(value_generator);
+			game_item_generator->filtered_by_exact_name = "Chaos Orb";
 
-			//		parameters
-			value_generator->min_value = 1;
-			value_generator->max_value = 20;
-			value_generator->generator_pow = 3.0f;
+			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
+			{
+				//		attribute
+				EGameItemAttributeContainer*
+				attribute_container = new EGameItemAttributeContainer;
+				attribute_container->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "StackSize");
 
-			value_generator->target_attribute_container = attribute_container;
+						//		value
+						GameAttributeGeneratorQuantity*
+						value_generator = new GameAttributeGeneratorQuantity;
+						game_item_generator->attribute_generators_list.push_back(value_generator);
+
+						//		parameters
+						value_generator->min_value = 1;
+						value_generator->max_value = 20;
+						value_generator->generator_pow = 3.0f;
+
+						value_generator->target_attribute_container = attribute_container;
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR (TABULA)			/////////////////////////////////////////////
+		{
+			game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->filtered_by_exact_name = "Simple Robe";
+
+
+			//		attribute RARITY
+			{
+				EGameItemAttributeContainer*
+				attribute_container = new EGameItemAttributeContainer;
+
+				attribute_container->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "Rarity");
+				attribute_container->attribute_value_int = 3;
+						//		value
+						GameAttributeGenerator*
+						value_generator = new GameAttributeGenerator;
+						game_item_generator->attribute_generators_list.push_back(value_generator);
+
+						//		parameters
+						value_generator->target_attribute_container = attribute_container;
+
+			}
+
+
+			//		attribute SOCKETS
+			{
+				EGameItemAttributeContainer*
+					attribute_container = new EGameItemAttributeContainer;
+
+				attribute_container->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "SocketGroup");
+				attribute_container->attribute_value_str = "6WWWWWW";
+				//		value
+				GameAttributeGenerator*
+					value_generator = new GameAttributeGenerator;
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+
+				//		parameters
+				value_generator->target_attribute_container = attribute_container;
+			}
+
+			//		attribute SOCKETS
+			{
+				EGameItemAttributeContainer*
+					attribute_container = new EGameItemAttributeContainer;
+
+				attribute_container->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "Sockets");
+				attribute_container->attribute_value_str = "6WWWWWW";
+				//		value
+				GameAttributeGenerator*
+					value_generator = new GameAttributeGenerator;
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+
+				//		parameters
+				value_generator->target_attribute_container = attribute_container;
+			}
 		}
 
 
+		/////////////////////////////			ITEM GENERATOR (MAP WITH INFLUENCE)			/////////////////////////////////////////////
+		{
+			game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
+			game_item_generator->filtered_by_exact_name = "Map";
+
+
+			//		attribute RARITY
+			{
+				EGameItemAttributeContainer*
+					attribute_container = new EGameItemAttributeContainer;
+
+				attribute_container->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "Rarity");
+				attribute_container->attribute_value_int = 2;
+				//		value
+				GameAttributeGenerator*
+					value_generator = new GameAttributeGenerator;
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+
+				//		parameters
+				value_generator->target_attribute_container = attribute_container;
+
+			}
+
+			//		attribute Maps
+			{
+				EGameItemAttributeContainer*
+					attribute_container = new EGameItemAttributeContainer;
+
+				attribute_container->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "Class");
+				attribute_container->listed_value_list.push_back("Maps");
+				//		value
+				GameAttributeGenerator*
+					value_generator = new GameAttributeGenerator;
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+
+				//		parameters
+				value_generator->target_attribute_container = attribute_container;
+
+			}
+
+			//		attribute INFLUENCE
+			{
+				EGameItemAttributeContainer*
+				attribute_container = new EGameItemAttributeContainer;
+
+				attribute_container->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "HasInfluence");
+				//		value
+				GameAttributeGeneratorMapInfluence*
+				value_generator = new GameAttributeGeneratorMapInfluence;
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+
+				//		parameters
+				value_generator->target_attribute_container = attribute_container;
+
+			}
+		}
 
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -8676,7 +8753,8 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 		case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST:
 		{
-			text = "Аномальный";
+			text = EWindowMain::registered_alternate_gem_quality_router_variants[0]->localisation->base_name;
+			
 			jc_button = new EntityButtonForFilterBlock();
 			jc_button->make_default_button_with_unedible_text
 			(
@@ -8685,11 +8763,14 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 				&EDataActionCollection::action_open_quality_selector,
 				text
 			);
+			jc_button->main_text_area->set_color(EWindowMain::registered_alternate_gem_quality_router_variants[0]->color);
+			jc_button->main_text_area->change_text(text);
+			jc_button->main_text_area->localisation_text = *EWindowMain::registered_alternate_gem_quality_router_variants[0]->localisation;
 
 			jc_button->parent_filter_block = _target_filter_block;
 			jc_button->used_filter_block_attribute = _game_item_attribute;
 
-			Entity::get_last_text_area(jc_button)->localisation_text = _game_item_attribute->localisation;
+			//Entity::get_last_text_area(jc_button)->localisation_text = _game_item_attribute->localisation;
 
 			non_listed_line->target_button_with_value = jc_button;
 			non_listed_line->button_list.push_back(jc_button);
@@ -9953,7 +10034,7 @@ void EButtonGroupDataEntity::background_update(float _d)
 
 	//buttons for data entity
 	unsigned int counter = 0;
-	for (int i = 0; i < 20; i++)
+	for (int i = 0; i < 50; i++)
 		if (data_entity_id < EDataEntity::data_entity_global_list.size())
 		{
 			EntityButton* jc_button = EntityButton::create_wide_item_button
@@ -10038,7 +10119,7 @@ void GameAttributeGeneratorMinMaxInt::execute_generation(EGameItem* _game_item)
 {
 	int generated_value = min_value + (max_value - min_value) * pow((rand() % 101) / 100.0f, generator_pow);
 
-	target_attribute_container->attribute_value_str = std::to_string(generated_value);
+	target_attribute_container->attribute_value_int = generated_value;
 
 	//GameAttributeGenerator::execute_generation(_game_item);
 
@@ -10082,7 +10163,7 @@ EGameItem* GameItemGenerator::generate_game_item()
 						)
 					&&
 					(EFilterRule::matched_by_filter_rule(de, EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM], ""))
-					)
+				)
 			{
 				game_item->stored_data_entity = de;
 
@@ -10108,7 +10189,7 @@ EGameItem* GameItemGenerator::generate_game_item()
 
 
 
-
+	//automatic generate basic attributes
 	if (game_item->stored_data_entity != nullptr)
 	{
 
@@ -10119,7 +10200,7 @@ EGameItem* GameItemGenerator::generate_game_item()
 				attribute_container;
 
 			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HEIGHT];
-			attribute_container.attribute_value_str = DataEntityUtils::get_tag_value_by_name(0, "item height", game_item->stored_data_entity);
+			attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item height", game_item->stored_data_entity));
 
 			game_item->attribute_container_list.push_back(attribute_container);
 
@@ -10132,7 +10213,7 @@ EGameItem* GameItemGenerator::generate_game_item()
 			attribute_container;
 
 			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_WIDTH];
-			attribute_container.attribute_value_str = DataEntityUtils::get_tag_value_by_name(0, "item width", game_item->stored_data_entity);
+			attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item width", game_item->stored_data_entity));
 
 			game_item->attribute_container_list.push_back(attribute_container);
 
@@ -10158,11 +10239,65 @@ EGameItem* GameItemGenerator::generate_game_item()
 			attribute_container;
 
 			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_TYPE];
-			attribute_container.attribute_value_str = game_item->localised_name.base_name;
+			//attribute_container.attribute_value_str = game_item->localised_name.base_name;
+			attribute_container.listed_value_list.push_back(game_item->localised_name.base_name);
 
 			game_item->attribute_container_list.push_back(attribute_container);
 		}
 
+	}
+	else//undefined item
+	{
+
+		{
+			EGameItemAttributeContainer
+			attribute_container;
+
+			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_TYPE];
+			//attribute_container.attribute_value_str = game_item->localised_name.base_name;
+			attribute_container.listed_value_list.push_back(filtered_by_exact_name);
+
+			game_item->attribute_container_list.push_back(attribute_container);
+
+
+			game_item->localised_name.base_name								= filtered_by_exact_name;
+			game_item->localised_name.localisations[NSW_localisation_EN]	= filtered_by_exact_name;
+			game_item->localised_name.localisations[NSW_localisation_RU]	= filtered_by_exact_name;
+		}
+
+		{
+			EGameItemAttributeContainer
+			attribute_container;
+
+			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HEIGHT];
+			attribute_container.attribute_value_int = 1;
+
+			game_item->attribute_container_list.push_back(attribute_container);
+		}
+		
+
+		
+		{
+			EGameItemAttributeContainer
+			attribute_container;
+
+			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_WIDTH];
+			attribute_container.attribute_value_int = 1;
+
+			game_item->attribute_container_list.push_back(attribute_container);
+		}
+
+
+
+		{
+			EGameItemAttributeContainer
+			attribute_container;
+
+			attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "DropLevel");
+			attribute_container.attribute_value_int = 1;
+
+			game_item->attribute_container_list.push_back(attribute_container);
+		}
 	}
 
 	for (GameAttributeGenerator* a_generator : attribute_generators_list)
@@ -10273,7 +10408,7 @@ void GameAttributeGeneratorQuantity::execute_generation(EGameItem* _game_item)
 {
 	GameAttributeGeneratorMinMaxInt::execute_generation(_game_item);
 
-	_game_item->quantity = std::stoi(target_attribute_container->attribute_value_str);
+	_game_item->quantity = target_attribute_container->attribute_value_int;
 }
 
 bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EButtonGroupFilterBlock* _filter_block)
@@ -10283,69 +10418,178 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 	//for (EGameItemAttributeContainer attribute_container : _game_item->attribute_container_list)
 	{
 
-		//		NON-LISTED
+		//		NON-LISTED lines attributes
+		//for each non-listed attribute
 		for (EButtonGroup* group : _filter_block->pointer_to_non_listed_segment->group_list)
 		{
 			EButtonGroupNonListedLine*
 			line_group = static_cast<EButtonGroupNonListedLine*>(group);
 
-			for (EGameItemAttributeContainer attribute_container : _game_item->attribute_container_list)
-			if (attribute_container.target_attribute == line_group->target_filter_block_attribute)
-			{
-				//EInputCore::logger_param("ITEM attribute",	attribute_container.target_attribute->localisation.base_name);
-				//EInputCore::logger_param("BLOCK attribute",	line_group->target_filter_block_attribute->localisation.base_name);
+			//bool have_non_listed_attribute_match = false;
+			EGameItemAttributeContainer* matched_item_attribute_container = nullptr;
 
+			GameItemAttribute* non_listed_attribute = line_group->target_filter_block_attribute;
+
+			//		FOR EACH ITEM ATTRIBUTE
+			// try search matched attribute (between block attribute and item attribute)
+			for (int i = 0; i < _game_item->attribute_container_list.size(); i++)
+			{
+				EGameItemAttributeContainer* attr_container = &_game_item->attribute_container_list[i];
+
+				//for (EGameItemAttributeContainer item_attribute : _game_item->attribute_container_list)
+				if (attr_container->target_attribute == non_listed_attribute)
+				{
+					matched_item_attribute_container = attr_container;
+					break;
+				}
+			}
+
+			//if matched atribute exist
+			if (matched_item_attribute_container != nullptr)
+			{
+				//number attrubite
 				if
 				(
-					(attribute_container.target_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+					(matched_item_attribute_container->target_attribute->filter_attribute_value_type	== FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
 					&&
-					(line_group->target_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+					(non_listed_attribute->filter_attribute_value_type									== FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
 				)
+				{
+					//have_non_listed_attribute_match = true;
+
+
+					if
+					(
+						!is_condition_satisfied
+						(
+							matched_item_attribute_container->attribute_value_int,								//item
+							line_group->target_button_with_condition->main_text_area->original_text,			//operator
+							std::stoi(line_group->target_button_with_value->main_text_area->original_text)		//block
+						)
+					)
+					{
+						return false;
+					}
+				}
+
+				//bool attribute
+				if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
+				{
+					bool bool_match = false;
+
+					//if item have matched attribute, and boll flags not same, return false (block not matched)
+					if
+					(
+						(matched_item_attribute_container->target_attribute == line_group->target_filter_block_attribute)//matched attribute
+						&&
+						(matched_item_attribute_container->attribute_value_bool != *static_cast<EDataContainer_Button_BoolSwitcher*>(line_group->target_button_with_value->main_custom_data->data_container)->target_value)//bool flags not same
+					)
+					{return false;}//suitable attribute exist but condition not satified
+				}
+
+				//Rarity
+				if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
 				{
 					if
 					(
 						!is_condition_satisfied
 						(
-							std::stoi(attribute_container.attribute_value_str),								//left
-							line_group->target_button_with_condition->main_text_area->original_text,	//operator
-							std::stoi(line_group->target_button_with_value->main_text_area->original_text)
+							matched_item_attribute_container->attribute_value_int,															//item
+							line_group->target_button_with_condition->main_text_area->original_text,										//operator
+							line_group->rarity_router_button->selected_variant		//block
 						)
 					)
-					{return false;}
-				}
-			}
-
-			
-			
-			if (line_group->target_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
-			{
-				bool bool_match = false;
-
-				//		SEARCH SUITABLE ATTRIBUTE ON ITEM
-				for (EGameItemAttributeContainer attribute_container : _game_item->attribute_container_list)
-				{
-					if (attribute_container.target_attribute == line_group->target_filter_block_attribute)
 					{
-						if (attribute_container.attribute_value_bool != *static_cast<EDataContainer_Button_BoolSwitcher*>(line_group->target_button_with_value->main_custom_data->data_container)->target_value)
-						{
-							return false;//suitable attribute exist but condition not satified
-						}
-						else
-						{
-							bool_match = true;//suitable attribute exist, condition satified
-						}
+						return false;
 					}
 				}
 
-				if
-				(
-					(!bool_match)
-					&&
-					(*static_cast<EDataContainer_Button_BoolSwitcher*>(line_group->target_button_with_value->main_custom_data->data_container)->target_value)
-				)
-				{ return false; }//block require active bool atribute, but item dont have it
+				//alternate quality
+				if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
+				{
+					if (!EStringUtils::compare_ignoring_case(matched_item_attribute_container->attribute_value_str, line_group->target_button_with_value->main_text_area->localisation_text.base_name)) { return false; }
+				}
 
+				//sockets group
+				if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
+				{
 
+					if
+					(
+						!is_sockets_matched
+						(
+							line_group->target_button_with_value->main_text_area->original_text,		//block
+							line_group->target_button_with_condition->main_text_area->original_text,	//operator
+							matched_item_attribute_container->attribute_value_str						//item
+						)
+					)
+					{
+						return false;
+					}
+				}
+			}
+			else//"phantom" parameter (non existed parameters have value "0"/"false" (for example, chaos orb dont have attribute "MapTier", but have value "0" for this attribute, and "false" for non existed bool-attributes
+			{
+				if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+				{
+					if
+					(
+						!is_condition_satisfied
+						(
+							0,																				//item
+							line_group->target_button_with_condition->main_text_area->original_text,		//operator
+							std::stoi(line_group->target_button_with_value->main_text_area->original_text)	//block
+						)
+					)
+					{
+						return false;
+					}
+				}
+
+				if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
+				{
+					if
+					(
+						!is_condition_satisfied
+						(
+							0,																												//item
+							line_group->target_button_with_condition->main_text_area->original_text,										//operator
+							line_group->rarity_router_button->selected_variant																//block
+						)
+					)
+					{
+						return false;
+					}
+				}
+
+				if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
+				{
+					if (*static_cast<EDataContainer_Button_BoolSwitcher*>(line_group->target_button_with_value->main_custom_data->data_container)->target_value)
+					{
+						return false;//block require bool-flag for attribute, which item dont have
+					}
+				}
+
+				if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
+				{
+					return false;//if item have no alternative quality, always return false
+				}
+
+				if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
+				{
+					if
+					(
+						!is_sockets_matched
+						(
+							line_group->target_button_with_value->main_text_area->original_text,		//block
+							line_group->target_button_with_condition->main_text_area->original_text,	//operator
+							"0"																			//item
+						)
+					)
+					{
+						return false;
+					}
+				}
 
 
 			}
@@ -10357,22 +10601,24 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 		{
 			auto data_container = static_cast<EDataContainer_Group_FilterBlockListedSegment*>(listed_lines->data_container);
 
-			bool any_listed_match = true;
-			//matched type
-			for (EGameItemAttributeContainer attribute_container : _game_item->attribute_container_list)
+			bool this_listed_match = false;
+
+			//search suitable attribute in item
+			for (EGameItemAttributeContainer item_attribute : _game_item->attribute_container_list)
 			if
 			(
 				EStringUtils::A_contains_B_ignore_case
 				(
 					data_container->filter_attribute_name,
-					attribute_container.target_attribute->localisation.base_name
+					item_attribute.target_attribute->localisation.base_name
 				)
 			)
 			{
-				any_listed_match = false;
+				//any_listed_match = true;
 
 				for (EntityButton* but : data_container->group_with_listed_buttons->button_list)
 				if (but != data_container->group_with_listed_buttons->slider)
+				for (std::string item_listed_value : item_attribute.listed_value_list)
 				{
 					std::string base_item_name = "";
 
@@ -10391,15 +10637,16 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 						base_item_name = but->main_text_area->original_text;
 					}
 
-						if (EStringUtils::A_contains_B_ignore_case(base_item_name, attribute_container.attribute_value_str))
+						if (EStringUtils::A_contains_B_ignore_case(item_listed_value, base_item_name))
 						{
-							any_listed_match = true;
+							this_listed_match = true;
+							break;
 						}
 
 				}
 			}
 
-			if (!any_listed_match) { return false; }
+			if (!this_listed_match) { return false; }
 		}
 	}
 
@@ -10420,4 +10667,167 @@ bool EButtonGroupLootSimulator::is_condition_satisfied(int _left, std::string _o
 	if ((_operator == ">")	&& (_left > _right)) { return true; }
 
 	return false;
+}
+
+bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::string _operator, std::string _item)
+{
+	int sockets_count_block		= 0;
+	int red_count_block			= 0;
+	int green_count_block		= 0;
+	int blue_count_block		= 0;
+	int white_count_block		= 0;
+	int abyss_count_block		= 0;
+	int delve_count_block		= 0;
+
+	int sockets_count_item		= 0;
+	int red_count_item			= 0;
+	int green_count_item		= 0;
+	int blue_count_item			= 0;
+	int white_count_item		= 0;
+	int abyss_count_item		= 0;
+	int delve_count_item		= 0;
+
+	for (int i = 0; i < _block.length(); i++)
+	{
+
+		if
+		(
+			(_block[i] == '0')
+			||
+			(_block[i] == '1')
+			||
+			(_block[i] == '2')
+			||
+			(_block[i] == '3')
+			||
+			(_block[i] == '4')
+			||
+			(_block[i] == '5')
+			||
+			(_block[i] == '6')
+		)
+		{
+			sockets_count_block = std::stoi(&_block[i]);
+		}
+
+		if (_block[i] == 'R') { red_count_block++; }
+		if (_block[i] == 'G') { green_count_block++; }
+		if (_block[i] == 'B') { blue_count_block++; }
+		if (_block[i] == 'W') { white_count_block++; }
+
+		if (_block[i] == 'A') { abyss_count_block++; }
+		if (_block[i] == 'D') { delve_count_block++; }
+	}
+
+	for (int i = 0; i < _item.length(); i++)
+	{
+
+		if
+		(
+			(_item[i] == '0')
+			||
+			(_item[i] == '1')
+			||
+			(_item[i] == '2')
+			||
+			(_item[i] == '3')
+			||
+			(_item[i] == '4')
+			||
+			(_item[i] == '5')
+			||
+			(_item[i] == '6')
+		)
+		{
+			sockets_count_item = std::stoi(&_item[i]);
+		}
+
+		if (_item[i] == 'R') { red_count_item++; }
+		if (_item[i] == 'G') { green_count_item++; }
+		if (_item[i] == 'B') { blue_count_item++; }
+		if (_item[i] == 'W') { white_count_item++; }
+		if (_item[i] == 'A') { abyss_count_item++; }
+		if (_item[i] == 'D') { delve_count_item++; }
+	}
+
+	if (!is_condition_satisfied(sockets_count_item,		_operator,			sockets_count_block	))		{ return false; }
+	if (!is_condition_satisfied(red_count_item,			_operator,			red_count_block		))		{ return false; }
+	if (!is_condition_satisfied(green_count_item,		_operator,			green_count_block	))		{ return false; }
+	if (!is_condition_satisfied(blue_count_item,		_operator,			blue_count_block	))		{ return false; }
+	if (!is_condition_satisfied(white_count_item,		_operator,			white_count_block	))		{ return false; }
+	if (!is_condition_satisfied(abyss_count_item,		_operator,			abyss_count_block	))		{ return false; }
+	if (!is_condition_satisfied(delve_count_item,		_operator,			delve_count_block	))		{ return false; }
+
+
+	return true;
+}
+
+void GameAttributeGeneratorMapInfluence::execute_generation(EGameItem* _game_item)
+{
+	switch (rand() % 6)
+	{
+		//elder
+		case 0:
+		{
+			target_attribute_container->listed_value_list.push_back("Elder");
+
+			EGameItemAttributeContainer new_container;
+
+			new_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "ElderMap");
+			new_container.attribute_value_bool = true;
+			_game_item->attribute_container_list.push_back(new_container);
+
+			new_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "ElderItem");
+			new_container.attribute_value_bool = true;
+			_game_item->attribute_container_list.push_back(new_container);
+
+			break;
+		}
+
+		//shaper
+		case 1:
+		{
+			target_attribute_container->listed_value_list.push_back("Shaper");
+
+			EGameItemAttributeContainer new_container;
+
+			new_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "ShaperMap");
+			new_container.attribute_value_bool = true;
+			_game_item->attribute_container_list.push_back(new_container);
+
+			new_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "ShaperItem");
+			new_container.attribute_value_bool = true;
+			_game_item->attribute_container_list.push_back(new_container);
+
+			break;
+		}
+
+		//Redeemer
+		case 2:
+		{
+			target_attribute_container->listed_value_list.push_back("Redeemer"); break;
+		}
+		
+		//Warlord
+		case 3:
+		{
+			target_attribute_container->listed_value_list.push_back("Warlord"); break;
+		}
+		
+		//Hunter
+		case 4:
+		{
+			target_attribute_container->listed_value_list.push_back("Hunter"); break;
+		}
+		
+		//Crusader
+		case 5:
+		{
+			target_attribute_container->listed_value_list.push_back("Crusader"); break;
+		}
+
+		default: {}
+
+
+	}
 }
