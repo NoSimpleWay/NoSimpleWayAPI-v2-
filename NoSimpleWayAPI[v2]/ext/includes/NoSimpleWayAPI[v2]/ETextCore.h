@@ -121,6 +121,9 @@ public:
 	float size_x_in_pixels[EFont_array_dim];
 	float size_y_in_pixels[EFont_array_dim];
 
+	int lineheight	= 15;
+	int base		= 10;
+
 	std::string name;
 
 
@@ -212,6 +215,7 @@ public:
 
 	void set_font(EFont* _font);
 	float get_row_width(std::string* _row);
+	float get_text_width(std::string* _text);
 
 	void translate(float _x, float _y, float _z, bool _translate_local_coordinate);
 

@@ -199,6 +199,17 @@ void EFont::load_font_littera(std::string _path)
 							if (show_console_info) std::cout << "y offset | size_y=" << UV_size_y[font_array_id] << " offset=" << get_float_from_sub_data(sub_data) << " result=" << offset_y[font_array_id] << " |" << std::endl;
 						}
 
+						if (compare_with_key(sub_data, "lineHeight="))
+						{
+							lineheight = get_float_from_sub_data(sub_data);
+							if (show_console_info) std::cout << "lineheight | size_y=" << lineheight << std::endl;
+						}
+						if (compare_with_key(sub_data, "base="))
+						{
+							base = get_float_from_sub_data(sub_data);
+							if (show_console_info) std::cout << "base | size_y=" << base << std::endl;
+						}
+
 						if (compare_with_key(sub_data, "xadvance="))
 						{
 							if (show_console_info) std::cout << "advance | " << get_float_from_sub_data(sub_data) << " |" << std::endl;
@@ -449,7 +460,7 @@ void ETextArea::generate_text()
 	float y_adding = 0.0f;
 	float full_text_height = 0.0f;
 
-	float line_height = 14.0f;
+	float line_height = font->lineheight;
 
 
 	EFontGlyph* temp_glyph = nullptr;
@@ -515,7 +526,7 @@ void ETextArea::generate_text()
 		y_adding += (region_gabarite->size_y - border_offset_bottom - border_offset_top) * offset_by_gabarite_size_y;
 
 		//vertical align
-		y_adding += (full_text_height + 0.0f) * offset_by_text_size_y * font_scale;
+		y_adding += (full_text_height - 4.0f) * offset_by_text_size_y * font_scale;
 		y_adding += border_offset_bottom;
 
 
@@ -555,7 +566,7 @@ void ETextArea::generate_text()
 					sprite_layer->last_buffer_id,
 
 					(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol]),
-					(region_gabarite->world_position_y - ((font->size_y_in_pixels[target_symbol] + font->offset_y[target_symbol]) * font_scale - y_adding) + 4.0f * font_scale),
+					(region_gabarite->world_position_y - ((font->size_y_in_pixels[target_symbol] + font->offset_y[target_symbol]) * font_scale - y_adding) + 0.0f * font_scale),
 
 					(font->size_x_in_pixels[target_symbol] * font_scale),
 					(font->size_y_in_pixels[target_symbol] * font_scale),
@@ -647,7 +658,7 @@ void ETextArea::generate_text()
 
 			//EInputCore::logger_param("last buffer id", *sprite_layer->last_buffer_id);
 
-			y_adding -= line_height * font_scale;
+			y_adding -= font->base * font_scale;
 		}
 	}
 	else
@@ -690,6 +701,22 @@ float ETextArea::get_row_width(std::string* _row)
 		if (sym_id <= 0) { sym_id += 256; }
 
 		total_width += font->advance[sym_id];
+	}
+
+	return total_width;
+}
+
+float ETextArea::get_text_width(std::string* _text)
+{
+	float total_width = 0.0f;
+
+	for (int i = 0; i < _text->size(); i++)
+	{
+		int sym_id = (int)(_text->at(i));
+		if (sym_id <= 0) { sym_id += 256; }
+
+		total_width += font->advance[sym_id];
+		if (_text->at(i) == ' ') { total_width += 5.0f; }
 	}
 
 	return total_width;
@@ -1428,14 +1455,14 @@ void ETextArea::change_text(std::string _text)
 				temp_text += target_sym;
 
 				block_size += font->advance[sym_id];
-				x_size += font->advance[sym_id];
+				x_size += font->advance[sym_id] * font_scale;
 			}
 			else
 			{
 				//block_size = 0.0f;
 				if (x_size + offset_border[BorderSide::LEFT] + 0.0f < region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 0.0f)
 				{
-					x_size += font->advance[sym_id];
+					x_size += font->advance[sym_id] * font_scale;
 				}
 			}
 

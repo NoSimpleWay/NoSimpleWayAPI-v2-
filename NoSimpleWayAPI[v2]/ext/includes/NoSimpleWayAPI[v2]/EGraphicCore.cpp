@@ -856,8 +856,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 	new_font = new EFont("palatino", font_gabarite, NS_EGraphicCore::default_texture_atlas, false);
 	EFont::font_list.push_back(new_font);
 
-	font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/bahn_0.png", NS_EGraphicCore::default_texture_atlas);
-	new_font = new EFont("bahn", font_gabarite, NS_EGraphicCore::default_texture_atlas, false);
+	font_gabarite = NS_EGraphicCore::put_texture_to_atlas("data/font/calibri_0.png", NS_EGraphicCore::default_texture_atlas);
+	new_font = new EFont("calibri", font_gabarite, NS_EGraphicCore::default_texture_atlas, false);
 	EFont::font_list.push_back(new_font);
 
 	//NS_EGraphicCore::sun_color = Helper::hsvrgba_color;

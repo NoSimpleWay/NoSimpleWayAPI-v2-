@@ -483,6 +483,8 @@ namespace EDataActionCollection
 	void action_refresh_loot_simulator_sizes(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_highlight_matched_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
 
+	void action_add_items_from_this_loot_pattern(Entity* _entity, ECustomData* _custom_data, float _d);
+
 
 	//type text
 	void action_type_search_filter_block_text(ETextArea* _text_area);
@@ -550,6 +552,7 @@ enum DefaultGameAttributeEnum
 class GameItemAttribute
 {
 public:
+	ELocalisationText			localisation;
 	FilterAttributeType			filter_attribute_type;
 	FilterAttributeValueType	filter_attribute_value_type;
 	EFilterRule*				filter_rule;
@@ -558,7 +561,7 @@ public:
 	bool input_field_for_listed = false;
 	bool have_exact_match = false;
 
-	ELocalisationText			localisation;
+
 
 	std::string					data_entity_tag_filtration;
 
@@ -697,6 +700,8 @@ public:
 
 	
 
+	
+
 
 };
 
@@ -720,7 +725,12 @@ public:
 	void get_matched_filter_blocks_list(EButtonGroupFilterBlockEditor* _filter_block_editor);
 };
 
-
+class LootSimulatorPattern;
+class EntityButtonLootPatternSelector : public EntityButton
+{
+public:
+	LootSimulatorPattern* target_pattern;
+};
 
 
 
@@ -800,7 +810,8 @@ public:
 	ELocalisationText						localisation;
 	ETextureGabarite*						icon;
 
-	EGameItem*								generate_game_item();
+	void									generate_game_item_list(std::vector<EGameItem*>* _target_list);
+	void									init_game_item(EGameItem* _game_item);
 
 };
 
@@ -815,4 +826,5 @@ public:
 	std::vector<GameItemGenerator*>				game_item_generator_list;
 
 	static std::vector<LootSimulatorPattern*>	registered_loot_simulater_pattern_list;
+	static void									refresh_loot_simulator(LootSimulatorPattern* _pattern);
 };

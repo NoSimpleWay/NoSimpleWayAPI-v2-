@@ -6643,6 +6643,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"AwakenedSextant"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6765,6 +6768,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Master_Cartographer's_Seal_inventory_icon"
 	[tag]"base class"	[value]"Currency"
 	
+	[tag]"item tag"		[value]"Deleted"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -6778,6 +6783,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Master_Cartographer's_Sextant_inventory_icon"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17506,6 +17513,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SimulacrumSplinter"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24076,6 +24085,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Armourer's_Scrap_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24186,6 +24198,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blacksmith's_Whetstone_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24199,6 +24214,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Blessed_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"35"
 
@@ -24310,6 +24328,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Cartographer's_Chisel_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"52"
 
 	[tag]"item width"	[value]"1"
@@ -24338,6 +24359,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Chaos_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"12"
 
 	[tag]"item width"	[value]"1"
@@ -24365,6 +24389,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Chromatic_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -24478,6 +24505,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Divine_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"35"
 
 	[tag]"item width"	[value]"1"
@@ -24583,6 +24613,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Exalted_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"35"
 
@@ -24710,6 +24743,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Gemcutter's_Prism_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"12"
 
 	[tag]"item width"	[value]"1"
@@ -24723,6 +24759,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Glassblower's_Bauble_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -24934,6 +24973,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Jeweller's_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"8"
 
 	[tag]"item width"	[value]"1"
@@ -24972,6 +25014,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Mirror_of_Kalandra_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"35"
 
 	[tag]"item width"	[value]"1"
@@ -24999,6 +25044,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Necromancy_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25052,6 +25099,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Orb_of_Alchemy_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
@@ -25065,6 +25115,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Orb_of_Alteration_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -25080,6 +25133,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Orb_of_Annulment_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"35"
 
 	[tag]"item width"	[value]"1"
@@ -25093,6 +25149,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Orb_of_Augmentation_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25108,6 +25167,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Orb_of_Binding_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"25"
 
 	[tag]"item width"	[value]"1"
@@ -25121,6 +25183,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Orb_of_Chance_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -25136,6 +25201,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Orb_of_Fusing_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"8"
 
 	[tag]"item width"	[value]"1"
@@ -25149,6 +25217,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Orb_of_Horizons_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"68"
 
@@ -25178,6 +25249,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Orb_of_Scouring_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"12"
 
 	[tag]"item width"	[value]"1"
@@ -25192,6 +25266,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Orb_of_Transmutation_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -25205,6 +25282,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"unmaking_orb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"item tag"		[value]"League: Ritual"
 	
@@ -25236,6 +25316,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Portal_Scroll_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -25307,6 +25390,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Regal_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"12"
 
 	[tag]"item width"	[value]"1"
@@ -25334,6 +25420,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Reinforced_Iron_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25346,6 +25434,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Reinforced_Rope_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25358,6 +25448,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Reinforced_Steel_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25403,6 +25495,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"RoguesMarker"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"48"
 
 	[tag]"item width"	[value]"1"
@@ -25430,6 +25525,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Scroll_of_Wisdom_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25484,6 +25582,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Simple_Iron_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25496,6 +25596,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Simple_Rope_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25508,6 +25610,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Simple_Steel_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25633,6 +25737,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Stacked_Deck_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"50"
 
 	[tag]"item width"	[value]"1"
@@ -25646,6 +25753,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Strong_Iron_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25658,6 +25767,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Strong_Rope_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25670,6 +25781,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Strong_Steel_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25752,6 +25865,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Thaumaturgical_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25960,6 +26075,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vaal_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"12"
 
@@ -30065,6 +30183,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Veiled_chaos"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"61"
 
 	[tag]"item width"	[value]"1"
@@ -30266,6 +30387,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"sacred_blossom"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30428,6 +30552,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"EnkindlingOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"drop level"	[value]"40"
 
 	[tag]"item width"	[value]"1"
@@ -30441,6 +30568,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"InstillingOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"40"
 
@@ -30505,6 +30635,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"LesserBrokenCircleArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30517,6 +30649,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"CommonBrokenCircleArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30529,6 +30663,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GreaterBrokenCircleArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30541,6 +30677,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GrandBrokenCircleArtifact_png"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30553,6 +30691,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"LesserBlackScytheArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30565,6 +30705,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"CommonBlackScytheArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30577,6 +30719,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GreaterBlackScytheArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30589,6 +30733,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GrandBlackScytheArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30601,6 +30747,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"LesserOrderArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30613,6 +30761,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"CommonOrderArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30625,6 +30775,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GreaterOrderArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30637,6 +30789,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GrandOrderArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30649,6 +30803,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"LesserSunArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30661,6 +30817,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"CommonSunArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30673,6 +30831,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GreaterSunArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30685,6 +30845,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GrandSunArtifact"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31915,6 +32077,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Surveyors_Compass"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"68"
@@ -31948,6 +32113,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"68"
 
@@ -32008,6 +32176,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"68"
 
