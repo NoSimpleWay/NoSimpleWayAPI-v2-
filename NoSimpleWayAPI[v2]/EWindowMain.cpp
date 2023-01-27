@@ -883,8 +883,13 @@ void EDataActionCollection::action_clear_text(Entity* _entity, ECustomData* _cus
 
 void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	EntityButton*
+	entity_button = static_cast<EntityButton*>(_entity);
+
 	EntityButtonLootItem*
-		loot_button = static_cast<EntityButtonLootItem*>(_entity);
+	loot_button = static_cast<EntityButtonLootItem*>(_entity);
+
+	
 
 	if
 		(
@@ -921,13 +926,13 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
 		//x pos
-		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_x,
+		entity_button->button_gabarite->world_position_x,
 
 		//y pos
-		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_y,
+		entity_button->button_gabarite->world_position_y,
 
-		static_cast<EntityButton*>(_entity)->button_gabarite->size_x,
-		static_cast<EntityButton*>(_entity)->button_gabarite->size_y,
+		entity_button->button_gabarite->size_x,
+		entity_button->button_gabarite->size_y,
 
 		NS_DefaultGabarites::texture_gabarite_white_pixel
 	);
@@ -949,18 +954,43 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 		NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
 		//x pos
-		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_x,
+		entity_button->button_gabarite->world_position_x,
 
 		//y pos
-		static_cast<EntityButton*>(_entity)->button_gabarite->world_position_y,
+		entity_button->button_gabarite->world_position_y,
 
-		static_cast<EntityButton*>(_entity)->button_gabarite->size_x,
-		static_cast<EntityButton*>(_entity)->button_gabarite->size_y,
+		entity_button->button_gabarite->size_x,
+		entity_button->button_gabarite->size_y,
 
 		3.0f,
 
 		NS_DefaultGabarites::texture_gabarite_white_pixel
 	);
+
+	if (loot_button->matched_minimap_icon_color != nullptr)
+	{
+		float size_multiplier = 1.0f - loot_button->matched_minimap_icon_size->selected_variant * 0.25;
+		ETextureGabarite* texture_gabarite = loot_button->matched_minimap_icon_shape->router_variant_list[loot_button->matched_minimap_icon_color->selected_variant]->texture;
+
+		NS_EGraphicCore::set_active_color(loot_button->matched_minimap_icon_color->router_variant_list[loot_button->matched_minimap_icon_color->selected_variant]->color);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			//x pos
+			entity_button->button_gabarite->world_position_x - texture_gabarite->size_x_in_pixels * 0.5f,
+
+			//y pos
+			entity_button->button_gabarite->world_position_y,
+
+			texture_gabarite->size_x_in_pixels * size_multiplier,
+			texture_gabarite->size_y_in_pixels * size_multiplier,
+
+			texture_gabarite
+		);
+	}
 }
 
 void EDataActionCollection::action_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -8276,7 +8306,7 @@ void EWindowMain::register_loot_simulator_patterns()
 			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Вся валюта";
 			loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_all_basic_currencies");
 
-			/////////////////////////////			ITEM GENERATOR (ALL BASIC CURRENCY)			/////////////////////////////////////////////
+			/////////////////////////////			ITEM GENERATOR (ALL CURRENCY)			/////////////////////////////////////////////
 			GameItemGenerator*
 			game_item_generator = new GameItemGenerator();
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -8321,6 +8351,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
 
 		}
+		
+		
 		
 		//		BASIC CURRENCY
 		{
@@ -8372,6 +8404,96 @@ void EWindowMain::register_loot_simulator_patterns()
 
 		}
 
+
+		//		TOP TIER BASES
+		{
+
+			LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Top tier bases";
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Хорошие базы";
+			loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_good_bases");
+
+			/////////////////////////////			ITEM GENERATOR (ALL BASIC CURRENCY)			/////////////////////////////////////////////
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_tags.push_back("Top tier base");
+			tag_filter->suitable_tags.push_back("Rare base");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		attribute
+				EGameItemAttributeContainer*
+					attribute_container = new EGameItemAttributeContainer;
+				attribute_container->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "Rarity");
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt;
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				value_generator->target_attribute_container = attribute_container;
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+				//		attribute
+				EGameItemAttributeContainer*
+					attribute_container = new EGameItemAttributeContainer;
+				attribute_container->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "ItemLevel");
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt;
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				value_generator->target_attribute_container = attribute_container;
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+				//		attribute
+				EGameItemAttributeContainer*
+					attribute_container = new EGameItemAttributeContainer;
+				attribute_container->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "HasInfluence");
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence;
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+
+				//		parameters
+				value_generator->influence_chance = 0.5f;
+
+
+				value_generator->target_attribute_container = attribute_container;
+			}
+
+			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+		}
 		
 }
 
@@ -10428,6 +10550,13 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 				{
 					break_detect = true;
 				}
+
+				if (filter_block->minimap_icon_color_suppressor_bool)
+				{
+					matched_minimap_icon_color	= filter_block->pointer_to_minimap_icon_color_router;
+					matched_minimap_icon_shape	= filter_block->pointer_to_minimap_icon_shape_router;
+					matched_minimap_icon_size	= filter_block->pointer_to_minimap_icon_size_router;
+				}
 			}
 		}
 
@@ -10969,6 +11098,55 @@ void GameAttributeGeneratorMapInfluence::execute_generation(EGameItem* _game_ite
 		}
 
 		default: {}
+
+
+	}
+}
+
+void GameAttributeGeneratorItemInfluence::execute_generation(EGameItem* _game_item)
+{
+	if (rand() % 100 == (int)(influence_chance * 100.0f))
+	switch (rand() % 6)
+	{
+		//elder
+	case 0:
+	{
+		target_attribute_container->listed_value_list.push_back("Elder");
+
+		break;
+	}
+
+	//shaper
+	case 1:
+	{
+		target_attribute_container->listed_value_list.push_back("Shaper");
+	}
+
+	//Redeemer
+	case 2:
+	{
+		target_attribute_container->listed_value_list.push_back("Redeemer"); break;
+	}
+
+	//Warlord
+	case 3:
+	{
+		target_attribute_container->listed_value_list.push_back("Warlord"); break;
+	}
+
+	//Hunter
+	case 4:
+	{
+		target_attribute_container->listed_value_list.push_back("Hunter"); break;
+	}
+
+	//Crusader
+	case 5:
+	{
+		target_attribute_container->listed_value_list.push_back("Crusader"); break;
+	}
+
+	default: {}
 
 
 	}

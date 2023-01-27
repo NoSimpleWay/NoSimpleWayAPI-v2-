@@ -712,9 +712,13 @@ public:
 
 	std::vector<EButtonGroupFilterBlock*>		matched_filter_blocks;
 
-	Helper::HSVRGBAColor**	matched_bg_color;
-	Helper::HSVRGBAColor**	matched_text_color;
-	Helper::HSVRGBAColor**	matched_rama_color;
+	Helper::HSVRGBAColor**		matched_bg_color;
+	Helper::HSVRGBAColor**		matched_text_color;
+	Helper::HSVRGBAColor**		matched_rama_color;
+
+	EntityButtonVariantRouter*	matched_minimap_icon_shape;
+	EntityButtonVariantRouter*	matched_minimap_icon_color;
+	EntityButtonVariantRouter*	matched_minimap_icon_size;
 
 	float*					matched_size;
 
@@ -795,6 +799,13 @@ struct GameAttributeGeneratorMapInfluence : public GameAttributeGenerator
 {
 public:
 	void execute_generation(EGameItem* _game_item);
+};
+
+struct GameAttributeGeneratorItemInfluence : public GameAttributeGenerator
+{
+public:
+	void execute_generation(EGameItem* _game_item);
+	float influence_chance = 0.5f;
 };
 
 struct GameItemGenerator
