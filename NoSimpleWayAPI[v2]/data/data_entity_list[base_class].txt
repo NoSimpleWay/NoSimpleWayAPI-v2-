@@ -243,7 +243,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Map"
+	[tag]"name EN"		[value]"Maps"
 	[tag]"name RU"		[value]"Карты"
 
 	[tag]"icon path"	[value]"Map"

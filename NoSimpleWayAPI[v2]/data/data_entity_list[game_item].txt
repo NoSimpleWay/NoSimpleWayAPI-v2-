@@ -6660,12 +6660,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Elevated_Sextant_inventory_icon"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"League: Ritual"
-	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Boss loot"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -6675,6 +6678,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Essence_deafening"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6687,6 +6692,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Essence_of_Delirium"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6699,6 +6706,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Essence_of_Horror"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6711,6 +6720,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Essence_of_Hysteria"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6723,6 +6734,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Essence_of_Insanity"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6797,6 +6810,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Essence_muttering"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6809,6 +6824,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Remnant_of_Corruption"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6821,6 +6838,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Essence_screaming"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6833,6 +6852,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Essence_shrieking"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6861,6 +6882,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Essence_wailing"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6873,6 +6896,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Essence_weepeng"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -6885,6 +6910,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Essence_whispering"
 	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7181,23 +7208,15 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Potent"
-	[tag]"name RU"		[value]"Мощный"
-
-	[tag]"icon path"	[value]"Potent"
-	[tag]"base class"	[value]"Delve Socketable Currency"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
 	[tag]"name EN"		[value]"Potent Alchemical Resonator"
 	[tag]"name RU"		[value]"Активный алхимический резонатор"
 
 	[tag]"icon path"	[value]"Potent_Alchemical_Resonator_inventory_icon"
 	[tag]"base class"	[value]"Delve Socketable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7210,18 +7229,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Potent_Chaotic_Resonator_inventory_icon"
 	[tag]"base class"	[value]"Delve Socketable Currency"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Powerful"
-	[tag]"name RU"		[value]"Мощный"
-
-	[tag]"icon path"	[value]"Powerful"
-	[tag]"base class"	[value]"Delve Socketable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7234,6 +7244,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Powerful_Alchemical_Resonator_inventory_icon"
 	[tag]"base class"	[value]"Delve Socketable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7253,23 +7267,15 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Prime"
-	[tag]"name RU"		[value]"Превосходный"
-
-	[tag]"icon path"	[value]"Prime"
-	[tag]"base class"	[value]"Delve Socketable Currency"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
 	[tag]"name EN"		[value]"Prime Alchemical Resonator"
 	[tag]"name RU"		[value]"Превосходный алхимический резонатор"
 
 	[tag]"icon path"	[value]"Prime_Alchemical_Resonator_inventory_icon"
 	[tag]"base class"	[value]"Delve Socketable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7282,18 +7288,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Prime_Chaotic_Resonator_inventory_icon"
 	[tag]"base class"	[value]"Delve Socketable Currency"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Primitive"
-	[tag]"name RU"		[value]"Простейший"
-
-	[tag]"icon path"	[value]"Primitive"
-	[tag]"base class"	[value]"Delve Socketable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7306,6 +7303,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Primitive_Alchemical_Resonator_inventory_icon"
 	[tag]"base class"	[value]"Delve Socketable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7318,6 +7319,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Primitive_Chaotic_Resonator_inventory_icon"
 	[tag]"base class"	[value]"Delve Socketable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17515,6 +17519,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"item tag"		[value]"Splinter item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -23941,6 +23947,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Abrasive_Catalyst"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -23955,6 +23964,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AbyssDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -23968,6 +23980,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Albino_Rhoa_Feather_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24015,6 +24029,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Amber_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
+	
 	[tag]"drop level"	[value]"19"
 
 	[tag]"item width"	[value]"1"
@@ -24028,6 +24045,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"DeliriumOrbUnknown"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24087,6 +24107,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+		
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24102,6 +24124,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"ArmoursmithDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24115,6 +24140,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"AwakenerOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -24127,6 +24155,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Azure_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
 	
 	[tag]"drop level"	[value]"44"
 
@@ -24170,6 +24201,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Black_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
+	
 	[tag]"drop level"	[value]"68"
 
 	[tag]"item width"	[value]"1"
@@ -24183,6 +24217,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"BlacksmithsDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+		
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24217,6 +24256,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+		
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"35"
 
@@ -24232,6 +24273,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blessing_of_Chayula_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24242,6 +24286,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Blessing of Esh"
 	[tag]"name RU"		[value]"Благословение Иш"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"icon path"	[value]"Blessing_of_Esh_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -24256,6 +24303,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Blessing of Tul"
 	[tag]"name RU"		[value]"Благословение Тула"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"icon path"	[value]"Blessing_of_Tul_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -24270,6 +24320,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Blessing of Uul-Netol"
 	[tag]"name RU"		[value]"Благословение Уул-нетола"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"icon path"	[value]"Blessing_of_Uul-Netol_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -24288,6 +24341,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blessing_of_Xoph_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24301,6 +24357,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"BlightDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24344,6 +24403,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"CartographersDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24407,6 +24469,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Clear_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24420,6 +24485,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"crescent_splinter"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Splinter item"
 	
 	[tag]"item tag"		[value]"League: Ritual"
 
@@ -24435,6 +24503,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Crimson_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
+	
 	[tag]"drop level"	[value]"60"
 
 	[tag]"item width"	[value]"1"
@@ -24449,6 +24520,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"CrusaderExalt"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24462,6 +24536,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"DecadentDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24521,6 +24598,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"DivinerDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24659,6 +24739,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Fertile_Catalyst"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24672,6 +24755,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"FineDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24687,6 +24773,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"ForebodingDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24700,6 +24789,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"FossilisedDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24728,6 +24820,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"FragmentedDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24762,6 +24857,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+		
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -24788,6 +24885,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Golden_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
 	
 	[tag]"drop level"	[value]"80"
 
@@ -24859,6 +24959,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"HunterExalt"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24873,6 +24976,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Imbued_Catalyst"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24886,6 +24992,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"DeliriumOrbUnknown"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24914,6 +25023,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Indigo-Oil"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
 	
 	[tag]"drop level"	[value]"48"
 
@@ -24945,6 +25057,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Intrinsic_Catalyst"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24958,6 +25073,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"JewellerDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25059,6 +25177,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"ObscuredDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -25085,6 +25206,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Opalescent_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
+	
 	[tag]"drop level"	[value]"73"
 
 	[tag]"item width"	[value]"1"
@@ -25102,6 +25226,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Trash"
+	
 	[tag]"drop level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
@@ -25118,6 +25244,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+		
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -25152,6 +25280,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+		
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25268,6 +25398,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+		
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25319,6 +25451,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+		
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -25333,6 +25467,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"PrimalDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25362,6 +25499,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Prismatic_Catalyst"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -25375,6 +25515,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"AdjudicatorExalt"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25463,6 +25606,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"ritual_splinter"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Ritual item"
+	[tag]"item tag"		[value]"Splinter item"
+	
 	[tag]"item tag"		[value]"League: Ritual"
 	
 	[tag]"drop level"	[value]"1"
@@ -25528,6 +25675,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+		
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25557,6 +25706,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sepia_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
+	
 	[tag]"drop level"	[value]"10"
 
 	[tag]"item width"	[value]"1"
@@ -25570,6 +25722,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Silver_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25625,6 +25780,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SingularDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -25638,6 +25796,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SkitteringDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25667,6 +25828,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Splinter_of_Chayula_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -25680,6 +25845,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Splinter_of_Esh_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25695,6 +25864,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Splinter_of_Tul_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -25709,6 +25882,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Splinter_of_Uul-Netol_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -25722,6 +25899,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Splinter_of_Xoph_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25810,6 +25991,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Teal_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
+	
 	[tag]"drop level"	[value]"36"
 
 	[tag]"item width"	[value]"1"
@@ -25823,6 +26007,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Tempering_Catalyst"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25852,6 +26039,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"ThaumaturgesDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -25866,7 +26056,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Thaumaturgical_Net_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted"r
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25894,6 +26084,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TimelessDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -25919,6 +26112,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Eternal_Empire_Splinter_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Legion item"
+	[tag]"item tag"		[value]"Splinter item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -25946,16 +26143,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Timeless_Karui_Splinter_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Legion item"
+	[tag]"item tag"		[value]"Splinter item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Item for caster"
-	[tag]"item tag"		[value]"One-hand"
-	[tag]"item tag"		[value]"Item slot"
-	[tag]"item tag"		[value]"Melee weapon"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -25979,6 +26174,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Maraketh_Splinter_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Legion item"
+	[tag]"item tag"		[value]"Splinter item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26007,6 +26206,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Templar_Splinter_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Legion item"
+	[tag]"item tag"		[value]"Splinter item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -26033,6 +26236,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Timeless_Vaal_Splinter_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Legion item"
+	[tag]"item tag"		[value]"Splinter item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26061,6 +26268,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Turbulent_Catalyst"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26093,6 +26303,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Verdant_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
+	
 	[tag]"drop level"	[value]"27"
 
 	[tag]"item width"	[value]"1"
@@ -26106,6 +26319,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vial_of_Awakening_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
 	
 	[tag]"drop level"	[value]"50"
 
@@ -26121,6 +26337,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vial_of_Consequence_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
 	[tag]"drop level"	[value]"50"
 
 	[tag]"item width"	[value]"1"
@@ -26134,6 +26353,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vial_of_Dominance_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
 	
 	[tag]"drop level"	[value]"50"
 
@@ -26149,6 +26371,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vial_of_Fate_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
 	[tag]"drop level"	[value]"50"
 
 	[tag]"item width"	[value]"1"
@@ -26162,6 +26387,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vial_of_Sacrifice_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
 	
 	[tag]"drop level"	[value]"68"
 
@@ -26177,6 +26405,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vial_of_Summoning_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
 	[tag]"drop level"	[value]"50"
 
 	[tag]"item width"	[value]"1"
@@ -26190,6 +26421,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vial_of_the_Ghost_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
 	
 	[tag]"drop level"	[value]"68"
 
@@ -26205,6 +26439,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vial_of_the_Ritual_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
 	[tag]"drop level"	[value]"50"
 
 	[tag]"item width"	[value]"1"
@@ -26218,6 +26455,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vial_of_Transcendence_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
 	
 	[tag]"drop level"	[value]"50"
 
@@ -26233,6 +26473,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Violet_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
+	
 	[tag]"drop level"	[value]"52"
 
 	[tag]"item width"	[value]"1"
@@ -26246,6 +26489,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"WarlordExalt"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
 	
 	[tag]"drop level"	[value]"1"
 	
@@ -26263,6 +26509,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"WhisperingDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"1"
 	
 	[tag]"drop level"	[value]"1"
@@ -26279,6 +26528,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Aberrant_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26292,6 +26544,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Aetheric_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26307,6 +26562,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Bloodstained_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26320,6 +26578,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Bound_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26335,6 +26596,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Corroded_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26348,6 +26612,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Dense_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26364,6 +26631,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	[tag]"item tag"		[value]"Deleted"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26378,6 +26648,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Encrusted_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26391,6 +26664,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Faceted_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26420,6 +26696,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Fractured_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26433,6 +26712,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Frigid_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26448,6 +26730,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Gilded_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26461,6 +26746,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Glyphic_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26476,6 +26764,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Hollow_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26489,6 +26780,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Jagged_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26504,6 +26798,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Lucent_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26517,6 +26814,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Metallic_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26532,6 +26832,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Perfect_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26545,6 +26848,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Prismatic_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26560,6 +26866,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Pristine_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26573,6 +26882,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sanctified_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -26588,6 +26900,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Scorched_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26601,6 +26916,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Serrated_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -26618,6 +26936,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Shuddering_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26631,6 +26952,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Tangled_Fossil_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -30200,6 +30524,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"poison_catalyst"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -30213,6 +30540,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"speed_catalyst"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -30228,6 +30558,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"unstable_catalyst"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -30241,6 +30574,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Tainted_oil"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -30387,9 +30723,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"sacred_blossom"
 	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Basic currency"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30586,6 +30919,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Coinage"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -30599,6 +30934,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"MetalScrap"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30611,6 +30948,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Astragali"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30623,6 +30962,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"BurialMedallion"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31228,6 +31569,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sacred_orb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"35"
@@ -31243,6 +31586,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedBlessing"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
@@ -31260,6 +31606,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TaintedChromaticOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"2"
@@ -31276,6 +31625,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TaintedOrbofFusing"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
@@ -31289,6 +31641,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedJewellersOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
@@ -31306,6 +31661,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TaintedExaltedOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"35"
@@ -31321,6 +31679,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedMythicOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
@@ -31338,6 +31699,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TaintedBlacksmithsWhetstone"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"1"
@@ -31353,6 +31717,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedArmourersScrap"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
@@ -31370,6 +31737,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TaintedChaosOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"12"
@@ -31385,6 +31755,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"TaintedDivineTeardrop"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
@@ -31402,6 +31775,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"KalguuranDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"1"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -31418,6 +31794,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"FossilCrit"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"1"
@@ -31433,6 +31815,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"FossilAttributes"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
@@ -31900,6 +32288,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	[tag]"worth"		[value]"Very Expensive"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"1"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -31916,6 +32306,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"FracturingShard"
 	[tag]"base class"	[value]"Stackable Currency"
 	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
 	
@@ -32096,6 +32488,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"ChargedCompass"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"1"
@@ -32130,6 +32525,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GreaterEldritchEmber"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32142,6 +32539,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GrandEldritchEmber"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
@@ -32158,6 +32557,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ExceptionalEldritchEmber"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
@@ -32194,6 +32596,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"GreaterEldritchIchor"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"drop level"	[value]"73"
 
 	[tag]"item width"	[value]"1"
@@ -32207,6 +32611,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GrandEldritchIchor"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
@@ -32224,6 +32630,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"ExceptionalEldritchIchor"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
+	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"81"
@@ -32239,6 +32648,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"OrbofConflict"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
@@ -32256,6 +32668,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"orb_of_dominance"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
+	
 	[tag]"item tag"		[value]"League: Ritual"
 	
 	[tag]"drop level"	[value]"1"
@@ -32271,6 +32686,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"EldritchChaosOrb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
@@ -32288,6 +32705,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"EldritchExaltedOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"78"
@@ -32303,6 +32722,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"EldritchOrbofAnnulment"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
@@ -47481,6 +47902,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"MirrorOil"
 	
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
 	
 	[tag]"drop level"	[value]"1"
 

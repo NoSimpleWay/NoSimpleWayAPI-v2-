@@ -207,11 +207,14 @@ public:
 	void draw();
 };
 
+class EButtonGroupFilterBlockSeparator;
 class EButtonGroupFilterBlock : public EButtonGroup
 {
 public:
 	EButtonGroupFilterBlock(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 	~EButtonGroupFilterBlock();
+
+	EButtonGroupFilterBlockSeparator* attached_separator = nullptr;
 
 	EButtonGroup* pointer_to_non_listed_segment;
 	EButtonGroup* pointer_to_listed_segment;
@@ -385,10 +388,14 @@ public:
 
 	EButtonGroup* pointer_to_loot_buttons_segment;
 
+	static bool		show_hidden;
+	static float	show_hidden_cooldown;
 	
 	static bool this_group_is_matched	(EGameItem* _game_item, EButtonGroupFilterBlock* _filter_block);
 	static bool is_condition_satisfied	(int _left, std::string _operator, int _right);
 	static bool is_sockets_matched(std::string _block, std::string _operator, std::string _item);
+
+	void update(float _d);
 };
 
 class EButtonGroupNonListedLine : public EButtonGroup
@@ -738,7 +745,7 @@ public:
 
 
 
-
+class GameItemAttribute;
 struct LootSimulatorTagFilter
 {
 public:
@@ -752,6 +759,10 @@ struct GameAttributeGenerator
 {
 public:
 	EGameItemAttributeContainer* target_attribute_container;
+
+	GameAttributeGenerator(std::string _attribute_name);
+
+	GameItemAttribute* target_attribute;
 	void virtual execute_generation(EGameItem* _game_item);
 };
 
@@ -759,6 +770,8 @@ public:
 struct GameAttributeGeneratorMinMaxInt : public GameAttributeGenerator
 {
 public:
+	GameAttributeGeneratorMinMaxInt(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
+
 	int min_value;
 	int max_value;
 
@@ -770,6 +783,8 @@ public:
 struct GameAttributeGeneratorQuantity : public GameAttributeGeneratorMinMaxInt
 {
 public:
+	GameAttributeGeneratorQuantity(std::string _attribute_name) : GameAttributeGeneratorMinMaxInt(_attribute_name) {};
+
 	void execute_generation(EGameItem* _game_item);
 };
 
@@ -777,6 +792,8 @@ public:
 struct GameAttributeGeneratorSocketsLinksColours : public GameAttributeGenerator
 {
 public:
+	GameAttributeGeneratorSocketsLinksColours(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
+
 	int		sockets_min_value;
 	int		sockets_max_value;
 	float	sockets_pow = 1.0f;
@@ -798,21 +815,44 @@ public:
 struct GameAttributeGeneratorMapInfluence : public GameAttributeGenerator
 {
 public:
+	GameAttributeGeneratorMapInfluence(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
+
 	void execute_generation(EGameItem* _game_item);
 };
 
 struct GameAttributeGeneratorItemInfluence : public GameAttributeGenerator
 {
 public:
+	GameAttributeGeneratorItemInfluence(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
+
 	void execute_generation(EGameItem* _game_item);
 	float influence_chance = 0.5f;
+};
+
+
+struct GameAttributeGeneratorExactListedValue : public GameAttributeGenerator
+{
+public:
+	GameAttributeGeneratorExactListedValue(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
+
+	void execute_generation(EGameItem* _game_item);
+	std::vector<std::string> exact_values_list;
+};
+
+struct GameAttributeGeneratorBoolFlag : public GameAttributeGenerator
+{
+public:
+	GameAttributeGeneratorBoolFlag(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
+	
+	float chance_to_activate = 0.5f;
+	void execute_generation(EGameItem* _game_item);
 };
 
 struct GameItemGenerator
 {
 public:
 	GameItemGenerator();
-
+	int										count = 1;
 	std::vector<GameAttributeGenerator*>	attribute_generators_list;
 
 	std::string								filtered_by_exact_name;
@@ -838,4 +878,5 @@ public:
 
 	static std::vector<LootSimulatorPattern*>	registered_loot_simulater_pattern_list;
 	static void									refresh_loot_simulator(LootSimulatorPattern* _pattern);
+	static void									refresh_button_sizes();
 };
