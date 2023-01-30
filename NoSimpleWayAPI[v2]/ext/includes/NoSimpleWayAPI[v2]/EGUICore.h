@@ -242,6 +242,9 @@ public:
 
 	ButtonAlignType button_align_type = ButtonAlignType::BUTTON_ALIGN_LEFT;
 
+	void recursive_set_suppressed();
+	bool suppressed = false;
+
 	bool debug_translation = false;
 	bool can_be_moved = true;
 	bool have_shadow = true;

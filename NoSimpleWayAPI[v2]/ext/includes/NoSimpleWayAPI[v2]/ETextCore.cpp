@@ -528,7 +528,7 @@ void ETextArea::generate_text()
 		//vertical align
 		y_adding += (full_text_height - 4.0f) * offset_by_text_size_y * font_scale;
 		y_adding += border_offset_bottom;
-
+		y_adding = round(y_adding);
 
 		for (std::string* str : row)
 		{
@@ -550,6 +550,7 @@ void ETextArea::generate_text()
 				(get_row_width(str) * offset_by_text_size_x) * font_scale;
 
 			x_adding += offset_border[BorderSide::LEFT];
+			x_adding = round(x_adding);
 			//_adding = *region_gabarite->size_y * offset_by_gabarite_size_y + get_row_width(str) * offset_by_text_size_y;
 
 			float px = 0.5f / NS_EGraphicCore::default_texture_atlas->get_atlas_size_x();

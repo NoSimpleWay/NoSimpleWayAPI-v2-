@@ -487,23 +487,25 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	if
+	(
+		(!static_cast<EntityButton*>(_entity)->parent_button_group->suppressed)
+		&&
 		(
-			(
-				(EButtonGroup::focused_button_group == ((EntityButton*)_entity)->parent_button_group)
-				&&
-				(((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
-			)
+			(EButtonGroup::focused_button_group == ((EntityButton*)_entity)->parent_button_group)
 			&&
-			(
-				(static_cast<EntityButton*>(_entity)->suppressor == nullptr)
-				||
-				(*static_cast<EntityButton*>(_entity)->suppressor)
-			)
-			||
-			(((EntityButton*)_entity)->button_gabarite->have_phantom_translation)
-			||
-			(((EntityButton*)_entity)->have_phantom_draw)
+			(((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
 		)
+		&&
+		(
+			(static_cast<EntityButton*>(_entity)->suppressor == nullptr)
+			||
+			(*static_cast<EntityButton*>(_entity)->suppressor)
+		)
+		||
+		(((EntityButton*)_entity)->button_gabarite->have_phantom_translation)
+		||
+		(((EntityButton*)_entity)->have_phantom_draw)
+	)
 	{
 		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.15f);
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
@@ -3307,6 +3309,48 @@ std::string EStringUtils::UTF8_to_ANSI(std::string _text)
 
 	return sValid;
 	//return std::string();
+}
+
+bool EStringUtils::if_text_is_number(std::string* _text)
+{
+	if (*_text == "") { return false; }
+
+	for (int i = 0; i < _text->length(); i++)
+	{
+		if ((i > 0) && ((*_text)[i] == '-')) { return false; }// minus can be only on start
+
+		if
+		(
+			!(
+				((*_text)[i] == '-')
+				||
+				((*_text)[i] == '0')
+				||
+				((*_text)[i] == '1')
+				||
+				((*_text)[i] == '2')
+				||
+				((*_text)[i] == '3')
+				||
+				((*_text)[i] == '4')
+				||
+				((*_text)[i] == '5')
+				||
+				((*_text)[i] == '6')
+				||
+				((*_text)[i] == '7')
+				||
+				((*_text)[i] == '8')
+				||
+				((*_text)[i] == '9')
+			)
+		)
+		{
+			return false;
+		}
+	}
+
+	return true;
 }
 
 const int PRIME_CONST = 431;

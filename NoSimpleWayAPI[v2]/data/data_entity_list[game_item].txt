@@ -6646,11 +6646,11 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"World drop"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -7460,8 +7460,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Akil's Prophecy"
 	[tag]"name RU"		[value]"Пророчество Акила"
-	
-	[tag]"worth"		[value]"Trash"
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
@@ -8118,7 +8116,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8265,7 +8263,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8438,7 +8436,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -8704,7 +8702,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -9207,7 +9205,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 
@@ -9366,12 +9364,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Item for dex based character"
-	[tag]"item tag"		[value]"Offhand"
-	[tag]"item tag"		[value]"Item slot"
-	[tag]"item tag"		[value]"Defence: evasion"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -10048,7 +10040,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -12034,7 +12026,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -12047,7 +12039,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -12073,7 +12065,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -12203,7 +12195,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17534,6 +17526,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Craicic_Lure_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17546,6 +17540,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Saqawine_Lure_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17558,6 +17554,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Farric_Lure_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17570,6 +17568,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fenumal_Lure_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17594,6 +17594,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Simulacrum"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Special fragment"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17606,6 +17608,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"blood_filled_vessel"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Special fragment"
 
 	[tag]"item tag"		[value]"League: Ritual"
 
@@ -17620,6 +17624,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Eber's_Key_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17632,6 +17638,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_Constriction"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17644,6 +17652,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_Emptiness"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17656,6 +17666,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_Enslavement"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17668,6 +17680,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_Eradication"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17680,6 +17694,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_Knowledge"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17692,6 +17708,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_Purification"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17704,6 +17722,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_Shape"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17716,6 +17736,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_Terror"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17728,6 +17750,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Shaper"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17740,6 +17764,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_the_Chimera_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17752,6 +17778,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_the_Hydra_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17764,6 +17792,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_the_Minotaur_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17776,6 +17806,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragment_of_the_Phoenix_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17800,6 +17832,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17812,6 +17846,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17824,6 +17860,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17836,6 +17874,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17848,6 +17888,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17860,6 +17902,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17872,17 +17916,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Item for melee"
-	[tag]"item tag"		[value]"One-hand"
-	[tag]"item tag"		[value]"Item slot"
-	[tag]"item tag"		[value]"Melee weapon"
-		
-	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17892,6 +17929,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17904,6 +17943,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17916,6 +17957,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17928,6 +17971,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17940,6 +17985,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17952,17 +17999,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Item for str based character"
-	[tag]"item tag"		[value]"Item for dex based character"
-	[tag]"item tag"		[value]"Armour piece"
-	[tag]"item tag"		[value]"Item slot"
-	[tag]"item tag"		[value]"Defence: armour"
-	[tag]"item tag"		[value]"Defence: evasion"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -17974,6 +18015,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17986,6 +18029,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17998,6 +18043,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Inya's_Key_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18059,6 +18106,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18070,6 +18119,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18083,6 +18134,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18094,6 +18147,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18107,6 +18162,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18118,6 +18175,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18131,6 +18190,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18142,6 +18203,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18155,6 +18218,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18166,6 +18231,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18179,6 +18246,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18190,6 +18259,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18203,6 +18274,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18214,6 +18287,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18227,6 +18302,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18238,6 +18315,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18251,6 +18330,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18262,6 +18343,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18275,6 +18358,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18286,6 +18371,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18299,6 +18386,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18310,6 +18399,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18323,6 +18414,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18334,6 +18427,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18347,6 +18442,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18358,6 +18455,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18371,6 +18470,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18382,6 +18483,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18395,6 +18498,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18406,6 +18511,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18493,6 +18600,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Volkuur's_Key_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18506,6 +18615,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18517,6 +18628,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18530,6 +18643,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18541,6 +18656,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18554,6 +18671,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18565,6 +18684,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18578,6 +18699,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18589,6 +18712,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18602,6 +18727,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18613,6 +18740,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18626,6 +18755,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18637,6 +18768,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18650,6 +18783,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18661,6 +18796,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18674,6 +18811,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -18685,6 +18824,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Yriel's_Key_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20786,6 +20927,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Amethyst_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20798,6 +20941,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Breach_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20826,6 +20971,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SuperRing"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20838,6 +20986,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Coral_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20850,6 +21000,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Diamond_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20862,6 +21014,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SuperRing"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20874,6 +21029,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gold_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20886,6 +21043,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Iron_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20898,6 +21057,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Moonstone_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20926,6 +21087,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Paua_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20950,6 +21113,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Ruby_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20962,6 +21127,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20991,6 +21158,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Topaz_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -21003,6 +21172,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Two-Stone_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -21015,6 +21186,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -21027,6 +21200,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vermillion_Ring"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Rare base"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -23997,6 +24172,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Alchemy_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Currency shard"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -24010,6 +24188,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Alteration_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Currency shard"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24077,6 +24258,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ancient_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"worth"		[value]"Common"
+	[tag]"item tag"		[value]"Currency shard"
+	
 	[tag]"drop level"	[value]"35"
 
 	[tag]"item width"	[value]"1"
@@ -24090,6 +24274,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Annulment_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Common"
+	[tag]"item tag"		[value]"Currency shard"
 	
 	[tag]"drop level"	[value]"35"
 
@@ -24141,6 +24328,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"AwakenerOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"worth"		[value]"Expensive"
+	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Boss loot"
 
@@ -24186,6 +24375,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Binding_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Currency shard"
 	
 	[tag]"drop level"	[value]"25"
 
@@ -24390,6 +24582,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Common"
+	
 	[tag]"drop level"	[value]"52"
 
 	[tag]"item width"	[value]"1"
@@ -24424,6 +24618,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Moderate"
+	
 	[tag]"drop level"	[value]"12"
 
 	[tag]"item width"	[value]"1"
@@ -24437,6 +24633,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Chaos_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Currency shard"
 	
 	[tag]"drop level"	[value]"8"
 
@@ -24454,6 +24653,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -24485,6 +24686,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"crescent_splinter"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Splinter item"
@@ -24519,6 +24722,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"CrusaderExalt"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Boss loot"
@@ -24584,6 +24789,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"drop level"	[value]"35"
 
@@ -24664,6 +24871,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Engineer's_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Currency shard"
+	
 	[tag]"drop level"	[value]"8"
 
 	[tag]"item width"	[value]"1"
@@ -24697,6 +24907,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Rare"
+	
 	[tag]"drop level"	[value]"35"
 
 	[tag]"item width"	[value]"1"
@@ -24710,6 +24922,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Exalted_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	[tag]"item tag"		[value]"Currency shard"
 	
 	[tag]"drop level"	[value]"35"
 
@@ -24841,6 +25056,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Common"
+	
 	[tag]"drop level"	[value]"12"
 
 	[tag]"item width"	[value]"1"
@@ -24858,7 +25075,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 		
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -24931,6 +25148,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Harbinger's_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"worth"		[value]"Common"
+	[tag]"item tag"		[value]"Currency shard"
+	
 	[tag]"drop level"	[value]"52"
 
 	[tag]"item width"	[value]"1"
@@ -24944,6 +25164,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Horizon_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Currency shard"
 	
 	[tag]"drop level"	[value]"52"
 
@@ -25094,6 +25317,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Common"
+	
 	[tag]"drop level"	[value]"8"
 
 	[tag]"item width"	[value]"1"
@@ -25135,6 +25360,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Very expensive"
+	
 	[tag]"drop level"	[value]"35"
 
 	[tag]"item width"	[value]"1"
@@ -25148,6 +25375,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Mirror_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Very expensive"
+	[tag]"item tag"		[value]"Currency shard"
 	
 	[tag]"drop level"	[value]"35"
 
@@ -25264,6 +25494,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Moderate"
+	
 	[tag]"drop level"	[value]"35"
 
 	[tag]"item width"	[value]"1"
@@ -25300,6 +25532,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Trash"
+	
 	[tag]"drop level"	[value]"25"
 
 	[tag]"item width"	[value]"1"
@@ -25316,6 +25550,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -25334,6 +25570,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Common"
+	
 	[tag]"drop level"	[value]"8"
 
 	[tag]"item width"	[value]"1"
@@ -25351,6 +25589,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Common"
+	
 	[tag]"drop level"	[value]"68"
 
 	[tag]"item width"	[value]"1"
@@ -25364,6 +25604,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Orb_of_Regret_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"drop level"	[value]"2"
 
@@ -25381,6 +25623,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"12"
 
@@ -25417,6 +25661,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
 	
@@ -25536,6 +25782,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Common"
+	
 	[tag]"drop level"	[value]"12"
 
 	[tag]"item width"	[value]"1"
@@ -25549,6 +25797,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Regal_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Currency shard"
 	
 	[tag]"drop level"	[value]"12"
 
@@ -25644,6 +25895,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"48"
 
@@ -25917,6 +26170,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Stacked_Deck_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
@@ -26255,6 +26510,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Transmutation_Shard_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Currency shard"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -26285,6 +26543,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vaal_Orb_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
@@ -30507,6 +30767,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Veiled_chaos"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"worth"		[value]"Moderate"
+	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
@@ -30628,6 +30890,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -30640,6 +30904,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -30651,6 +30917,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30664,6 +30932,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -30675,6 +30945,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30688,6 +30960,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
+	[tag]"item tag"		[value]"Scarab item"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -30699,6 +30973,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30711,6 +30987,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30795,6 +31073,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"seaglass_amulet"
 	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Rare base"
 	
 	[tag]"item tag"		[value]"Good for attack build"
 
@@ -30888,6 +31168,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Common"
+	
 	[tag]"drop level"	[value]"40"
 
 	[tag]"item width"	[value]"1"
@@ -30904,6 +31186,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"40"
 
@@ -31319,10 +31603,102 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой флакон"
 
 	[tag]"icon path"	[value]"GoldFlask"
-	[tag]"base class"	[value]"Critical Utility Flasks"
+	[tag]"base class"	[value]"Utility Flasks"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Small Hybrid Flask"
+	[tag]"name RU"		[value]"Малый флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskSmall"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Medium Hybrid Flask"
+	[tag]"name RU"		[value]"Средний флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskMedium"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Large Hybrid Flask"
+	[tag]"name RU"		[value]"Большой флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskBig"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Colossal Hybrid Flask"
+	[tag]"name RU"		[value]"Великий флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskSmall"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sacred Hybrid Flask"
+	[tag]"name RU"		[value]"Освящённый флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskMedium"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hallowed Hybrid Flask"
+	[tag]"name RU"		[value]"Благодатный флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskBig"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -31331,7 +31707,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Корундовый флакон"
 
 	[tag]"icon path"	[value]"CorundumFlask"
-	[tag]"base class"	[value]"Critical Utility Flasks"
+	[tag]"base class"	[value]"Utility Flasks"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -31343,7 +31719,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Железный флакон"
 
 	[tag]"icon path"	[value]"IronFlask"
-	[tag]"base class"	[value]"Critical Utility Flasks"
+	[tag]"base class"	[value]"Utility Flasks"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -31568,6 +31944,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sacred_orb"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	
@@ -31975,6 +32353,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Rusted_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 
@@ -31989,6 +32369,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Polished_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 
@@ -32004,6 +32386,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Gilded_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 	
+	[tag]"item tag"		[value]"Scarab item"
+	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
@@ -32017,6 +32401,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 
@@ -32047,6 +32433,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Amulets"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Expensive base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32305,6 +32692,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"FracturingShard"
 	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"		[value]"Currency shard"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
@@ -32472,6 +32860,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
+	[tag]"worth"		[value]"Moderate"
+	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"68"
@@ -32489,7 +32879,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Delve item"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
@@ -32511,6 +32900,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"68"
 
@@ -32581,6 +32972,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"drop level"	[value]"68"
 
@@ -47731,6 +48124,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"MirrorRing"
 	
 	[tag]"base class"	[value]"Ring"
+	
+	[tag]"item tag"		[value]"Expensive base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

@@ -103,79 +103,82 @@ void EWindow::GUI_update_default(float _d)
 		EButtonGroup* catched_group = nullptr;
 
 		for (int i = 0; i < EButtonGroup::parent_vector_moving_group->group_list.size(); i++)
-		if (EButtonGroup::catched_by_mouse(EButtonGroup::parent_vector_moving_group->group_list[i]))
+		if ((!EButtonGroup::parent_vector_moving_group->group_list[i]->suppressed) && (EButtonGroup::catched_by_mouse(EButtonGroup::parent_vector_moving_group->group_list[i])))
 		{
 			catched_group = EButtonGroup::parent_vector_moving_group->group_list[i];
 		}
 
-		if (EButtonGroup::selected_groups.empty())
-		{	
-			int moved_group_id		= -1;
-
-			//VECTOR MOVING ID
-			for (int i = 0; i < EButtonGroup::parent_vector_moving_group->group_list.size(); i++)
-				if (EButtonGroup::parent_vector_moving_group->group_list[i] == EButtonGroup::vector_moving_group)
-				{
-					moved_group_id = i;
-					break;
-				}
-
-
-
-			if ((catched_group != nullptr) && (catched_group != EButtonGroup::vector_moving_group))
-			{
-
-
-				EButtonGroup::parent_vector_moving_group->group_list.erase(EButtonGroup::parent_vector_moving_group->group_list.begin() + moved_group_id);
-
-				std::vector<EButtonGroup*>::iterator catched_iterator = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), catched_group);
-
-				EButtonGroup::parent_vector_moving_group->group_list.insert(catched_iterator, EButtonGroup::vector_moving_group);
-
-				EButtonGroup::change_group(EButtonGroup::parent_vector_moving_group);
-
-				EButtonGroup::parent_vector_moving_group = nullptr;
-				EButtonGroup::vector_moving_group = nullptr;
-			}
-		}
-		else
+		if (catched_group != nullptr)
 		{
-
-
-			//if (catched_group_id <= EButtonGroup::parent_vector_moving_group->group_list.size() - EButtonGroup::selected_groups.size() + 1)
+			if (EButtonGroup::selected_groups.empty())
 			{
-				std::vector<EButtonGroup*>::iterator start_erasing		= std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), EButtonGroup::selected_groups.front());
-				std::vector<EButtonGroup*>::iterator end_erasing		= std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), EButtonGroup::selected_groups.back());
-				std::vector<EButtonGroup*>::iterator catched_iterator	= std::find(EButtonGroup::selected_groups.begin(), EButtonGroup::selected_groups.end(), catched_group);
-				//if ((first_moved_group_id != -1) && (last_moved_group_id != -1) && (catched_group_id != -1))
-				
-				//		if focused not selection vector
-				if (catched_iterator == EButtonGroup::selected_groups.end())
+				int moved_group_id = -1;
+
+				//VECTOR MOVING ID
+				for (int i = 0; i < EButtonGroup::parent_vector_moving_group->group_list.size(); i++)
+					if (EButtonGroup::parent_vector_moving_group->group_list[i] == EButtonGroup::vector_moving_group)
+					{
+						moved_group_id = i;
+						break;
+					}
+
+
+
+				if ((catched_group != nullptr) && (catched_group != EButtonGroup::vector_moving_group))
 				{
 
-					EButtonGroup::parent_vector_moving_group->group_list.erase(start_erasing, min(end_erasing + 1, EButtonGroup::parent_vector_moving_group->group_list.end() - 1));
 
-					catched_iterator = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), catched_group);
+					EButtonGroup::parent_vector_moving_group->group_list.erase(EButtonGroup::parent_vector_moving_group->group_list.begin() + moved_group_id);
 
+					std::vector<EButtonGroup*>::iterator catched_iterator = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), catched_group);
 
-					EButtonGroup::parent_vector_moving_group->group_list.insert(catched_iterator, EButtonGroup::selected_groups.begin(), EButtonGroup::selected_groups.end());
+					EButtonGroup::parent_vector_moving_group->group_list.insert(catched_iterator, EButtonGroup::vector_moving_group);
 
 					EButtonGroup::change_group(EButtonGroup::parent_vector_moving_group);
 
 					EButtonGroup::parent_vector_moving_group = nullptr;
 					EButtonGroup::vector_moving_group = nullptr;
+				}
+			}
+			else
+			{
 
-					for (EButtonGroup* group : EButtonGroup::selected_groups)
+
+				//if (catched_group_id <= EButtonGroup::parent_vector_moving_group->group_list.size() - EButtonGroup::selected_groups.size() + 1)
+				{
+					std::vector<EButtonGroup*>::iterator start_erasing = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), EButtonGroup::selected_groups.front());
+					std::vector<EButtonGroup*>::iterator end_erasing = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), EButtonGroup::selected_groups.back());
+					std::vector<EButtonGroup*>::iterator catched_iterator = std::find(EButtonGroup::selected_groups.begin(), EButtonGroup::selected_groups.end(), catched_group);
+					//if ((first_moved_group_id != -1) && (last_moved_group_id != -1) && (catched_group_id != -1))
+
+					//		if focused not selection vector
+					if (catched_iterator == EButtonGroup::selected_groups.end())
 					{
-						group->is_selected = false;
+
+						EButtonGroup::parent_vector_moving_group->group_list.erase(start_erasing, min(end_erasing + 1, EButtonGroup::parent_vector_moving_group->group_list.end() - 1));
+
+						catched_iterator = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), catched_group);
+
+
+						EButtonGroup::parent_vector_moving_group->group_list.insert(catched_iterator, EButtonGroup::selected_groups.begin(), EButtonGroup::selected_groups.end());
+
+						EButtonGroup::change_group(EButtonGroup::parent_vector_moving_group);
+
+						EButtonGroup::parent_vector_moving_group = nullptr;
+						EButtonGroup::vector_moving_group = nullptr;
+
+						for (EButtonGroup* group : EButtonGroup::selected_groups)
+						{
+							group->is_selected = false;
+						}
+
+						EButtonGroup::selected_groups.clear();
+
+						EButtonGroup::first_selected_element = nullptr;
+						EButtonGroup::last_selected_element = nullptr;
+
+						EButtonGroup::parent_for_selected_groups = nullptr;
 					}
-
-					EButtonGroup::selected_groups.clear();
-
-					EButtonGroup::first_selected_element = nullptr;
-					EButtonGroup::last_selected_element = nullptr;
-
-					EButtonGroup::parent_for_selected_groups = nullptr;
 				}
 			}
 		}
@@ -380,6 +383,16 @@ void EWindow::GUI_draw_second_pass(float _d)
 			counter++;
 		}
 
+}
+
+void EButtonGroup::recursive_set_suppressed()
+{
+	suppressed = true;
+
+	for (EButtonGroup* group : group_list)
+	{
+		group->recursive_set_suppressed();
+	}
 }
 
 bool EButtonGroup::is_visible()
@@ -589,8 +602,11 @@ void EButtonGroup::update(float _d)
 						but->button_gabarite->phantom_translate_y = 0.0f;
 						but->button_gabarite->phantom_translate_z = 0.0f;
 					}
-
-					but->update(_d);
+					
+					if ((!suppressed)||(but == slider))
+					{
+						but->update(_d);
+					}
 				}
 				else
 				{
@@ -812,7 +828,7 @@ void EButtonGroup::draw()
 			//DEBUG HIGHLIGHT - FOCUSED SLIDER GROUP
 			if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group_with_slider == this))
 			{
-				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLUE, 0.13f);
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLUE, 0.16f);
 				if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
 				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 				(
@@ -824,6 +840,8 @@ void EButtonGroup::draw()
 					region_gabarite->size_y - 0.0f,
 					NS_DefaultGabarites::texture_gabarite_white_pixel
 				);
+
+
 			}
 
 			NS_EGraphicCore::pbr_batcher->draw_call();
@@ -922,6 +940,26 @@ void EButtonGroup::draw()
 
 							NS_DefaultGabarites::texture_gabarite_white_pixel
 
+						);
+					}
+					
+					if ((suppressed) && (but != slider) && (!but->disabled) && (!but->disable_draw))
+					{
+						NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GRAY, 0.5f);
+						ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+
+						NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+						(
+							NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+							NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+							but->button_gabarite->world_position_x ,
+							but->button_gabarite->world_position_y ,
+
+							but->button_gabarite->size_x,
+							but->button_gabarite->size_y,
+
+							NS_DefaultGabarites::texture_gabarite_white_pixel
 						);
 					}
 				}
@@ -1031,6 +1069,37 @@ void EButtonGroup::draw()
 					}
 			}
 
+			if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group_with_slider == this))
+			{
+				if ((slider->disabled) || (slider->disable_draw))
+				{
+					NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_RED, 0.9f);
+				}
+				else
+				{
+					NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLUE, 0.9f);
+				}
+
+				if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					batcher_for_default_draw->vertex_buffer,
+					batcher_for_default_draw->last_vertice_buffer_index,
+					slider->button_gabarite->world_position_x + 0.0f,
+					slider->button_gabarite->world_position_y + 0.0f,
+					max(slider->button_gabarite->size_x - 0.0f, 10.0f),
+					max(slider->button_gabarite->size_y - 0.0f, 10.0f),
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+
+				//EInputCore::logger_param("world x slider", slider->button_gabarite->world_position_x);
+				//EInputCore::logger_param("world y slider", slider->button_gabarite->world_position_y);
+
+				//EInputCore::logger_param("size x slider", slider->button_gabarite->size_x);
+				//EInputCore::logger_param("size y slider", slider->button_gabarite->size_y);
+
+			}
+
 			if (is_selected)
 			{
 
@@ -1050,15 +1119,17 @@ void EButtonGroup::draw()
 			}
 
 			if
+			(
+				(!suppressed)
+				&&
 				(
-					(
-						(parent_group != nullptr)
-						&&
-						(parent_group == EButtonGroup::parent_vector_moving_group)
-						)
+					(parent_group != nullptr)
 					&&
-					(EButtonGroup::catched_by_mouse(this))
+					(parent_group == EButtonGroup::parent_vector_moving_group)
 				)
+				&&
+				(EButtonGroup::catched_by_mouse(this))
+			)
 			{
 				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
 				//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
@@ -1780,13 +1851,15 @@ void EButtonGroup::check_slider()
 
 
 
-		if (child_elements_height_summ - 0.0f > region_gabarite->size_y - border_bottom - border_up)
+		if ((child_elements_height_summ - 0.0f > region_gabarite->size_y - border_bottom - border_up) || (false))
 		{
 			if (slider != nullptr)
 			{
 				slider->disable_draw = false;
 				slider->disabled = false;
 				have_slider = true;
+
+				
 				//EInputCore::logger_param("summ", child_elements_height_summ);
 				//EInputCore::logger_param("size y", *region_gabarite->size_y - 6.0f - *border_bottom - *border_up);
 				//std::cout << std::endl;
@@ -1798,6 +1871,10 @@ void EButtonGroup::check_slider()
 				}//parent have no slider
 
 				scroll_y = slider->current_value;
+			}
+			else
+			{
+				//is_active = false;
 			}
 		}
 		else
@@ -1852,6 +1929,7 @@ void EButtonGroup::button_group_prechange()
 
 void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 {
+	
 	//if (!_group->disable_gabarite)
 	{
 		float saved_scroll = 0.0f;
@@ -1878,6 +1956,8 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 		EButtonGroup::calculate_culling_lines(_group, true);
 
 		_group->realign_all_buttons();
+
+		
 
 		
 	}
@@ -2236,7 +2316,12 @@ void EButtonGroup::realign_all_buttons()
 			region_gabarite->world_position_x;
 
 		slider->offset_y = 0.0f;
-		slider->world_position_y = region_gabarite->world_position_y;
+		slider->world_position_y = region_gabarite->world_position_y + border_bottom;
+
+		if (slider != nullptr)
+		{
+			//slider->button_gabarite->size_y = region_gabarite->size;
+		}
 	}
 
 
@@ -2267,6 +2352,8 @@ void EButtonGroup::realign_all_buttons()
 
 		//scroll_y = slider->current_value;
 	}
+
+
 
 
 	//float current_scroll = region_gabarite->size_y - scroll_y;
@@ -2428,8 +2515,8 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 		//set slider head size
 		if (_group->slider != nullptr)
 		{
-			_group->slider->button_gabarite->size_x = _group->selected_style->slider_inactive->main_texture->size_x_in_pixels;
-			_group->slider->button_gabarite->size_y = _group->selected_style->slider_inactive->main_texture->size_y_in_pixels;
+			//_group->slider->button_gabarite->size_x = _group->selected_style->slider_inactive->main_texture->size_x_in_pixels;
+			//_group->slider->button_gabarite->size_y = _group->selected_style->slider_inactive->main_texture->size_y_in_pixels;
 		}
 
 		//_group->refresh_button_group(_group);
@@ -2882,7 +2969,7 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 
 		if
 		(
-			(_group->slider != NULL)
+			(_group->slider != nullptr)
 			&&
 			(!_group->slider->disable_draw)
 			&&

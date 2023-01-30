@@ -1532,8 +1532,8 @@ void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
 
 
 	//change button gabarites size y
-	_but->button_gabarite->size_x = _style->slider_inactive->main_texture->size_x_in_pixels;
-	_but->button_gabarite->size_y = _style->slider_inactive->main_texture->size_y_in_pixels;
+	//_but->button_gabarite->size_x = _style->slider_inactive->main_texture->size_x_in_pixels;
+	//_but->button_gabarite->size_y = _style->slider_inactive->main_texture->size_y_in_pixels;
 
 	_but->custom_data_list[0]->get_sprite_by_id(0, 0, 0, 0)->set_texture_gabarite
 	(
@@ -1583,14 +1583,7 @@ void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style)
 		*_style->slider_bg->subdivision_y
 	);
 
-	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
-	(
-		0.0f,
-		0.0f,
-		0.0f,
-		_but->parent_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
-		_but->parent_button_group->region_gabarite->size_y - _but->parent_button_group->border_bottom - _but->parent_button_group->border_up
-	);
+
 
 	//offset by button_group
 	float total_group_height
@@ -1602,7 +1595,14 @@ void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style)
 		_but->parent_button_group->border_up;
 
 
-
+	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
+	(
+		0.0f,
+		0.0f,
+		0.0f,
+		_but->parent_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
+		total_group_height
+	);
 
 
 
@@ -1617,7 +1617,7 @@ void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style)
 		_style->slider_bg->gloss_map_texture
 	);
 
-	_but->sprite_layer_list[0]->offset_y = _but->parent_button_group->border_bottom;
+	_but->offset_y = 10.0f;
 	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = _style->slider_inactive->main_texture->size_x_in_pixels;
 	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = total_group_height;
 
@@ -1637,13 +1637,13 @@ void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style)
 	{
 		slider->min_value = 0.0f;
 
-		slider->max_value = -(_but->parent_button_group->highest_point_y - _but->parent_button_group->region_gabarite->size_y);
+		slider->max_value = -(_but->parent_button_group->highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->border_up);
 		slider->max_value = min(slider->max_value, 0.0f);
 	}
 	else
 	if (_but->parent_button_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
 	{
-		slider->min_value = (_but->parent_button_group->highest_point_y - _but->parent_button_group->region_gabarite->size_y);
+		slider->min_value = (_but->parent_button_group->highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->border_up);
 		slider->min_value = max(slider->min_value, 0.0f);
 
 		slider->max_value = 0.0f;

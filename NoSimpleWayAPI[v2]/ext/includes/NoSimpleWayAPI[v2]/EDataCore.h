@@ -617,6 +617,7 @@ public:
 	static bool			compare_ignoring_case(std::string _text1, std::string _text2);
 	static bool			A_contains_B_ignore_case(std::string _text_A, std::string _text_B);
 	static std::string	UTF8_to_ANSI(std::string _text);
+	static bool			if_text_is_number(std::string* _text);
 
 	static int hashFunction(std::string _input);
 };
