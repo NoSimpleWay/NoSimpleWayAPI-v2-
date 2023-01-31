@@ -99,7 +99,7 @@ void Entity::generate_vertex_buffer_for_all_sprite_layers()
 						{
 							//c_region->text_area->change_text(c_region->text_area->original_text);
 							//c_region->text_area->generate_rows();	
-							c_region->text_area->generate_text();
+							//c_region->text_area->generate_text();
 						}
 					}
 
@@ -478,6 +478,25 @@ void Entity::add_text_area_to_last_clickable_region(EntityButton* _button, EText
 				//}
 			}
 		}
+	}
+}
+
+void EntityButton::destroy_attached_description()
+{
+	if (attached_description != nullptr)
+	{
+		parent_button_group->root_group->parent_window->button_group_list.erase
+		(
+			std::find
+			(
+				parent_button_group->root_group->parent_window->button_group_list.begin(),
+				parent_button_group->root_group->parent_window->button_group_list.end(),
+				attached_description
+			)
+		);
+
+		delete attached_description;
+		attached_description = nullptr;
 	}
 }
 
@@ -1314,9 +1333,6 @@ void EntityButton::add_description(std::string _text)
 	jc_text->offset_by_gabarite_size_x = 0.00f;
 	jc_text->offset_by_text_size_x = 0.00f;
 	jc_text->change_text(_text);
-
-	jc_text->generate_rows();
-	jc_text->generate_text();
 
 	jc_data->clickable_area_list.push_back(jc_clickable_area);
 	jc_clickable_area->text_area = jc_text;

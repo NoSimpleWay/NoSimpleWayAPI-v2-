@@ -890,15 +890,15 @@ void EButtonGroup::draw()
 
 
 					if
+					(
+						(but->have_phantom_draw)
+						||
 						(
-							(but->have_phantom_draw)
-							||
-							(
-								(EInputCore::key_pressed(GLFW_KEY_TAB))
-								&&
-								(false)
-								)
-							)
+							(EInputCore::key_pressed(GLFW_KEY_TAB))
+							&&
+							(false)
+						)
+					)
 					{
 						but->have_phantom_draw = false;
 						but->be_visible_last_time = true;
@@ -964,7 +964,11 @@ void EButtonGroup::draw()
 					}
 				}
 
-
+			for (EClickableArea* clickable_area : clickable_area_list)
+			if (clickable_area != nullptr)
+			{
+				clickable_area->draw();
+			}
 
 			NS_EGraphicCore::pbr_batcher->draw_call();//draw pbg bg
 			batcher_for_default_draw->draw_call();//draw text to default batcher
@@ -1039,7 +1043,7 @@ void EButtonGroup::draw()
 				);
 			}
 
-			if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
+			if (EInputCore::key_pressed(GLFW_KEY_RIGHT_ALT))
 			{
 				for (EButtonGroup* group : group_list)
 					if
@@ -1572,6 +1576,19 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 			_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("Button group background");
 		}
 
+		for (EClickableArea* clickable_area : _group->clickable_area_list)
+		{
+			if (clickable_area->text_area != nullptr)
+			{
+				clickable_area->text_area->change_text(clickable_area->text_area->original_text);
+			}
+
+			for (ESpriteLayer* s_layer : clickable_area->sprite_layer_list)
+			if (s_layer != nullptr)
+			{
+				s_layer->generate_vertex_buffer_for_sprite_layer("Clickable region sprite layer");
+			}
+		}
 
 		//button visible, go generate vertex!
 		for (EntityButton* but : _group->button_list)

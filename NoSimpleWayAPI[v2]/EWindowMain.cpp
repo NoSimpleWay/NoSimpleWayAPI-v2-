@@ -1155,6 +1155,183 @@ void EDataActionCollection::action_add_items_from_this_loot_pattern(Entity* _ent
 	LootSimulatorPattern::refresh_loot_simulator(patter_button->target_pattern);
 }
 
+void EDataActionCollection::action_create_or_delete_description_on_hover(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButton*
+	but = static_cast<EntityButton*>(_entity);
+
+	EntityButtonLootItem*
+	loot_button = static_cast<EntityButtonLootItem*>(_entity);
+
+	if
+	(
+		(EButtonGroup::focused_button_group == ((EntityButton*)_entity)->parent_button_group)
+		&&
+		(but->button_gabarite->overlapped_by_mouse())
+	)
+	{
+		if (but->attached_description == nullptr)
+		{
+			//		MAIN GROUP
+			EButtonGroup*
+				main_group = new EButtonGroup
+				(
+					new ERegionGabarite
+					(
+						but->button_gabarite->world_position_x,
+						but->button_gabarite->world_position_y + but->button_gabarite->size_y + 5.0f,
+						0.0f,
+
+						500.0f,
+						200.0f
+					)
+				);
+			main_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+			main_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_darken_bg);
+
+			main_group->can_be_focused = false;
+			main_group->can_be_moved = false;
+			main_group->can_change_position_in_vector = false;
+			//
+
+
+			//		BOTTOM PART FOR ATTRIBUTES
+			EButtonGroup*
+				bottom_part = main_group->add_group(new EButtonGroup(new ERegionGabarite(500.0f, 500.0f)));
+
+			bottom_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+			bottom_part->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_without_slider, bgroup_darken_bg);
+			//
+
+
+
+			//		UP PART FOR NAME
+			EButtonGroup*
+			up_part = main_group->add_group(new EButtonGroup(new ERegionGabarite(500.0f, 30.0f)));
+
+			up_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+			up_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_default_bg);
+			//
+
+
+			/////////////		CLICKABLE AREA FOR BOTTOM PART (ATTRIBUTES)		/////////////
+			{
+				EClickableArea*
+				clickable_area_for_bottom_attributes = EClickableArea::create_default_clickable_region(bottom_part->region_gabarite, main_group);
+				bottom_part->clickable_area_list.push_back(clickable_area_for_bottom_attributes);
+
+				std::string item_attributes_generated_text = "";
+
+				for (int i = 0; i < loot_button->stored_game_item->attribute_container_list.size(); i++)
+				{
+					EGameItemAttributeContainer*
+						attribute_container = &loot_button->stored_game_item->attribute_container_list[i];
+
+					if
+						(
+							(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
+							&&
+							(attribute_container->attribute_value_bool)
+							)
+					{
+						item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[NSW_localisation_EN];
+						item_attributes_generated_text += "\\n";
+					}
+					else
+						if
+							(
+								(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+								)
+						{
+							item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[NSW_localisation_EN];
+							item_attributes_generated_text += " ";
+							item_attributes_generated_text += std::to_string(attribute_container->attribute_value_int);
+							item_attributes_generated_text += "\\n";
+						}
+						else
+							if
+								(
+									(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
+									)
+							{
+								item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[NSW_localisation_EN];
+								item_attributes_generated_text += " [";
+								item_attributes_generated_text += attribute_container->attribute_value_str;
+								item_attributes_generated_text += "]\\n";
+							}
+				}
+
+				ETextArea*
+				text_area_for_group = ETextArea::create_centered_text_area(clickable_area_for_bottom_attributes, EFont::font_list[0], item_attributes_generated_text);
+				clickable_area_for_bottom_attributes->text_area = text_area_for_group;
+
+
+
+				
+			}
+			/////////////
+
+			/////////////		CLICKABLE AREA FOR TOP PART (NAME)		/////////////
+			{
+				EClickableArea*
+				clickable_area_for_top_name = EClickableArea::create_default_clickable_region(up_part->region_gabarite, main_group);
+				up_part->clickable_area_list.push_back(clickable_area_for_top_name);
+
+				ETextArea*
+				text_area_for_group = ETextArea::create_centered_text_area
+				(
+					clickable_area_for_top_name,
+					EFont::font_list[1],
+					loot_button->stored_game_item->localised_name.localisations[NSW_localisation_EN]
+				);
+
+				switch (loot_button->stored_game_item->rarity)
+				{
+					case 0:
+					{
+						text_area_for_group->set_color(1.0f, 0.9f, 0.8f, 1.0f);
+						break;
+					}
+					case 1:
+					{
+						text_area_for_group->set_color(0.4f, 0.6f, 1.0f, 1.0f);
+						break;
+					}
+					case 2:
+					{
+						text_area_for_group->set_color(1.0f, 0.9f, 0.35f, 1.0f);
+						break;
+					}
+					case 3:
+					{
+						text_area_for_group->set_color(1.0f, 0.5f, 0.25f, 1.0f);
+						break;
+					}
+
+					default:
+					{
+						text_area_for_group->set_color(1.0f, 0.2f, 0.1f, 1.0f);
+						break;
+					}
+				}
+				//text_area_for_group->set_color(1.0f, 0.2f, 0.1f, 1.0f);
+				clickable_area_for_top_name->text_area = text_area_for_group;
+			}
+
+			but->attached_description = main_group;
+			but->parent_button_group->root_group->parent_window->button_group_list.push_back(main_group);
+			EButtonGroup::refresh_button_group(main_group);
+		}
+	}
+	else
+	{
+		if (but->attached_description != nullptr)
+		{
+			but->destroy_attached_description();
+		}
+	}
+}
+
 void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _text_area)
 {
 
@@ -9131,7 +9308,7 @@ void EWindowMain::register_loot_simulator_patterns()
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Хорошие базы";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_good_bases");
 
-		/////////////////////////////			ITEM GENERATOR (ALL BASIC CURRENCY)			/////////////////////////////////////////////
+		/////////////////////////////			ITEM GENERATOR (TOP TIER BASE)			/////////////////////////////////////////////
 		GameItemGenerator*
 			game_item_generator = new GameItemGenerator();
 		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -9156,8 +9333,8 @@ void EWindowMain::register_loot_simulator_patterns()
 		/////////////////////////////			RARITY			/////////////////////////////////////////////
 		{
 			//		value
-			GameAttributeGeneratorMinMaxInt*
-				value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+			GameAttributeGeneratorRarity*
+				value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 			//		parameters
@@ -9192,6 +9369,27 @@ void EWindowMain::register_loot_simulator_patterns()
 
 			//		parameters
 			value_generator->influence_chance = 0.5f;
+
+			game_item_generator->attribute_generators_list.push_back(value_generator);
+		}
+		
+		/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+		{
+
+			//		value
+			GameAttributeGeneratorSocketsLinksColours*
+				value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+			//		parameters
+			value_generator->sockets_min_value = 1;
+			value_generator->sockets_max_value = 6;
+
+			value_generator->links_min = 1;
+			value_generator->links_max = 6;
+
+			value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED]	= 100;
+			value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN]	= 100;
+			value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE]	= 100;
 
 			game_item_generator->attribute_generators_list.push_back(value_generator);
 		}
@@ -9249,8 +9447,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -9285,6 +9483,27 @@ void EWindowMain::register_loot_simulator_patterns()
 
 				//		parameters
 				value_generator->influence_chance = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
@@ -9330,8 +9549,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -9366,6 +9585,27 @@ void EWindowMain::register_loot_simulator_patterns()
 
 				//		parameters
 				value_generator->influence_chance = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+			
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
@@ -9411,8 +9651,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -9447,6 +9687,27 @@ void EWindowMain::register_loot_simulator_patterns()
 
 				//		parameters
 				value_generator->influence_chance = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+			
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
@@ -9494,8 +9755,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -9530,6 +9791,27 @@ void EWindowMain::register_loot_simulator_patterns()
 
 				//		parameters
 				value_generator->influence_chance = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+			
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 4;
+				value_generator->sockets_max_value = 6;
+
+				value_generator->links_min = 4;
+				value_generator->links_max = 6;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
@@ -9572,8 +9854,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -9668,8 +9950,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -9704,6 +9986,27 @@ void EWindowMain::register_loot_simulator_patterns()
 
 				//		parameters
 				value_generator->influence_chance = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+			
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
@@ -9749,8 +10052,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -9785,6 +10088,27 @@ void EWindowMain::register_loot_simulator_patterns()
 
 				//		parameters
 				value_generator->influence_chance = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
@@ -9830,8 +10154,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -9866,6 +10190,27 @@ void EWindowMain::register_loot_simulator_patterns()
 
 				//		parameters
 				value_generator->influence_chance = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
@@ -9913,8 +10258,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -9949,6 +10294,27 @@ void EWindowMain::register_loot_simulator_patterns()
 
 				//		parameters
 				value_generator->influence_chance = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 5;
+				value_generator->sockets_max_value = 6;
+
+				value_generator->links_min = 4;
+				value_generator->links_max = 6;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
@@ -9991,8 +10357,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10107,8 +10473,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10177,8 +10543,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10247,8 +10613,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10317,8 +10683,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10388,8 +10754,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10458,8 +10824,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10528,8 +10894,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10585,8 +10951,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10673,8 +11039,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10743,8 +11109,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10821,8 +11187,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10902,8 +11268,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -10984,8 +11350,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -11053,8 +11419,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 
 				//		parameters
@@ -11262,8 +11628,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			{
 
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 				//		parameters
 				value_generator->min_value = 0;
@@ -11273,12 +11639,12 @@ void EWindowMain::register_loot_simulator_patterns()
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
 
-			/////////////////////////////			QUALITY			/////////////////////////////////////////////
+			/////////////////////////////			RARQUALITYITY			/////////////////////////////////////////////
 			{
 
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Quality");
 
 				//		parameters
 				value_generator->min_value = 0;
@@ -11331,8 +11697,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			{
 
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
 				//		parameters
 				value_generator->min_value = 3;
@@ -11346,8 +11712,8 @@ void EWindowMain::register_loot_simulator_patterns()
 			{
 
 				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("Rarity");
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Quality");
 
 				//		parameters
 				value_generator->min_value = 0;
@@ -13309,7 +13675,7 @@ void GameAttributeGenerator::execute_generation(EGameItem* _game_item)
 
 void GameAttributeGeneratorMinMaxInt::execute_generation(EGameItem* _game_item)
 {
-	int generated_value = min_value + (max_value - min_value) * pow((rand() % 101) / 100.0f, generator_pow);
+	int generated_value = min_value + round((max_value - min_value) * pow((rand() % 101) / 100.0f, generator_pow));
 
 	target_attribute_container->attribute_value_int = generated_value;
 
@@ -13651,6 +14017,128 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 
 void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _game_item)
 {
+	std::string temp_socket_color_names = "RGBWAD";
+
+	int exactly_color_count[6]	{ 0 };
+	//int color_id_array[6]		{ 0 };
+
+	int total_weight = 0;
+
+	int sockets_count	= sockets_min_value	+ round((float)(sockets_max_value - sockets_min_value)	* pow((rand() % 101) / 100.0f, sockets_pow));
+	int links_count		= links_min			+ round((float)(links_max - links_min)					* pow((rand() % 101) / 100.0f, links_pow));
+
+	std::string sockets_result_string	= "";
+	std::string links_result_string		= "";
+
+	links_count = min(links_count, sockets_count);
+	if (links_count == 1) { links_count = 0; }
+
+	for (int i = 0; i < 6; i++)
+	{
+		total_weight += color_weight[i];
+	}
+
+	int random_selected = 0;
+
+	int weight_sum = 0;
+
+	int result_color_id = -1;
+
+	for (int sc	= 0; sc < sockets_count;	sc++)
+	{
+		random_selected = rand() % total_weight + 1;
+		weight_sum = 0;
+		result_color_id = 0;
+
+		for (int i = 0; i < 6; i++)
+		{
+			if
+			(
+				(color_weight[i] > 0)
+				&&
+				(weight_sum <= random_selected)
+				&&
+				(color_weight[i] + weight_sum > random_selected)
+			)
+			{
+				result_color_id = i;
+				break;
+			}
+
+			weight_sum += color_weight[i];
+		}
+
+		//color_id_array[sc] = result_color_id;
+
+		_game_item->socket_color_id_array[sc] = result_color_id;
+	}
+
+	_game_item->sockets_count	= sockets_count;
+	_game_item->links_count		= links_count;
+
+	sockets_result_string	= std::to_string(sockets_count);
+	links_result_string		= std::to_string(links_count);
+
+	//		GENERATE COLOR SOCKETS STRING LIKE "RRRGGB"
+	for (int i = 0; i < 6; i++) {exactly_color_count[i] = 0;}
+
+	for (int i = 0; i < sockets_count; i++)
+	{
+		exactly_color_count[_game_item->socket_color_id_array[i]]++;
+	};
+
+	for (int i = 0; i < 6; i++)
+	if (exactly_color_count[i] > 0)
+	for (int j = 0; j < exactly_color_count[i]; j++)
+	{
+		sockets_result_string.append(1, temp_socket_color_names[i]);
+	}
+
+	//		GENERATE COLOR LINKS STRING LIKE "RRRGGB"
+	for (int i = 0; i < 6; i++) { exactly_color_count[i] = 0; }
+
+	for (int i = 0; i < links_count; i++)
+	{
+		exactly_color_count[_game_item->socket_color_id_array[i]]++;
+	};
+
+	for (int i = 0; i < 6; i++)
+	if (exactly_color_count[i] > 0)
+	for (int j = 0; j < exactly_color_count[i]; j++)
+	{
+		links_result_string.append(1, temp_socket_color_names[i]);
+	}
+
+
+	//		GENERATE NEW ATTRIBUTE FOR SOCKETS OR LINKS
+	{
+		EGameItemAttributeContainer
+		new_attribute_container;
+
+		if (target_attribute->localisation.base_name == "Sockets")
+		{
+			target_attribute_container->attribute_value_str = sockets_result_string;
+
+			new_attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "SocketGroup");
+			new_attribute_container.attribute_value_str = links_result_string;
+		}
+		else
+		if (target_attribute->localisation.base_name == "SocketGroup")
+		{
+			target_attribute_container->attribute_value_str = links_result_string;
+
+			new_attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "Sockets");
+			new_attribute_container.attribute_value_str = sockets_result_string;
+		}
+		_game_item->attribute_container_list.push_back(new_attribute_container);
+	}
+
+	EGameItemAttributeContainer
+	new_attribute_container;
+
+	new_attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "LinkedSockets");
+	new_attribute_container.attribute_value_int = links_count;
+	_game_item->attribute_container_list.push_back(new_attribute_container);
 }
 
 void EGameItem::import_base_attributes_from_data_entity()
@@ -13768,9 +14256,11 @@ void LootSimulatorPattern::refresh_loot_simulator(LootSimulatorPattern* _pattern
 			_pattern->game_item_generator_list[i]->init_game_item(game_item);
 
 			EntityButtonLootItem*
-				loot_item = new EntityButtonLootItem();
+			loot_item = new EntityButtonLootItem();
 			loot_item->align_even_if_hidden = true;
 			loot_item->do_not_generate_bg = true;
+
+
 
 			loot_item->stored_game_item = game_item;
 
@@ -13789,6 +14279,8 @@ void LootSimulatorPattern::refresh_loot_simulator(LootSimulatorPattern* _pattern
 				item_name
 			);
 
+			loot_item->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_create_or_delete_description_on_hover);
+
 
 			loot_item->get_matched_filter_blocks_list(EWindowMain::loot_filter_editor);
 
@@ -13797,9 +14289,20 @@ void LootSimulatorPattern::refresh_loot_simulator(LootSimulatorPattern* _pattern
 
 
 			loot_item->main_custom_data->actions_on_pre_draw.push_back(EDataActionCollection::action_draw_loot_button);
+			EButtonGroupLootSimulator::show_hidden = true;
 
-
-
+			//loot_item->disable_draw =
+			//(
+			//	(loot_item->matched_filter_blocks.empty())
+			//	&&
+			//	(
+			//		(loot_item->matched_filter_blocks.back()->button_show_hide->selected_variant == 1)
+			//		&&
+			//		(loot_item->matched_filter_blocks.back()->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant != 1)
+			//	)
+			//	||
+			//	(EButtonGroupLootSimulator::show_hidden)
+			//);
 
 
 
@@ -13889,8 +14392,8 @@ void GameAttributeGeneratorQuantity::execute_generation(EGameItem* _game_item)
 }
 
 //STATIC FIELDS FOR EButtonGroupLootSimulator
-bool						EButtonGroupLootSimulator::show_hidden = true;
-float						EButtonGroupLootSimulator::show_hidden_cooldown = 0.5f;
+bool						EButtonGroupLootSimulator::show_hidden = false;
+//float						EButtonGroupLootSimulator::show_hidden_cooldown = 0.5f;
 Helper::HSVRGBAColor		EButtonGroupLootSimulator::temp_color;
 
 EButtonGroup*				EButtonGroupLootSimulator::pointer_to_loot_buttons_segment;
@@ -14313,21 +14816,21 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 	{
 
 		if
-			(
-				(_item[i] == '0')
-				||
-				(_item[i] == '1')
-				||
-				(_item[i] == '2')
-				||
-				(_item[i] == '3')
-				||
-				(_item[i] == '4')
-				||
-				(_item[i] == '5')
-				||
-				(_item[i] == '6')
-				)
+		(
+			(_item[i] == '0')
+			||
+			(_item[i] == '1')
+			||
+			(_item[i] == '2')
+			||
+			(_item[i] == '3')
+			||
+			(_item[i] == '4')
+			||
+			(_item[i] == '5')
+			||
+			(_item[i] == '6')
+		)
 		{
 			sockets_count_item = std::stoi(&_item[i]);
 		}
@@ -14357,7 +14860,7 @@ void EButtonGroupLootSimulator::refresh_loot_simulator()
 	EInputCore::logger_simple_info("refresh loot simulator");
 
 	EButtonGroupLootSimulator::show_hidden = true;
-	EButtonGroupLootSimulator::show_hidden_cooldown = 0.0f;
+	//EButtonGroupLootSimulator::show_hidden_cooldown = 0.0f;
 
 	for (EntityButton* button : pointer_to_loot_buttons_segment->button_list)
 		if (button != pointer_to_loot_buttons_segment->slider)
@@ -14367,7 +14870,7 @@ void EButtonGroupLootSimulator::refresh_loot_simulator()
 			button->disable_draw = false;
 
 			EntityButtonLootItem*
-				loot_button = static_cast<EntityButtonLootItem*>(button);
+			loot_button = static_cast<EntityButtonLootItem*>(button);
 
 			loot_button->matched_bg_color					= nullptr;
 			loot_button->matched_bg_color_block				= nullptr;
@@ -14459,15 +14962,20 @@ bool EButtonGroupLootSimulator::is_condition_sactified_for_listed_expression(std
 void EButtonGroupLootSimulator::update(float _d)
 {
 	EButtonGroup::update(_d);
-	show_hidden_cooldown -= _d;
+	//show_hidden_cooldown -= _d;
 
-	if (show_hidden_cooldown <= 0.0f)
+	//if (show_hidden_cooldown <= 0.0f)
+	if
+	(
+		(EInputCore::key_pressed(GLFW_KEY_LEFT_ALT) && (!show_hidden))
+		||
+		(!EInputCore::key_pressed(GLFW_KEY_LEFT_ALT) && (show_hidden))
+	)
 	{
+		show_hidden = EInputCore::key_pressed(GLFW_KEY_LEFT_ALT);
 
-		show_hidden = !show_hidden;
-
-		if (show_hidden) { show_hidden_cooldown += 0.75f; }
-		else { show_hidden_cooldown += 0.25f; }
+		//if (show_hidden) { show_hidden_cooldown += 0.75f; }
+		//else { show_hidden_cooldown += 0.25f; }
 
 		for (EntityButton* button : pointer_to_loot_buttons_segment->button_list)
 			if (button != pointer_to_loot_buttons_segment->slider)
@@ -14489,6 +14997,8 @@ void EButtonGroupLootSimulator::update(float _d)
 					||
 					(show_hidden)
 				);
+
+				if (button->disable_draw) { button->destroy_attached_description(); }
 			}
 	}
 }
@@ -14619,4 +15129,11 @@ void GameAttributeGeneratorBoolFlag::execute_generation(EGameItem* _game_item)
 	{
 		target_attribute_container->attribute_value_bool = false;
 	}
+}
+
+void GameAttributeGeneratorRarity::execute_generation(EGameItem* _game_item)
+{
+	GameAttributeGeneratorMinMaxInt::execute_generation(_game_item);
+
+	_game_item->rarity = target_attribute_container->attribute_value_int;
 }

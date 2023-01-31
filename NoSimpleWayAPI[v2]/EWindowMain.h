@@ -401,7 +401,7 @@ public:
 	static EntityButton*				pointer_to_input_area_level_button;
 
 	static bool		show_hidden;
-	static float	show_hidden_cooldown;
+	//static float	show_hidden_cooldown;
 
 	static bool	this_group_is_matched(EGameItem* _game_item, EButtonGroupFilterBlock* _filter_block);
 	static bool	is_condition_satisfied(int _left, std::string _operator, int _right);
@@ -509,14 +509,14 @@ namespace EDataActionCollection
 	void action_highlight_matched_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_add_items_from_this_loot_pattern(Entity* _entity, ECustomData* _custom_data, float _d);
-
+	void action_create_or_delete_description_on_hover(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text
 	void action_type_search_filter_block_text(ETextArea* _text_area);
 	void action_refresh_loot_simulator_when_type(ETextArea* _text_area);
 
 
-
+	
 
 	void action_save_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void 
@@ -729,9 +729,14 @@ public:
 	ETextureGabarite* icon;
 	ELocalisationText							localised_name;
 	int											quantity;
+	int											rarity;
 
 	void import_base_attributes_from_data_entity();
 
+	int socket_color_id_array[6];
+
+	int sockets_count	= 0;
+	int links_count		= 0;
 
 
 
@@ -772,6 +777,8 @@ public:
 
 	EntityButtonLootItem();
 	~EntityButtonLootItem();
+
+	
 
 	void get_matched_filter_blocks();
 	void get_matched_filter_blocks_list(EButtonGroupFilterBlockEditor* _filter_block_editor);
@@ -818,7 +825,7 @@ public:
 
 	float generator_pow = 1.0f;
 
-	virtual void execute_generation(EGameItem* _game_item);
+	void execute_generation(EGameItem* _game_item);
 };
 
 struct GameAttributeGeneratorQuantity : public GameAttributeGeneratorMinMaxInt
@@ -828,27 +835,38 @@ public:
 
 	void execute_generation(EGameItem* _game_item);
 };
+struct GameAttributeGeneratorRarity : public GameAttributeGeneratorMinMaxInt
+{
+public:
+	GameAttributeGeneratorRarity(std::string _attribute_name) : GameAttributeGeneratorMinMaxInt(_attribute_name) {};
+
+	void execute_generation(EGameItem* _game_item);
+};
 
 //	Generate sockets and colors
+enum SocketColorEnum
+{
+	SOCKET_COLOR_ENUM_RED,
+	SOCKET_COLOR_ENUM_GREEN,
+	SOCKET_COLOR_ENUM_BLUE,
+	SOCKET_COLOR_ENUM_WHITE,
+	SOCKET_COLOR_ENUM_ABYSS,
+	SOCKET_COLOR_ENUM_DELVE
+};
 struct GameAttributeGeneratorSocketsLinksColours : public GameAttributeGenerator
 {
 public:
 	GameAttributeGeneratorSocketsLinksColours(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
 
-	int		sockets_min_value;
-	int		sockets_max_value;
+	int		sockets_min_value = 1;
+	int		sockets_max_value = 6;
 	float	sockets_pow = 1.0f;
 
-	int		links_min;
-	int		links_max;
+	int		links_min = 1;
+	int		links_max = 6;
 	float	links_pow = 1.0f;
 
-	int		color_red_weight = 100;
-	int		color_green_weight = 100;
-	int		color_blue_weight = 100;
-	int		color_white_weight = 0;
-	int		color_abyss_weight = 0;
-	int		color_delve_weight = 0;
+	int		color_weight[6];
 
 	void execute_generation(EGameItem* _game_item);
 };

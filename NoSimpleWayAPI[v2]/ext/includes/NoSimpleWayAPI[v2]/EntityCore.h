@@ -153,6 +153,8 @@ public:
 	bool align_even_if_hidden	= false;
 	bool do_not_generate_bg		= false;
 
+	void destroy_attached_description();
+	EButtonGroup* attached_description;
 
 	std::vector<change_style_action> action_on_generate_vertex_buffer;
 

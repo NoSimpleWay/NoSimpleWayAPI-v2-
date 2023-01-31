@@ -283,15 +283,23 @@ ETextArea::ETextArea(EClickableArea* _region, EFont* _font, std::string _text)
 	ERegionGabarite::set_region_gabarite
 	(&region_gabarite, _region->region_gabarite);
 	font = _font;
-	//stored_text = _text;
 
 	parent_clickable_region = _region;
 
 	sprite_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
 
 	ETextArea::change_text(_text);
-	//generate_rows();
-	//generate_text();
+}
+
+ETextArea::ETextArea(ERegionGabarite* _region, EFont* _font, std::string _text)
+{
+	ERegionGabarite::set_region_gabarite
+	(&region_gabarite, _region);
+	font = _font;
+
+	sprite_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
+
+	ETextArea::change_text(_text);
 }
 
 ETextArea::~ETextArea()

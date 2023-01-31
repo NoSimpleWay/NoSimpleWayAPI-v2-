@@ -157,6 +157,7 @@ public:
 	std::vector<data_action_pointer> actions_on_click_list;
 	std::vector<data_action_pointer> actions_on_right_click_list;
 	Entity* parent_entity;
+	EButtonGroup* parent_group;
 	ECustomData* parent_custom_data;
 
 	ETextArea* text_area;
@@ -188,6 +189,7 @@ public:
 
 	static EClickableArea* active_clickable_region;
 	static EClickableArea* create_default_clickable_region(ERegionGabarite* _gabarite, Entity* _parent_entity, ECustomData* _custom_data);
+	static EClickableArea* create_default_clickable_region(ERegionGabarite* _gabarite, EButtonGroup* _parent_button_group);
 
 	void update(float _d);
 	void draw();

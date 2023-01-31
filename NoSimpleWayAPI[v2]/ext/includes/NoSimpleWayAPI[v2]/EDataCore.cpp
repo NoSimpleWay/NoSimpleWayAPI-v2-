@@ -763,7 +763,8 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 
 					//tag_require_match = false;
 					if (matched) { but->disabled = false; but->disable_draw = false; }
-					else { but->disabled = true; but->disable_draw = true;}
+					else
+					{ but->disabled = true; but->disable_draw = true; but->destroy_attached_description(); }
 
 				}
 
@@ -851,6 +852,8 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 								{
 									but->disabled = true;
 									but->disable_draw = true;
+
+									but->destroy_attached_description();
 								}
 							}
 
@@ -2128,6 +2131,19 @@ EClickableArea* EClickableArea::create_default_clickable_region(ERegionGabarite*
 	return jc_clickable_area;
 }
 
+EClickableArea* EClickableArea::create_default_clickable_region(ERegionGabarite* _gabarite, EButtonGroup* _parent_button_group)
+{
+	EClickableArea* jc_clickable_area = new EClickableArea();
+
+	ERegionGabarite::set_region_gabarite(&jc_clickable_area->region_gabarite, _gabarite);
+
+	jc_clickable_area->parent_group = _parent_button_group;
+
+	jc_clickable_area->batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
+
+	return jc_clickable_area;
+}
+
 void EClickableArea::update(float _d)
 {
 	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
@@ -2208,7 +2224,7 @@ void EClickableArea::draw()
 		}
 	}
 
-	if ((batcher_for_default_draw != nullptr) && (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT)))
+	if ((batcher_for_default_draw != nullptr) && (EInputCore::key_pressed(GLFW_KEY_RIGHT_ALT)))
 	{
 		if (EClickableArea::overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
 		{

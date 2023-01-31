@@ -180,6 +180,7 @@ class ETextArea
 public:
 	ETextArea();
 	ETextArea(EClickableArea* _region, EFont* _font, std::string _text);
+	ETextArea(ERegionGabarite* _region, EFont* _font, std::string _text);
 	~ETextArea();
 
 	//bool* error = new bool(false);

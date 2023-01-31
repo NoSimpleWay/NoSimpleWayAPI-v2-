@@ -441,6 +441,9 @@ public:
 
 	bool dynamic_autosize_for_window = false;
 
+	//ETextArea* text_area;
+	std::vector<EClickableArea*> clickable_area_list;
+
 	EButtonGroup* add_group(EButtonGroup* _new_group);
 	EButtonGroup* add_group_scecific_position(EButtonGroup* _new_group, int _specific_position);
 
