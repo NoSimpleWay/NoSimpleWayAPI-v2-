@@ -4640,6 +4640,7 @@ void EWindowMain::register_filter_rules()
 	jc_filter = new DataEntityFilter();
 	jc_filter->target_tag_name = "worth";
 	jc_filter->suitable_values_list.push_back("Expensive");
+	jc_filter->suitable_values_list.push_back("Very expensive");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	//
 
