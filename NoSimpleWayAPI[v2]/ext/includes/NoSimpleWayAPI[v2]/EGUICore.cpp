@@ -513,6 +513,20 @@ void EButtonGroup::update(float _d)
 		EButtonGroup::change_group(this);
 	}
 
+	if (need_refresh)
+	{
+		EButtonGroup::refresh_button_group(this);
+
+		need_refresh = false;
+	}
+
+	if (need_change)
+	{
+		EButtonGroup::change_group(this);
+
+		need_change = false;
+	}
+
 	bool any_button_order_change = false;
 
 	if (!button_list.empty())

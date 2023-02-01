@@ -519,8 +519,9 @@ void ETextArea::generate_text()
 		int row_id = 0;
 		int id_for_stored_text_sym = 0;
 
-		full_text_height = line_height * (row.size());
+		full_text_height = (font->base) * (row.size());
 		y_adding = full_text_height * font_scale;
+		y_adding += (font->lineheight - font->base) * font_scale;
 
 		float border_offset_bottom = 0.0f;
 		float border_offset_top = 0.0f;
@@ -531,10 +532,11 @@ void ETextArea::generate_text()
 			border_offset_top = *parent_entity_for_text_area->parent_button_group->selected_style->button_bg->side_offset_up;
 		}
 
+		//vertical align
 		y_adding += (region_gabarite->size_y - border_offset_bottom - border_offset_top) * offset_by_gabarite_size_y;
 
 		//vertical align
-		y_adding += (full_text_height - 4.0f) * offset_by_text_size_y * font_scale;
+		y_adding += (full_text_height) * offset_by_text_size_y * font_scale;
 		y_adding += border_offset_bottom;
 		y_adding = round(y_adding);
 
