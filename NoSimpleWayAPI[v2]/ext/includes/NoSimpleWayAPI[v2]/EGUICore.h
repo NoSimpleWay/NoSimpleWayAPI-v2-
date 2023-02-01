@@ -297,9 +297,9 @@ public:
 
 	static MoveVectorMethod move_vector_mode;
 
-	bool need_remove	= false;
-	bool need_refresh	= false;
-	bool need_change	= false;
+	bool need_remove = false;
+	bool need_refresh = false;
+	bool need_change = false;
 
 	float scroll_x = (0.0f);
 	float scroll_y = (0.0f);

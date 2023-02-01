@@ -314,7 +314,7 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 	//EWindowMain::loot_filter_editor->realign_groups();
 	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 
-	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
 
 }
 
@@ -9002,7 +9002,7 @@ void EWindowMain::register_loot_simulator_patterns()
 
 	}
 
-	//		GOOD CURRENCY
+	//			GOOD CURRENCY
 	{
 
 		LootSimulatorPattern*
@@ -12119,6 +12119,106 @@ void EWindowMain::register_loot_simulator_patterns()
 
 	}
 
+
+
+	//		BOSS ITEMS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Boss loot";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Ћут с боссов";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Hybrid_flask");
+
+
+		/////////////////////////////			ITEM GENERATOR(UNIQUE BOSS LOOT)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Pinnacle boss loot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Piece of set");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 80;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+				//		parameters
+				value_generator->min_value = 3;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR(MAP FRAGMENTS)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Pinnacle boss loot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Piece of set");
+			tag_filter->suitable_values.push_back("Atlas Region Upgrade Item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		}
+
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
 }
 
 void EWindowMain::set_color_version(Helper::HSVRGBAColor* _target_color, int _selected_mode)
@@ -15094,6 +15194,8 @@ void EButtonGroupLootSimulator::refresh_loot_simulator()
 
 			loot_button->matched_minimap_icon_size			= nullptr;
 			loot_button->matched_minimap_icon_size_block	= nullptr;
+
+			loot_button->matched_size_block					= nullptr;
 
 
 

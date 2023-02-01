@@ -309,7 +309,7 @@ ETextArea::~ETextArea()
 		//delete		error;
 		//delete[]	color;
 		
-		delete[]	offset_border;
+		//delete[]	offset_border;
 		//delete	offset_border;
 
 		//delete		font_scale;

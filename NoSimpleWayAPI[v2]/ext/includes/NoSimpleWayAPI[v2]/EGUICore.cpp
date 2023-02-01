@@ -287,7 +287,7 @@ void EWindow::GUI_update_default(float _d)
 				for (EClickableArea* c_area : data->clickable_area_list)
 					if
 						(
-							(*c_area->catched_body)
+							(c_area->catched_body)
 							&&
 							(
 								(c_area->parent_entity == nullptr)
@@ -463,6 +463,15 @@ EButtonGroup::~EButtonGroup()
 	button_list.clear();
 	button_list.shrink_to_fit();
 
+	for (EClickableArea* c_area : clickable_area_list)
+	{
+		delete c_area;
+	}
+	clickable_area_list.clear();
+	clickable_area_list.shrink_to_fit();
+
+	delete background_sprite_layer;
+
 
 
 }
@@ -625,6 +634,11 @@ void EButtonGroup::update(float _d)
 				else
 				{
 					but->be_visible_last_time = false;
+				}
+
+				if (!but->be_visible_last_time)
+				{
+					but->destroy_attached_description();
 				}
 			}
 		}
@@ -892,13 +906,13 @@ void EButtonGroup::draw()
 
 
 			for (EntityButton* but : button_list)
-				if
-					(
-						(but->world_position_y + but->button_gabarite->phantom_translate_y + but->button_gabarite->size_y >= lower_culling_line)
-						&&
-						(but->world_position_y + but->button_gabarite->phantom_translate_y <= higher_culling_line)
-						)
-				{
+			if
+			(
+				(but->world_position_y + but->button_gabarite->phantom_translate_y + but->button_gabarite->size_y >= lower_culling_line)
+				&&
+				(but->world_position_y + but->button_gabarite->phantom_translate_y <= higher_culling_line)
+			)
+			{
 
 
 
@@ -976,7 +990,8 @@ void EButtonGroup::draw()
 							NS_DefaultGabarites::texture_gabarite_white_pixel
 						);
 					}
-				}
+			}
+
 
 			for (EClickableArea* clickable_area : clickable_area_list)
 			if (clickable_area != nullptr)
@@ -2174,12 +2189,12 @@ void EButtonGroup::realign_all_buttons()
 		for (ECustomData* cd : but->custom_data_list)
 			for (EClickableArea* c_area : cd->clickable_area_list)
 			{
-				*c_area->catched_body		= false;
-				*c_area->catched_side_down	= false;
-				*c_area->catched_side_up	= false;
-				*c_area->catched_side_left	= false;
-				*c_area->catched_side_right = false;
-				*c_area->catched_side_mid	= false;
+				c_area->catched_body		= false;
+				c_area->catched_side_down	= false;
+				c_area->catched_side_up	= false;
+				c_area->catched_side_left	= false;
+				c_area->catched_side_right = false;
+				c_area->catched_side_mid	= false;
 			}
 	}
 

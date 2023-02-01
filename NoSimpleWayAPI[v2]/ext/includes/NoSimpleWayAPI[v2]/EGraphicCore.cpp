@@ -58,7 +58,7 @@ namespace NS_EGraphicCore
 	float							sun_blur							= 0.75f;
 	float							sun_bright							= 21.000f;
 	float							sun_exp								= 3.300f;
-	float							ground_level						= 0.45f;
+	float							ground_level						= 0.555f;
 	float							time_total							= 0.00f;
 	float							move_multiplier						= 2.35f;
 	float							sun_flat_decay						= 0.05f;

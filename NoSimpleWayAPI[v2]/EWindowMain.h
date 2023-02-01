@@ -394,11 +394,11 @@ class EButtonGroupLootSimulator : public EButtonGroup
 public:
 	EButtonGroupLootSimulator(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	static EButtonGroup*				pointer_to_loot_buttons_segment;
-	static EButtonGroup*				pointer_to_patterns_buttons_segment;
+	static EButtonGroup* pointer_to_loot_buttons_segment;
+	static EButtonGroup* pointer_to_patterns_buttons_segment;
 
-	static EntityButtonVariantRouter*	pointer_to_target_loot_filter_version_button;
-	static EntityButton*				pointer_to_input_area_level_button;
+	static EntityButtonVariantRouter* pointer_to_target_loot_filter_version_button;
+	static EntityButton* pointer_to_input_area_level_button;
 
 	static bool		show_hidden;
 	//static float	show_hidden_cooldown;
@@ -445,7 +445,7 @@ public:
 	EntityButtonVariantRouterForFilterBlock* match_mode_router_button;
 
 	std::string				filter_attribute_name;
-	GameItemAttribute*		associated_item_attribute;
+	GameItemAttribute* associated_item_attribute;
 
 	//EntityButton*			button_with;
 	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
@@ -516,7 +516,7 @@ namespace EDataActionCollection
 	void action_refresh_loot_simulator_when_type(ETextArea* _text_area);
 
 
-	
+
 
 	void action_save_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void 
@@ -594,8 +594,8 @@ public:
 	bool						always_present;
 	float						button_x_size_override = 0.0f;
 
-	bool						commentary_config		= false;
-	bool						global_attribute_value	= false;
+	bool						commentary_config = false;
+	bool						global_attribute_value = false;
 
 	static GameItemAttribute* get_attribute_by_name(std::vector<GameItemAttribute*>* _vector, std::string _name);
 
@@ -679,8 +679,8 @@ public:
 	static bool									text_is_condition(std::string& buffer_text);
 
 	static void									open_loot_filter(std::string _full_path, LootFlterOpenMode _loot_filter_mode);
-	static EButtonGroupFilterBlock*				create_filter_block(EButtonGroup* _target_editor, int _specific_position);
-	static EButtonGroupFilterBlockSeparator*	create_filter_block_separator(EButtonGroup* _target_whole_group, int _specific_position);
+	static EButtonGroupFilterBlock* create_filter_block(EButtonGroup* _target_editor, int _specific_position);
+	static EButtonGroupFilterBlockSeparator* create_filter_block_separator(EButtonGroup* _target_whole_group, int _specific_position);
 
 	static void									parse_filter_text_lines(EButtonGroupFilterBlock* _target_filter_block, LootFlterOpenMode _parse_mode);
 
@@ -735,8 +735,8 @@ public:
 
 	int socket_color_id_array[6];
 
-	int sockets_count	= 0;
-	int links_count		= 0;
+	int sockets_count = 0;
+	int links_count = 0;
 
 
 
@@ -778,7 +778,7 @@ public:
 	EntityButtonLootItem();
 	~EntityButtonLootItem();
 
-	
+
 
 	void get_matched_filter_blocks();
 	void get_matched_filter_blocks_list(EButtonGroupFilterBlockEditor* _filter_block_editor);
@@ -949,5 +949,5 @@ public:
 	static std::vector<LootSimulatorPattern*>	registered_loot_simulater_pattern_list;
 	static void									refresh_loot_simulator(LootSimulatorPattern* _pattern);
 	//static void								refresh_loot_simulator();
-	
+
 };

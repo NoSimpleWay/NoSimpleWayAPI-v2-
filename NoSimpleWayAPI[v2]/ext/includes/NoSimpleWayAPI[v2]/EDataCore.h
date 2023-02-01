@@ -156,29 +156,30 @@ public:
 
 	std::vector<data_action_pointer> actions_on_click_list;
 	std::vector<data_action_pointer> actions_on_right_click_list;
-	Entity* parent_entity;
-	EButtonGroup* parent_group;
-	ECustomData* parent_custom_data;
+
+	Entity*			parent_entity;
+	EButtonGroup*	parent_group;
+	ECustomData*	parent_custom_data;
 
 	ETextArea* text_area;
 	//std::vector<data_action_pointer> action_on_change_text;
 
-	bool* catched_side_left = new bool(false);
-	bool* catched_side_right = new bool(false);
-	bool* catched_side_up = new bool(false);
-	bool* catched_side_down = new bool(false);
-	bool* catched_side_mid = new bool(false);
+	bool catched_side_left	= false;
+	bool catched_side_right	= false;
+	bool catched_side_up	= false;
+	bool catched_side_down	= false;
+	bool catched_side_mid	= false;
 
-	bool* catched_body = new bool(false);
+	bool catched_body		= false;
 
-	bool* have_rama = new bool(true);
-	bool* any_visual_changes = new bool(true);
+	bool have_rama			= true;
+	bool any_visual_changes	= true;
 
 	//bool* editable_borders	= new bool(false);
-	bool* can_catch_side = new bool[_CRS_SIDE_LAST_ELEMENT] {false};
+	bool can_catch_side[_CRS_SIDE_LAST_ELEMENT] {false};
 
-	float* catch_offset_x = new float(0.0f);
-	float* catch_offset_y = new float(0.0f);
+	float catch_offset_x = 0.0f;
+	float catch_offset_y = 0.0f;
 
 	//float* internal_vertex_buffer;
 

@@ -163,7 +163,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			)
 			&&
 			(
-				(*_custom_data->clickable_area_list.at(0)->catched_body)
+				(_custom_data->clickable_area_list.at(0)->catched_body)
 				||
 				(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
 				||
@@ -178,7 +178,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 
 
-		if (*_custom_data->clickable_area_list.at(0)->catched_body)
+		if (_custom_data->clickable_area_list.at(0)->catched_body)
 		{
 			if (EInputCore::mouse_button_state[GLFW_MOUSE_BUTTON_LEFT] != GLFW_RELEASE)
 			{
@@ -219,7 +219,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 					&&
 					(EInputCore::MOUSE_SPEED_Y != 0.0)
 					&&
-					(*_custom_data->clickable_area_list.at(0)->catched_body)
+					(_custom_data->clickable_area_list.at(0)->catched_body)
 				)
 				||
 				(
@@ -316,7 +316,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 	if
 		(
-			(!*_custom_data->clickable_area_list.at(0)->catched_body)
+			(!_custom_data->clickable_area_list.at(0)->catched_body)
 			&&
 			(_custom_data->get_sprite_frame_by_id(0, 0, 0) != nullptr)
 			)
@@ -1755,16 +1755,16 @@ EClickableArea::~EClickableArea()
 		}
 	}
 	if (!disable_deleting) {
-		delete catched_side_left;
-		delete catched_side_right;
-		delete catched_side_up;
-		delete catched_side_down;
-		delete catched_side_mid;
-		delete catched_body;
-		delete have_rama;
-		delete any_visual_changes;
+		//delete catched_side_left;
+		//delete catched_side_right;
+		//delete catched_side_up;
+		//delete catched_side_down;
+		//delete catched_side_mid;
+		//delete catched_body;
+		//delete have_rama;
+		//delete any_visual_changes;
 		
-		delete[] can_catch_side;
+		//delete[] can_catch_side;
 		//delete can_catch_side;
 	}
 
@@ -1773,8 +1773,8 @@ EClickableArea::~EClickableArea()
 	//region = nullptr;
 
 
-//if (text_area != nullptr)
-//{delete text_area;}
+	if (text_area != nullptr)
+	{delete text_area;}
 
 //if (!sprite_layer_list.empty())
 //{
@@ -1820,8 +1820,8 @@ EClickableArea::~EClickableArea()
 
 	if (!disable_deleting)
 	{
-		delete catch_offset_x;
-		delete catch_offset_y;
+		//delete catch_offset_x;
+		//delete catch_offset_y;
 	}
 
 	//delete &batcher_for_default_draw;
@@ -1887,7 +1887,7 @@ void EClickableArea::check_all_catches()
 	{
 		if (can_catch_side[ClickableRegionSides::CRS_SIDE_LEFT])
 		{
-			*catched_side_left = catched_side_by_mouse
+			catched_side_left = catched_side_by_mouse
 			(
 				region_gabarite->world_position_x,
 				region_gabarite->world_position_y,
@@ -1904,7 +1904,7 @@ void EClickableArea::check_all_catches()
 		}
 		else
 		{
-			*catched_side_left = false;
+			catched_side_left = false;
 		}
 
 
@@ -1912,7 +1912,7 @@ void EClickableArea::check_all_catches()
 		if (can_catch_side[ClickableRegionSides::CRS_SIDE_RIGHT])
 		{
 
-			*catched_side_right = catched_side_by_mouse
+			catched_side_right = catched_side_by_mouse
 			(
 				region_gabarite->world_position_x + region_gabarite->size_x,
 				region_gabarite->world_position_y,
@@ -1929,14 +1929,14 @@ void EClickableArea::check_all_catches()
 		}
 		else
 		{
-			*catched_side_right = false;
+			catched_side_right = false;
 		}
 
 
 
 		if (can_catch_side[ClickableRegionSides::CRS_SIDE_DOWN])
 		{
-			*catched_side_down = catched_side_by_mouse
+			catched_side_down = catched_side_by_mouse
 			(
 				region_gabarite->world_position_x,
 				region_gabarite->world_position_y,
@@ -1953,13 +1953,13 @@ void EClickableArea::check_all_catches()
 		}
 		else
 		{
-			*catched_side_down = false;
+			catched_side_down = false;
 		}
 
 
 		if (can_catch_side[ClickableRegionSides::CRS_SIDE_UP])
 		{
-			*catched_side_up = catched_side_by_mouse
+			catched_side_up = catched_side_by_mouse
 			(
 				region_gabarite->world_position_x,
 				region_gabarite->world_position_y + region_gabarite->size_y,
@@ -1976,12 +1976,12 @@ void EClickableArea::check_all_catches()
 		}
 		else
 		{
-			*catched_side_up = false;
+			catched_side_up = false;
 		}
 
 		if (can_catch_side[ClickableRegionSides::CRS_SIDE_MID])
 		{
-			*catched_side_mid = catched_side_by_mouse
+			catched_side_mid = catched_side_by_mouse
 			(
 				region_gabarite->world_position_x + region_gabarite->size_x / 2.0f,
 				region_gabarite->world_position_y + region_gabarite->size_y / 2.0f,
@@ -1998,12 +1998,12 @@ void EClickableArea::check_all_catches()
 		}
 		else
 		{
-			*catched_side_mid = false;
+			catched_side_mid = false;
 		}
 
 		if ((can_catch_side[ClickableRegionSides::CRS_SIDE_BODY]) && (!any_catch))
 		{
-			*catched_body = catched_side_by_mouse
+			catched_body = catched_side_by_mouse
 			(
 				region_gabarite->world_position_x,
 				region_gabarite->world_position_y,
@@ -2020,45 +2020,45 @@ void EClickableArea::check_all_catches()
 		}
 		else
 		{
-			*catched_body = false;
+			catched_body = false;
 		}
 
-		*catch_offset_x = EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom - region_gabarite->world_position_x;
-		*catch_offset_y = EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom - region_gabarite->world_position_y;
+		catch_offset_x = EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom - region_gabarite->world_position_x;
+		catch_offset_y = EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom - region_gabarite->world_position_y;
 	}
 	else
 	{
 
-		if (*catched_side_left)
+		if (catched_side_left)
 		{
 			region_gabarite->size_x -= EInputCore::MOUSE_SPEED_X;
 			translate_clickable_region(EInputCore::MOUSE_SPEED_X, 0.0f, 0.0f, true);
 		}
 
-		if (*catched_side_right)
+		if (catched_side_right)
 		{
 			region_gabarite->size_x += EInputCore::MOUSE_SPEED_X;
 			redraw_text();
 		}
 
-		if (*catched_side_down)
+		if (catched_side_down)
 		{
 			translate_clickable_region(0.0f, EInputCore::MOUSE_SPEED_Y, 0.0f, true);
 			region_gabarite->size_y -= EInputCore::MOUSE_SPEED_Y;
 		}
 
-		if (*catched_side_up)
+		if (catched_side_up)
 		{
 			region_gabarite->size_y += EInputCore::MOUSE_SPEED_Y;
 			redraw_text();
 		}
 
-		if (*catched_side_mid)
+		if (catched_side_mid)
 		{
 			translate_clickable_region(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f, true);
 		}
 
-		if ((*catched_side_left) || (*catched_side_right) || (*catched_side_up) || (*catched_side_down) || (*catched_side_mid))
+		if ((catched_side_left) || (catched_side_right) || (catched_side_up) || (catched_side_down) || (catched_side_mid))
 		{
 
 
@@ -2070,21 +2070,21 @@ void EClickableArea::check_all_catches()
 	if
 		(
 			(
-				(*catched_side_left)
+				(catched_side_left)
 				||
-				(*catched_side_right)
+				(catched_side_right)
 				||
-				(*catched_side_up)
+				(catched_side_up)
 				||
-				(*catched_side_down)
+				(catched_side_down)
 				||
-				(*catched_side_mid)
+				(catched_side_mid)
 				||
-				(*catched_body)
-				)
+				(catched_body)
+			)
 			&&
 			(EInputCore::MOUSE_BUTTON_LEFT)
-			)
+		)
 	{
 		//EClickableArea::active_clickable_region = this; 
 	}
@@ -2247,7 +2247,7 @@ void EClickableArea::draw()
 			);
 		}
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_left));
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_left));
 		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_left)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		//if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
@@ -2268,7 +2268,7 @@ void EClickableArea::draw()
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_right));
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_right));
 		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_right)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
@@ -2288,7 +2288,7 @@ void EClickableArea::draw()
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_down));
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_down));
 		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_down)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
@@ -2308,7 +2308,7 @@ void EClickableArea::draw()
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_up));
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_up));
 		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_up)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
@@ -2328,7 +2328,7 @@ void EClickableArea::draw()
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_side_mid));
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_mid));
 		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_mid)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
@@ -2349,11 +2349,11 @@ void EClickableArea::draw()
 		);
 
 		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, *catched_body));
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_body));
 		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_body)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
-		if (*catched_body)
+		if (catched_body)
 		{
 			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
 			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
