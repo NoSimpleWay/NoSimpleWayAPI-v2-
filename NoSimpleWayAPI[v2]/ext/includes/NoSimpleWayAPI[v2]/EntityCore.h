@@ -431,6 +431,15 @@ public:
 
 };
 
+class EntityButtonLocalisationSelector : public EntityButton
+{
+public:
+	~EntityButtonLocalisationSelector();
+
+	int stored_localisation;
+
+};
+
 
 class ECluster
 {

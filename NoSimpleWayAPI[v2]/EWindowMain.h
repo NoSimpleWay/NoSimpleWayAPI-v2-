@@ -511,6 +511,7 @@ namespace EDataActionCollection
 	void action_add_items_from_this_loot_pattern		(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_create_or_delete_description_on_hover	(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_and_refresh_loot_simulator			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_change_localisation						(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text
 	void action_type_search_filter_block_text(ETextArea* _text_area);

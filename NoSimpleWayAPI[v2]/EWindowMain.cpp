@@ -1366,6 +1366,19 @@ void EDataActionCollection::action_open_and_refresh_loot_simulator(Entity* _enti
 	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
 }
 
+void EDataActionCollection::action_change_localisation(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	ELocalisationText::active_localisation = static_cast<EntityButtonLocalisationSelector*>(_entity)->stored_localisation;
+
+	for (EWindow* w:EWindow::window_list)
+	for (EButtonGroup* g : w->button_group_list)
+	{
+		g->recursive_change_localisation(ELocalisationText::active_localisation);
+
+		EButtonGroup::change_group(g);
+	}
+}
+
 void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _text_area)
 {
 
@@ -2977,7 +2990,7 @@ EWindowMain::EWindowMain()
 			jc_button_group = style_group->add_group
 			(
 				EButtonGroup::create_default_button_group
-				(new ERegionGabarite(horizontal_side, 24.0f), style)
+				(new ERegionGabarite(horizontal_side, 30.0f), style)
 			);
 
 			jc_button_group->stretch_x_by_parent_size = true;
@@ -2995,7 +3008,7 @@ EWindowMain::EWindowMain()
 					new ERegionGabarite
 					(
 						horizontal_side,
-						20.0f
+						25.0f
 					),
 					jc_button_group,
 					&EDataActionCollection::action_select_this_style
@@ -3007,7 +3020,12 @@ EWindowMain::EWindowMain()
 
 
 				//text area
-				jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Select <" + style->localisation_text.localisations[ELocalisationText::active_localisation] + ">");
+				ELocalisationText l_text;
+				l_text.localisations[NSW_localisation_EN] = "Select <" + style->localisation_text.localisations[NSW_localisation_EN] + ">";
+				l_text.localisations[NSW_localisation_RU] = "Выбрать <" + style->localisation_text.localisations[NSW_localisation_RU] + ">";
+
+				jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], l_text.localisations[ELocalisationText::active_localisation]);
+				jc_text_area->localisation_text = l_text;
 				jc_text_area->can_be_edited = false;
 				Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 
@@ -3882,7 +3900,7 @@ EWindowMain::EWindowMain()
 	if (true)
 	{
 		EButtonGroup*
-			add_content_group = EButtonGroup::create_root_button_group(new ERegionGabarite(100.0f, 100.0f, 900.0f, 400.0f), EGUIStyle::active_style);
+			add_content_group = EButtonGroup::create_root_button_group(new ERegionGabarite(100.0f, 100.0f, 600.0f, 400.0f), EGUIStyle::active_style);
 		add_content_group->parent_window = this;
 		add_content_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 
@@ -3960,29 +3978,40 @@ EWindowMain::EWindowMain()
 				EButtonGroup::create_default_button_group(new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 				->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
 			);
-		filter_block_operation_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+			filter_block_operation_segment->button_size_x_override = 200.0f;
+			filter_block_operation_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
 
 		/////////////////////	ADD NEW BLOCK	///////////////////////////////////////////
+		ELocalisationText l_text;
+		l_text.localisations[NSW_localisation_EN] = "Add new block";
+		l_text.localisations[NSW_localisation_RU] = "Создать новый блок";
+
 		jc_button = new EntityButton();
 		jc_button->make_default_button_with_unedible_text
 		(
 			new ERegionGabarite(160.0f, 30.0f),
 			filter_block_operation_segment,
 			&EDataActionCollection::action_add_new_filter_block,
-			"Add new block"
+			l_text.localisations[ELocalisationText::active_localisation]
 		);
+		jc_button->main_text_area->localisation_text = l_text;
 
 		filter_block_operation_segment->button_list.push_back(jc_button);
 		/////////////////////	CLONE	///////////////////////////////////////////
 		EntityButtonForFilterBlock* clone_button = new EntityButtonForFilterBlock();
+
+		l_text.localisations[NSW_localisation_EN] = "Clone block";
+		l_text.localisations[NSW_localisation_RU] = "Дублировать блок";
+
 		clone_button->make_default_button_with_unedible_text
 		(
 			new ERegionGabarite(160.0f, 30.0f),
 			filter_block_operation_segment,
 			&EDataActionCollection::action_clone_block,
-			"Clone block"
+			l_text.localisations[ELocalisationText::active_localisation]
 		);
+		clone_button->main_text_area->localisation_text = l_text;
 		//clone_button->parent_filter_block = 
 
 		filter_block_operation_segment->button_list.push_back(clone_button);
@@ -3991,14 +4020,18 @@ EWindowMain::EWindowMain()
 
 
 		/////////////////////	SEPARATOR	///////////////////////////////////////////
-		EntityButtonForFilterBlock* separator_button = new EntityButtonForFilterBlock();
+		l_text.localisations[NSW_localisation_EN] = "Add separator";
+		l_text.localisations[NSW_localisation_RU] = "Добавить разделитель";
+		EntityButtonForFilterBlock*
+		separator_button = new EntityButtonForFilterBlock();
 		separator_button->make_default_button_with_unedible_text
 		(
 			new ERegionGabarite(160.0f, 30.0f),
 			filter_block_operation_segment,
 			&EDataActionCollection::action_add_separator_block,
-			"Add separator"
+			l_text.localisations[ELocalisationText::active_localisation]
 		);
+		separator_button->main_text_area->localisation_text = l_text;
 		//clone_button->parent_filter_block = 
 
 		filter_block_operation_segment->button_list.push_back(separator_button);
@@ -4020,7 +4053,8 @@ EWindowMain::EWindowMain()
 				EButtonGroup::create_default_button_group(new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 				->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
 			);
-		non_listed_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+			non_listed_segment->button_size_x_override = 200.0f;
+			non_listed_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
 
 		///
@@ -4032,23 +4066,15 @@ EWindowMain::EWindowMain()
 				EButtonGroup::create_default_button_group(new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 				->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
 			);
-		listed_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+			listed_segment->button_size_x_override = 200.0f;
+			listed_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
-		///
-		EButtonGroup*
-			cosmetic_segment
-			=
-			content_list_group->add_group
-			(
-				EButtonGroup::create_default_button_group(new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
-				->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
-			);
-		cosmetic_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+
+
 
 		button_multisearch->target_group_list.push_back(content_list_group);
 		button_multisearch->target_group_list.push_back(non_listed_segment);
 		button_multisearch->target_group_list.push_back(listed_segment);
-		button_multisearch->target_group_list.push_back(cosmetic_segment);
 
 		EButtonGroup* target_group = nullptr;
 		for (GameItemAttribute* fba : registered_game_item_attributes)
@@ -4059,12 +4085,12 @@ EWindowMain::EWindowMain()
 
 				if (fba->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED) { target_group = non_listed_segment; }
 				if (fba->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED) { target_group = listed_segment; }
-				if (fba->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC) { target_group = cosmetic_segment; }
+				//if (fba->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC) { target_group = cosmetic_segment; }
 
 				jc_button = new EntityButton();
 				jc_button->make_default_button_with_unedible_text
 				(
-					new ERegionGabarite(160.0f, 30.0f),
+					new ERegionGabarite(160.0f, 38.0f),
 					target_group,
 					&EDataActionCollection::action_add_selected_content_to_filter_block,
 					fba->localisation.localisations[ELocalisationText::active_localisation]
@@ -4554,17 +4580,57 @@ EWindowMain::EWindowMain()
 		top_section->button_list.push_back(button_activator);
 		//////////////////////////////////////////////////////
 
+
+		//LOCALISATION RU
+		//////////////////////////////////////////////////////
+		EntityButtonLocalisationSelector*
+		button_RU = new EntityButtonLocalisationSelector();
+
+		button_RU->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(45.0f, 45.0f),
+			top_section,
+			&EDataActionCollection::action_change_localisation,
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_localisation_RU")
+		);
+		button_RU->stored_localisation = NSW_localisation_RU;
+		top_section->button_list.push_back(button_RU);
+		//////////////////////////////////////////////////////
+		
+
+		//LOCALISATION EN
+		//////////////////////////////////////////////////////
+		EntityButtonLocalisationSelector*
+		button_EN = new EntityButtonLocalisationSelector();
+
+		button_EN->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(45.0f, 45.0f),
+			top_section,
+			&EDataActionCollection::action_change_localisation,
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_localisation_EN")
+		);
+		button_EN->stored_localisation = NSW_localisation_EN;
+		top_section->button_list.push_back(button_EN);
+		//////////////////////////////////////////////////////
+
+		ELocalisationText l_text;
 		for (int i = 0; i < 5; i++)
 		{
 			EntityButtonFilterBlockTab* tab_button = new EntityButtonFilterBlockTab();
+
+			l_text.localisations[NSW_localisation_EN] = "Filter tab #" + std::to_string(i);
+			l_text.localisations[NSW_localisation_RU] = "Закладка #" + std::to_string(i);
 
 			tab_button->make_default_button_with_unedible_text
 			(
 				new ERegionGabarite(200.0f, 26.0f),
 				bottom_tab_section,
 				&EDataActionCollection::action_select_this_tab,
-				"Filter tab #" + std::to_string(i)
+				l_text.localisations[ELocalisationText::active_localisation]
 			);
+
+			tab_button->main_text_area->localisation_text = l_text;
 
 			tab_list_group = bottom_tab_section;
 			tab_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
@@ -5638,7 +5704,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//whole filter block
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroupFilterBlock*
-		whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 256.0f));
+		whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 300.0f));
 	whole_filter_block_group->init_button_group(EGUIStyle::active_style, true, true, false);
 	whole_filter_block_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	whole_filter_block_group->debug_name = "Whole filter block";
@@ -5968,7 +6034,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		"Полный игнор",
 		"Скрыть",
 		"Игнор",
-		"Стандартный",
+		"Стандарт",
 		"Фокус"
 	};
 
@@ -6544,15 +6610,21 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//USER SOUND
 	// 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	ELocalisationText l_text;
+	l_text.localisations[NSW_localisation_EN] = "User sound";
+	l_text.localisations[NSW_localisation_RU] = "Свой звук";
+
 	EntityButtonFilterSound*
-		sound_button = new EntityButtonFilterSound();
+	sound_button = new EntityButtonFilterSound();
 	sound_button->make_default_button_with_unedible_text
 	(
 		new ERegionGabarite(145.0f, 22.0f),
 		bottom_user_sound_section,
 		&EDataActionCollection::action_open_custom_sound_list,
-		"User sound"
+		l_text.localisations[ELocalisationText::active_localisation]
 	);
+	sound_button->main_text_area->localisation_text = l_text;
+
 	Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
 
 	sound_button->suppressor = &whole_filter_block_group->custom_sound_suppressor_bool;
@@ -6658,14 +6730,18 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//INGAME SOUND
 	//	text
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	l_text.localisations[NSW_localisation_EN] = "Ingame sound";
+	l_text.localisations[NSW_localisation_RU] = "Звуки из игры";
 	sound_button = new EntityButtonFilterSound();
 	sound_button->make_default_button_with_unedible_text
 	(
 		new ERegionGabarite(145.0f, 22.0f),
 		mid_ingame_sound_section,
 		&EDataActionCollection::action_open_ingame_sound_list,
-		"Game sound"
+		l_text.localisations[ELocalisationText::active_localisation]
 	);
+	sound_button->main_text_area->localisation_text = l_text;
+
 	Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
 	sound_button->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
 	whole_filter_block_group->pointer_to_game_sound_button = sound_button;
@@ -13754,13 +13830,20 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 	////////////////////////
 	//ADD NEW ITEM BUTTON
 	EntityButton* small_button = new EntityButtonForFilterBlock();
+
+	ELocalisationText l_text;
+	l_text.localisations[NSW_localisation_EN] = "Add new item";
+	l_text.localisations[NSW_localisation_RU] = "Добавить предмет";
+
 	small_button->make_default_button_with_unedible_text
 	(
-		new ERegionGabarite(130.0f, 18.0f),
+		new ERegionGabarite(130.0f, 24.0f),
 		listed_group_left_side,
 		&EDataActionCollection::action_open_data_entity_filter_group,
-		"Добавить предмет"
+		l_text.localisations[ELocalisationText::active_localisation]
 	);
+
+	small_button->main_text_area->localisation_text = l_text;
 
 
 	//data conatainer with filter rule (for data entity list)
@@ -13779,14 +13862,20 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 
 	////////////////////////
 	//REMOVE ALL BUTTONS
+	l_text.localisations[NSW_localisation_EN] = "Remove block";
+	l_text.localisations[NSW_localisation_RU] = "Удалить блок";
+
 	EntityButtonForListedSegment* delete_segment_button = new EntityButtonForListedSegment();
 	delete_segment_button->make_default_button_with_unedible_text
 	(
-		new ERegionGabarite(130.0f, 18.0f),
+		new ERegionGabarite(130.0f, 24.0f),
 		listed_group_left_side,
 		&EDataActionCollection::action_delete_listed_segment,
-		"Удалить блок"
+		l_text.localisations[ELocalisationText::active_localisation]
 	);
+	delete_segment_button->main_text_area->localisation_text = l_text;
+	delete_segment_button->main_text_area->set_color(NS_EColorUtils::COLOR_RED);
+
 	delete_segment_button->listed_group = main_listed_group;
 	listed_group_left_side->button_list.push_back(delete_segment_button);
 	////////////////////////
@@ -14294,6 +14383,7 @@ void EButtonGroupSoundList::refresh_sound_list()
 				n_sound->localisation_text.localisations[ELocalisationText::active_localisation]
 			);
 
+			sound_button->main_text_area->localisation_text = n_sound->localisation_text;
 			sound_button->full_path = n_sound->full_path;
 			sound_button->stored_named_sound = n_sound;
 			sound_button->target_sound_group = EButtonGroup::sound_list_group;

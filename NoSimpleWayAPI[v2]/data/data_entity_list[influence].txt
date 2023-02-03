@@ -3,7 +3,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Influence"
 
 	[tag]"name EN"		[value]"Warlord"
-	[tag]"name RU"		[value]"Р’РѕР¶РґСЊ"
+	[tag]"name RU"		[value]"Вождь"
 
 	[tag]"icon path"	[value]"WarlordInfluence"
 	
@@ -11,7 +11,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Influence"
 
 	[tag]"name EN"		[value]"Redeemer"
-	[tag]"name RU"		[value]"РР·Р±Р°РІРёС‚РµР»СЊРЅРёС†Р°"
+	[tag]"name RU"		[value]"Избавительница"
 
 	[tag]"icon path"	[value]"RedeemerInfluence"
 	
@@ -19,7 +19,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Influence"
 
 	[tag]"name EN"		[value]"Hunter"
-	[tag]"name RU"		[value]"РћС…РѕС‚РЅРёРє"
+	[tag]"name RU"		[value]"Охотник"
 
 	[tag]"icon path"	[value]"HunterInfluence"
 	
@@ -27,7 +27,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Influence"
 
 	[tag]"name EN"		[value]"Crusader"
-	[tag]"name RU"		[value]"РљСЂРµСЃС‚РѕРЅРѕСЃРµС†"
+	[tag]"name RU"		[value]"Крестоносец"
 
 	[tag]"icon path"	[value]"CrusaderInfluence"
 	
@@ -35,7 +35,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Influence"
 
 	[tag]"name EN"		[value]"Shaper"
-	[tag]"name RU"		[value]"РЎРѕР·РґР°С‚РµР»СЊ"
+	[tag]"name RU"		[value]"Создатель"
 
 	[tag]"icon path"	[value]"ShaperInfluence"
 	
@@ -43,7 +43,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Influence"
 
 	[tag]"name EN"		[value]"Elder"
-	[tag]"name RU"		[value]"Р”СЂРµРІРЅРёР№"
+	[tag]"name RU"		[value]"Древний"
 
 	[tag]"icon path"	[value]"ElderInfluence"
 	
@@ -52,6 +52,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"base name"	[value]"None"
 	[tag]"name EN"		[value]"No influence"
-	[tag]"name RU"		[value]"Р‘РµР· РІР»РёСЏРЅРёСЏ"
+	[tag]"name RU"		[value]"Без влияния"
 
 	[tag]"icon path"	[value]"NoInfluence"

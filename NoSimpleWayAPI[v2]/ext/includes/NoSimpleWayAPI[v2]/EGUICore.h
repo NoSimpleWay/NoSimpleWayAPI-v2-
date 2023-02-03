@@ -497,6 +497,7 @@ public:
 	float highlight_time = 0.0f;
 
 	void highlight_this_group();
+	void recursive_change_localisation(int _localisaton_id);
 };
 
 

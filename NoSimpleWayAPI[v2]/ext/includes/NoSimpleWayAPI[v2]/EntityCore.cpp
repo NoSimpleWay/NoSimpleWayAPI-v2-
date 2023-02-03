@@ -1780,3 +1780,7 @@ RouterVariant::~RouterVariant()
 EntityButtonVerticalSlider::~EntityButtonVerticalSlider()
 {
 }
+
+EntityButtonLocalisationSelector::~EntityButtonLocalisationSelector()
+{
+}

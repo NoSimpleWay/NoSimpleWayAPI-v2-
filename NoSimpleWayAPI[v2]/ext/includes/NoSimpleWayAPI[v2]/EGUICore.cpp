@@ -2984,6 +2984,30 @@ void EButtonGroup::highlight_this_group()
 	highlight_time = max_highlight_time;
 }
 
+void EButtonGroup::recursive_change_localisation(int _localisaton_id)
+{
+	for (EntityButton* b:button_list)
+	for (ECustomData* d:b->custom_data_list)
+	for (EClickableArea* c:d->clickable_area_list)
+	if ((c->text_area != nullptr) && (!c->text_area->can_be_edited))
+	{
+		c->text_area->original_text = c->text_area->localisation_text.localisations[ELocalisationText::active_localisation];
+	}
+
+	for (EClickableArea* c : clickable_area_list)
+	if ((c->text_area != nullptr) && (!c->text_area->can_be_edited))
+	{
+		c->text_area->original_text = c->text_area->localisation_text.localisations[ELocalisationText::active_localisation];
+	}
+
+	for (EButtonGroup* g : group_list)
+	{
+		g->recursive_change_localisation(_localisaton_id);
+	}
+
+	
+}
+
 void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 {
 	if
@@ -3711,6 +3735,8 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 			rv->texture,
 			text
 		);
+
+		variant_button->main_text_area->localisation_text = *rv->localisation_for_select_window;
 
 		variant_button->id = id;
 		variant_button->parent_router_group = main_group;

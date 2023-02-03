@@ -1669,6 +1669,9 @@ EButtonGroup* ETextArea::get_root_group()
 void ETextArea::set_color(const float(&_color)[4])
 {
 	//*color
+
+	color.set_color_RGBA(_color[0], _color[1], _color[2], _color[3]);
+	stored_color.set_color_RGBA(_color[0], _color[1], _color[2], _color[3]);
 }
 
 
