@@ -2,7 +2,9 @@
 
 #define _CHECK_VECTOR_BOUND(v, id) (id < v.size()) && (id >= 0)
 
+
 #include "ETextCore.h"
+
 /**/
 #ifndef _E_CLASS_LINKER_ALREADY_LINKED_
 #define _E_CLASS_LINKER_ALREADY_LINKED_
@@ -31,12 +33,7 @@
 #endif
 /**/
 
-/**/
-#ifndef	_HELPERS_ALREADY_LINKED_
-#define	_HELPERS_ALREADY_LINKED_
-#include "Helpers.h"
-#endif
-/**/
+
 
 #include <vector>
 
@@ -75,7 +72,7 @@ public:
 
 	void modify_buffer_translate_for_entity(float _x, float _y, float _z);
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
-	
+
 	void translate_entity(float _x, float _y, float _z, bool _move_positions);
 
 	void translate_sprite_layer(float _x, float _y, float _z, bool _move_locals);
@@ -89,23 +86,23 @@ public:
 	ESprite* get_sprite_from_data(unsigned int _data_id, unsigned int _layer_id, unsigned int _frame_id, unsigned int _frame);
 	ESpriteLayer* get_sprite_layer_by_id(unsigned int id);
 
-	ESprite*			get_sprite_from_entity(unsigned int _layer, unsigned int _frame, unsigned int _frame_id);
-	ESpriteFrame*		get_sprite_frame_from_layer(ESpriteLayer* _layer, unsigned int _frame_id);
-	ESprite*			get_sprite_from_sprite_frame(ESpriteFrame* _frame, unsigned int _id);
-	
-	static ESprite*		get_last_sprite(Entity* _en);
-	bool disable_draw	= false;
-	bool need_remove	= false;
-	bool disabled		= false;
+	ESprite* get_sprite_from_entity(unsigned int _layer, unsigned int _frame, unsigned int _frame_id);
+	ESpriteFrame* get_sprite_frame_from_layer(ESpriteLayer* _layer, unsigned int _frame_id);
+	ESprite* get_sprite_from_sprite_frame(ESpriteFrame* _frame, unsigned int _id);
 
-	static ECustomData*		get_last_custom_data	(Entity* _entity);
-	static EClickableArea*	get_last_clickable_area	(Entity* _entity);
-	static ETextArea*		get_last_text_area		(Entity* _entity);
+	static ESprite* get_last_sprite(Entity* _en);
+	bool disable_draw = false;
+	bool need_remove = false;
+	bool disabled = false;
+
+	static ECustomData* get_last_custom_data(Entity* _entity);
+	static EClickableArea* get_last_clickable_area(Entity* _entity);
+	static ETextArea* get_last_text_area(Entity* _entity);
 
 	static void add_text_area_to_last_clickable_region(EntityButton* _button, ETextArea* _text_area);
 
-	bool have_phantom_draw		= false;
-	bool be_visible_last_time	= false;
+	bool have_phantom_draw = false;
+	bool be_visible_last_time = false;
 };
 /*********/
 
@@ -124,12 +121,13 @@ public:
 
 typedef void (*change_style_action)(EntityButton*, EGUIStyle*);
 
-void action_change_style_slider					(EntityButton* _but, EGUIStyle* _style);
-void action_change_style_button					(EntityButton* _but, EGUIStyle* _style);
-void action_change_style_vertical_slider		(EntityButton* _but, EGUIStyle* _style);
+void action_change_style_slider(EntityButton* _but, EGUIStyle* _style);
+void action_change_style_button(EntityButton* _but, EGUIStyle* _style);
+void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style);
 
-
-
+#include "Helpers.h"
+struct HRA_color_collection;
+class EntityButtonColorButton;
 class EntityButton : public Entity
 {
 public:
@@ -148,10 +146,10 @@ public:
 
 	EButtonGroup* parent_button_group;
 
-	bool fixed_position			= false;
-	bool update_when_scissored	= false;
-	bool align_even_if_hidden	= false;
-	bool do_not_generate_bg		= false;
+	bool fixed_position = false;
+	bool update_when_scissored = false;
+	bool align_even_if_hidden = false;
+	bool do_not_generate_bg = false;
 
 	void destroy_attached_description();
 	EButtonGroup* attached_description;
@@ -163,85 +161,85 @@ public:
 
 	void init
 	(
-		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_row
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_row
 	);
-	
+
 	void add_default_custom_data
 	(
 		ERegionGabarite* _region_gabarite,
 		EButtonGroup* _parent_row
 	);
-	
+
 	void make_as_default_clickable_button
 	(
-		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_group,
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
 		data_action_pointer _dap
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
-	
-	static EntityButton*	create_item_button
+
+	static EntityButton* create_item_button
 	(
-		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_group,
-		EDataEntity*		_data_entity
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		EDataEntity* _data_entity
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
-	
-	static EntityButton*	create_wide_item_button
+
+	static EntityButton* create_wide_item_button
 	(
-		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_group,
-		EDataEntity*		_data_entity,
-		EFont*				_font
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		EDataEntity* _data_entity,
+		EFont* _font
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
-	
-	static EntityButton*	create_vertical_named_slider
+
+	static EntityButton* create_vertical_named_slider
 	(
-		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_group,
-		EFont*				_font,
-		EGUIStyle*			_style,
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		EFont* _font,
+		EGUIStyle* _style,
 		std::string			_text
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
-	
-	static EntityButton*	create_named_color_button
+
+	static EntityButtonColorButton* create_named_color_button
 	(
 		ERegionGabarite*				_region_gabarite,
 		EButtonGroup*					_parent_group,
 		EFont*							_font,
 		EGUIStyle*						_style,
-		std::string						_text,
-		Helper::HRA_color_collection*	_collection,
-		Helper::HSVRGBAColor*			_color,
+		ELocalisationText				_text,
+		HRA_color_collection*	_collection,
+		HSVRGBAColor*			_color,
 		ColorButtonMode					_mode
 	);
-	
+
 	static EntityButton* create_default_radial_button
 	(
-		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_group,
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
 		std::string _text
 	);
-	
+
 	static EntityButton* create_default_crosshair_slider
 	(
-		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_group,
-		float*				pointer_x,
-		float*				pointer_y,
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		float* pointer_x,
+		float* pointer_y,
 		std::string			_texture
 	);
 
 	void make_default_button_with_unedible_text
 	(
-		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_group,
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
 		data_action_pointer _dap,
 		std::string			_text
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
@@ -249,8 +247,8 @@ public:
 
 	void make_default_button_with_edible_text
 	(
-		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_group,
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
 		data_action_pointer _dap,
 		std::string			_text
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
@@ -276,11 +274,11 @@ public:
 
 	void make_as_default_button_with_icon_and_text
 	(
-		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_group,
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
 		data_action_pointer	_dap,
-		ETextureGabarite*	_gabarite,
-		std::string&		_text	
+		ETextureGabarite* _gabarite,
+		std::string& _text
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
@@ -294,7 +292,7 @@ public:
 		bool* _target_bool = nullptr
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
-	
+
 
 	bool can_get_access_to_style();
 
@@ -306,9 +304,9 @@ public:
 	void update(float _d);
 	bool* suppressor = nullptr;
 
-	ETextArea*		main_text_area;
+	ETextArea* main_text_area;
 	EClickableArea* main_clickable_area;
-	ECustomData*	main_custom_data;
+	ECustomData* main_custom_data;
 
 };
 
@@ -320,11 +318,11 @@ public:
 struct RouterVariant
 {
 public:
-	ELocalisationText*			localisation = nullptr;
-	Helper::HSVRGBAColor*		color;
-	ETextureGabarite*			texture = nullptr;
-	ELocalisationText*			localisation_for_select_window;
-	
+	ELocalisationText* localisation = nullptr;
+	HSVRGBAColor* color;
+	ETextureGabarite* texture = nullptr;
+	ELocalisationText* localisation_for_select_window;
+
 	bool						do_not_delete_me = false;
 
 	~RouterVariant();
@@ -346,18 +344,18 @@ public:
 	int							selected_variant;
 	std::vector<RouterVariant*>	router_variant_list;
 
-	ESpriteLayer*				layer_with_icon;
-	ETextArea*					pointer_to_text_area;
+	ESpriteLayer* layer_with_icon;
+	ETextArea* pointer_to_text_area;
 
 
 
-	void select_variant							(int _variant_id);
-	void select_variant_by_base_name			(std::string& _base_name);
-	int seach_id_by_base_name					(std::string& _base_name);
+	void select_variant(int _variant_id);
+	void select_variant_by_base_name(std::string& _base_name);
+	int seach_id_by_base_name(std::string& _base_name);
 
 	RotateVariantMode			rotate_variant_mode = RotateVariantMode::SELECT_NEXT;
 
-	EButtonGroupRouterVariant*	opened_router_group;
+	EButtonGroupRouterVariant* opened_router_group;
 
 	void make_default_router_variant_button
 	(
@@ -390,7 +388,7 @@ class EntityButtonVariantRouterSelector : public EntityButton
 {
 public:
 	int							id = 0;
-	EButtonGroupRouterVariant*	parent_router_group;
+	EButtonGroupRouterVariant* parent_router_group;
 };
 
 
@@ -400,25 +398,30 @@ public:
 	std::vector <EButtonGroup*> target_group_list;
 };
 
-enum class TargetPointerType
-{
-	POINTER_TYPE_FLOAT,
-	POINTER_TYPE_INT
 
+class EntityButtonColorButton : public EntityButton
+{
+public:
+	HSVRGBAColor*			stored_color;
+	ColorButtonMode			selected_mode = ColorButtonMode::CBM_OPEN_WINDOW;
+
+	HRA_color_collection*	parent_color_collection;
 };
+
+
 class EntityButtonVerticalSlider : public EntityButton
 {
 public:
 	virtual ~EntityButtonVerticalSlider();
 
-	float workspace_height			= 0.0f;
+	float workspace_height = 0.0f;
 
-	float min_value					= 0.0f;
-	float max_value					= 0.0f;
+	float min_value = 0.0f;
+	float max_value = 0.0f;
 
-	float current_value_percent		= 0.0f;
-	float current_value		= 0.0f;
-	
+	float current_value_percent = 0.0f;
+	float current_value = 0.0f;
+
 	void* pointer_to_target_value;
 
 	EBrickStyle* slider_active;
@@ -426,8 +429,7 @@ public:
 
 	float scroll_speed = 0.0f;
 
-	TargetPointerType target_pointer_type = TargetPointerType::POINTER_TYPE_FLOAT;
-};	
+};
 
 
 class ECluster

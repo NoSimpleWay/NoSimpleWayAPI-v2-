@@ -89,18 +89,6 @@ void Entity::generate_vertex_buffer_for_all_sprite_layers()
 								s_layer->generate_vertex_buffer_for_sprite_layer("Clickable region sprite layer");
 							}
 
-						if (c_region->internal_sprite_layer != nullptr)
-						{
-							c_region->internal_sprite_layer->generate_vertex_buffer_for_sprite_layer("internal sprite layer");
-						}
-
-						//for (ETextArea* ta:c_regio)
-						if (c_region->text_area != nullptr)
-						{
-							//c_region->text_area->change_text(c_region->text_area->original_text);
-							//c_region->text_area->generate_rows();	
-							//c_region->text_area->generate_text();
-						}
 					}
 
 
@@ -183,11 +171,6 @@ void Entity::modify_buffer_translate_for_entity(float _x, float _y, float _z)
 			for (ESpriteLayer* s_layer : c_region->sprite_layer_list)
 			{
 				s_layer->modify_buffer_position_for_sprite_layer(_x, _y, _z);
-			}
-
-			if (c_region->internal_sprite_layer != nullptr)
-			{
-				c_region->internal_sprite_layer->modify_buffer_position_for_sprite_layer(_x, _y, _z);
 			}
 		}
 
@@ -721,7 +704,10 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 			
 
-			jc_text_area->change_text(DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity));
+			jc_text_area->localisation_text.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+			jc_text_area->localisation_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
+
+			jc_text_area->change_text(jc_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 
 			//////localistation//////
 			std::string base_name_value = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
@@ -736,8 +722,6 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 				jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
 			}
 
-			jc_text_area->localisation_text.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
-			jc_text_area->localisation_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
 			////////////////////////
 		}
 		else
@@ -868,19 +852,22 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	return jc_button;
 }
 
-EntityButton* EntityButton::create_named_color_button
+EntityButtonColorButton* EntityButton::create_named_color_button
 (
 	ERegionGabarite*				_region_gabarite,
 	EButtonGroup*					_parent_group,
 	EFont*							_font,
 	EGUIStyle*						_style,
-	std::string						_text,
-	Helper::HRA_color_collection*	_color_collection,
-	Helper::HSVRGBAColor*			_color,
+	ELocalisationText				_text,
+	HRA_color_collection*	_color_collection,
+	HSVRGBAColor*			_color,
 	ColorButtonMode					_mode
 )
 {
-	EntityButton* jc_button = new EntityButton();
+
+
+	EntityButtonColorButton* jc_button = new EntityButtonColorButton();
+	jc_button->parent_color_collection = _color_collection;
 
 	jc_button->make_as_default_clickable_button
 	(
@@ -889,11 +876,11 @@ EntityButton* EntityButton::create_named_color_button
 		nullptr
 	);
 
-	EDataContainer_Button_StoreColor* data = new EDataContainer_Button_StoreColor();
+	//EDataContainer_Button_StoreColor* data = new EDataContainer_Button_StoreColor();
 	//if (!data->stored_color->is_from_collection)
-	EntityButton::get_last_custom_data(jc_button)->data_container = data;
-	data->stored_color = _color;
-	data->selected_mode = _mode;
+	//EntityButton::get_last_custom_data(jc_button)->data_container = data;
+	jc_button->stored_color = _color;
+	jc_button->selected_mode = _mode;
 
 	//std::cout << data->stored_color << std::endl;
 
@@ -901,7 +888,7 @@ EntityButton* EntityButton::create_named_color_button
 	EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_open_color_group);
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
+	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text.localisations[ELocalisationText::active_localisation]);
 	jc_text_area->offset_by_gabarite_size_x = 0.0;
 	jc_text_area->offset_by_text_size_x = 0.0;
 
@@ -910,7 +897,7 @@ EntityButton* EntityButton::create_named_color_button
 
 	jc_text_area->offset_border[BorderSide::LEFT] = _parent_group->border_left;
 
-	jc_text_area->change_text(_text);
+	jc_text_area->change_text(_text.localisations[ELocalisationText::active_localisation]);
 
 	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
@@ -1247,7 +1234,7 @@ void EntityButton::make_default_bool_switcher_button(ERegionGabarite* _region_ga
 	}
 	else
 	{
-		EInputCore::logger_simple_error("Target bool is NULL, generate new bool!");
+		//EInputCore::logger_simple_error("Target bool is NULL, generate new bool!");
 		data_container->target_value = new bool(false);
 	}
 
@@ -1745,7 +1732,7 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 			pointer_to_text_area->stored_color = *(router_variant_list[selected_variant]->color);
 			pointer_to_text_area->color = *(router_variant_list[selected_variant]->color);
 
-			pointer_to_text_area->change_text(pointer_to_text_area->localisation_text.localisations[NSW_localisation_EN]);
+			pointer_to_text_area->change_text(pointer_to_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 
 			//redraw
 			set_world_position(world_position_x, world_position_y, world_position_z);

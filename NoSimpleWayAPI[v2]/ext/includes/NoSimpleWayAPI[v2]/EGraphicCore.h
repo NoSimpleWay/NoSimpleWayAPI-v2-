@@ -52,12 +52,8 @@
 
 /////// /////// /////// /////// /////// /////// ///////
 
-/**/
-#ifndef	_HELPERS_ALREADY_LINKED_
-#define	_HELPERS_ALREADY_LINKED_
 #include "Helpers.h"
-#endif
-/**/
+
 
 #include <learnopengl/shader_s.h>
 #include <vector>
@@ -139,6 +135,7 @@ const int texture_skydome_levels = 6;
 //[4] 64
 //[5] 32
 
+class HSVRGBAColor;
 namespace NS_EGraphicCore
 {
 	extern int				SCREEN_WIDTH, SCREEN_HEIGHT;
@@ -207,7 +204,7 @@ namespace NS_EGraphicCore
 	extern void set_active_color_custom_alpha(const EColor_4(&_color)[4], float _alpha);
 	extern void set_active_color(EColor_4* _color);
 	extern void set_active_color(float _r, float _g, float _b, float _a);
-	extern void set_active_color(Helper::HSVRGBAColor* _color);
+	extern void set_active_color(HSVRGBAColor* _color);
 
 	extern EColor_4 active_color[4];
 
@@ -234,7 +231,7 @@ namespace NS_EGraphicCore
 
 	extern float sun_flat_decay;
 
-	extern Helper::HSVRGBAColor sun_color;
+	extern HSVRGBAColor sun_color;
 
 	extern float ground_level;
 

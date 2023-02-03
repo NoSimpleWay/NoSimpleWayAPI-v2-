@@ -29,12 +29,8 @@
 #endif
 
 
-/**/
-#ifndef		_HELPERS_ALREADY_LINKED_
-	#define	_HELPERS_ALREADY_LINKED_
-	#include "NoSimpleWayAPI[v2]/Helpers.h"
-#endif
-/**/
+#include "NoSimpleWayAPI[v2]/Helpers.h"
+
 
 #include <algorithm>
 #include <iterator>

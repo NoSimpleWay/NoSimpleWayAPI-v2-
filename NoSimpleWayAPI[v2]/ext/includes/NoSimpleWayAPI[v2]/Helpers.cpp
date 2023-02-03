@@ -1,11 +1,8 @@
 #include "Helpers.h"
 
-ETestObject::ETestObject()
-{
-}
 
-std::vector<Helper::HRA_color_collection*> Helper::registered_color_list;
-std::vector <ETestObject*> ETestObject::test_object_vector;
+
+std::vector<HRA_color_collection*> Helper::registered_color_list;
 
 std::string Helper::float_to_string(float _f)
 {
@@ -28,7 +25,7 @@ std::string Helper::float_to_string_with_precision(float _f, float _precision)
 
 
 
-void Helper::HSVRGBAColor::set_color(HSVRGBAColor* _HRA_color)
+void HSVRGBAColor::set_color(HSVRGBAColor* _HRA_color)
 {
 	h = _HRA_color->h;
 	s = _HRA_color->s;
@@ -42,7 +39,7 @@ void Helper::HSVRGBAColor::set_color(HSVRGBAColor* _HRA_color)
 
 }
 
-void Helper::HSVRGBAColor::set_color_RGBA(float _r, float _g, float _b, float _a)
+void HSVRGBAColor::set_color_RGBA(float _r, float _g, float _b, float _a)
 {
 	r = _r;
 	g = _g;
@@ -53,7 +50,7 @@ void Helper::HSVRGBAColor::set_color_RGBA(float _r, float _g, float _b, float _a
 	Helper::rgb2hsv(this);
 }
 
-void Helper::HSVRGBAColor::set_color_HSVA(float _h, float _s, float _v, float _a)
+void HSVRGBAColor::set_color_HSVA(float _h, float _s, float _v, float _a)
 {
 	h = _h;
 	s = _s;

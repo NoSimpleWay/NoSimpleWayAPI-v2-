@@ -19,12 +19,8 @@
 /**/#include "EDataEntity.h"
 #endif
 
-/**/
-#ifndef	_HELPERS_ALREADY_LINKED_
-#define	_HELPERS_ALREADY_LINKED_
+
 #include "Helpers.h"
-#endif
-/**/
 
 /**/
 #ifndef _E_CLASS_LINKER_ALREADY_LINKED_
@@ -871,30 +867,30 @@ std::vector<EFilterRule*> EFilterRule::registered_filter_rules_for_list;
 
 void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	if (_custom_data->data_container != nullptr)
+	//if (_custom_data->data_container != nullptr)
 	{
 		EButtonGroup::color_editor_group->is_active = true;
 		EButtonGroup::color_editor_group->move_to_foreground();
 
-		EDataContainer_Button_StoreColor* button_data = static_cast<EDataContainer_Button_StoreColor*>(_custom_data->data_container);
-		EDataContainer_Group_ColorEditor* group_data = static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
-		//Helper::hsvrgba_color*				master_color	= nullptr;
-		EDataContainer_Button_StoreColor* master_data = group_data->target_data_container_with_color;
+		EntityButtonColorButton*			clicked_button	= static_cast<EntityButtonColorButton*>(_entity);
+		EDataContainer_Group_ColorEditor*	group_data		= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
+		EntityButtonColorButton*			target_button	= group_data->target_color_button;
 
 
 		//set target button to button group
-		if (button_data->selected_mode == ColorButtonMode::CBM_OPEN_WINDOW)
+		if (clicked_button->selected_mode == ColorButtonMode::CBM_OPEN_WINDOW)
 		{
-			group_data->pointer_to_color_collection_group->selected_button = nullptr;
-			group_data->target_data_container_with_color = button_data;
+			group_data->pointer_to_color_collection_sector->selected_button = nullptr;
+			group_data->target_color_button = clicked_button;
 
-			if (group_data->pointer_to_color_collection_group != nullptr)
-				for (EntityButton* but : group_data->pointer_to_color_collection_group->button_list)
-				if (but != group_data->pointer_to_color_collection_group->slider)
+			if (group_data->pointer_to_color_collection_sector != nullptr)
+				for (EntityButton* but : group_data->pointer_to_color_collection_sector->button_list)
+				if (but != group_data->pointer_to_color_collection_sector->slider)
 				{
-					if (static_cast<EDataContainer_Button_StoreColor*>(but->custom_data_list[0]->data_container)->stored_color == button_data->stored_color)
+					//color collection on color editor								button which open editor
+					if (static_cast<EntityButtonColorButton*>(but)->stored_color == clicked_button->stored_color)
 					{
-						group_data->pointer_to_color_collection_group->selected_button = but;
+						group_data->pointer_to_color_collection_sector->selected_button = but;
 						break;
 					}
 				}
@@ -903,8 +899,8 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 				EInputCore::logger_simple_error("pointer to color group is null!");
 			}
 
-			master_data = group_data->target_data_container_with_color;
-			group_data->work_color = master_data->stored_color;
+			target_button = group_data->target_color_button;
+			group_data->work_color = target_button->stored_color;
 		}
 
 		//color data container from target button
@@ -916,46 +912,55 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 
 
 		//set new color to master_button
-		if ((button_data->selected_mode == ColorButtonMode::CBM_SELECT_COLOR) && (master_data->stored_color != nullptr))
+		if ((clicked_button->selected_mode == ColorButtonMode::CBM_SELECT_COLOR) && (target_button->stored_color != nullptr))
 		{
 			if
-				(
-					(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-					||
-					(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
-					)
+			(
+				(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+				||
+				(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
+			)
 			{
 				//if color not from collection, remove personal color
-				if (!master_data->stored_color->is_from_collection)
+				if (!target_button->stored_color->is_from_collection)
 				{
-					master_data->stored_color->is_from_collection = true;
-					if (!disable_deleting) { delete master_data->stored_color; }
-
-					
+					target_button->stored_color->is_from_collection = true;
+					if (!disable_deleting) { delete target_button->stored_color; }
 				}
 
-				master_data->stored_color = button_data->stored_color;
+				//pointer to this color already exist in color collection pointers list?
+				bool pointer_to_color_already_exist = false;
+				for (HSVRGBAColor* HRA_color : clicked_button->parent_color_collection->pointers_to_this_collection)
+				{
+					if (HRA_color == target_button->stored_color) { pointer_to_color_already_exist = true; break; }
+				}
 
-				group_data->pointer_to_color_collection_group->selected_button = static_cast<EntityButton*>(_entity);
-				group_data->work_color = button_data->stored_color;
+				//add this color to pointer list
+				if (!pointer_to_color_already_exist)
+				{ clicked_button->parent_color_collection->pointers_to_this_collection.push_back(target_button->stored_color); }
+
+				target_button->stored_color = clicked_button->stored_color;
+
+				group_data->pointer_to_color_collection_sector->selected_button = static_cast<EntityButton*>(_entity);
+				group_data->work_color = clicked_button->stored_color;
 			}
 			else
 			{
 				//if color from collection, create personal color
-				if (master_data != nullptr)
+				if (target_button != nullptr)
 				{
-					if (master_data->stored_color->is_from_collection)
+					if (target_button->stored_color->is_from_collection)
 					{
-						master_data->stored_color = new Helper::HSVRGBAColor();
-						master_data->stored_color->is_from_collection = false;
+						target_button->stored_color = new HSVRGBAColor();
+						target_button->stored_color->is_from_collection = false;
 					}
 
-					master_data->stored_color->set_color(button_data->stored_color);
+					target_button->stored_color->set_color(clicked_button->stored_color);
 					//button_data->stored_color->set_color(button_data->stored_color);
 
-					group_data->pointer_to_color_collection_group->selected_button = nullptr;
+					group_data->pointer_to_color_collection_sector->selected_button = nullptr;
 
-					group_data->work_color = master_data->stored_color;
+					group_data->work_color = target_button->stored_color;
 				}
 			}
 		}
@@ -1301,7 +1306,7 @@ void EDataActionCollection::action_convert_HSV_to_RGB(EButtonGroup* _group)
 void EDataActionCollection::action_set_new_color_to_button(EButtonGroup* _group)
 {
 	EInputCore::logger_simple_info("@");
-	static_cast<EDataContainer_Group_ColorEditor*>(_group->root_group->data_container)->target_data_container_with_color->stored_color
+	static_cast<EDataContainer_Group_ColorEditor*>(_group->root_group->data_container)->target_color_button->stored_color
 		=
 		static_cast<EDataContainer_Group_ColorEditor*>(_group->root_group->data_container)->work_color;
 }
@@ -1406,10 +1411,10 @@ void EDataActionCollection::action_draw_color_rectangle_for_group(EButtonGroup* 
 		(
 			_group->batcher_for_default_draw->vertex_buffer,
 			_group->batcher_for_default_draw->last_vertice_buffer_index,
-			data->pointer_to_color_box_group->region_gabarite->world_position_x + 0.0f,
-			data->pointer_to_color_box_group->region_gabarite->world_position_y + 0.0f,
-			data->pointer_to_color_box_group->region_gabarite->size_x - 0.0f,
-			data->pointer_to_color_box_group->region_gabarite->size_y - 0.0f,
+			data->pointer_to_color_box_sector->region_gabarite->world_position_x + 0.0f,
+			data->pointer_to_color_box_sector->region_gabarite->world_position_y + 0.0f,
+			data->pointer_to_color_box_sector->region_gabarite->size_x - 0.0f,
+			data->pointer_to_color_box_sector->region_gabarite->size_y - 0.0f,
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
 	}
@@ -1419,9 +1424,9 @@ void EDataActionCollection::action_draw_stored_color_as_box(Entity* _entity, ECu
 {
 	
 
-	if ((_custom_data != nullptr) && (_custom_data->data_container != nullptr))
+	//if ((_custom_data != nullptr))
 	{
-		EDataContainer_Button_StoreColor* data = static_cast<EDataContainer_Button_StoreColor*>(_custom_data->data_container);
+		EntityButtonColorButton* data = static_cast<EntityButtonColorButton*>(_entity);
 		EntityButton* button = static_cast<EntityButton*>(_entity);
 
 		EBrickStyle* style = button->parent_button_group->selected_style->button_bg;
@@ -1490,9 +1495,9 @@ void EDataActionCollection::action_delete_vertical_router_variants_group(EButton
 
 void EDataActionCollection::action_transfer_pointer_to_color_data_container(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container)->target_data_container_with_color
-		=
-		static_cast<EDataContainer_Button_StoreColor*>(_custom_data->data_container);
+	static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container)->target_color_button
+	=
+	static_cast<EntityButtonColorButton*>(_entity);
 }
 
 void EDataActionCollection::action_unbing_color(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1500,13 +1505,13 @@ void EDataActionCollection::action_unbing_color(Entity* _entity, ECustomData* _c
 	EButtonGroup* parent_group = static_cast<EntityButton*>(_entity)->parent_button_group;
 	EButtonGroup* root_group = parent_group->root_group;
 	EDataContainer_Group_ColorEditor* group_data = static_cast<EDataContainer_Group_ColorEditor*>(root_group->data_container);
-	EDataContainer_Button_StoreColor* target_button_data = group_data->target_data_container_with_color;
+	EntityButtonColorButton* target_button_data = group_data->target_color_button;
 
 	//get current color
-	Helper::HSVRGBAColor* original_color = target_button_data->stored_color;
+	HSVRGBAColor* original_color = target_button_data->stored_color;
 
 	//create non-binded color
-	Helper::HSVRGBAColor* HRA_color = new Helper::HSVRGBAColor();
+	HSVRGBAColor* HRA_color = new HSVRGBAColor();
 	HRA_color->set_color(original_color);//apply old color to non-binded
 	HRA_color->is_from_collection = false;
 	target_button_data->stored_color = HRA_color;
@@ -1529,25 +1534,25 @@ void EDataActionCollection::action_unbing_color(Entity* _entity, ECustomData* _c
 	//clear selected button, because new color is not belong to any collection
 	if (parent_group != nullptr)
 	{
-		group_data->pointer_to_color_collection_group->selected_button = nullptr;
+		group_data->pointer_to_color_collection_sector->selected_button = nullptr;
 	}
 
 }
-
+class EntityButtonColorButton;
 void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 
 	EButtonGroup* parent_group = static_cast<EntityButton*>(_entity)->parent_button_group;
 	EButtonGroup* root_group = parent_group->root_group;
 	EDataContainer_Group_ColorEditor* group_data = static_cast<EDataContainer_Group_ColorEditor*>(root_group->data_container);
-	EDataContainer_Button_StoreColor* button_data = group_data->target_data_container_with_color;
+	EntityButtonColorButton* button_data = group_data->target_color_button;
 
 	//get current color
-	Helper::HSVRGBAColor* original_color = group_data->work_color;
+	HSVRGBAColor* original_color = group_data->work_color;
 
 	//create non-binded color
-	Helper::HSVRGBAColor			HRA_color;
-	Helper::HRA_color_collection* HRA_collection = new Helper::HRA_color_collection();
+	HSVRGBAColor			HRA_color;
+	HRA_color_collection*	HRA_collection = new HRA_color_collection();
 
 	HRA_color.set_color(original_color);//apply old color to non-binded
 	HRA_collection->target_color = HRA_color;
@@ -1566,21 +1571,24 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 
 	//group_data->work_color = &HRA_color;
 
-	EntityButton* jc_button = EntityButton::create_named_color_button
+	ELocalisationText l_text;
+	l_text.localisations[NSW_localisation_EN] = "Color";
+	l_text.localisations[NSW_localisation_RU] = "Цвет";
+	EntityButtonColorButton* jc_button = EntityButton::create_named_color_button
 	(
 		//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
 		new ERegionGabarite(80.0f, 38.0f),
-		group_data->pointer_to_color_collection_group,
+		group_data->pointer_to_color_collection_sector,
 		EFont::font_list[0],
 		EGUIStyle::active_style,
-		"Цвет",
+		l_text,
 		HRA_collection,
 		&HRA_collection->target_color,
 		ColorButtonMode::CBM_SELECT_COLOR
 	);
 	//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
-	group_data->pointer_to_color_collection_group->button_list.push_back(jc_button);
+	group_data->pointer_to_color_collection_sector->button_list.push_back(jc_button);
 	EButtonGroup::refresh_button_group(root_group);
 
 	//group_data->pointer_to_color_collection_group->selected_button = jc_button;
@@ -1741,7 +1749,8 @@ EClickableArea::EClickableArea()
 
 EClickableArea::~EClickableArea()
 {
-	if (debug_deleting) EInputCore::logger_simple_info("deleting clickable area");
+	if (debug_deleting) { EInputCore::logger_simple_info("deleting clickable area"); }
+
 	if (region_gabarite != nullptr)
 	{
 		(region_gabarite->pointers_to_this_object)--;
@@ -1754,77 +1763,9 @@ EClickableArea::~EClickableArea()
 			if (debug_deleting) EInputCore::logger_simple_success("deleting clickable area");
 		}
 	}
-	if (!disable_deleting) {
-		//delete catched_side_left;
-		//delete catched_side_right;
-		//delete catched_side_up;
-		//delete catched_side_down;
-		//delete catched_side_mid;
-		//delete catched_body;
-		//delete have_rama;
-		//delete any_visual_changes;
-		
-		//delete[] can_catch_side;
-		//delete can_catch_side;
-	}
-
-
-
-	//region = nullptr;
-
 
 	if (text_area != nullptr)
 	{delete text_area;}
-
-//if (!sprite_layer_list.empty())
-//{
-//	for (ESpriteLayer* layer : sprite_layer_list)
-//	{
-//		delete layer;
-//	}
-//	sprite_layer_list.clear();
-//	sprite_layer_list.shrink_to_fit();
-//}
-
-	if (internal_sprite_layer != nullptr)
-	{
-		if (!disable_deleting)
-		{
-			delete internal_sprite_layer;
-		}
-	}
-
-	//for (data_action_pointer dap:actions_on_click_list)
-	//{delete &dap;}
-	//actions_on_click_list.clear();
-
-	//for (data_action_pointer dap:actions_on_right_click_list)
-	//{delete &dap;}
-	//actions_on_right_click_list.clear();
-
-
-
-
-
-	//for (data_action_pointer dap:actions_on_right_click_list)
-	//{delete &dap;}
-	//actions_on_right_click_list.clear();
-
-
-
-
-
-	//delete &parent_entity;
-	//delete &parent_custom_data;
-
-
-	if (!disable_deleting)
-	{
-		//delete catch_offset_x;
-		//delete catch_offset_y;
-	}
-
-	//delete &batcher_for_default_draw;
 }
 
 bool EClickableArea::overlapped_by_mouse(EClickableArea* _region, float _offset_x, float _offset_y, float _zoom)
@@ -2112,7 +2053,7 @@ void EClickableArea::translate_clickable_region(float _x, float _y, float _z, bo
 	}
 
 	for (ESpriteLayer* s_layer : sprite_layer_list)
-		if (s_layer != nullptr) { s_layer->translate_sprite_layer(_x, _y, _z, false); }
+	if (s_layer != nullptr) { s_layer->translate_sprite_layer(_x, _y, _z, false); }
 
 	if (text_area != nullptr) { text_area->translate(_x, _y, 0.0f, false); }
 }

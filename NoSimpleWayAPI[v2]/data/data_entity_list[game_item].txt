@@ -308,6 +308,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Breach unique item"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -443,6 +444,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Breach unique item"
 	
 	
 	[tag]"worth"		[value]"Trash"
@@ -465,6 +467,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Breach unique item"
 	
 	
 	[tag]"worth"		[value]"Trash"
@@ -505,6 +508,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Breach unique item"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -1843,6 +1847,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Breach unique item"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -3248,6 +3253,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Breach unique item"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -3920,6 +3926,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Breach unique item"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -5303,6 +5310,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Breach unique item"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -5877,6 +5885,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Breach unique item"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -15921,6 +15930,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Breach unique item"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -16681,6 +16691,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Jewels"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Breach unique item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -16698,6 +16709,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Jewels"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Breach unique item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -16714,6 +16726,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Jewels"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Breach unique item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17780,20 +17793,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Fragment of the"
-	[tag]"name RU"		[value]"Фрагмент Шейпера"
-
-	[tag]"icon path"	[value]"Shaper"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18916,6 +18915,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Chayula's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18928,6 +18929,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Chayula's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18940,6 +18943,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Chayula's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18952,6 +18957,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Chayula's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18964,6 +18971,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Esh's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18976,6 +18985,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Esh's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18988,6 +18999,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Esh's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19000,6 +19013,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Esh's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19012,6 +19027,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Tul's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19024,6 +19041,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Tul's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19036,6 +19055,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Tul's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19048,6 +19069,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Tul's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19060,6 +19083,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19072,6 +19097,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19084,6 +19111,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19096,6 +19125,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19108,6 +19139,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Xoph's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19120,6 +19153,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Xoph's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19132,6 +19167,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Xoph's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19144,6 +19181,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Xoph's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20077,6 +20116,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Breach unique item"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -22910,6 +22950,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Offhand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Breach unique item"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -23998,6 +24039,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Offhand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Breach unique item"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -24530,12 +24572,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Blessing of Esh"
 	[tag]"name RU"		[value]"Благословение Иш"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"icon path"	[value]"Blessing_of_Esh_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24547,12 +24589,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Blessing of Tul"
 	[tag]"name RU"		[value]"Благословение Тула"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"icon path"	[value]"Blessing_of_Tul_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -24564,12 +24606,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Blessing of Uul-Netol"
 	[tag]"name RU"		[value]"Благословение Уул-нетола"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"icon path"	[value]"Blessing_of_Uul-Netol_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -28986,6 +29028,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Breach unique item"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -30468,6 +30511,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Tornado_Wand_inventory_icon"
 	[tag]"base class"	[value]"Wands"
+		
+	[tag]"item tag"		[value]"Breach unique item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -32279,6 +32324,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"XophFlawlessBreachstone"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32293,6 +32340,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32307,6 +32355,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32321,6 +32370,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32335,6 +32385,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

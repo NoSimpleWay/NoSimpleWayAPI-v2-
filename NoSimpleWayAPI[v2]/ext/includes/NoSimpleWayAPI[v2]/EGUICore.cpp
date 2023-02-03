@@ -2152,7 +2152,7 @@ void EButtonGroup::realign_all_buttons()
 					{
 						if (clickable_area->text_area->localisation_text.base_name != "")
 						{
-							clickable_area->text_area->change_text(clickable_area->text_area->localisation_text.localisations[NSW_localisation_EN]);
+							//clickable_area->text_area->change_text(clickable_area->text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 						}
 					}
 				}
@@ -2171,7 +2171,7 @@ void EButtonGroup::realign_all_buttons()
 				{
 					if (clickable_area->text_area->localisation_text.base_name != "")
 					{
-						clickable_area->text_area->change_text(clickable_area->text_area->localisation_text.localisations[NSW_localisation_EN]);
+						//clickable_area->text_area->change_text(clickable_area->text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 					}
 				}
 			}
@@ -3138,7 +3138,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 {
 	EButtonGroup* main_group = create_root_button_group(_region, _style);
 	main_group->root_group = main_group;
-	Helper::HSVRGBAColor* HRA_color = &Helper::registered_color_list[rand() % Helper::registered_color_list.size()]->target_color;
+	HSVRGBAColor* HRA_color = &Helper::registered_color_list[rand() % Helper::registered_color_list.size()]->target_color;
 
 
 	main_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
@@ -3230,7 +3230,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	color_box->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	color_box->stretch_x_by_parent_size = false;
 	color_box->stretch_y_by_parent_size = true;
-	data->pointer_to_color_box_group = color_box;
+	data->pointer_to_color_box_sector = color_box;
 
 	//**********************************************************************************************************************************************
 	//**********************************************************************************************************************************************
@@ -3266,18 +3266,19 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 
 
-	EButtonGroup* color_segment = color_collection_frame->add_group(create_default_button_group(new ERegionGabarite(256.0f, 40.0f), _style));
-	color_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
-	color_segment->stretch_x_by_parent_size = true;
-	color_segment->stretch_y_by_parent_size = true;
-	data->pointer_to_color_collection_group = color_segment;
-	color_segment->actions_on_select_button.push_back(&EDataActionCollection::action_set_new_color_to_button);
+	EButtonGroup*
+	color_collection_segment = color_collection_frame->add_group(create_default_button_group(new ERegionGabarite(256.0f, 40.0f), _style));
+	color_collection_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
+	color_collection_segment->stretch_x_by_parent_size = true;
+	color_collection_segment->stretch_y_by_parent_size = true;
+	data->pointer_to_color_collection_sector = color_collection_segment;
+	color_collection_segment->actions_on_select_button.push_back(&EDataActionCollection::action_set_new_color_to_button);
 
 	for (int i = 0; i < Helper::registered_color_list.size(); i++)
 	{
 		// // // // // // //// // // // // // //// // // // // // //
-		Helper::HRA_color_collection* HRA_collection = Helper::registered_color_list[i];
-		Helper::HSVRGBAColor* HRA_color = &HRA_collection->target_color;
+		HRA_color_collection* HRA_collection = Helper::registered_color_list[i];
+		HSVRGBAColor* HRA_color = &HRA_collection->target_color;
 		//HRA_color->h = rand() % 360;
 		//HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
 		//HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
@@ -3285,12 +3286,12 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 
 		//std::cout << Helper::registered_color_list[0] << std::endl;
-		jc_button = EntityButton::create_named_color_button
+		EntityButtonColorButton* color_button = EntityButton::create_named_color_button
 		(
 			//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
 			new ERegionGabarite(120.0f, 38.0f),
-			color_segment,
+			color_collection_segment,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
 			HRA_collection->name,
@@ -3302,7 +3303,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 		//std::cout << HRA_color << std::endl;
 		//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
 
-		color_segment->button_list.push_back(jc_button);
+		color_collection_segment->button_list.push_back(color_button);
 		// // // // // // //// // // // // // //// // // // // // //
 	}
 
@@ -3695,11 +3696,11 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 		EntityButtonVariantRouterSelector*
 		variant_button = new EntityButtonVariantRouterSelector();
 
-		std::string text = rv->localisation->localisations[NSW_localisation_EN];
+		std::string text = rv->localisation->localisations[ELocalisationText::active_localisation];
 
-		if ((rv->localisation_for_select_window != nullptr) && (rv->localisation_for_select_window->localisations[NSW_localisation_EN] != ""))
+		if ((rv->localisation_for_select_window != nullptr) && (rv->localisation_for_select_window->localisations[ELocalisationText::active_localisation] != ""))
 		{
-			text = rv->localisation_for_select_window->localisations[NSW_localisation_EN];
+			text = rv->localisation_for_select_window->localisations[ELocalisationText::active_localisation];
 		}
 
 		variant_button->make_as_default_button_with_icon_and_text

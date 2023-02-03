@@ -1,52 +1,33 @@
 #pragma once
 
 #ifndef _ELOCALISATION_ALREADY_LINKED_
-	#define _ELOCALISATION_ALREADY_LINKED_
-	
-	#include <string>
-	#define NSW_localisation_EN 0
-	#define NSW_localisation_RU 1
-	#define NSW_localisation_placeholder_2 2
-	#define NSW_localisation_placeholder_3 3
-	#define NSW_localisation_placeholder_4 4
-	#define NSW_localisation_placeholder_5 5
-	#define NSW_localisation_placeholder_6 6
+#define _ELOCALISATION_ALREADY_LINKED_
 
-	constexpr unsigned int NSW_languages_count = 2;
-	class ELocalisationText
-	{
-	public:
-		ELocalisationText();
-		std::string base_name = "";
-		std::string localisations[NSW_languages_count] = { "1" };
-	};
+#include <string>
+#define NSW_localisation_EN 0
+#define NSW_localisation_RU 1
+#define NSW_localisation_placeholder_2 2
+#define NSW_localisation_placeholder_3 3
+#define NSW_localisation_placeholder_4 4
+#define NSW_localisation_placeholder_5 5
+#define NSW_localisation_placeholder_6 6
+
+constexpr unsigned int NSW_languages_count = 2;
+class ELocalisationText
+{
+public:
+	ELocalisationText();
+	std::string base_name = "";
+	std::string localisations[NSW_languages_count] = { "1" };
+
+	static int active_localisation;
+};
 #endif
 
-/**/
-#ifndef _E_CLASS_LINKER_ALREADY_LINKED_
-#define _E_CLASS_LINKER_ALREADY_LINKED_
-#include "EClassLinker.h"
-#endif
-/**/
 
-#ifndef _E_GRAPHIC_CORE_ALREADY_LINKED_
-/**/#define _E_GRAPHIC_CORE_ALREADY_LINKED_
-/**/#include "EGraphicCore.h"
-#endif
 
-/**/
-#ifndef	_DATA_CORE_ALREADY_LINKED_
-#define	_DATA_CORE_ALREADY_LINKED_
-#include "EDataCore.h"
-#endif
-/**/
 
-/**/
-#ifndef	_HELPERS_ALREADY_LINKED_
-#define	_HELPERS_ALREADY_LINKED_
-#include "Helpers.h"
-#endif
-/**/
+
 
 #include <vector>
 
@@ -121,8 +102,8 @@ public:
 	float size_x_in_pixels[EFont_array_dim];
 	float size_y_in_pixels[EFont_array_dim];
 
-	int lineheight	= 15;
-	int base		= 10;
+	int lineheight = 15;
+	int base = 10;
 
 	std::string name;
 
@@ -150,7 +131,25 @@ public:
 	ETextureAtlas* texture_atlas;
 };
 
+/**/
+#ifndef _E_CLASS_LINKER_ALREADY_LINKED_
+#define _E_CLASS_LINKER_ALREADY_LINKED_
+#include "EClassLinker.h"
+#endif
+/**/
 
+
+#ifndef _E_GRAPHIC_CORE_ALREADY_LINKED_
+/**/#define _E_GRAPHIC_CORE_ALREADY_LINKED_
+/**/#include "EGraphicCore.h"
+#endif
+
+/**/
+#ifndef	_DATA_CORE_ALREADY_LINKED_
+#define	_DATA_CORE_ALREADY_LINKED_
+#include "EDataCore.h"
+#endif
+/**/
 enum BorderSide
 {
 	LEFT,
@@ -175,6 +174,9 @@ enum TextColorArray
 	MAGENTA
 };
 
+
+
+#include "Helpers.h"
 class ETextArea
 {
 public:
@@ -185,8 +187,8 @@ public:
 
 	//bool* error = new bool(false);
 
-	Helper::HSVRGBAColor color;
-	Helper::HSVRGBAColor stored_color;
+	HSVRGBAColor color;
+	HSVRGBAColor stored_color;
 
 	//unsigned int* selected_color_table = new unsigned int(TextColorArray::FREE);
 	float font_scale = 1.0f;
@@ -204,9 +206,9 @@ public:
 	bool				indicate_gray_text = false;
 
 	std::vector<std::string*> row;
-	int row_count =  0;
+	int row_count = 0;
 
-	bool translate_region_gabarite =  false;
+	bool translate_region_gabarite = false;
 
 	void change_text(std::string _text);
 	void generate_rows();
@@ -220,8 +222,8 @@ public:
 
 	void translate(float _x, float _y, float _z, bool _translate_local_coordinate);
 
-	float offset_border[BorderSide::_LAST_ELEMENT] {0.0f};
-	
+	float offset_border[BorderSide::_LAST_ELEMENT]{ 0.0f };
+
 	EClickableArea* parent_clickable_region;
 	EntityButton* parent_entity_for_text_area;
 
@@ -232,7 +234,7 @@ public:
 	//aligns
 	float offset_by_gabarite_size_x = 0.5f;
 	float offset_by_gabarite_size_y = 0.0f;
-		
+
 	float offset_by_text_size_x = -0.5f;
 	float offset_by_text_size_y = 0.0f;
 	//
@@ -274,7 +276,7 @@ public:
 	static ETextArea* create_bottomed_to_left_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
 
 
-	
+
 
 	bool can_get_access_to_group_style();
 
@@ -283,7 +285,7 @@ public:
 	EButtonGroup* get_root_group();
 	//static 
 	void set_color(const float(&_color)[4]);
-	void set_color(Helper::HSVRGBAColor* _color);
+	void set_color(HSVRGBAColor* _color);
 	void set_color(float _r, float _g, float _b, float _a);
 
 	float type_cooldown = 0.0f;

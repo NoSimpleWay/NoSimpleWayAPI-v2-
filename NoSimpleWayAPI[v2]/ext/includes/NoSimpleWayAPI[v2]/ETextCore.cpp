@@ -10,6 +10,8 @@ namespace NS_FONT_UTILS
 	ETextArea* active_text_area;
 }
 
+int ELocalisationText::active_localisation = NSW_localisation_RU;
+
 EFont::EFont(std::string _name, ETextureGabarite* _g, ETextureAtlas* _atlas, bool _not_cyrrilic)
 {
 	gabarite = _g;
@@ -316,7 +318,7 @@ ETextArea::~ETextArea()
 		//delete		&font;
 		//delete		down_offset;
 
-		EInputCore::logger_simple_info("deleting text area");
+		//EInputCore::logger_simple_info("deleting text area");
 		if (region_gabarite != nullptr)
 		{
 			(region_gabarite->pointers_to_this_object)--;
@@ -327,7 +329,7 @@ ETextArea::~ETextArea()
 				{
 					delete region_gabarite;
 				}
-				EInputCore::logger_simple_success("deleting text area gabarite");
+				//EInputCore::logger_simple_success("deleting text area gabarite");
 			}
 		}
 
@@ -1413,13 +1415,13 @@ void ETextArea::change_text(std::string _text)
 	(
 		(_text == "")
 		&&
-		(gray_text.localisations[NSW_localisation_EN] != "")
+		(gray_text.localisations[ELocalisationText::active_localisation] != "")
 		&&
 		(!(text_area_active))
 	)
 	{
 		indicate_gray_text = true;
-		_text = gray_text.localisations[NSW_localisation_EN];
+		_text = gray_text.localisations[ELocalisationText::active_localisation];
 	}
 	else
 	{
@@ -1458,7 +1460,11 @@ void ETextArea::change_text(std::string _text)
 		{
 			
 			sym_id = (int)(_text[i]);
-			
+			if (sym_id < 0)
+			{
+				sym_id += 256;
+				//EInputCore::logger_param_with_warning(std::to_string(_text[i]), sym_id);
+			}
 			
 			//non space character
 			if (target_sym != ' ')
@@ -1667,7 +1673,7 @@ void ETextArea::set_color(const float(&_color)[4])
 
 
 
-void ETextArea::set_color(Helper::HSVRGBAColor* _color)
+void ETextArea::set_color(HSVRGBAColor* _color)
 {
 	color = *_color;
 	stored_color = *_color;

@@ -1,5 +1,13 @@
 #pragma once
 
+#include <iostream>
+#include <fstream>
+
+#include <vector>
+#include <string>
+
+
+
 /**/
 #ifndef _E_CLASS_LINKER_ALREADY_LINKED_
 #define _E_CLASS_LINKER_ALREADY_LINKED_
@@ -7,19 +15,18 @@
 #endif
 /**/
 
+
+#include "Helpers.h"
+
+
 //#ifndef _E_TEXT_CORE_ALREADY_LINKED_
 ///**/#define _E_TEXT_CORE_ALREADY_LINKED_
 ///**/
 //#endif
 
-#include "ETextCore.h"
+//#include "ETextCore.h"
 
-/**/
-#ifndef	_HELPERS_ALREADY_LINKED_
-#define	_HELPERS_ALREADY_LINKED_
-#include "Helpers.h"
-#endif
-/**/
+
 
 /**/
 #ifndef	_ENTITY_CORE_ALREADY_LINKED_
@@ -39,11 +46,7 @@
 
 
 
-#include <iostream>
-#include <fstream>
 
-#include <vector>
-#include <string>
 //class ETextArea;
 
 //link to method, who manipulate with data
@@ -80,9 +83,9 @@ public:
 	void update(float _d);
 	void translate_custom_data(float _x, float _y, float _z, bool _move_offset);
 
-	ESprite*		get_sprite_by_id(unsigned int _clickable_region_id, unsigned int _sprite_layer_id, unsigned int _frame_id, unsigned int _frame);
-	ESpriteLayer*	get_sprite_layer_by_id(unsigned int _clickable_region_id, unsigned int _sprite_layer_id);
-	ESpriteFrame*	get_sprite_frame_by_id(unsigned int _clickable_region_id, unsigned int _sprite_layer_id, unsigned int _frame_id);
+	ESprite* get_sprite_by_id(unsigned int _clickable_region_id, unsigned int _sprite_layer_id, unsigned int _frame_id, unsigned int _frame);
+	ESpriteLayer* get_sprite_layer_by_id(unsigned int _clickable_region_id, unsigned int _sprite_layer_id);
+	ESpriteFrame* get_sprite_frame_by_id(unsigned int _clickable_region_id, unsigned int _sprite_layer_id, unsigned int _frame_id);
 	//std::vector<void (*)(Entity*, ECustomData*)> data_actions_list;
 
 	bool* is_second_pass = new bool(false);
@@ -122,7 +125,7 @@ public:
 	bool overlapped_by_mouse();
 
 	unsigned int pointers_to_this_object = 0;
-	unsigned int* pointer_id = new unsigned int(0);
+	//unsigned int* pointer_id = new unsigned int(0);
 	static void set_region_gabarite(ERegionGabarite** _destination, ERegionGabarite* _source);
 	void* root_owner;
 
@@ -151,32 +154,32 @@ public:
 
 	ERegionGabarite* region_gabarite;
 
-	std::vector<ESpriteLayer*> sprite_layer_list;
-	ESpriteLayer* internal_sprite_layer;
+	std::vector<ESpriteLayer*>			sprite_layer_list;
+	//ESpriteLayer*						internal_sprite_layer;
 
-	std::vector<data_action_pointer> actions_on_click_list;
-	std::vector<data_action_pointer> actions_on_right_click_list;
+	std::vector<data_action_pointer>	actions_on_click_list;
+	std::vector<data_action_pointer>	actions_on_right_click_list;
 
-	Entity*			parent_entity;
-	EButtonGroup*	parent_group;
-	ECustomData*	parent_custom_data;
+	Entity* parent_entity;
+	EButtonGroup* parent_group;
+	ECustomData* parent_custom_data;
 
 	ETextArea* text_area;
 	//std::vector<data_action_pointer> action_on_change_text;
 
-	bool catched_side_left	= false;
-	bool catched_side_right	= false;
-	bool catched_side_up	= false;
-	bool catched_side_down	= false;
-	bool catched_side_mid	= false;
+	bool catched_side_left = false;
+	bool catched_side_right = false;
+	bool catched_side_up = false;
+	bool catched_side_down = false;
+	bool catched_side_mid = false;
 
-	bool catched_body		= false;
+	bool catched_body = false;
 
-	bool have_rama			= true;
-	bool any_visual_changes	= true;
+	bool have_rama = true;
+	bool any_visual_changes = true;
 
 	//bool* editable_borders	= new bool(false);
-	bool can_catch_side[_CRS_SIDE_LAST_ELEMENT] {false};
+	bool can_catch_side[_CRS_SIDE_LAST_ELEMENT]{ false };
 
 	float catch_offset_x = 0.0f;
 	float catch_offset_y = 0.0f;
@@ -312,7 +315,7 @@ public:
 
 	data_action_pointer					stored_action_for_data_entity_group;
 
-	ETextureGabarite*					icon_texture;
+	ETextureGabarite* icon_texture;
 };
 
 class EDataContainer_Group_DataEntitiesSearch : public EDataContainer
@@ -357,12 +360,13 @@ public:
 };
 
 
-class EDataContainer_Button_StoreColor : public EDataContainer
-{
-public:
-	Helper::HSVRGBAColor* stored_color;
-	ColorButtonMode selected_mode = ColorButtonMode::CBM_OPEN_WINDOW;
-};
+//class EDataContainer_Button_StoreColor : public EDataContainer
+//{
+//public:
+//	HSVRGBAColor* stored_color;
+//	ColorButtonMode selected_mode = ColorButtonMode::CBM_OPEN_WINDOW;
+//};
+class EntityButtonColorButton;
 
 class EDataContainer_Group_ColorEditor : public EDataContainer
 {
@@ -379,10 +383,10 @@ public:
 
 	//float*							pointer_to_alpha;
 
-	Helper::HSVRGBAColor* work_color;
+	HSVRGBAColor* work_color;
 
-	EButtonGroup* pointer_to_color_box_group;
-	EButtonGroup* pointer_to_color_collection_group;
+	EButtonGroup* pointer_to_color_box_sector;
+	EButtonGroup* pointer_to_color_collection_sector;
 
 	//data containers of color ajust buttons
 	EDataContainer_VerticalNamedSlider* slider_data_value_container;
@@ -393,7 +397,7 @@ public:
 
 
 
-	EDataContainer_Button_StoreColor* target_data_container_with_color;
+	EntityButtonColorButton* target_color_button;
 
 };
 
@@ -450,7 +454,7 @@ public:
 //	EntityButton*				pointer_to_color_check_button[3];
 //
 //	bool						color_check[3];
-//	Helper::HSVRGBAColor**		pointer_to_HRA_color[3];
+//	HSVRGBAColor**		pointer_to_HRA_color[3];
 //	
 //	//font size
 //	EntityButton*				text_size_button;
@@ -528,35 +532,35 @@ namespace EDataActionCollection
 
 	/*	open groups	*/
 
-	void action_open_color_group						(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_color_group(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_add_item_to_group_receiver				(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_add_wide_item_to_group_receiver			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_wide_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_update_crosshair_slider					(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_draw_crosshair_slider					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_update_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_update_horizontal_named_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_update_horizontal_named_slider(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void action_update_horizontal_named_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_draw_horizontal_named_slider			(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_draw_vertical_named_slider				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_horizontal_named_slider(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_vertical_named_slider(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_convert_HSV_to_RGB						(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_select_this_button						(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_convert_HSV_to_RGB(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_button(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_force_resize_callback					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_force_resize_callback(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_invoke_data_entity_group_action			(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_set_button_group_as_active				(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_invoke_data_entity_group_action(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_set_button_group_as_active(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_switch_boolean_value					(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_switch_boolean_value(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_transfer_pointer_to_color_data_container(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_unbing_color							(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_create_new_color						(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_unbing_color(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_create_new_color(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_rotate_variant							(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_select_rotate_variant_from_list			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_rotate_variant(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_rotate_variant_from_list(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void action_active_filter_block						(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text

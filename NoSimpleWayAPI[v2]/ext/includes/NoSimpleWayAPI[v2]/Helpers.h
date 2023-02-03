@@ -10,16 +10,40 @@ enum class ColorButtonMode
 
 };
 
-class ETestObject
+#ifndef _HELPER_ALREADY_LINKED_
+#define _HELPER_ALREADY_LINKED_
+struct HSVRGBAColor
 {
-public:
-	int a;
-	int* b = new int(0);
+	float r = 1.0f;			//	red
+	float g = 0.9f;				//	green
+	float b = 0.8f;				//	blue
 
-	ETestObject();
+	float h = 360.0f;		//	HUE
+	float s = 1.0f;			//	saturation
+	float v = 1.0f;			//	value
 
-	static std::vector <ETestObject*> test_object_vector;
+	float a = 1.0f;			//	alpha
+
+	void set_color(HSVRGBAColor* _HRA_color);
+
+	void set_color_RGBA(float _r, float _g, float _b, float _a);
+	void set_color_HSVA(float _h, float _s, float _v, float _a);
+
+	bool is_from_collection = true;
+
+	//unsigned int pointers_to_color = 0;
 };
+
+#include "ETextCore.h"
+struct HRA_color_collection
+{
+	HSVRGBAColor		target_color;
+	ELocalisationText	name;
+
+	std::vector<HSVRGBAColor*> pointers_to_this_collection;
+};
+
+
 
 class Helper
 {
@@ -33,33 +57,7 @@ public:
 
 
 
-	struct HSVRGBAColor
-	{
-		float r = 1.0f;			//	red
-		float g = 0.9f;				//	green
-		float b = 0.8f;				//	blue
-
-		float h = 360.0f;		//	HUE
-		float s = 1.0f;			//	saturation
-		float v = 1.0f;			//	value
-
-		float a = 1.0f;			//	alpha
-
-		void set_color(HSVRGBAColor* _HRA_color);
-
-		void set_color_RGBA(float _r, float _g, float _b, float _a);
-		void set_color_HSVA(float _h, float _s, float _v, float _a);
-
-		bool is_from_collection = true;
-
-		//unsigned int pointers_to_color = 0;
-	};
-
-	struct HRA_color_collection
-	{
-		HSVRGBAColor	target_color;
-		std::string		name;
-	};
+	
 
 	static std::vector<HRA_color_collection*> registered_color_list;
 
@@ -177,3 +175,4 @@ public:
 		//return out;
 	}
 };
+#endif

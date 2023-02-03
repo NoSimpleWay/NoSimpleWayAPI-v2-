@@ -173,7 +173,7 @@ void EDataActionCollection::action_select_this_text_variant(Entity* _entity, ECu
 	target_text_area->color = clicked_button_text_area->color;
 	target_text_area->localisation_text = clicked_button_text_area->localisation_text;
 
-	target_text_area->change_text(clicked_button_text_area->localisation_text.localisations[NSW_localisation_EN]);
+	target_text_area->change_text(clicked_button_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 
 	root_group->is_active = false;
 }
@@ -432,7 +432,7 @@ void EDataActionCollection::action_add_text_as_item(Entity* _entity, ECustomData
 	l_text.localisations[NSW_localisation_RU] = data_entity_container->filter_text_area->original_text;
 
 	Entity::get_last_text_area(wide_button)->localisation_text = l_text;
-	Entity::get_last_text_area(wide_button)->change_text(l_text.localisations[NSW_localisation_EN]);
+	Entity::get_last_text_area(wide_button)->change_text(l_text.localisations[ELocalisationText::active_localisation]);
 
 	EButtonGroup::change_group(data_entity_container->pointer_to_group_item_receiver);
 	((EntityButton*)(_entity))->parent_button_group->root_group->is_active = false;
@@ -919,7 +919,7 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 	EntityButtonLootItem*
 		loot_button = static_cast<EntityButtonLootItem*>(_entity);
 
-	Helper::HSVRGBAColor*
+	HSVRGBAColor*
 		target_temp_color = &EButtonGroupLootSimulator::temp_color;
 
 	int selected_version_router = EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant;
@@ -1092,9 +1092,10 @@ void EDataActionCollection::action_highlight_matched_blocks(Entity* _entity, ECu
 	EntityButtonLootItem*
 		loot_button = static_cast<EntityButtonLootItem*>(_entity);
 
+	if (false)
 	for (EGameItemAttributeContainer attribute_container : loot_button->stored_game_item->attribute_container_list)
 	{
-		EInputCore::logger_param("attribute name", attribute_container.target_attribute->localisation.localisations[NSW_localisation_EN]);
+		EInputCore::logger_param("attribute name", attribute_container.target_attribute->localisation.localisations[ELocalisationText::active_localisation]);
 
 		if (attribute_container.attribute_value_int != 0) { EInputCore::logger_param("INT", attribute_container.attribute_value_int); }
 		EInputCore::logger_param("BOOL", attribute_container.attribute_value_bool);
@@ -1103,9 +1104,9 @@ void EDataActionCollection::action_highlight_matched_blocks(Entity* _entity, ECu
 		if (!attribute_container.listed_value_list.empty())
 		{
 			EInputCore::logger_simple_info("Listed");
-			for (std::string listed_value : attribute_container.listed_value_list)
+			for (ELocalisationText listed_value : attribute_container.listed_value_list)
 			{
-				EInputCore::logger_param("-------", listed_value);
+				EInputCore::logger_param("-------", listed_value.localisations[ELocalisationText::active_localisation]);
 			}
 		}
 
@@ -1215,8 +1216,10 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 			up_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_default_bg);
 			//
 
-
+			
 			/////////////		CLICKABLE AREA FOR BOTTOM PART (ATTRIBUTES)		/////////////
+			if (true)
+			
 			{
 				EClickableArea*
 				clickable_area_for_bottom_attributes = EClickableArea::create_default_clickable_region(bottom_part->region_gabarite, main_group);
@@ -1236,7 +1239,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 							(attribute_container->attribute_value_bool)
 						)
 					{
-						item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[NSW_localisation_EN];
+						item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
 						
 					}
 					else
@@ -1246,7 +1249,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 								)
 						{
 							item_attributes_generated_text += "\\n";
-							item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[NSW_localisation_EN];
+							item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
 							item_attributes_generated_text += " ";
 							item_attributes_generated_text += std::to_string(attribute_container->attribute_value_int);
 							
@@ -1258,7 +1261,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 							)
 							{
 								item_attributes_generated_text += "\\n";
-								item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[NSW_localisation_EN];
+								item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
 								item_attributes_generated_text += " [";
 								item_attributes_generated_text += attribute_container->attribute_value_str;
 								item_attributes_generated_text += "]";
@@ -1273,11 +1276,11 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 								)
 								{
 									item_attributes_generated_text += "\\n";
-									item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[NSW_localisation_EN];
-									for (std::string listed_string : attribute_container->listed_value_list)
+									item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
+									for (ELocalisationText listed_string : attribute_container->listed_value_list)
 									{
 										item_attributes_generated_text += " {";
-										item_attributes_generated_text += listed_string;
+										item_attributes_generated_text += listed_string.localisations[ELocalisationText::active_localisation];
 										item_attributes_generated_text += "}";
 									}
 
@@ -1296,6 +1299,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 			/////////////
 
 			/////////////		CLICKABLE AREA FOR TOP PART (NAME)		/////////////
+			if (true)
 			{
 				EClickableArea*
 				clickable_area_for_top_name = EClickableArea::create_default_clickable_region(up_part->region_gabarite, main_group);
@@ -1306,7 +1310,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 				(
 					clickable_area_for_top_name,
 					EFont::font_list[1],
-					loot_button->stored_game_item->localised_name.localisations[NSW_localisation_EN]
+					loot_button->stored_game_item->localised_name.localisations[ELocalisationText::active_localisation]
 				);
 
 				switch (loot_button->stored_game_item->rarity)
@@ -1354,6 +1358,12 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 			but->destroy_attached_description();
 		}
 	}
+}
+
+void EDataActionCollection::action_open_and_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EWindowMain::loot_simulator_button_group->is_active = true;
+	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
 }
 
 void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _text_area)
@@ -1640,7 +1650,7 @@ EWindowMain::EWindowMain()
 	localisation_text = new ELocalisationText();
 	registered_rarity_router_variants[0] = new RouterVariant();
 	registered_rarity_router_variants[0]->localisation = localisation_text;
-	registered_rarity_router_variants[0]->color = new Helper::HSVRGBAColor();
+	registered_rarity_router_variants[0]->color = new HSVRGBAColor();
 	registered_rarity_router_variants[0]->color->set_color_RGBA(0.9f, 0.95f, 1.0f, 1.0f);
 	localisation_text->base_name = "Normal";
 	localisation_text->localisations[NSW_localisation_EN] = "Normal";
@@ -1650,7 +1660,7 @@ EWindowMain::EWindowMain()
 	localisation_text = new ELocalisationText();
 	registered_rarity_router_variants[1] = new RouterVariant();
 	registered_rarity_router_variants[1]->localisation = localisation_text;
-	registered_rarity_router_variants[1]->color = new Helper::HSVRGBAColor();
+	registered_rarity_router_variants[1]->color = new HSVRGBAColor();
 	registered_rarity_router_variants[1]->color->set_color_RGBA(0.5f, 0.7f, 1.0f, 1.0f);
 	localisation_text->base_name = "Magic";
 	localisation_text->localisations[NSW_localisation_EN] = "Magic";
@@ -1660,7 +1670,7 @@ EWindowMain::EWindowMain()
 	localisation_text = new ELocalisationText();
 	registered_rarity_router_variants[2] = new RouterVariant();
 	registered_rarity_router_variants[2]->localisation = localisation_text;
-	registered_rarity_router_variants[2]->color = new Helper::HSVRGBAColor();
+	registered_rarity_router_variants[2]->color = new HSVRGBAColor();
 	registered_rarity_router_variants[2]->color->set_color_RGBA(1.0f, 0.9f, 0.35f, 1.0f);
 	localisation_text->base_name = "Rare";
 	localisation_text->localisations[NSW_localisation_EN] = "Rare";
@@ -1670,7 +1680,7 @@ EWindowMain::EWindowMain()
 	localisation_text = new ELocalisationText();
 	registered_rarity_router_variants[3] = new RouterVariant();
 	registered_rarity_router_variants[3]->localisation = localisation_text;
-	registered_rarity_router_variants[3]->color = new Helper::HSVRGBAColor();
+	registered_rarity_router_variants[3]->color = new HSVRGBAColor();
 	registered_rarity_router_variants[3]->color->set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
 	localisation_text->base_name = "Unique";
 	localisation_text->localisations[NSW_localisation_EN] = "Unique";
@@ -1687,7 +1697,7 @@ EWindowMain::EWindowMain()
 
 	registered_alternate_gem_quality_router_variants[0] = new RouterVariant();
 	registered_alternate_gem_quality_router_variants[0]->localisation = localisation_text;
-	registered_alternate_gem_quality_router_variants[0]->color = new Helper::HSVRGBAColor();
+	registered_alternate_gem_quality_router_variants[0]->color = new HSVRGBAColor();
 	registered_alternate_gem_quality_router_variants[0]->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
 
 	//Anomalous
@@ -1699,7 +1709,7 @@ EWindowMain::EWindowMain()
 
 	registered_alternate_gem_quality_router_variants[1] = new RouterVariant();
 	registered_alternate_gem_quality_router_variants[1]->localisation = localisation_text;
-	registered_alternate_gem_quality_router_variants[1]->color = new Helper::HSVRGBAColor();
+	registered_alternate_gem_quality_router_variants[1]->color = new HSVRGBAColor();
 	registered_alternate_gem_quality_router_variants[1]->color->set_color_RGBA(1.0f, 0.4f, 0.4f, 1.0f);
 
 
@@ -1712,7 +1722,7 @@ EWindowMain::EWindowMain()
 
 	registered_alternate_gem_quality_router_variants[2] = new RouterVariant();
 	registered_alternate_gem_quality_router_variants[2]->localisation = localisation_text;
-	registered_alternate_gem_quality_router_variants[2]->color = new Helper::HSVRGBAColor();
+	registered_alternate_gem_quality_router_variants[2]->color = new HSVRGBAColor();
 	registered_alternate_gem_quality_router_variants[2]->color->set_color_RGBA(0.4f, 1.0f, 0.4f, 1.0f);
 
 
@@ -1725,7 +1735,7 @@ EWindowMain::EWindowMain()
 
 	registered_alternate_gem_quality_router_variants[3] = new RouterVariant();
 	registered_alternate_gem_quality_router_variants[3]->localisation = localisation_text;
-	registered_alternate_gem_quality_router_variants[3]->color = new Helper::HSVRGBAColor();
+	registered_alternate_gem_quality_router_variants[3]->color = new HSVRGBAColor();
 	registered_alternate_gem_quality_router_variants[3]->color->set_color_RGBA(0.4f, 0.4f, 1.0f, 1.0f);
 
 
@@ -2606,27 +2616,63 @@ EWindowMain::EWindowMain()
 	}
 	////////////////////////////////////////////////
 
-	std::string color_names_list[] = { "Never", "Gonna", "Give","You","Up","Never","Gonna","Ley","You","Down","Never","Gonna","Run","Arround","And", "Desert", "You" };
+	//std::string color_names_list[] = { "Never", "Gonna", "Give","You","Up","Never","Gonna","Ley","You","Down","Never","Gonna","Run","Arround","And", "Desert", "You" };
 
-	/*	REGISTER COLORS	*/
-	for (int i = 0; i < 17; i++)
+	///*	REGISTER COLORS	*/
+	//for (int i = 0; i < 17; i++)
+	//{
+	//	HSVRGBAColor HRA_color;
+
+	//	HRA_color.h = rand() % 360;
+	//	HRA_color.s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
+	//	HRA_color.v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
+	//	HRA_color.a = 1.0f - pow((rand() % 100) / 100.0f, 4.0);
+
+	//	Helper::hsv2rgb(&HRA_color);
+
+	//	HRA_color_collection* HRA_collection = new HRA_color_collection();
+	//	HRA_collection->name = color_names_list[i];
+	//	HRA_collection->target_color = HRA_color;
+
+	//	Helper::registered_color_list.push_back(HRA_collection);
+	//}
+	///*------------------*/
+
 	{
-		Helper::HSVRGBAColor HRA_color;
-
-		HRA_color.h = rand() % 360;
-		HRA_color.s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
-		HRA_color.v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
-		HRA_color.a = 1.0f - pow((rand() % 100) / 100.0f, 4.0);
-
+		//NORMAL RARITY
+		HSVRGBAColor HRA_color;
+		HRA_color.set_color_RGBA(1.0f, 0.9f, 0.8f, 1.0f);
 		Helper::hsv2rgb(&HRA_color);
 
-		Helper::HRA_color_collection* HRA_collection = new Helper::HRA_color_collection();
-		HRA_collection->name = color_names_list[i];
+		HRA_color_collection* HRA_collection = new HRA_color_collection();
+		HRA_collection->name.localisations[NSW_localisation_EN] = "Normal rarity";
+		HRA_collection->name.localisations[NSW_localisation_RU] = "Обычная редкость";
+		HRA_collection->target_color = HRA_color;
+
+		Helper::registered_color_list.push_back(HRA_collection);
+
+		//MAGIC RARITY
+		HRA_color.set_color_RGBA(0.25f, 0.5f, 1.0f, 1.0f);
+		Helper::hsv2rgb(&HRA_color);
+
+		HRA_collection = new HRA_color_collection();
+		HRA_collection->name.localisations[NSW_localisation_EN] = "Magic rarity";
+		HRA_collection->name.localisations[NSW_localisation_RU] = "Волшебная редкость";
+		HRA_collection->target_color = HRA_color;
+
+		Helper::registered_color_list.push_back(HRA_collection);
+
+		//RARE RARITY
+		HRA_color.set_color_RGBA(1.0f, 0.8f, 0.4f, 1.0f);
+		Helper::hsv2rgb(&HRA_color);
+
+		HRA_collection = new HRA_color_collection();
+		HRA_collection->name.localisations[NSW_localisation_EN] = "Rare rarity";
+		HRA_collection->name.localisations[NSW_localisation_RU] = "Уникальная редкость";
 		HRA_collection->target_color = HRA_color;
 
 		Helper::registered_color_list.push_back(HRA_collection);
 	}
-	/*------------------*/
 
 	//		SEARCH BOTTOM LINE
 	{
@@ -2961,7 +3007,7 @@ EWindowMain::EWindowMain()
 
 
 				//text area
-				jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Select <" + style->localisation_text.localisations[NSW_localisation_EN] + ">");
+				jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Select <" + style->localisation_text.localisations[ELocalisationText::active_localisation] + ">");
 				jc_text_area->can_be_edited = false;
 				Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 
@@ -3165,7 +3211,7 @@ EWindowMain::EWindowMain()
 				right_side_for_filter_rule_buttons,
 				&EDataActionCollection::action_select_this_filter_variant,
 				EFilterRule::registered_filter_rules_for_list[i]->icon_texture,
-				EFilterRule::registered_filter_rules_for_list[i]->localisation_text->localisations[NSW_localisation_EN]
+				EFilterRule::registered_filter_rules_for_list[i]->localisation_text->localisations[ELocalisationText::active_localisation]
 			);
 
 			//filter_button->
@@ -3415,13 +3461,16 @@ EWindowMain::EWindowMain()
 		// // // // // // // //
 
 		// // // // // // // //
+		ELocalisationText l_text;
+		l_text.localisations[NSW_localisation_EN] = "Sun color";
+		l_text.localisations[NSW_localisation_RU] = "Цвет солнца";
 		jc_button = EntityButton::create_named_color_button
 		(
 			new ERegionGabarite(170.0f, 38.0f),
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			"Цвет солнца",
+			l_text,
 			nullptr,
 			&NS_EGraphicCore::sun_color,
 			ColorButtonMode::CBM_OPEN_WINDOW
@@ -3523,6 +3572,7 @@ EWindowMain::EWindowMain()
 
 
 		// // // // // // //// // // // // // //// // // // // // //
+		//TEST
 		jc_button = new EntityButtonForFilterBlock();
 		jc_button->make_default_bool_switcher_button
 		(
@@ -3626,11 +3676,11 @@ EWindowMain::EWindowMain()
 					pattern_button = new EntityButtonLootPatternSelector();
 				pattern_button->make_as_default_button_with_icon_and_text
 				(
-					new ERegionGabarite(200.0f, 30.0f),
+					new ERegionGabarite(200.0f, 40.0f),
 					left_part_for_patterns,
 					&EDataActionCollection::action_add_items_from_this_loot_pattern,
 					loot_pattern->icon,
-					loot_pattern->localised_name.localisations[NSW_localisation_EN]
+					loot_pattern->localised_name.localisations[ELocalisationText::active_localisation]
 				);
 				pattern_button->target_pattern = loot_pattern;
 				pattern_button->main_text_area->localisation_text = loot_pattern->localised_name;
@@ -3679,7 +3729,7 @@ EWindowMain::EWindowMain()
 			local_text->localisations[NSW_localisation_RU] = "Версия лут фильтра: Стартовая";
 			router_variant->localisation = local_text;
 
-			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color = new HSVRGBAColor();
 			router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
 
 			variant_router_button->router_variant_list.push_back(router_variant);
@@ -3695,7 +3745,7 @@ EWindowMain::EWindowMain()
 			local_text->localisations[NSW_localisation_RU] = "Версия лут фильтра: Ранняя";
 			router_variant->localisation = local_text;
 
-			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color = new HSVRGBAColor();
 			router_variant->color->set_color_RGBA(0.5f, 1.0f, 0.75f, 1.0f);
 
 			variant_router_button->router_variant_list.push_back(router_variant);
@@ -3711,7 +3761,7 @@ EWindowMain::EWindowMain()
 			local_text->localisations[NSW_localisation_RU] = "Версия лут фильтра: Обычная";
 			router_variant->localisation = local_text;
 
-			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color = new HSVRGBAColor();
 			router_variant->color->set_color_RGBA(0.5f, 0.75f, 1.0f, 1.0f);
 
 			variant_router_button->router_variant_list.push_back(router_variant);
@@ -3727,7 +3777,7 @@ EWindowMain::EWindowMain()
 			local_text->localisations[NSW_localisation_RU] = "Версия лут фильтра: Строгая";
 			router_variant->localisation = local_text;
 
-			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color = new HSVRGBAColor();
 			router_variant->color->set_color_RGBA(1.0f, 0.5f, 1.0f, 1.0f);
 
 			variant_router_button->router_variant_list.push_back(router_variant);
@@ -3743,7 +3793,7 @@ EWindowMain::EWindowMain()
 			local_text->localisations[NSW_localisation_RU] = "Версия лут фильтра: Очень строгая";
 			router_variant->localisation = local_text;
 
-			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color = new HSVRGBAColor();
 			router_variant->color->set_color_RGBA(1.0f, 0.75f, 0.35f, 1.0f);
 
 			variant_router_button->router_variant_list.push_back(router_variant);
@@ -3759,15 +3809,21 @@ EWindowMain::EWindowMain()
 			EntityButton*
 				button_area_level_text = new EntityButton();
 
+			ELocalisationText l_text;
+
+			l_text.localisations[NSW_localisation_EN] = "Area level";
+			l_text.localisations[NSW_localisation_RU] = "Уровень области";
+
 			button_area_level_text->make_default_button_with_unedible_text
 			(
 				new ERegionGabarite(150.0f, 25.0f),
 				top_control_part,
 				nullptr,
-				"Area level"
+				l_text.localisations[ELocalisationText::active_localisation]
 			);
-			button_area_level_text->main_text_area->localisation_text.localisations[NSW_localisation_EN] = "Area level";
-			button_area_level_text->main_text_area->localisation_text.localisations[NSW_localisation_RU] = "Уровень области";
+			
+			button_area_level_text->main_text_area->localisation_text = l_text;
+			
 
 			top_control_part->button_list.push_back(button_area_level_text);
 
@@ -4011,7 +4067,7 @@ EWindowMain::EWindowMain()
 					new ERegionGabarite(160.0f, 30.0f),
 					target_group,
 					&EDataActionCollection::action_add_selected_content_to_filter_block,
-					fba->localisation.localisations[NSW_localisation_EN]
+					fba->localisation.localisations[ELocalisationText::active_localisation]
 				);
 
 				EntityButton::get_last_custom_data(jc_button)->data_container = add_content_data;
@@ -4162,7 +4218,7 @@ EWindowMain::EWindowMain()
 			);
 
 			jc_button->main_text_area->set_color(registered_alternate_gem_quality_router_variants[i]->color);
-			jc_button->main_text_area->change_text(registered_alternate_gem_quality_router_variants[i]->localisation->localisations[NSW_localisation_EN]);
+			jc_button->main_text_area->change_text(registered_alternate_gem_quality_router_variants[i]->localisation->localisations[ELocalisationText::active_localisation]);
 			EntityButton::get_last_text_area(jc_button)->localisation_text = *registered_alternate_gem_quality_router_variants[i]->localisation;
 
 			workspace_quality_group->button_list.push_back(jc_button);
@@ -4420,7 +4476,7 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(45.0f, 45.0f),
 			top_section,
 			&EDataActionCollection::action_open_new_lootfilter_group,
-			NS_EGraphicCore::load_from_textures_folder("button_create_new_loot_filter")
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_create_new_loot_filter")
 		);
 		top_section->button_list.push_back(jc_button);
 
@@ -4432,7 +4488,7 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(45.0f, 45.0f),
 			top_section,
 			&EDataActionCollection::action_open_loot_filters_list_window,
-			NS_EGraphicCore::load_from_textures_folder("button_open")
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_open")
 		);
 		top_section->button_list.push_back(jc_button);
 
@@ -4444,7 +4500,7 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(45.0f, 45.0f),
 			top_section,
 			&EDataActionCollection::action_save_lootfilter,
-			NS_EGraphicCore::load_from_textures_folder("button_save")
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_save")
 		);
 
 		top_section->button_list.push_back(jc_button);
@@ -4460,7 +4516,7 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(45.0f, 45.0f),
 			top_section,
 			&EDataActionCollection::action_set_button_group_as_active,
-			NS_EGraphicCore::load_from_textures_folder("button_world_parameters")
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_world_parameters")
 		);
 		button_activator->target_group = EWindowMain::world_parameters;
 		top_section->button_list.push_back(button_activator);
@@ -4476,9 +4532,25 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(45.0f, 45.0f),
 			top_section,
 			&EDataActionCollection::action_open_custom_sound_list,
-			NS_EGraphicCore::load_from_textures_folder("button_custom_sound")
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_custom_sound")
 		);
 		//button_activator->target_group = EWindowMain::world_parameters;
+		top_section->button_list.push_back(button_activator);
+		//////////////////////////////////////////////////////
+
+
+
+		//////////////////////////////////////////////////////
+		button_activator = new EntityButtonButtonGroupActivator();
+
+		button_activator->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(45.0f, 45.0f),
+			top_section,
+			&EDataActionCollection::action_open_and_refresh_loot_simulator,
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_open_loot_simulator")
+		);
+		//button_activator->target_group = EWindowMain::loot_simulator_button_group;
 		top_section->button_list.push_back(button_activator);
 		//////////////////////////////////////////////////////
 
@@ -5738,7 +5810,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Лут: скрыт";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(1.0f, 0.5f, 0.45f, 1.0f);
 
 	button_variant_router->router_variant_list.push_back(router_variant);
@@ -5754,7 +5826,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Лут: Виден";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.8f, 1.0f, 0.8f, 1.0f);
 
 	button_variant_router->router_variant_list.push_back(router_variant);
@@ -5801,7 +5873,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Продолжить";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.25f, 0.9f, 1.0f, 1.0f);
 
 	button_continue->router_variant_list.push_back(router_variant);
@@ -5817,7 +5889,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Не продолжать";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.3f, 0.4f, 0.5f, 1.0f);
 
 	button_continue->router_variant_list.push_back(router_variant);
@@ -5868,8 +5940,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		"Стартовый",
 		"Ранний",
 		"Нормальный",
-		"Поздный",
-		"Максимальный",
+		"Строгий",
+		"Строгий+",
 	};
 
 
@@ -5950,7 +6022,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant->localisation_for_select_window = local_text;
 		//----------------------------------------------------------------------
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.0f, 0.0f, 1.0f);
 
 		router_variant->texture = NS_DefaultGabarites::texture_loot_version_full_ignore;
@@ -5978,7 +6050,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant->localisation_for_select_window = local_text;
 		//----------------------------------------------------------------------
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.5f, 0.45f, 1.0f);
 
 		router_variant->texture = NS_DefaultGabarites::texture_loot_version_hide;
@@ -6006,7 +6078,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant->localisation_for_select_window = local_text;
 		//----------------------------------------------------------------------
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.7f, 0.7f, 0.7f, 1.0f);
 
 		router_variant->texture = NS_DefaultGabarites::texture_loot_version_ignore;
@@ -6025,7 +6097,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		//local_text->localisations[NSW_localisation_RU] = RU_names[i] + "\n" + "Слабый игнор";
 		//router_variant->localisation = local_text;
 
-		//router_variant->color = new Helper::HSVRGBAColor();
+		//router_variant->color = new HSVRGBAColor();
 		//router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
 
 		//router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_soft_ignore");
@@ -6052,7 +6124,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant->localisation_for_select_window = local_text;
 		//----------------------------------------------------------------------
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.9f, 0.95f, 1.0f, 1.0f);
 
 		router_variant->texture = NS_DefaultGabarites::texture_loot_version_default;
@@ -6071,7 +6143,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		//local_text->localisations[NSW_localisation_RU] = RU_names[i];
 		//router_variant->localisation = local_text;
 
-		//router_variant->color = new Helper::HSVRGBAColor();
+		//router_variant->color = new HSVRGBAColor();
 		//router_variant->color->set_color_RGBA(0.8f, 1.0f, 0.9f, 1.0f);
 
 		//router_variant->texture = NS_EGraphicCore::load_from_textures_folder("loot_version_soft_focus");
@@ -6098,7 +6170,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		router_variant->localisation_for_select_window = local_text;
 		//----------------------------------------------------------------------
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.6f, 1.0f, 0.8f, 1.0f);
 
 		router_variant->texture = NS_DefaultGabarites::texture_loot_version_focus;
@@ -6161,7 +6233,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Изменить визуал";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.6f, 1.0f, 0.8f, 1.0f);
 
 	router_variant->texture = NS_DefaultGabarites::texture_show_hide_visual_editor;
@@ -6179,7 +6251,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Скрыть";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.6f, 1.0f, 0.8f, 1.0f);
 
 	router_variant->texture = NS_DefaultGabarites::texture_show_hide_visual_editor_deactivate;
@@ -6491,7 +6563,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 
 
-	//	switcher
+	//	switcher CUSTOM SOUND
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_button = new EntityButton();
 	jc_button->make_default_bool_switcher_button
@@ -6544,7 +6616,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Опциональный";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.65f, 0.5f, 0.4f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6561,7 +6633,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Обязательный";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.6f, 1.0f, 0.8f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6603,7 +6675,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 
 
-	//	switcher
+	//	switcher GAME_SOUND
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_button = new EntityButton();
 	jc_button->make_default_bool_switcher_button
@@ -6686,7 +6758,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Не позиционный";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.65f, 0.5f, 0.4f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6701,7 +6773,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Позиционный";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.8f, 0.9f, 0.6f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6753,7 +6825,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Звук дропа: обычный";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6770,7 +6842,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Звук дропа: выключен";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.8f, 0.5f, 0.25f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6787,7 +6859,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Звук дропа: включён";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.25f, 0.8f, 0.5f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6804,7 +6876,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Звук дропа:\nВыключен при условиях";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.8f, 0.5f, 0.25f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6821,7 +6893,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Звук дропа:\nВключён при условиях";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.25f, 0.8f, 0.5f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6875,7 +6947,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Красный";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.2f, 0.1f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6890,7 +6962,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Зелёный";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.25f, 1.0f, 0.4f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6905,7 +6977,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Синий";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.25f, 0.4f, 1.0f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6920,7 +6992,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Коричневый";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6935,7 +7007,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Белый";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 1.0f, 1.0f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6950,7 +7022,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Жёлтый";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 1.0f, 0.25f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6965,7 +7037,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Голубой";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.25f, 0.8f, 1.0f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6980,7 +7052,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Серый";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.55f, 0.55f, 0.55f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -6995,7 +7067,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Оранжевый";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.65f, 0.1f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7010,7 +7082,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Розовый";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.5f, 1.0f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7025,7 +7097,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Фиолетовый";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.8f, 0.1f, 0.9f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7036,7 +7108,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		minimap_cosmetic_segment->button_list.push_back(button_variant_FB_router);
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		//	switcher
+		//	switcher MINIMAP ICON
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		jc_button = new EntityButton();
 		jc_button->make_default_bool_switcher_button
@@ -7091,7 +7163,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Большой";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7106,7 +7178,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Средний";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.8f, 0.7f, 0.6f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7121,7 +7193,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text->localisations[NSW_localisation_RU] = "Маленький";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(0.6f, 0.55f, 0.5f, 1.0f);
 
 		button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7173,7 +7245,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_circle;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7192,7 +7264,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_diamond;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7211,7 +7283,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_hexagon;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7228,7 +7300,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_square;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7245,7 +7317,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_star;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7262,7 +7334,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_triangle;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7279,7 +7351,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_cross;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7296,7 +7368,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_moon;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7313,7 +7385,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_raindrop;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7330,7 +7402,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_kite;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7347,7 +7419,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_pentagon;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7366,7 +7438,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		router_variant->texture = NS_DefaultGabarites::texture_minimap_shape_upside_down_house;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.60f, 1.0f);
 
 		button_variant_router->router_variant_list.push_back(router_variant);
@@ -7425,8 +7497,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	for (int clr = 0; clr < 3; clr++)
 	{
 		// // // // // // //// // // // // // //// // // // // // //
-		//Helper::HRA_color_collection* HRA_collection = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
-		Helper::HSVRGBAColor* HRA_color = new Helper::HSVRGBAColor();
+		//HRA_color_collection* HRA_collection = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
+		HSVRGBAColor* HRA_color = new HSVRGBAColor();
 		HRA_color->h = rand() % 360;
 		HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
 		HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
@@ -7436,31 +7508,31 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 
 
-		jc_button = EntityButton::create_named_color_button
+		EntityButtonColorButton* color_button = EntityButton::create_named_color_button
 		(
 			new ERegionGabarite(120.0f, 22.0f),
 			cosmetic_segment,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			ltext[clr].localisations[NSW_localisation_EN],
+			ltext[clr],
 			nullptr,
 			HRA_color,
 			ColorButtonMode::CBM_OPEN_WINDOW
 		);
-		Entity::get_last_text_area(jc_button)->localisation_text = ltext[clr];
-		jc_button->suppressor = &whole_filter_block_group->color_check[clr];
+		Entity::get_last_text_area(color_button)->localisation_text = ltext[clr];
+		color_button->suppressor = &whole_filter_block_group->color_check[clr];
 
-		whole_filter_block_group->pointer_to_HRA_color[clr] = &((EDataContainer_Button_StoreColor*)(EntityButton::get_last_custom_data(jc_button)->data_container))->stored_color;
+		whole_filter_block_group->pointer_to_HRA_color[clr] = &color_button->stored_color;
 
-		cosmetic_segment->button_list.push_back(jc_button);
+		cosmetic_segment->button_list.push_back(color_button);
 
 		bool*
-			target_bool = &whole_filter_block_group->color_check[clr];
-		whole_filter_block_group->pointer_to_color_button[clr] = jc_button;
+		target_bool = &whole_filter_block_group->color_check[clr];
+		whole_filter_block_group->pointer_to_color_button[clr] = color_button;
 
 
 
-
+		//COLOR CHECKER
 		jc_button = new EntityButton();
 		jc_button->make_default_bool_switcher_button
 		(
@@ -7487,15 +7559,15 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		cosmetic_segment,
 		EFont::font_list[0],
 		EGUIStyle::active_style,
-		"Font size"
+		"Размер"
 	);
 	jc_button->suppressor = &whole_filter_block_group->text_size_bool;
 
 	last_text_area = Entity::get_last_text_area(jc_button);
 
 	last_text_area->localisation_text.base_name = "SetFontSize";
-	last_text_area->localisation_text.localisations[NSW_localisation_EN] = "Font size";
-	last_text_area->localisation_text.localisations[NSW_localisation_RU] = "Размер текста";
+	last_text_area->localisation_text.localisations[NSW_localisation_EN] = "Size";
+	last_text_area->localisation_text.localisations[NSW_localisation_RU] = "Размер";
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_filter_block_group->text_size;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
@@ -7512,6 +7584,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	// // // // // // //// // // // // // //// // // // // // //
 	bool* target_bool = &whole_filter_block_group->text_size_bool;
 
+	//TEXT SIZE
 	jc_button = new EntityButton();
 	jc_button->make_default_bool_switcher_button
 	(
@@ -7567,7 +7640,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Красный";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(1.0f, 0.2f, 0.1f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7582,7 +7655,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Зелёный";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.25f, 1.0f, 0.4f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7597,7 +7670,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Синий";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.25f, 0.4f, 1.0f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7612,7 +7685,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Коричневый";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7627,7 +7700,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Белый";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(1.0f, 1.0f, 1.0f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7642,7 +7715,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Жёлтый";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(1.0f, 1.0f, 0.25f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7657,7 +7730,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Голубой";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.25f, 0.8f, 1.0f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7672,7 +7745,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Серый";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.55f, 0.55f, 0.55f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7687,7 +7760,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Оранжевый";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(1.0f, 0.65f, 0.1f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7702,7 +7775,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Розовый";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(1.0f, 0.5f, 1.0f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7717,7 +7790,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Фиолетовый";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.8f, 0.1f, 0.9f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7732,6 +7805,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	// // // // // // //// // // // // // //// // // // // // //
 	target_bool = &whole_filter_block_group->ray_suppressor;
 
+	//RAY SUPPRESSOR
 	jc_button = new EntityButton();
 	jc_button->make_default_bool_switcher_button
 	(
@@ -7788,7 +7862,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Постоянный";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7803,7 +7877,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	local_text->localisations[NSW_localisation_RU] = "Временный";
 	router_variant->localisation = local_text;
 
-	router_variant->color = new Helper::HSVRGBAColor();
+	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(0.6f, 0.6f, 0.6f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
@@ -7925,7 +7999,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 	std::string condition_text = "";
 	//std::string value_array[512] = {};
 
-	Helper::HSVRGBAColor* target_HRA_color;
+	HSVRGBAColor* target_HRA_color;
 	bool* target_color_bool;
 
 	GameItemAttribute* matched_filter_block_attribute = nullptr;
@@ -8141,7 +8215,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										if (Entity::get_last_text_area(whole_block_container->pointer_to_color_button[b])->localisation_text.base_name == matched_filter_block_attribute->localisation.base_name)
 										{
 											//matched_button = whole_block_container->pointer_to_color_button[b];
-											target_HRA_color = ((EDataContainer_Button_StoreColor*)(Entity::get_last_custom_data(whole_block_container->pointer_to_color_button[b])->data_container))->stored_color;
+											target_HRA_color = whole_block_container->pointer_to_color_button[b]->stored_color;
 											target_color_bool = &whole_block_container->color_check[b];
 										}
 									}
@@ -8381,7 +8455,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 												EntityButton::get_last_text_area(last_non_listed_line->target_button_with_value)->stored_color = *qv->color;
 												EntityButton::get_last_text_area(last_non_listed_line->target_button_with_value)->color = *qv->color;
 
-												EntityButton::get_last_text_area(last_non_listed_line->target_button_with_value)->change_text(qv->localisation->localisations[NSW_localisation_EN]);
+												EntityButton::get_last_text_area(last_non_listed_line->target_button_with_value)->change_text(qv->localisation->localisations[ELocalisationText::active_localisation]);
 											}
 										}
 									}
@@ -8465,7 +8539,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									l_text.localisations[NSW_localisation_RU] = buffer_text;
 
 									Entity::get_last_text_area(wide_button)->localisation_text = l_text;
-									Entity::get_last_text_area(wide_button)->change_text(l_text.localisations[NSW_localisation_EN]);
+									Entity::get_last_text_area(wide_button)->change_text(l_text.localisations[ELocalisationText::active_localisation]);
 
 								}
 							}
@@ -8783,1877 +8857,72 @@ void EWindowMain::register_loot_simulator_patterns()
 
 
 
-	//		ALL CURRENCIES
+	register_pattern_all_currencies();
+	register_pattern_basic_currencies();
+	register_pattern_trash_currencies();
+	register_pattern_good_currencies();
+	register_pattern_rare_currencies();
+	register_pattern_tainted_currencies();
+	register_pattern_currencies_shard();
+	register_pattern_oils_and_catalysts();
+
+	register_pattern_top_tier_bases();
+	register_pattern_all_equip_low_level();
+	register_pattern_all_equip_high_level();
+
+	register_pattern_delve_items();
+	register_pattern_breach_items();
+
+	register_pattern_maps();
+	register_pattern_all_map_fragments();
+	register_pattern_scarabs();
+	register_pattern_set_fragment();
+
+	register_pattern_flasks();
+
+	register_pattern_divinations_trash();
+	register_pattern_divinations_cheap();
+	register_pattern_divinations_useful();
+	register_pattern_divinations_expensive();
+
+	register_pattern_boss_loot();
+
+}
+
+void EWindowMain::register_pattern_boss_loot()
+{
+	//		BOSS ITEMS
 	{
 
 		LootSimulatorPattern*
 			loot_simulator_pattern = new LootSimulatorPattern;
 
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All currencies";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Вся валюта";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_all_basic_currencies");
-
-		/////////////////////////////			ITEM GENERATOR (ALL CURRENCY)			/////////////////////////////////////////////
-		GameItemGenerator*
-			game_item_generator = new GameItemGenerator();
-		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Boss loot";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Лут с боссов";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_pinnacle_boss_loot");
 
 
-
-
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
-		tag_filter->target_tag = "base class";
-		tag_filter->suitable_values.push_back("Stackable Currency");
-		tag_filter->suitable_values.push_back("Currency");
-		game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-		tag_filter = new LootSimulatorTagFilter;
-		tag_filter->target_tag = "item tag";
-		tag_filter->banned_tags.push_back("Deleted");
-		game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-		/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
-		{
-			//		value
-			GameAttributeGeneratorQuantity*
-				value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-			//		parameters
-			value_generator->min_value = 1;
-			value_generator->max_value = 20;
-			value_generator->generator_pow = 3.0f;
-
-			game_item_generator->attribute_generators_list.push_back(value_generator);
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
-	}
-
-
-
-	//		BASIC CURRENCY
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Basic currency";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Базовая валюта";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_all_basic_currencies");
-
-		/////////////////////////////			ITEM GENERATOR (ALL BASIC CURRENCY)			/////////////////////////////////////////////
-		GameItemGenerator*
-			game_item_generator = new GameItemGenerator();
-		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
-		tag_filter->target_tag = "item tag";
-		tag_filter->suitable_values.push_back("Basic currency");
-		game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-		tag_filter = new LootSimulatorTagFilter;
-		tag_filter->target_tag = "item tag";
-		tag_filter->suitable_values.push_back("World drop");
-		game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-		tag_filter = new LootSimulatorTagFilter;
-		tag_filter->target_tag = "item tag";
-		tag_filter->banned_tags.push_back("Deleted");
-		game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-		/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
-		{
-			//		value
-			GameAttributeGeneratorQuantity*
-				value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-			//		parameters
-			value_generator->min_value = 1;
-			value_generator->max_value = 20;
-			value_generator->generator_pow = 3.0f;
-
-			game_item_generator->attribute_generators_list.push_back(value_generator);
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
-	}
-
-
-
-	//		TRASH CURRENCY
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Cheap currency";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Дешёвая валюта";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_trash_currencies");
-
-
-		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		/////////////////////////////			ITEM GENERATOR(UNIQUE BOSS LOOT)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 4;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Trash");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Basic currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorQuantity*
-					value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 4;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY BIG STACK)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 4;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Trash");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Basic currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorQuantity*
-					value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-				//		parameters
-				value_generator->min_value = 5;
-				value_generator->max_value = 20;
-				value_generator->generator_pow = 0.5f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
-	}
-
-	//			GOOD CURRENCY
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Good currency";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Ценная валюта";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_good_currency");
-
-
-		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 4;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Common");
-			tag_filter->suitable_values.push_back("Moderate");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Basic currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorQuantity*
-					value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 20;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-	}
-
-	//		RARE CURRENCY
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Rare currency";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Редкая валюта";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_rare_currency");
-
-
-		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 3;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Rare");
-			tag_filter->suitable_values.push_back("Expensive");
-			tag_filter->suitable_values.push_back("Very expensive");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			//tag_filter = new LootSimulatorTagFilter;
-			//tag_filter->target_tag = "item tag";
-			//tag_filter->suitable_values.push_back("Basic currency");
-			//game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorQuantity*
-					value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 20;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-	}
-
-	//		TAINTED CURRENCY
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Tainted currency";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Порочная валюта";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/TaintedOrbofFusing");
-
-
-		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 3;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			//tag_filter = new LootSimulatorTagFilter;
-			//tag_filter->target_tag = "worth";
-			//tag_filter->suitable_values.push_back("Rare");
-			//tag_filter->suitable_values.push_back("Expensive");
-			//tag_filter->suitable_values.push_back("Very expensive");
-			//game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Tainted currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorQuantity*
-					value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 20;
-				value_generator->generator_pow = 3.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-	}
-
-
-	//		CURRENCY SHARD
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Currency shard";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Осколки валют";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Annulment_Shard_inventory_icon");
-
-
-		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 3;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			//tag_filter = new LootSimulatorTagFilter;
-			//tag_filter->target_tag = "worth";
-			//tag_filter->suitable_values.push_back("Rare");
-			//tag_filter->suitable_values.push_back("Expensive");
-			//tag_filter->suitable_values.push_back("Very expensive");
-			//game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Currency shard");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorQuantity*
-					value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 20;
-				value_generator->generator_pow = 3.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-	}
-
-
-	//		OILS AND CATALYSTS
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Oils and catlysts";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Масла и катализаторы";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_oils_and_catalysts");
-
-
-		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 3;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Oil item");
-			tag_filter->suitable_values.push_back("Catalyst item");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorQuantity*
-					value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 20;
-				value_generator->generator_pow = 3.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-	}
-
-
-	//		TOP TIER BASES
-	{
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Top tier bases";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Хорошие базы";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_good_bases");
-
-		/////////////////////////////			ITEM GENERATOR (GLOVES HELMETS BOOTS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Top tier base");
-			tag_filter->suitable_values.push_back("Rare base");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Gloves");
-			tag_filter->suitable_values.push_back("Helmets");
-			tag_filter->suitable_values.push_back("Boots");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.5f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED]	= 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN]	= 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE]	= 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (BODY ARMOUR)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Top tier base");
-			tag_filter->suitable_values.push_back("Rare base");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Rings");
-			tag_filter->suitable_values.push_back("Amulets");
-			tag_filter->suitable_values.push_back("Belts");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.5f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (BODY ARMOUR)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Top tier base");
-			tag_filter->suitable_values.push_back("Rare base");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Body Armours");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.5f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 6;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 6;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED]	= 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN]	= 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE]	= 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
-	}
-
-	//		ALL EQUIP (low level)
-	{
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All equipable(low level)";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Вся экиперовка(низкий уровень)";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_good_bases");
-
-		/////////////////////////////			ITEM GENERATOR (ALL GLOVES)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Gloves");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 75;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (ALL BOOTS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Boots");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 75;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-			
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (ALL HELMETS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("HELMETS");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 75;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-			
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-
-
-		/////////////////////////////			ITEM GENERATOR (ALL BODY AROURS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Body Armours");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 75;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-			
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 4;
-				value_generator->sockets_max_value = 6;
-
-				value_generator->links_min = 4;
-				value_generator->links_max = 6;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (JEWELRY)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
-			game_item_generator->generations_count = 3;
-
-
-			LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Rings");
-			tag_filter->suitable_values.push_back("Amulets");
-			tag_filter->suitable_values.push_back("Belts");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			tag_filter->banned_tags.push_back("Expensive base for unique");
-			tag_filter->banned_tags.push_back("Rare base");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 75;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
-	}
-
-
-
-	//		ALL EQUIP (high level)
-	{
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All equipable(high level)";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Вся экепировка(высокий уровень)";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_good_bases");
-
-		/////////////////////////////			ITEM GENERATOR (ALL GLOVES)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Gloves");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 75;
-				value_generator->max_value = 83;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-			
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (ALL BOOTS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Boots");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 75;
-				value_generator->max_value = 83;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (ALL HELMETS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("HELMETS");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 75;
-				value_generator->max_value = 83;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-
-
-		/////////////////////////////			ITEM GENERATOR (ALL BODY AROURS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Body Armours");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 75;
-				value_generator->max_value = 83;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 5;
-				value_generator->sockets_max_value = 6;
-
-				value_generator->links_min = 4;
-				value_generator->links_max = 6;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (JEWELRY)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
-			game_item_generator->generations_count = 3;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Rings");
-			tag_filter->suitable_values.push_back("Amulets");
-			tag_filter->suitable_values.push_back("Belts");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			tag_filter->banned_tags.push_back("Expensive base for unique");
-			tag_filter->banned_tags.push_back("Rare base");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 75;
-				value_generator->max_value = 83;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->influence_chance = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
-	}
-
-
-	//		DELVE ITEMS
-	{
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Delve items";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Предметы шахты";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_good_bases");
-
-		/////////////////////////////			ITEM GENERATOR (DELVE ITEM)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Delve item");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-		}
-
-
-		/////////////////////////////			ITEM GENERATOR (BODY ARMOUR WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
 			game_item_generator->generations_count = 1;
-			game_item_generator->filtered_by_exact_name = "Delve body armour";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 
-				//		parameters
-				value_generator->exact_values_list.push_back("Body armour");
 
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Pinnacle boss loot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Piece of set");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
 			{
@@ -10663,7 +8932,7 @@ void EWindowMain::register_loot_simulator_patterns()
 					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
 
 				//		parameters
-				value_generator->min_value = 68;
+				value_generator->min_value = 80;
 				value_generator->max_value = 86;
 				value_generator->generator_pow = 1.0f;
 
@@ -10672,1109 +8941,261 @@ void EWindowMain::register_loot_simulator_patterns()
 
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
+
 				//		value
 				GameAttributeGeneratorRarity*
 					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
-
 				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 2;
-				value_generator->generator_pow = 1.0f;
+				value_generator->min_value = 3;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
-
-			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Subterranean");
-				value_generator->exact_values_list.push_back("of the Underground");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
 
-		/////////////////////////////			ITEM GENERATOR (GLOVE WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
+		/////////////////////////////			ITEM GENERATOR(MAP FRAGMENTS)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
-
 			game_item_generator->generations_count = 1;
-			game_item_generator->filtered_by_exact_name = "Delve glove";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Gloves");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 2;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Subterranean");
-				value_generator->exact_values_list.push_back("of the Underground");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-
-
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Pinnacle boss loot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Piece of set");
+			tag_filter->suitable_values.push_back("Atlas Region Upgrade Item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
 		}
-
-		/////////////////////////////			ITEM GENERATOR (HELMET WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 1;
-			game_item_generator->filtered_by_exact_name = "Delve Helmet";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Helmets");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 2;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Subterranean");
-				value_generator->exact_values_list.push_back("of the Underground");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		/////////////////////////////			ITEM GENERATOR (BOOTS WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 1;
-			game_item_generator->filtered_by_exact_name = "Delve boots";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Boots");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 2;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Subterranean");
-				value_generator->exact_values_list.push_back("of the Underground");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-
-		/////////////////////////////			ITEM GENERATOR (RING WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 1;
-			game_item_generator->filtered_by_exact_name = "Delve ring";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Rings");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 2;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Subterranean");
-				value_generator->exact_values_list.push_back("of the Underground");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		/////////////////////////////			ITEM GENERATOR (BELTS WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 1;
-			game_item_generator->filtered_by_exact_name = "Delve belt";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Rings");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 2;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Subterranean");
-				value_generator->exact_values_list.push_back("of the Underground");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		/////////////////////////////			ITEM GENERATOR (AMULETS WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 1;
-			game_item_generator->filtered_by_exact_name = "Delve amulet";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Amulets");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 2;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Subterranean");
-				value_generator->exact_values_list.push_back("of the Underground");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		/////////////////////////////			ITEM GENERATOR (SPECIAL EXPLICIT)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 1;
-			game_item_generator->filtered_by_exact_name = "Delve item";
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 2;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Subterranean");
-				value_generator->exact_values_list.push_back("of the Underground");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-
 
 
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
 	}
+}
 
-	//		MAPS
+void EWindowMain::register_pattern_divinations_expensive()
+{
+	//		DIVINATIONS: Expensive
 	{
 
 		LootSimulatorPattern*
 			loot_simulator_pattern = new LootSimulatorPattern;
 
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Maps";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Карты";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_maps");
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Divinations: expensive";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: дорогие";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
 
 		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
 
-			game_item_generator->generations_count = 16;
-			game_item_generator->filtered_by_exact_name = "Random Map";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Maps");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 0.8f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 16;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		/////////////////////////////			ITEM GENERATOR (MAP WITH INFLUENCE)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 16;
-			game_item_generator->filtered_by_exact_name = "Guard Map";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Maps");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 1.5f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 16;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorMapInfluence*
-					value_generator = new GameAttributeGeneratorMapInfluence("HasInfluence");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		/////////////////////////////			ITEM GENERATOR (FRACTURED MAPS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 8;
-			game_item_generator->filtered_by_exact_name = "Fractured map";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Maps");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 1.5f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 16;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			FRACTURED			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorBoolFlag*
-					value_generator = new GameAttributeGeneratorBoolFlag("FracturedItem");
-
-				//		parameters
-				value_generator->chance_to_activate = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		/////////////////////////////			ITEM GENERATOR (CORRUPTED MAPS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 8;
-			game_item_generator->filtered_by_exact_name = "Corrupted map";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Maps");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 1.5f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 16;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			FRACTURED			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorBoolFlag*
-					value_generator = new GameAttributeGeneratorBoolFlag("Corrupted");
-
-				//		parameters
-				value_generator->chance_to_activate = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		/////////////////////////////			ITEM GENERATOR (ENCHANTED MAPS)			/////////////////////////////////////////////
-
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 8;
-			game_item_generator->filtered_by_exact_name = "Enchanted map";
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				value_generator->exact_values_list.push_back("Maps");
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 1.5f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 16;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			FRACTURED			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorBoolFlag*
-					value_generator = new GameAttributeGeneratorBoolFlag("AnyEnchantment");
-
-				//		parameters
-				value_generator->chance_to_activate = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		/////////////////////////////			ITEM GENERATOR (SYNTHESISED MAPS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 3;
-			game_item_generator->filtered_by_exact_name = "Synthesised Map";
-
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 68;
-				value_generator->max_value = 86;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 3;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
-
-
-				//		parameters
-				value_generator->min_value = 14;
-				value_generator->max_value = 16;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			CORRUPTED			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorBoolFlag*
-					value_generator = new GameAttributeGeneratorBoolFlag("Corrupted");
-
-				//		parameters
-				value_generator->chance_to_activate = 0.4f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-	}
-
-
-	
-	
-	//		ALL MAP FRAGMENTS
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All map fragments";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Все фрагменты карт";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Fragment_of_Knowledge");
-
-
-		/////////////////////////////			ITEM GENERATOR			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
 			game_item_generator->generations_count = 1;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
 
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Map Fragments");
+			tag_filter->suitable_values.push_back("Divination Card");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Expensive");
+			tag_filter->suitable_values.push_back("Very expensive");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "item tag";
 			tag_filter->banned_tags.push_back("Deleted");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
 
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-	}
 
-	//		SCARABS
+
+
+
+
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_divinations_useful()
+{
+	//		DIVINATIONS: Useful
 	{
 
 		LootSimulatorPattern*
 			loot_simulator_pattern = new LootSimulatorPattern;
 
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Scarabs";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Скарабеи";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Scarab");
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Divinations: moderate";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: ценные";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
 
-
-		/////////////////////////////			ITEM GENERATOR			/////////////////////////////////////////////
+		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
+
 			game_item_generator->generations_count = 1;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
 
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Scarab item");
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Divination Card");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Moderate");
+			tag_filter->suitable_values.push_back("Rare");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "item tag";
 			tag_filter->banned_tags.push_back("Deleted");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
 
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-	}
 
-	//		SET FRAGMENTS
+
+
+
+
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_divinations_cheap()
+{
+	//		DIVINATIONS: CHEAP
 	{
 
 		LootSimulatorPattern*
 			loot_simulator_pattern = new LootSimulatorPattern;
 
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Set fragment";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Фрагмент проходки";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/UberElderSet");
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Divinations: common";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: дешёвые";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
 
-
-		/////////////////////////////			ITEM GENERATOR			/////////////////////////////////////////////
+		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
+
 			game_item_generator->generations_count = 1;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
 
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Piece of set");
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Divination Card");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Common");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "item tag";
 			tag_filter->banned_tags.push_back("Deleted");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
 
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-	}
 
+
+
+
+
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_divinations_trash()
+{
+	//		DIVINATIONS: TRASH
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Divinations: trash";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: мусор";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
+
+		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 1;
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Divination Card");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Trash");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+		}
+
+
+
+
+
+
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_flasks()
+{
 	//		FLASKS
 	{
 
@@ -11926,233 +9347,166 @@ void EWindowMain::register_loot_simulator_patterns()
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
 	}
+}
 
-	//		DIVINATIONS: TRASH
+void EWindowMain::register_pattern_set_fragment()
+{
+	//		SET FRAGMENTS
 	{
 
 		LootSimulatorPattern*
 			loot_simulator_pattern = new LootSimulatorPattern;
 
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Divinations: trash";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: мусор";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Set fragment";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Фрагмент проходки";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/UberElderSet");
+
+
+		/////////////////////////////			ITEM GENERATOR			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Piece of set");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
+void EWindowMain::register_pattern_scarabs()
+{
+	//		SCARABS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Scarabs";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Скарабеи";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Scarab");
+
+
+		/////////////////////////////			ITEM GENERATOR			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Scarab item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
+void EWindowMain::register_pattern_all_map_fragments()
+{
+	//		ALL MAP FRAGMENTS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All map fragments";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Все фрагменты карт";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Fragment_of_Knowledge");
+
+
+		/////////////////////////////			ITEM GENERATOR			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Map Fragments");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
+void EWindowMain::register_pattern_maps()
+{
+	//		MAPS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Maps";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Карты";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_maps");
 
 		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
 
-			game_item_generator->generations_count = 1;
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Card");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Trash");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-		}
-
-
-
-
-
-
-
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
-	}
-
-	//		DIVINATIONS: CHEAP
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Divinations: common";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: дешёвые";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
-
-		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 1;
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Card");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Common");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-
-
-
-
-
-
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
-	}
-
-	//		DIVINATIONS: Useful
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Divinations: moderate";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: ценные";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
-
-		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 1;
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Card");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Moderate");
-			tag_filter->suitable_values.push_back("Rare");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-
-
-
-
-
-
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
-	}
-
-	//		DIVINATIONS: Expensive
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Divinations: expensive";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: дорогие";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
-
-		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 1;
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Card");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Expensive");
-			tag_filter->suitable_values.push_back("Very expensive");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-
-
-
-
-
-
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
-	}
-
-
-
-	//		BOSS ITEMS
-	{
-
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Boss loot";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Лут с боссов";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Hybrid_flask");
-
-
-		/////////////////////////////			ITEM GENERATOR(UNIQUE BOSS LOOT)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 1;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Pinnacle boss loot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Piece of set");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
+			game_item_generator->generations_count = 16;
+
+			ELocalisationText l_text;
+			l_text.base_name = "Random Map";
+			l_text.localisations[NSW_localisation_EN] = "Random Map";
+			l_text.localisations[NSW_localisation_RU] = "Случайная карта";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Maps";
+				l_text.localisations[NSW_localisation_EN] = "Maps";
+				l_text.localisations[NSW_localisation_RU] = "Карты";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
 
 			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
 			{
@@ -12162,7 +9516,7 @@ void EWindowMain::register_loot_simulator_patterns()
 					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
 
 				//		parameters
-				value_generator->min_value = 80;
+				value_generator->min_value = 68;
 				value_generator->max_value = 86;
 				value_generator->generator_pow = 1.0f;
 
@@ -12171,21 +9525,1205 @@ void EWindowMain::register_loot_simulator_patterns()
 
 			/////////////////////////////			RARITY			/////////////////////////////////////////////
 			{
-
 				//		value
 				GameAttributeGeneratorRarity*
 					value_generator = new GameAttributeGeneratorRarity("Rarity");
 
+
 				//		parameters
-				value_generator->min_value = 3;
+				value_generator->min_value = 0;
 				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
+				value_generator->generator_pow = 0.8f;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
+
+			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 16;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
 
-		/////////////////////////////			ITEM GENERATOR(MAP FRAGMENTS)			/////////////////////////////////////////////
+		/////////////////////////////			ITEM GENERATOR (MAP WITH INFLUENCE)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 16;
+			ELocalisationText l_text;
+			l_text.base_name = "Guard map";
+			l_text.localisations[NSW_localisation_EN] = "Guard map";
+			l_text.localisations[NSW_localisation_RU] = "Карта хранителя";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Maps";
+				l_text.localisations[NSW_localisation_EN] = "Maps";
+				l_text.localisations[NSW_localisation_RU] = "Карты";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 1.5f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 16;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorMapInfluence*
+					value_generator = new GameAttributeGeneratorMapInfluence("HasInfluence");
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			ITEM GENERATOR (FRACTURED MAPS)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 8;
+			ELocalisationText l_text;
+			l_text.base_name = "Fractured Map";
+			l_text.localisations[NSW_localisation_EN] = "Fractured Map";
+			l_text.localisations[NSW_localisation_RU] = "Расколотая карта";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Maps";
+				l_text.localisations[NSW_localisation_EN] = "Maps";
+				l_text.localisations[NSW_localisation_RU] = "Карты";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 1.5f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 16;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			FRACTURED			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorBoolFlag*
+					value_generator = new GameAttributeGeneratorBoolFlag("FracturedItem");
+
+				//		parameters
+				value_generator->chance_to_activate = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			ITEM GENERATOR (CORRUPTED MAPS)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 8;
+			
+			ELocalisationText l_text;
+			l_text.base_name = "Corrupted Map";
+			l_text.localisations[NSW_localisation_EN] = "Corrupted Map";
+			l_text.localisations[NSW_localisation_RU] = "Осквернённая карта";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Maps";
+				l_text.localisations[NSW_localisation_EN] = "Maps";
+				l_text.localisations[NSW_localisation_RU] = "Карты";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 1.5f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 16;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			FRACTURED			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorBoolFlag*
+					value_generator = new GameAttributeGeneratorBoolFlag("Corrupted");
+
+				//		parameters
+				value_generator->chance_to_activate = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			ITEM GENERATOR (ENCHANTED MAPS)			/////////////////////////////////////////////
+
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 8;
+
+			ELocalisationText l_text;
+			l_text.base_name = "Enchanted Map";
+			l_text.localisations[NSW_localisation_EN] = "Enchanted Map";
+			l_text.localisations[NSW_localisation_RU] = "Зачарованная карта";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Maps";
+				l_text.localisations[NSW_localisation_EN] = "Maps";
+				l_text.localisations[NSW_localisation_RU] = "Карты";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 1.5f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 16;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			FRACTURED			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorBoolFlag*
+					value_generator = new GameAttributeGeneratorBoolFlag("AnyEnchantment");
+
+				//		parameters
+				value_generator->chance_to_activate = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			ITEM GENERATOR (SYNTHESISED MAPS)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 3;
+
+			ELocalisationText l_text;
+			l_text.base_name = "Synthesised Map";
+			l_text.localisations[NSW_localisation_EN] = "Synthesised Map";
+			l_text.localisations[NSW_localisation_RU] = "Синтезированная карта";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 3;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
+
+
+				//		parameters
+				value_generator->min_value = 14;
+				value_generator->max_value = 16;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			CORRUPTED			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorBoolFlag*
+					value_generator = new GameAttributeGeneratorBoolFlag("Corrupted");
+
+				//		parameters
+				value_generator->chance_to_activate = 0.4f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
+void EWindowMain::register_pattern_delve_items()
+{
+	//		DELVE ITEMS
+	{
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Delve items";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Предметы шахты";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_delve_items");
+
+		/////////////////////////////			ITEM GENERATOR (DELVE ITEM)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Delve item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+		}
+
+
+		/////////////////////////////			ITEM GENERATOR (BODY ARMOUR WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 1;
+			ELocalisationText l_text;
+			l_text.base_name = "Delve body armour";
+			l_text.localisations[NSW_localisation_EN] = "Delve body armour";
+			l_text.localisations[NSW_localisation_RU] = "Нагрудный доспех спуска";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Body armour";
+				l_text.localisations[NSW_localisation_EN] = "Body armour";
+				l_text.localisations[NSW_localisation_RU] = "Нагрудный доспех";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 2;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Subterranean";
+				l_text.localisations[NSW_localisation_EN] = "Subterranean";
+				l_text.localisations[NSW_localisation_RU] = "Подземелья";
+				value_generator->exact_values_list.push_back(l_text);
+
+				l_text.base_name = "of the Underground";
+				l_text.localisations[NSW_localisation_EN] = "of the Underground";
+				l_text.localisations[NSW_localisation_RU] = "Подземный";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			ITEM GENERATOR (GLOVE WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 1;
+			ELocalisationText l_text;
+			l_text.base_name = "Delve gloves";
+			l_text.localisations[NSW_localisation_EN] = "Delve gloves";
+			l_text.localisations[NSW_localisation_RU] = "Перчатки спуска";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Gloves";
+				l_text.localisations[NSW_localisation_EN] = "Gloves";
+				l_text.localisations[NSW_localisation_RU] = "Перчатки";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 2;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Subterranean";
+				l_text.localisations[NSW_localisation_EN] = "Subterranean";
+				l_text.localisations[NSW_localisation_RU] = "Подземелья";
+				value_generator->exact_values_list.push_back(l_text);
+
+				l_text.base_name = "of the Underground";
+				l_text.localisations[NSW_localisation_EN] = "of the Underground";
+				l_text.localisations[NSW_localisation_RU] = "Подземный";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			ITEM GENERATOR (HELMET WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 1;
+
+			ELocalisationText l_text;
+			l_text.base_name = "Delve helmet";
+			l_text.localisations[NSW_localisation_EN] = "Delve helmet";
+			l_text.localisations[NSW_localisation_RU] = "Шлем спуска";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Helmets";
+				l_text.localisations[NSW_localisation_EN] = "Helmets";
+				l_text.localisations[NSW_localisation_RU] = "Шлемы";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 2;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Subterranean";
+				l_text.localisations[NSW_localisation_EN] = "Subterranean";
+				l_text.localisations[NSW_localisation_RU] = "Подземелья";
+				value_generator->exact_values_list.push_back(l_text);
+
+				l_text.base_name = "of the Underground";
+				l_text.localisations[NSW_localisation_EN] = "of the Underground";
+				l_text.localisations[NSW_localisation_RU] = "Подземный";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			ITEM GENERATOR (BOOTS WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 1;
+
+			ELocalisationText l_text;
+			l_text.base_name = "Delve boots";
+			l_text.localisations[NSW_localisation_EN] = "Delve boots";
+			l_text.localisations[NSW_localisation_RU] = "Сапоги спуска";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Boots";
+				l_text.localisations[NSW_localisation_EN] = "Boots";
+				l_text.localisations[NSW_localisation_RU] = "Сапоги";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 2;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Subterranean";
+				l_text.localisations[NSW_localisation_EN] = "Subterranean";
+				l_text.localisations[NSW_localisation_RU] = "Подземелья";
+				value_generator->exact_values_list.push_back(l_text);
+
+				l_text.base_name = "of the Underground";
+				l_text.localisations[NSW_localisation_EN] = "of the Underground";
+				l_text.localisations[NSW_localisation_RU] = "Подземный";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+
+		/////////////////////////////			ITEM GENERATOR (RING WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 1;
+
+			ELocalisationText l_text;
+			l_text.base_name = "Delve ring";
+			l_text.localisations[NSW_localisation_EN] = "Delve ring";
+			l_text.localisations[NSW_localisation_RU] = "Кольцо спуска";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Rings";
+				l_text.localisations[NSW_localisation_EN] = "Rings";
+				l_text.localisations[NSW_localisation_RU] = "Кольца";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 2;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Subterranean";
+				l_text.localisations[NSW_localisation_EN] = "Subterranean";
+				l_text.localisations[NSW_localisation_RU] = "Подземелья";
+				value_generator->exact_values_list.push_back(l_text);
+
+				l_text.base_name = "of the Underground";
+				l_text.localisations[NSW_localisation_EN] = "of the Underground";
+				l_text.localisations[NSW_localisation_RU] = "Подземный";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			ITEM GENERATOR (BELTS WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 1;
+
+			ELocalisationText l_text;
+			l_text.base_name = "Delve belt";
+			l_text.localisations[NSW_localisation_EN] = "Delve belt";
+			l_text.localisations[NSW_localisation_RU] = "Пояс спуска";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Belts";
+				l_text.localisations[NSW_localisation_EN] = "Belts";
+				l_text.localisations[NSW_localisation_RU] = "Пояса";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 2;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Subterranean";
+				l_text.localisations[NSW_localisation_EN] = "Subterranean";
+				l_text.localisations[NSW_localisation_RU] = "Подземелья";
+				value_generator->exact_values_list.push_back(l_text);
+
+				l_text.base_name = "of the Underground";
+				l_text.localisations[NSW_localisation_EN] = "of the Underground";
+				l_text.localisations[NSW_localisation_RU] = "Подземный";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			ITEM GENERATOR (AMULETS WITH SPECIAL EXPLICIT)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 1;
+			ELocalisationText l_text;
+			l_text.base_name = "Delve amulet";
+			l_text.localisations[NSW_localisation_EN] = "Delve amulet";
+			l_text.localisations[NSW_localisation_RU] = "Амулет спуска";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Amulets";
+				l_text.localisations[NSW_localisation_EN] = "Amulets";
+				l_text.localisations[NSW_localisation_RU] = "Амулеты";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 2;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Subterranean";
+				l_text.localisations[NSW_localisation_EN] = "Subterranean";
+				l_text.localisations[NSW_localisation_RU] = "Подземелья";
+				value_generator->exact_values_list.push_back(l_text);
+
+				l_text.base_name = "of the Underground";
+				l_text.localisations[NSW_localisation_EN] = "of the Underground";
+				l_text.localisations[NSW_localisation_RU] = "Подземный";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			ITEM GENERATOR (SPECIAL EXPLICIT)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 1;
+
+			ELocalisationText l_text;
+			l_text.base_name = "Delve item";
+			l_text.localisations[NSW_localisation_EN] = "Delve item";
+			l_text.localisations[NSW_localisation_RU] = "Предмет спуска";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 2;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "Subterranean";
+				l_text.localisations[NSW_localisation_EN] = "Subterranean";
+				l_text.localisations[NSW_localisation_RU] = "Подземелья";
+				value_generator->exact_values_list.push_back(l_text);
+
+				l_text.base_name = "of the Underground";
+				l_text.localisations[NSW_localisation_EN] = "of the Underground";
+				l_text.localisations[NSW_localisation_RU] = "Подземный";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+
+
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_breach_items()
+{
+	//		BOSS ITEMS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Breach loot";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Лут с разломов";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_breach_items");
+
+
+		/////////////////////////////			ITEM GENERATOR(Breach item)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
@@ -12198,13 +10736,78 @@ void EWindowMain::register_loot_simulator_patterns()
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Pinnacle boss loot");
+			tag_filter->suitable_values.push_back("Breach item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Piece of set");
-			tag_filter->suitable_values.push_back("Atlas Region Upgrade Item");
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Piece of set");
+			tag_filter->banned_tags.push_back("Splinter item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+		}
+		
+
+		/////////////////////////////			ITEM GENERATOR(Splinters low)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Breach item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Splinter item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+			
+			/////////////////////////////			STACK SIZE			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorQuantity*
+					value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 10;
+				value_generator->generator_pow = 3.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR(Splinters high)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Breach item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Splinter item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
@@ -12212,16 +10815,1897 @@ void EWindowMain::register_loot_simulator_patterns()
 			tag_filter->banned_tags.push_back("Deleted");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
+			/////////////////////////////			STACK SIZE			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorQuantity*
+					value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+				//		parameters
+				value_generator->min_value = 10;
+				value_generator->max_value = 100;
+				value_generator->generator_pow = 3.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR(Uniques)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Breach unique item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			//GENERATORS
+			game_item_generator->add_item_level	(70,	86,		1.0f);
+			game_item_generator->add_rarity		(3,		3,		1.0f);
 		}
 
 
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
 	}
-
 }
 
-void EWindowMain::set_color_version(Helper::HSVRGBAColor* _target_color, int _selected_mode)
+void EWindowMain::register_pattern_all_equip_high_level()
+{
+	//		ALL EQUIP (high level)
+	{
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All equipable\\n(high level)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Вся экипировка\\n(высокий уровень)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_all_equip");
+
+		/////////////////////////////			ITEM GENERATOR (ALL GLOVES)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 8;
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Item slot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Gloves");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Heist base");
+			tag_filter->banned_tags.push_back("Top tier base");
+			tag_filter->banned_tags.push_back("Ritual base top");
+			tag_filter->banned_tags.push_back("Ritual base medium");
+			tag_filter->banned_tags.push_back("Ritual base low");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 75;
+				value_generator->max_value = 83;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR (ALL BOOTS)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 8;
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Item slot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Boots");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Heist base");
+			tag_filter->banned_tags.push_back("Top tier base");
+			tag_filter->banned_tags.push_back("Ritual base top");
+			tag_filter->banned_tags.push_back("Ritual base medium");
+			tag_filter->banned_tags.push_back("Ritual base low");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 75;
+				value_generator->max_value = 83;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR (ALL HELMETS)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 8;
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Item slot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("HELMETS");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Heist base");
+			tag_filter->banned_tags.push_back("Top tier base");
+			tag_filter->banned_tags.push_back("Ritual base top");
+			tag_filter->banned_tags.push_back("Ritual base medium");
+			tag_filter->banned_tags.push_back("Ritual base low");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 75;
+				value_generator->max_value = 83;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+
+
+		/////////////////////////////			ITEM GENERATOR (ALL BODY AROURS)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 8;
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Item slot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Body Armours");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Heist base");
+			tag_filter->banned_tags.push_back("Top tier base");
+			tag_filter->banned_tags.push_back("Ritual base top");
+			tag_filter->banned_tags.push_back("Ritual base medium");
+			tag_filter->banned_tags.push_back("Ritual base low");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 75;
+				value_generator->max_value = 83;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 5;
+				value_generator->sockets_max_value = 6;
+
+				value_generator->links_min = 4;
+				value_generator->links_max = 6;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR (JEWELRY)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+			game_item_generator->generations_count = 3;
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Rings");
+			tag_filter->suitable_values.push_back("Amulets");
+			tag_filter->suitable_values.push_back("Belts");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Heist base");
+			tag_filter->banned_tags.push_back("Top tier base");
+			tag_filter->banned_tags.push_back("Ritual base top");
+			tag_filter->banned_tags.push_back("Ritual base medium");
+			tag_filter->banned_tags.push_back("Ritual base low");
+			tag_filter->banned_tags.push_back("Expensive base for unique");
+			tag_filter->banned_tags.push_back("Rare base");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 75;
+				value_generator->max_value = 83;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_all_equip_low_level()
+{
+	//		ALL EQUIP (low level)
+	{
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All equipable\\n(low level)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Вся экипировка\\n(низкий уровень)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_all_equip");
+
+		/////////////////////////////			ITEM GENERATOR (ALL GLOVES)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 8;
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Item slot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Gloves");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Heist base");
+			tag_filter->banned_tags.push_back("Top tier base");
+			tag_filter->banned_tags.push_back("Ritual base top");
+			tag_filter->banned_tags.push_back("Ritual base medium");
+			tag_filter->banned_tags.push_back("Ritual base low");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 68;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR (ALL BOOTS)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 8;
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Item slot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Boots");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Heist base");
+			tag_filter->banned_tags.push_back("Top tier base");
+			tag_filter->banned_tags.push_back("Ritual base top");
+			tag_filter->banned_tags.push_back("Ritual base medium");
+			tag_filter->banned_tags.push_back("Ritual base low");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 75;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR (ALL HELMETS)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 8;
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Item slot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("HELMETS");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Heist base");
+			tag_filter->banned_tags.push_back("Top tier base");
+			tag_filter->banned_tags.push_back("Ritual base top");
+			tag_filter->banned_tags.push_back("Ritual base medium");
+			tag_filter->banned_tags.push_back("Ritual base low");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 75;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+
+
+		/////////////////////////////			ITEM GENERATOR (ALL BODY AROURS)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 8;
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Item slot");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Body Armours");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Heist base");
+			tag_filter->banned_tags.push_back("Top tier base");
+			tag_filter->banned_tags.push_back("Ritual base top");
+			tag_filter->banned_tags.push_back("Ritual base medium");
+			tag_filter->banned_tags.push_back("Ritual base low");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 75;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 4;
+				value_generator->sockets_max_value = 6;
+
+				value_generator->links_min = 4;
+				value_generator->links_max = 6;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR (JEWELRY)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+			game_item_generator->generations_count = 3;
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Rings");
+			tag_filter->suitable_values.push_back("Amulets");
+			tag_filter->suitable_values.push_back("Belts");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Heist base");
+			tag_filter->banned_tags.push_back("Top tier base");
+			tag_filter->banned_tags.push_back("Ritual base top");
+			tag_filter->banned_tags.push_back("Ritual base medium");
+			tag_filter->banned_tags.push_back("Ritual base low");
+			tag_filter->banned_tags.push_back("Expensive base for unique");
+			tag_filter->banned_tags.push_back("Rare base");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 75;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.1f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_top_tier_bases()
+{
+	//		TOP TIER BASES
+	{
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Top tier bases";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Хорошие базы";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_good_bases");
+
+		/////////////////////////////			ITEM GENERATOR (GLOVES HELMETS BOOTS)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Top tier base");
+			tag_filter->suitable_values.push_back("Rare base");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Gloves");
+			tag_filter->suitable_values.push_back("Helmets");
+			tag_filter->suitable_values.push_back("Boots");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.35f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 4;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 4;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR (BODY ARMOUR)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Top tier base");
+			tag_filter->suitable_values.push_back("Rare base");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Rings");
+			tag_filter->suitable_values.push_back("Amulets");
+			tag_filter->suitable_values.push_back("Belts");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.5f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR (BODY ARMOUR)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Top tier base");
+			tag_filter->suitable_values.push_back("Rare base");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Body Armours");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			/////////////////////////////			RARITY			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorRarity*
+					value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+
+				//		parameters
+				value_generator->min_value = 0;
+				value_generator->max_value = 3;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorMinMaxInt*
+					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+
+				//		parameters
+				value_generator->min_value = 68;
+				value_generator->max_value = 86;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorItemInfluence*
+					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+				//		parameters
+				value_generator->chance_to_generate = 0.5f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+			{
+
+				//		value
+				GameAttributeGeneratorSocketsLinksColours*
+					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+				//		parameters
+				value_generator->sockets_min_value = 1;
+				value_generator->sockets_max_value = 6;
+
+				value_generator->links_min = 1;
+				value_generator->links_max = 6;
+
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_oils_and_catalysts()
+{
+	//		OILS AND CATALYSTS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Oils and catlysts";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Масла и катализаторы";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_oils_and_catalysts");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 3;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Oil item");
+			tag_filter->suitable_values.push_back("Catalyst item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorQuantity*
+					value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 20;
+				value_generator->generator_pow = 3.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
+void EWindowMain::register_pattern_currencies_shard()
+{
+	//		CURRENCY SHARD
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Currency shard";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Осколки валют";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Annulment_Shard_inventory_icon");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 3;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			//tag_filter = new LootSimulatorTagFilter;
+			//tag_filter->target_tag = "worth";
+			//tag_filter->suitable_values.push_back("Rare");
+			//tag_filter->suitable_values.push_back("Expensive");
+			//tag_filter->suitable_values.push_back("Very expensive");
+			//game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Currency shard");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorQuantity*
+					value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 20;
+				value_generator->generator_pow = 3.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
+void EWindowMain::register_pattern_tainted_currencies()
+{
+	//		TAINTED CURRENCY
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Tainted currency";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Порочная валюта";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/TaintedOrbofFusing");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 3;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			//tag_filter = new LootSimulatorTagFilter;
+			//tag_filter->target_tag = "worth";
+			//tag_filter->suitable_values.push_back("Rare");
+			//tag_filter->suitable_values.push_back("Expensive");
+			//tag_filter->suitable_values.push_back("Very expensive");
+			//game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Tainted currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorQuantity*
+					value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 20;
+				value_generator->generator_pow = 3.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
+void EWindowMain::register_pattern_rare_currencies()
+{
+	//		RARE CURRENCY
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Rare currency";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Редкая валюта";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_rare_currency");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 3;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Rare");
+			tag_filter->suitable_values.push_back("Expensive");
+			tag_filter->suitable_values.push_back("Very expensive");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			//tag_filter = new LootSimulatorTagFilter;
+			//tag_filter->target_tag = "item tag";
+			//tag_filter->suitable_values.push_back("Basic currency");
+			//game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorQuantity*
+					value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 20;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
+void EWindowMain::register_pattern_good_currencies()
+{
+	//			GOOD CURRENCY
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Good currency";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Ценная валюта";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_good_currency");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 4;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Common");
+			tag_filter->suitable_values.push_back("Moderate");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Basic currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorQuantity*
+					value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 20;
+				value_generator->generator_pow = 1.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
+void EWindowMain::register_pattern_trash_currencies()
+{
+	//		TRASH CURRENCY
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Cheap currency";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Дешёвая валюта";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_trash_currencies");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 4;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Trash");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Basic currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorQuantity*
+					value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+				//		parameters
+				value_generator->min_value = 1;
+				value_generator->max_value = 4;
+				value_generator->generator_pow = 2.0f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY BIG STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 4;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Trash");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Basic currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorQuantity*
+					value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+				//		parameters
+				value_generator->min_value = 5;
+				value_generator->max_value = 20;
+				value_generator->generator_pow = 0.5f;
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_basic_currencies()
+{
+	//		BASIC CURRENCY
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Basic currency";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Базовая валюта";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_all_basic_currencies");
+
+		/////////////////////////////			ITEM GENERATOR (ALL BASIC CURRENCY)			/////////////////////////////////////////////
+		GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+		LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->suitable_values.push_back("Basic currency");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->suitable_values.push_back("World drop");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->banned_tags.push_back("Deleted");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+		/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
+		{
+			//		value
+			GameAttributeGeneratorQuantity*
+				value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+			//		parameters
+			value_generator->min_value = 1;
+			value_generator->max_value = 20;
+			value_generator->generator_pow = 3.0f;
+
+			game_item_generator->attribute_generators_list.push_back(value_generator);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_all_currencies()
+{
+	//		ALL CURRENCIES
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All currencies";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Вся валюта";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_all_basic_currencies");
+
+		/////////////////////////////			ITEM GENERATOR (ALL CURRENCY)			/////////////////////////////////////////////
+		GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+		LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "base class";
+		tag_filter->suitable_values.push_back("Stackable Currency");
+		tag_filter->suitable_values.push_back("Currency");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->banned_tags.push_back("Deleted");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+		/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
+		{
+			//		value
+			GameAttributeGeneratorQuantity*
+				value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+			//		parameters
+			value_generator->min_value = 1;
+			value_generator->max_value = 20;
+			value_generator->generator_pow = 3.0f;
+
+			game_item_generator->attribute_generators_list.push_back(value_generator);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::set_color_version(HSVRGBAColor* _target_color, int _selected_mode)
 {
 	// hide or ignore
 	if ((_selected_mode == 1) || (_selected_mode == 2))
@@ -12350,9 +12834,9 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 	std::string temp_rarity[] = { "Нормальный", "Магический", "Редкий", "Уникальный" };
 	EButtonGroup* target_group_for_content;
 
-	Helper::HSVRGBAColor rarity_color[4];
+	HSVRGBAColor rarity_color[4];
 
-	Helper::HSVRGBAColor temp_color;
+	HSVRGBAColor temp_color;
 
 	//normal
 	temp_color.set_color_RGBA(1.0f, 1.0f, 1.0f, 1.0f);
@@ -12377,7 +12861,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 		target_group_for_content = whole_filter_block_data->pointer_to_non_listed_segment;
 
 		EButtonGroupNonListedLine*
-			non_listed_line = new EButtonGroupNonListedLine(new ERegionGabarite(20.0f, button_height));
+		non_listed_line = new EButtonGroupNonListedLine(new ERegionGabarite(20.0f, button_height));
 		non_listed_line->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_without_slider, bgroup_default_bg);
 
 
@@ -12428,7 +12912,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 			new ERegionGabarite(200.0f, button_height),
 			non_listed_line,
 			nullptr,
-			_game_item_attribute->localisation.localisations[0]
+			_game_item_attribute->localisation.localisations[ELocalisationText::active_localisation]
 		);
 
 		jc_button->parent_filter_block = _target_filter_block;
@@ -12534,7 +13018,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 			router_variant->localisation = ltext;
 
-			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color = new HSVRGBAColor();
 			router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
 
 			rarity_button->router_variant_list.push_back(router_variant);
@@ -12548,7 +13032,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 			router_variant->localisation = ltext;
 
-			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color = new HSVRGBAColor();
 			router_variant->color->set_color_RGBA(0.2f, 0.6f, 1.6f, 1.0f);
 
 			rarity_button->router_variant_list.push_back(router_variant);
@@ -12562,7 +13046,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 			router_variant->localisation = ltext;
 
-			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color = new HSVRGBAColor();
 			router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.2f, 1.0f);
 
 			rarity_button->router_variant_list.push_back(router_variant);
@@ -12576,7 +13060,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 			router_variant->localisation = ltext;
 
-			router_variant->color = new Helper::HSVRGBAColor();
+			router_variant->color = new HSVRGBAColor();
 			router_variant->color->set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
 
 			rarity_button->router_variant_list.push_back(router_variant);
@@ -12618,6 +13102,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 		case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER:
 		{
+			//NON-LISTED GAME TTRIBUTE BOOL CHECKER
 			jc_button = new EntityButtonForFilterBlock();
 			jc_button->make_default_bool_switcher_button
 			(
@@ -12625,7 +13110,8 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 				non_listed_line,
 				EDataActionCollection::action_switch_boolean_value,
 				NS_DefaultGabarites::texture_bool_switcher_activated_box,
-				NS_DefaultGabarites::texture_bool_switcher_deactivated_box
+				NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+				nullptr
 			);
 
 			jc_button->parent_filter_block = _target_filter_block;
@@ -12710,8 +13196,8 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 		{
 		case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOR:
 		{
-			Helper::HRA_color_collection* HRA_collection = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
-			Helper::HSVRGBAColor* HRA_color = &HRA_collection->target_color;
+			HRA_color_collection* HRA_collection = Helper::registered_color_list[rand() % Helper::registered_color_list.size()];
+			HSVRGBAColor* HRA_color = &HRA_collection->target_color;
 
 
 			EntityButton* jc_button = EntityButton::create_named_color_button
@@ -12720,8 +13206,8 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 				target_group_for_content,
 				EFont::font_list[0],
 				EGUIStyle::active_style,
-				_game_item_attribute->localisation.localisations[NSW_localisation_RU],
-				HRA_collection,
+				_game_item_attribute->localisation,
+				nullptr,
 				HRA_color,
 				ColorButtonMode::CBM_OPEN_WINDOW
 			);
@@ -12829,11 +13315,11 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 
 		//auto bg_color_data = static_cast<EDataContainer_Button_StoreColor*>(Entity::get_last_custom_data(whole_block_data->pointer_to_color_button[0])->data_container);
 		//auto bg_color = bg_color_data->stored_color;
-		Helper::HSVRGBAColor temp_colors[3];
+		HSVRGBAColor temp_colors[3];
 
 		for (int i = 0; i < 3; i++)
 		{
-			temp_colors[i].set_color(static_cast<EDataContainer_Button_StoreColor*>(Entity::get_last_custom_data(whole_block_data->pointer_to_color_button[i])->data_container)->stored_color);
+			temp_colors[i].set_color(whole_block_data->pointer_to_color_button[i]->stored_color);
 		}
 		//EInputCore::logger_param("version id", version_id);
 
@@ -13273,14 +13759,14 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 		new ERegionGabarite(130.0f, 18.0f),
 		listed_group_left_side,
 		&EDataActionCollection::action_open_data_entity_filter_group,
-		"Add new item"
+		"Добавить предмет"
 	);
 
 
 	//data conatainer with filter rule (for data entity list)
 	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher*
 
-		data_store_filter_rule = new EDataContainer_Group_StoreFilterRuleForDataEntitySearcher();
+	data_store_filter_rule = new EDataContainer_Group_StoreFilterRuleForDataEntitySearcher();
 	data_store_filter_rule->filter_rule = _filter_rule;
 	data_store_filter_rule->target_action_on_click = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
@@ -13314,7 +13800,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 
 		button_variant_FB_router->make_default_router_variant_button
 		(
-			new ERegionGabarite(130.0f, 29.0f),
+			new ERegionGabarite(130.0f, 32.0f),
 			listed_group_left_side,
 			EDataActionCollection::action_rotate_variant
 		);
@@ -13353,7 +13839,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 		local_text->localisations[NSW_localisation_RU] = "Частичное совпадение";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
 
 		//router_variant->texture = NS_DefaultGabarites::texture_show_hide_visual_editor;
@@ -13371,7 +13857,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 		local_text->localisations[NSW_localisation_RU] = "Полное совпадение";
 		router_variant->localisation = local_text;
 
-		router_variant->color = new Helper::HSVRGBAColor();
+		router_variant->color = new HSVRGBAColor();
 		router_variant->color->set_color_RGBA(1.0f, 0.5f, 1.0f, 1.0f);
 
 		//router_variant->texture = NS_DefaultGabarites::texture_show_hide_visual_editor_deactivate;
@@ -13805,7 +14291,7 @@ void EButtonGroupSoundList::refresh_sound_list()
 				new ERegionGabarite(325.0f, 32.0f),
 				part_with_list,
 				&EDataActionCollection::action_invoke_button_action_in_sound_group,
-				n_sound->localisation_text.localisations[NSW_localisation_EN]
+				n_sound->localisation_text.localisations[ELocalisationText::active_localisation]
 			);
 
 			sound_button->full_path = n_sound->full_path;
@@ -13994,9 +14480,10 @@ void GameItemGenerator::generate_game_item_list(std::vector<EGameItem*>* _target
 
 
 
-
 		std::vector<EDataEntity*>*
-			target_data_entity_list = &EDataEntity::data_entity_global_list;
+		target_data_entity_list_for_game_item = &EDataEntity::data_entity_global_list;
+
+
 
 
 
@@ -14005,33 +14492,33 @@ void GameItemGenerator::generate_game_item_list(std::vector<EGameItem*>* _target
 		EGameItem*
 			game_item = nullptr;
 
-		if (filtered_by_exact_name != "")
+		if (filtered_by_exact_name.base_name != "")
 		{
 
 			//try search data entity by exact match
 			for (DataEntityNamedStruct* named_struct : EDataEntity::data_entity_named_structs)
 			{
 				int
-					index = EStringUtils::hashFunction(filtered_by_exact_name) & 0x000000000000000F;
+					index = EStringUtils::hashFunction(filtered_by_exact_name.base_name) & 0x000000000000000F;
 				index = min(index, 15);
 				index = max(index, 0);
 
 				//arr[index]++;
-				if (named_struct->name == "Game item") { target_data_entity_list = &named_struct->data_entity_list[index]; break; }
+				if (named_struct->name == "Game item") { target_data_entity_list_for_game_item = &named_struct->data_entity_list[index]; break; }
 			}
 
-			for (EDataEntity* de : *target_data_entity_list)
+			for (EDataEntity* de : *target_data_entity_list_for_game_item)
 			{
 				if
+				(
 					(
-						(
-							(DataEntityUtils::get_tag_value_by_name(0, "name EN", de) == filtered_by_exact_name)
-							||
-							(DataEntityUtils::get_tag_value_by_name(0, "base name", de) == filtered_by_exact_name)
-							)
-						&&
-						(EFilterRule::matched_by_filter_rule(de, EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM], ""))
+						(DataEntityUtils::get_tag_value_by_name(0, "name EN", de) == filtered_by_exact_name.localisations[NSW_localisation_EN])
+						||
+						(DataEntityUtils::get_tag_value_by_name(0, "base name", de) == filtered_by_exact_name.base_name)
 					)
+					&&
+					(EFilterRule::matched_by_filter_rule(de, EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM], ""))
+				)
 				{
 					for (int i = 0; i < generations_count; i++)
 					{
@@ -14070,9 +14557,9 @@ void GameItemGenerator::generate_game_item_list(std::vector<EGameItem*>* _target
 
 				for (int i = 0; i < 16; i++)
 				{
-					target_data_entity_list = &target_named_struct->data_entity_list[i];
+					target_data_entity_list_for_game_item = &target_named_struct->data_entity_list[i];
 
-					for (EDataEntity* data_entity : *target_data_entity_list)
+					for (EDataEntity* data_entity : *target_data_entity_list_for_game_item)
 					{
 						bool all_tag_filter_satisfied = true;
 						bool any_banned_tag_match = false;
@@ -14172,6 +14659,8 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 	//automatic generate basic attributes
 	if (_game_item->stored_data_entity != nullptr)
 	{
+
+
 		if (_game_item != nullptr)
 		{
 			_game_item->localised_name.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", _game_item->stored_data_entity);
@@ -14194,12 +14683,70 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 		//default attributes [BASE CLASS]
 		if (DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity) != "")
 		{
+			std::string
+			raw_class_name_in_item = DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity);
+
+			//try search data entity by exact match
+			std::vector<EDataEntity*>*
+			target_data_entity_list_for_class = &EDataEntity::data_entity_global_list;
+
+			for (DataEntityNamedStruct* named_struct : EDataEntity::data_entity_named_structs)
+			{
+				if (named_struct->name == "Base Class")
+				{
+					int
+					index = EStringUtils::hashFunction(raw_class_name_in_item) & 0x000000000000000F;
+					index = min(index, 15);
+					index = max(index, 0);
+
+					target_data_entity_list_for_class = &named_struct->data_entity_list[index];
+					
+					break;
+				}
+			}
+			ELocalisationText l_text;
+
+			bool suitable_data_entity_searched = false;
+			for (EDataEntity* d_entity : *target_data_entity_list_for_class)
+			{
+				//try get base name
+				std::string
+				class_base_name	= DataEntityUtils::get_tag_value_by_name(0, "base name", d_entity);
+
+				std::string
+				class_EN_name	= DataEntityUtils::get_tag_value_by_name(0, "name EN", d_entity);
+
+				std::string
+				class_RU_name	= DataEntityUtils::get_tag_value_by_name(0, "name RU", d_entity);
+
+				//use EN name instead
+				if (class_base_name == "") {class_base_name = class_EN_name;}
+
+				if (class_base_name == raw_class_name_in_item)
+				{
+					l_text.base_name = class_base_name;
+					l_text.localisations[NSW_localisation_EN] = class_EN_name;
+					l_text.localisations[NSW_localisation_RU] = class_RU_name;
+
+					suitable_data_entity_searched = true;
+					break;
+				}
+			}
+
+			if (!suitable_data_entity_searched)
+			{
+				l_text.base_name = raw_class_name_in_item;
+				l_text.localisations[NSW_localisation_EN] = raw_class_name_in_item;
+				l_text.localisations[NSW_localisation_RU] = raw_class_name_in_item;
+			}
+
 			EGameItemAttributeContainer
-				attribute_container;
+			attribute_container;
 
 			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_CLASS];
 			//attribute_container.attribute_value_str = DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity);
-			attribute_container.listed_value_list.push_back(DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity));
+
+			attribute_container.listed_value_list.push_back(l_text);
 
 			_game_item->attribute_container_list.push_back(attribute_container);
 
@@ -14214,7 +14761,7 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 
 			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_TYPE];
 			//attribute_container.attribute_value_str = game_item->localised_name.base_name;
-			attribute_container.listed_value_list.push_back(_game_item->localised_name.base_name);
+			attribute_container.listed_value_list.push_back(_game_item->localised_name);
 
 			_game_item->attribute_container_list.push_back(attribute_container);
 		}
@@ -14257,14 +14804,24 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 
 			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_TYPE];
 			//attribute_container.attribute_value_str = game_item->localised_name.base_name;
-			attribute_container.listed_value_list.push_back(filtered_by_exact_name);
+			ELocalisationText l_text;
+
+			l_text.base_name							= filtered_by_exact_name.base_name;
+
+			l_text.localisations[NSW_localisation_EN]	= filtered_by_exact_name.localisations[NSW_localisation_EN];
+			if (l_text.localisations[NSW_localisation_EN] == "") { l_text.localisations[NSW_localisation_EN] = filtered_by_exact_name.base_name;}
+
+			l_text.localisations[NSW_localisation_RU]	= filtered_by_exact_name.localisations[NSW_localisation_RU];
+			if (l_text.localisations[NSW_localisation_RU] == "") { l_text.localisations[NSW_localisation_RU] = filtered_by_exact_name.base_name; }
+
+
+
+			attribute_container.listed_value_list.push_back(l_text);
 
 			_game_item->attribute_container_list.push_back(attribute_container);
 
 
-			_game_item->localised_name.base_name = filtered_by_exact_name;
-			_game_item->localised_name.localisations[NSW_localisation_EN] = filtered_by_exact_name;
-			_game_item->localised_name.localisations[NSW_localisation_RU] = filtered_by_exact_name;
+			_game_item->localised_name = l_text;
 		}
 
 		{
@@ -14301,21 +14858,44 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 	}
 
 	for (GameAttributeGenerator* a_generator : attribute_generators_list)
-		if (a_generator->target_attribute != nullptr)
-		{
-			EGameItemAttributeContainer
-				attribute_container;
+	if
+	(
+		(a_generator->target_attribute != nullptr)
+		&&
+		(rand() % 100 < (int)(a_generator->chance_to_generate * 100.0f))
+	)
+	{
+		EGameItemAttributeContainer
+			attribute_container;
 
-			a_generator->target_attribute_container = &attribute_container;
-			a_generator->execute_generation(_game_item);
+		a_generator->target_attribute_container = &attribute_container;
+		a_generator->execute_generation(_game_item);
 
-			attribute_container.target_attribute = a_generator->target_attribute;
-			_game_item->attribute_container_list.push_back(attribute_container);
-		}
-		else
-		{
-			EInputCore::logger_simple_error("Cannot work with attribute container with NULL atrribute!");
-		}
+		attribute_container.target_attribute = a_generator->target_attribute;
+		_game_item->attribute_container_list.push_back(attribute_container);
+	}
+	else
+	{
+		EInputCore::logger_simple_error("Cannot work with attribute container with NULL atrribute!");
+	}
+}
+
+void GameItemGenerator::add_rarity(int _rarity_min, int _rarity_max, float _pow)
+{
+	//		value
+	GameAttributeGeneratorRarity*
+		value_generator = new GameAttributeGeneratorRarity("Rarity");
+
+	//		parameters
+	value_generator->min_value = _rarity_min;
+	value_generator->max_value = _rarity_max;
+	value_generator->generator_pow = _pow;
+
+	attribute_generators_list.push_back(value_generator);
+}
+
+void GameItemGenerator::add_item_level(int _level_min, int _level_max, float _pow)
+{
 }
 
 void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _game_item)
@@ -14472,28 +15052,22 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 
 				if (filter_block->color_check[0])
 				{
-					EDataContainer_Button_StoreColor*
-						color_container = static_cast<EDataContainer_Button_StoreColor*>(filter_block->pointer_to_color_button[0]->main_custom_data->data_container);
-					matched_bg_color = &color_container->stored_color;
+					matched_bg_color = &filter_block->pointer_to_color_button[0]->stored_color;
 					matched_bg_color_block = filter_block;
 				}
 
 				if (filter_block->color_check[1])
 				{
-					EDataContainer_Button_StoreColor*
-						color_container = static_cast<EDataContainer_Button_StoreColor*>(filter_block->pointer_to_color_button[1]->main_custom_data->data_container);
-					matched_text_color = &color_container->stored_color;
+					
+					matched_text_color = &filter_block->pointer_to_color_button[1]->stored_color;
 
-					main_text_area->set_color(color_container->stored_color);
+					main_text_area->set_color(filter_block->pointer_to_color_button[1]->stored_color);
 					matched_text_color_block = filter_block;
 				}
 
 				if (filter_block->color_check[2])
 				{
-					EDataContainer_Button_StoreColor*
-						color_container = static_cast<EDataContainer_Button_StoreColor*>(filter_block->pointer_to_color_button[2]->main_custom_data->data_container);
-
-					matched_rama_color = &color_container->stored_color;
+					matched_rama_color = &filter_block->pointer_to_color_button[2]->stored_color;
 					matched_rama_color_block = filter_block;
 				}
 
@@ -14571,7 +15145,7 @@ void LootSimulatorPattern::refresh_loot_simulator(LootSimulatorPattern* _pattern
 
 
 
-			std::string item_name = game_item->localised_name.localisations[NSW_localisation_EN];
+			std::string item_name = game_item->localised_name.localisations[ELocalisationText::active_localisation];
 			if (game_item->quantity > 1) { item_name += " x" + std::to_string(game_item->quantity); }
 
 			loot_item->make_default_button_with_unedible_text
@@ -14697,7 +15271,7 @@ void GameAttributeGeneratorQuantity::execute_generation(EGameItem* _game_item)
 //STATIC FIELDS FOR EButtonGroupLootSimulator
 bool						EButtonGroupLootSimulator::show_hidden = false;
 //float						EButtonGroupLootSimulator::show_hidden_cooldown = 0.5f;
-Helper::HSVRGBAColor		EButtonGroupLootSimulator::temp_color;
+HSVRGBAColor		EButtonGroupLootSimulator::temp_color;
 
 EButtonGroup*				EButtonGroupLootSimulator::pointer_to_loot_buttons_segment;
 EButtonGroup*				EButtonGroupLootSimulator::pointer_to_patterns_buttons_segment;
@@ -14953,7 +15527,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 					//		FOR EVERY BLOCK ITEM
 					for (EntityButton* but : data_container->group_with_listed_buttons->button_list)
 						if (but != data_container->group_with_listed_buttons->slider)
-							for (std::string item_listed_value : item_attribute.listed_value_list)
+							for (ELocalisationText item_listed_value : item_attribute.listed_value_list)
 							{
 								std::string base_item_name = "";
 
@@ -14989,7 +15563,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 											&&
 											EStringUtils::A_contains_B_ignore_case
 											(
-												item_listed_value,	//item
+												item_listed_value.base_name,	//item
 												base_item_name		//block
 											)
 											)
@@ -15003,7 +15577,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 												)
 											&&
 											(
-												item_listed_value	//item
+												item_listed_value.base_name	//item
 												==
 												base_item_name		//block
 												)
@@ -15160,54 +15734,57 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 
 void EButtonGroupLootSimulator::refresh_loot_simulator()
 {
-	EInputCore::logger_simple_info("refresh loot simulator");
+	if (EWindowMain::loot_simulator_button_group->is_active)
+	{
+		EInputCore::logger_simple_info("refresh loot simulator");
 
-	EButtonGroupLootSimulator::show_hidden = true;
-	//EButtonGroupLootSimulator::show_hidden_cooldown = 0.0f;
+		EButtonGroupLootSimulator::show_hidden = true;
+		//EButtonGroupLootSimulator::show_hidden_cooldown = 0.0f;
 
-	for (EntityButton* button : pointer_to_loot_buttons_segment->button_list)
-		if (button != pointer_to_loot_buttons_segment->slider)
-		{
-
-
-			button->disable_draw = false;
-
-			EntityButtonLootItem*
-			loot_button = static_cast<EntityButtonLootItem*>(button);
-
-			loot_button->matched_bg_color					= nullptr;
-			loot_button->matched_bg_color_block				= nullptr;
-
-			loot_button->matched_text_color					= nullptr;
-			loot_button->matched_text_color_block			= nullptr;
-
-			loot_button->matched_rama_color					= nullptr;
-			loot_button->matched_rama_color_block			= nullptr;
+		for (EntityButton* button : pointer_to_loot_buttons_segment->button_list)
+			if (button != pointer_to_loot_buttons_segment->slider)
+			{
 
 
+				button->disable_draw = false;
 
-			loot_button->matched_minimap_icon_color			= nullptr;
-			loot_button->matched_minimap_icon_color_block	= nullptr;
+				EntityButtonLootItem*
+					loot_button = static_cast<EntityButtonLootItem*>(button);
 
-			loot_button->matched_minimap_icon_shape			= nullptr;
-			loot_button->matched_minimap_icon_shape_block	= nullptr;
+				loot_button->matched_bg_color = nullptr;
+				loot_button->matched_bg_color_block = nullptr;
 
-			loot_button->matched_minimap_icon_size			= nullptr;
-			loot_button->matched_minimap_icon_size_block	= nullptr;
+				loot_button->matched_text_color = nullptr;
+				loot_button->matched_text_color_block = nullptr;
 
-			loot_button->matched_size_block					= nullptr;
+				loot_button->matched_rama_color = nullptr;
+				loot_button->matched_rama_color_block = nullptr;
 
 
 
+				loot_button->matched_minimap_icon_color = nullptr;
+				loot_button->matched_minimap_icon_color_block = nullptr;
 
-			loot_button->matched_filter_blocks.clear();
+				loot_button->matched_minimap_icon_shape = nullptr;
+				loot_button->matched_minimap_icon_shape_block = nullptr;
 
-			loot_button->get_matched_filter_blocks_list(EWindowMain::loot_filter_editor);
-		}
+				loot_button->matched_minimap_icon_size = nullptr;
+				loot_button->matched_minimap_icon_size_block = nullptr;
 
-	refresh_button_sizes();
+				loot_button->matched_size_block = nullptr;
 
-	EButtonGroup::change_group(pointer_to_loot_buttons_segment);
+
+
+
+				loot_button->matched_filter_blocks.clear();
+
+				loot_button->get_matched_filter_blocks_list(EWindowMain::loot_filter_editor);
+			}
+
+		refresh_button_sizes();
+
+		EButtonGroup::change_group(pointer_to_loot_buttons_segment);
+	}
 
 }
 
@@ -15315,7 +15892,12 @@ void GameAttributeGeneratorMapInfluence::execute_generation(EGameItem* _game_ite
 		//elder
 	case 0:
 	{
-		target_attribute_container->listed_value_list.push_back("Elder");
+		ELocalisationText l_text;
+		l_text.base_name = "Elder";
+		l_text.localisations[NSW_localisation_EN] = "Elder";
+		l_text.localisations[NSW_localisation_RU] = "Древнего";
+
+		target_attribute_container->listed_value_list.push_back(l_text);
 
 		EGameItemAttributeContainer new_container;
 
@@ -15329,7 +15911,12 @@ void GameAttributeGeneratorMapInfluence::execute_generation(EGameItem* _game_ite
 	//shaper
 	case 1:
 	{
-		target_attribute_container->listed_value_list.push_back("Shaper");
+		ELocalisationText l_text;
+		l_text.base_name = "Shaper";
+		l_text.localisations[NSW_localisation_EN] = "Shaper";
+		l_text.localisations[NSW_localisation_RU] = "Создателя";
+
+		target_attribute_container->listed_value_list.push_back(l_text);
 
 		EGameItemAttributeContainer new_container;
 
@@ -15343,25 +15930,53 @@ void GameAttributeGeneratorMapInfluence::execute_generation(EGameItem* _game_ite
 	//Redeemer
 	case 2:
 	{
-		target_attribute_container->listed_value_list.push_back("Redeemer"); break;
+		ELocalisationText l_text;
+		l_text.base_name = "Redeemer";
+		l_text.localisations[NSW_localisation_EN] = "Redeemer";
+		l_text.localisations[NSW_localisation_RU] = "Избавительницы";
+
+		target_attribute_container->listed_value_list.push_back(l_text);
+		
+		break;
 	}
 
 	//Warlord
 	case 3:
 	{
-		target_attribute_container->listed_value_list.push_back("Warlord"); break;
+		ELocalisationText l_text;
+		l_text.base_name = "Warlord";
+		l_text.localisations[NSW_localisation_EN] = "Warlord";
+		l_text.localisations[NSW_localisation_RU] = "Вождя";
+
+		target_attribute_container->listed_value_list.push_back(l_text);
+
+		break;
 	}
 
 	//Hunter
 	case 4:
 	{
-		target_attribute_container->listed_value_list.push_back("Hunter"); break;
+		ELocalisationText l_text;
+		l_text.base_name = "Hunter";
+		l_text.localisations[NSW_localisation_EN] = "Hunter";
+		l_text.localisations[NSW_localisation_RU] = "Охотника";
+
+		target_attribute_container->listed_value_list.push_back(l_text);
+
+		break;
 	}
 
 	//Crusader
 	case 5:
 	{
-		target_attribute_container->listed_value_list.push_back("Crusader"); break;
+		ELocalisationText l_text;
+		l_text.base_name = "Crusader";
+		l_text.localisations[NSW_localisation_EN] = "Crusader";
+		l_text.localisations[NSW_localisation_RU] = "Крестоносца";
+
+		target_attribute_container->listed_value_list.push_back(l_text);
+
+		break;
 	}
 
 	default: {}
@@ -15372,48 +15987,89 @@ void GameAttributeGeneratorMapInfluence::execute_generation(EGameItem* _game_ite
 
 void GameAttributeGeneratorItemInfluence::execute_generation(EGameItem* _game_item)
 {
-	if (rand() % 100 < (int)(influence_chance * 100.0f))
+	//if (rand() % 100 < (int)(influence_chance * 100.0f))
 		switch (rand() % 6)
 		{
 			//elder
-		case 0:
-		{
-			target_attribute_container->listed_value_list.push_back("Elder");
+			case 0:
+			{
+				ELocalisationText l_text;
+				l_text.base_name = "Elder";
+				l_text.localisations[NSW_localisation_EN] = "Elder";
+				l_text.localisations[NSW_localisation_RU] = "Древний";
 
-			break;
-		}
+				target_attribute_container->listed_value_list.push_back(l_text);
 
-		//shaper
-		case 1:
-		{
-			target_attribute_container->listed_value_list.push_back("Shaper");
-		}
+				break;
+			}
 
-		//Redeemer
-		case 2:
-		{
-			target_attribute_container->listed_value_list.push_back("Redeemer"); break;
-		}
+			//shaper
+			case 1:
+			{
+				ELocalisationText l_text;
+				l_text.base_name = "Shaper";
+				l_text.localisations[NSW_localisation_EN] = "Shaper";
+				l_text.localisations[NSW_localisation_RU] = "Создателя";
 
-		//Warlord
-		case 3:
-		{
-			target_attribute_container->listed_value_list.push_back("Warlord"); break;
-		}
+				target_attribute_container->listed_value_list.push_back(l_text);
 
-		//Hunter
-		case 4:
-		{
-			target_attribute_container->listed_value_list.push_back("Hunter"); break;
-		}
+				//икуфлж
+				break;
+			}
 
-		//Crusader
-		case 5:
-		{
-			target_attribute_container->listed_value_list.push_back("Crusader"); break;
-		}
+			//Redeemer
+			case 2:
+			{
+				ELocalisationText l_text;
+				l_text.base_name = "Redeemer";
+				l_text.localisations[NSW_localisation_EN] = "Redeemer";
+				l_text.localisations[NSW_localisation_RU] = "Избавительницы";
 
-		default: {}
+				target_attribute_container->listed_value_list.push_back(l_text);
+
+				break;
+			}
+
+			//Warlord
+			case 3:
+			{
+				ELocalisationText l_text;
+				l_text.base_name = "Warlord";
+				l_text.localisations[NSW_localisation_EN] = "Warlord";
+				l_text.localisations[NSW_localisation_RU] = "Вождя";
+
+				target_attribute_container->listed_value_list.push_back(l_text);
+
+				break;
+			}
+
+			//Hunter
+			case 4:
+			{
+				ELocalisationText l_text;
+				l_text.base_name = "Hunter";
+				l_text.localisations[NSW_localisation_EN] = "Hunter";
+				l_text.localisations[NSW_localisation_RU] = "Охотника";
+
+				target_attribute_container->listed_value_list.push_back(l_text);
+
+				break;
+			}
+
+			//Crusader
+			case 5:
+			{
+				ELocalisationText l_text;
+				l_text.base_name = "Crusader";
+				l_text.localisations[NSW_localisation_EN] = "Crusader";
+				l_text.localisations[NSW_localisation_RU] = "Крестоносца";
+
+				target_attribute_container->listed_value_list.push_back(l_text);
+
+				break;
+			}
+
+			default: {}
 
 
 		}

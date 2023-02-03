@@ -240,11 +240,11 @@ public:
 
 
 	//color section
-	EntityButton* pointer_to_color_button[3];
+	EntityButtonColorButton* pointer_to_color_button[3];
 	EntityButton* pointer_to_color_check_button[3];
 
 	bool	color_check[3];
-	Helper::HSVRGBAColor** pointer_to_HRA_color[3];
+	HSVRGBAColor** pointer_to_HRA_color[3];
 
 	//font size
 	EntityButton* text_size_button;
@@ -409,7 +409,7 @@ public:
 	void		refresh_loot_simulator();
 	static void	refresh_button_sizes();
 
-	static Helper::HSVRGBAColor temp_color;
+	static HSVRGBAColor temp_color;
 	static bool is_condition_sactified_for_listed_expression(std::string _expression, int _matches_count);
 
 	void update(float _d);
@@ -508,8 +508,9 @@ namespace EDataActionCollection
 	void action_refresh_loot_simulator_sizes(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_highlight_matched_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_add_items_from_this_loot_pattern(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_create_or_delete_description_on_hover(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_items_from_this_loot_pattern		(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_create_or_delete_description_on_hover	(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_and_refresh_loot_simulator			(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text
 	void action_type_search_filter_block_text(ETextArea* _text_area);
@@ -698,8 +699,32 @@ public:
 	static void write_loot_filter_to_disc(std::string _full_path, std::string* _data);
 
 	static void register_loot_simulator_patterns();
+	static void register_pattern_boss_loot();
+	static void register_pattern_divinations_expensive();
+	static void register_pattern_divinations_useful();
+	static void register_pattern_divinations_cheap();
+	static void register_pattern_divinations_trash();
+	static void register_pattern_flasks();
+	static void register_pattern_set_fragment();
+	static void register_pattern_scarabs();
+	static void register_pattern_all_map_fragments();
+	static void register_pattern_maps();
+	static void register_pattern_delve_items();
+	static void register_pattern_breach_items();
+	static void register_pattern_all_equip_high_level();
+	static void register_pattern_all_equip_low_level();
+	static void register_pattern_top_tier_bases();
+	static void register_pattern_oils_and_catalysts();
+	static void register_pattern_currencies_shard();
+	static void register_pattern_tainted_currencies();
+	static void register_pattern_rare_currencies();
+	static void register_pattern_good_currencies();
+	static void register_pattern_trash_currencies();
+	static void register_pattern_basic_currencies();
 
-	static void set_color_version(Helper::HSVRGBAColor* _target_color, int _selected_mode);
+	static void register_pattern_all_currencies();
+
+	static void set_color_version(HSVRGBAColor* _target_color, int _selected_mode);
 
 
 };
@@ -713,11 +738,11 @@ class EGameItemAttributeContainer
 public:
 	GameItemAttribute* target_attribute;
 
-	std::string					attribute_value_str;
-	int							attribute_value_int;
-	bool						attribute_value_bool;
+	std::string						attribute_value_str;
+	int								attribute_value_int;
+	bool							attribute_value_bool;
 
-	std::vector<std::string>	listed_value_list;
+	std::vector<ELocalisationText>	listed_value_list;
 };
 
 class EGameItem
@@ -751,13 +776,13 @@ public:
 
 	std::vector<EButtonGroupFilterBlock*>		matched_filter_blocks;
 
-	Helper::HSVRGBAColor** matched_bg_color;
+	HSVRGBAColor** matched_bg_color;
 	EButtonGroupFilterBlock* matched_bg_color_block;
 
-	Helper::HSVRGBAColor** matched_text_color;
+	HSVRGBAColor** matched_text_color;
 	EButtonGroupFilterBlock* matched_text_color_block;
 
-	Helper::HSVRGBAColor** matched_rama_color;
+	HSVRGBAColor** matched_rama_color;
 	EButtonGroupFilterBlock* matched_rama_color_block;
 
 
@@ -807,6 +832,8 @@ struct GameAttributeGenerator
 {
 public:
 	EGameItemAttributeContainer* target_attribute_container;
+
+	float chance_to_generate = 1.0f;
 
 	GameAttributeGenerator(std::string _attribute_name);
 
@@ -885,7 +912,7 @@ public:
 	GameAttributeGeneratorItemInfluence(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
 
 	void execute_generation(EGameItem* _game_item);
-	float influence_chance = 0.5f;
+	//float influence_chance = 0.5f;
 };
 
 
@@ -895,7 +922,7 @@ public:
 	GameAttributeGeneratorExactListedValue(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
 
 	void execute_generation(EGameItem* _game_item);
-	std::vector<std::string> exact_values_list;
+	std::vector<ELocalisationText> exact_values_list;
 };
 
 struct GameAttributeGeneratorBoolFlag : public GameAttributeGenerator
@@ -925,7 +952,7 @@ public:
 	GameItemGeneratorMode					generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 	int										random_selection_count = 1;
 
-	std::string								filtered_by_exact_name;
+	ELocalisationText						filtered_by_exact_name;
 	std::vector<LootSimulatorTagFilter*>	filtered_by_tags;
 
 	ELocalisationText						localisation;
@@ -933,6 +960,9 @@ public:
 
 	void									generate_game_item_list(std::vector<EGameItem*>* _target_list);
 	void									init_game_item(EGameItem* _game_item);
+
+	void									add_rarity		(int _rarity_min, int _rarity_max, float _pow);
+	void									add_item_level	(int _level_min, int _level_max, float _pow);
 
 };
 
