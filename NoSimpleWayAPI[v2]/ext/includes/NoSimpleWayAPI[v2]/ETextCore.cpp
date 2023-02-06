@@ -738,11 +738,21 @@ float ETextArea::get_text_width(std::string* _text)
 void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_coordinate)
 {
 	if
+	(
 		(
 			(parent_entity_for_text_area == nullptr)
 			||
 			(region_gabarite != ((EntityButton*)parent_entity_for_text_area)->button_gabarite)
-			)
+		)
+		&&
+		(
+			(parent_clickable_region->parent_group == nullptr)
+			||
+			(region_gabarite != parent_clickable_region->region_gabarite)
+		)
+
+		//region_gabarite->parent_region == nullptr
+	)
 	{
 		region_gabarite->world_position_x += _x;
 		region_gabarite->world_position_y += _y;

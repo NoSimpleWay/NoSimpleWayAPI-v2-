@@ -22,7 +22,9 @@ namespace std
 
 namespace EInputCore
 {
-	extern	 int		scroll_direction;
+	extern bool NSW_have_unsave_changes;
+
+	extern int		scroll_direction;
 
 	extern	bool		MOUSE_BUTTON_LEFT;
 	extern	bool		MOUSE_BUTTON_RIGHT;

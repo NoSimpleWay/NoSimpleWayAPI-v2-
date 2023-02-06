@@ -439,6 +439,17 @@ public:
 	int stored_localisation;
 
 };
+class EntityButtonConfirmAction : public EntityButton
+{
+public:
+	EntityButtonConfirmAction();
+	~EntityButtonConfirmAction();
+
+	data_action_pointer stored_action;
+
+	int stored_localisation;
+
+};
 
 
 class ECluster

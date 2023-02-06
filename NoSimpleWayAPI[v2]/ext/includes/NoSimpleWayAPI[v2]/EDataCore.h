@@ -127,7 +127,7 @@ public:
 	unsigned int pointers_to_this_object = 0;
 	//unsigned int* pointer_id = new unsigned int(0);
 	static void set_region_gabarite(ERegionGabarite** _destination, ERegionGabarite* _source);
-	void* root_owner;
+	void* parent_region;
 
 	float phantom_translate_x;
 	float phantom_translate_y;
@@ -136,6 +136,12 @@ public:
 	bool have_phantom_translation;
 };
 
+class ERegionGabariteContainer
+{
+	ERegionGabarite* target_region_gabarite;
+
+	bool is_original;
+};
 enum ClickableRegionSides
 {
 	CRS_SIDE_LEFT,
@@ -152,7 +158,8 @@ public:
 	EClickableArea();
 	~EClickableArea();
 
-	ERegionGabarite* region_gabarite;
+	ERegionGabarite*	region_gabarite;
+	bool				original_region_gabarite = false;
 
 	std::vector<ESpriteLayer*>			sprite_layer_list;
 	//ESpriteLayer*						internal_sprite_layer;
@@ -511,6 +518,8 @@ public:
 
 namespace EDataActionCollection
 {
+	
+
 	void action_log_text(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_player_control(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_update_slider(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -561,6 +570,9 @@ namespace EDataActionCollection
 
 	void action_rotate_variant(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_rotate_variant_from_list(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_invoke_stored_confirm_action(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_close_program(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_set_unsaved_changes(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void action_active_filter_block						(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text

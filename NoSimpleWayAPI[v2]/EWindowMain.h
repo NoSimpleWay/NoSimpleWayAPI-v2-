@@ -653,6 +653,10 @@ public:
 	//ECluster* cluster_array[CLUSTER_DIM_X][CLUSTER_DIM_Y];
 
 	EWindowMain();
+	void preload_textures();
+	void register_rarities();
+	void register_alternate_qualities();
+	void register_game_item_attributes();
 	void register_filter_rules();
 	~EWindowMain();
 

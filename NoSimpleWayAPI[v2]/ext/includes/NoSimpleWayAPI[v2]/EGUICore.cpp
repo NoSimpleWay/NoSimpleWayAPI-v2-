@@ -32,6 +32,7 @@ EButtonGroup*					EButtonGroup::color_editor_group				= nullptr;
 EButtonGroup*					EButtonGroup::add_content_to_filter_block_group	= nullptr;
 EButtonGroup*					EButtonGroup::header_line						= nullptr;
 EButtonGroup*					EButtonGroup::existing_loot_filter_list			= nullptr;
+EButtonGroup*					EButtonGroup::confirm_decline_group				= nullptr;
 
 EButtonGroupSoundList*			EButtonGroup::sound_list_group = nullptr;
 
@@ -2767,18 +2768,19 @@ EButtonGroup* EButtonGroup::add_group_scecific_position(EButtonGroup* _new_group
 
 void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 {
-
-	region_gabarite->world_position_x += (_x);
-	region_gabarite->world_position_y += (_y);
-	region_gabarite->world_position_z += (_z);
-
-
-
-	if (_move_positions)
 	{
-		region_gabarite->offset_x += (_x);
-		region_gabarite->offset_y += (_y);
-		region_gabarite->offset_z += (_z);
+		region_gabarite->world_position_x += (_x);
+		region_gabarite->world_position_y += (_y);
+		region_gabarite->world_position_z += (_z);
+
+
+
+		if (_move_positions)
+		{
+			region_gabarite->offset_x += (_x);
+			region_gabarite->offset_y += (_y);
+			region_gabarite->offset_z += (_z);
+		}
 	}
 
 	if
@@ -2792,11 +2794,14 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 	}
 	else
 	{
-		region_gabarite->have_phantom_translation = true;
+		if ((_move_positions) || (region_gabarite->pointers_to_this_object <= 1))
+		{
+			region_gabarite->have_phantom_translation = true;
 
-		region_gabarite->phantom_translate_x += (_x);
-		region_gabarite->phantom_translate_y += (_y);
-		region_gabarite->phantom_translate_z += (_z);
+			region_gabarite->phantom_translate_x += (_x);
+			region_gabarite->phantom_translate_y += (_y);
+			region_gabarite->phantom_translate_z += (_z);
+		}
 	}
 
 	higher_culling_line += _y;
@@ -2812,6 +2817,11 @@ void EButtonGroup::translate_content(float _x, float _y, float _z, bool _move_sl
 	if ((background_sprite_layer != nullptr) && (_move_slider))
 	{
 		background_sprite_layer->translate_sprite_layer(_x, _y, _z, false);
+	}
+	for (EClickableArea* c_area : clickable_area_list)
+	{
+		 c_area->translate_clickable_region(_x, _y, _z, false);
+		//if (c_area->text_area != nullptr) { c_area->text_area->translate(_x, _y, _z, false); }
 	}
 
 	for (EntityButton* button : button_list)

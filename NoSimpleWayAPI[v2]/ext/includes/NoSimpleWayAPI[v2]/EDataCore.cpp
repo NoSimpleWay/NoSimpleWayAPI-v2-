@@ -1718,6 +1718,28 @@ void EDataActionCollection::action_select_rotate_variant_from_list(Entity* _enti
 	target_group->is_active = false;
 }
 
+void EDataActionCollection::action_invoke_stored_confirm_action(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonConfirmAction*
+	confirm_button = static_cast<EntityButtonConfirmAction*>(_entity);
+
+	if (confirm_button->stored_action != nullptr)
+	{
+		confirm_button->stored_action(_entity, _custom_data, _d);
+	}
+}
+
+void EDataActionCollection::action_close_program(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	glfwSetWindowShouldClose(NS_EGraphicCore::main_window, 1);
+	EInputCore::NSW_have_unsave_changes = false;
+}
+
+void EDataActionCollection::action_set_unsaved_changes(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EInputCore::NSW_have_unsave_changes = true;
+}
+
 //void EDataActionCollection::action_active_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)
 //{
 //	if (((EntityButtonButtonGroupActivator*)_entity)->target_group != nullptr)
@@ -2040,15 +2062,19 @@ void EClickableArea::translate_clickable_region(float _x, float _y, float _z, bo
 {
 	if (region_gabarite != nullptr)
 	{
-		region_gabarite->world_position_x += _x;
-		region_gabarite->world_position_y += _y;
-		region_gabarite->world_position_z += _z;
-
-		if (_move_offset)
+		if ((parent_group == nullptr) || (parent_group->region_gabarite != region_gabarite))
+		//if (region_gabarite->pointers_to_this_object <= 1)
 		{
-			region_gabarite->offset_x += _x;
-			region_gabarite->offset_y += _y;
-			region_gabarite->offset_z += _z;
+			region_gabarite->world_position_x += _x;
+			region_gabarite->world_position_y += _y;
+			region_gabarite->world_position_z += _z;
+
+			if (_move_offset)
+			{
+				region_gabarite->offset_x += _x;
+				region_gabarite->offset_y += _y;
+				region_gabarite->offset_z += _z;
+			}
 		}
 	}
 
@@ -2074,7 +2100,8 @@ EClickableArea* EClickableArea::create_default_clickable_region(ERegionGabarite*
 
 EClickableArea* EClickableArea::create_default_clickable_region(ERegionGabarite* _gabarite, EButtonGroup* _parent_button_group)
 {
-	EClickableArea* jc_clickable_area = new EClickableArea();
+	EClickableArea*
+	jc_clickable_area = new EClickableArea();
 
 	ERegionGabarite::set_region_gabarite(&jc_clickable_area->region_gabarite, _gabarite);
 
@@ -2450,32 +2477,33 @@ void ERegionGabarite::set_region_gabarite(ERegionGabarite** _target_region, EReg
 {
 	//EInputCore::logger_simple_try("set region");
 
-	if (_source_region->root_owner == nullptr)
-	{
-		_source_region->root_owner = _source_region;
-	}
+
+
 
 	if (*_target_region != _source_region)
 	{
 
-		//EInputCore::logger_simple_success("target != source");
-		//old region lose 1 pointer to him
-
-
-		//target region lose 1 owner
+		//target region lose 1 owner, because target region change owner
 		if (*_target_region != nullptr)
 		{
-			//EInputCore::logger_simple_success("decrease");
 			(*_target_region)->pointers_to_this_object--;
 		}
-		else
-		{
-			//EInputCore::logger_simple_error("target is NULL!");
-		}
 
-		//this region have 1 more pointers to him
+		//source region get pointer
 		(_source_region->pointers_to_this_object)++;
 
+		//if (_source_region->parent_region == nullptr)
+		//{
+		//	_source_region->parent_region = _source_region;
+		//}
+
+		
+
+		//if pointers more that 1, this region is "clone"
+		//if (_source_region->pointers_to_this_object > 1)
+		//{
+		//	(*_target_region)->parent_region = _source_region;
+		//}
 	}
 	else
 	{
@@ -2483,6 +2511,7 @@ void ERegionGabarite::set_region_gabarite(ERegionGabarite** _target_region, EReg
 	}
 
 	*_target_region = _source_region;
+	
 
 }
 

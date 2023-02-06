@@ -270,7 +270,8 @@ public:
 
 	ERenderBatcher* batcher_for_default_draw = nullptr;
 
-	ERegionGabarite* region_gabarite = nullptr;
+	ERegionGabarite*	region_gabarite = nullptr;
+
 
 	std::vector<EntityButton*> button_list;
 	//std::vector<EButtonGroupRow*> group_row_list;
@@ -464,6 +465,7 @@ public:
 	static EButtonGroup* add_content_to_filter_block_group;
 	static EButtonGroup* header_line;
 	static EButtonGroup* existing_loot_filter_list;
+	static EButtonGroup* confirm_decline_group;
 
 	static EButtonGroupSoundList* sound_list_group;
 
@@ -513,8 +515,6 @@ public:
 	EButtonGroupRouterVariant(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	~EButtonGroupRouterVariant();
-
-
 };
 //class EButtonContainer
 //{
@@ -525,6 +525,19 @@ public:
 //
 //	std::vector<EButtonGroup*> button_group_list;
 //};
+
+class EButtonGroupConfirmAction : public EButtonGroup
+{
+public:
+	EntityButton*		pointer_to_confirm_button;
+	EntityButton*		pointer_to_decline_button;
+
+	EButtonGroup*		pointer_to_workspace_part;
+
+	data_action_pointer	action_on_accept;
+	data_action_pointer	action_on_decline;
+};
+
 enum StyleList
 {
 	STYLE_LIST_LEAD_AND_GOLD,

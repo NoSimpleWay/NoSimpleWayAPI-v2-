@@ -10,6 +10,8 @@ namespace EInputCore
 {
 	int			scroll_direction;
 
+	bool		NSW_have_unsave_changes = false;
+
 	bool		MOUSE_BUTTON_LEFT;
 	bool		MOUSE_BUTTON_RIGHT;
 	bool		MOUSE_BUTTON_MID;

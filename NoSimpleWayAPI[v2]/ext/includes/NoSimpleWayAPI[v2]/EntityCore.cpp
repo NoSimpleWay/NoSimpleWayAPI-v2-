@@ -1784,3 +1784,11 @@ EntityButtonVerticalSlider::~EntityButtonVerticalSlider()
 EntityButtonLocalisationSelector::~EntityButtonLocalisationSelector()
 {
 }
+
+EntityButtonConfirmAction::EntityButtonConfirmAction()
+{
+}
+
+EntityButtonConfirmAction::~EntityButtonConfirmAction()
+{
+}
