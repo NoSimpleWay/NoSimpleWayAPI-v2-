@@ -270,10 +270,13 @@ public:
 
 	ERenderBatcher* batcher_for_default_draw = nullptr;
 
-	ERegionGabarite*	region_gabarite = nullptr;
+	ERegionGabarite* region_gabarite = nullptr;
 
 
-	std::vector<EntityButton*> button_list;
+	std::vector<EntityButton*> all_button_list;
+	std::vector<EntityButton*> workspace_button_list;
+	void delete_exact_button	(EntityButton* _button);
+	void remove_all_workspace_buttons();
 	//std::vector<EButtonGroupRow*> group_row_list;
 	//EButtonGroupRow* parent_group_row = nullptr;
 	std::vector<EButtonGroup*> group_list;
@@ -353,7 +356,8 @@ public:
 	static void change_group(EButtonGroup* _group);
 	void refresh_buttons_in_group();
 
-
+	void add_button_to_working_group(EntityButton* _button);
+	void add_button_to_additional_group(EntityButton* _button);
 	ESpriteLayer* background_sprite_layer = nullptr;
 
 	bool can_resize_to_workspace_size_x = true;
@@ -463,7 +467,7 @@ public:
 
 	static EButtonGroup* color_editor_group;
 	static EButtonGroup* add_content_to_filter_block_group;
-	static EButtonGroup* header_line;
+
 	static EButtonGroup* existing_loot_filter_list;
 	static EButtonGroup* confirm_decline_group;
 
@@ -490,6 +494,7 @@ public:
 	EWindow* parent_window;
 
 	void move_to_foreground();
+	void move_to_foreground_and_center();
 
 	ChildElementsAlignDirection child_align_direction = ChildElementsAlignDirection::BOTTOM_TO_TOP;
 
@@ -529,10 +534,10 @@ public:
 class EButtonGroupConfirmAction : public EButtonGroup
 {
 public:
-	EntityButton*		pointer_to_confirm_button;
-	EntityButton*		pointer_to_decline_button;
+	EntityButton* pointer_to_confirm_button;
+	EntityButton* pointer_to_decline_button;
 
-	EButtonGroup*		pointer_to_workspace_part;
+	EButtonGroup* pointer_to_workspace_part;
 
 	data_action_pointer	action_on_accept;
 	data_action_pointer	action_on_decline;

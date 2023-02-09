@@ -114,7 +114,7 @@ void Entity::transfer_all_vertex_buffers_to_batcher()
 	
 }
 
-void Entity::set_world_position(float _x, float _y, float _z)
+void Entity::set_world_positions(float _x, float _y, float _z)
 {
 	world_position_x = _x;
 	world_position_y = _y;
@@ -139,7 +139,7 @@ void Entity::set_world_position(float _x, float _y, float _z)
 
 void Entity::set_world_position_w(ERegionGabarite* _region_gabarite)
 {
-	set_world_position
+	set_world_positions
 	(
 		_region_gabarite->world_position_x,
 		_region_gabarite->world_position_y,
@@ -149,7 +149,7 @@ void Entity::set_world_position_w(ERegionGabarite* _region_gabarite)
 
 void Entity::set_world_position_l(ERegionGabarite* _region_gabarite)
 {
-	set_world_position
+	set_world_positions
 	(
 		_region_gabarite->offset_x,
 		_region_gabarite->offset_y,
@@ -478,7 +478,9 @@ void EntityButton::destroy_attached_description()
 			)
 		);
 
-		delete attached_description;
+		if (!disable_deleting) {
+			delete attached_description;
+		}
 		attached_description = nullptr;
 	}
 }
@@ -627,7 +629,7 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 	return jc_button;
 }
 
-EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity, EFont* _font)
+EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity, EFont* _font, bool _can_be_deleted)
 {
 		EntityButton* jc_button = new EntityButton();
 
@@ -646,8 +648,9 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		jc_button->pointer_to_data_entity = _data_entity;
 
 		//delete action on right click
-		Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
+		//Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
 
+		
 		//_parent_group->button_list.push_back(jc_button);
 
 
@@ -664,7 +667,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 		jc_button->main_text_area = jc_text_area;
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+		ESpriteLayer* second_button_layer = nullptr;
 		if (_data_entity != nullptr)
 		{
 
@@ -682,7 +685,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 				offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
 				offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
 
-				ESpriteLayer* second_button_layer =
+				second_button_layer =
 					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 					(
 						item_icon,
@@ -741,7 +744,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 				offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
 				offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
 
-				ESpriteLayer* second_button_layer =
+				second_button_layer =
 					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 					(
 						item_icon,
@@ -759,6 +762,69 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 				//second_button_layer->make_as_PBR();
 			}
+		}
+
+
+		if (_can_be_deleted)
+		{
+			//add new clickable area (close X)
+			EClickableArea*
+				close_clickable_area = EClickableArea::create_default_clickable_region
+				(
+					new ERegionGabarite(20.0f, 20.0f),
+					jc_button,
+					EntityButton::get_last_custom_data(jc_button)
+				);
+			close_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_delete_entity);
+
+			close_clickable_area->region_gabarite->offset_by_parent_size_x = 1.0f;
+			close_clickable_area->region_gabarite->offset_by_parent_size_y = 1.0f;
+
+			close_clickable_area->region_gabarite->offset_by_size_x = -1.0f;
+			close_clickable_area->region_gabarite->offset_by_size_y = -1.0f;
+
+			close_clickable_area->region_gabarite->offset_by_pixels_x = -3.0f;
+			close_clickable_area->region_gabarite->offset_by_pixels_y = -3.0f;
+
+			close_clickable_area->draw_only_is_specific_region_overlapped = jc_button->main_clickable_area->region_gabarite;
+
+			jc_button->main_custom_data->clickable_area_list.push_back(close_clickable_area);
+			jc_button->main_clickable_area->region_gabarite->add_child_to_this_region(close_clickable_area->region_gabarite);
+
+
+			//////////////////////////////////
+			ETextureGabarite*
+				close_icon = NS_EGraphicCore::load_from_textures_folder("close_circle");
+
+			float resize_factor = 0.0f;
+			float offset_x = 0.0f;
+			float offset_y = 0.0f;
+			{
+				resize_factor = (close_clickable_area->region_gabarite->size_y) / max(close_icon->size_x_in_pixels, close_icon->size_y_in_pixels);
+				resize_factor = min(resize_factor, 1.0f);
+
+				offset_x = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_x_in_pixels * resize_factor) / 2.0f;
+				offset_y = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_y_in_pixels * resize_factor) / 2.0f;
+
+				ESpriteLayer* third_sprite_layer =
+					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+					(
+						close_icon,
+
+						0.0f,
+						0.0f,
+						0.0f,
+
+						close_icon->size_x_in_pixels * resize_factor,
+						close_icon->size_y_in_pixels * resize_factor,
+						0.0f
+					);
+
+				close_clickable_area->sprite_layer_list.push_back(third_sprite_layer);
+
+				//second_button_layer->make_as_PBR();
+			}
+			//////////////////////////////////
 		}
 
 		return jc_button;
@@ -1416,12 +1482,6 @@ EntityButton::~EntityButton()
 		}
 	}
 
-	//delete autoalign_id;
-	//delete autoalight_offset_x_mathed_id;
-	//delete autoalight_offset_x_not_mathed_id;
-
-	//delete fixed_position;
-	//delete update_when_scissored;
 
 	if (debug_deleting) EInputCore::logger_simple_info("try clear and shrink action on change style");
 	action_on_generate_vertex_buffer.clear();
@@ -1656,6 +1716,10 @@ void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style)
 
 EntityButtonVariantRouter::~EntityButtonVariantRouter()
 {
+	if (debug_deleting) {
+		EInputCore::logger_simple_info("pre deleting EntityButtonVariantRouter");
+	}
+
 	if (opened_router_group != nullptr)
 	{
 		opened_router_group->need_remove = true;
@@ -1663,16 +1727,16 @@ EntityButtonVariantRouter::~EntityButtonVariantRouter()
 		opened_router_group = nullptr;
 	}
 
+	if (!disable_deleting)
 	for (RouterVariant* rv : router_variant_list)
 	if (rv != nullptr)
 	{
 		delete rv;
 	}
-
 	router_variant_list.clear();
 	router_variant_list.shrink_to_fit();
 
-
+	if (debug_deleting) { EInputCore::logger_simple_info("deleting EntityButtonVariantRouter"); }
 
 }
 
@@ -1735,7 +1799,7 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 			pointer_to_text_area->change_text(pointer_to_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 
 			//redraw
-			set_world_position(world_position_x, world_position_y, world_position_z);
+			set_world_positions(world_position_x, world_position_y, world_position_z);
 			generate_vertex_buffer_for_all_sprite_layers();
 
 		}
@@ -1768,10 +1832,10 @@ RouterVariant::~RouterVariant()
 	if (!do_not_delete_me)
 	{
 		//EInputCore::logger_simple_info("~RouterVariant");
-
-		if (localisation != nullptr) { delete localisation; }
-		if (color != nullptr) { delete color; }
-		if (localisation_for_select_window != nullptr) { delete localisation_for_select_window; }
+		if ((localisation_for_select_window != nullptr) && (localisation != localisation_for_select_window)){ delete localisation_for_select_window; }
+		if (localisation != nullptr)					{ delete localisation; localisation = nullptr;}
+		//if (color != nullptr)							{ delete color; }
+		
 
 		//EInputCore::logger_simple_success("~RouterVariant deleted");
 	}
@@ -1779,6 +1843,7 @@ RouterVariant::~RouterVariant()
 
 EntityButtonVerticalSlider::~EntityButtonVerticalSlider()
 {
+	if (debug_deleting) { EInputCore::logger_simple_info("deleting EntityButtonVerticalSlider"); }
 }
 
 EntityButtonLocalisationSelector::~EntityButtonLocalisationSelector()
@@ -1790,5 +1855,18 @@ EntityButtonConfirmAction::EntityButtonConfirmAction()
 }
 
 EntityButtonConfirmAction::~EntityButtonConfirmAction()
+{
+}
+
+EntityButtonColorButton::~EntityButtonColorButton()
+{
+	if (debug_deleting) { EInputCore::logger_simple_info("deleting EntityButtonColorButton"); }
+}
+
+EntityButtonVariantRouterSelector::~EntityButtonVariantRouterSelector()
+{
+}
+
+EntityButtonMultiSearch::~EntityButtonMultiSearch()
 {
 }

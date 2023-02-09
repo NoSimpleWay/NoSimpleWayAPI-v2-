@@ -102,6 +102,20 @@ public:
 	ERegionGabarite(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
 	ERegionGabarite(float _size_x, float _size_y);
 
+	//parent gabarite for autoalign
+	std::vector<ERegionGabarite*> child_gabarite_list;
+	ERegionGabarite* parent_gabarite = nullptr;
+	
+	float				offset_by_size_x = 0.0f;
+	float				offset_by_size_y = 0.0f;
+
+	float				offset_by_parent_size_x = 0.0f;
+	float				offset_by_parent_size_y = 0.0f;
+
+	float				offset_by_pixels_x = 0.0f;
+	float				offset_by_pixels_y = 0.0f;
+	//
+
 	float offset_x = 0.0f;
 	float offset_y = 0.0f;
 	float offset_z = 0.0f;
@@ -120,14 +134,18 @@ public:
 
 	void translate(float _x, float _y);
 
-	static ERegionGabarite* temporary_gabarite;
-	void set_region_offset_and_size(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
-	bool overlapped_by_mouse();
+	static	ERegionGabarite*			temporary_gabarite;
+	void	set_region_offset_and_size	(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y);
+	//void	set_region_size			(float _size_x, float _size_y);
+	bool	overlapped_by_mouse();
 
 	unsigned int pointers_to_this_object = 0;
 	//unsigned int* pointer_id = new unsigned int(0);
 	static void set_region_gabarite(ERegionGabarite** _destination, ERegionGabarite* _source);
-	void* parent_region;
+	//void* parent_region;
+
+	void add_child_to_this_region(ERegionGabarite* _child);
+	void align_all_clild_gabarites();
 
 	float phantom_translate_x;
 	float phantom_translate_y;
@@ -158,8 +176,13 @@ public:
 	EClickableArea();
 	~EClickableArea();
 
-	ERegionGabarite*	region_gabarite;
-	bool				original_region_gabarite = false;
+	bool debug_updating = false;
+
+
+
+	ERegionGabarite*					region_gabarite;
+	bool								original_region_gabarite = false;
+	ERegionGabarite*					draw_only_is_specific_region_overlapped = nullptr;
 
 	std::vector<ESpriteLayer*>			sprite_layer_list;
 	//ESpriteLayer*						internal_sprite_layer;
@@ -248,17 +271,17 @@ enum class StoredPointerType
 class EDataContainerRadialButton : public EDataContainer
 {
 public:
-	float* min_value = new float(0.0f);
-	float* max_value = new float(5.0f);
+	float min_value =0.0f;
+	float max_value =5.0f;
 
 	void* value_pointer = nullptr;
 
-	float* current_percent = new float(0.0f);
-	float* step_multiplier = new float(1.0f);
+	float current_percent = 0.0f;
+	float step_multiplier = 1.0f;
 
 	std::string text = "";
 
-	StoredPointerType* stored_type = new StoredPointerType(StoredPointerType::STORED_TYPE_FLOAT);
+	StoredPointerType stored_type = StoredPointerType::STORED_TYPE_FLOAT;
 
 	~EDataContainerRadialButton();
 	//EButtonGroup* parent_button_group;
@@ -544,7 +567,7 @@ namespace EDataActionCollection
 	void action_open_color_group(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_add_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_add_wide_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d);
+	
 
 	void action_update_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_draw_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -572,6 +595,7 @@ namespace EDataActionCollection
 	void action_select_rotate_variant_from_list(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_invoke_stored_confirm_action(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_close_program(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_cancel_closing_program(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_set_unsaved_changes(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void action_active_filter_block						(Entity* _entity, ECustomData* _custom_data, float _d);
 

@@ -66,7 +66,7 @@ public:
 
 	void generate_vertex_buffer_for_all_sprite_layers();
 	void transfer_all_vertex_buffers_to_batcher();
-	void set_world_position(float _x, float _y, float _z);
+	void set_world_positions(float _x, float _y, float _z);
 	void set_world_position_w(ERegionGabarite* _region_gabarite);
 	void set_world_position_l(ERegionGabarite* _region_gabarite);
 
@@ -150,6 +150,7 @@ public:
 	bool update_when_scissored = false;
 	bool align_even_if_hidden = false;
 	bool do_not_generate_bg = false;
+	bool cannot_be_auto_deleted = false;
 
 	void destroy_attached_description();
 	EButtonGroup* attached_description;
@@ -194,7 +195,8 @@ public:
 		ERegionGabarite* _region_gabarite,
 		EButtonGroup* _parent_group,
 		EDataEntity* _data_entity,
-		EFont* _font
+		EFont* _font,
+		bool _can_be_deleted
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
@@ -318,12 +320,12 @@ public:
 struct RouterVariant
 {
 public:
-	ELocalisationText* localisation = nullptr;
-	HSVRGBAColor* color;
-	ETextureGabarite* texture = nullptr;
-	ELocalisationText* localisation_for_select_window;
+	ELocalisationText*	localisation = nullptr;
+	HSVRGBAColor*		color;
+	ETextureGabarite*	texture = nullptr;
+	ELocalisationText*	localisation_for_select_window;
 
-	bool						do_not_delete_me = false;
+	bool				do_not_delete_me = false;
 
 	~RouterVariant();
 
@@ -389,6 +391,7 @@ class EntityButtonVariantRouterSelector : public EntityButton
 public:
 	int							id = 0;
 	EButtonGroupRouterVariant* parent_router_group;
+	~EntityButtonVariantRouterSelector();
 };
 
 
@@ -396,6 +399,7 @@ class EntityButtonMultiSearch : public EntityButton
 {
 public:
 	std::vector <EButtonGroup*> target_group_list;
+	~EntityButtonMultiSearch();
 };
 
 
@@ -404,7 +408,7 @@ class EntityButtonColorButton : public EntityButton
 public:
 	HSVRGBAColor*			stored_color;
 	ColorButtonMode			selected_mode = ColorButtonMode::CBM_OPEN_WINDOW;
-
+	~EntityButtonColorButton();
 	HRA_color_collection*	parent_color_collection;
 };
 
@@ -412,7 +416,8 @@ public:
 class EntityButtonVerticalSlider : public EntityButton
 {
 public:
-	virtual ~EntityButtonVerticalSlider();
+	~EntityButtonVerticalSlider();
+
 
 	float workspace_height = 0.0f;
 
@@ -428,6 +433,8 @@ public:
 	EBrickStyle* slider_inactive;
 
 	float scroll_speed = 0.0f;
+
+
 
 };
 

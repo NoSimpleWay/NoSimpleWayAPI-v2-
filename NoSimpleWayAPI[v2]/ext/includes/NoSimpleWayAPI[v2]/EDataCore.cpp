@@ -84,7 +84,7 @@ void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* 
 	{
 
 		//NS_ERenderCollection::generate_brick_texture(_custom_data->clickable_area_list[0]->region_gabarite, _entity->sprite_layer_list[0], NS_DefaultGabarites::texture_lead_and_gold, nullptr, nullptr);
-		_entity->set_world_position(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
+		_entity->set_world_positions(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
 		_entity->generate_vertex_buffer_for_all_sprite_layers();
 
 
@@ -185,7 +185,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			{
 				*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id = 1;
 
-				_entity->set_world_position(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
+				_entity->set_world_positions(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
 				_entity->generate_vertex_buffer_for_all_sprite_layers();
 			}
 		}
@@ -299,7 +299,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 
 			entity_button->parent_button_group->translate_content(0.0f, diff, 0.0f, false);
 
-			_entity->set_world_position(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
+			_entity->set_world_positions(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
 			entity_button->generate_vertex_buffer_for_all_sprite_layers();
 
 			//EInputCore::logger_param("scroll_y", *data_bar->value_pointer);
@@ -321,7 +321,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 		{
 			*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id = 0;
 
-			_entity->set_world_position(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
+			_entity->set_world_positions(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
 			_entity->generate_vertex_buffer_for_all_sprite_layers();
 		}
 
@@ -580,15 +580,6 @@ void EDataActionCollection::action_delete_entity(Entity* _entity, ECustomData* _
 	_entity->need_remove = true;
 
 	EInputCore::logger_simple_info("try mark as removed");
-	//_entity->translate_entity(20.0f, 20.0f, 20.0f);
-	//((EWindowMain*)EWindow::window_list[0])->
-
-	//for (TestObject* to : EWindow::window_list[0]->test_vector)
-	//{
-	//	delete to;
-	//}
-
-	//EInputCore::logger_simple_try("set 'need remove' flag");
 }
 
 void EDataActionCollection::action_switch_description(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -659,7 +650,7 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 
 		((EntityButton*)_entity)->force_draw = false;
 
-		if (*data_container->stored_type == StoredPointerType::STORED_TYPE_FLOAT)
+		if (data_container->stored_type == StoredPointerType::STORED_TYPE_FLOAT)
 		{
 			//if (EInputCore::MOUSE_POSITION_X <= *radial_sprite->world_position_x + size / 2.0f)
 			//{*(float*)(d_pointer) += (EInputCore::MOUSE_SPEED_Y) * 0.002f;}
@@ -671,10 +662,10 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 			//else
 			//{*(float*)(d_pointer) += (EInputCore::MOUSE_SPEED_X) * 0.002f;}
 
-			* (float*)(d_pointer) += pow(EInputCore::MOUSE_SPEED_X, 2) * direction_x * 0.001f * shift_multiplier;
+			*(float*)(d_pointer) += pow(EInputCore::MOUSE_SPEED_X, 2) * direction_x * 0.001f * shift_multiplier;
 
-			*(float*)(d_pointer) = min(*(float*)(d_pointer), *data_container->max_value);
-			*(float*)(d_pointer) = max(*(float*)(d_pointer), *data_container->min_value);
+			*(float*)(d_pointer) = min(*(float*)(d_pointer), data_container->max_value);
+			*(float*)(d_pointer) = max(*(float*)(d_pointer), data_container->min_value);
 
 			dot_sprite->offset_x
 				=
@@ -700,7 +691,7 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 		}
 
 
-		_entity->set_world_position(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
+		_entity->set_world_positions(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
 		_entity->generate_vertex_buffer_for_all_sprite_layers();
 	}
 
@@ -745,8 +736,7 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 		{
 			//data_container->pointer_to_group_with_data_entities->scroll_y = 0.0f;
 
-			for (EntityButton* but : data_container->pointer_to_group_with_data_entities->button_list)
-				if (but != data_container->pointer_to_group_with_data_entities->slider)
+			for (EntityButton* but : data_container->pointer_to_group_with_data_entities->workspace_button_list)
 				{
 
 
@@ -809,8 +799,7 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 		//std::string inputed_text = EStringUtils::to_lower(target_text);
 
 		for (EButtonGroup* button_group : multisearch_data_container->target_group_list)
-			for (EntityButton* but : button_group->button_list)
-				if (but != button_group->slider)
+			for (EntityButton* but : button_group->workspace_button_list)
 				{
 					match = false;
 
@@ -884,8 +873,7 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 			group_data->target_color_button = clicked_button;
 
 			if (group_data->pointer_to_color_collection_sector != nullptr)
-				for (EntityButton* but : group_data->pointer_to_color_collection_sector->button_list)
-				if (but != group_data->pointer_to_color_collection_sector->slider)
+				for (EntityButton* but : group_data->pointer_to_color_collection_sector->workspace_button_list)
 				{
 					//color collection on color editor								button which open editor
 					if (static_cast<EntityButtonColorButton*>(but)->stored_color == clicked_button->stored_color)
@@ -996,55 +984,11 @@ void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, E
 		data_entity_holder->stored_data_entity
 	);
 
-	receiver->button_list.push_back(jc_button);
+	receiver->add_button_to_working_group(jc_button);
 	//receiver->button_list.clear();
 	EButtonGroup::refresh_button_group(receiver->root_group);
 }
 
-void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d)
-{
-	EButtonGroup* parent_group = ((EntityButton*)_entity)->parent_button_group;
-	EButtonGroup* root_group = parent_group->root_group;
-	EDataContainer_Group_DataEntitiesSearch* data = (EDataContainer_Group_DataEntitiesSearch*)root_group->data_container;
-	EButtonGroup* receiver = data->pointer_to_group_item_receiver;
-	EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
-
-	EInputCore::logger_simple_info("!!!");
-	//EInputCore::logger_simple_info(std::to_string(_entity->custom_data_list[0]->ac));
-
-	float temp_width = 220.0f;
-
-	//if (data->target_rule. )
-	EntityButton* jc_button = EntityButton::create_wide_item_button
-	(
-		new ERegionGabarite(temp_width, 40.0f),
-		receiver,
-		data_entity_holder->stored_data_entity,
-		EFont::font_list[0]
-	);
-
-if
-(
-	(data_entity_holder->stored_data_entity != nullptr)
-	&&
-	(DataEntityUtils::is_exist_tag_by_name_and_value(0, "explicit tag", "base name collision", data_entity_holder->stored_data_entity))
-)
-	{
-		jc_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = jc_button->main_text_area->localisation_text.base_name;
-		jc_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = jc_button->main_text_area->localisation_text.base_name;
-
-		jc_button->main_text_area->change_text(jc_button->main_text_area->localisation_text.base_name);
-	}
-
-	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-	{
-		root_group->is_active = false;
-	}
-
-	receiver->button_list.push_back(jc_button);
-	//receiver->button_list.clear();
-	EButtonGroup::change_group(receiver);
-}
 
 void EDataActionCollection::action_update_crosshair_slider(Entity* _entity, ECustomData* _custom_data, float _d)
 {
@@ -1588,7 +1532,7 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 		ColorButtonMode::CBM_SELECT_COLOR
 	);
 	//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
-	group_data->pointer_to_color_collection_sector->button_list.push_back(jc_button);
+	group_data->pointer_to_color_collection_sector->add_button_to_working_group(jc_button);
 	EButtonGroup::refresh_button_group(root_group);
 
 	//group_data->pointer_to_color_collection_group->selected_button = jc_button;
@@ -1675,6 +1619,7 @@ void EDataActionCollection::action_switch_boolean_value(Entity* _entity, ECustom
 
 void EDataActionCollection::action_rotate_variant(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	EInputCore::logger_simple_info("call [action_rotate_variant]");
 	EntityButtonVariantRouter* button_variant_router = (EntityButtonVariantRouter*)_entity;
 	
 	if (button_variant_router->rotate_variant_mode == RotateVariantMode::SELECT_NEXT)
@@ -1735,6 +1680,12 @@ void EDataActionCollection::action_close_program(Entity* _entity, ECustomData* _
 	EInputCore::NSW_have_unsave_changes = false;
 }
 
+void EDataActionCollection::action_cancel_closing_program(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	static_cast<EntityButton*>(_entity)->parent_button_group->root_group->is_active = false;
+	glfwSetWindowShouldClose(NS_EGraphicCore::main_window, 0);
+}
+
 void EDataActionCollection::action_set_unsaved_changes(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EInputCore::NSW_have_unsave_changes = true;
@@ -1787,7 +1738,9 @@ EClickableArea::~EClickableArea()
 	}
 
 	if (text_area != nullptr)
-	{delete text_area;}
+	{
+		if (!disable_deleting) { delete text_area; }
+	}
 }
 
 bool EClickableArea::overlapped_by_mouse(EClickableArea* _region, float _offset_x, float _offset_y, float _zoom)
@@ -2123,6 +2076,11 @@ void EClickableArea::update(float _d)
 		check_all_catches();
 	}
 
+	if ((debug_updating)&&(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT)))
+	{
+		EInputCore::logger_simple_info("update clickable area");
+	}
+
 	//left click
 	for (data_action_pointer dap : actions_on_click_list)
 	if
@@ -2130,15 +2088,31 @@ void EClickableArea::update(float _d)
 				(dap != nullptr)
 				&&
 				(parent_entity != nullptr)
+				//&&
+				//(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
+				//&&
+				//(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
 				&&
-				(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
-				&&
-				(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+				(EClickableArea::active_clickable_region == this)
 				&&
 				(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
 	)
 	{
+		EInputCore::logger_simple_info("call [actions on click list]");
 		dap(parent_entity, parent_custom_data, _d);
+	}
+	else
+	{
+		if (debug_updating)
+		{
+			if (EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
+			{
+				if (dap == nullptr) { EInputCore::logger_simple_error("DAP is NULL"); }
+				if (parent_entity == nullptr) { EInputCore::logger_simple_error("parent entity is NULL"); }
+				//if (EButtonGroup::focused_button_group_mouse_unpressed != ((EntityButton*)parent_entity)->parent_button_group) { EInputCore::logger_simple_error("parent group not focused"); }
+				if (EClickableArea::active_clickable_region != this) { EInputCore::logger_simple_error("this clickable region not active"); }
+			}
+		}
 	}
 
 	//right click
@@ -2184,19 +2158,48 @@ void EClickableArea::update(float _d)
 void EClickableArea::draw()
 {
 	//if ((parent_custom_data != nullptr)&&(*parent_custom_data->is_second_pass)) { EInputCore::logger_simple_info("idiot?"); }
-	if (!sprite_layer_list.empty())
+	if
+	(
+		(draw_only_is_specific_region_overlapped == nullptr)
+		||
+		(draw_only_is_specific_region_overlapped->overlapped_by_mouse())
+	)
 	{
-		for (ESpriteLayer* s_layer : sprite_layer_list)
+		if (!sprite_layer_list.empty())
 		{
-			s_layer->transfer_vertex_buffer_to_batcher();
+			for (ESpriteLayer* s_layer : sprite_layer_list)
+			{
+				s_layer->transfer_vertex_buffer_to_batcher();
+			}
 		}
-	}
 
-	if ((batcher_for_default_draw != nullptr) && (EInputCore::key_pressed(GLFW_KEY_RIGHT_ALT)))
-	{
-		if (EClickableArea::overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+		if ((batcher_for_default_draw != nullptr) && (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT)))
 		{
-			NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.2f);
+			if (active_clickable_region == this)
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.75f);
+
+				ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
+
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					batcher_for_default_draw->vertex_buffer,
+					batcher_for_default_draw->last_vertice_buffer_index,
+
+					region_gabarite->world_position_x,
+					region_gabarite->world_position_y,
+
+					region_gabarite->size_x,
+					region_gabarite->size_y,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+			}
+			//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+			NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_left));
+			//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_left)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+			//if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+			if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
 			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
 
@@ -2205,152 +2208,137 @@ void EClickableArea::draw()
 				batcher_for_default_draw->vertex_buffer,
 				batcher_for_default_draw->last_vertice_buffer_index,
 
-				region_gabarite->world_position_x,
+				region_gabarite->world_position_x - 2.0f,
 				region_gabarite->world_position_y,
 
-				region_gabarite->size_x,
+				2.0f,
 				region_gabarite->size_y,
 
 				NS_DefaultGabarites::texture_gabarite_white_pixel
 			);
-		}
-		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_left));
-		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_left)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-		//if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+			//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+			NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_right));
+			//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_right)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+			if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
 
-		ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
-
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			batcher_for_default_draw->vertex_buffer,
-			batcher_for_default_draw->last_vertice_buffer_index,
-
-			region_gabarite->world_position_x - 2.0f,
-			region_gabarite->world_position_y,
-
-			2.0f,
-			region_gabarite->size_y,
-
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-		);
-		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_right));
-		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_right)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-
-		ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
-
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			batcher_for_default_draw->vertex_buffer,
-			batcher_for_default_draw->last_vertice_buffer_index,
-
-			region_gabarite->world_position_x + region_gabarite->size_x,
-			region_gabarite->world_position_y,
-
-			2.0f,
-			region_gabarite->size_y,
-
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-		);
-		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_down));
-		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_down)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-
-		ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
-
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			batcher_for_default_draw->vertex_buffer,
-			batcher_for_default_draw->last_vertice_buffer_index,
-
-			region_gabarite->world_position_x - 2.0f,
-			region_gabarite->world_position_y - 2.0f,
-
-			region_gabarite->size_x + 4.0f,
-			2.0f,
-
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-		);
-		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_up));
-		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_up)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-
-		ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
-
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			batcher_for_default_draw->vertex_buffer,
-			batcher_for_default_draw->last_vertice_buffer_index,
-
-			region_gabarite->world_position_x - 2.0f,
-			region_gabarite->world_position_y + region_gabarite->size_y,
-
-			region_gabarite->size_x + 4.0f,
-			2.0f,
-
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-		);
-		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_mid));
-		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_mid)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-
-		ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
-
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			batcher_for_default_draw->vertex_buffer,
-			batcher_for_default_draw->last_vertice_buffer_index,
-
-			region_gabarite->world_position_x + region_gabarite->size_x / 2.0f - 3.0f,
-			region_gabarite->world_position_y + region_gabarite->size_y / 2.0f - 3.0f,
-
-			6.0f,
-			6.0f,
-
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-		);
-
-		//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_body));
-		//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_body)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-		if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
-
-		if (catched_body)
-		{
 			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
+
 			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 			(
 				batcher_for_default_draw->vertex_buffer,
 				batcher_for_default_draw->last_vertice_buffer_index,
 
-				region_gabarite->world_position_x,
+				region_gabarite->world_position_x + region_gabarite->size_x,
 				region_gabarite->world_position_y,
 
-				region_gabarite->size_x,
+				2.0f,
 				region_gabarite->size_y,
 
 				NS_DefaultGabarites::texture_gabarite_white_pixel
 			);
+			//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+			NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_down));
+			//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_down)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+			if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+
+			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
+
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				batcher_for_default_draw->vertex_buffer,
+				batcher_for_default_draw->last_vertice_buffer_index,
+
+				region_gabarite->world_position_x - 2.0f,
+				region_gabarite->world_position_y - 2.0f,
+
+				region_gabarite->size_x + 4.0f,
+				2.0f,
+
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+			//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+			NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_up));
+			//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_up)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+			if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+
+			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
+
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				batcher_for_default_draw->vertex_buffer,
+				batcher_for_default_draw->last_vertice_buffer_index,
+
+				region_gabarite->world_position_x - 2.0f,
+				region_gabarite->world_position_y + region_gabarite->size_y,
+
+				region_gabarite->size_x + 4.0f,
+				2.0f,
+
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+			//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+			NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_side_mid));
+			//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_side_mid)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+			if (active_clickable_region == this) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+
+			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
+
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				batcher_for_default_draw->vertex_buffer,
+				batcher_for_default_draw->last_vertice_buffer_index,
+
+				region_gabarite->world_position_x + region_gabarite->size_x / 2.0f - 3.0f,
+				region_gabarite->world_position_y + region_gabarite->size_y / 2.0f - 3.0f,
+
+				6.0f,
+				6.0f,
+
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+
+			//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--
+			NS_EGraphicCore::set_active_color(NS_EColorUtils::choose_from_two(NS_EColorUtils::COLOR_GREEN, NS_EColorUtils::COLOR_BLACK, catched_body));
+			//if ((EInputCore::MOUSE_BUTTON_LEFT) && (*catched_body)) { NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BLUE); }
+			if
+				(
+					(active_clickable_region == this)
+					)
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_PINK, 0.5f);
+			}
+
+			if ((catched_body) && (EInputCore::MOUSE_BUTTON_LEFT))
+			{
+				ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					batcher_for_default_draw->vertex_buffer,
+					batcher_for_default_draw->last_vertice_buffer_index,
+
+					region_gabarite->world_position_x,
+					region_gabarite->world_position_y,
+
+					region_gabarite->size_x,
+					region_gabarite->size_y,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+			}
+
+			//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 >= 39000) { batcher_for_default_draw->draw_call(); }
+		}
+		else
+		{
+			if (batcher_for_default_draw == nullptr) { EInputCore::logger_simple_error("batcher for default draw is null!"); }
 		}
 
-		//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 >= 39000) { batcher_for_default_draw->draw_call(); }
-	}
-	else
-	{
-		if (batcher_for_default_draw == nullptr) { EInputCore::logger_simple_error("batcher for default draw is null!"); }
-	}
+		if (text_area != nullptr)
+		{
+			//if (*parent_custom_data->is_second_pass) { EInputCore::logger_simple_info(*text_area->stored_text); }
 
-	if (text_area != nullptr)
-	{
-		//if (*parent_custom_data->is_second_pass) { EInputCore::logger_simple_info(*text_area->stored_text); }
-
-		text_area->draw();
+			text_area->draw();
+		}
 	}
 
 
@@ -2390,16 +2378,7 @@ ERegionGabarite::ERegionGabarite()
 
 ERegionGabarite::~ERegionGabarite()
 {
-	/*delete offset_x;
-	delete offset_y;
-	delete offset_z;
 
-	delete size_x;
-	delete size_y;
-
-	delete world_position_x;
-	delete world_position_y;
-	delete world_position_z;*/
 
 }
 
@@ -2515,6 +2494,25 @@ void ERegionGabarite::set_region_gabarite(ERegionGabarite** _target_region, EReg
 
 }
 
+void ERegionGabarite::add_child_to_this_region(ERegionGabarite* _child)
+{
+	child_gabarite_list.push_back(_child);
+	_child->parent_gabarite = this;
+}
+
+void ERegionGabarite::align_all_clild_gabarites()
+{
+	for (ERegionGabarite* rg : child_gabarite_list)
+	{
+		rg->offset_x = offset_x;
+		rg->offset_y = offset_y;
+		rg->offset_z = offset_z;
+
+		rg->offset_x += size_x * rg->offset_by_parent_size_x + rg->size_x * rg->offset_by_size_x + rg->offset_by_pixels_x;
+		rg->offset_y += size_y * rg->offset_by_parent_size_y + rg->size_y * rg->offset_by_size_y + rg->offset_by_pixels_y;
+	}
+}
+
 ECustomData::ECustomData()
 {
 }
@@ -2525,10 +2523,7 @@ ECustomData::~ECustomData()
 	{
 		if (clickable_area != nullptr)
 		{
-			if (!disable_deleting)
-			{
-				delete clickable_area;
-			}
+			if (!disable_deleting) {delete clickable_area;}
 			//clickable_area = nullptr;
 		}
 	}
@@ -2551,9 +2546,7 @@ ECustomData::~ECustomData()
 
 	if (data_container != nullptr)
 	{
-		if (!disable_deleting) {
-			delete data_container;
-		}
+		if (!disable_deleting) {delete data_container;}
 	}
 
 }
@@ -2573,10 +2566,10 @@ void ECustomData::draw()//(if (but->description_data != nullptr) { but->descript
 			}
 
 		for (EClickableArea* clickable_area : clickable_area_list)
-			if (clickable_area != nullptr)
-			{
+		if (clickable_area != nullptr)
+		{
 				clickable_area->draw();
-			}
+		}
 
 		for (data_action_pointer dap : actions_on_draw)
 			if (dap != nullptr)
@@ -2709,20 +2702,12 @@ ESpriteFrame* ECustomData::get_sprite_frame_by_id(unsigned int _clickable_region
 
 EDataContainerMessage::~EDataContainerMessage()
 {
-	if (!disable_deleting)
-	{
-		delete message;
-	}
+	if (!disable_deleting) {delete message;}
 }
 
 EDataContainerScrollBar::~EDataContainerScrollBar()
 {
-	if (!disable_deleting) {
-		delete max_value;
-		delete& value_pointer;
-
-		delete current_percent;
-	}
+	if (!disable_deleting) {delete max_value; delete value_pointer; delete current_percent;}
 }
 
 //static registere section
@@ -3140,10 +3125,7 @@ EDataContainerRadialButton::~EDataContainerRadialButton()
 {
 	if (!disable_deleting)
 	{
-		delete min_value;
-		delete max_value;
-		delete current_percent;
-		delete stored_type;
+
 	}
 }
 

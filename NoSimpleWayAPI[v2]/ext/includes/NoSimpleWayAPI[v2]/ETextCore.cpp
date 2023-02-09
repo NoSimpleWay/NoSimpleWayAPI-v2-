@@ -325,45 +325,30 @@ ETextArea::~ETextArea()
 
 			if (region_gabarite->pointers_to_this_object <= 0)
 			{
-				if (!disable_deleting)
-				{
-					delete region_gabarite;
-				}
+				if (!disable_deleting) {delete region_gabarite;}
 				//EInputCore::logger_simple_success("deleting text area gabarite");
 			}
 		}
 
 		//delete		stored_text;
 
+		if (!disable_deleting)
 		for (std::string* _row : row) { delete _row; }
 		row.clear();
 		row.shrink_to_fit();
 
-		//delete row_count;
-		//delete translate_region_gabarite;
-		//delete& master_clickable_region;
-		//delete offset_by_gabarite_size_x;
-		//delete offset_by_gabarite_size_y;
-		//delete offset_by_text_size_x;
-		//delete offset_by_text_size_y;
 
-		//delete can_be_edited;
-		delete sprite_layer;
+		if (!disable_deleting) {
+			delete sprite_layer;
+		}
 
+		if (!disable_deleting)
 		for (EFontGlyph* glyph : font_glyph_list)
 		{
 			delete glyph;
 		}
 		font_glyph_list.clear();
 		font_glyph_list.shrink_to_fit();
-
-		//delete selected_glyph_position;
-		//delete flash_line_active;
-		//delete flash_line_cooldown;
-
-		//delete jump_cooldown;
-		//delete text_area_active;
-		//delete _unused_border_offset;
 	}
 
 }

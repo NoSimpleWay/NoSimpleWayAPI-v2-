@@ -101,7 +101,7 @@ public:
 	//int a;
 	//EntityButtonFilterBlock() : a(0) {};
 	EntityButtonForFilterBlock();
-	virtual ~EntityButtonForFilterBlock();
+	~EntityButtonForFilterBlock();
 };
 
 class EntityButtonForLootFilterSelector : public EntityButton
@@ -266,20 +266,20 @@ public:
 	float	sound_volume_value = 1.0f;
 
 
-	EntityButtonVariantRouterForFilterBlock* pointer_to_positional_variant_button;
-	EntityButtonVariantRouterForFilterBlock* pointer_to_disable_enable_drop_sound;
-	EntityButtonVariantRouterForFilterBlock* pointer_to_optional_user_sound;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_positional_variant_button;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_disable_enable_drop_sound;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_optional_user_sound;
 
 
 
 	//		MINIMAP ICONS SECTION
-	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_color_router;
-	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_size_router;
-	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_shape_router;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_minimap_icon_color_router;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_minimap_icon_size_router;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_minimap_icon_shape_router;
 
 	//		RAY SECTION
-	EntityButtonVariantRouterForFilterBlock* pointer_to_ray_color_router;
-	EntityButtonVariantRouterForFilterBlock* pointer_to_temporary_option_router;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_ray_color_router;
+	EntityButtonVariantRouterForFilterBlock*	pointer_to_temporary_option_router;
 	bool										ray_suppressor;
 
 	//[0]"Full ignore",
@@ -429,6 +429,13 @@ public:
 	GameItemAttribute* target_filter_block_attribute;
 };
 
+class EButtonGroupFilterEditorTopHeader : public EButtonGroup
+{
+public:
+	EButtonGroupFilterEditorTopHeader(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+	EButtonGroup* pointer_to_bottom_tabs_section;
+};
+
 
 
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
@@ -445,7 +452,7 @@ public:
 	EntityButtonVariantRouterForFilterBlock* match_mode_router_button;
 
 	std::string				filter_attribute_name;
-	GameItemAttribute* associated_item_attribute;
+	GameItemAttribute*		associated_item_attribute;
 
 	//EntityButton*			button_with;
 	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
@@ -512,10 +519,15 @@ namespace EDataActionCollection
 	void action_create_or_delete_description_on_hover	(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_and_refresh_loot_simulator			(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_change_localisation						(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_remove_wide_button						(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_set_unsave_changes_flag					(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_add_wide_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text
 	void action_type_search_filter_block_text(ETextArea* _text_area);
 	void action_refresh_loot_simulator_when_type(ETextArea* _text_area);
+	void action_set_unsave_changes_flag(ETextArea* _text_area);
 
 
 
@@ -642,6 +654,8 @@ enum class LootFlterOpenMode
 	LOOT_FILTER_OPEN_MODE_DEFAULT_FILTER_FROM_GAME
 
 };
+
+
 constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow
 {
@@ -673,6 +687,7 @@ public:
 	static EButtonGroupDataEntity* data_entity_filter;
 	static EButtonGroupBottomFilterBlockControl* bottom_filter_block_control;
 	static EButtonGroupLootSimulator* loot_simulator_button_group;
+	static EButtonGroupFilterEditorTopHeader* header_line;
 
 	static std::string username;
 	static std::string path_of_exile_folder;
@@ -701,6 +716,7 @@ public:
 	//static bool disable_deleting = true;
 
 	static std::vector <EButtonGroupFilterBlockEditor*> filter_block_tabs;
+	static int selected_filter_tab_id;
 	static void write_loot_filter_to_disc(std::string _full_path, std::string* _data);
 
 	static void register_loot_simulator_patterns();
@@ -730,7 +746,8 @@ public:
 	static void register_pattern_all_currencies();
 
 	static void set_color_version(HSVRGBAColor* _target_color, int _selected_mode);
-
+	static void make_unsaved_loot_filter_changer();
+	static void remove_unsave_changes_flag();
 
 };
 
