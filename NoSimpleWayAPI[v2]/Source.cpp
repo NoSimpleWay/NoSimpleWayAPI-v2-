@@ -107,91 +107,16 @@ int main()
 	srand(time(nullptr));
 
 	//ACCEPT/DECLINE GROUP
-	EButtonGroup*
-		whole_close_group = new EButtonGroup(new ERegionGabarite(350.0f, 150.0f));
-	whole_close_group->root_group = whole_close_group;
-	whole_close_group->is_active = false;
+		EButtonGroupConfirmAction*
+		whole_close_group = new EButtonGroupConfirmAction(new ERegionGabarite(350.0f, 150.0f));
 
-	EButtonGroup::confirm_decline_group = whole_close_group;
+		whole_close_group->init_as_confirm_decline_group();
+		EButtonGroupConfirmAction::confirm_decline_group = whole_close_group;
 
-	whole_close_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
-
-
-	EButtonGroup*
-		close_group_workspace_part = whole_close_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
-	close_group_workspace_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-
-
-	EButtonGroup*
-		bottom_part_for_buttons = close_group_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(250.0f, 30.0f)));
-	bottom_part_for_buttons->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
-	bottom_part_for_buttons->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
-	bottom_part_for_buttons->button_size_x_override = 150.0f;
-
-	EButtonGroup*
-		top_part_for_description = close_group_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(250.0f, 50.0f)));
-	top_part_for_description->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
-	top_part_for_description->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-
-
-	//text area
-	ELocalisationText l_text;
-
-	EClickableArea*
-		c_area_for_group = EClickableArea::create_default_clickable_region(top_part_for_description->region_gabarite, top_part_for_description);
-
-	ETextArea*
-		text_area_for_group = ETextArea::create_centered_text_area(c_area_for_group, EFont::font_list[0], "123");
-
-	c_area_for_group->text_area = text_area_for_group;
-	text_area_for_group->localisation_text.localisations[NSW_localisation_EN] = "Warning! Unsaved changes!\\n\\nIf you continue, you lost unsaved data!";
-	text_area_for_group->localisation_text.localisations[NSW_localisation_RU] = "Внимание! Несохранённые изменения!\\n\\nЕсли вы продолжите, вы потеряете несохранённые данные!";
-	text_area_for_group->change_text(text_area_for_group->localisation_text.localisations[ELocalisationText::active_localisation]);
-	text_area_for_group->set_color(1.0f, 0.75f, 0.5f, 1.0f);
-	top_part_for_description->clickable_area_list.push_back(c_area_for_group);
+		EWindowMain::link_to_main_window->button_group_list.push_back(whole_close_group);
 	//
 
 
-	l_text.localisations[NSW_localisation_EN] = "Close program";
-	l_text.localisations[NSW_localisation_RU] = "Выйти из программы";
-	EntityButtonConfirmAction*
-	button_yes = new EntityButtonConfirmAction();
-	button_yes->stored_action = &EDataActionCollection::action_close_program;
-
-	button_yes->make_default_button_with_unedible_text
-	(
-		new ERegionGabarite(100.0f, 25.0f),
-		bottom_part_for_buttons,
-		&EDataActionCollection::action_invoke_stored_confirm_action,
-		l_text.localisations[ELocalisationText::active_localisation]
-	);
-
-	button_yes->main_text_area->set_color(1.0f, 0.2f, 0.1f, 1.0f);
-	button_yes->main_text_area->localisation_text = l_text;
-	bottom_part_for_buttons->add_button_to_working_group(button_yes);
-
-
-
-
-
-	l_text.localisations[NSW_localisation_EN] = "Cancel";
-	l_text.localisations[NSW_localisation_RU] = "Отмена";
-	EntityButtonConfirmAction*
-		button_no = new EntityButtonConfirmAction();
-	button_no->make_default_button_with_unedible_text
-	(
-		new ERegionGabarite(100.0f, 25.0f),
-		bottom_part_for_buttons,
-		&EDataActionCollection::action_invoke_stored_confirm_action,
-		l_text.localisations[ELocalisationText::active_localisation]
-	);
-	button_no->main_text_area->localisation_text = l_text;
-	button_no->stored_action = &EDataActionCollection::action_cancel_closing_program;
-	bottom_part_for_buttons->add_button_to_working_group(button_no);
-
-
-	EButtonGroup::refresh_button_group(whole_close_group);
-	EWindowMain::link_to_main_window->button_group_list.push_back(whole_close_group);
 
 	while
 		(
@@ -204,13 +129,13 @@ int main()
 			(
 				(EInputCore::NSW_have_unsave_changes)
 				&&
-				(!EButtonGroup::confirm_decline_group->is_active)
+				(!EButtonGroupConfirmAction::confirm_decline_group->button_group_is_active)
 				&&
 				(glfwWindowShouldClose(NS_EGraphicCore::main_window))
 				)
 		{
-			EButtonGroup::confirm_decline_group->move_to_foreground_and_center();
-			EButtonGroup::confirm_decline_group->is_active = true;
+			EButtonGroupConfirmAction::confirm_decline_group->move_to_foreground_and_center();
+			EButtonGroupConfirmAction::confirm_decline_group->button_group_is_active = true;
 		}
 
 		if (!ETextureGabarite::incomplete_gabarites_list.empty())

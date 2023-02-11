@@ -11,9 +11,9 @@ irrklang::ISoundSource* ESound::shootSound;
 void ESound::irrKlang_initiate_sound_engine()
 {
 	engine = irrklang::createIrrKlangDevice();
-	shootSound = engine->addSoundSourceFromFile("data/sounds/flippy.wav");
+	//shootSound = engine->addSoundSourceFromFile("data/sounds/flippy.wav");
 
-	engine->play2D(shootSound);
+	//engine->play2D(shootSound);
 }
 
 ENamedSound::ENamedSound(std::string _path)

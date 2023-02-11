@@ -16,7 +16,7 @@
 
 void Entity::draw()
 {
-	if ((!disable_draw) && (!disabled))
+	if (entity_is_active())
 	{
 		{transfer_all_vertex_buffers_to_batcher();}
 
@@ -24,25 +24,20 @@ void Entity::draw()
 		//custom data store clickable regions and text
 		if (!custom_data_list.empty())
 		{
-			for (ECustomData* c_data : custom_data_list) if (c_data != nullptr) { c_data->draw(); }
+			for (ECustomData* c_data : custom_data_list) if (c_data != nullptr) { c_data->custom_data_draw(); }
 		}
 	}
-
-	//for (ECustomData* custom_data :custom_data_list)
-	//{
-	//	custom_data->draw();
-	//}
 }
 
 void Entity::draw_second_pass()
 {
-	if ((!disable_draw) && (!disabled))
+	if (entity_is_active())
 	{
 		//custom data store clickable regions and text
 		if (!custom_data_list.empty())
 		{
 			for (ECustomData* c_data : custom_data_list)
-				if (c_data != nullptr) { c_data->draw_second_pass(); }
+			if (c_data != nullptr) { c_data->draw_second_pass(); }
 		}
 	}
 	else
@@ -210,11 +205,16 @@ void Entity::translate_custom_data(float _x, float _y, float _z, bool _move_loca
 	if (c_data != nullptr) {c_data->translate_custom_data(_x, _y, _z, false);}
 }
 
+bool Entity::entity_is_active()
+{
+	return (!entity_disabled);
+}
+
 void Entity::update(float _d)
 {
 	//translate_entity(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f);
 
-	if ((!disabled) && (!disable_draw))
+	if (entity_is_active())
 	for (ECustomData* c_data : custom_data_list)
 	if (c_data != nullptr)
 	{
@@ -462,6 +462,11 @@ void Entity::add_text_area_to_last_clickable_region(EntityButton* _button, EText
 			}
 		}
 	}
+}
+
+bool EntityButton::entity_is_active()
+{
+	return ((Entity::entity_is_active()) && (!button_hidden_by_search));
 }
 
 void EntityButton::destroy_attached_description()
@@ -898,6 +903,8 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 	//int selected_data_entity = _data_entity;
 
 	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
+	jc_button->main_text_area = jc_text_area;
+
 	jc_text_area->offset_by_gabarite_size_x = 0.0;
 	jc_text_area->offset_by_text_size_x = 0.0;
 
@@ -1217,7 +1224,7 @@ void EntityButton::make_as_default_button_with_full_icon(ERegionGabarite* _regio
 	);
 }
 
-void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite, std::string& _text)
+void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite, std::string _text)
 {
 	make_as_default_clickable_button(_region_gabarite, _parent_group, _dap);
 	
@@ -1343,6 +1350,16 @@ void EntityButtonVariantRouter::make_default_router_variant_button(ERegionGabari
 	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
 }
 
+void EntityButton::make_as_default_router_variant_button(ERegionGabarite* _region_gabarite)
+{
+	make_as_default_button_with_icon_and_text(_region_gabarite, parent_button_group, &EDataActionCollection::action_rotate_variant, nullptr, "");
+
+	static_cast<EntityButtonVariantRouter*>(this)->layer_with_icon		= sprite_layer_list.back();
+	static_cast<EntityButtonVariantRouter*>(this)->pointer_to_text_area	= main_text_area;
+
+	main_text_area->can_be_edited = false;
+}
+
 bool EntityButton::can_get_access_to_style()
 {
 	return false;
@@ -1355,7 +1372,7 @@ void EntityButton::add_description(std::string _text)
 
 	jc_data->actions_on_update.push_back(&EDataActionCollection::action_switch_description);
 	jc_data->parent_entity					= this;
-	*jc_data->disable_draw					= true;
+	*jc_data->disable_custom_data_draw					= true;
 
 	EClickableArea*		jc_clickable_area	=
 	EClickableArea::create_default_clickable_region

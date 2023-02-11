@@ -22,7 +22,7 @@ std::vector<EButtonGroup*>		EButtonGroup::selected_groups;
 
 MoveVectorMethod				EButtonGroup::move_vector_mode						= MoveVectorMethod::METHOD_DRAG;
 
-
+EButtonGroupConfirmAction*		EButtonGroupConfirmAction::confirm_decline_group = nullptr;
 
 //EButtonGroup* EButtonGroup::focused_button_group;
 EButtonGroup*					EButtonGroup::focused_button_group_with_slider	= nullptr;
@@ -30,8 +30,8 @@ EButtonGroup*					EButtonGroup::focused_button_group_with_slider	= nullptr;
 
 EButtonGroup*					EButtonGroup::color_editor_group				= nullptr;
 EButtonGroup*					EButtonGroup::add_content_to_filter_block_group	= nullptr;
-EButtonGroup*					EButtonGroup::existing_loot_filter_list			= nullptr;
-EButtonGroup*					EButtonGroup::confirm_decline_group				= nullptr;
+
+
 
 EButtonGroupSoundList*			EButtonGroup::sound_list_group = nullptr;
 
@@ -193,7 +193,7 @@ void EWindow::GUI_update_default(float _d)
 			(
 				(b_group != nullptr)
 				&&
-				(b_group->is_visible())
+				(b_group->button_group_is_visible())
 				&&
 				(b_group->region_gabarite->world_position_y <= b_group->higher_culling_line_for_bg)
 				&&
@@ -279,6 +279,7 @@ void EWindow::GUI_update_default(float _d)
 	}
 
 
+	//GET FOCUSED BUTTON CLICKABLE REGION IN FOCUSED GROUP
 	if
 	(
 		((EButtonGroup::focused_button_group_mouse_unpressed != nullptr))
@@ -289,49 +290,27 @@ void EWindow::GUI_update_default(float _d)
 		//EButtonGroup::focused_button_group_mouse_unpressed->highlight_this_group();
 
 		for (EntityButton* but : EButtonGroup::focused_button_group_mouse_unpressed->all_button_list)
+		if ((but->be_visible_last_time) && (but->entity_is_active()))
 		for (ECustomData* data : but->custom_data_list)
-		//if (but->be_visible_last_time)
 		for (EClickableArea* c_area : data->clickable_area_list)
 		{
 
-				if
-					(
-						(EClickableArea::overlapped_by_mouse(c_area, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
-						&&
-						(
-							(c_area->parent_entity == nullptr)
-							||
-							(
-								(c_area->parent_entity != nullptr)
-								&&
-								(!c_area->parent_entity->disable_draw)
-								&&
-								(!c_area->parent_entity->disabled)
-							)
-						)
-						//&&
-						//(rand() % 2 == 0)
-					)
-				{
-					EClickableArea::active_clickable_region = c_area;
-				}
+				if (EClickableArea::overlapped_by_mouse(c_area, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+				{EClickableArea::active_clickable_region = c_area;}
 				else
 				{
 					if ((c_area->debug_updating) && (EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT)))
 					{
-						if (!EClickableArea::overlapped_by_mouse(c_area, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom)) { EInputCore::logger_simple_error("area not overlapepd by mouse"); }
-						if
-						(
-							(c_area->parent_entity != nullptr)
-							&&
-							(
-								(c_area->parent_entity->disable_draw)
-								||
-								(c_area->parent_entity->disabled)
-							)
-						)
+						//not overlap by mouse
+						if (!EClickableArea::overlapped_by_mouse(c_area, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
 						{
-							EInputCore::logger_simple_error("parent entity disabled");
+							EInputCore::logger_simple_error("area not overlapepd by mouse");
+						}
+						
+						//not active
+						if (but->entity_is_active())
+						{
+							EInputCore::logger_simple_error("entity is not active");
 						}
 					}
 
@@ -384,12 +363,12 @@ void EWindow::GUI_draw_default(float _d)
 		(
 			(b_group != nullptr)
 			&&
-			(b_group->is_visible())
+			(b_group->button_group_is_visible())
 			&&
 			(b_group->can_see_this_group())
 		)
 		{
-			b_group->draw();
+			b_group->draw_button_group();
 		}
 }
 
@@ -410,7 +389,7 @@ void EWindow::GUI_draw_second_pass(float _d)
 	//}
 	int counter = 0;
 	for (EButtonGroup* b_group : button_group_list)
-		if ((b_group != nullptr) && (b_group->is_active) && (counter <= 10))
+		if ((b_group != nullptr) && (b_group->button_group_is_active) && (counter <= 10))
 		{
 			b_group->draw_second_pass();
 			counter++;
@@ -428,10 +407,10 @@ void EButtonGroup::recursive_set_suppressed()
 	}
 }
 
-bool EButtonGroup::is_visible()
+bool EButtonGroup::button_group_is_visible()
 {
 	
-	return (is_active) && (group_search_status != GroupSearchStatus::SEARCH_STATUS_REJECTED);
+	return (button_group_is_active) && (group_search_status != GroupSearchStatus::SEARCH_STATUS_REJECTED);
 }
 
 EButtonGroup::EButtonGroup(float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y)
@@ -522,7 +501,7 @@ void EButtonGroup::delete_exact_button(EntityButton* _button)
 {
 	
 	all_button_list.erase(std::find(all_button_list.begin(), all_button_list.end(), _button));
-	workspace_button_list.erase(std::find(all_button_list.begin(), all_button_list.end(), _button));
+	workspace_button_list.erase(std::find(workspace_button_list.begin(), workspace_button_list.end(), _button));
 
 	if (!disable_deleting) { delete _button; }
 }
@@ -630,119 +609,93 @@ void EButtonGroup::update(float _d)
 		EButtonGroup::change_group(this);
 	}
 
-	//if
-	//(
-	//	(EButtonGroup::focused_button_group_for_select == this)
-	//	
-	//)
-	//{
-	//	if (EInputCore::key_pressed(GLFW_KEY_UP))	{ translate(0.0f, 100.0f * _d, 0.0f, false); }
-	//	if (EInputCore::key_pressed(GLFW_KEY_DOWN))	{ translate(0.0f, -100.0f * _d, 0.0f, false); }
-	//}
-
-
 	if
 	(
-		(is_visible())
+		(button_group_is_visible())//group not deactivated
 		&&
-		(can_see_this_group())
+		(can_see_this_group())//in visible gabarites
 	)
 	{
 
-		//need remove button
+		//
 		phantom_translate_if_need();
 
+
+		for (EntityButton* but : all_button_list)
 		{
-			for (EntityButton* but : all_button_list)
+			//can see this button
+			if
+			(
+				(
+					(but->button_gabarite->world_position_y + but->button_gabarite->phantom_translate_y <= higher_culling_line + 0.0f)
+					&&
+					(but->button_gabarite->world_position_y + but->button_gabarite->phantom_translate_y + but->button_gabarite->size_y >= lower_culling_line - 0.0f)
+				)
+			)
 			{
-
-				//can see this button
-				if
-					(
-						//(but->update_when_scissored)
-						//||
-						(
-							(but->button_gabarite->world_position_y + but->button_gabarite->phantom_translate_y <= higher_culling_line + 0.0f)
-							&&
-							(but->button_gabarite->world_position_y + but->button_gabarite->phantom_translate_y + but->button_gabarite->size_y >= lower_culling_line - 0.0f)
-						)
-					)
+				if (but->entity_is_active())
 				{
-					if ((!but->disabled) && (!but->disable_draw))
-					{
-						but->be_visible_last_time = true;
-					}
-					else
-					{
-						but->be_visible_last_time = false;
-					}
-
-					//phantom translation
-					if (but->button_gabarite->have_phantom_translation)
-					{
-						but->button_gabarite->have_phantom_translation = false;
-
-						but->translate_entity
-						(
-							but->button_gabarite->phantom_translate_x,
-							but->button_gabarite->phantom_translate_y,
-							but->button_gabarite->phantom_translate_z,
-							true
-						);
-
-						but->button_gabarite->phantom_translate_x = 0.0f;
-						but->button_gabarite->phantom_translate_y = 0.0f;
-						but->button_gabarite->phantom_translate_z = 0.0f;
-					}
-					
-					if ((!suppressed)||(but == slider))
-					{
-						but->update(_d);
-					}
+					but->be_visible_last_time = true;
 				}
 				else
 				{
 					but->be_visible_last_time = false;
 				}
 
-				if (!but->be_visible_last_time)
+				//phantom translation
+				if (but->button_gabarite->have_phantom_translation)
 				{
-					but->destroy_attached_description();
+					but->button_gabarite->have_phantom_translation = false;
+
+					but->translate_entity
+					(
+						but->button_gabarite->phantom_translate_x,
+						but->button_gabarite->phantom_translate_y,
+						but->button_gabarite->phantom_translate_z,
+						true
+					);
+
+					but->button_gabarite->phantom_translate_x = 0.0f;
+					but->button_gabarite->phantom_translate_y = 0.0f;
+					but->button_gabarite->phantom_translate_z = 0.0f;
 				}
+				
+				if ((!suppressed)||(but == slider))
+				{
+					but->update(_d);
+				}
+			}
+			else
+			{
+				but->be_visible_last_time = false;
+			}
+
+			//destroy attached descripton if button dont vsible
+			if (!but->be_visible_last_time)
+			{
+				but->destroy_attached_description();
 			}
 		}
 
-		//final button groun, not subgroup
-		//if (group_row_list.empty())
-
-
-
-		
-		//calculate_culling_lines(this, true);
-
 		//move group by mouse
 		if
+		(
+			(EInputCore::MOUSE_BUTTON_LEFT)
+			&&
+			(root_group != nullptr)
+			&&
+			(root_group->can_be_moved)
+			&&
+			(EButtonGroup::focused_button_group_mouse_unpressed == this)
+			&&
+			(EClickableArea::active_clickable_region == nullptr)
+			&&
 			(
-				(EInputCore::MOUSE_BUTTON_LEFT)
-				&&
-				(root_group != nullptr)
-				&&
-				(root_group->can_be_moved)
-				&&
-				(
-					(EButtonGroup::focused_button_group_mouse_unpressed == this)
-					//||
-					//(EButtonGroup::focused_button_group == root_group)
-					)
-				&&
-				(EClickableArea::active_clickable_region == nullptr)
-				&&
-				(
-					(EButtonGroup::catched_group_for_translation == root_group)
-					||
-					(EButtonGroup::catched_group_for_translation == nullptr)
-					)
-				)
+				(EButtonGroup::catched_group_for_translation == root_group)
+				||
+				(EButtonGroup::catched_group_for_translation == nullptr)
+			)
+		)
 		{
 			if (EButtonGroup::catched_group_for_translation == nullptr)
 			{
@@ -793,7 +746,7 @@ void EButtonGroup::background_update(float _d)
 {
 }
 
-void EButtonGroup::draw()
+void EButtonGroup::draw_button_group()
 {
 	//clickable_area->draw();
 
@@ -806,7 +759,7 @@ void EButtonGroup::draw()
 			//(*region_gabarite->world_position_y + *region_gabarite->size_y >= *lower_culling_line_for_bg)
 		)
 	{
-		bool visibility = is_visible();
+		bool visibility = button_group_is_visible();
 
 		if (visibility)
 		{
@@ -874,7 +827,7 @@ void EButtonGroup::draw()
 			if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group == this))
 			{
 
-				if (is_active)
+				if (button_group_is_active)
 				{
 					NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.13f);
 				}
@@ -900,7 +853,7 @@ void EButtonGroup::draw()
 			if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group_mouse_unpressed == this))
 			{
 
-				if (is_active)
+				if (button_group_is_active)
 				{
 					NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLUE, 0.13f);
 				}
@@ -1040,7 +993,15 @@ void EButtonGroup::draw()
 						);
 					}
 					
-					if ((suppressed) && (but != slider) && (!but->disabled) && (!but->disable_draw))
+					//gray suppressor
+					if
+					(
+						(suppressed)
+						&&
+						(but != slider)//slider cannot be suppressed
+						&&
+						(but->entity_is_active())
+					)
 					{
 						NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GRAY, 0.5f);
 						ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
@@ -1076,7 +1037,7 @@ void EButtonGroup::draw()
 			//recursive draw
 
 
-			for (EButtonGroup* group : group_list) { group->draw(); }
+			for (EButtonGroup* group : group_list) { group->draw_button_group(); }
 
 
 
@@ -1171,9 +1132,10 @@ void EButtonGroup::draw()
 					}
 			}
 
+			//slider debug highlight
 			if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group_with_slider == this))
 			{
-				if ((slider->disabled) || (slider->disable_draw))
+				if (!slider->entity_is_active())
 				{
 					NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_RED, 0.9f);
 				}
@@ -1232,7 +1194,7 @@ void EButtonGroup::draw()
 				&&
 				(EButtonGroup::catched_by_mouse(this))
 				&&
-				(false)
+				(true)
 			)
 			{
 				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
@@ -1400,7 +1362,7 @@ void EButtonGroup::align_groups()
 
 	//stretch row
 	for (EButtonGroup* group : group_list)
-	if (group->is_visible())
+	if (group->button_group_is_visible())
 	{
 		//bool need_redraw = false;
 
@@ -1631,7 +1593,7 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 
 	if
 	(
-		(_group->is_visible())
+		(_group->button_group_is_visible())
 		&&
 		(_group->can_see_this_group())
 
@@ -1646,14 +1608,10 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 			_group->region_gabarite->world_position_x = parent_group->region_gabarite->world_position_x + _group->region_gabarite->offset_x;
 
 			if (parent_group->child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
-			{
-				_group->region_gabarite->world_position_y = parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y;
-			}
+			{_group->region_gabarite->world_position_y = parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y;}
 			else
-				if (parent_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
-				{
-					_group->region_gabarite->world_position_y = parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y;
-				}
+			if (parent_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+			{_group->region_gabarite->world_position_y = parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y;}
 
 			_group->region_gabarite->world_position_z = parent_group->region_gabarite->world_position_z + _group->region_gabarite->offset_z;
 		}
@@ -1696,9 +1654,7 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 			(
 				(but->be_visible_last_time)
 				&&
-				(!but->disable_draw)
-				&&
-				(!but->disabled)
+				(but->entity_is_active())
 			)
 			{
 				for (change_style_action csa : but->action_on_generate_vertex_buffer)
@@ -1796,7 +1752,7 @@ void EButtonGroup::group_stretch_x()
 
 	unsigned int	dynamic_elements_count = 0;
 
-	if ((slider != nullptr) && (!slider->disable_draw))
+	if ((slider != nullptr) && (slider->entity_is_active()))
 	{
 		slider_effect = slider->button_gabarite->size_x + 3.0f;
 	}
@@ -1812,7 +1768,7 @@ void EButtonGroup::group_stretch_x()
 		target_size -= slider_effect;
 
 		for (EButtonGroup* group : group_list)
-		if (group->is_visible())
+		if (group->button_group_is_visible())
 		{
 			if (group->stretch_x_by_parent_size)
 			{
@@ -1840,7 +1796,7 @@ void EButtonGroup::group_stretch_x()
 
 	//final_size = 100.0f;
 	for (EButtonGroup* group : group_list)
-	if (group->is_visible())
+	if (group->button_group_is_visible())
 	{
 		if ((group->stretch_x_by_parent_size) && (group->region_gabarite->size_x != final_size))
 		{
@@ -1877,7 +1833,7 @@ void EButtonGroup::group_stretch_y()
 		target_size = max(region_gabarite->size_y, min_size_y) - border_bottom - border_up - (group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE - shrink_size - 0.0;
 
 		for (EButtonGroup* group : group_list)
-		if (group->is_visible())
+		if (group->button_group_is_visible())
 		{
 			group->region_gabarite->size_y = max(group->region_gabarite->size_y, group->min_size_y);
 
@@ -1905,7 +1861,7 @@ void EButtonGroup::group_stretch_y()
 
 	//final_size = 100.0f;
 	for (EButtonGroup* group : group_list)
-	if (group->is_visible())
+	if (group->button_group_is_visible())
 	{
 		if (group->stretch_y_by_parent_size)
 		{
@@ -1929,8 +1885,7 @@ void EButtonGroup::check_slider()
 
 	if (slider != nullptr)
 	{
-		slider->disable_draw = true;
-		slider->disabled = true;
+		slider->entity_disabled = true;
 	}
 
 	float child_elements_height_summ = 0.0f;
@@ -1972,8 +1927,7 @@ void EButtonGroup::check_slider()
 		{
 			if (slider != nullptr)
 			{
-				slider->disable_draw = false;
-				slider->disabled = false;
+				slider->entity_disabled = false;
 				have_slider = true;
 
 				
@@ -1998,8 +1952,7 @@ void EButtonGroup::check_slider()
 		{
 			if (slider != nullptr)
 			{
-				slider->disable_draw = true;
-				slider->disabled = true;
+				slider->entity_disabled = true;
 				have_slider = false;
 
 				for (EButtonGroup* group : group_list)
@@ -2210,7 +2163,7 @@ void EButtonGroup::realign_all_buttons()
 	float	free_space_for_buttons;
 	float	buttons_need_additional_size;
 	
-	if ((slider != nullptr) && (!slider->disabled) && (!slider->disable_draw) && (have_slider))
+	if ((slider != nullptr) && (slider->entity_is_active()) && (have_slider))
 	{ slider_additional = slider->button_gabarite->size_x + 3.0f; }
 	else
 	{ slider_additional = 0.0f; }
@@ -2291,23 +2244,17 @@ void EButtonGroup::realign_all_buttons()
 	for (EntityButton* but : all_button_list)
 	{
 		if
+		(
 			(
-				(
-					(!but->fixed_position)
-					||
-					(false)
-					)
-				&&
-				(
-					(
-						(!but->disable_draw)
-						&&
-						(!but->disabled)
-						)
-					||
-					(but->align_even_if_hidden)
-					)
-				)
+				(!but->fixed_position)
+			)
+			&&
+			(
+				(but->entity_is_active())
+				||
+				(but->align_even_if_hidden)
+			)
+		)
 		{
 
 			bool new_lined = false;
@@ -2463,8 +2410,7 @@ void EButtonGroup::realign_all_buttons()
 		//slider become active, get additional border in right side
 		if ((!have_slider)&&(highest_point_y_for_buttons > region_gabarite->size_y - 0.0f - border_up))
 		{
-			slider->disable_draw = false;
-			slider->disabled = false;
+			slider->entity_disabled = false;
 
 			//if (!have_slider)
 			//{
@@ -2765,7 +2711,7 @@ bool EButtonGroup::catched_by_mouse(EButtonGroup* _group)
 		(
 			//(_group->higher_culling_line_for_bg * NS_EGraphicCore::current_zoom > _group->lower_culling_line_for_bg * NS_EGraphicCore::current_zoom)
 				//&&
-			(_group->is_visible())
+			(_group->button_group_is_visible())
 			&&
 			(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= _group->region_gabarite->world_position_x)
 			&&
@@ -2865,7 +2811,7 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 
 	if
 	(
-		(is_visible())
+		(button_group_is_visible())
 		&&
 		(can_see_this_group())
 	)
@@ -2909,7 +2855,7 @@ void EButtonGroup::translate_content(float _x, float _y, float _z, bool _move_sl
 		{
 			if
 				(
-					(is_visible())
+					(button_group_is_visible())
 					&&
 					(
 						(
@@ -2917,9 +2863,7 @@ void EButtonGroup::translate_content(float _x, float _y, float _z, bool _move_sl
 							&&
 							(button->button_gabarite->world_position_y + button->button_gabarite->size_y >= lower_culling_line)
 							&&
-							(!button->disabled)
-							&&
-							(!button->disable_draw)
+							(button->entity_is_active())
 							&&
 							(button->be_visible_last_time)
 						)
@@ -2954,19 +2898,19 @@ bool EButtonGroup::can_see_this_group()
 	}
 
 	if
-		(
-			//(is_active)
-			//&&
-			(region_gabarite->world_position_x <= NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom)
-			&&
-			(region_gabarite->world_position_x + region_gabarite->size_x > 0.0f)
+	(
+		//(is_active)
+		//&&
+		(region_gabarite->world_position_x <= NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom)
+		&&
+		(region_gabarite->world_position_x + region_gabarite->size_x > 0.0f)
 
-			&&
+		&&
 
-			(region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
-			&&
-			(region_gabarite->world_position_y + region_gabarite->size_y > 0.0f)
-			)
+		(region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
+		&&
+		(region_gabarite->world_position_y + region_gabarite->size_y > 0.0f)
+	)
 	{
 		return true;
 	}
@@ -3108,11 +3052,114 @@ void EButtonGroup::recursive_change_localisation(int _localisaton_id)
 	
 }
 
+void EButtonGroupConfirmAction::init_as_confirm_decline_group()
+{
+	init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+
+	root_group = this;
+	button_group_is_active = false;
+	can_change_position_in_vector = false;
+
+
+
+
+	pointer_to_workspace_part = add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
+	pointer_to_workspace_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		
+
+	EButtonGroup*
+	bottom_part_for_buttons = pointer_to_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(250.0f, 30.0f)));
+		bottom_part_for_buttons->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
+		bottom_part_for_buttons->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+		bottom_part_for_buttons->button_size_x_override = 150.0f;
+		bottom_part_for_buttons->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+
+	EButtonGroup*
+	top_part_for_description = pointer_to_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(250.0f, 50.0f)));
+		top_part_for_description->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
+		top_part_for_description->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+
+	//text area
+	ELocalisationText
+	l_text;
+
+	EClickableArea*
+	c_area_for_group = EClickableArea::create_default_clickable_region(top_part_for_description->region_gabarite, top_part_for_description);
+
+	pointer_to_description_text_area = ETextArea::create_centered_text_area(c_area_for_group, EFont::font_list[0], "123");
+
+	c_area_for_group->text_area = pointer_to_description_text_area;
+
+	pointer_to_description_text_area->localisation_text.localisations[NSW_localisation_EN] = "Warning! Unsaved changes!\\n\\nIf you continue, you lost unsaved data!";
+	pointer_to_description_text_area->localisation_text.localisations[NSW_localisation_RU] = "Внимание! Несохранённые изменения!\\n\\nЕсли вы продолжите, вы потеряете несохранённые данные!";
+
+	pointer_to_description_text_area->change_text(pointer_to_description_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
+	pointer_to_description_text_area->set_color(1.0f, 0.75f, 0.5f, 1.0f);
+	top_part_for_description->clickable_area_list.push_back(c_area_for_group);
+	//
+
+
+
+
+
+
+	l_text.localisations[NSW_localisation_EN] = "Close, dont save";
+	l_text.localisations[NSW_localisation_RU] = "Выйти, не сохранять";
+
+	EntityButtonConfirmAction*
+	button_yes = new EntityButtonConfirmAction();
+	pointer_to_confirm_button = button_yes;
+
+	button_yes->stored_action = &EDataActionCollection::action_close_program;
+
+	button_yes->make_default_button_with_unedible_text
+	(
+		new ERegionGabarite(200.0f, 25.0f),
+		bottom_part_for_buttons,
+		&EDataActionCollection::action_invoke_stored_confirm_action,
+		l_text.localisations[ELocalisationText::active_localisation]
+	);
+
+	button_yes->main_text_area->set_color(1.0f, 0.2f, 0.1f, 1.0f);
+	button_yes->main_text_area->localisation_text = l_text;
+	bottom_part_for_buttons->add_button_to_working_group(button_yes);
+
+
+
+
+
+
+
+
+
+	l_text.localisations[NSW_localisation_EN] = "Cancel";
+	l_text.localisations[NSW_localisation_RU] = "Отмена";
+
+	EntityButtonConfirmAction*
+	button_no = new EntityButtonConfirmAction();
+	pointer_to_decline_button = button_no;
+
+	button_no->make_default_button_with_unedible_text
+	(
+		new ERegionGabarite(100.0f, 25.0f),
+		bottom_part_for_buttons,
+		&EDataActionCollection::action_invoke_stored_confirm_action,
+		l_text.localisations[ELocalisationText::active_localisation]
+	);
+	button_no->main_text_area->localisation_text = l_text;
+	button_no->stored_action = &EDataActionCollection::action_cancel_closing_program;
+	bottom_part_for_buttons->add_button_to_working_group(button_no);
+
+
+	EButtonGroup::refresh_button_group(this);
+}
+
 void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 {
 	if
 	(
-		(_group->is_visible())
+		(_group->button_group_is_visible())
 		&&
 		(_group->can_be_focused)
 		&&
@@ -3141,7 +3188,7 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 		(
 			(_group->slider != nullptr)
 			&&
-			(!_group->slider->disable_draw)
+			(_group->slider->entity_is_active())
 			&&
 			(EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
 		)
@@ -3153,7 +3200,7 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 
 	if
 	(
-		(_group->is_visible())
+		(_group->button_group_is_visible())
 	)
 	for (EButtonGroup* group : _group->group_list)
 	{
@@ -3844,8 +3891,8 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 		variant_button->id = id;
 		variant_button->parent_router_group = main_group;
 
-		Entity::get_last_text_area(variant_button)->stored_color	= *rv->color;
-		Entity::get_last_text_area(variant_button)->color			= *rv->color;
+		variant_button->main_text_area->stored_color	= *rv->color;
+		variant_button->main_text_area->color			= *rv->color;
 
 		workspace_group->add_button_to_working_group(variant_button);
 

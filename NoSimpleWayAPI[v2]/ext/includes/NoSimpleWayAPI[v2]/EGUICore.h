@@ -253,7 +253,7 @@ public:
 	//bool hidden_by_search = false;
 	GroupSearchStatus group_search_status = GroupSearchStatus::SEARCH_STATUS_IGNORE;
 
-	virtual bool is_visible();
+	virtual bool button_group_is_visible();
 
 	float shadow_size = 32.0f;
 
@@ -324,7 +324,7 @@ public:
 	virtual void background_update(float _d);
 
 	//virtual void post_update(float _d);
-	virtual void draw();
+	virtual void draw_button_group();
 	virtual void post_draw();
 	void draw_second_pass();
 
@@ -431,7 +431,7 @@ public:
 
 	bool have_bg = (true);
 	bool can_be_focused = (true);
-	bool is_active = (true);
+	bool button_group_is_active = (true);
 	bool disable_gabarite = (false);
 
 	bool force_new_line = (false);
@@ -468,8 +468,7 @@ public:
 	static EButtonGroup* color_editor_group;
 	static EButtonGroup* add_content_to_filter_block_group;
 
-	static EButtonGroup* existing_loot_filter_list;
-	static EButtonGroup* confirm_decline_group;
+
 
 	static EButtonGroupSoundList* sound_list_group;
 
@@ -505,6 +504,8 @@ public:
 
 	void highlight_this_group();
 	void recursive_change_localisation(int _localisaton_id);
+
+	
 };
 
 
@@ -531,16 +532,24 @@ public:
 //	std::vector<EButtonGroup*> button_group_list;
 //};
 
+class EntityButtonConfirmAction;
 class EButtonGroupConfirmAction : public EButtonGroup
 {
 public:
-	EntityButton* pointer_to_confirm_button;
-	EntityButton* pointer_to_decline_button;
+	EButtonGroupConfirmAction(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	EButtonGroup* pointer_to_workspace_part;
+	EntityButtonConfirmAction*			pointer_to_confirm_button;
+	EntityButtonConfirmAction*			pointer_to_decline_button;
 
-	data_action_pointer	action_on_accept;
-	data_action_pointer	action_on_decline;
+	EButtonGroup*						pointer_to_workspace_part;
+	ETextArea*							pointer_to_description_text_area;
+
+	//data_action_pointer				action_on_accept;
+	//data_action_pointer				action_on_decline;
+
+	void								init_as_confirm_decline_group();
+
+	static EButtonGroupConfirmAction*	confirm_decline_group;
 };
 
 enum StyleList

@@ -77,7 +77,7 @@ public:
 
 
 
-	void draw();
+	void custom_data_draw();
 	void draw_second_pass();
 
 	void update(float _d);
@@ -89,7 +89,7 @@ public:
 	//std::vector<void (*)(Entity*, ECustomData*)> data_actions_list;
 
 	bool* is_second_pass = new bool(false);
-	bool* disable_draw = new bool(false);
+	bool* disable_custom_data_draw = new bool(false);
 };
 
 class ERegionGabarite

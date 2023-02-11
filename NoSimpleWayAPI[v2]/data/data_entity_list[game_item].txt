@@ -7241,7 +7241,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Активный алхимический резонатор"
 
 	[tag]"icon path"	[value]"Potent_Alchemical_Resonator_inventory_icon"
-	[tag]"base class"	[value]"Delve Socketable Currency"
+	[tag]"base class"	[value]"Delve Stackable Socketable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
@@ -7257,7 +7257,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Активный хаотический резонатор"
 
 	[tag]"icon path"	[value]"Potent_Chaotic_Resonator_inventory_icon"
-	[tag]"base class"	[value]"Delve Socketable Currency"
+	[tag]"base class"	[value]"Delve Stackable Socketable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
@@ -7272,7 +7272,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мощный алхимический резонатор"
 
 	[tag]"icon path"	[value]"Powerful_Alchemical_Resonator_inventory_icon"
-	[tag]"base class"	[value]"Delve Socketable Currency"
+	[tag]"base class"	[value]"Delve Stackable Socketable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
@@ -7288,7 +7288,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мощный хаотический резонатор"
 
 	[tag]"icon path"	[value]"Powerful_Chaotic_Resonator_inventory_icon"
-	[tag]"base class"	[value]"Delve Socketable Currency"
+	[tag]"base class"	[value]"Delve Stackable Socketable Currency"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -7300,7 +7300,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Превосходный алхимический резонатор"
 
 	[tag]"icon path"	[value]"Prime_Alchemical_Resonator_inventory_icon"
-	[tag]"base class"	[value]"Delve Socketable Currency"
+	[tag]"base class"	[value]"Delve Stackable Socketable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
@@ -7316,7 +7316,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Превосходный хаотический резонатор"
 
 	[tag]"icon path"	[value]"Prime_Chaotic_Resonator_inventory_icon"
-	[tag]"base class"	[value]"Delve Socketable Currency"
+	[tag]"base class"	[value]"Delve Stackable Socketable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
@@ -7331,7 +7331,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Простейший алхимический резонатор"
 
 	[tag]"icon path"	[value]"Primitive_Alchemical_Resonator_inventory_icon"
-	[tag]"base class"	[value]"Delve Socketable Currency"
+	[tag]"base class"	[value]"Delve Stackable Socketable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
@@ -7347,7 +7347,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Простейший хаотический резонатор"
 
 	[tag]"icon path"	[value]"Primitive_Chaotic_Resonator_inventory_icon"
-	[tag]"base class"	[value]"Delve Socketable Currency"
+	[tag]"base class"	[value]"Delve Stackable Socketable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"

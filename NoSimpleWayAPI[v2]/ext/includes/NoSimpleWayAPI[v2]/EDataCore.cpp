@@ -561,7 +561,7 @@ void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData
 		(_group->root_group != nullptr)
 	)
 	{
-		_group->root_group->is_active = false;
+		_group->root_group->button_group_is_active = false;
 
 		EClickableArea::active_clickable_region = nullptr;
 
@@ -586,11 +586,11 @@ void EDataActionCollection::action_switch_description(Entity* _entity, ECustomDa
 {
 	if (((EntityButton*)_entity)->button_gabarite->overlapped_by_mouse())
 	{
-		*_custom_data->disable_draw = false;
+		*_custom_data->disable_custom_data_draw = false;
 	}
 	else
 	{
-		*_custom_data->disable_draw = true;
+		*_custom_data->disable_custom_data_draw = true;
 	}
 
 }
@@ -702,23 +702,6 @@ void EDataActionCollection::action_update_radial_button(Entity* _entity, ECustom
 
 void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text_area)
 {
-	//EInputCore::logger_param("stored text",  * _text_area->stored_text);
-
-
-	//(
-	//	(_text_area != nullptr)
-	//	&&
-	//	(_text_area->parent_clickable_region != nullptr)
-	//	&&
-	//	(_text_area->parent_clickable_region->parent_custom_data != nullptr)
-	//	&&
-	//	(_text_area->parent_clickable_region->parent_custom_data->parent_entity != nullptr)
-	//	&&
-	//	(((EntityButton*)_text_area->parent_clickable_region->parent_custom_data->parent_entity)->parent_button_group != nullptr)
-	//	&&
-	//	(((EntityButton*)_text_area->parent_clickable_region->parent_custom_data->parent_entity)->parent_button_group->root_group != nullptr)
-
-	//)
 	if ((_text_area != nullptr) && (_text_area->get_root_group() != nullptr))
 	{
 		EDataContainer_Group_DataEntitiesSearch* data_container = (EDataContainer_Group_DataEntitiesSearch*)_text_area->get_root_group()->data_container;
@@ -737,31 +720,23 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 			//data_container->pointer_to_group_with_data_entities->scroll_y = 0.0f;
 
 			for (EntityButton* but : data_container->pointer_to_group_with_data_entities->workspace_button_list)
+			{
+				EDataEntity* target_data_entity = but->pointer_to_data_entity;
+				bool matched = false;
+
+				matched = EFilterRule::matched_by_filter_rule(target_data_entity, data_container->target_rule, _text_area->original_text);
+
+				if (matched)
+				{ but->button_hidden_by_search = false; }
+				else
 				{
-
-
-
-					EDataEntity* target_data_entity = but->pointer_to_data_entity;
-					bool matched = false;
-					//if (target_data_entity->)
-					matched = EFilterRule::matched_by_filter_rule(target_data_entity, data_container->target_rule, _text_area->original_text);
-
-
-					//tag_require_match = false;
-					if (matched) { but->disabled = false; but->disable_draw = false; }
-					else
-					{ but->disabled = true; but->disable_draw = true; but->destroy_attached_description(); }
-
+					but->button_hidden_by_search = true;
+					but->destroy_attached_description();
 				}
+			}
 
-			//*data_container->pointer_to_target_group_send_item->is_active = false;
-
-			//data_container->pointer_to_group_with_data_entities->realign_all_buttons();
 			EButtonGroup::refresh_button_group(data_container->pointer_to_group_with_data_entities->root_group);
-			//EButtonGroup::change_group(data_container->pointer_to_group_with_data_entities);
-			//data_container->pointer_to_target_group_send_item->button_list.clear();
 
-			//EButtonGroup::refresh_button_group(data_container->pointer_to_target_group_send_item);
 		}
 		else
 		{
@@ -830,14 +805,11 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 
 								if (match)
 								{
-									but->disabled = false;
-									but->disable_draw = false;
+									but->button_hidden_by_search = false;
 								}
 								else
 								{
-									but->disabled = true;
-									but->disable_draw = true;
-
+									but->button_hidden_by_search = true;
 									but->destroy_attached_description();
 								}
 							}
@@ -858,7 +830,7 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 {
 	//if (_custom_data->data_container != nullptr)
 	{
-		EButtonGroup::color_editor_group->is_active = true;
+		EButtonGroup::color_editor_group->button_group_is_active = true;
 		EButtonGroup::color_editor_group->move_to_foreground();
 
 		EntityButtonColorButton*			clicked_button	= static_cast<EntityButtonColorButton*>(_entity);
@@ -1602,7 +1574,7 @@ void EDataActionCollection::action_set_button_group_as_active(Entity* _entity, E
 	if (((EntityButtonButtonGroupActivator*)_entity)->target_group != nullptr)
 	{
 		//EDataContainer_Button_OpenButtonGroup* button_data = static_cast<EDataContainer_Button_OpenButtonGroup*>(_custom_data->data_container);
-		((EntityButtonButtonGroupActivator*)_entity)->target_group->is_active = true;
+		((EntityButtonButtonGroupActivator*)_entity)->target_group->button_group_is_active = true;
 		((EntityButtonButtonGroupActivator*)_entity)->target_group->move_to_foreground();
 	}
 }
@@ -1660,7 +1632,7 @@ void EDataActionCollection::action_select_rotate_variant_from_list(Entity* _enti
 
 	target_button->select_variant(router_selector_button->id);
 	target_group->need_remove = true;
-	target_group->is_active = false;
+	target_group->button_group_is_active = false;
 }
 
 void EDataActionCollection::action_invoke_stored_confirm_action(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1682,7 +1654,7 @@ void EDataActionCollection::action_close_program(Entity* _entity, ECustomData* _
 
 void EDataActionCollection::action_cancel_closing_program(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	static_cast<EntityButton*>(_entity)->parent_button_group->root_group->is_active = false;
+	static_cast<EntityButton*>(_entity)->parent_button_group->root_group->button_group_is_active = false;
 	glfwSetWindowShouldClose(NS_EGraphicCore::main_window, 0);
 }
 
@@ -2551,11 +2523,11 @@ ECustomData::~ECustomData()
 
 }
 
-void ECustomData::draw()//(if (but->description_data != nullptr) { but->description_data->draw(); })
+void ECustomData::custom_data_draw()//(if (but->description_data != nullptr) { but->description_data->draw(); })
 {
 
 
-	if ((!*disable_draw) && (!*is_second_pass))
+	if ((!*disable_custom_data_draw) && (!*is_second_pass))
 	{
 
 		//if (_second_pass) { EInputCore::logger_simple_info("???"); }
@@ -2593,7 +2565,7 @@ void ECustomData::draw_second_pass()
 
 	//std::cout << std::endl;
 
-	if ((!*disable_draw) && (*is_second_pass))
+	if ((!*disable_custom_data_draw) && (*is_second_pass))
 	{
 
 		//if (*is_second_pass)

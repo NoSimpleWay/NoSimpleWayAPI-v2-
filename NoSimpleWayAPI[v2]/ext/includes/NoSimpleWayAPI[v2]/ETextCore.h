@@ -211,6 +211,8 @@ public:
 	bool translate_region_gabarite = false;
 
 	void change_text(std::string _text);
+	void update_localisation();
+
 	void generate_rows();
 	void generate_text();
 

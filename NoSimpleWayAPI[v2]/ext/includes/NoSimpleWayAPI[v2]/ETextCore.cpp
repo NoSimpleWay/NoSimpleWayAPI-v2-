@@ -563,8 +563,8 @@ void ETextArea::generate_text()
 					sprite_layer->vertex_buffer,
 					sprite_layer->last_buffer_id,
 
-					(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol]),
-					(region_gabarite->world_position_y - ((font->size_y_in_pixels[target_symbol] + font->offset_y[target_symbol]) * font_scale - y_adding) + 0.0f * font_scale),
+					(round(region_gabarite->world_position_x) + x_adding + round(font->offset_x[target_symbol])),
+					(round(region_gabarite->world_position_y) - (round(font->size_y_in_pixels[target_symbol] + font->offset_y[target_symbol]) * font_scale - round(y_adding))),
 
 					(font->size_x_in_pixels[target_symbol] * font_scale),
 					(font->size_y_in_pixels[target_symbol] * font_scale),
@@ -573,7 +573,7 @@ void ETextArea::generate_text()
 					font->UV_start_y[target_symbol] - font->UV_size_y[target_symbol] + py,
 
 					font->UV_start_x[target_symbol] + px + font->UV_size_x[target_symbol],
-					font->UV_start_y[target_symbol] + py * font_scale
+					font->UV_start_y[target_symbol] + py
 				);
 
 				//no sence generate glyphs to text, which can be edited
@@ -1627,6 +1627,11 @@ void ETextArea::change_text(std::string _text)
 
 
 
+}
+
+void ETextArea::update_localisation()
+{
+	change_text(localisation_text.localisations[ELocalisationText::active_localisation]);
 }
 
 bool ETextArea::can_get_access_to_group_style()

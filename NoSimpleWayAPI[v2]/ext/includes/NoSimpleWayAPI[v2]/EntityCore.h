@@ -78,7 +78,7 @@ public:
 	void translate_sprite_layer(float _x, float _y, float _z, bool _move_locals);
 	void translate_custom_data(float _x, float _y, float _z, bool _move_locals);
 
-
+	virtual bool entity_is_active();
 	virtual void update(float _d);
 	Entity();
 	virtual ~Entity();
@@ -91,18 +91,19 @@ public:
 	ESprite* get_sprite_from_sprite_frame(ESpriteFrame* _frame, unsigned int _id);
 
 	static ESprite* get_last_sprite(Entity* _en);
-	bool disable_draw = false;
-	bool need_remove = false;
-	bool disabled = false;
 
-	static ECustomData* get_last_custom_data(Entity* _entity);
-	static EClickableArea* get_last_clickable_area(Entity* _entity);
-	static ETextArea* get_last_text_area(Entity* _entity);
+	bool entity_disabled			= false;
+	bool need_remove				= false;
+	bool have_phantom_draw			= false;
+	bool be_visible_last_time		= false;
 
-	static void add_text_area_to_last_clickable_region(EntityButton* _button, ETextArea* _text_area);
+	static ECustomData*		get_last_custom_data(Entity* _entity);
+	static EClickableArea*	get_last_clickable_area(Entity* _entity);
+	static ETextArea*		get_last_text_area(Entity* _entity);
 
-	bool have_phantom_draw = false;
-	bool be_visible_last_time = false;
+	static void				add_text_area_to_last_clickable_region(EntityButton* _button, ETextArea* _text_area);
+
+
 };
 /*********/
 
@@ -128,15 +129,26 @@ void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style);
 #include "Helpers.h"
 struct HRA_color_collection;
 class EntityButtonColorButton;
+
+
+
 class EntityButton : public Entity
 {
 public:
 	EntityButton();
 	virtual ~EntityButton();
 
-	bool disable_force_field = true;
+	bool button_hidden_by_search	= false;
+	bool disable_force_field		= true;
+	bool fixed_position				= false;
+	bool force_draw					= true;
+	bool update_when_scissored		= false;
+	bool align_even_if_hidden		= false;
+	bool do_not_generate_bg			= false;
+	bool cannot_be_auto_deleted		= false;
 
-	bool force_draw = true;
+	bool entity_is_active();
+
 	ERegionGabarite* button_gabarite;
 
 	//std::string* autoalign_id = new std::string("");
@@ -146,11 +158,9 @@ public:
 
 	EButtonGroup* parent_button_group;
 
-	bool fixed_position = false;
-	bool update_when_scissored = false;
-	bool align_even_if_hidden = false;
-	bool do_not_generate_bg = false;
-	bool cannot_be_auto_deleted = false;
+
+	
+
 
 	void destroy_attached_description();
 	EButtonGroup* attached_description;
@@ -280,7 +290,7 @@ public:
 		EButtonGroup* _parent_group,
 		data_action_pointer	_dap,
 		ETextureGabarite* _gabarite,
-		std::string& _text
+		std::string _text
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
@@ -295,6 +305,11 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
+
+	void make_as_default_router_variant_button
+	(
+		ERegionGabarite* _region_gabarite
+	);
 
 	bool can_get_access_to_style();
 
