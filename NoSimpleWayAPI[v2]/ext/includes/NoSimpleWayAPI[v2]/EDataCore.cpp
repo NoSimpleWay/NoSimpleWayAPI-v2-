@@ -3298,6 +3298,21 @@ bool EStringUtils::if_text_is_number(std::string* _text)
 	return true;
 }
 
+int EStringUtils::safe_convert_string_to_number(std::string _text, int _min, int _max)
+{
+	if (if_text_is_number)
+	{
+		int num = std::stoi(_text);
+
+		return std::clamp(num, _min, _max);
+	}
+	else
+	{
+		return _min;
+	}
+	
+}
+
 const int PRIME_CONST = 431;
 int EStringUtils::hashFunction(std::string _input)
 {

@@ -250,6 +250,7 @@ public:
 	bool have_shadow = true;
 	bool is_selected = false;
 	bool focusable_for_select = false;
+	//bool need_recalcualte_culling_lines = false;
 	//bool hidden_by_search = false;
 	GroupSearchStatus group_search_status = GroupSearchStatus::SEARCH_STATUS_IGNORE;
 
@@ -311,16 +312,16 @@ public:
 	float highest_point_y = (0.0f);
 	float highest_point_y_for_buttons = (0.0f);
 
-	float higher_culling_line = 0.0f;
-	float lower_culling_line = 0.0f;
+	//float higher_culling_line = 0.0f;
+	//float lower_culling_line = 0.0f;
 
-	float higher_culling_line_for_bg = 0.0f;
-	float lower_culling_line_for_bg = 0.0f;
+	//float higher_culling_line_for_bg = 0.0f;
+	//float lower_culling_line_for_bg = 0.0f;
 
 	float base_height;
 	float base_width;
 
-	virtual void update(float _d);
+	virtual void button_group_update(float _d);
 	virtual void background_update(float _d);
 
 	//virtual void post_update(float _d);
@@ -346,6 +347,8 @@ public:
 	static void generate_vertex_buffer_for_group(EButtonGroup* _group, bool _recursive = NSW_RECURSIVE);
 
 	void expand_to_workspace_size();
+
+	void recursive_set_recalculate_culling_lines();
 
 	virtual void button_group_prechange();
 	static void refresh_button_group(EButtonGroup* _group);

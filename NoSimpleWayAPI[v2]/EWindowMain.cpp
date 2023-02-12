@@ -8686,58 +8686,55 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 						//EInputCore::logger_param("buffer text", buffer_text);
 
 						if
-							(
-								(
-									(EStringUtils::compare_ignoring_case(buffer_text, "show"))
-									||
-									(EStringUtils::compare_ignoring_case(buffer_text, "hide"))
-									)
-								&&
-								(!comment_mode)
-								)
+						(
+							(EStringUtils::compare_ignoring_case(buffer_text, "show"))
+							||
+							(EStringUtils::compare_ignoring_case(buffer_text, "hide"))
+						)
 						{
-							int specific_position = -1;
-
-							if (_target_filter_block != nullptr)
+							if (!comment_mode)
 							{
-								for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
+								int specific_position = -1;
+
+								if (_target_filter_block != nullptr)
 								{
-									if (EWindowMain::loot_filter_editor->group_list[i] == _target_filter_block)
+									for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
 									{
-										specific_position = i;
+										if (EWindowMain::loot_filter_editor->group_list[i] == _target_filter_block)
+										{
+											specific_position = i;
+										}
 									}
 								}
-							}
-							//if (_target_filter_block == nullptr)
-							{
-								jc_filter_block = create_filter_block(loot_filter_editor, specific_position);
+								//if (_target_filter_block == nullptr)
+								{
+									jc_filter_block = create_filter_block(loot_filter_editor, specific_position);
 
-								if (_parse_mode == LootFlterOpenMode::LOOT_FILTER_OPEN_MODE_DEFAULT_FILTER_FROM_GAME) { jc_filter_block->suppressed = true; }
-							}
-							//else
-							//{
-							//	jc_filter_block = _target_filter_block;
-							//	_target_filter_block = nullptr;
-							//}
+									if (_parse_mode == LootFlterOpenMode::LOOT_FILTER_OPEN_MODE_DEFAULT_FILTER_FROM_GAME) { jc_filter_block->suppressed = true; }
+								}
+								//else
+								//{
+								//	jc_filter_block = _target_filter_block;
+								//	_target_filter_block = nullptr;
+								//}
 
-							whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
 
-							if (EStringUtils::compare_ignoring_case(buffer_text, "show"))
-							{
-								((EntityButtonVariantRouter*)(whole_block_container->button_show_hide))->select_variant(1);
+								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+
+								if (EStringUtils::compare_ignoring_case(buffer_text, "show"))
+								{
+									((EntityButtonVariantRouter*)(whole_block_container->button_show_hide))->select_variant(1);
+								}
+								else
+								{
+									((EntityButtonVariantRouter*)(whole_block_container->button_show_hide))->select_variant(0);
+								}
 							}
 							else
 							{
-								((EntityButtonVariantRouter*)(whole_block_container->button_show_hide))->select_variant(0);
+								jc_filter_block			= nullptr;
+								whole_block_container	= nullptr;
 							}
-
-
-							if (_target_filter_block != nullptr)
-							{
-
-							}
-
-
 						}
 						else
 						{
@@ -8754,37 +8751,47 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							}
 
 							if
+							(
+								(matched_filter_block_attribute != nullptr)
+								&&
 								(
-									(matched_filter_block_attribute != nullptr)
-									&&
-									(
-										(!comment_mode)
-										||
-										(matched_filter_block_attribute->always_present)
-										||
-										(matched_filter_block_attribute->commentary_config)
-										)
-									)
+									(!comment_mode)
+									||
+									(matched_filter_block_attribute->always_present)
+									||
+									(matched_filter_block_attribute->commentary_config)
+								)
+							)
 							{
 								//add new sections to filter block
 								if
-									(
+								(
 										(!matched_filter_block_attribute->always_present)
 										&&
 										(!matched_filter_block_attribute->commentary_config)
-										)
+										&&
+										(jc_filter_block != nullptr)
+								)
 								{
 									add_filter_block_content_to_filter_block(jc_filter_block, matched_filter_block_attribute);
 								}
 
-								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+								if (jc_filter_block != nullptr)
+								{
+									whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+								}
 
 								//EInputCore::logger_param("found registered attribure", buffer_text);
 
 								////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 								if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED)
 								{
-									if (!jc_filter_block->pointer_to_non_listed_segment->group_list.empty())
+									if
+									(
+										(jc_filter_block != nullptr)
+										&&
+										(!jc_filter_block->pointer_to_non_listed_segment->group_list.empty())
+									)
 									{
 										last_non_listed_line = static_cast<EButtonGroupNonListedLine*>(jc_filter_block->pointer_to_non_listed_segment->group_list.back());
 									}
@@ -8792,19 +8799,22 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 								if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC)
 								{
-									for (int b = 0; b < 3; b++)
+									if (whole_block_container != nullptr)
 									{
-										if (whole_block_container->pointer_to_color_button[b]->main_text_area->localisation_text.base_name == matched_filter_block_attribute->localisation.base_name)
+										for (int b = 0; b < 3; b++)
 										{
-											//matched_button = whole_block_container->pointer_to_color_button[b];
-											target_HRA_color = whole_block_container->pointer_to_color_button[b]->stored_color;
-											target_color_bool = &whole_block_container->color_check[b];
+											if (whole_block_container->pointer_to_color_button[b]->main_text_area->localisation_text.base_name == matched_filter_block_attribute->localisation.base_name)
+											{
+												//matched_button = whole_block_container->pointer_to_color_button[b];
+												target_HRA_color = whole_block_container->pointer_to_color_button[b]->stored_color;
+												target_color_bool = &whole_block_container->color_check[b];
+											}
 										}
-									}
 
-									if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON) && (!comment_mode))
-									{
-										whole_block_container->minimap_icon_color_suppressor_bool = true;
+										if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON) && (!comment_mode))
+										{
+											whole_block_container->minimap_icon_color_suppressor_bool = true;
+										}
 									}
 
 									if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_VALUE_USER_SOUND) && (!comment_mode))
@@ -8815,7 +8825,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 
 									//		ATTRIBUTES WITHOUT PARAMETERS
-									if (!comment_mode)
+									if ((!comment_mode) && (whole_block_container != nullptr))
 									{
 										//disable/enable varian router button
 										int disable_sound_router_id = -1;
@@ -8838,14 +8848,17 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 												}
 									}
 
-									if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RAY) && (!comment_mode))
+									if (whole_block_container != nullptr)
 									{
-										whole_block_container->ray_suppressor = true;
-									}
+										if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RAY) && (!comment_mode))
+										{
+											whole_block_container->ray_suppressor = true;
+										}
 
-									if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_CONTINUE) && (!comment_mode))
-									{
-										whole_block_container->button_continue->select_variant(0);
+										if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_CONTINUE) && (!comment_mode))
+										{
+											whole_block_container->button_continue->select_variant(0);
+										}
 									}
 									//target_HRA_color = ((EDataContainer_Button_StoreColor*)(Entity::get_last_custom_data(whole_block_container->pointer_to_color_button[0])->data_container))->stored_color;
 									//target_color_bool = &whole_block_container->color_check[0];
@@ -8891,9 +8904,15 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 						{
 							if ((matched_filter_block_attribute != nullptr) && (matched_filter_block_attribute->filter_attribute_type == FILTER_ATTRIBUTE_TYPE_LISTED))
 							{
-								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+								if (jc_filter_block != nullptr)
+								{
+									whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+								}
 
-								listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(whole_block_container->pointer_to_listed_segment->group_list.back()->data_container);
+								if (whole_block_container != nullptr)
+								{
+									listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(whole_block_container->pointer_to_listed_segment->group_list.back()->data_container);
+								}
 
 								//EXACT MATCH
 								if (buffer_text == "==")
@@ -9032,8 +9051,15 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 							if ((matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED) && (!comment_mode))
 							{
-								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
-								listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(whole_block_container->pointer_to_listed_segment->group_list.back()->data_container);
+								if (jc_filter_block != nullptr)
+								{
+									whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+								}
+
+								if (whole_block_container != nullptr)
+								{
+									listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(whole_block_container->pointer_to_listed_segment->group_list.back()->data_container);
+								}
 
 								EFilterRule* filter_rule = listed_container->data_container_with_filter_rule->filter_rule;
 								std::string data_type_text = filter_rule->focused_by_data_type;
@@ -9116,13 +9142,16 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 							if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC)
 							{
-								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+								if (jc_filter_block != nullptr)
+								{
+									whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+								}
 
 								//EInputCore::logger_simple_info("Cosmetic");
 
 								//		FONT SIZE
 								//EInputCore::logger_param("buffer text is", buffer_text);
-								if (matched_filter_block_attribute->localisation.base_name == "SetFontSize")
+								if ((matched_filter_block_attribute->localisation.base_name == "SetFontSize") && (whole_block_container != nullptr))
 								{
 
 									whole_block_container->text_size = (std::stoi(buffer_text) - 18) / 27.0f;
@@ -9137,25 +9166,45 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								//		BOX COLOR
 								if (target_HRA_color != nullptr)
 								{
-									if (data_part == 2) { target_HRA_color->r = std::stoi(buffer_text) / 255.0f; }
-									if (data_part == 3) { target_HRA_color->g = std::stoi(buffer_text) / 255.0f; }
+									int converted_value = 0;
+
+									if (!comment_mode)
+									{
+										if (EStringUtils::if_text_is_number(&buffer_text))
+										{
+											converted_value = EStringUtils::safe_convert_string_to_number(buffer_text, 0, 255);
+										}
+										else
+										{
+											EInputCore::logger_simple_error("string [" + buffer_text + "] cannot be converted to number");
+										}
+									}
+
+									if (data_part == 2) { target_HRA_color->r = converted_value / 255.0f; }
+									if (data_part == 3) { target_HRA_color->g = converted_value / 255.0f; }
 									if (data_part == 4)
 									{
-										target_HRA_color->b = std::stoi(buffer_text) / 255.0f;
+										target_HRA_color->b = converted_value / 255.0f;
 
 										Helper::rgb2hsv(target_HRA_color);
 										if (!comment_mode) { *target_color_bool = true; }
 									}
+
 									if (data_part == 5)
 									{
-										target_HRA_color->a = std::stoi(buffer_text) / 255.0f;
-
-
+										if ((!comment_mode) && (EStringUtils::if_text_is_number(&buffer_text)))
+										{
+											target_HRA_color->a = std::stoi(buffer_text) / 255.0f;
+										}
+										else
+										{
+											target_HRA_color->a = 1.0f;
+										}
 									}
 								}
 
 								//		MINIMAP ICON
-								if (matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON)
+								if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON) && (whole_block_container != nullptr))
 								{
 									EntityButtonVariantRouter* router_button_size = whole_block_container->pointer_to_minimap_icon_size_router;
 									EntityButtonVariantRouter* router_button_color = whole_block_container->pointer_to_minimap_icon_color_router;
@@ -9201,8 +9250,11 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 											//EInputCore::logger_param_with_warning("undefined sound", buffer_text);
 										}
 
-										whole_block_container->pointer_to_custom_sound_button->stored_named_sound = matched_named_sound;
-										if (!comment_mode) { whole_block_container->custom_sound_suppressor_bool = true; }
+										if (whole_block_container != nullptr)
+										{
+											whole_block_container->pointer_to_custom_sound_button->stored_named_sound = matched_named_sound;
+											if (!comment_mode) { whole_block_container->custom_sound_suppressor_bool = true; }
+										}
 									}
 								}
 
@@ -9227,16 +9279,18 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 											//EInputCore::logger_param_with_warning("undefined sound", buffer_text);
 										}
 
-
-										whole_block_container->pointer_to_game_sound_button->stored_named_sound = matched_named_sound;
-										if (!comment_mode) { whole_block_container->game_sound_suppressor_bool = true; }
+										if (whole_block_container != nullptr)
+										{
+											whole_block_container->pointer_to_game_sound_button->stored_named_sound = matched_named_sound;
+											if (!comment_mode) { whole_block_container->game_sound_suppressor_bool = true; }
+										}
 
 									}
 									else
-										if (data_part == 3)
+										if ((data_part == 3) && (whole_block_container != nullptr))
 										{
 											float
-												value = std::stoi(buffer_text) / 300.0f;
+											value = std::stoi(buffer_text) / 300.0f;
 											value = max(value, 0.0f);
 											value = min(value, 1.0f);
 
@@ -9247,7 +9301,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								}
 
 								//		RAY
-								if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RAY) && (!comment_mode))
+								if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RAY) && (!comment_mode) && (whole_block_container != nullptr))
 								{
 									EntityButtonVariantRouter* ray_router = whole_block_container->pointer_to_ray_color_router;
 
@@ -9272,23 +9326,14 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 							if (matched_filter_block_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_CONFIG)
 							{
-								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+								if (jc_filter_block != nullptr)
+								{
+									whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+								}
 
 								if (matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_CONFIG_VERSIONS)
 								{
-									int
-										router_id = data_part - 2;
-
-									EntityButtonVariantRouterForFilterBlock*
-										target_router = whole_block_container->version_routers[router_id];
-
-									//EInputCore::logger_param("buffer text", buffer_text);
-									//EInputCore::logger_param("router ID", router_id);
-									//EInputCore::logger_param("searched id", target_router->seach_id_by_base_name(buffer_text));
-									target_router->select_variant(target_router->seach_id_by_base_name(buffer_text));
-								}
-								else
-									if (matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_OLD_VERSION_AUTOGEN)
+									if (whole_block_container != nullptr)
 									{
 										int
 											router_id = data_part - 2;
@@ -9296,9 +9341,27 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										EntityButtonVariantRouterForFilterBlock*
 											target_router = whole_block_container->version_routers[router_id];
 
-										if (buffer_text == "true") { target_router->select_variant(3); }
-										else
-											if (buffer_text == "false") { target_router->select_variant(1); }
+										//EInputCore::logger_param("buffer text", buffer_text);
+										//EInputCore::logger_param("router ID", router_id);
+										//EInputCore::logger_param("searched id", target_router->seach_id_by_base_name(buffer_text));
+										target_router->select_variant(target_router->seach_id_by_base_name(buffer_text));
+									}
+								}
+								else
+									if (matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_OLD_VERSION_AUTOGEN)
+									{
+										if (whole_block_container != nullptr)
+										{
+											int
+												router_id = data_part - 2;
+
+											EntityButtonVariantRouterForFilterBlock*
+												target_router = whole_block_container->version_routers[router_id];
+
+											if (buffer_text == "true") { target_router->select_variant(3); }
+											else
+												if (buffer_text == "false") { target_router->select_variant(1); }
+										}
 									}
 									else
 										if ((matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_CONFIG_SEPARATOR) && (jc_filter_block_separator != nullptr))
@@ -14547,209 +14610,212 @@ void EButtonGroupTopControlSection::draw_button_group()
 {
 	EButtonGroup::draw_button_group();
 
-	EButtonGroupFilterBlock* d_con = pointer_to_filter_block_group;
-
-	float font_size_rescale = 0.4f + d_con->text_size * 0.6f;
-
-	float rescale_factor = min((box_size_x * font_size_rescale) / (float)(example_text_texture[0]->size_x_in_pixels + 6.0f), (region_gabarite->size_y * font_size_rescale) / (float)(example_text_texture[0]->size_y_in_pixels + 6.0f));
-	rescale_factor = min(rescale_factor, 1.0f);
-
-	int array_id = round(1.0f - rescale_factor);
-
-	//rescale_factor *= font_size_rescale;
-
-	float
-		pos_x =
-		pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->world_position_x
-		+
-		pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->size_x;
-
-
-
-	float
-		pos_y = pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->world_position_y;
-
-	pos_x -= box_size_x * (font_size_rescale * 0.5f + 0.5f);
-	//pos_x += box_size_x * (1.0f - font_size_rescale) * 0.5f;
-
-	pos_y += region_gabarite->size_y * (1.0f - font_size_rescale) * 0.5f;
-
-	//static background
-	if (pointer_to_filter_block_group->color_check[0])
+	if (true)
 	{
-		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
-		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+		EButtonGroupFilterBlock* d_con = pointer_to_filter_block_group;
 
-			//x pos
-			pos_x,
+		float font_size_rescale = 0.4f + d_con->text_size * 0.6f;
 
-			//y pos
-			pos_y,
-
-			box_size_x * font_size_rescale,
-			region_gabarite->size_y * font_size_rescale,
-
-			example_text_bg
-		);
-	}
-
-	float box_x = pos_x;
-	float box_y = pos_y;
-
-
-	//		PREVIEW BACKGROUND
-	if (pointer_to_filter_block_group->color_check[0])
-	{
-		NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[0]);
-		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-			//x pos
-			pos_x,
-
-			//y pos
-			pos_y,
-
-			box_size_x * font_size_rescale,
-			region_gabarite->size_y * font_size_rescale,
-
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-
-		);
-	}
-
-	//		PREVIEW TEXT
-	if (pointer_to_filter_block_group->color_check[1])
-	{
-		NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[1]);
-		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-			//x pos
-			pos_x + (box_size_x * font_size_rescale - example_text_texture[0]->size_x_in_pixels * rescale_factor) / 2.0f,
-
-			//y pos
-			pos_y + (region_gabarite->size_y * font_size_rescale - example_text_texture[0]->size_y_in_pixels * rescale_factor) / 2.0f - 1.0f * font_size_rescale,
-
-			example_text_texture[0]->size_x_in_pixels * rescale_factor,
-			example_text_texture[0]->size_y_in_pixels * rescale_factor,
-
-			example_text_texture[array_id]
-		);
-	}
-
-	//		PREVIEW RAMA
-	if (pointer_to_filter_block_group->color_check[2])
-	{
-		NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[2]);
-		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
-		NS_ERenderCollection::add_data_to_vertex_buffer_rama
-		(
-			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-			//x pos
-			pos_x,
-
-			//y pos
-			pos_y,
-
-			box_size_x * font_size_rescale,
-			region_gabarite->size_y * font_size_rescale,
-
-			2.0f * (font_size_rescale * 0.5f + 0.5f),
-
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-
-		);
-	}
-
-
-
-
-	//		MINIMAP ICON PREVIEW
-	if (pointer_to_filter_block_group->minimap_icon_color_suppressor_bool)
-	{
-		EntityButtonVariantRouter* shape_router_button = pointer_to_filter_block_group->pointer_to_minimap_icon_shape_router;
-		RouterVariant* shape_router = (shape_router_button->router_variant_list[shape_router_button->selected_variant]);
-
-
-		EntityButtonVariantRouter* color_router_button = pointer_to_filter_block_group->pointer_to_minimap_icon_color_router;
-		RouterVariant* color_router = (color_router_button->router_variant_list[color_router_button->selected_variant]);
-
-
-		EntityButtonVariantRouter* size_router_button = pointer_to_filter_block_group->pointer_to_minimap_icon_size_router;
-
-
-
-		rescale_factor = pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->size_y / (float)(shape_router->texture->size_y_in_pixels);
-
-		rescale_factor *= 1.0f - 0.25f * size_router_button->selected_variant;
-
-		rescale_factor = max(rescale_factor, 0.25f);
+		float rescale_factor = min((box_size_x * font_size_rescale) / (float)(example_text_texture[0]->size_x_in_pixels + 6.0f), (region_gabarite->size_y * font_size_rescale) / (float)(example_text_texture[0]->size_y_in_pixels + 6.0f));
 		rescale_factor = min(rescale_factor, 1.0f);
 
-		float shape_x_size = shape_router->texture->size_x_in_pixels * rescale_factor;
+		int array_id = round(1.0f - rescale_factor);
 
-		NS_EGraphicCore::set_active_color(color_router->color);
-		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+		//rescale_factor *= font_size_rescale;
 
-			//x pos
-			box_x - shape_x_size - 1.0f,
-
-			//y pos
-			box_y,
-
-			shape_x_size,
-			shape_router->texture->size_y_in_pixels * rescale_factor,
-
-			shape_router->texture
-		);
-	}
-
-	pos_x = pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->world_position_x;
-	pos_x += (pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->size_x - NS_DefaultGabarites::texture_ray->size_x_in_pixels) / 2.0f;
-
-	pos_y = pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->world_position_y;
-
-	if (pointer_to_filter_block_group->ray_suppressor)
-	{
-		EntityButtonVariantRouter* ray_color_router = pointer_to_filter_block_group->pointer_to_ray_color_router;
-
-		NS_EGraphicCore::set_active_color(ray_color_router->router_variant_list[ray_color_router->selected_variant]->color);
-
-		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-			//x pos
-			pos_x,
-
-			//y pos
-			pos_y,
-
-			NS_DefaultGabarites::texture_ray->size_x_in_pixels,
-			NS_DefaultGabarites::texture_ray->size_y_in_pixels,
+		float
+			pos_x =
+			pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->world_position_x
+			+
+			pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->size_x;
 
 
-			NS_DefaultGabarites::texture_ray
-		);
+
+		float
+			pos_y = pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->world_position_y;
+
+		pos_x -= box_size_x * (font_size_rescale * 0.5f + 0.5f);
+		//pos_x += box_size_x * (1.0f - font_size_rescale) * 0.5f;
+
+		pos_y += region_gabarite->size_y * (1.0f - font_size_rescale) * 0.5f;
+
+		//static background
+		if (pointer_to_filter_block_group->color_check[0])
+		{
+			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
+			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+				//x pos
+				pos_x,
+
+				//y pos
+				pos_y,
+
+				box_size_x * font_size_rescale,
+				region_gabarite->size_y * font_size_rescale,
+
+				example_text_bg
+			);
+		}
+
+		float box_x = pos_x;
+		float box_y = pos_y;
+
+
+		//		PREVIEW BACKGROUND
+		if (pointer_to_filter_block_group->color_check[0])
+		{
+			NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[0]);
+			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+				//x pos
+				pos_x,
+
+				//y pos
+				pos_y,
+
+				box_size_x * font_size_rescale,
+				region_gabarite->size_y * font_size_rescale,
+
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+
+			);
+		}
+
+		//		PREVIEW TEXT
+		if (pointer_to_filter_block_group->color_check[1])
+		{
+			NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[1]);
+			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+				//x pos
+				pos_x + (box_size_x * font_size_rescale - example_text_texture[0]->size_x_in_pixels * rescale_factor) / 2.0f,
+
+				//y pos
+				pos_y + (region_gabarite->size_y * font_size_rescale - example_text_texture[0]->size_y_in_pixels * rescale_factor) / 2.0f - 1.0f * font_size_rescale,
+
+				example_text_texture[0]->size_x_in_pixels * rescale_factor,
+				example_text_texture[0]->size_y_in_pixels * rescale_factor,
+
+				example_text_texture[array_id]
+			);
+		}
+
+		//		PREVIEW RAMA
+		if (pointer_to_filter_block_group->color_check[2])
+		{
+			NS_EGraphicCore::set_active_color(*d_con->pointer_to_HRA_color[2]);
+			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+			NS_ERenderCollection::add_data_to_vertex_buffer_rama
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+				//x pos
+				pos_x,
+
+				//y pos
+				pos_y,
+
+				box_size_x * font_size_rescale,
+				region_gabarite->size_y * font_size_rescale,
+
+				2.0f * (font_size_rescale * 0.5f + 0.5f),
+
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+
+			);
+		}
+
+
+
+
+		//		MINIMAP ICON PREVIEW
+		if (pointer_to_filter_block_group->minimap_icon_color_suppressor_bool)
+		{
+			EntityButtonVariantRouter* shape_router_button = pointer_to_filter_block_group->pointer_to_minimap_icon_shape_router;
+			RouterVariant* shape_router = (shape_router_button->router_variant_list[shape_router_button->selected_variant]);
+
+
+			EntityButtonVariantRouter* color_router_button = pointer_to_filter_block_group->pointer_to_minimap_icon_color_router;
+			RouterVariant* color_router = (color_router_button->router_variant_list[color_router_button->selected_variant]);
+
+
+			EntityButtonVariantRouter* size_router_button = pointer_to_filter_block_group->pointer_to_minimap_icon_size_router;
+
+
+
+			rescale_factor = pointer_to_filter_block_group->pointer_to_top_control_block->region_gabarite->size_y / (float)(shape_router->texture->size_y_in_pixels);
+
+			rescale_factor *= 1.0f - 0.25f * size_router_button->selected_variant;
+
+			rescale_factor = max(rescale_factor, 0.25f);
+			rescale_factor = min(rescale_factor, 1.0f);
+
+			float shape_x_size = shape_router->texture->size_x_in_pixels * rescale_factor;
+
+			NS_EGraphicCore::set_active_color(color_router->color);
+			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+				//x pos
+				box_x - shape_x_size - 1.0f,
+
+				//y pos
+				box_y,
+
+				shape_x_size,
+				shape_router->texture->size_y_in_pixels * rescale_factor,
+
+				shape_router->texture
+			);
+		}
+
+		pos_x = pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->world_position_x;
+		pos_x += (pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->size_x - NS_DefaultGabarites::texture_ray->size_x_in_pixels) / 2.0f;
+
+		pos_y = pointer_to_filter_block_group->pointer_to_ray_preview_segment->region_gabarite->world_position_y;
+
+		if (pointer_to_filter_block_group->ray_suppressor)
+		{
+			EntityButtonVariantRouter* ray_color_router = pointer_to_filter_block_group->pointer_to_ray_color_router;
+
+			NS_EGraphicCore::set_active_color(ray_color_router->router_variant_list[ray_color_router->selected_variant]->color);
+
+			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+				//x pos
+				pos_x,
+
+				//y pos
+				pos_y,
+
+				NS_DefaultGabarites::texture_ray->size_x_in_pixels,
+				NS_DefaultGabarites::texture_ray->size_y_in_pixels,
+
+
+				NS_DefaultGabarites::texture_ray
+			);
+		}
 	}
 	//std::cout << "!";
 }
@@ -14806,9 +14872,9 @@ void EButtonGroupFilterBlock::post_draw()
 
 }
 
-void EButtonGroupFilterBlock::update(float _d)
+void EButtonGroupFilterBlock::button_group_update(float _d)
 {
-	EButtonGroup::update(_d);
+	EButtonGroup::button_group_update(_d);
 
 	//if (EButtonGroup::catched_by_mouse(this))
 	//{
@@ -14925,9 +14991,9 @@ EntityButtonForListedSegment::~EntityButtonForListedSegment()
 	}
 }
 
-void EButtonGroupDataEntity::update(float _d)
+void EButtonGroupDataEntity::button_group_update(float _d)
 {
-	EButtonGroup::update(_d);
+	EButtonGroup::button_group_update(_d);
 
 	//if
 	//(
@@ -16437,9 +16503,9 @@ bool EButtonGroupLootSimulator::is_condition_sactified_for_listed_expression(std
 	return is_condition_satisfied(_matches_count, condition_operator, value);
 }
 
-void EButtonGroupLootSimulator::update(float _d)
+void EButtonGroupLootSimulator::button_group_update(float _d)
 {
-	EButtonGroup::update(_d);
+	EButtonGroup::button_group_update(_d);
 	//show_hidden_cooldown -= _d;
 
 	//if (show_hidden_cooldown <= 0.0f)

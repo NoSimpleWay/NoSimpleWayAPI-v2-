@@ -303,7 +303,7 @@ public:
 
 	//EButtonGroupFilterBlockAsText*	target_filter_block_as_text_group;
 	void post_draw();
-	void update(float _d);
+	void button_group_update(float _d) override;
 	void button_group_prechange();
 
 	bool button_group_is_visible() override;
@@ -380,7 +380,7 @@ public:
 
 	EButtonGroupDataEntity(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	void update(float _d);
+	void button_group_update(float _d) override;
 	void background_update(float _d);
 
 	EButtonGroup* focused_part = nullptr;
@@ -418,7 +418,7 @@ public:
 	static HSVRGBAColor temp_color;
 	static bool is_condition_sactified_for_listed_expression(std::string _expression, int _matches_count);
 
-	void update(float _d);
+	void button_group_update(float _d) override;
 };
 
 class EButtonGroupNonListedLine : public EButtonGroup
