@@ -513,7 +513,7 @@ void EDataActionCollection::action_play_attached_sound(Entity* _entity, ECustomD
 			)
 	{
 		static_cast<EntityButtonFilterSound*>(_entity)->stored_named_sound->sound->setDefaultVolume(0.2f);
-		ESound::engine->play2D(((EntityButtonFilterSound*)_entity)->stored_named_sound->sound);
+		if (ESound::engine != nullptr) { ESound::engine->play2D(((EntityButtonFilterSound*)_entity)->stored_named_sound->sound); }
 	}
 	else
 	{

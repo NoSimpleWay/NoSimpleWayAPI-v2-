@@ -76,7 +76,7 @@ int main()
 	EInputCore::initiate_input_core();
 
 	ESound::irrKlang_initiate_sound_engine();
-	ESound::engine->play2D(ESound::shootSound);
+	if (ESound::engine != nullptr) { ESound::engine->play2D(ESound::shootSound); }
 
 
 
