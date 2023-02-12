@@ -3035,8 +3035,8 @@ void EButtonGroup::move_to_foreground_and_center()
 {
 	move_to_foreground();
 
-	float new_postition_x = NS_EGraphicCore::SCREEN_WIDTH / 2.0f - region_gabarite->size_x / 2.0f;
-	float new_postition_y = NS_EGraphicCore::SCREEN_HEIGHT / 2.0f - region_gabarite->size_y / 2.0f;
+	float new_postition_x = NS_EGraphicCore::SCREEN_WIDTH / 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_x / 2.0f;
+	float new_postition_y = NS_EGraphicCore::SCREEN_HEIGHT / 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_y / 2.0f;
 
 	translate(new_postition_x - region_gabarite->offset_x, new_postition_y - region_gabarite->offset_y, 0.0f, true);
 }

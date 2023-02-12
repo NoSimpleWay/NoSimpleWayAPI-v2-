@@ -831,7 +831,7 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 	//if (_custom_data->data_container != nullptr)
 	{
 		EButtonGroup::color_editor_group->button_group_is_active = true;
-		EButtonGroup::color_editor_group->move_to_foreground();
+		EButtonGroup::color_editor_group->move_to_foreground_and_center();
 
 		EntityButtonColorButton*			clicked_button	= static_cast<EntityButtonColorButton*>(_entity);
 		EDataContainer_Group_ColorEditor*	group_data		= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
@@ -1575,7 +1575,7 @@ void EDataActionCollection::action_set_button_group_as_active(Entity* _entity, E
 	{
 		//EDataContainer_Button_OpenButtonGroup* button_data = static_cast<EDataContainer_Button_OpenButtonGroup*>(_custom_data->data_container);
 		((EntityButtonButtonGroupActivator*)_entity)->target_group->button_group_is_active = true;
-		((EntityButtonButtonGroupActivator*)_entity)->target_group->move_to_foreground();
+		((EntityButtonButtonGroupActivator*)_entity)->target_group->move_to_foreground_and_center();
 	}
 }
 
@@ -1661,6 +1661,11 @@ void EDataActionCollection::action_cancel_closing_program(Entity* _entity, ECust
 void EDataActionCollection::action_set_unsaved_changes(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EInputCore::NSW_have_unsave_changes = true;
+}
+
+void EDataActionCollection::action_open_url(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	ShellExecute(0, 0, static_cast<EntityButtonOpenURL*>(_entity)->stored_url.c_str(), 0, 0, SW_SHOW);
 }
 
 //void EDataActionCollection::action_active_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)

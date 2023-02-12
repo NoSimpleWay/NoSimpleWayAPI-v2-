@@ -597,6 +597,7 @@ namespace EDataActionCollection
 	void action_close_program(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_cancel_closing_program(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_set_unsaved_changes(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_url(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void action_active_filter_block						(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text

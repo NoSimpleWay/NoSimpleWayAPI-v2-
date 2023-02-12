@@ -461,6 +461,7 @@ public:
 	int stored_localisation;
 
 };
+
 class EntityButtonConfirmAction : public EntityButton
 {
 public:
@@ -470,6 +471,16 @@ public:
 	data_action_pointer stored_action;
 
 	int stored_localisation;
+
+};
+
+class EntityButtonOpenURL : public EntityButton
+{
+public:
+	EntityButtonOpenURL();
+	~EntityButtonOpenURL();
+
+	std::string stored_url;
 
 };
 

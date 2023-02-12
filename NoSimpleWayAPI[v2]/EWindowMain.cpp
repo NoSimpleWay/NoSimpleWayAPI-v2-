@@ -271,7 +271,7 @@ void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity
 
 
 	EWindowMain::existing_loot_filter_list->button_group_is_active = true;
-	EWindowMain::existing_loot_filter_list->move_to_foreground();
+	EWindowMain::existing_loot_filter_list->move_to_foreground_and_center();
 	EWindowMain::load_loot_filter_list();
 	EButtonGroup::refresh_button_group(EWindowMain::existing_loot_filter_list);
 
@@ -477,7 +477,7 @@ void EDataActionCollection::action_open_custom_sound_list(Entity* _entity, ECust
 {
 	EButtonGroup::sound_list_group->button_group_is_active = true;
 	EButtonGroup::sound_list_group->target_sound_button = static_cast<EntityButtonFilterSound*>(_entity);
-	EButtonGroup::sound_list_group->move_to_foreground();
+	EButtonGroup::sound_list_group->move_to_foreground_and_center();
 
 	EButtonGroup::sound_list_group->action_on_select_for_button = &EDataActionCollection::action_select_this_sound_for_target_button;
 	//EWindowMain::load_custom_sound_list();
@@ -492,7 +492,7 @@ void EDataActionCollection::action_open_ingame_sound_list(Entity* _entity, ECust
 {
 	EButtonGroup::sound_list_group->button_group_is_active = true;
 	EButtonGroup::sound_list_group->target_sound_button = static_cast<EntityButtonFilterSound*>(_entity);
-	EButtonGroup::sound_list_group->move_to_foreground();
+	EButtonGroup::sound_list_group->move_to_foreground_and_center();
 
 	EButtonGroup::sound_list_group->action_on_select_for_button = &EDataActionCollection::action_select_this_sound_for_target_button;
 	//EWindowMain::load_custom_sound_list();
@@ -667,7 +667,7 @@ void EDataActionCollection::action_create_new_loot_filter_with_name(Entity* _ent
 void EDataActionCollection::action_open_new_lootfilter_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::create_new_loot_filter_group->button_group_is_active = true;
-	EWindowMain::create_new_loot_filter_group->move_to_foreground();
+	EWindowMain::create_new_loot_filter_group->move_to_foreground_and_center();
 	EWindowMain::create_new_loot_filter_group->input_field_button->main_text_area->change_text("");
 }
 
@@ -867,7 +867,7 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EWindowMain::data_entity_filter->data_container;
 
 	EWindowMain::data_entity_filter->button_group_is_active = true;
-	EWindowMain::data_entity_filter->move_to_foreground();
+	EWindowMain::data_entity_filter->move_to_foreground_and_center();
 
 	button_group_data_container->pointer_to_group_item_receiver = button_data_container->target_group;
 	button_group_data_container->target_rule = button_data_container->filter_rule;
@@ -1376,6 +1376,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 void EDataActionCollection::action_open_and_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::loot_simulator_button_group->button_group_is_active = true;
+	EWindowMain::loot_simulator_button_group->move_to_foreground_and_center();
 	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
 }
 
@@ -2040,6 +2041,7 @@ EWindowMain::EWindowMain()
 		main_button_group->root_group = main_button_group;
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 		main_button_group->can_be_stretched_by_child = false;
+		main_button_group->button_group_is_active = false;
 
 		//main_button_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 40.0f), EGUIStyle::active_style);
 		//*main_button_group->can_change_style = false;
@@ -2772,6 +2774,7 @@ EWindowMain::EWindowMain()
 		main_loot_buttons_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
 		main_loot_buttons_group->root_group = main_loot_buttons_group;
 		main_loot_buttons_group->parent_window = this;
+		main_loot_buttons_group->button_group_is_active = false;
 
 		loot_simulator_button_group = main_loot_buttons_group;
 		////////////////////////////////
@@ -3503,7 +3506,7 @@ EWindowMain::EWindowMain()
 	//loot filters list
 	{
 		EButtonGroupLootFilterList*
-			main_button_group = new EButtonGroupLootFilterList(new ERegionGabarite(512.0f, 256.0f, 1020.0f, 512.0f));
+		main_button_group = new EButtonGroupLootFilterList(new ERegionGabarite(512.0f, 256.0f, 1020.0f, 512.0f));
 		main_button_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
 
 		EWindowMain::existing_loot_filter_list = main_button_group;
@@ -3645,6 +3648,8 @@ EWindowMain::EWindowMain()
 
 		button_group_list.push_back(main_button_group);
 		EButtonGroup::refresh_button_group(main_button_group);
+
+		main_button_group->move_to_foreground_and_center();
 	}
 
 
@@ -3887,43 +3892,89 @@ EWindowMain::EWindowMain()
 	//about
 	{
 		EButtonGroup*
-		about_whole_group = new EButtonGroup(new ERegionGabarite(500.0f, 300.0f));
+		about_whole_group = new EButtonGroup(new ERegionGabarite(500.0f, 400.0f));
 		about_whole_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
 		about_whole_group->root_group = about_whole_group;
 		about_whole_group->parent_window = this;
 
-		EButtonGroup*
-		about_workspace_part = about_whole_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
-		about_workspace_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-		about_workspace_part->button_size_x_override = 200.0f;
+			EButtonGroup*
+			about_workspace_part = about_whole_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
+			about_workspace_part->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_default_bg);
+			about_workspace_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+			
+		
+				EButtonGroup*
+				used_resoures_part = about_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(50.0f, 200.0f)));
+				used_resoures_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+				used_resoures_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+				used_resoures_part->button_size_x_override = 200.0f;
 
-		/*---------------	BMFont	----------------------*/
-			EntityButton*
-			used_BMFont = new EntityButton();
-			about_workspace_part->add_button_to_working_group(used_BMFont);
+				EButtonGroup*
+				contact_info_part = about_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(50.0f, 200.0f)));
+				contact_info_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+				contact_info_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+				contact_info_part->button_size_x_override = 200.0f;
+		/*---------------	VK	----------------------*/
+			{
+				EntityButtonOpenURL*
+				contact_VK = new EntityButtonOpenURL();
+				contact_VK->stored_url = "https://vk.com/pathtoexalted";
 
-			ELocalisationText
-			ltext;
-			ltext.localisations[NSW_localisation_EN] = "BMFont\nwww.angelcode.com";
-			ltext.localisations[NSW_localisation_RU] = "BMFont\nwww.angelcode.com";
+				contact_info_part->add_button_to_working_group(contact_VK);
 
-			used_BMFont->make_as_default_button_with_icon_and_text
-			(
-				new ERegionGabarite(200.0f, 44.0f),
-				about_workspace_part,
-				nullptr,
-				NS_EGraphicCore::load_from_textures_folder("buttons/button_BMFont"),
-				ltext.localisations[ELocalisationText::active_localisation]
-			);
+				ELocalisationText
+				ltext;
+				ltext.localisations[NSW_localisation_EN] = "VK\nvk.com/pathtoexalted";
+				ltext.localisations[NSW_localisation_RU] = "VK\nvk.com/pathtoexalted";
+
+				contact_VK->make_as_default_button_with_icon_and_text
+				(
+					new ERegionGabarite(200.0f, 44.0f),
+					contact_info_part,
+					&EDataActionCollection::action_open_url,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_VK"),
+					ltext.localisations[ELocalisationText::active_localisation]
+				);
+				contact_VK->main_text_area->localisation_text = ltext;
+			}
 		/*-----------------------------------------------------------------*/
 
 
+		/*---------------	BMFont	----------------------*/
+			{
+				EntityButtonOpenURL*
+					used_BMFont = new EntityButtonOpenURL();
+				used_BMFont->stored_url = "www.angelcode.com";
+
+				used_resoures_part->add_button_to_working_group(used_BMFont);
+
+				ELocalisationText
+				ltext;
+				ltext.localisations[NSW_localisation_EN] = "BMFont\nwww.angelcode.com";
+				ltext.localisations[NSW_localisation_RU] = "BMFont\nwww.angelcode.com";
+
+				used_BMFont->make_as_default_button_with_icon_and_text
+				(
+					new ERegionGabarite(200.0f, 44.0f),
+					used_resoures_part,
+					&EDataActionCollection::action_open_url,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_BMFont"),
+					ltext.localisations[ELocalisationText::active_localisation]
+				);
+				used_BMFont->main_text_area->localisation_text = ltext;
+			}
+		/*-----------------------------------------------------------------*/
+
+
+		
 
 		/*---------------	GLFW	----------------------*/
 			{
-				EntityButton*
-					used_GLFW = new EntityButton();
-				about_workspace_part->add_button_to_working_group(used_GLFW);
+				EntityButtonOpenURL*
+				used_GLFW = new EntityButtonOpenURL();
+				used_GLFW->stored_url = "www.glfw.org";
+
+				used_resoures_part->add_button_to_working_group(used_GLFW);
 
 				ELocalisationText
 					ltext;
@@ -3933,8 +3984,8 @@ EWindowMain::EWindowMain()
 				used_GLFW->make_as_default_button_with_icon_and_text
 				(
 					new ERegionGabarite(200.0f, 44.0f),
-					about_workspace_part,
-					nullptr,
+					used_resoures_part,
+					&EDataActionCollection::action_open_url,
 					NS_EGraphicCore::load_from_textures_folder("buttons/button_GLFW"),
 					ltext.localisations[ELocalisationText::active_localisation]
 				);
@@ -3946,34 +3997,90 @@ EWindowMain::EWindowMain()
 
 		/*---------------	IRRKlang	----------------------*/
 			{
-				EntityButton*
-					used_GLFW = new EntityButton();
-				about_workspace_part->add_button_to_working_group(used_GLFW);
+				EntityButtonOpenURL*
+				used_IRRKLang = new EntityButtonOpenURL();
+				used_IRRKLang->stored_url = "www.ambiera.com";
+
+				used_resoures_part->add_button_to_working_group(used_IRRKLang);
 
 				ELocalisationText
-					ltext;
+				ltext;
 				ltext.localisations[NSW_localisation_EN] = "IRRKlang\nwww.ambiera.com";
 				ltext.localisations[NSW_localisation_RU] = "IRRKlang\nwww.ambiera.com";
 
-				used_GLFW->make_as_default_button_with_icon_and_text
+				used_IRRKLang->make_as_default_button_with_icon_and_text
 				(
 					new ERegionGabarite(200.0f, 44.0f),
-					about_workspace_part,
-					nullptr,
+					used_resoures_part,
+					&EDataActionCollection::action_open_url,
 					NS_EGraphicCore::load_from_textures_folder("buttons/button_IRRKlang"),
 					ltext.localisations[ELocalisationText::active_localisation]
 				);
-				used_GLFW->main_text_area->localisation_text = ltext;
+				used_IRRKLang->main_text_area->localisation_text = ltext;
 			}
 		/*-----------------------------------------------------------------*/
 
 
 
-		/*---------------	TEXT AREA	----------------------*/
+		/*---------------	assimp	----------------------*/
+			{
+				EntityButtonOpenURL*
+				used_assimp = new EntityButtonOpenURL();
+				used_assimp->stored_url = "www.assimp.org";
+
+				used_resoures_part->add_button_to_working_group(used_assimp);
+
+				ELocalisationText
+				ltext;
+				ltext.localisations[NSW_localisation_EN] = "assimp\nwww.assimp.org";
+				ltext.localisations[NSW_localisation_RU] = "assimp\nwww.assimp.org";
+
+				used_assimp->make_as_default_button_with_icon_and_text
+				(
+					new ERegionGabarite(200.0f, 44.0f),
+					used_resoures_part,
+					&EDataActionCollection::action_open_url,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_assimp"),
+					ltext.localisations[ELocalisationText::active_localisation]
+				);
+				used_assimp->main_text_area->localisation_text = ltext;
+			}
+		/*-----------------------------------------------------------------*/
+
+
+
+		/*---------------	assimp	----------------------*/
+			{
+				EntityButtonOpenURL*
+				used_stb_image = new EntityButtonOpenURL();
+				used_stb_image->stored_url = "http://nothings.org/";
+
+				used_resoures_part->add_button_to_working_group(used_stb_image);
+
+				ELocalisationText
+				ltext;
+				ltext.localisations[NSW_localisation_EN] = "stb_image\nnothings.org";
+				ltext.localisations[NSW_localisation_RU] = "stb_image\nnothings.org";
+
+				used_stb_image->make_as_default_button_with_icon_and_text
+				(
+					new ERegionGabarite(200.0f, 44.0f),
+					used_resoures_part,
+					&EDataActionCollection::action_open_url,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_stb_image"),
+					ltext.localisations[ELocalisationText::active_localisation]
+				);
+				used_stb_image->main_text_area->localisation_text = ltext;
+			}
+		/*-----------------------------------------------------------------*/
+
+
+
+		/*---------------	TEXT AREA(used resource)	----------------------*/
 		{
 			EClickableArea*
-			clickable_area_for_group = EClickableArea::create_default_clickable_region(about_workspace_part->region_gabarite, about_workspace_part);
-			about_workspace_part->clickable_area_list.push_back(clickable_area_for_group);
+			clickable_area_for_group = EClickableArea::create_default_clickable_region(used_resoures_part->region_gabarite, used_resoures_part);
+			used_resoures_part->clickable_area_list.push_back(clickable_area_for_group);
 
 			ELocalisationText
 			ltext;
@@ -3989,7 +4096,27 @@ EWindowMain::EWindowMain()
 		}
 		/*-----------------------------------------------------------------*/
 
+		/*---------------	TEXT AREA (contacts)	----------------------*/
+		{
+			EClickableArea*
+			clickable_area_for_group = EClickableArea::create_default_clickable_region(contact_info_part->region_gabarite, contact_info_part);
+			contact_info_part->clickable_area_list.push_back(clickable_area_for_group);
 
+			ELocalisationText
+			ltext;
+
+			ltext.localisations[NSW_localisation_EN] = "Contact with us";
+			ltext.localisations[NSW_localisation_RU] = "Связаться с нами";
+
+			ETextArea*
+			text_area_for_group = ETextArea::create_centered_to_up_text_area(clickable_area_for_group, EFont::font_list[0], ltext.localisations[ELocalisationText::active_localisation]);
+			text_area_for_group->localisation_text = ltext;
+
+			clickable_area_for_group->text_area = text_area_for_group;
+		}
+		/*-----------------------------------------------------------------*/
+
+		about_whole_group->move_to_foreground_and_center();
 		EButtonGroup::refresh_button_group(about_whole_group);
 		button_group_list.push_back(about_whole_group);
 	}
@@ -13197,7 +13324,7 @@ void EWindowMain::remove_unsave_changes_flag()
 void EDataActionCollection::action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EButtonGroup::add_content_to_filter_block_group->button_group_is_active = true;
-	EButtonGroup::add_content_to_filter_block_group->move_to_foreground();
+	EButtonGroup::add_content_to_filter_block_group->move_to_foreground_and_center();
 
 	//_custom_data
 	EDataContainer_Button_OpenButtonGroup* button_plus_data = static_cast<EDataContainer_Button_OpenButtonGroup*>			(_custom_data->data_container);
@@ -13253,7 +13380,7 @@ void EDataActionCollection::action_add_selected_content_to_filter_block(Entity* 
 void EDataActionCollection::action_open_rarity_selector(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::select_rarity_button_group->button_group_is_active = true;
-	EWindowMain::select_rarity_button_group->move_to_foreground();
+	EWindowMain::select_rarity_button_group->move_to_foreground_and_center();
 
 	static_cast<EDataContainer_Group_TextSelectorFromVariants*>(EWindowMain::select_rarity_button_group->data_container)->target_button = static_cast<EntityButton*>(_entity);
 	//reg
@@ -13266,7 +13393,7 @@ void EDataActionCollection::action_open_rarity_selector(Entity* _entity, ECustom
 void EDataActionCollection::action_open_quality_selector(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::select_quality_button_group->button_group_is_active = true;
-	EWindowMain::select_quality_button_group->move_to_foreground();
+	EWindowMain::select_quality_button_group->move_to_foreground_and_center();
 
 	static_cast<EDataContainer_Group_TextSelectorFromVariants*>(EWindowMain::select_quality_button_group->data_container)->target_button = static_cast<EntityButton*>(_entity);
 	//reg

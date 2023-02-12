@@ -1402,7 +1402,7 @@ ETextArea* ETextArea::create_centered_to_up_text_area(EClickableArea* _region_ga
 		jc_text_area->offset_by_gabarite_size_y = 1.0f;
 
 		jc_text_area->offset_by_text_size_x = -0.5f;
-		jc_text_area->offset_by_text_size_y = -1.0f;
+		jc_text_area->offset_by_text_size_y = -1.3f;
 
 		//jc_text_area->can_be_edited = false;
 

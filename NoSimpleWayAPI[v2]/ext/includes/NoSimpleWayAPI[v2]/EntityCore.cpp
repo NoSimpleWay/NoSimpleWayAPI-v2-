@@ -1887,3 +1887,11 @@ EntityButtonVariantRouterSelector::~EntityButtonVariantRouterSelector()
 EntityButtonMultiSearch::~EntityButtonMultiSearch()
 {
 }
+
+EntityButtonOpenURL::EntityButtonOpenURL()
+{
+}
+
+EntityButtonOpenURL::~EntityButtonOpenURL()
+{
+}

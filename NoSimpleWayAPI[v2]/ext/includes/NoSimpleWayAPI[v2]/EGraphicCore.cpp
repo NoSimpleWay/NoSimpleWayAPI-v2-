@@ -3997,11 +3997,15 @@ void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, i
 	//glScissor(0, 0, 500, 500);
 
 	//glViewport(0, 0, width, height);
+
+	int old_w = NS_EGraphicCore::SCREEN_WIDTH, old_h = NS_EGraphicCore::SCREEN_HEIGHT;
+
 	glfwGetWindowSize(window, &NS_EGraphicCore::SCREEN_WIDTH, &NS_EGraphicCore::SCREEN_HEIGHT);
 	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
 
 
-
+	float resize_x_factor = width / (float)old_w;
+	float resize_y_factor = height / (float)old_h;
 
 	std::cout << "Resize event width:" << NS_EGraphicCore::SCREEN_WIDTH << " height: " << NS_EGraphicCore::SCREEN_HEIGHT << std::endl;
 
@@ -4009,7 +4013,41 @@ void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, i
 
 	for (EWindow* w : EWindow::window_list)
 	{
+		for (EButtonGroup* group : w->button_group_list)
+		{
+			float real_gabarite_x = float(old_w) - group->region_gabarite->size_x;
+			float additional_real_gabarite_x = float(width) - group->region_gabarite->size_x;
+			float percent_x = group->region_gabarite->offset_x / (real_gabarite_x);
+
+			group->region_gabarite->offset_x = additional_real_gabarite_x * percent_x;
+			group->region_gabarite->offset_x = min(group->region_gabarite->offset_x, width - 64.0f);
+			group->region_gabarite->offset_x = max(group->region_gabarite->offset_x, -group->region_gabarite->size_x + 64.0f);
+		
+
+
+
+			float real_gabarite_y = float(old_h) - group->region_gabarite->size_y;
+			float additional_real_gabarite_y = float(height) - group->region_gabarite->size_y;
+			float percent_y = group->region_gabarite->offset_y / (real_gabarite_y);
+
+			group->region_gabarite->offset_y = additional_real_gabarite_y * percent_y;
+			group->region_gabarite->offset_y = min(group->region_gabarite->offset_y, height - 64.0f);
+			group->region_gabarite->offset_y = max(group->region_gabarite->offset_y, -group->region_gabarite->size_y + 64.0f);
+
+
+
+
+
+
+			//group->region_gabarite->offset_y = (group->region_gabarite->offset_y / old_h) * height;
+
+			group->need_refresh = true;
+		}
+
+		
 		refresh_autosize_groups(w);
+
+
 	}
 }
 
