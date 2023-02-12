@@ -312,8 +312,8 @@ public:
 	float highest_point_y = (0.0f);
 	float highest_point_y_for_buttons = (0.0f);
 
-	float higher_culling_line = 0.0f;
-	float lower_culling_line = 0.0f;
+	//float higher_culling_line = 0.0f;
+	//float lower_culling_line = 0.0f;
 
 	//float higher_culling_line_for_bg = 0.0f;
 	//float lower_culling_line_for_bg = 0.0f;
