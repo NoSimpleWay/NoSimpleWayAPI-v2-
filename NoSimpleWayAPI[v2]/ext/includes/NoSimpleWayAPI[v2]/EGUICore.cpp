@@ -336,6 +336,9 @@ void EWindow::GUI_update_default(float _d)
 					//(b_group->can_see_this_group())
 				)
 			{
+				b_group->lower_culling_line		= b_group->region_gabarite->world_position_y;
+				b_group->higher_culling_line	= b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y;
+
 				b_group->button_group_update(_d);
 				
 
@@ -636,14 +639,19 @@ void EButtonGroup::button_group_update(float _d)
 	if
 	(
 		(button_group_is_visible())//group not deactivated
-		&&
-		(can_see_this_group())//in visible gabarites
+		//&&
+		//(can_see_this_group())//in visible gabarites
 	)
 	{
 
 		//
 		phantom_translate_if_need();
 
+		if (parent_group != nullptr)
+		{
+			lower_culling_line	= max(region_gabarite->world_position_y, parent_group->region_gabarite->world_position_y);
+			higher_culling_line	= min(region_gabarite->world_position_y + region_gabarite->size_y, parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y);
+		}
 
 		for (EntityButton* but : all_button_list)
 		{
@@ -841,11 +849,11 @@ void EButtonGroup::draw_button_group()
 			{
 				glScissor
 				(
-					(region_gabarite->world_position_x + region_gabarite->phantom_translate_x) * NS_EGraphicCore::current_zoom,
-					(parent_group->region_gabarite->world_position_y +region_gabarite->phantom_translate_y) * NS_EGraphicCore::current_zoom,
+					region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
+					lower_culling_line * NS_EGraphicCore::current_zoom,
 
 					region_gabarite->size_x * NS_EGraphicCore::current_zoom,
-					max(0.0f, parent_group->region_gabarite->size_y) * NS_EGraphicCore::current_zoom
+					max(0.0f, higher_culling_line - lower_culling_line) * NS_EGraphicCore::current_zoom
 				);
 			}
 			else
@@ -937,14 +945,37 @@ void EButtonGroup::draw_button_group()
 
 			}
 
-			NS_EGraphicCore::pbr_batcher->draw_call();
-			batcher_for_default_draw->draw_call();
+			
 
 			//NS_EGraphicCore::test_batcher->draw_call();
 
 
 			
 
+			glEnable(GL_SCISSOR_TEST);
+
+			if (parent_group != nullptr)
+			{
+				glScissor
+				(
+					region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
+					lower_culling_line * NS_EGraphicCore::current_zoom,
+
+					region_gabarite->size_x * NS_EGraphicCore::current_zoom,
+					max(0.0f, higher_culling_line - lower_culling_line) * NS_EGraphicCore::current_zoom
+				);
+			}
+			else
+			{
+				glScissor
+				(
+					region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
+					region_gabarite->world_position_y * NS_EGraphicCore::current_zoom,
+
+					region_gabarite->size_x * NS_EGraphicCore::current_zoom,
+					region_gabarite->size_y * NS_EGraphicCore::current_zoom
+				);
+			}
 
 			for (EntityButton* but : all_button_list)
 			if
