@@ -276,7 +276,7 @@ public:
 
 	std::vector<EntityButton*> all_button_list;
 	std::vector<EntityButton*> workspace_button_list;
-	void delete_exact_button	(EntityButton* _button);
+	void delete_exact_button(EntityButton* _button);
 	void remove_all_workspace_buttons();
 	//std::vector<EButtonGroupRow*> group_row_list;
 	//EButtonGroupRow* parent_group_row = nullptr;
@@ -312,8 +312,8 @@ public:
 	float highest_point_y = (0.0f);
 	float highest_point_y_for_buttons = (0.0f);
 
-	//float higher_culling_line = 0.0f;
-	//float lower_culling_line = 0.0f;
+	float higher_culling_line = 0.0f;
+	float lower_culling_line = 0.0f;
 
 	//float higher_culling_line_for_bg = 0.0f;
 	//float lower_culling_line_for_bg = 0.0f;
@@ -508,7 +508,7 @@ public:
 	void highlight_this_group();
 	void recursive_change_localisation(int _localisaton_id);
 
-	
+
 };
 
 
@@ -541,18 +541,18 @@ class EButtonGroupConfirmAction : public EButtonGroup
 public:
 	EButtonGroupConfirmAction(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	EntityButtonConfirmAction*			pointer_to_confirm_button;
-	EntityButtonConfirmAction*			pointer_to_decline_button;
+	EntityButtonConfirmAction* pointer_to_confirm_button;
+	EntityButtonConfirmAction* pointer_to_decline_button;
 
-	EButtonGroup*						pointer_to_workspace_part;
-	ETextArea*							pointer_to_description_text_area;
+	EButtonGroup* pointer_to_workspace_part;
+	ETextArea* pointer_to_description_text_area;
 
 	//data_action_pointer				action_on_accept;
 	//data_action_pointer				action_on_decline;
 
 	void								init_as_confirm_decline_group();
 
-	static EButtonGroupConfirmAction*	confirm_decline_group;
+	static EButtonGroupConfirmAction* confirm_decline_group;
 };
 
 enum StyleList
