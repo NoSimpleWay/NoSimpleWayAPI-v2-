@@ -954,23 +954,7 @@ void EButtonGroup::draw_button_group()
 
 
 
-			if (parent_group != nullptr)
-			{
-				glScissor
-				(
-					region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
-					lower_culling_line * NS_EGraphicCore::current_zoom,
-
-					region_gabarite->size_x * NS_EGraphicCore::current_zoom,
-					max(0.0f, higher_culling_line - lower_culling_line) * NS_EGraphicCore::current_zoom
-				);
-			}
-			else
-			{
-				glScissor
-				(
-					region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
-					region_gabarite->world_position_y * NS_EGraphicCore::current_zoom,
+			glEnable(GL_SCISSOR_TEST);
 
 			if (parent_group != nullptr)
 			{
