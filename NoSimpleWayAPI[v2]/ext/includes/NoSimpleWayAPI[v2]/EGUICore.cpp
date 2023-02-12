@@ -2901,12 +2901,12 @@ bool EButtonGroup::can_see_this_group()
 	(
 		//(is_active)
 		//&&
+		(root_group == this)
+		&&
 		(region_gabarite->world_position_x <= NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom)
 		&&
 		(region_gabarite->world_position_x + region_gabarite->size_x > 0.0f)
-
 		&&
-
 		(region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
 		&&
 		(region_gabarite->world_position_y + region_gabarite->size_y > 0.0f)
@@ -2914,10 +2914,28 @@ bool EButtonGroup::can_see_this_group()
 	{
 		return true;
 	}
-	else
+
+	if
+	(
+		//(is_active)
+		//&&
+		(root_group != this)
+		&&
+		(parent_group != nullptr)
+		&&
+		(region_gabarite->world_position_y <= parent_group->higher_culling_line)
+		&&
+		(region_gabarite->world_position_y + region_gabarite->size_y >= parent_group->lower_culling_line)
+	)
 	{
-		return false;
+		return true;
 	}
+
+	return false;
+
+
+
+
 }
 
 void EButtonGroup::phantom_translate_if_need()

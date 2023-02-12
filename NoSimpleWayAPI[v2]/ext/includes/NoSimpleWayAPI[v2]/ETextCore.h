@@ -276,6 +276,7 @@ public:
 	static ETextArea* create_centered_to_left_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
 
 	static ETextArea* create_bottomed_to_left_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
+	static ETextArea* create_centered_to_up_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
 
 
 

@@ -210,7 +210,7 @@ public:
 
 	ETextureGabarite* example_text_bg = NS_DefaultGabarites::texture_example_text_bg_for_preview_box;
 
-	void draw();
+	void draw_button_group() override;
 };
 
 class EButtonGroupFilterBlockSeparator;

@@ -1000,21 +1000,21 @@ void ETextArea::update(float _d)
 
 	//BACKSPACE key - erase left sided symbol
 	if
+	(
 		(
+			(EInputCore::key_pressed_once(GLFW_KEY_BACKSPACE))
+			||
 			(
-				(EInputCore::key_pressed_once(GLFW_KEY_BACKSPACE))
-				||
-				(
-					(EInputCore::key_holded(GLFW_KEY_BACKSPACE, 0.25f))
-					&&
-					(jump_cooldown <= 0)
-					)
-				)
-			&&
-			(text_area_active)
+				(EInputCore::key_holded(GLFW_KEY_BACKSPACE, 0.20f))
+				&&
+				(jump_cooldown <= 0)
 			)
+		)
+		&&
+		(text_area_active)
+	)
 	{
-		jump_cooldown = 0.1f;
+		jump_cooldown = 0.065f;
 
 		int target_glyph_id = min(selected_glyph_position, font_glyph_list.size() - 1);
 		EFontGlyph* target_glyph = font_glyph_list.at(target_glyph_id);
@@ -1380,6 +1380,29 @@ ETextArea* ETextArea::create_bottomed_to_left_text_area(EClickableArea* _region_
 
 		jc_text_area->offset_by_text_size_x = 0.0f;
 		jc_text_area->offset_by_text_size_y = 0.0f;
+
+		//jc_text_area->can_be_edited = false;
+
+
+		return jc_text_area;
+	}
+	else
+	{
+		return nullptr;
+	}
+}
+
+ETextArea* ETextArea::create_centered_to_up_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text)
+{
+	if (_region_gabarite != nullptr)
+	{
+		ETextArea* jc_text_area = create_base_text_area(_region_gabarite, _font, _text);
+
+		jc_text_area->offset_by_gabarite_size_x = 0.5f;
+		jc_text_area->offset_by_gabarite_size_y = 1.0f;
+
+		jc_text_area->offset_by_text_size_x = -0.5f;
+		jc_text_area->offset_by_text_size_y = -1.0f;
 
 		//jc_text_area->can_be_edited = false;
 
