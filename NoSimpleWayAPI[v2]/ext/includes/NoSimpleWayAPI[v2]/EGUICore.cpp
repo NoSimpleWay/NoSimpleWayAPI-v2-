@@ -381,13 +381,13 @@ void EWindow::GUI_draw_default(float _d)
 
 	for (EButtonGroup* b_group : button_group_list)
 		if
-			(
+		(
 				(b_group != nullptr)
 				&&
 				(b_group->button_group_is_visible())
 				&&
 				(b_group->can_see_this_group())
-				)
+		)
 		{
 			b_group->draw_button_group();
 		}
@@ -641,9 +641,9 @@ void EButtonGroup::button_group_update(float _d)
 	if
 		(
 			(button_group_is_visible())//group not deactivated
-			//&&
-			//(can_see_this_group())//in visible gabarites
-			)
+			&&
+			(can_see_this_group())//in visible gabarites
+		)
 	{
 
 		//
@@ -651,8 +651,8 @@ void EButtonGroup::button_group_update(float _d)
 
 		if (parent_group != nullptr)
 		{
-			lower_culling_line = max(region_gabarite->world_position_y, parent_group->region_gabarite->world_position_y);
-			higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->size_y, parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y);
+			lower_culling_line = max(region_gabarite->world_position_y, parent_group->lower_culling_line);
+			higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->size_y, parent_group->higher_culling_line);
 		}
 
 		for (EntityButton* but : all_button_list)
@@ -952,33 +952,6 @@ void EButtonGroup::draw_button_group()
 			//NS_EGraphicCore::test_batcher->draw_call();
 
 
-
-
-			glEnable(GL_SCISSOR_TEST);
-
-			if (parent_group != nullptr)
-			{
-				glScissor
-				(
-					region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
-					lower_culling_line * NS_EGraphicCore::current_zoom,
-
-					region_gabarite->size_x * NS_EGraphicCore::current_zoom,
-					max(0.0f, higher_culling_line - lower_culling_line) * NS_EGraphicCore::current_zoom
-				);
-			}
-			else
-			{
-				glScissor
-				(
-					region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
-					region_gabarite->world_position_y * NS_EGraphicCore::current_zoom,
-
-					region_gabarite->size_x * NS_EGraphicCore::current_zoom,
-					region_gabarite->size_y * NS_EGraphicCore::current_zoom
-				);
-			}
-
 			for (EntityButton* but : all_button_list)
 				if
 					(
@@ -999,7 +972,7 @@ void EButtonGroup::draw_button_group()
 								&&
 								(false)
 								)
-							)
+						)
 					{
 						but->have_phantom_draw = false;
 						but->be_visible_last_time = true;
@@ -2999,17 +2972,17 @@ bool EButtonGroup::can_see_this_group()
 	}
 
 	if
-		(
-			//(is_active)
-			//&&
-			(root_group != this)
-			&&
-			(parent_group != nullptr)
-			&&
-			(region_gabarite->world_position_y <= parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y)
-			&&
-			(region_gabarite->world_position_y + region_gabarite->size_y >= parent_group->region_gabarite->world_position_y)
-			)
+	(
+		//(is_active)
+		//&&
+		(root_group != this)
+		&&
+		(parent_group != nullptr)
+		&&
+		(region_gabarite->world_position_y <= parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y)
+		&&
+		(region_gabarite->world_position_y + region_gabarite->size_y >= parent_group->region_gabarite->world_position_y)
+	)
 	{
 		return true;
 	}
