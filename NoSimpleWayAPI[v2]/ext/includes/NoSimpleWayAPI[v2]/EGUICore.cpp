@@ -945,6 +945,15 @@ void EButtonGroup::draw_button_group()
 
 			
 
+			glEnable(GL_SCISSOR_TEST);
+
+					region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
+					region_gabarite->world_position_y * NS_EGraphicCore::current_zoom,
+
+					region_gabarite->size_x * NS_EGraphicCore::current_zoom,
+					region_gabarite->size_y * NS_EGraphicCore::current_zoom
+				);
+			}
 
 			for (EntityButton* but : all_button_list)
 			if
