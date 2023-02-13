@@ -2333,9 +2333,9 @@ void EClickableArea::redraw_text()
 
 void EClickableArea::clickable_region_set_world_positions(float _x, float _y, float _z)
 {
-	region_gabarite->world_position_x = _x + region_gabarite->offset_x;
-	region_gabarite->world_position_y = _y + region_gabarite->offset_y;
-	region_gabarite->world_position_z = _z + region_gabarite->offset_z;
+	region_gabarite->world_position_x = round(_x + region_gabarite->offset_x);
+	region_gabarite->world_position_y = round(_y + region_gabarite->offset_y);
+	region_gabarite->world_position_z = round(_z + region_gabarite->offset_z);
 
 	for (ESpriteLayer* s_layer : sprite_layer_list)
 		if (s_layer != nullptr)

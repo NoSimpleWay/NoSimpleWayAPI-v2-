@@ -1358,8 +1358,8 @@ void EButtonGroup::align_groups()
 
 	if (parent_group == nullptr)
 	{
-		region_gabarite->world_position_x = region_gabarite->offset_x;
-		region_gabarite->world_position_y = region_gabarite->offset_y;
+		region_gabarite->world_position_x = round(region_gabarite->offset_x);
+		region_gabarite->world_position_y = round(region_gabarite->offset_y);
 	}
 
 
@@ -1432,11 +1432,11 @@ void EButtonGroup::align_groups()
 
 
 
-			group->region_gabarite->world_position_x = region_gabarite->world_position_x + group->region_gabarite->offset_x;
+			group->region_gabarite->world_position_x = round(region_gabarite->world_position_x + group->region_gabarite->offset_x);
 
 			if (child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
 			{
-				group->region_gabarite->world_position_y = region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y;
+				group->region_gabarite->world_position_y = round(region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y);
 			}
 			else
 				if (child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
@@ -1444,7 +1444,7 @@ void EButtonGroup::align_groups()
 					group->region_gabarite->world_position_y = region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y;
 				}
 
-			group->region_gabarite->world_position_z = region_gabarite->world_position_z + group->region_gabarite->offset_z;
+			group->region_gabarite->world_position_z = round(region_gabarite->world_position_z + group->region_gabarite->offset_z);
 
 
 
@@ -1629,16 +1629,16 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 		EButtonGroup* parent_group = _group->parent_group;
 		if (parent_group != nullptr)
 		{
-			_group->region_gabarite->world_position_x = parent_group->region_gabarite->world_position_x + _group->region_gabarite->offset_x;
+			_group->region_gabarite->world_position_x = round(parent_group->region_gabarite->world_position_x + _group->region_gabarite->offset_x);
 
 			if (parent_group->child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
 			{
-				_group->region_gabarite->world_position_y = parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y;
+				_group->region_gabarite->world_position_y = round(parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y);
 			}
 			else
 				if (parent_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
 				{
-					_group->region_gabarite->world_position_y = parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y;
+					_group->region_gabarite->world_position_y = round(parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y);
 				}
 
 			_group->region_gabarite->world_position_z = parent_group->region_gabarite->world_position_z + _group->region_gabarite->offset_z;
@@ -2843,17 +2843,17 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 	//need_recalcualte_culling_lines = true;
 
 	{
-		region_gabarite->world_position_x += (_x);
-		region_gabarite->world_position_y += (_y);
-		region_gabarite->world_position_z += (_z);
+		region_gabarite->world_position_x += (round(_x));
+		region_gabarite->world_position_y += (round(_y));
+		region_gabarite->world_position_z += (round(_z));
 
 
 
 		if (_move_positions)
 		{
-			region_gabarite->offset_x += (_x);
-			region_gabarite->offset_y += (_y);
-			region_gabarite->offset_z += (_z);
+			region_gabarite->offset_x += (round(_x));
+			region_gabarite->offset_y += (round(_y));
+			region_gabarite->offset_z += (round(_z));
 		}
 	}
 
