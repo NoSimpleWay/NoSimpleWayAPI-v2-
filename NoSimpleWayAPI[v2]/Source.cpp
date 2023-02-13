@@ -135,7 +135,6 @@ int main()
 				)
 		{
 			EButtonGroupConfirmAction::confirm_decline_group->move_to_foreground_and_center();
-			EButtonGroupConfirmAction::confirm_decline_group->button_group_is_active = true;
 		}
 
 		if (!ETextureGabarite::incomplete_gabarites_list.empty())

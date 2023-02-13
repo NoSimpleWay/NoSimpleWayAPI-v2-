@@ -330,13 +330,13 @@ void EWindow::GUI_update_default(float _d)
 
 		//for (EButtonGroup* b_group : button_group_list)
 		if
-			(
+		(
 				(b_group != nullptr)
 				&&
 				(b_group->button_group_is_visible())
 				//&&
 				//(b_group->can_see_this_group())
-				)
+		)
 		{
 			b_group->lower_culling_line = b_group->region_gabarite->world_position_y;
 			b_group->higher_culling_line = b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y;
@@ -556,7 +556,6 @@ void EButtonGroup::button_group_update(float _d)
 	//subgroup
 	//EButtonGroup* prev_group = nullptr;
 
-	//if (but->re*higher_culling_line)
 
 	//invisible elements become visible
 
@@ -787,15 +786,10 @@ void EButtonGroup::draw_button_group()
 	//EInputCore::logger_simple_success("draw button group");
 	if
 		(
-			//(button_group_is_active())
-			//&&
 			(can_see_this_group())
 			&&
 			(button_group_is_visible())
-			//(*region_gabarite->world_position_y <= *higher_culling_line_for_bg)
-			//&&
-			//(*region_gabarite->world_position_y + *region_gabarite->size_y >= *lower_culling_line_for_bg)
-			)
+		)
 	{
 		bool visibility = button_group_is_visible();
 
@@ -1093,38 +1087,42 @@ void EButtonGroup::draw_button_group()
 				);
 			}
 
-			//if ((EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT)) && (false))
-			//{
-			//	NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_CYAN);
-			//	//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
-			//	ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
-			//	NS_ERenderCollection::add_data_to_vertex_buffer_rama
-			//	(
-			//		batcher_for_default_draw->vertex_buffer,
-			//		batcher_for_default_draw->last_vertice_buffer_index,
-			//		region_gabarite->world_position_x + 0.0f,
-			//		lower_culling_line,
-			//		region_gabarite->size_x - 0.0f,
-			//		1.0f,
-			//		1.0f,
-			//		NS_DefaultGabarites::texture_gabarite_white_pixel
-			//	);
+			if ((EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT)) && (true))
+			{
+				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_CYAN);
+				//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+				ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					batcher_for_default_draw->vertex_buffer,
+					batcher_for_default_draw->last_vertice_buffer_index,
 
-			//	NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_YELLOW);
-			//	//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
-			//	ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
-			//	NS_ERenderCollection::add_data_to_vertex_buffer_rama
-			//	(
-			//		batcher_for_default_draw->vertex_buffer,
-			//		batcher_for_default_draw->last_vertice_buffer_index,
-			//		region_gabarite->world_position_x + 0.0f,
-			//		higher_culling_line,
-			//		region_gabarite->size_x - 0.0f,
-			//		1.0f,
-			//		1.0f,
-			//		NS_DefaultGabarites::texture_gabarite_white_pixel
-			//	);
-			//}
+					region_gabarite->world_position_x + 0.0f,
+					lower_culling_line + 2.0f,
+
+					region_gabarite->size_x,
+					2.0f,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+
+				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_YELLOW);
+				//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+				ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					batcher_for_default_draw->vertex_buffer,
+					batcher_for_default_draw->last_vertice_buffer_index,
+
+					region_gabarite->world_position_x + 0.0f,
+					higher_culling_line - 2.0f,
+
+					region_gabarite->size_x - 0.0f,
+					2.0f,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+			}
 
 			if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
 			{
@@ -2882,10 +2880,10 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 
 	//if (_move_positions) { EButtonGroup::calculate_culling_lines(this, true); }
 
-	//higher_culling_line += _y;
+	higher_culling_line += _y;
 	//higher_culling_line_for_bg += _y;
 
-	//lower_culling_line += _y;
+	lower_culling_line += _y;
 	//lower_culling_line_for_bg += _y;
 
 
@@ -3048,8 +3046,19 @@ EButtonGroup* EButtonGroup::set_parameters(ChildAlignMode _child_align_mode, boo
 	return this;
 }
 
+void EButtonGroup::activate_center_and_move_to_foreground()
+{
+	if (!button_group_is_active)
+	{
+		move_to_foreground_and_center();
+		button_group_is_active = true;
+	}
+}
+
 void EButtonGroup::move_to_foreground()
 {
+	//button_group_is_active = true;
+
 	if ((can_change_position_in_vector) && (parent_window != nullptr))
 	{
 		//EButtonGroup* target_group = nullptr;
@@ -3089,12 +3098,12 @@ void EButtonGroup::move_to_foreground()
 
 void EButtonGroup::move_to_foreground_and_center()
 {
-	move_to_foreground();
-
-	float new_postition_x = NS_EGraphicCore::SCREEN_WIDTH / 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_x / 2.0f;
-	float new_postition_y = NS_EGraphicCore::SCREEN_HEIGHT / 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_y / 2.0f;
+	float new_postition_x = NS_EGraphicCore::SCREEN_WIDTH	/ 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_x / 2.0f;
+	float new_postition_y = NS_EGraphicCore::SCREEN_HEIGHT	/ 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_y / 2.0f;
 
 	translate(new_postition_x - region_gabarite->offset_x, new_postition_y - region_gabarite->offset_y, 0.0f, true);
+
+	move_to_foreground();
 }
 
 void EButtonGroup::highlight_this_group()

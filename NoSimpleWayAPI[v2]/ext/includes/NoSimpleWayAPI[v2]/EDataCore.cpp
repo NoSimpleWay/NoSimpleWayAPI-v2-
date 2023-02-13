@@ -830,7 +830,6 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 {
 	//if (_custom_data->data_container != nullptr)
 	{
-		EButtonGroup::color_editor_group->button_group_is_active = true;
 		EButtonGroup::color_editor_group->move_to_foreground_and_center();
 
 		EntityButtonColorButton*			clicked_button	= static_cast<EntityButtonColorButton*>(_entity);
@@ -1557,15 +1556,17 @@ void EDataActionCollection::action_invoke_data_entity_group_action(Entity* _enti
 {
 	//EInputCore::logger_simple_info("wtf");
 	if
-		(
-			(static_cast<EntityButton*>(_entity)->parent_button_group != nullptr)
-			&&
-			(static_cast<EntityButton*>(_entity)->parent_button_group->root_group != nullptr)
-			)
+	(
+		(static_cast<EntityButton*>(_entity)->parent_button_group != nullptr)
+		&&
+		(static_cast<EntityButton*>(_entity)->parent_button_group->root_group != nullptr)
+		&&
+		(static_cast<EDataContainer_Group_DataEntitiesSearch*>(static_cast<EntityButton*>(_entity)->parent_button_group->root_group->data_container)->action_on_select_for_button != nullptr)
+	)
 	{
 		//data container in root group							//cast to button
 		static_cast<EDataContainer_Group_DataEntitiesSearch*>(static_cast<EntityButton*>(_entity)->parent_button_group->root_group->data_container)->
-			action_on_select_for_button(_entity, _custom_data, _d);
+		action_on_select_for_button(_entity, _custom_data, _d);
 	}
 }
 
@@ -1574,8 +1575,7 @@ void EDataActionCollection::action_set_button_group_as_active(Entity* _entity, E
 	if (((EntityButtonButtonGroupActivator*)_entity)->target_group != nullptr)
 	{
 		//EDataContainer_Button_OpenButtonGroup* button_data = static_cast<EDataContainer_Button_OpenButtonGroup*>(_custom_data->data_container);
-		((EntityButtonButtonGroupActivator*)_entity)->target_group->button_group_is_active = true;
-		((EntityButtonButtonGroupActivator*)_entity)->target_group->move_to_foreground_and_center();
+		((EntityButtonButtonGroupActivator*)_entity)->target_group->activate_center_and_move_to_foreground();
 	}
 }
 
