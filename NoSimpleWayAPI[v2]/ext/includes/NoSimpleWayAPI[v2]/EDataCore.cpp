@@ -830,7 +830,7 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 {
 	//if (_custom_data->data_container != nullptr)
 	{
-		EButtonGroup::color_editor_group->move_to_foreground_and_center();
+		EButtonGroup::color_editor_group->activate_move_to_foreground_and_center();
 
 		EntityButtonColorButton*			clicked_button	= static_cast<EntityButtonColorButton*>(_entity);
 		EDataContainer_Group_ColorEditor*	group_data		= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
@@ -1575,7 +1575,7 @@ void EDataActionCollection::action_set_button_group_as_active(Entity* _entity, E
 	if (((EntityButtonButtonGroupActivator*)_entity)->target_group != nullptr)
 	{
 		//EDataContainer_Button_OpenButtonGroup* button_data = static_cast<EDataContainer_Button_OpenButtonGroup*>(_custom_data->data_container);
-		((EntityButtonButtonGroupActivator*)_entity)->target_group->activate_center_and_move_to_foreground();
+		((EntityButtonButtonGroupActivator*)_entity)->target_group->activate_move_to_foreground_and_center();
 	}
 }
 

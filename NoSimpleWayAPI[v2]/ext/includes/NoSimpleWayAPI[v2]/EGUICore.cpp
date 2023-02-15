@@ -461,7 +461,7 @@ EButtonGroup::~EButtonGroup()
 {
 	if (debug_deleting) { EInputCore::logger_simple_success("Destructor [for button group] called"); }
 
-
+	//EInputCore::logger_simple_success("Destroy button group");
 
 	if ((region_gabarite != nullptr))
 	{
@@ -3046,7 +3046,7 @@ EButtonGroup* EButtonGroup::set_parameters(ChildAlignMode _child_align_mode, boo
 	return this;
 }
 
-void EButtonGroup::activate_center_and_move_to_foreground()
+void EButtonGroup::activate_move_to_foreground_and_center()
 {
 	if (!button_group_is_active)
 	{

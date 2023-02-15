@@ -24817,7 +24817,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"CrusaderExalt"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Boss loot"
@@ -25169,7 +25169,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 		
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -25550,7 +25550,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"2"
 
@@ -25759,7 +25759,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
-	
 	[tag]"drop level"	[value]"70"
 
 	[tag]"item width"	[value]"1"
@@ -30874,7 +30873,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Veiled_chaos"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
@@ -32808,7 +32807,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"FracturingShard"
 	[tag]"base class"	[value]"Stackable Currency"
 	[tag]"item tag"		[value]"Currency shard"
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	

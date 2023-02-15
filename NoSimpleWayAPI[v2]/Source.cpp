@@ -134,7 +134,7 @@ int main()
 				(glfwWindowShouldClose(NS_EGraphicCore::main_window))
 				)
 		{
-			EButtonGroupConfirmAction::confirm_decline_group->activate_center_and_move_to_foreground();
+			EButtonGroupConfirmAction::confirm_decline_group->activate_move_to_foreground_and_center();
 		}
 
 		if (!ETextureGabarite::incomplete_gabarites_list.empty())

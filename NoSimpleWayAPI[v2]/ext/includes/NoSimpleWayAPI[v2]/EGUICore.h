@@ -495,7 +495,7 @@ public:
 
 	EWindow* parent_window;
 
-	void activate_center_and_move_to_foreground();
+	void activate_move_to_foreground_and_center();
 	void move_to_foreground();
 	void move_to_foreground_and_center();
 
