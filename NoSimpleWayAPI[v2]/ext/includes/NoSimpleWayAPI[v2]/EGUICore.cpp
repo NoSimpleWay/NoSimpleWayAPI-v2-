@@ -326,7 +326,17 @@ void EWindow::GUI_update_default(float _d)
 		EButtonGroup* b_group = button_group_list[i];
 
 
+		//if (b_group->button_group_is_active)
+		{
+			//if ((b_group->need_recalcualte_culling_lines) || (EInputCore::key_pressed_once(GLFW_KEY_RIGHT_ALT)))
+			//{
+			//	//b_group->phantom_translate_if_need();
+			//	EButtonGroup::calculate_culling_lines(b_group, true);
+			//	b_group->need_recalcualte_culling_lines = false;
+			//}
 
+			b_group->background_update(_d);
+		}
 
 		//for (EButtonGroup* b_group : button_group_list)
 		if
@@ -347,17 +357,7 @@ void EWindow::GUI_update_default(float _d)
 			id++;
 		}
 
-		if (b_group->button_group_is_active)
-		{
-			//if ((b_group->need_recalcualte_culling_lines) || (EInputCore::key_pressed_once(GLFW_KEY_RIGHT_ALT)))
-			//{
-			//	//b_group->phantom_translate_if_need();
-			//	EButtonGroup::calculate_culling_lines(b_group, true);
-			//	b_group->need_recalcualte_culling_lines = false;
-			//}
 
-			b_group->background_update(_d);
-		}
 
 
 	}

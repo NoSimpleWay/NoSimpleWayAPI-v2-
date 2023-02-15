@@ -705,6 +705,10 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 	if ((_text_area != nullptr) && (_text_area->get_root_group() != nullptr))
 	{
 		EDataContainer_Group_DataEntitiesSearch* data_container = (EDataContainer_Group_DataEntitiesSearch*)_text_area->get_root_group()->data_container;
+		
+		data_container->pointer_to_group_with_data_entities->scroll_y = 0.0f;
+		static_cast<EntityButtonVerticalSlider*>(data_container->pointer_to_group_with_data_entities->slider)->current_value = 0.0f;
+		static_cast<EntityButtonVerticalSlider*>(data_container->pointer_to_group_with_data_entities->slider)->current_value_percent = 0.0f;
 
 		//EClickableArea::active_clickable_region = nullptr;
 
