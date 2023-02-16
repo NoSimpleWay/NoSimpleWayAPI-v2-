@@ -1263,6 +1263,7 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 			)
 		);
 	}
+
 	ETextArea* jc_text_area;
 	if (_gabarite != nullptr)
 	{
@@ -1276,7 +1277,7 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 		jc_text_area = ETextArea::create_centered_text_area
 		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _text);
 
-		jc_text_area->offset_border[BorderSide::LEFT] = 4.0f;
+		jc_text_area->offset_border[BorderSide::LEFT] = 0.0f;
 	}
 
 	main_text_area = jc_text_area;
@@ -1843,6 +1844,11 @@ int EntityButtonVariantRouter::seach_id_by_base_name(std::string& _base_name)
 		//id++;
 	}
 		return -1;
+}
+
+std::string EntityButtonVariantRouter::return_base_text_from_selected_router()
+{
+	return router_variant_list[selected_variant]->localisation->base_name;
 }
 
 RouterVariant::~RouterVariant()

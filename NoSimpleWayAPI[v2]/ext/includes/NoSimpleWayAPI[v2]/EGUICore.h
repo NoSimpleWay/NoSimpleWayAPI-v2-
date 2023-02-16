@@ -552,6 +552,9 @@ public:
 	//data_action_pointer				action_on_decline;
 
 	void								init_as_confirm_decline_group();
+	
+	//EButtonGroupConfirmAction::confirm_decline_group->pointer_to_confirm_button->stored_action = &EDataActionCollection::action_open_loot_filters_list_window;
+
 
 	static EButtonGroupConfirmAction* confirm_decline_group;
 };

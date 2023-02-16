@@ -134,7 +134,8 @@ void EWindow::GUI_update_default(float _d)
 
 					EButtonGroup::parent_vector_moving_group->group_list.insert(catched_iterator, EButtonGroup::vector_moving_group);
 
-					EButtonGroup::change_group(EButtonGroup::parent_vector_moving_group);
+					//EButtonGroup::change_group(EButtonGroup::parent_vector_moving_group);
+					EButtonGroup::parent_vector_moving_group->need_change = true;
 
 					EButtonGroup::parent_vector_moving_group = nullptr;
 					EButtonGroup::vector_moving_group = nullptr;
@@ -162,7 +163,8 @@ void EWindow::GUI_update_default(float _d)
 
 						EButtonGroup::parent_vector_moving_group->group_list.insert(catched_iterator, EButtonGroup::selected_groups.begin(), EButtonGroup::selected_groups.end());
 
-						EButtonGroup::change_group(EButtonGroup::parent_vector_moving_group);
+						//EButtonGroup::change_group(EButtonGroup::parent_vector_moving_group);
+						EButtonGroup::parent_vector_moving_group->need_change = true;
 
 						EButtonGroup::parent_vector_moving_group = nullptr;
 						EButtonGroup::vector_moving_group = nullptr;
@@ -597,6 +599,7 @@ void EButtonGroup::button_group_update(float _d)
 
 	if (need_refresh)
 	{
+		//recursive_phantom_translate_if_need();
 		EButtonGroup::refresh_button_group(this);
 
 		need_refresh = false;
@@ -604,6 +607,7 @@ void EButtonGroup::button_group_update(float _d)
 
 	if (need_change)
 	{
+		//recursive_phantom_translate_if_need();
 		EButtonGroup::change_group(this);
 
 		need_change = false;
@@ -1352,6 +1356,7 @@ void EButtonGroup::draw_second_pass()
 
 void EButtonGroup::align_groups()
 {
+	region_gabarite->have_phantom_translation = false;
 	highest_point_y = 0.0f;
 	//float minimal_culling_line_top		= 10000.0f;
 	//float minimal_culling_line_bottom	= -10000.0f;
@@ -2858,11 +2863,11 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 	}
 
 	if
-		(
+	(
 			(button_group_is_visible())
 			&&
 			(can_see_this_group())
-			)
+	)
 	{
 		translate_content((_x), (_y), (_z), true);
 	}
@@ -3098,8 +3103,8 @@ void EButtonGroup::move_to_foreground()
 
 void EButtonGroup::move_to_foreground_and_center()
 {
-	float new_postition_x = NS_EGraphicCore::SCREEN_WIDTH	/ 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_x / 2.0f;
-	float new_postition_y = NS_EGraphicCore::SCREEN_HEIGHT	/ 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_y / 2.0f;
+	float new_postition_x = round(NS_EGraphicCore::SCREEN_WIDTH		/ 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_x / 2.0f);
+	float new_postition_y = round(NS_EGraphicCore::SCREEN_HEIGHT	/ 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_y / 2.0f);
 
 	translate(new_postition_x - region_gabarite->offset_x, new_postition_y - region_gabarite->offset_y, 0.0f, true);
 
@@ -3235,7 +3240,8 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 	bottom_part_for_buttons->add_button_to_working_group(button_no);
 
 
-	EButtonGroup::refresh_button_group(this);
+	//EButtonGroup::refresh_button_group(this);
+	this->need_refresh = true;
 }
 
 void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
@@ -3912,12 +3918,12 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 				_router_button->button_gabarite->world_position_x,
 				min(_router_button->button_gabarite->world_position_y, NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom - y_size - 30.0f),
 
-				_router_button->button_gabarite->size_x * _router_button->height_division + 30.0f,
+				_router_button->button_gabarite->size_x * _router_button->height_division + 6.0f,
 				y_size
 			)
 		);
 
-	main_group->region_gabarite->offset_x -= main_group->region_gabarite->size_x + 5.0f + *EGUIStyle::active_style->button_group_darken->side_offset_left + *EGUIStyle::active_style->button_group_darken->side_offset_right;
+	//main_group->region_gabarite->offset_x -= main_group->region_gabarite->size_x + 5.0f + *EGUIStyle::active_style->button_group_darken->side_offset_left + *EGUIStyle::active_style->button_group_darken->side_offset_right;
 
 	main_group->init_button_group(EGUIStyle::active_style, true, true, false);
 	main_group->root_group = main_group;
@@ -3983,8 +3989,9 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 	}
 
 	_target_window->button_group_list.push_back(main_group);
-	EButtonGroup::refresh_button_group(main_group);
 
+	//EButtonGroup::refresh_button_group(main_group);
+	main_group->need_refresh = true;
 
 
 

@@ -271,12 +271,20 @@ void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity
 
 
 
+	if ((EInputCore::NSW_have_unsave_changes) && (!EButtonGroupConfirmAction::confirm_decline_group->button_group_is_active))
+	{
+		EButtonGroupConfirmAction::confirm_decline_group->pointer_to_confirm_button->stored_action = &EDataActionCollection::action_open_loot_filters_list_window;
+		EButtonGroupConfirmAction::confirm_decline_group->activate_move_to_foreground_and_center();
+	}
+	else
+	{
+		EButtonGroupConfirmAction::confirm_decline_group->button_group_is_active = false;
+		EWindowMain::existing_loot_filter_list->activate_move_to_foreground_and_center();
+		EWindowMain::load_loot_filter_list();
+	}
 
-
-	EWindowMain::existing_loot_filter_list->activate_move_to_foreground_and_center();
-	EWindowMain::load_loot_filter_list();
-	EButtonGroup::refresh_button_group(EWindowMain::existing_loot_filter_list);
-
+	//EButtonGroup::refresh_button_group(EWindowMain::existing_loot_filter_list);
+	EWindowMain::existing_loot_filter_list->need_refresh = true;
 }
 
 void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -322,9 +330,13 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 	}
 
 	//EWindowMain::loot_filter_editor->realign_groups();
-	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+	//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+
+	EWindowMain::loot_filter_editor->need_refresh = true;
 
 	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+
+	EWindowMain::remove_unsave_changes_flag();
 
 }
 
@@ -410,8 +422,8 @@ void EDataActionCollection::action_import_filter_text_from_clipboard(Entity* _en
 
 	EWindowMain::parse_filter_text_lines(static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block, LootFlterOpenMode::LOOT_FILTER_OPEN_MODE_USER_FILTER_FROM_DISC);
 
-	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
-
+	//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+	EWindowMain::loot_filter_editor->need_refresh = true;
 
 }
 
@@ -439,7 +451,9 @@ void EDataActionCollection::action_add_text_as_item(Entity* _entity, ECustomData
 	wide_button->main_text_area->localisation_text = l_text;
 	wide_button->main_text_area->change_text(l_text.localisations[ELocalisationText::active_localisation]);
 
-	EButtonGroup::change_group(data_entity_container->pointer_to_group_item_receiver);
+	//EButtonGroup::change_group(data_entity_container->pointer_to_group_item_receiver);
+	data_entity_container->pointer_to_group_item_receiver->need_change = true;
+
 	((EntityButton*)(_entity))->parent_button_group->root_group->button_group_is_active = false;
 }
 
@@ -463,7 +477,8 @@ void EDataActionCollection::action_add_new_filter_block(Entity* _entity, ECustom
 
 	EWindowMain::loot_filter_editor->group_list[position]->highlight_this_group();
 
-	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+	//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+	EWindowMain::loot_filter_editor->need_refresh = true;
 
 	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
@@ -486,7 +501,8 @@ void EDataActionCollection::action_open_custom_sound_list(Entity* _entity, ECust
 	EButtonGroup::sound_list_group->pointer_to_sound_list = &EWindowMain::custom_sound_list;
 
 	EButtonGroup::sound_list_group->refresh_sound_list();
-	EButtonGroup::refresh_button_group(EButtonGroup::sound_list_group);
+	//EButtonGroup::refresh_button_group(EButtonGroup::sound_list_group);
+	EButtonGroup::sound_list_group->need_refresh = true;
 }
 
 void EDataActionCollection::action_open_ingame_sound_list(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -500,7 +516,8 @@ void EDataActionCollection::action_open_ingame_sound_list(Entity* _entity, ECust
 	EButtonGroup::sound_list_group->pointer_to_sound_list = &EWindowMain::default_sound_list;
 
 	EButtonGroup::sound_list_group->refresh_sound_list();
-	EButtonGroup::refresh_button_group(EButtonGroup::sound_list_group);
+	//EButtonGroup::refresh_button_group(EButtonGroup::sound_list_group);
+	EButtonGroup::sound_list_group->need_refresh = true;
 }
 
 void EDataActionCollection::action_play_attached_sound(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -564,7 +581,8 @@ void EDataActionCollection::action_show_hide_cosmetic_blocks(Entity* _entity, EC
 
 
 
-	EButtonGroup::change_group(but->parent_filter_block);
+	//EButtonGroup::change_group(but->parent_filter_block);
+	but->parent_filter_block->need_change = true;
 }
 
 void EDataActionCollection::action_select_this_sound_for_target_button(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -618,7 +636,9 @@ void EDataActionCollection::action_select_this_tab(Entity* _entity, ECustomData*
 	}
 
 	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
-	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+
+	//EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+	EWindowMain::loot_filter_editor->need_change = true;
 
 }
 
@@ -656,7 +676,9 @@ void EDataActionCollection::action_create_new_loot_filter_with_name(Entity* _ent
 		EButtonGroupFilterBlock* created_filter_block = EWindowMain::create_filter_block(filter_editor, -1);
 
 		filter_editor->scroll_y = 0.0f;
-		EButtonGroup::refresh_button_group(filter_editor);
+
+		//EButtonGroup::refresh_button_group(filter_editor);
+		filter_editor->need_refresh;
 
 		EWindowMain::create_new_loot_filter_group->button_group_is_active = false;
 
@@ -701,7 +723,8 @@ void EDataActionCollection::action_clone_block(Entity* _entity, ECustomData* _cu
 
 	EWindowMain::loot_filter_editor->group_list[position]->highlight_this_group();
 
-	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+	//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+	EWindowMain::loot_filter_editor->need_refresh = true;
 
 	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
@@ -731,7 +754,8 @@ void EDataActionCollection::action_add_separator_block(Entity* _entity, ECustomD
 
 	EWindowMain::create_filter_block_separator(EWindowMain::loot_filter_editor, position);
 
-	EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+	//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+	EWindowMain::loot_filter_editor->need_refresh = true;
 
 	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
@@ -781,7 +805,8 @@ void EDataActionCollection::action_remove_filter_block(Entity* _entity, ECustomD
 	if (EWindowMain::loot_filter_editor->group_list.size() <= 1)
 	{
 		EWindowMain::create_filter_block(EWindowMain::loot_filter_editor, -1);
-		EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+		//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+		EWindowMain::loot_filter_editor->need_refresh = true;
 	}
 
 	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
@@ -808,7 +833,9 @@ void EDataActionCollection::action_move_filter_block_up(Entity* _entity, ECustom
 		EWindowMain::loot_filter_editor->group_list[vector_position] = EWindowMain::loot_filter_editor->group_list[vector_position - 1];
 		EWindowMain::loot_filter_editor->group_list[vector_position - 1] = swap;
 
-		EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+		//EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+		EWindowMain::loot_filter_editor->need_change = true;
+
 	}
 }
 
@@ -832,7 +859,8 @@ void EDataActionCollection::action_move_filter_block_down(Entity* _entity, ECust
 		EWindowMain::loot_filter_editor->group_list[vector_position] = EWindowMain::loot_filter_editor->group_list[vector_position + 1];
 		EWindowMain::loot_filter_editor->group_list[vector_position + 1] = swap;
 
-		EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+		//EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+		EWindowMain::loot_filter_editor->need_change = true;
 	}
 }
 
@@ -1094,7 +1122,8 @@ void EDataActionCollection::action_refresh_loot_simulator_sizes(Entity* _entity,
 		EButtonGroupLootSimulator::refresh_button_sizes();
 
 
-		EButtonGroup::change_group(EButtonGroupLootSimulator::pointer_to_loot_buttons_segment);
+		//EButtonGroup::change_group(EButtonGroupLootSimulator::pointer_to_loot_buttons_segment);
+		EButtonGroupLootSimulator::pointer_to_loot_buttons_segment->need_change = true;
 	}
 }
 
@@ -1144,13 +1173,15 @@ void EDataActionCollection::action_highlight_matched_blocks(Entity* _entity, ECu
 		{
 			loot_button->matched_filter_blocks.back()->attached_separator->is_expanded = true;
 
-			EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+			//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+			EWindowMain::loot_filter_editor->need_refresh = true;
 		}
 
 		EWindowMain::loot_filter_editor->scroll_y = max(-loot_button->matched_filter_blocks.back()->region_gabarite->offset_y, 0.0f);
 		EWindowMain::loot_filter_editor->slider->current_value = EWindowMain::loot_filter_editor->scroll_y;
 
-		EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+		//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+		EWindowMain::loot_filter_editor->need_refresh = true;
 	}
 
 	//need_translate = -loot_button->matched_filter_blocks.back()->region_gabarite->world_position_y;
@@ -1370,7 +1401,8 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 			but->attached_description = main_group;
 			EWindowMain::link_to_main_window->button_group_list.push_back(main_group);
 			
-			EButtonGroup::refresh_button_group(main_group);
+			//EButtonGroup::refresh_button_group(main_group);
+			main_group->need_refresh = true;
 
 		}
 			
@@ -1399,7 +1431,8 @@ void EDataActionCollection::action_change_localisation(Entity* _entity, ECustomD
 		{
 			g->recursive_change_localisation(ELocalisationText::active_localisation);
 
-			EButtonGroup::change_group(g);
+			//EButtonGroup::change_group(g);
+			g->need_change = true;
 		}
 }
 
@@ -1459,7 +1492,8 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 
 	receiver->add_button_to_working_group(jc_button);
 	//receiver->button_list.clear();
-	EButtonGroup::change_group(receiver);
+	//EButtonGroup::change_group(receiver);
+	receiver->need_change = true;
 }
 
 void EDataActionCollection::action_show_hide_autogenerated_loot_filters(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1472,7 +1506,8 @@ void EDataActionCollection::action_show_hide_autogenerated_loot_filters(Entity* 
 		but->entity_disabled = (loot_filter_selector_button->is_autogenerated_loot_filter) && (EWindowMain::existing_loot_filter_list->pointer_to_filtration_router->selected_variant == 0);
 	}
 
-	EButtonGroup::change_group(EWindowMain::existing_loot_filter_list->part_with_list);
+	//EButtonGroup::change_group(EWindowMain::existing_loot_filter_list->part_with_list);
+	EWindowMain::existing_loot_filter_list->part_with_list->need_change = true;
 }
 
 void EDataActionCollection::action_open_confirm_decline_window_for_autogenerated_loot_filter(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1525,7 +1560,9 @@ void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _tex
 
 	EWindowMain::loot_filter_editor->scroll_y = 0.0f;
 	EWindowMain::loot_filter_editor->slider->current_value = 0.0f;
-	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+
+	//EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+	EWindowMain::loot_filter_editor->need_change = true;
 	//EButtonGroup::change_group(EWindowMain::loot_filter_editor);
 }
 
@@ -1811,7 +1848,8 @@ EWindowMain::EWindowMain()
 			}
 		}
 		button_group_list.push_back(main_button_group);
-		EButtonGroup::refresh_button_group(main_button_group);
+		//EButtonGroup::refresh_button_group(main_button_group);
+		main_button_group->need_refresh = true;
 	}
 	////////////////////////////////////////////////
 
@@ -1926,8 +1964,8 @@ EWindowMain::EWindowMain()
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		button_group_list.push_back(main_bottom_filter_block_control);
-		EButtonGroup::refresh_button_group(main_bottom_filter_block_control);
-
+		//EButtonGroup::refresh_button_group(main_bottom_filter_block_control);
+		main_bottom_filter_block_control->need_refresh = true;
 
 	}
 
@@ -1971,7 +2009,8 @@ EWindowMain::EWindowMain()
 
 
 		button_group_list.insert(button_group_list.begin(), filter_block_tabs[0]);
-		EButtonGroup::refresh_button_group(filter_block_tabs[0]);
+		//EButtonGroup::refresh_button_group(filter_block_tabs[0]);
+		filter_block_tabs[0]->need_refresh = true;
 	}
 
 
@@ -2035,7 +2074,8 @@ EWindowMain::EWindowMain()
 		}
 
 		button_group_list.push_back(main_button_group);
-		EButtonGroup::refresh_button_group(main_button_group);
+		//EButtonGroup::refresh_button_group(main_button_group);
+		main_button_group->need_refresh = true;
 
 
 
@@ -2215,7 +2255,8 @@ EWindowMain::EWindowMain()
 
 
 		button_group_list.push_back(main_button_group);
-		EButtonGroup::refresh_button_group(main_button_group);
+		//EButtonGroup::refresh_button_group(main_button_group);
+		main_button_group->need_refresh = true;
 	}
 
 	//Create new loot-filter
@@ -2278,7 +2319,8 @@ EWindowMain::EWindowMain()
 		main_loot_filter_group->input_field_button = button_input_field;
 
 		button_group_list.push_back(main_loot_filter_group);
-		EButtonGroup::refresh_button_group(main_loot_filter_group);
+		//EButtonGroup::refresh_button_group(main_loot_filter_group);
+		main_loot_filter_group->need_refresh = true;
 	}
 
 	//DATA ENTITY
@@ -2492,7 +2534,8 @@ EWindowMain::EWindowMain()
 		jc_button_group->add_button_to_working_group(jc_button);
 		///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	///	
 
-		EButtonGroup::refresh_button_group(data_entity_main_group);
+		//EButtonGroup::refresh_button_group(data_entity_main_group);
+		data_entity_main_group->need_refresh = true;
 	}
 
 	//world parameters
@@ -2787,7 +2830,8 @@ EWindowMain::EWindowMain()
 
 
 		button_group_list.push_back(main_button_group);
-		EButtonGroup::refresh_button_group(main_button_group);
+		//EButtonGroup::refresh_button_group(main_button_group);
+		main_button_group->need_refresh = true;
 	}
 
 	//		LOOT SIMULATOR
@@ -3060,7 +3104,8 @@ EWindowMain::EWindowMain()
 
 
 		button_group_list.push_back(main_loot_buttons_group);
-		EButtonGroup::refresh_button_group(main_loot_buttons_group);
+		//EButtonGroup::refresh_button_group(main_loot_buttons_group);
+		main_loot_buttons_group->need_refresh = true;
 	}
 
 	//color editor
@@ -3074,7 +3119,8 @@ EWindowMain::EWindowMain()
 		//main_button_group->can_be_moved = true;
 
 		button_group_list.push_back(main_button_group);
-		EButtonGroup::refresh_button_group(main_button_group);
+		//EButtonGroup::refresh_button_group(main_button_group);
+		main_button_group->need_refresh = true;
 
 
 	}
@@ -3291,7 +3337,8 @@ EWindowMain::EWindowMain()
 
 
 		button_group_list.push_back(add_content_group);
-		EButtonGroup::refresh_button_group(add_content_group);
+		//EButtonGroup::refresh_button_group(add_content_group);
+		add_content_group->need_refresh = true;
 	}
 
 	//rarity selector
@@ -3395,7 +3442,8 @@ EWindowMain::EWindowMain()
 
 
 		button_group_list.push_back(whole_rarity_list_group);
-		EButtonGroup::refresh_button_group(whole_rarity_list_group);
+		//EButtonGroup::refresh_button_group(whole_rarity_list_group);
+		whole_rarity_list_group->need_refresh = true;
 
 		whole_rarity_list_group->button_group_is_active = false;
 	}
@@ -3434,7 +3482,8 @@ EWindowMain::EWindowMain()
 		}
 
 		button_group_list.push_back(whole_quality_list_group);
-		EButtonGroup::refresh_button_group(whole_quality_list_group);
+		//EButtonGroup::refresh_button_group(whole_quality_list_group);
+		whole_quality_list_group->need_refresh = true;
 
 		whole_quality_list_group->button_group_is_active = false;
 	}
@@ -3522,7 +3571,8 @@ EWindowMain::EWindowMain()
 
 
 		button_group_list.push_back(main_sound_group);
-		EButtonGroup::refresh_button_group(main_sound_group);
+		//EButtonGroup::refresh_button_group(main_sound_group);
+		main_sound_group->need_refresh = true;
 	}	//loot-filter list
 
 
@@ -3672,7 +3722,9 @@ EWindowMain::EWindowMain()
 		}*/
 
 		button_group_list.push_back(main_button_group);
-		EButtonGroup::refresh_button_group(main_button_group);
+
+		//EButtonGroup::refresh_button_group(main_button_group);
+		main_button_group->need_refresh = true;
 
 		main_button_group->move_to_foreground_and_center();
 	}
@@ -3908,8 +3960,13 @@ EWindowMain::EWindowMain()
 		/*-----------------------------------------------------------------*/
 
 		about_whole_group->move_to_foreground_and_center();
-		EButtonGroup::refresh_button_group(about_whole_group);
+
+
+		//EButtonGroup::refresh_button_group(about_whole_group);
+		about_whole_group->need_refresh = true;
+
 		button_group_list.push_back(about_whole_group);
+
 	}
 
 
@@ -4156,7 +4213,10 @@ EWindowMain::EWindowMain()
 
 
 		button_group_list.push_back(main_button_group);
-		EButtonGroup::refresh_button_group(main_button_group);
+
+		//EButtonGroup::refresh_button_group(main_button_group);
+
+		main_button_group->need_refresh = true;
 	}
 
 
@@ -6434,7 +6494,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//right section for preview box
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
-		control_part_right_preview_box = new EButtonGroup(new ERegionGabarite(182.0f, 30.0f));
+		control_part_right_preview_box = new EButtonGroup(new ERegionGabarite(192.0f, 30.0f));
 	control_part_right_preview_box->init_button_group(EGUIStyle::active_style, false, false, true);
 	control_part_right_preview_box->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 
@@ -6668,11 +6728,15 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_router = new EntityButtonVariantRouterForFilterBlock();
 		button_variant_router->make_as_default_button_with_icon
 		(
-			new ERegionGabarite(120.0f, 29.0f),
+			new ERegionGabarite(140.0f, 29.0f),
 			control_part_mid_versions,
 			EDataActionCollection::action_rotate_variant,
 			nullptr
 		);
+
+		button_variant_router->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+		button_variant_router->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+
 		button_variant_router->height_division = 1;
 
 		whole_filter_block_group->version_routers[i] = button_variant_router;
@@ -9140,8 +9204,10 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 								if ((last_non_listed_line != nullptr) && (last_non_listed_line->target_button_with_condition != nullptr))
 								{
-									last_non_listed_line->target_button_with_condition->main_text_area->change_text(condition_text);
+									//last_non_listed_line->target_button_with_condition->main_text_area->change_text(condition_text);
+									last_non_listed_line->target_button_with_condition->select_variant_by_base_name(condition_text);
 								}
+
 							}
 							else
 							{
@@ -9159,7 +9225,9 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										(matched_filter_block_attribute->have_operator)
 										)
 								{
-									last_non_listed_line->target_button_with_condition->main_text_area->change_text("=");
+									//last_non_listed_line->target_button_with_condition->main_text_area->change_text("=");
+									std::string sss = "=";
+									last_non_listed_line->target_button_with_condition->select_variant_by_base_name(sss);
 								}
 							}
 
@@ -13643,6 +13711,7 @@ void EDataActionCollection::action_add_selected_content_to_filter_block(Entity* 
 	}
 
 	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
+	//EWindowMain::loot_filter_editor->need_change = true;
 	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
 
 }
@@ -13656,7 +13725,8 @@ void EDataActionCollection::action_open_rarity_selector(Entity* _entity, ECustom
 	EWindowMain::select_rarity_button_group->region_gabarite->offset_x = static_cast<EntityButton*>(_entity)->button_gabarite->world_position_x;
 	EWindowMain::select_rarity_button_group->region_gabarite->offset_y = static_cast<EntityButton*>(_entity)->button_gabarite->world_position_y + static_cast<EntityButton*>(_entity)->button_gabarite->size_y + 3.0f;
 
-	EButtonGroup::refresh_button_group(EWindowMain::select_rarity_button_group);
+	//EButtonGroup::refresh_button_group(EWindowMain::select_rarity_button_group);
+	EWindowMain::select_rarity_button_group->need_refresh = true;
 }
 
 void EDataActionCollection::action_open_quality_selector(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -13668,7 +13738,8 @@ void EDataActionCollection::action_open_quality_selector(Entity* _entity, ECusto
 	EWindowMain::select_quality_button_group->region_gabarite->offset_x = static_cast<EntityButton*>(_entity)->button_gabarite->world_position_x;
 	EWindowMain::select_quality_button_group->region_gabarite->offset_y = static_cast<EntityButton*>(_entity)->button_gabarite->world_position_y + static_cast<EntityButton*>(_entity)->button_gabarite->size_y + 3.0f;
 
-	EButtonGroup::refresh_button_group(EWindowMain::select_quality_button_group);
+	//EButtonGroup::refresh_button_group(EWindowMain::select_quality_button_group);
+	EWindowMain::select_quality_button_group->need_refresh = true;
 }
 
 //create group of buttons to filter block.
@@ -13798,23 +13869,132 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 		//condition operator
 		if (_game_item_attribute->have_operator)
 		{
-			jc_button = new EntityButtonForFilterBlock();
-			jc_button->make_default_button_with_edible_text
+			EntityButtonVariantRouterForFilterBlock*
+			condition_router_button = new EntityButtonVariantRouterForFilterBlock();
+			non_listed_line->add_button_to_working_group(condition_router_button);
+			condition_router_button->make_as_default_router_variant_button
 			(
-				new ERegionGabarite(button_height * 2.0f, button_height),
-				non_listed_line,
-				nullptr,
-				"="
+				new ERegionGabarite(button_height * 2.0f, button_height)
 			);
+			condition_router_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
+			condition_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+			condition_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+			condition_router_button->height_division = 1;
+			///		<=		///////////////////////////////////////////////////////////////////////////
+			{
+				RouterVariant* router_variant = new RouterVariant();
+				ELocalisationText* ltext = new ELocalisationText();
 
-			jc_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+				ltext->base_name = "<=";
+				ltext->localisations[NSW_localisation_EN] = "<=";
+				ltext->localisations[NSW_localisation_RU] = "<=";
 
-			jc_button->parent_filter_block = _target_filter_block;
-			jc_button->used_filter_block_attribute = _game_item_attribute;
+				router_variant->localisation = ltext;
 
-			non_listed_line->add_button_to_working_group(jc_button);
+				router_variant->color = new HSVRGBAColor();
+				router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
 
-			non_listed_line->target_button_with_condition = jc_button;
+				condition_router_button->router_variant_list.push_back(router_variant);
+			}
+
+			///		<		///////////////////////////////////////////////////////////////////////////
+			{
+				RouterVariant* router_variant = new RouterVariant();
+				ELocalisationText* ltext = new ELocalisationText();
+
+				ltext->base_name = "<";
+				ltext->localisations[NSW_localisation_EN] = "<";
+				ltext->localisations[NSW_localisation_RU] = "<";
+
+				router_variant->localisation = ltext;
+
+				router_variant->color = new HSVRGBAColor();
+				router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
+
+				condition_router_button->router_variant_list.push_back(router_variant);
+			}
+			
+
+			///		=		///////////////////////////////////////////////////////////////////////////
+			{
+				RouterVariant* router_variant = new RouterVariant();
+				ELocalisationText* ltext = new ELocalisationText();
+
+				ltext->base_name = "=";
+				ltext->localisations[NSW_localisation_EN] = "=";
+				ltext->localisations[NSW_localisation_RU] = "=";
+
+				router_variant->localisation = ltext;
+
+				router_variant->color = new HSVRGBAColor();
+				router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
+
+				condition_router_button->router_variant_list.push_back(router_variant);
+			}
+
+			///		>		///////////////////////////////////////////////////////////////////////////
+			{
+				RouterVariant* router_variant = new RouterVariant();
+				ELocalisationText* ltext = new ELocalisationText();
+
+				ltext->base_name = ">";
+				ltext->localisations[NSW_localisation_EN] = ">";
+				ltext->localisations[NSW_localisation_RU] = ">";
+
+				router_variant->localisation = ltext;
+
+				router_variant->color = new HSVRGBAColor();
+				router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
+
+				condition_router_button->router_variant_list.push_back(router_variant);
+			}
+			
+
+			///		>=		///////////////////////////////////////////////////////////////////////////
+			{
+				RouterVariant* router_variant = new RouterVariant();
+				ELocalisationText* ltext = new ELocalisationText();
+
+				ltext->base_name = ">=";
+				ltext->localisations[NSW_localisation_EN] = ">=";
+				ltext->localisations[NSW_localisation_RU] = ">=";
+
+				router_variant->localisation = ltext;
+
+				router_variant->color = new HSVRGBAColor();
+				router_variant->color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
+
+				condition_router_button->router_variant_list.push_back(router_variant);
+			}
+			
+
+			///		>=		///////////////////////////////////////////////////////////////////////////
+			{
+				RouterVariant* router_variant = new RouterVariant();
+				ELocalisationText* ltext = new ELocalisationText();
+
+				ltext->base_name = "!";
+				ltext->localisations[NSW_localisation_EN] = "!";
+				ltext->localisations[NSW_localisation_RU] = "!";
+
+				router_variant->localisation = ltext;
+
+				router_variant->color = new HSVRGBAColor();
+				router_variant->color->set_color_RGBA(1.0f, 0.4f, 0.3f, 1.0f);
+
+				condition_router_button->router_variant_list.push_back(router_variant);
+			}
+
+			condition_router_button->select_variant(2);
+
+			condition_router_button->parent_filter_block = _target_filter_block;
+			condition_router_button->used_filter_block_attribute = _game_item_attribute;
+
+			
+
+			non_listed_line->target_button_with_condition = condition_router_button;
+
+
 		}
 		else
 		{
@@ -14027,7 +14207,8 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 		);
 
 
-		EButtonGroup::change_group(target_group_for_content);
+		//EButtonGroup::change_group(target_group_for_content);
+		target_group_for_content->need_change = true;
 	}
 
 
@@ -14063,7 +14244,9 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 
 			target_group_for_content->add_button_to_working_group(jc_button);
 
-			EButtonGroup::change_group(target_group_for_content);
+			//EButtonGroup::change_group(target_group_for_content);
+			target_group_for_content->need_change = true;
+
 			break;
 		}
 
@@ -14234,10 +14417,10 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 				text_area->
 				localisation_text.base_name;
 
-			if ((container->target_button_with_condition != nullptr) && (container->target_button_with_condition->main_text_area->original_text != ""))
+			if ((container->target_button_with_condition != nullptr))
 			{
 				result_string += " ";
-				result_string += (container->target_button_with_condition->main_text_area->original_text);
+				result_string += container->target_button_with_condition->return_base_text_from_selected_router();
 			}
 
 			//bool attribute
@@ -15266,7 +15449,8 @@ void EButtonGroupDataEntity::background_update(float _d)
 
 				//EButtonGroup::refresh_button_group(EWindowMain::data_entity_filter);
 				EDataActionCollection::action_type_search_data_entity_text(main_input_field->main_text_area);
-				EButtonGroup::refresh_button_group(this);
+				//EButtonGroup::refresh_button_group(this);
+				need_refresh = true;
 
 
 				EInputCore::logger_simple_info("autorefresh!");
@@ -16076,7 +16260,9 @@ void LootSimulatorPattern::refresh_loot_simulator(LootSimulatorPattern* _pattern
 
 
 	EButtonGroupLootSimulator::refresh_button_sizes();
-	EButtonGroup::refresh_button_group(EWindowMain::loot_simulator_button_group);
+	//EButtonGroup::refresh_button_group(EWindowMain::loot_simulator_button_group);
+
+	EWindowMain::loot_simulator_button_group->need_refresh = true;
 }
 
 
@@ -16226,7 +16412,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 								!is_condition_satisfied
 								(
 									matched_item_attribute_container->attribute_value_int,								//item
-									line_group->target_button_with_condition->main_text_area->original_text,			//operator
+									line_group->target_button_with_condition->return_base_text_from_selected_router(),			//operator
 									std::stoi(line_group->target_button_with_value->main_text_area->original_text)		//block
 								)
 								)
@@ -16260,7 +16446,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 								!is_condition_satisfied
 								(
 									matched_item_attribute_container->attribute_value_int,															//item
-									line_group->target_button_with_condition->main_text_area->original_text,										//operator
+									line_group->target_button_with_condition->return_base_text_from_selected_router(),								//operator
 									line_group->rarity_router_button->selected_variant		//block
 								)
 								)
@@ -16284,7 +16470,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 								!is_sockets_matched
 								(
 									line_group->target_button_with_value->main_text_area->original_text,		//block
-									line_group->target_button_with_condition->main_text_area->original_text,	//operator
+									line_group->target_button_with_condition->return_base_text_from_selected_router(),	//operator
 									matched_item_attribute_container->attribute_value_str						//item
 								)
 								)
@@ -16302,7 +16488,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 								!is_condition_satisfied
 								(
 									0,																				//item
-									line_group->target_button_with_condition->main_text_area->original_text,		//operator
+									line_group->target_button_with_condition->return_base_text_from_selected_router(),		//operator
 									std::stoi(line_group->target_button_with_value->main_text_area->original_text)	//block
 								)
 								)
@@ -16318,7 +16504,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 								!is_condition_satisfied
 								(
 									0,																												//item
-									line_group->target_button_with_condition->main_text_area->original_text,										//operator
+									line_group->target_button_with_condition->return_base_text_from_selected_router(),										//operator
 									line_group->rarity_router_button->selected_variant																//block
 								)
 								)
@@ -16347,7 +16533,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 								!is_sockets_matched
 								(
 									line_group->target_button_with_value->main_text_area->original_text,		//block
-									line_group->target_button_with_condition->main_text_area->original_text,	//operator
+									line_group->target_button_with_condition->return_base_text_from_selected_router(),	//operator
 									"0"																			//item
 								)
 								)
@@ -16369,7 +16555,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 							!is_condition_satisfied
 							(
 								std::stoi(EButtonGroupLootSimulator::pointer_to_input_area_level_button->main_text_area->original_text),	//blobal parameter "AreaLevel"
-								line_group->target_button_with_condition->main_text_area->original_text,									//condition operator
+								line_group->target_button_with_condition->return_base_text_from_selected_router(),									//condition operator
 								std::stoi(line_group->target_button_with_value->main_text_area->original_text)								//block value
 							)
 							)
@@ -16664,7 +16850,8 @@ void EButtonGroupLootSimulator::refresh_loot_simulator()
 
 		refresh_button_sizes();
 
-		EButtonGroup::change_group(pointer_to_loot_buttons_segment);
+		//EButtonGroup::change_group(pointer_to_loot_buttons_segment);
+		pointer_to_loot_buttons_segment->need_change = true;
 	}
 
 }

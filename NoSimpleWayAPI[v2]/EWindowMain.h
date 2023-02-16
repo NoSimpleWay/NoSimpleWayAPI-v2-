@@ -140,8 +140,8 @@ public:
 class EntityButtonVariantRouterForFilterBlock : public EntityButtonVariantRouter
 {
 public:
-	EButtonGroupFilterBlock* parent_filter_block;
-
+	EButtonGroupFilterBlock*	parent_filter_block;
+	GameItemAttribute*			used_filter_block_attribute;
 	~EntityButtonVariantRouterForFilterBlock();
 
 };
@@ -428,9 +428,9 @@ class EButtonGroupNonListedLine : public EButtonGroup
 public:
 	EButtonGroupNonListedLine(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	EntityButton* target_button_with_attribute_name;
-	EntityButton* target_button_with_condition;
-	EntityButton* target_button_with_value;
+	EntityButton*								target_button_with_attribute_name;
+	EntityButtonVariantRouterForFilterBlock*	target_button_with_condition;
+	EntityButton*								target_button_with_value;
 
 	EntityButtonVariantRouterForFilterBlock* rarity_router_button;
 

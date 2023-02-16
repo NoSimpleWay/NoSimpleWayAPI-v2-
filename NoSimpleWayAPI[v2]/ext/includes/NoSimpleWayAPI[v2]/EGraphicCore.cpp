@@ -3986,7 +3986,8 @@ void NS_EGraphicCore::refresh_autosize_groups(EWindow* _window)
 	for (EButtonGroup* bg : _window->autosize_group_list)
 	{
 
-		EButtonGroup::refresh_button_group(bg);
+		//EButtonGroup::refresh_button_group(bg);
+		bg->need_refresh = true;
 	}
 }
 

@@ -370,9 +370,13 @@ public:
 	void select_variant_by_base_name(std::string& _base_name);
 	int seach_id_by_base_name(std::string& _base_name);
 
+	std::string	return_base_text_from_selected_router();
+
 	RotateVariantMode			rotate_variant_mode = RotateVariantMode::SELECT_NEXT;
 
 	EButtonGroupRouterVariant* opened_router_group;
+
+	std::vector<data_action_pointer>	action_on_choose_variant_from_window;
 
 	void make_default_router_variant_button
 	(
@@ -469,6 +473,9 @@ public:
 	~EntityButtonConfirmAction();
 
 	data_action_pointer stored_action;
+
+	EntityButton* target_entity_button	= nullptr;
+	ECustomData* target_custom_data		= nullptr;
 
 	int stored_localisation;
 

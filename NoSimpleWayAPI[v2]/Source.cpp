@@ -132,8 +132,9 @@ int main()
 				(!EButtonGroupConfirmAction::confirm_decline_group->button_group_is_active)
 				&&
 				(glfwWindowShouldClose(NS_EGraphicCore::main_window))
-				)
+			)
 		{
+			EButtonGroupConfirmAction::confirm_decline_group->pointer_to_confirm_button->stored_action = &EDataActionCollection::action_close_program;
 			EButtonGroupConfirmAction::confirm_decline_group->activate_move_to_foreground_and_center();
 		}
 
@@ -336,8 +337,11 @@ int main()
 			{
 				fcg->target_group->add_group(fcg->just_created_group);
 
-				EButtonGroup::change_group(fcg->just_created_group);
-				EButtonGroup::change_group(fcg->target_group);
+				fcg->just_created_group->need_change = true;
+				fcg->target_group->need_change = true;
+
+				//EButtonGroup::change_group(fcg->just_created_group);
+				//EButtonGroup::change_group(fcg->target_group);
 
 
 

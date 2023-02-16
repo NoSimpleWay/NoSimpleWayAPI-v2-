@@ -373,6 +373,10 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 		(
 			slider->scroll_speed != 0.0f
 		)
+		||
+		(slider->current_value <= slider->min_value)
+		||
+		(slider->current_value >= slider->max_value)
 	)
 	{
 		float multiplier = 1.0f;
@@ -545,6 +549,8 @@ void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomDat
 	for (EButtonGroup* group : window->button_group_list)
 	{
 		EButtonGroup::refresh_button_group(group);
+
+		group->need_refresh = true;
 		//group->group_phantom_redraw = true;
 	}
 
@@ -739,7 +745,8 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 				}
 			}
 
-			EButtonGroup::refresh_button_group(data_container->pointer_to_group_with_data_entities->root_group);
+			//EButtonGroup::refresh_button_group(data_container->pointer_to_group_with_data_entities->root_group);
+			data_container->pointer_to_group_with_data_entities->root_group->need_refresh = true;;
 
 		}
 		else
@@ -820,6 +827,7 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 
 					//button_group->scroll_y = 0.0f;
 					EButtonGroup::change_group(button_group);
+					button_group->need_change = true;
 				}
 	}
 }
@@ -961,7 +969,8 @@ void EDataActionCollection::action_add_item_to_group_receiver(Entity* _entity, E
 
 	receiver->add_button_to_working_group(jc_button);
 	//receiver->button_list.clear();
-	EButtonGroup::refresh_button_group(receiver->root_group);
+	//EButtonGroup::refresh_button_group(receiver->root_group);
+	receiver->root_group->need_refresh = true;
 }
 
 
@@ -1244,7 +1253,8 @@ void EDataActionCollection::action_resize_to_full_window(EButtonGroup* _group)
 	//	_group->region_gabarite->size_y -=	EButtonGroup::header_line->base_height;
 	//}
 
-	EButtonGroup::refresh_button_group(_group);
+	//EButtonGroup::refresh_button_group(_group);
+	_group->need_refresh = true;
 	//EInputCore::logger_simple_info("group resized");
 
 	//EButtonGroup::change_style(_group, _group->selected_style);
@@ -1262,7 +1272,9 @@ void EDataActionCollection::action_resize_to_full_window_only_x(EButtonGroup* _g
 
 
 	_group->region_gabarite->offset_y = NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom - _group->region_gabarite->size_y;
-	EButtonGroup::change_group(_group);
+	
+	//EButtonGroup::change_group(_group);
+	_group->need_change = true;
 	//EInputCore::logger_simple_info("group resized");
 
 	//EButtonGroup::change_style(_group, _group->selected_style);
@@ -1509,6 +1521,7 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 	//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
 	group_data->pointer_to_color_collection_sector->add_button_to_working_group(jc_button);
 	EButtonGroup::refresh_button_group(root_group);
+	root_group->need_refresh = true;//
 
 	//group_data->pointer_to_color_collection_group->selected_button = jc_button;
 
@@ -1637,6 +1650,11 @@ void EDataActionCollection::action_select_rotate_variant_from_list(Entity* _enti
 	target_button->select_variant(router_selector_button->id);
 	target_group->need_remove = true;
 	target_group->button_group_is_active = false;
+
+	for (data_action_pointer dap : target_button->action_on_choose_variant_from_window)
+	{
+		dap(_entity, _custom_data, _d);
+	}
 }
 
 void EDataActionCollection::action_invoke_stored_confirm_action(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1646,7 +1664,12 @@ void EDataActionCollection::action_invoke_stored_confirm_action(Entity* _entity,
 
 	if (confirm_button->stored_action != nullptr)
 	{
-		confirm_button->stored_action(_entity, _custom_data, _d);
+		confirm_button->stored_action
+		(
+			(confirm_button->target_entity_button != nullptr)	? (confirm_button->target_entity_button)	: (_entity),
+			(confirm_button->target_custom_data != nullptr)		? (confirm_button->target_custom_data)		: (_custom_data),
+			_d
+		);
 	}
 }
 
