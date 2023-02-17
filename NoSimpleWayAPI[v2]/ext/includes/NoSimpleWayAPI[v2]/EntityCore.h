@@ -122,7 +122,7 @@ public:
 
 typedef void (*change_style_action)(EntityButton*, EGUIStyle*);
 
-void action_change_style_slider(EntityButton* _but, EGUIStyle* _style);
+void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style);
 void action_change_style_button(EntityButton* _but, EGUIStyle* _style);
 void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style);
 
@@ -139,7 +139,7 @@ public:
 	virtual ~EntityButton();
 
 	bool button_hidden_by_search	= false;
-	bool disable_force_field		= true;
+	bool disable_force_field		= false;
 	bool fixed_position				= false;
 	bool force_draw					= true;
 	bool update_when_scissored		= false;
@@ -148,6 +148,13 @@ public:
 	bool cannot_be_auto_deleted		= false;
 
 	bool entity_is_active();
+
+	float hover_time				= 0.0f;
+
+	float force_field_left			= 0.0f;
+	float force_field_right			= 0.0f;
+	float force_field_bottom		= 0.0f;
+	float force_field_up			= 0.0f;
 
 	ERegionGabarite* button_gabarite;
 
@@ -312,7 +319,7 @@ public:
 	);
 
 	bool can_get_access_to_style();
-
+	bool button_in_culling_gabarites();
 	//ECustomData* description_data;
 	void add_description(std::string _text);
 	EDataEntity* pointer_to_data_entity;

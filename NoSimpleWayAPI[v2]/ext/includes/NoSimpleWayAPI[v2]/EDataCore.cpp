@@ -2085,72 +2085,83 @@ void EClickableArea::update(float _d)
 		EInputCore::logger_simple_info("update clickable area");
 	}
 
-	//left click
-	for (data_action_pointer dap : actions_on_click_list)
-	if
-	(
-				(dap != nullptr)
-				&&
-				(parent_entity != nullptr)
-				//&&
-				//(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
-				//&&
-				//(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
-				&&
-				(EClickableArea::active_clickable_region == this)
-				&&
-				(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
-	)
+	if (EClickableArea::active_clickable_region == this)
 	{
-		EInputCore::logger_simple_info("call [actions on click list]");
-		dap(parent_entity, parent_custom_data, _d);
+		hover_time += _d;
 	}
 	else
 	{
-		if (debug_updating)
-		{
-			if (EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
+		hover_time = 0.0f;
+	}
+
+	//left click
+	{
+		for (data_action_pointer dap : actions_on_click_list)
+			if
+			(
+					(dap != nullptr)
+					&&
+					(parent_entity != nullptr)
+					//&&
+					//(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
+					//&&
+					//(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+					&&
+					(EClickableArea::active_clickable_region == this)
+					&&
+					(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
+			)
 			{
-				if (dap == nullptr) { EInputCore::logger_simple_error("DAP is NULL"); }
-				if (parent_entity == nullptr) { EInputCore::logger_simple_error("parent entity is NULL"); }
-				//if (EButtonGroup::focused_button_group_mouse_unpressed != ((EntityButton*)parent_entity)->parent_button_group) { EInputCore::logger_simple_error("parent group not focused"); }
-				if (EClickableArea::active_clickable_region != this) { EInputCore::logger_simple_error("this clickable region not active"); }
+				EInputCore::logger_simple_info("call [actions on click list]");
+				dap(parent_entity, parent_custom_data, _d);
 			}
-		}
+			else
+			{
+				if (debug_updating)
+				{
+					if (EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
+					{
+						if (dap == nullptr) { EInputCore::logger_simple_error("DAP is NULL"); }
+						if (parent_entity == nullptr) { EInputCore::logger_simple_error("parent entity is NULL"); }
+						//if (EButtonGroup::focused_button_group_mouse_unpressed != ((EntityButton*)parent_entity)->parent_button_group) { EInputCore::logger_simple_error("parent group not focused"); }
+						if (EClickableArea::active_clickable_region != this) { EInputCore::logger_simple_error("this clickable region not active"); }
+					}
+				}
+			}
 	}
 
 	//right click
-	for (data_action_pointer dap : actions_on_right_click_list)
-		if
-			(
-				(dap != nullptr)
-				&&
-				(parent_entity != nullptr)
-				&&
-				(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
-				&&
-				(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
-				&&
-				(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_RIGHT))
+	{
+		for (data_action_pointer dap : actions_on_right_click_list)
+			if
+				(
+					(dap != nullptr)
+					&&
+					(parent_entity != nullptr)
+					&&
+					(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
+					&&
+					(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+					&&
+					(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_RIGHT))
 				)
-		{
-			//EInputCore::logger_simple_info("DAP");
-			dap(parent_entity, parent_custom_data, _d);
-		}
+			{
+				dap(parent_entity, parent_custom_data, _d);
+			}
+	}
 
-	//if
-	//	(
-	//		(parent_entity != nullptr)
-	//		&&
-	//		(EButtonGroup::focused_button_group == ((EntityButton*)parent_entity)->parent_button_group)
-	//		&&
-	//		(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
-	//		&&
-	//		(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_RIGHT))
-	//		)
-	//{
-	//	//EInputCore::logger_param("action on right click size", actions_on_right_click_list.size());
-	//}
+	if
+	(
+		(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
+		&&
+		(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+		&&
+		(EInputCore::key_pressed_once(GLFW_KEY_APOSTROPHE))
+	)
+	{
+		EInputCore::logger_simple_info("GLFW_KEY_APOSTROPHE");
+	}
+
 
 
 	if (text_area != nullptr)

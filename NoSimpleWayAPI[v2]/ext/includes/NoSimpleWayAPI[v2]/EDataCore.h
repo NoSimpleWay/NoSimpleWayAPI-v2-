@@ -214,6 +214,8 @@ public:
 	float catch_offset_x = 0.0f;
 	float catch_offset_y = 0.0f;
 
+	float hover_time = 0.0f;
+
 	//float* internal_vertex_buffer;
 
 	static bool overlapped_by_mouse(EClickableArea* _region, float _offset_x, float _offset_y, float _zoom);

@@ -719,7 +719,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	//NS_DefaultGabarites::texture_dark_spruce					= NS_EGraphicCore::put_texture_to_atlas("data/textures/styles/dark_spruce/Group_bg.png", NS_EGraphicCore::default_texture_atlas);
 	//NS_DefaultGabarites::texture_lapis_wood					= NS_EGraphicCore::put_texture_to_atlas("data/textures/Lapis_wood.png", NS_EGraphicCore::default_texture_atlas);
 
-	NS_DefaultGabarites::texture_gabarite_skydome				= NS_EGraphicCore::put_texture_to_atlas("data/textures/skydome.png",			NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_gabarite_skydome				= NS_EGraphicCore::put_texture_to_atlas("data/textures/skydome_city.png",			NS_EGraphicCore::default_texture_atlas);
 	NS_EGraphicCore::complete_texture_gabarite(NS_DefaultGabarites::texture_gabarite_skydome);
 
 	NS_DefaultGabarites::texture_bool_switcher_activated_box	= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/box_switcher_on.png",		NS_EGraphicCore::default_texture_atlas);

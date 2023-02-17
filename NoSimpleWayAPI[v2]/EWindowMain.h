@@ -524,6 +524,10 @@ namespace EDataActionCollection
 
 	void action_change_separator_shrink_flag(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_clear_text(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_expand_all_separators(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_shrink_all_separators(Entity* _entity, ECustomData* _custom_data, float _d);
+
 	void action_draw_loot_button(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_refresh_loot_simulator_sizes(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -678,8 +682,8 @@ class EWindowMain : public EWindow
 {
 public:
 
-	virtual void	draw_additional(float _d);
-	virtual void	update_additional(float _d);
+	virtual void	draw_additional(float _d)		override;
+	virtual void	update_additional(float _d)		override;
 
 	//ECluster* cluster_array[CLUSTER_DIM_X][CLUSTER_DIM_Y];
 

@@ -1181,26 +1181,55 @@ void EntityButton::make_as_default_button_with_icon(ERegionGabarite* _region_gab
 
 	make_as_default_clickable_button(_region_gabarite, _parent_group, _dap);
 	
-	float min_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
+	float region_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
 
-	float offset_x = (_region_gabarite->size_x - min_size - 4.0f) / 2.0f + 2.0f;
-	float offset_y = (_region_gabarite->size_y - min_size - 4.0f) / 2.0f + 2.0f;
+	if (_gabarite != nullptr)
+	{
 
-	sprite_layer_list.push_back
-	(
-		ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+
+		float resize_factor = 1.0f;
+
+		resize_factor = region_size / (float)(max(_gabarite->size_x_in_pixels, _gabarite->size_y_in_pixels));
+		resize_factor = min(resize_factor, 1.0f);
+
+		float offset_x = (region_size - (float)(_gabarite->size_x_in_pixels * resize_factor)) / 2.0f;
+		float offset_y = (region_size - (float)(_gabarite->size_y_in_pixels * resize_factor)) / 2.0f;
+
+
+		sprite_layer_list.push_back
 		(
-			_gabarite,
+			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+			(
+				_gabarite,
 
-			offset_x,
-			offset_y,
-			0.0f,
+				round(offset_x),
+				round(offset_y),
+				0.0f,
 
-			min_size,
-			min_size,
-			00.0f
-		)
-	);
+				round(_gabarite->size_x_in_pixels * resize_factor),
+				round(_gabarite->size_y_in_pixels * resize_factor),
+				0.0f
+			)
+		);
+	}
+	else
+	{
+		sprite_layer_list.push_back
+		(
+			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+			(
+				_gabarite,
+
+				round(offset_x),
+				round(offset_y),
+				0.0f,
+
+				region_size,
+				region_size,
+				0.0f
+			)
+		);
+	}
 }
 
 void EntityButton::make_as_default_button_with_full_icon(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite)
@@ -1367,6 +1396,17 @@ bool EntityButton::can_get_access_to_style()
 	return false;
 }
 
+bool EntityButton::button_in_culling_gabarites()
+{
+	//return true;
+	if (parent_button_group == nullptr) { return false; }
+	
+	return
+	world_position_y + button_gabarite->phantom_translate_y								<= parent_button_group->higher_culling_line
+	&&
+	world_position_y + button_gabarite->phantom_translate_y + button_gabarite->size_y	>= parent_button_group->lower_culling_line;
+}
+
 void EntityButton::add_description(std::string _text)
 {
 	ECustomData*		jc_data				= new ECustomData();
@@ -1516,7 +1556,7 @@ EntityButton::~EntityButton()
 	//}
 }
 
-void action_change_style_slider(EntityButton* _but, EGUIStyle* _style)
+void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style)
 {
 	NS_ERenderCollection::set_brick_borders_and_subdivisions
 	(
