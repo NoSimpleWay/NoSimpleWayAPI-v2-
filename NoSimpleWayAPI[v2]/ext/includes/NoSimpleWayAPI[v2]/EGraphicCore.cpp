@@ -48,7 +48,8 @@ namespace NS_EGraphicCore
 
 	float							global_normal_multiplier			= 1.0f;
 
-	float							global_free_sky_light_multiplier	= 0.35f;
+	float							global_free_sky_light_multiplier	= 0.85f;
+	float							global_free_sun_light_multiplier	= 1.15f;
 	float							global_reflection_multiplier		= 2.0f;
 
 	float							global_gloss_multiplier				= 1.0f;
@@ -58,7 +59,7 @@ namespace NS_EGraphicCore
 	float							sun_blur							= 0.75f;
 	float							sun_bright							= 21.000f;
 	float							sun_exp								= 3.300f;
-	float							ground_level						= 0.555f;
+	float							ground_level						= 0.475f;
 	float							time_total							= 0.00f;
 	float							move_multiplier						= 2.35f;
 	float							sun_flat_decay						= 0.05f;
@@ -267,6 +268,7 @@ void ERenderBatcher::draw_call()
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("move_multiplier", NS_EGraphicCore::move_multiplier);
 
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("free_sky_light", NS_EGraphicCore::global_free_sky_light_multiplier);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("free_sun_light", NS_EGraphicCore::global_free_sun_light_multiplier);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("reflection_multiplier", NS_EGraphicCore::global_reflection_multiplier);
 
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_light_gloss[0]", 1.0f);

@@ -123,7 +123,7 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 		max
 		(
 			0.0f,
-			entity_button->parent_button_group->highest_point_y
+			entity_button->parent_button_group->final_highest_point_y
 			-
 			(
 				entity_button->parent_button_group->region_gabarite->size_y

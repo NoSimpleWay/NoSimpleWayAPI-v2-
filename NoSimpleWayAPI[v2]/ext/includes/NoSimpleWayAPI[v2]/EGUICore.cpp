@@ -963,11 +963,22 @@ void EButtonGroup::draw_button_group()
 
 			}
 
-
+			//draw call to append GL_scissor
+			NS_EGraphicCore::pbr_batcher->draw_call();//draw pbg bg
+			batcher_for_default_draw->draw_call();//draw text to default batcher
 
 			//NS_EGraphicCore::test_batcher->draw_call();
 
-			//PHANTOM REDRAW
+			glScissor
+			(
+				region_gabarite->world_position_x * NS_EGraphicCore::current_zoom,
+				(lower_culling_line + border_bottom)* NS_EGraphicCore::current_zoom,
+
+				region_gabarite->size_x* NS_EGraphicCore::current_zoom,
+				max(0.0f, higher_culling_line - lower_culling_line - border_bottom - border_up)* NS_EGraphicCore::current_zoom
+			);
+
+			//DRAW BUTTONS
 			for (EntityButton* but : all_button_list)
 				if
 				(
@@ -976,7 +987,7 @@ void EButtonGroup::draw_button_group()
 					(but->entity_is_active())
 				)
 				{
-
+					//PHANTOM REDRAW
 					if
 					(
 						(but->have_phantom_draw)
@@ -1151,7 +1162,7 @@ void EButtonGroup::draw_button_group()
 					batcher_for_default_draw->last_vertice_buffer_index,
 
 					region_gabarite->world_position_x + 0.0f,
-					region_gabarite->world_position_y + highest_point_y + scroll_y,
+					region_gabarite->world_position_y + final_highest_point_y + scroll_y,
 
 					region_gabarite->size_x - 0.0f,
 					2.0f,
@@ -1412,7 +1423,7 @@ void EButtonGroup::align_groups()
 	region_gabarite->phantom_translate_y = 0.0f;
 	region_gabarite->phantom_translate_z = 0.0f;
 
-	highest_point_y = 0.0f;
+	highest_point_y_for_groups = 0.0f;
 	//float minimal_culling_line_top		= 10000.0f;
 	//float minimal_culling_line_bottom	= -10000.0f;
 
@@ -1492,8 +1503,8 @@ void EButtonGroup::align_groups()
 		group->region_gabarite->world_position_y = round(region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y);
 		group->region_gabarite->world_position_z = round(region_gabarite->world_position_z + group->region_gabarite->offset_z);
 
-		highest_point_y = max(highest_point_y, group->region_gabarite->offset_y + group->region_gabarite->size_y + group->additional_y_distance);
-
+		highest_point_y_for_groups = max(highest_point_y_for_groups, group->region_gabarite->offset_y + group->region_gabarite->size_y + group->additional_y_distance);
+		
 		prev_group = group;
 
 
@@ -1514,7 +1525,7 @@ void EButtonGroup::align_groups()
 	{
 		if (child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
 		{
-			highest_point_y
+			highest_point_y_for_groups
 				=
 				max
 				(
@@ -1524,13 +1535,13 @@ void EButtonGroup::align_groups()
 					-
 					0.0f
 					,
-					highest_point_y
+					highest_point_y_for_groups
 				);
 		}
 		else
 		if (child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
 		{
-			highest_point_y
+			highest_point_y_for_groups
 				=
 				max
 				(
@@ -1538,9 +1549,12 @@ void EButtonGroup::align_groups()
 					-
 					prev_group->region_gabarite->offset_y
 					,
-					highest_point_y
+					highest_point_y_for_groups
 				);
 		}
+
+		//highest_point_y_for_groups += 40.0f;
+
 	}
 
 
@@ -2211,7 +2225,7 @@ void EButtonGroup::add_button_to_additional_group(EntityButton* _button)
 void EButtonGroup::realign_all_buttons()
 {
 	highest_point_y_for_buttons = 0.0f;
-	highest_point_y = 0.0f;
+	final_highest_point_y = 0.0f;
 
 	if ((slider != nullptr) && (have_slider))
 	{
@@ -2274,7 +2288,7 @@ void EButtonGroup::realign_all_buttons()
 					force_field_addition = ((!but->disable_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f));
 					//force_field_addition = 0.0f;
 
-					but->button_gabarite->size_x = button_size_x_override + (buttons_need_additional_size);
+					but->button_gabarite->size_x = button_size_x_override + (buttons_need_additional_size - force_field_addition);
 
 					//for (ECustomData* custom_data : but->custom_data_list)
 					//	for (EClickableArea* clickable_area : custom_data->clickable_area_list)
@@ -2382,9 +2396,9 @@ void EButtonGroup::realign_all_buttons()
 					but->offset_x
 					+
 					but->button_gabarite->size_x
-					+
-					((!but->disable_force_field) ? (but->force_field_right) : (0.0f))
-					>=
+					//+
+					//((!but->disable_force_field) ? (but->force_field_right) : (0.0f))
+					>
 					region_gabarite->size_x - border_right - slider_additional
 				)
 				{
@@ -2399,7 +2413,7 @@ void EButtonGroup::realign_all_buttons()
 					}
 
 					but->offset_x	=	but->parent_button_group->border_left;
-					but->offset_y	+=	max_size_y + 2.0f;
+					but->offset_y	+=	max_size_y + 0.0f;
 
 					if (!but->disable_force_field)
 					{
@@ -2454,7 +2468,10 @@ void EButtonGroup::realign_all_buttons()
 			if (!but->fixed_position)
 			{
 				float
+				force_field_addition = 0.0f;
+				/*
 				force_field_addition = ((!but->disable_force_field) ? (but->force_field_bottom + but->force_field_up) : (0.0f));
+				*/
 
 				highest_point_y_for_buttons = max(highest_point_y_for_buttons, but->offset_y + but->button_gabarite->size_y + 0.0f + force_field_addition);
 			}
@@ -2522,7 +2539,7 @@ void EButtonGroup::realign_all_buttons()
 	if (slider != nullptr)
 	{
 		//slider become active, get additional border in right side
-		if ((!have_slider) && (highest_point_y_for_buttons > region_gabarite->size_y - 0.0f - border_up))
+		if ((!have_slider) && (highest_point_y_for_buttons > region_gabarite->size_y))
 		{
 			slider->entity_disabled = false;
 
@@ -2530,6 +2547,9 @@ void EButtonGroup::realign_all_buttons()
 			//{
 			have_slider = true;
 			this->realign_all_buttons();
+
+			//have_slider = false;
+			//slider->entity_disabled = true;
 			//}
 
 			//EInputCore::logger_simple_info("activate slider");
@@ -2537,24 +2557,24 @@ void EButtonGroup::realign_all_buttons()
 
 			for (EButtonGroup* group : group_list) { group->parent_have_slider = true; }
 		}
-		else//no slider, no additional right border, if have any scroll, reset and realign
-		{
-			slider->entity_disabled = true;
-			have_slider = false;
+		//else//no slider, no additional right border, if have any scroll, reset and realign
+		//{
+		//	slider->entity_disabled = true;
+		//	have_slider = false;
 
-			for (EButtonGroup* group : group_list) { group->parent_have_slider = false; }
-		}
+		//	for (EButtonGroup* group : group_list) { group->parent_have_slider = false; }
+		//}
 
 		//scroll_y = slider->current_value;
 	}
 
-	highest_point_y = max(highest_point_y, highest_point_y_for_buttons);
+	final_highest_point_y = max(highest_point_y_for_groups, highest_point_y_for_buttons);
 	for (EButtonGroup* group : group_list) { group->realign_all_buttons(); }
 }
 
 void EButtonGroup::align_button_in_gabarite(std::vector<EntityButton*>& button_vector, float slider_additional)
 {
-	float total_width = button_vector.size() + slider_additional;
+	float total_width = 0.0f;
 
 	//EInputCore::logger_param("slider_additional", slider_additional);
 
@@ -2569,8 +2589,8 @@ void EButtonGroup::align_button_in_gabarite(std::vector<EntityButton*>& button_v
 		}
 
 	float free_space = 0.0f;
-	if (button_align_type == ButtonAlignType::BUTTON_ALIGN_MID) { free_space = (region_gabarite->size_x - total_width) / 2.0f; }
-	if (button_align_type == ButtonAlignType::BUTTON_ALIGN_RIGHT) { free_space = (region_gabarite->size_x - total_width); }
+	if (button_align_type == ButtonAlignType::BUTTON_ALIGN_MID) { free_space = (region_gabarite->size_x - slider_additional - total_width) / 2.0f; }
+	if (button_align_type == ButtonAlignType::BUTTON_ALIGN_RIGHT) { free_space = (region_gabarite->size_x - slider_additional - total_width); }
 
 
 	for (EntityButton* but_temp : button_vector)
@@ -2668,9 +2688,9 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 	//_group->need_redraw = true;
 	//_group->recursive_phantom_translate_if_need();
 
-	if (*_group->can_change_style) { _group->selected_style = _style; }
+	if (_group->can_change_style) { _group->selected_style = _style; }
 
-	if ((EGUIStyle::active_style != nullptr) && (*_group->can_change_style))
+	if ((EGUIStyle::active_style != nullptr) && (_group->can_change_style))
 	{
 
 		if (_group->have_bg)

@@ -152,9 +152,9 @@ public:
 	float hover_time				= 0.0f;
 
 	float force_field_left			= 0.0f;
-	float force_field_right			= 0.0f;
+	float force_field_right			= 2.0f;
 	float force_field_bottom		= 0.0f;
-	float force_field_up			= 0.0f;
+	float force_field_up			= 2.0f;
 
 	ERegionGabarite* button_gabarite;
 

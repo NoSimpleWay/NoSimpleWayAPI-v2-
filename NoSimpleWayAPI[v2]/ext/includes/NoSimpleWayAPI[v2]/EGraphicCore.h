@@ -216,6 +216,7 @@ namespace NS_EGraphicCore
 	extern float global_gloss_multiplier;
 
 	extern float global_free_sky_light_multiplier;
+	extern float global_free_sun_light_multiplier;
 	extern float global_reflection_multiplier;
 
 	extern float sun_x;

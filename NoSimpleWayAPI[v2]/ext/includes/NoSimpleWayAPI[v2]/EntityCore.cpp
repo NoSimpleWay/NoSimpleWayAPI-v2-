@@ -1759,13 +1759,13 @@ void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style)
 	{
 		slider->min_value = 0.0f;
 
-		slider->max_value = -(_but->parent_button_group->highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->border_up);
+		slider->max_value = -(_but->parent_button_group->final_highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->border_up);
 		slider->max_value = min(slider->max_value, 0.0f);
 	}
 	else
 	if (_but->parent_button_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
 	{
-		slider->min_value = (_but->parent_button_group->highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->border_up);
+		slider->min_value = (_but->parent_button_group->final_highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->border_up);
 		slider->min_value = max(slider->min_value, 0.0f);
 
 		slider->max_value = 0.0f;

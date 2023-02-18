@@ -309,8 +309,9 @@ public:
 	float scroll_x = (0.0f);
 	float scroll_y = (0.0f);
 
-	float highest_point_y = (0.0f);
+	float final_highest_point_y = (0.0f);
 	float highest_point_y_for_buttons = (0.0f);
+	float highest_point_y_for_groups = (0.0f);
 
 	float higher_culling_line = 0.0f;
 	float lower_culling_line = 0.0f;
@@ -374,7 +375,7 @@ public:
 
 	float additional_y_distance = 0.0f;
 
-	bool* can_change_style = new bool(true);
+	bool can_change_style = new bool(true);
 
 	EGUIStyle* selected_style = nullptr;
 
