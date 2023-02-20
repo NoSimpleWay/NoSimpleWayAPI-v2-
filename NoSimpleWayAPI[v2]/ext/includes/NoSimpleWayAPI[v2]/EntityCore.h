@@ -124,7 +124,7 @@ typedef void (*change_style_action)(EntityButton*, EGUIStyle*);
 
 void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style);
 void action_change_style_button(EntityButton* _but, EGUIStyle* _style);
-void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style);
+void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _style);
 
 #include "Helpers.h"
 struct HRA_color_collection;

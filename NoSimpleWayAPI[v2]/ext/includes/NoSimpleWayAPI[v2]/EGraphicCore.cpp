@@ -731,121 +731,21 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_DefaultGabarites::texture_button_radiance_dot			= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/radiance_button_dot.png",	NS_EGraphicCore::default_texture_atlas);
 	//NS_DefaultGabarites::texture_slider_bg_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 
-	NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+	
 
 	for (int i = 0; i < texture_skydome_levels; i++)
 	{
 		NS_EGraphicCore::skydome_texture_atlas[i]
-			=
-			new ETextureAtlas
-			(
-				max(1024 / (pow(2.0, i * 1)), 64)
-				,
-				max(1024 / (pow(2.0, i * 1)), 64)
-			);
-	}
-
-
-	NS_EGraphicCore::skydome_batcher->get_shader()->use();
-	{
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-
-		set_source_FBO(GL_TEXTURE0, default_texture_atlas->get_colorbuffer());
-
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-
-		set_target_FBO(skydome_texture_atlas[0]->get_framebuffer());
-
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[0]->get_atlas_size_x() * 0.00001f);
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[0]->get_atlas_size_y() * 0.00001f);
-
-		NS_EGraphicCore::skydome_batcher->set_transform_screen_size(1.0f, 1.0f);
-
-		glViewport(0, 0, skydome_texture_atlas[0]->get_atlas_size_x(), skydome_texture_atlas[0]->get_atlas_size_y());
-
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		=
+		new ETextureAtlas
 		(
-			NS_EGraphicCore::skydome_batcher->vertex_buffer,
-			NS_EGraphicCore::skydome_batcher->last_vertice_buffer_index,
-			0.0f,
-			0.0f,
-			1.0f,
-			1.0f,
-			NS_DefaultGabarites::texture_gabarite_skydome
+			max(1024 / (pow(2.0, i * 1)), 64)
+			,
+			max(1024 / (pow(2.0, i * 1)), 64)
 		);
-
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-		NS_EGraphicCore::skydome_batcher->draw_call();
 	}
 
-
-	float blur_table[texture_skydome_levels] = { 0.15f, 0.20f, 0.25f, 0.5f, 1.0f, 2.0f };
-	for (int i = 1; i < texture_skydome_levels; i++)
-	{
-
-		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
-
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-
-		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-
-		float pp = max(1.0f, i - 0.8f);
-		pp *= pp;
-
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * blur_table[i - 1]);
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * blur_table[i - 1]);
-
-		NS_EGraphicCore::skydome_batcher->set_transform_screen_size(1.0f, 1.0f);
-		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
-
-		glViewport(0, 0, skydome_texture_atlas[i]->get_atlas_size_x(), skydome_texture_atlas[i]->get_atlas_size_y());
-
-		NS_ERenderCollection::add_data_to_vertex_buffer_default
-		(
-			NS_EGraphicCore::skydome_batcher->vertex_buffer,
-			NS_EGraphicCore::skydome_batcher->last_vertice_buffer_index,
-			0.0f,
-			0.0f,
-			1.0f,
-			1.0f
-		);
-
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-		NS_EGraphicCore::skydome_batcher->draw_call();
-
-
-		//restore default viewport setting
-		set_target_FBO(0);
-		set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
-		glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
-
-		glDisable(GL_DEPTH_TEST);
-		glBlendEquation(GL_FUNC_ADD);
-	}
+	make_skydome_textures(NS_DefaultGabarites::texture_gabarite_skydome);
 
 	//STYLE LIST//
 	create_styles();
@@ -1868,6 +1768,111 @@ void NS_EGraphicCore::set_active_color(HSVRGBAColor* _color)
 	NS_EGraphicCore::active_color[1] = _color->g;
 	NS_EGraphicCore::active_color[2] = _color->b;
 	NS_EGraphicCore::active_color[3] = _color->a;
+}
+
+void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
+{
+	NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+	NS_EGraphicCore::skydome_batcher->get_shader()->use();
+	{
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+
+		set_source_FBO(GL_TEXTURE0, default_texture_atlas->get_colorbuffer());
+
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+
+		set_target_FBO(skydome_texture_atlas[0]->get_framebuffer());
+
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[0]->get_atlas_size_x() * 0.00001f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[0]->get_atlas_size_y() * 0.00001f);
+
+		NS_EGraphicCore::skydome_batcher->set_transform_screen_size(1.0f, 1.0f);
+
+		glViewport(0, 0, skydome_texture_atlas[0]->get_atlas_size_x(), skydome_texture_atlas[0]->get_atlas_size_y());
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::skydome_batcher->vertex_buffer,
+			NS_EGraphicCore::skydome_batcher->last_vertice_buffer_index,
+			0.0f,
+			0.0f,
+			1.0f,
+			1.0f,
+			_texture
+		);
+
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+		NS_EGraphicCore::skydome_batcher->draw_call();
+	}
+
+
+	float blur_table[texture_skydome_levels] = { 0.15f, 0.20f, 0.25f, 0.5f, 1.0f, 2.0f };
+	for (int i = 1; i < texture_skydome_levels; i++)
+	{
+
+		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
+
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+
+		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+
+		float pp = max(1.0f, i - 0.8f);
+		pp *= pp;
+
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * blur_table[i - 1]);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * blur_table[i - 1]);
+
+		NS_EGraphicCore::skydome_batcher->set_transform_screen_size(1.0f, 1.0f);
+		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+
+		glViewport(0, 0, skydome_texture_atlas[i]->get_atlas_size_x(), skydome_texture_atlas[i]->get_atlas_size_y());
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_default
+		(
+			NS_EGraphicCore::skydome_batcher->vertex_buffer,
+			NS_EGraphicCore::skydome_batcher->last_vertice_buffer_index,
+			0.0f,
+			0.0f,
+			1.0f,
+			1.0f
+		);
+
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+		NS_EGraphicCore::skydome_batcher->draw_call();
+
+
+		//restore default viewport setting
+		set_target_FBO(0);
+		set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
+		glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
+
+		glDisable(GL_DEPTH_TEST);
+		glBlendEquation(GL_FUNC_ADD);
+	}
 }
 
 void NS_EGraphicCore::set_source_FBO(int _GL_texture_id, unsigned int _colorbuffer_id)
@@ -4045,6 +4050,7 @@ void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, i
 			//group->region_gabarite->offset_y = (group->region_gabarite->offset_y / old_h) * height;
 
 			group->need_refresh = true;
+			//EButtonGroup::refresh_button_group(group);
 		}
 
 		

@@ -229,6 +229,7 @@ enum class GroupSearchStatus
 	SEARCH_STATUS_REJECTED
 };
 
+class EButtonGroupFastMessage;	
 class EButtonGroup
 {
 public:
@@ -289,6 +290,9 @@ public:
 	static EButtonGroup* focused_button_group_mouse_unpressed;
 	static EButtonGroup* focused_button_group_with_slider;
 	static EButtonGroup* catched_group_for_translation;
+
+
+	static EButtonGroupFastMessage* pointer_to_fast_message_group;
 
 	//MOVE GROUPS ORDER IN VECTOR
 	static EButtonGroup* vector_moving_group;
@@ -510,10 +514,17 @@ public:
 	void highlight_this_group();
 	void recursive_change_localisation(int _localisaton_id);
 
-
+	void init_as_root_group(EWindow* _window);
 };
 
+class EButtonGroupFastMessage : public EButtonGroup
+{
+public:
+	EButtonGroupFastMessage(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
+	float exist_time = 2.0f;
+	void button_group_update(float _d) override;
+};
 
 class EButtonGroupRouterVariant : public EButtonGroup
 {

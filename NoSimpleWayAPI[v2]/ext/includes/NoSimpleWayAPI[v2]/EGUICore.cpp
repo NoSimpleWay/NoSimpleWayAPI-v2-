@@ -10,6 +10,8 @@ EButtonGroup* EButtonGroup::focused_button_group = nullptr;
 EButtonGroup* EButtonGroup::focused_button_group_for_select = nullptr;
 EButtonGroup* EButtonGroup::focused_button_group_mouse_unpressed = nullptr;
 EButtonGroup* EButtonGroup::catched_group_for_translation = nullptr;
+EButtonGroupFastMessage* EButtonGroup::pointer_to_fast_message_group = nullptr;
+
 EButtonGroup* EButtonGroup::vector_moving_group = nullptr;
 EButtonGroup* EButtonGroup::parent_vector_moving_group = nullptr;
 
@@ -205,7 +207,7 @@ void EWindow::GUI_update_default(float _d)
 			EButtonGroup::get_last_focused_group(b_group);
 		}
 
-
+	//RESET GROUP SELECTION
 	if (EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
 	{
 		for (EButtonGroup* group : EButtonGroup::selected_groups)
@@ -222,13 +224,14 @@ void EWindow::GUI_update_default(float _d)
 
 	}
 
-	//SELECT
+	//SELECT BUTTON GROUP BLOCKS
 	if
-		(
-			(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-			&&
-			(EButtonGroup::focused_button_group_for_select != nullptr)
-			)
+	(
+		(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+		&&
+		(EButtonGroup::focused_button_group_for_select != nullptr)
+
+	)
 	{
 		if (EButtonGroup::first_selected_element == nullptr)
 		{
@@ -239,7 +242,10 @@ void EWindow::GUI_update_default(float _d)
 		}
 		else
 		{
-			EButtonGroup::last_selected_element = EButtonGroup::focused_button_group_for_select;
+			if (EButtonGroup::parent_for_selected_groups->root_group == EButtonGroup::focused_button_group_mouse_unpressed->root_group)
+			{
+				EButtonGroup::last_selected_element = EButtonGroup::focused_button_group_for_select;
+			}
 		}
 
 		for (EButtonGroup* group : EButtonGroup::selected_groups)
@@ -2633,7 +2639,7 @@ void EButtonGroup::add_vertical_scroll_bar(EButtonGroup* _button_group)
 		//custom_data->actions_on_update.push_back(EDataActionCollection::action_update_slider);
 
 		//action on generate vertex buffer
-		but->action_on_generate_vertex_buffer.push_back(action_change_style_vertical_slider);
+		but->action_on_generate_vertex_buffer.push_back(action_generate_vertex_for_vertical_slider);
 
 		//action on draw
 		but->main_custom_data->actions_on_draw.push_back(&EDataActionCollection::action_draw_vertical_named_slider);
@@ -3226,6 +3232,14 @@ void EButtonGroup::recursive_change_localisation(int _localisaton_id)
 	}
 
 
+}
+
+void EButtonGroup::init_as_root_group(EWindow* _window)
+{
+	parent_window	= _window;
+	root_group		= this;
+
+	init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
 }
 
 void EButtonGroupConfirmAction::init_as_confirm_decline_group()
@@ -4089,4 +4103,19 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 EButtonGroupRouterVariant::~EButtonGroupRouterVariant()
 {
 	target_router_button->opened_router_group = nullptr;
+}
+
+void EButtonGroupFastMessage::button_group_update(float _d)
+{
+	EButtonGroup::button_group_update(_d);
+
+	if (exist_time > 0.0f)
+	{
+		exist_time -= _d;
+
+		if (exist_time < 0.0f)
+		{
+			button_group_is_active = false;
+		}
+	}
 }

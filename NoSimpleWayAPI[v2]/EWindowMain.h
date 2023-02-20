@@ -485,6 +485,7 @@ namespace EDataActionCollection
 	void action_select_this_text_variant(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_mark_parent_group_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_mark_filter_blocks_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_generate_filter_block_text(Entity* _entity, ECustomData* _custom_data, float _d);
 

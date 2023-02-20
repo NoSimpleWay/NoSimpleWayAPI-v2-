@@ -346,6 +346,7 @@ public:
 	float								min_y_size = 100.0f;
 
 	data_action_pointer					stored_action_for_data_entity_group;
+	unsigned int categry_id				= 0;
 
 	ETextureGabarite* icon_texture;
 };

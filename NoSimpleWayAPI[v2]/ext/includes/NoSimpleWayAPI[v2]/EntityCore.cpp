@@ -1692,7 +1692,7 @@ void action_change_style_button(EntityButton* _but, EGUIStyle* _style)
 	}
 }
 
-void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style)
+void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _style)
 {
 	NS_ERenderCollection::set_brick_borders_and_subdivisions
 	(
@@ -1752,8 +1752,11 @@ void action_change_style_vertical_slider(EntityButton* _but, EGUIStyle* _style)
 	_but->button_gabarite->size_x = _style->slider_inactive->main_texture->size_x_in_pixels;
 	_but->button_gabarite->size_y = total_group_height;
 
-	EntityButtonVerticalSlider* slider = static_cast<EntityButtonVerticalSlider*>(_but);
+	EntityButtonVerticalSlider*
+	slider = static_cast<EntityButtonVerticalSlider*>(_but);
 	slider->workspace_height = total_group_height - _style->slider_inactive->main_texture->size_y_in_pixels;
+	slider->slider_active = _style->slider_active;
+	slider->slider_inactive = _style->slider_inactive;
 
 	if (_but->parent_button_group->child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
 	{

@@ -106,6 +106,40 @@ int main()
 
 	srand(time(nullptr));
 
+	//fast message
+	EButtonGroupFastMessage*
+	fast_message_button_group = new EButtonGroupFastMessage(new ERegionGabarite(350.0f, 40.0f));
+	fast_message_button_group->init_as_root_group(EWindowMain::link_to_main_window);
+	EButtonGroup::pointer_to_fast_message_group = fast_message_button_group;
+	//EButtonGroup*
+	//	inner_group = fast_message_button_group->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 100.0f)));
+	//inner_group->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_without_slider, bgroup_default_bg);
+	//inner_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+	EClickableArea*
+	clickable_area_for_group = EClickableArea::create_default_clickable_region(fast_message_button_group->region_gabarite, fast_message_button_group);
+	
+	ELocalisationText
+	ltext;
+	ltext.localisations[NSW_localisation_EN] = "Welcome to Awakened DaDEditor";
+	ltext.localisations[NSW_localisation_RU] = "Добро пожаловать в Awakened DaDEditor";
+
+	ETextArea*
+	text_area_for_group = ETextArea::create_centered_text_area(clickable_area_for_group, EFont::font_list[0], ltext.localisations[ELocalisationText::active_localisation]);
+	clickable_area_for_group->text_area = text_area_for_group;
+
+	fast_message_button_group->clickable_area_list.push_back(clickable_area_for_group);
+
+
+	EWindowMain::link_to_main_window->button_group_list.push_back(fast_message_button_group);
+
+	//fast_message_button_group->need_refresh = true;
+	EButtonGroup::refresh_button_group(fast_message_button_group);
+	fast_message_button_group->move_to_foreground_and_center();
+	//
+
+
+
 	//ACCEPT/DECLINE GROUP
 		EButtonGroupConfirmAction*
 		whole_close_group = new EButtonGroupConfirmAction(new ERegionGabarite(350.0f, 150.0f));
@@ -117,14 +151,18 @@ int main()
 	//
 
 
+	
 
+		
 	while
-		(
-			(!glfwWindowShouldClose(NS_EGraphicCore::main_window))
-			||
-			(EInputCore::NSW_have_unsave_changes)
-			)
+	(
+		(!glfwWindowShouldClose(NS_EGraphicCore::main_window))
+		||
+		(EInputCore::NSW_have_unsave_changes)
+	)
 	{
+		//make_skydome_textures(NS_DefaultGabarites::texture_gabarite_skydome);
+
 		if
 			(
 				(EInputCore::NSW_have_unsave_changes)
@@ -279,6 +317,17 @@ int main()
 		if (EInputCore::key_pressed(GLFW_KEY_0))
 		{
 			NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
+			
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+				0.0,
+				0.0f,
+				1024.0f,
+				512.0f,
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
 
 			NS_ERenderCollection::add_data_to_vertex_buffer_default
 			(
