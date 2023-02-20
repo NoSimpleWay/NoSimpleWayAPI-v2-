@@ -1130,7 +1130,7 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 		}
 		else
 		{
-			data->current_value = (EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom - data->pointer_to_bg->world_position_x) / data->operable_area_size_x;
+			data->current_value = (EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom - data->pointer_to_brick_bg_sprite_layer->world_position_x) / data->operable_area_size_x;
 		}
 
 		data->current_value = max(data->current_value, 0.0f);
@@ -1168,18 +1168,36 @@ void EDataActionCollection::action_draw_horizontal_named_slider(Entity* _entity,
 	if (data->style != nullptr)
 	{
 
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_YELLOW, 0.16f);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			data->pointer_to_brick_bg_sprite_layer->world_position_x,
+			data->pointer_to_brick_bg_sprite_layer->world_position_y,
+
+			data->operable_area_size_x * data->current_value + data->style->round_slider->main_texture->size_x_in_pixels / 2.0f,
+			data->style->round_slider->main_texture->size_y_in_pixels,
+
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
 
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
-
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_size
 		(
 			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-			data->pointer_to_bg->world_position_x + data->operable_area_size_x * data->current_value,
-			data->pointer_to_bg->world_position_y,
+			data->pointer_to_brick_bg_sprite_layer->world_position_x + data->operable_area_size_x * data->current_value,
+			data->pointer_to_brick_bg_sprite_layer->world_position_y,
 			data->style->round_slider->main_texture
 		);
+
+
+
 	}
 }
 
@@ -2093,6 +2111,8 @@ void EClickableArea::update(float _d)
 	{
 		hover_time = 0.0f;
 	}
+
+	//if ((hover_time > 0.5f) && ())
 
 	//left click
 	{

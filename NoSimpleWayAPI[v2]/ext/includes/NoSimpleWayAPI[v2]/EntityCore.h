@@ -62,7 +62,7 @@ public:
 	std::vector<ESpriteLayer*> sprite_layer_list;
 
 	virtual void draw();
-	void draw_second_pass();
+	virtual void draw_second_pass();
 
 	void generate_vertex_buffer_for_all_sprite_layers();
 	void transfer_all_vertex_buffers_to_batcher();
@@ -123,7 +123,8 @@ public:
 typedef void (*change_style_action)(EntityButton*, EGUIStyle*);
 
 void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style);
-void action_change_style_button(EntityButton* _but, EGUIStyle* _style);
+void action_generate_brick_bg_for_button(EntityButton* _but, EGUIStyle* _style);
+void action_generate_vertex_for_horizontal_named_slider(EntityButton* _but, EGUIStyle* _style);
 void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _style);
 
 #include "Helpers.h"
@@ -131,6 +132,31 @@ struct HRA_color_collection;
 class EntityButtonColorButton;
 
 
+class EntityButton;
+struct DescriptionContainer
+{
+public:
+	DescriptionContainer();
+	DescriptionContainer(float _size_x, float _size_y);
+	ELocalisationText localisation_text;
+
+	float size_x = 250.0f;
+	float size_y = 50.0f;
+
+	virtual void	create_description();
+	void			align_description(EButtonGroup* _group);
+
+	EntityButton*	parent_button;
+	EClickableArea*	parent_clickable_area;
+};
+
+struct DescriptionContainerDefault : public DescriptionContainer
+{
+public:
+	DescriptionContainerDefault(float _size_x, float _size_y) :DescriptionContainer(_size_x, _size_y) {};
+	
+	void create_description() override;
+};
 
 class EntityButton : public Entity
 {
@@ -149,7 +175,14 @@ public:
 
 	bool entity_is_active();
 
+
+
+	DescriptionContainer*
+	description_container			= nullptr;
+
 	float hover_time				= 0.0f;
+
+
 
 	float force_field_left			= 0.0f;
 	float force_field_right			= 2.0f;
@@ -217,7 +250,7 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
-	static EntityButton* create_vertical_named_slider
+	static EntityButton* create_horizontal_named_slider
 	(
 		ERegionGabarite* _region_gabarite,
 		EButtonGroup* _parent_group,
@@ -324,9 +357,12 @@ public:
 	void add_description(std::string _text);
 	EDataEntity* pointer_to_data_entity;
 
-	void draw();
+	void draw() override;
+	void draw_second_pass() override;
+
 	void update(float _d);
 	bool* suppressor = nullptr;
+	EntityButton* button_suppressor;
 
 	ETextArea* main_text_area;
 	EClickableArea* main_clickable_area;

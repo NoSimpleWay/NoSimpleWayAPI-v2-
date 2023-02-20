@@ -518,6 +518,12 @@ void ETextArea::generate_text()
 			border_offset_bottom = *parent_entity_for_text_area->parent_button_group->selected_style->button_bg->side_offset_bottom;
 			border_offset_top = *parent_entity_for_text_area->parent_button_group->selected_style->button_bg->side_offset_up;
 		}
+		else
+		if (parent_group != nullptr)
+		{
+			border_offset_bottom	= parent_group->border_bottom;
+			border_offset_top		= parent_group->border_up;
+		}
 
 		//vertical align
 		y_adding += (region_gabarite->size_y - border_offset_bottom - border_offset_top) * offset_by_gabarite_size_y;
@@ -1427,6 +1433,30 @@ void ETextArea::change_text(std::string _text)
 	char			target_sym = 0;
 	int				sym_id = 0;
 
+	float			border_left		= 0.0f;
+	float			border_right	= 0.0f;
+
+	float			border_bottom	= 0.0f;
+	float			border_up		= 0.0f;
+
+	if (can_get_access_to_group_style())
+	{
+		border_left		= parent_entity_for_text_area->parent_button_group->border_left;
+		border_right	= parent_entity_for_text_area->parent_button_group->border_right;
+		
+		border_bottom	= parent_entity_for_text_area->parent_button_group->border_bottom;
+		border_up		= parent_entity_for_text_area->parent_button_group->border_up;
+	}
+	else
+	if (parent_group != nullptr)
+	{
+		border_left		= parent_group->border_left;
+		border_right	= parent_group->border_right;
+						  
+		border_bottom	= parent_group->border_bottom;
+		border_up		= parent_group->border_up;
+	}
+
 	original_text = _text;
 	//EInputCore::logger_param("change text", _text);
 	if
@@ -1495,7 +1525,7 @@ void ETextArea::change_text(std::string _text)
 			else
 			{
 				//block_size = 0.0f;
-				if (x_size + offset_border[BorderSide::LEFT] + 0.0f < region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 0.0f)
+				if (x_size + offset_border[BorderSide::LEFT] + border_left < region_gabarite->size_x - offset_border[BorderSide::RIGHT] - border_right)
 				{
 					x_size += font->advance[sym_id] * font_scale;
 				}
@@ -1504,7 +1534,7 @@ void ETextArea::change_text(std::string _text)
 			if ((target_sym == ' ')||(i >= _text.size() - 1))
 			{
 				//need to transfer text to new line?
-				if (x_size + offset_border[BorderSide::LEFT] + 0.0f >= region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 5.0f)
+				if (x_size + offset_border[BorderSide::LEFT] + border_left >= region_gabarite->size_x - offset_border[BorderSide::RIGHT] - border_right)
 				{
 					buffer += '\n';
 					//buffer += "[" + Helper::float_to_string_with_precision(x_size + offset_border[BorderSide::LEFT] + 5.0f, 2.0f) + "/" + Helper::float_to_string_with_precision(region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 5.0f, 2.0f) + "]";

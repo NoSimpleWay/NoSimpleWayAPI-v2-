@@ -499,6 +499,7 @@ public:
 	static std::vector<FreshCreatedGroup*> fresh_created_block_list;
 
 	EWindow* parent_window;
+	EClickableArea* main_clickable_area;
 
 	void activate_move_to_foreground_and_center();
 	void move_to_foreground();
@@ -514,7 +515,10 @@ public:
 	void highlight_this_group();
 	void recursive_change_localisation(int _localisaton_id);
 
+	void add_default_clickable_region_with_text_area(ELocalisationText* _text);
+
 	void init_as_root_group(EWindow* _window);
+	void init_as_fast_message(EWindow* _window, ELocalisationText* _text);
 };
 
 class EButtonGroupFastMessage : public EButtonGroup
@@ -523,6 +527,7 @@ public:
 	EButtonGroupFastMessage(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	float exist_time = 2.0f;
+	bool delete_when_expire = false;
 	void button_group_update(float _d) override;
 };
 

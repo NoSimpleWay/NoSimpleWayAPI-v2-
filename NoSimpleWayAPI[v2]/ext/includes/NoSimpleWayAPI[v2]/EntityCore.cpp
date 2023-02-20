@@ -45,6 +45,8 @@ void Entity::draw_second_pass()
 		//EInputCore::logger_simple_info("scond pass entity disabled draw");
 	}
 
+
+
 }
 
 void Entity::generate_vertex_buffer_for_all_sprite_layers()
@@ -541,7 +543,7 @@ void EntityButton::init(ERegionGabarite* _region_gabarite, EButtonGroup* _parent
 	EntityButton::button_generate_brick_bg(this, _parent_group->selected_style);
 	set_world_position_w(_region_gabarite);
 
-	action_on_generate_vertex_buffer.push_back(&action_change_style_button);
+	action_on_generate_vertex_buffer.push_back(&action_generate_brick_bg_for_button);
 }
 
 void EntityButton::add_default_custom_data(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row)
@@ -836,7 +838,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		return jc_button;
 }
 
-EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, std::string _text)
+EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, std::string _text)
 {
 	EntityButton* jc_button = new EntityButton();
 
@@ -855,9 +857,12 @@ EntityButton* EntityButton::create_vertical_named_slider(ERegionGabarite* _regio
 
 	EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_update_horizontal_named_slider);
 	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_horizontal_named_slider);
+	
+	jc_button->action_on_generate_vertex_buffer.push_back(&action_generate_brick_bg_for_button);
+	jc_button->action_on_generate_vertex_buffer.push_back(&action_generate_vertex_for_horizontal_named_slider);
 
 	ESpriteLayer* bg_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
-	data->pointer_to_bg = bg_layer;
+	data->pointer_to_brick_bg_sprite_layer = bg_layer;
 
 	NS_ERenderCollection::set_brick_borders_and_subdivisions
 	(
@@ -1503,11 +1508,62 @@ void EntityButton::draw()
 	}
 }
 
+void EntityButton::draw_second_pass()
+{
+	Entity::draw_second_pass();
+
+	if
+	(
+		(button_suppressor != nullptr)
+		&&
+		(EClickableArea::active_clickable_region == main_clickable_area)
+		&&
+		(!*suppressor)
+	)
+	{
+		unsigned long long timer = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+		//EInputCore::logger_param("timer", timer % 100);
+
+		if (timer % 700 <= 350)
+		{
+			NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.5f);
+			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+				//x pos
+				button_suppressor->button_gabarite->world_position_x,
+
+				//y pos
+				button_suppressor->button_gabarite->world_position_y,
+
+				button_suppressor->button_gabarite->size_x,
+				button_suppressor->button_gabarite->size_y,
+
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+		}
+	}
+}
+
 void EntityButton::update(float _d)
 {
 	//if ((suppressor == nullptr) || (*suppressor))
 	//{
 		Entity::update(_d);
+
+		if ((main_clickable_area->hover_time >= 0.25f) && (description_container != nullptr) && (attached_description == nullptr))
+		{description_container->create_description();}
+
+		if
+		(
+			(attached_description != nullptr)
+			&&
+			(!button_gabarite->overlapped_by_mouse())
+		)
+		{destroy_attached_description();}
 	//}
 }
 
@@ -1675,7 +1731,7 @@ void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style)
 
 }
 
-void action_change_style_button(EntityButton* _but, EGUIStyle* _style)
+void action_generate_brick_bg_for_button(EntityButton* _but, EGUIStyle* _style)
 {
 	EntityButton::button_generate_brick_bg(_but, _style);
 
@@ -1690,6 +1746,44 @@ void action_change_style_button(EntityButton* _but, EGUIStyle* _style)
 		//	clickable_area->text_area->color[i] = clickable_area->text_area->stored_color[i] * _style->text_color_multiplier[i];
 		//}
 	}
+}
+
+void action_generate_vertex_for_horizontal_named_slider(EntityButton* _but, EGUIStyle* _style)
+{
+	EDataContainer_VerticalNamedSlider* data = static_cast<EDataContainer_VerticalNamedSlider*>(_but->main_custom_data->data_container);
+
+	data->style = _style;
+
+	NS_ERenderCollection::set_brick_borders_and_subdivisions
+	(
+		*_style->slider_bg->side_size_left,
+		*_style->slider_bg->side_size_right,
+		*_style->slider_bg->side_size_bottom,
+		*_style->slider_bg->side_size_up,
+
+		*_style->slider_bg->subdivision_x,
+		*_style->slider_bg->subdivision_y
+	);
+
+	NS_ERenderCollection::temporary_sprites = false;
+
+	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
+	(
+		0.0f,
+		0.0f,
+		0.0f,
+		_but->button_gabarite->size_x,
+		15.0f
+	);
+
+	NS_ERenderCollection::generate_brick_texture
+	(
+		ERegionGabarite::temporary_gabarite,
+		data->pointer_to_brick_bg_sprite_layer,
+		_style->slider_bg->main_texture,
+		_style->slider_bg->normal_map_texture,
+		_style->slider_bg->gloss_map_texture
+	);
 }
 
 void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _style)
@@ -1944,4 +2038,74 @@ EntityButtonOpenURL::EntityButtonOpenURL()
 
 EntityButtonOpenURL::~EntityButtonOpenURL()
 {
+}
+
+DescriptionContainer::DescriptionContainer()
+{
+}
+
+DescriptionContainer::DescriptionContainer(float _size_x, float _size_y)
+{
+	size_x = _size_x;
+	size_y = _size_y;
+}
+
+void DescriptionContainer::create_description()
+{
+
+}
+
+void DescriptionContainer::align_description(EButtonGroup* _group)
+{
+	float borders_size_x = _group->border_left		+ _group->border_right;
+	float borders_size_y = _group->border_bottom	+ _group->border_up;
+
+	_group->region_gabarite->offset_x = max(parent_button->button_gabarite->world_position_x, borders_size_x + 3.0f);
+	_group->region_gabarite->offset_x = min(_group->region_gabarite->offset_x, NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom - _group->region_gabarite->size_x - borders_size_x - 3.0f);
+	
+	if (parent_button->button_gabarite->world_position_y + parent_button->button_gabarite->size_y + size_y + borders_size_y + 6.0f <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
+	{
+		_group->region_gabarite->offset_y
+		=
+		parent_button->button_gabarite->world_position_y
+		+
+		parent_button->button_gabarite->size_y
+		+
+		borders_size_y
+		+
+		3.0f;
+	}
+	else
+	{
+		_group->region_gabarite->offset_y = max(parent_button->button_gabarite->world_position_y - size_y - borders_size_y - 3.0f, 3.0f);
+	}
+}
+
+void DescriptionContainerDefault::create_description()
+{
+	//EInputCore::logger_simple_info("@");
+	DescriptionContainer::create_description();
+
+	if (parent_button != nullptr)
+	{
+		EButtonGroup*
+		description_group = new EButtonGroup
+		(
+			new ERegionGabarite
+			(
+				size_x,
+				size_y
+			)
+		);
+
+		description_group->init_as_root_group(parent_button->parent_button_group->root_group->parent_window);
+		description_group->need_refresh = true;
+
+		description_group->add_default_clickable_region_with_text_area(&localisation_text);
+
+		parent_button->parent_button_group->root_group->parent_window->button_group_list.push_back(description_group);
+		parent_button->attached_description = description_group;
+
+		align_description(description_group);
+	}
 }

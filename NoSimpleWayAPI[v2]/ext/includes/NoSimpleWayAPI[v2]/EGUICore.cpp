@@ -437,13 +437,16 @@ void EWindow::GUI_draw_second_pass(float _d)
 	//	if (b_group->header_button_group != nullptr)
 	//	{b_group->header_button_group->draw_second_pass();}
 	//}
-	int counter = 0;
-	for (EButtonGroup* b_group : button_group_list)
-		if ((b_group != nullptr) && (b_group->button_group_is_active) && (counter <= 10))
-		{
-			b_group->draw_second_pass();
-			counter++;
-		}
+
+	//EInputCore::logger_simple_info(a"@");
+
+	//int counter = 0;
+	//for (EButtonGroup* b_group : button_group_list)
+	//if ((b_group != nullptr) && (b_group->button_group_is_active))
+	//{
+	//	b_group->draw_second_pass();
+	//	counter++;
+	//}
 
 }
 
@@ -985,31 +988,22 @@ void EButtonGroup::draw_button_group()
 			);
 
 			//DRAW BUTTONS
-			for (EntityButton* but : all_button_list)
-				if
-				(
-					(but->be_visible_last_time)
-					&&
-					(but->entity_is_active())
-				)
-				{
-					//PHANTOM REDRAW
+			{
+				for (EntityButton* but : all_button_list)
 					if
-					(
-						(but->have_phantom_draw)
-						||
 						(
-							(EInputCore::key_pressed(GLFW_KEY_TAB))
+							(but->be_visible_last_time)
 							&&
-							(false)
-						)
-					)
+							(but->entity_is_active())
+							)
 					{
-						but->have_phantom_draw = false;
-
-
-						//generate vertex buffer for buttons
+						//PHANTOM REDRAW
+						if
+							(but->have_phantom_draw)
 						{
+							but->have_phantom_draw = false;
+							//generate vertex buffer for buttons
+
 							for (change_style_action csa : but->action_on_generate_vertex_buffer)
 							{
 								csa(but, selected_style);
@@ -1019,69 +1013,52 @@ void EButtonGroup::draw_button_group()
 							but->generate_vertex_buffer_for_all_sprite_layers();
 						}
 
-						//but->generate_vertex_buffer_for_all_sprite_layers();
+						but->draw();
+
+						//select rama
+						if (selected_button == but)
+						{
+							NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_YELLOW, 1.0f);
+							ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+
+							NS_ERenderCollection::add_data_to_vertex_buffer_rama
+							(
+								NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+								NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+								but->button_gabarite->world_position_x - 1.0f,
+								but->button_gabarite->world_position_y - 1.0f,
+
+								but->button_gabarite->size_x + 1.0f,
+								but->button_gabarite->size_y + 1.0f,
+
+								3.0f,
+
+								NS_DefaultGabarites::texture_gabarite_white_pixel
+
+							);
+						}
 					}
+			}
 
-					but->draw();
-
-					if (selected_button == but)
-					{
-						NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_YELLOW, 1.0f);
-						ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
-
-						NS_ERenderCollection::add_data_to_vertex_buffer_rama
-						(
-							NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-							NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-							but->button_gabarite->world_position_x - 1.0f,
-							but->button_gabarite->world_position_y - 1.0f,
-
-							but->button_gabarite->size_x + 1.0f,
-							but->button_gabarite->size_y + 1.0f,
-
-							3.0f,
-
-							NS_DefaultGabarites::texture_gabarite_white_pixel
-
-						);
-					}
-
-					//gray suppressor
+			//BUTTONS SECOND PASS DRAW
+			{
+				for (EntityButton* but : all_button_list)
 					if
 						(
-							(suppressed)
-							&&
-							(but != slider)//slider cannot be suppressed
+							(but->be_visible_last_time)
 							&&
 							(but->entity_is_active())
 							)
 					{
-						NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GRAY, 0.5f);
-						ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
-
-						NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-						(
-							NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-							NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-							but->button_gabarite->world_position_x,
-							but->button_gabarite->world_position_y,
-
-							but->button_gabarite->size_x,
-							but->button_gabarite->size_y,
-
-							NS_DefaultGabarites::texture_gabarite_white_pixel
-						);
+						but->draw_second_pass();
 					}
-				}
+			}
 
 
 			for (EClickableArea* clickable_area : clickable_area_list)
-				if (clickable_area != nullptr)
-				{
-					clickable_area->draw();
-				}
+			if (clickable_area != nullptr)
+			{clickable_area->draw();}
 
 			NS_EGraphicCore::pbr_batcher->draw_call();//draw pbg bg
 			batcher_for_default_draw->draw_call();//draw text to default batcher
@@ -1404,7 +1381,7 @@ void EButtonGroup::post_draw()
 
 void EButtonGroup::draw_second_pass()
 {
-
+	
 
 	for (EntityButton* but : all_button_list)
 		if
@@ -3226,6 +3203,7 @@ void EButtonGroup::recursive_change_localisation(int _localisaton_id)
 			c->text_area->original_text = c->text_area->localisation_text.localisations[ELocalisationText::active_localisation];
 		}
 
+
 	for (EButtonGroup* g : group_list)
 	{
 		g->recursive_change_localisation(_localisaton_id);
@@ -3234,12 +3212,36 @@ void EButtonGroup::recursive_change_localisation(int _localisaton_id)
 
 }
 
+void EButtonGroup::add_default_clickable_region_with_text_area(ELocalisationText* _text)
+{
+	EClickableArea*
+	new_clickable_area = EClickableArea::create_default_clickable_region(region_gabarite, this);
+	main_clickable_area = new_clickable_area;
+
+	clickable_area_list.push_back(new_clickable_area);
+
+	ETextArea*
+	new_text_area = ETextArea::create_centered_text_area(new_clickable_area, EFont::font_list[0], _text->localisations[ELocalisationText::active_localisation]);
+	new_text_area->localisation_text = *_text;
+	new_text_area->parent_group = this;
+	new_text_area->can_be_edited = false;
+
+	new_clickable_area->text_area = new_text_area;
+}
+
 void EButtonGroup::init_as_root_group(EWindow* _window)
 {
 	parent_window	= _window;
 	root_group		= this;
 
 	init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+}
+
+void EButtonGroup::init_as_fast_message(EWindow* _window, ELocalisationText* _text)
+{
+	init_as_root_group(_window);
+	ELocalisationText ltext;
+	add_default_clickable_region_with_text_area(_text);
 }
 
 void EButtonGroupConfirmAction::init_as_confirm_decline_group()
@@ -3278,7 +3280,7 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 		c_area_for_group = EClickableArea::create_default_clickable_region(top_part_for_description->region_gabarite, top_part_for_description);
 
 	pointer_to_description_text_area = ETextArea::create_centered_text_area(c_area_for_group, EFont::font_list[0], "123");
-
+	pointer_to_description_text_area->can_be_edited = false;
 	c_area_for_group->text_area = pointer_to_description_text_area;
 
 	pointer_to_description_text_area->localisation_text.localisations[NSW_localisation_EN] = "Warning! Unsaved changes!\\n\\nIf you continue, you lost unsaved data!";
@@ -3537,7 +3539,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	// // // // // // //
 	EntityButton*
-		jc_button = EntityButton::create_vertical_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Прозрачность");
+		jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Прозрачность");
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->a;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 	value_and_alpha_part->add_button_to_working_group(jc_button);
@@ -3547,7 +3549,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	// // // // // // //
 
-	jc_button = EntityButton::create_vertical_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Яркость");
+	jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Яркость");
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->v;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 	value_and_alpha_part->add_button_to_working_group(jc_button);
@@ -4115,7 +4117,9 @@ void EButtonGroupFastMessage::button_group_update(float _d)
 
 		if (exist_time < 0.0f)
 		{
-			button_group_is_active = false;
+			
+
+			if (delete_when_expire) { need_remove = true; } else { button_group_is_active = false; }
 		}
 	}
 }

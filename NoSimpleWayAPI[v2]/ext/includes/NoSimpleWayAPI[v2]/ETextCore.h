@@ -226,8 +226,9 @@ public:
 
 	float offset_border[BorderSide::_LAST_ELEMENT]{ 0.0f };
 
-	EClickableArea* parent_clickable_region;
-	EntityButton* parent_entity_for_text_area;
+	EClickableArea*	parent_clickable_region;
+	EntityButton*	parent_entity_for_text_area;
+	EButtonGroup*	parent_group;
 
 	//int* align_size_x = new int(AlignSide::AS_LEFT);
 	//int* align_size_y = new int(AlignSide::AS_DOWN);

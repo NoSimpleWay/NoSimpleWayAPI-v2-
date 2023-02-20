@@ -373,7 +373,7 @@ class EDataContainer_VerticalNamedSlider : public EDataContainer
 {
 public:
 	//ESpriteLayer*			pointer_to_head;
-	ESpriteLayer* pointer_to_bg;
+	ESpriteLayer* pointer_to_brick_bg_sprite_layer;
 
 	EGUIStyle* style;
 
