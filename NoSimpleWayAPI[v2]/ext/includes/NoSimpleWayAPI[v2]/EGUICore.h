@@ -398,7 +398,7 @@ public:
 	
 
 	
-	void refresh_buttons_in_group();
+
 
 	void add_button_to_working_group(EntityButton* _button);
 	void add_button_to_additional_group(EntityButton* _button);

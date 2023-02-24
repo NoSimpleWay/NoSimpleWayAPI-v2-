@@ -362,8 +362,8 @@ void EWindow::GUI_update_default(float _d)
 				//(b_group->can_see_this_group())	
 		)
 		{
-			//b_group->lower_culling_line = b_group->region_gabarite->world_position_y;
-			//b_group->higher_culling_line = b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y;
+			b_group->lower_culling_line = b_group->region_gabarite->world_position_y;
+			b_group->higher_culling_line = b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y;
 
 			b_group->button_group_update(_d);
 
@@ -903,18 +903,18 @@ void EButtonGroup::draw_button_group()
 			(button_group_is_visible())
 		)
 	{
-		bool visibility = button_group_is_visible();
+		//bool visibility = button_group_is_visible();
 
-		if (visibility)
+		//if (visibility)
 		{
 			if (group_phantom_redraw)
 			{
 				//EButtonGroup::change_group(this);
 
-				EButtonGroup::generate_vertex_buffer_for_group(this, NSW_RECURSIVE);
+				EButtonGroup::generate_vertex_buffer_for_group(this, NSW_ONLY_TARGET);
 				//highlight_this_group();
 				group_phantom_redraw = false;
-				//highlight_time = 0.5f;
+				//highlight_time = 1.0f;
 				//EInputCore::logger_simple_info("Phantom redraw!");
 			}
 
@@ -1461,8 +1461,8 @@ void EButtonGroup::draw_button_group()
 
 			//draw_second_pass();
 		}
-		else
-		{
+		//else
+		//{
 
 			//NS_EGraphicCore::set_active_color(1.0f * is_active, 1.0f * disable_gabarite, 1.0f * hidden_by_search, 0.53f);;
 
@@ -1479,7 +1479,7 @@ void EButtonGroup::draw_button_group()
 			//);
 
 			//batcher_for_default_draw->draw_call();
-		}
+		//}
 	}
 }
 
@@ -1767,17 +1767,17 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 			(_group->button_group_is_visible())
 			&&
 			(_group->can_see_this_group())
-			&&
-			(_group->region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
-			&&
-			(_group->region_gabarite->world_position_y + _group->region_gabarite->size_y >= 0.0f)
+			//&&
+			//(_group->region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
+			//&&
+			//(_group->region_gabarite->world_position_y + _group->region_gabarite->size_y >= 0.0f)
 		)
 	{
 		_group->group_phantom_redraw = false;
 
 		//	
 		
-
+		//_group->highlight_time += 0.2f;
 
 		EButtonGroup::generate_brick_textured_bg(_group);
 		_group->need_redraw = false;
@@ -1834,7 +1834,7 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 
 		if (_recursive)
 		{
-			for (EButtonGroup* group : _group->group_list) { EButtonGroup::generate_vertex_buffer_for_group(group); }
+			for (EButtonGroup* group : _group->group_list) { EButtonGroup::generate_vertex_buffer_for_group(group, NSW_ONLY_TARGET); }
 		}
 	}
 	else
@@ -2114,10 +2114,11 @@ void EButtonGroup::button_group_prechange()
 
 void EButtonGroup::change_group(EButtonGroup* _group)
 {
-
+	//_group->recursive_phantom_translate_if_need();
 	if (_group->button_group_is_visible())
 	{
 		_group->button_group_prechange();
+
 
 		_group->group_stretch_y();
 		_group->check_slider();
@@ -2131,7 +2132,7 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 
 
 		_group->reset_buttons_phantom_translate();
-		_group->reset_slider();
+		//_group->reset_slider();
 
 		_group->override_button_size();
 		_group->align_buttons_to_lines();
@@ -2145,7 +2146,7 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 
 		//if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 		//{
-			EButtonGroup::generate_vertex_buffer_for_group(_group, false);
+			EButtonGroup::generate_vertex_buffer_for_group(_group, NSW_ONLY_TARGET);
 		//}
 
 
@@ -2238,6 +2239,7 @@ void EButtonGroup::align_buttons_to_lines()
 
 			set_offset_x = border_left;
 			set_offset_y += max_y;
+			max_y = 0.0f;
 		}
 	}
 
@@ -2268,14 +2270,18 @@ void EButtonGroup::calculate_group_lines()
 void EButtonGroup::activate_slider_if_need()
 {
 	final_highest_point_y = max(highest_point_y_for_buttons, highest_point_y_for_groups);
+
 	if
 	(
 		(slider != nullptr)
 		&&
-		(final_highest_point_y > region_gabarite->size_y - border_up)
+		(highest_point_y_for_buttons > region_gabarite->size_y - border_up)
+		&&
+		(slider->entity_disabled)
 	)
 	{
 		slider->entity_disabled = false;
+		have_slider = true;
 		//slider->workspace_height = 250.0f;
 		//have_slider = true;
 
@@ -2286,38 +2292,41 @@ void EButtonGroup::activate_slider_if_need()
 		}
 
 
+		
+
+		align_buttons_to_lines();
+	}
+
+	if (slider != nullptr)
+	{
+		slider->offset_x
+			=
+			region_gabarite->size_x
+			-
+			slider->button_gabarite->size_x
+			-
+			border_right;
+
+
+
+		slider->world_position_x
+			=
+			slider->offset_x
+			+
+			region_gabarite->world_position_x;
+
+		slider->offset_y = border_bottom;
+		slider->world_position_y = region_gabarite->world_position_y + border_bottom;
+
 		if (slider != nullptr)
 		{
-			slider->offset_x
-				=
-				region_gabarite->size_x
-				-
-				slider->button_gabarite->size_x
-				-
-				border_right;
-
-
-
-			slider->world_position_x
-				=
-				slider->offset_x
-				+
-				region_gabarite->world_position_x;
-
-			slider->offset_y = border_bottom;
-			slider->world_position_y = region_gabarite->world_position_y + border_bottom;
-
-			if (slider != nullptr)
-			{
-				//slider->button_gabarite->size_y = region_gabarite->size;
-			}
-
-			slider->world_position_y = region_gabarite->world_position_y;
+			//slider->button_gabarite->size_y = region_gabarite->size;
 		}
 
-		//align_buttons_to_lines();
+		slider->world_position_y = region_gabarite->world_position_y;
 	}
 }
+
 
 void EButtonGroup::calculate_world_coordinates_for_button()
 {
@@ -2375,21 +2384,6 @@ void EButtonGroup::reset_slider()
 
 
 
-void EButtonGroup::refresh_buttons_in_group()
-{
-
-
-	//prevert empty space
-	//if (scroll_y < -(highest_point_y_for_buttons - region_gabarite->size_y))
-	//{
-	//	scroll_y = -(highest_point_y_for_buttons - region_gabarite->size_y);
-	//	realign_all_buttons();
-	//}
-
-
-
-	EButtonGroup::generate_vertex_buffer_for_group(this);
-}
 
 void EButtonGroup::add_button_to_working_group(EntityButton* _button)
 {
