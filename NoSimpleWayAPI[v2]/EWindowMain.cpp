@@ -509,11 +509,9 @@ void EDataActionCollection::action_add_new_filter_block(Entity* _entity, ECustom
 	EWindowMain::loot_filter_editor->need_refresh = true;
 
 	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-	{
-		EButtonGroup::add_content_to_filter_block_group->button_group_is_active = false;
-	}
+	{EButtonGroup::add_content_to_filter_block_group->button_group_is_active = false;}
 
-	EWindowMain::make_unsaved_loot_filter_changer();
+	//EWindowMain::make_unsaved_loot_filter_changer();
 
 	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
 }
@@ -723,7 +721,7 @@ void EDataActionCollection::action_open_new_lootfilter_group(Entity* _entity, EC
 
 void EDataActionCollection::action_clone_block(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	EWindowMain::make_unsaved_loot_filter_changer();
+	//EWindowMain::make_unsaved_loot_filter_changer();
 
 	EDataContainer* base_container = ((EntityButton*)_entity)->parent_button_group->root_group->data_container;
 	EDataContainer_Group_AddContentToFilterBlock* data_container = (EDataContainer_Group_AddContentToFilterBlock*)base_container;
@@ -765,7 +763,7 @@ void EDataActionCollection::action_clone_block(Entity* _entity, ECustomData* _cu
 
 void EDataActionCollection::action_add_separator_block(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	EWindowMain::make_unsaved_loot_filter_changer();
+	//EWindowMain::make_unsaved_loot_filter_changer();
 
 	int position = -1;
 
@@ -1286,7 +1284,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 			(but->button_gabarite->overlapped_by_mouse())
 			&&
 			(static_cast<EntityButton*>(_entity)->main_clickable_area->hover_time >= 0.25f)
-			)
+		)
 	{
 
 		if (but->attached_description == nullptr)
@@ -1517,7 +1515,7 @@ void EDataActionCollection::action_remove_wide_button(Entity* _entity, ECustomDa
 	EWindowMain::make_unsaved_loot_filter_changer();
 }
 
-void EDataActionCollection::action_set_unsave_changes_flag(Entity* _entity, ECustomData* _custom_data, float _d)
+void EDataActionCollection::action_make_unsave_filter_block_changes(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::make_unsaved_loot_filter_changer();
 }
@@ -2411,6 +2409,7 @@ EWindowMain::EWindowMain()
 		whole_style_group->root_group = whole_style_group;
 		whole_style_group->parent_window = this;
 		whole_style_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+		whole_style_group->button_group_is_active = false;
 
 		EButtonGroup*
 			style_workspace_part = whole_style_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);
@@ -2487,7 +2486,7 @@ EWindowMain::EWindowMain()
 				new ERegionGabarite(280.0f, 40.0f),
 				style_select_group,
 				&EDataActionCollection::action_select_this_style,
-				"Select style [" + gui_style->localisation_text.localisations[ELocalisationText::active_localisation]
+				"Select style [" + gui_style->localisation_text.localisations[ELocalisationText::active_localisation] + "]"
 			);
 
 			//&EDataActionCollection::action_select_this_style
@@ -3490,6 +3489,7 @@ EWindowMain::EWindowMain()
 			l_text.localisations[ELocalisationText::active_localisation]
 		);
 		jc_button->main_text_area->localisation_text = l_text;
+		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 
 		filter_block_operation_segment->add_button_to_working_group(jc_button);
 		/////////////////////	CLONE	///////////////////////////////////////////
@@ -3505,6 +3505,7 @@ EWindowMain::EWindowMain()
 			&EDataActionCollection::action_clone_block,
 			l_text.localisations[ELocalisationText::active_localisation]
 		);
+		clone_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 		clone_button->main_text_area->localisation_text = l_text;
 		//clone_button->parent_filter_block = 
 
@@ -3526,6 +3527,7 @@ EWindowMain::EWindowMain()
 			l_text.localisations[ELocalisationText::active_localisation]
 		);
 		separator_button->main_text_area->localisation_text = l_text;
+		separator_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 		//clone_button->parent_filter_block = 
 
 		filter_block_operation_segment->add_button_to_working_group(separator_button);
@@ -5511,7 +5513,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//game items
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 90.0f;
+	jc_filter_rule->min_y_size = 120.0f;
 	jc_filter_rule->focused_by_data_type = "Game item";
 	jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
@@ -5527,7 +5529,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//base class
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 90.0f;
+	jc_filter_rule->min_y_size = 120.0f;
 	jc_filter_rule->focused_by_data_type = "Base Class";
 	jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
@@ -5542,7 +5544,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//influence
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 90.0f;
+	jc_filter_rule->min_y_size = 120.0f;
 	jc_filter_rule->focused_by_data_type = "Influence";
 	jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
@@ -5572,7 +5574,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//explicit
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 110.0f;
+	jc_filter_rule->min_y_size = 150.0f;
 	jc_filter_rule->focused_by_data_type = "Explicit";
 	jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
@@ -5587,7 +5589,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//cluster passives
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 80.0f;
+	jc_filter_rule->min_y_size = 120.0f;
 	jc_filter_rule->focused_by_data_type = "Cluster passive";
 	jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
@@ -5602,7 +5604,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//enchantments from lab
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 100.0f;
+	jc_filter_rule->min_y_size = 120.0f;
 	jc_filter_rule->focused_by_data_type = "Enchantment";
 	jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
@@ -7025,7 +7027,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//whole filter block
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroupFilterBlock*
-		whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 250.0f));
+		whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 270.0f));
 	whole_filter_block_group->init_button_group(EGUIStyle::active_style, true, true, false);
 	whole_filter_block_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	whole_filter_block_group->debug_name = "Whole filter block";
@@ -7373,7 +7375,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			nullptr
 		);
 
-		button_variant_router->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+		button_variant_router->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 		button_variant_router->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_loot_simulator);
 
 		button_variant_router->height_division = 1;
@@ -7847,7 +7849,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	EButtonGroup*
 		listed_condition_segment = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(800.0f, 160.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-
+	listed_condition_segment->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
 	//listed_condition_segment->button_size_x_override = 200.0f;
 	//root group data ontaner
 	whole_filter_block_group->pointer_to_listed_segment = listed_condition_segment;
@@ -9026,7 +9028,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			HRA_color,
 			ColorButtonMode::CBM_OPEN_WINDOW
 		);
-		color_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+		color_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 
 		color_button->main_text_area->localisation_text = ltext[clr];
 		color_button->suppressor = &whole_filter_block_group->color_check[clr];
@@ -9054,7 +9056,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 			target_bool
 		);
-		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 		whole_filter_block_group->pointer_to_color_check_button[clr] = jc_button;
 
 		cosmetic_segment->add_button_to_working_group(jc_button);
@@ -9072,7 +9074,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		EGUIStyle::active_style,
 		"Размер"
 	);
-	jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+	jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 
 	jc_button->suppressor = &whole_filter_block_group->text_size_bool;
 
@@ -9109,7 +9111,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 		target_bool
 	);
-	button_text_size_suppressor->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+	button_text_size_suppressor->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 	whole_filter_block_group->text_size_switch_button = button_text_size_suppressor;
 
 	cosmetic_segment->add_button_to_working_group(button_text_size_suppressor);
@@ -9128,7 +9130,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		&EDataActionCollection::action_rotate_variant,
 		nullptr
 	);
-	button_variant_FB_router->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+	button_variant_FB_router->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 	button_variant_FB_router->parent_filter_block = whole_filter_block_group;
 
 
@@ -9356,7 +9358,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 		target_bool
 	);
-	ray_bool_suppressor->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+	ray_bool_suppressor->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 	whole_filter_block_group->text_size_switch_button = ray_bool_suppressor;
 
 	ray_cosmetic_segment->add_button_to_working_group(ray_bool_suppressor);
@@ -9376,7 +9378,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		&EDataActionCollection::action_rotate_variant,
 		nullptr
 	);
-	button_variant_FB_router->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+	button_variant_FB_router->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 	button_variant_FB_router->parent_filter_block = whole_filter_block_group;
 
 
@@ -9750,7 +9752,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										(jc_filter_block != nullptr)
 										)
 								{
-									add_filter_block_content_to_filter_block(jc_filter_block, matched_filter_block_attribute);
+									add_game_item_attribute_to_filter_block(jc_filter_block, matched_filter_block_attribute);
 								}
 
 								if (jc_filter_block != nullptr)
@@ -14370,8 +14372,8 @@ void EDataActionCollection::action_open_add_content_window(Entity* _entity, ECus
 	EButtonGroup::add_content_to_filter_block_group->activate_move_to_foreground_and_center();
 
 	//_custom_data
-	EDataContainer_Button_OpenButtonGroup* button_plus_data = static_cast<EDataContainer_Button_OpenButtonGroup*>			(_custom_data->data_container);
-	EButtonGroupFilterBlock* whole_filter_block_data = static_cast<EButtonGroupFilterBlock*>			(button_plus_data->master_group);
+	EDataContainer_Button_OpenButtonGroup* button_plus_data = static_cast<EDataContainer_Button_OpenButtonGroup*>						(_custom_data->data_container);
+	EButtonGroupFilterBlock* whole_filter_block_data = static_cast<EButtonGroupFilterBlock*>											(button_plus_data->master_group);
 	EDataContainer_Group_AddContentToFilterBlock* add_content_block_data = static_cast<EDataContainer_Group_AddContentToFilterBlock*>	(EButtonGroup::add_content_to_filter_block_group->data_container);
 	ETextArea* typing_text_area = add_content_block_data->typing_text_area;
 
@@ -14403,7 +14405,7 @@ void EDataActionCollection::action_add_selected_content_to_filter_block(Entity* 
 
 	EntityButton* jc_button = nullptr;
 
-	add_filter_block_content_to_filter_block(whole_button_group, add_content_button_data->target_attribute);
+	add_game_item_attribute_to_filter_block(whole_button_group, add_content_button_data->target_attribute);
 
 	//if (taget_group_for_content != nullptr)
 	//{ 
@@ -14453,7 +14455,7 @@ void EDataActionCollection::action_open_quality_selector(Entity* _entity, ECusto
 //2) comparison operator, if need ("<=", "=", ">=")
 //3) value
 //4) remove button
-void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_filter_block, GameItemAttribute* _game_item_attribute)
+void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_filter_block, GameItemAttribute* _game_item_attribute)
 {
 	float button_height = 22.0f;
 	//filter block have 4 sectors
@@ -14527,7 +14529,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 			NS_EGraphicCore::load_from_textures_folder("button_close")
 		);
 
-		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 
 		jc_button->parent_filter_block = _target_filter_block;
 		jc_button->used_filter_block_attribute = _game_item_attribute;
@@ -14583,7 +14585,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 				new ERegionGabarite(button_height * 2.0f, button_height)
 			);
 			condition_router_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
-			condition_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+			condition_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 			condition_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_loot_simulator);
 			condition_router_button->height_division = 1;
 			///		<=		///////////////////////////////////////////////////////////////////////////
@@ -14729,7 +14731,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 				non_listed_line,
 				&EDataActionCollection::action_rotate_variant
 			);
-			rarity_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+			rarity_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 
 			rarity_button->parent_filter_block = _target_filter_block;
 			rarity_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
@@ -14817,7 +14819,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 				&EDataActionCollection::action_open_quality_selector,
 				text
 			);
-			jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+			jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 			jc_button->main_text_area->set_color(EWindowMain::registered_alternate_gem_quality_router_variants[0]->color);
 			jc_button->main_text_area->change_text(text);
 			jc_button->main_text_area->localisation_text = *EWindowMain::registered_alternate_gem_quality_router_variants[0]->localisation;
@@ -14845,7 +14847,7 @@ void add_filter_block_content_to_filter_block(EButtonGroupFilterBlock* _target_f
 				NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 				nullptr
 			);
-			jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_set_unsave_changes_flag);
+			jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 
 			jc_button->parent_filter_block = _target_filter_block;
 			jc_button->used_filter_block_attribute = _game_item_attribute;
@@ -15708,7 +15710,8 @@ void EButtonGroupTopControlSection::draw_button_group()
 
 	if (true)
 	{
-		EButtonGroupFilterBlock* d_con = pointer_to_filter_block_group;
+		EButtonGroupFilterBlock*
+		d_con = pointer_to_filter_block_group;
 
 		float font_size_rescale = 0.4f + d_con->text_size * 0.6f;
 

@@ -309,6 +309,7 @@ public:
 	bool need_remove = false;
 	bool need_refresh = false;
 	bool need_change = false;
+	bool need_recalculate_culling_lines = false;
 
 	float scroll_x = (0.0f);
 	float scroll_y = (0.0f);
@@ -317,8 +318,11 @@ public:
 	float highest_point_y_for_buttons = (0.0f);
 	float highest_point_y_for_groups = (0.0f);
 
-	float higher_culling_line = 0.0f;
-	float lower_culling_line = 0.0f;
+	float higher_culling_line				= 0.0f;
+	float lower_culling_line				= 0.0f;
+
+	float higher_culling_line_for_element	= 0.0f;
+	float lower_culling_line_for_element	= 0.0f;
 
 	//float higher_culling_line_for_bg = 0.0f;
 	//float lower_culling_line_for_bg = 0.0f;
@@ -358,6 +362,9 @@ public:
 	virtual void button_group_prechange();
 	static void refresh_button_group(EButtonGroup* _group);
 	void realign_groups();
+
+	void recalculate_culling_lines();
+	void recursive_recalculate_culling_lines();
 
 
 
@@ -480,8 +487,8 @@ public:
 
 	static EButtonGroupSoundList* sound_list_group;
 
-	void translate(float _x, float _y, float _z, bool _affect_child);
-	void translate_content(float _x, float _y, float _z, bool _move_slider);
+	void translate_group(float _x, float _y, float _z, bool _affect_child);
+	void translate_group_content(float _x, float _y, float _z, bool _move_slider);
 	bool can_see_this_group();
 	void phantom_translate_if_need();
 	void recursive_phantom_translate_if_need();

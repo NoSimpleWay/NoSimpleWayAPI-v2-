@@ -354,12 +354,16 @@ void EWindow::GUI_update_default(float _d)
 				(b_group != nullptr)
 				&&
 				(b_group->button_group_is_visible())
+				&&
+				(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y >= 0.0f)
+				&&
+				(b_group->region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT)
 				//&&
-				//(b_group->can_see_this_group())
+				//(b_group->can_see_this_group())	
 		)
 		{
-			b_group->lower_culling_line = b_group->region_gabarite->world_position_y;
-			b_group->higher_culling_line = b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y;
+			//b_group->lower_culling_line = b_group->region_gabarite->world_position_y;
+			//b_group->higher_culling_line = b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y;
 
 			b_group->button_group_update(_d);
 
@@ -420,6 +424,73 @@ void EWindow::GUI_draw_default(float _d)
 		{
 			b_group->draw_button_group();
 		}
+
+	if (EButtonGroup::focused_button_group != nullptr)
+	{
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 1.0f);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_rama
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			EButtonGroup::focused_button_group->region_gabarite->world_position_x + EButtonGroup::focused_button_group->region_gabarite->phantom_translate_x,
+			EButtonGroup::focused_button_group->region_gabarite->world_position_y + EButtonGroup::focused_button_group->region_gabarite->phantom_translate_y,
+
+			EButtonGroup::focused_button_group->region_gabarite->size_x,
+			EButtonGroup::focused_button_group->region_gabarite->size_y,
+
+			2.0f,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+	}
+
+
+	if (EButtonGroup::focused_button_group_mouse_unpressed != nullptr)
+	{
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_YELLOW, 1.0f);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_rama
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->world_position_x + 1.0f + EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->phantom_translate_x,
+			EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->world_position_y + 1.0f + EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->phantom_translate_y,
+
+			EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->size_x - 2.0f,
+			EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->size_y - 2.0f,
+
+			2.0f,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+	}
+
+	if (EButtonGroup::focused_button_group_with_slider != nullptr)
+	{
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_PINK, 1.0f);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+
+		NS_ERenderCollection::add_data_to_vertex_buffer_rama
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			EButtonGroup::focused_button_group_with_slider->region_gabarite->world_position_x + 2.0f + EButtonGroup::focused_button_group_with_slider->region_gabarite->phantom_translate_x,
+			EButtonGroup::focused_button_group_with_slider->region_gabarite->world_position_y + 2.0f + EButtonGroup::focused_button_group_with_slider->region_gabarite->phantom_translate_y,
+
+			EButtonGroup::focused_button_group_with_slider->region_gabarite->size_x - 4.0f,
+			EButtonGroup::focused_button_group_with_slider->region_gabarite->size_y - 4.0f,
+
+			2.0f,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+	}
 }
 
 void EWindow::GUI_draw_additional(float _d)
@@ -664,6 +735,13 @@ void EButtonGroup::button_group_update(float _d)
 		EButtonGroup::change_group(this);
 	}
 
+	//if (need_recalculate_culling_lines)
+	{
+		recalculate_culling_lines();
+
+		//need_recalculate_culling_lines = false;
+	}
+
 	//if (need_recalcualte_culling_lines)
 	//{
 	//	//phantom_translate_if_need();
@@ -682,11 +760,11 @@ void EButtonGroup::button_group_update(float _d)
 		//
 		phantom_translate_if_need();
 
-		if (parent_group != nullptr)
-		{
-			lower_culling_line = max(region_gabarite->world_position_y, parent_group->lower_culling_line);
-			higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->size_y, parent_group->higher_culling_line);
-		}
+		//if (parent_group != nullptr)
+		//{
+		//	lower_culling_line = max(region_gabarite->world_position_y, parent_group->lower_culling_line);
+		//	higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->size_y, parent_group->higher_culling_line);
+		//}
 
 		for (EntityButton* but : all_button_list)
 		{
@@ -767,7 +845,9 @@ void EButtonGroup::button_group_update(float _d)
 			}
 
 
-			root_group->translate(EInputCore::MOUSE_SPEED_X / NS_EGraphicCore::current_zoom, EInputCore::MOUSE_SPEED_Y / NS_EGraphicCore::current_zoom, 0.0f, true);
+			root_group->translate_group(EInputCore::MOUSE_SPEED_X / NS_EGraphicCore::current_zoom, EInputCore::MOUSE_SPEED_Y / NS_EGraphicCore::current_zoom, 0.0f, true);
+			//root_group->recursive_recalculate_culling_lines();
+			//root_group->need_recalculate_culling_lines = true;
 		}
 		else
 		{
@@ -830,6 +910,7 @@ void EButtonGroup::draw_button_group()
 				//EButtonGroup::change_group(this);
 
 				EButtonGroup::generate_vertex_buffer_for_group(this, NSW_RECURSIVE);
+				//highlight_this_group();
 				group_phantom_redraw = false;
 				//highlight_time = 0.5f;
 				//EInputCore::logger_simple_info("Phantom redraw!");
@@ -991,11 +1072,11 @@ void EButtonGroup::draw_button_group()
 			{
 				for (EntityButton* but : all_button_list)
 					if
-						(
+					(
 							(but->be_visible_last_time)
 							&&
 							(but->entity_is_active())
-							)
+					)
 					{
 						//PHANTOM REDRAW
 						if
@@ -1011,6 +1092,8 @@ void EButtonGroup::draw_button_group()
 
 							but->set_world_positions(but->world_position_x, but->world_position_y, but->world_position_z);
 							but->generate_vertex_buffer_for_all_sprite_layers();
+
+							//but->highlight_time = but->max_highlight_time;
 						}
 
 						but->draw();
@@ -1415,13 +1498,13 @@ void EButtonGroup::align_groups()
 		region_gabarite->world_position_x = round(region_gabarite->offset_x);
 		region_gabarite->world_position_y = round(region_gabarite->offset_y);
 
-		lower_culling_line	= max(region_gabarite->world_position_y,							0.0f);
-		higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->size_y,	NS_EGraphicCore::SCREEN_HEIGHT);
+		//lower_culling_line	= max(region_gabarite->world_position_y,							0.0f);
+		//higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->size_y,	NS_EGraphicCore::SCREEN_HEIGHT);
 	}
 	else
 	{
-		lower_culling_line	= max(region_gabarite->world_position_y,							parent_group->lower_culling_line);
-		higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->size_y,	parent_group->higher_culling_line);
+		//lower_culling_line	= max(region_gabarite->world_position_y,							parent_group->lower_culling_line);
+		//higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->size_y,	parent_group->higher_culling_line);
 	}
 
 
@@ -1541,7 +1624,10 @@ void EButtonGroup::align_groups()
 	}
 
 
-
+	if (slider != nullptr)
+	{
+		slider->button_gabarite->size_y = region_gabarite->size_y;
+	}
 
 	for (EButtonGroup* group : group_list) { group->align_groups(); }
 
@@ -1656,31 +1742,16 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 			(_group->button_group_is_visible())
 			&&
 			(_group->can_see_this_group())
-
-			)
+			//&&
+			//(_group->region_gabarite->world_position_y  <= NS_EGraphicCore::SCREEN_HEIGHT)
+			//&&
+			//(_group->region_gabarite->world_position_y + _group->region_gabarite->size_y >= 0.0f)
+		)
 	{
 		_group->group_phantom_redraw = false;
 
 		//	
-		EButtonGroup* parent_group = _group->parent_group;
-		if (parent_group != nullptr)
-		{
-			_group->region_gabarite->world_position_x = round(parent_group->region_gabarite->world_position_x + _group->region_gabarite->offset_x);
-
-			if (parent_group->child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
-			{
-				_group->region_gabarite->world_position_y = round(parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y);
-			}
-			else
-				if (parent_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
-				{
-					_group->region_gabarite->world_position_y = round(parent_group->region_gabarite->world_position_y + _group->region_gabarite->offset_y + parent_group->scroll_y);
-				}
-
-			_group->region_gabarite->world_position_z = parent_group->region_gabarite->world_position_z + _group->region_gabarite->offset_z;
-		}
-
-		_group->phantom_translate_if_need();
+		
 
 
 		EButtonGroup::generate_brick_textured_bg(_group);
@@ -1715,11 +1786,11 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 		//button visible, go generate vertex!
 		for (EntityButton* but : _group->all_button_list)
 			if
-				(
+			(
 					(but->be_visible_last_time)
 					&&
 					(but->entity_is_active())
-					)
+			)
 			{
 				for (change_style_action csa : but->action_on_generate_vertex_buffer)
 				{
@@ -2097,11 +2168,13 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 
 
 		_group->align_groups();
+		_group->recursive_recalculate_culling_lines();
 		//_group->need_recalcualte_culling_lines = true;
 		//_group->recursive_set_recalculate_culling_lines();
 		//EButtonGroup::calculate_culling_lines(_group, true);
 
 		_group->realign_all_buttons();
+		//calculate_culling_lines();
 
 
 
@@ -2132,6 +2205,30 @@ void EButtonGroup::realign_groups()
 	//EButtonGroup::calculate_culling_lines(this, true);
 }
 
+void EButtonGroup::recalculate_culling_lines()
+{
+	if (parent_group == nullptr)
+	{
+		lower_culling_line = region_gabarite->world_position_y + region_gabarite->phantom_translate_y;
+		higher_culling_line = region_gabarite->world_position_y + region_gabarite->size_y + region_gabarite->phantom_translate_y;
+	}
+	else
+	{
+		lower_culling_line = max(region_gabarite->world_position_y + region_gabarite->phantom_translate_y, parent_group->lower_culling_line);
+		higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->phantom_translate_y + region_gabarite->size_y, parent_group->higher_culling_line);
+	}
+}
+
+void EButtonGroup::recursive_recalculate_culling_lines()
+{
+	recalculate_culling_lines();
+
+	for (EButtonGroup* child : group_list)
+	{
+		child->recursive_recalculate_culling_lines();
+	}
+}
+
 
 
 void EButtonGroup::change_group(EButtonGroup* _group)
@@ -2154,6 +2251,7 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 
 
 		_group->align_groups();
+		_group->recursive_recalculate_culling_lines();
 		//_group->need_recalcualte_culling_lines = true;
 		//_group->recursive_set_recalculate_culling_lines();
 		//EButtonGroup::calculate_culling_lines(_group, true);
@@ -2588,6 +2686,10 @@ void EButtonGroup::align_button_in_gabarite(std::vector<EntityButton*>& button_v
 			but_temp->world_position_x = round(but_temp->parent_button_group->region_gabarite->world_position_x + but_temp->offset_x + but_temp->parent_button_group->scroll_x + free_space);
 			but_temp->world_position_y = round(but_temp->parent_button_group->region_gabarite->world_position_y + but_temp->offset_y + but_temp->parent_button_group->scroll_y);
 		}
+
+		but_temp->button_gabarite->world_position_x = but_temp->world_position_x + but_temp->button_gabarite->offset_x;
+		but_temp->button_gabarite->world_position_y = but_temp->world_position_y + but_temp->button_gabarite->offset_y;
+		but_temp->button_gabarite->world_position_z = but_temp->world_position_z + but_temp->button_gabarite->offset_z;
 	}
 
 	button_vector.clear();
@@ -2598,7 +2700,7 @@ void EButtonGroup::add_vertical_scroll_bar(EButtonGroup* _button_group)
 	if (true)
 	{
 		EntityButtonVerticalSlider*
-			but = new EntityButtonVerticalSlider();
+		but = new EntityButtonVerticalSlider();
 		but->cannot_be_auto_deleted = true;
 		but->make_as_default_clickable_button
 		(
@@ -2626,6 +2728,7 @@ void EButtonGroup::add_vertical_scroll_bar(EButtonGroup* _button_group)
 
 
 		but->pointer_to_target_value = &_button_group->scroll_y;
+		//_button_group->scroll_y = 99999.9f;
 		but->current_value_percent = 1.0f;
 
 		if (_button_group->selected_style != nullptr)
@@ -2830,13 +2933,13 @@ bool EButtonGroup::catched_by_mouse(EButtonGroup* _group)
 				//&&
 			(_group->button_group_is_visible())
 			&&
-			(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= _group->region_gabarite->world_position_x)
+			(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= _group->region_gabarite->world_position_x + _group->region_gabarite->phantom_translate_x)
 			&&
-			(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= _group->region_gabarite->world_position_x + _group->region_gabarite->size_x)
+			(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= _group->region_gabarite->world_position_x + _group->region_gabarite->size_x + _group->region_gabarite->phantom_translate_x)
 			&&
-			(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= _group->region_gabarite->world_position_y)
+			(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom >= _group->region_gabarite->world_position_y + _group->region_gabarite->phantom_translate_y)
 			&&
-			(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= _group->region_gabarite->world_position_y + _group->region_gabarite->size_y)
+			(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom <= _group->region_gabarite->world_position_y + _group->region_gabarite->size_y + _group->region_gabarite->phantom_translate_y)
 			)
 	{
 		return true;
@@ -2909,7 +3012,7 @@ EButtonGroup* EButtonGroup::add_group_scecific_position(EButtonGroup* _new_group
 	return _new_group;
 }
 
-void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
+void EButtonGroup::translate_group(float _x, float _y, float _z, bool _move_positions)
 {
 	//need_recalcualte_culling_lines = true;
 
@@ -2935,16 +3038,18 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 
 	if
 	(
-			(button_group_is_visible())
-			&&
-			(can_see_this_group())
+			(
+				(button_group_is_visible())
+				&&
+				(can_see_this_group())
+			)
 	)
 	{
-		translate_content(round(_x), round(_y), round(_z), true);
+		translate_group_content(round(_x), round(_y), round(_z), true);
 	}
 	else
 	{
-		if ((_move_positions) || (region_gabarite->pointers_to_this_object <= 1))
+		//if (region_gabarite->pointers_to_this_object <= 1))
 		{
 			region_gabarite->have_phantom_translation = true;
 
@@ -2956,17 +3061,22 @@ void EButtonGroup::translate(float _x, float _y, float _z, bool _move_positions)
 
 	//if (_move_positions) { EButtonGroup::calculate_culling_lines(this, true); }
 
-	higher_culling_line += round(_y);
-	//higher_culling_line_for_bg += _y;
-
-	lower_culling_line += round(_y);
-	//lower_culling_line_for_bg += _y;
+	//if (parent_group == nullptr)
+	//{
+	//	higher_culling_line	+= round(_y);
+	//	lower_culling_line	+= round(_y);
+	//}
+	//else
+	//{
+	//	lower_culling_line	= max(region_gabarite->world_position_y,							parent_group->lower_culling_line);
+	//	higher_culling_line	= min(region_gabarite->world_position_y + region_gabarite->size_y,	parent_group->higher_culling_line);
+	//}
 
 
 
 }
 
-void EButtonGroup::translate_content(float _x, float _y, float _z, bool _move_slider)
+void EButtonGroup::translate_group_content(float _x, float _y, float _z, bool _move_slider)
 {
 	//need_recalcualte_culling_lines = true;
 	//if (abs(_y) > 10000.0f)
@@ -2985,38 +3095,39 @@ void EButtonGroup::translate_content(float _x, float _y, float _z, bool _move_sl
 	}
 
 	for (EntityButton* button : all_button_list)
-		if ((_move_slider) || (button != slider))
-		{
-			if
+	if ((_move_slider) || (button != slider))
+	{
+		if
+		(
+			(button_group_is_visible())
+			&&
 			(
-				(button_group_is_visible())
-				&&
 				(
-					(
-						(button->entity_is_active())
-						&&
-						(button->be_visible_last_time)
-					)
-					||
-					(button == slider)
+					(button->entity_is_active())
+					&&
+					(button->be_visible_last_time)
 				)
-			)
-			{
-				button->translate_entity(_x, _y, _z, true);
-			}
-			else
-			{
-				button->button_gabarite->have_phantom_translation = true;
+				||
+				(button == slider)
 
-				button->button_gabarite->phantom_translate_x += _x;
-				button->button_gabarite->phantom_translate_y += _y;
-				button->button_gabarite->phantom_translate_z += _z;
-			}
+			)
+		)
+		{
+			button->translate_entity(_x, _y, _z, true);
 		}
+		else
+		{
+			button->button_gabarite->have_phantom_translation = true;
+
+			button->button_gabarite->phantom_translate_x += _x;
+			button->button_gabarite->phantom_translate_y += _y;
+			button->button_gabarite->phantom_translate_z += _z;
+		}
+	}
 
 	for (EButtonGroup* group : group_list)
 	{
-		group->translate(_x, _y, _z, false);
+		group->translate_group(_x, _y, _z, false);
 	}
 }
 
@@ -3031,8 +3142,6 @@ bool EButtonGroup::can_see_this_group()
 		(
 			//(is_active)
 			//&&
-			(root_group == this)
-			&&
 			(region_gabarite->world_position_x + region_gabarite->phantom_translate_x <= NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom)
 			&&
 			(region_gabarite->world_position_x + region_gabarite->phantom_translate_x + region_gabarite->size_x > 0.0f)
@@ -3040,7 +3149,7 @@ bool EButtonGroup::can_see_this_group()
 			(region_gabarite->world_position_y + region_gabarite->phantom_translate_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
 			&&
 			(region_gabarite->world_position_y + region_gabarite->phantom_translate_y + region_gabarite->size_y > 0.0f)
-			)
+		)
 	{
 		return true;
 	}
@@ -3053,9 +3162,9 @@ bool EButtonGroup::can_see_this_group()
 		&&
 		(parent_group != nullptr)
 		&&
-		(region_gabarite->world_position_y <= parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y)
+		(region_gabarite->world_position_y + region_gabarite->phantom_translate_x <= parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y)
 		&&
-		(region_gabarite->world_position_y + region_gabarite->size_y >= parent_group->region_gabarite->world_position_y)
+		(region_gabarite->world_position_y + region_gabarite->size_y + region_gabarite->phantom_translate_x >= parent_group->region_gabarite->world_position_y)
 	)
 	{
 		return true;
@@ -3072,7 +3181,7 @@ void EButtonGroup::phantom_translate_if_need()
 {
 	if (region_gabarite->have_phantom_translation)
 	{
-		translate_content
+		translate_group_content
 		(
 			region_gabarite->phantom_translate_x,
 			region_gabarite->phantom_translate_y,
@@ -3085,6 +3194,8 @@ void EButtonGroup::phantom_translate_if_need()
 		region_gabarite->phantom_translate_x = 0.0f;
 		region_gabarite->phantom_translate_y = 0.0f;
 		region_gabarite->phantom_translate_z = 0.0f;
+
+		recalculate_culling_lines();
 
 
 	}
@@ -3177,7 +3288,9 @@ void EButtonGroup::move_to_foreground_and_center()
 	float new_postition_x = round(NS_EGraphicCore::SCREEN_WIDTH		/ 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_x / 2.0f);
 	float new_postition_y = round(NS_EGraphicCore::SCREEN_HEIGHT	/ 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_y / 2.0f);
 
-	translate(new_postition_x - region_gabarite->offset_x, new_postition_y - region_gabarite->offset_y, 0.0f, true);
+	translate_group(new_postition_x - region_gabarite->offset_x, new_postition_y - region_gabarite->offset_y, 0.0f, true);
+	recursive_recalculate_culling_lines();
+	//need_recalculate_culling_lines = true;
 
 	move_to_foreground();
 }
@@ -3350,55 +3463,51 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 
 void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 {
+	//only active and visible groups can be focused
 	if
+	(
+		(_group->button_group_is_visible())
+		&&
+		(_group->can_see_this_group())
+	)
+	{
+		if
 		(
-			(_group->button_group_is_visible())
+			EButtonGroup::catched_by_mouse(_group)
 			&&
 			(_group->can_be_focused)
-			&&
-			(EButtonGroup::catched_by_mouse(_group))
-			//&&
-
-			//&&
-			//(!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-			)
-	{
-
-		//std::cout << "Focus:" << _group << std::endl;
-		focused_button_group = _group;
-
-		if (!EInputCore::MOUSE_BUTTON_LEFT)
+		)
 		{
-			focused_button_group_mouse_unpressed = _group;
-		}
+			//default focus
+			focused_button_group = _group;
 
-		if (_group->focusable_for_select)
-		{
-			EButtonGroup::focused_button_group_for_select = _group;
-		}
+			//focus non[left mouse pressed]
+			if (!EInputCore::MOUSE_BUTTON_LEFT) {focused_button_group_mouse_unpressed = _group;}
 
-		if
+			//focus for group what can be selected
+			if (_group->focusable_for_select)
+			{EButtonGroup::focused_button_group_for_select = _group;}
+
+			//focus last group with slider
+			if
 			(
 				(_group->slider != nullptr)
 				&&
 				(_group->slider->entity_is_active())
 				&&
 				(EInputCore::MOUSE_SPEED_X * EInputCore::MOUSE_SPEED_X + EInputCore::MOUSE_SPEED_Y * EInputCore::MOUSE_SPEED_Y > 0)
-				)
-		{
-			focused_button_group_with_slider = _group;
+			)
+			{focused_button_group_with_slider = _group;}
+
+			//repeat for each parent
+			for (EButtonGroup* group : _group->group_list)
+			{get_last_focused_group(group);}
 		}
 	}
 
 
-	if
-		(
-			(_group->button_group_is_visible())
-			)
-		for (EButtonGroup* group : _group->group_list)
-		{
-			get_last_focused_group(group);
-		}
+
+
 
 
 	//return nullptr;

@@ -189,6 +189,9 @@ public:
 	float force_field_bottom		= 0.0f;
 	float force_field_up			= 2.0f;
 
+	float highlight_time		= 0.0f;
+	float max_highlight_time	= 1.0f;
+
 	ERegionGabarite* button_gabarite;
 
 	//std::string* autoalign_id = new std::string("");
@@ -360,7 +363,7 @@ public:
 	void draw() override;
 	void draw_second_pass() override;
 
-	void update(float _d);
+	void update(float _d) override;
 	bool* suppressor = nullptr;
 	EntityButton* button_suppressor;
 

@@ -1,3 +1,427 @@
+
+	
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Amulets"
+	[tag]"name RU"		[value]"Амулеты"
+
+	[tag]"icon path"	[value]"class_amulets"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Rings"
+	[tag]"name RU"		[value]"Кольца"
+
+	[tag]"icon path"	[value]"class_rings"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Belts"
+	[tag]"name RU"		[value]"Пояса"
+
+	[tag]"icon path"	[value]"class_belts"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Jewel"
+	[tag]"name RU"		[value]"Самоцветы"
+
+	[tag]"icon path"	[value]"class_jewels"
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Abyss Jewel"
+	[tag]"name RU"		[value]"Самоцвет Бездны"
+
+	[tag]"icon path"	[value]"AbyssJewel"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Claws"
+	[tag]"name RU"		[value]"Когти"
+
+	[tag]"icon path"	[value]"class_claws"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Daggers"
+	[tag]"name RU"		[value]"Кинжалы"
+
+	[tag]"icon path"	[value]"class_daggers"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Wands"
+	[tag]"name RU"		[value]"Жезлы"
+
+	[tag]"icon path"	[value]"class_wands"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Sceptres"
+	[tag]"name RU"		[value]"Скипетры"
+
+	[tag]"icon path"	[value]"class_sceptres"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Rune Dagger"
+	[tag]"name RU"		[value]"Рунический кинжал"
+
+	[tag]"icon path"	[value]"class_rune_dagger"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"One Hand Swords"
+	[tag]"name RU"		[value]"Одноручные мечи"
+
+	[tag]"icon path"	[value]"class_one_hand_swords"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Thrusting One Hand Swords"
+	[tag]"name RU"		[value]"Шпаги"
+
+	[tag]"icon path"	[value]"class_thrusting_one_hand_swords"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Two Hand Swords"
+	[tag]"name RU"		[value]"Двуручные мечи"
+
+	[tag]"icon path"	[value]"class_two_hand_sword"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"One Hand Axes"
+	[tag]"name RU"		[value]"Одноручные топоры"
+
+	[tag]"icon path"	[value]"class_one_hand_axes"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Two Hand Axes"
+	[tag]"name RU"		[value]"Двуручные топоры"
+
+	[tag]"icon path"	[value]"class_two_hand_axes"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"One Hand Maces"
+	[tag]"name RU"		[value]"Одноручные булавы"
+
+	[tag]"icon path"	[value]"class_one_hand_maces"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Two Hand Maces"
+	[tag]"name RU"		[value]"Двуручные булавы"
+
+	[tag]"icon path"	[value]"class_tho_hand_maces"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Bows"
+	[tag]"name RU"		[value]"Луки"
+
+	[tag]"icon path"	[value]"class_bows"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Quivers"
+	[tag]"name RU"		[value]"Колчаны"
+
+	[tag]"icon path"	[value]"class_quivers"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Staves"
+	[tag]"name RU"		[value]"Посохи"
+
+	[tag]"icon path"	[value]"class_staves"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Warstaves"
+	[tag]"name RU"		[value]"Воинский посох"
+
+	[tag]"icon path"	[value]"class_warstaves"
+	
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Unarmed"
+	[tag]"name RU"		[value]"Без оружия"
+
+	[tag]"icon path"	[value]"Unarmed"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Fishing Rods"
+	[tag]"name RU"		[value]"Удочки"
+
+	[tag]"icon path"	[value]"FishingRod"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Gloves"
+	[tag]"name RU"		[value]"Перчатки"
+
+	[tag]"icon path"	[value]"class_gloves"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Helmets"
+	[tag]"name RU"		[value]"Шлемы"
+
+	[tag]"icon path"	[value]"class_helmets"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Boots"
+	[tag]"name RU"		[value]"Обувь"
+
+	[tag]"icon path"	[value]"class_boots"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Body Armours"
+	[tag]"name RU"		[value]"Нательные доспехи"
+
+	[tag]"icon path"	[value]"class_body_armours"
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Shields"
+	[tag]"name RU"		[value]"Щиты"
+
+	[tag]"icon path"	[value]"class_shields"
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Active Skill Gems"
+	[tag]"name RU"		[value]"Камни умений"
+
+	[tag]"icon path"	[value]"PortalGem"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Support Skill Gems"
+	[tag]"name RU"		[value]"Камень поддержки"
+
+	[tag]"icon path"	[value]"SupportGems"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Stackable Currency"
+	[tag]"name RU"		[value]"Складываемая валюта"
+
+	[tag]"icon path"	[value]"class_stackable_currency"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Incubator"
+	[tag]"name RU"		[value]"Инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Delve Stackable Socketable Currency"
+	[tag]"name RU"		[value]"Складываемая валюта спуска"
+
+	[tag]"icon path"	[value]"class_delve_socketable_currency"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Harvest Seed"
+	[tag]"name RU"		[value]"Семя жатвы"
+
+	[tag]"icon path"	[value]"PinkSphere"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Quest Items"
+	[tag]"name RU"		[value]"Вещи для заданий"
+
+	[tag]"icon path"	[value]"BookOfKnowledge"
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
@@ -22,216 +446,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Hybrid_flask"
 	
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Amulets"
-	[tag]"name RU"		[value]"Амулеты"
-
-	[tag]"icon path"	[value]"SuperAmulet"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Rings"
-	[tag]"name RU"		[value]"Кольца"
-
-	[tag]"icon path"	[value]"SuperRing"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Claws"
-	[tag]"name RU"		[value]"Когти"
-
-	[tag]"icon path"	[value]"SuperFangs"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Daggers"
-	[tag]"name RU"		[value]"Кинжалы"
-
-	[tag]"icon path"	[value]"SuperDagger"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Wands"
-	[tag]"name RU"		[value]"Жезлы"
-
-	[tag]"icon path"	[value]"SuperWand"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"One Hand Swords"
-	[tag]"name RU"		[value]"Одноручные мечи"
-
-	[tag]"icon path"	[value]"SuperBlade"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Thrusting One Hand Swords"
-	[tag]"name RU"		[value]"Шпаги"
-
-	[tag]"icon path"	[value]"SuperFoil"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"One Hand Axes"
-	[tag]"name RU"		[value]"Одноручные топоры"
-
-	[tag]"icon path"	[value]"SuperAxe"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"One Hand Maces"
-	[tag]"name RU"		[value]"Одноручные булавы"
-
-	[tag]"icon path"	[value]"SuperHammer"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Bows"
-	[tag]"name RU"		[value]"Луки"
-
-	[tag]"icon path"	[value]"SuperBow"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Staves"
-	[tag]"name RU"		[value]"Посохи"
-
-	[tag]"icon path"	[value]"SuperStaff"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Two Hand Swords"
-	[tag]"name RU"		[value]"Двуручные мечи"
-
-	[tag]"icon path"	[value]"SuperTwoHandSword"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Two Hand Axes"
-	[tag]"name RU"		[value]"Двуручные топоры"
-
-	[tag]"icon path"	[value]"SuperTwoHandAxe"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Two Hand Maces"
-	[tag]"name RU"		[value]"Двуручные булавы"
-
-	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Active Skill Gems"
-	[tag]"name RU"		[value]"Камни умений"
-
-	[tag]"icon path"	[value]"PortalGem"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Support Skill Gems"
-	[tag]"name RU"		[value]"Камень поддержки"
-
-	[tag]"icon path"	[value]"SupportGems"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Quivers"
-	[tag]"name RU"		[value]"Колчаны"
-
-	[tag]"icon path"	[value]"SuperQuiver"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Belts"
-	[tag]"name RU"		[value]"Пояса"
-
-	[tag]"icon path"	[value]"SuperBelt"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Gloves"
-	[tag]"name RU"		[value]"Перчатки"
-
-	[tag]"icon path"	[value]"SuperGloves"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Boots"
-	[tag]"name RU"		[value]"Обувь"
-
-	[tag]"icon path"	[value]"SuperBoots"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Body Armours"
-	[tag]"name RU"		[value]"Нательные доспехи"
-
-	[tag]"icon path"	[value]"SuperChest"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Helmets"
-	[tag]"name RU"		[value]"Шлемы"
-
-	[tag]"icon path"	[value]"SuperHelmet"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Shields"
-	[tag]"name RU"		[value]"Щиты"
-
-	[tag]"icon path"	[value]"SuperShield"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Stackable Currency"
-	[tag]"name RU"		[value]"Складываемая валюта"
-
-	[tag]"icon path"	[value]"Chaos_Orb_inventory_icon"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Quest Items"
-	[tag]"name RU"		[value]"Вещи для заданий"
-
-	[tag]"icon path"	[value]"BookOfKnowledge"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Sceptres"
-	[tag]"name RU"		[value]"Скипетры"
-
-	[tag]"icon path"	[value]"SuperSceptre"
-	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
@@ -239,6 +453,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Особые флаконы"
 
 	[tag]"icon path"	[value]"Quicksilver_Flask_inventory_icon"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
@@ -251,26 +476,130 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Unarmed"
-	[tag]"name RU"		[value]"Без оружия"
-
-	[tag]"icon path"	[value]"Unarmed"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Fishing Rods"
-	[tag]"name RU"		[value]"Удочки"
-
-	[tag]"icon path"	[value]"FishingRod"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
 	[tag]"name EN"		[value]"Map Fragments"
 	[tag]"name RU"		[value]"Обрывки карт"
 
-	[tag]"icon path"	[value]"Fragment_of_the_Phoenix_inventory_icon"
+	[tag]"icon path"	[value]"class_map_fragments"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Misc Map Item"
+	[tag]"name RU"		[value]"Прочий предмет карты"
+
+	[tag]"icon path"	[value]"Inscribed_Ultimatum"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Memory"
+	[tag]"name RU"		[value]"Воспоминание"
+
+	[tag]"icon path"	[value]"ClassMemory"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Expedition Logbook"
+	[tag]"name RU"		[value]"Журнал экспедиции"
+
+	[tag]"icon path"	[value]"ExpeditionLogbook"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Atlas Region Upgrade Item"
+	[tag]"name RU"		[value]"Предмет улучшения области Атласа"
+
+	[tag]"icon path"	[value]"titanium_watchstone"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Atlas Upgrade Item"
+	[tag]"name RU"		[value]"Предметы улучшения Атласа"
+
+	[tag]"icon path"	[value]"titanium_watchstone"
+	
+	
+	
+	
+	
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Divination Cards"
+	[tag]"name RU"		[value]"Гадальные карты"
+
+	[tag]"icon path"	[value]"class_divinations"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Incursion Item"
+	[tag]"name RU"		[value]"Предмет Вмешательства"
+
+	[tag]"icon path"	[value]"Stone_of_Passage_inventory_icon"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Metamorph Sample"
+	[tag]"name RU"		[value]"Образец Метаморфа"
+
+	[tag]"icon path"	[value]"eye"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Leaguestones"
+	[tag]"name RU"		[value]"Камни лиги"
+
+	[tag]"icon path"	[value]"Leaguestone"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Archnemesis Mod"
+	[tag]"name RU"		[value]"Свойства Возмездия"
+
+	[tag]"icon path"	[value]"ArchnemesisItem"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
@@ -287,22 +616,16 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Микротранзакции"
 
 	[tag]"icon path"	[value]"CommonOrderArtifact"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Jewel"
-	[tag]"name RU"		[value]"Самоцветы"
 
-	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Divination Cards"
-	[tag]"name RU"		[value]"Гадальные карты"
 
-	[tag]"icon path"	[value]"Card"
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
@@ -328,13 +651,20 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Offering_to_the_Goddess_inventory_icon"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
+	
+	
+	
+	
+	
+	
+	
 
-	[tag]"name EN"		[value]"Leaguestones"
-	[tag]"name RU"		[value]"Камни лиги"
-
-	[tag]"icon path"	[value]"Leaguestone"
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
@@ -351,94 +681,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Часть"
 
 	[tag]"icon path"	[value]"Piece"
+
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Abyss Jewel"
-	[tag]"name RU"		[value]"Самоцвет Бездны"
-
-	[tag]"icon path"	[value]"AbyssJewel"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Incursion Item"
-	[tag]"name RU"		[value]"Предмет Вмешательства"
-
-	[tag]"icon path"	[value]"Stone_of_Passage_inventory_icon"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Delve Socketable Currency"
-	[tag]"name RU"		[value]"Валюта Спуска"
-
-	[tag]"icon path"	[value]"Primitive_Chaotic_Resonator_inventory_icon"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Incubator"
-	[tag]"name RU"		[value]"Инкубатор"
-
-	[tag]"icon path"	[value]"Incubator"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Misc Map Item"
-	[tag]"name RU"		[value]"Прочий предмет карты"
-
-	[tag]"icon path"	[value]"Inscribed_Ultimatum"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Rune Dagger"
-	[tag]"name RU"		[value]"Рунический кинжал"
-
-	[tag]"icon path"	[value]"SuperRuneDagger"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Warstaves"
-	[tag]"name RU"		[value]"Воинский посох"
-
-	[tag]"icon path"	[value]"SuperStaff"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Delve Stackable Socketable Currency"
-	[tag]"name RU"		[value]"Складываемая валюта спуска"
-
-	[tag]"icon path"	[value]"Primitive_Chaotic_Resonator_inventory_icon"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Metamorph Sample"
-	[tag]"name RU"		[value]"Образец Метаморфа"
-
-	[tag]"icon path"	[value]"eye"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Atlas Upgrade Item"
-	[tag]"name RU"		[value]"Предметы улучшения Атласа"
-
-	[tag]"icon path"	[value]"titanium_watchstone"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Harvest Seed"
-	[tag]"name RU"		[value]"Семя жатвы"
-
-	[tag]"icon path"	[value]"PinkSphere"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
@@ -504,29 +751,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Arrow"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Atlas Region Upgrade Item"
-	[tag]"name RU"		[value]"Предмет улучшения области Атласа"
-
-	[tag]"icon path"	[value]"titanium_watchstone"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Expedition Logbook"
-	[tag]"name RU"		[value]"Журнал экспедиции"
 
-	[tag]"icon path"	[value]"ExpeditionLogbook"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Archnemesis Mod"
-	[tag]"name RU"		[value]"Свойства Возмездия"
-
-	[tag]"icon path"	[value]"ArchnemesisItem"
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
@@ -536,13 +770,20 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Ancient_Stalker_Sentinel_inventory_icon_png"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Memory"
-	[tag]"name RU"		[value]"Воспоминание"
-
-	[tag]"icon path"	[value]"ClassMemory"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
@@ -550,7 +791,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Relic"
 	[tag]"name RU"		[value]"Реликвии"
 
-	[tag]"icon path"	[value]"ClassRelic"
+	[tag]"icon path"	[value]"coffer_relic"
 	
 		
 ADD_NEW_DATA_ENTITY
@@ -559,4 +800,4 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Sanctified Relic"
 	[tag]"name RU"		[value]"Священные реликвии"
 
-	[tag]"icon path"	[value]"ClassSanctifiedRelic"
+	[tag]"icon path"	[value]"sanctified_relic"

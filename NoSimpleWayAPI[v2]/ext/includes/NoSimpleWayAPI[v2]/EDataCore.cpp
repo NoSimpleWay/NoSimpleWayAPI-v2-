@@ -297,7 +297,9 @@ void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _
 			float new_value = *data_bar->value_pointer;
 			float diff = new_value - old_value;
 
-			entity_button->parent_button_group->translate_content(0.0f, diff, 0.0f, false);
+			entity_button->parent_button_group->translate_group_content(0.0f, diff, 0.0f, false);
+			//entity_button->parent_button_group->recursive_recalculate_culling_lines();
+			//entity_button->parent_button_group->need_recalculate_culling_lines = true;
 
 			_entity->set_world_positions(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
 			entity_button->generate_vertex_buffer_for_all_sprite_layers();
@@ -370,15 +372,31 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 			(EClickableArea::active_clickable_region == slider->main_clickable_area)
 		)
 		||
+		(slider->scroll_speed != 0.0f)
+		||
 		(
-			slider->scroll_speed != 0.0f
+			(slider->min_value < slider->max_value)
+			&&
+			(
+				(slider->current_value <= slider->min_value)
+				||
+				(slider->current_value >= slider->max_value)
+			)
 		)
 		||
-		(slider->current_value <= slider->min_value)
-		||
-		(slider->current_value >= slider->max_value)
+		(
+			(slider->min_value >= slider->max_value)
+			&&
+			(
+				(slider->current_value >= slider->min_value)
+				||
+				(slider->current_value <= slider->max_value)
+			)
+		)
 	)
 	{
+		//EInputCore::logger_param("slider gabarite size y", slider->button_gabarite->size_y);
+
 		float multiplier = 1.0f;
 		
 
@@ -443,14 +461,18 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 		{
 			float translate_value = (*((float*)slider->pointer_to_target_value) - old_value);
 		
-			slider->parent_button_group->translate_content(0.0f, round(translate_value * multiplier) , 0.0f, false);
+			slider->parent_button_group->translate_group_content(0.0f, round(translate_value * multiplier) , 0.0f, false);
+			//slider->parent_button_group->recursive_recalculate_culling_lines();
 		}
+
 		
+		//slider->parent_button_group->need_recalculate_culling_lines = true;
+
 		//EButtonGroup::change_group(slider->parent_button_group);
 	}
 
 	slider->scroll_speed *= pow(0.01f, _d);
-	if ((slider->scroll_speed * slider->scroll_speed) < 0.0005f) { slider->scroll_speed = 0.0f; }
+	if ((slider->scroll_speed * slider->scroll_speed) < 0.05f) { slider->scroll_speed = 0.0f; }
 
 	
 	slider->current_value_percent = (slider->current_value - slider->min_value) / total_value;
@@ -550,7 +572,7 @@ void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomDat
 	{
 		EButtonGroup::refresh_button_group(group);
 
-		group->need_refresh = true;
+		//group->need_refresh = true;
 		//group->group_phantom_redraw = true;
 	}
 
@@ -1584,6 +1606,19 @@ void EDataActionCollection::action_force_resize_callback(Entity* _entity, ECusto
 		{
 			NS_EGraphicCore::refresh_autosize_groups(w);
 		}
+
+
+
+		for (EWindow* window : EWindow::window_list)
+			for (EButtonGroup* group : window->button_group_list)
+			{
+				EButtonGroup::refresh_button_group(group);
+
+				//group->need_refresh = true;
+				//group->group_phantom_redraw = true;
+			}
+
+
 	}
 }
 

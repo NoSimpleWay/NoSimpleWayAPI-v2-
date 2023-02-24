@@ -34334,7 +34334,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Urn Relic"
 	[tag]"name RU"		[value]"Урна"
 
-	[tag]"icon path"	[value]"RelicUrn"
+	[tag]"icon path"	[value]"urn_relic"
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -34350,7 +34350,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Tome Relic"
 	[tag]"name RU"		[value]"Фолиант"
 
-	[tag]"icon path"	[value]"RelicTome"
+	[tag]"icon path"	[value]"tome_relic"
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -34366,7 +34366,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Coffer Relic"
 	[tag]"name RU"		[value]"Ларец"
 
-	[tag]"icon path"	[value]"RelicTome"
+	[tag]"icon path"	[value]"coffer_relic"
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -34382,7 +34382,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Censer Relic"
 	[tag]"name RU"		[value]"Курительница"
 
-	[tag]"icon path"	[value]"RelicCenser"
+	[tag]"icon path"	[value]"cencer_relic"
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -34398,7 +34398,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Papyrus Relic"
 	[tag]"name RU"		[value]"Папирус"
 
-	[tag]"icon path"	[value]"RelicPapyrus"
+	[tag]"icon path"	[value]"papyrus_relic"
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -34414,7 +34414,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Candlestick Relic"
 	[tag]"name RU"		[value]"Подсвечник"
 
-	[tag]"icon path"	[value]"RelicCandlestick"
+	[tag]"icon path"	[value]"candlestick_relic"
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -34430,7 +34430,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Processional Relic"
 	[tag]"name RU"		[value]"Кадило"
 
-	[tag]"icon path"	[value]"RelicProcessional"
+	[tag]"icon path"	[value]"processional_relic"
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -34446,7 +34446,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Sanctified Relic"
 	[tag]"name RU"		[value]"Священная реликвия"
 
-	[tag]"icon path"	[value]"RelicSanctified"
+	[tag]"icon path"	[value]"sanctified_relic"
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"

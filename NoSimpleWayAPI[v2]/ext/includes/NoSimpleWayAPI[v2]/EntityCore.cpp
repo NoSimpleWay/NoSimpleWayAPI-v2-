@@ -1407,9 +1407,11 @@ bool EntityButton::button_in_culling_gabarites()
 	if (parent_button_group == nullptr) { return false; }
 	
 	return
-	world_position_y + button_gabarite->phantom_translate_y								<= parent_button_group->higher_culling_line
-	&&
-	world_position_y + button_gabarite->phantom_translate_y + button_gabarite->size_y	>= parent_button_group->lower_culling_line;
+	(
+		(world_position_y + button_gabarite->phantom_translate_y <= parent_button_group->higher_culling_line)
+		&&
+		(world_position_y + button_gabarite->phantom_translate_y + button_gabarite->size_y >= parent_button_group->lower_culling_line)
+	);
 }
 
 void EntityButton::add_description(std::string _text)
@@ -1506,6 +1508,30 @@ void EntityButton::draw()
 			NS_DefaultGabarites::texture_gabarite_white_pixel
 		);
 	}
+
+	if ((max_highlight_time > 0.0f) && (highlight_time > 0.0f))
+	{
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, highlight_time / max_highlight_time);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			//x pos
+			button_gabarite->world_position_x,
+
+			//y pos
+			button_gabarite->world_position_y,
+
+			button_gabarite->size_x,
+			button_gabarite->size_y,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+
+
+	}
 }
 
 void EntityButton::draw_second_pass()
@@ -1553,6 +1579,11 @@ void EntityButton::update(float _d)
 	//if ((suppressor == nullptr) || (*suppressor))
 	//{
 		Entity::update(_d);
+
+		if (highlight_time > 0.0f)
+		{
+			highlight_time -= _d;
+		}
 
 		if ((main_clickable_area->hover_time >= 0.25f) && (description_container != nullptr) && (attached_description == nullptr))
 		{description_container->create_description();}

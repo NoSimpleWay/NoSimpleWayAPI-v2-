@@ -4029,7 +4029,7 @@ void NS_EGraphicCore::refresh_autosize_groups(EWindow* _window)
 	{
 
 		//EButtonGroup::refresh_button_group(bg);
-		bg->need_refresh = true;
+		//bg->need_refresh = true;
 	}
 }
 
