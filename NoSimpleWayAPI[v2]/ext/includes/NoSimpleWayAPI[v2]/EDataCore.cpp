@@ -396,8 +396,12 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 	)
 	{
 		//EInputCore::logger_param("slider gabarite size y", slider->button_gabarite->size_y);
-		EInputCore::logger_param("highest point y for buttons", slider->parent_button_group->highest_point_y_for_buttons);
-		EInputCore::logger_param("region y", slider->parent_button_group->region_gabarite->size_y);
+		//EInputCore::logger_param("highest point y for buttons", slider->parent_button_group->highest_point_y_for_buttons);
+		//EInputCore::logger_param("region y", slider->parent_button_group->region_gabarite->size_y);
+		
+		//EInputCore::logger_param("min", slider->min_value);
+		//EInputCore::logger_param("max", slider->max_value);
+		//EInputCore::logger_param("highest_point", slider->parent_button_group->final_highest_point_y);
 
 		float multiplier = 1.0f;
 		
