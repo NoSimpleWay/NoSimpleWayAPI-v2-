@@ -4084,12 +4084,20 @@ void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, i
 
 			//group->region_gabarite->offset_y = (group->region_gabarite->offset_y / old_h) * height;
 
-			group->need_refresh = true;
+			//group->need_refresh = true;
 			//EButtonGroup::refresh_button_group(group);
 		}
 
 		
 		refresh_autosize_groups(w);
+
+		for (EWindow* w : EWindow::window_list)
+		{
+			for (EButtonGroup* group : w->button_group_list)
+			{
+				EButtonGroup::refresh_button_group(group);
+			}
+		}
 
 
 	}

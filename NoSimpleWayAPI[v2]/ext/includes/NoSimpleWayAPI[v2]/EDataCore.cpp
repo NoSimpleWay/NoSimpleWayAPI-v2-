@@ -378,9 +378,9 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 			(slider->min_value < slider->max_value)
 			&&
 			(
-				(slider->current_value <= slider->min_value)
+				(slider->current_value < slider->min_value)
 				||
-				(slider->current_value >= slider->max_value)
+				(slider->current_value > slider->max_value)
 			)
 		)
 		||
@@ -388,14 +388,16 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 			(slider->min_value >= slider->max_value)
 			&&
 			(
-				(slider->current_value >= slider->min_value)
+				(slider->current_value > slider->min_value)
 				||
-				(slider->current_value <= slider->max_value)
+				(slider->current_value < slider->max_value)
 			)
 		)
 	)
 	{
 		//EInputCore::logger_param("slider gabarite size y", slider->button_gabarite->size_y);
+		EInputCore::logger_param("highest point y for buttons", slider->parent_button_group->highest_point_y_for_buttons);
+		EInputCore::logger_param("region y", slider->parent_button_group->region_gabarite->size_y);
 
 		float multiplier = 1.0f;
 		
@@ -1308,7 +1310,7 @@ void EDataActionCollection::action_resize_to_full_window_only_x(EButtonGroup* _g
 	_group->region_gabarite->size_x = ((NS_EGraphicCore::SCREEN_WIDTH) / NS_EGraphicCore::current_zoom);
 	_group->base_width = _group->region_gabarite->size_x;
 
-	_group->expand_to_workspace_size();
+	_group->recursive_expand_to_workspace_size();
 
 
 	_group->region_gabarite->offset_y = NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom - _group->region_gabarite->size_y;

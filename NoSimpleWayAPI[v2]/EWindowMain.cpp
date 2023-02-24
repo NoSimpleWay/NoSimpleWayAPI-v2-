@@ -5513,7 +5513,7 @@ void EWindowMain::register_filter_rules()
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//game items
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->min_y_size = 120.0f;
+	jc_filter_rule->min_y_size = 180.0f;
 	jc_filter_rule->focused_by_data_type = "Game item";
 	jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
@@ -7832,7 +7832,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 				new ERegionGabarite(420.0f, 160.0f),
 				EGUIStyle::active_style
 			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
-
+		non_list_condition_group->have_rama = true;
 
 		whole_filter_block_group->pointer_to_non_listed_segment = non_list_condition_group;
 
@@ -15441,8 +15441,9 @@ std::string generate_filter_block_separator_text(EButtonGroupFilterBlockSeparato
 EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameItemAttribute* _attribute, std::string _attribute_name, EButtonGroup* _parent)
 {
 	EButtonGroup*
-		main_listed_group = new EButtonGroup(new ERegionGabarite(800.0f, _filter_rule->min_y_size));
+	main_listed_group = new EButtonGroup(new ERegionGabarite(800.0f, _filter_rule->min_y_size));
 	main_listed_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+	main_listed_group->resize_to_highest_point = true;
 
 	main_listed_group->
 		set_parameters
@@ -15482,7 +15483,8 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 
 
 	//side group for buttons
-	EButtonGroup* listed_group_left_side = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(134.0f, 80.0f), EGUIStyle::active_style)
+	EButtonGroup*
+	listed_group_left_side = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(134.0f, 80.0f), EGUIStyle::active_style)
 		->
 		set_parameters
 		(
@@ -15491,6 +15493,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 			NSW_dynamic_autosize
 		);
 	main_listed_group->add_group(listed_group_left_side);
+	listed_group_left_side->have_rama = true;
 
 	float vertical_borders = listed_group_left_side->border_left + listed_group_left_side->border_right;
 
@@ -15664,6 +15667,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 			NSW_dynamic_autosize,
 			NSW_dynamic_autosize
 		);
+	listed_group_main_section->have_rama = true;
 
 	if (_attribute != nullptr)
 	{

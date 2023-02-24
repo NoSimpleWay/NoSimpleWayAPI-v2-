@@ -425,72 +425,74 @@ void EWindow::GUI_draw_default(float _d)
 			b_group->draw_button_group();
 		}
 
-	if (EButtonGroup::focused_button_group != nullptr)
-	{
-		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 1.0f);
-		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+		if (false)
+		{
+			if (EButtonGroup::focused_button_group != nullptr)
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 1.0f);
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
 
-		NS_ERenderCollection::add_data_to_vertex_buffer_rama
-		(
-			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+				NS_ERenderCollection::add_data_to_vertex_buffer_rama
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-			EButtonGroup::focused_button_group->region_gabarite->world_position_x + EButtonGroup::focused_button_group->region_gabarite->phantom_translate_x,
-			EButtonGroup::focused_button_group->region_gabarite->world_position_y + EButtonGroup::focused_button_group->region_gabarite->phantom_translate_y,
+					EButtonGroup::focused_button_group->region_gabarite->world_position_x + EButtonGroup::focused_button_group->region_gabarite->phantom_translate_x,
+					EButtonGroup::focused_button_group->region_gabarite->world_position_y + EButtonGroup::focused_button_group->region_gabarite->phantom_translate_y,
 
-			EButtonGroup::focused_button_group->region_gabarite->size_x,
-			EButtonGroup::focused_button_group->region_gabarite->size_y,
+					EButtonGroup::focused_button_group->region_gabarite->size_x,
+					EButtonGroup::focused_button_group->region_gabarite->size_y,
 
-			2.0f,
+					2.0f,
 
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-		);
-	}
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+			}
 
+			if (EButtonGroup::focused_button_group_mouse_unpressed != nullptr)
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_YELLOW, 1.0f);
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
 
-	if (EButtonGroup::focused_button_group_mouse_unpressed != nullptr)
-	{
-		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_YELLOW, 1.0f);
-		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+				NS_ERenderCollection::add_data_to_vertex_buffer_rama
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-		NS_ERenderCollection::add_data_to_vertex_buffer_rama
-		(
-			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+					EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->world_position_x + 1.0f + EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->phantom_translate_x,
+					EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->world_position_y + 1.0f + EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->phantom_translate_y,
 
-			EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->world_position_x + 1.0f + EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->phantom_translate_x,
-			EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->world_position_y + 1.0f + EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->phantom_translate_y,
+					EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->size_x - 2.0f,
+					EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->size_y - 2.0f,
 
-			EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->size_x - 2.0f,
-			EButtonGroup::focused_button_group_mouse_unpressed->region_gabarite->size_y - 2.0f,
+					2.0f,
 
-			2.0f,
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+			}
 
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-		);
-	}
+			if (EButtonGroup::focused_button_group_with_slider != nullptr)
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_PINK, 1.0f);
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
 
-	if (EButtonGroup::focused_button_group_with_slider != nullptr)
-	{
-		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_PINK, 1.0f);
-		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+				NS_ERenderCollection::add_data_to_vertex_buffer_rama
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-		NS_ERenderCollection::add_data_to_vertex_buffer_rama
-		(
-			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+					EButtonGroup::focused_button_group_with_slider->region_gabarite->world_position_x + 2.0f + EButtonGroup::focused_button_group_with_slider->region_gabarite->phantom_translate_x,
+					EButtonGroup::focused_button_group_with_slider->region_gabarite->world_position_y + 2.0f + EButtonGroup::focused_button_group_with_slider->region_gabarite->phantom_translate_y,
 
-			EButtonGroup::focused_button_group_with_slider->region_gabarite->world_position_x + 2.0f + EButtonGroup::focused_button_group_with_slider->region_gabarite->phantom_translate_x,
-			EButtonGroup::focused_button_group_with_slider->region_gabarite->world_position_y + 2.0f + EButtonGroup::focused_button_group_with_slider->region_gabarite->phantom_translate_y,
+					EButtonGroup::focused_button_group_with_slider->region_gabarite->size_x - 4.0f,
+					EButtonGroup::focused_button_group_with_slider->region_gabarite->size_y - 4.0f,
 
-			EButtonGroup::focused_button_group_with_slider->region_gabarite->size_x - 4.0f,
-			EButtonGroup::focused_button_group_with_slider->region_gabarite->size_y - 4.0f,
+					2.0f,
 
-			2.0f,
-
-			NS_DefaultGabarites::texture_gabarite_white_pixel
-		);
-	}
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+			}
+		}
 }
 
 void EWindow::GUI_draw_additional(float _d)
@@ -737,7 +739,7 @@ void EButtonGroup::button_group_update(float _d)
 
 	//if (need_recalculate_culling_lines)
 	{
-		recalculate_culling_lines();
+		//recalculate_culling_lines();
 
 		//need_recalculate_culling_lines = false;
 	}
@@ -980,6 +982,29 @@ void EButtonGroup::draw_button_group()
 			if ((background_sprite_layer != nullptr) && (have_bg))
 			{
 				background_sprite_layer->transfer_vertex_buffer_to_batcher();
+			}
+
+			if (have_rama)
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GRAY, 1.0f);
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+
+				NS_ERenderCollection::add_data_to_vertex_buffer_rama
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+					region_gabarite->world_position_x,
+					region_gabarite->world_position_y,
+
+					region_gabarite->size_x,
+					region_gabarite->size_y,
+
+					1.0f,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+
+				);
 			}
 
 			//DEBUG HIGHLIGHT - FOCUSED BUTTON GROUP
@@ -1629,7 +1654,7 @@ void EButtonGroup::align_groups()
 		slider->button_gabarite->size_y = region_gabarite->size_y;
 	}
 
-	for (EButtonGroup* group : group_list) { group->align_groups(); }
+	//for (EButtonGroup* group : group_list) { group->align_groups(); }
 
 
 
@@ -1945,7 +1970,9 @@ void EButtonGroup::group_stretch_x()
 			//group->region_gabarite->size_y = 0.0f;
 		}
 
-	for (EButtonGroup* group : group_list) { group->group_stretch_x(); }
+	//for (EButtonGroup* group : group_list) { group->group_stretch_x(); }
+
+
 }
 
 void EButtonGroup::group_stretch_y()
@@ -2010,7 +2037,7 @@ void EButtonGroup::group_stretch_y()
 			group->need_redraw = true;
 		}
 
-	for (EButtonGroup* group : group_list) { group->group_stretch_y(); }
+	//for (EButtonGroup* group : group_list) { group->group_stretch_y(); }
 }
 
 void EButtonGroup::check_slider()
@@ -2104,7 +2131,7 @@ void EButtonGroup::check_slider()
 	for (EButtonGroup* group : group_list) { group->check_slider(); }
 }
 
-void EButtonGroup::expand_to_workspace_size()
+void EButtonGroup::recursive_expand_to_workspace_size()
 {
 	if (can_resize_to_workspace_size_x)
 	{
@@ -2119,7 +2146,7 @@ void EButtonGroup::expand_to_workspace_size()
 
 	for (EButtonGroup* group : group_list)
 	{
-		group->expand_to_workspace_size();
+		group->recursive_expand_to_workspace_size();
 	}
 }
 
@@ -2136,61 +2163,25 @@ void EButtonGroup::recursive_set_recalculate_culling_lines()
 void EButtonGroup::button_group_prechange()
 {
 
-	for (EButtonGroup* group : group_list)
-	{
-		group->button_group_prechange();
-	}
+	//for (EButtonGroup* group : group_list)
+	//{
+	//	group->button_group_prechange();
+	//}
 }
 
 void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 {
-
-	//if (!_group->disable_gabarite)
-	{
-		float saved_scroll = 0.0f;
-
-
-
-
-		//_group->recursive_phantom_translate_if_need();
-
-		_group->button_group_prechange();
-
-		_group->expand_to_workspace_size();
-
-
-		_group->substretch_groups_y();
-		//_group->check_slider();
-
-		_group->group_stretch_y();
-		_group->check_slider();
-		_group->group_stretch_x();
-
-
-		_group->align_groups();
-		_group->recursive_recalculate_culling_lines();
-		//_group->need_recalcualte_culling_lines = true;
-		//_group->recursive_set_recalculate_culling_lines();
-		//EButtonGroup::calculate_culling_lines(_group, true);
-
-		_group->realign_all_buttons();
-		//calculate_culling_lines();
-
-
-
-
-	}
-
-	EButtonGroup::generate_vertex_buffer_for_group(_group);
+	_group->recursive_expand_to_workspace_size();
+	change_group(_group);
 }
 
 void EButtonGroup::realign_groups()
 {
-	recursive_phantom_translate_if_need();
+	//recursive_phantom_translate_if_need();
 
 	//button_group_prechange();
 
-	expand_to_workspace_size();
+	recursive_expand_to_workspace_size();
 
 
 	substretch_groups_y();
@@ -2229,6 +2220,152 @@ void EButtonGroup::recursive_recalculate_culling_lines()
 	}
 }
 
+void EButtonGroup::align_buttons_to_lines()
+{
+	highest_point_y_for_buttons = 0.0f;
+
+
+	button_line_list.clear();
+
+	float set_offset_x	= border_left;
+	float set_offset_y	= border_bottom;
+	float next_x		= 0.0f;
+	float slider_effect = 0.0f;
+	float max_y			= 0.0f;
+
+	if ((slider != nullptr) && (!slider->entity_disabled))
+	{ slider_effect = slider->button_gabarite->size_x; }
+	
+	EButtonGroupLine
+	jc_button_line;
+
+	for (EntityButton* but : workspace_button_list)
+	if
+	(
+		(!but->fixed_position)
+		&&
+		(but->entity_is_active())
+	)
+	{
+		max_y = max(max_y, but->button_gabarite->size_y);
+		but->offset_x = set_offset_x + ((!but->disable_force_field)	? (but->force_field_left)	: (0.0f));
+		but->offset_y = set_offset_y + ((!but->disable_force_field)	? (but->force_field_bottom)	: (0.0f));
+		
+		next_x = but->offset_x + but->button_gabarite->size_x + ((!but->disable_force_field) ? (but->force_field_right) : (0.0f));
+		
+		highest_point_y_for_buttons = max(highest_point_y_for_buttons, but->offset_y + but->button_gabarite->size_y);
+
+		//not new lined
+		if ((next_x + but->button_gabarite->size_x <= region_gabarite->size_x - border_right - slider_effect) || (false))
+		{
+			set_offset_x = next_x;
+			jc_button_line.button_list.push_back(but);
+		}
+		else
+		{
+			button_line_list.push_back(jc_button_line);
+
+			jc_button_line.button_list.clear();
+
+			set_offset_x = border_left;
+			set_offset_y += max_y;
+		}
+	}
+
+}
+
+void EButtonGroup::calculate_group_lines()
+{
+	float	max_y = 0.0f;
+	float	offset_y = border_bottom;
+
+	for (int i = 0; i < button_line_list.size(); i++)
+	{
+		max_y = 0.0f;
+
+		for (EntityButton* but: button_line_list[i].button_list)
+		{
+			max_y = max(max_y, but->button_gabarite->size_y + ((!but->disable_force_field) ? (but->force_field_bottom + but->force_field_up) : (0.0f)));
+		}
+
+		button_line_list[i].max_size_y = max_y;
+		button_line_list[i].offset_y = offset_y;
+
+		offset_y += max_y;
+	}
+
+}
+
+void EButtonGroup::activate_slider_if_need()
+{
+	calculate_group_lines();
+
+	if
+	(
+		(slider != nullptr)
+		&&
+		(highest_point_y_for_buttons > region_gabarite->size_y - border_up)
+	)
+	{
+		slider->entity_disabled = false;
+		
+		//set "parent have slider" for every child
+		for (EButtonGroup* group : group_list)
+		{
+			group->parent_have_slider = true;
+		}
+
+		//align_buttons_to_lines();
+	}
+}
+
+void EButtonGroup::calculate_world_coordinates_for_button()
+{
+	for (EntityButton* but : all_button_list)
+	{
+		but->set_world_positions
+		(
+			region_gabarite->world_position_x + but->offset_x,
+			region_gabarite->world_position_y + but->offset_y,
+			region_gabarite->world_position_z + but->offset_z
+		);
+	}
+}
+
+void EButtonGroup::override_button_size()
+{
+	if (button_size_x_override > 0)
+	for (EntityButton* but : workspace_button_list)
+	{
+		but->button_gabarite->size_x = button_size_x_override;
+	}
+}
+
+void EButtonGroup::reset_buttons_phantom_translate()
+{
+	for (EntityButton* but : all_button_list)
+	{
+		but->button_gabarite->have_phantom_translation = false;
+
+		but->button_gabarite->phantom_translate_x = 0.0f;
+		but->button_gabarite->phantom_translate_y = 0.0f;
+		but->button_gabarite->phantom_translate_z = 0.0f;
+	}
+}
+
+void EButtonGroup::reset_slider()
+{
+	if (slider != nullptr)
+	{
+		slider->entity_disabled = true;
+
+		for (EButtonGroup* group : group_list)
+		{
+			group->parent_have_slider = false;
+		}
+	}
+}
+
 
 
 void EButtonGroup::change_group(EButtonGroup* _group)
@@ -2242,7 +2379,7 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 
 		_group->button_group_prechange();
 
-		_group->substretch_groups_y();
+		//_group->substretch_groups_y();
 		//_group->check_slider();
 
 		_group->group_stretch_y();
@@ -2255,13 +2392,16 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 		//_group->need_recalcualte_culling_lines = true;
 		//_group->recursive_set_recalculate_culling_lines();
 		//EButtonGroup::calculate_culling_lines(_group, true);
-		_group->realign_all_buttons();
-
-
-
-	}
-	//prevert empty space
-	//if (_group->scroll_y < -(_group->highest_point_y_for_buttons - _group->region_gabarite->size_y))
+		_group->reset_buttons_phantom_translate();
+		_group->reset_slider();
+		_group->override_button_size();
+		_group->align_buttons_to_lines();
+		_group->calculate_group_lines();
+		_group->activate_slider_if_need();
+		_group->calculate_world_coordinates_for_button();
+	}	
+	//practivate_slider_if_need();evert empty space
+	//ifcalculate_world_coordinates_for_button(); (_group->scroll_y < -(_group->highest_point_y_for_buttons - _group->region_gabarite->size_y))
 	//{
 	//	_group->scroll_y = 0.0f;
 	//	//_group->realign_all_buttons();
@@ -2269,6 +2409,11 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 
 
 	EButtonGroup::generate_vertex_buffer_for_group(_group);
+
+	for (EButtonGroup* child : _group->group_list)
+	{
+		change_group(child);
+	}
 }
 
 void EButtonGroup::refresh_buttons_in_group()
@@ -2650,7 +2795,10 @@ void EButtonGroup::realign_all_buttons()
 	}
 
 	final_highest_point_y = max(highest_point_y_for_groups, highest_point_y_for_buttons);
-	for (EButtonGroup* group : group_list) { group->realign_all_buttons(); }
+	
+
+
+	//for (EButtonGroup* group : group_list) { group->realign_all_buttons(); }
 }
 
 void EButtonGroup::align_button_in_gabarite(std::vector<EntityButton*>& button_vector, float slider_additional)
@@ -3026,7 +3174,9 @@ void EButtonGroup::translate_group(float _x, float _y, float _z, bool _move_posi
 		region_gabarite->world_position_y += (round(_y));
 		region_gabarite->world_position_z += (round(_z));
 
-
+		//higher_culling_line += round(_y);
+		//lower_culling_line += round(_y);
+		recalculate_culling_lines();
 
 		if (_move_positions)
 		{
@@ -3035,6 +3185,8 @@ void EButtonGroup::translate_group(float _x, float _y, float _z, bool _move_posi
 			region_gabarite->offset_z += (round(_z));
 		}
 	}
+
+
 
 	if
 	(
@@ -3060,17 +3212,11 @@ void EButtonGroup::translate_group(float _x, float _y, float _z, bool _move_posi
 	}
 
 	//if (_move_positions) { EButtonGroup::calculate_culling_lines(this, true); }
+	
 
-	//if (parent_group == nullptr)
-	//{
-	//	higher_culling_line	+= round(_y);
-	//	lower_culling_line	+= round(_y);
-	//}
-	//else
-	//{
-	//	lower_culling_line	= max(region_gabarite->world_position_y,							parent_group->lower_culling_line);
-	//	higher_culling_line	= min(region_gabarite->world_position_y + region_gabarite->size_y,	parent_group->higher_culling_line);
-	//}
+
+
+
 
 
 
@@ -3945,6 +4091,8 @@ void EButtonGroup::init_button_group(EGUIStyle* _style, bool _have_bg, bool _hav
 		background_sprite_layer->make_as_PBR();
 
 		EButtonGroup::apply_style_to_button_group(this, _style);
+
+		//have_rama = false;
 	}
 	else
 	{
@@ -3954,7 +4102,10 @@ void EButtonGroup::init_button_group(EGUIStyle* _style, bool _have_bg, bool _hav
 		border_left = 0.0f;
 		border_right = 0.0f;
 		border_up = 0.0f;
+
+		//have_rama = true;
 	}
+
 
 	if (_have_slider)
 	{

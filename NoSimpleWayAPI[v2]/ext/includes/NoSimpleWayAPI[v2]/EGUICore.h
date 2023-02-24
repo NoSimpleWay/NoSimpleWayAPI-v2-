@@ -229,6 +229,16 @@ enum class GroupSearchStatus
 	SEARCH_STATUS_REJECTED
 };
 
+struct EButtonGroupLine
+{
+public:
+	float max_size_y = 0.0f;
+
+	float offset_y = 0.0f;
+
+	std::vector<EntityButton*> button_list;
+};
+
 class EButtonGroupFastMessage;	
 class EButtonGroup
 {
@@ -243,6 +253,8 @@ public:
 
 	ButtonAlignType button_align_type = ButtonAlignType::BUTTON_ALIGN_LEFT;
 
+	std::vector<EButtonGroupLine> button_line_list;
+
 	void recursive_set_suppressed();
 	bool suppressed = false;
 
@@ -251,6 +263,9 @@ public:
 	bool have_shadow = true;
 	bool is_selected = false;
 	bool focusable_for_select = false;
+	bool have_rama = false;
+	bool resize_to_highest_point = false;
+	float min_size_for_resize = 120.0f;
 	//bool need_recalcualte_culling_lines = false;
 	//bool hidden_by_search = false;
 	GroupSearchStatus group_search_status = GroupSearchStatus::SEARCH_STATUS_IGNORE;
@@ -339,6 +354,7 @@ public:
 	void draw_second_pass();
 
 	float min_size_y = 10.0f;
+	float max_size_y = 350.0f;
 
 
 	void substretch_groups_y();
@@ -355,20 +371,34 @@ public:
 	void align_button_in_gabarite(std::vector<EntityButton*>& button_vector, float slider_additional);
 	static void generate_vertex_buffer_for_group(EButtonGroup* _group, bool _recursive = NSW_RECURSIVE);
 
-	void expand_to_workspace_size();
+	void recursive_expand_to_workspace_size();
 
 	void recursive_set_recalculate_culling_lines();
 
 	virtual void button_group_prechange();
+
+	/*-----------------------------------*/
 	static void refresh_button_group(EButtonGroup* _group);
+	static void change_group(EButtonGroup* _group);
+	/*-----------------------------------*/
+
+
 	void realign_groups();
 
 	void recalculate_culling_lines();
 	void recursive_recalculate_culling_lines();
 
+	void reset_buttons_phantom_translate();
+	void reset_slider();
+	void override_button_size();
+	void align_buttons_to_lines();
+	void calculate_group_lines();
+	void activate_slider_if_need();
+	void calculate_world_coordinates_for_button();
+	
+	
 
-
-	static void change_group(EButtonGroup* _group);
+	
 	void refresh_buttons_in_group();
 
 	void add_button_to_working_group(EntityButton* _button);
