@@ -326,7 +326,7 @@ class EButtonGroupFilterBlockEditor : public EButtonGroup
 {
 public:
 	EButtonGroupFilterBlockEditor(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
-	void button_group_prechange();
+	void button_group_prechange() override;
 };
 
 class EButtonGroupNewLootFilter : public EButtonGroup

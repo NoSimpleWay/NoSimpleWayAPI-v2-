@@ -357,7 +357,6 @@ public:
 	float max_size_y = 350.0f;
 
 
-	void substretch_groups_y();
 	void check_slider();
 
 	void group_stretch_x();
@@ -369,7 +368,7 @@ public:
 	void realign_all_buttons();
 
 	void align_button_in_gabarite(std::vector<EntityButton*>& button_vector, float slider_additional);
-	static void generate_vertex_buffer_for_group(EButtonGroup* _group, bool _recursive = NSW_RECURSIVE);
+	static void generate_vertex_buffer_for_group(EButtonGroup* _group, bool _recursive = NSW_ONLY_TARGET);
 
 	void recursive_expand_to_workspace_size();
 
@@ -383,7 +382,7 @@ public:
 	/*-----------------------------------*/
 
 
-	void realign_groups();
+
 
 	void recalculate_culling_lines();
 	void recursive_recalculate_culling_lines();
@@ -400,7 +399,7 @@ public:
 	
 
 	
-	void refresh_buttons_in_group();
+
 
 	void add_button_to_working_group(EntityButton* _button);
 	void add_button_to_additional_group(EntityButton* _button);
@@ -472,8 +471,6 @@ public:
 	static void get_last_focused_group(EButtonGroup* _group);
 
 	static bool catched_by_mouse(EButtonGroup* _group);
-
-	static void stretch_parent_group(EButtonGroup* _group, float _new_y_size);
 
 	bool have_bg = (true);
 	bool can_be_focused = (true);
