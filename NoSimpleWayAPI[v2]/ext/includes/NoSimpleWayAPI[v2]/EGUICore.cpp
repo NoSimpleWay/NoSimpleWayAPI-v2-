@@ -2119,30 +2119,26 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 	{
 		_group->button_group_prechange();
 
-
+		//stretch to parent sizes
 		_group->group_stretch_y();
 		_group->check_slider();
 		_group->group_stretch_x();
 
-
-
+		//align group in parent gabarite
 		_group->align_groups();
-
 		_group->recalculate_culling_lines();
 
-
+		//buttons process
 		_group->reset_buttons_phantom_translate();
-		//_group->reset_slider();
-
 		_group->override_button_size();
-		_group->align_buttons_to_lines();
-		_group->calculate_group_lines();
+		_group->put_buttons_to_lines();
 
 		_group->activate_slider_if_need();
 
+		_group->stretch_all_buttons();
+		_group->set_buttons_offset();
 
-
-		_group->calculate_world_coordinates_for_button();
+		_group->calculate_world_coordinates_for_buttons();
 
 		//if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 		//{
@@ -2259,7 +2255,7 @@ void EButtonGroup::calculate_group_lines()
 			max_y = max(max_y, but->button_gabarite->size_y + ((!but->disable_force_field) ? (but->force_field_bottom + but->force_field_up) : (0.0f)));
 		}
 
-		button_line_list[i].max_size_y = max_y;
+		button_line_list[i].line_size_y = max_y;
 		button_line_list[i].offset_y = offset_y;
 
 		offset_y += max_y;
@@ -2294,7 +2290,7 @@ void EButtonGroup::activate_slider_if_need()
 
 		
 
-		align_buttons_to_lines();
+		put_buttons_to_lines();
 	}
 
 	if (slider != nullptr)
@@ -2336,29 +2332,34 @@ void EButtonGroup::stretch_all_buttons()
 
 	free_space = region_gabarite->size_x - border_left - border_right;
 
-	for (EntityButton* but : workspace_button_list)
+	for (int i = 0; i < button_line_list.size(); i++)
 	{
-		if (but->can_be_stretched)
+		free_space					= region_gabarite->size_x - border_left - border_right;
+		total_button_size			= 0.0f;
+		stretchable_elements_count	= 0;
+
+
+		for (EntityButton* but : button_line_list[i].button_list)
 		{
-			stretchable_elements_count++;
+			if (but->can_be_stretched) {stretchable_elements_count++;}
+
+			total_button_size += but->button_gabarite->size_x + ((!but->disable_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f)) + 2.0f;
 		}
 
-		total_button_size += but->button_gabarite->size_x + ((but->disable_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f));
-	}
-
-	free_space = free_space - total_button_size;
-	additional_space_for_each_button = (int)(free_space / stretchable_elements_count);
-
-	for (EntityButton* but : workspace_button_list)
-	{
-		if (but->can_be_stretched)
+		if (stretchable_elements_count > 0)
 		{
-			but->button_gabarite->size_x += additional_space_for_each_button;
+			free_space = free_space - total_button_size;
+			additional_space_for_each_button = (round)(free_space / stretchable_elements_count);
+
+			for (EntityButton* but : button_line_list[i].button_list)
+			{
+				if (but->can_be_stretched) {but->button_gabarite->size_x += max(additional_space_for_each_button, -100.0f);}
+			}
 		}
 	}
 }
 
-void EButtonGroup::calculate_world_coordinates_for_button()
+void EButtonGroup::calculate_world_coordinates_for_buttons()
 {
 	for (EntityButton* but_temp : all_button_list)
 	{
@@ -2381,6 +2382,100 @@ void EButtonGroup::override_button_size()
 	for (EntityButton* but : workspace_button_list)
 	{
 		but->button_gabarite->size_x = button_size_x_override;
+	}
+}
+
+void EButtonGroup::put_buttons_to_lines()
+{
+	highest_point_y_for_buttons = 0.0f;
+
+	button_line_list.clear();
+
+	float slider_effect	= 0.0f;
+	float total_size	= 0.0f;
+	float button_max_y	= 0.0f;
+	int lines_count		= 0;
+	if ((slider != nullptr) && (slider->entity_is_active()))
+	{
+		slider_effect = slider->button_gabarite->size_x;
+	}
+
+	EButtonGroupLine
+	jc_line;
+
+	
+
+
+
+	for (EntityButton* but : workspace_button_list)
+	{
+
+		//size all buttons on line
+		total_size += but->button_gabarite->size_x + ((!but->disable_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f));
+
+		//new line
+		if (total_size > region_gabarite->size_x - border_left - border_right - slider_effect)
+		{
+			//current line
+			jc_line.line_size_y = button_max_y;
+			highest_point_y_for_buttons += button_max_y;
+
+
+
+			//new line
+			lines_count++;
+			jc_line.button_list.clear();
+			button_line_list.push_back(jc_line);
+			jc_line.button_list.push_back(but);
+
+			total_size		= 0.0f;
+		}
+		else
+		{
+			jc_line.button_list.push_back(but);
+		}
+
+		button_max_y
+		=
+		max
+		(
+			button_max_y,
+			but->button_gabarite->size_y + ((!but->disable_force_field) ? (but->force_field_bottom + but->force_field_up) : (0.0f))
+		);
+
+		
+	}
+
+	if (lines_count == 0){ button_line_list.push_back(jc_line); }
+	
+
+	highest_point_y_for_buttons += button_max_y;
+
+
+}
+
+void EButtonGroup::set_buttons_offset()
+{
+	float offset_x = 0.0f;
+	float offset_y = 0.0f;
+
+	EInputCore::logger_param("size", button_line_list.size());
+
+	for (int i = 0; i < button_line_list.size(); i++)
+	{
+		EInputCore::logger_param("buttons in line[" + std::to_string(i) + "]", button_line_list[i].button_list.size());
+		offset_x = border_left;
+		offset_y = button_line_list[i].offset_y;
+
+		for (EntityButton* but : button_line_list[i].button_list)
+		{
+			but->offset_x = offset_x + ((!but->disable_force_field) ? (but->force_field_left)	: (0.0f));
+			but->offset_y = offset_y + ((!but->disable_force_field) ? (but->force_field_bottom)	: (0.0f));
+
+			offset_x += but->button_gabarite->size_x + ((!but->disable_force_field) ? (but->force_field_right) : (0.0f));
+		}
+
+		
 	}
 }
 
@@ -2410,59 +2505,6 @@ void EButtonGroup::reset_slider()
 		}
 	}
 }
-
-
-
-void EButtonGroup::change_group(EButtonGroup* _group)
-{
-	//if (!_group->disable_gabarite)
-	{
-		float saved_scroll = 0.0f;
-
-
-		_group->recursive_phantom_translate_if_need();
-
-		_group->button_group_prechange();
-
-		//_group->substretch_groups_y();
-		//_group->check_slider();
-
-		_group->group_stretch_y();
-		_group->check_slider();
-		_group->group_stretch_x();
-
-
-		_group->align_groups();
-		_group->calculate_group_lines();
-		//_group->recursive_recalculate_culling_lines();
-
-		_group->reset_buttons_phantom_translate();
-		//_group->reset_slider();
-		_group->override_button_size();
-		_group->align_buttons_to_lines();
-
-		
-		_group->activate_slider_if_need();
-
-		_group->stretch_all_buttons();
-		_group->calculate_world_coordinates_for_button();
-	}	
-	//practivate_slider_if_need();evert empty space
-	//ifcalculate_world_coordinates_for_button(); (_group->scroll_y < -(_group->highest_point_y_for_buttons - _group->region_gabarite->size_y))
-	//{
-	//	_group->scroll_y = 0.0f;
-	//	//_group->realign_all_buttons();
-	//}
-
-
-	EButtonGroup::generate_vertex_buffer_for_group(_group);
-
-	for (EButtonGroup* child : _group->group_list)
-	{
-		change_group(child);
-	}
-}
-
 
 
 

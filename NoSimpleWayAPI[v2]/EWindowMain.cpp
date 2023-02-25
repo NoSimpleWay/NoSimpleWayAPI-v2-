@@ -10087,7 +10087,8 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 								if (matched_data_entity != nullptr)
 								{
-									EntityButton* wide_button = EntityButton::create_wide_item_button
+									EntityButton*
+									wide_button = EntityButton::create_wide_item_button
 									(
 										new ERegionGabarite(220.0f, 40.0f),
 										((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons,
@@ -10095,7 +10096,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										EFont::font_list[0],
 										true
 									);
-
+									wide_button->can_be_stretched = true;
 									((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons->add_button_to_working_group(wide_button);
 
 								}
@@ -15460,14 +15461,6 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 	//data container, store pointer to group with listed buttons
 	auto d_container = new EDataContainer_Group_FilterBlockListedSegment();
 
-	//if ((_attribute != nullptr) && (_override_attribute_name == ""))
-	//{
-	//	d_container->filter_attribute_name = _attribute->localisation.base_name;
-	//}
-	//else
-	//{
-	//	d_container->filter_attribute_name = _override_attribute_name;
-	//}
 
 	d_container->filter_attribute_name = _attribute_name;
 	d_container->associated_item_attribute = _attribute;

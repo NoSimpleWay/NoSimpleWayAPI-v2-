@@ -232,7 +232,7 @@ enum class GroupSearchStatus
 struct EButtonGroupLine
 {
 public:
-	float max_size_y = 0.0f;
+	float line_size_y = 0.0f;
 
 	float offset_y = 0.0f;
 
@@ -390,11 +390,13 @@ public:
 	void reset_buttons_phantom_translate();
 	void reset_slider();
 	void override_button_size();
+	void put_buttons_to_lines();
+	void set_buttons_offset();
 	void align_buttons_to_lines();
 	void calculate_group_lines();
 	void activate_slider_if_need();
 	void stretch_all_buttons();
-	void calculate_world_coordinates_for_button();
+	void calculate_world_coordinates_for_buttons();
 	
 	
 
