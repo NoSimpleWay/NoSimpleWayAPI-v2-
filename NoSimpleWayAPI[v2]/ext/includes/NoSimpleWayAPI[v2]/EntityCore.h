@@ -172,7 +172,7 @@ public:
 	bool align_even_if_hidden		= false;
 	bool do_not_generate_bg			= false;
 	bool cannot_be_auto_deleted		= false;
-
+	bool can_be_stretched			= false;
 	bool entity_is_active();
 
 

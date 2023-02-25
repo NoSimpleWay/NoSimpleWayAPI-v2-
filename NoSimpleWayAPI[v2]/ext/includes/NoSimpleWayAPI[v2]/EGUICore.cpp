@@ -2319,6 +2319,37 @@ void EButtonGroup::activate_slider_if_need()
 	}
 }
 
+void EButtonGroup::stretch_all_buttons()
+{
+	float	free_space							= 0.0f;
+	int		stretchable_elements_count			= 0;
+	float	total_button_size					= 0.0f;
+	int		additional_space_for_each_button	= 0;
+
+	free_space = region_gabarite->size_x - border_left - border_right;
+
+	for (EntityButton* but : workspace_button_list)
+	{
+		if (but->can_be_stretched)
+		{
+			stretchable_elements_count++;
+		}
+
+		total_button_size += but->button_gabarite->size_x + ((but->disable_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f));
+	}
+
+	free_space = free_space - total_button_size;
+	additional_space_for_each_button = (int)(free_space / stretchable_elements_count);
+
+	for (EntityButton* but : workspace_button_list)
+	{
+		if (but->can_be_stretched)
+		{
+			but->button_gabarite->size_x += additional_space_for_each_button;
+		}
+	}
+}
+
 void EButtonGroup::calculate_world_coordinates_for_button()
 {
 	for (EntityButton* but : all_button_list)
@@ -2388,16 +2419,18 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 
 
 		_group->align_groups();
-		_group->recursive_recalculate_culling_lines();
-		//_group->need_recalcualte_culling_lines = true;
-		//_group->recursive_set_recalculate_culling_lines();
-		//EButtonGroup::calculate_culling_lines(_group, true);
+		_group->calculate_group_lines();
+		//_group->recursive_recalculate_culling_lines();
+
 		_group->reset_buttons_phantom_translate();
-		_group->reset_slider();
+		//_group->reset_slider();
 		_group->override_button_size();
 		_group->align_buttons_to_lines();
-		_group->calculate_group_lines();
+
+		
 		_group->activate_slider_if_need();
+
+		_group->stretch_all_buttons();
 		_group->calculate_world_coordinates_for_button();
 	}	
 	//practivate_slider_if_need();evert empty space

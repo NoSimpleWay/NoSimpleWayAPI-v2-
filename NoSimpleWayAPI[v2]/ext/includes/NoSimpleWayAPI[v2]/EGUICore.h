@@ -394,6 +394,7 @@ public:
 	void align_buttons_to_lines();
 	void calculate_group_lines();
 	void activate_slider_if_need();
+	void stretch_all_buttons();
 	void calculate_world_coordinates_for_button();
 	
 	
