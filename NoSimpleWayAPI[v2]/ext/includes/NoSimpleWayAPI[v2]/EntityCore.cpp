@@ -644,8 +644,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		(
 			_region_gabarite,
 			_parent_group,
-			//&EDataActionCollection::action_invoke_data_entity_group_action
-			nullptr
+			&EDataActionCollection::action_out_main_text_area
 		);
 
 		EDataContainer_DataEntityHolder* data_holder = new EDataContainer_DataEntityHolder();

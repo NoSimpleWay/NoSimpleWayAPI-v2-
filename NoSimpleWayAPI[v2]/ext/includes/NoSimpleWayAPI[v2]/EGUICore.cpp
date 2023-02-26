@@ -1859,7 +1859,7 @@ void EButtonGroup::group_stretch_x()
 
 	if ((slider != nullptr) && (slider->entity_is_active()))
 	{
-		slider_effect = slider->button_gabarite->size_x + 3.0f;
+		slider_effect = slider->slider_active->main_texture->size_x_in_pixels;
 	}
 
 	float shrink_size = 0.0f;
@@ -1987,8 +1987,6 @@ void EButtonGroup::group_stretch_y()
 
 void EButtonGroup::check_slider()
 {
-	have_slider = true;//have no slider by default
-	scroll_y = 0.0f;
 
 	if (slider != nullptr)
 	{
@@ -1997,33 +1995,20 @@ void EButtonGroup::check_slider()
 
 	float child_elements_height_summ = 0.0f;
 	float max_y = 0.0f;
-	//stretchable group cannot have slider
-	//if (*can_be_stretched_by_child)
-	//{
-	//	for (EButtonGroup* group : group_list)
-	//	{*group->parent_have_slider = false;}//parent have no slider
-	//}
-	//else//potentially, can have slider
 	{
 		if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 		{
 			child_elements_height_summ = ((float)group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE;
 
 			for (EButtonGroup* group : group_list)
-				//if (!*group->stretch_y_by_parent_size)//constant size
-			{
-				child_elements_height_summ += group->region_gabarite->size_y;//*szOID_ROOT_PROGRAM_AUTO_UPDATE_CA_REVOCATION
-			}
+			{child_elements_height_summ += group->region_gabarite->size_y;}
 		}
 
 		if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 		{
 
 			for (EButtonGroup* group : group_list)
-				//if (!*group->stretch_y_by_parent_size)//constant size
-			{
-				max_y = max(max_y, group->region_gabarite->size_y);//*szOID_ROOT_PROGRAM_AUTO_UPDATE_CA_REVOCATION
-			}
+			{max_y = max(max_y, group->region_gabarite->size_y);}
 
 			child_elements_height_summ += max_y;
 		}
@@ -2037,22 +2022,10 @@ void EButtonGroup::check_slider()
 				slider->entity_disabled = false;
 				have_slider = true;
 
-
-				//EInputCore::logger_param("summ", child_elements_height_summ);
-				//EInputCore::logger_param("size y", *region_gabarite->size_y - 6.0f - *border_bottom - *border_up);
-				//std::cout << std::endl;
-
 				for (EButtonGroup* group : group_list)
-				{
-					//EInputCore::logger_param("group size y", *group->region_gabarite->size_y);
-					group->parent_have_slider = true;
-				}//parent have no slider
+				{group->parent_have_slider = true;}//parent have no slider
 
 				scroll_y = slider->current_value;
-			}
-			else
-			{
-				//is_active = false;
 			}
 		}
 		else
@@ -2063,17 +2036,10 @@ void EButtonGroup::check_slider()
 				have_slider = false;
 
 				for (EButtonGroup* group : group_list)
-				{
-					group->parent_have_slider = false;
-				}
-
-				//reset scroll_y, because no slider = no scroll
-				//scroll_y = 0.0f; //parent have no slider
+				{group->parent_have_slider = false;}
 			}
 		}
 	}
-
-	//for (EButtonGroup* group : group_list) { group->check_slider(); }
 }
 
 void EButtonGroup::recursive_expand_to_workspace_size()
@@ -2136,7 +2102,9 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 		_group->activate_slider_if_need();
 
 		_group->stretch_all_buttons();
+		_group->calculate_group_lines();
 		_group->set_buttons_offset();
+		_group->align_buttons_in_lines();
 
 		_group->calculate_world_coordinates_for_buttons();
 
@@ -2185,62 +2153,6 @@ void EButtonGroup::recursive_recalculate_culling_lines()
 		child->recursive_recalculate_culling_lines();
 	}
 }
-
-void EButtonGroup::align_buttons_to_lines()
-{
-	highest_point_y_for_buttons = 0.0f;
-
-
-	button_line_list.clear();
-
-	float set_offset_x	= border_left;
-	float set_offset_y	= border_bottom;
-	float next_x		= 0.0f;
-	float slider_effect = 0.0f;
-	float max_y			= 0.0f;
-
-	if ((slider != nullptr) && (!slider->entity_disabled))
-	{ slider_effect = slider->button_gabarite->size_x; }
-	
-	EButtonGroupLine
-	jc_button_line;
-
-	for (EntityButton* but : workspace_button_list)
-	if
-	(
-		(!but->fixed_position)
-		&&
-		(but->entity_is_active())
-	)
-	{
-		max_y = max(max_y, but->button_gabarite->size_y);
-		but->offset_x = set_offset_x + ((!but->disable_force_field)	? (but->force_field_left)	: (0.0f));
-		but->offset_y = set_offset_y + ((!but->disable_force_field)	? (but->force_field_bottom)	: (0.0f));
-		
-		next_x = but->offset_x + but->button_gabarite->size_x + ((!but->disable_force_field) ? (but->force_field_right) : (0.0f));
-		
-		highest_point_y_for_buttons = max(highest_point_y_for_buttons, but->offset_y + but->button_gabarite->size_y);
-
-		//not new lined
-		if ((next_x + but->button_gabarite->size_x <= region_gabarite->size_x - border_right - slider_effect) || (false))
-		{
-			set_offset_x = next_x;
-			jc_button_line.button_list.push_back(but);
-		}
-		else
-		{
-			button_line_list.push_back(jc_button_line);
-
-			jc_button_line.button_list.clear();
-
-			set_offset_x = border_left;
-			set_offset_y += max_y;
-			max_y = 0.0f;
-		}
-	}
-
-}
-
 void EButtonGroup::calculate_group_lines()
 {
 	float	max_y = 0.0f;
@@ -2248,17 +2160,8 @@ void EButtonGroup::calculate_group_lines()
 
 	for (int i = 0; i < button_line_list.size(); i++)
 	{
-		max_y = 0.0f;
-
-		for (EntityButton* but: button_line_list[i].button_list)
-		{
-			max_y = max(max_y, but->button_gabarite->size_y + ((!but->disable_force_field) ? (but->force_field_bottom + but->force_field_up) : (0.0f)));
-		}
-
-		button_line_list[i].line_size_y = max_y;
 		button_line_list[i].offset_y = offset_y;
-
-		offset_y += max_y;
+		offset_y += button_line_list[i].line_size_y;
 	}
 
 }
@@ -2329,34 +2232,122 @@ void EButtonGroup::stretch_all_buttons()
 	int		stretchable_elements_count			= 0;
 	float	total_button_size					= 0.0f;
 	int		additional_space_for_each_button	= 0;
+	float	slider_additional					= 0.0f;
+	float	max_x								= 0.0f;
 
-	free_space = region_gabarite->size_x - border_left - border_right;
+	if ((slider != nullptr) && (have_slider))
+	{
+		slider_additional = slider->slider_active->main_texture->size_x_in_pixels;
+	}
+
+	//free_space = region_gabarite->size_x - border_left - border_right - slider_additional;
 
 	for (int i = 0; i < button_line_list.size(); i++)
 	{
-		free_space					= region_gabarite->size_x - border_left - border_right;
+		free_space					= region_gabarite->size_x - border_left - border_right - slider_additional;
 		total_button_size			= 0.0f;
 		stretchable_elements_count	= 0;
 
-
-		for (EntityButton* but : button_line_list[i].button_list)
+		if ((button_size_x_override == 0.0f) || (i == 0))
 		{
-			if (but->can_be_stretched) {stretchable_elements_count++;}
-
-			total_button_size += but->button_gabarite->size_x + ((!but->disable_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f)) + 2.0f;
-		}
-
-		if (stretchable_elements_count > 0)
-		{
-			free_space = free_space - total_button_size;
-			additional_space_for_each_button = (round)(free_space / stretchable_elements_count);
 
 			for (EntityButton* but : button_line_list[i].button_list)
+			if (but->entity_is_active())
 			{
-				if (but->can_be_stretched) {but->button_gabarite->size_x += max(additional_space_for_each_button, -100.0f);}
+				if (but->can_be_stretched) { stretchable_elements_count++; }
+
+				total_button_size += but->button_gabarite->size_x + ((!but->disable_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f)) + 0.0f;
+			}
+
+			if (stretchable_elements_count > 0)
+			{
+				free_space = free_space - total_button_size;
+				additional_space_for_each_button = (round)(free_space / stretchable_elements_count);
+
+				for (EntityButton* but : button_line_list[i].button_list)
+				if (but->entity_is_active())
+				{
+					if
+						(
+							(but->can_be_stretched)
+							&&
+							(additional_space_for_each_button > 0.0f)
+							&&
+							(additional_space_for_each_button <= but->button_gabarite->size_x * 0.5f)
+							)
+					{
+						but->button_gabarite->size_x += additional_space_for_each_button;
+					}
+
+
+				}
+			}
+		}
+		else
+		{
+			for (EntityButton* but : button_line_list[i].button_list)
+			if ((but->entity_is_active()) && (!button_line_list[i - 1].button_list.empty()))
+			{
+				but->button_gabarite->size_x = button_line_list[i - 1].button_list[0]->button_gabarite->size_x;
 			}
 		}
 	}
+}
+
+void EButtonGroup::align_buttons_in_lines()
+{
+	float slider_effect	= 0.0f;
+	float push_value	= 0.0f;
+
+	if (have_slider) { slider_effect = slider->slider_active->main_texture->size_x_in_pixels;
+	}
+
+	for (int i = 0; i < button_line_list.size(); i++)
+	{
+		float free_space = region_gabarite->size_x - border_left - border_right - slider_effect;
+
+		for (EntityButton* but : button_line_list[i].button_list)
+		if (but->entity_is_active())
+		{
+			free_space -= but->button_gabarite->size_x + ((!but->disable_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f));
+		}
+
+		switch (button_align_type)
+		{
+			case (ButtonAlignType::BUTTON_ALIGN_LEFT):
+			{
+				push_value = 0.0f;
+				break;
+			};
+
+			case (ButtonAlignType::BUTTON_ALIGN_MID):
+			{
+				push_value = free_space / 2.0f;
+				break;
+			};
+
+			case (ButtonAlignType::BUTTON_ALIGN_RIGHT):
+			{
+				push_value = free_space;
+				break;
+			};
+		}
+
+		for (EntityButton* but : button_line_list[i].button_list)
+		if (but->entity_is_active())
+		{
+			but->offset_x += push_value;
+
+			for (EntityButton*		but : all_button_list)
+			for (ECustomData*		cd	: but->custom_data_list)
+			for (EClickableArea*	ca	: cd->clickable_area_list)
+			{
+				ca->region_gabarite->align_all_clild_gabarites();
+			}
+		}
+	}
+
+	
 }
 
 void EButtonGroup::calculate_world_coordinates_for_buttons()
@@ -2391,13 +2382,15 @@ void EButtonGroup::put_buttons_to_lines()
 
 	button_line_list.clear();
 
-	float slider_effect	= 0.0f;
-	float total_size	= 0.0f;
-	float button_max_y	= 0.0f;
-	int lines_count		= 0;
+	float slider_effect		= 0.0f;
+	float total_size		= border_left;
+	float button_max_y		= 0.0f;
+	int lines_count			= 0;
+	float this_button_size	= 0.0f;
+
 	if ((slider != nullptr) && (slider->entity_is_active()))
 	{
-		slider_effect = slider->button_gabarite->size_x;
+		slider_effect = slider->slider_active->main_texture->size_x_in_pixels;
 	}
 
 	EButtonGroupLine
@@ -2408,32 +2401,44 @@ void EButtonGroup::put_buttons_to_lines()
 
 
 	for (EntityButton* but : workspace_button_list)
+	if (but->entity_is_active())
 	{
+		//but->highlight_time - 0.0f;
 
+		this_button_size = but->button_gabarite->size_x + ((!but->disable_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f));
 		//size all buttons on line
-		total_size += but->button_gabarite->size_x + ((!but->disable_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f));
+		total_size += this_button_size;
 
 		//new line
-		if (total_size > region_gabarite->size_x - border_left - border_right - slider_effect)
+		if
+		(
+			(
+				(but->new_line_method == NewLineMethod::WHEN_OUT_OF_GABARITE)
+				&&
+				(total_size > region_gabarite->size_x - border_left - border_right - slider_effect)
+				
+			)
+			||
+			(but->new_line_method == NewLineMethod::FORCIBLY)
+		)
 		{
 			//current line
 			jc_line.line_size_y = button_max_y;
 			highest_point_y_for_buttons += button_max_y;
-
+			button_line_list.push_back(jc_line);
 
 
 			//new line
 			lines_count++;
 			jc_line.button_list.clear();
-			button_line_list.push_back(jc_line);
+			
+
+			total_size = this_button_size;
+			//but->highlight_time = 1.0f;
+		}
+
 			jc_line.button_list.push_back(but);
 
-			total_size		= 0.0f;
-		}
-		else
-		{
-			jc_line.button_list.push_back(but);
-		}
 
 		button_max_y
 		=
@@ -2445,8 +2450,11 @@ void EButtonGroup::put_buttons_to_lines()
 
 		
 	}
-
-	if (lines_count == 0){ button_line_list.push_back(jc_line); }
+	if (!jc_line.button_list.empty())
+	{
+		button_line_list.push_back(jc_line);
+	}
+	//if (lines_count == 0){ button_line_list.push_back(jc_line); }
 	
 
 	highest_point_y_for_buttons += button_max_y;
@@ -2459,15 +2467,16 @@ void EButtonGroup::set_buttons_offset()
 	float offset_x = 0.0f;
 	float offset_y = 0.0f;
 
-	EInputCore::logger_param("size", button_line_list.size());
+	//EInputCore::logger_param("size", button_line_list.size());
 
 	for (int i = 0; i < button_line_list.size(); i++)
 	{
-		EInputCore::logger_param("buttons in line[" + std::to_string(i) + "]", button_line_list[i].button_list.size());
+		//EInputCore::logger_param("buttons in line[" + std::to_string(i) + "]", button_line_list[i].button_list.size());
 		offset_x = border_left;
 		offset_y = button_line_list[i].offset_y;
 
 		for (EntityButton* but : button_line_list[i].button_list)
+		if (but->entity_is_active())
 		{
 			but->offset_x = offset_x + ((!but->disable_force_field) ? (but->force_field_left)	: (0.0f));
 			but->offset_y = offset_y + ((!but->disable_force_field) ? (but->force_field_bottom)	: (0.0f));
@@ -2564,7 +2573,7 @@ void EButtonGroup::realign_all_buttons()
 
 	if ((slider != nullptr) && (slider->entity_is_active()) && (have_slider))
 	{
-		slider_additional = slider->button_gabarite->size_x + 3.0f;
+		slider->slider_active->main_texture->size_x_in_pixels;
 	}
 	else
 	{
@@ -4418,7 +4427,7 @@ void EButtonGroupFastMessage::button_group_update(float _d)
 	{
 		exist_time -= _d;
 
-		if (exist_time < 0.0f)
+		if (exist_time <= 0.0f)
 		{
 			
 

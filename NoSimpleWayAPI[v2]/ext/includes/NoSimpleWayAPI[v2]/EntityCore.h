@@ -158,11 +158,23 @@ public:
 	void create_description() override;
 };
 
+
+enum class NewLineMethod
+{
+	WHEN_OUT_OF_GABARITE,
+	FORCIBLY,
+	FORBIDDEN
+
+};
+
 class EntityButton : public Entity
 {
 public:
 	EntityButton();
 	virtual ~EntityButton();
+
+	NewLineMethod
+	new_line_method					= NewLineMethod::WHEN_OUT_OF_GABARITE;
 
 	bool button_hidden_by_search	= false;
 	bool disable_force_field		= false;
@@ -185,9 +197,9 @@ public:
 
 
 	float force_field_left			= 0.0f;
-	float force_field_right			= 2.0f;
+	float force_field_right			= 0.0f;
 	float force_field_bottom		= 0.0f;
-	float force_field_up			= 2.0f;
+	float force_field_up			= 0.0f;
 
 	float highlight_time		= 0.0f;
 	float max_highlight_time	= 1.0f;

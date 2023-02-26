@@ -1754,6 +1754,14 @@ void EDataActionCollection::action_open_url(Entity* _entity, ECustomData* _custo
 	ShellExecute(0, 0, static_cast<EntityButtonOpenURL*>(_entity)->stored_url.c_str(), 0, 0, SW_SHOW);
 }
 
+void EDataActionCollection::action_out_main_text_area(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if (static_cast<EntityButton*>(_entity)->main_text_area != nullptr)
+	{
+		EInputCore::logger_param("text area: ", static_cast<EntityButton*>(_entity)->main_text_area->original_text);
+	}
+}
+
 //void EDataActionCollection::action_active_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)
 //{
 //	if (((EntityButtonButtonGroupActivator*)_entity)->target_group != nullptr)

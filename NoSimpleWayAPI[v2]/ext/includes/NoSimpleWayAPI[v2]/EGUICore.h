@@ -392,10 +392,11 @@ public:
 	void override_button_size();
 	void put_buttons_to_lines();
 	void set_buttons_offset();
-	void align_buttons_to_lines();
+	//void align_buttons_to_lines();
 	void calculate_group_lines();
 	void activate_slider_if_need();
 	void stretch_all_buttons();
+	void align_buttons_in_lines();
 	void calculate_world_coordinates_for_buttons();
 	
 	
