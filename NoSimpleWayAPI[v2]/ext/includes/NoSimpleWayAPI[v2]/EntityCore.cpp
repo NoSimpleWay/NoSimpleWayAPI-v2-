@@ -1734,18 +1734,6 @@ void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style)
 void action_generate_brick_bg_for_button(EntityButton* _but, EGUIStyle* _style)
 {
 	EntityButton::button_generate_brick_bg(_but, _style);
-
-	for (ECustomData* custom_data:_but->custom_data_list)
-	for (EClickableArea* clickable_area:custom_data->clickable_area_list)
-	if (clickable_area->text_area != nullptr)
-	{
-		clickable_area->text_area->color = clickable_area->text_area->stored_color;
-
-		//for (int i = 0; i < 4; i++)
-		//{
-		//	clickable_area->text_area->color[i] = clickable_area->text_area->stored_color[i] * _style->text_color_multiplier[i];
-		//}
-	}
 }
 
 void action_generate_vertex_for_horizontal_named_slider(EntityButton* _but, EGUIStyle* _style)

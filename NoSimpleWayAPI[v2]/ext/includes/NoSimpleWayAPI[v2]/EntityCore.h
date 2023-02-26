@@ -197,7 +197,7 @@ public:
 
 
 	float force_field_left			= 0.0f;
-	float force_field_right			= 5.0f;
+	float force_field_right			= 0.0f;
 	float force_field_bottom		= 0.0f;
 	float force_field_up			= 0.0f;
 

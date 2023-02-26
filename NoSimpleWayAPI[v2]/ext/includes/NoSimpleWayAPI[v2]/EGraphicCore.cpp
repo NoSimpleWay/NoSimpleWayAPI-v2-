@@ -3777,7 +3777,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 		_sprite_layer->sprite_frame_list.shrink_to_fit();
 
 		_sprite_layer->batcher = NS_EGraphicCore::pbr_batcher;
-		_sprite_layer->batcher->reset();
+		//_sprite_layer->batcher->reset();
 		//dynamic
 		int		total_divisions_x = 1;
 		int		total_divisions_y = 1;

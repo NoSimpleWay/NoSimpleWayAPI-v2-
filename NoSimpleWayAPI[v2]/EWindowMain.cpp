@@ -2695,7 +2695,7 @@ EWindowMain::EWindowMain()
 			nullptr,
 			""
 		);
-		jc_button->can_be_stretched = true;
+		//jc_button->can_be_stretched = true;
 		data_entity_main_group->main_input_field = jc_button;
 
 		jc_data_container_for_search_group->filter_text_area = jc_button->main_text_area;
@@ -4326,7 +4326,6 @@ EWindowMain::EWindowMain()
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 
 		//////////////////////////////////////////////////////
-
 		EButtonGroup* top_section_left_part = top_section->add_group
 		(
 			EButtonGroup::create_button_group_without_bg
@@ -4335,9 +4334,11 @@ EWindowMain::EWindowMain()
 				EGUIStyle::active_style
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
-
+		top_section_left_part->ignore_vertical_buttons_force_field = true;
 		//////////////////////////////////////////////////////
 
+
+		//////////////////////////////////////////////////////
 		EButtonGroup* top_section_right_part = top_section->add_group
 		(
 			EButtonGroup::create_button_group_without_bg
@@ -4346,79 +4347,89 @@ EWindowMain::EWindowMain()
 				EGUIStyle::active_style
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_static_autosize);
-
+		top_section_right_part->ignore_vertical_buttons_force_field = true;
 		//////////////////////////////////////////////////////
 
-		jc_button = new EntityButtonForFilterBlock();
-		jc_button->make_as_default_button_with_icon
-		(
-			new ERegionGabarite(45.0f, 45.0f),
-			top_section_left_part,
-			&EDataActionCollection::action_open_new_lootfilter_group,
-			NS_EGraphicCore::load_from_textures_folder("buttons/button_create_new_loot_filter")
-		);
-		top_section_left_part->add_button_to_working_group(jc_button);
+		/*		BUTTON FOR GROUPS		*/
+				//////////////////////////////////////////////////////
+				jc_button = new EntityButtonForFilterBlock();
+				jc_button->make_as_default_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section_left_part,
+					&EDataActionCollection::action_open_new_lootfilter_group,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_create_new_loot_filter")
+				);
 
-		//////////////////////////////////////////////////////
-
-		jc_button = new EntityButtonForFilterBlock();
-		jc_button->make_as_default_button_with_icon
-		(
-			new ERegionGabarite(45.0f, 45.0f),
-			top_section_left_part,
-			&EDataActionCollection::action_open_loot_filters_list_window,
-			NS_EGraphicCore::load_from_textures_folder("buttons/button_open")
-		);
-		top_section_left_part->add_button_to_working_group(jc_button);
-
-		//////////////////////////////////////////////////////
-		jc_button = new EntityButtonForFilterBlock();
-
-		jc_button->make_as_default_button_with_icon
-		(
-			new ERegionGabarite(45.0f, 45.0f),
-			top_section_left_part,
-			&EDataActionCollection::action_save_lootfilter,
-			NS_EGraphicCore::load_from_textures_folder("buttons/button_save")
-		);
-		jc_button->force_field_right = 32.0f;
-		top_section_left_part->add_button_to_working_group(jc_button);
-		//////////////////////////////////////////////////////
+				top_section_left_part->add_button_to_working_group(jc_button);
+				//////////////////////////////////////////////////////
 
 
 
-		//////////////////////////////////////////////////////
-		EntityButtonButtonGroupActivator* button_activator = new EntityButtonButtonGroupActivator();
+				//////////////////////////////////////////////////////
+				jc_button = new EntityButtonForFilterBlock();
+				jc_button->make_as_default_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section_left_part,
+					&EDataActionCollection::action_open_loot_filters_list_window,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_open")
+				);
 
-		button_activator->make_as_default_button_with_icon
-		(
-			new ERegionGabarite(45.0f, 45.0f),
-			top_section_left_part,
-			&EDataActionCollection::action_set_button_group_as_active,
-			NS_EGraphicCore::load_from_textures_folder("buttons/button_world_parameters")
-		);
-		button_activator->target_group = EWindowMain::world_parameters;
-		top_section_left_part->add_button_to_working_group(button_activator);
-		//////////////////////////////////////////////////////
+				top_section_left_part->add_button_to_working_group(jc_button);
+				//////////////////////////////////////////////////////
+
+				//////////////////////////////////////////////////////
+				jc_button = new EntityButtonForFilterBlock();
+
+				jc_button->make_as_default_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section_left_part,
+					&EDataActionCollection::action_save_lootfilter,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_save")
+				);
+
+				jc_button->force_field_right = 32.0f;
+				top_section_left_part->add_button_to_working_group(jc_button);
+				//////////////////////////////////////////////////////
 
 
 
-		//////////////////////////////////////////////////////
-		{
-			EntityButtonButtonGroupActivator* button_activator = new EntityButtonButtonGroupActivator();
+				//////////////////////////////////////////////////////
+				EntityButtonButtonGroupActivator* button_activator = new EntityButtonButtonGroupActivator();
 
-			button_activator->make_as_default_button_with_icon
-			(
-				new ERegionGabarite(45.0f, 45.0f),
-				top_section_left_part,
-				&EDataActionCollection::action_set_button_group_as_active,
-				NS_EGraphicCore::load_from_textures_folder("buttons/button_styles")
-			);
-			button_activator->target_group = EWindowMain::style_list_group;
-			button_activator->force_field_right = 32.0f;
-			top_section_left_part->add_button_to_working_group(button_activator);
-		}
-		//////////////////////////////////////////////////////
+				button_activator->make_as_default_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section_left_part,
+					&EDataActionCollection::action_set_button_group_as_active,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_world_parameters")
+				);
+
+				button_activator->target_group = EWindowMain::world_parameters;
+				top_section_left_part->add_button_to_working_group(button_activator);
+				//////////////////////////////////////////////////////
+
+
+
+				//////////////////////////////////////////////////////
+				{
+					EntityButtonButtonGroupActivator* button_activator = new EntityButtonButtonGroupActivator();
+
+					button_activator->make_as_default_button_with_icon
+					(
+						new ERegionGabarite(45.0f, 45.0f),
+						top_section_left_part,
+						&EDataActionCollection::action_set_button_group_as_active,
+						NS_EGraphicCore::load_from_textures_folder("buttons/button_styles")
+					);
+					button_activator->target_group = EWindowMain::style_list_group;
+					button_activator->force_field_right = 32.0f;
+					top_section_left_part->add_button_to_working_group(button_activator);
+
+				}
+				//////////////////////////////////////////////////////
 
 
 
@@ -4449,6 +4460,7 @@ EWindowMain::EWindowMain()
 			NS_EGraphicCore::load_from_textures_folder("buttons/button_open_loot_simulator")
 		);
 		button_activator->force_field_right = 32.0f;
+
 		//button_activator->target_group = EWindowMain::loot_simulator_button_group;
 		top_section_left_part->add_button_to_working_group(button_activator);
 		//////////////////////////////////////////////////////
@@ -4466,6 +4478,7 @@ EWindowMain::EWindowMain()
 			NS_EGraphicCore::load_from_textures_folder("buttons/button_info")
 		);
 		button_activator->target_group = EWindowMain::info_button_group;
+
 		top_section_left_part->add_button_to_working_group(button_activator);
 		//////////////////////////////////////////////////////
 
@@ -4484,6 +4497,7 @@ EWindowMain::EWindowMain()
 			NS_EGraphicCore::load_from_textures_folder("buttons/button_localisation_RU")
 		);
 		button_RU->stored_localisation = NSW_localisation_RU;
+
 		top_section_right_part->add_button_to_working_group(button_RU);
 		//////////////////////////////////////////////////////
 
@@ -4501,6 +4515,9 @@ EWindowMain::EWindowMain()
 			NS_EGraphicCore::load_from_textures_folder("buttons/button_localisation_EN")
 		);
 		button_EN->stored_localisation = NSW_localisation_EN;
+
+
+
 		top_section_right_part->add_button_to_working_group(button_EN);
 		//////////////////////////////////////////////////////
 
@@ -7686,12 +7703,14 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	//	BOTTOM SECTION FOR ADD NEW CONTENT, AND MOVE BLOCK
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	EButtonGroup* bottom_section_for_block_control = EButtonGroup::create_button_group_without_bg
+	EButtonGroup*
+	bottom_section_for_block_control = EButtonGroup::create_button_group_without_bg
 	(
 		new ERegionGabarite(40.0f, 90.0f),
 		EGUIStyle::active_style
 	);
 	bottom_section_for_block_control->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+	bottom_section_for_block_control->ignore_vertical_buttons_force_field = true;
 	left_control_section->add_group(bottom_section_for_block_control);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -7703,6 +7722,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		EGUIStyle::active_style
 	);
 	top_section_for_remove->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+	top_section_for_remove->ignore_vertical_buttons_force_field = true;
 	left_control_section->add_group(top_section_for_remove);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -9484,13 +9504,14 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EButtonGroup* _target_editor, int _specific_position)
 {
-	EButtonGroupFilterBlockSeparator* whole_separator_block = new EButtonGroupFilterBlockSeparator(new ERegionGabarite(1200.0f, 20.0f));
+	EButtonGroupFilterBlockSeparator*
+	whole_separator_block = new EButtonGroupFilterBlockSeparator(new ERegionGabarite(1200.0f, 20.0f));
 	whole_separator_block->init_button_group(EGUIStyle::active_style, false, false, false);
 	whole_separator_block->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	whole_separator_block->debug_name = "Whole separator";
 	whole_separator_block->focusable_for_select = true;
 	whole_separator_block->additional_y_distance = 8.0f;
-
+	whole_separator_block->ignore_vertical_buttons_force_field = true;
 	//		SHRINKER
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	EntityButton* shrinker_button = new EntityButton();

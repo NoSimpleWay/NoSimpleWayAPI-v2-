@@ -265,6 +265,9 @@ public:
 	bool focusable_for_select = false;
 	bool have_rama = false;
 	bool resize_to_highest_point = false;
+	bool ignore_buttons_force_field = false;
+	bool ignore_vertical_buttons_force_field = false;
+
 	float min_size_for_resize = 120.0f;
 	//bool need_recalcualte_culling_lines = false;
 	//bool hidden_by_search = false;
