@@ -7720,6 +7720,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		NS_DefaultGabarites::texture_button_plus
 	);
 	jc_button->new_line_method = NewLineMethod::FORBIDDEN;
+	jc_button->force_field_up = 16.0f;
 
 	EDataContainer_Button_OpenButtonGroup*
 		data_open_group = new EDataContainer_Button_OpenButtonGroup();

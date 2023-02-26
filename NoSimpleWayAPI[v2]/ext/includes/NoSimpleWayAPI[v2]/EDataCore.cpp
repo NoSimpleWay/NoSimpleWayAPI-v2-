@@ -49,306 +49,7 @@ void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custo
 	);
 }
 
-void EDataActionCollection::action_player_control(Entity* _entity, ECustomData* _custom_data, float _d)
-{
-	//int number = rand() % 1000000;
 
-	if
-		(
-			(EInputCore::key_pressed(GLFW_KEY_W))
-			&&
-			(NS_FONT_UTILS::active_text_area == nullptr)
-			)
-	{
-		_entity->translate_entity(0.0f, 1000.0f * _d, 0.0f, true);
-
-	};
-
-	if
-		(
-			(EInputCore::key_pressed(GLFW_KEY_S))
-			&&
-			(NS_FONT_UTILS::active_text_area == nullptr)
-			)
-	{
-		_entity->translate_entity(0.0f, -1000.0f * _d, 0.0f, true);
-
-	};
-
-	if
-		(
-			(EInputCore::key_pressed(GLFW_KEY_Z))
-			&&
-			(NS_FONT_UTILS::active_text_area == nullptr)
-			)
-	{
-
-		//NS_ERenderCollection::generate_brick_texture(_custom_data->clickable_area_list[0]->region_gabarite, _entity->sprite_layer_list[0], NS_DefaultGabarites::texture_lead_and_gold, nullptr, nullptr);
-		_entity->set_world_positions(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
-		_entity->generate_vertex_buffer_for_all_sprite_layers();
-
-
-	}
-}
-
-void EDataActionCollection::action_update_slider(Entity* _entity, ECustomData* _custom_data, float _d)
-{
-	EntityButton* entity_button = ((EntityButton*)_entity);
-	EDataContainerScrollBar* data_bar = ((EDataContainerScrollBar*)_custom_data->data_container);
-
-	//EInputCore::logger_simple_success("@");
-
-	entity_button->button_gabarite->size_y = entity_button->parent_button_group->region_gabarite->size_y;
-
-
-
-	_entity->offset_x
-		=
-		entity_button->parent_button_group->region_gabarite->size_x
-		-
-		entity_button->button_gabarite->size_x
-		-
-		entity_button->parent_button_group->border_right;
-
-
-
-	_entity->world_position_x
-		=
-		_entity->offset_x
-		+
-		entity_button->parent_button_group->region_gabarite->world_position_x;
-
-	*data_bar->max_value
-		=
-		max
-		(
-			0.0f,
-			entity_button->parent_button_group->final_highest_point_y
-			-
-			(
-				entity_button->parent_button_group->region_gabarite->size_y
-				-
-				//*entity_button->parent_button_group->border_bottom
-				//-
-				entity_button->parent_button_group->border_up
-			)
-		);
-
-	//*data_bar->max_value = 1000.0f;
-
-
-	if (*data_bar->max_value > 0.0f)
-	{
-		//*_entity->disable_draw = false;
-	}
-	else
-	{
-		//*_entity->disable_draw = true;
-	}
-
-	if
-		(
-			(
-				(EClickableArea::active_clickable_region == nullptr)
-				||
-				(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
-				||
-				(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
-				||
-				(EButtonGroup::parent_vector_moving_group != nullptr)
-			)
-			&&
-			(
-				(_custom_data->clickable_area_list.at(0)->catched_body)
-				||
-				(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
-				||
-				(EButtonGroup::parent_vector_moving_group != nullptr)
-			)
-			&&
-			(*data_bar->max_value > 0.0f)
-		)
-	{
-
-
-
-
-
-		if (_custom_data->clickable_area_list.at(0)->catched_body)
-		{
-			if (EInputCore::mouse_button_state[GLFW_MOUSE_BUTTON_LEFT] != GLFW_RELEASE)
-			{
-				_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y += EInputCore::MOUSE_SPEED_Y;
-			}
-
-			if (*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id != 1)
-			{
-				*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id = 1;
-
-				_entity->set_world_positions(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
-				_entity->generate_vertex_buffer_for_all_sprite_layers();
-			}
-		}
-
-		if
-			(
-				(EInputCore::scroll_direction != 0)
-				&&
-				(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
-				&&
-				(entity_button->parent_button_group->region_gabarite->size_y > 10.0f)
-			)
-		{
-				_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
-				+=
-				(pow(EInputCore::scroll_direction, 5.0) * 2.0f)
-				*
-				(entity_button->parent_button_group->region_gabarite->size_y / *data_bar->max_value)
-				*
-				10.0f;
-		}
-
-		if
-			(
-				(
-					(EInputCore::mouse_button_state[GLFW_MOUSE_BUTTON_LEFT] != GLFW_RELEASE)
-					&&
-					(EInputCore::MOUSE_SPEED_Y != 0.0)
-					&&
-					(_custom_data->clickable_area_list.at(0)->catched_body)
-				)
-				||
-				(
-					(EInputCore::scroll_direction != 0)
-					&&
-					(EButtonGroup::focused_button_group_with_slider == entity_button->parent_button_group)
-				)
-			)
-		{
-				_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
-				=
-				max(entity_button->parent_button_group->border_bottom, _custom_data->clickable_area_list.at(0)->region_gabarite->offset_y);
-
-				_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
-				=
-				min
-				(
-					entity_button->parent_button_group->region_gabarite->size_y
-					-
-					_custom_data->clickable_area_list.at(0)->region_gabarite->size_y
-					-
-					entity_button->parent_button_group->border_up,
-					_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
-				);
-
-			*data_bar->current_percent
-				=
-				//head position (990 - 7) = 983
-				(
-					_custom_data->clickable_area_list.at(0)->region_gabarite->offset_y
-					-
-					entity_button->parent_button_group->border_bottom
-					)
-				/
-				(
-					entity_button->parent_button_group->region_gabarite->size_y//1000
-					-
-					_custom_data->clickable_area_list.at(0)->region_gabarite->size_y//39
-					-
-					entity_button->parent_button_group->border_up
-					-
-					entity_button->parent_button_group->border_bottom//7
-					);
-
-			*data_bar->current_percent = min(*data_bar->current_percent, 1.0f);
-
-			float old_value = *data_bar->value_pointer;
-			
-			if (entity_button->parent_button_group->child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
-			{
-				*data_bar->value_pointer
-					=
-					round
-					(
-						*data_bar->current_percent
-						*
-						*data_bar->max_value
-						*
-						-1.0f
-					);
-			}
-			else
-			if (entity_button->parent_button_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
-			{
-				*data_bar->value_pointer
-					=
-					round
-					(
-						(1.0f - *data_bar->current_percent)
-						*
-						*data_bar->max_value
-						*
-						1.0f
-					);
-			}
-
-			//EInputCore::logger_param("value pointer", *data_bar->value_pointer);
-
-			float new_value = *data_bar->value_pointer;
-			float diff = new_value - old_value;
-
-			entity_button->parent_button_group->translate_group_content(0.0f, diff, 0.0f, false);
-			//entity_button->parent_button_group->recursive_recalculate_culling_lines();
-			//entity_button->parent_button_group->need_recalculate_culling_lines = true;
-
-			_entity->set_world_positions(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
-			entity_button->generate_vertex_buffer_for_all_sprite_layers();
-
-			//EInputCore::logger_param("scroll_y", *data_bar->value_pointer);
-		}
-	}
-	else
-	{
-
-	}
-
-	if
-		(
-			(!_custom_data->clickable_area_list.at(0)->catched_body)
-			&&
-			(_custom_data->get_sprite_frame_by_id(0, 0, 0) != nullptr)
-			)
-	{
-		if (*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id != 0)
-		{
-			*_custom_data->get_sprite_frame_by_id(0, 0, 0)->active_frame_id = 0;
-
-			_entity->set_world_positions(_entity->world_position_x, _entity->world_position_y, _entity->world_position_z);
-			_entity->generate_vertex_buffer_for_all_sprite_layers();
-		}
-
-	}
-
-
-	//*_entity->world_position_x = *entity_button->parent_button_group->region->world_position_x + *entity_button->parent_button_group->region->size_x - *entity_button->button_gabarite->size_x;
-	//*_entity->world_position_y = *entity_button->parent_button_group->region->world_position_y;
-
-	//_entity->custom_data_list.at(0)->get_sprite_by_id(0, 0, 0, 0)->generate_vertex_buffer_for_sprite_layer("");
-
-	//_custom_data->clickable_region_list.at(0)->sprite_layer_list.at(0)->generate_vertex_buffer_for_sprite_layer("");
-
-
-
-	//_custom_data->get_sprite_layer_by_id(0, 0)->generate_vertex_buffer_for_sprite_layer("");
-
-
-
-	//_entity->
-
-	//*_entity->world_position_y = *entity_button->parent_button_group->region->world_position_y + *_entity->offset_y;
-	//_entity->set_world_position(*_entity->world_position_x, *_entity->world_position_y, *_entity->world_position_z);
-	//_entity->generate_vertex_buffer_for_all_sprite_layers();
-}
 
 void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECustomData* _custom_data, float _d)
 {
@@ -1158,7 +859,7 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 		}
 		else
 		{
-			data->current_value = (EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom - data->pointer_to_brick_bg_sprite_layer->world_position_x) / data->operable_area_size_x;
+			data->current_value = (EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom - data->pointer_to_brick_line_sprite_layer->world_position_x) / data->operable_area_size_x;
 		}
 
 		data->current_value = max(data->current_value, 0.0f);
@@ -1203,8 +904,8 @@ void EDataActionCollection::action_draw_horizontal_named_slider(Entity* _entity,
 			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-			data->pointer_to_brick_bg_sprite_layer->world_position_x,
-			data->pointer_to_brick_bg_sprite_layer->world_position_y,
+			data->pointer_to_brick_line_sprite_layer->world_position_x,
+			data->pointer_to_brick_line_sprite_layer->world_position_y,
 
 			data->operable_area_size_x * data->current_value + data->style->round_slider->main_texture->size_x_in_pixels / 2.0f,
 			data->style->round_slider->main_texture->size_y_in_pixels,
@@ -1219,8 +920,8 @@ void EDataActionCollection::action_draw_horizontal_named_slider(Entity* _entity,
 		(
 			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-			data->pointer_to_brick_bg_sprite_layer->world_position_x + data->operable_area_size_x * data->current_value,
-			data->pointer_to_brick_bg_sprite_layer->world_position_y,
+			data->pointer_to_brick_line_sprite_layer->world_position_x + data->operable_area_size_x * data->current_value,
+			data->pointer_to_brick_line_sprite_layer->world_position_y,
 			data->style->round_slider->main_texture
 		);
 
@@ -2509,6 +2210,10 @@ void ERegionGabarite::set_region_offset_and_size(float _offset_x, float _offset_
 	offset_x = _offset_x;
 	offset_y = _offset_y;
 	offset_z = _offset_z;
+
+	world_position_x = _offset_x;
+	world_position_y = _offset_y;
+	world_position_z = _offset_z;
 
 	size_x = _size_x;
 	size_y = _size_y;

@@ -540,8 +540,8 @@ void EntityButton::init(ERegionGabarite* _region_gabarite, EButtonGroup* _parent
 
 	sprite_layer_list.push_back(ESpriteLayer::create_default_sprite_layer(nullptr));
 
-	EntityButton::button_generate_brick_bg(this, _parent_group->selected_style);
-	set_world_position_w(_region_gabarite);
+	//EntityButton::button_generate_brick_bg(this, _parent_group->selected_style);
+	//set_world_position_w(_region_gabarite);
 
 	action_on_generate_vertex_buffer.push_back(&action_generate_brick_bg_for_button);
 }
@@ -860,41 +860,11 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	jc_button->action_on_generate_vertex_buffer.push_back(&action_generate_brick_bg_for_button);
 	jc_button->action_on_generate_vertex_buffer.push_back(&action_generate_vertex_for_horizontal_named_slider);
 
-	ESpriteLayer* bg_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
-	data->pointer_to_brick_bg_sprite_layer = bg_layer;
+	ESpriteLayer*
+	brick_line_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
 
-	NS_ERenderCollection::set_brick_borders_and_subdivisions
-	(
-		*_style->slider_bg->side_size_left,
-		*_style->slider_bg->side_size_right,
-		*_style->slider_bg->side_size_bottom,
-		*_style->slider_bg->side_size_up,
-				 
-		*_style->slider_bg->subdivision_x,
-		*_style->slider_bg->subdivision_y
-	);
-
-	NS_ERenderCollection::temporary_sprites = false;
-
-	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
-	(
-		0.0f,
-		0.0f,
-		0.0f,
-		jc_button->button_gabarite->size_x,
-		15.0f
-	);
-
-	NS_ERenderCollection::generate_brick_texture
-	(
-		ERegionGabarite::temporary_gabarite,
-		bg_layer,
-		_style->slider_bg->main_texture,
-		_style->slider_bg->normal_map_texture,
-		_style->slider_bg->gloss_map_texture
-	);
-
-	jc_button->sprite_layer_list.push_back(bg_layer);
+	data->pointer_to_brick_line_sprite_layer = brick_line_layer;
+	jc_button->sprite_layer_list.push_back(brick_line_layer);
 
 
 	/*ESpriteLayer* head_layer = ESpriteLayer::create_default_sprite_layer(_style->round_slider->main_texture);
@@ -1799,9 +1769,10 @@ void action_generate_vertex_for_horizontal_named_slider(EntityButton* _but, EGUI
 
 	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
 	(
+		_but->world_position_x,
+		_but->world_position_y,
 		0.0f,
-		0.0f,
-		0.0f,
+
 		_but->button_gabarite->size_x,
 		15.0f
 	);
@@ -1809,11 +1780,13 @@ void action_generate_vertex_for_horizontal_named_slider(EntityButton* _but, EGUI
 	NS_ERenderCollection::generate_brick_texture
 	(
 		ERegionGabarite::temporary_gabarite,
-		data->pointer_to_brick_bg_sprite_layer,
+		data->pointer_to_brick_line_sprite_layer,
 		_style->slider_bg->main_texture,
 		_style->slider_bg->normal_map_texture,
 		_style->slider_bg->gloss_map_texture
 	);
+
+
 }
 
 void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _style)
@@ -1843,8 +1816,8 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 
 	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
 	(
-		0.0f,
-		0.0f,
+		_but->world_position_x,
+		_but->world_position_y,
 		0.0f,
 		_but->parent_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
 		total_group_height

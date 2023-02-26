@@ -93,6 +93,25 @@ namespace NS_ERenderCollection
 	extern void add_data_to_vertex_buffer_sprite_test(float* _array, unsigned int& _start_offset, ESprite* _sprite);
 	extern void add_data_to_vertex_buffer_sprite_PBR(float* _array, unsigned int& _start_offset, ESprite* _sprite);
 	extern void add_data_to_vertex_buffer_texture_gabarite_PBR(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, ETextureGabarite* _texture, ETextureGabarite* _gloss, ETextureGabarite* _normal);
+	
+	extern void add_data_to_vertex_buffer_texture_fragment_PBR
+	(
+		float* _array,
+		unsigned int& _start_offset,
+
+		float _x,
+		float _y,
+
+		float _w,
+		float _h,
+
+		float _uv_x,
+		float _uv_y,
+
+		ETextureGabarite* _texture,
+		ETextureGabarite* _gloss,
+		ETextureGabarite* _normal
+	);
 
 	extern void add_data_to_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture);
 
@@ -577,6 +596,7 @@ public:
 	unsigned int last_buffer_id = (0);
 	unsigned int total_capacity = (0);
 
+	bool autodeletable = true;
 	ERenderBatcher* batcher = nullptr;
 	float* vertex_buffer = nullptr;
 

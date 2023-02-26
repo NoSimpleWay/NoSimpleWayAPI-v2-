@@ -1110,12 +1110,14 @@ void EButtonGroup::draw_button_group()
 							but->have_phantom_draw = false;
 							//generate vertex buffer for buttons
 
+
+
+							but->set_world_positions(but->world_position_x, but->world_position_y, but->world_position_z);
+
 							for (change_style_action csa : but->action_on_generate_vertex_buffer)
 							{
 								csa(but, selected_style);
 							}
-
-							but->set_world_positions(but->world_position_x, but->world_position_y, but->world_position_z);
 							but->generate_vertex_buffer_for_all_sprite_layers();
 
 							//but->highlight_time = but->max_highlight_time;
@@ -1782,17 +1784,6 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 		EButtonGroup::generate_brick_textured_bg(_group);
 		_group->need_redraw = false;
 
-		if (_group->background_sprite_layer != nullptr)
-		{
-			_group->background_sprite_layer->sprite_layer_set_world_position
-			(
-				_group->region_gabarite->world_position_x,
-				_group->region_gabarite->world_position_y,
-				_group->region_gabarite->world_position_z
-			);
-
-			_group->background_sprite_layer->generate_vertex_buffer_for_sprite_layer("Button group background");
-		}
 
 		for (EClickableArea* clickable_area : _group->clickable_area_list)
 		{
@@ -1817,13 +1808,16 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 					(but->entity_is_active())
 			)
 			{
+
+
+				but->set_world_positions(but->world_position_x, but->world_position_y, but->world_position_z);
 				for (change_style_action csa : but->action_on_generate_vertex_buffer)
 				{
 					csa(but, _group->selected_style);
 				}
-
-				but->set_world_positions(but->world_position_x, but->world_position_y, but->world_position_z);
 				but->generate_vertex_buffer_for_all_sprite_layers();
+
+
 
 				but->have_phantom_draw = false;
 			}
@@ -2262,7 +2256,7 @@ void EButtonGroup::stretch_all_buttons()
 			if (stretchable_elements_count > 0)
 			{
 				free_space = free_space - total_button_size;
-				additional_space_for_each_button = (round)(free_space / stretchable_elements_count);
+				additional_space_for_each_button = (int)(free_space / stretchable_elements_count);
 
 				for (EntityButton* but : button_line_list[i].button_list)
 				if (but->entity_is_active())
@@ -2404,6 +2398,13 @@ void EButtonGroup::put_buttons_to_lines()
 	if (but->entity_is_active())
 	{
 		//but->highlight_time - 0.0f;
+		button_max_y
+		=
+		max
+		(
+			button_max_y,
+			but->button_gabarite->size_y + ((!but->disable_force_field) ? (but->force_field_bottom + but->force_field_up) : (0.0f))
+		);
 
 		this_button_size = but->button_gabarite->size_x + ((!but->disable_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f));
 		//size all buttons on line
@@ -2435,18 +2436,14 @@ void EButtonGroup::put_buttons_to_lines()
 
 			total_size = this_button_size;
 			//but->highlight_time = 1.0f;
+
+			button_max_y = 0.0f;
 		}
 
 			jc_line.button_list.push_back(but);
 
 
-		button_max_y
-		=
-		max
-		(
-			button_max_y,
-			but->button_gabarite->size_y + ((!but->disable_force_field) ? (but->force_field_bottom + but->force_field_up) : (0.0f))
-		);
+		
 
 		
 	}
@@ -3060,6 +3057,7 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 {
 	if ((_group != nullptr) && (_group->selected_style != nullptr) && (_group->background_sprite_layer != nullptr))
 	{
+		
 		if (_group->seed == 0) { _group->seed = rand() % 70000; }
 
 		NS_ERenderCollection::temporary_sprites = true;
