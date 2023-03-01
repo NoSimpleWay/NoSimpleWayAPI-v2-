@@ -1,0 +1,554 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Simple Lockpick"
+	[tag]"name RU"		[value]"Простая отмычка"
+
+	[tag]"icon path"	[value]"Lockpick"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Standard Lockpick"
+	[tag]"name RU"		[value]"Стандартная отмычка"
+
+	[tag]"icon path"	[value]"Lockpick"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fine Lockpick"
+	[tag]"name RU"		[value]"Тонкая отмычка"
+
+	[tag]"icon path"	[value]"Lockpick"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Master Lockpick"
+	[tag]"name RU"		[value]"Мастерская отмычка"
+
+	[tag]"icon path"	[value]"Lockpick"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Best heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Leather Bracers"
+	[tag]"name RU"		[value]"Кожаные наручи"
+
+	[tag]"icon path"	[value]"Bracers"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Studded Bracers"
+	[tag]"name RU"		[value]"Клёпаные наручи"
+
+	[tag]"icon path"	[value]"Bracers"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runed Bracers"
+	[tag]"name RU"		[value]"Рунные наручи"
+
+	[tag]"icon path"	[value]"Bracers"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Steel Bracers"
+	[tag]"name RU"		[value]"Стальные наручи"
+
+	[tag]"icon path"	[value]"Bracers"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Best heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crude Sensing Charm"
+	[tag]"name RU"		[value]"Грубый чуящий амулет"
+
+	[tag]"icon path"	[value]"Charm"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fine Sensing Charm"
+	[tag]"name RU"		[value]"Тонкий чуящий амулет"
+
+	[tag]"icon path"	[value]"Charm"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Sensing Charm"
+	[tag]"name RU"		[value]"Гладкий чуящий амулет"
+
+	[tag]"icon path"	[value]"Charm"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thaumaturgical Sensing Charm"
+	[tag]"name RU"		[value]"Волшебный чуящий амулет"
+
+	[tag]"icon path"	[value]"Charm"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Best heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Voltaxic Flashpowder"
+	[tag]"name RU"		[value]"Вольтаксовый порох"
+
+	[tag]"icon path"	[value]"Powder"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Trarthan Flashpowder"
+	[tag]"name RU"		[value]"Тератновый порох"
+
+	[tag]"icon path"	[value]"Powder"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Azurite Flashpowder"
+	[tag]"name RU"		[value]"Азуритовый порох"
+
+	[tag]"icon path"	[value]"Powder"
+	[tag]"base class"	[value]"Heist Tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thaumetic Flashpowder"
+	[tag]"name RU"		[value]"Волшебный порох"
+
+	[tag]"icon path"	[value]"Powder"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Best heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crude Ward"
+	[tag]"name RU"		[value]"Грубый оберег"
+
+	[tag]"icon path"	[value]"Ward"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lustrous Ward"
+	[tag]"name RU"		[value]"Блестящий оберег"
+
+	[tag]"icon path"	[value]"Ward"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Shining Ward"
+	[tag]"name RU"		[value]"Сияющий оберег"
+
+	[tag]"icon path"	[value]"Ward"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thaumaturgical Ward"
+	[tag]"name RU"		[value]"Волшебный оберег"
+
+	[tag]"icon path"	[value]"Ward"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Best heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Essential Keyring"
+	[tag]"name RU"		[value]"Cвязка типовых ключей"
+
+	[tag]"icon path"	[value]"Key"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Versatile Keyring"
+	[tag]"name RU"		[value]"Связка универсальных ключей"
+
+	[tag]"icon path"	[value]"Key"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Skeleton Keyring"
+	[tag]"name RU"		[value]"Связка универсальных ключей"
+
+	[tag]"icon path"	[value]"Key"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grandmaster Keyring"
+	[tag]"name RU"		[value]"Связка великого мастера ключей"
+
+	[tag]"icon path"	[value]"Key"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Best heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eelskin Sole"
+	[tag]"name RU"		[value]"Щучьи подошвы"
+
+	[tag]"icon path"	[value]"Sole"
+	[tag]"base class"	[value]"Heist Tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Foxhide Sole"
+	[tag]"name RU"		[value]"Лисьи подошвы"
+
+	[tag]"icon path"	[value]"Sole"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Sole"
+	[tag]"name RU"		[value]"Крылатые подошвы"
+
+	[tag]"icon path"	[value]"Sole"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Silkweave Sole"
+	[tag]"name RU"		[value]"Шелкопрядные подошвы"
+
+	[tag]"icon path"	[value]"Sole"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Best heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Basic Disguise Kit"
+	[tag]"name RU"		[value]"Простой маскировочный набор"
+
+	[tag]"icon path"	[value]"Mask"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Theatre Disguise Kit"
+	[tag]"name RU"		[value]"Театральный маскировочный набор"
+
+	[tag]"icon path"	[value]"Mask"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Espionage Disguise Kit"
+	[tag]"name RU"		[value]"Шпионский маскировочный набор"
+
+	[tag]"icon path"	[value]"Mask"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Regicide Disguise Kit"
+	[tag]"name RU"		[value]"Маскировочный набор цареубийцы"
+
+	[tag]"icon path"	[value]"Mask"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Best heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Steel Drill"
+	[tag]"name RU"		[value]"Стальная дрель"
+
+	[tag]"icon path"	[value]"Drill"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flanged Drill"
+	[tag]"name RU"		[value]"Звездообразная дрель"
+
+	[tag]"icon path"	[value]"Drill"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sulphur Blowtorch"
+	[tag]"name RU"		[value]"Серная горелка"
+
+	[tag]"icon path"	[value]"Firetorch"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thaumetic Blowtorch"
+	[tag]"name RU"		[value]"Волшебная горелка"
+
+	[tag]"icon path"	[value]"Firetorch"
+	[tag]"base class"	[value]"Heist Tool"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Best heist tool"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

@@ -2351,6 +2351,11 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 			NS_EGraphicCore::texture_gabarites_list[index].push_back(new_gabarite);
 
 			ETextureGabarite::incomplete_gabarites_list.push_back(new_gabarite);
+
+			if (new_gabarite->get_name() == "")
+			{
+				EInputCore::logger_simple_error("empty texture name");
+			}
 		}
 	}
 	else

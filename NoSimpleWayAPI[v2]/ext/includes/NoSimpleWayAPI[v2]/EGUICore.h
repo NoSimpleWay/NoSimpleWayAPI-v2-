@@ -556,10 +556,10 @@ public:
 	void highlight_this_group();
 	void recursive_change_localisation(int _localisaton_id);
 
-	void add_default_clickable_region_with_text_area(ELocalisationText* _text);
+	void add_default_clickable_region_with_text_area(ELocalisationText _text);
 
 	void init_as_root_group(EWindow* _window);
-	void init_as_fast_message(EWindow* _window, ELocalisationText* _text);
+	void init_as_fast_message(EWindow* _window, ELocalisationText _text);
 };
 
 class EButtonGroupFastMessage : public EButtonGroup

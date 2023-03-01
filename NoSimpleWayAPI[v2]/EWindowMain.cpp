@@ -12,10 +12,7 @@
 /**/
 
 /**/
-#ifndef _E_DATA_ENTITY_ALREADY_LINKED_
-#define _E_DATA_ENTITY_ALREADY_LINKED_
 #include "NoSimpleWayAPI[v2]/EDataEntity.h"
-#endif
 /**/
 
 /**/
@@ -1863,11 +1860,17 @@ EWindowMain::EWindowMain()
 
 	register_game_item_attributes();
 
+	
+
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item].txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](heist_tool).txt");
+
 	ETextParser::data_entity_parse_file("data/data_entity_list[influence].txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[base_class].txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[explicit].txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[enchantment].txt");
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[localisation].txt");
 
 	ETextParser::split_data_entity_list_to_named_structs();
 
@@ -2483,13 +2486,18 @@ EWindowMain::EWindowMain()
 				button_select_style = new EntityButton();
 			style_select_group->add_button_to_working_group(button_select_style);
 
+			ELocalisationText ltext;
+			ltext.localisations[NSW_localisation_EN] = "Select style [" + gui_style->localisation_text.localisations[ELocalisationText::active_localisation] + "]";
+			ltext.localisations[NSW_localisation_RU] = "Выбрать стиль [" + gui_style->localisation_text.localisations[ELocalisationText::active_localisation] + "]";
+
 			button_select_style->make_default_button_with_unedible_text
 			(
 				new ERegionGabarite(280.0f, 40.0f),
 				style_select_group,
 				&EDataActionCollection::action_select_this_style,
-				"Select style [" + gui_style->localisation_text.localisations[ELocalisationText::active_localisation] + "]"
+				ltext
 			);
+			button_select_style->main_text_area->localisation_text = ltext;
 
 			//&EDataActionCollection::action_select_this_style
 
@@ -2553,7 +2561,7 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(50.0f, 30.0f),
 			new_loot_filter_workspace_group,
 			&EDataActionCollection::action_create_new_loot_filter_with_name,
-			"OK"
+			ELocalisationText::get_localisation_by_key("OK")
 		);
 
 		new_loot_filter_workspace_group->add_button_to_working_group(button_accept);
@@ -2667,7 +2675,7 @@ EWindowMain::EWindowMain()
 
 			if ((i > 0) && (EFilterRule::registered_filter_rules_for_list[i]->categry_id != EFilterRule::registered_filter_rules_for_list[i - 1]->categry_id))
 			{
-				filter_button->force_field_bottom = 16.0f;
+				filter_button->force_field_bottom = 32.0f;
 			}
 
 			//filter_button->
@@ -2704,6 +2712,8 @@ EWindowMain::EWindowMain()
 		jc_button->main_text_area->gray_text.localisations[NSW_localisation_EN] = "Type search text...";
 		jc_button->main_text_area->gray_text.localisations[NSW_localisation_RU] = "Напишите текст поиска...";
 
+		jc_button->can_be_stretched = true;
+
 		jc_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_search_data_entity_text);
 
 		jc_data_container_for_search_group->pointer_to_search_bar = jc_button;
@@ -2730,14 +2740,8 @@ EWindowMain::EWindowMain()
 				new ERegionGabarite(256.0f, 25.0f),
 				jc_button_group,
 				&EDataActionCollection::action_add_text_as_item,
-				"Add this text as item"
+				ELocalisationText::get_localisation_by_key("button_add_this_text_as_item")
 			);
-
-			ELocalisationText ltext;
-			ltext.localisations[NSW_localisation_EN] = "Add this text as item";
-			ltext.localisations[NSW_localisation_RU] = "Добавить 'как есть'";
-
-			jc_button->main_text_area->localisation_text = ltext;
 
 			jc_button_group->add_button_to_working_group(jc_button);
 		}
@@ -2750,14 +2754,8 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(256.0f, 25.0f),
 			jc_button_group,
 			&EDataActionCollection::action_add_all_entity_buttons_to_filter_block,
-			"Add all these items"
+			ELocalisationText::get_localisation_by_key("button_add_all_these_items")
 		);
-
-		ELocalisationText ltext;
-		ltext.localisations[NSW_localisation_EN] = "Add all these items";
-		ltext.localisations[NSW_localisation_RU] = "Добавить все предметы";
-
-		jc_button->main_text_area->localisation_text = ltext;
 
 
 
@@ -2803,7 +2801,7 @@ EWindowMain::EWindowMain()
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			"Глянец"
+			ELocalisationText::get_localisation_by_key("gloss_slider_value")
 		);
 		jc_button->can_be_stretched = true;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::global_gloss_multiplier;
@@ -2819,7 +2817,7 @@ EWindowMain::EWindowMain()
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			"Нормаль"
+			ELocalisationText::get_localisation_by_key("normal_slider_value")
 		);
 		jc_button->can_be_stretched = true;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::global_normal_multiplier;
@@ -3013,7 +3011,7 @@ EWindowMain::EWindowMain()
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			"Матовый свет неба"
+			ELocalisationText::get_localisation_by_key("sky_light_slider")
 		);
 		jc_button->can_be_stretched = true;
 
@@ -3030,7 +3028,7 @@ EWindowMain::EWindowMain()
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			"Матовый свет солнца"
+			ELocalisationText::get_localisation_by_key("sun_light_slider")
 		);
 		jc_button->can_be_stretched = true;
 
@@ -3049,7 +3047,7 @@ EWindowMain::EWindowMain()
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			"Яркость отражения"
+			ELocalisationText::get_localisation_by_key("reflection_value_slider")
 		);
 		jc_button->can_be_stretched = true;
 
@@ -3076,7 +3074,7 @@ EWindowMain::EWindowMain()
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			"Зум"
+			ELocalisationText::get_localisation_by_key("zoom_slider")
 		);
 		jc_button->can_be_stretched = true;
 
@@ -3227,7 +3225,7 @@ EWindowMain::EWindowMain()
 
 			variant_router_button->layer_with_icon = variant_router_button->sprite_layer_list.back();
 			//
-			ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(variant_router_button), EFont::font_list[0], "|?|");
+			ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(variant_router_button), EFont::font_list[0], ELocalisationText());
 			variant_router_button->pointer_to_text_area = jc_text_area;
 
 			jc_text_area->can_be_edited = false;
@@ -3331,18 +3329,13 @@ EWindowMain::EWindowMain()
 
 			ELocalisationText l_text;
 
-			l_text.localisations[NSW_localisation_EN] = "Area level";
-			l_text.localisations[NSW_localisation_RU] = "Уровень области";
-
 			button_area_level_text->make_default_button_with_unedible_text
 			(
 				new ERegionGabarite(150.0f, 25.0f),
 				top_control_part,
 				nullptr,
-				l_text.localisations[ELocalisationText::active_localisation]
+				ELocalisationText::get_localisation_by_key("button_area_level")
 			);
-
-			button_area_level_text->main_text_area->localisation_text = l_text;
 
 
 			top_control_part->add_button_to_working_group(button_area_level_text);
@@ -3497,8 +3490,9 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(160.0f, 30.0f),
 			filter_block_operation_segment,
 			&EDataActionCollection::action_add_new_filter_block,
-			l_text.localisations[ELocalisationText::active_localisation]
+			l_text
 		);
+		jc_button->can_be_stretched = true;
 		jc_button->main_text_area->localisation_text = l_text;
 		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 
@@ -3514,8 +3508,9 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(160.0f, 30.0f),
 			filter_block_operation_segment,
 			&EDataActionCollection::action_clone_block,
-			l_text.localisations[ELocalisationText::active_localisation]
+			l_text
 		);
+		clone_button->can_be_stretched = true;
 		clone_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 		clone_button->main_text_area->localisation_text = l_text;
 		//clone_button->parent_filter_block = 
@@ -3535,8 +3530,9 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(160.0f, 30.0f),
 			filter_block_operation_segment,
 			&EDataActionCollection::action_add_separator_block,
-			l_text.localisations[ELocalisationText::active_localisation]
+			l_text
 		);
+		separator_button->can_be_stretched = true;
 		separator_button->main_text_area->localisation_text = l_text;
 		separator_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 		//clone_button->parent_filter_block = 
@@ -3600,7 +3596,7 @@ EWindowMain::EWindowMain()
 					new ERegionGabarite(160.0f, 38.0f),
 					target_group,
 					&EDataActionCollection::action_add_selected_content_to_filter_block,
-					fba->localisation.localisations[ELocalisationText::active_localisation]
+					fba->localisation
 				);
 
 				EntityButton::get_last_custom_data(jc_button)->data_container = add_content_data;
@@ -4267,7 +4263,7 @@ EWindowMain::EWindowMain()
 
 		fast_message_background_loading->exist_time = 10.0f;
 		fast_message_background_loading->delete_when_expire = true;
-		fast_message_background_loading->init_as_fast_message(this, &ltext);
+		fast_message_background_loading->init_as_fast_message(this, ELocalisationText::get_localisation_by_key("fast_message_background_loading"));
 
 		fast_message_background_loading->need_refresh = true;
 		button_group_list.push_back(fast_message_background_loading);
@@ -6266,21 +6262,26 @@ void EWindowMain::register_filter_rules()
 	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Мусорная валюта";
 	jc_filter_rule->tag = "Game item";
 
-	//filter by game item
+
 	jc_filter = new DataEntityFilter();
 	jc_filter->target_tag_name = "data type";
 	jc_filter->suitable_values_list.push_back("Game item");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	//
 
-	//filter by class "divination"
+
 	jc_filter = new DataEntityFilter();
 	jc_filter->target_tag_name = "base class";
 	jc_filter->suitable_values_list.push_back("Stackable currency");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	//
 
-	//filter by class "divination"
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Basic currency");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
 	jc_filter = new DataEntityFilter();
 	jc_filter->target_tag_name = "worth";
 	jc_filter->suitable_values_list.push_back("Trash");
@@ -6316,6 +6317,12 @@ void EWindowMain::register_filter_rules()
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	//
 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Basic currency");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
 	//filter by class "divination"
 	jc_filter = new DataEntityFilter();
 	jc_filter->target_tag_name = "worth";
@@ -6348,6 +6355,12 @@ void EWindowMain::register_filter_rules()
 	jc_filter = new DataEntityFilter();
 	jc_filter->target_tag_name = "base class";
 	jc_filter->suitable_values_list.push_back("Stackable currency");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Basic currency");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	//
 
@@ -6387,6 +6400,12 @@ void EWindowMain::register_filter_rules()
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	//
 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Basic currency");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
 	//filter by class "divination"
 	jc_filter = new DataEntityFilter();
 	jc_filter->target_tag_name = "worth";
@@ -6400,14 +6419,14 @@ void EWindowMain::register_filter_rules()
 
 
 	////////////////////////////////////////////////////////////////////////////////////////////
-	//Heist bases
+	//HEIST TOOL
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/SuperRing");
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Mask");
 	jc_filter_rule->categry_id = 3;
 
 	jc_filter_rule->localisation_text = new ELocalisationText();
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist bases";
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Базы кражи";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist tools";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Инструменты кражи";
 	jc_filter_rule->tag = "Game item";
 
 	//filter by game item
@@ -6420,7 +6439,7 @@ void EWindowMain::register_filter_rules()
 	//filter "item tag" by 
 	jc_filter = new DataEntityFilter();
 	jc_filter->target_tag_name = "item tag";
-	jc_filter->suitable_values_list.push_back("Heist base");
+	jc_filter->suitable_values_list.push_back("Heist tool");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	//
 
@@ -6428,9 +6447,39 @@ void EWindowMain::register_filter_rules()
 	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//BEST HEIST TOOL
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Mask");
+	jc_filter_rule->categry_id = 3;
+
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist tools";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Инструменты кражи";
+	jc_filter_rule->tag = "Game item";
+
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Best heist tool");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
 	//
 	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+
+
+
 
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//Atlas bases
@@ -7215,7 +7264,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	);
 	button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
 	//
-	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], "|?|");
+	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], ELocalisationText());
 	button_variant_router->pointer_to_text_area = jc_text_area;
 
 	jc_text_area->can_be_edited = false;
@@ -7280,7 +7329,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	button_continue->layer_with_icon = button_continue->sprite_layer_list.back();
 	//
-	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_continue), EFont::font_list[0], "|?|");
+	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_continue), EFont::font_list[0], ELocalisationText());
 	button_continue->pointer_to_text_area = jc_text_area;
 
 	jc_text_area->can_be_edited = false;
@@ -7425,7 +7474,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
 
-		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], "|?|");
+		ETextArea*
+		jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], ELocalisationText::empty_localisation);
 		button_variant_router->pointer_to_text_area = jc_text_area;
 
 		jc_text_area->can_be_edited = false;
@@ -7651,7 +7701,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
 
-	jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+	jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText::empty_localisation);
 	button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
 	jc_text_area->can_be_edited = false;
@@ -8048,7 +8098,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
 
-	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText());
 	button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
 	jc_text_area->can_be_edited = false;
@@ -8181,7 +8231,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
 
-	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText());
 	button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
 	jc_text_area->can_be_edited = false;
@@ -8236,7 +8286,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			top_drop_sound_section,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			"Volume"
+			ELocalisationText::get_localisation_by_key("volume_slider")
 		);
 		//jc_button->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
 			
@@ -8246,10 +8296,6 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			jc_button->description_container->localisation_text.localisations[NSW_localisation_RU] = "Определяет, насколько громкими будут звуки дропа";
 			jc_button->description_container->parent_button = jc_button;
 		//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##
-
-		jc_button->main_text_area->localisation_text.base_name = "Volume";
-		jc_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = "Volume";
-		jc_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = "Громкость";
 
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_filter_block_group->sound_volume_value;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
@@ -8284,7 +8330,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
 
-		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText());
 		button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
 		jc_text_area->can_be_edited = false;
@@ -8416,7 +8462,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
 
-		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText());
 		button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
 		jc_text_area->can_be_edited = false;
@@ -8673,7 +8719,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
 
-		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText());
 		button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
 		jc_text_area->can_be_edited = false;
@@ -8755,7 +8801,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
 		button_variant_router->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
 
-		jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], "|?|");
+		jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], ELocalisationText::empty_localisation);
 		button_variant_router->pointer_to_text_area = jc_text_area;
 
 		jc_text_area->can_be_edited = false;
@@ -9126,7 +9172,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		cosmetic_segment,
 		EFont::font_list[0],
 		EGUIStyle::active_style,
-		"Размер"
+		ELocalisationText::get_localisation_by_key("font_size_slider")
 	);
 
 	jc_button->can_be_stretched = true;
@@ -9135,10 +9181,6 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 
 	jc_button->suppressor = &whole_filter_block_group->text_size_bool;
-
-	jc_button->main_text_area->localisation_text.base_name = "SetFontSize";
-	jc_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = "Size";
-	jc_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = "Размер";
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_filter_block_group->text_size;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
@@ -9198,7 +9240,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
 
-	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText());
 	button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
 	jc_text_area->can_be_edited = false;
@@ -9446,7 +9488,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
 
-	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText());
 	button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
 	jc_text_area->can_be_edited = false;
@@ -10113,7 +10155,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								for (DataEntityNamedStruct* named_struct : EDataEntity::data_entity_named_structs)
 								{
 									int
-										index = EStringUtils::hashFunction(buffer_text) & 0x000000000000000F;
+									index = EStringUtils::hashFunction(buffer_text) & 0x000000000000000F;
 									index = min(index, 15);
 									index = max(index, 0);
 
@@ -15633,7 +15675,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 
 		button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
 
-		ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], "|?|");
+		ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText());
 		button_variant_FB_router->pointer_to_text_area = jc_text_area;
 
 		jc_text_area->can_be_edited = false;

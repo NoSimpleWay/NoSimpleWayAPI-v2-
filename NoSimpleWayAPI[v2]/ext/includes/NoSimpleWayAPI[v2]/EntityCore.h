@@ -271,7 +271,8 @@ public:
 		EButtonGroup* _parent_group,
 		EFont* _font,
 		EGUIStyle* _style,
-		std::string			_text
+		ELocalisationText _ltext
+
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
@@ -308,7 +309,7 @@ public:
 		ERegionGabarite* _region_gabarite,
 		EButtonGroup* _parent_group,
 		data_action_pointer _dap,
-		std::string			_text
+		ELocalisationText _ltext
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 

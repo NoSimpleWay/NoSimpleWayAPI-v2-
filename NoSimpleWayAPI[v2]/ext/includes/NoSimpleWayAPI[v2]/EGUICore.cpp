@@ -984,6 +984,29 @@ void EButtonGroup::draw_button_group()
 				background_sprite_layer->transfer_vertex_buffer_to_batcher();
 			}
 
+			//////		DRAW BUTTON LINE BG		//////
+			if (button_size_x_override > 0.0f)
+			for (EButtonGroupLine line : button_line_list)
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLACK, 0.32f);
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+					region_gabarite->world_position_x,
+					region_gabarite->world_position_y + line.offset_y,
+
+					region_gabarite->size_x,
+					line.line_size_y,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+
+				);
+			}
+
 			if (have_rama)
 			{
 				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GRAY, 1.0f);
@@ -1006,6 +1029,8 @@ void EButtonGroup::draw_button_group()
 
 				);
 			}
+
+			
 
 			//DEBUG HIGHLIGHT - FOCUSED BUTTON GROUP
 			if ((EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL)) && (EButtonGroup::focused_button_group == this))
@@ -1093,6 +1118,10 @@ void EButtonGroup::draw_button_group()
 				max(0.0f, higher_culling_line - lower_culling_line - border_bottom - border_up)* NS_EGraphicCore::current_zoom
 			);
 
+
+
+
+
 			//DRAW BUTTONS
 			{
 				for (EntityButton* but : all_button_list)
@@ -1150,6 +1179,8 @@ void EButtonGroup::draw_button_group()
 						}
 					}
 			}
+
+			
 
 			//BUTTONS SECOND PASS DRAW
 			{
@@ -2192,6 +2223,10 @@ void EButtonGroup::activate_slider_if_need()
 
 		put_buttons_to_lines();
 	}
+	else
+	{
+		scroll_y = 0.0f;
+	}
 
 	if (slider != nullptr)
 	{
@@ -2253,13 +2288,25 @@ void EButtonGroup::stretch_all_buttons()
 			{
 				if (but->can_be_stretched) { stretchable_elements_count++; }
 
-				total_button_size += but->button_gabarite->size_x + ((!but->disable_force_field && !ignore_buttons_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f)) + 0.0f;
+				total_button_size
+				+=
+				but->button_gabarite->size_x
+				+
+				(
+					(!but->disable_force_field && !ignore_buttons_force_field)
+					?
+					(but->force_field_left + but->force_field_right)
+					:
+					(0.0f)
+				)
+				+
+				0.0f;
 			}
 
 			if (stretchable_elements_count > 0)
 			{
 				free_space = free_space - total_button_size;
-				additional_space_for_each_button = (int)(free_space / stretchable_elements_count);
+				additional_space_for_each_button = floor(free_space / (float)stretchable_elements_count);
 
 				for (EntityButton* but : button_line_list[i].button_list)
 				if (but->entity_is_active())
@@ -2271,7 +2318,7 @@ void EButtonGroup::stretch_all_buttons()
 							(additional_space_for_each_button > 0.0f)
 							&&
 							(additional_space_for_each_button <= but->button_gabarite->size_x * 0.5f)
-							)
+						)
 					{
 						but->button_gabarite->size_x += additional_space_for_each_button;
 					}
@@ -2400,24 +2447,19 @@ void EButtonGroup::put_buttons_to_lines()
 	for (EntityButton* but : workspace_button_list)
 	if (but->entity_is_active())
 	{
-		//but->highlight_time - 0.0f;
-		button_max_y
-		=
-		max
-		(
-			button_max_y,
-			but->button_gabarite->size_y
-			+
-			(
-				(!but->disable_force_field && !ignore_buttons_force_field && !ignore_vertical_buttons_force_field)
-				?
-				(but->force_field_bottom + but->force_field_up)
-				:
-				(0.0f)
-			)
-		);
 
-		this_button_size = but->button_gabarite->size_x + ((!but->disable_force_field && !ignore_buttons_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f));
+
+		this_button_size
+		=
+		but->button_gabarite->size_x
+		+
+		(
+			(!but->disable_force_field && !ignore_buttons_force_field)
+			?
+			(but->force_field_left + but->force_field_right)
+			:
+			(0.0f)
+		);
 		//size all buttons on line
 		total_size += this_button_size;
 
@@ -2427,7 +2469,7 @@ void EButtonGroup::put_buttons_to_lines()
 			(
 				(but->new_line_method == NewLineMethod::WHEN_OUT_OF_GABARITE)
 				&&
-				(total_size > region_gabarite->size_x - border_left - border_right - slider_effect)
+				(total_size > region_gabarite->size_x - border_left - slider_effect)
 				
 			)
 			||
@@ -2451,6 +2493,23 @@ void EButtonGroup::put_buttons_to_lines()
 			button_max_y = 0.0f;
 		}
 
+		//but->highlight_time - 0.0f;
+		button_max_y
+			=
+			max
+			(
+				button_max_y,
+				but->button_gabarite->size_y
+				+
+				(
+					(!but->disable_force_field && !ignore_buttons_force_field && !ignore_vertical_buttons_force_field)
+					?
+					(but->force_field_bottom + but->force_field_up)
+					:
+					(0.0f)
+					)
+			);
+
 			jc_line.button_list.push_back(but);
 
 
@@ -2458,8 +2517,10 @@ void EButtonGroup::put_buttons_to_lines()
 
 		
 	}
+
 	if (!jc_line.button_list.empty())
 	{
+		jc_line.line_size_y = button_max_y;
 		button_line_list.push_back(jc_line);
 	}
 	//if (lines_count == 0){ button_line_list.push_back(jc_line); }
@@ -3147,7 +3208,7 @@ void EButtonGroup::recursive_change_localisation(int _localisaton_id)
 
 }
 
-void EButtonGroup::add_default_clickable_region_with_text_area(ELocalisationText* _text)
+void EButtonGroup::add_default_clickable_region_with_text_area(ELocalisationText _text)
 {
 	EClickableArea*
 	new_clickable_area = EClickableArea::create_default_clickable_region(region_gabarite, this);
@@ -3156,8 +3217,8 @@ void EButtonGroup::add_default_clickable_region_with_text_area(ELocalisationText
 	clickable_area_list.push_back(new_clickable_area);
 
 	ETextArea*
-	new_text_area = ETextArea::create_centered_text_area(new_clickable_area, EFont::font_list[0], _text->localisations[ELocalisationText::active_localisation]);
-	new_text_area->localisation_text = *_text;
+	new_text_area = ETextArea::create_centered_text_area(new_clickable_area, EFont::font_list[0], _text);
+	new_text_area->localisation_text = _text;
 	new_text_area->parent_group = this;
 	new_text_area->can_be_edited = false;
 
@@ -3172,10 +3233,10 @@ void EButtonGroup::init_as_root_group(EWindow* _window)
 	init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
 }
 
-void EButtonGroup::init_as_fast_message(EWindow* _window, ELocalisationText* _text)
+void EButtonGroup::init_as_fast_message(EWindow* _window, ELocalisationText _text)
 {
 	init_as_root_group(_window);
-	ELocalisationText ltext;
+
 	add_default_clickable_region_with_text_area(_text);
 }
 
@@ -3214,12 +3275,9 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 	EClickableArea*
 		c_area_for_group = EClickableArea::create_default_clickable_region(top_part_for_description->region_gabarite, top_part_for_description);
 
-	pointer_to_description_text_area = ETextArea::create_centered_text_area(c_area_for_group, EFont::font_list[0], "123");
+	pointer_to_description_text_area = ETextArea::create_centered_text_area(c_area_for_group, EFont::font_list[0], ELocalisationText::get_localisation_by_key("warning_unsave_changes"));
 	pointer_to_description_text_area->can_be_edited = false;
 	c_area_for_group->text_area = pointer_to_description_text_area;
-
-	pointer_to_description_text_area->localisation_text.localisations[NSW_localisation_EN] = "Warning! Unsaved changes!\\n\\nIf you continue, you lost unsaved data!";
-	pointer_to_description_text_area->localisation_text.localisations[NSW_localisation_RU] = "Внимание! Несохранённые изменения!\\n\\nЕсли вы продолжите, вы потеряете несохранённые данные!";
 
 	pointer_to_description_text_area->change_text(pointer_to_description_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 	pointer_to_description_text_area->set_color(1.0f, 0.75f, 0.5f, 1.0f);
@@ -3470,7 +3528,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	// // // // // // //
 	EntityButton*
-		jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Прозрачность");
+	jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_a"));
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->a;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 	value_and_alpha_part->add_button_to_working_group(jc_button);
@@ -3480,7 +3538,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	// // // // // // //
 
-	jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, "Яркость");
+	jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_v"));
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->v;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 	value_and_alpha_part->add_button_to_working_group(jc_button);
@@ -3545,7 +3603,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	jc_button = new EntityButton();
 	jc_button->make_as_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_unbing_color);
 
-	ETextArea* jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Отвязать от шаблона");
+	ETextArea* jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], ELocalisationText::get_localisation_by_key("button_unbind_pattern"));
 	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 	control_button_segment->add_button_to_working_group(jc_button);
@@ -3554,7 +3612,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	jc_button = new EntityButton();
 	jc_button->make_as_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_create_new_color);
 
-	jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "Создать шаблон цвета");
+	jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], ELocalisationText::get_localisation_by_key("button_create_color_pattern"));
 	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 	control_button_segment->add_button_to_working_group(jc_button);

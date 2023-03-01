@@ -663,7 +663,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 		//create text area
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, "");
+		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, ELocalisationText::empty_localisation);
 		jc_text_area->offset_by_gabarite_size_x = 0.0;
 		jc_text_area->offset_by_text_size_x = 0.0;
 
@@ -675,7 +675,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		jc_button->main_text_area = jc_text_area;
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		ESpriteLayer* second_button_layer = nullptr;
-		if (_data_entity != nullptr)
+		if ((_data_entity != nullptr) && (DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity) != ""))
 		{
 
 			ETextureGabarite* item_icon = NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity));
@@ -837,7 +837,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 		return jc_button;
 }
 
-EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, std::string _text)
+EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, ELocalisationText _ltext)
 {
 	EntityButton* jc_button = new EntityButton();
 
@@ -877,7 +877,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 
 	//int selected_data_entity = _data_entity;
 
-	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
+	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _ltext);
 	jc_button->main_text_area = jc_text_area;
 
 	jc_text_area->offset_by_gabarite_size_x = 0.0;
@@ -888,9 +888,9 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 
 	jc_text_area->offset_border[BorderSide::LEFT] = _parent_group->border_left + 3.0f;
 
-	jc_text_area->change_text(_text);
+	jc_text_area->change_text(_ltext.localisations[ELocalisationText::active_localisation]);
 	data->pointer_to_text_area = jc_text_area;
-	data->stored_text = _text;
+	data->stored_text = _ltext.localisations[ELocalisationText::active_localisation];
 
 	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
@@ -936,7 +936,7 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 	EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_open_color_group);
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text.localisations[ELocalisationText::active_localisation]);
+	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
 	jc_text_area->offset_by_gabarite_size_x = 0.0;
 	jc_text_area->offset_by_text_size_x = 0.0;
 
@@ -1102,7 +1102,7 @@ EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _re
 
 
 
-void EntityButton::make_default_button_with_unedible_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, std::string _text)
+void EntityButton::make_default_button_with_unedible_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ELocalisationText _ltext)
 {
 	
 
@@ -1271,7 +1271,7 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 	if (_gabarite != nullptr)
 	{
 		jc_text_area = ETextArea::create_centered_to_left_text_area
-		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _text);
+		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], ELocalisationText::get_localisation_by_key(_text));
 
 		jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y + 3.0f;
 	}
@@ -1348,7 +1348,7 @@ void EntityButtonVariantRouter::make_default_router_variant_button(ERegionGabari
 
 	layer_with_icon = sprite_layer_list.back();
 
-	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(this), EFont::font_list[0], "|?|");
+	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(this), EFont::font_list[0], ELocalisationText());
 	pointer_to_text_area = jc_text_area;
 
 	jc_text_area->can_be_edited = false;
@@ -2092,7 +2092,7 @@ void DescriptionContainerDefault::create_description()
 		description_group->init_as_root_group(parent_button->parent_button_group->root_group->parent_window);
 		description_group->need_refresh = true;
 
-		description_group->add_default_clickable_region_with_text_area(&localisation_text);
+		description_group->add_default_clickable_region_with_text_area(localisation_text);
 
 		parent_button->parent_button_group->root_group->parent_window->button_group_list.push_back(description_group);
 		parent_button->attached_description = description_group;

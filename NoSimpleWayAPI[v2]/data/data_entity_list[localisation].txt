@@ -1,0 +1,138 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_example_"
+	[tag]"base name"	[value]"example_base_name"
+	[tag]"name EN"		[value]"Example_EN"
+	[tag]"name RU"		[value]"Example_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"gloss_slider_value"
+	[tag]"base name"	[value]"Gloss"
+	[tag]"name EN"		[value]"Gloss"
+	[tag]"name RU"		[value]"Глянец"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"normal_slider_value"
+	[tag]"base name"	[value]"Normal"
+	[tag]"name EN"		[value]"Normal"
+	[tag]"name RU"		[value]"Нормаль"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"sky_light_slider"
+	[tag]"name EN"		[value]"Matte sky light"
+	[tag]"name RU"		[value]"Матовый свет неба"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"sun_light_slider"
+	[tag]"name EN"		[value]"Matte sun light"
+	[tag]"name RU"		[value]"Матовый свет солнца"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"reflection_value_slider"
+	[tag]"name EN"		[value]"Reflection value"
+	[tag]"name RU"		[value]"Величина отражение"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"zoom_slider"
+	[tag]"name EN"		[value]"Interface scale"
+	[tag]"name RU"		[value]"Размер интерфейса"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"volume_slider"
+	[tag]"name EN"		[value]"Volume"
+	[tag]"name RU"		[value]"Громкость"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"font_size_slider"
+	[tag]"base name"	[value]"SetFontSize"
+	[tag]"name EN"		[value]"Font size"
+	[tag]"name RU"		[value]"Размер текста"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"slider_color_a"
+	[tag]"name EN"		[value]"Opacity"
+	[tag]"name RU"		[value]"Прозрачность"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"slider_color_v"
+	[tag]"name EN"		[value]"Brightness"
+	[tag]"name RU"		[value]"Яркость"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"fast_message_background_loading"
+	[tag]"name EN"		[value]"Background loading process.\nPerfomance may be affected"
+	[tag]"name RU"		[value]"Фоновая загрузка ресурсов.\nНа время загрузки производительность может быть снижена"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_unbind_pattern"
+	[tag]"name EN"		[value]"Unbind pattern"
+	[tag]"name RU"		[value]"Отвязать от шаблона"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_create_color_pattern"
+	[tag]"name EN"		[value]"Create pattern"
+	[tag]"name RU"		[value]"Создать шаблон"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"warning_unsave_changes"
+	[tag]"name EN"		[value]"Warning! Unsaved changes!\\n\\nIf you continue, you lost unsaved data!"
+	[tag]"name RU"		[value]"Внимание! Несохранённые изменения!\\n\\nЕсли вы продолжите, вы потеряете несохранённые данные!"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_add_this_text_as_item"
+	[tag]"name EN"		[value]"Add this text as item"
+	[tag]"name RU"		[value]"Добавить 'как есть'"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_add_all_these_items"
+	[tag]"name EN"		[value]"Add all these items"
+	[tag]"name RU"		[value]"Добавить все предметы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_area_level"
+	[tag]"name EN"		[value]"Area level"
+	[tag]"name RU"		[value]"Уровень области"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rarity_normal"
+	[tag]"name EN"		[value]"Normal"
+	[tag]"name RU"		[value]"Обычный"
+	
+	

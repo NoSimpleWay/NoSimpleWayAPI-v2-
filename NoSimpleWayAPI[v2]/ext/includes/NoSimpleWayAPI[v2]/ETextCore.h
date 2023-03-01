@@ -18,9 +18,13 @@ class ELocalisationText
 public:
 	ELocalisationText();
 	std::string base_name = "";
+	std::string stored_key = "";
+
 	std::string localisations[NSW_languages_count] = { "1" };
 
 	static int active_localisation;
+	static ELocalisationText get_localisation_by_key(std::string _key);
+	static ELocalisationText empty_localisation;
 };
 #endif
 
@@ -181,8 +185,12 @@ class ETextArea
 {
 public:
 	ETextArea();
+
+
+
 	ETextArea(EClickableArea* _region, EFont* _font, std::string _text);
-	ETextArea(ERegionGabarite* _region, EFont* _font, std::string _text);
+	/*------>*/ETextArea(ERegionGabarite* _region, EFont* _font, ELocalisationText _ltext);
+
 	~ETextArea();
 
 	//bool* error = new bool(false);
@@ -226,9 +234,9 @@ public:
 
 	float offset_border[BorderSide::_LAST_ELEMENT]{ 0.0f };
 
-	EClickableArea*	parent_clickable_region;
-	EntityButton*	parent_entity_for_text_area;
-	EButtonGroup*	parent_group;
+	EClickableArea* parent_clickable_region;
+	EntityButton* parent_entity_for_text_area;
+	EButtonGroup* parent_group;
 
 	//int* align_size_x = new int(AlignSide::AS_LEFT);
 	//int* align_size_y = new int(AlignSide::AS_DOWN);
@@ -270,11 +278,12 @@ public:
 	float _unused_border_offset = 5.0f;
 
 	static void set_region(ETextArea* _text_area, ERegionGabarite* _region_gabarite);
-	static ETextArea* create_base_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
+	static ETextArea* create_base_text_area(EClickableArea* _region_gabarite, EFont* _font, ELocalisationText _ltext);
 
-	static ETextArea* create_centered_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
+	static ETextArea* create_centered_text_area(EClickableArea* _region_gabarite, EFont* _font, ELocalisationText _ltext);
 	static ETextArea* create_centered_to_right_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
-	static ETextArea* create_centered_to_left_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
+
+	static ETextArea* create_centered_to_left_text_area(EClickableArea* _region_gabarite, EFont* _font, ELocalisationText _ltext);
 
 	static ETextArea* create_bottomed_to_left_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);
 	static ETextArea* create_centered_to_up_text_area(EClickableArea* _region_gabarite, EFont* _font, std::string _text);

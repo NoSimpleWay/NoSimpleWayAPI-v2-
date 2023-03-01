@@ -2608,7 +2608,7 @@ void ETextParser::data_entity_parse_file(std::string _file)
 						(raw_char == '\n')
 						||
 						(i + 1 >= str.length())
-						)
+					)
 				{
 					//if (buffer_text != "")
 					//execute action without parameters
@@ -2642,13 +2642,16 @@ void ETextParser::data_entity_parse_file(std::string _file)
 
 
 			//start or finalise read to "value text buffer"
-			if (raw_char == '"')
+			if
+			(
+				(raw_char == '"')
+			)
 			{
 				//if (action_text_buffer != "") {do_action}
-		//any char is readable char
-		//raw_text_mode = !(raw_text_mode);
-		//EInputCore::logger_simple_info("switch raw mode by \"");
-		//start fill parameter buffer
+				//any char is readable char
+				//raw_text_mode = !(raw_text_mode);
+				//EInputCore::logger_simple_info("switch raw mode by \"");
+				//start fill parameter buffer
 				if (raw_text_mode)
 				{
 					raw_text_mode = false;
@@ -2715,9 +2718,24 @@ void ETextParser::data_entity_parse_file(std::string _file)
 			}
 
 
+			if ((i + 1 >= str.length()) && (raw_text_mode))
+			{
+				EInputCore::logger_param_with_warning("missed \" at end in string", str);
+				raw_text_mode = false;
 
+				active_mode = ActiveParserMode::READ_CAPS_ACTION;
+				value_text_buffer = buffer_text;
+
+				do_action(action_text_buffer, value_text_buffer);
+
+				buffer_text = "";
+				value_text_buffer = "";
+
+			}
 
 		}
+
+		
 
 	}
 
@@ -2831,8 +2849,10 @@ void ETextParser::split_data_entity_list_to_named_structs()
 
 		data_type_name = DataEntityUtils::get_tag_value_by_name(0, "data type", data_entity);
 
-		data_entity_name = DataEntityUtils::get_tag_value_by_name(0, "base name", data_entity);
+		data_entity_name = DataEntityUtils::get_tag_value_by_name(0, "key", data_entity);
 
+
+		if (data_entity_name == "") { data_entity_name = DataEntityUtils::get_tag_value_by_name(0, "base name", data_entity); }
 		if (data_entity_name == "") { data_entity_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", data_entity); }
 
 		if (data_entity_name != "")
@@ -2844,6 +2864,8 @@ void ETextParser::split_data_entity_list_to_named_structs()
 			index = max(index, 0);
 
 			arr[index]++;
+
+			if (DataEntityUtils::get_tag_value_by_name(0, "key", data_entity) != "") { EInputCore::logger_param(data_entity_name, index); }
 		}
 
 		if (data_type_name != "")
