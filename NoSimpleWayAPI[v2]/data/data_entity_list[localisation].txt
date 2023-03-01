@@ -132,7 +132,67 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"rarity_normal"
+	[tag]"base name"	[value]"Normal"
 	[tag]"name EN"		[value]"Normal"
 	[tag]"name RU"		[value]"Обычный"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rarity_magic"
+	[tag]"base name"	[value]"Magic"
+	[tag]"name EN"		[value]"Magic"
+	[tag]"name RU"		[value]"Волшебный"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rarity_rare"
+	[tag]"base name"	[value]"Rare"
+	[tag]"name EN"		[value]"Rare"
+	[tag]"name RU"		[value]"Редкий"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rarity_unique"
+	[tag]"base name"	[value]"Unique"
+	[tag]"name EN"		[value]"Unique"
+	[tag]"name RU"		[value]"Уникальный"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_add_new_item"
+	[tag]"name EN"		[value]"Add new item"
+	[tag]"name RU"		[value]"Добавить предмет"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_remove_block"
+	[tag]"name EN"		[value]"Remove"
+	[tag]"name RU"		[value]"Удалить"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_accept_unsave"
+	[tag]"name EN"		[value]"Continue without saving"
+	[tag]"name RU"		[value]"Продолжить, не сохранять"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_cancel"
+	[tag]"name EN"		[value]"Cancel"
+	[tag]"name RU"		[value]"Отмена"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"welcome_to_DaD_editor"
+	
+	[tag]"key"			[value]"button_cancel"
+	[tag]"name EN"		[value]"Welcome to Awakened DaDEditor"
+	[tag]"name RU"		[value]"Добро пожаловать в Awakened DaDEditor"
 	
 	

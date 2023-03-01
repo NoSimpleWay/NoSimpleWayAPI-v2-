@@ -118,14 +118,9 @@ int main()
 
 		EClickableArea*
 		clickable_area_for_group = EClickableArea::create_default_clickable_region(fast_message_button_group->region_gabarite, fast_message_button_group);
-	
-		ELocalisationText
-		ltext;
-		ltext.localisations[NSW_localisation_EN] = "Welcome to Awakened DaDEditor";
-		ltext.localisations[NSW_localisation_RU] = "Добро пожаловать в Awakened DaDEditor";
 
 		ETextArea*
-		text_area_for_group = ETextArea::create_centered_text_area(clickable_area_for_group, EFont::font_list[0], ltext.localisations[ELocalisationText::active_localisation]);
+		text_area_for_group = ETextArea::create_centered_text_area(clickable_area_for_group, EFont::font_list[0], ELocalisationText::get_localisation_by_key("welcome_to_DaD_editor"));
 		text_area_for_group->can_be_edited = false;
 
 		clickable_area_for_group->text_area = text_area_for_group;

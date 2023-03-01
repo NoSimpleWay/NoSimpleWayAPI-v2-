@@ -25,6 +25,7 @@ public:
 	static int active_localisation;
 	static ELocalisationText get_localisation_by_key(std::string _key);
 	static ELocalisationText empty_localisation;
+	static ELocalisationText generate_localisation(std::string _text);
 };
 #endif
 

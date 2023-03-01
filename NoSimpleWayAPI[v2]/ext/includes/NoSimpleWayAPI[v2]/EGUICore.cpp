@@ -3289,9 +3289,6 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 
 
 
-	l_text.localisations[NSW_localisation_EN] = "Close, dont save";
-	l_text.localisations[NSW_localisation_RU] = "Выйти, не сохранять";
-
 	EntityButtonConfirmAction*
 		button_yes = new EntityButtonConfirmAction();
 	pointer_to_confirm_button = button_yes;
@@ -3303,11 +3300,10 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 		new ERegionGabarite(200.0f, 25.0f),
 		bottom_part_for_buttons,
 		&EDataActionCollection::action_invoke_stored_confirm_action,
-		l_text.localisations[ELocalisationText::active_localisation]
+		ELocalisationText::get_localisation_by_key("button_accept_unsave")
 	);
 
 	button_yes->main_text_area->set_color(1.0f, 0.2f, 0.1f, 1.0f);
-	button_yes->main_text_area->localisation_text = l_text;
 	bottom_part_for_buttons->add_button_to_working_group(button_yes);
 
 
@@ -3318,8 +3314,7 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 
 
 
-	l_text.localisations[NSW_localisation_EN] = "Cancel";
-	l_text.localisations[NSW_localisation_RU] = "Отмена";
+
 
 	EntityButtonConfirmAction*
 		button_no = new EntityButtonConfirmAction();
@@ -3330,9 +3325,8 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 		new ERegionGabarite(100.0f, 25.0f),
 		bottom_part_for_buttons,
 		&EDataActionCollection::action_invoke_stored_confirm_action,
-		l_text.localisations[ELocalisationText::active_localisation]
+		ELocalisationText::get_localisation_by_key("button_cancel")
 	);
-	button_no->main_text_area->localisation_text = l_text;
 	button_no->stored_action = &EDataActionCollection::action_cancel_closing_program;
 	bottom_part_for_buttons->add_button_to_working_group(button_no);
 

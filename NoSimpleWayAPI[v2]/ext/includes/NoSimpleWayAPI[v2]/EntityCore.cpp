@@ -1116,9 +1116,9 @@ void EntityButton::make_default_button_with_unedible_text(ERegionGabarite* _regi
 
 	ETextArea*
 	jc_text_area = ETextArea::create_centered_text_area
-	(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _text);
+	(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _ltext);
 
-	jc_text_area->change_text(_text);
+	jc_text_area->change_text(_ltext.localisations[ELocalisationText::active_localisation]);
 
 	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
@@ -1139,7 +1139,7 @@ void EntityButton::make_default_button_with_edible_text(ERegionGabarite* _region
 
 	ETextArea*
 		jc_text_area = ETextArea::create_centered_text_area
-		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _text);
+		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], ELocalisationText());
 
 	jc_text_area->change_text(_text);
 
@@ -1278,7 +1278,7 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 	else
 	{
 		jc_text_area = ETextArea::create_centered_text_area
-		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _text);
+		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], ELocalisationText::get_localisation_by_key(_text));
 
 		jc_text_area->offset_border[BorderSide::LEFT] = 0.0f;
 	}
@@ -1383,74 +1383,6 @@ bool EntityButton::button_in_culling_gabarites()
 	);
 }
 
-void EntityButton::add_description(std::string _text)
-{
-	ECustomData*		jc_data				= new ECustomData();
-	*jc_data->is_second_pass				= true;
-
-	jc_data->actions_on_update.push_back(&EDataActionCollection::action_switch_description);
-	jc_data->parent_entity					= this;
-	*jc_data->disable_custom_data_draw					= true;
-
-	EClickableArea*		jc_clickable_area	=
-	EClickableArea::create_default_clickable_region
-	(
-		new ERegionGabarite
-		(
-			3.0f,
-			-10.0f,
-			0.0f,
-
-			120.0f,
-			40.0f
-		),
-		this,
-		jc_data
-	);
-
-	ETextArea* jc_text = ETextArea::create_centered_text_area
-	(
-		jc_clickable_area
-		,
-		EFont::font_list[0],
-		_text//"Description"
-	);
-
-	jc_text->offset_border[BorderSide::LEFT] = 5.0f;
-	jc_text->offset_border[BorderSide::RIGHT] = 5.0f;
-	jc_text->offset_by_gabarite_size_x = 0.00f;
-	jc_text->offset_by_text_size_x = 0.00f;
-	jc_text->change_text(_text);
-
-	jc_data->clickable_area_list.push_back(jc_clickable_area);
-	jc_clickable_area->text_area = jc_text;
-	jc_clickable_area->sprite_layer_list.push_back(ESpriteLayer::create_default_sprite_layer(nullptr));
-
-
-	NS_ERenderCollection::set_brick_borders_and_subdivisions
-	(
-		*parent_button_group->selected_style->button_bg->side_size_left,
-		*parent_button_group->selected_style->button_bg->side_size_right,
-		*parent_button_group->selected_style->button_bg->side_size_bottom,
-		*parent_button_group->selected_style->button_bg->side_size_up,
-
-		*parent_button_group->selected_style->button_bg->subdivision_x,
-		*parent_button_group->selected_style->button_bg->subdivision_y
-	);
-
-	NS_ERenderCollection::temporary_sprites = true;
-	NS_ERenderCollection::generate_brick_texture
-	(
-		jc_clickable_area->region_gabarite,
-		jc_clickable_area->sprite_layer_list[0],
-		parent_button_group->selected_style->button_bg->main_texture,
-		parent_button_group->selected_style->button_bg->normal_map_texture,
-		parent_button_group->selected_style->button_bg->gloss_map_texture
-	);
-
-
-	custom_data_list.push_back(jc_data);
-}
 
 void EntityButton::draw()
 {

@@ -1405,9 +1405,9 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 
 									}
 					}
-
+					
 					ETextArea*
-						text_area_for_group = ETextArea::create_centered_text_area(clickable_area_for_bottom_attributes, EFont::font_list[0], item_attributes_generated_text);
+						text_area_for_group = ETextArea::create_centered_text_area(clickable_area_for_bottom_attributes, EFont::font_list[0], ELocalisationText::generate_localisation(item_attributes_generated_text));
 					text_area_for_group->can_be_edited = false;
 					clickable_area_for_bottom_attributes->text_area = text_area_for_group;
 
@@ -1429,7 +1429,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 						(
 							clickable_area_for_top_name,
 							EFont::font_list[1],
-							loot_button->stored_game_item->localised_name.localisations[ELocalisationText::active_localisation]
+							loot_button->stored_game_item->localised_name
 						);
 
 					text_area_for_group->can_be_edited = false;
@@ -2374,7 +2374,7 @@ EWindowMain::EWindowMain()
 				l_text.localisations[NSW_localisation_EN] = "Select <" + style->localisation_text.localisations[NSW_localisation_EN] + ">";
 				l_text.localisations[NSW_localisation_RU] = "Выбрать <" + style->localisation_text.localisations[NSW_localisation_RU] + ">";
 
-				jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], l_text.localisations[ELocalisationText::active_localisation]);
+				jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], l_text);
 				jc_text_area->localisation_text = l_text;
 				jc_text_area->can_be_edited = false;
 				Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
@@ -3640,18 +3640,16 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(100.0f, 20.0f),
 			workspace_rarity_group,
 			&EDataActionCollection::action_select_this_text_variant,
-			"Обычный"
+			ELocalisationText::get_localisation_by_key("rarity_normal")
 		);
 
 		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(1.0f, 1.0f, 1.0f, 1.0f);
 		workspace_rarity_group->add_button_to_working_group(jc_button);
 
-		ltext.base_name = "Normal";
-
-		ltext.localisations[NSW_localisation_EN] = "Normal";
-		ltext.localisations[NSW_localisation_RU] = "Нормальный";
-
 		jc_button->main_text_area->localisation_text = ltext;
+
+
+
 
 		//magic
 		jc_button = new EntityButtonFilterRule();
@@ -3660,19 +3658,17 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(100.0f, 20.0f),
 			workspace_rarity_group,
 			&EDataActionCollection::action_select_this_text_variant,
-			"Магический"
+			ELocalisationText::get_localisation_by_key("rarity_magic")
 		);
 
 		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(0.4f, 0.5f, 1.0f, 1.0f);
 		workspace_rarity_group->add_button_to_working_group(jc_button);
 
-
-		ltext.base_name = "Magic";
-
-		ltext.localisations[NSW_localisation_EN] = "Magic";
-		ltext.localisations[NSW_localisation_RU] = "Волшебный";
-
 		jc_button->main_text_area->localisation_text = ltext;
+
+
+
+
 
 		//rare
 		jc_button = new EntityButtonFilterRule();
@@ -3681,18 +3677,17 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(100.0f, 20.0f),
 			workspace_rarity_group,
 			&EDataActionCollection::action_select_this_text_variant,
-			"Редкий"
+			ELocalisationText::get_localisation_by_key("rarity_rare")
 		);
 
 		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(1.0f, 1.0f, 0.25f, 1.0f);
 		workspace_rarity_group->add_button_to_working_group(jc_button);
 
-		ltext.base_name = "Rare";
-
-		ltext.localisations[NSW_localisation_EN] = "Rare";
-		ltext.localisations[NSW_localisation_RU] = "Редкий";
-
 		jc_button->main_text_area->localisation_text = ltext;
+
+
+
+
 
 		//unique
 		jc_button = new EntityButtonFilterRule();
@@ -3701,18 +3696,11 @@ EWindowMain::EWindowMain()
 			new ERegionGabarite(100.0f, 20.0f),
 			workspace_rarity_group,
 			&EDataActionCollection::action_select_this_text_variant,
-			"Уникальный"
+			ELocalisationText::get_localisation_by_key("rarity_unique")
 		);
 
 		EntityButton::get_last_clickable_area(jc_button)->text_area->set_color(1.0f, 0.50f, 0.25f, 1.0f);
 		workspace_rarity_group->add_button_to_working_group(jc_button);
-
-		ltext.base_name = "Unique";
-
-		ltext.localisations[NSW_localisation_EN] = "Unique";
-		ltext.localisations[NSW_localisation_RU] = "Уникальный";
-
-		jc_button->main_text_area->localisation_text = ltext;
 
 
 		button_group_list.push_back(whole_rarity_list_group);
@@ -3745,7 +3733,7 @@ EWindowMain::EWindowMain()
 				new ERegionGabarite(100.0f, 20.0f),
 				workspace_quality_group,
 				&EDataActionCollection::action_select_this_text_variant,
-				""
+				ELocalisationText()
 			);
 
 			jc_button->main_text_area->set_color(registered_alternate_gem_quality_router_variants[i]->color);
@@ -4530,7 +4518,7 @@ EWindowMain::EWindowMain()
 				new ERegionGabarite(200.0f, 26.0f),
 				bottom_tab_section,
 				&EDataActionCollection::action_select_this_tab,
-				l_text.localisations[ELocalisationText::active_localisation]
+				l_text
 			);
 
 			tab_button->main_text_area->localisation_text = l_text;
@@ -6777,6 +6765,10 @@ void EWindowMain::load_loot_filter_list()
 			//cout <<"It sound!" << '\n'<<'\n';
 
 			//for (int i = 0; i < 10; i ++)
+			
+				ELocalisationText ltext;
+				ltext.localisations[NSW_localisation_EN] = loot_filter_name;
+				ltext.localisations[NSW_localisation_RU] = loot_filter_name;
 			{
 				EntityButtonForLootFilterSelector* loot_filter_button = new EntityButtonForLootFilterSelector();
 				loot_filter_button->make_default_button_with_unedible_text
@@ -6784,14 +6776,11 @@ void EWindowMain::load_loot_filter_list()
 					new ERegionGabarite(325.0f, 32.0f),
 					part_with_list,
 					(autogenerated_loot_filter) ? (&EDataActionCollection::action_open_confirm_decline_window_for_autogenerated_loot_filter) : (&EDataActionCollection::action_select_this_loot_filter_from_list),
-					loot_filter_name
+					ltext
 				);
 				loot_filter_button->can_be_stretched = true;
 
-				ELocalisationText ltext;
-				ltext.localisations[NSW_localisation_EN] = loot_filter_name;
-				ltext.localisations[NSW_localisation_RU] = loot_filter_name;
-				loot_filter_button->main_text_area->localisation_text = ltext;
+
 				//std::max(1, 2);
 				loot_filter_button->is_autogenerated_loot_filter = autogenerated_loot_filter;
 
@@ -7260,7 +7249,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		new ERegionGabarite(120.0f, 29.0f),
 		control_part_left_show_hide_section,
 		&EDataActionCollection::action_rotate_variant,
-		""
+		ELocalisationText()
 	);
 	button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
 	//
@@ -8050,7 +8039,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		new ERegionGabarite(145.0f, 22.0f),
 		bottom_user_sound_section,
 		&EDataActionCollection::action_open_custom_sound_list,
-		l_text.localisations[ELocalisationText::active_localisation]
+		l_text
 	);
 	sound_button->main_text_area->localisation_text = l_text;
 
@@ -8170,7 +8159,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		new ERegionGabarite(145.0f, 22.0f),
 		mid_ingame_sound_section,
 		&EDataActionCollection::action_open_ingame_sound_list,
-		l_text.localisations[ELocalisationText::active_localisation]
+		l_text
 	);
 	sound_button->main_text_area->localisation_text = l_text;
 
@@ -14657,7 +14646,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 			new ERegionGabarite(200.0f, button_height),
 			non_listed_line,
 			nullptr,
-			_game_item_attribute->localisation.localisations[ELocalisationText::active_localisation]
+			_game_item_attribute->localisation
 		);
 		jc_button->can_be_stretched = true;
 
@@ -14914,7 +14903,6 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 
 		case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST:
 		{
-			text = EWindowMain::registered_alternate_gem_quality_router_variants[0]->localisation->base_name;
 
 			jc_button = new EntityButtonForFilterBlock();
 			jc_button->make_default_button_with_unedible_text
@@ -14922,11 +14910,10 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 				new ERegionGabarite(100.0f + input_field_additional_width, button_height),
 				non_listed_line,
 				&EDataActionCollection::action_open_quality_selector,
-				text
+				*EWindowMain::registered_alternate_gem_quality_router_variants[0]->localisation
 			);
 			jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 			jc_button->main_text_area->set_color(EWindowMain::registered_alternate_gem_quality_router_variants[0]->color);
-			jc_button->main_text_area->change_text(text);
 			jc_button->main_text_area->localisation_text = *EWindowMain::registered_alternate_gem_quality_router_variants[0]->localisation;
 
 			jc_button->parent_filter_block = _target_filter_block;
@@ -15599,18 +15586,14 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 	EntityButton* small_button = new EntityButtonForFilterBlock();
 
 	ELocalisationText l_text;
-	l_text.localisations[NSW_localisation_EN] = "Add new item";
-	l_text.localisations[NSW_localisation_RU] = "Добавить предмет";
 
 	small_button->make_default_button_with_unedible_text
 	(
 		new ERegionGabarite(130.0f, 24.0f),
 		listed_group_left_side,
 		&EDataActionCollection::action_open_data_entity_filter_group,
-		l_text.localisations[ELocalisationText::active_localisation]
+		ELocalisationText::get_localisation_by_key("button_add_new_item")
 	);
-
-	small_button->main_text_area->localisation_text = l_text;
 
 
 	//data conatainer with filter rule (for data entity list)
@@ -15629,8 +15612,6 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 
 	////////////////////////
 	//REMOVE ALL BUTTONS
-	l_text.localisations[NSW_localisation_EN] = "Remove block";
-	l_text.localisations[NSW_localisation_RU] = "Удалить блок";
 
 	EntityButtonForListedSegment* delete_segment_button = new EntityButtonForListedSegment();
 	delete_segment_button->make_default_button_with_unedible_text
@@ -15638,9 +15619,8 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 		new ERegionGabarite(130.0f, 24.0f),
 		listed_group_left_side,
 		&EDataActionCollection::action_delete_listed_segment,
-		l_text.localisations[ELocalisationText::active_localisation]
+		ELocalisationText::get_localisation_by_key("button_remove_block")
 	);
-	delete_segment_button->main_text_area->localisation_text = l_text;
 	delete_segment_button->main_text_area->set_color(NS_EColorUtils::COLOR_RED);
 
 	delete_segment_button->listed_group = main_listed_group;
@@ -16145,7 +16125,7 @@ void EButtonGroupSoundList::refresh_sound_list()
 				new ERegionGabarite(325.0f, 32.0f),
 				part_with_list,
 				&EDataActionCollection::action_invoke_button_action_in_sound_group,
-				n_sound->localisation_text.localisations[ELocalisationText::active_localisation]
+				n_sound->localisation_text
 			);
 
 			sound_button->main_text_area->localisation_text = n_sound->localisation_text;
@@ -17025,7 +17005,7 @@ void LootSimulatorPattern::refresh_loot_simulator(LootSimulatorPattern* _pattern
 				new ERegionGabarite(512.0f, 40.0f),
 				EButtonGroupLootSimulator::pointer_to_loot_buttons_segment,
 				&EDataActionCollection::action_highlight_matched_blocks,
-				item_name
+				ELocalisationText::generate_localisation(item_name)
 			);
 
 			loot_item->main_text_area->localisation_text.localisations[NSW_localisation_EN] = game_item->localised_name.localisations[NSW_localisation_EN];

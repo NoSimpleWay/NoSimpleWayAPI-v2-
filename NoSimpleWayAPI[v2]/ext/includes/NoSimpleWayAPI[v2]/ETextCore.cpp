@@ -1841,3 +1841,18 @@ ELocalisationText ELocalisationText::get_localisation_by_key(std::string _key)
 
 	return ltext;
 }
+
+ELocalisationText ELocalisationText::generate_localisation(std::string _text)
+{
+	ELocalisationText ltext;
+
+	ltext.base_name = _text;
+	for (int i = 0; i < NSW_languages_count; i++)
+	{
+		ltext.localisations[i] = _text;
+	}
+
+
+
+	return ltext;
+}
