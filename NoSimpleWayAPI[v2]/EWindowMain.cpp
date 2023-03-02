@@ -2409,7 +2409,7 @@ EWindowMain::EWindowMain()
 	//STYLE LIST BUTTON GROUP (NEW)
 	{
 		EButtonGroup*
-			whole_style_group = new EButtonGroup(new ERegionGabarite(300.0f, 500.0f));
+			whole_style_group = new EButtonGroup(new ERegionGabarite(500.0f, 800.0f));
 		style_list_group = whole_style_group;
 		whole_style_group->root_group = whole_style_group;
 		whole_style_group->parent_window = this;
@@ -2436,12 +2436,12 @@ EWindowMain::EWindowMain()
 			style_button_imitator_bottom->can_change_style = false;
 
 			EButtonGroup*
-				style_select_group = style_sample->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 40.0f)));
+			style_select_group = style_sample->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 40.0f)));
 			style_select_group->init_button_group(gui_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
 			style_select_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 			style_select_group->additional_y_distance = 0.0f;
 			style_select_group->can_change_style = false;
-			style_select_group->button_size_x_override = 250.0f;
+			style_select_group->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 			//EButtonGroup*
 			//style_button_imitator_up = style_sample->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 30.0f)));
 			//style_button_imitator_up->init_button_group(gui_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
@@ -2450,14 +2450,14 @@ EWindowMain::EWindowMain()
 			//style_button_imitator_up->can_change_style = false;
 
 
-			for (int i = 0; i < 32; i++)
+			for (int i = 0; i < 64; i++)
 			{
 				{
 					EntityButton*
-						button_select_style = new EntityButton();
-					style_button_imitator_bottom->add_button_to_working_group(button_select_style);
+					button_simulator = new EntityButton();
+					style_button_imitator_bottom->add_button_to_working_group(button_simulator);
 
-					button_select_style->make_as_default_button_with_icon
+					button_simulator->make_as_default_button_with_icon
 					(
 						new ERegionGabarite(40.0f, 40.0f),
 						style_button_imitator_bottom,
@@ -2483,22 +2483,22 @@ EWindowMain::EWindowMain()
 			}
 
 			EntityButton*
-				button_select_style = new EntityButton();
+			button_select_style = new EntityButton();
 			style_select_group->add_button_to_working_group(button_select_style);
-
+			
 			ELocalisationText ltext;
 			ltext.localisations[NSW_localisation_EN] = "Select style [" + gui_style->localisation_text.localisations[ELocalisationText::active_localisation] + "]";
 			ltext.localisations[NSW_localisation_RU] = "Выбрать стиль [" + gui_style->localisation_text.localisations[ELocalisationText::active_localisation] + "]";
 
 			button_select_style->make_default_button_with_unedible_text
 			(
-				new ERegionGabarite(280.0f, 40.0f),
+				new ERegionGabarite(450.0f, 40.0f),
 				style_select_group,
 				&EDataActionCollection::action_select_this_style,
 				ltext
 			);
 			button_select_style->main_text_area->localisation_text = ltext;
-
+			button_select_style->can_be_stretched = true;
 			//&EDataActionCollection::action_select_this_style
 
 		//style_workspace_part->group_list.push_back(style_sample);

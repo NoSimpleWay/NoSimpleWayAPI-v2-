@@ -25178,6 +25178,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Orb_of_Regret_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"worth"		[value]"Moderate"
 

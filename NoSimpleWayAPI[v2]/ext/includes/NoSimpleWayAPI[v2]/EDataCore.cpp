@@ -1441,6 +1441,7 @@ void EDataActionCollection::action_close_program(Entity* _entity, ECustomData* _
 
 void EDataActionCollection::action_cancel_closing_program(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	//EInputCore::logger_simple_info("action_cancel_closing_program");
 	static_cast<EntityButton*>(_entity)->parent_button_group->root_group->button_group_is_active = false;
 	glfwSetWindowShouldClose(NS_EGraphicCore::main_window, 0);
 }
@@ -1866,38 +1867,47 @@ void EClickableArea::update(float _d)
 
 	//left click
 	{
-		for (data_action_pointer dap : actions_on_click_list)
-			if
-			(
-					(dap != nullptr)
-					&&
-					(parent_entity != nullptr)
-					//&&
-					//(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
-					//&&
-					//(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
-					&&
-					(EClickableArea::active_clickable_region == this)
-					&&
-					(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
-			)
-			{
-				EInputCore::logger_simple_info("call [actions on click list]");
-				dap(parent_entity, parent_custom_data, _d);
-			}
-			else
-			{
-				if (debug_updating)
+	
+		if 
+		(
+			(EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
+			&&
+			(EClickableArea::active_clickable_region == this)
+		)
+		{
+			//EInputCore::logger_param("size of DAP", actions_on_click_list.size());
+
+			for (data_action_pointer dap : actions_on_click_list)
+				if
+					(
+						(dap != nullptr)
+						&&
+						(parent_entity != nullptr)
+						//&&
+						//(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
+						//&&
+						//(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+						&&
+						(EClickableArea::active_clickable_region == this)
+					)
 				{
-					if (EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
+					EInputCore::logger_simple_info("call [actions on click list]");
+					dap(parent_entity, parent_custom_data, _d);
+				}
+				else
+				{
+					if (debug_updating)
 					{
-						if (dap == nullptr) { EInputCore::logger_simple_error("DAP is NULL"); }
-						if (parent_entity == nullptr) { EInputCore::logger_simple_error("parent entity is NULL"); }
-						//if (EButtonGroup::focused_button_group_mouse_unpressed != ((EntityButton*)parent_entity)->parent_button_group) { EInputCore::logger_simple_error("parent group not focused"); }
-						if (EClickableArea::active_clickable_region != this) { EInputCore::logger_simple_error("this clickable region not active"); }
+						if (EInputCore::mouse_button_pressed_once(GLFW_MOUSE_BUTTON_LEFT))
+						{
+							if (dap == nullptr) { EInputCore::logger_simple_error("DAP is NULL"); }
+							if (parent_entity == nullptr) { EInputCore::logger_simple_error("parent entity is NULL"); }
+							//if (EButtonGroup::focused_button_group_mouse_unpressed != ((EntityButton*)parent_entity)->parent_button_group) { EInputCore::logger_simple_error("parent group not focused"); }
+							if (EClickableArea::active_clickable_region != this) { EInputCore::logger_simple_error("this clickable region not active"); }
+						}
 					}
 				}
-			}
+		}
 	}
 
 	//right click

@@ -2155,6 +2155,14 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 		_group->recursive_expand_to_workspace_size();
 		change_group(_group);
 	}
+	else
+	{
+		_group->need_refresh = true;
+	}
+}
+
+void EButtonGroup::refresh_button_group_forceful(EButtonGroup* _group)
+{
 }
 
 
@@ -2225,7 +2233,10 @@ void EButtonGroup::activate_slider_if_need()
 	}
 	else
 	{
-		scroll_y = 0.0f;
+		if (final_highest_point_y <= region_gabarite->size_y - border_up)
+		{
+			scroll_y = 0.0f;
+		}
 	}
 
 	if (slider != nullptr)
@@ -2284,7 +2295,7 @@ void EButtonGroup::stretch_all_buttons()
 		{
 
 			for (EntityButton* but : button_line_list[i].button_list)
-			if (but->entity_is_active())
+			if (but->entity_is_active() || but->align_even_if_hidden)
 			{
 				if (but->can_be_stretched) { stretchable_elements_count++; }
 
@@ -2309,7 +2320,7 @@ void EButtonGroup::stretch_all_buttons()
 				additional_space_for_each_button = floor(free_space / (float)stretchable_elements_count);
 
 				for (EntityButton* but : button_line_list[i].button_list)
-				if (but->entity_is_active())
+				if (but->entity_is_active() || but->align_even_if_hidden)
 				{
 					if
 						(
@@ -2330,7 +2341,7 @@ void EButtonGroup::stretch_all_buttons()
 		else
 		{
 			for (EntityButton* but : button_line_list[i].button_list)
-			if ((but->entity_is_active()) && (!button_line_list[i - 1].button_list.empty()))
+			if ((but->entity_is_active() || but->align_even_if_hidden) && (!button_line_list[i - 1].button_list.empty()))
 			{
 				but->button_gabarite->size_x = button_line_list[i - 1].button_list[0]->button_gabarite->size_x;
 			}
@@ -2351,7 +2362,7 @@ void EButtonGroup::align_buttons_in_lines()
 		float free_space = region_gabarite->size_x - border_left - border_right - slider_effect;
 
 		for (EntityButton* but : button_line_list[i].button_list)
-		if (but->entity_is_active())
+		if (but->entity_is_active() || but->align_even_if_hidden)
 		{
 			free_space -= but->button_gabarite->size_x + ((!but->disable_force_field && !ignore_buttons_force_field) ? (but->force_field_left + but->force_field_right) : (0.0f));
 		}
@@ -2378,7 +2389,7 @@ void EButtonGroup::align_buttons_in_lines()
 		}
 
 		for (EntityButton* but : button_line_list[i].button_list)
-		if (but->entity_is_active())
+		if (but->entity_is_active() || but->align_even_if_hidden)
 		{
 			but->offset_x += push_value;
 
@@ -2445,7 +2456,7 @@ void EButtonGroup::put_buttons_to_lines()
 
 
 	for (EntityButton* but : workspace_button_list)
-	if (but->entity_is_active())
+	if (but->entity_is_active() || but->align_even_if_hidden)
 	{
 
 
@@ -2545,7 +2556,7 @@ void EButtonGroup::set_buttons_offset()
 		offset_y = button_line_list[i].offset_y;
 
 		for (EntityButton* but : button_line_list[i].button_list)
-		if (but->entity_is_active())
+		if (but->entity_is_active() || but->align_even_if_hidden)
 		{
 			but->offset_x = offset_x + ((!but->disable_force_field && !ignore_buttons_force_field) ? (but->force_field_left)	: (0.0f));
 			but->offset_y
@@ -3302,15 +3313,9 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 		&EDataActionCollection::action_invoke_stored_confirm_action,
 		ELocalisationText::get_localisation_by_key("button_accept_unsave")
 	);
-
+	button_yes->can_be_stretched = true;
 	button_yes->main_text_area->set_color(1.0f, 0.2f, 0.1f, 1.0f);
 	bottom_part_for_buttons->add_button_to_working_group(button_yes);
-
-
-
-
-
-
 
 
 
@@ -3327,8 +3332,15 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 		&EDataActionCollection::action_invoke_stored_confirm_action,
 		ELocalisationText::get_localisation_by_key("button_cancel")
 	);
+	button_no->can_be_stretched = true;
 	button_no->stored_action = &EDataActionCollection::action_cancel_closing_program;
 	bottom_part_for_buttons->add_button_to_working_group(button_no);
+
+	close_button->main_clickable_area->actions_on_click_list.insert
+	(
+		close_button->main_clickable_area->actions_on_click_list.begin(),
+		&EDataActionCollection::action_cancel_closing_program
+	);
 
 
 	//EButtonGroup::refresh_button_group(this);
@@ -3726,7 +3738,7 @@ EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGa
 		close_group_right,
 		&EDataActionCollection::action_close_root_group
 	);
-
+	//jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_cancel_closing_program);
 	jc_button->sprite_layer_list.push_back
 	(
 		ESpriteLayer::create_default_sprite_layer_with_size_and_offset
@@ -3742,7 +3754,9 @@ EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGa
 			00.0f
 		)
 	);
+
 	jc_button->disable_force_field = true;
+	close_button = jc_button;
 	close_group_right->add_button_to_working_group(jc_button);
 
 

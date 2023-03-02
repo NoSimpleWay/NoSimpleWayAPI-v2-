@@ -104,8 +104,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"warning_unsave_changes"
-	[tag]"name EN"		[value]"Warning! Unsaved changes!\\n\\nIf you continue, you lost unsaved data!"
-	[tag]"name RU"		[value]"Внимание! Несохранённые изменения!\\n\\nЕсли вы продолжите, вы потеряете несохранённые данные!"
+	[tag]"name EN"		[value]"Warning! Unsaved changes!\n\nIf you continue, you lost unsaved data!"
+	[tag]"name RU"		[value]"Внимание! Несохранённые изменения!\n\nЕсли вы продолжите, вы потеряете несохранённые данные!"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"

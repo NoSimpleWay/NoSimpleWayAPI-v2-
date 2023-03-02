@@ -268,6 +268,8 @@ public:
 	bool ignore_buttons_force_field = false;
 	bool ignore_vertical_buttons_force_field = false;
 
+	EntityButton* close_button = nullptr;
+
 	float min_size_for_resize = 120.0f;
 	//bool need_recalcualte_culling_lines = false;
 	//bool hidden_by_search = false;
@@ -381,6 +383,7 @@ public:
 
 	/*-----------------------------------*/
 	static void refresh_button_group(EButtonGroup* _group);
+	static void refresh_button_group_forceful(EButtonGroup* _group);
 	static void change_group(EButtonGroup* _group);
 	/*-----------------------------------*/
 
