@@ -235,6 +235,7 @@ namespace NS_EGraphicCore
 	extern ETextureGabarite* get_gabarite_from_full_path_and_suffix(ETextureGabarite* _gabarite, std::string _suffix);
 	extern float global_normal_multiplier;
 	extern float global_gloss_multiplier;
+	extern float plastic_or_metal_multiplier;
 
 	extern float global_free_sky_light_multiplier;
 	extern float global_free_sun_light_multiplier;

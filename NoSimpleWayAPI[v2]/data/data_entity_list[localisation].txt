@@ -189,10 +189,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Отмена"
 	
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"welcome_to_DaD_editor"
+	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"button_cancel"
+	[tag]"key"			[value]"welcome_to_DaD_editor"
 	[tag]"name EN"		[value]"Welcome to Awakened DaDEditor"
 	[tag]"name RU"		[value]"Добро пожаловать в Awakened DaDEditor"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"matte/gloss_multiplier"
+	[tag]"name EN"		[value]"Matte/Gloss"
+	[tag]"name RU"		[value]"Матовый/Глянец"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"Plastic/Metal_slider"
+	[tag]"name EN"		[value]"Plastic/Metal"
+	[tag]"name RU"		[value]"Пластик/Металл"
 	
 	

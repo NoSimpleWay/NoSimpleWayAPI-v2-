@@ -315,6 +315,8 @@ int main()
 
 		if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT) && (EInputCore::key_pressed(GLFW_KEY_0)))
 		{
+			NS_EGraphicCore::default_batcher_for_drawing->draw_call();
+			NS_EGraphicCore::default_batcher_for_drawing->set_active_color(NS_EColorUtils::COLOR_WHITE);
 			NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
 			
 			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size

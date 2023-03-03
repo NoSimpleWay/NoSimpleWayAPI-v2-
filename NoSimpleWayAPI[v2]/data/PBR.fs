@@ -19,8 +19,10 @@ uniform sampler2D SD_array[7];
 
 
 
-uniform float brightness_multiplier = 1.5f;
-uniform float reflection_multiplier = 1.0f;
+uniform float brightness_multiplier		= 1.5f;
+uniform float reflection_multiplier		= 1.0f;
+
+
 uniform float skydome_light_power = 1.0f;
 uniform float free_sky_light = 0.35f;
 uniform float free_sun_light = 0.45f;
@@ -39,6 +41,7 @@ uniform float move_multiplier = 1.0f;
 
 uniform float normal_map_multiplier = 1.0f;
 uniform float gloss_map_multiplier = 1.0f;
+uniform float plastic_or_metal_multiplier = 1.0f;
 
 uniform float screen_offset_x;
 uniform float screen_offset_y;
@@ -54,7 +57,7 @@ float c_g;
 float c_b;
 float c_a;
 
-vec4 c_rgba;
+vec4 skydome_pixel;
 
 
 
@@ -64,7 +67,8 @@ float ipr = 0.5f;
 float interpolation_A = 1.0f;
 float interpolation_B = 0.0f;
 
-float gloss_power = 0.0f;
+float plastic_or_metal = 0.0f;
+float reflection_blur_area = 0.0f;
 
 vec2 reflect_coord;
 
@@ -86,8 +90,8 @@ float dist_total;
 uniform vec3 sun_light_gloss = vec3(1.8f, 1.1f, 0.5f);
 vec3 sun_light_matte = vec3(1.7f, 1.1f, 0.8f);
 
-vec3 direct_sun_light;
-vec3 indirect_sun_light;
+vec3 gloss_sun_light;
+vec3 matte_sun_light;
 
 vec3 sky_light_gloss = vec3(0.9f, 1.0f, 1.1f);
 vec3 sky_light_matte = vec3(0.85f, 0.875f, 0.9f);
@@ -105,10 +109,17 @@ float indirect_sun_angle = 0.0f;
 void main()
 {
 	
-	gloss_power = clamp(texture(texture1, GlossMapTexCoord).b * gloss_map_multiplier, 0.0f, 1.0f);
+	plastic_or_metal			= clamp(texture(texture1, GlossMapTexCoord).g, 0.0f, 1.0f);
+	plastic_or_metal			*= plastic_or_metal_multiplier;
+	
+	reflection_blur_area		= clamp(texture(texture1, GlossMapTexCoord).b, 0.0f, 1.0f);
+	reflection_blur_area		*= gloss_map_multiplier;
+	reflection_blur_area		= min(reflection_blur_area, 1.0f);
+	
+	//reflection_blur_area = sun_flat_decay;
 	//gloss_power = 0.2f;
 	
-	fast_gloss = max(gloss_power - 0.5f, 0.0f) * 2.000f;
+	fast_gloss = max(reflection_blur_area - 0.0f, 0.0f) * 1.000f;
 	
 	level = (1.0f - fast_gloss) * steps;
 	//level = (level - 0.5) * 2.000f;
@@ -143,8 +154,6 @@ void main()
 	(
 		//base offset		screen position offset					//normal offset
 		clamp(reflect_pos_x, 0.0f, 1.0f) * 2.0f * scr_x / scr_y + time / 50.0f * move_multiplier,
-		
-		
 		clamp(reflect_pos_y, 0.0f, 1.0f) * 2.0f - ground_level - 0.0f
 	);
 	
@@ -154,7 +163,7 @@ void main()
 	
 	if (glossy_flat == 0)
 	{
-		c_rgba
+		skydome_pixel
 		=
 		(
 			texture(SD_array[0], reflect_coord) * interpolation_A
@@ -162,12 +171,12 @@ void main()
 			texture(SD_array[1], reflect_coord) * interpolation_B
 		);
 		
-		//c_rgba = vec4(1.0f, 0.0f, 0.0f, 1.0f);
+		//skydome_pixel = vec4(1.0f, 0.0f, 0.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 1)
 	{
-		c_rgba
+		skydome_pixel
 		=
 		(
 			texture(SD_array[1], reflect_coord) * interpolation_A
@@ -175,12 +184,12 @@ void main()
 			texture(SD_array[2], reflect_coord) * interpolation_B
 		);
 		
-		//c_rgba = vec4(0.0f, 1.0f, 0.0f, 1.0f);
+		//skydome_pixel = vec4(0.0f, 1.0f, 0.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 2)
 	{
-		c_rgba
+		skydome_pixel
 		=
 		(
 			texture(SD_array[2], reflect_coord) * interpolation_A
@@ -188,12 +197,12 @@ void main()
 			texture(SD_array[3], reflect_coord) * interpolation_B
 		);
 		
-		//c_rgba = vec4(0.0f, 0.0f, 1.0f, 1.0f);
+		//skydome_pixel = vec4(0.0f, 0.0f, 1.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 3)
 	{
-		c_rgba
+		skydome_pixel
 		=
 		(
 			texture(SD_array[3], reflect_coord) * interpolation_A
@@ -201,12 +210,12 @@ void main()
 			texture(SD_array[4], reflect_coord) * interpolation_B
 		);
 		
-		//c_rgba = vec4(0.0f, 0.0f, 0.0f, 1.0f);
+		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 4)
 	{
-		c_rgba
+		skydome_pixel
 		=
 		(
 			texture(SD_array[4], reflect_coord) * interpolation_A
@@ -214,11 +223,11 @@ void main()
 			texture(SD_array[5], reflect_coord) * interpolation_B
 		);
 		
-		//c_rgba = vec4(0.0f, 0.0f, 0.0f, 1.0f);
+		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
 	}
 	else
 	{
-		c_rgba
+		skydome_pixel
 		=
 		clamp
 		(
@@ -226,7 +235,7 @@ void main()
 			vec4(0.0f),
 			vec4(2.0f, 1.9f, 1.8f, 1.0f)
 		);
-		//c_rgba = vec4(1.0f, 1.0f, 1.0f, 1.0f);
+		//skydome_pixel = vec4(1.0f, 1.0f, 1.0f, 1.0f);
 	}
 	
 	dist_x = reflect_pos_x - (sun_position_x);
@@ -235,17 +244,20 @@ void main()
 	
 	dist_total = length(vec2(dist_x, dist_y)) - sun_size / 10.0f;
 	//dist_total = pow(dist_total, 2.0);
-	dist_total /= 1.0f + (c_rgba.a) * 2.000f;
+	dist_total /= 1.0f + (skydome_pixel.a) * 2.000f;
 	//dist_total = 1.0f - dist_total;
-	dist_total = clamp(1.0f  - (dist_total * sun_blur * sun_blur * 100.0f) * (sun_flat_decay + gloss_power), 0.0f, 1.0f);
+	dist_total = clamp(1.0f  - (dist_total * sun_blur * sun_blur * 100.0f) * (sun_flat_decay + reflection_blur_area), 0.0f, 1.0f);
 	//dist_total*=dist_total;
 	dist_total = pow (dist_total, sun_exp);
 	
-	gloss_result = gloss_power;
+	//gloss_result = plastic_or_metal;
 	
 
-		direct_sun_light = mix(sun_light_gloss, sun_light_gloss / 2.0f, gloss_power) * dist_total * (1.0f - c_rgba.a);
-		direct_sun_light *= sun_bright * (gloss_result);
+		//gloss_sun_light = mix(sun_light_gloss, sun_light_gloss / 2.0f, plastic_or_metal) * dist_total * (1.0f - skydome_pixel.a);
+		gloss_sun_light = sun_light_gloss * dist_total * (1.0f - skydome_pixel.a);
+		
+		
+		gloss_sun_light *= sun_bright * (plastic_or_metal) * (reflection_blur_area * 0.9f + 0.1f);
 		
 		indirect_sun_angle
 		= 
@@ -267,20 +279,20 @@ void main()
 			0.0f
 		)
 		*
-		(sun_blur * 8.0f + 0.0f);
+		(sun_blur * 0.5f + 0.0f);
 		
 		indirect_sun_angle = clamp(indirect_sun_angle, 0.0f, 1.0f);
 		
-		//						unlighted					lighted
-		indirect_sun_light = mix(vec3(0.95f, 0.90f, 1.0f) * free_sky_light, vec3(1.1f, 1.05f, 1.0f) * free_sun_light, indirect_sun_angle);
-		//indirect_sun_light = vec3(1.0f);
+		//				  unlighted											lighted										mix
+		matte_sun_light	= mix(vec3(0.95f, 0.90f, 1.0f) * free_sky_light,	vec3(1.1f, 1.05f, 1.0f) * free_sun_light,	indirect_sun_angle);
+		//matte_sun_light = vec3(1.0f);
 	
-	sky_light = mix(sky_light_matte, sky_light_gloss, gloss_power);
+	//sky_light = mix(sky_light_matte, sky_light_gloss, plastic_or_metal);
 	//sky_light += texture(SD_array[4], reflect_coord + vec2(0.0f, ground_level * 2.0f - 1.0f)).a;
 	
 	
 
-	//sun_light *= 1.0f - c_rgba.a;
+	//sun_light *= 1.0f - skydome_pixel.a;
 	
 	
 	
@@ -289,15 +301,18 @@ void main()
 	=
 	clamp
 	(
-		texture(texture1, TexCoord).rgb
-		*
+		//SKYDOME TOTAL LIGHT
 		(
-			//vec3(c_rgba * 1.0f)// * (2.0f - c_rgba.a)
-			mix(vec3(0.0f), c_rgba.rgb * reflection_multiplier, min(gloss_result * 1.0f, 1.0f))
+			//REFLECTION (black for plastic, pixel for matte)
+			mix(vec3(0.0f), skydome_pixel.rgb * reflection_multiplier, min(plastic_or_metal * 1.0f, 1.0f))
 			+
-			mix(indirect_sun_light, direct_sun_light, min(gloss_result , 1.0f))
-			//vec3(c_rgba) * 2.0f
+			//SUN
+			mix(matte_sun_light, gloss_sun_light, min(plastic_or_metal , 1.0f))
+			//vec3(skydome_pixel) * 2.0f
 		)
+		*
+		//MATTE
+		texture(texture1, TexCoord).rgb
 		*
 		ourColor.rgb,
 		vec3(0.0f),

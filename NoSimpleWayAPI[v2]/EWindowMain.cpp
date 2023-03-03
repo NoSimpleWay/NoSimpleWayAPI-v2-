@@ -2789,9 +2789,11 @@ EWindowMain::EWindowMain()
 		//*----------------------------		SUN SECTION		-------------------------------------------------------*//
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 		jc_button_group = world_parameters_workspace_part->add_group
-		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 60.0f), EGUIStyle::active_style));
+		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 90.0f), EGUIStyle::active_style));
 		jc_button_group->stretch_x_by_parent_size = true;
 		jc_button_group->stretch_y_by_parent_size = false;
+
+
 
 		// // // // // // //// // // // // // //// // // // // // //
 		jc_button = EntityButton::create_horizontal_named_slider
@@ -2801,13 +2803,34 @@ EWindowMain::EWindowMain()
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
-			ELocalisationText::get_localisation_by_key("gloss_slider_value")
+			ELocalisationText::get_localisation_by_key("Plastic/Metal_slider")
+		);
+		jc_button->can_be_stretched = true;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::plastic_or_metal_multiplier;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 4.0f;
+		jc_button_group->add_button_to_working_group(jc_button);
+		// // // // // // //// // // // // // //// // // // // // //
+
+		// // // // // // //// // // // // // //// // // // // // //
+		jc_button = EntityButton::create_horizontal_named_slider
+		(
+
+			new ERegionGabarite(170.0f, 38.0f),
+			jc_button_group,
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			ELocalisationText::get_localisation_by_key("matte/gloss_multiplier")
 		);
 		jc_button->can_be_stretched = true;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &NS_EGraphicCore::global_gloss_multiplier;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 4.0f;
 		jc_button_group->add_button_to_working_group(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
+
+
+
+
+
 
 		// // // // // // //// // // // // // //// // // // // // //
 		jc_button = EntityButton::create_horizontal_named_slider

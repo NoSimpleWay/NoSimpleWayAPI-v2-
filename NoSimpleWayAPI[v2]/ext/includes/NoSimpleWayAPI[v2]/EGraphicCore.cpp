@@ -53,6 +53,7 @@ namespace NS_EGraphicCore
 	float							global_reflection_multiplier		= 2.0f;
 
 	float							global_gloss_multiplier				= 1.0f;
+	float							plastic_or_metal_multiplier			= 1.0f;
 	float							sun_x								= 0.5f;
 	float							sun_y								= 0.60f;
 	float							sun_size							= 0.175f;
@@ -251,6 +252,8 @@ void ERenderBatcher::draw_call()
 
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("normal_map_multiplier", NS_EGraphicCore::global_normal_multiplier);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("gloss_map_multiplier", NS_EGraphicCore::global_gloss_multiplier);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("plastic_or_metal_multiplier", NS_EGraphicCore::plastic_or_metal_multiplier);
+
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_position_x", NS_EGraphicCore::sun_x);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_position_y", NS_EGraphicCore::sun_y);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("sun_size", NS_EGraphicCore::sun_size);
