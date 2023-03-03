@@ -262,27 +262,14 @@ void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomDat
 	EGUIStyle::active_style = ((EntityButton*)_entity)->parent_button_group->selected_style;
 	
 	for (EWindow* window : EWindow::window_list)
-	for (EButtonGroup* group : window->button_group_list)
 	{
-		EButtonGroup::change_style(group, ((EntityButton*)_entity)->parent_button_group->selected_style);
+		window->window_need_refresh = true;
+
+		for (EButtonGroup* group : window->button_group_list)
+		{
+			EButtonGroup::recursive_change_style(group, ((EntityButton*)_entity)->parent_button_group->selected_style);
+		}
 	}
-
-	for (EWindow* w : EWindow::window_list)
-	{
-		NS_EGraphicCore::refresh_autosize_groups(w);
-	}
-
-
-
-	for (EWindow* window : EWindow::window_list)
-	for (EButtonGroup* group : window->button_group_list)
-	{
-		EButtonGroup::refresh_button_group(group);
-
-		//group->need_refresh = true;
-		//group->group_phantom_redraw = true;
-	}
-
 }
 
 void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData* _custom_data, float _d)

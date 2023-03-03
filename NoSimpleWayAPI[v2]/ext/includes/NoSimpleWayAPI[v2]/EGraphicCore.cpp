@@ -4177,7 +4177,14 @@ void NS_EGraphicCore::refresh_autosize_groups(EWindow* _window)
 		}
 		else
 		{
-			free_dynamic_size_y -= bg->region_gabarite->size_y;
+			//basic size
+			free_dynamic_size_y -= bg->base_height;
+
+			//real, expanded size
+			if (bg->can_resize_to_workspace_size_y)
+			{
+				free_dynamic_size_y -= bg->border_bottom + bg->border_up;
+			}
 		}
 	}
 
@@ -4190,6 +4197,16 @@ void NS_EGraphicCore::refresh_autosize_groups(EWindow* _window)
 		{
 			bg->base_height = free_dynamic_size_y / (float)dynamic_elements;
 			bg->region_gabarite->size_y = free_dynamic_size_y / (float)dynamic_elements;
+		}
+		else
+		{
+			bg->region_gabarite->size_y = bg->base_height;
+		}
+
+		if (bg->can_resize_to_workspace_size_y)
+		{
+			bg->region_gabarite->size_y += bg->border_bottom + bg->border_up;
+			//bg->base_height -= bg->border_bottom + bg->border_up;
 		}
 	}
 
@@ -4208,20 +4225,8 @@ void NS_EGraphicCore::refresh_autosize_groups(EWindow* _window)
 		}
 
 		prev_group = bg;
-	}
 
-	for (EButtonGroup* bg : _window->autosize_group_list)
-	{
-		//bg->expand_to_workspace_size();
-		//bg->phantom_translate_if_need();
-		//bg->recursive_phantom_translate_if_need();
-	}
-
-	for (EButtonGroup* bg : _window->autosize_group_list)
-	{
-
-		//EButtonGroup::refresh_button_group(bg);
-		//bg->need_refresh = true;
+		EInputCore::logger_param("autosize y", prev_group->region_gabarite->size_y);
 	}
 }
 

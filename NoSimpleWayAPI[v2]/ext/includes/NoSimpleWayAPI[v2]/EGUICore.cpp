@@ -75,7 +75,15 @@ void EWindow::GUI_update_default(float _d)
 
 	int catched_group_id = -1;
 
+	if (window_need_refresh)
+	{
+		window_need_refresh = false;
 
+		NS_EGraphicCore::refresh_autosize_groups(this);
+
+		for (EButtonGroup* group : button_group_list)
+		{EButtonGroup::refresh_button_group(group);}
+	}
 
 	//MOVING
 	if
@@ -2735,8 +2743,10 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 		}
 
 		//set slider head size
-		if (_group->slider != nullptr)
+		if ((_group->can_change_style) && (_group->slider != nullptr))
 		{
+			_group->slider->slider_active = _style->slider_active;
+			_group->slider->slider_inactive = _style->slider_inactive;
 			//_group->slider->button_gabarite->size_x = _group->selected_style->slider_inactive->main_texture->size_x_in_pixels;
 			//_group->slider->button_gabarite->size_y = _group->selected_style->slider_inactive->main_texture->size_y_in_pixels;
 		}
@@ -2841,16 +2851,16 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 //	{return nullptr;}
 //}
 
-void EButtonGroup::change_style(EButtonGroup* _group, EGUIStyle* _style)
+void EButtonGroup::recursive_change_style(EButtonGroup* _group, EGUIStyle* _style)
 {
 	EButtonGroup::apply_style_to_button_group(_group, _style);
 
 	//recursive down to child elements
 	for (EButtonGroup* group : _group->group_list)
-		if (group != nullptr)
-		{
-			EButtonGroup::change_style(group, _style);
-		}
+	if (group != nullptr)
+	{
+		EButtonGroup::recursive_change_style(group, _style);
+	}
 
 	//if (_group->parent_group == nullptr) { EButtonGroup::refresh_button_group(_group); }
 }

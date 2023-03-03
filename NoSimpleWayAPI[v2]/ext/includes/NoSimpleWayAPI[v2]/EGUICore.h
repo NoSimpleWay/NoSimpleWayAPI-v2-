@@ -108,7 +108,7 @@ public:
 	virtual void	GUI_draw_additional(float _d);
 	void			GUI_draw_second_pass(float _d);
 
-
+	bool			window_need_refresh = false;
 
 	//////////////		_STATIC SECTION_		////////////////////////
 
@@ -464,7 +464,7 @@ public:
 	//static EButtonGroupRow* add_default_row_to_group(EButtonGroup* _group, ERegionGabarite* _region);
 	//static EButtonGroupRow* get_last_created_row(EButtonGroup* _group);
 
-	static void change_style(EButtonGroup* _group, EGUIStyle* _style);
+	static void recursive_change_style(EButtonGroup* _group, EGUIStyle* _style);
 
 	unsigned int* culling_lines_method = new unsigned int(CullingLinesCalcMethod::CLCM_BY_PARENT_GROUP);
 	unsigned int* button_group_type = new unsigned int(ButtonGroupType::BGT_REGULAR);
