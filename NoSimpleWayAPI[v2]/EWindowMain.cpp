@@ -58,19 +58,19 @@ EButtonGroup*											EWindowMain::style_list_group = nullptr;
 EButtonGroupFastMessage*								EWindowMain::background_loading_info = nullptr;
 
 
-std::string													EWindowMain::username;
-std::string													EWindowMain::path_of_exile_folder;
+std::string												EWindowMain::username;
+std::string												EWindowMain::path_of_exile_folder;
 
-int															EWindowMain::selected_filter_tab_id;
+int														EWindowMain::selected_filter_tab_id;
 
 RouterVariant* EWindowMain::registered_rarity_router_variants[NSW_registered_rarity_count];
 RouterVariant* EWindowMain::registered_alternate_gem_quality_router_variants[NSW_registered_altered_gem_quality_count];
 
-std::vector < std::string>									EWindowMain::filter_text_lines;
-std::vector <EButtonGroupFilterBlockEditor*>				EWindowMain::filter_block_tabs = std::vector<EButtonGroupFilterBlockEditor*>(filter_tabs_count);
+std::vector < std::string>								EWindowMain::filter_text_lines;
+std::vector <EButtonGroupFilterBlockEditor*>			EWindowMain::filter_block_tabs = std::vector<EButtonGroupFilterBlockEditor*>(filter_tabs_count);
 
-std::vector<ENamedSound*>									EWindowMain::default_sound_list;
-std::vector<ENamedSound*>									EWindowMain::custom_sound_list;
+std::vector<ENamedSound*>								EWindowMain::default_sound_list;
+std::vector<ENamedSound*>								EWindowMain::custom_sound_list;
 
 GameItemAttribute* GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::_GAME_ATTRIBUTE_LAST_ELEMENT];
 
