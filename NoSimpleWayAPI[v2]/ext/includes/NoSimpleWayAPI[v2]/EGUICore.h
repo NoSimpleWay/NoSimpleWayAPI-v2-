@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <NoSimpleWayAPI[v2]/ETextCore.h>
+
 class ELocalisationText;
 class EBrickStyle;
 class EGUIStyle

@@ -120,7 +120,7 @@ public:
 
 
 
-typedef void (*change_style_action)(EntityButton*, EGUIStyle*);
+typedef void (*generate_vertex_buffer)(EntityButton*, EGUIStyle*);
 
 void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style);
 void action_generate_brick_bg_for_button(EntityButton* _but, EGUIStyle* _style);
@@ -157,6 +157,9 @@ public:
 	
 	void create_description() override;
 };
+
+
+
 
 
 enum class NewLineMethod
@@ -201,8 +204,11 @@ public:
 	float force_field_bottom		= 0.0f;
 	float force_field_up			= 0.0f;
 
-	float highlight_time		= 0.0f;
-	float max_highlight_time	= 1.0f;
+	float highlight_time			= 0.0f;
+	float max_highlight_time		= 1.0f;
+
+	float base_size_x				= 10.0f;
+	float base_size_y				= 10.0f;
 
 	ERegionGabarite* button_gabarite;
 
@@ -220,7 +226,7 @@ public:
 	void destroy_attached_description();
 	EButtonGroup* attached_description;
 
-	std::vector<change_style_action> action_on_generate_vertex_buffer;
+	std::vector<generate_vertex_buffer> action_on_generate_vertex_buffer;
 
 	static void				button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style);
 

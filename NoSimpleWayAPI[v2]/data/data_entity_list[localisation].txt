@@ -211,3 +211,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пластик/Металл"
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"Description_add_new_separator"
+	[tag]"name EN"		[value]"Add new separator between blocks, for better navigation"
+	[tag]"name RU"		[value]"Добавляет между блоками новый разделитель, для лучшей навигации"
+	
+	

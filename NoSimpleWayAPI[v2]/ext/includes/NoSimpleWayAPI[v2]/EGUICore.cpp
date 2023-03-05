@@ -1151,7 +1151,7 @@ void EButtonGroup::draw_button_group()
 
 							but->set_world_positions(but->world_position_x, but->world_position_y, but->world_position_z);
 
-							for (change_style_action csa : but->action_on_generate_vertex_buffer)
+							for (generate_vertex_buffer csa : but->action_on_generate_vertex_buffer)
 							{
 								csa(but, selected_style);
 							}
@@ -1850,7 +1850,7 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 
 
 				but->set_world_positions(but->world_position_x, but->world_position_y, but->world_position_z);
-				for (change_style_action csa : but->action_on_generate_vertex_buffer)
+				for (generate_vertex_buffer csa : but->action_on_generate_vertex_buffer)
 				{
 					csa(but, _group->selected_style);
 				}
@@ -2305,7 +2305,12 @@ void EButtonGroup::stretch_all_buttons()
 			for (EntityButton* but : button_line_list[i].button_list)
 			if (but->entity_is_active() || but->align_even_if_hidden)
 			{
-				if (but->can_be_stretched) { stretchable_elements_count++; }
+				if (but->can_be_stretched)
+				{
+					stretchable_elements_count++;
+
+					but->button_gabarite->size_x = but->base_size_x;
+				}
 
 				total_button_size
 				+=
@@ -2336,7 +2341,7 @@ void EButtonGroup::stretch_all_buttons()
 							&&
 							(additional_space_for_each_button > 0.0f)
 							&&
-							(additional_space_for_each_button <= but->button_gabarite->size_x * 0.5f)
+							(additional_space_for_each_button <= but->button_gabarite->size_x * 1.0f)
 						)
 					{
 						but->button_gabarite->size_x += additional_space_for_each_button;
@@ -2435,7 +2440,8 @@ void EButtonGroup::override_button_size()
 	if (button_size_x_override > 0)
 	for (EntityButton* but : workspace_button_list)
 	{
-		but->button_gabarite->size_x = button_size_x_override;
+		but->button_gabarite->size_x	= button_size_x_override;
+		but->base_size_x				= button_size_x_override;
 	}
 }
 

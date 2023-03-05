@@ -538,6 +538,9 @@ void EntityButton::init(ERegionGabarite* _region_gabarite, EButtonGroup* _parent
 	parent_button_group = _parent_group;
 	ERegionGabarite::set_region_gabarite(&button_gabarite, _region_gabarite);
 
+	base_size_x = _region_gabarite->size_x;
+	base_size_y = _region_gabarite->size_y;
+
 	sprite_layer_list.push_back(ESpriteLayer::create_default_sprite_layer(nullptr));
 
 	//EntityButton::button_generate_brick_bg(this, _parent_group->selected_style);
@@ -2032,3 +2035,5 @@ void DescriptionContainerDefault::create_description()
 		align_description(description_group);
 	}
 }
+
+

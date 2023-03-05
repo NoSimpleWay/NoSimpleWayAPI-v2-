@@ -3558,6 +3558,12 @@ EWindowMain::EWindowMain()
 		separator_button->can_be_stretched = true;
 		separator_button->main_text_area->localisation_text = l_text;
 		separator_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+
+		//##//##//##//##//##	DESCRIPTION		//##//##//##//##//##//##//##//##
+		separator_button->description_container = new DescriptionContainerSeparatorExample(600.0f, 500.0f);
+		separator_button->description_container->localisation_text = ELocalisationText::get_localisation_by_key("Description_add_new_separator");
+		separator_button->description_container->parent_button = separator_button;
+		//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##
 		//clone_button->parent_filter_block = 
 
 		filter_block_operation_segment->add_button_to_working_group(separator_button);
@@ -7937,7 +7943,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		EButtonGroup*
 			non_list_condition_group = EButtonGroup::create_default_button_group
 			(
-				new ERegionGabarite(420.0f, 160.0f),
+				new ERegionGabarite(370.0f, 160.0f),
 				EGUIStyle::active_style
 			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 		non_list_condition_group->have_rama = true;
@@ -14666,7 +14672,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 
 		jc_button->make_default_button_with_unedible_text
 		(
-			new ERegionGabarite(200.0f, button_height),
+			new ERegionGabarite(150.0f, button_height),
 			non_listed_line,
 			nullptr,
 			_game_item_attribute->localisation
@@ -17980,4 +17986,177 @@ void GameAttributeGeneratorRarity::execute_generation(EGameItem* _game_item)
 	GameAttributeGeneratorMinMaxInt::execute_generation(_game_item);
 
 	_game_item->rarity = target_attribute_container->attribute_value_int;
+}
+
+void DescriptionContainerSeparatorExample::create_description()
+{
+	DescriptionContainer::create_description();
+
+	if (parent_button != nullptr)
+	{
+		EButtonGroupSeparatorExample*
+		whole_group = new EButtonGroupSeparatorExample
+		(
+			new ERegionGabarite
+			(
+				size_x,
+				size_y
+			)
+		);
+
+		whole_group->init_as_root_group(parent_button->parent_button_group->root_group->parent_window);
+		whole_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		whole_group->need_refresh = true;
+
+		EButtonGroup*
+			bottom_side_for_preview = whole_group->add_group(new EButtonGroup(new ERegionGabarite(size_x, size_y)));
+		bottom_side_for_preview->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_without_slider, bgroup_default_bg);
+		bottom_side_for_preview->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		bottom_side_for_preview->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
+
+
+		EButtonGroup*
+			top_sider_for_text = whole_group->add_group(new EButtonGroup(new ERegionGabarite(size_x, 50.0f)));
+		top_sider_for_text->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_without_slider, bgroup_default_bg);
+		top_sider_for_text->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+		top_sider_for_text->add_default_clickable_region_with_text_area(localisation_text);
+
+		parent_button->parent_button_group->root_group->parent_window->button_group_list.push_back(whole_group);
+		parent_button->attached_description = whole_group;
+
+		ELocalisationText
+		separator_names[3];
+
+		separator_names[0].localisations[NSW_localisation_EN] = "Currency";
+		separator_names[0].localisations[NSW_localisation_RU] = "Валюта";
+
+		separator_names[1].localisations[NSW_localisation_EN] = "Heist tool";
+		separator_names[1].localisations[NSW_localisation_RU] = "Инструменты кражи";
+
+		separator_names[2].localisations[NSW_localisation_EN] = "Top bases";
+		separator_names[2].localisations[NSW_localisation_RU] = "Хорошие базы";
+
+		std::string
+			block_wide_button_tags[3][2];
+
+		block_wide_button_tags[0][0] = "Tainted currency";
+		block_wide_button_tags[0][1] = "Currency shard";
+
+		block_wide_button_tags[1][0] = "Heist tool";
+		block_wide_button_tags[1][1] = "Best heist tool";
+
+		block_wide_button_tags[2][0] = "Top tier base";
+		block_wide_button_tags[2][1] = "Rare base";
+
+		for (int i = 0; i < 3; i++)
+		{
+			
+
+
+
+
+
+
+			EButtonGroupFilterBlockSeparator*
+			sep = EWindowMain::create_filter_block_separator(bottom_side_for_preview, -1);
+			sep->pointer_to_description_button->main_text_area->localisation_text = separator_names[i];
+			sep->pointer_to_description_button->main_text_area->change_text(separator_names[i].localisations[ELocalisationText::active_localisation]);
+
+
+			
+
+			for (int j = 0; j < 2; j++)
+			{
+				EButtonGroup*
+				fb = new EButtonGroup(new ERegionGabarite(120.0f, 50.0f));
+				fb->init_button_group(EGUIStyle::active_style, true, true, bgroup_default_bg);
+				fb->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+				fb->debug_name = "Whole filter block";
+				fb->focusable_for_select = true;
+				if (j == 0) { fb->additional_y_distance = 16.0f; }
+
+				bottom_side_for_preview->add_group(fb);
+
+
+				//SEARCH SUITABLE GAME ITEMS
+				DataEntityNamedStruct* target_named_struct = nullptr;
+				std::vector<EDataEntity*>* target_data_entity_list_for_game_item;
+
+				for (DataEntityNamedStruct* named_struct : EDataEntity::data_entity_named_structs)
+				{
+					if (named_struct->name == "Game item") { target_named_struct = named_struct; break; }
+				}
+
+				int item_count = 0;
+				for (int z = 0; z < 16; z++)
+				{
+					target_data_entity_list_for_game_item = &target_named_struct->data_entity_list[z];
+
+
+					for (EDataEntity* data_entity : *target_data_entity_list_for_game_item)
+						if (item_count < 3)
+						{
+							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", block_wide_button_tags[i][j], data_entity))
+							{
+								EntityButton* wide_button = EntityButton::create_wide_item_button
+								(
+									new ERegionGabarite(150.0f, 40.0f),
+									bottom_side_for_preview,
+									data_entity,
+									EFont::font_list[0],
+									true
+								);
+
+								wide_button->can_be_stretched = true;
+
+								fb->add_button_to_working_group(wide_button);
+
+
+								//if (item_count >= 2) { break; }
+
+								item_count++;
+							}
+						}
+				}
+
+				if (i == 0)
+				{
+					whole_group->separators_list.push_back(sep);
+					whole_group->blocks_for_hide_list.push_back(fb);
+				}
+			}
+		}
+
+		align_description(whole_group);
+	}
+}
+
+void EButtonGroupSeparatorExample::button_group_update(float _d)
+{
+	EButtonGroup::button_group_update(_d);
+
+	cooldown_time -= _d;
+
+	if (cooldown_time <= 0.0f)
+	{
+		separators_status = !separators_status;
+		cooldown_time += 1.0f;
+
+		//bool sep_bool = 
+		for (EButtonGroupFilterBlockSeparator* sep : separators_list)
+		{
+			sep->is_expanded = separators_status;
+		}
+
+		
+		for (EButtonGroup* group : blocks_for_hide_list)
+		{
+			group->button_group_is_active = separators_status;
+		}
+
+		need_refresh = true;
+		
+	}
+
+
 }
