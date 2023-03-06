@@ -8679,7 +8679,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Card"
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

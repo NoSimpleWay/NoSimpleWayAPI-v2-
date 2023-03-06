@@ -1305,7 +1305,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 				);
 
 			main_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-			main_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+			main_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 
 			main_group->can_be_focused = false;
 			main_group->can_be_moved = false;
@@ -1321,7 +1321,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 				bottom_part = main_group->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 100.0f)));
 
 				bottom_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-				bottom_part->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_without_slider, bgroup_darken_bg);
+				bottom_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
 				//
 
 
@@ -1331,7 +1331,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 					up_part = main_group->add_group(new EButtonGroup(new ERegionGabarite(500.0f, 30.0f)));
 
 				up_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
-				up_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_default_bg);
+				up_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
 				//
 
 
@@ -1980,7 +1980,7 @@ EWindowMain::EWindowMain()
 		//(
 		//	EButtonGroup::create_root_button_group
 		//);
-		main_bottom_filter_block_control->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_darken_bg);
+		main_bottom_filter_block_control->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_without_slider);
 
 		main_bottom_filter_block_control->parent_window = this;
 
@@ -2121,7 +2121,9 @@ EWindowMain::EWindowMain()
 		{
 			EButtonGroupFilterBlockEditor* main_filter_editor =
 				new EButtonGroupFilterBlockEditor(new ERegionGabarite(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT));
-			main_filter_editor->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_with_slider);
+
+			main_filter_editor->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+
 			main_filter_editor->parent_window = this;
 
 			main_filter_editor->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
@@ -2413,7 +2415,7 @@ EWindowMain::EWindowMain()
 		style_list_group = whole_style_group;
 		whole_style_group->root_group = whole_style_group;
 		whole_style_group->parent_window = this;
-		whole_style_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+		whole_style_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 		whole_style_group->button_group_is_active = false;
 
 		EButtonGroup*
@@ -2423,21 +2425,21 @@ EWindowMain::EWindowMain()
 		{
 			EButtonGroup*
 				style_sample = style_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 200.0f)));
-			style_sample->init_button_group(gui_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+			style_sample->init_button_group(gui_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 			style_sample->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 			style_sample->can_change_style = false;
 			style_sample->additional_y_distance = 32.0f;
 
 			EButtonGroup*
 				style_button_imitator_bottom = style_sample->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 40.0f)));
-			style_button_imitator_bottom->init_button_group(gui_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+			style_button_imitator_bottom->init_button_group(gui_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
 			style_button_imitator_bottom->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 			style_button_imitator_bottom->additional_y_distance = 0.0f;
 			style_button_imitator_bottom->can_change_style = false;
 
 			EButtonGroup*
 			style_select_group = style_sample->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 40.0f)));
-			style_select_group->init_button_group(gui_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+			style_select_group->init_button_group(gui_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
 			style_select_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 			style_select_group->additional_y_distance = 0.0f;
 			style_select_group->can_change_style = false;
@@ -2514,7 +2516,7 @@ EWindowMain::EWindowMain()
 	{
 		EButtonGroupNewLootFilter*
 			main_loot_filter_group = new EButtonGroupNewLootFilter(new ERegionGabarite(100.0f, 100.0f, 300.0f, 80.0f));
-		main_loot_filter_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+		main_loot_filter_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 		main_loot_filter_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		main_loot_filter_group->root_group = main_loot_filter_group;
 		main_loot_filter_group->button_group_is_active = false;
@@ -2579,7 +2581,7 @@ EWindowMain::EWindowMain()
 	{
 		EButtonGroupDataEntity*
 			data_entity_main_group = new EButtonGroupDataEntity(new ERegionGabarite(900.0f, 100.0f, 0.0f, 1500.0f, 600.0f));
-		data_entity_main_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_darken_bg);
+		data_entity_main_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_without_slider);
 
 		data_entity_main_group->parent_window = this;
 		data_entity_main_group->root_group = data_entity_main_group;
@@ -3136,7 +3138,7 @@ EWindowMain::EWindowMain()
 		EButtonGroupLootSimulator*
 			main_loot_buttons_group = new EButtonGroupLootSimulator(new ERegionGabarite(100.0f, 100.0f, 1400.0f, 600.0f));
 
-		main_loot_buttons_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+		main_loot_buttons_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 		main_loot_buttons_group->root_group = main_loot_buttons_group;
 		main_loot_buttons_group->parent_window = this;
 		main_loot_buttons_group->button_group_is_active = false;
@@ -3149,7 +3151,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////
 		EButtonGroup*
 			bottom_loot_part = new EButtonGroup(new ERegionGabarite(90.0f, 90.0f));
-		bottom_loot_part->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
+		bottom_loot_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 		bottom_loot_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
 
@@ -3158,7 +3160,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////
 		EButtonGroup*
 			top_control_part = new EButtonGroup(new ERegionGabarite(90.0f, 30.0f));
-		top_control_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+		top_control_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
 		top_control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 		workspace_part->add_group(top_control_part);
 
@@ -3167,7 +3169,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////
 		EButtonGroup*
 			left_part_for_patterns = new EButtonGroup(new ERegionGabarite(220.0f, 500.0f));
-		left_part_for_patterns->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+		left_part_for_patterns->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
 		left_part_for_patterns->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 		main_loot_buttons_group->pointer_to_patterns_buttons_segment = left_part_for_patterns;
@@ -3177,7 +3179,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////
 		EButtonGroup*
 			middle_loot_buttons = new EButtonGroup(new ERegionGabarite(10.0f, 10.0f));
-		middle_loot_buttons->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
+		middle_loot_buttons->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 		middle_loot_buttons->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		middle_loot_buttons->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
@@ -3188,7 +3190,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////
 		EButtonGroup*
 			right_loot_part = new EButtonGroup(new ERegionGabarite(200.0f, 10.0f));
-		right_loot_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+		right_loot_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
 		right_loot_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 		bottom_loot_part->add_group(right_loot_part);
 
@@ -3786,7 +3788,7 @@ EWindowMain::EWindowMain()
 
 		EButtonGroupSoundList*
 			main_sound_group = new EButtonGroupSoundList(new ERegionGabarite(512.0f, 256.0f, 1020.0f, 512.0f));
-		main_sound_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+		main_sound_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 		main_sound_group->button_group_is_active = false;
 
 		EButtonGroup::sound_list_group = main_sound_group;
@@ -3873,7 +3875,7 @@ EWindowMain::EWindowMain()
 	{
 		EButtonGroupLootFilterList*
 		main_button_group = new EButtonGroupLootFilterList(new ERegionGabarite(512.0f, 256.0f, 1020.0f, 512.0f));
-		main_button_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+		main_button_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 
 		EWindowMain::existing_loot_filter_list = main_button_group;
 
@@ -4032,19 +4034,19 @@ EWindowMain::EWindowMain()
 
 		EButtonGroup*
 			about_workspace_part = about_whole_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
-		about_workspace_part->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_default_bg);
+		about_workspace_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 		about_workspace_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
 
 		EButtonGroup*
 			used_resoures_part = about_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(50.0f, 200.0f)));
-		used_resoures_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+		used_resoures_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
 		used_resoures_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		used_resoures_part->button_size_x_override = 200.0f;
 
 		EButtonGroup*
 			contact_info_part = about_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(50.0f, 200.0f)));
-		contact_info_part->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+		contact_info_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
 		contact_info_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		contact_info_part->button_size_x_override = 200.0f;
 
@@ -4299,7 +4301,7 @@ EWindowMain::EWindowMain()
 		EButtonGroupFilterEditorTopHeader*
 			main_button_group = new EButtonGroupFilterEditorTopHeader
 			(new ERegionGabarite(NS_EGraphicCore::SCREEN_WIDTH, 76.0f));
-		main_button_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_without_slider, bgroup_darken_bg);
+		main_button_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 
 		header_line = main_button_group;
 		main_button_group->region_gabarite->offset_y = NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom - main_button_group->region_gabarite->size_y;
@@ -7134,7 +7136,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroupFilterBlock*
 		whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 270.0f));
-	whole_filter_block_group->init_button_group(EGUIStyle::active_style, true, true, false);
+	whole_filter_block_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 	whole_filter_block_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	whole_filter_block_group->debug_name = "Whole filter block";
 	whole_filter_block_group->focusable_for_select = true;
@@ -7166,7 +7168,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	// whole line
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroupTopControlSection* control_part = new EButtonGroupTopControlSection(new ERegionGabarite(1200.0f, 30.0f));
-	control_part->init_button_group(EGUIStyle::active_style, false, false, true);
+	control_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
 	control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 
 	control_part->pointer_to_filter_block_group = whole_filter_block_group;
@@ -7180,7 +7182,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
 		control_part_left_show_hide_section = new EButtonGroup(new ERegionGabarite(480.0f, 30.0f));
-	control_part_left_show_hide_section->init_button_group(EGUIStyle::active_style, false, false, true);
+	control_part_left_show_hide_section->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 	control_part_left_show_hide_section->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 	control_part_left_show_hide_section->debug_name = "Left show/hide";
 
@@ -7211,7 +7213,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
 		control_part_mid_versions = new EButtonGroup(new ERegionGabarite(200.0f, 30.0f));
-	control_part_mid_versions->init_button_group(EGUIStyle::active_style, false, false, true);
+	control_part_mid_versions->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 	control_part_mid_versions->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 	control_part_mid_versions->debug_name = "Versions";
 
@@ -7228,7 +7230,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
 		control_part_mid_show_hide_cosmetic = new EButtonGroup(new ERegionGabarite(165.0f, 30.0f));
-	control_part_mid_show_hide_cosmetic->init_button_group(EGUIStyle::active_style, false, false, true);
+	control_part_mid_show_hide_cosmetic->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 	control_part_mid_show_hide_cosmetic->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 	control_part_mid_show_hide_cosmetic->debug_name = "Show/hide cosmetic";
 
@@ -7242,7 +7244,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
 		control_part_right_preview_box = new EButtonGroup(new ERegionGabarite(192.0f, 30.0f));
-	control_part_right_preview_box->init_button_group(EGUIStyle::active_style, false, false, true);
+	control_part_right_preview_box->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 	control_part_right_preview_box->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 	whole_filter_block_group->pointer_to_preview_box_segment = control_part_right_preview_box;
@@ -9566,7 +9568,7 @@ EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EBu
 {
 	EButtonGroupFilterBlockSeparator*
 	whole_separator_block = new EButtonGroupFilterBlockSeparator(new ERegionGabarite(1200.0f, 20.0f));
-	whole_separator_block->init_button_group(EGUIStyle::active_style, false, false, false);
+	whole_separator_block->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 	whole_separator_block->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	whole_separator_block->debug_name = "Whole separator";
 	whole_separator_block->focusable_for_select = true;
@@ -14622,7 +14624,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 
 		EButtonGroupNonListedLine*
 			non_listed_line = new EButtonGroupNonListedLine(new ERegionGabarite(20.0f, button_height));
-		non_listed_line->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_without_slider, bgroup_default_bg);
+		non_listed_line->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
 
 
 
@@ -15563,7 +15565,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 {
 	EButtonGroup*
 	main_listed_group = new EButtonGroup(new ERegionGabarite(800.0f, _filter_rule->min_y_size));
-	main_listed_group->init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_default_bg);
+	main_listed_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
 	main_listed_group->resize_to_highest_point = true;
 
 	main_listed_group->
@@ -18010,14 +18012,14 @@ void DescriptionContainerSeparatorExample::create_description()
 
 		EButtonGroup*
 			bottom_side_for_preview = whole_group->add_group(new EButtonGroup(new ERegionGabarite(size_x, size_y)));
-		bottom_side_for_preview->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_without_slider, bgroup_default_bg);
+		bottom_side_for_preview->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
 		bottom_side_for_preview->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		bottom_side_for_preview->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
 
 
 		EButtonGroup*
 			top_sider_for_text = whole_group->add_group(new EButtonGroup(new ERegionGabarite(size_x, 50.0f)));
-		top_sider_for_text->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_without_slider, bgroup_default_bg);
+		top_sider_for_text->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
 		top_sider_for_text->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 		top_sider_for_text->add_default_clickable_region_with_text_area(localisation_text);
 
@@ -18069,7 +18071,7 @@ void DescriptionContainerSeparatorExample::create_description()
 			{
 				EButtonGroup*
 				fb = new EButtonGroup(new ERegionGabarite(120.0f, 50.0f));
-				fb->init_button_group(EGUIStyle::active_style, true, true, bgroup_default_bg);
+				fb->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
 				fb->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 				fb->debug_name = "Whole filter block";
 				fb->focusable_for_select = true;

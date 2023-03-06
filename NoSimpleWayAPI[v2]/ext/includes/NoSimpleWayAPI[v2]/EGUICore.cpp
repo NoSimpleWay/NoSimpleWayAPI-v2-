@@ -2649,7 +2649,7 @@ void EButtonGroup::add_vertical_scroll_bar(EButtonGroup* _button_group)
 		(
 			new ERegionGabarite
 			(
-				_button_group->selected_style->slider_inactive->main_texture->size_x_in_pixels,
+				_button_group->selected_style->brick_style[BrickStyleID::SLIDER_INACTIVE].main_texture->size_x_in_pixels,
 				_button_group->region_gabarite->size_y - _button_group->border_bottom - _button_group->border_up
 			),
 			_button_group,
@@ -2676,9 +2676,8 @@ void EButtonGroup::add_vertical_scroll_bar(EButtonGroup* _button_group)
 
 		if (_button_group->selected_style != nullptr)
 		{
-
-			if (_button_group->selected_style->slider_active != nullptr) { but->slider_active = _button_group->selected_style->slider_active; }
-			if (_button_group->selected_style->slider_inactive != nullptr) { but->slider_inactive = _button_group->selected_style->slider_inactive; }
+			but->slider_active		= &_button_group->selected_style->brick_style[BrickStyleID::SLIDER_ACTIVE];
+			but->slider_inactive	= &_button_group->selected_style->brick_style[BrickStyleID::SLIDER_INACTIVE];
 		}
 		but->fixed_position = true;
 
@@ -2724,47 +2723,61 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 
 		if (_group->have_bg)
 		{
-			if ((*_group->button_group_type == ButtonGroupType::BGT_REGULAR) && (_style->button_group_main != nullptr))
+			if (_group->brick_style_id != BrickStyleID::NONE)
 			{
-				EBrickStyle::apply_brick_parameters_to_button_group(_group, _style->button_group_main);
+				EBrickStyle::apply_brick_parameters_to_button_group(_group, &_style->brick_style[_group->brick_style_id]);
+			}
+			else
+			{
+				EButtonGroup::set_offset_borders
+				(
+					_group,
+					0.0f,
+					0.0f,
+					0.0f,
+					0.0f
+				);
 			}
 
-			if ((*_group->button_group_type == ButtonGroupType::BGT_DARKEN) && (_style->button_group_darken != nullptr))
+			//set slider head size
+			if ((_group->can_change_style) && (_group->slider != nullptr))
 			{
-				EBrickStyle::apply_brick_parameters_to_button_group(_group, _style->button_group_darken);
+				_group->slider->slider_active	= &_style->brick_style[BrickStyleID::SLIDER_ACTIVE];
+				_group->slider->slider_inactive = &_style->brick_style[BrickStyleID::SLIDER_INACTIVE];
+				//_group->slider->button_gabarite->size_x = _group->selected_style->slider_inactive->main_texture->size_x_in_pixels;
+				//_group->slider->button_gabarite->size_y = _group->selected_style->slider_inactive->main_texture->size_y_in_pixels;
 			}
 
-			//EButtonGroup::generate_brick_textured_bg(_group);
+			//_group->refresh_button_group(_group);
+		}
+
+
+
+
+
+
+	}
+}
+
+void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* _style, BrickStyleID _brick_style_id)
+{
+	if (_group->can_change_style)
+	{
+		_group->selected_style = _style;
+
+	}
+
+	if ((EGUIStyle::active_style != nullptr) && (_group->can_change_style))
+	{
+		if (_group->brick_style_id != BrickStyleID::NONE)
+		{
+			EBrickStyle::apply_brick_parameters_to_button_group(_group, &_style->brick_style[_brick_style_id]);
 		}
 		else
 		{
-			EButtonGroup::set_offset_borders
-			(
-				_group,
-				0.0f,
-				0.0f,
-				0.0f,
-				0.0f
-			);
+			EButtonGroup::set_offset_borders(_group, 0.0f, 0.0f, 0.0f, 0.0f);
 		}
-
-		//set slider head size
-		if ((_group->can_change_style) && (_group->slider != nullptr))
-		{
-			_group->slider->slider_active = _style->slider_active;
-			_group->slider->slider_inactive = _style->slider_inactive;
-			//_group->slider->button_gabarite->size_x = _group->selected_style->slider_inactive->main_texture->size_x_in_pixels;
-			//_group->slider->button_gabarite->size_y = _group->selected_style->slider_inactive->main_texture->size_y_in_pixels;
-		}
-
-		//_group->refresh_button_group(_group);
 	}
-
-
-
-
-
-
 }
 
 void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
@@ -2777,55 +2790,22 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 		NS_ERenderCollection::temporary_sprites = true;
 
 		if
-		(
-			(*_group->button_group_type == ButtonGroupType::BGT_DARKEN)
-		)
+		(_group->brick_style_id != BrickStyleID::NONE)
 		{
 
 
-			NS_ERenderCollection::set_brick_borders_and_subdivisions
-			(
-				*_group->selected_style->button_group_darken->side_size_left,
-				*_group->selected_style->button_group_darken->side_size_right,
-				*_group->selected_style->button_group_darken->side_size_bottom,
-				*_group->selected_style->button_group_darken->side_size_up,
-
-				*_group->selected_style->button_group_darken->subdivision_x,
-				*_group->selected_style->button_group_darken->subdivision_y
-			);
+			NS_ERenderCollection::set_brick_borders_and_subdivisions (_group->selected_style->brick_style[_group->brick_style_id]);
 
 			NS_ERenderCollection::generate_brick_texture
 			(
 				_group->region_gabarite,
 				_group->background_sprite_layer,
-				_group->selected_style->button_group_darken->main_texture,
-				_group->selected_style->button_group_darken->normal_map_texture,
-				_group->selected_style->button_group_darken->gloss_map_texture
+				_group->selected_style->brick_style[_group->brick_style_id].main_texture,
+				_group->selected_style->brick_style[_group->brick_style_id].normal_map_texture,
+				_group->selected_style->brick_style[_group->brick_style_id].gloss_map_texture
 			);
 		}
-		else //if (*_group->button_group_type == ButtonGroupType::BGT_REGULAR)
-		{
-			NS_ERenderCollection::set_brick_borders_and_subdivisions
-			(
-				*_group->selected_style->button_group_main->side_size_left,
-				*_group->selected_style->button_group_main->side_size_right,
-				*_group->selected_style->button_group_main->side_size_bottom,
-				*_group->selected_style->button_group_main->side_size_up,
-
-				*_group->selected_style->button_group_main->subdivision_x,
-				*_group->selected_style->button_group_main->subdivision_y
-			);
-
-			srand(_group->seed);
-			NS_ERenderCollection::generate_brick_texture
-			(
-				_group->region_gabarite,
-				_group->background_sprite_layer,
-				_group->selected_style->button_group_main->main_texture,
-				_group->selected_style->button_group_main->normal_map_texture,
-				_group->selected_style->button_group_main->gloss_map_texture
-			);
-		}
+		
 
 
 	}
@@ -3257,7 +3237,7 @@ void EButtonGroup::init_as_root_group(EWindow* _window)
 	parent_window	= _window;
 	root_group		= this;
 
-	init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+	init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 }
 
 void EButtonGroup::init_as_fast_message(EWindow* _window, ELocalisationText _text)
@@ -3269,7 +3249,7 @@ void EButtonGroup::init_as_fast_message(EWindow* _window, ELocalisationText _tex
 
 void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 {
-	init_button_group(EGUIStyle::active_style, bgroup_with_bg, bgroup_with_slider, bgroup_darken_bg);
+	init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 
 	root_group = this;
 	button_group_is_active = false;
@@ -3284,14 +3264,14 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 
 	EButtonGroup*
 		bottom_part_for_buttons = pointer_to_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(250.0f, 30.0f)));
-	bottom_part_for_buttons->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
+	bottom_part_for_buttons->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 	bottom_part_for_buttons->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	bottom_part_for_buttons->button_size_x_override = 150.0f;
 	bottom_part_for_buttons->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
 	EButtonGroup*
 		top_part_for_description = pointer_to_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(250.0f, 50.0f)));
-	top_part_for_description->init_button_group(EGUIStyle::active_style, bgroup_without_bg, bgroup_with_slider, bgroup_darken_bg);
+	top_part_for_description->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 	top_part_for_description->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
 
@@ -3873,6 +3853,29 @@ void EButtonGroup::init_button_group(EGUIStyle* _style, bool _have_bg, bool _hav
 
 }
 
+void EButtonGroup::init_button_group(EGUIStyle* _style, BrickStyleID _brick_style_id, bool _have_slider)
+{
+	batcher_for_default_draw = NS_EGraphicCore::default_batcher_for_drawing;
+
+	base_width = region_gabarite->size_x;
+	base_height = region_gabarite->size_y;
+
+
+	brick_style_id = _brick_style_id;
+	have_bg = (_brick_style_id != BrickStyleID::NONE);
+
+	background_sprite_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
+	background_sprite_layer->make_as_PBR();
+
+	EButtonGroup::apply_style_to_button_group(this, _style, _brick_style_id);
+
+	if (_have_slider)
+	{
+		EButtonGroup::add_vertical_scroll_bar(this);
+	}
+
+}
+
 
 EGUIStyle* EGUIStyle::active_style = nullptr;
 int EGUIStyle::number = 0;
@@ -3954,24 +3957,24 @@ std::vector<EGUIStyle*> EGUIStyle::style_list;
 
 void EBrickStyle::set_border_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up)
 {
-	*_brick->side_size_left = _left;
-	*_brick->side_size_right = _right;
-	*_brick->side_size_bottom = _bottom;
-	*_brick->side_size_up = _up;
+	_brick->offset_for_elements_left = _left;
+	_brick->offset_for_elements_right = _right;
+	_brick->offset_for_elements_bottom = _bottom;
+	_brick->offset_for_elements_up = _up;
 }
 
 void EBrickStyle::set_offset_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up)
 {
-	*_brick->side_offset_left = _left;
-	*_brick->side_offset_right = _right;
-	*_brick->side_offset_bottom = _bottom;
-	*_brick->side_offset_up = _up;
+	_brick->border_texture_size_left = _left;
+	_brick->border_texture_size_right = _right;
+	_brick->border_texture_size_bottom = _bottom;
+	_brick->border_texture_size_up = _up;
 }
 
 void EBrickStyle::set_subdivisions(EBrickStyle* _brick, int _x, int _y)
 {
-	*_brick->subdivision_x = _x;
-	*_brick->subdivision_y = _y;
+	_brick->subdivision_x = _x;
+	_brick->subdivision_y = _y;
 }
 
 EBrickStyle::EBrickStyle()
@@ -3980,7 +3983,7 @@ EBrickStyle::EBrickStyle()
 
 EBrickStyle::EBrickStyle(std::string _file_name)
 {
-	*file_name = _file_name;
+	file_name = _file_name;
 }
 
 EBrickStyle::~EBrickStyle()
@@ -3989,10 +3992,10 @@ EBrickStyle::~EBrickStyle()
 
 void EBrickStyle::apply_brick_parameters_to_button_group(EButtonGroup* _group, EBrickStyle* _brick)
 {
-	_group->border_left = *_brick->side_offset_left;
-	_group->border_right = *_brick->side_offset_right;
-	_group->border_bottom = *_brick->side_offset_bottom;
-	_group->border_up = *_brick->side_offset_up;
+	_group->border_left		= _brick->border_texture_size_left;
+	_group->border_right	= _brick->border_texture_size_right;
+	_group->border_bottom	= _brick->border_texture_size_bottom;
+	_group->border_up		= _brick->border_texture_size_up;
 }
 
 EGUIStyle::EGUIStyle()
@@ -4048,7 +4051,7 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 
 	//main_group->region_gabarite->offset_x -= main_group->region_gabarite->size_x + 5.0f + *EGUIStyle::active_style->button_group_darken->side_offset_left + *EGUIStyle::active_style->button_group_darken->side_offset_right;
 
-	main_group->init_button_group(EGUIStyle::active_style, true, true, false);
+	main_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 	main_group->root_group = main_group;
 	main_group->actions_on_close.push_back(&EDataActionCollection::action_delete_vertical_router_variants_group);
 	main_group->target_router_button = _router_button;

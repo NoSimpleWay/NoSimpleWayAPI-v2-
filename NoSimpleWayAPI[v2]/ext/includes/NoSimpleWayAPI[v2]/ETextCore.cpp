@@ -527,8 +527,8 @@ void ETextArea::generate_text()
 
 		if (can_get_access_to_group_style())
 		{
-			border_offset_bottom = *parent_entity_for_text_area->parent_button_group->selected_style->button_bg->side_offset_bottom;
-			border_offset_top = *parent_entity_for_text_area->parent_button_group->selected_style->button_bg->side_offset_up;
+			border_offset_bottom	= parent_entity_for_text_area->parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_bottom;
+			border_offset_top		= parent_entity_for_text_area->parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_up;
 		}
 		else
 			if (parent_group != nullptr)

@@ -894,8 +894,8 @@ void EDataActionCollection::action_draw_horizontal_named_slider(Entity* _entity,
 			data->pointer_to_brick_line_sprite_layer->world_position_x,
 			data->pointer_to_brick_line_sprite_layer->world_position_y,
 
-			data->operable_area_size_x * data->current_value + data->style->round_slider->main_texture->size_x_in_pixels / 2.0f,
-			data->style->round_slider->main_texture->size_y_in_pixels,
+			data->operable_area_size_x * data->current_value + data->style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_x_in_pixels / 2.0f,
+			data->style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_y_in_pixels,
 
 
 			NS_DefaultGabarites::texture_gabarite_white_pixel
@@ -909,7 +909,7 @@ void EDataActionCollection::action_draw_horizontal_named_slider(Entity* _entity,
 			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 			data->pointer_to_brick_line_sprite_layer->world_position_x + data->operable_area_size_x * data->current_value,
 			data->pointer_to_brick_line_sprite_layer->world_position_y,
-			data->style->round_slider->main_texture
+			data->style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture
 		);
 
 
@@ -1094,9 +1094,9 @@ void EDataActionCollection::action_draw_stored_color_as_box(Entity* _entity, ECu
 		EntityButtonColorButton* data = static_cast<EntityButtonColorButton*>(_entity);
 		EntityButton* button = static_cast<EntityButton*>(_entity);
 
-		EBrickStyle* style = button->parent_button_group->selected_style->button_bg;
+		EBrickStyle* style = &button->parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG];
 
-		float size_y = button->button_gabarite->size_y - *style->side_size_bottom - *style->side_size_up - 15.0f;
+		float size_y = button->button_gabarite->size_y - style->offset_for_elements_bottom - style->offset_for_elements_up - 15.0f;
 
 		if (data->stored_color != nullptr)
 		{
@@ -1118,10 +1118,10 @@ void EDataActionCollection::action_draw_stored_color_as_box(Entity* _entity, ECu
 					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-					button->button_gabarite->world_position_x + *style->side_size_left + 1.0f,
-					button->button_gabarite->world_position_y + *style->side_size_bottom + 1.0f,
+					button->button_gabarite->world_position_x + style->offset_for_elements_left + 1.0f,
+					button->button_gabarite->world_position_y + style->offset_for_elements_bottom + 1.0f,
 
-					button->button_gabarite->size_x - *style->side_size_left - *style->side_size_right - 2.0f,
+					button->button_gabarite->size_x - style->offset_for_elements_left - style->offset_for_elements_right - 2.0f,
 					size_y - 2.0f,
 
 					NS_DefaultGabarites::texture_gabarite_white_pixel
@@ -1136,8 +1136,8 @@ void EDataActionCollection::action_draw_stored_color_as_box(Entity* _entity, ECu
 					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-					button->button_gabarite->world_position_x + button->button_gabarite->size_x - *style->side_size_right - size_y + 1.0f,
-					button->button_gabarite->world_position_y + *style->side_size_bottom + 1.0f,
+					button->button_gabarite->world_position_x + button->button_gabarite->size_x - style->offset_for_elements_right - size_y + 1.0f,
+					button->button_gabarite->world_position_y + style->offset_for_elements_bottom + 1.0f,
 
 					size_y - 2.0f,
 					size_y - 2.0f,

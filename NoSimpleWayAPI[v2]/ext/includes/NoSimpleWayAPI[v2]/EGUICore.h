@@ -6,22 +6,75 @@
 
 class ELocalisationText;
 class EBrickStyle;
+
+enum BrickStyleID
+{
+	NONE			= -1,
+	GROUP_MAIN,
+	GROUP_DARKEN,
+	SLIDER_BG,
+	BUTTON_BG,
+	SLIDER_INACTIVE,
+	SLIDER_ACTIVE,
+	ROUND_SLIDER,
+
+	LAST_ELEMENT
+};
+
+
+class EBrickStyle
+{
+public:
+	ETextureGabarite*	main_texture = nullptr;
+	ETextureGabarite*	normal_map_texture = nullptr;
+	ETextureGabarite*	gloss_map_texture = nullptr;
+
+	EGUIStyle*			parent_style = nullptr;
+
+	std::string file_name = "Group_bg";
+
+	float offset_for_elements_left		= 0.0f;
+	float offset_for_elements_right		= 0.0f;
+	float offset_for_elements_bottom	= 0.0f;
+	float offset_for_elements_up		= 0.0f;
+
+	float border_texture_size_left		= 0.0f;
+	float border_texture_size_right		= 0.0f;
+	float border_texture_size_bottom	= 0.0f;
+	float border_texture_size_up		= 0.0f;
+
+	int subdivision_x			= 0;
+	int subdivision_y			= 0;
+
+	static void set_border_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
+	static void set_offset_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
+	static void set_subdivisions(EBrickStyle* _brick, int _x, int _y);
+
+	EBrickStyle();
+	EBrickStyle(std::string _file_name);
+	~EBrickStyle();
+
+	static void apply_brick_parameters_to_button_group(EButtonGroup* _group, EBrickStyle* _brick);
+};
+
 class EGUIStyle
 {
 public:
 
 	static int number;
 
-	EBrickStyle* button_group_main = nullptr;
-	EBrickStyle* button_group_darken = nullptr;
+	EBrickStyle brick_style[BrickStyleID::LAST_ELEMENT];
 
-	EBrickStyle* slider_bg = nullptr;
-	EBrickStyle* button_bg = nullptr;
+	//EBrickStyle* button_group_main = nullptr;
+	//EBrickStyle* button_group_darken = nullptr;
 
-	EBrickStyle* slider_inactive = nullptr;
-	EBrickStyle* slider_active = nullptr;
+	//EBrickStyle* slider_bg = nullptr;
+	//EBrickStyle* button_bg = nullptr;
 
-	EBrickStyle* round_slider = nullptr;
+	//EBrickStyle* slider_inactive = nullptr;
+	//EBrickStyle* slider_active = nullptr;
+
+	//EBrickStyle* round_slider = nullptr;
 
 	std::string* folder = new std::string("lead_and_gold");
 	float		text_color_multiplier[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
@@ -435,10 +488,12 @@ public:
 	static void generate_brick_textured_bg(EButtonGroup* _group);
 
 	static void apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* _style);
+	static void apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* _style, BrickStyleID _brick_style_id);
 
 	//base
 	static EButtonGroup* create_base_button_group(ERegionGabarite* _region, EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg);
 	void init_button_group(EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg);
+	void init_button_group(EGUIStyle* _style, BrickStyleID _brick_style_id, bool _have_slider);
 
 	//bg, slider, focusable, bright
 	static EButtonGroup* create_default_button_group(ERegionGabarite* _region, EGUIStyle* _style);
@@ -469,6 +524,8 @@ public:
 
 	unsigned int* culling_lines_method = new unsigned int(CullingLinesCalcMethod::CLCM_BY_PARENT_GROUP);
 	unsigned int* button_group_type = new unsigned int(ButtonGroupType::BGT_REGULAR);
+
+	BrickStyleID brick_style_id;
 
 	//unsigned int* gabarite_size_mode_x		= new unsigned int(GroupStretchMode::CONSTANT);
 	//unsigned int* gabarite_size_mode_y		= new unsigned int(GroupStretchMode::CONSTANT);
@@ -629,36 +686,4 @@ enum StyleList
 };
 
 
-class EBrickStyle
-{
-public:
-	ETextureGabarite* main_texture = nullptr;
-	ETextureGabarite* normal_map_texture = nullptr;
-	ETextureGabarite* gloss_map_texture = nullptr;
-
-	std::string* file_name = new std::string("Group_bg");
-
-	float* side_size_left = new float(0.0f);
-	float* side_size_right = new float(0.0f);
-	float* side_size_bottom = new float(0.0f);
-	float* side_size_up = new float(0.0f);
-
-	float* side_offset_left = new float(0.0f);
-	float* side_offset_right = new float(0.0f);
-	float* side_offset_bottom = new float(0.0f);
-	float* side_offset_up = new float(0.0f);
-
-	int* subdivision_x = new int(0);
-	int* subdivision_y = new int(0);
-
-	static void set_border_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
-	static void set_offset_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
-	static void set_subdivisions(EBrickStyle* _brick, int _x, int _y);
-
-	EBrickStyle();
-	EBrickStyle(std::string _file_name);
-	~EBrickStyle();
-
-	static void apply_brick_parameters_to_button_group(EButtonGroup* _group, EBrickStyle* _brick);
-};
 
