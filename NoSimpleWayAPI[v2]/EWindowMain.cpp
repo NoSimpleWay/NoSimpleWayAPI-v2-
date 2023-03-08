@@ -5969,7 +5969,7 @@ void EWindowMain::register_filter_rules()
 	////GLOVES HELMETS BOOTS
 	////////////////////////////////////////////////////////////////////////////////////////////
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Convoking_Wand_inventory_icon");
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/class_boots");
 	jc_filter_rule->categry_id = 2;
 
 	jc_filter_rule->localisation_text = new ELocalisationText();

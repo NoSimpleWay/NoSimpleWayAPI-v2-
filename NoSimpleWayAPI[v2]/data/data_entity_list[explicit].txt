@@ -21909,6 +21909,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Interference"
+	[tag]"explicit tag"	[value]"base name collision"
 
 	[tag]"name EN"		[value]"[of Interference]You take (41-50)% reduced Extra Damage from Critical Strikes"
 	[tag]"name RU"		[value]"[соприкосновения]Вы получаете сниженный на (41-50)% дополнительный урон от критических ударов"
@@ -27956,6 +27957,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Interference"
+	[tag]"explicit tag"	[value]"base name collision"
 
 	[tag]"name EN"		[value]"[of Interference]Hinders nearby Enemies with (17-22)% reduced Movement Speed if used while not on Full Life"
 	[tag]"name RU"		[value]"[соприкосновения]Сковывает ближайших врагов, снижая их скорость передвижения на (17-22)%, если использовано не при полном здоровье"
@@ -27992,6 +27994,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Interference"
+	[tag]"explicit tag"	[value]"base name collision"
 
 	[tag]"name EN"		[value]"[of Interference]Hinders nearby Enemies with (17-22)% reduced Movement Speed if used while not on Full Mana"
 	[tag]"name RU"		[value]"[соприкосновения]Сковывает ближайших врагов, снижая их скорость передвижения на (17-22)%, если использовано не при полной мане"
