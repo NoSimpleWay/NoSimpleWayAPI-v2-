@@ -38706,7 +38706,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"catarina"
 	[tag]"base name"	[value]"Catarina's"
 
 	[tag]"name EN"		[value]"[Catarina's]Veiled modifier"
@@ -38714,7 +38714,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"catarina"
 	[tag]"base name"	[value]"Catarina's Veiled"
 
 	[tag]"name EN"		[value]"[Catarina's Veiled]Veiled modifier"
@@ -38727,7 +38727,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"elreon"
 	[tag]"base name"	[value]"Elreon's"
 
 	[tag]"name EN"		[value]"[Elreon's]Veiled modifier"
@@ -38735,7 +38735,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"elreon"
 	[tag]"base name"	[value]"Elreon's Veiled"
 
 	[tag]"name EN"		[value]"[Elreon's Veiled]Veiled modifier"
@@ -38749,7 +38749,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"gravicius"
 	[tag]"base name"	[value]"Gravicius'"
 
 	[tag]"name EN"		[value]"[Gravicius']Veiled modifier"
@@ -38757,7 +38757,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"gravicius"
 	[tag]"base name"	[value]"Gravicius' Veiled"
 
 	[tag]"name EN"		[value]"[Gravicius' Veiled]Veiled modifier"
@@ -38773,7 +38773,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"haku"
 	[tag]"base name"	[value]"Haku's"
 
 	[tag]"name EN"		[value]"[Haku's]Veiled modifier"
@@ -38782,7 +38782,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"haku"
 	[tag]"base name"	[value]"Haku's Veiled"
 
 	[tag]"name EN"		[value]"[Haku's Veiled]Veiled modifier"
@@ -38796,7 +38796,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"it"
 	[tag]"base name"	[value]"It's"
 
 	[tag]"name EN"		[value]"[It's]Veiled modifier"
@@ -38804,7 +38804,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"it"
 	[tag]"base name"	[value]"It That Fled's Veiled"
 
 	[tag]"name EN"		[value]"[It That Fled's Veiled]Veiled modifier"
@@ -38818,7 +38818,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"jorgin"
 	[tag]"base name"	[value]"Jorgin's"
 
 	[tag]"name EN"		[value]"[Jorgin's]Veiled modifier"
@@ -38827,7 +38827,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"jorgin"
 	[tag]"base name"	[value]"of Jorgin's Veil"
 
 	[tag]"name EN"		[value]"[of Jorgin's Veil]Veiled modifier"
@@ -38839,7 +38839,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"korell"
 	[tag]"base name"	[value]"Korell's"
 
 	[tag]"name EN"		[value]"[Korell's]Veiled modifier"
@@ -38847,7 +38847,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"korell"
 	[tag]"base name"	[value]"Korell's Veiled"
 
 	[tag]"name EN"		[value]"[Korell's Veiled]Veiled modifier"
@@ -38860,7 +38860,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"leo"
 	[tag]"base name"	[value]"Leo's"
 
 	[tag]"name EN"		[value]"[Leo's]Veiled modifier"
@@ -38868,7 +38868,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"leo"
 	[tag]"base name"	[value]"Leo's Veiled"
 
 	[tag]"name EN"		[value]"[Leo's Veiled]Veiled modifier"
@@ -38881,15 +38881,16 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"aisling"
 	[tag]"base name"	[value]"of Aisling"
 
 	[tag]"name EN"		[value]"[of Aisling]Veiled modifier"
 	[tag]"name RU"		[value]"[Ашлинг]Завуалированное свойство"
+	[tag]"Fuck you"		[value]"Thank's for ruining my stuff"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"aisling"
 	[tag]"base name"	[value]"of Aisling's Veil"
 
 	[tag]"name EN"		[value]"[of Aisling's Veil]Veiled modifier"
@@ -38902,7 +38903,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"cameria"
 	[tag]"base name"	[value]"of Cameria"
 
 	[tag]"name EN"		[value]"[of Cameria]Veiled modifier"
@@ -38910,7 +38911,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"cameria"
 	[tag]"base name"	[value]"of Cameria's Veil"
 
 	[tag]"name EN"		[value]"[of Cameria's Veil]Veiled modifier"
@@ -38923,7 +38924,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"hillock"
 	[tag]"base name"	[value]"of Hillock"
 
 	[tag]"name EN"		[value]"[of Hillock]Veiled modifier"
@@ -38931,7 +38932,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"hillock"
 	[tag]"base name"	[value]"of Hillock's Veil"
 
 	[tag]"name EN"		[value]"[of Hillock's Veil]Veiled modifier"
@@ -38944,7 +38945,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"janus"
 	[tag]"base name"	[value]"of Janus"
 
 	[tag]"name EN"		[value]"[of Janus]Veiled modifier"
@@ -38953,7 +38954,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"janus"
 	[tag]"base name"	[value]"of Janus' Veil"
 
 	[tag]"name EN"		[value]"[of Janus' Veil]Veiled modifier"
@@ -38966,7 +38967,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"riker"
 	[tag]"base name"	[value]"of Riker"
 
 	[tag]"name EN"		[value]"[of Riker]Veiled modifier"
@@ -38974,7 +38975,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"riker"
 	[tag]"base name"	[value]"of Riker's Veil"
 
 	[tag]"name EN"		[value]"[of Riker's Veil]Veiled modifier"
@@ -38987,7 +38988,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"rin"
 	[tag]"base name"	[value]"Rin's"
 
 	[tag]"name EN"		[value]"[Rin's]Veiled modifier"
@@ -38995,7 +38996,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"rin"
 	[tag]"base name"	[value]"Rin's Veiled"
 
 	[tag]"name EN"		[value]"[Rin's Veiled]Veiled modifier"
@@ -39008,7 +39009,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"tora"
 	[tag]"base name"	[value]"Tora's"
 
 	[tag]"name EN"		[value]"[Tora's]Veiled modifier"
@@ -39016,7 +39017,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"tora"
 	[tag]"base name"	[value]"Tora's Veiled"
 
 	[tag]"name EN"		[value]"[Tora's Veiled]Veiled modifier"
@@ -39029,7 +39030,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"vagan"
 	[tag]"base name"	[value]"Vagan's"
 
 	[tag]"name EN"		[value]"[Vagan's]Veiled modifier"
@@ -39037,7 +39038,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"vagan"
 	[tag]"base name"	[value]"Vagan's Veiled"
 
 	[tag]"name EN"		[value]"[Vagan's Veiled]Veiled modifier"
@@ -39050,7 +39051,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"vorici"
 	[tag]"base name"	[value]"Vorici's"
 
 	[tag]"name EN"		[value]"[Vorici's]Veiled modifier"
@@ -39058,13 +39059,36 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"veiled"
+	[tag]"icon path"	[value]"vorici"
 	[tag]"base name"	[value]"Vorici's Veiled"
 
 	[tag]"name EN"		[value]"[Vorici's Veiled]Veiled modifier"
 	[tag]"name RU"		[value]"[вуали Воричи]Неопознанное завуалированное свойство"
 	
 	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"essence_explicit"
+	[tag]"base name"	[value]"Essence"
+
+	[tag]"name EN"		[value]"[Essence]"
+	[tag]"name RU"		[value]"[Сущности]"
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -640,6 +640,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 			_parent_group,
 			&EDataActionCollection::action_out_main_text_area
 		);
+		jc_button->can_be_stretched = true;
 
 		EDataContainer_DataEntityHolder* data_holder = new EDataContainer_DataEntityHolder();
 		data_holder->stored_data_entity = _data_entity;
@@ -724,6 +725,14 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 			else//use english localisation
 			{
 				jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+			}
+
+			if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "explicit tag", "base name collision", _data_entity))
+			{
+				jc_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = jc_button->main_text_area->localisation_text.base_name;
+				jc_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = jc_button->main_text_area->localisation_text.base_name;
+
+				jc_button->main_text_area->change_text(jc_button->main_text_area->localisation_text.base_name);
 			}
 
 			////////////////////////

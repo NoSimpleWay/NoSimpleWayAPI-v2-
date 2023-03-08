@@ -2789,6 +2789,8 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 
 		NS_ERenderCollection::temporary_sprites = true;
 
+		srand(_group->seed);
+
 		if
 		(_group->brick_style_id != BrickStyleID::NONE)
 		{

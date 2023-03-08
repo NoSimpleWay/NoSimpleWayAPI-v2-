@@ -1542,18 +1542,7 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 		true
 	);
 
-	if
-		(
-			(data_entity_holder->stored_data_entity != nullptr)
-			&&
-			(DataEntityUtils::is_exist_tag_by_name_and_value(0, "explicit tag", "base name collision", data_entity_holder->stored_data_entity))
-			)
-	{
-		jc_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = jc_button->main_text_area->localisation_text.base_name;
-		jc_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = jc_button->main_text_area->localisation_text.base_name;
 
-		jc_button->main_text_area->change_text(jc_button->main_text_area->localisation_text.base_name);
-	}
 
 	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
@@ -5891,8 +5880,8 @@ void EWindowMain::register_filter_rules()
 	jc_filter_rule->categry_id = 2;
 
 	jc_filter_rule->localisation_text = new ELocalisationText();
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Tier 1 two-handed attributes";
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Тир 1 aтрибуты двуручек";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Tier 1 one-handed attributes";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Тир 1 aтрибуты одноручек";
 	jc_filter_rule->tag = "Explicit";
 
 	//filter by game item
@@ -5989,7 +5978,7 @@ void EWindowMain::register_filter_rules()
 	jc_filter->target_tag_name = "explicit tag";
 	jc_filter->suitable_values_list.push_back("T1 gloves");
 	jc_filter->suitable_values_list.push_back("T1 helmets");
-	jc_filter->suitable_values_list.push_back("T1 shields");
+	jc_filter->suitable_values_list.push_back("T1 boots");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
@@ -10219,7 +10208,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										EFont::font_list[0],
 										true
 									);
-									wide_button->can_be_stretched = true;
+									//wide_button->can_be_stretched = true;
 									((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons->add_button_to_working_group(wide_button);
 
 								}
@@ -18109,7 +18098,7 @@ void DescriptionContainerSeparatorExample::create_description()
 									true
 								);
 
-								wide_button->can_be_stretched = true;
+								//wide_button->can_be_stretched = true;
 
 								fb->add_button_to_working_group(wide_button);
 

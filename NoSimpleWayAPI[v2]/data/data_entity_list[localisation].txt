@@ -200,7 +200,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"key"			[value]"matte/gloss_multiplier"
 	[tag]"name EN"		[value]"Matte/Gloss"
-	[tag]"name RU"		[value]"Матовый/Глянец"
+	[tag]"name RU"		[value]"Матовый/Гладкий"
 	
 	
 ADD_NEW_DATA_ENTITY
