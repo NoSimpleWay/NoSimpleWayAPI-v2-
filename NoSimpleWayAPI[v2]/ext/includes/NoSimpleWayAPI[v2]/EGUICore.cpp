@@ -2341,7 +2341,7 @@ void EButtonGroup::stretch_all_buttons()
 							&&
 							(additional_space_for_each_button > 0.0f)
 							&&
-							(additional_space_for_each_button <= but->button_gabarite->size_x * 1.0f)
+							(additional_space_for_each_button <= but->button_gabarite->size_x * 10.0f)
 						)
 					{
 						but->button_gabarite->size_x += additional_space_for_each_button;
@@ -2782,9 +2782,37 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 
 void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 {
-	if ((_group != nullptr) && (_group->selected_style != nullptr) && (_group->background_sprite_layer != nullptr))
+	if (_group == nullptr)
 	{
-		
+		EInputCore::logger_simple_error("group is NULL!");
+	}
+	else if (_group->selected_style == nullptr)
+	{
+		EInputCore::logger_simple_error("group [" + _group->debug_name + "] style is NULL!");
+	}
+	else if (_group->background_sprite_layer == nullptr)
+	{
+		if (_group->have_bg) { EInputCore::logger_simple_error("group [" + _group->debug_name + "] have no background sprite layer"); }
+	}
+	else if ((_group->region_gabarite->size_x <= 0.0f) || (_group->region_gabarite->size_y <= 0.0f))
+	{
+		//EInputCore::logger_simple_error
+		//(
+		//	"group ["
+		//	+
+		//	_group->debug_name
+		//	+
+		//	"] have wrong gabarite size: x["
+		//	+
+		//	std::to_string(_group->region_gabarite->size_x)
+		//	+
+		//	"] y:["
+		//	+
+		//	std::to_string(_group->region_gabarite->size_y)
+		//);
+	}
+	else
+	{
 		if (_group->seed == 0) { _group->seed = rand() % 70000; }
 
 		NS_ERenderCollection::temporary_sprites = true;
@@ -2807,9 +2835,6 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 				_group->selected_style->brick_style[_group->brick_style_id].gloss_map_texture
 			);
 		}
-		
-
-
 	}
 }
 
