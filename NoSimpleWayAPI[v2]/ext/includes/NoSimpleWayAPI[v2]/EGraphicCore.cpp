@@ -2020,7 +2020,7 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 	}
 
 
-	float blur_table[texture_skydome_levels] = { 0.10f, 0.10f, 0.1f, 0.2f, 0.4f, 0.8f };
+	float blur_table[texture_skydome_levels] = { 0.05f, 0.1f, 0.2f, 0.4f, 0.8f, 1.6f };
 	for (int i = 1; i < texture_skydome_levels; i++)
 	{
 
