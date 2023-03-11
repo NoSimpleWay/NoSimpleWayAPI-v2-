@@ -1034,13 +1034,13 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 			&&
 			(!loot_button->matched_filter_blocks.empty())
 			&&
-			(loot_button->matched_show_hide != nullptr)
+			(loot_button->matched_show_hide_block != nullptr)
 			&&
 			(
 				(
-					(loot_button->matched_show_hide->button_show_hide->selected_variant == 1)
+					(loot_button->matched_show_hide_block->button_show_hide->selected_variant == 1)
 					&&
-					(loot_button->matched_show_hide->version_routers[selected_version_router]->selected_variant != 1)
+					(loot_button->matched_show_hide_block->version_routers[selected_version_router]->selected_variant != 1)
 				)
 				||
 				(EButtonGroupLootSimulator::show_hidden)
@@ -1192,7 +1192,7 @@ void EDataActionCollection::action_refresh_loot_simulator_sizes(Entity* _entity,
 	}
 }
 
-void EDataActionCollection::action_highlight_matched_blocks(Entity* _entity, ECustomData* _custom_data, float _d)
+void EDataActionCollection::action_select_loot_item_button(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EntityButtonLootItem*
 		loot_button = static_cast<EntityButtonLootItem*>(_entity);
@@ -1220,23 +1220,34 @@ void EDataActionCollection::action_highlight_matched_blocks(Entity* _entity, ECu
 
 		}
 
-	for (EButtonGroup* group : loot_button->matched_filter_blocks)
-	{
-		group->highlight_time = 0.5f;
-	}
+	
+
+	EWindowMain::loot_simulator_button_group->generate_info_buttons_for_right_side(loot_button);
+
+	//need_translate = -loot_button->matched_filter_blocks.back()->region_gabarite->world_position_y;
+
+	//EWindowMain::loot_filter_editor->translate_content(0.0f, need_translate, 0.0f, false);
+
+}
+
+void EDataActionCollection::action_highlight_stored_block(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonLootItemSuitableBlocks* loot_button = static_cast<EntityButtonLootItemSuitableBlocks*>(_entity);
+
+	loot_button->target_filter_block->highlight_this_group();
 
 	float need_translate = 0.0f;
 
-	if (loot_button->matched_show_hide != nullptr)
+	if (loot_button->target_filter_block != nullptr)
 	{
 		if
-		(
-			(loot_button->matched_show_hide->attached_separator != nullptr)
-			&&
-			!(loot_button->matched_show_hide->attached_separator->is_expanded)
-		)
+			(
+				(loot_button->target_filter_block->attached_separator != nullptr)
+				&&
+				!(loot_button->target_filter_block->attached_separator->is_expanded)
+				)
 		{
-			loot_button->matched_show_hide->attached_separator->is_expanded = true;
+			loot_button->target_filter_block->attached_separator->is_expanded = true;
 
 			//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 			/*for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
@@ -1253,19 +1264,12 @@ void EDataActionCollection::action_highlight_matched_blocks(Entity* _entity, ECu
 			EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 		}
 
-		EWindowMain::loot_filter_editor->scroll_y = max(-loot_button->matched_show_hide->region_gabarite->offset_y, 0.0f);
+		EWindowMain::loot_filter_editor->scroll_y = max(-loot_button->target_filter_block->region_gabarite->offset_y, 0.0f);
 		EWindowMain::loot_filter_editor->slider->current_value = EWindowMain::loot_filter_editor->scroll_y;
 
 		EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 		//EWindowMain::loot_filter_editor->need_refresh = true;
 	}
-
-	EWindowMain::loot_simulator_button_group->generate_info_buttons_for_right_side(loot_button);
-
-	//need_translate = -loot_button->matched_filter_blocks.back()->region_gabarite->world_position_y;
-
-	//EWindowMain::loot_filter_editor->translate_content(0.0f, need_translate, 0.0f, false);
-
 }
 
 void EDataActionCollection::action_add_items_from_this_loot_pattern(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -16756,26 +16760,25 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 	}
 
 	for (GameAttributeGenerator* a_generator : attribute_generators_list)
-		if
-			(
-				(a_generator->target_attribute != nullptr)
-				&&
-				(rand() % 100 < (int)(a_generator->chance_to_generate * 100.0f))
-				)
-		{
-			EGameItemAttributeContainer
-				attribute_container;
-
-			a_generator->target_attribute_container = &attribute_container;
-			a_generator->execute_generation(_game_item);
-
-			attribute_container.target_attribute = a_generator->target_attribute;
-			_game_item->attribute_container_list.push_back(attribute_container);
-		}
-		else
+	 {
+		if (a_generator->target_attribute == nullptr)
 		{
 			EInputCore::logger_simple_error("Cannot work with attribute container with NULL atrribute!");
 		}
+		else
+			if (rand() % 100 < (int)(a_generator->chance_to_generate * 100.0f))
+			{
+				EGameItemAttributeContainer
+					attribute_container;
+
+				a_generator->target_attribute_container = &attribute_container;
+				a_generator->execute_generation(_game_item);
+
+				attribute_container.target_attribute = a_generator->target_attribute;
+				_game_item->attribute_container_list.push_back(attribute_container);
+
+			}
+	}
 }
 
 void GameItemGenerator::add_rarity(int _rarity_min, int _rarity_max, float _pow)
@@ -16950,7 +16953,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 			if (EButtonGroupLootSimulator::this_group_is_matched(stored_game_item, filter_block))
 			{
 				matched_filter_blocks.push_back(filter_block);
-				matched_show_hide = filter_block;
+				matched_show_hide_block = filter_block;
 
 				if (filter_block->color_check[0])
 				{
@@ -17018,7 +17021,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 
 			if (EButtonGroupLootSimulator::this_group_is_matched(stored_game_item, filter_block))
 			{
-				if (matched_show_hide == nullptr){ matched_show_hide = filter_block; }
+				if (matched_show_hide_block == nullptr){ matched_show_hide_block = filter_block; }
 				matched_filter_blocks.push_back(filter_block);
 
 
@@ -17101,7 +17104,7 @@ void LootSimulatorPattern::refresh_loot_simulator(LootSimulatorPattern* _pattern
 			_pattern->game_item_generator_list[i]->init_game_item(game_item);
 
 			EntityButtonLootItem*
-				loot_item = new EntityButtonLootItem();
+			loot_item = new EntityButtonLootItem();
 			loot_item->align_even_if_hidden = true;
 			loot_item->do_not_generate_bg = true;
 
@@ -17120,7 +17123,7 @@ void LootSimulatorPattern::refresh_loot_simulator(LootSimulatorPattern* _pattern
 			(
 				new ERegionGabarite(512.0f, 40.0f),
 				EButtonGroupLootSimulator::pointer_to_loot_buttons_segment,
-				&EDataActionCollection::action_highlight_matched_blocks,
+				&EDataActionCollection::action_select_loot_item_button,
 				ELocalisationText::generate_localisation(item_name)
 			);
 			//loot_item->main_clickable_area->actions_on_click_list.pu
@@ -17846,12 +17849,12 @@ void EButtonGroupLootSimulator::button_group_update(float _d)
 
 			button->entity_disabled =
 			!(
-				(loot_button->matched_show_hide != nullptr)
+				(loot_button->matched_show_hide_block != nullptr)
 				&&
 				(
-					(loot_button->matched_show_hide->button_show_hide->selected_variant == 1)
+					(loot_button->matched_show_hide_block->button_show_hide->selected_variant == 1)
 					&&
-					(loot_button->matched_show_hide->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant != 1)
+					(loot_button->matched_show_hide_block->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant != 1)
 				)
 				||
 				(show_hidden)
@@ -17867,22 +17870,46 @@ void EButtonGroupLootSimulator::generate_info_buttons_for_right_side(EntityButto
 	pointer_to_right_side_info_buttons->remove_all_workspace_buttons();
 
 
-	for (EButtonGroupFilterBlock* group : _loot_button->matched_filter_blocks)
+
+		
+
+		std::string key_string = "";
+		create_info_button(_loot_button->matched_size_block,				"button_matched_size_block");
+
+		create_info_button(_loot_button->matched_bg_color_block,			"button_matched_bg_color_block");
+		create_info_button(_loot_button->matched_rama_color_block,			"button_matched_rama_color_block");
+		create_info_button(_loot_button->matched_text_color_block,			"button_matched_text_color_block");
+
+		create_info_button(_loot_button->matched_minimap_icon_color_block,	"button_matched_minimap_icon_color_block");
+		create_info_button(_loot_button->matched_minimap_icon_shape_block,	"button_matched_minimap_icon_shape_block");
+		create_info_button(_loot_button->matched_minimap_icon_size_block,	"button_matched_minimap_icon_size_block");
+
+
+		create_info_button(_loot_button->matched_show_hide_block,			"button_matched_show_hide_block");
+
+		pointer_to_right_side_info_buttons->need_change = true;
+}
+
+void EButtonGroupLootSimulator::create_info_button(EButtonGroupFilterBlock* _filter_block, std::string _key)
+{
+	if (_filter_block != nullptr)
 	{
-		EntityButton* but = new EntityButton();
+		EntityButtonLootItemSuitableBlocks*
+		but = new EntityButtonLootItemSuitableBlocks();
 
 		but->make_default_button_with_unedible_text
 		(
 			new ERegionGabarite(150.0f, 25.0f),
 			pointer_to_right_side_info_buttons,
-			nullptr,
-			ELocalisationText::generate_localisation("123")
+			&EDataActionCollection::action_highlight_stored_block,
+			ELocalisationText::get_localisation_by_key(_key)
 		);
+
+		but->target_filter_block = _filter_block;
 		but->can_be_stretched = true;
+		but->highlight_time = 0.5f;
 
 		pointer_to_right_side_info_buttons->add_button_to_working_group(but);
-
-		pointer_to_right_side_info_buttons->need_change = true;
 	}
 }
 
@@ -18271,4 +18298,12 @@ void EButtonGroupSeparatorExample::button_group_update(float _d)
 	}
 
 
+}
+
+EntityButtonLootItemSuitableBlocks::EntityButtonLootItemSuitableBlocks()
+{
+}
+
+EntityButtonLootItemSuitableBlocks::~EntityButtonLootItemSuitableBlocks()
+{
 }

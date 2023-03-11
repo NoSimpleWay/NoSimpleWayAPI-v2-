@@ -218,4 +218,60 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Add new separator between blocks, for better navigation"
 	[tag]"name RU"		[value]"Добавляет между блоками новый разделитель, для лучшей навигации"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_matched_bg_color_block"
+	[tag]"name EN"		[value]"Background color"
+	[tag]"name RU"		[value]"Цвет фона"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_matched_minimap_icon_color_block"
+	[tag]"name EN"		[value]"Minimap icon color"
+	[tag]"name RU"		[value]"Цвет иконки"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_matched_minimap_icon_shape_block"
+	[tag]"name EN"		[value]"Minimap icon shape"
+	[tag]"name RU"		[value]"Форма иконки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_matched_minimap_icon_size_block"
+	[tag]"name EN"		[value]"Minimap icon size"
+	[tag]"name RU"		[value]"Размер иконки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_matched_rama_color_block"
+	[tag]"name EN"		[value]"Rama color"
+	[tag]"name RU"		[value]"Цвет рамки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_matched_size_block"
+	[tag]"name EN"		[value]"Font size"
+	[tag]"name RU"		[value]"размер текста"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_matched_text_color_block"
+	[tag]"name EN"		[value]"Text color"
+	[tag]"name RU"		[value]"Цвет текста"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_matched_show_hide_block"
+	[tag]"name EN"		[value]"Show/Hide"
+	[tag]"name RU"		[value]"Показать/Скрыть"
+	
 	

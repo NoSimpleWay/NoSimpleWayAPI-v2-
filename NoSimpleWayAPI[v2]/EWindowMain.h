@@ -399,6 +399,8 @@ public:
 	EntityButton* search_button_clear;
 };
 
+
+
 class EntityButtonLootItem;
 class EButtonGroupLootSimulator : public EButtonGroup
 {
@@ -426,6 +428,8 @@ public:
 
 	void button_group_update(float _d) override;
 	void generate_info_buttons_for_right_side(EntityButtonLootItem* _loot_button);
+
+	void create_info_button(EButtonGroupFilterBlock* _filter_block, std::string _key);
 };
 
 class EButtonGroupNonListedLine : public EButtonGroup
@@ -555,7 +559,8 @@ namespace EDataActionCollection
 	void action_draw_loot_button(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_refresh_loot_simulator_sizes(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_highlight_matched_blocks(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_loot_item_button(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_highlight_stored_block(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_add_items_from_this_loot_pattern							(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_create_or_delete_description_on_hover						(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -844,14 +849,21 @@ public:
 
 };
 
+struct ESuitableFilterBlock
+{
+public:
+	ELocalisationText			localisation_text;
+	EButtonGroupFilterBlock*	suitable_filter_block;
+};
+
 class EntityButtonLootItem : public EntityButton
 {
 public:
 	EGameItem* stored_game_item;
 
-	std::vector<EButtonGroupFilterBlock*>		matched_filter_blocks;
+	std::vector<EButtonGroupFilterBlock*> matched_filter_blocks;
 
-	EButtonGroupFilterBlock* matched_show_hide;
+	EButtonGroupFilterBlock* matched_show_hide_block;
 
 	HSVRGBAColor** matched_bg_color;
 	EButtonGroupFilterBlock* matched_bg_color_block;
@@ -884,6 +896,16 @@ public:
 
 	void get_matched_filter_blocks();
 	void get_matched_filter_blocks_list(EButtonGroupFilterBlockEditor* _filter_block_editor);
+};
+
+class EntityButtonLootItemSuitableBlocks : public EntityButton
+{
+public:
+	EntityButtonLootItemSuitableBlocks();
+	~EntityButtonLootItemSuitableBlocks();
+
+	EButtonGroupFilterBlock* target_filter_block;
+
 };
 
 class LootSimulatorPattern;
