@@ -353,6 +353,10 @@ public:
 	std::vector<EntityButton*> workspace_button_list;
 	void delete_exact_button(EntityButton* _button);
 	void remove_all_workspace_buttons();
+
+	void close_this_group();
+	void recursive_close_process();
+
 	//std::vector<EButtonGroupRow*> group_row_list;
 	//EButtonGroupRow* parent_group_row = nullptr;
 	std::vector<EButtonGroup*> group_list;
