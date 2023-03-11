@@ -14671,6 +14671,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 			_game_item_attribute->localisation
 		);
 		jc_button->can_be_stretched = true;
+		jc_button->max_stretch_factor = 2.0f;
 
 		jc_button->parent_filter_block = _target_filter_block;
 		jc_button->used_filter_block_attribute = _game_item_attribute;

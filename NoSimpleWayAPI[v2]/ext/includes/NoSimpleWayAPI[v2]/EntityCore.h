@@ -210,6 +210,8 @@ public:
 	float base_size_x				= 10.0f;
 	float base_size_y				= 10.0f;
 
+	float max_stretch_factor		= 0.5f;
+
 	ERegionGabarite* button_gabarite;
 
 	//std::string* autoalign_id = new std::string("");

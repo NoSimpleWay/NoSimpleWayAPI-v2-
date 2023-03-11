@@ -2340,11 +2340,10 @@ void EButtonGroup::stretch_all_buttons()
 							(but->can_be_stretched)
 							&&
 							(additional_space_for_each_button > 0.0f)
-							&&
-							(additional_space_for_each_button <= but->button_gabarite->size_x * 10.0f)
 						)
 					{
-						but->button_gabarite->size_x += additional_space_for_each_button;
+						but->button_gabarite->size_x += min(additional_space_for_each_button, but->base_size_x * but->max_stretch_factor);
+						//but->button_gabarite->size_x =	but->button_gabarite->size_x, but->base_size_x * but->max_stretch_factor);
 					}
 
 
