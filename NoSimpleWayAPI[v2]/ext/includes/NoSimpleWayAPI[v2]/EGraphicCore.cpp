@@ -4403,7 +4403,7 @@ void NS_EGraphicCore::refresh_autosize_groups(EWindow* _window)
 
 		prev_group = bg;
 
-		EInputCore::logger_param("autosize y", prev_group->region_gabarite->size_y);
+		//EInputCore::logger_param("autosize y", prev_group->region_gabarite->size_y);
 	}
 }
 

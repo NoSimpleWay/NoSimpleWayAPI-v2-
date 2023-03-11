@@ -662,6 +662,41 @@ void EButtonGroup::remove_all_workspace_buttons()
 	workspace_button_list.shrink_to_fit();
 }
 
+void EButtonGroup::close_this_group()
+{
+	button_group_is_active = false;
+
+	recursive_close_process();
+}
+
+void EButtonGroup::recursive_close_process()
+{
+	for (EntityButton* but : all_button_list)
+	{
+		but->destroy_attached_description();
+		but->hover_time = 0.0f;
+
+		for (ECustomData* c_data:but->custom_data_list)
+		for (EClickableArea* c_area:c_data->clickable_area_list)
+		{
+			//c_area->catched_body	= false;
+			//c_area->catched_side_down = false;
+			c_area->hover_time = 0.0f;
+
+			if (EClickableArea::active_clickable_region == c_area)
+			{
+				EClickableArea::active_clickable_region = nullptr;
+			}
+		}
+
+	}
+
+	for (EButtonGroup* group : group_list)
+	{
+		group->recursive_close_process();
+	}
+}
+
 void EButtonGroup::button_group_update(float _d)
 {
 	//clickable_area->update(_d);
