@@ -1,0 +1,259 @@
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ancient Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Древнего Реликвария"
+
+	[tag]"icon path"	[value]"timeworn_reliquary_key"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeworn Reliquary Key"
+	[tag]"name RU"		[value]"Ключ Реликвария"
+
+	[tag]"icon path"	[value]"timeworn_reliquary_key"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vaal Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Реликвария ваал"
+
+	[tag]"icon path"	[value]"vaal_reliquary"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Archive Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Архивного Реликвария"
+
+	[tag]"icon path"	[value]"ArchiveReliquaryKey"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cosmic Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Космического Реликвария"
+
+	[tag]"icon path"	[value]"CosmicReliquaryKey"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Decaying Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Разлагающегося Реликвария"
+
+	[tag]"icon path"	[value]"DecayingReliquaryKey"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Forgotten Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Забытого Реликвария"
+
+	[tag]"icon path"	[value]"ForgottenReliquaryKey"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Oubliette Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Реликвария забвения"
+
+	[tag]"icon path"	[value]"OublietteReliquaryKey"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Shiny Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Сверкающего Реликвария"
+
+	[tag]"icon path"	[value]"ShinyReliquaryKey"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Visceral Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Внутриутробного Реликвария"
+
+	[tag]"icon path"	[value]"VisceralReliquaryKey"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bone Ring"
+	[tag]"name RU"		[value]"Костяное кольцо"
+
+	[tag]"icon path"	[value]"BoneRing"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"Item for summoners"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dusk Ring"
+	[tag]"name RU"		[value]"Сумеречное кольцо"
+
+	[tag]"icon path"	[value]"DuskRing"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"Item for summoners"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mirrored Tablet"
+	[tag]"name RU"		[value]"Зеркальная табличка"
+
+	[tag]"icon path"	[value]"LakeItemisedTablet"
+	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chronicle of Atzoatl"
+	[tag]"name RU"		[value]"Хроники Ацоатля"
+
+	[tag]"icon path"	[value]"atzoatl_chronic"
+	[tag]"base class"	[value]"Misc Map Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Inscribed Ultimatum"
+	[tag]"name RU"		[value]"Начертанный Ультиматум"
+
+	[tag]"icon path"	[value]"Inscribed_Ultimatum"
+	[tag]"base class"	[value]"Misc Map Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+

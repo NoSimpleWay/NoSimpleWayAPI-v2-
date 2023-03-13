@@ -1,0 +1,32 @@
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flashpowder Keg"
+	[tag]"name RU"		[value]"Бочка со взрывчаткой"
+
+	[tag]"icon path"	[value]"Flashpowder_Keg_inventory_icon"
+	[tag]"base class"	[value]"Incursion Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Special"
+	[tag]"item tag"		[value]"League: Incursion"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Stone of Passage"
+	[tag]"name RU"		[value]"Камень перехода"
+
+	[tag]"icon path"	[value]"Stone_of_Passage_inventory_icon"
+	[tag]"base class"	[value]"Incursion Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Special"
+	[tag]"item tag"		[value]"League: Incursion"

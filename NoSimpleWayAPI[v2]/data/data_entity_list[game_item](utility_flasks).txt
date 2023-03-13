@@ -1,0 +1,227 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Diamond Flask"
+	[tag]"name RU"		[value]"Алмазный флакон"
+
+	[tag]"icon path"	[value]"Diamond_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Amethyst Flask"
+	[tag]"name RU"		[value]"Аметистовый флакон"
+
+	[tag]"icon path"	[value]"Amethyst_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Aquamarine Flask"
+	[tag]"name RU"		[value]"Аквамариновый флакон"
+
+	[tag]"icon path"	[value]"Aquamarine_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Basalt Flask"
+	[tag]"name RU"		[value]"Базальтовый флакон"
+
+	[tag]"icon path"	[value]"Basalt_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bismuth Flask"
+	[tag]"name RU"		[value]"Висмутовый флакон"
+
+	[tag]"icon path"	[value]"Bismuth_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Granite Flask"
+	[tag]"name RU"		[value]"Гранитный флакон"
+
+	[tag]"icon path"	[value]"Granite_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Jade Flask"
+	[tag]"name RU"		[value]"Нефритовый флакон"
+
+	[tag]"icon path"	[value]"Jade_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Quartz Flask"
+	[tag]"name RU"		[value]"Кварцевый флакон"
+
+	[tag]"icon path"	[value]"Quartz_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Quicksilver Flask"
+	[tag]"name RU"		[value]"Ртутный флакон"
+
+	[tag]"icon path"	[value]"Quicksilver_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ruby Flask"
+	[tag]"name RU"		[value]"Рубиновый флакон"
+
+	[tag]"icon path"	[value]"Ruby_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sapphire Flask"
+	[tag]"name RU"		[value]"Сапфировый флакон"
+
+	[tag]"icon path"	[value]"Sapphire_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Silver Flask"
+	[tag]"name RU"		[value]"Серебряный флакон"
+
+	[tag]"icon path"	[value]"Silver_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Stibnite Flask"
+	[tag]"name RU"		[value]"Стибнитовый слафкон"
+
+	[tag]"icon path"	[value]"Stibnite_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sulphur Flask"
+	[tag]"name RU"		[value]"Серный флакон"
+
+	[tag]"icon path"	[value]"Sulphur_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+	
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Topaz Flask"
+	[tag]"name RU"		[value]"Топазовый флакон"
+
+	[tag]"icon path"	[value]"Topaz_Flask_inventory_icon"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gold Flask"
+	[tag]"name RU"		[value]"Золотой флакон"
+
+	[tag]"icon path"	[value]"GoldFlask"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Corundum Flask"
+	[tag]"name RU"		[value]"Корундовый флакон"
+
+	[tag]"icon path"	[value]"CorundumFlask"
+	[tag]"base class"	[value]"Utility Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Iron Flask"
+	[tag]"name RU"		[value]"Железный флакон"
+
+	[tag]"icon path"	[value]"IronFlask"
+	[tag]"base class"	[value]"Utility Flasks"
+	[tag]"item tag"		[value]"Good base for unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"

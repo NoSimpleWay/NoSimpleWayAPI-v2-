@@ -1,0 +1,189 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Blessing"
+	[tag]"name RU"		[value]"Порочное благословение"
+
+	[tag]"icon path"	[value]"TaintedBlessing"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"35"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Chromatic Orb"
+	[tag]"name RU"		[value]"Порочная цветная сфера"
+
+	[tag]"icon path"	[value]"TaintedChromaticOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Orb of Fusing"
+	[tag]"name RU"		[value]"Порочная сфера соединения"
+
+	[tag]"icon path"	[value]"TaintedOrbofFusing"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Jeweller's Orb"
+	[tag]"name RU"		[value]"Порочная сфера златокузнеца"
+
+	[tag]"icon path"	[value]"TaintedJewellersOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"8"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Exalted Orb"
+	[tag]"name RU"		[value]"Порочная сфера возвышения"
+
+	[tag]"icon path"	[value]"TaintedExaltedOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"35"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Mythic Orb"
+	[tag]"name RU"		[value]"Порочная мифическая сфера"
+
+	[tag]"icon path"	[value]"TaintedMythicOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Blacksmith's Whetstone"
+	[tag]"name RU"		[value]"Порочный точильный камень"
+
+	[tag]"icon path"	[value]"TaintedBlacksmithsWhetstone"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Armourer's Scrap"
+	[tag]"name RU"		[value]"Порочная деталь доспеха"
+
+	[tag]"icon path"	[value]"TaintedArmourersScrap"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Chaos Orb"
+	[tag]"name RU"		[value]"Порочная сфера хаоса"
+
+	[tag]"icon path"	[value]"TaintedChaosOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"12"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Divine Teardrop"
+	[tag]"name RU"		[value]"Порочная божественная слеза"
+
+	[tag]"icon path"	[value]"TaintedDivineTeardrop"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Tainted currency"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"68"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

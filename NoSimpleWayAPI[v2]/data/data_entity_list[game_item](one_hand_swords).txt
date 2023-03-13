@@ -1,0 +1,1031 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Anarchic Spiritblade"
+	[tag]"name RU"		[value]"Сумбурный меч духа"
+
+	[tag]"icon path"	[value]"SuperBlade"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ancient Sword"
+	[tag]"name RU"		[value]"Древний меч"
+
+	[tag]"icon path"	[value]"Vaal_Blade_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Baselard"
+	[tag]"name RU"		[value]"Короткий меч"
+
+	[tag]"icon path"	[value]"Gladius_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Battle Sword"
+	[tag]"name RU"		[value]"Боевой меч"
+
+	[tag]"icon path"	[value]"War_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Broad Sword"
+	[tag]"name RU"		[value]"Широкий меч"
+
+	[tag]"icon path"	[value]"Gladius_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Copper Sword"
+	[tag]"name RU"		[value]"Медный меч"
+
+	[tag]"icon path"	[value]"Gemstone_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Corsair Sword"
+	[tag]"name RU"		[value]"Пиратский тесак"
+
+	[tag]"icon path"	[value]"Sabre_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cutlass"
+	[tag]"name RU"		[value]"Абордажная сабля"
+
+	[tag]"icon path"	[value]"Sabre_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Breach unique item"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dusk Blade"
+	[tag]"name RU"		[value]"Закатный клинок"
+
+	[tag]"icon path"	[value]"Midnight_Blade_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Elder Sword"
+	[tag]"name RU"		[value]"Меч старейшины"
+
+	[tag]"icon path"	[value]"Vaal_Blade_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Elegant Sword"
+	[tag]"name RU"		[value]"Элегантный меч"
+
+	[tag]"icon path"	[value]"Eternal_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eternal Sword"
+	[tag]"name RU"		[value]"Меч вечного"
+
+	[tag]"icon path"	[value]"Eternal_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fickle Spiritblade"
+	[tag]"name RU"		[value]"Изменчивый меч духа"
+
+	[tag]"icon path"	[value]"SuperBlade"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gemstone Sword"
+	[tag]"name RU"		[value]"Самоцветный меч"
+
+	[tag]"icon path"	[value]"Gemstone_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gladius"
+	[tag]"name RU"		[value]"Гладиус"
+
+	[tag]"icon path"	[value]"Gladius_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Graceful Sword"
+	[tag]"name RU"		[value]"Изящный меч"
+
+	[tag]"icon path"	[value]"Eternal_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grappler"
+	[tag]"name RU"		[value]"Хвататель"
+
+	[tag]"icon path"	[value]"Hook_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hook Sword"
+	[tag]"name RU"		[value]"Меч-крюк"
+
+	[tag]"icon path"	[value]"Hook_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Legion Sword"
+	[tag]"name RU"		[value]"Меч всадника"
+
+	[tag]"icon path"	[value]"War_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Midnight Blade"
+	[tag]"name RU"		[value]"Полуночный меч"
+
+	[tag]"icon path"	[value]"Midnight_Blade_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Sword"
+	[tag]"name RU"		[value]"Ржавый меч"
+
+	[tag]"icon path"	[value]"Rusted_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sabre"
+	[tag]"name RU"		[value]"Сабля"
+
+	[tag]"icon path"	[value]"Sabre_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tiger Hook"
+	[tag]"name RU"		[value]"Тигровый крюк"
+
+	[tag]"icon path"	[value]"Hook_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Twilight Blade"
+	[tag]"name RU"		[value]"Сумрачный клинок"
+
+	[tag]"icon path"	[value]"Midnight_Blade_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vaal Blade"
+	[tag]"name RU"		[value]"Клинок ваал"
+
+	[tag]"icon path"	[value]"Vaal_Blade_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Variscite Blade"
+	[tag]"name RU"		[value]"Варисцитовый меч"
+
+	[tag]"icon path"	[value]"Gemstone_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"War Sword"
+	[tag]"name RU"		[value]"Воинский меч"
+
+	[tag]"icon path"	[value]"War_Sword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Antique Rapier"
+	[tag]"name RU"		[value]"Зазубренная шпага"
+
+	[tag]"icon path"	[value]"Vaal_Rapier_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Apex Rapier"
+	[tag]"name RU"		[value]"Острая рапира"
+
+	[tag]"icon path"	[value]"Harpy_Rapier_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Basket Rapier"
+	[tag]"name RU"		[value]"Рапира с чашей"
+
+	[tag]"icon path"	[value]"Pecoraro_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Battered Foil"
+	[tag]"name RU"		[value]"Тупая шпага"
+
+	[tag]"icon path"	[value]"Tempered_Foil_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Burnished Foil"
+	[tag]"name RU"		[value]"Полированная шпага"
+
+	[tag]"icon path"	[value]"Tempered_Foil_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Courtesan Sword"
+	[tag]"name RU"		[value]"Меч кокотки"
+
+	[tag]"icon path"	[value]"Smallsword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dragonbone Rapier"
+	[tag]"name RU"		[value]"Рапира из кости дракона"
+
+	[tag]"icon path"	[value]"Wyrmbone_Rapier_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dragoon Sword"
+	[tag]"name RU"		[value]"Сабля драгуна"
+
+	[tag]"icon path"	[value]"Smallsword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Elegant Foil"
+	[tag]"name RU"		[value]"Элегантная шпага"
+
+	[tag]"icon path"	[value]"Elegant_Foil_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Estoc"
+	[tag]"name RU"		[value]"Короткая шпага"
+
+	[tag]"icon path"	[value]"Pecoraro_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fancy Foil"
+	[tag]"name RU"		[value]"Вычурная шпага"
+
+	[tag]"icon path"	[value]"Fancy_Foil_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Harpy Rapier"
+	[tag]"name RU"		[value]"Рапира гарпии"
+
+	[tag]"icon path"	[value]"Harpy_Rapier_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Jagged Foil"
+	[tag]"name RU"		[value]"Старинная рапира"
+
+	[tag]"icon path"	[value]"Serrated_Foil_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Jewelled Foil"
+	[tag]"name RU"		[value]"Инкрустированная шпага"
+
+	[tag]"icon path"	[value]"Fancy_Foil_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Pecoraro"
+	[tag]"name RU"		[value]"Сабля пекораро"
+
+	[tag]"icon path"	[value]"Pecoraro_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Primeval Rapier"
+	[tag]"name RU"		[value]"Древняя рапира"
+
+	[tag]"icon path"	[value]"Vaal_Rapier_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Spike"
+	[tag]"name RU"		[value]"Ржавый шип"
+
+	[tag]"icon path"	[value]"Rusted_Spike_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Serrated Foil"
+	[tag]"name RU"		[value]"Шпага с зубцами"
+
+	[tag]"icon path"	[value]"Serrated_Foil_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Smallsword"
+	[tag]"name RU"		[value]"Малый меч"
+
+	[tag]"icon path"	[value]"Smallsword_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Spiraled Foil"
+	[tag]"name RU"		[value]"Витая шпага"
+
+	[tag]"icon path"	[value]"Serrated_Foil_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tempered Foil"
+	[tag]"name RU"		[value]"Закаленная шпага"
+
+	[tag]"icon path"	[value]"Tempered_Foil_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thorn Rapier"
+	[tag]"name RU"		[value]"Колючая рапира"
+
+	[tag]"icon path"	[value]"Harpy_Rapier_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vaal Rapier"
+	[tag]"name RU"		[value]"Рапира ваал"
+
+	[tag]"icon path"	[value]"Vaal_Rapier_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Whalebone Rapier"
+	[tag]"name RU"		[value]"Рапира из китовой кости"
+
+	[tag]"icon path"	[value]"Wyrmbone_Rapier_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Wyrmbone Rapier"
+	[tag]"name RU"		[value]"Рапира из кости змея"
+
+	[tag]"icon path"	[value]"Wyrmbone_Rapier_inventory_icon"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"

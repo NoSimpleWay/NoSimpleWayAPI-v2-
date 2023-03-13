@@ -1,0 +1,86 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Small Hybrid Flask"
+	[tag]"name RU"		[value]"Малый флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskSmall"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Medium Hybrid Flask"
+	[tag]"name RU"		[value]"Средний флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskMedium"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Large Hybrid Flask"
+	[tag]"name RU"		[value]"Большой флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskBig"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Colossal Hybrid Flask"
+	[tag]"name RU"		[value]"Великий флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskSmall"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sacred Hybrid Flask"
+	[tag]"name RU"		[value]"Освящённый флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskMedium"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hallowed Hybrid Flask"
+	[tag]"name RU"		[value]"Благодатный флакон равновесия"
+
+	[tag]"icon path"	[value]"HybridFlaskBig"
+	[tag]"base class"	[value]"Hybrid Flasks"
+	
+	[tag]"drop level"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	

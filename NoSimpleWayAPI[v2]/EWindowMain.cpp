@@ -1894,9 +1894,126 @@ EWindowMain::EWindowMain()
 
 	
 
-	ETextParser::data_entity_parse_file("data/data_entity_list[game_item].txt");
-	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](heist_tool).txt");
+
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](stackable_currency).txt");
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](incubators).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](delve_stackable_socketable_currency).txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](oils).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](catalysts).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](currency_shards).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](delirium_orbs).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](fossils).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](map_splinters).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](breach_blessings).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](harbinger_scrolls).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](tainted_currency).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](expedition_currency).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](scouting_reports).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](eldritch_currency).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](incubators).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](vials).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](nets).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](essences).txt");
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](currency).txt");
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](amulets).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](belts).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](rings).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](jewels).txt");
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](divinations).txt");
+
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](body_armours).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](gloves).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](helmets).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](boots).txt");
+
+
+
+	
+
+
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](contracts).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](blueprints).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](heist_brooch).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](heist_cloak).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](heist_gear).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](heist_targets).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](heist_tool).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](trinkets).txt");
+
+
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](bows).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](quivers).txt");
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](two_hand_axes).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](two_hand_maces).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](two_hand_swords).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](warstaves).txt");
+	
+
+
+
+
+
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](rune_daggers).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](sceptres).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](wands).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](staves).txt");
+
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](shields).txt");
+
+
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](claws).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](daggers).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](one_hand_axes).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](one_hand_maces).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](one_hand_swords).txt");
+
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](support_skill_gems).txt");
+
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](flasks).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](mana_flasks).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](hybrid_flasks).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](utility_flasks).txt");
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](map_fragments).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](maps).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](memories).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](misc_map_items).txt");
+	
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](harvest_seeds).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](metamorph_samples).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](quest_items).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](relics).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](atlas_region_upgrade_item).txt");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item].txt");
 
 	ETextParser::data_entity_parse_file("data/data_entity_list[influence].txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[base_class].txt");
@@ -6508,8 +6625,8 @@ void EWindowMain::register_filter_rules()
 	jc_filter_rule->categry_id = 3;
 
 	jc_filter_rule->localisation_text = new ELocalisationText();
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Heist tools";
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Инструменты кражи";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Best heist tools";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лучшие инструменты кражи";
 	jc_filter_rule->tag = "Game item";
 
 	//filter by game item

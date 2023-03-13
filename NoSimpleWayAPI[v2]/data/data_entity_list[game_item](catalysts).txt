@@ -1,0 +1,177 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Abrasive Catalyst"
+	[tag]"name RU"		[value]"Абразивный катализатор"
+
+	[tag]"icon path"	[value]"Abrasive_Catalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fertile Catalyst"
+	[tag]"name RU"		[value]"Насыщенный катализатор"
+
+	[tag]"icon path"	[value]"Fertile_Catalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imbued Catalyst"
+	[tag]"name RU"		[value]"Волшебный катализатор"
+
+	[tag]"icon path"	[value]"Imbued_Catalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Intrinsic Catalyst"
+	[tag]"name RU"		[value]"Истинный катализатор"
+
+	[tag]"icon path"	[value]"Intrinsic_Catalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prismatic Catalyst"
+	[tag]"name RU"		[value]"Радужный катализатор"
+
+	[tag]"icon path"	[value]"Prismatic_Catalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tempering Catalyst"
+	[tag]"name RU"		[value]"Закаляющий катализатор"
+
+	[tag]"icon path"	[value]"Tempering_Catalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Turbulent Catalyst"
+	[tag]"name RU"		[value]"Бурный катализатор"
+
+	[tag]"icon path"	[value]"Turbulent_Catalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Noxious Catalyst"
+	[tag]"name RU"		[value]"Ядовитый катализатор"
+
+	[tag]"icon path"	[value]"poison_catalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unstable Catalyst"
+	[tag]"name RU"		[value]"Нестабильный катализатор"
+
+	[tag]"icon path"	[value]"unstable_catalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Accelerating Catalyst"
+	[tag]"name RU"		[value]"Ускоряющий катализатор"
+
+	[tag]"icon path"	[value]"speed_catalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

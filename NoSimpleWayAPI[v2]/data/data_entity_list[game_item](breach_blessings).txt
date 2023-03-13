@@ -1,0 +1,86 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blessing of Chayula"
+	[tag]"name RU"		[value]"Благословение Чаюлы"
+
+	[tag]"icon path"	[value]"Blessing_of_Chayula_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blessing of Esh"
+	[tag]"name RU"		[value]"Благословение Иш"
+
+	[tag]"icon path"	[value]"Blessing_of_Esh_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blessing of Tul"
+	[tag]"name RU"		[value]"Благословение Тула"
+
+	[tag]"icon path"	[value]"Blessing_of_Tul_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blessing of Uul-Netol"
+	[tag]"name RU"		[value]"Благословение Уул-нетола"
+
+	[tag]"icon path"	[value]"Blessing_of_Uul-Netol_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blessing of Xoph"
+	[tag]"name RU"		[value]"Благословение Ксофа"
+
+	[tag]"icon path"	[value]"Blessing_of_Xoph_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

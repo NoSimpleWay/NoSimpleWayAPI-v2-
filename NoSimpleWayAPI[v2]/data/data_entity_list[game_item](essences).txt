@@ -1,0 +1,189 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Whispering Essence of"
+	[tag]"name RU"		[value]"Шепчущая сущность"
+
+	[tag]"icon path"	[value]"Essence_whispering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Muttering Essence of"
+	[tag]"name RU"		[value]"Бормочущая сущность"
+
+	[tag]"icon path"	[value]"Essence_muttering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Weeping Essence of"
+	[tag]"name RU"		[value]"Плачущая сущность"
+
+	[tag]"icon path"	[value]"Essence_weepeng"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Wailing Essence of"
+	[tag]"name RU"		[value]"Вопящая сущность"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Screaming Essence of"
+	[tag]"name RU"		[value]"Кричащая сущность"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Shrieking Essence of"
+	[tag]"name RU"		[value]"Визжащая сущность"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Deafening Essence of"
+	[tag]"name RU"		[value]"Оглушающая сущность"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Essence of Delirium"
+	[tag]"name RU"		[value]"Сущность бреда"
+
+	[tag]"icon path"	[value]"Essence_of_Delirium"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Essence of Horror"
+	[tag]"name RU"		[value]"Сущность ужаса"
+
+	[tag]"icon path"	[value]"Essence_of_Horror"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Essence of Hysteria"
+	[tag]"name RU"		[value]"Сущность истерии"
+
+	[tag]"icon path"	[value]"Essence_of_Hysteria"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Essence of Insanity"
+	[tag]"name RU"		[value]"Сущность безумия"
+
+	[tag]"icon path"	[value]"Essence_of_Insanity"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Remnant of Corruption"
+	[tag]"name RU"		[value]"След порчи"
+
+	[tag]"icon path"	[value]"Remnant_of_Corruption"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

@@ -1,0 +1,481 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Arrow Nova Support"
+	[tag]"name RU"		[value]"Кольцо стрел"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Added Chaos Damage Support"
+	[tag]"name RU"		[value]"Пробужденный: Урон хаосом"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Added Cold Damage Support"
+	[tag]"name RU"		[value]"Пробужденный: Урон холодом"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Added Fire Damage Support"
+	[tag]"name RU"		[value]"Пробужденный: Урон огнем"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Added Lightning Damage Support"
+	[tag]"name RU"		[value]"Пробужденный: Урон молнией"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Ancestral Call Support"
+	[tag]"name RU"		[value]"Пробужденный: Зов предков"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Arrow Nova Support"
+	[tag]"name RU"		[value]"Пробужденный: Кольцо стрел"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Blasphemy Support"
+	[tag]"name RU"		[value]"Пробужденный: Богохульство"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Brutality Support"
+	[tag]"name RU"		[value]"Пробужденный: Жестокость"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Burning Damage Support"
+	[tag]"name RU"		[value]"Пробужденный: Урон от горения"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Cast On Critical Strike Support"
+	[tag]"name RU"		[value]"Пробужденный: Сотворение чар при критическом ударе"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Cast While Channelling Support"
+	[tag]"name RU"		[value]"Пробужденный: Сотворение чар при поддержании"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Chain Support"
+	[tag]"name RU"		[value]"Пробужденный: Цепь"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Cold Penetration Support"
+	[tag]"name RU"		[value]"Пробужденный: Пронизывающий холод"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Controlled Destruction Support"
+	[tag]"name RU"		[value]"Пробужденный: Контролируемое разрушение"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Curse On Hit Support"
+	[tag]"name RU"		[value]"Пробужденный: Проклятие при попадании"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Deadly Ailments Support"
+	[tag]"name RU"		[value]"Пробужденный: Смертельные состояния"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Elemental Damage With Attacks Support"
+	[tag]"name RU"		[value]"Пробужденный: Урон от стихий атаками"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Elemental Focus Support"
+	[tag]"name RU"		[value]"Пробужденный: Концентрация стихий"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Fire Penetration Support"
+	[tag]"name RU"		[value]"Пробужденный: Пронизывающий жар"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Fork Support"
+	[tag]"name RU"		[value]"Пробужденный: Разветвление"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Generosity Support"
+	[tag]"name RU"		[value]"Пробужденный: Щедрость"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Greater Multiple Projectiles Support"
+	[tag]"name RU"		[value]"Пробужденный: Много дополнительных снарядов"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Increased Area Of Effect Support"
+	[tag]"name RU"		[value]"Пробужденный: Расширенная область действия"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Lightning Penetration Support"
+	[tag]"name RU"		[value]"Пробужденный: Пронизывающие молнии"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Melee Physical Damage Support"
+	[tag]"name RU"		[value]"Пробужденный: Физический урон ближнего боя"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Melee Splash Support"
+	[tag]"name RU"		[value]"Пробужденный: Раскатистый удар"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Minion Damage Support"
+	[tag]"name RU"		[value]"Пробужденный: Урон приспешников"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Multistrike Support"
+	[tag]"name RU"		[value]"Пробужденный: Град ударов"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Spell Cascade Support"
+	[tag]"name RU"		[value]"Пробужденный: Каскад чар"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Spell Echo Support"
+	[tag]"name RU"		[value]"Пробужденный: Эхо магии"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Swift Affliction Support"
+	[tag]"name RU"		[value]"Пробужденный: Стремительный недуг"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Unbound Ailments Support"
+	[tag]"name RU"		[value]"Пробужденный: Безграничные состояния"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Unleash Support"
+	[tag]"name RU"		[value]"Пробужденный: Высвобождение"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Vicious Projectiles Support"
+	[tag]"name RU"		[value]"Пробужденный: Яростные снаряды"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Void Manipulation Support"
+	[tag]"name RU"		[value]"Пробужденный: Манипуляция пустотой"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Empower"
+	[tag]"name RU"		[value]"Усилитель"
+
+	[tag]"icon path"	[value]"Empower_Support_inventory_icon"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Enhance"
+	[tag]"name RU"		[value]"Улучшитель"
+
+	[tag]"icon path"	[value]"Eternal_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Enlighten"
+	[tag]"name RU"		[value]"Наставник"
+
+	[tag]"icon path"	[value]"Enlighten_Support_inventory_icon"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Greater Volley Support"
+	[tag]"name RU"		[value]"Большой залп"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

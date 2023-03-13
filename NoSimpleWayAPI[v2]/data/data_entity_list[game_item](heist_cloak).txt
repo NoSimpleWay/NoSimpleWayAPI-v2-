@@ -1,0 +1,59 @@
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hooded Cloak"
+	[tag]"name RU"		[value]"Накидка с капюшоном"
+
+	[tag]"icon path"	[value]"Cloak"
+	[tag]"base class"	[value]"Heist Cloak"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattered Cloak"
+	[tag]"name RU"		[value]"Истрёпанная накидка"
+
+	[tag]"icon path"	[value]"Cloak"
+	[tag]"base class"	[value]"Heist Cloak"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Torn Cloak"
+	[tag]"name RU"		[value]"Оторванная накидка"
+
+	[tag]"icon path"	[value]"Cloak"
+	[tag]"base class"	[value]"Heist Cloak"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Whisper-woven Cloak"
+	[tag]"name RU"		[value]"Шелестящая накидка"
+
+	[tag]"icon path"	[value]"Cloak"
+	[tag]"base class"	[value]"Heist Cloak"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

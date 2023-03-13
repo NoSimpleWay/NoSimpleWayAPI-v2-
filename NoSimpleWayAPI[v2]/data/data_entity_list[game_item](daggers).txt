@@ -1,0 +1,289 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ambusher"
+	[tag]"name RU"		[value]"Рондел"
+
+	[tag]"icon path"	[value]"Poignard_inventory_icon"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Capricious Spiritblade"
+	[tag]"name RU"		[value]"Своенравный меч духа"
+
+	[tag]"icon path"	[value]"SuperBlade"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flaying Knife"
+	[tag]"name RU"		[value]"Нож свежевателя"
+
+	[tag]"icon path"	[value]"Gutting_Knife_inventory_icon"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Glass Shank"
+	[tag]"name RU"		[value]"Осколок стекла"
+
+	[tag]"icon path"	[value]"Glass_Shank_inventory_icon"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gutting Knife"
+	[tag]"name RU"		[value]"Нож потрошителя"
+
+	[tag]"icon path"	[value]"Gutting_Knife_inventory_icon"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hollowpoint Dagger"
+	[tag]"name RU"		[value]"Экспансивный кинжал"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Pneumatic Dagger"
+	[tag]"name RU"		[value]"Пневматический кинжал"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Poignard"
+	[tag]"name RU"		[value]"Дага"
+
+	[tag]"icon path"	[value]"Poignard_inventory_icon"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Pressurised Dagger"
+	[tag]"name RU"		[value]"Герметизированный кинжал"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prong Dagger"
+	[tag]"name RU"		[value]"Жало"
+
+	[tag]"icon path"	[value]"Trisula_inventory_icon"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sai"
+	[tag]"name RU"		[value]"Сай"
+
+	[tag]"icon path"	[value]"Trisula_inventory_icon"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Skinning Knife"
+	[tag]"name RU"		[value]"Нож скорняка"
+
+	[tag]"icon path"	[value]"Gutting_Knife_inventory_icon"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Stiletto"
+	[tag]"name RU"		[value]"Стилет"
+
+	[tag]"icon path"	[value]"Poignard_inventory_icon"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Trisula"
+	[tag]"name RU"		[value]"Трезубец"
+
+	[tag]"icon path"	[value]"Trisula_inventory_icon"
+	[tag]"base class"	[value]"Daggers"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"

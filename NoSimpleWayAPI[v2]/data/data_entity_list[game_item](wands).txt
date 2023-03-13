@@ -1,0 +1,320 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Accumulator Wand"
+	[tag]"name RU"		[value]"Аккумулирующий жезл"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Assembler Wand"
+	[tag]"name RU"		[value]"Собирающий жезл"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Carved Wand"
+	[tag]"name RU"		[value]"Оструганный жезл"
+
+	[tag]"icon path"	[value]"Imbued_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Congregator Wand"
+	[tag]"name RU"		[value]"Накопляющий жезл"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Convoking Wand"
+	[tag]"name RU"		[value]"Жезл призыва"
+
+	[tag]"icon path"	[value]"Convoking_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Rare base"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crystal Wand"
+	[tag]"name RU"		[value]"Кристальный жезл"
+
+	[tag]"icon path"	[value]"Quartz_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Demon's Horn"
+	[tag]"name RU"		[value]"Рог демона"
+
+	[tag]"icon path"	[value]"Goat's_Horn_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Driftwood Wand"
+	[tag]"name RU"		[value]"Жезл из плавника"
+
+	[tag]"icon path"	[value]"Driftwood_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Engraved Wand"
+	[tag]"name RU"		[value]"Резной жезл"
+
+	[tag]"icon path"	[value]"Imbued_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Faun's Horn"
+	[tag]"name RU"		[value]"Рог фавна"
+
+	[tag]"icon path"	[value]"Goat's_Horn_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Goat's Horn"
+	[tag]"name RU"		[value]"Козий рог"
+
+	[tag]"icon path"	[value]"Goat's_Horn_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Heathen Wand"
+	[tag]"name RU"		[value]"Жезл варвара"
+
+	[tag]"icon path"	[value]"Pagan_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imbued Wand"
+	[tag]"name RU"		[value]"Волшебгый жезл"
+
+	[tag]"icon path"	[value]"Imbued_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen Wand"
+	[tag]"name RU"		[value]"Жезл предвестия"
+
+	[tag]"icon path"	[value]"Sage_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Opal Wand"
+	[tag]"name RU"		[value]"Опаловый жезл"
+
+	[tag]"icon path"	[value]"Quartz_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Pagan Wand"
+	[tag]"name RU"		[value]"Жезл язычника"
+
+	[tag]"icon path"	[value]"Pagan_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Profane Wand"
+	[tag]"name RU"		[value]"Жезл отступника"
+
+	[tag]"icon path"	[value]"Pagan_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prophecy Wand"
+	[tag]"name RU"		[value]"Жезл пророчества"
+
+	[tag]"icon path"	[value]"Sage_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Quartz Wand"
+	[tag]"name RU"		[value]"Кварцевый жезл"
+
+	[tag]"icon path"	[value]"Quartz_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sage Wand"
+	[tag]"name RU"		[value]"Жезл провидца"
+
+	[tag]"icon path"	[value]"Sage_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Serpent Wand"
+	[tag]"name RU"		[value]"Змеиный жезл"
+
+	[tag]"icon path"	[value]"Tornado_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Spiraled Wand"
+	[tag]"name RU"		[value]"Витой жезл"
+
+	[tag]"icon path"	[value]"Tornado_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+		
+	[tag]"item tag"		[value]"Breach unique item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tornado Wand"
+	[tag]"name RU"		[value]"Жезл торнадо"
+
+	[tag]"icon path"	[value]"Tornado_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Calling Wand"
+	[tag]"name RU"		[value]"Жезл зова"
+
+	[tag]"icon path"	[value]"Convoking_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"Item for summoners"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Convening Wand"
+	[tag]"name RU"		[value]"Жезл вызова"
+
+	[tag]"icon path"	[value]"Convoking_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"Item for summoners"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"

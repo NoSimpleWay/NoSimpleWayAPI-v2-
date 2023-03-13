@@ -1,0 +1,182 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Large Cluster Jewel"
+	[tag]"name RU"		[value]"Большой кластерный самоцвет"
+
+	[tag]"icon path"	[value]"NotableLargeClusterJewel"
+	[tag]"base class"	[value]"Jewel"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	[tag]"item tag"		[value]"League: Delirium"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Medium Cluster Jewel"
+	[tag]"name RU"		[value]"Средний кластерный самоцвет"
+
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"base class"	[value]"Jewel"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	[tag]"item tag"		[value]"League: Delirium"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Small Cluster Jewel"
+	[tag]"name RU"		[value]"Малый кластерный самоцвет"
+
+	[tag]"icon path"	[value]"NotableSmallClusterJewel"
+	[tag]"base class"	[value]"Jewel"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	[tag]"item tag"		[value]"League: Delirium"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prismatic Jewel"
+	[tag]"name RU"		[value]"Радужный самоцвет"
+
+	[tag]"icon path"	[value]"Prismatic_Jewel_inventory_icon"
+	[tag]"base class"	[value]"Jewel"
+	
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cobalt Jewel"
+	[tag]"name RU"		[value]"Кобальтовый самоцвет"
+
+	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
+	[tag]"base class"	[value]"Jewel"
+	
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Breach unique item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crimson Jewel"
+	[tag]"name RU"		[value]"Багровый самоцвет"
+
+	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
+	[tag]"base class"	[value]"Jewel"
+	
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Breach unique item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Viridian Jewel"
+	[tag]"name RU"		[value]"Бирюзовый самоцвет"
+
+	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
+	[tag]"base class"	[value]"Jewel"
+	
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Breach unique item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Brutal Restraint"
+	[tag]"name RU"		[value]"Жестокая Сдержанность"
+
+	[tag]"icon path"	[value]"Brutal_Restraint_inventory_icon"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Elegant Hubris"
+	[tag]"name RU"		[value]"Изящный Эготизм"
+
+	[tag]"icon path"	[value]"Elegant_Hubris_inventory_icon"
+	[tag]"base class"	[value]"Jewels"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Glorius Vanity"
+	[tag]"name RU"		[value]"Блистательное Тщеславие"
+
+	[tag]"icon path"	[value]"Glorious_Vanity_inventory_icon"
+	[tag]"base class"	[value]"Jewels"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lethal Pride"
+	[tag]"name RU"		[value]"Смертельная Гордость"
+
+	[tag]"icon path"	[value]"Lethal_Pride_inventory_icon"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Militant Faith"
+	[tag]"name RU"		[value]"Воинственная Вера"
+
+	[tag]"icon path"	[value]"Militant_Faith_inventory_icon"
+	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

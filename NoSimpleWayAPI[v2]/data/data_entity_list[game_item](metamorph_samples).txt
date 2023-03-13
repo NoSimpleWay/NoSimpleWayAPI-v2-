@@ -1,0 +1,72 @@
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Brain"
+	[tag]"name RU"		[value]"Мозг Метаморфа"
+
+	[tag]"icon path"	[value]"brain"
+	[tag]"base class"	[value]"Metamorph Sample"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eye"
+	[tag]"name RU"		[value]"Глаз Метаморфа"
+
+	[tag]"icon path"	[value]"eye"
+	[tag]"base class"	[value]"Metamorph Sample"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Heart"
+	[tag]"name RU"		[value]"Сердце Метаморфа"
+
+	[tag]"icon path"	[value]"heart"
+	[tag]"base class"	[value]"Metamorph Sample"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Liver"
+	[tag]"name RU"		[value]"Печень Метаморфа"
+
+	[tag]"icon path"	[value]"liver"
+	[tag]"base class"	[value]"Metamorph Sample"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lung"
+	[tag]"name RU"		[value]"Лёгкие Метаморфа"
+
+	[tag]"icon path"	[value]"lung"
+	[tag]"base class"	[value]"Metamorph Sample"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

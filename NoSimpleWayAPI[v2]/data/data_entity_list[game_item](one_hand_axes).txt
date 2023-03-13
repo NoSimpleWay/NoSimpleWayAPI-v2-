@@ -1,0 +1,573 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Arming Axe"
+	[tag]"name RU"		[value]"Боевой топор"
+
+	[tag]"icon path"	[value]"Vaal_Hatchet_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Boarding Axe"
+	[tag]"name RU"		[value]"Абордажный топор"
+
+	[tag]"icon path"	[value]"Tomahawk_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Broad Axe"
+	[tag]"name RU"		[value]"Плотничий топор"
+
+	[tag]"icon path"	[value]"War_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Butcher Axe"
+	[tag]"name RU"		[value]"Топор мясника"
+
+	[tag]"icon path"	[value]"War_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ceremonial Axe"
+	[tag]"name RU"		[value]"Церемоинальный топор"
+
+	[tag]"icon path"	[value]"Royal_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chest Splitter"
+	[tag]"name RU"		[value]"Рассекатель ребер"
+
+	[tag]"icon path"	[value]"Vaal_Hatchet_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cleaver"
+	[tag]"name RU"		[value]"Секач"
+
+	[tag]"icon path"	[value]"Reaver_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Decorative Axe"
+	[tag]"name RU"		[value]"Украшенный топор"
+
+	[tag]"icon path"	[value]"Royal_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Disapprobation Axe"
+	[tag]"name RU"		[value]"Осуждающий топор"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Engraved Hatchet"
+	[tag]"name RU"		[value]"Гравированный топорик"
+
+	[tag]"icon path"	[value]"Runic_Hatchet_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Etched Hatchet"
+	[tag]"name RU"		[value]"Травлёный топорик"
+
+	[tag]"icon path"	[value]"Runic_Hatchet_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Infernal Axe"
+	[tag]"name RU"		[value]"Бесовский топор"
+
+	[tag]"icon path"	[value]"Wraith_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Jade Hatchet"
+	[tag]"name RU"		[value]"Нефритовый топор"
+
+	[tag]"icon path"	[value]"Karui_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Jasper Axe"
+	[tag]"name RU"		[value]"Яшмовый топор"
+
+	[tag]"icon path"	[value]"Karui_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Karui Axe"
+	[tag]"name RU"		[value]"Топор каруи"
+
+	[tag]"icon path"	[value]"Karui_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maltreatment Axe"
+	[tag]"name RU"		[value]"Жестокий топор"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Psychotic Axe"
+	[tag]"name RU"		[value]"Психотический топор"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reaver Axe"
+	[tag]"name RU"		[value]"Разбойничий топор"
+
+	[tag]"icon path"	[value]"Reaver_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Royal Axe"
+	[tag]"name RU"		[value]"Царский топор"
+
+	[tag]"icon path"	[value]"Royal_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Hatchet"
+	[tag]"name RU"		[value]"Рунический топорик"
+
+	[tag]"icon path"	[value]"Runic_Hatchet_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Hatchet"
+	[tag]"name RU"		[value]"Ржавый топорик"
+
+	[tag]"icon path"	[value]"Rusted_Hatchet_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Siege Axe"
+	[tag]"name RU"		[value]"Осадный топор"
+
+	[tag]"icon path"	[value]"Tomahawk_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Good base for unique"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Spectral Axe"
+	[tag]"name RU"		[value]"Призрачный топор"
+
+	[tag]"icon path"	[value]"Wraith_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tomahawk"
+	[tag]"name RU"		[value]"Томагавк"
+
+	[tag]"icon path"	[value]"Tomahawk_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vaal Hatchet"
+	[tag]"name RU"		[value]"Топорик ваал"
+
+	[tag]"icon path"	[value]"Vaal_Hatchet_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"War Axe"
+	[tag]"name RU"		[value]"Воинский топор"
+
+	[tag]"icon path"	[value]"War_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Wraith Axe"
+	[tag]"name RU"		[value]"Потусторонний топор"
+
+	[tag]"icon path"	[value]"Wraith_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Wrist Chopper"
+	[tag]"name RU"		[value]"Рукоруб"
+
+	[tag]"icon path"	[value]"Reaver_Axe_inventory_icon"
+	[tag]"base class"	[value]"One Hand Axes"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"

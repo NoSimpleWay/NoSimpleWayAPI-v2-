@@ -1,0 +1,2216 @@
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Craicic Lure"
+	[tag]"name RU"		[value]"Приманка Краццена"
+
+	[tag]"icon path"	[value]"Craicic_Lure_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Saqawine Lure"
+	[tag]"name RU"		[value]"Приманка Сакаваля"
+
+	[tag]"icon path"	[value]"Saqawine_Lure_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Farric Lure"
+	[tag]"name RU"		[value]"Приманка Фаррул"
+
+	[tag]"icon path"	[value]"Farric_Lure_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fenumal Lure"
+	[tag]"name RU"		[value]"Приманка Фенумы"
+
+	[tag]"icon path"	[value]"Fenumal_Lure_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Divine vessel"
+	[tag]"name RU"		[value]"Божественный сосуд"
+
+	[tag]"icon path"	[value]"Divine_Vessel_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Simulacrum"
+	[tag]"name RU"		[value]"Симулякр"
+
+	[tag]"icon path"	[value]"Simulacrum"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Special fragment"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blood-filled Vessel"
+	[tag]"name RU"		[value]"Наполненный кровью сосуд"
+
+	[tag]"icon path"	[value]"blood_filled_vessel"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Special fragment"
+
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eber's Key"
+	[tag]"name RU"		[value]"Ключ Эвера"
+
+	[tag]"icon path"	[value]"Eber's_Key_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of Constriction"
+	[tag]"name RU"		[value]"Фрагмент Угнетения"
+
+	[tag]"icon path"	[value]"Fragment_of_Constriction"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of Emptiness"
+	[tag]"name RU"		[value]"Фрагмент Пустоты"
+
+	[tag]"icon path"	[value]"Fragment_of_Emptiness"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of Enslavement"
+	[tag]"name RU"		[value]"Фрагмент Порабощения"
+
+	[tag]"icon path"	[value]"Fragment_of_Enslavement"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of Eradication"
+	[tag]"name RU"		[value]"Фрагмент Искоренения"
+
+	[tag]"icon path"	[value]"Fragment_of_Eradication"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of Knowledge"
+	[tag]"name RU"		[value]"Фрагмент Знания"
+
+	[tag]"icon path"	[value]"Fragment_of_Knowledge"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of Purification"
+	[tag]"name RU"		[value]"Фрагмент Искупления"
+
+	[tag]"icon path"	[value]"Fragment_of_Purification"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of Shape"
+	[tag]"name RU"		[value]"Фрагмент Формы"
+
+	[tag]"icon path"	[value]"Fragment_of_Shape"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of Terror"
+	[tag]"name RU"		[value]"Фрагмент Ужаса"
+
+	[tag]"icon path"	[value]"Fragment_of_Terror"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of the Chimera"
+	[tag]"name RU"		[value]"Фрагмент Гидры"
+
+	[tag]"icon path"	[value]"Fragment_of_the_Chimera_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of the Hydra"
+	[tag]"name RU"		[value]"Фрагмент Гидры"
+
+	[tag]"icon path"	[value]"Fragment_of_the_Hydra_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of the Minotaur"
+	[tag]"name RU"		[value]"Фрагмент Гидры"
+
+	[tag]"icon path"	[value]"Fragment_of_the_Minotaur_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragment of the Phoenix"
+	[tag]"name RU"		[value]"Фрагмент Гидры"
+
+	[tag]"icon path"	[value]"Fragment_of_the_Phoenix_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded"
+	[tag]"name RU"		[value]"Золочёный скарабей"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Ambush Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей засады"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Bestiary Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей бестиария"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Breach Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей разлома"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Cartography Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей картографии"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Divination Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей предсказания"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Elder Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей Древнего"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Harbinger Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей предвестников"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Legion Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей Легиона"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Metamorph Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей Метаморфа"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Perandus Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей Перандусов"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Reliquary Scarab"
+	[tag]"name RU"		[value]"Золочёный реликтовый скарабей"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Shaper Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей создателя"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Sulphite Scarab"
+	[tag]"name RU"		[value]"Золочёный сульфитовый скарабей"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Torment Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей мучения"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Inya's Key"
+	[tag]"name RU"		[value]"Ключ Иньи"
+
+	[tag]"icon path"	[value]"Inya's_Key_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mortal Grief"
+	[tag]"name RU"		[value]"Смертное уныние"
+
+	[tag]"icon path"	[value]"Mortal_Grief_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mortal Hope"
+	[tag]"name RU"		[value]"Смертная надежда"
+
+	[tag]"icon path"	[value]"Mortal_Hope_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mortal Ignorance"
+	[tag]"name RU"		[value]"Смертное невежество"
+
+	[tag]"icon path"	[value]"Mortal_Ignorance_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mortal Rage"
+	[tag]"name RU"		[value]"Смертный гнев"
+
+	[tag]"icon path"	[value]"Mortal_Rage_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished"
+	[tag]"name RU"		[value]"Гладкий скарабей"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Ambush Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей засады"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Bestiary Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей бестиария"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Breach Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей разлома"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Cartography Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей картографии"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Divination Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей предсказания"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Elder Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей Древнего"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Harbinger Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей предвестников"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Legion Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей Легиона"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Metamorph Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей Метаморфа"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Perandus Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей Перандусов"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Reliquary Scarab"
+	[tag]"name RU"		[value]"Гладкий реликтовый скарабей"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Shaper Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей создателя"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Sulphite Scarab"
+	[tag]"name RU"		[value]"Гладкий сульфитовый скарабей"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Torment Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей мучения"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted"
+	[tag]"name RU"		[value]"Ржавый скарабей"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Ambush Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей засады"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Bestiary Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей бестиария"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Breach Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей разлома"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Cartography Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей картографии"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Divination Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей предсказания"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Elder Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей Древнего"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Harbinger Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей предвестников"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Legion Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей Легиона"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Metamorph Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей Метаморфа"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Perandus Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей Перандусов"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Reliquary Scarab"
+	[tag]"name RU"		[value]"Ржавый реликтовый скарабей"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Shaper Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей создателя"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Sulphite Scarab"
+	[tag]"name RU"		[value]"Ржавый сульфитовый скарабей"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Torment Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей мучения"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sacrifice at Dawn"
+	[tag]"name RU"		[value]"Жертва на Рассвете"
+
+	[tag]"icon path"	[value]"Sacrifice_at_Dawn_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sacrifice at Dusk"
+	[tag]"name RU"		[value]"Жертва на Закате"
+
+	[tag]"icon path"	[value]"Sacrifice_at_Dusk_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sacrifice at Midnight"
+	[tag]"name RU"		[value]"Жертва в Полночь"
+
+	[tag]"icon path"	[value]"Sacrifice_at_Midnight_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sacrifice at Noon"
+	[tag]"name RU"		[value]"Жертва в Полдень"
+
+	[tag]"icon path"	[value]"Sacrifice_at_Noon_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Scarab"
+	[tag]"name RU"		[value]"Скарабей"
+
+	[tag]"icon path"	[value]"Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Maven's Writ"
+	[tag]"name RU"		[value]"Веление Мейвен"
+
+	[tag]"icon path"	[value]"maven_writ"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Volkuur's Key"
+	[tag]"name RU"		[value]"Ключ Волкуур"
+
+	[tag]"icon path"	[value]"Volkuur's_Key_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged"
+	[tag]"name RU"		[value]"Крылатый скарабей"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Ambush Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Засады"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Bestiary Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Бестиария"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Breach Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Разлома"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Cartography Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей картографии"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Divination Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей предсказания"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Elder Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Древнего"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Harbinger Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Предвестника"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Legion Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Легиона"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Metamorph Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Метаморфа"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Perandus Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Перандусов"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Reliquary Scarab"
+	[tag]"name RU"		[value]"Крылатый реликтовый скарабей"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Shaper Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Создателя"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Sulphite Scarab"
+	[tag]"name RU"		[value]"Крылатый сульфитовый скарабей"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Torment Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Мучения"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Yriel's Key"
+	[tag]"name RU"		[value]"Ключ Ириэля"
+
+	[tag]"icon path"	[value]"Yriel's_Key_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dedication to the Goddess"
+	[tag]"name RU"		[value]"Посвящение богине"
+
+	[tag]"icon path"	[value]"Dedication to the Goddess"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gift to the Goddess"
+	[tag]"name RU"		[value]"Дар богине"
+
+	[tag]"icon path"	[value]"Gift-to-the-Goddess"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tribute to the Goddess"
+	[tag]"name RU"		[value]"Дань богине"
+
+	[tag]"icon path"	[value]"Tribute-to-the-Goddess"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chayula's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Чаюлы"
+
+	[tag]"icon path"	[value]"Chayula's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chayula's Charged Breachstone"
+	[tag]"name RU"		[value]"Заряженный камень разлома Чаюлы"
+
+	[tag]"icon path"	[value]"Chayula's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chayula's Enriched Breachstone"
+	[tag]"name RU"		[value]"Обогащённый камень разлома Чаюлы"
+
+	[tag]"icon path"	[value]"Chayula's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chayula's Pure Breachstone"
+	[tag]"name RU"		[value]"Очищенный камень разлома Чаюлы"
+
+	[tag]"icon path"	[value]"Chayula's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Esh's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Иш"
+
+	[tag]"icon path"	[value]"Esh's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Esh's Charged Breachstone"
+	[tag]"name RU"		[value]"Заряженный камень разлома Иш"
+
+	[tag]"icon path"	[value]"Esh's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Esh's Enriched Breachstone"
+	[tag]"name RU"		[value]"Обогащённый камень разлома Иш"
+
+	[tag]"icon path"	[value]"Esh's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Esh's Pure Breachstone"
+	[tag]"name RU"		[value]"Очищенный камень разлома Иш"
+
+	[tag]"icon path"	[value]"Esh's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tul's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Тула"
+
+	[tag]"icon path"	[value]"Tul's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tul's Charged Breachstone"
+	[tag]"name RU"		[value]"Заряженный камень разлома Тула"
+
+	[tag]"icon path"	[value]"Tul's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tul's Enriched Breachstone"
+	[tag]"name RU"		[value]"Обогащённый камень разлома Тула"
+
+	[tag]"icon path"	[value]"Tul's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tul's Pure Breachstone"
+	[tag]"name RU"		[value]"Очищенный камень разлома Тула"
+
+	[tag]"icon path"	[value]"Tul's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Uul-Netol's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Уул-Нетола"
+
+	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Uul-Netol's Charged Breachstone"
+	[tag]"name RU"		[value]"Заряженный камень разлома Уул-Нетола"
+
+	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Uul-Netol's Enriched Breachstone"
+	[tag]"name RU"		[value]"Обогащённый камень разлома Уул-Нетола"
+
+	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Uul-Netol's Pure Breachstone"
+	[tag]"name RU"		[value]"Очищенный камень разлома Уул-Нетола"
+
+	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Xoph's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Ксофа"
+
+	[tag]"icon path"	[value]"Xoph's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Xoph's Charged Breachstone"
+	[tag]"name RU"		[value]"Заряженный камень разлома Ксофа"
+
+	[tag]"icon path"	[value]"Xoph's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Xoph's Enriched Breachstone"
+	[tag]"name RU"		[value]"Обогащённый камень разлома Ксофа"
+
+	[tag]"icon path"	[value]"Xoph's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Xoph's Pure Breachstone"
+	[tag]"name RU"		[value]"Очищенный камень разлома Ксофа"
+
+	[tag]"icon path"	[value]"Xoph's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Al-Hezmin's Crest"
+	[tag]"name RU"		[value]"Герб Аль-Хезмина"
+
+	[tag]"icon path"	[value]"Al-Hezmins_Crest"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Baran's Crest"
+	[tag]"name RU"		[value]"Герб Бэрана"
+
+	[tag]"icon path"	[value]"Barans_Crest_png"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Drox's Crest"
+	[tag]"name RU"		[value]"Герб Дрокса"
+
+	[tag]"icon path"	[value]"Droxs_Crest"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Veritania's Crest"
+	[tag]"name RU"		[value]"Герб Веритании"
+
+	[tag]"icon path"	[value]"Veritanias_Crest"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ceremonial Voidstone"
+	[tag]"name RU"		[value]"Церемониальный Камень Пустоты"
+
+	[tag]"icon path"	[value]"Ceremonial_Voidstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Decayed Voidstone"
+	[tag]"name RU"		[value]"Обветшалый Камень Пустоты"
+
+	[tag]"icon path"	[value]"Decayed_Voidstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grasping Voidstone"
+	[tag]"name RU"		[value]"Цепкий Камень Пустоты"
+
+	[tag]"icon path"	[value]"GraspingVoidstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omniscient Voidstone"
+	[tag]"name RU"		[value]"Всеведущий Камень Пустоты"
+
+	[tag]"icon path"	[value]"OmniscientVoidstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Writhing Invitation"
+	[tag]"name RU"		[value]"Извивающееся приглашение"
+
+	[tag]"icon path"	[value]"Writhing_Invitation"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Screaming Invitation"
+	[tag]"name RU"		[value]"Кричащее приглашение"
+
+	[tag]"icon path"	[value]"Screaming_Invitation"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polaric Invitation"
+	[tag]"name RU"		[value]"Полярное приглашение"
+
+	[tag]"icon path"	[value]"Polaric_Invitation"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Incandescent Invitation"
+	[tag]"name RU"		[value]"Сияющее приглашение"
+
+	[tag]"icon path"	[value]"Incandescent_Invitation"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maven's Invitation: The Atlas"
+	[tag]"name RU"		[value]"Приглашение Мейвен: Атлас"
+
+	[tag]"icon path"	[value]"Maven_invitation_atlas"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maven's Invitation: The Elderslayers"
+	[tag]"name RU"		[value]"Приглашение Мейвен: Убийцы Древнего"
+
+	[tag]"icon path"	[value]"MavenInvitationTheElderslayers"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Xoph's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Ксофа"
+
+	[tag]"icon path"	[value]"XophFlawlessBreachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tul's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Тул"
+
+	[tag]"icon path"	[value]"TulFlawlessBreachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Esh's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Иш"
+
+	[tag]"icon path"	[value]"EshFlawlessBreachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Uul-Netol's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Уул-Нетол"
+
+	[tag]"icon path"	[value]"UulnetolFlawlessBreachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chayula's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Чаюлы"
+
+	[tag]"icon path"	[value]"ChayulasFlawlessBreachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unrelenting Timeless Karui Emblem"
+	[tag]"name RU"		[value]"Непримиримый вневременной знак каруи"
+
+	[tag]"icon path"	[value]"UnrelentingTimelessKaruiEmblem"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unrelenting Timeless Maraketh Emblem"
+	[tag]"name RU"		[value]"Непримиримый вневременной знак маракетов"
+
+	[tag]"icon path"	[value]"UnrelentingTimelessMarakethEmblem"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unrelenting Timeless Eternal Emblem"
+	[tag]"name RU"		[value]"Непримиримый вневременной знак Вечных"
+
+	[tag]"icon path"	[value]"UnrelentingTimelessEternalEmblem"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unrelenting Timeless Templar Emblem"
+	[tag]"name RU"		[value]"Непримиримый вневременной знак храмовников"
+
+	[tag]"icon path"	[value]"UnrelentingTimelessTemplarEmblem"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unrelenting Timeless Vaal Emblem"
+	[tag]"name RU"		[value]"Непримиримый вневременной знак ваал"
+
+	[tag]"icon path"	[value]"UnrelentingTimelessVaalEmblem"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Expedition Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей Экспедиции"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Expedition Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей Экспедиции"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Expedition Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей Экспедиции"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Expedition Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Экспедиции"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Blight Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей Скверны"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Blight Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей Скверны"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Blight Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей Скверны"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Blight Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Скверны"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Abyss Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей Бездны"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Abyss Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей Бездны"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Abyss Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей Бездны"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Abyss Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Бездны"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Templar Emblem"
+	[tag]"name RU"		[value]"Вневременной знак Храмовиков"
+
+	[tag]"icon path"	[value]"Timeless_Templar_Emblem_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Vaal Emblem"
+	[tag]"name RU"		[value]"Вневременной знак Ваал"
+
+	[tag]"icon path"	[value]"Timeless_Vaal_Emblem_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Eternal Emblem"
+	[tag]"name RU"		[value]"Вневременной знак Вечной Империи"
+
+	[tag]"icon path"	[value]"Timeless_Eternal_Emblem_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Karui Emblem"
+	[tag]"name RU"		[value]"Вневременной знак Каруи"
+
+	[tag]"icon path"	[value]"Timeless_Karui_Emblem_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Maraketh Emblem"
+	[tag]"name RU"		[value]"Вневременной знак Маракетов"
+
+	[tag]"icon path"	[value]"Timeless_Maraketh_Emblem_inventory_icon"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sacred Blossom"
+	[tag]"name RU"		[value]"Священное соцветие"
+
+	[tag]"icon path"	[value]"sacred_blossom"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	

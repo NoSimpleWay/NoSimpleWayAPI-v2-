@@ -1,0 +1,5789 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"A Dab of Ink"
+	[tag]"name RU"		[value]"Капля чернил"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"A Fate Worse Than Death"
+	[tag]"name RU"		[value]"Участь хуже смерти"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Astral Protection"
+	[tag]"name RU"		[value]"Астральная защита"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Altered Perception"
+	[tag]"name RU"		[value]"Симулякр"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"A Familiar Call"
+	[tag]"name RU"		[value]"Знакомый зов"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"A Mother's Parting Gift"
+	[tag]"name RU"		[value]"Прощальный дар матери"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"A Note in the Wind"
+	[tag]"name RU"		[value]"Музыка на ветру"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common	"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Abandoned Wealth"
+	[tag]"name RU"		[value]"Забытое богатство"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Acclimatisation"
+	[tag]"name RU"		[value]"Акклиматизация"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+
+	[tag]"item tag"		[value]"League: Ritual"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Akil's Prophecy"
+	[tag]"name RU"		[value]"Пророчество Акила"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Alluring Bounty"
+	[tag]"name RU"		[value]"Соблазнительная награда"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Alone in the Darkness"
+	[tag]"name RU"		[value]"Один в темноте"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Anarchy's Price"
+	[tag]"name RU"		[value]"Цена анархии"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Arrogance of the Vaal"
+	[tag]"name RU"		[value]"Высокомерие ваал"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Assassin's Favour"
+	[tag]"name RU"		[value]"Услуга душегуба"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Atziri's Arsenal"
+	[tag]"name RU"		[value]"Арсенал Атзири"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Audacity"
+	[tag]"name RU"		[value]"Наглость"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Azure Rage"
+	[tag]"name RU"		[value]"Лазурная ярость"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Azyran's Reward"
+	[tag]"name RU"		[value]"Награда Азирана"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Baited Expectations"
+	[tag]"name RU"		[value]"Искушающие ожидания"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Beauty Through Death"
+	[tag]"name RU"		[value]"Посмертная красота"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blessing of God"
+	[tag]"name RU"		[value]"Благословение Господа"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blind Venture"
+	[tag]"name RU"		[value]"Сделка вслепую"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Boon of Justice"
+	[tag]"name RU"		[value]"Дар правосудия"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Boon of the First Ones"
+	[tag]"name RU"		[value]"Дар Первых"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Broken truce"
+	[tag]"name RU"		[value]"Нарушенное перемирие"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Boundless Realms"
+	[tag]"name RU"		[value]"Бескрайние владения"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bowyer's Dream"
+	[tag]"name RU"		[value]"Мечта лучника"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Brother's Stash"
+	[tag]"name RU"		[value]"Братские сбережения"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Brotherhood in Exile"
+	[tag]"name RU"		[value]"Собратья по изгнанию"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Buried Treasure"
+	[tag]"name RU"		[value]"Спрятанное сокровище"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Burning Blood"
+	[tag]"name RU"		[value]"Горящая кровь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Call to the First Ones"
+	[tag]"name RU"		[value]"Призыв Первых"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cameria's Cut"
+	[tag]"name RU"		[value]"Доля Камерии"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cartographer's Delight"
+	[tag]"name RU"		[value]"Восторг картографа"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chaotic Disposition"
+	[tag]"name RU"		[value]"Баламут"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Council of Cats"
+	[tag]"name RU"		[value]"Кошачий совет"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Checkmate"
+	[tag]"name RU"		[value]"Шах и мат"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Choking Guilt"
+	[tag]"name RU"		[value]"Удушающая вина"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Coveted Possession"
+	[tag]"name RU"		[value]"Упоение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cursed Words"
+	[tag]"name RU"		[value]"Несносные слова"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dark Dreams"
+	[tag]"name RU"		[value]"Тёмные мечты"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dark Temptation"
+	[tag]"name RU"		[value]"Тёмное искушение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Death"
+	[tag]"name RU"		[value]"Смерть"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Deathly Designs"
+	[tag]"name RU"		[value]"Смертельные замыслы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Demigod's Wager"
+	[tag]"name RU"		[value]"Пари полубога"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Darker Half"
+	[tag]"name RU"		[value]"Тёмная половина"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Desecrated Virtue"
+	[tag]"name RU"		[value]"Осквернённая добродетель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Destined to Crumble"
+	[tag]"name RU"		[value]"Неизбежный крах"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dialla's Subjugation"
+	[tag]"name RU"		[value]"Подчинение Диаллы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Doryani's Epiphany"
+	[tag]"name RU"		[value]"Прозрение Дориани"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Divine Justice"
+	[tag]"name RU"		[value]"Божественное правосудие"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Doedre's Madness"
+	[tag]"name RU"		[value]"Безумие Доэдре"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Draped in Dreams"
+	[tag]"name RU"		[value]"Облачённый в мечты"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dying Light"
+	[tag]"name RU"		[value]"Угасающий свет"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Earth Drinker"
+	[tag]"name RU"		[value]"Пьющий землю"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Endless night"
+	[tag]"name RU"		[value]"Бесконечная ночь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Echoes of Love"
+	[tag]"name RU"		[value]"Отголоски любви"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Emperor of Purity"
+	[tag]"name RU"		[value]"Император Чистоты"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Emperor's Luck"
+	[tag]"name RU"		[value]"Удача императора"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Etched in Blood"
+	[tag]"name RU"		[value]"Выгравированные в крови"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"From Bone to Ashes"
+	[tag]"name RU"		[value]"От костей к пеплу"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Further Invention"
+	[tag]"name RU"		[value]"Новое изобретение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Home"
+	[tag]"name RU"		[value]"Дом"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rebirth and Renewal"
+	[tag]"name RU"		[value]"Возрождение и обновление"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fateful Meeting"
+	[tag]"name RU"		[value]"Судьбоносная встреча"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Forbidden Power"
+	[tag]"name RU"		[value]"Запретная сила"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Friendship"
+	[tag]"name RU"		[value]"Дружба"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gemcutter's Promise"
+	[tag]"name RU"		[value]"Клятва камнерезчика"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gift of Asenath"
+	[tag]"name RU"		[value]"Подарок Азенат"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gift of the Gemling Queen"
+	[tag]"name RU"		[value]"Дары царицы каменитов"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gemcutter's Mercy"
+	[tag]"name RU"		[value]"Счастье камнереза"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Glimmer of Hope"
+	[tag]"name RU"		[value]"Проблеск надежды"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grave Knowledge"
+	[tag]"name RU"		[value]"Загробное знание"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Harmony of Souls"
+	[tag]"name RU"		[value]"Гармония душ"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Haunting Shadows"
+	[tag]"name RU"		[value]"Преследующие тени"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Her Mask"
+	[tag]"name RU"		[value]"Её маска"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Heterochromia"
+	[tag]"name RU"		[value]"Гетерохромия"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hope"
+	[tag]"name RU"		[value]"Надежда"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"House of Mirrors"
+	[tag]"name RU"		[value]"Зеркальный лабиринт"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hubris"
+	[tag]"name RU"		[value]"Высокомерие"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Humility"
+	[tag]"name RU"		[value]"Смирение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hunter's Resolve"
+	[tag]"name RU"		[value]"Решение охотника"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hunter's Reward"
+	[tag]"name RU"		[value]"Трофей охотника"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Immortal Resolve"
+	[tag]"name RU"		[value]"Бессмертная решимость"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperial Legacy"
+	[tag]"name RU"		[value]"Имперское наследие"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Jack in the Box"
+	[tag]"name RU"		[value]"Сюрприз"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Keeper's Corruption"
+	[tag]"name RU"		[value]"Порочность хранителя"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lantador's Lost Love"
+	[tag]"name RU"		[value]"Утраченная любовь Лантадора"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lethean Temptation"
+	[tag]"name RU"		[value]"Летейское искушение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Last Hope"
+	[tag]"name RU"		[value]"Последняя надежда"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Left to Fate"
+	[tag]"name RU"		[value]"На произвол судьбы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Light and Truth"
+	[tag]"name RU"		[value]"Свет и правда"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lingering Remnants"
+	[tag]"name RU"		[value]"Пережитки прошлого"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lost Worlds"
+	[tag]"name RU"		[value]"Затерянные миры"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Love Through Ice"
+	[tag]"name RU"		[value]"Любовь сквозь лёд"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty"
+	[tag]"name RU"		[value]"Верность"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lucky Connections"
+	[tag]"name RU"		[value]"Удачная сделка"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lucky Deck"
+	[tag]"name RU"		[value]"Счастливая колода"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lysah's Respite"
+	[tag]"name RU"		[value]"Передышка Лисы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mawr Blaidd"
+	[tag]"name RU"		[value]"Mawr Blaidd"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Merciless Armament"
+	[tag]"name RU"		[value]"Безжалостное орудие"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Might is Right"
+	[tag]"name RU"		[value]"Правда в силе"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mitts"
+	[tag]"name RU"		[value]"Рукавички"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Monochrome"
+	[tag]"name RU"		[value]"Монохромность"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"More is Never Enough"
+	[tag]"name RU"		[value]"Большего всегда мало"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"No Traces"
+	[tag]"name RU"		[value]"Без следа"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Nook's Crown"
+	[tag]"name RU"		[value]"Корона Нука"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Peaceful Moments"
+	[tag]"name RU"		[value]"Безмятежные минуты"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfection"
+	[tag]"name RU"		[value]"Идеал"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Pride Before the Fall"
+	[tag]"name RU"		[value]"Гордыня"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Pride of the First Ones"
+	[tag]"name RU"		[value]"Гордость Первых"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prometheus' Armoury"
+	[tag]"name RU"		[value]"Кузня Прометея"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prosperity"
+	[tag]"name RU"		[value]"Богатство"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rain of Chaos"
+	[tag]"name RU"		[value]"Пришествие хаоса"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rain Tempter"
+	[tag]"name RU"		[value]"Дождь-искуситель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rats"
+	[tag]"name RU"		[value]"Крысы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rebirth"
+	[tag]"name RU"		[value]"Перерождение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reckless Ambition"
+	[tag]"name RU"		[value]"Дерзкие амбиции"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Remembrance"
+	[tag]"name RU"		[value]"Поминовение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sambodhi's Vow"
+	[tag]"name RU"		[value]"Клятва Самбодхи"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Something Dark"
+	[tag]"name RU"		[value]"Нечто тёмное"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Scholar of the Seas"
+	[tag]"name RU"		[value]"Мореплаватель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Seven Years Bad Luck"
+	[tag]"name RU"		[value]"Семь лет неудач"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Shard of Fate"
+	[tag]"name RU"		[value]"Осколок рока"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Society's Remorse"
+	[tag]"name RU"		[value]"Укоризна общества"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Squandered Prosperity"
+	[tag]"name RU"		[value]"Растраченное богатство"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Struck by Lightning"
+	[tag]"name RU"		[value]"Пораженный молнией"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Succor of the Sinless"
+	[tag]"name RU"		[value]"Помощь безгрешных"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Academic"
+	[tag]"name RU"		[value]"Академик"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Admirer"
+	[tag]"name RU"		[value]"Поклонник"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Aesthete"
+	[tag]"name RU"		[value]"Эстет"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Archmage's Right Hand"
+	[tag]"name RU"		[value]"Правая рука Архимага"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Brawny Battle Mage"
+	[tag]"name RU"		[value]"Дюжий волшебник"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Destination"
+	[tag]"name RU"		[value]"Цель путешествия"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Dungeon Master"
+	[tag]"name RU"		[value]"Тюремщик"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Fucking slave"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Forward Gaze"
+	[tag]"name RU"		[value]"Взгляд вперёд"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Arena Champion"
+	[tag]"name RU"		[value]"Чемпион Арены"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Apothecary"
+	[tag]"name RU"		[value]"Аптекарь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Enforcer"
+	[tag]"name RU"		[value]"Исполнитель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Leviathan"
+	[tag]"name RU"		[value]"Левиафан"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Price of Devotion"
+	[tag]"name RU"		[value]"Цена послушания"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Very expensive"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Shepherd's Sandals"
+	[tag]"name RU"		[value]"Сандалии пастуха"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Army of Blood"
+	[tag]"name RU"		[value]"Армия крови"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Shieldbearer"
+	[tag]"name RU"		[value]"Щитоносец"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Very expensive"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Artist"
+	[tag]"name RU"		[value]"Художник"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Astromancer"
+	[tag]"name RU"		[value]"Астромант"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Avenger"
+	[tag]"name RU"		[value]"Мститель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Awakened"
+	[tag]"name RU"		[value]"Пробуждённые"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Bargain"
+	[tag]"name RU"		[value]"Сделка"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Battle Born"
+	[tag]"name RU"		[value]"Воитель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Bear Woman"
+	[tag]"name RU"		[value]"Женщина-медведь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Beast"
+	[tag]"name RU"		[value]"Зверь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Betrayal"
+	[tag]"name RU"		[value]"Предательство"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Bitter Blossom"
+	[tag]"name RU"		[value]"Колючее соцветие"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Blazing Fire"
+	[tag]"name RU"		[value]"Пылающий огонь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Body"
+	[tag]"name RU"		[value]"Тело"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Bones"
+	[tag]"name RU"		[value]"Кости"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Breach"
+	[tag]"name RU"		[value]"Разлом"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Brittle Emperor"
+	[tag]"name RU"		[value]"Хрупкий император"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Cache"
+	[tag]"name RU"		[value]"Тайник"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Cacophony"
+	[tag]"name RU"		[value]"Какофония"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Calling"
+	[tag]"name RU"		[value]"Призыв"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Carrion Crow"
+	[tag]"name RU"		[value]"Чёрный ворон"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Cartographer"
+	[tag]"name RU"		[value]"Картограф"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Cataclysm"
+	[tag]"name RU"		[value]"Катаклизм"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Catalyst"
+	[tag]"name RU"		[value]"Катализатор"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Celestial Justicar"
+	[tag]"name RU"		[value]"Небесный судья"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Celestial Stone"
+	[tag]"name RU"		[value]"Небесный камень"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Chains that Bind"
+	[tag]"name RU"		[value]"Оковы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Cheater"
+	[tag]"name RU"		[value]"Ловкач"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Chosen"
+	[tag]"name RU"		[value]"Избранный"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Coming Storm"
+	[tag]"name RU"		[value]"Канун бури"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Conduit"
+	[tag]"name RU"		[value]"Проводник"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Craving"
+	[tag]"name RU"		[value]"Стремление"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Cursed King"
+	[tag]"name RU"		[value]"Проклятый монарх"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Damned"
+	[tag]"name RU"		[value]"Проклятые"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Dapper Prodigy"
+	[tag]"name RU"		[value]"Одарённый франт"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Dark Mage"
+	[tag]"name RU"		[value]"Тёмный маг"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Darkest Dream"
+	[tag]"name RU"		[value]"Темнейший сон"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Deal"
+	[tag]"name RU"		[value]"Соглашение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Deceiver"
+	[tag]"name RU"		[value]"Обманщик"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Deep Ones"
+	[tag]"name RU"		[value]"Глубокие"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Demon"
+	[tag]"name RU"		[value]"Демон"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Demoness"
+	[tag]"name RU"		[value]"Демоница"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Doctor"
+	[tag]"name RU"		[value]"Доктор"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Doppelganger"
+	[tag]"name RU"		[value]"Двойник"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Dragon"
+	[tag]"name RU"		[value]"Дракон"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Dragon's Heart"
+	[tag]"name RU"		[value]"Сердце дракона"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Dreamer"
+	[tag]"name RU"		[value]"Сновидец"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Dreamland"
+	[tag]"name RU"		[value]"Страна грёз"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Drunken Aristocrat"
+	[tag]"name RU"		[value]"Пьяный патриций"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Easy Stroll"
+	[tag]"name RU"		[value]"Лёгкая прогулка"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Eldritch Decay"
+	[tag]"name RU"		[value]"Аномальное увядание"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Encroaching Darkness"
+	[tag]"name RU"		[value]"Вездесущая тьма"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Endless Darkness"
+	[tag]"name RU"		[value]"Бесконечная тьма"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Endurance"
+	[tag]"name RU"		[value]"Выносливость"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Enlightened"
+	[tag]"name RU"		[value]"Просветлённый"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Escape"
+	[tag]"name RU"		[value]"Побег"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Ethereal"
+	[tag]"name RU"		[value]"Эфемерность"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Explorer"
+	[tag]"name RU"		[value]"Исследователь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Eye of Terror"
+	[tag]"name RU"		[value]"Око Ужаса"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Eye of the Dragon"
+	[tag]"name RU"		[value]"Глаз дракона"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Fathomless Depths"
+	[tag]"name RU"		[value]"Бездонные глубины"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Feast"
+	[tag]"name RU"		[value]"Пир"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Fiend"
+	[tag]"name RU"		[value]"Враг"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Fishmonger"
+	[tag]"name RU"		[value]"Торговец рыбой"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Fletcher"
+	[tag]"name RU"		[value]"Пронзатель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Flora's Gift"
+	[tag]"name RU"		[value]"Сила природы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Fool"
+	[tag]"name RU"		[value]"Дурак"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Formless Sea"
+	[tag]"name RU"		[value]"Бесформенное море"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Forsaken"
+	[tag]"name RU"		[value]"Забытые"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Fox"
+	[tag]"name RU"		[value]"Лиса"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Gambler"
+	[tag]"name RU"		[value]"Игрок"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Garish Power"
+	[tag]"name RU"		[value]"Крикливая мощь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Gemcutter"
+	[tag]"name RU"		[value]"Камнерезчик"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Gentleman"
+	[tag]"name RU"		[value]"Джентльмен"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Gladiator"
+	[tag]"name RU"		[value]"Гладиатор"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Golden Era"
+	[tag]"name RU"		[value]"Золотой век"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Greatest Intentions"
+	[tag]"name RU"		[value]"Величайшие намерения"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Gulf"
+	[tag]"name RU"		[value]"Пропасть"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Hale Heart"
+	[tag]"name RU"		[value]"Крепкое сердце"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Harvester"
+	[tag]"name RU"		[value]"Жнец"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Hermit"
+	[tag]"name RU"		[value]"Отшельник"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Heroic Shot"
+	[tag]"name RU"		[value]"Героическая попытка"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Hive of Knowledge"
+	[tag]"name RU"		[value]"Скопище знаний"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Hoarder"
+	[tag]"name RU"		[value]"Скопидом"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Hunger"
+	[tag]"name RU"		[value]"Голод"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Immortal"
+	[tag]"name RU"		[value]"Бессмертный"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Incantation"
+	[tag]"name RU"		[value]"Песнопение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Innocent"
+	[tag]"name RU"		[value]"Невинный"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Inoculated"
+	[tag]"name RU"		[value]"Инокулированный"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Insatiable"
+	[tag]"name RU"		[value]"Ненасытный"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Inventor"
+	[tag]"name RU"		[value]"Изобретатель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Iron Bard"
+	[tag]"name RU"		[value]"Железный бард"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Jester"
+	[tag]"name RU"		[value]"Шут"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Jeweller's Boon"
+	[tag]"name RU"		[value]"Благо ювелира"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Journalist"
+	[tag]"name RU"		[value]"Журналист"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Journey"
+	[tag]"name RU"		[value]"Путешествие"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The King's Blade"
+	[tag]"name RU"		[value]"Клинок Венценосца"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The King's Heart"
+	[tag]"name RU"		[value]"Сердце вождя"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Landing"
+	[tag]"name RU"		[value]"Приземление"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Last One Standing"
+	[tag]"name RU"		[value]"Последний воин"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Lich"
+	[tag]"name RU"		[value]"Лич"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Life Thief"
+	[tag]"name RU"		[value]"Похититель жизни"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Lion"
+	[tag]"name RU"		[value]"Лев"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Long Con"
+	[tag]"name RU"		[value]"Долгое собрание"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Long Watch"
+	[tag]"name RU"		[value]"Долгий дозор"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Lord in Black"
+	[tag]"name RU"		[value]"Господин в чёрном"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Lord of Celebration"
+	[tag]"name RU"		[value]"Владыка триумфа"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Lover"
+	[tag]"name RU"		[value]"Любовник"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Lunaris Priestess"
+	[tag]"name RU"		[value]"Жрица Лунарис"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Mad King"
+	[tag]"name RU"		[value]"Безумный царь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Master"
+	[tag]"name RU"		[value]"Хозяин"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Master Artisan"
+	[tag]"name RU"		[value]"Мастер-ремесленник"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Mayor"
+	[tag]"name RU"		[value]"Правитель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Mercenary"
+	[tag]"name RU"		[value]"Наёмник"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Messenger"
+	[tag]"name RU"		[value]"Посланник"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Metalsmith's Gift"
+	[tag]"name RU"		[value]"Дар кузнеца"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Mountain"
+	[tag]"name RU"		[value]"Гора"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Nurse"
+	[tag]"name RU"		[value]"Медсестра"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Oath"
+	[tag]"name RU"		[value]"Клятва"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Obscured"
+	[tag]"name RU"		[value]"Скрытный"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Offering"
+	[tag]"name RU"		[value]"Подношение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Old Man"
+	[tag]"name RU"		[value]"Старик"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The One With All"
+	[tag]"name RU"		[value]"Единство"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Opulent"
+	[tag]"name RU"		[value]"Толстосум"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Pack Leader"
+	[tag]"name RU"		[value]"Вожак стаи"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Pact"
+	[tag]"name RU"		[value]"Пакт"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Patient"
+	[tag]"name RU"		[value]"Пациент"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Penitent"
+	[tag]"name RU"		[value]"Кающийся"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Poet"
+	[tag]"name RU"		[value]"Поэт"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Polymath"
+	[tag]"name RU"		[value]"Полимат"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Porcupine"
+	[tag]"name RU"		[value]"Дикобраз"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Price of Loyalty"
+	[tag]"name RU"		[value]"Цена преданности"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Price of Protection"
+	[tag]"name RU"		[value]"Цена защиты"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Primordial"
+	[tag]"name RU"		[value]"Первородный"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Professor"
+	[tag]"name RU"		[value]"Профессор"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Progeny of Lunaris"
+	[tag]"name RU"		[value]"Потомок Лунарис"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Puzzle"
+	[tag]"name RU"		[value]"Головоломка"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Queen"
+	[tag]"name RU"		[value]"Царица"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Rabid Rhoa"
+	[tag]"name RU"		[value]"Бешеный Роа"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Realm"
+	[tag]"name RU"		[value]"Царство"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Risk"
+	[tag]"name RU"		[value]"Риск"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Rite of Elements"
+	[tag]"name RU"		[value]"Ритуал стихий"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Road to Power"
+	[tag]"name RU"		[value]"Путь к власти"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Ruthless Ceinture"
+	[tag]"name RU"		[value]"Беспощадный ремень"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Sacrifice"
+	[tag]"name RU"		[value]"Жертвоприношение"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Saint's Treasure"
+	[tag]"name RU"		[value]"Сокровище святоши"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Samurai's Eye"
+	[tag]"name RU"		[value]"Око самурая"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Scarred Meadow"
+	[tag]"name RU"		[value]"Выгоревший луг"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Scavenger"
+	[tag]"name RU"		[value]"Падальщик"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Scholar"
+	[tag]"name RU"		[value]"Учёный"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Seeker"
+	[tag]"name RU"		[value]"Искатель"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Sephirot"
+	[tag]"name RU"		[value]"Сефирот"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Side Quest"
+	[tag]"name RU"		[value]"Побочное задание"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Sigil"
+	[tag]"name RU"		[value]"Печать"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Siren"
+	[tag]"name RU"		[value]"Сирена"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Skeleton"
+	[tag]"name RU"		[value]"Скелет"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Soul"
+	[tag]"name RU"		[value]"Душа"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Spark and the Flame"
+	[tag]"name RU"		[value]"Искра и пламя"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Spoiled Prince"
+	[tag]"name RU"		[value]"Баловень"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Standoff"
+	[tag]"name RU"		[value]"Противоборство"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Stormcaller"
+	[tag]"name RU"		[value]"Призыватель бури"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Strategist"
+	[tag]"name RU"		[value]"Стратег"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Summoner"
+	[tag]"name RU"		[value]"Призыватель"
+
+	[tag]"icon path"	[value]"Card"
+	
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Sun"
+	[tag]"name RU"		[value]"Солнце"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Surgeon"
+	[tag]"name RU"		[value]"Хирург"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Surveyor"
+	[tag]"name RU"		[value]"Топограф"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Survivalist"
+	[tag]"name RU"		[value]"Выживший"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Sustenance"
+	[tag]"name RU"		[value]"Пропитание"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Sword King's Salute"
+	[tag]"name RU"		[value]"Дань Венценосца мечей"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Thaumaturgist"
+	[tag]"name RU"		[value]"Чудотворец"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Throne"
+	[tag]"name RU"		[value]"Престол"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Tinkerer's Table"
+	[tag]"name RU"		[value]"Верстак умельца"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Tower"
+	[tag]"name RU"		[value]"Башня"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Traitor"
+	[tag]"name RU"		[value]"Предатель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Trial"
+	[tag]"name RU"		[value]"Испытание"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Tumbleweed"
+	[tag]"name RU"		[value]"Перекати-поле"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Twilight Moon"
+	[tag]"name RU"		[value]"Луна в сумерках"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Twins"
+	[tag]"name RU"		[value]"Близнецы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Tyrant"
+	[tag]"name RU"		[value]"Тиран"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Undaunted"
+	[tag]"name RU"		[value]"Неустрашимый"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Undisputed"
+	[tag]"name RU"		[value]"Неоспоримый"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Unexpected Prize"
+	[tag]"name RU"		[value]"Неожиданная награда"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Union"
+	[tag]"name RU"		[value]"Союз"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Valkyrie"
+	[tag]"name RU"		[value]"Валькирия"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Valley of Steel Boxes"
+	[tag]"name RU"		[value]"Долина стальных ларей"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Vast"
+	[tag]"name RU"		[value]"Простор"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Visionary"
+	[tag]"name RU"		[value]"Провидец"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Void"
+	[tag]"name RU"		[value]"Ничто"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Warden"
+	[tag]"name RU"		[value]"Смотритель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Warlord"
+	[tag]"name RU"		[value]"Воевода"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Watcher"
+	[tag]"name RU"		[value]"Наблюдатель"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Web"
+	[tag]"name RU"		[value]"Паутина"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The White Knight"
+	[tag]"name RU"		[value]"Белый рыцарь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Whiteout"
+	[tag]"name RU"		[value]"Белая пелена"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Wilted Rose"
+	[tag]"name RU"		[value]"Увядшая роза"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Wind"
+	[tag]"name RU"		[value]"Ветер"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Witch"
+	[tag]"name RU"		[value]"Ведьма"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Wolf"
+	[tag]"name RU"		[value]"Волк"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Wolf's Legacy"
+	[tag]"name RU"		[value]"Волчье наследие"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Wolf's Shadow"
+	[tag]"name RU"		[value]"Тень Волка"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Wolven King's Bite"
+	[tag]"name RU"		[value]"Укус Волчьего короля"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Wolverine"
+	[tag]"name RU"		[value]"Росомаха"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The World Eater"
+	[tag]"name RU"		[value]"Пожиратель миров"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Wrath"
+	[tag]"name RU"		[value]"Гнев"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Wretched"
+	[tag]"name RU"		[value]"Горемыка"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thirst for Knowledge"
+	[tag]"name RU"		[value]"Жажда знаний"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Three Faces in the Dark"
+	[tag]"name RU"		[value]"Три лика в темноте"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Three Voices"
+	[tag]"name RU"		[value]"Три голоса"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thunderous Skies"
+	[tag]"name RU"		[value]"Небесный гром"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Time-Lost Relic"
+	[tag]"name RU"		[value]"Утерянная реликвия"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tranquillity"
+	[tag]"name RU"		[value]"Спокойствие"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Treasure Hunter"
+	[tag]"name RU"		[value]"Охотник за сокровищами"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Triskaidekaphobia"
+	[tag]"name RU"		[value]"Трискайдекафобия"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Turn the Other Cheek"
+	[tag]"name RU"		[value]"Подставь другую щёку"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unchained"
+	[tag]"name RU"		[value]"Освобождённый"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Underground Forest"
+	[tag]"name RU"		[value]"Подземный лес"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unrequited Love"
+	[tag]"name RU"		[value]"Безответная любовь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vanity"
+	[tag]"name RU"		[value]"Тщеславие"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vile Power"
+	[tag]"name RU"		[value]"Злая мощь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vinia's Token"
+	[tag]"name RU"		[value]"Знак Винии"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Void of the Elements"
+	[tag]"name RU"		[value]"Стихийная пустота"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Volatile Power"
+	[tag]"name RU"		[value]"Изменчивая сила"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Wealth and Power"
+	[tag]"name RU"		[value]"Богатство и власть"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Last Supper"
+	[tag]"name RU"		[value]"Тайная вечеря"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Emptiness"
+	[tag]"name RU"		[value]"Опустелость"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"A Sea of Blue"
+	[tag]"name RU"		[value]"Синее море"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Offspring"
+	[tag]"name RU"		[value]"Потомство"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Price of Prescience"
+	[tag]"name RU"		[value]"Цена предвидения"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Mind's Eyes"
+	[tag]"name RU"		[value]"Глаза разума"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Terrible Secret of Space"
+	[tag]"name RU"		[value]"Ужасная тайна космоса"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Blessing of Moosh"
+	[tag]"name RU"		[value]"Благословение Муши"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Costly Curio"
+	[tag]"name RU"		[value]"Ценный раритет"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lachrymal Necrosis"
+	[tag]"name RU"		[value]"Бездушие"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dementophobia"
+	[tag]"name RU"		[value]"Дементофобия"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ambitious Obsession"
+	[tag]"name RU"		[value]"Амбициозная одержимость"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winter's Embrace"
+	[tag]"name RU"		[value]"Объятья зимы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sambodhi's Wisdom"
+	[tag]"name RU"		[value]"Мудрость Самбодхи"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Enthusiasts"
+	[tag]"name RU"		[value]"Энтузиасты"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Broken Promises"
+	[tag]"name RU"		[value]"Нарушенные обещания"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Brush, Paint and Palette"
+	[tag]"name RU"		[value]"Кисть, краска и палитра"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Deadly Joy"
+	[tag]"name RU"		[value]"Смертоносное веселье"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Adventuring Spirit"
+	[tag]"name RU"		[value]"Дух приключений"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Eternal War"
+	[tag]"name RU"		[value]"Вечная война"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prejudice"
+	[tag]"name RU"		[value]"Предрассудки"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Shortcut"
+	[tag]"name RU"		[value]"Кратчайший путь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Card Sharp"
+	[tag]"name RU"		[value]"Шулер"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"A Modest Request"
+	[tag]"name RU"		[value]"Скромная просьба"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Luminous Trove"
+	[tag]"name RU"		[value]"Светящийся клад"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Hook"
+	[tag]"name RU"		[value]"Крючок"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Auspicious Ambitions"
+	[tag]"name RU"		[value]"Многообещающие амбиции"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Divine Beauty"
+	[tag]"name RU"		[value]"Божественная красота"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Wedding Gift"
+	[tag]"name RU"		[value]"Подарок на свадьбу"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dying Anguish"
+	[tag]"name RU"		[value]"Смертельная тоска"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Insane Cat"
+	[tag]"name RU"		[value]"Безумная кошка"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Very expensive"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ever-Changing"
+	[tag]"name RU"		[value]"Бесконечные перемены"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"A Dusty Memory"
+	[tag]"name RU"		[value]"Пыльное воспоминание"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Return of the Rat"
+	[tag]"name RU"		[value]"Возвращение крысы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Finishing Touch"
+	[tag]"name RU"		[value]"Завершающий штрих"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Desperate Crusade"
+	[tag]"name RU"		[value]"Отчаянный поход"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"A Stone Perfected"
+	[tag]"name RU"		[value]"Совершенный камень"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Treasures of the Vaal"
+	[tag]"name RU"		[value]"Сокровища ваал"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Rabbit's Foot"
+	[tag]"name RU"		[value]"Кроличья лапка"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chasing Risk"
+	[tag]"name RU"		[value]"В погоне за риском"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Prince of Darkness"
+	[tag]"name RU"		[value]"Князь тьмы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Catch"
+	[tag]"name RU"		[value]"Улов"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eternal Bonds"
+	[tag]"name RU"		[value]"Вечные узы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Disdain"
+	[tag]"name RU"		[value]"Презрение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Scout"
+	[tag]"name RU"		[value]"Скаут"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Guardian's Challenge"
+	[tag]"name RU"		[value]"Испытание Хранителя"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Forgotten Treasure"
+	[tag]"name RU"		[value]"Забытое сокровище"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Fox in the Brambles"
+	[tag]"name RU"		[value]"Лис в терновнике"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Aspirant"
+	[tag]"name RU"		[value]"Претендент"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Judging Voices"
+	[tag]"name RU"		[value]"Осуждающие голоса"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bijoux"
+	[tag]"name RU"		[value]"Драгоценности"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Silence and Frost"
+	[tag]"name RU"		[value]"Молчание и хлад"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Misery in Darkness"
+	[tag]"name RU"		[value]"Страдания в темноте"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Tireless Extractor"
+	[tag]"name RU"		[value]"Безустанный экстрактор"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Justified Ambition"
+	[tag]"name RU"		[value]"Оправданные амбиции"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Parasitic Passengers"
+	[tag]"name RU"		[value]"Паразитирующие пассажиры"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Duality"
+	[tag]"name RU"		[value]"Двойственность"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The One That Got Away"
+	[tag]"name RU"		[value]"Неуловимая добыча"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Transformation"
+	[tag]"name RU"		[value]"Преображение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Magnum Opus"
+	[tag]"name RU"		[value]"Магнум опус"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Memories"
+	[tag]"name RU"		[value]"Несовершенные воспоминания"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Magma Crab"
+	[tag]"name RU"		[value]"Магмовый краб"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Man With Bear"
+	[tag]"name RU"		[value]"Человек с медведем"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Alivia's Grace"
+	[tag]"name RU"		[value]"Доброта Аливии"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Card"
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

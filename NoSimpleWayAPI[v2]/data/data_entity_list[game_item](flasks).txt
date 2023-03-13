@@ -1,0 +1,168 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Colossal Life Flask"
+	[tag]"name RU"		[value]"Великий флакон жизни"
+
+	[tag]"icon path"	[value]"Colossal_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Divine Life Flask"
+	[tag]"name RU"		[value]"Божественный флакон жизни"
+
+	[tag]"icon path"	[value]"Divine_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eternal Life Flask"
+	[tag]"name RU"		[value]"Вечный флакон жизни"
+
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Giant Life Flask"
+	[tag]"name RU"		[value]"Гигантский флакон жизни"
+
+	[tag]"icon path"	[value]"Giant_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grand Life Flask"
+	[tag]"name RU"		[value]"Огромный флакон жизни"
+
+	[tag]"icon path"	[value]"Grand_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Greater Life Flask"
+	[tag]"name RU"		[value]"Вместительынй флакон жизни"
+
+	[tag]"icon path"	[value]"Greater_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hallowed Life Flask"
+	[tag]"name RU"		[value]"Благодатный флакон жизни"
+
+	[tag]"icon path"	[value]"Hallowed_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Large Life Flask"
+	[tag]"name RU"		[value]"Большой флакон жизни"
+
+	[tag]"icon path"	[value]"Large_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Medium Life Flask"
+	[tag]"name RU"		[value]"Средний флакон жизни"
+
+	[tag]"icon path"	[value]"Medium_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sacred Life Flask"
+	[tag]"name RU"		[value]"Освященный флакон жизни"
+
+	[tag]"icon path"	[value]"Sacred_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sanctified Life Flask"
+	[tag]"name RU"		[value]"Святой флакон жизни"
+
+	[tag]"icon path"	[value]"Sanctified_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Small Life Flask"
+	[tag]"name RU"		[value]"Малый флакон жизни"
+
+	[tag]"icon path"	[value]"Small_Life_Flask_inventory_icon"
+	[tag]"base class"	[value]"Life Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"

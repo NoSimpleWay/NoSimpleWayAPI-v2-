@@ -1,0 +1,183 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blunt Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан промысловых стрел"
+
+	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Broadhead Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан охотничьих стрел"
+
+	[tag]"icon path"	[value]"Broadhead_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fire Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан огненных стрел"
+
+	[tag]"icon path"	[value]"Fire_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Penetrating Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан боевых стрел"
+
+	[tag]"icon path"	[value]"Penetrating_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Serrated Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан зазубренных стрел"
+
+	[tag]"icon path"	[value]"Serrated_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sharktooth Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан акульих стрел"
+
+	[tag]"icon path"	[value]"Sharktooth_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Spike-Point Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан точных стрел"
+
+	[tag]"icon path"	[value]"Spike-Point_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Two-Point Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан двуглавых стрел"
+
+	[tag]"icon path"	[value]"Two-Point_Arrow_Quiver_inventory_icon"
+	[tag]"base class"	[value]"Quivers"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Feathered Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан оперённых стрел"
+
+	[tag]"icon path"	[value]"Feather_quiver"
+	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blazing Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан пылающих стрел"
+
+	[tag]"icon path"	[value]"Blazing_quiver"
+	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vile Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан отравленных стрел"
+
+	[tag]"icon path"	[value]"Vile_quiver"
+	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Heavy Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан тяжёлых стрел"
+
+	[tag]"icon path"	[value]"Heavy_quiver"
+	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Primal Arrow Quiver"
+	[tag]"name RU"		[value]"Колчан первозданных стрел"
+
+	[tag]"icon path"	[value]"Primal_quiver"
+	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Artillery Quiver"
+	[tag]"name RU"		[value]"Артиллерийский колчан"
+
+	[tag]"icon path"	[value]"artillery_quiver"
+	[tag]"base class"	[value]"Quivers"
+	
+	[tag]"item tag"		[value]"Good for attack build"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"

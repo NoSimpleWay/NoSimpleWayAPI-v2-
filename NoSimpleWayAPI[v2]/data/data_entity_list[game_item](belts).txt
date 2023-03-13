@@ -1,0 +1,215 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chain Belt"
+	[tag]"name RU"		[value]"Цепочка"
+
+	[tag]"icon path"	[value]"Chain_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cloth Belt"
+	[tag]"name RU"		[value]"Матерчатый пояс"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crystal Belt"
+	[tag]"name RU"		[value]"Кристальный пояс"
+
+	[tag]"icon path"	[value]"Crystal_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Heavy Belt"
+	[tag]"name RU"		[value]"Широкий ремень"
+
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Leather Belt"
+	[tag]"name RU"		[value]"Ремень"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Good base for unique"	
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mechalarm Belt"
+	[tag]"name RU"		[value]"Меха-сигнальный пояс"
+
+	[tag]"icon path"	[value]"SuperBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Heist base"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Micro-Distillery Belt"
+	[tag]"name RU"		[value]"Микро-перегонный пояс"
+
+	[tag]"icon path"	[value]"SuperBelt"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Heist base"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rustic Sash"
+	[tag]"name RU"		[value]"Кушак"
+
+	[tag]"icon path"	[value]"Rustic_Sash_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Good for attack build"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Studded Belt"
+	[tag]"name RU"		[value]"Клепаный ремень"
+
+	[tag]"icon path"	[value]"Studded_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Stygian Vise"
+	[tag]"name RU"		[value]"Тёмные тиски"
+
+	[tag]"icon path"	[value]"Stygian_Vise_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"League: abyss"
+	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Boss loot"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vanguard Belt"
+	[tag]"name RU"		[value]"Ремень гастата"
+
+	[tag]"icon path"	[value]"Vanguard_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Rare base"
+	
+	[tag]"worth"		[value]"Common"

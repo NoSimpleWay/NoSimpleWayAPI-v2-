@@ -2,13 +2,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Clear Oil"
-	[tag]"name RU"		[value]"РџСЂРѕР·СЂР°С‡РЅРѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Прозрачное масло"
 
 	[tag]"icon path"	[value]"Clear_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -19,13 +21,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Sepia Oil"
-	[tag]"name RU"		[value]"РљРѕСЂРёС‡РЅРµРІРѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Коричневое масло"
 
 	[tag]"icon path"	[value]"Sepia_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"10"
 
@@ -38,7 +42,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Amber Oil"
-	[tag]"name RU"		[value]"РЇРЅС‚Р°СЂРЅРѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Янтарное масло"
 
 	[tag]"icon path"	[value]"Amber_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -59,13 +63,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Verdant Oil"
-	[tag]"name RU"		[value]"РР·СѓРјСЂСѓРґРЅРѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Изумрудное масло"
 
 	[tag]"icon path"	[value]"Verdant_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"27"
 
@@ -76,13 +82,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Teal Oil"
-	[tag]"name RU"		[value]"Р‘РёСЂСЋР·РѕРІРѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Бирюзовое масло"
 
 	[tag]"icon path"	[value]"Teal_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"36"
 
@@ -95,13 +103,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Azure Oil"
-	[tag]"name RU"		[value]"Р›Р°Р·СѓСЂРЅРѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Лазурное масло"
 
 	[tag]"icon path"	[value]"Azure_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"44"
 
@@ -112,13 +122,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Indigo Oil"
-	[tag]"name RU"		[value]"РњР°СЃР»Рѕ РёРЅРґРёРіРѕ"
+	[tag]"name RU"		[value]"Масло индиго"
 
 	[tag]"icon path"	[value]"Indigo-Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"48"
 
@@ -129,13 +141,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Violet Oil"
-	[tag]"name RU"		[value]"Р¤РёРѕР»РµС‚РѕРІРѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Фиолетовое масло"
 
 	[tag]"icon path"	[value]"Violet_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"52"
 
@@ -146,13 +160,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Crimson Oil"
-	[tag]"name RU"		[value]"РђР»РѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Алое масло"
 
 	[tag]"icon path"	[value]"Crimson_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"60"
 
@@ -163,13 +179,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Black Oil"
-	[tag]"name RU"		[value]"Р§С‘СЂРЅРѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Чёрное масло"
 
 	[tag]"icon path"	[value]"Black_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"68"
 
@@ -180,13 +198,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Opalescent Oil"
-	[tag]"name RU"		[value]"РџРµСЂР»Р°РјСѓС‚СЂРѕРІРѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Перламутровое масло"
 
 	[tag]"icon path"	[value]"Opalescent_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"73"
 
@@ -197,13 +217,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Silver Oil"
-	[tag]"name RU"		[value]"РЎРµСЂРµР±СЂСЏРЅРѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Серебряное масло"
 
 	[tag]"icon path"	[value]"Silver_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -212,13 +234,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Golden Oil"
-	[tag]"name RU"		[value]"Р—РѕР»РѕС‚РѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Золотое масло"
 
 	[tag]"icon path"	[value]"Golden_Oil"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"80"
 
@@ -228,12 +252,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Oil Extractor"
-	[tag]"name RU"		[value]"Р­РєСЃС‚СЂР°РєС‚РѕСЂ РјР°СЃРµР»"
+	[tag]"name RU"		[value]"Экстрактор масел"
 
 	[tag]"icon path"	[value]"Oil_extractor"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -244,11 +270,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Reflective Oil"
-	[tag]"name RU"		[value]"Р—РµСЂРєР°Р»СЊРЅРѕРµ РјР°СЃР»Рѕ"
+	[tag]"name RU"		[value]"Зеркальное масло"
 
 	[tag]"icon path"	[value]"MirrorOil"
 	
 	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"

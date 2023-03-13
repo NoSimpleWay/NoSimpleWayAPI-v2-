@@ -1,0 +1,2008 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Alder Spiked Shield"
+	[tag]"name RU"		[value]"Ольховый коючий щит"
+
+	[tag]"icon path"	[value]"Redwood_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Alloyed Spiked Shield"
+	[tag]"name RU"		[value]"Бронзовый колючий щит"
+
+	[tag]"icon path"	[value]"Ezomyte_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ancient Spirit Shield"
+	[tag]"name RU"		[value]"Древний щит духа"
+
+	[tag]"icon path"	[value]"Vaal_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Angelic Kite Shield"
+	[tag]"name RU"		[value]"Каплевидный щит ангела"
+
+	[tag]"icon path"	[value]"Archon_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Archon Kite Shield"
+	[tag]"name RU"		[value]"Каплевидный щит архонта"
+
+	[tag]"icon path"	[value]"Archon_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Baroque Round Shield"
+	[tag]"name RU"		[value]"Вычурный круглый щит"
+
+	[tag]"icon path"	[value]"Elegant_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Battle Buckler"
+	[tag]"name RU"		[value]"Боевой баклер"
+
+	[tag]"icon path"	[value]"War_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bone Spirit Shield"
+	[tag]"name RU"		[value]"Щит духа из костей"
+
+	[tag]"icon path"	[value]"Ivory_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Branded Kite Shield"
+	[tag]"name RU"		[value]"Каплевидный щит с символом"
+
+	[tag]"icon path"	[value]"Linden_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Brass Spirit Shield"
+	[tag]"name RU"		[value]"Бронзовый щит духа"
+
+	[tag]"icon path"	[value]"Thorium_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bronze Tower Shield"
+	[tag]"name RU"		[value]"Бронзовый ростовой щит"
+
+	[tag]"icon path"	[value]"Copper_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Buckskin Tower Shield"
+	[tag]"name RU"		[value]"Кожаный ростовой щит"
+
+	[tag]"icon path"	[value]"Buckskin_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Burnished Spiked Shield"
+	[tag]"name RU"		[value]"Вороненый колючий щит"
+
+	[tag]"icon path"	[value]"Polished_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cardinal Round Shield"
+	[tag]"name RU"		[value]"Червленный круглый щит"
+
+	[tag]"icon path"	[value]"Scarlet_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cedar Tower Shield"
+	[tag]"name RU"		[value]"Кедровый ростовый щит"
+
+	[tag]"icon path"	[value]"Cedar_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ceremonial Kite Shield"
+	[tag]"name RU"		[value]"Церемониальный каплевидный щит"
+
+	[tag]"icon path"	[value]"Archon_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Champion Kite Shield"
+	[tag]"name RU"		[value]"Каплевидный щит триумфатора"
+
+	[tag]"icon path"	[value]"Steel_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+	[tag]"item tag"		[value]"Good base for unique"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chiming Spirit Shield"
+	[tag]"name RU"		[value]"Мелодичный щит духа"
+
+	[tag]"icon path"	[value]"Chiming_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cold-attuned Buckler"
+	[tag]"name RU"		[value]"Ледяной баклер"
+
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Colossal Tower Shield"
+	[tag]"name RU"		[value]"Массивный ростовой щит"
+
+	[tag]"icon path"	[value]"Colossal_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Compound Spiked Shield"
+	[tag]"name RU"		[value]"Латунный колючий щит"
+
+	[tag]"icon path"	[value]"Ezomyte_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Copper Tower Shield"
+	[tag]"name RU"		[value]"Медный ростовый щит"
+
+	[tag]"icon path"	[value]"Copper_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Corroded Tower Shield"
+	[tag]"name RU"		[value]"Ржавый ростовый щит"
+
+	[tag]"icon path"	[value]"Corroded_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Corrugated Buckler"
+	[tag]"name RU"		[value]"Рифленый баклер"
+
+	[tag]"icon path"	[value]"Vaal_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crested Tower Shield"
+	[tag]"name RU"		[value]"Ростовой щит с гербом"
+
+	[tag]"icon path"	[value]"Crested_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crimson Round Shield"
+	[tag]"name RU"		[value]"Багряный круглый щит"
+
+	[tag]"icon path"	[value]"Scarlet_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crusader Buckler"
+	[tag]"name RU"		[value]"Баклер подвижника"
+
+	[tag]"icon path"	[value]"War_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Driftwood Spiked Shield"
+	[tag]"name RU"		[value]"Колючий щит из плавника"
+
+	[tag]"icon path"	[value]"Redwood_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ebony Tower Shield"
+	[tag]"name RU"		[value]"Эбеновый ростовой щит"
+
+	[tag]"icon path"	[value]"Cedar_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Elegant Round Shield"
+	[tag]"name RU"		[value]"Элегантный круглый щит"
+
+	[tag]"icon path"	[value]"Elegant_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Enameled Buckler"
+	[tag]"name RU"		[value]"Стальной баклер"
+
+	[tag]"icon path"	[value]"Painted_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Endothermic Buckler"
+	[tag]"name RU"		[value]"Эндотермический баклер"
+
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Etched Kite Shield"
+	[tag]"name RU"		[value]"Каплевидный щит с рисунком"
+
+	[tag]"icon path"	[value]"Linden_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Exhausting Spirit Shield"
+	[tag]"name RU"		[value]"Истощающий щит духа"
+
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Exothermic Tower Shield"
+	[tag]"name RU"		[value]"Экзотермический ростовой щит"
+
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ezomyte Spiked Shield"
+	[tag]"name RU"		[value]"Колючий щит эзомита"
+
+	[tag]"icon path"	[value]"Ezomyte_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ezomyte Tower Shield"
+	[tag]"name RU"		[value]"Ростовой щит эзомита"
+
+	[tag]"icon path"	[value]"Copper_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Breach unique item"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fir Round Shield"
+	[tag]"name RU"		[value]"Пихтовый круглый щит"
+
+	[tag]"icon path"	[value]"Fir_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fossilised Spirit Shield"
+	[tag]"name RU"		[value]"Щит духа из окаменелостей"
+
+	[tag]"icon path"	[value]"Ivory_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Buckler"
+	[tag]"name RU"		[value]"Позолоченый баклер"
+
+	[tag]"icon path"	[value]"Golden_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Girded Tower Shield"
+	[tag]"name RU"		[value]"Ростовой щит с умбоном"
+
+	[tag]"icon path"	[value]"Colossal_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Goathide Buckler"
+	[tag]"name RU"		[value]"Кожаный баклер"
+
+	[tag]"icon path"	[value]"Goathide_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Golden Buckler"
+	[tag]"name RU"		[value]"Золотой баклер"
+
+	[tag]"icon path"	[value]"Golden_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hammered Buckler"
+	[tag]"name RU"		[value]"Кованый баклер"
+
+	[tag]"icon path"	[value]"Vaal_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Harmonic Spirit Shield"
+	[tag]"name RU"		[value]"Поющий щит духа"
+
+	[tag]"icon path"	[value]"Chiming_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Heat-attuned Tower Shield"
+	[tag]"name RU"		[value]"Пламенный ростовой щит"
+
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperial Buckler"
+	[tag]"name RU"		[value]"Императорский баклер"
+
+	[tag]"icon path"	[value]"Golden_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ironwood Buckler"
+	[tag]"name RU"		[value]"Самшитовый баклер"
+
+	[tag]"icon path"	[value]"Pine_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ivory Spirit Shield"
+	[tag]"name RU"		[value]"Щит духа из старых костей"
+
+	[tag]"icon path"	[value]"Ivory_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Jingling Spirit Shield"
+	[tag]"name RU"		[value]"Звенящий щит духа"
+
+	[tag]"icon path"	[value]"Chiming_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lacewood Spirit Shield"
+	[tag]"name RU"		[value]"Платановый щит духа"
+
+	[tag]"icon path"	[value]"Yew_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lacquered Buckler"
+	[tag]"name RU"		[value]"Многослойный баклер"
+
+	[tag]"icon path"	[value]"Painted_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Laminated Kite Shield"
+	[tag]"name RU"		[value]"Проклееный каплевидный щит"
+
+	[tag]"icon path"	[value]"Mosaic_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Layered Kite Shield"
+	[tag]"name RU"		[value]"Многослойный каплевидный щит"
+
+	[tag]"icon path"	[value]"Mosaic_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Linden Kite Shield"
+	[tag]"name RU"		[value]"Липовый каплевидный щит"
+
+	[tag]"icon path"	[value]"Linden_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Magmatic Tower Shield"
+	[tag]"name RU"		[value]"Магматический ростовой щит"
+
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mahogany Tower Shield"
+	[tag]"name RU"		[value]"Палисандровый ростовой щит"
+
+	[tag]"icon path"	[value]"Cedar_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maple Round Shield"
+	[tag]"name RU"		[value]"Кленовый круглый щит"
+
+	[tag]"icon path"	[value]"Fir_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mirrored Spiked Shield"
+	[tag]"name RU"		[value]"Зеркальный колючий щит"
+
+	[tag]"icon path"	[value]"Polished_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mosaic Kite Shield"
+	[tag]"name RU"		[value]"Мозаичный каплевидный щит"
+
+	[tag]"icon path"	[value]"Mosaic_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Oak Buckler"
+	[tag]"name RU"		[value]"Дубовый баклер"
+
+	[tag]"icon path"	[value]"Pine_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ornate Spiked Shield"
+	[tag]"name RU"		[value]"Украшенный колючий щит"
+
+	[tag]"icon path"	[value]"Ornate_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Painted Buckler"
+	[tag]"name RU"		[value]"Железный баклер"
+
+	[tag]"icon path"	[value]"Painted_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Painted Tower Shield"
+	[tag]"name RU"		[value]"Расписной ростовый щит"
+
+	[tag]"icon path"	[value]"Crested_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Pine Buckler"
+	[tag]"name RU"		[value]"Сосновый баклер"
+
+	[tag]"icon path"	[value]"Pine_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Pinnacle Tower Shield"
+	[tag]"name RU"		[value]"Лучший ростовой щит"
+
+	[tag]"icon path"	[value]"Crested_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Plank Kite Shield"
+	[tag]"name RU"		[value]"Дощатый каплевидный щит"
+
+	[tag]"icon path"	[value]"Plank_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polar Buckler"
+	[tag]"name RU"		[value]"Полярный баклер"
+
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polished Spiked Shield"
+	[tag]"name RU"		[value]"Полированный колючий щит"
+
+	[tag]"icon path"	[value]"Polished_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rawhide Tower Shield"
+	[tag]"name RU"		[value]"Сыромятый ростовый щит"
+
+	[tag]"icon path"	[value]"Buckskin_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Redwood Spiked Shield"
+	[tag]"name RU"		[value]"Сандаловый колючий щит"
+
+	[tag]"icon path"	[value]"Redwood_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reinforced Kite Shield"
+	[tag]"name RU"		[value]"Укрепленный каплевидный щит"
+
+	[tag]"icon path"	[value]"Steel_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reinforced Tower Shield"
+	[tag]"name RU"		[value]"Укрепленный ростовый щит"
+
+	[tag]"icon path"	[value]"Colossal_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rotted Round Shield"
+	[tag]"name RU"		[value]"Прогнивший круглый щит"
+
+	[tag]"icon path"	[value]"Rotted_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Scarlet Round Shield"
+	[tag]"name RU"		[value]"Алый круглый щит"
+
+	[tag]"icon path"	[value]"Scarlet_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Shagreen Tower Shield"
+	[tag]"name RU"		[value]"Ростовой щит из акульей кожи"
+
+	[tag]"icon path"	[value]"Buckskin_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sovereign Spiked Shield"
+	[tag]"name RU"		[value]"Царский колючий щит"
+
+	[tag]"icon path"	[value]"Ornate_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Spiked Bundle"
+	[tag]"name RU"		[value]"Колючая повязка"
+
+	[tag]"icon path"	[value]"Spiked_Bundle_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Spiked Round Shield"
+	[tag]"name RU"		[value]"Усиленный круглый щит"
+
+	[tag]"icon path"	[value]"Spiny_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Spiny Round Shield"
+	[tag]"name RU"		[value]"Укрепленный круглый щит"
+
+	[tag]"icon path"	[value]"Spiny_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splendid Round Shield"
+	[tag]"name RU"		[value]"Украшенный круглый щит"
+
+	[tag]"icon path"	[value]"Fancy_Foil_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splintered Tower Shield"
+	[tag]"name RU"		[value]"Разбитый ростовый щит"
+
+	[tag]"icon path"	[value]"Splintered_Tower_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Steel Kite Shield"
+	[tag]"name RU"		[value]"Стальной каплевидный щит"
+
+	[tag]"icon path"	[value]"Steel_Kite_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Studded Round Shield"
+	[tag]"name RU"		[value]"Клепаный круглый щит"
+
+	[tag]"icon path"	[value]"Spiny_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Subsuming Spirit Shield"
+	[tag]"name RU"		[value]"Поглощающий щит духа"
+
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Supreme Spiked Shield"
+	[tag]"name RU"		[value]"Императорский колючий щит"
+
+	[tag]"icon path"	[value]"Ornate_Spiked_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tarnished Spirit Shield"
+	[tag]"name RU"		[value]"Потертый щит духа"
+
+	[tag]"icon path"	[value]"Vaal_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Teak Round Shield"
+	[tag]"name RU"		[value]"Тиковый круглый щит"
+
+	[tag]"icon path"	[value]"Fir_Round_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thorium Spirit Shield"
+	[tag]"name RU"		[value]"Орихалковый щит духа"
+
+	[tag]"icon path"	[value]"Thorium_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Breach unique item"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Titanium Spirit Shield"
+	[tag]"name RU"		[value]"Адамантиевый щит духа"
+
+	[tag]"icon path"	[value]"Thorium_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Transfer-attuned Spirit Shield"
+	[tag]"name RU"		[value]"Переливающий щит духа"
+
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Twig Spirit Shield"
+	[tag]"name RU"		[value]"Сучковатый щит духа"
+
+	[tag]"icon path"	[value]"Twig_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vaal Buckler"
+	[tag]"name RU"		[value]"Баклер ваал"
+
+	[tag]"icon path"	[value]"Vaal_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vaal Spirit Shield"
+	[tag]"name RU"		[value]"Щит духа ваал"
+
+	[tag]"icon path"	[value]"Vaal_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Walnut Spirit Shield"
+	[tag]"name RU"		[value]"Ореховый щит духа"
+
+	[tag]"icon path"	[value]"Yew_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"War Buckler"
+	[tag]"name RU"		[value]"Воинский баклер"
+
+	[tag]"icon path"	[value]"War_Buckler_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Yew Spirit Shield"
+	[tag]"name RU"		[value]"Тисовый щит духа"
+
+	[tag]"icon path"	[value]"Yew_Spirit_Shield_inventory_icon"
+	[tag]"base class"	[value]"Shields"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Offhand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"

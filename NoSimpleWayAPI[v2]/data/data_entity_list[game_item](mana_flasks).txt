@@ -1,0 +1,145 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Colossal Mana Flask"
+	[tag]"name RU"		[value]"Великий флакон маны"
+
+	[tag]"icon path"	[value]"Colossal_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Divine Mana Flask"
+	[tag]"name RU"		[value]"Божественный флакон маны"
+
+	[tag]"icon path"	[value]"Divine_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eternal Mana Flask"
+	[tag]"name RU"		[value]"Вечный флакон маны"
+
+	[tag]"icon path"	[value]"Eternal_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Giant Mana Flask"
+	[tag]"name RU"		[value]"Гигантский флакон маны"
+
+	[tag]"icon path"	[value]"Giant_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grand Mana Flask"
+	[tag]"name RU"		[value]"Огромный флакон маны"
+
+	[tag]"icon path"	[value]"Grand_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Greater Mana Flask"
+	[tag]"name RU"		[value]"Вместительынй флакон маны"
+
+	[tag]"icon path"	[value]"Greater_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hallowed Mana Flask"
+	[tag]"name RU"		[value]"Благодатный флакон маны"
+
+	[tag]"icon path"	[value]"Hallowed_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Large Mana Flask"
+	[tag]"name RU"		[value]"Большой флакон маны"
+
+	[tag]"icon path"	[value]"Large_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Medium Mana Flask"
+	[tag]"name RU"		[value]"Средний флакон маны"
+
+	[tag]"icon path"	[value]"Medium_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sacred Mana Flask"
+	[tag]"name RU"		[value]"Освященный флакон маны"
+
+	[tag]"icon path"	[value]"Sacred_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sanctified Mana Flask"
+	[tag]"name RU"		[value]"Святой флакон маны"
+
+	[tag]"icon path"	[value]"Sanctified_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Small Mana Flask"
+	[tag]"name RU"		[value]"Малый флакон маны"
+
+	[tag]"icon path"	[value]"Small_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"Mana Flasks"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

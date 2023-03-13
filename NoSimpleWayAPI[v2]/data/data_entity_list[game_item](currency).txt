@@ -1,0 +1,151 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Apprentice Cartographer's Seal"
+	[tag]"name RU"		[value]"Печать картоходца-ученика"
+
+	[tag]"icon path"	[value]"Apprentice_Cartographer's_Seal_inventory_icon"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Apprentice Cartographer's Sextant"
+	[tag]"name RU"		[value]"Секстант картоходца-ученика"
+
+	[tag]"icon path"	[value]"Apprentice_Cartographer's_Sextant_inventory_icon"
+	[tag]"base class"	[value]"Currency"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Sextant"
+	[tag]"name RU"		[value]"Пробужденный секстант"
+
+	[tag]"icon path"	[value]"AwakenedSextant"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Elevated Sextant"
+	[tag]"name RU"		[value]"Возвышенный секстант"
+
+	[tag]"icon path"	[value]"Elevated_Sextant_inventory_icon"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Boss loot"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Journeyman Cartographer's Seal"
+	[tag]"name RU"		[value]"Печать картоходца-подмастерья"
+
+	[tag]"icon path"	[value]"Journeyman_Cartographer's_Seal_inventory_icon"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Journeyman Cartographer's Sextant"
+	[tag]"name RU"		[value]"Секстант картоходца-подмастерья"
+
+	[tag]"icon path"	[value]"Journeyman_Cartographer's_Sextant_inventory_icon"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Master Cartographer's Seal"
+	[tag]"name RU"		[value]"Печать мастера-картоходца"
+
+	[tag]"icon path"	[value]"Master_Cartographer's_Seal_inventory_icon"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Master Cartographer's Sextant"
+	[tag]"name RU"		[value]"Секстант мастера-картоходца"
+
+	[tag]"icon path"	[value]"Master_Cartographer's_Sextant_inventory_icon"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unshaping Orb"
+	[tag]"name RU"		[value]"Сфера разрушения"
+
+	[tag]"icon path"	[value]"Unshaping_Orb_inventory_icon"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+

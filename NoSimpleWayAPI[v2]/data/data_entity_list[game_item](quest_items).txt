@@ -1,0 +1,507 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: A Matter of Honour"
+	[tag]"name RU"		[value]"Контракт: Дело чести"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: A Mundane Sample"
+	[tag]"name RU"		[value]"Контракт: Рядовой образец"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Antique Urn"
+	[tag]"name RU"		[value]"Контракт: Антикварная урна"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Credit Where Credit's Due"
+	[tag]"name RU"		[value]"Контракт: По заслугам"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Disengagement"
+	[tag]"name RU"		[value]"Контракт: Прощание"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Enoch's Remains"
+	[tag]"name RU"		[value]"Контракт: Останки Инока"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Enoch's Whereabouts"
+	[tag]"name RU"		[value]"Контракт: Где найти Инока"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Finding Opal"
+	[tag]"name RU"		[value]"Контракт: Поиск Опал"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Findings for Fidium"
+	[tag]"name RU"		[value]"Контракт: Находки для Фидия"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Flying False Colours"
+	[tag]"name RU"		[value]"Контракт: Под чужим флагом"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Follow the Paper Trail"
+	[tag]"name RU"		[value]"Контракт: По бумажному следу"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Grocery List"
+	[tag]"name RU"		[value]"Контракт: Список покупок"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Hyrri's Gift"
+	[tag]"name RU"		[value]"Контракт: Подарок Хайрри"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Isla's Designs"
+	[tag]"name RU"		[value]"Контракт: Чертежи Айлы"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Isla's Prototypes"
+	[tag]"name RU"		[value]"Контракт: Прототипы Айлы"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Karst's Revenge"
+	[tag]"name RU"		[value]"Контракт: Месть Карста"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Opal's Jewels"
+	[tag]"name RU"		[value]"Контракт: Самоцветы Опал"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Rational Tools"
+	[tag]"name RU"		[value]"Контракт: Рациональный подход"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Slaver's Revenge"
+	[tag]"name RU"		[value]"Контракт: Отместка поработителя"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Stolen Lockpicks"
+	[tag]"name RU"		[value]"Контракт: Украденные отмычки"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: The Admiral's Records"
+	[tag]"name RU"		[value]"Контракт: Записи адмирала"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: The Book of Jamanra"
+	[tag]"name RU"		[value]"Контракт: Книга Яманры"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: The Finest Costumes"
+	[tag]"name RU"		[value]"Контракт: Лучшие костюмы"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: The Nameless Play"
+	[tag]"name RU"		[value]"Контракт: Пьеса без названия"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: The Negotiation"
+	[tag]"name RU"		[value]"Контракт: Переговоры"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: The Rescue"
+	[tag]"name RU"		[value]"Контракт: Вызволение"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: The Vinderi Bomb"
+	[tag]"name RU"		[value]"Контракт: Бомба Виндери"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: The Wedding Dress"
+	[tag]"name RU"		[value]"Контракт: Свадебное платье"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cobalt Watchstone"
+	[tag]"name RU"		[value]"Кобальтовый Камень Хранителя"
+
+	[tag]"icon path"	[value]"CobaltWatchstone"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crimson Watchstone"
+	[tag]"name RU"		[value]"Алый Камень Хранителя"
+
+	[tag]"icon path"	[value]"CrimsonWatchstone"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Elder's Orb"
+	[tag]"name RU"		[value]"Сфера Древнего"
+
+	[tag]"icon path"	[value]"Elder's_Orb_inventory_icon"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Golden Watchstone"
+	[tag]"name RU"		[value]"Золотой Камень Хранителя"
+
+	[tag]"icon path"	[value]"GoldenWatchstone"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Shaper's Orb"
+	[tag]"name RU"		[value]"Сфера Создателя"
+
+	[tag]"icon path"	[value]"Shaper's_Orb_inventory_icon"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Viridian Watchstone"
+	[tag]"name RU"		[value]"Бирюзовый Камень Хранителя"
+
+	[tag]"icon path"	[value]"ViridianWatchstone"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Atlas Book of Skill"
+	[tag]"name RU"		[value]"Книга умений Атласа"
+
+	[tag]"icon path"	[value]"AtlasSkillBook"
+	[tag]"base class"	[value]"Quest Items"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flesh Compass"
+	[tag]"name RU"		[value]"Живой компас"
+
+	[tag]"icon path"	[value]"Living_compass"
+	[tag]"base class"	[value]"Quest Items"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Luminous Astrolabe"
+	[tag]"name RU"		[value]"Лучистая астролябия"
+
+	[tag]"icon path"	[value]"Luminous_astrolabe"
+	[tag]"base class"	[value]"Quest Items"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Writhing Invitation"
+	[tag]"name RU"		[value]"Извивающееся приглашение"
+
+	[tag]"icon path"	[value]"Writhing_Invitation_quest"
+	[tag]"base class"	[value]"Quest Items"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Screaming Invitation"
+	[tag]"name RU"		[value]"Кричащее приглашение"
+
+	[tag]"icon path"	[value]"Screaming_Invitation"
+	[tag]"base class"	[value]"Quest Items"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Polaric Invitation"
+	[tag]"name RU"		[value]"Полярное приглашение"
+
+	[tag]"icon path"	[value]"Polaric_Invitation_quest"
+	[tag]"base class"	[value]"Quest Items"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Incandescent Invitation"
+	[tag]"name RU"		[value]"Сияющее приглашение"
+
+	[tag]"icon path"	[value]"Incandescent_Invitation_quest"
+	[tag]"base class"	[value]"Quest Items"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

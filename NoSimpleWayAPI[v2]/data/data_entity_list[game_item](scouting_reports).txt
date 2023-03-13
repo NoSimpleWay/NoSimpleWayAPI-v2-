@@ -1,0 +1,144 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Singular Scouting Report"
+	[tag]"name RU"		[value]"Необычный доклад разведки"
+
+	[tag]"icon path"	[value]"ScoutingReport"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Otherworldly Scouting Report"
+	[tag]"name RU"		[value]"Потусторонний доклад разведки"
+
+	[tag]"icon path"	[value]"ScoutingReport"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Comprehensive Scouting Report"
+	[tag]"name RU"		[value]"Подробный доклад разведки"
+
+	[tag]"icon path"	[value]"ScoutingReport"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vaal Scouting Report"
+	[tag]"name RU"		[value]"Осквернённый доклад разведки"
+
+	[tag]"icon path"	[value]"ScoutingReport"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Delirious Scouting Report"
+	[tag]"name RU"		[value]"Бредовый доклад разведки"
+
+	[tag]"icon path"	[value]"ScoutingReport"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Operative's Scouting Report"
+	[tag]"name RU"		[value]"Оперативный доклад разведки"
+
+	[tag]"icon path"	[value]"ScoutingReport"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blighted Scouting Report"
+	[tag]"name RU"		[value]"Заражённый доклад разведки"
+
+	[tag]"icon path"	[value]"ScoutingReport"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Influenced Scouting Report"
+	[tag]"name RU"		[value]"Влиятельный доклад разведки"
+
+	[tag]"icon path"	[value]"ScoutingReport"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"81"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Explorer's Scouting Report"
+	[tag]"name RU"		[value]"Исследовательский доклад разведки"
+
+	[tag]"icon path"	[value]"ScoutingReport"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"69"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

@@ -1,0 +1,195 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Battery Staff"
+	[tag]"name RU"		[value]"Гальванический посох"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crescent Staff"
+	[tag]"name RU"		[value]"Посох с полумесяцем"
+
+	[tag]"icon path"	[value]"Moon_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eclipse Staff"
+	[tag]"name RU"		[value]"Посох затмения"
+
+	[tag]"icon path"	[value]"Moon_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gnarled Branch"
+	[tag]"name RU"		[value]"Сучковатая ветка"
+
+	[tag]"icon path"	[value]"Gnarled_Branch_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Highborn Staff"
+	[tag]"name RU"		[value]"Посох патриция"
+
+	[tag]"icon path"	[value]"Royal_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperial Staff"
+	[tag]"name RU"		[value]"Императорский посох"
+
+	[tag]"icon path"	[value]"Royal_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lathi"
+	[tag]"name RU"		[value]"Бамбуковый посох"
+
+	[tag]"icon path"	[value]"Long_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Long Staff"
+	[tag]"name RU"		[value]"Длинный посох"
+
+	[tag]"icon path"	[value]"Long_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Moon Staff"
+	[tag]"name RU"		[value]"Лунный посох"
+
+	[tag]"icon path"	[value]"Moon_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Primitive Staff"
+	[tag]"name RU"		[value]"Простейший посох"
+
+	[tag]"icon path"	[value]"Woodful_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Primordial Staff"
+	[tag]"name RU"		[value]"Древний посох"
+
+	[tag]"icon path"	[value]"Woodful_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Quarterstaff"
+	[tag]"name RU"		[value]"Окованный посох"
+
+	[tag]"icon path"	[value]"Long_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reciprocation Staff"
+	[tag]"name RU"		[value]"Аккумулирующий посох"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Royal Staff"
+	[tag]"name RU"		[value]"Царский посох"
+
+	[tag]"icon path"	[value]"Royal_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Transformer Staff"
+	[tag]"name RU"		[value]"Трансформирующий посох"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Woodful Staff"
+	[tag]"name RU"		[value]"Старинный посох"
+
+	[tag]"icon path"	[value]"Woodful_Staff_inventory_icon"
+	[tag]"base class"	[value]"Staves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"

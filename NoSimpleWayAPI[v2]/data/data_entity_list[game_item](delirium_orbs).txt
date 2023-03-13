@@ -1,0 +1,406 @@
+
+	
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Diviner's Delirium Orb"
+	[tag]"name RU"		[value]"Предсказательная сфера Делириума"
+
+	[tag]"icon path"	[value]"DivinerDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fine Delirium Orb"
+	[tag]"name RU"		[value]"Прекрасная сфера Делириума"
+
+	[tag]"icon path"	[value]"FineDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Foreboding Delirium Orb"
+	[tag]"name RU"		[value]"Таинственная сфера Делириума"
+
+	[tag]"icon path"	[value]"ForebodingDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fossilised Delirium Orb"
+	[tag]"name RU"		[value]"Ископаемая сфера Делириума"
+
+	[tag]"icon path"	[value]"FossilisedDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragmented Delirium Orb"
+	[tag]"name RU"		[value]"Раздробленная сфера Делириума"
+
+	[tag]"icon path"	[value]"FragmentedDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperial Delirium Orb"
+	[tag]"name RU"		[value]"Имперская сфера Делириума"
+
+	[tag]"icon path"	[value]"DeliriumOrbUnknown"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Jeweller's Delirium Orb"
+	[tag]"name RU"		[value]"Ювелирная сфера Делириума"
+
+	[tag]"icon path"	[value]"JewellerDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Obscured Delirium Orb"
+	[tag]"name RU"		[value]"Затемненная Сфера Делириума"
+
+	[tag]"icon path"	[value]"ObscuredDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Primal Delirium Orb"
+	[tag]"name RU"		[value]"Первобытная сфера Делириума"
+
+	[tag]"icon path"	[value]"PrimalDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Singular Delirium Orb"
+	[tag]"name RU"		[value]"Необычная сфера Делириума"
+
+	[tag]"icon path"	[value]"SingularDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Skittering Delirium Orb"
+	[tag]"name RU"		[value]"Дергающаяся сфера Делириума"
+
+	[tag]"icon path"	[value]"SkitteringDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thaumaturge's Delirium Orb"
+	[tag]"name RU"		[value]"Волшебная сфера Делириума"
+
+	[tag]"icon path"	[value]"ThaumaturgesDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Delirium Orb"
+	[tag]"name RU"		[value]"Вневременная сфера Делириума"
+
+	[tag]"icon path"	[value]"TimelessDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Whispering Delirium Orb"
+	[tag]"name RU"		[value]"Шепчущая сфера Делириума"
+
+	[tag]"icon path"	[value]"WhisperingDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Kalguuran Delirium Orb"
+	[tag]"name RU"		[value]"Калгууранская сфера Делириума"
+
+	[tag]"icon path"	[value]"KalguuranDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Abyssal Delirium Orb"
+	[tag]"name RU"		[value]"Бездонная сфера Делириума"
+
+	[tag]"icon path"	[value]"AbyssDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Amorphous Delirium Orb"
+	[tag]"name RU"		[value]"Аморфная сфера Делириума"
+
+	[tag]"icon path"	[value]"DeliriumOrbUnknown"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Armoursmith's Delirium Orb"
+	[tag]"name RU"		[value]"Латная сфера Делириума"
+
+	[tag]"icon path"	[value]"ArmoursmithDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blacksmith's Delirium Orb"
+	[tag]"name RU"		[value]"Кузнечная сфера Делириума"
+
+	[tag]"icon path"	[value]"BlacksmithsDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+		
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blighted Delirium Orb"
+	[tag]"name RU"		[value]"Зараженная сфера Делириума"
+
+	[tag]"icon path"	[value]"BlightDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cartographer's Delirium Orb"
+	[tag]"name RU"		[value]"Картографическая сфера Делириума"
+
+	[tag]"icon path"	[value]"CartographersDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Decadent Delirium Orb"
+	[tag]"name RU"		[value]"Гравированная сфера Делириума"
+
+	[tag]"icon path"	[value]"DecadentDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

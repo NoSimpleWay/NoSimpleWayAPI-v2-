@@ -1,0 +1,374 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chromium Glennach Cairns Watchstone"
+	[tag]"name RU"		[value]"Хромовый Камень Хранителя Пирамид Гленнаха"
+
+	[tag]"icon path"	[value]"chromium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chromium Haewark Hamlet Watchstone"
+	[tag]"name RU"		[value]"Хромовый Камень Хранителя Деревни Хейварк"
+
+	[tag]"icon path"	[value]"chromium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chromium Lex Ejoris Watchstone"
+	[tag]"name RU"		[value]"Хромовый Камень Хранителя Лекс Эйорис"
+
+	[tag]"icon path"	[value]"chromium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chromium Lex Proxima Watchstone"
+	[tag]"name RU"		[value]"Хромовый Камень Хранителя Лекс Проксимы"
+
+	[tag]"icon path"	[value]"chromium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chromium Lira Arthain Watchstone"
+	[tag]"name RU"		[value]"Хромовый Камень Хранителя Лиры Артейн"
+
+	[tag]"icon path"	[value]"chromium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chromium New Vastir Watchstone"
+	[tag]"name RU"		[value]"Хромовый Камень Хранителя Нового Вастира"
+
+	[tag]"icon path"	[value]"chromium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chromium Tirn's End Watchstone"
+	[tag]"name RU"		[value]"Хромовый Камень Хранителя Предела Тирна"
+
+	[tag]"icon path"	[value]"chromium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chromium Valdo's Rest Watchstone"
+	[tag]"name RU"		[value]"Хромовый Камень Хранителя Покоя Валдо"
+
+	[tag]"icon path"	[value]"chromium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Platinum Glennach Cairns Watchstone"
+	[tag]"name RU"		[value]"Платиновый Камень Хранителя Пирамид Гленнаха"
+
+	[tag]"icon path"	[value]"platinum_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Platinum Haewark Hamlet Watchstone"
+	[tag]"name RU"		[value]"Платиновый Камень Хранителя Деревни Хейварк"
+
+	[tag]"icon path"	[value]"platinum_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Platinum Lex Ejoris Watchstone"
+	[tag]"name RU"		[value]"Платиновый Камень Хранителя Лекс Эйорис"
+
+	[tag]"icon path"	[value]"platinum_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Platinum Lex Proxima Watchstone"
+	[tag]"name RU"		[value]"Платиновый Камень Хранителя Лекс Проксимы"
+
+	[tag]"icon path"	[value]"platinum_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Platinum Lira Arthain Watchstone"
+	[tag]"name RU"		[value]"Платиновый Камень Хранителя Лиры Артейн"
+
+	[tag]"icon path"	[value]"platinum_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Platinum New Vastir Watchstone"
+	[tag]"name RU"		[value]"Платиновый Камень Хранителя Нового Вастира"
+
+	[tag]"icon path"	[value]"platinum_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Platinum Tirn's End Watchstone"
+	[tag]"name RU"		[value]"Платиновый Камень Хранителя Предела Тирна"
+
+	[tag]"icon path"	[value]"platinum_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Platinum Valdo's Rest Watchstone"
+	[tag]"name RU"		[value]"Платиновый Камень Хранителя Покоя Валдо"
+
+	[tag]"icon path"	[value]"platinum_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Titanium Glennach Cairns Watchstone"
+	[tag]"name RU"		[value]"Титановый Камень Хранителя Пирамид Гленнаха"
+
+	[tag]"icon path"	[value]"titanium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Titanium Haewark Hamlet Watchstone"
+	[tag]"name RU"		[value]"Титановый Камень Хранителя Деревни Хейварк"
+
+	[tag]"icon path"	[value]"titanium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Titanium Lex Ejoris Watchstone"
+	[tag]"name RU"		[value]"Титановый Камень Хранителя Лекс Эйорис"
+
+	[tag]"icon path"	[value]"titanium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Titanium Lex Proxima Watchstone"
+	[tag]"name RU"		[value]"Титановый Камень Хранителя Лекс Проксимы"
+
+	[tag]"icon path"	[value]"titanium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Titanium Lira Arthain Watchstone"
+	[tag]"name RU"		[value]"Титановый Камень Хранителя Лиры Артейн"
+
+	[tag]"icon path"	[value]"titanium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Titanium New Vastir Watchstone"
+	[tag]"name RU"		[value]"Титановый Камень Хранителя Нового Вастира"
+
+	[tag]"icon path"	[value]"titanium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Titanium Tirn's End Watchstone"
+	[tag]"name RU"		[value]"Титановый Камень Хранителя Предела Тирна"
+
+	[tag]"icon path"	[value]"titanium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Titanium Valdo's Rest Watchstone"
+	[tag]"name RU"		[value]"Титановый Камень Хранителя Покоя Валдо"
+
+	[tag]"icon path"	[value]"titanium_watchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ivory Watchstone"
+	[tag]"name RU"		[value]"Камень Хранителя цвета слоновой кости"
+
+	[tag]"icon path"	[value]"IvoryWatchstone"
+	[tag]"base class"	[value]"Atlas Region Upgrade Item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"League: Ritual"

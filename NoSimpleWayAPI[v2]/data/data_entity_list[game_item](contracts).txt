@@ -1,0 +1,210 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Bunker"
+	[tag]"name RU"		[value]"Контракт: Бункер"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Familial Contract"
+	[tag]"name RU"		[value]"Контракт: Семейный контракт"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Forbidden Contract"
+	[tag]"name RU"		[value]"Контракт: Запретный контракт"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Laboratory"
+	[tag]"name RU"		[value]"Контракт: Лаборатория"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Mansion"
+	[tag]"name RU"		[value]"Контракт: Особняк"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Naval Contract"
+	[tag]"name RU"		[value]"Контракт: Морской контракт"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Preventative Contract"
+	[tag]"name RU"		[value]"Контракт: Превентивный контракт:"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Prohibited Library"
+	[tag]"name RU"		[value]"Контракт: Запретная библиотека"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Records Office"
+	[tag]"name RU"		[value]"Контракт: Референтура"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Repository"
+	[tag]"name RU"		[value]"Контракт: Хранилище"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Smuggler's Den"
+	[tag]"name RU"		[value]"Контракт: Притон контрабандистов"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Tunnels"
+	[tag]"name RU"		[value]"Контракт: Тоннели"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Underbelly"
+	[tag]"name RU"		[value]"Контракт: Подполье"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Vengeful Contract"
+	[tag]"name RU"		[value]"Контракт: Мстительный контракт"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Contract: Vigilante Contract"
+	[tag]"name RU"		[value]"Контракт: Карательный контракт"
+
+	[tag]"icon path"	[value]"Contract"
+	[tag]"base class"	[value]"Contract"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Heist"

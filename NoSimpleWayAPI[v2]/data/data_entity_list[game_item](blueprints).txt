@@ -1,0 +1,152 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blueprint: Bunker"
+	[tag]"name RU"		[value]"Чертёж: Бункер"
+
+	[tag]"icon path"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprint"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blueprint: Laboratory"
+	[tag]"name RU"		[value]"Чертёж: Лаборатория"
+
+	[tag]"icon path"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprint"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blueprint: Mansion"
+	[tag]"name RU"		[value]"Чертёж: Особняк"
+
+	[tag]"icon path"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprint"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blueprint: Prohibited Library"
+	[tag]"name RU"		[value]"Чертёж: Запретная библиотека"
+
+	[tag]"icon path"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprint"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blueprint: Records Office"
+	[tag]"name RU"		[value]"Чертёж: Референтура"
+
+	[tag]"icon path"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprint"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blueprint: Repository"
+	[tag]"name RU"		[value]"Чертёж: Хранилище"
+
+	[tag]"icon path"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprint"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: heist"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blueprint: Smuggler's Den"
+	[tag]"name RU"		[value]"Чертёж: Притон контрабандистов"
+
+	[tag]"icon path"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprint"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	 	[value]"League: heist"
+	[tag]"item tag"	 	[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blueprint: Tunnels"
+	[tag]"name RU"		[value]"Чертёж: Тоннели"
+
+	[tag]"icon path"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprint"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	 	[value]"League: heist"
+	[tag]"item tag"	 	[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blueprint: Underbelly"
+	[tag]"name RU"		[value]"Чертёж: Подполье"
+
+	[tag]"icon path"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprint"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"	 	[value]"League: heist"
+	[tag]"item tag"	 	[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"

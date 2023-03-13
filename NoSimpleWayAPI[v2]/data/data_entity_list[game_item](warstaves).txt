@@ -1,0 +1,153 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Capacity Rod"
+	[tag]"name RU"		[value]"Стержень способности"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Coiled Staff"
+	[tag]"name RU"		[value]"Крученый посох"
+
+	[tag]"icon path"	[value]"Serpentine_Staff_inventory_icon"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eventuality Rod"
+	[tag]"name RU"		[value]"Стержень допустимости"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ezomyte Staff"
+	[tag]"name RU"		[value]"Посох эзомита"
+
+	[tag]"icon path"	[value]"Iron_Staff_inventory_icon"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Foul Staff"
+	[tag]"name RU"		[value]"Посох падшего"
+
+	[tag]"icon path"	[value]"Vile_Staff_inventory_icon"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Iron Staff"
+	[tag]"name RU"		[value]"Крепкий посох"
+
+	[tag]"icon path"	[value]"Iron_Staff_inventory_icon"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for caster"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Judgement Staff"
+	[tag]"name RU"		[value]"Посох судьи"
+
+	[tag]"icon path"	[value]"Vile_Staff_inventory_icon"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maelstrom Staff"
+	[tag]"name RU"		[value]"Посох вихрей"
+
+	[tag]"icon path"	[value]"Serpentine_Staff_inventory_icon"
+	[tag]"base class"	[value]"Warstaff"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Military Staff"
+	[tag]"name RU"		[value]"Боевой посох"
+
+	[tag]"icon path"	[value]"Iron_Staff_inventory_icon"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Potentiality Rod"
+	[tag]"name RU"		[value]"Стержень потенциала"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Serpentine Staff"
+	[tag]"name RU"		[value]"Змеиный посох"
+
+	[tag]"icon path"	[value]"Serpentine_Staff_inventory_icon"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vile Staff"
+	[tag]"name RU"		[value]"Посох нечистого"
+
+	[tag]"icon path"	[value]"Vile_Staff_inventory_icon"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"

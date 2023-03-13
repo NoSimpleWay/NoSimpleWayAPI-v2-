@@ -1,0 +1,57 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Enamel Brooch"
+	[tag]"name RU"		[value]"Глянцевая брошь"
+
+	[tag]"icon path"	[value]"Brooch"
+	[tag]"base class"	[value]"Heist Brooch"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Foliate Brooch"
+	[tag]"name RU"		[value]"Амальгамированная брошь"
+
+	[tag]"icon path"	[value]"Brooch"
+	[tag]"base class"	[value]"Heist Brooch"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Golden Brooch"
+	[tag]"name RU"		[value]"Золотая брошь"
+
+	[tag]"icon path"	[value]"Brooch"
+	[tag]"base class"	[value]"Heist Brooch"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Silver Brooch"
+	[tag]"name RU"		[value]"Серебряная брошь"
+
+	[tag]"icon path"	[value]"Brooch"
+	[tag]"base class"	[value]"Heist Brooch"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

@@ -1,0 +1,68 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Alva's Memory"
+	[tag]"name RU"		[value]"Воспоминание Альвы"
+
+	[tag]"icon path"	[value]"AlvaMemoryItem"
+	[tag]"base class"	[value]"Memory"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Einhar's Memory"
+	[tag]"name RU"		[value]"Воспоминание Эйнара"
+
+	[tag]"icon path"	[value]"EinharMemoryItem"
+	[tag]"base class"	[value]"Memory"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Kirac's Memory"
+	[tag]"name RU"		[value]"Воспоминание Кирака"
+
+	[tag]"icon path"	[value]"KiracMemoryItem"
+	[tag]"base class"	[value]"Memory"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Niko's Memory"
+	[tag]"name RU"		[value]"Воспоминание Нико"
+
+	[tag]"icon path"	[value]"NikoMemoryItem"
+	[tag]"base class"	[value]"Memory"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

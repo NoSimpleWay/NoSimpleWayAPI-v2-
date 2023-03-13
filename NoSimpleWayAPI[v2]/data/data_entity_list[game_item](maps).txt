@@ -1,0 +1,106 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Forge of the Phoenix"
+	[tag]"name RU"		[value]"Кузница Феникса"
+
+	[tag]"icon path"	[value]"Forge_of_the_Phoenix_Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lair of the Hydra"
+	[tag]"name RU"		[value]"Логово Гидры"
+
+	[tag]"icon path"	[value]"Lair_of_the_Hydra_Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Map"
+	[tag]"name RU"		[value]"Карта"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maze of the Minotaur"
+	[tag]"name RU"		[value]"Лабиринт Минотавра"
+
+	[tag]"icon path"	[value]"Maze_of_the_Minotaur_Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Pit of the Chimera"
+	[tag]"name RU"		[value]"Яма Химеры"
+
+	[tag]"icon path"	[value]"Pit_of_the_Chimera_Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Engraved Ultimatum"
+	[tag]"name RU"		[value]"Гравированный ультиматум"
+
+	[tag]"icon path"	[value]"EngravedUltimatum"
+	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ultimatum aspect"
+	[tag]"name RU"		[value]"Аспект ультиматума"
+
+	[tag]"icon path"	[value]"UltimatumAspect"
+	
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Synthesised Map"
+	[tag]"name RU"		[value]"Синтезированная карта"
+
+	[tag]"icon path"	[value]"synthesised"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

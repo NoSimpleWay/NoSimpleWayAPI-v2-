@@ -1,0 +1,590 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Necromancy Net"
+	[tag]"name RU"		[value]"Сеть некромантии"
+
+	[tag]"icon path"	[value]"Necromancy_Net_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reinforced Iron Net"
+	[tag]"name RU"		[value]"Reinforced Iron Net"
+
+	[tag]"icon path"	[value]"Reinforced_Iron_Net_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reinforced Rope Net"
+	[tag]"name RU"		[value]"Reinforced Rope Net"
+
+	[tag]"icon path"	[value]"Reinforced_Rope_Net_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reinforced Steel Net"
+	[tag]"name RU"		[value]"Reinforced Steel Net"
+
+	[tag]"icon path"	[value]"Reinforced_Steel_Net_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Simple Iron Net"
+	[tag]"name RU"		[value]"Simple Iron Net"
+
+	[tag]"icon path"	[value]"Simple_Iron_Net_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Simple Rope Net"
+	[tag]"name RU"		[value]"Simple Rope Net"
+
+	[tag]"icon path"	[value]"Simple_Rope_Net_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Simple Steel Net"
+	[tag]"name RU"		[value]"Simple Steel Net"
+
+	[tag]"icon path"	[value]"Simple_Steel_Net_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Strong Iron Net"
+	[tag]"name RU"		[value]"Strong Iron Net"
+
+	[tag]"icon path"	[value]"Strong_Iron_Net_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Strong Rope Net"
+	[tag]"name RU"		[value]"Strong Rope Net"
+
+	[tag]"icon path"	[value]"Strong_Rope_Net_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Strong Steel Net"
+	[tag]"name RU"		[value]"Strong Steel Net"
+
+	[tag]"icon path"	[value]"Strong_Steel_Net_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Alchemy"
+	[tag]"name RU"		[value]"Сфера алхимии"
+
+	[tag]"icon path"	[value]"Orb_of_Alchemy_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Alteration"
+	[tag]"name RU"		[value]"Сфера перемен"
+
+	[tag]"icon path"	[value]"Orb_of_Alteration_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+		
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Annulment"
+	[tag]"name RU"		[value]"Сфера отмены"
+
+	[tag]"icon path"	[value]"Orb_of_Annulment_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"35"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Chance"
+	[tag]"name RU"		[value]"Сфера удачи"
+
+	[tag]"icon path"	[value]"Orb_of_Chance_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Fusing"
+	[tag]"name RU"		[value]"Сфера соединения"
+
+	[tag]"icon path"	[value]"Orb_of_Fusing_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"8"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Horizons"
+	[tag]"name RU"		[value]"Сфера горизонтов"
+
+	[tag]"icon path"	[value]"Orb_of_Horizons_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"68"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Regret"
+	[tag]"name RU"		[value]"Сфера раскаяния"
+
+	[tag]"icon path"	[value]"Orb_of_Regret_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"drop level"	[value]"2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Scouring"
+	[tag]"name RU"		[value]"Сфера очищения"
+
+	[tag]"icon path"	[value]"Orb_of_Scouring_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"12"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Unmaking"
+	[tag]"name RU"		[value]"Сфера небытия"
+
+	[tag]"icon path"	[value]"unmaking_orb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"drop level"	[value]"70"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perandus Coin"
+	[tag]"name RU"		[value]"Монета перандусов"
+
+	[tag]"icon path"	[value]"Perandus_Coin_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prime Regrading Lens"
+	[tag]"name RU"		[value]"Первичная профилирующая линза"
+
+	[tag]"icon path"	[value]"LensPrimal"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Regal Orb"
+	[tag]"name RU"		[value]"Сфера царей"
+
+	[tag]"icon path"	[value]"Regal_Orb_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"12"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ritual Vessel"
+	[tag]"name RU"		[value]"Ритуальный сосуд"
+
+	[tag]"icon path"	[value]"ritual_vessel"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rogue's Marker"
+	[tag]"name RU"		[value]"Разбойничий жетон"
+
+	[tag]"icon path"	[value]"RoguesMarker"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"48"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Secondary Regrading Lens"
+	[tag]"name RU"		[value]"Вторичная профилирующая линза"
+
+	[tag]"icon path"	[value]"LensSecondary"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Chayula"
+	[tag]"name RU"		[value]"Осколок чаюлы"
+
+	[tag]"icon path"	[value]"Splinter_of_Chayula_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Esh"
+	[tag]"name RU"		[value]"Осколок иш"
+
+	[tag]"icon path"	[value]"Splinter_of_Esh_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Tul"
+	[tag]"name RU"		[value]"Осколок тула"
+
+	[tag]"icon path"	[value]"Splinter_of_Tul_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Uul-Netol"
+	[tag]"name RU"		[value]"Осколок уул-нетола"
+
+	[tag]"icon path"	[value]"Splinter_of_Uul-Netol_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Xoph"
+	[tag]"name RU"		[value]"Осколок ксофа"
+
+	[tag]"icon path"	[value]"Splinter_of_Xoph_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Stacked Deck"
+	[tag]"name RU"		[value]"Колода карт"
+
+	[tag]"icon path"	[value]"Stacked_Deck_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"drop level"	[value]"50"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tailoring Orb"
+	[tag]"name RU"		[value]"Сфера подгонки"
+
+	[tag]"icon path"	[value]"LensTaloring"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tempering Orb"
+	[tag]"name RU"		[value]"Закаляющая сфера"
+
+	[tag]"icon path"	[value]"LensTempering"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thaumaturgical Net"
+	[tag]"name RU"		[value]"Thaumaturgical Net"
+
+	[tag]"icon path"	[value]"Thaumaturgical_Net_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

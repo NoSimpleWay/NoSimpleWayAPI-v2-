@@ -1,0 +1,1632 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blizzard Crown"
+	[tag]"name RU"		[value]"Корона метели"
+
+	[tag]"icon path"	[value]"Blizzard_Crown_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Ritual base top"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winter Crown"
+	[tag]"name RU"		[value]"Корона зимы"
+
+	[tag]"icon path"	[value]"Blizzard_Crown_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Ritual base medium"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gale Crown"
+	[tag]"name RU"		[value]"Корона ветра"
+
+	[tag]"icon path"	[value]"Blizzard_Crown_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Ritual base low"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Archdemon Crown"
+	[tag]"name RU"		[value]"Корона архидемона"
+
+	[tag]"icon path"	[value]"Archdemon_Crown_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Ritual base top"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Demon Crown"
+	[tag]"name RU"		[value]"Корона демона"
+
+	[tag]"icon path"	[value]"Archdemon_Crown_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Ritual base medium"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imp Crown"
+	[tag]"name RU"		[value]"Корона беса"
+
+	[tag]"icon path"	[value]"Archdemon_Crown_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Ritual base low"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Atonement Mask"
+	[tag]"name RU"		[value]"Маска искупления"
+
+	[tag]"icon path"	[value]"Atonement_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Ritual base mid"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Penitent Mask"
+	[tag]"name RU"		[value]"Маска кающегося"
+
+	[tag]"icon path"	[value]"Atonement_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Ritual base top"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sorrow Mask"
+	[tag]"name RU"		[value]"Маска скорби"
+
+	[tag]"icon path"	[value]"Atonement_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Ritual base low"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Aventail Helmet"
+	[tag]"name RU"		[value]"Шлем с бармицей"
+
+	[tag]"icon path"	[value]"Aventail_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Barbute Helmet"
+	[tag]"name RU"		[value]"Барбют"
+
+	[tag]"icon path"	[value]"Barbute_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Battered Helm"
+	[tag]"name RU"		[value]"Пробитый шлем"
+
+	[tag]"icon path"	[value]"Battered_Helm_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bone Circlet"
+	[tag]"name RU"		[value]"Обруч с костью"
+
+	[tag]"icon path"	[value]"Bone_Circlet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bone Helmet"
+	[tag]"name RU"		[value]"Костяной шлем"
+
+	[tag]"icon path"	[value]"Bone_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Rare base"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Callous Mask"
+	[tag]"name RU"		[value]"Маска равнодушия"
+
+	[tag]"icon path"	[value]"Callous_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Close Helmet"
+	[tag]"name RU"		[value]"Закрытый шлем"
+
+	[tag]"icon path"	[value]"Close_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cone Helmet"
+	[tag]"name RU"		[value]"Кабассет"
+
+	[tag]"icon path"	[value]"Cone_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crusader Helmet"
+	[tag]"name RU"		[value]"Шлем подвижника"
+
+	[tag]"icon path"	[value]"Crusader_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Deicide Mask"
+	[tag]"name RU"		[value]"Маска богоубийцы"
+
+	[tag]"icon path"	[value]"Deicide_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eternal Burgonet"
+	[tag]"name RU"		[value]"Полный шлем вечного"
+
+	[tag]"icon path"	[value]"Eternal_Burgonet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ezomyte Burgonet"
+	[tag]"name RU"		[value]"Полный шлем эзомита"
+
+	[tag]"icon path"	[value]"Ezomyte_Burgonet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fencer Helm"
+	[tag]"name RU"		[value]"Шлем фехтовальщика"
+
+	[tag]"icon path"	[value]"Fencer_Helm_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Festival Mask"
+	[tag]"name RU"		[value]"Карнавальная маска"
+
+	[tag]"icon path"	[value]"Festival_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fluted Bascinet"
+	[tag]"name RU"		[value]"Волнистый бацинет"
+
+	[tag]"icon path"	[value]"Fluted_Bascinet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gilded Sallet"
+	[tag]"name RU"		[value]"Позолоченный салад"
+
+	[tag]"icon path"	[value]"Gilded_Sallet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gladiator Helmet"
+	[tag]"name RU"		[value]"Шлем гладиатора"
+
+	[tag]"icon path"	[value]"Gladiator_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Golden Mask"
+	[tag]"name RU"		[value]"Золотая маска"
+
+	[tag]"icon path"	[value]"Golden_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Great Crown"
+	[tag]"name RU"		[value]"Большая корона"
+
+	[tag]"icon path"	[value]"Great_Crown_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Great Helmet"
+	[tag]"name RU"		[value]"Большой шлем"
+
+	[tag]"icon path"	[value]"Great_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Harlequin Mask"
+	[tag]"name RU"		[value]"Шутовская маска"
+
+	[tag]"icon path"	[value]"Harlequin_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hubris Circlet"
+	[tag]"name RU"		[value]"Венец гордыни"
+
+	[tag]"icon path"	[value]"Hubris_Circlet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hunter Hood"
+	[tag]"name RU"		[value]"Капюшон охотника"
+
+	[tag]"icon path"	[value]"Hunter_Hood_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Iron Circlet"
+	[tag]"name RU"		[value]"Железный обруч"
+
+	[tag]"icon path"	[value]"Iron_Circlet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Iron Hat"
+	[tag]"name RU"		[value]"Железная шапка"
+
+	[tag]"icon path"	[value]"Iron_Hat_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Iron Mask"
+	[tag]"name RU"		[value]"Железная маска"
+
+	[tag]"icon path"	[value]"Iron_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lacquered Helmet"
+	[tag]"name RU"		[value]"Шлем командира"
+
+	[tag]"icon path"	[value]"Lacquered_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Leather Cap"
+	[tag]"name RU"		[value]"Кожаный чепец"
+
+	[tag]"icon path"	[value]"Leather_Cap_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Leather Hood"
+	[tag]"name RU"		[value]"Кожаный капюшон"
+
+	[tag]"icon path"	[value]"Leather_Hood_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lion Pelt"
+	[tag]"name RU"		[value]"Львиная морда"
+
+	[tag]"icon path"	[value]"Lion_Pelt_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lunaris Circlet"
+	[tag]"name RU"		[value]"Диадема лунарис"
+
+	[tag]"icon path"	[value]"Lunaris_Circlet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Magistrate Crown"
+	[tag]"name RU"		[value]"Корона правителя"
+
+	[tag]"icon path"	[value]"Magistrate_Crown_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mind Cage"
+	[tag]"name RU"		[value]"Клеть разума"
+
+	[tag]"icon path"	[value]"Mind_Cage_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Necromancer Circlet"
+	[tag]"name RU"		[value]"Обруч некроманта"
+
+	[tag]"icon path"	[value]"Necromancer_Circlet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Nightmare Bascinet"
+	[tag]"name RU"		[value]"Кошмарный бацинет"
+
+	[tag]"icon path"	[value]"Nightmare_Bascinet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Noble Tricorne"
+	[tag]"name RU"		[value]"Парадная треуголка"
+
+	[tag]"icon path"	[value]"Noble_Tricorne_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Pig-Faced Bascinet"
+	[tag]"name RU"		[value]"Клювастый бацинет"
+
+	[tag]"icon path"	[value]"Pig-Faced_Bascinet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Plague Mask"
+	[tag]"name RU"		[value]"Чумная маска"
+
+	[tag]"icon path"	[value]"Plague_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Praetor Crown"
+	[tag]"name RU"		[value]"Корона претора"
+
+	[tag]"icon path"	[value]"Praetor_Crown_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prophet Crown"
+	[tag]"name RU"		[value]"Корона провидца"
+
+	[tag]"icon path"	[value]"Prophet_Crown_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Raven Mask"
+	[tag]"name RU"		[value]"Воронья маска"
+
+	[tag]"icon path"	[value]"Raven_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reaver Helmet"
+	[tag]"name RU"		[value]"Полный шлем"
+
+	[tag]"icon path"	[value]"Reaver_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Regicide Mask"
+	[tag]"name RU"		[value]"Маска цареубийцы"
+
+	[tag]"icon path"	[value]"Regicide_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Royal Burgonet"
+	[tag]"name RU"		[value]"Полный шлем царя"
+
+	[tag]"icon path"	[value]"Royal_Burgonet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Coif"
+	[tag]"name RU"		[value]"Ржавый койф"
+
+	[tag]"icon path"	[value]"Rusted_Coif_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sallet"
+	[tag]"name RU"		[value]"Салад"
+
+	[tag]"icon path"	[value]"Sallet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Samnite Helmet"
+	[tag]"name RU"		[value]"Шлем Самнита"
+
+	[tag]"icon path"	[value]"Samite_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Scare Mask"
+	[tag]"name RU"		[value]"Пугающая маска"
+
+	[tag]"icon path"	[value]"Scare_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Secutor Helm"
+	[tag]"name RU"		[value]"Шлем секутора"
+
+	[tag]"icon path"	[value]"Secutor_Helm_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Siege Helmet"
+	[tag]"name RU"		[value]"Осадный шлем"
+
+	[tag]"icon path"	[value]"Siege_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Breach unique item"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Silken Hood"
+	[tag]"name RU"		[value]"Шелковый капюшон"
+
+	[tag]"icon path"	[value]"Silken_Hood_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sinner Tricorne"
+	[tag]"name RU"		[value]"Треуголка грешника"
+
+	[tag]"icon path"	[value]"Sinner_Tricorne_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Solaris Circlet"
+	[tag]"name RU"		[value]"Диадема солярис"
+
+	[tag]"icon path"	[value]"Solaris_Circlet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Soldier Helmet"
+	[tag]"name RU"		[value]"Шлем солдата"
+
+	[tag]"icon path"	[value]"Soldier_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Steel Circlet"
+	[tag]"name RU"		[value]"Стальной обруч"
+
+	[tag]"icon path"	[value]"Steel_Circlet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Torture Cage"
+	[tag]"name RU"		[value]"Клеть мучений"
+
+	[tag]"icon path"	[value]"Torture_Cage_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tribal Circlet"
+	[tag]"name RU"		[value]"Обруч аборигена"
+
+	[tag]"icon path"	[value]"Tribal_Circlet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tricorne"
+	[tag]"name RU"		[value]"Треуголка"
+
+	[tag]"icon path"	[value]"Tricorne_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ursine Pelt"
+	[tag]"name RU"		[value]"Медвежья морда"
+
+	[tag]"icon path"	[value]"Ursine_Pelt_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vaal Mask"
+	[tag]"name RU"		[value]"Маска ваал"
+
+	[tag]"icon path"	[value]"Vaal_Mask_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vine Circlet"
+	[tag]"name RU"		[value]"Венок из лозы"
+
+	[tag]"icon path"	[value]"Vine_Circlet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Visored Sallet"
+	[tag]"name RU"		[value]"Салад с забралом"
+
+	[tag]"icon path"	[value]"Visored_Sallet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Wolf Pelt"
+	[tag]"name RU"		[value]"Волчья морда"
+
+	[tag]"icon path"	[value]"Wolf_Pelt_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Zealot Helmet"
+	[tag]"name RU"		[value]"Шлем фанатика"
+
+	[tag]"icon path"	[value]"Zealot_Helmet_inventory_icon"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Helm"
+	[tag]"name RU"		[value]"Рунический шлем"
+
+	[tag]"icon path"	[value]"RunicHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Crest"
+	[tag]"name RU"		[value]"Рунический венец"
+
+	[tag]"icon path"	[value]"RunicHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Crown"
+	[tag]"name RU"		[value]"Руническая корона"
+
+	[tag]"icon path"	[value]"RunicHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Helm"
+	[tag]"name RU"		[value]"Рунический шлем"
+
+	[tag]"icon path"	[value]"RunicHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Crest"
+	[tag]"name RU"		[value]"Рунический венец"
+
+	[tag]"icon path"	[value]"RunicHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Crown"
+	[tag]"name RU"		[value]"Руническая корона"
+
+	[tag]"icon path"	[value]"RunicHelmet"
+	[tag]"base class"	[value]"Helmets"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"

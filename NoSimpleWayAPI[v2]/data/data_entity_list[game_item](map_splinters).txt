@@ -1,0 +1,155 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Simulacrum Splinter"
+	[tag]"name RU"		[value]"Осколок Симулякра"
+
+	[tag]"icon path"	[value]"SimulacrumSplinter"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"50"
+	[tag]"max stack size"	[value]"300"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crescent Splinter"
+	[tag]"name RU"		[value]"Серповидный осколок"
+
+	[tag]"icon path"	[value]"crescent_splinter"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ritual Splinter"
+	[tag]"name RU"		[value]"Ритуальный осколок"
+
+	[tag]"icon path"	[value]"ritual_splinter"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Ritual item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Karui Splinter"
+	[tag]"name RU"		[value]"Вневременной знак Каруи"
+
+	[tag]"icon path"	[value]"Timeless_Karui_Splinter_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Legion item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Eternal Empire Splinter"
+	[tag]"name RU"		[value]"Вневременной знак Вечной Империи"
+
+	[tag]"icon path"	[value]"Timeless_Eternal_Empire_Splinter_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Legion item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Maraketh Splinter"
+	[tag]"name RU"		[value]"Вневременной знак Маракетов"
+
+	[tag]"icon path"	[value]"Timeless_Maraketh_Splinter_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Legion item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Templar Splinter"
+	[tag]"name RU"		[value]"Вневременной знак Храмовиков"
+
+	[tag]"icon path"	[value]"Timeless_Templar_Splinter_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Legion item"
+	[tag]"item tag"		[value]"Splinter item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Vaal Splinter"
+	[tag]"name RU"		[value]"Вневременной знак Ваал"
+
+	[tag]"icon path"	[value]"Timeless_Vaal_Splinter_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Legion item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

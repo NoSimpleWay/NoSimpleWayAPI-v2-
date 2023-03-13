@@ -1,0 +1,86 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Deregulation Scroll"
+	[tag]"name RU"		[value]"Свиток дерегуляции"
+
+	[tag]"icon path"	[value]"Deregulation-Scroll"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Electroshock Scroll"
+	[tag]"name RU"		[value]"Свиток электрошока"
+
+	[tag]"icon path"	[value]"Electroshock-Scroll"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragmentation Scroll"
+	[tag]"name RU"		[value]"Свиток фрагментации"
+
+	[tag]"icon path"	[value]"Fragmentation-Scroll"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Haemocombustion Scroll"
+	[tag]"name RU"		[value]"Свиток кровосожжения"
+
+	[tag]"icon path"	[value]"Haemocombustion-Scroll"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Specularity Scroll"
+	[tag]"name RU"		[value]"Свиток зеркальности"
+
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Time-light Scroll"
+	[tag]"name RU"		[value]"Свиток времени и света"
+
+	[tag]"icon path"	[value]"Time-light-Scroll"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

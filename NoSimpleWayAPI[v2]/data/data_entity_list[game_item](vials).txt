@@ -1,0 +1,156 @@
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vial of Awakening"
+	[tag]"name RU"		[value]"Vial of Awakening"
+
+	[tag]"icon path"	[value]"Vial_of_Awakening_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
+	[tag]"drop level"	[value]"50"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vial of Consequence"
+	[tag]"name RU"		[value]"Vial of Consequence"
+
+	[tag]"icon path"	[value]"Vial_of_Consequence_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
+	[tag]"drop level"	[value]"50"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vial of Dominance"
+	[tag]"name RU"		[value]"Vial of Dominance"
+
+	[tag]"icon path"	[value]"Vial_of_Dominance_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
+	[tag]"drop level"	[value]"50"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vial of Fate"
+	[tag]"name RU"		[value]"Vial of Fate"
+
+	[tag]"icon path"	[value]"Vial_of_Fate_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
+	[tag]"drop level"	[value]"50"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vial of Sacrifice"
+	[tag]"name RU"		[value]"Vial of Sacrifice"
+
+	[tag]"icon path"	[value]"Vial_of_Sacrifice_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
+	[tag]"drop level"	[value]"68"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vial of Summoning"
+	[tag]"name RU"		[value]"Vial of Summoning"
+
+	[tag]"icon path"	[value]"Vial_of_Summoning_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
+	[tag]"drop level"	[value]"50"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vial of the Ghost"
+	[tag]"name RU"		[value]"Vial of the Ghost"
+
+	[tag]"icon path"	[value]"Vial_of_the_Ghost_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
+	[tag]"drop level"	[value]"68"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vial of the Ritual"
+	[tag]"name RU"		[value]"Vial of the Ritual"
+
+	[tag]"icon path"	[value]"Vial_of_the_Ritual_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
+	[tag]"drop level"	[value]"50"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vial of Transcendence"
+	[tag]"name RU"		[value]"Vial of Transcendence"
+
+	[tag]"icon path"	[value]"Vial_of_Transcendence_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Vial item"
+	
+	[tag]"drop level"	[value]"50"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

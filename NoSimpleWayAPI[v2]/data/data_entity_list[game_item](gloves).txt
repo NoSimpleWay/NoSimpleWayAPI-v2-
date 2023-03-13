@@ -1,0 +1,1404 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Debilitation Gauntlets"
+	[tag]"name RU"		[value]"Истощающие перчатки"
+
+	[tag]"icon path"	[value]"Debilitation_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gruelling Gauntlets"
+	[tag]"name RU"		[value]"Изнуряющие перчатки"
+
+	[tag]"icon path"	[value]"Debilitation_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Taxing Gauntlets"
+	[tag]"name RU"		[value]"Обременяющие перчатки"
+
+	[tag]"icon path"	[value]"Debilitation_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sinistral Gloves"
+	[tag]"name RU"		[value]"Перчатки левши"
+
+	[tag]"icon path"	[value]"Sinistral_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Ritual base top"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Southswing Gloves"
+	[tag]"name RU"		[value]"Правосторонние перчатки"
+
+	[tag]"icon path"	[value]"Sinistral_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Ritual base medium"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gauche Gloves"
+	[tag]"name RU"		[value]"Грубые перчатки"
+
+	[tag]"icon path"	[value]"Sinistral_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Ritual base low"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Nexus Gloves"
+	[tag]"name RU"		[value]"Перчатки нексуса"
+
+	[tag]"icon path"	[value]"Nexus_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Ritual base top"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Aetherwind Gloves"
+	[tag]"name RU"		[value]"Перчатки эфирного ветра"
+
+	[tag]"icon path"	[value]"Nexus_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Ritual base medium"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Leyline Gloves"
+	[tag]"name RU"		[value]"Перчатки лучей"
+
+	[tag]"icon path"	[value]"Nexus_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Ritual base low"
+	[tag]"item tag"		[value]"League: Ritual"
+		
+	[tag]"worth"		[value]"Common"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ambush Mitts"
+	[tag]"name RU"		[value]"Перчатки разбойника"
+
+	[tag]"icon path"	[value]"Strapped_Mitts_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ancient Gauntlets"
+	[tag]"name RU"		[value]"Древние перчатки"
+
+	[tag]"icon path"	[value]"Bronze_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Antique Gauntlets"
+	[tag]"name RU"		[value]"Старинные перчатки"
+
+	[tag]"icon path"	[value]"Plated_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Arcanist Gloves"
+	[tag]"name RU"		[value]"Перчатки тайнописца"
+
+	[tag]"icon path"	[value]"Silk_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Assassin's Mitts"
+	[tag]"name RU"		[value]"Перчатки убийцы"
+
+	[tag]"icon path"	[value]"Strapped_Mitts_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bronze Gauntlets"
+	[tag]"name RU"		[value]"Бронзовые перчатки"
+
+	[tag]"icon path"	[value]"Bronze_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bronzescale Gauntlets"
+	[tag]"name RU"		[value]"Чешуйчайтые бронзовые перчатки"
+
+	[tag]"icon path"	[value]"Bronzescale_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Carnal Mitts"
+	[tag]"name RU"		[value]"Перчатки крови"
+
+	[tag]"icon path"	[value]"Clasped_Mitts_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chain Gloves"
+	[tag]"name RU"		[value]"Кольчужные перчатки"
+
+	[tag]"icon path"	[value]"Chain_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Clasped Mitts"
+	[tag]"name RU"		[value]"Перчатки оков"
+
+	[tag]"icon path"	[value]"Clasped_Mitts_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Conjurer Gloves"
+	[tag]"name RU"		[value]"Перчатки чародея"
+
+	[tag]"icon path"	[value]"Embroidered_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crusader Gloves"
+	[tag]"name RU"		[value]"Перчатки поборника"
+
+	[tag]"icon path"	[value]"Soldier_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Deerskin Gloves"
+	[tag]"name RU"		[value]"Юфтевые перчатки"
+
+	[tag]"icon path"	[value]"Deerskin_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dragonscale Gauntlets"
+	[tag]"name RU"		[value]"Перчатки из чешуи дракона"
+
+	[tag]"icon path"	[value]"Bronzescale_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eelskin Gloves"
+	[tag]"name RU"		[value]"Щучьи перчатки"
+
+	[tag]"icon path"	[value]"Goathide_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Embroidered Gloves"
+	[tag]"name RU"		[value]"Расшитые перчатки"
+
+	[tag]"icon path"	[value]"Embroidered_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fingerless Silk Gloves"
+	[tag]"name RU"		[value]"Шелковые митенки"
+
+	[tag]"icon path"	[value]"Fingerless_Silk_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Rare base"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fishscale Gauntlets"
+	[tag]"name RU"		[value]"Чешуйчатые перчатки"
+
+	[tag]"icon path"	[value]"Fishscale_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Goathide Gloves"
+	[tag]"name RU"		[value]"Сафьяновые перчатки"
+
+	[tag]"icon path"	[value]"Goathide_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Goliath Gauntlets"
+	[tag]"name RU"		[value]"Перчатки гиганта"
+
+	[tag]"icon path"	[value]"Steel_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gripped Gloves"
+	[tag]"name RU"		[value]"Замшевые перчатки"
+
+	[tag]"icon path"	[value]"Gripped_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Rare base"	
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hydrascale Gauntlets"
+	[tag]"name RU"		[value]"Перчатки из чешуи гидры"
+
+	[tag]"icon path"	[value]"Ironscale_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Iron Gauntlets"
+	[tag]"name RU"		[value]"Железные рукавицы"
+
+	[tag]"icon path"	[value]"Iron_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ironscale Gauntlets"
+	[tag]"name RU"		[value]"Чешуйчатые железные перчатки"
+
+	[tag]"icon path"	[value]"Ironscale_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Legion Gloves"
+	[tag]"name RU"		[value]"Перчатки легионера"
+
+	[tag]"icon path"	[value]"Ringmail_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mesh Gloves"
+	[tag]"name RU"		[value]"Усиленные кольчужные перчатки"
+
+	[tag]"icon path"	[value]"Soldier_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Murder Mitts"
+	[tag]"name RU"		[value]"Перчатки смерти"
+
+	[tag]"icon path"	[value]"Clasped_Mitts_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Nubuck Gloves"
+	[tag]"name RU"		[value]"Нубуковые перчатки"
+
+	[tag]"icon path"	[value]"Nubuck_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Plated Gauntlets"
+	[tag]"name RU"		[value]"Латные перчатки"
+
+	[tag]"icon path"	[value]"Plated_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rawhide Gloves"
+	[tag]"name RU"		[value]"Сыромятые перчатки"
+
+	[tag]"icon path"	[value]"Rawhide_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ringmail Gloves"
+	[tag]"name RU"		[value]"Кольчатые перчатки"
+
+	[tag]"icon path"	[value]"Ringmail_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Riveted Gloves"
+	[tag]"name RU"		[value]"Клепаные кольчужные перчатки"
+
+	[tag]"icon path"	[value]"Chain_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Samite Gloves"
+	[tag]"name RU"		[value]"Атласные перчатки"
+
+	[tag]"icon path"	[value]"Silk_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Satin Gloves"
+	[tag]"name RU"		[value]"Сатиновые перчатки"
+
+	[tag]"icon path"	[value]"Velvet_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Serpentscale Gauntlets"
+	[tag]"name RU"		[value]"Перчатки из чешуи гадюки"
+
+	[tag]"icon path"	[value]"Ironscale_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Shagreen Gloves"
+	[tag]"name RU"		[value]"Шагреневые перчатки"
+
+	[tag]"icon path"	[value]"Nubuck_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sharkskin Gloves"
+	[tag]"name RU"		[value]"Акульи перчатки"
+
+	[tag]"icon path"	[value]"Deerskin_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Silk Gloves"
+	[tag]"name RU"		[value]"Шелковые перчатки"
+
+	[tag]"icon path"	[value]"Silk_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Slink Gloves"
+	[tag]"name RU"		[value]"Крепкие перчатки"
+
+	[tag]"icon path"	[value]"Nubuck_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Soldier Gloves"
+	[tag]"name RU"		[value]"Перчатки ауксилария"
+
+	[tag]"icon path"	[value]"Soldier_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sorcerer Gloves"
+	[tag]"name RU"		[value]"Перчатки волшебника"
+
+	[tag]"icon path"	[value]"Embroidered_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Spiked Gloves"
+	[tag]"name RU"		[value]"Колючие перчатки"
+
+	[tag]"icon path"	[value]"Spiked_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Rare base"
+		
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Stealth Gloves"
+	[tag]"name RU"		[value]"Шевровые перчатки"
+
+	[tag]"icon path"	[value]"Deerskin_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Steel Gauntlets"
+	[tag]"name RU"		[value]"Стальные перчатки"
+
+	[tag]"icon path"	[value]"Steel_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Steelscale Gauntlets"
+	[tag]"name RU"		[value]"Чешуйчатые стальные перчатки"
+
+	[tag]"icon path"	[value]"Fishscale_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Strapped Mitts"
+	[tag]"name RU"		[value]"Ременные перчатки"
+
+	[tag]"icon path"	[value]"Strapped_Mitts_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Titan Gauntlets"
+	[tag]"name RU"		[value]"Перчатки титана"
+
+	[tag]"icon path"	[value]"Titan_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Top tier base"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Trapper Mitts"
+	[tag]"name RU"		[value]"Перчатки капканщика"
+
+	[tag]"icon path"	[value]"Trapper_Mitts_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vaal Gauntlets"
+	[tag]"name RU"		[value]"Перчатки ваал"
+
+	[tag]"icon path"	[value]"Bronze_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Velvet Gloves"
+	[tag]"name RU"		[value]"Бархатные перчатки"
+
+	[tag]"icon path"	[value]"Velvet_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Wool Gloves"
+	[tag]"name RU"		[value]"Шерстяные перчатки"
+
+	[tag]"icon path"	[value]"Wool_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Wrapped Mitts"
+	[tag]"name RU"		[value]"Тканевые перчатки"
+
+	[tag]"icon path"	[value]"Trapper_Mitts_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Wyrmscale Gauntlets"
+	[tag]"name RU"		[value]"Перчатки из чешуи змея"
+
+	[tag]"icon path"	[value]"Bronzescale_Gauntlets_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: evasion"
+		
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Zealot Gloves"
+	[tag]"name RU"		[value]"Перчатки фанатика"
+
+	[tag]"icon path"	[value]"Ringmail_Gloves_inventory_icon"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+		
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Apothecary's Gloves"
+	[tag]"name RU"		[value]"Перчатки аптекаря"
+
+	[tag]"icon path"	[value]"apothecary_gloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Rare base"
+		
+	[tag]"worth"		[value]"Common"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Gloves"
+	[tag]"name RU"		[value]"Рунические перчатки"
+
+	[tag]"icon path"	[value]"RunicGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Gages"
+	[tag]"name RU"		[value]"Рунические краги"
+
+	[tag]"icon path"	[value]"RunicGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Gauntlets"
+	[tag]"name RU"		[value]"Рунические рукавицы"
+
+	[tag]"icon path"	[value]"RunicGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Gloves"
+	[tag]"name RU"		[value]"Рунические перчатки"
+
+	[tag]"icon path"	[value]"RunicGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Gages"
+	[tag]"name RU"		[value]"Рунические краги"
+
+	[tag]"icon path"	[value]"RunicGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Gauntlets"
+	[tag]"name RU"		[value]"Рунические рукавицы"
+
+	[tag]"icon path"	[value]"RunicGloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Apothecary's Gloves"
+	[tag]"name RU"		[value]"Перчатки аптекаря"
+
+	[tag]"icon path"	[value]"apothecary_gloves"
+	[tag]"base class"	[value]"Gloves"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Rare base"
+		
+	[tag]"worth"		[value]"Common"

@@ -1,0 +1,215 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lesser Eldritch Ember"
+	[tag]"name RU"		[value]"Мелкий древний уголёк"
+
+	[tag]"icon path"	[value]"LesserEldritchEmber"
+	[tag]"base class"	[value]"Stackable Currency"
+
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"68"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Greater Eldritch Ember"
+	[tag]"name RU"		[value]"Крупный древний уголёк"
+
+	[tag]"icon path"	[value]"GreaterEldritchEmber"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grand Eldritch Ember"
+	[tag]"name RU"		[value]"Великий древний уголёк"
+
+	[tag]"icon path"	[value]"GrandEldritchEmber"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"78"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Exceptional Eldritch Ember"
+	[tag]"name RU"		[value]"Великий древний уголёк"
+
+	[tag]"icon path"	[value]"ExceptionalEldritchEmber"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"81"
+	
+	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lesser Eldritch Ichor"
+	[tag]"name RU"		[value]"Мелкий зловещий ихор"
+
+	[tag]"icon path"	[value]"LesserEldritchIchor"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"68"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Greater Eldritch Ichor"
+	[tag]"name RU"		[value]"Крупный зловещий ихор"
+
+	[tag]"icon path"	[value]"GreaterEldritchIchor"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"73"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grand Eldritch Ichor"
+	[tag]"name RU"		[value]"Великий зловещий ихор"
+
+	[tag]"icon path"	[value]"GrandEldritchIchor"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"78"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Exceptional Eldritch Ichor"
+	[tag]"name RU"		[value]"Превосходный зловещий ихор"
+
+	[tag]"icon path"	[value]"ExceptionalEldritchIchor"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"drop level"	[value]"81"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eldritch Chaos Orb"
+	[tag]"name RU"		[value]"Мистическая сфера хаоса"
+
+	[tag]"icon path"	[value]"EldritchChaosOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"78"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eldritch Orb of Annulment"
+	[tag]"name RU"		[value]"Мистическая сфера отмены"
+
+	[tag]"icon path"	[value]"EldritchOrbofAnnulment"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"drop level"	[value]"78"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Conflict"
+	[tag]"name RU"		[value]"Сфера вражды"
+
+	[tag]"icon path"	[value]"OrbofConflict"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Boss loot"
+	
+	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

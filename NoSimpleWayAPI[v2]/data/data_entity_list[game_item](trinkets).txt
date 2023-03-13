@@ -1,0 +1,12 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thief's Trinket"
+	[tag]"name RU"		[value]"Воровское украшение"
+
+	[tag]"icon path"	[value]"Thief's Trinket"
+	[tag]"base class"	[value]"Trinket"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

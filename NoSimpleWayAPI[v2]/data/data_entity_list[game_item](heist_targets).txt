@@ -1,0 +1,811 @@
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Golden Xoplotli Idol"
+	[tag]"name EN"		[value]"Golden Xoplotli Idol(Priceless)"
+	[tag]"name RU"		[value]"Золотой идол Хецапаль"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Golden Slave Idol"
+	[tag]"name EN"		[value]"Golden Slave Idol(Priceless)"
+	[tag]"name RU"		[value]"Золотой идол раба"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sword of the Inverse Relic"
+	[tag]"name EN"		[value]"Sword of the Inverse Relic(Priceless)"
+	[tag]"name RU"		[value]"Меч вывернутой реликвии"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Staff of the first Sin Eater"
+	[tag]"name EN"		[value]"Staff of the first Sin Eater(Precious)"
+	[tag]"name RU"		[value]"Посох первого поедателя греха"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Orbala's Fifth Adventure"
+	[tag]"name EN"		[value]"Orbala's Fifth Adventure(Precious)"
+	[tag]"name RU"		[value]"Пятое приключение Орбалы"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Dekhara's Resolve"
+	[tag]"name EN"		[value]"Dekhara's Resolve(Precious)"
+	[tag]"name RU"		[value]"Решительность Дехары"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Blood of Innocence"
+	[tag]"name EN"		[value]"Blood of Innocence(Precious)"
+	[tag]"name RU"		[value]"Кровь Невинности"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ancient Seal"
+	[tag]"name EN"		[value]"Ancient Seal(Precious)"
+	[tag]"name RU"		[value]"Древняя печать"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Essence Burner"
+	[tag]"name EN"		[value]"Essence Burner(Precious)"
+	[tag]"name RU"		[value]"Курильница Сущности"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Golden Napuatzi Idol"
+	[tag]"name EN"		[value]"Golden Napuatzi Idol(High value)"
+	[tag]"name RU"		[value]"Золотой идол Напуаци"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Seal of Solaris"
+	[tag]"name EN"		[value]"Seal of Solaris(High value)"
+	[tag]"name RU"		[value]"Печать Солярис"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"The Sea Pearl Heirloom"
+	[tag]"name EN"		[value]"The Sea Pearl Heirloom(High value)"
+	[tag]"name RU"		[value]"Фамильный морской жемчуг"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Golden Matatl Idol"
+	[tag]"name EN"		[value]"Golden Matatl Idol(High value)"
+	[tag]"name RU"		[value]"Золотой идол Мататля"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Seal of Lunaris"
+	[tag]"name EN"		[value]"Seal of Lunaris(High value)"
+	[tag]"name RU"		[value]"Печать Лунарис"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Living Ice"
+	[tag]"name EN"		[value]"Living Ice(High value)"
+	[tag]"name RU"		[value]"Живой лёд"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Impossible Crystal"
+	[tag]"name EN"		[value]"Impossible Crystal(High value)"
+	[tag]"name RU"		[value]"Невозможный кристалл"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"The Golden Ibis"
+	[tag]"name EN"		[value]"The Golden Ibis(High value)"
+	[tag]"name RU"		[value]"Золотой ибис"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"The Goddess of Water"
+	[tag]"name EN"		[value]"The Goddess of Water(High value)"
+	[tag]"name RU"		[value]"Богиня воды"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Forbidden Lamp"
+	[tag]"name EN"		[value]"Forbidden Lamp(High value)"
+	[tag]"name RU"		[value]"Запретная лампа"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Flask of Welakath"
+	[tag]"name EN"		[value]"Flask of Welakath(High value)"
+	[tag]"name RU"		[value]"Флакон Велаката"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Golden Hetzapal Idol"
+	[tag]"name EN"		[value]"Golden Hetzapal Idol(High value)"
+	[tag]"name RU"		[value]"Золотой идол Хецапаль"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Bust of Emperor Caspiro"
+	[tag]"name EN"		[value]"Bust of Emperor Caspiro(High value)"
+	[tag]"name RU"		[value]"Бюст императора Каспиро"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Mirror of Teklatipitzi"
+	[tag]"name EN"		[value]"Mirror of Teklatipitzi(High value)"
+	[tag]"name RU"		[value]"Зеркало Теклатипитци"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Enigmatic Assembly D1"
+	[tag]"name EN"		[value]"Enigmatic Assembly D1(Moderate value)"
+	[tag]"name RU"		[value]"Загадочный механизм D1"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Enigmatic Assembly C5"
+	[tag]"name EN"		[value]"Enigmatic Assembly C5(Moderate value)"
+	[tag]"name RU"		[value]"Загадочный механизм C5"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Enigmatic Assembly B2"
+	[tag]"name EN"		[value]"Enigmatic Assembly B2(Moderate value)"
+	[tag]"name RU"		[value]"Загадочный механизм B2"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Enigmatic Assembly A4"
+	[tag]"name EN"		[value]"Enigmatic Assembly A4(Moderate value)"
+	[tag]"name RU"		[value]"Загадочный механизм A4"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Heart Coil"
+	[tag]"name EN"		[value]"Heart Coil(Moderate value)"
+	[tag]"name RU"		[value]"Сердечная катушка"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Urn of the Original Ashes"
+	[tag]"name EN"		[value]"Urn of the Original Ashes(Moderate value)"
+	[tag]"name RU"		[value]"Урна первозданного праха"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Celestial Stone"
+	[tag]"name EN"		[value]"Celestial Stone(Moderate Value)"
+	[tag]"name RU"		[value]"Небесный камень"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Tusked Hominid Skull"
+	[tag]"name EN"		[value]"Tusked Hominid Skull(Moderate Value)"
+	[tag]"name RU"		[value]"Череп гоминида с бивнями"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ogham Candelabra"
+	[tag]"name EN"		[value]"Ogham Candelabra(Moderate Value)"
+	[tag]"name RU"		[value]"Огамский канделябр"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Alchemical Chalice"
+	[tag]"name EN"		[value]"Alchemical Chalice(Moderate Value)"
+	[tag]"name RU"		[value]"Алхимическая чаша"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Admiral Proclar's Pipe"
+	[tag]"name EN"		[value]"Admiral Proclar's Pipe(Moderate Value)"
+	[tag]"name RU"		[value]"Трубка адмирала Проклера"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Abberathine Horns"
+	[tag]"name EN"		[value]"Abberathine Horns(Moderate Value)"
+	[tag]"name RU"		[value]"Аберратовы рога"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Hand of Arimor"
+	[tag]"name EN"		[value]"Hand of Arimor(Moderate Value)"
+	[tag]"name RU"		[value]"Рука Аримора"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Hand of Arimor"
+	[tag]"name EN"		[value]"Hand of Arimor(Moderate Value)"
+	[tag]"name RU"		[value]"Рука Аримора"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ez Myrae Tome"
+	[tag]"name EN"		[value]"Ez Myrae Tome(Moderate Value)"
+	[tag]"name RU"		[value]"Фолиант Аз Мири"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crest of Ezomyr"
+	[tag]"name EN"		[value]"Crest of Ezomyr(Moderate Value)"
+	[tag]"name RU"		[value]"Венец эзомита"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Incense of Keth"
+	[tag]"name EN"		[value]"Incense of Keth(Moderate Value)"
+	[tag]"name RU"		[value]"Кетская курильница"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Box of Tripyxis"
+	[tag]"name EN"		[value]"Box of Tripyxis(Moderate Value)"
+	[tag]"name RU"		[value]"Шкатулка из Трипикса"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Urn of Farud"
+	[tag]"name EN"		[value]"Urn of Farud(Moderate Value)"
+	[tag]"name RU"		[value]"Урна Фаруда"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Golden Sacrificial Glyph"
+	[tag]"name EN"		[value]"Golden Sacrificial Glyph(Low Value)"
+	[tag]"name RU"		[value]"Золотой глиф для жертвоприношений"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Golden Grotesque"
+	[tag]"name EN"		[value]"Golden Grotesque(Low Value)"
+	[tag]"name RU"		[value]"Золотой гротеск"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Golden Prayer Idol"
+	[tag]"name EN"		[value]"Golden Prayer Idol(Low Value)"
+	[tag]"name RU"		[value]"Золотой молящийся идол"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Golden Ceremonial Mask"
+	[tag]"name EN"		[value]"Golden Ceremonial Mask(Low Value)"
+	[tag]"name RU"		[value]"Золотая церемониальная маска"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crested Golden Idol"
+	[tag]"name EN"		[value]"Crested Golden Idol(Low Value)"
+	[tag]"name RU"		[value]"Золотой идол с гербом"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ceremonial Goblet"
+	[tag]"name EN"		[value]"Ceremonial Goblet(Low Value)"
+	[tag]"name RU"		[value]"Церемониальный кубок"
+
+	[tag]"icon path"	[value]"HeistTarget"
+	[tag]"base class"	[value]"Heist Target"
+	
+	[tag]"item tag"		[value]"Heist target"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

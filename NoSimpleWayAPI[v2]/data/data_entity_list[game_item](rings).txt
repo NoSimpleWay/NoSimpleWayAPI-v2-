@@ -1,0 +1,396 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Amethyst Ring"
+	[tag]"name RU"		[value]"Кольцо с аметистом"
+
+	[tag]"icon path"	[value]"Amethyst_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Breach Ring"
+	[tag]"name RU"		[value]"Кольцо Разлома"
+
+	[tag]"icon path"	[value]"Breach_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cerulean Ring"
+	[tag]"name RU"		[value]"Кольцо с аквамарином"
+
+	[tag]"icon path"	[value]"Cerulean_Ring"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Rare base"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cogwork Ring"
+	[tag]"name RU"		[value]"Шестерёнчатое кольцо"
+
+	[tag]"icon path"	[value]"SuperRing"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Coral Ring"
+	[tag]"name RU"		[value]"Кольцо с кораллом"
+
+	[tag]"icon path"	[value]"Coral_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Diamond Ring"
+	[tag]"name RU"		[value]"Кольцо с бриллиантом"
+
+	[tag]"icon path"	[value]"Diamond_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Geodesic Ring"
+	[tag]"name RU"		[value]"Геодезическое кольцо"
+
+	[tag]"icon path"	[value]"SuperRing"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist base"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gold Ring"
+	[tag]"name RU"		[value]"Золотое кольцо"
+
+	[tag]"icon path"	[value]"Gold_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Iron Ring"
+	[tag]"name RU"		[value]"Железное кольцо"
+
+	[tag]"icon path"	[value]"Iron_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Moonstone Ring"
+	[tag]"name RU"		[value]"Кольцо с лунным камнем"
+
+	[tag]"icon path"	[value]"Moonstone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Opal Ring"
+	[tag]"name RU"		[value]"Опаловое кольцо"
+
+	[tag]"icon path"	[value]"Opal_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Paua Ring"
+	[tag]"name RU"		[value]"Кольцо с ракушкой"
+
+	[tag]"icon path"	[value]"Paua_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prismatic Ring"
+	[tag]"name RU"		[value]"Радужное кольцо"
+
+	[tag]"icon path"	[value]"Prismatic_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ruby Ring"
+	[tag]"name RU"		[value]"Кольцо с рубином"
+
+	[tag]"icon path"	[value]"Ruby_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sapphire Ring"
+	[tag]"name RU"		[value]"Кольцо с сапфиром"
+
+	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Steel Ring"
+	[tag]"name RU"		[value]"Стальное кольцо"
+
+	[tag]"icon path"	[value]"Steel_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Good for attack build"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Topaz Ring"
+	[tag]"name RU"		[value]"Кольцо с топазом"
+
+	[tag]"icon path"	[value]"Topaz_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Two-Stone Ring"
+	[tag]"name RU"		[value]"Кольцо с двумя камнями"
+
+	[tag]"icon path"	[value]"Two-Stone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unset Ring"
+	[tag]"name RU"		[value]"Кольцо без камня"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vermillion Ring"
+	[tag]"name RU"		[value]"Кольцо с киноварью"
+
+	[tag]"icon path"	[value]"Vermillion_Ring"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Rare base"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ring"
+	[tag]"name RU"		[value]"Кольцо"
+
+	[tag]"icon path"	[value]"MirrorRing"
+	
+	[tag]"base class"	[value]"Ring"
+	
+	[tag]"item tag"		[value]"Expensive base for unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	
+	[tag]"worth"		[value]"Very expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gloam Ring"
+	[tag]"name RU"		[value]"Мглистое кольцо"
+
+	[tag]"icon path"	[value]"GloamRing"
+	
+	[tag]"base class"	[value]"Ring"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Penumbra Ring"
+	[tag]"name RU"		[value]"Кольцо полутени"
+
+	[tag]"icon path"	[value]"PenumbraRing"
+	
+	[tag]"base class"	[value]"Ring"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Shadowed Ring"
+	[tag]"name RU"		[value]"Затенённое кольцо"
+
+	[tag]"icon path"	[value]"ShadowedRing"
+	
+	[tag]"base class"	[value]"Ring"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tenebrous Ring"
+	[tag]"name RU"		[value]"Тусклое кольцо"
+
+	[tag]"icon path"	[value]"TenebrousRing"
+	
+	[tag]"base class"	[value]"Ring"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	
+	[tag]"worth"		[value]"Trash"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Iolite Ring"
+	[tag]"name RU"		[value]"Иолитовое кольцо"
+
+	[tag]"icon path"	[value]"IoliteRing"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Rare base"
+	[tag]"worth"		[value]"Common"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

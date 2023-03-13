@@ -1,0 +1,169 @@
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Aggregator Charm"
+	[tag]"name RU"		[value]"Накопительный оберег"
+
+	[tag]"icon path"	[value]"Charm"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Burst Band"
+	[tag]"name RU"		[value]"Высвобождающее ожерелье"
+
+	[tag]"icon path"	[value]"Ward"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Conduit Line"
+	[tag]"name RU"		[value]"Проводящая цепочка"
+
+	[tag]"icon path"	[value]"Ward"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fine Sharpening Stone"
+	[tag]"name RU"		[value]"Мелкий оселок"
+
+	[tag]"icon path"	[value]"Sharpstone"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flanged Arrowhead"
+	[tag]"name RU"		[value]"Рубчатый наконечник"
+
+	[tag]"icon path"	[value]"Arrow"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Focal Stone"
+	[tag]"name RU"		[value]"Фокусирующий камень"
+
+	[tag]"icon path"	[value]"Stone"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragmenting Arrowhead"
+	[tag]"name RU"		[value]"Раскалывающий наконечник"
+
+	[tag]"icon path"	[value]"Arrow"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hollowpoint Arrowhead"
+	[tag]"name RU"		[value]"Сминающий наконечник"
+
+	[tag]"icon path"	[value]"Arrow"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Obsidian Sharpening Stone"
+	[tag]"name RU"		[value]"Обсидиановый оселок"
+
+	[tag]"icon path"	[value]"Sharpstone"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Precise Arrowhead"
+	[tag]"name RU"		[value]"Точный наконечник"
+
+	[tag]"icon path"	[value]"Arrow"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rough Sharpening Stone"
+	[tag]"name RU"		[value]"Грубый оселок"
+
+	[tag]"icon path"	[value]"Sharpstone"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Standard Sharpening Stone"
+	[tag]"name RU"		[value]"Обычный оселок"
+
+	[tag]"icon path"	[value]"Sharpstone"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

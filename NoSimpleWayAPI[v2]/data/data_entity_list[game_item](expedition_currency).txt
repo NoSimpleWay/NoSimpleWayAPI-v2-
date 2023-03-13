@@ -1,0 +1,294 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Exotic Coinage"
+	[tag]"name RU"		[value]"Диковинные монеты"
+
+	[tag]"icon path"	[value]"Coinage"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Scrap Metal"
+	[tag]"name RU"		[value]"Металлолом"
+
+	[tag]"icon path"	[value]"MetalScrap"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Astragali"
+	[tag]"name RU"		[value]"Таранные кости"
+
+	[tag]"icon path"	[value]"Astragali"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Burial Medallion"
+	[tag]"name RU"		[value]"Погребальный медальон"
+
+	[tag]"icon path"	[value]"BurialMedallion"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lesser Broken Circle Artifact"
+	[tag]"name RU"		[value]"Мелкий артефакт Разомкнутого круга"
+
+	[tag]"icon path"	[value]"LesserBrokenCircleArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Common Broken Circle Artifact"
+	[tag]"name RU"		[value]"Средний артефакт Разомкнутого круга"
+
+	[tag]"icon path"	[value]"CommonBrokenCircleArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Greater Broken Circle Artifact"
+	[tag]"name RU"		[value]"Крупный артефакт Разомкнутого круга"
+
+	[tag]"icon path"	[value]"GreaterBrokenCircleArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grand Broken Circle Artifact"
+	[tag]"name RU"		[value]"Великий артефакт Разомкнутого круга"
+
+	[tag]"icon path"	[value]"GrandBrokenCircleArtifact_png"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lesser Black Scythe Artifact"
+	[tag]"name RU"		[value]"Мелкий артефакт Чёрной косы"
+
+	[tag]"icon path"	[value]"LesserBlackScytheArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Common Black Scythe Artifact"
+	[tag]"name RU"		[value]"Средний артефакт Чёрной косы"
+
+	[tag]"icon path"	[value]"CommonBlackScytheArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Greater Black Scythe Artifact"
+	[tag]"name RU"		[value]"Крупный артефакт Чёрной косы"
+
+	[tag]"icon path"	[value]"GreaterBlackScytheArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grand Black Scythe Artifact"
+	[tag]"name RU"		[value]"Великий артефакт Чёрной косы"
+
+	[tag]"icon path"	[value]"GrandBlackScytheArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lesser Order Artifact"
+	[tag]"name RU"		[value]"Мелкий артефакт Ордена"
+
+	[tag]"icon path"	[value]"LesserOrderArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Common Order Artifact"
+	[tag]"name RU"		[value]"Средний артефакт Ордена"
+
+	[tag]"icon path"	[value]"CommonOrderArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Greater Order Artifact"
+	[tag]"name RU"		[value]"Крупный артефакт Ордена"
+
+	[tag]"icon path"	[value]"GreaterOrderArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grand Order Artifact"
+	[tag]"name RU"		[value]"Великий артефакт Ордена"
+
+	[tag]"icon path"	[value]"GrandOrderArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lesser Sun Artifact"
+	[tag]"name RU"		[value]"Мелкий артефакт Солнца"
+
+	[tag]"icon path"	[value]"LesserSunArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Common Sun Artifact"
+	[tag]"name RU"		[value]"Средний артефакт Солнца"
+
+	[tag]"icon path"	[value]"CommonSunArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Greater Sun Artifact"
+	[tag]"name RU"		[value]"Крупный артефакт Солнца"
+
+	[tag]"icon path"	[value]"GreaterSunArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Grand Sun Artifact"
+	[tag]"name RU"		[value]"Великий артефакт Солнца"
+
+	[tag]"icon path"	[value]"GrandSunArtifact"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Expedition Logbook"
+	[tag]"name RU"		[value]"Журнал экспедиции"
+
+	[tag]"icon path"	[value]"ExpeditionLogbook"
+	[tag]"base class"	[value]"Expedition Logbook"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

@@ -1,0 +1,436 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Abyssal Incubator"
+	[tag]"name RU"		[value]"Инкубатор Бездны"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Cartographer's Incubator"
+	[tag]"name RU"		[value]"Инкубатор картографа"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Celestial Armoursmith's Incubator"
+	[tag]"name RU"		[value]"Небесный инкубатор бронника"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Celestial Blacksmith's Incubator"
+	[tag]"name RU"		[value]"Небесный инкубатор кузнеца"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Celestial Jeweller's Incubator"
+	[tag]"name RU"		[value]"Небесный инкубатор ювелира"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Decadent Incubator"
+	[tag]"name RU"		[value]"Гравированный инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Diviner's Incubator"
+	[tag]"name RU"		[value]"Инкубатор предсказателя"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eldritch Incubator"
+	[tag]"name RU"		[value]"Мистический инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Enchanted Incubator"
+	[tag]"name RU"		[value]"Зачарованный инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Feral Incubator"
+	[tag]"name RU"		[value]"Дикий инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fine Incubator"
+	[tag]"name RU"		[value]"Прекрасный инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Foreboding Incubator"
+	[tag]"name RU"		[value]"Таинственный инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"worth"		[value]"Common"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fossilised Incubator"
+	[tag]"name RU"		[value]"Ископаемый инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragmented Incubator"
+	[tag]"name RU"		[value]"Раздробленный инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gemcutter's Incubator"
+	[tag]"name RU"		[value]"Инкубатор камнереза"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Geomancer's Incubator"
+	[tag]"name RU"		[value]"Инкубатор геоманта"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Infused Incubator"
+	[tag]"name RU"		[value]"Заряженный инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Mysterious Incubator"
+	[tag]"name RU"		[value]"Загадочный инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Obscured Incubator"
+	[tag]"name RU"		[value]"Затемненный инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ornate Incubator"
+	[tag]"name RU"		[value]"Изысканный инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Otherworldly Incubator"
+	[tag]"name RU"		[value]"Потусторонний инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Primal Incubator"
+	[tag]"name RU"		[value]"Первобытный инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Singular Incubator"
+	[tag]"name RU"		[value]"Необычный инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Skittering Incubator"
+	[tag]"name RU"		[value]"Дёргающийся инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Thaumaturge's Incubator"
+	[tag]"name RU"		[value]"Инкубатор волшебника"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Time-Lost Incubator"
+	[tag]"name RU"		[value]"Затерянный во времени инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Whispering Incubator"
+	[tag]"name RU"		[value]"Шепчущий инкубатор"
+
+	[tag]"icon path"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Kalguuran Incubator"
+	[tag]"name RU"		[value]"Калгууранский инкубатор"
+
+	[tag]"icon path"	[value]"ExpeditionIncubator"
+	[tag]"base class"	[value]"Incubator"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+	
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blighted Incubator"
+	[tag]"name RU"		[value]"Заражённый инкубатор"
+
+	[tag]"icon path"	[value]"blight_incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Morphing Incubator"
+	[tag]"name RU"		[value]"Меняющийся инкубатор"
+
+	[tag]"icon path"	[value]"morphling_incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Maddening Incubator"
+	[tag]"name RU"		[value]"Одержимый инкубатор"
+
+	[tag]"icon path"	[value]"maddening_incubator"
+	[tag]"base class"	[value]"Incubator"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

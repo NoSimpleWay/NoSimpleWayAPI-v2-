@@ -1,0 +1,416 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Agate Amulet"
+	[tag]"name RU"		[value]"Амулет с агатом"
+
+	[tag]"icon path"	[value]"Agate_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Amber Amulet"
+	[tag]"name RU"		[value]"Амулет с янтарем"
+
+	[tag]"icon path"	[value]"Amber_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Breach unique item"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Astrolabe Amulet"
+	[tag]"name RU"		[value]"Амулет-астролябия"
+
+	[tag]"icon path"	[value]"SuperAmulet"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have influence"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blue Pearl Amulet"
+	[tag]"name RU"		[value]"Амулет с голубой жемчужиной"
+
+	[tag]"icon path"	[value]"Blue_Pearl_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Rare base"
+	
+	[tag]"worth"		[value]"Common"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Citrine Amulet"
+	[tag]"name RU"		[value]"Амулет с цитрином"
+
+	[tag]"icon path"	[value]"Citrine_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Clutching Talisman"
+	[tag]"name RU"		[value]"Сжимающий талисман"
+
+	[tag]"icon path"	[value]"Clutching_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Coral Amulet"
+	[tag]"name RU"		[value]"Амулет с кораллом"
+
+	[tag]"icon path"	[value]"Coral_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Gold Amulet"
+	[tag]"name RU"		[value]"Золотой амулет"
+
+	[tag]"icon path"	[value]"Gold_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Greatwolf Talisman"
+	[tag]"name RU"		[value]"Талисман Великого волка"
+
+	[tag]"icon path"	[value]"Greatwolf_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Jade Amulet"
+	[tag]"name RU"		[value]"Амулет с нефритом"
+
+	[tag]"icon path"	[value]"Jade_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Breach unique item"
+	
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lapis Amulet"
+	[tag]"name RU"		[value]"Амулет с лазуритом"
+
+	[tag]"icon path"	[value]"Lapis_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Breach unique item"
+	
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Marble Amulet"
+	[tag]"name RU"		[value]"Мраморный амулет"
+
+	[tag]"icon path"	[value]"Marble_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Rare base"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Onyx Amulet"
+	[tag]"name RU"		[value]"Амулет с ониксом"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Breach unique item"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Paua Amulet"
+	[tag]"name RU"		[value]"Амулет с ракушкой"
+
+	[tag]"icon path"	[value]"Paua_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rotfeather Talisman"
+	[tag]"name RU"		[value]"Талисман перогнильца"
+
+	[tag]"icon path"	[value]"Rotfeather_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Simplex Amulet"
+	[tag]"name RU"		[value]"Простой амулет"
+
+	[tag]"icon path"	[value]"SuperAmulet"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Talisman"
+	[tag]"name RU"		[value]"Талисман"
+
+	[tag]"icon path"	[value]"Talisman"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Non-game item"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Turquoise Amulet"
+	[tag]"name RU"		[value]"Амулет с бирюзой"
+
+	[tag]"icon path"	[value]"Turquoise_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for str based character"
+	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Wereclaw Talisman"
+	[tag]"name RU"		[value]"Талисман когтистого оборотня"
+
+	[tag]"icon path"	[value]"Wereclaw_Talisman_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Jewelry"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Talisman"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Seaglass Amulet"
+	[tag]"name RU"		[value]"Амулет из морского стекла"
+
+	[tag]"icon path"	[value]"seaglass_amulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Rare base"
+	
+	[tag]"item tag"		[value]"Good for attack build"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unset Amulet"
+	[tag]"name RU"		[value]"Амулет без камня"
+
+	[tag]"icon path"	[value]"UnsetAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Expensive base for unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Unset Amulet"
+	[tag]"name RU"		[value]"Амулет без камня"
+
+	[tag]"icon path"	[value]"UnsetAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Expensive base for unique"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Seaglass Amulet"
+	[tag]"name RU"		[value]"Амулет из морского стекла"
+
+	[tag]"icon path"	[value]"seaglass_amulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Rare base"
+	
+	[tag]"item tag"		[value]"Good for attack build"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
