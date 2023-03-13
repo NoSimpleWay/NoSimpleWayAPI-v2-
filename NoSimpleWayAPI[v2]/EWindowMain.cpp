@@ -1198,7 +1198,7 @@ void EDataActionCollection::action_select_loot_item_button(Entity* _entity, ECus
 		loot_button = static_cast<EntityButtonLootItem*>(_entity);
 
 	if (false)
-		for (EGameItemAttributeContainer attribute_container : loot_button->stored_game_item->attribute_container_list)
+	for (EGameItemAttributeContainer attribute_container : loot_button->stored_game_item->attribute_container_list)
 		{
 			EInputCore::logger_param("attribute name", attribute_container.target_attribute->localisation.localisations[ELocalisationText::active_localisation]);
 
@@ -1224,9 +1224,34 @@ void EDataActionCollection::action_select_loot_item_button(Entity* _entity, ECus
 
 	EWindowMain::loot_simulator_button_group->generate_info_buttons_for_right_side(loot_button);
 
-	//need_translate = -loot_button->matched_filter_blocks.back()->region_gabarite->world_position_y;
+	/*EInputCore::logger_param("size of suitable blocks", loot_button->matched_filter_blocks.size());
+	for (EButtonGroup* group : loot_button->matched_filter_blocks)
+	{
+		group->highlight_time = 30.0f;
+	}*/
 
-	//EWindowMain::loot_filter_editor->translate_content(0.0f, need_translate, 0.0f, false);
+	if (loot_button->matched_filter_blocks.size() == 1)
+	{
+		if
+		(
+			(loot_button->matched_filter_blocks.back()->attached_separator != nullptr)
+			&&
+			!(loot_button->matched_filter_blocks.back()->attached_separator->is_expanded)
+		)
+		{
+			loot_button->matched_filter_blocks.back()->attached_separator->is_expanded = true;
+
+			EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+		}
+
+		EWindowMain::loot_filter_editor->scroll_y = max(-loot_button->matched_filter_blocks.back()->region_gabarite->offset_y, 0.0f);
+		EWindowMain::loot_filter_editor->slider->current_value = EWindowMain::loot_filter_editor->scroll_y;
+
+		loot_button->matched_filter_blocks.back()->highlight_this_group();
+		
+
+		EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+	}
 
 }
 
@@ -1871,6 +1896,7 @@ EWindowMain::EWindowMain()
 
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item].txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](heist_tool).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](oils).txt");
 
 	ETextParser::data_entity_parse_file("data/data_entity_list[influence].txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[base_class].txt");
@@ -10614,8 +10640,8 @@ void EWindowMain::register_loot_simulator_patterns()
 	register_pattern_oils_and_catalysts();
 
 	register_pattern_top_tier_bases();
-	register_pattern_all_equip_low_level();
-	register_pattern_all_equip_high_level();
+	register_pattern_all_equip();
+	//register_pattern_all_equip_high_level();
 
 	register_pattern_delve_items();
 	register_pattern_breach_items();
@@ -12609,519 +12635,492 @@ void EWindowMain::register_pattern_breach_items()
 	}
 }
 
-void EWindowMain::register_pattern_all_equip_high_level()
-{
-	//		ALL EQUIP (high level)
-	{
-		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
-
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All equipable\\n(high level)";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Вся экипировка\\n(высокий уровень)";
-		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_all_equip");
-
-		/////////////////////////////			ITEM GENERATOR (ALL GLOVES)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Gloves");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 75;
-				value_generator->max_value = 83;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->chance_to_generate = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (ALL BOOTS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Boots");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 75;
-				value_generator->max_value = 83;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->chance_to_generate = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (ALL HELMETS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("HELMETS");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 75;
-				value_generator->max_value = 83;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->chance_to_generate = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-
-
-		/////////////////////////////			ITEM GENERATOR (ALL BODY AROURS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Body Armours");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 75;
-				value_generator->max_value = 83;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->chance_to_generate = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 5;
-				value_generator->sockets_max_value = 6;
-
-				value_generator->links_min = 4;
-				value_generator->links_max = 6;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (JEWELRY)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
-			game_item_generator->generations_count = 3;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Rings");
-			tag_filter->suitable_values.push_back("Amulets");
-			tag_filter->suitable_values.push_back("Belts");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			tag_filter->banned_tags.push_back("Expensive base for unique");
-			tag_filter->banned_tags.push_back("Rare base");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 75;
-				value_generator->max_value = 83;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->chance_to_generate = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
-
-	}
-}
-
-void EWindowMain::register_pattern_all_equip_low_level()
+//void EWindowMain::register_pattern_all_equip()
+//{
+//	//		ALL EQUIP (high level)
+//	{
+//		LootSimulatorPattern*
+//			loot_simulator_pattern = new LootSimulatorPattern;
+//
+//		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All equipable\\n(high level)";
+//		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Вся экипировка\\n(высокий уровень)";
+//		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_all_equip");
+//
+//		/////////////////////////////			ITEM GENERATOR (ALL GLOVES)			/////////////////////////////////////////////
+//		{
+//			GameItemGenerator*
+//				game_item_generator = new GameItemGenerator();
+//			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+//
+//			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+//			game_item_generator->random_selection_count = 8;
+//
+//
+//			LootSimulatorTagFilter*
+//				tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "item tag";
+//			tag_filter->suitable_values.push_back("Item slot");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "base class";
+//			tag_filter->suitable_values.push_back("Gloves");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "item tag";
+//			tag_filter->banned_tags.push_back("Deleted");
+//			tag_filter->banned_tags.push_back("Heist base");
+//			tag_filter->banned_tags.push_back("Top tier base");
+//			tag_filter->banned_tags.push_back("Ritual base top");
+//			tag_filter->banned_tags.push_back("Ritual base medium");
+//			tag_filter->banned_tags.push_back("Ritual base low");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			game_item_generator->add_rarity(0, 3, 1.5f);
+//			game_item_generator->add_item_level(-3, 3, 1.0f);
+//
+//			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorItemInfluence*
+//					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+//
+//				//		parameters
+//				value_generator->chance_to_generate = 0.1f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorSocketsLinksColours*
+//					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+//
+//				//		parameters
+//				value_generator->sockets_min_value = 1;
+//				value_generator->sockets_max_value = 4;
+//
+//				value_generator->links_min = 1;
+//				value_generator->links_max = 4;
+//
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//		}
+//
+//		/////////////////////////////			ITEM GENERATOR (ALL BOOTS)			/////////////////////////////////////////////
+//		{
+//			GameItemGenerator*
+//				game_item_generator = new GameItemGenerator();
+//			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+//
+//			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+//			game_item_generator->random_selection_count = 8;
+//
+//
+//			LootSimulatorTagFilter*
+//				tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "item tag";
+//			tag_filter->suitable_values.push_back("Item slot");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "base class";
+//			tag_filter->suitable_values.push_back("Boots");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "item tag";
+//			tag_filter->banned_tags.push_back("Deleted");
+//			tag_filter->banned_tags.push_back("Heist base");
+//			tag_filter->banned_tags.push_back("Top tier base");
+//			tag_filter->banned_tags.push_back("Ritual base top");
+//			tag_filter->banned_tags.push_back("Ritual base medium");
+//			tag_filter->banned_tags.push_back("Ritual base low");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			/////////////////////////////			RARITY			/////////////////////////////////////////////
+//			{
+//				//		value
+//				GameAttributeGeneratorRarity*
+//					value_generator = new GameAttributeGeneratorRarity("Rarity");
+//
+//
+//				//		parameters
+//				value_generator->min_value = 0;
+//				value_generator->max_value = 3;
+//				value_generator->generator_pow = 1.0f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorMinMaxInt*
+//					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+//
+//				//		parameters
+//				value_generator->min_value = 75;
+//				value_generator->max_value = 83;
+//				value_generator->generator_pow = 1.0f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorItemInfluence*
+//					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+//
+//				//		parameters
+//				value_generator->chance_to_generate = 0.1f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorSocketsLinksColours*
+//					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+//
+//				//		parameters
+//				value_generator->sockets_min_value = 1;
+//				value_generator->sockets_max_value = 4;
+//
+//				value_generator->links_min = 1;
+//				value_generator->links_max = 4;
+//
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//		}
+//
+//		/////////////////////////////			ITEM GENERATOR (ALL HELMETS)			/////////////////////////////////////////////
+//		{
+//			GameItemGenerator*
+//				game_item_generator = new GameItemGenerator();
+//			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+//
+//			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+//			game_item_generator->random_selection_count = 8;
+//
+//
+//			LootSimulatorTagFilter*
+//				tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "item tag";
+//			tag_filter->suitable_values.push_back("Item slot");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "base class";
+//			tag_filter->suitable_values.push_back("HELMETS");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "item tag";
+//			tag_filter->banned_tags.push_back("Deleted");
+//			tag_filter->banned_tags.push_back("Heist base");
+//			tag_filter->banned_tags.push_back("Top tier base");
+//			tag_filter->banned_tags.push_back("Ritual base top");
+//			tag_filter->banned_tags.push_back("Ritual base medium");
+//			tag_filter->banned_tags.push_back("Ritual base low");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			/////////////////////////////			RARITY			/////////////////////////////////////////////
+//			{
+//				//		value
+//				GameAttributeGeneratorRarity*
+//					value_generator = new GameAttributeGeneratorRarity("Rarity");
+//
+//
+//				//		parameters
+//				value_generator->min_value = 0;
+//				value_generator->max_value = 3;
+//				value_generator->generator_pow = 2.0f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorMinMaxInt*
+//					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+//
+//				//		parameters
+//				value_generator->min_value = 75;
+//				value_generator->max_value = 83;
+//				value_generator->generator_pow = 1.0f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorItemInfluence*
+//					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+//
+//				//		parameters
+//				value_generator->chance_to_generate = 0.1f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorSocketsLinksColours*
+//					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+//
+//				//		parameters
+//				value_generator->sockets_min_value = 1;
+//				value_generator->sockets_max_value = 4;
+//
+//				value_generator->links_min = 1;
+//				value_generator->links_max = 4;
+//
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//		}
+//
+//
+//
+//		/////////////////////////////			ITEM GENERATOR (ALL BODY AROURS)			/////////////////////////////////////////////
+//		{
+//			GameItemGenerator*
+//				game_item_generator = new GameItemGenerator();
+//			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+//
+//			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+//			game_item_generator->random_selection_count = 8;
+//
+//
+//			LootSimulatorTagFilter*
+//				tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "item tag";
+//			tag_filter->suitable_values.push_back("Item slot");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "base class";
+//			tag_filter->suitable_values.push_back("Body Armours");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "item tag";
+//			tag_filter->banned_tags.push_back("Deleted");
+//			tag_filter->banned_tags.push_back("Heist base");
+//			tag_filter->banned_tags.push_back("Top tier base");
+//			tag_filter->banned_tags.push_back("Ritual base top");
+//			tag_filter->banned_tags.push_back("Ritual base medium");
+//			tag_filter->banned_tags.push_back("Ritual base low");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			/////////////////////////////			RARITY			/////////////////////////////////////////////
+//			{
+//				//		value
+//				GameAttributeGeneratorRarity*
+//					value_generator = new GameAttributeGeneratorRarity("Rarity");
+//
+//
+//				//		parameters
+//				value_generator->min_value = 0;
+//				value_generator->max_value = 3;
+//				value_generator->generator_pow = 2.0f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorMinMaxInt*
+//					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+//
+//				//		parameters
+//				value_generator->min_value = 75;
+//				value_generator->max_value = 83;
+//				value_generator->generator_pow = 1.0f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorItemInfluence*
+//					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+//
+//				//		parameters
+//				value_generator->chance_to_generate = 0.1f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorSocketsLinksColours*
+//					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+//
+//				//		parameters
+//				value_generator->sockets_min_value = 5;
+//				value_generator->sockets_max_value = 6;
+//
+//				value_generator->links_min = 4;
+//				value_generator->links_max = 6;
+//
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
+//				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//		}
+//
+//		/////////////////////////////			ITEM GENERATOR (JEWELRY)			/////////////////////////////////////////////
+//		{
+//			GameItemGenerator*
+//				game_item_generator = new GameItemGenerator();
+//			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+//
+//			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+//			game_item_generator->generations_count = 3;
+//
+//
+//			LootSimulatorTagFilter*
+//				tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "base class";
+//			tag_filter->suitable_values.push_back("Rings");
+//			tag_filter->suitable_values.push_back("Amulets");
+//			tag_filter->suitable_values.push_back("Belts");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			tag_filter = new LootSimulatorTagFilter;
+//			tag_filter->target_tag = "item tag";
+//			tag_filter->banned_tags.push_back("Deleted");
+//			tag_filter->banned_tags.push_back("Heist base");
+//			tag_filter->banned_tags.push_back("Top tier base");
+//			tag_filter->banned_tags.push_back("Ritual base top");
+//			tag_filter->banned_tags.push_back("Ritual base medium");
+//			tag_filter->banned_tags.push_back("Ritual base low");
+//			tag_filter->banned_tags.push_back("Expensive base for unique");
+//			tag_filter->banned_tags.push_back("Rare base");
+//			game_item_generator->filtered_by_tags.push_back(tag_filter);
+//
+//
+//
+//			/////////////////////////////			RARITY			/////////////////////////////////////////////
+//			{
+//				//		value
+//				GameAttributeGeneratorRarity*
+//					value_generator = new GameAttributeGeneratorRarity("Rarity");
+//
+//
+//				//		parameters
+//				value_generator->min_value = 0;
+//				value_generator->max_value = 3;
+//				value_generator->generator_pow = 2.0f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorMinMaxInt*
+//					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
+//
+//				//		parameters
+//				value_generator->min_value = 75;
+//				value_generator->max_value = 83;
+//				value_generator->generator_pow = 1.0f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//
+//			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
+//			{
+//
+//				//		value
+//				GameAttributeGeneratorItemInfluence*
+//					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+//
+//				//		parameters
+//				value_generator->chance_to_generate = 0.1f;
+//
+//				game_item_generator->attribute_generators_list.push_back(value_generator);
+//			}
+//		}
+//
+//		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+//
+//	}
+//}
+
+void EWindowMain::register_pattern_all_equip()
 {
 	//		ALL EQUIP (low level)
 	{
 		LootSimulatorPattern*
 			loot_simulator_pattern = new LootSimulatorPattern;
 
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All equipable\\n(low level)";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Вся экипировка\\n(низкий уровень)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All equipable";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Вся экипировка";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_all_equip");
 
 		/////////////////////////////			ITEM GENERATOR (ALL GLOVES)			/////////////////////////////////////////////
@@ -13131,7 +13130,7 @@ void EWindowMain::register_pattern_all_equip_low_level()
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
+			game_item_generator->random_selection_count = 24;
 
 
 			LootSimulatorTagFilter*
@@ -13145,108 +13144,8 @@ void EWindowMain::register_pattern_all_equip_low_level()
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
 			tag_filter->suitable_values.push_back("Gloves");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 68;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->chance_to_generate = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (ALL BOOTS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
 			tag_filter->suitable_values.push_back("Boots");
+			tag_filter->suitable_values.push_back("Helmets");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -13263,183 +13162,20 @@ void EWindowMain::register_pattern_all_equip_low_level()
 
 
 
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 75;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->chance_to_generate = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
+			game_item_generator->add_rarity(0, 3, 1.5f);
+			game_item_generator->add_item_level(-3 ,3, 1.0f);
+			game_item_generator->add_random_influence(0.05f);
+			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
 		}
 
-		/////////////////////////////			ITEM GENERATOR (ALL HELMETS)			/////////////////////////////////////////////
+		/////////////////////////////			ITEM GENERATOR (ALL BODY ARMOURS)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("HELMETS");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 75;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->chance_to_generate = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 1;
-				value_generator->sockets_max_value = 4;
-
-				value_generator->links_min = 1;
-				value_generator->links_max = 4;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-
-
-		/////////////////////////////			ITEM GENERATOR (ALL BODY AROURS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
-			game_item_generator->random_selection_count = 8;
+			game_item_generator->random_selection_count = 24;
 
 
 			LootSimulatorTagFilter*
@@ -13453,6 +13189,17 @@ void EWindowMain::register_pattern_all_equip_low_level()
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
 			tag_filter->suitable_values.push_back("Body Armours");
+
+			tag_filter->suitable_values.push_back("Two Hand Axes");
+			tag_filter->suitable_values.push_back("Two Hand Swords");
+			tag_filter->suitable_values.push_back("Two Hand Maces");
+
+			tag_filter->suitable_values.push_back("Bows");
+			tag_filter->suitable_values.push_back("Staves");
+			tag_filter->suitable_values.push_back("Warstaves");
+
+
+
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -13469,69 +13216,10 @@ void EWindowMain::register_pattern_all_equip_low_level()
 
 
 
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 75;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->chance_to_generate = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			SOCKETS			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorSocketsLinksColours*
-					value_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
-
-				//		parameters
-				value_generator->sockets_min_value = 4;
-				value_generator->sockets_max_value = 6;
-
-				value_generator->links_min = 4;
-				value_generator->links_max = 6;
-
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN] = 100;
-				value_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE] = 100;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
+			game_item_generator->add_rarity(0, 3, 1.5f);
+			game_item_generator->add_item_level(-3, 3, 1.0f);
+			game_item_generator->add_random_influence(0.05f);
+			game_item_generator->add_sockets_and_links(1, 6, 0, 6);
 		}
 
 		/////////////////////////////			ITEM GENERATOR (JEWELRY)			/////////////////////////////////////////////
@@ -13568,48 +13256,9 @@ void EWindowMain::register_pattern_all_equip_low_level()
 
 
 
-			/////////////////////////////			RARITY			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorRarity*
-					value_generator = new GameAttributeGeneratorRarity("Rarity");
-
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 3;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			ITEM LEVEL			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("ItemLevel");
-
-				//		parameters
-				value_generator->min_value = 0;
-				value_generator->max_value = 75;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			INFLUENCE			/////////////////////////////////////////////
-			{
-
-				//		value
-				GameAttributeGeneratorItemInfluence*
-					value_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
-
-				//		parameters
-				value_generator->chance_to_generate = 0.1f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
+			game_item_generator->add_rarity(0, 3, 1.5f);
+			game_item_generator->add_item_level(-3, 3, 1.0f);
+			game_item_generator->add_random_influence(0.05f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -16797,6 +16446,49 @@ void GameItemGenerator::add_rarity(int _rarity_min, int _rarity_max, float _pow)
 
 void GameItemGenerator::add_item_level(int _level_min, int _level_max, float _pow)
 {
+	GameAttributeGeneratorItemLevel*
+	value_generator = new GameAttributeGeneratorItemLevel("ItemLevel");
+
+	//		parameters
+	value_generator->min_value = _level_min;
+	value_generator->max_value = _level_max;
+	value_generator->generator_pow = _pow;
+
+	attribute_generators_list.push_back(value_generator);
+}
+
+void GameItemGenerator::add_random_influence(float _chance)
+{
+	//		value
+	GameAttributeGeneratorItemInfluence*
+	attribute_generator = new GameAttributeGeneratorItemInfluence("HasInfluence");
+
+	//		parameters
+	attribute_generator->chance_to_generate = _chance;
+
+	attribute_generators_list.push_back(attribute_generator);
+}
+
+GameAttributeGeneratorSocketsLinksColours* GameItemGenerator::add_sockets_and_links(int _min_sockets, int _max_sockets, int _min_links, int _max_links)
+{
+	//		value
+	GameAttributeGeneratorSocketsLinksColours*
+	attribute_generator = new GameAttributeGeneratorSocketsLinksColours("SocketGroup");
+
+	//		parameters
+	attribute_generator->sockets_min_value = _min_sockets;
+	attribute_generator->sockets_max_value = _max_sockets;
+
+	attribute_generator->links_min = _min_links;
+	attribute_generator->links_max = _min_links;
+
+	attribute_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_RED]	= 100;
+	attribute_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN]	= 100;
+	attribute_generator->color_weight[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE]	= 100;
+
+	attribute_generators_list.push_back(attribute_generator);
+
+	return attribute_generator;
 }
 
 void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _game_item)
@@ -16935,9 +16627,11 @@ void EGameItem::import_base_attributes_from_data_entity()
 
 void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBlockEditor* _filter_block_editor)
 {
-	bool break_detect = false;
+	bool break_detect_user = false;
+	matched_filter_blocks.clear();
 
 	//search from non-default filter blocks
+
 	for (EButtonGroup* group : _filter_block_editor->group_list)
 	if
 	(
@@ -16950,15 +16644,24 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 			EButtonGroupFilterBlock*
 			filter_block = static_cast<EButtonGroupFilterBlock*>(group);
 
-			if (EButtonGroupLootSimulator::this_group_is_matched(stored_game_item, filter_block))
+			if
+			(
+				(!break_detect_user)
+				&&
+				(EButtonGroupLootSimulator::this_group_is_matched(stored_game_item, filter_block))
+			)
 			{
-				matched_filter_blocks.push_back(filter_block);
+				bool any_detect = false;
+
+				
 				matched_show_hide_block = filter_block;
 
 				if (filter_block->color_check[0])
 				{
 					matched_bg_color = &filter_block->pointer_to_color_button[0]->stored_color;
 					matched_bg_color_block = filter_block;
+
+					any_detect = true;
 				}
 
 				if (filter_block->color_check[1])
@@ -16968,24 +16671,30 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 
 					main_text_area->set_color(filter_block->pointer_to_color_button[1]->stored_color);
 					matched_text_color_block = filter_block;
+
+					any_detect = true;
 				}
 
 				if (filter_block->color_check[2])
 				{
 					matched_rama_color = &filter_block->pointer_to_color_button[2]->stored_color;
 					matched_rama_color_block = filter_block;
+
+					any_detect = true;
 				}
 
 				if (filter_block->text_size_bool)
 				{
 					matched_size = &filter_block->text_size;
 					matched_size_block = filter_block;
+
+					any_detect = true;
 				}
 
 				//if not continue
 				if (filter_block->button_continue->selected_variant != 0)
 				{
-					break_detect = true;
+					break_detect_user = true;
 				}
 
 				if (filter_block->minimap_icon_color_suppressor_bool)
@@ -16997,19 +16706,36 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 					matched_minimap_icon_color_block = filter_block;
 					matched_minimap_icon_shape_block = filter_block;
 					matched_minimap_icon_size_block	= filter_block;
+
+					any_detect = true;
 				}
+
+				if (any_detect) { matched_filter_blocks.push_back(filter_block); }
 			}
 		}
 
-		if (break_detect) { break; }
+		if (break_detect_user) { break; }
 	}
 
-	break_detect = false;
+	bool break_detect_default = false;
 
+	//for undefined cosmetic elements
 	//search from default filter blocks
 	for (EButtonGroup* group : _filter_block_editor->group_list)
 	if
 	(
+		(
+			(matched_bg_color_block		== nullptr)
+			||
+			(matched_text_color_block	== nullptr)
+			||
+			(matched_rama_color_block	== nullptr)
+			||
+			(matched_size_block			== nullptr)
+			||
+			(matched_minimap_icon_color	== nullptr)
+		)
+		&&
 		(dynamic_cast<const EButtonGroupFilterBlock*>(group) != nullptr)
 		&&
 		(static_cast<EButtonGroupFilterBlock*>(group)->is_default_filter_block)
@@ -17021,8 +16747,10 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 
 			if (EButtonGroupLootSimulator::this_group_is_matched(stored_game_item, filter_block))
 			{
-				if (matched_show_hide_block == nullptr){ matched_show_hide_block = filter_block; }
-				matched_filter_blocks.push_back(filter_block);
+				bool any_detect = false;
+
+				
+				
 
 
 
@@ -17030,6 +16758,8 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 				{
 					matched_bg_color = &filter_block->pointer_to_color_button[0]->stored_color;
 					matched_bg_color_block = filter_block;
+					
+					any_detect = true;
 				}
 
 				if ((matched_text_color_block == nullptr) && (filter_block->color_check[1]))
@@ -17039,24 +16769,37 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 
 					main_text_area->set_color(filter_block->pointer_to_color_button[1]->stored_color);
 					matched_text_color_block = filter_block;
+
+					any_detect = true;
 				}
 
 				if ((matched_rama_color_block == nullptr) && (filter_block->color_check[2]))
 				{
 					matched_rama_color = &filter_block->pointer_to_color_button[2]->stored_color;
 					matched_rama_color_block = filter_block;
+
+					any_detect = true;
 				}
 
 				if ((matched_size_block == nullptr) && (filter_block->text_size_bool))
 				{
 					matched_size = &filter_block->text_size;
 					matched_size_block = filter_block;
+
+					any_detect = true;
+				}
+
+				if ((!break_detect_user) && (!break_detect_default))
+				{
+					matched_show_hide_block = filter_block;
+
+					any_detect = true;
 				}
 
 				//if not continue
 				if (filter_block->button_continue->selected_variant != 0)
 				{
-					break_detect = true;
+					break_detect_default = true;
 				}
 
 				if ((matched_minimap_icon_color_block == nullptr) && (filter_block->minimap_icon_color_suppressor_bool))
@@ -17068,11 +16811,20 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 					matched_minimap_icon_color_block = filter_block;
 					matched_minimap_icon_shape_block = filter_block;
 					matched_minimap_icon_size_block	= filter_block;
+
+					any_detect = true;
+				}
+				
+
+
+				if (any_detect) {
+					
+					matched_filter_blocks.push_back(filter_block);
 				}
 			}
 		}
 
-		if (break_detect) { break; }
+		if (break_detect_default) { break; }
 	}
 }
 
@@ -18306,4 +18058,18 @@ EntityButtonLootItemSuitableBlocks::EntityButtonLootItemSuitableBlocks()
 
 EntityButtonLootItemSuitableBlocks::~EntityButtonLootItemSuitableBlocks()
 {
+}
+
+void GameAttributeGeneratorItemLevel::execute_generation(EGameItem* _game_item)
+{
+	GameAttributeGeneratorMinMaxInt::execute_generation(_game_item);
+
+	ETextArea*
+	number_text = EWindowMain::loot_simulator_button_group->pointer_to_input_area_level_button->main_text_area;
+
+	if (EStringUtils::if_text_is_number(&number_text->original_text));
+	{
+		target_attribute_container->attribute_value_int = std::stoi(number_text->original_text) + target_attribute_container->attribute_value_int;
+		target_attribute_container->attribute_value_int = std::clamp(target_attribute_container->attribute_value_int, 0, 100);
+	}
 }

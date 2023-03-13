@@ -790,8 +790,8 @@ public:
 	static void register_pattern_maps();
 	static void register_pattern_delve_items();
 	static void register_pattern_breach_items();
-	static void register_pattern_all_equip_high_level();
-	static void register_pattern_all_equip_low_level();
+	static void register_pattern_all_equip();
+	//static void register_pattern_all_equip();
 	static void register_pattern_top_tier_bases();
 	static void register_pattern_oils_and_catalysts();
 	static void register_pattern_currencies_shard();
@@ -865,27 +865,32 @@ public:
 
 	EButtonGroupFilterBlock* matched_show_hide_block;
 
+	//BG COLOR
 	HSVRGBAColor** matched_bg_color;
 	EButtonGroupFilterBlock* matched_bg_color_block;
 
+	//TEXT COLOR
 	HSVRGBAColor** matched_text_color;
 	EButtonGroupFilterBlock* matched_text_color_block;
 
+	//RAMA COLOR
 	HSVRGBAColor** matched_rama_color;
 	EButtonGroupFilterBlock* matched_rama_color_block;
 
 
-
+	//MINIMAP ICONS
 	EntityButtonVariantRouter* matched_minimap_icon_shape;
 	EButtonGroupFilterBlock* matched_minimap_icon_shape_block;
 
+	//
 	EntityButtonVariantRouter* matched_minimap_icon_color;
 	EButtonGroupFilterBlock* matched_minimap_icon_color_block;
 
+	//
 	EntityButtonVariantRouter* matched_minimap_icon_size;
 	EButtonGroupFilterBlock* matched_minimap_icon_size_block;
 
-
+	//SIZE
 	float* matched_size;
 	EButtonGroupFilterBlock* matched_size_block;
 
@@ -954,6 +959,8 @@ public:
 	void execute_generation(EGameItem* _game_item);
 };
 
+
+
 struct GameAttributeGeneratorQuantity : public GameAttributeGeneratorMinMaxInt
 {
 public:
@@ -961,6 +968,16 @@ public:
 
 	void execute_generation(EGameItem* _game_item);
 };
+
+struct GameAttributeGeneratorItemLevel : public GameAttributeGeneratorMinMaxInt
+{
+public:
+	//pointer_to_input_area_level_button
+	GameAttributeGeneratorItemLevel(std::string _attribute_name) : GameAttributeGeneratorMinMaxInt(_attribute_name) {};
+
+	void execute_generation(EGameItem* _game_item);
+};
+
 struct GameAttributeGeneratorRarity : public GameAttributeGeneratorMinMaxInt
 {
 public:
@@ -1057,11 +1074,13 @@ public:
 	ELocalisationText						localisation;
 	ETextureGabarite* icon;
 
-	void									generate_game_item_list(std::vector<EGameItem*>* _target_list);
-	void									init_game_item(EGameItem* _game_item);
+	void										generate_game_item_list(std::vector<EGameItem*>* _target_list);
+	void										init_game_item(EGameItem* _game_item);
 
-	void									add_rarity		(int _rarity_min, int _rarity_max, float _pow);
-	void									add_item_level	(int _level_min, int _level_max, float _pow);
+	void										add_rarity				(int _rarity_min, int _rarity_max, float _pow);
+	void										add_item_level			(int _level_min, int _level_max, float _pow);
+	void										add_random_influence	(float _chance);
+	GameAttributeGeneratorSocketsLinksColours*	add_sockets_and_links	(int _min_sockets, int _max_sockets, int _min_links, int _max_links);
 
 };
 
