@@ -10,6 +10,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25,6 +27,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -39,6 +43,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -53,6 +59,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -67,6 +75,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -81,6 +91,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

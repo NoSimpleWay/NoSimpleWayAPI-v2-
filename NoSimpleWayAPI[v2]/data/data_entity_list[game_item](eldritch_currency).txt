@@ -16,6 +16,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"68"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32,6 +34,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"73"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -50,6 +56,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"78"
+	[tag]"stack multiplier"	[value]"0.25"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -71,11 +79,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"81"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -94,6 +111,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"68"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -110,6 +129,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"73"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -132,6 +153,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"drop level"	[value]"78"
+	[tag]"stack multiplier"	[value]"0.25"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -153,6 +176,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"81"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -172,6 +197,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"78"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -190,6 +217,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"78"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"1	0"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -210,6 +239,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

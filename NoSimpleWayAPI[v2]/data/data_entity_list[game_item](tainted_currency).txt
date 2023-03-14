@@ -15,6 +15,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"35"
+	[tag]"stack multiplier"	[value]"0.2"
+	[tag]"max stack size"	[value]"1	0"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -34,6 +36,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"2"
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -51,6 +55,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Tainted currency"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	
+	[tag]"drop level"	[value]"50"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -70,6 +78,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"8"
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -89,6 +99,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"35"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -108,6 +120,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"2"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -127,6 +141,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -146,6 +162,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"40"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -165,6 +183,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"12"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -184,6 +204,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"68"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

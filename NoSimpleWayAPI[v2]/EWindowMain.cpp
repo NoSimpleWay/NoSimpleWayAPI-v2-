@@ -1304,7 +1304,9 @@ void EDataActionCollection::action_add_items_from_this_loot_pattern(Entity* _ent
 
 	EButtonGroupLootSimulator::pointer_to_patterns_buttons_segment->selected_button = patter_button;
 
-	LootSimulatorPattern::refresh_loot_simulator(patter_button->target_pattern);
+	LootSimulatorPattern::execute_loot_pattern(patter_button->target_pattern);
+
+	EWindowMain::loot_simulator_button_group->seed = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 }
 
 void EDataActionCollection::action_create_or_delete_description_on_hover(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1672,9 +1674,18 @@ void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _tex
 
 void EDataActionCollection::action_refresh_loot_simulator_when_type(ETextArea* _text_area)
 {
-	if (EStringUtils::if_text_is_number(&_text_area->original_text))
+	if
+	(
+		(EStringUtils::if_text_is_number(&_text_area->original_text))
+		&&
+		(EWindowMain::loot_simulator_button_group->pointer_to_patterns_buttons_segment->selected_button != nullptr)
+	)
 	{
-		EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+		EntityButtonLootPatternSelector*
+		patter_button = static_cast<EntityButtonLootPatternSelector*>(EWindowMain::loot_simulator_button_group->pointer_to_patterns_buttons_segment->selected_button);
+
+		LootSimulatorPattern::execute_loot_pattern(patter_button->target_pattern);
+		//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
 	}
 }
 
@@ -12671,8 +12682,8 @@ void EWindowMain::register_pattern_breach_items()
 					value_generator = new GameAttributeGeneratorQuantity("StackSize");
 
 				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 10;
+				value_generator->min_value = 0.0f;
+				value_generator->max_value = 3.0f;
 				value_generator->generator_pow = 3.0f;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
@@ -12712,8 +12723,8 @@ void EWindowMain::register_pattern_breach_items()
 					value_generator = new GameAttributeGeneratorQuantity("StackSize");
 
 				//		parameters
-				value_generator->min_value = 10;
-				value_generator->max_value = 100;
+				value_generator->min_value = 0.0f;
+				value_generator->max_value = 3.0f;
 				value_generator->generator_pow = 3.0f;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
@@ -13711,8 +13722,8 @@ void EWindowMain::register_pattern_oils_and_catalysts()
 					value_generator = new GameAttributeGeneratorQuantity("StackSize");
 
 				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 20;
+				value_generator->min_value = 0.0f;
+				value_generator->max_value = 3.0f;
 				value_generator->generator_pow = 3.0f;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
@@ -13740,7 +13751,7 @@ void EWindowMain::register_pattern_currencies_shard()
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 3;
+			game_item_generator->generations_count = 1;
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 
@@ -13779,8 +13790,8 @@ void EWindowMain::register_pattern_currencies_shard()
 					value_generator = new GameAttributeGeneratorQuantity("StackSize");
 
 				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 20;
+				value_generator->min_value = 0.0f;
+				value_generator->max_value = 3.0f;
 				value_generator->generator_pow = 3.0f;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
@@ -13847,8 +13858,8 @@ void EWindowMain::register_pattern_tainted_currencies()
 					value_generator = new GameAttributeGeneratorQuantity("StackSize");
 
 				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 20;
+				value_generator->min_value = 0.0f;
+				value_generator->max_value = 3.0f;
 				value_generator->generator_pow = 3.0f;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
@@ -13915,9 +13926,9 @@ void EWindowMain::register_pattern_rare_currencies()
 					value_generator = new GameAttributeGeneratorQuantity("StackSize");
 
 				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 20;
-				value_generator->generator_pow = 1.0f;
+				value_generator->min_value = 0.0f;
+				value_generator->max_value = 3.0f;
+				value_generator->generator_pow = 3.0f;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
@@ -13982,9 +13993,9 @@ void EWindowMain::register_pattern_good_currencies()
 					value_generator = new GameAttributeGeneratorQuantity("StackSize");
 
 				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 20;
-				value_generator->generator_pow = 1.0f;
+				value_generator->min_value = 0.0f;
+				value_generator->max_value = 3.0f;
+				value_generator->generator_pow = 3.0f;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
@@ -14040,67 +14051,7 @@ void EWindowMain::register_pattern_trash_currencies()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorQuantity*
-					value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 4;
-				value_generator->generator_pow = 2.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-		}
-
-		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY BIG STACK)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 4;
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-
-
-
-
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Trash");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Basic currency");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-
-			/////////////////////////////			CREATE ATTRIBUTE AND GENERATE VALUE			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorQuantity*
-					value_generator = new GameAttributeGeneratorQuantity("StackSize");
-
-				//		parameters
-				value_generator->min_value = 5;
-				value_generator->max_value = 20;
-				value_generator->generator_pow = 0.5f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
+			game_item_generator->add_quantity(0.0f,3.0f, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -14153,8 +14104,8 @@ void EWindowMain::register_pattern_basic_currencies()
 				value_generator = new GameAttributeGeneratorQuantity("StackSize");
 
 			//		parameters
-			value_generator->min_value = 1;
-			value_generator->max_value = 20;
+			value_generator->min_value = 0.0f;
+			value_generator->max_value = 3.0f;
 			value_generator->generator_pow = 3.0f;
 
 			game_item_generator->attribute_generators_list.push_back(value_generator);
@@ -14206,8 +14157,8 @@ void EWindowMain::register_pattern_all_currencies()
 				value_generator = new GameAttributeGeneratorQuantity("StackSize");
 
 			//		parameters
-			value_generator->min_value = 1;
-			value_generator->max_value = 20;
+			value_generator->min_value = 0.0f;
+			value_generator->max_value = 3.0f;
 			value_generator->generator_pow = 3.0f;
 
 			game_item_generator->attribute_generators_list.push_back(value_generator);
@@ -16324,12 +16275,31 @@ void GameItemGenerator::generate_game_item_list(std::vector<EGameItem*>* _target
 void GameItemGenerator::init_game_item(EGameItem* _game_item)
 {
 	//automatic generate basic attributes
-	if (_game_item->stored_data_entity != nullptr)
+	if
+	(_game_item == nullptr)
 	{
-
-
-		if (_game_item != nullptr)
+		EInputCore::logger_simple_error("_game_item is NULL");
+	}
+	else
+	{
+		if (_game_item->stored_data_entity != nullptr)
 		{
+
+			//STACK SIZE AND MAX STACK
+			std::string
+				max_stack_value = DataEntityUtils::get_tag_value_by_name(0, "max stack size", _game_item->stored_data_entity);
+
+			std::string
+				stack_multiplier_value = DataEntityUtils::get_tag_value_by_name(0, "stack multiplier", _game_item->stored_data_entity);
+
+
+			if (max_stack_value != "") { _game_item->max_stack_size = std::stof(max_stack_value); }
+			if (stack_multiplier_value != "") { _game_item->stack_multiplier = std::stof(stack_multiplier_value); }
+
+
+
+
+			//BASE NAME AND LOCALISED NAMES
 			_game_item->localised_name.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", _game_item->stored_data_entity);
 
 			if (_game_item->localised_name.base_name == "")
@@ -16340,188 +16310,156 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 			_game_item->localised_name.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _game_item->stored_data_entity);
 			_game_item->localised_name.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _game_item->stored_data_entity);
 
-		}
-		else
-		{
-			//game_item = new EGameItem();
-		}
 
 
 
-		//default attributes [BASE CLASS]
-		if (DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity) != "")
-		{
-			std::string
-				raw_class_name_in_item = DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity);
 
-			//try search data entity by exact match
-			std::vector<EDataEntity*>*
-				target_data_entity_list_for_class = &EDataEntity::data_entity_global_list;
-
-			for (DataEntityNamedStruct* named_struct : EDataEntity::data_entity_named_structs)
+			//default attributes [BASE TYPE]
+			if (_game_item->localised_name.base_name != "")
 			{
-				if (named_struct->name == "Base Class")
+				EGameItemAttributeContainer
+					attribute_container;
+
+				attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_TYPE];
+				//attribute_container.attribute_value_str = game_item->localised_name.base_name;
+				attribute_container.listed_value_list.push_back(_game_item->localised_name);
+
+				_game_item->attribute_container_list.push_back(attribute_container);
+			}
+
+			//default attributes [BASE CLASS]
+			if (DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity) != "")
+			{
+				std::string
+					raw_class_name_in_item = DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity);
+
+				//try search data entity by exact match
+				std::vector<EDataEntity*>*
+					target_data_entity_list_for_class = &EDataEntity::data_entity_global_list;
+
+				for (DataEntityNamedStruct* named_struct : EDataEntity::data_entity_named_structs)
 				{
-					int
-						index = EStringUtils::hashFunction(raw_class_name_in_item) & 0x000000000000000F;
-					index = min(index, 15);
-					index = max(index, 0);
+					if (named_struct->name == "Base Class")
+					{
+						int
+							index = EStringUtils::hashFunction(raw_class_name_in_item) & 0x000000000000000F;
+						index = min(index, 15);
+						index = max(index, 0);
 
-					target_data_entity_list_for_class = &named_struct->data_entity_list[index];
+						target_data_entity_list_for_class = &named_struct->data_entity_list[index];
 
-					break;
+						break;
+					}
 				}
-			}
-			ELocalisationText l_text;
+				ELocalisationText l_text;
 
-			bool suitable_data_entity_searched = false;
-			for (EDataEntity* d_entity : *target_data_entity_list_for_class)
-			{
-				//try get base name
-				std::string
-					class_base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", d_entity);
-
-				std::string
-					class_EN_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", d_entity);
-
-				std::string
-					class_RU_name = DataEntityUtils::get_tag_value_by_name(0, "name RU", d_entity);
-
-				//use EN name instead
-				if (class_base_name == "") { class_base_name = class_EN_name; }
-
-				if (class_base_name == raw_class_name_in_item)
+				bool suitable_data_entity_searched = false;
+				for (EDataEntity* d_entity : *target_data_entity_list_for_class)
 				{
-					l_text.base_name = class_base_name;
-					l_text.localisations[NSW_localisation_EN] = class_EN_name;
-					l_text.localisations[NSW_localisation_RU] = class_RU_name;
+					//try get base name
+					std::string
+						class_base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", d_entity);
 
-					suitable_data_entity_searched = true;
-					break;
+					std::string
+						class_EN_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", d_entity);
+
+					std::string
+						class_RU_name = DataEntityUtils::get_tag_value_by_name(0, "name RU", d_entity);
+
+					//use EN name instead
+					if (class_base_name == "") { class_base_name = class_EN_name; }
+
+					if (class_base_name == raw_class_name_in_item)
+					{
+						l_text.base_name = class_base_name;
+						l_text.localisations[NSW_localisation_EN] = class_EN_name;
+						l_text.localisations[NSW_localisation_RU] = class_RU_name;
+
+						suitable_data_entity_searched = true;
+						break;
+					}
 				}
-			}
 
-			if (!suitable_data_entity_searched)
+				if (!suitable_data_entity_searched)
+				{
+					l_text.base_name = raw_class_name_in_item;
+					l_text.localisations[NSW_localisation_EN] = raw_class_name_in_item;
+					l_text.localisations[NSW_localisation_RU] = raw_class_name_in_item;
+				}
+
+				EGameItemAttributeContainer
+					attribute_container;
+
+				attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_CLASS];
+				//attribute_container.attribute_value_str = DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity);
+
+				attribute_container.listed_value_list.push_back(l_text);
+
+				_game_item->attribute_container_list.push_back(attribute_container);
+
+				//EInputCore::logger_param("width", attribute_container.attribute_value);
+			}
+		}
+		else//undefined item
+		{
+
 			{
-				l_text.base_name = raw_class_name_in_item;
-				l_text.localisations[NSW_localisation_EN] = raw_class_name_in_item;
-				l_text.localisations[NSW_localisation_RU] = raw_class_name_in_item;
+				EGameItemAttributeContainer
+					attribute_container;
+
+				attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_TYPE];
+				//attribute_container.attribute_value_str = game_item->localised_name.base_name;
+				ELocalisationText l_text;
+
+				l_text.base_name = filtered_by_exact_name.base_name;
+
+				l_text.localisations[NSW_localisation_EN] = filtered_by_exact_name.localisations[NSW_localisation_EN];
+				if (l_text.localisations[NSW_localisation_EN] == "") { l_text.localisations[NSW_localisation_EN] = filtered_by_exact_name.base_name; }
+
+				l_text.localisations[NSW_localisation_RU] = filtered_by_exact_name.localisations[NSW_localisation_RU];
+				if (l_text.localisations[NSW_localisation_RU] == "") { l_text.localisations[NSW_localisation_RU] = filtered_by_exact_name.base_name; }
+
+
+
+				attribute_container.listed_value_list.push_back(l_text);
+
+				_game_item->attribute_container_list.push_back(attribute_container);
+
+
+				_game_item->localised_name = l_text;
 			}
 
-			EGameItemAttributeContainer
-				attribute_container;
+			{
+				EGameItemAttributeContainer
+					attribute_container;
 
-			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_CLASS];
-			//attribute_container.attribute_value_str = DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity);
+				attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "DropLevel");
+				attribute_container.attribute_value_int = 1;
 
-			attribute_container.listed_value_list.push_back(l_text);
+				_game_item->attribute_container_list.push_back(attribute_container);
+			}
 
-			_game_item->attribute_container_list.push_back(attribute_container);
+			{
+				EGameItemAttributeContainer
+					attribute_container;
 
-			//EInputCore::logger_param("width", attribute_container.attribute_value);
-		}
+				attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HEIGHT];
+				attribute_container.attribute_value_int = 1;
 
-		//default attributes [BASE TYPE]
-		if (_game_item->localised_name.base_name != "")
-		{
-			EGameItemAttributeContainer
-				attribute_container;
-
-			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_TYPE];
-			//attribute_container.attribute_value_str = game_item->localised_name.base_name;
-			attribute_container.listed_value_list.push_back(_game_item->localised_name);
-
-			_game_item->attribute_container_list.push_back(attribute_container);
-		}
-
-		//default attributes [HEIGHT]
-		if (DataEntityUtils::get_tag_value_by_name(0, "item height", _game_item->stored_data_entity) != "")
-		{
-			EGameItemAttributeContainer
-				attribute_container;
-
-			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HEIGHT];
-			attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item height", _game_item->stored_data_entity));
-
-			_game_item->attribute_container_list.push_back(attribute_container);
-
-			//EInputCore::logger_param("height", attribute_container.attribute_value);
-		}
-
-		//default attributes [WIDTH]
-		if (DataEntityUtils::get_tag_value_by_name(0, "item width", _game_item->stored_data_entity) != "")
-		{
-			EGameItemAttributeContainer
-				attribute_container;
-
-			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_WIDTH];
-			attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item width", _game_item->stored_data_entity));
-
-			_game_item->attribute_container_list.push_back(attribute_container);
-
-			//EInputCore::logger_param("width", attribute_container.attribute_value);
-		}
-
-	}
-	else//undefined item
-	{
-
-		{
-			EGameItemAttributeContainer
-				attribute_container;
-
-			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_TYPE];
-			//attribute_container.attribute_value_str = game_item->localised_name.base_name;
-			ELocalisationText l_text;
-
-			l_text.base_name = filtered_by_exact_name.base_name;
-
-			l_text.localisations[NSW_localisation_EN] = filtered_by_exact_name.localisations[NSW_localisation_EN];
-			if (l_text.localisations[NSW_localisation_EN] == "") { l_text.localisations[NSW_localisation_EN] = filtered_by_exact_name.base_name; }
-
-			l_text.localisations[NSW_localisation_RU] = filtered_by_exact_name.localisations[NSW_localisation_RU];
-			if (l_text.localisations[NSW_localisation_RU] == "") { l_text.localisations[NSW_localisation_RU] = filtered_by_exact_name.base_name; }
+				_game_item->attribute_container_list.push_back(attribute_container);
+			}
 
 
 
-			attribute_container.listed_value_list.push_back(l_text);
+			{
+				EGameItemAttributeContainer
+					attribute_container;
 
-			_game_item->attribute_container_list.push_back(attribute_container);
+				attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_WIDTH];
+				attribute_container.attribute_value_int = 1;
 
-
-			_game_item->localised_name = l_text;
-		}
-
-		{
-			EGameItemAttributeContainer
-				attribute_container;
-
-			attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "DropLevel");
-			attribute_container.attribute_value_int = 1;
-
-			_game_item->attribute_container_list.push_back(attribute_container);
-		}
-
-		{
-			EGameItemAttributeContainer
-				attribute_container;
-
-			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HEIGHT];
-			attribute_container.attribute_value_int = 1;
-
-			_game_item->attribute_container_list.push_back(attribute_container);
-		}
-
-
-
-		{
-			EGameItemAttributeContainer
-				attribute_container;
-
-			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_WIDTH];
-			attribute_container.attribute_value_int = 1;
-
-			_game_item->attribute_container_list.push_back(attribute_container);
+				_game_item->attribute_container_list.push_back(attribute_container);
+			}
 		}
 	}
 
@@ -16544,6 +16482,44 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 				_game_item->attribute_container_list.push_back(attribute_container);
 
 			}
+	}
+
+	//WIDTH AND HEIGHT
+	if
+	(
+		(_game_item != nullptr)
+		&&
+		(_game_item->stored_data_entity != nullptr)
+	)
+	{
+
+		//default attributes [HEIGHT]
+		if (DataEntityUtils::get_tag_value_by_name(0, "item height", _game_item->stored_data_entity) != "")
+		{
+			EGameItemAttributeContainer
+				attribute_container;
+
+			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HEIGHT];
+			attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item height", _game_item->stored_data_entity));
+
+			_game_item->attribute_container_list.push_back(attribute_container);
+
+			//EInputCore::logger_param("height", attribute_container.attribute_value);	
+		}
+
+		//default attributes [WIDTH]
+		if (DataEntityUtils::get_tag_value_by_name(0, "item width", _game_item->stored_data_entity) != "")
+		{
+			EGameItemAttributeContainer
+				attribute_container;
+
+			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_WIDTH];
+			attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item width", _game_item->stored_data_entity));
+
+			_game_item->attribute_container_list.push_back(attribute_container);
+
+			//EInputCore::logger_param("width", attribute_container.attribute_value);
+		}
 	}
 }
 
@@ -16606,6 +16582,20 @@ GameAttributeGeneratorSocketsLinksColours* GameItemGenerator::add_sockets_and_li
 	attribute_generators_list.push_back(attribute_generator);
 
 	return attribute_generator;
+}
+
+void GameItemGenerator::add_quantity(float _min = 0.0f, float _max = 3.0f, float _pow = 2.0f)
+{			
+	//		value
+	GameAttributeGeneratorQuantity*
+		value_generator = new GameAttributeGeneratorQuantity("StackSize");
+
+	//		parameters
+	value_generator->min_value = _min;
+	value_generator->max_value = _max;
+	value_generator->generator_pow = _pow;
+
+	attribute_generators_list.push_back(value_generator);
 }
 
 void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _game_item)
@@ -16951,10 +16941,11 @@ LootSimulatorPattern::LootSimulatorPattern()
 {
 }
 
-void LootSimulatorPattern::refresh_loot_simulator(LootSimulatorPattern* _pattern)
+void LootSimulatorPattern::execute_loot_pattern(LootSimulatorPattern* _pattern)
 {
 	//srand(time(NULL));
-	srand(std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count());
+	//srand(std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count());
+	srand(EWindowMain::loot_simulator_button_group->seed);
 
 	EButtonGroupLootSimulator::pointer_to_loot_buttons_segment->remove_all_workspace_buttons();
 
@@ -17112,12 +17103,19 @@ GameItemAttribute* GameItemAttribute::get_attribute_by_name(std::vector<GameItem
 
 void GameAttributeGeneratorQuantity::execute_generation(EGameItem* _game_item)
 {
-	GameAttributeGeneratorMinMaxInt::execute_generation(_game_item);
+	GameAttributeGeneratorMinMaxFloat::execute_generation(_game_item);
+	
+	//generate base quantity
+	float
+	f_quantity = target_attribute_container->attribute_value_float;
 
-	_game_item->quantity = target_attribute_container->attribute_value_int;
+	//apply stack multiplier
+	f_quantity *= _game_item->stack_multiplier;
 
+	//clamp values
+	_game_item->quantity = std::clamp(int(round(f_quantity)), 1, _game_item->max_stack_size);
 
-
+	target_attribute_container->attribute_value_int = _game_item->quantity;
 }
 
 //STATIC FIELDS FOR EButtonGroupLootSimulator
@@ -18189,4 +18187,11 @@ void GameAttributeGeneratorItemLevel::execute_generation(EGameItem* _game_item)
 		target_attribute_container->attribute_value_int = std::stoi(number_text->original_text) + target_attribute_container->attribute_value_int;
 		target_attribute_container->attribute_value_int = std::clamp(target_attribute_container->attribute_value_int, 0, 100);
 	}
+}
+
+void GameAttributeGeneratorMinMaxFloat::execute_generation(EGameItem* _game_item)
+{
+	float generated_value = min_value + (max_value - min_value) * pow((rand() % 1001) / 1000.0f, generator_pow);
+
+	target_attribute_container->attribute_value_float = generated_value;
 }

@@ -11,6 +11,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"69"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -27,6 +29,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"69"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -43,6 +47,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"69"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -59,6 +65,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"69"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -75,6 +83,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"69"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -91,6 +101,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"69"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -107,6 +119,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"69"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -123,6 +137,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"81"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -139,6 +155,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"69"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

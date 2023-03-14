@@ -1,148 +1,160 @@
 
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Alchemy Shard"
-	[tag]"name RU"		[value]"Осколок алхимии"
-
-	[tag]"icon path"	[value]"Alchemy_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Currency shard"
-	[tag]"stack multiplier"	[value]"10"
-	[tag]"max stack size"	[value]"20"
+	[tag]"name EN"			[value]"Alchemy Shard"
+	[tag]"name RU"			[value]"Осколок алхимии"
 	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Binding Shard"
-	[tag]"name RU"		[value]"Осколок сплетения"
-
-	[tag]"icon path"	[value]"Binding_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Currency shard"
-	
-	[tag]"drop level"	[value]"25"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Alteration Shard"
-	[tag]"name RU"		[value]"Осколок перемен"
-
-	[tag]"icon path"	[value]"Alteration_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Currency shard"
-	[tag]"stack multiplier"	[value]"10"
-	[tag]"max stack size"	[value]"20"
-	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"World drop"
+	[tag]"icon path"		[value]"Alchemy_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"			[value]"Trash"
+	[tag]"item tag"			[value]"Currency shard"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Binding Shard"
+	[tag]"name RU"			[value]"Осколок сплетени¤"
+	
+	[tag]"icon path"		[value]"Binding_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Trash"
+	[tag]"item tag"			[value]"Currency shard"
+		
+	[tag]"drop level"		[value]"25"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Alteration Shard"
+	[tag]"name RU"			[value]"Осколок перемен"
+	
+	[tag]"icon path"		[value]"Alteration_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Trash"
+	[tag]"item tag"			[value]"Currency shard"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+		
+	[tag]"item tag"			[value]"World drop"
+			
+	[tag]"worth"			[value]"Trash"
 	
 	
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Chaos Shard"
-	[tag]"name RU"		[value]"Осколок хаоса"
-
-	[tag]"icon path"	[value]"Chaos_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Currency shard"
+	[tag]"name EN"			[value]"Chaos Shard"
+	[tag]"name RU"			[value]"Осколок хаоса"
 	
-	[tag]"drop level"	[value]"8"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"icon path"		[value]"Chaos_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Trash"
+	[tag]"item tag"			[value]"Currency shard"
+		
+	[tag]"drop level"		[value]"8"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Engineer's Shard"
-	[tag]"name RU"		[value]"Осколок инженера"
-
-	[tag]"icon path"	[value]"Engineer's_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Currency shard"
-	
-	[tag]"drop level"	[value]"8"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 	
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Horizon Shard"
-	[tag]"name RU"		[value]"Осколок горизонтов"
-
-	[tag]"icon path"	[value]"Horizon_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Currency shard"
+	[tag]"name EN"			[value]"Engineer's Shard"
+	[tag]"name RU"			[value]"Осколок инженера"
 	
-	[tag]"drop level"	[value]"52"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"icon path"		[value]"Engineer's_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Trash"
+	[tag]"item tag"			[value]"Currency shard"
+		
+	[tag]"drop level"		[value]"8"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Regal Shard"
-	[tag]"name RU"		[value]"Осколок царей"
-
-	[tag]"icon path"	[value]"Regal_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Currency shard"
-	
-	[tag]"drop level"	[value]"12"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 	
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Transmutation Shard"
-	[tag]"name RU"		[value]"Осколок превращения"
-
-	[tag]"icon path"	[value]"Transmutation_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"worth"		[value]"Trash"
-	[tag]"item tag"		[value]"Currency shard"
+	[tag]"name EN"			[value]"Horizon Shard"
+	[tag]"name RU"			[value]"Осколок горизонтов"
 	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"icon path"		[value]"Horizon_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Trash"
+	[tag]"item tag"			[value]"Currency shard"
+		
+	[tag]"drop level"		[value]"52"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Regal Shard"
+	[tag]"name RU"			[value]"Осколок царей"
+	
+	[tag]"icon path"		[value]"Regal_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Trash"
+	[tag]"item tag"			[value]"Currency shard"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Transmutation Shard"
+	[tag]"name RU"			[value]"Осколок превращения"
+	
+	[tag]"icon path"		[value]"Transmutation_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Trash"
+	[tag]"item tag"			[value]"Currency shard"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 	
 	
 	
@@ -161,89 +173,65 @@ ADD_NEW_DATA_ENTITY
 	
 	
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Ancient Shard"
-	[tag]"name RU"		[value]"Древний осколок"
-
-	[tag]"icon path"	[value]"Ancient_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"worth"		[value]"Common"
-	[tag]"item tag"		[value]"Currency shard"
+	[tag]"name EN"			[value]"Ancient Shard"
+	[tag]"name RU"			[value]"Древний осколок"
 	
-	[tag]"drop level"	[value]"35"
+	[tag]"icon path"		[value]"Ancient_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Common"
+	[tag]"item tag"			[value]"Currency shard"
+		
+	[tag]"drop level"		[value]"35"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"20"
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Annulment Shard"
-	[tag]"name RU"		[value]"Осколок отмены"
-
-	[tag]"icon path"	[value]"Annulment_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"worth"		[value]"Common"
-	[tag]"item tag"		[value]"Currency shard"
+	[tag]"name EN"			[value]"Annulment Shard"
+	[tag]"name RU"			[value]"Осколок отмены"
 	
-	[tag]"drop level"	[value]"35"
+	[tag]"icon path"		[value]"Annulment_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Common"
+	[tag]"item tag"			[value]"Currency shard"
+		
+	[tag]"drop level"		[value]"35"
+	[tag]"stack multiplier"	[value]"7"
+	[tag]"max stack size"	[value]"20"
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Harbinger's Shard"
-	[tag]"name RU"		[value]"Осколок предвестника"
-
-	[tag]"icon path"	[value]"Harbinger's_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
-	
-	[tag]"worth"		[value]"Common"
-	[tag]"item tag"		[value]"Currency shard"
-	
-	[tag]"drop level"	[value]"52"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-
-	
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 	
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Exalted Shard"
-	[tag]"name RU"		[value]"Осколок возвышения"
-
-	[tag]"icon path"	[value]"Exalted_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"worth"		[value]"Rare"
-	[tag]"item tag"		[value]"Currency shard"
+	[tag]"name EN"			[value]"Harbinger's Shard"
+	[tag]"name RU"			[value]"Осколок предвестника"
 	
-	[tag]"drop level"	[value]"35"
+	[tag]"icon path"		[value]"Harbinger's_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Common"
+	[tag]"item tag"			[value]"Currency shard"
+		
+	[tag]"drop level"		[value]"52"
+	[tag]"stack multiplier"	[value]"7"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	
+
 	
 
 
@@ -253,51 +241,87 @@ ADD_NEW_DATA_ENTITY
 
 
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Fracturing Shard"
-	[tag]"name RU"		[value]"Раскалывающий осколок"
-
-	[tag]"icon path"	[value]"FracturingShard"
-	[tag]"base class"	[value]"Stackable Currency"
-	[tag]"item tag"		[value]"Currency shard"
-	[tag]"worth"		[value]"Expensive"
-	
-	[tag]"item tag"		[value]"Non-basic currency"
-	
-	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
-	
-	[tag]"drop level"	[value]"35"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-	
-	
-	
-	
-	
 
 
 
 	
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Mirror Shard"
-	[tag]"name RU"		[value]"Осколок зеркала"
-
-	[tag]"icon path"	[value]"Mirror_Shard_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"worth"		[value]"Very expensive"
-	[tag]"item tag"		[value]"Currency shard"
+	[tag]"name EN"			[value]"Exalted Shard"
+	[tag]"name RU"			[value]"Осколок возвышени¤"
 	
-	[tag]"drop level"	[value]"35"
+	[tag]"icon path"		[value]"Exalted_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+	[tag]"item tag"			[value]"Currency shard"
+		
+	[tag]"drop level"		[value]"35"
+	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"20"
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Fracturing Shard"
+	[tag]"name RU"			[value]"Раскалывающий осколок"
+	
+	[tag]"icon path"		[value]"FracturingShard"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"item tag"			[value]"Currency shard"
+	[tag]"worth"			[value]"Expensive"
+		
+	[tag]"item tag"			[value]"Non-basic currency"
+		
+	[tag]"item tag"			[value]"Introduced: Forbidden Sanctum league"
+		
+	[tag]"drop level"		[value]"35"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+	
+	
+	
+	
+	
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Mirror Shard"
+	[tag]"name RU"			[value]"Осколок зеркала"
+	
+	[tag]"icon path"		[value]"Mirror_Shard_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Very expensive"
+	[tag]"item tag"			[value]"Currency shard"
+		
+	[tag]"drop level"		[value]"35"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"20"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 	
 
 	

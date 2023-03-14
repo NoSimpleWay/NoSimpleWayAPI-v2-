@@ -407,6 +407,8 @@ class EButtonGroupLootSimulator : public EButtonGroup
 public:
 	EButtonGroupLootSimulator(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
+	unsigned int seed = 0;
+
 	static EButtonGroup* pointer_to_loot_buttons_segment;
 	static EButtonGroup* pointer_to_patterns_buttons_segment;
 	static EButtonGroup* pointer_to_right_side_info_buttons;
@@ -820,6 +822,7 @@ public:
 
 	std::string						attribute_value_str;
 	int								attribute_value_int;
+	float							attribute_value_float;
 	bool							attribute_value_bool;
 
 	std::vector<ELocalisationText>	listed_value_list;
@@ -842,6 +845,9 @@ public:
 
 	int sockets_count = 0;
 	int links_count = 0;
+
+	int max_stack_size = 1;
+	float stack_multiplier = 1.0f;
 
 
 
@@ -960,11 +966,25 @@ public:
 };
 
 
-
-struct GameAttributeGeneratorQuantity : public GameAttributeGeneratorMinMaxInt
+struct GameAttributeGeneratorMinMaxFloat : public GameAttributeGenerator
 {
 public:
-	GameAttributeGeneratorQuantity(std::string _attribute_name) : GameAttributeGeneratorMinMaxInt(_attribute_name) {};
+	GameAttributeGeneratorMinMaxFloat(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
+
+	float min_value;
+	float max_value;
+
+	float generator_pow = 1.0f;
+
+	void execute_generation(EGameItem* _game_item);
+};
+
+
+
+struct GameAttributeGeneratorQuantity : public GameAttributeGeneratorMinMaxFloat
+{
+public:
+	GameAttributeGeneratorQuantity(std::string _attribute_name) : GameAttributeGeneratorMinMaxFloat(_attribute_name) {};
 
 	void execute_generation(EGameItem* _game_item);
 };
@@ -1081,6 +1101,7 @@ public:
 	void										add_item_level			(int _level_min, int _level_max, float _pow);
 	void										add_random_influence	(float _chance);
 	GameAttributeGeneratorSocketsLinksColours*	add_sockets_and_links	(int _min_sockets, int _max_sockets, int _min_links, int _max_links);
+	void										add_quantity			(float _min, float _max, float _pow);
 
 };
 
@@ -1095,7 +1116,7 @@ public:
 	std::vector<GameItemGenerator*>				game_item_generator_list;
 
 	static std::vector<LootSimulatorPattern*>	registered_loot_simulater_pattern_list;
-	static void									refresh_loot_simulator(LootSimulatorPattern* _pattern);
+	static void									execute_loot_pattern(LootSimulatorPattern* _pattern);
 	//static void								refresh_loot_simulator();
 
 };

@@ -1,74 +1,82 @@
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Scroll Fragment"
-	[tag]"name RU"		[value]"Обрывок свитка"
-
-	[tag]"icon path"	[value]"Scroll_Fragment_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"name EN"			[value]"Scroll Fragment"
+	[tag]"name RU"			[value]"Обрывок свитка"
+	
+	[tag]"icon path"		[value]"Scroll_Fragment_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+	[tag]"stack multiplier"	[value]"20"
+	[tag]"max stack size"	[value]"5"
+	
+	[tag]"drop level"		[value]"1"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Scroll of Wisdom"
-	[tag]"name RU"		[value]"Свиток мудрости"
-
-	[tag]"icon path"	[value]"Scroll_of_Wisdom_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Basic currency"
+	[tag]"name EN"			[value]"Scroll of Wisdom"
+	[tag]"name RU"			[value]"Свиток мудрости"
+	
+	[tag]"icon path"		[value]"Scroll_of_Wisdom_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"			[value]"World drop"
+	[tag]"item tag"			[value]"Basic currency"
+			
+	[tag]"worth"			[value]"Trash"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"20"
+	[tag]"max stack size"	[value]"40"
 	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Portal Scroll"
-	[tag]"name RU"		[value]"Свиток портала"
-
-	[tag]"icon path"	[value]"Portal_Scroll_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Basic currency"
+	[tag]"name EN"			[value]"Portal Scroll"
+	[tag]"name RU"			[value]"Свиток портала"
+	
+	[tag]"icon path"		[value]"Portal_Scroll_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"		[value]"Trash"
-	
-	[tag]"drop level"	[value]"2"
+	[tag]"item tag"			[value]"World drop"
+	[tag]"item tag"			[value]"Basic currency"
+			
+	[tag]"worth"			[value]"Trash"
+		
+	[tag]"drop level"		[value]"2"
+	[tag]"stack multiplier"	[value]"15"
+	[tag]"max stack size"	[value]"40"
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 
 
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Armourer's Scrap"
-	[tag]"name RU"		[value]"Деталь доспеха"
-
-	[tag]"icon path"	[value]"Armourer's_Scrap_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Basic currency"
+	[tag]"name EN"			[value]"Armourer's Scrap"
+	[tag]"name RU"			[value]"Деталь доспеха"
+	
+	[tag]"icon path"		[value]"Armourer's_Scrap_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"		[value]"Trash"
+	[tag]"item tag"			[value]"World drop"
+	[tag]"item tag"			[value]"Basic currency"
+			
+	[tag]"worth"			[value]"Trash"
+		
+	[tag]"drop level"		[value]"1"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"40"
 	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 
 
 ADD_NEW_DATA_ENTITY
@@ -86,6 +94,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"30"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -106,6 +116,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"drop level"	[value]"25"
 	[tag]"stack multiplier"	[value]"2"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -125,6 +136,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"40"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -173,28 +186,53 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"52"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Chaos Orb"
-	[tag]"name RU"		[value]"Сфера хаоса"
-
-	[tag]"icon path"	[value]"Chaos_Orb_inventory_icon"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Basic currency"
+	[tag]"name EN"			[value]"Chaos Orb"
+	[tag]"name RU"			[value]"Сфера хаоса"
 	
-	[tag]"worth"		[value]"Moderate"
-	
-	[tag]"drop level"	[value]"12"
+	[tag]"icon path"		[value]"Chaos_Orb_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"item tag"			[value]"World drop"
+	[tag]"item tag"			[value]"Basic currency"
+		
+	[tag]"worth"			[value]"Moderate"
+		
+	[tag]"drop level"		[value]"12"
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Veiled Chaos Orb"
+	[tag]"name RU"			[value]"Сфера скрытого хаоса"
+	
+	[tag]"icon path"		[value]"Veiled_chaos"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"worth"			[value]"Rare"
+		
+	[tag]"item tag"			[value]"World drop"
+	[tag]"item tag"			[value]"Basic currency"
+	
+	[tag]"drop level"		[value]"61"
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -211,6 +249,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Basic currency"
 	
 	[tag]"drop level"	[value]"12"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -225,6 +265,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -246,6 +288,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"2"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -266,6 +310,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"35"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -284,6 +330,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"12"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -303,6 +351,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"2"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -322,6 +372,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"40"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -341,6 +393,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"40"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -361,6 +415,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"8"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -389,6 +445,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -408,7 +466,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Boss loot"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
-
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -422,6 +484,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"drop level"	[value]"15"
+	[tag]"stack multiplier"	[value]"0.2"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -440,6 +504,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -550,6 +616,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"drop level"	[value]"35"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -586,6 +654,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -605,6 +675,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"drop level"	[value]"35"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -622,6 +694,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss loot"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -639,6 +713,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss loot"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -656,8 +732,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss loot"
 	
 	[tag]"drop level"	[value]"1"
-	
-	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -677,6 +753,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss loot"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -731,6 +809,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Deleted"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -739,20 +819,105 @@ ADD_NEW_DATA_ENTITY
 
 
 ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Mirror of Kalandra"
+	[tag]"name RU"			[value]"Зеркало каландры"
+	
+	[tag]"icon path"		[value]"Mirror_of_Kalandra_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"item tag"			[value]"World drop"
+	[tag]"item tag"			[value]"Basic currency"
+		
+	[tag]"worth"			[value]"Very expensive"
+		
+	[tag]"drop level"		[value]"35"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Orb of Alchemy"
+	[tag]"name RU"			[value]"Сфера алхимии"
+	
+	[tag]"icon path"		[value]"Orb_of_Alchemy_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"item tag"			[value]"World drop"
+	[tag]"item tag"			[value]"Basic currency"
+		
+	[tag]"worth"			[value]"Common"
+		
+	[tag]"drop level"		[value]"2"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Mirror of Kalandra"
-	[tag]"name RU"		[value]"Зеркало каландры"
+	[tag]"name EN"		[value]"Orb of Alteration"
+	[tag]"name RU"		[value]"Сфера перемен"
 
-	[tag]"icon path"	[value]"Mirror_of_Kalandra_inventory_icon"
+	[tag]"icon path"	[value]"Orb_of_Alteration_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+		
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"2"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Annulment"
+	[tag]"name RU"		[value]"Сфера отмены"
+
+	[tag]"icon path"	[value]"Orb_of_Annulment_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
 	
-	[tag]"worth"		[value]"Very expensive"
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"drop level"	[value]"35"
+	[tag]"stack multiplier"	[value]"0.35"
+	[tag]"max stack size"	[value]"20"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -761,6 +926,396 @@ ADD_NEW_DATA_ENTITY
 
 
 
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Orb of Chance"
+	[tag]"name RU"			[value]"Сфера удачи"
+	
+	[tag]"icon path"		[value]"Orb_of_Chance_inventory_icon"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"item tag"			[value]"World drop"
+	[tag]"item tag"			[value]"Basic currency"
+		
+	[tag]"worth"			[value]"Common"
+		
+	[tag]"drop level"		[value]"2"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Fusing"
+	[tag]"name RU"		[value]"Сфера соединения"
+
+	[tag]"icon path"	[value]"Orb_of_Fusing_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"8"
+	[tag]"stack multiplier"	[value]"7"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Horizons"
+	[tag]"name RU"		[value]"Сфера горизонтов"
+
+	[tag]"icon path"	[value]"Orb_of_Horizons_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"68"
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Regret"
+	[tag]"name RU"		[value]"Сфера раскаяния"
+
+	[tag]"icon path"	[value]"Orb_of_Regret_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Moderate"	
+
+	[tag]"drop level"	[value]"2"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"40"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Scouring"
+	[tag]"name RU"		[value]"Сфера очищения"
+
+	[tag]"icon path"	[value]"Orb_of_Scouring_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"12"
+	[tag]"stack multiplier"	[value]"7"
+	[tag]"max stack size"	[value]"30"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Orb of Unmaking"
+	[tag]"name RU"		[value]"Сфера небытия"
+
+	[tag]"icon path"	[value]"unmaking_orb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"drop level"	[value]"70"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perandus Coin"
+	[tag]"name RU"		[value]"Монета перандусов"
+
+	[tag]"icon path"	[value]"Perandus_Coin_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"200"
+	[tag]"max stack size"	[value]"5000"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Prime Regrading Lens"
+	[tag]"name RU"		[value]"Первичная профилирующая линза"
+
+	[tag]"icon path"	[value]"LensPrimal"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.2"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Regal Orb"
+	[tag]"name RU"		[value]"Сфера царей"
+
+	[tag]"icon path"	[value]"Regal_Orb_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"12"
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ritual Vessel"
+	[tag]"name RU"		[value]"Ритуальный сосуд"
+
+	[tag]"icon path"	[value]"ritual_vessel"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rogue's Marker"
+	[tag]"name RU"		[value]"Разбойничий жетон"
+
+	[tag]"icon path"	[value]"RoguesMarker"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"48"
+	[tag]"stack multiplier"	[value]"128"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Secondary Regrading Lens"
+	[tag]"name RU"		[value]"Вторичная профилирующая линза"
+
+	[tag]"icon path"	[value]"LensSecondary"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.2"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Chayula"
+	[tag]"name RU"		[value]"Осколок чаюлы"
+
+	[tag]"icon path"	[value]"Splinter_of_Chayula_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Esh"
+	[tag]"name RU"		[value]"Осколок иш"
+
+	[tag]"icon path"	[value]"Splinter_of_Esh_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Tul"
+	[tag]"name RU"		[value]"Осколок тула"
+
+	[tag]"icon path"	[value]"Splinter_of_Tul_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Uul-Netol"
+	[tag]"name RU"		[value]"Осколок уул-нетола"
+
+	[tag]"icon path"	[value]"Splinter_of_Uul-Netol_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Xoph"
+	[tag]"name RU"		[value]"Осколок ксофа"
+
+	[tag]"icon path"	[value]"Splinter_of_Xoph_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Stacked Deck"
+	[tag]"name RU"		[value]"Колода карт"
+
+	[tag]"icon path"	[value]"Stacked_Deck_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	
+	[tag]"drop level"	[value]"50"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tailoring Orb"
+	[tag]"name RU"		[value]"Сфера подгонки"
+
+	[tag]"icon path"	[value]"LensTaloring"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.2"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tempering Orb"
+	[tag]"name RU"		[value]"Закаляющая сфера"
+
+	[tag]"icon path"	[value]"LensTempering"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.2"
+	[tag]"max stack size"	[value]"20"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
 
 
 
@@ -794,6 +1349,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	
 	[tag]"drop level"	[value]"68"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -861,6 +1418,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"35"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -878,6 +1437,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"20"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
 
@@ -908,6 +1469,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

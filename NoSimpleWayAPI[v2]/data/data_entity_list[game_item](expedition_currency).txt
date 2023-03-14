@@ -11,6 +11,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	
 	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"1000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25,6 +27,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"1000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -39,6 +45,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"1000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -53,6 +63,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"1000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -67,6 +81,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"100"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -81,6 +98,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"50"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -95,6 +115,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"25"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -109,6 +132,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"12"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -123,6 +149,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"100"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -137,6 +166,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"50"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -151,6 +183,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"25"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -165,6 +200,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"12"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -179,6 +217,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"100"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -193,6 +234,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"50"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -207,6 +251,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"25"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -221,6 +268,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"12"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -235,6 +285,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"100"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -249,6 +302,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"50"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -263,6 +319,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"25"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -277,6 +336,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Deleted"
+	
+	[tag]"stack multiplier"	[value]"12"
+	[tag]"max stack size"	[value]"10000"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -289,6 +351,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"ExpeditionLogbook"
 	[tag]"base class"	[value]"Expedition Logbook"
+	
+	[tag]"stack multiplier"	[value]"0.1"
+	[tag]"max stack size"	[value]"1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

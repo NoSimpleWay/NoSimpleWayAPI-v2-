@@ -9,7 +9,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"10"
+	[tag]"stack multiplier"	[value]"5"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"1"
@@ -28,7 +28,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"10"
+	[tag]"stack multiplier"	[value]"5"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"10"
@@ -49,7 +49,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"10"
+	[tag]"stack multiplier"	[value]"5"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"19"
@@ -70,7 +70,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"27"
@@ -89,7 +89,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"36"
@@ -110,7 +110,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"44"
@@ -129,7 +129,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"5"
+	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"48"
@@ -148,7 +148,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"3"
+	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"52"
@@ -167,7 +167,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"3"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"60"
@@ -186,7 +186,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"3"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"68"
@@ -205,7 +205,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"3"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"73"
@@ -224,7 +224,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Oil item"
-	[tag]"stack multiplier"	[value]"3"
+	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 
 	[tag]"item width"	[value]"1"

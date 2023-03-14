@@ -370,8 +370,9 @@ void EWindow::GUI_update_default(float _d)
 				//(b_group->can_see_this_group())	
 		)
 		{
-			b_group->lower_culling_line = b_group->region_gabarite->world_position_y;
-			b_group->higher_culling_line = b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y;
+			b_group->recursive_recalculate_culling_lines();
+			//b_group->lower_culling_line = b_group->region_gabarite->world_position_y;
+			//b_group->higher_culling_line = b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y;
 
 			b_group->button_group_update(_d);
 
@@ -2227,9 +2228,24 @@ void EButtonGroup::recursive_recalculate_culling_lines()
 {
 	recalculate_culling_lines();
 
-	for (EButtonGroup* child : group_list)
+	if
+	(
+		(region_gabarite->world_position_y + region_gabarite->phantom_translate_y + region_gabarite->size_y >= 0.0f)
+		&&
+		(region_gabarite->world_position_y + region_gabarite->phantom_translate_y <= NS_EGraphicCore::SCREEN_HEIGHT)
+	)
 	{
-		child->recursive_recalculate_culling_lines();
+		for (EButtonGroup* child : group_list)
+		if
+		(
+			(child->region_gabarite->world_position_y + child->region_gabarite->phantom_translate_y + child->region_gabarite->size_y >= 0.0f)
+			&&
+			(child->region_gabarite->world_position_y + child->region_gabarite->phantom_translate_y <= NS_EGraphicCore::SCREEN_HEIGHT)
+		)
+		{
+
+			child->recursive_recalculate_culling_lines();
+		}
 	}
 }
 void EButtonGroup::calculate_group_lines()
