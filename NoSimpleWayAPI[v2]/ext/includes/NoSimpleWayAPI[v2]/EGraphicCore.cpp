@@ -1761,7 +1761,7 @@ void NS_EGraphicCore::create_styles()
 		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
 		EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
-		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 6.0f, 6.0f, 6.0f, 6.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
 
 		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
