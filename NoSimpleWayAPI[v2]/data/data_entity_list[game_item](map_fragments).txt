@@ -60,7 +60,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Divine vessel"
+	[tag]"name EN"		[value]"Divine Vessel"
 	[tag]"name RU"		[value]"Божественный сосуд"
 
 	[tag]"icon path"	[value]"Divine_Vessel_inventory_icon"
@@ -233,7 +233,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Fragment of the Chimera"
-	[tag]"name RU"		[value]"Фрагмент Гидры"
+	[tag]"name RU"		[value]"Фрагмент Химеры"
 
 	[tag]"icon path"	[value]"Fragment_of_the_Chimera_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
@@ -261,7 +261,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Fragment of the Minotaur"
-	[tag]"name RU"		[value]"Фрагмент Гидры"
+	[tag]"name RU"		[value]"Фрагмент Минотавра"
 
 	[tag]"icon path"	[value]"Fragment_of_the_Minotaur_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
@@ -275,7 +275,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Fragment of the Phoenix"
-	[tag]"name RU"		[value]"Фрагмент Гидры"
+	[tag]"name RU"		[value]"Фрагмент Феникса"
 
 	[tag]"icon path"	[value]"Fragment_of_the_Phoenix_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
@@ -285,19 +285,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Gilded"
-	[tag]"name RU"		[value]"Золочёный скарабей"
-
-	[tag]"icon path"	[value]"Gilded_Scarab"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Scarab item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -518,6 +505,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Mortal_Grief_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -530,6 +519,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Mortal_Hope_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -542,6 +533,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Mortal_Ignorance_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -554,6 +547,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Mortal_Rage_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -987,6 +982,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sacrifice_at_Dawn_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -999,6 +996,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sacrifice_at_Dusk_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1011,6 +1010,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sacrifice_at_Midnight_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1020,20 +1021,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Sacrifice at Noon"
 	[tag]"name RU"		[value]"Жертва в Полдень"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"icon path"	[value]"Sacrifice_at_Noon_inventory_icon"
-	[tag]"base class"	[value]"Map Fragments"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Scarab"
-	[tag]"name RU"		[value]"Скарабей"
-
-	[tag]"icon path"	[value]"Scarab"
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item width"	[value]"1"
@@ -1619,6 +1610,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1633,6 +1626,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1647,6 +1642,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1661,6 +1658,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"item tag"		[value]"Piece of set"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

@@ -652,6 +652,9 @@ public:
 	ETextureGabarite*	gloss_texture;
 
 	ESpriteLayer*		parent_sprite_layer;
+
+	EBrickStyle*		brick_style;
+
 };
 
 

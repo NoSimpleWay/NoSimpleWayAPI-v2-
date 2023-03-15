@@ -518,35 +518,53 @@ void ETextArea::generate_text()
 		int row_id = 0;
 		int id_for_stored_text_sym = 0;
 
-		full_text_height = (font->base) * (row.size());
-		y_adding = full_text_height * font_scale;
-		y_adding += (font->lineheight - font->base) * font_scale;
 
-		float border_offset_bottom = 0.0f;
-		float border_offset_top = 0.0f;
+		//y_adding += (font->lineheight - font->base) * font_scale;
+
+		float border_offset_bottom	= 0.0f;
+		float border_offset_top		= 0.0f;
+
+		float border_offset_left	= 0.0f;
+		float border_offset_right	= 0.0f;
 
 		if (can_get_access_to_group_style())
 		{
 			border_offset_bottom	= parent_entity_for_text_area->parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_bottom;
 			border_offset_top		= parent_entity_for_text_area->parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_up;
+
+			border_offset_left		= parent_entity_for_text_area->parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left;
+			border_offset_right		= parent_entity_for_text_area->parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_right;
 		}
 		else
 			if (parent_group != nullptr)
 			{
-				border_offset_bottom = parent_group->border_bottom;
-				border_offset_top = parent_group->border_up;
+				border_offset_bottom	= parent_group->border_bottom;
+				border_offset_top		= parent_group->border_up;
+
+				border_offset_left		= parent_group->border_left;
+				border_offset_right		= parent_group->border_right;
 			}
 
 		//vertical align
-		y_adding += (region_gabarite->size_y - border_offset_bottom - border_offset_top) * offset_by_gabarite_size_y;
+		//y_adding += (region_gabarite->size_y - border_offset_bottom - border_offset_top) * offset_by_gabarite_size_y;
 
 		//vertical align
-		y_adding += (full_text_height)*offset_by_text_size_y * font_scale;
+		//y_adding += (full_text_height) * offset_by_text_size_y * font_scale;
+		//y_adding += border_offset_bottom;
+		//if (row.size() == 1) { y_adding += (font->lineheight - font->base) / 2.0f; }
+		
+		y_adding = (region_gabarite->size_y - border_offset_bottom - border_offset_top) * offset_by_gabarite_size_y;
+		y_adding += (font->base * row.size() - 0.0f) * offset_by_text_size_y * font_scale;
+
 		y_adding += border_offset_bottom;
+		
 		y_adding = round(y_adding);
 
-		for (std::string* str : row)
+		//for (std::string* str : row)
+		for (int i = row.size() - 1; i >= 0; i--)
 		{
+			std::string* str = row[i];
+
 			temp_s = *str;
 			str_lenght = temp_s.length();
 
@@ -556,17 +574,26 @@ void ETextArea::generate_text()
 					(
 						region_gabarite->size_x
 						-
+						offset_border[BorderSide::LEFT]
+						-
 						offset_border[BorderSide::RIGHT]
-						)
+						-
+						border_offset_left
+						-
+						border_offset_right
+					)
 					*
 					offset_by_gabarite_size_x
-					)
+				)
 				+
 				(get_row_width(str) * offset_by_text_size_x) * font_scale;
 
 			x_adding += offset_border[BorderSide::LEFT];
+			x_adding += border_offset_left;
+
 			x_adding = round(x_adding);
 			//_adding = *region_gabarite->size_y * offset_by_gabarite_size_y + get_row_width(str) * offset_by_text_size_y;
+			//x_adding = 0.0f;
 
 			float px = 0.5f / NS_EGraphicCore::default_texture_atlas->get_atlas_size_x();
 			float py = 0.5f / NS_EGraphicCore::default_texture_atlas->get_atlas_size_y();
@@ -581,17 +608,17 @@ void ETextArea::generate_text()
 					sprite_layer->vertex_buffer,
 					sprite_layer->last_buffer_id,
 
-					(round(region_gabarite->world_position_x) + x_adding + round(font->offset_x[target_symbol])),
-					(round(region_gabarite->world_position_y) - (round(font->size_y_in_pixels[target_symbol] + font->offset_y[target_symbol]) * font_scale - round(y_adding))),
+					round(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol] * font_scale) ,
+					round(region_gabarite->world_position_y) + y_adding - (font->offset_y[target_symbol] + font->size_y_in_pixels[target_symbol] - font->lineheight) * font_scale,
 
 					(font->size_x_in_pixels[target_symbol] * font_scale),
 					(font->size_y_in_pixels[target_symbol] * font_scale),
 
-					font->UV_start_x[target_symbol] + px,
-					font->UV_start_y[target_symbol] - font->UV_size_y[target_symbol] + py,
+					font->UV_start_x[target_symbol] - px,
+					font->UV_start_y[target_symbol] - font->UV_size_y[target_symbol] - py,
 
-					font->UV_start_x[target_symbol] + px + font->UV_size_x[target_symbol],
-					font->UV_start_y[target_symbol] + py
+					font->UV_start_x[target_symbol] - px + font->UV_size_x[target_symbol],
+					font->UV_start_y[target_symbol] - py
 				);
 
 				//no sence generate glyphs to text, which can be edited
@@ -601,8 +628,8 @@ void ETextArea::generate_text()
 					(
 						target_symbol,
 
-						region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
-						region_gabarite->world_position_y + y_adding - line_height,
+						region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol] * 0.0f,
+						region_gabarite->world_position_y + y_adding,
 
 
 						font->size_x_in_pixels[target_symbol] * font_scale,
@@ -648,8 +675,8 @@ void ETextArea::generate_text()
 			(
 				0,
 
-				region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol],
-				region_gabarite->world_position_y + y_adding - line_height,
+				region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol] * 0.0f,
+				region_gabarite->world_position_y + y_adding,
 
 				5.0f,
 				5.0f
@@ -674,7 +701,7 @@ void ETextArea::generate_text()
 
 			//EInputCore::logger_param("last buffer id", *sprite_layer->last_buffer_id);
 
-			y_adding -= font->base * font_scale;
+			y_adding += font->base * font_scale;
 		}
 	}
 	else
@@ -740,32 +767,17 @@ float ETextArea::get_text_width(std::string* _text)
 
 void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_coordinate)
 {
-	if
-		(
-			(
-				(parent_entity_for_text_area == nullptr)
-				||
-				(region_gabarite != ((EntityButton*)parent_entity_for_text_area)->button_gabarite)
-				)
-			&&
-			(
-				(parent_clickable_region->parent_group == nullptr)
-				||
-				(region_gabarite != parent_clickable_region->region_gabarite)
-				)
+	//if (!non_original_region)
+	//{
+	//	region_gabarite->world_position_x += _x;
+	//	region_gabarite->world_position_y += _y;
 
-			//region_gabarite->parent_region == nullptr
-			)
-	{
-		region_gabarite->world_position_x += _x;
-		region_gabarite->world_position_y += _y;
-
-		if (_translate_local_coordinate)
-		{
-			region_gabarite->offset_x += _x;
-			region_gabarite->offset_y += _y;
-		}
-	}
+	//	if (_translate_local_coordinate)
+	//	{
+	//		region_gabarite->offset_x += _x;
+	//		region_gabarite->offset_y += _y;
+	//	}
+	//}
 
 
 	sprite_layer->modify_buffer_position_for_sprite_layer(_x, _y, 0.0f);
@@ -1458,11 +1470,11 @@ void ETextArea::change_text(std::string _text)
 
 	if (can_get_access_to_group_style())
 	{
-		border_left = parent_entity_for_text_area->parent_button_group->border_left;
-		border_right = parent_entity_for_text_area->parent_button_group->border_right;
+		border_left		= parent_entity_for_text_area->parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left;
+		border_right	= parent_entity_for_text_area->parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_right;
 
-		border_bottom = parent_entity_for_text_area->parent_button_group->border_bottom;
-		border_up = parent_entity_for_text_area->parent_button_group->border_up;
+		border_bottom	= parent_entity_for_text_area->parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_bottom;
+		border_up		= parent_entity_for_text_area->parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_up;
 	}
 	else
 		if (parent_group != nullptr)

@@ -819,9 +819,9 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 	{
 		data->current_value = original_value;
 
-		if (data->pointer_to_text_area != nullptr)
+		if (data->pointer_to_digit_text_area != nullptr)
 		{
-			data->pointer_to_text_area->change_text(data->stored_text + ": " + Helper::float_to_string_with_precision(data->current_value * data->max_value, 10.0f));
+			data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(data->current_value * data->max_value, 100.0f));
 		}
 	}
 
@@ -831,6 +831,8 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 			(EInputCore::MOUSE_BUTTON_LEFT)
 			&&
 			(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
+			&&
+			(EInputCore::MOUSE_SPEED_X != 0.0)
 		)
 	{
 		if
@@ -846,7 +848,17 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 		}
 		else
 		{
-			data->current_value = (EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom - data->pointer_to_brick_line_sprite_layer->world_position_x) / data->operable_area_size_x;
+			data->current_value
+			=
+			(
+				EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom
+				-
+				data->pointer_to_brick_line_sprite_layer->world_position_x
+				-
+				33.0f
+				-
+				data->slider_style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_x_in_pixels / 2.0f
+			)/data->operable_area_size_x;
 		}
 
 		data->current_value = max(data->current_value, 0.0f);
@@ -855,20 +867,28 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 
 		//change text to [stored_text] + slider value * max_value. Example: "Gloss: 0.75"
 
-
+		//SET TARGET VALUE
 		if (data->pointer_to_value != nullptr)
 		{
 			*data->pointer_to_value = data->current_value * data->max_value;
 		}
 
+		//ADDITIONAL ACTIONS ON SLIDE
 		if (data->additional_action_on_slide != nullptr)
 		{
 			data->additional_action_on_slide(_entity, _custom_data, _d);
 		}
 
+		//CHANGE HEAD TEXT
 		if (data->pointer_to_text_area != nullptr)
 		{
-			data->pointer_to_text_area->change_text(data->stored_text + ": " + Helper::float_to_string_with_precision(data->current_value * data->max_value, 100.0f));
+			data->pointer_to_text_area->change_text(data->stored_text);
+		}
+
+		//CHANGE DIGIT TEXT
+		if (data->pointer_to_digit_text_area != nullptr)
+		{
+			data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(data->current_value * data->max_value, 100.0f));
 		}
 		//EInputCore::logger_param("Value", data->current_value);
 	}
@@ -881,7 +901,7 @@ void EDataActionCollection::action_draw_horizontal_named_slider(Entity* _entity,
 {
 	EDataContainer_VerticalNamedSlider* data = static_cast<EDataContainer_VerticalNamedSlider*>(_custom_data->data_container);
 	EntityButton* button = static_cast<EntityButton*>(_entity);
-	if (data->style != nullptr)
+	if (data->slider_style != nullptr)
 	{
 
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
@@ -891,11 +911,11 @@ void EDataActionCollection::action_draw_horizontal_named_slider(Entity* _entity,
 			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-			data->pointer_to_brick_line_sprite_layer->world_position_x,
-			data->pointer_to_brick_line_sprite_layer->world_position_y,
+			data->pointer_to_brick_line_sprite_layer->world_position_x + 33.0f,
+			data->pointer_to_brick_line_sprite_layer->world_position_y + 3.0f,
 
-			data->operable_area_size_x * data->current_value + data->style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_x_in_pixels / 2.0f,
-			data->style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_y_in_pixels,
+			data->operable_area_size_x * data->current_value + data->slider_style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_x_in_pixels / 2.0f,
+			data->slider_style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_y_in_pixels,
 
 
 			NS_DefaultGabarites::texture_gabarite_white_pixel
@@ -907,9 +927,9 @@ void EDataActionCollection::action_draw_horizontal_named_slider(Entity* _entity,
 		(
 			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-			data->pointer_to_brick_line_sprite_layer->world_position_x + data->operable_area_size_x * data->current_value,
-			data->pointer_to_brick_line_sprite_layer->world_position_y,
-			data->style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture
+			data->pointer_to_brick_line_sprite_layer->world_position_x + data->operable_area_size_x * data->current_value + 33.0f,
+			data->pointer_to_brick_line_sprite_layer->world_position_y + 3.0f,
+			data->slider_style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture
 		);
 
 
@@ -1990,7 +2010,7 @@ void EClickableArea::draw()
 				batcher_for_default_draw->vertex_buffer,
 				batcher_for_default_draw->last_vertice_buffer_index,
 
-				region_gabarite->world_position_x - 2.0f,
+				region_gabarite->world_position_x - 0.0f,
 				region_gabarite->world_position_y,
 
 				2.0f,
@@ -2010,7 +2030,7 @@ void EClickableArea::draw()
 				batcher_for_default_draw->vertex_buffer,
 				batcher_for_default_draw->last_vertice_buffer_index,
 
-				region_gabarite->world_position_x + region_gabarite->size_x,
+				region_gabarite->world_position_x + region_gabarite->size_x - 2.0f,
 				region_gabarite->world_position_y,
 
 				2.0f,
@@ -2030,10 +2050,10 @@ void EClickableArea::draw()
 				batcher_for_default_draw->vertex_buffer,
 				batcher_for_default_draw->last_vertice_buffer_index,
 
-				region_gabarite->world_position_x - 2.0f,
-				region_gabarite->world_position_y - 2.0f,
+				region_gabarite->world_position_x - 0.0f,
+				region_gabarite->world_position_y - 0.0f,
 
-				region_gabarite->size_x + 4.0f,
+				region_gabarite->size_x,
 				2.0f,
 
 				NS_DefaultGabarites::texture_gabarite_white_pixel
@@ -2050,10 +2070,10 @@ void EClickableArea::draw()
 				batcher_for_default_draw->vertex_buffer,
 				batcher_for_default_draw->last_vertice_buffer_index,
 
-				region_gabarite->world_position_x - 2.0f,
-				region_gabarite->world_position_y + region_gabarite->size_y,
+				region_gabarite->world_position_x - 0.0f,
+				region_gabarite->world_position_y + region_gabarite->size_y - 2.0f,
 
-				region_gabarite->size_x + 4.0f,
+				region_gabarite->size_x,
 				2.0f,
 
 				NS_DefaultGabarites::texture_gabarite_white_pixel
@@ -2318,8 +2338,8 @@ ECustomData::~ECustomData()
 
 
 	//for (data_action_pointer dap : actions_on_change_style)	{delete &dap;}
-	actions_on_change_style.clear();
-	actions_on_change_style.shrink_to_fit();
+	actions_on_generate_vertex.clear();
+	actions_on_generate_vertex.shrink_to_fit();
 
 
 	//for (data_action_pointer dap : actions_on_draw)			{delete	&dap;}

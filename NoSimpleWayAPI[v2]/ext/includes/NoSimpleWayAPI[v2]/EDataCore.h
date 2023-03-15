@@ -68,7 +68,7 @@ public:
 
 	//WHAT do with data
 	std::vector<data_action_pointer> actions_on_update;
-	std::vector<data_action_pointer> actions_on_change_style;
+	std::vector<data_action_pointer> actions_on_generate_vertex;
 	std::vector<data_action_pointer> actions_on_draw;
 	std::vector<data_action_pointer> actions_on_pre_draw;
 
@@ -207,6 +207,8 @@ public:
 
 	bool have_rama = true;
 	bool any_visual_changes = true;
+
+	
 
 	//bool* editable_borders	= new bool(false);
 	bool can_catch_side[_CRS_SIDE_LAST_ELEMENT]{ false };
@@ -373,12 +375,14 @@ class EDataContainer_VerticalNamedSlider : public EDataContainer
 {
 public:
 	//ESpriteLayer*			pointer_to_head;
-	ESpriteLayer* pointer_to_brick_line_sprite_layer;
+	ESpriteLayer*	pointer_to_brick_line_sprite_layer;
+	ESpriteLayer*	pointer_to_digit_section_sprite_layer;
 
-	EGUIStyle* style;
+	EGUIStyle*		slider_style;
 
-	std::string				stored_text;
-	ETextArea* pointer_to_text_area;
+	std::string		stored_text;
+	ETextArea*		pointer_to_text_area;
+	ETextArea*		pointer_to_digit_text_area;
 
 	float					operable_area_size_x;
 	float					current_value;

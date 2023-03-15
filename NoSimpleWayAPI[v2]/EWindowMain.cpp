@@ -9350,7 +9350,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	jc_button = EntityButton::create_horizontal_named_slider
 	(
 
-		new ERegionGabarite(120.0f, 30.0f),
+		new ERegionGabarite(120.0f, 36.0f),
 		cosmetic_segment,
 		EFont::font_list[0],
 		EGUIStyle::active_style,
@@ -11112,7 +11112,7 @@ void EWindowMain::register_pattern_flasks()
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 4;
+			game_item_generator->generations_count = 1;
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 
@@ -11384,7 +11384,7 @@ void EWindowMain::register_pattern_maps()
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
 
-			game_item_generator->generations_count = 16;
+			game_item_generator->generations_count = 8;
 
 			ELocalisationText l_text;
 			l_text.base_name = "Random Map";
@@ -11463,7 +11463,7 @@ void EWindowMain::register_pattern_maps()
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
 
-			game_item_generator->generations_count = 16;
+			game_item_generator->generations_count = 8;
 			ELocalisationText l_text;
 			l_text.base_name = "Guard map";
 			l_text.localisations[NSW_localisation_EN] = "Guard map";
@@ -13689,7 +13689,7 @@ void EWindowMain::register_pattern_oils_and_catalysts()
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 3;
+			game_item_generator->generations_count = 1;
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 
@@ -13819,7 +13819,7 @@ void EWindowMain::register_pattern_tainted_currencies()
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 3;
+			game_item_generator->generations_count = 1;
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 
@@ -13887,7 +13887,7 @@ void EWindowMain::register_pattern_rare_currencies()
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 3;
+			game_item_generator->generations_count = 1;
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 
@@ -13955,7 +13955,7 @@ void EWindowMain::register_pattern_good_currencies()
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 4;
+			game_item_generator->generations_count = 1;
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 
@@ -14022,7 +14022,7 @@ void EWindowMain::register_pattern_trash_currencies()
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
-			game_item_generator->generations_count = 4;
+			game_item_generator->generations_count = 1;
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 

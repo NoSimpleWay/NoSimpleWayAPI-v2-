@@ -858,21 +858,33 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 
 	EDataContainer_VerticalNamedSlider* data = new EDataContainer_VerticalNamedSlider();
 	EntityButton::get_last_custom_data(jc_button)->data_container = data;
-	data->style = _style;
+	//data->slider_style = _style;
 	data->operable_area_size_x = _region_gabarite->size_x - _style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_x_in_pixels;
 	
 
 	EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_update_horizontal_named_slider);
 	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_horizontal_named_slider);
 	
-	jc_button->action_on_generate_vertex_buffer.push_back(&action_generate_brick_bg_for_button);
+	//jc_button->action_on_generate_vertex_buffer.push_back(&action_generate_brick_bg_for_button);
 	jc_button->action_on_generate_vertex_buffer.push_back(&action_generate_vertex_for_horizontal_named_slider);
 
-	ESpriteLayer*
-	brick_line_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
+	//SLIDER LINE
+	{
+		ESpriteLayer*
+			brick_line_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
 
-	data->pointer_to_brick_line_sprite_layer = brick_line_layer;
-	jc_button->sprite_layer_list.push_back(brick_line_layer);
+		data->pointer_to_brick_line_sprite_layer = brick_line_layer;
+		jc_button->sprite_layer_list.push_back(brick_line_layer);
+	}
+
+	//DIGIT SECTION
+	{
+		ESpriteLayer*
+		digit_section = ESpriteLayer::create_default_sprite_layer(nullptr);
+		digit_section->offset_x = 2.0f;
+		data->pointer_to_digit_section_sprite_layer = digit_section;
+		jc_button->sprite_layer_list.push_back(digit_section);
+	}
 
 
 	/*ESpriteLayer* head_layer = ESpriteLayer::create_default_sprite_layer(_style->round_slider->main_texture);
@@ -885,6 +897,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 
 	//int selected_data_entity = _data_entity;
 
+	//TEXT HEAD
 	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _ltext);
 	jc_button->main_text_area = jc_text_area;
 
@@ -894,7 +907,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	jc_text_area->offset_by_gabarite_size_y = 1.0;
 	jc_text_area->offset_by_text_size_y = -1.0;
 
-	jc_text_area->offset_border[BorderSide::LEFT] = _parent_group->border_left + 3.0f;
+	jc_text_area->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left;
 
 	jc_text_area->change_text(_ltext.localisations[ELocalisationText::active_localisation]);
 	data->pointer_to_text_area = jc_text_area;
@@ -902,6 +915,30 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 
 	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+
+
+
+	//DIGIT TEXT
+	EClickableArea* clickable_area_for_digit_section = EClickableArea::create_default_clickable_region
+	(
+		new ERegionGabarite(2.0f, 0.0f, 35.0f, 18.0f),
+		jc_button,
+		nullptr
+	);
+
+	clickable_area_for_digit_section->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
+
+	jc_button->main_custom_data->clickable_area_list.push_back(clickable_area_for_digit_section);
+
+	ETextArea*
+	text_area_digit_segment = ETextArea::create_centered_to_left_text_area(clickable_area_for_digit_section, _font, _ltext);
+	text_area_digit_segment->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left + 4.0f;
+
+	data->pointer_to_digit_text_area = text_area_digit_segment;
+
+	Entity::add_text_area_to_last_clickable_region(jc_button, text_area_digit_segment);
+
+
 
 
 
@@ -1671,19 +1708,44 @@ void action_generate_vertex_for_horizontal_named_slider(EntityButton* _but, EGUI
 {
 	EDataContainer_VerticalNamedSlider* data = static_cast<EDataContainer_VerticalNamedSlider*>(_but->main_custom_data->data_container);
 
-	data->style = _style;
+	data->slider_style = _style;
 
-	NS_ERenderCollection::set_brick_borders_and_subdivisions(_style->brick_style[BrickStyleID::SLIDER_BG]);
+	data->pointer_to_digit_text_area->offset_border[BorderSide::LEFT]	= 0.0f;
+	data->pointer_to_text_area->offset_border[BorderSide::LEFT]			= 0.0f;
+	//data->pointer_to_digit_section_sprite_layer
 
-	NS_ERenderCollection::temporary_sprites = false;
-
+	//DIGIN SECTION
+	NS_ERenderCollection::set_brick_borders_and_subdivisions(_style->brick_style[BrickStyleID::BUTTON_BG]);
 	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
 	(
-		_but->world_position_x,
-		_but->world_position_y,
+		_but->world_position_x + 3.0f,
+		_but->world_position_y + 3.0f,
 		0.0f,
 
-		_but->button_gabarite->size_x,
+		30.0f,
+		16.0f
+	);
+
+	NS_ERenderCollection::generate_brick_texture
+	(
+		ERegionGabarite::temporary_gabarite,
+		data->pointer_to_digit_section_sprite_layer,
+		_style->brick_style[BrickStyleID::BUTTON_BG].main_texture,
+		_style->brick_style[BrickStyleID::BUTTON_BG].normal_map_texture,
+		_style->brick_style[BrickStyleID::BUTTON_BG].gloss_map_texture
+	);
+
+	data->operable_area_size_x = _but->button_gabarite->size_x - _style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_x_in_pixels - 33.0f;
+	//SLIDER LINE
+	//data->pointer_to_brick_line_sprite_layer->offset_x = 30.0f;
+	NS_ERenderCollection::set_brick_borders_and_subdivisions(_style->brick_style[BrickStyleID::SLIDER_BG]);
+	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
+	(
+		_but->world_position_x + 33.0f,
+		_but->world_position_y + 3.0f,
+		0.0f,
+
+		_but->button_gabarite->size_x - 36.0f,
 		15.0f
 	);
 

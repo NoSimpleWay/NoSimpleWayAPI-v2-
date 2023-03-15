@@ -248,6 +248,25 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Oil"
+	[tag]"name RU"		[value]"Заражённое масло"
+
+	[tag]"icon path"	[value]"Tainted_Oil"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Oil item"
+	[tag]"stack multiplier"	[value]"1"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"drop level"	[value]"80"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 

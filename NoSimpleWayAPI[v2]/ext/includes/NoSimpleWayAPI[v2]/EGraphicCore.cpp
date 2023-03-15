@@ -895,8 +895,8 @@ void NS_EGraphicCore::create_styles()
 		
 		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
-		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_border_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
+		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
 		just_created_style->brick_style[BrickStyleID::BUTTON_BG] = *jc_brick;
@@ -3434,11 +3434,11 @@ void NS_ERenderCollection::set_brick_borders_and_subdivisions(float _left, float
 
 void NS_ERenderCollection::set_brick_borders_and_subdivisions(EBrickStyle _brick_style)
 {
-	border_left_size	= _brick_style.offset_for_elements_left;
-	border_right_size	= _brick_style.offset_for_elements_right;
+	border_left_size	= _brick_style.border_texture_size_left;
+	border_right_size	= _brick_style.border_texture_size_right;
 
-	border_down_size	= _brick_style.offset_for_elements_bottom;
-	border_up_size		= _brick_style.offset_for_elements_up;
+	border_down_size	= _brick_style.border_texture_size_bottom;
+	border_up_size		= _brick_style.border_texture_size_up;
 
 	subdivision_x		= _brick_style.subdivision_x;
 	subdivision_y		= _brick_style.subdivision_y;
@@ -4019,23 +4019,33 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 
 		total_sprites = 4;
 		//mid section
-		total_sprites += ceil(cropped_mid_segment_size_x / mid_brick_size_x) * ceil(cropped_mid_segment_size_y / mid_brick_size_y);
+		if (ceil(cropped_mid_segment_size_x / mid_brick_size_x) * ceil(cropped_mid_segment_size_y / mid_brick_size_y) > 0)
+		{
+			total_sprites += ceil(cropped_mid_segment_size_x / mid_brick_size_x) * ceil(cropped_mid_segment_size_y / mid_brick_size_y);
+		}
 
 		//borders
-		total_sprites += ceil(cropped_mid_segment_size_x / mid_brick_size_x) * 2 + ceil(cropped_mid_segment_size_y / mid_brick_size_y) * 2;
+		if (ceil(cropped_mid_segment_size_x / mid_brick_size_x) * 2 + ceil(cropped_mid_segment_size_y / mid_brick_size_y) * 2 > 0)
+		{
+			total_sprites += ceil(cropped_mid_segment_size_x / mid_brick_size_x) * 2 + ceil(cropped_mid_segment_size_y / mid_brick_size_y) * 2;
+		}
 
 		//total_sprites *= 6;
 		////total_sprites *= 4;
+		//if (total_sprites >)
 		if ((_sprite_layer->total_capacity > 0) && (_sprite_layer->vertex_buffer != nullptr))
 		{
 			if (!disable_deleting) { delete[] _sprite_layer->vertex_buffer; }
 		}
 
-		_sprite_layer->vertex_buffer = new float[total_sprites * _sprite_layer->batcher->gl_vertex_attribute_total_count * 4];
-		//EInputCore::logger_param("length", sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4);
-		_sprite_layer->total_capacity = total_sprites * _sprite_layer->batcher->gl_vertex_attribute_total_count * 4;
+		if (total_sprites > 0)
+		{
+			_sprite_layer->vertex_buffer = new float[total_sprites * _sprite_layer->batcher->gl_vertex_attribute_total_count * 4];
+			//EInputCore::logger_param("length", sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4);
+			_sprite_layer->total_capacity = total_sprites * _sprite_layer->batcher->gl_vertex_attribute_total_count * 4;
 
-		_sprite_layer->last_buffer_id = 0;
+			_sprite_layer->last_buffer_id = 0;
+		}
 
 		//ETextureGabarite* autoloaded_normal_map	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_texture_gabarite, "[normal_map]");
 		//ETextureGabarite* autoloaded_gloss_map	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_texture_gabarite, "[gloss_map]");
@@ -4072,7 +4082,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 
 		//std::cout << "successed deleted" << std::endl;
 		//EInputCore::logger_simple_info("began generate bricks");
-		if (true)
+		if ((true) && (total_sprites > 0))
 			for (unsigned int seg_y = 0; seg_y < 3; seg_y++)
 			{
 

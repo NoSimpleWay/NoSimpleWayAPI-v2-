@@ -213,6 +213,7 @@ public:
 	ELocalisationText	localisation_text;
 	ELocalisationText	gray_text;
 	bool				indicate_gray_text = false;
+	bool				non_original_region = false;
 
 	std::vector<std::string*> row;
 	int row_count = 0;

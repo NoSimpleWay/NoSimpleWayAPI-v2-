@@ -1187,9 +1187,9 @@ void EButtonGroup::draw_button_group()
 
 							but->set_world_positions(but->world_position_x, but->world_position_y, but->world_position_z);
 
-							for (generate_vertex_buffer csa : but->action_on_generate_vertex_buffer)
+							for (generate_vertex_buffer gvb : but->action_on_generate_vertex_buffer)
 							{
-								csa(but, selected_style);
+								gvb(but, selected_style);
 							}
 							but->generate_vertex_buffer_for_all_sprite_layers();
 
@@ -4034,18 +4034,19 @@ std::vector<EGUIStyle*> EGUIStyle::style_list;
 
 void EBrickStyle::set_border_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up)
 {
-	_brick->offset_for_elements_left = _left;
-	_brick->offset_for_elements_right = _right;
-	_brick->offset_for_elements_bottom = _bottom;
-	_brick->offset_for_elements_up = _up;
-}
-
-void EBrickStyle::set_offset_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up)
-{
 	_brick->border_texture_size_left = _left;
 	_brick->border_texture_size_right = _right;
 	_brick->border_texture_size_bottom = _bottom;
 	_brick->border_texture_size_up = _up;
+
+}
+
+void EBrickStyle::set_offset_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up)
+{
+	_brick->offset_for_elements_left = _left;
+	_brick->offset_for_elements_right = _right;
+	_brick->offset_for_elements_bottom = _bottom;
+	_brick->offset_for_elements_up = _up;
 }
 
 void EBrickStyle::set_subdivisions(EBrickStyle* _brick, int _x, int _y)

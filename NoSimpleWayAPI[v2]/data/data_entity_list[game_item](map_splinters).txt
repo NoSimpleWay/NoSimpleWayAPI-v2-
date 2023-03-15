@@ -9,8 +9,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SimulacrumSplinter"
 	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"item tag"		[value]"Basic currency"
-	
 	[tag]"item tag"		[value]"Splinter item"
 	[tag]"stack multiplier"	[value]"50"
 	[tag]"max stack size"	[value]"300"
