@@ -386,7 +386,13 @@ public:
 
 	float					operable_area_size_x;
 	float					current_value;
-	float					max_value;
+
+
+
+	float					min_value = 0.0f;
+	float					mid_value = 0.5f;
+	float					max_value = 1.0f;
+	
 
 	float* pointer_to_value;
 
@@ -671,7 +677,7 @@ public:
 	static bool			A_contains_B_ignore_case(std::string _text_A, std::string _text_B);
 	static std::string	UTF8_to_ANSI(std::string _text);
 
-	static bool			if_text_is_number(std::string* _text);
+	static bool			if_text_is_number(std::string _text);
 	static int			safe_convert_string_to_number(std::string _text, int _min, int _max);
 
 	static int hashFunction(std::string _input);

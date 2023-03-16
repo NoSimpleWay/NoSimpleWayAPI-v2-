@@ -690,7 +690,7 @@ void ETextArea::generate_text()
 
 			row_id++;
 
-			if ((stored_text)[id_for_stored_text_sym] == '\n')
+			if ((stored_text)[min (id_for_stored_text_sym, stored_text.length() - 1)] == '\n')
 			{
 				id_for_stored_text_sym += 1;
 			}

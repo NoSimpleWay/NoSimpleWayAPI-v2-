@@ -46,13 +46,13 @@
 
 
 //#pragma execution_character_set( "utf-8" )
-//extern GLFWwindow* main_window{ nullptr };
+//extern GLFWwindow* main_window{ nullptr };"
 
 
 
 int main()
 {
-
+	setlocale(LC_CTYPE, "Russian");
 	//SetConsoleOutputCP(65001);
 	//printf("Testing unicode -- English -- Ελληνικά -- Español -- Русский. aäbcdefghijklmnoöpqrsßtuüvwxyz\n");
 	// 

@@ -813,15 +813,62 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 {
 	EDataContainer_VerticalNamedSlider* data = static_cast<EDataContainer_VerticalNamedSlider*>(_custom_data->data_container);
 
-	float original_value = *data->pointer_to_value / data->max_value;
+	float original_value = 0.0f;
 
-	if (original_value != data->current_value)
+	if (data->pointer_to_value != nullptr)
 	{
-		data->current_value = original_value;
-
-		if (data->pointer_to_digit_text_area != nullptr)
+		if (*data->pointer_to_value <= data->min_value)
 		{
-			data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(data->current_value * data->max_value, 100.0f));
+			original_value = 0.0f;
+		}
+		else
+			if (*data->pointer_to_value < data->mid_value)
+			{
+				original_value = (*data->pointer_to_value - data->min_value) / (data->mid_value - data->min_value);
+				original_value *= 0.5f;
+			}
+			else
+				if (*data->pointer_to_value >= data->mid_value)
+				{	
+					//				(1.0						-	1.0)			/	(10.0f			-		1.0)
+					//				0.0												/	(9.0)
+					original_value = (*data->pointer_to_value - data->mid_value) / (data->max_value - data->mid_value);
+					//original_value -= 0.5f;
+					//original_value *= 2.0f;
+					original_value *= 0.5f;
+					original_value += 0.5f;
+
+					//original_value = 0.5f;
+
+
+				}
+
+		if (original_value != data->current_value)
+		{
+			data->current_value = std::clamp(original_value, 0.0f, 1.0f);
+
+			float result_value = 0.0f;
+			if (data->current_value < 0.5)
+			{
+				result_value
+					=
+					(1.0f - data->current_value * 2.0f) * data->min_value
+					+
+					data->current_value / 0.5f * data->mid_value;
+			}
+			else
+			{
+				result_value
+					=
+					(1.0f - (data->current_value - 0.5f) * 2.0f) * data->mid_value
+					+
+					(data->current_value - 0.5f) * 2.0f * data->max_value;
+			}
+
+			if (data->pointer_to_digit_text_area != nullptr)
+			{
+				data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(result_value, 100.0f));
+			}
 		}
 	}
 
@@ -831,8 +878,8 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 			(EInputCore::MOUSE_BUTTON_LEFT)
 			&&
 			(EClickableArea::active_clickable_region == _custom_data->clickable_area_list.at(0))
-			&&
-			(EInputCore::MOUSE_SPEED_X != 0.0)
+			//&&
+			//(EInputCore::MOUSE_SPEED_X != 0.0)
 		)
 	{
 		if
@@ -864,13 +911,31 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 		data->current_value = max(data->current_value, 0.0f);
 		data->current_value = min(data->current_value, 1.0f);
 
+		float result_value = 0.0f;
+
+		if (data->current_value < 0.5)
+		{
+			result_value
+			=
+			(1.0f - data->current_value * 2.0f)	* data->min_value
+			+ 
+			data->current_value / 0.5f			* data->mid_value;
+		}
+		else
+		{
+			result_value
+			=
+			(1.0f - (data->current_value - 0.5f) * 2.0f)	* data->mid_value 
+			+
+			(data->current_value - 0.5f) * 2.0f				* data->max_value;
+		}
 
 		//change text to [stored_text] + slider value * max_value. Example: "Gloss: 0.75"
 
 		//SET TARGET VALUE
 		if (data->pointer_to_value != nullptr)
 		{
-			*data->pointer_to_value = data->current_value * data->max_value;
+			*data->pointer_to_value = result_value;
 		}
 
 		//ADDITIONAL ACTIONS ON SLIDE
@@ -888,7 +953,7 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 		//CHANGE DIGIT TEXT
 		if (data->pointer_to_digit_text_area != nullptr)
 		{
-			data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(data->current_value * data->max_value, 100.0f));
+			data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(result_value, 100.0f));
 		}
 		//EInputCore::logger_param("Value", data->current_value);
 	}
@@ -2882,7 +2947,7 @@ void ETextParser::split_data_entity_list_to_named_structs()
 
 			arr[index]++;
 
-			if (DataEntityUtils::get_tag_value_by_name(0, "key", data_entity) != "") { EInputCore::logger_param(data_entity_name, index); }
+			//if (DataEntityUtils::get_tag_value_by_name(0, "key", data_entity) != "") { EInputCore::logger_param(data_entity_name, index); }
 		}
 
 		if (data_type_name != "")
@@ -3107,51 +3172,62 @@ std::string EStringUtils::UTF8_to_ANSI(std::string _text)
 	//return std::string();
 }
 
-bool EStringUtils::if_text_is_number(std::string* _text)
+bool EStringUtils::if_text_is_number(std::string _text)
 {
-	if (*_text == "") { return false; }
+	if
+	(
+		((_text).length() == 0)
+		||
+		(_text == "")
+	)
+	{ 
+		//EInputCore::logger_param("symbol is empty", _text);
+		return false;
+	}
 
-	for (int i = 0; i < _text->length(); i++)
+	for (int i = 0; i < _text.length(); i++)
 	{
-		if ((i > 0) && ((*_text)[i] == '-')) { return false; }// minus can be only on start
+		if ((i > 0) && (_text[i] == '-')) { return false; }// minus can be only on start
 
 		if
 		(
 			!(
-				((*_text)[i] == '-')
+				(_text[i] == '-')
 				||
-				((*_text)[i] == '0')
+				(_text[i] == '0')
 				||
-				((*_text)[i] == '1')
+				(_text[i] == '1')
 				||
-				((*_text)[i] == '2')
+				(_text[i] == '2')
 				||
-				((*_text)[i] == '3')
+				(_text[i] == '3')
 				||
-				((*_text)[i] == '4')
+				(_text[i] == '4')
 				||
-				((*_text)[i] == '5')
+				(_text[i] == '5')
 				||
-				((*_text)[i] == '6')
+				(_text[i] == '6')
 				||
-				((*_text)[i] == '7')
+				(_text[i] == '7')
 				||
-				((*_text)[i] == '8')
+				(_text[i] == '8')
 				||
-				((*_text)[i] == '9')
+				(_text[i] == '9')
 			)
 		)
 		{
+			//EInputCore::logger_param("symbol [" + _text.substr(i, 1) + "] is not valid", _text.substr(i, 1));
 			return false;
 		}
 	}
 
+	//EInputCore::logger_simple_success(_text + " is valid!");
 	return true;
 }
 
 int EStringUtils::safe_convert_string_to_number(std::string _text, int _min, int _max)
 {
-	if (if_text_is_number)
+	if (if_text_is_number(_text))
 	{
 		int num = std::stoi(_text);
 

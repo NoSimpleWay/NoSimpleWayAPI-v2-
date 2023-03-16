@@ -249,7 +249,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Hedron Bow"
-	[tag]"name RU"		[value]"Лук с гранями"
+	[tag]"name RU"		[value]"Ћук с гран¤ми"
 
 	[tag]"icon path"	[value]"SuperBow"
 	[tag]"base class"	[value]"Bows"
@@ -271,7 +271,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Highborn Bow"
-	[tag]"name RU"		[value]"Лук патриция"
+	[tag]"name RU"		[value]"Ћук патрици¤"
 
 	[tag]"icon path"	[value]"Royal_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
@@ -312,7 +312,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Ivory Bow"
-	[tag]"name RU"		[value]"Лук из бивня"
+	[tag]"name RU"		[value]"Ћук из бивн¤"
 
 	[tag]"icon path"	[value]"Ivory_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
@@ -352,7 +352,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Maraketh Bow"
-	[tag]"name RU"		[value]"Лук маракета"
+	[tag]"name RU"		[value]"Ћук маракета"
 
 	[tag]"icon path"	[value]"Reflex_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
@@ -373,7 +373,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Ranger Bow"
-	[tag]"name RU"		[value]"Лук охотника"
+	[tag]"name RU"		[value]"Ћук охотника"
 
 	[tag]"icon path"	[value]"Ranger_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
@@ -415,7 +415,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Reflex Bow"
-	[tag]"name RU"		[value]"Лук прыти"
+	[tag]"name RU"		[value]"Ћук прыти"
 
 	[tag]"icon path"	[value]"Reflex_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
@@ -475,7 +475,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Sniper Bow"
-	[tag]"name RU"		[value]"Лук птицебоя"
+	[tag]"name RU"		[value]"Лук птицебо¤"
 
 	[tag]"icon path"	[value]"Sniper_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"
@@ -495,7 +495,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Solarine Bow"
-	[tag]"name RU"		[value]"Солнечный лук
+	[tag]"name RU"		[value]"Солнечный лук"
 
 	[tag]"icon path"	[value]"SuperBow"
 	[tag]"base class"	[value]"Bows"

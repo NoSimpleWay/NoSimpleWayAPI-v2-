@@ -6,7 +6,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большой кластерный самоцвет"
 
 	[tag]"icon path"	[value]"NotableLargeClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -21,7 +21,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Средний кластерный самоцвет"
 
 	[tag]"icon path"	[value]"NotableMediumClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -36,7 +36,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Малый кластерный самоцвет"
 
 	[tag]"icon path"	[value]"NotableSmallClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -51,7 +51,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Радужный самоцвет"
 
 	[tag]"icon path"	[value]"Prismatic_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 
@@ -67,7 +67,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кобальтовый самоцвет"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Breach unique item"
@@ -85,7 +85,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Багровый самоцвет"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Breach unique item"
@@ -102,7 +102,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бирюзовый самоцвет"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Breach unique item"
@@ -121,6 +121,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Brutal_Restraint_inventory_icon"
 	[tag]"base class"	[value]"Jewels"
+	[tag]"item tag"		[value]"Non-default jewel"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -135,6 +136,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Elegant_Hubris_inventory_icon"
 	[tag]"base class"	[value]"Jewels"
+	[tag]"item tag"		[value]"Non-default jewel"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -149,6 +151,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Glorious_Vanity_inventory_icon"
 	[tag]"base class"	[value]"Jewels"
+	[tag]"item tag"		[value]"Non-default jewel"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -161,6 +164,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Lethal_Pride_inventory_icon"
 	[tag]"base class"	[value]"Jewels"
+	[tag]"item tag"		[value]"Non-default jewel"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -175,6 +179,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Militant_Faith_inventory_icon"
 	[tag]"base class"	[value]"Jewels"
+	[tag]"item tag"		[value]"Non-default jewel"
 	
 	[tag]"worth"		[value]"Moderate"
 

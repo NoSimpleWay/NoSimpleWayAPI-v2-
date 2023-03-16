@@ -933,7 +933,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	ETextArea*
 	text_area_digit_segment = ETextArea::create_centered_to_left_text_area(clickable_area_for_digit_section, _font, _ltext);
 	text_area_digit_segment->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left + 4.0f;
-
+	text_area_digit_segment->can_be_edited = false;
 	data->pointer_to_digit_text_area = text_area_digit_segment;
 
 	Entity::add_text_area_to_last_clickable_region(jc_button, text_area_digit_segment);

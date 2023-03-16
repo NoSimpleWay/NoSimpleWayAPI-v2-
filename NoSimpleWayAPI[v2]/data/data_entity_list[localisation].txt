@@ -274,4 +274,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Show/Hide"
 	[tag]"name RU"		[value]"Показать/Скрыть"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"slider_MF_factor"
+	[tag]"name EN"		[value]"Magic Find"
+	[tag]"name RU"		[value]"Удача"
+	
+
+	
 	

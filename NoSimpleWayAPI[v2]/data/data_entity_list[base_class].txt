@@ -1,17 +1,10 @@
-
-	
-
-
-
-
-
-
-	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Amulets"
 	[tag]"name RU"		[value]"Амулеты"
+	
+	[tag]"short name"	[value]"Amulet"
 
 	[tag]"icon path"	[value]"class_amulets"
 	
@@ -20,6 +13,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Rings"
 	[tag]"name RU"		[value]"Кольца"
+	
+	[tag]"short name"	[value]"Ring"
 
 	[tag]"icon path"	[value]"class_rings"
 	
@@ -28,14 +23,18 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Belts"
 	[tag]"name RU"		[value]"Пояса"
+	
+	[tag]"short name"	[value]"Belt"
 
 	[tag]"icon path"	[value]"class_belts"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Jewel"
+	[tag]"name EN"		[value]"Jewels"
 	[tag]"name RU"		[value]"Самоцветы"
+	
+	[tag]"short name"	[value]"Jewel"
 
 	[tag]"icon path"	[value]"class_jewels"
 	
@@ -43,8 +42,10 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Abyss Jewel"
+	[tag]"name EN"		[value]"Abyss Jewels"
 	[tag]"name RU"		[value]"Самоцвет Бездны"
+	
+	[tag]"short name"	[value]"Abyss Jewel"
 
 	[tag]"icon path"	[value]"AbyssJewel"
 	
@@ -60,6 +61,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Claws"
 	[tag]"name RU"		[value]"Когти"
+	
+	[tag]"short name"	[value]"Claw"
 
 	[tag]"icon path"	[value]"class_claws"
 	
@@ -68,6 +71,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Daggers"
 	[tag]"name RU"		[value]"Кинжалы"
+	
+	[tag]"short name"	[value]"Dagger"
 
 	[tag]"icon path"	[value]"class_daggers"
 	
@@ -84,6 +89,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Wands"
 	[tag]"name RU"		[value]"Жезлы"
+	
+	[tag]"short name"	[value]"Wand"
 
 	[tag]"icon path"	[value]"class_wands"
 	
@@ -98,7 +105,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Rune Dagger"
+	[tag]"name EN"		[value]"Rune Daggers"
 	[tag]"name RU"		[value]"Рунический кинжал"
 
 	[tag]"icon path"	[value]"class_rune_dagger"
@@ -115,6 +122,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"One Hand Swords"
 	[tag]"name RU"		[value]"Одноручные мечи"
+	
+	[tag]"short name"	[value]"One Hand Sword"
 
 	[tag]"icon path"	[value]"class_one_hand_swords"
 
@@ -131,6 +140,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Two Hand Swords"
 	[tag]"name RU"		[value]"Двуручные мечи"
+	
+	[tag]"short name"	[value]"Two Hand Sword"
 
 	[tag]"icon path"	[value]"class_two_hand_sword"
 	
@@ -147,6 +158,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"One Hand Axes"
 	[tag]"name RU"		[value]"Одноручные топоры"
+	
+	[tag]"short name"	[value]"One Hand Axe"
 
 	[tag]"icon path"	[value]"class_one_hand_axes"
 	
@@ -155,6 +168,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Two Hand Axes"
 	[tag]"name RU"		[value]"Двуручные топоры"
+	
+	[tag]"short name"	[value]"Two Hand Axe"
 
 	[tag]"icon path"	[value]"class_two_hand_axes"
 	
@@ -169,6 +184,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"One Hand Maces"
 	[tag]"name RU"		[value]"Одноручные булавы"
+	
+	[tag]"short name"	[value]"One Hand Mace"
 
 	[tag]"icon path"	[value]"class_one_hand_maces"
 	
@@ -177,6 +194,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Two Hand Maces"
 	[tag]"name RU"		[value]"Двуручные булавы"
+	
+	[tag]"short name"	[value]"Two Hand Mace"
 
 	[tag]"icon path"	[value]"class_tho_hand_maces"
 	
@@ -193,6 +212,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Bows"
 	[tag]"name RU"		[value]"Луки"
+	
+	[tag]"short name"	[value]"Bow"
 
 	[tag]"icon path"	[value]"class_bows"
 
@@ -201,6 +222,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Quivers"
 	[tag]"name RU"		[value]"Колчаны"
+	
+	[tag]"short name"	[value]"Quiver"
 
 	[tag]"icon path"	[value]"class_quivers"
 	
@@ -217,6 +240,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Staves"
 	[tag]"name RU"		[value]"Посохи"
+	
+	[tag]"short name"	[value]"Staff"
 
 	[tag]"icon path"	[value]"class_staves"
 	
@@ -251,6 +276,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Fishing Rods"
 	[tag]"name RU"		[value]"Удочки"
+	
+	[tag]"short name"	[value]"Fishing Rod"
 
 	[tag]"icon path"	[value]"FishingRod"
 	
@@ -287,6 +314,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Helmets"
 	[tag]"name RU"		[value]"Шлемы"
+	
+	[tag]"short name"	[value]"Helmet"
 
 	[tag]"icon path"	[value]"class_helmets"
 	
@@ -303,6 +332,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Body Armours"
 	[tag]"name RU"		[value]"Нательные доспехи"
+	
+	[tag]"short name"	[value]"Body Armour"
 
 	[tag]"icon path"	[value]"class_body_armours"
 	
@@ -313,6 +344,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Shields"
 	[tag]"name RU"		[value]"Щиты"
+	
+	[tag]"short name"	[value]"Shield"
 
 	[tag]"icon path"	[value]"class_shields"
 	
@@ -407,6 +440,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Quest Items"
 	[tag]"name RU"		[value]"Вещи для заданий"
+	
+	[tag]"short name"	[value]"Quest Item"
 
 	[tag]"icon path"	[value]"BookOfKnowledge"
 
@@ -470,6 +505,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Maps"
 	[tag]"name RU"		[value]"Карты"
+	
+	[tag]"short name"	[value]"Map"
 
 	[tag]"icon path"	[value]"Map"
 	
@@ -478,6 +515,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Map Fragments"
 	[tag]"name RU"		[value]"Обрывки карт"
+	
+	[tag]"short name"	[value]"Map Fragment"
 
 	[tag]"icon path"	[value]"class_map_fragments"
 		
@@ -533,6 +572,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Divination Cards"
 	[tag]"name RU"		[value]"Гадальные карты"
+	
+	[tag]"short name"	[value]"Divination Card"
 
 	[tag]"icon path"	[value]"class_divinations"
 	

@@ -311,6 +311,7 @@ public:
 	bool button_group_is_visible() override;
 	bool is_expanded = false;
 	bool is_default_filter_block = false;
+	bool is_base_filter_block = false;
 };
 
 class EButtonGroupFilterBlockSeparator : public EButtonGroup
@@ -408,6 +409,11 @@ public:
 	EButtonGroupLootSimulator(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
 	unsigned int seed = 0;
+
+	float MF_factor = 1.0f;
+
+	bool delayed_execution = false;
+	//void button_group_update(float _d) override;
 
 	static EButtonGroup* pointer_to_loot_buttons_segment;
 	static EButtonGroup* pointer_to_patterns_buttons_segment;
@@ -560,6 +566,7 @@ namespace EDataActionCollection
 
 	void action_draw_loot_button(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_refresh_loot_simulator_when_slide(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_refresh_loot_simulator_sizes(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_loot_item_button(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_highlight_stored_block(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -705,7 +712,8 @@ static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, 
 enum class LootFilterOpenMode
 {
 	LOOT_FILTER_OPEN_MODE_USER_FILTER_FROM_DISC,
-	LOOT_FILTER_OPEN_MODE_DEFAULT_FILTER_FROM_GAME
+	LOOT_FILTER_OPEN_MODE_DEFAULT_FILTER_FROM_GAME,
+	LOOT_FILTER_OPEN_MODE_BASIC_FILTER_COLORS_FROM_GAME
 
 };
 
@@ -789,12 +797,16 @@ public:
 	static void register_pattern_set_fragment();
 	static void register_pattern_scarabs();
 	static void register_pattern_all_map_fragments();
+	static void register_pattern_map_splinters();
 	static void register_pattern_maps();
 	static void register_pattern_delve_items();
 	static void register_pattern_breach_items();
+
+	static void register_pattern_jewelry();
 	static void register_pattern_all_equip();
 	//static void register_pattern_all_equip();
 	static void register_pattern_top_tier_bases();
+
 	static void register_pattern_oils_and_catalysts();
 	static void register_pattern_currencies_shard();
 	static void register_pattern_tainted_currencies();
@@ -848,6 +860,8 @@ public:
 
 	int max_stack_size = 1;
 	float stack_multiplier = 1.0f;
+
+	std::string short_class_name = "";
 
 
 
@@ -985,7 +999,7 @@ struct GameAttributeGeneratorQuantity : public GameAttributeGeneratorMinMaxFloat
 {
 public:
 	GameAttributeGeneratorQuantity(std::string _attribute_name) : GameAttributeGeneratorMinMaxFloat(_attribute_name) {};
-
+	float base_pow = 1.0f;
 	void execute_generation(EGameItem* _game_item);
 };
 
@@ -994,7 +1008,7 @@ struct GameAttributeGeneratorItemLevel : public GameAttributeGeneratorMinMaxInt
 public:
 	//pointer_to_input_area_level_button
 	GameAttributeGeneratorItemLevel(std::string _attribute_name) : GameAttributeGeneratorMinMaxInt(_attribute_name) {};
-
+	
 	void execute_generation(EGameItem* _game_item);
 };
 
@@ -1002,6 +1016,18 @@ struct GameAttributeGeneratorRarity : public GameAttributeGeneratorMinMaxInt
 {
 public:
 	GameAttributeGeneratorRarity(std::string _attribute_name) : GameAttributeGeneratorMinMaxInt(_attribute_name) {};
+
+	float base_pow = 1.0f;
+
+	void execute_generation(EGameItem* _game_item);
+};
+
+struct GameAttributeGeneratorQuality : public GameAttributeGeneratorMinMaxInt
+{
+public:
+	GameAttributeGeneratorQuality(std::string _attribute_name) : GameAttributeGeneratorMinMaxInt(_attribute_name) {};
+
+	float base_pow = 1.0f;
 
 	void execute_generation(EGameItem* _game_item);
 };
@@ -1046,7 +1072,7 @@ struct GameAttributeGeneratorItemInfluence : public GameAttributeGenerator
 {
 public:
 	GameAttributeGeneratorItemInfluence(std::string _attribute_name) : GameAttributeGenerator(_attribute_name) {};
-
+	float base_chance_to_add = 1.0f;
 	void execute_generation(EGameItem* _game_item);
 	//float influence_chance = 0.5f;
 };
@@ -1102,6 +1128,7 @@ public:
 	void										add_random_influence	(float _chance);
 	GameAttributeGeneratorSocketsLinksColours*	add_sockets_and_links	(int _min_sockets, int _max_sockets, int _min_links, int _max_links);
 	void										add_quantity			(float _min, float _max, float _pow);
+	void										add_quality				(int _min, int _max, float _pow);
 
 };
 

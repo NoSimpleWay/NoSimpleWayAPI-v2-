@@ -33,6 +33,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"3"
+	[tag]"max stack size"	[value]"10"
 	
 	[tag]"item tag"		[value]"League: Ritual"
 
@@ -51,6 +53,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Ritual item"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"25"
+	[tag]"max stack size"	[value]"100"
 	
 	[tag]"item tag"		[value]"League: Ritual"
 	
@@ -64,7 +68,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Timeless Karui Splinter"
-	[tag]"name RU"		[value]"Вневременной знак Каруи"
+	[tag]"name RU"		[value]"Вневременной осколок Каруи"
 
 	[tag]"icon path"	[value]"Timeless_Karui_Splinter_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -72,6 +76,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Legion item"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"100"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -84,7 +90,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Timeless Eternal Empire Splinter"
-	[tag]"name RU"		[value]"Вневременной знак Вечной Империи"
+	[tag]"name RU"		[value]"Вневременной осколок Вечной Империи"
 
 	[tag]"icon path"	[value]"Timeless_Eternal_Empire_Splinter_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -92,6 +98,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Legion item"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"100"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -102,7 +110,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Timeless Maraketh Splinter"
-	[tag]"name RU"		[value]"Вневременной знак Маракетов"
+	[tag]"name RU"		[value]"Вневременной осколок Маракетов"
 
 	[tag]"icon path"	[value]"Timeless_Maraketh_Splinter_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -110,6 +118,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Legion item"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"100"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -122,7 +132,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Timeless Templar Splinter"
-	[tag]"name RU"		[value]"Вневременной знак Храмовиков"
+	[tag]"name RU"		[value]"Вневременной осколок Храмовиков"
 
 	[tag]"icon path"	[value]"Timeless_Templar_Splinter_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -130,6 +140,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Legion item"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"100"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -138,7 +150,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Timeless Vaal Splinter"
-	[tag]"name RU"		[value]"Вневременной знак Ваал"
+	[tag]"name RU"		[value]"Вневременной осколок Ваал"
 
 	[tag]"icon path"	[value]"Timeless_Vaal_Splinter_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
@@ -146,6 +158,110 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Legion item"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"100"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Chayula"
+	[tag]"name RU"		[value]"Осколок чаюлы"
+
+	[tag]"icon path"	[value]"Splinter_of_Chayula_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"100"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Esh"
+	[tag]"name RU"		[value]"Осколок иш"
+
+	[tag]"icon path"	[value]"Splinter_of_Esh_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"100"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Tul"
+	[tag]"name RU"		[value]"Осколок тула"
+
+	[tag]"icon path"	[value]"Splinter_of_Tul_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"100"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Uul-Netol"
+	[tag]"name RU"		[value]"Осколок уул-нетола"
+
+	[tag]"icon path"	[value]"Splinter_of_Uul-Netol_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"100"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Splinter of Xoph"
+	[tag]"name RU"		[value]"Осколок ксофа"
+
+	[tag]"icon path"	[value]"Splinter_of_Xoph_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Splinter item"
+	[tag]"stack multiplier"	[value]"10"
+	[tag]"max stack size"	[value]"100"
 	
 	[tag]"drop level"	[value]"1"
 
