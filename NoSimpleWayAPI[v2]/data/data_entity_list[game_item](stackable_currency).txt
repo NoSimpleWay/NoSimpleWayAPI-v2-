@@ -692,6 +692,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Boss loot"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -711,6 +712,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Boss loot"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -730,6 +732,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Boss loot"
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"

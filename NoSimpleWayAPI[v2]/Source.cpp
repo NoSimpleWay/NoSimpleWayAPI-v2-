@@ -412,7 +412,7 @@ int main()
 		GLenum err;
 		while ((err = glGetError()) != GL_NO_ERROR)
 		{
-			EInputCore::logger_simple_error("" + err);// Process/log the error.
+			EInputCore::logger_simple_error("GL ERROR: " + std::to_string(err));// Process/log the error.
 		}
 	}
 

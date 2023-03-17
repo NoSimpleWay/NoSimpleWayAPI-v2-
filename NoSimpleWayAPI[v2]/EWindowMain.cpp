@@ -2967,7 +2967,7 @@ EWindowMain::EWindowMain()
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		main_button_group = EButtonGroup::create_root_button_group
-		(new ERegionGabarite(400.0f, 100.0f, 0.0f, 400, 600.0f), EGUIStyle::active_style);
+		(new ERegionGabarite(400.0f, 100.0f, 0.0f, 512, 600.0f), EGUIStyle::active_style);
 		main_button_group->parent_window = this;
 		main_button_group->root_group = main_button_group;
 		main_button_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
@@ -2982,7 +2982,7 @@ EWindowMain::EWindowMain()
 		//*----------------------------		SUN SECTION		-------------------------------------------------------*//
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 		jc_button_group = world_parameters_workspace_part->add_group
-		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 90.0f), EGUIStyle::active_style));
+		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 120.0f), EGUIStyle::active_style));
 		jc_button_group->stretch_x_by_parent_size = true;
 		jc_button_group->stretch_y_by_parent_size = false;
 
@@ -2992,7 +2992,7 @@ EWindowMain::EWindowMain()
 		jc_button = EntityButton::create_horizontal_named_slider
 		(
 
-			new ERegionGabarite(170.0f, 38.0f),
+			new ERegionGabarite(300.0f, 38.0f),
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
@@ -3009,7 +3009,7 @@ EWindowMain::EWindowMain()
 		jc_button = EntityButton::create_horizontal_named_slider
 		(
 
-			new ERegionGabarite(170.0f, 38.0f),
+			new ERegionGabarite(300.0f, 38.0f),
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
@@ -3031,7 +3031,7 @@ EWindowMain::EWindowMain()
 		jc_button = EntityButton::create_horizontal_named_slider
 		(
 
-			new ERegionGabarite(170.0f, 38.0f),
+			new ERegionGabarite(300.0f, 38.0f),
 			jc_button_group,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
@@ -3053,14 +3053,14 @@ EWindowMain::EWindowMain()
 		//*----------------------------		SUN SECTION		-------------------------------------------------------*//
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 		EButtonGroup* button_group_sun_main = world_parameters_workspace_part->add_group
-		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 260.0f), EGUIStyle::active_style));
+		(EButtonGroup::create_default_button_group(new ERegionGabarite(890.0f, 256.0f), EGUIStyle::active_style));
 		button_group_sun_main->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 		button_group_sun_main->stretch_x_by_parent_size = true;
 		button_group_sun_main->stretch_y_by_parent_size = false;
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
 
 		//**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**////**//**//
-		jc_button_group = button_group_sun_main->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(160.0f, 160.0f), EGUIStyle::active_style));
+		jc_button_group = button_group_sun_main->add_group(EButtonGroup::create_default_button_group(new ERegionGabarite(256.0f, 256.0f), EGUIStyle::active_style));
 		jc_button_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 		jc_button_group->stretch_x_by_parent_size = false;
 		jc_button_group->stretch_y_by_parent_size = true;
@@ -3069,7 +3069,7 @@ EWindowMain::EWindowMain()
 		// // // // // // //
 		jc_button = EntityButton::create_default_crosshair_slider
 		(
-			new ERegionGabarite(148.0f, 148.0f),
+			new ERegionGabarite(256.0f, 256.0f),
 			jc_button_group,
 			&NS_EGraphicCore::sun_x,
 			&NS_EGraphicCore::sun_y,
@@ -3422,6 +3422,7 @@ EWindowMain::EWindowMain()
 					loot_pattern->icon,
 					loot_pattern->localised_name.localisations[ELocalisationText::active_localisation]
 				);
+				if (loot_pattern->add_force_field_for_button) { pattern_button->force_field_up = 32.0f; }
 				pattern_button->target_pattern = loot_pattern;
 				pattern_button->main_text_area->localisation_text = loot_pattern->localised_name;
 
@@ -10940,6 +10941,8 @@ void EWindowMain::register_pattern_divinations_expensive()
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: дорогие";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
 
+		loot_simulator_pattern->add_force_field_for_button = true;
+
 		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
@@ -11144,7 +11147,7 @@ void EWindowMain::register_pattern_flasks()
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Флаконы";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Hybrid_flask");
 
-
+		loot_simulator_pattern->add_force_field_for_button = true;
 		/////////////////////////////			ITEM GENERATOR(NON UNIQUE FLASKS)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
@@ -11218,7 +11221,7 @@ void EWindowMain::register_pattern_set_fragment()
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Фрагмент проходки";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/UberElderSet");
 
-
+		loot_simulator_pattern->add_force_field_for_button = true;
 		/////////////////////////////			ITEM GENERATOR			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
@@ -11735,6 +11738,7 @@ void EWindowMain::register_pattern_delve_items()
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Предметы шахты";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_delve_items");
 
+		loot_simulator_pattern->add_force_field_for_button = true;
 		/////////////////////////////			ITEM GENERATOR (DELVE ITEM)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
@@ -12221,16 +12225,16 @@ void EWindowMain::register_pattern_breach_items()
 	//		BOSS ITEMS
 	{
 
-		/////////////////////////////			ITEM GENERATOR(Breach fragments/blessings)			/////////////////////////////////////////////
+		/////////////////////////////			ITEM GENERATOR(Breach fragments)			/////////////////////////////////////////////
 		{
 			LootSimulatorPattern*
 			loot_simulator_pattern = new LootSimulatorPattern;
 
-			loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Breach blessing and fragments";
-			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Благословения и проходки разломов";
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Breach fragments";
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Проходки разломов";
 			loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_breach_items");
 
-
+			
 		
 		
 			GameItemGenerator*
@@ -12253,6 +12257,41 @@ void EWindowMain::register_pattern_breach_items()
 			tag_filter->banned_tags.push_back("Deleted");
 			tag_filter->banned_tags.push_back("Piece of set");
 			tag_filter->banned_tags.push_back("Splinter item");
+			tag_filter->banned_tags.push_back("Breach blessing");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+		
+			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+		}
+			/////////////////////////////			ITEM GENERATOR(Breach blessings)			/////////////////////////////////////////////
+		{
+			LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Breach fragments";
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Проходки разломов";
+			loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_breach_items");
+
+
+		
+		
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Breach blessing");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 		
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -12312,6 +12351,7 @@ void EWindowMain::register_pattern_breach_items()
 			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Уники разломов";
 			loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_breach_items");
 
+			loot_simulator_pattern->add_force_field_for_button = true;
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
 			game_item_generator->generations_count = 1;
@@ -12829,6 +12869,8 @@ void EWindowMain::register_pattern_jewelry()
 	loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Jewelry";
 	loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Бижутерия";
 	loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Amethyst_Ring_inventory_icon");
+
+	loot_simulator_pattern->add_force_field_for_button = true;
 	/////////////////////////////			ITEM GENERATOR (JEWELRY)			/////////////////////////////////////////////
 	{
 		
@@ -13162,7 +13204,7 @@ void EWindowMain::register_pattern_oils_and_catalysts()
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Масла и катализаторы";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_oils_and_catalysts");
 
-
+		loot_simulator_pattern->add_force_field_for_button = true;
 		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*

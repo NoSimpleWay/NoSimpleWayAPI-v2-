@@ -147,7 +147,7 @@ namespace NS_ERenderCollection
 	extern void generate_brick_texture(ERegionGabarite* _region, ESpriteLayer* _sprite_layer, ETextureGabarite* _texture_gabarite, ETextureGabarite* _normal_map_gabarite = nullptr, ETextureGabarite* _gloss_map_gabarite = nullptr);
 }
 
-const int texture_skydome_levels = 6;
+const int texture_skydome_levels = 7;
 //[0] 1024
 //[1] 512
 //[2] 256

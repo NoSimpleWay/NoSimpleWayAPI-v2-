@@ -105,7 +105,7 @@ vec3 sky_light;
 
 float AO_bottom_shade_factor;
 
-int steps = 5;
+int steps = 6;
 
 float fast_gloss;
 
@@ -137,7 +137,9 @@ void main()
 	interpolation_A = 1.0f - interpolation_B;
 	
 	nrm = texture(texture1, NormalMapTexCoord).rg - vec2(0.5);
-	nrm *= normal_map_multiplier;
+	//nrm = pow(nrm, vec2(2.0f)) * vec2((nrm[0] < 0) ? (-1.0f) : (1.0f),(nrm[1] < 0) ? (-1.0f) : (1.0f));
+	
+	nrm *= vec2(normal_map_multiplier * 0.333f);
 	//normal_x = ((texture(texture1, NormalMapTexCoord).r));
 	//normal_y = ((texture(texture1, NormalMapTexCoord).g));
 
@@ -146,14 +148,19 @@ void main()
 	//normal_y += -0.5f;
 	
 	
-	reflect_pos_x =  0.33f + ((gl_FragCoord.x	/ scr_x) + nrm[0]) * 0.33f;
-	reflect_pos_y =  0.33f + ((WorldPosition.y	/ scr_y) + nrm[1]) * 0.33f;
+	reflect_pos_x =  0.333f;
+	reflect_pos_x += (gl_FragCoord.x / scr_x) * 0.333f * (1.0f - abs(nrm[0]));
+	reflect_pos_x += nrm[0];
+	
+	reflect_pos_y =  0.333f;
+	reflect_pos_y += ((WorldPosition.y	/ scr_y)) * 0.333f * (1.0f - abs(nrm[1]));
+	reflect_pos_y += nrm[1];
 
 	
 	//reflect_pos_y += (ground_level * 2.0f - 1.0f);
 	
 	//				x_scale		aspect ratio
-	float sky_reflect_x = reflect_pos_x * 2.0f * scr_x / scr_y;
+	float sky_reflect_x = reflect_pos_x * 2.0f * scr_x / scr_y + time / 50.0f * move_multiplier;
 	float sky_reflect_y = reflect_pos_y * 2.0f - ground_level;
 	
 	//sky_reflect_x = 1424.32525f;
@@ -236,12 +243,25 @@ void main()
 		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
 	}
 	else
+	if (glossy_flat == 5)
+	{
+		skydome_pixel
+		=
+		(
+			texture(SD_array[5], reflect_coord) * interpolation_A
+			+
+			texture(SD_array[6], reflect_coord) * interpolation_B
+		);
+		
+		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
+	}
+	else
 	{
 		skydome_pixel
 		=
 		clamp
 		(
-			texture(SD_array[5], reflect_coord),
+			texture(SD_array[6], reflect_coord),
 			vec4(0.0f),
 			vec4(2.0f, 1.9f, 1.8f, 1.0f)
 		);
@@ -270,10 +290,10 @@ void main()
 		
 		gloss_sun_light *= sun_bright * (plastic_or_metal) * (reflection_blur_area * 0.9f + 0.1f);
 		
-		float indirect_sun_dist = length(vec2(nrm[0] * 0.33f - (sun_position_x - 0.5f) * 3.0f, nrm[1] * 0.33f - (sun_position_y - 0.5f) * 3.0f));
+		float indirect_sun_dist = length(vec2(nrm[0] * 3.333f  - (sun_position_x - 0.5f) * 1.0f, nrm[1] * 3.333f - (sun_position_y - 0.5f) * 1.0f));
 
 		
-		indirect_sun_dist -= sun_size;
+		indirect_sun_dist -= sun_size / 10.0f;
 		indirect_sun_dist = max(indirect_sun_dist, 0.0f);
 		
 		
@@ -281,7 +301,9 @@ void main()
 		
 			//indirect_sun_dist = clamp(sun_angle, 0.0f, 1.0f);
 		
-			sun_angle = clamp(1.0f - indirect_sun_dist * sun_blur * sun_blur * (1.0f), 0.0f, 1.0f);
+			//sun_angle = clamp(1.0f - indirect_sun_dist * sun_blur * sun_blur * (5.0f), 0.0f, 1.0f);
+			//sun_angle *= 0.1f;
+			sun_angle = (1.0f - indirect_sun_dist) / 1.0f;
 			sun_angle = pow(sun_angle, sun_exp);
 		if (indirect_sun_dist >= 0.333f)
 		{	
@@ -292,14 +314,14 @@ void main()
 		}
 		
 		sun_angle = clamp(sun_angle, 0.0f, 1.0f);
-
-		
+		float altitude = (nrm[1] * 3.333f + 1.0f) / 2.0f;
+		altitude = min(altitude, 1.0f);
 		
 		//						lighted										unlighted									mix
 		
 		//always lighted by sky
-		matte_sun_light	=	vec3(0.90f, 0.95f, 1.0f)	* free_sky_light * (1.0f + sun_angle * 0.0f);
-		matte_sun_light	+=	vec3(1.00f, 0.95f, 0.90f)	* free_sun_light * sun_angle;
+		matte_sun_light	=	vec3(0.90f, 0.95f, 1.0f)	* free_sky_light * (1.0f + sun_angle * 0.0f) * altitude;
+		matte_sun_light	+=	vec3(1.00f, 0.95f, 0.90f)	* free_sun_light * sun_angle * altitude;
 		
 		//matte_sun_light = vec3(1.0f);
 	

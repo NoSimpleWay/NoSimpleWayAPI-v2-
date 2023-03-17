@@ -1144,6 +1144,9 @@ public:
 
 	static std::vector<LootSimulatorPattern*>	registered_loot_simulater_pattern_list;
 	static void									execute_loot_pattern(LootSimulatorPattern* _pattern);
+
+	bool										add_force_field_for_button = false;
 	//static void								refresh_loot_simulator();
+
 
 };

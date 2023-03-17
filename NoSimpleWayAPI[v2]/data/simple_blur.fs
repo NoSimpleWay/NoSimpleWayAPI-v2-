@@ -10,6 +10,7 @@ in vec2 TexCoord;
 uniform sampler2D texture1;
 uniform sampler2D texture2;
 
+uniform int blur_table = 0;
 uniform float blur_size_x = 1.0f/20480.0f;
 uniform float blur_size_y = 1.0f/20480.0f;
 
@@ -17,21 +18,31 @@ vec4 result_color;
 float divis = 0.0f;
 float mul = 0.0f;
 
+float table[7] = {2.0f, 4.0f, 2.0f, 2.0f, 2.0f, 4.0f, 8.0f};
+
 void main()
 {
 	// linearly interpolate between both textures (80% container, 20% awesomeface)
-	result_color = vec4(0.0f);
-	
-	for (int i = -18; i <= 18; i++)
-	for (int j = -18; j <= 18; j++)
+	if (blur_table >= 0)
 	{
-		mul = 1.0f / (pow((i*i*blur_size_y + j*j*blur_size_x) * 1.0f , 2.0f) + 1.0f) * (texture(texture1, TexCoord).a * 1.0f + 1.0f);
+		result_color = vec4(0.0f);
 		
-		result_color += texture(texture1, TexCoord + vec2(blur_size_x * j, blur_size_y * i) * 1.0f).rgba * mul;
-		divis += mul;
+		for (int i = -32; i <= 32; i++)
+		for (int j = -32; j <= 32; j++)
+		{
+			mul = 1.0f / (pow((i*i + j*j) / table[blur_table] , 2.0f / (1.0f + blur_table / 15.0f)) + 1.0f) * (texture(texture1, TexCoord).a * 1.0f + 1.0f);
+			
+			result_color += texture(texture1, TexCoord + vec2(blur_size_x * j, blur_size_y * i) * 1.0f).rgba * mul;
+			divis += mul;
+		}
+		
+		result_color /= divis;	
+	}
+	else
+	{
+		result_color = texture(texture1, TexCoord).rgba;
 	}
 	
-	result_color /= divis;	
 	//result_color.a += 0.2;
 	//result_color.a = 1.0;
 	

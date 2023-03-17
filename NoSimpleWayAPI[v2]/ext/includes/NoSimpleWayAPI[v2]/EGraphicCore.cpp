@@ -48,8 +48,8 @@ namespace NS_EGraphicCore
 
 	float							global_normal_multiplier			= 1.0f;
 
-	float							global_free_sky_light_multiplier	= 0.5f;
-	float							global_free_sun_light_multiplier	= 0.5f;
+	float							global_free_sky_light_multiplier	= 1.0f;
+	float							global_free_sun_light_multiplier	= 1.0f;
 	float							global_reflection_multiplier		= 2.0f;
 
 	float							global_gloss_multiplier				= 1.0f;
@@ -252,7 +252,7 @@ void ERenderBatcher::draw_call()
 
 			//NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[0]", 0);
 
-			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("normal_map_multiplier", NS_EGraphicCore::global_normal_multiplier);
+			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("normal_map_multiplier", round(NS_EGraphicCore::global_normal_multiplier * 50.0f) / 50.0f);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("gloss_map_multiplier", NS_EGraphicCore::global_gloss_multiplier);
 			NS_EGraphicCore::pbr_batcher->get_shader()->setFloat("plastic_or_metal_multiplier", NS_EGraphicCore::plastic_or_metal_multiplier);
 
@@ -744,9 +744,9 @@ void NS_EGraphicCore::initiate_graphic_core()
 		=
 		new ETextureAtlas
 		(
-			max(1024 / (pow(2.0, i * 1)), 64)
+			std::clamp(int(2048 / (pow(2.0, i * 1))), 64, 1024)
 			,
-			max(1024 / (pow(2.0, i * 1)), 64)
+			std::clamp(int(2048 / (pow(2.0, i * 1))), 64, 1024)
 		);
 	}
 
@@ -1648,7 +1648,7 @@ void NS_EGraphicCore::create_styles()
 		//###########################################################
 		//MODERN
 		just_created_style = new EGUIStyle("path_of_black");
-		l_text.base_name = "pah_of_black";
+		l_text.base_name = "path_of_black";
 		l_text.localisations[NSW_localisation_EN] = "Path of Black";
 		l_text.localisations[NSW_localisation_RU] = "Чёрная дорога";
 		just_created_style->localisation_text = l_text;
@@ -1842,6 +1842,106 @@ void NS_EGraphicCore::create_styles()
 		EGUIStyle::style_list.push_back(just_created_style);
 	}
 
+	//TEST
+	if (true)
+	{
+		//###########################################################
+		//MODERN
+		just_created_style = new EGUIStyle("test");
+		l_text.base_name = "test";
+		l_text.localisations[NSW_localisation_EN] = "TEST";
+		l_text.localisations[NSW_localisation_RU] = "ТЕСТ";
+		just_created_style->localisation_text = l_text;
+		//***********************************************************
+		//main gutton group
+		//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
+		just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);
+
+		jc_brick = new EBrickStyle("Group_bg");
+		jc_brick->parent_style = just_created_style;
+
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 0.0f, 0.0f, 0.0f, 0.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		//***********************************************************
+		//darken gutton group
+		jc_brick = new EBrickStyle("Root_group_bg");
+		jc_brick->parent_style = just_created_style;
+
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		just_created_style->brick_style[BrickStyleID::GROUP_DARKEN] = *jc_brick;
+		//***********************************************************
+		//slider bg
+		jc_brick = new EBrickStyle("Slider_bg");
+		jc_brick->parent_style = just_created_style;
+
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		just_created_style->brick_style[BrickStyleID::SLIDER_BG] = *jc_brick;
+		//***********************************************************
+		//slider head inactive
+		jc_brick = new EBrickStyle("Slider_head_inactive");
+		jc_brick->parent_style = just_created_style;
+
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		just_created_style->brick_style[BrickStyleID::SLIDER_INACTIVE] = *jc_brick;
+		//***********************************************************
+		//slider head active
+		jc_brick = new EBrickStyle("Slider_head_active");
+		jc_brick->parent_style = just_created_style;
+
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		just_created_style->brick_style[BrickStyleID::SLIDER_ACTIVE] = *jc_brick;
+		//***********************************************************
+		//button background
+		jc_brick = new EBrickStyle("Button_bg");
+		jc_brick->parent_style = just_created_style;
+
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		just_created_style->brick_style[BrickStyleID::BUTTON_BG] = *jc_brick;
+		//***********************************************************
+		//slider head round
+		jc_brick = new EBrickStyle("Slider_head_round");
+		jc_brick->parent_style = just_created_style;
+
+		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
+
+		EBrickStyle::set_border_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_offset_size(jc_brick, 1.0f, 1.0f, 1.0f, 1.0f);
+		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
+
+		just_created_style->brick_style[BrickStyleID::ROUND_SLIDER] = *jc_brick;
+		EGUIStyle::style_list.push_back(just_created_style);
+	}
+
 	////*******************************
 	////gray minimalism
 	//just_created_style = new EGUIStyle();
@@ -1987,8 +2087,7 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
 
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[0]->get_atlas_size_x() * 0.00001f);
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[0]->get_atlas_size_y() * 0.00001f);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setInt("blur_table", -1);
 
 		NS_EGraphicCore::skydome_batcher->set_transform_screen_size(1.0f, 1.0f);
 
@@ -2009,23 +2108,24 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 	}
 
 
-	float blur_table[texture_skydome_levels] = { 0.05f, 0.1f, 0.2f, 0.4f, 0.8f, 1.6f };
+	float blur_table[texture_skydome_levels] = { 2, 2, 3, 4, 5, 6, 7 };
 	for (int i = 1; i < texture_skydome_levels; i++)
 	{
-
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
 		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
 		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
 
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 
 		float pp = max(1.0f, i - 0.8f);
 		pp *= pp;
 
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x() * blur_table[i - 1]);
-		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * blur_table[i - 1]);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setInt("blur_table", i - 1);
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[i]->get_atlas_size_x());
+		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y());
 
 		NS_EGraphicCore::skydome_batcher->set_transform_screen_size(1.0f, 1.0f);
 		//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP, GL_NEAREST);

@@ -1318,75 +1318,19 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Chayula's Breachstone"
-	[tag]"name RU"		[value]"Камень разлома Чаюлы"
 
-	[tag]"icon path"	[value]"Chayula's_Breachstone"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Breach item"
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Chayula's Charged Breachstone"
-	[tag]"name RU"		[value]"Заряженный камень разлома Чаюлы"
 
-	[tag]"icon path"	[value]"Chayula's_Breachstone"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Breach item"
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Chayula's Enriched Breachstone"
-	[tag]"name RU"		[value]"Обогащённый камень разлома Чаюлы"
 
-	[tag]"icon path"	[value]"Chayula's_Breachstone"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Breach item"
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Chayula's Pure Breachstone"
-	[tag]"name RU"		[value]"Очищенный камень разлома Чаюлы"
-
-	[tag]"icon path"	[value]"Chayula's_Breachstone"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Breach item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Esh's Breachstone"
-	[tag]"name RU"		[value]"Камень разлома Иш"
-
-	[tag]"icon path"	[value]"Esh's_Breachstone"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Breach item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1401,56 +1345,77 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Esh's Enriched Breachstone"
-	[tag]"name RU"		[value]"Обогащённый камень разлома Иш"
+	[tag]"name EN"		[value]"Xoph's Charged Breachstone"
+	[tag]"name RU"		[value]"Заряженный камень разлома Ксофа"
 
-	[tag]"icon path"	[value]"Esh's_Breachstone"
+	[tag]"icon path"	[value]"Xoph's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Esh's Pure Breachstone"
-	[tag]"name RU"		[value]"Очищенный камень разлома Иш"
+	[tag]"name EN"		[value]"Uul-Netol's Charged Breachstone"
+	[tag]"name RU"		[value]"Заряженный камень разлома Уул-Нетола"
 
-	[tag]"icon path"	[value]"Esh's_Breachstone"
+	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Tul's Breachstone"
-	[tag]"name RU"		[value]"Камень разлома Тула"
+	[tag]"name EN"		[value]"Chayula's Charged Breachstone"
+	[tag]"name RU"		[value]"Заряженный камень разлома Чаюлы"
 
-	[tag]"icon path"	[value]"Tul's_Breachstone"
+	[tag]"icon path"	[value]"Chayula's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Tul's Charged Breachstone"
-	[tag]"name RU"		[value]"Заряженный камень разлома Тула"
+	[tag]"name EN"		[value]"Xoph's Enriched Breachstone"
+	[tag]"name RU"		[value]"Обогащённый камень разлома Ксофа"
 
-	[tag]"icon path"	[value]"Tul's_Breachstone"
+	[tag]"icon path"	[value]"Xoph's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
@@ -1471,48 +1436,22 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Tul's Pure Breachstone"
-	[tag]"name RU"		[value]"Очищенный камень разлома Тула"
+	[tag]"name EN"		[value]"Esh's Enriched Breachstone"
+	[tag]"name RU"		[value]"Обогащённый камень разлома Иш"
 
-	[tag]"icon path"	[value]"Tul's_Breachstone"
+	[tag]"icon path"	[value]"Esh's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Uul-Netol's Breachstone"
-	[tag]"name RU"		[value]"Камень разлома Уул-Нетола"
-
-	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
-	[tag]"base class"	[value]"Map Fragments"
 	
-	[tag]"item tag"		[value]"Breach item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Uul-Netol's Charged Breachstone"
-	[tag]"name RU"		[value]"Заряженный камень разлома Уул-Нетола"
-
-	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Breach item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1527,62 +1466,34 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
+	
+	
+	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Uul-Netol's Pure Breachstone"
-	[tag]"name RU"		[value]"Очищенный камень разлома Уул-Нетола"
+	[tag]"name EN"		[value]"Chayula's Enriched Breachstone"
+	[tag]"name RU"		[value]"Обогащённый камень разлома Чаюлы"
 
-	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
+	[tag]"icon path"	[value]"Chayula's_Breachstone"
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Xoph's Breachstone"
-	[tag]"name RU"		[value]"Камень разлома Ксофа"
-
-	[tag]"icon path"	[value]"Xoph's_Breachstone"
-	[tag]"base class"	[value]"Map Fragments"
 	
-	[tag]"item tag"		[value]"Breach item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Xoph's Charged Breachstone"
-	[tag]"name RU"		[value]"Заряженный камень разлома Ксофа"
-
-	[tag]"icon path"	[value]"Xoph's_Breachstone"
-	[tag]"base class"	[value]"Map Fragments"
 	
-	[tag]"item tag"		[value]"Breach item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Xoph's Enriched Breachstone"
-	[tag]"name RU"		[value]"Обогащённый камень разлома Ксофа"
-
-	[tag]"icon path"	[value]"Xoph's_Breachstone"
-	[tag]"base class"	[value]"Map Fragments"
 	
-	[tag]"item tag"		[value]"Breach item"
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1597,6 +1508,244 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Esh's Pure Breachstone"
+	[tag]"name RU"		[value]"Очищенный камень разлома Иш"
+
+	[tag]"icon path"	[value]"Esh's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tul's Pure Breachstone"
+	[tag]"name RU"		[value]"Очищенный камень разлома Тула"
+
+	[tag]"icon path"	[value]"Tul's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Uul-Netol's Pure Breachstone"
+	[tag]"name RU"		[value]"Очищенный камень разлома Уул-Нетола"
+
+	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chayula's Pure Breachstone"
+	[tag]"name RU"		[value]"Очищенный камень разлома Чаюлы"
+
+	[tag]"icon path"	[value]"Chayula's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Xoph's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Ксофа"
+
+	[tag]"icon path"	[value]"XophFlawlessBreachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tul's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Тул"
+
+	[tag]"icon path"	[value]"TulFlawlessBreachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Esh's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Иш"
+
+	[tag]"icon path"	[value]"EshFlawlessBreachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Uul-Netol's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Уул-Нетол"
+
+	[tag]"icon path"	[value]"UulnetolFlawlessBreachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chayula's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Чаюлы"
+
+	[tag]"icon path"	[value]"ChayulasFlawlessBreachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Esh's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Иш"
+
+	[tag]"icon path"	[value]"Esh's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tul's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Тула"
+
+	[tag]"icon path"	[value]"Tul's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Xoph's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Ксофа"
+
+	[tag]"icon path"	[value]"Xoph's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Uul-Netol's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Уул-Нетола"
+
+	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chayula's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Чаюлы"
+
+	[tag]"icon path"	[value]"Chayula's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
 	
 
 
@@ -1808,81 +1957,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Xoph's Flawless Breachstone"
-	[tag]"name RU"		[value]"Безупречный камень разлома Ксофа"
-
-	[tag]"icon path"	[value]"XophFlawlessBreachstone"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Breach item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Tul's Flawless Breachstone"
-	[tag]"name RU"		[value]"Безупречный камень разлома Тул"
-
-	[tag]"icon path"	[value]"TulFlawlessBreachstone"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"Breach item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Esh's Flawless Breachstone"
-	[tag]"name RU"		[value]"Безупречный камень разлома Иш"
-
-	[tag]"icon path"	[value]"EshFlawlessBreachstone"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"Breach item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Uul-Netol's Flawless Breachstone"
-	[tag]"name RU"		[value]"Безупречный камень разлома Уул-Нетол"
-
-	[tag]"icon path"	[value]"UulnetolFlawlessBreachstone"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"Breach item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Chayula's Flawless Breachstone"
-	[tag]"name RU"		[value]"Безупречный камень разлома Чаюлы"
-
-	[tag]"icon path"	[value]"ChayulasFlawlessBreachstone"
-	[tag]"base class"	[value]"Map Fragments"
-	
-	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"Breach item"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
