@@ -48,8 +48,8 @@ namespace NS_EGraphicCore
 
 	float							global_normal_multiplier			= 1.0f;
 
-	float							global_free_sky_light_multiplier	= 0.85f;
-	float							global_free_sun_light_multiplier	= 1.15f;
+	float							global_free_sky_light_multiplier	= 0.5f;
+	float							global_free_sun_light_multiplier	= 0.5f;
 	float							global_reflection_multiplier		= 2.0f;
 
 	float							global_gloss_multiplier				= 1.0f;
@@ -221,30 +221,32 @@ void ERenderBatcher::draw_call()
 		if (gl_vertex_attribute_total_count > 12)
 		{
 			glActiveTexture(GL_TEXTURE0);
-			//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
+			//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_NEAREST);
+
+			
+			NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
+			//BASE TEXTURE ATLAS
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);	
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
 			glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
-			NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
-			
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 
-
-
-
+			//SKYDOMES
 			for (int i = 0; i < texture_skydome_levels; i++)
 			{
 
 
 				glActiveTexture(GL_TEXTURE1 + i);
-				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());//1
+				
 
-				//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-				//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-				//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
-
+				//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP, GL_NEAREST);
+				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());//1
 				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", i + 1);
 			}
 
@@ -285,7 +287,7 @@ void ERenderBatcher::draw_call()
 				NS_EGraphicCore::sun_color.b
 			);
 
-			GLuint focusLoc = glGetUniformLocation(NS_EGraphicCore::pbr_batcher->get_shader()->ID, "sun_light_gloss");
+			GLuint focusLoc = glGetUniformLocation(NS_EGraphicCore::pbr_batcher->get_shader()->ID, "sun_light_gloss_color");
 			glUniform3fv(focusLoc, 1, &v[0]);
 		}
 
@@ -767,8 +769,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 
 	//NS_EGraphicCore::sun_color = Helper::hsvrgba_color;
 	NS_EGraphicCore::sun_color.r = 1.0f;
-	NS_EGraphicCore::sun_color.g = 0.8f;
-	NS_EGraphicCore::sun_color.b = 0.4f;
+	NS_EGraphicCore::sun_color.g = 0.6f;
+	NS_EGraphicCore::sun_color.b = 0.277f;
 
 	NS_EGraphicCore::sun_color.a = 1.0f;
 
@@ -1972,27 +1974,18 @@ void NS_EGraphicCore::set_active_color(HSVRGBAColor* _color)
 
 void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 {
-	NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+	//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP, GL_NEAREST);
 	NS_EGraphicCore::skydome_batcher->get_shader()->use();
 	{
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+
 
 		set_source_FBO(GL_TEXTURE0, default_texture_atlas->get_colorbuffer());
-
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-
 		set_target_FBO(skydome_texture_atlas[0]->get_framebuffer());
 
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
 
 		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_x", 1.0f / skydome_texture_atlas[0]->get_atlas_size_x() * 0.00001f);
 		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[0]->get_atlas_size_y() * 0.00001f);
@@ -2012,10 +2005,6 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 			_texture
 		);
 
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 		NS_EGraphicCore::skydome_batcher->draw_call();
 	}
 
@@ -2025,17 +2014,12 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 	{
 
 		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
-
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
-
 		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
 
 		float pp = max(1.0f, i - 0.8f);
 		pp *= pp;
@@ -2044,7 +2028,7 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		NS_EGraphicCore::skydome_batcher->get_shader()->setFloat("blur_size_y", 1.0f / skydome_texture_atlas[i]->get_atlas_size_y() * blur_table[i - 1]);
 
 		NS_EGraphicCore::skydome_batcher->set_transform_screen_size(1.0f, 1.0f);
-		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+		//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP, GL_NEAREST);
 
 		glViewport(0, 0, skydome_texture_atlas[i]->get_atlas_size_x(), skydome_texture_atlas[i]->get_atlas_size_y());
 
@@ -2058,10 +2042,6 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 			1.0f
 		);
 
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 		NS_EGraphicCore::skydome_batcher->draw_call();
 
 
@@ -2193,8 +2173,8 @@ void NS_EGraphicCore::load_texture(char const* _path, int _id)
 	glGenTextures(_id, &texture[_id]);
 	glBindTexture(GL_TEXTURE_2D, texture[_id]);
 	// set the texture wrapping parameters
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 	// set texture filtering parameters
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);

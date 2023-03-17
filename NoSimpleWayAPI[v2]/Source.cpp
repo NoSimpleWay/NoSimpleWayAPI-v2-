@@ -203,7 +203,7 @@ int main()
 
 		glfwPollEvents();
 
-		//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_LINEAR);
+		//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_NEAREST);
 		NS_EGraphicCore::gl_set_blend_mode_default();
 
 		NS_EGraphicCore::current_zoom = round(NS_EGraphicCore::stored_zoom * 50.0f) / 50.0f;
@@ -239,8 +239,8 @@ int main()
 
 		}*/
 
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
 		for (EWindow* w : EWindow::window_list)
 		{
@@ -287,7 +287,7 @@ int main()
 			EButtonGroup::parent_vector_moving_group = nullptr;
 		}
 
-		//NS_EGraphicCore::gl_set_texture_filtering(GL_MIRRORED_REPEAT, GL_LINEAR);
+		//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP, GL_NEAREST);
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
 
 		if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
@@ -296,6 +296,9 @@ int main()
 			if (EInputCore::key_pressed(GLFW_KEY_1 + i))
 			{
 				NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());
+
+				//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+				//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 				NS_ERenderCollection::add_data_to_vertex_buffer_default
 				(
@@ -405,6 +408,12 @@ int main()
 
 		//EInputCore::logger_param("data calls", ESpriteLayer::data_copy_calls);
 		//EInputCore::logger_param("data copied", ESpriteLayer::data_copies_count);
+
+		GLenum err;
+		while ((err = glGetError()) != GL_NO_ERROR)
+		{
+			EInputCore::logger_simple_error("" + err);// Process/log the error.
+		}
 	}
 
 	return 0;

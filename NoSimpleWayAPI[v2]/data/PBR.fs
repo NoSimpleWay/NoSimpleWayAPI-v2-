@@ -1,6 +1,8 @@
 
-
 #version 330 core
+
+
+
 out vec4 FragColor;
 
 in vec4 ourColor;
@@ -16,6 +18,7 @@ uniform sampler2D normal_map_texture;
 uniform sampler2D gloss_map_texture;
 
 uniform sampler2D SD_array[7];
+
 
 
 
@@ -76,10 +79,12 @@ float gloss_result = 1.0f;
 float matte_result_sun = 0.0f;
 float matte_result_sky = 0.0f;
 
-float normal_x;
-float normal_y;
+//float normal_x;
+//float normal_y;
 
+vec2 nrm;
 
+//precision lowp float;
 float reflect_pos_x;
 float reflect_pos_y;
 
@@ -87,7 +92,7 @@ float dist_x;
 float dist_y;
 float dist_total;
 
-uniform vec3 sun_light_gloss = vec3(1.8f, 1.1f, 0.5f);
+uniform vec3 sun_light_gloss_color = vec3(1.8f, 1.1f, 0.5f);
 vec3 sun_light_matte = vec3(1.7f, 1.1f, 0.8f);
 
 vec3 gloss_sun_light;
@@ -104,7 +109,7 @@ int steps = 5;
 
 float fast_gloss;
 
-float indirect_sun_angle = 0.0f;
+float sun_angle = 0.0f;
 
 void main()
 {
@@ -131,30 +136,35 @@ void main()
 	interpolation_B = level - glossy_flat;
 	interpolation_A = 1.0f - interpolation_B;
 	
-	
-	normal_x = (texture(texture1, NormalMapTexCoord).r - 0.5f) * 2.000f * normal_map_multiplier;
-	normal_y = (texture(texture1, NormalMapTexCoord).g - 0.5f) * 2.000f * normal_map_multiplier;
-	
-	//normal_x = clamp(normal_x, -1.0f, 1.0f);
-	//normal_y = clamp(normal_y, -1.0f, 1.0f);
+	nrm = texture(texture1, NormalMapTexCoord).rg - vec2(0.5);
+	nrm *= normal_map_multiplier;
+	//normal_x = ((texture(texture1, NormalMapTexCoord).r));
+	//normal_y = ((texture(texture1, NormalMapTexCoord).g));
 
-	reflect_pos_x =  0.333f + (gl_FragCoord.x	/ scr_x	* (1.0f - abs(clamp(normal_x, -1.0f, 1.0f) * 0.0f))) * 0.333f + clamp(normal_x, -1.0f, 1.0f) * 0.1666f;
-	//reflect_pos_x = clamp(reflect_pos_x, 0.0f, 1.0f);
-	//reflect_pos_x *= scr_x / scr_y;
 	
-	reflect_pos_y =  0.333f + (WorldPosition.y	/ scr_y	* (1.0f - abs(clamp(normal_y, -1.0f, 1.0f) * 0.0f))) * 0.333f + clamp(normal_y, -1.0f, 1.0f)	 * 0.1666f;
-	//reflect_pos_y = clamp(reflect_pos_y, 0.0f, 1.0f);
-	//reflect_pos_x = gl_FragCoord.x / 2880.0f;
-	//reflect_pos_y = WorldPosition.y / 1800.0f;
-	//((EDataContainerRadialButton*)EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
+	//normal_x += -0.5f;
+	//normal_y += -0.5f;
+	
+	
+	reflect_pos_x =  0.33f + ((gl_FragCoord.x	/ scr_x) + nrm[0]) * 0.33f;
+	reflect_pos_y =  0.33f + ((WorldPosition.y	/ scr_y) + nrm[1]) * 0.33f;
+
 	
 	//reflect_pos_y += (ground_level * 2.0f - 1.0f);
+	
+	//				x_scale		aspect ratio
+	float sky_reflect_x = reflect_pos_x * 2.0f * scr_x / scr_y;
+	float sky_reflect_y = reflect_pos_y * 2.0f - ground_level;
+	
+	//sky_reflect_x = 1424.32525f;
+	//sky_reflect_y = 5235.4234f;
+	
 	reflect_coord =
 	vec2
 	(
 		//base offset		screen position offset					//normal offset
-		clamp(reflect_pos_x, 0.0f, 1.0f) * 2.0f * scr_x / scr_y + time / 50.0f * move_multiplier,
-		clamp(reflect_pos_y, 0.0f, 1.0f) * 2.0f - ground_level - 0.0f
+		sky_reflect_x - floor(abs(sky_reflect_x)),
+		sky_reflect_y
 	);
 	
 	
@@ -244,47 +254,53 @@ void main()
 	
 	dist_total = length(vec2(dist_x, dist_y)) - sun_size / 10.0f;
 	//dist_total = pow(dist_total, 2.0);
-	dist_total /= 1.0f + (skydome_pixel.a) * 2.000f;
+	dist_total /= 1.0f + (skydome_pixel.a) * 5.000f;
 	//dist_total = 1.0f - dist_total;
-	dist_total = clamp(1.0f  - (dist_total * sun_blur * sun_blur * 100.0f) * (sun_flat_decay + reflection_blur_area), 0.0f, 1.0f);
+																
+	dist_total = clamp(1.0f  - ((dist_total * sun_blur * sun_blur * 100.0f) * (sun_flat_decay + reflection_blur_area)), 0.0f, 1.0f);
 	//dist_total*=dist_total;
 	dist_total = pow (dist_total, sun_exp);
 	
 	//gloss_result = plastic_or_metal;
 	
 
-		//gloss_sun_light = mix(sun_light_gloss, sun_light_gloss / 2.0f, plastic_or_metal) * dist_total * (1.0f - skydome_pixel.a);
-		gloss_sun_light = sun_light_gloss * dist_total * (1.0f - skydome_pixel.a);
+		//gloss_sun_light = mix(sun_light_gloss_color, sun_light_gloss_color / 2.0f, plastic_or_metal) * dist_total * (1.0f - skydome_pixel.a);
+		gloss_sun_light = sun_light_gloss_color * dist_total * (1.0f - skydome_pixel.a * skydome_pixel.a);
 		
 		
 		gloss_sun_light *= sun_bright * (plastic_or_metal) * (reflection_blur_area * 0.9f + 0.1f);
 		
-		indirect_sun_angle
-		= 
-		1.0f
-		-
-		max
-		(
-			length
-			(
-				vec2
-				(
-					0.0f + normal_x * 1.0f - (sun_position_x - 0.5f) * 6.0f,
-					0.0f + normal_y * 1.0f - (sun_position_y - 0.5f) * 6.0f
-				)
-			)
-			-
-			sun_size * 1.0f
-			,
-			0.0f
-		)
-		*
-		(sun_blur * 0.5f + 0.0f);
+		float indirect_sun_dist = length(vec2(nrm[0] * 0.33f - (sun_position_x - 0.5f) * 3.0f, nrm[1] * 0.33f - (sun_position_y - 0.5f) * 3.0f));
+
 		
-		indirect_sun_angle = clamp(indirect_sun_angle, 0.0f, 1.0f);
+		indirect_sun_dist -= sun_size;
+		indirect_sun_dist = max(indirect_sun_dist, 0.0f);
 		
-		//				  unlighted											lighted										mix
-		matte_sun_light	= mix(vec3(0.95f, 0.90f, 1.0f) * free_sky_light,	vec3(1.1f, 1.05f, 1.0f) * free_sun_light,	indirect_sun_angle);
+		
+			//indirect_sun_dist /= sun_size;
+		
+			//indirect_sun_dist = clamp(sun_angle, 0.0f, 1.0f);
+		
+			sun_angle = clamp(1.0f - indirect_sun_dist * sun_blur * sun_blur * (1.0f), 0.0f, 1.0f);
+			sun_angle = pow(sun_angle, sun_exp);
+		if (indirect_sun_dist >= 0.333f)
+		{	
+			float sun_see_factor = max(1.0f - (indirect_sun_dist - 0.333f) / sun_size, 0.0f);
+			
+			sun_angle = sun_angle * sun_see_factor;
+			//sun_angle = 1.0f;
+		}
+		
+		sun_angle = clamp(sun_angle, 0.0f, 1.0f);
+
+		
+		
+		//						lighted										unlighted									mix
+		
+		//always lighted by sky
+		matte_sun_light	=	vec3(0.90f, 0.95f, 1.0f)	* free_sky_light * (1.0f + sun_angle * 0.0f);
+		matte_sun_light	+=	vec3(1.00f, 0.95f, 0.90f)	* free_sun_light * sun_angle;
+		
 		//matte_sun_light = vec3(1.0f);
 	
 	//sky_light = mix(sky_light_matte, sky_light_gloss, plastic_or_metal);
@@ -319,6 +335,9 @@ void main()
 		vec3(1.0f)
 	);
 	
+	//if (sky_reflect_x > 1.0f) {FragColor.r = 1.0f;}
+	//if (sky_reflect_y > 1.0f) {FragColor.g = 1.0f;}
+	
 	//FragColor.r = (reflect_pos_x);
 	//FragColor.g = (reflect_pos_y);
 	//FragColor.b = 0.5f;
@@ -326,7 +345,9 @@ void main()
 	//FragColor.rgb = vec3(dist_total);
 	FragColor.a = texture(texture1, TexCoord).a * ourColor.a;
 	//FragColor.rgb = vec3(dist_total);
-	//FragColor.rgb = vec3(indirect_sun_angle);
+	//FragColor.rgb = (matte_sun_light);
+	//FragColor.rgb = vec3(sun_angle);
+	//FragColor.rgb = vec3(1.0f - indirect_sun_dist);
 	//FragColor.rgb = vec3(reflect_coord.x, reflect_coord.y, 1.0f);
 	//FragColor.rgb = texture(texture1, TexCoord).rgb * ourColor.rgb;
 	//FragColor.rgb =  (sky_light) * (1.0f - gloss_result) + (sun_light);
