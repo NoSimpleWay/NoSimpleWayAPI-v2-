@@ -171,8 +171,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"button_remove_block"
-	[tag]"name EN"		[value]"Remove"
-	[tag]"name RU"		[value]"Удалить"
+	[tag]"name EN"		[value]"Remove block"
+	[tag]"name RU"		[value]"Удалить блок"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -280,6 +280,35 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"slider_MF_factor"
 	[tag]"name EN"		[value]"Magic Find"
 	[tag]"name RU"		[value]"Удача"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"example_slider"
+	[tag]"name EN"		[value]"Example slider"
+	[tag]"name RU"		[value]"Слайдер-образец"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_remove_all_listed_buttons"
+	[tag]"name EN"		[value]"Remove all buttons"
+	[tag]"name RU"		[value]"Удалить все предметы"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_delete_all_listed_button"
+	[tag]"name EN"		[value]"Remove ALL items from this block"
+	[tag]"name RU"		[value]"Удалить ВСЕ предметы из этого блока"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_delete_listed_block"
+	[tag]"name EN"		[value]"Remove this block"
+	[tag]"name RU"		[value]"Удалить этот блок"
 	
 
 	

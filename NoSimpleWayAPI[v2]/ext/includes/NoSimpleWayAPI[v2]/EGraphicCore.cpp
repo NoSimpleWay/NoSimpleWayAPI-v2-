@@ -226,8 +226,8 @@ void ERenderBatcher::draw_call()
 			
 			NS_EGraphicCore::pbr_batcher->get_shader()->setInt("texture1", 0);
 			//BASE TEXTURE ATLAS
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);	
 			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
@@ -930,7 +930,7 @@ void NS_EGraphicCore::create_styles()
 		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
 		EBrickStyle::set_border_size(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
-		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_offset_size(jc_brick, 10.0f, 10.0f, 10.0f, 10.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 8, 0);
 
 		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
@@ -1029,7 +1029,7 @@ void NS_EGraphicCore::create_styles()
 	
 		NS_EGraphicCore::load_style_texture(just_created_style, jc_brick);
 
-		EBrickStyle::set_border_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
+		EBrickStyle::set_border_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
 		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 1, 1);
 
@@ -4450,7 +4450,7 @@ void NS_EGraphicCore::refresh_autosize_groups(EWindow* _window)
 			//real, expanded size
 			if (bg->can_resize_to_workspace_size_y)
 			{
-				free_dynamic_size_y -= bg->border_bottom + bg->border_up;
+				free_dynamic_size_y -= bg->group_offset_for_content_bottom + bg->group_offset_for_content_up;
 			}
 		}
 	}
@@ -4472,7 +4472,7 @@ void NS_EGraphicCore::refresh_autosize_groups(EWindow* _window)
 
 		if (bg->can_resize_to_workspace_size_y)
 		{
-			bg->region_gabarite->size_y += bg->border_bottom + bg->border_up;
+			bg->region_gabarite->size_y += bg->group_offset_for_content_bottom + bg->group_offset_for_content_up;
 			//bg->base_height -= bg->border_bottom + bg->border_up;
 		}
 	}

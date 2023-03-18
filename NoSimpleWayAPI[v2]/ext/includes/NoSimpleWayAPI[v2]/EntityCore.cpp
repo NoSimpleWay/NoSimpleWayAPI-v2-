@@ -681,19 +681,19 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 			if (item_icon != nullptr)
 			{
-				resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
+				resize_factor = (_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up - 6.0f) / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
 				resize_factor = min(resize_factor, 1.0f);
 
-				offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
-				offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
+				offset_x = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
+				offset_y = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
 
 				second_button_layer =
 					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 					(
 						item_icon,
 
-						_parent_group->border_left + offset_x,
-						_parent_group->border_bottom + offset_y,
+						_parent_group->group_offset_for_content_left + offset_x,
+						_parent_group->group_offset_for_content_bottom + offset_y,
 						3.0f,
 
 						item_icon->size_x_in_pixels * resize_factor,
@@ -753,19 +753,19 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 			if (item_icon != nullptr)
 			{
-				resize_factor = (_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up - 6.0f) / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
+				resize_factor = (_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up - 6.0f) / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
 				resize_factor = min(resize_factor, 1.0f);
 
-				offset_x = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
-				offset_y = ((_region_gabarite->size_y - _parent_group->border_bottom - _parent_group->border_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
+				offset_x = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
+				offset_y = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
 
 				second_button_layer =
 					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 					(
 						item_icon,
 
-						_parent_group->border_left + offset_x,
-						_parent_group->border_bottom + offset_y,
+						_parent_group->group_offset_for_content_left + offset_x,
+						_parent_group->group_offset_for_content_bottom + offset_y,
 						3.0f,
 
 						item_icon->size_x_in_pixels * resize_factor,
@@ -931,7 +931,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	jc_button->main_custom_data->clickable_area_list.push_back(clickable_area_for_digit_section);
 
 	ETextArea*
-	text_area_digit_segment = ETextArea::create_centered_to_left_text_area(clickable_area_for_digit_section, _font, _ltext);
+		text_area_digit_segment = ETextArea::create_centered_to_left_text_area(clickable_area_for_digit_section, _font, ELocalisationText::empty_localisation);
 	text_area_digit_segment->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left + 4.0f;
 	text_area_digit_segment->can_be_edited = false;
 	data->pointer_to_digit_text_area = text_area_digit_segment;
@@ -988,7 +988,7 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 	jc_text_area->offset_by_gabarite_size_y = 1.0;
 	jc_text_area->offset_by_text_size_y = -1.0;
 
-	jc_text_area->offset_border[BorderSide::LEFT] = _parent_group->border_left;
+	jc_text_area->offset_border[BorderSide::LEFT] = _parent_group->group_offset_for_content_left;
 
 	jc_text_area->change_text(_text.localisations[ELocalisationText::active_localisation]);
 
@@ -1599,7 +1599,7 @@ void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style)
 		0.0f,
 		0.0f,
 		_but->parent_button_group->selected_style->brick_style[0].main_texture->size_x_in_pixels,
-		_but->parent_button_group->region_gabarite->size_y - _but->parent_button_group->border_bottom - _but->parent_button_group->border_up
+		_but->parent_button_group->region_gabarite->size_y - _but->parent_button_group->group_offset_for_content_bottom - _but->parent_button_group->group_offset_for_content_up
 	);
 
 	//offset by button_group
@@ -1607,9 +1607,9 @@ void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style)
 	=
 	_but->parent_button_group->region_gabarite->size_y
 	-
-	_but->parent_button_group->border_bottom
+	_but->parent_button_group->group_offset_for_content_bottom
 	-
-	_but->parent_button_group->border_up;
+	_but->parent_button_group->group_offset_for_content_up;
 
 	//float current_height_percent
 	//=
@@ -1640,7 +1640,7 @@ void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style)
 		_style->brick_style[BrickStyleID::SLIDER_BG].gloss_map_texture
 	);
 
-	_but->sprite_layer_list[0]->offset_y = _but->parent_button_group->border_bottom;
+	_but->sprite_layer_list[0]->offset_y = _but->parent_button_group->group_offset_for_content_bottom;
 	_but->sprite_layer_list[0]->sprite_layer_set_world_position(0.0f, 0.0f, 0.0f);
 	_but->sprite_layer_list[0]->generate_vertex_buffer_for_sprite_layer("init bg");
 
@@ -1670,7 +1670,7 @@ void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style)
 		*
 		*(((EDataContainerScrollBar*)_but->custom_data_list[0]->data_container)->current_percent)
 		+
-		_but->parent_button_group->border_bottom
+		_but->parent_button_group->group_offset_for_content_bottom
 	)
 	;
 
@@ -1772,9 +1772,9 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 	=
 	_but->parent_button_group->region_gabarite->size_y
 	-
-	_but->parent_button_group->border_bottom
+	_but->parent_button_group->group_offset_for_content_bottom
 	-
-	_but->parent_button_group->border_up;
+	_but->parent_button_group->group_offset_for_content_up;
 
 
 	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
@@ -1822,13 +1822,13 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 	{
 		slider->min_value = 0.0f;
 
-		slider->max_value = -(_but->parent_button_group->final_highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->border_up);
+		slider->max_value = -(_but->parent_button_group->final_highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->group_offset_for_content_up);
 		slider->max_value = min(slider->max_value, 0.0f);
 	}
 	else
 	if (_but->parent_button_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
 	{
-		slider->min_value = (_but->parent_button_group->final_highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->border_up);
+		slider->min_value = (_but->parent_button_group->final_highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->group_offset_for_content_up);
 		slider->min_value = max(slider->min_value, 0.0f);
 
 		slider->max_value = 0.0f;
@@ -2023,8 +2023,8 @@ void DescriptionContainer::create_description()
 
 void DescriptionContainer::align_description(EButtonGroup* _group)
 {
-	float borders_size_x = _group->border_left		+ _group->border_right;
-	float borders_size_y = _group->border_bottom	+ _group->border_up;
+	float borders_size_x = _group->group_offset_for_content_left		+ _group->group_offset_for_content_right;
+	float borders_size_y = _group->group_offset_for_content_bottom	+ _group->group_offset_for_content_up;
 
 	_group->region_gabarite->offset_x = max(parent_button->button_gabarite->world_position_x, borders_size_x + 3.0f);
 	_group->region_gabarite->offset_x = min(_group->region_gabarite->offset_x, NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom - _group->region_gabarite->size_x - borders_size_x - 3.0f);

@@ -538,11 +538,11 @@ void ETextArea::generate_text()
 		else
 			if (parent_group != nullptr)
 			{
-				border_offset_bottom	= parent_group->border_bottom;
-				border_offset_top		= parent_group->border_up;
+				border_offset_bottom	= parent_group->group_offset_for_content_bottom;
+				border_offset_top		= parent_group->group_offset_for_content_up;
 
-				border_offset_left		= parent_group->border_left;
-				border_offset_right		= parent_group->border_right;
+				border_offset_left		= parent_group->group_offset_for_content_left;
+				border_offset_right		= parent_group->group_offset_for_content_right;
 			}
 
 		//vertical align
@@ -1479,11 +1479,11 @@ void ETextArea::change_text(std::string _text)
 	else
 		if (parent_group != nullptr)
 		{
-			border_left = parent_group->border_left;
-			border_right = parent_group->border_right;
+			border_left = parent_group->group_offset_for_content_left;
+			border_right = parent_group->group_offset_for_content_right;
 
-			border_bottom = parent_group->border_bottom;
-			border_up = parent_group->border_up;
+			border_bottom = parent_group->group_offset_for_content_bottom;
+			border_up = parent_group->group_offset_for_content_up;
 		}
 
 	original_text = _text;

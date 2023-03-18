@@ -9,7 +9,8 @@ class EBrickStyle;
 
 enum BrickStyleID
 {
-	NONE			= -1,
+	//NONE_WITH_BORDER	= -2,
+	NONE				= -1,
 	GROUP_MAIN,
 	GROUP_DARKEN,
 	SLIDER_BG,
@@ -324,6 +325,8 @@ public:
 
 	EntityButton* close_button = nullptr;
 
+	int fake_borders_id = -1;
+
 	float min_size_for_resize = 120.0f;
 	//bool need_recalcualte_culling_lines = false;
 	//bool hidden_by_search = false;
@@ -475,11 +478,11 @@ public:
 	bool can_resize_to_workspace_size_x = true;
 	bool can_resize_to_workspace_size_y = true;
 
-	float border_bottom = (0.0f);
-	float border_up = (0.0f);
+	float group_offset_for_content_bottom = (0.0f);
+	float group_offset_for_content_up = (0.0f);
 
-	float border_left = (0.0f);
-	float border_right = (0.0f);
+	float group_offset_for_content_left = (0.0f);
+	float group_offset_for_content_right = (0.0f);
 
 	float additional_y_distance = 0.0f;
 

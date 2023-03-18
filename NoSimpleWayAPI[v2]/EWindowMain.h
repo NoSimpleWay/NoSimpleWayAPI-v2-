@@ -161,6 +161,9 @@ class EntityButtonForListedSegment : public EntityButtonForFilterBlock
 {
 public:
 	EButtonGroup* listed_group;
+	EButtonGroup* group_with_items;
+
+	EButtonGroup* target_block_for_highlight;
 	//~EntityButtonFilterBlock
 	//int a;
 	//EntityButtonFilterBlock() : a(0) {};
@@ -241,7 +244,8 @@ public:
 	EButtonGroup* pointer_to_top_control_block;
 	EButtonGroup* pointer_to_top_control_block_right_section;
 
-	EButtonGroup* pointer_to_control_group_left_show_hide;
+	EButtonGroup* pointer_to_ID_block;
+	EButtonGroup* pointer_to_block_show_hide_continue;
 	EButtonGroup* pointer_to_control_group_mid_import;
 	EButtonGroup* pointer_to_control_group_mid_versions;
 	EButtonGroup* pointer_to_control_group_mid_show_hide_cosmetic;
@@ -555,6 +559,8 @@ namespace EDataActionCollection
 	void action_move_button_group(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_delete_listed_segment(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_delete_listed_buttons(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_draw_deleted_group(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d);
 
@@ -802,7 +808,7 @@ public:
 	static void register_pattern_delve_items();
 	static void register_pattern_breach_items();
 
-	static void register_pattern_jewelry();
+	static void register_pattern_gloves_helmets_boots_body_jewelry();
 	static void register_pattern_all_equip();
 	//static void register_pattern_all_equip();
 	static void register_pattern_top_tier_bases();
@@ -816,6 +822,8 @@ public:
 	static void register_pattern_basic_currencies();
 
 	static void register_pattern_all_currencies();
+
+	static void register_deleted_items();
 
 	static void set_color_version(HSVRGBAColor* _target_color, int _selected_mode);
 	static void make_unsaved_loot_filter_changes();
@@ -1129,6 +1137,7 @@ public:
 	GameAttributeGeneratorSocketsLinksColours*	add_sockets_and_links	(int _min_sockets, int _max_sockets, int _min_links, int _max_links);
 	void										add_quantity			(float _min, float _max, float _pow);
 	void										add_quality				(int _min, int _max, float _pow);
+	void										add_named_attrubite		(std::string _attribute_name, float _chance_to_add);
 
 };
 
@@ -1145,7 +1154,7 @@ public:
 	static std::vector<LootSimulatorPattern*>	registered_loot_simulater_pattern_list;
 	static void									execute_loot_pattern(LootSimulatorPattern* _pattern);
 
-	bool										add_force_field_for_button = false;
+	bool										additional_force_field_for_buttons = false;
 	//static void								refresh_loot_simulator();
 
 
