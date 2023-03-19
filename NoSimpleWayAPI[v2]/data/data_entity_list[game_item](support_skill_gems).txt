@@ -18,6 +18,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30,6 +34,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -42,6 +50,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -54,6 +66,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -66,6 +82,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -78,6 +98,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+			
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Awakened gem"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -90,6 +114,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -102,6 +130,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Moderate"
+			
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -114,6 +148,26 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Hextouch Support"
+	[tag]"name RU"		[value]"Пробужденный: Касание порчи"
+
+	[tag]"icon path"	[value]"Awakened"
+	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -126,6 +180,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -138,6 +196,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -150,6 +212,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -162,6 +228,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -174,6 +244,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -186,6 +260,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -198,6 +274,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -210,6 +290,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -222,6 +306,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -234,6 +322,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -246,6 +338,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -258,6 +354,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -270,6 +370,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -282,6 +386,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -294,6 +402,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -306,6 +418,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -318,6 +434,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -330,6 +450,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -342,6 +466,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -354,6 +480,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -366,6 +496,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -378,6 +512,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -390,6 +526,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -402,6 +542,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -414,6 +558,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+			
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -426,20 +574,30 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Awakened"
 	[tag]"base class"	[value]"Support Skill Gems"
+			
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Awakened gem"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
 
 
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Empower"
+	[tag]"name EN"		[value]"Empower Support"
 	[tag]"name RU"		[value]"Усилитель"
 
 	[tag]"icon path"	[value]"Empower_Support_inventory_icon"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -447,11 +605,13 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Enhance"
+	[tag]"name EN"		[value]"Enhance Support"
 	[tag]"name RU"		[value]"Улучшитель"
 
 	[tag]"icon path"	[value]"Eternal_Mana_Flask_inventory_icon"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -459,14 +619,75 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Enlighten"
+	[tag]"name EN"		[value]"Enlighten Support"
 	[tag]"name RU"		[value]"Наставник"
 
 	[tag]"icon path"	[value]"Enlighten_Support_inventory_icon"
 	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Exceptional gem"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Empower Support"
+	[tag]"name RU"		[value]"Пробуждённый: Усилитель"
+
+	[tag]"icon path"	[value]"awakened_empower"
+	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+	[tag]"item tag"		[value]"Exceptional gem"
+			
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Enhance Support"
+	[tag]"name RU"		[value]"Пробуждённый: Улучшитель"
+
+	[tag]"icon path"	[value]"awakened_enchance"
+	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+	[tag]"item tag"		[value]"Exceptional gem"
+			
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Enlighten Support"
+	[tag]"name RU"		[value]"Пробуждённый: Наставник"
+
+	[tag]"icon path"	[value]"awakened_enlighten"
+	[tag]"base class"	[value]"Support Skill Gems"
+	
+	[tag]"item tag"		[value]"Awakened gem"
+	[tag]"item tag"		[value]"Exceptional gem"
+			
+	[tag]"worth"		[value]"Very expensive"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"

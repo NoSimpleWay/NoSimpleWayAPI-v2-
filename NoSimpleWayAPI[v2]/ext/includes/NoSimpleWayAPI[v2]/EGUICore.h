@@ -405,6 +405,8 @@ public:
 	float higher_culling_line_for_element	= 0.0f;
 	float lower_culling_line_for_element	= 0.0f;
 
+	float autodelete_time					= -1.0f;
+
 	//float higher_culling_line_for_bg = 0.0f;
 	//float lower_culling_line_for_bg = 0.0f;
 
@@ -466,7 +468,8 @@ public:
 	void align_buttons_in_lines();
 	void calculate_world_coordinates_for_buttons();
 	
-	
+	void resize_group_to_highest_point_y();
+	float get_child_total_y_size();
 
 	
 

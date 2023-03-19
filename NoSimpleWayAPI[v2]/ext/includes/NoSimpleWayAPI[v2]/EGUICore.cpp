@@ -708,7 +708,15 @@ void EButtonGroup::button_group_update(float _d)
 
 	//invisible elements become visible
 
+	if (autodelete_time >= 0.0f)
+	{
+		autodelete_time -= _d;
 
+		if (autodelete_time <= 0.0f)
+		{
+			need_remove = true;
+		}
+	}
 
 		/*if (row->header_button_group != nullptr)
 		{
@@ -2179,6 +2187,22 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 	{
 		_group->button_group_prechange();
 
+		if (_group->can_be_stretched_by_child)
+		{
+
+		}
+
+		//if (_group->resize_to_highest_point)
+		//{
+		//	_group->reset_buttons_phantom_translate();
+		//	_group->override_button_size();
+		//	_group->put_buttons_to_lines();
+
+		//	_group->activate_slider_if_need();
+
+
+		//}
+
 		//stretch to parent sizes
 		_group->group_stretch_y();
 		_group->check_slider();
@@ -2189,11 +2213,14 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 		_group->recalculate_culling_lines();
 
 		//buttons process
-		_group->reset_buttons_phantom_translate();
-		_group->override_button_size();
-		_group->put_buttons_to_lines();
+		//if (!_group->resize_to_highest_point)
+		{
+			_group->reset_buttons_phantom_translate();
+			_group->override_button_size();
+			_group->put_buttons_to_lines();
 
-		_group->activate_slider_if_need();
+			_group->activate_slider_if_need();
+		}
 
 		_group->stretch_all_buttons();
 		_group->calculate_group_lines();
@@ -2508,6 +2535,29 @@ void EButtonGroup::calculate_world_coordinates_for_buttons()
 			but_temp->world_position_y = round(but_temp->parent_button_group->region_gabarite->world_position_y + but_temp->offset_y + but_temp->parent_button_group->scroll_y);
 		}
 	}
+}
+
+float EButtonGroup::get_child_total_y_size()
+{
+	float total_y_size = 0.0f;
+	for (EButtonGroup* child : group_list)
+	{
+		if (child->stretch_y_by_parent_size)
+		{
+			total_y_size += child->min_size_y;
+		}
+		else
+		{
+			total_y_size += child->region_gabarite->size_y;
+		}
+
+		if (child != group_list.back())
+		{
+			total_y_size += child->additional_y_distance;
+		}
+	}
+
+	return total_y_size;
 }
 
 void EButtonGroup::override_button_size()

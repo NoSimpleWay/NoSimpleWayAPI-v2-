@@ -144,7 +144,7 @@ public:
 	float size_y = 50.0f;
 
 	virtual void	create_description();
-	void			align_description(EButtonGroup* _group);
+	void			init_description(EButtonGroup* _group);
 
 	EntityButton*	parent_button;
 	EClickableArea*	parent_clickable_area;

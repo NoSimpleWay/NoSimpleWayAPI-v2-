@@ -119,6 +119,9 @@ namespace NS_DefaultGabarites
 	ETextureGabarite* texture_bool_switcher_activated_box;
 	ETextureGabarite* texture_bool_switcher_deactivated_box;
 
+	ETextureGabarite* texture_bool_switcher_force_field_on;
+	ETextureGabarite* texture_bool_switcher_force_field_off;
+
 	ETextureGabarite* texture_button_radiance;
 	ETextureGabarite* texture_button_radiance_dot;
 }
@@ -732,12 +735,22 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_DefaultGabarites::texture_bool_switcher_activated_box	= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/box_switcher_on.png",		NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_bool_switcher_deactivated_box	= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/box_switcher_off.png",		NS_EGraphicCore::default_texture_atlas);
 	
+	NS_DefaultGabarites::texture_bool_switcher_force_field_on	= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/force_field_for_separator_on.png",		NS_EGraphicCore::default_texture_atlas);
+	NS_DefaultGabarites::texture_bool_switcher_force_field_off	= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/force_field_for_separator_off.png",		NS_EGraphicCore::default_texture_atlas);
+	
 	NS_DefaultGabarites::texture_button_radiance				= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/radiance_button.png",		NS_EGraphicCore::default_texture_atlas);
 	NS_DefaultGabarites::texture_button_radiance_dot			= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/radiance_button_dot.png",	NS_EGraphicCore::default_texture_atlas);
 	//NS_DefaultGabarites::texture_slider_bg_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 
 	
-
+	//[0]2048(1024)
+	//[1]1024
+	//[2]512
+	//[3]256
+	//[4]128
+	//[5]64
+	//[6]64
+	//
 	for (int i = 0; i < texture_skydome_levels; i++)
 	{
 		NS_EGraphicCore::skydome_texture_atlas[i]
@@ -2082,7 +2095,7 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		set_source_FBO(GL_TEXTURE0, default_texture_atlas->get_colorbuffer());
 		set_target_FBO(skydome_texture_atlas[0]->get_framebuffer());
 
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
@@ -2115,7 +2128,7 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
 		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
 
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//

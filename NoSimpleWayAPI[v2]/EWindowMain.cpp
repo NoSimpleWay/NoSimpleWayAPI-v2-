@@ -1014,6 +1014,20 @@ void EDataActionCollection::action_change_separator_shrink_flag(Entity* _entity,
 	static_cast<EntityButton*>(_entity)->parent_button_group->highlight_this_group();
 }
 
+void EDataActionCollection::action_change_force_field(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButton* but = static_cast<EntityButton*>(_entity);
+	but->parent_button_group->root_group->need_change = true;
+
+	EButtonGroupFilterBlockSeparator*
+	searator_line = static_cast<EButtonGroupFilterBlockSeparator*>(but->parent_button_group);
+
+	searator_line->additional_y_distance = NSW_default_y_force_field_for_separator + NSW_additional_y_force_field_for_separator * searator_line->additional_force_field;
+	
+
+	static_cast<EntityButton*>(_entity)->parent_button_group->highlight_this_group();
+}
+
 void EDataActionCollection::action_clear_text(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	if (EWindowMain::bottom_filter_block_control->search_button != nullptr)
@@ -6856,34 +6870,10 @@ void EWindowMain::register_filter_rules()
 	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
-	////////////////////////////////////////////////////////////////////////////////////////////
-	//Ritual league
-	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/RitualRune");
-	jc_filter_rule->categry_id = 6;
 
-	jc_filter_rule->localisation_text = new ELocalisationText();
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "League: Ritual";
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига: Ритуал";
-	jc_filter_rule->tag = "Game item";
 
-	//filter by game item
-	jc_filter = new DataEntityFilter();
-	jc_filter->target_tag_name = "data type";
-	jc_filter->suitable_values_list.push_back("Game item");
-	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	//
 
-	//filter "item tag" by 
-	jc_filter = new DataEntityFilter();
-	jc_filter->target_tag_name = "item tag";
-	jc_filter->suitable_values_list.push_back("League: Ritual");
-	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	//
 
-	//
-	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//Heist league
@@ -6914,42 +6904,24 @@ void EWindowMain::register_filter_rules()
 	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 	////////////////////////////////////////////////////////////////////////////////////////////
-	//Forbidden sanctum league
-	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Sanctum_league");
-	jc_filter_rule->categry_id = 6;
 
-	jc_filter_rule->localisation_text = new ELocalisationText();
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Forbidden Sanctum league";
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Запретное святилище'";
-	jc_filter_rule->tag = "Game item";
 
-	//filter by game item
-	jc_filter = new DataEntityFilter();
-	jc_filter->target_tag_name = "data type";
-	jc_filter->suitable_values_list.push_back("Game item");
-	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	//
 
-	//filter "item tag" by 
-	jc_filter = new DataEntityFilter();
-	jc_filter->target_tag_name = "item tag";
-	jc_filter->suitable_values_list.push_back("Introduced: Forbidden Sanctum league");
-	jc_filter_rule->required_tag_list.push_back(jc_filter);
-	//
 
-	//
-	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
-	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+
+
+
+
 	////////////////////////////////////////////////////////////////////////////////////////////
-	//Kalandra league
+	//Ritual league
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/LakeStampingDevice");
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/RitualRune");
 	jc_filter_rule->categry_id = 6;
 
 	jc_filter_rule->localisation_text = new ELocalisationText();
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Kalandra league";
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Каландра'";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "League: Ritual";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига: Ритуал";
 	jc_filter_rule->tag = "Game item";
 
 	//filter by game item
@@ -6962,13 +6934,54 @@ void EWindowMain::register_filter_rules()
 	//filter "item tag" by 
 	jc_filter = new DataEntityFilter();
 	jc_filter->target_tag_name = "item tag";
-	jc_filter->suitable_values_list.push_back("Introduced: Kalandra league");
+	jc_filter->suitable_values_list.push_back("League: Ritual");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	//
 
 	//
 	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+	
+
+
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Scourge league
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/HellscapePaleBoss");
+	jc_filter_rule->categry_id = 6;
+
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Scourge league";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Нашествие'";
+	jc_filter_rule->tag = "Game item";
+
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Introduced: Scourge league");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+
+
+
+
 
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//Archnemesis league
@@ -6999,15 +7012,19 @@ void EWindowMain::register_filter_rules()
 	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 
+
+
+
+
 	////////////////////////////////////////////////////////////////////////////////////////////
-	//Scourge league
+	//Kalandra league
 	jc_filter_rule = new EFilterRule();
-	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/HellscapePaleBoss");
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/LakeStampingDevice");
 	jc_filter_rule->categry_id = 6;
 
 	jc_filter_rule->localisation_text = new ELocalisationText();
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Scourge league";
-	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Нашествие'";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Kalandra league";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Каландра'";
 	jc_filter_rule->tag = "Game item";
 
 	//filter by game item
@@ -7020,13 +7037,202 @@ void EWindowMain::register_filter_rules()
 	//filter "item tag" by 
 	jc_filter = new DataEntityFilter();
 	jc_filter->target_tag_name = "item tag";
-	jc_filter->suitable_values_list.push_back("Introduced: Scourge league");
+	jc_filter->suitable_values_list.push_back("Introduced: Kalandra league");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	//
 
 	//
 	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Forbidden sanctum league
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Sanctum_league");
+	jc_filter_rule->categry_id = 7;
+
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Forbidden Sanctum league";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Лига 'Запретное святилище'";
+	jc_filter_rule->tag = "Game item";
+
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Introduced: Forbidden Sanctum league");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	
+
+	
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Awakened gems: cheap
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Awakened");
+	jc_filter_rule->categry_id = 7;
+
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Awakened gems: cheap";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Пробуждённые камни: дешёвые";
+	jc_filter_rule->tag = "Game item";
+
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Awakened gem");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "worth";
+	jc_filter->suitable_values_list.push_back("Common");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+	
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Awakened gems: cheap
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Awakened");
+	jc_filter_rule->categry_id = 7;
+
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Awakened gems: moderate";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Пробуждённые камни: недорогие";
+	jc_filter_rule->tag = "Game item";
+
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Awakened gem");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "worth";
+	jc_filter->suitable_values_list.push_back("Moderate");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Awakened gems: cheap
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Awakened");
+	jc_filter_rule->categry_id = 7;
+
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Awakened gems: rare";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Пробуждённые камни: ценные";
+	jc_filter_rule->tag = "Game item";
+
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Awakened gem");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "worth";
+	jc_filter->suitable_values_list.push_back("Rare");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//Awakened gems: cheap
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Awakened");
+	jc_filter_rule->categry_id = 7;
+
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Awakened gems: expensive";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Пробуждённые камни: дорогие";
+	jc_filter_rule->tag = "Game item";
+
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Awakened gem");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//filter "item tag" by 
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "worth";
+	jc_filter->suitable_values_list.push_back("Expensive");
+	jc_filter->suitable_values_list.push_back("Very expensive");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//
+	//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
 
 
 }
@@ -8276,11 +8482,10 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	EButtonGroup*
 		listed_condition_segment = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(111.0f, 160.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-	listed_condition_segment->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
+	listed_condition_segment->child_align_direction = ChildElementsAlignDirection::BOTTOM_TO_TOP;
 	//listed_condition_segment->button_size_x_override = 200.0f;
 	//root group data ontaner
 	whole_filter_block_group->pointer_to_listed_segment = listed_condition_segment;
-	listed_condition_segment->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
 
 	workspace_part->add_group(listed_condition_segment);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -9883,8 +10088,10 @@ EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EBu
 	whole_separator_block->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	whole_separator_block->debug_name = "Whole separator";
 	whole_separator_block->focusable_for_select = true;
-	whole_separator_block->additional_y_distance = 8.0f;
+	whole_separator_block->additional_y_distance = NSW_default_y_force_field_for_separator;
 	whole_separator_block->ignore_vertical_buttons_force_field = true;
+
+
 	//		SHRINKER
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	EntityButton* shrinker_button = new EntityButton();
@@ -9902,6 +10109,28 @@ EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EBu
 
 	whole_separator_block->add_button_to_working_group(shrinker_button);
 	/////////////////////////////////////////////////////////////////////////////////////////////
+
+	//		FORCE FIELD
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	EntityButton*
+	force_field_button = new EntityButton();
+	force_field_button->make_default_bool_switcher_button
+	(
+		new ERegionGabarite(20.0f, 20.0f),
+		whole_separator_block,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_DefaultGabarites::texture_bool_switcher_force_field_on,
+		NS_DefaultGabarites::texture_bool_switcher_force_field_off,
+		&whole_separator_block->additional_force_field
+	);
+	whole_separator_block->is_expanded = true;
+	force_field_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_change_force_field);
+
+	whole_separator_block->add_button_to_working_group(force_field_button);
+	/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 	//		MOVE
 	/////////////////////////////////////////////////////////////////////////////////////////////
@@ -9921,6 +10150,9 @@ EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EBu
 	whole_separator_block->add_button_to_working_group(move_button);
 	/////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+
 	//		DESCRIPTION
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	EntityButton*
@@ -9933,8 +10165,8 @@ EButtonGroupFilterBlockSeparator* EWindowMain::create_filter_block_separator(EBu
 		""
 	);
 	ELocalisationText ltext;
-	ltext.localisations[NSW_localisation_EN] = "Type commentary";
-	ltext.localisations[NSW_localisation_RU] = "Напишите комментарий";
+	ltext.localisations[NSW_localisation_EN] = "Click here, and type commentary";
+	ltext.localisations[NSW_localisation_RU] = "нажмите, что бы написать комментарий";
 
 	description_button->main_text_area->gray_text = ltext;
 	//move_button->parent_group_for_moving = _target_whole_group;
@@ -10812,6 +11044,13 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 												jc_filter_block_separator->is_expanded = false;
 												//jc_filter_block->is_expanded = false;
 											}
+
+											if ((data_part == 4) && (buffer_text == "additional_space"))
+											{
+												jc_filter_block_separator->additional_force_field = true;
+												jc_filter_block_separator->additional_y_distance = NSW_default_y_force_field_for_separator + NSW_additional_y_force_field_for_separator;
+												//jc_filter_block->is_expanded = false;
+											}
 										}
 
 
@@ -10947,6 +11186,386 @@ void EWindowMain::register_loot_simulator_patterns()
 
 	register_pattern_boss_loot();
 
+	register_pattern_gems();
+
+}
+
+void EWindowMain::register_pattern_gems()
+{
+	//		GEMS
+	{
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Gems";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Камни";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Active");
+
+		//loot_simulator_pattern->additional_force_field_for_buttons = true;
+		
+
+
+		/////////////////////////////			ITEM GENERATOR (REGULAR 1-20 GEMS WITH QUALITY AND LEVEL)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 8;
+			ELocalisationText l_text;
+			l_text.base_name = "Gem";
+			l_text.localisations[NSW_localisation_EN] = "Active Skill Gems";
+			l_text.localisations[NSW_localisation_RU] = "Камень умения";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+
+			l_text;
+			l_text.base_name = "Active Skill Gems";
+			l_text.localisations[NSW_localisation_EN] = "Active Skill Gems";
+			l_text.localisations[NSW_localisation_RU] = "Камень умения";
+			game_item_generator->add_class(l_text);
+
+			game_item_generator->add_quality	(0.0f, 23.0f, 2.0f);
+			game_item_generator->add_gem_level	(1.0f, 21.0f, 2.0f);
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+		
+		/////////////////////////////			ITEM GENERATOR (REGULAR 1-20 GEMS WITH QUALITY AND LEVEL)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 8;
+			ELocalisationText l_text;
+			l_text.base_name = "Support";
+			l_text.localisations[NSW_localisation_EN] = "Support Skill Gem";
+			l_text.localisations[NSW_localisation_RU] = "Камень поддержки";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+
+			l_text;
+			l_text.base_name = "Support Skill Gems";
+			l_text.localisations[NSW_localisation_EN] = "Support Gem";
+			l_text.localisations[NSW_localisation_RU] = "Камень поддержки";
+			game_item_generator->add_class(l_text);
+
+			game_item_generator->add_quality	(0.0f, 20.0f, 2.0f);
+			game_item_generator->add_gem_level	(1.0f, 20.0f, 2.0f);
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+
+
+
+		/////////////////////////////			ITEM GENERATOR (CORRUPTED 1-23 GEMS WITH QUALITY AND LEVEL)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 8;
+			ELocalisationText l_text;
+			l_text.base_name = "Gems";
+			l_text.localisations[NSW_localisation_EN] = "Corrupted Active Skill Gems";
+			l_text.localisations[NSW_localisation_RU] = "Осквернённый камень умения";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+
+			l_text;
+			l_text.base_name = "Active Skill Gems";
+			l_text.localisations[NSW_localisation_EN] = "Active Skill Gems";
+			l_text.localisations[NSW_localisation_RU] = "Камень умения";
+			game_item_generator->add_class(l_text);
+
+			game_item_generator->add_quality(16.0f, 23.0f, 2.0f);
+			game_item_generator->add_gem_level(19.0f, 21.0f, 2.0f);
+			game_item_generator->add_named_attrubite("Corrupted", 0.10f);
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			ITEM GENERATOR (CORRUPTED 1-23 GEMS WITH QUALITY AND LEVEL)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 8;
+			ELocalisationText l_text;
+			l_text.base_name = "Support";
+			l_text.localisations[NSW_localisation_EN] = "Corrupted Support Skill Gems";
+			l_text.localisations[NSW_localisation_RU] = "Осквернённый камень поддержки";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+
+			l_text;
+			l_text.base_name = "Support Skill Gems";
+			l_text.localisations[NSW_localisation_EN] = "Support Skill Gems";
+			l_text.localisations[NSW_localisation_RU] = "Камень поддержки";
+			game_item_generator->add_class(l_text);
+
+			game_item_generator->add_quality(16.0f, 23.0f, 2.0f);
+			game_item_generator->add_gem_level(19.0f, 21.0f, 2.0f);
+			game_item_generator->add_named_attrubite("Corrupted", 0.10f);
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+
+		/////////////////////////////			ITEM GENERATOR (VAAL GEMS WITH QUALITY AND LEVEL)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 8;
+			ELocalisationText l_text;
+			l_text.base_name = "Vaal";
+			l_text.localisations[NSW_localisation_EN] = "Vaal Active Skill Gems";
+			l_text.localisations[NSW_localisation_RU] = "Камень умения Ваал";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+
+			l_text;
+			l_text.base_name = "Active Skill Gems";
+			l_text.localisations[NSW_localisation_EN] = "Skill Gem";
+			l_text.localisations[NSW_localisation_RU] = "Камень умения";
+			game_item_generator->add_class(l_text);
+
+			game_item_generator->add_quality(0.0f, 23.0f, 2.0f);
+			game_item_generator->add_gem_level(1.0f, 21.0f, 2.0f);
+			game_item_generator->add_named_attrubite("Corrupted", 1.00f);
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+
+
+
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+
+
+
+	//		AWAKENED GEMS
+	{
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Awakened gems (cheap)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Пробуждённые камни (дешёвые)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/awakened_enlighten");
+
+		//loot_simulator_pattern->additional_force_field_for_buttons = true;
+
+
+
+		/////////////////////////////			ITEM GENERATOR (REGULAR 1-20 GEMS WITH QUALITY AND LEVEL)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Awakened gem");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Common");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
+			game_item_generator->add_gem_level(1.0f, 5.0f, 2.0f);
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+	
+	//		AWAKENED GEMS (moderate)
+	{
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Awakened gems (moderate)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Пробуждённые камни (недорогие)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/awakened_enlighten");
+
+		//loot_simulator_pattern->additional_force_field_for_buttons = true;
+
+
+
+		/////////////////////////////			ITEM GENERATOR (REGULAR 1-20 GEMS WITH QUALITY AND LEVEL)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Awakened gem");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Moderate");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
+			game_item_generator->add_gem_level(1.0f, 5.0f, 2.0f);
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+
+	
+
+	//		AWAKENED GEMS (rare)
+	{
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Awakened gems (rare)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Пробуждённые камни (ценные)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/awakened_enlighten");
+
+		//loot_simulator_pattern->additional_force_field_for_buttons = true;
+
+
+
+		/////////////////////////////			ITEM GENERATOR (REGULAR 1-20 GEMS WITH QUALITY AND LEVEL)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+
+
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Awakened gem");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+			
+			
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Rare");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
+			game_item_generator->add_gem_level(1.0f, 5.0f, 2.0f);
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+
+
+
+	//		AWAKENED GEMS (expensive)
+	{
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Awakened gems (expensive)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Пробуждённые камни (дорогие)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/awakened_enlighten");
+
+		loot_simulator_pattern->additional_force_field_for_buttons = true;
+
+
+
+		/////////////////////////////			ITEM GENERATOR (REGULAR 1-20 GEMS WITH QUALITY AND LEVEL)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+
+
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Awakened gem");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+			
+			
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Expensive");
+			tag_filter->suitable_values.push_back("Very expensive");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
+			game_item_generator->add_gem_level(1.0f, 5.0f, 2.0f);
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
 }
 
 void EWindowMain::register_pattern_boss_loot()
@@ -11867,22 +12486,12 @@ void EWindowMain::register_pattern_delve_items()
 			l_text.localisations[NSW_localisation_RU] = "Нагрудный доспех спуска";
 			game_item_generator->filtered_by_exact_name = l_text;
 
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
 
-
-				//		parameters
-				ELocalisationText l_text;
-				l_text.base_name = "Body armour";
-				l_text.localisations[NSW_localisation_EN] = "Body armour";
-				l_text.localisations[NSW_localisation_RU] = "Нагрудный доспех";
-				value_generator->exact_values_list.push_back(l_text);
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
+			l_text;
+			l_text.base_name = "Body armour";
+			l_text.localisations[NSW_localisation_EN] = "Body armour";
+			l_text.localisations[NSW_localisation_RU] = "Нагрудный доспех";
+			game_item_generator->add_class(l_text);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
@@ -14178,7 +14787,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 		whole_filter_block_data->pointer_to_non_listed_segment->add_group(non_listed_line);
 
 
-		non_listed_line->target_filter_block_attribute = _game_item_attribute;
+		non_listed_line->target_game_attribute = _game_item_attribute;
 
 		/*CLOSE BUTTON*/
 		//REMOVE NON LISTED LINE
@@ -14795,7 +15404,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 			}
 
 			//bool attribute
-			if (container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
+			if (container->target_game_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
 			{
 				result_string += " ";
 				if (*static_cast <EDataContainer_Button_BoolSwitcher*>(container->target_button_with_value->custom_data_list.back()->data_container)->target_value)
@@ -14811,23 +15420,23 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 			//bool attribute
 			if
 				(
-					(container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+					(container->target_game_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
 					||
-					(container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
+					(container->target_game_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
 					)
 			{
 				result_string += " ";
 				result_string += container->target_button_with_value->main_text_area->original_text;
 			}
 
-			if (container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
+			if (container->target_game_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
 			{
 				result_string += " ";
 				result_string += container->rarity_router_button->router_variant_list[container->rarity_router_button->selected_variant]->localisation->base_name;
 			}
 
 
-			if (container->target_filter_block_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
+			if (container->target_game_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
 			{
 				result_string += " ";
 				result_string += container->target_button_with_value->main_text_area->localisation_text.base_name;
@@ -15098,6 +15707,16 @@ std::string generate_filter_block_separator_text(EButtonGroupFilterBlockSeparato
 		text_buffer += " shrinked";
 	}
 
+
+	if (_separator->additional_force_field)
+	{
+		text_buffer += " additional_space";
+	}
+	else
+	{
+		text_buffer += " no_space";
+	}
+
 	return text_buffer;
 }
 
@@ -15113,7 +15732,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 		(
 			ChildAlignMode::ALIGN_VERTICAL,
 			NSW_dynamic_autosize,
-			NSW_dynamic_autosize
+			NSW_static_autosize
 		);
 
 	whole_listed_line->additional_y_distance = 0.0f;
@@ -16510,6 +17129,19 @@ void GameItemGenerator::add_quality(int _min, int _max, float _pow)
 	attribute_generators_list.push_back(value_generator);
 }
 
+void GameItemGenerator::add_gem_level(int _level_min, int _level_max, float _pow)
+{
+	GameAttributeGeneratorMinMaxInt*
+	value_generator = new GameAttributeGeneratorMinMaxInt("GemLevel");
+
+	//		parameters
+	value_generator->min_value = _level_min;
+	value_generator->max_value = _level_max;
+	value_generator->generator_pow = _pow;
+
+	attribute_generators_list.push_back(value_generator);
+}
+
 void GameItemGenerator::add_named_attrubite(std::string _attribute_name, float _chance_to_add)
 {
 		//		value
@@ -16520,6 +17152,22 @@ void GameItemGenerator::add_named_attrubite(std::string _attribute_name, float _
 		attribute_generator->chance_to_activate = _chance_to_add;
 
 		attribute_generators_list.push_back(attribute_generator);
+}
+
+void GameItemGenerator::add_class(ELocalisationText _attribute_localisation)
+{
+	{
+		//		value
+		GameAttributeGeneratorExactListedValue*
+		value_generator = new GameAttributeGeneratorExactListedValue("Class");
+
+
+		//		parameters
+		
+		value_generator->exact_values_list.push_back(_attribute_localisation);
+
+		attribute_generators_list.push_back(value_generator);
+	}
 }
 
 void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _game_item)
@@ -17204,7 +17852,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 				line_group = static_cast<EButtonGroupNonListedLine*>(group);
 
 			GameItemAttribute*
-				non_listed_attribute = line_group->target_filter_block_attribute;
+				non_listed_attribute = line_group->target_game_attribute;
 
 			EGameItemAttributeContainer*
 				matched_item_attribute_container = nullptr;
@@ -17232,11 +17880,11 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 				{
 					//number attrubite
 					if
-						(
-							(matched_item_attribute_container->target_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
-							&&
-							(non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
-							)
+					(
+						(matched_item_attribute_container->target_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+						&&
+						(non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+					)
 					{
 						//have_non_listed_attribute_match = true;
 
@@ -17246,7 +17894,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 								!is_condition_satisfied
 								(
 									matched_item_attribute_container->attribute_value_int,								//item
-									line_group->target_button_with_condition->return_base_text_from_selected_router(),			//operator
+									line_group->target_button_with_condition->return_base_text_from_selected_router(),	//operator
 									std::stoi(line_group->target_button_with_value->main_text_area->original_text)		//block
 								)
 								)
@@ -17263,7 +17911,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 						//if item have matched attribute, and boll flags not same, return false (block not matched)
 						if
 							(
-								(matched_item_attribute_container->target_attribute == line_group->target_filter_block_attribute)//matched attribute
+								(matched_item_attribute_container->target_attribute == line_group->target_game_attribute)//matched attribute
 								&&
 								(matched_item_attribute_container->attribute_value_bool != *static_cast<EDataContainer_Button_BoolSwitcher*>(line_group->target_button_with_value->main_custom_data->data_container)->target_value)//bool flags not same
 								)
@@ -17318,14 +17966,14 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 					if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
 					{
 						if
+						(
+							!is_condition_satisfied
 							(
-								!is_condition_satisfied
-								(
-									0,																				//item
-									line_group->target_button_with_condition->return_base_text_from_selected_router(),		//operator
-									std::stoi(line_group->target_button_with_value->main_text_area->original_text)	//block
-								)
-								)
+								0,																					//item
+								line_group->target_button_with_condition->return_base_text_from_selected_router(),	//operator
+								std::stoi(line_group->target_button_with_value->main_text_area->original_text)		//block
+							)
+						)
 						{
 							return false;
 						}
@@ -18217,7 +18865,7 @@ void DescriptionContainerSeparatorExample::create_description()
 			}
 		}
 
-		align_description(whole_group);
+		init_description(whole_group);
 	}
 }
 

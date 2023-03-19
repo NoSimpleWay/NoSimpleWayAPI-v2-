@@ -1531,8 +1531,15 @@ void EntityButton::update(float _d)
 			highlight_time -= _d;
 		}
 
-		if ((main_clickable_area->hover_time >= 0.25f) && (description_container != nullptr) && (attached_description == nullptr))
-		{description_container->create_description();}
+		if ((main_clickable_area->hover_time >= 0.25f) && (description_container != nullptr))
+		{
+			if (attached_description == nullptr)
+			{
+				description_container->create_description();
+			}
+
+			attached_description->autodelete_time = 0.1f;
+		}
 
 		if
 		(
@@ -2021,7 +2028,7 @@ void DescriptionContainer::create_description()
 
 }
 
-void DescriptionContainer::align_description(EButtonGroup* _group)
+void DescriptionContainer::init_description(EButtonGroup* _group)
 {
 	float borders_size_x = _group->group_offset_for_content_left		+ _group->group_offset_for_content_right;
 	float borders_size_y = _group->group_offset_for_content_bottom	+ _group->group_offset_for_content_up;
@@ -2045,6 +2052,8 @@ void DescriptionContainer::align_description(EButtonGroup* _group)
 	{
 		_group->region_gabarite->offset_y = max(parent_button->button_gabarite->world_position_y - size_y - borders_size_y - 3.0f, 3.0f);
 	}
+
+
 }
 
 void DescriptionContainerDefault::create_description()
@@ -2072,7 +2081,7 @@ void DescriptionContainerDefault::create_description()
 		parent_button->parent_button_group->root_group->parent_window->button_group_list.push_back(description_group);
 		parent_button->attached_description = description_group;
 
-		align_description(description_group);
+		init_description(description_group);
 	}
 }
 

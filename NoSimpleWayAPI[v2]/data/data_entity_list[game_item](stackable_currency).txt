@@ -10,6 +10,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"5"
 	
 	[tag]"drop level"		[value]"1"
+			
+	[tag]"worth"			[value]"Trash"
 	
 	[tag]"item width"		[value]"1"
 	[tag]"item height"		[value]"1"
