@@ -244,10 +244,10 @@ void ERenderBatcher::draw_call()
 				glActiveTexture(GL_TEXTURE1 + i);
 				
 
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);//
 				//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP, GL_NEAREST);
 				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());//1
 				NS_EGraphicCore::pbr_batcher->get_shader()->setInt("SD_array[" + std::to_string(i) + "]", i + 1);
@@ -496,6 +496,8 @@ ETextureAtlas::ETextureAtlas(int _size_x, int _size_y, int _color_depth, int _by
 
 	// now that we actually created the framebuffer and added all attachments we want to check if it is actually complete now
 
+
+
 	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
 	{
 		std::cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!" << std::endl;
@@ -527,7 +529,7 @@ void NS_EGraphicCore::switch_to_texture_atlas_draw_mode(ETextureAtlas* _atlas)
 	glViewport(0, 0, _atlas->get_atlas_size_x(), _atlas->get_atlas_size_y());
 	glBindFramebuffer(GL_FRAMEBUFFER, _atlas->get_framebuffer());
 
-	//glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	//glClear(GL_COLOR_BUFFER_BIT);
 
 	//glEnable(GL_BLEND);
@@ -578,10 +580,12 @@ void NS_EGraphicCore::switch_to_this_FBO(ETextureAtlas* _atlas)
 void NS_EGraphicCore::initiate_graphic_core()
 {
 	glfwInit();
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 4);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	//glfwWindowHint(GLFW_SAMPLES, 0);
+	glfwWindowHint(GLFW_SAMPLES, 1);
+
+	
 
 #ifdef __APPLE__
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
@@ -790,6 +794,8 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_EGraphicCore::sun_color.is_from_collection = false;
 
 	Helper::rgb2hsv(&NS_EGraphicCore::sun_color);
+
+	glHint(GL_GENERATE_MIPMAP_HINT, GL_NICEST);
 }
 
 //void NS_EGraphicCore::initiate_sound_core()
@@ -2097,8 +2103,8 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);//texture filtering
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);//
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);//
 
 		NS_EGraphicCore::skydome_batcher->get_shader()->setInt("blur_table", -1);
 
@@ -2118,12 +2124,17 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 		);
 
 		NS_EGraphicCore::skydome_batcher->draw_call();
+
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[0]->get_framebuffer());
+		glGenerateMipmap(GL_TEXTURE_2D);
 	}
 
 
 	float blur_table[texture_skydome_levels] = { 2, 2, 3, 4, 5, 6, 7 };
 	for (int i = 1; i < texture_skydome_levels; i++)
 	{
+		glGenerateMipmap(GL_TEXTURE_2D);
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
 		set_source_FBO(GL_TEXTURE0, skydome_texture_atlas[i - 1]->get_colorbuffer());
 		set_target_FBO(skydome_texture_atlas[i]->get_framebuffer());
@@ -2157,6 +2168,10 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 
 		NS_EGraphicCore::skydome_batcher->draw_call();
 
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[i]->get_framebuffer());
+		glGenerateMipmap(GL_TEXTURE_2D);
+	}
 
 		//restore default viewport setting
 		set_target_FBO(0);
@@ -2165,7 +2180,7 @@ void NS_EGraphicCore::make_skydome_textures(ETextureGabarite* _texture)
 
 		glDisable(GL_DEPTH_TEST);
 		glBlendEquation(GL_FUNC_ADD);
-	}
+
 }
 
 void NS_EGraphicCore::set_source_FBO(int _GL_texture_id, unsigned int _colorbuffer_id)

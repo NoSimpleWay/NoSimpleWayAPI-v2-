@@ -181,6 +181,18 @@ int main()
 				NS_EGraphicCore::complete_texture_gabarite(ETextureGabarite::incomplete_gabarites_list[0 + i]);
 				ETextureGabarite::incomplete_gabarites_list.erase(ETextureGabarite::incomplete_gabarites_list.begin() + i);
 			}
+
+			if (ETextureGabarite::incomplete_gabarites_list.empty())
+			{
+				glActiveTexture(GL_TEXTURE0);
+				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_framebuffer());
+				glGenerateMipmap(GL_TEXTURE_2D);
+
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);//
+			}
 		}
 
 		ESpriteLayer::data_copies_count = 0;
@@ -199,7 +211,7 @@ int main()
 
 		//glClearColor(0.4f, 0.5f, 0.6f, 1.0f);
 		glClearColor(0.025f, 0.0375f, 0.05f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
 		glfwPollEvents();
 
@@ -297,8 +309,8 @@ int main()
 			{
 				NS_EGraphicCore::set_source_FBO(GL_TEXTURE0, NS_EGraphicCore::skydome_texture_atlas[i]->get_colorbuffer());
 
-				//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//texture filtering
-				//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);//texture filtering
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 
 				NS_ERenderCollection::add_data_to_vertex_buffer_default
 				(
@@ -352,6 +364,7 @@ int main()
 				//glActiveTexture(GL_TEXTURE0);
 				//glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());//1
 			///reset input states
+		glFlush();
 		glfwSwapBuffers(NS_EGraphicCore::main_window);
 
 		for (int i = 0; i < EInputCore::key_count; i++)

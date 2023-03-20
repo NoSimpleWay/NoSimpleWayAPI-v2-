@@ -16513,6 +16513,8 @@ void EButtonGroupDataEntity::background_update(float _d)
 				EWindowMain::background_loading_info->need_remove = true;
 
 				EInputCore::logger_simple_info("autorefresh!");
+
+
 			}
 		}
 

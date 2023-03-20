@@ -136,7 +136,7 @@ void main()
 	interpolation_B = level - glossy_flat;
 	interpolation_A = 1.0f - interpolation_B;
 	
-	nrm = texture(texture1, NormalMapTexCoord).rg - vec2(0.5);
+	nrm = (texture(texture1, NormalMapTexCoord).rg - vec2(0.5f));
 	//nrm = pow(nrm, vec2(2.0f)) * vec2((nrm[0] < 0) ? (-1.0f) : (1.0f),(nrm[1] < 0) ? (-1.0f) : (1.0f));
 	
 	nrm *= vec2(normal_map_multiplier * 0.333f);
@@ -149,11 +149,11 @@ void main()
 	
 	
 	reflect_pos_x =  0.333f;
-	reflect_pos_x += (gl_FragCoord.x / scr_x) * 0.333f * (1.0f - abs(nrm[0]));
+	reflect_pos_x += (gl_FragCoord.x / scr_x) * 0.333f;
 	reflect_pos_x += nrm[0];
 	
 	reflect_pos_y =  0.333f;
-	reflect_pos_y += ((WorldPosition.y	/ scr_y)) * 0.333f * (1.0f - abs(nrm[1]));
+	reflect_pos_y += ((WorldPosition.y	/ scr_y)) * 0.333f;
 	reflect_pos_y += nrm[1];
 
 	
@@ -170,7 +170,7 @@ void main()
 	vec2
 	(
 		//base offset		screen position offset					//normal offset
-		sky_reflect_x - floor(abs(sky_reflect_x)),
+		sky_reflect_x,
 		sky_reflect_y
 	);
 	
@@ -180,78 +180,42 @@ void main()
 	
 	if (glossy_flat == 0)
 	{
-		skydome_pixel
-		=
-		(
-			texture(SD_array[0], reflect_coord) * interpolation_A
-			+
-			texture(SD_array[1], reflect_coord) * interpolation_B
-		);
+		skydome_pixel = mix(texture(SD_array[0], reflect_coord)	,texture(SD_array[1], reflect_coord), interpolation_B);
 		
 		//skydome_pixel = vec4(1.0f, 0.0f, 0.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 1)
 	{
-		skydome_pixel
-		=
-		(
-			texture(SD_array[1], reflect_coord) * interpolation_A
-			+
-			texture(SD_array[2], reflect_coord) * interpolation_B
-		);
+		skydome_pixel = mix(texture(SD_array[1], reflect_coord)	,texture(SD_array[2], reflect_coord), interpolation_B);
 		
 		//skydome_pixel = vec4(0.0f, 1.0f, 0.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 2)
 	{
-		skydome_pixel
-		=
-		(
-			texture(SD_array[2], reflect_coord) * interpolation_A
-			+
-			texture(SD_array[3], reflect_coord) * interpolation_B
-		);
+		skydome_pixel = mix(texture(SD_array[2], reflect_coord)	,texture(SD_array[3], reflect_coord), interpolation_B);	
 		
 		//skydome_pixel = vec4(0.0f, 0.0f, 1.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 3)
 	{
-		skydome_pixel
-		=
-		(
-			texture(SD_array[3], reflect_coord) * interpolation_A
-			+
-			texture(SD_array[4], reflect_coord) * interpolation_B
-		);
+		skydome_pixel = mix(texture(SD_array[3], reflect_coord)	,texture(SD_array[4], reflect_coord), interpolation_B);	
 		
 		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 4)
 	{
-		skydome_pixel
-		=
-		(
-			texture(SD_array[4], reflect_coord) * interpolation_A
-			+
-			texture(SD_array[5], reflect_coord) * interpolation_B
-		);
+		skydome_pixel = mix(texture(SD_array[4], reflect_coord)	,texture(SD_array[5], reflect_coord), interpolation_B);	
 		
 		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 5)
 	{
-		skydome_pixel
-		=
-		(
-			texture(SD_array[5], reflect_coord) * interpolation_A
-			+
-			texture(SD_array[6], reflect_coord) * interpolation_B
-		);
+		skydome_pixel = mix(texture(SD_array[5], reflect_coord)	,texture(SD_array[6], reflect_coord), interpolation_B);	
 		
 		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
 	}
