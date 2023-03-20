@@ -3162,13 +3162,13 @@ EWindowMain::EWindowMain()
 		// // // // // // //
 		jc_button = EntityButton::create_default_crosshair_slider
 		(
-			new ERegionGabarite(256.0f, 256.0f),
+			new ERegionGabarite(255.0f, 255.0f),
 			jc_button_group,
 			&NS_EGraphicCore::sun_x,
 			&NS_EGraphicCore::sun_y,
-			"skydome_city"
+			"sun_position"
 		);
-		jc_button->can_be_stretched = true;
+		jc_button->can_be_stretched = false;
 
 		EDataContainer_CrosshairSlider* crosshair_data = (EDataContainer_CrosshairSlider*)EntityButton::get_last_custom_data(jc_button)->data_container;
 		crosshair_data->min_x = 0.0f;
