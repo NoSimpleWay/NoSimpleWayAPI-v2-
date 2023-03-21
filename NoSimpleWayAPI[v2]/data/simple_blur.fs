@@ -18,7 +18,7 @@ vec4 result_color;
 float divis = 0.0f;
 float mul = 0.0f;
 
-float table[7] = {2.0f, 4.0f, 2.0f, 2.0f, 4.0f, 32.0f, 128.0f};
+float table[7] = {8.0f, 16.0f, 16.0f, 32.0f, 32.0f, 32.0f, 64.0f};
 
 void main()
 {

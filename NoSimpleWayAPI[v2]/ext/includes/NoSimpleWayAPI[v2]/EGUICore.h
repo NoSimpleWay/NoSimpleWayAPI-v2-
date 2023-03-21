@@ -319,7 +319,7 @@ public:
 	bool is_selected = false;
 	bool focusable_for_select = false;
 	bool have_rama = false;
-	bool resize_to_highest_point = false;
+	bool can_be_resized_to_highest_point_y = false;
 	bool ignore_buttons_force_field = false;
 	bool ignore_vertical_buttons_force_field = false;
 
@@ -560,7 +560,7 @@ public:
 	bool can_be_stretched_by_child = (false);
 
 	bool stretch_x_by_parent_size = (false);
-	bool stretch_y_by_parent_size = (false);
+	bool dynamic_size_y = (false);
 
 	bool have_slider = (false);
 
