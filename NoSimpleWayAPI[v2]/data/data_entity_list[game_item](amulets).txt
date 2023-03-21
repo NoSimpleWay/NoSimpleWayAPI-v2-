@@ -16,6 +16,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Good amulet base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -38,6 +39,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Breach unique item"
+	[tag]"item tag"		[value]"Good amulet base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -96,6 +98,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Good amulet base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -174,6 +177,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Breach unique item"
+	[tag]"item tag"		[value]"Good amulet base"
 	
 	
 	[tag]"worth"		[value]"Trash"
@@ -197,6 +201,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Breach unique item"
+	[tag]"item tag"		[value]"Good amulet base"
 	
 	
 	[tag]"worth"		[value]"Trash"
@@ -238,6 +243,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Breach unique item"
+	[tag]"item tag"		[value]"Good amulet base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -327,6 +333,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Good amulet base"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -365,23 +372,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Unset Amulet"
-	[tag]"name RU"		[value]"Амулет без камня"
-
-	[tag]"icon path"	[value]"UnsetAmulet"
-	[tag]"base class"	[value]"Amulets"
-	
-	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"Expensive base for unique"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-	
-
-
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
