@@ -10,6 +10,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good ring base"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -140,6 +141,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good ring base"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -197,6 +199,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good ring base"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -212,6 +215,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Good ring base"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -244,6 +248,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good ring base"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -258,6 +263,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good ring base"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
