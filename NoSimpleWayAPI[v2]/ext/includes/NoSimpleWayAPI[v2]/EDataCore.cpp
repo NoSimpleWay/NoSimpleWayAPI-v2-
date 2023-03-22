@@ -55,6 +55,20 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 {
 	EntityButtonVerticalSlider* slider = static_cast<EntityButtonVerticalSlider*>(_entity);
 
+	if
+	(
+		(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
+		&&
+		(EButtonGroup::focused_button_group_with_slider == slider->parent_button_group)
+	)
+	{
+		//EInputCore::logger_param("HPYb:", slider->parent_button_group->highest_point_y_for_buttons);
+		//EInputCore::logger_param("HPYg:", slider->parent_button_group->highest_point_y_for_groups);
+
+		//EInputCore::logger_param("group_size_y", slider->parent_button_group->region_gabarite->size_y);
+
+	}
+
 	slider->current_value = *((float*)slider->pointer_to_target_value);
 
 	if ((EButtonGroup::focused_button_group_with_slider == slider->parent_button_group) && (EInputCore::scroll_direction != 0))

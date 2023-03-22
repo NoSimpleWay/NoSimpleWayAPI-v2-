@@ -428,7 +428,7 @@ public:
 	void check_slider();
 
 	void group_stretch_x();
-	void group_stretch_y();
+	void group_stretch_childs_by_y();
 
 	void align_groups();
 	static void calculate_culling_lines(EButtonGroup* _group, bool _recursive);
@@ -470,6 +470,7 @@ public:
 	
 	void resize_group_to_highest_point_y();
 	float get_child_total_y_size();
+	float get_highest_point_y_for_groups();
 
 	
 

@@ -708,6 +708,20 @@ void EButtonGroup::button_group_update(float _d)
 
 	//invisible elements become visible
 
+	if
+	(
+		(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
+		&&
+		(EButtonGroup::focused_button_group_mouse_unpressed == this)
+	)
+	{
+		EInputCore::logger_param("HPYb:",			highest_point_y_for_buttons);
+		EInputCore::logger_param("HPYg:",			highest_point_y_for_groups);
+
+		EInputCore::logger_param("group_size_y",	region_gabarite->size_y);
+
+	}
+
 	if (autodelete_time >= 0.0f)
 	{
 		autodelete_time -= _d;
@@ -1295,16 +1309,21 @@ void EButtonGroup::draw_button_group()
 
 			
 
+
 			if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
 			{
 				for (EButtonGroup* group : group_list)
+				{
+
 					if
 						(
 							(EButtonGroup::focused_button_group == group)
 							||
 							(EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL))
-							)
+						)
 					{
+
+
 						NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_RED);
 						//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
 						ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
@@ -1323,6 +1342,7 @@ void EButtonGroup::draw_button_group()
 						//EInputCore::logger_param("size y", group->region_gabarite->size_y);
 						//batcher_for_default_draw->draw_call();
 					}
+				}
 			}
 
 			//slider debug highlight
@@ -1642,28 +1662,31 @@ void EButtonGroup::align_groups()
 
 	EButtonGroup* prev_group = nullptr;
 
-	prev_group = nullptr;
+	//prev_group = nullptr;
 
 	//stretch row
-	for (EButtonGroup* group : group_list)
-	if (group->button_group_is_visible())
+	for (EButtonGroup* child : group_list)
+	if (child->button_group_is_visible())
 	{
+
 		//OFFSET TO BASE
 		if (prev_group == nullptr)
 		{
-			group->region_gabarite->offset_x = group_offset_for_content_left;
+			child->region_gabarite->offset_x = group_offset_for_content_left;
+
+			
 
 			switch (child_align_direction)
 			{
 				case (ChildElementsAlignDirection::BOTTOM_TO_TOP):
 				{
-					group->region_gabarite->offset_y = group_offset_for_content_bottom;
+					child->region_gabarite->offset_y = group_offset_for_content_bottom;
 					break;
 				};
 		
 				case (ChildElementsAlignDirection::TOP_TO_BOTTOM):
 				{
-					group->region_gabarite->offset_y = region_gabarite->size_y - group->region_gabarite->size_y - group_offset_for_content_up;
+					child->region_gabarite->offset_y = region_gabarite->size_y - child->region_gabarite->size_y - group_offset_for_content_up;
 					break;
 				}
 			}
@@ -1671,21 +1694,48 @@ void EButtonGroup::align_groups()
 		}
 		else//OFFSET BY PREV GROUP
 		{
+
+			////if (prev_group->clickable_area_list.empty())
+			//{
+			//	prev_group->clickable_area_list.clear();
+
+			//	EClickableArea*
+			//	clickable_area_for_group = EClickableArea::create_default_clickable_region(prev_group->region_gabarite, prev_group);
+			//	prev_group->clickable_area_list.push_back(clickable_area_for_group);
+
+			//	ELocalisationText
+			//	ltext = ELocalisationText::generate_localisation("size_y: " + std::to_string(prev_group->region_gabarite->size_y));
+
+			//	ETextArea*
+			//	text_area_for_group = ETextArea::create_centered_to_up_text_area(clickable_area_for_group, EFont::font_list[0], ltext.localisations[ELocalisationText::active_localisation]);
+			//	text_area_for_group->localisation_text = ltext;
+			//	text_area_for_group->can_be_edited = false;
+			//	text_area_for_group->offset_by_gabarite_size_y	= 1.0f;
+			//	text_area_for_group->offset_by_text_size_y		= -1.0f;
+			//	clickable_area_for_group->text_area = text_area_for_group;
+
+			//	prev_group->highlight_this_group();
+			//}
+
 			if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
 			{
-				group->region_gabarite->offset_x = group_offset_for_content_left;
+				child->region_gabarite->offset_x = group_offset_for_content_left;
 
 				if (child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
-				{group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + group->additional_y_distance;}
+				{
+					child->region_gabarite->offset_y = prev_group->region_gabarite->offset_y + prev_group->region_gabarite->size_y + child->additional_y_distance;
+
+
+				}
 				else
 				if (child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
-				{group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y - group->region_gabarite->size_y - group->additional_y_distance;}
+				{child->region_gabarite->offset_y = prev_group->region_gabarite->offset_y - child->region_gabarite->size_y - child->additional_y_distance;}
 			}
 			else
 			if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
 			{
-				group->region_gabarite->offset_x = prev_group->region_gabarite->offset_x + prev_group->region_gabarite->size_x + 0.0f;
-				group->region_gabarite->offset_y = prev_group->region_gabarite->offset_y;
+				child->region_gabarite->offset_x = prev_group->region_gabarite->offset_x + prev_group->region_gabarite->size_x + 0.0f;
+				child->region_gabarite->offset_y = prev_group->region_gabarite->offset_y;
 			}
 		}
 		
@@ -1693,23 +1743,23 @@ void EButtonGroup::align_groups()
 
 
 
-		group->region_gabarite->world_position_x = round(region_gabarite->world_position_x + group->region_gabarite->offset_x);
-		group->region_gabarite->world_position_y = round(region_gabarite->world_position_y + group->region_gabarite->offset_y + scroll_y);
-		group->region_gabarite->world_position_z = round(region_gabarite->world_position_z + group->region_gabarite->offset_z);
+		child->region_gabarite->world_position_x = round(region_gabarite->world_position_x + child->region_gabarite->offset_x);
+		child->region_gabarite->world_position_y = round(region_gabarite->world_position_y + child->region_gabarite->offset_y + scroll_y);
+		child->region_gabarite->world_position_z = round(region_gabarite->world_position_z + child->region_gabarite->offset_z);
 
-		highest_point_y_for_groups = max(group->region_gabarite->offset_y + group->region_gabarite->size_y, highest_point_y_for_groups);
+		highest_point_y_for_groups = max(child->region_gabarite->offset_y + child->region_gabarite->size_y, highest_point_y_for_groups);
 		
-		prev_group = group;
+		prev_group = child;
 
 
 	}
 	else
 	{
-		group->region_gabarite->offset_x = 0.0f;
-		group->region_gabarite->offset_y = 0.0f;
+		child->region_gabarite->offset_x = 0.0f;
+		child->region_gabarite->offset_y = 0.0f;
 
-		group->region_gabarite->world_position_x = 0.0f;
-		group->region_gabarite->world_position_y = 0.0f;
+		child->region_gabarite->world_position_x = 0.0f;
+		child->region_gabarite->world_position_y = 0.0f;
 	}
 
 
@@ -2015,7 +2065,7 @@ void EButtonGroup::group_stretch_x()
 
 }
 
-void EButtonGroup::group_stretch_y()
+void EButtonGroup::group_stretch_childs_by_y()
 {
 	float			constant_element_sizes_y = 0.0f;
 	float			summ_size = 0.0f;
@@ -2034,19 +2084,19 @@ void EButtonGroup::group_stretch_y()
 
 		target_size = max(region_gabarite->size_y, min_size_y) - group_offset_for_content_bottom - group_offset_for_content_up - (group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE - shrink_size - 0.0;
 
-		for (EButtonGroup* group : group_list)
-			if (group->button_group_is_visible())
+		for (EButtonGroup* child : group_list)
+			if (child->button_group_is_visible())
 			{
-				group->region_gabarite->size_y = max(group->region_gabarite->size_y, group->min_size_y);
+				child->region_gabarite->size_y = max(child->region_gabarite->size_y, child->min_size_y);
 
-				if (group->dynamic_size_y)
+				if (child->dynamic_size_y)
 				{
 					dynamic_elements_count++;
 				}
 				else
 				{
-					target_size -= group->region_gabarite->size_y;
-					constant_element_sizes_y += group->region_gabarite->size_y;
+					target_size -= child->region_gabarite->size_y;
+					constant_element_sizes_y += child->region_gabarite->size_y;
 				}
 			}
 	}
@@ -2058,23 +2108,24 @@ void EButtonGroup::group_stretch_y()
 		dynamic_elements_count = 1;
 	}
 
-	if (dynamic_elements_count > 0) { final_size = round(target_size / float(dynamic_elements_count)); }
+	if (dynamic_elements_count > 0)
+	{ final_size = round(target_size / float(dynamic_elements_count)); }
 	//if (dynamic_elements_count == 1) { final_size = round(target_size + 1.0f); }
 
 	//final_size = 100.0f;
-	for (EButtonGroup* group : group_list)
-		if (group->button_group_is_visible())
+	for (EButtonGroup* child : group_list)
+		if (child->button_group_is_visible())
 		{
-			if (group->dynamic_size_y)
+			if (child->dynamic_size_y)
 			{
-				group->region_gabarite->size_y = round(max(final_size, group->min_size_y));
+				child->region_gabarite->size_y = round(max(final_size, child->min_size_y));
 				//group->region_gabarite->size_y = round(max(final_size, 0.0f));
 				//group->region_gabarite->size_y = round(final_size);
 			}
 
 			//group->region_gabarite->size_y = round(max(group->region_gabarite->size_y, min_size_y));
 
-			group->need_redraw = true;
+			child->need_redraw = true;
 		}
 
 	//for (EButtonGroup* group : group_list) { group->group_stretch_y(); }
@@ -2091,26 +2142,33 @@ void EButtonGroup::check_slider()
 	float child_elements_height_summ = 0.0f;
 	float max_y = 0.0f;
 	{
-		if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
-		{
-			child_elements_height_summ = ((float)group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE;
+		//if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
+		//{
+		//	child_elements_height_summ = ((float)group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE;
 
-			for (EButtonGroup* group : group_list)
-			{child_elements_height_summ += group->region_gabarite->size_y;}
-		}
+		//	for (EButtonGroup* group : group_list)
+		//	{child_elements_height_summ += group->region_gabarite->size_y;}
+		//}
 
-		if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
-		{
+		//if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
+		//{
 
-			for (EButtonGroup* group : group_list)
-			{max_y = max(max_y, group->region_gabarite->size_y);}
+		//	for (EButtonGroup* group : group_list)
+		//	{max_y = max(max_y, group->region_gabarite->size_y);}
 
-			child_elements_height_summ += max_y;
-		}
+		//	child_elements_height_summ += max_y;
+		//}
 
 
 
-		if ((child_elements_height_summ - 0.0f > region_gabarite->size_y - group_offset_for_content_bottom - group_offset_for_content_up) || (false))
+		if
+		(
+			(highest_point_y_for_buttons	> region_gabarite->size_y + 1.0f - group_offset_for_content_up)
+			||
+			(highest_point_y_for_groups		> region_gabarite->size_y - group_offset_for_content_up)
+			//||
+			//(true)
+		)
 		{
 			if (slider != nullptr)
 			{
@@ -2206,69 +2264,51 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 
 		_group->button_group_prechange();
 
-		//_group->min_size_y = 30.0f;
-
+		//stretch child to parent size
+		_group->group_stretch_childs_by_y();
+		_group->highest_point_y_for_groups = _group->get_highest_point_y_for_groups();
+		_group->check_slider();
+		_group->group_stretch_x();
 
 
 		if (_group->can_be_stretched_by_child)
 		{
-			_group->group_stretch_y();
-			_group->check_slider();
-			_group->group_stretch_x();
-
 			_group->region_gabarite->size_y	= _group->get_child_total_y_size();
 			_group->base_height				= _group->region_gabarite->size_y;
-			//_group->min_size_y = _group->region_gabarite->size_y;
-		}
 
-
-
-		//if (_group->resize_to_highest_point)
-		//{
-		//	_group->reset_buttons_phantom_translate();
-		//	_group->override_button_size();
-		//	_group->put_buttons_to_lines();
-
-		//	_group->activate_slider_if_need();
-
-
-		//}
-
-		//stretch to parent sizes
-		if (!_group->can_be_stretched_by_child)
-		{
-			_group->group_stretch_y();
+			//y highest point y now is not actual, recalculate
+			_group->group_stretch_childs_by_y();
+			_group->highest_point_y_for_groups = _group->get_highest_point_y_for_groups();
 			_group->check_slider();
 			_group->group_stretch_x();
 		}
+
 
 		//align group in parent gabarite
 		_group->align_groups();
+
+		//calculate culling lines for GL_SCISSOR
 		_group->recalculate_culling_lines();
 
+
 		//buttons process
-		//if (!_group->resize_to_highest_point)
-		{
-			_group->reset_buttons_phantom_translate();
-			_group->override_button_size();
-			_group->put_buttons_to_lines();
+		_group->reset_buttons_phantom_translate();
+		_group->override_button_size();
+		_group->put_buttons_to_lines();
 
-			_group->activate_slider_if_need();
-		}
-
-		_group->final_highest_point_y = max(_group->highest_point_y_for_buttons, _group->highest_point_y_for_groups);
+		_group->activate_slider_if_need();
 
 		_group->stretch_all_buttons();
 		_group->calculate_group_lines();
 		_group->set_buttons_offset();
 		_group->align_buttons_in_lines();
 
+		_group->final_highest_point_y = max(_group->highest_point_y_for_buttons, _group->highest_point_y_for_groups);
+
 		_group->calculate_world_coordinates_for_buttons();
 
-		//if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-		//{
-			EButtonGroup::generate_vertex_buffer_for_group(_group, NSW_ONLY_TARGET);
-		//}
+		EButtonGroup::generate_vertex_buffer_for_group(_group, NSW_ONLY_TARGET);
+
 
 
 		for (EButtonGroup* child : _group->group_list)
@@ -2591,7 +2631,8 @@ void EButtonGroup::resize_group_to_highest_point_y()
 		//highest_point_y_for_buttons = 60.0f;
 
 		//min_size_y				= highest_point_y_for_buttons * 1.0f;
-		region_gabarite->size_y	= std::clamp(highest_point_y_for_buttons * 1.0f, 60.0f, 150.0f);
+		//float minimal_size_y = max()
+		region_gabarite->size_y	= std::clamp(highest_point_y_for_buttons * 1.0f, min_size_y, 200.0f);
 		base_height				= region_gabarite->size_y;
 	}
 }
@@ -2644,6 +2685,35 @@ float EButtonGroup::get_child_total_y_size()
 	}
 
 	return total_y_size;
+}
+
+float EButtonGroup::get_highest_point_y_for_groups()
+{
+
+	float total_size = 0.0f;
+
+	if (child_align_mode == ChildAlignMode::ALIGN_VERTICAL)
+	{
+
+		for (EButtonGroup* child : group_list)
+		if (child->button_group_is_visible())
+		{
+			total_size += child->region_gabarite->size_y + child->additional_y_distance;
+		}
+	}
+
+	if (child_align_mode == ChildAlignMode::ALIGN_HORIZONTAL)
+	{
+
+		for (EButtonGroup* child : group_list)
+		if (child->button_group_is_visible())
+		{
+			
+			total_size = max(child->region_gabarite->size_y, total_size);
+		}
+	}
+
+	return total_size;
 }
 
 void EButtonGroup::override_button_size()
