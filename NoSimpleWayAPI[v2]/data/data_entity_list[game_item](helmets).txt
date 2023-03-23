@@ -1566,6 +1566,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"RunicHelmet"
 	[tag]"base class"	[value]"Helmets"
+	
+	[tag]"item tag"		[value]"Runic base"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -1578,6 +1580,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"RunicHelmet"
 	[tag]"base class"	[value]"Helmets"
+	
+	[tag]"item tag"		[value]"Runic base"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -1590,43 +1594,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"RunicHelmet"
 	[tag]"base class"	[value]"Helmets"
+	
+	[tag]"item tag"		[value]"Runic base"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Helm"
-	[tag]"name RU"		[value]"Рунический шлем"
-
-	[tag]"icon path"	[value]"RunicHelmet"
-	[tag]"base class"	[value]"Helmets"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Crest"
-	[tag]"name RU"		[value]"Рунический венец"
-
-	[tag]"icon path"	[value]"RunicHelmet"
-	[tag]"base class"	[value]"Helmets"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Crown"
-	[tag]"name RU"		[value]"Руническая корона"
-
-	[tag]"icon path"	[value]"RunicHelmet"
-	[tag]"base class"	[value]"Helmets"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"

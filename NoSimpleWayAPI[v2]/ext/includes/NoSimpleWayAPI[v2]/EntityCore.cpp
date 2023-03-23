@@ -2085,4 +2085,43 @@ void DescriptionContainerDefault::create_description()
 	}
 }
 
+void DescriptionContainerHelpDescriptionImage::create_description()
+{
+	if (parent_button != nullptr)
+	{
 
+		size_x = stored_image[ELocalisationText::active_localisation]->size_x_in_pixels;
+		size_y = stored_image[ELocalisationText::active_localisation]->size_y_in_pixels;
+
+		EButtonGroup*
+			description_group = new EButtonGroup
+			(
+				new ERegionGabarite
+				(
+					size_x,
+					size_y
+				)
+			);
+
+		description_group->init_as_root_group(parent_button->parent_button_group->root_group->parent_window);
+		description_group->need_refresh = true;
+
+		EntityButton*
+		texture_button = new EntityButton();
+		description_group->add_button_to_working_group(texture_button);
+
+		texture_button->make_as_default_button_with_full_icon
+		(
+			new ERegionGabarite(size_x, size_y),
+			description_group,
+			nullptr,
+			stored_image[ELocalisationText::active_localisation]
+		);
+
+
+		parent_button->parent_button_group->root_group->parent_window->button_group_list.push_back(description_group);
+		parent_button->attached_description = description_group;
+
+		init_description(description_group);
+	}
+}

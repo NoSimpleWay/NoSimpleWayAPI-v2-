@@ -65,6 +65,8 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_minimap_shape_pentagon;
 	extern ETextureGabarite* texture_minimap_shape_upside_down_house;
 
+	extern ETextureGabarite* texture_help_description_exact_match[2];
+
 	extern ETextureGabarite* texture_button_plus;
 
 	extern ETextureGabarite* texture_button_move_up;

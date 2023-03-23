@@ -1312,44 +1312,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"RunicGloves"
 	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Gages"
-	[tag]"name RU"		[value]"Рунические краги"
-
-	[tag]"icon path"	[value]"RunicGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Gauntlets"
-	[tag]"name RU"		[value]"Рунические рукавицы"
-
-	[tag]"icon path"	[value]"RunicGloves"
-	[tag]"base class"	[value]"Gloves"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
 	
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Gloves"
-	[tag]"name RU"		[value]"Рунические перчатки"
-
-	[tag]"icon path"	[value]"RunicGloves"
-	[tag]"base class"	[value]"Gloves"
+	[tag]"item tag"		[value]"Runic base"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -1362,6 +1326,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"RunicGloves"
 	[tag]"base class"	[value]"Gloves"
+	
+	[tag]"item tag"		[value]"Runic base"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -1374,6 +1340,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"RunicGloves"
 	[tag]"base class"	[value]"Gloves"
+	
+	[tag]"item tag"		[value]"Runic base"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"

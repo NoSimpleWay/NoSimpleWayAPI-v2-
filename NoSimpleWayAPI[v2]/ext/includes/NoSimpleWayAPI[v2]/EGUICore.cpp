@@ -720,6 +720,9 @@ void EButtonGroup::button_group_update(float _d)
 
 		EInputCore::logger_param("group_size_y",	region_gabarite->size_y);
 
+		EInputCore::logger_param("offset_x",		region_gabarite->offset_x);
+		EInputCore::logger_param("offset_y:",		region_gabarite->offset_y);
+
 	}
 
 	if (autodelete_time >= 0.0f)
@@ -1649,8 +1652,8 @@ void EButtonGroup::align_groups()
 	}
 	else
 	{
-		region_gabarite->offset_x = 0.0f;
-		region_gabarite->offset_y = 0.0f;
+		//region_gabarite->offset_x = 0.0f;
+		//region_gabarite->offset_y = 0.0f;
 		//lower_culling_line	= max(region_gabarite->world_position_y,							parent_group->lower_culling_line);
 		//higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->size_y,	parent_group->higher_culling_line);
 	}

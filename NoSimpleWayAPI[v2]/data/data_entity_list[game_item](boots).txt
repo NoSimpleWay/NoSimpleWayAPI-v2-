@@ -1340,6 +1340,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"RunicBoots"
 	[tag]"base class"	[value]"Boots"
+	
+	[tag]"item tag"		[value]"Runic base"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -1352,6 +1354,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"RunicBoots"
 	[tag]"base class"	[value]"Boots"
+	
+	[tag]"item tag"		[value]"Runic base"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -1364,47 +1368,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"RunicBoots"
 	[tag]"base class"	[value]"Boots"
+	
+	[tag]"item tag"		[value]"Runic base"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
 	
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Greaves"
-	[tag]"name RU"		[value]"Рунические поножи"
-
-	[tag]"icon path"	[value]"RunicBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Sollerets"
-	[tag]"name RU"		[value]"Рунические солереты"
-
-	[tag]"icon path"	[value]"RunicBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Sabatons"
-	[tag]"name RU"		[value]"Рунические сабатоны"
-
-	[tag]"icon path"	[value]"RunicBoots"
-	[tag]"base class"	[value]"Boots"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
 	
 
 

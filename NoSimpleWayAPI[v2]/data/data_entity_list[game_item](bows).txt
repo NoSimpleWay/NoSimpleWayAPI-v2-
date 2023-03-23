@@ -473,7 +473,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Sniper Bow"
-	[tag]"name RU"		[value]"Лук птицебо¤"
+	[tag]"name RU"		[value]"Лук птицебоя"
 
 	[tag]"icon path"	[value]"Sniper_Bow_inventory_icon"
 	[tag]"base class"	[value]"Bows"

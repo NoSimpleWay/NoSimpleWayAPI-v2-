@@ -263,13 +263,7 @@ ADD_NEW_DATA_ENTITY
 
 
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Unarmed"
-	[tag]"name RU"		[value]"Без оружия"
-
-	[tag]"icon path"	[value]"Unarmed"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"

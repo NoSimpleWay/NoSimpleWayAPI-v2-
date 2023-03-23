@@ -102,6 +102,8 @@ namespace NS_DefaultGabarites
 	ETextureGabarite* texture_minimap_shape_pentagon;
 	ETextureGabarite* texture_minimap_shape_upside_down_house;
 
+	ETextureGabarite* texture_help_description_exact_match[NSW_languages_count];
+
 	ETextureGabarite* texture_button_plus;
 
 	ETextureGabarite* texture_button_move_up;
@@ -1326,6 +1328,8 @@ void EDataActionCollection::action_select_loot_item_button(Entity* _entity, ECus
 		EWindowMain::loot_filter_editor->scroll_y = max(-loot_button->matched_filter_blocks.back()->region_gabarite->offset_y, 0.0f);
 		EWindowMain::loot_filter_editor->slider->current_value = EWindowMain::loot_filter_editor->scroll_y;
 
+		//EInputCore::logger_param("scroll_y", loot_button->matched_filter_blocks.back()->region_gabarite->offset_y);
+
 		loot_button->matched_filter_blocks.back()->highlight_this_group();
 		
 
@@ -2010,6 +2014,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](currency).txt");
 
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](amulets).txt");
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](abyss_jewels).txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](belts).txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](rings).txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](jewels).txt");
@@ -4963,6 +4968,13 @@ void EWindowMain::preload_textures()
 	NS_DefaultGabarites::texture_minimap_shape_kite = NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[kite]");
 	NS_DefaultGabarites::texture_minimap_shape_pentagon = NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[pentagon]");
 	NS_DefaultGabarites::texture_minimap_shape_upside_down_house = NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[upside_down_house]");
+	
+	NS_DefaultGabarites::texture_help_description_exact_match[NSW_localisation_EN] = NS_EGraphicCore::load_from_textures_folder("help/ExactMatchDescription[EN]");
+	NS_DefaultGabarites::texture_help_description_exact_match[NSW_localisation_RU] = NS_EGraphicCore::load_from_textures_folder("help/ExactMatchDescription[RU]");
+
+
+
+
 }
 
 void EWindowMain::register_rarities()
@@ -13681,6 +13693,7 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "item tag";
 			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -13729,6 +13742,7 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "item tag";
 			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -13770,6 +13784,7 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
 			tag_filter->suitable_values.push_back("Helmets");
+			tag_filter->banned_tags.push_back("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -13777,6 +13792,7 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "item tag";
 			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -13837,6 +13853,298 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			game_item_generator->add_named_attrubite("Identified", 0.10f);
 		}
 
+		//TWO HAND MELEE
+		{
+			LootSimulatorPattern*
+				loot_simulator_pattern = new LootSimulatorPattern;
+
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Two hand melee";
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Двуручки ближний бой";
+			loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Fleshripper_inventory_icon");
+
+
+
+			{
+
+
+				GameItemGenerator*
+					game_item_generator = new GameItemGenerator();
+
+				loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+
+
+				LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "base class";
+				tag_filter->suitable_values.push_back("Two Hand Maces");
+				tag_filter->suitable_values.push_back("Two Hand Axes");
+				tag_filter->suitable_values.push_back("Two Hand Swords");
+				tag_filter->suitable_values.push_back("Warstaves");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "item tag";
+				tag_filter->banned_tags.push_back("Deleted");
+				tag_filter->banned_tags.push_back("Heist base");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				game_item_generator->add_rarity(0, 3, 3.0f);
+				game_item_generator->add_item_level(-3, 3, 1.0f);
+				game_item_generator->add_sockets_and_links(1, 6, 0, 6);
+				game_item_generator->add_random_influence(0.05f);
+				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
+				game_item_generator->add_named_attrubite("Identified", 0.10f);
+			}
+
+			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+		}
+
+		//TWO HAND RANGER
+		{
+			LootSimulatorPattern*
+				loot_simulator_pattern = new LootSimulatorPattern;
+
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Bows and quivers";
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Колчаны и луки";
+			loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Thicket_Bow_inventory_icon");
+
+
+			//BOWS
+			{
+
+
+				GameItemGenerator*
+					game_item_generator = new GameItemGenerator();
+
+				loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+
+
+				LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "base class";
+				tag_filter->suitable_values.push_back("Bows");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "item tag";
+				tag_filter->banned_tags.push_back("Deleted");
+				tag_filter->banned_tags.push_back("Heist base");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				game_item_generator->add_rarity(0, 3, 3.0f);
+				game_item_generator->add_item_level(-3, 3, 1.0f);
+				game_item_generator->add_sockets_and_links(1, 6, 0, 6);
+				game_item_generator->add_random_influence(0.05f);
+				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
+				game_item_generator->add_named_attrubite("Identified", 0.10f);
+			}
+			
+			//QUIVERS
+			{
+
+
+				GameItemGenerator*
+					game_item_generator = new GameItemGenerator();
+
+				loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+
+
+				LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "base class";
+				tag_filter->suitable_values.push_back("Quivers");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "item tag";
+				tag_filter->banned_tags.push_back("Deleted");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				game_item_generator->add_rarity(0, 3, 3.0f);
+				game_item_generator->add_item_level(-3, 3, 1.0f);
+				game_item_generator->add_random_influence(0.05f);
+				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
+				game_item_generator->add_named_attrubite("Identified", 0.10f);
+			}
+
+			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+		}
+
+		//ONE HAND MELEE
+		{
+			LootSimulatorPattern*
+				loot_simulator_pattern = new LootSimulatorPattern;
+
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "One hand melee";
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Одноручки ближний бой";
+			loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Jewelled_Foil_inventory_icon");
+
+
+
+			{
+
+
+				GameItemGenerator*
+					game_item_generator = new GameItemGenerator();
+
+				loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+
+
+				LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "base class";
+				tag_filter->suitable_values.push_back("One Hand Maces");
+				tag_filter->suitable_values.push_back("One Hand Axes");
+				tag_filter->suitable_values.push_back("One Hand Swords");
+				tag_filter->suitable_values.push_back("Claws");
+				tag_filter->suitable_values.push_back("Daggers");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "item tag";
+				tag_filter->banned_tags.push_back("Deleted");
+				tag_filter->banned_tags.push_back("Heist base");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				game_item_generator->add_rarity(0, 3, 3.0f);
+				game_item_generator->add_item_level(-3, 3, 1.0f);
+				game_item_generator->add_sockets_and_links(1, 4, 0, 6);
+				game_item_generator->add_random_influence(0.05f);
+				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
+				game_item_generator->add_named_attrubite("Identified", 0.10f);
+			}
+
+			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+		}
+
+		//CASTER
+		{
+			LootSimulatorPattern*
+				loot_simulator_pattern = new LootSimulatorPattern;
+
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Caster weapon";
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Оружие кастеров";
+			loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Pagan_Wand_inventory_icon");
+
+
+
+			{
+
+
+				GameItemGenerator*
+					game_item_generator = new GameItemGenerator();
+
+				loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+
+
+				LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "base class";
+				tag_filter->suitable_values.push_back("Wands");
+				tag_filter->suitable_values.push_back("Sceptres");
+				tag_filter->suitable_values.push_back("Rune daggers");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "item tag";
+				tag_filter->banned_tags.push_back("Deleted");
+				tag_filter->banned_tags.push_back("Heist base");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				game_item_generator->add_rarity(0, 3, 3.0f);
+				game_item_generator->add_item_level(-3, 3, 1.0f);
+				game_item_generator->add_sockets_and_links(1, 3, 0, 3);
+				game_item_generator->add_random_influence(0.05f);
+				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
+				game_item_generator->add_named_attrubite("Identified", 0.10f);
+			}
+
+			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+		}
+
+		//SHIELDS
+		{
+			LootSimulatorPattern*
+				loot_simulator_pattern = new LootSimulatorPattern;
+
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Shields";
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Щиты";
+			loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Scarlet_Round_Shield_inventory_icon");
+
+
+
+			{
+
+
+				GameItemGenerator*
+					game_item_generator = new GameItemGenerator();
+
+				loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+
+
+				LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "base class";
+				tag_filter->suitable_values.push_back("Shields");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "item tag";
+				tag_filter->banned_tags.push_back("Deleted");
+				tag_filter->banned_tags.push_back("Heist base");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+				game_item_generator->add_rarity(0, 3, 3.0f);
+				game_item_generator->add_item_level(-3, 3, 1.0f);
+				game_item_generator->add_sockets_and_links(1, 3, 0, 3);
+				game_item_generator->add_random_influence(0.05f);
+				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
+				game_item_generator->add_named_attrubite("Identified", 0.10f);
+			}
+
+			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+		}
+
+
+
+
+
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
 	}
 
@@ -13849,7 +14157,7 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Бижутерия";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Amethyst_Ring_inventory_icon");
 
-		loot_simulator_pattern->additional_force_field_for_buttons = true;
+		//loot_simulator_pattern->additional_force_field_for_buttons = true;
 		
 
 		{
@@ -13870,7 +14178,56 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			tag_filter->suitable_values.push_back("Rings");
 			tag_filter->suitable_values.push_back("Amulets");
 			tag_filter->suitable_values.push_back("Belts");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Heist base");
+			tag_filter->banned_tags.push_back("Non-default jewel");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+			game_item_generator->add_rarity(0, 3, 3.0f);
+			game_item_generator->add_item_level(-3, 3, 1.0f);
+			game_item_generator->add_random_influence(0.05f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//JEWELS
+	{
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Jewels";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Самоцветы";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Cobalt_Jewel_inventory_icon");
+
+		loot_simulator_pattern->additional_force_field_for_buttons = true;
+		
+
+		{
+		
+
+			GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+			game_item_generator->generations_count = 3;
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
 			tag_filter->suitable_values.push_back("Jewels");
+			tag_filter->suitable_values.push_back("Abyss Jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -13941,6 +14298,7 @@ void EWindowMain::register_pattern_all_equip()
 			tag_filter->banned_tags.push_back("Ritual base top");
 			tag_filter->banned_tags.push_back("Ritual base medium");
 			tag_filter->banned_tags.push_back("Ritual base low");
+			tag_filter->banned_tags.push_back("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -15983,6 +16341,20 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 
 		button_variant_FB_router->select_variant(0);
 		group_bottom_side_for_add->add_button_to_working_group(button_variant_FB_router);
+
+	
+		//##//##//##//##//##	DESCRIPTION		//##//##//##//##//##//##//##//##
+			DescriptionContainerHelpDescriptionImage*
+			description_image = new DescriptionContainerHelpDescriptionImage();
+			button_variant_FB_router->description_container = description_image;
+
+			for (int i = 0; i < NSW_languages_count; i++)
+			{
+				description_image->stored_image[i] = NS_DefaultGabarites::texture_help_description_exact_match[i];
+			}
+
+			description_image->parent_button = button_variant_FB_router;
+		//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##
 	}
 	////////////////////////////////////////////////
 	////////////////////////////////////////////////
@@ -16599,6 +16971,14 @@ void EButtonGroupDataEntity::background_update(float _d)
 				EWindowMain::background_loading_info->need_remove = true;
 
 				EInputCore::logger_simple_info("autorefresh!");
+
+				glActiveTexture(GL_TEXTURE0);
+				glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_framebuffer());
+				glGenerateMipmap(GL_TEXTURE_2D);
+
+				//glActiveTexture(GL_TEXTURE0);
+				//glBindTexture(GL_TEXTURE_2D, skydome_texture_atlas[i]->get_framebuffer());
+				//glGenerateMipmap(GL_TEXTURE_2D);
 
 
 			}

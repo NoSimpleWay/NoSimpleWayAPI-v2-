@@ -162,6 +162,8 @@ public:
 
 
 
+
+
 enum class NewLineMethod
 {
 	WHEN_OUT_OF_GABARITE,
@@ -394,6 +396,18 @@ public:
 
 };
 
+
+struct DescriptionContainerHelpDescriptionImage : public DescriptionContainer
+{
+public:
+	DescriptionContainerHelpDescriptionImage() :DescriptionContainer(0.0f, 0.0f)
+	{
+	};
+
+	ETextureGabarite* stored_image[NSW_languages_count] = { nullptr };
+
+	void create_description() override;
+};
 
 
 
