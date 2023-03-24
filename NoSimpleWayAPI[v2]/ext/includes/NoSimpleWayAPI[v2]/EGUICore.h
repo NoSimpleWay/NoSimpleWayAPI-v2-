@@ -165,6 +165,8 @@ public:
 
 	bool			window_need_refresh = false;
 
+	virtual void	action_on_close();
+
 	//////////////		_STATIC SECTION_		////////////////////////
 
 	static std::vector<EWindow*> window_list;

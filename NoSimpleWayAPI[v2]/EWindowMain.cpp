@@ -2156,6 +2156,22 @@ EWindowMain::EWindowMain()
 
 
 
+
+
+
+
+	load_config_from_disc();
+
+
+
+
+
+
+
+
+
+
+
 	//test blocks
 	if (false)
 	{
@@ -4894,7 +4910,7 @@ EWindowMain::EWindowMain()
 
 
 
-
+	
 	NS_EGraphicCore::refresh_autosize_groups(this);
 
 
@@ -4924,6 +4940,44 @@ EWindowMain::EWindowMain()
 	}
 
 
+}
+
+void EWindowMain::load_config_from_disc()
+{
+	if (std::filesystem::exists(path_of_exile_folder + "DaDEditorConfig.config"))
+	{
+		std::ifstream file;
+		std::string str;
+
+		file.open(path_of_exile_folder + "DaDEditorConfig.config");
+
+
+
+		while (std::getline(file, str))
+		{
+			EStringUtils::split_line_to_array(str);
+
+
+			if (EStringUtils::string_array[0] == "active_localisation")
+			{
+				ELocalisationText::active_localisation = EStringUtils::safe_convert_string_to_number(EStringUtils::string_array[1], 0, NSW_languages_count);
+			}
+
+			if (EStringUtils::string_array[0] == "selected_style")
+			{
+				for (int i = 0; i < EGUIStyle::style_list.size(); i++)
+				{
+					if (EGUIStyle::style_list[i]->localisation_text.base_name == EStringUtils::string_array[1])
+					{
+						EGUIStyle::active_style = EGUIStyle::style_list[i];
+
+						break;
+					}
+				}
+
+			}
+		}
+	}
 }
 
 void EWindowMain::preload_textures()
@@ -15075,6 +15129,30 @@ void EWindowMain::remove_unsave_changes_flag()
 
 		header_line->pointer_to_bottom_tabs_section->selected_button->main_text_area->generate_text();
 	}
+}
+
+void EWindowMain::save_config_file()
+{
+	std::ofstream writabro;
+
+	std::string buffer = "";
+
+	writabro.open(path_of_exile_folder + "DaDEditorConfig.config");
+
+	buffer = "active_localisation\t" + std::to_string(ELocalisationText::active_localisation);
+	writabro << buffer << std::endl;
+
+	buffer = "selected_style\t" + EGUIStyle::active_style->localisation_text.base_name;
+	writabro << buffer << std::endl;
+
+	writabro.close();
+}
+
+void EWindowMain::action_on_close()
+{
+	EWindow::action_on_close();
+
+	save_config_file();
 }
 
 

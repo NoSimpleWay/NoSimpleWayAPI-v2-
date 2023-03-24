@@ -446,6 +446,11 @@ int main()
 		}
 	}
 
+	for (EWindow* w : EWindow::window_list)
+	{
+		w->action_on_close();
+	}
+
 	return 0;
 
 }

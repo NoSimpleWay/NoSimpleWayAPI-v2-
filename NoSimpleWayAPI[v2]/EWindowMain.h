@@ -741,6 +741,7 @@ public:
 	//ECluster* cluster_array[CLUSTER_DIM_X][CLUSTER_DIM_Y];
 
 	EWindowMain();
+	void load_config_from_disc();
 	void preload_textures();
 	void register_rarities();
 	void register_alternate_qualities();
@@ -839,6 +840,9 @@ public:
 	static void make_unsaved_loot_filter_changes();
 	static void remove_unsave_changes_flag();
 
+	static void save_config_file();
+
+	void action_on_close() override;
 };
 
 

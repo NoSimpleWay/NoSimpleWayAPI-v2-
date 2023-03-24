@@ -475,19 +475,25 @@ void EntityButton::destroy_attached_description()
 {
 	if (attached_description != nullptr)
 	{
-		parent_button_group->root_group->parent_window->button_group_list.erase
+		auto finder = std::find
 		(
-			std::find
-			(
-				parent_button_group->root_group->parent_window->button_group_list.begin(),
-				parent_button_group->root_group->parent_window->button_group_list.end(),
-				attached_description
-			)
+			parent_button_group->root_group->parent_window->button_group_list.begin(),
+			parent_button_group->root_group->parent_window->button_group_list.end(),
+			attached_description
 		);
 
-		if (!disable_deleting) {
-			delete attached_description;
+		if (finder != std::end(parent_button_group->root_group->parent_window->button_group_list))
+		{
+			parent_button_group->root_group->parent_window->button_group_list.erase
+			(
+				finder
+			);
+
+			if (!disable_deleting) {
+				delete attached_description;
+			}
 		}
+
 		attached_description = nullptr;
 	}
 }

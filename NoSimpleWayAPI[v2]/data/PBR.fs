@@ -67,8 +67,8 @@ vec4 skydome_pixel;
 float level = 0.0f;
 int glossy_flat = 0;
 float ipr = 0.5f;
-float interpolation_A = 1.0f;
-float interpolation_B = 0.0f;
+//float interpolation_A = 1.0f;
+float skydome_mix_factor = 0.0f;
 
 float plastic_or_metal = 0.0f;
 float reflection_blur_area = 0.0f;
@@ -124,7 +124,7 @@ void main()
 	//reflection_blur_area = sun_flat_decay;
 	//gloss_power = 0.2f;
 	
-	fast_gloss = max(reflection_blur_area - 0.0f, 0.0f) * 1.000f;
+	fast_gloss = max(reflection_blur_area, 0.0f);
 	
 	level = (1.0f - fast_gloss) * steps;
 	//level = (level - 0.5) * 2.000f;
@@ -133,8 +133,7 @@ void main()
 	glossy_flat = clamp(int(floor(level)), 0, steps);
 	//glossy_flat = 4 - glossy_flat;
 	
-	interpolation_B = level - glossy_flat;
-	interpolation_A = 1.0f - interpolation_B;
+	skydome_mix_factor = level - glossy_flat;
 	
 	nrm = (texture(texture1, NormalMapTexCoord).rg - vec2(0.5f)) * 2.0f;
 	//nrm = pow(nrm, vec2(2.0f)) * vec2((nrm[0] < 0) ? (-1.0f) : (1.0f),(nrm[1] < 0) ? (-1.0f) : (1.0f));
@@ -176,46 +175,46 @@ void main()
 	
 	
 	//interpolation_A = 1.0f;
-	//interpolation_B = 0.0f;
+	//skydome_mix_factor = 0.0f;
 	
 	if (glossy_flat == 0)
 	{
-		skydome_pixel = mix(texture(SD_array[0], reflect_coord)	,texture(SD_array[1], reflect_coord), interpolation_B);
+		skydome_pixel = mix(texture(SD_array[0], reflect_coord)	,texture(SD_array[1], reflect_coord), skydome_mix_factor);
 		
 		//skydome_pixel = vec4(1.0f, 0.0f, 0.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 1)
 	{
-		skydome_pixel = mix(texture(SD_array[1], reflect_coord)	,texture(SD_array[2], reflect_coord), interpolation_B);
+		skydome_pixel = mix(texture(SD_array[1], reflect_coord)	,texture(SD_array[2], reflect_coord), skydome_mix_factor);
 		
 		//skydome_pixel = vec4(0.0f, 1.0f, 0.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 2)
 	{
-		skydome_pixel = mix(texture(SD_array[2], reflect_coord)	,texture(SD_array[3], reflect_coord), interpolation_B);	
+		skydome_pixel = mix(texture(SD_array[2], reflect_coord)	,texture(SD_array[3], reflect_coord), skydome_mix_factor);	
 		
 		//skydome_pixel = vec4(0.0f, 0.0f, 1.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 3)
 	{
-		skydome_pixel = mix(texture(SD_array[3], reflect_coord)	,texture(SD_array[4], reflect_coord), interpolation_B);	
+		skydome_pixel = mix(texture(SD_array[3], reflect_coord)	,texture(SD_array[4], reflect_coord), skydome_mix_factor);	
 		
 		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 4)
 	{
-		skydome_pixel = mix(texture(SD_array[4], reflect_coord)	,texture(SD_array[5], reflect_coord), interpolation_B);	
+		skydome_pixel = mix(texture(SD_array[4], reflect_coord)	,texture(SD_array[5], reflect_coord), skydome_mix_factor);	
 		
 		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
 	}
 	else
 	if (glossy_flat == 5)
 	{
-		skydome_pixel = mix(texture(SD_array[5], reflect_coord)	,texture(SD_array[6], reflect_coord), interpolation_B);	
+		skydome_pixel = mix(texture(SD_array[5], reflect_coord)	,texture(SD_array[6], reflect_coord), skydome_mix_factor);	
 		
 		//skydome_pixel = vec4(0.0f, 0.0f, 0.0f, 1.0f);
 	}

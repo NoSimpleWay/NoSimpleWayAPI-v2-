@@ -672,13 +672,18 @@ public:
 class EStringUtils
 {
 public:
-	static std::string	to_lower(std::string _text);
-	static bool			compare_ignoring_case(std::string _text1, std::string _text2);
-	static bool			A_contains_B_ignore_case(std::string _text_A, std::string _text_B);
-	static std::string	UTF8_to_ANSI(std::string _text);
+	static std::string		to_lower(std::string _text);
+	static bool				compare_ignoring_case(std::string _text1, std::string _text2);
+	static bool				A_contains_B_ignore_case(std::string _text_A, std::string _text_B);
+	static std::string		UTF8_to_ANSI(std::string _text);
 
-	static bool			if_text_is_number(std::string _text);
-	static int			safe_convert_string_to_number(std::string _text, int _min, int _max);
+	static bool				if_text_is_number(std::string _text);
+	static int				safe_convert_string_to_number(std::string _text, int _min, int _max);
 
-	static int hashFunction(std::string _input);
+	static std::string		string_array[512];
+
+	static void				split_line_to_array(std::string _line);
+
+
+	static int				hashFunction(std::string _input);
 };

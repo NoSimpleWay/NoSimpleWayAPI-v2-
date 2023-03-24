@@ -142,7 +142,10 @@ void EWindow::GUI_update_default(float _d)
 
 					std::vector<EButtonGroup*>::iterator catched_iterator = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), catched_group);
 
-					EButtonGroup::parent_vector_moving_group->group_list.insert(catched_iterator, EButtonGroup::vector_moving_group);
+					if (catched_iterator != std::end(EButtonGroup::parent_vector_moving_group->group_list))
+					{
+						EButtonGroup::parent_vector_moving_group->group_list.insert(catched_iterator, EButtonGroup::vector_moving_group);
+					}
 
 					//EButtonGroup::change_group(EButtonGroup::parent_vector_moving_group);
 					EButtonGroup::parent_vector_moving_group->need_change = true;
@@ -161,35 +164,44 @@ void EWindow::GUI_update_default(float _d)
 					std::vector<EButtonGroup*>::iterator end_erasing = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), EButtonGroup::selected_groups.back());
 					std::vector<EButtonGroup*>::iterator catched_iterator = std::find(EButtonGroup::selected_groups.begin(), EButtonGroup::selected_groups.end(), catched_group);
 					//if ((first_moved_group_id != -1) && (last_moved_group_id != -1) && (catched_group_id != -1))
-
-					//		if focused not selection vector
-					if (catched_iterator == EButtonGroup::selected_groups.end())
+					if
+					(
+						(start_erasing		!= std::end(EButtonGroup::parent_vector_moving_group->group_list))
+						&&
+						(end_erasing		!= std::end(EButtonGroup::parent_vector_moving_group->group_list))
+						&&
+						(catched_iterator	!= std::end(EButtonGroup::parent_vector_moving_group->group_list))
+					)
 					{
-
-						EButtonGroup::parent_vector_moving_group->group_list.erase(start_erasing, min(end_erasing + 1, EButtonGroup::parent_vector_moving_group->group_list.end() - 1));
-
-						catched_iterator = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), catched_group);
-
-
-						EButtonGroup::parent_vector_moving_group->group_list.insert(catched_iterator, EButtonGroup::selected_groups.begin(), EButtonGroup::selected_groups.end());
-
-						//EButtonGroup::change_group(EButtonGroup::parent_vector_moving_group);
-						EButtonGroup::parent_vector_moving_group->need_change = true;
-
-						EButtonGroup::parent_vector_moving_group = nullptr;
-						EButtonGroup::vector_moving_group = nullptr;
-
-						for (EButtonGroup* group : EButtonGroup::selected_groups)
+						//		if focused not selection vector
+						if (catched_iterator == EButtonGroup::selected_groups.end())
 						{
-							group->is_selected = false;
+
+							EButtonGroup::parent_vector_moving_group->group_list.erase(start_erasing, min(end_erasing + 1, EButtonGroup::parent_vector_moving_group->group_list.end() - 1));
+
+							catched_iterator = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), catched_group);
+
+
+							EButtonGroup::parent_vector_moving_group->group_list.insert(catched_iterator, EButtonGroup::selected_groups.begin(), EButtonGroup::selected_groups.end());
+
+							//EButtonGroup::change_group(EButtonGroup::parent_vector_moving_group);
+							EButtonGroup::parent_vector_moving_group->need_change = true;
+
+							EButtonGroup::parent_vector_moving_group = nullptr;
+							EButtonGroup::vector_moving_group = nullptr;
+
+							for (EButtonGroup* group : EButtonGroup::selected_groups)
+							{
+								group->is_selected = false;
+							}
+
+							EButtonGroup::selected_groups.clear();
+
+							EButtonGroup::first_selected_element = nullptr;
+							EButtonGroup::last_selected_element = nullptr;
+
+							EButtonGroup::parent_for_selected_groups = nullptr;
 						}
-
-						EButtonGroup::selected_groups.clear();
-
-						EButtonGroup::first_selected_element = nullptr;
-						EButtonGroup::last_selected_element = nullptr;
-
-						EButtonGroup::parent_for_selected_groups = nullptr;
 					}
 				}
 			}
@@ -530,6 +542,10 @@ void EWindow::GUI_draw_second_pass(float _d)
 	//	counter++;
 	//}
 
+}
+
+void EWindow::action_on_close()
+{
 }
 
 void EButtonGroup::recursive_set_suppressed()

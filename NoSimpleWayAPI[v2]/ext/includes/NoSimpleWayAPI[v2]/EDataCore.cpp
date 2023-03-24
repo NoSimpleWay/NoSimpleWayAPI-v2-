@@ -3036,6 +3036,8 @@ EDataContainerRadialButton::~EDataContainerRadialButton()
 	}
 }
 
+std::string	EStringUtils::string_array[512];
+
 std::string EStringUtils::to_lower(std::string _text)
 {
 	std::string output_string = "";
@@ -3255,6 +3257,52 @@ int EStringUtils::safe_convert_string_to_number(std::string _text, int _min, int
 }
 
 const int PRIME_CONST = 431;
+void EStringUtils::split_line_to_array(std::string _line)
+{
+	for (int i = 0; i < 512; i++) { string_array[i] = ""; }
+
+	bool terminator = false;
+	int id = 0;
+	std::string buffer = "";
+
+	//int l = _line.length();
+
+	//EInputCore::logger_param("idiot?", l);
+
+	for (int i = 0; i < _line.length(); i++)
+	{
+	
+
+		char sym = _line[i];
+
+		if
+		(
+			(sym == ' ')
+			||
+			(sym == '\t')
+			||
+			(i + 1 >= _line.length())
+		)
+		{
+			terminator = true;
+		}
+
+		if (terminator)
+		{
+			if (i + 1 >= _line.length()){ buffer += sym; }
+			string_array[id] = buffer;
+			buffer = "";
+			id++;
+
+			terminator = false;
+		}
+		else
+		{
+			buffer += sym;
+		}
+	}
+}
+
 int EStringUtils::hashFunction(std::string _input)
 {
 	int hashCode = 0;
