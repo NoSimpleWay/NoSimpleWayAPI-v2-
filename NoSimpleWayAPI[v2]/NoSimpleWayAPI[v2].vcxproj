@@ -184,6 +184,7 @@
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\ESound.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\ETextCore.h" />
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\Helpers.h" />
+    <ClInclude Include="Source.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

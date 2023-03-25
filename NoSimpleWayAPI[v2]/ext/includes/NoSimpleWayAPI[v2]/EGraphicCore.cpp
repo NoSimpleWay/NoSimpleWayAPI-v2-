@@ -4722,8 +4722,8 @@ void ETextureGabarite::set_real_texture_size(int _size_x, int _size_y)
 
 void ESpriteLayer::modify_buffer_position_for_sprite_layer(float _x, float _y, float _z)
 {
-	for (int k = 0; k < 4; k++)																	//4 vertex
-		for (int i = 0; i < last_buffer_id; i += batcher->gl_vertex_attribute_total_count * 4)		//1 shape = attribute counts * 4 vertex
+	for (unsigned int k = 0; k < 4; k++)																	//4 vertex
+		for (unsigned int i = 0; i < last_buffer_id; i += batcher->gl_vertex_attribute_total_count * 4)		//1 shape = attribute counts * 4 vertex
 		{
 			vertex_buffer[i + k * batcher->gl_vertex_attribute_total_count + batcher->array_offset_for_x] += _x;								//offset 0 = x
 			vertex_buffer[i + k * batcher->gl_vertex_attribute_total_count + batcher->array_offset_for_y] += _y;								//offset 1 = y
@@ -5147,6 +5147,37 @@ void ESprite::set_texture_gabarite_with_size_and_offset(ETextureGabarite* _gabar
 	{
 		fragment_size_x = _size_x;
 		fragment_size_y = _size_y;
+
+		size_x = _size_x;
+		size_y = _size_y;
+
+		//normal_texture	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_gabarite, "[normal_map]");
+		//gloss_texture	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_gabarite, "[gloss_map]");
+
+		normal_texture = _normal_map_gabarite;
+		gloss_texture = _gloss_map_gabarite;
+	}
+	else
+	{
+		EInputCore::logger_simple_error("[set texture gabarite] _gabarite is nullptr!");
+	}
+
+	sprite_calculate_uv();
+}
+
+void ESprite::size_texture_gabarite_to_this_size_and_offset(ETextureGabarite* _gabarite, ETextureGabarite* _normal_map_gabarite, ETextureGabarite* _gloss_map_gabarite, float _offset_x, float _offset_y, float _offset_z, float _size_x, float _size_y, float _size_z)
+{
+	main_texture = _gabarite;
+
+	offset_x = _offset_x;
+	offset_y = _offset_y;
+	offset_z = _offset_z;
+
+
+	if (_gabarite != nullptr)
+	{
+		fragment_size_x = _gabarite->size_x_in_pixels;
+		fragment_size_y = _gabarite->size_y_in_pixels;
 
 		size_x = _size_x;
 		size_y = _size_y;

@@ -172,6 +172,14 @@ enum class NewLineMethod
 
 };
 
+struct EHotKeyManager
+{
+	EntityButton* parent_button;
+
+	int require_main_button;
+	int require_secondare_button;
+};
+
 class EntityButton : public Entity
 {
 public:
@@ -223,9 +231,10 @@ public:
 
 	EButtonGroup* parent_button_group;
 
-
+	std::vector<EHotKeyManager> hotkey_list;
 	
 
+	void add_hotkey(int _key_main, int _key_secondary);
 
 	void destroy_attached_description();
 	EButtonGroup* attached_description;
@@ -459,16 +468,27 @@ public:
 
 	std::vector<data_action_pointer>	action_on_choose_variant_from_window;
 
-	void make_default_router_variant_button
-	(
-		ERegionGabarite* _region_gabarite,
-		EButtonGroup* _parent_group,
-		data_action_pointer _dap
-		//void (*data_action_pointer)(Entity*, ECustomData*, float)
-	);
+	int* target_int_value = nullptr;
+	//void make_default_router_variant_button
+	//(
+	//	ERegionGabarite* _region_gabarite,
+	//	EButtonGroup* _parent_group,
+	//	data_action_pointer _dap
+	//	//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	//);
 
 
 	int height_division = 2;
+};
+
+
+struct EDebugStruct;
+class EntityButtonDebugStructButton : public EntityButtonVariantRouter
+{
+public:
+	~EntityButtonDebugStructButton();
+
+	EDebugStruct* stored_debug_struct;
 };
 
 

@@ -1523,6 +1523,8 @@ void EDataActionCollection::action_close_program(Entity* _entity, ECustomData* _
 {
 	glfwSetWindowShouldClose(NS_EGraphicCore::main_window, 1);
 	EInputCore::NSW_have_unsave_changes = false;
+
+	//static_cast<EntityButtonFilterBlockTab*>(EWindowMain::header_line->pointer_to_bottom_tabs_section->selected_button)->unsave_changes
 }
 
 void EDataActionCollection::action_cancel_closing_program(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1535,6 +1537,7 @@ void EDataActionCollection::action_cancel_closing_program(Entity* _entity, ECust
 void EDataActionCollection::action_set_unsaved_changes(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EInputCore::NSW_have_unsave_changes = true;
+
 }
 
 void EDataActionCollection::action_open_url(Entity* _entity, ECustomData* _custom_data, float _d)

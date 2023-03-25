@@ -13,7 +13,14 @@
 #define debug_deleting		false
 
 
+enum DebugStructID
+{
+	GROUP_GABARITES,
+	CULLING_LINES,
+	HIGHEST_POINT_Y,
 
+	DEBUG_STRUCT_ID_LAST_ELEMENT
+};
 
 
 class ECustomData;

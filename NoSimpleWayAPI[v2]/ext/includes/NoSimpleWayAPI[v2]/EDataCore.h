@@ -614,6 +614,7 @@ namespace EDataActionCollection
 	//void action_active_filter_block						(Entity* _entity, ECustomData* _custom_data, float _d);
 	
 	void action_out_main_text_area(Entity* _entity, ECustomData* _custom_data, float _d);
+	//void action_(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text
 	void action_type_search_data_entity_text(ETextArea* _text_area);
@@ -687,3 +688,4 @@ public:
 
 	static int				hashFunction(std::string _input);
 };
+

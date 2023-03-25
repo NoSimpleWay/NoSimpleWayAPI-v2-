@@ -155,6 +155,9 @@ public:
 	int tab_id = 0;
 
 	EButtonGroup* target_filter_editor;
+
+	bool is_empty		= true;
+	bool unsave_changes	= false;
 };
 
 
@@ -838,7 +841,7 @@ public:
 
 	static void set_color_version(HSVRGBAColor* _target_color, int _selected_mode);
 	static void make_unsaved_loot_filter_changes();
-	static void remove_unsave_changes_flag();
+	static void remove_unsave_changes_flag_from_tab();
 
 	static void save_config_file();
 

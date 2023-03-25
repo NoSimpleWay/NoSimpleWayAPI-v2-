@@ -429,8 +429,8 @@ public:
 
 	void check_slider();
 
-	void group_stretch_x();
-	void group_stretch_childs_by_y();
+	void recursive_group_stretch_childs_x();
+	void recursive_group_stretch_childs_y();
 
 	void align_groups();
 	static void calculate_culling_lines(EButtonGroup* _group, bool _recursive);
@@ -450,6 +450,8 @@ public:
 	static void refresh_button_group(EButtonGroup* _group);
 	static void refresh_button_group_forceful(EButtonGroup* _group);
 	static void change_group(EButtonGroup* _group);
+	static void change_group_first_pass(EButtonGroup* _group);
+	static void change_group_second_pass(EButtonGroup* _group);
 	/*-----------------------------------*/
 
 
@@ -698,5 +700,29 @@ enum StyleList
 	STYLE_LIST_GRAY_MINIMALISM
 };
 
+#ifndef _DEBUG_STRUCTS_ALREADY_DEFINED_
+#define _DEBUG_STRUCTS_ALREADY_DEFINED_
+
+
+	class EntityButtonDebugStructButton;
+
+
+	struct EDebugStruct
+	{
+	public:
+		ELocalisationText	localisation_text;
+		int					selected_variant = 0;
+		ETextureGabarite*	icon;
+
+		EntityButtonDebugStructButton* associated_button_router;
+	};
+
+	namespace DebugNamespace
+	{
+		extern EDebugStruct NSW_registered_debug_struct[DebugStructID::DEBUG_STRUCT_ID_LAST_ELEMENT];
+		extern EButtonGroup* NSW_pointer_to_debug_window;
+		extern bool is_debug_element_active(DebugStructID _id);
+	}
+#endif
 
 

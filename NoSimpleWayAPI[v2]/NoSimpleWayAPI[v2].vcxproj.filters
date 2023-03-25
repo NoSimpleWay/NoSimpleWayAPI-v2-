@@ -119,5 +119,8 @@
     <ClInclude Include="ext\includes\NoSimpleWayAPI[v2]\ESound.h">
       <Filter>NoSimpleWayAPI[v2]\UTILS</Filter>
     </ClInclude>
+    <ClInclude Include="Source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

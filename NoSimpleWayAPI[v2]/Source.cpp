@@ -40,6 +40,7 @@
 #ifndef _ESOUND_ALREADY_LINKED_
 #define _ESOUND_ALREADY_LINKED_
 #include <NoSimpleWayAPI[v2]/ESound.h>
+#include "Source.h"
 #endif
 /**/
 
@@ -50,6 +51,103 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+void register_debug_structs()
+{
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::GROUP_GABARITES].icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_debug_show_region_borders");
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::GROUP_GABARITES].localisation_text = ELocalisationText::get_localisation_by_key("debug_button_show_region_border");
+
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::CULLING_LINES].icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_debug_show_culling_lines");
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::CULLING_LINES].localisation_text = ELocalisationText::get_localisation_by_key("debug_button_show_culling_lines");
+	
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::HIGHEST_POINT_Y].icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_debug_show_highest_point_y");
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::HIGHEST_POINT_Y].localisation_text = ELocalisationText::get_localisation_by_key("debug_button_show_highest_point_y");
+
+	/////////////////////////////////////////////////////
+	{
+		EButtonGroup*
+		whole_debug_group = new EButtonGroup(new ERegionGabarite(200.0f, 600.0f));
+		whole_debug_group->init_as_root_group(EWindowMain::link_to_main_window);
+		EWindowMain::link_to_main_window->button_group_list.push_back(whole_debug_group);
+		whole_debug_group->move_to_foreground_and_center();
+
+		EButtonGroup* workspace_part = whole_debug_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);
+
+		for (int i = 0; i < DebugStructID::DEBUG_STRUCT_ID_LAST_ELEMENT; i++)
+		{
+			EntityButtonDebugStructButton*
+			debug_button = new EntityButtonDebugStructButton();
+			workspace_part->add_button_to_working_group(debug_button);
+
+			debug_button->make_as_default_router_variant_button (new ERegionGabarite(180.0f, 40.0f));
+			debug_button->main_text_area->localisation_text = DebugNamespace::NSW_registered_debug_struct[i].localisation_text;
+			debug_button->can_be_stretched = true;
+			//debug_button->new_line_method = NewLineMethod::WHEN_OUT_OF_GABARITE;
+
+			//
+			RouterVariant*
+			router_variant	= new RouterVariant();
+
+			router_variant->localisation	= new ELocalisationText();
+			*router_variant->localisation	= DebugNamespace::NSW_registered_debug_struct[i].localisation_text;
+			router_variant->texture = DebugNamespace::NSW_registered_debug_struct[i].icon;
+			router_variant->color = new HSVRGBAColor();
+			router_variant->color->set_color_RGBA(0.5f, 0.45f, 0.35f, 1.0f);
+
+			debug_button->router_variant_list.push_back(router_variant);
+			//
+
+			//
+			router_variant = new RouterVariant();
+
+			router_variant->localisation	= new ELocalisationText();
+			*router_variant->localisation	= DebugNamespace::NSW_registered_debug_struct[i].localisation_text;
+			router_variant->texture = DebugNamespace::NSW_registered_debug_struct[i].icon;
+			router_variant->color = new HSVRGBAColor();
+			router_variant->color->set_color_RGBA(0.2f, 0.8f, 0.4f, 1.0f);
+
+
+			debug_button->router_variant_list.push_back(router_variant);
+			//
+
+			debug_button->select_variant(0);
+			debug_button->stored_debug_struct = &DebugNamespace::NSW_registered_debug_struct[i];
+			DebugNamespace::NSW_registered_debug_struct[i].associated_button_router = debug_button;
+
+
+
+
+
+			//EntityButton* switch_button;
+			//switch_button = new EntityButtonForFilterBlock();
+			//switch_button->make_default_bool_switcher_button
+			//(
+			//	new ERegionGabarite(20.0f, 20.0f),
+			//	workspace_part,
+			//	EDataActionCollection::action_switch_boolean_value,
+			//	NS_DefaultGabarites::texture_bool_switcher_activated_box,
+			//	NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+			//	&(NSW_registered_debug_struct[i].flag_status)
+			//);
+			//switch_button->new_line_method = NewLineMethod::WHEN_OUT_OF_GABARITE;
+
+			//workspace_part->add_button_to_working_group(switch_button);
+		}
+
+		EButtonGroup::refresh_button_group(whole_debug_group);
+		DebugNamespace::NSW_pointer_to_debug_window = whole_debug_group;
+	}
+	/////////////////////////////////////////////////////
+}
 int main()
 {
 	setlocale(LC_CTYPE, "Russian");
@@ -104,7 +202,17 @@ int main()
 	EWindow::window_list.push_back(EWindowMain::link_to_main_window);
 
 
+
+
 	srand(time(nullptr));
+
+
+
+
+	register_debug_structs();
+
+
+
 
 	//fast message
 		EButtonGroupFastMessage*
@@ -454,3 +562,5 @@ int main()
 	return 0;
 
 }
+
+

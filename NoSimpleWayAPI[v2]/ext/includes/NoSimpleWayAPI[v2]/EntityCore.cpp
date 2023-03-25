@@ -471,6 +471,15 @@ bool EntityButton::entity_is_active()
 	return ((Entity::entity_is_active()) && (!button_hidden_by_search));
 }
 
+void EntityButton::add_hotkey(int _key_main, int _key_secondary)
+{
+	EHotKeyManager hmanager;
+	hmanager.require_main_button = _key_main;
+	hmanager.require_secondare_button = _key_secondary;
+	hmanager.parent_button = this;
+	hotkey_list.push_back(hmanager);
+}
+
 void EntityButton::destroy_attached_description()
 {
 	if (attached_description != nullptr)
@@ -1317,6 +1326,24 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 			)
 		);
 	}
+	else
+	{
+		sprite_layer_list.push_back
+		(
+			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+			(
+				_gabarite,
+
+				round(offset_x),
+				round(offset_y),
+				0.0f,
+
+				_region_gabarite->size_y,
+				_region_gabarite->size_y,
+				0.0f
+			)
+		);
+	}
 
 	ETextArea* jc_text_area;
 	if (_gabarite != nullptr)
@@ -1385,26 +1412,26 @@ void EntityButton::make_default_bool_switcher_button(ERegionGabarite* _region_ga
 
 
 
-void EntityButtonVariantRouter::make_default_router_variant_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap)
-{
-	make_as_default_button_with_icon
-	(
-		_region_gabarite,
-		_parent_group,
-		_dap,
-		nullptr
-	);
-
-	//parent_filter_block = static_cast<EButtonGroupFilterBlock*>(_parent_group);
-
-	layer_with_icon = sprite_layer_list.back();
-
-	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(this), EFont::font_list[0], ELocalisationText());
-	pointer_to_text_area = jc_text_area;
-
-	jc_text_area->can_be_edited = false;
-	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
-}
+//void EntityButtonVariantRouter::make_default_router_variant_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap)
+//{
+//	make_as_default_button_with_icon
+//	(
+//		_region_gabarite,
+//		_parent_group,
+//		_dap,
+//		nullptr
+//	);
+//
+//	//parent_filter_block = static_cast<EButtonGroupFilterBlock*>(_parent_group);
+//
+//	layer_with_icon = sprite_layer_list.back();
+//
+//	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(this), EFont::font_list[0], ELocalisationText());
+//	pointer_to_text_area = jc_text_area;
+//
+//	jc_text_area->can_be_edited = false;
+//	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
+//}
 
 void EntityButton::make_as_default_router_variant_button(ERegionGabarite* _region_gabarite)
 {
@@ -1554,6 +1581,41 @@ void EntityButton::update(float _d)
 			(!button_gabarite->overlapped_by_mouse())
 		)
 		{destroy_attached_description();}
+
+		for (EHotKeyManager hotkey : hotkey_list)
+		{
+			if
+			(
+				(hotkey.parent_button != nullptr)
+				&&
+				(
+					(
+						(hotkey.require_main_button > 0)
+						&&
+						(EInputCore::key_pressed(hotkey.require_main_button))
+					)
+					&&
+					(
+						(hotkey.require_main_button <= 0)
+						||
+						(EInputCore::key_pressed_once(hotkey.require_secondare_button))
+					)
+				)
+			)
+			{
+				for (ECustomData* cd:custom_data_list)
+				for (EClickableArea* ca:cd->clickable_area_list)
+				for (data_action_pointer dap : ca->actions_on_click_list)
+				if
+				(
+					(dap != nullptr)
+				)
+				{
+					EInputCore::logger_simple_info("call [actions on click list]");
+					dap(this, cd, _d);
+				}
+			}
+		}
 	//}
 }
 
@@ -1903,18 +1965,18 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 				//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->offset_z = 0.0f;
 
 
-				layer_with_icon->sprite_frame_list[0]->sprite_list[0]->set_texture_gabarite_with_size_and_offset
+				layer_with_icon->sprite_frame_list[0]->sprite_list[0]->size_texture_gabarite_to_this_size_and_offset
 				(
 					router_variant_list[selected_variant]->texture,
 					nullptr,
 					nullptr,
 
-					(button_gabarite->size_y - router_variant_list[selected_variant]->texture->size_x_in_pixels) / 2.0f,
-					(button_gabarite->size_y - router_variant_list[selected_variant]->texture->size_y_in_pixels) / 2.0f,
+					round(button_gabarite->size_y - router_variant_list[selected_variant]->texture->size_x_in_pixels) / 2.0f,
+					round(button_gabarite->size_y - router_variant_list[selected_variant]->texture->size_y_in_pixels) / 2.0f,
 					0.0f,
 
-					router_variant_list[selected_variant]->texture->size_x_in_pixels * resize_factor,
-					router_variant_list[selected_variant]->texture->size_y_in_pixels * resize_factor,
+					round(router_variant_list[selected_variant]->texture->size_x_in_pixels * resize_factor),
+					round(router_variant_list[selected_variant]->texture->size_y_in_pixels * resize_factor),
 					0.0f
 				);
 
@@ -2130,4 +2192,10 @@ void DescriptionContainerHelpDescriptionImage::create_description()
 
 		init_description(description_group);
 	}
+}
+
+
+
+EntityButtonDebugStructButton::~EntityButtonDebugStructButton()
+{
 }

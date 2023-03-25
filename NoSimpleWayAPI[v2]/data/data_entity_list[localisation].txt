@@ -310,6 +310,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Remove this block"
 	[tag]"name RU"		[value]"Удалить этот блок"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"debug_button_show_region_border"
+	[tag]"name EN"		[value]"Region borders"
+	[tag]"name RU"		[value]"Границы регионов"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"debug_button_show_culling_lines"
+	[tag]"name EN"		[value]"Culling lines for GL_SCISSOR"
+	[tag]"name RU"		[value]"Линии среза для GL_SCISSOR"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"debug_button_show_highest_point_y"
+	[tag]"name EN"		[value]"Highest point y for content"
+	[tag]"name RU"		[value]"Наивысшая точка y для содержимого"
+	
 
 	
 	

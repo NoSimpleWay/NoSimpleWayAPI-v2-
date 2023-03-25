@@ -298,7 +298,14 @@ void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity
 
 
 
-	if ((EInputCore::NSW_have_unsave_changes) && (!EButtonGroupConfirmAction::confirm_decline_group->button_group_is_active))
+	if
+	(
+		(EWindowMain::header_line->pointer_to_bottom_tabs_section->selected_button != nullptr)
+		&&
+		(static_cast<EntityButtonFilterBlockTab*>(EWindowMain::header_line->pointer_to_bottom_tabs_section->selected_button)->unsave_changes)
+		&&
+		(!EButtonGroupConfirmAction::confirm_decline_group->button_group_is_active)
+	)
 	{
 		EButtonGroupConfirmAction::confirm_decline_group->pointer_to_confirm_button->stored_action = &EDataActionCollection::action_open_loot_filters_list_window;
 		EButtonGroupConfirmAction::confirm_decline_group->activate_move_to_foreground_and_center();
@@ -334,7 +341,7 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 	EWindowMain::tab_list_group->selected_button->main_text_area->change_text(((EntityButtonForLootFilterSelector*)_entity)->filter_name);
 	EWindowMain::tab_list_group->selected_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = ((EntityButtonForLootFilterSelector*)_entity)->filter_name;
 	EWindowMain::tab_list_group->selected_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = ((EntityButtonForLootFilterSelector*)_entity)->filter_name;
-
+	static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->is_empty = false;
 
 
 	EWindowMain::open_loot_filter(((EntityButtonForLootFilterSelector*)_entity)->loot_filter_full_path, LootFilterOpenMode::LOOT_FILTER_OPEN_MODE_USER_FILTER_FROM_DISC);
@@ -373,7 +380,7 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 
 	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
 
-	EWindowMain::remove_unsave_changes_flag();
+	EWindowMain::remove_unsave_changes_flag_from_tab();
 
 }
 
@@ -696,7 +703,9 @@ void EDataActionCollection::action_create_new_loot_filter_with_name(Entity* _ent
 			tab = static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button);
 
 		EButtonGroup*
-			filter_editor = tab->target_filter_editor;
+		filter_editor = tab->target_filter_editor;
+
+		tab->is_empty = false;
 
 		for (EButtonGroup* button_group : filter_editor->group_list)
 		{
@@ -1779,31 +1788,57 @@ void EDataActionCollection::action_set_unsave_changes_flag(ETextArea* _text_area
 
 void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	std::string str = "";
+	if (!static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button)->is_empty)
+	{
+		std::string str = "";
 
-	EButtonGroup::pointer_to_fast_message_group->activate_move_to_foreground_and_center();
-	EButtonGroup::pointer_to_fast_message_group->clickable_area_list[0]->text_area->localisation_text.localisations[NSW_localisation_EN] = "Saved!";
-	EButtonGroup::pointer_to_fast_message_group->clickable_area_list[0]->text_area->localisation_text.localisations[NSW_localisation_RU] = "Сохранено!";
-	EButtonGroup::pointer_to_fast_message_group->clickable_area_list[0]->text_area->update_localisation();
-	EButtonGroup::pointer_to_fast_message_group->exist_time = 1.0f;
+		EButtonGroup::pointer_to_fast_message_group->activate_move_to_foreground_and_center();
+		EButtonGroup::pointer_to_fast_message_group->clickable_area_list[0]->text_area->localisation_text.localisations[NSW_localisation_EN] = "Saved!";
+		EButtonGroup::pointer_to_fast_message_group->clickable_area_list[0]->text_area->localisation_text.localisations[NSW_localisation_RU] = "Сохранено!";
+		EButtonGroup::pointer_to_fast_message_group->clickable_area_list[0]->text_area->update_localisation();
+		EButtonGroup::pointer_to_fast_message_group->exist_time = 1.0f;
 
-	EWindowMain::remove_unsave_changes_flag();
-	//EButtonGroup* filter_block_massive = static_cast<EDataContainer_Button_StoreParentFilterBlock*>(_custom_data->data_container)->parent_filter_block->root_group;
-	//for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
-	//for (int i = EWindowMain::loot_filter_editor->group_list.size() - 1; i >= 0; i--)
+		EWindowMain::remove_unsave_changes_flag_from_tab();
+		//EButtonGroup* filter_block_massive = static_cast<EDataContainer_Button_StoreParentFilterBlock*>(_custom_data->data_container)->parent_filter_block->root_group;
+		//for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
+		//for (int i = EWindowMain::loot_filter_editor->group_list.size() - 1; i >= 0; i--)
 
-	//ORIGINAL
-	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-		if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
-		{
-			if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
+		//ORIGINAL
+		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
 			{
-				str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_ORIGINAL);
-				str += '\n';
-				str += '\n';
+				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
+				{
+					str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_ORIGINAL);
+					str += '\n';
+					str += '\n';
+				}
+				else
+					if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
+					{
+						if (!static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i])->autogenerated_do_dot_save)
+						{
+							str += generate_filter_block_separator_text(static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]), FilterBlockSaveMode::VERSION_ORIGINAL);
+							str += '\n';
+							str += '\n';
+						}
+					}
 			}
-			else
-				if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
+
+		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
+
+		//VERY SOFT
+		str = "#AUTOGENERATED\n";
+		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
+			{
+				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
+				{
+					str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_VERY_SOFT);
+					str += '\n';
+					str += '\n';
+				}
+				else if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
 				{
 					if (!static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i])->autogenerated_do_dot_save)
 					{
@@ -1812,124 +1847,101 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 						str += '\n';
 					}
 				}
-		}
-
-	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
-
-	//VERY SOFT
-	str = "#AUTOGENERATED\n";
-	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-		if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
-		{
-			if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
-			{
-				str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_VERY_SOFT);
-				str += '\n';
-				str += '\n';
 			}
-			else if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
+		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#0 very soft].filter", &str);
+
+		//SOFT
+		str = "#AUTOGENERATED\n";
+		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
 			{
-				if (!static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i])->autogenerated_do_dot_save)
+				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
 				{
-					str += generate_filter_block_separator_text(static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]), FilterBlockSaveMode::VERSION_ORIGINAL);
+					str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_SOFT);
 					str += '\n';
 					str += '\n';
 				}
-			}
-		}
-	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#0 very soft].filter", &str);
-
-	//SOFT
-	str = "#AUTOGENERATED\n";
-	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-		if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
-		{
-			if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
-			{
-				str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_SOFT);
-				str += '\n';
-				str += '\n';
-			}
-			else if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
-			{
-				if (!static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i])->autogenerated_do_dot_save)
+				else if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
 				{
-					str += generate_filter_block_separator_text(static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]), FilterBlockSaveMode::VERSION_ORIGINAL);
+					if (!static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i])->autogenerated_do_dot_save)
+					{
+						str += generate_filter_block_separator_text(static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]), FilterBlockSaveMode::VERSION_ORIGINAL);
+						str += '\n';
+						str += '\n';
+					}
+				}
+			}
+		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#1 soft].filter", &str);
+
+		//DEFAULT
+		str = "#AUTOGENERATED\n";
+		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
+			{
+				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
+				{
+					str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_DEFAULT);
 					str += '\n';
 					str += '\n';
 				}
-			}
-		}
-	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#1 soft].filter", &str);
-
-	//DEFAULT
-	str = "#AUTOGENERATED\n";
-	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-		if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
-		{
-			if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
-			{
-				str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_DEFAULT);
-				str += '\n';
-				str += '\n';
-			}
-			else if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
-			{
-				if (!static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i])->autogenerated_do_dot_save)
+				else if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
 				{
-					str += generate_filter_block_separator_text(static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]), FilterBlockSaveMode::VERSION_ORIGINAL);
+					if (!static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i])->autogenerated_do_dot_save)
+					{
+						str += generate_filter_block_separator_text(static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]), FilterBlockSaveMode::VERSION_ORIGINAL);
+						str += '\n';
+						str += '\n';
+					}
+				}
+			}
+		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#2 default].filter", &str);
+
+		//STRICT
+		str = "#AUTOGENERATED\n";
+		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
+			{
+				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
+				{
+					str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_STRICT);
 					str += '\n';
 					str += '\n';
 				}
-			}
-		}
-	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#2 default].filter", &str);
-
-	//STRICT
-	str = "#AUTOGENERATED\n";
-	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-		if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
-		{
-			if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
-			{
-				str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_STRICT);
-				str += '\n';
-				str += '\n';
-			}
-			else if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
-			{
-				if (!static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i])->autogenerated_do_dot_save)
+				else if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
 				{
-					str += generate_filter_block_separator_text(static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]), FilterBlockSaveMode::VERSION_ORIGINAL);
+					if (!static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i])->autogenerated_do_dot_save)
+					{
+						str += generate_filter_block_separator_text(static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]), FilterBlockSaveMode::VERSION_ORIGINAL);
+						str += '\n';
+						str += '\n';
+					}
+				}
+			}
+		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#3 strict].filter", &str);
+
+		//VERY STRICT
+		str = "#AUTOGENERATED\n";
+		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
+			{
+				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
+				{
+					str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_VERY_STRICT);
 					str += '\n';
 					str += '\n';
 				}
-			}
-		}
-	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#3 strict].filter", &str);
-
-	//VERY STRICT
-	str = "#AUTOGENERATED\n";
-	for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-		if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
-		{
-			if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
-			{
-				str += generate_filter_block_text(EWindowMain::loot_filter_editor->group_list[i], FilterBlockSaveMode::VERSION_VERY_STRICT);
-				str += '\n';
-				str += '\n';
-			}
-			else if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
-			{
-				if (!static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i])->autogenerated_do_dot_save)
+				else if (EButtonGroupFilterBlockSeparator* block = dynamic_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
 				{
-					str += generate_filter_block_separator_text(static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]), FilterBlockSaveMode::VERSION_ORIGINAL);
-					str += '\n';
-					str += '\n';
+					if (!static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i])->autogenerated_do_dot_save)
+					{
+						str += generate_filter_block_separator_text(static_cast<EButtonGroupFilterBlockSeparator*>(EWindowMain::loot_filter_editor->group_list[i]), FilterBlockSaveMode::VERSION_ORIGINAL);
+						str += '\n';
+						str += '\n';
+					}
 				}
 			}
-		}
-	EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#4 very strict].filter", &str);
+		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + "[#4 very strict].filter", &str);
+	}
 
 }
 
@@ -4691,7 +4703,7 @@ EWindowMain::EWindowMain()
 		(
 			EButtonGroup::create_button_group_without_bg
 			(
-				new ERegionGabarite(100.0f, 46.0f),
+				new ERegionGabarite(300.0f, 46.0f),
 				EGUIStyle::active_style
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_static_autosize);
@@ -4708,7 +4720,7 @@ EWindowMain::EWindowMain()
 					&EDataActionCollection::action_open_new_lootfilter_group,
 					NS_EGraphicCore::load_from_textures_folder("buttons/button_create_new_loot_filter")
 				);
-
+				jc_button->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_N);
 				top_section_left_part->add_button_to_working_group(jc_button);
 				//////////////////////////////////////////////////////
 
@@ -4723,7 +4735,7 @@ EWindowMain::EWindowMain()
 					&EDataActionCollection::action_open_loot_filters_list_window,
 					NS_EGraphicCore::load_from_textures_folder("buttons/button_open")
 				);
-
+				jc_button->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_O);
 				top_section_left_part->add_button_to_working_group(jc_button);
 				//////////////////////////////////////////////////////
 
@@ -4739,45 +4751,20 @@ EWindowMain::EWindowMain()
 				);
 
 				jc_button->force_field_right = 32.0f;
+
+				jc_button->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_S);
+				/*EHotKeyManager hmanager;
+				hmanager.require_main_button = GLFW_KEY_LEFT_CONTROL;
+				hmanager.require_secondare_button = GLFW_KEY_S;
+				hmanager.parent_button = jc_button;
+				jc_button->hotkey_list.push_back(hmanager);*/
+
 				top_section_left_part->add_button_to_working_group(jc_button);
 				//////////////////////////////////////////////////////
 
 
 
-				//////////////////////////////////////////////////////
-				EntityButtonButtonGroupActivator* button_activator = new EntityButtonButtonGroupActivator();
-
-				button_activator->make_as_default_button_with_icon
-				(
-					new ERegionGabarite(45.0f, 45.0f),
-					top_section_left_part,
-					&EDataActionCollection::action_set_button_group_as_active,
-					NS_EGraphicCore::load_from_textures_folder("buttons/button_world_parameters")
-				);
-
-				button_activator->target_group = EWindowMain::world_parameters;
-				top_section_left_part->add_button_to_working_group(button_activator);
-				//////////////////////////////////////////////////////
-
-
-
-				//////////////////////////////////////////////////////
-				{
-					EntityButtonButtonGroupActivator* button_activator = new EntityButtonButtonGroupActivator();
-
-					button_activator->make_as_default_button_with_icon
-					(
-						new ERegionGabarite(45.0f, 45.0f),
-						top_section_left_part,
-						&EDataActionCollection::action_set_button_group_as_active,
-						NS_EGraphicCore::load_from_textures_folder("buttons/button_styles")
-					);
-					button_activator->target_group = EWindowMain::style_list_group;
-					button_activator->force_field_right = 32.0f;
-					top_section_left_part->add_button_to_working_group(button_activator);
-
-				}
-				//////////////////////////////////////////////////////
+				
 
 
 
@@ -4798,7 +4785,7 @@ EWindowMain::EWindowMain()
 
 
 		//////////////////////////////////////////////////////
-		button_activator = new EntityButtonButtonGroupActivator();
+		EntityButtonButtonGroupActivator* button_activator = new EntityButtonButtonGroupActivator();
 
 		button_activator->make_as_default_button_with_icon
 		(
@@ -4808,10 +4795,60 @@ EWindowMain::EWindowMain()
 			NS_EGraphicCore::load_from_textures_folder("buttons/button_open_loot_simulator")
 		);
 		button_activator->force_field_right = 32.0f;
-
+		button_activator->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_L);
 		//button_activator->target_group = EWindowMain::loot_simulator_button_group;
 		top_section_left_part->add_button_to_working_group(button_activator);
 		//////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+		//////////////////////////////////////////////////////
+		button_activator = new EntityButtonButtonGroupActivator();
+
+		button_activator->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(45.0f, 45.0f),
+			top_section_right_part,
+			&EDataActionCollection::action_set_button_group_as_active,
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_world_parameters")
+		);
+		button_activator->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_W);
+		button_activator->target_group = EWindowMain::world_parameters;
+		top_section_right_part->add_button_to_working_group(button_activator);
+		//////////////////////////////////////////////////////
+
+
+
+		//////////////////////////////////////////////////////
+		{
+			EntityButtonButtonGroupActivator* button_activator = new EntityButtonButtonGroupActivator();
+
+			button_activator->make_as_default_button_with_icon
+			(
+				new ERegionGabarite(45.0f, 45.0f),
+				top_section_right_part,
+				&EDataActionCollection::action_set_button_group_as_active,
+				NS_EGraphicCore::load_from_textures_folder("buttons/button_styles")
+			);
+			button_activator->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_G);
+			button_activator->target_group = EWindowMain::style_list_group;
+			button_activator->force_field_right = 32.0f;
+			top_section_right_part->add_button_to_working_group(button_activator);
+
+		}
+		//////////////////////////////////////////////////////
+
+
+
 
 
 
@@ -4821,13 +4858,14 @@ EWindowMain::EWindowMain()
 		button_activator->make_as_default_button_with_icon
 		(
 			new ERegionGabarite(45.0f, 45.0f),
-			top_section_left_part,
+			top_section_right_part,
 			&EDataActionCollection::action_set_button_group_as_active,
 			NS_EGraphicCore::load_from_textures_folder("buttons/button_info")
 		);
 		button_activator->target_group = EWindowMain::info_button_group;
-
-		top_section_left_part->add_button_to_working_group(button_activator);
+		button_activator->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_I);
+		button_activator->force_field_right = 16.0f;
+		top_section_right_part->add_button_to_working_group(button_activator);
 		//////////////////////////////////////////////////////
 
 
@@ -7887,7 +7925,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			EButtonGroup*
 			block_for_loot_versions = new EButtonGroup(new ERegionGabarite(111.0f, 30.0f));
-			block_for_loot_versions->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+			block_for_loot_versions->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_without_slider);
 			block_for_loot_versions->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 			block_for_loot_versions->debug_name = "Versions";
 
@@ -8094,7 +8132,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		"full_ignore",
 		"hide",
 		"ignore",
-		"standart",
+		"standard",
 		"focus",
 	};
 
@@ -15111,6 +15149,8 @@ void EWindowMain::make_unsaved_loot_filter_changes()
 	if (header_line->pointer_to_bottom_tabs_section->selected_button != nullptr)
 	{
 		header_line->pointer_to_bottom_tabs_section->selected_button->main_text_area->set_color(1.0f, 0.5f, 0.1f, 1.0f);
+		
+		static_cast<EntityButtonFilterBlockTab*>(EWindowMain::header_line->pointer_to_bottom_tabs_section->selected_button)->unsave_changes = true;
 
 		header_line->pointer_to_bottom_tabs_section->selected_button->main_text_area->generate_text();
 	}
@@ -15119,15 +15159,27 @@ void EWindowMain::make_unsaved_loot_filter_changes()
 
 }
 
-void EWindowMain::remove_unsave_changes_flag()
+void EWindowMain::remove_unsave_changes_flag_from_tab()
 {
 	EInputCore::NSW_have_unsave_changes = false;
 
+	for (EntityButton* button : header_line->pointer_to_bottom_tabs_section->workspace_button_list)
+	{
+		EntityButtonFilterBlockTab* tab_button = static_cast<EntityButtonFilterBlockTab*>(button);
+		EInputCore::NSW_have_unsave_changes |= tab_button->unsave_changes;
+	}
+	
+	
+
 	if (header_line->pointer_to_bottom_tabs_section->selected_button != nullptr)
 	{
-		header_line->pointer_to_bottom_tabs_section->selected_button->main_text_area->set_color(1.0f, 0.9f, 0.8f, 1.0f);
+		EntityButtonFilterBlockTab*
+		tab_button = static_cast<EntityButtonFilterBlockTab*>(header_line->pointer_to_bottom_tabs_section->selected_button);
 
-		header_line->pointer_to_bottom_tabs_section->selected_button->main_text_area->generate_text();
+		tab_button->unsave_changes = false;
+
+		tab_button->main_text_area->set_color(1.0f, 0.9f, 0.8f, 1.0f);
+		tab_button->main_text_area->generate_text();
 	}
 }
 
@@ -15517,19 +15569,16 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 		{
 			EntityButtonVariantRouterForFilterBlock*
 				rarity_button = new EntityButtonVariantRouterForFilterBlock();
-			rarity_button->make_default_router_variant_button
-			(
-				new ERegionGabarite(100.0f + input_field_additional_width, button_height),
-				non_listed_line,
-				&EDataActionCollection::action_rotate_variant
-			);
+			non_listed_line->add_button_to_working_group(rarity_button);
+
+			rarity_button->make_as_default_router_variant_button (new ERegionGabarite(100.0f + input_field_additional_width, button_height));
 			rarity_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 
 			rarity_button->parent_filter_block = _target_filter_block;
 			rarity_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
 
 			non_listed_line->rarity_router_button = rarity_button;
-			non_listed_line->add_button_to_working_group(rarity_button);
+
 
 			RouterVariant* router_variant = nullptr;
 			ELocalisationText* ltext = nullptr;
@@ -16302,6 +16351,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 					NSW_dynamic_autosize,
 					NSW_dynamic_autosize
 				);
+			group_bottom_side_for_add->have_slider = false;
 
 			group_bottom_for_control->add_group(group_bottom_side_for_add);
 			//group_left_side_for_add->have_rama = true;
@@ -16369,14 +16419,10 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 	////////////////////////////////////////////////
 	if (_attribute->have_exact_match)
 	{
-		EntityButtonVariantRouterForFilterBlock* button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
-
-		button_variant_FB_router->make_default_router_variant_button
-		(
-			new ERegionGabarite(170.0f, 24.0f),
-			group_bottom_side_for_add,
-			EDataActionCollection::action_rotate_variant
-		);
+		EntityButtonVariantRouterForFilterBlock*
+		button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
+		group_bottom_side_for_add->add_button_to_working_group(button_variant_FB_router);
+		button_variant_FB_router->make_as_default_router_variant_button (new ERegionGabarite(170.0f, 24.0f));
 		button_variant_FB_router->parent_filter_block = static_cast<EButtonGroupFilterBlock*>(_parent);
 
 		d_container->match_mode_router_button = button_variant_FB_router;
@@ -16418,7 +16464,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 		/*************************************************************************************/
 
 		button_variant_FB_router->select_variant(0);
-		group_bottom_side_for_add->add_button_to_working_group(button_variant_FB_router);
+	
 
 	
 		//##//##//##//##//##	DESCRIPTION		//##//##//##//##//##//##//##//##
@@ -17089,6 +17135,8 @@ void EButtonGroupFilterBlockEditor::button_group_prechange()
 			//filter_block->disable_gabarite = filter_block->disable_gabarite || !filter_block->is_expanded;
 			//filter_block->disable_gabarite = !is_visible();
 		}
+
+		//filter_block->button_group_prechange();
 	}
 }
 
