@@ -334,7 +334,7 @@ public:
 	//bool hidden_by_search = false;
 	GroupSearchStatus group_search_status = GroupSearchStatus::SEARCH_STATUS_IGNORE;
 
-	virtual bool button_group_is_visible();
+	virtual bool is_this_group_active();
 
 	float shadow_size = 32.0f;
 
@@ -418,8 +418,11 @@ public:
 	virtual void button_group_update(float _d);
 	virtual void background_update(float _d);
 
+	void recursive_get_info();
+
 	//virtual void post_update(float _d);
 	virtual void draw_button_group();
+	virtual void draw_button_group_debug_overlay();
 	virtual void post_draw();
 	void draw_second_pass();
 
@@ -450,7 +453,7 @@ public:
 	static void refresh_button_group(EButtonGroup* _group);
 	static void refresh_button_group_forceful(EButtonGroup* _group);
 	static void change_group(EButtonGroup* _group);
-	static void change_group_first_pass(EButtonGroup* _group);
+	static void recursive_change_group_first_pass(EButtonGroup* _group);
 	static void change_group_second_pass(EButtonGroup* _group);
 	/*-----------------------------------*/
 
@@ -459,7 +462,7 @@ public:
 
 	void recalculate_culling_lines();
 	void recursive_recalculate_culling_lines();
-
+	void recursive_reset_phantom_translate();
 	void reset_buttons_phantom_translate();
 	void reset_slider();
 	void override_button_size();
@@ -599,7 +602,7 @@ public:
 
 	void translate_group(float _x, float _y, float _z, bool _affect_child);
 	void translate_group_content(float _x, float _y, float _z, bool _move_slider);
-	bool can_see_this_group();
+	bool is_in_visible_diapason();
 	void phantom_translate_if_need();
 	void recursive_phantom_translate_if_need();
 

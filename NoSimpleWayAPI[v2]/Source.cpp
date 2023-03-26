@@ -71,6 +71,18 @@ void register_debug_structs()
 	
 	DebugNamespace::NSW_registered_debug_struct[DebugStructID::HIGHEST_POINT_Y].icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_debug_show_highest_point_y");
 	DebugNamespace::NSW_registered_debug_struct[DebugStructID::HIGHEST_POINT_Y].localisation_text = ELocalisationText::get_localisation_by_key("debug_button_show_highest_point_y");
+	
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::ENTITY_GABARITES].icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_debug_show_entity_gabarites");
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::ENTITY_GABARITES].localisation_text = ELocalisationText::get_localisation_by_key("debug_button_show_entity_gabarites");
+	
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::DISABLE_GL_SCISSOR].icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_debug_disable_GL_SCISSOR");
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::DISABLE_GL_SCISSOR].localisation_text = ELocalisationText::get_localisation_by_key("debug_button_disable_gl_scissor");
+	
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::PHANTOM_HIGHLIGHT_FOR_GROUPS].icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_debug_highlight_phantom_draw");
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::PHANTOM_HIGHLIGHT_FOR_GROUPS].localisation_text = ELocalisationText::get_localisation_by_key("debug_button_highlight_groups");
+	
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::PHANTOM_HIGHLIGHT_FOR_BUTTONS].icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_debug_highlight_phantom_draw");
+	DebugNamespace::NSW_registered_debug_struct[DebugStructID::PHANTOM_HIGHLIGHT_FOR_BUTTONS].localisation_text = ELocalisationText::get_localisation_by_key("debug_button_highlight_buttons");
 
 	/////////////////////////////////////////////////////
 	{
@@ -101,7 +113,7 @@ void register_debug_structs()
 			*router_variant->localisation	= DebugNamespace::NSW_registered_debug_struct[i].localisation_text;
 			router_variant->texture = DebugNamespace::NSW_registered_debug_struct[i].icon;
 			router_variant->color = new HSVRGBAColor();
-			router_variant->color->set_color_RGBA(0.5f, 0.45f, 0.35f, 1.0f);
+			router_variant->color->set_color_RGBA(0.5f, 0.4f, 0.3f, 1.0f);
 
 			debug_button->router_variant_list.push_back(router_variant);
 			//
@@ -113,7 +125,7 @@ void register_debug_structs()
 			*router_variant->localisation	= DebugNamespace::NSW_registered_debug_struct[i].localisation_text;
 			router_variant->texture = DebugNamespace::NSW_registered_debug_struct[i].icon;
 			router_variant->color = new HSVRGBAColor();
-			router_variant->color->set_color_RGBA(0.2f, 0.8f, 0.4f, 1.0f);
+			router_variant->color->set_color_RGBA(0.2f, 1.0f, 0.4f, 1.0f);
 
 
 			debug_button->router_variant_list.push_back(router_variant);

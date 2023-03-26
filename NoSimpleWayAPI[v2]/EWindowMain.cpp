@@ -164,7 +164,7 @@ void EWindowMain::update_additional(float _d)
 	//{
 	//	for (EButtonGroup* group : loot_filter_editor->group_list)
 	//	{
-	//		if (group->button_group_is_visible())
+	//		if (group->is_this_group_active())
 	//		{
 	//			EInputCore::logger_param("World x", group->region_gabarite->world_position_x);
 	//			EInputCore::logger_param("World y", group->region_gabarite->world_position_y);
@@ -16858,10 +16858,10 @@ void EButtonGroupFilterBlock::post_draw()
 {
 	if
 		(
-			(button_group_is_visible())
+			(is_this_group_active())
 			&&
-			(can_see_this_group())
-			)
+			(is_in_visible_diapason())
+		)
 	{
 		EButtonGroup::post_draw();
 
@@ -16927,7 +16927,7 @@ void EButtonGroupFilterBlock::button_group_prechange()
 {
 }
 
-bool EButtonGroupFilterBlock::button_group_is_visible()
+bool EButtonGroupFilterBlock::is_this_group_active()
 {
 	//if (EButtonGroup::is_visible() && is_expanded && false)
 	//{
@@ -16938,7 +16938,7 @@ bool EButtonGroupFilterBlock::button_group_is_visible()
 	//	EInputCore::logger_simple_info("You are ebanutyi? NO");
 	//}
 
-	return EButtonGroup::button_group_is_visible() && (is_expanded || group_search_status == GroupSearchStatus::SEARCH_STATUS_MATCHED);
+	return EButtonGroup::is_this_group_active() && (is_expanded || group_search_status == GroupSearchStatus::SEARCH_STATUS_MATCHED);
 }
 
 EButtonGroupFilterBlockAsText* EButtonGroupFilterBlockAsText::create_filter_block_as_text_group(EButtonGroupFilterBlock* _target_filter_block)

@@ -318,7 +318,7 @@ public:
 	void button_group_update(float _d) override;
 	void button_group_prechange();
 
-	bool button_group_is_visible() override;
+	bool is_this_group_active() override;
 	bool is_expanded = false;
 	bool is_default_filter_block = false;
 	bool is_base_filter_block = false;

@@ -138,7 +138,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"drop level"	[value]"1"
-	[tag]"stack multiplier"	[value]"10"
+	[tag]"stack multiplier"	[value]"5"
 	[tag]"max stack size"	[value]"40"
 
 	[tag]"item width"	[value]"1"
@@ -152,6 +152,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Blacksmith's_Whetstone_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"stack multiplier"	[value]"5"
+	[tag]"max stack size"	[value]"20"
+
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"

@@ -244,10 +244,10 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 			||
 			(*static_cast<EntityButton*>(_entity)->suppressor)
 		)
-		||
-		(((EntityButton*)_entity)->button_gabarite->have_phantom_translation)
-		||
-		(((EntityButton*)_entity)->have_phantom_draw)
+		//||
+		//(((EntityButton*)_entity)->button_gabarite->have_phantom_translation)
+		//||
+		//(((EntityButton*)_entity)->have_phantom_draw)
 	)
 	{
 		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.15f);
@@ -2057,7 +2057,12 @@ void EClickableArea::draw()
 			}
 		}
 
-		if ((batcher_for_default_draw != nullptr) && (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT)))
+		if
+		(
+			(batcher_for_default_draw != nullptr)
+			&&
+			(DebugNamespace::is_debug_element_active(DebugStructID::ENTITY_GABARITES))
+		)
 		{
 			if (active_clickable_region == this)
 			{

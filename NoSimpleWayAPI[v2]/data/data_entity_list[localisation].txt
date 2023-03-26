@@ -331,6 +331,33 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Highest point y for content"
 	[tag]"name RU"		[value]"Наивысшая точка y для содержимого"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"debug_button_show_entity_gabarites"
+	[tag]"name EN"		[value]"Entity gabarites"
+	[tag]"name RU"		[value]"Габариты сущностей"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"debug_button_disable_gl_scissor"
+	[tag]"name EN"		[value]"Disable GL_SCISSOR"
+	[tag]"name RU"		[value]"Отключить GL_SCISSOR"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"debug_button_highlight_groups"
+	[tag]"name EN"		[value]"Highlight phantom redraw for groups"
+	[tag]"name RU"		[value]"Включить подсветку фантомной отрисовки для групп"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"debug_button_highlight_buttons"
+	[tag]"name EN"		[value]"Highlight phantom redraw for buttons"
+	[tag]"name RU"		[value]"Включить подсветку фантомной отрисовки для кнопок"
+	
 
 	
 	
