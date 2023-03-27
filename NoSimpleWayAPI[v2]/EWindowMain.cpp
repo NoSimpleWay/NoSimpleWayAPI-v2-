@@ -612,15 +612,15 @@ void EDataActionCollection::action_show_hide_cosmetic_blocks(Entity* _entity, EC
 
 	//but->parent_filter_block->pointer_to_cosmetic_segment	->is_active									= but->selected_variant;
 	but->parent_filter_block->pointer_to_sound_segment->button_group_is_active = but->selected_variant;
-	but->parent_filter_block->pointer_to_minimap_segment->button_group_is_active = but->selected_variant;
-	but->parent_filter_block->pointer_to_ray_segment->button_group_is_active = but->selected_variant;
+	but->parent_filter_block->pointer_to_minimap_and_ray_segment->button_group_is_active = but->selected_variant;
+	but->parent_filter_block->pointer_to_minimap_and_ray_segment->button_group_is_active = but->selected_variant;
 
 
 
 	//but->parent_filter_block->pointer_to_cosmetic_segment->region_gabarite->have_phantom_translation	= false;
 	but->parent_filter_block->pointer_to_sound_segment->region_gabarite->have_phantom_translation = false;
-	but->parent_filter_block->pointer_to_minimap_segment->region_gabarite->have_phantom_translation = false;
-	but->parent_filter_block->pointer_to_ray_segment->region_gabarite->have_phantom_translation = false;
+	but->parent_filter_block->pointer_to_minimap_and_ray_segment->region_gabarite->have_phantom_translation = false;
+	but->parent_filter_block->pointer_to_minimap_and_ray_segment->region_gabarite->have_phantom_translation = false;
 
 
 
@@ -4703,7 +4703,7 @@ EWindowMain::EWindowMain()
 		(
 			EButtonGroup::create_button_group_without_bg
 			(
-				new ERegionGabarite(300.0f, 46.0f),
+				new ERegionGabarite(350.0f, 46.0f),
 				EGUIStyle::active_style
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_static_autosize);
@@ -4759,6 +4759,101 @@ EWindowMain::EWindowMain()
 				hmanager.parent_button = jc_button;
 				jc_button->hotkey_list.push_back(hmanager);*/
 
+				top_section_left_part->add_button_to_working_group(jc_button);
+				//////////////////////////////////////////////////////
+
+				//////////////////////////////////////////////////////
+				jc_button = new EntityButtonForFilterBlock();
+
+				jc_button->make_as_default_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section_left_part,
+					nullptr,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_bulldozer_ear")
+				);
+
+				jc_button->force_field_right = 4.0f;
+				top_section_left_part->add_button_to_working_group(jc_button);
+				//////////////////////////////////////////////////////
+				// 
+				// 
+				//////////////////////////////////////////////////////
+
+				//////////////////////////////////////////////////////
+				jc_button = new EntityButtonForFilterBlock();
+
+				jc_button->make_as_default_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section_left_part,
+					nullptr,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_finger_watch_mode")
+				);
+
+				jc_button->force_field_right = 4.0f;
+				top_section_left_part->add_button_to_working_group(jc_button);
+				//////////////////////////////////////////////////////
+
+				//////////////////////////////////////////////////////
+				jc_button = new EntityButtonForFilterBlock();
+
+				jc_button->make_as_default_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section_left_part,
+					nullptr,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_snail_and_screwdriver")
+				);
+
+				jc_button->force_field_right = 4.0f;
+				top_section_left_part->add_button_to_working_group(jc_button);
+				//////////////////////////////////////////////////////
+				//////////////////////////////////////////////////////
+
+				//////////////////////////////////////////////////////
+				jc_button = new EntityButtonForFilterBlock();
+
+				jc_button->make_as_default_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section_left_part,
+					nullptr,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_ghost_at_scope")
+				);
+
+				jc_button->force_field_right = 4.0f;
+				top_section_left_part->add_button_to_working_group(jc_button);
+				//////////////////////////////////////////////////////
+
+				//////////////////////////////////////////////////////
+				jc_button = new EntityButtonForFilterBlock();
+
+				jc_button->make_as_default_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section_left_part,
+					nullptr,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_currency_crane")
+				);
+
+				jc_button->force_field_right = 4.0f;
+				top_section_left_part->add_button_to_working_group(jc_button);
+				//////////////////////////////////////////////////////
+				//////////////////////////////////////////////////////
+
+				//////////////////////////////////////////////////////
+				jc_button = new EntityButtonForFilterBlock();
+
+				jc_button->make_as_default_button_with_icon
+				(
+					new ERegionGabarite(45.0f, 45.0f),
+					top_section_left_part,
+					nullptr,
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_time_push_to_paper_clip")
+				);
+
+				jc_button->force_field_right = 32.0f;
 				top_section_left_part->add_button_to_working_group(jc_button);
 				//////////////////////////////////////////////////////
 
@@ -4865,6 +4960,24 @@ EWindowMain::EWindowMain()
 		button_activator->target_group = EWindowMain::info_button_group;
 		button_activator->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_I);
 		button_activator->force_field_right = 16.0f;
+		top_section_right_part->add_button_to_working_group(button_activator);
+		//////////////////////////////////////////////////////
+
+		/////////////		OPEN DEBUG WINDOW		///////////////////////
+		button_activator = new EntityButtonButtonGroupActivator();
+
+		button_activator->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(45.0f, 45.0f),
+			top_section_right_part,
+			&EDataActionCollection::action_set_button_group_as_active,
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_debug")
+		);
+		//button_activator->target_group = DebugNamespace::NSW_pointer_to_debug_window;
+		header_line->pointer_to_debug_button = button_activator;
+
+		button_activator->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_D);
+		//button_activator->force_field_right = 16.0f;
 		top_section_right_part->add_button_to_working_group(button_activator);
 		//////////////////////////////////////////////////////
 
@@ -8682,18 +8795,6 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	/*			SECONDARY COSMETIC SEGMENT GROUP		*/
 
-	//		RAY
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
-	EButtonGroup* ray_cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(156.0f, 160.0f), EGUIStyle::active_style)
-		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
-
-	ray_cosmetic_segment->button_group_is_active = false;
-	//ray_cosmetic_segment->disable_gabarite = true;
-
-	workspace_part->add_group(ray_cosmetic_segment);
-	whole_filter_block_group->pointer_to_ray_segment = ray_cosmetic_segment;
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
-
 	//		SOUND
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 	EButtonGroup*
@@ -8733,15 +8834,15 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//		MINIMAP ICON
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
-		minimap_cosmetic_segment
+		minimap_and_ray_cosmetic_segment
 		= EButtonGroup::create_default_button_group(new ERegionGabarite(156.0f, 160.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 
-	minimap_cosmetic_segment->button_group_is_active = false;
+	minimap_and_ray_cosmetic_segment->button_group_is_active = false;
 	//	minimap_cosmetic_segment->disable_gabarite = true;
 
-	workspace_part->add_group(minimap_cosmetic_segment);
-	whole_filter_block_group->pointer_to_minimap_segment = minimap_cosmetic_segment;
+	workspace_part->add_group(minimap_and_ray_cosmetic_segment);
+	whole_filter_block_group->pointer_to_minimap_and_ray_segment = minimap_and_ray_cosmetic_segment;
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -9167,7 +9268,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_FB_router->make_as_default_button_with_icon
 		(
 			new ERegionGabarite(124.0f, 22.0f),
-			minimap_cosmetic_segment,
+			minimap_and_ray_cosmetic_segment,
 			&EDataActionCollection::action_rotate_variant,
 			nullptr
 		);
@@ -9385,7 +9486,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_FB_router->select_variant(0);
 
 
-		minimap_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
+		minimap_and_ray_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		
@@ -9403,7 +9504,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_minimap_icon_suppressor->make_default_bool_switcher_button
 		(
 			new ERegionGabarite(22.0f, 22.0f),
-			minimap_cosmetic_segment,
+			minimap_and_ray_cosmetic_segment,
 			EDataActionCollection::action_switch_boolean_value,
 			NS_DefaultGabarites::texture_bool_switcher_activated_box,
 			NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
@@ -9418,7 +9519,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##//##
 
 
-		minimap_cosmetic_segment->add_button_to_working_group(button_minimap_icon_suppressor);
+		minimap_and_ray_cosmetic_segment->add_button_to_working_group(button_minimap_icon_suppressor);
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -9430,7 +9531,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_FB_router->make_as_default_button_with_icon
 		(
 			new ERegionGabarite(150.0f, 22.0f),
-			minimap_cosmetic_segment,
+			minimap_and_ray_cosmetic_segment,
 			&EDataActionCollection::action_rotate_variant,
 			nullptr
 		);
@@ -9500,7 +9601,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_FB_router->select_variant(0);
 
 
-		minimap_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
+		minimap_and_ray_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	}
@@ -9515,14 +9616,14 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_router->make_as_default_button_with_icon
 		(
 			new ERegionGabarite(150.0f, 41.0f),
-			minimap_cosmetic_segment,
+			minimap_and_ray_cosmetic_segment,
 			&EDataActionCollection::action_rotate_variant,
 			nullptr
 		);
 		button_variant_router->can_be_stretched = true;
 		button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
 		button_variant_router->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
-
+		button_variant_router->force_field_up = 16.0f;
 		jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], ELocalisationText::empty_localisation);
 		button_variant_router->pointer_to_text_area = jc_text_area;
 
@@ -9772,7 +9873,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_router->select_variant(0);
 
 
-		minimap_cosmetic_segment->add_button_to_working_group(button_variant_router);
+		minimap_and_ray_cosmetic_segment->add_button_to_working_group(button_variant_router);
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	}
 	/*=========================================================================*/
@@ -9950,7 +10051,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	button_variant_FB_router->make_as_default_button_with_icon
 	(
 		new ERegionGabarite(125.0f, 22.0f),
-		ray_cosmetic_segment,
+		minimap_and_ray_cosmetic_segment,
 		&EDataActionCollection::action_rotate_variant,
 		nullptr
 	);
@@ -10162,7 +10263,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	button_variant_FB_router->select_variant(0);
 
 
-	ray_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
+	minimap_and_ray_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	//font size switcher
@@ -10176,7 +10277,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	ray_bool_suppressor->make_default_bool_switcher_button
 	(
 		new ERegionGabarite(25.0f, 25.0f),
-		ray_cosmetic_segment,
+		minimap_and_ray_cosmetic_segment,
 		EDataActionCollection::action_switch_boolean_value,
 		NS_DefaultGabarites::texture_bool_switcher_activated_box,
 		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
@@ -10185,7 +10286,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	ray_bool_suppressor->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 	whole_filter_block_group->text_size_switch_button = ray_bool_suppressor;
 
-	ray_cosmetic_segment->add_button_to_working_group(ray_bool_suppressor);
+	minimap_and_ray_cosmetic_segment->add_button_to_working_group(ray_bool_suppressor);
 	// // // // // // //// // // // // // //// // // // // // //
 
 
@@ -10198,7 +10299,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	button_variant_FB_router->make_as_default_button_with_icon
 	(
 		new ERegionGabarite(150.0f, 22.0f),
-		ray_cosmetic_segment,
+		minimap_and_ray_cosmetic_segment,
 		&EDataActionCollection::action_rotate_variant,
 		nullptr
 	);
@@ -10256,7 +10357,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	button_variant_FB_router->select_variant(0);
 
 
-	ray_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
+	minimap_and_ray_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

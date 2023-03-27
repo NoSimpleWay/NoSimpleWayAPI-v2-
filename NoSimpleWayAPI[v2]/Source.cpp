@@ -87,10 +87,12 @@ void register_debug_structs()
 	/////////////////////////////////////////////////////
 	{
 		EButtonGroup*
-		whole_debug_group = new EButtonGroup(new ERegionGabarite(200.0f, 600.0f));
+		whole_debug_group = new EButtonGroup(new ERegionGabarite(260.0f, 600.0f));
 		whole_debug_group->init_as_root_group(EWindowMain::link_to_main_window);
 		EWindowMain::link_to_main_window->button_group_list.push_back(whole_debug_group);
 		whole_debug_group->move_to_foreground_and_center();
+
+		DebugNamespace::NSW_pointer_to_debug_window = whole_debug_group;
 
 		EButtonGroup* workspace_part = whole_debug_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);
 
@@ -156,9 +158,10 @@ void register_debug_structs()
 		}
 
 		EButtonGroup::refresh_button_group(whole_debug_group);
-		DebugNamespace::NSW_pointer_to_debug_window = whole_debug_group;
+		
 	}
 	/////////////////////////////////////////////////////
+
 }
 int main()
 {
@@ -210,10 +213,12 @@ int main()
 	NS_EGraphicCore::default_batcher_for_drawing->set_active_color(NS_EColorUtils::COLOR_WHITE);
 
 
+
 	EWindowMain::link_to_main_window = new EWindowMain();
 	EWindow::window_list.push_back(EWindowMain::link_to_main_window);
 
-
+	register_debug_structs();
+	EWindowMain::header_line->pointer_to_debug_button->target_group = DebugNamespace::NSW_pointer_to_debug_window;
 
 
 	srand(time(nullptr));
@@ -221,7 +226,7 @@ int main()
 
 
 
-	register_debug_structs();
+
 
 
 

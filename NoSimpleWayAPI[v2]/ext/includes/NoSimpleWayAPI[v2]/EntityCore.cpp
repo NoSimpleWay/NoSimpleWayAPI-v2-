@@ -1209,7 +1209,7 @@ void EntityButton::make_default_button_with_edible_text(ERegionGabarite* _region
 	main_text_area = jc_text_area;
 }
 
-void EntityButton::make_as_default_button_with_icon(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite)
+void EntityButton::make_as_default_button_with_icon(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _texture_gabarite)
 {
 
 
@@ -1217,31 +1217,40 @@ void EntityButton::make_as_default_button_with_icon(ERegionGabarite* _region_gab
 	
 	float region_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
 
-	if (_gabarite != nullptr)
+	if (_texture_gabarite != nullptr)
 	{
 
+		EBrickStyle*
+		brick_style = &parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG];
 
-		float resize_factor = 1.0f;
+		float
+		resize_factor = 1.0f;
 
-		resize_factor = region_size / (float)(max(_gabarite->size_x_in_pixels, _gabarite->size_y_in_pixels));
+		float
+		icon_size = max(_texture_gabarite->size_x_in_pixels, _texture_gabarite->size_y_in_pixels);
+		
+
+		//region_size -=  brick_style->offset_for_elements_bottom + brick_style->offset_for_elements_up;
+
+		resize_factor = region_size / icon_size;
 		resize_factor = min(resize_factor, 1.0f);
 
-		float offset_x = (region_size - (float)(_gabarite->size_x_in_pixels * resize_factor)) / 2.0f;
-		float offset_y = (region_size - (float)(_gabarite->size_y_in_pixels * resize_factor)) / 2.0f;
+		float offset_x = (region_size - (float)(_texture_gabarite->size_x_in_pixels * resize_factor)) / 2.0f;
+		float offset_y = (region_size - (float)(_texture_gabarite->size_y_in_pixels * resize_factor)) / 2.0f;
 
 
 		sprite_layer_list.push_back
 		(
 			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 			(
-				_gabarite,
+				_texture_gabarite,
 
 				round(offset_x),
 				round(offset_y),
 				0.0f,
 
-				round(_gabarite->size_x_in_pixels * resize_factor),
-				round(_gabarite->size_y_in_pixels * resize_factor),
+				round(_texture_gabarite->size_x_in_pixels * resize_factor),
+				round(_texture_gabarite->size_y_in_pixels * resize_factor),
 				0.0f
 			)
 		);
@@ -1252,7 +1261,7 @@ void EntityButton::make_as_default_button_with_icon(ERegionGabarite* _region_gab
 		(
 			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 			(
-				_gabarite,
+				_texture_gabarite,
 
 				round(offset_x),
 				round(offset_y),
@@ -1292,23 +1301,29 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 {
 	make_as_default_clickable_button(_region_gabarite, _parent_group, _dap);
 	
-	float min_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
+	float
+	region_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
+
+	region_size -= parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_bottom;
+	region_size -= parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_up;
 
 	if (_gabarite != nullptr)
 	{
 		int
-		max_size = max(_gabarite->size_x_in_pixels, _gabarite->size_y_in_pixels);
-		max_size = max(max_size, 4.0f);
+		icon_size = max(_gabarite->size_x_in_pixels, _gabarite->size_y_in_pixels);
+		icon_size = max(icon_size, 4.0f);
+
+
 
 		float
-		resize_factor = (_region_gabarite->size_y - 4.0f) / max_size;
+		resize_factor = region_size / icon_size;
 		resize_factor = min(resize_factor, 1.0f);
 
 		float icon_size_x = round(_gabarite->size_x_in_pixels * resize_factor);
 		float icon_size_y = round(_gabarite->size_y_in_pixels * resize_factor);
 
-		float offset_x = (_region_gabarite->size_y - icon_size_x) / 2.0f;
-		float offset_y = (_region_gabarite->size_y - icon_size_y) / 2.0f;
+		float icon_offset_x = (region_size - icon_size_x) / 2.0f + parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left;
+		float icon_offset_y = (region_size - icon_size_y) / 2.0f + parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_bottom;
 
 		sprite_layer_list.push_back
 		(
@@ -1316,12 +1331,12 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 			(
 				_gabarite,
 
-				offset_x,
-				offset_y,
+				parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left,
+				parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_bottom,
 				0.0f,
 
-				icon_size_x,
-				icon_size_y,
+				region_size,
+				region_size,
 				0.0f
 			)
 		);
@@ -1334,8 +1349,8 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 			(
 				_gabarite,
 
-				round(offset_x),
-				round(offset_y),
+				parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left,
+				parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_bottom,
 				0.0f,
 
 				_region_gabarite->size_y,

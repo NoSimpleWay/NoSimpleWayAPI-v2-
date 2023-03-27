@@ -1440,6 +1440,10 @@ void EDataActionCollection::action_set_button_group_as_active(Entity* _entity, E
 		//EDataContainer_Button_OpenButtonGroup* button_data = static_cast<EDataContainer_Button_OpenButtonGroup*>(_custom_data->data_container);
 		((EntityButtonButtonGroupActivator*)_entity)->target_group->activate_move_to_foreground_and_center();
 	}
+	else
+	{
+		EInputCore::logger_simple_error("target group is NULL");
+	}
 }
 
 void EDataActionCollection::action_switch_boolean_value(Entity* _entity, ECustomData* _custom_data, float _d)

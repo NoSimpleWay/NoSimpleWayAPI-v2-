@@ -356,17 +356,7 @@ void EWindow::GUI_update_default(float _d)
 		EButtonGroup* b_group = button_group_list[i];
 
 
-		//if (b_group->button_group_is_active)
-		{
-			//if ((b_group->need_recalcualte_culling_lines) || (EInputCore::key_pressed_once(GLFW_KEY_RIGHT_ALT)))
-			//{
-			//	//b_group->phantom_translate_if_need();
-			//	EButtonGroup::calculate_culling_lines(b_group, true);
-			//	b_group->need_recalcualte_culling_lines = false;
-			//}
-
-			b_group->background_update(_d);
-		}
+		b_group->background_update(_d);
 
 		//for (EButtonGroup* b_group : button_group_list)
 		if
@@ -397,24 +387,7 @@ void EWindow::GUI_update_default(float _d)
 
 	}
 
-	//for (int i = 0; i < button_group_list.size(); i++)
-	//{
-	//	if (button_group_list[i]->need_refresh)
-	//	{
-	//		//recursive_phantom_translate_if_need();
-	//		EButtonGroup::refresh_button_group(button_group_list[i]);
 
-	//		button_group_list[i]->need_refresh = false;
-	//	}
-
-	//	if (button_group_list[i]->need_change)
-	//	{
-	//		//recursive_phantom_translate_if_need();
-	//		EButtonGroup::change_group(button_group_list[i]);
-
-	//		button_group_list[i]->need_change = false;
-	//	}
-	//}
 }
 
 void EWindow::GUI_update_additional(float _d)
@@ -836,7 +809,6 @@ void EButtonGroup::button_group_update(float _d)
 
 	if (need_refresh)
 	{
-		//recursive_phantom_translate_if_need();
 		EButtonGroup::refresh_button_group(this);
 
 		need_refresh = false;
@@ -844,7 +816,6 @@ void EButtonGroup::button_group_update(float _d)
 
 	if (need_change)
 	{
-		//recursive_phantom_translate_if_need();
 		EButtonGroup::change_group(this);
 
 		need_change = false;
@@ -871,19 +842,7 @@ void EButtonGroup::button_group_update(float _d)
 		EButtonGroup::change_group(this);
 	}
 
-	//if (need_recalculate_culling_lines)
-	{
-		//recalculate_culling_lines();
 
-		//need_recalculate_culling_lines = false;
-	}
-
-	//if (need_recalcualte_culling_lines)
-	//{
-	//	//phantom_translate_if_need();
-	//	EButtonGroup::calculate_culling_lines(this, false);
-	//	//need_recalcualte_culling_lines = false;
-	//}
 
 	if
 		(
@@ -893,14 +852,8 @@ void EButtonGroup::button_group_update(float _d)
 		)
 	{
 
-		//
 		phantom_translate_if_need();
 
-		//if (parent_group != nullptr)
-		//{
-		//	lower_culling_line = max(region_gabarite->world_position_y, parent_group->lower_culling_line);
-		//	higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->size_y, parent_group->higher_culling_line);
-		//}
 
 		for (EntityButton* but : all_button_list)
 		{
@@ -1922,103 +1875,6 @@ void EButtonGroup::align_groups()
 
 
 }
-//void EButtonGroup::calculate_culling_lines(EButtonGroup* _group, bool _recursive)
-//{
-//	
-//
-//	if (_group->parent_group == nullptr)
-//	{
-//
-//
-//		_group->higher_culling_line = _group->region_gabarite->world_position_y + _group->region_gabarite->size_y;
-//		_group->lower_culling_line = _group->region_gabarite->world_position_y;
-//
-//		_group->higher_culling_line_for_bg = _group->region_gabarite->world_position_y + _group->region_gabarite->size_y;
-//		_group->lower_culling_line_for_bg = _group->region_gabarite->world_position_y;
-//
-//		//minimal_culling_line_top	= *higher_culling_line;
-//		//minimal_culling_line_bottom	= *lower_culling_line;
-//	}
-//
-//	if
-//		(
-//			(*_group->culling_lines_method == CullingLinesCalcMethod::CLCM_BY_HIMSELF)
-//			&&
-//			(_group->root_group != nullptr)
-//			)
-//	{
-//
-//
-//		_group->higher_culling_line = _group->region_gabarite->world_position_y + _group->region_gabarite->size_y;
-//		_group->lower_culling_line = _group->region_gabarite->world_position_y;
-//
-//		_group->higher_culling_line_for_bg = _group->region_gabarite->world_position_y + _group->region_gabarite->size_y;
-//		_group->lower_culling_line_for_bg = _group->region_gabarite->world_position_y;
-//	}
-//
-//
-//
-//	//for (EButtonGroupRow*	row:	_group->group_row_list)
-//	for (EButtonGroup* group : _group->group_list)
-//	{
-//		group->higher_culling_line_for_bg = min
-//		(
-//			group->region_gabarite->world_position_y + group->region_gabarite->size_y,
-//			_group->region_gabarite->world_position_y + _group->region_gabarite->size_y - _group->border_up
-//		);
-//
-//		group->higher_culling_line_for_bg = min
-//		(
-//			group->higher_culling_line_for_bg,
-//			_group->higher_culling_line_for_bg
-//		);
-//
-//
-//
-//		group->lower_culling_line_for_bg = max
-//		(
-//			group->region_gabarite->world_position_y,
-//			_group->region_gabarite->world_position_y + _group->border_bottom
-//		);
-//
-//		group->lower_culling_line_for_bg = max
-//		(
-//			group->lower_culling_line_for_bg,
-//			_group->lower_culling_line_for_bg
-//		);
-//
-//
-//
-//		group->higher_culling_line = min
-//		(
-//			group->region_gabarite->world_position_y + group->region_gabarite->size_y - group->border_up,
-//			_group->region_gabarite->world_position_y + _group->region_gabarite->size_y - _group->border_up
-//		);
-//
-//		group->higher_culling_line = min
-//		(
-//			group->higher_culling_line,
-//			_group->higher_culling_line
-//		);
-//
-//
-//		group->lower_culling_line = max(group->region_gabarite->world_position_y + group->border_bottom, _group->region_gabarite->world_position_y + _group->border_bottom);
-//		group->lower_culling_line = max(group->lower_culling_line, _group->lower_culling_line);
-//
-//		//EButtonGroup::calculate_culling_lines(group);
-//	}
-//
-//	if (_recursive)
-//	{
-//		for (EButtonGroup* group : _group->group_list)
-//		{
-//			//group->phantom_translate_if_need();
-//			EButtonGroup::calculate_culling_lines(group, true);
-//		}
-//	}
-//	//_group->need_recalcualte_culling_lines = false;
-//	//_group->need_recalcualte_culling_lines = false;
-//}
 
 void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _recursive)
 {
@@ -2519,13 +2375,13 @@ void EButtonGroup::recalculate_culling_lines()
 {
 	if (parent_group == nullptr)
 	{
-		lower_culling_line = region_gabarite->world_position_y + region_gabarite->phantom_translate_y;
+		lower_culling_line	= region_gabarite->world_position_y + region_gabarite->phantom_translate_y;
 		higher_culling_line = region_gabarite->world_position_y + region_gabarite->size_y + region_gabarite->phantom_translate_y;
 	}
 	else
 	{
-		lower_culling_line = max(region_gabarite->world_position_y + region_gabarite->phantom_translate_y, parent_group->lower_culling_line);
-		higher_culling_line = min(region_gabarite->world_position_y + region_gabarite->phantom_translate_y + region_gabarite->size_y, parent_group->higher_culling_line);
+		lower_culling_line	= max(region_gabarite->world_position_y + region_gabarite->phantom_translate_y, parent_group->lower_culling_line);
+		higher_culling_line	= min(region_gabarite->world_position_y + region_gabarite->phantom_translate_y + region_gabarite->size_y, parent_group->higher_culling_line);
 	}
 }
 
@@ -3210,23 +3066,7 @@ void EButtonGroup::set_offset_borders(EButtonGroup* _group, float _left, float _
 
 void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* _style)
 {
-	//_group->translate_child_elements
-	//(
-	//	_group->region_gabarite->phantom_translate_x,
-	//	_group->region_gabarite->phantom_translate_y,
-	//	_group->region_gabarite->phantom_translate_z
-	//);
 
-	//_group->region_gabarite->have_phantom_translation = false;
-
-	//_group->region_gabarite->phantom_translate_x = 0.0f;
-	//_group->region_gabarite->phantom_translate_y = 0.0f;
-	//_group->region_gabarite->phantom_translate_z = 0.0f;
-
-
-
-	//_group->need_redraw = true;
-	//_group->recursive_phantom_translate_if_need();
 
 	if (_group->can_change_style) { _group->selected_style = _style; }
 
@@ -3469,6 +3309,12 @@ void EButtonGroup::translate_group(float _x, float _y, float _z, bool _move_posi
 		region_gabarite->offset_z += (round(_z));
 	}
 
+
+	//higher_culling_line += round(_y);
+	//lower_culling_line += round(_y);
+		
+
+
 	if
 	(
 		(
@@ -3476,26 +3322,17 @@ void EButtonGroup::translate_group(float _x, float _y, float _z, bool _move_posi
 			&&
 			(is_in_visible_diapason())
 		)
-		||
-		(true)
 	)
 	{
-		{
-			region_gabarite->world_position_x += (round(_x));
-			region_gabarite->world_position_y += (round(_y));
-			region_gabarite->world_position_z += (round(_z));
-
-			//higher_culling_line += round(_y);
-			//lower_culling_line += round(_y);
-			
-
-
-			
-			recalculate_culling_lines();
-		}
 
 
 
+
+		region_gabarite->world_position_x += (round(_x));
+		region_gabarite->world_position_y += (round(_y));
+		region_gabarite->world_position_z += (round(_z));
+
+		recalculate_culling_lines();
 
 		translate_group_content(round(_x), round(_y), round(_z), true);
 	}
@@ -3510,10 +3347,10 @@ void EButtonGroup::translate_group(float _x, float _y, float _z, bool _move_posi
 			region_gabarite->phantom_translate_z += round(_z);
 		}
 
-		for (EButtonGroup* group : group_list)
-		{
-			group->translate_group(_x, _y, _z, false);
-		}
+		//for (EButtonGroup* group : group_list)
+		//{
+		//	group->translate_group(_x, _y, _z, false);
+		//}
 	}
 
 }
@@ -3526,13 +3363,20 @@ void EButtonGroup::translate_group_content(float _x, float _y, float _z, bool _m
 	//	EInputCore::logger_simple_error("content translate _y too big");
 	//}
 
-	if ((background_sprite_layer != nullptr) && (_move_slider))
-	{background_sprite_layer->translate_sprite_layer(_x, _y, _z, false);}
+
+
+		if ((background_sprite_layer != nullptr) && (_move_slider))
+		{
+			background_sprite_layer->translate_sprite_layer(_x, _y, _z, false);
+		}
 
 
 
-	for (EClickableArea* c_area : clickable_area_list)
-	{c_area->translate_clickable_region(_x, _y, _z, false);}
+		for (EClickableArea* c_area : clickable_area_list)
+		{
+			c_area->translate_clickable_region(_x, _y, _z, false);
+		}
+
 
 
 
@@ -3585,8 +3429,8 @@ bool EButtonGroup::is_in_visible_diapason()
 		(
 			//(is_active)
 			//&&
-			//(parent_group == nullptr)
-			//&&
+			(parent_group == nullptr)
+			&&
 			(region_gabarite->world_position_x + region_gabarite->phantom_translate_x <= NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom)
 			&&
 			(region_gabarite->world_position_x + region_gabarite->phantom_translate_x + region_gabarite->size_x > 0.0f)
@@ -3599,19 +3443,19 @@ bool EButtonGroup::is_in_visible_diapason()
 		return true;
 	}
 
-	//if
-	//(
-	//	//(is_active)
-	//	//&&
-	//	(parent_group != nullptr)
-	//	&&
-	//	(region_gabarite->world_position_y + region_gabarite->phantom_translate_y <= parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y)
-	//	&&
-	//	(region_gabarite->world_position_y + region_gabarite->size_y + region_gabarite->phantom_translate_y >= parent_group->region_gabarite->world_position_y)
-	//)
-	//{
-	//	return true;
-	//}
+	if
+	(
+		//(is_active)
+		//&&
+		(parent_group != nullptr)
+		&&
+		(region_gabarite->world_position_y + region_gabarite->phantom_translate_y <= parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y)
+		&&
+		(region_gabarite->world_position_y + region_gabarite->size_y + region_gabarite->phantom_translate_y >= parent_group->region_gabarite->world_position_y)
+	)
+	{
+		return true;
+	}
 
 	return false;
 
@@ -3624,6 +3468,14 @@ void EButtonGroup::phantom_translate_if_need()
 {
 	if (region_gabarite->have_phantom_translation)
 	{
+		recalculate_culling_lines();
+
+		region_gabarite->world_position_x += region_gabarite->phantom_translate_x;
+		region_gabarite->world_position_y += region_gabarite->phantom_translate_y;
+		region_gabarite->world_position_z += region_gabarite->phantom_translate_z;
+
+
+
 		translate_group_content
 		(
 			region_gabarite->phantom_translate_x,
