@@ -742,6 +742,35 @@ void EButtonGroup::recursive_close_process()
 	}
 }
 
+void EButtonGroup::destroy_all_vertex_buffer_data()
+{
+	for (EClickableArea* c_area : clickable_area_list)
+	for (ESpriteLayer* s_layer:c_area->sprite_layer_list)
+	{
+		s_layer->destroy_vertex_buffer();
+
+		if (c_area->text_area != nullptr)
+		{
+			c_area->text_area->sprite_layer->destroy_vertex_buffer();
+		}
+	}
+
+	if (background_sprite_layer != nullptr)
+	{
+		background_sprite_layer->destroy_vertex_buffer();
+	}
+
+	for (EntityButton* but : all_button_list)
+	{
+		but->destroy_all_vertex_buffer_data();
+	}
+
+	for (EButtonGroup* child : group_list)
+	{
+		child->destroy_all_vertex_buffer_data();
+	}
+}
+
 void EButtonGroup::button_group_update(float _d)
 {
 	//clickable_area->update(_d);
@@ -781,25 +810,25 @@ void EButtonGroup::button_group_update(float _d)
 	bool any_remove = false;
 
 	for (int i = 0; i < group_list.size(); i++)
-		if ((group_list[i] != nullptr) && (group_list[i]->need_remove))
+	if ((group_list[i] != nullptr) && (group_list[i]->need_remove))
+	{
+		if (!disable_deleting)
 		{
-			if (!disable_deleting)
-			{
-				//delete group_list[i];
-			}
-			EInputCore::logger_simple_success("Need remove [" + std::to_string(i) + "] child element of button group list");
-
-			group_list.erase(group_list.begin() + i);
-
-			i--;
-
-			//if (parent_group != nullptr)
-			//{
-			//	change_group(parent_group);
-			//}
-
-			any_remove = true;
+			delete group_list[i];
 		}
+		EInputCore::logger_simple_success("Need remove [" + std::to_string(i) + "] child element of button group list");
+
+		group_list.erase(group_list.begin() + i);
+
+		i--;
+
+		//if (parent_group != nullptr)
+		//{
+		//	change_group(parent_group);
+		//}
+
+		any_remove = true;
+	}
 
 	if (any_remove)
 	{
@@ -2248,7 +2277,12 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 {
 	_group->recursive_reset_phantom_translate();
 
-	if (_group->is_this_group_active())
+	if
+	(
+		(_group->is_this_group_active())
+		&&
+		((_group->is_in_visible_diapason()) || (true))
+	)
 	{
 		recursive_change_group_first_pass(_group);
 

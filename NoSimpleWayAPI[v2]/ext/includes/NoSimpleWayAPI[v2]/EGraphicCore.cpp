@@ -5116,15 +5116,15 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 {
 	if
+	(
+		(last_buffer_id > 0)
+		&&
 		(
-			(last_buffer_id > 0)
-			&&
-			(
-				(batcher != nullptr)
-				)
-			&&
-			(!disable_draw)
-			)
+			(batcher != nullptr)
+		)
+		&&
+		(!disable_draw)
+	)
 	{
 		//memcpy();
 		//std::cout << "-------" << std::endl;
@@ -5218,6 +5218,19 @@ void ESpriteLayer::sprite_layer_set_world_position(float _x, float _y, float _z)
 				spr->world_position_y = world_position_y + spr->offset_y;
 				spr->world_position_z = world_position_z + spr->offset_z;
 			}
+}
+
+void ESpriteLayer::destroy_vertex_buffer()
+{
+	if ((total_capacity > 0) && (vertex_buffer != nullptr))
+	{
+		//if (!disable_deleting)
+		{ delete[] vertex_buffer; }
+
+		vertex_buffer = nullptr;
+		total_capacity	= 0;
+		last_buffer_id	= 0;
+	}
 }
 
 ESpriteLayer* ESpriteLayer::create_default_sprite_layer(ETextureGabarite* _texture)

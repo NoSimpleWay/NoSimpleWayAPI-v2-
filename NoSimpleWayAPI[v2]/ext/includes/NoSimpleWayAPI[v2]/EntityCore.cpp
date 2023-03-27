@@ -176,6 +176,28 @@ void Entity::modify_buffer_translate_for_entity(float _x, float _y, float _z)
 
 }
 
+void Entity::destroy_all_vertex_buffer_data()
+{
+	for (ESpriteLayer* s_layer : sprite_layer_list)
+	{
+		s_layer->destroy_vertex_buffer();
+	}
+
+	for (ECustomData*		c_data:		custom_data_list)
+	for (EClickableArea*	c_area:		c_data->clickable_area_list)
+	{ 
+		if (c_area->text_area != nullptr)
+		{
+			c_area->text_area->sprite_layer->destroy_vertex_buffer();
+		}
+
+		for (ESpriteLayer*		s_layer:	c_area->sprite_layer_list)
+		{
+			s_layer->destroy_vertex_buffer();
+		}
+	}
+}
+
 void Entity::translate_entity(float _x, float _y, float _z, bool _move_positions)
 {
 

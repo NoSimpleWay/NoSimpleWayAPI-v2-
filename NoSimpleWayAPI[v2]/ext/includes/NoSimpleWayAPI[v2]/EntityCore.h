@@ -71,6 +71,8 @@ public:
 	void set_world_position_l(ERegionGabarite* _region_gabarite);
 
 	void modify_buffer_translate_for_entity(float _x, float _y, float _z);
+
+	void destroy_all_vertex_buffer_data();
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 
 	void translate_entity(float _x, float _y, float _z, bool _move_positions);

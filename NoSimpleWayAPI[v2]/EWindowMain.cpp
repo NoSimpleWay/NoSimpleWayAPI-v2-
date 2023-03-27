@@ -172,6 +172,16 @@ void EWindowMain::update_additional(float _d)
 	//		}
 	//	}
 	//}
+
+	if
+	(
+		(EInputCore::key_pressed(GLFW_KEY_LEFT_CONTROL))
+		&&
+		(EInputCore::key_pressed_once(GLFW_KEY_DELETE))
+	)
+	{
+		EWindowMain::loot_filter_editor->destroy_all_vertex_buffer_data();
+	}
 }
 
 void EDataActionCollection::action_select_this_text_variant(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -649,7 +659,9 @@ void EDataActionCollection::action_select_this_tab(Entity* _entity, ECustomData*
 {
 	EntityButtonFilterBlockTab* tab_button = static_cast<EntityButtonFilterBlockTab*>(_entity);
 
-
+	//for (EButtonGroup* group: EWindowMain::loot_filter_editor->group)
+	
+	EWindowMain::loot_filter_editor->destroy_all_vertex_buffer_data();
 
 	int id = -1;
 
@@ -4674,6 +4686,8 @@ EWindowMain::EWindowMain()
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
+		tab_list_group = bottom_tab_section;
+
 		header_line->pointer_to_bottom_tabs_section = bottom_tab_section;
 
 		EButtonGroup* top_section = main_button_group->add_group
@@ -5020,6 +5034,8 @@ EWindowMain::EWindowMain()
 		top_section_right_part->add_button_to_working_group(button_EN);
 		//////////////////////////////////////////////////////
 
+		//FILTER BLOCK TABS
+		//////////////////////////////////////////////////////
 		ELocalisationText l_text;
 		for (int i = 0; i < 5; i++)
 		{
@@ -5038,7 +5054,7 @@ EWindowMain::EWindowMain()
 
 			tab_button->main_text_area->localisation_text = l_text;
 
-			tab_list_group = bottom_tab_section;
+			
 			tab_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
 
 			tab_button->tab_id = i;
@@ -5048,7 +5064,6 @@ EWindowMain::EWindowMain()
 
 			if (i == 0) { bottom_tab_section->selected_button = tab_button; }
 		}
-
 		//////////////////////////////////////////////////////
 
 

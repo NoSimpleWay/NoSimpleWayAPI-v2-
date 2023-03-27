@@ -614,10 +614,12 @@ public:
 
 	void modify_buffer_position_for_sprite_layer(float _x, float _y, float _z);
 	void generate_vertex_buffer_for_sprite_layer(std::string _text);
+	void destroy_vertex_buffer();
 
 	void transfer_vertex_buffer_to_batcher();
 
 	void sprite_layer_set_world_position(float _x, float _y, float _z);
+
 
 	static ESpriteLayer* create_default_sprite_layer(ETextureGabarite* _texture);
 	void make_as_PBR();

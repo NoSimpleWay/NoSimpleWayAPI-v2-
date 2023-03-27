@@ -362,6 +362,8 @@ public:
 	void close_this_group();
 	void recursive_close_process();
 
+	void destroy_all_vertex_buffer_data();
+
 	//std::vector<EButtonGroupRow*> group_row_list;
 	//EButtonGroupRow* parent_group_row = nullptr;
 	std::vector<EButtonGroup*> group_list;

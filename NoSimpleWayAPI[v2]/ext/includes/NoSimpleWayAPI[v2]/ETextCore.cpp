@@ -509,11 +509,13 @@ void ETextArea::generate_text()
 			if (!disable_deleting)
 			{
 				delete sprite_layer->vertex_buffer;
+				sprite_layer->total_capacity = 0;
 			}
 		}
 
 
 		sprite_layer->vertex_buffer = new float[sprite_layer->batcher->gl_vertex_attribute_total_count * stored_text.length() * 4];
+		sprite_layer->total_capacity = sprite_layer->batcher->gl_vertex_attribute_total_count * stored_text.length() * 4;
 
 		int row_id = 0;
 		int id_for_stored_text_sym = 0;
