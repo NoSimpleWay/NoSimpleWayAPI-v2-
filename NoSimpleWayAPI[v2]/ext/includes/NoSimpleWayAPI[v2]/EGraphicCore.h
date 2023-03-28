@@ -113,6 +113,26 @@ namespace NS_ERenderCollection
 		ETextureGabarite* _normal
 	);
 
+	extern void add_data_to_vertex_buffer_rotated_square_PBR
+	(
+		float* _array,
+		unsigned int& _start_offset,
+		
+		float _x,
+		float _y,
+
+		float _w,
+		float _h,
+
+		float _rotation,
+		float _r_factor,
+
+		
+		ETextureGabarite* _texture,
+		ETextureGabarite* _gloss,
+		ETextureGabarite* _normal
+	);
+
 	extern void add_data_to_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture);
 
 	extern void add_data_to_vertex_buffer_rama(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _t, ETextureGabarite* _texture);

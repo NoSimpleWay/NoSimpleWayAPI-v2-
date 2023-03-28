@@ -3063,6 +3063,7 @@ void EButtonGroup::add_vertical_scroll_bar(EButtonGroup* _button_group)
 		//custom_data->actions_on_update.push_back(EDataActionCollection::action_update_slider);
 
 		//action on generate vertex buffer
+
 		but->action_on_generate_vertex_buffer.push_back(action_generate_vertex_for_vertical_slider);
 
 		//action on draw

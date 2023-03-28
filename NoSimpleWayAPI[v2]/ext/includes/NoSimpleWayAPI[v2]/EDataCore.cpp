@@ -69,6 +69,8 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 
 	}
 
+	//slider->degree += _d * 45.0f;
+
 	slider->current_value = *((float*)slider->pointer_to_target_value);
 
 	if ((EButtonGroup::focused_button_group_with_slider == slider->parent_button_group) && (EInputCore::scroll_direction != 0))
@@ -79,6 +81,43 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 	}
 
 	float total_value = slider->max_value - slider->min_value;
+
+	if (!NSW_APRIL_FOOL)
+	{
+		//left click drag
+		if
+			(
+				(EInputCore::MOUSE_BUTTON_LEFT)
+				&&
+				(EClickableArea::active_clickable_region == slider->main_clickable_area)
+				)
+		{
+
+			slider->scroll_speed = 0.0f;
+
+			slider->current_value = (EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom - slider->button_gabarite->world_position_y) / slider->workspace_height;
+			slider->current_value = slider->min_value + slider->current_value * total_value;
+		}
+	}
+	else
+	{
+		if
+			(
+				((EInputCore::MOUSE_BUTTON_LEFT) || (EInputCore::MOUSE_BUTTON_RIGHT))
+				&&
+				(EClickableArea::active_clickable_region == slider->main_clickable_area)
+				)
+		{
+			float addition = (EInputCore::MOUSE_BUTTON_LEFT) ? (1.0f) : (-1.0f);
+			slider->scroll_speed = addition * 64.0f * _d;
+
+
+			//slider->current_value += _d * 0.000000000f;
+			//slider->current_value = slider->min_value + slider->current_value * total_value;
+		}
+	}
+
+	
 	if
 	(
 		(
@@ -125,48 +164,45 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 
 		//float value = 0.0f;
 
-		//left click drag
-		if
-		(
-			(EInputCore::MOUSE_BUTTON_LEFT)
-			&&
-			(EClickableArea::active_clickable_region == slider->main_clickable_area)
-		)
-		{
-			slider->scroll_speed = 0.0f;
-
-			slider->current_value = (EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom - slider->button_gabarite->world_position_y) / slider->workspace_height;
-			slider->current_value = slider->min_value + slider->current_value * total_value;
-		}
+		
 
 
 		slider->current_value += slider->scroll_speed;
 		//slider->current_value = (slider->current_value);
 		
-		if
-		(
-			(slider->min_value < slider->max_value)
-			&&
-			(
-				(slider->current_value <= slider->min_value)
-				||
-				(slider->current_value >= slider->max_value)
-			)
-		)
-		{slider->scroll_speed = 0.0f;}
+		//RESET SCROLL SPEED ON BOUND VALUE
+		//if (!NSW_APRIL_FOOL)
+		{
+			if
+				(
+					(slider->min_value < slider->max_value)
+					&&
+					(
+						(slider->current_value <= slider->min_value)
+						||
+						(slider->current_value >= slider->max_value)
+					)
+				)
+			{
+				slider->scroll_speed = 0.0f;
+			}
 
-		if
-		(
-			(slider->min_value > slider->max_value)
-			&&
-			(
-				(slider->current_value >= slider->min_value)
-				||
-				(slider->current_value <= slider->max_value)
-			)
-		)
-		{slider->scroll_speed = 0.0f;}
+			if
+				(
+					(slider->min_value > slider->max_value)
+					&&
+					(
+						(slider->current_value >= slider->min_value)
+						||
+						(slider->current_value <= slider->max_value)
+						)
+					)
+			{
+				slider->scroll_speed = 0.0f;
+			}
+		}
 
+		slider->degree += slider->scroll_speed * 10.0f;
 		//clamp border values
 		slider->current_value = std::clamp(slider->current_value, min(slider->min_value, slider->max_value), max(slider->min_value, slider->max_value));
 
@@ -1036,21 +1072,57 @@ void EDataActionCollection::action_draw_vertical_named_slider(Entity* _entity, E
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::pbr_batcher, 1);
 
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
-		NS_ERenderCollection::add_data_to_vertex_buffer_texture_gabarite_PBR
-		(
-			NS_EGraphicCore::pbr_batcher->vertex_buffer,
-			NS_EGraphicCore::pbr_batcher->last_vertice_buffer_index,
+		if (!NSW_APRIL_FOOL)
+		{
+			NS_ERenderCollection::add_data_to_vertex_buffer_texture_gabarite_PBR
+			(
+				NS_EGraphicCore::pbr_batcher->vertex_buffer,
+				NS_EGraphicCore::pbr_batcher->last_vertice_buffer_index,
 
-			slider->world_position_x,
-			slider->world_position_y + slider->workspace_height * slider->current_value_percent,
+				slider->world_position_x,
+				slider->world_position_y + slider->workspace_height * slider->current_value_percent,
 
-			slider->slider_inactive->main_texture->size_x_in_pixels,
-			slider->slider_inactive->main_texture->size_y_in_pixels,
+				slider->slider_inactive->main_texture->size_x_in_pixels,
+				slider->slider_inactive->main_texture->size_y_in_pixels,
 
-			slider->slider_inactive->main_texture,
-			slider->slider_inactive->gloss_map_texture,
-			slider->slider_inactive->normal_map_texture
-		);
+				slider->slider_inactive->main_texture,
+				slider->slider_inactive->gloss_map_texture,
+				slider->slider_inactive->normal_map_texture
+			);
+		}
+		else
+		{
+			float subdegree = 0.0f;
+			if (slider->slider_inactive->main_texture->size_y_in_pixels >= slider->slider_inactive->main_texture->size_x_in_pixels)
+			{
+				subdegree = slider->slider_inactive->main_texture->size_x_in_pixels / slider->slider_inactive->main_texture->size_y_in_pixels * 45.0f;
+			}
+			else
+			{
+				subdegree = 90.0f - slider->slider_inactive->main_texture->size_y_in_pixels / slider->slider_inactive->main_texture->size_x_in_pixels * 45.0f;
+			}
+
+			subdegree = 45.0f;
+
+			NS_ERenderCollection::add_data_to_vertex_buffer_rotated_square_PBR
+			(
+				NS_EGraphicCore::pbr_batcher->vertex_buffer,
+				NS_EGraphicCore::pbr_batcher->last_vertice_buffer_index,
+
+				slider->world_position_x,
+				slider->world_position_y,
+
+				slider->slider_active->main_texture->size_x_in_pixels,
+				slider->slider_active->main_texture->size_y_in_pixels,
+
+				slider->degree,
+				subdegree,
+
+				slider->slider_active->main_texture,
+				slider->slider_active->gloss_map_texture,
+				slider->slider_active->normal_map_texture
+			);
+		}
 	}
 	else
 	{

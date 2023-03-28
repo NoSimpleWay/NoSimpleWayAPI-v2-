@@ -556,7 +556,7 @@ public:
 
 	float scroll_speed = 0.0f;
 
-
+	float degree = 0.0f;
 
 };
 

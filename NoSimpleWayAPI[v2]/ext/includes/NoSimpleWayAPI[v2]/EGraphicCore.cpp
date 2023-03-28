@@ -3620,6 +3620,102 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_texture_fragment_PBR(float*
 	}
 }
 
+void NS_ERenderCollection::add_data_to_vertex_buffer_rotated_square_PBR(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _rotation, float _r_factor, ETextureGabarite* _texture, ETextureGabarite* _gloss, ETextureGabarite* _normal)
+{
+	{
+		float l = sqrt(_w * _w + _h * _h) * 0.5f;
+		//address arithmetic, get pointer to buffer array, and move to +_offset
+		_array += _start_offset;
+		_r_factor = 45.0f;
+		//.#
+		//..
+		//[!][!][!]WARNING![!][!][!] It not "[0][1][2]..." index, it "[_start_offset + 0][_start_offset + 1][_start_offset + 2]..." index, see address arithmetic above
+		_array[0] = _x + _w / 2.0f + sinf((45.0f + _rotation) * 0.017453f) * l;
+		_array[1] = _y + _h / 2.0f + cosf((45.0f + _rotation) * 0.017453f) * l;
+		_array[2] = 0.0f;
+
+		_array[3] = NS_EGraphicCore::active_color[0];
+		_array[4] = NS_EGraphicCore::active_color[1];
+		_array[5] = NS_EGraphicCore::active_color[2];
+		_array[6] = NS_EGraphicCore::active_color[3];
+
+		_array[7] = _texture->uv_end_x;
+		_array[8] = _texture->uv_end_y;
+
+		_array[9] = _normal->uv_end_x;
+		_array[10] = _normal->uv_end_y;
+
+		_array[11] = _gloss->uv_end_x;
+		_array[12] = _gloss->uv_end_y;
+
+		//..
+		//.#
+		_array[13] = _x + _w / 2.0f + sinf((135.0 + _rotation) * 0.017453f) * l;
+		_array[14] = _y + _h / 2.0f + cosf((135.0 + _rotation) * 0.017453f) * l;
+		_array[15] = 0.0f;
+
+		_array[16] = NS_EGraphicCore::active_color[0];
+		_array[17] = NS_EGraphicCore::active_color[1];
+		_array[18] = NS_EGraphicCore::active_color[2];
+		_array[19] = NS_EGraphicCore::active_color[3];
+
+		_array[20] = _texture->uv_end_x;
+		_array[21] = _texture->uv_start_y;
+
+		_array[22] = _normal->uv_end_x;
+		_array[23] = _normal->uv_start_y;
+
+		_array[24] = _gloss->uv_end_x;
+		_array[25] = _gloss->uv_start_y;
+
+		//..
+		//#.
+		_array[26] = _x + _w / 2.0f + sinf((225.0f + _rotation) * 0.017453f) * l;
+		_array[27] = _y + _h / 2.0f + cosf((225.0f + _rotation) * 0.017453f) * l;
+		_array[28] = 0.0f;
+
+		_array[29] = NS_EGraphicCore::active_color[0];
+		_array[30] = NS_EGraphicCore::active_color[1];
+		_array[31] = NS_EGraphicCore::active_color[2];
+		_array[32] = NS_EGraphicCore::active_color[3];
+
+		_array[33] = _texture->uv_start_x;
+		_array[34] = _texture->uv_start_y;
+
+		_array[35] = _normal->uv_start_x;
+		_array[36] = _normal->uv_start_y;
+
+		_array[37] = _gloss->uv_start_x;
+		_array[38] = _gloss->uv_start_y;
+
+		//#.
+		//..
+		_array[39] = _x + _w / 2.0f + sinf((315.0f + _rotation) * 0.017453f) * l;
+		_array[40] = _y + _h / 2.0f + cosf((315.0f + _rotation) * 0.017453f) * l;
+		_array[41] = 0.0f;
+
+		_array[42] = NS_EGraphicCore::active_color[0];
+		_array[43] = NS_EGraphicCore::active_color[1];
+		_array[44] = NS_EGraphicCore::active_color[2];
+		_array[45] = NS_EGraphicCore::active_color[3];
+
+		_array[46] = _texture->uv_start_x;
+		_array[47] = _texture->uv_end_y;
+
+		_array[48] = _normal->uv_start_x;
+		_array[49] = _normal->uv_end_y;
+
+		_array[50] = _gloss->uv_start_x;
+		_array[51] = _gloss->uv_end_y;
+
+		_start_offset += 52;
+	}
+}
+
+//void NS_ERenderCollection::add_data_to_vertex_buffer_rotated_square(float* _array, unsigned int& _start_offset, float _x, float _y, float _w, float _h, float _rotation, ETextureGabarite* _texture)
+//{
+//}
+
 void NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_size(float* _array, unsigned int& _start_offset, float _x, float _y, ETextureGabarite* _texture)
 {
 	//address arithmetic, get pointer to buffer array, and move to +_offset

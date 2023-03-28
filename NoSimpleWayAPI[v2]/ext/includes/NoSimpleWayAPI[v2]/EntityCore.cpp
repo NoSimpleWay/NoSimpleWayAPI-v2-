@@ -1927,7 +1927,7 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 	EntityButtonVerticalSlider*
 	slider = static_cast<EntityButtonVerticalSlider*>(_but);
 	slider->workspace_height = total_group_height - _style->brick_style[BrickStyleID::SLIDER_INACTIVE].main_texture->size_y_in_pixels;
-	slider->slider_active = &_style->brick_style[BrickStyleID::SLIDER_INACTIVE];
+	slider->slider_active = &_style->brick_style[BrickStyleID::SLIDER_ACTIVE];
 	slider->slider_inactive = &_style->brick_style[BrickStyleID::SLIDER_INACTIVE];
 
 	if (_but->parent_button_group->child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)
