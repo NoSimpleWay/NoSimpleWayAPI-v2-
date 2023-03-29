@@ -765,6 +765,8 @@ void EButtonGroup::destroy_all_vertex_buffer_data()
 		but->destroy_all_vertex_buffer_data();
 	}
 
+	group_phantom_redraw = false;
+
 	for (EButtonGroup* child : group_list)
 	{
 		child->destroy_all_vertex_buffer_data();
@@ -3072,7 +3074,6 @@ void EButtonGroup::add_vertical_scroll_bar(EButtonGroup* _button_group)
 		//action on update
 		but->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_update_vertical_slider);
 
-
 		but->pointer_to_target_value = &_button_group->scroll_y;
 		//_button_group->scroll_y = 99999.9f;
 		but->current_value_percent = 1.0f;
@@ -3672,6 +3673,7 @@ void EButtonGroup::add_default_clickable_region_with_text_area(ELocalisationText
 	new_text_area->localisation_text = _text;
 	new_text_area->parent_group = this;
 	new_text_area->can_be_edited = false;
+	new_text_area->change_text(new_text_area->original_text);
 
 	new_clickable_area->text_area = new_text_area;
 }
@@ -3697,14 +3699,14 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 
 	root_group = this;
 	button_group_is_active = false;
-	can_change_position_in_vector = false;
+	//can_change_position_in_vector = false;
 
 
 
 
 	pointer_to_workspace_part = add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
 	pointer_to_workspace_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-
+	add_caption_by_localistation_key("window_header_confirm_action");
 
 	EButtonGroup*
 		bottom_part_for_buttons = pointer_to_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(250.0f, 30.0f)));
@@ -3945,8 +3947,10 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	main_group->actions_on_update.push_back(&EDataActionCollection::action_convert_HSV_to_RGB);
 
 
-	EButtonGroup* workspace_group = main_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), _style);
+	EButtonGroup*
+	workspace_group = main_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), _style);
 	workspace_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+	main_group->add_caption_by_localistation_key("window_header_color_editor");
 
 	EDataContainer_Group_ColorEditor* data = new EDataContainer_Group_ColorEditor();
 	data->work_color = HRA_color;
@@ -4135,6 +4139,7 @@ EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGa
 			_style
 		);
 
+	close_section = close_group;
 	close_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	close_group->stretch_x_by_parent_size = true;
 	close_group->dynamic_size_y = false;
@@ -4150,7 +4155,7 @@ EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGa
 				_style
 			)
 		);
-
+	close_section_left_part = close_group_left;
 	close_group_left->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	close_group_left->stretch_x_by_parent_size = true;
 	close_group_left->dynamic_size_y = true;
@@ -4202,6 +4207,15 @@ EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGa
 
 
 	return workspace_group;
+}
+
+void EButtonGroup::add_caption_by_localistation_key(std::string _key)
+{
+	if (close_section_left_part != nullptr)
+	{
+		close_section_left_part->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key(_key));
+		close_section_left_part->clickable_area_list[0]->text_area->font = EFont::font_list[1];
+	}
 }
 
 EButtonGroup* EButtonGroup::create_base_button_group(ERegionGabarite* _region, EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg)

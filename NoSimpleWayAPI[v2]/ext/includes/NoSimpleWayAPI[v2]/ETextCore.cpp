@@ -484,13 +484,13 @@ void ETextArea::generate_text()
 
 
 	if
-		(
-			(sprite_layer != nullptr)
-			&&
-			(region_gabarite != nullptr)
-			&&
-			(font != nullptr)
-			)
+	(
+		(sprite_layer != nullptr)
+		&&
+		(region_gabarite != nullptr)
+		&&
+		(font != nullptr)
+	)
 	{
 		//if (*selected_color_table == TextColorArray::FREE)
 		if (!indicate_gray_text)
@@ -753,16 +753,39 @@ float ETextArea::get_row_width(std::string* _row)
 
 float ETextArea::get_text_width(std::string* _text)
 {
-	float total_width = 0.0f;
+	float total_width	= 0.0f;
+	float temp_width = 0.0f;
 
 	for (int i = 0; i < _text->size(); i++)
 	{
 		int sym_id = (int)(_text->at(i));
 		if (sym_id <= 0) { sym_id += 256; }
 
-		total_width += font->advance[sym_id];
-		if (_text->at(i) == ' ') { total_width += 5.0f; }
+		temp_width += font->advance[sym_id];
+		if (_text->at(i) == ' ') { temp_width += 5.0f; }
+
+		if
+		(
+			(_text->at(i) == '\n')
+			||
+			(
+				(i + 1 < _text->size())
+				&&
+				(_text->substr(i, 2) == "\\n")
+			)
+		)
+		{
+			total_width = max(total_width, temp_width);
+			temp_width = 0.0f;
+
+			if (_text->at(i) == '\\')
+			{
+				i++;
+			}
+		}
 	}
+
+	total_width = max(total_width, temp_width);
 
 	return total_width;
 }

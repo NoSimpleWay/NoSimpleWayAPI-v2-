@@ -72,7 +72,7 @@ public:
 
 	void modify_buffer_translate_for_entity(float _x, float _y, float _z);
 
-	void destroy_all_vertex_buffer_data();
+	virtual void destroy_all_vertex_buffer_data();
 	//\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\////\\//\\//\\//
 
 	void translate_entity(float _x, float _y, float _z, bool _move_positions);
@@ -133,7 +133,14 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 struct HRA_color_collection;
 class EntityButtonColorButton;
 
+struct EStringReplacer
+{
+public:
+	EStringReplacer(std::string _what_replaced, std::string _result_string);
 
+	std::string what_replaced = "";
+	std::string result_string = "";
+};
 class EntityButton;
 struct DescriptionContainer
 {
@@ -150,6 +157,10 @@ public:
 
 	EntityButton*	parent_button;
 	EClickableArea*	parent_clickable_area;
+
+	std::vector<EStringReplacer> replacer_list;
+
+
 };
 
 struct DescriptionContainerDefault : public DescriptionContainer
@@ -202,7 +213,7 @@ public:
 	bool can_be_stretched			= false;
 	bool entity_is_active();
 
-
+	void destroy_all_vertex_buffer_data() override;
 
 	DescriptionContainer*
 	description_container			= nullptr;
@@ -245,6 +256,7 @@ public:
 
 	static void				button_generate_brick_bg(EntityButton* _button, EGUIStyle* _style);
 
+	void add_default_description_by_key(std::string _key);
 
 	void init
 	(

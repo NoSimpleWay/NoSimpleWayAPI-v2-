@@ -391,6 +391,7 @@ public:
 	int data_entity_id = 0;
 
 	EntityButton* main_input_field;
+	EntityButton* add_as_item_button;
 
 	EButtonGroup* main_left_side = nullptr;
 	EButtonGroup* right_side_for_filters = nullptr;

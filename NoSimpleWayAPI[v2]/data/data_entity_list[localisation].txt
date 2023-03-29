@@ -351,6 +351,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"debug_button_highlight_groups"
 	[tag]"name EN"		[value]"Highlight phantom redraw for groups"
 	[tag]"name RU"		[value]"Включить подсветку фантомной отрисовки для групп"
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
@@ -358,6 +359,286 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Highlight phantom redraw for buttons"
 	[tag]"name RU"		[value]"Включить подсветку фантомной отрисовки для кнопок"
 	
-
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_select_GUI_style"
+	[tag]"name EN"		[value]"Select GUI style"
+	[tag]"name RU"		[value]"Выберете стиль интерфейса"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_joke_AD"
+	[tag]"name EN"		[value]"Аdvertisement"
+	[tag]"name RU"		[value]"Реклама"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_create_new_loot_filter"
+	[tag]"name EN"		[value]"Creating new loot filter"
+	[tag]"name RU"		[value]"Создание нового лут-фильтра"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_data_entity"
+	[tag]"name EN"		[value]"Data entity collection"
+	[tag]"name RU"		[value]"Коллекция сущностей-объектов"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_world_parameters"
+	[tag]"name EN"		[value]"Enviroment parameters"
+	[tag]"name RU"		[value]"Параметры окружения"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_loot_simulator"
+	[tag]"name EN"		[value]"Loot simulator"
+	[tag]"name RU"		[value]"Симулятор лута"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_add_content_to_filter_block"
+	[tag]"name EN"		[value]"Add content to filter block"
+	[tag]"name RU"		[value]"Добавить что-либо в блок лут-фильтра"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_alternate_quality"
+	[tag]"name EN"		[value]"Alternate quality"
+	[tag]"name RU"		[value]"Альтернативное качество"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_select_sound"
+	[tag]"name EN"		[value]"Sound list"
+	[tag]"name RU"		[value]"Список звуков"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_loot_filters_list"
+	[tag]"name EN"		[value]"Loot-filter list"
+	[tag]"name RU"		[value]"Список лут-фильтров"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_info"
+	[tag]"name EN"		[value]"Program info"
+	[tag]"name RU"		[value]"Информация о программе"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_confirm_action"
+	[tag]"name EN"		[value]"Confirm action"
+	[tag]"name RU"		[value]"Подтвердите действие"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_color_editor"
+	[tag]"name EN"		[value]"Color editor"
+	[tag]"name RU"		[value]"Редактор цвета"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_debug_window"
+	[tag]"name EN"		[value]"Debug window"
+	[tag]"name RU"		[value]"Окно отладки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_filter_block_search"
+	[tag]"name EN"		[value]"Filter blocks by typed text"
+	[tag]"name RU"		[value]"Напишите текст, что бы найти подходящие под него блоки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_remove_text"
+	[tag]"name EN"		[value]"Remove text"
+	[tag]"name RU"		[value]"Убрать текст"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_expand_all_separators"
+	[tag]"name EN"		[value]"Expand add separators in filter block editor\n(separator is special block for grouping)"
+	[tag]"name RU"		[value]"Развернуть все разделители в редакторе лут-фильтра\n(Разделители - это специальные блоки для группировки блоков)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_shrink_all_separators"
+	[tag]"name EN"		[value]"Shrink add separators in filter block editor\n(separator is special block for grouping)"
+	[tag]"name RU"		[value]"Свернуть все разделители в редакторе лут-фильтра\n(Разделители - это специальные блоки для группировки блоков)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_show_cosmetic_section"
+	[tag]"name EN"		[value]"Show or hide additional section, where you can edit:\n\nMinimap icon\nSounds\nLoot ray"
+	[tag]"name RU"		[value]"Показать или скрыть дополнительную секцию, в которой вы сможете отредактировать:\n\nИконки миникарты\nЗвуки\nЦвет луча"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_sound_mono_or_stereo"
+	[tag]"name EN"		[value]"Determines, how play drop sound:\n\nPositional: sound play in stereo mode\nNot positional: sound play in mono mode"
+	[tag]"name RU"		[value]"Определяет, как будет воспроизводиться звук:\n\nПозиционный: звук будет воспроизведён в стерео режиме\nНе позиционный: звук будет воспроизведён в моно режиме"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_sound_volume"
+	[tag]"name EN"		[value]"Determines how loud the drop sounds will be"
+	[tag]"name RU"		[value]"Определяет, насколько громкими будут звуки дропа"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_drop_sound_play_mode"
+	[tag]"name EN"		[value]"How game must play default drop sound:\n\nDefault: do not change\nEnable: play default drop sound\nDisable: do not play default drop sound\nDisable if alert sound: do not play default sound, if block have any custom cound\Enable if alert sound: play default sound, if block have any custom cound"
+	[tag]"name RU"		[value]"Как игра должна воспроизводить звуки дропа по умолчанию:\n\nОбычный: без изменений\nВключён: воспроизводить звук по умолчанию\nОтключён: не воспроизводить звук по умолчанию\nВыключен при условии: не воспроизводить звук по умолчанию, если есть любой дополнительный звук\nВключён с условиями: воспроизвести звук, если есть любой дополнительный звук"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_minimap_color"
+	[tag]"name EN"		[value]"Determines color of minimap icon"
+	[tag]"name RU"		[value]"Определяет цвет иконки на миникарте"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_switch_minimap_icon"
+	[tag]"name EN"		[value]"Disable/enable minimap icon"
+	[tag]"name RU"		[value]"Включает/выключает отображение иконки на миникарте"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_switch_minimap_icon"
+	[tag]"name EN"		[value]"Disable/enable minimap icon"
+	[tag]"name RU"		[value]"Включает/выключает отображение иконки на миникарте"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_add_search_text_as_item"
+	[tag]"name EN"		[value]"Add '%a' as item"
+	[tag]"name RU"		[value]"Добавляет предмет со следующим названием: '%a'"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_select_this_style"
+	[tag]"name EN"		[value]"Select this style"
+	[tag]"name RU"		[value]"Выбрать этот стиль"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_data_entity_search"
+	[tag]"name EN"		[value]"Search specific data entity"
+	[tag]"name RU"		[value]"Позволяет отфильтровать предметы по названию.\nПоддерживается Русский и Английский язык одновременно"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_add_all_items"
+	[tag]"name EN"		[value]"Add all items to filter block"
+	[tag]"name RU"		[value]"Добавляет все предметы в блок лут-фильтра"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_loot_simulator_pattern"
+	[tag]"name EN"		[value]"Generate loot according to this pattern"
+	[tag]"name RU"		[value]"Генерирует предметы согласно этому шаблону"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_which_what_loot_filter_version_must_be_used"
+	[tag]"name EN"		[value]"Determines which version of the loot filter should be used"
+	[tag]"name RU"		[value]"Определяет, какой версией лут фильтра следует руководствоваться"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_area_level_input"
+	[tag]"name EN"		[value]"Determines level of area and level of drop"
+	[tag]"name RU"		[value]"Определяет уровень области, и уровень генерируемых вещей"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_MF_factor"
+	[tag]"name EN"		[value]"Determines quantity, rarity, sockets and links count for generated items"
+	[tag]"name RU"		[value]"Определяет количество, редкость, количество гнёзд и связей, для генерируемых предметов"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_new_loot_filter"
+	[tag]"name EN"		[value]"Create new loot filter (CTRL + N)"
+	[tag]"name RU"		[value]"Создаёт новый лутфильтр (CTRL + N)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_open_loot_filter"
+	[tag]"name EN"		[value]"Load loot filter from drive (CTRL + O)"
+	[tag]"name RU"		[value]"Загрузить лут-фильтр с диска (CTRL + O)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_save_loot_filter"
+	[tag]"name EN"		[value]"Save loot filter (CTRL + S)"
+	[tag]"name RU"		[value]"Сохранить лут-фильтр (CTRL + S)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_open_loot_simulator"
+	[tag]"name EN"		[value]"Open loot simulator window (CTRL + L"
+	[tag]"name RU"		[value]"Открыть окно симулятора лута (CTRL + L)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_open_world_parameters"
+	[tag]"name EN"		[value]"Open world parameters window (CTRL + W"
+	[tag]"name RU"		[value]"Открыть окно настроек окружения (CTRL + W)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_open_info_window"
+	[tag]"name EN"		[value]"Open the information window in which you can find out about the resources used, as well as information about feedback (CTRL + O)"
+	[tag]"name RU"		[value]"Открыть окно информации, в котором вы сможете узнать об использованных ресурсах, а так же информацию об обратной связи (CTRL + O)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_open_info_window"
+	[tag]"name EN"		[value]"Open the debug window in which you can configue debug elements (CTRL + D)"
+	[tag]"name RU"		[value]"Открыть окно отладки, в котором вы сможете изменить различные параметры, на случай, если программа будет работать некорректно (CTRL + D)"
 	
 	

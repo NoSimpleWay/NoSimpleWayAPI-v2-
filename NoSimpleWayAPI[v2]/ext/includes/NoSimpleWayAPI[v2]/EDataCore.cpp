@@ -530,6 +530,9 @@ void EDataActionCollection::action_type_search_data_entity_text(ETextArea* _text
 				EInputCore::logger_simple_error("filter rule is NULL!");
 			}
 		}
+
+		data_container->pointer_to_add_as_item_button->description_container->replacer_list.clear();
+		data_container->pointer_to_add_as_item_button->description_container->replacer_list.push_back(EStringReplacer("%a", _text_area->original_text));
 	}
 	else
 	{

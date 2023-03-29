@@ -493,6 +493,13 @@ bool EntityButton::entity_is_active()
 	return ((Entity::entity_is_active()) && (!button_hidden_by_search));
 }
 
+void EntityButton::destroy_all_vertex_buffer_data()
+{
+	Entity::destroy_all_vertex_buffer_data();
+
+	have_phantom_draw = false;
+}
+
 void EntityButton::add_hotkey(int _key_main, int _key_secondary)
 {
 	EHotKeyManager hmanager;
@@ -558,6 +565,14 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 		);
 	}
 	//_button->sprite_layer_list.pu
+}
+
+void EntityButton::add_default_description_by_key(std::string _key)
+{
+	
+	description_container = new DescriptionContainerDefault(800.0f, 120.0f);
+	description_container->localisation_text = ELocalisationText::get_localisation_by_key(_key);
+	description_container->parent_button = this;
 }
 
 
@@ -1353,12 +1368,12 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 			(
 				_gabarite,
 
-				parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left,
-				parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_bottom,
+				icon_offset_x,
+				icon_offset_y,
 				0.0f,
 
-				region_size,
-				region_size,
+				icon_size_x,
+				icon_size_y,
 				0.0f
 			)
 		);
@@ -2168,6 +2183,7 @@ void DescriptionContainerDefault::create_description()
 
 	if (parent_button != nullptr)
 	{
+		
 		EButtonGroup*
 		description_group = new EButtonGroup
 		(
@@ -2181,7 +2197,50 @@ void DescriptionContainerDefault::create_description()
 		description_group->init_as_root_group(parent_button->parent_button_group->root_group->parent_window);
 		description_group->need_refresh = true;
 
-		description_group->add_default_clickable_region_with_text_area(localisation_text);
+		
+		if (!replacer_list.empty())
+		{
+			ELocalisationText
+			temp_ltext = localisation_text;
+
+			for (int i = 0; i < NSW_languages_count; i++)
+			{
+				for (EStringReplacer replacer : replacer_list)
+				{
+					size_t start_pos = 0;
+					while ((start_pos = temp_ltext.localisations[i].find(replacer.what_replaced, start_pos)) != std::string::npos)
+					{
+						temp_ltext.localisations[i].replace(start_pos, replacer.what_replaced.length(), replacer.result_string);
+						start_pos += replacer.result_string.length(); // In case 'to' contains 'from', like replacing 'x' with 'yx'
+					}
+				}
+			}
+
+			description_group->add_default_clickable_region_with_text_area(temp_ltext);
+		}
+		else
+		{
+			description_group->add_default_clickable_region_with_text_area(localisation_text);
+		}
+
+		
+
+		float max_row_w = 0.0f;
+
+		for (std::string* row_element : description_group->clickable_area_list[0]->text_area->row)
+		{
+			max_row_w = max(max_row_w, description_group->clickable_area_list[0]->text_area->get_row_width(row_element));
+		}
+
+		size_x = max_row_w;
+		size_x = std::clamp(size_x, 200.0f, 600.0f);
+		description_group->region_gabarite->size_x = size_x;
+		description_group->base_width = size_x;
+
+		size_y = description_group->clickable_area_list[0]->text_area->row.size() * EFont::font_list[0]->lineheight;
+		size_y = std::clamp(size_y, 50.0f, 600.0f);
+		description_group->region_gabarite->size_y = size_y;
+		description_group->base_height = size_y;
 
 		parent_button->parent_button_group->root_group->parent_window->button_group_list.push_back(description_group);
 		parent_button->attached_description = description_group;
@@ -2235,4 +2294,10 @@ void DescriptionContainerHelpDescriptionImage::create_description()
 
 EntityButtonDebugStructButton::~EntityButtonDebugStructButton()
 {
+}
+
+EStringReplacer::EStringReplacer(std::string _what_replaced, std::string _result_string)
+{
+	what_replaced = _what_replaced;
+	result_string = _result_string;
 }

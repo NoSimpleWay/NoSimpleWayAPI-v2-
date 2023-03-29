@@ -361,6 +361,7 @@ public:
 	EFilterRule* target_rule;
 
 	EntityButton* pointer_to_search_bar;
+	EntityButton* pointer_to_add_as_item_button;
 	EButtonGroup* pointer_to_group_with_data_entities;
 	EButtonGroup* pointer_to_group_with_filter_rules_list;
 	EButtonGroup* pointer_to_group_item_receiver;

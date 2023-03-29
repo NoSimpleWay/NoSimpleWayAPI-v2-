@@ -95,7 +95,7 @@ void register_debug_structs()
 		DebugNamespace::NSW_pointer_to_debug_window = whole_debug_group;
 
 		EButtonGroup* workspace_part = whole_debug_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);
-
+		whole_debug_group->add_caption_by_localistation_key("window_header_debug_window");
 		for (int i = 0; i < DebugStructID::DEBUG_STRUCT_ID_LAST_ELEMENT; i++)
 		{
 			EntityButtonDebugStructButton*

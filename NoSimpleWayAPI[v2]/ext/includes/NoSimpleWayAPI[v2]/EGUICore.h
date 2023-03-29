@@ -370,6 +370,8 @@ public:
 	//EButtonGroupRow* parent_group_row = nullptr;
 	std::vector<EButtonGroup*> group_list;
 	EButtonGroup* parent_group = nullptr;
+	EButtonGroup* close_section = nullptr;
+	EButtonGroup* close_section_left_part = nullptr;
 
 	//int* order_in_vector = new int(0);
 	static EButtonGroup* focused_button_group;
@@ -535,6 +537,7 @@ public:
 	static EButtonGroup* create_color_editor_group(ERegionGabarite* _region, EGUIStyle* _style);
 
 	EButtonGroup* add_close_group_and_return_workspace_group(ERegionGabarite* _region, EGUIStyle* _style);
+	void add_caption_by_localistation_key(std::string _key);
 
 
 
