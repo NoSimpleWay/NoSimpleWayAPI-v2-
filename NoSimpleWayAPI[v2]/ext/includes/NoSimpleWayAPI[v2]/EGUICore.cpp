@@ -3059,6 +3059,7 @@ void EButtonGroup::add_vertical_scroll_bar(EButtonGroup* _button_group)
 			nullptr
 		);
 
+		but->is_rotator = _button_group->selected_style->is_rotator;
 		_button_group->slider = but;
 
 		//custom_data->actions_on_update.push_back(EDataActionCollection::action_update_slider);

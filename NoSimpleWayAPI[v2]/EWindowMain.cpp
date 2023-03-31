@@ -8041,6 +8041,96 @@ void EWindowMain::load_ingame_sound_list()
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	named_sound = new ENamedSound("data/sounds/default_drop_sound/SHAlchemy.wav");
+	l_text.base_name = "SHAlchemy";
+	l_text.localisations[NSW_localisation_EN] = "Shaper: Alchemy orb";
+	l_text.localisations[NSW_localisation_RU] = "Шейпер: Сфера алхимии";
+	named_sound->localisation_text = l_text;
+	EWindowMain::default_sound_list.push_back(named_sound);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	named_sound = new ENamedSound("data/sounds/default_drop_sound/SHBlessed.wav");
+	l_text.base_name = "SHBlessed";
+	l_text.localisations[NSW_localisation_EN] = "Shaper: Blessed orb";
+	l_text.localisations[NSW_localisation_RU] = "Шейпер: Благодатная сфера";
+	named_sound->localisation_text = l_text;
+	EWindowMain::default_sound_list.push_back(named_sound);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	named_sound = new ENamedSound("data/sounds/default_drop_sound/SHChaos.wav");
+	l_text.base_name = "SHChaos";
+	l_text.localisations[NSW_localisation_EN] = "Shaper: Chaos orb";
+	l_text.localisations[NSW_localisation_RU] = "Шейпер: Сфера хаоса";
+	named_sound->localisation_text = l_text;
+	EWindowMain::default_sound_list.push_back(named_sound);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	named_sound = new ENamedSound("data/sounds/default_drop_sound/SHDivine.wav");
+	l_text.base_name = "SHDivine";
+	l_text.localisations[NSW_localisation_EN] = "Shaper: Divine orb";
+	l_text.localisations[NSW_localisation_RU] = "Шейпер: Божественная сфера";
+	named_sound->localisation_text = l_text;
+	EWindowMain::default_sound_list.push_back(named_sound);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	named_sound = new ENamedSound("data/sounds/default_drop_sound/SHExalted.wav");
+	l_text.base_name = "SHExalted";
+	l_text.localisations[NSW_localisation_EN] = "Shaper: Exalted orb";
+	l_text.localisations[NSW_localisation_RU] = "Шейпер: Сфера возвышения";
+	named_sound->localisation_text = l_text;
+	EWindowMain::default_sound_list.push_back(named_sound);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	named_sound = new ENamedSound("data/sounds/default_drop_sound/SHFusing.wav");
+	l_text.base_name = "SHFusing";
+	l_text.localisations[NSW_localisation_EN] = "Shaper: Fusing orb";
+	l_text.localisations[NSW_localisation_RU] = "Шейпер: Сфера соединения";
+	named_sound->localisation_text = l_text;
+	EWindowMain::default_sound_list.push_back(named_sound);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	named_sound = new ENamedSound("data/sounds/default_drop_sound/SHGeneral.wav");
+	l_text.base_name = "SHGeneral";
+	l_text.localisations[NSW_localisation_EN] = "Shaper: General";
+	l_text.localisations[NSW_localisation_RU] = "Шейпер: Общее";
+	named_sound->localisation_text = l_text;
+	EWindowMain::default_sound_list.push_back(named_sound);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	named_sound = new ENamedSound("data/sounds/default_drop_sound/SHMirror.wav");
+	l_text.base_name = "SHMirror";
+	l_text.localisations[NSW_localisation_EN] = "Shaper: Mirror of kalandra";
+	l_text.localisations[NSW_localisation_RU] = "Шейпер: Зеркало Каландры";
+	named_sound->localisation_text = l_text;
+	EWindowMain::default_sound_list.push_back(named_sound);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	named_sound = new ENamedSound("data/sounds/default_drop_sound/SHRegal.wav");
+	l_text.base_name = "SHRegal";
+	l_text.localisations[NSW_localisation_EN] = "Shaper: Orb of regal";
+	l_text.localisations[NSW_localisation_RU] = "Шейпер: Сфера Царей";
+	named_sound->localisation_text = l_text;
+	EWindowMain::default_sound_list.push_back(named_sound);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	named_sound = new ENamedSound("data/sounds/default_drop_sound/SHVaal.wav");
+	l_text.base_name = "SHVaal";
+	l_text.localisations[NSW_localisation_EN] = "Shaper: Vaal orb";
+	l_text.localisations[NSW_localisation_RU] = "Шейпер: Свера Ваал";
+	named_sound->localisation_text = l_text;
+	EWindowMain::default_sound_list.push_back(named_sound);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 }
 
 //enum class ReadLootFilterState
