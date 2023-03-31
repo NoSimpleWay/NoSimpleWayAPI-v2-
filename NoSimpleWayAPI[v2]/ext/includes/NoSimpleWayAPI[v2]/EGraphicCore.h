@@ -345,6 +345,8 @@ namespace NS_EColorUtils
 	const EColor_4 COLOR_YELLOW[4]		{ 1.0f,		1.0f,	0.0f,	1.0f };
 	const EColor_4 COLOR_PINK[4]		{ 1.0f,		0.0f,	1.0f,	1.0f };
 	const EColor_4 COLOR_CYAN[4]		{ 0.0f,		1.0f,	1.0f,	1.0f };
+
+	const EColor_4 COLOR_ORANGE[4]		{ 1.0f,		0.5f,	0.0f,	1.0f };
 	
 
 	extern const EColor_4(&choose_from_two(const EColor_4(&_color1)[4], const EColor_4(&_color2)[4], bool _condition))[4];

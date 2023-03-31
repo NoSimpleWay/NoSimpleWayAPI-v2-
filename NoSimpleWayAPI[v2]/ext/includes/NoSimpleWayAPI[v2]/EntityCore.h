@@ -400,6 +400,8 @@ public:
 		ERegionGabarite* _region_gabarite
 	);
 
+	EClickableArea* add_close_circle(data_action_pointer _dap);
+
 	bool can_get_access_to_style();
 	bool button_in_culling_gabarites();
 	//ECustomData* description_data;
@@ -563,12 +565,14 @@ public:
 
 	void* pointer_to_target_value;
 
-	EBrickStyle* slider_active;
+	EBrickStyle* brick_style_active_slider;
 	EBrickStyle* slider_inactive;
 
 	float scroll_speed = 0.0f;
 
 	float degree = 0.0f;
+
+	bool is_rotator = false;
 
 };
 

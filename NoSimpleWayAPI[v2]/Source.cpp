@@ -91,7 +91,7 @@ void register_debug_structs()
 		whole_debug_group->init_as_root_group(EWindowMain::link_to_main_window);
 		EWindowMain::link_to_main_window->button_group_list.push_back(whole_debug_group);
 		whole_debug_group->move_to_foreground_and_center();
-
+		whole_debug_group->close_this_group();
 		DebugNamespace::NSW_pointer_to_debug_window = whole_debug_group;
 
 		EButtonGroup* workspace_part = whole_debug_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);

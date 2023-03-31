@@ -861,7 +861,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 			//////////////////////////////////
 			ETextureGabarite*
-				close_icon = NS_EGraphicCore::load_from_textures_folder("close_circle");
+			close_icon = NS_EGraphicCore::load_from_textures_folder("close_circle");
 
 			float resize_factor = 0.0f;
 			float offset_x = 0.0f;
@@ -1495,6 +1495,75 @@ void EntityButton::make_as_default_router_variant_button(ERegionGabarite* _regio
 	main_text_area->can_be_edited = false;
 }
 
+EClickableArea* EntityButton::add_close_circle(data_action_pointer _dap)
+{
+	
+		//add new clickable area (close X)
+		EClickableArea*
+		close_clickable_area = EClickableArea::create_default_clickable_region
+		(
+			new ERegionGabarite(20.0f, 20.0f),
+			this,
+			EntityButton::get_last_custom_data(this)
+		);
+
+		if (_dap != nullptr)
+		{
+			close_clickable_area->actions_on_click_list.push_back(_dap);
+		}
+
+		close_clickable_area->region_gabarite->offset_by_parent_size_x = 1.0f;
+		close_clickable_area->region_gabarite->offset_by_parent_size_y = 1.0f;
+
+		close_clickable_area->region_gabarite->offset_by_size_x = -1.0f;
+		close_clickable_area->region_gabarite->offset_by_size_y = -1.0f;
+
+		close_clickable_area->region_gabarite->offset_by_pixels_x = -3.0f;
+		close_clickable_area->region_gabarite->offset_by_pixels_y = -3.0f;
+
+		close_clickable_area->draw_only_is_specific_region_overlapped = this->main_clickable_area->region_gabarite;
+
+		this->main_custom_data->clickable_area_list.push_back(close_clickable_area);
+		this->main_clickable_area->region_gabarite->add_child_to_this_region(close_clickable_area->region_gabarite);
+
+
+		//////////////////////////////////
+		ETextureGabarite*
+			close_icon = NS_EGraphicCore::load_from_textures_folder("close_circle");
+
+		float resize_factor = 0.0f;
+		float offset_x = 0.0f;
+		float offset_y = 0.0f;
+		{
+			resize_factor = (close_clickable_area->region_gabarite->size_y) / max(close_icon->size_x_in_pixels, close_icon->size_y_in_pixels);
+			resize_factor = min(resize_factor, 1.0f);
+
+			offset_x = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_x_in_pixels * resize_factor) / 2.0f;
+			offset_y = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_y_in_pixels * resize_factor) / 2.0f;
+
+			ESpriteLayer* third_sprite_layer =
+				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+				(
+					close_icon,
+
+					0.0f,
+					0.0f,
+					0.0f,
+
+					close_icon->size_x_in_pixels * resize_factor,
+					close_icon->size_y_in_pixels * resize_factor,
+					0.0f
+				);
+
+			close_clickable_area->sprite_layer_list.push_back(third_sprite_layer);
+
+			//second_button_layer->make_as_PBR();
+		}
+		//////////////////////////////////
+
+	return close_clickable_area;
+}
+
 bool EntityButton::can_get_access_to_style()
 {
 	return false;
@@ -1507,9 +1576,9 @@ bool EntityButton::button_in_culling_gabarites()
 	
 	return
 	(
-		(world_position_y + button_gabarite->phantom_translate_y <= parent_button_group->higher_culling_line)
+		(world_position_y + button_gabarite->phantom_translate_y <= parent_button_group->higher_culling_line_for_group)
 		&&
-		(world_position_y + button_gabarite->phantom_translate_y + button_gabarite->size_y >= parent_button_group->lower_culling_line)
+		(world_position_y + button_gabarite->phantom_translate_y + button_gabarite->size_y >= parent_button_group->lower_culling_line_for_group)
 	);
 }
 
@@ -1781,9 +1850,9 @@ void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style)
 	//	current_height_percent
 	//);
 
-	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = _style->brick_style[BrickStyleID::SLIDER_INACTIVE].main_texture->size_x_in_pixels;
+	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = _style->brick_style[BrickStyleID::SLIDER_ACTIVE].main_texture->size_x_in_pixels;
 
-	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = _style->brick_style[BrickStyleID::SLIDER_INACTIVE].main_texture->size_y_in_pixels;
+	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = _style->brick_style[BrickStyleID::SLIDER_ACTIVE].main_texture->size_y_in_pixels;
 
 	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->offset_y
 	=
@@ -1909,7 +1978,7 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 		_but->world_position_x,
 		_but->world_position_y,
 		0.0f,
-		_but->parent_button_group->selected_style->brick_style[BrickStyleID::SLIDER_INACTIVE].main_texture->size_x_in_pixels,
+		_but->parent_button_group->selected_style->brick_style[BrickStyleID::SLIDER_ACTIVE].main_texture->size_x_in_pixels,
 		total_group_height
 	);
 
@@ -1927,7 +1996,7 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 	);
 
 	_but->offset_y = 10.0f;
-	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = _style->brick_style[BrickStyleID::SLIDER_INACTIVE].main_texture->size_x_in_pixels;
+	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = _style->brick_style[BrickStyleID::SLIDER_ACTIVE].main_texture->size_x_in_pixels;
 	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = total_group_height;
 
 
@@ -1936,13 +2005,13 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 
 
 	//change button gabarites size y
-	_but->button_gabarite->size_x = _style->brick_style[BrickStyleID::SLIDER_INACTIVE].main_texture->size_x_in_pixels;
+	_but->button_gabarite->size_x = _style->brick_style[BrickStyleID::SLIDER_ACTIVE].main_texture->size_x_in_pixels;
 	_but->button_gabarite->size_y = total_group_height;
 
 	EntityButtonVerticalSlider*
 	slider = static_cast<EntityButtonVerticalSlider*>(_but);
-	slider->workspace_height = total_group_height - _style->brick_style[BrickStyleID::SLIDER_INACTIVE].main_texture->size_y_in_pixels;
-	slider->slider_active = &_style->brick_style[BrickStyleID::SLIDER_ACTIVE];
+	slider->workspace_height = total_group_height - _style->brick_style[BrickStyleID::SLIDER_ACTIVE].main_texture->size_y_in_pixels;
+	slider->brick_style_active_slider = &_style->brick_style[BrickStyleID::SLIDER_ACTIVE];
 	slider->slider_inactive = &_style->brick_style[BrickStyleID::SLIDER_INACTIVE];
 
 	if (_but->parent_button_group->child_align_direction == ChildElementsAlignDirection::BOTTOM_TO_TOP)

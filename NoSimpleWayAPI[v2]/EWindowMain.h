@@ -774,6 +774,7 @@ public:
 	static EButtonGroup*												info_button_group;
 	static EButtonGroup*												style_list_group;
 	static EButtonGroup*												pointer_to_joke_AD;
+	static EButtonGroup*												pointer_to_battlepass;
 	static EButtonGroupFastMessage*										background_loading_info;
 
 	static std::string username;

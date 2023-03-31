@@ -82,6 +82,8 @@ public:
 	std::string* folder = new std::string("lead_and_gold");
 	float		text_color_multiplier[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
 
+	bool is_rotator = false;
+
 	//float text_color_array[16][4];
 
 	EGUIStyle();
@@ -407,11 +409,11 @@ public:
 	float highest_point_y_for_buttons = (0.0f);
 	float highest_point_y_for_groups = (0.0f);
 
-	float higher_culling_line				= 0.0f;
-	float lower_culling_line				= 0.0f;
+	float higher_culling_line_for_group		= 0.0f;
+	float lower_culling_line_for_group		= 0.0f;
 
-	float higher_culling_line_for_element	= 0.0f;
-	float lower_culling_line_for_element	= 0.0f;
+	float higher_culling_line_for_elements	= 0.0f;
+	float lower_culling_line_for_elements	= 0.0f;
 
 	float autodelete_time					= -1.0f;
 
@@ -471,7 +473,7 @@ public:
 	void recursive_reset_phantom_translate();
 	void reset_buttons_phantom_translate();
 	void reset_slider();
-	void override_button_size();
+	void set_base_size_x();
 	void put_buttons_to_lines();
 	void set_buttons_offset();
 	//void align_buttons_to_lines();
@@ -495,11 +497,18 @@ public:
 	bool can_resize_to_workspace_size_x = true;
 	bool can_resize_to_workspace_size_y = true;
 
-	float group_offset_for_content_bottom = (0.0f);
-	float group_offset_for_content_up = (0.0f);
+	float group_offset_for_content_bottom	= (0.0f);
+	float group_offset_for_content_up		= (0.0f);
 
-	float group_offset_for_content_left = (0.0f);
-	float group_offset_for_content_right = (0.0f);
+	float group_offset_for_content_left		= (0.0f);
+	float group_offset_for_content_right	= (0.0f);
+	
+
+	float group_border_texture_bottom		= (0.0f);
+	float group_border_texture_up			= (0.0f);
+				
+	float group_border_texture_left			= (0.0f);
+	float group_border_texture_right		= (0.0f);
 
 	float additional_y_distance = 0.0f;
 

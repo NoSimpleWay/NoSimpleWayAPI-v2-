@@ -1972,6 +1972,10 @@ void NS_EGraphicCore::create_styles()
 		l_text.localisations[NSW_localisation_RU] = "500 ласковых кошек";
 		just_created_style->localisation_text = l_text;
 		//***********************************************************
+		// 
+
+		just_created_style->is_rotator = true;
+
 		//main gutton group
 		//just_created_style->set_color_multiplier(0.3f, 0.35f, 0.3f, 1.0f);
 		just_created_style->set_color_multiplier(0.9f, 0.85f, 0.6f, 1.0f);

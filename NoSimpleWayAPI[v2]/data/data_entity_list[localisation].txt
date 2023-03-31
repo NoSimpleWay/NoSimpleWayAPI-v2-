@@ -641,4 +641,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Open the debug window in which you can configue debug elements (CTRL + D)"
 	[tag]"name RU"		[value]"ќткрыть окно отладки, в котором вы сможете изменить различные параметры, на случай, если программа будет работать некорректно (CTRL + D)"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_battlepass"
+	[tag]"name EN"		[value]"Battlepass"
+	[tag]"name RU"		[value]"Ѕоевой пропуск"
+	
 	

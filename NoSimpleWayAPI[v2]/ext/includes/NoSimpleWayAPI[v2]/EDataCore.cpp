@@ -82,7 +82,7 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 
 	float total_value = slider->max_value - slider->min_value;
 
-	if (!NSW_APRIL_FOOL)
+	if (!slider->is_rotator)
 	{
 		//left click drag
 		if
@@ -313,12 +313,14 @@ void EDataActionCollection::action_select_this_style(Entity* _entity, ECustomDat
 	
 	for (EWindow* window : EWindow::window_list)
 	{
-		window->window_need_refresh = true;
+		
 
 		for (EButtonGroup* group : window->button_group_list)
 		{
 			EButtonGroup::recursive_change_style(group, ((EntityButton*)_entity)->parent_button_group->selected_style);
 		}
+
+		window->window_need_refresh = true;
 	}
 }
 
@@ -1075,7 +1077,7 @@ void EDataActionCollection::action_draw_vertical_named_slider(Entity* _entity, E
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::pbr_batcher, 1);
 
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
-		if (!NSW_APRIL_FOOL)
+		if (!slider->is_rotator)
 		{
 			NS_ERenderCollection::add_data_to_vertex_buffer_texture_gabarite_PBR
 			(
@@ -1115,15 +1117,15 @@ void EDataActionCollection::action_draw_vertical_named_slider(Entity* _entity, E
 				slider->world_position_x,
 				slider->world_position_y,
 
-				slider->slider_active->main_texture->size_x_in_pixels,
-				slider->slider_active->main_texture->size_y_in_pixels,
+				slider->brick_style_active_slider->main_texture->size_x_in_pixels,
+				slider->brick_style_active_slider->main_texture->size_y_in_pixels,
 
 				slider->degree,
 				subdegree,
 
-				slider->slider_active->main_texture,
-				slider->slider_active->gloss_map_texture,
-				slider->slider_active->normal_map_texture
+				slider->brick_style_active_slider->main_texture,
+				slider->brick_style_active_slider->gloss_map_texture,
+				slider->brick_style_active_slider->normal_map_texture
 			);
 		}
 	}
