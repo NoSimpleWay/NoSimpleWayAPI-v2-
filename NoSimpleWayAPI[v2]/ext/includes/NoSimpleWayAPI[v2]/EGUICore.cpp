@@ -3683,7 +3683,7 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 	root_group = this;
 	button_group_is_active = true;
 	//can_change_position_in_vector = false;
-	
+	button_group_is_active = false;
 
 
 
@@ -3692,7 +3692,7 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 	add_caption_by_localistation_key("window_header_confirm_action");
 
 	EButtonGroup*
-		bottom_part_for_buttons = pointer_to_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(250.0f, 30.0f)));
+	bottom_part_for_buttons = pointer_to_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(250.0f, 30.0f)));
 	bottom_part_for_buttons->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 	bottom_part_for_buttons->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	bottom_part_for_buttons->button_size_x_override = 150.0f;

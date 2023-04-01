@@ -788,6 +788,7 @@ public:
 	static void									load_ingame_sound_list();
 
 	static bool									text_is_condition(std::string& buffer_text);
+	static bool									first_time_open;
 
 	static void									open_loot_filter(std::string _full_path, LootFilterOpenMode _loot_filter_mode);
 	static EButtonGroupFilterBlock* create_filter_block(EButtonGroup* _target_editor, int _specific_position);

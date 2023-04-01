@@ -1862,7 +1862,7 @@ void NS_EGraphicCore::create_styles()
 	}
 
 	//TEST
-	if (true)
+	if (false)
 	{
 		//###########################################################
 		//MODERN
@@ -1962,7 +1962,7 @@ void NS_EGraphicCore::create_styles()
 	}
 
 	//500 cats
-	if (true)
+	if (false)
 	{
 		//###########################################################
 		//MODERN
@@ -2066,7 +2066,7 @@ void NS_EGraphicCore::create_styles()
 	}//500 cats
 
 	//never gonna give you up
-	if (true)
+	if (false)
 	{
 		//###########################################################
 		//MODERN
@@ -2166,7 +2166,7 @@ void NS_EGraphicCore::create_styles()
 	}
 
 	//frontrooms
-	if (true)
+	if (false)
 	{
 		//###########################################################
 		//MODERN
