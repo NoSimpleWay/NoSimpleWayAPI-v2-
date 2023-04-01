@@ -110,7 +110,7 @@ public:
 	int lineheight = 15;
 	int base = 10;
 
-	std::string name;
+	std::string localised_name;
 
 
 	EFont(std::string _name, ETextureGabarite* _g, ETextureAtlas* _atlas, bool _not_cyrrilic);
@@ -253,6 +253,8 @@ public:
 	//
 	bool outclick_protection = false;
 
+	void deactivate_this_text_area();
+
 	void update(float _d);
 	bool is_overlapped_by_mouse();
 	void activate_this_text_area();
@@ -262,6 +264,7 @@ public:
 
 
 	bool can_be_edited = true;
+	bool forcibly_create_glyph = false;
 
 	ESpriteLayer* sprite_layer;
 	///
@@ -296,6 +299,7 @@ public:
 	bool can_get_access_to_group_style();
 
 	std::vector<text_actions_pointer> action_on_change_text;
+	std::vector<text_actions_pointer> action_on_finalize_text;
 
 	EButtonGroup* get_root_group();
 	//static 

@@ -23,7 +23,7 @@ enum BrickStyleID
 };
 
 
-constexpr bool NSW_APRIL_FOOL = true;
+constexpr bool NSW_APRIL_FOOL = false;
 
 class EBrickStyle
 {

@@ -488,16 +488,16 @@
 
 #if (GLM_COMPILER & GLM_COMPILER_VC) || ((GLM_COMPILER & GLM_COMPILER_INTEL) && (GLM_PLATFORM & GLM_PLATFORM_WINDOWS))
 #	define GLM_DEPRECATED __declspec(deprecated)
-#	define GLM_ALIGNED_TYPEDEF(type, name, alignment) typedef __declspec(align(alignment)) type name
+#	define GLM_ALIGNED_TYPEDEF(type, localised_name, alignment) typedef __declspec(align(alignment)) type localised_name
 #elif GLM_COMPILER & (GLM_COMPILER_GCC | GLM_COMPILER_CLANG | GLM_COMPILER_INTEL)
 #	define GLM_DEPRECATED __attribute__((__deprecated__))
-#	define GLM_ALIGNED_TYPEDEF(type, name, alignment) typedef type name __attribute__((aligned(alignment)))
+#	define GLM_ALIGNED_TYPEDEF(type, localised_name, alignment) typedef type localised_name __attribute__((aligned(alignment)))
 #elif GLM_COMPILER & GLM_COMPILER_CUDA
 #	define GLM_DEPRECATED
-#	define GLM_ALIGNED_TYPEDEF(type, name, alignment) typedef type name __align__(x)
+#	define GLM_ALIGNED_TYPEDEF(type, localised_name, alignment) typedef type localised_name __align__(x)
 #else
 #	define GLM_DEPRECATED
-#	define GLM_ALIGNED_TYPEDEF(type, name, alignment) typedef type name
+#	define GLM_ALIGNED_TYPEDEF(type, localised_name, alignment) typedef type localised_name
 #endif
 
 ///////////////////////////////////////////////////////////////////////////////////

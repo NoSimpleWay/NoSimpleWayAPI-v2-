@@ -646,6 +646,7 @@ enum FilterAttributeValueType
 
 
 	FILTER_ATTRIBUTE_VALUE_CONFIG_VERSIONS,
+	FILTER_ATTRIBUTE_VALUE_CONFIG_COLOR_COLLECTION,
 	FILTER_ATTRIBUTE_VALUE_CONFIG_SEPARATOR,
 
 
@@ -717,6 +718,7 @@ enum LootFilterVersionDescription
 };
 
 static std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode);
+static std::string generate_color_palette_text();
 static std::string generate_filter_block_separator_text(EButtonGroupFilterBlockSeparator* _separator, FilterBlockSaveMode _save_mode);
 
 

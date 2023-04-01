@@ -1032,8 +1032,14 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_stored_color_as_box);
 	EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_open_color_group);
 
+
+
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
+	
+	if (_mode == ColorButtonMode::CBM_SELECT_COLOR)
+	{ jc_text_area->forcibly_create_glyph = true; }
+
 	jc_text_area->offset_by_gabarite_size_x = 0.0;
 	jc_text_area->offset_by_text_size_x = 0.0;
 
@@ -1043,13 +1049,23 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 	jc_text_area->offset_border[BorderSide::LEFT] = _parent_group->group_offset_for_content_left;
 
 	jc_text_area->change_text(_text.localisations[ELocalisationText::active_localisation]);
-
+	jc_text_area->localisation_text = _text;
 	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+	
+	
 
 	jc_button->main_text_area = jc_text_area;
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	if (_mode == ColorButtonMode::CBM_SELECT_COLOR)
+	{
+		jc_button->main_clickable_area->actions_on_right_click_list.push_back(&EDataActionCollection::action_active_text_area);
+		
+		jc_text_area->action_on_change_text.push_back(&EDataActionCollection::action_change_localisation_for_color_button);
+		jc_text_area->action_on_finalize_text.push_back(&EDataActionCollection::action_deactive_text_area);
 
+		jc_button->add_default_description_by_key("description_color_selector");
+	}
 
 
 	return jc_button;

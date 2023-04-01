@@ -5031,7 +5031,7 @@ void ETextureGabarite::set_full_path(std::string _full_path)
 
 std::string ETextureGabarite::get_name()
 {
-	return *name;
+	return *localised_name;
 }
 
 int ESpriteLayer::data_copies_count = 0;
@@ -5092,7 +5092,7 @@ void ETextureGabarite::set_name_based_on_full_path(std::string _name)
 		}
 	}
 
-	*name = _name.substr(start_s, end_s - start_s + 1);
+	*localised_name = _name.substr(start_s, end_s - start_s + 1);
 }
 
 void ETextureGabarite::set_uv_parameters(float _uv_start_x, float _uv_start_y, float _uv_size_x, float _uv_size_y)

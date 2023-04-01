@@ -38,7 +38,7 @@ struct HSVRGBAColor
 struct HRA_color_collection
 {
 	HSVRGBAColor		target_color;
-	ELocalisationText	name;
+	ELocalisationText	localised_name;
 
 	std::vector<HSVRGBAColor*> pointers_to_this_collection;
 };

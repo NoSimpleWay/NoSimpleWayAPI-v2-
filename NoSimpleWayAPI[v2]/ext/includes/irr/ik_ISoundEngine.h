@@ -256,7 +256,7 @@ namespace irrklang
 		by getSoundSourceCount() will have been decreased by one. 
 		Removing sound sources is only necessary if you know you won't use a lot of non-streamed
 		sounds again. Sound sources of streamed sounds do not cost a lot of memory. */
-		virtual void removeSoundSource(const ik_c8* name) = 0;
+		virtual void removeSoundSource(const ik_c8* localised_name) = 0;
 
 		//! Removes all sound sources from the engine
 		/** This will also cause all sounds to be stopped. 

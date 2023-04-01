@@ -76,22 +76,22 @@ public:
     }
     // utility uniform functions
     // ------------------------------------------------------------------------
-    void setBool(const std::string &name, bool value) const
+    void setBool(const std::string &localised_name, bool value) const
     {         
-        glUniform1i(glGetUniformLocation(ID, name.c_str()), (int)value); 
+        glUniform1i(glGetUniformLocation(ID, localised_name.c_str()), (int)value); 
     }
     // ------------------------------------------------------------------------
-    void setInt(const std::string &name, int value) const
+    void setInt(const std::string &localised_name, int value) const
     { 
-        glUniform1i(glGetUniformLocation(ID, name.c_str()), value); 
+        glUniform1i(glGetUniformLocation(ID, localised_name.c_str()), value); 
     }
     // ------------------------------------------------------------------------
-    void setFloat(const std::string &name, float value) const
+    void setFloat(const std::string &localised_name, float value) const
     { 
-        glUniform1f(glGetUniformLocation(ID, name.c_str()), value); 
+        glUniform1f(glGetUniformLocation(ID, localised_name.c_str()), value); 
     }
     // ------------------------------------------------------------------------
-    void setSampler2D(const std::string &name, int value) const
+    void setSampler2D(const std::string &localised_name, int value) const
     { 
         //gluniformsa(glGetUniformLocation(ID, name.c_str()), value); 
     }

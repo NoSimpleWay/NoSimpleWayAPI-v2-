@@ -20,7 +20,7 @@ EFont::EFont(std::string _name, ETextureGabarite* _g, ETextureAtlas* _atlas, boo
 	texture_atlas = _atlas;
 	load_font_littera(_name);
 
-	name = _name;
+	localised_name = _name;
 
 	is_not_cyrrilic = _not_cyrrilic;
 }
@@ -624,7 +624,12 @@ void ETextArea::generate_text()
 				);
 
 				//no sence generate glyphs to text, which can be edited
-				if (can_be_edited)
+				if
+				(
+					(can_be_edited)
+					||
+					(forcibly_create_glyph)
+				)
 				{
 					temp_glyph = new EFontGlyph
 					(
@@ -815,6 +820,19 @@ void ETextArea::translate(float _x, float _y, float _z, bool _translate_local_co
 		}
 }
 
+void ETextArea::deactivate_this_text_area()
+{
+	text_area_active = false;
+
+	NS_FONT_UTILS::active_text_area = nullptr;
+
+	if (original_text == "")
+	{
+		change_text("");
+		indicate_gray_text = true;
+	}
+}
+
 void ETextArea::update(float _d)
 {
 
@@ -863,7 +881,9 @@ void ETextArea::update(float _d)
 		{
 			if
 				(
-					(can_be_edited)
+					(
+						(can_be_edited)
+					)
 					&&
 					(EInputCore::MOUSE_BUTTON_LEFT)
 					&&
@@ -894,7 +914,9 @@ void ETextArea::update(float _d)
 			if
 				(
 					//only editable text areas can be set as active
-					(can_be_edited)
+					(
+						(can_be_edited)
+					)
 					&&
 					(
 						//outclick protection
@@ -923,18 +945,10 @@ void ETextArea::update(float _d)
 				if (text_area_active)
 				{
 					//if 
-					text_area_active = false;
+					deactivate_this_text_area();
 
-					selected_glyph_position = -1;
-
-					NS_FONT_UTILS::active_text_area = nullptr;
-
-
-					if ((original_text == "") && (!indicate_gray_text))
-					{
-						change_text("");
-						indicate_gray_text = true;
-					}
+					for (text_actions_pointer dap : action_on_finalize_text)
+					if (dap != nullptr) { dap(this); }
 
 					//this text area is no more as active
 					//if (EClickableArea::active_clickable_region == parent_clickable_region)
@@ -1038,15 +1052,10 @@ void ETextArea::update(float _d)
 			else
 			{
 				//selected_glyph_position = -1;
-				text_area_active = false;
+				deactivate_this_text_area();
 
-				NS_FONT_UTILS::active_text_area = nullptr;
-
-				if (original_text == "")
-				{
-					change_text("");
-					indicate_gray_text = true;
-				}
+				for (text_actions_pointer dap : action_on_finalize_text)
+				if (dap != nullptr) { dap(this); }
 
 
 				//EClickableArea::active_clickable_region = nullptr;
@@ -1370,8 +1379,6 @@ ETextArea* ETextArea::create_centered_text_area(EClickableArea* _region_gabarite
 		jc_text_area->offset_by_text_size_x = -0.5f;
 		jc_text_area->offset_by_text_size_y = -0.5f;
 
-		//jc_text_area->can_be_edited = false;
-
 
 		return jc_text_area;
 	}
@@ -1392,8 +1399,6 @@ ETextArea* ETextArea::create_centered_to_right_text_area(EClickableArea* _region
 
 		jc_text_area->offset_by_text_size_x = -1.0f;
 		jc_text_area->offset_by_text_size_y = -0.5f;
-
-		//jc_text_area->can_be_edited = false;
 
 
 		return jc_text_area;
@@ -1417,8 +1422,6 @@ ETextArea* ETextArea::create_centered_to_left_text_area(EClickableArea* _region_
 		jc_text_area->offset_by_text_size_x = 0.0f;
 		jc_text_area->offset_by_text_size_y = -0.5f;
 
-		//jc_text_area->can_be_edited = false;
-
 
 		return jc_text_area;
 	}
@@ -1441,7 +1444,6 @@ ETextArea* ETextArea::create_bottomed_to_left_text_area(EClickableArea* _region_
 		jc_text_area->offset_by_text_size_x = 0.0f;
 		jc_text_area->offset_by_text_size_y = 0.0f;
 
-		//jc_text_area->can_be_edited = false;
 
 
 		return jc_text_area;
@@ -1463,8 +1465,6 @@ ETextArea* ETextArea::create_centered_to_up_text_area(EClickableArea* _region_ga
 
 		jc_text_area->offset_by_text_size_x = -0.5f;
 		jc_text_area->offset_by_text_size_y = -2.0f;
-
-		//jc_text_area->can_be_edited = false;
 
 
 		return jc_text_area;
@@ -1833,7 +1833,7 @@ ELocalisationText ELocalisationText::get_localisation_by_key(std::string _key)
 		index = max(index, 0);
 
 		//arr[index]++;
-		if (named_struct->name == "Localisation")
+		if (named_struct->localised_name == "Localisation")
 		{
 			//EInputCore::logger_simple_info("Localisation named struct");
 

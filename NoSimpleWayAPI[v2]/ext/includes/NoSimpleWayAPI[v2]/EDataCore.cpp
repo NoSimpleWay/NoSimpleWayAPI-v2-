@@ -603,6 +603,33 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 	}
 }
 
+void EDataActionCollection::action_deactive_text_area(ETextArea* _text_area)
+{
+	EInputCore::logger_simple_info("deactivated");
+	_text_area->deactivate_this_text_area();
+	_text_area->can_be_edited = false;
+	
+}
+
+void EDataActionCollection::action_change_localisation_for_color_button(ETextArea* _text_area)
+{
+	if ((_text_area != nullptr) && (_text_area->parent_entity_for_text_area != nullptr))
+	{
+		EntityButtonColorButton*
+		color_button = static_cast<EntityButtonColorButton*>(_text_area->parent_entity_for_text_area);
+
+		color_button->parent_color_collection->localised_name = ELocalisationText::generate_localisation(_text_area->original_text);
+
+
+	}
+	else
+	{
+		EInputCore::logger_simple_error("text_area or parent for text area is NULL!");
+	}
+
+
+}
+
 
 std::vector<EFilterRule*> EFilterRule::registered_global_filter_rules(RegisteredFilterRules::_RDEF_LAST_ELEMENT_);
 std::vector<EFilterRule*> EFilterRule::registered_filter_rules_for_list;
@@ -658,9 +685,13 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 		{
 			if
 			(
-				(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-				||
-				(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
+				(
+					(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+					||
+					(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
+				)
+				&&
+				(false)
 			)
 			{
 				//if color not from collection, remove personal color
@@ -1326,6 +1357,17 @@ void EDataActionCollection::action_draw_stored_color_as_box(Entity* _entity, ECu
 	}
 }
 
+void EDataActionCollection::action_active_text_area(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButton* but = static_cast<EntityButton*>(_entity);
+
+	if (but->main_text_area != nullptr)
+	{
+		but->main_text_area->can_be_edited = true;
+		but->main_text_area->activate_this_text_area();
+	}
+}
+
 void EDataActionCollection::action_delete_vertical_router_variants_group(EButtonGroup* _group)
 {
 	EButtonGroupRouterVariant* group_vertical_variant = static_cast<EButtonGroupRouterVariant*>(_group);
@@ -1415,11 +1457,14 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 	ELocalisationText l_text;
 	l_text.localisations[NSW_localisation_EN] = "Color";
 	l_text.localisations[NSW_localisation_RU] = "Цвет";
+
+	HRA_collection->localised_name = l_text;
+
 	EntityButtonColorButton* jc_button = EntityButton::create_named_color_button
 	(
 		//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
-		new ERegionGabarite(80.0f, 38.0f),
+		new ERegionGabarite(150.0f, 38.0f),
 		group_data->pointer_to_color_collection_sector,
 		EFont::font_list[0],
 		EGUIStyle::active_style,
@@ -3059,14 +3104,14 @@ void ETextParser::split_data_entity_list_to_named_structs()
 
 			for (DataEntityNamedStruct* named_struct : EDataEntity::data_entity_named_structs)
 			{
-				if (named_struct->name == data_type_name) { target_named_struct = named_struct; }
+				if (named_struct->localised_name == data_type_name) { target_named_struct = named_struct; }
 			}
 
 			if (target_named_struct == nullptr)//create new named struct
 			{
 				DataEntityNamedStruct*
 				jc_struct		= new DataEntityNamedStruct();
-				jc_struct->name	= data_type_name;
+				jc_struct->localised_name	= data_type_name;
 
 				jc_struct->data_entity_list[index].push_back(data_entity);
 				EDataEntity::data_entity_named_structs.push_back(jc_struct);
@@ -3353,7 +3398,7 @@ void EStringUtils::split_line_to_array(std::string _line)
 	bool terminator = false;
 	int id = 0;
 	std::string buffer = "";
-
+	bool space_is_not_separator = false;
 	//int l = _line.length();
 
 	//EInputCore::logger_param("idiot?", l);
@@ -3364,13 +3409,19 @@ void EStringUtils::split_line_to_array(std::string _line)
 
 		char sym = _line[i];
 
+		if (sym == '"')
+		{
+			space_is_not_separator = !space_is_not_separator;
+		}
+
 		if
 		(
-			(sym == ' ')
+			((sym == ' ') && (!space_is_not_separator))
 			||
 			(sym == '\t')
 			||
 			(i + 1 >= _line.length())
+
 		)
 		{
 			terminator = true;
@@ -3378,7 +3429,14 @@ void EStringUtils::split_line_to_array(std::string _line)
 
 		if (terminator)
 		{
-			if (i + 1 >= _line.length()){ buffer += sym; }
+			if
+			(
+				(i + 1 >= _line.length())
+				&&
+				(sym != '"')
+			)
+			{ buffer += sym; }
+
 			string_array[id] = buffer;
 			buffer = "";
 			id++;
@@ -3387,7 +3445,7 @@ void EStringUtils::split_line_to_array(std::string _line)
 		}
 		else
 		{
-			buffer += sym;
+			if (sym != '"') { buffer += sym; }
 		}
 	}
 }

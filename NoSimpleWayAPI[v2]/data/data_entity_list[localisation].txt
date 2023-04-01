@@ -648,4 +648,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Battlepass"
 	[tag]"name RU"		[value]"Боевой пропуск"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_color_selector"
+	[tag]"name EN"		[value]"Press left mouse button to select\nPress right mouse button to rename"
+	[tag]"name RU"		[value]"Нажмите левую кнопку мыши, что бы выбрать.\nНажмите правую кнопку мыши что бы переименовать"
+	
 	

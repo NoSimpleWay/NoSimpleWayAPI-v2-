@@ -613,13 +613,15 @@ namespace EDataActionCollection
 	void action_set_unsaved_changes(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_url(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void action_active_filter_block						(Entity* _entity, ECustomData* _custom_data, float _d);
-	
+	void action_active_text_area(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_out_main_text_area(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void action_(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	//type text
 	void action_type_search_data_entity_text(ETextArea* _text_area);
 	void action_type_text_multiblock_searcher(ETextArea* _text_area);
+	void action_deactive_text_area(ETextArea* _text_area);
+	void action_change_localisation_for_color_button(ETextArea* _text_area);
 
 	//group section
 		//draw
@@ -638,6 +640,8 @@ namespace EDataActionCollection
 	//draw actions
 	void action_draw_boolean_switcher(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_draw_stored_color_as_box(Entity* _entity, ECustomData* _custom_data, float _d);
+
+
 
 	//close
 	void action_delete_vertical_router_variants_group(EButtonGroup* _group);

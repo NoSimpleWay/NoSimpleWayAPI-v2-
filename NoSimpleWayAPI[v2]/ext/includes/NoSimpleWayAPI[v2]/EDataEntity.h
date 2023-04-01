@@ -19,7 +19,7 @@ namespace NS_EdataTag
 
 struct RegisteredDataTag
 {
-	std::string* name = new std::string("");
+	std::string* localised_name = new std::string("");
 	ELocalisationText* description;
 };
 
@@ -36,7 +36,7 @@ struct DataEntityNamedStruct
 {
 public:
 	std::vector <std::vector<EDataEntity*>> data_entity_list{16};
-	std::string name = "";
+	std::string localised_name = "";
 };
 
 class EDataEntity

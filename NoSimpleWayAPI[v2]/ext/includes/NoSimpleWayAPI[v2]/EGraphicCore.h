@@ -461,7 +461,7 @@ class ETextureGabarite
 {
 private:
 	std::string* full_path = new std::string("");
-	std::string* name = new std::string("");
+	std::string* localised_name = new std::string("");
 
 	int pos_x_in_pixels = (0);
 	int pos_y_in_pixels = (0);
