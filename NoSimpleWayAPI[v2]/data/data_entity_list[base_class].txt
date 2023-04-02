@@ -42,7 +42,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Abyss Jewels"
+	[tag]"name EN"		[value]"Abyss Jewel"
 	[tag]"name RU"		[value]"Самоцвет Бездны"
 	
 	[tag]"short name"	[value]"Abyss Jewel"

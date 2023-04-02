@@ -1502,7 +1502,6 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 
 				/////////////		CLICKABLE AREA FOR BOTTOM PART (ATTRIBUTES)		/////////////
 				if (true)
-
 				{
 					EClickableArea*
 					clickable_area_for_bottom_attributes = EClickableArea::create_default_clickable_region(bottom_part->region_gabarite, main_group);
@@ -1516,12 +1515,13 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 							attribute_container = &loot_button->stored_game_item->attribute_container_list[i];
 
 						if
-							(
+						(
 								(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
-								&&
-								(attribute_container->attribute_value_bool)
-								)
+								//&&
+								//(attribute_container->attribute_value_bool)
+						)
 						{
+							item_attributes_generated_text += "\\n";
 							item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
 
 						}
@@ -4096,7 +4096,7 @@ EWindowMain::EWindowMain()
 			button_router_addition->suitable_class_list.push_back("Rings");
 			button_router_addition->suitable_class_list.push_back("Belts");
 			button_router_addition->suitable_class_list.push_back("Jewels");
-			button_router_addition->suitable_class_list.push_back("Abyss Jewels");
+			button_router_addition->suitable_class_list.push_back("Abyss Jewel");
 			button_router_addition->suitable_class_list.push_back("Claws");
 			button_router_addition->suitable_class_list.push_back("Wands");
 			button_router_addition->suitable_class_list.push_back("Sceptres");
@@ -12248,6 +12248,8 @@ void EWindowMain::register_loot_simulator_patterns()
 	register_pattern_tainted_currencies();
 	register_pattern_currencies_shard();
 	register_pattern_oils_and_catalysts();
+	register_pattern_delirium_orbs();
+	register_pattern_eldritch_currency();
 
 	register_pattern_top_tier_bases();
 	register_pattern_all_equip();
@@ -15534,6 +15536,100 @@ void EWindowMain::register_pattern_top_tier_bases()
 	}
 }
 
+void EWindowMain::register_pattern_eldritch_currency()
+{
+	{
+
+		LootSimulatorPattern*
+		loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Eldritch currency";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Древняя валюта";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/EldritchChaosOrb");
+
+		loot_simulator_pattern->additional_force_field_for_buttons = true;
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Eldritch currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
+void EWindowMain::register_pattern_delirium_orbs()
+{
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Delirium orbs";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Сферы делириума";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/DeliriumOrb");
+
+		//loot_simulator_pattern->additional_force_field_for_buttons = true;
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Delirium orb");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
 void EWindowMain::register_pattern_oils_and_catalysts()
 {
 	//		OILS AND CATALYSTS
@@ -15546,7 +15642,7 @@ void EWindowMain::register_pattern_oils_and_catalysts()
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Масла и катализаторы";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_oils_and_catalysts");
 
-		loot_simulator_pattern->additional_force_field_for_buttons = true;
+		//loot_simulator_pattern->additional_force_field_for_buttons = true;
 		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*

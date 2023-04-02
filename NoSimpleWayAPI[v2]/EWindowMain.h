@@ -857,6 +857,8 @@ public:
 	//static void register_pattern_all_equip();
 	static void register_pattern_top_tier_bases();
 
+	static void register_pattern_eldritch_currency();
+	static void register_pattern_delirium_orbs();
 	static void register_pattern_oils_and_catalysts();
 	static void register_pattern_currencies_shard();
 	static void register_pattern_tainted_currencies();

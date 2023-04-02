@@ -185,3 +185,18 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Timeless Jewel"
+	[tag]"name RU"		[value]"Вневременной самоцвет"
+
+	[tag]"icon path"	[value]"timeless_jewel"
+	[tag]"base class"	[value]"Jewels"
+	[tag]"item tag"		[value]"Non-default jewel"
+	
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
