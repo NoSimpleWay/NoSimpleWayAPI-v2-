@@ -637,7 +637,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"description_open_info_window"
+	[tag]"key"			[value]"description_open_debug_window"
 	[tag]"name EN"		[value]"Open the debug window in which you can configue debug elements (CTRL + D)"
 	[tag]"name RU"		[value]"Открыть окно отладки, в котором вы сможете изменить различные параметры, на случай, если программа будет работать некорректно (CTRL + D)"
 	
@@ -654,5 +654,40 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"description_color_selector"
 	[tag]"name EN"		[value]"Press left mouse button to select\nPress right mouse button to rename"
 	[tag]"name RU"		[value]"Нажмите левую кнопку мыши, что бы выбрать.\nНажмите правую кнопку мыши что бы переименовать"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_corrupt_all_items"
+	[tag]"name EN"		[value]"Corrupt all items"
+	[tag]"name RU"		[value]"Осквернить все предметы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_identify_all_items"
+	[tag]"name EN"		[value]"Identify all items"
+	[tag]"name RU"		[value]"Опознать все предметы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_synthesise_all_items"
+	[tag]"name EN"		[value]"Synthesise all items"
+	[tag]"name RU"		[value]"Синтезировать все предметы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_fracture_all_items"
+	[tag]"name EN"		[value]"Fracture all items"
+	[tag]"name RU"		[value]"Расколоть все предметы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_add_random_influence_an_items"
+	[tag]"name EN"		[value]"Add random influecne an items"
+	[tag]"name RU"		[value]"Добавить случайное влияние на предметы"
 	
 	

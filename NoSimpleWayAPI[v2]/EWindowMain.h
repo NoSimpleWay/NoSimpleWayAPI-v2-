@@ -149,18 +149,32 @@ public:
 
 };
 
+class EntityButtonVariantRouterForLootSimulatorAddition : public EntityButtonVariantRouter
+{
+public:
+	//std::string target_attribute;
+	GameItemAttribute* target_attribute;
+
+	bool is_bool_attribute = false;
+
+	std::vector<ELocalisationText> add_one_of_this_string_values;
+
+
+	std::vector<std::string> suitable_class_list;
+
+
+};
+
 class EntityButtonFilterBlockTab : public EntityButton
 {
 public:
-	int tab_id = 0;
+	int tab_id							= 0;
 
-	EButtonGroup* target_filter_editor;
+	EButtonGroup* target_filter_editor	= nullptr;
 
-	bool is_empty		= true;
-	bool unsave_changes	= false;
+	bool is_empty						= true;
+	bool unsave_changes					= false;
 };
-
-
 
 
 class EntityButtonForListedSegment : public EntityButtonForFilterBlock
@@ -435,6 +449,8 @@ public:
 	static EntityButtonVariantRouter* pointer_to_target_loot_filter_version_button;
 	static EntityButton* pointer_to_input_area_level_button;
 
+	std::vector<EntityButtonVariantRouterForLootSimulatorAddition*> pointer_to_addition_button;
+
 	static bool		show_hidden;
 	//static float	show_hidden_cooldown;
 
@@ -583,7 +599,14 @@ namespace EDataActionCollection
 
 	void action_draw_loot_button(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_refresh_loot_simulator_when_slide(Entity* _entity, ECustomData* _custom_data, float _d);
+
+
+
+	void action_refresh_loot_simulator_when_release(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_refresh_loot_simulator_when_press(Entity* _entity, ECustomData* _custom_data, float _d);
+
+
+
 	void action_refresh_loot_simulator_sizes(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_loot_item_button(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_highlight_stored_block(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -628,7 +651,7 @@ enum FilterAttributeValueType
 {
 	FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER,
 	FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST,
-	FILTER_ATTRIBUTE_VALUE_TYPE_TEXT,
+	FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT,
 	FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY,
 	FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST,
 	FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER,
@@ -878,7 +901,7 @@ public:
 	EDataEntity* stored_data_entity;
 
 	std::vector<EGameItemAttributeContainer>	attribute_container_list;
-	ETextureGabarite* icon;
+	ETextureGabarite*							icon;
 	ELocalisationText							localised_name;
 	int											quantity;
 	int											rarity;

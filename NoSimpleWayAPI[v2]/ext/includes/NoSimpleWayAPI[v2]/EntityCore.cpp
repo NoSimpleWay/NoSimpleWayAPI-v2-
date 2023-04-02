@@ -983,9 +983,10 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	jc_button->main_custom_data->clickable_area_list.push_back(clickable_area_for_digit_section);
 
 	ETextArea*
-		text_area_digit_segment = ETextArea::create_centered_to_left_text_area(clickable_area_for_digit_section, _font, ELocalisationText::empty_localisation);
+	text_area_digit_segment = ETextArea::create_centered_to_left_text_area(clickable_area_for_digit_section, _font, ELocalisationText::empty_localisation);
 	text_area_digit_segment->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left + 4.0f;
 	text_area_digit_segment->can_be_edited = false;
+	text_area_digit_segment->can_change_localisation = false;
 	data->pointer_to_digit_text_area = text_area_digit_segment;
 
 	Entity::add_text_area_to_last_clickable_region(jc_button, text_area_digit_segment);
@@ -1357,8 +1358,8 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 	float
 	region_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
 
-	region_size -= parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_bottom;
-	region_size -= parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_up;
+	region_size -= parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].border_texture_size_bottom;
+	region_size -= parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].border_texture_size_up;
 
 	if (_gabarite != nullptr)
 	{
@@ -1375,8 +1376,8 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 		float icon_size_x = round(_gabarite->size_x_in_pixels * resize_factor);
 		float icon_size_y = round(_gabarite->size_y_in_pixels * resize_factor);
 
-		float icon_offset_x = (region_size - icon_size_x) / 2.0f + parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left;
-		float icon_offset_y = (region_size - icon_size_y) / 2.0f + parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_bottom;
+		float icon_offset_x = (region_size - icon_size_x) / 2.0f + parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].border_texture_size_left;
+		float icon_offset_y = (region_size - icon_size_y) / 2.0f + parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].border_texture_size_bottom;
 
 		sprite_layer_list.push_back
 		(
@@ -2084,18 +2085,49 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 		{
 			//6999999999999999999999999999999, 10 november 2022, cat, stop, pls
 
+
+
 			if (router_variant_list[selected_variant]->texture != nullptr)
 			{
+
+				EBrickStyle*
+				brick_style = &parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG];
+
+				float
+				texture_size
+				=
+				max
+				(
+					router_variant_list[selected_variant]->texture->size_x_in_pixels,
+					router_variant_list[selected_variant]->texture->size_y_in_pixels
+				);
+
+				float 
+				available_region_size = min(button_gabarite->size_x, button_gabarite->size_y);
+
+				available_region_size -= brick_style->border_texture_size_bottom;
+				available_region_size -= brick_style->border_texture_size_up;
 				//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->main_texture = router_variant_list[selected_variant].texture;
 
-				EBrickStyle* brick_style = &parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG];
-				float resize_factor =
-					min
-					(
-						(button_gabarite->size_x - brick_style->border_texture_size_bottom - brick_style->border_texture_size_up) / (float)(router_variant_list[selected_variant]->texture->size_x_in_pixels)
-						,
-						(button_gabarite->size_y - brick_style->border_texture_size_left - brick_style->border_texture_size_right) / (float)(router_variant_list[selected_variant]->texture->size_y_in_pixels)
-					);
+				float
+				resize_factor = available_region_size / texture_size;
+
+				float
+				final_icon_size_x = router_variant_list[selected_variant]->texture->size_x_in_pixels * resize_factor;
+
+				float
+				final_icon_size_y = router_variant_list[selected_variant]->texture->size_y_in_pixels * resize_factor;
+
+				float offset_x = brick_style->border_texture_size_left		+ (available_region_size - final_icon_size_x) / 2.0f;
+				float offset_y = brick_style->border_texture_size_bottom	+ (available_region_size - final_icon_size_y) / 2.0f;
+				
+				//float resize_factor =
+				//	min
+				//	(
+				//		(button_gabarite->size_x - brick_style->border_texture_size_bottom - brick_style->border_texture_size_up) / (float)(router_variant_list[selected_variant]->texture->size_x_in_pixels)
+				//		,
+				//		(button_gabarite->size_y - brick_style->border_texture_size_left - brick_style->border_texture_size_right) / (float)(router_variant_list[selected_variant]->texture->size_y_in_pixels)
+				//	);
 
 				//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->offset_x = *brick_style->side_offset_left;
 				//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->offset_y = *brick_style->side_offset_bottom;
@@ -2108,12 +2140,12 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 					nullptr,
 					nullptr,
 
-					round(button_gabarite->size_y - router_variant_list[selected_variant]->texture->size_x_in_pixels) / 2.0f,
-					round(button_gabarite->size_y - router_variant_list[selected_variant]->texture->size_y_in_pixels) / 2.0f,
+					round(offset_x),
+					round(offset_y),
 					0.0f,
 
-					round(router_variant_list[selected_variant]->texture->size_x_in_pixels * resize_factor),
-					round(router_variant_list[selected_variant]->texture->size_y_in_pixels * resize_factor),
+					round(final_icon_size_x),
+					round(final_icon_size_y),
 					0.0f
 				);
 
@@ -2126,11 +2158,14 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 			pointer_to_text_area->offset_border[BorderSide::RIGHT] = 0.0f;
 
 
-			pointer_to_text_area->localisation_text = *router_variant_list[selected_variant]->localisation;
-			pointer_to_text_area->stored_color = *(router_variant_list[selected_variant]->color);
-			pointer_to_text_area->color = *(router_variant_list[selected_variant]->color);
+			if (router_variant_list[selected_variant]->localisation != nullptr)
+			{
+				pointer_to_text_area->localisation_text = *router_variant_list[selected_variant]->localisation;
+				pointer_to_text_area->stored_color = *(router_variant_list[selected_variant]->color);
+				pointer_to_text_area->color = *(router_variant_list[selected_variant]->color);
 
-			pointer_to_text_area->change_text(pointer_to_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
+				pointer_to_text_area->change_text(pointer_to_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
+			}
 
 			//redraw
 			set_world_positions(world_position_x, world_position_y, world_position_z);

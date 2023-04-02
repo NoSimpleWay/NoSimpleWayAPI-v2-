@@ -3623,13 +3623,13 @@ void EButtonGroup::recursive_change_localisation(int _localisaton_id)
 	for (EntityButton* b : all_button_list)
 		for (ECustomData* d : b->custom_data_list)
 			for (EClickableArea* c : d->clickable_area_list)
-				if ((c->text_area != nullptr) && (!c->text_area->can_be_edited))
+				if ((c->text_area != nullptr) && (!c->text_area->can_be_edited) && (c->text_area->can_change_localisation))
 				{
 					c->text_area->original_text = c->text_area->localisation_text.localisations[ELocalisationText::active_localisation];
 				}
 
 	for (EClickableArea* c : clickable_area_list)
-		if ((c->text_area != nullptr) && (!c->text_area->can_be_edited))
+		if ((c->text_area != nullptr) && (!c->text_area->can_be_edited) && (c->text_area->can_change_localisation))
 		{
 			c->text_area->original_text = c->text_area->localisation_text.localisations[ELocalisationText::active_localisation];
 		}

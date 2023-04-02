@@ -1260,7 +1260,7 @@ void EDataActionCollection::action_refresh_loot_simulator(Entity* _entity, ECust
 
 }
 
-void EDataActionCollection::action_refresh_loot_simulator_when_slide(Entity* _entity, ECustomData* _custom_data, float _d)
+void EDataActionCollection::action_refresh_loot_simulator_when_release(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	if
 		(
@@ -1272,6 +1272,14 @@ void EDataActionCollection::action_refresh_loot_simulator_when_slide(Entity* _en
 			&&
 			(EWindowMain::loot_simulator_button_group->pointer_to_patterns_buttons_segment->selected_button != nullptr)
 		)
+	{
+		EWindowMain::loot_simulator_button_group->delayed_execution = true;
+	}
+}
+
+void EDataActionCollection::action_refresh_loot_simulator_when_press(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	if (EWindowMain::loot_simulator_button_group->pointer_to_patterns_buttons_segment->selected_button != nullptr)
 	{
 		EWindowMain::loot_simulator_button_group->delayed_execution = true;
 	}
@@ -1532,7 +1540,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 							else
 								if
 									(
-										(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
+										(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
 										)
 								{
 									item_attributes_generated_text += "\\n";
@@ -3817,7 +3825,7 @@ EWindowMain::EWindowMain()
 		);
 		jc_button->add_default_description_by_key("description_MF_factor");
 
-		jc_button->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_slide);
+		jc_button->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_release);
 		jc_button->can_be_stretched = true;
 		static_cast<EDataContainer_VerticalNamedSlider*>(jc_button->main_custom_data->data_container)->pointer_to_value = &whole_loot_simulator_group->MF_factor;
 		static_cast<EDataContainer_VerticalNamedSlider*>(jc_button->main_custom_data->data_container)->min_value = 0.2f;
@@ -3826,9 +3834,400 @@ EWindowMain::EWindowMain()
 		top_control_part->add_button_to_working_group(jc_button);
 		// // // // // // //// // // // // // //// // // // // // //
 
+		//		ADDITION: FRACTURED 
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		{
+			EntityButtonVariantRouterForLootSimulatorAddition*
+			button_router_addition = new EntityButtonVariantRouterForLootSimulatorAddition();
+			top_control_part->add_button_to_working_group(button_router_addition);
+			button_router_addition->make_as_default_router_variant_button(new ERegionGabarite(38.0f, 38.0f));
+			button_router_addition->add_default_description_by_key("description_fracture_all_items");
+
+			button_router_addition->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "FracturedItem");
+			button_router_addition->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_press);
+			button_router_addition->is_bool_attribute = true;
+
+			whole_loot_simulator_group->pointer_to_addition_button.push_back(button_router_addition);
+
+			button_router_addition->suitable_class_list.push_back("Amulets");
+			button_router_addition->suitable_class_list.push_back("Rings");
+			button_router_addition->suitable_class_list.push_back("Belts");
+			button_router_addition->suitable_class_list.push_back("Jewels");
+			button_router_addition->suitable_class_list.push_back("Abyss Jewels");
+			button_router_addition->suitable_class_list.push_back("Claws");
+			button_router_addition->suitable_class_list.push_back("Wands");
+			button_router_addition->suitable_class_list.push_back("Sceptres");
+			button_router_addition->suitable_class_list.push_back("One Hand Swords");
+			button_router_addition->suitable_class_list.push_back("Thrusting One Hand Swords");
+			button_router_addition->suitable_class_list.push_back("Two Hand Swords");
+			button_router_addition->suitable_class_list.push_back("One Hand Axes");
+			button_router_addition->suitable_class_list.push_back("Two Hand Axes");
+			button_router_addition->suitable_class_list.push_back("One Hand Maces");
+			button_router_addition->suitable_class_list.push_back("Two Hand Maces");
+			button_router_addition->suitable_class_list.push_back("Bows");
+			button_router_addition->suitable_class_list.push_back("Quivers");
+			button_router_addition->suitable_class_list.push_back("Staves");
+			button_router_addition->suitable_class_list.push_back("Warstaves");
+			button_router_addition->suitable_class_list.push_back("Fishing Rods");
+			button_router_addition->suitable_class_list.push_back("Gloves");
+			button_router_addition->suitable_class_list.push_back("Helmets");
+			button_router_addition->suitable_class_list.push_back("Boots");
+			button_router_addition->suitable_class_list.push_back("Body Armours");
+			button_router_addition->suitable_class_list.push_back("Shields");
+			button_router_addition->suitable_class_list.push_back("Maps");
+			
+
+			button_router_addition->suitable_class_list.push_back("Life Flasks");
+			button_router_addition->suitable_class_list.push_back("Mana Flasks");
+			button_router_addition->suitable_class_list.push_back("Hybrid Flasks");
+			button_router_addition->suitable_class_list.push_back("Utility Flasks");
+			button_router_addition->suitable_class_list.push_back("Expedition Logbook");
+			button_router_addition->suitable_class_list.push_back("Blueprint");
+			button_router_addition->suitable_class_list.push_back("Heist Cloak");
+			button_router_addition->suitable_class_list.push_back("Heist Brooch");
+			button_router_addition->suitable_class_list.push_back("Heist Tool");
+			button_router_addition->suitable_class_list.push_back("Heist Gear");
 
 
 
+			//INACTIVE FRACTURED
+			{
+				RouterVariant*
+				router_variant = new RouterVariant();
+				router_variant->texture = NS_EGraphicCore::load_from_textures_folder("buttons/fractured_inactive");
+				button_router_addition->router_variant_list.push_back(router_variant);
+			}
+
+			//ACTIVE FRACTURED
+			{
+				RouterVariant*
+				router_variant = new RouterVariant();
+				router_variant->texture = NS_EGraphicCore::load_from_textures_folder("buttons/fractured_active");
+				button_router_addition->router_variant_list.push_back(router_variant);
+			}
+
+			button_router_addition->select_variant(0);
+		}
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+
+
+		//		ADDITION: SYNTHESISED 
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		{
+			EntityButtonVariantRouterForLootSimulatorAddition*
+			button_router_addition = new EntityButtonVariantRouterForLootSimulatorAddition();
+			top_control_part->add_button_to_working_group(button_router_addition);
+			button_router_addition->make_as_default_router_variant_button(new ERegionGabarite(38.0f, 38.0f));
+			button_router_addition->add_default_description_by_key("description_synthesise_all_items");
+
+			button_router_addition->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "SynthesisedItem");
+			button_router_addition->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_press);
+			button_router_addition->is_bool_attribute = true;
+
+			whole_loot_simulator_group->pointer_to_addition_button.push_back(button_router_addition);
+
+			button_router_addition->suitable_class_list.push_back("Amulets");
+			button_router_addition->suitable_class_list.push_back("Rings");
+			button_router_addition->suitable_class_list.push_back("Belts");
+			button_router_addition->suitable_class_list.push_back("Jewels");
+			button_router_addition->suitable_class_list.push_back("Abyss Jewels");
+			button_router_addition->suitable_class_list.push_back("Claws");
+			button_router_addition->suitable_class_list.push_back("Wands");
+			button_router_addition->suitable_class_list.push_back("Sceptres");
+			button_router_addition->suitable_class_list.push_back("One Hand Swords");
+			button_router_addition->suitable_class_list.push_back("Thrusting One Hand Swords");
+			button_router_addition->suitable_class_list.push_back("Two Hand Swords");
+			button_router_addition->suitable_class_list.push_back("One Hand Axes");
+			button_router_addition->suitable_class_list.push_back("Two Hand Axes");
+			button_router_addition->suitable_class_list.push_back("One Hand Maces");
+			button_router_addition->suitable_class_list.push_back("Two Hand Maces");
+			button_router_addition->suitable_class_list.push_back("Bows");
+			button_router_addition->suitable_class_list.push_back("Quivers");
+			button_router_addition->suitable_class_list.push_back("Staves");
+			button_router_addition->suitable_class_list.push_back("Warstaves");
+			button_router_addition->suitable_class_list.push_back("Fishing Rods");
+			button_router_addition->suitable_class_list.push_back("Gloves");
+			button_router_addition->suitable_class_list.push_back("Helmets");
+			button_router_addition->suitable_class_list.push_back("Boots");
+			button_router_addition->suitable_class_list.push_back("Body Armours");
+			button_router_addition->suitable_class_list.push_back("Shields");
+			//button_router_addition->suitable_class_list.push_back("Maps");
+
+
+
+			//INACTIVE FRACTURED
+			{
+				RouterVariant*
+				router_variant = new RouterVariant();
+				router_variant->texture = NS_EGraphicCore::load_from_textures_folder("buttons/synthesised_inactive");
+				button_router_addition->router_variant_list.push_back(router_variant);
+			}
+
+			//ACTIVE FRACTURED
+			{
+				RouterVariant*
+				router_variant = new RouterVariant();
+				router_variant->texture = NS_EGraphicCore::load_from_textures_folder("buttons/synthesised_active");
+				button_router_addition->router_variant_list.push_back(router_variant);
+			}
+
+			button_router_addition->select_variant(0);
+		}
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+
+
+		//		ADDITION: INFLUENCE 
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		{
+			EntityButtonVariantRouterForLootSimulatorAddition*
+			button_router_addition = new EntityButtonVariantRouterForLootSimulatorAddition();
+			top_control_part->add_button_to_working_group(button_router_addition);
+			button_router_addition->make_as_default_router_variant_button(new ERegionGabarite(38.0f, 38.0f));
+			button_router_addition->add_default_description_by_key("description_add_random_influence_an_items");
+
+			button_router_addition->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "HasInfluence");
+			button_router_addition->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_press);
+			button_router_addition->is_bool_attribute = false;
+
+			whole_loot_simulator_group->pointer_to_addition_button.push_back(button_router_addition);
+
+			button_router_addition->suitable_class_list.push_back("Amulets");
+			button_router_addition->suitable_class_list.push_back("Rings");
+			button_router_addition->suitable_class_list.push_back("Belts");
+			button_router_addition->suitable_class_list.push_back("Jewels");
+			button_router_addition->suitable_class_list.push_back("Abyss Jewels");
+			button_router_addition->suitable_class_list.push_back("Claws");
+			button_router_addition->suitable_class_list.push_back("Wands");
+			button_router_addition->suitable_class_list.push_back("Sceptres");
+			button_router_addition->suitable_class_list.push_back("One Hand Swords");
+			button_router_addition->suitable_class_list.push_back("Thrusting One Hand Swords");
+			button_router_addition->suitable_class_list.push_back("Two Hand Swords");
+			button_router_addition->suitable_class_list.push_back("One Hand Axes");
+			button_router_addition->suitable_class_list.push_back("Two Hand Axes");
+			button_router_addition->suitable_class_list.push_back("One Hand Maces");
+			button_router_addition->suitable_class_list.push_back("Two Hand Maces");
+			button_router_addition->suitable_class_list.push_back("Bows");
+			button_router_addition->suitable_class_list.push_back("Quivers");
+			button_router_addition->suitable_class_list.push_back("Staves");
+			button_router_addition->suitable_class_list.push_back("Warstaves");
+			button_router_addition->suitable_class_list.push_back("Fishing Rods");
+			button_router_addition->suitable_class_list.push_back("Gloves");
+			button_router_addition->suitable_class_list.push_back("Helmets");
+			button_router_addition->suitable_class_list.push_back("Boots");
+			button_router_addition->suitable_class_list.push_back("Body Armours");
+			button_router_addition->suitable_class_list.push_back("Shields");
+			button_router_addition->suitable_class_list.push_back("Maps");
+
+			ELocalisationText
+			l_text;
+
+
+			l_text.base_name = "Elder";
+			l_text.localisations[NSW_localisation_EN] = "Elder";
+			l_text.localisations[NSW_localisation_RU] = "Древнего";
+			button_router_addition->add_one_of_this_string_values.push_back(l_text);
+
+			l_text.base_name = "Shaper";
+			l_text.localisations[NSW_localisation_EN] = "Shaper";
+			l_text.localisations[NSW_localisation_RU] = "Создателя";
+			button_router_addition->add_one_of_this_string_values.push_back(l_text);
+
+			l_text.base_name = "Redeemer";
+			l_text.localisations[NSW_localisation_EN] = "Redeemer";
+			l_text.localisations[NSW_localisation_RU] = "Избавительницы";
+			button_router_addition->add_one_of_this_string_values.push_back(l_text);
+
+			l_text.base_name = "Warlord";
+			l_text.localisations[NSW_localisation_EN] = "Warlord";
+			l_text.localisations[NSW_localisation_RU] = "Вождя";
+			button_router_addition->add_one_of_this_string_values.push_back(l_text);
+
+			l_text.base_name = "Hunter";
+			l_text.localisations[NSW_localisation_EN] = "Hunter";
+			l_text.localisations[NSW_localisation_RU] = "Охотника";
+			button_router_addition->add_one_of_this_string_values.push_back(l_text);
+
+
+			l_text.base_name = "Crusader";
+			l_text.localisations[NSW_localisation_EN] = "Crusader";
+			l_text.localisations[NSW_localisation_RU] = "Крестоносца";
+			button_router_addition->add_one_of_this_string_values.push_back(l_text);
+
+
+			//INACTIVE FRACTURED
+			{
+				RouterVariant*
+				router_variant = new RouterVariant();
+				router_variant->texture = NS_EGraphicCore::load_from_textures_folder("buttons/influence_inactive");
+				button_router_addition->router_variant_list.push_back(router_variant);
+			}
+
+			//ACTIVE FRACTURED
+			{
+				RouterVariant*
+				router_variant = new RouterVariant();
+				router_variant->texture = NS_EGraphicCore::load_from_textures_folder("buttons/influence_active");
+				button_router_addition->router_variant_list.push_back(router_variant);
+			}
+
+			button_router_addition->select_variant(0);
+		}
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+		//		ADDITION: CORRUPTED 
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		{
+			EntityButtonVariantRouterForLootSimulatorAddition*
+				button_router_addition = new EntityButtonVariantRouterForLootSimulatorAddition();
+			top_control_part->add_button_to_working_group(button_router_addition);
+			button_router_addition->make_as_default_router_variant_button(new ERegionGabarite(38.0f, 38.0f));
+			button_router_addition->add_default_description_by_key("description_corrupt_all_items");
+
+			button_router_addition->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "Corrupted");
+			button_router_addition->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_press);
+			button_router_addition->is_bool_attribute = true;
+
+			whole_loot_simulator_group->pointer_to_addition_button.push_back(button_router_addition);
+
+			button_router_addition->suitable_class_list.push_back("Amulets");
+			button_router_addition->suitable_class_list.push_back("Rings");
+			button_router_addition->suitable_class_list.push_back("Belts");
+			button_router_addition->suitable_class_list.push_back("Jewels");
+			button_router_addition->suitable_class_list.push_back("Abyss Jewels");
+			button_router_addition->suitable_class_list.push_back("Claws");
+			button_router_addition->suitable_class_list.push_back("Wands");
+			button_router_addition->suitable_class_list.push_back("Sceptres");
+			button_router_addition->suitable_class_list.push_back("One Hand Swords");
+			button_router_addition->suitable_class_list.push_back("Thrusting One Hand Swords");
+			button_router_addition->suitable_class_list.push_back("Two Hand Swords");
+			button_router_addition->suitable_class_list.push_back("One Hand Axes");
+			button_router_addition->suitable_class_list.push_back("Two Hand Axes");
+			button_router_addition->suitable_class_list.push_back("One Hand Maces");
+			button_router_addition->suitable_class_list.push_back("Two Hand Maces");
+			button_router_addition->suitable_class_list.push_back("Bows");
+			button_router_addition->suitable_class_list.push_back("Quivers");
+			button_router_addition->suitable_class_list.push_back("Staves");
+			button_router_addition->suitable_class_list.push_back("Warstaves");
+			button_router_addition->suitable_class_list.push_back("Fishing Rods");
+			button_router_addition->suitable_class_list.push_back("Gloves");
+			button_router_addition->suitable_class_list.push_back("Helmets");
+			button_router_addition->suitable_class_list.push_back("Boots");
+			button_router_addition->suitable_class_list.push_back("Body Armours");
+			button_router_addition->suitable_class_list.push_back("Shields");
+			button_router_addition->suitable_class_list.push_back("Maps");
+
+
+			button_router_addition->suitable_class_list.push_back("Life Flasks");
+			button_router_addition->suitable_class_list.push_back("Mana Flasks");
+			button_router_addition->suitable_class_list.push_back("Hybrid Flasks");
+			button_router_addition->suitable_class_list.push_back("Utility Flasks");
+			button_router_addition->suitable_class_list.push_back("Expedition Logbook");
+			button_router_addition->suitable_class_list.push_back("Blueprint");
+			button_router_addition->suitable_class_list.push_back("Heist Cloak");
+			button_router_addition->suitable_class_list.push_back("Heist Brooch");
+			button_router_addition->suitable_class_list.push_back("Heist Tool");
+			button_router_addition->suitable_class_list.push_back("Heist Gear");
+
+
+
+			//INACTIVE FRACTURED
+			{
+				RouterVariant*
+					router_variant = new RouterVariant();
+				router_variant->texture = NS_EGraphicCore::load_from_textures_folder("buttons/corrupted_inactive");
+				button_router_addition->router_variant_list.push_back(router_variant);
+			}
+
+			//ACTIVE FRACTURED
+			{
+				RouterVariant*
+					router_variant = new RouterVariant();
+				router_variant->texture = NS_EGraphicCore::load_from_textures_folder("buttons/corrupted_active");
+				button_router_addition->router_variant_list.push_back(router_variant);
+			}
+
+			button_router_addition->select_variant(0);
+		}
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		//		ADDITION: IDENTIFIED 
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		{
+			EntityButtonVariantRouterForLootSimulatorAddition*
+				button_router_addition = new EntityButtonVariantRouterForLootSimulatorAddition();
+			top_control_part->add_button_to_working_group(button_router_addition);
+			button_router_addition->make_as_default_router_variant_button(new ERegionGabarite(38.0f, 38.0f));
+			button_router_addition->add_default_description_by_key("description_identify_all_items");
+
+			button_router_addition->target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "Identified");
+			button_router_addition->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator_when_press);
+			button_router_addition->is_bool_attribute = true;
+
+			whole_loot_simulator_group->pointer_to_addition_button.push_back(button_router_addition);
+
+			button_router_addition->suitable_class_list.push_back("Amulets");
+			button_router_addition->suitable_class_list.push_back("Rings");
+			button_router_addition->suitable_class_list.push_back("Belts");
+			button_router_addition->suitable_class_list.push_back("Jewels");
+			button_router_addition->suitable_class_list.push_back("Abyss Jewels");
+			button_router_addition->suitable_class_list.push_back("Claws");
+			button_router_addition->suitable_class_list.push_back("Wands");
+			button_router_addition->suitable_class_list.push_back("Sceptres");
+			button_router_addition->suitable_class_list.push_back("One Hand Swords");
+			button_router_addition->suitable_class_list.push_back("Thrusting One Hand Swords");
+			button_router_addition->suitable_class_list.push_back("Two Hand Swords");
+			button_router_addition->suitable_class_list.push_back("One Hand Axes");
+			button_router_addition->suitable_class_list.push_back("Two Hand Axes");
+			button_router_addition->suitable_class_list.push_back("One Hand Maces");
+			button_router_addition->suitable_class_list.push_back("Two Hand Maces");
+			button_router_addition->suitable_class_list.push_back("Bows");
+			button_router_addition->suitable_class_list.push_back("Quivers");
+			button_router_addition->suitable_class_list.push_back("Staves");
+			button_router_addition->suitable_class_list.push_back("Warstaves");
+			button_router_addition->suitable_class_list.push_back("Fishing Rods");
+			button_router_addition->suitable_class_list.push_back("Gloves");
+			button_router_addition->suitable_class_list.push_back("Helmets");
+			button_router_addition->suitable_class_list.push_back("Boots");
+			button_router_addition->suitable_class_list.push_back("Body Armours");
+			button_router_addition->suitable_class_list.push_back("Shields");
+			button_router_addition->suitable_class_list.push_back("Maps");
+
+
+			button_router_addition->suitable_class_list.push_back("Life Flasks");
+			button_router_addition->suitable_class_list.push_back("Mana Flasks");
+			button_router_addition->suitable_class_list.push_back("Hybrid Flasks");
+			button_router_addition->suitable_class_list.push_back("Utility Flasks");
+			button_router_addition->suitable_class_list.push_back("Expedition Logbook");
+			button_router_addition->suitable_class_list.push_back("Blueprint");
+			button_router_addition->suitable_class_list.push_back("Heist Cloak");
+			button_router_addition->suitable_class_list.push_back("Heist Brooch");
+			button_router_addition->suitable_class_list.push_back("Heist Tool");
+			button_router_addition->suitable_class_list.push_back("Heist Gear");
+
+
+
+			//INACTIVE FRACTURED
+			{
+				RouterVariant*
+					router_variant = new RouterVariant();
+				router_variant->texture = NS_EGraphicCore::load_from_textures_folder("buttons/identified_inactive");
+				button_router_addition->router_variant_list.push_back(router_variant);
+			}
+
+			//ACTIVE FRACTURED
+			{
+				RouterVariant*
+					router_variant = new RouterVariant();
+				router_variant->texture = NS_EGraphicCore::load_from_textures_folder("buttons/identified_active");
+				button_router_addition->router_variant_list.push_back(router_variant);
+			}
+
+			button_router_addition->select_variant(0);
+		}
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -5580,7 +5979,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute = new GameItemAttribute();
 	jc_filter_block_attribute->localisation = jc_localisation;
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_TEXT;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT;
 	jc_filter_block_attribute->have_operator = true;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
@@ -5592,7 +5991,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute = new GameItemAttribute();
 	jc_filter_block_attribute->localisation = jc_localisation;
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_TEXT;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT;
 	jc_filter_block_attribute->have_operator = true;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
@@ -11288,7 +11687,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 											(
 												(matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
 												||
-												(matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
+												(matched_filter_block_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
 												)
 											&&
 											(last_non_listed_line->target_button_with_value->main_text_area != nullptr)
@@ -12279,7 +12678,7 @@ void EWindowMain::register_pattern_boss_loot()
 
 
 			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "item tag";
 			tag_filter->suitable_values.push_back("Pinnacle boss loot");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -14294,9 +14693,6 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			game_item_generator->add_rarity(0, 3, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
 			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
-			game_item_generator->add_random_influence(0.05f);
-			game_item_generator->add_named_attrubite("Corrupted", 0.10f);
-			game_item_generator->add_named_attrubite("Identified", 0.10f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -14342,10 +14738,7 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 
 			game_item_generator->add_rarity(0, 3, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_random_influence(0.05f);
 			game_item_generator->add_sockets_and_links(1,4,0,4);
-			game_item_generator->add_named_attrubite("Corrupted", 0.10f);
-			game_item_generator->add_named_attrubite("Identified", 0.10f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -14393,9 +14786,6 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			game_item_generator->add_rarity(0, 3, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
 			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
-			game_item_generator->add_random_influence(0.05f);
-			game_item_generator->add_named_attrubite("Corrupted", 0.10f);
-			game_item_generator->add_named_attrubite("Identified", 0.10f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -14441,9 +14831,6 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			game_item_generator->add_rarity(0, 3, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
 			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
-			game_item_generator->add_random_influence(0.05f);
-			game_item_generator->add_named_attrubite("Corrupted", 0.10f);
-			game_item_generator->add_named_attrubite("Identified", 0.10f);
 		}
 
 		//TWO HAND MELEE
@@ -14490,9 +14877,6 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				game_item_generator->add_rarity(0, 3, 3.0f);
 				game_item_generator->add_item_level(-3, 3, 1.0f);
 				game_item_generator->add_sockets_and_links(1, 6, 0, 6);
-				game_item_generator->add_random_influence(0.05f);
-				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
-				game_item_generator->add_named_attrubite("Identified", 0.10f);
 			}
 
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -14539,9 +14923,6 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				game_item_generator->add_rarity(0, 3, 3.0f);
 				game_item_generator->add_item_level(-3, 3, 1.0f);
 				game_item_generator->add_sockets_and_links(1, 6, 0, 6);
-				game_item_generator->add_random_influence(0.05f);
-				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
-				game_item_generator->add_named_attrubite("Identified", 0.10f);
 			}
 			
 			//QUIVERS
@@ -14573,9 +14954,6 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 
 				game_item_generator->add_rarity(0, 3, 3.0f);
 				game_item_generator->add_item_level(-3, 3, 1.0f);
-				game_item_generator->add_random_influence(0.05f);
-				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
-				game_item_generator->add_named_attrubite("Identified", 0.10f);
 			}
 
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -14626,9 +15004,6 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				game_item_generator->add_rarity(0, 3, 3.0f);
 				game_item_generator->add_item_level(-3, 3, 1.0f);
 				game_item_generator->add_sockets_and_links(1, 4, 0, 6);
-				game_item_generator->add_random_influence(0.05f);
-				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
-				game_item_generator->add_named_attrubite("Identified", 0.10f);
 			}
 
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -14677,9 +15052,6 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				game_item_generator->add_rarity(0, 3, 3.0f);
 				game_item_generator->add_item_level(-3, 3, 1.0f);
 				game_item_generator->add_sockets_and_links(1, 3, 0, 3);
-				game_item_generator->add_random_influence(0.05f);
-				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
-				game_item_generator->add_named_attrubite("Identified", 0.10f);
 			}
 
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -14726,9 +15098,6 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				game_item_generator->add_rarity(0, 3, 3.0f);
 				game_item_generator->add_item_level(-3, 3, 1.0f);
 				game_item_generator->add_sockets_and_links(1, 3, 0, 3);
-				game_item_generator->add_random_influence(0.05f);
-				game_item_generator->add_named_attrubite("Corrupted", 0.10f);
-				game_item_generator->add_named_attrubite("Identified", 0.10f);
 			}
 
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -14786,7 +15155,6 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 
 			game_item_generator->add_rarity(0, 3, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_random_influence(0.05f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -14836,7 +15204,6 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 
 			game_item_generator->add_rarity(0, 3, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_random_influence(0.05f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -14898,7 +15265,6 @@ void EWindowMain::register_pattern_all_equip()
 
 			game_item_generator->add_rarity(0, 3, 3.0f);
 			game_item_generator->add_item_level(-3 ,3, 1.0f);
-			game_item_generator->add_random_influence(0.05f);
 			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
 		}
 
@@ -14952,7 +15318,6 @@ void EWindowMain::register_pattern_all_equip()
 
 			game_item_generator->add_rarity(0, 3, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_random_influence(0.05f);
 			game_item_generator->add_sockets_and_links(1, 6, 0, 6);
 		}
 
@@ -14992,7 +15357,6 @@ void EWindowMain::register_pattern_all_equip()
 
 			game_item_generator->add_rarity(0, 3, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_random_influence(0.05f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -15049,7 +15413,6 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_random_influence(0.1f);
 			game_item_generator->add_sockets_and_links(1, 3, 0, 3);
 		}
 
@@ -15085,7 +15448,6 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_random_influence(0.1f);
 			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
 		}
 
@@ -15123,7 +15485,6 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_random_influence(0.1f);
 		}
 
 		/////////////////////////////			ITEM GENERATOR (BODY ARMOUR)			/////////////////////////////////////////////
@@ -15165,7 +15526,6 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_random_influence(0.1f);
 			game_item_generator->add_sockets_and_links(1, 6, 0, 6);
 		}
 
@@ -16513,7 +16873,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 				(
 					(container->target_game_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
 					||
-					(container->target_game_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
+					(container->target_game_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
 					)
 			{
 				result_string += " ";
@@ -18119,15 +18479,120 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 			if (rand() % 100 < (int)(a_generator->chance_to_generate * 100.0f))
 			{
 				EGameItemAttributeContainer
-					attribute_container;
+				attribute_container;
 
 				a_generator->target_attribute_container = &attribute_container;
 				a_generator->execute_generation(_game_item);
 
 				attribute_container.target_attribute = a_generator->target_attribute;
 				_game_item->attribute_container_list.push_back(attribute_container);
-
 			}
+	}
+
+	//add some specific attributes from loot simulator, like [fractured][synthesised][corrupted] etc...
+	for (EntityButtonVariantRouterForLootSimulatorAddition* addition_button : EWindowMain::loot_simulator_button_group->pointer_to_addition_button)
+	if (addition_button->selected_variant == 1)
+	{
+		///EInputCore::logger_simple_info("try add addition attribute");
+
+		bool this_attribute_already_exist	= false;
+		bool this_class_is_suitable			= false;
+
+		//check if target attribute already exist on item
+		for (EGameItemAttributeContainer game_item_attribute_container : _game_item->attribute_container_list)
+		{
+				if (game_item_attribute_container.target_attribute == addition_button->target_attribute)
+				{
+					this_attribute_already_exist = true;
+					break;
+				}
+		}
+
+		if (!this_attribute_already_exist)
+		{
+			std::string item_class = "?";
+			EGameItemAttributeContainer*
+			container_with_class = nullptr;
+
+			//for (EGameItemAttributeContainer attribute_container : _game_item->attribute_container_list)
+			for (int i = 0; i < _game_item->attribute_container_list.size(); i++)
+			{
+				if (_game_item->attribute_container_list[i].target_attribute == GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_CLASS])
+				{
+					container_with_class = &_game_item->attribute_container_list[i];
+					//EInputCore::logger_param("searched", container_with_class->target_attribute->localisation.base_name);
+
+					break;
+				}
+			}
+
+			
+		
+			if (container_with_class != nullptr)
+			{
+				//EInputCore::logger_param("listed_value_list.size()", container_with_class->listed_value_list.size());
+				//EInputCore::logger_param("container_with_class", container_with_class->target_attribute->localisation.base_name);
+				//this_class_is_suitable = true;
+
+				for (std::string addition_button_suitable_string : addition_button->suitable_class_list)
+				{
+					//EInputCore::logger_param("suitable", addition_button_suitable_string);
+
+					for (ELocalisationText l_text : container_with_class->listed_value_list)
+					{
+						//EInputCore::logger_param ("l_text", l_text.base_name);
+						
+						//std::cout << std::endl;
+
+						if (l_text.base_name == addition_button_suitable_string)
+						{
+
+							this_class_is_suitable = true;
+
+							break;
+						}
+					}
+				}
+
+				
+			}
+		}
+
+		if
+		(
+			(!this_attribute_already_exist)
+			&&
+			(this_class_is_suitable)
+		)
+		{
+			EGameItemAttributeContainer
+			attribute_container;
+
+			attribute_container.target_attribute = addition_button->target_attribute;
+
+			if (addition_button->is_bool_attribute) { attribute_container.attribute_value_bool = true; }
+
+			if (!addition_button->add_one_of_this_string_values.empty())
+			{
+				attribute_container.listed_value_list.push_back
+				(
+					addition_button->add_one_of_this_string_values[rand() % addition_button->add_one_of_this_string_values.size()]
+				);
+			}
+
+			_game_item->attribute_container_list.push_back(attribute_container);
+		}
+
+		/*{			
+			EGameItemAttributeContainer
+			game_item_attribute_container;
+
+			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HEIGHT];
+			game_item_attribute_container.attribute_value_int = 99;
+
+		_game_item->attribute_container_list.push_back(game_item_attribute_container); 
+		}*/
+
 	}
 
 	//WIDTH AND HEIGHT
@@ -18143,12 +18608,12 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 		if (DataEntityUtils::get_tag_value_by_name(0, "item height", _game_item->stored_data_entity) != "")
 		{
 			EGameItemAttributeContainer
-				attribute_container;
+				game_item_attribute_container;
 
-			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HEIGHT];
-			attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item height", _game_item->stored_data_entity));
+			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HEIGHT];
+			game_item_attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item height", _game_item->stored_data_entity));
 
-			_game_item->attribute_container_list.push_back(attribute_container);
+			_game_item->attribute_container_list.push_back(game_item_attribute_container);
 
 			//EInputCore::logger_param("height", attribute_container.attribute_value);	
 		}
@@ -18157,12 +18622,12 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 		if (DataEntityUtils::get_tag_value_by_name(0, "item width", _game_item->stored_data_entity) != "")
 		{
 			EGameItemAttributeContainer
-				attribute_container;
+			game_item_attribute_container;
 
-			attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_WIDTH];
-			attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item width", _game_item->stored_data_entity));
+			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_WIDTH];
+			game_item_attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item width", _game_item->stored_data_entity));
 
-			_game_item->attribute_container_list.push_back(attribute_container);
+			_game_item->attribute_container_list.push_back(game_item_attribute_container);
 
 			//EInputCore::logger_param("width", attribute_container.attribute_value);
 		}
@@ -18173,7 +18638,7 @@ void GameItemGenerator::add_rarity(int _rarity_min, int _rarity_max, float _pow)
 {
 	//		value
 	GameAttributeGeneratorRarity*
-		attribute_generator = new GameAttributeGeneratorRarity("Rarity");
+	attribute_generator = new GameAttributeGeneratorRarity("Rarity");
 
 	//		parameters
 	attribute_generator->min_value = _rarity_min;
@@ -19082,18 +19547,25 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 					}
 
 					//sockets group
-					if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
+					if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
 					{
 
+						//SOCKETS GROUP
 						if
+						(
+							//(matched_item_attribute_container->target_attribute->localisation.base_name == "Sockets")
+							//&&
+							//(line_group->target_game_attribute->localisation.base_name == "Sockets")
+							//&&
 							(
 								!is_sockets_matched
 								(
-									line_group->target_button_with_value->main_text_area->original_text,		//block
+									line_group->target_button_with_value->main_text_area->original_text,				//block
 									line_group->target_button_with_condition->return_base_text_from_selected_router(),	//operator
-									matched_item_attribute_container->attribute_value_str						//item
+									matched_item_attribute_container->attribute_value_str								//item
 								)
-								)
+							)
+						)
 						{
 							return false;
 						}
@@ -19146,7 +19618,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 						return false;//if item have no alternative quality, always return false
 					}
 
-					if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_TEXT)
+					if (non_listed_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
 					{
 						if
 							(
@@ -19349,41 +19821,41 @@ bool EButtonGroupLootSimulator::is_condition_satisfied(int _left, std::string _o
 
 bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::string _operator, std::string _item)
 {
-	int sockets_count_block = 0;
-	int red_count_block = 0;
-	int green_count_block = 0;
-	int blue_count_block = 0;
-	int white_count_block = 0;
-	int abyss_count_block = 0;
-	int delve_count_block = 0;
+	int sockets_count_block	= 0;
+	int red_count_block		= 0;
+	int green_count_block	= 0;
+	int blue_count_block	= 0;
+	int white_count_block	= 0;
+	int abyss_count_block	= 0;
+	int delve_count_block	= 0;
 
-	int sockets_count_item = 0;
-	int red_count_item = 0;
-	int green_count_item = 0;
-	int blue_count_item = 0;
-	int white_count_item = 0;
-	int abyss_count_item = 0;
-	int delve_count_item = 0;
+	int sockets_count_item	= 0;
+	int red_count_item		= 0;
+	int green_count_item	= 0;
+	int blue_count_item		= 0;
+	int white_count_item	= 0;
+	int abyss_count_item	= 0;
+	int delve_count_item	= 0;
 
 	for (int i = 0; i < _block.length(); i++)
 	{
 
 		if
-			(
-				(_block[i] == '0')
-				||
-				(_block[i] == '1')
-				||
-				(_block[i] == '2')
-				||
-				(_block[i] == '3')
-				||
-				(_block[i] == '4')
-				||
-				(_block[i] == '5')
-				||
-				(_block[i] == '6')
-				)
+		(
+			(_block[i] == '0')
+			||
+			(_block[i] == '1')
+			||
+			(_block[i] == '2')
+			||
+			(_block[i] == '3')
+			||
+			(_block[i] == '4')
+			||
+			(_block[i] == '5')
+			||
+			(_block[i] == '6')
+		)
 		{
 			sockets_count_block = std::stoi(&_block[i]);
 		}
@@ -19401,21 +19873,21 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 	{
 
 		if
-			(
-				(_item[i] == '0')
-				||
-				(_item[i] == '1')
-				||
-				(_item[i] == '2')
-				||
-				(_item[i] == '3')
-				||
-				(_item[i] == '4')
-				||
-				(_item[i] == '5')
-				||
-				(_item[i] == '6')
-				)
+		(
+			(_item[i] == '0')
+			||
+			(_item[i] == '1')
+			||
+			(_item[i] == '2')
+			||
+			(_item[i] == '3')
+			||
+			(_item[i] == '4')
+			||
+			(_item[i] == '5')
+			||
+			(_item[i] == '6')
+		)
 		{
 			sockets_count_item = std::stoi(&_item[i]);
 		}
@@ -19428,13 +19900,67 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 		if (_item[i] == 'D') { delve_count_item++; }
 	}
 
-	if (!is_condition_satisfied(sockets_count_item, _operator, sockets_count_block)) { return false; }
-	if (!is_condition_satisfied(red_count_item, _operator, red_count_block)) { return false; }
-	if (!is_condition_satisfied(green_count_item, _operator, green_count_block)) { return false; }
-	if (!is_condition_satisfied(blue_count_item, _operator, blue_count_block)) { return false; }
-	if (!is_condition_satisfied(white_count_item, _operator, white_count_block)) { return false; }
-	if (!is_condition_satisfied(abyss_count_item, _operator, abyss_count_block)) { return false; }
-	if (!is_condition_satisfied(delve_count_item, _operator, delve_count_block)) { return false; }
+	if
+	(
+		(sockets_count_block > 0)
+		&&
+		(!is_condition_satisfied(sockets_count_item, _operator, sockets_count_block))
+	)
+	{ return false; }
+
+
+	if
+	(
+		(red_count_block > 0)
+		&&
+		(!is_condition_satisfied(red_count_item,	_operator, red_count_block))
+	)
+	{ return false; }
+
+
+	if
+	(
+		(green_count_block > 0)
+		&&
+		(!is_condition_satisfied(green_count_item,	_operator, green_count_block))
+	)
+	{ return false; }
+
+
+	if
+	(
+		(blue_count_block > 0)
+		&&
+		(!is_condition_satisfied(blue_count_item,	_operator, blue_count_block))
+	)	
+	{ return false; }
+
+
+	if
+	(
+		(white_count_block > 0)
+		&&
+		(!is_condition_satisfied(white_count_item,	_operator, white_count_block))
+	)
+	{ return false; }
+
+
+	if
+	(
+		(abyss_count_block > 0)
+		&&
+		(!is_condition_satisfied(abyss_count_item,	_operator, abyss_count_block))
+	)
+	{ return false; }
+
+
+	if
+	(
+		(delve_count_block > 0)
+		&&
+		(!is_condition_satisfied(delve_count_item,	_operator, delve_count_block))
+	)
+	{ return false; }
 
 
 	return true;

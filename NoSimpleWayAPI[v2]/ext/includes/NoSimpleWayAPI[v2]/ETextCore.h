@@ -20,7 +20,7 @@ public:
 	std::string base_name = "";
 	std::string stored_key = "";
 
-	std::string localisations[NSW_languages_count] = { "1" };
+	std::string localisations[NSW_languages_count] = { "" };
 
 	static int active_localisation;
 	static ELocalisationText get_localisation_by_key(std::string _key);
@@ -264,6 +264,7 @@ public:
 
 
 	bool can_be_edited = true;
+	bool can_change_localisation = true;
 	bool forcibly_create_glyph = false;
 
 	ESpriteLayer* sprite_layer;
