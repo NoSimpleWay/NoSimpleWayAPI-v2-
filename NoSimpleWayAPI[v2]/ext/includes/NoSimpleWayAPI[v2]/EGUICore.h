@@ -305,6 +305,7 @@ class EButtonGroup
 {
 public:
 
+	bool silicon_idiot = false;
 	std::string debug_name = "";
 	//float* offset_x = new float(0.0f);
 	//float* offset_y = new float(0.0f);
@@ -317,7 +318,9 @@ public:
 	std::vector<EButtonGroupLine> button_line_list;
 
 	void recursive_set_suppressed();
-	bool suppressed = false;
+	bool is_blocked_by_superfocus();
+
+	bool group_is_suppressed = false;
 
 	bool debug_translation = false;
 	bool can_be_moved = true;
@@ -381,6 +384,7 @@ public:
 	static EButtonGroup* focused_button_group_mouse_unpressed;
 	static EButtonGroup* focused_button_group_with_slider;
 	static EButtonGroup* catched_group_for_translation;
+	static EButtonGroup* super_focus_on_this_group;
 
 
 	static EButtonGroupFastMessage* pointer_to_fast_message_group;
@@ -438,7 +442,8 @@ public:
 	float max_size_y = 350.0f;
 
 
-	void check_slider();
+	bool check_slider();
+	void check_slider_and_call_recursive_pass_if_need();
 
 	void recursive_group_stretch_childs_x();
 	void recursive_group_stretch_childs_y();
@@ -463,6 +468,9 @@ public:
 	static void change_group(EButtonGroup* _group);
 	static void recursive_change_group_first_pass(EButtonGroup* _group);
 	static void change_group_second_pass(EButtonGroup* _group);
+
+
+	static void soft_recursion_first_pass(EButtonGroup* _group);
 	/*-----------------------------------*/
 
 

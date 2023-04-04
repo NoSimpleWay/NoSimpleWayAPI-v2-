@@ -6,7 +6,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Капля чернил"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -20,7 +20,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Участь хуже смерти"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -34,7 +34,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Астральная защита"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -49,7 +49,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Симулякр"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -63,7 +63,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Знакомый зов"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -77,7 +77,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Прощальный дар матери"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -91,7 +91,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Музыка на ветру"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Common	"
 	
@@ -105,7 +105,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Забытое богатство"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -119,7 +119,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Акклиматизация"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 
 	[tag]"item tag"		[value]"League: Ritual"
 	
@@ -135,7 +135,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пророчество Акила"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -148,7 +148,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Соблазнительная награда"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -162,7 +162,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Один в темноте"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -176,7 +176,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Цена анархии"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -190,7 +190,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Высокомерие ваал"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -204,7 +204,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Услуга душегуба"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -218,7 +218,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Арсенал Атзири"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -232,7 +232,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Наглость"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -246,7 +246,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Лазурная ярость"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -261,7 +261,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Награда Азирана"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -275,7 +275,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Искушающие ожидания"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -289,7 +289,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Посмертная красота"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -303,7 +303,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Благословение Господа"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"worth"		[value]"Trash"
 	
@@ -317,7 +317,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сделка вслепую"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -330,7 +330,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дар правосудия"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -343,7 +343,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дар Первых"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item width"	[value]"1"
@@ -357,7 +357,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	
@@ -371,7 +371,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бескрайние владения"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -384,7 +384,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мечта лучника"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -397,7 +397,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Братские сбережения"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -410,7 +410,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Собратья по изгнанию"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item tag"		[value]"League: Ritual"
@@ -425,7 +425,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Спрятанное сокровище"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -438,7 +438,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Горящая кровь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -451,7 +451,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Призыв Первых"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -464,7 +464,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Доля Камерии"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -477,7 +477,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Восторг картографа"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -490,7 +490,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Баламут"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -503,7 +503,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кошачий совет"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -516,7 +516,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шах и мат"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -531,7 +531,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Удушающая вина"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -546,7 +546,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Упоение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -559,7 +559,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Несносные слова"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -572,7 +572,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тёмные мечты"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -585,7 +585,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тёмное искушение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -598,7 +598,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Смерть"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -611,7 +611,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Смертельные замыслы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -624,7 +624,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пари полубога"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -637,7 +637,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тёмная половина"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -650,7 +650,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Осквернённая добродетель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -663,7 +663,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Неизбежный крах"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -676,7 +676,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Подчинение Диаллы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -689,7 +689,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Прозрение Дориани"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -704,7 +704,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Божественное правосудие"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -717,7 +717,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Безумие Доэдре"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -730,7 +730,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Облачённый в мечты"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -745,7 +745,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Угасающий свет"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -760,7 +760,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пьющий землю"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -773,7 +773,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бесконечная ночь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -788,7 +788,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Отголоски любви"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -801,7 +801,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Император Чистоты"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -814,7 +814,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Удача императора"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -827,7 +827,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Выгравированные в крови"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -840,7 +840,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"От костей к пеплу"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -853,7 +853,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Новое изобретение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -866,7 +866,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дом"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -879,7 +879,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Возрождение и обновление"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -892,7 +892,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Судьбоносная встреча"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -907,7 +907,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Запретная сила"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 
@@ -921,7 +921,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дружба"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"item tag"		[value]"Deleted"
 	[tag]"worth"		[value]"Trash"
 	
@@ -935,7 +935,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Клятва камнерезчика"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -948,7 +948,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Подарок Азенат"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -961,7 +961,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дары царицы каменитов"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -974,7 +974,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Счастье камнереза"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -989,7 +989,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Проблеск надежды"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1002,7 +1002,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Загробное знание"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1015,7 +1015,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Гармония душ"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1028,7 +1028,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Преследующие тени"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -1043,7 +1043,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Её маска"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1056,7 +1056,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Гетерохромия"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1069,7 +1069,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Надежда"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1082,7 +1082,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Зеркальный лабиринт"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -1095,7 +1095,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Высокомерие"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1108,7 +1108,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Смирение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1121,7 +1121,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Решение охотника"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1134,7 +1134,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Трофей охотника"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1147,7 +1147,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бессмертная решимость"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1160,7 +1160,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Имперское наследие"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1173,7 +1173,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сюрприз"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1186,7 +1186,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Порочность хранителя"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -1201,7 +1201,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Утраченная любовь Лантадора"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1214,7 +1214,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Летейское искушение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -1229,7 +1229,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Последняя надежда"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1242,7 +1242,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"На произвол судьбы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1255,7 +1255,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Свет и правда"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1268,7 +1268,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пережитки прошлого"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1281,7 +1281,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Затерянные миры"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1294,7 +1294,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Любовь сквозь лёд"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -1309,7 +1309,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Верность"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1322,7 +1322,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Удачная сделка"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1335,7 +1335,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Счастливая колода"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1348,7 +1348,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Передышка Лисы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1361,7 +1361,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Mawr Blaidd"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1374,7 +1374,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Безжалостное орудие"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1387,7 +1387,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Правда в силе"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1400,7 +1400,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Рукавички"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1413,7 +1413,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Монохромность"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -1426,7 +1426,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Большего всегда мало"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1439,7 +1439,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Без следа"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1452,7 +1452,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Корона Нука"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1465,7 +1465,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Безмятежные минуты"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1478,7 +1478,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Идеал"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1491,7 +1491,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Гордыня"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1504,7 +1504,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Гордость Первых"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1517,7 +1517,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кузня Прометея"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1530,7 +1530,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Богатство"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1543,7 +1543,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пришествие хаоса"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1556,7 +1556,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дождь-искуситель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1569,7 +1569,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Крысы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1582,7 +1582,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Перерождение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1595,7 +1595,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дерзкие амбиции"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -1610,7 +1610,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Поминовение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1623,7 +1623,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Клятва Самбодхи"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1636,7 +1636,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Нечто тёмное"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -1651,7 +1651,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мореплаватель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1664,7 +1664,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Семь лет неудач"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -1677,7 +1677,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Осколок рока"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1690,7 +1690,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Укоризна общества"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -1705,7 +1705,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Растраченное богатство"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 
@@ -1719,7 +1719,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пораженный молнией"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1732,7 +1732,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Помощь безгрешных"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -1745,7 +1745,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Академик"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -1758,7 +1758,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Поклонник"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1771,7 +1771,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Эстет"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1784,7 +1784,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Правая рука Архимага"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1797,7 +1797,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дюжий волшебник"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1810,7 +1810,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Цель путешествия"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -1823,7 +1823,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тюремщик"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Fucking slave"
@@ -1838,7 +1838,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Взгляд вперёд"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -1851,7 +1851,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чемпион Арены"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1864,7 +1864,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Аптекарь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -1877,7 +1877,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Исполнитель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -1892,7 +1892,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Левиафан"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -1907,7 +1907,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Цена послушания"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Very expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -1922,7 +1922,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сандалии пастуха"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -1937,7 +1937,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Армия крови"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -1950,7 +1950,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Щитоносец"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Very expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -1965,7 +1965,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Художник"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -1980,7 +1980,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"League: Ritual"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -1993,7 +1993,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мститель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2006,7 +2006,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пробуждённые"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2019,7 +2019,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сделка"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2032,7 +2032,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Воитель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2047,7 +2047,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Женщина-медведь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -2062,7 +2062,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Зверь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2075,7 +2075,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Предательство"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2088,7 +2088,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Колючее соцветие"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2101,7 +2101,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пылающий огонь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2114,7 +2114,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тело"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2127,7 +2127,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кости"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2140,7 +2140,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Разлом"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2153,7 +2153,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Хрупкий император"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2166,7 +2166,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тайник"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2179,7 +2179,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Какофония"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2192,7 +2192,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Призыв"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2205,7 +2205,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чёрный ворон"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2218,7 +2218,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Картограф"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2231,7 +2231,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Катаклизм"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2244,7 +2244,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Катализатор"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2257,7 +2257,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Небесный судья"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2270,7 +2270,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Небесный камень"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2283,7 +2283,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оковы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2296,7 +2296,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ловкач"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -2309,7 +2309,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Избранный"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2322,7 +2322,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Канун бури"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2335,7 +2335,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Проводник"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2348,7 +2348,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Стремление"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2361,7 +2361,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Проклятый монарх"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2374,7 +2374,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Проклятые"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2387,7 +2387,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Одарённый франт"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2400,7 +2400,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тёмный маг"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2413,7 +2413,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Темнейший сон"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2426,7 +2426,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Соглашение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2439,7 +2439,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Обманщик"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2452,7 +2452,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Глубокие"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2465,7 +2465,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Демон"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -2478,7 +2478,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Демоница"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2491,7 +2491,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Доктор"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -2504,7 +2504,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Двойник"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2517,7 +2517,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дракон"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2530,7 +2530,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сердце дракона"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -2543,7 +2543,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сновидец"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2556,7 +2556,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Страна грёз"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2569,7 +2569,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пьяный патриций"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2582,7 +2582,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Лёгкая прогулка"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2595,7 +2595,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Аномальное увядание"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2608,7 +2608,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вездесущая тьма"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2621,7 +2621,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бесконечная тьма"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -2634,7 +2634,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Выносливость"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2647,7 +2647,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Просветлённый"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -2660,7 +2660,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Побег"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2673,7 +2673,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Эфемерность"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2686,7 +2686,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Исследователь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2699,7 +2699,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Око Ужаса"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2712,7 +2712,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Глаз дракона"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2725,7 +2725,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бездонные глубины"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2738,7 +2738,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пир"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2751,7 +2751,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Враг"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -2764,7 +2764,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Торговец рыбой"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2777,7 +2777,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пронзатель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2790,7 +2790,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сила природы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2803,7 +2803,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дурак"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2816,7 +2816,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бесформенное море"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2829,7 +2829,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Забытые"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2842,7 +2842,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Лиса"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2855,7 +2855,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Игрок"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2868,7 +2868,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Крикливая мощь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -2881,7 +2881,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Камнерезчик"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2894,7 +2894,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Джентльмен"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2907,7 +2907,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Гладиатор"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2920,7 +2920,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой век"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2933,7 +2933,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Величайшие намерения"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2946,7 +2946,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пропасть"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2959,7 +2959,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Крепкое сердце"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -2972,7 +2972,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Жнец"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2985,7 +2985,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Отшельник"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -2998,7 +2998,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Героическая попытка"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3011,7 +3011,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Скопище знаний"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3024,7 +3024,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Скопидом"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3037,7 +3037,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Голод"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3050,7 +3050,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бессмертный"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -3063,7 +3063,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Песнопение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3076,7 +3076,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Невинный"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3089,7 +3089,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Инокулированный"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3102,7 +3102,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ненасытный"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3115,7 +3115,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Изобретатель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3128,9 +3128,26 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Железный бард"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Rusted Bard"
+	[tag]"name RU"		[value]"Ржавый бард"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Trash"
+	
+	[tag]"item tag"		[value]"Introduced: Crucible league"
+	[tag]"item tag"		[value]"Changed in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3142,7 +3159,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шут"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3155,7 +3172,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Благо ювелира"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3168,7 +3185,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Журналист"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3181,7 +3198,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путешествие"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3194,7 +3211,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Клинок Венценосца"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3207,7 +3224,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сердце вождя"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3220,7 +3237,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Приземление"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3233,7 +3250,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Последний воин"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -3246,7 +3263,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Лич"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3259,7 +3276,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Похититель жизни"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3272,7 +3289,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Лев"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3285,7 +3302,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Долгое собрание"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3298,7 +3315,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Долгий дозор"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -3313,7 +3330,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Господин в чёрном"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3326,7 +3343,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Владыка триумфа"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3339,7 +3356,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Любовник"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3352,7 +3369,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Жрица Лунарис"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3365,7 +3382,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Безумный царь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3378,7 +3395,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Хозяин"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3391,7 +3408,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мастер-ремесленник"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3404,7 +3421,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Правитель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 
@@ -3418,7 +3435,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Наёмник"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3431,7 +3448,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Посланник"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3444,7 +3461,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дар кузнеца"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3457,7 +3474,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Гора"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3470,7 +3487,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Медсестра"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -3483,7 +3500,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Клятва"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3496,7 +3513,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Скрытный"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3509,7 +3526,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Подношение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3522,7 +3539,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Старик"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3535,7 +3552,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Единство"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3548,7 +3565,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Толстосум"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3561,7 +3578,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вожак стаи"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3574,7 +3591,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пакт"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3587,7 +3604,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пациент"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -3602,7 +3619,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кающийся"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3615,7 +3632,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Поэт"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3628,7 +3645,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Полимат"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3641,7 +3658,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дикобраз"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3654,7 +3671,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Цена преданности"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -3667,7 +3684,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Цена защиты"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3680,7 +3697,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Первородный"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3693,7 +3710,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Профессор"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3706,7 +3723,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Потомок Лунарис"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3719,7 +3736,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Головоломка"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3732,7 +3749,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Царица"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3745,7 +3762,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бешеный Роа"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3758,7 +3775,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Царство"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3771,7 +3788,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Риск"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3784,7 +3801,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ритуал стихий"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3797,7 +3814,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Путь к власти"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3811,7 +3828,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3825,7 +3842,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3839,7 +3856,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3853,7 +3870,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -3866,7 +3883,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Выгоревший луг"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3880,7 +3897,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3894,7 +3911,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3908,7 +3925,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -3922,7 +3939,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -3936,7 +3953,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3949,7 +3966,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Печать"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3963,7 +3980,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -3977,7 +3994,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -3991,7 +4008,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -4004,7 +4021,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Искра и пламя"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4017,7 +4034,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Баловень"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4030,7 +4047,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Противоборство"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4043,7 +4060,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Призыватель бури"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4056,7 +4073,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Стратег"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -4070,7 +4087,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4083,7 +4100,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Солнце"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4096,7 +4113,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Хирург"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4109,7 +4126,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Топограф"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4122,7 +4139,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Выживший"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4135,7 +4152,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пропитание"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 
@@ -4149,7 +4166,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дань Венценосца мечей"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4162,7 +4179,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чудотворец"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4175,7 +4192,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Престол"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4188,7 +4205,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Верстак умельца"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4201,7 +4218,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Башня"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4214,7 +4231,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Предатель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4227,7 +4244,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Испытание"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4240,7 +4257,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Перекати-поле"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4253,7 +4270,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Луна в сумерках"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4266,7 +4283,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Близнецы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4279,7 +4296,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тиран"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4292,7 +4309,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Неустрашимый"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4305,7 +4322,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Неоспоримый"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4318,7 +4335,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Неожиданная награда"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4331,7 +4348,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Союз"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4344,7 +4361,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Валькирия"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4357,7 +4374,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Долина стальных ларей"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 
@@ -4371,7 +4388,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Простор"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4384,7 +4401,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Провидец"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4397,7 +4414,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ничто"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4410,7 +4427,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Смотритель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4423,7 +4440,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Воевода"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4436,7 +4453,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Наблюдатель"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4449,7 +4466,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Паутина"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4462,7 +4479,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Белый рыцарь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4475,7 +4492,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Белая пелена"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -4490,7 +4507,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Увядшая роза"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4503,7 +4520,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ветер"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4516,7 +4533,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ведьма"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4529,7 +4546,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Волк"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4542,7 +4559,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Волчье наследие"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4555,7 +4572,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тень Волка"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4568,7 +4585,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Укус Волчьего короля"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4581,7 +4598,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Росомаха"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4594,7 +4611,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пожиратель миров"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4607,7 +4624,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Гнев"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4620,7 +4637,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Горемыка"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4633,7 +4650,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Жажда знаний"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4646,7 +4663,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Три лика в темноте"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4659,7 +4676,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Три голоса"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4672,7 +4689,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Небесный гром"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4685,7 +4702,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Утерянная реликвия"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4698,7 +4715,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Спокойствие"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -4711,7 +4728,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Охотник за сокровищами"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4724,7 +4741,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Трискайдекафобия"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4737,7 +4754,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Подставь другую щёку"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4750,7 +4767,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Освобождённый"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4763,7 +4780,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Подземный лес"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4776,7 +4793,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Безответная любовь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Very expensive"
 
 	[tag]"item width"	[value]"1"
@@ -4789,7 +4806,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тщеславие"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4802,7 +4819,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Злая мощь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4815,7 +4832,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Знак Винии"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4828,7 +4845,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Стихийная пустота"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4841,7 +4858,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Изменчивая сила"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4854,7 +4871,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Богатство и власть"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -4867,7 +4884,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Тайная вечеря"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4880,7 +4897,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Опустелость"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4893,7 +4910,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Синее море"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4906,7 +4923,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Потомство"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4919,7 +4936,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Цена предвидения"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4932,7 +4949,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Глаза разума"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4945,7 +4962,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ужасная тайна космоса"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4958,7 +4975,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Благословение Муши"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -4971,7 +4988,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ценный раритет"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -4984,7 +5001,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бездушие"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -4997,7 +5014,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дементофобия"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5010,7 +5027,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Амбициозная одержимость"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5024,7 +5041,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Объятья зимы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5037,7 +5054,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мудрость Самбодхи"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5050,7 +5067,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Энтузиасты"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5063,7 +5080,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Нарушенные обещания"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -5076,7 +5093,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кисть, краска и палитра"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5089,7 +5106,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Смертоносное веселье"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5102,7 +5119,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дух приключений"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
@@ -5115,7 +5132,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вечная война"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5128,7 +5145,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Предрассудки"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5141,7 +5158,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кратчайший путь"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5154,7 +5171,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шулер"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
@@ -5167,7 +5184,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Скромная просьба"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5180,7 +5197,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Светящийся клад"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5193,7 +5210,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Крючок"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
@@ -5209,7 +5226,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Многообещающие амбиции"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5225,7 +5242,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Божественная красота"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5241,7 +5258,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Подарок на свадьбу"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5257,7 +5274,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Смертельная тоска"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5273,7 +5290,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Безумная кошка"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Very expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5289,7 +5306,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бесконечные перемены"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5305,7 +5322,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пыльное воспоминание"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5321,7 +5338,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Возвращение крысы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5337,7 +5354,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Завершающий штрих"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5354,7 +5371,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Отчаянный поход"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5369,7 +5386,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Совершенный камень"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5384,7 +5401,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сокровища ваал"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 	
@@ -5400,7 +5417,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кроличья лапка"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5415,7 +5432,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"В погоне за риском"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5430,7 +5447,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Князь тьмы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5445,7 +5462,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Улов"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	[tag]"item tag"		[value]"Deleted"
 	
@@ -5461,7 +5478,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вечные узы"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5476,7 +5493,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Презрение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5491,7 +5508,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Скаут"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5506,7 +5523,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Испытание Хранителя"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5521,7 +5538,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Забытое сокровище"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5536,7 +5553,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Лис в терновнике"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5551,7 +5568,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Претендент"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
@@ -5568,7 +5585,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Осуждающие голоса"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5583,7 +5600,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Драгоценности"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5598,7 +5615,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Молчание и хлад"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5613,7 +5630,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Страдания в темноте"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5628,7 +5645,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Безустанный экстрактор"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5643,7 +5660,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оправданные амбиции"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5658,7 +5675,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Паразитирующие пассажиры"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5673,7 +5690,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Двойственность"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5688,7 +5705,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Неуловимая добыча"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5703,7 +5720,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Преображение"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5718,7 +5735,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Магнум опус"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5733,7 +5750,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Несовершенные воспоминания"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5748,7 +5765,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Магмовый краб"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5764,7 +5781,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Человек с медведем"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
@@ -5780,10 +5797,92 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Доброта Аливии"
 
 	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Card"
+	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Brother's Gift"
+	[tag]"name RU"		[value]"Подарок брата"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Very expenvise"
+	
+	[tag]"item tag"		[value]"Introduced: Crucible league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Soul Quenched"
+	[tag]"name RU"		[value]"Утешение души"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Crucible league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Poisoned Faith"
+	[tag]"name RU"		[value]"Отравленная вера"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Crucible league"
+
+	[tag]"item width"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"A Chilling Wind"
+	[tag]"name RU"		[value]"Пронизывающий ветер"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Crucible league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item width"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Matryoshka"
+	[tag]"name RU"		[value]"Матрёшка"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Crucible league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

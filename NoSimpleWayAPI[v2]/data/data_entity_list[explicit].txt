@@ -31375,13 +31375,33 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[провокации](6-8)% шанс спровоцировать врагов при нанесении удара атаками"
 
 	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Extinguishing"
 
-	[tag]"name EN"		[value]"[of Extinguishing](21-24)% chance to Avoid being Ignited"
-	[tag]"name RU"		[value]"[подавления](21-24)% шанс избежать поджога"
+	[tag]"name EN"		[value]"[of Extinguishing](41-50)% chance to Avoid being Ignited"
+	[tag]"name RU"		[value]"[подавления](41-50)% шанс избежать поджога"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Fireproofing"
+
+	[tag]"name EN"		[value]"[of Fireproofing](41-50)% chance to Avoid being Ignited"
+	[tag]"name RU"		[value]"[огнеупорности](41-50)% шанс избежать поджога"
+	
+	
+	
+	
+	
 
 	
 ADD_NEW_DATA_ENTITY
@@ -31389,8 +31409,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Extinguishing"
 
-	[tag]"name EN"		[value]"[of Extinguishing](25-30)% chance to Avoid being Ignited"
-	[tag]"name RU"		[value]"[подавления](25-30)% шанс избежать поджога"
+	[tag]"name EN"		[value]"[of Extinguishing](31-40)% chance to Avoid being Ignited"
+	[tag]"name RU"		[value]"[подавления](31-40)% шанс избежать поджога"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Inflammability"
+
+	[tag]"name EN"		[value]"[of Inflammability](31-40)% chance to Avoid being Ignited"
+	[tag]"name RU"		[value]"[несгораемости](31-40)% шанс избежать поджога"
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	
 ADD_NEW_DATA_ENTITY
@@ -31398,8 +31438,26 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Insulating"
 
-	[tag]"name EN"		[value]"[of Insulating](21-24)% chance to Avoid being Shocked"
-	[tag]"name RU"		[value]"[изоляции](21-24)% шанс избежать шока"
+	[tag]"name EN"		[value]"[of Insulating](41-50)% chance to Avoid being Shocked"
+	[tag]"name RU"		[value]"[изоляции](41-50)% шанс избежать шока"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Lightning Rod"
+
+	[tag]"name EN"		[value]"[of the Lightning Rod](41-50)% chance to Avoid being Shocked"
+	[tag]"name RU"		[value]"[громоотвода](41-50)% шанс избежать шока"
+	
+	
+	
+	
+	
+	
+	
 
 	
 ADD_NEW_DATA_ENTITY
@@ -31407,8 +31465,18 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Insulating"
 
-	[tag]"name EN"		[value]"[of Insulating](25-30)% chance to Avoid being Shocked"
-	[tag]"name RU"		[value]"[изоляции](25-30)% шанс избежать шока"
+	[tag]"name EN"		[value]"[of Insulating](31-40)% chance to Avoid being Shocked"
+	[tag]"name RU"		[value]"[изоляции](31-40)% шанс избежать шока"
+
+
+
+
+
+
+
+
+
+
 
 	
 ADD_NEW_DATA_ENTITY
@@ -31416,17 +31484,54 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Unwavering"
 
-	[tag]"name EN"		[value]"[of Unwavering](21-24)% chance to Avoid being Stunned"
-	[tag]"name RU"		[value]"[стойкости](21-24)% шанс избежать оглушения"
+	[tag]"name EN"		[value]"[of Unwavering](41-50)% chance to Avoid being Stunned"
+	[tag]"name RU"		[value]"[стойкости](41-50)% шанс избежать оглушения"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Poise"
 
+	[tag]"name EN"		[value]"[of Poise](41-50)% chance to Avoid being Stunned"
+	[tag]"name RU"		[value]"[выправки](41-50)% шанс избежать оглушения"
+
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Unwavering"
 
-	[tag]"name EN"		[value]"[of Unwavering](25-30)% chance to Avoid being Stunned"
-	[tag]"name RU"		[value]"[стойкости](25-30)% шанс избежать оглушения"
+	[tag]"name EN"		[value]"[of Unwavering](31-40)% chance to Avoid being Stunned"
+	[tag]"name RU"		[value]"[стойкости](31-40)% шанс избежать оглушения"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Balance"
+
+	[tag]"name EN"		[value]"[of Balance](31-40)% chance to Avoid being Stunned"
+	[tag]"name RU"		[value]"[равновесия](31-40)% шанс избежать оглушения"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	
 ADD_NEW_DATA_ENTITY
@@ -31446,23 +31551,75 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[of Retaliation](7-10)% increased Cast Speed if a Minion has been Killed Recently"
 	[tag]"name RU"		[value]"[возмездия](7-10)% повышение скорости сотворения чар, если приспешник недавно был убит"
 
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	
+	[tag]"base name"	[value]"of Mending"
+	[tag]"name EN"		[value]"[of Mending](41-50)% chance to Avoid Bleeding"
+	[tag]"name RU"		[value]"[лечения](41-50)% шанс избежать кровотечения"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Mending"
-
-	[tag]"name EN"		[value]"[of Mending](21-24)% chance to Avoid Bleeding"
-	[tag]"name RU"		[value]"[лечения](21-24)% шанс избежать кровотечения"
-
+	
+	[tag]"base name"	[value]"of the Tourniquet"
+	[tag]"name EN"		[value]"[of the Tourniquet](41-50)% chance to Avoid Bleeding"
+	[tag]"name RU"		[value]"[жгута](41-50)% шанс избежать кровотечения"	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"Specularity-Scroll"
+	
 	[tag]"base name"	[value]"of Mending"
+	[tag]"name EN"		[value]"[of Mending](31-40)% chance to Avoid Bleeding"
+	[tag]"name RU"		[value]"[лечения](31-40)% шанс избежать кровотечения"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	
+	[tag]"base name"	[value]"of the Stemming"
+	[tag]"name EN"		[value]"[of the Stemming](31-41)% chance to Avoid Bleeding"
+	[tag]"name RU"		[value]"[закупоривания](31-41)% шанс избежать кровотечения"
 
-	[tag]"name EN"		[value]"[of Mending](25-30)% chance to Avoid Bleeding"
-	[tag]"name RU"		[value]"[лечения](25-30)% шанс избежать кровотечения"
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
 
 	
 ADD_NEW_DATA_ENTITY
@@ -31470,8 +31627,23 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Warming"
 
-	[tag]"name EN"		[value]"[of Warming](21-24)% chance to Avoid being Chilled (21-24)% chance to Avoid being Frozen"
-	[tag]"name RU"		[value]"[тепла](21-24)% шанс избежать охлаждения (21-24)% шанс избежать заморозки"
+	[tag]"name EN"		[value]"[of Warming](41-50)% chance to Avoid being Chilled (41-50)% chance to Avoid being Frozen"
+	[tag]"name RU"		[value]"[тепла](41-40)% шанс избежать охлаждения (41-50)% шанс избежать заморозки"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Heating"
+
+	[tag]"name EN"		[value]"[of Heating](41-50)% chance to Avoid being Chilled (41-50)% chance to Avoid being Frozen"
+	[tag]"name RU"		[value]"[жара](41-50)% шанс избежать охлаждения (41-50)% шанс избежать заморозки"
+
+
+
+
+
 
 	
 ADD_NEW_DATA_ENTITY
@@ -31479,26 +31651,58 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Warming"
 
-	[tag]"name EN"		[value]"[of Warming](25-30)% chance to Avoid being Chilled (25-30)% chance to Avoid being Frozen"
-	[tag]"name RU"		[value]"[тепла](25-30)% шанс избежать охлаждения (25-30)% шанс избежать заморозки"
+	[tag]"name EN"		[value]"[of Warming](31-41)% chance to Avoid being Chilled (31-41)% chance to Avoid being Frozen"
+	[tag]"name RU"		[value]"[тепла](31-41)% шанс избежать охлаждения (31-41)% шанс избежать заморозки"
 
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Tolerance"
 
-	[tag]"name EN"		[value]"[of Tolerance](21-24)% chance to Avoid being Poisoned"
-	[tag]"name RU"		[value]"[терпения](21-24)% шанс избежать отравления"
+	[tag]"name EN"		[value]"[of Tolerance](41-50)% chance to Avoid being Poisoned"
+	[tag]"name RU"		[value]"[терпения](41-50)% шанс избежать отравления"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Immunity"
 
+	[tag]"name EN"		[value]"[of Immunity](41-50)% chance to Avoid being Poisoned"
+	[tag]"name RU"		[value]"[иммунитета](41-50)% шанс избежать отравления"
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Tolerance"
 
-	[tag]"name EN"		[value]"[of Tolerance](25-30)% chance to Avoid being Poisoned"
-	[tag]"name RU"		[value]"[терпения](25-30)% шанс избежать отравления"
+	[tag]"name EN"		[value]"[of Tolerance](31-40)% chance to Avoid being Poisoned"
+	[tag]"name RU"		[value]"[терпения](31-40)% шанс избежать отравления"
+	
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
 
 	
 ADD_NEW_DATA_ENTITY

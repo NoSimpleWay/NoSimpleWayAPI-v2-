@@ -120,6 +120,8 @@ namespace NS_DefaultGabarites
 
 	ETextureGabarite* texture_ray;
 
+	ETextureGabarite* texture_WARNING;
+
 
 }
 
@@ -208,7 +210,7 @@ void EDataActionCollection::action_select_this_text_variant(Entity* _entity, ECu
 
 	target_text_area->change_text(clicked_button_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 
-	root_group->button_group_is_active = false;
+	root_group->close_this_group();
 }
 
 void EDataActionCollection::action_mark_parent_group_as_removed(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -322,10 +324,12 @@ void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity
 	{
 		EButtonGroupConfirmAction::confirm_decline_group->pointer_to_confirm_button->stored_action = &EDataActionCollection::action_open_loot_filters_list_window;
 		EButtonGroupConfirmAction::confirm_decline_group->activate_move_to_foreground_and_center();
+
+		EButtonGroup::super_focus_on_this_group = EButtonGroupConfirmAction::confirm_decline_group;
 	}
 	else
 	{
-		EButtonGroupConfirmAction::confirm_decline_group->button_group_is_active = false;
+		EButtonGroupConfirmAction::confirm_decline_group->close_this_group();
 		EWindowMain::existing_loot_filter_list->activate_move_to_foreground_and_center();
 		EWindowMain::load_loot_filter_list();
 	}
@@ -348,7 +352,7 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 
 	EWindowMain::loot_filter_editor->group_list.clear();
 
-	EWindowMain::existing_loot_filter_list->button_group_is_active = false;
+	EWindowMain::existing_loot_filter_list->close_this_group();
 
 	EWindowMain::tab_list_group->selected_button->main_text_area->change_text(((EntityButtonForLootFilterSelector*)_entity)->filter_name);
 	EWindowMain::tab_list_group->selected_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = ((EntityButtonForLootFilterSelector*)_entity)->filter_name;
@@ -382,7 +386,7 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 
 	for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
 	{
-		if (group->suppressed) { group->recursive_set_suppressed(); }
+		if (group->group_is_suppressed) { group->recursive_set_suppressed(); }
 	}
 
 	//EWindowMain::loot_filter_editor->realign_groups();
@@ -513,7 +517,7 @@ void EDataActionCollection::action_add_text_as_item(Entity* _entity, ECustomData
 	//EButtonGroup::change_group(data_entity_container->pointer_to_group_item_receiver);
 	data_entity_container->pointer_to_group_item_receiver->need_change = true;
 
-	((EntityButton*)(_entity))->parent_button_group->root_group->button_group_is_active = false;
+	((EntityButton*)(_entity))->parent_button_group->root_group->close_this_group();
 }
 
 void EDataActionCollection::action_add_new_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -540,7 +544,7 @@ void EDataActionCollection::action_add_new_filter_block(Entity* _entity, ECustom
 	EWindowMain::loot_filter_editor->need_refresh = true;
 
 	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-	{EButtonGroup::add_content_to_filter_block_group->button_group_is_active = false;}
+	{EButtonGroup::add_content_to_filter_block_group->close_this_group();}
 
 	//EWindowMain::make_unsaved_loot_filter_changer();
 
@@ -616,7 +620,7 @@ void EDataActionCollection::action_invoke_button_action_in_sound_group(Entity* _
 			sound_button->target_sound_group->action_on_select_for_button(sound_button, _custom_data, _d);
 		}
 
-		sound_button->target_sound_group->button_group_is_active = false;
+		sound_button->target_sound_group->close_this_group();
 	}
 }
 
@@ -742,7 +746,7 @@ void EDataActionCollection::action_create_new_loot_filter_with_name(Entity* _ent
 		//EButtonGroup::refresh_button_group(filter_editor);
 		filter_editor->need_refresh;
 
-		EWindowMain::create_new_loot_filter_group->button_group_is_active = false;
+		EWindowMain::create_new_loot_filter_group->close_this_group();;
 
 		EDataActionCollection::action_save_lootfilter(_entity, _custom_data, _d);
 	}
@@ -790,7 +794,7 @@ void EDataActionCollection::action_clone_block(Entity* _entity, ECustomData* _cu
 
 	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
-		EButtonGroup::add_content_to_filter_block_group->button_group_is_active = false;
+		EButtonGroup::add_content_to_filter_block_group->close_this_group();
 	}
 
 	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
@@ -1114,6 +1118,7 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 	int selected_version_router = EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant;
 
 	if
+	(
 		(
 			(entity_button->entity_is_active())
 			&&
@@ -1123,14 +1128,17 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 			&&
 			(
 				(
-					(loot_button->matched_show_hide_block->button_show_hide->selected_variant == 1)
+					(loot_button->matched_show_hide_block->button_show_hide->selected_variant == 1)//show by filter block
 					&&
-					(loot_button->matched_show_hide_block->version_routers[selected_version_router]->selected_variant != 1)
+					(loot_button->matched_show_hide_block->version_routers[selected_version_router]->selected_variant != 1)//not forcebly hidden by version control
 				)
 				||
 				(EButtonGroupLootSimulator::show_hidden)
 			)
 		)
+		||
+		(loot_button->stored_game_item->warn_when_hidden)
+	)
 	{
 		if
 			(
@@ -1222,13 +1230,37 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 		
 
 
-		//		MINIMAP ICON
-		if (loot_button->matched_minimap_icon_color != nullptr)
-		{
-			float size_multiplier = 1.0f - loot_button->matched_minimap_icon_size->selected_variant * 0.25;
-			ETextureGabarite* texture_gabarite = loot_button->matched_minimap_icon_shape->router_variant_list[loot_button->matched_minimap_icon_shape->selected_variant]->texture;
 
-			NS_EGraphicCore::set_active_color(loot_button->matched_minimap_icon_color->router_variant_list[loot_button->matched_minimap_icon_color->selected_variant]->color);
+
+
+		if
+		(
+			//if block hidden by any way
+			(loot_button != nullptr)
+			&&
+			(
+				(loot_button->matched_show_hide_block->button_show_hide->selected_variant != 1)//hidden by filter block
+				||
+				(loot_button->matched_show_hide_block->version_routers[selected_version_router]->selected_variant == 1)//forcebly hidden by version control
+			)
+			&&//and warn when item hidden
+			(loot_button->stored_game_item->warn_when_hidden)
+
+		)
+		{
+
+			//WARNING BG
+			if (EWindowMain::loot_simulator_button_group->warning_sign_show_flag)
+			{
+				target_temp_color->set_color_RGBA(1.0f, 0.0f, 0.0f, 0.75f);
+			}
+			else
+			{
+				target_temp_color->set_color_RGBA(1.0f, 1.0f, 1.0f, 0.9f);
+			}
+			EWindowMain::set_color_version(target_temp_color, loot_button->matched_bg_color_block->version_routers[selected_version_router]->selected_variant);
+			NS_EGraphicCore::set_active_color(target_temp_color);
+
 			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 			(
@@ -1236,16 +1268,103 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
 				//x pos
-				entity_button->button_gabarite->world_position_x - texture_gabarite->size_x_in_pixels * 0.5f,
+				entity_button->button_gabarite->world_position_x,
 
 				//y pos
 				entity_button->button_gabarite->world_position_y,
 
-				texture_gabarite->size_x_in_pixels * size_multiplier,
-				texture_gabarite->size_y_in_pixels * size_multiplier,
+				entity_button->button_gabarite->size_x,
+				entity_button->button_gabarite->size_y,
 
-				texture_gabarite
+				NS_DefaultGabarites::texture_gabarite_white_pixel
 			);
+
+
+			//WARNING RAMA
+			
+			if (EWindowMain::loot_simulator_button_group->warning_sign_show_flag)
+			{
+				target_temp_color->set_color_RGBA(1.0f, 1.0f, 0.0f, 1.0f);
+			}
+			else
+			{
+				target_temp_color->set_color_RGBA(1.0f, 0.0f, 0.0f, 0.85f);
+			}
+			EWindowMain::set_color_version(target_temp_color, loot_button->matched_rama_color_block->version_routers[selected_version_router]->selected_variant);
+			NS_EGraphicCore::set_active_color(target_temp_color);
+
+			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+			NS_ERenderCollection::add_data_to_vertex_buffer_rama
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+				//x pos
+				entity_button->button_gabarite->world_position_x,
+
+				//y pos
+				entity_button->button_gabarite->world_position_y,
+
+				entity_button->button_gabarite->size_x,
+				entity_button->button_gabarite->size_y,
+
+				6.0f,
+
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+
+			{
+				float size_multiplier = 1.0f;
+				ETextureGabarite*
+				texture_gabarite = NS_DefaultGabarites::texture_WARNING;
+
+				NS_EGraphicCore::set_active_color(1.0f, 1.0f, 1.0f, 1.0f);
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+					//x pos
+					entity_button->button_gabarite->world_position_x - texture_gabarite->size_x_in_pixels * 0.5f,
+
+					//y pos
+					entity_button->button_gabarite->world_position_y,
+
+					texture_gabarite->size_x_in_pixels * size_multiplier,
+					texture_gabarite->size_y_in_pixels * size_multiplier,
+
+					texture_gabarite
+				);
+			}
+		}
+		else
+		{
+			//		MINIMAP ICON
+			if (loot_button->matched_minimap_icon_color != nullptr)
+			{
+				float size_multiplier = 1.0f - loot_button->matched_minimap_icon_size->selected_variant * 0.25;
+				ETextureGabarite* texture_gabarite = loot_button->matched_minimap_icon_shape->router_variant_list[loot_button->matched_minimap_icon_shape->selected_variant]->texture;
+
+				NS_EGraphicCore::set_active_color(loot_button->matched_minimap_icon_color->router_variant_list[loot_button->matched_minimap_icon_color->selected_variant]->color);
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+					//x pos
+					entity_button->button_gabarite->world_position_x - texture_gabarite->size_x_in_pixels * 0.5f,
+
+					//y pos
+					entity_button->button_gabarite->world_position_y,
+
+					texture_gabarite->size_x_in_pixels * size_multiplier,
+					texture_gabarite->size_y_in_pixels * size_multiplier,
+
+					texture_gabarite
+				);
+			}
 		}
 	}
 }
@@ -1480,13 +1599,40 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 
 			if (true/*fatruelse*/)
 			{
+				int selected_version_router = EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant;
+				//		WARNING PART FOR HIDDEN_BY_MISTAKE
+				if
+				(
+					//if block hidden by any way
+					(
+						(loot_button->matched_show_hide_block->button_show_hide->selected_variant != 1)//hidden by filter block
+						||
+						(loot_button->matched_show_hide_block->version_routers[selected_version_router]->selected_variant == 1)//forcebly hidden by version control
+					)
+					&&//and warn when item hidden
+					(loot_button->stored_game_item->warn_when_hidden)
+				)
+				{
+					
+						EButtonGroup*
+						warning_part = main_group->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 30.0f)));
+
+						warning_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+						warning_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
+
+						warning_part->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("warning_this_loot_hidden"));
+						warning_part->clickable_area_list[0]->text_area->set_color(1.0f, 0.25f, 0.1f, 1.0f);
+					
+				}
+				//
+				
+				// 
 				//		BOTTOM PART FOR ATTRIBUTES
 				EButtonGroup*
 				bottom_part = main_group->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 100.0f)));
 
 				bottom_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 				bottom_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
-
 				//
 
 
@@ -1711,7 +1857,7 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 
 	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
-		root_group->button_group_is_active = false;
+		root_group->close_this_group();
 	}
 
 	receiver->add_button_to_working_group(jc_button);
@@ -1738,6 +1884,7 @@ void EDataActionCollection::action_open_confirm_decline_window_for_autogenerated
 {
 	EWindowMain::confirm_load_autogenerated_block->target_filter_button = static_cast<EntityButtonForLootFilterSelector*>(_entity);
 	EWindowMain::confirm_load_autogenerated_block->activate_move_to_foreground_and_center();
+	EButtonGroup::super_focus_on_this_group = EWindowMain::confirm_load_autogenerated_block;
 
 }
 
@@ -1750,7 +1897,7 @@ void EDataActionCollection::action_confirm_open_autogenerated_loot_filter(Entity
 		_d
 	);
 
-	EWindowMain::confirm_load_autogenerated_block->button_group_is_active = false;
+	EWindowMain::confirm_load_autogenerated_block->close_this_group();
 }
 
 
@@ -1831,7 +1978,7 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 		//ORIGINAL
 		//str = generate_color_palette_text();
 		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->group_is_suppressed)
 			{
 
 				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
@@ -1858,7 +2005,7 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 		str = "#AUTOGENERATED\n";
 		//str += generate_color_palette_text();
 		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->group_is_suppressed)
 			{
 				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
 				{
@@ -1883,7 +2030,7 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 		str = "#AUTOGENERATED\n";
 		//str += generate_color_palette_text();
 		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->group_is_suppressed)
 			{
 				
 				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
@@ -1908,7 +2055,7 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 		str = "#AUTOGENERATED\n";
 		//str += generate_color_palette_text();
 		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->group_is_suppressed)
 			{
 				
 				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
@@ -1933,7 +2080,7 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 		str = "#AUTOGENERATED\n";
 		//str += generate_color_palette_text();
 		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->group_is_suppressed)
 			{
 			
 				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
@@ -1958,7 +2105,7 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 		str = "#AUTOGENERATED\n";
 		//str += generate_color_palette_text();
 		for (int i = 0; i < EWindowMain::loot_filter_editor->group_list.size(); i++)
-			if (!EWindowMain::loot_filter_editor->group_list[i]->suppressed)
+			if (!EWindowMain::loot_filter_editor->group_list[i]->group_is_suppressed)
 			{
 				
 				if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(EWindowMain::loot_filter_editor->group_list[i]))//filter block
@@ -4096,7 +4243,7 @@ EWindowMain::EWindowMain()
 			button_router_addition->suitable_class_list.push_back("Rings");
 			button_router_addition->suitable_class_list.push_back("Belts");
 			button_router_addition->suitable_class_list.push_back("Jewels");
-			button_router_addition->suitable_class_list.push_back("Abyss Jewel");
+			button_router_addition->suitable_class_list.push_back("Abyss Jewels");
 			button_router_addition->suitable_class_list.push_back("Claws");
 			button_router_addition->suitable_class_list.push_back("Wands");
 			button_router_addition->suitable_class_list.push_back("Sceptres");
@@ -5813,6 +5960,8 @@ void EWindowMain::preload_textures()
 	NS_DefaultGabarites::texture_help_description_exact_match[NSW_localisation_EN] = NS_EGraphicCore::load_from_textures_folder("help/ExactMatchDescription[EN]");
 	NS_DefaultGabarites::texture_help_description_exact_match[NSW_localisation_RU] = NS_EGraphicCore::load_from_textures_folder("help/ExactMatchDescription[RU]");
 
+	NS_DefaultGabarites::texture_WARNING = NS_EGraphicCore::load_from_textures_folder("icons/WARNING");
+
 
 
 
@@ -6473,15 +6622,29 @@ void EWindowMain::register_game_item_attributes()
 
 
 
-	jc_localisation.base_name = "HasImplicits";
-	jc_localisation.localisations[NSW_localisation_EN] = "Has implicit";
-	jc_localisation.localisations[NSW_localisation_RU] = "Собственное свойство";
+	jc_localisation.base_name = "HasImplicitMod";
+	jc_localisation.localisations[NSW_localisation_EN] = "Has implicit mod";
+	jc_localisation.localisations[NSW_localisation_RU] = "Есть собственное свойство";
 
 	jc_filter_block_attribute = new GameItemAttribute();
 	jc_filter_block_attribute->localisation = jc_localisation;
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->have_operator = false;
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	jc_localisation.base_name = "HasCruciblePassiveTree";
+	jc_localisation.localisations[NSW_localisation_EN] = "Crucible passive tree";
+	jc_localisation.localisations[NSW_localisation_RU] = "Пассивное дерево Горнила";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -7271,7 +7434,7 @@ void EWindowMain::register_filter_rules()
 		//filter by class "divination"
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "base class";
-		jc_filter->suitable_values_list.push_back("Divination card");
+		jc_filter->suitable_values_list.push_back("Divination cards");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
@@ -7308,7 +7471,7 @@ void EWindowMain::register_filter_rules()
 		//filter by class "divination"
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "base class";
-		jc_filter->suitable_values_list.push_back("Divination card");
+		jc_filter->suitable_values_list.push_back("Divination cards");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
@@ -7346,7 +7509,7 @@ void EWindowMain::register_filter_rules()
 		//filter by class "divination"
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "base class";
-		jc_filter->suitable_values_list.push_back("Divination card");
+		jc_filter->suitable_values_list.push_back("Divination cards");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
@@ -7384,7 +7547,7 @@ void EWindowMain::register_filter_rules()
 		//filter by class "divination"
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "base class";
-		jc_filter->suitable_values_list.push_back("Divination card");
+		jc_filter->suitable_values_list.push_back("Divination cards");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
@@ -7422,7 +7585,7 @@ void EWindowMain::register_filter_rules()
 		//filter by class "divination"
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "base class";
-		jc_filter->suitable_values_list.push_back("Divination card");
+		jc_filter->suitable_values_list.push_back("Divination cards");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
@@ -7461,7 +7624,7 @@ void EWindowMain::register_filter_rules()
 		//filter by class "divination"
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "base class";
-		jc_filter->suitable_values_list.push_back("Divination card");
+		jc_filter->suitable_values_list.push_back("Divination cards");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
@@ -11378,13 +11541,13 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 									if (_parse_mode == LootFilterOpenMode::LOOT_FILTER_OPEN_MODE_DEFAULT_FILTER_FROM_GAME)
 									{
-										jc_filter_block->suppressed = true;
+										jc_filter_block->group_is_suppressed = true;
 										jc_filter_block->is_default_filter_block = true;
 									}
 									else
 									if (_parse_mode == LootFilterOpenMode::LOOT_FILTER_OPEN_MODE_BASIC_FILTER_COLORS_FROM_GAME)
 									{
-										jc_filter_block->suppressed = true;
+										jc_filter_block->group_is_suppressed = true;
 										jc_filter_block->is_base_filter_block = true;
 									}
 								}
@@ -11775,7 +11938,9 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 												(DataEntityUtils::get_tag_value_by_name(0, "name EN", de) == buffer_text)
 												||
 												(DataEntityUtils::get_tag_value_by_name(0, "base name", de) == buffer_text)
-												)
+												||
+												(DataEntityUtils::get_tag_value_by_name(0, "short name", de) == buffer_text)
+											)
 											&&
 											(EFilterRule::matched_by_filter_rule(de, filter_rule, ""))
 											)
@@ -12240,7 +12405,10 @@ void EWindowMain::register_loot_simulator_patterns()
 
 	//register_pattern_all_currencies();
 	//register_pattern_basic_currencies();
-	register_deleted_items();
+	register_all_deleted_items();
+
+	//register_crubible_items_with_passive_tree();
+	register_new_crucible_items();
 
 	register_pattern_trash_currencies();
 	register_pattern_good_currencies();
@@ -12369,7 +12537,7 @@ void EWindowMain::register_pattern_gems()
 
 			game_item_generator->add_quality(16.0f, 23.0f, 2.0f);
 			game_item_generator->add_gem_level(19.0f, 21.0f, 2.0f);
-			game_item_generator->add_named_attrubite("Corrupted", 0.10f);
+			game_item_generator->add_flag_attrubite_by_name("Corrupted", 0.10f);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
@@ -12395,7 +12563,7 @@ void EWindowMain::register_pattern_gems()
 
 			game_item_generator->add_quality(16.0f, 23.0f, 2.0f);
 			game_item_generator->add_gem_level(19.0f, 21.0f, 2.0f);
-			game_item_generator->add_named_attrubite("Corrupted", 0.10f);
+			game_item_generator->add_flag_attrubite_by_name("Corrupted", 0.10f);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
@@ -12422,7 +12590,7 @@ void EWindowMain::register_pattern_gems()
 
 			game_item_generator->add_quality(0.0f, 23.0f, 2.0f);
 			game_item_generator->add_gem_level(1.0f, 21.0f, 2.0f);
-			game_item_generator->add_named_attrubite("Corrupted", 1.00f);
+			game_item_generator->add_flag_attrubite_by_name("Corrupted", 1.00f);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
@@ -12754,7 +12922,7 @@ void EWindowMain::register_pattern_divinations_expensive()
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Card");
+			tag_filter->suitable_values.push_back("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
@@ -12805,7 +12973,7 @@ void EWindowMain::register_pattern_divinations_useful()
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Card");
+			tag_filter->suitable_values.push_back("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
@@ -12856,7 +13024,7 @@ void EWindowMain::register_pattern_divinations_cheap()
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Card");
+			tag_filter->suitable_values.push_back("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
@@ -12906,7 +13074,7 @@ void EWindowMain::register_pattern_divinations_trash()
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Card");
+			tag_filter->suitable_values.push_back("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
@@ -13568,18 +13736,15 @@ void EWindowMain::register_pattern_delve_items()
 				game_item_generator = new GameItemGenerator();
 
 			game_item_generator->generations_count = 1;
-			ELocalisationText l_text;
-			l_text.base_name = "Delve body armour";
-			l_text.localisations[NSW_localisation_EN] = "Delve body armour";
-			l_text.localisations[NSW_localisation_RU] = "Нагрудный доспех спуска";
-			game_item_generator->filtered_by_exact_name = l_text;
 
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
 
-			l_text;
-			l_text.base_name = "Body armour";
-			l_text.localisations[NSW_localisation_EN] = "Body armour";
-			l_text.localisations[NSW_localisation_RU] = "Нагрудный доспех";
-			game_item_generator->add_class(l_text);
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Body armours");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
@@ -13618,32 +13783,15 @@ void EWindowMain::register_pattern_delve_items()
 				game_item_generator = new GameItemGenerator();
 
 			game_item_generator->generations_count = 1;
-			ELocalisationText l_text;
-			l_text.base_name = "Delve gloves";
-			l_text.localisations[NSW_localisation_EN] = "Delve gloves";
-			l_text.localisations[NSW_localisation_RU] = "Перчатки спуска";
-			game_item_generator->filtered_by_exact_name = l_text;
 
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
 
-
-				//		parameters
-				ELocalisationText l_text;
-				l_text.base_name = "Gloves";
-				l_text.localisations[NSW_localisation_EN] = "Gloves";
-				l_text.localisations[NSW_localisation_RU] = "Перчатки";
-				value_generator->exact_values_list.push_back(l_text);
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Gloves");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
 			{
@@ -13679,28 +13827,14 @@ void EWindowMain::register_pattern_delve_items()
 
 			game_item_generator->generations_count = 1;
 
-			ELocalisationText l_text;
-			l_text.base_name = "Delve helmet";
-			l_text.localisations[NSW_localisation_EN] = "Delve helmet";
-			l_text.localisations[NSW_localisation_RU] = "Шлем спуска";
-			game_item_generator->filtered_by_exact_name = l_text;
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
 
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				ELocalisationText l_text;
-				l_text.base_name = "Helmets";
-				l_text.localisations[NSW_localisation_EN] = "Helmets";
-				l_text.localisations[NSW_localisation_RU] = "Шлемы";
-				value_generator->exact_values_list.push_back(l_text);
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Helmets");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
@@ -13740,11 +13874,14 @@ void EWindowMain::register_pattern_delve_items()
 
 			game_item_generator->generations_count = 1;
 
-			ELocalisationText l_text;
-			l_text.base_name = "Delve boots";
-			l_text.localisations[NSW_localisation_EN] = "Delve boots";
-			l_text.localisations[NSW_localisation_RU] = "Сапоги спуска";
-			game_item_generator->filtered_by_exact_name = l_text;
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Boots");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
@@ -13785,11 +13922,14 @@ void EWindowMain::register_pattern_delve_items()
 
 			game_item_generator->generations_count = 1;
 
-			ELocalisationText l_text;
-			l_text.base_name = "Delve ring";
-			l_text.localisations[NSW_localisation_EN] = "Delve ring";
-			l_text.localisations[NSW_localisation_RU] = "Кольцо спуска";
-			game_item_generator->filtered_by_exact_name = l_text;
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Rings");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			/////////////////////////////			CLASS			/////////////////////////////////////////////
 			{
@@ -13845,11 +13985,14 @@ void EWindowMain::register_pattern_delve_items()
 
 			game_item_generator->generations_count = 1;
 
-			ELocalisationText l_text;
-			l_text.base_name = "Delve belt";
-			l_text.localisations[NSW_localisation_EN] = "Delve belt";
-			l_text.localisations[NSW_localisation_RU] = "Пояс спуска";
-			game_item_generator->filtered_by_exact_name = l_text;
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Belts");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			/////////////////////////////			CLASS			/////////////////////////////////////////////
 			{
@@ -13904,11 +14047,15 @@ void EWindowMain::register_pattern_delve_items()
 				game_item_generator = new GameItemGenerator();
 
 			game_item_generator->generations_count = 1;
-			ELocalisationText l_text;
-			l_text.base_name = "Delve amulet";
-			l_text.localisations[NSW_localisation_EN] = "Delve amulet";
-			l_text.localisations[NSW_localisation_RU] = "Амулет спуска";
-			game_item_generator->filtered_by_exact_name = l_text;
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Amulets");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			/////////////////////////////			CLASS			/////////////////////////////////////////////
 			{
@@ -13957,50 +14104,6 @@ void EWindowMain::register_pattern_delve_items()
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
 
-		/////////////////////////////			ITEM GENERATOR (SPECIAL EXPLICIT)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 1;
-
-			ELocalisationText l_text;
-			l_text.base_name = "Delve item";
-			l_text.localisations[NSW_localisation_EN] = "Delve item";
-			l_text.localisations[NSW_localisation_RU] = "Предмет спуска";
-			game_item_generator->filtered_by_exact_name = l_text;
-
-			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-
-
-
-			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
-
-
-				//		parameters
-				ELocalisationText l_text;
-				l_text.base_name = "Subterranean";
-				l_text.localisations[NSW_localisation_EN] = "Subterranean";
-				l_text.localisations[NSW_localisation_RU] = "Подземелья";
-				value_generator->exact_values_list.push_back(l_text);
-
-				l_text.base_name = "of the Underground";
-				l_text.localisations[NSW_localisation_EN] = "of the Underground";
-				l_text.localisations[NSW_localisation_RU] = "Подземный";
-				value_generator->exact_values_list.push_back(l_text);
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
 
 
 
@@ -15187,10 +15290,10 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 
 
 			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
 			tag_filter->suitable_values.push_back("Jewels");
-			tag_filter->suitable_values.push_back("Abyss Jewel");
+			tag_filter->suitable_values.push_back("Abyss Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -16042,7 +16145,7 @@ void EWindowMain::register_pattern_all_currencies()
 	}
 }
 
-void EWindowMain::register_deleted_items()
+void EWindowMain::register_all_deleted_items()
 {
 	{
 
@@ -16055,6 +16158,7 @@ void EWindowMain::register_deleted_items()
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_red_x");
 
 		loot_simulator_pattern->additional_force_field_for_buttons = true;
+		loot_simulator_pattern->always_show = true;
 		/////////////////////////////			ITEM GENERATOR (ALL DELETED ITEMS)			/////////////////////////////////////////////
 		GameItemGenerator*
 			game_item_generator = new GameItemGenerator();
@@ -16075,6 +16179,614 @@ void EWindowMain::register_deleted_items()
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
 
 	}
+}
+
+void EWindowMain::register_new_crucible_items()
+{
+	register_crubible_deleted_items();
+	register_crubible_changed_items();
+
+	register_crubible_items_with_passive_tree();
+
+	register_crubible_currency();
+	register_crubible_deleted_attributes();
+	register_crubible_divinations();
+
+}
+
+void EWindowMain::register_crubible_items_with_passive_tree()
+{
+	LootSimulatorPattern*
+		loot_simulator_pattern = new LootSimulatorPattern;
+
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Crucible: items with tree";
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Горнило: предметы с деревом";
+
+	loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_crucible_passive");
+	//loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/CrystallineGeode");
+
+	//loot_simulator_pattern->additional_force_field_for_buttons = true;
+
+	/////////////////////////////			ITEM GENERATOR (ONE HAND AND SHIELDS)			/////////////////////////////////////////////
+	{
+		GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+		game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
+		game_item_generator->generations_count = 1;
+
+		//game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+		//game_item_generator->random_selection_count = 8;
+
+
+		LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "base class";
+
+		//melee one hand
+		tag_filter->suitable_values.push_back("One Hand Maces");
+		tag_filter->suitable_values.push_back("One Hand Axes");
+		tag_filter->suitable_values.push_back("One Hand Swords");
+		tag_filter->suitable_values.push_back("Thrusting One Hand Swords");
+		tag_filter->suitable_values.push_back("Claws");
+		tag_filter->suitable_values.push_back("Daggers");
+
+		//caster one hand
+		tag_filter->suitable_values.push_back("Wands");
+		tag_filter->suitable_values.push_back("Sceptres");
+		tag_filter->suitable_values.push_back("Rune daggers");
+
+		//melee two hand
+		tag_filter->suitable_values.push_back("Two Hand Axes");
+		tag_filter->suitable_values.push_back("Two Hand Swords");
+		tag_filter->suitable_values.push_back("Two Hand Maces");
+		tag_filter->suitable_values.push_back("Wartaves");
+
+		//caster two hand
+		tag_filter->suitable_values.push_back("Staves");
+
+		//ranger two hand
+		tag_filter->suitable_values.push_back("Bows");
+
+		//shields
+		tag_filter->suitable_values.push_back("Shields");
+
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->banned_tags.push_back("Deleted");
+		tag_filter->banned_tags.push_back("Heist base");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+		game_item_generator->add_rarity(0, 3, 3.0f);
+		game_item_generator->add_item_level(-3, 3, 1.0f);
+		game_item_generator->add_flag_attrubite_by_name("HasCruciblePassiveTree", 1.0f);
+	}
+
+	LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+}
+
+void EWindowMain::register_crubible_currency()
+{
+	//		TRASH CURRENCY
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Crucible: currency";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Горнило: валюта";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/CrystallineGeode");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Introduced: Crucible league");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_crubible_divinations()
+{
+	//		DIVINATIONS: Useful
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Crucible: divinations";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Горнило: гадальные карты";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
+
+		loot_simulator_pattern->additional_force_field_for_buttons = true;
+		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 1;
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Divination Cards");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Introduced: Crucible league");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+
+
+
+
+
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_crubible_deleted_items()
+{
+	LootSimulatorPattern*
+	loot_simulator_pattern = new LootSimulatorPattern;
+
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Crucible: Deleted items";
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Горнило: удалённые предметы";
+
+	loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_red_x");
+	loot_simulator_pattern->always_show = true;
+	//loot_simulator_pattern->additional_force_field_for_buttons = true;
+	/////////////////////////////			ITEM GENERATOR (ALL DELETED ITEMS)			/////////////////////////////////////////////
+	GameItemGenerator*
+		game_item_generator = new GameItemGenerator();
+	loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+	LootSimulatorTagFilter*
+	tag_filter = new LootSimulatorTagFilter;
+	tag_filter->target_tag = "item tag";
+	tag_filter->suitable_values.push_back("Deleted in Crucible");
+	game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+	tag_filter = new LootSimulatorTagFilter;
+	tag_filter->target_tag = "data type";
+	tag_filter->suitable_values.push_back("Game item");
+	game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+
+	LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+}
+
+void EWindowMain::register_crubible_deleted_attributes()
+{
+	//		DELVE ITEMS
+	{
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Removed explicits";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Удалённые атрибуты";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/removed_jewels_explisit");
+
+		//loot_simulator_pattern->additional_force_field_for_buttons = true;
+		loot_simulator_pattern->always_show = true;
+		/////////////////////////////			of Extinguishing			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Jewels");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Non-default jewel");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			game_item_generator->add_item_level(-3, 3, 1.0f);
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "of Extinguishing";
+				l_text.localisations[NSW_localisation_EN] = "of Extinguishing";
+				l_text.localisations[NSW_localisation_RU] = "подавления";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			of Warming			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Jewels");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Non-default jewel");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			game_item_generator->add_item_level(-3, 3, 1.0f);
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "of Warming";
+				l_text.localisations[NSW_localisation_EN] = "of Warming";
+				l_text.localisations[NSW_localisation_RU] = "тепла";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		/////////////////////////////			of Insulating			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Jewels");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Non-default jewel");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			game_item_generator->add_item_level(-3, 3, 1.0f);
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "of Insulating";
+				l_text.localisations[NSW_localisation_EN] = "of Insulating";
+				l_text.localisations[NSW_localisation_RU] = "изоляции";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		
+		/////////////////////////////			of tolerance			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Jewels");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Non-default jewel");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			game_item_generator->add_item_level(-3, 3, 1.0f);
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "of tolerance";
+				l_text.localisations[NSW_localisation_EN] = "of tolerance";
+				l_text.localisations[NSW_localisation_RU] = "терпения";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		
+		/////////////////////////////			of Mending			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Jewels");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Non-default jewel");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			game_item_generator->add_item_level(-3, 3, 1.0f);
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "of Mending";
+				l_text.localisations[NSW_localisation_EN] = "of Mending";
+				l_text.localisations[NSW_localisation_RU] = "лечения";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+		
+		/////////////////////////////			of Unwavering			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+			game_item_generator->random_selection_count = 1;
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Jewels");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Non-default jewel");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
+			game_item_generator->add_item_level(-3, 3, 1.0f);
+
+			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
+			{
+				//		value
+				GameAttributeGeneratorExactListedValue*
+					value_generator = new GameAttributeGeneratorExactListedValue("HasExplicitMod");
+
+
+				//		parameters
+				ELocalisationText l_text;
+				l_text.base_name = "of Unwavering";
+				l_text.localisations[NSW_localisation_EN] = "of Unwavering";
+				l_text.localisations[NSW_localisation_RU] = "подавления";
+				value_generator->exact_values_list.push_back(l_text);
+
+				game_item_generator->attribute_generators_list.push_back(value_generator);
+			}
+
+
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_crubible_changed_items()
+{
+	LootSimulatorPattern*
+		loot_simulator_pattern = new LootSimulatorPattern;
+
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Crucible: changed items";
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Горнило: изменённые предметы";
+
+	loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_refresh");
+
+	//loot_simulator_pattern->additional_force_field_for_buttons = true;
+	/////////////////////////////			ITEM GENERATOR (Breachstones and divinations)			/////////////////////////////////////////////
+	{
+		GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+
+
+
+
+
+		LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "data type";
+		tag_filter->suitable_values.push_back("Game item");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->suitable_values.push_back("Changed in Crucible");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "base class";
+		tag_filter->banned_tags.push_back("Wands");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+	}
+
+	//loot_simulator_pattern->additional_force_field_for_buttons = true;
+	/////////////////////////////			ITEM GENERATOR (WANDS)			/////////////////////////////////////////////
+	{
+		GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+
+
+
+
+
+		LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "data type";
+		tag_filter->suitable_values.push_back("Game item");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->suitable_values.push_back("Changed in Crucible");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "base class";
+		tag_filter->suitable_values.push_back("Wands");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		game_item_generator->add_rarity(0, 3, 2.0f);
+		game_item_generator->add_item_level(-3, 3, 2.0f);
+
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+	}
+
+
+
+
+
+
+	LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
 }
 
 void EWindowMain::set_color_version(HSVRGBAColor* _target_color, int _selected_mode)
@@ -16235,7 +16947,7 @@ void EDataActionCollection::action_add_selected_content_to_filter_block(Entity* 
 
 	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
-		EButtonGroup::add_content_to_filter_block_group->button_group_is_active = false;
+		EButtonGroup::add_content_to_filter_block_group->close_this_group();
 	}
 
 	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
@@ -17301,6 +18013,8 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 	EButtonGroup*
 	whole_listed_line = new EButtonGroup(new ERegionGabarite(800.0f, _filter_rule->min_y_size + 30.0f));
 	whole_listed_line->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+
+
 	//whole_listed_line->can_be_resized_to_highest_point_y = true;
 	whole_listed_line->can_be_stretched_by_child = true;
 	//whole_listed_line->can_be_resized_to_highest_point_y = true;
@@ -18405,8 +19119,13 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 			_game_item->localised_name.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _game_item->stored_data_entity);
 			_game_item->localised_name.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _game_item->stored_data_entity);
 
+			//WARN WHEN HIDDEN
+			if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "WARN WHEN HIDDEN", _game_item->stored_data_entity))
+			{
+				_game_item->warn_when_hidden = true;
 
-
+				//EInputCore::logger_simple_info("WARN WHEN HIDDEN");
+			}
 
 
 			//default attributes [BASE TYPE]
@@ -18461,15 +19180,20 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 
 					std::string
 					class_EN_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", d_entity);
-					
+					short_name = DataEntityUtils::get_tag_value_by_name(0, "short name", d_entity);
 
-					if (class_EN_name == raw_class_name_in_item)
+					if
+					(
+						(raw_class_name_in_item == class_EN_name)
+						||
+						(raw_class_name_in_item == short_name)
+					)
 					{
 						l_text.base_name = class_EN_name;
 						l_text.localisations[NSW_localisation_EN] = class_EN_name;
 						l_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", d_entity);
 
-						short_name = DataEntityUtils::get_tag_value_by_name(0, "short name", d_entity);
+						
 
 						suitable_data_entity_searched = true;
 						break;
@@ -18841,11 +19565,11 @@ void GameItemGenerator::add_gem_level(int _level_min, int _level_max, float _pow
 	attribute_generators_list.push_back(value_generator);
 }
 
-void GameItemGenerator::add_named_attrubite(std::string _attribute_name, float _chance_to_add)
+void GameItemGenerator::add_flag_attrubite_by_name(std::string _attribute_name, float _chance_to_add)
 {
 		//		value
 		GameAttributeGeneratorBoolFlag*
-			attribute_generator = new GameAttributeGeneratorBoolFlag(_attribute_name);
+		attribute_generator = new GameAttributeGeneratorBoolFlag(_attribute_name);
 
 		//		parameters
 		attribute_generator->chance_to_activate = _chance_to_add;
@@ -20173,6 +20897,15 @@ bool EButtonGroupLootSimulator::is_condition_sactified_for_listed_expression(std
 
 void EButtonGroupLootSimulator::button_group_update(float _d)
 {
+	warning_cooldown -= _d;
+
+	if (warning_cooldown <= 0.0f)
+	{
+		warning_cooldown += 0.5f;
+
+		warning_sign_show_flag = !warning_sign_show_flag;
+	}
+
 	if ((delayed_execution) && (!EInputCore::MOUSE_BUTTON_LEFT) && (pointer_to_patterns_buttons_segment->selected_button != nullptr))
 	{
 		delayed_execution = false;
@@ -20188,11 +20921,17 @@ void EButtonGroupLootSimulator::button_group_update(float _d)
 
 	//if (show_hidden_cooldown <= 0.0f)
 	if
-		(
+	(
 			(EInputCore::key_pressed(GLFW_KEY_LEFT_ALT) && (!show_hidden))
 			||
 			(!EInputCore::key_pressed(GLFW_KEY_LEFT_ALT) && (show_hidden))
-		)
+			||
+			(
+				(pointer_to_patterns_buttons_segment->selected_button != nullptr)
+				&&
+				(static_cast<EntityButtonLootPatternSelector*>(pointer_to_patterns_buttons_segment->selected_button)->target_pattern->always_show)
+			)
+	)
 	{
 		show_hidden = EInputCore::key_pressed(GLFW_KEY_LEFT_ALT);
 
@@ -20215,6 +20954,9 @@ void EButtonGroupLootSimulator::button_group_update(float _d)
 				)
 				||
 				(show_hidden)
+				||
+				(loot_button->stored_game_item->warn_when_hidden)
+
 			);
 
 			if (!button->entity_is_active()) { button->destroy_attached_description(); }

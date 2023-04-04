@@ -251,6 +251,22 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Tornado_Wand_inventory_icon"
 	[tag]"base class"	[value]"Wands"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Coiled Wand"
+	[tag]"name RU"		[value]"Кручёный жезл"
+
+	[tag]"icon path"	[value]"Tornado_Wand_inventory_icon"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Changed in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"

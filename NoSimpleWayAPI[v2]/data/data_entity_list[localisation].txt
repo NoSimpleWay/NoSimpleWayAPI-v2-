@@ -690,4 +690,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Add random influecne an items"
 	[tag]"name RU"		[value]"Добавить случайное влияние на предметы"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"warning_this_loot_hidden"
+	[tag]"name EN"		[value]"WARNING! THIS ITEM IS HIDDEN!"
+	[tag]"name RU"		[value]"ВНИМАНИЕ! ЭТОТ ПРЕДМЕТ СКРЫТ"
+	
 	

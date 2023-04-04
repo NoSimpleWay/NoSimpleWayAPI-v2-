@@ -3,18 +3,6 @@
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Battery Staff"
-	[tag]"name RU"		[value]"Гальванический посох"
-
-	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staves"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
 	[tag]"name EN"		[value]"Crescent Staff"
 	[tag]"name RU"		[value]"Посох с полумесяцем"
 
@@ -146,17 +134,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Reciprocation Staff"
-	[tag]"name RU"		[value]"Аккумулирующий посох"
-
-	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staves"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -170,17 +147,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Transformer Staff"
-	[tag]"name RU"		[value]"Трансформирующий посох"
-
-	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Staves"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -193,3 +160,48 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Battery Staff"
+	[tag]"name RU"		[value]"Гальванический посох"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Heist base"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Reciprocation Staff"
+	[tag]"name RU"		[value]"Аккумулирующий посох"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Heist base"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Transformer Staff"
+	[tag]"name RU"		[value]"Трансформирующий посох"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Heist base"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

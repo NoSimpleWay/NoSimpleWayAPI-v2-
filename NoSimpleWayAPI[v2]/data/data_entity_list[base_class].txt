@@ -42,7 +42,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Abyss Jewel"
+	[tag]"name EN"		[value]"Abyss Jewels"
 	[tag]"name RU"		[value]"Самоцвет Бездны"
 	
 	[tag]"short name"	[value]"Abyss Jewel"
@@ -393,9 +393,11 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Incubator"
+	[tag]"name EN"		[value]"Incubators"
 	[tag]"name RU"		[value]"Инкубатор"
 
+	[tag]"short name"	[value]"Incubator"
+	
 	[tag]"icon path"	[value]"Incubator"
 
 ADD_NEW_DATA_ENTITY
@@ -405,14 +407,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Складываемая валюта спуска"
 
 	[tag]"icon path"	[value]"class_delve_socketable_currency"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Harvest Seed"
-	[tag]"name RU"		[value]"Семя жатвы"
-
-	[tag]"icon path"	[value]"PinkSphere"
 	
 	
 	
@@ -508,11 +502,19 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Map Fragments"
-	[tag]"name RU"		[value]"Обрывки карт"
+	[tag]"name RU"		[value]"Фрагмент карты"
 	
 	[tag]"short name"	[value]"Map Fragment"
 
 	[tag]"icon path"	[value]"class_map_fragments"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Breachstone"
+	[tag]"name RU"		[value]"Камень Разлома"
+
+	[tag]"icon path"	[value]"class_breachstone"
 		
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
@@ -541,16 +543,16 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Atlas Region Upgrade Item"
-	[tag]"name RU"		[value]"Предмет улучшения области Атласа"
+	[tag]"name EN"		[value]"Atlas Upgrade Item"
+	[tag]"name RU"		[value]"Предметы улучшения Атласа"
 
 	[tag]"icon path"	[value]"titanium_watchstone"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Atlas Upgrade Item"
-	[tag]"name RU"		[value]"Предметы улучшения Атласа"
+	[tag]"name EN"		[value]"Atlas Upgrade Items"
+	[tag]"name RU"		[value]"Предметы улучшения региона Атласа"
 
 	[tag]"icon path"	[value]"titanium_watchstone"
 	
@@ -591,16 +593,20 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Incursion Item"
+	[tag]"name EN"		[value]"Incursion Items"
 	[tag]"name RU"		[value]"Предмет Вмешательства"
+	
+	[tag]"short name"	[value]"Incursion Item"
 
 	[tag]"icon path"	[value]"Stone_of_Passage_inventory_icon"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Metamorph Sample"
+	[tag]"name EN"		[value]"Metamorph Samples"
 	[tag]"name RU"		[value]"Образец Метаморфа"
+	
+	[tag]"short name"	[value]"Metamorph Sample"
 
 	[tag]"icon path"	[value]"eye"
 	
@@ -609,6 +615,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Leaguestones"
 	[tag]"name RU"		[value]"Камни лиги"
+	
+	[tag]"short name"	[value]"Leaguestone"
 
 	[tag]"icon path"	[value]"Leaguestone"
 	
@@ -678,14 +686,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Offering_to_the_Goddess_inventory_icon"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Base Class"
-
-	[tag]"name EN"		[value]"Labyrinth Map"
-	[tag]"name RU"		[value]"Предмет карты лабиринта"
-
-	[tag]"icon path"	[value]"Offering_to_the_Goddess_inventory_icon"
-	
 	
 	
 	
@@ -725,40 +725,50 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Heist Target"
+	[tag]"name EN"		[value]"Heist Targets"
 	[tag]"name RU"		[value]"Предмет кражи"
+	
+	[tag]"short name"	[value]"Heist Target"
 
 	[tag]"icon path"	[value]"RoguesMarker"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Trinket"
+	[tag]"name EN"		[value]"Trinkets"
 	[tag]"name RU"		[value]"Украшения"
+	
+	[tag]"short name"	[value]"Trinket"
 
 	[tag]"icon path"	[value]"Thief's Trinket"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Contract"
+	[tag]"name EN"		[value]"Contracts"
 	[tag]"name RU"		[value]"Контракт"
+	
+	[tag]"short name"	[value]"Contract"
 
 	[tag]"icon path"	[value]"Contract"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Blueprint"
+	[tag]"name EN"		[value]"Blueprints"
 	[tag]"name RU"		[value]"Чертёж"
+	
+	[tag]"short name"	[value]"Blueprint"
 
 	[tag]"icon path"	[value]"Blueprint"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Heist Cloak"
+	[tag]"name EN"		[value]"Heist Cloaks"
 	[tag]"name RU"		[value]"Разбойничья накидка"
+	
+	[tag]"short name"	[value]"Heist Cloak"
 
 	[tag]"icon path"	[value]"Cloak"
 	
@@ -773,8 +783,10 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Heist Tool"
+	[tag]"name EN"		[value]"Heist Tools"
 	[tag]"name RU"		[value]"Разбойничий инструмент"
+	
+	[tag]"short name"	[value]"Heist Tool"
 
 	[tag]"icon path"	[value]"Lockpick"
 	

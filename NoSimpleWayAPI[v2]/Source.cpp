@@ -269,7 +269,7 @@ int main()
 
 		whole_close_group->init_as_confirm_decline_group();
 		EButtonGroupConfirmAction::confirm_decline_group = whole_close_group;
-
+		whole_close_group->silicon_idiot = true;
 		EWindowMain::link_to_main_window->button_group_list.push_back(whole_close_group);
 	//
 
@@ -279,6 +279,7 @@ int main()
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_framebuffer());
 		glGenerateMipmap(GL_TEXTURE_2D);
+
 
 	while
 	(
@@ -300,6 +301,10 @@ int main()
 		{
 			EButtonGroupConfirmAction::confirm_decline_group->pointer_to_confirm_button->stored_action = &EDataActionCollection::action_close_program;
 			EButtonGroupConfirmAction::confirm_decline_group->activate_move_to_foreground_and_center();
+
+			EButtonGroup::super_focus_on_this_group = EButtonGroupConfirmAction::confirm_decline_group;
+
+			//float x = 0.0;
 		}
 
 		if (!ETextureGabarite::incomplete_gabarites_list.empty())
@@ -369,6 +374,12 @@ int main()
 			EButtonGroup::catched_group_for_translation = nullptr;
 			EClickableArea::active_clickable_region = nullptr;
 			//EButtonGroup::vector_moving_group							= nullptr;
+		}
+
+		//if (EButtonGroup::super_focus_on_this_group != nullptr) { EButtonGroup::super_focus_on_this_group->highlight_this_group(); }
+		if ((EButtonGroup::super_focus_on_this_group != nullptr) && (!EButtonGroup::super_focus_on_this_group->is_this_group_active()))
+		{
+			EButtonGroup::super_focus_on_this_group = nullptr;
 		}
 
 		//if (EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))

@@ -1342,6 +1342,24 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tul's Charged Breachstone"
+	[tag]"name RU"		[value]"Заряженный камень разлома Тул"
+
+	[tag]"icon path"	[value]"Tul's_Breachstone"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1358,6 +1376,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1372,6 +1392,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1387,6 +1409,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1419,6 +1443,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1433,6 +1459,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1448,6 +1476,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1463,6 +1493,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1478,6 +1510,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1505,6 +1539,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1519,6 +1555,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1533,6 +1571,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1549,6 +1589,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1564,9 +1606,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
 	
 	
 	
@@ -1590,6 +1637,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1605,6 +1654,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1620,6 +1671,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1635,6 +1688,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1650,10 +1705,100 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Xoph's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Ксофа"
+
+	[tag]"icon path"	[value]"XophFlawlessBreachstone"
+	[tag]"base class"	[value]"Breachstone"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Changed in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tul's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Тул"
+
+	[tag]"icon path"	[value]"TulFlawlessBreachstone"
+	[tag]"base class"	[value]"Breachstone"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Changed in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Esh's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Иш"
+
+	[tag]"icon path"	[value]"EshFlawlessBreachstone"
+	[tag]"base class"	[value]"Breachstone"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Changed in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Uul-Netol's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Уул-Нетол"
+
+	[tag]"icon path"	[value]"UulnetolFlawlessBreachstone"
+	[tag]"base class"	[value]"Breachstone"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Changed in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chayula's Flawless Breachstone"
+	[tag]"name RU"		[value]"Безупречный камень разлома Чаюлы"
+
+	[tag]"icon path"	[value]"ChayulasFlawlessBreachstone"
+	[tag]"base class"	[value]"Breachstone"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Changed in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+	
+	
+	
 	
 	
 	
@@ -1682,6 +1827,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1698,6 +1845,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1713,6 +1862,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1727,6 +1878,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1741,9 +1894,109 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Esh's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Иш"
+
+	[tag]"icon path"	[value]"Esh's_Breachstone"
+	[tag]"base class"	[value]"Breachstone"
+	
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Changed in Crucible"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tul's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Тула"
+
+	[tag]"icon path"	[value]"Tul's_Breachstone"
+	[tag]"base class"	[value]"Breachstone"
+	
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Changed in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Xoph's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Ксофа"
+
+	[tag]"icon path"	[value]"Xoph's_Breachstone"
+	[tag]"base class"	[value]"Breachstone"
+	
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Changed in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Uul-Netol's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Уул-Нетола"
+
+	[tag]"icon path"	[value]"Uul-Netol's_Breachstone"
+	[tag]"base class"	[value]"Breachstone"
+	
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Changed in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Chayula's Breachstone"
+	[tag]"name RU"		[value]"Камень разлома Чаюлы"
+
+	[tag]"icon path"	[value]"Chayula's_Breachstone"
+	[tag]"base class"	[value]"Breachstone"
+	
+	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Changed in Crucible"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 	

@@ -10,7 +10,10 @@ EButtonGroup* EButtonGroup::focused_button_group = nullptr;
 EButtonGroup* EButtonGroup::focused_button_group_for_select = nullptr;
 EButtonGroup* EButtonGroup::focused_button_group_mouse_unpressed = nullptr;
 EButtonGroup* EButtonGroup::catched_group_for_translation = nullptr;
+EButtonGroup* EButtonGroup::super_focus_on_this_group = nullptr;
+
 EButtonGroupFastMessage* EButtonGroup::pointer_to_fast_message_group = nullptr;
+
 
 EButtonGroup* EButtonGroup::vector_moving_group = nullptr;
 EButtonGroup* EButtonGroup::parent_vector_moving_group = nullptr;
@@ -115,10 +118,18 @@ void EWindow::GUI_update_default(float _d)
 		EButtonGroup* catched_group = nullptr;
 
 		for (int i = 0; i < EButtonGroup::parent_vector_moving_group->group_list.size(); i++)
-			if ((!EButtonGroup::parent_vector_moving_group->group_list[i]->suppressed) && (EButtonGroup::catched_by_mouse(EButtonGroup::parent_vector_moving_group->group_list[i])))
-			{
+		if
+		(
+			(!EButtonGroup::parent_vector_moving_group->group_list[i]->group_is_suppressed)
+			&&
+			(!EButtonGroup::parent_vector_moving_group->group_list[i]->is_blocked_by_superfocus())
+			&&
+			(EButtonGroup::catched_by_mouse(EButtonGroup::parent_vector_moving_group->group_list[i]))
+			
+		)
+		{
 				catched_group = EButtonGroup::parent_vector_moving_group->group_list[i];
-			}
+		}
 
 		if (catched_group != nullptr)
 		{
@@ -464,12 +475,24 @@ void EWindow::action_on_close()
 
 void EButtonGroup::recursive_set_suppressed()
 {
-	suppressed = true;
+	group_is_suppressed = true;
 
 	for (EButtonGroup* group : group_list)
 	{
 		group->recursive_set_suppressed();
 	}
+}
+
+bool EButtonGroup::is_blocked_by_superfocus()
+{
+
+	//if (silicon_idiot)
+	//{
+	//	root_group = root_group;
+	//}
+
+
+	return !((EButtonGroup::super_focus_on_this_group == nullptr) || (EButtonGroup::super_focus_on_this_group == this) || (EButtonGroup::super_focus_on_this_group== this->root_group ));
 }
 
 bool EButtonGroup::is_this_group_active()
@@ -503,6 +526,11 @@ EButtonGroup::EButtonGroup()
 
 EButtonGroup::~EButtonGroup()
 {
+	if (super_focus_on_this_group == this)
+	{
+		super_focus_on_this_group = nullptr;
+	}
+
 	if (debug_deleting) { EInputCore::logger_simple_success("Destructor [for button group] called"); }
 
 	//EInputCore::logger_simple_success("Destroy button group");
@@ -597,11 +625,17 @@ void EButtonGroup::close_this_group()
 {
 	button_group_is_active = false;
 
+
+
 	recursive_close_process();
 }
 
 void EButtonGroup::recursive_close_process()
 {
+
+	if (super_focus_on_this_group == this)
+	{super_focus_on_this_group = nullptr;}
+
 	for (EntityButton* but : all_button_list)
 	{
 		but->destroy_attached_description();
@@ -801,7 +835,16 @@ void EButtonGroup::button_group_update(float _d)
 				}
 
 				//update
-				if ((!suppressed) || (but == slider))
+				if
+				(
+					(
+						(!group_is_suppressed)
+						||
+						(but == slider)
+					)
+					&&
+					(!is_blocked_by_superfocus())
+				)
 				{
 					but->update(_d);
 				}
@@ -954,14 +997,34 @@ void EButtonGroup::draw_button_group()
 			//batcher_for_default_draw->draw_call();
 
 
-
+			glDisable(GL_SCISSOR_TEST);
 			//BLURED SHADOW
+			if (EButtonGroup::super_focus_on_this_group == this)
+			{
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GRAY, 0.64f);
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					batcher_for_default_draw->vertex_buffer,
+					batcher_for_default_draw->last_vertice_buffer_index,
+
+					0.0f,
+					0.0f,
+
+					NS_EGraphicCore::SCREEN_WIDTH,
+					NS_EGraphicCore::SCREEN_HEIGHT,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+
+			}
+
 			if ((have_shadow) && (root_group == this))
 			{
 
 				batcher_for_default_draw->draw_call();
 
-				glDisable(GL_SCISSOR_TEST);
+				
 
 				NS_EGraphicCore::set_active_color(0.01f, 0.02f, 0.04f, 1.0f);
 				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 8);
@@ -977,11 +1040,11 @@ void EButtonGroup::draw_button_group()
 					NS_DefaultGabarites::texture_gabarite_white_pixel
 				);
 
-				batcher_for_default_draw->draw_call();
+				
 
 
 			}
-
+			batcher_for_default_draw->draw_call();
 			//batcher_for_default_draw->draw_call();
 
 			//BEGIN DRAW SCISSORED ELEMENTS
@@ -1423,8 +1486,8 @@ void EButtonGroup::draw_button_group()
 			}
 
 			if
-				(
-					(!suppressed)
+			(
+					(!group_is_suppressed)
 					&&
 					(
 						(parent_group != nullptr)
@@ -1434,8 +1497,8 @@ void EButtonGroup::draw_button_group()
 					&&
 					(EButtonGroup::catched_by_mouse(this))
 					&&
-					(true)
-					)
+					(!is_blocked_by_superfocus())
+			)
 			{
 				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREEN);
 				//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
@@ -2055,6 +2118,11 @@ void EButtonGroup::recursive_group_stretch_childs_y()
 		for (EButtonGroup* child : group_list)
 			if (child->is_this_group_active())
 			{
+				/*if (child->can_be_resized_to_highest_point_y)
+				{
+					child->resize_group_to_highest_point_y();
+				}*/
+
 				child->region_gabarite->size_y = max(child->region_gabarite->size_y, child->min_size_y);
 
 				if (child->dynamic_size_y)
@@ -2091,7 +2159,7 @@ void EButtonGroup::recursive_group_stretch_childs_y()
 		if (child->is_this_group_active())
 		{
 
-			if (child->dynamic_size_y)
+			if ((child->dynamic_size_y))
 			{
 				child->region_gabarite->size_y = round(max(final_size, child->min_size_y));
 				//group->region_gabarite->size_y = round(max(final_size, 0.0f));
@@ -2107,7 +2175,7 @@ void EButtonGroup::recursive_group_stretch_childs_y()
 	//for (EButtonGroup* group : group_list) { group->group_stretch_y(); }
 }
 
-void EButtonGroup::check_slider()
+bool EButtonGroup::check_slider()
 {
 
 	//if (slider != nullptr)
@@ -2138,41 +2206,71 @@ void EButtonGroup::check_slider()
 
 
 		if
-			(
+		(
 				(
 					(highest_point_y_for_groups > region_gabarite->size_y - group_offset_for_content_up)
-					)
+					//||
+					//(highest_point_y_for_buttons > region_gabarite->size_y - group_offset_for_content_up)
+					//(can_be_stretched_by_child)
+				)
 				//||
 				//(true)
-				)
+		)
 		{
 			if (slider != nullptr)
 			{
-				slider->entity_disabled = false;
-				have_slider = true;
-
-				for (EButtonGroup* group : group_list)
+				//slider become enabled
+				if (slider->entity_disabled)
 				{
-					group->parent_have_slider = true;
-				}//parent have no slider
+					slider->entity_disabled = false;
+					have_slider = true;
 
-				scroll_y = slider->current_value;
+					for (EButtonGroup* group : group_list)
+					{
+						group->parent_have_slider = true;
+					}//parent have no slider
+
+					scroll_y = slider->current_value;
+
+					return true;
+				}
+				else
+				{
+					//no changes
+					return false;
+				}
 			}
 		}
 		else
 		{
+
 			if (slider != nullptr)
 			{
-				slider->entity_disabled = true;
-				have_slider = false;
-
-				for (EButtonGroup* group : group_list)
+				//slider become disabled
+				if (!slider->entity_disabled)
 				{
-					group->parent_have_slider = false;
+					slider->entity_disabled = true;
+					have_slider = false;
+
+					for (EButtonGroup* group : group_list)
+					{
+						group->parent_have_slider = false;
+					}
+
+					return true;
+				}
+				else
+				{
+					//no changes
+					return false;
 				}
 			}
 		}
 	}
+}
+
+void EButtonGroup::check_slider_and_call_recursive_pass_if_need()
+{
 }
 
 void EButtonGroup::recursive_expand_to_workspace_size()
@@ -2258,6 +2356,7 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 			)
 	{
 		recursive_change_group_first_pass(_group);
+		//recursive_change_group_first_pass(_group);
 
 		change_group_second_pass(_group);
 	}
@@ -2304,31 +2403,61 @@ void EButtonGroup::recursive_change_group_first_pass(EButtonGroup* _group)
 
 		_group->recursive_group_stretch_childs_y();
 		_group->highest_point_y_for_groups = _group->get_highest_point_y_for_groups();
-		_group->reset_slider();
+
 		_group->check_slider();
+
 		_group->recursive_group_stretch_childs_x();
+		
+		for (EButtonGroup* child : _group->group_list)
+		{
+			if (child->can_be_resized_to_highest_point_y)
+			{
+				child->resize_group_to_highest_point_y();
+			}
+		}
+
+		_group->highest_point_y_for_groups = _group->get_highest_point_y_for_groups();
+		
+		//previvous calculation out of date, recalculate
+		bool slider_appear = _group->check_slider();
+		if (slider_appear)
+		{
+			_group->recursive_group_stretch_childs_y();
+			_group->highest_point_y_for_groups = _group->get_highest_point_y_for_groups();
+
+			_group->recursive_group_stretch_childs_x();
+
+			for (EButtonGroup* child : _group->group_list)
+			{
+				if (child->can_be_resized_to_highest_point_y)
+				{
+					child->resize_group_to_highest_point_y();
+				}
+			}
+		}
 
 
 		for (EButtonGroup* child : _group->group_list)
 		{
 			recursive_change_group_first_pass(child);
-
-
 		}
 
-
-
-		if (_group->can_be_stretched_by_child)
-		{
-			_group->region_gabarite->size_y = _group->get_child_total_y_size();
-			//_group->base_height = _group->region_gabarite->size_y;
-
-			//y highest point y now is not actual, recalculate
 			_group->highest_point_y_for_groups = _group->get_highest_point_y_for_groups();
-			_group->reset_slider();
-			_group->check_slider();
-		}
-		_group->check_slider();
+			if (_group->can_be_stretched_by_child)
+			{
+				_group->region_gabarite->size_y = _group->highest_point_y_for_groups + _group->group_offset_for_content_bottom + _group->group_offset_for_content_up;
+			}
+
+			//_group->highest_point_y_for_groups = _group->get_highest_point_y_for_groups();
+			if (true)
+			{
+				for (EButtonGroup* child : _group->group_list)
+				{
+					soft_recursion_first_pass(child);
+				}
+			}
+
+
 
 	}
 	else
@@ -2377,6 +2506,26 @@ void EButtonGroup::change_group_second_pass(EButtonGroup* _group)
 			change_group_second_pass(child);
 		}
 	}
+}
+
+void EButtonGroup::soft_recursion_first_pass(EButtonGroup* _group)
+{
+	_group->recursive_group_stretch_childs_y();
+
+	_group->highest_point_y_for_groups = _group->get_highest_point_y_for_groups();
+	_group->check_slider();
+
+	_group->recursive_group_stretch_childs_x();
+
+
+
+
+
+	for (EButtonGroup* child : _group->group_list)
+	{
+		soft_recursion_first_pass(child);
+	}
+
 }
 
 
@@ -2711,6 +2860,7 @@ void EButtonGroup::resize_group_to_highest_point_y()
 {
 	//if (!_group->resize_to_highest_point)
 	{
+		//highest_point_y_for_buttons = group_offset_for_content_bottom;
 		reset_buttons_phantom_translate();
 		set_base_size_x();
 		put_buttons_to_lines();
@@ -3683,7 +3833,7 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 	root_group = this;
 	button_group_is_active = true;
 	//can_change_position_in_vector = false;
-	button_group_is_active = false;
+	close_this_group();
 
 
 
@@ -3776,18 +3926,22 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 {
 	//only active and visible groups can be focused
 	if
-		(
-			(_group->is_this_group_active())
-			&&
-			(_group->is_in_visible_diapason())
-			)
+	(
+		(_group->is_this_group_active())
+		&&
+		(_group->is_in_visible_diapason())
+		&&
+		(!_group->group_is_suppressed)
+		&&
+		(!_group->is_blocked_by_superfocus())
+	)
 	{
 		if
 			(
 				EButtonGroup::catched_by_mouse(_group)
 				&&
 				(_group->can_be_focused)
-				)
+			)
 		{
 			//default focus
 			focused_button_group = _group;
@@ -4593,8 +4747,14 @@ void EButtonGroupFastMessage::button_group_update(float _d)
 		{
 
 
-			if (delete_when_expire) { need_remove = true; }
-			else { button_group_is_active = false; }
+			if (delete_when_expire)
+			{
+				need_remove = true;
+			}
+			else
+			{
+				close_this_group();
+			}
 		}
 	}
 }

@@ -618,6 +618,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -1385,7 +1386,78 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Albino_Rhoa_Feather_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"worth"		[value]"Expensive"
+	
 	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Igneous Geode"
+	[tag]"name RU"		[value]"Огненная жеода"
+
+	[tag]"icon path"	[value]"CrystallineGeode"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Crucible league"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Crystalline Geode"
+	[tag]"name RU"		[value]"Кристаллическая жеода"
+
+	[tag]"icon path"	[value]"CrystallineGeode"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Crucible league"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Magmatic Ore"
+	[tag]"name RU"		[value]"Магматическая руда"
+
+	[tag]"icon path"	[value]"CrystallineGeode"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Crucible league"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"

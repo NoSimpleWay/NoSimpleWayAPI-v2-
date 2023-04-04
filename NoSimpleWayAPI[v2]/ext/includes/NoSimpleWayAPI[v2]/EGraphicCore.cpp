@@ -600,7 +600,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	//glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
 	//glfwWindowHint(GLFW_DECORATED, NULL);
 
-	NS_EGraphicCore::main_window = glfwCreateWindow(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT, "Window name", NULL, NULL);
+	NS_EGraphicCore::main_window = glfwCreateWindow(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT, "Awakened DaDEditor", NULL, NULL);
 	//std::cout << "[0]window is:" << (EGraphicCore::main_window) << std::endl;
 
 	if (NS_EGraphicCore::main_window == NULL)

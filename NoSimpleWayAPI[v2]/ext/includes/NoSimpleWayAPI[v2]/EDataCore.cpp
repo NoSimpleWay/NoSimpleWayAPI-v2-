@@ -267,7 +267,7 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 {
 	if
 	(
-		(!static_cast<EntityButton*>(_entity)->parent_button_group->suppressed)
+		(!static_cast<EntityButton*>(_entity)->parent_button_group->group_is_suppressed)
 		&&
 		(
 			(EButtonGroup::focused_button_group == ((EntityButton*)_entity)->parent_button_group)
@@ -335,7 +335,7 @@ void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData
 		(_group->root_group != nullptr)
 	)
 	{
-		_group->root_group->button_group_is_active = false;
+		_group->root_group->close_this_group();
 
 		EClickableArea::active_clickable_region = nullptr;
 
@@ -1621,7 +1621,7 @@ void EDataActionCollection::action_select_rotate_variant_from_list(Entity* _enti
 
 	target_button->select_variant(router_selector_button->id);
 	target_group->need_remove = true;
-	target_group->button_group_is_active = false;
+	target_group->close_this_group();
 
 	for (data_action_pointer dap : target_button->action_on_choose_variant_from_window)
 	{
@@ -1657,6 +1657,7 @@ void EDataActionCollection::action_cancel_closing_program(Entity* _entity, ECust
 {
 	//EInputCore::logger_simple_info("action_cancel_closing_program");
 	static_cast<EntityButton*>(_entity)->parent_button_group->root_group->button_group_is_active = false;
+
 	glfwSetWindowShouldClose(NS_EGraphicCore::main_window, 0);
 }
 

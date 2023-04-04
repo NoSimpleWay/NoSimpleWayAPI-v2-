@@ -7,6 +7,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"NotableLargeClusterJewel"
 	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"item tag"		[value]"Non-default jewel"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -22,6 +24,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"NotableMediumClusterJewel"
 	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"item tag"		[value]"Non-default jewel"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -37,6 +41,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"NotableSmallClusterJewel"
 	[tag]"base class"	[value]"Jewels"
+	
+	[tag]"item tag"		[value]"Non-default jewel"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
