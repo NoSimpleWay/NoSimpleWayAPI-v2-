@@ -324,6 +324,8 @@ namespace NS_DefaultGabarites
 
 	extern ETextureGabarite* texture_button_radiance;
 	extern ETextureGabarite* texture_button_radiance_dot;
+
+	extern ETextureGabarite* texture_close_circle;
 	//extern 
 }
 

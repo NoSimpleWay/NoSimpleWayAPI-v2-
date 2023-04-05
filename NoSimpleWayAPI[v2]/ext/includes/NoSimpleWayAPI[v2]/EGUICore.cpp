@@ -423,13 +423,13 @@ void EWindow::GUI_draw_default(float _d)
 
 	for (EButtonGroup* b_group : button_group_list)
 		if
-			(
-				(b_group != nullptr)
-				&&
-				(b_group->is_this_group_active())
-				&&
-				(b_group->is_in_visible_diapason())
-				)
+		(
+			(b_group != nullptr)
+			&&
+			(b_group->is_this_group_active())
+			&&
+			(b_group->is_in_visible_diapason())
+		)
 		{
 			b_group->draw_button_group();
 		}
@@ -807,12 +807,11 @@ void EButtonGroup::button_group_update(float _d)
 		{
 			//can see this button
 			if
-				(
-					(but->entity_is_active())
-					&&
-					(but->button_in_culling_gabarites())
-
-					)
+			(
+				(but->entity_is_active())
+				&&
+				(but->button_in_culling_gabarites())
+			)
 			{
 				//visible last time?
 
@@ -975,7 +974,7 @@ void EButtonGroup::draw_button_group()
 			(is_in_visible_diapason())
 			&&
 			(is_this_group_active())
-			)
+		)
 	{
 		//bool visibility = is_this_group_active();
 
@@ -1251,15 +1250,14 @@ void EButtonGroup::draw_button_group()
 			{
 				for (EntityButton* but : all_button_list)
 					if
-						(
-							(but->be_visible_last_time)
-							&&
-							(but->entity_is_active())
-							)
+					(
+						(but->be_visible_last_time)
+						&&
+						(but->entity_is_active())
+					)
 					{
 						//PHANTOM REDRAW
-						if
-							(but->have_phantom_draw)
+						if (but->have_phantom_draw)
 						{
 							but->have_phantom_draw = false;
 							//generate vertex buffer for buttons
@@ -1326,10 +1324,10 @@ void EButtonGroup::draw_button_group()
 
 
 			for (EClickableArea* clickable_area : clickable_area_list)
-				if (clickable_area != nullptr)
-				{
-					clickable_area->draw();
-				}
+			if (clickable_area != nullptr)
+			{
+				clickable_area->draw();
+			}
 
 			NS_EGraphicCore::pbr_batcher->draw_call();//draw pbg bg
 			batcher_for_default_draw->draw_call();//draw text to default batcher
@@ -1393,11 +1391,11 @@ void EButtonGroup::draw_button_group()
 
 
 			if
-				(
-					(EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
-					&&
-					(false)
-					)
+			(
+				(EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
+				&&
+				(false)
+			)
 			{
 				for (EButtonGroup* group : group_list)
 				{

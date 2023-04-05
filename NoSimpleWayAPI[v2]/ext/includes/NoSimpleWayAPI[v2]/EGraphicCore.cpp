@@ -124,6 +124,8 @@ namespace NS_DefaultGabarites
 
 	ETextureGabarite* texture_button_radiance;
 	ETextureGabarite* texture_button_radiance_dot;
+
+	ETextureGabarite* texture_close_circle;
 }
 ERenderBatcher::ERenderBatcher()
 {
@@ -746,7 +748,7 @@ void NS_EGraphicCore::initiate_graphic_core()
 	NS_DefaultGabarites::texture_button_radiance_dot			= NS_EGraphicCore::put_texture_to_atlas("data/textures/buttons/radiance_button_dot.png",	NS_EGraphicCore::default_texture_atlas);
 	//NS_DefaultGabarites::texture_slider_bg_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 
-	
+	NS_DefaultGabarites::texture_close_circle					= NS_EGraphicCore::load_from_textures_folder("close_circle");
 	//[0]2048(1024)
 	//[1]1024
 	//[2]512
@@ -5247,7 +5249,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 		unsigned int batcher_free_space = batcher_size - batcher->last_vertice_buffer_index;
 		unsigned int data_part = 0;
 
-		for (;;)
+		while (true)
 		{
 
 
@@ -5283,6 +5285,7 @@ void ESpriteLayer::transfer_vertex_buffer_to_batcher()
 			}
 			else
 			{
+				EInputCore::logger_simple_info("free space in batcher consumed, draw call");
 				batcher->draw_call();
 				batcher_free_space = batcher_size;
 			}

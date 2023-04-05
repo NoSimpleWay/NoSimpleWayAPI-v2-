@@ -113,7 +113,7 @@ namespace NS_DefaultGabarites
 	ETextureGabarite* texture_button_move_down;
 	ETextureGabarite* texture_button_move;
 	ETextureGabarite* texture_button_move_small;
-	ETextureGabarite* texture_close_circle;
+
 	ETextureGabarite* texture_button_cut;
 
 	ETextureGabarite* texture_button_remove_filter_block;
@@ -490,8 +490,8 @@ void EDataActionCollection::action_add_text_as_item(Entity* _entity, ECustomData
 {
 	auto data_entity_container = static_cast<EDataContainer_Group_DataEntitiesSearch*>(static_cast<EntityButton*>(_entity)->parent_button_group->root_group->data_container);
 
-	EntityButton*
-	wide_button = EntityButton::create_wide_item_button
+	EntityButtonWideItem*
+	wide_button = EntityButtonWideItem::create_wide_item_button
 	(
 		new ERegionGabarite(220.0f, 40.0f),
 		data_entity_container->pointer_to_group_item_receiver,
@@ -1859,6 +1859,12 @@ void EDataActionCollection::action_make_unsave_filter_block_changes(Entity* _ent
 	EWindowMain::make_unsaved_loot_filter_changes();
 }
 
+void EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EWindowMain::make_unsaved_loot_filter_changes();
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
+}
+
 void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::make_unsaved_loot_filter_changes();
@@ -1875,7 +1881,7 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 	float temp_width = 220.0f;
 
 	//if (data->target_rule. )
-	EntityButton* jc_button = EntityButton::create_wide_item_button
+	EntityButtonWideItem* jc_button = EntityButtonWideItem::create_wide_item_button
 	(
 		new ERegionGabarite(temp_width, 40.0f),
 		receiver,
@@ -1884,7 +1890,9 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 		true
 	);
 
+	jc_button->pointer_to_close_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 
+	//jc_button->main_clickable_area->region_gabarite->child_gabarite_list[0]->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
 
 	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
@@ -2676,7 +2684,7 @@ EWindowMain::EWindowMain()
 
 		for (int i = 0; i < 6; i++)
 		{
-			jc_button = EntityButton::create_wide_item_button
+			EntityButtonWideItem* jc_wide_button = EntityButtonWideItem::create_wide_item_button
 			(
 				new ERegionGabarite(480.0f, 64.0f),
 				jc_button_group,
@@ -2684,7 +2692,7 @@ EWindowMain::EWindowMain()
 				EFont::font_list[1],
 				true
 			);
-			jc_button_group->add_button_to_working_group(jc_button);
+			jc_button_group->add_button_to_working_group(jc_wide_button);
 			//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_open_data_entity_filter_group);
 
 
@@ -2695,12 +2703,12 @@ EWindowMain::EWindowMain()
 			ECustomData* custom_data_for_gem_button = new ECustomData();
 			custom_data_for_gem_button->data_container = data_container_entity_filter;
 
-			EClickableArea* clickable_area_for_gem_button = EClickableArea::create_default_clickable_region(jc_button->button_gabarite, jc_button, custom_data_for_gem_button);
+			EClickableArea* clickable_area_for_gem_button = EClickableArea::create_default_clickable_region(jc_wide_button->button_gabarite, jc_wide_button, custom_data_for_gem_button);
 			clickable_area_for_gem_button->actions_on_click_list.push_back(&EDataActionCollection::action_open_data_entity_filter_group);
 			custom_data_for_gem_button->clickable_area_list.push_back(clickable_area_for_gem_button);
 
 
-			jc_button->custom_data_list.push_back(custom_data_for_gem_button);
+			jc_wide_button->custom_data_list.push_back(custom_data_for_gem_button);
 		}
 
 		button_group_list.push_back(main_button_group);
@@ -4544,7 +4552,7 @@ EWindowMain::EWindowMain()
 
 		jc_button->can_be_stretched = true;
 		jc_button->main_text_area->localisation_text = l_text;
-		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 
 		filter_block_operation_segment->add_button_to_working_group(jc_button);
 		/////////////////////	CLONE	///////////////////////////////////////////
@@ -4564,7 +4572,7 @@ EWindowMain::EWindowMain()
 		clone_button->new_line_method = NewLineMethod::FORCIBLY;
 
 		clone_button->can_be_stretched = true;
-		clone_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+		clone_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 		clone_button->main_text_area->localisation_text = l_text;
 		//clone_button->parent_filter_block = 
 
@@ -4590,7 +4598,7 @@ EWindowMain::EWindowMain()
 
 		separator_button->can_be_stretched = true;
 		separator_button->main_text_area->localisation_text = l_text;
-		separator_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+		separator_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 
 		//##//##//##//##//##	DESCRIPTION		//##//##//##//##//##//##//##//##
 		separator_button->description_container = new DescriptionContainerSeparatorExample(600.0f, 500.0f);
@@ -5976,7 +5984,7 @@ void EWindowMain::preload_textures()
 	NS_DefaultGabarites::texture_button_move_down = NS_EGraphicCore::load_from_textures_folder("buttons/button_move_down");
 	NS_DefaultGabarites::texture_button_move = NS_EGraphicCore::load_from_textures_folder("buttons/button_move");
 	NS_DefaultGabarites::texture_button_move_small = NS_EGraphicCore::load_from_textures_folder("buttons/button_move_small");
-	NS_DefaultGabarites::texture_close_circle = NS_EGraphicCore::load_from_textures_folder("close_circle");
+	
 	NS_DefaultGabarites::texture_button_cut = NS_EGraphicCore::load_from_textures_folder("buttons/button_cut");
 
 	NS_DefaultGabarites::texture_button_remove_filter_block = NS_EGraphicCore::load_from_textures_folder("buttons/button_remove_filter_block");
@@ -7464,6 +7472,80 @@ void EWindowMain::register_filter_rules()
 	//
 	////////////////////////////////////////////////////////////////////////////////////////////
 
+
+	//CRUCIBLE DIVINATIONS
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/card");
+		jc_filter_rule->categry_id = 0;
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Crucible divinations";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Горнило: новые гадальные карты";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("Divination cards");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Introduced: Crucible league");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//CRUCIBLE CURRENCY
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/CrystallineGeode");
+		jc_filter_rule->categry_id = 0;
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Crucible currency";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Горнило: новая валюта";
+		jc_filter_rule->tag = "Game item";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("Stackable currency");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Introduced: Crucible league");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
 
 	//TRASH DIVINATIONS
 	{
@@ -9289,8 +9371,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			nullptr
 		);
 
-		button_variant_router->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
-		button_variant_router->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+		button_variant_router->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
+		//button_variant_router->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_loot_simulator);
 
 		button_variant_router->height_division = 1;
 
@@ -10902,7 +10984,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		color_button->can_be_stretched = true;
 		color_button->new_line_method = ((clr == 0) ? (NewLineMethod::FORBIDDEN) : (NewLineMethod::FORCIBLY));
 
-		color_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+		color_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 
 		color_button->main_text_area->localisation_text = ltext[clr];
 		color_button->suppressor = &whole_filter_block_group->color_check[clr];
@@ -10932,7 +11014,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		);
 		jc_button->new_line_method = NewLineMethod::FORBIDDEN;
 
-		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 		whole_filter_block_group->pointer_to_color_check_button[clr] = jc_button;
 
 		cosmetic_segment->add_button_to_working_group(jc_button);
@@ -10989,7 +11071,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	);
 	button_text_size_suppressor->new_line_method = NewLineMethod::FORBIDDEN;
 
-	button_text_size_suppressor->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+	button_text_size_suppressor->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 	whole_filter_block_group->text_size_switch_button = button_text_size_suppressor;
 
 	cosmetic_segment->add_button_to_working_group(button_text_size_suppressor);
@@ -11008,7 +11090,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		&EDataActionCollection::action_rotate_variant,
 		nullptr
 	);
-	button_variant_FB_router->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+	button_variant_FB_router->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 	button_variant_FB_router->parent_filter_block = whole_filter_block_group;
 
 
@@ -11236,7 +11318,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 		target_bool
 	);
-	ray_bool_suppressor->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+	ray_bool_suppressor->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 	whole_filter_block_group->text_size_switch_button = ray_bool_suppressor;
 
 	minimap_and_ray_cosmetic_segment->add_button_to_working_group(ray_bool_suppressor);
@@ -11256,7 +11338,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		&EDataActionCollection::action_rotate_variant,
 		nullptr
 	);
-	button_variant_FB_router->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+	button_variant_FB_router->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 	button_variant_FB_router->parent_filter_block = whole_filter_block_group;
 
 
@@ -12013,8 +12095,8 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 								if (matched_data_entity != nullptr)
 								{
-									EntityButton*
-									wide_button = EntityButton::create_wide_item_button
+									EntityButtonWideItem*
+									wide_button = EntityButtonWideItem::create_wide_item_button
 									(
 										new ERegionGabarite(220.0f, 40.0f),
 										((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons,
@@ -12028,7 +12110,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								}
 								else
 								{
-									EntityButton* wide_button = EntityButton::create_wide_item_button
+									EntityButtonWideItem* wide_button = EntityButtonWideItem::create_wide_item_button
 									(
 										new ERegionGabarite(220.0f, 40.0f),
 										((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons,
@@ -17347,7 +17429,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 			NS_EGraphicCore::load_from_textures_folder("button_close")
 		);
 
-		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+		jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 
 		jc_button->parent_filter_block = _target_filter_block;
 		jc_button->used_filter_block_attribute = _game_item_attribute;
@@ -17405,8 +17487,8 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 				new ERegionGabarite(button_height * 2.0f, button_height)
 			);
 			condition_router_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
-			condition_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
-			condition_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+			condition_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
+			//condition_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_loot_simulator);
 			condition_router_button->height_division = 1;
 			///		<=		///////////////////////////////////////////////////////////////////////////
 			{
@@ -17548,7 +17630,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 			non_listed_line->add_button_to_working_group(rarity_button);
 
 			rarity_button->make_as_default_router_variant_button (new ERegionGabarite(100.0f + input_field_additional_width, button_height));
-			rarity_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+			rarity_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 
 			rarity_button->parent_filter_block = _target_filter_block;
 			rarity_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
@@ -17635,7 +17717,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 				&EDataActionCollection::action_open_quality_selector,
 				*EWindowMain::registered_alternate_gem_quality_router_variants[0]->localisation
 			);
-			jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+			jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 			jc_button->main_text_area->set_color(EWindowMain::registered_alternate_gem_quality_router_variants[0]->color);
 			jc_button->main_text_area->localisation_text = *EWindowMain::registered_alternate_gem_quality_router_variants[0]->localisation;
 
@@ -17662,7 +17744,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 				NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 				nullptr
 			);
-			jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+			jc_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simualator);
 
 			jc_button->parent_filter_block = _target_filter_block;
 			jc_button->used_filter_block_attribute = _game_item_attribute;
@@ -19065,7 +19147,7 @@ void EButtonGroupDataEntity::background_update(float _d)
 	for (int i = 0; i < 50; i++)
 		if (data_entity_id < EDataEntity::data_entity_global_list.size())
 		{
-			EntityButton* jc_button = EntityButton::create_wide_item_button
+			EntityButtonWideItem* jc_button = EntityButtonWideItem::create_wide_item_button
 			(
 				new ERegionGabarite(300.0f, 60.0f),
 				main_left_side,
@@ -21639,7 +21721,7 @@ void DescriptionContainerSeparatorExample::create_description()
 						{
 							if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", block_wide_button_tags[i][j], data_entity))
 							{
-								EntityButton* wide_button = EntityButton::create_wide_item_button
+								EntityButtonWideItem* wide_button = EntityButtonWideItem::create_wide_item_button
 								(
 									new ERegionGabarite(150.0f, 40.0f),
 									bottom_side_for_preview,

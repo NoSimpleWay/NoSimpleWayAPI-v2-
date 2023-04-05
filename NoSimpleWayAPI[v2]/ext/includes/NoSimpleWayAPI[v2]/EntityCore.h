@@ -288,15 +288,7 @@ public:
 	);
 
 
-	static EntityButton* create_wide_item_button
-	(
-		ERegionGabarite* _region_gabarite,
-		EButtonGroup* _parent_group,
-		EDataEntity* _data_entity,
-		EFont* _font,
-		bool _can_be_deleted
-		//void (*data_action_pointer)(Entity*, ECustomData*, float)
-	);
+
 
 	static EntityButton* create_horizontal_named_slider
 	(
@@ -517,6 +509,22 @@ class EntityButtonButtonGroupActivator : public EntityButton
 {
 public:
 	EButtonGroup* target_group;
+};
+
+class EntityButtonWideItem : public EntityButton
+{
+public:
+	EClickableArea* pointer_to_close_area;
+
+	static EntityButtonWideItem* create_wide_item_button
+	(
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		EDataEntity* _data_entity,
+		EFont* _font,
+		bool _can_be_deleted
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
 };
 
 

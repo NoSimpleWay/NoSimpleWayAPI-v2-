@@ -682,9 +682,9 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 	return jc_button;
 }
 
-EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity, EFont* _font, bool _can_be_deleted)
+EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity, EFont* _font, bool _can_be_deleted)
 {
-		EntityButton* jc_button = new EntityButton();
+		EntityButtonWideItem* jc_button = new EntityButtonWideItem();
 
 		jc_button->make_as_default_clickable_button
 		(
@@ -842,6 +842,8 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 					jc_button,
 					EntityButton::get_last_custom_data(jc_button)
 				);
+
+			jc_button->pointer_to_close_area = close_clickable_area;
 			close_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_delete_entity);
 
 			close_clickable_area->region_gabarite->offset_by_parent_size_x = 1.0f;
@@ -861,7 +863,7 @@ EntityButton* EntityButton::create_wide_item_button(ERegionGabarite* _region_gab
 
 			//////////////////////////////////
 			ETextureGabarite*
-			close_icon = NS_EGraphicCore::load_from_textures_folder("close_circle");
+			close_icon = NS_DefaultGabarites::texture_close_circle;
 
 			float resize_factor = 0.0f;
 			float offset_x = 0.0f;
@@ -1546,7 +1548,7 @@ EClickableArea* EntityButton::add_close_circle(data_action_pointer _dap)
 
 		//////////////////////////////////
 		ETextureGabarite*
-			close_icon = NS_EGraphicCore::load_from_textures_folder("close_circle");
+			close_icon = NS_DefaultGabarites::texture_close_circle;
 
 		float resize_factor = 0.0f;
 		float offset_x = 0.0f;
