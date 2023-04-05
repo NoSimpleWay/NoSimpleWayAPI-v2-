@@ -288,9 +288,9 @@ void EDataActionCollection::action_select_this_filter_variant(Entity* _entity, E
 {
 	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EWindowMain::data_entity_filter->data_container;
 
-	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
-		EntityButtonFilterRule* filter_button = (EntityButtonFilterRule*)_entity;
+		EntityButtonFilterRule*
+		filter_button = (EntityButtonFilterRule*)_entity;
 
 		//std::cout << filter_button->target_data_container->target_rule << std::endl;
 
@@ -299,13 +299,8 @@ void EDataActionCollection::action_select_this_filter_variant(Entity* _entity, E
 
 		filter_button->parent_button_group->selected_button = filter_button;
 	}
-	//else
-	//{
-	//	button_group_data_container->target_rule = EFilterRule::registered_filter_rules_for_list[0];
-	//}
-	//static_cast<EntityButtonFilterRule*> 
-	EDataActionCollection::action_type_search_data_entity_text(button_group_data_container->filter_text_area);
 
+	EDataActionCollection::action_type_search_data_entity_text(button_group_data_container->filter_text_area);
 }
 
 void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1000,25 +995,41 @@ void EDataActionCollection::action_draw_deleted_group(Entity* _entity, ECustomDa
 void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::make_unsaved_loot_filter_changes();
-	EInputCore::logger_simple_info("???");
-	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* button_data_container = ((EDataContainer_Group_StoreFilterRuleForDataEntitySearcher*)_custom_data->data_container);
-	EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EWindowMain::data_entity_filter->data_container;
+	//EInputCore::logger_simple_info("???");
+	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher*
+	button_data_container = ((EDataContainer_Group_StoreFilterRuleForDataEntitySearcher*)_custom_data->data_container);
+
+	EDataContainer_Group_DataEntitiesSearch*
+	button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EWindowMain::data_entity_filter->data_container;
 
 	EWindowMain::data_entity_filter->activate_move_to_foreground_and_center();
 
 	button_group_data_container->pointer_to_group_item_receiver = button_data_container->target_group;
-	button_group_data_container->target_rule = button_data_container->filter_rule;
+
+	//button_group_data_container->target_rule = button_data_container->filter_rule;
+
+
+	//filter rule in group = stored filter rule on selected button
+	if (button_group_data_container->pointer_to_group_with_filter_rules_list->selected_button != nullptr)
+	{
+		EntityButtonFilterRule*
+		filter_button = (EntityButtonFilterRule*)button_group_data_container->pointer_to_group_with_filter_rules_list->selected_button;
+
+		button_group_data_container->target_rule = filter_button->target_filter_rule;
+	}
+
 	button_group_data_container->action_on_select_for_button = button_data_container->target_action_on_click;
+
 
 	for (EntityButton* but : EWindowMain::data_entity_filter->right_side_for_filters->workspace_button_list)
 	{
 		EntityButtonFilterRule* button_rule = static_cast<EntityButtonFilterRule*>(but);
 		if
-			(
-				(button_rule->target_filter_rule->tag == button_data_container->filter_rule->focused_by_data_type)
-				||
-				(button_rule->target_filter_rule->tag == "*ALL*")
-				)
+		(
+			(button_rule->target_filter_rule->tag == button_data_container->filter_rule->focused_by_data_type)
+			||
+			(button_rule->target_filter_rule->tag == "*ALL*")
+		)
 		{
 			button_rule->entity_disabled = false;
 		}
@@ -1027,6 +1038,20 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 			button_rule->entity_disabled = true;
 		}
 	}
+
+
+
+	//EDataContainer_Group_DataEntitiesSearch* button_group_data_container = (EDataContainer_Group_DataEntitiesSearch*)EWindowMain::data_entity_filter->data_container;
+
+	//{
+	//	EntityButtonFilterRule*
+	//	filter_button = (EntityButtonFilterRule*)_entity;
+
+	//	button_group_data_container->target_rule = filter_button->target_filter_rule;
+
+	//	filter_button->parent_button_group->selected_button = filter_button;
+	//}
+
 
 	EDataActionCollection::action_type_search_data_entity_text(button_group_data_container->filter_text_area);
 	/* OUTDATED */
@@ -3256,6 +3281,11 @@ EWindowMain::EWindowMain()
 			filter_button->target_data_container = jc_data_container_for_search_group;
 
 			right_side_for_filter_rule_buttons->add_button_to_working_group(filter_button);
+		}
+
+		if (!right_side_for_filter_rule_buttons->workspace_button_list.empty())
+		{
+			right_side_for_filter_rule_buttons->selected_button = right_side_for_filter_rule_buttons->workspace_button_list.front();
 		}
 
 		////////////////////////////////////		DATA ENTITY SEARCH		////////////////////////////////////
