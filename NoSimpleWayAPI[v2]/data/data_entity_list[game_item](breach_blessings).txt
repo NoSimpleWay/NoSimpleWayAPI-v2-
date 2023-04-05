@@ -12,6 +12,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Breach blessing"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -30,6 +31,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Breach blessing"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -48,6 +50,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Breach blessing"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -66,6 +69,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Breach blessing"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -84,6 +88,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Breach blessing"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
 

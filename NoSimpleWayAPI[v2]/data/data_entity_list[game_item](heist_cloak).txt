@@ -54,6 +54,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Cloak"
 	
 	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

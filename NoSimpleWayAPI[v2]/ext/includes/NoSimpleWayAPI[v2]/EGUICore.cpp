@@ -165,6 +165,8 @@ void EWindow::GUI_update_default(float _d)
 
 					EButtonGroup::parent_vector_moving_group = nullptr;
 					EButtonGroup::vector_moving_group = nullptr;
+
+
 				}
 			}
 			else

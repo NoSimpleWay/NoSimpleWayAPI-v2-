@@ -54,6 +54,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Powerful_Chaotic_Resonator_inventory_icon"
 	[tag]"base class"	[value]"Delve Stackable Socketable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Delve item"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -70,6 +75,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -85,6 +91,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Delve item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

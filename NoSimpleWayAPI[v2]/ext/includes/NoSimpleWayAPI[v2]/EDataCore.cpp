@@ -3477,6 +3477,55 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 	bool matched_by_input = false;
 	bool required_tag_match = true;
 	bool required_tag_value_match = true;
+	bool any_match_with_banned = false;
+
+	
+	if (true)
+	for (DataEntityFilter* banned_tag_filter : _filter_rule->banned_tag_list)
+	{
+		//potentially fail match
+
+		//2 ways to fail match:
+		//1) item have no required tag
+		//2) item have required tag, but value of this tag not math with no one suitable tag list
+		//EInputCore::logger_param("target_tag_name", banned_tag_filter->target_tag_name);
+		//EInputCore::logger_param("suitable_values_list", banned_tag_filter->suitable_values_list[0]);
+
+		//for every banned tag
+		for (EDataTag* data_entity_tag : _data_entity->tag_list)
+		{
+			tag_value = *data_entity_tag->tag_value_list[0];
+
+			//compare data entity tag and requaire tag from filter rule
+			if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, banned_tag_filter->target_tag_name)))
+			{
+
+				for (std::string suitable_str : banned_tag_filter->suitable_values_list)//one of suitable list
+				{
+					//EInputCore::logger_param("data_entity_tag", tag_value);
+					
+
+					//if (suitable_str == "Deleted") { return false; }
+
+					if
+					(
+						//empty suitable text means 'any value suitable'
+						(suitable_str == "")
+						||
+						(EStringUtils::compare_ignoring_case(suitable_str, tag_value))
+					)
+					{
+						//even one match with banned tag return false
+						return false;
+					}
+				}
+			}
+		}
+
+
+
+		//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
+	}
 
 	//search by input
 	if (_search_text != "")
@@ -3562,6 +3611,8 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 
 			//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
 		}
+
+
 
 	return (matched_by_input && required_tag_match && required_tag_value_match);
 }

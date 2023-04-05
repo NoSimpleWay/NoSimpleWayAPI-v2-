@@ -1,0 +1,3883 @@
+#BlockSeparator "Лига Горнило" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
+	SetBackgroundColor 255 140 47 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 184 15 255
+	SetFontSize 45
+	MinimapIcon 0 Orange Square
+	PlayEffect Orange
+	PlayAlertSound 13 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasCruciblePassiveTree True
+	SetBackgroundColor 249 94 0 230
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 184 15 255
+	SetFontSize 45
+	MinimapIcon 0 Orange Circle
+	PlayEffect Red
+	PlayAlertSound 10 300
+	DisableDropSound
+
+
+#BlockSeparator "Гадальные карты" expanded no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "House of Mirrors" "The Apothecary" "The Price of Devotion" "The Shieldbearer" "The Demon" "The Doctor" "The Fiend" "The Immortal" "Unrequited Love" "The Insane Cat"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+	PlayAlertSound 6 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Brother's Stash" "Choking Guilt" "Desecrated Virtue" "Doryani's Epiphany" "Love Through Ice" "Seven Years Bad Luck" "Succor of the Sinless" "The Cheater" "The Nurse" "The Price of Loyalty" "The Sephirot" "The Soul" "Wealth and Power" "Brother's Gift"
+	SetBackgroundColor 185 143 0 255
+	SetTextColor 220 255 255 255
+	SetBorderColor 255 167 0 255
+	SetFontSize 42
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+	PlayAlertSound 6 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "A Fate Worse Than Death" "Abandoned Wealth" "Beauty Through Death" "Darker Half" "Home" "Gemcutter's Mercy" "Monochrome" "The Academic" "The Destination" "The Artist" "The Dragon's Heart" "The Endless Darkness" "The Enlightened" "The Garish Power" "The Last One Standing" "The Patient" "The Samurai's Eye" "The Strategist" "Broken Promises" "The Hook" "Eternal Bonds" "Magnum Opus" "Imperfect Memories" "Divine Beauty"
+	SetBackgroundColor 127 0 185 255
+	SetTextColor 220 255 255 255
+	SetBorderColor 184 0 236 255
+	SetFontSize 41
+	MinimapIcon 0 Pink Square
+	#PlayEffect Red
+	PlayAlertSound 5 226
+	DisableDropSound
+
+
+Show
+	#config_VersionControl focus focus standard standard standard
+	BaseType == "Altered Perception" "A Familiar Call" "Akil's Prophecy" "Alluring Bounty" "Azyran's Reward" "Brotherhood in Exile" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Draped in Dreams" "Dying Light" "Etched in Blood" "Further Invention" "Fateful Meeting" "Gift of Asenath" "Gift of the Gemling Queen" "Haunting Shadows" "Keeper's Corruption" "Lethean Temptation" "Mawr Blaidd" "Nook's Crown" "Pride of the First Ones" "Rebirth" "Remembrance" "Something Dark" "The Leviathan" "The Shepherd's Sandals" "The Astromancer" "The Bargain" "The Bitter Blossom" "The Celestial Justicar" "The Celestial Stone" "The Chosen" "The Damned" "The Escape" "The Eye of Terror" "The Fishmonger" "The Greatest Intentions" "The Gulf" "The Hive of Knowledge" "The Long Con" "The Old Man" "The Polymath" "The Progeny of Lunaris" "The Sacrifice" "The Seeker" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tumbleweed" "The Undisputed" "The Vast" "The World Eater" "Underground Forest" "Void of the Elements" "The Price of Prescience" "The Mind's Eyes" "Costly Curio" "Dementophobia" "Winter's Embrace" "Brush, Paint and Palette" "Deadly Joy" "The Eternal War" "The Shortcut" "A Modest Request" "Luminous Trove" "Desperate Crusade" "A Stone Perfected" "The Rabbit's Foot" "Chasing Risk" "The Scout" "The Forgotten Treasure" "The Aspirant" "Judging Voices" "Bijoux" "Justified Ambition" "Duality" "Auspicious Ambitions" "The Wedding Gift" "The Enforcer" "Tranquillity" "The Eye of the Dragon" "The Last Supper" "Merciless Armament" "Matryoshka"
+	SetBackgroundColor 46 104 121 255
+	SetTextColor 220 255 255 255
+	SetBorderColor 46 138 130 255
+	SetFontSize 40
+	MinimapIcon 1 Blue Square
+	#PlayEffect Red
+	PlayAlertSound 2 220
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard ignore hide
+	BaseType == "A Dab of Ink" "Astral Protection" "Acclimatisation" "Alone in the Darkness" "Anarchy's Price" "Arrogance of the Vaal" "Audacity" "Boon of the First Ones" "Broken truce" "Bowyer's Dream" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Checkmate" "Death" "Deathly Designs" "Demigod's Wager" "Divine Justice" "Endless night" "Emperor of Purity" "Emperor's Luck" "From Bone to Ashes" "Rebirth and Renewal" "Hunter's Reward" "Immortal Resolve" "Left to Fate" "Lucky Deck" "Lysah's Respite" "No Traces" "Peaceful Moments" "Perfection" "Pride Before the Fall" "Prometheus' Armoury" "Reckless Ambition" "The Archmage's Right Hand" "The Brawny Battle Mage" "The Dungeon Master" "The Forward Gaze" "The Avenger" "The Awakened" "The Bear Woman" "The Bones" "The Breach" "The Brittle Emperor" "The Cacophony" "The Cartographer" "The Chains that Bind" "The Conduit" "The Craving" "The Dapper Prodigy" "The Darkest Dream" "The Deal" "The Deep Ones" "The Dreamer" "The Easy Stroll" "The Eldritch Decay" "The Ethereal" "The Fool" "The Formless Sea" "The Golden Era" "The Hale Heart" "The Heroic Shot" "The Hoarder" "The Hunger" "The Incantation" "The Innocent" "The Inventor" "The Jester" "The Journey" "The King's Heart" "The Landing" "The Life Thief" "The Lord in Black" "The Lord of Celebration" "The Mad King" "The Obscured" "The Offering" "The Pact" "The Porcupine" "The Price of Protection" "The Primordial" "The Professor" "The Queen" "The Risk" "The Road to Power" "The Saint's Treasure" "The Side Quest" "The Siren" "The Spark and the Flame" "The Spoiled Prince" "The Survivalist" "The Traitor" "The Twilight Moon" "The Tyrant" "The Undaunted" "The Unexpected Prize" "The Union" "The Valkyrie" "The Void" "The Warlord" "The White Knight" "The Whiteout" "The Wilted Rose" "The Wind" "The Wolven King's Bite" "The Wolverine" "The Wrath" "The Wretched" "Triskaidekaphobia" "Unchained" "Vanity" "Vinia's Token" "The Emptiness" "A Sea of Blue" "The Offspring" "Terrible Secret of Space" "Lachrymal Necrosis" "Ambitious Obsession" "Sambodhi's Wisdom" "The Enthusiasts" "Prejudice" "The Card Sharp" "The Prince of Darkness" "Disdain" "Guardian's Challenge" "Silence and Frost" "Misery in Darkness" "Parasitic Passengers" "The One That Got Away" "The Transformation" "The Magma Crab" "Man With Bear" "Dying Anguish" "Ever-Changing" "A Dusty Memory" "The Finishing Touch" "Humility" "Treasure Hunter" "Echoes of Love" "Turn the Other Cheek"
+	SetBackgroundColor 43 84 46 255
+	SetTextColor 220 255 255 255
+	SetBorderColor 118 155 58 255
+	SetFontSize 38
+	MinimapIcon 2 Green Square
+	#PlayEffect Red
+	PlayAlertSound 11 205
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard ignore ignore hide hide
+	BaseType == "A Mother's Parting Gift" "Assassin's Favour" "Atziri's Arsenal" "Azure Rage" "Baited Expectations" "Blessing of God" "Blind Venture" "Boon of Justice" "Boundless Realms" "Call to the First Ones" "Cartographer's Delight" "Coveted Possession" "Cursed Words" "Dark Temptation" "Destined to Crumble" "Dialla's Subjugation" "Doedre's Madness" "Earth Drinker" "Forbidden Power" "Friendship" "Gemcutter's Promise" "Glimmer of Hope" "Grave Knowledge" "Harmony of Souls" "Her Mask" "Heterochromia" "Hope" "Hubris" "Hunter's Resolve" "Imperial Legacy" "Jack in the Box" "Lantador's Lost Love" "Last Hope" "Light and Truth" "Lingering Remnants" "Lost Worlds" "Loyalty" "Lucky Connections" "Might is Right" "Mitts" "More is Never Enough" "Prosperity" "Rain of Chaos" "Rain Tempter" "Rats" "Sambodhi's Vow" "Scholar of the Seas" "Shard of Fate" "Society's Remorse" "Squandered Prosperity" "Struck by Lightning" "The Admirer" "The Aesthete" "The Arena Champion" "The Army of Blood" "The Battle Born" "The Beast" "The Betrayal" "The Blazing Fire" "The Body" "The Cache" "The Calling" "The Carrion Crow" "The Cataclysm" "The Catalyst" "The Coming Storm" "The Cursed King" "The Dark Mage" "The Deceiver" "The Demoness" "The Doppelganger" "The Dragon" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Endurance" "The Explorer" "The Fathomless Depths" "The Feast" "The Fletcher" "The Flora's Gift" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gentleman" "The Gladiator" "The Harvester" "The Hermit" "The Inoculated" "The Insatiable" "The Jeweller's Boon" "The Journalist" "The King's Blade" "The Lich" "The Lion" "The Long Watch" "The Lover" "The Lunaris Priestess" "The Master" "The Master Artisan" "The Mayor" "The Mercenary" "The Messenger" "The Metalsmith's Gift" "The Mountain" "The Oath" "The One With All" "The Opulent" "The Pack Leader" "The Penitent" "The Poet" "The Puzzle" "The Rabid Rhoa" "The Realm" "The Rite of Elements" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Sigil" "The Skeleton" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surgeon" "The Surveyor" "The Sustenance" "The Sword King's Salute" "The Tower" "The Trial" "The Twins" "The Valley of Steel Boxes" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolf" "The Wolf's Legacy" "The Wolf's Shadow" "Thirst for Knowledge" "Three Faces in the Dark" "Three Voices" "Thunderous Skies" "Time-Lost Relic" "Vile Power" "Volatile Power" "The Blessing of Moosh" "The Adventuring Spirit" "Treasures of the Vaal" "The Catch" "The Fox in the Brambles" "The Tireless Extractor" "Alivia's Grace" "The Return of the Rat"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 220 255 255 255
+	SetBorderColor 95 92 89 255
+	SetFontSize 35
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard ignore standard standard standard
+	Class "Divination Cards"
+	SetBackgroundColor 133 0 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Stacked Deck"
+	SetBackgroundColor 54 55 73 209
+	SetTextColor 0 255 255 255
+	SetBorderColor 0 112 255 255
+	SetFontSize 45
+	MinimapIcon 2 Cyan Square
+	PlayEffect Cyan
+	PlayAlertSound 14 300
+
+
+#BlockSeparator "Камни: пробуждённые" shrinked additional_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Support Skill Gems"
+	BaseType "Awakened Chain Support" "Awakened Fork Support" "Awakened Greater Multiple Projectiles Support" "Awakened Spell Cascade Support" "Awakened Spell Echo Support" "Awakened Enhance Support" "Awakened Enlighten Support" "Awakened Empower Support"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 175 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
+	PlayAlertSound 6 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Support Skill Gems"
+	BaseType "Awakened Cast On Critical Strike Support" "Awakened Cast While Channelling Support" "Awakened Elemental Damage With Attacks Support" "Awakened Elemental Focus Support" "Awakened Increased Area Of Effect Support" "Awakened Unleash Support" "Awakened Void Manipulation Support"
+	SetBackgroundColor 255 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 44
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
+	CustomAlertSoundOptional "yeaaaahhhhh.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Support Skill Gems"
+	BaseType "Awakened Added Cold Damage Support" "Awakened Brutality Support" "Awakened Burning Damage Support" "Awakened Hextouch Support" "Awakened Melee Physical Damage Support" "Awakened Unbound Ailments Support"
+	SetBackgroundColor 255 120 120 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 42
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
+	CustomAlertSoundOptional "HOLYGRENADE.WAV"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Support Skill Gems"
+	BaseType "Awakened Added Chaos Damage Support" "Awakened Added Fire Damage Support" "Awakened Added Lightning Damage Support" "Awakened Ancestral Call Support" "Awakened Arrow Nova Support" "Awakened Blasphemy Support" "Awakened Cold Penetration Support" "Awakened Controlled Destruction Support" "Awakened Deadly Ailments Support" "Awakened Fire Penetration Support" "Awakened Generosity Support" "Awakened Lightning Penetration Support" "Awakened Melee Splash Support" "Awakened Minion Damage Support" "Awakened Vicious Projectiles Support"
+	SetBackgroundColor 110 110 110 255
+	SetTextColor 193 221 0 255
+	SetBorderColor 200 158 97 255
+	SetFontSize 41
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
+	CustomAlertSoundOptional "ahhman.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Support Skill Gems"
+	BaseType "Awakened"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
+	PlayAlertSound 1 300
+
+
+#BlockSeparator "Камни: особые" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	GemLevel = 4
+	Class "Support Skill Gems"
+	BaseType "Empower Support" "Enhance Support" "Enlighten Support"
+	SetBackgroundColor 255 255 255 255
+	#SetTextColor 0 0 0 255
+	#SetBorderColor 0 0 0 255
+	SetFontSize 45
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
+	PlayAlertSound 6 300
+	Continue
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	GemLevel = 3
+	Class "Support Skill Gems"
+	BaseType "Empower Support" "Enhance Support" "Enlighten Support"
+	#SetBackgroundColor 0 0 0 255
+	#SetTextColor 0 0 0 255
+	#SetBorderColor 0 0 0 255
+	SetFontSize 42
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
+	PlayAlertSound 13 300
+	Continue
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	GemLevel = 2
+	Class "Support Skill Gems"
+	BaseType "Empower Support" "Enhance Support" "Enlighten Support"
+	#SetBackgroundColor 0 0 0 255
+	#SetTextColor 0 0 0 255
+	#SetBorderColor 0 0 0 255
+	SetFontSize 40
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
+	PlayAlertSound 10 300
+	Continue
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	GemLevel = 1
+	Class "Support Skill Gems"
+	BaseType "Empower Support" "Enhance Support" "Enlighten Support"
+	#SetBackgroundColor 0 0 0 255
+	#SetTextColor 0 0 0 255
+	#SetBorderColor 0 0 0 255
+	SetFontSize 37
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
+	PlayAlertSound 10 300
+	Continue
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Empower Support"
+	SetBackgroundColor 255 167 0 252
+	SetTextColor 255 0 0 255
+	SetBorderColor 254 119 0 254
+	SetFontSize 32
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Enhance Support"
+	SetBackgroundColor 68 255 0 252
+	SetTextColor 34 116 0 255
+	SetBorderColor 240 254 0 254
+	SetFontSize 32
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Enlighten Support"
+	SetBackgroundColor 0 16 255 252
+	SetTextColor 0 255 231 255
+	SetBorderColor 0 207 254 254
+	SetFontSize 32
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Камни: Ваал" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	GemLevel >= 21
+	Class "Active Skill Gems"
+	BaseType "Vaal"
+	SetBackgroundColor 255 0 0 251
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 104 104 255
+	SetFontSize 45
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	Quality >= 21
+	Class "Active Skill Gems"
+	BaseType "Vaal"
+	SetBackgroundColor 255 0 0 251
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 104 104 255
+	SetFontSize 45
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus standard hide hide hide
+	Class "Active Skill Gems"
+	BaseType "Vaal"
+	SetBackgroundColor 65 0 0 251
+	SetTextColor 247 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 38
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+	PlayAlertSound 10 300
+
+
+#BlockSeparator "Камни: обычные" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	GemLevel > 20
+	Class "Active Skill Gems" "Support Skill Gems"
+	SetBackgroundColor 170 170 170 255
+	SetTextColor 255 192 244 255
+	SetBorderColor 156 76 149 255
+	SetFontSize 45
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+	PlayAlertSound 10 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Quality > 20
+	Class "Active Skill Gems" "Support Skill Gems"
+	SetBackgroundColor 170 170 170 255
+	SetTextColor 255 192 244 255
+	SetBorderColor 156 76 149 255
+	SetFontSize 45
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+	PlayAlertSound 10 300
+
+
+Show
+	#config_VersionControl standard standard standard ignore hide
+	Quality >= 16
+	Class "Active Skill Gems" "Support Skill Gems"
+	SetBackgroundColor 198 198 198 217
+	SetTextColor 0 0 0 255
+	SetBorderColor 156 76 148 255
+	SetFontSize 39
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+	PlayAlertSound 14 300
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	Quality >= 10
+	Class "Active Skill Gems" "Support Skill Gems"
+	SetBackgroundColor 129 129 129 197
+	SetTextColor 0 0 0 255
+	SetBorderColor 156 76 148 255
+	SetFontSize 36
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+	PlayAlertSound 14 300
+
+
+Show
+	#config_VersionControl standard standard hide hide hide
+	Quality >= 1
+	Class "Active Skill Gems" "Support Skill Gems"
+	SetBackgroundColor 112 112 112 136
+	SetTextColor 0 0 0 255
+	SetBorderColor 103 50 98 255
+	SetFontSize 33
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+	PlayAlertSound 14 300
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	AreaLevel <= 10
+	Class "Active Skill Gems" "Support Skill Gems"
+	SetBackgroundColor 129 129 129 197
+	SetTextColor 0 0 0 255
+	SetBorderColor 156 76 148 255
+	SetFontSize 45
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	Class "Active Skill Gems" "Support Skill Gems"
+	SetBackgroundColor 129 129 129 197
+	SetTextColor 0 0 0 255
+	SetBorderColor 156 76 148 255
+	SetFontSize 21
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Скарабеи" shrinked additional_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Winged"
+	Class "Map Fragments"
+	SetBackgroundColor 255 166 245 255
+	SetTextColor 217 0 255 255
+	SetBorderColor 161 86 133 255
+	SetFontSize 45
+	MinimapIcon 0 Purple UpsideDownHouse
+	PlayEffect Purple
+	PlayAlertSound 13 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Gilded"
+	Class "Map Fragments"
+	SetBackgroundColor 122 100 46 255
+	SetTextColor 255 224 0 255
+	SetBorderColor 161 161 84 255
+	SetFontSize 41
+	MinimapIcon 0 Yellow UpsideDownHouse
+	#PlayEffect Red
+	PlayAlertSound 10 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Polished"
+	Class "Map Fragments"
+	SetBackgroundColor 93 95 122 212
+	SetTextColor 66 255 247 255
+	SetBorderColor 69 124 132 255
+	SetFontSize 41
+	MinimapIcon 1 Cyan UpsideDownHouse
+	#PlayEffect Red
+	PlayAlertSound 2 300
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Rusted"
+	Class "Map Fragments"
+	SetBackgroundColor 66 47 31 212
+	SetTextColor 255 157 67 255
+	SetBorderColor 132 69 69 255
+	SetFontSize 40
+	MinimapIcon 2 Orange UpsideDownHouse
+	#PlayEffect Red
+	PlayAlertSound 2 300
+
+
+#BlockSeparator "Фрагменты карт" expanded no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Unrelenting Timeless Karui Emblem" "Unrelenting Timeless Maraketh Emblem" "Unrelenting Timeless Eternal Emblem" "Unrelenting Timeless Templar Emblem" "Unrelenting Timeless Vaal Emblem"
+	Class "Map Fragments"
+	SetBackgroundColor 137 255 222 255
+	SetTextColor 29 86 136 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Cyan Diamond
+	PlayEffect Cyan
+	PlayAlertSound 1 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Xoph's Flawless Breachstone" "Tul's Flawless Breachstone" "Esh's Flawless Breachstone" "Uul-Netol's Flawless Breachstone" "Chayula's Flawless Breachstone" "Unrelenting Timeless Karui Emblem"
+	Class "Breachstone"
+	SetBackgroundColor 137 255 222 255
+	SetTextColor 29 86 136 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Cyan Diamond
+	PlayEffect Cyan
+	PlayAlertSound 1 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Forgotten Reliquary Key" "Visceral Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Oubliette Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key"
+	SetBackgroundColor 202 43 81 255
+	SetTextColor 255 197 0 255
+	SetBorderColor 255 163 0 255
+	SetFontSize 45
+	MinimapIcon 0 Red Pentagon
+	PlayEffect Red
+	PlayAlertSound 6 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Veritania's Crest" "Al-Hezmin's Crest" "Drox's Crest" "Baran's Crest" "Fragment of Terror" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Emptiness"
+	SetBackgroundColor 52 0 0 221
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 81 0 255
+	SetFontSize 45
+	MinimapIcon 0 Red Square
+	#PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Fragment of the Hydra" "Fragment of the Minotaur" "Fragment of the Phoenix" "Fragment of the Chimera"
+	SetBackgroundColor 0 0 0 221
+	SetTextColor 135 135 135 255
+	SetBorderColor 111 111 111 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Square
+	#PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Mortal Hope" "Mortal Ignorance" "Mortal Rage" "Mortal Grief"
+	SetBackgroundColor 52 0 26 221
+	SetTextColor 218 128 255 255
+	SetBorderColor 163 0 255 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Square
+	#PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Fragment of Purification" "Fragment of Enslavement" "Fragment of Constriction" "Fragment of Eradication"
+	SetBackgroundColor 38 52 44 221
+	SetTextColor 123 255 168 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Green Square
+	#PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Ceremonial Voidstone" "Decayed Voidstone" "Grasping Voidstone" "Omniscient Voidstone"
+	SetBackgroundColor 217 84 132 255
+	SetTextColor 246 246 246 255
+	SetBorderColor 23 255 199 255
+	SetFontSize 45
+	MinimapIcon 0 Pink Circle
+	PlayEffect Pink
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	Class "Map Fragments"
+	BaseType "Sacrifice at Dusk" "Sacrifice at Noon" "Sacrifice at Dawn" "Sacrifice at Midnight"
+	SetBackgroundColor 35 1 1 255
+	SetTextColor 255 91 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 29
+	MinimapIcon 0 Green Circle
+	#PlayEffect Red
+	PlayAlertSound 10 300
+
+
+#BlockSeparator "Особые фрагменты карт" expanded no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Singular Scouting Report" "Otherworldly Scouting Report" "Comprehensive Scouting Report" "Vaal Scouting Report" "Delirious Scouting Report" "Operative's Scouting Report" "Blighted Scouting Report" "Influenced Scouting Report" "Explorer's Scouting Report"
+	SetBackgroundColor 61 59 44 255
+	SetTextColor 255 193 0 255
+	SetBorderColor 143 147 88 255
+	SetFontSize 45
+	MinimapIcon 0 Grey Star
+	#PlayEffect Red
+	PlayAlertSound 2 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Maven's Invitation:"
+	SetBackgroundColor 46 146 0 221
+	SetTextColor 255 222 49 255
+	SetBorderColor 163 255 0 255
+	SetFontSize 45
+	MinimapIcon 0 Grey Square
+	#PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Writhing Invitation" "Screaming Invitation" "Polaric Invitation" "Incandescent Invitation" "Luminous Astrolabe" "Atlas Book of Skill" "Flesh Compass"
+	SetBackgroundColor 46 146 0 221
+	SetTextColor 255 222 49 255
+	SetBorderColor 163 255 0 255
+	SetFontSize 45
+	MinimapIcon 0 Grey Square
+	#PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Niko's Memory" "Alva's Memory" "Kirac's Memory" "Einhar's Memory" "Mirrored Tablet"
+	SetBackgroundColor 19 36 52 255
+	SetTextColor 113 215 255 255
+	SetBorderColor 32 180 138 255
+	SetFontSize 40
+	MinimapIcon 0 Cyan Square
+	PlayEffect Cyan
+	PlayAlertSound 13 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "The Maven's Writ" "Blood-filled Vessel"
+	SetBackgroundColor 139 0 0 151
+	SetTextColor 255 163 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	MinimapIcon 0 Red Pentagon
+	PlayEffect Red
+	PlayAlertSound 4 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Labyrinth"
+	SetBackgroundColor 142 255 0 214
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
+	CustomAlertSoundOptional "convert.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Expedition Logbook"
+	SetBackgroundColor 124 128 87 255
+	SetTextColor 194 255 154 255
+	SetBorderColor 100 134 94 255
+	SetFontSize 45
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+	PlayAlertSound 13 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Vaal Reliquary Key"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red
+	PlayAlertSound 6 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Sacred Blossom" "Chronicle of Atzoatl" "Inscribed Ultimatum"
+	SetBackgroundColor 77 1 120 215
+	SetTextColor 0 207 255 255
+	SetBorderColor 144 76 207 255
+	SetFontSize 45
+	MinimapIcon 0 Purple UpsideDownHouse
+	PlayEffect Purple
+	PlayAlertSound 13 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Simulacrum"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Cyan Kite
+	PlayEffect White
+	PlayAlertSound 7 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Chayula's Breachstone"
+	Class "Breachstone"
+	SetBackgroundColor 255 0 142 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 0 244 255
+	SetFontSize 45
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+	PlayAlertSound 1 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Esh's Breachstone" "Tul's Breachstone" "Xoph's Breachstone" "Uul-Netol's Breachstone"
+	Class "Breachstone"
+	SetBackgroundColor 146 0 0 227
+	SetTextColor 255 115 253 255
+	SetBorderColor 255 0 244 255
+	SetFontSize 39
+	MinimapIcon 1 Red Circle
+	PlayEffect Red
+	PlayAlertSound 11 300
+
+
+#BlockSeparator "Заглушка" expanded no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Breachstone" "Map Fragments"
+	SetBackgroundColor 253 0 255 255
+	SetTextColor 213 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Осколки карт" shrinked additional_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Simulacrum Splinter"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 30
+	MinimapIcon 2 White Circle
+	#PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Crescent Splinter"
+	SetBackgroundColor 80 160 152 255
+	SetTextColor 255 59 211 255
+	SetBorderColor 122 255 48 255
+	SetFontSize 45
+	MinimapIcon 1 Red Circle
+	#PlayEffect Red
+	PlayAlertSound 2 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Ritual Splinter"
+	SetBackgroundColor 48 74 70 255
+	SetTextColor 5 36 81 255
+	SetBorderColor 71 108 86 255
+	SetFontSize 25
+	MinimapIcon 0 Brown Kite
+	#PlayEffect Red
+	PlayAlertSound 2 238
+
+
+#BlockSeparator "Особые карты" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Synthesised Map"
+	SetBackgroundColor 0 183 255 255
+	SetTextColor 0 30 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 41
+	MinimapIcon 0 Cyan Diamond
+	PlayEffect Cyan
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard ignore
+	HasInfluence "Warlord" "Redeemer" "Hunter" "Crusader" "Shaper" "Elder"
+	Class "Map"
+	SetBackgroundColor 229 255 121 252
+	SetTextColor 255 96 0 255
+	SetBorderColor 250 0 0 255
+	SetFontSize 38
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+	PlayAlertSound 13 284
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	AnyEnchantment True
+	MapTier >= 11
+	Class "Map"
+	SetBackgroundColor 69 94 39 255
+	SetTextColor 255 72 0 255
+	SetBorderColor 86 255 0 255
+	SetFontSize 40
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	AnyEnchantment True
+	MapTier >= 6
+	Class "Map"
+	SetBackgroundColor 17 113 0 255
+	SetTextColor 255 203 0 255
+	SetBorderColor 165 151 0 255
+	SetFontSize 34
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BlightedMap True
+	SetBackgroundColor 49 31 0 255
+	SetTextColor 255 102 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	MinimapIcon 0 White Star
+	PlayEffect Brown
+	CustomAlertSoundOptional "hostile.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	AnyEnchantment True
+	Class "Map"
+	SetBackgroundColor 17 113 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 122 122 122 255
+	SetFontSize 29
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Обычные карты" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity <= Rare
+	MapTier >= 16
+	Class "Maps"
+	SetBackgroundColor 255 0 0 215
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 186 186 255
+	SetFontSize 45
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity <= Rare
+	MapTier = 15
+	Class "Maps"
+	SetBackgroundColor 227 0 0 204
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 179 179 255
+	SetFontSize 41
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+	CustomAlertSoundOptional "pffffffrgh_bitbox.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity <= Rare
+	MapTier = 14
+	SetBackgroundColor 185 0 51 168
+	SetTextColor 255 132 0 255
+	SetBorderColor 52 0 0 255
+	SetFontSize 42
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+	CustomAlertSoundOptional "drop_map_high.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	Rarity <= Rare
+	MapTier >= 11
+	Class "Maps"
+	SetBackgroundColor 122 0 0 149
+	SetTextColor 184 37 37 255
+	SetBorderColor 127 20 20 255
+	SetFontSize 45
+	MinimapIcon 1 Red Square
+	#PlayEffect Red
+	PlayAlertSound 3 300
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	Rarity <= Rare
+	MapTier >= 6
+	Class "Maps"
+	SetBackgroundColor 122 112 0 255
+	SetTextColor 254 255 142 255
+	SetBorderColor 255 224 0 255
+	SetFontSize 45
+	MinimapIcon 2 Yellow Square
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	Rarity <= Rare
+	MapTier >= 0
+	Class "Maps"
+	SetBackgroundColor 129 129 129 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 37
+	MinimapIcon 2 White Square
+	PlayEffect Red
+
+
+#BlockSeparator "Катализаторы" shrinked additional_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Fertile Catalyst" "Prismatic Catalyst"
+	Class "Stackable Currency"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 102 85 0 255
+	SetBorderColor 224 255 0 255
+	SetFontSize 45
+	MinimapIcon 0 Yellow Diamond
+	PlayEffect Red
+	PlayAlertSound 13 300
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Intrinsic Catalyst" "Imbued Catalyst" "Abrasive Catalyst" "Turbulent Catalyst" "Tempering Catalyst"
+	Class "Stackable Currency"
+	SetBackgroundColor 41 73 5 68
+	SetTextColor 83 120 70 255
+	SetBorderColor 74 145 62 255
+	SetFontSize 42
+	MinimapIcon 0 Green Diamond
+	#PlayEffect Red
+	CustomAlertSoundOptional "amulet.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Catalyst"
+	Class "Stackable Currency"
+	SetBackgroundColor 53 60 51 255
+	SetTextColor 152 177 147 255
+	SetBorderColor 236 255 218 64
+	SetFontSize 34
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Масла" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Reflective Oil"
+	SetBackgroundColor 0 163 255 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 244 255 0 255
+	SetFontSize 45
+	MinimapIcon 0 White Star
+	PlayEffect Yellow
+	PlayAlertSound 6 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Oil Extractor"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 0 255 122 255
+	SetFontSize 45
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+	PlayAlertSound 2 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Tainted Oil"
+	SetBackgroundColor 86 0 0 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 185 0 255
+	SetFontSize 45
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+	PlayAlertSound 1 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Golden Oil"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 255 142 0 255
+	SetBorderColor 255 234 0 255
+	SetFontSize 45
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+	PlayAlertSound 1 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Silver Oil"
+	SetBackgroundColor 119 184 188 183
+	SetTextColor 0 244 255 255
+	SetBorderColor 183 189 255 255
+	SetFontSize 45
+	MinimapIcon 0 White Star
+	PlayEffect White
+	PlayAlertSound 3 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Opalescent Oil"
+	SetBackgroundColor 121 154 181 147
+	SetTextColor 51 74 69 255
+	SetBorderColor 0 255 142 164
+	SetFontSize 37
+	MinimapIcon 1 Blue Star
+	PlayEffect Blue
+	PlayAlertSound 3 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Crimson Oil"
+	SetBackgroundColor 88 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 164
+	SetFontSize 33
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Black Oil"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 164
+	SetFontSize 33
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Teal Oil"
+	SetBackgroundColor 100 164 176 234
+	SetTextColor 0 0 0 255
+	SetBorderColor 13 13 13 164
+	SetFontSize 28
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Azure Oil"
+	SetBackgroundColor 87 83 137 234
+	SetTextColor 0 0 0 255
+	SetBorderColor 13 13 13 164
+	SetFontSize 28
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Violet Oil" "Indigo Oil"
+	SetBackgroundColor 137 87 129 234
+	SetTextColor 0 0 0 255
+	SetBorderColor 13 13 13 164
+	SetFontSize 28
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard ignore hide hide
+	Class "Stackable Currency"
+	BaseType "oil"
+	SetBackgroundColor 0 0 0 214
+	SetTextColor 255 255 255 255
+	SetBorderColor 82 82 82 164
+	SetFontSize 39
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Лут с ацоатля" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Flashpowder Keg" "Stone of Passage"
+	SetBackgroundColor 255 129 59 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 159 64 64 255
+	SetFontSize 45
+	MinimapIcon 2 Red Circle
+	PlayEffect Red
+	PlayAlertSound 15 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Vial of Sacrifice" "Vial of the Ghost"
+	SetBackgroundColor 255 0 0 255
+	SetTextColor 49 0 95 255
+	SetBorderColor 255 244 0 255
+	SetFontSize 45
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+	PlayAlertSound 6 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Vial of Awakening" "Vial of Consequence"
+	SetBackgroundColor 164 40 40 192
+	SetTextColor 0 0 0 255
+	SetBorderColor 163 156 0 255
+	SetFontSize 37
+	MinimapIcon 2 Red Star
+	PlayEffect Red
+	PlayAlertSound 10 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Vial of"
+	SetBackgroundColor 66 16 16 192
+	SetTextColor 129 129 129 255
+	SetBorderColor 163 156 0 255
+	SetFontSize 33
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+	PlayAlertSound 2 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Map Fragments"
+	BaseType "Gilded"
+	SetBackgroundColor 217 217 0 255
+	SetTextColor 255 122 0 255
+	SetBorderColor 203 255 0 255
+	SetFontSize 18
+	MinimapIcon 2 White Raindrop
+	#PlayEffect Red
+	PlayAlertSound 9 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Map Fragments"
+	BaseType "Polished"
+	SetBackgroundColor 0 128 76 255
+	SetTextColor 0 255 234 255
+	SetBorderColor 0 255 255 255
+	SetFontSize 18
+	MinimapIcon 2 White Raindrop
+	#PlayEffect Red
+	PlayAlertSound 9 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Map Fragments"
+	BaseType "Rusted"
+	SetBackgroundColor 128 76 0 255
+	SetTextColor 255 71 0 255
+	SetBorderColor 255 163 0 255
+	SetFontSize 18
+	MinimapIcon 2 White Raindrop
+	#PlayEffect Red
+	PlayAlertSound 9 300
+
+
+#BlockSeparator "Лут с разломов" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Blessing of Chayula"
+	SetBackgroundColor 193 0 255 142
+	SetTextColor 255 173 212 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 2 Red Circle
+	PlayEffect Red
+	PlayAlertSound 1 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph"
+	SetBackgroundColor 152 0 200 190
+	SetTextColor 0 0 0 255
+	SetBorderColor 163 0 255 255
+	SetFontSize 40
+	MinimapIcon 2 Red Circle
+	PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Splinter of Chayula"
+	SetBackgroundColor 255 135 240 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 188 23 255 255
+	SetFontSize 45
+	MinimapIcon 2 Red Star
+	PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Splinter of Uul-Netol"
+	SetBackgroundColor 95 0 89 255
+	SetTextColor 253 0 255 255
+	SetBorderColor 211 0 255 255
+	SetFontSize 45
+	MinimapIcon 2 Grey Star
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Splinter of Esh" "Splinter of Tul" "Splinter of Xoph"
+	SetBackgroundColor 60 3 78 152
+	SetTextColor 234 124 255 255
+	SetBorderColor 131 60 160 255
+	SetFontSize 45
+	MinimapIcon 2 Red Star
+	#PlayEffect Red
+
+
+#BlockSeparator "Лут с грядок" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Sacred Crystallised Lifeforce"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 171 171 0 255
+	SetBorderColor 255 153 0 255
+	SetFontSize 45
+	MinimapIcon 0 White Raindrop
+	PlayEffect White
+	PlayAlertSound 1 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Primal Crystallised Lifeforce"
+	SetBackgroundColor 22 128 128 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 0 10 255 255
+	SetFontSize 31
+	MinimapIcon 1 Blue Raindrop
+	PlayEffect Blue
+	PlayAlertSound 16 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Vivid Crystallised Lifeforce"
+	SetBackgroundColor 128 128 22 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 193 0 255
+	SetFontSize 31
+	MinimapIcon 1 Orange Raindrop
+	PlayEffect Orange
+	PlayAlertSound 16 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Wild Crystallised Lifeforce"
+	SetBackgroundColor 119 22 128 255
+	#SetTextColor 0 0 0 255
+	SetBorderColor 255 0 173 255
+	SetFontSize 31
+	MinimapIcon 1 Pink Raindrop
+	PlayEffect Pink
+	PlayAlertSound 16 300
+
+
+#BlockSeparator "Реликвии" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Sanctified Relic"
+	SetBackgroundColor 208 175 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Red Kite
+	PlayEffect Red
+	PlayAlertSound 13 0
+	DisableDropSound
+
+
+#BlockSeparator "Лут с легиона" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity = Unique
+	BaseType "Timeless Jewel"
+	SetBackgroundColor 185 0 0 210
+	SetTextColor 193 255 0 255
+	SetBorderColor 255 214 0 255
+	SetFontSize 45
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+	PlayAlertSound 6 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Timeless Maraketh Emblem"
+	SetBackgroundColor 255 184 78 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+	PlayAlertSound 6 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Timeless Maraketh Splinter"
+	SetBackgroundColor 214 159 77 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 105 117 59 255
+	SetFontSize 45
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Timeless Templar Emblem"
+	SetBackgroundColor 49 127 40 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 128 255 143 255
+	SetFontSize 45
+	MinimapIcon 0 Green Hexagon
+	PlayEffect Green
+	PlayAlertSound 1 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Timeless Templar Splinter"
+	SetBackgroundColor 42 59 40 255
+	SetTextColor 0 255 91 255
+	SetBorderColor 59 117 66 255
+	SetFontSize 41
+	MinimapIcon 2 Green Hexagon
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Timeless Vaal Emblem" "Timeless Eternal Emblem" "Timeless Karui Emblem"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 0 58 255 255
+	SetFontSize 45
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+	PlayAlertSound 5 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 60 73 117 255
+	SetFontSize 39
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Инкубаторы" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Time-Lost Incubator" "Geomancer's Incubator"
+	SetBackgroundColor 255 253 249 255
+	SetTextColor 255 81 0 255
+	SetBorderColor 255 183 0 255
+	SetFontSize 45
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Yellow
+	PlayAlertSound 4 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Blighted Incubator" "Morphing Incubator" "Maddening Incubator"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 76 51 51 255
+	#SetBorderColor 0 0 0 255
+	SetFontSize 45
+	MinimapIcon 1 White Cross
+	#PlayEffect Red
+	PlayAlertSound 13 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Eldritch Incubator" "Diviner's Incubator" "Foreboding Incubator" "Thaumaturge's Incubator"
+	SetBackgroundColor 144 124 57 255
+	SetTextColor 214 255 0 255
+	SetBorderColor 255 183 0 255
+	SetFontSize 39
+	MinimapIcon 1 Yellow Circle
+	PlayEffect Yellow
+	PlayAlertSound 10 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Skittering Incubator" "Ornate Incubator" "Celestial Jeweller's Incubator"
+	SetBackgroundColor 93 77 24 232
+	SetTextColor 214 255 0 255
+	SetBorderColor 255 183 0 255
+	SetFontSize 33
+	MinimapIcon 2 Yellow Circle
+	PlayEffect Yellow
+	PlayAlertSound 10 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Incubator"
+	SetBackgroundColor 93 78 32 170
+	SetTextColor 228 255 86 255
+	SetBorderColor 255 208 88 255
+	SetFontSize 18
+	MinimapIcon 2 Yellow Circle
+	#PlayEffect Red
+	PlayAlertSound 9 300
+
+
+#BlockSeparator "Эссенции" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Remnant of Corruption"
+	SetBackgroundColor 0 0 0 249
+	SetTextColor 255 0 0 255
+	SetBorderColor 98 28 28 255
+	SetFontSize 33
+	MinimapIcon 2 Red Star
+	PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Essence of Insanity" "Essence of Horror" "Essence of Hysteria" "Essence of Delirium"
+	SetBackgroundColor 59 0 0 222
+	SetTextColor 255 0 214 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 38
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Deafening Essence of Spite" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Woe" "Deafening Essence of Zeal" "Deafening Essence of Contempt" "Deafening Essence of Greed" "Deafening Essence of Envy" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Wrath"
+	SetBackgroundColor 255 255 255 170
+	SetTextColor 0 255 183 255
+	SetBorderColor 0 255 193 255
+	SetFontSize 45
+	MinimapIcon 2 Blue Circle
+	#PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Deafening Essence of"
+	SetBackgroundColor 0 213 255 255
+	SetTextColor 0 70 255 255
+	SetBorderColor 0 255 193 255
+	SetFontSize 45
+	MinimapIcon 2 Blue Circle
+	#PlayEffect Red
+	PlayAlertSound 16 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Shrieking Essence of"
+	SetBackgroundColor 0 5 125 146
+	SetTextColor 0 202 255 255
+	SetBorderColor 0 255 193 255
+	SetFontSize 35
+	MinimapIcon 2 Blue Circle
+	#PlayEffect Red
+	PlayAlertSound 16 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Wailing Essence of" "Screaming Essence of"
+	SetBackgroundColor 0 6 173 170
+	SetTextColor 0 200 255 255
+	SetBorderColor 53 117 101 255
+	SetFontSize 32
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	BaseType "Whispering Essence of" "Muttering Essence of" "Weeping Essence of"
+	SetBackgroundColor 0 4 108 170
+	SetTextColor 0 201 255 255
+	SetBorderColor 58 103 92 255
+	SetFontSize 27
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Угольки/ихоры" shrinked additional_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Orb of Conflict" "Orb of Dominance"
+	SetBackgroundColor 147 255 252 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 0 91 255 255
+	SetFontSize 45
+	MinimapIcon 2 Grey Pentagon
+	PlayEffect Blue
+	PlayAlertSound 1 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Grand Eldritch Ember" "Grand Eldritch Ichor" "Eldritch Chaos Orb" "Eldritch Orb of Annulment" "Eldritch Exalted Orb"
+	SetBackgroundColor 197 197 197 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 0 91 255 255
+	SetFontSize 40
+	MinimapIcon 2 Grey Pentagon
+	PlayEffect Blue
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Greater Eldritch Ember" "Greater Eldritch Ichor"
+	SetBackgroundColor 59 59 59 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 0 91 255 255
+	SetFontSize 36
+	MinimapIcon 2 Grey Pentagon
+	PlayEffect Blue
+	PlayAlertSound 5 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Lesser Eldritch Ember" "Lesser Eldritch Ichor"
+	SetBackgroundColor 13 19 69 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 135 88 62 255
+	SetFontSize 33
+	MinimapIcon 2 Grey Pentagon
+	#PlayEffect Red
+	PlayAlertSound 5 300
+
+
+#BlockSeparator "Порочная валюта" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone"
+	SetBackgroundColor 96 78 77 255
+	SetTextColor 229 111 111 255
+	SetBorderColor 192 144 144 255
+	SetFontSize 30
+	MinimapIcon 2 Pink Diamond
+	#PlayEffect Red
+	PlayAlertSound 9 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Tainted Chromatic Orb"
+	SetBackgroundColor 128 79 77 255
+	SetTextColor 255 74 74 255
+	SetBorderColor 255 115 115 255
+	SetFontSize 30
+	MinimapIcon 1 Pink Diamond
+	PlayEffect Purple
+	PlayAlertSound 9 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Tainted Orb of Fusing" "Tainted Jeweller's Orb"
+	SetBackgroundColor 128 38 34 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 37
+	MinimapIcon 1 Red Diamond
+	PlayEffect Red
+	PlayAlertSound 2 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Tainted Chaos Orb" "Tainted Exalted Orb" "Tainted Mythic Orb"
+	SetBackgroundColor 54 16 14 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 41
+	MinimapIcon 1 Red Diamond
+	PlayEffect Red
+	PlayAlertSound 2 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Tainted Divine Teardrop" "Tainted Blessing"
+	SetBackgroundColor 255 75 66 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 41
+	MinimapIcon 0 Pink Diamond
+	PlayEffect Pink
+	PlayAlertSound 13 300
+
+
+#BlockSeparator "Прочая валюта" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb"
+	SetBackgroundColor 247 255 200 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 244 0 255
+	SetFontSize 45
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+	CustomAlertSoundOptional "holysh02.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Surveyor's Compass" "Charged Compass"
+	SetBackgroundColor 129 113 0 119
+	SetTextColor 255 234 0 255
+	SetBorderColor 255 197 134 255
+	SetFontSize 34
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Ancient Orb" "Awakener's Orb" "Elevated Sextant" "Sacred Orb"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 255 114 242 255
+	SetBorderColor 253 69 255 255
+	SetFontSize 45
+	MinimapIcon 0 White Circle
+	PlayEffect Brown
+	CustomAlertSoundOptional "rare_currency.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Infused Engineer's Orb"
+	SetBackgroundColor 21 255 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 27 59 26 255
+	SetFontSize 43
+	MinimapIcon 2 Green Circle
+	#PlayEffect Red
+	CustomAlertSoundOptional "glovesmetal.wav"
+
+
+Show
+	#config_VersionControl focus focus standard ignore hide
+	BaseType "Orb of Horizons" "Engineer's Orb" "Orb of Binding"
+	SetBackgroundColor 91 230 79 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 27 59 26 255
+	SetFontSize 43
+	MinimapIcon 2 Green Circle
+	#PlayEffect Red
+	CustomAlertSoundOptional "glovesmetal.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Orb of Annulment"
+	SetBackgroundColor 58 104 134 255
+	SetTextColor 134 182 255 255
+	SetBorderColor 83 215 255 255
+	SetFontSize 45
+	MinimapIcon 0 White Circle
+	PlayEffect Brown
+	CustomAlertSoundOptional "sonic2.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Orb of Unmaking" "Harbinger's Orb"
+	SetBackgroundColor 24 80 152 233
+	SetTextColor 255 221 2 255
+	SetBorderColor 208 251 186 253
+	SetFontSize 37
+	MinimapIcon 1 Blue Circle
+	#PlayEffect Red
+	PlayAlertSound 2 156
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Enkindling Orb" "Instilling Orb"
+	SetBackgroundColor 0 102 128 156
+	SetTextColor 251 255 142 251
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 1 Cyan Raindrop
+	#PlayEffect Red
+	CustomAlertSoundOptional "fossil_low.mp3"
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Exotic Coinage" "Scrap Metal" "Astragali" "Burial Medallion"
+	SetBackgroundColor 128 103 103 255
+	SetTextColor 255 226 226 255
+	SetBorderColor 117 62 62 255
+	SetFontSize 45
+	MinimapIcon 2 Red Cross
+	#PlayEffect Red
+	PlayAlertSound 2 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Fracturing Orb"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 237 0 0 255
+	SetBorderColor 243 0 0 255
+	SetFontSize 40
+	MinimapIcon 0 White Star
+	PlayEffect Cyan
+	PlayAlertSound 6 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Veiled Chaos Orb"
+	SetBackgroundColor 255 214 0 255
+	SetTextColor 130 116 49 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 1 White Cross
+	#PlayEffect Red
+	PlayAlertSound 13 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	StackSize >= 100
+	BaseType "Rogue's Marker"
+	SetBackgroundColor 255 54 54 255
+	SetTextColor 223 255 0 255
+	SetBorderColor 255 173 0 255
+	SetFontSize 45
+	MinimapIcon 1 Red Pentagon
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Rogue's Marker"
+	SetBackgroundColor 139 29 29 232
+	SetTextColor 255 186 40 255
+	SetBorderColor 255 173 0 255
+	SetFontSize 38
+	MinimapIcon 1 Red Pentagon
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	AlternateQuality True
+	SetBackgroundColor 0 233 255 232
+	SetTextColor 40 57 255 255
+	SetBorderColor 0 30 255 255
+	SetFontSize 45
+	MinimapIcon 1 Cyan Pentagon
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Prime Regrading Lens" "Secondary Regrading Lens" "Tempering Orb" "Tailoring Orb"
+	SetBackgroundColor 121 205 101 185
+	SetTextColor 255 255 255 255
+	SetBorderColor 37 38 71 163
+	SetFontSize 45
+	MinimapIcon 0 Green Cross
+	PlayEffect Green
+	PlayAlertSound 13 0
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Delirium Orb"
+	SetBackgroundColor 9 57 0 255
+	SetTextColor 0 255 10 255
+	SetBorderColor 126 175 64 255
+	SetFontSize 45
+	MinimapIcon 1 Cyan UpsideDownHouse
+	PlayEffect Green
+	PlayAlertSound 10 300
+
+
+#BlockSeparator "Базовая валюта" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Mirror of Kalandra"
+	SetBackgroundColor 215 255 236 255
+	SetTextColor 0 224 255 255
+	SetBorderColor 0 255 224 255
+	SetFontSize 45
+	MinimapIcon 0 Cyan Star
+	PlayEffect Cyan
+	CustomAlertSoundOptional "silent_mirror.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Exalted Orb"
+	SetBackgroundColor 255 240 145 255
+	SetTextColor 255 173 0 255
+	SetBorderColor 255 106 16 255
+	SetFontSize 45
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Brown
+	CustomAlertSoundOptional "sonic2.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Divine Orb"
+	SetBackgroundColor 255 250 179 255
+	SetTextColor 255 102 11 255
+	SetBorderColor 255 84 0 255
+	SetFontSize 45
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+	CustomAlertSoundOptional "ayayaya.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Vaal Orb"
+	SetBackgroundColor 172 39 22 255
+	SetTextColor 255 126 57 255
+	SetBorderColor 255 77 29 255
+	SetFontSize 45
+	MinimapIcon 0 Red Circle
+	PlayEffect Yellow
+	CustomAlertSoundOptional "damnit04.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Chaos Orb"
+	SetBackgroundColor 251 231 0 255
+	SetTextColor 93 73 21 255
+	SetBorderColor 127 108 22 255
+	SetFontSize 45
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Yellow
+	CustomAlertSoundOptional "ahh04.wav"
+
+
+Show
+	#config_VersionControl focus standard standard ignore ignore
+	BaseType "Cartographer's Chisel"
+	SetBackgroundColor 117 103 0 234
+	SetTextColor 255 248 69 255
+	SetBorderColor 247 255 0 255
+	SetFontSize 38
+	MinimapIcon 2 Yellow Circle
+	#PlayEffect Red
+	CustomAlertSoundOptional "good_tier_currency.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard ignore hide
+	BaseType "Orb of Alchemy"
+	SetBackgroundColor 48 44 0 234
+	SetTextColor 194 195 99 255
+	SetBorderColor 112 117 23 255
+	SetFontSize 38
+	MinimapIcon 2 White Circle
+	#PlayEffect Red
+	CustomAlertSoundOptional "good_tier_currency.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Orb of Chance"
+	SetBackgroundColor 124 46 111 234
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetFontSize 38
+	MinimapIcon 2 Red Circle
+	#PlayEffect Red
+	CustomAlertSoundOptional "low_tier_currency.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Regal Orb"
+	SetBackgroundColor 42 114 136 234
+	SetTextColor 196 194 83 255
+	SetBorderColor 32 34 73 255
+	SetFontSize 38
+	MinimapIcon 2 Blue Circle
+	#PlayEffect Red
+	CustomAlertSoundOptional "low_tier_currency.mp3"
+
+
+Show
+	#config_VersionControl focus focus standard standard ignore
+	StackSize >= 4
+	BaseType "Orb of Alteration"
+	SetBackgroundColor 70 80 159 204
+	SetTextColor 0 255 231 255
+	SetBorderColor 78 119 216 255
+	SetFontSize 45
+	MinimapIcon 2 Blue Circle
+	#PlayEffect Red
+	CustomAlertSoundOptional "low_tier_currency.mp3"
+
+
+Show
+	#config_VersionControl focus focus standard hide hide
+	BaseType "Orb of Alteration"
+	SetBackgroundColor 85 130 206 255
+	SetTextColor 0 255 243 178
+	SetBorderColor 0 90 170 255
+	SetFontSize 37
+	MinimapIcon 2 Blue Circle
+	#PlayEffect Red
+	CustomAlertSoundOptional "low_tier_currency.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Orb of Scouring" "Orb of Regret"
+	SetBackgroundColor 230 255 202 255
+	SetTextColor 145 147 83 255
+	SetBorderColor 138 150 105 255
+	SetFontSize 38
+	MinimapIcon 2 White Circle
+	#PlayEffect Red
+	PlayAlertSound 16 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	StackSize >= 9
+	BaseType "Orb of Fusing" "Jeweller's Orb" "Gemcutter's Prism" "Chromatic Orb"
+	SetBackgroundColor 76 180 68 255
+	SetTextColor 202 255 215 255
+	SetBorderColor 255 249 151 255
+	SetFontSize 45
+	MinimapIcon 2 Green Circle
+	#PlayEffect Red
+	CustomAlertSoundOptional "good_tier_currency.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard ignore hide
+	StackSize >= 3
+	BaseType "Orb of Fusing" "Jeweller's Orb" "Gemcutter's Prism" "Chromatic Orb"
+	SetBackgroundColor 61 144 54 234
+	SetTextColor 202 255 215 255
+	SetBorderColor 164 160 97 255
+	SetFontSize 38
+	MinimapIcon 2 Green Circle
+	#PlayEffect Red
+	CustomAlertSoundOptional "good_tier_currency.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	BaseType "Orb of Fusing" "Jeweller's Orb" "Gemcutter's Prism" "Chromatic Orb"
+	SetBackgroundColor 38 90 34 234
+	SetTextColor 143 180 152 255
+	SetBorderColor 164 160 97 224
+	SetFontSize 32
+	MinimapIcon 2 Green Circle
+	#PlayEffect Red
+	CustomAlertSoundOptional "good_tier_currency.mp3"
+
+
+Show
+	#config_VersionControl focus focus standard standard hide
+	StackSize >= 16
+	BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
+	SetBackgroundColor 255 215 92 255
+	SetTextColor 108 102 86 255
+	SetBorderColor 255 252 168 255
+	SetFontSize 45
+	MinimapIcon 2 White Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus focus standard standard hide
+	StackSize >= 4
+	BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
+	SetBackgroundColor 139 117 50 153
+	SetTextColor 20 19 16 255
+	SetBorderColor 73 63 38 255
+	SetFontSize 45
+	MinimapIcon 2 White Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
+	SetBackgroundColor 139 117 50 153
+	SetTextColor 159 155 94 255
+	SetBorderColor 128 126 65 255
+	SetFontSize 33
+	MinimapIcon 2 White Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus focus standard ignore hide
+	BaseType "Glassblower's Bauble"
+	SetBackgroundColor 92 134 80 153
+	SetTextColor 72 181 100 255
+	SetBorderColor 74 150 72 255
+	SetFontSize 38
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus focus standard ignore hide
+	BaseType "Blessed Orb"
+	SetBackgroundColor 246 223 166 255
+	SetTextColor 73 68 54 255
+	SetBorderColor 48 73 66 255
+	SetFontSize 35
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus focus standard ignore hide
+	StackSize >= 10
+	BaseType "Orb of Augmentation" "Orb of Transmutation"
+	SetBackgroundColor 173 255 248 255
+	SetTextColor 0 106 153 255
+	SetBorderColor 0 159 255 255
+	SetFontSize 41
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus focus standard hide hide
+	StackSize >= 4
+	BaseType "Orb of Augmentation" "Orb of Transmutation"
+	SetBackgroundColor 166 246 239 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 48 73 66 255
+	SetFontSize 33
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus focus standard hide hide
+	BaseType "Orb of Augmentation" "Orb of Transmutation"
+	SetBackgroundColor 94 139 135 153
+	SetTextColor 0 0 0 255
+	SetBorderColor 48 73 66 255
+	SetFontSize 26
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Awakened Sextant"
+	SetBackgroundColor 255 96 96 255
+	SetTextColor 161 65 65 255
+	SetBorderColor 170 0 0 255
+	SetFontSize 39
+	MinimapIcon 2 Red Hexagon
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus focus standard ignore hide
+	StackSize >= 16
+	BaseType "Portal Scroll"
+	SetBackgroundColor 218 255 252 255
+	SetTextColor 61 0 255 255
+	SetBorderColor 0 243 255 255
+	SetFontSize 45
+	MinimapIcon 2 Blue Diamond
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus focus standard ignore hide
+	StackSize >= 4
+	BaseType "Portal Scroll"
+	SetBackgroundColor 173 202 200 255
+	SetTextColor 61 0 255 255
+	SetBorderColor 0 194 204 255
+	SetFontSize 36
+	MinimapIcon 2 Blue Diamond
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus focus standard ignore hide
+	BaseType "Portal Scroll"
+	SetBackgroundColor 132 187 196 255
+	SetTextColor 61 0 255 255
+	SetBorderColor 0 108 113 255
+	SetFontSize 32
+	MinimapIcon 2 Blue Diamond
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus focus standard ignore hide
+	StackSize >= 10
+	BaseType "Scroll of Wisdom"
+	SetBackgroundColor 234 223 165 255
+	SetTextColor 133 104 42 255
+	SetBorderColor 112 80 0 255
+	SetFontSize 45
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus focus standard hide hide
+	StackSize >= 4
+	BaseType "Scroll of Wisdom"
+	SetBackgroundColor 234 223 165 255
+	SetTextColor 255 122 0 255
+	SetBorderColor 112 80 0 255
+	SetFontSize 35
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl focus standard ignore hide hide
+	BaseType "Scroll of Wisdom"
+	SetBackgroundColor 147 140 104 255
+	SetTextColor 255 251 159 255
+	SetBorderColor 103 94 71 255
+	SetFontSize 28
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Осколки валют" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Mirror Shard"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 224 255 255
+	SetBorderColor 0 255 224 255
+	SetFontSize 45
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+	PlayAlertSound 6 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Fracturing Shard"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 39
+	MinimapIcon 2 Yellow Star
+	#PlayEffect Red
+	PlayAlertSound 5 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Exalted Shard"
+	SetBackgroundColor 255 206 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 254 255 135 255
+	SetFontSize 30
+	MinimapIcon 2 Yellow Star
+	#PlayEffect Red
+	PlayAlertSound 5 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Ancient Shard"
+	SetBackgroundColor 84 60 25 255
+	SetTextColor 255 142 0 255
+	SetBorderColor 130 85 38 255
+	SetFontSize 36
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Annulment Shard" "Harbinger's Shard"
+	SetBackgroundColor 45 53 93 255
+	SetTextColor 138 200 255 255
+	SetBorderColor 122 189 255 255
+	SetFontSize 36
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Chaos Shard"
+	SetBackgroundColor 152 107 0 255
+	SetTextColor 221 213 0 255
+	SetBorderColor 255 239 0 230
+	SetFontSize 32
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	BaseType "Alchemy Shard" "Binding Shard" "Regal Shard" "Horizon Shard" "Engineer's Shard"
+	SetBackgroundColor 125 114 67 255
+	SetTextColor 255 185 96 255
+	SetBorderColor 254 255 135 255
+	SetFontSize 26
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	BaseType "Transmutation Shard" "Alteration Shard"
+	SetBackgroundColor 0 44 56 154
+	SetTextColor 255 214 163 255
+	SetBorderColor 72 107 112 255
+	SetFontSize 26
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Ископаемые/резонаторы" shrinked no_space
+
+#BlockSeparator "Флаконы" shrinked additional_space
+
+Show
+	#config_VersionControl standard standard hide hide hide
+	Rarity = Normal
+	BaseType "Eternal Life Flask"
+	SetBackgroundColor 151 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 103 103 255
+	SetFontSize 45
+	MinimapIcon 1 Red Raindrop
+	PlayEffect Green
+	PlayAlertSound 12 300
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	Rarity = Magic
+	BaseType "Eternal Life Flask"
+	SetBackgroundColor 151 0 0 255
+	SetTextColor 0 234 255 255
+	SetBorderColor 255 103 242 255
+	SetFontSize 45
+	MinimapIcon 0 Red Raindrop
+	PlayEffect Green
+	PlayAlertSound 12 300
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	Rarity = Normal
+	Class "Utility Flasks"
+	SetBackgroundColor 0 151 24 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 103 255 127 255
+	SetFontSize 28
+	MinimapIcon 1 Green Raindrop
+	PlayEffect Green
+	PlayAlertSound 12 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	ItemLevel >= 80
+	BaseType "Bismuth Flask"
+	SetBackgroundColor 0 151 84 255
+	SetTextColor 0 255 244 255
+	SetBorderColor 103 218 255 255
+	SetFontSize 37
+	MinimapIcon 0 Green Raindrop
+	PlayEffect Green
+	PlayAlertSound 12 300
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	Rarity = Magic
+	Class "Utility Flasks"
+	SetBackgroundColor 0 151 84 255
+	SetTextColor 0 255 244 255
+	SetBorderColor 103 218 255 255
+	SetFontSize 37
+	MinimapIcon 0 Green Raindrop
+	PlayEffect Green
+	PlayAlertSound 12 300
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	Rarity = Normal
+	Class "Mana Flasks"
+	SetBackgroundColor 12 0 151 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 103 151 255 255
+	SetFontSize 30
+	MinimapIcon 1 Blue Raindrop
+	#PlayEffect Red
+	CustomAlertSoundOptional "potionui.wav"
+
+
+Show
+	#config_VersionControl standard standard hide hide hide
+	Rarity = Magic
+	Class "Mana Flasks"
+	SetBackgroundColor 0 132 151 255
+	SetTextColor 0 255 244 255
+	SetBorderColor 103 255 212 255
+	SetFontSize 36
+	MinimapIcon 0 Blue Raindrop
+	#PlayEffect Red
+	CustomAlertSoundOptional "potionui.wav"
+
+
+Show
+	#config_VersionControl standard standard hide hide hide
+	Rarity = Magic
+	ItemLevel <= 50
+	Class "Life Flasks"
+	SetBackgroundColor 151 0 108 255
+	SetTextColor 0 255 234 255
+	SetBorderColor 175 103 255 255
+	SetFontSize 34
+	MinimapIcon 0 Red Raindrop
+	PlayEffect Green
+	PlayAlertSound 12 300
+
+
+Show
+	#config_VersionControl standard standard hide hide hide
+	Rarity = Normal
+	ItemLevel <= 50
+	Class "Life Flasks"
+	SetBackgroundColor 151 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 103 103 255
+	SetFontSize 33
+	MinimapIcon 1 Red Raindrop
+	PlayEffect Green
+	PlayAlertSound 12 300
+
+
+Hide
+	#config_VersionControl standard standard standard standard standard
+	Rarity < Unique
+	Class "flask"
+	SetBackgroundColor 128 128 128 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 0 0 0 255
+	SetFontSize 18
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Другое" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Quest Items"
+	SetBackgroundColor 33 66 42 255
+	SetTextColor 50 255 0 248
+	SetBorderColor 148 209 26 255
+	SetFontSize 45
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Сокеты/линки" shrinked additional_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	LinkedSockets = 6
+	Corrupted False
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 224 0 255 255
+	SetFontSize 45
+	MinimapIcon 0 White Star
+	PlayEffect White
+	PlayAlertSound 1 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	LinkedSockets = 6
+	Corrupted True
+	SetBackgroundColor 255 164 164 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 40
+	MinimapIcon 0 White Star
+	PlayEffect White
+	PlayAlertSound 1 300
+
+
+#BlockSeparator "Дорогие уники" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity >= Unique
+	BaseType == "Unset Amulet" "Ring"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 247
+	SetFontSize 45
+	MinimapIcon 0 White Kite
+	PlayEffect Yellow
+	#CustomAlertSoundOptional "leveluphireling.wav"
+	PlayAlertSound 6 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity >= Unique
+	Sockets >= 1W
+	BaseType "Elegant Round Shield"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	MinimapIcon 0 White Kite
+	PlayEffect Yellow
+	PlayAlertSound 6 300
+	DisableDropSound
+
+
+#BlockSeparator "Уники" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity = Unique
+	SetBackgroundColor 64 43 0 255
+	SetTextColor 224 80 0 255
+	SetBorderColor 181 65 0 255
+	SetFontSize 40
+	MinimapIcon 1 Orange Diamond
+	PlayEffect Brown
+	CustomAlertSoundOptional "Legendary.mp3"
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity = Unique
+	BaseType == "Heavy Belt" "Leather Belt" "Turquoise Amulet" "Topaz Ring"
+	SetBackgroundColor 255 135 6 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+	CustomAlertSoundOptional "artefact.wav"
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity = Unique
+	BaseType == "Sage's Robe" "Golden Buckler" "Spidersilk Robe" "Champion Kite Shield" "Riveted Boots" "Sentinel Jacket" "Rawhide Boots" "Gladiator Plate" "Sadist Garb"
+	SetBackgroundColor 255 135 6 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+	CustomAlertSoundOptional "artefact.wav"
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity = Unique
+	BaseType == "Siege Axe" "Imperial Skean" "Spine Bow" "Prophecy Wand" "Imperial Bow" "Karui Maul" "Vaal Rapier"
+	SetBackgroundColor 255 135 6 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+	CustomAlertSoundOptional "artefact.wav"
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity = Unique
+	BaseType == "Archon Kite Shield" "Coral Amulet" "Gavel" "Glorious Plate" "Gold Ring" "Highborn Staff" "Jade Amulet" "Judgement Staff" "Lacquered Garb" "Leather Belt" "Long Staff" "Magistrate Crown" "Medium Cluster Jewel" "Murder Mitts" "Paua Amulet" "Sadist Garb" "Saint's Hauberk" "Sentinel Jacket" "Silver Flask" "Sinner Tricorne" "Small Cluster Jewel" "Sorcerer Boots" "Stealth Boots" "Studded Belt" "Sulphur Flask" "Topaz Ring" "Triumphant Lamellar" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring" "Siege Axe" "Ancient Gauntlets"
+	SetBackgroundColor 255 135 6 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+	CustomAlertSoundOptional "artefact.wav"
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard ignore
+	Rarity = Unique
+	SetBackgroundColor 64 43 0 255
+	SetTextColor 224 80 0 255
+	SetBorderColor 181 65 0 255
+	SetFontSize 37
+	MinimapIcon 1 Orange Diamond
+	PlayEffect Brown
+	CustomAlertSoundOptional "Legendary.mp3"
+
+
+#BlockSeparator "Т1 атрибуты" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "of the Span" "of Will" "of Nullification" "of Nullification" "of Bameth" "Tul's" "of Haast" "of the Wind" "Phased" "Xoph's" "of Tzteosh" "of Revitalization" "Mad Lord's" "Frost Singer's" "Flame Shaper's" "Thunderhand's" "Martinet's" "Overseer's" "Lithomancer's" "of Lioneye" "of Grandmastery" "Athlete's" "Vigorous" "of the Citadel" "of the Genius" "of the Phoenix" "of Recuperation" "of Life-giving" "of Everlasting" "Esh's" "of Ephij" "Inspired" "Seraphim's" "Legend's" "Victor's" "Unreal" "Hummingbird's" "Mammoth's" "Urchin's" "Nautilus's" "Prior's" "Fawn's" "Ram's" "Owen's" "Gwayne's" "Seething" "Seraphim's" "Unassailable" "Unfaltering" "Hummingbird's" "Elusory" "Lissome" "Hummingbird's" "Illusion's" "Unmoving" "Mammoth's" "Impregnable" "Engraver's" "Masterwork" "Runed" "of Harmony" "of the Mammoth" "of the Solar Storm" "of the Lightning Rod" "of the Deathless" "Empress's" "of Metamorphosis" "of Imperviousness" "of Obstruction" "of the Conservator" "of the Bastion" "of Unmaking" "of the Gods" "of Runes" "Runic"
+	Class "Boots" "Gloves" "Helmets"
+	HasExplicitMod >=1 "Veil" "essence" "Citaqualotl's" "Guatelitzi's" "Matatl's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati" "Tacati's" "Topotante's" "Xopec's"
+	SetBackgroundColor 152 36 67 255
+	SetTextColor 255 252 233 253
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Star
+	PlayEffect Purple
+	PlayAlertSound 1 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "of Nullification" "of Bameth" "of Haast" "of the Wind" "of Tzteosh" "Prime" "of the Genius" "of Convalescence" "of Ephij" "Interpermeated" "Seraphim's" "Victor's" "Incorporeal" "Hummingbird's" "Mammoth's" "Godly" "Crocodile's" "Exarch's" "Bishop's" "Ibex's" "Cadigan's" "Seraphim's" "Incorporeal" "Hummingbird's" "Fugitive" "Hummingbird's" "Illusion's" "Impervious" "Mammoth's" "Impenetrable" "of the Conservator" "of the Gods"
+	Class "Body Armours"
+	HasExplicitMod >=1 "Veil" "essence" "Citaqualotl's" "Guatelitzi's" "Matatl's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati" "Tacati's" "Topotante's" "Xopec's"
+	SetBackgroundColor 152 36 67 255
+	SetTextColor 255 252 233 253
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Star
+	PlayEffect Purple
+	PlayAlertSound 1 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "of the Comet" "of the Multiverse" "of the Rainbow" "of the Span" "of Overflowing" "of Reveling" "of Exile" "of Bameth" "of Haast" "of Incision" "of Destruction" "of Fleshbinding" "of the Wind" "Resplendent" "Dazzling" "of Tzteosh" "Magnifying" "Provocateur's" "Rimedweller's" "of Dissolution" "Vulcanist's" "Stormbrewer's" "Behemoth's" "Exalter's" "of the Ranger" "of Skill" "of Expertise" "of Legerdemain" "Virile" "Athlete's" "Fecund" "Unleashed" "Overpowering" "of the Genius" "of Ryslatha" "of the Phoenix" "of Ephij" "of Agitation" "Duchess's" "of Metamorphosis" "of the Taskmaster" "of Harmony" "Annealed" "Flaring" "Enveloped" "of the Gods" "of the Godslayer"
+	Class "Belts" "Rings" "Amulets"
+	HasExplicitMod >=1 "Veil" "essence" "Citaqualotl's" "Guatelitzi's" "Matatl's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati" "Tacati's" "Topotante's" "Xopec's"
+	SetBackgroundColor 152 36 67 255
+	SetTextColor 255 252 233 253
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Star
+	PlayEffect Purple
+	PlayAlertSound 1 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "of the Span" "of Will" "of Nullification" "of Bameth" "Tul's" "of Haast" "of the Wind" "Xoph's" "of Tzteosh" "of Revitalization" "Mad Lord's" "Frost Singer's" "Flame Shaper's" "Thunderhand's" "Martinet's" "Lithomancer's" "of Grandmastery" "Vigorous" "of the Citadel" "of the Genius" "of Life-giving" "Esh's" "of Ephij" "Seraphim's" "Mammoth's" "Nautilus's" "Ram's" "Seraphim's" "Unfaltering" "Hummingbird's" "Lissome" "Hummingbird's" "Illusion's" "Unmoving" "Mammoth's" "of Harmony" "of the Mammoth" "of the Solar Storm" "of the Lightning Rod" "of the Deathless" "Empress's" "of Metamorphosis" "of Imperviousness" "of Obstruction" "of the Conservator" "of the Bastion" "of Unmaking" "of the Gods" "Runic"
+	Class "Shields"
+	HasExplicitMod >=1 "Veil" "essence" "Citaqualotl's" "Guatelitzi's" "Matatl's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati" "Tacati's" "Topotante's" "Xopec's"
+	SetBackgroundColor 152 36 67 255
+	SetTextColor 255 252 233 253
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Star
+	PlayEffect Purple
+	PlayAlertSound 1 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "of Disintegrating" "of Heartstopping" "Tul's" "of the Fanatical" "Xoph's" "Mad Lord's" "Frost Singer's" "Flame Shaper's" "Thunderhand's" "Martinet's" "Lithomancer's" "Magister's" "of Finesse" "Esh's" "of Acclaim" "of Provocation" "of Infuriation" "of Destiny" "of the Legion" "Empress's" "of the Monarch" "of Unmaking" "Runic"
+	Class "Wands" "Sceptres" "Rune Dagger"
+	HasExplicitMod >=1 "Veil" "essence" "Citaqualotl's" "Guatelitzi's" "Matatl's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati" "Tacati's" "Topotante's" "Xopec's"
+	SetBackgroundColor 152 36 67 255
+	SetTextColor 255 252 233 253
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Star
+	PlayEffect Purple
+	PlayAlertSound 1 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "of Dissolution" "Devastating" "Malicious" "Crystalising" "of Incision" "Carbonising" "of Celebration" "Dictator's" "Vapourising" "Flaring" "Merciless" "of Exsanguinating"
+	Class "Claws" "One Hand Swords" "Wands" "Daggers" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Rune Dagger"
+	HasExplicitMod >=1 "Veil" "essence" "Citaqualotl's" "Guatelitzi's" "Matatl's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati" "Tacati's" "Topotante's" "Xopec's"
+	SetBackgroundColor 152 36 67 255
+	SetTextColor 255 252 233 253
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Star
+	PlayEffect Purple
+	PlayAlertSound 1 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "of Destruction" "of Dissolution" "Malicious" "Crystalising" "of Incision" "of Celebration" "Dictator's" "Vapourising" "Merciless" "Flaring"
+	Class "Two Hand Swords" "Two Hand Axes" "Two Hand Maces"
+	HasExplicitMod >=1 "Veil" "essence" "Citaqualotl's" "Guatelitzi's" "Matatl's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati" "Tacati's" "Topotante's" "Xopec's"
+	SetBackgroundColor 152 36 67 255
+	SetTextColor 255 252 233 253
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Star
+	PlayEffect Purple
+	PlayAlertSound 1 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "of Many" "of Destruction" "of Dissolution" "Devastating" "Malicious" "Crystalising" "of Incision" "Carbonising" "Sharpshooter's" "of Acclaim" "Dictator's" "Vapourising" "Merciless" "Flaring"
+	Class "Bows"
+	HasExplicitMod >=1 "Veil" "essence" "Citaqualotl's" "Guatelitzi's" "Matatl's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati" "Tacati's" "Topotante's" "Xopec's"
+	SetBackgroundColor 152 36 67 255
+	SetTextColor 255 252 233 253
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Purple Star
+	PlayEffect Purple
+	PlayAlertSound 1 300
+	DisableDropSound
+
+
+#BlockSeparator "Особые префиксы/суффиксы" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "Catarina's Veiled"
+	SetBackgroundColor 244 0 255 192
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	MinimapIcon 2 White Triangle
+	#PlayEffect Red
+	PlayAlertSound 6 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Haku's Veiled" "It That Fled's Veiled" "of Jorgin's Veil" "Korell's Veiled" "Leo's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Riker's Veil" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" "Vorici's Veiled"
+	SetBackgroundColor 181 52 187 192
+	SetTextColor 10 255 0 255
+	SetBorderColor 183 255 0 255
+	SetFontSize 34
+	MinimapIcon 2 White Triangle
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	Class "Rings" "Amulets" "Belts"
+	HasExplicitMod >=1 "of the Veil" "Veiled"
+	SetBackgroundColor 63 18 66 192
+	SetTextColor 60 153 176 255
+	SetBorderColor 157 52 255 255
+	SetFontSize 41
+	MinimapIcon 2 White Triangle
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	HasExplicitMod >=1 "of the Veil" "Veiled"
+	SetBackgroundColor 63 18 66 192
+	SetTextColor 60 153 176 255
+	SetBorderColor 157 52 255 255
+	SetFontSize 41
+	MinimapIcon 2 White Triangle
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	FracturedItem True
+	HasExplicitMod >=1 "of Crafting" "of Spellcraft" "Subterranean" "of the Underground"
+	SetBackgroundColor 255 93 249 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	MinimapIcon 2 Pink Hexagon
+	PlayEffect Pink
+	PlayAlertSound 6 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "of Crafting" "of Spellcraft" "Subterranean" "of the Underground"
+	SetBackgroundColor 48 26 38 255
+	SetTextColor 224 0 255 255
+	SetBorderColor 255 96 234 255
+	SetFontSize 45
+	MinimapIcon 2 Red Hexagon
+	#PlayEffect Red
+	PlayAlertSound 7 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "Citaqualotl's" "Guatelitzi's" "Matatl's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati" "Tacati's" "Topotante's" "Xopec's" "Essence"
+	BaseType "Blue Pearl Amulet" "Marble Amulet" "Crystal Belt" "Stygian Vise" "Vanguard Belt" "Astral Plate" "Sacrificial Garb" "Two-Toned Boots" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Convoking Wand" "Grasping Mail" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Iolite Ring" "Assassin's Garb" "Astral Plate" "Carnal Armour" "General's Brigandine" "Glorious Plate" "Sadist Garb" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves" "Two-Toned Boots" "Harbinger Bow" "Maraketh Bow" "Ranger Bow" "Thicket Bow" "Gemini Claw" "Imperial Claw" "Ambusher" "Sai" "Crusader Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets" "Deicide Mask" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Vaal Mask" "Behemoth Mace" "Infernal Axe" "Reaver Axe" "Royal Axe" "Runic Hatchet" "Siege Axe" "Vaal Hatchet" "Gladius" "Legion Sword" "Midnight Blade" "Vaal Blade" "Copper Kris" "Golden Kris" "Platinum Kris" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre" "Cardinal Round Shield" "Ceremonial Kite Shield" "Colossal Tower Shield" "Imperial Buckler" "Pinnacle Tower Shield" "Supreme Spiked Shield" "Titanium Spirit Shield" "Jewelled Foil" "Fleshripper" "Karui Chopper" "Vaal Axe" "Void Axe" "Imperial Maul" "Exquisite Blade" "Lion Sword" "Vaal Greatsword"
+	SetBackgroundColor 211 0 255 255
+	SetTextColor 247 191 255 255
+	SetBorderColor 255 163 221 255
+	SetFontSize 41
+	MinimapIcon 2 Red Hexagon
+	#PlayEffect Red
+	PlayAlertSound 7 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasExplicitMod >=1 "Citaqualotl's" "Guatelitzi's" "Matatl's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati" "Tacati's" "Topotante's" "Xopec's" "Essence"
+	SetBackgroundColor 42 29 41 230
+	SetTextColor 224 0 255 205
+	SetBorderColor 255 0 185 255
+	SetFontSize 35
+	MinimapIcon 2 Red Hexagon
+	#PlayEffect Red
+	PlayAlertSound 7 300
+
+
+#BlockSeparator "Имплиситы пожиратея/экзарха" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasEaterOfWorldsImplicit >= 3
+	LinkedSockets < 6
+	BaseType "Assassin's Garb" "Astral Plate" "Carnal Armour" "General's Brigandine" "Glorious Plate" "Sadist Garb" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves" "Two-Toned Boots" "Harbinger Bow" "Maraketh Bow" "Ranger Bow" "Thicket Bow" "Gemini Claw" "Imperial Claw" "Ambusher" "Sai" "Crusader Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets" "Deicide Mask" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Vaal Mask" "Behemoth Mace" "Infernal Axe" "Reaver Axe" "Royal Axe" "Runic Hatchet" "Siege Axe" "Vaal Hatchet" "Gladius" "Legion Sword" "Midnight Blade" "Vaal Blade" "Copper Kris" "Golden Kris" "Platinum Kris" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre" "Cardinal Round Shield" "Ceremonial Kite Shield" "Colossal Tower Shield" "Imperial Buckler" "Pinnacle Tower Shield" "Supreme Spiked Shield" "Titanium Spirit Shield" "Jewelled Foil" "Fleshripper" "Karui Chopper" "Vaal Axe" "Void Axe" "Imperial Maul" "Exquisite Blade" "Lion Sword" "Vaal Greatsword" "Blue Pearl Amulet" "Marble Amulet" "Crystal Belt" "Stygian Vise" "Vanguard Belt" "Astral Plate" "Sacrificial Garb" "Two-Toned Boots" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Cerulean Ring" "Opal Ring" "Steel Ring" "Convoking Wand" "Grasping Mail" "Fugitive Boots" "Apothecary's Gloves" "Iolite Ring"
+	SetBackgroundColor 76 167 180 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 193 0 255
+	SetFontSize 45
+	MinimapIcon 0 Blue Pentagon
+	PlayEffect White
+	PlayAlertSound 13 300
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	HasEaterOfWorldsImplicit >= 3
+	LinkedSockets < 6
+	SetBackgroundColor 39 193 150 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 254 255 0 255
+	SetFontSize 43
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasEaterOfWorldsImplicit >= 1
+	LinkedSockets < 6
+	SetBackgroundColor 93 193 165 149
+	SetTextColor 255 255 255 255
+	SetBorderColor 254 255 142 255
+	SetFontSize 37
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	HasSearingExarchImplicit >= 3
+	LinkedSockets < 6
+	SetBackgroundColor 149 135 58 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 254 255 0 255
+	SetFontSize 43
+	MinimapIcon 0 White Pentagon
+	PlayEffect White
+	PlayAlertSound 13 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	LinkedSockets < 6
+	HasSearingExarchImplicit >= 3
+	BaseType "Astrolabe Amulet" "Blue Pearl Amulet" "Marble Amulet" "Crystal Belt" "Stygian Vise" "Vanguard Belt" "Astral Plate" "Sacrificial Garb" "Two-Toned Boots" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Cerulean Ring" "Opal Ring" "Steel Ring" "Convoking Wand" "Grasping Mail" "Fugitive Boots" "Apothecary's Gloves" "Iolite Ring" "Assassin's Garb" "Astral Plate" "Carnal Armour" "General's Brigandine" "Glorious Plate" "Sadist Garb" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves" "Two-Toned Boots" "Harbinger Bow" "Maraketh Bow" "Ranger Bow" "Thicket Bow" "Gemini Claw" "Imperial Claw" "Ambusher" "Sai" "Crusader Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets" "Deicide Mask" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Vaal Mask" "Behemoth Mace" "Infernal Axe" "Reaver Axe" "Royal Axe" "Runic Hatchet" "Siege Axe" "Vaal Hatchet" "Gladius" "Legion Sword" "Midnight Blade" "Vaal Blade" "Copper Kris" "Golden Kris" "Platinum Kris" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre" "Cardinal Round Shield" "Ceremonial Kite Shield" "Colossal Tower Shield" "Imperial Buckler" "Pinnacle Tower Shield" "Supreme Spiked Shield" "Titanium Spirit Shield" "Jewelled Foil" "Fleshripper" "Karui Chopper" "Vaal Axe" "Void Axe" "Imperial Maul" "Exquisite Blade" "Lion Sword" "Vaal Greatsword"
+	SetBackgroundColor 200 172 84 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 254 255 0 255
+	SetFontSize 43
+	MinimapIcon 0 White Pentagon
+	PlayEffect White
+	PlayAlertSound 13 300
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	HasSearingExarchImplicit >= 3
+	LinkedSockets < 6
+	SetBackgroundColor 193 120 40 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 254 255 0 255
+	SetFontSize 43
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+Show
+	#config_VersionControl standard standard hide hide hide
+	HasSearingExarchImplicit >= 1
+	LinkedSockets < 6
+	SetBackgroundColor 193 120 40 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 254 255 0 255
+	SetFontSize 43
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+#BlockSeparator "Синтезированные/фрактурные базы" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	SynthesisedItem True
+	Rarity <= Rare
+	LinkedSockets <= 5
+	BaseType "Assassin's Garb" "Astral Plate" "Carnal Armour" "General's Brigandine" "Glorious Plate" "Sadist Garb" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves" "Two-Toned Boots" "Harbinger Bow" "Maraketh Bow" "Ranger Bow" "Thicket Bow" "Gemini Claw" "Imperial Claw" "Ambusher" "Sai" "Crusader Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets" "Deicide Mask" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Vaal Mask" "Behemoth Mace" "Infernal Axe" "Karui Axe" "Reaver Axe" "Royal Axe" "Runic Hatchet" "Siege Axe" "Vaal Hatchet" "Gladius" "Legion Sword" "Midnight Blade" "Vaal Blade" "Copper Kris" "Golden Kris" "Platinum Kris" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre" "Cardinal Round Shield" "Ceremonial Kite Shield" "Colossal Tower Shield" "Imperial Buckler" "Pinnacle Tower Shield" "Supreme Spiked Shield" "Titanium Spirit Shield" "Jewelled Foil" "Fleshripper" "Karui Chopper" "Vaal Axe" "Void Axe" "Imperial Maul" "Exquisite Blade" "Lion Sword" "Vaal Greatsword" "Sacrificial Garb" "Grasping Mail"
+	SetBackgroundColor 255 255 255 252
+	SetTextColor 96 229 255 255
+	SetBorderColor 2 0 255 255
+	SetFontSize 45
+	MinimapIcon 0 White Diamond
+	PlayEffect Cyan
+	PlayAlertSound 13 0
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	SynthesisedItem True
+	Rarity <= Rare
+	LinkedSockets <= 5
+	Class "Belts" "Rings" "Amulets" "Jewel" "Abyss Jewel"
+	SetBackgroundColor 129 168 227 255
+	SetTextColor 246 254 206 252
+	SetBorderColor 55 169 225 209
+	SetFontSize 45
+	MinimapIcon 0 Cyan Diamond
+	#PlayEffect Red
+	PlayAlertSound 14 0
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	SynthesisedItem True
+	Rarity <= Rare
+	Sockets <= 5
+	SetBackgroundColor 152 132 255 255
+	SetTextColor 0 234 255 255
+	SetBorderColor 0 107 122 255
+	SetFontSize 31
+	MinimapIcon 1 Cyan Diamond
+	#PlayEffect Red
+	CustomAlertSoundOptional "synthesis.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	FracturedItem True
+	LinkedSockets <= 5
+	Identified False
+	SetBackgroundColor 227 241 255 255
+	#SetTextColor 0 0 0 255
+	#SetBorderColor 0 0 0 255
+	SetFontSize 30
+	#MinimapIcon 2 Blue Diamond
+	#PlayEffect Red
+	Continue
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	FracturedItem True
+	LinkedSockets <= 5
+	Identified True
+	SetBackgroundColor 154 145 205 127
+	#SetTextColor 0 0 0 255
+	#SetBorderColor 0 0 0 255
+	SetFontSize 30
+	#MinimapIcon 2 Blue Diamond
+	#PlayEffect Red
+	Continue
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	FracturedItem True
+	Sockets <= 5
+	BaseType "Blue Pearl Amulet" "Marble Amulet" "Crystal Belt" "Stygian Vise" "Vanguard Belt" "Astral Plate" "Sacrificial Garb" "Two-Toned Boots" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Convoking Wand" "Grasping Mail" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Iolite Ring" "Assassin's Garb" "Astral Plate" "Carnal Armour" "General's Brigandine" "Glorious Plate" "Sadist Garb" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves" "Two-Toned Boots" "Harbinger Bow" "Maraketh Bow" "Ranger Bow" "Thicket Bow" "Gemini Claw" "Imperial Claw" "Ambusher" "Sai" "Crusader Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets" "Deicide Mask" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Vaal Mask" "Behemoth Mace" "Infernal Axe" "Reaver Axe" "Royal Axe" "Runic Hatchet" "Siege Axe" "Vaal Hatchet" "Gladius" "Legion Sword" "Midnight Blade" "Vaal Blade" "Copper Kris" "Golden Kris" "Platinum Kris" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre" "Cardinal Round Shield" "Ceremonial Kite Shield" "Colossal Tower Shield" "Imperial Buckler" "Pinnacle Tower Shield" "Supreme Spiked Shield" "Titanium Spirit Shield" "Jewelled Foil" "Fleshripper" "Karui Chopper" "Vaal Axe" "Void Axe" "Imperial Maul" "Exquisite Blade" "Lion Sword" "Vaal Greatsword"
+	#SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 251 255
+	SetBorderColor 0 221 255 255
+	SetFontSize 45
+	MinimapIcon 1 Cyan Diamond
+	#PlayEffect Red
+	CustomAlertSoundOptional "synthesis.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	FracturedItem True
+	Sockets <= 5
+	Class "Rings" "Amulets" "Belts" "Jewel" "Abyss Jewel" "Wands" "Sceptres" "Bows" "Staves"
+	#SetBackgroundColor 0 0 0 255
+	SetTextColor 255 131 0 255
+	SetBorderColor 0 221 255 255
+	SetFontSize 45
+	MinimapIcon 1 Cyan Diamond
+	#PlayEffect Red
+	CustomAlertSoundOptional "synthesis.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	FracturedItem True
+	Sockets <= 5
+	#SetBackgroundColor 0 0 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 106 122 255
+	SetFontSize 36
+	MinimapIcon 1 Cyan Diamond
+	#PlayEffect Red
+	CustomAlertSoundOptional "synthesis.wav"
+
+
+#BlockSeparator "Хорошие базы" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Astrolabe Amulet" "Simplex Amulet" "Cogwork Ring" "Geodesic Ring"
+	SetBackgroundColor 255 173 0 255
+	SetTextColor 0 0 255 255
+	SetBorderColor 0 20 255 255
+	SetFontSize 45
+	MinimapIcon 0 Orange Moon
+	#PlayEffect Red
+	CustomAlertSoundOptional "glass.wav"
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType == "Runic Helm" "Runic Crest" "Runic Crown" "Runic Greaves" "Runic Sollerets" "Runic Sabatons" "Runic Gloves" "Runic Gages" "Runic Gauntlets"
+	SetBackgroundColor 69 110 132 255
+	SetTextColor 178 222 213 255
+	SetBorderColor 98 129 255 255
+	SetFontSize 45
+	MinimapIcon 0 Blue Triangle
+	#PlayEffect Red
+	CustomAlertSoundOptional "glovesmetal.wav"
+	DisableDropSound
+
+
+Show
+	#config_VersionControl focus focus standard hide hide
+	Rarity = Rare
+	Sockets <= 5
+	BaseType "Blue Pearl Amulet" "Marble Amulet" "Crystal Belt" "Stygian Vise" "Vanguard Belt" "Astral Plate" "Sacrificial Garb" "Two-Toned Boots" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Cerulean Ring" "Opal Ring" "Steel Ring" "Convoking Wand" "Grasping Mail" "Fugitive Boots" "Apothecary's Gloves" "Iolite Ring"
+	SetBackgroundColor 255 209 0 255
+	SetTextColor 255 247 196 255
+	SetBorderColor 255 185 0 255
+	SetFontSize 45
+	MinimapIcon 0 Orange Triangle
+	PlayEffect Orange
+	PlayAlertSound 13 180
+	DisableDropSound
+
+
+Show
+	#config_VersionControl focus focus standard hide hide
+	Rarity = Rare
+	Sockets <= 5
+	BaseType "Assassin's Garb" "Astral Plate" "Carnal Armour" "General's Brigandine" "Glorious Plate" "Sadist Garb" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves" "Two-Toned Boots" "Harbinger Bow" "Maraketh Bow" "Ranger Bow" "Thicket Bow" "Gemini Claw" "Imperial Claw" "Ambusher" "Sai" "Crusader Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets" "Deicide Mask" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Vaal Mask" "Behemoth Mace" "Infernal Axe" "Karui Axe" "Reaver Axe" "Royal Axe" "Runic Hatchet" "Siege Axe" "Vaal Hatchet" "Gladius" "Legion Sword" "Midnight Blade" "Vaal Blade" "Copper Kris" "Golden Kris" "Platinum Kris" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre" "Cardinal Round Shield" "Ceremonial Kite Shield" "Colossal Tower Shield" "Imperial Buckler" "Pinnacle Tower Shield" "Supreme Spiked Shield" "Titanium Spirit Shield" "Jewelled Foil" "Fleshripper" "Karui Chopper" "Vaal Axe" "Void Axe" "Imperial Maul" "Exquisite Blade" "Lion Sword" "Vaal Greatsword"
+	SetBackgroundColor 171 147 53 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 244 158 37 255
+	SetFontSize 35
+	MinimapIcon 2 Yellow Triangle
+	PlayEffect Yellow
+	CustomAlertSoundOptional "coin.wav"
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	Rarity = Rare
+	HasInfluence "Warlord" "Redeemer" "Hunter" "Crusader" "Shaper" "Elder"
+	BaseType "Blue Pearl Amulet" "Marble Amulet" "Crystal Belt" "Stygian Vise" "Vanguard Belt" "Astral Plate" "Sacrificial Garb" "Two-Toned Boots" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Convoking Wand" "Grasping Mail" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Iolite Ring"
+	SetBackgroundColor 255 248 150 252
+	SetTextColor 255 96 0 255
+	SetBorderColor 250 0 0 255
+	SetFontSize 45
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+	PlayAlertSound 6 284
+	DisableDropSound
+
+
+Show
+	#config_VersionControl focus focus standard ignore hide
+	Rarity <= Rare
+	HasInfluence "Warlord" "Redeemer" "Hunter" "Elder" "Shaper" "Crusader"
+	BaseType "Assassin's Garb" "Astral Plate" "Carnal Armour" "General's Brigandine" "Glorious Plate" "Sadist Garb" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves" "Two-Toned Boots" "Harbinger Bow" "Maraketh Bow" "Ranger Bow" "Thicket Bow" "Gemini Claw" "Imperial Claw" "Ambusher" "Sai" "Crusader Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets" "Deicide Mask" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Vaal Mask" "Behemoth Mace" "Infernal Axe" "Reaver Axe" "Royal Axe" "Runic Hatchet" "Siege Axe" "Vaal Hatchet" "Gladius" "Legion Sword" "Midnight Blade" "Vaal Blade" "Copper Kris" "Golden Kris" "Platinum Kris" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre" "Cardinal Round Shield" "Ceremonial Kite Shield" "Colossal Tower Shield" "Imperial Buckler" "Pinnacle Tower Shield" "Supreme Spiked Shield" "Titanium Spirit Shield" "Jewelled Foil" "Fleshripper" "Karui Chopper" "Vaal Axe" "Void Axe" "Imperial Maul" "Exquisite Blade" "Lion Sword" "Vaal Greatsword"
+	SetBackgroundColor 255 120 0 255
+	SetTextColor 255 239 0 255
+	SetBorderColor 255 254 171 246
+	SetFontSize 45
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+	PlayAlertSound 13 201
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	BaseDefencePercentile >= 90
+	BaseType "Astral Plate" "Sacrificial Garb" "Two-Toned Boots" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Grasping Mail" "Fugitive Boots" "Apothecary's Gloves" "Assassin's Garb" "Astral Plate" "Carnal Armour" "General's Brigandine" "Glorious Plate" "Sadist Garb" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves" "Two-Toned Boots" "Crusader Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets" "Deicide Mask" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Vaal Mask" "Cardinal Round Shield" "Ceremonial Kite Shield" "Colossal Tower Shield" "Pinnacle Tower Shield" "Supreme Spiked Shield" "Titanium Spirit Shield"
+	SetBackgroundColor 255 255 255 146
+	SetTextColor 255 0 0 255
+	SetBorderColor 244 255 0 255
+	SetFontSize 33
+	MinimapIcon 1 Yellow Pentagon
+	PlayEffect Yellow
+	PlayAlertSound 2 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	Rarity = Rare
+	HasInfluence "Warlord" "Redeemer" "Hunter" "Crusader" "Shaper" "Elder"
+	Class "Rings" "Amulets" "Belts"
+	SetBackgroundColor 214 211 41 255
+	SetTextColor 187 92 0 255
+	SetBorderColor 153 86 82 255
+	SetFontSize 44
+	MinimapIcon 1 Yellow Star
+	PlayEffect Yellow
+	PlayAlertSound 4 300
+
+
+Show
+	#config_VersionControl standard standard ignore hide hide
+	Rarity = Rare
+	HasInfluence "Warlord" "Redeemer" "Hunter" "Crusader" "Shaper" "Elder"
+	SetBackgroundColor 189 190 0 202
+	SetTextColor 122 86 0 255
+	SetBorderColor 153 86 82 255
+	SetFontSize 40
+	MinimapIcon 1 Yellow Star
+	PlayEffect Yellow
+	PlayAlertSound 4 300
+
+
+#BlockSeparator "Кластеры" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity = Unique
+	BaseType "Large Cluster Jewel"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 255 204 0 255
+	SetBorderColor 255 142 0 255
+	SetFontSize 45
+	MinimapIcon 0 Orange Cross
+	PlayEffect Pink
+	CustomAlertSoundOptional "BaseBallBatJingle.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Rarity = Unique
+	BaseType "Small Cluster Jewel"
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 255 204 0 255
+	SetBorderColor 255 142 0 255
+	SetFontSize 45
+	MinimapIcon 0 Orange Cross
+	PlayEffect Pink
+	CustomAlertSoundOptional "artefact.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Large Cluster Jewel"
+	SetBackgroundColor 255 255 255 159
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 142 0 255
+	SetFontSize 45
+	MinimapIcon 0 Orange Cross
+	PlayEffect Pink
+	PlayAlertSound 7 300
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Medium Cluster Jewel"
+	SetBackgroundColor 117 117 117 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 142 0 255
+	SetFontSize 38
+	MinimapIcon 1 Orange Cross
+	PlayEffect Pink
+	PlayAlertSound 15 300
+
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	BaseType "Small Cluster Jewel"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 142 0 255
+	SetFontSize 29
+	MinimapIcon 2 Orange Cross
+	PlayEffect Pink
+	PlayAlertSound 15 300
+
+
+#BlockSeparator "Джевелы" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Corrupted True
+	Rarity = Rare
+	CorruptedMods >= 1
+	Class "Jewel" "Abyss Jewel"
+	SetBackgroundColor 255 0 0 255
+	SetTextColor 114 0 0 255
+	SetBorderColor 255 173 0 255
+	SetFontSize 45
+	MinimapIcon 2 Red Square
+	PlayEffect Red
+	#CustomAlertSoundOptional "helm.wav"
+	PlayAlertSound 15 300
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Corrupted True
+	Rarity = Rare
+	Class "Jewel" "Abyss Jewel"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 173 0 255
+	SetFontSize 45
+	MinimapIcon 2 Grey Square
+	PlayEffect Orange
+	CustomAlertSoundOptional "helm.wav"
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	Rarity = Rare
+	Class "Jewel" "Abyss Jewel"
+	SetBackgroundColor 41 36 22 255
+	SetTextColor 255 142 0 255
+	SetBorderColor 255 173 0 255
+	SetFontSize 45
+	MinimapIcon 2 Grey Square
+	PlayEffect Orange
+	CustomAlertSoundOptional "helm.wav"
+
+
+#BlockSeparator "Зачарки" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	AnyEnchantment True
+	Rarity <= Rare
+	Class "Helmets"
+	SetBackgroundColor 33 76 13 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 68 215 0 255
+	SetFontSize 34
+	MinimapIcon 2 Green Hexagon
+	PlayEffect Green
+	CustomAlertSoundOptional "levelup.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	AnyEnchantment True
+	SetBackgroundColor 33 76 12 108
+	SetTextColor 0 0 0 255
+	SetBorderColor 67 215 0 255
+	SetFontSize 31
+	MinimapIcon 2 Green Hexagon
+	PlayEffect Green
+	CustomAlertSoundOptional "levelup.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess"
+	SetBackgroundColor 0 214 255 255
+	SetTextColor 0 255 204 255
+	SetBorderColor 185 255 199 255
+	SetFontSize 30
+	MinimapIcon 1 Cyan Pentagon
+	PlayEffect Cyan
+	CustomAlertSoundOptional "helm.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Fractured Fossil" "Faceted Fossil"
+	SetBackgroundColor 255 112 0 255
+	SetTextColor 255 244 0 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 45
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+	CustomAlertSoundOptional "wtf-sound.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Corroded Fossil" "Sanctified Fossil" "Glyphic Fossil" "Tangled Fossil" "Bloodstained Fossil" "Hollow Fossil"
+	SetBackgroundColor 173 83 0 255
+	SetTextColor 255 247 73 255
+	SetBorderColor 255 98 98 255
+	SetFontSize 37
+	MinimapIcon 1 Red Star
+	PlayEffect Red
+	CustomAlertSoundOptional "fossil_mid.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Gilded Fossil" "Perfect Fossil" "Prismatic Fossil" "Bound Fossil" "Aetheric Fossil" "Shuddering Fossil" "Serrated Fossil" "Deft Fossil" "Fundamental Fossil"
+	SetBackgroundColor 115 55 0 255
+	SetTextColor 255 247 73 255
+	SetBorderColor 255 97 97 255
+	SetFontSize 33
+	MinimapIcon 2 Red Star
+	PlayEffect Red
+	CustomAlertSoundOptional "fossil_low.mp3"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Dense Fossil" "Pristine Fossil"
+	SetBackgroundColor 69 33 0 255
+	SetTextColor 255 247 73 255
+	SetBorderColor 255 97 97 255
+	SetFontSize 30
+	#MinimapIcon 0 Red Circle
+	PlayEffect Red
+	PlayAlertSound 2 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Stackable Currency"
+	BaseType "Fossil"
+	SetBackgroundColor 56 26 0 255
+	SetTextColor 255 247 73 255
+	SetBorderColor 255 97 97 255
+	SetFontSize 26
+	#MinimapIcon 0 Red Circle
+	PlayEffect Red
+	PlayAlertSound 16 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Delve Stackable Socketable Currency"
+	BaseType "Prime"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 220 113 255 255
+	SetBorderColor 255 0 224 255
+	SetFontSize 45
+	MinimapIcon 2 White Circle
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Delve Stackable Socketable Currency"
+	BaseType "Primitive"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 113 255 221 255
+	SetBorderColor 0 153 255 255
+	SetFontSize 36
+	MinimapIcon 2 White Circle
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Delve Stackable Socketable Currency"
+	BaseType "Powerful"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 113 255 113 255
+	SetBorderColor 10 255 0 255
+	SetFontSize 31
+	MinimapIcon 2 White Circle
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Delve Stackable Socketable Currency"
+	BaseType "Potent"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 31
+	MinimapIcon 2 White Circle
+	#PlayEffect Red
+	PlayAlertSound 8 300
+
+
+#BlockSeparator "Дешёвые предметы" shrinked no_space
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	Rarity = Rare
+	ItemLevel <= 15
+	Class "Rings"
+	SetBackgroundColor 85 0 0 255
+	SetTextColor 234 255 0 255
+	SetBorderColor 203 255 0 255
+	SetFontSize 45
+	MinimapIcon 0 Yellow Triangle
+	PlayEffect Yellow
+	PlayAlertSound 13 300
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	Rarity = Magic
+	ItemLevel <= 10
+	Class "Rings"
+	SetBackgroundColor 85 0 0 255
+	SetTextColor 0 193 255 255
+	SetBorderColor 0 40 255 255
+	SetFontSize 45
+	MinimapIcon 1 Blue Triangle
+	PlayEffect Blue
+	PlayAlertSound 8 300
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	Rarity = Normal
+	ItemLevel <= 5
+	Class "Rings"
+	SetBackgroundColor 85 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 33
+	MinimapIcon 2 White Triangle
+	PlayEffect White
+	PlayAlertSound 9 300
+
+
+Show
+	#config_VersionControl standard standard hide hide hide
+	Rarity = Rare
+	AreaLevel <= 50
+	Class "Rings" "Amulets" "Belts"
+	SetBackgroundColor 103 95 0 255
+	SetTextColor 255 173 0 255
+	SetBorderColor 255 193 0 255
+	SetFontSize 45
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Сокеты/линки (для старта)" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard standard hide
+	LinkedSockets < 6
+	Rarity <= Rare
+	Sockets = 6
+	SetBackgroundColor 196 255 166 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 105 130 90 255
+	SetFontSize 35
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+	PlayAlertSound 3 300
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	LinkedSockets = 5
+	ItemLevel <= 70
+	SetBackgroundColor 142 142 142 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 116 46 125 255
+	SetFontSize 45
+	MinimapIcon 0 White Diamond
+	PlayEffect White
+	CustomAlertSoundOptional "choir.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	ItemLevel <= 18
+	Rarity <= Rare
+	SocketGroup >= BBBG
+	SetBackgroundColor 241 241 241 231
+	SetTextColor 127 122 255 255
+	SetBorderColor 0 10 255 255
+	SetFontSize 45
+	MinimapIcon 0 Blue Moon
+	#PlayEffect Red
+	PlayAlertSound 16 300
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	ItemLevel <= 18
+	Rarity <= Rare
+	SocketGroup >= BBG
+	SetBackgroundColor 241 241 241 231
+	SetTextColor 127 122 255 255
+	SetBorderColor 0 10 255 255
+	SetFontSize 45
+	MinimapIcon 0 Blue Moon
+	#PlayEffect Red
+	PlayAlertSound 16 300
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	LinkedSockets = 4
+	Rarity = Rare
+	ItemLevel < 40
+	SetBackgroundColor 0 255 100 255
+	SetTextColor 156 163 0 255
+	SetBorderColor 255 234 0 255
+	SetFontSize 35
+	MinimapIcon 1 Yellow Diamond
+	#PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	LinkedSockets = 3
+	Rarity = Rare
+	ItemLevel < 20
+	SetBackgroundColor 0 255 100 255
+	SetTextColor 156 163 0 255
+	SetBorderColor 255 234 0 255
+	SetFontSize 35
+	MinimapIcon 1 Yellow Diamond
+	#PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	LinkedSockets = 4
+	Rarity <= Magic
+	ItemLevel < 40
+	SetBackgroundColor 0 255 101 255
+	SetTextColor 59 90 64 255
+	SetBorderColor 53 149 40 255
+	SetFontSize 35
+	MinimapIcon 1 White Diamond
+	#PlayEffect Red
+	PlayAlertSound 9 300
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	LinkedSockets >= 3
+	Rarity <= Magic
+	ItemLevel < 20
+	SetBackgroundColor 0 255 101 255
+	SetTextColor 59 90 64 255
+	SetBorderColor 53 149 40 255
+	SetFontSize 35
+	MinimapIcon 1 White Diamond
+	#PlayEffect Red
+	PlayAlertSound 9 300
+
+
+#BlockSeparator "Хорошие базы (для старта)" shrinked no_space
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	Rarity = Rare
+	AreaLevel <= 80
+	BaseType "Astrolabe Amulet" "Blue Pearl Amulet" "Marble Amulet" "Crystal Belt" "Stygian Vise" "Vanguard Belt" "Astral Plate" "Sacrificial Garb" "Two-Toned Boots" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Bone Helmet" "Cerulean Ring" "Opal Ring" "Steel Ring" "Convoking Wand" "Grasping Mail" "Fugitive Boots" "Apothecary's Gloves" "Iolite Ring"
+	SetBackgroundColor 255 199 0 255
+	SetTextColor 0 60 175 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+	CustomAlertSoundOptional "synt_high.wav"
+
+
+Show
+	#config_VersionControl standard standard standard hide hide
+	Rarity = Rare
+	AreaLevel <= 74
+	BaseType "Assassin's Garb" "Astral Plate" "Carnal Armour" "General's Brigandine" "Glorious Plate" "Sadist Garb" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves" "Two-Toned Boots" "Harbinger Bow" "Maraketh Bow" "Ranger Bow" "Thicket Bow" "Gemini Claw" "Imperial Claw" "Ambusher" "Sai" "Crusader Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets" "Deicide Mask" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Vaal Mask" "Behemoth Mace" "Infernal Axe" "Reaver Axe" "Royal Axe" "Runic Hatchet" "Siege Axe" "Vaal Hatchet" "Gladius" "Legion Sword" "Midnight Blade" "Vaal Blade" "Copper Kris" "Golden Kris" "Platinum Kris" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre" "Cardinal Round Shield" "Ceremonial Kite Shield" "Colossal Tower Shield" "Imperial Buckler" "Pinnacle Tower Shield" "Supreme Spiked Shield" "Titanium Spirit Shield" "Jewelled Foil" "Fleshripper" "Karui Chopper" "Vaal Axe" "Void Axe" "Imperial Maul" "Exquisite Blade" "Lion Sword" "Vaal Greatsword"
+	SetBackgroundColor 255 199 0 255
+	SetTextColor 0 60 175 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+	CustomAlertSoundOptional "synt_high.wav"
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard hide hide hide
+	Rarity = Rare
+	AreaLevel <= 68
+	BaseType "Leather Belt" "Heavy Belt" "Rustic Sash" "Amethyst Ring" "Ruby Ring" "Sapphire Ring" "Two-Stone Ring" "Topaz Ring" "Unset Ring" "Amber Amulet" "Agate Amulet" "Citrine Amulet" "Lapis Amulet" "Jade Amulet" "Onyx Amulet" "Turquoise Amulet"
+	SetBackgroundColor 255 199 0 255
+	SetTextColor 0 60 175 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+	CustomAlertSoundOptional "synt_high.wav"
+	#PlayAlertSound 2 225
+	DisableDropSound
+
+
+Show
+	#config_VersionControl standard standard hide hide hide
+	Rarity = Rare
+	AreaLevel <= 68
+	Class "Wands" "Sceptres" "Rune Dagger" "Staves"
+	SetBackgroundColor 255 199 0 255
+	SetTextColor 0 60 175 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+	CustomAlertSoundOptional "synt_high.wav"
+	#PlayAlertSound 2 225
+	DisableDropSound
+
+
+#BlockSeparator "Рарки для старта" shrinked no_space
+
+#BlockSeparator "Белые/Синие/Жёлтые вещи для самого старта" expanded no_space
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	Rarity = Rare
+	ItemLevel <= 15
+	SetBackgroundColor 255 185 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 227 0 255
+	SetFontSize 45
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	Rarity = Magic
+	ItemLevel <= 10
+	SetBackgroundColor 52 105 128 255
+	SetTextColor 0 244 255 255
+	SetBorderColor 16 255 244 255
+	SetFontSize 31
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard hide hide hide hide
+	Rarity = Normal
+	ItemLevel <= 5
+	SetBackgroundColor 128 128 128 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 30
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+#BlockSeparator "Мусор (слишком высокий уровень, что бы быть полезным)" expanded no_space
+
+Hide
+	#config_VersionControl standard standard standard standard standard
+	Rarity = Rare
+	ItemLevel > 15
+	Class "Two Hand" "One Hand" "Thrusting One Hand Swords" "Bows" "Sceptres" "Daggers" "Body Armours" "Gloves" "Helmets" "Boots" "Belts" "Rings" "Amulets" "Shields" "Wands" "Claws" "Quivers" "Staves" "Rune Dagger" "Staves" "Warstaves" "Jewel" "Abyss Jewel"
+	SetBackgroundColor 111 127 0 255
+	SetTextColor 255 155 0 255
+	SetBorderColor 255 233 0 255
+	SetFontSize 25
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Hide
+	#config_VersionControl standard standard standard standard standard
+	Rarity = Magic
+	ItemLevel > 10
+	Class "Two Hand" "One Hand" "Thrusting One Hand Swords" "Bows" "Sceptres" "Daggers" "Body Armours" "Gloves" "Helmets" "Boots" "Belts" "Rings" "Amulets" "Shields" "Wands" "Claws" "Quivers" "Staves" "Rune Dagger" "Staves" "Warstaves" "Jewels" "Abyss Jewels"
+	SetBackgroundColor 0 127 109 255
+	SetTextColor 0 237 255 255
+	SetBorderColor 68 0 255 255
+	SetFontSize 25
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Hide
+	#config_VersionControl standard standard standard standard standard
+	Rarity = Normal
+	ItemLevel > 5
+	Class "Two Hand" "One Hand" "Thrusting One Hand Swords" "Bows" "Sceptres" "Daggers" "Body Armours" "Gloves" "Helmets" "Boots" "Belts" "Rings" "Amulets" "Shields" "Wands" "Claws" "Quivers" "Staves" "Rune Dagger" "Staves" "Warstaves" "Jewel" "Abyss Jewel"
+	SetBackgroundColor 127 127 127 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 0 0 0 255
+	SetFontSize 23
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
+	SetBackgroundColor 255 213 0 255
+	SetTextColor 255 112 0 255
+	SetBorderColor 255 183 0 255
+	SetFontSize 45
+	MinimapIcon 1 Orange Star
+	PlayEffect Orange
+	CustomAlertSoundOptional "paper-throw-1.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Facetor's Lens"
+	SetBackgroundColor 57 61 159 255
+	SetTextColor 83 234 255 255
+	SetBorderColor 68 86 132 255
+	SetFontSize 18
+	MinimapIcon 1 Cyan Pentagon
+	PlayEffect Cyan
+	CustomAlertSoundOptional "cup2.wav"
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Burst Band" "Obsidian Sharpening Stone" "Precise Arrowhead" "Grandmaster Keyring" "Master Lockpick" "Regicide Disguise Kit" "Silkweave Sole" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumaturgical Ward" "Thaumetic Blowtorch" "Thaumetic Flashpowder" "Whisper-woven Cloak" "Foliate Brooch"
+	SetBackgroundColor 128 88 88 255
+	SetTextColor 146 246 255 255
+	SetBorderColor 234 0 255 255
+	SetFontSize 45
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+	PlayAlertSound 11 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Trinket"
+	SetBackgroundColor 156 0 0 255
+	SetTextColor 0 54 59 255
+	SetBorderColor 255 0 0 255
+	SetFontSize 34
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Quest Items"
+	BaseType "Contract:"
+	SetBackgroundColor 42 51 46 255
+	SetTextColor 0 255 30 255
+	SetBorderColor 0 103 29 255
+	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
+	PlayEffect Green
+	PlayAlertSound 15 300
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Contract:"
+	SetBackgroundColor 197 245 255 205
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	MinimapIcon 1 White Hexagon
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	BaseType "Blueprint:"
+	SetBackgroundColor 42 49 51 255
+	SetTextColor 0 255 224 255
+	SetBorderColor 0 0 103 255
+	SetFontSize 45
+	MinimapIcon 1 Cyan Hexagon
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
+	SetBackgroundColor 37 71 63 255
+	SetTextColor 254 0 255 255
+	SetBorderColor 0 255 183 255
+	SetFontSize 25
+	MinimapIcon 0 Cyan Cross
+	#PlayEffect Red
+
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	Class "Metamorph Sample"
+	SetBackgroundColor 255 91 0 214
+	SetTextColor 20 255 0 255
+	SetBorderColor 254 255 0 255
+	SetFontSize 45
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
+	CustomAlertSoundOptional "convert.wav"
+
+
+#BlockSeparator "Заглушка" expanded additional_space
+
+Show
+	#config_VersionControl standard standard standard standard standard
+	SetBackgroundColor 255 0 255 145
+	SetTextColor 255 229 229 255
+	SetBorderColor 166 0 173 255
+	SetFontSize 45
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+

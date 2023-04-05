@@ -10,6 +10,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"stack multiplier"	[value]"50"
 	[tag]"max stack size"	[value]"300"
 	
@@ -18,7 +20,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"worth"		[value]"Common"
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -33,6 +35,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"10"
 	
@@ -40,6 +44,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -53,6 +59,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Ritual item"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"stack multiplier"	[value]"25"
 	[tag]"max stack size"	[value]"100"
 	
@@ -62,6 +70,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+	[tag]"worth"		[value]"Common"
 
 
 ADD_NEW_DATA_ENTITY
@@ -98,6 +108,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Legion item"
 	[tag]"item tag"		[value]"Splinter item"
+	
 	[tag]"stack multiplier"	[value]"10"
 	[tag]"max stack size"	[value]"100"
 	
@@ -118,6 +129,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Legion item"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"stack multiplier"	[value]"10"
 	[tag]"max stack size"	[value]"100"
 	
@@ -140,6 +153,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Legion item"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"stack multiplier"	[value]"10"
 	[tag]"max stack size"	[value]"100"
 
@@ -180,6 +195,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"stack multiplier"	[value]"10"
 	[tag]"max stack size"	[value]"100"
 	
@@ -240,6 +257,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Breach item"
 	[tag]"item tag"		[value]"Splinter item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"stack multiplier"	[value]"10"
 	[tag]"max stack size"	[value]"100"
 	

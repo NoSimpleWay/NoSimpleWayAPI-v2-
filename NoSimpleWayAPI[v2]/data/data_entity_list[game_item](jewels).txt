@@ -9,6 +9,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Jewels"
 	
 	[tag]"item tag"		[value]"Non-default jewel"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -26,6 +27,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Jewels"
 	
 	[tag]"item tag"		[value]"Non-default jewel"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -43,6 +45,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Jewels"
 	
 	[tag]"item tag"		[value]"Non-default jewel"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -60,6 +63,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Jewels"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -130,6 +134,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-default jewel"
 	
 	[tag]"worth"		[value]"Moderate"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -142,7 +147,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Elegant_Hubris_inventory_icon"
 	[tag]"base class"	[value]"Jewels"
+	
 	[tag]"item tag"		[value]"Non-default jewel"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -170,7 +177,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Lethal_Pride_inventory_icon"
 	[tag]"base class"	[value]"Jewels"
+	
 	[tag]"item tag"		[value]"Non-default jewel"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -185,7 +194,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Militant_Faith_inventory_icon"
 	[tag]"base class"	[value]"Jewels"
+	
 	[tag]"item tag"		[value]"Non-default jewel"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -200,7 +211,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"timeless_jewel"
 	[tag]"base class"	[value]"Jewels"
+	
 	[tag]"item tag"		[value]"Non-default jewel"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 

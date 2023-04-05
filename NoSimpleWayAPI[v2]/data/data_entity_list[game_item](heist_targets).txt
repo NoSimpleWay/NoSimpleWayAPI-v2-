@@ -15,6 +15,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -32,6 +33,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -49,6 +51,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -66,6 +69,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -83,6 +87,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -100,6 +105,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -117,6 +123,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -134,6 +141,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -151,6 +159,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -168,6 +177,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -185,6 +195,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -202,6 +213,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -219,6 +231,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -236,6 +249,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -253,6 +267,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -269,6 +284,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -285,6 +301,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -301,6 +318,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -318,6 +336,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -335,6 +354,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -352,6 +372,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -369,6 +390,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -386,6 +408,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -402,6 +425,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -418,6 +442,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -434,6 +459,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -450,6 +476,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -466,6 +493,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -482,6 +510,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -499,6 +528,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -516,6 +546,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -533,6 +564,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -550,6 +582,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -567,6 +600,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -584,6 +618,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -601,6 +636,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -617,6 +653,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -634,6 +671,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -651,6 +689,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -668,6 +707,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -685,6 +725,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -702,6 +743,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -719,6 +761,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -736,6 +779,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -753,6 +797,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -770,6 +815,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -787,6 +833,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -804,6 +851,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Target"
 	
 	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 

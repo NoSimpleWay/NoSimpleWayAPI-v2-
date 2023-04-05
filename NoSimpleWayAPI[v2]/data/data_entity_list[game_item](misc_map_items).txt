@@ -56,6 +56,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -73,6 +74,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -90,6 +92,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -107,6 +110,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -124,6 +128,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -141,6 +146,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -158,6 +164,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -173,43 +180,6 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Bone Ring"
-	[tag]"name RU"		[value]"Костяное кольцо"
-
-	[tag]"icon path"	[value]"BoneRing"
-	[tag]"base class"	[value]"Misc Map Items"
-	
-	[tag]"item tag"		[value]"Introduced: Kalandra league"
-	[tag]"item tag"		[value]"Item for summoners"
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"worth"		[value]"Trash"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Dusk Ring"
-	[tag]"name RU"		[value]"Сумеречное кольцо"
-
-	[tag]"icon path"	[value]"DuskRing"
-	[tag]"base class"	[value]"Misc Map Items"
-	
-	[tag]"item tag"		[value]"Introduced: Kalandra league"
-	[tag]"item tag"		[value]"Item for summoners"
-	[tag]"item tag"		[value]"World drop"
-	
-	[tag]"worth"		[value]"Trash"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 	
 
 	
@@ -224,6 +194,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Misc Map Items"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"Deleted"
 	
 	[tag]"worth"		[value]"Very expensive"
 
@@ -253,6 +224,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Inscribed_Ultimatum"
 	[tag]"base class"	[value]"Misc Map Items"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

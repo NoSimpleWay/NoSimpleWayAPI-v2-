@@ -9,6 +9,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Deregulation-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
 	[tag]"max stack size"	[value]"10"
@@ -26,6 +28,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Electroshock-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
 	[tag]"max stack size"	[value]"10"
@@ -41,6 +45,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fragmentation-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -58,6 +64,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Haemocombustion-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
 	[tag]"max stack size"	[value]"10"
@@ -74,6 +82,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
 	[tag]"max stack size"	[value]"10"
@@ -89,6 +99,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Time-light-Scroll"
 	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"

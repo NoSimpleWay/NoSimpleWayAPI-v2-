@@ -846,7 +846,12 @@ public:
 	static void register_pattern_divinations_useful();
 	static void register_pattern_divinations_cheap();
 	static void register_pattern_divinations_trash();
+
 	static void register_pattern_flasks();
+
+	static void register_pattern_specific_items();
+
+	static void register_pattern_scouting_report();
 	static void register_pattern_set_fragment();
 	static void register_pattern_scarabs();
 	static void register_pattern_all_map_fragments();
@@ -864,6 +869,8 @@ public:
 	static void register_pattern_eldritch_currency();
 	static void register_pattern_delirium_orbs();
 	static void register_pattern_oils_and_catalysts();
+	static void register_pattern_essences();
+	static void register_pattern_incubators();
 	static void register_pattern_currencies_shard();
 	static void register_pattern_tainted_currencies();
 	static void register_pattern_rare_currencies();
@@ -1188,6 +1195,8 @@ public:
 
 	GameItemGeneratorMode					generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 	int										random_selection_count = 1;
+
+	bool									forceful_warn_when_hided = false;
 
 	ELocalisationText						filtered_by_exact_name;
 	std::vector<LootSimulatorTagFilter*>	filtered_by_tags;

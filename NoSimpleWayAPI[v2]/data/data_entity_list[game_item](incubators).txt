@@ -18,7 +18,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Инкубатор Бездны"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -31,7 +31,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Инкубатор картографа"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -44,7 +44,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Небесный инкубатор бронника"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -57,7 +57,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Небесный инкубатор кузнеца"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -70,7 +70,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Небесный инкубатор ювелира"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -83,7 +83,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Гравированный инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -96,7 +98,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Инкубатор предсказателя"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -109,7 +111,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мистический инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -122,7 +126,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Зачарованный инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -135,8 +139,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дикий инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
-
+	[tag]"base class"	[value]"Incubators"
+	
+	[tag]"item tag"		[value]"Deleted"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	[tag]"worth"		[value]"Common"
@@ -148,7 +154,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Прекрасный инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -162,7 +168,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Таинственный инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -175,7 +181,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ископаемый инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -189,7 +195,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Раздробленный инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -203,7 +209,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Инкубатор камнереза"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -217,7 +223,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Инкубатор геоманта"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -231,7 +238,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Заряженный инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -245,7 +252,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Загадочный инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -259,7 +266,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Затемненный инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -273,7 +280,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Изысканный инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -287,7 +294,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Потусторонний инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -301,7 +308,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Первобытный инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -315,7 +322,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Необычный инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -329,7 +336,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дёргающийся инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -343,7 +350,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Инкубатор волшебника"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -357,7 +364,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Затерянный во времени инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -371,7 +378,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шепчущий инкубатор"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -387,7 +394,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Калгууранский инкубатор"
 
 	[tag]"icon path"	[value]"ExpeditionIncubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 
@@ -406,7 +413,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Заражённый инкубатор"
 
 	[tag]"icon path"	[value]"blight_incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -418,7 +425,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Меняющийся инкубатор"
 
 	[tag]"icon path"	[value]"morphling_incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -430,7 +437,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Одержимый инкубатор"
 
 	[tag]"icon path"	[value]"maddening_incubator"
-	[tag]"base class"	[value]"Incubator"
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

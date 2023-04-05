@@ -10,6 +10,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Brooch"
 	
 	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist brooch"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -24,6 +25,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Brooch"
 	
 	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Best heist brooch"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -38,6 +41,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Brooch"
 	
 	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist brooch"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -52,6 +56,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Heist Brooch"
 	
 	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist brooch"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

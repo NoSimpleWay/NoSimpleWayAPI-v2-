@@ -13,11 +13,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Vial item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"50"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+	[tag]"worth"		[value]"Moderate"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -47,11 +50,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Vial item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"50"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+	[tag]"worth"		[value]"Moderate"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -70,6 +76,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+	[tag]"worth"		[value]"Common"
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -81,11 +89,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Vial item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"68"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+	[tag]"worth"		[value]"Rare"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -98,11 +109,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Vial item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"50"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+	[tag]"worth"		[value]"Moderate"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -115,11 +129,14 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Vial item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"68"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Expensive"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -138,6 +155,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
+	[tag]"worth"		[value]"Common"
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -146,6 +165,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vial_of_Transcendence_inventory_icon"
 	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Vial item"
@@ -154,3 +174,5 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+	[tag]"worth"		[value]"Rare"

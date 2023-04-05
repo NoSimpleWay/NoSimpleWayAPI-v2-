@@ -69,6 +69,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Maps"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Very expensive"
 
@@ -83,6 +84,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Аспект ультиматума"
 
 	[tag]"icon path"	[value]"UltimatumAspect"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"base class"	[value]"Maps"
 
@@ -101,6 +103,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"synthesised"
 	[tag]"base class"	[value]"Maps"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

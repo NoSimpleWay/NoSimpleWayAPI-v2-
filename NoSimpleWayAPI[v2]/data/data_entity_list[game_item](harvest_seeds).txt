@@ -19,6 +19,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 		[tag]"worth"	[value]"Common"
 
 ADD_NEW_DATA_ENTITY
@@ -39,6 +41,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -60,6 +63,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -70,6 +74,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"—в€щенна€ кристализованна€ жизненна€ сила"
 
 	[tag]"icon path"	[value]"SacredLifeforce"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"base class"	[value]"Stackable Currency"
 	

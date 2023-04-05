@@ -183,6 +183,7 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"			[value]"Common"
 	[tag]"item tag"			[value]"Currency shard"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 		
 	[tag]"drop level"		[value]"35"
 	[tag]"stack multiplier"	[value]"5"
@@ -202,6 +203,7 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"			[value]"Common"
 	[tag]"item tag"			[value]"Currency shard"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 		
 	[tag]"drop level"		[value]"35"
 	[tag]"stack multiplier"	[value]"7"
@@ -257,6 +259,7 @@ ADD_NEW_DATA_ENTITY
 		
 	[tag]"worth"			[value]"Rare"
 	[tag]"item tag"			[value]"Currency shard"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 		
 	[tag]"drop level"		[value]"35"
 	[tag]"stack multiplier"	[value]"2"
@@ -285,8 +288,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"			[value]"Expensive"
 		
 	[tag]"item tag"			[value]"Non-basic currency"
-		
 	[tag]"item tag"			[value]"Introduced: Forbidden Sanctum league"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 		
 	[tag]"drop level"		[value]"35"
 	[tag]"stack multiplier"	[value]"1"
@@ -314,7 +317,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"		[value]"Stackable Currency"
 		
 	[tag]"worth"			[value]"Very expensive"
+	
 	[tag]"item tag"			[value]"Currency shard"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 		
 	[tag]"drop level"		[value]"35"
 	[tag]"stack multiplier"	[value]"0.1"

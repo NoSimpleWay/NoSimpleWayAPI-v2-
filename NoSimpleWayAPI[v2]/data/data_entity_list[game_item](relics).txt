@@ -21,6 +21,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -37,6 +39,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -53,6 +57,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -69,6 +75,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -85,6 +93,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -101,6 +111,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -117,6 +129,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -133,6 +147,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Relic"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Crucible"
 	
 	[tag]"worth"		[value]"Moderate"
 
