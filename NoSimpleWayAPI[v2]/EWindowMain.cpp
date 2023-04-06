@@ -10047,6 +10047,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	l_text.localisations[NSW_localisation_EN] = "Ingame sound";
 	l_text.localisations[NSW_localisation_RU] = "«вуки из игры";
 	sound_button = new EntityButtonFilterSound();
+	sound_button->add_default_description_by_key("description_ingame_sound");
 	sound_button->make_default_button_with_unedible_text
 	(
 		new ERegionGabarite(145.0f, 22.0f),
@@ -10061,9 +10062,6 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	whole_filter_block_group->pointer_to_game_sound_button = sound_button;
 	mid_ingame_sound_section->add_button_to_working_group(sound_button);
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 
 	//	switcher GAME_SOUND
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -10087,11 +10085,17 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 
 
+
+
+
+
+
+
 	//		POSITIONAL/NOT POSITIONAL SOUND ROUTER
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
 	button_variant_FB_router->button_suppressor = button_ingame_sound_suppressor_bool;
-
+	mid_ingame_sound_section->add_button_to_working_group(button_variant_FB_router);
 	button_variant_FB_router->make_as_default_button_with_icon
 	(
 		new ERegionGabarite(170.0f, 22.0f),
@@ -10100,7 +10104,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		nullptr
 	);
 	button_variant_FB_router->parent_filter_block = whole_filter_block_group;
-	
+	button_variant_FB_router->force_field_up = 8.0f;
 	button_variant_FB_router->add_default_description_by_key("description_sound_mono_or_stereo");
 
 
@@ -10150,9 +10154,31 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
 	button_variant_FB_router->select_variant(0);
 
-	mid_ingame_sound_section->add_button_to_working_group(button_variant_FB_router);
+	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//		DISABLE SOUND
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		EntityButtonVariantRouterForFilterBlock*
+			button_variant_disable_sound = new EntityButtonVariantRouterForFilterBlock();
+		//button_variant_disable_sound->button_suppressor = button_ingame_sound_suppressor_bool;
 
+		mid_ingame_sound_section->add_button_to_working_group(button_variant_disable_sound);
+		button_variant_disable_sound->make_as_default_router_variant_button(new ERegionGabarite(170.0f, 34.0f));
+		button_variant_disable_sound->add_default_description_by_key("description_disable_sound");
+
+		whole_filter_block_group->pointer_to_forcibly_disable_sound_variant_button = button_variant_disable_sound;
+
+		//routers
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+		button_variant_disable_sound->add_router_variant_with_localisation_key_and_color("variant_do_not_disable_sound", 0.5f, 0.5f, 0.5f, 1.0f);
+		button_variant_disable_sound->add_router_variant_with_localisation_key_and_color("variant_disable_sound", 1.0f, 0.5f, 0.25f, 1.0f);
+
+		button_variant_disable_sound->select_variant(0);
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	}
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	//	VOLUME
 	{
@@ -10658,7 +10684,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_router->can_be_stretched = true;
 		button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
 		button_variant_router->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
-		button_variant_router->force_field_up = 16.0f;
+		//button_variant_router->force_field_up = 16.0f;
 		jc_text_area = ETextArea::create_centered_to_left_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], ELocalisationText::empty_localisation);
 		button_variant_router->pointer_to_text_area = jc_text_area;
 
@@ -10913,6 +10939,28 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	}
 	/*=========================================================================*/
 
+	//		FORCIBLY DISABLE MINIMAP ICON
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		EntityButtonVariantRouterForFilterBlock*
+		button_variant_disable_icon = new EntityButtonVariantRouterForFilterBlock();
+		//button_variant_disable_sound->button_suppressor = button_ingame_sound_suppressor_bool;
+
+		minimap_and_ray_cosmetic_segment->add_button_to_working_group(button_variant_disable_icon);
+		button_variant_disable_icon->make_as_default_router_variant_button(new ERegionGabarite(150.0f, 34.0f));
+		button_variant_disable_icon->add_default_description_by_key("description_disable_minimap_icon");
+		button_variant_disable_icon->force_field_up = 8.0f;
+		whole_filter_block_group->pointer_to_forcibly_disable_minimap_icon_variant_button = button_variant_disable_icon;
+
+		//routers
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+		button_variant_disable_icon->add_router_variant_with_localisation_key_and_color("variant_do_not_disable_minimap_icon", 0.5f, 0.5f, 0.5f, 1.0f);
+		button_variant_disable_icon->add_router_variant_with_localisation_key_and_color("variant_disable_minimap_icon", 1.0f, 0.5f, 0.25f, 1.0f);
+
+		button_variant_disable_icon->select_variant(0);
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	}
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	//		RAY PREVIEW
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -12202,10 +12250,17 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									EntityButtonVariantRouter* router_button_color = whole_block_container->pointer_to_minimap_icon_color_router;
 									EntityButtonVariantRouter* router_button_shape = whole_block_container->pointer_to_minimap_icon_shape_router;
 
-									//SIZE
+									//SIZE OR DISABLE
 									if (data_part == 2)
 									{
-										router_button_size->select_variant(router_button_size->seach_id_by_base_name(buffer_text));
+										if (buffer_text != "-1")
+										{
+											router_button_size->select_variant(router_button_size->seach_id_by_base_name(buffer_text));
+										}
+										else
+										{
+											whole_block_container->pointer_to_forcibly_disable_minimap_icon_variant_button->select_variant(1);
+										}
 									}
 
 									//COLOR
@@ -12258,24 +12313,34 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									{
 										ENamedSound* matched_named_sound = nullptr;
 
-										for (ENamedSound* named_sound : EWindowMain::default_sound_list)
+										if (buffer_text != "none")
+										{
+											for (ENamedSound* named_sound : EWindowMain::default_sound_list)
 											if (named_sound->localisation_text.base_name == buffer_text)
-											{
-												//EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
+											{matched_named_sound = named_sound;}
 
-												matched_named_sound = named_sound;
+											if (whole_block_container != nullptr)
+											{
+												whole_block_container->pointer_to_game_sound_button->stored_named_sound = matched_named_sound;
+												if (!comment_mode) { whole_block_container->game_sound_suppressor_bool = true; }
 											}
 
-										if (matched_named_sound == nullptr)
+											whole_block_container->pointer_to_forcibly_disable_sound_variant_button->select_variant(0);
+										}
+										else
 										{
-											//EInputCore::logger_param_with_warning("undefined sound", buffer_text);
+											if (!comment_mode)
+											{whole_block_container->pointer_to_forcibly_disable_sound_variant_button->select_variant(1);}
+											else
+											{whole_block_container->pointer_to_forcibly_disable_sound_variant_button->select_variant(0);}
 										}
 
-										if (whole_block_container != nullptr)
-										{
-											whole_block_container->pointer_to_game_sound_button->stored_named_sound = matched_named_sound;
-											if (!comment_mode) { whole_block_container->game_sound_suppressor_bool = true; }
-										}
+										//if (matched_named_sound == nullptr)
+										//{
+										//	//EInputCore::logger_param_with_warning("undefined sound", buffer_text);
+										//}
+
+	
 
 									}
 									else
@@ -18188,23 +18253,36 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 		if (!ignore_minimap_elements)
 		{
 			result_string += '\t';
-			if (!whole_block_data->minimap_icon_color_suppressor_bool)
+			if
+			(
+				(!whole_block_data->minimap_icon_color_suppressor_bool)
+				&&
+				(whole_block_data->pointer_to_forcibly_disable_minimap_icon_variant_button->selected_variant == 0)
+			)
 			{
 				result_string += "#";
 			}
+
 			result_string += "MinimapIcon";
 			EntityButtonVariantRouter* button_router_size = whole_block_data->pointer_to_minimap_icon_size_router;
 			EntityButtonVariantRouter* button_router_color = whole_block_data->pointer_to_minimap_icon_color_router;
 			EntityButtonVariantRouter* button_router_shape = whole_block_data->pointer_to_minimap_icon_shape_router;
 
-			//		add size name to line
-			result_string += ' ' + button_router_size->router_variant_list[button_router_size->selected_variant]->localisation->base_name;
+			if (whole_block_data->pointer_to_forcibly_disable_minimap_icon_variant_button->selected_variant == 0)
+			{
+				//		add size name to line
+				result_string += ' ' + button_router_size->router_variant_list[button_router_size->selected_variant]->localisation->base_name;
 
-			//		add color name to line
-			result_string += ' ' + button_router_color->router_variant_list[button_router_color->selected_variant]->localisation->base_name;
+				//		add color name to line
+				result_string += ' ' + button_router_color->router_variant_list[button_router_color->selected_variant]->localisation->base_name;
 
-			//		add shape name to line
-			result_string += ' ' + button_router_shape->router_variant_list[button_router_shape->selected_variant]->localisation->base_name;
+				//		add shape name to line
+				result_string += ' ' + button_router_shape->router_variant_list[button_router_shape->selected_variant]->localisation->base_name;
+			}
+			else
+			{
+				result_string += " -1";
+			}
 
 			result_string += '\n';
 
@@ -18231,6 +18309,8 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 		}
 		//////////////////////////////////////////////////////////////////
 
+
+
 		if (!ignore_sound)
 		{
 			//		USER SOUND
@@ -18254,20 +18334,45 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 
 
 
+
 			//		INGAME SOUNDS
-			if (whole_block_data->pointer_to_game_sound_button->stored_named_sound != nullptr)
+			if
+			(
+				(whole_block_data->pointer_to_game_sound_button->stored_named_sound != nullptr)
+				||
+				(whole_block_data->pointer_to_forcibly_disable_sound_variant_button->selected_variant == 1)//forcibly dysabled sound
+			)
 			{
 				result_string += '\t';
-				if (!whole_block_data->game_sound_suppressor_bool)
+				if
+				(
+					(!whole_block_data->game_sound_suppressor_bool)
+					&&
+					(whole_block_data->pointer_to_forcibly_disable_sound_variant_button->selected_variant == 0)
+				)
 				{
 					result_string += "#";
 				}
+
 				result_string += "PlayAlertSound";
-				if (whole_block_data->pointer_to_positional_variant_button->selected_variant == 1) { result_string += "Positional"; }
+				
+				//non forcibly disabled sound
+				if (whole_block_data->pointer_to_forcibly_disable_sound_variant_button->selected_variant == 0)
+				{
+					if (whole_block_data->pointer_to_game_sound_button->stored_named_sound != nullptr)
+					{
+						if (whole_block_data->pointer_to_positional_variant_button->selected_variant == 1) { result_string += "Positional"; }
+						{
+							result_string += ' ' + whole_block_data->pointer_to_game_sound_button->stored_named_sound->localisation_text.base_name;
+							result_string += ' ' + std::to_string(int(whole_block_data->sound_volume_value * 300.0f));
+						}
+					}
+				}
+				else
+				{
+					result_string += " none";
+				}
 
-
-				result_string += ' ' + whole_block_data->pointer_to_game_sound_button->stored_named_sound->localisation_text.base_name;
-				result_string += ' ' + std::to_string(int(whole_block_data->sound_volume_value * 300.0f));
 				result_string += '\n';
 			}
 

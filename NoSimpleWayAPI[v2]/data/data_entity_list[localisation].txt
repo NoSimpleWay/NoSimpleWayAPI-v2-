@@ -697,4 +697,53 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"WARNING! THIS ITEM IS HIDDEN!"
 	[tag]"name RU"		[value]"ВНИМАНИЕ! ЭТОТ ПРЕДМЕТ СКРЫТ"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"variant_do_not_disable_sound"
+	[tag]"name EN"		[value]"Do not disable sound"
+	[tag]"name RU"		[value]"Не отключать звук"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_disable_sound"
+	[tag]"name EN"		[value]"Forcibly disable sound"
+	[tag]"name RU"		[value]"Насильно отключить звук"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_disable_sound"
+	[tag]"name EN"		[value]"You can forcibly disable sound for this block"
+	[tag]"name RU"		[value]"Даёт возможность насильно отключить звук для этого блока"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_ingame_sound"
+	[tag]"name EN"		[value]"Press left mouse button to select one of ingame sound.\nPress right mouse button to play selected sound"
+	[tag]"name RU"		[value]"Нажмите левую кнопку мыши, что бы выбрать один из звуков из игры.\nНажмите правую кнопку мыши, что бы воспроизвести выбранный звук"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_do_not_disable_minimap_icon"
+	[tag]"name EN"		[value]"Do not disable icon"
+	[tag]"name RU"		[value]"Не отключать иконку"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_disable_minimap_icon"
+	[tag]"name EN"		[value]"Forcibly disable icon"
+	[tag]"name RU"		[value]"Насильно отключить иконку"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_disable_minimap_icon"
+	[tag]"name EN"		[value]"You can forcibly disable minimap icon for this block"
+	[tag]"name RU"		[value]"Даёт возможность насильно отключить иконку миникарты для этого блока"

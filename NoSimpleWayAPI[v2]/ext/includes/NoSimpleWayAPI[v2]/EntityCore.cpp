@@ -2203,6 +2203,21 @@ std::string EntityButtonVariantRouter::return_base_text_from_selected_router()
 	return router_variant_list[selected_variant]->localisation->base_name;
 }
 
+RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localisation_key_and_color(std::string _key, float _r, float _g, float _b, float _a)
+{
+	RouterVariant*
+	router_variant = new RouterVariant();
+
+	router_variant->localisation = new ELocalisationText(ELocalisationText::get_localisation_by_key(_key));
+
+	router_variant->color = new HSVRGBAColor();
+	router_variant->color->set_color_RGBA(_r, _g, _b, _a);
+
+	router_variant_list.push_back(router_variant);
+
+	return router_variant;
+}
+
 RouterVariant::~RouterVariant()
 {
 	if (!do_not_delete_me)

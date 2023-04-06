@@ -440,6 +440,8 @@ public:
 
 	bool				do_not_delete_me = false;
 
+	
+
 	~RouterVariant();
 
 };
@@ -485,6 +487,7 @@ public:
 	//	//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	//);
 
+	RouterVariant* add_router_variant_with_localisation_key_and_color(std::string _key, float _r, float _g, float _b, float _a);
 
 	int height_division = 2;
 };

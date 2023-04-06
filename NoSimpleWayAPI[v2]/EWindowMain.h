@@ -301,6 +301,7 @@ public:
 
 
 	EntityButtonVariantRouterForFilterBlock* pointer_to_positional_variant_button;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_forcibly_disable_sound_variant_button;
 	EntityButtonVariantRouterForFilterBlock* pointer_to_disable_enable_drop_sound;
 	EntityButtonVariantRouterForFilterBlock* pointer_to_optional_user_sound;
 
@@ -310,6 +311,7 @@ public:
 	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_color_router;
 	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_size_router;
 	EntityButtonVariantRouterForFilterBlock* pointer_to_minimap_icon_shape_router;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_forcibly_disable_minimap_icon_variant_button;
 
 	//		RAY SECTION
 	EntityButtonVariantRouterForFilterBlock* pointer_to_ray_color_router;
