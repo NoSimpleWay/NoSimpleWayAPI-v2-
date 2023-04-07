@@ -555,6 +555,7 @@ public:
 
 	EButtonGroup* add_close_group_and_return_workspace_group(ERegionGabarite* _region, EGUIStyle* _style);
 	void add_caption_by_localistation_key(std::string _key);
+	void add_help_button(ETextureGabarite* _texture_gabarite, std::string _key);
 
 
 

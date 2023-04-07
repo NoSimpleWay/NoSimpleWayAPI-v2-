@@ -8,6 +8,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Moon_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -20,6 +22,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Moon_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -32,6 +36,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gnarled_Branch_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -44,6 +50,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Royal_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -56,6 +64,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Royal_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -68,6 +78,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Long_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -80,6 +92,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Long_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -92,6 +106,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Moon_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -104,6 +120,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Woodful_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -116,6 +134,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Woodful_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -128,6 +148,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Long_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 
@@ -143,6 +165,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Royal_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -157,6 +181,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Woodful_Staff_inventory_icon"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -170,6 +196,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SuperStaff"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Heist base"
 
@@ -186,6 +214,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"SuperStaff"
 	[tag]"base class"	[value]"Staves"
 	
+	[tag]"item tag"		[value]"Have implicit"
+	
 	[tag]"item tag"		[value]"Heist base"
 
 	[tag]"item width"	[value]"1"
@@ -200,6 +230,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SuperStaff"
 	[tag]"base class"	[value]"Staves"
+	
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Heist base"
 

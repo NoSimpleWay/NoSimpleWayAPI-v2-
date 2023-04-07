@@ -36,7 +36,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ от Реликвария ваал"
 
 	[tag]"icon path"	[value]"vaal_reliquary"
-	[tag]"base class"	[value]"Misc Map Items"
+	[tag]"base class"	[value]"Timeworn Reliquary Key"
 	
 	[tag]"item tag"		[value]"Deleted"
 
@@ -52,7 +52,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ от Архивного Реликвария"
 
 	[tag]"icon path"	[value]"ArchiveReliquaryKey"
-	[tag]"base class"	[value]"Misc Map Items"
+	[tag]"base class"	[value]"Vault Key"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
@@ -70,7 +70,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ от Космического Реликвария"
 
 	[tag]"icon path"	[value]"CosmicReliquaryKey"
-	[tag]"base class"	[value]"Misc Map Items"
+	[tag]"base class"	[value]"Vault Key"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
@@ -88,7 +88,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ от Разлагающегося Реликвария"
 
 	[tag]"icon path"	[value]"DecayingReliquaryKey"
-	[tag]"base class"	[value]"Misc Map Items"
+	[tag]"base class"	[value]"Vault Key"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
@@ -106,7 +106,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ от Забытого Реликвария"
 
 	[tag]"icon path"	[value]"ForgottenReliquaryKey"
-	[tag]"base class"	[value]"Misc Map Items"
+	[tag]"base class"	[value]"Vault Key"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
@@ -124,7 +124,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ от Реликвария забвения"
 
 	[tag]"icon path"	[value]"OublietteReliquaryKey"
-	[tag]"base class"	[value]"Misc Map Items"
+	[tag]"base class"	[value]"Vault Key"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
@@ -142,7 +142,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ от Сверкающего Реликвария"
 
 	[tag]"icon path"	[value]"ShinyReliquaryKey"
-	[tag]"base class"	[value]"Misc Map Items"
+	[tag]"base class"	[value]"Vault Key"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
@@ -160,13 +160,31 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ от Внутриутробного Реликвария"
 
 	[tag]"icon path"	[value]"VisceralReliquaryKey"
-	[tag]"base class"	[value]"Misc Map Items"
+	[tag]"base class"	[value]"Vault Key"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Rare"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Voidborn Reliquary Key"
+	[tag]"name RU"		[value]"Ключ от Пустотного Реликвария"
+
+	[tag]"icon path"	[value]"VoidbornVaultKey"
+	[tag]"base class"	[value]"Vault Key"
+	
+	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

@@ -19,6 +19,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Ritual base top"
 	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -42,6 +43,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Ritual base medium"
 	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -65,6 +67,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Ritual base low"
 	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -88,6 +91,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Ritual base top"
 	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -111,6 +115,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Ritual base medium"
 	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -157,6 +162,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Ritual base mid"
 	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -180,6 +186,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Ritual base top"
 	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -203,6 +210,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Ritual base low"
 	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Common"
 	
@@ -289,6 +297,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -708,6 +717,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 

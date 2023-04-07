@@ -11,6 +11,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Good ring base"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25,6 +27,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"Breach item"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -39,6 +42,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -56,6 +60,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -70,6 +75,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -84,6 +90,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -99,6 +106,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -113,6 +121,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -127,6 +136,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -142,6 +152,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Good ring base"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -157,6 +168,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Rare base"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -173,6 +185,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -185,6 +198,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Prismatic_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -200,6 +215,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Good ring base"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -216,6 +232,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good ring base"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -232,6 +249,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Rare base"
 	[tag]"item tag"		[value]"Good for attack build"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"worth"		[value]"Common"
 
@@ -250,6 +268,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Good ring base"
 
+	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -264,6 +283,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Good ring base"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -278,6 +298,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -292,6 +313,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Rings"
 	
 	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -330,6 +352,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"Deleted"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -347,6 +370,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"Deleted"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -359,6 +383,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"ShadowedRing"
 	
 	[tag]"base class"	[value]"Ring"
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -376,6 +401,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TenebrousRing"
 	
 	[tag]"base class"	[value]"Ring"
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -397,6 +423,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Rare base"
 	[tag]"worth"		[value]"Common"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -417,6 +444,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item for summoners"
 	[tag]"item tag"		[value]"Rings"
 	[tag]"item tag"		[value]"Good ring base"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Trash"
 

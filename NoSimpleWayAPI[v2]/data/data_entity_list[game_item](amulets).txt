@@ -17,6 +17,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Good amulet base"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -40,6 +41,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Breach unique item"
 	[tag]"item tag"		[value]"Good amulet base"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -57,6 +59,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Heist base"
 	[tag]"item tag"		[value]"Have influence"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -77,6 +80,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -99,6 +103,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Good amulet base"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -111,6 +116,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Clutching_Talisman_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Have implicit"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -124,6 +131,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Coral_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -138,6 +147,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Gold_Amulet_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -152,6 +163,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Greatwolf_Talisman_inventory_icon"
 	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -178,6 +192,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Breach unique item"
 	[tag]"item tag"		[value]"Good amulet base"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	
 	[tag]"worth"		[value]"Trash"
@@ -202,6 +217,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Breach unique item"
 	[tag]"item tag"		[value]"Good amulet base"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	
 	[tag]"worth"		[value]"Trash"
@@ -222,6 +238,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Rare base"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -244,6 +261,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Breach unique item"
 	[tag]"item tag"		[value]"Good amulet base"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -262,6 +280,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Good base for unique"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -281,6 +301,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -299,6 +320,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Heist base"
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -311,6 +333,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Talisman"
 	[tag]"base class"	[value]"Amulets"
 
+	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -334,6 +357,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Good amulet base"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Good base for unique"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -353,6 +378,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -368,6 +394,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Rare base"
 	
 	[tag]"item tag"		[value]"Good for attack build"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -384,6 +411,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"Expensive base for unique"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -400,7 +428,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Amulets"
 	
 	[tag]"item tag"		[value]"Rare base"
-	
+	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good for attack build"
 
 	[tag]"item width"	[value]"1"

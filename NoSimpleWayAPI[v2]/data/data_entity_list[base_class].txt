@@ -527,6 +527,14 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
+	[tag]"name EN"		[value]"Vault Key"
+	[tag]"name RU"		[value]"Ключ Реликвария"
+
+	[tag]"icon path"	[value]"VisceralReliquaryKey"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
 	[tag]"name EN"		[value]"Memory"
 	[tag]"name RU"		[value]"Воспоминание"
 

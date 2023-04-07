@@ -19,6 +19,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -39,6 +40,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -59,6 +61,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -79,6 +82,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -99,6 +103,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -119,6 +124,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -139,6 +145,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -160,6 +167,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Breach unique item"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -180,6 +188,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -191,6 +200,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vaal_Blade_inventory_icon"
 	[tag]"base class"	[value]"One Hand Swords"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -212,6 +223,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -232,6 +244,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -254,6 +267,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist base"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -274,6 +288,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -295,6 +310,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -315,6 +331,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -335,6 +352,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -355,6 +373,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -377,6 +396,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -398,6 +418,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -418,6 +439,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -438,6 +460,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -458,6 +481,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -478,6 +502,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -499,6 +525,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -519,6 +546,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -539,6 +567,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -562,6 +591,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -582,6 +612,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -602,6 +633,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -622,6 +654,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -642,6 +675,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -662,6 +696,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -682,6 +717,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -702,6 +738,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -722,6 +759,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -742,6 +780,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -762,6 +801,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -782,6 +822,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -802,6 +843,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -823,6 +865,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -843,6 +887,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -863,6 +908,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -883,6 +929,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -906,6 +953,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Smallsword_inventory_icon"
 	[tag]"base class"	[value]"One Hand Swords"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"4"
@@ -927,6 +976,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -947,6 +997,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -967,6 +1018,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -987,6 +1039,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1007,6 +1060,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1027,5 +1081,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"One-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
 		
 	[tag]"worth"		[value]"Trash"

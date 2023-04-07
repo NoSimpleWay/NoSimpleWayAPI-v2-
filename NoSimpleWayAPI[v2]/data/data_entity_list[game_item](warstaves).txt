@@ -7,6 +7,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SuperStaff"
 	[tag]"base class"	[value]"Warstaff"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19,6 +21,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Serpentine_Staff_inventory_icon"
 	[tag]"base class"	[value]"Warstaff"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -31,6 +35,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SuperStaff"
 	[tag]"base class"	[value]"Warstaff"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -43,6 +49,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Iron_Staff_inventory_icon"
 	[tag]"base class"	[value]"Warstaff"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -55,6 +63,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vile_Staff_inventory_icon"
 	[tag]"base class"	[value]"Warstaff"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -67,6 +77,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Iron_Staff_inventory_icon"
 	[tag]"base class"	[value]"Warstaff"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -87,6 +99,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vile_Staff_inventory_icon"
 	[tag]"base class"	[value]"Warstaff"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -112,6 +126,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Iron_Staff_inventory_icon"
 	[tag]"base class"	[value]"Warstaff"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -124,6 +140,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SuperStaff"
 	[tag]"base class"	[value]"Warstaff"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -136,6 +154,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Serpentine_Staff_inventory_icon"
 	[tag]"base class"	[value]"Warstaff"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -148,6 +168,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vile_Staff_inventory_icon"
 	[tag]"base class"	[value]"Warstaff"
+	
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"

@@ -4121,7 +4121,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	// // // // // // //
 	EntityButton*
-		jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_a"));
+		jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 30.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_a"));
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->a;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 	value_and_alpha_part->add_button_to_working_group(jc_button);
@@ -4131,7 +4131,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	// // // // // // //
 
-	jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_v"));
+	jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 30.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_v"));
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->v;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 	value_and_alpha_part->add_button_to_working_group(jc_button);
@@ -4155,6 +4155,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 		&HRA_color->s,
 		"hue_saturation"
 	);
+	jc_button->can_be_stretched = true;
 
 	EDataContainer_CrosshairSlider* crosshair_data = (EDataContainer_CrosshairSlider*)EntityButton::get_last_custom_data(jc_button)->data_container;
 	crosshair_data->min_x = 0.0f;
@@ -4361,6 +4362,27 @@ void EButtonGroup::add_caption_by_localistation_key(std::string _key)
 	{
 		close_section_left_part->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key(_key));
 		close_section_left_part->clickable_area_list[0]->text_area->font = EFont::font_list[1];
+	}
+}
+
+void EButtonGroup::add_help_button(ETextureGabarite* _texture_gabarite, std::string _key)
+{
+	if (close_section_left_part != nullptr)
+	{
+		EntityButton*
+		but = new EntityButton;
+
+		but->make_as_default_button_with_icon
+		(
+			new ERegionGabarite(close_section_left_part->region_gabarite->size_y, close_section_left_part->region_gabarite->size_y),
+			close_section_left_part,
+			nullptr,
+			_texture_gabarite
+		);
+
+		but->add_default_description_by_key(_key);
+
+		close_section_left_part->add_button_to_working_group(but);
 	}
 }
 

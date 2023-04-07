@@ -8,6 +8,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -20,6 +21,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Broadhead_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -32,6 +34,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Fire_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -44,6 +47,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Penetrating_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -56,6 +60,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Serrated_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -68,6 +73,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sharktooth_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -92,6 +98,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Two-Point_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -105,6 +112,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Feather_quiver"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
@@ -119,6 +127,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Blazing_quiver"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
@@ -133,6 +142,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Vile_quiver"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
@@ -147,6 +157,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Heavy_quiver"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
@@ -161,6 +172,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Primal_quiver"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
@@ -176,6 +188,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"artillery_quiver"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Good for attack build"
 
