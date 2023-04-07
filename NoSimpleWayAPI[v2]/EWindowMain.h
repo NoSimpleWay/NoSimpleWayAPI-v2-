@@ -694,6 +694,7 @@ enum DefaultGameAttributeEnum
 	GAME_ATTRIBUTE_BASE_CLASS,
 	GAME_ATTRIBUTE_BASE_TYPE,
 	GAME_ATTRIBUTE_HAVE_IMPLICIT,
+	GAME_ATTRIBUTE_BASE_WARD,
 
 	_GAME_ATTRIBUTE_LAST_ELEMENT
 
@@ -868,11 +869,14 @@ public:
 
 	static void register_pattern_uniques();
 	static void register_pattern_gloves_helmets_boots_body_jewelry();
+	static void register_pattern_runic_base();
+	static void register_pattern_heist_items();
 	
 	static void register_pattern_all_equip();
 	//static void register_pattern_all_equip();
 	static void register_pattern_top_tier_bases();
 
+	static void register_pattern_expedition_currency();
 	static void register_pattern_eldritch_currency();
 	static void register_pattern_delirium_orbs();
 	static void register_pattern_oils_and_catalysts();

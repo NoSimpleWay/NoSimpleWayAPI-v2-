@@ -1347,46 +1347,52 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Common"
 	
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Greaves"
-	[tag]"name RU"		[value]"Рунические поножи"
-
-	[tag]"icon path"	[value]"RunicBoots"
-	[tag]"base class"	[value]"Boots"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"item tag"		[value]"Runic base"
+	[tag]"name EN"			[value]"Runic Greaves"
+	[tag]"name RU"			[value]"Рунические поножи"
+	
+	[tag]"icon path"		[value]"RunicBoots"
+	[tag]"base class"		[value]"Boots"
+		
+	[tag]"item tag"			[value]"Runic base"
+	[tag]"base ward min"	[value]"24"
+	[tag]"base ward max"	[value]"28"
 
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Sollerets"
-	[tag]"name RU"		[value]"Рунические солереты"
-
-	[tag]"icon path"	[value]"RunicBoots"
-	[tag]"base class"	[value]"Boots"
 	
-	[tag]"item tag"		[value]"Runic base"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
+	[tag]"name EN"			[value]"Runic Sollerets"
+	[tag]"name RU"			[value]"Рунические солереты"
+	
+	[tag]"icon path"		[value]"RunicBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"62"
+	[tag]"base ward max"	[value]"71"
+	
+	[tag]"item tag"			[value]"Runic base"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
 	
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Runic Sabatons"
-	[tag]"name RU"		[value]"Рунические сабатоны"
-
-	[tag]"icon path"	[value]"RunicBoots"
-	[tag]"base class"	[value]"Boots"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"item tag"		[value]"Runic base"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"2"
+	[tag]"name EN"			[value]"Runic Sabatons"
+	[tag]"name RU"			[value]"Рунические сабатоны"
+	
+	[tag]"icon path"		[value]"RunicBoots"
+	[tag]"base class"		[value]"Boots"
+	[tag]"base ward min"	[value]"102"
+	[tag]"base ward max"	[value]"117"
+	
+	[tag]"item tag"			[value]"Runic base"
+	
+	[tag]"item width"		[value]"2"
+	[tag]"item height"		[value]"2"
 	
 	
 

@@ -1462,7 +1462,7 @@ void EntityButton::make_default_bool_switcher_button(ERegionGabarite* _region_ga
 	else
 	{
 		//EInputCore::logger_simple_error("Target bool is NULL, generate new bool!");
-		data_container->target_value = new bool(false);
+		data_container->target_value = new bool(true);
 	}
 
 
@@ -1704,7 +1704,7 @@ void EntityButton::update(float _d)
 			highlight_time -= _d;
 		}
 
-		if ((main_clickable_area->hover_time >= 0.25f) && (description_container != nullptr))
+		if ((main_clickable_area->hover_time >= 0.50f) && (description_container != nullptr))
 		{
 			if (attached_description == nullptr)
 			{

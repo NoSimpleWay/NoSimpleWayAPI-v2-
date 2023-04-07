@@ -9,6 +9,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Expedition currency"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
@@ -28,6 +29,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Expedition currency"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
@@ -47,6 +49,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Expedition currency"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
@@ -66,6 +69,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Expedition currency"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
