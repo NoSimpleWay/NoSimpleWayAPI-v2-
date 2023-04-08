@@ -1009,16 +1009,7 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 	//button_group_data_container->target_rule = button_data_container->filter_rule;
 
 
-	//filter rule in group = stored filter rule on selected button
-	if (button_group_data_container->pointer_to_group_with_filter_rules_list->selected_button != nullptr)
-	{
-		EntityButtonFilterRule*
-		filter_button = (EntityButtonFilterRule*)button_group_data_container->pointer_to_group_with_filter_rules_list->selected_button;
 
-		button_group_data_container->target_rule = filter_button->target_filter_rule;
-	}
-
-	button_group_data_container->action_on_select_for_button = button_data_container->target_action_on_click;
 
 
 	for (EntityButton* but : EWindowMain::data_entity_filter->right_side_for_filters->workspace_button_list)
@@ -1038,6 +1029,38 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 			button_rule->entity_disabled = true;
 		}
 	}
+
+
+
+
+
+
+
+
+	//filter rule in group = stored filter rule on selected button
+	if (button_group_data_container->pointer_to_group_with_filter_rules_list->selected_button != nullptr)
+	{
+		if (!button_group_data_container->pointer_to_group_with_filter_rules_list->selected_button->entity_is_active())
+		{
+			for (EntityButton* but : button_group_data_container->pointer_to_group_with_filter_rules_list->workspace_button_list)
+			{
+				EntityButtonFilterRule* button_rule = static_cast<EntityButtonFilterRule*>(but);
+
+				if (button_rule->target_filter_rule->tag == button_data_container->filter_rule->focused_by_data_type)
+				{
+					button_group_data_container->pointer_to_group_with_filter_rules_list->selected_button = but;
+					break;
+				}
+			}
+		}
+
+		EntityButtonFilterRule*
+		filter_button = (EntityButtonFilterRule*)button_group_data_container->pointer_to_group_with_filter_rules_list->selected_button;
+
+		button_group_data_container->target_rule = filter_button->target_filter_rule;
+	}
+
+	button_group_data_container->action_on_select_for_button = button_data_container->target_action_on_click;
 
 
 
@@ -7128,6 +7151,33 @@ void EWindowMain::register_filter_rules()
 	jc_filter = new DataEntityFilter();
 	jc_filter->target_tag_name = "data type";
 	jc_filter->suitable_values_list.push_back("Game item");
+	jc_filter_rule->required_tag_list.push_back(jc_filter);
+	//
+
+	//DELETED
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Deleted");
+	jc_filter_rule->banned_tag_list.push_back(jc_filter);
+	//
+	EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	////////////////////////////////////////////////////////////////////////////////////////////
+	// 
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//ALL ITEMS
+	jc_filter_rule = new EFilterRule();
+	jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
+	jc_filter_rule->categry_id = 0;
+
+	jc_filter_rule->localisation_text = new ELocalisationText();
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "All classes";
+	jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Все классы";
+	jc_filter_rule->tag = "Base Class";
+
+	//filter by game item
+	jc_filter = new DataEntityFilter();
+	jc_filter->target_tag_name = "data type";
+	jc_filter->suitable_values_list.push_back("Base Class");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	//
 
