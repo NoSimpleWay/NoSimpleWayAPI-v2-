@@ -818,5 +818,40 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"key"			[value]"description_help_info_data_entity"
 	[tag]"name EN"		[value]"Select pattern in right part, to filter items.\nHold shift when select let you select many items without closing this window"
-	[tag]"name RU"		[value]"Выберете шаблон фильтрации в правой части, что бы отфильтровать предметы.\nВыберайте предметы с нажатой кнопкой shift, "
+	[tag]"name RU"		[value]"Выберете шаблон фильтрации в правой части, что бы отфильтровать предметы.\nВыбирайте предметы с нажатой кнопкой shift, что бы выбрать предмет не закрывая окно выбора"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"gray_text_undefined_attribute"
+	[tag]"name EN"		[value]"Undefined attribute name"
+	[tag]"name RU"		[value]"Название неизветсного атрибута"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_undefined_attribute_info"
+	[tag]"name EN"		[value]"AwakenedDadEditor dont recognise this attribute. Possible reasons:\n\nAttribute written incorrect\nOutdated version of AwakenedDadEditor\nBug"
+	[tag]"name RU"		[value]"AwakenedDadEditor не распознал этот атрибут. Возможные причины:\n\nАтрибут написан с ошибкой\nУстаревшая версия программы\nОшибка программы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_add_new_undefined_attribute_button"
+	[tag]"name EN"		[value]"Add: attribute"
+	[tag]"name RU"		[value]"Добавить: атрибут"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_press_me"
+	[tag]"name EN"		[value]"Press me"
+	[tag]"name RU"		[value]"Нажмите на кнопку"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_loot_filter_errors"
+	[tag]"name EN"		[value]"This loot filter loaded with errors:"
+	[tag]"name RU"		[value]"Этот лутфильтр загружен с ошибками"
 	
