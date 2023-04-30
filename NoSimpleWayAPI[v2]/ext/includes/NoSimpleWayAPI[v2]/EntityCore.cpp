@@ -2051,6 +2051,7 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 	}
 }
 
+
 EntityButtonVariantRouter::~EntityButtonVariantRouter()
 {
 	if (debug_deleting) {

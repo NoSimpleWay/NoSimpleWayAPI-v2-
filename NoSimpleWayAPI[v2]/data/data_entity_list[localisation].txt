@@ -855,3 +855,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"This loot filter loaded with errors:"
 	[tag]"name RU"		[value]"Этот лутфильтр загружен с ошибками"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_loot_filter_error_undefined_attribute"
+	[tag]"name EN"		[value]"Undefined attribute"
+	[tag]"name RU"		[value]"Неизвестный атрибут"
+	

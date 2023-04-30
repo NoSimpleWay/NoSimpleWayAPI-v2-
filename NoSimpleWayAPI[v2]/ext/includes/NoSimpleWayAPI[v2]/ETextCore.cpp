@@ -492,15 +492,7 @@ void ETextArea::generate_text()
 		(font != nullptr)
 	)
 	{
-		//if (*selected_color_table == TextColorArray::FREE)
-		if (!indicate_gray_text)
-		{
-			NS_EGraphicCore::set_active_color(&color);
-		}
-		else
-		{
-			NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GRAY);
-		}
+
 
 		sprite_layer->last_buffer_id = 0;
 
@@ -513,9 +505,16 @@ void ETextArea::generate_text()
 			}
 		}
 
+		int
+		buffer_size	=	sprite_layer->batcher->gl_vertex_attribute_total_count * stored_text.length()	* 4;
 
-		sprite_layer->vertex_buffer = new float[sprite_layer->batcher->gl_vertex_attribute_total_count * stored_text.length() * 4];
-		sprite_layer->total_capacity = sprite_layer->batcher->gl_vertex_attribute_total_count * stored_text.length() * 4;
+		if (have_bg_line)
+		{
+			buffer_size += sprite_layer->batcher->gl_vertex_attribute_total_count * row.size()			* 4;
+		}
+
+		sprite_layer->vertex_buffer		= new float[buffer_size];
+		sprite_layer->total_capacity	= buffer_size;
 
 		int row_id = 0;
 		int id_for_stored_text_sym = 0;
@@ -599,6 +598,37 @@ void ETextArea::generate_text()
 
 			float px = 0.5f / NS_EGraphicCore::default_texture_atlas->get_atlas_size_x();
 			float py = 0.5f / NS_EGraphicCore::default_texture_atlas->get_atlas_size_y();
+			
+			//background line
+			if (have_bg_line)
+			{
+				ERenderBatcher::if_have_space_for_data(sprite_layer->batcher, 1);
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLACK, 0.9f);
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					sprite_layer->vertex_buffer,
+					sprite_layer->last_buffer_id,
+
+					round(x_adding + region_gabarite->world_position_x) - 1.0f,
+					round(region_gabarite->world_position_y + y_adding) - 1.0f,
+
+					round(get_row_width(str) * font_scale) + 2.0f,
+					(font->base * font_scale) + 2.0f,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+			}
+			//
+
+			//if (*selected_color_table == TextColorArray::FREE)
+			if (!indicate_gray_text)
+			{
+				NS_EGraphicCore::set_active_color(&color);
+			}
+			else
+			{
+				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GRAY);
+			}
 
 			for (int i = 0; i < str_lenght; i++)
 			{
@@ -707,6 +737,8 @@ void ETextArea::generate_text()
 			}
 
 			//EInputCore::logger_param("last buffer id", *sprite_layer->last_buffer_id);
+			
+			
 
 			y_adding += font->base * font_scale;
 		}
@@ -1892,4 +1924,12 @@ ELocalisationText ELocalisationText::generate_localisation(std::string _text)
 
 
 	return ltext;
+}
+
+void ELocalisationText::add_text_to_all_languages(std::string _text)
+{
+	for (int i = 0; i < NSW_languages_count; i++)
+	{
+		localisations[i] += _text;
+	}
 }

@@ -1079,7 +1079,7 @@ void EButtonGroup::draw_button_group()
 			}
 
 			//BG
-			if ((background_sprite_layer != nullptr) && (have_bg))
+			if ((background_sprite_layer != nullptr) && (have_bg_line))
 			{
 				background_sprite_layer->transfer_vertex_buffer_to_batcher();
 			}
@@ -2098,7 +2098,7 @@ void EButtonGroup::recursive_group_stretch_childs_y()
 	unsigned int	dynamic_elements_count = 0;
 
 	float shrink_size = 0.0f;
-	if (!have_bg) { shrink_size = 0.0f; }
+	if (!have_bg_line) { shrink_size = 0.0f; }
 
 	//for (EButtonGroup* child : group_list)
 	//if (child->is_this_group_active())
@@ -2373,7 +2373,7 @@ void EButtonGroup::recursive_change_group_first_pass(EButtonGroup* _group)
 	int style_id = _group->brick_style_id;
 	if (_group->fake_borders_id >= 0) { style_id = _group->fake_borders_id; }
 
-	if ((style_id >= 0) && (_group->have_bg))
+	if ((style_id >= 0) && (_group->have_bg_line))
 	{
 		_group->group_border_texture_left = _group->selected_style->brick_style[style_id].border_texture_size_left;
 		_group->group_border_texture_right = _group->selected_style->brick_style[style_id].border_texture_size_right;
@@ -2955,6 +2955,15 @@ float EButtonGroup::get_highest_point_y_for_groups()
 	return total_size;
 }
 
+void EButtonGroup::slide_to_this_group(EButtonGroup* _group)
+{
+
+	scroll_y = max(-_group->region_gabarite->offset_y, 0.0f);
+	slider->current_value = scroll_y;
+
+	EButtonGroup::refresh_button_group(this);
+}
+
 void EButtonGroup::set_base_size_x()
 {
 
@@ -3282,7 +3291,7 @@ void EButtonGroup::apply_style_to_button_group(EButtonGroup* _group, EGUIStyle* 
 
 	if ((EGUIStyle::active_style != nullptr) && (_group->can_change_style))
 	{
-		if ((_brick_style_id != BrickStyleID::NONE) && (_group->have_bg))
+		if ((_brick_style_id != BrickStyleID::NONE) && (_group->have_bg_line))
 		{
 			EBrickStyle::apply_brick_parameters_to_button_group(_group, &_style->brick_style[_brick_style_id]);
 		}
@@ -3314,7 +3323,7 @@ void EButtonGroup::generate_brick_textured_bg(EButtonGroup* _group)
 	}
 	else if (_group->background_sprite_layer == nullptr)
 	{
-		if (_group->have_bg) { EInputCore::logger_simple_error("group [" + _group->debug_name + "] have no background sprite layer"); }
+		if (_group->have_bg_line) { EInputCore::logger_simple_error("group [" + _group->debug_name + "] have no background sprite layer"); }
 	}
 	else if ((_group->region_gabarite->size_x <= 0.0f) || (_group->region_gabarite->size_y <= 0.0f))
 	{
@@ -3807,6 +3816,8 @@ void EButtonGroup::add_default_clickable_region_with_text_area(ELocalisationText
 	new_text_area->parent_group = this;
 	new_text_area->can_be_edited = false;
 	new_text_area->change_text(new_text_area->original_text);
+
+	new_text_area->have_bg_line = true;
 
 	new_clickable_area->text_area = new_text_area;
 }
@@ -4361,7 +4372,9 @@ void EButtonGroup::add_caption_by_localistation_key(std::string _key)
 	if (close_section_left_part != nullptr)
 	{
 		close_section_left_part->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key(_key));
+
 		close_section_left_part->clickable_area_list[0]->text_area->font = EFont::font_list[1];
+		
 	}
 }
 
@@ -4404,7 +4417,7 @@ EButtonGroup* EButtonGroup::create_base_button_group(ERegionGabarite* _region, E
 		*just_created_button_group->button_group_type = ButtonGroupType::BGT_DARKEN;
 	}
 
-	just_created_button_group->have_bg = _have_bg;
+	just_created_button_group->have_bg_line = _have_bg;
 
 	if (_have_bg)
 	{
@@ -4448,7 +4461,7 @@ void EButtonGroup::init_button_group(EGUIStyle* _style, bool _have_bg, bool _hav
 		*button_group_type = ButtonGroupType::BGT_DARKEN;
 	}
 
-	have_bg = _have_bg;
+	have_bg_line = _have_bg;
 
 	if (_have_bg)
 	{
@@ -4489,7 +4502,7 @@ void EButtonGroup::init_button_group(EGUIStyle* _style, BrickStyleID _brick_styl
 
 	brick_style_id = _brick_style_id;
 
-	have_bg = (_brick_style_id != BrickStyleID::NONE);
+	have_bg_line = (_brick_style_id != BrickStyleID::NONE);
 
 	background_sprite_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
 	background_sprite_layer->make_as_PBR();

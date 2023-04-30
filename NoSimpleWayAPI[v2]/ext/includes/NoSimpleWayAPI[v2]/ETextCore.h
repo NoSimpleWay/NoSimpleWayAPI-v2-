@@ -26,6 +26,8 @@ public:
 	static ELocalisationText get_localisation_by_key(std::string _key);
 	static ELocalisationText empty_localisation;
 	static ELocalisationText generate_localisation(std::string _text);
+
+	void add_text_to_all_languages(std::string _text);
 };
 #endif
 
@@ -266,6 +268,7 @@ public:
 	bool can_be_edited = true;
 	bool can_change_localisation = true;
 	bool forcibly_create_glyph = false;
+	bool have_bg_line = false;
 
 	ESpriteLayer* sprite_layer;
 	///

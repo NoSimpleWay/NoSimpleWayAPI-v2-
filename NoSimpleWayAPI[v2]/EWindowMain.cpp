@@ -3160,13 +3160,67 @@ EWindowMain::EWindowMain()
 
 	if (true)
 	{
-		EButtonGroupLootFilterErrors*
-		registered_group_filter_error_list = new EButtonGroupLootFilterErrors(new ERegionGabarite(300.0f, 620.0f));
+		//WHOLE GROUP
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		registered_group_filter_error_list = new EButtonGroupLootFilterErrors(new ERegionGabarite(300.0f, 400.0f));
 		registered_group_filter_error_list->init_as_root_group(this);
-
+		registered_group_filter_error_list->button_group_is_active = false;
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		
+		//TEXT PART
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		EButtonGroup*
 		loot_filter_error_workspace = registered_group_filter_error_list->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
-		loot_filter_error_workspace->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("description_loot_filter_errors"));
+		
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+		//BOTTOM PART
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup*
+		loot_filter_error_bottom_part_fot_buttons = new EButtonGroup(new ERegionGabarite(300.0f, 40.0f));
+		loot_filter_error_bottom_part_fot_buttons->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_without_slider);
+		loot_filter_error_bottom_part_fot_buttons->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		loot_filter_error_bottom_part_fot_buttons->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+
+		loot_filter_error_workspace->add_group(loot_filter_error_bottom_part_fot_buttons);
+		registered_group_filter_error_list->part_with_buttons = loot_filter_error_bottom_part_fot_buttons;
+		/*for (int i = 0; i < 10; i++)
+		{
+			EntityButtonFilterBlockError*
+			error_button = new EntityButtonFilterBlockError();
+
+			error_button->make_default_button_with_unedible_text
+			(
+				new ERegionGabarite (250.0f, 25.0f),
+				loot_filter_error_bottom_part_fot_buttons,
+				nullptr,
+				ELocalisationText::get_localisation_by_key("button_loot_filter_error")
+			);
+			error_button->can_be_stretched = true;
+
+			loot_filter_error_bottom_part_fot_buttons->add_button_to_working_group(error_button);
+		}*/
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		//TOP PART
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup*
+		loot_filter_error_top_part_fot_text = new EButtonGroup(new ERegionGabarite(300.0f, 25.0f));
+		loot_filter_error_top_part_fot_text->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_without_slider);
+		loot_filter_error_top_part_fot_text->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+		loot_filter_error_workspace->add_group(loot_filter_error_top_part_fot_text);
+
+		loot_filter_error_top_part_fot_text->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("description_loot_filter_errors"));
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
 		button_group_list.push_back(registered_group_filter_error_list);
 		registered_group_filter_error_list->need_refresh = true;
@@ -6443,6 +6497,20 @@ void EWindowMain::register_game_item_attributes()
 
 
 
+	//UNDEFINED ATTRIBUTE
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "UndefinedAttribute";
+	jc_localisation.localisations[NSW_localisation_EN] = "Undefined attribute";
+	jc_localisation.localisations[NSW_localisation_RU] = "Неизвестный атрибут";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_UNDEFINED_ATTRIBUTE;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->commentary_config = false;
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -7042,8 +7110,9 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->commentary_config = true;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 }
 
 void EWindowMain::register_filter_rules()
@@ -11978,7 +12047,24 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							{
 								add_game_item_attribute_to_filter_block(jc_filter_block, nullptr, buffer_text);
 
+								ELocalisationText ltext;
+								ltext = ELocalisationText::get_localisation_by_key("button_loot_filter_error_undefined_attribute");
+								ltext.add_text_to_all_languages(" [" + buffer_text + "]");
+
+								EntityButtonFilterBlockError::add_error_button_to_error_list
+								(
+									new ERegionGabarite(300.0f, 22.0f),
+									jc_filter_block,
+									ltext
+								);
+
+
+
 								if (!comment_mode) { EInputCore::logger_param_with_warning("UNREGISTERED attribure!", buffer_text); }
+
+								registered_group_filter_error_list->activate_move_to_foreground_and_center();
+
+
 							}
 
 							if
@@ -18033,6 +18119,25 @@ void EWindowMain::action_on_close()
 
 
 
+void EDataActionCollection::action_highlight_block_with_error(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonFilterBlockError*
+	error_button = static_cast<EntityButtonFilterBlockError*>(_entity);
+
+	if (error_button->target_filter_block != nullptr)
+	{
+		if (error_button->target_filter_block->attached_separator != nullptr)
+		{error_button->target_filter_block->attached_separator->is_expanded = true;}
+
+		error_button->target_filter_block->highlight_this_group();
+		EWindowMain::loot_filter_editor->slide_to_this_group(error_button->target_filter_block);
+
+		//EWindowMain::loot_filter_editor->need_refresh = true;
+		//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
+	}
+
+}
+
 void EDataActionCollection::action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EButtonGroup::add_content_to_filter_block_group->activate_move_to_foreground_and_center();
@@ -18071,7 +18176,14 @@ void EDataActionCollection::action_add_selected_content_to_filter_block(Entity* 
 
 	EntityButton* jc_button = nullptr;
 
-	add_game_item_attribute_to_filter_block(whole_button_group, add_content_button_data->target_attribute, "");
+	if (add_content_button_data->target_attribute->filter_attribute_value_type != FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_UNDEFINED_ATTRIBUTE)
+	{
+		add_game_item_attribute_to_filter_block(whole_button_group, add_content_button_data->target_attribute, "");
+	}
+	else
+	{
+		add_game_item_attribute_to_filter_block(whole_button_group, nullptr, "");
+	}
 
 	//if (taget_group_for_content != nullptr)
 	//{ 
@@ -18563,7 +18675,6 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 					_game_item_attribute->localisation.base_name,
 					target_group_for_content
 				);
-
 
 			//EButtonGroup::change_group(target_group_for_content);
 			target_group_for_content->need_change = true;
@@ -19406,7 +19517,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 		undefined_attribute_button = new EntityButtonForFilterBlock();
 		undefined_attribute_button->make_default_button_with_edible_text
 		(
-			new ERegionGabarite(200.0f, 24.0f),
+			new ERegionGabarite(230.0f, 24.0f),
 			group_bottom_side_for_add,
 			nullptr,
 			_attribute_name
@@ -22718,5 +22829,39 @@ EntityButtonForUndefinedAttribute::EntityButtonForUndefinedAttribute()
 }
 
 EntityButtonForUndefinedAttribute::~EntityButtonForUndefinedAttribute()
+{
+}
+
+EntityButtonFilterBlockError::EntityButtonFilterBlockError()
+{
+}
+
+EntityButtonFilterBlockError::~EntityButtonFilterBlockError()
+{
+}
+
+EntityButtonFilterBlockError* EntityButtonFilterBlockError::add_error_button_to_error_list(ERegionGabarite* _gabarite, EButtonGroupFilterBlock* _filter_block, ELocalisationText _ltext)
+{
+	EntityButtonFilterBlockError*
+	error_button = new EntityButtonFilterBlockError();
+
+	error_button->make_default_button_with_unedible_text
+	(
+		_gabarite,
+		EWindowMain::registered_group_filter_error_list->part_with_buttons,
+		&EDataActionCollection::action_highlight_block_with_error,
+		_ltext
+	);
+
+	error_button->target_filter_block = _filter_block;
+
+	EWindowMain::registered_group_filter_error_list->part_with_buttons->add_button_to_working_group(error_button);
+
+	error_button->can_be_stretched = true;
+
+	return error_button;
+}
+
+EButtonGroupLootFilterErrors::~EButtonGroupLootFilterErrors()
 {
 }

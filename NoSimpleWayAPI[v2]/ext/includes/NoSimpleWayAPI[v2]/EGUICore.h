@@ -495,6 +495,8 @@ public:
 	float get_child_total_y_size();
 	float get_highest_point_y_for_groups();
 
+	void slide_to_this_group(EButtonGroup* _group);
+
 	
 
 
@@ -582,7 +584,7 @@ public:
 
 	static bool catched_by_mouse(EButtonGroup* _group);
 
-	bool have_bg = (true);
+	bool have_bg_line = (true);
 	bool can_be_focused = (true);
 	bool button_group_is_active = (true);
 	bool disable_gabarite = (false);

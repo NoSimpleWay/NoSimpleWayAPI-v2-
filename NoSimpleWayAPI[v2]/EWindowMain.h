@@ -111,6 +111,17 @@ public:
 	~EntityButtonForFilterBlock();
 };
 
+class EntityButtonFilterBlockError : public EntityButton
+{
+public:
+	EntityButtonFilterBlockError();
+	~EntityButtonFilterBlockError();
+
+	EButtonGroupFilterBlock* target_filter_block;
+
+	static EntityButtonFilterBlockError* add_error_button_to_error_list(ERegionGabarite* _gabarite, EButtonGroupFilterBlock* _filter_block, ELocalisationText _ltext);
+};
+
 
 class EntityButtonForUndefinedAttribute : public EntityButton
 {
@@ -523,12 +534,16 @@ struct LootFilterError
 public:
 	ELocalisationText error_localisation;
 };
-class EButtonGroupLootFilterErrors : public EButtonGroupConfirmAction
+class EButtonGroupLootFilterErrors : public EButtonGroup
 {
 public:
-	EButtonGroupLootFilterErrors(ERegionGabarite* _gabarite) :EButtonGroupConfirmAction(_gabarite) {};
+	EButtonGroupLootFilterErrors(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+	~EButtonGroupLootFilterErrors();
+
+	EButtonGroup* part_with_buttons = nullptr;
 
 	std::vector< LootFilterError*> error_struct_list;
+
 };
 
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
@@ -572,6 +587,7 @@ public:
 
 namespace EDataActionCollection
 {
+	void action_highlight_block_with_error(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_add_content_window(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_add_selected_content_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
 
@@ -706,6 +722,8 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_CONFIG_VERSIONS,
 	FILTER_ATTRIBUTE_VALUE_CONFIG_COLOR_COLLECTION,
 	FILTER_ATTRIBUTE_VALUE_CONFIG_SEPARATOR,
+
+	FILTER_ATTRIBUTE_VALUE_UNDEFINED_ATTRIBUTE,
 
 
 
