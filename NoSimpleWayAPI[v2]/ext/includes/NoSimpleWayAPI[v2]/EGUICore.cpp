@@ -3811,7 +3811,7 @@ void EButtonGroup::add_default_clickable_region_with_text_area(ELocalisationText
 	clickable_area_list.push_back(new_clickable_area);
 
 	ETextArea*
-		new_text_area = ETextArea::create_centered_text_area(new_clickable_area, EFont::font_list[0], _text);
+	new_text_area = ETextArea::create_centered_text_area(new_clickable_area, EFont::font_list[0], _text);
 	new_text_area->localisation_text = _text;
 	new_text_area->parent_group = this;
 	new_text_area->can_be_edited = false;

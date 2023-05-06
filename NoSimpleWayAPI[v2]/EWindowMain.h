@@ -924,6 +924,7 @@ public:
 	//static void register_pattern_all_equip();
 	static void register_pattern_top_tier_bases();
 
+	static void register_pattern_harvest_items();
 	static void register_pattern_expedition_currency();
 	static void register_pattern_eldritch_currency();
 	static void register_pattern_delirium_orbs();
@@ -934,7 +935,9 @@ public:
 	static void register_pattern_tainted_currencies();
 	static void register_pattern_rare_currencies();
 	static void register_pattern_good_currencies();
+	static void register_pattern_cheap_currencies();
 	static void register_pattern_trash_currencies();
+
 	static void register_pattern_basic_currencies();
 
 	static void register_pattern_all_currencies();

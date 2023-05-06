@@ -12944,6 +12944,7 @@ void EWindowMain::register_loot_simulator_patterns()
 	register_new_crucible_items();
 
 	register_pattern_trash_currencies();
+	register_pattern_cheap_currencies();
 	register_pattern_good_currencies();
 	register_pattern_rare_currencies();
 	register_pattern_tainted_currencies();
@@ -12954,6 +12955,7 @@ void EWindowMain::register_loot_simulator_patterns()
 	register_pattern_delirium_orbs();
 	register_pattern_eldritch_currency();
 	register_pattern_expedition_currency();
+	register_pattern_harvest_items();
 
 	register_pattern_top_tier_bases();
 	register_pattern_all_equip();
@@ -14065,35 +14067,119 @@ void EWindowMain::register_pattern_maps()
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Карты";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_maps");
 
-		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
+		/////////////////////////////			WHITE TIER MAP			/////////////////////////////////////////////
 		{
+			
+				GameItemGenerator*
+					game_item_generator = new GameItemGenerator();
+
+				game_item_generator->generations_count = 4;
+
+
+				ELocalisationText l_text;
+				l_text.base_name = "Random Map";
+				l_text.localisations[NSW_localisation_EN] = "White map";
+				l_text.localisations[NSW_localisation_RU] = "Белая карта";
+				game_item_generator->filtered_by_exact_name = l_text;
+
+				/////////////////////////////			CLASS			/////////////////////////////////////////////
+				l_text;
+				l_text.base_name = "Maps";
+				l_text.localisations[NSW_localisation_EN] = "Maps";
+				l_text.localisations[NSW_localisation_RU] = "Карта";
+				game_item_generator->add_class(l_text);
+
+				game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+				game_item_generator->add_item_level(-3, 3, 1.0f);
+
+				/////////////////////////////			MAP TIER			/////////////////////////////////////////////
+				{
+					//		value
+					GameAttributeGeneratorMinMaxInt*
+						value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
+
+
+					//		parameters
+					value_generator->min_value = 1;
+					value_generator->max_value = 5;
+					value_generator->generator_pow = 1.0f;
+
+					game_item_generator->attribute_generators_list.push_back(value_generator);
+				}
+
+				loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+			
+		}
+
+		/////////////////////////////			YELLOW TIER MAP			/////////////////////////////////////////////
+		{
+			
+				GameItemGenerator*
+					game_item_generator = new GameItemGenerator();
+
+				game_item_generator->generations_count = 4;
+
+
+				ELocalisationText l_text;
+				l_text.base_name = "Random Map";
+				l_text.localisations[NSW_localisation_EN] = "Yellow map";
+				l_text.localisations[NSW_localisation_RU] = "Жёлтая карта";
+				game_item_generator->filtered_by_exact_name = l_text;
+
+				/////////////////////////////			CLASS			/////////////////////////////////////////////
+				l_text;
+				l_text.base_name = "Maps";
+				l_text.localisations[NSW_localisation_EN] = "Maps";
+				l_text.localisations[NSW_localisation_RU] = "Карта";
+				game_item_generator->add_class(l_text);
+
+				game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+				game_item_generator->add_item_level(-3, 3, 1.0f);
+
+				/////////////////////////////			MAP TIER			/////////////////////////////////////////////
+				{
+					//		value
+					GameAttributeGeneratorMinMaxInt*
+						value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
+
+
+					//		parameters
+					value_generator->min_value = 6;
+					value_generator->max_value = 10;
+					value_generator->generator_pow = 1.0f;
+
+					game_item_generator->attribute_generators_list.push_back(value_generator);
+				}
+
+				loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+			
+		}
+
+		/////////////////////////////			RED TIER MAP			/////////////////////////////////////////////
+		{
+
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
 
-			game_item_generator->generations_count = 8;
+			game_item_generator->generations_count = 4;
+
 
 			ELocalisationText l_text;
 			l_text.base_name = "Random Map";
-			l_text.localisations[NSW_localisation_EN] = "Random Map";
-			l_text.localisations[NSW_localisation_RU] = "Случайная карта";
+			l_text.localisations[NSW_localisation_EN] = "Red map";
+			l_text.localisations[NSW_localisation_RU] = "Красная карта";
 			game_item_generator->filtered_by_exact_name = l_text;
 
 			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				ELocalisationText l_text;
-				l_text.base_name = "Maps";
-				l_text.localisations[NSW_localisation_EN] = "Maps";
-				l_text.localisations[NSW_localisation_RU] = "Карты";
-				value_generator->exact_values_list.push_back(l_text);
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
+			l_text;
+			l_text.base_name = "Maps";
+			l_text.localisations[NSW_localisation_EN] = "Maps";
+			l_text.localisations[NSW_localisation_RU] = "Карта";
+			game_item_generator->add_class(l_text);
 
 			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
@@ -14106,15 +14192,17 @@ void EWindowMain::register_pattern_maps()
 
 
 				//		parameters
-				value_generator->min_value = 1;
+				value_generator->min_value = 11;
 				value_generator->max_value = 16;
 				value_generator->generator_pow = 1.0f;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
 
-
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
 		}
 
 		/////////////////////////////			ITEM GENERATOR (MAP WITH INFLUENCE)			/////////////////////////////////////////////
@@ -14169,133 +14257,11 @@ void EWindowMain::register_pattern_maps()
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 		}
 
-		/////////////////////////////			ITEM GENERATOR (FRACTURED MAPS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
+	
 
-			game_item_generator->generations_count = 8;
-			ELocalisationText l_text;
-			l_text.base_name = "Fractured Map";
-			l_text.localisations[NSW_localisation_EN] = "Fractured Map";
-			l_text.localisations[NSW_localisation_RU] = "Расколотая карта";
-			game_item_generator->filtered_by_exact_name = l_text;
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				ELocalisationText l_text;
-				l_text.base_name = "Maps";
-				l_text.localisations[NSW_localisation_EN] = "Maps";
-				l_text.localisations[NSW_localisation_RU] = "Карты";
-				value_generator->exact_values_list.push_back(l_text);
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			game_item_generator->add_rarity(0.0f, 2.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-
-			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 16;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			FRACTURED			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorBoolFlag*
-					value_generator = new GameAttributeGeneratorBoolFlag("FracturedItem");
-
-				//		parameters
-				value_generator->chance_to_activate = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		/////////////////////////////			ITEM GENERATOR (CORRUPTED MAPS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 8;
-
-			ELocalisationText l_text;
-			l_text.base_name = "Corrupted Map";
-			l_text.localisations[NSW_localisation_EN] = "Corrupted Map";
-			l_text.localisations[NSW_localisation_RU] = "Осквернённая карта";
-			game_item_generator->filtered_by_exact_name = l_text;
-
-			/////////////////////////////			CLASS			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorExactListedValue*
-					value_generator = new GameAttributeGeneratorExactListedValue("Class");
-
-
-				//		parameters
-				ELocalisationText l_text;
-				l_text.base_name = "Maps";
-				l_text.localisations[NSW_localisation_EN] = "Maps";
-				l_text.localisations[NSW_localisation_RU] = "Карты";
-				value_generator->exact_values_list.push_back(l_text);
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-
-			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
-
-
-				//		parameters
-				value_generator->min_value = 1;
-				value_generator->max_value = 16;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			CORRUPTED			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorBoolFlag*
-					value_generator = new GameAttributeGeneratorBoolFlag("Corrupted");
-
-				//		parameters
-				value_generator->chance_to_activate = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
+		
 
 		/////////////////////////////			ITEM GENERATOR (ENCHANTED MAPS)			/////////////////////////////////////////////
-
 		{
 			GameItemGenerator*
 				game_item_generator = new GameItemGenerator();
@@ -14351,53 +14317,6 @@ void EWindowMain::register_pattern_maps()
 
 				//		parameters
 				value_generator->chance_to_activate = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
-		}
-
-		/////////////////////////////			ITEM GENERATOR (SYNTHESISED MAPS)			/////////////////////////////////////////////
-		{
-			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
-
-			game_item_generator->generations_count = 3;
-
-			ELocalisationText l_text;
-			l_text.base_name = "Synthesised Map";
-			l_text.localisations[NSW_localisation_EN] = "Synthesised Map";
-			l_text.localisations[NSW_localisation_RU] = "Синтезированная карта";
-			game_item_generator->filtered_by_exact_name = l_text;
-			game_item_generator->forceful_warn_when_hided = true;
-
-			game_item_generator->add_rarity(3.0f, 3.0f, 3.0f);
-			game_item_generator->add_item_level(-3, 3, 1.0f);
-
-			/////////////////////////////			MAP TIER			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorMinMaxInt*
-					value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
-
-
-				//		parameters
-				value_generator->min_value = 14;
-				value_generator->max_value = 16;
-				value_generator->generator_pow = 1.0f;
-
-				game_item_generator->attribute_generators_list.push_back(value_generator);
-			}
-
-			/////////////////////////////			CORRUPTED			/////////////////////////////////////////////
-			{
-				//		value
-				GameAttributeGeneratorBoolFlag*
-					value_generator = new GameAttributeGeneratorBoolFlag("Corrupted");
-
-				//		parameters
-				value_generator->chance_to_activate = 0.4f;
 
 				game_item_generator->attribute_generators_list.push_back(value_generator);
 			}
@@ -16670,6 +16589,53 @@ void EWindowMain::register_pattern_top_tier_bases()
 	}
 }
 
+void EWindowMain::register_pattern_harvest_items()
+{
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Harvest lifeforce";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Семена жатвы";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/VividLifeforce");
+
+		loot_simulator_pattern->additional_force_field_for_buttons = true;
+		/////////////////////////////			ITEM GENERATOR (EXPEDITION CURRENCY)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Harvest seed");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
 void EWindowMain::register_pattern_expedition_currency()
 {
 	{
@@ -16681,7 +16647,7 @@ void EWindowMain::register_pattern_expedition_currency()
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Валюта экспедиции";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Coinage");
 
-		loot_simulator_pattern->additional_force_field_for_buttons = true;
+		//loot_simulator_pattern->additional_force_field_for_buttons = true;
 		/////////////////////////////			ITEM GENERATOR (EXPEDITION CURRENCY)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
@@ -17176,7 +17142,6 @@ void EWindowMain::register_pattern_good_currencies()
 
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Common");
 			tag_filter->suitable_values.push_back("Moderate");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -17207,8 +17172,8 @@ void EWindowMain::register_pattern_trash_currencies()
 		LootSimulatorPattern*
 			loot_simulator_pattern = new LootSimulatorPattern;
 
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Cheap currency";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Дешёвая валюта";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Basic currency: Trash";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Базовая валюта: Мусор";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_trash_currencies");
 
 
@@ -17246,6 +17211,60 @@ void EWindowMain::register_pattern_trash_currencies()
 
 
 			game_item_generator->add_quantity(0.0f,3.0f, 2.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_cheap_currencies()
+{
+	//		CHEAP CURRENCY
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Basic currency: Cheap";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Базовая валюта: Дешёвая";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_cheap_currencies");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Common");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Basic currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
