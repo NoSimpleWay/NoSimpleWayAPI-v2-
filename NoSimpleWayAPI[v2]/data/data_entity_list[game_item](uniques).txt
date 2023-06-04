@@ -1,0 +1,4154 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Coral Amulet"
+	[tag]"name EN"		[value]"Araku Tiki"
+	[tag]"name RU"		[value]"Араку Тики"
+
+	[tag]"icon path"	[value]"Coral_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Coral Amulet"
+	[tag]"name EN"		[value]"The Primordial Chain"
+	[tag]"name RU"		[value]"Первородная цепь"
+
+	[tag]"icon path"	[value]"Coral_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Coral Amulet"
+	[tag]"name EN"		[value]"Tainted Pact"
+	[tag]"name RU"		[value]"Порочный пакт"
+
+	[tag]"icon path"	[value]"Coral_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Coral Amulet"
+	[tag]"name EN"		[value]"Tavukai"
+	[tag]"name RU"		[value]"Тавукаи"
+
+	[tag]"icon path"	[value]"Coral_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Paua Amulet"
+	[tag]"name EN"		[value]"Sidhebreath"
+	[tag]"name RU"		[value]"Дыхание Ши"
+
+	[tag]"icon path"	[value]"Paua_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Paua Amulet"
+	[tag]"name EN"		[value]"Atziri's Foible"
+	[tag]"name RU"		[value]"Причуда Атзири"
+
+	[tag]"icon path"	[value]"Paua_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Paua Amulet"
+	[tag]"name EN"		[value]"Sacrificial Heart"
+	[tag]"name RU"		[value]"Жертвенное сердце"
+
+	[tag]"icon path"	[value]"Paua_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Paua Amulet"
+	[tag]"name EN"		[value]"Zerphi's Heart"
+	[tag]"name RU"		[value]"Сердце Зерфи"
+
+	[tag]"icon path"	[value]"Paua_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Jade Amulet"
+	[tag]"name EN"		[value]"Karui Ward"
+	[tag]"name RU"		[value]"Оберег каруи"
+
+	[tag]"icon path"	[value]"Jade_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Jade Amulet"
+	[tag]"name EN"		[value]"The Halcyon"
+	[tag]"name RU"		[value]"Алкион"
+
+	[tag]"icon path"	[value]"Jade_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Breach loot"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Jade Amulet"
+	[tag]"name EN"		[value]"Rashkaldor's Patience"
+	[tag]"name RU"		[value]"Терпение Рашкальдора"
+
+	[tag]"icon path"	[value]"Jade_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Jade Amulet"
+	[tag]"name EN"		[value]"Willowgift"
+	[tag]"name RU"		[value]"Дар ивы"
+
+	[tag]"icon path"	[value]"Jade_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Jade Amulet"
+	[tag]"name EN"		[value]"The Pandemonius"
+	[tag]"name RU"		[value]"Обитель демонов"
+
+	[tag]"icon path"	[value]"Jade_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Breach loot"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Jade Amulet"
+	[tag]"name EN"		[value]"Hyrri's Truth"
+	[tag]"name RU"		[value]"Правда Хайрри"
+
+	[tag]"icon path"	[value]"Jade_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Lapis Amulet"
+	[tag]"name EN"		[value]"Stone of Lazhwar"
+	[tag]"name RU"		[value]"Камень Лазвара"
+
+	[tag]"icon path"	[value]"Lapis_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Lapis Amulet"
+	[tag]"name EN"		[value]"Doedre's Tongue"
+	[tag]"name RU"		[value]"Язык Доэдре"
+
+	[tag]"icon path"	[value]"Lapis_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Lapis Amulet"
+	[tag]"name EN"		[value]"Tear of Purity"
+	[tag]"name RU"		[value]"Слеза чистоты"
+
+	[tag]"icon path"	[value]"Lapis_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Lapis Amulet"
+	[tag]"name EN"		[value]"Marylene's Fallacy"
+	[tag]"name RU"		[value]"Заблуждение Марлены"
+
+	[tag]"icon path"	[value]"Lapis_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Lapis Amulet"
+	[tag]"name EN"		[value]"The Ephemeral Bond"
+	[tag]"name RU"		[value]"Эфемерная связь"
+
+	[tag]"icon path"	[value]"Lapis_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Lapis Amulet"
+	[tag]"name EN"		[value]"Voice of the Storm"
+	[tag]"name RU"		[value]"Глас бури"
+
+	[tag]"icon path"	[value]"Lapis_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Lapis Amulet"
+	[tag]"name EN"		[value]"Choir of the Storm"
+	[tag]"name RU"		[value]"Хор бури"
+
+	[tag]"icon path"	[value]"Lapis_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gold Amulet"
+	[tag]"name EN"		[value]"The Ascetic"
+	[tag]"name RU"		[value]"Аскет"
+
+	[tag]"icon path"	[value]"Gold_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gold Amulet"
+	[tag]"name EN"		[value]"Perquil's Toe"
+	[tag]"name RU"		[value]"Палец Перквила"
+
+	[tag]"icon path"	[value]"Gold_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gold Amulet"
+	[tag]"name EN"		[value]"Bisco's Collar"
+	[tag]"name RU"		[value]"Ошейник Биско"
+
+	[tag]"icon path"	[value]"Gold_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gold Amulet"
+	[tag]"name EN"		[value]"Winterheart"
+	[tag]"name RU"		[value]"Сердце зимы"
+
+	[tag]"icon path"	[value]"Gold_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gold Amulet"
+	[tag]"name EN"		[value]"The Ignomon"
+	[tag]"name RU"		[value]"Гномон"
+
+	[tag]"icon path"	[value]"Gold_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Amber Amulet"
+	[tag]"name EN"		[value]"Xoph's Heart"
+	[tag]"name RU"		[value]"Сердце Ксофа"
+
+	[tag]"icon path"	[value]"Amber_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Breach loot"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Amber Amulet"
+	[tag]"name EN"		[value]"Bloodsoaked Medallion"
+	[tag]"name RU"		[value]"Окровавленный медальон"
+
+	[tag]"icon path"	[value]"Amber_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Amber Amulet"
+	[tag]"name EN"		[value]"The Anvil"
+	[tag]"name RU"		[value]"Наковальня"
+
+	[tag]"icon path"	[value]"Amber_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Amber Amulet"
+	[tag]"name EN"		[value]"Xoph's Blood"
+	[tag]"name RU"		[value]"Кровь Ксофа"
+
+	[tag]"icon path"	[value]"Amber_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Cannot drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Black Maw Talisman"
+	[tag]"name EN"		[value]"Night's Hold"
+	[tag]"name RU"		[value]"Логово ночи"
+
+	[tag]"icon path"	[value]"Talisman"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Clutching Talisman"
+	[tag]"name EN"		[value]"Blightwell"
+	[tag]"name RU"		[value]"Отравленный колодец"
+
+	[tag]"icon path"	[value]"Talisman"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wereclaw Talisman"
+	[tag]"name EN"		[value]"Rigwald's Curse"
+	[tag]"name RU"		[value]"Проклятие Ригвальда"
+
+	[tag]"icon path"	[value]"Talisman"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Rotfeather Talisman"
+	[tag]"name EN"		[value]"Natural Hierarchy"
+	[tag]"name RU"		[value]"Естественная иерархия"
+
+	[tag]"icon path"	[value]"Talisman"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Greatwolf Talisman"
+	[tag]"name EN"		[value]"Eyes of the Greatwolf"
+	[tag]"name RU"		[value]"Глаза Великого волка"
+
+	[tag]"icon path"	[value]"Talisman"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Gambling"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Turquoise Amulet"
+	[tag]"name EN"		[value]"Victario's Acuity"
+	[tag]"name RU"		[value]"Проницательность Виктарио"
+
+	[tag]"icon path"	[value]"Turquoise_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+		
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Turquoise Amulet"
+	[tag]"name EN"		[value]"Maligaro's Cruelty"
+	[tag]"name RU"		[value]"Жестокость Малигаро"
+
+	[tag]"icon path"	[value]"Turquoise_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Turquoise Amulet"
+	[tag]"name EN"		[value]"Ungil's Harmony"
+	[tag]"name RU"		[value]"Гармония Ангила"
+
+	[tag]"icon path"	[value]"Turquoise_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Turquoise Amulet"
+	[tag]"name EN"		[value]"Fury Valve"
+	[tag]"name RU"		[value]"Вентиль гнева"
+
+	[tag]"icon path"	[value]"Turquoise_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Turquoise Amulet"
+	[tag]"name EN"		[value]"Warped Timepiece"
+	[tag]"name RU"		[value]"Искажённые часы"
+
+	[tag]"icon path"	[value]"Turquoise_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Turquoise Amulet"
+	[tag]"name EN"		[value]"Badge of the Brotherhood"
+	[tag]"name RU"		[value]"Знак Братства"
+
+	[tag]"icon path"	[value]"Turquoise_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Agate Amulet"
+	[tag]"name EN"		[value]"Shaper's Seed"
+	[tag]"name RU"		[value]"Семя Создателя"
+
+	[tag]"icon path"	[value]"Agate_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Agate Amulet"
+	[tag]"name EN"		[value]"Extractor Mentis"
+	[tag]"name RU"		[value]"Умоизвлекатель"
+
+	[tag]"icon path"	[value]"Agate_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Agate Amulet"
+	[tag]"name EN"		[value]"Voll's Devotion"
+	[tag]"name RU"		[value]"Благочестие Волла"
+
+	[tag]"icon path"	[value]"Agate_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Agate Amulet"
+	[tag]"name EN"		[value]"The Aylardex"
+	[tag]"name RU"		[value]"Айлардекс"
+
+	[tag]"icon path"	[value]"Agate_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Citrine Amulet"
+	[tag]"name EN"		[value]"Retaliation Charm"
+	[tag]"name RU"		[value]"Амулет расплаты"
+
+	[tag]"icon path"	[value]"Citrine_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Citrine Amulet"
+	[tag]"name EN"		[value]"Daresso's Salute"
+	[tag]"name RU"		[value]"Салют Дарессо"
+
+	[tag]"icon path"	[value]"Citrine_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Citrine Amulet"
+	[tag]"name EN"		[value]"The Jinxed Juju"
+	[tag]"name RU"		[value]"Дурной джу-джу"
+
+	[tag]"icon path"	[value]"Citrine_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Citrine Amulet"
+	[tag]"name EN"		[value]"The Felbog Fang"
+	[tag]"name RU"		[value]"Клык Фелбога"
+
+	[tag]"icon path"	[value]"Citrine_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Citrine Amulet"
+	[tag]"name EN"		[value]"Eye of Innocence"
+	[tag]"name RU"		[value]"Око Невинности"
+
+	[tag]"icon path"	[value]"Citrine_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Eye of Chayula"
+	[tag]"name RU"		[value]"Глаз Чаюлы"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Carnage Heart"
+	[tag]"name RU"		[value]"Сердце бойни"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Astramentis"
+	[tag]"name RU"		[value]"Астраментис"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Hinekora's Sight"
+	[tag]"name RU"		[value]"Взгляд Хинекоры"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Stranglegasp"
+	[tag]"name RU"		[value]"Подавленный вздох"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Very expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Aul's Uprising"
+	[tag]"name RU"		[value]"Бунт Ола"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Presence of Chayula"
+	[tag]"name RU"		[value]"Присутствие Чаюлы"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Very Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Ashes of the Stars"
+	[tag]"name RU"		[value]"Пепел звёзд"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Very Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"The Eternal Struggle"
+	[tag]"name RU"		[value]"Вечная борьба"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Very Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Crystallised Omniscience"
+	[tag]"name RU"		[value]"Кристаллизованное всезнание"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Very Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Solstice Vigil"
+	[tag]"name RU"		[value]"Канун солнцестояния"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Very Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Impresence"
+	[tag]"name RU"		[value]"Отсутствие"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Very Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Leadership's Price"
+	[tag]"name RU"		[value]"Цена лидерства"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Very Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Onyx Amulet"
+	[tag]"name EN"		[value]"Yoke of Suffering"
+	[tag]"name RU"		[value]"Бремя страданий"
+
+	[tag]"icon path"	[value]"Onyx_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Amulet"
+	[tag]"name EN"		[value]"Uul-Netol's Vow"
+	[tag]"name RU"		[value]"Клятва Уул-Нетол"
+
+	[tag]"icon path"	[value]"UnsetAmulet"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Marble Amulet"
+	[tag]"name EN"		[value]"Bloodgrip"
+	[tag]"name RU"		[value]"Власть крови"
+
+	[tag]"icon path"	[value]"Marble_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Blue Pearl Amulet"
+	[tag]"name EN"		[value]"Gloomfang"
+	[tag]"name RU"		[value]"Клык мрака"
+
+	[tag]"icon path"	[value]"Blue_Pearl_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Leather Belt"
+	[tag]"name EN"		[value]"Umbilicus Immortalis"
+	[tag]"name RU"		[value]"Умбиликус Имморталис"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Leather Belt"
+	[tag]"name EN"		[value]"Wurm's Molt"
+	[tag]"name RU"		[value]"Кожа Змия"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Leather Belt"
+	[tag]"name EN"		[value]"Pyroshock Clasp"
+	[tag]"name RU"		[value]"Пряжка огненного шока"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Leather Belt"
+	[tag]"name EN"		[value]"Leash of Oblation"
+	[tag]"name RU"		[value]"Поводок жертвоприношения"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Leather Belt"
+	[tag]"name EN"		[value]"Headhunter"
+	[tag]"name RU"		[value]"Охотник за головами"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Very expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Leather Belt"
+	[tag]"name EN"		[value]"Gluttony"
+	[tag]"name RU"		[value]"Ненасытность"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Leather Belt"
+	[tag]"name EN"		[value]"Immortal Flesh"
+	[tag]"name RU"		[value]"Бессмертная плоть"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Leather Belt"
+	[tag]"name EN"		[value]"Hyperboreus"
+	[tag]"name RU"		[value]"Гиперборея"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Leather Belt"
+	[tag]"name EN"		[value]"Cyclopean Coil"
+	[tag]"name RU"		[value]"Обод гиганта"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss loot"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Leather Belt"
+	[tag]"name EN"		[value]"Bear's Girdle"
+	[tag]"name RU"		[value]"Медвежий кушак"
+
+	[tag]"icon path"	[value]"Leather_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"Sunblast"
+	[tag]"name RU"		[value]"Солнечный удар"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"Perandus Blazon"
+	[tag]"name RU"		[value]"Герб рода Перандус"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"Ceinture of Benevolence"
+	[tag]"name RU"		[value]"Пояс благодати"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"Soulthirst"
+	[tag]"name RU"		[value]"Жажда душ"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"The Druggery"
+	[tag]"name RU"		[value]"Аптекарский пояс"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"Soul Tether"
+	[tag]"name RU"		[value]"Оковы души"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"The Torrent's Reclamation"
+	[tag]"name RU"		[value]"Осушение потока"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Rare"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"The Flow Untethered"
+	[tag]"name RU"		[value]"Безграничный поток"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"Olesya's Delight"
+	[tag]"name RU"		[value]"Восторг Олесии"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss loot"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"Graven's Secret"
+	[tag]"name RU"		[value]"Секрет Грейвена"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss loot"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"Arn's Anguish"
+	[tag]"name RU"		[value]"Муки Арна"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss loot"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Heavy Belt"
+	[tag]"name EN"		[value]"Meginord's Girdle"
+	[tag]"name RU"		[value]"Ремень Мегинорда"
+
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Heavy Belt"
+	[tag]"name EN"		[value]"Belt of the Deceiver"
+	[tag]"name RU"		[value]"Пояс обманщика"
+
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Heavy Belt"
+	[tag]"name EN"		[value]"Siegebreaker"
+	[tag]"name RU"		[value]"Конец осаде"
+
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Heavy Belt"
+	[tag]"name EN"		[value]"Survivor's Guilt"
+	[tag]"name RU"		[value]"Вина выжившего"
+
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Heavy Belt"
+	[tag]"name EN"		[value]"Mother's Embrace"
+	[tag]"name RU"		[value]"Материнские объятия"
+
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Heavy Belt"
+	[tag]"name EN"		[value]"Mageblood"
+	[tag]"name RU"		[value]"Волшебная кровь"
+
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Very expensive"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Heavy Belt"
+	[tag]"name EN"		[value]"Dyadian Dawn"
+	[tag]"name RU"		[value]"Дядианская заря"
+
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Heavy Belt"
+	[tag]"name EN"		[value]"Doryani's Invitation"
+	[tag]"name RU"		[value]"Приглашение Дориани"
+
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Rustic Sash"
+	[tag]"name EN"		[value]"Feastbind"
+	[tag]"name RU"		[value]"Путы пира"
+
+	[tag]"icon path"	[value]"Rustic_Sash_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Rustic Sash"
+	[tag]"name EN"		[value]"Faminebind"
+	[tag]"name RU"		[value]"Путы голода"
+
+	[tag]"icon path"	[value]"Rustic_Sash_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Rustic Sash"
+	[tag]"name EN"		[value]"Prismweave"
+	[tag]"name RU"		[value]"Сплетение цвета"
+
+	[tag]"icon path"	[value]"Rustic_Sash_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Rustic Sash"
+	[tag]"name EN"		[value]"The Retch"
+	[tag]"name RU"		[value]"Отрыжка"
+
+	[tag]"icon path"	[value]"Rustic_Sash_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Chain Belt"
+	[tag]"name EN"		[value]"Chain of Endurance"
+	[tag]"name RU"		[value]"Цепь выносливости"
+
+	[tag]"icon path"	[value]"Chain_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Chain Belt"
+	[tag]"name EN"		[value]"Bated Breath"
+	[tag]"name RU"		[value]"Затаённое дыхание"
+
+	[tag]"icon path"	[value]"Chain_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Chain Belt"
+	[tag]"name EN"		[value]"Maligaro's Restraint"
+	[tag]"name RU"		[value]"Сдержанность Малигаро"
+
+	[tag]"icon path"	[value]"Chain_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Chain Belt"
+	[tag]"name EN"		[value]"Ascent From Flesh"
+	[tag]"name RU"		[value]"Вознесение над плотью"
+
+	[tag]"icon path"	[value]"Chain_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Chain Belt"
+	[tag]"name EN"		[value]"Coward's Chains"
+	[tag]"name RU"		[value]"Оковы труса"
+
+	[tag]"icon path"	[value]"Chain_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Chain Belt"
+	[tag]"name EN"		[value]"Coward's Legacy"
+	[tag]"name RU"		[value]"Наследие труса"
+
+	[tag]"icon path"	[value]"Chain_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Chain Belt"
+	[tag]"name EN"		[value]"Chains of Emancipation"
+	[tag]"name RU"		[value]"Цепи освобождения"
+
+	[tag]"icon path"	[value]"Chain_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Studded Belt"
+	[tag]"name EN"		[value]"The Magnate"
+	[tag]"name RU"		[value]"Великан"
+
+	[tag]"icon path"	[value]"Studded_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Studded Belt"
+	[tag]"name EN"		[value]"Ryslatha's Coil"
+	[tag]"name RU"		[value]"Моток Рюслаты"
+
+	[tag]"icon path"	[value]"Studded_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Stygian Vise"
+	[tag]"name EN"		[value]"Darkness Enthroned"
+	[tag]"name RU"		[value]"Воцарившаяся тьма"
+
+	[tag]"icon path"	[value]"Stygian_Vise_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vanguard Belt"
+	[tag]"name EN"		[value]"Perseverance"
+	[tag]"name RU"		[value]"Упорство"
+
+	[tag]"icon path"	[value]"Vanguard_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crystal Belt"
+	[tag]"name EN"		[value]"The Burden of Truth"
+	[tag]"name RU"		[value]"Бремя правды"
+
+	[tag]"icon path"	[value]"Crystal_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss loot"	
+	
+	[tag]"worth"		[value]"Moderate"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crystal Belt"
+	[tag]"name EN"		[value]"Auxium"
+	[tag]"name RU"		[value]"Ауксиум"
+
+	[tag]"icon path"	[value]"Crystal_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gold Ring"
+	[tag]"name EN"		[value]"Ventor's Gamble"
+	[tag]"name RU"		[value]"Игра Вентора"
+
+	[tag]"icon path"	[value]"Gold_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gold Ring"
+	[tag]"name EN"		[value]"The Highwayman"
+	[tag]"name RU"		[value]"Бандит с большой дороги"
+
+	[tag]"icon path"	[value]"Gold_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gold Ring"
+	[tag]"name EN"		[value]"Andvarius"
+	[tag]"name RU"		[value]"Андвариус"
+
+	[tag]"icon path"	[value]"Gold_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sapphire Ring"
+	[tag]"name EN"		[value]"Circle of Fear"
+	[tag]"name RU"		[value]"Обод страха"
+
+	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sapphire Ring"
+	[tag]"name EN"		[value]"Tasalio's Sign"
+	[tag]"name RU"		[value]"Знак Тасалио"
+
+	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"	
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sapphire Ring"
+	[tag]"name EN"		[value]"Pyre"
+	[tag]"name RU"		[value]"Погребальный костёр"
+
+	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"	
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sapphire Ring"
+	[tag]"name EN"		[value]"Snakepit"
+	[tag]"name RU"		[value]"Серпентарий"
+
+	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sapphire Ring"
+	[tag]"name EN"		[value]"Dream Fragments"
+	[tag]"name RU"		[value]"Осколки снов"
+
+	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sapphire Ring"
+	[tag]"name EN"		[value]"Call of the Void"
+	[tag]"name RU"		[value]"Зов пустоты"
+
+	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Uber Elder drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sapphire Ring"
+	[tag]"name EN"		[value]"Uzaza's Meadow"
+	[tag]"name RU"		[value]"Луг Узазы"
+
+	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Delve architect drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sapphire Ring"
+	[tag]"name EN"		[value]"Uzaza's Mountain"
+	[tag]"name RU"		[value]"Гора Узазы"
+
+	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Delve lich drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sapphire Ring"
+	[tag]"name EN"		[value]"Uzaza's Valley"
+	[tag]"name RU"		[value]"Долина Узазы"
+
+	[tag]"icon path"	[value]"Sapphire_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Delve aul drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Amethyst Ring"
+	[tag]"name EN"		[value]"Circle of Nostalgia"
+	[tag]"name RU"		[value]"Обод тоски"
+
+	[tag]"icon path"	[value]"Amethyst_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Amethyst Ring"
+	[tag]"name EN"		[value]"Ming's Heart"
+	[tag]"name RU"		[value]"Сердце Мина"
+
+	[tag]"icon path"	[value]"Amethyst_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Amethyst Ring"
+	[tag]"name EN"		[value]"Death Rush"
+	[tag]"name RU"		[value]"Смертельная спешка"
+
+	[tag]"icon path"	[value]"Amethyst_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Amethyst Ring"
+	[tag]"name EN"		[value]"Blackflame"
+	[tag]"name RU"		[value]"Чёрное пламя"
+
+	[tag]"icon path"	[value]"Amethyst_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ruby Ring"
+	[tag]"name EN"		[value]"Circle of Anguish"
+	[tag]"name RU"		[value]"Обод страдания"
+
+	[tag]"icon path"	[value]"Ruby_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ruby Ring"
+	[tag]"name EN"		[value]"Ngamahu's Sign"
+	[tag]"name RU"		[value]"Знак Нгамаху"
+
+	[tag]"icon path"	[value]"Ruby_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ruby Ring"
+	[tag]"name EN"		[value]"Mokou's Embrace"
+	[tag]"name RU"		[value]"Объятия Мокоу"
+
+	[tag]"icon path"	[value]"Ruby_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ruby Ring"
+	[tag]"name EN"		[value]"Emberwake"
+	[tag]"name RU"		[value]"Огненный след"
+
+	[tag]"icon path"	[value]"Ruby_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ruby Ring"
+	[tag]"name EN"		[value]"Ahkeli's Mountain"
+	[tag]"name RU"		[value]"Гора Ахкели"
+
+	[tag]"icon path"	[value]"Ruby_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Delve architect drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ruby Ring"
+	[tag]"name EN"		[value]"Ahkeli's Valley"
+	[tag]"name RU"		[value]"Долина Ахкели"
+
+	[tag]"icon path"	[value]"Ruby_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Delve lich drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ruby Ring"
+	[tag]"name EN"		[value]"Ahkeli's Meadow"
+	[tag]"name RU"		[value]"Луг Ахкели"
+
+	[tag]"icon path"	[value]"Ruby_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Delve aul drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ruby Ring"
+	[tag]"name EN"		[value]"Warrior's Legacy"
+	[tag]"name RU"		[value]"Наследие воина"
+
+	[tag]"icon path"	[value]"Ruby_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Iron Ring"
+	[tag]"name EN"		[value]"Blackheart"
+	[tag]"name RU"		[value]"Чёрное сердце"
+
+	[tag]"icon path"	[value]"Iron_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Iron Ring"
+	[tag]"name EN"		[value]"Le Heup of All"
+	[tag]"name RU"		[value]"Ле Хоп Всеобщий"
+
+	[tag]"icon path"	[value]"Iron_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Iron Ring"
+	[tag]"name EN"		[value]"Icefang Orbit"
+	[tag]"name RU"		[value]"Перстень ледяного клыка"
+
+	[tag]"icon path"	[value]"Iron_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Iron Ring"
+	[tag]"name EN"		[value]"Venopuncture"
+	[tag]"name RU"		[value]"Ядовитый надрез"
+
+	[tag]"icon path"	[value]"Iron_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Iron Ring"
+	[tag]"name EN"		[value]"The Warden's Brand"
+	[tag]"name RU"		[value]"Клеймо смотрителя"
+
+	[tag]"icon path"	[value]"Iron_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Topaz Ring"
+	[tag]"name EN"		[value]"Circle of Regret"
+	[tag]"name RU"		[value]"Обод сожаления"
+
+	[tag]"icon path"	[value]"Topaz_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Topaz Ring"
+	[tag]"name EN"		[value]"Storm Secret"
+	[tag]"name RU"		[value]"Разгадка бури"
+
+	[tag]"icon path"	[value]"Topaz_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Topaz Ring"
+	[tag]"name EN"		[value]"Kikazaru"
+	[tag]"name RU"		[value]"Киказару"
+
+	[tag]"icon path"	[value]"Topaz_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Topaz Ring"
+	[tag]"name EN"		[value]"Valako's Sign"
+	[tag]"name RU"		[value]"Знак Валако"
+
+	[tag]"icon path"	[value]"Topaz_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Topaz Ring"
+	[tag]"name EN"		[value]"Nimis"
+	[tag]"name RU"		[value]"Нимис"
+
+	[tag]"icon path"	[value]"Topaz_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Uber eater drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Topaz Ring"
+	[tag]"name EN"		[value]"Astral Projector"
+	[tag]"name RU"		[value]"Астральный фонарь"
+
+	[tag]"icon path"	[value]"Topaz_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Topaz Ring"
+	[tag]"name EN"		[value]"Putembo's Valley"
+	[tag]"name RU"		[value]"Долина Путембо"
+
+	[tag]"icon path"	[value]"Topaz_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Delve architect drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Topaz Ring"
+	[tag]"name EN"		[value]"Putembo's Mountain"
+	[tag]"name RU"		[value]"Гора Путембо"
+
+	[tag]"icon path"	[value]"Topaz_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Delve aul drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Topaz Ring"
+	[tag]"name EN"		[value]"Putembo's Meadow"
+	[tag]"name RU"		[value]"Луг Путембо"
+
+	[tag]"icon path"	[value]"Topaz_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Delve lich drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Mark of Submission"
+	[tag]"name RU"		[value]"Метка покорности"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Essence Worm"
+	[tag]"name RU"		[value]"Личинка сущности"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Voideye"
+	[tag]"name RU"		[value]"Глаз пустоты"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Malachai's Artifice"
+	[tag]"name RU"		[value]"Уловка Малахая"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Profane Proxy"
+	[tag]"name RU"		[value]"Осквернённое доверие"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"The Hungry Loop"
+	[tag]"name RU"		[value]"Голодная петля"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"The Hungry Loop"
+	[tag]"name RU"		[value]"Голодная петля"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Triumvirate Authority"
+	[tag]"name RU"		[value]"Власть Триумвирата"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Atziri drop"
+	[tag]"item tag"		[value]"Uber Atziri drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Vivinsect"
+	[tag]"name RU"		[value]"Вивинсекция"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Syndicate drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Brinerot Mark"
+	[tag]"name RU"		[value]"Знак Морской гнили"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Brinerot Mark"
+	[tag]"name RU"		[value]"Знак Морской гнили"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Map boss drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Redblade Band"
+	[tag]"name RU"		[value]"Перстень Красных сабель"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Map boss drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Rotblood Promise"
+	[tag]"name RU"		[value]"Обет гнилой крови"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Map boss drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"The Pariah"
+	[tag]"name RU"		[value]"Пария"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Unset Ring"
+	[tag]"name EN"		[value]"Mutewind Seal"
+	[tag]"name RU"		[value]"Печать Немого ветра"
+
+	[tag]"icon path"	[value]"Unset_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Two-Stone Ring"
+	[tag]"name EN"		[value]"Berek's Grip"
+	[tag]"name RU"		[value]"Уловка Берека"
+
+	[tag]"icon path"	[value]"Two-Stone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Two-Stone Ring"
+	[tag]"name EN"		[value]"Berek's Pass"
+	[tag]"name RU"		[value]"Прыть Берека"
+
+	[tag]"icon path"	[value]"Two-Stone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Two-Stone Ring"
+	[tag]"name EN"		[value]"Berek's Respite"
+	[tag]"name RU"		[value]"Прыть Берека"
+
+	[tag]"icon path"	[value]"Two-Stone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Two-Stone Ring"
+	[tag]"name EN"		[value]"Call of the Brotherhood"
+	[tag]"name RU"		[value]"Зов братьев"
+
+	[tag]"icon path"	[value]"Two-Stone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Two-Stone Ring"
+	[tag]"name EN"		[value]"Rigwald's Crest"
+	[tag]"name RU"		[value]"Герб Ригвальда"
+
+	[tag]"icon path"	[value]"Two-Stone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Moonstone Ring"
+	[tag]"name EN"		[value]"Valyrium"
+	[tag]"name RU"		[value]"Валириум"
+
+	[tag]"icon path"	[value]"Moonstone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Moonstone Ring"
+	[tag]"name EN"		[value]"Timeclasp"
+	[tag]"name RU"		[value]"Объятие времени"
+
+	[tag]"icon path"	[value]"Moonstone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Moonstone Ring"
+	[tag]"name EN"		[value]"Heartbound Loop"
+	[tag]"name RU"		[value]"Сердечная связь"
+
+	[tag]"icon path"	[value]"Moonstone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Moonstone Ring"
+	[tag]"name EN"		[value]"Shavronne's Revelation"
+	[tag]"name RU"		[value]"Откровение Шавронн"
+
+	[tag]"icon path"	[value]"Moonstone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Moonstone Ring"
+	[tag]"name EN"		[value]"Anathema"
+	[tag]"name RU"		[value]"Анафема"
+
+	[tag]"icon path"	[value]"Moonstone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Rare"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Paua Ring"
+	[tag]"name EN"		[value]"Praxis"
+	[tag]"name RU"		[value]"Праксис"
+
+	[tag]"icon path"	[value]"Paua_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Paua Ring"
+	[tag]"name EN"		[value]"Doedre's Damning"
+	[tag]"name RU"		[value]"Проклятие Доэдре"
+
+	[tag]"icon path"	[value]"Paua_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Paua Ring"
+	[tag]"name EN"		[value]"Soulbound"
+	[tag]"name RU"		[value]"Единодушие"
+
+	[tag]"icon path"	[value]"Paua_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Paua Ring"
+	[tag]"name EN"		[value]"Perandus Signet"
+	[tag]"name RU"		[value]"Печатка Перандусов"
+
+	[tag]"icon path"	[value]"Paua_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Paua Ring"
+	[tag]"name EN"		[value]"Fated End"
+	[tag]"name RU"		[value]"Неизбежный конец"
+
+	[tag]"icon path"	[value]"Paua_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Prismatic Ring"
+	[tag]"name EN"		[value]"Thief's Torment"
+	[tag]"name RU"		[value]"Воровская мука"
+
+	[tag]"icon path"	[value]"Prismatic_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Prismatic Ring"
+	[tag]"name EN"		[value]"Lori's Lantern"
+	[tag]"name RU"		[value]"Светильник Лори"
+
+	[tag]"icon path"	[value]"Prismatic_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Opal Ring"
+	[tag]"name EN"		[value]"Stormfire"
+	[tag]"name RU"		[value]"Пламя бури"
+
+	[tag]"icon path"	[value]"Opal_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Opal Ring"
+	[tag]"name EN"		[value]"Mark of the Shaper"
+	[tag]"name RU"		[value]"Метка Создателя"
+
+	[tag]"icon path"	[value]"Opal_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Opal Ring"
+	[tag]"name EN"		[value]"Polaric Devastation"
+	[tag]"name RU"		[value]"Полюс опустошения"
+
+	[tag]"icon path"	[value]"Opal_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Small exarch drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Rare"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Coral Ring"
+	[tag]"name EN"		[value]"Sibyl's Lament"
+	[tag]"name RU"		[value]"Стенания Сибелы"
+
+	[tag]"icon path"	[value]"Coral_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Coral Ring"
+	[tag]"name EN"		[value]"Kaom's Sign"
+	[tag]"name RU"		[value]"Знак Каома"
+
+	[tag]"icon path"	[value]"Coral_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Coral Ring"
+	[tag]"name EN"		[value]"Winterweave"
+	[tag]"name RU"		[value]"Зимний узор"
+
+	[tag]"icon path"	[value]"Coral_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Diamond Ring"
+	[tag]"name EN"		[value]"Gifts from Above"
+	[tag]"name RU"		[value]"Дары небес"
+
+	[tag]"icon path"	[value]"Diamond_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Diamond Ring"
+	[tag]"name EN"		[value]"Romira's Banquet"
+	[tag]"name RU"		[value]"Пир Ромиры"
+
+	[tag]"icon path"	[value]"Diamond_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Steel Ring"
+	[tag]"name EN"		[value]"Mark of the Elder"
+	[tag]"name RU"		[value]"Метка Древнего"
+
+	[tag]"icon path"	[value]"Steel_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ring"
+	[tag]"name EN"		[value]"Kalandra's Touch"
+	[tag]"name RU"		[value]"Касание Каландры"
+
+	[tag]"icon path"	[value]"Two_stone"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Very expensive"

@@ -660,6 +660,7 @@ namespace EDataActionCollection
 	void action_highlight_stored_block(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_add_items_from_this_loot_pattern(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_switch_pattern_folder_state(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_create_or_delete_description_on_hover(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_and_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_change_localisation(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -890,15 +891,19 @@ public:
 	static int selected_filter_tab_id;
 	static void write_loot_filter_to_disc(std::string _full_path, std::string* _data);
 
+	static void register_patterm_folder(std::string _localisation_key, std::string _icon_path);
 	static void register_loot_simulator_patterns();
 
 	static void register_pattern_gems();
 
 	static void register_pattern_boss_loot();
-	static void register_pattern_divinations_expensive();
-	static void register_pattern_divinations_useful();
-	static void register_pattern_divinations_cheap();
-	static void register_pattern_divinations_trash();
+
+	//!
+	static void register_pattern_folder_divinations();
+		static void register_pattern_divinations_expensive();
+		static void register_pattern_divinations_useful();
+		static void register_pattern_divinations_cheap();
+		static void register_pattern_divinations_trash();
 
 	static void register_pattern_flasks();
 
@@ -933,10 +938,15 @@ public:
 	static void register_pattern_incubators();
 	static void register_pattern_currencies_shard();
 	static void register_pattern_tainted_currencies();
+	
+	//BASIC CURRENCY FOLDER
+	////////////////////////////////////////////////////////////////////////
+	static void register_new_folder_basic_currency();
 	static void register_pattern_rare_currencies();
 	static void register_pattern_good_currencies();
 	static void register_pattern_cheap_currencies();
 	static void register_pattern_trash_currencies();
+	////////////////////////////////////////////////////////////////////////
 
 	static void register_pattern_basic_currencies();
 
@@ -944,8 +954,10 @@ public:
 
 	static void register_all_deleted_items();
 
+	//CRUCIBLE FOLDER
 	////////////////////////////////////////////////////////////////////////
-	static void register_new_crucible_items();
+	static void register_new_folder_crucible_items();
+
 
 	static void register_crubible_deleted_items();
 	static void register_crubible_changed_items();
@@ -956,6 +968,9 @@ public:
 	static void register_crubible_currency();
 	static void register_crubible_divinations();
 	////////////////////////////////////////////////////////////////////////
+
+
+
 	static void set_color_version(HSVRGBAColor* _target_color, int _selected_mode);
 	static void make_unsaved_loot_filter_changes();
 	static void remove_unsave_changes_flag_from_tab();
@@ -1078,11 +1093,39 @@ public:
 
 };
 
+enum LootPatternFolderEnum
+{
+	NEW_LEAGUE,
+	BASIC_CURRENCY,
+	SPECIAL_CURRENCY,
+	ITEM_BASES,
+	HEIST_ITEMS,
+	DELVE_ITEM,
+	BREACH_ITEM,
+	MAPS_ITEM,
+	FLASKS,
+	DIVINATIONS,
+	BOSS_LOOT,
+	SKILL_GEMS,
+	SPECIAL_ITEMS
+};
+
 class LootSimulatorPattern;
 class EntityButtonLootPatternSelector : public EntityButton
 {
 public:
-	LootSimulatorPattern* target_pattern;
+	LootSimulatorPattern*				target_pattern;
+
+	bool								is_folder;
+	bool								hidden_by_folder;
+	bool								folder_is_expanded = false;
+
+	LootPatternFolderEnum				folder_enum;
+	EntityButtonLootPatternSelector*	parent_folder_button;
+	
+	EButtonGroup*						target_loot_pattern_button_group;
+
+	bool entity_is_active() override;
 };
 
 
@@ -1287,7 +1330,8 @@ class LootSimulatorPattern
 {
 public:
 	ELocalisationText							localised_name;
-	ETextureGabarite* icon;
+	ETextureGabarite*							icon;
+	LootPatternFolderEnum						folder_enum;
 
 	LootSimulatorPattern();
 
@@ -1299,6 +1343,7 @@ public:
 	bool										additional_force_field_for_buttons = false;
 	//static void								refresh_loot_simulator();
 	bool										always_show = false;
+	bool										is_folder = false;
 
 
 };
