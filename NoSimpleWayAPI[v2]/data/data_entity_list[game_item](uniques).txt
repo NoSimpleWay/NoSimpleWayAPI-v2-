@@ -227,7 +227,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -1357,7 +1356,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
-	[tag]"worth"		[value]"Trash"
+	[tag]"worth"		[value]"Very expensive"
 	
 	
 	
@@ -1578,7 +1577,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -1683,7 +1681,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -2171,7 +2168,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -2191,7 +2187,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -2307,7 +2302,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -2594,7 +2588,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Uber Elder drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -2616,7 +2609,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve architect drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -2638,7 +2630,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve lich drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -2660,7 +2651,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve aul drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -3184,7 +3174,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve architect drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -3206,7 +3195,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve aul drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -3228,7 +3216,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve lich drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Rare"
 	

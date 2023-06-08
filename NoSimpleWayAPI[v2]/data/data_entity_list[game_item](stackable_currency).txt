@@ -647,6 +647,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Guardian orb"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Expensive"
@@ -669,6 +670,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Guardian orb"
 	[tag]"worth"		[value]"Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
@@ -690,6 +692,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Guardian orb"
 	[tag]"worth"		[value]"Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
@@ -713,6 +716,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Guardian orb"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"

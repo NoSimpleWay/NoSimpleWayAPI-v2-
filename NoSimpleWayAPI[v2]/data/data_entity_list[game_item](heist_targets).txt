@@ -12,9 +12,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой идол Хецапаль"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Priceless"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -30,9 +30,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой идол раба"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Priceless"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -48,9 +48,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Меч вывернутой реликвии"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Priceless"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -66,9 +66,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Посох первого поедателя греха"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Precious"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -84,9 +84,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пятое приключение Орбалы"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Precious"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -102,9 +102,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Решительность Дехары"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Precious"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -120,9 +120,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кровь Невинности"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Precious"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -138,9 +138,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Древняя печать"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Precious"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -156,9 +156,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Курильница Сущности"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Precious"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -174,9 +174,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой идол Напуаци"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -192,9 +192,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Печать Солярис"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -210,9 +210,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Фамильный морской жемчуг"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -228,9 +228,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой идол Мататля"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -246,9 +246,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Печать Лунарис"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -264,9 +264,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Живой лёд"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -281,9 +281,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Невозможный кристалл"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -298,9 +298,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой ибис"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -315,9 +315,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Богиня воды"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -333,9 +333,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Запретная лампа"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -351,9 +351,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Флакон Велаката"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -369,9 +369,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой идол Хецапаль"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -387,9 +387,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бюст императора Каспиро"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -405,9 +405,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Зеркало Теклатипитци"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: High value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -422,9 +422,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Загадочный механизм D1"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -439,9 +439,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Загадочный механизм C5"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -456,9 +456,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Загадочный механизм B2"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -473,9 +473,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Загадочный механизм A4"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -490,9 +490,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сердечная катушка"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -507,9 +507,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Урна первозданного праха"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -525,9 +525,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Небесный камень"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -543,9 +543,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Череп гоминида с бивнями"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -561,9 +561,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Огамский канделябр"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -579,9 +579,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Алхимическая чаша"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -597,9 +597,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Трубка адмирала Проклера"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -615,9 +615,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Аберратовы рога"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -633,9 +633,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Рука Аримора"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -650,9 +650,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Рука Аримора"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -668,9 +668,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Фолиант Аз Мири"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -686,9 +686,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Венец эзомита"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -704,9 +704,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кетская курильница"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -722,9 +722,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шкатулка из Трипикса"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -740,9 +740,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Урна Фаруда"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Moderate value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -758,9 +758,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой глиф для жертвоприношений"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Low value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -776,9 +776,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой гротеск"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Low value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -794,9 +794,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой молящийся идол"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Low value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -812,9 +812,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотая церемониальная маска"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Low value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -830,9 +830,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотой идол с гербом"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Low value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -848,9 +848,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Церемониальный кубок"
 
 	[tag]"icon path"	[value]"HeistTarget"
-	[tag]"base class"	[value]"Heist Target"
+	[tag]"base class"	[value]"Heist Targets"
 	
-	[tag]"item tag"		[value]"Heist target"
+	[tag]"item tag"		[value]"Heist Target: Low value"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"

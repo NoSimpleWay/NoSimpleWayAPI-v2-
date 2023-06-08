@@ -866,6 +866,97 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"loot_pattern_folder_crucible"
-	[tag]"name EN"		[value]"Category: Crucible"
-	[tag]"name RU"		[value]"Категория: Горнило"
+	[tag]"name EN"		[value]"Category:\nCrucible"
+	[tag]"name RU"		[value]"Категория:\nГорнило"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_basic_currency"
+	[tag]"name EN"		[value]"Category:\nBasic currency"
+	[tag]"name RU"		[value]"Категория:\nОбычная валюта"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_unusual_currency"
+	[tag]"name EN"		[value]"Category:\nUnusual currency"
+	[tag]"name RU"		[value]"Категория:\nНеобычная валюта"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_equip"
+	[tag]"name EN"		[value]"Category:\nEquip"
+	[tag]"name RU"		[value]"Категория:\nЭкипировка"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_uniques"
+	[tag]"name EN"		[value]"Category:\nUnique items"
+	[tag]"name RU"		[value]"Категория:\nУникальные предметы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_breach_items"
+	[tag]"name EN"		[value]"Category:\nBreach items"
+	[tag]"name RU"		[value]"Категория:\nПредметы разлома"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_delve_items"
+	[tag]"name EN"		[value]"Category:\nDelve items"
+	[tag]"name RU"		[value]"Категория:\nПредметы шахты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_map_items"
+	[tag]"name EN"		[value]"Category:\nMap items"
+	[tag]"name RU"		[value]"Категория:\nПредметы карты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_specific_items"
+	[tag]"name EN"		[value]"Category:\nSpecific items"
+	[tag]"name RU"		[value]"Категория:\nОсобые предметы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_flask_items"
+	[tag]"name EN"		[value]"Category:\nFlasks"
+	[tag]"name RU"		[value]"Категория:\nФлаконы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_divinations"
+	[tag]"name EN"		[value]"Category:\nDivinations"
+	[tag]"name RU"		[value]"Категория:\nГадальные карты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_boss_loot"
+	[tag]"name EN"		[value]"Category:\nBoss loot"
+	[tag]"name RU"		[value]"Категория:\nЛут с боссов"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_gems"
+	[tag]"name EN"		[value]"Category:\nSkill gems"
+	[tag]"name RU"		[value]"Категория:\nКамни умений"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_heist_items"
+	[tag]"name EN"		[value]"Category:\nHeist items"
+	[tag]"name RU"		[value]"Категория:\nПредметы кражи"
 	

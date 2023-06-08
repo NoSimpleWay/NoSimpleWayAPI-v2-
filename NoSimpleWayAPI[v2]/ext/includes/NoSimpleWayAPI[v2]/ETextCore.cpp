@@ -592,7 +592,7 @@ void ETextArea::generate_text()
 			x_adding += offset_border[BorderSide::LEFT];
 			x_adding += border_offset_left;
 
-			x_adding = round(x_adding);
+			x_adding = (x_adding);
 			//_adding = *region_gabarite->size_y * offset_by_gabarite_size_y + get_row_width(str) * offset_by_text_size_y;
 			//x_adding = 0.0f;
 
@@ -609,10 +609,10 @@ void ETextArea::generate_text()
 					sprite_layer->vertex_buffer,
 					sprite_layer->last_buffer_id,
 
-					round(x_adding + region_gabarite->world_position_x) - 1.0f,
-					round(region_gabarite->world_position_y + y_adding) - 1.0f,
+					(x_adding + region_gabarite->world_position_x) - 1.0f,
+					(region_gabarite->world_position_y + y_adding) - 1.0f,
 
-					round(get_row_width(str) * font_scale) + 2.0f,
+					(get_row_width(str) * font_scale) + 2.0f,
 					(font->base * font_scale) + 2.0f,
 
 					NS_DefaultGabarites::texture_gabarite_white_pixel
@@ -640,8 +640,8 @@ void ETextArea::generate_text()
 					sprite_layer->vertex_buffer,
 					sprite_layer->last_buffer_id,
 
-					round(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol] * font_scale) ,
-					round(region_gabarite->world_position_y) + y_adding - (font->offset_y[target_symbol] + font->size_y_in_pixels[target_symbol] - font->lineheight) * font_scale,
+					(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol] * font_scale) ,
+					(region_gabarite->world_position_y) + y_adding - (font->offset_y[target_symbol] + font->size_y_in_pixels[target_symbol] - font->lineheight) * font_scale,
 
 					(font->size_x_in_pixels[target_symbol] * font_scale),
 					(font->size_y_in_pixels[target_symbol] * font_scale),

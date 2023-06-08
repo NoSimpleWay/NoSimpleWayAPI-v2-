@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -22,7 +9,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -102,7 +89,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Moderate"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -130,7 +117,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -155,6 +142,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -207,9 +196,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Gemcutter's Incubator"
 	[tag]"name RU"		[value]"Инкубатор камнереза"
+	
+	[tag]"base class"	[value]"Incubators"
 
 	[tag]"icon path"	[value]"Incubator"
-	[tag]"base class"	[value]"Incubators"
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -257,7 +248,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -285,7 +276,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Moderate"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -313,7 +304,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -365,6 +356,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -379,6 +372,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Incubator"
 	[tag]"base class"	[value]"Incubators"
+	
+	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -401,6 +396,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+	[tag]"worth"		[value]"Moderate"
+	
 
 	
 
@@ -417,6 +414,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -429,6 +428,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -441,3 +442,5 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"

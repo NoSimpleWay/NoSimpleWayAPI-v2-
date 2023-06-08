@@ -891,82 +891,138 @@ public:
 	static int selected_filter_tab_id;
 	static void write_loot_filter_to_disc(std::string _full_path, std::string* _data);
 
+	static void add_force_field_for_last_pattern_folder();
 	static void register_patterm_folder(std::string _localisation_key, std::string _icon_path);
 	static void register_loot_simulator_patterns();
 
-	static void register_pattern_gems();
+	//GEMS FOLDER
+	static void register_new_folder_gems();
+	////////////////////////////////////////////////////////////////////////
 
-	static void register_pattern_boss_loot();
 
-	//!
+	//BOSS LOOT FOLDER
+	static void register_new_folder_boss_loot();
+	////////////////////////////////////////////////////////////////////////
+	
+	
+	
+	//DIVINATIONS FOLDER
 	static void register_pattern_folder_divinations();
 		static void register_pattern_divinations_expensive();
 		static void register_pattern_divinations_useful();
 		static void register_pattern_divinations_cheap();
 		static void register_pattern_divinations_trash();
+	////////////////////////////////////////////////////////////////////////
 
+
+
+	//FLASKS FOLDER
 	static void register_pattern_flasks();
+	////////////////////////////////////////////////////////////////////////
 
-	static void register_pattern_specific_items();
 
-	static void register_pattern_scouting_report();
-	static void register_pattern_set_fragment();
-	static void register_pattern_reliquary_keys();
-	static void register_pattern_scarabs();
-	static void register_pattern_all_map_fragments();
-	static void register_pattern_map_splinters();
-	static void register_pattern_maps();
+	//SPECIFIC ITEMS FOLDER
+	static void register_new_folder_specific_items();
+	////////////////////////////////////////////////////////////////////////
 
-	static void register_pattern_delve_items();
-	static void register_pattern_breach_items();
 
-	static void register_pattern_uniques();
+
+	//MAPS FOLDER
+	static void register_new_folder_map_items();
+		static void register_pattern_scouting_report();
+		static void register_pattern_set_fragment();
+		static void register_pattern_reliquary_keys();
+		static void register_pattern_scarabs();
+		static void register_pattern_all_map_fragments();
+		static void register_pattern_map_splinters();
+		static void register_pattern_maps();
+	////////////////////////////////////////////////////////////////////////
+
+
+
+	//DELVE FOLDER
+	static void register_new_folder_delve_items();
+	////////////////////////////////////////////////////////////////////////
+
+
+
+	//BREACH FOLDER
+	static void register_new_folder_breach_items();
+	////////////////////////////////////////////////////////////////////////
+
+
+
+	//UNIQUES FOLDER
+	static void register_new_folder_uniques();
+	////////////////////////////////////////////////////////////////////////
+	
+
+
+	//HEIST FOLDER
+	static void register_new_folder_heist_items();
+	////////////////////////////////////////////////////////////////////////
+	
+	
+	
+	//EQUIP FOLDER
+	static void register_new_folder_equip();
 	static void register_pattern_gloves_helmets_boots_body_jewelry();
 	static void register_pattern_runic_base();
-	static void register_pattern_heist_items();
+	////////////////////////////////////////////////////////////////////////
 	
+
+
 	static void register_pattern_all_equip();
 	//static void register_pattern_all_equip();
 	static void register_pattern_top_tier_bases();
+	////////////////////////////////////////////////////////////////////////
 
-	static void register_pattern_harvest_items();
-	static void register_pattern_expedition_currency();
-	static void register_pattern_eldritch_currency();
-	static void register_pattern_delirium_orbs();
-	static void register_pattern_oils_and_catalysts();
-	static void register_pattern_essences();
-	static void register_pattern_incubators();
-	static void register_pattern_currencies_shard();
-	static void register_pattern_tainted_currencies();
+
+
+	//UNUSUAL CURRENCY FOLDER
+	static void register_new_folder_unusual_currency();
+		static void register_pattern_harvest_items();
+		static void register_pattern_expedition_currency();
+		static void register_pattern_eldritch_currency();
+		static void register_pattern_delirium_orbs();
+		static void register_pattern_oils_and_catalysts();
+		static void register_pattern_essences();
+		static void register_pattern_incubators();
+		static void register_pattern_currencies_shard();
+		static void register_pattern_tainted_currencies();
+		static void register_embers_and_ichors();
+		static void register_pattern_guardian_orbs();
+	////////////////////////////////////////////////////////////////////////
 	
+
+
 	//BASIC CURRENCY FOLDER
-	////////////////////////////////////////////////////////////////////////
 	static void register_new_folder_basic_currency();
-	static void register_pattern_rare_currencies();
-	static void register_pattern_good_currencies();
-	static void register_pattern_cheap_currencies();
-	static void register_pattern_trash_currencies();
+		static void register_pattern_rare_currencies();
+		static void register_pattern_good_currencies();
+		static void register_pattern_cheap_currencies();
+		static void register_pattern_trash_currencies();
 	////////////////////////////////////////////////////////////////////////
 
-	static void register_pattern_basic_currencies();
 
+
+	//unused
+	static void register_pattern_basic_currencies();
 	static void register_pattern_all_currencies();
+	////////////////////////////////////////////////////////////////////////
 
 	static void register_all_deleted_items();
 
 	//CRUCIBLE FOLDER
-	////////////////////////////////////////////////////////////////////////
 	static void register_new_folder_crucible_items();
+		static void register_crubible_deleted_items();
+		static void register_crubible_changed_items();
 
+		static void register_crubible_deleted_attributes();
 
-	static void register_crubible_deleted_items();
-	static void register_crubible_changed_items();
-
-	static void register_crubible_deleted_attributes();
-
-	static void register_crubible_items_with_passive_tree();
-	static void register_crubible_currency();
-	static void register_crubible_divinations();
+		static void register_crubible_items_with_passive_tree();
+		static void register_crubible_currency();
+		static void register_crubible_divinations();
 	////////////////////////////////////////////////////////////////////////
 
 
@@ -1342,8 +1398,9 @@ public:
 
 	bool										additional_force_field_for_buttons = false;
 	//static void								refresh_loot_simulator();
-	bool										always_show = false;
-	bool										is_folder = false;
+	bool										always_show			= false;
+	bool										is_folder			= false;
+	bool										have_force_field	= false;
 
 
 };
