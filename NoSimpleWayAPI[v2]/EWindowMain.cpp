@@ -13049,6 +13049,12 @@ void EWindowMain::register_loot_simulator_patterns()
 
 	register_new_folder_basic_currency();
 	register_new_folder_unusual_currency();
+	register_new_folder_oils();
+	register_new_folder_catalysts();
+	register_new_folder_currency_shards();
+	register_new_folder_incubators();
+	register_new_folder_catalysts();
+
 		add_force_field_for_last_pattern_folder();
 
 	register_new_folder_equip();
@@ -17465,16 +17471,1005 @@ void EWindowMain::register_pattern_top_tier_bases()
 	}
 }
 
+void EWindowMain::register_new_folder_delirium_orbs()
+{
+
+	//DELIRIUM ORBS (EXPENSIVE)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Delirium orbs (expensive)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Сферы делириума(дорогие)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/DeliriumOrb");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Delirium orb");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//DELIRIUM ORBS (ALL)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All delirium orbs";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Все сферы делириума";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/DeliriumOrb");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Delirium orb");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	register_patterm_folder("loot_pattern_folder_delirium_orbs", "buttons/pattern_folder_delirium_orbs");
+}
+
+void EWindowMain::register_new_folder_catalysts()
+{
+	//TRASH CATALYSTS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Catalysts (trash)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Катализаторы (мусор)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Imbued_Catalyst");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Catalyst item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Trash");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 5.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//COMMON CATALYSTS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Catalysts (common)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Катализаторы (едва ценные)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Tempering_Catalyst");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Catalyst item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Common");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 4.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//MODERATE CATALYSTS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Catalysts (valuable)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Катализаторы (ценные)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Fertile_Catalyst");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Catalyst item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Moderate");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 3.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+
+	//ALL CATALYSTS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All catalysts";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Все катализаторы";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/all_catalysts");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Catalyst item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	register_patterm_folder("loot_pattern_folder_catalysts", "buttons/pattern_folder_catalysts");
+}
+
+void EWindowMain::register_new_folder_incubators()
+{
+	//INCUBATORS (TRASH)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Incubators (trash)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "инкубаторы (мусор)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Incubator");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Incubators");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Trash");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//INCUBATORS (COMMON)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Incubators (common)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "инкубаторы (едва ценные)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Incubator");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Incubators");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Common");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//INCUBATORS (MODERATE)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Incubators (moderate)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "инкубаторы (ценные)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Incubator");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Incubators");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Moderate");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//INCUBATORS (EXPENSIVE)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Incubators (expensive)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "инкубаторы (дорогие)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Incubator");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Incubators");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Rare");
+			tag_filter->suitable_values.push_back("Expensive");
+			tag_filter->suitable_values.push_back("Very expensive");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//INCUBATORS (ALL)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All incubators";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Все инкубаторы";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Incubator");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Incubators");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	register_patterm_folder("loot_pattern_folder_incubators", "buttons/pattern_folder_incubators");
+}
+
+void EWindowMain::register_new_folder_currency_shards()
+{
+	
+	//CURRENCY SHARDS (TRASH)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Currency shards (trash)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Фрагменты валюты (мусор)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Alchemy_Shard_inventory_icon");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Currency shard");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+			
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Trash");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 5.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//CURRENCY SHARDS (COMMON)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Currency shards (common)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Фрагменты валюты (едва ценные)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Chaos_Shard_inventory_icon");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Currency shard");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Common");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 5.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//CURRENCY SHARDS (MODERATE)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Currency shards (moderate)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Фрагменты валюты (ценные)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Chaos_Shard_inventory_icon");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Currency shard");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Moderate");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 5.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//CURRENCY SHARDS (EXPENSIVE)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Currency shards (expensive)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Фрагменты валюты (дорогие)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Exalted_Shard_inventory_icon");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Currency shard");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Rare");
+			tag_filter->suitable_values.push_back("Expensive");
+			tag_filter->suitable_values.push_back("Very expensive");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 5.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+	
+	//CURRENCY SHARDS (ALL)
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All currency shards";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Все фрагменты валюты";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/currency_shards_all");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Currency shard");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 5.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	register_patterm_folder("loot_pattern_folder_currency_shards", "buttons/pattern_folder_currency_shards");
+}
+
+void EWindowMain::register_new_folder_oils()
+{
+	//TRASH OILS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Oils (trash)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Масла (мусор)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Clear_Oil");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Oil item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Trash");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 5.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//COMMON OILS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Oils (common)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Масла (едва ценные)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Teal_Oil");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Oil item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Common");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 4.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//MODERATE OILS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Oils (moderate)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Масла (ценные)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Black_Oil");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Oil item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Moderate");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 3.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//RARE OILS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Oils (rare)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Масла (дорогие)";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Golden_Oil");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Oil item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Rare");
+			tag_filter->suitable_values.push_back("Expensive");
+			tag_filter->suitable_values.push_back("Very expensive");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//SPECIAL OIL ITEMS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Special oil items";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "особые предметы масел";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Oil_extractor");
+
+
+		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Special oil item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+
+	//OILS ALL
+		{
+
+			LootSimulatorPattern*
+				loot_simulator_pattern = new LootSimulatorPattern;
+
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "All oils item";
+			loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Все предметы масел";
+			loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/oils_all");
+
+
+			/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
+			{
+				GameItemGenerator*
+					game_item_generator = new GameItemGenerator();
+				game_item_generator->generations_count = 1;
+				loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+				LootSimulatorTagFilter*
+					tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "item tag";
+				tag_filter->suitable_values.push_back("Special oil item");
+				tag_filter->suitable_values.push_back("Oil item");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+				tag_filter = new LootSimulatorTagFilter;
+				tag_filter->target_tag = "item tag";
+				tag_filter->banned_tags.push_back("Deleted");
+				tag_filter->banned_tags.push_back("Hidden item");
+				game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+				game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			}
+
+			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+		}
+
+	register_patterm_folder("loot_pattern_folder_oils", "buttons/pattern_folder_oils");
+}
+
 void EWindowMain::register_new_folder_unusual_currency()
 {
 	register_pattern_harvest_items();
 	register_pattern_expedition_currency();
 	register_pattern_eldritch_currency();
 	register_pattern_delirium_orbs();
-	register_pattern_oils_and_catalysts();
 	register_pattern_essences();
-	register_pattern_incubators();
-	register_pattern_currencies_shard();
+	//register_pattern_incubators();
+	//register_pattern_currencies_shard();
 	register_pattern_tainted_currencies();
 	//register_embers_and_ichors();
 	register_pattern_guardian_orbs();

@@ -960,3 +960,38 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Category:\nHeist items"
 	[tag]"name RU"		[value]"Категория:\nПредметы кражи"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_oils"
+	[tag]"name EN"		[value]"Category:\nOils"
+	[tag]"name RU"		[value]"Категория:\nМасла"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_currency_shards"
+	[tag]"name EN"		[value]"Category:\nCurrency shards"
+	[tag]"name RU"		[value]"Категория:\nФрагменты валют"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_incubators"
+	[tag]"name EN"		[value]"Category:\nIncubators"
+	[tag]"name RU"		[value]"Категория:\nИнкубаторы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_delirium_orbs"
+	[tag]"name EN"		[value]"Category:\nDelirium orbs"
+	[tag]"name RU"		[value]"Категория:\nСферы делириума"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_catalysts"
+	[tag]"name EN"		[value]"Category:\nCatalysts"
+	[tag]"name RU"		[value]"Категория:\nКатализаторы"
+	

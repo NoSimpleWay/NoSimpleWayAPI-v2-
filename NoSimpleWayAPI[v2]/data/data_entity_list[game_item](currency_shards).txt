@@ -9,6 +9,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"		[value]"Stackable Currency"
 		
 	[tag]"worth"			[value]"Trash"
+	
 	[tag]"item tag"			[value]"Currency shard"
 	[tag]"stack multiplier"	[value]"10"
 	[tag]"max stack size"	[value]"20"
@@ -28,6 +29,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"		[value]"Stackable Currency"
 		
 	[tag]"worth"			[value]"Trash"
+	
 	[tag]"item tag"			[value]"Currency shard"
 		
 	[tag]"drop level"		[value]"25"
@@ -47,6 +49,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"		[value]"Stackable Currency"
 		
 	[tag]"worth"			[value]"Trash"
+	
 	[tag]"item tag"			[value]"Currency shard"
 	[tag]"stack multiplier"	[value]"10"
 	[tag]"max stack size"	[value]"20"
@@ -70,7 +73,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"		[value]"Chaos_Shard_inventory_icon"
 	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"			[value]"Trash"
+	[tag]"worth"			[value]"Common"
+	
 	[tag]"item tag"			[value]"Currency shard"
 		
 	[tag]"drop level"		[value]"8"
@@ -181,7 +185,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"		[value]"Ancient_Shard_inventory_icon"
 	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"			[value]"Common"
+	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"Currency shard"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 		
@@ -201,7 +205,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"		[value]"Annulment_Shard_inventory_icon"
 	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"			[value]"Common"
+	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"Currency shard"
 	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 		
@@ -221,7 +225,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"		[value]"Harbinger's_Shard_inventory_icon"
 	[tag]"base class"		[value]"Stackable Currency"
 		
-	[tag]"worth"			[value]"Common"
+	[tag]"worth"			[value]"Moderate"
 	[tag]"item tag"			[value]"Currency shard"
 		
 	[tag]"drop level"		[value]"52"

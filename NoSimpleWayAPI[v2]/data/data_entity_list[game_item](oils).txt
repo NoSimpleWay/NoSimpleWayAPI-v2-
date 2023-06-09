@@ -13,6 +13,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -32,6 +34,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"10"
+	
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -53,6 +57,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"19"
+	
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -74,6 +80,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"27"
+	
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -93,6 +101,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"36"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -114,6 +124,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"44"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -133,6 +145,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"48"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -152,6 +166,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"52"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -171,6 +187,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"60"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -190,6 +208,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"68"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -209,6 +229,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"73"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -226,6 +248,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Oil item"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
+	
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -245,6 +269,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"80"
+	
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -264,26 +290,31 @@ ADD_NEW_DATA_ENTITY
 	[tag]"max stack size"	[value]"10"
 	
 	[tag]"drop level"	[value]"80"
+	
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Oil Extractor"
-	[tag]"name RU"		[value]"Ёкстрактор масел"
-
-	[tag]"icon path"	[value]"Oil_extractor"
-	[tag]"base class"	[value]"Stackable Currency"
 	
-	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"		[value]"Game item"
+	
+	[tag]"name EN"			[value]"Oil Extractor"
+	[tag]"name RU"			[value]"Ёкстрактор масел"
+	
+	[tag]"icon path"		[value]"Oil_extractor"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"item tag"			[value]"Introduced: Archnemesis league"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
 	
-	[tag]"drop level"	[value]"1"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"drop level"		[value]"1"
+		
+	[tag]"item tag"			[value]"Special oil item"
+	
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 	
 	ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
