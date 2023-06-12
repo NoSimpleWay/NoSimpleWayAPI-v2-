@@ -348,9 +348,12 @@ public:
 	float								min_y_size = 100.0f;
 
 	data_action_pointer					stored_action_for_data_entity_group;
-	unsigned int categry_id				= 0;
+	unsigned int category_id				= 0;
 
 	ETextureGabarite* icon_texture;
+
+	bool		is_folder	= false;
+	std::string	named_id	= "";
 };
 
 class EDataContainer_Group_DataEntitiesSearch : public EDataContainer

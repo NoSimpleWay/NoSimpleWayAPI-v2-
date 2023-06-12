@@ -1294,10 +1294,28 @@ void EButtonGroup::draw_button_group()
 								but->button_gabarite->world_position_x - 1.0f,
 								but->button_gabarite->world_position_y - 1.0f,
 
-								but->button_gabarite->size_x + 1.0f,
-								but->button_gabarite->size_y + 1.0f,
+								but->button_gabarite->size_x + 2.0f,
+								but->button_gabarite->size_y + 2.0f,
 
 								3.0f,
+
+								NS_DefaultGabarites::texture_gabarite_white_pixel
+
+							);
+
+							NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_YELLOW, 0.2f);
+							ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+
+							NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+							(
+								NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+								NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+								but->button_gabarite->world_position_x + 1.0f,
+								but->button_gabarite->world_position_y + 1.0f,
+
+								but->button_gabarite->size_x - 2.0f,
+								but->button_gabarite->size_y - 2.0f,
 
 								NS_DefaultGabarites::texture_gabarite_white_pixel
 
@@ -2962,6 +2980,16 @@ void EButtonGroup::slide_to_this_group(EButtonGroup* _group)
 	slider->current_value = scroll_y;
 
 	EButtonGroup::refresh_button_group(this);
+}
+
+void EButtonGroup::scroll_down(float _value)
+{
+	scroll_y -= _value;
+}
+
+void EButtonGroup::scroll_up(float _value)
+{
+	scroll_y += _value;
 }
 
 void EButtonGroup::set_base_size_x()

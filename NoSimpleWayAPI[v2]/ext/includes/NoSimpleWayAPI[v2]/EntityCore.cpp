@@ -694,7 +694,8 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 		);
 		jc_button->can_be_stretched = true;
 
-		EDataContainer_DataEntityHolder* data_holder = new EDataContainer_DataEntityHolder();
+		EDataContainer_DataEntityHolder*
+		data_holder = new EDataContainer_DataEntityHolder();
 		data_holder->stored_data_entity = _data_entity;
 		EntityButton::get_last_custom_data(jc_button)->data_container = data_holder;
 		//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_invoke_data_entity_group_action);

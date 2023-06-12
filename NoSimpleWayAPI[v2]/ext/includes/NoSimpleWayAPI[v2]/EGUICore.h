@@ -497,6 +497,9 @@ public:
 
 	void slide_to_this_group(EButtonGroup* _group);
 
+	void scroll_down(float _value);
+	void scroll_up	(float _value);
+
 	
 
 

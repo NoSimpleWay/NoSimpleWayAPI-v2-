@@ -149,8 +149,18 @@ public:
 class EntityButtonFilterRule : public EntityButton
 {
 public:
-	EFilterRule* target_filter_rule;
-	EDataContainer_Group_DataEntitiesSearch* target_data_container;
+	EFilterRule*								target_filter_rule;
+	EDataContainer_Group_DataEntitiesSearch*	target_data_container;
+
+	bool										is_folder			= false;
+	bool										is_expanded			= false;
+	bool										hidden_by_folder	= false;
+
+	std::string									folder_named_id		= "";
+	EntityButtonFilterRule*						parent_folder;
+	std::vector< EntityButtonFilterRule*>		child_button_list;
+
+	bool entity_is_active() override;
 
 };
 
@@ -603,6 +613,7 @@ namespace EDataActionCollection
 	void action_generate_filter_block_text(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_select_this_filter_variant(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_switch_folder_for_data_entity_filter(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_open_loot_filters_list_window(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_mark_button_group_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -892,7 +903,8 @@ public:
 	static void write_loot_filter_to_disc(std::string _full_path, std::string* _data);
 
 	static void add_force_field_for_last_pattern_folder();
-	static void register_patterm_folder(std::string _localisation_key, std::string _icon_path);
+	static void register_pattern_folder(std::string _localisation_key, std::string _icon_path);
+	static void register_filter_rule_folder(std::string _named_id, std::string _tag, std::string _localisation_key, std::string _icon_path);
 	static void register_loot_simulator_patterns();
 
 	//GEMS FOLDER

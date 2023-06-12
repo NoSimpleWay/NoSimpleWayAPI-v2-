@@ -995,3 +995,68 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Category:\nCatalysts"
 	[tag]"name RU"		[value]"Категория:\nКатализаторы"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_divinations"
+	[tag]"name EN"		[value]"Category:\nDivinations"
+	[tag]"name RU"		[value]"Категория:\nГадальные карты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_basic_items"
+	[tag]"name EN"		[value]"Category:\nBasic currencies"
+	[tag]"name RU"		[value]"Категория:\nОбычная валюта"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_heist_tools"
+	[tag]"name EN"		[value]"Category:\nHeist tools"
+	[tag]"name RU"		[value]"Категория:\nИнструменты кражи"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_bases_folder"
+	[tag]"name EN"		[value]"Category:\nItem bases"
+	[tag]"name RU"		[value]"Категория:\nБазы предметов"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_leagues"
+	[tag]"name EN"		[value]"Category:\nLeagues"
+	[tag]"name RU"		[value]"Категория:\nЛиги"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_awakened_gems"
+	[tag]"name EN"		[value]"Category:\nAwakened gems"
+	[tag]"name RU"		[value]"Категория:\nПробуждённые камни"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_incubators"
+	[tag]"name EN"		[value]"Category:\nIncubators"
+	[tag]"name RU"		[value]"Категория:\nИнкубаторы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_oils"
+	[tag]"name EN"		[value]"Category:\nOils"
+	[tag]"name RU"		[value]"Категория:\nМасла"
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_catalysts"
+	[tag]"name EN"		[value]"Category:\nCatalysts"
+	[tag]"name RU"		[value]"Категория:\nКатализаторы"
+	
