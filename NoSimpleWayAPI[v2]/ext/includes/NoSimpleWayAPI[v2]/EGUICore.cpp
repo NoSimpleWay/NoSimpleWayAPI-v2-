@@ -713,7 +713,6 @@ void EButtonGroup::button_group_update(float _d)
 			)
 	{
 		recursive_get_info();
-
 	}
 
 	if (autodelete_time >= 0.0f)
@@ -955,6 +954,8 @@ void EButtonGroup::recursive_get_info()
 
 	EInputCore::logger_param("phantom translate x:", region_gabarite->phantom_translate_x);
 	EInputCore::logger_param("phantom translate y:", region_gabarite->phantom_translate_y);
+
+	EInputCore::logger_param("scroll_y", scroll_y);
 
 	std::cout << std::endl << std::endl;
 
@@ -4425,6 +4426,30 @@ void EButtonGroup::add_help_button(ETextureGabarite* _texture_gabarite, std::str
 
 		close_section_left_part->add_button_to_working_group(but);
 	}
+}
+
+void EButtonGroup::scroll_to_this_button(EntityButton* _button)
+{
+	float
+	original_scroll = scroll_y;
+
+
+
+	float new_scroll = _button->offset_y - (region_gabarite->size_y - group_offset_for_content_up) + _button->button_gabarite->size_y;
+	new_scroll = max(new_scroll, 0.0f);
+	//translate_group_content(0.0f, (new_scroll - original_scroll), 0.0f, false);
+	EInputCore::logger_param("button name", _button->main_text_area->localisation_text.base_name);
+	EInputCore::logger_param("button offset y", _button->offset_y);
+	EInputCore::logger_param("region size y", region_gabarite->size_y);
+	EInputCore::logger_param("new scroll", new_scroll);
+
+
+	slider->current_value = -new_scroll;
+	scroll_y = slider->current_value;
+
+	need_change = true;
+	
+	//_button->highlight_time = _button->max_highlight_time;
 }
 
 EButtonGroup* EButtonGroup::create_base_button_group(ERegionGabarite* _region, EGUIStyle* _style, bool _have_bg, bool _have_slider, bool _default_bg)

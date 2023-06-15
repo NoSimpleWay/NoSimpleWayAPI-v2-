@@ -1,5 +1,15 @@
 Show
 	#config_VersionControl standart standart standart standart standart
+	Class "Currency" "Stackable Currency"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 230 210 160 255
+	SetBorderColor 0 0 0 0
+	#SetFontSize 32
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
+
+Show
+	#config_VersionControl standart standart standart standart standart
 	Rarity = Normal
 	SetBackgroundColor 0 0 0 255
 	SetTextColor 200 200 200 255
@@ -73,5 +83,6 @@ Show
 	#SetFontSize 32
 	#MinimapIcon 0 Red Circle
 	#PlayEffect Red
+
 
 

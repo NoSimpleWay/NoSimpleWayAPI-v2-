@@ -228,9 +228,9 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"button_matched_minimap_icon_color_block"
-	[tag]"name EN"		[value]"Minimap icon color"
-	[tag]"name RU"		[value]"Цвет иконки"
+	[tag]"key"			[value]"button_matched_minimap_icon_block"
+	[tag]"name EN"		[value]"Minimap icon"
+	[tag]"name RU"		[value]"Иконка миникарты"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -1051,12 +1051,115 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Category:\nOils"
 	[tag]"name RU"		[value]"Категория:\nМасла"
 	
-
-	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"rule_folder_catalysts"
 	[tag]"name EN"		[value]"Category:\nCatalysts"
 	[tag]"name RU"		[value]"Категория:\nКатализаторы"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_color_red"
+	[tag]"name EN"		[value]"Red"
+	[tag]"name RU"		[value]"Красный"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_color_green"
+	[tag]"name EN"		[value]"Green"
+	[tag]"name RU"		[value]"Зелёный"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_color_blue"
+	[tag]"name EN"		[value]"Blue"
+	[tag]"name RU"		[value]"Синий"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_color_brown"
+	[tag]"name EN"		[value]"Brown"
+	[tag]"name RU"		[value]"Коричневый"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_color_white"
+	[tag]"name EN"		[value]"White"
+	[tag]"name RU"		[value]"Красный"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_color_yellow"
+	[tag]"name EN"		[value]"Yellow"
+	[tag]"name RU"		[value]"Жёлтый"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_color_cyan"
+	[tag]"name EN"		[value]"Cyan"
+	[tag]"name RU"		[value]"Голубой"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_color_grey"
+	[tag]"name EN"		[value]"Grey"
+	[tag]"name RU"		[value]"Серый"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_color_orange"
+	[tag]"name EN"		[value]"Orange"
+	[tag]"name RU"		[value]"Оранжевый"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_color_pink"
+	[tag]"name EN"		[value]"Pink"
+	[tag]"name RU"		[value]"Розовый"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_color_purple"
+	[tag]"name EN"		[value]"Purle"
+	[tag]"name RU"		[value]"Фиолетовый"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_text_new_filter"
+	[tag]"name EN"		[value]"Create"
+	[tag]"name RU"		[value]"Создать"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_text_open_filter"
+	[tag]"name EN"		[value]"Load"
+	[tag]"name RU"		[value]"Загрузить"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_text_save_filter"
+	[tag]"name EN"		[value]"Save"
+	[tag]"name RU"		[value]"Сохранить"
 	

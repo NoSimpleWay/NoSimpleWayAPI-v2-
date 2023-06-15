@@ -3144,7 +3144,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Crucible league"
 	[tag]"item tag"		[value]"Changed in Crucible"
@@ -4716,7 +4716,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5835,7 +5835,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"item tag"		[value]"Introduced: Crucible league"
 

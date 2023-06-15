@@ -375,6 +375,16 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
+	void make_as_default_button_with_icon_and_localisation_by_key
+	(
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		data_action_pointer	_dap,
+		ETextureGabarite* _gabarite,
+		std::string _key
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
+
 	void make_default_bool_switcher_button
 	(
 		ERegionGabarite* _region_gabarite,

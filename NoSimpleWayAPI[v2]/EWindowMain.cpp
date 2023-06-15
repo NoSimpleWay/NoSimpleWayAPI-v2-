@@ -1210,6 +1210,8 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 
 	if
 	(
+		(loot_button != nullptr)
+		&&
 		(
 			(entity_button->entity_is_active())
 			&&
@@ -1432,7 +1434,14 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 		else
 		{
 			//		MINIMAP ICON
-			if (loot_button->matched_minimap_icon_color != nullptr)
+			if
+			(
+				(loot_button->matched_minimap_icon_color != nullptr)
+				&&
+				(loot_button->matched_minimap_icon_block != nullptr)
+				&&
+				(loot_button->matched_minimap_icon_block->pointer_to_forcibly_disable_minimap_icon_variant_button->selected_variant == 0)
+			)
 			{
 				float size_multiplier = 1.0f - loot_button->matched_minimap_icon_size->selected_variant * 0.25;
 				ETextureGabarite* texture_gabarite = loot_button->matched_minimap_icon_shape->router_variant_list[loot_button->matched_minimap_icon_shape->selected_variant]->texture;
@@ -1555,7 +1564,7 @@ void EDataActionCollection::action_select_loot_item_button(Entity* _entity, ECus
 		group->highlight_time = 30.0f;
 	}*/
 
-	if (loot_button->matched_filter_blocks.size() == 1)
+	//if (loot_button->matched_filter_blocks.size() == 1)
 	{
 		if
 		(
@@ -1579,6 +1588,14 @@ void EDataActionCollection::action_select_loot_item_button(Entity* _entity, ECus
 
 		EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 	}
+
+	for (EntityButton* but : loot_button->suitable_buttons_list)
+	{
+		but->highlight_time = but->max_highlight_time;
+		but->parent_button_group->scroll_to_this_button(but);
+	}
+
+
 
 }
 
@@ -3985,7 +4002,7 @@ EWindowMain::EWindowMain()
 	{
 		////////////////////////////////
 		EButtonGroupLootSimulator*
-			whole_loot_simulator_group = new EButtonGroupLootSimulator(new ERegionGabarite(100.0f, 100.0f, 1400.0f, 600.0f));
+			whole_loot_simulator_group = new EButtonGroupLootSimulator(new ERegionGabarite(100.0f, 100.0f, 1200.0f, 500.0f));
 
 		whole_loot_simulator_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 		whole_loot_simulator_group->root_group = whole_loot_simulator_group;
@@ -5743,12 +5760,13 @@ EWindowMain::EWindowMain()
 
 				//////////////////////////////////////////////////////
 				jc_button = new EntityButtonForFilterBlock();
-				jc_button->make_as_default_button_with_icon
+				jc_button->make_as_default_button_with_icon_and_localisation_by_key
 				(
-					new ERegionGabarite(45.0f, 45.0f),
+					new ERegionGabarite(100.0f, 30.0f),
 					top_section_left_part,
 					&EDataActionCollection::action_open_new_lootfilter_group,
-					NS_EGraphicCore::load_from_textures_folder("buttons/button_create_new_loot_filter")
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_create_new_loot_filter"),
+					"button_text_new_filter"
 				);
 				jc_button->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_N);
 				jc_button->add_default_description_by_key("description_new_loot_filter");
@@ -5759,12 +5777,13 @@ EWindowMain::EWindowMain()
 
 				//////////////////////////////////////////////////////
 				jc_button = new EntityButtonForFilterBlock();
-				jc_button->make_as_default_button_with_icon
+				jc_button->make_as_default_button_with_icon_and_localisation_by_key
 				(
-					new ERegionGabarite(45.0f, 45.0f),
+					new ERegionGabarite(100.0f, 30.0f),
 					top_section_left_part,
 					&EDataActionCollection::action_open_loot_filters_list_window,
-					NS_EGraphicCore::load_from_textures_folder("buttons/button_open")
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_open"),
+					"button_text_open_filter"
 				);
 				jc_button->add_default_description_by_key("description_open_loot_filter");
 				jc_button->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_O);
@@ -5774,12 +5793,13 @@ EWindowMain::EWindowMain()
 				//////////////////////////////////////////////////////
 				jc_button = new EntityButtonForFilterBlock();
 
-				jc_button->make_as_default_button_with_icon
+				jc_button->make_as_default_button_with_icon_and_localisation_by_key
 				(
-					new ERegionGabarite(45.0f, 45.0f),
+					new ERegionGabarite(100.0f, 30.0f),
 					top_section_left_part,
 					&EDataActionCollection::action_save_lootfilter,
-					NS_EGraphicCore::load_from_textures_folder("buttons/button_save")
+					NS_EGraphicCore::load_from_textures_folder("buttons/button_save"),
+					"button_text_save_filter"
 				);
 
 				jc_button->force_field_right = 32.0f;
@@ -11172,6 +11192,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_disable_icon->add_default_description_by_key("description_disable_minimap_icon");
 		button_variant_disable_icon->force_field_up = 8.0f;
 		button_variant_disable_icon->can_be_stretched = true;
+		
+		button_variant_disable_icon->main_custom_data->clickable_area_list.front()->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
 
 		whole_filter_block_group->pointer_to_forcibly_disable_minimap_icon_variant_button = button_variant_disable_icon;
 
@@ -11185,232 +11207,46 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	}
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	if (true)
-	{
+	//MINIMAP ICON
+	//if (true)
+	//{
+
 		//jc_button = new EntityButtonFilterSound();
-		button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
-		button_variant_FB_router->make_as_default_button_with_icon
-		(
-			new ERegionGabarite(124.0f, 22.0f),
-			minimap_and_ray_cosmetic_segment,
-			&EDataActionCollection::action_rotate_variant,
-			nullptr
-		);
-		button_variant_FB_router->parent_filter_block = whole_filter_block_group;
-		button_variant_FB_router->can_be_stretched = true;
+		EntityButtonVariantRouterForFilterBlock*
+		button_router_minimap_icon_color = new EntityButtonVariantRouterForFilterBlock();
 
-		button_variant_FB_router->add_default_description_by_key("description_minimap_color");
+		minimap_and_ray_cosmetic_segment->add_button_to_working_group(button_router_minimap_icon_color);
+		button_router_minimap_icon_color->make_as_default_router_variant_button(new ERegionGabarite(124.0f, 22.0f));
 
-		button_variant_FB_router->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
 
-		button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
+		//button_variant_FB_router->parent_filter_block = whole_filter_block_group;
+		button_router_minimap_icon_color->can_be_stretched = true;
+		button_router_minimap_icon_color->add_default_description_by_key("description_minimap_color");
+		button_router_minimap_icon_color->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
+		button_router_minimap_icon_color->suppressor = &whole_filter_block_group->minimap_icon_color_suppressor_bool;
 
-		jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText());
-		button_variant_FB_router->pointer_to_text_area = jc_text_area;
+		whole_filter_block_group->pointer_to_minimap_icon_color_router = button_router_minimap_icon_color;
 
-		jc_text_area->can_be_edited = false;
-		Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_red",		1.0f, 0.2f, 0.1f, 1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_green",		0.25f, 1.0f, 0.4f, 1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_blue",		0.25f, 0.4f, 1.0f, 1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_brown",		1.0f, 0.5f, 0.25f, 1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_white",		1.0f, 1.0f, 1.0f, 1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_yellow",	1.0f, 1.0f, 0.25f, 1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_cyan",		0.25f, 0.8f, 1.0f, 1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_grey",		0.55f, 0.55f, 0.55f, 1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_orange",	1.0f, 0.65f, 0.1f, 1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_pink",		1.0f, 0.5f, 1.0f, 1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_purple",	0.8f, 0.1f, 0.9f, 1.0f);
 
-		button_variant_FB_router->suppressor = &whole_filter_block_group->minimap_icon_color_suppressor_bool;
+		button_router_minimap_icon_color->select_variant(0);
 
-		whole_filter_block_group->pointer_to_minimap_icon_color_router = button_variant_FB_router;
 
-
-		//routers
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Red";
-		local_text->localisations[NSW_localisation_EN] = "Red";
-		local_text->localisations[NSW_localisation_RU] = "Красная";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new HSVRGBAColor();
-		router_variant->color->set_color_RGBA(1.0f, 0.2f, 0.1f, 1.0f);
-
-		router_variant->localisation_for_select_window = router_variant->localisation;
-
-		button_variant_FB_router->router_variant_list.push_back(router_variant);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Green";
-		local_text->localisations[NSW_localisation_EN] = "Green";
-		local_text->localisations[NSW_localisation_RU] = "Зелёная";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new HSVRGBAColor();
-		router_variant->color->set_color_RGBA(0.25f, 1.0f, 0.4f, 1.0f);
-
-		router_variant->localisation_for_select_window = router_variant->localisation;
-
-		button_variant_FB_router->router_variant_list.push_back(router_variant);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Blue";
-		local_text->localisations[NSW_localisation_EN] = "Blue";
-		local_text->localisations[NSW_localisation_RU] = "Синяя";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new HSVRGBAColor();
-		router_variant->color->set_color_RGBA(0.25f, 0.4f, 1.0f, 1.0f);
-
-		router_variant->localisation_for_select_window = router_variant->localisation;
-
-		button_variant_FB_router->router_variant_list.push_back(router_variant);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Brown";
-		local_text->localisations[NSW_localisation_EN] = "Brown";
-		local_text->localisations[NSW_localisation_RU] = "Коричневая";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new HSVRGBAColor();
-		router_variant->color->set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
-
-		router_variant->localisation_for_select_window = router_variant->localisation;
-
-		button_variant_FB_router->router_variant_list.push_back(router_variant);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "White";
-		local_text->localisations[NSW_localisation_EN] = "White";
-		local_text->localisations[NSW_localisation_RU] = "Белая";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new HSVRGBAColor();
-		router_variant->color->set_color_RGBA(1.0f, 1.0f, 1.0f, 1.0f);
-
-		router_variant->localisation_for_select_window = router_variant->localisation;
-
-		button_variant_FB_router->router_variant_list.push_back(router_variant);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Yellow";
-		local_text->localisations[NSW_localisation_EN] = "Yellow";
-		local_text->localisations[NSW_localisation_RU] = "Жёлтая";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new HSVRGBAColor();
-		router_variant->color->set_color_RGBA(1.0f, 1.0f, 0.25f, 1.0f);
-
-		router_variant->localisation_for_select_window = router_variant->localisation;
-
-		button_variant_FB_router->router_variant_list.push_back(router_variant);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Cyan";
-		local_text->localisations[NSW_localisation_EN] = "Cyan";
-		local_text->localisations[NSW_localisation_RU] = "Голубая";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new HSVRGBAColor();
-		router_variant->color->set_color_RGBA(0.25f, 0.8f, 1.0f, 1.0f);
-
-		router_variant->localisation_for_select_window = router_variant->localisation;
-
-		button_variant_FB_router->router_variant_list.push_back(router_variant);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Grey";
-		local_text->localisations[NSW_localisation_EN] = "Grey";
-		local_text->localisations[NSW_localisation_RU] = "Серая";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new HSVRGBAColor();
-		router_variant->color->set_color_RGBA(0.55f, 0.55f, 0.55f, 1.0f);
-
-		router_variant->localisation_for_select_window = router_variant->localisation;
-
-		button_variant_FB_router->router_variant_list.push_back(router_variant);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Orange";
-		local_text->localisations[NSW_localisation_EN] = "Orange";
-		local_text->localisations[NSW_localisation_RU] = "Оранжевая";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new HSVRGBAColor();
-		router_variant->color->set_color_RGBA(1.0f, 0.65f, 0.1f, 1.0f);
-
-		router_variant->localisation_for_select_window = router_variant->localisation;
-
-		button_variant_FB_router->router_variant_list.push_back(router_variant);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Pink";
-		local_text->localisations[NSW_localisation_EN] = "Pink";
-		local_text->localisations[NSW_localisation_RU] = "Розовая";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new HSVRGBAColor();
-		router_variant->color->set_color_RGBA(1.0f, 0.5f, 1.0f, 1.0f);
-
-		router_variant->localisation_for_select_window = router_variant->localisation;
-
-		button_variant_FB_router->router_variant_list.push_back(router_variant);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		router_variant = new RouterVariant();
-		local_text = new ELocalisationText();
-
-		local_text->base_name = "Purple";
-		local_text->localisations[NSW_localisation_EN] = "Purple";
-		local_text->localisations[NSW_localisation_RU] = "Фиолетовая";
-		router_variant->localisation = local_text;
-
-		router_variant->color = new HSVRGBAColor();
-		router_variant->color->set_color_RGBA(0.8f, 0.1f, 0.9f, 1.0f);
-
-		router_variant->localisation_for_select_window = router_variant->localisation;
-
-		button_variant_FB_router->router_variant_list.push_back(router_variant);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		button_variant_FB_router->select_variant(0);
-
-
-		minimap_and_ray_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
+		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		
-	}
+	//}
 
 	//		switcher MINIMAP ICON
 	
@@ -11418,7 +11254,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		EntityButton*
 			button_minimap_icon_suppressor = new EntityButton();
 
-		button_variant_FB_router->button_suppressor = button_minimap_icon_suppressor;
+		button_router_minimap_icon_color->button_suppressor = button_minimap_icon_suppressor;
 
 
 		button_minimap_icon_suppressor->make_default_bool_switcher_button
@@ -14083,7 +13919,8 @@ void EWindowMain::register_new_folder_boss_loot()
 void EWindowMain::register_pattern_folder_divinations()
 {
 	register_pattern_divinations_expensive();
-	register_pattern_divinations_useful();
+	register_pattern_divinations_rare();
+	register_pattern_divinations_moderate();
 	register_pattern_divinations_cheap();
 	register_pattern_divinations_trash();
 
@@ -14145,7 +13982,59 @@ void EWindowMain::register_pattern_divinations_expensive()
 	}
 }
 
-void EWindowMain::register_pattern_divinations_useful()
+void EWindowMain::register_pattern_divinations_rare()
+{
+	//		DIVINATIONS: Useful
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Divinations: rare";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: редкие";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
+
+		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->forceful_warn_when_hided;
+
+			game_item_generator->generations_count = 1;
+			game_item_generator->forceful_warn_when_hided = true;
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Divination Cards");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "worth";
+			tag_filter->suitable_values.push_back("Rare");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+
+
+
+
+
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_pattern_divinations_moderate()
 {
 	//		DIVINATIONS: Useful
 	{
@@ -14154,7 +14043,7 @@ void EWindowMain::register_pattern_divinations_useful()
 			loot_simulator_pattern = new LootSimulatorPattern;
 
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Divinations: moderate";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: ценные";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Гадальные карты: средней ценности";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
 
 		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
@@ -14174,7 +14063,6 @@ void EWindowMain::register_pattern_divinations_useful()
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "worth";
 			tag_filter->suitable_values.push_back("Moderate");
-			tag_filter->suitable_values.push_back("Rare");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
@@ -23754,6 +23642,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 {
 	bool break_detect_user = false;
 	matched_filter_blocks.clear();
+	suitable_buttons_list.clear();
 
 	//search from non-default filter blocks
 
@@ -23777,7 +23666,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 			(
 				(!break_detect_user)
 				&&
-				(EButtonGroupLootSimulator::this_group_is_matched(stored_game_item, filter_block))
+				(EButtonGroupLootSimulator::this_group_is_matched(this, stored_game_item, filter_block))
 			)
 			{
 				bool any_detect = false;
@@ -23826,15 +23715,13 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 					break_detect_user = true;
 				}
 
-				if (filter_block->minimap_icon_color_suppressor_bool)
+				if ((filter_block->minimap_icon_color_suppressor_bool) || (filter_block->pointer_to_forcibly_disable_minimap_icon_variant_button->selected_variant == 1))
 				{
 					matched_minimap_icon_color = filter_block->pointer_to_minimap_icon_color_router;
 					matched_minimap_icon_shape = filter_block->pointer_to_minimap_icon_shape_router;
 					matched_minimap_icon_size = filter_block->pointer_to_minimap_icon_size_router;
 
-					matched_minimap_icon_color_block = filter_block;
-					matched_minimap_icon_shape_block = filter_block;
-					matched_minimap_icon_size_block	= filter_block;
+					matched_minimap_icon_block = filter_block;
 
 					any_detect = true;
 				}
@@ -23849,8 +23736,9 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 	bool break_detect_default = false;
 	bool break_detect_base = false;
 
-	//for undefined cosmetic elements
+	//if have no one match with user defined loot-filter, search in default ingame loot-filter
 	//search from default filter blocks
+	if (matched_filter_blocks.empty())
 	for (EButtonGroup* group : _filter_block_editor->group_list)
 	if
 	(
@@ -23864,8 +23752,6 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 			(matched_rama_color_block	== nullptr)
 			||
 			(matched_size_block			== nullptr)
-			||
-			(matched_minimap_icon_color	== nullptr)
 		)
 		&&
 		(dynamic_cast<const EButtonGroupFilterBlock*>(group) != nullptr)
@@ -23877,7 +23763,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 			EButtonGroupFilterBlock*
 			filter_block = static_cast<EButtonGroupFilterBlock*>(group);
 
-			if (EButtonGroupLootSimulator::this_group_is_matched(stored_game_item, filter_block))
+			if (EButtonGroupLootSimulator::this_group_is_matched(this, stored_game_item, filter_block))
 			{
 				bool any_detect = false;
 
@@ -23939,15 +23825,13 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 					break_detect_default = true;
 				}
 
-				if ((matched_minimap_icon_color_block == nullptr) && (filter_block->minimap_icon_color_suppressor_bool))
+				if ((matched_minimap_icon_block == nullptr) && (filter_block->minimap_icon_color_suppressor_bool))
 				{
 					matched_minimap_icon_color = filter_block->pointer_to_minimap_icon_color_router;
 					matched_minimap_icon_shape = filter_block->pointer_to_minimap_icon_shape_router;
 					matched_minimap_icon_size = filter_block->pointer_to_minimap_icon_size_router;
 
-					matched_minimap_icon_color_block = filter_block;
-					matched_minimap_icon_shape_block = filter_block;
-					matched_minimap_icon_size_block	= filter_block;
+					matched_minimap_icon_block = filter_block;
 
 					any_detect = true;
 				}
@@ -23991,7 +23875,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 			EButtonGroupFilterBlock*
 			filter_block = static_cast<EButtonGroupFilterBlock*>(group);
 
-			if (EButtonGroupLootSimulator::this_group_is_matched(stored_game_item, filter_block))
+			if (EButtonGroupLootSimulator::this_group_is_matched(this, stored_game_item, filter_block))
 			{
 				bool any_detect = false;
 
@@ -24053,15 +23937,13 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 					break_detect_base = true;
 				}
 
-				if ((matched_minimap_icon_color_block == nullptr) && (filter_block->minimap_icon_color_suppressor_bool))
+				if ((matched_minimap_icon_block == nullptr) && (filter_block->minimap_icon_color_suppressor_bool))
 				{
 					matched_minimap_icon_color = filter_block->pointer_to_minimap_icon_color_router;
 					matched_minimap_icon_shape = filter_block->pointer_to_minimap_icon_shape_router;
 					matched_minimap_icon_size = filter_block->pointer_to_minimap_icon_size_router;
 
-					matched_minimap_icon_color_block = filter_block;
-					matched_minimap_icon_shape_block = filter_block;
-					matched_minimap_icon_size_block	= filter_block;
+					matched_minimap_icon_block = filter_block;
 
 					any_detect = true;
 				}
@@ -24224,7 +24106,12 @@ void EButtonGroupLootSimulator::refresh_button_sizes()
 
 		float additional_left_space = 0.0f;
 
-		if (loot_item->matched_minimap_icon_color != nullptr)
+		if
+		(
+			(loot_item->matched_minimap_icon_block != nullptr)
+			&&
+			(loot_item->matched_minimap_icon_block->pointer_to_forcibly_disable_minimap_icon_variant_button->selected_variant == 0)
+		)
 		{
 			float
 			size_multiplier = 1.0f - loot_item->matched_minimap_icon_size->selected_variant * 0.25;
@@ -24307,7 +24194,7 @@ EntityButton* EButtonGroupLootSimulator::pointer_to_input_area_level_button;
 
 
 
-bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EButtonGroupFilterBlock* _filter_block)
+bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loot_button, EGameItem* _game_item, EButtonGroupFilterBlock* _filter_block)
 {
 	bool is_matched = true;
 
@@ -24532,7 +24419,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 		//		LISTED
 		for (EButtonGroup* listed_lines : _filter_block->pointer_to_listed_segment->group_list)
 		{
-			auto data_container = static_cast<EDataContainer_Group_FilterBlockListedSegment*>(listed_lines->data_container);
+			auto block_data_container = static_cast<EDataContainer_Group_FilterBlockListedSegment*>(listed_lines->data_container);
 
 			bool this_listed_match = false;
 
@@ -24547,7 +24434,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 							EStringUtils::compare_ignoring_case
 							(
 								item_attribute.target_attribute->localisation.base_name,	//item
-								data_container->filter_attribute_name						//block
+								block_data_container->filter_attribute_name					//block
 							)
 							||
 							(false)
@@ -24560,7 +24447,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 					//any_listed_match = true;
 
 					//		FOR EVERY BLOCK ITEM
-					for (EntityButton* block_button : data_container->group_with_listed_buttons->workspace_button_list)
+					for (EntityButton* block_button : block_data_container->group_with_listed_buttons->workspace_button_list)
 						for (ELocalisationText item_listed_value : item_attribute.listed_value_list)
 						{
 							std::string button_attribute_name = "";
@@ -24584,61 +24471,46 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 								button_attribute_name = block_button->main_text_area->original_text;
 							}
 
-							//if
-							//(
-							//	(
-							//		(data_container->match_mode_router_button == nullptr)
-							//		||
-							//		(data_container->match_mode_router_button->selected_variant == 1)
-							//	)
-							//	&&
-							//	(_game_item->short_class_name != "")
-							//	&&
-							//	(button_attribute_name == "Ring")
-							//)
-							//{
-							//	
-							//	EInputCore::logger_param("item", item_listed_value.base_name);
-							//	EInputCore::logger_param("block", button_attribute_name);
-							//}
-
-
 							if
+							(
+								//		PATRIALLY MATCH
 								(
-									//		PATRIALLY MATCH
+									(block_data_container->match_mode_router_button != nullptr)
+									&&
+									(block_data_container->match_mode_router_button->selected_variant == 0)
+									&&
+									EStringUtils::A_contains_B_ignore_case
 									(
-										(data_container->match_mode_router_button != nullptr)
-										&&
-										(data_container->match_mode_router_button->selected_variant == 0)
-										&&
-										EStringUtils::A_contains_B_ignore_case
-										(
-											item_listed_value.base_name,	//item
-											button_attribute_name		//block
-										)
-										)
-									||
-									//		EXACT MATCH
-									(
-										(
-											(data_container->match_mode_router_button == nullptr)
-											||
-											(data_container->match_mode_router_button->selected_variant == 1)
-										)
-										&&
-										(
-											item_listed_value.base_name	//item
-											==
-											button_attribute_name		//block
-										)
-										)
+										item_listed_value.base_name,	//item
+										button_attribute_name		//block
 									)
+									)
+								||
+								//		EXACT MATCH
+								(
+									(
+										(block_data_container->match_mode_router_button == nullptr)
+										||
+										(block_data_container->match_mode_router_button->selected_variant == 1)
+									)
+									&&
+									(
+										item_listed_value.base_name	//item
+										==
+										button_attribute_name		//block
+									)
+									)
+							)
 							{
 
 
 								listed_match_count++;
 
-								if (!data_container->associated_item_attribute->have_input_field_for_listed)
+								//if (item_attribute.target_attribute->localisation.base_name == "")
+								_loot_button->suitable_buttons_list.push_back(block_button);
+
+
+								if (!block_data_container->associated_item_attribute->have_input_field_for_listed)
 								{
 									this_listed_match = true;
 									break;
@@ -24649,11 +24521,11 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EGameItem* _game_item, EBu
 
 						}
 
-					if ((data_container->associated_item_attribute->have_input_field_for_listed) && (data_container->input_field != nullptr))
+					if ((block_data_container->associated_item_attribute->have_input_field_for_listed) && (block_data_container->input_field != nullptr))
 					{
 						std::string input_field_value = ">=1";
 
-						if (data_container->input_field->main_text_area->original_text != "") { input_field_value = data_container->input_field->main_text_area->original_text; }
+						if (block_data_container->input_field->main_text_area->original_text != "") { input_field_value = block_data_container->input_field->main_text_area->original_text; }
 
 						if (!is_condition_sactified_for_listed_expression(input_field_value, listed_match_count))
 						{
@@ -24867,14 +24739,14 @@ void EButtonGroupLootSimulator::refresh_loot_simulator()
 
 
 
-			loot_button->matched_minimap_icon_color = nullptr;
-			loot_button->matched_minimap_icon_color_block = nullptr;
+			
 
+			loot_button->matched_minimap_icon_block = nullptr;
+
+			loot_button->matched_minimap_icon_color	= nullptr;
 			loot_button->matched_minimap_icon_shape = nullptr;
-			loot_button->matched_minimap_icon_shape_block = nullptr;
+			loot_button->matched_minimap_icon_size	= nullptr;
 
-			loot_button->matched_minimap_icon_size = nullptr;
-			loot_button->matched_minimap_icon_size_block = nullptr;
 
 			loot_button->matched_size_block = nullptr;
 
@@ -24882,6 +24754,7 @@ void EButtonGroupLootSimulator::refresh_loot_simulator()
 
 
 			loot_button->matched_filter_blocks.clear();
+			loot_button->suitable_buttons_list.clear();
 
 			loot_button->get_matched_filter_blocks_list(EWindowMain::loot_filter_editor);
 		}
@@ -25031,9 +24904,9 @@ void EButtonGroupLootSimulator::generate_info_buttons_for_right_side(EntityButto
 		create_info_button(_loot_button->matched_rama_color_block,			"button_matched_rama_color_block");
 		create_info_button(_loot_button->matched_text_color_block,			"button_matched_text_color_block");
 
-		create_info_button(_loot_button->matched_minimap_icon_color_block,	"button_matched_minimap_icon_color_block");
-		create_info_button(_loot_button->matched_minimap_icon_shape_block,	"button_matched_minimap_icon_shape_block");
-		create_info_button(_loot_button->matched_minimap_icon_size_block,	"button_matched_minimap_icon_size_block");
+		create_info_button(_loot_button->matched_minimap_icon_block,	"button_matched_minimap_icon_block");
+		//create_info_button(_loot_button->matched_minimap_icon_shape_block,	"button_matched_minimap_icon_shape_block");
+		//create_info_button(_loot_button->matched_minimap_icon_size_block,	"button_matched_minimap_icon_size_block");
 
 
 		create_info_button(_loot_button->matched_show_hide_block,			"button_matched_show_hide_block");

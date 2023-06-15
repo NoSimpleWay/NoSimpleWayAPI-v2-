@@ -494,7 +494,7 @@ public:
 	static bool		show_hidden;
 	//static float	show_hidden_cooldown;
 
-	static bool	this_group_is_matched(EGameItem* _game_item, EButtonGroupFilterBlock* _filter_block);
+	static bool	this_group_is_matched(EntityButtonLootItem* _loot_button, EGameItem* _game_item, EButtonGroupFilterBlock* _filter_block);
 	static bool	is_condition_satisfied(int _left, std::string _operator, int _right);
 	static bool	is_sockets_matched(std::string _block, std::string _operator, std::string _item);
 	void		refresh_loot_simulator();
@@ -921,7 +921,8 @@ public:
 	//DIVINATIONS FOLDER
 	static void register_pattern_folder_divinations();
 		static void register_pattern_divinations_expensive();
-		static void register_pattern_divinations_useful();
+		static void register_pattern_divinations_rare();
+		static void register_pattern_divinations_moderate();
 		static void register_pattern_divinations_cheap();
 		static void register_pattern_divinations_trash();
 	////////////////////////////////////////////////////////////////////////
@@ -1153,15 +1154,17 @@ public:
 
 	//MINIMAP ICONS
 	EntityButtonVariantRouter* matched_minimap_icon_shape;
-	EButtonGroupFilterBlock* matched_minimap_icon_shape_block;
+	//EButtonGroupFilterBlock* matched_minimap_icon_shape_block;
 
 	//
 	EntityButtonVariantRouter* matched_minimap_icon_color;
-	EButtonGroupFilterBlock* matched_minimap_icon_color_block;
+	//EButtonGroupFilterBlock* matched_minimap_icon_color_block;
 
 	//
 	EntityButtonVariantRouter* matched_minimap_icon_size;
-	EButtonGroupFilterBlock* matched_minimap_icon_size_block;
+	//EButtonGroupFilterBlock* matched_minimap_icon_size_block;
+
+	EButtonGroupFilterBlock* matched_minimap_icon_block;
 
 	//SIZE
 	float* matched_size;
@@ -1170,6 +1173,8 @@ public:
 
 	EntityButtonLootItem();
 	~EntityButtonLootItem();
+
+	std::vector<EntityButton*> suitable_buttons_list;
 
 
 

@@ -562,6 +562,8 @@ public:
 	void add_caption_by_localistation_key(std::string _key);
 	void add_help_button(ETextureGabarite* _texture_gabarite, std::string _key);
 
+	void scroll_to_this_button(EntityButton* _button);
+
 
 
 

@@ -287,8 +287,8 @@ void main()
 		//						lighted										unlighted									mix
 		
 		//always lighted by sky
-		matte_sun_light	=	vec3(0.90f, 0.95f, 1.0f)	* free_sky_light * (1.0f + sun_angle * 0.0f) * ground_light;
-		matte_sun_light	+=	vec3(1.00f, 0.95f, 0.90f)	* free_sun_light * sun_angle * sun_light_multiplier;
+		matte_sun_light	=	vec3(0.90f, 0.95f, 1.0f)	* free_sky_light * ground_light;
+		matte_sun_light	+=	vec3(1.00f, 0.95f, 0.9f)	* free_sun_light * sun_angle * sun_light_multiplier;
 		
 		//matte_sun_light = vec3(1.0f);
 	

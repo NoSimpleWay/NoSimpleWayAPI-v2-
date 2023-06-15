@@ -1444,6 +1444,28 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
 }
 
+void EntityButton::make_as_default_button_with_icon_and_localisation_by_key(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite, std::string _key)
+{
+	ELocalisationText
+	l_text = ELocalisationText(ELocalisationText::get_localisation_by_key(_key));
+
+	
+
+	make_as_default_button_with_icon_and_text
+	(
+		_region_gabarite,
+		_parent_group,
+		_dap,
+		_gabarite,
+		l_text.localisations[ELocalisationText::active_localisation]
+	);
+
+
+	
+	main_text_area->localisation_text = l_text;
+
+}
+
 void EntityButton::make_default_bool_switcher_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite_on, ETextureGabarite* _gabarite_off, bool* _target_bool)
 {
 
