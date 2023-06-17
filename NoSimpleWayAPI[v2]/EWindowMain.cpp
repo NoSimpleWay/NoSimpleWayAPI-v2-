@@ -5762,7 +5762,7 @@ EWindowMain::EWindowMain()
 				jc_button = new EntityButtonForFilterBlock();
 				jc_button->make_as_default_button_with_icon_and_localisation_by_key
 				(
-					new ERegionGabarite(100.0f, 30.0f),
+					new ERegionGabarite(110.0f, 34.0f),
 					top_section_left_part,
 					&EDataActionCollection::action_open_new_lootfilter_group,
 					NS_EGraphicCore::load_from_textures_folder("buttons/button_create_new_loot_filter"),
@@ -5779,7 +5779,7 @@ EWindowMain::EWindowMain()
 				jc_button = new EntityButtonForFilterBlock();
 				jc_button->make_as_default_button_with_icon_and_localisation_by_key
 				(
-					new ERegionGabarite(100.0f, 30.0f),
+					new ERegionGabarite(110.0f, 34.0f),
 					top_section_left_part,
 					&EDataActionCollection::action_open_loot_filters_list_window,
 					NS_EGraphicCore::load_from_textures_folder("buttons/button_open"),
@@ -5795,7 +5795,7 @@ EWindowMain::EWindowMain()
 
 				jc_button->make_as_default_button_with_icon_and_localisation_by_key
 				(
-					new ERegionGabarite(100.0f, 30.0f),
+					new ERegionGabarite(110.0f, 34.0f),
 					top_section_left_part,
 					&EDataActionCollection::action_save_lootfilter,
 					NS_EGraphicCore::load_from_textures_folder("buttons/button_save"),
@@ -5939,12 +5939,13 @@ EWindowMain::EWindowMain()
 		//////////////////////////////////////////////////////
 		EntityButtonButtonGroupActivator* button_activator = new EntityButtonButtonGroupActivator();
 
-		button_activator->make_as_default_button_with_icon
+		button_activator->make_as_default_button_with_icon_and_localisation_by_key
 		(
-			new ERegionGabarite(45.0f, 45.0f),
+			new ERegionGabarite(140.0f, 34.0f),
 			top_section_left_part,
 			&EDataActionCollection::action_open_and_refresh_loot_simulator,
-			NS_EGraphicCore::load_from_textures_folder("buttons/button_open_loot_simulator")
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_open_loot_simulator"),
+			"button_text_loot_simulator"
 		);
 		button_activator->force_field_right = 32.0f;
 		button_activator->add_default_description_by_key("description_open_loot_simulator");
