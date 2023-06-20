@@ -5728,14 +5728,31 @@ EWindowMain::EWindowMain()
 		//////////////////////////////////////////////////////
 		EButtonGroup* top_section_left_part = top_section->add_group
 		(
-			EButtonGroup::create_button_group_without_bg
+			EButtonGroup::create_default_button_group
 			(
-				new ERegionGabarite(100.0f, 46.0f),
+				new ERegionGabarite(405.0f, 46.0f),
 				EGUIStyle::active_style
 			)
-		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 		top_section_left_part->ignore_vertical_buttons_force_field = true;
 		//////////////////////////////////////////////////////
+		
+
+
+		//////////////////////////////////////////////////////
+		EButtonGroup* top_section_mid_part = top_section->add_group
+		(
+			EButtonGroup::create_default_button_group
+			(
+				new ERegionGabarite(150.0f, 46.0f),
+				EGUIStyle::active_style
+			)
+		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		top_section_mid_part->ignore_vertical_buttons_force_field = true;
+
+		top_section_mid_part->button_align_type = ButtonAlignType::BUTTON_ALIGN_LEFT;
+		//////////////////////////////////////////////////////
+
 
 
 		//////////////////////////////////////////////////////
@@ -5748,16 +5765,13 @@ EWindowMain::EWindowMain()
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_static_autosize);
 		top_section_right_part->ignore_vertical_buttons_force_field = true;
+
+		top_section_right_part->button_align_type = ButtonAlignType::BUTTON_ALIGN_RIGHT;
 		//////////////////////////////////////////////////////
 
+
+
 		/*		BUTTON FOR GROUPS		*/
-
-
-		
-
-
-
-
 				//////////////////////////////////////////////////////
 				jc_button = new EntityButtonForFilterBlock();
 				jc_button->make_as_default_button_with_icon_and_localisation_by_key
@@ -5771,7 +5785,10 @@ EWindowMain::EWindowMain()
 				jc_button->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_N);
 				jc_button->add_default_description_by_key("description_new_loot_filter");
 				top_section_left_part->add_button_to_working_group(jc_button);
+				jc_button->can_be_stretched = true;
 				//////////////////////////////////////////////////////
+
+
 
 
 
@@ -5788,7 +5805,12 @@ EWindowMain::EWindowMain()
 				jc_button->add_default_description_by_key("description_open_loot_filter");
 				jc_button->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_O);
 				top_section_left_part->add_button_to_working_group(jc_button);
+				jc_button->can_be_stretched = true;
 				//////////////////////////////////////////////////////
+
+
+
+
 
 				//////////////////////////////////////////////////////
 				jc_button = new EntityButtonForFilterBlock();
@@ -5802,16 +5824,12 @@ EWindowMain::EWindowMain()
 					"button_text_save_filter"
 				);
 
-				jc_button->force_field_right = 32.0f;
+				//jc_button->force_field_right = 32.0f;
 				jc_button->add_default_description_by_key("description_save_loot_filter");
 				jc_button->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_S);
-				/*EHotKeyManager hmanager;
-				hmanager.require_main_button = GLFW_KEY_LEFT_CONTROL;
-				hmanager.require_secondare_button = GLFW_KEY_S;
-				hmanager.parent_button = jc_button;
-				jc_button->hotkey_list.push_back(hmanager);*/
 
 				top_section_left_part->add_button_to_working_group(jc_button);
+				jc_button->can_be_stretched = true;
 				//////////////////////////////////////////////////////
 
 				if (NSW_APRIL_FOOL)
@@ -5942,16 +5960,16 @@ EWindowMain::EWindowMain()
 		button_activator->make_as_default_button_with_icon_and_localisation_by_key
 		(
 			new ERegionGabarite(140.0f, 34.0f),
-			top_section_left_part,
+			top_section_mid_part,
 			&EDataActionCollection::action_open_and_refresh_loot_simulator,
 			NS_EGraphicCore::load_from_textures_folder("buttons/button_open_loot_simulator"),
 			"button_text_loot_simulator"
 		);
-		button_activator->force_field_right = 32.0f;
+		//button_activator->force_field_right = 32.0f;
 		button_activator->add_default_description_by_key("description_open_loot_simulator");
 		button_activator->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_L);
 		//button_activator->target_group = EWindowMain::loot_simulator_button_group;
-		top_section_left_part->add_button_to_working_group(button_activator);
+		top_section_mid_part->add_button_to_working_group(button_activator);
 		//////////////////////////////////////////////////////
 
 
