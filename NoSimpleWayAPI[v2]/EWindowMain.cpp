@@ -747,21 +747,41 @@ void EDataActionCollection::action_create_new_loot_filter_with_name(Entity* _ent
 	EntityButton* but = static_cast<EntityButton*>(_entity);
 
 	if
-		(
-			(but->parent_button_group != nullptr)
-			&&
-			(but->parent_button_group->root_group != nullptr)
-			)
+	(
+		(but->parent_button_group != nullptr)
+		&&
+		(but->parent_button_group->root_group != nullptr)
+	)
 	{
 		std::string new_loot_filter_name = static_cast<EButtonGroupNewLootFilter*>(but->parent_button_group->root_group)->input_field_button->main_text_area->original_text;
 
-		EntityButtonFilterBlockTab*
-			tab = static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button);
+		EntityButtonFilterBlockTab* tab{};
+
+		//tab = static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button);
+
+		for (EntityButton* tab_button : EWindowMain::tab_list_group->workspace_button_list)
+		{
+			if (static_cast<EntityButtonFilterBlockTab*>(tab_button)->is_empty)
+			{
+				tab = static_cast<EntityButtonFilterBlockTab*>(tab_button);
+
+				EWindowMain::tab_list_group->selected_button = tab;
+
+				break;
+			}
+		}
+
+		if (tab == nullptr) { tab = static_cast<EntityButtonFilterBlockTab*>(EWindowMain::tab_list_group->selected_button); }
+
+		EDataActionCollection::action_select_this_tab(tab, tab->main_custom_data, _d);
 
 		EButtonGroup*
 		filter_editor = tab->target_filter_editor;
 
 		tab->is_empty = false;
+
+		//EWindowMain::loot_filter_editor = tab->target_filter_editor;
+		//EWindowMain::loot_filter_editor = EWindowMain::filter_block_tabs[tab->tab_id];
 
 		for (EButtonGroup* button_group : filter_editor->group_list)
 		{
@@ -779,12 +799,14 @@ void EDataActionCollection::action_create_new_loot_filter_with_name(Entity* _ent
 
 		filter_editor->scroll_y = 0.0f;
 
-		//EButtonGroup::refresh_button_group(filter_editor);
-		filter_editor->need_refresh;
+		
 
 		EWindowMain::create_new_loot_filter_group->close_this_group();;
 
 		EDataActionCollection::action_save_lootfilter(_entity, _custom_data, _d);
+
+		EButtonGroup::refresh_button_group(filter_editor);
+		filter_editor->need_refresh;
 	}
 }
 
@@ -1151,12 +1173,48 @@ void EDataActionCollection::action_change_force_field(Entity* _entity, ECustomDa
 	static_cast<EntityButton*>(_entity)->parent_button_group->highlight_this_group();
 }
 
-void EDataActionCollection::action_clear_text(Entity* _entity, ECustomData* _custom_data, float _d)
+void EDataActionCollection::action_clear_bottom_section_for_search_text(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	if (EWindowMain::bottom_filter_block_control->search_button != nullptr)
 	{
 		EWindowMain::bottom_filter_block_control->search_button->main_text_area->change_text("");
 		EDataActionCollection::action_type_search_filter_block_text(EWindowMain::bottom_filter_block_control->search_button->main_text_area);
+	}
+}
+
+void EDataActionCollection::action_clear_main_text_area(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButton* but = static_cast<EntityButton*>(_entity);
+
+	if (but->main_text_area != nullptr)
+	{
+		but->main_text_area->change_text("");
+		
+		for (text_actions_pointer dap : but->main_text_area->action_on_change_text)
+		{
+			dap(but->main_text_area);
+		}
+	}
+}
+
+void EDataActionCollection::action_clear_attached_text_area(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButtonClearAttachedTextArea*
+	but = static_cast<EntityButtonClearAttachedTextArea*>(_entity);
+
+	ETextArea*
+	clearable_text_area = but->attached_text_area;
+
+
+
+	if (clearable_text_area != nullptr)
+	{
+		clearable_text_area->change_text("");
+
+		for (text_actions_pointer dap : clearable_text_area->action_on_change_text)
+		{
+			dap(clearable_text_area);
+		}
 	}
 }
 
@@ -2702,7 +2760,7 @@ EWindowMain::EWindowMain()
 		(
 			new ERegionGabarite(30.0f, 30.0f),
 			main_bottom_filter_block_control,
-			&EDataActionCollection::action_clear_text,
+			&EDataActionCollection::action_clear_bottom_section_for_search_text,
 			NS_EGraphicCore::load_from_textures_folder("button_close[30x30]")
 		);
 		button_clear_text->add_default_description_by_key("description_remove_text");
@@ -3556,30 +3614,63 @@ EWindowMain::EWindowMain()
 		jc_button_group->stretch_x_by_parent_size = true;
 		jc_button_group->dynamic_size_y = false;
 
-		jc_button = new EntityButton();
-		jc_button->make_default_button_with_edible_text
-		(
-			new ERegionGabarite(600.0f, 25.0f),
-			jc_button_group,
-			nullptr,
-			""
-		);
-		//jc_button->can_be_stretched = true;
-		data_entity_main_group->main_input_field = jc_button;
 
-		jc_data_container_for_search_group->filter_text_area = jc_button->main_text_area;
 
-		jc_button->main_text_area->gray_text = ELocalisationText();
-		jc_button->main_text_area->gray_text.localisations[NSW_localisation_EN] = "Type search text...";
-		jc_button->main_text_area->gray_text.localisations[NSW_localisation_RU] = "Напишите текст поиска...";
+			////////////////////////////////////
+			EntityButtonClearAttachedTextArea*
+			clear_text_button = new EntityButtonClearAttachedTextArea();
+			jc_button_group->add_button_to_working_group(clear_text_button);
+			clear_text_button->do_not_generate_bg = true;
+			clear_text_button->make_as_default_button_with_icon
+			(
+				new ERegionGabarite(25.0f, 25.0f),
+				jc_button_group,
+				&EDataActionCollection::action_clear_attached_text_area,
+				NS_EGraphicCore::load_from_textures_folder("button_close")
+			);
+			////////////////////////////////////
 
-		jc_button->can_be_stretched = true;
 
-		jc_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_search_data_entity_text);
-		jc_button->add_default_description_by_key("description_data_entity_search");
-		jc_data_container_for_search_group->pointer_to_search_bar = jc_button;
+			//	INPUT FIELD (FILTER DATA ENTITY BY NAME)
+			{
+				EntityButton*
+				filter_text_button = new EntityButton();
+				filter_text_button->make_default_button_with_edible_text
+				(
+					new ERegionGabarite(600.0f, 25.0f),
+					jc_button_group,
+					nullptr,
+					""
+				);
+				//jc_button->can_be_stretched = true;
+				data_entity_main_group->main_input_field = filter_text_button;
 
-		jc_button_group->add_button_to_working_group(jc_button);
+				jc_data_container_for_search_group->filter_text_area = filter_text_button->main_text_area;
+
+				filter_text_button->main_text_area->gray_text = ELocalisationText();
+				filter_text_button->main_text_area->gray_text.localisations[NSW_localisation_EN] = "Type search text...";
+				filter_text_button->main_text_area->gray_text.localisations[NSW_localisation_RU] = "Напишите текст поиска...";
+
+				filter_text_button->can_be_stretched = true;
+
+				filter_text_button->main_text_area->action_on_change_text.push_back(&EDataActionCollection::action_type_search_data_entity_text);
+				filter_text_button->add_default_description_by_key("description_data_entity_search");
+				jc_data_container_for_search_group->pointer_to_search_bar = filter_text_button;
+
+				jc_button_group->add_button_to_working_group(filter_text_button);
+
+				clear_text_button->attached_text_area = filter_text_button->main_text_area;
+			}
+		////////////////////////////////////
+
+
+
+
+
+
+
+
+
 
 
 

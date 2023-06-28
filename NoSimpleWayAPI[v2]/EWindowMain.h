@@ -235,6 +235,11 @@ public:
 	MoveVectorMethod move_method = MoveVectorMethod::METHOD_DRAG;
 };
 
+class EntityButtonClearAttachedTextArea : public EntityButton
+{
+public:
+	ETextArea* attached_text_area;
+};
 
 
 
@@ -651,7 +656,9 @@ namespace EDataActionCollection
 
 	void action_change_separator_shrink_flag(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_change_force_field(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_clear_text(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_clear_bottom_section_for_search_text(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_clear_main_text_area(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_clear_attached_text_area(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_expand_all_separators(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_shrink_all_separators(Entity* _entity, ECustomData* _custom_data, float _d);
