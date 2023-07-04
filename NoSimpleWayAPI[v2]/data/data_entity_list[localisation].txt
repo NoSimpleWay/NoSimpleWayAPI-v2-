@@ -1170,3 +1170,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Preview"
 	[tag]"name RU"		[value]"Предпросмотр"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_text_world_parameters"
+	[tag]"name EN"		[value]"World parameters"
+	[tag]"name RU"		[value]"Параметры окружения"
+	

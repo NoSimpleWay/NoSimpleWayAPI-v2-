@@ -621,6 +621,7 @@ namespace EDataActionCollection
 	void action_switch_folder_for_data_entity_filter(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_open_loot_filters_list_window(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_confirm_creating_new_loot_filter(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_mark_button_group_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_this_loot_filter_from_list(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_add_all_entity_buttons_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);

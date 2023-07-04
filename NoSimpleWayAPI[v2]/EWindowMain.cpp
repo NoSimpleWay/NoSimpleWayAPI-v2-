@@ -374,6 +374,14 @@ void EDataActionCollection::action_open_loot_filters_list_window(Entity* _entity
 	EWindowMain::existing_loot_filter_list->need_refresh = true;
 }
 
+void EDataActionCollection::action_confirm_creating_new_loot_filter(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EButtonGroupConfirmAction::confirm_decline_group->close_this_group();
+
+	EWindowMain::create_new_loot_filter_group->activate_move_to_foreground_and_center();
+	EWindowMain::create_new_loot_filter_group->input_field_button->main_text_area->change_text("");
+}
+
 void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 
@@ -812,8 +820,24 @@ void EDataActionCollection::action_create_new_loot_filter_with_name(Entity* _ent
 
 void EDataActionCollection::action_open_new_lootfilter_group(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	EWindowMain::create_new_loot_filter_group->activate_move_to_foreground_and_center();
-	EWindowMain::create_new_loot_filter_group->input_field_button->main_text_area->change_text("");
+	if
+	(
+		(EWindowMain::header_line->pointer_to_bottom_tabs_section->selected_button != nullptr)
+		&&
+		(static_cast<EntityButtonFilterBlockTab*>(EWindowMain::header_line->pointer_to_bottom_tabs_section->selected_button)->unsave_changes)
+	)
+	{
+
+		EButtonGroupConfirmAction::confirm_decline_group->pointer_to_confirm_button->stored_action = &EDataActionCollection::action_confirm_creating_new_loot_filter;
+		EButtonGroupConfirmAction::confirm_decline_group->activate_move_to_foreground_and_center();
+
+		EButtonGroup::super_focus_on_this_group = EButtonGroupConfirmAction::confirm_decline_group;
+	}
+	else
+	{
+		EWindowMain::create_new_loot_filter_group->activate_move_to_foreground_and_center();
+		EWindowMain::create_new_loot_filter_group->input_field_button->main_text_area->change_text("");
+	}
 }
 
 void EDataActionCollection::action_clone_block(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -3385,7 +3409,7 @@ EWindowMain::EWindowMain()
 	if (true)
 	{
 		EButtonGroupNewLootFilter*
-		main_loot_filter_group = new EButtonGroupNewLootFilter(new ERegionGabarite(100.0f, 100.0f, 300.0f, 80.0f));
+		main_loot_filter_group = new EButtonGroupNewLootFilter(new ERegionGabarite(100.0f, 100.0f, 350.0f, 80.0f));
 		main_loot_filter_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 		main_loot_filter_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		main_loot_filter_group->root_group = main_loot_filter_group;
@@ -5835,10 +5859,10 @@ EWindowMain::EWindowMain()
 		(
 			EButtonGroup::create_default_button_group
 			(
-				new ERegionGabarite(150.0f, 46.0f),
+				new ERegionGabarite(300.0f, 46.0f),
 				EGUIStyle::active_style
 			)
-		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 		top_section_mid_part->ignore_vertical_buttons_force_field = true;
 
 		top_section_mid_part->button_align_type = ButtonAlignType::BUTTON_ALIGN_LEFT;
@@ -5854,7 +5878,7 @@ EWindowMain::EWindowMain()
 				new ERegionGabarite(350.0f, 46.0f),
 				EGUIStyle::active_style
 			)
-		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_static_autosize);
+		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 		top_section_right_part->ignore_vertical_buttons_force_field = true;
 
 		top_section_right_part->button_align_type = ButtonAlignType::BUTTON_ALIGN_RIGHT;
@@ -6077,12 +6101,13 @@ EWindowMain::EWindowMain()
 		//////////////////////////////////////////////////////
 		button_activator = new EntityButtonButtonGroupActivator();
 
-		button_activator->make_as_default_button_with_icon
+		button_activator->make_as_default_button_with_icon_and_localisation_by_key
 		(
-			new ERegionGabarite(45.0f, 45.0f),
-			top_section_right_part,
+			new ERegionGabarite(140.0f, 34.0f),
+			top_section_mid_part,
 			&EDataActionCollection::action_set_button_group_as_active,
-			NS_EGraphicCore::load_from_textures_folder("buttons/button_world_parameters")
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_world_parameters"),
+			"button_text_world_parameters"
 		);
 		button_activator->add_default_description_by_key("description_open_world_parameters");
 		button_activator->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_W);

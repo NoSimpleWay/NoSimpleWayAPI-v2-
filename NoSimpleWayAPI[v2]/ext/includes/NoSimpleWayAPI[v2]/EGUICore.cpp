@@ -1577,6 +1577,26 @@ void EButtonGroup::draw_button_group()
 
 			}
 
+			if (group_is_suppressed)
+			{
+
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GRAY, 0.25);
+				//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+				ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					batcher_for_default_draw->vertex_buffer,
+					batcher_for_default_draw->last_vertice_buffer_index,
+					region_gabarite->world_position_x + 0.0f,
+					region_gabarite->world_position_y + 0.0f,
+					region_gabarite->size_x - 0.0f,
+					region_gabarite->size_y - 0.0f,
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+
+
+			}
+
 			for (EButtonGroup* group : group_list) { group->post_draw(); }
 
 
