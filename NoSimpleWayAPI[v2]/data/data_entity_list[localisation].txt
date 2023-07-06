@@ -1069,6 +1069,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_red"
+	[tag]"base name"	[value]"Red"
 	[tag]"name EN"		[value]"Red"
 	[tag]"name RU"		[value]"Красный"
 	
@@ -1076,6 +1077,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_green"
+	[tag]"base name"	[value]"Green"
 	[tag]"name EN"		[value]"Green"
 	[tag]"name RU"		[value]"Зелёный"
 	
@@ -1083,6 +1085,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_blue"
+	[tag]"base name"		[value]"Blue"
 	[tag]"name EN"		[value]"Blue"
 	[tag]"name RU"		[value]"Синий"
 	
@@ -1090,6 +1093,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_brown"
+	[tag]"base name"	[value]"Brown"
 	[tag]"name EN"		[value]"Brown"
 	[tag]"name RU"		[value]"Коричневый"
 	
@@ -1097,13 +1101,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_white"
+	[tag]"base name"	[value]"White"
 	[tag]"name EN"		[value]"White"
-	[tag]"name RU"		[value]"Красный"
+	[tag]"name RU"		[value]"Белый"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_yellow"
+	[tag]"base name"	[value]"Yellow"
 	[tag]"name EN"		[value]"Yellow"
 	[tag]"name RU"		[value]"Жёлтый"
 	
@@ -1111,6 +1117,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_cyan"
+	[tag]"base name"	[value]"Cyan"
 	[tag]"name EN"		[value]"Cyan"
 	[tag]"name RU"		[value]"Голубой"
 	
@@ -1132,6 +1139,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_pink"
+	[tag]"base name"	[value]"Pink"
 	[tag]"name EN"		[value]"Pink"
 	[tag]"name RU"		[value]"Розовый"
 	
@@ -1139,6 +1147,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_purple"
+	[tag]"base name"	[value]"Purle"
 	[tag]"name EN"		[value]"Purle"
 	[tag]"name RU"		[value]"Фиолетовый"
 	
