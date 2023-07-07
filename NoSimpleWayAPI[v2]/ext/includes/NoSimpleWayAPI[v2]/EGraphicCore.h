@@ -326,6 +326,8 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_button_radiance_dot;
 
 	extern ETextureGabarite* texture_close_circle;
+
+	extern ETextureGabarite* texture_socket;
 	//extern 
 }
 
@@ -337,8 +339,9 @@ namespace NS_EColorUtils
 {
 	const EColor_4 COLOR_WHITE[4]		{ 1.0f,		1.0f,	1.0f,	1.0f };
 	const EColor_4 COLOR_BLACK[4]		{ 0.0f,		0.0f,	0.0f,	1.0f };
-	const EColor_4 COLOR_GRAY[4]		{ 0.5f,		0.5f,	0.5f,	1.0f };
-	const EColor_4 COLOR_DARK_GRAY[4]	{ 0.25f,	0.25f,	0.25f,	1.0f };
+	const EColor_4 COLOR_GREY[4]		{ 0.5f,		0.5f,	0.5f,	1.0f };
+	const EColor_4 COLOR_DARK_GREY[4]	{ 0.25f,	0.25f,	0.25f,	1.0f };
+	const EColor_4 COLOR_LIGHT_GREY[4]	{ 0.75f,	0.75f,	0.75f,	1.0f };
 
 	const EColor_4 COLOR_RED[4]			{ 1.0f,		0.0f,	0.0f,	1.0f };
 	const EColor_4 COLOR_GREEN[4]		{ 0.0f,		1.0f,	0.0f,	1.0f };
@@ -349,6 +352,8 @@ namespace NS_EColorUtils
 	const EColor_4 COLOR_CYAN[4]		{ 0.0f,		1.0f,	1.0f,	1.0f };
 
 	const EColor_4 COLOR_ORANGE[4]		{ 1.0f,		0.5f,	0.0f,	1.0f };
+
+	const EColor_4 COLOR_BRIGHT_LEAD[4]	{ 0.70f,	0.75f,	0.80f,	1.0f };
 	
 
 	extern const EColor_4(&choose_from_two(const EColor_4(&_color1)[4], const EColor_4(&_color2)[4], bool _condition))[4];

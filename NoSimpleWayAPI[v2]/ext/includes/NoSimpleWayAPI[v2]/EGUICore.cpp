@@ -1003,7 +1003,7 @@ void EButtonGroup::draw_button_group()
 			//BLURED SHADOW
 			if (EButtonGroup::super_focus_on_this_group == this)
 			{
-				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GRAY, 0.64f);
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GREY, 0.64f);
 				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 				(
@@ -1116,7 +1116,7 @@ void EButtonGroup::draw_button_group()
 
 			if (have_rama)
 			{
-				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GRAY, 1.0f);
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GREY, 1.0f);
 				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
 
 				NS_ERenderCollection::add_data_to_vertex_buffer_rama
@@ -1580,7 +1580,7 @@ void EButtonGroup::draw_button_group()
 			if (group_is_suppressed)
 			{
 
-				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GRAY, 0.25);
+				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREY, 0.25);
 				//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
 				ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
 				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size

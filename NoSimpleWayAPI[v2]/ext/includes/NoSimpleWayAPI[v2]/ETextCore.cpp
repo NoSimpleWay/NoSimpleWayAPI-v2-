@@ -627,7 +627,7 @@ void ETextArea::generate_text()
 			}
 			else
 			{
-				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GRAY);
+				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREY);
 			}
 
 			for (int i = 0; i < str_lenght; i++)

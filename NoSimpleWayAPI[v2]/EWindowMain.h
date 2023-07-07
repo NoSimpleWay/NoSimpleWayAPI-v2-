@@ -585,6 +585,17 @@ public:
 	std::vector<EButtonGroup*> blocks_for_hide_list;
 };
 
+class EButtonGroupSocketPreview : public EButtonGroup
+{
+public:
+	EButtonGroupSocketPreview(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+	
+	ETextureGabarite* icon_texture{};
+	EGameItem* stored_game_item{};
+
+	void draw_button_group() override;
+};
+
 class EDataContainer_Group_FilterBlockListedSegment : public EDataContainer
 {
 public:
@@ -1128,7 +1139,6 @@ public:
 
 
 
-
 };
 
 struct ESuitableFilterBlock
@@ -1335,7 +1345,9 @@ enum SocketColorEnum
 	SOCKET_COLOR_ENUM_BLUE,
 	SOCKET_COLOR_ENUM_WHITE,
 	SOCKET_COLOR_ENUM_ABYSS,
-	SOCKET_COLOR_ENUM_DELVE
+	SOCKET_COLOR_ENUM_DELVE,
+
+	_SOCKET_COLOR_ENUM_LAST_ELEMENT
 };
 struct GameAttributeGeneratorSocketsLinksColours : public GameAttributeGenerator
 {

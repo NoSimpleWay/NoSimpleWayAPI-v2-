@@ -723,10 +723,16 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 		jc_button->main_text_area = jc_text_area;
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		ESpriteLayer* second_button_layer = nullptr;
-		if ((_data_entity != nullptr) && (DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity) != ""))
+		if (_data_entity != nullptr)
 		{
 
-			ETextureGabarite* item_icon = NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity));
+			ETextureGabarite*
+			item_icon =
+			(DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity) != "")
+			?
+			(NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity)))
+			:
+			(nullptr);
 
 			float resize_factor = 0.0f;
 			float offset_x = 0.0f;
@@ -1632,7 +1638,7 @@ void EntityButton::draw()
 
 	if ((suppressor != nullptr) && (!*suppressor))
 	{
-		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GRAY, 0.85f);
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GREY, 0.85f);
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(

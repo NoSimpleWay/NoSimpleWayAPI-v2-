@@ -126,6 +126,8 @@ namespace NS_DefaultGabarites
 	ETextureGabarite* texture_button_radiance_dot;
 
 	ETextureGabarite* texture_close_circle;
+
+	ETextureGabarite* texture_socket;
 }
 ERenderBatcher::ERenderBatcher()
 {
@@ -749,6 +751,9 @@ void NS_EGraphicCore::initiate_graphic_core()
 	//NS_DefaultGabarites::texture_slider_bg_lead_and_gold				= NS_EGraphicCore::put_texture_to_atlas("data/textures/slider_bg_lead_and_gold.png", NS_EGraphicCore::default_texture_atlas);
 
 	NS_DefaultGabarites::texture_close_circle					= NS_EGraphicCore::load_from_textures_folder("close_circle");
+	
+
+	NS_DefaultGabarites::texture_socket							= NS_EGraphicCore::load_from_textures_folder("socket");
 	//[0]2048(1024)
 	//[1]1024
 	//[2]512
@@ -849,7 +854,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 
 		//***********************************************************
 		//darken gutton group
@@ -954,7 +959,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 10.0f, 10.0f, 10.0f, 10.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 8, 0);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 
 		//***********************************************************
 		//darken gutton group
@@ -1054,7 +1059,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 1, 1);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 
 		//***********************************************************
 		//darken gutton group
@@ -1153,7 +1158,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 2, 0);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 		//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");
@@ -1240,7 +1245,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 3, 2);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 		//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");
@@ -1331,7 +1336,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 		//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");
@@ -1420,7 +1425,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 4.0f, 4.0f, 4.0f, 4.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 		//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");
@@ -1510,7 +1515,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 5.0f, 5.0f, 5.0f, 5.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 3, 3);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 		//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");
@@ -1599,7 +1604,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 3.0f, 3.0f, 3.0f, 3.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 3, 3);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 	//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");
@@ -1687,7 +1692,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 		//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");
@@ -1787,7 +1792,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 6.0f, 6.0f, 6.0f, 6.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 2, 2);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 	//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");
@@ -1887,7 +1892,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 2.0f, 2.0f, 2.0f, 2.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 0, 0);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 		//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");
@@ -1991,7 +1996,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 12.0f, 12.0f, 12.0f, 12.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 1, 1);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 		//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");
@@ -2091,7 +2096,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 0, 4);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 		//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");
@@ -2191,7 +2196,7 @@ void NS_EGraphicCore::create_styles()
 		EBrickStyle::set_offset_size(jc_brick, 7.0f, 7.0f, 7.0f, 7.0f);
 		EBrickStyle::set_subdivisions(jc_brick, 1, 1);
 
-		just_created_style->brick_style[BrickStyleID::GROUP_MAIN] = *jc_brick;
+		just_created_style->brick_style[BrickStyleID::GROUP_DEFAULT] = *jc_brick;
 		//***********************************************************
 		//darken gutton group
 		jc_brick = new EBrickStyle("Root_group_bg");

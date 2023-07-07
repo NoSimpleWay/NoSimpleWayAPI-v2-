@@ -1835,6 +1835,59 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 			main_group->root_group = main_group;
 			//
 
+					/////	PART FOR ITEM NAME, SOCKET INDICATOR, DESCRIPTION	//////////////////////////////////////////////////////////////////////////////////////////////////
+					EButtonGroup*
+					top_part_for_item_info = main_group->add_group(new EButtonGroup(new ERegionGabarite(200.0f, 200.0f)));
+
+					top_part_for_item_info->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+					top_part_for_item_info->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+					////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+							/////	SOCKETS	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+							EButtonGroupSocketPreview*
+							left_part_for_sockets = new EButtonGroupSocketPreview(new ERegionGabarite(100.0f, 200.0f));
+							
+							top_part_for_item_info->add_group(left_part_for_sockets);
+
+							left_part_for_sockets->icon_texture		= loot_button->stored_game_item->icon;
+							left_part_for_sockets->stored_game_item	= loot_button->stored_game_item;
+
+							left_part_for_sockets->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+							left_part_for_sockets->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+							////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+							////	TEXT DESCRIPTION	/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							EButtonGroup*
+							right_part_for_description = top_part_for_item_info->add_group(new EButtonGroup(new ERegionGabarite(200.0f, 200.0f)));
+
+							right_part_for_description->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+							right_part_for_description->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+							/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+									// 
+									//		BOTTOM PART FOR ATTRIBUTES
+									EButtonGroup*
+									description_bottom_part = right_part_for_description->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 100.0f)));
+
+									description_bottom_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+									description_bottom_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
+									//
+
+
+
+									//		TOP PART FOR NAME
+									EButtonGroup*
+									description_top_part = right_part_for_description->add_group(new EButtonGroup(new ERegionGabarite(500.0f, 30.0f)));
+
+									description_top_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+									description_top_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+									//
+
+
+
+
 			if (true/*fatruelse*/)
 			{
 				int selected_version_router = EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant;
@@ -1864,32 +1917,15 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 				}
 				//
 				
-				// 
-				//		BOTTOM PART FOR ATTRIBUTES
-				EButtonGroup*
-				bottom_part = main_group->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 100.0f)));
 
-				bottom_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-				bottom_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
-				//
-
-
-
-				//		UP PART FOR NAME
-				EButtonGroup*
-					up_part = main_group->add_group(new EButtonGroup(new ERegionGabarite(500.0f, 30.0f)));
-
-				up_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
-				up_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
-				//
 
 
 				/////////////		CLICKABLE AREA FOR BOTTOM PART (ATTRIBUTES)		/////////////
 				if (true)
 				{
 					EClickableArea*
-					clickable_area_for_bottom_attributes = EClickableArea::create_default_clickable_region(bottom_part->region_gabarite, main_group);
-					bottom_part->clickable_area_list.push_back(clickable_area_for_bottom_attributes);
+					clickable_area_for_bottom_attributes = EClickableArea::create_default_clickable_region(description_bottom_part->region_gabarite, main_group);
+					description_bottom_part->clickable_area_list.push_back(clickable_area_for_bottom_attributes);
 
 					std::string item_attributes_generated_text = "";
 
@@ -1970,8 +2006,8 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 				if (true)
 				{
 					EClickableArea*
-					clickable_area_for_top_name = EClickableArea::create_default_clickable_region(up_part->region_gabarite, main_group);
-					up_part->clickable_area_list.push_back(clickable_area_for_top_name);
+					clickable_area_for_top_name = EClickableArea::create_default_clickable_region(description_top_part->region_gabarite, main_group);
+					description_top_part->clickable_area_list.push_back(clickable_area_for_top_name);
 
 					ETextArea*
 						text_area_for_group = ETextArea::create_centered_text_area
@@ -3157,7 +3193,7 @@ EWindowMain::EWindowMain()
 					//BOTTOM
 					EButtonGroup*
 					group_for_preview = style_sample->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 40.0f)));
-					group_for_preview->init_button_group(gui_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+					group_for_preview->init_button_group(gui_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 					group_for_preview->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 					group_for_preview->additional_y_distance = 0.0f;
 					group_for_preview->can_change_style = false;
@@ -3166,7 +3202,7 @@ EWindowMain::EWindowMain()
 					//UP
 					EButtonGroup*
 					style_select_group = style_sample->add_group(new EButtonGroup(new ERegionGabarite(100.0f, 40.0f)));
-					style_select_group->init_button_group(gui_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+					style_select_group->init_button_group(gui_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 					style_select_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 					style_select_group->additional_y_distance = 0.0f;
 					style_select_group->can_change_style = false;
@@ -3360,7 +3396,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		EButtonGroup*
 		loot_filter_error_bottom_part_fot_buttons = new EButtonGroup(new ERegionGabarite(300.0f, 40.0f));
-		loot_filter_error_bottom_part_fot_buttons->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_without_slider);
+		loot_filter_error_bottom_part_fot_buttons->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
 		loot_filter_error_bottom_part_fot_buttons->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		loot_filter_error_bottom_part_fot_buttons->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
@@ -3389,7 +3425,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		EButtonGroup*
 		loot_filter_error_top_part_fot_text = new EButtonGroup(new ERegionGabarite(300.0f, 25.0f));
-		loot_filter_error_top_part_fot_text->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_without_slider);
+		loot_filter_error_top_part_fot_text->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
 		loot_filter_error_top_part_fot_text->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 
 		loot_filter_error_workspace->add_group(loot_filter_error_top_part_fot_text);
@@ -4144,7 +4180,7 @@ EWindowMain::EWindowMain()
 		////////////////////////////////
 		EButtonGroup*
 			top_control_part = new EButtonGroup(new ERegionGabarite(90.0f, 40.0f));
-		top_control_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+		top_control_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 		top_control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 		workspace_part->add_group(top_control_part);
 
@@ -4153,7 +4189,7 @@ EWindowMain::EWindowMain()
 		/////////		PATTERNS		//////////
 		EButtonGroup*
 			left_part_for_patterns = new EButtonGroup(new ERegionGabarite(250.0f, 500.0f));
-		left_part_for_patterns->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+		left_part_for_patterns->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 		left_part_for_patterns->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 		//left_part_for_patterns->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
@@ -4176,7 +4212,7 @@ EWindowMain::EWindowMain()
 		/////////		USED BLOCKS INFO		//////////
 		EButtonGroup*
 			right_loot_part = new EButtonGroup(new ERegionGabarite(200.0f, 10.0f));
-		right_loot_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+		right_loot_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 		right_loot_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 		bottom_loot_part->add_group(right_loot_part);
 		whole_loot_simulator_group->pointer_to_right_side_info_buttons = right_loot_part;
@@ -5486,13 +5522,13 @@ EWindowMain::EWindowMain()
 
 		EButtonGroup*
 			used_resoures_part = about_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(50.0f, 200.0f)));
-		used_resoures_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+		used_resoures_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 		used_resoures_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		used_resoures_part->button_size_x_override = 200.0f;
 
 		EButtonGroup*
 			contact_info_part = about_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(50.0f, 200.0f)));
-		contact_info_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+		contact_info_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 		contact_info_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		contact_info_part->button_size_x_override = 200.0f;
 
@@ -9995,7 +10031,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	control_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
 	control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 
-	control_part->fake_borders_id = BrickStyleID::GROUP_MAIN;
+	control_part->fake_borders_id = BrickStyleID::GROUP_DEFAULT;
 	control_part->pointer_to_filter_block_group = whole_filter_block_group;
 	control_part->debug_name = "Control part";
 	control_part->can_resize_to_workspace_size_y = true;
@@ -10008,7 +10044,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			EButtonGroup*
 			block_for_ID = new EButtonGroup(new ERegionGabarite(left_control_segment_size, 30.0f));
-			block_for_ID->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+			block_for_ID->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 			block_for_ID->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 			block_for_ID->debug_name = "Left show/hide";
 
@@ -10020,7 +10056,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			EButtonGroup*
 			block_for_show_hide_continue = new EButtonGroup(new ERegionGabarite(non_listed_segment_size, 30.0f));
-			block_for_show_hide_continue->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+			block_for_show_hide_continue->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 			block_for_show_hide_continue->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 			block_for_show_hide_continue->debug_name = "Left show/hide";
 
@@ -10051,7 +10087,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			EButtonGroup*
 			block_for_loot_versions = new EButtonGroup(new ERegionGabarite(111.0f, 30.0f));
-			block_for_loot_versions->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_without_slider);
+			block_for_loot_versions->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
 			block_for_loot_versions->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 			block_for_loot_versions->debug_name = "Versions";
 
@@ -10068,7 +10104,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			EButtonGroup*
 			block_for_cosmetic_show_hide = new EButtonGroup(new ERegionGabarite(165.0f, 30.0f));
-			block_for_cosmetic_show_hide->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+			block_for_cosmetic_show_hide->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 			block_for_cosmetic_show_hide->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 			block_for_cosmetic_show_hide->debug_name = "Show/hide cosmetic";
 
@@ -10082,7 +10118,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			EButtonGroup*
 			block_for_preiew_box = new EButtonGroup(new ERegionGabarite(ray_preview_segment_size + preview_box_segment_size, 30.0f));
-			block_for_preiew_box->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+			block_for_preiew_box->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 			block_for_preiew_box->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 			whole_filter_block_group->pointer_to_preview_box_segment = block_for_preiew_box;
@@ -13008,7 +13044,9 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								for (EDataEntity* de : *target_data_entity_list)
 								{
 									if
-										(
+									(
+											(!DataEntityUtils::is_exist_tag_by_name_and_value(0,"item tag", "Hidden item", de))
+											&&
 											(
 												(DataEntityUtils::get_tag_value_by_name(0, "name EN", de) == buffer_text)
 												||
@@ -13018,7 +13056,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 											)
 											&&
 											(EFilterRule::matched_by_filter_rule(de, filter_rule, ""))
-											)
+									)
 									{
 										matched_data_entity = de;
 
@@ -21936,7 +21974,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 
 	EButtonGroup*
 	whole_listed_line = new EButtonGroup(new ERegionGabarite(800.0f, line_height));
-	whole_listed_line->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+	whole_listed_line->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 
 
 	//whole_listed_line->can_be_resized_to_highest_point_y = true;
@@ -23111,7 +23149,7 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 			if (stack_multiplier_value != "") { _game_item->stack_multiplier = std::stof(stack_multiplier_value); }
 
 
-
+			_game_item->icon = NS_EGraphicCore::load_from_textures_folder ("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _game_item->stored_data_entity));
 
 			//BASE NAME AND LOCALISED NAMES
 			_game_item->localised_name.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", _game_item->stored_data_entity);
@@ -23641,128 +23679,180 @@ void GameItemGenerator::add_class(ELocalisationText _attribute_localisation)
 
 void GameAttributeGeneratorSocketsLinksColours::execute_generation(EGameItem* _game_item)
 {
-	std::string temp_socket_color_names = "RGBWAD";
+	
 
-	int exactly_color_count[6]{ 0 };
-	//int color_id_array[6]		{ 0 };
-
-	int total_weight = 0;
-
-	int sockets_count = sockets_min_value + round((float)(sockets_max_value - sockets_min_value) * pow((rand() % 101) / 100.0f, sockets_pow / EWindowMain::loot_simulator_button_group->MF_factor));
-	int links_count = links_min + round((float)(links_max - links_min) * pow((rand() % 101) / 100.0f, links_pow / EWindowMain::loot_simulator_button_group->MF_factor));
-
-	std::string sockets_result_string = "";
-	std::string links_result_string = "";
-
-	links_count = min(links_count, sockets_count);
-	if (links_count == 1) { links_count = 0; }
-
-	for (int i = 0; i < 6; i++)
+	static std::vector<std::string> suitable_classes
 	{
-		total_weight += color_weight[i];
+		"Claws",
+		"Wands",
+		"Sceptres",
+		"One Hand Swords",
+		"Thrusting One Hand Swords",
+		"Two Hand Swords",
+		"One Hand Axes",
+		"Two Hand Axes",
+		"One Hand Maces",
+		"Two Hand Maces",
+		"Bows",
+		"Staves",
+		"Warstaves",
+		"Fishing Rods",
+		"Gloves",
+		"Helmets",
+		"Boots",
+		"Body Armours",
+		"Shields"
+	};
+
+	bool wrong_base = true;
+	for (int i = 0; i < _game_item->attribute_container_list.size(); i++)
+	{
+		EGameItemAttributeContainer*
+		pointer_to_container = &_game_item->attribute_container_list[i];
+
+		if (pointer_to_container->target_attribute->localisation.base_name == "Class")
+		{
+			for (ELocalisationText value_variants : pointer_to_container->listed_value_list)
+			{
+				for (int i = 0; i < suitable_classes.size(); i++)
+				{
+					if (value_variants.base_name == suitable_classes[i])
+					{
+						wrong_base = false;
+
+						break;
+					}
+				}
+			}
+		}
 	}
 
-	int random_selected = 0;
-
-	int weight_sum = 0;
-
-	int result_color_id = -1;
-
-	for (int sc = 0; sc < sockets_count; sc++)
+	if (!wrong_base)
 	{
-		random_selected = rand() % total_weight + 1;
-		weight_sum = 0;
-		result_color_id = 0;
+
+		std::string temp_socket_color_names = "RGBWAD";
+
+		int exactly_color_count[6]{ 0 };
+		//int color_id_array[6]		{ 0 };
+
+		int total_weight = 0;
+
+		int sockets_count = sockets_min_value + round((float)(sockets_max_value - sockets_min_value) * pow((rand() % 101) / 100.0f, sockets_pow / EWindowMain::loot_simulator_button_group->MF_factor));
+		int links_count = links_min + round((float)(links_max - links_min) * pow((rand() % 101) / 100.0f, links_pow / EWindowMain::loot_simulator_button_group->MF_factor));
+
+		std::string sockets_result_string = "";
+		std::string links_result_string = "";
+
+		links_count = min(links_count, sockets_count);
+		if (links_count == 1) { links_count = 0; }
 
 		for (int i = 0; i < 6; i++)
 		{
-			if
-				(
-					(color_weight[i] > 0)
-					&&
-					(weight_sum <= random_selected)
-					&&
-					(color_weight[i] + weight_sum > random_selected)
-					)
-			{
-				result_color_id = i;
-				break;
-			}
-
-			weight_sum += color_weight[i];
+			total_weight += color_weight[i];
 		}
 
-		//color_id_array[sc] = result_color_id;
+		int random_selected = 0;
 
-		_game_item->socket_color_id_array[sc] = result_color_id;
-	}
+		int weight_sum = 0;
 
-	_game_item->sockets_count = sockets_count;
-	_game_item->links_count = links_count;
+		int result_color_id = -1;
 
-	sockets_result_string = std::to_string(sockets_count);
-	links_result_string = std::to_string(links_count);
+		for (int sc = 0; sc < sockets_count; sc++)
+		{
+			random_selected = rand() % total_weight + 1;
+			weight_sum = 0;
+			result_color_id = 0;
 
-	//		GENERATE COLOR SOCKETS STRING LIKE "RRRGGB"
-	for (int i = 0; i < 6; i++) { exactly_color_count[i] = 0; }
-
-	for (int i = 0; i < sockets_count; i++)
-	{
-		exactly_color_count[_game_item->socket_color_id_array[i]]++;
-	};
-
-	for (int i = 0; i < 6; i++)
-		if (exactly_color_count[i] > 0)
-			for (int j = 0; j < exactly_color_count[i]; j++)
+			for (int i = 0; i < 6; i++)
 			{
-				sockets_result_string.append(1, temp_socket_color_names[i]);
+				if
+					(
+						(color_weight[i] > 0)
+						&&
+						(weight_sum <= random_selected)
+						&&
+						(color_weight[i] + weight_sum > random_selected)
+						)
+				{
+					result_color_id = i;
+					break;
+				}
+
+				weight_sum += color_weight[i];
 			}
 
-	//		GENERATE COLOR LINKS STRING LIKE "RRRGGB"
-	for (int i = 0; i < 6; i++) { exactly_color_count[i] = 0; }
+			//color_id_array[sc] = result_color_id;
 
-	for (int i = 0; i < links_count; i++)
-	{
-		exactly_color_count[_game_item->socket_color_id_array[i]]++;
-	};
+			_game_item->socket_color_id_array[sc] = result_color_id;
+		}
 
-	for (int i = 0; i < 6; i++)
-		if (exactly_color_count[i] > 0)
-			for (int j = 0; j < exactly_color_count[i]; j++)
+		_game_item->sockets_count = sockets_count;
+		_game_item->links_count = links_count;
+
+		sockets_result_string = std::to_string(sockets_count);
+		links_result_string = std::to_string(links_count);
+
+		//		GENERATE COLOR SOCKETS STRING LIKE "RRRGGB"
+		for (int i = 0; i < 6; i++) { exactly_color_count[i] = 0; }
+
+		for (int i = 0; i < sockets_count; i++)
+		{
+			exactly_color_count[_game_item->socket_color_id_array[i]]++;
+		};
+
+		for (int i = 0; i < 6; i++)
+			if (exactly_color_count[i] > 0)
+				for (int j = 0; j < exactly_color_count[i]; j++)
+				{
+					sockets_result_string.append(1, temp_socket_color_names[i]);
+				}
+
+		//		GENERATE COLOR LINKS STRING LIKE "RRRGGB"
+		for (int i = 0; i < 6; i++) { exactly_color_count[i] = 0; }
+
+		for (int i = 0; i < links_count; i++)
+		{
+			exactly_color_count[_game_item->socket_color_id_array[i]]++;
+		};
+
+		for (int i = 0; i < 6; i++)
+			if (exactly_color_count[i] > 0)
+				for (int j = 0; j < exactly_color_count[i]; j++)
+				{
+					links_result_string.append(1, temp_socket_color_names[i]);
+				}
+
+
+		//		GENERATE NEW ATTRIBUTE FOR SOCKETS OR LINKS
+		{
+			EGameItemAttributeContainer
+				new_attribute_container;
+
+			if (target_attribute->localisation.base_name == "Sockets")
 			{
-				links_result_string.append(1, temp_socket_color_names[i]);
+				target_attribute_container->attribute_value_str = sockets_result_string;
+
+				new_attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "SocketGroup");
+				new_attribute_container.attribute_value_str = links_result_string;
 			}
+			else
+				if (target_attribute->localisation.base_name == "SocketGroup")
+				{
+					target_attribute_container->attribute_value_str = links_result_string;
 
+					new_attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "Sockets");
+					new_attribute_container.attribute_value_str = sockets_result_string;
+				}
+			_game_item->attribute_container_list.push_back(new_attribute_container);
+		}
 
-	//		GENERATE NEW ATTRIBUTE FOR SOCKETS OR LINKS
-	{
 		EGameItemAttributeContainer
 			new_attribute_container;
 
-		if (target_attribute->localisation.base_name == "Sockets")
-		{
-			target_attribute_container->attribute_value_str = sockets_result_string;
-
-			new_attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "SocketGroup");
-			new_attribute_container.attribute_value_str = links_result_string;
-		}
-		else
-			if (target_attribute->localisation.base_name == "SocketGroup")
-			{
-				target_attribute_container->attribute_value_str = links_result_string;
-
-				new_attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "Sockets");
-				new_attribute_container.attribute_value_str = sockets_result_string;
-			}
+		new_attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "LinkedSockets");
+		new_attribute_container.attribute_value_int = links_count;
 		_game_item->attribute_container_list.push_back(new_attribute_container);
 	}
-
-	EGameItemAttributeContainer
-		new_attribute_container;
-
-	new_attribute_container.target_attribute = GameItemAttribute::get_attribute_by_name(&registered_game_item_attributes, "LinkedSockets");
-	new_attribute_container.attribute_value_int = links_count;
-	_game_item->attribute_container_list.push_back(new_attribute_container);
 }
 
 void EGameItem::import_base_attributes_from_data_entity()
@@ -25369,7 +25459,7 @@ void DescriptionContainerSeparatorExample::create_description()
 			{
 				EButtonGroup*
 				fb = new EButtonGroup(new ERegionGabarite(120.0f, 50.0f));
-				fb->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_MAIN, bgroup_with_slider);
+				fb->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 				fb->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 				fb->debug_name = "Whole filter block";
 				fb->focusable_for_select = true;
@@ -25548,4 +25638,211 @@ bool EntityButtonLootPatternSelector::entity_is_active()
 bool EntityButtonFilterRule::entity_is_active()
 {
 	return EntityButton::entity_is_active() && (!hidden_by_folder);
+}
+
+void EButtonGroupSocketPreview::draw_button_group()
+{
+	if (icon_texture != nullptr)
+	{
+		EColor_4 color_table[6][4];
+
+		for (int i = 0; i < 4; i++)
+		{
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_RED][i]		= NS_EColorUtils::COLOR_RED[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_GREEN][i]	= NS_EColorUtils::COLOR_GREEN[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_BLUE][i]		= NS_EColorUtils::COLOR_BLUE[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_WHITE][i]	= NS_EColorUtils::COLOR_WHITE[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_DELVE][i]	= NS_EColorUtils::COLOR_YELLOW[i];
+			color_table[SocketColorEnum::SOCKET_COLOR_ENUM_ABYSS][i]	= NS_EColorUtils::COLOR_BLACK[i];
+		}
+
+
+		short	link_offset_correction_array_x[5]{1, 0, -1, 0, 1};
+		short	link_offset_correction_array_y[5]{0, 1, 0, 1, 0};
+
+		float offset_x = 0.0f;
+		float offset_y = 0.0f;
+
+		offset_x = (region_gabarite->size_x - icon_texture->size_x_in_pixels) / 2.0f;
+		offset_y = (region_gabarite->size_y - icon_texture->size_y_in_pixels) / 2.0f;
+
+		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
+
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			//x pos
+			region_gabarite->world_position_x + offset_x,
+
+			//y pos
+			region_gabarite->world_position_y + offset_y,
+
+			icon_texture->size_x_in_pixels,
+			icon_texture->size_y_in_pixels,
+
+			icon_texture
+		);
+
+		float	socket_size_x = NS_DefaultGabarites::texture_socket->size_x_in_pixels;
+		float	socket_size_y = NS_DefaultGabarites::texture_socket->size_y_in_pixels;
+
+		float	link_size_x = 20.0f;
+		float	link_size_y = 8.0f;
+
+		bool	left_side = true;
+
+		int		y_descent = 0;
+		int		link_count_x = min(stored_game_item->sockets_count, 2);
+		int		link_count_y = ceil(stored_game_item->sockets_count / 2.0f);
+
+		float socket_group_size_x = socket_size_x * link_count_x + link_size_x;
+		float socket_group_size_y = socket_size_y * link_count_y + link_size_x;
+
+		float socket_group_offset_x = (region_gabarite->size_x - socket_group_size_x) / 2.0f;
+		float socket_group_offset_y = (region_gabarite->size_y - socket_group_size_y) / 2.0f;
+
+		float socket_offset_x = 0.0f;
+		float socket_offset_y = 0.0f;
+
+		float link_offset_x = 0.0f;
+		float link_offset_y = 0.0f;
+
+		float link_offset_correction_x = 0.0f;
+		float link_offset_correction_y = 0.0f;
+
+		float final_link_size_x = 0.0f;
+		float final_link_size_y = 0.0f;
+
+		for (int i = 0; i < stored_game_item->sockets_count; i++)
+		{
+			(left_side) ? (socket_offset_x = 0.0f) : (socket_offset_x = socket_group_size_x - socket_size_x);
+			
+
+
+
+			//LINK
+			if
+				(
+					(i < 5)
+					&&
+					(i < stored_game_item->links_count - 1)
+					)
+			{
+				//is horizontal?
+				if ((i + 1) % 2 != 0)
+				{
+					final_link_size_x = link_size_x + 8.0f;
+					final_link_size_y = link_size_y;
+				}
+				else
+				{
+					final_link_size_x = link_size_y;
+					final_link_size_y = link_size_x + 8.0f;
+				}
+				float link_offset_correction_x = (socket_size_x - final_link_size_x) / 2.0f;
+				float link_offset_correction_y = (socket_size_y - final_link_size_y) / 2.0f;
+
+				//is horizontal?
+				//if ((i + 1) % 2 != 0)
+				{
+					link_offset_x = socket_offset_x;
+					link_offset_y = socket_offset_y;
+
+					if (link_offset_correction_array_x[i] > 0) { link_offset_x += socket_size_x - 4.0f; }
+					else
+						if (link_offset_correction_array_x[i] < 0) { link_offset_x -= final_link_size_x - 4.0f; }
+						else
+						{
+							link_offset_x += link_offset_correction_x;
+						}
+
+					if (link_offset_correction_array_y[i] == 0)
+					{
+						link_offset_y += link_offset_correction_y;
+					}
+					else
+					{
+						link_offset_y += socket_size_y;
+					}
+
+					//link_offset_x += final_link_size_x * link_offset_correction_array_x[i];
+					//link_offset_y += final_link_size_y * link_offset_correction_array_y[i];
+				}
+
+				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_BRIGHT_LEAD);
+
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+					//x pos
+					region_gabarite->world_position_x + socket_group_offset_x + link_offset_x,
+
+					//y pos
+					region_gabarite->world_position_y + socket_group_offset_y + link_offset_y,
+
+					final_link_size_x,
+					final_link_size_y,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+			}
+
+
+
+
+			//SOCKET
+			NS_EGraphicCore::set_active_color
+			(
+				color_table[stored_game_item->socket_color_id_array[i]][0],
+				color_table[stored_game_item->socket_color_id_array[i]][1],
+				color_table[stored_game_item->socket_color_id_array[i]][2],
+				color_table[stored_game_item->socket_color_id_array[i]][3]
+			);
+
+			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+				//x pos
+				region_gabarite->world_position_x + socket_group_offset_x + socket_offset_x,
+
+				//y pos
+				region_gabarite->world_position_y + socket_group_offset_y + socket_offset_y,
+
+				socket_size_x,
+				socket_size_y,
+				
+				NS_DefaultGabarites::texture_socket
+			);
+
+			
+
+			
+
+			
+
+			//even 2 socket
+			if ((i + 1) % 2 == 0)
+			{
+				socket_offset_y += socket_size_y + max(link_size_x, link_size_y);
+			}
+			else
+			{
+				left_side = !left_side;
+			}
+
+			if (left_side)
+			{
+
+			}
+		}
+	}
 }

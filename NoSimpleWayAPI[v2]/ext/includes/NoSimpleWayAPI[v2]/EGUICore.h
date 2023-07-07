@@ -10,13 +10,29 @@ class EBrickStyle;
 enum BrickStyleID
 {
 	//NONE_WITH_BORDER	= -2,
+
+	//no bg
 	NONE				= -1,
-	GROUP_MAIN,
+
+	//thick borders, moderate brightness of background
+	GROUP_DEFAULT,
+
+	//bold borders, dark bg
 	GROUP_DARKEN,
+
+	//background for slider
 	SLIDER_BG,
+
+	//background for buttons
 	BUTTON_BG,
+
+	//inactive slider head
 	SLIDER_INACTIVE,
+
+	//active slider head
 	SLIDER_ACTIVE,
+
+	//circle slider head
 	ROUND_SLIDER,
 
 	LAST_ELEMENT
