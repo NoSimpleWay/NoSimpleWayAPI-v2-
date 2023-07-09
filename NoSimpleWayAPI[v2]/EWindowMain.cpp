@@ -18669,7 +18669,7 @@ void EWindowMain::register_new_folder_currency_shards()
 			loot_simulator_pattern = new LootSimulatorPattern;
 
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Currency shards (trash)";
-		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Фрагменты валюты (мусор)";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Фрагменты валюты (мусор)!";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Alchemy_Shard_inventory_icon");
 
 
