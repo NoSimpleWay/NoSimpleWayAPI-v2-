@@ -695,5 +695,6 @@ public:
 
 
 	static int				hashFunction(std::string _input);
+	static int				get_id_by_hash(std::string _input);
 };
 

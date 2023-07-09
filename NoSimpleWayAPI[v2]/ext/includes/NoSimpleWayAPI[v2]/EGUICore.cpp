@@ -265,8 +265,7 @@ void EWindow::GUI_update_default(float _d)
 			(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 			&&
 			(EButtonGroup::focused_button_group_for_select != nullptr)
-
-			)
+		)
 	{
 		if (EButtonGroup::first_selected_element == nullptr)
 		{
@@ -277,7 +276,12 @@ void EWindow::GUI_update_default(float _d)
 		}
 		else
 		{
-			if (EButtonGroup::parent_for_selected_groups->root_group == EButtonGroup::focused_button_group_mouse_unpressed->root_group)
+			if
+			(
+				(EButtonGroup::focused_button_group_mouse_unpressed != nullptr)
+				&&
+				(EButtonGroup::parent_for_selected_groups->root_group == EButtonGroup::focused_button_group_mouse_unpressed->root_group)
+			)
 			{
 				EButtonGroup::last_selected_element = EButtonGroup::focused_button_group_for_select;
 			}
@@ -324,11 +328,11 @@ void EWindow::GUI_update_default(float _d)
 
 	//GET FOCUSED BUTTON CLICKABLE REGION IN FOCUSED GROUP
 	if
-		(
-			((EButtonGroup::focused_button_group_mouse_unpressed != nullptr))
-			&&
-			(!EInputCore::MOUSE_BUTTON_LEFT)
-			)
+	(
+		((EButtonGroup::focused_button_group_mouse_unpressed != nullptr))
+		&&
+		(!EInputCore::MOUSE_BUTTON_LEFT)
+	)
 	{
 		//EButtonGroup::focused_button_group_mouse_unpressed->highlight_this_group();
 

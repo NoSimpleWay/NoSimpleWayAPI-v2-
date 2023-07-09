@@ -1835,21 +1835,44 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 			main_group->root_group = main_group;
 			//
 
+					
+					 
+					 
+					 
 					/////	PART FOR ITEM NAME, SOCKET INDICATOR, DESCRIPTION	//////////////////////////////////////////////////////////////////////////////////////////////////
 					EButtonGroup*
-					top_part_for_item_info = main_group->add_group(new EButtonGroup(new ERegionGabarite(200.0f, 200.0f)));
+					bottom_part_for_item_info = main_group->add_group(new EButtonGroup(new ERegionGabarite(200.0f, 200.0f)));
 
-					top_part_for_item_info->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-					top_part_for_item_info->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+					bottom_part_for_item_info->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+					bottom_part_for_item_info->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 					////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+					
+					/////	TOP PART FOR NAME	//////////////////////////////////////////////////////////////////////////////////////////////////
 
+					EButtonGroup*
+					line_for_item_class = main_group->add_group(new EButtonGroup(new ERegionGabarite(200.0f, 20.0f)));
+								  
+					line_for_item_class->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+					line_for_item_class->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+
+					////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+					
+					/////	TOP PART FOR NAME	//////////////////////////////////////////////////////////////////////////////////////////////////
+
+					EButtonGroup*
+					line_for_item_name = main_group->add_group(new EButtonGroup(new ERegionGabarite(200.0f, 24.0f)));
+
+					line_for_item_name->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+					line_for_item_name->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+
+					////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 							/////	SOCKETS	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 							EButtonGroupSocketPreview*
 							left_part_for_sockets = new EButtonGroupSocketPreview(new ERegionGabarite(100.0f, 200.0f));
 							
-							top_part_for_item_info->add_group(left_part_for_sockets);
+							bottom_part_for_item_info->add_group(left_part_for_sockets);
 
 							left_part_for_sockets->icon_texture		= loot_button->stored_game_item->icon;
 							left_part_for_sockets->stored_game_item	= loot_button->stored_game_item;
@@ -1860,7 +1883,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 
 							////	TEXT DESCRIPTION	/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 							EButtonGroup*
-							right_part_for_description = top_part_for_item_info->add_group(new EButtonGroup(new ERegionGabarite(200.0f, 200.0f)));
+							right_part_for_description = bottom_part_for_item_info->add_group(new EButtonGroup(new ERegionGabarite(200.0f, 200.0f)));
 
 							right_part_for_description->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 							right_part_for_description->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
@@ -1878,11 +1901,11 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 
 
 									//		TOP PART FOR NAME
-									EButtonGroup*
+									/*EButtonGroup*
 									description_top_part = right_part_for_description->add_group(new EButtonGroup(new ERegionGabarite(500.0f, 30.0f)));
 
 									description_top_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
-									description_top_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+									description_top_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);*/
 									//
 
 
@@ -1929,66 +1952,71 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 
 					std::string item_attributes_generated_text = "";
 
+					//		ATTRIBUTES LIST
 					for (int i = 0; i < loot_button->stored_game_item->attribute_container_list.size(); i++)
 					{
 						EGameItemAttributeContainer*
-							attribute_container = &loot_button->stored_game_item->attribute_container_list[i];
+						attribute_container = &loot_button->stored_game_item->attribute_container_list[i];
 
-						if
-						(
-								(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
-								//&&
-								//(attribute_container->attribute_value_bool)
-						)
+						if (attribute_container->target_attribute->show_in_loot_item_description)
 						{
-							item_attributes_generated_text += "\\n";
-							item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
-
-						}
-						else
 							if
 								(
-									(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+
+									(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
+									//&&
+									//(attribute_container->attribute_value_bool)
 									)
 							{
 								item_attributes_generated_text += "\\n";
 								item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
-								item_attributes_generated_text += " ";
-								item_attributes_generated_text += std::to_string(attribute_container->attribute_value_int);
 
 							}
 							else
 								if
-									(
-										(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
-										)
+								(
+									(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+								)
 								{
 									item_attributes_generated_text += "\\n";
 									item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
-									item_attributes_generated_text += " [";
-									item_attributes_generated_text += attribute_container->attribute_value_str;
-									item_attributes_generated_text += "]";
+									item_attributes_generated_text += " ";
+									item_attributes_generated_text += std::to_string(attribute_container->attribute_value_int);
 
 								}
 								else
 									if
+									(
+										(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
+									)
+									{
+										item_attributes_generated_text += "\\n";
+										item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
+										item_attributes_generated_text += " [";
+										item_attributes_generated_text += attribute_container->attribute_value_str;
+										item_attributes_generated_text += "]";
+
+									}
+									else
+										if
 										(
 											(attribute_container->target_attribute->filter_attribute_value_type == FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY)
 											&&
 											(true)
-											)
-									{
-										item_attributes_generated_text += "\\n";
-										item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
-										for (ELocalisationText listed_string : attribute_container->listed_value_list)
+										)
 										{
-											item_attributes_generated_text += " {";
-											item_attributes_generated_text += listed_string.localisations[ELocalisationText::active_localisation];
-											item_attributes_generated_text += "}";
+											item_attributes_generated_text += "\\n";
+											item_attributes_generated_text += attribute_container->target_attribute->localisation.localisations[ELocalisationText::active_localisation];
+											for (ELocalisationText listed_string : attribute_container->listed_value_list)
+											{
+												item_attributes_generated_text += " {";
+												item_attributes_generated_text += listed_string.localisations[ELocalisationText::active_localisation];
+												item_attributes_generated_text += "}";
+											}
+
+
 										}
-
-
-									}
+						}
 					}
 					
 					ETextArea*
@@ -2006,8 +2034,8 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 				if (true)
 				{
 					EClickableArea*
-					clickable_area_for_top_name = EClickableArea::create_default_clickable_region(description_top_part->region_gabarite, main_group);
-					description_top_part->clickable_area_list.push_back(clickable_area_for_top_name);
+					clickable_area_for_top_name = EClickableArea::create_default_clickable_region(line_for_item_name->region_gabarite, main_group);
+					line_for_item_name->clickable_area_list.push_back(clickable_area_for_top_name);
 
 					ETextArea*
 						text_area_for_group = ETextArea::create_centered_text_area
@@ -2051,6 +2079,70 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 					//text_area_for_group->set_color(1.0f, 0.2f, 0.1f, 1.0f);
 					clickable_area_for_top_name->text_area = text_area_for_group;
 				}
+
+				//		CLASS
+				{
+					EClickableArea*
+					clickable_area_for_class = EClickableArea::create_default_clickable_region(line_for_item_class->region_gabarite, main_group);
+					line_for_item_class->clickable_area_list.push_back(clickable_area_for_class);
+
+					ELocalisationText class_and_level;
+
+					for (int i = 0; i < loot_button->stored_game_item->attribute_container_list.size(); i++)
+					{
+						if
+						(
+							(loot_button->stored_game_item->attribute_container_list[i].target_attribute->localisation.base_name == "Class")
+							&&
+							(!loot_button->stored_game_item->attribute_container_list[i].listed_value_list.empty())
+						)
+						{
+							class_and_level = loot_button->stored_game_item->attribute_container_list[i].listed_value_list.front();
+							break;
+						}
+					}
+
+					
+
+
+					//		ITEM LEVEL
+					for (int i = 0; i < loot_button->stored_game_item->attribute_container_list.size(); i++)
+					{
+						if
+						(loot_button->stored_game_item->attribute_container_list[i].target_attribute->localisation.base_name == "ItemLevel")
+						{
+							for (int j = 0; j < NSW_languages_count; j++)
+							{
+								class_and_level.localisations[j] +=
+								",   "
+								+
+								loot_button->stored_game_item->attribute_container_list[i].target_attribute->localisation.localisations[j]
+								+
+								": "
+								+
+								std::to_string(loot_button->stored_game_item->attribute_container_list[i].attribute_value_int);
+							}
+
+							break;
+						}
+					}
+
+					ETextArea*
+						text_area_for_group = ETextArea::create_centered_text_area
+						(
+							clickable_area_for_class,
+							EFont::font_list[0],
+							class_and_level
+						);
+
+					text_area_for_group->can_be_edited = false;
+
+					//text_area_for_group->set_color(1.0f, 0.2f, 0.1f, 1.0f);
+					clickable_area_for_class->text_area = text_area_for_group;
+				}
+			
+
+
 			}
 
 			but->attached_description = main_group;
@@ -6591,6 +6683,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->show_in_loot_item_description = false;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6603,6 +6696,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->show_in_loot_item_description = true;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6615,6 +6709,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->show_in_loot_item_description = true;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6627,6 +6722,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->show_in_loot_item_description = true;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6639,6 +6735,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT;
 	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->show_in_loot_item_description = false;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6651,6 +6748,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT;
 	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->show_in_loot_item_description = false;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6663,6 +6761,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->show_in_loot_item_description = false;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6675,6 +6774,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->show_in_loot_item_description = false;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6688,6 +6788,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
 	jc_filter_block_attribute->global_attribute_value = true;
+	jc_filter_block_attribute->show_in_loot_item_description = false;
 
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
@@ -6866,6 +6967,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->have_exact_match = true;
 	jc_filter_block_attribute->have_input_field_for_listed = false;
+	jc_filter_block_attribute->show_in_loot_item_description = false;
 
 	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM];
 	GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_TYPE] = jc_filter_block_attribute;
@@ -6883,6 +6985,7 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->have_exact_match = true;
+	jc_filter_block_attribute->show_in_loot_item_description = false;
 
 	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_BASE_CLASS];
 
@@ -16742,7 +16845,7 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 
 			game_item_generator->add_rarity(0, 3, 3.0f);
 			game_item_generator->add_item_level(-3, 3, 1.0f);
-			game_item_generator->add_sockets_and_links(1, 4, 0, 4);
+			game_item_generator->add_sockets_and_links(1, 6, 0, 6);
 		}
 
 		//TWO HAND MELEE
@@ -16919,7 +17022,7 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 
 				game_item_generator->add_rarity(0, 3, 3.0f);
 				game_item_generator->add_item_level(-3, 3, 1.0f);
-				game_item_generator->add_sockets_and_links(1, 4, 0, 6);
+				game_item_generator->add_sockets_and_links(1, 3, 0, 3);
 			}
 
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -18366,6 +18469,7 @@ void EWindowMain::register_new_folder_incubators()
 
 
 			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			game_item_generator->add_item_level(-3.0f, 3.0f, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -18411,6 +18515,7 @@ void EWindowMain::register_new_folder_incubators()
 
 
 			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			game_item_generator->add_item_level(-3.0f, 3.0f, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -18456,6 +18561,7 @@ void EWindowMain::register_new_folder_incubators()
 
 
 			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			game_item_generator->add_item_level(-3.0f, 3.0f, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -18503,6 +18609,7 @@ void EWindowMain::register_new_folder_incubators()
 
 
 			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			game_item_generator->add_item_level(-3.0f, 3.0f, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -18543,6 +18650,7 @@ void EWindowMain::register_new_folder_incubators()
 
 
 			game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+			game_item_generator->add_item_level(-3.0f, 3.0f, 2.0f);
 		}
 
 		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -23491,6 +23599,20 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 			//EInputCore::logger_param("height", attribute_container.attribute_value);	
 		}
 
+		//default attributes [HANE_IMPLICIT]
+		if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Have implicit", _game_item->stored_data_entity))
+		{
+			EGameItemAttributeContainer
+				game_item_attribute_container;
+
+			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HAVE_IMPLICIT];
+			game_item_attribute_container.attribute_value_bool = true;
+
+			_game_item->attribute_container_list.push_back(game_item_attribute_container);
+
+			//EInputCore::logger_param("width", attribute_container.attribute_value);
+		}
+
 		//default attributes [HEIGHT]
 		if (DataEntityUtils::get_tag_value_by_name(0, "item height", _game_item->stored_data_entity) != "")
 		{
@@ -23522,19 +23644,7 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 
 
 
-		//default attributes [HANE_IMPLICIT]
-		if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Have implicit", _game_item->stored_data_entity))
-		{
-			EGameItemAttributeContainer
-			game_item_attribute_container;
 
-			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HAVE_IMPLICIT];
-			game_item_attribute_container.attribute_value_bool = true;
-
-			_game_item->attribute_container_list.push_back(game_item_attribute_container);
-
-			//EInputCore::logger_param("width", attribute_container.attribute_value);
-		}
 	}
 }
 
@@ -25660,11 +25770,60 @@ void EButtonGroupSocketPreview::draw_button_group()
 		short	link_offset_correction_array_x[5]{1, 0, -1, 0, 1};
 		short	link_offset_correction_array_y[5]{0, 1, 0, 1, 0};
 
+		
+
+		float	socket_size_x = NS_DefaultGabarites::texture_socket->size_x_in_pixels;
+		float	socket_size_y = NS_DefaultGabarites::texture_socket->size_y_in_pixels;
+
+		float	link_size_x = 20.0f;
+		float	link_size_y = 8.0f;
+
+		bool	left_side = true;
+
+		int		y_descent = 0;
+
+		int		sockets_count_x = min(stored_game_item->sockets_count, 2);
+		int		sockets_count_y = ceil(stored_game_item->sockets_count / 2.0f);
+
+
+
+		float socket_group_size_x = socket_size_x * sockets_count_x + link_size_x * max(sockets_count_x - 1, 0);
+		float socket_group_size_y = socket_size_y * sockets_count_y + link_size_x * max(sockets_count_y - 1, 0);
+
+		float socket_group_full_size_x = socket_size_y * 2 + link_size_x + 10.0f;
+		float socket_group_full_size_y = socket_size_y * 3 + link_size_x * 2 + 10.0f;
+
+
+
+		float socket_group_offset_x = (region_gabarite->size_x - socket_group_size_x) / 2.0f;
+		float socket_group_offset_y = (region_gabarite->size_y - socket_group_size_y) / 2.0f;
+
+		float socket_group_full_offset_x = (region_gabarite->size_x - socket_group_full_size_x) / 2.0f;
+		float socket_group_full_offset_y = (region_gabarite->size_y - socket_group_full_size_y) / 2.0f;
+
+		float socket_offset_x = 0.0f;
+		float socket_offset_y = 0.0f;
+
+		float link_offset_x = 0.0f;
+		float link_offset_y = 0.0f;
+
+		float link_offset_correction_x = 0.0f;
+		float link_offset_correction_y = 0.0f;
+
+		float final_link_size_x = 0.0f;
+		float final_link_size_y = 0.0f;
+
+
+		//		item icon
 		float offset_x = 0.0f;
 		float offset_y = 0.0f;
+		
+		float size_multiplier_x = min(socket_group_full_size_x / icon_texture->size_x_in_pixels, 1.0f);
+		float size_multiplier_y = min(socket_group_full_size_y / icon_texture->size_y_in_pixels, 1.0f);
+		float final_size_multiplier = min(size_multiplier_x, size_multiplier_y);
 
-		offset_x = (region_gabarite->size_x - icon_texture->size_x_in_pixels) / 2.0f;
-		offset_y = (region_gabarite->size_y - icon_texture->size_y_in_pixels) / 2.0f;
+		offset_x = socket_group_full_offset_x + (socket_group_full_size_x - icon_texture->size_x_in_pixels * final_size_multiplier) / 2.0f;
+		offset_y = socket_group_full_offset_y + (socket_group_full_size_y - icon_texture->size_y_in_pixels * final_size_multiplier) / 2.0f;
 
 		NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
 
@@ -25680,42 +25839,43 @@ void EButtonGroupSocketPreview::draw_button_group()
 			//y pos
 			region_gabarite->world_position_y + offset_y,
 
-			icon_texture->size_x_in_pixels,
-			icon_texture->size_y_in_pixels,
+			icon_texture->size_x_in_pixels * final_size_multiplier,
+			icon_texture->size_y_in_pixels * final_size_multiplier,
 
 			icon_texture
 		);
 
-		float	socket_size_x = NS_DefaultGabarites::texture_socket->size_x_in_pixels;
-		float	socket_size_y = NS_DefaultGabarites::texture_socket->size_y_in_pixels;
 
-		float	link_size_x = 20.0f;
-		float	link_size_y = 8.0f;
 
-		bool	left_side = true;
+		//		SOCKETS RAMA
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_WHITE, 0.2f);
 
-		int		y_descent = 0;
-		int		link_count_x = min(stored_game_item->sockets_count, 2);
-		int		link_count_y = ceil(stored_game_item->sockets_count / 2.0f);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+		NS_ERenderCollection::add_data_to_vertex_buffer_rama
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-		float socket_group_size_x = socket_size_x * link_count_x + link_size_x;
-		float socket_group_size_y = socket_size_y * link_count_y + link_size_x;
+			//x pos
+			region_gabarite->world_position_x + socket_group_full_offset_x,
 
-		float socket_group_offset_x = (region_gabarite->size_x - socket_group_size_x) / 2.0f;
-		float socket_group_offset_y = (region_gabarite->size_y - socket_group_size_y) / 2.0f;
+			//y pos
+			region_gabarite->world_position_y + socket_group_full_offset_y,
 
-		float socket_offset_x = 0.0f;
-		float socket_offset_y = 0.0f;
+			socket_group_full_size_x,
+			socket_group_full_size_y,
 
-		float link_offset_x = 0.0f;
-		float link_offset_y = 0.0f;
+			2.0f,
 
-		float link_offset_correction_x = 0.0f;
-		float link_offset_correction_y = 0.0f;
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
 
-		float final_link_size_x = 0.0f;
-		float final_link_size_y = 0.0f;
 
+
+
+
+		//		SOCKETS AND LINKS
+		if (!EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
 		for (int i = 0; i < stored_game_item->sockets_count; i++)
 		{
 			(left_side) ? (socket_offset_x = 0.0f) : (socket_offset_x = socket_group_size_x - socket_size_x);

@@ -3463,6 +3463,16 @@ int EStringUtils::hashFunction(std::string _input)
 	return hashCode % 278;
 }
 
+int EStringUtils::get_id_by_hash(std::string _input)
+{
+	int
+	index = EStringUtils::hashFunction(_input) & 0x000000000000000F;
+	index = min(index, 15);
+	index = max(index, 0);
+
+	return index;
+}
+
 bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule* _filter_rule, std::string _search_text)
 {
 	std::string tag_value = "";

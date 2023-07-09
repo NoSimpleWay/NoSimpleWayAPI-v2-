@@ -798,6 +798,7 @@ public:
 
 	bool						commentary_config = false;
 	bool						global_attribute_value = false;
+	bool						show_in_loot_item_description = true;
 
 	static GameItemAttribute* get_attribute_by_name(std::vector<GameItemAttribute*>* _vector, std::string _name);
 
