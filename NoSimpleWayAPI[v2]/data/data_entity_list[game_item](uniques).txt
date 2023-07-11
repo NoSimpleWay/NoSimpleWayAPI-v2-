@@ -4139,3 +4139,1609 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	
 	[tag]"worth"		[value]"Very expensive"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Long Bow"
+	[tag]"name EN"		[value]"Storm Cloud"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Long_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crude Bow"
+	[tag]"name EN"		[value]"Widowhail"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Crude_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Recurve Bow"
+	[tag]"name EN"		[value]"Roth's Reach"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Sniper_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Death Bow"
+	[tag]"name EN"		[value]"Roth's Reach"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Crude_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Death Bow"
+	[tag]"name EN"		[value]"Iron Commander"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Crude_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Death Bow"
+	[tag]"name EN"		[value]"Death's Harp"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Crude_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Harbinger Bow"
+	[tag]"name EN"		[value]"Slivertongue"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Harbinger_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Harbinger Bow"
+	[tag]"name EN"		[value]"Nuro's Harp"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Harbinger_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Decimation Bow"
+	[tag]"name EN"		[value]"Infractem"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Harbinger_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Assassin Bow"
+	[tag]"name EN"		[value]"Chin Sol"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Sniper_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Assassin Bow"
+	[tag]"name EN"		[value]"Darkscorn"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Sniper_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Citadel Bow"
+	[tag]"name EN"		[value]"The Gluttonous Tide"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Long_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Citadel Bow"
+	[tag]"name EN"		[value]"Xoph's Inception"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Long_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Breach loot"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Royal Bow"
+	[tag]"name EN"		[value]"Doomfletch"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Royal_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Spine Bow"
+	[tag]"name EN"		[value]"Reach of the Council"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Ivory_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Spine Bow"
+	[tag]"name EN"		[value]"Voltaxic Rift"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Ivory_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Short Bow"
+	[tag]"name EN"		[value]"Quill Rain"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Grove_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ranger Bow"
+	[tag]"name EN"		[value]"Null's Inclination"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Ranger_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ranger Bow"
+	[tag]"name EN"		[value]"Hopeshredder"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Ranger_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Imperial Bow"
+	[tag]"name EN"		[value]"Windripper"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Royal_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Imperial Bow"
+	[tag]"name EN"		[value]"Lioneye's Glare"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Royal_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Steelwood Bow"
+	[tag]"name EN"		[value]"The Crimson Storm"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"Steelwood_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Syndicate drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Awl"
+	[tag]"name EN"		[value]"Wildslash"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Imperial Claw"
+	[tag]"name EN"		[value]"Touch of Anguish"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Imperial Claw"
+	[tag]"name EN"		[value]"Hand of Thought and Motion"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Breach drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Throat Stabber"
+	[tag]"name EN"		[value]"The Wasp Nest"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Terror Claw"
+	[tag]"name EN"		[value]"Rive"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Terror Claw"
+	[tag]"name EN"		[value]"The Scourge"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gut Ripper"
+	[tag]"name EN"		[value]"Ornament of the East"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gut Ripper"
+	[tag]"name EN"		[value]"Advancing Fortress"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Fright Claw"
+	[tag]"name EN"		[value]"Mortem Morsu"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Nailed Fist"
+	[tag]"name EN"		[value]"Last Resort"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Thresher Claw"
+	[tag]"name EN"		[value]"Cybil's Paw"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Timeworn Claw"
+	[tag]"name EN"		[value]"Al Dhih"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Hellion's Paw"
+	[tag]"name EN"		[value]"Law of the Wilds"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Hellion's Paw"
+	[tag]"name EN"		[value]"Bloodseeker"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Claw"
+	[tag]"name EN"		[value]"Allure"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Claw"
+	[tag]"name EN"		[value]"Essentia Sanguis"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperFangs"
+	[tag]"base class"	[value]"Claws"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Boot Blade"
+	[tag]"name EN"		[value]"Widowmaker"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Rune Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Boot Blade"
+	[tag]"name EN"		[value]"Ungil's Gauche"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Rune Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Imperial Skean"
+	[tag]"name EN"		[value]"White wind"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Rune Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Imperial Skean"
+	[tag]"name EN"		[value]"Divinarius"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Rune Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Imperial Skean"
+	[tag]"name EN"		[value]"Divinarius"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Rune Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Fiend Dagger"
+	[tag]"name EN"		[value]"The Consuming Dark"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Rune Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Fiend Dagger"
+	[tag]"name EN"		[value]"Arakaali's Fang"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Rune Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ambusher"
+	[tag]"name EN"		[value]"Taproot"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ambusher"
+	[tag]"name EN"		[value]"Goblinedge"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ambusher"
+	[tag]"name EN"		[value]"The Hidden Blade"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Heist drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Flaying Knife"
+	[tag]"name EN"		[value]"Mightflay"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Platinum Kris"
+	[tag]"name EN"		[value]"Mark of the Doubting Knight"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Skinning Knife"
+	[tag]"name EN"		[value]"Goredrill"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Stiletto"
+	[tag]"name EN"		[value]"Bloodplay"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Demon Dagger"
+	[tag]"name EN"		[value]"Vulconus"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Rune Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ezomyte Dagger"
+	[tag]"name EN"		[value]"Cold Iron Point"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Rune Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Slaughter Knife"
+	[tag]"name EN"		[value]"Bino's Kitchen Knife"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Rune Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Jade Hatchet"
+	[tag]"name EN"		[value]"The Screaming Eagle"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axe"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Royal Axe"
+	[tag]"name EN"		[value]"Rigwald's Savagery"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axe"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Decorative Axe"
+	[tag]"name EN"		[value]"Relentless Fury"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axe"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Infernal Axe"
+	[tag]"name EN"		[value]"Dyadus"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axe"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Tomahawk"
+	[tag]"name EN"		[value]"Moonbender's Wing"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axe"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cleaver"
+	[tag]"name EN"		[value]"Dreadarc"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axe"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Hatchet"
+	[tag]"name EN"		[value]"Jack, the Axe"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axe"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Butcher Axe"
+	[tag]"name EN"		[value]"Actum"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axe"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Siege Axe"
+	[tag]"name EN"		[value]"Soul Taker"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperAxe"
+	[tag]"base class"	[value]"One Hand Axe"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Very expensive"
+	
+
+
+
+
+
+
+	
+	
+	
