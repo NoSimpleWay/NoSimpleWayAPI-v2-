@@ -1186,3 +1186,26 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"World parameters"
 	[tag]"name RU"		[value]"Параметры окружения"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_text_styles"
+	[tag]"name EN"		[value]"Styles"
+	[tag]"name RU"		[value]"Внешний вид"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_text_info"
+	[tag]"name EN"		[value]"Info"
+	[tag]"name RU"		[value]"Информация"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_text_debug"
+	[tag]"name EN"		[value]"Debug"
+	[tag]"name RU"		[value]"Отладка"
+	

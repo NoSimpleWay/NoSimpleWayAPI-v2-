@@ -57,6 +57,7 @@ void EWindow::update_additional(float _d)
 
 void EWindow::GUI_update_default(float _d)
 {
+
 	//DELETE
 	for (int i = 0; i < button_group_list.size(); i++)
 		if ((button_group_list[i] != nullptr) && (button_group_list[i]->need_remove))

@@ -236,13 +236,42 @@ void EDataActionCollection::action_mark_filter_blocks_as_removed(Entity* _entity
 {
 	static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block->need_remove = true;
 	
+	//remove single button
+	{
+		for (EntityButton* but:EWindowMain::registered_group_filter_error_list->part_with_buttons->workspace_button_list)
+		{
+			EntityButtonFilterBlockError*
+			error_button = static_cast<EntityButtonFilterBlockError*>(but);
+
+			if (error_button->target_filter_block == static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block)
+			{EWindowMain::registered_group_filter_error_list->part_with_buttons->delete_exact_button(error_button);}
+
+			EWindowMain::registered_group_filter_error_list->need_refresh = true;
+		}
+	}
 
 
 	if (!EButtonGroup::selected_groups.empty())
-	for (EButtonGroup* group : EButtonGroup::selected_groups)
 	{
-		group->need_remove = true;
+		for (EButtonGroup* selected_group : EButtonGroup::selected_groups)
+		{
+			selected_group->need_remove = true;
+
+			for (EntityButton* but : EWindowMain::registered_group_filter_error_list->part_with_buttons->workspace_button_list)
+			{
+				EntityButtonFilterBlockError*
+					error_button = static_cast<EntityButtonFilterBlockError*>(but);
+
+				if (error_button->target_filter_block == selected_group)
+				{
+					EWindowMain::registered_group_filter_error_list->part_with_buttons->delete_exact_button(error_button);
+
+					EWindowMain::registered_group_filter_error_list->need_refresh = true;
+				}
+			}
+		}
 	}
+	else
 
 
 	EWindowMain::make_unsaved_loot_filter_changes();
@@ -5860,7 +5889,7 @@ EWindowMain::EWindowMain()
 	{
 		EButtonGroupFilterEditorTopHeader*
 			main_button_group = new EButtonGroupFilterEditorTopHeader
-			(new ERegionGabarite(NS_EGraphicCore::SCREEN_WIDTH, 80.0f));
+			(new ERegionGabarite(NS_EGraphicCore::SCREEN_WIDTH, 70.0f));
 		main_button_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 
 		header_line = main_button_group;
@@ -5963,7 +5992,7 @@ EWindowMain::EWindowMain()
 		(
 			EButtonGroup::create_button_group_without_bg
 			(
-				new ERegionGabarite(1.0f, 46.0f),
+				new ERegionGabarite(1.0f, 35.0f),
 				EGUIStyle::active_style
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
@@ -5971,9 +6000,9 @@ EWindowMain::EWindowMain()
 		//////////////////////////////////////////////////////
 		EButtonGroup* top_section_left_part = top_section->add_group
 		(
-			EButtonGroup::create_default_button_group
+			EButtonGroup::create_button_group_without_bg
 			(
-				new ERegionGabarite(405.0f, 46.0f),
+				new ERegionGabarite(405.0f, 35.0f),
 				EGUIStyle::active_style
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
@@ -5985,9 +6014,9 @@ EWindowMain::EWindowMain()
 		//////////////////////////////////////////////////////
 		EButtonGroup* top_section_mid_part = top_section->add_group
 		(
-			EButtonGroup::create_default_button_group
+			EButtonGroup::create_button_group_without_bg
 			(
-				new ERegionGabarite(300.0f, 46.0f),
+				new ERegionGabarite(300.0f, 35.0f),
 				EGUIStyle::active_style
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
@@ -6003,7 +6032,7 @@ EWindowMain::EWindowMain()
 		(
 			EButtonGroup::create_button_group_without_bg
 			(
-				new ERegionGabarite(350.0f, 46.0f),
+				new ERegionGabarite(350.0f, 35.0f),
 				EGUIStyle::active_style
 			)
 		)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
@@ -6208,7 +6237,7 @@ EWindowMain::EWindowMain()
 			NS_EGraphicCore::load_from_textures_folder("buttons/button_open_loot_simulator"),
 			"button_text_loot_simulator"
 		);
-		//button_activator->force_field_right = 32.0f;
+		button_activator->force_field_left = 16.0f;
 		button_activator->add_default_description_by_key("description_open_loot_simulator");
 		button_activator->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_L);
 		//button_activator->target_group = EWindowMain::loot_simulator_button_group;
@@ -6249,16 +6278,16 @@ EWindowMain::EWindowMain()
 		{
 			EntityButtonButtonGroupActivator* button_activator = new EntityButtonButtonGroupActivator();
 
-			button_activator->make_as_default_button_with_icon
+			button_activator->make_as_default_button_with_icon_and_localisation_by_key
 			(
-				new ERegionGabarite(45.0f, 45.0f),
+				new ERegionGabarite(140.0f, 34.0f),
 				top_section_right_part,
 				&EDataActionCollection::action_set_button_group_as_active,
-				NS_EGraphicCore::load_from_textures_folder("buttons/button_styles")
+				NS_EGraphicCore::load_from_textures_folder("buttons/button_styles"),
+				"button_text_styles"
 			);
 			button_activator->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_G);
 			button_activator->target_group = EWindowMain::style_list_group;
-			button_activator->force_field_right = 32.0f;
 			top_section_right_part->add_button_to_working_group(button_activator);
 
 		}
@@ -6272,12 +6301,13 @@ EWindowMain::EWindowMain()
 		/////////////		OPEN INFO WINDOW		///////////////////////
 		button_activator = new EntityButtonButtonGroupActivator();
 
-		button_activator->make_as_default_button_with_icon
+		button_activator->make_as_default_button_with_icon_and_localisation_by_key
 		(
-			new ERegionGabarite(45.0f, 45.0f),
+			new ERegionGabarite(140.0f, 34.0f),
 			top_section_right_part,
 			&EDataActionCollection::action_set_button_group_as_active,
-			NS_EGraphicCore::load_from_textures_folder("buttons/button_info")
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_info"),
+			"button_text_info"
 		);
 		button_activator->add_default_description_by_key("description_open_info_window");
 		button_activator->target_group = EWindowMain::info_button_group;
@@ -6289,12 +6319,13 @@ EWindowMain::EWindowMain()
 		/////////////		OPEN DEBUG WINDOW		///////////////////////
 		button_activator = new EntityButtonButtonGroupActivator();
 
-		button_activator->make_as_default_button_with_icon
+		button_activator->make_as_default_button_with_icon_and_localisation_by_key
 		(
-			new ERegionGabarite(45.0f, 45.0f),
+			new ERegionGabarite(140.0f, 34.0f),
 			top_section_right_part,
 			&EDataActionCollection::action_set_button_group_as_active,
-			NS_EGraphicCore::load_from_textures_folder("buttons/button_debug")
+			NS_EGraphicCore::load_from_textures_folder("buttons/button_debug"),
+			"button_text_debug"
 		);
 		//button_activator->target_group = DebugNamespace::NSW_pointer_to_debug_window;
 		header_line->pointer_to_debug_button = button_activator;
@@ -6314,7 +6345,7 @@ EWindowMain::EWindowMain()
 
 		button_RU->make_as_default_button_with_icon
 		(
-			new ERegionGabarite(45.0f, 45.0f),
+			new ERegionGabarite(34.0f, 34.0f),
 			top_section_right_part,
 			&EDataActionCollection::action_change_localisation,
 			NS_EGraphicCore::load_from_textures_folder("buttons/button_localisation_RU")
@@ -6332,7 +6363,7 @@ EWindowMain::EWindowMain()
 
 		button_EN->make_as_default_button_with_icon
 		(
-			new ERegionGabarite(45.0f, 45.0f),
+			new ERegionGabarite(34.0f, 34.0f),
 			top_section_right_part,
 			&EDataActionCollection::action_change_localisation,
 			NS_EGraphicCore::load_from_textures_folder("buttons/button_localisation_EN")
@@ -9682,8 +9713,8 @@ void EWindowMain::load_loot_filter_list()
 					loot_filter_button->main_text_area->set_color(1.0f, 0.3f, 0.15f, 1.0f);
 				}
 
-				loot_filter_button->loot_filter_full_path = filter_path;
-				loot_filter_button->filter_name = loot_filter_name;
+				loot_filter_button->loot_filter_full_path	= EStringUtils::UTF8_to_ANSI(filter_path);
+				loot_filter_button->filter_name				= EStringUtils::UTF8_to_ANSI(loot_filter_name);
 
 				part_with_list->add_button_to_working_group(loot_filter_button);
 			}
@@ -10043,6 +10074,7 @@ bool EWindowMain::text_is_condition(std::string& buffer_text)
 
 void EWindowMain::open_loot_filter(std::string _full_path, LootFilterOpenMode _loot_filter_mode)
 {
+	//_full_path = EStringUtils::UTF8_to_ANSI(_full_path);
 	EInputCore::logger_param("open loot filter", _full_path);
 
 	//loot_filter_editor->scroll_y = 1.0f;
@@ -22421,7 +22453,9 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 
 	////////////////////////
 	//REMOVE BLOCK
-	EntityButtonForListedSegment* delete_segment_button = new EntityButtonForListedSegment();
+	EntityButtonForListedSegment*
+	delete_segment_button = new EntityButtonForListedSegment();
+
 	delete_segment_button->make_default_button_with_unedible_text
 	(
 		new ERegionGabarite(180.0f, 24.0f),

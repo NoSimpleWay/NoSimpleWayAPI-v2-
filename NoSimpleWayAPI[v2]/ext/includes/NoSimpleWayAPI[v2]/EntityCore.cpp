@@ -1430,7 +1430,7 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 		jc_text_area = ETextArea::create_centered_to_left_text_area
 		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], ELocalisationText::get_localisation_by_key(_text));
 
-		jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y - 4.0f;
+		jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y;
 	}
 	else
 	{

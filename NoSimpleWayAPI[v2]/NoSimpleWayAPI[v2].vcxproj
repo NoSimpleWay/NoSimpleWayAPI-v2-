@@ -127,7 +127,7 @@
     <IncludePath>$(ProjectDir)ext/includes;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
     <LibraryPath>$(ProjectDir)ext/libs;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
     <RunCodeAnalysis>true</RunCodeAnalysis>
-    <TargetName>AwakenedDadEditor</TargetName>
+    <TargetName>AwakenedDadEditor[PRE_RELEASE]</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
