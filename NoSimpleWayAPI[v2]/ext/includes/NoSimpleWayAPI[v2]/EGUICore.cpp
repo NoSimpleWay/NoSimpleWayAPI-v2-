@@ -103,7 +103,7 @@ void EWindow::GUI_update_default(float _d)
 					(EButtonGroup::move_vector_mode == MoveVectorMethod::METHOD_DRAG)
 					&&
 					(!EInputCore::MOUSE_BUTTON_LEFT)
-					)
+				)
 				||
 				(
 					(EButtonGroup::move_vector_mode == MoveVectorMethod::METHOD_PRESS)
@@ -244,7 +244,12 @@ void EWindow::GUI_update_default(float _d)
 		}
 
 	//RESET GROUP SELECTION
-	if (EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
+	if
+	(
+		(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
+		||
+		(EInputCore::key_pressed_once(GLFW_KEY_ESCAPE))
+	)
 	{
 		for (EButtonGroup* group : EButtonGroup::selected_groups)
 		{
@@ -266,14 +271,17 @@ void EWindow::GUI_update_default(float _d)
 			(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 			&&
 			(EButtonGroup::focused_button_group_for_select != nullptr)
+			&&
+			(EButtonGroup::focused_button_group_for_select->root_group == EButtonGroup::focused_button_group_mouse_unpressed->root_group)
 		)
 	{
-		if (EButtonGroup::first_selected_element == nullptr)
+		if
+		(EButtonGroup::first_selected_element == nullptr)
 		{
-			EButtonGroup::first_selected_element = EButtonGroup::focused_button_group_for_select;
-			EButtonGroup::last_selected_element = EButtonGroup::focused_button_group_for_select;
+			EButtonGroup::first_selected_element		= EButtonGroup::focused_button_group_for_select;
+			EButtonGroup::last_selected_element			= EButtonGroup::focused_button_group_for_select;
 
-			EButtonGroup::parent_for_selected_groups = EButtonGroup::focused_button_group_for_select->parent_group;
+			EButtonGroup::parent_for_selected_groups	= EButtonGroup::focused_button_group_for_select->parent_group;
 		}
 		else
 		{
@@ -326,7 +334,7 @@ void EWindow::GUI_update_default(float _d)
 		}
 	}
 
-
+	//UNPRESSED LMB
 	//GET FOCUSED BUTTON CLICKABLE REGION IN FOCUSED GROUP
 	if
 	(

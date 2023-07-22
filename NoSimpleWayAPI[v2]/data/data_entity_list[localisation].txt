@@ -407,7 +407,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"key"			[value]"window_header_add_content_to_filter_block"
 	[tag]"name EN"		[value]"Add content to filter block"
-	[tag]"name RU"		[value]"Добавить что-либо в блок лут-фильтра"
+	[tag]"name RU"		[value]"Добавить условие в блок лут-фильтра"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -1208,4 +1208,62 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"button_text_debug"
 	[tag]"name EN"		[value]"Debug"
 	[tag]"name RU"		[value]"Отладка"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_header_main_attributes"
+	[tag]"name EN"		[value]"Main attributes"
+	[tag]"name RU"		[value]"Основные атрибуты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_header_gem_attributes"
+	[tag]"name EN"		[value]"Gem attributes"
+	[tag]"name RU"		[value]"Атрибуты камней"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_header_sockets_attribute"
+	[tag]"name EN"		[value]"Sockets attributes"
+	[tag]"name RU"		[value]"Атрибуты гнёзд"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_header_additional_modifiers"
+	[tag]"name EN"		[value]"Item modifiers"
+	[tag]"name RU"		[value]"Модификаторы предмета"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_header_map_attributes"
+	[tag]"name EN"		[value]"Map modifiers"
+	[tag]"name RU"		[value]"Модификаторы карт"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_header_defence_attribute"
+	[tag]"name EN"		[value]"Defence modifiers"
+	[tag]"name RU"		[value]"Модификаторы защиты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_header_corruption"
+	[tag]"name EN"		[value]"Corruption modifiers"
+	[tag]"name RU"		[value]"Модификаторы осквернения"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_header_other"
+	[tag]"name EN"		[value]"Other modifiers"
+	[tag]"name RU"		[value]"Прочие модификаторы"
 	

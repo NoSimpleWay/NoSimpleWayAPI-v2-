@@ -59,6 +59,8 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 	(
 		(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
 		&&
+		(EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
+		&&
 		(EButtonGroup::focused_button_group_with_slider == slider->parent_button_group)
 	)
 	{

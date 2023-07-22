@@ -5011,7 +5011,7 @@ EWindowMain::EWindowMain()
 	{
 		EButtonGroup*
 			//add_content_group = EButtonGroup::create_root_button_group(new ERegionGabarite(100.0f, 100.0f, 700.0f, 400.0f), EGUIStyle::active_style);
-		add_content_group = new EButtonGroup(new ERegionGabarite(700.0f, 400.0f));
+		add_content_group = new EButtonGroup(new ERegionGabarite(700.0f, 500.0f));
 		add_content_group->init_as_root_group(this);
 
 		add_content_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
@@ -5032,7 +5032,8 @@ EWindowMain::EWindowMain()
 		workspace_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		add_content_group->add_caption_by_localistation_key("window_header_add_content_to_filter_block");
 		////////////////////////////////////////////////////////////////////////////////////////////////////
-		EButtonGroup* content_list_group
+		EButtonGroup*
+		content_list_group
 			=
 			workspace_group->add_group
 			(
@@ -5087,8 +5088,8 @@ EWindowMain::EWindowMain()
 			=
 			content_list_group->add_group
 			(
-				EButtonGroup::create_default_button_group(new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
-				->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
+				EButtonGroup::create_default_button_group(new ERegionGabarite(150.0f, 100.0f), EGUIStyle::active_style)
+				->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize)
 			);
 		filter_block_operation_segment->button_size_x_override = 150.0f;
 		filter_block_operation_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
@@ -5102,7 +5103,7 @@ EWindowMain::EWindowMain()
 		jc_button = new EntityButton();
 		jc_button->make_default_button_with_unedible_text
 		(
-			new ERegionGabarite(160.0f, 30.0f),
+			new ERegionGabarite(160.0f, 35.0f),
 			filter_block_operation_segment,
 			&EDataActionCollection::action_add_new_filter_block,
 			l_text
@@ -5123,7 +5124,7 @@ EWindowMain::EWindowMain()
 
 		clone_button->make_default_button_with_unedible_text
 		(
-			new ERegionGabarite(160.0f, 30.0f),
+			new ERegionGabarite(160.0f, 35.0f),
 			filter_block_operation_segment,
 			&EDataActionCollection::action_clone_block,
 			l_text
@@ -5148,7 +5149,7 @@ EWindowMain::EWindowMain()
 			separator_button = new EntityButtonForFilterBlock();
 		separator_button->make_default_button_with_unedible_text
 		(
-			new ERegionGabarite(160.0f, 30.0f),
+			new ERegionGabarite(160.0f, 35.0f),
 			filter_block_operation_segment,
 			&EDataActionCollection::action_add_separator_block,
 			l_text
@@ -5186,8 +5187,8 @@ EWindowMain::EWindowMain()
 				EButtonGroup::create_default_button_group(new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 				->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
 			);
-		non_listed_segment->button_size_x_override = 150.0f;
-		non_listed_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+		//non_listed_segment->button_size_x_override = 150.0f;
+		non_listed_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_LEFT;
 
 
 		///
@@ -5199,8 +5200,9 @@ EWindowMain::EWindowMain()
 				EButtonGroup::create_default_button_group(new ERegionGabarite(100.0f, 100.0f), EGUIStyle::active_style)
 				->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
 			);
-		listed_segment->button_size_x_override = 150.0f;
-		listed_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+		//listed_segment->button_size_x_override = 150.0f;
+		listed_segment->have_bg_line = true;
+		listed_segment->button_align_type = ButtonAlignType::BUTTON_ALIGN_LEFT;
 
 
 
@@ -5210,32 +5212,64 @@ EWindowMain::EWindowMain()
 		button_multisearch->target_group_list.push_back(listed_segment);
 
 		EButtonGroup* target_group = nullptr;
-		for (GameItemAttribute* fba : registered_game_item_attributes)
-			if ((!fba->always_present) && (!fba->commentary_config))
+		for (GameItemAttribute* game_attribute : registered_game_item_attributes)
+			if ((!game_attribute->always_present) && (!game_attribute->commentary_config))
 			{
 				EDataContainer_Button_AddContentToFilterBlock* add_content_data = new EDataContainer_Button_AddContentToFilterBlock();
-				add_content_data->target_attribute = fba;
+				add_content_data->target_attribute = game_attribute;
 
-				if (fba->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED) { target_group = non_listed_segment; }
-				if (fba->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED) { target_group = listed_segment; }
+				if (game_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED)	{ target_group = non_listed_segment; }
+				if (game_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED)		{ target_group = listed_segment; }
 				//if (fba->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC) { target_group = cosmetic_segment; }
 
 				jc_button = new EntityButton();
-				jc_button->make_default_button_with_unedible_text
+				jc_button->make_as_default_button_with_icon_and_text
 				(
-					new ERegionGabarite(50.0f, 38.0f),
+					new ERegionGabarite(150.0f, 35.0f),
 					target_group,
 					&EDataActionCollection::action_add_selected_content_to_filter_block,
-					fba->localisation
+					game_attribute->icon,
+					game_attribute->localisation.localisations[ELocalisationText::active_localisation]
 				);
+				jc_button->force_field_left		= 2.0f;
+				jc_button->force_field_right	= 2.0f;
+				jc_button->force_field_bottom	= 2.0f;
+				jc_button->force_field_up		= 2.0f;
+
+				jc_button->main_text_area->localisation_text = game_attribute->localisation;
+
 				jc_button->can_be_stretched = true;
 
 				EntityButton::get_last_custom_data(jc_button)->data_container = add_content_data;
 
 				//set localisations to text area
-				EntityButton::get_last_clickable_area(jc_button)->text_area->localisation_text = fba->localisation;
+				EntityButton::get_last_clickable_area(jc_button)->text_area->localisation_text = game_attribute->localisation;
 
 				target_group->add_button_to_working_group(jc_button);
+
+
+
+
+				if (game_attribute->header_localistaion_key != "")
+				{
+					EntityButton*
+					atrribute_header_button = new EntityButton();
+
+					atrribute_header_button->make_default_button_with_unedible_text
+					(
+						new ERegionGabarite(250.0f, 20.0f),
+						target_group,
+						nullptr,
+						ELocalisationText::get_localisation_by_key(game_attribute->header_localistaion_key)
+					);
+					atrribute_header_button->can_be_stretched = true;
+					atrribute_header_button->new_line_method = NewLineMethod::FORCIBLY;
+					atrribute_header_button->do_not_generate_bg = true;
+					atrribute_header_button->force_field_bottom = 4.0f;
+					atrribute_header_button->force_field_up = 8.0f;
+					atrribute_header_button->max_stretch_factor = 3.0f;
+					target_group->add_button_to_working_group(atrribute_header_button);
+				}
 
 			}
 
@@ -6715,6 +6749,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
 	jc_filter_block_attribute->show_in_loot_item_description = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_level");
+
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6728,6 +6764,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
 	jc_filter_block_attribute->show_in_loot_item_description = true;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_level");
+
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6741,7 +6779,69 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
 	jc_filter_block_attribute->show_in_loot_item_description = true;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_quality");
+
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "Rarity";
+	jc_localisation.localisations[NSW_localisation_EN] = "Item rarity";
+	jc_localisation.localisations[NSW_localisation_RU] = "Редкость предмета";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST;
+	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_rarity");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "StackSize";
+	jc_localisation.localisations[NSW_localisation_EN] = "Stack size";
+	jc_localisation.localisations[NSW_localisation_RU] = "Размер стопки";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
+	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->show_in_loot_item_description = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_stack_size");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+
+	////////		ATTRIBUTE HEADER SEPARATOR		////////
+	jc_filter_block_attribute->header_localistaion_key = "attribute_header_main_attributes";
+	////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "GemLevel";
@@ -6754,7 +6854,157 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
 	jc_filter_block_attribute->show_in_loot_item_description = true;
+
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_gem_level");
+
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "GemQualityType";
+	jc_localisation.localisations[NSW_localisation_EN] = "Specific alternative quality";
+	jc_localisation.localisations[NSW_localisation_RU] = "Имеет определённое альтернативное качество";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_alternate_gem_quality");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "AlternateQuality";
+	jc_localisation.localisations[NSW_localisation_EN] = "Have alternate quality";
+	jc_localisation.localisations[NSW_localisation_RU] = "Имеет альтернативное качество";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_alternate_gem_quality");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+
+	////////		ATTRIBUTE HEADER SEPARATOR		////////
+	jc_filter_block_attribute->header_localistaion_key = "attribute_header_gem_attributes";
+	////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "MapTier";
+	jc_localisation.localisations[NSW_localisation_EN] = "Map tier";
+	jc_localisation.localisations[NSW_localisation_RU] = "Тир карты";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
+	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_map_tier");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "ElderMap";
+	jc_localisation.localisations[NSW_localisation_EN] = "Elder map";
+	jc_localisation.localisations[NSW_localisation_RU] = "Карта Древнего";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/ElderInfluence");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "ShapedMap";
+	jc_localisation.localisations[NSW_localisation_EN] = "Shaped map";
+	jc_localisation.localisations[NSW_localisation_RU] = "Карта Создателя";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/ShaperInfluence");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "BlightedMap";
+	jc_localisation.localisations[NSW_localisation_EN] = "Blighted map";
+	jc_localisation.localisations[NSW_localisation_RU] = "Карта скверны";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_blighted");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "UberBlightedMap";
+	jc_localisation.localisations[NSW_localisation_EN] = "Uber Blighted map";
+	jc_localisation.localisations[NSW_localisation_RU] = "Карта Уберскверны";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_uberblighted");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+	////////		ATTRIBUTE HEADER SEPARATOR		////////
+	jc_filter_block_attribute->header_localistaion_key = "attribute_header_map_attributes";
+	////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	jc_localisation.base_name = "SocketGroup";
@@ -6767,6 +7017,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT;
 	jc_filter_block_attribute->have_operator = true;
 	jc_filter_block_attribute->show_in_loot_item_description = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_linked_colours");
+
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6780,6 +7032,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT;
 	jc_filter_block_attribute->have_operator = true;
 	jc_filter_block_attribute->show_in_loot_item_description = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_socket_colours");
+
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6793,19 +7047,389 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
 	jc_filter_block_attribute->show_in_loot_item_description = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_links");
+
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
+
+
+	////////		ATTRIBUTE HEADER SEPARATOR		////////
+	jc_filter_block_attribute->header_localistaion_key = "attribute_header_sockets_attribute";
+	////////////////////////////////////////////////////////
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "StackSize";
-	jc_localisation.localisations[NSW_localisation_EN] = "Stack size";
-	jc_localisation.localisations[NSW_localisation_RU] = "Размер стопки";
+	jc_localisation.base_name = "BaseDefencePercentile";
+	jc_localisation.localisations[NSW_localisation_EN] = "Defence procentile";
+	jc_localisation.localisations[NSW_localisation_RU] = "Проценталь защиты";
 
 	jc_filter_block_attribute = new GameItemAttribute();
 	jc_filter_block_attribute->localisation = jc_localisation;
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
-	jc_filter_block_attribute->show_in_loot_item_description = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/Sacred_orb");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "BaseWard";
+	jc_localisation.localisations[NSW_localisation_EN] = "Base Ward";
+	jc_localisation.localisations[NSW_localisation_RU] = "Барьер";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
+	jc_filter_block_attribute->have_operator = true;
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_ward");
+
+	GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_WARD] = jc_filter_block_attribute;
+
+
+
+	////////		ATTRIBUTE HEADER SEPARATOR		////////
+	jc_filter_block_attribute->header_localistaion_key = "attribute_header_defence_attribute";
+	////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "HasSearingExarchImplicit";
+	jc_localisation.localisations[NSW_localisation_EN] = "Searing Exarch implicits";
+	jc_localisation.localisations[NSW_localisation_RU] = "Свойства Пламенного Экзарха";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
+	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/GreaterEldritchEmber");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "HasEaterOfWorldsImplicit";
+	jc_localisation.localisations[NSW_localisation_EN] = "Eater of Worlds implicits";
+	jc_localisation.localisations[NSW_localisation_RU] = "Свойства Пожирателя Миров";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
+	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/GreaterEldritchIchor");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+
+
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "Corrupted";
+	jc_localisation.localisations[NSW_localisation_EN] = "Corrupted (true/false)";
+	jc_localisation.localisations[NSW_localisation_RU] = "Осквернён (да/нет)";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/Vaal_Orb_inventory_icon");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "CorruptedMods";
+	jc_localisation.localisations[NSW_localisation_EN] = "Corrupted mods (quantity)";
+	jc_localisation.localisations[NSW_localisation_RU] = "Осквернённые свойства (количество)";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
+	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_corrupted");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+
+
+
+
+
+
+	////////		ATTRIBUTE HEADER SEPARATOR		////////
+	jc_filter_block_attribute->header_localistaion_key = "attribute_header_corruption";
+	////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*____________________________________BOOLEAN SECTION___________________________________________________*/
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "AnyEnchantment";
+	jc_localisation.localisations[NSW_localisation_EN] = "Any enchantment";
+	jc_localisation.localisations[NSW_localisation_RU] = "Есть зачарование";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/enchantment");
+
+	//jc_filter_block_attribute->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS];
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "Replica";
+	jc_localisation.localisations[NSW_localisation_EN] = "Replica";
+	jc_localisation.localisations[NSW_localisation_RU] = "Реплика";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_replica");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "Identified";
+	jc_localisation.localisations[NSW_localisation_EN] = "Identified";
+	jc_localisation.localisations[NSW_localisation_RU] = "Опознан";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/Scroll_of_Wisdom_inventory_icon");
+
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "Scourged";
+	jc_localisation.localisations[NSW_localisation_EN] = "Scourged";
+	jc_localisation.localisations[NSW_localisation_RU] = "Преображённый";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_scourged");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "Mirrored";
+	jc_localisation.localisations[NSW_localisation_EN] = "Mirrored";
+	jc_localisation.localisations[NSW_localisation_RU] = "Отражён";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/Mirror_of_Kalandra_inventory_icon");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "ElderItem";
+	jc_localisation.localisations[NSW_localisation_EN] = "Elder item";
+	jc_localisation.localisations[NSW_localisation_RU] = "Предмет Древнего";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/ElderInfluence");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "ShaperItem";
+	jc_localisation.localisations[NSW_localisation_EN] = "Shaper item";
+	jc_localisation.localisations[NSW_localisation_RU] = "Предмет Создателя";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/ShaperInfluence");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "FracturedItem";
+	jc_localisation.localisations[NSW_localisation_EN] = "Fractured item";
+	jc_localisation.localisations[NSW_localisation_RU] = "Расколотый предмет";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_fractured");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "SynthesisedItem";
+	jc_localisation.localisations[NSW_localisation_EN] = "Synthesised item";
+	jc_localisation.localisations[NSW_localisation_RU] = "Синтезированный предмет";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_synthesised");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	jc_localisation.base_name = "HasImplicitMod";
+	jc_localisation.localisations[NSW_localisation_EN] = "Has implicit mod";
+	jc_localisation.localisations[NSW_localisation_RU] = "Есть собственное свойство";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_has_implicit");
+
+	GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HAVE_IMPLICIT] = jc_filter_block_attribute;
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	jc_localisation.base_name = "HasCruciblePassiveTree";
+	jc_localisation.localisations[NSW_localisation_EN] = "Crucible passive tree";
+	jc_localisation.localisations[NSW_localisation_RU] = "Пассивное дерево Горнила";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
+	jc_filter_block_attribute->have_operator = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_crucible_passive");
+
+	registered_game_item_attributes.push_back(jc_filter_block_attribute);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	////////		ATTRIBUTE HEADER SEPARATOR		////////
+	jc_filter_block_attribute->header_localistaion_key = "attribute_header_additional_modifiers";
+	////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	jc_localisation.base_name = "EnchantmentPassiveNum";
+	jc_localisation.localisations[NSW_localisation_EN] = "Passives count";
+	jc_localisation.localisations[NSW_localisation_RU] = "Пассивки самоцвета";
+
+	jc_filter_block_attribute = new GameItemAttribute();
+	jc_filter_block_attribute->localisation = jc_localisation;
+	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
+	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
+	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/NotableLargeClusterJewel");
+
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6820,19 +7444,9 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->have_operator = true;
 	jc_filter_block_attribute->global_attribute_value = true;
 	jc_filter_block_attribute->show_in_loot_item_description = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_atlas");
 
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "CorruptedMods";
-	jc_localisation.localisations[NSW_localisation_EN] = "Corrupted mods";
-	jc_localisation.localisations[NSW_localisation_RU] = "Осквернённые свойства";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
-	jc_filter_block_attribute->have_operator = true;
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6845,6 +7459,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_width");
+
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_WIDTH] = jc_filter_block_attribute;
@@ -6859,110 +7475,17 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
 	jc_filter_block_attribute->have_operator = true;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_height");
+
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 
 	GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HEIGHT] = jc_filter_block_attribute;
 
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "EnchantmentPassiveNum";
-	jc_localisation.localisations[NSW_localisation_EN] = "Passives count";
-	jc_localisation.localisations[NSW_localisation_RU] = "Пассивки самоцвета";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
-	jc_filter_block_attribute->have_operator = true;
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "GemQualityType";
-	jc_localisation.localisations[NSW_localisation_EN] = "Alternative quality";
-	jc_localisation.localisations[NSW_localisation_RU] = "Альтернативное качество";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST;
-	jc_filter_block_attribute->have_operator = false;
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "BaseDefencePercentile";
-	jc_localisation.localisations[NSW_localisation_EN] = "Defence procentile";
-	jc_localisation.localisations[NSW_localisation_RU] = "Проценталь защиты";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
-	jc_filter_block_attribute->have_operator = true;
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "HasSearingExarchImplicit";
-	jc_localisation.localisations[NSW_localisation_EN] = "Searing Exarch implicits";
-	jc_localisation.localisations[NSW_localisation_RU] = "Свойства Пламенного Экзарха";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
-	jc_filter_block_attribute->have_operator = true;
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "HasEaterOfWorldsImplicit";
-	jc_localisation.localisations[NSW_localisation_EN] = "Eater of Worlds implicits";
-	jc_localisation.localisations[NSW_localisation_RU] = "Свойства Пожирателя Миров";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
-	jc_filter_block_attribute->have_operator = true;
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "MapTier";
-	jc_localisation.localisations[NSW_localisation_EN] = "Map tier";
-	jc_localisation.localisations[NSW_localisation_RU] = "Тир карты";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
-	jc_filter_block_attribute->have_operator = true;
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "Rarity";
-	jc_localisation.localisations[NSW_localisation_EN] = "Item rarity";
-	jc_localisation.localisations[NSW_localisation_RU] = "Редкость предмета";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST;
-	jc_filter_block_attribute->have_operator = true;
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "BaseWard";
-	jc_localisation.localisations[NSW_localisation_EN] = "Base Ward";
-	jc_localisation.localisations[NSW_localisation_RU] = "Барьер";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER;
-	jc_filter_block_attribute->have_operator = true;
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_WARD] = jc_filter_block_attribute;
 
 
-
-
+	////////		ATTRIBUTE HEADER SEPARATOR		////////
+	jc_filter_block_attribute->header_localistaion_key = "attribute_header_other";
+	////////////////////////////////////////////////////////
 
 
 
@@ -6979,6 +7502,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_UNDEFINED_ATTRIBUTE;
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->commentary_config = false;
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("undefined_item");
+
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -7000,6 +7525,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->have_input_field_for_listed = false;
 	jc_filter_block_attribute->show_in_loot_item_description = false;
 
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/Chaos_Orb_inventory_icon");
+
 	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM];
 	GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_TYPE] = jc_filter_block_attribute;
 
@@ -7017,6 +7544,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->have_exact_match = true;
 	jc_filter_block_attribute->show_in_loot_item_description = false;
+
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/SuperGloves");
 
 	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_BASE_CLASS];
 
@@ -7039,6 +7568,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->have_input_field_for_listed = true;
 	jc_filter_block_attribute->have_exact_match = false;
 
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("buttons/attribute_icon_has_implicit");
+
 	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS];
 
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
@@ -7056,6 +7587,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->have_exact_match = true;
+
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/NotableLargeClusterJewel");
 
 	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_CLUSTER_PASSIVE];
 
@@ -7075,6 +7608,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_DATA_ENTITY;
 	jc_filter_block_attribute->have_operator = false;
 	jc_filter_block_attribute->have_exact_match = true;
+
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/RedeemerInfluence");
 
 	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_INFLUENCE];
 
@@ -7096,6 +7631,8 @@ void EWindowMain::register_game_item_attributes()
 	jc_filter_block_attribute->have_input_field_for_listed = true;
 	jc_filter_block_attribute->have_exact_match = false;
 
+	jc_filter_block_attribute->icon = NS_EGraphicCore::load_from_textures_folder("icons/NotableLargeClusterJewel");
+
 	jc_filter_block_attribute->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_ENCHANTMENT];
 
 	registered_game_item_attributes.push_back(jc_filter_block_attribute);
@@ -7105,219 +7642,7 @@ void EWindowMain::register_game_item_attributes()
 
 
 
-	/*____________________________________BOOLEAN SECTION___________________________________________________*/
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "AnyEnchantment";
-	jc_localisation.localisations[NSW_localisation_EN] = "Any enchantment";
-	jc_localisation.localisations[NSW_localisation_RU] = "Есть зачарование";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	//jc_filter_block_attribute->filter_rule = EFilterRule::registered_filter_rules[RegisteredFilterRules::FILTER_RULE_EXPLICITS];
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "AlternateQuality";
-	jc_localisation.localisations[NSW_localisation_EN] = "Alternate quality";
-	jc_localisation.localisations[NSW_localisation_RU] = "Альтернативное качество";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "Replica";
-	jc_localisation.localisations[NSW_localisation_EN] = "Replica";
-	jc_localisation.localisations[NSW_localisation_RU] = "Реплика";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "Identified";
-	jc_localisation.localisations[NSW_localisation_EN] = "Identified";
-	jc_localisation.localisations[NSW_localisation_RU] = "Опознан";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "Corrupted";
-	jc_localisation.localisations[NSW_localisation_EN] = "Corrupted";
-	jc_localisation.localisations[NSW_localisation_RU] = "Осквернён";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "Scourged";
-	jc_localisation.localisations[NSW_localisation_EN] = "Scourged";
-	jc_localisation.localisations[NSW_localisation_RU] = "Преображённый";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "Mirrored";
-	jc_localisation.localisations[NSW_localisation_EN] = "Mirrored";
-	jc_localisation.localisations[NSW_localisation_RU] = "Отражён";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "ElderItem";
-	jc_localisation.localisations[NSW_localisation_EN] = "Elder item";
-	jc_localisation.localisations[NSW_localisation_RU] = "Предмет Древнего";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "ShaperItem";
-	jc_localisation.localisations[NSW_localisation_EN] = "Shaper item";
-	jc_localisation.localisations[NSW_localisation_RU] = "Предмет Создателя";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "FracturedItem";
-	jc_localisation.localisations[NSW_localisation_EN] = "Fractured item";
-	jc_localisation.localisations[NSW_localisation_RU] = "Расколотый предмет";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "SynthesisedItem";
-	jc_localisation.localisations[NSW_localisation_EN] = "Synthesised item";
-	jc_localisation.localisations[NSW_localisation_RU] = "Синтезированный предмет";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "ElderMap";
-	jc_localisation.localisations[NSW_localisation_EN] = "Elder map";
-	jc_localisation.localisations[NSW_localisation_RU] = "Карта Древнего";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "ShapedMap";
-	jc_localisation.localisations[NSW_localisation_EN] = "Shaped map";
-	jc_localisation.localisations[NSW_localisation_RU] = "Карта Создателя";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "BlightedMap";
-	jc_localisation.localisations[NSW_localisation_EN] = "Blighted map";
-	jc_localisation.localisations[NSW_localisation_RU] = "Карта скверны";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	jc_localisation.base_name = "UberBlightedMap";
-	jc_localisation.localisations[NSW_localisation_EN] = "Uber Blighted map";
-	jc_localisation.localisations[NSW_localisation_RU] = "Карта Уберскверны";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-	jc_localisation.base_name = "HasImplicitMod";
-	jc_localisation.localisations[NSW_localisation_EN] = "Has implicit mod";
-	jc_localisation.localisations[NSW_localisation_RU] = "Есть собственное свойство";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-	GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HAVE_IMPLICIT] = jc_filter_block_attribute;
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-	jc_localisation.base_name = "HasCruciblePassiveTree";
-	jc_localisation.localisations[NSW_localisation_EN] = "Crucible passive tree";
-	jc_localisation.localisations[NSW_localisation_RU] = "Пассивное дерево Горнила";
-
-	jc_filter_block_attribute = new GameItemAttribute();
-	jc_filter_block_attribute->localisation = jc_localisation;
-	jc_filter_block_attribute->filter_attribute_type = FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED;
-	jc_filter_block_attribute->filter_attribute_value_type = FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER;
-	jc_filter_block_attribute->have_operator = false;
-	registered_game_item_attributes.push_back(jc_filter_block_attribute);
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
 
 
 
@@ -21010,26 +21335,70 @@ void EDataActionCollection::action_open_add_content_window(Entity* _entity, ECus
 void EDataActionCollection::action_add_selected_content_to_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 
-	EDataContainer_Button_AddContentToFilterBlock* button_content_data = static_cast<EDataContainer_Button_AddContentToFilterBlock*>	(_custom_data->data_container);
+	EDataContainer_Button_AddContentToFilterBlock*
+	button_content_data = static_cast<EDataContainer_Button_AddContentToFilterBlock*>	(_custom_data->data_container);
 
 
-	EDataContainer_Group_AddContentToFilterBlock* add_content_group_data = static_cast<EDataContainer_Group_AddContentToFilterBlock*>	(EButtonGroup::add_content_to_filter_block_group->data_container);
-	EButtonGroupFilterBlock* whole_button_group = add_content_group_data->target_filter_block;
+	EDataContainer_Group_AddContentToFilterBlock*
+	add_content_group_data = static_cast<EDataContainer_Group_AddContentToFilterBlock*>	(EButtonGroup::add_content_to_filter_block_group->data_container);
 
-	EButtonGroupFilterBlock* whole_filter_block_data = static_cast<EButtonGroupFilterBlock*>			(whole_button_group);
-	EDataContainer_Button_AddContentToFilterBlock* add_content_button_data = static_cast<EDataContainer_Button_AddContentToFilterBlock*>	(_custom_data->data_container);
+	EButtonGroupFilterBlock*
+	target_filter_block = add_content_group_data->target_filter_block;
 
-	EButtonGroup* target_group_for_content = nullptr;
+	EDataContainer_Button_AddContentToFilterBlock*
+	add_content_button_data = static_cast<EDataContainer_Button_AddContentToFilterBlock*>	(_custom_data->data_container);
 
-	EntityButton* jc_button = nullptr;
+	EButtonGroup*
+	target_group_for_content = nullptr;
 
-	if (add_content_button_data->target_attribute->filter_attribute_value_type != FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_UNDEFINED_ATTRIBUTE)
+	EntityButton*
+	jc_button = nullptr;
+
+	//bool target_block_is_selected = target_filter_block->is_selected
+
+
+
+
+	//		add to only target filter block or to all selected?
+
+	//		only to target
+	if
+	(
+		(!EButtonGroup::selected_groups.empty())
+		&&
+		(target_filter_block->is_selected)
+	)
 	{
-		add_game_item_attribute_to_filter_block(whole_button_group, add_content_button_data->target_attribute, "");
+		for (EButtonGroup* selected_group : EButtonGroup::selected_groups)
+		{
+			add_game_item_attribute_to_filter_block
+			(
+				static_cast<EButtonGroupFilterBlock*>(selected_group),
+
+				(add_content_button_data->target_attribute->filter_attribute_value_type != FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_UNDEFINED_ATTRIBUTE)
+				?
+				(add_content_button_data->target_attribute)
+				:
+				(nullptr),
+
+				""
+			);
+		}
 	}
-	else
+	else//	to all selected
 	{
-		add_game_item_attribute_to_filter_block(whole_button_group, nullptr, "");
+		add_game_item_attribute_to_filter_block
+		(
+			target_filter_block,
+
+			(add_content_button_data->target_attribute->filter_attribute_value_type != FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_UNDEFINED_ATTRIBUTE)
+			?
+			(add_content_button_data->target_attribute)
+			:
+			(nullptr),
+
+			""
+		);
 	}
 
 	//if (taget_group_for_content != nullptr)

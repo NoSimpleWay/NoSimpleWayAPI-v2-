@@ -783,7 +783,9 @@ public:
 	ELocalisationText			localisation;
 	FilterAttributeType			filter_attribute_type;
 	FilterAttributeValueType	filter_attribute_value_type;
-	EFilterRule* filter_rule;
+	EFilterRule*				filter_rule;
+
+	ETextureGabarite*			icon;
 
 	bool have_operator = false;
 	bool have_input_field_for_listed = false;
@@ -792,6 +794,7 @@ public:
 
 
 	std::string					data_entity_tag_filtration;
+	std::string					header_localistaion_key = "";
 
 	bool						always_present;
 	float						button_x_size_override = 0.0f;
