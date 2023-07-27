@@ -794,7 +794,8 @@ public:
 
 
 	std::string					data_entity_tag_filtration;
-	std::string					header_localistaion_key = "";
+	std::string					header_localistaion_key			= "";
+	std::string					description_localisation_key	= "";
 
 	bool						always_present;
 	float						button_x_size_override = 0.0f;

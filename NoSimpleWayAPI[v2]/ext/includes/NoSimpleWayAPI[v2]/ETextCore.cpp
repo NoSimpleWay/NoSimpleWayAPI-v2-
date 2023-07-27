@@ -508,7 +508,7 @@ void ETextArea::generate_text()
 		int
 		buffer_size	=	sprite_layer->batcher->gl_vertex_attribute_total_count * stored_text.length()	* 4;
 
-		if (have_bg_line)
+		if (group_have_background)
 		{
 			buffer_size += sprite_layer->batcher->gl_vertex_attribute_total_count * row.size()			* 4;
 		}
@@ -600,7 +600,7 @@ void ETextArea::generate_text()
 			float py = 0.5f / NS_EGraphicCore::default_texture_atlas->get_atlas_size_y();
 			
 			//background line
-			if (have_bg_line)
+			if (group_have_background)
 			{
 				ERenderBatcher::if_have_space_for_data(sprite_layer->batcher, 1);
 				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLACK, 0.9f);

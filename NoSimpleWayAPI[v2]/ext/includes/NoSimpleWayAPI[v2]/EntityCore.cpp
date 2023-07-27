@@ -1634,7 +1634,32 @@ bool EntityButton::button_in_culling_gabarites()
 
 void EntityButton::draw()
 {
+	//		SIMPLE BACKROUND (transparent black rectangle)
+	if (have_simple_bg)
+	{
+		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLACK, 0.75f);
+		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+		(
+			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+			//x pos
+			button_gabarite->world_position_x,
+
+			//y pos
+			button_gabarite->world_position_y,
+
+			button_gabarite->size_x,
+			button_gabarite->size_y,
+
+			NS_DefaultGabarites::texture_gabarite_white_pixel
+		);
+	}
+
 	Entity::draw();
+
+	
 
 	if ((suppressor != nullptr) && (!*suppressor))
 	{

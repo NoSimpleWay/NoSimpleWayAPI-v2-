@@ -557,51 +557,87 @@ void EDataActionCollection::action_type_text_multiblock_searcher(ETextArea* _tex
 
 		//std::string inputed_text = EStringUtils::to_lower(target_text);
 
+		//try search any text field with suitable text
+		//for every group in multisearch vector
 		for (EButtonGroup* button_group : multisearch_data_container->target_group_list)
+		{
+			//for every workcspace button in group
 			for (EntityButton* but : button_group->workspace_button_list)
-				{
-					match = false;
+			{
+				match = false;
 
-					for (ECustomData* c_data : but->custom_data_list)
-						for (EClickableArea* c_area : c_data->clickable_area_list)
-							if (c_area->text_area != nullptr)
+				//every clickable region
+				for (ECustomData* c_data : but->custom_data_list)
+					for (EClickableArea* c_area : c_data->clickable_area_list)
+						if (c_area->text_area != nullptr)
+						{
+							//stored text (inputed on field)
+							if (EStringUtils::A_contains_B_ignore_case(c_area->text_area->original_text, inputed_text))
 							{
-								//stored text
-								if (EStringUtils::A_contains_B_ignore_case(c_area->text_area->original_text, inputed_text))
+								match = true;
+							}
+
+							//search on localisations text
+							for (int i = 0; i < NSW_languages_count; i++)
+							{
+								if (EStringUtils::A_contains_B_ignore_case(c_area->text_area->localisation_text.localisations[i], inputed_text))
 								{
 									match = true;
-								}
-
-								//search on localisations text
-								for (int i = 0; i < NSW_languages_count; i++)
-								{
-									if (EStringUtils::A_contains_B_ignore_case(c_area->text_area->localisation_text.localisations[i], inputed_text))
-									{
-										match = true;
-									}
-								}
-
-								//base name
-								if (EStringUtils::A_contains_B_ignore_case(c_area->text_area->localisation_text.base_name, inputed_text))
-								{
-									match = true;
-								}
-
-								if (match)
-								{
-									but->button_hidden_by_search = false;
-								}
-								else
-								{
-									but->button_hidden_by_search = true;
-									but->destroy_attached_description();
 								}
 							}
 
-					//button_group->scroll_y = 0.0f;
-					EButtonGroup::change_group(button_group);
-					button_group->need_change = true;
+							//base name
+							if (EStringUtils::A_contains_B_ignore_case(c_area->text_area->localisation_text.base_name, inputed_text))
+							{
+								match = true;
+							}
+						}
+
+
+				//type any search
+				if (inputed_text != "")
+				{
+					//result
+					switch (but->button_search_mode)
+					{
+					case ButtonSearchMode::DEFAULT:
+					{
+						but->button_hidden_by_search = !match;
+
+						//if (!match)
+						//{but->destroy_attached_description();}
+
+						break;
+					}
+
+					case ButtonSearchMode::ALWAYS_HIDDEN:
+					{
+						but->button_hidden_by_search = true;
+
+						break;
+					}
+
+
+					case ButtonSearchMode::ALWAY_SHOW:
+					{
+						but->button_hidden_by_search = false;
+
+						break;
+					}
+					}
 				}
+				else
+				{
+					but->button_hidden_by_search = false;
+				}
+
+				//button_group->scroll_y = 0.0f;
+
+			}
+
+			//EButtonGroup::change_group(button_group);
+			button_group->need_change = true;
+		}
 	}
 }
 

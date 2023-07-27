@@ -1267,3 +1267,171 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Other modifiers"
 	[tag]"name RU"		[value]"Прочие модификаторы"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_item_level"
+	[tag]"name EN"		[value]"The level of an item is determined by the level of the area or monster\nThe level of the item determines which attributes can appear on the item and which cannot."
+	[tag]"name RU"		[value]"Уровень предмета определяется уровнем области или монстра\nОт уровня предмета зависит, какие атрибуты могут появиться на предмете, а какие нет."
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_required_level"
+	[tag]"name EN"		[value]"Minimum character level required to equip an item"
+	[tag]"name RU"		[value]"Минимальный уровень персонажа, необходимый для того, что бы экипировать предмет"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_quality"
+	[tag]"name EN"		[value]"Quality gives different bonuses depending on the type of item.\nThe following items can have quality:\nFlasks\nMaps\nWeapons\nArmours\nJewelry\nSkill gems\nBy default, the maximum quality for regular items is 20. In special cases, the quality can be up to 23% for gems, and 30% for equipment, maps, and flasks."
+	[tag]"name RU"		[value]"Качество даёт различные бонусы в зависимости от типа предмета.\nКачество могут иметь:\nФлаконы\nКарты\nОружие\nБроня\nБижутерия\nКамни умений\nПо умолчанию, максимальное качество для обычных предметов: 20.\nВ особых случаях качество может достигать до 23% для камней, и 30% для экипировки, карт, и флаконов"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_item_rarity"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"Редкость предмета определяет количество свойств, которые могут быть на предмете.\nУникальные предметы имеют заранее определённые свойства"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_stack_size"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"Определяет количество вещей в 1 стопке"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_attribute_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_RU"
+	

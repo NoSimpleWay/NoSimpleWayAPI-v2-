@@ -605,24 +605,25 @@ public:
 
 	static bool catched_by_mouse(EButtonGroup* _group);
 
-	bool have_bg_line = (true);
-	bool can_be_focused = (true);
-	bool button_group_is_active = (true);
-	bool disable_gabarite = (false);
+	bool group_have_background			= true;
+	bool group_have_button_lines		= false;
+	bool can_be_focused					= true;
+	bool button_group_is_active			= true;
+	bool disable_gabarite				= false;
 
-	bool force_new_line = (false);
-	bool parent_have_slider = (false);
-	bool need_redraw = (false);
-	bool can_be_stretched_by_child = (false);
+	bool force_new_line					= false;
+	bool parent_have_slider				= false;
+	bool need_redraw					= false;
+	bool can_be_stretched_by_child		= false;
 
-	bool stretch_x_by_parent_size = (false);
-	bool dynamic_size_y = (false);
+	bool stretch_x_by_parent_size		= false;
+	bool dynamic_size_y					= false;
 
-	bool have_slider = (false);
+	bool have_slider					= false;
 
-	bool can_change_position_in_vector = true;
+	bool can_change_position_in_vector	= true;
 
-	bool dynamic_autosize_for_window = false;
+	bool dynamic_autosize_for_window	= false;
 
 	//ETextArea* text_area;
 	std::vector<EClickableArea*> clickable_area_list;

@@ -192,12 +192,22 @@ struct EHotKeyManager
 	int require_main_button;
 	int require_secondare_button;
 };
+
+enum class ButtonSearchMode
+{
+	DEFAULT,
+	ALWAYS_HIDDEN,
+	ALWAY_SHOW
+};
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 class EntityButton : public Entity
 {
 public:
 	EntityButton();
 	virtual ~EntityButton();
+
+	ButtonSearchMode				button_search_mode = ButtonSearchMode::DEFAULT;
 
 	NewLineMethod
 	new_line_method					= NewLineMethod::WHEN_OUT_OF_GABARITE;
@@ -211,6 +221,7 @@ public:
 	bool do_not_generate_bg			= false;
 	bool cannot_be_auto_deleted		= false;
 	bool can_be_stretched			= false;
+	bool have_simple_bg				= false;
 	bool entity_is_active();
 
 	void destroy_all_vertex_buffer_data() override;
