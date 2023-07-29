@@ -8136,7 +8136,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"_NO_DATA_"
 
 	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	[tag]"base class"	[value]"Two Handed Mace"	
+	[tag]"base class"	[value]"Two Hand Mace"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8159,7 +8159,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"_NO_DATA_"
 
 	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	[tag]"base class"	[value]"Two Handed Mace"	
+	[tag]"base class"	[value]"Two Hand Mace"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8179,7 +8179,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"_NO_DATA_"
 
 	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	[tag]"base class"	[value]"Two Handed Mace"	
+	[tag]"base class"	[value]"Two Hand Mace"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8202,7 +8202,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"_NO_DATA_"
 
 	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	[tag]"base class"	[value]"Two Handed Mace"	
+	[tag]"base class"	[value]"Two Hand Mace"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8226,7 +8226,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"_NO_DATA_"
 
 	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	[tag]"base class"	[value]"Two Handed Mace"	
+	[tag]"base class"	[value]"Two Hand Mace"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8249,7 +8249,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"_NO_DATA_"
 
 	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	[tag]"base class"	[value]"Two Handed Mace"	
+	[tag]"base class"	[value]"Two Hand Mace"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8272,7 +8272,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"_NO_DATA_"
 
 	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	[tag]"base class"	[value]"Two Handed Mace"	
+	[tag]"base class"	[value]"Two Hand Mace"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8296,7 +8296,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"_NO_DATA_"
 
 	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	[tag]"base class"	[value]"Two Handed Mace"	
+	[tag]"base class"	[value]"Two Hand Mace"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8320,7 +8320,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"_NO_DATA_"
 
 	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	[tag]"base class"	[value]"Two Handed Mace"	
+	[tag]"base class"	[value]"Two Hand Mace"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8344,7 +8344,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"_NO_DATA_"
 
 	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	[tag]"base class"	[value]"Two Handed Mace"	
+	[tag]"base class"	[value]"Two Hand Mace"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -8363,21 +8363,551 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"base name"	[value]"Karui Maul"
-	[tag]"name EN"		[value]"Marohi Erqi"
+	[tag]"base name"	[value]"Reaver Sword"
+	[tag]"name EN"		[value]"The Dancing Dervish"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperTwoHandedMace"
-	[tag]"base class"	[value]"Two Handed Mace"	
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Legion drop"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Tiger Sword"
+	[tag]"name EN"		[value]"Terminus Est"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Bastard Sword"
+	[tag]"name EN"		[value]"Shiversting"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Highland Blade"
+	[tag]"name EN"		[value]"Rigwald's Charge"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ornate Sword"
+	[tag]"name EN"		[value]"Queen's Decree"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Infernal Sword"
+	[tag]"name EN"		[value]"Oro's Sacrifice"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Infernal Sword"
+	[tag]"name EN"		[value]"Echoforge"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Uber Maven drop"
 	
 	[tag]"worth"		[value]"Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Infernal Sword"
+	[tag]"name EN"		[value]"Starforge"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Shaper drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Infernal Sword"
+	[tag]"name EN"		[value]"Voidforge"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Uber elder drop"
+	
+	[tag]"worth"		[value]"Very expensive"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ezomyte Blade"
+	[tag]"name EN"		[value]"Kondo's Pride"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Reaver Sword"
+	[tag]"name EN"		[value]"Hiltless"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Etched Greatsword"
+	[tag]"name EN"		[value]"Edge of Madness"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Lion Sword"
+	[tag]"name EN"		[value]"Doomsower"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sage Wand"
+	[tag]"name EN"		[value]"Twyzel"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Spiraled Wand"
+	[tag]"name EN"		[value]"Storm Prison"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Spiraled Wand"
+	[tag]"name EN"		[value]"Reverberation Rod"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Imbued Wand"
+	[tag]"name EN"		[value]"Piscator's Vigil"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Imbued Wand"
+	[tag]"name EN"		[value]"Obliteration"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Imbued Wand"
+	[tag]"name EN"		[value]"Moonsorrow"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Engraved Wand"
+	[tag]"name EN"		[value]"Midnight Bargain"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Engraved Wand"
+	[tag]"name EN"		[value]"Eclipse Solaris"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Carved Wand"
+	[tag]"name EN"		[value]"Ashcaller"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Goat's Wand"
+	[tag]"name EN"		[value]"Abberath's Horn"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sage's Robe"
+	[tag]"name EN"		[value]"Zahndethus' Cassock"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
 	
 	
 	
