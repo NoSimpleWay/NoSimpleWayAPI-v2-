@@ -206,7 +206,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"boss drop"
 	[tag]"item tag"		[value]"Breach loot"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -264,7 +264,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"boss drop"
 	[tag]"item tag"		[value]"Breach loot"
 	
 	[tag]"worth"		[value]"Expensive"
@@ -565,7 +565,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"boss drop"
 	[tag]"item tag"		[value]"Breach loot"
 	
 	[tag]"worth"		[value]"Moderate"
@@ -1595,7 +1595,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"boss drop"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -1795,7 +1795,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"boss drop"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1814,7 +1814,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"boss drop"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1833,7 +1833,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"boss drop"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -2360,7 +2360,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Boss loot"	
+	[tag]"item tag"		[value]"boss drop"	
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -3129,7 +3129,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber eater drop"
+	[tag]"item tag"		[value]"Uber Eater drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Good for start"
@@ -4447,7 +4447,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"boss drop"
 	[tag]"item tag"		[value]"Breach loot"
 	
 	[tag]"worth"		[value]"Common"
@@ -8558,7 +8558,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Uber elder drop"
+	[tag]"item tag"		[value]"Uber Elder drop"
 	
 	[tag]"worth"		[value]"Very expensive"
 	
@@ -8897,11 +8897,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Zahndethus' Cassock"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperTwoHandSword"
-	[tag]"base class"	[value]"Two Hand Sword"	
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
 
 	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"4"
+	[tag]"item height"	[value]"3"
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
@@ -8916,16 +8916,4915 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Holy Chainmail"
+	[tag]"name EN"		[value]"Voll's Protector"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
 	
 	
 	
 	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
 
+	[tag]"base name"	[value]"Lacquered Garb"
+	[tag]"name EN"		[value]"Victario's Influence"
+	[tag]"name RU"		[value]"_NO_DATA_"
 
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
 
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
 
+	[tag]"base name"	[value]"Carnal Armour"
+	[tag]"name EN"		[value]"The Restless Ward"
+	[tag]"name RU"		[value]"_NO_DATA_"
 
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
 
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sharkskin Tunic"
+	[tag]"name EN"		[value]"The Rat Cage"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Destroyer Regalia"
+	[tag]"name EN"		[value]"The Coming Calamity"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Regalia"
+	[tag]"name EN"		[value]"The Beast Fur Shawl"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Spidersilk Robe"
+	[tag]"name EN"		[value]"Soul Mantle"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Copper Plate"
+	[tag]"name EN"		[value]"Solaris Lorica"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ornate Ringmail"
+	[tag]"name EN"		[value]"Lightbane Raiment"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Conquest Chainmail"
+	[tag]"name EN"		[value]"Kingsguard"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]" Latticed Ringmail"
+	[tag]"name EN"		[value]"Icetomb"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Silken Vest"
+	[tag]"name EN"		[value]"Ghostwrithe"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Elegant Ringmail"
+	[tag]"name EN"		[value]"Geofri's Sanctuary"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wild Leather"
+	[tag]"name EN"		[value]"Foxshade"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cutthroat's Garb"
+	[tag]"name EN"		[value]"Bronn's Lithe"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sun Leather"
+	[tag]"name EN"		[value]"Briskwrap"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Plate Vest"
+	[tag]"name EN"		[value]"Bramblejack"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Bone Armour"
+	[tag]"name EN"		[value]"Bloodbond"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Buckskin Tunic"
+	[tag]"name EN"		[value]"Ashrend"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crusader Chainmail"
+	[tag]"name EN"		[value]"Ambu's Charge"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Triumphant Lamellar"
+	[tag]"name EN"		[value]"Cherrubim's Maleficence"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Necromancer Silks"
+	[tag]"name EN"		[value]"Vis Mortis"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Varnished Coat"
+	[tag]"name EN"		[value]"The Admiral"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Heist drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crusader Plate"
+	[tag]"name EN"		[value]"Lioneye's Vision"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Widowsilk Robe"
+	[tag]"name EN"		[value]"Infernal Mantle"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Golden Plate"
+	[tag]"name EN"		[value]"Greed's Embrace"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sentinel Jacket"
+	[tag]"name EN"		[value]"Dendrobate"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Exquisite Leather"
+	[tag]"name EN"		[value]"Yriel's Fostering"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Simple Robe"
+	[tag]"name EN"		[value]"Thousand Ribbons"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Full Dragonscale"
+	[tag]"name EN"		[value]"Daresso's Defiance"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Saintly Chainmail"
+	[tag]"name EN"		[value]"Chains of Command"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sadist Garb"
+	[tag]"name EN"		[value]"Tinkerskin"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Devout Chainmail"
+	[tag]"name EN"		[value]"The Fourth Vow"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Astral Plate"
+	[tag]"name EN"		[value]"Blunderbore"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Zodiac Leather"
+	[tag]"name EN"		[value]"The Snowblind Grace"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Tul drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Saint's Hauberk"
+	[tag]"name EN"		[value]"The Ivory Tower"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Destiny Leather"
+	[tag]"name EN"		[value]"Queen of the Forest"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Glorious Plate"
+	[tag]"name EN"		[value]"Perfidy"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Saintly Chainmail"
+	[tag]"name EN"		[value]"Incandescent Heart"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Widowsilk Robe"
+	[tag]"name EN"		[value]"Doedre's Skin"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Astral Plate"
+	[tag]"name EN"		[value]"Death's Oath"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Assassin's Garb"
+	[tag]"name EN"		[value]"Cospri's Will"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Varnished Coat"
+	[tag]"name EN"		[value]"Carcass Jack"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Full Wyrmscale"
+	[tag]"name EN"		[value]"Belly of the Beast"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"_cost_"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Desert Brigandine"
+	[tag]"name EN"		[value]"Lightning Coil"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Regalia"
+	[tag]"name EN"		[value]"The Queen's Hunger"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Syndicate drop"
+	[tag]"item tag"		[value]"Catarina drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sacrificial Garb"
+	[tag]"name EN"		[value]"Atziri's Splendour"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Exquisite Leather"
+	[tag]"name EN"		[value]"Kintsugi"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Golden Plate"
+	[tag]"name EN"		[value]"Craiceann's Carapace"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Craiceann drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Scholar's Robe"
+	[tag]"name EN"		[value]"Cloak of Flame"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Lacquered Garb"
+	[tag]"name EN"		[value]"Cloak of Defiance"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crusader Plate"
+	[tag]"name EN"		[value]"The Iron Fortress"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Glorious Plate"
+	[tag]"name EN"		[value]"Kaom's Heart"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Widowsilk Robe"
+	[tag]"name EN"		[value]"Fenumus' Shroud"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Fenumus drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Saint's Hauberk"
+	[tag]"name EN"		[value]"Doryani's Prototype"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Occultist's Vestment"
+	[tag]"name EN"		[value]"Shavronne's Wrappings"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Carnal Armour"
+	[tag]"name EN"		[value]"Shroud of the Lightless"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Abyss drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Blood Raiment"
+	[tag]"name EN"		[value]"Saqawal's Nest"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Saqawal drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sadist Garb"
+	[tag]"name EN"		[value]"Inpulsa's Broken Heart"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Necromancer Silks"
+	[tag]"name EN"		[value]"Fleshcrafter"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Blood Raiment"
+	[tag]"name EN"		[value]"The Eternity Shroud"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Uber Elder drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wyrmscale Doublet"
+	[tag]"name EN"		[value]"Gruthkul's Pelt"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Savant's Robe"
+	[tag]"name EN"		[value]"Garb of the Ephemeral"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Synthesis drop"
+	[tag]"item tag"		[value]"Venarius drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gladiator Plate"
+	[tag]"name EN"		[value]"The Brass Dome"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sentinel Jacket"
+	[tag]"name EN"		[value]"Expedition's End"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Heist drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sadist Garb"
+	[tag]"name EN"		[value]"Doppelganger Guise"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Maven drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Spidersilk Robe"
+	[tag]"name EN"		[value]"The Covenant"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Triumphant Lamellar"
+	[tag]"name EN"		[value]"Farrul's Fur"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Farrul drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Savant's Robe"
+	[tag]"name EN"		[value]"Cloak of Tawm'r Isley"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Savant's Robe"
+	[tag]"name EN"		[value]"Cloak of Tawm'r Isley"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Chest drop"
+	[tag]"item tag"		[value]"Syndicate drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Zodiac Leather"
+	[tag]"name EN"		[value]"Hyrri's Ire"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Saint's Hauberk"
+	[tag]"name EN"		[value]"Sporeguard"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Blight drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sage's Robe"
+	[tag]"name EN"		[value]"Dialla's Malefaction"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Carnal Armour"
+	[tag]"name EN"		[value]"Shroud of the Lightless"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Abyss drop"
+	
+	[tag]"worth"		[value]"Very expensive"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Carnal Armour"
+	[tag]"name EN"		[value]"Stasis Prison"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Legion drop"
+	
+	[tag]"worth"		[value]"Very expensive"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Mesh Boots"
+	[tag]"name EN"		[value]"Wake of Destruction"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Goathide Boots"
+	[tag]"name EN"		[value]"Victario's Flight"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Antique Greaves"
+	[tag]"name EN"		[value]"Torchoak Step"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shagreen Boots"
+	[tag]"name EN"		[value]"Three-step Assault"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Clasped Boots"
+	[tag]"name EN"		[value]"Sundance"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Plated Greaves"
+	[tag]"name EN"		[value]"Stormcharger"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Stealth Boots"
+	[tag]"name EN"		[value]"Sin Trek"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Scholar Boots"
+	[tag]"name EN"		[value]"Shavronne's Pace"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Eelskin Boots"
+	[tag]"name EN"		[value]"Orbala's Stand"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Strapped Boots"
+	[tag]"name EN"		[value]"Nomic's Storm"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Legion Boots"
+	[tag]"name EN"		[value]"March of the Legion"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Bronzescale Boots"
+	[tag]"name EN"		[value]"Lioneye's Paws"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Arcanist Slippers"
+	[tag]"name EN"		[value]"Inya's Epiphany"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Legion Boots"
+	[tag]"name EN"		[value]"Gang's Momentum"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ironscale Boots"
+	[tag]"name EN"		[value]"Dusktoe"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deerskin Boots"
+	[tag]"name EN"		[value]"Deerstalker"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Silk Slippers"
+	[tag]"name EN"		[value]"Bones of Ullr"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Soldier Boots"
+	[tag]"name EN"		[value]"Alberon's Warpath"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Dragonscale Boots"
+	[tag]"name EN"		[value]"Darkray Vectors"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sharkskin Boots"
+	[tag]"name EN"		[value]"The Blood Dance"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ancient Greaves"
+	[tag]"name EN"		[value]"Redblade Tramplers"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Conjurer Boots"
+	[tag]"name EN"		[value]"Rainbowstride"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Titan Greaves"
+	[tag]"name EN"		[value]"Kaom's Roots"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Fugitive Boots"
+	[tag]"name EN"		[value]"Inextricable Fate"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Nubuck Boots"
+	[tag]"name EN"		[value]"Goldwyrm"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wool Shoes"
+	[tag]"name EN"		[value]"Wanderlust"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Titan Greaves"
+	[tag]"name EN"		[value]"The Infinite Pursuit"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Breach drop"
+	[tag]"item tag"		[value]"Uul-Netol drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sorcerer Boots"
+	[tag]"name EN"		[value]"Steppan Eard"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Greaves"
+	[tag]"name EN"		[value]"Dawnstrider"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Exarch drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Trapper Boots"
+	[tag]"name EN"		[value]"Brinerot Whalers"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Two-Toned Boots"
+	[tag]"name EN"		[value]"Beacon of Madness"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Murder Boots"
+	[tag]"name EN"		[value]"Voidwalker"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Shaper drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Hydrascale Boots"
+	[tag]"name EN"		[value]"Saqawal's Talons"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Saqawal drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Serpentscale Boots"
+	[tag]"name EN"		[value]"Mutewind Whispersteps"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Slink Boots"
+	[tag]"name EN"		[value]"Farrul's Chase"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Farrul drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Murder Boots"
+	[tag]"name EN"		[value]"Bubonic Trail"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Abyss drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Goliath Greaves"
+	[tag]"name EN"		[value]"Craiceann's Tracks"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Craiceann drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Reinforced Greaves"
+	[tag]"name EN"		[value]"Windscream"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sorcerer Boots"
+	[tag]"name EN"		[value]"Skyforth"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Carnal Boots"
+	[tag]"name EN"		[value]"Omeyocan"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Runic Sollerets"
+	[tag]"name EN"		[value]"Olroth's Charge"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Expedition drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Assassin's Boots"
+	[tag]"name EN"		[value]"Fenumus' Spinnerets"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Fenumus drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Runic Sabatons"
+	[tag]"name EN"		[value]"Vorana's March"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Expedition drop"
+	[tag]"item tag"		[value]"Vorana drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sorcerer Boots"
+	[tag]"name EN"		[value]"Doryani's Delusion"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Doryani's Machinarium drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Titan Greaves"
+	[tag]"name EN"		[value]"Doryani's Delusion"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Doryani's Machinarium drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Slink Boots"
+	[tag]"name EN"		[value]"Doryani's Delusion"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Doryani's Machinarium drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Goathide Boots"
+	[tag]"name EN"		[value]"Abberath's Hooves"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Slink Boots"
+	[tag]"name EN"		[value]"Atziri's Step"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Atziri drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Carnal Boots"
+	[tag]"name EN"		[value]"Corpsewalker"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shagreen Boots"
+	[tag]"name EN"		[value]"Temptation Step"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Ultimatum drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Assassin's Boots"
+	[tag]"name EN"		[value]"The Stampede"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Blight drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wyrmscale Boots"
+	[tag]"name EN"		[value]"Legacy of Fury"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Maven drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Rawhide Boots"
+	[tag]"name EN"		[value]"Seven-League Step"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Riveted Boots"
+	[tag]"name EN"		[value]"Ralakesh's Impatience"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Dragonscale Boots"
+	[tag]"name EN"		[value]"Annihilation's Approach"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Uber Exarch drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Stealth Boots"
+	[tag]"name EN"		[value]"Garukhan's Flight"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crusader Boots"
+	[tag]"name EN"		[value]"Death's Door"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Uber lab drop"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wyrmscale Gauntlets"
+	[tag]"name EN"		[value]"Wyrmsign"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Conjurer Gloves"
+	[tag]"name EN"		[value]"Voidbringer"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Titan Gauntlets"
+	[tag]"name EN"		[value]"Veruso's Battering Rams"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Mesh Gloves"
+	[tag]"name EN"		[value]"Triad Grip"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Carnal Mitts"
+	[tag]"name EN"		[value]"The Embalmer"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Dragonscale Gauntlets"
+	[tag]"name EN"		[value]"Surgebinders"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Soldier Gloves"
+	[tag]"name EN"		[value]"Southbound"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Bronzescale Gauntlets"
+	[tag]"name EN"		[value]"Slitherpinch"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Clasped Mitts"
+	[tag]"name EN"		[value]"Shadows and Dust"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Chain Gloves"
+	[tag]"name EN"		[value]"Shackles of the Wretched"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wool Gloves"
+	[tag]"name EN"		[value]"Sadima's Touch"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shagreen Gloves"
+	[tag]"name EN"		[value]"Painseeker"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Nubuck Gloves_"
+	[tag]"name EN"		[value]"Oskarm"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wrapped Mitts"
+	[tag]"name EN"		[value]"Ondar's Clasp"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Legion Gloves"
+	[tag]"name EN"		[value]"Null and Void"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Slink Gloves"
+	[tag]"name EN"		[value]"Mercenary's Lot"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Murder Mitts"
+	[tag]"name EN"		[value]"Malachai's Mark"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Samite Gloves"
+	[tag]"name EN"		[value]"Kalisa's Grace"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Eelskin Gloves"
+	[tag]"name EN"		[value]"Great Old One's Tentacles"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Bronze Gauntlets"
+	[tag]"name EN"		[value]"Giantsbane"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ironscale Gauntlets"
+	[tag]"name EN"		[value]"Flesh and Spirit"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Strapped Mitts"
+	[tag]"name EN"		[value]"Facebreaker"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Goliath Gauntlets"
+	[tag]"name EN"		[value]"Empire's Grasp"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Velvet Gloves"
+	[tag]"name EN"		[value]"Doedre's Tenure"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Satin Gloves"
+	[tag]"name EN"		[value]"Demon Stitcher"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Clasped Mitts"
+	[tag]"name EN"		[value]"Aukuna's Will"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Satin Gloves"
+	[tag]"name EN"		[value]"Allelopathy"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Assassin's Mitts"
+	[tag]"name EN"		[value]"Snakebite"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ambush Mitts"
+	[tag]"name EN"		[value]"Stormseeker"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Steel Gauntlets"
+	[tag]"name EN"		[value]"Meginord's Vise"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Goathide Gloves"
+	[tag]"name EN"		[value]"Hrimsorrow"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Arcanist Gloves"
+	[tag]"name EN"		[value]"Grip of the Council"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Carnal Mitts"
+	[tag]"name EN"		[value]"Algor Mortis"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wyrmscale Gauntlets"
+	[tag]"name EN"		[value]"Tanu Ahi"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Iron Gauntlets"
+	[tag]"name EN"		[value]"Lochtonial Caress"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Assassin's Mitts"
+	[tag]"name EN"		[value]"Blasphemer's Grasp"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Elder drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Steelscale Gauntlets"
+	[tag]"name EN"		[value]"Aurseize"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Zealot Gloves"
+	[tag]"name EN"		[value]"Volkuur's Guidance"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Steelscale Gauntlets"
+	[tag]"name EN"		[value]"Tombfist"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Abyss drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Runic Gages"
+	[tag]"name EN"		[value]"Nightgrip"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Expedition drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Bronzescale Gauntlets"
+	[tag]"name EN"		[value]"Vaal Caress"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crusader Gloves"
+	[tag]"name EN"		[value]"Shaper's Touch"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Runic Gauntlets"
+	[tag]"name EN"		[value]"Medved's Challenge"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Expedition drop"
+	[tag]"item tag"		[value]"Medved drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deerskin Gloves"
+	[tag]"name EN"		[value]"Maligaro's Virtuosity"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Spiked Gloves"
+	[tag]"name EN"		[value]"Ceaseless Feast"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Fingerless Silk Gloves"
+	[tag]"name EN"		[value]"Black Zenith"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Hydrascale Gauntlets"
+	[tag]"name EN"		[value]"Farrul's Pounce"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Farrul drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Gauntlets"
+	[tag]"name EN"		[value]"Doryani's Fist"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Serpentscale Gauntlets"
+	[tag]"name EN"		[value]"Haemophilia"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Hydrascale Gauntlets"
+	[tag]"name EN"		[value]"Breathstealer"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Blight drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ancient Gauntlets"
+	[tag]"name EN"		[value]"Winds of Change"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Embroidered Gloves"
+	[tag]"name EN"		[value]"Vixen's Entrapment"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Murder Mitts"
+	[tag]"name EN"		[value]"Thunderfist"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Assassin's Mitts"
+	[tag]"name EN"		[value]"Storm's Gift"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Soldier Gloves"
+	[tag]"name EN"		[value]"Saqawal's Winds"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Saqawal drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Legion Gloves"
+	[tag]"name EN"		[value]"Offering to the Serpent"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Murder Mitts"
+	[tag]"name EN"		[value]"Machina Mitts"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Carnal Mitts"
+	[tag]"name EN"		[value]"Fenumus' Weave"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Fenumus drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Titan Gauntlets"
+	[tag]"name EN"		[value]"Craiceann's Pincers"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Beast drop"
+	[tag]"item tag"		[value]"Craiceann drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Riveted Gloves"
+	[tag]"name EN"		[value]"Command of the Pit"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Kurgal drop drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Silk Gloves"
+	[tag]"name EN"		[value]"Asenath's Gentle Touch"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ambush Mitts"
+	[tag]"name EN"		[value]"Abhorrent Interrogation"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crusader Gloves"
+	[tag]"name EN"		[value]"Hands of the High Templar"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Sirus drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Gauntlets"
+	[tag]"name EN"		[value]"Atziri's Acuity"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Uber Atziri drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Carnal Mitts"
+	[tag]"name EN"		[value]"Soul Ascension"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Uber Uber drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Titan Gauntlets"
+	[tag]"name EN"		[value]"Kaom's Spirit"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Zealot Gloves"
+	[tag]"name EN"		[value]"Hand of the Fervent"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Assassin's Mitts"
+	[tag]"name EN"		[value]"Entropic Devastation"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Uber Shaper drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Hydrascale Gauntlets"
+	[tag]"name EN"		[value]"Gravebind"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ancient Gauntlets"
+	[tag]"name EN"		[value]"Hateforge"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Unlimatum drop"
+	
+	[tag]"worth"		[value]"Very Expensive"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"_BASE_"
+	[tag]"name EN"		[value]"_EN_"
+	[tag]"name RU"		[value]"_NO_DATA_"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
 	
 	
 	
