@@ -1026,6 +1026,13 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"rule_folder_uniques"
+	[tag]"name EN"		[value]"Category:\nUniques"
+	[tag]"name RU"		[value]"Категория:\nУники"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"rule_folder_leagues"
 	[tag]"name EN"		[value]"Category:\nLeagues"
 	[tag]"name RU"		[value]"Категория:\nЛиги"
@@ -1305,9 +1312,9 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"text_region_press_plus_button_to_add_new_condition"
+	[tag]"name EN"		[value]"Press '+' button to add new condition"
+	[tag]"name RU"		[value]"Нажмите кнопку '+', что бы добавить новое условие"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"

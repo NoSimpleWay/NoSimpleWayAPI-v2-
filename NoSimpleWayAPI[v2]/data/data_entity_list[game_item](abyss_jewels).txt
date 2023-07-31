@@ -6,6 +6,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"GhastlyEyeJewel"
 	[tag]"base class"	[value]"Abyss Jewels"
+	[tag]"item tag"		[value]"Expensive base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20,6 +21,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"HypnoticEyeJewel"
 	[tag]"base class"	[value]"Abyss Jewels"
+	
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -34,6 +37,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"MurderousEyeJewel"
 	[tag]"base class"	[value]"Abyss Jewels"
+	
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -48,6 +53,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"SearchingEyeJewel"
 	[tag]"base class"	[value]"Abyss Jewels"
+	
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

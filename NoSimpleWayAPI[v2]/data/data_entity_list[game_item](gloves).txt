@@ -208,6 +208,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Bronze_Gauntlets_inventory_icon"
 	[tag]"base class"	[value]"Gloves"
+	
+	[tag]"item tag"		[value]"Expensive base for unique"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -272,6 +274,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -328,6 +331,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -416,6 +420,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -693,6 +698,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1114,6 +1120,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1157,6 +1164,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1189,6 +1197,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1295,6 +1304,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 	

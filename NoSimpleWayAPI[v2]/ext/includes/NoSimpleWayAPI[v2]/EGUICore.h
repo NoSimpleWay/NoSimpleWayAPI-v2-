@@ -316,6 +316,28 @@ public:
 	std::vector<EntityButton*> button_list;
 };
 
+enum class HighlightID
+{
+	GREEN_INFO,
+	RED_WARNING
+};
+
+struct HighlightStruct
+{
+	HighlightStruct();
+
+	void set_color(float _r, float _g, float _b, float _a);
+
+	float highlight_color[4]{ 1.0f };
+
+	float max_time			= 1.0f;
+	float time_remaining	= 1.0f;
+
+	HighlightID highlight_id = HighlightID::GREEN_INFO;
+
+	static HighlightStruct	create_new_highlihght(float _r, float _g, float _b, float _a, HighlightID _id, float _time);
+};
+
 class EButtonGroupFastMessage;	
 class EButtonGroup
 {
@@ -417,7 +439,7 @@ public:
 
 	static MoveVectorMethod move_vector_mode;
 
-	bool need_remove = false;
+	bool filter_block_need_remove = false;
 	bool need_refresh = false;
 	bool need_change = false;
 	bool need_recalculate_culling_lines = false;
@@ -538,6 +560,8 @@ public:
 				
 	float group_border_texture_left			= (0.0f);
 	float group_border_texture_right		= (0.0f);
+
+	std::vector<HighlightStruct> highlight_list;
 
 	float additional_y_distance = 0.0f;
 
@@ -678,16 +702,22 @@ public:
 
 	float button_size_x_override = 0.0f;
 
-	float max_highlight_time = 0.35f;
-	float highlight_time = 0.0f;
+	//float max_highlight_time = 0.35f;
+	//float highlight_time = 0.0f;
 
-	void highlight_this_group();
+	void highlight_this_group(float _r, float _g, float _b, float _a, HighlightID _id, float _time);
+
+	void highlight_this_group_green_info();
+	void highlight_this_group_red_warning();
+
 	void recursive_change_localisation(int _localisaton_id);
 
 	void add_default_clickable_region_with_text_area(ELocalisationText _text);
 
 	void init_as_root_group(EWindow* _window);
 	void init_as_fast_message(EWindow* _window, ELocalisationText _text);
+
+	void clear_group_selection();
 };
 
 class EButtonGroupFastMessage : public EButtonGroup

@@ -78,7 +78,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
-	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"item tag"		[value]"Expensive base for unique"
 	[tag]"item tag"		[value]"Good belt base"
 	[tag]"item tag"		[value]"Have implicit"
 	
@@ -102,7 +102,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Good base for unique"	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
-	[tag]"item tag"		[value]"Good belt base"
+	[tag]"item tag"		[value]"Expensive belt base"
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"worth"		[value]"Trash"
@@ -206,6 +206,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Rare base"
 	[tag]"item tag"		[value]"Boss loot"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Good base for unique"
 	
 	[tag]"worth"		[value]"Rare"
 

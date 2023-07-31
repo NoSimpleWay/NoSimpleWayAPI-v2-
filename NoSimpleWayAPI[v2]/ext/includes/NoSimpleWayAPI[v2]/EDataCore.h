@@ -160,6 +160,7 @@ class ERegionGabariteContainer
 
 	bool is_original;
 };
+
 enum ClickableRegionSides
 {
 	CRS_SIDE_LEFT,
@@ -170,6 +171,7 @@ enum ClickableRegionSides
 	CRS_SIDE_BODY,
 	_CRS_SIDE_LAST_ELEMENT
 };
+
 class EClickableArea
 {
 public:
@@ -208,7 +210,7 @@ public:
 	bool have_rama = true;
 	bool any_visual_changes = true;
 
-	
+	bool clickable_region_is_active = true;
 
 	//bool* editable_borders	= new bool(false);
 	bool can_catch_side[_CRS_SIDE_LAST_ELEMENT]{ false };
@@ -354,6 +356,8 @@ public:
 
 	bool		is_folder	= false;
 	std::string	named_id	= "";
+
+	void					add_default_banned_tag();
 };
 
 class EDataContainer_Group_DataEntitiesSearch : public EDataContainer

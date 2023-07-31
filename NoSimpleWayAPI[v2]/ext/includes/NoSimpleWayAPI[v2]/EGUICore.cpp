@@ -27,6 +27,8 @@ std::vector<EButtonGroup*>		EButtonGroup::selected_groups;
 
 MoveVectorMethod				EButtonGroup::move_vector_mode = MoveVectorMethod::METHOD_DRAG;
 
+
+
 EButtonGroupConfirmAction* EButtonGroupConfirmAction::confirm_decline_group = nullptr;
 
 //EButtonGroup* EButtonGroup::focused_button_group;
@@ -59,8 +61,10 @@ void EWindow::GUI_update_default(float _d)
 {
 
 	//DELETE
+	bool any_remove = false;
+
 	for (int i = 0; i < button_group_list.size(); i++)
-		if ((button_group_list[i] != nullptr) && (button_group_list[i]->need_remove))
+		if ((button_group_list[i] != nullptr) && (button_group_list[i]->filter_block_need_remove))
 		{
 			if (!disable_deleting)
 			{
@@ -73,7 +77,7 @@ void EWindow::GUI_update_default(float _d)
 
 			i--;
 
-			//any_remove = true;
+			any_remove = true;
 		}
 
 
@@ -176,9 +180,10 @@ void EWindow::GUI_update_default(float _d)
 
 				//if (catched_group_id <= EButtonGroup::parent_vector_moving_group->group_list.size() - EButtonGroup::selected_groups.size() + 1)
 				{
-					std::vector<EButtonGroup*>::iterator start_erasing = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), EButtonGroup::selected_groups.front());
-					std::vector<EButtonGroup*>::iterator end_erasing = std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), EButtonGroup::selected_groups.back());
-					std::vector<EButtonGroup*>::iterator catched_iterator = std::find(EButtonGroup::selected_groups.begin(), EButtonGroup::selected_groups.end(), catched_group);
+					std::vector<EButtonGroup*>::iterator start_erasing		= std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), EButtonGroup::selected_groups.front());
+					std::vector<EButtonGroup*>::iterator end_erasing		= std::find(EButtonGroup::parent_vector_moving_group->group_list.begin(), EButtonGroup::parent_vector_moving_group->group_list.end(), EButtonGroup::selected_groups.back());
+					std::vector<EButtonGroup*>::iterator catched_iterator	= std::find(EButtonGroup::selected_groups.begin(), EButtonGroup::selected_groups.end(), catched_group);
+					
 					//if ((first_moved_group_id != -1) && (last_moved_group_id != -1) && (catched_group_id != -1))
 					if
 						(
@@ -187,7 +192,7 @@ void EWindow::GUI_update_default(float _d)
 							(end_erasing != std::end(EButtonGroup::parent_vector_moving_group->group_list))
 							&&
 							(catched_iterator != std::end(EButtonGroup::parent_vector_moving_group->group_list))
-							)
+						)
 					{
 						//		if focused not selection vector
 						if (catched_iterator == EButtonGroup::selected_groups.end())
@@ -723,10 +728,12 @@ void EButtonGroup::button_group_update(float _d)
 			(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
 			&&
 			(EButtonGroup::focused_button_group_mouse_unpressed == this)
-			)
+		)
 	{
 		recursive_get_info();
 	}
+
+
 
 	if (autodelete_time >= 0.0f)
 	{
@@ -734,19 +741,41 @@ void EButtonGroup::button_group_update(float _d)
 
 		if (autodelete_time <= 0.0f)
 		{
-			need_remove = true;
+			filter_block_need_remove = true;
 		}
 	}
+
+	
 
 	/*if (row->header_button_group != nullptr)
 	{
 		row->header_button_group->update(_d);
 	}*/
-	if (highlight_time > 0.0f) { highlight_time -= _d; }
-	bool any_remove = false;
+	//if (highlight_time > 0.0f) { highlight_time -= _d; }
 
+
+	//update_highlights
+	for (int i = 0; i < highlight_list.size(); i++)
+	{
+		HighlightStruct*
+		pointer_to_highlight = &highlight_list[i];
+
+		if (pointer_to_highlight->time_remaining > 0.0f)
+		{
+			pointer_to_highlight->time_remaining -= _d;
+
+			if (pointer_to_highlight->time_remaining <= 0.0f)
+			{
+				highlight_list.erase(highlight_list.begin() + i);
+
+				i--;
+			}
+		}
+	}
+
+	bool any_remove = false;
 	for (int i = 0; i < group_list.size(); i++)
-		if ((group_list[i] != nullptr) && (group_list[i]->need_remove))
+		if ((group_list[i] != nullptr) && (group_list[i]->filter_block_need_remove))
 		{
 			if (!disable_deleting)
 			{
@@ -785,7 +814,7 @@ void EButtonGroup::button_group_update(float _d)
 
 	if (!all_button_list.empty())
 		for (unsigned int i = 0; i < all_button_list.size(); i++)
-			if (all_button_list[i]->need_remove)
+			if (all_button_list[i]->filter_block_need_remove)
 			{
 				any_button_order_change = true;
 
@@ -877,7 +906,7 @@ void EButtonGroup::button_group_update(float _d)
 
 		//move group by mouse
 		if
-			(
+		(
 				(EInputCore::MOUSE_BUTTON_LEFT)
 				&&
 				(root_group != nullptr)
@@ -892,8 +921,8 @@ void EButtonGroup::button_group_update(float _d)
 					(EButtonGroup::catched_group_for_translation == root_group)
 					||
 					(EButtonGroup::catched_group_for_translation == nullptr)
-					)
 				)
+		)
 		{
 			if (EButtonGroup::catched_group_for_translation == nullptr)
 			{
@@ -930,6 +959,12 @@ void EButtonGroup::button_group_update(float _d)
 		for (group_update_action gua : actions_on_update)
 		{
 			gua(this);
+		}
+
+		for (EClickableArea* group_clickable_area : clickable_area_list)
+		if ((group_clickable_area != nullptr) && (group_clickable_area->clickable_region_is_active))
+		{
+			group_clickable_area->update(_d);
 		}
 
 		for (int i = 0; i < group_list.size(); i++)
@@ -1003,7 +1038,7 @@ void EButtonGroup::draw_button_group()
 
 				if (DebugNamespace::is_debug_element_active(DebugStructID::PHANTOM_HIGHLIGHT_FOR_GROUPS))
 				{
-					highlight_time = 0.5f;
+					highlight_this_group_green_info();
 				}
 
 				//EInputCore::logger_simple_info("Phantom redraw!");
@@ -1355,10 +1390,10 @@ void EButtonGroup::draw_button_group()
 			}
 
 
-			for (EClickableArea* clickable_area : clickable_area_list)
-			if (clickable_area != nullptr)
+			for (EClickableArea* group_clickable_area : clickable_area_list)
+			if ((group_clickable_area != nullptr) && (group_clickable_area->clickable_region_is_active))
 			{
-				clickable_area->draw();
+				group_clickable_area->draw();
 			}
 
 			NS_EGraphicCore::pbr_batcher->draw_call();//draw pbg bg
@@ -1570,22 +1605,36 @@ void EButtonGroup::draw_button_group()
 				);
 			}
 
-			if ((highlight_time > 0.0f) && (max_highlight_time > 0.0f))
+			for (int i = 0; i < highlight_list.size(); i++)
 			{
+				HighlightStruct*
+				pointer_to_highlight = &highlight_list[i];
 
-				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, min(highlight_time / max_highlight_time, 1.0f) * 0.65);
-				//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
-				ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
-				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-				(
-					batcher_for_default_draw->vertex_buffer,
-					batcher_for_default_draw->last_vertice_buffer_index,
-					region_gabarite->world_position_x + 0.0f,
-					region_gabarite->world_position_y + 0.0f,
-					region_gabarite->size_x - 0.0f,
-					region_gabarite->size_y - 0.0f,
-					NS_DefaultGabarites::texture_gabarite_white_pixel
-				);
+				if (pointer_to_highlight->time_remaining > 0.0f)
+				{
+					//set highlight color, less time exist = less opacity
+					NS_EGraphicCore::set_active_color_custom_alpha
+					(
+						pointer_to_highlight->highlight_color,
+						pointer_to_highlight->highlight_color[3] * min(pointer_to_highlight->time_remaining / pointer_to_highlight->max_time, 1.0f)
+					);
+
+					//if (batcher_for_default_draw->last_vertice_buffer_index + batcher_for_default_draw->gl_vertex_attribute_total_count * 4 * 4 >= TOTAL_MAX_VERTEX_BUFFER_ARRAY_SIZE) { batcher_for_default_draw->draw_call(); }
+					ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 4);
+					NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+					(
+						batcher_for_default_draw->vertex_buffer,
+						batcher_for_default_draw->last_vertice_buffer_index,
+						region_gabarite->world_position_x + 0.0f,
+						region_gabarite->world_position_y + 0.0f,
+						region_gabarite->size_x - 0.0f,
+						region_gabarite->size_y - 0.0f,
+						NS_DefaultGabarites::texture_gabarite_white_pixel
+					);
+
+				}
+
+				//pointer_to_highlight->time_remaining -= _d;
 
 
 			}
@@ -3834,9 +3883,45 @@ void EButtonGroup::move_to_foreground_and_center()
 	move_to_foreground();
 }
 
-void EButtonGroup::highlight_this_group()
+void EButtonGroup::highlight_this_group(float _r, float _g, float _b, float _a, HighlightID _id, float _time)
 {
-	highlight_time = max_highlight_time;
+	float existed_highlight = -1;
+
+	for (int i = 0; i < highlight_list.size(); i++)
+	{
+		//do not create new highlight, just update
+		if (highlight_list[i].highlight_id == _id)
+		{
+			existed_highlight = i;
+		}
+	}
+
+	//no existed highlight, create new
+	if (existed_highlight == -1)
+	{
+		highlight_list.push_back(HighlightStruct::create_new_highlihght(_r, _g, _b, _a, _id, _time));
+	}
+	else
+	{
+		highlight_list[existed_highlight].set_color(_r, _g, _b, _a);
+
+		highlight_list[existed_highlight].max_time			= _time;
+		highlight_list[existed_highlight].time_remaining	= _time;
+
+	}
+}
+
+void EButtonGroup::highlight_this_group_green_info()
+{
+	highlight_this_group(0.1f, 0.9f, 0.2f, 0.8f, HighlightID::GREEN_INFO, 0.5f);
+	//highlight_time = max_highlight_time;
+
+	
+}
+
+void EButtonGroup::highlight_this_group_red_warning()
+{
+	highlight_this_group(0.8f, 0.4f, 0.2f, 0.5f, HighlightID::RED_WARNING, 0.2f);
 }
 
 void EButtonGroup::recursive_change_localisation(int _localisaton_id)
@@ -3867,7 +3952,7 @@ void EButtonGroup::recursive_change_localisation(int _localisaton_id)
 void EButtonGroup::add_default_clickable_region_with_text_area(ELocalisationText _text)
 {
 	EClickableArea*
-		new_clickable_area = EClickableArea::create_default_clickable_region(region_gabarite, this);
+	new_clickable_area = EClickableArea::create_default_clickable_region(region_gabarite, this);
 	main_clickable_area = new_clickable_area;
 
 	clickable_area_list.push_back(new_clickable_area);
@@ -3897,6 +3982,24 @@ void EButtonGroup::init_as_fast_message(EWindow* _window, ELocalisationText _tex
 	init_as_root_group(_window);
 
 	add_default_clickable_region_with_text_area(_text);
+}
+
+void EButtonGroup::clear_group_selection()
+{
+	for (EButtonGroup* group : selected_groups)
+	{
+		group->is_selected = false;
+	}
+
+	selected_groups.clear();
+
+	parent_vector_moving_group	= nullptr;
+	vector_moving_group			= nullptr;
+
+	first_selected_element		= nullptr;
+	last_selected_element		= nullptr;
+
+	parent_for_selected_groups	= nullptr;
 }
 
 void EButtonGroupConfirmAction::init_as_confirm_decline_group()
@@ -4871,7 +4974,7 @@ void EButtonGroupFastMessage::button_group_update(float _d)
 
 			if (delete_when_expire)
 			{
-				need_remove = true;
+				filter_block_need_remove = true;
 			}
 			else
 			{
@@ -4897,4 +5000,32 @@ namespace DebugNamespace
 			return false;
 		}
 	}
+}
+
+HighlightStruct::HighlightStruct()
+{
+
+}
+
+void HighlightStruct::set_color(float _r, float _g, float _b, float _a)
+{
+	highlight_color[0] = _r;
+	highlight_color[1] = _g;
+	highlight_color[2] = _b;
+	highlight_color[3] = _a;
+}
+
+HighlightStruct HighlightStruct::create_new_highlihght(float _r, float _g, float _b, float _a, HighlightID _id, float _time)
+{
+	HighlightStruct
+	pointer_to_highlight;
+
+	pointer_to_highlight.set_color(_r, _g, _b, _a);
+						
+	pointer_to_highlight.max_time		= _time;
+	pointer_to_highlight.time_remaining	= _time;
+						
+	pointer_to_highlight.highlight_id	= _id;
+
+	return pointer_to_highlight;
 }

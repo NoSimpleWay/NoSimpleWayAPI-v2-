@@ -1746,25 +1746,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"base name"	[value]"Cloth Belt"
-	[tag]"name EN"		[value]"The Torrent's Reclamation"
-	[tag]"name RU"		[value]"Осушение потока"
-
-	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
-	[tag]"base class"	[value]"Belts"
-
-	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Hidden item"
-	[tag]"item tag"		[value]"Unique item"
-	
-	[tag]"worth"		[value]"Rare"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"base name"	[value]"Cloth Belt"
 	[tag]"name EN"		[value]"The Flow Untethered"
 	[tag]"name RU"		[value]"Безграничный поток"
 
@@ -5287,25 +5268,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Trash"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
 
-	[tag]"base name"	[value]"Ambusher"
-	[tag]"name EN"		[value]"The Hidden Blade"
-	[tag]"name RU"		[value]"_NO_DATA_"
-
-	[tag]"icon path"	[value]"SuperDagger"
-	[tag]"base class"	[value]"Dagger"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"3"
-	
-	[tag]"item tag"		[value]"Hidden item"
-	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Heist drop"
-	
-	[tag]"worth"		[value]"Rare"
 	
 	
 	
@@ -13824,7 +13787,3 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Common"
-	
-	
-	
-	

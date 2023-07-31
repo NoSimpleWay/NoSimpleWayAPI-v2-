@@ -95,7 +95,7 @@ public:
 	static ESprite* get_last_sprite(Entity* _en);
 
 	bool entity_disabled			= false;
-	bool need_remove				= false;
+	bool filter_block_need_remove				= false;
 	bool have_phantom_draw			= false;
 	bool be_visible_last_time		= false;
 

@@ -1591,6 +1591,19 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
+	[tag]"name EN"		[value]"Rebirth and Reneval"
+	[tag]"name RU"		[value]"Перерождение"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Moderate"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
 	[tag]"name EN"		[value]"Reckless Ambition"
 	[tag]"name RU"		[value]"Дерзкие амбиции"
 

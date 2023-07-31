@@ -353,7 +353,7 @@ void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData
 
 void EDataActionCollection::action_delete_entity(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	_entity->need_remove = true;
+	_entity->filter_block_need_remove = true;
 
 	EInputCore::logger_simple_info("try mark as removed");
 }
@@ -1410,7 +1410,7 @@ void EDataActionCollection::action_delete_vertical_router_variants_group(EButton
 {
 	EButtonGroupRouterVariant* group_vertical_variant = static_cast<EButtonGroupRouterVariant*>(_group);
 
-	group_vertical_variant->need_remove = true;
+	group_vertical_variant->filter_block_need_remove = true;
 	group_vertical_variant->target_router_button->opened_router_group = nullptr;
 }
 
@@ -1658,7 +1658,7 @@ void EDataActionCollection::action_select_rotate_variant_from_list(Entity* _enti
 
 
 	target_button->select_variant(router_selector_button->id);
-	target_group->need_remove = true;
+	target_group->filter_block_need_remove = true;
 	target_group->close_this_group();
 
 	for (data_action_pointer dap : target_button->action_on_choose_variant_from_window)
@@ -2184,17 +2184,17 @@ void EClickableArea::update(float _d)
 			}
 	}
 
-	if
-	(
-		(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
-		&&
-		(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
-		&&
-		(EInputCore::key_pressed_once(GLFW_KEY_APOSTROPHE))
-	)
-	{
-		EInputCore::logger_simple_info("GLFW_KEY_APOSTROPHE");
-	}
+	//if
+	//(
+	//	(EButtonGroup::focused_button_group_mouse_unpressed == ((EntityButton*)parent_entity)->parent_button_group)
+	//	&&
+	//	(overlapped_by_mouse(this, NS_EGraphicCore::current_offset_x, NS_EGraphicCore::current_offset_y, NS_EGraphicCore::current_zoom))
+	//	&&
+	//	(EInputCore::key_pressed_once(GLFW_KEY_APOSTROPHE))
+	//)
+	//{
+	//	EInputCore::logger_simple_info("GLFW_KEY_APOSTROPHE");
+	//}
 
 
 
@@ -3663,4 +3663,17 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 
 
 	return (matched_by_input && required_tag_match && required_tag_value_match);
+}
+
+void EFilterRule::add_default_banned_tag()
+{
+	//filter "item tag" by 
+	DataEntityFilter*
+	jc_filter = new DataEntityFilter();
+
+	jc_filter->target_tag_name = "item tag";
+	jc_filter->suitable_values_list.push_back("Deleted");
+
+	banned_tag_list.push_back(jc_filter);
+
 }

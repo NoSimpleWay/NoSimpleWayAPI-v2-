@@ -222,7 +222,7 @@ void EDataActionCollection::action_mark_parent_group_as_removed(Entity* _entity,
 	if (static_cast<EntityButton*>(_entity)->parent_button_group != nullptr)
 	{
 
-		static_cast<EntityButton*>(_entity)->parent_button_group->need_remove = true;
+		static_cast<EntityButton*>(_entity)->parent_button_group->filter_block_need_remove = true;
 
 		EInputCore::logger_simple_success("marked as deleted");
 	}
@@ -234,9 +234,15 @@ void EDataActionCollection::action_mark_parent_group_as_removed(Entity* _entity,
 
 void EDataActionCollection::action_mark_filter_blocks_as_removed(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block->need_remove = true;
+	EButtonGroup*
+	parent_group_for_button = static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block;
+
+	parent_group_for_button->filter_block_need_remove = true;
+
 	
-	//remove single button
+
+	//remove single button from error list
+	if ((!parent_group_for_button->is_selected) || (EButtonGroup::selected_groups.empty()))
 	{
 		for (EntityButton* but:EWindowMain::registered_group_filter_error_list->part_with_buttons->workspace_button_list)
 		{
@@ -249,13 +255,11 @@ void EDataActionCollection::action_mark_filter_blocks_as_removed(Entity* _entity
 			EWindowMain::registered_group_filter_error_list->need_refresh = true;
 		}
 	}
-
-
-	if (!EButtonGroup::selected_groups.empty())
+	else//remove associated buttons from error list
 	{
 		for (EButtonGroup* selected_group : EButtonGroup::selected_groups)
 		{
-			selected_group->need_remove = true;
+			selected_group->filter_block_need_remove = true;
 
 			for (EntityButton* but : EWindowMain::registered_group_filter_error_list->part_with_buttons->workspace_button_list)
 			{
@@ -271,12 +275,48 @@ void EDataActionCollection::action_mark_filter_blocks_as_removed(Entity* _entity
 			}
 		}
 	}
-	else
+
 
 
 	EWindowMain::make_unsaved_loot_filter_changes();
 
-	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	//EWindowMain::loot_simulator_button_group->delayed_execution = true;
+	EWindowMain::loot_simulator_button_group->clear_loot_simulator();
+}
+
+void EDataActionCollection::action_highlight_removed_block(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+
+	EntityButtonForFilterBlock*
+	but = static_cast<EntityButtonForFilterBlock*>(_entity);
+
+	EButtonGroupFilterBlock* filter_block = but->parent_filter_block;
+
+
+
+	if (EClickableArea::active_clickable_region == but->main_clickable_area)
+	{
+
+		//bool in_selected_gabarite = false;
+
+		if
+		(
+			(!filter_block->is_selected)
+			||
+			(EButtonGroup::selected_groups.empty())
+		)
+		{
+			filter_block->highlight_this_group_red_warning();
+		}
+		else
+		{
+			for (EButtonGroup* selected_element : EButtonGroup::selected_groups)
+			{
+				selected_element->highlight_this_group_red_warning();
+			}
+		}
+	}
 }
 
 void EDataActionCollection::action_generate_filter_block_text(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -468,6 +508,7 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 	EWindowMain::loot_filter_editor->need_refresh = true;
 
 	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	//EWindowMain::loot_simulator_button_group->delayed_execution = true;
 
 	EWindowMain::remove_unsave_changes_flag_from_tab();
 
@@ -611,7 +652,7 @@ void EDataActionCollection::action_add_new_filter_block(Entity* _entity, ECustom
 
 	EWindowMain::create_filter_block(EWindowMain::loot_filter_editor, position);
 
-	EWindowMain::loot_filter_editor->group_list[position]->highlight_this_group();
+	EWindowMain::loot_filter_editor->group_list[position]->highlight_this_group_green_info();
 
 	//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 	EWindowMain::loot_filter_editor->need_refresh = true;
@@ -621,7 +662,8 @@ void EDataActionCollection::action_add_new_filter_block(Entity* _entity, ECustom
 
 	//EWindowMain::make_unsaved_loot_filter_changer();
 
-	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
 }
 
 void EDataActionCollection::action_open_custom_sound_list(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -772,7 +814,8 @@ void EDataActionCollection::action_select_this_tab(Entity* _entity, ECustomData*
 		NS_EGraphicCore::refresh_autosize_groups(w);
 	}
 
-	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
 
 	//EButtonGroup::change_group(EWindowMain::loot_filter_editor);
 	EWindowMain::loot_filter_editor->need_change = true;
@@ -898,7 +941,7 @@ void EDataActionCollection::action_clone_block(Entity* _entity, ECustomData* _cu
 
 	EWindowMain::parse_filter_text_lines(filter_block, LootFilterOpenMode::LOOT_FILTER_OPEN_MODE_USER_FILTER_FROM_DISC);
 
-	EWindowMain::loot_filter_editor->group_list[position]->highlight_this_group();
+	EWindowMain::loot_filter_editor->group_list[position]->highlight_this_group_green_info();
 
 	//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 	EWindowMain::loot_filter_editor->need_refresh = true;
@@ -908,7 +951,8 @@ void EDataActionCollection::action_clone_block(Entity* _entity, ECustomData* _cu
 		EButtonGroup::add_content_to_filter_block_group->close_this_group();
 	}
 
-	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
 }
 
 void EDataActionCollection::action_add_separator_block(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -930,7 +974,7 @@ void EDataActionCollection::action_add_separator_block(Entity* _entity, ECustomD
 	}
 
 	EButtonGroupFilterBlockSeparator* jc_separator = EWindowMain::create_filter_block_separator(EWindowMain::loot_filter_editor, position);
-	jc_separator->highlight_this_group();
+	jc_separator->highlight_this_group_green_info();
 
 	//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
 	EWindowMain::loot_filter_editor->need_refresh = true;
@@ -983,15 +1027,16 @@ void EDataActionCollection::generate_filter_lines_from_text(std::string& full_te
 
 void EDataActionCollection::action_remove_filter_block(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block->need_remove = true;
-	if (EWindowMain::loot_filter_editor->group_list.size() <= 1)
-	{
-		EWindowMain::create_filter_block(EWindowMain::loot_filter_editor, -1);
-		//EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
-		EWindowMain::loot_filter_editor->need_refresh = true;
-	}
+	static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block->filter_block_need_remove = true;
+	
+	bool have_any_user_block = false;
 
-	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+
+
+	EWindowMain::loot_simulator_button_group->clear_loot_simulator();
+
+	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	//EWindowMain::loot_simulator_button_group->delayed_execution = true;
 
 }
 
@@ -1067,7 +1112,7 @@ void EDataActionCollection::action_move_button_group(Entity* _entity, ECustomDat
 void EDataActionCollection::action_delete_listed_segment(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::make_unsaved_loot_filter_changes();
-	static_cast<EntityButtonForListedSegment*>(_entity)->listed_group->need_remove = true;
+	static_cast<EntityButtonForListedSegment*>(_entity)->listed_group->filter_block_need_remove = true;
 }
 
 void EDataActionCollection::action_delete_listed_buttons(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1100,7 +1145,7 @@ void EDataActionCollection::action_draw_deleted_group(Entity* _entity, ECustomDa
 		//	NS_DefaultGabarites::texture_gabarite_white_pixel
 		//);
 
-		target_group->highlight_time = 0.1f;
+		target_group->highlight_this_group_red_warning();
 	}
 }
 
@@ -1209,7 +1254,7 @@ void EDataActionCollection::action_change_separator_shrink_flag(Entity* _entity,
 	//EButtonGroup::change_group(static_cast<EntityButton*>(_entity)->parent_button_group->root_group);
 
 	static_cast<EntityButton*>(_entity)->parent_button_group->root_group->need_change = true;
-	static_cast<EntityButton*>(_entity)->parent_button_group->highlight_this_group();
+	static_cast<EntityButton*>(_entity)->parent_button_group->highlight_this_group_green_info();
 }
 
 void EDataActionCollection::action_change_force_field(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1223,7 +1268,7 @@ void EDataActionCollection::action_change_force_field(Entity* _entity, ECustomDa
 	searator_line->additional_y_distance = NSW_default_y_force_field_for_separator + NSW_additional_y_force_field_for_separator * searator_line->additional_force_field;
 	
 
-	static_cast<EntityButton*>(_entity)->parent_button_group->highlight_this_group();
+	static_cast<EntityButton*>(_entity)->parent_button_group->highlight_this_group_green_info();
 }
 
 void EDataActionCollection::action_clear_bottom_section_for_search_text(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1584,7 +1629,7 @@ void EDataActionCollection::action_refresh_loot_simulator(Entity* _entity, ECust
 {
 
 
-	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
 
 	//
 
@@ -1694,7 +1739,7 @@ void EDataActionCollection::action_select_loot_item_button(Entity* _entity, ECus
 
 		//EInputCore::logger_param("scroll_y", loot_button->matched_filter_blocks.back()->region_gabarite->offset_y);
 
-		loot_button->matched_filter_blocks.back()->highlight_this_group();
+		loot_button->matched_filter_blocks.back()->highlight_this_group_green_info();
 		
 
 		EButtonGroup::refresh_button_group(EWindowMain::loot_filter_editor);
@@ -1714,7 +1759,7 @@ void EDataActionCollection::action_highlight_stored_block(Entity* _entity, ECust
 {
 	EntityButtonLootItemSuitableBlocks* loot_button = static_cast<EntityButtonLootItemSuitableBlocks*>(_entity);
 
-	loot_button->target_filter_block->highlight_this_group();
+	loot_button->target_filter_block->highlight_this_group_green_info();
 
 	float need_translate = 0.0f;
 
@@ -2195,7 +2240,8 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 void EDataActionCollection::action_open_and_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::loot_simulator_button_group->activate_move_to_foreground_and_center();
-	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
 }
 
 void EDataActionCollection::action_change_localisation(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -2214,7 +2260,7 @@ void EDataActionCollection::action_change_localisation(Entity* _entity, ECustomD
 
 void EDataActionCollection::action_remove_wide_button(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	_entity->need_remove = true;
+	_entity->filter_block_need_remove = true;
 	EWindowMain::make_unsaved_loot_filter_changes();
 }
 
@@ -2268,7 +2314,9 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 	//EButtonGroup::change_group(receiver);
 	receiver->parent_group->parent_group->parent_group->need_change = true;
 
-	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
 	EWindowMain::make_unsaved_loot_filter_changes();
 }
 
@@ -8091,6 +8139,73 @@ void EWindowMain::register_filter_rules()
 		//
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 	}
+
+
+	//ALL CLASSES
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Wyrmscale_Boots_inventory_icon");
+		jc_filter_rule->category_id = 0;
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Equipable";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Экипировка";
+		jc_filter_rule->tag = "Base Class";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("Base Class");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "name EN";
+		jc_filter->suitable_values_list.push_back("Helmets");
+		jc_filter->suitable_values_list.push_back("Gloves");
+		jc_filter->suitable_values_list.push_back("Boots");
+
+		jc_filter->suitable_values_list.push_back("Body Armour");
+
+		jc_filter->suitable_values_list.push_back("Two Hand Axes");
+		jc_filter->suitable_values_list.push_back("Two Hand Swords");
+		jc_filter->suitable_values_list.push_back("Two Hand Maces");
+
+		jc_filter->suitable_values_list.push_back("Staves");
+		jc_filter->suitable_values_list.push_back("Warstaves");
+
+		jc_filter->suitable_values_list.push_back("Daggers");
+		jc_filter->suitable_values_list.push_back("Rune Daggers");
+
+		jc_filter->suitable_values_list.push_back("One Hand Maces");
+		jc_filter->suitable_values_list.push_back("One Hand Axes");
+		jc_filter->suitable_values_list.push_back("One Hand Swords");
+		jc_filter->suitable_values_list.push_back("Claws");
+		jc_filter->suitable_values_list.push_back("Wands");
+
+		jc_filter->suitable_values_list.push_back("Bows");
+		jc_filter->suitable_values_list.push_back("Quivers");
+
+		jc_filter->suitable_values_list.push_back("Shields");
+
+		jc_filter->suitable_values_list.push_back("Rings");
+		jc_filter->suitable_values_list.push_back("Amulets");
+		jc_filter->suitable_values_list.push_back("Belts");
+
+		jc_filter->suitable_values_list.push_back("Fishing Rods");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//DELETED
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Deleted");
+		jc_filter->suitable_values_list.push_back("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
 	////////////////////////////////////////////////////////////////////////////////////////////
 
 	// <cost list>
@@ -9243,7 +9358,7 @@ void EWindowMain::register_filter_rules()
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 	}
 
-	//UNIQUES
+	//UNIQUES valuable
 	{
 		jc_filter_rule = new EFilterRule();
 		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques");
@@ -9261,6 +9376,32 @@ void EWindowMain::register_filter_rules()
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "item tag";
 		jc_filter->suitable_values_list.push_back("Good base for unique");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//UNIQUES valuable
+	{
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques");
+		jc_filter_rule->category_id = 5;
+		jc_filter_rule->named_id = "item bases folder";
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Expensive uniques";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Дорогие уники";
+		jc_filter_rule->tag = "Game item";
+
+
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Expensive base for unique");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
@@ -11266,7 +11407,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 ///////////		REMOVE FILTER BLOCK		///////////
 	EntityButtonForFilterBlock*
-		remove_filter_block_button = new EntityButtonForFilterBlock();
+	remove_filter_block_button = new EntityButtonForFilterBlock();
 	remove_filter_block_button->make_as_default_button_with_full_icon
 	(
 		new ERegionGabarite(40.0f, 30.0f),
@@ -11275,6 +11416,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		NS_DefaultGabarites::texture_button_remove_filter_block
 	);
 	remove_filter_block_button->parent_filter_block = whole_filter_block_group;
+
+	remove_filter_block_button->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_highlight_removed_block);
 
 	top_section_for_remove->add_button_to_working_group(remove_filter_block_button);
 ////////////////
@@ -11296,6 +11439,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		whole_filter_block_group->pointer_to_non_listed_segment = non_list_condition_group;
 
 		workspace_part->add_group(non_list_condition_group);
+
+		non_list_condition_group->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("text_region_press_plus_button_to_add_new_condition"));
 
 	}
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -21317,7 +21462,7 @@ void EDataActionCollection::action_highlight_block_with_error(Entity* _entity, E
 		if (error_button->target_filter_block->attached_separator != nullptr)
 		{error_button->target_filter_block->attached_separator->is_expanded = true;}
 
-		error_button->target_filter_block->highlight_this_group();
+		error_button->target_filter_block->highlight_this_group_green_info();
 		EWindowMain::loot_filter_editor->slide_to_this_group(error_button->target_filter_block);
 
 		//EWindowMain::loot_filter_editor->need_refresh = true;
@@ -21429,7 +21574,8 @@ void EDataActionCollection::action_add_selected_content_to_filter_block(Entity* 
 
 	EButtonGroup::change_group(EWindowMain::loot_filter_editor);
 	//EWindowMain::loot_filter_editor->need_change = true;
-	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
 
 }
 
@@ -21507,8 +21653,12 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 		//if selected content is non-listed
 		if (_game_item_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED)
 		{
+
+
 			//EInputCore::logger_simple_info("add new non listed button");
 			target_group_for_content = whole_filter_block_data->pointer_to_non_listed_segment;
+
+			target_group_for_content->clickable_area_list.back()->clickable_region_is_active = false;
 
 			EButtonGroupNonListedLine*
 				non_listed_line = new EButtonGroupNonListedLine(new ERegionGabarite(20.0f, button_height));
@@ -21892,6 +22042,8 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 				non_listed_line->add_button_to_working_group(jc_button);
 			}
 			}
+
+
 		}
 
 
@@ -22839,6 +22991,29 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 	d_container->group_with_listed_buttons = listed_group_main_section;
 	////////////////////////
 
+	////////////////////////
+	//REMOVE ALL BUTTONS
+	EntityButtonForListedSegment* delete_all_item_button = new EntityButtonForListedSegment();
+	delete_all_item_button->make_default_button_with_unedible_text
+	(
+		new ERegionGabarite(180.0f, 24.0f),
+		group_right_side_for_remove,
+		&EDataActionCollection::action_delete_listed_buttons,
+		ELocalisationText::get_localisation_by_key("button_remove_all_listed_buttons")
+	);
+	delete_all_item_button->main_text_area->set_color(NS_EColorUtils::COLOR_RED);
+
+	delete_all_item_button->add_default_description_by_key("description_delete_all_listed_button");
+	//delete_segment_button->force_field_left = 64.0f;
+
+
+	delete_all_item_button->group_with_items = listed_group_main_section;
+
+	delete_all_item_button->target_block_for_highlight = listed_group_main_section;
+	delete_all_item_button->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_draw_deleted_group);
+
+	group_right_side_for_remove->add_button_to_working_group(delete_all_item_button);
+	////////////////////////
 
 	////////////////////////
 	//REMOVE BLOCK
@@ -22869,28 +23044,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 
 
 
-	////////////////////////
-	//REMOVE ALL BUTTONS
-	EntityButtonForListedSegment* delete_all_item_button = new EntityButtonForListedSegment();
-	delete_all_item_button->make_default_button_with_unedible_text
-	(
-		new ERegionGabarite(180.0f, 24.0f),
-		group_right_side_for_remove,
-		&EDataActionCollection::action_delete_listed_buttons,
-		ELocalisationText::get_localisation_by_key("button_remove_all_listed_buttons")
-	);
-	delete_all_item_button->main_text_area->set_color(NS_EColorUtils::COLOR_RED);
-
-	delete_all_item_button->add_default_description_by_key("description_delete_all_listed_button");
-	//delete_segment_button->force_field_left = 64.0f;
-
-
-	delete_all_item_button->group_with_items = listed_group_main_section;
-
-	delete_all_item_button->target_block_for_highlight = listed_group_main_section;
-	delete_all_item_button->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_draw_deleted_group);
-
-	group_right_side_for_remove->add_button_to_working_group(delete_all_item_button);
+	
 
 	return whole_listed_line;
 }
@@ -23380,7 +23534,7 @@ void EButtonGroupDataEntity::background_update(float _d)
 				need_refresh = true;
 
 				EWindowMain::background_loading_info->exist_time = 0.1f;
-				EWindowMain::background_loading_info->need_remove = true;
+				EWindowMain::background_loading_info->filter_block_need_remove = true;
 
 				EInputCore::logger_simple_info("autorefresh!");
 
@@ -24407,7 +24561,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 	for (EButtonGroup* group : _filter_block_editor->group_list)
 	if
 	(
-		(!group->need_remove)
+		(!group->filter_block_need_remove)
 		&&
 		(dynamic_cast<const EButtonGroupFilterBlock*>(group) != nullptr)
 		&&
@@ -24500,7 +24654,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 	for (EButtonGroup* group : _filter_block_editor->group_list)
 	if
 	(
-		(!group->need_remove)
+		(!group->filter_block_need_remove)
 		&&
 		(
 			(matched_bg_color_block		== nullptr)
@@ -24610,7 +24764,7 @@ void EntityButtonLootItem::get_matched_filter_blocks_list(EButtonGroupFilterBloc
 	for (EButtonGroup* group : _filter_block_editor->group_list)
 	if
 	(
-		(!group->need_remove)
+		(!group->filter_block_need_remove)
 		&&
 		(
 			(matched_bg_color_block		== nullptr)
@@ -25464,6 +25618,11 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 
 
 	return true;
+}
+
+void EButtonGroupLootSimulator::clear_loot_simulator()
+{
+	pointer_to_loot_buttons_segment->remove_all_workspace_buttons();
 }
 
 void EButtonGroupLootSimulator::refresh_loot_simulator()

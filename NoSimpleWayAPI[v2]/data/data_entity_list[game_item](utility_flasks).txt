@@ -21,6 +21,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Amethyst_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
+	
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -71,6 +73,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Granite_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
+	
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -107,6 +111,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Quicksilver_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
+	
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -120,6 +126,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Ruby_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -132,6 +139,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sapphire_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
+	
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -156,6 +165,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Stibnite_Flask_inventory_icon"
 	[tag]"base class"	[value]"Utility Flasks"
+	
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"
@@ -170,6 +181,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Utility Flasks"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"2"

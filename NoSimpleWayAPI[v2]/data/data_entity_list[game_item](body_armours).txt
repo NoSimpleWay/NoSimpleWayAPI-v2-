@@ -132,6 +132,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -242,6 +243,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Expensive base for unique"
 	
 	[tag]"item tag"		[value]"Have implicit"
 
@@ -555,6 +557,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -775,6 +778,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1044,6 +1048,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1066,6 +1071,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"worth"		[value]"Common"
 
@@ -1334,6 +1340,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1356,6 +1363,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1534,6 +1542,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Rare base"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -1650,6 +1659,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1716,6 +1726,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1736,6 +1747,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1758,6 +1770,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -2171,6 +2184,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -2234,6 +2248,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Good base for unique"
 		
 	[tag]"worth"		[value]"Trash"
 	

@@ -2115,7 +2115,7 @@ EntityButtonVariantRouter::~EntityButtonVariantRouter()
 
 	if (opened_router_group != nullptr)
 	{
-		opened_router_group->need_remove = true;
+		opened_router_group->filter_block_need_remove = true;
 
 		opened_router_group = nullptr;
 	}

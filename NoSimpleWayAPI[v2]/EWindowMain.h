@@ -377,6 +377,8 @@ public:
 
 	bool is_this_group_active() override;
 	bool is_expanded = false;
+
+
 	bool is_default_filter_block = false;
 	bool is_base_filter_block = false;
 };
@@ -502,6 +504,8 @@ public:
 	static bool	this_group_is_matched(EntityButtonLootItem* _loot_button, EGameItem* _game_item, EButtonGroupFilterBlock* _filter_block);
 	static bool	is_condition_satisfied(int _left, std::string _operator, int _right);
 	static bool	is_sockets_matched(std::string _block, std::string _operator, std::string _item);
+
+	void		clear_loot_simulator();
 	void		refresh_loot_simulator();
 	static void	refresh_button_sizes();
 
@@ -625,6 +629,7 @@ namespace EDataActionCollection
 
 	void action_mark_parent_group_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_mark_filter_blocks_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_highlight_removed_block(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_generate_filter_block_text(Entity* _entity, ECustomData* _custom_data, float _d);
 

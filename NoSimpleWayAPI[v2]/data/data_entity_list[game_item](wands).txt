@@ -37,6 +37,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Wands"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
@@ -195,6 +196,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Wands"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Good base for unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
