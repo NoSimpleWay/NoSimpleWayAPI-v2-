@@ -12019,17 +12019,17 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		whole_filter_block_group->pointer_to_minimap_icon_color_router = button_router_minimap_icon_color;
 
-		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_red",		1.0f, 0.2f, 0.1f, 1.0f);
-		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_green",		0.25f, 1.0f, 0.4f, 1.0f);
-		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_blue",		0.25f, 0.4f, 1.0f, 1.0f);
-		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_brown",		1.0f, 0.5f, 0.25f, 1.0f);
-		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_white",		1.0f, 1.0f, 1.0f, 1.0f);
-		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_yellow",	1.0f, 1.0f, 0.25f, 1.0f);
-		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_cyan",		0.25f, 0.8f, 1.0f, 1.0f);
-		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_grey",		0.55f, 0.55f, 0.55f, 1.0f);
-		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_orange",	1.0f, 0.65f, 0.1f, 1.0f);
-		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_pink",		1.0f, 0.5f, 1.0f, 1.0f);
-		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_purple",	0.8f, 0.1f, 0.9f, 1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_red",		1.0f,	0.2f,	0.1f,	1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_green",		0.25f,	1.0f,	0.4f,	1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_blue",		0.25f,	0.4f,	1.0f,	1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_brown",		1.0f,	0.5f,	0.25f,	1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_white",		1.0f,	1.0f,	1.0f,	1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_yellow",	1.0f,	1.0f,	0.25f,	1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_cyan",		0.25f,	0.8f,	1.0f,	1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_grey",		0.55f,	0.55f,	0.55f,	1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_orange",	1.0f,	0.65f,	0.1f,	1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_pink",		1.0f,	0.5f,	1.0f,	1.0f);
+		button_router_minimap_icon_color->add_router_variant_with_localisation_key_and_color("variant_color_purple",	0.8f,	0.1f,	0.9f,	1.0f);
 
 		button_router_minimap_icon_color->select_variant(0);
 
@@ -17121,6 +17121,7 @@ void EWindowMain::register_new_folder_uniques()
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Unique items\\n(Expensive)";
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Уникальные предметы\\n(Дорогие)";
 		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_icon_uniques");
+		loot_simulator_pattern->always_show = true;
 
 		{
 

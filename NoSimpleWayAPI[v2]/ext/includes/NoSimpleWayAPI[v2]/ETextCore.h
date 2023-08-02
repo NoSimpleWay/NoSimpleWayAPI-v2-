@@ -268,7 +268,7 @@ public:
 	bool can_be_edited = true;
 	bool can_change_localisation = true;
 	bool forcibly_create_glyph = false;
-	bool group_have_background = false;
+	bool text_have_background = false;
 
 	ESpriteLayer* sprite_layer;
 	///

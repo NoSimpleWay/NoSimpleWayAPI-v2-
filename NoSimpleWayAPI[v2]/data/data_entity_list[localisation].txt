@@ -1132,6 +1132,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_grey"
+	[tag]"base name"		[value]"Grey"
 	[tag]"name EN"		[value]"Grey"
 	[tag]"name RU"		[value]"Серый"
 	
@@ -1139,6 +1140,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_orange"
+	[tag]"base name"	[value]"Orange"
 	[tag]"name EN"		[value]"Orange"
 	[tag]"name RU"		[value]"Оранжевый"
 	
@@ -1154,8 +1156,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"variant_color_purple"
-	[tag]"base name"	[value]"Purle"
-	[tag]"name EN"		[value]"Purle"
+	[tag]"base name"	[value]"Purple"
+	[tag]"name EN"		[value]"Purple"
 	[tag]"name RU"		[value]"Фиолетовый"
 	
 ADD_NEW_DATA_ENTITY
@@ -1293,7 +1295,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"key"			[value]"attribute_description_quality"
 	[tag]"name EN"		[value]"Quality gives different bonuses depending on the type of item.\nThe following items can have quality:\nFlasks\nMaps\nWeapons\nArmours\nJewelry\nSkill gems\nBy default, the maximum quality for regular items is 20. In special cases, the quality can be up to 23% for gems, and 30% for equipment, maps, and flasks."
-	[tag]"name RU"		[value]"Качество даёт различные бонусы в зависимости от типа предмета.\nКачество могут иметь:\nФлаконы\nКарты\nОружие\nБроня\nБижутерия\nКамни умений\nПо умолчанию, максимальное качество для обычных предметов: 20.\nВ особых случаях качество может достигать до 23% для камней, и 30% для экипировки, карт, и флаконов"
+	[tag]"name RU"		[value]"Качество даёт различные бонусы в зависимости от типа предмета.\n\nКачество могут иметь:\n= Флаконы\n= Карты\n= Оружие\n= Броня\n= Бижутерия\n= Камни умений\n\nПо умолчанию, максимальное качество для обычных предметов: 20.\nВ особых случаях качество может достигать до 23% для камней, и 30% для экипировки, карт, и флаконов"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"

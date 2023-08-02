@@ -224,8 +224,14 @@ void ERenderBatcher::draw_call()
 		apply_transform();
 
 		//batcher_shader->setInt("texture1", 0);
-
-		if (gl_vertex_attribute_total_count > 12)
+		
+		
+		if
+		(
+			(gl_vertex_attribute_total_count > 12)
+			//&&
+			//(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
+		)
 		{
 			glActiveTexture(GL_TEXTURE0);
 			//NS_EGraphicCore::gl_set_texture_filtering(GL_CLAMP_TO_EDGE, GL_NEAREST);

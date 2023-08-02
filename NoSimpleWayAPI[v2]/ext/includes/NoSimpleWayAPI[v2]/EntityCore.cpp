@@ -2416,13 +2416,19 @@ void DescriptionContainerDefault::create_description()
 			description_group->add_default_clickable_region_with_text_area(localisation_text);
 		}
 
-		
+		float additional_left_offset = 8.0f;
+
+		description_group->main_clickable_area->text_area->offset_by_gabarite_size_x = 0.0f;
+		description_group->main_clickable_area->text_area->offset_by_text_size_x = 0.0f;
+
+		description_group->main_clickable_area->text_area->text_have_background = false;
+		description_group->main_clickable_area->text_area->offset_border[BorderSide::LEFT] = additional_left_offset;
 
 		float max_row_w = 0.0f;
 
 		for (std::string* row_element : description_group->clickable_area_list[0]->text_area->row)
 		{
-			max_row_w = max(max_row_w, description_group->clickable_area_list[0]->text_area->get_row_width(row_element));
+			max_row_w = max(max_row_w, description_group->clickable_area_list[0]->text_area->get_row_width(row_element) + additional_left_offset);
 		}
 
 		size_x = max_row_w;

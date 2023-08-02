@@ -3964,7 +3964,7 @@ void EButtonGroup::add_default_clickable_region_with_text_area(ELocalisationText
 	new_text_area->can_be_edited = false;
 	new_text_area->change_text(new_text_area->original_text);
 
-	new_text_area->group_have_background = true;
+	new_text_area->text_have_background = true;
 
 	new_clickable_area->text_area = new_text_area;
 }
