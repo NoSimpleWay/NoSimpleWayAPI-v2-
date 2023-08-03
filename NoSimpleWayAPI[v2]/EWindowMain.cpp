@@ -234,7 +234,7 @@ void EDataActionCollection::action_mark_parent_group_as_removed(Entity* _entity,
 
 void EDataActionCollection::action_mark_filter_blocks_as_removed(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	EButtonGroup*
+	EButtonGroupFilterBlock*
 	parent_group_for_button = static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block;
 
 	parent_group_for_button->filter_block_need_remove = true;
@@ -273,6 +273,62 @@ void EDataActionCollection::action_mark_filter_blocks_as_removed(Entity* _entity
 					EWindowMain::registered_group_filter_error_list->need_refresh = true;
 				}
 			}
+		}
+	}
+
+	bool at_least_one_user_block = false;
+	
+	//int id = -1;
+	for (EButtonGroup* group : EWindowMain::loot_filter_editor->group_list)
+	{
+		if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(group))
+		{
+			if
+			(
+				(!block->filter_block_need_remove)
+				&&
+				(!block->is_default_filter_block)
+				&&
+				(!block->is_base_filter_block)
+			)
+			{
+				at_least_one_user_block = true;
+				break;
+			}
+		}
+	}
+
+	if (!at_least_one_user_block)
+	{
+		parent_group_for_button->filter_block_need_remove = false;
+
+		
+		parent_group_for_button->clear_non_listed_segment();
+		parent_group_for_button->clear_listed_segment();
+
+		for (int i = 0; i < 5; i++)
+		{
+			parent_group_for_button->version_routers[i]->select_variant(3);
+		}
+
+		parent_group_for_button->button_show_hide->select_variant(1);
+		parent_group_for_button->button_continue->select_variant(1);
+
+		parent_group_for_button->text_size = 1.0f;
+
+		//background
+		parent_group_for_button->pointer_to_color_button[0]->stored_color->set_color_RGBA(0.0f, 0.1f, 0.2, 1.0);
+		
+		//text
+		parent_group_for_button->pointer_to_color_button[1]->stored_color->set_color_RGBA(0.9f, 0.5f, 0.2, 1.0);
+
+		//rama
+		parent_group_for_button->pointer_to_color_button[2]->stored_color->set_color_RGBA(0.55f, 0.57f, 0.6, 1.0);
+
+		//color checkers
+		for (int i = 0; i < 3; i++)
+		{
+			parent_group_for_button->color_check[i] = true;
 		}
 	}
 
@@ -10618,13 +10674,16 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	whole_filter_block_group->focusable_for_select = true;
 	whole_filter_block_group->additional_y_distance = 16.0f;
 
-	if (_specific_position < 0)
+	if (_target_editor != nullptr)
 	{
-		_target_editor->add_group(whole_filter_block_group);
-	}
-	else
-	{
-		_target_editor->add_group_scecific_position(whole_filter_block_group, _specific_position);
+		if (_specific_position < 0)
+		{
+			_target_editor->add_group(whole_filter_block_group);
+		}
+		else
+		{
+			_target_editor->add_group_scecific_position(whole_filter_block_group, _specific_position);
+		}
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -23295,6 +23354,24 @@ EButtonGroupFilterBlock::~EButtonGroupFilterBlock()
 {
 	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
 	//EWindowMain::loot_simulator_button_group->delayed_execution = true;
+}
+
+void EButtonGroupFilterBlock::clear_non_listed_segment()
+{
+	for (EButtonGroup* non_listed_line : pointer_to_non_listed_segment->group_list)
+	{
+		non_listed_line->filter_block_need_remove = true;
+	}
+
+	pointer_to_non_listed_segment->clickable_area_list[0]->clickable_region_is_active = true;
+}
+
+void EButtonGroupFilterBlock::clear_listed_segment()
+{
+	for (EButtonGroup* listed_line : pointer_to_listed_segment->group_list)
+	{
+		listed_line->filter_block_need_remove = true;
+	}
 }
 
 void EButtonGroupFilterBlock::post_draw()

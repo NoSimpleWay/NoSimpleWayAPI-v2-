@@ -290,6 +290,9 @@ public:
 
 	EButtonGroupFilterBlockSeparator* attached_separator = nullptr;
 
+	void clear_non_listed_segment();
+	void clear_listed_segment();
+
 	EButtonGroup* pointer_to_non_listed_segment;
 	EButtonGroup* pointer_to_listed_segment;
 	EButtonGroup* pointer_to_preview_box_segment;
