@@ -723,6 +723,7 @@ namespace EDataActionCollection
 
 
 
+	void action_multisave_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_save_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d);
 	//void 
 }

@@ -616,6 +616,13 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"description_multisave_loot_filter"
+	[tag]"name EN"		[value]"Generate and save all versions of loot filter (CTRL + S)"
+	[tag]"name RU"		[value]"Сгенерировать и сохранить все версии лут-фильтра(CTRL + S)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"description_open_loot_simulator"
 	[tag]"name EN"		[value]"Open loot simulator window (CTRL + L"
 	[tag]"name RU"		[value]"Открыть окно симулятора лута (CTRL + L)"
@@ -1180,6 +1187,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"button_text_save_filter"
 	[tag]"name EN"		[value]"Save"
 	[tag]"name RU"		[value]"Сохранить"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"button_text_multisave_filter"
+	[tag]"name EN"		[value]"Save all versions"
+	[tag]"name RU"		[value]"Сохранить все версии"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"

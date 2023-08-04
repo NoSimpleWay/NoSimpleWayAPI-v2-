@@ -13490,7 +13490,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Wreath of Phrecia"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13510,7 +13510,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Wraithlord"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13529,7 +13529,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Wraithlord"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13548,7 +13548,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Willclash"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13567,7 +13567,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Veil of the Night"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13586,7 +13586,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Thrillsteel"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13606,7 +13606,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Three Dragons"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13626,7 +13626,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Broken Crown"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13645,7 +13645,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Baron"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13664,7 +13664,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Starkonja's Head"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13683,7 +13683,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Speaker's Wreath"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13702,7 +13702,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Skullhead"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13721,7 +13721,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Rat's Nest"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13740,7 +13740,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Mindspiral"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13759,7 +13759,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Mark of the Red Covenant"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13778,7 +13778,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Malachai's Simula"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13797,7 +13797,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Kitava's Thirst"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13816,7 +13816,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Hrimnor's Resolve"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13835,7 +13835,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Honourhome"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13855,7 +13855,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Gorgon's Gaze"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13874,7 +13874,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Geofri's Crest"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13894,7 +13894,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Fairgraves' Tricorne"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13914,7 +13914,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Ezomyte Peak"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13933,7 +13933,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Elevore"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13952,7 +13952,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Eber's Unification"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13971,7 +13971,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Doedre's Scorn"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -13990,7 +13990,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Deidbell"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14009,7 +14009,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Curtain Call"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14028,7 +14028,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Crown of the Pale King"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14047,7 +14047,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Crown of Thorns"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14066,7 +14066,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Ahn's Contempt"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14090,7 +14090,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Ylfeban's Trickery"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14110,7 +14110,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Rime Gaze"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14129,7 +14129,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Obscurantis"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14148,7 +14148,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Mind of the Council"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14167,7 +14167,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Devoto's Devotion"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14186,7 +14186,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Ancient Skull"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14205,7 +14205,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Maw of Conquest"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14224,7 +14224,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Bringer of Rain"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14243,7 +14243,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Scold's Bridle"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14262,7 +14262,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Memory Vault"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14281,7 +14281,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Leer Cast"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14300,7 +14300,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"First Piece of Storms"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14319,7 +14319,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Eye of Malice"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14338,7 +14338,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Blood Price"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14357,7 +14357,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Usurper's Penance"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14376,7 +14376,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Thundersight"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14395,7 +14395,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Plume of Pursuit"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14416,7 +14416,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Flamesight"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14435,7 +14435,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Black Sun Crest"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14454,7 +14454,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Vertex"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14474,7 +14474,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Fledgling"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14493,7 +14493,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Sudden Dawn"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14513,7 +14513,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Lightpoacher"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14533,7 +14533,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Heretic's Veil"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14552,7 +14552,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Hale Negator"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14573,7 +14573,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Goldrim"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14593,7 +14593,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Galesight"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14612,7 +14612,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Fractal Thoughts"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14631,7 +14631,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Fenumus' Toxins"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14652,7 +14652,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Echoes of Creation"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14672,7 +14672,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Crown of Eyes"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14691,7 +14691,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Craiceann's Chitin"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14712,7 +14712,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Cowl of the Ceraunophile"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14731,7 +14731,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Chitus' Apex"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14750,7 +14750,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Assailum"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14769,7 +14769,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Formless Flame"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14790,7 +14790,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Cowl of the Cryophile"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14815,7 +14815,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Cadigan's Crown"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14838,7 +14838,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Tempest's Binding"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14859,7 +14859,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Wilma's Requital"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14880,7 +14880,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Voll's Vision"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14901,7 +14901,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Gull"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14922,7 +14922,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Replica Veil of the Night"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14943,7 +14943,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Maw of Mischief"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14964,7 +14964,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Mask of the Tribunal"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -14986,7 +14986,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Farrul's Bite"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15009,7 +15009,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"El'Abin's Visage"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15031,7 +15031,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Cowl of the Thermophile"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15052,7 +15052,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Cowl of the Thermophile"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15073,7 +15073,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Saqawal's Flock"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15096,7 +15096,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Viridi's Veil"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15118,7 +15118,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Faithguard"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15140,7 +15140,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Brine Crown"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15161,7 +15161,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Abyssus"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15182,7 +15182,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Crown of the Inward Eye"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15204,7 +15204,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Mask of the Spirit Drinker"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15226,7 +15226,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Heatshiver"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15247,7 +15247,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Asenath's Mark"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15268,7 +15268,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Indigon"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15290,7 +15290,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Forbidden Shako"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15313,7 +15313,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Crown of the Tyrant"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15336,7 +15336,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Crest of Desire"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -15357,7 +15357,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"The Devouring Diadem"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"SuperHelmets"
+	[tag]"icon path"	[value]"SuperHelmet"
 	[tag]"base class"	[value]"Helmets"	
 
 	[tag]"item width"	[value]"2"
@@ -17347,7 +17347,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Elixir of the Unbroken Circle"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"Iron_Flask_inventory_icon"
+	[tag]"icon path"	[value]"IronFlask"
 	[tag]"base class"	[value]"Utility Flask"
 
 	[tag]"item width"	[value]"1"
@@ -17368,7 +17368,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Olroth's Resolve"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"Iron_Flask_inventory_icon"
+	[tag]"icon path"	[value]"IronFlask"
 	[tag]"base class"	[value]"Utility Flask"
 
 	[tag]"item width"	[value]"1"
@@ -17896,7 +17896,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Emperor's Might"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"_ICON_"
+	[tag]"icon path"	[value]"Prismatic_Jewel_inventory_icon"
 	[tag]"base class"	[value]"Jewel"
 
 	[tag]"item width"	[value]"1"
@@ -18129,7 +18129,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Bloodnotch"
 	[tag]"name RU"		[value]"_NO_DATA_"
 
-	[tag]"icon path"	[value]"_ICON_"
+	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
 	[tag]"base class"	[value]"Jewel"
 
 	[tag]"item width"	[value]"1"
