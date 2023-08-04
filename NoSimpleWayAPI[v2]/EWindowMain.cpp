@@ -8387,7 +8387,69 @@ void EWindowMain::register_filter_rules()
 	}
 
 
+	////////////////////////////////////////////////////////////////////////////////////////////
+	//			ENCHANTMENTS SECTION
+	////////////////////////////////////////////////////////////////////////////////////////////
 
+	//ALL ENCHANTMENTS
+	
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
+		jc_filter_rule->category_id = 0;
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "All enchantments";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Все зачарования";
+		jc_filter_rule->tag = "Enchantment";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("Enchantment");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//DELETED
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Deleted");
+		jc_filter->suitable_values_list.push_back("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		//
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+
+
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//			CLUSTER PASSIVES SECTION
+		////////////////////////////////////////////////////////////////////////////////////////////
+
+		//ALL ENCHANTMENTS
+		{
+			jc_filter_rule = new EFilterRule();
+			jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/all_items");
+			jc_filter_rule->category_id = 0;
+
+			jc_filter_rule->localisation_text = new ELocalisationText();
+			jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "All cluster passives";
+			jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Все пассивки кластера";
+			jc_filter_rule->tag = "Cluster passive";
+
+			//filter by game item
+			jc_filter = new DataEntityFilter();
+			jc_filter->target_tag_name = "data type";
+			jc_filter->suitable_values_list.push_back("Cluster passive");
+			jc_filter_rule->required_tag_list.push_back(jc_filter);
+			//
+
+			//DELETED
+			jc_filter = new DataEntityFilter();
+			jc_filter->target_tag_name = "item tag";
+			jc_filter->suitable_values_list.push_back("Deleted");
+			jc_filter->suitable_values_list.push_back("Hidden item");
+			jc_filter_rule->banned_tag_list.push_back(jc_filter);
+			//
+			EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+		}
 
 
 
