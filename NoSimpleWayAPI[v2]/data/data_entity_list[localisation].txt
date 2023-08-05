@@ -1308,22 +1308,34 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"attribute_description_quality"
-	[tag]"name EN"		[value]"Quality gives different bonuses depending on the type of item.\nThe following items can have quality:\nFlasks\nMaps\nWeapons\nArmours\nJewelry\nSkill gems\nBy default, the maximum quality for regular items is 20. In special cases, the quality can be up to 23% for gems, and 30% for equipment, maps, and flasks."
+	[tag]"name EN"		[value]"УсловиеQuality gives different bonuses depending on the type of item.\n\nThe following items can have quality:\n= Flasks\n= Maps\n= Weapons\n= Armours\n= Jewelry\n= Skill gems\n\nBy default, the maximum quality for regular items is 20. In special cases, the quality can be up to 23% for gems, and 30% for equipment, maps, and flasks."
 	[tag]"name RU"		[value]"Качество даёт различные бонусы в зависимости от типа предмета.\n\nКачество могут иметь:\n= Флаконы\n= Карты\n= Оружие\n= Броня\n= Бижутерия\n= Камни умений\n\nПо умолчанию, максимальное качество для обычных предметов: 20.\nВ особых случаях качество может достигать до 23% для камней, и 30% для экипировки, карт, и флаконов"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"attribute_description_item_rarity"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"Редкость предмета определяет количество свойств, которые могут быть на предмете.\nУникальные предметы имеют заранее определённые свойства"
+	[tag]"name EN"		[value]"Condition: rarity. It determines the number of properties that can be on the item.\nUnique items have predetermined properties"
+	[tag]"name RU"		[value]"Условие: редкость предмета. Оно определяет количество свойств, которые могут быть на предмете.\nУникальные предметы имеют заранее определённые свойства"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"attribute_description_stack_size"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"Определяет количество вещей в 1 стопке"
+	[tag]"name EN"		[value]"Condition: number of items in one stack"
+	[tag]"name RU"		[value]"Условие: количество предметов в 1 стопке"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_gem_level"
+	[tag]"name EN"		[value]"Condition: the level of the gem.\nThe higher the level of the stone, the better its properties."
+	[tag]"name RU"		[value]"Условие: уровень камня.\nЧем выше уровень камня, тем лучше его свойства"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_gem_quality_type"
+	[tag]"name EN"		[value]"Condition: quality type.\nThere are different quality types for the gems:\n= Superior (by default)\n= Anomalous\n= Divergent\n= Phantasmal.\n\nBy default, the gems are of suprior quality. The other types of quality can be obtained by Heist blueprints, using special currency, or by using some divinations cards."
+	[tag]"name RU"		[value]"Условие: тип качества.\nДля камней существуют разные типы качества:\n= Обычное\n= Аномальное\n= Искривлённый\n= Фантомный.\n\nПо умолчанию, камни имет обычное качество.\nОстальные виды качества можно получить в чертежах кражи, при помощи особой валюты, или при помощи некоторых гадальных карт"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -1335,9 +1347,44 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_gem_have_alternate_qualitry"
+	[tag]"name EN"		[value]"Condition: gem have any non-default quality (Anomalous, Divergent, Phantasmal)"
+	[tag]"name RU"		[value]"Условие: камень имеет любое нестандартное качество (Аномальное, Искривлённое, Фантомное)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_map_tier"
+	[tag]"name EN"		[value]"Conditiom: a certain map type.\nThe higher the map tier, the higher the level of monsters on the map, which makes the map more difficult and the reward better.\nSome events, such as summoning bosses, require a certain map type.\nFor example, summoning a high-level Exarch requires a map with at least 14 tier.\n\nThe tiers are divided by 'colors':\n\n= White maps (tier 1-5)\n= Yellow maps (tier 6-10)\n= Red maps (tier 11-16).\n\nThe map tier should not be confused with the level of the item."
+	[tag]"name RU"		[value]"Условие: определённый тир карты.\nЧем выше тир карты, тем выше уровень монстров на ней, что делает её сложнее, а награду лучше.\nНекоторые события, вроде призыва боссов, требуют определённый тир карты.\nНапример, призыв высокоуровнего Экзарха требует карты как минимум 14 тира.\n\nТиры разделяют по 'цветам':\n\n= Белые карты (тир 1-5)\n= Жёлтые карты (тир 6-10)\n= Красные карты (тир 11-16).\n\nТир карты не следует путать с уровнем предмета"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_is_elder_map"
+	[tag]"name EN"		[value]"Condition: The map has the influence of the Elder.\nThis condition is obsolete, as there is a HasInfluence condition for determining the presence of influences, however, it can still be used."
+	[tag]"name RU"		[value]"Условие: карта имеет влияние Древнего\nЭто условие устарело, так как для определеения наличия влияний есть условие HasInfluence, тем не менее, оно всё еще может использоваться"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_is_shaper_map"
+	[tag]"name EN"		[value]"Condition: The map has the influence of the Shaper.\nThis condition is obsolete, as there is a HasInfluence condition for determining the presence of influences, however, it can still be used."
+	[tag]"name RU"		[value]"Условие: карта имеет влияние Создателя\nЭто условие устарело, так как для определеения наличия влияний есть условие HasInfluence, тем не менее, оно всё еще может использоваться"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_is_blighted_map"
+	[tag]"name EN"		[value]"Condition: blighted map.\nBuild defense towers, and fight your own battles against the monsters that inexorably approach the pump, which must be defended at all costs."
+	[tag]"name RU"		[value]"Условие: карта скверны.\nЭта механика относится к лиге 'Скверна'. Стройте защитные башни, и сражайтесь сами против монстров, неумолимо приближающихся к помпе, которую следует защищать любой ценой."
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_is_uberblighted_map"
+	[tag]"name EN"		[value]"Condition: blighted map"
+	[tag]"name RU"		[value]"Условие: карта Уберскверны.\nSame as a regular blighted map, but much more harder."
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -1349,112 +1396,297 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_socket_group"
+	[tag]"name EN"		[value]"Filter by groups of linked sockets on an item. The following example will show items that have 5 or more linked sockets with at least 3 of them being green sockets:\nSocketGroup >= 5GGG\n\nEach color has a specific letter:\n\n\n= R - red socket\n= G - green socket\n= B - blue socket\n= W - white socket\n= A - abyss socket (for abyss jewels)\n= D - delve socket (for fossils, used in resonators)."
+	[tag]"name RU"		[value]"Фильтр по группам связанных гнезд на предмете. В указанном примере отображаются предметы с 5 и более связанными гнездами, как минимум 3 из которых зеленые:\nSocketGroup >= 5GGG.\n\nДля каждого цвета используется определённая буква:\n\n= R - красное гнездо\n= G - зелёное гнездо\n= B - синее гнездо\n= W - белое гнездо\n= A - гнездо бездны (для самоцветов бездны)\n= D - гнездо спуска (для ископаемых, используется в резонаторах)"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_sockets"
+	[tag]"name EN"		[value]"Filter by number of sockets or colours on an item.\nThe following example will show items that have 5 or more sockets with at least 3 of them being green sockets:\nSockets >= 5GGG\n\nEach color has a specific letter:\n\n\n= R - red socket\n= G - green socket\n= B - blue socket\n= W - white socket\n= A - abyss socket (for abyss jewels)\n= D - delve socket (for fossils, used in resonators)."
+	[tag]"name RU"		[value]"Фильтр по числу гнезд на предмете и их цвету.\nВ указанном примере отображаются предметы с 5 и более связанными гнездами, как минимум 3 из которых зеленые:\nSockets >= 5GGG.\n\nДля каждого цвета используется определённая буква:\n\n= R - красное гнездо\n= G - зелёное гнездо\n= B - синее гнездо\n= W - белое гнездо\n= A - гнездо бездны (для самоцветов бездны)\n= D - гнездо спуска (для ископаемых, используется в резонаторах)"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_lined_sockets"
+	[tag]"name EN"		[value]"Condition: number of linked sockets"
+	[tag]"name RU"		[value]"Условие: количество связанных гнёзд"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_defence_procentile"
+	[tag]"name EN"		[value]"Condition: roll of base defence in percents (0-100)"
+	[tag]"name RU"		[value]"Условие: ролл базовой защиты в процентах (0-100)"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_base_ward"
+	[tag]"name EN"		[value]"Condition: base ward"
+	[tag]"name RU"		[value]"Условие: базовый барьер"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_base_armour"
+	[tag]"name EN"		[value]"Condition: base armour"
+	[tag]"name RU"		[value]"Условие: базовая броня"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_base_energy_shield"
+	[tag]"name EN"		[value]"Condition: base energy shield"
+	[tag]"name RU"		[value]"Условие: базовый энергощит"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_base_evasion"
+	[tag]"name EN"		[value]"Condition: base evasion"
+	[tag]"name RU"		[value]"Условие: базовое уклонение"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_exarch_implicit_level"
+	[tag]"name EN"		[value]"Condition: level of Searing Exarch implicit"
+	[tag]"name RU"		[value]"Условие: уровень свойства Пламенного Экзарха"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_eater_implicit_level"
+	[tag]"name EN"		[value]"Condition: level of Eater of the World implicit"
+	[tag]"name RU"		[value]"Условие: уровень свойства Пожирателя Миров"
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_corrupted_item"
+	[tag]"name EN"		[value]"Condition: item is corrupted. Corrupted items cannot be modified in almost all ways"
+	[tag]"name RU"		[value]"Условие: предмет осквернён. К осквернённым предметам не могут быть применены большинство предметов"
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_corrupted_mods"
+	[tag]"name EN"		[value]"Condition: number of corrupted implicits, obtained by corruption"
+	[tag]"name RU"		[value]"Условие: количество собственных свойств, полученных путём осквернения"
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_any_enchantment"
+	[tag]"name EN"		[value]"Condition: item have any enchantment"
+	[tag]"name RU"		[value]"Условие: предмет имеет любое зачарование"
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_replica"
+	[tag]"name EN"		[value]"Condition: item is replica"
+	[tag]"name RU"		[value]"Условие: предмет является репликой"
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_identified"
+	[tag]"name EN"		[value]"Condition: item if identified"
+	[tag]"name RU"		[value]"Условие: предмет опознан"
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_attribute_"
-	[tag]"name EN"		[value]"_EN_"
-	[tag]"name RU"		[value]"_RU"
+	[tag]"key"			[value]"attribute_description_scourged"
+	[tag]"name EN"		[value]"Condition: item scourged (unusable, because player have no acess to Blood Crucbile)"
+	[tag]"name RU"		[value]"Условие: предмет преобразован (в данный момент это условие бессмысленно, так для для преобразования предметов игроку требуется доступ к Кровавому Горну, который был удалён посл завершения лиги Нашествие)"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_corrupted_item"
+	[tag]"name EN"		[value]"Condition: "
+	[tag]"name RU"		[value]"Условие: "
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_mirrored"
+	[tag]"name EN"		[value]"Condition: item is mirrored"
+	[tag]"name RU"		[value]"Условие: предмет отражён"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_elder_item"
+	[tag]"name EN"		[value]"Condition: item have Elder influence"
+	[tag]"name RU"		[value]"Условие: предмет имеет влияние Древнего"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_shaper_item"
+	[tag]"name EN"		[value]"Condition: item have Shaper influence"
+	[tag]"name RU"		[value]"Условие: предмет имеет влияние Создателя"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_fractured_item"
+	[tag]"name EN"		[value]"Condition: item is fractured. Fractured attribute cannot be changed or remove by any way."
+	[tag]"name RU"		[value]"Условие: предмет имеет расколотое свойство. Это свойтво невозможно измсенить или удалить любым способом"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_synthesised_item"
+	[tag]"name EN"		[value]"Condition: item synthesised. Synthesised items have special implicit"
+	[tag]"name RU"		[value]"Условие: предмет синтезирован. Синтезированные предметы имеют особое собственное свойтсво"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_has_implicit"
+	[tag]"name EN"		[value]"Condition: item have implicit"
+	[tag]"name RU"		[value]"Условие: предмет имеет собственное свойтсво"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_crucible_passive"
+	[tag]"name EN"		[value]"Condition: item have Crucible passive tree"
+	[tag]"name RU"		[value]"Условие: предмет имеет пассивное дерево горнила"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_cluster_passive_num"
+	[tag]"name EN"		[value]"Condition: number of passives on cluster jewel"
+	[tag]"name RU"		[value]"Условие: количество пассивных умений на кластерном самоцвете"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_corrupted_item"
+	[tag]"name EN"		[value]"Condition: "
+	[tag]"name RU"		[value]"Условие: "
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_area_level"
+	[tag]"name EN"		[value]"Condition: level of current area"
+	[tag]"name RU"		[value]"Условие: уровень области, на которой вы сейчас находитесь"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_width"
+	[tag]"name EN"		[value]"Condition: item width (in cells)"
+	[tag]"name RU"		[value]"Условие: сколько ячеек инвентаря занимает предмет (в ширину)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_height"
+	[tag]"name EN"		[value]"Condition: item height (in cells)"
+	[tag]"name RU"		[value]"Условие: сколько ячеек инвентаря занимает предмет (в высоту)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_undefined_attribute"
+	[tag]"name EN"		[value]"Allow add user defined attribute"
+	[tag]"name RU"		[value]"Позволяет добавить пользовательский атрибут"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_base_type"
+	[tag]"name EN"		[value]"Condition: base name of item"
+	[tag]"name RU"		[value]"Условие: название предмета. Если предмет неопознан, будет использоватся название его базы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_class"
+	[tag]"name EN"		[value]"Condition: item class. For example: 'Stackable Currency', 'Two Hand Axe', 'Maps', etc"
+	[tag]"name RU"		[value]"Условие: класс предмета. Например: 'Складываемая валюта', 'Двуручные топоры', 'Карты', и прочее"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_explicit_mods"
+	[tag]"name EN"		[value]"Condition: names and number of explicit mods"
+	[tag]"name RU"		[value]"Условие: название и количество атрибутов предмета"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_cluster_node"
+	[tag]"name EN"		[value]"Condition: name of cluster node"
+	[tag]"name RU"		[value]"Условие: название типа кластера"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_influence"
+	[tag]"name EN"		[value]"Condition: list of influencecs"
+	[tag]"name RU"		[value]"Условие: список влияний, которые должны быть на предмете. Если вы хотите, что бы на предмете было ХОТЯ БЫ ОДНО из перечисленных влияний, просто составьте их список. Если вы хотите, что на предмете были ВСЕ перечисленные влияния, используйте параметр 'точное совпадение'"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_enchantment"
+	[tag]"name EN"		[value]"Condition: Item have specific enchantment"
+	[tag]"name RU"		[value]"Условие: предмет имеет конкретное зачарование"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_KEY_"
+	[tag]"name EN"		[value]"Condition: "
+	[tag]"name RU"		[value]"Условие: "
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_KEY_"
+	[tag]"name EN"		[value]"Condition: "
+	[tag]"name RU"		[value]"Условие: "
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_KEY_"
+	[tag]"name EN"		[value]"Condition: "
+	[tag]"name RU"		[value]"Условие: "
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"_KEY_"
+	[tag]"name EN"		[value]"Condition: "
+	[tag]"name RU"		[value]"Условие: "
+	
+	
 	
