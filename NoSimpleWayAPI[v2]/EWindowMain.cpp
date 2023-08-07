@@ -24483,7 +24483,7 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 
 	}
 
-	//WIDTH AND HEIGHT
+	//BASE ATTRIBUTES
 	if
 	(
 		(_game_item != nullptr)
@@ -24505,6 +24505,60 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 
 			int random_ward = round(min_ward + (max_ward - min_ward) * (float(rand() % 100) / 100.0f));
 			game_item_attribute_container.attribute_value_int = random_ward;
+
+			_game_item->attribute_container_list.push_back(game_item_attribute_container);
+
+			//EInputCore::logger_param("height", attribute_container.attribute_value);	
+		}
+
+		//default attributes [Base armour]
+		if (DataEntityUtils::get_tag_value_by_name(0, "base armour min", _game_item->stored_data_entity) != "")
+		{
+			EGameItemAttributeContainer
+				game_item_attribute_container;
+
+			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_ARMOUR];
+			int min_armour = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base armour min", _game_item->stored_data_entity), 0, 99999);
+			int max_armour = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base armour max", _game_item->stored_data_entity), 0, 99999);
+
+			int random_armour = round(min_armour + (max_armour - min_armour) * (float(rand() % 100) / 100.0f));
+			game_item_attribute_container.attribute_value_int = random_armour;
+
+			_game_item->attribute_container_list.push_back(game_item_attribute_container);
+
+			//EInputCore::logger_param("height", attribute_container.attribute_value);	
+		}
+
+		//default attributes [Base evasion]
+		if (DataEntityUtils::get_tag_value_by_name(0, "base evasion min", _game_item->stored_data_entity) != "")
+		{
+			EGameItemAttributeContainer
+				game_item_attribute_container;
+
+			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_EVASION];
+			int min_evasion = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base evasion min", _game_item->stored_data_entity), 0, 99999);
+			int max_evasion = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base evasion max", _game_item->stored_data_entity), 0, 99999);
+
+			int random_evasion = round(min_evasion + (max_evasion - min_evasion) * (float(rand() % 100) / 100.0f));
+			game_item_attribute_container.attribute_value_int = random_evasion;
+
+			_game_item->attribute_container_list.push_back(game_item_attribute_container);
+
+			//EInputCore::logger_param("height", attribute_container.attribute_value);	
+		}
+
+		//default attributes [Base energy shield]
+		if (DataEntityUtils::get_tag_value_by_name(0, "base energy shield min", _game_item->stored_data_entity) != "")
+		{
+			EGameItemAttributeContainer
+				game_item_attribute_container;
+
+			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_ENERGY_SHIELD];
+			int min_energy_shield = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base energy shield min", _game_item->stored_data_entity), 0, 99999);
+			int max_energy_shield = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base energy shield max", _game_item->stored_data_entity), 0, 99999);
+
+			int random_energy_shield = round(min_energy_shield + (max_energy_shield - min_energy_shield) * (float(rand() % 100) / 100.0f));
+			game_item_attribute_container.attribute_value_int = random_energy_shield;
 
 			_game_item->attribute_container_list.push_back(game_item_attribute_container);
 

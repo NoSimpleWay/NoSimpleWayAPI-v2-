@@ -17,6 +17,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _AR_ min"	[value]"324"
+	[tag]"base _AR_ max"	[value]"389	"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -40,6 +42,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base _EV_ min"	[value]"737"
+	[tag]"base _EV_ max"	[value]"811"
 
 	[tag]"worth"		[value]"Common"
 
@@ -64,6 +68,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Rare base"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base _AR_ min"	[value]"711"
+	[tag]"base _AR_ max"	[value]"782"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -87,6 +93,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"297"
+	[tag]"base _AR_ max"	[value]"341"
+	[tag]"base _EV_ min"	[value]"297"
+	[tag]"base _EV_ max"	[value]"341"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -108,6 +118,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _AR_ min"	[value]"412"
+	[tag]"base _AR_ max"	[value]"474"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -133,6 +145,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _EV_ min"	[value]"436"
+	[tag]"base _EV_ max"	[value]"501"
+	[tag]"base _ES_ min"	[value]"73"
+	[tag]"base _ES_ max"	[value]"84"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -156,6 +172,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _EV_ min"	[value]"194"
+	[tag]"base _EV_ max"	[value]"233"
+	[tag]"base _ES_ min"	[value]"41"
+	[tag]"base _ES_ max"	[value]"49"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -177,6 +197,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _AR_ min"	[value]"373"
+	[tag]"base _AR_ max"	[value]"429"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -198,6 +220,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"176"
+	[tag]"base _EV_ max"	[value]"221"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -219,6 +243,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _ES_ min"	[value]"75"
+	[tag]"base _ES_ max"	[value]"88"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -244,6 +270,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Expensive base for unique"
+	[tag]"base _EV_ min"	[value]"353"
+	[tag]"base _EV_ max"	[value]"388"
+	[tag]"base _ES_ min"	[value]"103"
+	[tag]"base _ES_ max"	[value]"113"
 	
 	[tag]"item tag"		[value]"Have implicit"
 
@@ -269,6 +299,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _ES_ min"	[value]"58"
+	[tag]"base _ES_ max"	[value]"65"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -292,6 +324,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"119"
+	[tag]"base _AR_ max"	[value]"140"
+	[tag]"base _ES_ min"	[value]"27"
+	[tag]"base _ES_ max"	[value]"31"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -315,6 +351,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"48"
+	[tag]"base _AR_ max"	[value]"63"
+	[tag]"base _ES_ min"	[value]"13"
+	[tag]"base _ES_ max"	[value]"17"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -338,6 +378,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"27"
+	[tag]"base _AR_ max"	[value]"38"
+	[tag]"base _ES_ min"	[value]"9"
+	[tag]"base _ES_ max"	[value]"13"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -359,6 +403,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _AR_ min"	[value]"68"
+	[tag]"base _AR_ max"	[value]"89"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -380,6 +426,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _AR_ min"	[value]"491"
+	[tag]"base _AR_ max"	[value]"589"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -403,6 +451,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"275"
+	[tag]"base _AR_ max"	[value]"325"
+	[tag]"base _EV_ min"	[value]"275"
+	[tag]"base _EV_ max"	[value]"325"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -424,6 +476,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _ES_ min"	[value]"94"
+	[tag]"base _ES_ max"	[value]"105"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -447,6 +501,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"387"
+	[tag]"base _AR_ max"	[value]"445"
+	[tag]"base _ES_ min"	[value]"79"
+	[tag]"base _ES_ max"	[value]"91"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -468,6 +526,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _AR_ min"	[value]"176"
+	[tag]"base _AR_ max"	[value]"221"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -490,6 +550,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Breach unique item"
+	[tag]"base _EV_ min"	[value]"491"
+	[tag]"base _EV_ max"	[value]"579"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -513,6 +575,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _EV_ min"	[value]"264"
+	[tag]"base _EV_ max"	[value]"304"
+	[tag]"base _ES_ min"	[value]"55"
+	[tag]"base _ES_ max"	[value]"63"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -535,6 +601,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"237"
+	[tag]"base _AR_ max"	[value]"266"
+	[tag]"base _ES_ min"	[value]"50"
+	[tag]"base _ES_ max"	[value]"55"
 		
 	[tag]"worth"		[value]"Trash"	
 
@@ -558,6 +628,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _AR_ min"	[value]"601"
+	[tag]"base _AR_ max"	[value]"691"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -581,6 +653,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _EV_ min"	[value]"308"
+	[tag]"base _EV_ max"	[value]"369"
+	[tag]"base _ES_ min"	[value]"63"
+	[tag]"base _ES_ max"	[value]"76"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -602,6 +678,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _EV_ min"	[value]"530"
+	[tag]"base _EV_ max"	[value]"594"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -625,6 +703,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"376"
+	[tag]"base _AR_ max"	[value]"451"
+	[tag]"base _EV_ min"	[value]"376"
+	[tag]"base _EV_ max"	[value]"451"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -646,6 +728,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"601"
+	[tag]"base _EV_ max"	[value]"721"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -667,6 +751,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _ES_ min"	[value]"109"
+	[tag]"base _ES_ max"	[value]"129"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -690,6 +776,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"302"
+	[tag]"base _AR_ max"	[value]"363"
+	[tag]"base _ES_ min"	[value]"62"
+	[tag]"base _ES_ max"	[value]"74"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -713,6 +803,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"97"
+	[tag]"base _AR_ max"	[value]"121"
+	[tag]"base _EV_ min"	[value]"313"
+	[tag]"base _EV_ max"	[value]"351"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -734,6 +828,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"373"
+	[tag]"base _EV_ max"	[value]"429"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -757,6 +853,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"377"
+	[tag]"base _AR_ max"	[value]"433"
+	[tag]"base _ES_ min"	[value]"92"
+	[tag]"base _ES_ max"	[value]"105"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -779,6 +879,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _EV_ min"	[value]"704"
+	[tag]"base _EV_ max"	[value]"810"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -802,6 +904,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"194"
+	[tag]"base _AR_ max"	[value]"223"
+	[tag]"base _EV_ min"	[value]"194"
+	[tag]"base _EV_ max"	[value]"223"
+	
+	
+	
+	[tag]"base _AR_ min"	[value]"97"
+	[tag]"base _AR_ max"	[value]"121"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -824,6 +935,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"221"
+	[tag]"base _EV_ max"	[value]"248"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -847,6 +960,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"178"
+	[tag]"base _AR_ max"	[value]"199"
+	[tag]"base _ES_ min"	[value]"38"
+	[tag]"base _ES_ max"	[value]"43"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -870,6 +987,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"470"
+	[tag]"base _AR_ max"	[value]"541"
+	[tag]"base _EV_ min"	[value]"373"
+	[tag]"base _EV_ max"	[value]"429"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -890,6 +1011,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"284"
+	[tag]"base _EV_ max"	[value]"327"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -911,6 +1034,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"284"
+	[tag]"base _AR_ max"	[value]"319"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -934,6 +1059,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _ES_ min"	[value]"34"
+	[tag]"base _ES_ max"	[value]"39"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -957,6 +1084,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"156"
+	[tag]"base _AR_ max"	[value]"180"
+	[tag]"base _EV_ min"	[value]"156"
+	[tag]"base _EV_ max"	[value]"180"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -981,6 +1112,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"base _AR_ min"	[value]"254"
+	[tag]"base _AR_ max"	[value]"292"
+	[tag]"base _EV_ min"	[value]"254"
+	[tag]"base _EV_ max"	[value]"292"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1005,6 +1140,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"base _AR_ min"	[value]"415"
+	[tag]"base _AR_ max"	[value]"465"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -1027,6 +1164,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _AR_ min"	[value]"738"
+	[tag]"base _AR_ max"	[value]"848"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1049,6 +1188,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _EV_ min"	[value]"451"
+	[tag]"base _EV_ max"	[value]"519"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1072,6 +1213,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _AR_ min"	[value]"776"
+	[tag]"base _AR_ max"	[value]"892"
 
 	[tag]"worth"		[value]"Common"
 
@@ -1093,6 +1236,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _AR_ min"	[value]"559"
+	[tag]"base _AR_ max"	[value]"643"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1116,6 +1261,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"194"
+	[tag]"base _AR_ max"	[value]"233"
+	[tag]"base _ES_ min"	[value]"41"
+	[tag]"base _ES_ max"	[value]"49"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1139,6 +1288,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"232"
+	[tag]"base _AR_ max"	[value]"278"
+	[tag]"base _EV_ min"	[value]"232"
+	[tag]"base _EV_ max"	[value]"278"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1162,6 +1315,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"119"
+	[tag]"base _AR_ max"	[value]"142"
+	[tag]"base _EV_ min"	[value]"119"
+	[tag]"base _EV_ max"	[value]"142"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1185,6 +1342,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _EV_ min"	[value]"286"
+	[tag]"base _EV_ max"	[value]"329"
+	[tag]"base _ES_ min"	[value]"59"
+	[tag]"base _ES_ max"	[value]"68"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1208,6 +1369,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"216"
+	[tag]"base _AR_ max"	[value]"248"
+	[tag]"base _ES_ min"	[value]"45"
+	[tag]"base _ES_ max"	[value]"52"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1231,6 +1396,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"48"
+	[tag]"base _AR_ max"	[value]"63"
+	[tag]"base _EV_ min"	[value]"48"
+	[tag]"base _EV_ max	"	[value]"63"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1275,6 +1444,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"325"
+	[tag]"base _AR_ max"	[value]"374"
+	[tag]"base _ES_ min"	[value]"66"
+	[tag]"base _ES_ max"	[value]"76"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1298,6 +1471,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _ES_ min"	[value]"62"
+	[tag]"base _ES_ max"	[value]"69"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1319,6 +1494,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _AR_ min"	[value]"530"
+	[tag]"base _AR_ max"	[value]"625"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1341,6 +1518,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _ES_ min"	[value]"123"
+	[tag]"base _ES_ max"	[value]"147"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1364,16 +1543,18 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _ES_ min"	[value]"137"
+	[tag]"base _ES_ max"	[value]"151"
 		
 	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Oiled Coat"
-	[tag]"name RU"		[value]"Набивной доспех"
+	[tag]"name EN"		[value]"Padded vest"
+	[tag]"name RU"		[value]"Стёганый доспех"
 
-	[tag]"icon path"	[value]"Oiled_Coat_inventory_icon"
+	[tag]"icon path"	[value]"Padded_Vest_inventory_icon"
 	[tag]"base class"	[value]"Body Armours"
 
 	[tag]"item width"	[value]"2"
@@ -1385,6 +1566,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _ES_ min"	[value]"9"
+	[tag]"base _ES_ max"	[value]"13"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1406,6 +1590,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"54"
+	[tag]"base _EV_ max"	[value]"70"
+	[tag]"base _ES_ min"	[value]"14"
+	[tag]"base _ES_ max"	[value]"18"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1429,6 +1617,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"259"
+	[tag]"base _AR_ max"	[value]"298"
+	[tag]"base _ES_ min"	[value]"54"
+	[tag]"base _ES_ max"	[value]"62"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1452,6 +1644,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _EV_ min"	[value]"102"
+	[tag]"base _EV_ max"	[value]"128"
+	[tag]"base _ES_ min"	[value]"24"
+	[tag]"base _ES_ max"	[value]"29"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1473,6 +1669,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _AR_ min"	[value]"19"
+	[tag]"base _AR_ max"	[value]"27"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1496,6 +1694,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _EV_ min"	[value]"221"
+	[tag]"base _EV_ max"	[value]"248"
+	[tag]"base _ES_ min"	[value]"46"
+	[tag]"base _ES_ max"	[value]"52"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1519,6 +1721,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _AR_ min"	[value]"97"
+	[tag]"base _AR_ max"	[value]"121"
+	[tag]"base _ES_ min"	[value]"22"
+	[tag]"base _ES_ max"	[value]"28"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1543,6 +1749,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Rare base"
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _AR_ min"	[value]"329"
+	[tag]"base _AR_ max"	[value]"378"
+	[tag]"base _EV_ min"	[value]"353"
+	[tag]"base _EV_ max"	[value]"388"
+	[tag]"base _ES_ min"	[value]"67"
+	[tag]"base _ES_ max"	[value]"77"
 		
 	[tag]"worth"		[value]"Rare"
 
@@ -1568,6 +1780,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _EV_ min"	[value]"427"
+	[tag]"base _EV_ max"	[value]"491"
+	[tag]"base _ES_ min"	[value]"93"
+	[tag]"base _ES_ max"	[value]"107"
 
 	[tag]"worth"		[value]"Common"
 
@@ -1589,6 +1805,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _ES_ min"	[value]"79"
+	[tag]"base _ES_ max"	[value]"90"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1614,6 +1832,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _AR_ min"	[value]"443"
+	[tag]"base _AR_ max"	[value]"496"
+	[tag]"base _ES_ min"	[value]"76"
+	[tag]"base _ES_ max"	[value]"85"
 
 	[tag]"worth"		[value]"Common"
 
@@ -1638,6 +1860,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"base _AR_ min"	[value]"401"
+	[tag]"base _AR_ max"	[value]"461"
+	[tag]"base _ES_ min"	[value]"96"
+	[tag]"base _ES_ max"	[value]"110"
 
 	[tag]"worth"		[value]"Common"
 
@@ -1660,6 +1886,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _ES_ min"	[value]"115"
+	[tag]"base _ES_ max"	[value]"132"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1682,6 +1910,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"313"
+	[tag]"base _AR_ max"	[value]"351"
+	[tag]"base _EV_ min"	[value]"97"
+	[tag]"base _EV_ max"	[value]"121"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1704,6 +1936,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"27"
+	[tag]"base _AR_ max"	[value]"38"
+	[tag]"base _EV_ min"	[value]"27"
+	[tag]"base _EV_ max"	[value]"38"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1727,6 +1963,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _EV_ min"	[value]"156"
+	[tag]"base _EV_ max"	[value]"180"
+	[tag]"base _ES_ min"	[value]"34"
+	[tag]"base _ES_ max"	[value]"39"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1748,6 +1988,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _ES_ min"	[value]"43"
+	[tag]"base _ES_ max"	[value]"53"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1771,6 +2013,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _EV_ min"	[value]"330"
+	[tag]"base _EV_ max"	[value]"370"
+	[tag]"base _ES_ min"	[value]"67"
+	[tag]"base _ES_ max"	[value]"76"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1791,6 +2037,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"29"
+	[tag]"base _EV_ max"	[value]"41"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1811,6 +2059,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"559"
+	[tag]"base _EV_ max"	[value]"643"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1831,6 +2081,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _ES_ min"	[value]"69"
+	[tag]"base _ES_ max"	[value]"80"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1851,6 +2103,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _ES_ min"	[value]"56"
+	[tag]"base _ES_ max"	[value]"64"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1871,6 +2125,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _ES_ min"	[value]"30"
+	[tag]"base _ES_ max"	[value]"38"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1891,6 +2147,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _ES_ min"	[value]"86"
+	[tag]"base _ES_ max"	[value]"104"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1912,6 +2170,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Breach unique item"
+	[tag]"base _ES_ min"	[value]"14"
+	[tag]"base _ES_ max"	[value]"20"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1934,6 +2194,36 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _EV_ min"	[value]"243"
+	[tag]"base _EV_ max"	[value]"287"
+	[tag]"base _ES_ min"	[value]"51"
+	[tag]"base _ES_ max"	[value]"60"
+
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Oiled Coat"
+	[tag]"name RU"		[value]"Доспех из дублёной кожи"
+
+	[tag]"icon path"	[value]"Oiled_Coat_inventory_icon"
+	[tag]"base class"	[value]"Body Armours"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Item for dex based character"
+	[tag]"item tag"		[value]"Item for int based character"
+	[tag]"item tag"		[value]"Armour piece"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _EV_ min"	[value]"124"
+	[tag]"base _EV_ max"	[value]"146"
+	[tag]"base _ES_ min"	[value]"28"
+	[tag]"base _ES_ max"	[value]"33"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1956,6 +2246,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _AR_ min"	[value]"178"
+	[tag]"base _AR_ max"	[value]"210"
+	[tag]"base _EV_ min"	[value]"178"
+	[tag]"base _EV_ max"	[value]"210"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1977,6 +2271,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _ES_ min"	[value]"101"
+	[tag]"base _ES_ max"	[value]"117"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -1997,6 +2293,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"98"
+	[tag]"base _EV_ max"	[value]"127"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -2017,6 +2315,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"324"
+	[tag]"base _EV_ max"	[value]"382"
 
 	[tag]"worth"		[value]"Trash"
 
@@ -2037,6 +2337,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _AR_ min"	[value]"451"
+	[tag]"base _AR_ max"	[value]"506"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2055,6 +2357,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"353"
+	[tag]"base _EV_ max"	[value]"396"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2078,6 +2382,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _AR_ min"	[value]"380"
+	[tag]"base _AR_ max"	[value]"437"
+	[tag]"base _EV_ min"	[value]"477"
+	[tag]"base _EV_ max"	[value]"549"
 
 	[tag]"worth"		[value]"Common"
 
@@ -2100,6 +2408,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"base _ES_ min"	[value]"171"
+	[tag]"base _ES_ max"	[value]"197"
 
 	[tag]"worth"		[value]"Common"
 
@@ -2122,6 +2432,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _EV_ min"	[value]"387"
+	[tag]"base _EV_ max"	[value]"434"
+	[tag]"base _ES_ min"	[value]"79"
+	[tag]"base _ES_ max"	[value]"89"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -2142,6 +2456,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
+	[tag]"base _AR_ min"	[value]"216"
+	[tag]"base _AR_ max"	[value]"248"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -2164,6 +2480,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
+	[tag]"base _EV_ min"	[value]"178"
+	[tag]"base _EV_ max"	[value]"205"
+	[tag]"base _ES_ min"	[value]"38"
+	[tag]"base _ES_ max"	[value]"44"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -2186,6 +2506,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _ES_ min"	[value]"157"
+	[tag]"base _ES_ max"	[value]"181"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -2206,6 +2528,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Armour piece"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
+	[tag]"base _EV_ min"	[value]"255"
+	[tag]"base _EV_ max"	[value]"306"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -2229,6 +2553,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _AR_ min"	[value]"210"
+	[tag]"base _AR_ max"	[value]"236"
+	[tag]"base _EV_ min"	[value]"210"
+	[tag]"base _EV_ max"	[value]"236"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -2250,6 +2578,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base _EV_ min"	[value]"854"
+	[tag]"base _EV_ max"	[value]"982"
 		
 	[tag]"worth"		[value]"Trash"
 	
@@ -2274,6 +2604,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Defence: energy shield"
 	[tag]"item tag"		[value]"Rare base"
+	[tag]"base _AR_ min"	[value]"217"
+	[tag]"base _AR_ max"	[value]"250"
+	[tag]"base _EV_ min"	[value]"217"
+	[tag]"base _EV_ max"	[value]"250"
+	[tag]"base _ES_ min"	[value]"44"
+	[tag]"base _ES_ max"	[value]"51"
 		
 	[tag]"worth"		[value]"Rare"
 	
