@@ -7,6 +7,8 @@
 
 namespace NS_EGraphicCore
 {
+	int								old_w, old_h;
+	bool							changed_resolution = false;
 	int								SCREEN_WIDTH = 1620, SCREEN_HEIGHT = 880;
 	float							correction_x = 1.0f, correction_y = 1.0f;
 	Shader* shader_texture_atlas_putter;
@@ -4554,20 +4556,54 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 		//total_sprites *= 6;
 		////total_sprites *= 4;
 		//if (total_sprites >)
-		if ((_sprite_layer->total_capacity > 0) && (_sprite_layer->vertex_buffer != nullptr))
-		{
-			if (!disable_deleting) { delete[] _sprite_layer->vertex_buffer; }
-		}
 
-		if (total_sprites > 0)
+	
+		
+
+		//delete and create vertext buffer, if size changed, or create new buffer, if old not exist
+		if (_sprite_layer == nullptr)//something wrong, sprite layer is NULL
+		{}
+		else
 		{
-			_sprite_layer->vertex_buffer = new float[total_sprites * _sprite_layer->batcher->gl_vertex_attribute_total_count * 4];
-			//EInputCore::logger_param("length", sprite_frame_list.size() * batcher->gl_vertex_attribute_total_count * 4);
-			_sprite_layer->total_capacity = total_sprites * _sprite_layer->batcher->gl_vertex_attribute_total_count * 4;
+			int new_capacity = total_sprites * _sprite_layer->batcher->gl_vertex_attribute_total_count * 4;
+
+			if (new_capacity <= 0)//no one vertex buffer will created, no sense to create new VB. Existing VB will be destroyed
+			{
+				if (_sprite_layer->vertex_buffer != nullptr)
+				{
+					if (!disable_deleting) { delete[] _sprite_layer->vertex_buffer; }
+					_sprite_layer->vertex_buffer = nullptr;
+				}
+			}
+			else
+			{
+				//buffer not exist, create new
+				if (_sprite_layer->vertex_buffer == nullptr)
+				{
+					_sprite_layer->vertex_buffer = new float[new_capacity];
+				}
+				else
+				{
+					if (new_capacity != _sprite_layer->total_capacity)//size of VB changed, or VB still not created
+					{
+						if (_sprite_layer->vertex_buffer != nullptr)
+						{
+							if (!disable_deleting) { delete[] _sprite_layer->vertex_buffer; }
+							_sprite_layer->vertex_buffer = new float[new_capacity];
+						}
+					}
+					else//
+					{
+
+					}
+				}
+			}
 
 			_sprite_layer->last_buffer_id = 0;
+			_sprite_layer->total_capacity = new_capacity;
 		}
 
+		
 		//ETextureGabarite* autoloaded_normal_map	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_texture_gabarite, "[normal_map]");
 		//ETextureGabarite* autoloaded_gloss_map	= NS_EGraphicCore::get_gabarite_from_full_path_and_suffix(_texture_gabarite, "[gloss_map]");
 
@@ -4940,72 +4976,20 @@ void NS_EGraphicCore::refresh_autosize_groups(EWindow* _window)
 
 void NS_EGraphicCore::framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {//
-	//width = round(width / 2.0f) * 2;
-	//height = round(height / 2.0f) * 2;
-	//glScissor(0, 0, 500, 500);
 
-	//glViewport(0, 0, width, height);
+		//width = round(width / 2.0f) * 2;
+		//height = round(height / 2.0f) * 2;
+		//glScissor(0, 0, 500, 500);
 
-	int old_w = NS_EGraphicCore::SCREEN_WIDTH, old_h = NS_EGraphicCore::SCREEN_HEIGHT;
+		//glViewport(0, 0, width, height);
 
-	glfwGetWindowSize(window, &NS_EGraphicCore::SCREEN_WIDTH, &NS_EGraphicCore::SCREEN_HEIGHT);
-	glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
+		old_w = NS_EGraphicCore::SCREEN_WIDTH;
+		old_h = NS_EGraphicCore::SCREEN_HEIGHT;
 
+		glfwGetWindowSize(window, &NS_EGraphicCore::SCREEN_WIDTH, &NS_EGraphicCore::SCREEN_HEIGHT);
 
-	float resize_x_factor = width / (float)old_w;
-	float resize_y_factor = height / (float)old_h;
-
-	std::cout << "Resize event width:" << NS_EGraphicCore::SCREEN_WIDTH << " height: " << NS_EGraphicCore::SCREEN_HEIGHT << std::endl;
-
-	recalculate_correction();
-
-	for (EWindow* w : EWindow::window_list)
-	{
-		for (EButtonGroup* group : w->button_group_list)
-		{
-			float real_gabarite_x = float(old_w) - group->region_gabarite->size_x;
-			float additional_real_gabarite_x = float(width) - group->region_gabarite->size_x;
-			float percent_x = group->region_gabarite->offset_x / (real_gabarite_x);
-
-			group->region_gabarite->offset_x = additional_real_gabarite_x * percent_x;
-			group->region_gabarite->offset_x = min(group->region_gabarite->offset_x, width - 64.0f);
-			group->region_gabarite->offset_x = max(group->region_gabarite->offset_x, -group->region_gabarite->size_x + 64.0f);
+		changed_resolution = true; 
 		
-
-
-
-			float real_gabarite_y = float(old_h) - group->region_gabarite->size_y;
-			float additional_real_gabarite_y = float(height) - group->region_gabarite->size_y;
-			float percent_y = group->region_gabarite->offset_y / (real_gabarite_y);
-
-			group->region_gabarite->offset_y = additional_real_gabarite_y * percent_y;
-			group->region_gabarite->offset_y = min(group->region_gabarite->offset_y, height - 64.0f);
-			group->region_gabarite->offset_y = max(group->region_gabarite->offset_y, -group->region_gabarite->size_y + 64.0f);
-
-
-
-
-
-
-			//group->region_gabarite->offset_y = (group->region_gabarite->offset_y / old_h) * height;
-
-			//group->need_refresh = true;
-			//EButtonGroup::refresh_button_group(group);
-		}
-
-		
-		refresh_autosize_groups(w);
-
-		for (EWindow* w : EWindow::window_list)
-		{
-			for (EButtonGroup* group : w->button_group_list)
-			{
-				EButtonGroup::refresh_button_group(group);
-			}
-		}
-
-
-	}
 }
 
 void NS_EGraphicCore::recalculate_correction()

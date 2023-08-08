@@ -178,6 +178,8 @@ const int texture_skydome_levels = 7;
 class HSVRGBAColor;
 namespace NS_EGraphicCore
 {
+	extern int				old_w, old_h;
+	extern bool				changed_resolution;
 	extern int				SCREEN_WIDTH, SCREEN_HEIGHT;
 	extern float			correction_x, correction_y;
 	extern Shader*			shader_texture_atlas_putter;

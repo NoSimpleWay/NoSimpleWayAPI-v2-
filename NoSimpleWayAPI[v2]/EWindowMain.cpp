@@ -2707,7 +2707,7 @@ void EDataActionCollection::action_save_lootfilter(Entity* _entity, ECustomData*
 			}
 
 
-		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text, &str);
+		EWindowMain::write_loot_filter_to_disc(EWindowMain::path_of_exile_folder + "/" + EWindowMain::tab_list_group->selected_button->main_text_area->original_text + ".filter", &str);
 	}
 }
 
@@ -4426,7 +4426,7 @@ EWindowMain::EWindowMain()
 	{
 		////////////////////////////////
 		EButtonGroupLootSimulator*
-			whole_loot_simulator_group = new EButtonGroupLootSimulator(new ERegionGabarite(100.0f, 100.0f, 1200.0f, 500.0f));
+			whole_loot_simulator_group = new EButtonGroupLootSimulator(new ERegionGabarite(100.0f, 100.0f, 1200.0f, 600.0f));
 
 		whole_loot_simulator_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 		whole_loot_simulator_group->root_group = whole_loot_simulator_group;
@@ -17987,7 +17987,7 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
-			game_item_generator->generations_count = 3;
+			game_item_generator->generations_count = 1;
 
 
 			LootSimulatorTagFilter*
@@ -18037,7 +18037,7 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
-			game_item_generator->generations_count = 3;
+			game_item_generator->generations_count = 1;
 
 
 			LootSimulatorTagFilter*
@@ -18784,7 +18784,7 @@ void EWindowMain::register_pattern_all_equip()
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
-			game_item_generator->generations_count = 3;
+			game_item_generator->generations_count = 1;
 
 
 			LootSimulatorTagFilter*

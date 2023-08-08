@@ -288,6 +288,71 @@ int main()
 		(EInputCore::NSW_have_unsave_changes)
 	)
 	{
+
+		if (NS_EGraphicCore::changed_resolution)
+		{
+			NS_EGraphicCore::changed_resolution = false;
+
+			glViewport(0, 0, NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT);
+
+
+			float resize_x_factor = NS_EGraphicCore::SCREEN_WIDTH	/ (float)NS_EGraphicCore::old_w;
+			float resize_y_factor = NS_EGraphicCore::SCREEN_HEIGHT	/ (float)NS_EGraphicCore::old_h;
+
+			//std::cout << "Resize event width:" << NS_EGraphicCore::SCREEN_WIDTH << " height: " << NS_EGraphicCore::SCREEN_HEIGHT << std::endl;
+
+			NS_EGraphicCore::recalculate_correction();
+
+			for (EWindow* w : EWindow::window_list)
+			{
+				for (EButtonGroup* group : w->button_group_list)
+				{
+					float real_gabarite_x = float(NS_EGraphicCore::old_w) - group->region_gabarite->size_x;
+					float additional_real_gabarite_x = float(NS_EGraphicCore::SCREEN_WIDTH) - group->region_gabarite->size_x;
+					float percent_x = group->region_gabarite->offset_x / (real_gabarite_x);
+
+					group->region_gabarite->offset_x = additional_real_gabarite_x * percent_x;
+					group->region_gabarite->offset_x = min(group->region_gabarite->offset_x, NS_EGraphicCore::SCREEN_WIDTH - 64.0f);
+					group->region_gabarite->offset_x = max(group->region_gabarite->offset_x, -group->region_gabarite->size_x + 64.0f);
+
+
+
+
+					float real_gabarite_y				= float(NS_EGraphicCore::old_h)			- group->region_gabarite->size_y;
+					float additional_real_gabarite_y	= float(NS_EGraphicCore::SCREEN_HEIGHT)	- group->region_gabarite->size_y;
+
+					float percent_y = group->region_gabarite->offset_y / (real_gabarite_y);
+
+					group->region_gabarite->offset_y = additional_real_gabarite_y * percent_y;
+					group->region_gabarite->offset_y = min(group->region_gabarite->offset_y, NS_EGraphicCore::SCREEN_WIDTH - 64.0f);
+					group->region_gabarite->offset_y = max(group->region_gabarite->offset_y, -group->region_gabarite->size_y + 64.0f);
+
+
+
+
+
+
+					//group->region_gabarite->offset_y = (group->region_gabarite->offset_y / old_h) * height;
+
+					//group->need_refresh = true;
+					//EButtonGroup::refresh_button_group(group);
+				}
+
+
+				NS_EGraphicCore::refresh_autosize_groups(w);
+
+				for (EWindow* w : EWindow::window_list)
+				{
+					for (EButtonGroup* group : w->button_group_list)
+					{
+						EButtonGroup::refresh_button_group(group);
+						//group->need_change = true;
+					}
+				}
+
+
+			}
+		}
 		//make_skydome_textures(NS_DefaultGabarites::texture_gabarite_skydome);
 
 		if

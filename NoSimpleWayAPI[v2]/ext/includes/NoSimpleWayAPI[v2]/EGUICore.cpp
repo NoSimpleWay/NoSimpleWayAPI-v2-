@@ -393,17 +393,22 @@ void EWindow::GUI_update_default(float _d)
 
 		//for (EButtonGroup* b_group : button_group_list)
 		if
-			(
-				(b_group != nullptr)
-				&&
-				(b_group->is_this_group_active())
-				&&
-				(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y >= 0.0f)
-				&&
-				(b_group->region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
-				//&&
-				//(b_group->can_see_this_group())	
-				)
+		(b_group == nullptr)
+		{
+			//
+		}
+		else
+		if//group active and in visible gabarites
+		(
+			(b_group->is_this_group_active())
+			&&
+			(b_group->is_in_visible_diapason())
+			/*(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y >= 0.0f)
+			&&
+			(b_group->region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)*/
+			//&&
+			//(b_group->can_see_this_group())	
+		)
 		{
 			b_group->recursive_recalculate_culling_lines();
 			//b_group->lower_culling_line = b_group->region_gabarite->world_position_y;
@@ -413,6 +418,10 @@ void EWindow::GUI_update_default(float _d)
 
 
 			id++;
+		}
+		else
+		{
+			b_group->try_vipe_data(_d);
 		}
 
 
@@ -641,10 +650,28 @@ void EButtonGroup::remove_all_workspace_buttons()
 	workspace_button_list.shrink_to_fit();
 }
 
+void EButtonGroup::try_vipe_data(float _d)
+{
+	if (vipe_timer > 0.0f)
+	{
+		vipe_timer -= _d;
+
+		if ((vipe_timer <= 0.0f) && (!is_viped))
+		{
+			is_viped = true;
+
+			destroy_all_vertex_buffer_data();
+
+			group_phantom_redraw = true;
+		}
+	}
+}
+
 void EButtonGroup::close_this_group()
 {
 	button_group_is_active = false;
-
+	destroy_all_vertex_buffer_data();
+	need_refresh = true;
 
 
 	recursive_close_process();
@@ -684,6 +711,7 @@ void EButtonGroup::recursive_close_process()
 
 void EButtonGroup::destroy_all_vertex_buffer_data()
 {
+	//all clickalbe areas
 	for (EClickableArea* c_area : clickable_area_list)
 		for (ESpriteLayer* s_layer : c_area->sprite_layer_list)
 		{
@@ -724,11 +752,11 @@ void EButtonGroup::button_group_update(float _d)
 	//invisible elements become visible
 
 	if
-		(
-			(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
-			&&
-			(EButtonGroup::focused_button_group_mouse_unpressed == this)
-		)
+	(
+		(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
+		&&
+		(EButtonGroup::focused_button_group_mouse_unpressed == this)
+	)
 	{
 		recursive_get_info();
 	}
@@ -834,11 +862,11 @@ void EButtonGroup::button_group_update(float _d)
 
 
 	if
-		(
-			(is_this_group_active())//group not deactivated
-			&&
-			(is_in_visible_diapason())//in visible gabarites
-			)
+	(
+		(is_this_group_active())//group not deactivated
+		&&
+		(is_in_visible_diapason())//in visible gabarites
+	)
 	{
 
 		phantom_translate_if_need();
@@ -971,6 +999,10 @@ void EButtonGroup::button_group_update(float _d)
 		{
 			group_list[i]->button_group_update(_d);
 		}
+	}
+	else
+	{
+		try_vipe_data(_d);
 	}
 
 
@@ -2048,6 +2080,8 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 			//(_group->region_gabarite->world_position_y + _group->region_gabarite->size_y >= 0.0f)
 			)
 	{
+		_group->is_viped = false;
+		_group->vipe_timer = 1.0f;
 		_group->group_phantom_redraw = false;
 
 		//	
@@ -2450,11 +2484,11 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 
 
 	if
-		(
+	(
 			(_group->is_this_group_active())
 			&&
 			((_group->is_in_visible_diapason()) || (true))
-			)
+	)
 	{
 		recursive_change_group_first_pass(_group);
 		//recursive_change_group_first_pass(_group);
@@ -3705,38 +3739,41 @@ bool EButtonGroup::is_in_visible_diapason()
 	}
 
 	if
-		(
-			//(is_active)
-			//&&
-			(parent_group == nullptr)
-			&&
-			(region_gabarite->world_position_x + region_gabarite->phantom_translate_x <= NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom)
-			&&
-			(region_gabarite->world_position_x + region_gabarite->phantom_translate_x + region_gabarite->size_x > 0.0f)
-			&&
-			(region_gabarite->world_position_y + region_gabarite->phantom_translate_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
-			&&
-			(region_gabarite->world_position_y + region_gabarite->phantom_translate_y + region_gabarite->size_y > 0.0f)
-			)
+	(
+		//(is_active)
+		//&&
+
+		//too right
+		(region_gabarite->world_position_x + region_gabarite->phantom_translate_x > NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom)
+		||
+		//too left
+		(region_gabarite->world_position_x + region_gabarite->phantom_translate_x + region_gabarite->size_x < 0.0f)
+		||
+		//too up
+		(region_gabarite->world_position_y + region_gabarite->phantom_translate_y > NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
+		||
+		//too bottom
+		(region_gabarite->world_position_y + region_gabarite->phantom_translate_y + region_gabarite->size_y < 0.0f)
+	)
 	{
-		return true;
+		return false;
 	}
 
 	if
-		(
-			//(is_active)
-			//&&
-			(parent_group != nullptr)
-			&&
-			(region_gabarite->world_position_y + region_gabarite->phantom_translate_y <= parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y)
-			&&
-			(region_gabarite->world_position_y + region_gabarite->size_y + region_gabarite->phantom_translate_y >= parent_group->region_gabarite->world_position_y)
-			)
+	(
+		//(is_active)
+		//&&
+		(parent_group != nullptr)
+		&&
+		(region_gabarite->world_position_y + region_gabarite->phantom_translate_y > parent_group->region_gabarite->world_position_y + parent_group->region_gabarite->size_y)
+		&&
+		(region_gabarite->world_position_y + region_gabarite->size_y + region_gabarite->phantom_translate_y < parent_group->region_gabarite->world_position_y)
+	)
 	{
-		return true;
+		return false;
 	}
 
-	return false;
+	return true;
 
 
 
@@ -3809,14 +3846,16 @@ EButtonGroup* EButtonGroup::set_parameters(ChildAlignMode _child_align_mode, boo
 
 void EButtonGroup::activate_move_to_foreground_and_center()
 {
+	move_to_foreground_and_center();
+
 	if (!button_group_is_active)
 	{
-		move_to_foreground_and_center();
+		//move_to_foreground_and_center();
 		button_group_is_active = true;
 	}
 	else
 	{
-		move_to_foreground();
+		//move_to_foreground();
 	}
 }
 

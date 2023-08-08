@@ -18,7 +18,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"base _AR_ min"	[value]"324"
-	[tag]"base _AR_ max"	[value]"389	"
+	[tag]"base _AR_ max"	[value]"389"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -1399,7 +1399,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base _AR_ min"	[value]"48"
 	[tag]"base _AR_ max"	[value]"63"
 	[tag]"base _EV_ min"	[value]"48"
-	[tag]"base _EV_ max	"	[value]"63"
+	[tag]"base _EV_ max"	[value]"63"
 		
 	[tag]"worth"		[value]"Trash"
 

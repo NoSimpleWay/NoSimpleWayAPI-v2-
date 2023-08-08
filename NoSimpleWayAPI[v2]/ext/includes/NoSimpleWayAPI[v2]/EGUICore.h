@@ -344,6 +344,8 @@ class EButtonGroup
 public:
 
 	bool silicon_idiot = false;
+
+	bool is_viped = false;
 	std::string debug_name = "";
 	//float* offset_x = new float(0.0f);
 	//float* offset_y = new float(0.0f);
@@ -403,6 +405,9 @@ public:
 	std::vector<EntityButton*> workspace_button_list;
 	void delete_exact_button(EntityButton* _button);
 	void remove_all_workspace_buttons();
+
+	float vipe_timer = 1.0f;
+	void try_vipe_data(float _d);
 
 	void close_this_group();
 	void recursive_close_process();
