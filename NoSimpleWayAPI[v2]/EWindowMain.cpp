@@ -2313,6 +2313,8 @@ void EDataActionCollection::action_change_localisation(Entity* _entity, ECustomD
 			//EButtonGroup::change_group(g);
 			g->need_change = true;
 		}
+
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
 }
 
 void EDataActionCollection::action_remove_wide_button(Entity* _entity, ECustomData* _custom_data, float _d)
