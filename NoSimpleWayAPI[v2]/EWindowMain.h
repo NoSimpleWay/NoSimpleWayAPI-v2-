@@ -292,9 +292,10 @@ public:
 
 	void clear_non_listed_segment();
 	void clear_listed_segment();
+	static GameItemAttribute* get_suitable_game_item_attribute(std::string _name);
 
 	EButtonGroup* pointer_to_non_listed_segment;
-	EButtonGroup* pointer_to_listed_segment;
+	EButtonGroup* pointer_to_listed_segment_in_filter_block;
 	EButtonGroup* pointer_to_preview_box_segment;
 
 
@@ -603,12 +604,15 @@ public:
 	void draw_button_group() override;
 };
 
-class EDataContainer_Group_FilterBlockListedSegment : public EDataContainer
+class EButtonGroupListedBlock : public EButtonGroup
 {
 public:
-	EButtonGroup* group_with_listed_buttons;
+	EButtonGroupListedBlock(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+	
+	
+	EButtonGroup* section_for_wide_item_buttons;
 
-	EntityButtonVariantRouterForFilterBlock* match_mode_router_button;
+	EntityButtonVariantRouterForFilterBlock* matching_mode_router_button;
 
 	std::string				filter_attribute_name;
 	GameItemAttribute* associated_item_attribute;
@@ -617,6 +621,22 @@ public:
 	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
 	EntityButtonForFilterBlock* input_field;
 };
+
+//
+//class EDataContainer_Group_FilterBlockListedSegment : public EDataContainer
+//{
+//public:
+//	EButtonGroup* group_with_listed_buttons;
+//
+//	EntityButtonVariantRouterForFilterBlock* match_mode_router_button;
+//
+//	std::string				filter_attribute_name;
+//	GameItemAttribute* associated_item_attribute;
+//
+//	//EntityButton*			button_with;
+//	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
+//	EntityButtonForFilterBlock* input_field;
+//};
 
 namespace EDataActionCollection
 {

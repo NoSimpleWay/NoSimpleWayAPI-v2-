@@ -11774,7 +11774,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	listed_condition_segment->child_align_direction = ChildElementsAlignDirection::BOTTOM_TO_TOP;
 	//listed_condition_segment->button_size_x_override = 200.0f;
 	//root group data ontaner
-	whole_filter_block_group->pointer_to_listed_segment = listed_condition_segment;
+	whole_filter_block_group->pointer_to_listed_segment_in_filter_block = listed_condition_segment;
 
 	workspace_part->add_group(listed_condition_segment);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -13419,8 +13419,8 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 		last_non_listed_line = nullptr;
 
-		EButtonGroupFilterBlock* whole_block_container = nullptr;
-		EDataContainer_Group_FilterBlockListedSegment* listed_container = nullptr;
+		EButtonGroupFilterBlock* whole_filter_block = nullptr;
+		EButtonGroupListedBlock* listed_block = nullptr;
 
 		target_color_bool = nullptr;
 
@@ -13429,7 +13429,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 			char current_sym = str_line.at(i);
 
 			if (current_sym == '"') { space_is_not_separator = !space_is_not_separator; }
-			if (current_sym == '#') { comment_mode = true; }
+			if ((current_sym == '#') && (!space_is_not_separator)) { comment_mode = true; }
 
 			if
 				(
@@ -13464,7 +13464,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							(current_sym != ' ')
 							||
 							(space_is_not_separator)
-							)
+						)
 						&&
 						(current_sym != '\t')
 						&&
@@ -13491,12 +13491,13 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 						//EInputCore::logger_param("buffer text", buffer_text);
 
 						if
-							(
+						(
 								(EStringUtils::compare_ignoring_case(buffer_text, "show"))
 								||
 								(EStringUtils::compare_ignoring_case(buffer_text, "hide"))
-								)
+						)
 						{
+							//create or modify filter block
 							if (!comment_mode)
 							{
 								int specific_position = -1;
@@ -13511,66 +13512,45 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										}
 									}
 								}
-								//if (_target_filter_block == nullptr)
+								
+								
+								jc_filter_block = create_filter_block(loot_filter_editor, specific_position);
+
+								if (_parse_mode == LootFilterOpenMode::LOOT_FILTER_OPEN_MODE_DEFAULT_FILTER_FROM_GAME)
 								{
-									jc_filter_block = create_filter_block(loot_filter_editor, specific_position);
-
-									if (_parse_mode == LootFilterOpenMode::LOOT_FILTER_OPEN_MODE_DEFAULT_FILTER_FROM_GAME)
-									{
-										jc_filter_block->group_is_suppressed = true;
-										jc_filter_block->is_default_filter_block = true;
-									}
-									else
-									if (_parse_mode == LootFilterOpenMode::LOOT_FILTER_OPEN_MODE_BASIC_FILTER_COLORS_FROM_GAME)
-									{
-										jc_filter_block->group_is_suppressed = true;
-										jc_filter_block->is_base_filter_block = true;
-									}
+									jc_filter_block->group_is_suppressed = true;
+									jc_filter_block->is_default_filter_block = true;
 								}
-								//else
-								//{
-								//	jc_filter_block = _target_filter_block;
-								//	_target_filter_block = nullptr;
-								//}
+								else
+								if (_parse_mode == LootFilterOpenMode::LOOT_FILTER_OPEN_MODE_BASIC_FILTER_COLORS_FROM_GAME)
+								{
+									jc_filter_block->group_is_suppressed = true;
+									jc_filter_block->is_base_filter_block = true;
+								}
+								
 
 
-								whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+								whole_filter_block = (EButtonGroupFilterBlock*)(jc_filter_block);
 
 								if (EStringUtils::compare_ignoring_case(buffer_text, "show"))
 								{
-									((EntityButtonVariantRouter*)(whole_block_container->button_show_hide))->select_variant(1);
+									((EntityButtonVariantRouter*)(whole_filter_block->button_show_hide))->select_variant(1);
 								}
 								else
 								{
-									((EntityButtonVariantRouter*)(whole_block_container->button_show_hide))->select_variant(0);
+									((EntityButtonVariantRouter*)(whole_filter_block->button_show_hide))->select_variant(0);
 								}
 							}
 							else
 							{
 								jc_filter_block = nullptr;
-								whole_block_container = nullptr;
+								whole_filter_block = nullptr;
 							}
 						}
 						else
 						{
-							matched_item_attribute = nullptr;
+							matched_item_attribute = EButtonGroupFilterBlock::get_suitable_game_item_attribute(buffer_text);;
 
-							for (int b = 0; b < registered_game_item_attributes.size(); b++)
-							{
-								GameItemAttribute* attribute = registered_game_item_attributes[b];
-
-								if (EStringUtils::compare_ignoring_case(buffer_text, attribute->localisation.base_name))
-								{
-									matched_item_attribute = attribute;
-								}
-							}
-							
-							if (jc_filter_block == nullptr)
-							{
-								buffer_text = buffer_text;
-
-								
-							}
 							//UNDEFINED ATTRIBUTE
 							if
 							(
@@ -13589,18 +13569,14 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 								EntityButtonFilterBlockError::add_error_button_to_error_list
 								(
-									new ERegionGabarite(300.0f, 22.0f),
+									new ERegionGabarite(300.0f, 30.0f),
 									jc_filter_block,
 									ltext
 								);
 
-
-
-								if (!comment_mode) { EInputCore::logger_param_with_warning("UNREGISTERED attribure!", buffer_text); }
+								EInputCore::logger_param_with_warning("UNREGISTERED attribure!", buffer_text);
 
 								registered_group_filter_error_list->activate_move_to_foreground_and_center();
-
-
 							}
 
 							if
@@ -13631,7 +13607,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 								if (jc_filter_block != nullptr)
 								{
-									whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+									whole_filter_block = (EButtonGroupFilterBlock*)(jc_filter_block);
 								}
 
 								//EInputCore::logger_param("found registered attribure", buffer_text);
@@ -13652,21 +13628,21 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 								if (matched_item_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_COSMETIC)
 								{
-									if (whole_block_container != nullptr)
+									if (whole_filter_block != nullptr)
 									{
 										for (int b = 0; b < 3; b++)
 										{
-											if (whole_block_container->pointer_to_color_button[b]->main_text_area->localisation_text.base_name == matched_item_attribute->localisation.base_name)
+											if (whole_filter_block->pointer_to_color_button[b]->main_text_area->localisation_text.base_name == matched_item_attribute->localisation.base_name)
 											{
 												//matched_button = whole_block_container->pointer_to_color_button[b];
-												target_HRA_color = whole_block_container->pointer_to_color_button[b]->stored_color;
-												target_color_bool = &whole_block_container->color_check[b];
+												target_HRA_color = whole_filter_block->pointer_to_color_button[b]->stored_color;
+												target_color_bool = &whole_filter_block->color_check[b];
 											}
 										}
 
 										if ((matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON) && (!comment_mode))
 										{
-											whole_block_container->minimap_icon_color_suppressor_bool = true;
+											whole_filter_block->minimap_icon_color_suppressor_bool = true;
 										}
 									}
 
@@ -13678,39 +13654,39 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 
 									//		ATTRIBUTES WITHOUT PARAMETERS
-									if ((!comment_mode) && (whole_block_container != nullptr))
+									if ((!comment_mode) && (whole_filter_block != nullptr))
 									{
 										//disable/enable varian router button
 										int disable_sound_router_id = -1;
-										disable_sound_router_id = whole_block_container->pointer_to_disable_enable_drop_sound->seach_id_by_base_name(matched_item_attribute->localisation.base_name);
-										if (disable_sound_router_id >= 0) { whole_block_container->pointer_to_disable_enable_drop_sound->select_variant(disable_sound_router_id); }
+										disable_sound_router_id = whole_filter_block->pointer_to_disable_enable_drop_sound->seach_id_by_base_name(matched_item_attribute->localisation.base_name);
+										if (disable_sound_router_id >= 0) { whole_filter_block->pointer_to_disable_enable_drop_sound->select_variant(disable_sound_router_id); }
 
 										if (matched_item_attribute->localisation.base_name == "PlayAlertSoundPositional")
 										{
-											whole_block_container->pointer_to_positional_variant_button->select_variant(1);
+											whole_filter_block->pointer_to_positional_variant_button->select_variant(1);
 										}
 										else
 											if (matched_item_attribute->localisation.base_name == "PlayAlertSound")
 											{
-												whole_block_container->pointer_to_positional_variant_button->select_variant(0);
+												whole_filter_block->pointer_to_positional_variant_button->select_variant(0);
 											}
 											else
 												if (matched_item_attribute->localisation.base_name == "CustomAlertSoundOptional")
 												{
-													whole_block_container->pointer_to_optional_user_sound->select_variant(1);
+													whole_filter_block->pointer_to_optional_user_sound->select_variant(1);
 												}
 									}
 
-									if (whole_block_container != nullptr)
+									if (whole_filter_block != nullptr)
 									{
 										if ((matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RAY) && (!comment_mode))
 										{
-											whole_block_container->ray_suppressor = true;
+											whole_filter_block->ray_suppressor = true;
 										}
 
 										if ((matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_CONTINUE) && (!comment_mode))
 										{
-											whole_block_container->button_continue->select_variant(0);
+											whole_filter_block->button_continue->select_variant(0);
 										}
 									}
 									//target_HRA_color = ((EDataContainer_Button_StoreColor*)(Entity::get_last_custom_data(whole_block_container->pointer_to_color_button[0])->data_container))->stored_color;
@@ -13758,91 +13734,86 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 					}
 
 					//condition operator
+					//set condition to last created block
 					if (data_part == DataOrderNames::CONDITION_OPERATOR)
 					{
-						if (!comment_mode)
-						{
-							//undefined attributes have no condition operator
-							if (matched_item_attribute == nullptr)
-							{
-								data_part = DataOrderNames::VALUE;
-							}
 
-							if ((matched_item_attribute != nullptr) && (matched_item_attribute->filter_attribute_type == FILTER_ATTRIBUTE_TYPE_LISTED))
-							{
-								if (jc_filter_block != nullptr)
-								{
-									whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
-								}
-
-								if (whole_block_container != nullptr)
-								{
-									listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(whole_block_container->pointer_to_listed_segment->group_list.back()->data_container);
-								}
-
-								//EXACT MATCH
-								if (buffer_text == "==")
-								{
-									listed_container->match_mode_router_button->select_variant(1);
-								}
-
-
-
-							}
-
-
-
-							if (text_is_condition(buffer_text))
-							{
-								condition_text = buffer_text;
-
-								if ((last_non_listed_line != nullptr) && (last_non_listed_line->target_button_with_condition != nullptr))
-								{
-									//last_non_listed_line->target_button_with_condition->main_text_area->change_text(condition_text);
-									last_non_listed_line->target_button_with_condition->select_variant_by_base_name(condition_text);
-								}
-
-							}
-							else
-							{
-								condition_text = "";
-								data_part = DataOrderNames::VALUE;
-
-								//auto add '=' operator
-								if
-									(
-										(last_non_listed_line != nullptr)
-										&&
-										(last_non_listed_line->target_button_with_condition != nullptr)
-										&&
-										(matched_item_attribute != nullptr)
-										&&
-										(matched_item_attribute->have_operator)
-										)
-								{
-									//last_non_listed_line->target_button_with_condition->main_text_area->change_text("=");
-									std::string sss = "=";
-									last_non_listed_line->target_button_with_condition->select_variant_by_base_name(sss);
-								}
-							}
-
-							//CONDITION OPERATOR FOR EXPLICIT
-							std::string f_sym = std::string(buffer_text.substr(0, 1));
-							//EInputCore::logger_param("buffer_text", buffer_text);
-							//EInputCore::logger_param("f_sym", f_sym);
-
-
-							if ((matched_item_attribute != nullptr) && (matched_item_attribute->have_input_field_for_listed) && (text_is_condition(f_sym)))
-							{
-								listed_container->input_field->main_text_area->change_text(buffer_text);
-								data_part = DataOrderNames::CONDITION_OPERATOR;
-							}
-
-						}
-						else
+						//undefined attributes have no condition operator
+						if (matched_item_attribute == nullptr)
 						{
 							data_part = DataOrderNames::VALUE;
 						}
+						else
+						{
+							//if attribute can have operator or exact match, read buffer as operator
+							if ((matched_item_attribute->have_exact_match) || (matched_item_attribute->have_operator))
+							{
+								//LISTED		for listed attributes, "==" mean "exact match"
+								if (matched_item_attribute->filter_attribute_type == FILTER_ATTRIBUTE_TYPE_LISTED)
+								{
+									if (jc_filter_block != nullptr)
+									{whole_filter_block = jc_filter_block;}
+
+									if (whole_filter_block != nullptr)
+									{listed_block = (EButtonGroupListedBlock*)(whole_filter_block->pointer_to_listed_segment_in_filter_block->group_list.back());}
+
+									//EXACT MATCH
+									if (buffer_text == "==")//select variant "exact match"
+									{
+										listed_block->matching_mode_router_button->select_variant(1);
+									}
+									else//CONDITION OPERATOR FOR EXPLICIT
+									{
+										//input field for Explicit modfiers like ">= 1"
+										if (matched_item_attribute->have_input_field_for_listed)
+										{
+											listed_block->input_field->main_text_area->change_text(buffer_text);
+											data_part = DataOrderNames::CONDITION_OPERATOR;
+										}
+										else//not exact match, not input field, so, it wide item
+										{
+											data_part = DataOrderNames::VALUE;
+										}
+									}
+								}
+								else
+									//NON-LISTED	for non-listed attributes, set operator
+									if ((matched_item_attribute->filter_attribute_type == FILTER_ATTRIBUTE_TYPE_NON_LISTED) && (matched_item_attribute->have_operator))
+									{
+										//condition operator can be omitted. for example, "ItemLvel 5" mean "ItemLevel = 5"
+										//select suitable condition variant for route button
+										//if text is condition, do something
+
+										std::string f_sym = std::string(buffer_text.substr(0, 1));
+
+										if
+										(
+											(last_non_listed_line != nullptr)
+											&&
+											(last_non_listed_line->target_button_with_condition != nullptr)
+										)
+										{
+											if (text_is_condition(f_sym))
+											{condition_text = buffer_text;}
+											else
+											{condition_text = "=";}
+
+											last_non_listed_line->target_button_with_condition->select_variant_by_base_name(condition_text);
+										}
+									}
+									else
+									//other attributes cannot have operator, buffer is value
+									{
+										data_part = DataOrderNames::VALUE;
+									}
+							}
+							else//set VALUE mode. for non-listed, if attribute can have operator, set default "=" operator
+							{
+								condition_text = "";
+								data_part = DataOrderNames::VALUE;
+							}
+						}
+
 					}
 
 					//values
@@ -13853,21 +13824,22 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 						//value_array_id++;
 
+						//UNDEFINED ATTRIBUTE VALUES. undefined attributes always sent to listed group
 						if (matched_item_attribute == nullptr)
 						{
 							if (!comment_mode)
 							{
 								if (jc_filter_block != nullptr)
-								{whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);}
+								{whole_filter_block = (EButtonGroupFilterBlock*)(jc_filter_block);}
 
-								if (whole_block_container != nullptr)
-								{listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(whole_block_container->pointer_to_listed_segment->group_list.back()->data_container);}
+								if (whole_filter_block != nullptr)
+								{listed_block = (EButtonGroupListedBlock*)(whole_filter_block->pointer_to_listed_segment_in_filter_block->group_list.back());}
 
 								EntityButtonWideItem*
 								wide_button = EntityButtonWideItem::create_wide_item_button
 								(
 									new ERegionGabarite(100.0f, 40.0f),
-									((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons,
+									listed_block->section_for_wide_item_buttons,
 									nullptr,
 									EFont::font_list[0],
 									true
@@ -13878,39 +13850,41 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								wide_button->main_text_area->change_text(buffer_text);
 
 								//wide_button->can_be_stretched = true;
-								((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons->add_button_to_working_group(wide_button);
+								listed_block->section_for_wide_item_buttons->add_button_to_working_group(wide_button);
 							}
 						}
 
+
+						//non-undefined attribute, set value
 						if (matched_item_attribute != nullptr)
 						{
-
-
 							if ((matched_item_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_NON_LISTED) && (!comment_mode))
 							{
 								if
-									(
-										(last_non_listed_line != nullptr)
-										&&
-										(matched_item_attribute != nullptr)
-										)
+								(
+									(last_non_listed_line != nullptr)
+									&&
+									(matched_item_attribute != nullptr)
+								)
 								{
+									//
+									//number
 									if
+									(
 										(
-											(
-												(matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
-												||
-												(matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
-												)
-											&&
-											(last_non_listed_line->target_button_with_value->main_text_area != nullptr)
-											)
-									{
-										last_non_listed_line->target_button_with_value->main_text_area->change_text(buffer_text);
-									}
+											(matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_NUMBER)
+											||
+											(matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_COLOURS_TEXT)
+										)
+										&&
+										(last_non_listed_line->target_button_with_value->main_text_area != nullptr)
+									)
+									{last_non_listed_line->target_button_with_value->main_text_area->change_text(buffer_text);}
 
-									if
-										(matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
+
+									//
+									//bool switcher
+									if (matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_BOOL_SWITCHER)
 									{
 										if (EStringUtils::to_lower(buffer_text) == "true")
 										{
@@ -13923,15 +13897,14 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 									}
 
-									if
-										(matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
+									//rarity
+									if(matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RARITY_LIST)
 									{
-
 										last_non_listed_line->rarity_router_button->select_variant_by_base_name(buffer_text);
 									}
 
-									if
-										(matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
+									//quality
+									if (matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_QUALITY_LIST)
 									{
 										for (RouterVariant* qv : registered_alternate_gem_quality_router_variants)
 										{
@@ -13953,15 +13926,15 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							{
 								if (jc_filter_block != nullptr)
 								{
-									whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+									whole_filter_block = (EButtonGroupFilterBlock*)(jc_filter_block);
 								}
 
-								if (whole_block_container != nullptr)
+								if (whole_filter_block != nullptr)
 								{
-									listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(whole_block_container->pointer_to_listed_segment->group_list.back()->data_container);
+									listed_block = (EButtonGroupListedBlock*)(whole_filter_block->pointer_to_listed_segment_in_filter_block->group_list.back());
 								}
 
-								EFilterRule* filter_rule = listed_container->data_container_with_filter_rule->filter_rule;
+								EFilterRule* filter_rule = listed_block->data_container_with_filter_rule->filter_rule;
 								std::string data_type_text = filter_rule->focused_by_data_type;
 
 								std::vector<EDataEntity*>* target_data_entity_list = &EDataEntity::data_entity_global_list;
@@ -14012,13 +13985,13 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									wide_button = EntityButtonWideItem::create_wide_item_button
 									(
 										new ERegionGabarite(220.0f, 40.0f),
-										((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons,
+										listed_block->section_for_wide_item_buttons,
 										matched_data_entity,
 										EFont::font_list[0],
 										true
 									);
 									//wide_button->can_be_stretched = true;
-									((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons->add_button_to_working_group(wide_button);
+									listed_block->section_for_wide_item_buttons->add_button_to_working_group(wide_button);
 
 								}
 								else
@@ -14026,13 +13999,13 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									EntityButtonWideItem* wide_button = EntityButtonWideItem::create_wide_item_button
 									(
 										new ERegionGabarite(220.0f, 40.0f),
-										((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons,
+										listed_block->section_for_wide_item_buttons,
 										nullptr,
 										EFont::font_list[0],
 										true
 									);
 
-									((EDataContainer_Group_FilterBlockListedSegment*)listed_container)->group_with_listed_buttons->add_button_to_working_group(wide_button);
+									listed_block->section_for_wide_item_buttons->add_button_to_working_group(wide_button);
 
 									ELocalisationText l_text;
 									l_text.base_name = buffer_text;
@@ -14049,22 +14022,22 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							{
 								if (jc_filter_block != nullptr)
 								{
-									whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+									whole_filter_block = (EButtonGroupFilterBlock*)(jc_filter_block);
 								}
 
 								//EInputCore::logger_simple_info("Cosmetic");
 
 								//		FONT SIZE
-								//EInputCore::logger_param("buffer text is", buffer_text);
-								if ((matched_item_attribute->localisation.base_name == "SetFontSize") && (whole_block_container != nullptr))
+								//EInputCore::logger_param("Cosmetic, buffer text is", buffer_text);
+								if ((matched_item_attribute->localisation.base_name == "SetFontSize") && (whole_filter_block != nullptr))
 								{
 
-									whole_block_container->text_size = (std::stoi(buffer_text) - 18) / 27.0f;
+									whole_filter_block->text_size = (std::stoi(buffer_text) - 18) / 27.0f;
 
-									whole_block_container->text_size = max(whole_block_container->text_size, 0.0f);
-									whole_block_container->text_size = min(whole_block_container->text_size, 1.0f);
+									whole_filter_block->text_size = max(whole_filter_block->text_size, 0.0f);
+									whole_filter_block->text_size = min(whole_filter_block->text_size, 1.0f);
 
-									whole_block_container->text_size_bool = true;
+									whole_filter_block->text_size_bool = true;
 									//d_container->
 								}
 
@@ -14109,11 +14082,11 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								}
 
 								//		MINIMAP ICON
-								if ((matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON) && (whole_block_container != nullptr))
+								if ((matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_MINIMAP_ICON) && (whole_filter_block != nullptr))
 								{
-									EntityButtonVariantRouter* router_button_size = whole_block_container->pointer_to_minimap_icon_size_router;
-									EntityButtonVariantRouter* router_button_color = whole_block_container->pointer_to_minimap_icon_color_router;
-									EntityButtonVariantRouter* router_button_shape = whole_block_container->pointer_to_minimap_icon_shape_router;
+									EntityButtonVariantRouter* router_button_size = whole_filter_block->pointer_to_minimap_icon_size_router;
+									EntityButtonVariantRouter* router_button_color = whole_filter_block->pointer_to_minimap_icon_color_router;
+									EntityButtonVariantRouter* router_button_shape = whole_filter_block->pointer_to_minimap_icon_shape_router;
 
 									//SIZE OR DISABLE
 									if (data_part == 2)
@@ -14124,7 +14097,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										}
 										else
 										{
-											whole_block_container->pointer_to_forcibly_disable_minimap_icon_variant_button->select_variant(1);
+											whole_filter_block->pointer_to_forcibly_disable_minimap_icon_variant_button->select_variant(1);
 										}
 									}
 
@@ -14162,10 +14135,10 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 											//EInputCore::logger_param_with_warning("undefined sound", buffer_text);
 										}
 
-										if (whole_block_container != nullptr)
+										if (whole_filter_block != nullptr)
 										{
-											whole_block_container->pointer_to_custom_sound_button->stored_named_sound = matched_named_sound;
-											if (!comment_mode) { whole_block_container->custom_sound_suppressor_bool = true; }
+											whole_filter_block->pointer_to_custom_sound_button->stored_named_sound = matched_named_sound;
+											if (!comment_mode) { whole_filter_block->custom_sound_suppressor_bool = true; }
 										}
 									}
 								}
@@ -14184,12 +14157,12 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 											if (named_sound->localisation_text.base_name == buffer_text)
 											{matched_named_sound = named_sound;}
 
-											if (whole_block_container != nullptr)
+											if (whole_filter_block != nullptr)
 											{
-												whole_block_container->pointer_to_game_sound_button->stored_named_sound = matched_named_sound;
-												if (!comment_mode) { whole_block_container->game_sound_suppressor_bool = true; }
+												whole_filter_block->pointer_to_game_sound_button->stored_named_sound = matched_named_sound;
+												if (!comment_mode) { whole_filter_block->game_sound_suppressor_bool = true; }
 
-												whole_block_container->pointer_to_forcibly_disable_sound_variant_button->select_variant(0);
+												whole_filter_block->pointer_to_forcibly_disable_sound_variant_button->select_variant(0);
 											}
 
 										
@@ -14197,9 +14170,9 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										else
 										{
 											if (!comment_mode)
-											{whole_block_container->pointer_to_forcibly_disable_sound_variant_button->select_variant(1);}
+											{whole_filter_block->pointer_to_forcibly_disable_sound_variant_button->select_variant(1);}
 											else
-											{whole_block_container->pointer_to_forcibly_disable_sound_variant_button->select_variant(0);}
+											{whole_filter_block->pointer_to_forcibly_disable_sound_variant_button->select_variant(0);}
 										}
 
 										//if (matched_named_sound == nullptr)
@@ -14211,23 +14184,23 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 									}
 									else
-										if ((data_part == 3) && (whole_block_container != nullptr))
+										if ((data_part == 3) && (whole_filter_block != nullptr))
 										{
 											float
 												value = std::stoi(buffer_text) / 300.0f;
 											value = max(value, 0.0f);
 											value = min(value, 1.0f);
 
-											whole_block_container->sound_volume_value = value;
+											whole_filter_block->sound_volume_value = value;
 										}
 
 
 								}
 
 								//		RAY
-								if ((matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RAY) && (!comment_mode) && (whole_block_container != nullptr))
+								if ((matched_item_attribute->filter_attribute_value_type == FILTER_ATTRIBUTE_VALUE_TYPE_RAY) && (!comment_mode) && (whole_filter_block != nullptr))
 								{
-									EntityButtonVariantRouter* ray_router = whole_block_container->pointer_to_ray_color_router;
+									EntityButtonVariantRouter* ray_router = whole_filter_block->pointer_to_ray_color_router;
 
 									if (data_part == 2)
 									{
@@ -14236,7 +14209,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 									if ((data_part == 3) && (buffer_text == "Temp"))
 									{
-										whole_block_container->pointer_to_temporary_option_router->select_variant(1);
+										whole_filter_block->pointer_to_temporary_option_router->select_variant(1);
 									}
 								}
 
@@ -14252,19 +14225,19 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 							{
 								if (jc_filter_block != nullptr)
 								{
-									whole_block_container = (EButtonGroupFilterBlock*)(jc_filter_block);
+									whole_filter_block = (EButtonGroupFilterBlock*)(jc_filter_block);
 								}
 								switch (matched_item_attribute->filter_attribute_value_type)
 								{
 									case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_CONFIG_VERSIONS:
 									{
-										if (whole_block_container != nullptr)
+										if (whole_filter_block != nullptr)
 										{
 											int
 												router_id = data_part - 2;
 
 											EntityButtonVariantRouterForFilterBlock*
-												target_router = whole_block_container->version_routers[router_id];
+												target_router = whole_filter_block->version_routers[router_id];
 
 											//EInputCore::logger_param("buffer text", buffer_text);
 											//EInputCore::logger_param("router ID", router_id);
@@ -14277,13 +14250,13 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 									case FilterAttributeValueType::FILTER_ATTRIBUTE_VALUE_OLD_VERSION_AUTOGEN:
 									{
-										if (whole_block_container != nullptr)
+										if (whole_filter_block != nullptr)
 										{
 											int
 												router_id = data_part - 2;
 
 											EntityButtonVariantRouterForFilterBlock*
-												target_router = whole_block_container->version_routers[router_id];
+												target_router = whole_filter_block->version_routers[router_id];
 
 											if (buffer_text == "true") { target_router->select_variant(3); }
 											else
@@ -14401,11 +14374,12 @@ bool EWindowMain::filter_block_contains_this_text(EButtonGroupFilterBlock* _targ
 	{
 
 		//if (_target_filter_block->pointer_to_listed_segment->group_list.empty()) { any_match = true; }
-		for (EButtonGroup* listed_block : _target_filter_block->pointer_to_listed_segment->group_list)
+		for (EButtonGroup* button_group : _target_filter_block->pointer_to_listed_segment_in_filter_block->group_list)
 		{
 			//listed_match = false;
 
-			auto listed_container = (EDataContainer_Group_FilterBlockListedSegment*)(listed_block->data_container);
+			EButtonGroupListedBlock*
+			listed_block = (EButtonGroupListedBlock*)(button_group->data_container);
 
 			//if
 			//(
@@ -14418,7 +14392,7 @@ bool EWindowMain::filter_block_contains_this_text(EButtonGroupFilterBlock* _targ
 			//	any_match = true;
 			//}
 
-			for (EntityButton* wide_button : listed_container->group_with_listed_buttons->workspace_button_list)
+			for (EntityButton* wide_button : listed_block->section_for_wide_item_buttons->workspace_button_list)
 				if (wide_button->main_text_area != nullptr)
 				{
 					if
@@ -14428,12 +14402,20 @@ bool EWindowMain::filter_block_contains_this_text(EButtonGroupFilterBlock* _targ
 							(EStringUtils::A_contains_B_ignore_case(wide_button->main_text_area->localisation_text.localisations[NSW_localisation_EN], *_text))
 							||
 							(EStringUtils::A_contains_B_ignore_case(wide_button->main_text_area->localisation_text.localisations[NSW_localisation_RU], *_text))
-							)
+						)
 					{
 						any_match = true;
 						break;
 					}
 				}
+
+		}
+
+		for (EButtonGroup* button_group : _target_filter_block->pointer_to_non_listed_segment->group_list)
+		{
+			EButtonGroupNonListedLine*
+			non_listed_block = (EButtonGroupNonListedLine*)(button_group->data_container);
+
 
 		}
 	}
@@ -22368,7 +22350,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 
 		if (_game_item_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED)
 		{
-			target_group_for_content = whole_filter_block_data->pointer_to_listed_segment;
+			target_group_for_content = whole_filter_block_data->pointer_to_listed_segment_in_filter_block;
 
 			EButtonGroup*
 				listed_condition_group_container = create_block_for_listed_segment
@@ -22392,10 +22374,10 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 			nullptr,
 			_game_item_attribute,
 			_undefined_attribute_text,
-			whole_filter_block_data->pointer_to_listed_segment
+			whole_filter_block_data->pointer_to_listed_segment_in_filter_block
 		);
 
-		whole_filter_block_data->pointer_to_listed_segment->need_change = true;
+		whole_filter_block_data->pointer_to_listed_segment_in_filter_block->need_change = true;
 	}
 
 	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
@@ -22538,9 +22520,9 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 
 
 
-		EButtonGroup* non_listed_section = whole_block_data->pointer_to_non_listed_segment;
-		EButtonGroup* listed_section = whole_block_data->pointer_to_listed_segment;
-		EButtonGroup* cosmetic_section = whole_block_data->pointer_to_cosmetic_segment;
+		EButtonGroup* non_listed_section	= whole_block_data->pointer_to_non_listed_segment;
+		EButtonGroup* listed_section		= whole_block_data->pointer_to_listed_segment_in_filter_block;
+		EButtonGroup* cosmetic_section		= whole_block_data->pointer_to_cosmetic_segment;
 
 		//NON-LISTED
 		for (EButtonGroup* n_listed : non_listed_section->group_list)
@@ -22607,25 +22589,25 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 		}
 
 		//LISTED
-		for (EButtonGroup* listed : listed_section->group_list)
+		for (EButtonGroup* button_group : listed_section->group_list)
 		{
-			auto container = static_cast<EDataContainer_Group_FilterBlockListedSegment*>(listed->data_container);
+			auto listed_block = static_cast<EButtonGroupListedBlock*>(button_group);
 
-
-			if ((container != nullptr) && (container->group_with_listed_buttons->all_button_list.size() > 1))
+			//if attribute have no values, no sence generate this filter condition
+			if ((listed_block != nullptr) && (listed_block->section_for_wide_item_buttons->all_button_list.size() > 1))
 			{
-				result_string += '\t' + container->filter_attribute_name;
+				result_string += '\t' + listed_block->filter_attribute_name;
 
-				if ((container->match_mode_router_button != nullptr) && (container->match_mode_router_button->selected_variant == 1))
+				if ((listed_block->matching_mode_router_button != nullptr) && (listed_block->matching_mode_router_button->selected_variant == 1))
 				{
 					result_string += " ==";
 				}
 
-				if ((container->input_field != nullptr))
+				if ((listed_block->input_field != nullptr))
 				{
-					if (container->input_field->main_text_area->original_text != "")
+					if (listed_block->input_field->main_text_area->original_text != "")
 					{
-						result_string += " " + container->input_field->main_text_area->original_text;
+						result_string += " " + listed_block->input_field->main_text_area->original_text;
 					}
 					else
 					{
@@ -22636,12 +22618,12 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 
 				int id = 0;
 
-				for (EntityButton* listed_button : container->group_with_listed_buttons->workspace_button_list)
+				for (EntityButton* listed_button : listed_block->section_for_wide_item_buttons->workspace_button_list)
 				{
 
 					if (listed_button->main_text_area != nullptr)
 					{
-						if (container->associated_item_attribute != nullptr)
+						if (listed_block->associated_item_attribute != nullptr)
 						{
 							result_string += " ";
 							result_string += '"' + listed_button->main_text_area->localisation_text.base_name + '"';
@@ -22968,8 +22950,8 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 		line_height += 30;
 	}
 
-	EButtonGroup*
-	whole_listed_line = new EButtonGroup(new ERegionGabarite(800.0f, line_height));
+	EButtonGroupListedBlock*
+	whole_listed_line = new EButtonGroupListedBlock(new ERegionGabarite(800.0f, line_height));
 	whole_listed_line->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 
 
@@ -22996,13 +22978,13 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 	}
 
 	//data container, store pointer to group with listed buttons
-	auto d_container = new EDataContainer_Group_FilterBlockListedSegment();
+	//auto d_container = new EDataContainer_Group_FilterBlockListedSegment();
 
 
-	d_container->filter_attribute_name = _attribute_name;
-	d_container->associated_item_attribute = _attribute;
+	whole_listed_line->filter_attribute_name = _attribute_name;
+	whole_listed_line->associated_item_attribute = _attribute;
 
-	whole_listed_line->data_container = d_container;
+	//whole_listed_line->data_container = d_container;
 
 	_parent->add_group(whole_listed_line);
 
@@ -23105,7 +23087,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 
 		EntityButton::get_last_custom_data(small_button)->data_container = data_store_filter_rule;
 
-		d_container->data_container_with_filter_rule = data_store_filter_rule;
+		whole_listed_line->data_container_with_filter_rule = data_store_filter_rule;
 
 		group_bottom_side_for_add->add_button_to_working_group(small_button);
 		////////////////////////
@@ -23114,12 +23096,12 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 		if (_attribute->have_exact_match)
 		{
 			EntityButtonVariantRouterForFilterBlock*
-				button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
+			button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
 			group_bottom_side_for_add->add_button_to_working_group(button_variant_FB_router);
 			button_variant_FB_router->make_as_default_router_variant_button(new ERegionGabarite(170.0f, 24.0f));
 			button_variant_FB_router->parent_filter_block = static_cast<EButtonGroupFilterBlock*>(_parent);
 
-			d_container->match_mode_router_button = button_variant_FB_router;
+			whole_listed_line->matching_mode_router_button = button_variant_FB_router;
 
 			//	0
 			/*************************************************************************************/
@@ -23186,7 +23168,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 				nullptr,
 				""
 			);
-			d_container->input_field = input_field;
+			whole_listed_line->input_field = input_field;
 
 			ELocalisationText ltext = ELocalisationText();
 			ltext.localisations[NSW_localisation_EN] = "condition";
@@ -23307,7 +23289,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 	}
 
 
-	d_container->group_with_listed_buttons = listed_group_main_section;
+	whole_listed_line->section_for_wide_item_buttons = listed_group_main_section;
 	////////////////////////
 
 	////////////////////////
@@ -23627,10 +23609,26 @@ void EButtonGroupFilterBlock::clear_non_listed_segment()
 
 void EButtonGroupFilterBlock::clear_listed_segment()
 {
-	for (EButtonGroup* listed_line : pointer_to_listed_segment->group_list)
+	for (EButtonGroup* listed_line : pointer_to_listed_segment_in_filter_block->group_list)
 	{
 		listed_line->filter_block_need_remove = true;
 	}
+}
+
+GameItemAttribute* EButtonGroupFilterBlock::get_suitable_game_item_attribute(std::string _name)
+{
+	for (int i = 0; i < registered_game_item_attributes.size(); i++)
+	{
+		GameItemAttribute*
+		attribute = registered_game_item_attributes[i];
+
+		if (EStringUtils::compare_ignoring_case(_name, attribute->localisation.base_name))
+		{
+			return attribute;
+		}
+	}
+
+	return nullptr;
 }
 
 void EButtonGroupFilterBlock::post_draw()
@@ -25720,9 +25718,9 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 		}
 
 		//		LISTED
-		for (EButtonGroup* listed_lines : _filter_block->pointer_to_listed_segment->group_list)
+		for (EButtonGroup* button_group : _filter_block->pointer_to_listed_segment_in_filter_block->group_list)
 		{
-			auto block_data_container = static_cast<EDataContainer_Group_FilterBlockListedSegment*>(listed_lines->data_container);
+			EButtonGroupListedBlock* listed_block = static_cast<EButtonGroupListedBlock*>(button_group);
 
 			bool this_listed_match = false;
 
@@ -25737,7 +25735,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 							EStringUtils::compare_ignoring_case
 							(
 								item_attribute.target_attribute->localisation.base_name,	//item
-								block_data_container->filter_attribute_name					//block
+								listed_block->filter_attribute_name							//block
 							)
 							||
 							(false)
@@ -25750,13 +25748,13 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 					//any_listed_match = true;
 
 					//		FOR EVERY BLOCK ITEM
-					for (EntityButton* block_button : block_data_container->group_with_listed_buttons->workspace_button_list)
+					for (EntityButton* block_wide_item_button : listed_block->section_for_wide_item_buttons->workspace_button_list)
 						for (ELocalisationText item_listed_value : item_attribute.listed_value_list)
 						{
 							std::string button_attribute_name = "";
 
 							EDataContainer_DataEntityHolder*
-								data_container_entity = static_cast<EDataContainer_DataEntityHolder*>(block_button->main_custom_data->data_container);
+							data_container_entity = static_cast<EDataContainer_DataEntityHolder*>(block_wide_item_button->main_custom_data->data_container);
 
 
 							//		GET ITEM NAME (FROM FILTER BLOCK)
@@ -25771,16 +25769,16 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 							}
 							else
 							{
-								button_attribute_name = block_button->main_text_area->original_text;
+								button_attribute_name = block_wide_item_button->main_text_area->original_text;
 							}
 
 							if
 							(
 								//		PATRIALLY MATCH
 								(
-									(block_data_container->match_mode_router_button != nullptr)
+									(listed_block->matching_mode_router_button != nullptr)
 									&&
-									(block_data_container->match_mode_router_button->selected_variant == 0)
+									(listed_block->matching_mode_router_button->selected_variant == 0)
 									&&
 									EStringUtils::A_contains_B_ignore_case
 									(
@@ -25792,9 +25790,9 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 								//		EXACT MATCH
 								(
 									(
-										(block_data_container->match_mode_router_button == nullptr)
+										(listed_block->matching_mode_router_button == nullptr)
 										||
-										(block_data_container->match_mode_router_button->selected_variant == 1)
+										(listed_block->matching_mode_router_button->selected_variant == 1)
 									)
 									&&
 									(
@@ -25810,10 +25808,10 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 								listed_match_count++;
 
 								//if (item_attribute.target_attribute->localisation.base_name == "")
-								_loot_button->suitable_buttons_list.push_back(block_button);
+								_loot_button->suitable_buttons_list.push_back(block_wide_item_button);
 
 
-								if (!block_data_container->associated_item_attribute->have_input_field_for_listed)
+								if (!listed_block->associated_item_attribute->have_input_field_for_listed)
 								{
 									this_listed_match = true;
 									break;
@@ -25824,11 +25822,11 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 
 						}
 
-					if ((block_data_container->associated_item_attribute->have_input_field_for_listed) && (block_data_container->input_field != nullptr))
+					if ((listed_block->associated_item_attribute->have_input_field_for_listed) && (listed_block->input_field != nullptr))
 					{
 						std::string input_field_value = ">=1";
 
-						if (block_data_container->input_field->main_text_area->original_text != "") { input_field_value = block_data_container->input_field->main_text_area->original_text; }
+						if (listed_block->input_field->main_text_area->original_text != "") { input_field_value = listed_block->input_field->main_text_area->original_text; }
 
 						if (!is_condition_sactified_for_listed_expression(input_field_value, listed_match_count))
 						{
