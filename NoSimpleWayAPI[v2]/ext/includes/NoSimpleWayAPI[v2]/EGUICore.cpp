@@ -2546,6 +2546,8 @@ void EButtonGroup::recursive_change_group_first_pass(EButtonGroup* _group)
 	int style_id = _group->brick_style_id;
 	if (_group->fake_borders_id >= 0) { style_id = _group->fake_borders_id; }
 
+
+	//set boredr offset
 	if ((style_id >= 0) && (_group->group_have_background))
 	{
 		_group->group_border_texture_left = _group->selected_style->brick_style[style_id].border_texture_size_left;
@@ -2570,8 +2572,9 @@ void EButtonGroup::recursive_change_group_first_pass(EButtonGroup* _group)
 
 		_group->button_group_prechange();
 
-		_group->highest_point_y_for_groups = _group->group_offset_for_content_bottom;
-		_group->highest_point_y_for_buttons = _group->group_offset_for_content_bottom;
+		//base highest point y
+		_group->highest_point_y_for_groups	= _group->group_offset_for_content_bottom;
+		_group->highest_point_y_for_buttons	= _group->group_offset_for_content_bottom;
 		//stretch child to parent size
 
 		_group->recursive_group_stretch_childs_y();
@@ -2593,21 +2596,21 @@ void EButtonGroup::recursive_change_group_first_pass(EButtonGroup* _group)
 		
 		//previvous calculation out of date, recalculate
 		bool slider_appear = _group->check_slider();
-		if (slider_appear)
-		{
-			_group->recursive_group_stretch_childs_y();
-			_group->highest_point_y_for_groups = _group->get_highest_point_y_for_groups();
+		//if (slider_appear)
+		//{
+		//	_group->recursive_group_stretch_childs_y();
+		//	_group->highest_point_y_for_groups = _group->get_highest_point_y_for_groups();
 
-			_group->recursive_group_stretch_childs_x();
+		//	_group->recursive_group_stretch_childs_x();
 
-			for (EButtonGroup* child : _group->group_list)
-			{
-				if (child->can_be_resized_to_highest_point_y)
-				{
-					child->resize_group_to_highest_point_y();
-				}
-			}
-		}
+		//	for (EButtonGroup* child : _group->group_list)
+		//	{
+		//		if (child->can_be_resized_to_highest_point_y)
+		//		{
+		//			child->resize_group_to_highest_point_y();
+		//		}
+		//	}
+		//}
 
 
 		for (EButtonGroup* child : _group->group_list)
@@ -3054,8 +3057,9 @@ void EButtonGroup::resize_group_to_highest_point_y()
 		//highest_point_y_for_buttons = 60.0f;
 
 		//min_size_y				= highest_point_y_for_buttons * 1.0f;
-		//float minimal_size_y = max()
-		region_gabarite->size_y = std::clamp(highest_point_y_for_buttons * 1.0f, min_size_y, max_size_y);
+		float maximal_size_y = max(highest_point_y_for_buttons, highest_point_y_for_groups);
+		
+		region_gabarite->size_y = std::clamp(maximal_size_y * 1.0f, min_size_y, max_size_y);
 		base_height = region_gabarite->size_y;
 	}
 }

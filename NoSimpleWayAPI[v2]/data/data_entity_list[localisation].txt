@@ -872,6 +872,13 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"undefined_attribute"
+	[tag]"name EN"		[value]"Undefined attribute"
+	[tag]"name RU"		[value]"Неизвестный атрибут"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"loot_pattern_folder_crucible"
 	[tag]"name EN"		[value]"Category:\nCrucible"
 	[tag]"name RU"		[value]"Категория:\nГорнило"

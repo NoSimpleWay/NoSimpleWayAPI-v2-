@@ -241,6 +241,15 @@ public:
 	ETextArea* attached_text_area;
 };
 
+class EButtonGroupListedBlock;
+class EntityButtonAttributeTab : public EntityButton
+{
+public:
+	EButtonGroup*				target_listed_block;
+	EButtonGroupListedBlock*	target_whole_listed_block;
+};
+
+
 
 
 //^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//^//
@@ -295,7 +304,11 @@ public:
 	static GameItemAttribute* get_suitable_game_item_attribute(std::string _name);
 
 	EButtonGroup* pointer_to_non_listed_segment;
+
 	EButtonGroup* pointer_to_listed_segment_in_filter_block;
+	EButtonGroup* pointer_to_listed_attributes;
+	EButtonGroup* pointer_to_attribute_tab;
+
 	EButtonGroup* pointer_to_fake_listed_segment_in_filter_block;
 	EButtonGroup* pointer_to_preview_box_segment;
 
@@ -622,6 +635,7 @@ public:
 	//EntityButton*			button_with;
 	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
 	EntityButtonForFilterBlock* input_field;
+	EButtonGroupFilterBlock* parent_filter_block;
 };
 
 //
@@ -735,6 +749,7 @@ namespace EDataActionCollection
 
 	void action_add_new_undefined_attribute(Entity* _entity, ECustomData* _custom_data, float _d);
 
+	void action_select_this_attribute_tag(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text

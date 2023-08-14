@@ -2444,6 +2444,24 @@ void EDataActionCollection::action_add_new_undefined_attribute(Entity* _entity, 
 	but->parent_filter_block->need_change = true;
 }
 
+void EDataActionCollection::action_select_this_attribute_tag(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EntityButton*
+	but = static_cast<EntityButton*>(_entity);
+
+	if (but->parent_button_group != nullptr)
+	{
+		but->parent_button_group->selected_button = but;
+
+		if (but->parent_button_group->root_group != nullptr)
+		{
+			but->parent_button_group->root_group->need_refresh = true;
+		}
+	}
+
+	
+}
+
 
 
 void EDataActionCollection::action_type_search_filter_block_text(ETextArea* _text_area)
@@ -10932,7 +10950,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//WHOLE FILTER BLOCK
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroupFilterBlock*
-	whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 380.0f));
+	whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 280.0f));
 	whole_filter_block_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 	whole_filter_block_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	whole_filter_block_group->debug_name = "Whole filter block";
@@ -11653,7 +11671,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 
 
-	if (false)
+	if (true)
 	{
 		///////////		BUTTON MOVE DOWN		///////////
 		EntityButtonForFilterBlock*
@@ -11786,6 +11804,36 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	workspace_part->add_group(listed_condition_segment);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	if (true)
+	{
+		//ATTRIBUTE TAB
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup*
+			attribute_tab = EButtonGroup::create_default_button_group(new ERegionGabarite(111.0f, 28.0f), EGUIStyle::active_style)
+			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+		attribute_tab->child_align_direction = ChildElementsAlignDirection::BOTTOM_TO_TOP;
+		//listed_condition_segment->button_size_x_override = 200.0f;
+		//root group data ontaner
+		whole_filter_block_group->pointer_to_attribute_tab = attribute_tab;
+
+		listed_condition_segment->add_group(attribute_tab);
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		//SECTION FOR LISTED BLOCKS
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup*
+			section_for_listed_attributes = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(111.0f, 160.0f), EGUIStyle::active_style)
+			->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		section_for_listed_attributes->child_align_direction = ChildElementsAlignDirection::BOTTOM_TO_TOP;
+		//listed_condition_segment->button_size_x_override = 200.0f;
+		//root group data ontaner
+		whole_filter_block_group->pointer_to_listed_attributes = section_for_listed_attributes;
+
+		listed_condition_segment->add_group(section_for_listed_attributes);
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	}
+
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	{
@@ -13840,7 +13888,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									{whole_filter_block = jc_filter_block;}
 
 									if (whole_filter_block != nullptr)
-									{listed_block = (EButtonGroupListedBlock*)(whole_filter_block->pointer_to_listed_segment_in_filter_block->group_list.back());}
+									{listed_block = (EButtonGroupListedBlock*)(whole_filter_block->pointer_to_listed_attributes->group_list.back());}
 
 									//EXACT MATCH
 									if (buffer_text == "==")//select variant "exact match"
@@ -13918,7 +13966,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								{whole_filter_block = (EButtonGroupFilterBlock*)(jc_filter_block);}
 
 								if (whole_filter_block != nullptr)
-								{listed_block = (EButtonGroupListedBlock*)(whole_filter_block->pointer_to_listed_segment_in_filter_block->group_list.back());}
+								{listed_block = (EButtonGroupListedBlock*)(whole_filter_block->pointer_to_listed_attributes->group_list.back());}
 
 								EntityButtonWideItem*
 								wide_button = EntityButtonWideItem::create_wide_item_button
@@ -14016,7 +14064,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 								if (whole_filter_block != nullptr)
 								{
-									listed_block = (EButtonGroupListedBlock*)(whole_filter_block->pointer_to_listed_segment_in_filter_block->group_list.back());
+									listed_block = (EButtonGroupListedBlock*)(whole_filter_block->pointer_to_listed_attributes->group_list.back());
 								}
 
 								EFilterRule* filter_rule = listed_block->data_container_with_filter_rule->filter_rule;
@@ -14459,7 +14507,7 @@ bool EWindowMain::filter_block_contains_this_text(EButtonGroupFilterBlock* _targ
 	{
 
 		//if (_target_filter_block->pointer_to_listed_segment->group_list.empty()) { any_match = true; }
-		for (EButtonGroup* button_group : _target_filter_block->pointer_to_listed_segment_in_filter_block->group_list)
+		for (EButtonGroup* button_group : _target_filter_block->pointer_to_listed_attributes->group_list)
 		{
 			//listed_match = false;
 
@@ -22012,7 +22060,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 	EntityButtonForFilterBlock* jc_button;
 
 	std::string temp_rarity[] = { "Нормальный", "Магический", "Редкий", "Уникальный" };
-	EButtonGroup* target_group_for_content;
+	EButtonGroup* parent_group_for_content;
 
 	HSVRGBAColor rarity_color[4];
 
@@ -22034,6 +22082,9 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 	temp_color.set_color_RGBA(1.0f, 0.5f, 0.250f, 1.0f);
 	rarity_color[3] = temp_color;
 
+	EButtonGroup*
+	listed_condition_group_container = nullptr;
+
 	if (_game_item_attribute != nullptr)
 	{
 		//if selected content is non-listed
@@ -22042,9 +22093,9 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 
 
 			//EInputCore::logger_simple_info("add new non listed button");
-			target_group_for_content = whole_filter_block_data->pointer_to_non_listed_segment;
+			parent_group_for_content = whole_filter_block_data->pointer_to_non_listed_segment;
 
-			target_group_for_content->clickable_area_list.back()->clickable_region_is_active = false;
+			parent_group_for_content->clickable_area_list.back()->clickable_region_is_active = false;
 
 			EButtonGroupNonListedLine*
 			non_listed_line = new EButtonGroupNonListedLine(new ERegionGabarite(20.0f, button_height));
@@ -22435,36 +22486,68 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 
 		if (_game_item_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED)
 		{
-			target_group_for_content = whole_filter_block_data->pointer_to_listed_segment_in_filter_block;
+			parent_group_for_content = whole_filter_block_data->pointer_to_listed_attributes;
 
-			EButtonGroup*
-				listed_condition_group_container = create_block_for_listed_segment
+			listed_condition_group_container = create_block_for_listed_segment
 				(
 					_game_item_attribute->filter_rule,
 					_game_item_attribute,
 					_game_item_attribute->localisation.base_name,
-					target_group_for_content
+					parent_group_for_content
 				);
 
 			//EButtonGroup::change_group(target_group_for_content);
-			target_group_for_content->need_change = true;
+			parent_group_for_content->need_change = true;
 		}
 	}
 	else
 	{
 
-		EButtonGroup*
 		listed_condition_group_container = create_block_for_listed_segment
 		(
 			nullptr,
 			_game_item_attribute,
 			_undefined_attribute_text,
-			whole_filter_block_data->pointer_to_listed_segment_in_filter_block
+			whole_filter_block_data->pointer_to_listed_attributes
 		);
 
 		whole_filter_block_data->pointer_to_listed_segment_in_filter_block->need_change = true;
 	}
 
+	if
+	(
+		(_game_item_attribute == nullptr)
+		||
+		(_game_item_attribute->filter_attribute_type == FilterAttributeType::FILTER_ATTRIBUTE_TYPE_LISTED)
+	)
+	{
+		EntityButtonAttributeTab*
+		tab_button = new EntityButtonAttributeTab();
+		tab_button->make_as_default_button_with_icon_and_text
+		(
+			new ERegionGabarite(160.0f, 28.0f),
+			whole_filter_block_data->pointer_to_attribute_tab,
+			&EDataActionCollection::action_select_this_attribute_tag,
+			(_game_item_attribute != nullptr) ? (_game_item_attribute->icon) : (NS_EGraphicCore::load_from_textures_folder("undefined_item")),
+			(_game_item_attribute != nullptr) ? (_game_item_attribute->localisation.localisations[ELocalisationText::active_localisation]) : ("undefined attribute")
+		); 
+
+		tab_button->target_listed_block = listed_condition_group_container;
+		//tab_button->target_listed_block = listed_condition_group_container;
+
+		if (_game_item_attribute != nullptr)
+		{
+			tab_button->main_text_area->localisation_text = _game_item_attribute->localisation;
+		}
+		else
+		{
+			tab_button->main_text_area->localisation_text = ELocalisationText::get_localisation_by_key("undefined_attribute");
+		}
+
+		whole_filter_block_data->pointer_to_attribute_tab->add_button_to_working_group(tab_button);
+
+
+	}
 	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
 }
 
@@ -22606,7 +22689,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 
 
 		EButtonGroup* non_listed_section	= whole_block_data->pointer_to_non_listed_segment;
-		EButtonGroup* listed_section		= whole_block_data->pointer_to_listed_segment_in_filter_block;
+		EButtonGroup* listed_section		= whole_block_data->pointer_to_listed_attributes;
 		EButtonGroup* cosmetic_section		= whole_block_data->pointer_to_cosmetic_segment;
 
 		//NON-LISTED
@@ -23040,8 +23123,8 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 	EButtonGroupListedBlock*
 	whole_listed_line = new EButtonGroupListedBlock(new ERegionGabarite(800.0f, line_height));
 	whole_listed_line->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
-
-
+	//whole_listed_line->parent_filter_block = static_cast<EButtonGroupFilterBlock*>(_parent);
+	//whole_listed_line->max_size_y = whole_listed_line->parent_filter_block->add_content_to_filter_block_group->base_height;
 	//whole_listed_line->can_be_resized_to_highest_point_y = true;
 	whole_listed_line->can_be_stretched_by_child = true;
 	//whole_listed_line->can_be_resized_to_highest_point_y = true;
@@ -23050,14 +23133,14 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 		(
 			ChildAlignMode::ALIGN_VERTICAL,
 			NSW_dynamic_autosize,
-			NSW_static_autosize
+			NSW_dynamic_autosize
 		);
 
 	whole_listed_line->additional_y_distance = 0.0f;
 
 	if (_filter_rule != nullptr)
 	{
-		whole_listed_line->min_size_y = _filter_rule->min_y_size;
+		whole_listed_line->min_size_y = _filter_rule->min_y_size + 80.0f;
 	}
 	else
 	{
@@ -23348,6 +23431,7 @@ EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameIte
 		);
 	
 	listed_group_main_section->can_be_resized_to_highest_point_y = true;
+	listed_group_main_section->max_size_y = 290.0f;
 	//listed_group_main_section->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
 
 	//listed_group_main_section->have_rama = true;
@@ -23696,7 +23780,7 @@ void EButtonGroupFilterBlock::clear_non_listed_segment()
 
 void EButtonGroupFilterBlock::clear_listed_segment()
 {
-	for (EButtonGroup* listed_line : pointer_to_listed_segment_in_filter_block->group_list)
+	for (EButtonGroup* listed_line : pointer_to_listed_attributes->group_list)
 	{
 		listed_line->filter_block_need_remove = true;
 	}
@@ -24004,7 +24088,7 @@ void EButtonGroupDataEntity::background_update(float _d)
 void EButtonGroupFilterBlockEditor::button_group_prechange()
 {
 	bool								last_separator_state = true;
-	EButtonGroupFilterBlockSeparator* last_separator = nullptr;
+	EButtonGroupFilterBlockSeparator*	last_separator = nullptr;
 
 	for (int i = 0; i < group_list.size(); i++)
 	{
@@ -24015,18 +24099,46 @@ void EButtonGroupFilterBlockEditor::button_group_prechange()
 		{
 			last_separator = dynamic_cast<EButtonGroupFilterBlockSeparator*>(group_list[i]);
 			last_separator_state = last_separator->is_expanded;
+
+
 		}
 		else if (EButtonGroupFilterBlock* block = dynamic_cast<EButtonGroupFilterBlock*>(group_list[i]))
 		{
 
 			filter_block->is_expanded = last_separator_state;
 			filter_block->attached_separator = last_separator;
+
+			if
+			(
+				(filter_block->pointer_to_attribute_tab->selected_button == nullptr)
+				&&
+				(!filter_block->pointer_to_attribute_tab->workspace_button_list.empty())
+			)
+			{
+				filter_block->pointer_to_attribute_tab->selected_button = filter_block->pointer_to_attribute_tab->workspace_button_list.front();
+			}
+
+			if (filter_block->pointer_to_attribute_tab->selected_button != nullptr)
+			for (EntityButton* but : filter_block->pointer_to_attribute_tab->workspace_button_list)
+			{
+				EntityButtonAttributeTab*
+				tab_button = static_cast<EntityButtonAttributeTab*>(but);
+
+				if (tab_button->target_listed_block != nullptr)
+				{
+					tab_button->target_listed_block->button_group_is_active = (tab_button == filter_block->pointer_to_attribute_tab->selected_button);
+				}
+			}
 			//filter_block->disable_gabarite = filter_block->disable_gabarite || !filter_block->is_expanded;
 			//filter_block->disable_gabarite = !is_visible();
 		}
 
+
+
 		//filter_block->button_group_prechange();
 	}
+
+	
 }
 
 EButtonGroupFilterBlockSeparator::~EButtonGroupFilterBlockSeparator()
@@ -25830,7 +25942,7 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 		}
 
 		//		LISTED
-		for (EButtonGroup* button_group : _filter_block->pointer_to_listed_segment_in_filter_block->group_list)
+		for (EButtonGroup* button_group : _filter_block->pointer_to_listed_attributes->group_list)
 		{
 			EButtonGroupListedBlock* listed_block = static_cast<EButtonGroupListedBlock*>(button_group);
 
