@@ -502,7 +502,8 @@ public:
 
 	std::vector<data_action_pointer>	action_on_choose_variant_from_window;
 
-	int* target_int_value = nullptr;
+	int* target_int_value	= nullptr;
+	bool* target_bool_value	= nullptr;
 	//void make_default_router_variant_button
 	//(
 	//	ERegionGabarite* _region_gabarite,

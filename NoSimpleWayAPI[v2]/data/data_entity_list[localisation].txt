@@ -1167,6 +1167,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Purple"
 	[tag]"name RU"		[value]"Фиолетовый"
 	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_disable_font_size"
+	[tag]"base name"	[value]"DisableFontSize"
+	[tag]"name EN"		[value]"Font size disabled"
+	[tag]"name RU"		[value]"Размер текста: выключен"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"variant_enable_font_size"
+	[tag]"base name"	[value]"EnableFontSize"
+	[tag]"name EN"		[value]"Font size enabled"
+	[tag]"name RU"		[value]"Размер текста: включён"
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	

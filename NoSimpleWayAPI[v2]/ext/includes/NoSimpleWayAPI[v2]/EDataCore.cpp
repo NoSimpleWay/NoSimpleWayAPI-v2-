@@ -79,7 +79,7 @@ void EDataActionCollection::action_update_vertical_slider(Entity* _entity, ECust
 	{
 		float scroll_speed = 5.0f;
 
-		slider->scroll_speed += pow(EInputCore::scroll_direction, 5.0) * scroll_speed * -1.0f;
+		slider->scroll_speed += pow(EInputCore::scroll_direction, 3.0) * scroll_speed * -1.0f;
 	}
 
 	float total_value = slider->max_value - slider->min_value;
@@ -678,33 +678,37 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 {
 	//if (_custom_data->data_container != nullptr)
 	{
-		EButtonGroup::color_editor_group->activate_move_to_foreground_and_center();
+		
 
 		EntityButtonColorButton*			clicked_button	= static_cast<EntityButtonColorButton*>(_entity);
 		EDataContainer_Group_ColorEditor*	group_data		= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
 		EntityButtonColorButton*			target_button	= group_data->target_color_button;
 
+		//clicked_button->parent_button_group->selected_button = clicked_button;
+		clicked_button->parent_button_group->select_this_button(clicked_button);
 
 		//set target button to button group
 		if (clicked_button->selected_mode == ColorButtonMode::CBM_OPEN_WINDOW)
 		{
+			EButtonGroup::color_editor_group->activate_move_to_foreground_and_center();
+
 			group_data->pointer_to_color_collection_sector->selected_button = nullptr;
 			group_data->target_color_button = clicked_button;
 
-			if (group_data->pointer_to_color_collection_sector != nullptr)
-				for (EntityButton* but : group_data->pointer_to_color_collection_sector->workspace_button_list)
-				{
-					//color collection on color editor								button which open editor
-					if (static_cast<EntityButtonColorButton*>(but)->stored_color == clicked_button->stored_color)
-					{
-						group_data->pointer_to_color_collection_sector->selected_button = but;
-						break;
-					}
-				}
-			else
-			{
-				EInputCore::logger_simple_error("pointer to color group is null!");
-			}
+			//if (group_data->pointer_to_color_collection_sector != nullptr)
+			//	for (EntityButton* but : group_data->pointer_to_color_collection_sector->workspace_button_list)
+			//	{
+			//		//color collection on color editor								button which open editor
+			//		if (static_cast<EntityButtonColorButton*>(but)->stored_color == clicked_button->stored_color)
+			//		{
+			//			group_data->pointer_to_color_collection_sector->selected_button = but;
+			//			break;
+			//		}
+			//	}
+			//else
+			//{
+			//	EInputCore::logger_simple_error("pointer to color group is null!");
+			//}
 
 			target_button = group_data->target_color_button;
 			group_data->work_color = target_button->stored_color;
@@ -935,63 +939,90 @@ void EDataActionCollection::action_draw_crosshair_slider(Entity* _entity, ECusto
 
 void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	EDataContainer_VerticalNamedSlider* data = static_cast<EDataContainer_VerticalNamedSlider*>(_custom_data->data_container);
+	EDataContainer_VerticalNamedSlider*
+	data = static_cast<EDataContainer_VerticalNamedSlider*>(_custom_data->data_container);
 
-	float original_value = 0.0f;
+	float
+	original_slider_value = 0.0f;
 
 	if (data->pointer_to_value != nullptr)
 	{
+		if ((data->pointer_to_digit_text_area != nullptr) && (data->pointer_to_digit_text_area->text_area_active))
+		{
+			*data->pointer_to_value = EStringUtils::safe_convert_string_to_number
+			(
+				data->pointer_to_digit_text_area->original_text,
+				data->min_value,
+				data->max_value
+			);
+		}
+		
 		if (*data->pointer_to_value <= data->min_value)
 		{
-			original_value = 0.0f;
+			original_slider_value = 0.0f;
+		}
+		else
+		if (*data->pointer_to_value >= data->max_value)
+		{
+			original_slider_value = 1.0f;
 		}
 		else
 			if (*data->pointer_to_value < data->mid_value)
 			{
-				original_value = (*data->pointer_to_value - data->min_value) / (data->mid_value - data->min_value);
-				original_value *= 0.5f;
+				original_slider_value = (*data->pointer_to_value - data->min_value) / (data->mid_value - data->min_value);
+				original_slider_value *= 0.5f;
 			}
 			else
 				if (*data->pointer_to_value >= data->mid_value)
 				{	
 					//				(1.0						-	1.0)			/	(10.0f			-		1.0)
 					//				0.0												/	(9.0)
-					original_value = (*data->pointer_to_value - data->mid_value) / (data->max_value - data->mid_value);
+					original_slider_value = (*data->pointer_to_value - data->mid_value) / (data->max_value - data->mid_value);
 					//original_value -= 0.5f;
 					//original_value *= 2.0f;
-					original_value *= 0.5f;
-					original_value += 0.5f;
+					original_slider_value *= 0.5f;
+					original_slider_value += 0.5f;
 
 					//original_value = 0.5f;
 
 
 				}
 
-		if (original_value != data->current_value)
+
 		{
-			data->current_value = std::clamp(original_value, 0.0f, 1.0f);
+			if (original_slider_value != data->current_slide_value)
+			{
+				data->current_slide_value = std::clamp(original_slider_value, 0.0f, 1.0f);
 
-			float result_value = 0.0f;
-			if (data->current_value < 0.5)
-			{
-				result_value
-					=
-					(1.0f - data->current_value * 2.0f) * data->min_value
-					+
-					data->current_value / 0.5f * data->mid_value;
-			}
-			else
-			{
-				result_value
-					=
-					(1.0f - (data->current_value - 0.5f) * 2.0f) * data->mid_value
-					+
-					(data->current_value - 0.5f) * 2.0f * data->max_value;
-			}
+				float result_value = 0.0f;
+				if (data->current_slide_value < 0.5)
+				{
+					result_value
+						=
+						(1.0f - data->current_slide_value * 2.0f) * data->min_value
+						+
+						data->current_slide_value / 0.5f * data->mid_value;
+				}
+				else
+				{
+					result_value
+						=
+						(1.0f - (data->current_slide_value - 0.5f) * 2.0f) * data->mid_value
+						+
+						(data->current_slide_value - 0.5f) * 2.0f * data->max_value;
+				}
 
-			if (data->pointer_to_digit_text_area != nullptr)
-			{
-				data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(result_value, 100.0f));
+				if ((data->pointer_to_digit_text_area != nullptr) && (!data->pointer_to_digit_text_area->text_area_active))
+				{
+					if (data->rounded_numbers)
+					{
+						data->pointer_to_digit_text_area->change_text(std::to_string((int)round(result_value)));
+					}
+					else
+					{
+						data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(result_value, 100.0f));
+					}
+				}
 			}
 		}
 	}
@@ -1015,11 +1046,11 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 				(data->force_shift)
 			)
 		{
-			data->current_value += (EInputCore::MOUSE_SPEED_X / NS_EGraphicCore::current_zoom * 0.1f) / data->operable_area_size_x;
+			data->current_slide_value += (EInputCore::MOUSE_SPEED_X / NS_EGraphicCore::current_zoom * 0.1f) / data->operable_area_size_x;
 		}
 		else
 		{
-			data->current_value
+			data->current_slide_value
 			=
 			(
 				EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom
@@ -1032,26 +1063,26 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 			)/data->operable_area_size_x;
 		}
 
-		data->current_value = max(data->current_value, 0.0f);
-		data->current_value = min(data->current_value, 1.0f);
+		data->current_slide_value = max(data->current_slide_value, 0.0f);
+		data->current_slide_value = min(data->current_slide_value, 1.0f);
 
 		float result_value = 0.0f;
 
-		if (data->current_value < 0.5)
+		if (data->current_slide_value < 0.5)
 		{
 			result_value
 			=
-			(1.0f - data->current_value * 2.0f)	* data->min_value
+			(1.0f - data->current_slide_value * 2.0f)	* data->min_value
 			+ 
-			data->current_value / 0.5f			* data->mid_value;
+			data->current_slide_value / 0.5f			* data->mid_value;
 		}
 		else
 		{
 			result_value
 			=
-			(1.0f - (data->current_value - 0.5f) * 2.0f)	* data->mid_value 
+			(1.0f - (data->current_slide_value - 0.5f) * 2.0f)	* data->mid_value 
 			+
-			(data->current_value - 0.5f) * 2.0f				* data->max_value;
+			(data->current_slide_value - 0.5f) * 2.0f				* data->max_value;
 		}
 
 		//change text to [stored_text] + slider value * max_value. Example: "Gloss: 0.75"
@@ -1077,7 +1108,14 @@ void EDataActionCollection::action_update_horizontal_named_slider(Entity* _entit
 		//CHANGE DIGIT TEXT
 		if (data->pointer_to_digit_text_area != nullptr)
 		{
-			data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(result_value, 100.0f));
+			if (data->rounded_numbers)
+			{
+				data->pointer_to_digit_text_area->change_text(std::to_string((int)round(result_value)));
+			}
+			else
+			{
+				data->pointer_to_digit_text_area->change_text(Helper::float_to_string_with_precision(result_value, 100.0f));
+			}
 		}
 		//EInputCore::logger_param("Value", data->current_value);
 	}
@@ -1103,7 +1141,7 @@ void EDataActionCollection::action_draw_horizontal_named_slider(Entity* _entity,
 			data->pointer_to_brick_line_sprite_layer->world_position_x + 33.0f,
 			data->pointer_to_brick_line_sprite_layer->world_position_y + 3.0f,
 
-			data->operable_area_size_x * data->current_value + data->slider_style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_x_in_pixels / 2.0f,
+			data->operable_area_size_x * data->current_slide_value + data->slider_style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_x_in_pixels / 2.0f,
 			data->slider_style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_y_in_pixels,
 
 
@@ -1116,7 +1154,7 @@ void EDataActionCollection::action_draw_horizontal_named_slider(Entity* _entity,
 		(
 			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
 			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-			data->pointer_to_brick_line_sprite_layer->world_position_x + data->operable_area_size_x * data->current_value + 33.0f,
+			data->pointer_to_brick_line_sprite_layer->world_position_x + data->operable_area_size_x * data->current_slide_value + 33.0f,
 			data->pointer_to_brick_line_sprite_layer->world_position_y + 3.0f,
 			data->slider_style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture
 		);
@@ -1641,6 +1679,11 @@ void EDataActionCollection::action_rotate_variant(Entity* _entity, ECustomData* 
 		{
 			button_variant_router->opened_router_group = EButtonGroupRouterVariant::create_router_variant_button_group(button_variant_router->parent_button_group->root_group->parent_window, button_variant_router);
 		}
+	}
+
+	if (button_variant_router->target_bool_value != nullptr)
+	{
+		*button_variant_router->target_bool_value = (bool)(button_variant_router->selected_variant);
 	}
 }
 

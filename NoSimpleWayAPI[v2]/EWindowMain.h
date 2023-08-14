@@ -296,6 +296,7 @@ public:
 
 	EButtonGroup* pointer_to_non_listed_segment;
 	EButtonGroup* pointer_to_listed_segment_in_filter_block;
+	EButtonGroup* pointer_to_fake_listed_segment_in_filter_block;
 	EButtonGroup* pointer_to_preview_box_segment;
 
 
@@ -324,8 +325,8 @@ public:
 	HSVRGBAColor** pointer_to_HRA_color[3];
 
 	//font size
-	EntityButton* text_size_button;
-	EntityButton* text_size_switch_button;
+	EntityButton*				text_size_button;
+	EntityButtonVariantRouter*	text_size_router_button;
 	bool	text_size_bool;
 	float	text_size = 0.5f;
 
@@ -381,6 +382,7 @@ public:
 
 	bool is_this_group_active() override;
 	bool is_expanded = false;
+	void button_group_postchange() override;
 
 
 	bool is_default_filter_block = false;

@@ -803,6 +803,8 @@ void EDataActionCollection::action_show_hide_cosmetic_blocks(Entity* _entity, EC
 	but->parent_filter_block->pointer_to_sound_segment->button_group_is_active = but->selected_variant;
 	but->parent_filter_block->pointer_to_minimap_and_ray_segment->button_group_is_active = but->selected_variant;
 	but->parent_filter_block->pointer_to_minimap_and_ray_segment->button_group_is_active = but->selected_variant;
+	but->parent_filter_block->pointer_to_fake_listed_segment_in_filter_block->button_group_is_active = but->selected_variant;
+	but->parent_filter_block->pointer_to_listed_segment_in_filter_block->button_group_is_active = !but->selected_variant;
 
 
 
@@ -810,6 +812,10 @@ void EDataActionCollection::action_show_hide_cosmetic_blocks(Entity* _entity, EC
 	but->parent_filter_block->pointer_to_sound_segment->region_gabarite->have_phantom_translation = false;
 	but->parent_filter_block->pointer_to_minimap_and_ray_segment->region_gabarite->have_phantom_translation = false;
 	but->parent_filter_block->pointer_to_minimap_and_ray_segment->region_gabarite->have_phantom_translation = false;
+	but->parent_filter_block->pointer_to_fake_listed_segment_in_filter_block->region_gabarite->have_phantom_translation = false;
+	but->parent_filter_block->pointer_to_listed_segment_in_filter_block->region_gabarite->have_phantom_translation = false;
+
+
 
 
 
@@ -10926,12 +10932,12 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//WHOLE FILTER BLOCK
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroupFilterBlock*
-	whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 310.0f));
+	whole_filter_block_group = new EButtonGroupFilterBlock(new ERegionGabarite(1200.0f, 380.0f));
 	whole_filter_block_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 	whole_filter_block_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	whole_filter_block_group->debug_name = "Whole filter block";
 	whole_filter_block_group->focusable_for_select = true;
-	whole_filter_block_group->additional_y_distance = 16.0f;
+	whole_filter_block_group->additional_y_distance = 24.0f;
 
 	if (_target_editor != nullptr)
 	{
@@ -11093,6 +11099,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	);
 	button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
 	
+	
+
 	button_variant_router->add_default_description_by_key("description_show_hide_loot");
 	//
 	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], ELocalisationText());
@@ -11779,6 +11787,19 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	workspace_part->add_group(listed_condition_segment);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		EButtonGroup*
+		fake_listed_condition_segment = EButtonGroup::create_button_group_without_bg(new ERegionGabarite(111.0f, 160.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		fake_listed_condition_segment->child_align_direction = ChildElementsAlignDirection::BOTTOM_TO_TOP;
+		//listed_condition_segment->button_size_x_override = 200.0f;
+		//root group data ontaner
+		whole_filter_block_group->pointer_to_fake_listed_segment_in_filter_block = fake_listed_condition_segment;
+		fake_listed_condition_segment->button_group_is_active = false;
+		workspace_part->add_group(fake_listed_condition_segment);
+	}
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -11788,19 +11809,55 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//		SOUND
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 	EButtonGroup*
-		sound_cosmetic_segment
-		= EButtonGroup::create_default_button_group(new ERegionGabarite(178.0f, 160.0f), EGUIStyle::active_style)
-		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+	sound_cosmetic_segment
+	= EButtonGroup::create_default_button_group(new ERegionGabarite(350.0f, 130.0f), EGUIStyle::active_style)
+	->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_static_autosize);
 
 	sound_cosmetic_segment->button_group_is_active = false;
 	//sound_cosmetic_segment->disable_gabarite = true;
 
 	workspace_part->add_group(sound_cosmetic_segment);
 	whole_filter_block_group->pointer_to_sound_segment = sound_cosmetic_segment;
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
 
+	
+	
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+	bottom_sound_segment = EButtonGroup::create_invisible_button_group(new ERegionGabarite(350.0f, 50.0f), EGUIStyle::active_style)
+	->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+	sound_cosmetic_segment->add_group(bottom_sound_segment);
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+		general_sound_section_for_top = EButtonGroup::create_invisible_button_group(new ERegionGabarite(350.0f, 85.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+	sound_cosmetic_segment->add_group(general_sound_section_for_top);
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup*
+		left_sound_segment = EButtonGroup::create_invisible_button_group(new ERegionGabarite(150.0f, 100.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+		bottom_sound_segment->add_group(left_sound_segment);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// 
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		EButtonGroup*
+		right_sound_segment = EButtonGroup::create_invisible_button_group(new ERegionGabarite(150.0f, 100.0f), EGUIStyle::active_style)
+		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+		bottom_sound_segment->add_group(right_sound_segment);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	//EButtonGroup* bottom_user_sound_section
 	//	= EButtonGroup::create_button_group_without_bg(new ERegionGabarite(178.0f, 100.0f), EGUIStyle::active_style)
@@ -11838,6 +11895,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 
 
+
+
 /*			===============================			*/
 
 
@@ -11851,147 +11910,10 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	//		DISABLE SOUND
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	{
-		EntityButtonVariantRouterForFilterBlock*
-		button_variant_disable_sound = new EntityButtonVariantRouterForFilterBlock();
-		//button_variant_disable_sound->button_suppressor = button_ingame_sound_suppressor_bool;
-
-		sound_cosmetic_segment->add_button_to_working_group(button_variant_disable_sound);
-		button_variant_disable_sound->make_as_default_router_variant_button(new ERegionGabarite(170.0f, 34.0f));
-		button_variant_disable_sound->add_default_description_by_key("description_disable_sound");
-		button_variant_disable_sound->force_field_up = 8.0f;
-		button_variant_disable_sound->can_be_stretched = true;
-
-		whole_filter_block_group->pointer_to_forcibly_disable_sound_variant_button = button_variant_disable_sound;
-
-		//routers
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		button_variant_disable_sound->add_router_variant_with_localisation_key_and_color("variant_do_not_disable_sound", 0.5f, 0.5f, 0.5f, 1.0f);
-		button_variant_disable_sound->add_router_variant_with_localisation_key_and_color("variant_disable_sound", 1.0f, 0.5f, 0.25f, 1.0f);
-
-		button_variant_disable_sound->select_variant(0);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-	}
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
 
 
-	//USER SOUND
-	// 
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	ELocalisationText l_text;
-	l_text.localisations[NSW_localisation_EN] = "User sound";
-	l_text.localisations[NSW_localisation_RU] = "Свой звук";
-
-	EntityButtonFilterSound*
-	sound_button = new EntityButtonFilterSound();
-	sound_button->make_default_button_with_unedible_text
-	(
-		new ERegionGabarite(145.0f, 22.0f),
-		sound_cosmetic_segment,
-		&EDataActionCollection::action_open_custom_sound_list,
-		l_text
-	);
-	sound_button->main_text_area->localisation_text = l_text;
-	sound_button->can_be_stretched = true;
-	sound_button->add_default_description_by_key("description_user_sound");
-
-	Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
-
-	sound_button->suppressor = &whole_filter_block_group->custom_sound_suppressor_bool;
-	whole_filter_block_group->pointer_to_custom_sound_button = sound_button;
-	sound_cosmetic_segment->add_button_to_working_group(sound_button);
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-	//	switcher CUSTOM SOUND
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	EntityButton* button_custom_sound_bool_suppressor = new EntityButton();
-	sound_button->button_suppressor = button_custom_sound_bool_suppressor;
-	button_custom_sound_bool_suppressor->make_default_bool_switcher_button
-	(
-		new ERegionGabarite(22.0f, 22.0f),
-		sound_cosmetic_segment,
-		EDataActionCollection::action_switch_boolean_value,
-		NS_DefaultGabarites::texture_bool_switcher_activated_box,
-		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
-		&whole_filter_block_group->custom_sound_suppressor_bool
-	);
-	sound_cosmetic_segment->add_button_to_working_group(button_custom_sound_bool_suppressor);
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-	//		OPTIONAL/NOT OPTIONAL USER SOUND VARIANT ROUTER
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
-	button_variant_FB_router->make_as_default_button_with_icon
-	(
-		new ERegionGabarite(170.0f, 22.0f),
-		sound_cosmetic_segment,
-		&EDataActionCollection::action_rotate_variant,
-		nullptr
-	);
-	button_variant_FB_router->parent_filter_block = whole_filter_block_group;
-	button_variant_FB_router->can_be_stretched = true;
-	button_variant_FB_router->force_field_up = 8.0f;
-
-	button_variant_FB_router->add_default_description_by_key("description_mandatory_or_optional_sound");
-
-	button_variant_FB_router->rotate_variant_mode = RotateVariantMode::SELECT_NEXT;
-	button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
-
-	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText());
-	button_variant_FB_router->pointer_to_text_area = jc_text_area;
-
-	jc_text_area->can_be_edited = false;
-	Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
-
-	button_variant_FB_router->suppressor		= &whole_filter_block_group->custom_sound_suppressor_bool;
-	button_variant_FB_router->button_suppressor	= button_custom_sound_bool_suppressor;
-
-	whole_filter_block_group->pointer_to_optional_user_sound = button_variant_FB_router;
-
-
-	//routers
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-	router_variant = new RouterVariant();
-	local_text = new ELocalisationText();
-
-	local_text->base_name = "Optional";
-	local_text->localisations[NSW_localisation_EN] = "Optional";
-	local_text->localisations[NSW_localisation_RU] = "Опциональный";
-	router_variant->localisation = local_text;
-
-	router_variant->color = new HSVRGBAColor();
-	router_variant->color->set_color_RGBA(0.65f, 0.5f, 0.4f, 1.0f);
-
-	button_variant_FB_router->router_variant_list.push_back(router_variant);
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-
-
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-	router_variant = new RouterVariant();
-	local_text = new ELocalisationText();
-
-	local_text->base_name = "Mandatory";
-	local_text->localisations[NSW_localisation_EN] = "Mandatory";
-	local_text->localisations[NSW_localisation_RU] = "Обязательный";
-	router_variant->localisation = local_text;
-
-	router_variant->color = new HSVRGBAColor();
-	router_variant->color->set_color_RGBA(0.6f, 1.0f, 0.8f, 1.0f);
-
-	button_variant_FB_router->router_variant_list.push_back(router_variant);
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-	button_variant_FB_router->select_variant(1);
-
-	sound_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
 
 
 
@@ -12008,25 +11930,30 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//INGAME SOUND
 	//	text
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	ELocalisationText l_text;
 	l_text.localisations[NSW_localisation_EN] = "Ingame sound";
 	l_text.localisations[NSW_localisation_RU] = "Звуки из игры";
+
+	EntityButtonFilterSound*
 	sound_button = new EntityButtonFilterSound();
 	sound_button->add_default_description_by_key("description_ingame_sound");
 	sound_button->make_default_button_with_unedible_text
 	(
 		new ERegionGabarite(145.0f, 22.0f),
-		sound_cosmetic_segment,
+		left_sound_segment,
 		&EDataActionCollection::action_open_ingame_sound_list,
 		l_text
 	);
 	sound_button->main_text_area->localisation_text = l_text;
-	//sound_button->force_field_up = 8.0f;
+	sound_button->new_line_method = NewLineMethod::FORBIDDEN;
+	//sound_button->force_field_right = 4.0f;
+	//sound_button->force_field_up = 4.0f;
 	sound_button->can_be_stretched = true;
 
 	Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
 	sound_button->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
 	whole_filter_block_group->pointer_to_game_sound_button = sound_button;
-	sound_cosmetic_segment->add_button_to_working_group(sound_button);
+	left_sound_segment->add_button_to_working_group(sound_button);
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	//	switcher GAME_SOUND
@@ -12036,56 +11963,34 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	button_ingame_sound_suppressor_bool->make_default_bool_switcher_button
 	(
 		new ERegionGabarite(22.0f, 22.0f),
-		sound_cosmetic_segment,
+		left_sound_segment,
 		EDataActionCollection::action_switch_boolean_value,
 		NS_DefaultGabarites::texture_bool_switcher_activated_box,
 		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
 		&whole_filter_block_group->game_sound_suppressor_bool
 	);
-	sound_cosmetic_segment->add_button_to_working_group(button_ingame_sound_suppressor_bool);
+	button_ingame_sound_suppressor_bool->new_line_method = NewLineMethod::FORBIDDEN;
+	button_ingame_sound_suppressor_bool->force_field_right = 4.0f;
+	left_sound_segment->add_button_to_working_group(button_ingame_sound_suppressor_bool);
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	//		POSITIONAL/NOT POSITIONAL SOUND ROUTER
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
 	button_variant_FB_router->button_suppressor = button_ingame_sound_suppressor_bool;
-	sound_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
+	left_sound_segment->add_button_to_working_group(button_variant_FB_router);
 	button_variant_FB_router->make_as_default_button_with_icon
 	(
 		new ERegionGabarite(170.0f, 22.0f),
-		sound_cosmetic_segment,
+		left_sound_segment,
 		&EDataActionCollection::action_rotate_variant,
 		nullptr
 	);
 	button_variant_FB_router->parent_filter_block = whole_filter_block_group;
-	button_variant_FB_router->force_field_up = 8.0f;
+	button_variant_FB_router->force_field_right = 4.0f;
 	button_variant_FB_router->can_be_stretched = true;
+	button_variant_FB_router->new_line_method = NewLineMethod::FORCIBLY;
 
 	button_variant_FB_router->add_default_description_by_key("description_sound_mono_or_stereo");
 
@@ -12139,26 +12044,187 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	
 
 
+
+
+
+	//USER SOUND
+	// 
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	l_text;
+	l_text.localisations[NSW_localisation_EN] = "User sound";
+	l_text.localisations[NSW_localisation_RU] = "Свой звук";
+
+	
+	sound_button = new EntityButtonFilterSound();
+	sound_button->make_default_button_with_unedible_text
+	(
+		new ERegionGabarite(145.0f, 22.0f),
+		sound_cosmetic_segment,
+		&EDataActionCollection::action_open_custom_sound_list,
+		l_text
+	);
+	sound_button->main_text_area->localisation_text = l_text;
+	sound_button->can_be_stretched = true;
+	sound_button->new_line_method = NewLineMethod::FORBIDDEN;
+	sound_button->add_default_description_by_key("description_user_sound");
+	sound_button->force_field_left = 4.0f;
+	Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
+
+	sound_button->suppressor = &whole_filter_block_group->custom_sound_suppressor_bool;
+	whole_filter_block_group->pointer_to_custom_sound_button = sound_button;
+	right_sound_segment->add_button_to_working_group(sound_button);
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	//	switcher CUSTOM SOUND
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	EntityButton*
+		button_custom_sound_bool_suppressor = new EntityButton();
+	sound_button->button_suppressor = button_custom_sound_bool_suppressor;
+
+	button_custom_sound_bool_suppressor->make_default_bool_switcher_button
+	(
+		new ERegionGabarite(22.0f, 22.0f),
+		sound_cosmetic_segment,
+		EDataActionCollection::action_switch_boolean_value,
+		NS_DefaultGabarites::texture_bool_switcher_activated_box,
+		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+		&whole_filter_block_group->custom_sound_suppressor_bool
+	);
+	button_custom_sound_bool_suppressor->new_line_method = NewLineMethod::FORBIDDEN;
+	//button_custom_sound_bool_suppressor->force_field_left = 4.0f;
+	right_sound_segment->add_button_to_working_group(button_custom_sound_bool_suppressor);
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	//		OPTIONAL/NOT OPTIONAL USER SOUND VARIANT ROUTER
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
+	button_variant_FB_router->make_as_default_button_with_icon
+	(
+		new ERegionGabarite(170.0f, 22.0f),
+		sound_cosmetic_segment,
+		&EDataActionCollection::action_rotate_variant,
+		nullptr
+	);
+	button_variant_FB_router->parent_filter_block = whole_filter_block_group;
+	button_variant_FB_router->can_be_stretched = true;
+	//button_variant_FB_router->force_field_up = 8.0f;
+	button_variant_FB_router->new_line_method = NewLineMethod::FORCIBLY;
+	button_variant_FB_router->force_field_left = 4.0f;
+
+	button_variant_FB_router->add_default_description_by_key("description_mandatory_or_optional_sound");
+
+	button_variant_FB_router->rotate_variant_mode = RotateVariantMode::SELECT_NEXT;
+	button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
+
+	jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_FB_router), EFont::font_list[0], ELocalisationText());
+	button_variant_FB_router->pointer_to_text_area = jc_text_area;
+
+	jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(button_variant_FB_router, jc_text_area);
+
+	button_variant_FB_router->suppressor = &whole_filter_block_group->custom_sound_suppressor_bool;
+	button_variant_FB_router->button_suppressor = button_custom_sound_bool_suppressor;
+
+	whole_filter_block_group->pointer_to_optional_user_sound = button_variant_FB_router;
+
+
+	//routers
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Optional";
+	local_text->localisations[NSW_localisation_EN] = "Optional";
+	local_text->localisations[NSW_localisation_RU] = "Опциональный";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new HSVRGBAColor();
+	router_variant->color->set_color_RGBA(0.65f, 0.5f, 0.4f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+
+
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	router_variant = new RouterVariant();
+	local_text = new ELocalisationText();
+
+	local_text->base_name = "Mandatory";
+	local_text->localisations[NSW_localisation_EN] = "Mandatory";
+	local_text->localisations[NSW_localisation_RU] = "Обязательный";
+	router_variant->localisation = local_text;
+
+	router_variant->color = new HSVRGBAColor();
+	router_variant->color->set_color_RGBA(0.6f, 1.0f, 0.8f, 1.0f);
+
+	button_variant_FB_router->router_variant_list.push_back(router_variant);
+	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	button_variant_FB_router->select_variant(1);
+
+	right_sound_segment->add_button_to_working_group(button_variant_FB_router);
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//		DISABLE SOUND
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		EntityButtonVariantRouterForFilterBlock*
+			button_variant_disable_sound = new EntityButtonVariantRouterForFilterBlock();
+		//button_variant_disable_sound->button_suppressor = button_ingame_sound_suppressor_bool;
+
+		general_sound_section_for_top->add_button_to_working_group(button_variant_disable_sound);
+		button_variant_disable_sound->make_as_default_router_variant_button(new ERegionGabarite(170.0f, 40.0f));
+		button_variant_disable_sound->add_default_description_by_key("description_disable_sound");
+		//button_variant_disable_sound->force_field_up = 8.0f;
+		button_variant_disable_sound->can_be_stretched = true;
+
+		whole_filter_block_group->pointer_to_forcibly_disable_sound_variant_button = button_variant_disable_sound;
+
+		//routers
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+		button_variant_disable_sound->add_router_variant_with_localisation_key_and_color("variant_do_not_disable_sound", 0.5f, 0.55f, 0.6f, 1.0f);
+		button_variant_disable_sound->add_router_variant_with_localisation_key_and_color("variant_disable_sound", 1.0f, 0.5f, 0.25f, 1.0f);
+
+		button_variant_disable_sound->select_variant(0);
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	}
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 	//	VOLUME
 	{
 		jc_button = EntityButton::create_horizontal_named_slider
 		(
 
 			new ERegionGabarite(170.0f, 40.0f),
-			sound_cosmetic_segment,
+			general_sound_section_for_top,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
 			ELocalisationText::get_localisation_by_key("volume_slider")
 		);
 		//jc_button->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
-			
+
 		jc_button->add_default_description_by_key("description_sound_volume");
 		jc_button->can_be_stretched = true;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_filter_block_group->sound_volume_value;
 		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 
 		whole_filter_block_group->sound_volume = jc_button;
-		sound_cosmetic_segment->add_button_to_working_group(jc_button);
+		general_sound_section_for_top->add_button_to_working_group(jc_button);
 	}
 
 	// 
@@ -12168,8 +12234,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
 		button_variant_FB_router->make_as_default_button_with_icon
 		(
-			new ERegionGabarite(170.0f, 40.0f),
-			sound_cosmetic_segment,
+			new ERegionGabarite(340.0f, 40.0f),
+			general_sound_section_for_top,
 			&EDataActionCollection::action_rotate_variant,
 			nullptr
 		);
@@ -12250,8 +12316,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text = new ELocalisationText();
 
 		local_text->base_name = "DisableDropSoundIfAlertSound";
-		local_text->localisations[NSW_localisation_EN] = "Drop sound:\nDisable if alert sound";
-		local_text->localisations[NSW_localisation_RU] = "Звук дропа:\nВыключен при условиях";
+		local_text->localisations[NSW_localisation_EN] = "Drop sound: Disable if alert sound";
+		local_text->localisations[NSW_localisation_RU] = "Звук дропа: Выключен при условиях";
 		router_variant->localisation = local_text;
 
 		router_variant->color = new HSVRGBAColor();
@@ -12267,8 +12333,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		local_text = new ELocalisationText();
 
 		local_text->base_name = "EnableDropSoundIfAlertSound";
-		local_text->localisations[NSW_localisation_EN] = "Drop sound:\nEnable if alert sound";
-		local_text->localisations[NSW_localisation_RU] = "Звук дропа:\nВключён при условиях";
+		local_text->localisations[NSW_localisation_EN] = "Drop sound: Enable if alert sound";
+		local_text->localisations[NSW_localisation_RU] = "Звук дропа: Включён при условиях";
 		router_variant->localisation = local_text;
 
 		router_variant->color = new HSVRGBAColor();
@@ -12280,7 +12346,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		button_variant_FB_router->select_variant(0);
 
-		sound_cosmetic_segment->add_button_to_working_group(button_variant_FB_router);
+		general_sound_section_for_top->add_button_to_working_group(button_variant_FB_router);
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -12766,7 +12832,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//		MAIN COLORS EDIT
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
-		cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(150.0f, 160.0f), EGUIStyle::active_style)
+		cosmetic_segment = EButtonGroup::create_default_button_group(new ERegionGabarite(170.0f, 160.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_static_autosize, NSW_dynamic_autosize);
 
 	cosmetic_segment->button_group_is_active = true;
@@ -12861,12 +12927,27 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	jc_button = EntityButton::create_horizontal_named_slider
 	(
 
-		new ERegionGabarite(120.0f, 36.0f),
+		new ERegionGabarite(150.0f, 36.0f),
 		cosmetic_segment,
 		EFont::font_list[0],
 		EGUIStyle::active_style,
 		ELocalisationText::get_localisation_by_key("font_size_slider")
 	);
+
+	//
+	
+		EDataContainer_VerticalNamedSlider*
+		data = static_cast<EDataContainer_VerticalNamedSlider*>(jc_button->custom_data_list.back()->data_container);
+
+		data->min_value = 18.0;
+		data->max_value = 45.0;
+		data->mid_value = (data->min_value + data->max_value) / 2.0f;
+		data->rounded_numbers = true;
+
+		data->pointer_to_digit_text_area->autoerase_text = true;
+		//data->pointer_to_digit_text_area->offset_border[BorderSide::LEFT] = 8.0f;
+	
+
 
 	jc_button->can_be_stretched = true;
 	jc_button->new_line_method = NewLineMethod::FORCIBLY;
@@ -12876,7 +12957,6 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	jc_button->suppressor = &whole_filter_block_group->text_size_bool;
 
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_filter_block_group->text_size;
-	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 
 	whole_filter_block_group->text_size_button = jc_button;
 
@@ -12891,25 +12971,28 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	bool* target_bool = &whole_filter_block_group->text_size_bool;
 
 	//TEXT SIZE
-	EntityButton*
-	button_text_size_suppressor = new EntityButton();
-	jc_button->button_suppressor = button_text_size_suppressor;
+	EntityButtonVariantRouter*
+	button_text_size_suppressor = new EntityButtonVariantRouter();
+	cosmetic_segment->add_button_to_working_group(button_text_size_suppressor);
 
-	button_text_size_suppressor->make_default_bool_switcher_button
-	(
-		new ERegionGabarite(22.0f, 22.0f),
-		cosmetic_segment,
-		EDataActionCollection::action_switch_boolean_value,
-		NS_DefaultGabarites::texture_bool_switcher_activated_box,
-		NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
-		target_bool
-	);
-	button_text_size_suppressor->new_line_method = NewLineMethod::FORBIDDEN;
+	jc_button->button_suppressor = button_text_size_suppressor;
+	whole_filter_block_group->text_size_router_button = button_text_size_suppressor;
+
+	button_text_size_suppressor->make_as_default_router_variant_button (new ERegionGabarite(150.0f, 22.0f));
+	button_text_size_suppressor->target_bool_value = target_bool;
+	button_text_size_suppressor->can_be_stretched = true;
+
+
+	button_text_size_suppressor->add_router_variant_with_localisation_key_and_color("variant_disable_font_size",	0.6f, 0.5f, 0.4f, 1.0f);
+	button_text_size_suppressor->add_router_variant_with_localisation_key_and_color("variant_enable_font_size",		0.3f, 0.9f, 0.6f, 1.0f);
+
+	button_text_size_suppressor->select_variant(1);
+	button_text_size_suppressor->new_line_method = NewLineMethod::FORCIBLY;
 
 	button_text_size_suppressor->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
-	whole_filter_block_group->text_size_switch_button = button_text_size_suppressor;
+	whole_filter_block_group->text_size_router_button = button_text_size_suppressor;
 
-	cosmetic_segment->add_button_to_working_group(button_text_size_suppressor);
+	
 	// // // // // // //// // // // // // //// // // // // // //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -13141,7 +13224,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	// // // // // // //// // // // // // //// // // // // // //
 	target_bool = &whole_filter_block_group->ray_suppressor;
 
-	//RAY SUPPRESSOR
+	//FONT SIZE SUPPRESSOR
 	EntityButton* ray_bool_suppressor = new EntityButton();
 	button_variant_FB_router->button_suppressor = ray_bool_suppressor;
 
@@ -13155,7 +13238,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		target_bool
 	);
 	ray_bool_suppressor->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
-	whole_filter_block_group->text_size_switch_button = ray_bool_suppressor;
+	
+	//whole_filter_block_group->text_size_router_button = ray_bool_suppressor;
 
 	minimap_and_ray_cosmetic_segment->add_button_to_working_group(ray_bool_suppressor);
 	// // // // // // //// // // // // // //// // // // // // //
@@ -13739,7 +13823,8 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 					{
 
 						//undefined attributes have no condition operator
-						if (matched_item_attribute == nullptr)
+						//commented attributes cannot change filter block
+						if ((matched_item_attribute == nullptr) || (comment_mode))
 						{
 							data_part = DataOrderNames::VALUE;
 						}
@@ -14032,10 +14117,10 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								if ((matched_item_attribute->localisation.base_name == "SetFontSize") && (whole_filter_block != nullptr))
 								{
 
-									whole_filter_block->text_size = (std::stoi(buffer_text) - 18) / 27.0f;
+									whole_filter_block->text_size = EStringUtils::safe_convert_string_to_number(buffer_text, 18, 45);
 
-									whole_filter_block->text_size = max(whole_filter_block->text_size, 0.0f);
-									whole_filter_block->text_size = min(whole_filter_block->text_size, 1.0f);
+									whole_filter_block->text_size = max(whole_filter_block->text_size, 18.0f);
+									whole_filter_block->text_size = min(whole_filter_block->text_size, 45.0f);
 
 									whole_filter_block->text_size_bool = true;
 									//d_container->
@@ -21962,7 +22047,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 			target_group_for_content->clickable_area_list.back()->clickable_region_is_active = false;
 
 			EButtonGroupNonListedLine*
-				non_listed_line = new EButtonGroupNonListedLine(new ERegionGabarite(20.0f, button_height));
+			non_listed_line = new EButtonGroupNonListedLine(new ERegionGabarite(20.0f, button_height));
 			non_listed_line->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
 
 
@@ -22701,7 +22786,9 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 		//result_string += tarea->localisation_text.base_name;
 		result_string += "SetFontSize";
 
-		result_string += " " + std::to_string((int)(round(18.0f + temp_size * 27.0f)));
+		temp_size = std::clamp((int)(round(temp_size)), 18, 45);
+
+		result_string += " " + std::to_string((int)(round(temp_size)));
 		result_string += '\n';
 
 
@@ -23380,7 +23467,7 @@ void EButtonGroupTopControlSection::draw_button_group()
 		EButtonGroupFilterBlock*
 		d_con = pointer_to_filter_block_group;
 
-		float font_size_rescale = 0.4f + d_con->text_size * 0.6f;
+		float font_size_rescale = 0.4f + ((d_con->text_size - 18.0f) / 27.0f) * 0.6f;
 
 		float rescale_factor = min((box_size_x * font_size_rescale) / (float)(example_text_texture[0]->size_x_in_pixels + 6.0f), (box_size_y * font_size_rescale) / (float)(example_text_texture[0]->size_y_in_pixels + 6.0f));
 		rescale_factor = min(rescale_factor, 1.0f);
@@ -23716,6 +23803,31 @@ bool EButtonGroupFilterBlock::is_this_group_active()
 	//}
 
 	return EButtonGroup::is_this_group_active() && (is_expanded || group_search_status == GroupSearchStatus::SEARCH_STATUS_MATCHED);
+}
+
+void EButtonGroupFilterBlock::button_group_postchange()
+{
+	/*float total_size = pointer_to_top_control_block->region_gabarite->size_y + group_offset_for_content_bottom + group_offset_for_content_up + 1.0f;
+
+	for (EButtonGroup* child : pointer_to_listed_segment_in_filter_block->group_list)
+	{
+		EButtonGroupListedBlock*
+		listed_block = static_cast<EButtonGroupListedBlock*>(child);
+
+		total_size += listed_block->region_gabarite->size_y;
+	}
+
+	total_size = max(total_size, 210.0f);
+
+	if (region_gabarite->size_y != total_size)
+	{
+		region_gabarite->size_y = total_size;
+		base_height = region_gabarite->size_y;
+
+		root_group->need_change = true;
+	}
+
+	EButtonGroup::button_group_postchange();*/
 }
 
 EButtonGroupFilterBlockAsText* EButtonGroupFilterBlockAsText::create_filter_block_as_text_group(EButtonGroupFilterBlock* _target_filter_block)
@@ -25385,7 +25497,7 @@ void EButtonGroupLootSimulator::refresh_button_sizes()
 
 		float size_multiplier = 0.5f;
 
-		if (loot_item->matched_size != nullptr) { size_multiplier = *loot_item->matched_size; }
+		if (loot_item->matched_size != nullptr) { size_multiplier = (*loot_item->matched_size - 18.0f) / 27.0f; }
 
 		if (loot_item->matched_size_block != nullptr)
 		{

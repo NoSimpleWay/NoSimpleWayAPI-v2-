@@ -338,6 +338,14 @@ struct HighlightStruct
 	static HighlightStruct	create_new_highlihght(float _r, float _g, float _b, float _a, HighlightID _id, float _time);
 };
 
+
+enum class ButtonGroupChangeAfterRemove
+{
+	CHANGE_ONLY_DELETED_ELEMENT,
+	CHANGE_PARENT_GROUP,
+	CHANGE_ROOT_GROUP
+};
+
 class EButtonGroupFastMessage;	
 class EButtonGroup
 {
@@ -444,6 +452,10 @@ public:
 
 	static MoveVectorMethod move_vector_mode;
 
+	
+
+	ButtonGroupChangeAfterRemove change_after_remove = ButtonGroupChangeAfterRemove::CHANGE_ONLY_DELETED_ELEMENT;
+
 	bool filter_block_need_remove = false;
 	bool need_refresh = false;
 	bool need_change = false;
@@ -516,7 +528,7 @@ public:
 	static void soft_recursion_first_pass(EButtonGroup* _group);
 	/*-----------------------------------*/
 
-
+	virtual void button_group_postchange();
 
 
 	void recalculate_culling_lines();

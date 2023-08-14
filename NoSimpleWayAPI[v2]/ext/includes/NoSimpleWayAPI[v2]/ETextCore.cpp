@@ -1227,12 +1227,11 @@ void ETextArea::activate_this_text_area()
 	if ((!row.empty()) && (!text_area_active) && (NS_FONT_UTILS::active_text_area == nullptr))
 	{
 		text_area_active = true;
-		selected_glyph_position = font_glyph_list.size() - 1;
-
 		NS_FONT_UTILS::active_text_area = this;
-
-
-		if (original_text == "") { change_text(""); }
+		
+		if ((original_text == "") || (autoerase_text)) { change_text(""); }
+		
+		selected_glyph_position = font_glyph_list.size() - 1;
 	}
 }
 
@@ -1355,10 +1354,11 @@ void ETextArea::text_area_set_active_and_select_glyph()
 
 
 			text_area_active = true;
-			selected_glyph_position = min(selected_glyph_position, font_glyph_list.size() - 1);
+			
 			NS_FONT_UTILS::active_text_area = this;
 
-			if (original_text == "") { change_text(""); }
+			if ((original_text == "") || (autoerase_text)) { change_text(""); }
+			selected_glyph_position = min(selected_glyph_position, font_glyph_list.size() - 1);
 			flash_line_active = true;
 
 

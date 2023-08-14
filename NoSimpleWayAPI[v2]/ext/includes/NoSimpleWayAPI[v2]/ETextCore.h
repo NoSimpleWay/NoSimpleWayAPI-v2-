@@ -216,6 +216,7 @@ public:
 	ELocalisationText	gray_text;
 	bool				indicate_gray_text = false;
 	bool				non_original_region = false;
+	bool				autoerase_text = false;
 
 	std::vector<std::string*> row;
 	int row_count = 0;

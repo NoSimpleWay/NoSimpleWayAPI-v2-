@@ -753,11 +753,42 @@ void EButtonGroup::button_group_update(float _d)
 
 	if
 	(
-		(EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
+		(EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
 		&&
 		(EButtonGroup::focused_button_group_mouse_unpressed == this)
 	)
 	{
+		float dir = 0.0f;
+
+		if (EInputCore::key_pressed(GLFW_KEY_UP))	{ dir = 1.0f; }
+		if (EInputCore::key_pressed(GLFW_KEY_DOWN)) { dir = -1.0f;}
+	
+		if (dir != 0.0f)
+		{
+			region_gabarite->size_y += 32.0f * dir * _d;
+			base_height += 32.0f * dir * _d;
+			
+			if (root_group != nullptr)
+			{
+				root_group->need_change = true;
+			}
+			else
+			{
+				need_change = true;
+			}
+		}
+
+		
+	}
+
+	if
+	(
+		(EInputCore::key_pressed_once(GLFW_KEY_RIGHT_SHIFT))
+		&&
+		(EButtonGroup::focused_button_group_mouse_unpressed == this)
+	)
+	{
+		
 		recursive_get_info();
 	}
 
@@ -829,6 +860,8 @@ void EButtonGroup::button_group_update(float _d)
 		EButtonGroup::refresh_button_group(this);
 
 		need_refresh = false;
+
+
 	}
 
 	if (need_change)
@@ -1018,7 +1051,8 @@ void EButtonGroup::recursive_get_info()
 	EInputCore::logger_param("HPYb:", highest_point_y_for_buttons);
 	EInputCore::logger_param("HPYg:", highest_point_y_for_groups);
 
-	EInputCore::logger_param("group_size_y", region_gabarite->size_y);
+	EInputCore::logger_param("group size y", region_gabarite->size_y);
+	EInputCore::logger_param("group base y", base_height);
 
 	EInputCore::logger_param("offset_x", region_gabarite->offset_x);
 	EInputCore::logger_param("offset_y:", region_gabarite->offset_y);
@@ -1039,6 +1073,7 @@ void EButtonGroup::recursive_get_info()
 
 	std::cout << std::endl << std::endl;
 
+	if (EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
 	for (EButtonGroup* child : group_list)
 	{
 		child->recursive_get_info();
@@ -2481,7 +2516,7 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 {
 	_group->recursive_reset_phantom_translate();
 
-
+	//_group->highlight_this_group_green_info();
 
 	if
 	(
@@ -2494,11 +2529,14 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 		//recursive_change_group_first_pass(_group);
 
 		change_group_second_pass(_group);
+		
 	}
 	else
 	{
 		_group->need_change = true;
 	}
+
+	_group->button_group_postchange();
 
 
 }
@@ -2663,6 +2701,15 @@ void EButtonGroup::soft_recursion_first_pass(EButtonGroup* _group)
 
 }
 
+void EButtonGroup::button_group_postchange()
+{
+
+	for (EButtonGroup* child : group_list)
+	{
+		child->button_group_postchange();
+	}
+}
+
 
 
 void EButtonGroup::refresh_button_group(EButtonGroup* _group)
@@ -2671,6 +2718,8 @@ void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 	{
 		_group->recursive_expand_to_workspace_size();
 		change_group(_group);
+
+		//_group->button_group_postchange();
 	}
 	else
 	{
@@ -3006,7 +3055,7 @@ void EButtonGroup::resize_group_to_highest_point_y()
 
 		//min_size_y				= highest_point_y_for_buttons * 1.0f;
 		//float minimal_size_y = max()
-		region_gabarite->size_y = std::clamp(highest_point_y_for_buttons * 1.0f, min_size_y, 200.0f);
+		region_gabarite->size_y = std::clamp(highest_point_y_for_buttons * 1.0f, min_size_y, max_size_y);
 		base_height = region_gabarite->size_y;
 	}
 }
@@ -3826,10 +3875,10 @@ void EButtonGroup::select_this_button(EntityButton* _but)
 {
 	selected_button = _but;
 
-	EInputCore::logger_simple_info("invoke all select action in group");
+	//EInputCore::logger_simple_info("invoke all select action in group");
 	for (group_select_action gsa : actions_on_select_button)
 	{
-		EInputCore::logger_simple_info("invoke select action");
+		//EInputCore::logger_simple_info("invoke select action");
 		gsa(this);
 	}
 }

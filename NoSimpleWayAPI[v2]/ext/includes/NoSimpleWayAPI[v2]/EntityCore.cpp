@@ -917,11 +917,11 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 		nullptr
 	);
 
-	EDataContainer_VerticalNamedSlider* data = new EDataContainer_VerticalNamedSlider();
+	EDataContainer_VerticalNamedSlider*
+	data = new EDataContainer_VerticalNamedSlider();
 	EntityButton::get_last_custom_data(jc_button)->data_container = data;
 	//data->slider_style = _style;
 	data->operable_area_size_x = _region_gabarite->size_x - _style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_x_in_pixels;
-	
 
 	EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_update_horizontal_named_slider);
 	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_horizontal_named_slider);
@@ -932,7 +932,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	//SLIDER LINE
 	{
 		ESpriteLayer*
-			brick_line_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
+		brick_line_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
 
 		data->pointer_to_brick_line_sprite_layer = brick_line_layer;
 		jc_button->sprite_layer_list.push_back(brick_line_layer);
@@ -942,7 +942,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	{
 		ESpriteLayer*
 		digit_section = ESpriteLayer::create_default_sprite_layer(nullptr);
-		digit_section->offset_x = 2.0f;
+		digit_section->offset_x = 0.0f;
 		data->pointer_to_digit_section_sprite_layer = digit_section;
 		jc_button->sprite_layer_list.push_back(digit_section);
 	}
@@ -969,6 +969,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	jc_text_area->offset_by_text_size_y = -1.0;
 
 	jc_text_area->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left;
+	//jc_text_area->offset_border[BorderSide::LEFT] = 8.0f;
 
 	jc_text_area->change_text(_ltext.localisations[ELocalisationText::active_localisation]);
 	data->pointer_to_text_area = jc_text_area;
@@ -982,7 +983,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	//DIGIT TEXT
 	EClickableArea* clickable_area_for_digit_section = EClickableArea::create_default_clickable_region
 	(
-		new ERegionGabarite(2.0f, 0.0f, 35.0f, 18.0f),
+		new ERegionGabarite(_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left - 2.0f, 0.0f, 35.0f, 18.0f),
 		jc_button,
 		nullptr
 	);
@@ -993,10 +994,15 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 
 	ETextArea*
 	text_area_digit_segment = ETextArea::create_centered_to_left_text_area(clickable_area_for_digit_section, _font, ELocalisationText::empty_localisation);
-	text_area_digit_segment->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left + 4.0f;
-	text_area_digit_segment->can_be_edited = false;
-	text_area_digit_segment->can_change_localisation = false;
+	//text_area_digit_segment->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left * 0.0f;
+
+	text_area_digit_segment->can_be_edited = true;
+	text_area_digit_segment->can_change_localisation = true;
+	
+	text_area_digit_segment->autoerase_text = true;
+
 	data->pointer_to_digit_text_area = text_area_digit_segment;
+	
 
 	Entity::add_text_area_to_last_clickable_region(jc_button, text_area_digit_segment);
 
@@ -1014,8 +1020,8 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 	EFont*							_font,
 	EGUIStyle*						_style,
 	ELocalisationText				_text,
-	HRA_color_collection*	_color_collection,
-	HSVRGBAColor*			_color,
+	HRA_color_collection*			_color_collection,
+	HSVRGBAColor*					_color,
 	ColorButtonMode					_mode
 )
 {
@@ -1030,6 +1036,8 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 		_parent_group,
 		nullptr
 	);
+
+
 
 	//EDataContainer_Button_StoreColor* data = new EDataContainer_Button_StoreColor();
 	//if (!data->stored_color->is_from_collection)
@@ -1075,7 +1083,61 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 		jc_text_area->action_on_finalize_text.push_back(&EDataActionCollection::action_deactive_text_area);
 
 		jc_button->add_default_description_by_key("description_color_selector");
+
+
+
+
+
+
+
+
+		//add new clickable area (close X)
+		EClickableArea*
+			close_clickable_area = EClickableArea::create_default_clickable_region
+			(
+				new ERegionGabarite(16.0f, 16.0f),
+				jc_button,
+				EntityButton::get_last_custom_data(jc_button)
+			);
+
+		//jc_button->pointer_to_close_area = close_clickable_area;
+		close_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_delete_entity);
+
+		close_clickable_area->region_gabarite->offset_by_parent_size_x = 1.0f;
+		close_clickable_area->region_gabarite->offset_by_parent_size_y = 1.0f;
+
+		close_clickable_area->region_gabarite->offset_by_size_x = -1.0f;
+		close_clickable_area->region_gabarite->offset_by_size_y = -1.0f;
+
+		close_clickable_area->region_gabarite->offset_by_pixels_x = -3.0f;
+		close_clickable_area->region_gabarite->offset_by_pixels_y = -3.0f;
+
+		close_clickable_area->draw_only_is_specific_region_overlapped = jc_button->main_clickable_area->region_gabarite;
+
+		jc_button->main_custom_data->clickable_area_list.push_back(close_clickable_area);
+		jc_button->main_clickable_area->region_gabarite->add_child_to_this_region(close_clickable_area->region_gabarite);
+
+		ESpriteLayer* third_sprite_layer =
+			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+			(
+				NS_DefaultGabarites::texture_close_circle,
+
+				0.0f,
+				0.0f,
+				0.0f,
+
+				16.0f,
+				16.0f,
+				0.0f
+			);
+
+		close_clickable_area->sprite_layer_list.push_back(third_sprite_layer);
 	}
+
+
+
+
+	
 
 
 	return jc_button;
@@ -1505,6 +1567,7 @@ void EntityButton::make_default_bool_switcher_button(ERegionGabarite* _region_ga
 		&EDataActionCollection::action_draw_boolean_switcher
 	);
 }
+
 
 
 
@@ -1980,8 +2043,8 @@ void action_generate_vertex_for_horizontal_named_slider(EntityButton* _but, EGUI
 
 	data->slider_style = _style;
 
-	data->pointer_to_digit_text_area->offset_border[BorderSide::LEFT]	= 0.0f;
-	data->pointer_to_text_area->offset_border[BorderSide::LEFT]			= 0.0f;
+	//data->pointer_to_digit_text_area->offset_border[BorderSide::LEFT]		= 0.0f;
+	//data->pointer_to_text_area->offset_border[BorderSide::LEFT]			= 0.0f;
 	//data->pointer_to_digit_section_sprite_layer
 
 	//DIGIN SECTION
@@ -2307,6 +2370,21 @@ EntityButtonConfirmAction::~EntityButtonConfirmAction()
 
 EntityButtonColorButton::~EntityButtonColorButton()
 {
+	if (selected_mode == ColorButtonMode::CBM_SELECT_COLOR)
+	{
+		Helper::registered_color_list.erase
+		(
+			std::find
+			(
+				Helper::registered_color_list.begin(),
+				Helper::registered_color_list.end(),
+				parent_color_collection
+			)
+		);
+
+		delete parent_color_collection;
+	}
+
 	if (debug_deleting) { EInputCore::logger_simple_info("deleting EntityButtonColorButton"); }
 }
 

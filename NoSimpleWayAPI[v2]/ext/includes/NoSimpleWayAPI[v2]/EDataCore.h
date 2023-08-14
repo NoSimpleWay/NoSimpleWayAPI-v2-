@@ -393,7 +393,7 @@ public:
 	ETextArea*		pointer_to_digit_text_area;
 
 	float					operable_area_size_x;
-	float					current_value;
+	float					current_slide_value;
 
 
 
@@ -405,6 +405,7 @@ public:
 	float* pointer_to_value;
 
 	bool					force_shift = false;
+	bool					rounded_numbers = false;
 
 	data_action_pointer		additional_action_on_slide;
 	//EDataContainer*			additional_data_container;
