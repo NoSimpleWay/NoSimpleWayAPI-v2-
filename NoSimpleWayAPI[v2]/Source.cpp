@@ -267,7 +267,7 @@ int main()
 		EButtonGroupConfirmAction*
 		whole_close_group = new EButtonGroupConfirmAction(new ERegionGabarite(350.0f, 150.0f));
 
-		whole_close_group->init_as_confirm_decline_group();
+		whole_close_group->init_as_confirm_decline_group(EWindowMain::link_to_main_window);
 		EButtonGroupConfirmAction::confirm_decline_group = whole_close_group;
 		whole_close_group->silicon_idiot = true;
 		EWindowMain::link_to_main_window->button_group_list.push_back(whole_close_group);

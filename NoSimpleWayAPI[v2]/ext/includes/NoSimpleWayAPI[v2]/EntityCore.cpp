@@ -983,7 +983,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	//DIGIT TEXT
 	EClickableArea* clickable_area_for_digit_section = EClickableArea::create_default_clickable_region
 	(
-		new ERegionGabarite(_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left - 2.0f, 0.0f, 35.0f, 18.0f),
+		new ERegionGabarite(_style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left - 0.0f, 0.0f, 35.0f, 18.0f),
 		jc_button,
 		nullptr
 	);
@@ -2178,7 +2178,7 @@ EntityButtonVariantRouter::~EntityButtonVariantRouter()
 
 	if (opened_router_group != nullptr)
 	{
-		opened_router_group->filter_block_need_remove = true;
+		opened_router_group->block_need_remove = true;
 
 		opened_router_group = nullptr;
 	}

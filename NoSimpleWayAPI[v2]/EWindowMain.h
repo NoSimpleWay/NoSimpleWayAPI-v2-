@@ -212,11 +212,11 @@ public:
 	bool unsave_changes = false;
 };
 
-
+class EButtonGroupListedBlock;
 class EntityButtonForListedSegment : public EntityButtonForFilterBlock
 {
 public:
-	EButtonGroup* listed_group;
+	EButtonGroupListedBlock* listed_group;
 	EButtonGroup* group_with_items;
 
 	EButtonGroup* target_block_for_highlight;
@@ -324,11 +324,13 @@ public:
 	EButtonGroup* pointer_to_top_control_block_right_section;
 
 	EButtonGroup* pointer_to_ID_block;
+	EntityButton* id_button;
 	EButtonGroup* pointer_to_block_show_hide_continue;
 	EButtonGroup* pointer_to_control_group_mid_import;
 	EButtonGroup* pointer_to_control_group_mid_versions;
 	EButtonGroup* pointer_to_control_group_mid_show_hide_cosmetic;
 
+	
 
 	//color section
 	EntityButtonColorButton* pointer_to_color_button[3];
@@ -567,6 +569,16 @@ public:
 	EntityButtonForLootFilterSelector* target_filter_button;
 };
 
+
+class EButtonGroupConfirmActionDelete : public EButtonGroupConfirmAction
+{
+public:
+	EButtonGroupConfirmActionDelete(ERegionGabarite* _gabarite) :EButtonGroupConfirmAction(_gabarite) {};
+
+	EntityButton* target_button_for_deletion;
+	EButtonGroup* target_group_for_deletion;
+};
+
 struct LootFilterError
 {
 public:
@@ -626,11 +638,12 @@ public:
 	
 	
 	EButtonGroup* section_for_wide_item_buttons;
+	//EButtonGroup* pointer_to_attribute_tab;
 
 	EntityButtonVariantRouterForFilterBlock* matching_mode_router_button;
 
 	std::string				filter_attribute_name;
-	GameItemAttribute* associated_item_attribute;
+	GameItemAttribute*		associated_item_attribute;
 
 	//EntityButton*			button_with;
 	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
@@ -667,7 +680,10 @@ namespace EDataActionCollection
 	void action_select_this_text_variant(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_mark_parent_group_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_mark_filter_blocks_as_removed(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_open_mark_filter_blocks_as_removed_confirmation(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_confirmed_mark_filter_blocks_as_removed_confirmation(Entity* _entity, ECustomData* _custom_data, float _d);
+
 	void action_highlight_removed_block(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_generate_filter_block_text(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -704,8 +720,12 @@ namespace EDataActionCollection
 	void action_move_filter_block(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_move_button_group(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_delete_listed_segment(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_delete_listed_buttons(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_delete_listed_segment_confirmation(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_confirmed_deleting_listed_segment(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_open_delete_listed_buttons_confirmation(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_accept_deleting_listed_buttons(Entity* _entity, ECustomData* _custom_data, float _d);
+
 	void action_draw_deleted_group(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_open_data_entity_filter_group(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -794,7 +814,7 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND_IF_ALERT,
 	FILTER_ATTRIBUTE_VALUE_TYPE_RAY,
 	FILTER_ATTRIBUTE_VALUE_TYPE_CONTINUE,
-
+	
 
 	FILTER_ATTRIBUTE_VALUE_CONFIG_VERSIONS,
 	FILTER_ATTRIBUTE_VALUE_CONFIG_COLOR_COLLECTION,
@@ -804,7 +824,7 @@ enum FilterAttributeValueType
 
 
 
-	FILTER_ATTRIBUTE_VALUE_OLD_VERSION_AUTOGEN,
+	FILTER_ATTRIBUTE_VALUE_OLD_VERSION_AUTOGEN
 
 
 
@@ -842,7 +862,7 @@ public:
 	bool have_input_field_for_listed = false;
 	bool have_exact_match = false;
 
-
+	int							attribute_tab_priority = 0;
 
 	std::string					data_entity_tag_filtration;
 	std::string					header_localistaion_key			= "";
@@ -888,7 +908,7 @@ static std::string generate_filter_block_separator_text(EButtonGroupFilterBlockS
 
 
 static std::vector<GameItemAttribute*> registered_game_item_attributes;
-static EButtonGroup* create_block_for_listed_segment(EFilterRule* _filter_rule, GameItemAttribute* _attribute, std::string _attribute_name, EButtonGroup* _parent);
+static EButtonGroupListedBlock* create_block_for_listed_segment(EFilterRule* _filter_rule, GameItemAttribute* _attribute, std::string _attribute_name, EButtonGroup* _parent, EButtonGroupFilterBlock* _parent_filter_block);
 
 #define NSW_registered_rarity_count					4//	1|normal		2|magic			3|rare				4|unique
 #define NSW_registered_altered_gem_quality_count	4//	1|superior		2|anomalous		3|divergent			4|phantasmal
@@ -937,7 +957,10 @@ public:
 	static EButtonGroupLootSimulator*								loot_simulator_button_group;
 	static EButtonGroupFilterEditorTopHeader*						header_line;
 	static EButtonGroupLootFilterList*								existing_loot_filter_list;
+
 	static EButtonGroupConfirmActionOpenAutogeneratedLootFilter*	confirm_load_autogenerated_block;
+	static EButtonGroupConfirmActionDelete*							confirm_deletion_group;
+
 	static EButtonGroup*											info_button_group;
 	static EButtonGroup*											style_list_group;
 	static EButtonGroup*											pointer_to_joke_AD;

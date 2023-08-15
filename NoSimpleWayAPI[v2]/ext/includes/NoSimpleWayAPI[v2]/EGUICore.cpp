@@ -64,7 +64,7 @@ void EWindow::GUI_update_default(float _d)
 	bool any_remove = false;
 
 	for (int i = 0; i < button_group_list.size(); i++)
-		if ((button_group_list[i] != nullptr) && (button_group_list[i]->filter_block_need_remove))
+		if ((button_group_list[i] != nullptr) && (button_group_list[i]->block_need_remove))
 		{
 			if (!disable_deleting)
 			{
@@ -79,6 +79,8 @@ void EWindow::GUI_update_default(float _d)
 
 			any_remove = true;
 		}
+
+
 
 
 	int catched_group_id = -1;
@@ -673,6 +675,10 @@ void EButtonGroup::close_this_group()
 	destroy_all_vertex_buffer_data();
 	need_refresh = true;
 
+	if (EButtonGroup::super_focus_on_this_group == this)
+	{
+		EButtonGroup::super_focus_on_this_group = nullptr;
+	}
 
 	recursive_close_process();
 }
@@ -800,7 +806,7 @@ void EButtonGroup::button_group_update(float _d)
 
 		if (autodelete_time <= 0.0f)
 		{
-			filter_block_need_remove = true;
+			block_need_remove = true;
 		}
 	}
 
@@ -811,7 +817,25 @@ void EButtonGroup::button_group_update(float _d)
 		row->header_button_group->update(_d);
 	}*/
 	//if (highlight_time > 0.0f) { highlight_time -= _d; }
+	//EInputCore::logger_param("wtf", (group_list.size()) - 1);
 
+	if (!group_list.empty())
+	for (int i = 0; i < (int)(group_list.size()) - 1; i++)
+	if ((!group_list[i]->block_need_remove) && (group_list[i]->swap_to_next))
+	{
+		
+
+		group_list[i]->swap_to_next = false;
+
+		EButtonGroup*
+		swap = group_list[i];
+
+		group_list[i]		= group_list[i + 1];
+		group_list[i + 1]	= swap;
+
+		swap->highlight_this_group_green_info();
+		need_refresh = true;
+	}
 
 	//update_highlights
 	for (int i = 0; i < highlight_list.size(); i++)
@@ -834,7 +858,7 @@ void EButtonGroup::button_group_update(float _d)
 
 	bool any_remove = false;
 	for (int i = 0; i < group_list.size(); i++)
-		if ((group_list[i] != nullptr) && (group_list[i]->filter_block_need_remove))
+		if ((group_list[i] != nullptr) && (group_list[i]->block_need_remove))
 		{
 			if (!disable_deleting)
 			{
@@ -875,7 +899,7 @@ void EButtonGroup::button_group_update(float _d)
 
 	if (!all_button_list.empty())
 		for (unsigned int i = 0; i < all_button_list.size(); i++)
-			if (all_button_list[i]->filter_block_need_remove)
+			if (all_button_list[i]->entity_need_remove)
 			{
 				any_button_order_change = true;
 
@@ -3646,11 +3670,11 @@ EButtonGroup* EButtonGroup::add_group_scecific_position(EButtonGroup* _new_group
 	_new_group->root_group = root_group;
 
 	if
-		(
-			(_specific_position >= 0)
-			&&
-			(_specific_position < group_list.size())
-			)
+	(
+		(_specific_position >= 0)
+		&&
+		(_specific_position < group_list.size())
+	)
 	{
 		group_list.emplace(group_list.begin() + _specific_position, _new_group);
 	}
@@ -3899,6 +3923,14 @@ EButtonGroup* EButtonGroup::set_parameters(ChildAlignMode _child_align_mode, boo
 
 void EButtonGroup::activate_move_to_foreground_and_center()
 {
+	if ((parent_window != nullptr)&&(unique_id != ""))
+	{
+		for (EButtonGroup* group : parent_window->button_group_list)
+		if ((group != this) && (unique_id == group->unique_id))
+		{
+			group->close_this_group();
+		}
+	}
 	move_to_foreground_and_center();
 
 	if (!button_group_is_active)
@@ -3910,6 +3942,8 @@ void EButtonGroup::activate_move_to_foreground_and_center()
 	{
 		//move_to_foreground();
 	}
+
+	need_refresh = true;
 }
 
 void EButtonGroup::move_to_foreground()
@@ -3968,7 +4002,10 @@ void EButtonGroup::move_to_foreground_and_center()
 	float new_postition_x = round(NS_EGraphicCore::SCREEN_WIDTH / 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_x / 2.0f);
 	float new_postition_y = round(NS_EGraphicCore::SCREEN_HEIGHT / 2.0f / NS_EGraphicCore::current_zoom - region_gabarite->size_y / 2.0f);
 
-	translate_group(new_postition_x - region_gabarite->offset_x, new_postition_y - region_gabarite->offset_y, 0.0f, true);
+	//translate_group(new_postition_x - region_gabarite->offset_x, new_postition_y - region_gabarite->offset_y, 0.0f, true);
+	region_gabarite->offset_x = new_postition_x;
+	region_gabarite->offset_y = new_postition_y;
+
 	recursive_recalculate_culling_lines();
 	//need_recalculate_culling_lines = true;
 
@@ -4094,7 +4131,7 @@ void EButtonGroup::clear_group_selection()
 	parent_for_selected_groups	= nullptr;
 }
 
-void EButtonGroupConfirmAction::init_as_confirm_decline_group()
+void EButtonGroupConfirmAction::init_as_confirm_decline_group(EWindow* _window)
 {
 	init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 
@@ -4102,8 +4139,9 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 	button_group_is_active = true;
 	//can_change_position_in_vector = false;
 	close_this_group();
+	parent_window = _window;
 
-
+	unique_id = "global confirm group";
 
 	pointer_to_workspace_part = add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
 	pointer_to_workspace_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
@@ -4111,6 +4149,7 @@ void EButtonGroupConfirmAction::init_as_confirm_decline_group()
 
 	EButtonGroup*
 	bottom_part_for_buttons = pointer_to_workspace_part->add_group(new EButtonGroup(new ERegionGabarite(250.0f, 30.0f)));
+
 	bottom_part_for_buttons->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 	bottom_part_for_buttons->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 	bottom_part_for_buttons->button_size_x_override = 150.0f;
@@ -5066,7 +5105,7 @@ void EButtonGroupFastMessage::button_group_update(float _d)
 
 			if (delete_when_expire)
 			{
-				filter_block_need_remove = true;
+				block_need_remove = true;
 			}
 			else
 			{

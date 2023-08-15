@@ -351,6 +351,7 @@ class EButtonGroup
 {
 public:
 
+	std::string unique_id = "";
 	bool silicon_idiot = false;
 
 	bool is_viped = false;
@@ -456,10 +457,11 @@ public:
 
 	ButtonGroupChangeAfterRemove change_after_remove = ButtonGroupChangeAfterRemove::CHANGE_ONLY_DELETED_ELEMENT;
 
-	bool filter_block_need_remove = false;
+	bool block_need_remove = false;
 	bool need_refresh = false;
 	bool need_change = false;
 	bool need_recalculate_culling_lines = false;
+	bool swap_to_next = false;
 
 	float scroll_x = (0.0f);
 	float scroll_y = (0.0f);
@@ -775,16 +777,19 @@ class EButtonGroupConfirmAction : public EButtonGroup
 public:
 	EButtonGroupConfirmAction(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	EntityButtonConfirmAction* pointer_to_confirm_button;
-	EntityButtonConfirmAction* pointer_to_decline_button;
+	EntityButtonConfirmAction*	pointer_to_confirm_button;
+	EntityButtonConfirmAction*	pointer_to_decline_button;
 
-	EButtonGroup* pointer_to_workspace_part;
-	ETextArea* pointer_to_description_text_area;
+	EButtonGroup*				pointer_to_workspace_part;
+	ETextArea*					pointer_to_description_text_area;
+
+	EButtonGroup*				group_invoker;
+	EntityButton*				button_invoker;
 
 	//data_action_pointer				action_on_accept;
 	//data_action_pointer				action_on_decline;
 
-	void								init_as_confirm_decline_group();
+	void								init_as_confirm_decline_group(EWindow* _window);
 	
 	//EButtonGroupConfirmAction::confirm_decline_group->pointer_to_confirm_button->stored_action = &EDataActionCollection::action_open_loot_filters_list_window;
 

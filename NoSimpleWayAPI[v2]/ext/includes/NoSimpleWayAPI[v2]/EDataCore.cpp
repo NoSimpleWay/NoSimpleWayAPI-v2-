@@ -353,7 +353,7 @@ void EDataActionCollection::action_close_root_group(Entity* _entity, ECustomData
 
 void EDataActionCollection::action_delete_entity(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	_entity->filter_block_need_remove = true;
+	_entity->entity_need_remove = true;
 
 	EInputCore::logger_simple_info("try mark as removed");
 }
@@ -1448,7 +1448,7 @@ void EDataActionCollection::action_delete_vertical_router_variants_group(EButton
 {
 	EButtonGroupRouterVariant* group_vertical_variant = static_cast<EButtonGroupRouterVariant*>(_group);
 
-	group_vertical_variant->filter_block_need_remove = true;
+	group_vertical_variant->block_need_remove = true;
 	group_vertical_variant->target_router_button->opened_router_group = nullptr;
 }
 
@@ -1701,7 +1701,7 @@ void EDataActionCollection::action_select_rotate_variant_from_list(Entity* _enti
 
 
 	target_button->select_variant(router_selector_button->id);
-	target_group->filter_block_need_remove = true;
+	target_group->block_need_remove = true;
 	target_group->close_this_group();
 
 	for (data_action_pointer dap : target_button->action_on_choose_variant_from_window)
