@@ -288,7 +288,8 @@ void EDataActionCollection::action_highlight_button_if_overlap(Entity* _entity, 
 		//(((EntityButton*)_entity)->have_phantom_draw)
 	)
 	{
-		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.15f);
+		//NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.15f);
+		//NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.15f);
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
@@ -2265,6 +2266,29 @@ void EClickableArea::draw()
 			}
 		}
 
+		if (active_clickable_region == this)
+		{
+			//NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_GREEN, 0.15f);
+			NS_EGraphicCore::set_active_color(0.5f, 0.8f, 0.2f, 0.32f);
+
+			ERenderBatcher::if_have_space_for_data(batcher_for_default_draw, 1);
+
+			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+			(
+				batcher_for_default_draw->vertex_buffer,
+				batcher_for_default_draw->last_vertice_buffer_index,
+
+				region_gabarite->world_position_x,
+				region_gabarite->world_position_y,
+
+				region_gabarite->size_x,
+				region_gabarite->size_y,
+
+				NS_DefaultGabarites::texture_gabarite_white_pixel
+			);
+		}
+
+
 		if
 		(
 			(batcher_for_default_draw != nullptr)
@@ -3206,6 +3230,11 @@ void ETextParser::split_data_entity_list_to_named_structs()
 				target_named_struct->data_entity_list[index].push_back(data_entity);
 			}
 		}
+
+		//if (data_entity_name == "Contracts")
+		//{
+		//	int xy = 0;
+		//}
 	}
 
 	for (int i = 0; i < 16; i++)

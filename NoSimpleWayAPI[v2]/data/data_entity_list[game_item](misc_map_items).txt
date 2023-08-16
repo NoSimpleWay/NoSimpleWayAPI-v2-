@@ -18,7 +18,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Timeworn Reliquary Key"
+	[tag]"name EN"		[value]"Timeworn Reliquary Keys"
 	[tag]"name RU"		[value]"Ключ Реликвария"
 
 	[tag]"icon path"	[value]"timeworn_reliquary_key"
@@ -36,7 +36,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ключ от Реликвария ваал"
 
 	[tag]"icon path"	[value]"vaal_reliquary"
-	[tag]"base class"	[value]"Timeworn Reliquary Key"
+	[tag]"base class"	[value]"Timeworn Reliquary Keys"
 	
 	[tag]"item tag"		[value]"Deleted"
 

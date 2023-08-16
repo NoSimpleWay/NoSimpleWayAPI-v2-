@@ -836,6 +836,21 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
+	[tag]"name EN"		[value]"Fire of Unknown Origin"
+	[tag]"name RU"		[value]"Огонь незнамо откуда"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
 	[tag]"name EN"		[value]"From Bone to Ashes"
 	[tag]"name RU"		[value]"От костей к пеплу"
 
@@ -909,6 +924,21 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Trash"
+
+
+	[tag]"item width"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"The Fortunate"
+	[tag]"name RU"		[value]"Счастливец"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 
 
 	[tag]"item width"	[value]"1"

@@ -1150,6 +1150,9 @@ public:
 
 	static void register_all_deleted_items();
 
+
+
+
 	//CRUCIBLE FOLDER
 	static void register_new_folder_crucible_items();
 		static void register_crubible_deleted_items();
@@ -1162,6 +1165,27 @@ public:
 		static void register_crubible_divinations();
 	////////////////////////////////////////////////////////////////////////
 
+
+
+
+	//ANCESTOR TRIAL FOLDER
+		static void register_new_folder_ancestors_items();
+
+		static void register_ancestors_deleted_items();
+		static void register_ancestors_changed_items();
+		static void register_ancestors_divinations();
+
+		static void register_ancestors_small_tattoo();
+		static void register_ancestors_honoured_tattoo();
+		static void register_ancestors_loyalty_tattoo();
+
+		static void register_ancestors_currency();
+
+		static void register_ancestors_sanctum_items();
+
+		static void register_ancestors_omens();
+
+		////////////////////////////////////////////////////////////////////////
 
 
 	static void set_color_version(HSVRGBAColor* _target_color, int _selected_mode);

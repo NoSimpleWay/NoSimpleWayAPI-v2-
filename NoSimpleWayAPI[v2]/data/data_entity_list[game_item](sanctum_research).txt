@@ -1,0 +1,90 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Forbidden Tome"
+	[tag]"name RU"		[value]"Запретный том"
+	
+	[tag]"base class"	[value]"Sanctum Research"
+	
+	[tag]"icon path"	[value]"forbidden_tome"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Sanctum item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sanctum Archives Research"
+	[tag]"name RU"		[value]"Исследование Архивов святилища"
+	
+	[tag]"base class"	[value]"Sanctum Research"
+	
+	[tag]"icon path"	[value]"sanctum_research_page"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Sanctum item"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sanctum Vaults Research"
+	[tag]"name RU"		[value]"Исследование Подвалов святилища"
+	
+	[tag]"base class"	[value]"Sanctum Research"
+	
+	[tag]"icon path"	[value]"sanctum_research_page"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Sanctum item"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sanctum Cathedral Research"
+	[tag]"name RU"		[value]"Исследование Собора святилища"
+	
+	[tag]"base class"	[value]"Sanctum Research"
+	
+	[tag]"icon path"	[value]"sanctum_research_page"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Sanctum item"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sanctum Necropolis Research"
+	[tag]"name RU"		[value]"Исследование Некрополя святилища"
+	
+	[tag]"base class"	[value]"Sanctum Research"
+	
+	[tag]"icon path"	[value]"sanctum_research_page"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Sanctum item"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"

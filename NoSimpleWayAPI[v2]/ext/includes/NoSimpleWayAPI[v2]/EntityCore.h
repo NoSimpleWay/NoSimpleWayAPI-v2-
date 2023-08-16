@@ -413,6 +413,8 @@ public:
 		ERegionGabarite* _region_gabarite
 	);
 
+	EClickableArea* create_clickable_region_witch_sprtite_layer_and_icon(ERegionGabarite* _region_gabarite, ETextureGabarite* _icon, data_action_pointer _action);
+
 	EClickableArea* add_close_circle(data_action_pointer _dap);
 
 	bool can_get_access_to_style();
@@ -543,6 +545,8 @@ class EntityButtonWideItem : public EntityButton
 {
 public:
 	EClickableArea* pointer_to_close_area;
+
+	ELocalisationText localised_name;
 
 	static EntityButtonWideItem* create_wide_item_button
 	(

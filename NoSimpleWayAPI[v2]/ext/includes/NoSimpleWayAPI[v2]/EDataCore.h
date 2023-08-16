@@ -231,6 +231,8 @@ public:
 	static EClickableArea* create_default_clickable_region(ERegionGabarite* _gabarite, Entity* _parent_entity, ECustomData* _custom_data);
 	static EClickableArea* create_default_clickable_region(ERegionGabarite* _gabarite, EButtonGroup* _parent_button_group);
 
+	
+
 	void update(float _d);
 	void draw();
 
@@ -465,7 +467,7 @@ public:
 class EDataContainer_Group_StoreFilterRuleForDataEntitySearcher : public EDataContainer
 {
 public:
-	EButtonGroup* target_group;
+	EButtonGroup* target_group_receiver;
 	std::string search_tag = "";
 	EFilterRule* filter_rule;
 

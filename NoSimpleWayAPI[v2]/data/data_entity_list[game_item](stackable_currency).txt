@@ -1403,6 +1403,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Crucible league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Trial of the Ancestors"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -1425,6 +1427,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Crucible league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Trial of the Ancestors"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -1448,6 +1452,2700 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Crucible league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Trial of the Ancestors"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hinekora's Lock"
+	[tag]"name RU"		[value]"Прядь Хинекоры"
+
+	[tag]"icon path"	[value]"Hinekora_lock"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Silver Coin"
+	[tag]"name RU"		[value]"Серебряная монета"
+
+	[tag]"icon path"	[value]"Silver_Coin_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Ngamahu Firewalker"
+	[tag]"name RU"		[value]"Татуировка Огненного ходока Нгамаху"
+
+	[tag]"icon path"	[value]"Ngamahu_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Ngamahu Shaman"
+	[tag]"name RU"		[value]"Татуировка Шамана Нгамаху"
+
+	[tag]"icon path"	[value]"Ngamahu_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Ngamahu Warrior"
+	[tag]"name RU"		[value]"Татуировка Воина Нгамаху"
+
+	[tag]"icon path"	[value]"Ngamahu_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Ngamahu Warmonger"
+	[tag]"name RU"		[value]"Татуировка Зачинщика войны Нгамаху"
+
+	[tag]"icon path"	[value]"Ngamahu_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Ngamahu Woodcarver"
+	[tag]"name RU"		[value]"Татуировка Резчика по дереву Нгамаху"
+
+	[tag]"icon path"	[value]"Ngamahu_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Ngamahu Makanga"
+	[tag]"name RU"		[value]"Татуировка Маканги Нгамаху"
+
+	[tag]"icon path"	[value]"Ngamahu_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Kitava Blood Drinker"
+	[tag]"name RU"		[value]"Татуировка Кровопийцы Китавы"
+
+	[tag]"icon path"	[value]"Kaitava_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Kitava Rebel"
+	[tag]"name RU"		[value]"Татуировка Смутьяна Китавы"
+
+	[tag]"icon path"	[value]"Kaitava_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Kitava Warrior"
+	[tag]"name RU"		[value]"Татуировка Воина Китавы"
+
+	[tag]"icon path"	[value]"Kaitava_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Kitava Heart Eater"
+	[tag]"name RU"		[value]"Татуировка Пожирателя сердец Китавы"
+
+	[tag]"icon path"	[value]"Kaitava_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Kitava Shaman"
+	[tag]"name RU"		[value]"Татуировка Шамана Китавы"
+
+	[tag]"icon path"	[value]"Kaitava_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Kitava Makanga"
+	[tag]"name RU"		[value]"Татуировка Маканги Китавы"
+
+	[tag]"icon path"	[value]"Kaitava_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tukohama Shaman"
+	[tag]"name RU"		[value]"Татуировка Шамана Тукохамы"
+
+	[tag]"icon path"	[value]"Tukohama_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tukohama Warrior"
+	[tag]"name RU"		[value]"Татуировка Воина Тукохамы"
+
+	[tag]"icon path"	[value]"Tukohama_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tukohama Brawler"
+	[tag]"name RU"		[value]"Татуировка Поединщика Тукохамы"
+
+	[tag]"icon path"	[value]"Tukohama_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tukohama Warmonger"
+	[tag]"name RU"		[value]"Татуировка Зачинщика войны Тукохамы"
+
+	[tag]"icon path"	[value]"Tukohama_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tukohama Warcaller"
+	[tag]"name RU"		[value]"Татуировка Глашатая войны Тукохамы"
+
+	[tag]"icon path"	[value]"Tukohama_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tukohama Makanga"
+	[tag]"name RU"		[value]"Татуировка Маканги Тукохамы"
+
+	[tag]"icon path"	[value]"Tukohama_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Rongokurai Warrior"
+	[tag]"name RU"		[value]"Татуировка Воина Ронгокураи"
+
+	[tag]"icon path"	[value]"Rongokurai_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Rongokurai Brute"
+	[tag]"name RU"		[value]"Татуировка Громилы Ронгокураи"
+
+	[tag]"icon path"	[value]"Rongokurai_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Rongokurai Goliath"
+	[tag]"name RU"		[value]"Татуировка Голиафа Ронгокураи"
+
+	[tag]"icon path"	[value]"Rongokurai_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Rongokurai Goliath"
+	[tag]"name RU"		[value]"Татуировка Голиафа Ронгокураи"
+
+	[tag]"icon path"	[value]"Rongokurai_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Rongokurai Turtle"
+	[tag]"name RU"		[value]"Татуировка Черепахи Ронгокураи"
+
+	[tag]"icon path"	[value]"Rongokurai_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Rongokurai Guard"
+	[tag]"name RU"		[value]"Татуировка Черепахи Стражника"
+
+	[tag]"icon path"	[value]"Rongokurai_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Rongokurai Makanga"
+	[tag]"name RU"		[value]"Татуировка Черепахи Маканги"
+
+	[tag]"icon path"	[value]"Rongokurai_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tasalio Bladedancer"
+	[tag]"name RU"		[value]"Татуировка Танцующего с клинками Тасалио"
+
+	[tag]"icon path"	[value]"Tasalio_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tasalio Tideshifter"
+	[tag]"name RU"		[value]"Татуировка Волнореза Тасалио"
+
+	[tag]"icon path"	[value]"Tasalio_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tasalio Shaman"
+	[tag]"name RU"		[value]"Татуировка Шамана Тасалио"
+
+	[tag]"icon path"	[value]"Tasalio_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tasalio Warrior"
+	[tag]"name RU"		[value]"Татуировка Воина Тасалио"
+
+	[tag]"icon path"	[value]"Tasalio_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tasalio Scout"
+	[tag]"name RU"		[value]"Татуировка Разведчика Тасалио"
+
+	[tag]"icon path"	[value]"Tasalio_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tasalio Makanga"
+	[tag]"name RU"		[value]"Татуировка Маканги Тасалио"
+
+	[tag]"icon path"	[value]"Tasalio_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Arohongui Moonwarden"
+	[tag]"name RU"		[value]"Татуировка Хранителя луны Арохонгуи"
+
+	[tag]"icon path"	[value]"Arohongui_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Arohongui Scout"
+	[tag]"name RU"		[value]"Татуировка Разведчика Арохонгуи"
+
+	[tag]"icon path"	[value]"Arohongui_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Arohongui Warrior"
+	[tag]"name RU"		[value]"Татуировка Воина Арохонгуи"
+
+	[tag]"icon path"	[value]"Arohongui_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Arohongui Warmonger"
+	[tag]"name RU"		[value]"Татуировка Зачинщика войны Арохонгуи"
+
+	[tag]"icon path"	[value]"Arohongui_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Arohongui Shaman"
+	[tag]"name RU"		[value]"Татуировка Шамана Арохонгуи"
+
+	[tag]"icon path"	[value]"Arohongui_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Arohongui Makanga"
+	[tag]"name RU"		[value]"Татуировка Маканги Арохонгуи"
+
+	[tag]"icon path"	[value]"Arohongui_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Ramako Scout"
+	[tag]"name RU"		[value]"Татуировка Разведчика Рамако"
+
+	[tag]"icon path"	[value]"Ramako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Ramako Archer"
+	[tag]"name RU"		[value]"Татуировка Лучника Рамако"
+
+	[tag]"icon path"	[value]"Ramako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Ramako Sniper"
+	[tag]"name RU"		[value]"Татуировка Снайпера Рамако"
+
+	[tag]"icon path"	[value]"Ramako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Ramako Fleetfoot"
+	[tag]"name RU"		[value]"Татуировка Гонца Рамако"
+
+	[tag]"icon path"	[value]"Ramako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Ramako Shaman"
+	[tag]"name RU"		[value]"Татуировка Шамана Рамако"
+
+	[tag]"icon path"	[value]"Ramako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Makanga"
+	[tag]"name RU"		[value]"Татуировка Маканги Рамако"
+
+	[tag]"icon path"	[value]"Ramako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Hinekora Warrior"
+	[tag]"name RU"		[value]"Татуировка Воина Хинекоры"
+
+	[tag]"icon path"	[value]"Hinekora_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Hinekora Deathwarden"
+	[tag]"name RU"		[value]"Татуировка Стража смерти Хинекоры"
+
+	[tag]"icon path"	[value]"Hinekora_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Hinekora Shaman"
+	[tag]"name RU"		[value]"Татуировка Шамана Хинекоры"
+
+	[tag]"icon path"	[value]"Hinekora_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Hinekora Storyteller"
+	[tag]"name RU"		[value]"Татуировка Сказителя Хинекоры"
+
+	[tag]"icon path"	[value]"Hinekora_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Hinekora Warmonger"
+	[tag]"name RU"		[value]"Татуировка Зачинщика войны Хинекоры"
+
+	[tag]"icon path"	[value]"Hinekora_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Hinekora Makanga"
+	[tag]"name RU"		[value]"Татуировка Маканги Хинекоры"
+
+	[tag]"icon path"	[value]"Hinekora_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tawhoa Naturalist"
+	[tag]"name RU"		[value]"Татуировка Натуралиста Тахоа"
+
+	[tag]"icon path"	[value]"Tawhoa_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tawhoa Scout"
+	[tag]"name RU"		[value]"Татуировка Разведчика Тахоа"
+
+	[tag]"icon path"	[value]"Tawhoa_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tawhoa Warrior"
+	[tag]"name RU"		[value]"Татуировка Воина Тахоа"
+
+	[tag]"icon path"	[value]"Tawhoa_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tawhoa Herbalist"
+	[tag]"name RU"		[value]"Татуировка Травника Тахоа"
+
+	[tag]"icon path"	[value]"Tawhoa_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tawhoa Shaman"
+	[tag]"name RU"		[value]"Татуировка Травника Тахоа"
+
+	[tag]"icon path"	[value]"Tawhoa_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Tawhoa Makanga"
+	[tag]"name RU"		[value]"Татуировка Маканги Тахоа"
+
+	[tag]"icon path"	[value]"Tawhoa_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Valako Stormrider"
+	[tag]"name RU"		[value]"Татуировка Наездника бури Валако"
+
+	[tag]"icon path"	[value]"Valako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Valako Scout"
+	[tag]"name RU"		[value]"Татуировка Разведчика Валако"
+
+	[tag]"icon path"	[value]"Valako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Valako Warrior"
+	[tag]"name RU"		[value]"Татуировка Воина Валако"
+
+	[tag]"icon path"	[value]"Valako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Valako Shieldbearer"
+	[tag]"name RU"		[value]"Татуировка Щитоносца Валако"
+
+	[tag]"icon path"	[value]"Valako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Valako Shaman"
+	[tag]"name RU"		[value]"Татуировка Шамана Валако"
+
+	[tag]"icon path"	[value]"Valako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tattoo of the Valako Makanga"
+	[tag]"name RU"		[value]"Татуировка Маканги Валако"
+
+	[tag]"icon path"	[value]"Valako_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Regular tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Dove"
+	[tag]"name RU"		[value]"Почётная татуировка голубя"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Sky"
+	[tag]"name RU"		[value]"Почётная татуировка неба"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Tuatara"
+	[tag]"name RU"		[value]"Почётная татуировка туатары"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Pillager"
+	[tag]"name RU"		[value]"Почётная татуировка грабителя"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Turtle"
+	[tag]"name RU"		[value]"Почётная татуировка черепахи"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Oak"
+	[tag]"name RU"		[value]"Почётная татуировка дуба"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Hatungo"
+	[tag]"name RU"		[value]"Почётная татуировка хатанго"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Flock"
+	[tag]"name RU"		[value]"Почётная татуировка стаи"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Warlord"
+	[tag]"name RU"		[value]"Почётная татуировка военачальника"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Mountain"
+	[tag]"name RU"		[value]"Почётная татуировка горы"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Pa"
+	[tag]"name RU"		[value]"Почётная татуировка Па"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Hunter"
+	[tag]"name RU"		[value]"Почётная татуировка охотника"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Barbarian"
+	[tag]"name RU"		[value]"Почётная татуировка варвара"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Berserker"
+	[tag]"name RU"		[value]"Почётная татуировка берсерка"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Wise"
+	[tag]"name RU"		[value]"Почётная татуировка мудреца"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the Storm"
+	[tag]"name RU"		[value]"Почётная татуировка бури"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Honoured Tattoo of the потопа"
+	[tag]"name RU"		[value]"Почётная татуировка голубя"
+
+	[tag]"icon path"	[value]"Honoured_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Honoured tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty Tattoo of Kaom"
+	[tag]"name RU"		[value]"Татуировка верности Каому"
+
+	[tag]"icon path"	[value]"Loyalty_Ngamahu_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Loyalty tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty Tattoo of Utula"
+	[tag]"name RU"		[value]"Татуировка верности Утуле"
+
+	[tag]"icon path"	[value]"Loyalty_Utula_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Loyalty tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty Tattoo of Akoya"
+	[tag]"name RU"		[value]"Татуировка верности Акойе"
+
+	[tag]"icon path"	[value]"Loyalty_Akoya_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Loyalty tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty Tattoo of Kahuturoa"
+	[tag]"name RU"		[value]"Татуировка верности Кахутуруа"
+
+	[tag]"icon path"	[value]"Loyalty_Kahuturoa_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Loyalty tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty Tattoo of Kahuturoa"
+	[tag]"name RU"		[value]"Татуировка верности Кахутуруа"
+
+	[tag]"icon path"	[value]"Loyalty_Kahuturoa_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Loyalty tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty Tattoo of Rakiata"
+	[tag]"name RU"		[value]"Татуировка верности Ракиате"
+
+	[tag]"icon path"	[value]"Loyalty_Rakiata_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Loyalty tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty Tattoo of Ikiaho"
+	[tag]"name RU"		[value]"Татуировка верности Икиао"
+
+	[tag]"icon path"	[value]"Loyalty_Ikiaho_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Loyalty tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty Tattoo of Ahuana"
+	[tag]"name RU"		[value]"Татуировка верности Ахване"
+
+	[tag]"icon path"	[value]"Loyalty_Ahuana_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Loyalty tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty Tattoo of Tawhanuku"
+	[tag]"name RU"		[value]"Татуировка верности Тавануку"
+
+	[tag]"icon path"	[value]"Loyalty_Tawhanuku_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Loyalty tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty Tattoo of Maata"
+	[tag]"name RU"		[value]"Татуировка верности Маате"
+
+	[tag]"icon path"	[value]"Loyalty_Maata_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Loyalty tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Loyalty Tattoo of Kiloava"
+	[tag]"name RU"		[value]"Татуировка верности Килоаве"
+
+	[tag]"icon path"	[value]"Loyalty_Kiloava_tattoo"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Tattoo"
+	[tag]"item tag"		[value]"Loyalty tattoo"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Amelioration"
+	[tag]"name RU"		[value]"Предсказание избавления"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Return"
+	[tag]"name RU"		[value]"Предсказание возвращения"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Death-dancing"
+	[tag]"name RU"		[value]"Предсказание танца со смертью"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Refreshment"
+	[tag]"name RU"		[value]"Предсказание восполнения"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of the Soul Devourer"
+	[tag]"name RU"		[value]"Предсказание Пожирателя душ"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Acceleration"
+	[tag]"name RU"		[value]"Предсказание ускорения"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Fortune"
+	[tag]"name RU"		[value]"Предсказание удачи"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of the Jeweller"
+	[tag]"name RU"		[value]"Предсказание златокузнеца"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Connections"
+	[tag]"name RU"		[value]"Предсказание связей"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Blanching"
+	[tag]"name RU"		[value]"Предсказание обеления"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Revenge	"
+	[tag]"name RU"		[value]"Предсказание мести"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Bequeathal"
+	[tag]"name RU"		[value]"Предсказание наследства"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Resurgence"
+	[tag]"name RU"		[value]"Предсказание возрождения"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Adrenaline"
+	[tag]"name RU"		[value]"Предсказание адреналина"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Death's Door"
+	[tag]"name RU"		[value]"Предсказание Врат Смерти"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"drop level"	[value]"1"
+	[tag]"stack multiplier"	[value]"0.5"
+	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Omen of Brilliance"
+	[tag]"name RU"		[value]"Предсказание великолепия"
+
+	[tag]"icon path"	[value]"Omen"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Omen"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"

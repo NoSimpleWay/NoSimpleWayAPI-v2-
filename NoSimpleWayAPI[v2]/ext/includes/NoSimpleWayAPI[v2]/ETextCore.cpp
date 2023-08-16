@@ -1007,7 +1007,7 @@ void ETextArea::update(float _d)
 			//std::cout << EInputCore::LAST_INPUTED_CHAR << std::endl;
 			if (selected_glyph_position >= 0)
 			{
-				original_text.insert(target_id, temp_s);
+				original_text.insert(min(target_id, original_text.size() - 1), temp_s);
 				//stored_text = "1234567";
 				selected_glyph_position++;
 			}

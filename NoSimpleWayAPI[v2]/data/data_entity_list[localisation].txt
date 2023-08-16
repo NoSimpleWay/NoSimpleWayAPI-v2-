@@ -886,6 +886,18 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"loot_pattern_folder_ancestors"
+	[tag]"name EN"		[value]"Category:\nTrial of the Ancestors"
+	[tag]"name RU"		[value]"Категория:\nИспытание предков"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"loot_pattern_folder_basic_currency"
 	[tag]"name EN"		[value]"Category:\nBasic currency"
 	[tag]"name RU"		[value]"Категория:\nОбычная валюта"
@@ -1689,33 +1701,18 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"attribute_description_enchantment"
 	[tag]"name EN"		[value]"Condition: Item have specific enchantment"
 	[tag]"name RU"		[value]"Условие: предмет имеет конкретное зачарование"
+
 	
+	
+	
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"_KEY_"
-	[tag]"name EN"		[value]"Condition: "
-	[tag]"name RU"		[value]"Условие: "
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Localisation"
-	
-	[tag]"key"			[value]"_KEY_"
-	[tag]"name EN"		[value]"Condition: "
-	[tag]"name RU"		[value]"Условие: "
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Localisation"
-	
-	[tag]"key"			[value]"_KEY_"
-	[tag]"name EN"		[value]"Condition: "
-	[tag]"name RU"		[value]"Условие: "
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Localisation"
-	
-	[tag]"key"			[value]"_KEY_"
-	[tag]"name EN"		[value]"Condition: "
-	[tag]"name RU"		[value]"Условие: "
+	[tag]"key"			[value]"rule_folder_ancestral"
+	[tag]"name EN"		[value]"Trial of the ancestors:\nnew items"
+	[tag]"name RU"		[value]"Испытание предков:\nновые предметы"
+
 	
 	
 	

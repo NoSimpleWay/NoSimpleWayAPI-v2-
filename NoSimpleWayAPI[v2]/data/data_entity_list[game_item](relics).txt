@@ -18,11 +18,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Урна"
 
 	[tag]"icon path"	[value]"urn_relic"
-	[tag]"base class"	[value]"Relic"
+	[tag]"base class"	[value]"Relics"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Crucible"
+	[tag]"item tag"		[value]"Sanctum item"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -36,11 +35,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Фолиант"
 
 	[tag]"icon path"	[value]"tome_relic"
-	[tag]"base class"	[value]"Relic"
+	[tag]"base class"	[value]"Relics"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Crucible"
+	[tag]"item tag"		[value]"Sanctum item"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -54,11 +52,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ларец"
 
 	[tag]"icon path"	[value]"coffer_relic"
-	[tag]"base class"	[value]"Relic"
+	[tag]"base class"	[value]"Relics"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Crucible"
+	[tag]"item tag"		[value]"Sanctum item"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -72,11 +69,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Курительница"
 
 	[tag]"icon path"	[value]"cencer_relic"
-	[tag]"base class"	[value]"Relic"
+	[tag]"base class"	[value]"Relics"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Crucible"
+	[tag]"item tag"		[value]"Sanctum item"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -90,11 +86,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Папирус"
 
 	[tag]"icon path"	[value]"papyrus_relic"
-	[tag]"base class"	[value]"Relic"
+	[tag]"base class"	[value]"Relics"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Crucible"
+	[tag]"item tag"		[value]"Sanctum item"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -108,11 +103,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Подсвечник"
 
 	[tag]"icon path"	[value]"candlestick_relic"
-	[tag]"base class"	[value]"Relic"
+	[tag]"base class"	[value]"Relics"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Crucible"
+	[tag]"item tag"		[value]"Sanctum item"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -126,11 +120,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кадило"
 
 	[tag]"icon path"	[value]"processional_relic"
-	[tag]"base class"	[value]"Relic"
+	[tag]"base class"	[value]"Relics"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
-	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Crucible"
+	[tag]"item tag"		[value]"Sanctum item"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -144,11 +137,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Священная реликвия"
 
 	[tag]"icon path"	[value]"sanctified_relic"
-	[tag]"base class"	[value]"Relic"
+	[tag]"base class"	[value]"Relics"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+	[tag]"item tag"		[value]"Sanctum item"
 	[tag]"item tag"		[value]"Deleted"
-	[tag]"item tag"		[value]"Deleted in Crucible"
 	
 	[tag]"worth"		[value]"Moderate"
 

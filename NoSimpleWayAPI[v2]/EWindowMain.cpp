@@ -240,7 +240,7 @@ void EDataActionCollection::action_open_mark_filter_blocks_as_removed_confirmati
 {
 
 	EWindowMain::confirm_deletion_group->button_invoker = static_cast<EntityButton*>(_entity);
-	EWindowMain::confirm_deletion_group->group_invoker = static_cast<EntityButtonForListedSegment*>(_entity)->listed_group;
+	EWindowMain::confirm_deletion_group->group_invoker = static_cast<EntityButtonForFilterBlock*>(_entity)->parent_filter_block;
 
 	EWindowMain::confirm_deletion_group->pointer_to_confirm_button->stored_action = &EDataActionCollection::action_confirmed_mark_filter_blocks_as_removed_confirmation;
 	EWindowMain::confirm_deletion_group->pointer_to_decline_button->stored_action = &EDataActionCollection::action_close_root_group;
@@ -1347,7 +1347,7 @@ void EDataActionCollection::action_open_data_entity_filter_group(Entity* _entity
 
 	EWindowMain::data_entity_filter->activate_move_to_foreground_and_center();
 
-	button_group_data_container->pointer_to_group_item_receiver = button_data_container->target_group;
+	button_group_data_container->pointer_to_group_item_receiver = button_data_container->target_group_receiver;
 
 	//button_group_data_container->target_rule = button_data_container->filter_rule;
 
@@ -2467,11 +2467,11 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 {
 	EWindowMain::make_unsaved_loot_filter_changes();
 
-	EButtonGroup* parent_group = ((EntityButton*)_entity)->parent_button_group;
-	EButtonGroup* root_group = parent_group->root_group;
-	EDataContainer_Group_DataEntitiesSearch* data = (EDataContainer_Group_DataEntitiesSearch*)root_group->data_container;
-	EButtonGroup* receiver = data->pointer_to_group_item_receiver;
-	EDataContainer_DataEntityHolder* data_entity_holder = (EDataContainer_DataEntityHolder*)_custom_data->data_container;
+	EButtonGroup*								parent_group		= ((EntityButton*)_entity)->parent_button_group;
+	EButtonGroup*								root_group			= parent_group->root_group;
+	EDataContainer_Group_DataEntitiesSearch*	data				= (EDataContainer_Group_DataEntitiesSearch*)root_group->data_container;
+	EButtonGroup*								receiver			= data->pointer_to_group_item_receiver;
+	EDataContainer_DataEntityHolder*			data_entity_holder	= (EDataContainer_DataEntityHolder*)_custom_data->data_container;
 
 	//EInputCore::logger_simple_info("!!!");
 	//EInputCore::logger_simple_info(std::to_string(_entity->custom_data_list[0]->ac));
@@ -2479,33 +2479,61 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 	float temp_width = 220.0f;
 
 	//if (data->target_rule. )
-	EntityButtonWideItem* jc_button = EntityButtonWideItem::create_wide_item_button
-	(
-		new ERegionGabarite(temp_width, 40.0f),
-		receiver,
-		data_entity_holder->stored_data_entity,
-		EFont::font_list[0],
-		true
-	);
 
-	jc_button->pointer_to_close_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
+	bool
+	already_have_this_item = false;
 
-	//jc_button->main_clickable_area->region_gabarite->child_gabarite_list[0]->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
-
-	if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+	for (EntityButton* but : receiver->workspace_button_list)
 	{
-		root_group->close_this_group();
+		EntityButtonWideItem*
+		wide_item_button = static_cast<EntityButtonWideItem*>(but);
+
+		//EDataEntity*
+		//stored_data_entity = static_cast<EDataContainer_DataEntityHolder*> (wide_item_button->main_custom_data->data_container)->stored_data_entity;
+
+		
+		
+		if (wide_item_button->main_text_area->localisation_text.base_name == static_cast<EntityButtonWideItem*>(_entity)->main_text_area->localisation_text.base_name)
+		{
+			already_have_this_item = true;
+			break;
+		}
 	}
 
-	receiver->add_button_to_working_group(jc_button);
-	//receiver->button_list.clear();
-	//EButtonGroup::change_group(receiver);
-	receiver->parent_group->parent_group->parent_group->need_change = true;
+	if (!already_have_this_item)
+	{
+		EntityButtonWideItem* jc_button = EntityButtonWideItem::create_wide_item_button
+		(
+			new ERegionGabarite(temp_width, 40.0f),
+			receiver,
+			data_entity_holder->stored_data_entity,
+			EFont::font_list[0],
+			true
+		);
 
-	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+		jc_button->pointer_to_close_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
 
-	EWindowMain::loot_simulator_button_group->delayed_execution = true;
-	EWindowMain::make_unsaved_loot_filter_changes();
+		//jc_button->main_clickable_area->region_gabarite->child_gabarite_list[0]->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes);
+
+		if (!EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
+		{
+			root_group->close_this_group();
+		}
+
+		receiver->add_button_to_working_group(jc_button);
+		//receiver->button_list.clear();
+		//EButtonGroup::change_group(receiver);
+		receiver->parent_group->parent_group->parent_group->need_change = true;
+
+		//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+
+		EWindowMain::loot_simulator_button_group->delayed_execution = true;
+		EWindowMain::make_unsaved_loot_filter_changes();
+	}
+	else
+	{
+		static_cast<EntityButton*>(_entity)->highlight_time = static_cast<EntityButton*>(_entity)->max_highlight_time;
+	}
 }
 
 void EDataActionCollection::action_show_hide_autogenerated_loot_filters(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -3028,6 +3056,10 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](wands).txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](staves).txt");
 
+	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](sanctum_research).txt");
+
+
+
 
 	ETextParser::data_entity_parse_file("data/data_entity_list[game_item](shields).txt");
 
@@ -3382,7 +3414,7 @@ EWindowMain::EWindowMain()
 
 
 			EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_entity_filter = new EDataContainer_Group_StoreFilterRuleForDataEntitySearcher();
-			data_container_entity_filter->target_group = EWindowMain::data_entity_filter;
+			data_container_entity_filter->target_group_receiver = EWindowMain::data_entity_filter;
 			data_container_entity_filter->filter_rule = EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_SKILL_GEMS];
 
 			ECustomData* custom_data_for_gem_button = new ECustomData();
@@ -3477,29 +3509,35 @@ EWindowMain::EWindowMain()
 							nullptr
 						);
 
-						ETextureGabarite* item_icon
-							=
-							NS_EGraphicCore::load_from_textures_folder
-							("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_global_list[rand() % EDataEntity::data_entity_global_list.size()]));
+						std::string
+						path_to_icon = DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_global_list[rand() % EDataEntity::data_entity_global_list.size()]);
 
-						if (item_icon != nullptr)
+						if (path_to_icon != "")
 						{
-							float resize_factor = 32.0f / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
-							resize_factor = min(resize_factor, 1.0f);
+							ETextureGabarite* item_icon
+								=
+								NS_EGraphicCore::load_from_textures_folder
+								("icons/" + path_to_icon);
 
-							jc_button->sprite_layer_list.push_back
-							(
-								ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-								(item_icon,
-									(40.0f - item_icon->size_x_in_pixels * resize_factor) / 2.0f,
-									(40.0f - item_icon->size_y_in_pixels * resize_factor) / 2.0f,
-									3.0f,
+							if (item_icon != nullptr)
+							{
+								float resize_factor = 32.0f / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
+								resize_factor = min(resize_factor, 1.0f);
 
-									item_icon->size_x_in_pixels * resize_factor,
-									item_icon->size_y_in_pixels * resize_factor,
-									0.0f
-								)
-							);
+								jc_button->sprite_layer_list.push_back
+								(
+									ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+									(item_icon,
+										(40.0f - item_icon->size_x_in_pixels * resize_factor) / 2.0f,
+										(40.0f - item_icon->size_y_in_pixels * resize_factor) / 2.0f,
+										3.0f,
+
+										item_icon->size_x_in_pixels * resize_factor,
+										item_icon->size_y_in_pixels * resize_factor,
+										0.0f
+									)
+								);
+							}
 						}
 
 						buttons_simulator->add_button_to_working_group(jc_button);
@@ -3680,12 +3718,19 @@ EWindowMain::EWindowMain()
 					button_simulator = new EntityButton();
 					group_for_imitation_buttons->add_button_to_working_group(button_simulator);
 
+					std::string
+					path_to_icon = DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_global_list[rand() % EDataEntity::data_entity_global_list.size()]);
+
 					button_simulator->make_as_default_button_with_icon
 					(
 						new ERegionGabarite(44.0f, 44.0f),
 						group_for_imitation_buttons,
 						nullptr,
-						NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_global_list[rand() % EDataEntity::data_entity_global_list.size()]))
+						(path_to_icon != "")
+						?
+						(NS_EGraphicCore::load_from_textures_folder("icons/" + path_to_icon))
+						:
+						(nullptr)
 					);
 					button_simulator->force_field_left		= 3.0f;
 					button_simulator->force_field_right		= 3.0f;
@@ -8547,7 +8592,7 @@ void EWindowMain::register_filter_rules()
 	}
 
 
-	//EUIP
+	//EQUIP
 	{
 		jc_filter_rule = new EFilterRule();
 		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Wyrmscale_Boots_inventory_icon");
@@ -8794,7 +8839,7 @@ void EWindowMain::register_filter_rules()
 
 
 
-	//CRUCIBLE DIVINATIONS
+	//ANCESTRAL DIVINATIONS
 	{
 		////////////////////////////////////////////////////////////////////////////////////////////
 		jc_filter_rule = new EFilterRule();
@@ -8802,9 +8847,10 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule->category_id = 0;
 
 		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Crucible divinations";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Горнило: новые гадальные карты";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trial of the Ancestors:\nNew divinations";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Испытание предков:\nновые гадальные карты";
 		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "ancestral folder";
 
 		//filter by game item
 		jc_filter = new DataEntityFilter();
@@ -8823,25 +8869,33 @@ void EWindowMain::register_filter_rules()
 		//filter by class "divination"
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "item tag";
-		jc_filter->suitable_values_list.push_back("Introduced: Crucible league");
+		jc_filter->suitable_values_list.push_back("Introduced: Trial of the Ancestors league");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Deleted");
+		jc_filter->suitable_values_list.push_back("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
 
 		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 	}
 
-	//CRUCIBLE CURRENCY
+	//ANCESTRAL CURRENCY
 	{
 		////////////////////////////////////////////////////////////////////////////////////////////
 		jc_filter_rule = new EFilterRule();
-		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/CrystallineGeode");
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Silver_Coin_inventory_icon");
 		jc_filter_rule->category_id = 0;
 
 		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Crucible currency";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Горнило: новая валюта";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trial of the Ancestors:\nCurrency";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Испытание предков:\nНовая валюта";
 		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "ancestral folder";
 
 		//filter by game item
 		jc_filter = new DataEntityFilter();
@@ -8860,14 +8914,279 @@ void EWindowMain::register_filter_rules()
 		//filter by class "divination"
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "item tag";
-		jc_filter->suitable_values_list.push_back("Introduced: Crucible league");
+		jc_filter->suitable_values_list.push_back("Introduced: Trial of the Ancestors league");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
+
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Deleted");
+		jc_filter->suitable_values_list.push_back("Hidden item");
+		jc_filter->suitable_values_list.push_back("Omen");
+		jc_filter->suitable_values_list.push_back("Tattoo");
+		jc_filter->suitable_values_list.push_back("Honoured tattoo");
+		jc_filter->suitable_values_list.push_back("Loyalty tattoo");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
 
 		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
 	}
 
+	//ANCESTRAL TATTOO
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Ramako_tattoo");
+		jc_filter_rule->category_id = 0;
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trial of the Ancestors:\Tattoo";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Испытание предков:\nТатуировки";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "ancestral folder";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("Stackable currency");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Regular tattoo");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Deleted");
+		jc_filter->suitable_values_list.push_back("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//ANCESTRAL HONOURED TATTOO
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Honoured_tattoo");
+		jc_filter_rule->category_id = 0;
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trial of the Ancestors:\Honoured tattoo";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Испытание предков:\nПочётные татуировки";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "ancestral folder";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("Stackable currency");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Honoured tattoo");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Deleted");
+		jc_filter->suitable_values_list.push_back("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//ANCESTRAL LOYALTLY TATTOO
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Loyalty_Maata_tattoo");
+		jc_filter_rule->category_id = 0;
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trial of the Ancestors:\Loyalty tattoo";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Испытание предков:\nТатуировки преданности";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "ancestral folder";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("Stackable currency");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Loyalty tattoo");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Deleted");
+		jc_filter->suitable_values_list.push_back("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//ANCESTRAL OMENS
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/Omen");
+		jc_filter_rule->category_id = 0;
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trial of the Ancestors:\Omens";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Испытание предков:\nПредсказания";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "ancestral folder";
+
+		//filter by game item
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "data type";
+		jc_filter->suitable_values_list.push_back("Game item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("Stackable currency");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Omen");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Deleted");
+		jc_filter->suitable_values_list.push_back("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//SANCTUM ITEM
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/forbidden_tome");
+		jc_filter_rule->category_id = 0;
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trial of the Ancestors:\Sanctum item";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Испытание предков:\nПредметы санктума";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "ancestral folder";
+
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Sanctum item");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Deleted");
+		jc_filter->suitable_values_list.push_back("Hidden item");
+	
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//filter "item tag" by 
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("Relics");
+
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+		
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	//SANCTUM RELICS
+	{
+		////////////////////////////////////////////////////////////////////////////////////////////
+		jc_filter_rule = new EFilterRule();
+		jc_filter_rule->icon_texture = NS_EGraphicCore::load_from_textures_folder("icons/coffer_relic");
+		jc_filter_rule->category_id = 0;
+
+		jc_filter_rule->localisation_text = new ELocalisationText();
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Trial of the Ancestors:\Sanctum relics";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Испытание предков:\nРеликвии санктума";
+		jc_filter_rule->tag = "Game item";
+		jc_filter_rule->named_id = "ancestral folder";
+
+
+		//filter by class "divination"
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "base class";
+		jc_filter->suitable_values_list.push_back("Relics");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+		//
+
+		//filter "item tag" by
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "item tag";
+		jc_filter->suitable_values_list.push_back("Deleted");
+		jc_filter->suitable_values_list.push_back("Hidden item");
+		jc_filter_rule->banned_tag_list.push_back(jc_filter);
+
+		//EFilterRule::registered_global_filter_rules.push_back(jc_filter_rule);
+		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
+	}
+
+	register_filter_rule_folder("ancestral folder", "Game item", "rule_folder_ancestral", "buttons/pattern_folder_ancestors");
 
 	//TRASH DIVINATIONS
 	{
@@ -12171,7 +12490,14 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	//sound_button->force_field_up = 4.0f;
 	sound_button->can_be_stretched = true;
 
-	Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
+	sound_button->create_clickable_region_witch_sprtite_layer_and_icon
+	(
+		new ERegionGabarite(20.0f, 20.0f),
+		NS_EGraphicCore::load_from_textures_folder("buttons/play_button"),
+		&EDataActionCollection::action_play_attached_sound
+	);
+
+	//Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
 	sound_button->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
 	whole_filter_block_group->pointer_to_game_sound_button = sound_button;
 	left_sound_segment->add_button_to_working_group(sound_button);
@@ -12289,7 +12615,15 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	sound_button->new_line_method = NewLineMethod::FORBIDDEN;
 	sound_button->add_default_description_by_key("description_user_sound");
 	sound_button->force_field_left = 4.0f;
-	Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
+
+	sound_button->create_clickable_region_witch_sprtite_layer_and_icon
+	(
+		new ERegionGabarite(20.0f, 20.0f),
+		NS_EGraphicCore::load_from_textures_folder("buttons/play_button"),
+		&EDataActionCollection::action_play_attached_sound
+	);
+
+	//Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
 
 	sound_button->suppressor = &whole_filter_block_group->custom_sound_suppressor_bool;
 	whole_filter_block_group->pointer_to_custom_sound_button = sound_button;
@@ -14051,9 +14385,23 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 						}
 						else
 						{
+							std::string f_sym = std::string(buffer_text.substr(0, 1));
+
 							//if attribute can have operator or exact match, read buffer as operator
-							if ((matched_item_attribute->have_exact_match) || (matched_item_attribute->have_operator))
+							if
+							(
+								(text_is_condition(f_sym))
+								&&
+								(
+									(matched_item_attribute->have_exact_match)
+									||
+									(matched_item_attribute->have_operator)
+									||
+									(matched_item_attribute->have_input_field_for_listed)
+								)
+							)
 							{
+								
 								//LISTED		for listed attributes, "==" mean "exact match"
 								if (matched_item_attribute->filter_attribute_type == FILTER_ATTRIBUTE_TYPE_LISTED)
 								{
@@ -14070,14 +14418,16 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									}
 									else//CONDITION OPERATOR FOR EXPLICIT
 									{
-										//input field for Explicit modfiers like ">= 1"
+										//if attribute have no input field, buffer is not condition
 										if (matched_item_attribute->have_input_field_for_listed)
 										{
+											//input field for Explicit modfiers like ">= 1"
 											listed_block->input_field->main_text_area->change_text(buffer_text);
 											data_part = DataOrderNames::CONDITION_OPERATOR;
 										}
-										else//not exact match, not input field, so, it wide item
+										else
 										{
+											condition_text = "";
 											data_part = DataOrderNames::VALUE;
 										}
 									}
@@ -14090,7 +14440,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										//select suitable condition variant for route button
 										//if text is condition, do something
 
-										std::string f_sym = std::string(buffer_text.substr(0, 1));
+										
 
 										if
 										(
@@ -14151,7 +14501,8 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									true
 								);
 
-							
+								wide_button->localised_name.generate_localisation(buffer_text);
+
 								wide_button->main_text_area->can_be_edited = true;
 								wide_button->main_text_area->change_text(buffer_text);
 
@@ -14287,6 +14638,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 								if (matched_data_entity != nullptr)
 								{
+									//if ()
 									EntityButtonWideItem*
 									wide_button = EntityButtonWideItem::create_wide_item_button
 									(
@@ -14685,7 +15037,7 @@ bool EWindowMain::filter_block_contains_this_text(EButtonGroupFilterBlock* _targ
 			//listed_match = false;
 
 			EButtonGroupListedBlock*
-			listed_block = (EButtonGroupListedBlock*)(button_group->data_container);
+			listed_block = (EButtonGroupListedBlock*)(button_group);
 
 			//if
 			//(
@@ -14720,7 +15072,7 @@ bool EWindowMain::filter_block_contains_this_text(EButtonGroupFilterBlock* _targ
 		for (EButtonGroup* button_group : _target_filter_block->pointer_to_non_listed_segment->group_list)
 		{
 			EButtonGroupNonListedLine*
-			non_listed_block = (EButtonGroupNonListedLine*)(button_group->data_container);
+			non_listed_block = (EButtonGroupNonListedLine*)(button_group);
 
 
 		}
@@ -14805,7 +15157,7 @@ void EWindowMain::register_loot_simulator_patterns()
 	register_all_deleted_items();
 
 	//register_crubible_items_with_passive_tree();
-	register_new_folder_crucible_items();
+	register_new_folder_ancestors_items();
 		add_force_field_for_last_pattern_folder();
 
 	register_new_folder_basic_currency();
@@ -14874,15 +15226,15 @@ void EWindowMain::register_new_folder_gems()
 
 			game_item_generator->generations_count = 8;
 			ELocalisationText l_text;
-			l_text.base_name = "Gem";
-			l_text.localisations[NSW_localisation_EN] = "Active Skill Gems";
+			l_text.base_name = "Skill Gem";
+			l_text.localisations[NSW_localisation_EN] = "Active Gem";
 			l_text.localisations[NSW_localisation_RU] = "Камень умения";
 			game_item_generator->filtered_by_exact_name = l_text;
 
 
 			l_text;
-			l_text.base_name = "Active Skill Gems";
-			l_text.localisations[NSW_localisation_EN] = "Active Skill Gems";
+			l_text.base_name = "Skill Gem";
+			l_text.localisations[NSW_localisation_EN] = "Skill Gem";
 			l_text.localisations[NSW_localisation_RU] = "Камень умения";
 			game_item_generator->add_class(l_text);
 
@@ -14901,13 +15253,13 @@ void EWindowMain::register_new_folder_gems()
 			game_item_generator->generations_count = 8;
 			ELocalisationText l_text;
 			l_text.base_name = "Support";
-			l_text.localisations[NSW_localisation_EN] = "Support Skill Gem";
+			l_text.localisations[NSW_localisation_EN] = "Support Gem";
 			l_text.localisations[NSW_localisation_RU] = "Камень поддержки";
 			game_item_generator->filtered_by_exact_name = l_text;
 
 
 			l_text;
-			l_text.base_name = "Support Skill Gems";
+			l_text.base_name = "Support Gem";
 			l_text.localisations[NSW_localisation_EN] = "Support Gem";
 			l_text.localisations[NSW_localisation_RU] = "Камень поддержки";
 			game_item_generator->add_class(l_text);
@@ -14929,15 +15281,15 @@ void EWindowMain::register_new_folder_gems()
 
 			game_item_generator->generations_count = 8;
 			ELocalisationText l_text;
-			l_text.base_name = "Gems";
-			l_text.localisations[NSW_localisation_EN] = "Corrupted Active Skill Gems";
+			l_text.base_name = "Skill Gem";
+			l_text.localisations[NSW_localisation_EN] = "Corrupted Skill Gem";
 			l_text.localisations[NSW_localisation_RU] = "Осквернённый камень умения";
 			game_item_generator->filtered_by_exact_name = l_text;
 
 
 			l_text;
-			l_text.base_name = "Active Skill Gems";
-			l_text.localisations[NSW_localisation_EN] = "Active Skill Gems";
+			l_text.base_name = "Skill Gem";
+			l_text.localisations[NSW_localisation_EN] = "Skill Gem";
 			l_text.localisations[NSW_localisation_RU] = "Камень умения";
 			game_item_generator->add_class(l_text);
 
@@ -14955,15 +15307,15 @@ void EWindowMain::register_new_folder_gems()
 
 			game_item_generator->generations_count = 8;
 			ELocalisationText l_text;
-			l_text.base_name = "Support";
-			l_text.localisations[NSW_localisation_EN] = "Corrupted Support Skill Gems";
+			l_text.base_name = "Support Gems";
+			l_text.localisations[NSW_localisation_EN] = "Corrupted Support Gem";
 			l_text.localisations[NSW_localisation_RU] = "Осквернённый камень поддержки";
 			game_item_generator->filtered_by_exact_name = l_text;
 
 
 			l_text;
-			l_text.base_name = "Support Skill Gems";
-			l_text.localisations[NSW_localisation_EN] = "Support Skill Gems";
+			l_text.base_name = "Support Gem";
+			l_text.localisations[NSW_localisation_EN] = "Support Gem";
 			l_text.localisations[NSW_localisation_RU] = "Камень поддержки";
 			game_item_generator->add_class(l_text);
 
@@ -14983,13 +15335,13 @@ void EWindowMain::register_new_folder_gems()
 			game_item_generator->generations_count = 8;
 			ELocalisationText l_text;
 			l_text.base_name = "Vaal";
-			l_text.localisations[NSW_localisation_EN] = "Vaal Active Skill Gems";
+			l_text.localisations[NSW_localisation_EN] = "Vaal Skill Gem";
 			l_text.localisations[NSW_localisation_RU] = "Камень умения Ваал";
 			game_item_generator->filtered_by_exact_name = l_text;
 
 
 			l_text;
-			l_text.base_name = "Active Skill Gems";
+			l_text.base_name = "Active Gems";
 			l_text.localisations[NSW_localisation_EN] = "Skill Gem";
 			l_text.localisations[NSW_localisation_RU] = "Камень умения";
 			game_item_generator->add_class(l_text);
@@ -15880,7 +16232,7 @@ void EWindowMain::register_pattern_reliquary_keys()
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Vault Key");
+			tag_filter->suitable_values.push_back("Vault Keys");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
@@ -18573,10 +18925,9 @@ void EWindowMain::register_new_folder_heist_items()
 			LootSimulatorTagFilter*
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Heist Cloak");
+			tag_filter->suitable_values.push_back("Heist Cloaks");
 			tag_filter->suitable_values.push_back("Heist Gear");
-			tag_filter->suitable_values.push_back("Heist Brooch");
-			tag_filter->suitable_values.push_back("Heist Gear");
+			tag_filter->suitable_values.push_back("Heist Brooches");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -18838,7 +19189,7 @@ void EWindowMain::register_new_folder_heist_items()
 			LootSimulatorTagFilter*
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Heist contract");
+			tag_filter->suitable_values.push_back("Heist contracts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
@@ -18886,7 +19237,7 @@ void EWindowMain::register_new_folder_heist_items()
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Contract");
+			tag_filter->suitable_values.push_back("Contracts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -18931,7 +19282,7 @@ void EWindowMain::register_new_folder_heist_items()
 			LootSimulatorTagFilter*
 			tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Blueprint");
+			tag_filter->suitable_values.push_back("Blueprints");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -18942,11 +19293,6 @@ void EWindowMain::register_new_folder_heist_items()
 			tag_filter->target_tag = "item tag";
 			tag_filter->banned_tags.push_back("Deleted");
 			tag_filter->banned_tags.push_back("Hidden item");
-			game_item_generator->filtered_by_tags.push_back(tag_filter);
-
-			tag_filter = new LootSimulatorTagFilter;
-			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("base class");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20402,7 +20748,7 @@ void EWindowMain::register_pattern_expedition_currency()
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Expedition Logbook");
+			tag_filter->suitable_values.push_back("Expedition Logbooks");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new LootSimulatorTagFilter;
@@ -21501,6 +21847,482 @@ void EWindowMain::register_crubible_divinations()
 	}
 }
 
+void EWindowMain::register_new_folder_ancestors_items()
+{
+	register_ancestors_deleted_items();
+	register_ancestors_changed_items();
+
+	register_ancestors_divinations();
+
+	register_ancestors_small_tattoo();
+	register_ancestors_honoured_tattoo();
+	register_ancestors_loyalty_tattoo();
+
+	register_ancestors_sanctum_items();
+
+	register_ancestors_currency();
+
+	register_ancestors_omens();
+
+
+
+	//FOLDER				localisation key				icon path
+	register_pattern_folder("loot_pattern_folder_ancestors", "buttons/pattern_folder_ancestors");
+}
+
+void EWindowMain::register_ancestors_deleted_items()
+{
+
+	LootSimulatorPattern*
+		loot_simulator_pattern = new LootSimulatorPattern;
+
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Trial of the Ancestors:\nDeleted items";
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Испытание предков:\nудалённые предметы";
+
+	loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_red_x");
+	loot_simulator_pattern->always_show = true;
+	//loot_simulator_pattern->additional_force_field_for_buttons = true;
+	/////////////////////////////			ITEM GENERATOR (ALL DELETED ITEMS)			/////////////////////////////////////////////
+	GameItemGenerator*
+		game_item_generator = new GameItemGenerator();
+	loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+	LootSimulatorTagFilter*
+		tag_filter = new LootSimulatorTagFilter;
+	tag_filter->target_tag = "item tag";
+	tag_filter->suitable_values.push_back("Deleted in Trial of the Ancestors");
+	game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+	tag_filter = new LootSimulatorTagFilter;
+	tag_filter->target_tag = "data type";
+	tag_filter->suitable_values.push_back("Game item");
+	game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+
+	LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+}
+
+void EWindowMain::register_ancestors_changed_items()
+{
+	//		MAPS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Trial of the Ancestors:\nchanged items";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Испытание предков:\nизменённые предметы";
+
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("buttons/button_refresh");
+
+		/////////////////////////////			SKILL GEM			/////////////////////////////////////////////
+		{
+			
+				GameItemGenerator*
+					game_item_generator = new GameItemGenerator();
+
+				game_item_generator->generations_count = 4;
+
+
+				ELocalisationText l_text;
+				l_text.base_name = "Active Skill Gems";
+				l_text.localisations[NSW_localisation_EN] = "Active Skill Gem";
+				l_text.localisations[NSW_localisation_RU] = "Камень умения";
+				game_item_generator->filtered_by_exact_name = l_text;
+
+				/////////////////////////////			CLASS			/////////////////////////////////////////////
+				l_text;
+				l_text.base_name = "Active Skill Gems";
+				l_text.localisations[NSW_localisation_EN] = "Active Skill Gem";
+				l_text.localisations[NSW_localisation_RU] = "Камни умений";
+				game_item_generator->add_class(l_text);
+
+				game_item_generator->add_gem_level(1.0f, 21.0f, 3.0f);
+
+				loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);	
+		}
+
+		/////////////////////////////			SUPPORT GEM			/////////////////////////////////////////////
+		{
+
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 4;
+
+
+			ELocalisationText l_text;
+			l_text.base_name = "Support Skill Gems";
+			l_text.localisations[NSW_localisation_EN] = "Support Skill Gem";
+			l_text.localisations[NSW_localisation_RU] = "Камень поддержки";
+			game_item_generator->filtered_by_exact_name = l_text;
+
+			/////////////////////////////			CLASS			/////////////////////////////////////////////
+			l_text;
+			l_text.base_name = "Support Skill Gems";
+			l_text.localisations[NSW_localisation_EN] = "Support Skill Gem";
+			l_text.localisations[NSW_localisation_RU] = "Камни поддержки";
+			game_item_generator->add_class(l_text);
+
+			game_item_generator->add_gem_level(1.0f, 21.0f, 3.0f);
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+	}
+}
+
+void EWindowMain::register_ancestors_divinations()
+{
+	//		ANCESTRAL DIVINATIONS
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Trial of the Ancestors:: divinations";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Испытание предков: гадальные карты";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/card");
+		loot_simulator_pattern->folder_enum = LootPatternFolderEnum::NEW_LEAGUE;
+
+		loot_simulator_pattern->additional_force_field_for_buttons = true;
+		/////////////////////////////			ITEM GENERATOR (MAP WITHOUT INFLUENCE)			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+
+			game_item_generator->generations_count = 1;
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Divination Cards");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Introduced: Trial of the Ancestors league");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		}
+
+
+
+
+
+
+
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_ancestors_small_tattoo()
+{
+	//		TATTO
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Trial of the Ancestors:\nTattoo";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Испытание предков:\nТатуировки";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Ramako_tattoo");
+
+
+		/////////////////////////////			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Regular tattoo");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_ancestors_honoured_tattoo()
+{
+	//		HONOURED TATTO
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Trial of the Ancestors:\nHonoured tattoo";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Испытание предков:\nПочётные татуировки";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Honoured_tattoo");
+
+
+		/////////////////////////////			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Honoured tattoo");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_ancestors_loyalty_tattoo()
+{
+	//		LOYALTY TATTO
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Trial of the Ancestors:\nLoyalty tattoo";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Испытание предков:\nТатуировки верности";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Loyalty_Maata_tattoo");
+
+
+		/////////////////////////////			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->suitable_values.push_back("Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Loyalty tattoo");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_ancestors_currency()
+{
+	//		ANCESTRALS CURRENCY ITEM
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Trial of the Ancestors:\nCurrency item";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Испытание предков:\nВалюта предков";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Silver_Coin_inventory_icon");
+
+
+		/////////////////////////////			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "base class";
+			tag_filter->suitable_values.push_back("Stackable Currency");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Introduced: Trial of the Ancestors league");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->banned_tags.push_back("Tattoo");
+			tag_filter->banned_tags.push_back("Honourable tattoo");
+			tag_filter->banned_tags.push_back("Loyalty tattoo");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_ancestors_sanctum_items()
+{
+	//		SANCTUM ITEM
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Trial of the Ancestors:\nSanctum item";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Испытание предков:\nПредметы санктума";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/forbidden_tome");
+
+
+		/////////////////////////////			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Sanctum item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
+void EWindowMain::register_ancestors_omens()
+{
+	//		OMENS ITEM
+	{
+
+		LootSimulatorPattern*
+			loot_simulator_pattern = new LootSimulatorPattern;
+
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Trial of the Ancestors:\nOmens";
+		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Испытание предков:\nПредсказания";
+		loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Omen");
+
+
+		/////////////////////////////			/////////////////////////////////////////////
+		{
+			GameItemGenerator*
+				game_item_generator = new GameItemGenerator();
+			game_item_generator->generations_count = 1;
+			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+			LootSimulatorTagFilter*
+				tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->suitable_values.push_back("Omen");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+			tag_filter = new LootSimulatorTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->banned_tags.push_back("Deleted");
+			tag_filter->banned_tags.push_back("Hidden item");
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+			game_item_generator->add_quantity(1.0f, 1.0f, 1.0f);
+		}
+
+		LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+
+	}
+}
+
 void EWindowMain::register_crubible_deleted_items()
 {
 	LootSimulatorPattern*
@@ -21900,7 +22722,7 @@ void EWindowMain::register_crubible_changed_items()
 
 		tag_filter = new LootSimulatorTagFilter;
 		tag_filter->target_tag = "base class";
-		tag_filter->suitable_values.push_back("Vault Key");
+		tag_filter->suitable_values.push_back("Vault Keys");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -23682,7 +24504,7 @@ EButtonGroupListedBlock* create_block_for_listed_segment(EFilterRule* _filter_ru
 	
 	if (data_store_filter_rule != nullptr)
 	{
-		data_store_filter_rule->target_group = listed_group_main_section;
+		data_store_filter_rule->target_group_receiver = listed_group_main_section;
 	}
 
 
@@ -24172,13 +24994,20 @@ void EButtonGroupSoundList::refresh_sound_list()
 				&EDataActionCollection::action_invoke_button_action_in_sound_group,
 				n_sound->localisation_text
 			);
+			
+			sound_button->create_clickable_region_witch_sprtite_layer_and_icon
+			(
+				new ERegionGabarite(32.0f, 32.0f),
+				NS_EGraphicCore::load_from_textures_folder("buttons/play_button"),
+				&EDataActionCollection::action_play_attached_sound
+			);
 
 			sound_button->main_text_area->localisation_text = n_sound->localisation_text;
 			sound_button->full_path = n_sound->full_path;
 			sound_button->stored_named_sound = n_sound;
 			sound_button->target_sound_group = EButtonGroup::sound_list_group;
 
-			Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
+			//Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
 
 			part_with_list->add_button_to_working_group(sound_button);
 		}
@@ -24671,6 +25500,7 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 			//default attributes [BASE CLASS]
 			if (DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity) != "")
 			{
+
 				std::string
 					raw_class_name_in_item = DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity);
 
@@ -24683,9 +25513,14 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 					if (named_struct->localised_name == "Base Class")
 					{
 						int
-							index = EStringUtils::hashFunction(raw_class_name_in_item) & 0x000000000000000F;
+						index = EStringUtils::hashFunction(raw_class_name_in_item) & 0x000000000000000F;
 						index = min(index, 15);
 						index = max(index, 0);
+
+						if (_game_item->localised_name.base_name == "Contract: Familial Contract")
+						{
+							int xxx = 0;
+						}
 
 						target_data_entity_list_for_class = &named_struct->data_entity_list[index];
 
@@ -24699,15 +25534,21 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 				std::string
 				short_name = "";
 
+				std::string
+				class_EN_name = "";
 				//search in all class data entity, to get localised names and short name
 				for (EDataEntity* d_entity : *target_data_entity_list_for_class)
 				if (!suitable_data_entity_searched)
 				{
 					//try get base name
 
-					std::string
+					
 					class_EN_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", d_entity);
+
 					short_name = DataEntityUtils::get_tag_value_by_name(0, "short name", d_entity);
+
+
+
 
 					if
 					(
@@ -24732,10 +25573,11 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 					l_text.base_name = raw_class_name_in_item;
 					l_text.localisations[NSW_localisation_EN] = raw_class_name_in_item;
 					l_text.localisations[NSW_localisation_RU] = raw_class_name_in_item;
+					short_name = "";
 				}
 
 				EGameItemAttributeContainer
-					attribute_container;
+				attribute_container;
 
 				attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_CLASS];
 				//attribute_container.attribute_value_str = DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity);
@@ -24747,9 +25589,14 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 					attribute_container.listed_value_list.push_back(ELocalisationText::generate_localisation(short_name));
 					_game_item->short_class_name = short_name;
 				}
+				else
+				{
+
+				}
 
 				_game_item->attribute_container_list.push_back(attribute_container);
 
+				
 				//EInputCore::logger_param("width", attribute_container.attribute_value);
 			}
 		}
@@ -26212,28 +27059,28 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 					//any_listed_match = true;
 
 					//		FOR EVERY BLOCK ITEM
-					for (EntityButton* block_wide_item_button : listed_block->section_for_wide_item_buttons->workspace_button_list)
-						for (ELocalisationText item_listed_value : item_attribute.listed_value_list)
+					for (EntityButton* filter_block_button : listed_block->section_for_wide_item_buttons->workspace_button_list)
+						for (ELocalisationText dropped_item_attribute : item_attribute.listed_value_list)
 						{
-							std::string button_attribute_name = "";
+							std::string filter_block_button_attribute_name = "";
 
 							EDataContainer_DataEntityHolder*
-							data_container_entity = static_cast<EDataContainer_DataEntityHolder*>(block_wide_item_button->main_custom_data->data_container);
+							data_container_entity = static_cast<EDataContainer_DataEntityHolder*>(filter_block_button->main_custom_data->data_container);
 
 
 							//		GET ITEM NAME (FROM FILTER BLOCK)
 							if (data_container_entity->stored_data_entity != nullptr)
 							{
-								button_attribute_name = DataEntityUtils::get_tag_value_by_name(0, "base name", data_container_entity->stored_data_entity);
+								filter_block_button_attribute_name = DataEntityUtils::get_tag_value_by_name(0, "base name", data_container_entity->stored_data_entity);
 
-								if (button_attribute_name == "")
+								if (filter_block_button_attribute_name == "")
 								{
-									button_attribute_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", data_container_entity->stored_data_entity);
+									filter_block_button_attribute_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", data_container_entity->stored_data_entity);
 								}
 							}
 							else
 							{
-								button_attribute_name = block_wide_item_button->main_text_area->original_text;
+								filter_block_button_attribute_name = filter_block_button->main_text_area->original_text;
 							}
 
 							if
@@ -26246,10 +27093,10 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 									&&
 									EStringUtils::A_contains_B_ignore_case
 									(
-										item_listed_value.base_name,	//item
-										button_attribute_name		//block
+										filter_block_button_attribute_name,	//item
+										dropped_item_attribute.base_name	//block
 									)
-									)
+								)
 								||
 								//		EXACT MATCH
 								(
@@ -26260,19 +27107,20 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 									)
 									&&
 									(
-										item_listed_value.base_name	//item
+										dropped_item_attribute.base_name	//item
 										==
-										button_attribute_name		//block
+										filter_block_button_attribute_name		//block
 									)
 									)
 							)
 							{
 
 
+								//EInputCore::logger_simple_info("A: " + dropped_item_attribute.base_name + " B: " + filter_block_button_attribute_name);
 								listed_match_count++;
 
 								//if (item_attribute.target_attribute->localisation.base_name == "")
-								_loot_button->suitable_buttons_list.push_back(block_wide_item_button);
+								_loot_button->suitable_buttons_list.push_back(filter_block_button);
 
 
 								if (!listed_block->associated_item_attribute->have_input_field_for_listed)

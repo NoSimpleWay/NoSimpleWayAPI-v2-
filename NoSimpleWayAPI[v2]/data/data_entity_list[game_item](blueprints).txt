@@ -5,7 +5,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чертёж: Бункер"
 
 	[tag]"icon path"	[value]"Blueprint"
-	[tag]"base class"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprints"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -22,7 +22,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чертёж: Лаборатория"
 
 	[tag]"icon path"	[value]"Blueprint"
-	[tag]"base class"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprints"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -39,7 +39,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чертёж: Особняк"
 
 	[tag]"icon path"	[value]"Blueprint"
-	[tag]"base class"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprints"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -56,7 +56,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чертёж: Запретная библиотека"
 
 	[tag]"icon path"	[value]"Blueprint"
-	[tag]"base class"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprints"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -73,7 +73,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чертёж: Референтура"
 
 	[tag]"icon path"	[value]"Blueprint"
-	[tag]"base class"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprints"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -90,7 +90,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чертёж: Хранилище"
 
 	[tag]"icon path"	[value]"Blueprint"
-	[tag]"base class"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprints"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -107,7 +107,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чертёж: Притон контрабандистов"
 
 	[tag]"icon path"	[value]"Blueprint"
-	[tag]"base class"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprints"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -124,7 +124,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чертёж: Тоннели"
 
 	[tag]"icon path"	[value]"Blueprint"
-	[tag]"base class"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprints"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -141,7 +141,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чертёж: Подполье"
 
 	[tag]"icon path"	[value]"Blueprint"
-	[tag]"base class"	[value]"Blueprint"
+	[tag]"base class"	[value]"Blueprints"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

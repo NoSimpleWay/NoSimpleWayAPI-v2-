@@ -357,7 +357,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Active Skill Gems"
+	[tag]"name EN"		[value]"Active Gems"
 	[tag]"name RU"		[value]"Камни умений"
 
 	[tag]"icon path"	[value]"PortalGem"
@@ -365,7 +365,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Support Skill Gems"
+	[tag]"name EN"		[value]"Support Gems"
 	[tag]"name RU"		[value]"Камень поддержки"
 
 	[tag]"icon path"	[value]"SupportGems"
@@ -527,23 +527,30 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Vault Key"
+	[tag]"name EN"		[value]"Vault Keys"
 	[tag]"name RU"		[value]"Ключ Реликвария"
+	
+	
+	[tag]"short name"	[value]"Vault Key"
 
 	[tag]"icon path"	[value]"VisceralReliquaryKey"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Memory"
+	[tag]"name EN"		[value]"Memories"
 	[tag]"name RU"		[value]"Воспоминание"
+	
+	[tag]"short name"	[value]"Memory"
 
 	[tag]"icon path"	[value]"ClassMemory"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Expedition Logbook"
+	[tag]"name EN"		[value]"Expedition Logbooks"
+	[tag]"short name"	[value]"Expedition Logbook"
+	
 	[tag]"name RU"		[value]"Журнал экспедиции"
 
 	[tag]"icon path"	[value]"ExpeditionLogbook"
@@ -783,7 +790,8 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Heist Brooch"
+	[tag]"name EN"		[value]"Heist Brooches"
+	[tag]"short name"	[value]"Heist Brooch"
 	[tag]"name RU"		[value]"Разбойничья брошь"
 
 	[tag]"icon path"	[value]"Brooch"
@@ -856,3 +864,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Священные реликвии"
 
 	[tag]"icon path"	[value]"sanctified_relic"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Sanctum Research"
+	[tag]"name RU"		[value]"Священные реликвии"
+
+	[tag]"icon path"	[value]"forbidden_tome"

@@ -621,7 +621,7 @@ void EntityButton::make_as_default_clickable_button(ERegionGabarite* _region_gab
 	if (_dap != nullptr) { jc_clickable_area->actions_on_click_list.push_back(_dap); }
 	
 	ECustomData* last_data = Entity::get_last_custom_data(this);
-	last_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
+		//last_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
 
 	last_data->clickable_area_list.push_back(jc_clickable_area);
 }
@@ -711,7 +711,8 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 
 		//create text area
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, ELocalisationText::empty_localisation);
+		ETextArea*
+		jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, ELocalisationText::empty_localisation);
 		jc_text_area->offset_by_gabarite_size_x = 0.0;
 		jc_text_area->offset_by_text_size_x = 0.0;
 
@@ -725,6 +726,16 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 		ESpriteLayer* second_button_layer = nullptr;
 		if (_data_entity != nullptr)
 		{
+
+			
+			/*jc_button->localised_name.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
+			jc_button->localised_name.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+			jc_button->localised_name.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
+
+			if (jc_button->localised_name.base_name == "")
+			{
+				jc_button->localised_name.base_name = jc_button->localised_name.localisations[NSW_localisation_EN];
+			}*/
 
 			ETextureGabarite*
 			item_icon =
@@ -812,6 +823,9 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 
 			if (item_icon != nullptr)
 			{
+
+				//jc_button->localised_name.generate_localisation("")
+
 				resize_factor = (_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up - 6.0f) / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
 				resize_factor = min(resize_factor, 1.0f);
 
@@ -1165,7 +1179,7 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 	jc_clickable_area->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
 	
 	ECustomData* last_data = Entity::get_last_custom_data(jc_button);
-	last_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
+	//last_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
 
 	last_data->clickable_area_list.push_back(jc_clickable_area);
 	last_data->actions_on_update.push_back(&EDataActionCollection::action_update_radial_button);
@@ -1605,6 +1619,69 @@ void EntityButton::make_as_default_router_variant_button(ERegionGabarite* _regio
 	static_cast<EntityButtonVariantRouter*>(this)->pointer_to_text_area	= main_text_area;
 
 	main_text_area->can_be_edited = false;
+}
+
+EClickableArea* EntityButton::create_clickable_region_witch_sprtite_layer_and_icon(ERegionGabarite* _region_gabarite, ETextureGabarite* _icon, data_action_pointer _action)
+{
+	EClickableArea*
+	new_clickable_region = EClickableArea::create_default_clickable_region
+		(
+			_region_gabarite,
+			this,
+			EntityButton::get_last_custom_data(this)
+		);
+
+	if (_action != nullptr)
+	{
+		new_clickable_region->actions_on_click_list.push_back(_action);
+	}
+
+	new_clickable_region->region_gabarite->offset_by_parent_size_x = 0.0f;
+	new_clickable_region->region_gabarite->offset_by_parent_size_y = 0.0f;
+
+	new_clickable_region->region_gabarite->offset_by_size_x = 0.0f;
+	new_clickable_region->region_gabarite->offset_by_size_y = 0.0f;
+
+	new_clickable_region->region_gabarite->offset_by_pixels_x = 0.0f;
+	new_clickable_region->region_gabarite->offset_by_pixels_y = 0.0f;
+
+	main_custom_data->clickable_area_list.push_back(new_clickable_region);
+	main_clickable_area->region_gabarite->add_child_to_this_region(new_clickable_region->region_gabarite);
+
+
+	//////////////////////////////////
+
+	float resize_factor = 0.0f;
+	float offset_x = 0.0f;
+	float offset_y = 0.0f;
+	{
+		resize_factor = (new_clickable_region->region_gabarite->size_y) / max(_icon->size_x_in_pixels, _icon->size_y_in_pixels);
+		resize_factor = min(resize_factor, 1.0f);
+
+		offset_x = ((new_clickable_region->region_gabarite->size_y) - _icon->size_x_in_pixels * resize_factor) / 2.0f;
+		offset_y = ((new_clickable_region->region_gabarite->size_y) - _icon->size_y_in_pixels * resize_factor) / 2.0f;
+
+		ESpriteLayer* new_sprite_layer =
+		ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+		(
+			_icon,
+
+			0.0f,
+			0.0f,
+			0.0f,
+
+			_icon->size_x_in_pixels * resize_factor,
+			_icon->size_y_in_pixels * resize_factor,
+			0.0f
+		);
+
+		new_clickable_region->sprite_layer_list.push_back(new_sprite_layer);
+
+		//second_button_layer->make_as_PBR();
+	}
+	//////////////////////////////////
+
+	return new_clickable_region;
 }
 
 EClickableArea* EntityButton::add_close_circle(data_action_pointer _dap)
