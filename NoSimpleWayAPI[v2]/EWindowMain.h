@@ -247,6 +247,7 @@ class EntityButtonAttributeTab : public EntityButton
 public:
 	EButtonGroup*				target_listed_block;
 	EButtonGroupListedBlock*	target_whole_listed_block;
+	EButtonGroupFilterBlock*	parent_filter_block;
 };
 
 
@@ -336,14 +337,14 @@ public:
 	EntityButtonColorButton* pointer_to_color_button[3];
 	EntityButton* pointer_to_color_check_button[3];
 
-	bool	color_check[3];
+	bool	color_check[3]{ true, true, true };
 	HSVRGBAColor** pointer_to_HRA_color[3];
 
 	//font size
 	EntityButton*				text_size_button;
 	EntityButtonVariantRouter*	text_size_router_button;
-	bool	text_size_bool;
-	float	text_size = 0.5f;
+	bool	text_size_bool = true;
+	float	text_size = 30.0f;
 
 	EntityButtonVariantRouterForFilterBlock* button_show_hide;
 	EntityButtonVariantRouterForFilterBlock* button_continue;
@@ -355,12 +356,18 @@ public:
 
 	EntityButtonFilterSound* pointer_to_game_sound_button;
 	bool	game_sound_suppressor_bool;
-	EntityButton* sound_volume;
-	float	sound_volume_value = 1.0f;
+	EntityButton* user_sound_volume_button;
+	EntityButton* ingame_sound_volume_button;
+
+	float	user_sound_volume_value		= 1.0f;
+	float	ingame_sound_volume_value	= 1.0f;
 
 
 	EntityButtonVariantRouterForFilterBlock* pointer_to_positional_variant_button;
-	EntityButtonVariantRouterForFilterBlock* pointer_to_forcibly_disable_sound_variant_button;
+
+	EntityButtonVariantRouterForFilterBlock* pointer_to_forcibly_disable_ingame_sound_variant_button;
+	EntityButtonVariantRouterForFilterBlock* pointer_to_forcibly_disable_user_sound_variant_button;
+
 	EntityButtonVariantRouterForFilterBlock* pointer_to_disable_enable_drop_sound;
 	EntityButtonVariantRouterForFilterBlock* pointer_to_optional_user_sound;
 
@@ -513,6 +520,7 @@ public:
 	static EButtonGroup* pointer_to_loot_buttons_segment;
 	static EButtonGroup* pointer_to_patterns_buttons_segment;
 	static EButtonGroup* pointer_to_right_side_info_buttons;
+	static EButtonGroup* pointer_to_warning_group;
 
 	static EntityButtonVariantRouter* pointer_to_target_loot_filter_version_button;
 	static EntityButton* pointer_to_input_area_level_button;
@@ -636,7 +644,8 @@ class EButtonGroupListedBlock : public EButtonGroup
 public:
 	EButtonGroupListedBlock(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 	
-	
+	EntityButtonForFilterBlock* pointer_to_undefined_attribute_field;
+
 	EButtonGroup* section_for_wide_item_buttons;
 	//EButtonGroup* pointer_to_attribute_tab;
 
@@ -1143,6 +1152,11 @@ public:
 
 
 
+	//FAST CHECK
+	static void register_fast_check_folder();
+		static void register_valuable_items();
+		static void register_trash_items();
+	////////////////////////////////////////////////////////////////////////
 	//unused
 	static void register_pattern_basic_currencies();
 	static void register_pattern_all_currencies();
@@ -1187,7 +1201,7 @@ public:
 
 		////////////////////////////////////////////////////////////////////////
 
-
+		
 	static void set_color_version(HSVRGBAColor* _target_color, int _selected_mode);
 	static void make_unsaved_loot_filter_changes();
 	static void remove_unsave_changes_flag_from_tab();

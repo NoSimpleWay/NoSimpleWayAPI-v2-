@@ -285,7 +285,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Awakened Elemental Damage With Attacks Support"
+	[tag]"name EN"		[value]"Awakened Elemental Damage with Attacks Support"
 	[tag]"name RU"		[value]"Пробужденный: Урон от стихий атаками"
 
 	[tag]"icon path"	[value]"Awakened"
@@ -381,7 +381,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Awakened Increased Area Of Effect Support"
+	[tag]"name EN"		[value]"Awakened Increased Area of Effect Support"
 	[tag]"name RU"		[value]"Пробужденный: Расширенная область действия"
 
 	[tag]"icon path"	[value]"Awakened"
@@ -608,7 +608,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Enhance Support"
 	[tag]"name RU"		[value]"Улучшитель"
 
-	[tag]"icon path"	[value]"Eternal_Mana_Flask_inventory_icon"
+	[tag]"icon path"	[value]"Enhance"
 	[tag]"base class"	[value]"Support Gems"
 	
 	[tag]"item tag"		[value]"Exceptional gem"

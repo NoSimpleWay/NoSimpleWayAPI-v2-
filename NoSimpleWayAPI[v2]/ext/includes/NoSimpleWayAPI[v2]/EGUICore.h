@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <NoSimpleWayAPI[v2]/ETextCore.h>
+#include <chrono>
 
 class ELocalisationText;
 class EBrickStyle;
@@ -332,6 +333,7 @@ struct HighlightStruct
 
 	float max_time			= 1.0f;
 	float time_remaining	= 1.0f;
+	std::chrono::milliseconds highlight_timestamp;
 
 	HighlightID highlight_id = HighlightID::GREEN_INFO;
 
@@ -469,6 +471,9 @@ public:
 	float final_highest_point_y = (0.0f);
 	float highest_point_y_for_buttons = (0.0f);
 	float highest_point_y_for_groups = (0.0f);
+
+	float additional_fake_y_point = 0.0f;
+	float additional_fake_start_offset = 0.0f;
 
 	float higher_culling_line_for_group		= 0.0f;
 	float lower_culling_line_for_group		= 0.0f;

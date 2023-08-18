@@ -558,11 +558,13 @@ void ETextArea::generate_text()
 		y_adding += (font->base * row.size() - 0.0f) * offset_by_text_size_y * font_scale;
 
 		y_adding += border_offset_bottom;
+		y_adding += font->base * font_scale * (row.size() - 1);
 		
 		y_adding = round(y_adding);
 
 		//for (std::string* str : row)
-		for (int i = row.size() - 1; i >= 0; i--)
+		//for (int i = row.size() - 1; i >= 0; i--)
+		for (int i = 0;  i < row.size(); i++)
 		{
 			std::string* str = row[i];
 
@@ -630,28 +632,46 @@ void ETextArea::generate_text()
 				NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_GREY);
 			}
 
+
+
 			for (int i = 0; i < str_lenght; i++)
 			{
 				target_symbol = (int)(temp_s.at(i));
 				if (target_symbol < 0) { target_symbol += 256; }
 
-				NS_ERenderCollection::add_data_to_vertex_buffer_custom_uv
+				if
 				(
-					sprite_layer->vertex_buffer,
-					sprite_layer->last_buffer_id,
+					(!forbide_outbounding)
+					||
+					(
+						x_adding + font->size_x_in_pixels[target_symbol] * font_scale
+						<
+						region_gabarite->size_x
+						-
+						offset_border[BorderSide::RIGHT]
+						-
+						border_offset_right
+					)
+				)
+				{
+					NS_ERenderCollection::add_data_to_vertex_buffer_custom_uv
+					(
+						sprite_layer->vertex_buffer,
+						sprite_layer->last_buffer_id,
 
-					(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol] * font_scale) ,
-					(region_gabarite->world_position_y) + y_adding - (font->offset_y[target_symbol] + font->size_y_in_pixels[target_symbol] - font->lineheight) * font_scale,
+						(region_gabarite->world_position_x + x_adding + font->offset_x[target_symbol] * font_scale),
+						(region_gabarite->world_position_y) + y_adding - (font->offset_y[target_symbol] + font->size_y_in_pixels[target_symbol] - font->lineheight) * font_scale,
 
-					(font->size_x_in_pixels[target_symbol] * font_scale),
-					(font->size_y_in_pixels[target_symbol] * font_scale),
+						(font->size_x_in_pixels[target_symbol] * font_scale),
+						(font->size_y_in_pixels[target_symbol] * font_scale),
 
-					font->UV_start_x[target_symbol] - px,
-					font->UV_start_y[target_symbol] - font->UV_size_y[target_symbol] - py,
+						font->UV_start_x[target_symbol] - px,
+						font->UV_start_y[target_symbol] - font->UV_size_y[target_symbol] - py,
 
-					font->UV_start_x[target_symbol] - px + font->UV_size_x[target_symbol],
-					font->UV_start_y[target_symbol] - py
-				);
+						font->UV_start_x[target_symbol] - px + font->UV_size_x[target_symbol],
+						font->UV_start_y[target_symbol] - py
+					);
+				}
 
 				//no sence generate glyphs to text, which can be edited
 				if
@@ -733,14 +753,15 @@ void ETextArea::generate_text()
 			}
 			else
 			{
-				id_for_stored_text_sym += 2;
+				id_for_stored_text_sym += 1;
 			}
 
 			//EInputCore::logger_param("last buffer id", *sprite_layer->last_buffer_id);
 			
 			
 
-			y_adding += font->base * font_scale;
+			//y_adding += font->base * font_scale;
+			y_adding -= font->base * font_scale;
 		}
 	}
 	else
@@ -1007,9 +1028,10 @@ void ETextArea::update(float _d)
 			//std::cout << EInputCore::LAST_INPUTED_CHAR << std::endl;
 			if (selected_glyph_position >= 0)
 			{
-				original_text.insert(min(target_id, original_text.size() - 1), temp_s);
+				original_text.insert(min(target_id, original_text.size() - 0), temp_s);
 				//stored_text = "1234567";
 				selected_glyph_position++;
+				selected_glyph_position = min(selected_glyph_position, font_glyph_list.size());
 			}
 			else
 			{
@@ -1620,7 +1642,12 @@ void ETextArea::change_text(std::string _text)
 			if ((target_sym == ' ') || (i >= _text.size() - 1))
 			{
 				//need to transfer text to new line?
-				if (x_size + offset_border[BorderSide::LEFT] + border_left >= region_gabarite->size_x - offset_border[BorderSide::RIGHT] - border_right)
+				if
+				(
+					(!forbide_new_line)
+					&&
+					(x_size + offset_border[BorderSide::LEFT] + border_left >= region_gabarite->size_x - offset_border[BorderSide::RIGHT] - border_right)
+				)
 				{
 					buffer += '\n';
 					//buffer += "[" + Helper::float_to_string_with_precision(x_size + offset_border[BorderSide::LEFT] + 5.0f, 2.0f) + "/" + Helper::float_to_string_with_precision(region_gabarite->size_x - offset_border[BorderSide::RIGHT] - 5.0f, 2.0f) + "]";
@@ -1637,7 +1664,9 @@ void ETextArea::change_text(std::string _text)
 					//EInputCore::logger_param("space advance", font->advance[sym_id]);
 				}
 				else
+				{
 					if (i >= _text.size() - 1) { buffer += temp_text; }
+				}
 
 				temp_text = "";
 

@@ -242,6 +242,8 @@ void EWindow::GUI_update_default(float _d)
 				&&
 				(b_group->is_this_group_active())
 				&&
+				(!b_group->block_need_remove)
+				&&
 				(b_group->region_gabarite->world_position_y <= b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y)
 				&&
 				(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y >= b_group->region_gabarite->world_position_y)
@@ -405,6 +407,8 @@ void EWindow::GUI_update_default(float _d)
 			(b_group->is_this_group_active())
 			&&
 			(b_group->is_in_visible_diapason())
+			&&
+			(!b_group->block_need_remove)
 			/*(b_group->region_gabarite->world_position_y + b_group->region_gabarite->size_y >= 0.0f)
 			&&
 			(b_group->region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)*/
@@ -458,6 +462,8 @@ void EWindow::GUI_draw_default(float _d)
 			(b_group->is_this_group_active())
 			&&
 			(b_group->is_in_visible_diapason())
+			&&
+			(!b_group->block_need_remove)
 		)
 		{
 			b_group->draw_button_group();
@@ -837,21 +843,36 @@ void EButtonGroup::button_group_update(float _d)
 		need_refresh = true;
 	}
 
+	
 	//update_highlights
-	for (int i = 0; i < highlight_list.size(); i++)
+
+	if (!highlight_list.empty())
 	{
-		HighlightStruct*
-		pointer_to_highlight = &highlight_list[i];
-
-		if (pointer_to_highlight->time_remaining > 0.0f)
+		using namespace std::chrono;
+		milliseconds ms = duration_cast<milliseconds>(system_clock::now().time_since_epoch());
+		
+		for (int i = 0; i < highlight_list.size(); i++)
 		{
-			pointer_to_highlight->time_remaining -= _d;
+			HighlightStruct*
+				pointer_to_highlight = &highlight_list[i];
 
-			if (pointer_to_highlight->time_remaining <= 0.0f)
+			//std::cout << "current: " << (ms) << " stored: " << pointer_to_highlight->highlight_timestamp << std::endl;;
+
+			if (ms - pointer_to_highlight->highlight_timestamp > (milliseconds)(1000))
 			{
-				highlight_list.erase(highlight_list.begin() + i);
+				pointer_to_highlight->time_remaining = 0.001f;
+			}
 
-				i--;
+			if (pointer_to_highlight->time_remaining > 0.0f)
+			{
+				pointer_to_highlight->time_remaining -= _d;
+
+				if (pointer_to_highlight->time_remaining <= 0.0f)
+				{
+					highlight_list.erase(highlight_list.begin() + i);
+
+					i--;
+				}
 			}
 		}
 	}
@@ -923,6 +944,8 @@ void EButtonGroup::button_group_update(float _d)
 		(is_this_group_active())//group not deactivated
 		&&
 		(is_in_visible_diapason())//in visible gabarites
+		&&
+		(!block_need_remove)
 	)
 	{
 
@@ -1114,6 +1137,8 @@ void EButtonGroup::draw_button_group()
 			(is_in_visible_diapason())
 			&&
 			(is_this_group_active())
+			&&
+			(!block_need_remove)
 		)
 	{
 		//bool visibility = is_this_group_active();
@@ -1414,7 +1439,7 @@ void EButtonGroup::draw_button_group()
 
 							if (DebugNamespace::is_debug_element_active(DebugStructID::PHANTOM_HIGHLIGHT_FOR_BUTTONS))
 							{
-								but->highlight_time = but->max_highlight_time;
+								but->set_highlight(1.0f, 1.0f);
 							}
 						}
 
@@ -1974,7 +1999,12 @@ void EButtonGroup::align_groups()
 
 	//stretch row
 	for (EButtonGroup* child : group_list)
-		if (child->is_this_group_active())
+		if
+		(
+			(child->is_this_group_active())
+			&&
+			(!child->block_need_remove)
+		)
 		{
 
 			//OFFSET TO BASE
@@ -1994,7 +2024,8 @@ void EButtonGroup::align_groups()
 
 				case (ChildElementsAlignDirection::TOP_TO_BOTTOM):
 				{
-					child->region_gabarite->offset_y = region_gabarite->size_y - child->region_gabarite->size_y - group_offset_for_content_up;
+					child->region_gabarite->offset_y = region_gabarite->size_y - child->region_gabarite->size_y - group_offset_for_content_up - additional_fake_start_offset;
+					
 					break;
 				}
 				}
@@ -2111,7 +2142,7 @@ void EButtonGroup::align_groups()
 
 	}
 
-
+	
 	if (slider != nullptr)
 	{
 		slider->button_gabarite->size_y = region_gabarite->size_y;
@@ -2121,7 +2152,7 @@ void EButtonGroup::align_groups()
 
 	//highest_point_y_for_groups *= 1.0f;
 
-
+	highest_point_y_for_groups += additional_fake_y_point;
 
 }
 
@@ -2133,6 +2164,8 @@ void EButtonGroup::generate_vertex_buffer_for_group(EButtonGroup* _group, bool _
 			(_group->is_this_group_active())
 			&&
 			(_group->is_in_visible_diapason())
+			&&
+			(!_group->block_need_remove)
 			//&&
 			//(_group->region_gabarite->world_position_y <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
 			//&&
@@ -2233,7 +2266,12 @@ void EButtonGroup::recursive_group_stretch_childs_x()
 		target_size -= slider_effect;
 
 		for (EButtonGroup* group : group_list)
-			if (group->is_this_group_active())
+			if
+			(
+				(group->is_this_group_active())
+				&&
+				(!group->block_need_remove)
+			)
 			{
 				if (group->stretch_x_by_parent_size)
 				{
@@ -2261,7 +2299,12 @@ void EButtonGroup::recursive_group_stretch_childs_x()
 
 	//final_size = 100.0f;
 	for (EButtonGroup* group : group_list)
-		if (group->is_this_group_active())
+		if
+		(
+			(group->is_this_group_active())
+			&&
+			(!group->block_need_remove)
+		)
 		{
 			if ((group->stretch_x_by_parent_size) && (group->region_gabarite->size_x != final_size))
 			{
@@ -2310,7 +2353,12 @@ void EButtonGroup::recursive_group_stretch_childs_y()
 		target_size = max(region_gabarite->size_y, min_size_y) - group_offset_for_content_bottom - group_offset_for_content_up - (group_list.size() - 1) * BUTTON_GROUP_Y_DISTANCE - shrink_size - 0.0;
 
 		for (EButtonGroup* child : group_list)
-			if (child->is_this_group_active())
+			if
+			(
+				(child->is_this_group_active())
+				&&
+				(!child->block_need_remove)
+			)
 			{
 				/*if (child->can_be_resized_to_highest_point_y)
 				{
@@ -2350,7 +2398,12 @@ void EButtonGroup::recursive_group_stretch_childs_y()
 	for (EButtonGroup* child : group_list)
 	{
 
-		if (child->is_this_group_active())
+		if
+		(
+			(child->is_this_group_active())
+			&&
+			(!child->block_need_remove)
+		)
 		{
 
 			if ((child->dynamic_size_y))
@@ -2547,6 +2600,8 @@ void EButtonGroup::change_group(EButtonGroup* _group)
 			(_group->is_this_group_active())
 			&&
 			((_group->is_in_visible_diapason()) || (true))
+			&&
+			(!_group->block_need_remove)
 	)
 	{
 		recursive_change_group_first_pass(_group);
@@ -2589,7 +2644,12 @@ void EButtonGroup::recursive_change_group_first_pass(EButtonGroup* _group)
 		_group->group_border_texture_up = 0.0f;
 	}
 
-	if (_group->is_this_group_active())
+	if
+	(
+		(_group->is_this_group_active())
+		&&
+		(!_group->block_need_remove)
+	)
 	{
 		_group->need_change = false;
 		_group->need_refresh = false;
@@ -2668,7 +2728,12 @@ void EButtonGroup::recursive_change_group_first_pass(EButtonGroup* _group)
 
 void EButtonGroup::change_group_second_pass(EButtonGroup* _group)
 {
-	if (_group->is_this_group_active())
+	if
+	(
+		(_group->is_this_group_active())
+		&&
+		(!_group->block_need_remove)
+	)
 	{
 
 
@@ -2694,6 +2759,7 @@ void EButtonGroup::change_group_second_pass(EButtonGroup* _group)
 		_group->calculate_group_lines();
 		_group->set_buttons_offset();
 		_group->align_buttons_in_lines();
+
 
 		_group->final_highest_point_y = max(_group->highest_point_y_for_buttons, _group->highest_point_y_for_groups);
 
@@ -2741,7 +2807,12 @@ void EButtonGroup::button_group_postchange()
 
 void EButtonGroup::refresh_button_group(EButtonGroup* _group)
 {
-	if (_group->is_this_group_active())
+	if
+	(
+		(_group->is_this_group_active())
+		&&
+		(!_group->block_need_remove)
+	)
 	{
 		_group->recursive_expand_to_workspace_size();
 		change_group(_group);
@@ -3147,9 +3218,16 @@ float EButtonGroup::get_highest_point_y_for_groups()
 	{
 
 		for (EButtonGroup* child : group_list)
-			if (child->is_this_group_active())
+			if
+			(
+				(child->is_this_group_active())
+				&&
+				(!child->block_need_remove)
+			)
 			{
 				total_size += child->region_gabarite->size_y + child->additional_y_distance;
+				
+				
 			}
 	}
 
@@ -3157,13 +3235,19 @@ float EButtonGroup::get_highest_point_y_for_groups()
 	{
 
 		for (EButtonGroup* child : group_list)
-			if (child->is_this_group_active())
+			if
+			(
+				(child->is_this_group_active())
+				&&
+				(!child->block_need_remove)
+			)
 			{
 
 				total_size = max(child->region_gabarite->size_y, total_size);
 			}
 	}
 
+	total_size += additional_fake_y_point;
 	return total_size;
 }
 
@@ -3318,7 +3402,7 @@ void EButtonGroup::put_buttons_to_lines()
 
 
 	highest_point_y_for_buttons += button_max_y;
-
+	highest_point_y_for_buttons += additional_fake_y_point;
 	//if
 	//(
 	//	(is_in_visible_diapason())
@@ -3639,6 +3723,8 @@ bool EButtonGroup::catched_by_mouse(EButtonGroup* _group)
 				//&&
 			(_group->is_this_group_active())
 			&&
+			(!_group->block_need_remove)
+			&&
 			(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom >= _group->region_gabarite->world_position_x + _group->region_gabarite->phantom_translate_x)
 			&&
 			(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom <= _group->region_gabarite->world_position_x + _group->region_gabarite->size_x + _group->region_gabarite->phantom_translate_x)
@@ -3706,13 +3792,16 @@ void EButtonGroup::translate_group(float _x, float _y, float _z, bool _move_posi
 
 
 	if
+	(
 		(
-			(
-				(is_this_group_active())
-				&&
-				(is_in_visible_diapason())
-				)
-			)
+			(is_this_group_active())
+			&&
+			(is_in_visible_diapason())
+			&&
+			(!block_need_remove)
+
+		)
+	)
 	{
 
 
@@ -3777,6 +3866,8 @@ void EButtonGroup::translate_group_content(float _x, float _y, float _z, bool _m
 			if
 				(
 					(is_this_group_active())
+					&&
+					(block_need_remove)
 					&&
 					(
 						(
@@ -4025,10 +4116,14 @@ void EButtonGroup::highlight_this_group(float _r, float _g, float _b, float _a, 
 		}
 	}
 
+	using namespace std::chrono;
+	milliseconds ms = duration_cast<milliseconds>(system_clock::now().time_since_epoch());
+
 	//no existed highlight, create new
 	if (existed_highlight == -1)
 	{
 		highlight_list.push_back(HighlightStruct::create_new_highlihght(_r, _g, _b, _a, _id, _time));
+		highlight_list.back().highlight_timestamp = ms;
 	}
 	else
 	{
@@ -4036,6 +4131,7 @@ void EButtonGroup::highlight_this_group(float _r, float _g, float _b, float _a, 
 
 		highlight_list[existed_highlight].max_time			= _time;
 		highlight_list[existed_highlight].time_remaining	= _time;
+		highlight_list[existed_highlight].highlight_timestamp = ms;
 
 	}
 }
@@ -4237,6 +4333,8 @@ void EButtonGroup::get_last_focused_group(EButtonGroup* _group)
 	(
 		(_group->is_this_group_active())
 		&&
+		(!_group->block_need_remove)
+		&&
 		(_group->is_in_visible_diapason())
 		&&
 		(!_group->group_is_suppressed)
@@ -4429,7 +4527,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	// // // // // // //
 	EntityButton*
-		jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 30.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_a"));
+		jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_a"));
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->a;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 	value_and_alpha_part->add_button_to_working_group(jc_button);
@@ -4439,7 +4537,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	// // // // // // //
 
-	jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 30.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_v"));
+	jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_v"));
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->v;
 	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
 	value_and_alpha_part->add_button_to_working_group(jc_button);
@@ -4544,7 +4642,8 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 
 		//std::cout << Helper::registered_color_list[0] << std::endl;
-		EntityButtonColorButton* color_button = EntityButton::create_named_color_button
+		EntityButtonColorButton*
+		color_button = EntityButton::create_named_color_button
 		(
 			//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 

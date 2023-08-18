@@ -238,8 +238,11 @@ public:
 	float force_field_bottom		= 0.0f;
 	float force_field_up			= 0.0f;
 
+
 	float highlight_time			= 0.0f;
 	float max_highlight_time		= 1.0f;
+	std::chrono::milliseconds		highlight_timestamp;
+	void set_highlight(float _set_time, float _max_time);
 
 	float base_size_x				= 10.0f;
 	float base_size_y				= 10.0f;

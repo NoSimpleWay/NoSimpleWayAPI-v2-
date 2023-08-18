@@ -339,7 +339,10 @@ void EDataActionCollection::action_confirmed_mark_filter_blocks_as_removed_confi
 		parent_group_for_button->button_show_hide->select_variant(1);
 		parent_group_for_button->button_continue->select_variant(1);
 
-		parent_group_for_button->text_size = 1.0f;
+
+
+
+		parent_group_for_button->text_size = 30.0f;
 
 		//background
 		parent_group_for_button->pointer_to_color_button[0]->stored_color->set_color_RGBA(0.0f, 0.1f, 0.2, 1.0);
@@ -349,6 +352,28 @@ void EDataActionCollection::action_confirmed_mark_filter_blocks_as_removed_confi
 
 		//rama
 		parent_group_for_button->pointer_to_color_button[2]->stored_color->set_color_RGBA(0.55f, 0.57f, 0.6, 1.0);
+
+
+
+
+		parent_group_for_button->user_sound_volume_value	= 1.0f;
+		parent_group_for_button->ingame_sound_volume_value	= 1.0f;
+
+		parent_group_for_button->game_sound_suppressor_bool = false;
+		parent_group_for_button->custom_sound_suppressor_bool = false;
+
+
+		parent_group_for_button->pointer_to_forcibly_disable_ingame_sound_variant_button->select_variant(0);
+		parent_group_for_button->pointer_to_forcibly_disable_user_sound_variant_button->select_variant(0);
+		parent_group_for_button->pointer_to_disable_enable_drop_sound->select_variant(0);
+		parent_group_for_button->pointer_to_optional_user_sound->select_variant(0);
+
+		parent_group_for_button->ray_suppressor = false;
+		parent_group_for_button->minimap_icon_color_suppressor_bool = false;
+
+		parent_group_for_button->pointer_to_forcibly_disable_minimap_icon_variant_button->select_variant(0);
+
+
 
 		//color checkers
 		for (int i = 0; i < 3; i++)
@@ -589,8 +614,9 @@ void EDataActionCollection::action_select_this_loot_filter_from_list(Entity* _en
 
 	EWindowMain::loot_filter_editor->need_refresh = true;
 
-	EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
-	//EWindowMain::loot_simulator_button_group->delayed_execution = true;
+	//EWindowMain::loot_simulator_button_group->refresh_loot_simulator();
+	EWindowMain::loot_simulator_button_group->clear_loot_simulator();
+	EWindowMain::loot_simulator_button_group->delayed_execution = true;
 
 	EWindowMain::remove_unsave_changes_flag_from_tab();
 
@@ -1268,14 +1294,47 @@ void EDataActionCollection::action_confirmed_deleting_listed_segment(Entity* _en
 
 	//attribute_tab_group->block_need_remove = true;
 
-	EntityButton*
-	selected_button = attribute_tab_group->selected_button;
+	EntityButtonAttributeTab*
+	selected_button = static_cast<EntityButtonAttributeTab*>(attribute_tab_group->selected_button);
 
+	//selected_button->target_whole_listed_block->button_group_is_active = false;
 	//static_cast<EntityButtonForListedSegment*>(confirm_button)listed_group->filter_block_need_remove = true;
 
-	if (selected_button != nullptr) { selected_button->entity_need_remove = true; }
-	if (!attribute_tab_group->workspace_button_list.empty()) { attribute_tab_group->selected_button = attribute_tab_group->workspace_button_list.front(); }
+	if (selected_button != nullptr)
+	{
+		selected_button->entity_need_remove = true;
+		attribute_tab_group->selected_button = nullptr;
+	
 
+		//deactivate all listed groups
+		for (EButtonGroup* group : selected_button->parent_filter_block->pointer_to_listed_attributes->group_list)
+		{
+			group->button_group_is_active = true;
+		}
+
+		for (EntityButton* but : selected_button->parent_filter_block->pointer_to_attribute_tab->workspace_button_list)
+		{
+
+			if (!but->entity_need_remove)
+			{
+				//EDataActionCollection::action_select_this_attribute_tag(but, but->main_custom_data, _d);
+				attribute_tab_group->selected_button = but;
+
+
+
+				//static_cast<EntityButtonAttributeTab*>(but)->target_whole_listed_block->button_group_is_active = true;
+				selected_button->parent_filter_block->need_change = true;
+				break;
+			}
+		}
+
+		
+		//EWindowMain::loot_filter_editor->need_refresh = true;
+	}
+	//if (!attribute_tab_group->workspace_button_list.empty()) { attribute_tab_group->selected_button = attribute_tab_group->workspace_button_list.front(); }
+	//attribute_tab_group->need_refresh = true;
+
+	
 	confirm_group->close_this_group();
 }
 
@@ -1673,6 +1732,8 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 			//if block hidden by any way
 			(loot_button != nullptr)
 			&&
+			(loot_button->matched_show_hide_block != nullptr)
+			&&
 			(
 				(loot_button->matched_show_hide_block->button_show_hide->selected_variant != 1)//hidden by filter block
 				||
@@ -1933,7 +1994,8 @@ void EDataActionCollection::action_select_loot_item_button(Entity* _entity, ECus
 
 	for (EntityButton* but : loot_button->suitable_buttons_list)
 	{
-		but->highlight_time = but->max_highlight_time;
+		//but->highlight_time = but->max_highlight_time;
+		but->set_highlight(1.0f, 1.0f);
 		but->parent_button_group->scroll_to_this_button(but);
 	}
 
@@ -2003,7 +2065,9 @@ void EDataActionCollection::action_switch_pattern_folder_state(Entity* _entity, 
 	folder_button = static_cast<EntityButtonLootPatternSelector*>(_entity);
 
 	folder_button->folder_is_expanded = !folder_button->folder_is_expanded;
-	folder_button->highlight_time = folder_button->max_highlight_time * 0.2f;
+
+	folder_button->set_highlight(0.35f, 1.0f);
+	//folder_button->highlight_time = folder_button->max_highlight_time * 0.2f;
 
 	float scroll_correction = 0.0f;
 
@@ -2532,7 +2596,8 @@ void EDataActionCollection::action_add_wide_item_to_group_receiver(Entity* _enti
 	}
 	else
 	{
-		static_cast<EntityButton*>(_entity)->highlight_time = static_cast<EntityButton*>(_entity)->max_highlight_time;
+		static_cast<EntityButton*>(_entity)->set_highlight(1.0f, 1.0f);
+		//static_cast<EntityButton*>(_entity)->highlight_time = static_cast<EntityButton*>(_entity)->max_highlight_time;
 	}
 }
 
@@ -3330,7 +3395,7 @@ EWindowMain::EWindowMain()
 		for (int i = 0; i < filter_tabs_count; i++)
 		{
 			EButtonGroupFilterBlockEditor* main_filter_editor =
-				new EButtonGroupFilterBlockEditor(new ERegionGabarite(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT));
+			new EButtonGroupFilterBlockEditor(new ERegionGabarite(NS_EGraphicCore::SCREEN_WIDTH, NS_EGraphicCore::SCREEN_HEIGHT));
 
 			main_filter_editor->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 
@@ -3344,6 +3409,9 @@ EWindowMain::EWindowMain()
 			main_filter_editor->can_be_moved = false;
 			main_filter_editor->can_resize_to_workspace_size_x = false;
 			main_filter_editor->can_resize_to_workspace_size_y = false;
+
+			main_filter_editor->additional_fake_start_offset = 16.0f;
+			main_filter_editor->additional_fake_y_point = 16.0f;
 
 			main_filter_editor->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 			//*main_button_group->stretch_mode		= GroupStretchMode::CONSTANT;
@@ -4663,18 +4731,59 @@ EWindowMain::EWindowMain()
 
 		whole_loot_simulator_group->pointer_to_patterns_buttons_segment = left_part_for_patterns;
 
+		
+
 		bottom_loot_part->add_group(left_part_for_patterns);
 
-		/////////		LOOT ITEM BUTTONS		//////////
+
+
+
+
+
+
+		/////////		MIDDLE LOOT CONTAINER		//////////
 		EButtonGroup*
-			middle_loot_buttons = new EButtonGroup(new ERegionGabarite(10.0f, 10.0f));
-		middle_loot_buttons->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
-		middle_loot_buttons->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-		middle_loot_buttons->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+		middle_loot_and_warning_container = new EButtonGroup(new ERegionGabarite(10.0f, 10.0f));
+		middle_loot_and_warning_container->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+		middle_loot_and_warning_container->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		middle_loot_and_warning_container->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 
-		bottom_loot_part->add_group(middle_loot_buttons);
+		bottom_loot_part->add_group(middle_loot_and_warning_container);
 
-		whole_loot_simulator_group->pointer_to_loot_buttons_segment = middle_loot_buttons;
+		
+		
+
+
+
+				/////////		BOTTOM LOOT ITEM BUTTONS		//////////
+				EButtonGroup*
+				bottom_part_for_loot = new EButtonGroup(new ERegionGabarite(10.0f, 10.0f));
+				bottom_part_for_loot->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+				bottom_part_for_loot->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+				bottom_part_for_loot->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+
+				middle_loot_and_warning_container->add_group(bottom_part_for_loot);
+
+				whole_loot_simulator_group->pointer_to_loot_buttons_segment = bottom_part_for_loot;
+
+				/////////		UPPER WARNING LOOT ITEM BUTTONS		//////////
+				EButtonGroup*
+				upper_part_for_warning = new EButtonGroup(new ERegionGabarite(10.0f, 30.0f));
+				upper_part_for_warning->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+				upper_part_for_warning->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+				upper_part_for_warning->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+				upper_part_for_warning->button_group_is_active = false;
+				whole_loot_simulator_group->pointer_to_warning_group = upper_part_for_warning;
+
+				upper_part_for_warning->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("valuable_loot_hidden_warning"));
+				upper_part_for_warning->clickable_area_list.back()->text_area->font = EFont::font_list[1];
+				upper_part_for_warning->clickable_area_list.back()->text_area->set_color(NS_EColorUtils::COLOR_RED);
+
+				middle_loot_and_warning_container->add_group(upper_part_for_warning);
+
+
+
+
 
 		/////////		USED BLOCKS INFO		//////////
 		EButtonGroup*
@@ -6520,7 +6629,7 @@ EWindowMain::EWindowMain()
 
 				//jc_button->force_field_right = 32.0f;
 				jc_button->add_default_description_by_key("description_multisave_loot_filter");
-				jc_button->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_S);
+				jc_button->add_hotkey(GLFW_KEY_LEFT_CONTROL, GLFW_KEY_A);
 
 				top_section_left_part->add_button_to_working_group(jc_button);
 				jc_button->can_be_stretched = true;
@@ -11610,7 +11719,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	button_variant_router->layer_with_icon = button_variant_router->sprite_layer_list.back();
 	button_variant_router->can_be_stretched = true;
 	
-
+	button_variant_router->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
 	button_variant_router->add_default_description_by_key("description_show_hide_loot");
 	//
 	ETextArea* jc_text_area = ETextArea::create_centered_text_area(EntityButton::get_last_clickable_area(button_variant_router), EFont::font_list[0], ELocalisationText());
@@ -12116,7 +12225,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		EGUIStyle::active_style
 	);
 	bottom_section_for_block_control->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-	bottom_section_for_block_control->ignore_vertical_buttons_force_field = true;
+	//bottom_section_for_block_control->ignore_vertical_buttons_force_field = true;
 	left_control_section->add_group(bottom_section_for_block_control);
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -12149,7 +12258,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		NS_DefaultGabarites::texture_button_plus
 	);
 	jc_button->new_line_method = NewLineMethod::FORBIDDEN;
-	jc_button->force_field_up = 16.0f;
+	//jc_button->force_field_up = 16.0f;
 
 	EDataContainer_Button_OpenButtonGroup*
 		data_open_group = new EDataContainer_Button_OpenButtonGroup();
@@ -12175,10 +12284,32 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			&EDataActionCollection::action_move_filter_block_down,
 			NS_DefaultGabarites::texture_button_move_down
 		);
+		move_down_button->force_field_bottom = 8.0f;
 		move_down_button->parent_filter_block = whole_filter_block_group;
+		move_down_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
 
 		bottom_section_for_block_control->add_button_to_working_group(move_down_button);
 		////////////////
+
+		
+		///////////		BUTTON MOVE		///////////
+		EntityButtonMoveButtonGroup*
+			move_button = new EntityButtonMoveButtonGroup();
+		move_button->make_as_default_button_with_full_icon
+		(
+			new ERegionGabarite(40.0f, 15.0f),
+			bottom_section_for_block_control,
+			&EDataActionCollection::action_move_button_group,
+			NS_DefaultGabarites::texture_button_move
+		);
+		move_button->new_line_method = NewLineMethod::FORCIBLY;
+		move_button->target_group_for_moving = whole_filter_block_group;
+		move_button->parent_group_for_moving = _target_editor;
+		move_button->move_method = MoveVectorMethod::METHOD_DRAG;
+
+		bottom_section_for_block_control->add_button_to_working_group(move_button);
+		////////////////
+
 
 		///////////		BUTTON MOVE UP		///////////
 		EntityButtonForFilterBlock*
@@ -12190,29 +12321,15 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			&EDataActionCollection::action_move_filter_block_up,
 			NS_DefaultGabarites::texture_button_move_up
 		);
+		move_up_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_make_unsave_filter_block_changes_and_refresh_loot_simulator);
 		move_up_button->parent_filter_block = whole_filter_block_group;
+		move_up_button->force_field_up = 8.0f;
 
 		bottom_section_for_block_control->add_button_to_working_group(move_up_button);
 		////////////////
 	}
 
-	///////////		BUTTON MOVE		///////////
-	EntityButtonMoveButtonGroup*
-		move_button = new EntityButtonMoveButtonGroup();
-	move_button->make_as_default_button_with_full_icon
-	(
-		new ERegionGabarite(40.0f, 15.0f),
-		bottom_section_for_block_control,
-		&EDataActionCollection::action_move_button_group,
-		NS_DefaultGabarites::texture_button_move
-	);
-	move_button->new_line_method = NewLineMethod::FORCIBLY;
-	move_button->target_group_for_moving = whole_filter_block_group;
-	move_button->parent_group_for_moving = _target_editor;
-	move_button->move_method = MoveVectorMethod::METHOD_DRAG;
 
-	bottom_section_for_block_control->add_button_to_working_group(move_button);
-	////////////////
 
 
 
@@ -12350,7 +12467,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 	EButtonGroup*
 	sound_cosmetic_segment
-	= EButtonGroup::create_default_button_group(new ERegionGabarite(350.0f, 130.0f), EGUIStyle::active_style)
+	= EButtonGroup::create_default_button_group(new ERegionGabarite(350.0f, 150.0f), EGUIStyle::active_style)
 	->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_static_autosize);
 
 	sound_cosmetic_segment->button_group_is_active = false;
@@ -12377,7 +12494,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
-		general_sound_section_for_top = EButtonGroup::create_invisible_button_group(new ERegionGabarite(350.0f, 85.0f), EGUIStyle::active_style)
+		general_sound_section_for_top = EButtonGroup::create_invisible_button_group(new ERegionGabarite(350.0f, 140.0f), EGUIStyle::active_style)
 		->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
 	sound_cosmetic_segment->add_group(general_sound_section_for_top);
@@ -12501,11 +12618,24 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	sound_button->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
 	whole_filter_block_group->pointer_to_game_sound_button = sound_button;
 	left_sound_segment->add_button_to_working_group(sound_button);
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+
+
+
+
+
+
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//	switcher GAME_SOUND
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	EntityButton* button_ingame_sound_suppressor_bool = new EntityButton();
+	EntityButton*
+	button_ingame_sound_suppressor_bool = new EntityButton();
 	sound_button->button_suppressor = button_ingame_sound_suppressor_bool;
 	button_ingame_sound_suppressor_bool->make_default_bool_switcher_button
 	(
@@ -12519,9 +12649,15 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	button_ingame_sound_suppressor_bool->new_line_method = NewLineMethod::FORBIDDEN;
 	button_ingame_sound_suppressor_bool->force_field_right = 4.0f;
 	left_sound_segment->add_button_to_working_group(button_ingame_sound_suppressor_bool);
+
+
+
+
+
+
+
+
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 	//		POSITIONAL/NOT POSITIONAL SOUND ROUTER
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
@@ -12570,9 +12706,11 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	router_variant->color->set_color_RGBA(0.65f, 0.5f, 0.4f, 1.0f);
 
 	button_variant_FB_router->router_variant_list.push_back(router_variant);
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-	/// 
-	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+
+
+
+
+
 	router_variant = new RouterVariant();
 	local_text = new ELocalisationText();
 
@@ -12588,7 +12726,23 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
 	button_variant_FB_router->select_variant(0);
 
-	
+
+
+
+
+	//////
+	//INGAME SOUND BLOCK END
+	/////
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -12601,7 +12755,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 	l_text.localisations[NSW_localisation_EN] = "User sound";
 	l_text.localisations[NSW_localisation_RU] = "Свой звук";
 
-	
+
 	sound_button = new EntityButtonFilterSound();
 	sound_button->make_default_button_with_unedible_text
 	(
@@ -12733,34 +12887,40 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	//		DISABLE SOUND
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	{
-		EntityButtonVariantRouterForFilterBlock*
-			button_variant_disable_sound = new EntityButtonVariantRouterForFilterBlock();
-		//button_variant_disable_sound->button_suppressor = button_ingame_sound_suppressor_bool;
-
-		general_sound_section_for_top->add_button_to_working_group(button_variant_disable_sound);
-		button_variant_disable_sound->make_as_default_router_variant_button(new ERegionGabarite(170.0f, 40.0f));
-		button_variant_disable_sound->add_default_description_by_key("description_disable_sound");
-		//button_variant_disable_sound->force_field_up = 8.0f;
-		button_variant_disable_sound->can_be_stretched = true;
-
-		whole_filter_block_group->pointer_to_forcibly_disable_sound_variant_button = button_variant_disable_sound;
-
-		//routers
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-		button_variant_disable_sound->add_router_variant_with_localisation_key_and_color("variant_do_not_disable_sound", 0.5f, 0.55f, 0.6f, 1.0f);
-		button_variant_disable_sound->add_router_variant_with_localisation_key_and_color("variant_disable_sound", 1.0f, 0.5f, 0.25f, 1.0f);
-
-		button_variant_disable_sound->select_variant(0);
-		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-	}
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-	//	VOLUME
+
+	//////
+	//USER SOUND BLOCK END
+	/////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//		SOUND VOLUME SLIDERS
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	//	VOLUME INGAME
 	{
 		jc_button = EntityButton::create_horizontal_named_slider
 		(
@@ -12771,20 +12931,113 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 			EGUIStyle::active_style,
 			ELocalisationText::get_localisation_by_key("volume_slider")
 		);
-		//jc_button->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
+		jc_button->suppressor = &whole_filter_block_group->game_sound_suppressor_bool;
+		jc_button->button_suppressor = button_ingame_sound_suppressor_bool;
+		jc_button->new_line_method = NewLineMethod::FORBIDDEN;
 
-		jc_button->add_default_description_by_key("description_sound_volume");
+		jc_button->add_default_description_by_key("description_ingame_sound_volume");
 		jc_button->can_be_stretched = true;
-		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_filter_block_group->sound_volume_value;
-		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_filter_block_group->ingame_sound_volume_value;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 3.0f;
 
-		whole_filter_block_group->sound_volume = jc_button;
+		whole_filter_block_group->ingame_sound_volume_button = jc_button;
 		general_sound_section_for_top->add_button_to_working_group(jc_button);
 	}
 
-	// 
-	// //		ENABLE/DISABLE DROP SOUND
+
+	//	VOLUME USER
+	{
+		jc_button = EntityButton::create_horizontal_named_slider
+		(
+
+			new ERegionGabarite(170.0f, 40.0f),
+			general_sound_section_for_top,
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			ELocalisationText::get_localisation_by_key("volume_slider")
+		);
+		jc_button->suppressor = &whole_filter_block_group->custom_sound_suppressor_bool;
+		jc_button->button_suppressor = button_custom_sound_bool_suppressor;
+		jc_button->new_line_method = NewLineMethod::FORBIDDEN;
+
+		jc_button->add_default_description_by_key("description_user_sound_volume");
+		jc_button->can_be_stretched = true;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &whole_filter_block_group->user_sound_volume_value;
+		static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 3.0f;
+
+		whole_filter_block_group->user_sound_volume_button = jc_button;
+		general_sound_section_for_top->add_button_to_working_group(jc_button);
+	}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//		DISABLE INGAME SOUND
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		EntityButtonVariantRouterForFilterBlock*
+		button_variant_disable_ingame_sound = new EntityButtonVariantRouterForFilterBlock();
+		//button_variant_disable_sound->button_suppressor = button_ingame_sound_suppressor_bool;
+
+		general_sound_section_for_top->add_button_to_working_group(button_variant_disable_ingame_sound);
+		button_variant_disable_ingame_sound->make_as_default_router_variant_button(new ERegionGabarite(170.0f, 20.0f));
+		button_variant_disable_ingame_sound->add_default_description_by_key("description_disable_sound");
+
+		button_variant_disable_ingame_sound->new_line_method = NewLineMethod::FORCIBLY;
+		//button_variant_disable_sound->force_field_up = 8.0f;
+		button_variant_disable_ingame_sound->can_be_stretched = true;
+
+		whole_filter_block_group->pointer_to_forcibly_disable_ingame_sound_variant_button = button_variant_disable_ingame_sound;
+
+		//routers
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+		button_variant_disable_ingame_sound->add_router_variant_with_localisation_key_and_color("variant_do_not_disable_sound", 0.5f, 0.55f, 0.6f, 1.0f);
+		button_variant_disable_ingame_sound->add_router_variant_with_localisation_key_and_color("variant_disable_sound", 1.0f, 0.5f, 0.25f, 1.0f);
+
+		button_variant_disable_ingame_sound->select_variant(0);
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	}
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//		DISABLE USER SOUND
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		EntityButtonVariantRouterForFilterBlock*
+		button_variant_disable_user_sound = new EntityButtonVariantRouterForFilterBlock();
+		//button_variant_disable_sound->button_suppressor = button_ingame_sound_suppressor_bool;
+
+		general_sound_section_for_top->add_button_to_working_group(button_variant_disable_user_sound);
+		button_variant_disable_user_sound->make_as_default_router_variant_button(new ERegionGabarite(170.0f, 20.0f));
+		button_variant_disable_user_sound->add_default_description_by_key("description_disable_sound");
+
+		button_variant_disable_user_sound->new_line_method = NewLineMethod::FORBIDDEN;
+		//button_variant_disable_sound->force_field_up = 8.0f;
+		button_variant_disable_user_sound->can_be_stretched = true;
+
+		whole_filter_block_group->pointer_to_forcibly_disable_user_sound_variant_button = button_variant_disable_user_sound;
+
+		//routers
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+		button_variant_disable_user_sound->add_router_variant_with_localisation_key_and_color("variant_do_not_disable_sound", 0.5f, 0.55f, 0.6f, 1.0f);
+		button_variant_disable_user_sound->add_router_variant_with_localisation_key_and_color("variant_disable_sound", 1.0f, 0.5f, 0.25f, 1.0f);
+
+		button_variant_disable_user_sound->select_variant(0);
+		/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+	}
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//		ENABLE/DISABLE DEFAULT DROP SOUND
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
 	{
 		button_variant_FB_router = new EntityButtonVariantRouterForFilterBlock();
 		button_variant_FB_router->make_as_default_button_with_icon
@@ -12798,7 +13051,7 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		button_variant_FB_router->parent_filter_block = whole_filter_block_group;
 		button_variant_FB_router->can_be_stretched = true;
 		button_variant_FB_router->add_default_description_by_key("description_drop_sound_play_mode");
-
+		button_variant_FB_router->new_line_method = NewLineMethod::FORCIBLY;
 		//button_variant_FB_router->rotate_variant_mode = RotateVariantMode::SELECT_NEXT;
 
 		button_variant_FB_router->layer_with_icon = button_variant_FB_router->sprite_layer_list.back();
@@ -12903,6 +13156,34 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 
 		general_sound_section_for_top->add_button_to_working_group(button_variant_FB_router);
 	}
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -13498,8 +13779,9 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		data->max_value = 45.0;
 		data->mid_value = (data->min_value + data->max_value) / 2.0f;
 		data->rounded_numbers = true;
+		data->current_slide_value = -1.0f;
 
-		data->pointer_to_digit_text_area->autoerase_text = true;
+		//data->pointer_to_digit_text_area->autoerase_text = true;
 		//data->pointer_to_digit_text_area->offset_border[BorderSide::LEFT] = 8.0f;
 	
 
@@ -14155,6 +14437,11 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 								
 								jc_filter_block = create_filter_block(loot_filter_editor, specific_position);
 
+								jc_filter_block->color_check[0] = false;
+								jc_filter_block->color_check[1] = false;
+								jc_filter_block->color_check[2] = false;
+								jc_filter_block->text_size_router_button->select_variant(0);
+
 								if (_parse_mode == LootFilterOpenMode::LOOT_FILTER_OPEN_MODE_DEFAULT_FILTER_FROM_GAME)
 								{
 									jc_filter_block->group_is_suppressed = true;
@@ -14276,6 +14563,15 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 												//matched_button = whole_block_container->pointer_to_color_button[b];
 												target_HRA_color = whole_filter_block->pointer_to_color_button[b]->stored_color;
 												target_color_bool = &whole_filter_block->color_check[b];
+
+												if (!comment_mode)
+												{
+													whole_filter_block->color_check[b] = true;
+												}
+												else
+												{
+													whole_filter_block->color_check[b] = false;
+												}
 											}
 										}
 
@@ -14780,7 +15076,9 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									{
 										ENamedSound* matched_named_sound = nullptr;
 
-										for (ENamedSound* named_sound : EWindowMain::custom_sound_list)
+										if (buffer_text != "none")
+										{
+											for (ENamedSound* named_sound : EWindowMain::custom_sound_list)
 											if (named_sound->localisation_text.base_name == buffer_text)
 											{
 												//EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
@@ -14788,18 +15086,40 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 												matched_named_sound = named_sound;
 											}
 
-										if (matched_named_sound == nullptr)
+											if (whole_filter_block != nullptr)
+											{
+												whole_filter_block->pointer_to_custom_sound_button->stored_named_sound = matched_named_sound;
+												if (!comment_mode) { whole_filter_block->custom_sound_suppressor_bool = true; }
+											}
+										}
+										else//disable sound
 										{
-											//EInputCore::logger_param_with_warning("undefined sound", buffer_text);
+											if (!comment_mode)
+											{
+												whole_filter_block->pointer_to_forcibly_disable_user_sound_variant_button->select_variant(1);
+											}
+											else
+											{
+												whole_filter_block->pointer_to_forcibly_disable_user_sound_variant_button->select_variant(0);
+											}
 										}
 
-										if (whole_filter_block != nullptr)
-										{
-											whole_filter_block->pointer_to_custom_sound_button->stored_named_sound = matched_named_sound;
-											if (!comment_mode) { whole_filter_block->custom_sound_suppressor_bool = true; }
-										}
+
+
 									}
+									else
+									if ((data_part == 3) && (whole_filter_block != nullptr))
+									{
+										float
+										value = std::stoi(buffer_text) / 100.0f;
+										value = max(value, 0.0f);
+										value = min(value, 3.0f);
+
+										whole_filter_block->user_sound_volume_value = value;
+									}
+
 								}
+								
 
 
 								//		INGAME SOUND
@@ -14820,7 +15140,7 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 												whole_filter_block->pointer_to_game_sound_button->stored_named_sound = matched_named_sound;
 												if (!comment_mode) { whole_filter_block->game_sound_suppressor_bool = true; }
 
-												whole_filter_block->pointer_to_forcibly_disable_sound_variant_button->select_variant(0);
+												whole_filter_block->pointer_to_forcibly_disable_ingame_sound_variant_button->select_variant(0);
 											}
 
 										
@@ -14828,9 +15148,9 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										else
 										{
 											if (!comment_mode)
-											{whole_filter_block->pointer_to_forcibly_disable_sound_variant_button->select_variant(1);}
+											{whole_filter_block->pointer_to_forcibly_disable_ingame_sound_variant_button->select_variant(1);}
 											else
-											{whole_filter_block->pointer_to_forcibly_disable_sound_variant_button->select_variant(0);}
+											{whole_filter_block->pointer_to_forcibly_disable_ingame_sound_variant_button->select_variant(0);}
 										}
 
 										//if (matched_named_sound == nullptr)
@@ -14845,11 +15165,11 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 										if ((data_part == 3) && (whole_filter_block != nullptr))
 										{
 											float
-												value = std::stoi(buffer_text) / 300.0f;
+											value = std::stoi(buffer_text) / 100.0f;
 											value = max(value, 0.0f);
-											value = min(value, 1.0f);
+											value = min(value, 3.0f);
 
-											whole_filter_block->sound_volume_value = value;
+											whole_filter_block->ingame_sound_volume_value = value;
 										}
 
 
@@ -15156,6 +15476,7 @@ void EWindowMain::register_loot_simulator_patterns()
 	//register_pattern_basic_currencies();
 	register_all_deleted_items();
 
+	register_fast_check_folder();
 	//register_crubible_items_with_passive_tree();
 	register_new_folder_ancestors_items();
 		add_force_field_for_last_pattern_folder();
@@ -16048,7 +16369,7 @@ void EWindowMain::register_new_folder_specific_items()
 			LootSimulatorTagFilter*
 				tag_filter = new LootSimulatorTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Incursion Item");
+			tag_filter->suitable_values.push_back("Incursion Items");
 			tag_filter->suitable_values.push_back("Memories");
 			tag_filter->suitable_values.push_back("Misc Map Items");
 			tag_filter->suitable_values.push_back("Quest Items");
@@ -21507,6 +21828,409 @@ void EWindowMain::register_pattern_cheap_currencies()
 	}
 }
 
+void EWindowMain::register_fast_check_folder()
+{
+	register_trash_items();
+	register_valuable_items();
+	
+
+	register_pattern_folder("loot_pattern_folder_fast_check", "minimap_shapes/minimap_icon_shape[star]");
+}
+
+void EWindowMain::register_valuable_items()
+{
+	LootSimulatorPattern*
+		loot_simulator_pattern = new LootSimulatorPattern;
+
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Valuable items";
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Ценные предеты";
+	loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("minimap_shapes/minimap_icon_shape[star]");
+
+
+	/////////////////////////////			ITEM GENERATOR (VALUABLE CURRENCY/DIVINATIONS)			/////////////////////////////////////////////
+	{
+		GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+		game_item_generator->generations_count = 1;
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+		LootSimulatorTagFilter*
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "base class";
+		tag_filter->suitable_values.push_back("Stackable Currency");
+		tag_filter->suitable_values.push_back("Currency");
+		tag_filter->suitable_values.push_back("Divinations");
+		tag_filter->suitable_values.push_back("Breachstones");
+		tag_filter->suitable_values.push_back("Memories");
+		tag_filter->suitable_values.push_back("Map Fragments");
+		tag_filter->suitable_values.push_back("Vault Keys");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "worth";
+		tag_filter->suitable_values.push_back("Rare");
+		tag_filter->suitable_values.push_back("Expensive");
+		tag_filter->suitable_values.push_back("Very expensive");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		//tag_filter = new LootSimulatorTagFilter;
+		//tag_filter->target_tag = "item tag";
+		//tag_filter->suitable_values.push_back("Basic currency");
+		//game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->banned_tags.push_back("Deleted");
+		tag_filter->banned_tags.push_back("Hidden item");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+	}
+
+	/////////////////////////////			ITEM GENERATOR (QUEST AND OTHER ITEMS					/////////////////////////////////////////////
+	{
+		GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+		game_item_generator->generations_count = 1;
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+		LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "base class";
+		tag_filter->suitable_values.push_back("Quest items");
+		tag_filter->suitable_values.push_back("Incursion items");
+		tag_filter->suitable_values.push_back("Misc Map Items");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		//tag_filter = new LootSimulatorTagFilter;
+		//tag_filter->target_tag = "item tag";
+		//tag_filter->suitable_values.push_back("Basic currency");
+		//game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->banned_tags.push_back("Deleted");
+		tag_filter->banned_tags.push_back("Hidden item");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+	}
+
+	/////////////////////////////			ITEM GENERATOR (SIX LINKS)								/////////////////////////////////////////////
+	{
+		GameItemGenerator*
+		game_item_generator = new GameItemGenerator();
+		game_item_generator->generations_count = 1;
+		game_item_generator->random_selection_count = 3;
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+		game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
+
+
+
+		LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "base class";
+		tag_filter->suitable_values.push_back("Two Hand Axes");
+		tag_filter->suitable_values.push_back("Two Hand Swords");
+		tag_filter->suitable_values.push_back("Two Hand Maces");
+		tag_filter->suitable_values.push_back("Warstaves");
+		tag_filter->suitable_values.push_back("Staves");
+		tag_filter->suitable_values.push_back("Bows");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		//tag_filter = new LootSimulatorTagFilter;
+		//tag_filter->target_tag = "item tag";
+		//tag_filter->suitable_values.push_back("Basic currency");
+		//game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->banned_tags.push_back("Deleted");
+		tag_filter->banned_tags.push_back("Hidden item");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		game_item_generator->add_rarity(0, 3, 3.0f);
+		game_item_generator->add_sockets_and_links(6, 6, 6, 6);
+		game_item_generator->add_item_level(-3, 3, 1.0f);
+	}
+
+	/////////////////////////////			ITEM GENERATOR (VALUABLE UNIQUES)						/////////////////////////////////////////////
+	{
+		GameItemGenerator*
+		game_item_generator = new GameItemGenerator();
+		game_item_generator->generations_count = 1;
+
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+		LootSimulatorTagFilter*
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->suitable_values.push_back("Unique item");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "worth";
+		tag_filter->suitable_values.push_back("Rare");
+		tag_filter->suitable_values.push_back("Expensive");
+		tag_filter->suitable_values.push_back("Very expensive");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		//tag_filter = new LootSimulatorTagFilter;
+		//tag_filter->target_tag = "item tag";
+		//tag_filter->suitable_values.push_back("Basic currency");
+		//game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->banned_tags.push_back("Deleted");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		game_item_generator->add_rarity(3, 3, 3.0f);
+		game_item_generator->add_sockets_and_links(0, 5, 0, 5);
+		game_item_generator->add_item_level(-3, 3, 1.0f);
+	}
+
+	/////////////////////////////			RED TIER MAP			/////////////////////////////////////////////
+	{
+
+		GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+
+		game_item_generator->generations_count = 8;
+
+
+		ELocalisationText l_text;
+		l_text.base_name = "Map";
+		l_text.localisations[NSW_localisation_EN] = "Map";
+		l_text.localisations[NSW_localisation_RU] = "Карта";
+		game_item_generator->filtered_by_exact_name = l_text;
+
+		/////////////////////////////			CLASS			/////////////////////////////////////////////
+		l_text;
+		l_text.base_name = "Maps";
+		l_text.localisations[NSW_localisation_EN] = "Maps";
+		l_text.localisations[NSW_localisation_RU] = "Карты";
+		game_item_generator->add_class(l_text);
+
+		game_item_generator->add_rarity(0.0f, 3.0f, 3.0f);
+		game_item_generator->add_item_level(-3, 3, 1.0f);
+
+		/////////////////////////////			MAP TIER			/////////////////////////////////////////////
+		{
+			//		value
+			GameAttributeGeneratorMinMaxInt*
+				value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
+
+
+			//		parameters
+			value_generator->min_value = 14;
+			value_generator->max_value = 16;
+			value_generator->generator_pow = 1.0f;
+
+			game_item_generator->attribute_generators_list.push_back(value_generator);
+		}
+
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+	}
+
+	/////////////////////////////			RED TIER MAP (WITH INFLUENCE)			/////////////////////////////////////////////
+	{
+
+		GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+
+		game_item_generator->generations_count = 8;
+
+
+		ELocalisationText l_text;
+		l_text.base_name = "Map";
+		l_text.localisations[NSW_localisation_EN] = "Map";
+		l_text.localisations[NSW_localisation_RU] = "Карта";
+		game_item_generator->filtered_by_exact_name = l_text;
+
+		/////////////////////////////			CLASS			/////////////////////////////////////////////
+		l_text;
+		l_text.base_name = "Maps";
+		l_text.localisations[NSW_localisation_EN] = "Maps";
+		l_text.localisations[NSW_localisation_RU] = "Карты";
+		game_item_generator->add_class(l_text);
+
+		game_item_generator->add_rarity(0.0f, 2.0f, 3.0f);
+		game_item_generator->add_item_level(-3, 3, 1.0f);
+		game_item_generator->add_random_influence(1.0f);
+
+		/////////////////////////////			MAP TIER			/////////////////////////////////////////////
+		{
+			//		value
+			GameAttributeGeneratorMinMaxInt*
+				value_generator = new GameAttributeGeneratorMinMaxInt("MapTier");
+
+
+			//		parameters
+			value_generator->min_value = 14;
+			value_generator->max_value = 16;
+			value_generator->generator_pow = 1.0f;
+
+			game_item_generator->attribute_generators_list.push_back(value_generator);
+		}
+
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+	}
+
+	LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+}
+
+void EWindowMain::register_trash_items()
+{
+	LootSimulatorPattern*
+		loot_simulator_pattern = new LootSimulatorPattern;
+
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Trash items";
+	loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "Мусор";
+	loot_simulator_pattern->icon = NS_EGraphicCore::load_from_textures_folder("icons/Orb_of_Alchemy_inventory_icon");
+
+
+	/////////////////////////////			ITEM GENERATOR (VALUABLE CURRENCY/DIVINATIONS)			/////////////////////////////////////////////
+	{
+		GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+		game_item_generator->generations_count = 1;
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+		LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "base class";
+		tag_filter->suitable_values.push_back("Stackable Currency");
+		tag_filter->suitable_values.push_back("Currency");
+		tag_filter->suitable_values.push_back("Divinations");
+		tag_filter->suitable_values.push_back("Breachstones");
+		tag_filter->suitable_values.push_back("Memories");
+		tag_filter->suitable_values.push_back("Map Fragments");
+		tag_filter->suitable_values.push_back("Vault Keys");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "worth";
+		tag_filter->suitable_values.push_back("Trash");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		//tag_filter = new LootSimulatorTagFilter;
+		//tag_filter->target_tag = "item tag";
+		//tag_filter->suitable_values.push_back("Basic currency");
+		//game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+		tag_filter->banned_tags.push_back("Deleted");
+		tag_filter->banned_tags.push_back("Hidden item");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		game_item_generator->add_quantity(0.0f, 2.0f, 3.0f);
+	}
+	
+	/////////////////////////////			ITEM GENERATOR (VALUABLE CURRENCY/DIVINATIONS)			/////////////////////////////////////////////
+	{
+		GameItemGenerator*
+			game_item_generator = new GameItemGenerator();
+		game_item_generator->generations_count = 1;
+		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
+
+
+
+
+		LootSimulatorTagFilter*
+			tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "base class";
+		//melee one hand
+		tag_filter->suitable_values.push_back("One Hand Maces");
+		tag_filter->suitable_values.push_back("One Hand Axes");
+		tag_filter->suitable_values.push_back("One Hand Swords");
+		tag_filter->suitable_values.push_back("Thrusting One Hand Swords");
+		tag_filter->suitable_values.push_back("Claws");
+		tag_filter->suitable_values.push_back("Daggers");
+
+		//caster one hand
+		tag_filter->suitable_values.push_back("Wands");
+		tag_filter->suitable_values.push_back("Sceptres");
+		tag_filter->suitable_values.push_back("Rune daggers");
+
+		//melee two hand
+		tag_filter->suitable_values.push_back("Two Hand Axes");
+		tag_filter->suitable_values.push_back("Two Hand Swords");
+		tag_filter->suitable_values.push_back("Two Hand Maces");
+		tag_filter->suitable_values.push_back("Wartaves");
+
+		//caster two hand
+		tag_filter->suitable_values.push_back("Staves");
+
+		//ranger two hand
+		tag_filter->suitable_values.push_back("Bows");
+
+		//shields
+		tag_filter->suitable_values.push_back("Shields");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "worth";
+		tag_filter->suitable_values.push_back("Trash");
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+		//tag_filter = new LootSimulatorTagFilter;
+		//tag_filter->target_tag = "item tag";
+		//tag_filter->suitable_values.push_back("Basic currency");
+		//game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		tag_filter = new LootSimulatorTagFilter;
+		tag_filter->target_tag = "item tag";
+
+		tag_filter->banned_tags.push_back("Deleted");
+		tag_filter->banned_tags.push_back("Hidden item");
+		tag_filter->banned_tags.push_back("Top tier base");
+		tag_filter->banned_tags.push_back("Rare base");
+		tag_filter->banned_tags.push_back("Good base for unique");
+		tag_filter->banned_tags.push_back("Expensive base for unique");
+		tag_filter->banned_tags.push_back("Heist base");
+
+		game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+		game_item_generator->add_rarity(1.0f, 3.0f, 3.0f);
+		game_item_generator->add_item_level(-3, 3, 1.0f);
+		game_item_generator->add_sockets_and_links(1, 4, 0, 5);
+	}
+
+
+	LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
+}
+
 void EWindowMain::register_pattern_basic_currencies()
 {
 	//		BASIC CURRENCY
@@ -22222,6 +22946,7 @@ void EWindowMain::register_ancestors_currency()
 			tag_filter->banned_tags.push_back("Deleted");
 			tag_filter->banned_tags.push_back("Hidden item");
 			tag_filter->banned_tags.push_back("Tattoo");
+			tag_filter->banned_tags.push_back("Omen");
 			tag_filter->banned_tags.push_back("Honourable tattoo");
 			tag_filter->banned_tags.push_back("Loyalty tattoo");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -23532,6 +24257,7 @@ void add_game_item_attribute_to_filter_block(EButtonGroupFilterBlock* _target_fi
 
 		//tab_button->target_listed_block = listed_condition_group_container;
 		tab_button->target_whole_listed_block = listed_condition_group_container;
+		tab_button->parent_filter_block = _target_filter_block;
 		//tab_button->target_listed_block = listed_condition_group_container;
 
 		if (_game_item_attribute != nullptr)
@@ -23811,7 +24537,14 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 			//if attribute have no values, no sence generate this filter condition
 			if ((listed_block != nullptr) && (listed_block->section_for_wide_item_buttons->all_button_list.size() > 1))
 			{
-				result_string += '\t' + listed_block->filter_attribute_name;
+				if (listed_block->filter_attribute_name != "")
+				{
+					result_string += '\t' + listed_block->filter_attribute_name;
+				}
+				else
+				{
+					result_string += '\t' + listed_block->pointer_to_undefined_attribute_field->main_text_area->original_text;
+				}
 
 				if ((listed_block->matching_mode_router_button != nullptr) && (listed_block->matching_mode_router_button->selected_variant == 1))
 				{
@@ -23992,18 +24725,44 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 		if (!ignore_sound)
 		{
 			//		USER SOUND
-			if (whole_block_data->pointer_to_custom_sound_button->stored_named_sound != nullptr)
+			if
+			(
+				(whole_block_data->pointer_to_custom_sound_button->stored_named_sound != nullptr)
+				||
+				(whole_block_data->pointer_to_forcibly_disable_user_sound_variant_button->selected_variant == 1)//forcibly disabled sound
+			)
 			{
 				result_string += '\t';
-				if (!whole_block_data->custom_sound_suppressor_bool)
+				if
+				(
+					(!whole_block_data->custom_sound_suppressor_bool)
+					&&
+					(whole_block_data->pointer_to_forcibly_disable_user_sound_variant_button->selected_variant == 0)
+				)
 				{
 					result_string += "#";
 				}
-				result_string += "CustomAlertSound";
-				//if (whole_block_data->pointer_to_positional_variant_button->selected_variant == 1) { result_string }
-				if (whole_block_data->pointer_to_optional_user_sound->selected_variant == 1) { result_string += "Optional"; }
 
-				result_string += " \"" + whole_block_data->pointer_to_custom_sound_button->stored_named_sound->localisation_text.base_name + '"';
+				result_string += "CustomAlertSound";
+				
+				//disabled user sound cannot be optional
+				if
+				(
+					(whole_block_data->pointer_to_optional_user_sound->selected_variant == 0)
+					&&
+					(whole_block_data->pointer_to_forcibly_disable_user_sound_variant_button->selected_variant == 0)
+				)
+				{ result_string += "Optional"; }
+
+				if (whole_block_data->pointer_to_forcibly_disable_user_sound_variant_button->selected_variant == 0)
+				{
+					result_string += " \"" + whole_block_data->pointer_to_custom_sound_button->stored_named_sound->localisation_text.base_name + '"';
+					result_string += ' ' + std::to_string(int(round(whole_block_data->user_sound_volume_value * 100.0f)));
+				}
+				else
+				{
+					result_string += " none";
+				}
 
 				result_string += '\n';
 			}
@@ -24018,7 +24777,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 			(
 				(whole_block_data->pointer_to_game_sound_button->stored_named_sound != nullptr)
 				||
-				(whole_block_data->pointer_to_forcibly_disable_sound_variant_button->selected_variant == 1)//forcibly dysabled sound
+				(whole_block_data->pointer_to_forcibly_disable_ingame_sound_variant_button->selected_variant == 1)//forcibly disabled sound
 			)
 			{
 				result_string += '\t';
@@ -24026,7 +24785,7 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 				(
 					(!whole_block_data->game_sound_suppressor_bool)
 					&&
-					(whole_block_data->pointer_to_forcibly_disable_sound_variant_button->selected_variant == 0)
+					(whole_block_data->pointer_to_forcibly_disable_ingame_sound_variant_button->selected_variant == 0)
 				)
 				{
 					result_string += "#";
@@ -24035,15 +24794,16 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockS
 				result_string += "PlayAlertSound";
 				
 				//non forcibly disabled sound
-				if (whole_block_data->pointer_to_forcibly_disable_sound_variant_button->selected_variant == 0)
+				if (whole_block_data->pointer_to_forcibly_disable_ingame_sound_variant_button->selected_variant == 0)
 				{
 					if (whole_block_data->pointer_to_game_sound_button->stored_named_sound != nullptr)
 					{
 						if (whole_block_data->pointer_to_positional_variant_button->selected_variant == 1) { result_string += "Positional"; }
-						{
-							result_string += ' ' + whole_block_data->pointer_to_game_sound_button->stored_named_sound->localisation_text.base_name;
-							result_string += ' ' + std::to_string(int(whole_block_data->sound_volume_value * 300.0f));
-						}
+
+						
+						result_string += ' ' + whole_block_data->pointer_to_game_sound_button->stored_named_sound->localisation_text.base_name;
+						result_string += ' ' + std::to_string(int(round(whole_block_data->ingame_sound_volume_value * 100.0f)));
+						
 					}
 				}
 				else
@@ -24160,7 +24920,7 @@ std::string generate_filter_block_separator_text(EButtonGroupFilterBlockSeparato
 
 EButtonGroupListedBlock* create_block_for_listed_segment(EFilterRule* _filter_rule, GameItemAttribute* _attribute, std::string _attribute_name, EButtonGroup* _parent, EButtonGroupFilterBlock* _parent_filter_block)
 {
-	float line_height = 80.0f;
+	float line_height = 100.0f;
 
 	if (_filter_rule != nullptr)
 	{
@@ -24173,7 +24933,7 @@ EButtonGroupListedBlock* create_block_for_listed_segment(EFilterRule* _filter_ru
 	//whole_listed_line->parent_filter_block = static_cast<EButtonGroupFilterBlock*>(_parent);
 	//whole_listed_line->max_size_y = whole_listed_line->parent_filter_block->add_content_to_filter_block_group->base_height;
 	//whole_listed_line->can_be_resized_to_highest_point_y = true;
-	whole_listed_line->can_be_stretched_by_child = true;
+	//whole_listed_line->can_be_stretched_by_child = true;
 	//whole_listed_line->can_be_resized_to_highest_point_y = true;
 	whole_listed_line->
 		set_parameters
@@ -24192,7 +24952,7 @@ EButtonGroupListedBlock* create_block_for_listed_segment(EFilterRule* _filter_ru
 	}
 	else
 	{
-		whole_listed_line->min_size_y = 80.0f;
+		whole_listed_line->min_size_y = 180.0f;
 	}
 
 	//data container, store pointer to group with listed buttons
@@ -24429,7 +25189,7 @@ EButtonGroupListedBlock* create_block_for_listed_segment(EFilterRule* _filter_ru
 		//undefined_attribute_button->main_text_area->localisation_text = ELocalisationText::generate_localisation("_attribute_name");
 		undefined_attribute_button->main_text_area->gray_text = ELocalisationText::get_localisation_by_key("gray_text_undefined_attribute");
 		group_bottom_side_for_add->add_button_to_working_group(undefined_attribute_button);
-
+		whole_listed_line->pointer_to_undefined_attribute_field = undefined_attribute_button;
 
 		add_new_undefined_attribute_button = new EntityButtonForUndefinedAttribute();
 		add_new_undefined_attribute_button->make_default_button_with_unedible_text
@@ -24478,8 +25238,8 @@ EButtonGroupListedBlock* create_block_for_listed_segment(EFilterRule* _filter_ru
 			NSW_dynamic_autosize
 		);
 	
-	listed_group_main_section->can_be_resized_to_highest_point_y = true;
-	listed_group_main_section->max_size_y = 290.0f;
+	//listed_group_main_section->can_be_resized_to_highest_point_y = true;
+	listed_group_main_section->max_size_y = 590.0f;
 	//listed_group_main_section->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
 
 	//listed_group_main_section->have_rama = true;
@@ -24832,6 +25592,11 @@ void EButtonGroupFilterBlock::clear_listed_segment()
 	{
 		listed_line->block_need_remove = true;
 	}
+
+	for (EntityButton* attribute_tab_button : pointer_to_attribute_tab->workspace_button_list)
+	{
+		attribute_tab_button->entity_need_remove = true;
+	}
 }
 
 GameItemAttribute* EButtonGroupFilterBlock::get_suitable_game_item_attribute(std::string _name)
@@ -25166,16 +25931,27 @@ void EButtonGroupFilterBlockEditor::button_group_prechange()
 
 			if
 			(
-				(filter_block->pointer_to_attribute_tab->selected_button == nullptr)
+				(
+					(filter_block->pointer_to_attribute_tab->selected_button == nullptr)
+					||
+					(filter_block->pointer_to_attribute_tab->selected_button->entity_need_remove)
+				)
 				&&
 				(!filter_block->pointer_to_attribute_tab->workspace_button_list.empty())
 			)
 			{
+				//for (EButtonGroup* group : static_cast<EntityButtonAttributeTab*>(but)->target_whole_listed_block->group_list)
+				//{
+				//	group->button_group_is_active = false;
+				//}
+				
 				for (EntityButton* but : filter_block->pointer_to_attribute_tab->workspace_button_list)
 				{
 					if (!but->entity_need_remove)
 					{
 						filter_block->pointer_to_attribute_tab->selected_button = but;
+						static_cast<EntityButtonAttributeTab*>(but)->target_whole_listed_block->button_group_is_active = true;
+
 						break;
 					}
 				}
@@ -26587,6 +27363,7 @@ void LootSimulatorPattern::execute_loot_pattern(LootSimulatorPattern* _pattern)
 
 	EButtonGroupLootSimulator::pointer_to_loot_buttons_segment->remove_all_workspace_buttons();
 
+	EButtonGroupLootSimulator::pointer_to_warning_group->button_group_is_active = false;
 
 	for (int i = 0; i < _pattern->game_item_generator_list.size(); i++)
 	{
@@ -26798,6 +27575,7 @@ HSVRGBAColor		EButtonGroupLootSimulator::temp_color;
 EButtonGroup* EButtonGroupLootSimulator::pointer_to_loot_buttons_segment;
 EButtonGroup* EButtonGroupLootSimulator::pointer_to_patterns_buttons_segment;
 EButtonGroup* EButtonGroupLootSimulator::pointer_to_right_side_info_buttons;
+EButtonGroup* EButtonGroupLootSimulator::pointer_to_warning_group;
 
 EntityButtonVariantRouter* EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button;
 EntityButton* EButtonGroupLootSimulator::pointer_to_input_area_level_button;
@@ -27093,8 +27871,9 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 									&&
 									EStringUtils::A_contains_B_ignore_case
 									(
-										filter_block_button_attribute_name,	//item
-										dropped_item_attribute.base_name	//block
+										dropped_item_attribute.base_name,	//item
+										filter_block_button_attribute_name	//block
+										
 									)
 								)
 								||
@@ -27323,6 +28102,7 @@ bool EButtonGroupLootSimulator::is_sockets_matched(std::string _block, std::stri
 
 void EButtonGroupLootSimulator::clear_loot_simulator()
 {
+	EButtonGroupLootSimulator::pointer_to_warning_group->button_group_is_active = false;
 	pointer_to_loot_buttons_segment->remove_all_workspace_buttons();
 }
 
@@ -27330,6 +28110,7 @@ void EButtonGroupLootSimulator::refresh_loot_simulator()
 {
 	if (EWindowMain::loot_simulator_button_group->button_group_is_active)
 	{
+		EButtonGroupLootSimulator::pointer_to_warning_group->button_group_is_active = false;
 		EInputCore::logger_simple_info("refresh loot simulator");
 
 		EButtonGroupLootSimulator::show_hidden = true;
@@ -27484,7 +28265,7 @@ void EButtonGroupLootSimulator::button_group_update(float _d)
 		for (EntityButton* button : pointer_to_loot_buttons_segment->workspace_button_list)
 		{
 			EntityButtonLootItem*
-				loot_button = static_cast<EntityButtonLootItem*>(button);
+			loot_button = static_cast<EntityButtonLootItem*>(button);
 
 			button->entity_disabled =
 			!(
@@ -27499,8 +28280,26 @@ void EButtonGroupLootSimulator::button_group_update(float _d)
 				(show_hidden)
 				||
 				(loot_button->stored_game_item->warn_when_hidden)
-
 			);
+
+			if
+			(
+				(loot_button->matched_show_hide_block != nullptr)
+				&&
+				(
+					(loot_button->matched_show_hide_block->button_show_hide->selected_variant == 0)
+					||
+					(loot_button->matched_show_hide_block->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant <= 1)
+				)
+				&&
+				(loot_button->stored_game_item->warn_when_hidden)
+				&&
+				(!EButtonGroupLootSimulator::pointer_to_warning_group->button_group_is_active)
+			)
+			{
+				EButtonGroupLootSimulator::pointer_to_warning_group->button_group_is_active = true;
+				EWindowMain::loot_simulator_button_group->need_refresh = true;
+			}
 
 			if (!button->entity_is_active()) { button->destroy_attached_description(); }
 		}

@@ -503,9 +503,15 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
-	[tag]"key"			[value]"description_sound_volume"
-	[tag]"name EN"		[value]"Determines how loud the drop sounds will be"
-	[tag]"name RU"		[value]"Определяет, насколько громкими будут звуки дропа"
+	[tag]"key"			[value]"description_user_sound_volume"
+	[tag]"name EN"		[value]"Determines how loud the drop sounds will be (for user sounds from disk)"
+	[tag]"name RU"		[value]"Определяет, насколько громкими будут звуки дропа для пользовательских звуков"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_ingame_sound_volume"
+	[tag]"name EN"		[value]"Determines how loud the drop sounds will be (for default ingame sounds)"
+	[tag]"name RU"		[value]"Определяет, насколько громкими будут звуки дропа для стандартный звуков, поставляемых вмест с игрой"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -617,8 +623,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"description_multisave_loot_filter"
-	[tag]"name EN"		[value]"Generate and save all versions of loot filter (CTRL + S)"
-	[tag]"name RU"		[value]"Сгенерировать и сохранить все версии лут-фильтра(CTRL + S)"
+	[tag]"name EN"		[value]"Generate and save all versions of loot filter (CTRL + A)"
+	[tag]"name RU"		[value]"Сгенерировать и сохранить все версии лут-фильтра(CTRL + A)"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -1365,6 +1371,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"attribute_description_stack_size"
 	[tag]"name EN"		[value]"Condition: number of items in one stack"
 	[tag]"name RU"		[value]"Условие: количество предметов в 1 стопке"
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
@@ -1382,8 +1389,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"text_region_press_plus_button_to_add_new_condition"
-	[tag]"name EN"		[value]"Press '+' button to add new condition"
-	[tag]"name RU"		[value]"Нажмите кнопку '+', что бы добавить новое условие"
+	[tag]"name EN"		[value]"Press '+' button to add new condition.\n\nHold shift on this block to start selecting multiple blocks"
+	[tag]"name RU"		[value]"Нажмите кнопку '+', что бы добавить новое условие.\n\nНажмите и держите кнопку Shift, а затем переместите курсор на другой блок, что выделить их."
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -1712,6 +1719,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"rule_folder_ancestral"
 	[tag]"name EN"		[value]"Trial of the ancestors:\nnew items"
 	[tag]"name RU"		[value]"Испытание предков:\nновые предметы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_fast_check"
+	[tag]"name EN"		[value]"Fast check"
+	[tag]"name RU"		[value]"Быстрая проверка"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"valuable_loot_hidden_warning"
+	[tag]"name EN"		[value]"WARNING! VALUABLE LOOT HIDDEN!"
+	[tag]"name RU"		[value]"ВНИМАНИЕ! ЦЕННЫЙ ЛУТ СКРЫТ"
 
 	
 	

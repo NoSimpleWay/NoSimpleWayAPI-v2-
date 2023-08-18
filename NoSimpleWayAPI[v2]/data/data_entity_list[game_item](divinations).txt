@@ -886,19 +886,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"  and Renewal"
-	[tag]"name RU"		[value]"Возрождение и обновление"
-
-	[tag]"icon path"	[value]"Card"
-	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"		[value]"Common"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1621,7 +1608,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Rebirth and Reneval"
+	[tag]"name EN"		[value]"Rebirth and Renewal"
 	[tag]"name RU"		[value]"Перерождение"
 
 	[tag]"icon path"	[value]"Card"

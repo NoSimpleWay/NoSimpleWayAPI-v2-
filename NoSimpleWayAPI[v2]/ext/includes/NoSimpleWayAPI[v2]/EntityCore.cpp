@@ -500,6 +500,17 @@ void EntityButton::destroy_all_vertex_buffer_data()
 	have_phantom_draw = false;
 }
 
+void EntityButton::set_highlight(float _set_time, float _max_time)
+{
+	highlight_time = _set_time;
+	max_highlight_time = _max_time;
+
+	using namespace std::chrono;
+	milliseconds ms = duration_cast<milliseconds>(system_clock::now().time_since_epoch());
+
+	highlight_timestamp = ms;
+}
+
 void EntityButton::add_hotkey(int _key_main, int _key_secondary)
 {
 	EHotKeyManager hmanager;
@@ -1013,7 +1024,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	text_area_digit_segment->can_be_edited = true;
 	text_area_digit_segment->can_change_localisation = true;
 	
-	text_area_digit_segment->autoerase_text = true;
+	//text_area_digit_segment->autoerase_text = true;
 
 	data->pointer_to_digit_text_area = text_area_digit_segment;
 	
@@ -1067,8 +1078,11 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	ETextArea* jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
-	
+	ETextArea*
+	jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
+	jc_text_area->forbide_new_line		= true;
+	jc_text_area->forbide_outbounding	= true;
+
 	if (_mode == ColorButtonMode::CBM_SELECT_COLOR)
 	{ jc_text_area->forcibly_create_glyph = true; }
 
@@ -1894,8 +1908,13 @@ void EntityButton::update(float _d)
 	//{
 		Entity::update(_d);
 
+		
 		if (highlight_time > 0.0f)
 		{
+			using namespace std::chrono;
+			milliseconds ms = duration_cast<milliseconds>(system_clock::now().time_since_epoch());
+
+			if (ms - highlight_timestamp > (milliseconds)(1000)) { highlight_time = 0.0f; }
 			highlight_time -= _d;
 		}
 

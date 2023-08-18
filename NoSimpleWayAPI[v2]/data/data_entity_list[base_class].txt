@@ -358,6 +358,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Active Gems"
+	[tag]"short name"	[value]"Active Gem"
 	[tag]"name RU"		[value]"Камни умений"
 
 	[tag]"icon path"	[value]"PortalGem"
@@ -366,6 +367,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Support Gems"
+	[tag]"short name"	[value]"Support Gem"
 	[tag]"name RU"		[value]"Камень поддержки"
 
 	[tag]"icon path"	[value]"SupportGems"
@@ -394,9 +396,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Incubators"
+	[tag]"short name"	[value]"Incubator"
+	
 	[tag]"name RU"		[value]"Инкубатор"
 
-	[tag]"short name"	[value]"Incubator"
 	
 	[tag]"icon path"	[value]"Incubator"
 
@@ -427,9 +430,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Quest Items"
-	[tag]"name RU"		[value]"Вещи для заданий"
-	
 	[tag]"short name"	[value]"Quest Item"
+	
+	[tag]"name RU"		[value]"Вещи для заданий"
 
 	[tag]"icon path"	[value]"BookOfKnowledge"
 
@@ -449,6 +452,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Life Flasks"
+	[tag]"short name"	[value]"Life Flask"
+	
 	[tag]"name RU"		[value]"Флаконы жизни"
 
 	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
@@ -457,6 +462,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Mana Flasks"
+	[tag]"short name"	[value]"Mana Flask"
 	[tag]"name RU"		[value]"Флаконы маны"
 
 	[tag]"icon path"	[value]"Giant_Mana_Flask_inventory_icon"
@@ -465,6 +471,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Hybrid Flasks"
+	[tag]"short name"	[value]"Hybrid Flask"
+	
 	[tag]"name RU"		[value]"Флаконы равновесия"
 
 	[tag]"icon path"	[value]"Hybrid_flask"
@@ -473,6 +481,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Utility Flasks"
+	[tag]"short name"	[value]"Utility Flask"
+	
 	[tag]"name RU"		[value]"Особые флаконы"
 
 	[tag]"icon path"	[value]"Quicksilver_Flask_inventory_icon"
@@ -492,26 +502,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Maps"
+	[tag]"short name"	[value]"Map"
+	
 	[tag]"name RU"		[value]"Карты"
 	
-	[tag]"short name"	[value]"Map"
-
 	[tag]"icon path"	[value]"Map"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Map Fragments"
-	[tag]"name RU"		[value]"Фрагмент карты"
-	
 	[tag]"short name"	[value]"Map Fragment"
+	
+	[tag]"name RU"		[value]"Фрагмент карты"
 
 	[tag]"icon path"	[value]"class_map_fragments"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Breachstone"
+	[tag]"name EN"		[value]"Breachstones"
+	[tag]"short name"	[value]"Breachstone"
+	
 	[tag]"name RU"		[value]"Камень Разлома"
 
 	[tag]"icon path"	[value]"class_breachstone"
@@ -519,8 +531,10 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Misc Map Item"
-	[tag]"name RU"		[value]"Прочий предмет карты"
+	[tag]"name EN"		[value]"Misc Map Items"
+	[tag]"short name"	[value]"Misc Map Item"
+	
+	[tag]"name RU"		[value]"Прочие предметы карт"
 
 	[tag]"icon path"	[value]"Inscribed_Ultimatum"
 	
@@ -528,10 +542,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Vault Keys"
+	[tag]"short name"	[value]"Vault Key"
+	
 	[tag]"name RU"		[value]"Ключ Реликвария"
 	
-	
-	[tag]"short name"	[value]"Vault Key"
 
 	[tag]"icon path"	[value]"VisceralReliquaryKey"
 	
@@ -539,9 +553,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Memories"
+	[tag]"short name"	[value]"Memory"
+	
 	[tag]"name RU"		[value]"Воспоминание"
 	
-	[tag]"short name"	[value]"Memory"
 
 	[tag]"icon path"	[value]"ClassMemory"
 	
@@ -582,9 +597,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Divination Cards"
-	[tag]"name RU"		[value]"Гадальные карты"
-	
 	[tag]"short name"	[value]"Divination Card"
+	
+	[tag]"name RU"		[value]"Гадальные карты"
 
 	[tag]"icon path"	[value]"class_divinations"
 	
@@ -609,9 +624,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Incursion Items"
+	[tag]"short name"	[value]"Incursion Item"
+	
 	[tag]"name RU"		[value]"Предмет Вмешательства"
 	
-	[tag]"short name"	[value]"Incursion Item"
 
 	[tag]"icon path"	[value]"Stone_of_Passage_inventory_icon"
 	
@@ -619,9 +635,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Metamorph Samples"
-	[tag]"name RU"		[value]"Образец Метаморфа"
-	
 	[tag]"short name"	[value]"Metamorph Sample"
+	
+	[tag]"name RU"		[value]"Образец Метаморфа"
 
 	[tag]"icon path"	[value]"eye"
 	
@@ -629,9 +645,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Leaguestones"
-	[tag]"name RU"		[value]"Камни лиги"
-	
 	[tag]"short name"	[value]"Leaguestone"
+	
+	[tag]"name RU"		[value]"Камни лиги"
 
 	[tag]"icon path"	[value]"Leaguestone"
 	
@@ -688,7 +704,9 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Labyrinth Item"
+	[tag]"name EN"		[value]"Labyrinth Items"
+	[tag]"short name"	[value]"Labyrinth Item"
+	
 	[tag]"name RU"		[value]"Предмет лабиринта"
 
 	[tag]"icon path"	[value]"Offering_to_the_Goddess_inventory_icon"
@@ -696,7 +714,9 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Labyrinth Trinket"
+	[tag]"name EN"		[value]"Labyrinth Trinkets"
+	[tag]"short name"	[value]"Labyrinth Trinket"
+	
 	[tag]"name RU"		[value]"Брелок лабиринта"
 
 	[tag]"icon path"	[value]"Offering_to_the_Goddess_inventory_icon"
@@ -741,9 +761,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Heist Targets"
-	[tag]"name RU"		[value]"Предмет кражи"
-	
 	[tag]"short name"	[value]"Heist Target"
+	
+	[tag]"name RU"		[value]"Предмет кражи"
 
 	[tag]"icon path"	[value]"RoguesMarker"
 	
@@ -751,9 +771,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Trinkets"
+	[tag]"short name"	[value]"Trinket"
+	
 	[tag]"name RU"		[value]"Украшения"
 	
-	[tag]"short name"	[value]"Trinket"
 
 	[tag]"icon path"	[value]"Thief's Trinket"
 	
@@ -761,9 +782,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Contracts"
+	[tag]"short name"	[value]"Contract"
+	
 	[tag]"name RU"		[value]"Контракт"
 	
-	[tag]"short name"	[value]"Contract"
 
 	[tag]"icon path"	[value]"Contract"
 	
@@ -771,9 +793,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Blueprints"
+	[tag]"short name"	[value]"Blueprint"
+	
 	[tag]"name RU"		[value]"Чертёж"
 	
-	[tag]"short name"	[value]"Blueprint"
 
 	[tag]"icon path"	[value]"Blueprint"
 	
@@ -792,6 +815,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Heist Brooches"
 	[tag]"short name"	[value]"Heist Brooch"
+	
 	[tag]"name RU"		[value]"Разбойничья брошь"
 
 	[tag]"icon path"	[value]"Brooch"
@@ -800,9 +824,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
 	[tag]"name EN"		[value]"Heist Tools"
+	[tag]"short name"	[value]"Heist Tool"
+	
 	[tag]"name RU"		[value]"Разбойничий инструмент"
 	
-	[tag]"short name"	[value]"Heist Tool"
 
 	[tag]"icon path"	[value]"Lockpick"
 	
@@ -851,7 +876,9 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Relic"
+	[tag]"name EN"		[value]"Relics"
+	[tag]"short name"	[value]"Relic"
+	
 	[tag]"name RU"		[value]"Реликвии"
 
 	[tag]"icon path"	[value]"coffer_relic"
@@ -860,7 +887,9 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Sanctified Relic"
+	[tag]"name EN"		[value]"Sanctified Relics"
+	[tag]"short name"	[value]"Sanctified Relic"
+	
 	[tag]"name RU"		[value]"Священные реликвии"
 
 	[tag]"icon path"	[value]"sanctified_relic"
