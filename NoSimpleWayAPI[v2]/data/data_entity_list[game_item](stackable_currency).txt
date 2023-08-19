@@ -2579,7 +2579,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Tattoo of the Makanga"
+	[tag]"name EN"		[value]"Tattoo of the Ramako Makanga"
 	[tag]"name RU"		[value]"Татуировка Маканги Рамако"
 
 	[tag]"icon path"	[value]"Ramako_tattoo"
@@ -3475,8 +3475,8 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Honoured Tattoo of the потопа"
-	[tag]"name RU"		[value]"Почётная татуировка голубя"
+	[tag]"name EN"		[value]"Honoured Tattoo of the Flood"
+	[tag]"name RU"		[value]"Почётная татуировка потопа"
 
 	[tag]"icon path"	[value]"Honoured_tattoo"
 	[tag]"base class"	[value]"Stackable Currency"

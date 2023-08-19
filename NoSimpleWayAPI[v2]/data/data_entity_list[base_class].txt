@@ -357,8 +357,8 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Active Gems"
-	[tag]"short name"	[value]"Active Gem"
+	[tag]"name EN"		[value]"Skill Gems"
+	[tag]"short name"	[value]"Skill Gem"
 	[tag]"name RU"		[value]"Камни умений"
 
 	[tag]"icon path"	[value]"PortalGem"
