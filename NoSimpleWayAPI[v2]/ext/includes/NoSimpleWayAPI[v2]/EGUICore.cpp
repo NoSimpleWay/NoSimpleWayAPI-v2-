@@ -590,6 +590,7 @@ EButtonGroup::~EButtonGroup()
 		if (!disable_deleting)
 		{
 			if (debug_deleting) EInputCore::logger_simple_info("try delete button");
+			
 			delete all_button_list[i];
 		}
 
@@ -625,6 +626,8 @@ EButtonGroup::~EButtonGroup()
 	group_list.clear();
 	group_list.shrink_to_fit();
 
+	delete data_container;
+
 }
 
 void EButtonGroup::delete_exact_button(EntityButton* _button)
@@ -642,11 +645,9 @@ void EButtonGroup::remove_all_workspace_buttons()
 	{
 		if (!all_button_list[i]->cannot_be_auto_deleted)
 		{
-			EntityButton*
-				but = all_button_list[i];
 
 			if (!disable_deleting) {
-				delete but;
+				delete all_button_list[i];
 			}
 
 			all_button_list.erase(all_button_list.begin() + i);
@@ -725,15 +726,17 @@ void EButtonGroup::destroy_all_vertex_buffer_data()
 {
 	//all clickalbe areas
 	for (EClickableArea* c_area : clickable_area_list)
+	{
 		for (ESpriteLayer* s_layer : c_area->sprite_layer_list)
 		{
 			s_layer->destroy_vertex_buffer();
-
-			if (c_area->text_area != nullptr)
-			{
-				c_area->text_area->sprite_layer->destroy_vertex_buffer();
-			}
 		}
+
+		if (c_area->text_area != nullptr)
+		{
+			c_area->text_area->sprite_layer->destroy_vertex_buffer();
+		}
+	}
 
 	if (background_sprite_layer != nullptr)
 	{
@@ -3867,7 +3870,7 @@ void EButtonGroup::translate_group_content(float _x, float _y, float _z, bool _m
 				(
 					(is_this_group_active())
 					&&
-					(block_need_remove)
+					(!block_need_remove)
 					&&
 					(
 						(
@@ -4830,11 +4833,11 @@ EButtonGroup* EButtonGroup::create_base_button_group(ERegionGabarite* _region, E
 
 	if (_default_bg)
 	{
-		*just_created_button_group->button_group_type = ButtonGroupType::BGT_REGULAR;
+		just_created_button_group->button_group_type = ButtonGroupType::BGT_REGULAR;
 	}
 	else
 	{
-		*just_created_button_group->button_group_type = ButtonGroupType::BGT_DARKEN;
+		just_created_button_group->button_group_type = ButtonGroupType::BGT_DARKEN;
 	}
 
 	just_created_button_group->group_have_background = _have_bg;
@@ -4874,11 +4877,11 @@ void EButtonGroup::init_button_group(EGUIStyle* _style, bool _have_bg, bool _hav
 
 	if (_default_bg)
 	{
-		*button_group_type = ButtonGroupType::BGT_REGULAR;
+		button_group_type = ButtonGroupType::BGT_REGULAR;
 	}
 	else
 	{
-		*button_group_type = ButtonGroupType::BGT_DARKEN;
+		button_group_type = ButtonGroupType::BGT_DARKEN;
 	}
 
 	group_have_background = _have_bg;

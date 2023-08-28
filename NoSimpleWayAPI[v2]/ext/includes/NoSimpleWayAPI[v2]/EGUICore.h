@@ -636,8 +636,7 @@ public:
 
 	static void recursive_change_style(EButtonGroup* _group, EGUIStyle* _style);
 
-	unsigned int* culling_lines_method = new unsigned int(CullingLinesCalcMethod::CLCM_BY_PARENT_GROUP);
-	unsigned int* button_group_type = new unsigned int(ButtonGroupType::BGT_REGULAR);
+	unsigned int button_group_type = ButtonGroupType::BGT_REGULAR;
 
 	BrickStyleID brick_style_id;
 

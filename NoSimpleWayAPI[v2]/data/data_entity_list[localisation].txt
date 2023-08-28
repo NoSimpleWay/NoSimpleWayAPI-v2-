@@ -1212,6 +1212,103 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_hide_loot"
+	[tag]"name EN"		[value]"Loot: hidden"
+	[tag]"name RU"		[value]"Лут: скрыт"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_show_loot"
+	[tag]"name EN"		[value]"Loot: show"
+	[tag]"name RU"		[value]"Лут: виден"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_continue"
+	[tag]"name EN"		[value]"Continue"
+	[tag]"name RU"		[value]"Продолжить"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_continue"
+	[tag]"name EN"		[value]"Continue"
+	[tag]"name RU"		[value]"Продолжить"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_version_very_soft"
+	[tag]"name EN"		[value]"Very soft"
+	[tag]"name RU"		[value]"Стартовый"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_version_soft"
+	[tag]"name EN"		[value]"Soft"
+	[tag]"name RU"		[value]"Ранний"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_version_regular"
+	[tag]"name EN"		[value]"Default"
+	[tag]"name RU"		[value]"Стандартный"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_version_strict"
+	[tag]"name EN"		[value]"Strict"
+	[tag]"name RU"		[value]"Строгий"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_version_very_strict"
+	[tag]"name EN"		[value]"Very strict"
+	[tag]"name RU"		[value]"Строгий+"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_mode_full_ignore"
+	[tag]"name EN"		[value]"Full ignore"
+	[tag]"name RU"		[value]"Полный игнор"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_mode_hide"
+	[tag]"name EN"		[value]"Hide"
+	[tag]"name RU"		[value]"Скрыть"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_mode_ignore"
+	[tag]"name EN"		[value]"Ignore"
+	[tag]"name RU"		[value]"Игнор"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_mode_default"
+	[tag]"name EN"		[value]"Default"
+	[tag]"name RU"		[value]"Стандарт"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	[tag]"key"			[value]"variant_mode_very_focus"
+	[tag]"name EN"		[value]"Focus"
+	[tag]"name RU"		[value]"Фокус"
+	
+	
+	
 	
 	
 ADD_NEW_DATA_ENTITY

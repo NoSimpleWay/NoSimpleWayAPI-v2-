@@ -277,6 +277,7 @@ Entity::~Entity()
 			{
 				delete custom_data;
 			}
+
 			if (debug_deleting)EInputCore::logger_simple_success("custom data deleted");
 
 		}
@@ -631,8 +632,8 @@ void EntityButton::make_as_default_clickable_button(ERegionGabarite* _region_gab
 	jc_clickable_area->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
 	if (_dap != nullptr) { jc_clickable_area->actions_on_click_list.push_back(_dap); }
 	
-	ECustomData* last_data = Entity::get_last_custom_data(this);
-		//last_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
+	ECustomData*
+	last_data = Entity::get_last_custom_data(this);
 
 	last_data->clickable_area_list.push_back(jc_clickable_area);
 }
@@ -1918,7 +1919,7 @@ void EntityButton::update(float _d)
 			highlight_time -= _d;
 		}
 
-		if ((main_clickable_area->hover_time >= 0.50f) && (description_container != nullptr))
+		if ((main_clickable_area != nullptr) && (main_clickable_area->hover_time >= 0.50f) && (description_container != nullptr))
 		{
 			if (attached_description == nullptr)
 			{
@@ -2008,6 +2009,16 @@ EntityButton::~EntityButton()
 	action_on_generate_vertex_buffer.clear();
 	action_on_generate_vertex_buffer.shrink_to_fit();
 	if (debug_deleting) EInputCore::logger_simple_success("clear and shrink action on change style");
+	
+	if (description_container != nullptr)
+	{
+		delete description_container;
+	}
+
+	if (attached_description != nullptr)
+	{
+		delete attached_description;
+	}
 	//EInputCore::logger_simple_try("delete entity button");
 
 	//if ((parent_button_group != nullptr) && (!parent_button_group->need_remove))
@@ -2217,20 +2228,25 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 
 
 
+	if (!_but->sprite_layer_list.empty())
+	{
+		NS_ERenderCollection::temporary_sprites = false;
+		NS_ERenderCollection::generate_brick_texture
+		(
+			ERegionGabarite::temporary_gabarite,
+			_but->sprite_layer_list[0],
+			_style->brick_style[BrickStyleID::SLIDER_BG].main_texture,
+			_style->brick_style[BrickStyleID::SLIDER_BG].normal_map_texture,
+			_style->brick_style[BrickStyleID::SLIDER_BG].gloss_map_texture
+		);
+	}
 
-	NS_ERenderCollection::temporary_sprites = false;
-	NS_ERenderCollection::generate_brick_texture
-	(
-		ERegionGabarite::temporary_gabarite,
-		_but->sprite_layer_list[0],
-		_style->brick_style[BrickStyleID::SLIDER_BG].main_texture,
-		_style->brick_style[BrickStyleID::SLIDER_BG].normal_map_texture,
-		_style->brick_style[BrickStyleID::SLIDER_BG].gloss_map_texture
-	);
-
-	_but->offset_y = 10.0f;
-	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = _style->brick_style[BrickStyleID::SLIDER_ACTIVE].main_texture->size_x_in_pixels;
-	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = total_group_height;
+	if (!_but->custom_data_list.empty())
+	{
+		_but->offset_y = 10.0f;
+		_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_x = _style->brick_style[BrickStyleID::SLIDER_ACTIVE].main_texture->size_x_in_pixels;
+		_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = total_group_height;
+	}
 
 
 
@@ -2394,10 +2410,10 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 
 void EntityButtonVariantRouter::select_variant_by_base_name(std::string& _base_name)
 {
-	select_variant(seach_id_by_base_name(_base_name));
+	select_variant(search_id_by_base_name(_base_name));
 }
 
-int EntityButtonVariantRouter::seach_id_by_base_name(std::string& _base_name)
+int EntityButtonVariantRouter::search_id_by_base_name(std::string& _base_name)
 {
 	//int id = 0;
 
@@ -2418,7 +2434,7 @@ std::string EntityButtonVariantRouter::return_base_text_from_selected_router()
 	return router_variant_list[selected_variant]->localisation->base_name;
 }
 
-RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localisation_key_and_color(std::string _key, float _r, float _g, float _b, float _a)
+RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_key_and_color(std::string _key, float _r, float _g, float _b, float _a)
 {
 	RouterVariant*
 	router_variant = new RouterVariant();
@@ -2433,6 +2449,28 @@ RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localisation_k
 	return router_variant;
 }
 
+RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_key_color_and_icon(std::string _key, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon)
+{
+	RouterVariant*
+	router_variant = new RouterVariant();
+
+	router_variant->localisation = new ELocalisationText(ELocalisationText::get_localisation_by_key(_key));
+
+	if (_key_for_window != "")
+	{
+		router_variant->localisation_for_select_window = new ELocalisationText(ELocalisationText::get_localisation_by_key(_key_for_window));
+	}
+
+	router_variant->color = new HSVRGBAColor();
+	router_variant->color->set_color_RGBA(_r, _g, _b, _a);
+
+	router_variant_list.push_back(router_variant);
+
+	router_variant->texture = _icon;
+
+	return router_variant;
+}
+
 RouterVariant::~RouterVariant()
 {
 	if (!do_not_delete_me)
@@ -2440,7 +2478,7 @@ RouterVariant::~RouterVariant()
 		//EInputCore::logger_simple_info("~RouterVariant");
 		if ((localisation_for_select_window != nullptr) && (localisation != localisation_for_select_window)){ delete localisation_for_select_window; }
 		if (localisation != nullptr)					{ delete localisation; localisation = nullptr;}
-		//if (color != nullptr)							{ delete color; }
+		if (color != nullptr)							{ delete color; }
 		
 
 		//EInputCore::logger_simple_success("~RouterVariant deleted");

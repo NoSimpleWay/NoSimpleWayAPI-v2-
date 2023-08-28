@@ -95,7 +95,7 @@ public:
 	static ESprite* get_last_sprite(Entity* _en);
 
 	bool entity_disabled			= false;
-	bool entity_need_remove	= false;
+	bool entity_need_remove			= false;
 	bool have_phantom_draw			= false;
 	bool be_visible_last_time		= false;
 
@@ -490,14 +490,14 @@ public:
 	int							selected_variant;
 	std::vector<RouterVariant*>	router_variant_list;
 
-	ESpriteLayer* layer_with_icon;
-	ETextArea* pointer_to_text_area;
+	ESpriteLayer*	layer_with_icon;
+	ETextArea*		pointer_to_text_area;
 
 
 
 	void select_variant(int _variant_id);
 	void select_variant_by_base_name(std::string& _base_name);
-	int seach_id_by_base_name(std::string& _base_name);
+	int search_id_by_base_name(std::string& _base_name);
 
 	std::string	return_base_text_from_selected_router();
 
@@ -517,7 +517,8 @@ public:
 	//	//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	//);
 
-	RouterVariant* add_router_variant_with_localisation_key_and_color(std::string _key, float _r, float _g, float _b, float _a);
+	RouterVariant* add_router_variant_with_localization_key_and_color(std::string _key, float _r, float _g, float _b, float _a);
+	RouterVariant* add_router_variant_with_localization_key_color_and_icon(std::string _key, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon);
 
 	int height_division = 2;
 };

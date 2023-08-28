@@ -500,7 +500,7 @@ void ETextArea::generate_text()
 		{
 			if (!disable_deleting)
 			{
-				delete sprite_layer->vertex_buffer;
+				delete[] sprite_layer->vertex_buffer;
 				sprite_layer->total_capacity = 0;
 			}
 		}
@@ -1883,47 +1883,23 @@ ELocalisationText::ELocalisationText()
 ELocalisationText ELocalisationText::empty_localisation;
 ELocalisationText ELocalisationText::get_localisation_by_key(std::string _key)
 {
-	//EInputCore::logger_simple_info("Try find");
-	for (DataEntityNamedStruct* named_struct : EDataEntity::data_entity_named_structs)
+	for (EDataEntity* de : EDataEntity::data_entity_hash_struct.data_entity_list[EStringUtils::get_id_by_hash(_key)])
 	{
-		//EInputCore::logger_param("struct name", named_struct->name);
 
-		int
-		index = EStringUtils::hashFunction(_key) & 0x000000000000000F;
-		index = min(index, 15);
-		index = max(index, 0);
+		std::string
+		key_value = DataEntityUtils::get_tag_value_by_name(0, "key", de);
 
-		//arr[index]++;
-		if (named_struct->localised_name == "Localisation")
+		if (key_value == _key)
 		{
-			//EInputCore::logger_simple_info("Localisation named struct");
+			ELocalisationText
+			ltext;
 
-			for (EDataEntity* de : named_struct->data_entity_list[index])
-			{
-				for (EDataTag* str : de->tag_list)
-				{
-					//EInputCore::logger_param("tag name", *str->tag_name);
-					//EInputCore::logger_param("tag value", *str->tag_value_list[0]);
+			ltext.stored_key = _key;
+			ltext.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", de);
+			ltext.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", de);
+			ltext.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", de);
 
-					//std::cout << std::endl << std::endl;
-				}
-
-				std::string
-				key_value = DataEntityUtils::get_tag_value_by_name(0, "key", de);
-
-				if (key_value == _key)
-				{
-					ELocalisationText
-					ltext;
-
-					ltext.stored_key = _key;
-					ltext.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", de);
-					ltext.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", de);
-					ltext.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", de);
-
-					return ltext;
-				}
-			}
+			return ltext;
 		}
 	}
 

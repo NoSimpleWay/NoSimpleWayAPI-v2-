@@ -243,8 +243,12 @@ namespace NS_EGraphicCore
 	extern float current_zoom;
 
 	extern void set_active_color(const EColor_4(&_color)[4]);
+	extern void set_active_color(const EColor_4(*_color)[4]);
+
 	extern void set_active_color_custom_alpha(const EColor_4(&_color)[4], float _alpha);
+
 	extern void set_active_color(EColor_4* _color);
+
 	extern void set_active_color(float _r, float _g, float _b, float _a);
 	extern void set_active_color(HSVRGBAColor* _color);
 
@@ -519,17 +523,18 @@ public:
 
 	void(*pointer_to_sprite_render)(ESprite* _sprite);
 
-	ETextureGabarite* main_texture		= nullptr;
-	ETextureGabarite* normal_texture	= nullptr;
-	ETextureGabarite* gloss_texture		= nullptr;
+	ETextureGabarite*	main_texture		= nullptr;
+	ETextureGabarite*	normal_texture		= nullptr;
+	ETextureGabarite*	gloss_texture		= nullptr;
 
-	ESpriteLayer* master_sprite_layer	= nullptr;
+	ESpriteLayer*		master_sprite_layer	= nullptr;
 
-	EColor_4* sprite_color = new float[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
+	EColor_4			sprite_color[4] = {1.0f, 1.0f, 1.0f, 1.0f};
+
 	void set_color(float _r, float _g, float _b, float _a);
 	void set_color(const float(&_color)[4]);
 
-	//minus size from diffirent side
+	//minus size from different side
 	float fragment_offset_x = 0.0f;
 	float fragment_offset_y = 0.0f;
 
@@ -539,7 +544,7 @@ public:
 
 
 	// 
-	//final calculated fise with fragments
+	//final calculated size with fragments
 	float uv_start_x = 0.0f;
 	float uv_start_y = 0.0f;
 
@@ -549,7 +554,7 @@ public:
 
 
 	// 
-	//final calculated fise with fragments
+	//final calculated size with fragments
 	float normal_uv_start_x = 0.0f;
 	float normal_uv_start_y = 0.0f;
 		  
@@ -559,7 +564,7 @@ public:
 
 
 	// 
-	//final calculated fise with fragments
+	//final calculated size with fragments
 	float gloss_uv_start_x = 0.0f;
 	float gloss_uv_start_y = 0.0f;
 		  
@@ -608,7 +613,7 @@ public:
 	~ESpriteFrame();
 
 	std::vector<ESprite*> sprite_list;
-	int* active_frame_id = new int(0);
+	int active_frame_id = 0;
 
 	bool marked_as_temporary = false;
 

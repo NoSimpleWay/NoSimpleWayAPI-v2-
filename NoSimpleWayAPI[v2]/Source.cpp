@@ -1,6 +1,10 @@
 ﻿#include <iostream>
 #include <string>
 
+#ifndef _DEBUG
+#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
+#endif
+
 #define STB_IMAGE_IMPLEMENTATION 
 
 /**/#include "NoSimpleWayAPI[v2]/ETextCore.h"
@@ -43,6 +47,7 @@
 #include "Source.h"
 #endif
 /**/
+
 
 
 
@@ -165,6 +170,10 @@ void register_debug_structs()
 }
 int main()
 {
+	#ifndef  _DEBUG
+		FreeConsole();
+	#endif //  _DEBUG
+
 	setlocale(LC_CTYPE, "Russian");
 	//SetConsoleOutputCP(65001);
 	//printf("Testing unicode -- English -- Ελληνικά -- Español -- Русский. aäbcdefghijklmnoöpqrsßtuüvwxyz\n");
@@ -377,7 +386,7 @@ int main()
 			for (int i = 0; i < min(16, ETextureGabarite::incomplete_gabarites_list.size()); i++)
 			{
 				NS_EGraphicCore::complete_texture_gabarite(ETextureGabarite::incomplete_gabarites_list[0 + i]);
-				NS_EGraphicCore::complete_texture_gabarite(ETextureGabarite::incomplete_gabarites_list[0 + i]);
+				//NS_EGraphicCore::complete_texture_gabarite(ETextureGabarite::incomplete_gabarites_list[0 + i]);
 				ETextureGabarite::incomplete_gabarites_list.erase(ETextureGabarite::incomplete_gabarites_list.begin() + i);
 			}
 

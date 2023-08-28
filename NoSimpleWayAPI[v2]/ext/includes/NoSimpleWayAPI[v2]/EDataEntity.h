@@ -35,7 +35,7 @@ public:
 struct DataEntityNamedStruct
 {
 public:
-	std::vector <std::vector<EDataEntity*>> data_entity_list{16};
+	std::vector <std::vector<EDataEntity*>> data_entity_list{256};
 	std::string localised_name = "";
 };
 
@@ -46,9 +46,9 @@ public:
 
 	std::vector<EDataTag*> tag_list;
 
-	static std::vector<EDataEntity*> data_entity_global_list;
-
-	static std::vector<DataEntityNamedStruct*> data_entity_named_structs;
+	static std::vector<EDataEntity*>			data_entity_global_list;
+	static DataEntityNamedStruct				data_entity_hash_struct;
+	//static std::vector<DataEntityNamedStruct*>	data_entity_named_structs;
 };
 
 namespace DataEntityUtils

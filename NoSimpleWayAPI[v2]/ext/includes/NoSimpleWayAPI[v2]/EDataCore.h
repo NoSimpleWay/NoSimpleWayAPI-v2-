@@ -88,8 +88,8 @@ public:
 	ESpriteFrame* get_sprite_frame_by_id(unsigned int _clickable_region_id, unsigned int _sprite_layer_id, unsigned int _frame_id);
 	//std::vector<void (*)(Entity*, ECustomData*)> data_actions_list;
 
-	bool* is_second_pass = new bool(false);
-	bool* disable_custom_data_draw = new bool(false);
+	bool is_second_pass				= false;
+	bool disable_custom_data_draw	= false;
 };
 
 class ERegionGabarite

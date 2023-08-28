@@ -981,15 +981,25 @@ public:
 	static std::string username;
 	static std::string path_of_exile_folder;
 
-	static void									load_loot_filter_list();
+	static void										load_loot_filter_list();
 
-	static void									load_custom_sound_list();
-	static void									load_ingame_sound_list();
+	static void										load_custom_sound_list();
+	static void										load_ingame_sound_list();
 
-	static bool									text_is_condition(std::string& buffer_text);
-	static bool									first_time_open;
+	static bool										text_is_condition(std::string& buffer_text);
+	static bool										first_time_open;
 
-	static void									open_loot_filter(std::string _full_path, LootFilterOpenMode _loot_filter_mode);
+	static void										open_loot_filter(std::string _full_path, LootFilterOpenMode _loot_filter_mode);
+
+
+
+
+
+	static EntityButtonVariantRouterForFilterBlock*	create_show_hide_button();
+
+
+
+
 	static EButtonGroupFilterBlock* create_filter_block(EButtonGroup* _target_editor, int _specific_position);
 	static EButtonGroupFilterBlockSeparator* create_filter_block_separator(EButtonGroup* _target_whole_group, int _specific_position);
 

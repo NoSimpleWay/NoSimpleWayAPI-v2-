@@ -36,7 +36,7 @@ namespace NS_EGraphicCore
 	int					texture_loader_width, texture_loader_height,  last_texture_width, last_texture_height;
 
 	//std::vector<ETextureGabarite*>	texture_gabarites_list;
-	std::vector <std::vector<ETextureGabarite*>> texture_gabarites_list{ 16 };
+	std::vector <std::vector<ETextureGabarite*>> texture_gabarites_list{ 256 };
 
 	float							delta_time;
 	float							saved_time_for_delta;
@@ -2378,6 +2378,15 @@ void NS_EGraphicCore::set_active_color(const EColor_4(&_color)[4])
 	NS_EGraphicCore::active_color[3] = _color[3];
 }
 
+void NS_EGraphicCore::set_active_color(const EColor_4(*_color)[4])
+{
+	NS_EGraphicCore::active_color[0] = (*_color)[0];
+	NS_EGraphicCore::active_color[1] = (*_color)[1];
+	NS_EGraphicCore::active_color[2] = (*_color)[2];
+	NS_EGraphicCore::active_color[3] = (*_color)[3];
+}
+
+
 void NS_EGraphicCore::set_active_color_custom_alpha(const EColor_4(&_color)[4], float _alpha)
 {
 	NS_EGraphicCore::active_color[0] = _color[0];
@@ -2849,9 +2858,7 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 
 	//search already loaded texture gabarite
 	int
-	index = EStringUtils::hashFunction(_full_path) & 0x000000000000000F;
-	index = min(index, 15);
-	index = max(index, 0);
+	index = EStringUtils::get_id_by_hash(_full_path);
 
 	for (ETextureGabarite* g : NS_EGraphicCore::texture_gabarites_list[index])
 	{
@@ -3798,7 +3805,7 @@ void NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_real_siz
 
 void NS_ERenderCollection::call_render_textured_rectangle_with_custom_size(ESprite* _sprite)
 {
-	NS_EGraphicCore::set_active_color(_sprite->sprite_color);
+	NS_EGraphicCore::set_active_color(&(_sprite->sprite_color));
 
 	if ((_sprite != nullptr) && (_sprite->main_texture != nullptr))
 	{
@@ -3857,7 +3864,7 @@ void NS_ERenderCollection::call_render_textured_sprite(ESprite* _sprite)
 	{
 		//_sprite->master_sprite_layer->vertex_buffer = new float[100];
 
-		NS_EGraphicCore::set_active_color(_sprite->sprite_color);
+		NS_EGraphicCore::set_active_color(&(_sprite->sprite_color));
 
 		NS_ERenderCollection::add_data_to_vertex_buffer_sprite
 		(
@@ -3890,7 +3897,7 @@ void NS_ERenderCollection::call_render_textured_sprite_test(ESprite* _sprite)
 	{
 		//_sprite->master_sprite_layer->vertex_buffer = new float[100];
 
-		NS_EGraphicCore::set_active_color(_sprite->sprite_color);
+		NS_EGraphicCore::set_active_color(&_sprite->sprite_color);
 
 		NS_ERenderCollection::add_data_to_vertex_buffer_sprite_test
 		(
@@ -3920,7 +3927,7 @@ void NS_ERenderCollection::call_render_textured_sprite_PBR(ESprite* _sprite)
 		{
 			//_sprite->master_sprite_layer->vertex_buffer = new float[100];
 
-			NS_EGraphicCore::set_active_color(_sprite->sprite_color);
+			NS_EGraphicCore::set_active_color(&_sprite->sprite_color);
 
 			NS_ERenderCollection::add_data_to_vertex_buffer_sprite_PBR
 			(
@@ -4781,7 +4788,7 @@ void NS_ERenderCollection::generate_brick_texture(ERegionGabarite* _region, ESpr
 
 
 
-							NS_EGraphicCore::set_active_color(current_sprite->sprite_color);
+							NS_EGraphicCore::set_active_color(&current_sprite->sprite_color);
 
 							//EInputCore::logger_param("xx", xx);
 							//EInputCore::logger_param("yy", yy);
@@ -5036,14 +5043,18 @@ int ESpriteLayer::data_copy_calls = 0;
 
 ESpriteLayer::~ESpriteLayer()
 {
+	if (!disable_deleting) {
+		destroy_vertex_buffer();
+	}
 
-	if (!disable_deleting) {delete[] vertex_buffer;}
+	//if (!disable_deleting) {delete[] vertex_buffer;}
 
 
 	for (ESpriteFrame* frame : sprite_frame_list)
 	{
 		if (!disable_deleting) {delete frame;}
 	}
+
 	sprite_frame_list.clear();
 	sprite_frame_list.shrink_to_fit();
 }
@@ -5175,7 +5186,7 @@ void ESpriteLayer::generate_vertex_buffer_for_sprite_layer(std::string _text)
 		for (unsigned int i = 0; i < sprite_frame_list.size(); i++)
 		{
 			ESpriteFrame* frame = sprite_frame_list[i];
-			ESprite* spr = frame->sprite_list.at(*frame->active_frame_id);
+			ESprite* spr = frame->sprite_list.at(frame->active_frame_id);
 			//EInputCore::logger_param("frame id", *frame->active_frame_id);
 			//EInputCore::logger_param("texture name", spr->main_texture->get_name());
 			//EInputCore::logger_param("memory", spr);
@@ -5333,15 +5344,22 @@ void ESpriteLayer::destroy_vertex_buffer()
 
 ESpriteLayer* ESpriteLayer::create_default_sprite_layer(ETextureGabarite* _texture)
 {
-	ESpriteLayer* jc_sprite_layer = new ESpriteLayer();
-	ESpriteFrame* jc_sprite_frame = ESpriteFrame::create_default_sprite_frame_with_sprite(_texture, jc_sprite_layer);
-	ESprite* jc_sprite = jc_sprite_frame->sprite_list[0];
+	ESpriteLayer*
+	jc_sprite_layer = new ESpriteLayer();
 
-	jc_sprite_layer->sprite_frame_list.push_back(jc_sprite_frame);
 	jc_sprite_layer->batcher = NS_EGraphicCore::default_batcher_for_drawing;
 
-	jc_sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite;
-	jc_sprite->master_sprite_layer = jc_sprite_layer;
+
+		
+		ESpriteFrame*
+		jc_sprite_frame = ESpriteFrame::create_default_sprite_frame_with_sprite(_texture, jc_sprite_layer);
+
+		ESprite*
+		jc_sprite = jc_sprite_frame->sprite_list[0];
+
+		jc_sprite_layer->sprite_frame_list.push_back(jc_sprite_frame);
+		jc_sprite->pointer_to_sprite_render = &NS_ERenderCollection::call_render_textured_sprite;
+		jc_sprite->master_sprite_layer = jc_sprite_layer;
 
 
 	//if (_texture != nullptr) { jc_sprite->set_texture_gabarite(_texture); }
@@ -5750,11 +5768,6 @@ ESpriteFrame::~ESpriteFrame()
 	//for (ESprite* sl:sprite_list) { delete sl; }
 	sprite_list.clear();
 	sprite_list.shrink_to_fit();
-
-	if (!disable_deleting)
-	{
-		delete active_frame_id;
-	}
 }
 
 ESpriteFrame* ESpriteFrame::create_default_sprite_frame()

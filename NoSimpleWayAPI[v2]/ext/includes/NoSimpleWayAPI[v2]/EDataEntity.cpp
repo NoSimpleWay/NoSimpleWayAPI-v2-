@@ -5,7 +5,8 @@
 #endif
 
 std::vector<EDataEntity*>			EDataEntity::data_entity_global_list;
-std::vector<DataEntityNamedStruct*>	EDataEntity::data_entity_named_structs;
+DataEntityNamedStruct				EDataEntity::data_entity_hash_struct;
+//std::vector<DataEntityNamedStruct*>	EDataEntity::data_entity_named_structs;
 
 std::string DataEntityUtils::get_tag_value_by_name(int _id, std::string _name, EDataEntity* _data_entity)
 {
