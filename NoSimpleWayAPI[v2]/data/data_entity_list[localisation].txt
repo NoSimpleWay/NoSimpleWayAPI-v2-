@@ -1280,30 +1280,35 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	[tag]"key"			[value]"variant_mode_full_ignore"
+	[tag]"base name"	[value]"full_ignore"
 	[tag]"name EN"		[value]"Full ignore"
 	[tag]"name RU"		[value]"Полный игнор"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	[tag]"key"			[value]"variant_mode_hide"
+	[tag]"base name"	[value]"hide"
 	[tag]"name EN"		[value]"Hide"
 	[tag]"name RU"		[value]"Скрыть"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	[tag]"key"			[value]"variant_mode_ignore"
+	[tag]"base name"	[value]"ignore"
 	[tag]"name EN"		[value]"Ignore"
 	[tag]"name RU"		[value]"Игнор"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	[tag]"key"			[value]"variant_mode_default"
+	[tag]"base name"	[value]"default"
 	[tag]"name EN"		[value]"Default"
 	[tag]"name RU"		[value]"Стандарт"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	[tag]"key"			[value]"variant_mode_very_focus"
+	[tag]"base name"	[value]"focus"
 	[tag]"name EN"		[value]"Focus"
 	[tag]"name RU"		[value]"Фокус"
 	
@@ -1830,6 +1835,78 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"valuable_loot_hidden_warning"
 	[tag]"name EN"		[value]"WARNING! VALUABLE LOOT HIDDEN!"
 	[tag]"name RU"		[value]"ВНИМАНИЕ! ЦЕННЫЙ ЛУТ СКРЫТ"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"window_header_version_configurator"
+	[tag]"name EN"		[value]"Version configure"
+	[tag]"name RU"		[value]"Настройка версий"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_version_name_0"
+	[tag]"base name"	[value]"Very soft"
+	[tag]"name EN"		[value]"Very soft"
+	[tag]"name RU"		[value]"Ранняя"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"gray_text_input_loot_version_name"
+	[tag]"name EN"		[value]"Type version name"
+	[tag]"name RU"		[value]"Напишите название версии"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_name_very_soft"
+	[tag]"base name"	[value]"very_soft"
+	[tag]"name EN"		[value]"Very soft"
+	[tag]"name RU"		[value]"Very soft"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_name_soft"
+	[tag]"base name"	[value]"soft"
+	[tag]"name EN"		[value]"Soft"
+	[tag]"name RU"		[value]"Soft"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_name_default"
+	[tag]"base name"	[value]"default"
+	[tag]"name EN"		[value]"Default"
+	[tag]"name RU"		[value]"Default"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_name_strict"
+	[tag]"base name"	[value]"strict"
+	[tag]"name EN"		[value]"Strict"
+	[tag]"name RU"		[value]"Strict"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_name_very_strict"
+	[tag]"base name"	[value]"very_strict"
+	[tag]"name EN"		[value]"Very strict"
+	[tag]"name RU"		[value]"Very strict"
 
 	
 	

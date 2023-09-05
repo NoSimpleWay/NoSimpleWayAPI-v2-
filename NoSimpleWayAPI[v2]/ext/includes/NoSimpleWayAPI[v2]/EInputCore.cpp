@@ -61,6 +61,15 @@ namespace EInputCore
 		if ((mouse_button_state[_button] != GLFW_RELEASE) && (mouse_hold_time[_button] <= 0.0f)){ return true; }
 		return false;
 	}
+
+	float ger_real_mouse_x()
+	{
+		return float(EInputCore::MOUSE_POSITION_X / NS_EGraphicCore::current_zoom);
+	}
+	float ger_real_mouse_y()
+	{
+		return float(EInputCore::MOUSE_POSITION_Y / NS_EGraphicCore::current_zoom);
+	}
 };
 
 std::string std::to_string(std::string _string)

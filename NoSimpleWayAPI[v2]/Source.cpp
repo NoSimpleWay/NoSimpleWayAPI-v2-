@@ -116,8 +116,7 @@ void register_debug_structs()
 			RouterVariant*
 			router_variant	= new RouterVariant();
 
-			router_variant->localisation	= new ELocalisationText();
-			*router_variant->localisation	= DebugNamespace::NSW_registered_debug_struct[i].localisation_text;
+			router_variant->router_localisation	= DebugNamespace::NSW_registered_debug_struct[i].localisation_text;
 			router_variant->texture = DebugNamespace::NSW_registered_debug_struct[i].icon;
 			router_variant->color = new HSVRGBAColor();
 			router_variant->color->set_color_RGBA(0.5f, 0.4f, 0.3f, 1.0f);
@@ -128,8 +127,8 @@ void register_debug_structs()
 			//
 			router_variant = new RouterVariant();
 
-			router_variant->localisation	= new ELocalisationText();
-			*router_variant->localisation	= DebugNamespace::NSW_registered_debug_struct[i].localisation_text;
+			
+			router_variant->router_localisation	= DebugNamespace::NSW_registered_debug_struct[i].localisation_text;
 			router_variant->texture = DebugNamespace::NSW_registered_debug_struct[i].icon;
 			router_variant->color = new HSVRGBAColor();
 			router_variant->color->set_color_RGBA(0.2f, 1.0f, 0.4f, 1.0f);

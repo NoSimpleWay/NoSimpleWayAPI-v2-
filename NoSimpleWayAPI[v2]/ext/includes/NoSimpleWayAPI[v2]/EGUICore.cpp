@@ -4037,6 +4037,11 @@ void EButtonGroup::activate_move_to_foreground_and_center()
 		//move_to_foreground();
 	}
 
+	if (auto_superfocused)
+	{
+		EButtonGroup::super_focus_on_this_group = this;
+	}
+
 	need_refresh = true;
 }
 
@@ -5146,11 +5151,11 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 		EntityButtonVariantRouterSelector*
 			variant_button = new EntityButtonVariantRouterSelector();
 
-		std::string text = rv->localisation->localisations[ELocalisationText::active_localisation];
+		std::string text = rv->router_localisation.localisations[ELocalisationText::active_localisation];
 
-		if ((rv->localisation_for_select_window != nullptr) && (rv->localisation_for_select_window->localisations[ELocalisationText::active_localisation] != ""))
+		if ((rv->localisation_for_select_window.localisations[ELocalisationText::active_localisation] != ""))
 		{
-			text = rv->localisation_for_select_window->localisations[ELocalisationText::active_localisation];
+			text = rv->localisation_for_select_window.localisations[ELocalisationText::active_localisation];
 		}
 
 		variant_button->make_as_default_button_with_icon_and_text
@@ -5162,9 +5167,9 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 			text
 		);
 
-		if (rv->localisation_for_select_window != nullptr)
+		//if (rv->localisation_for_select_window != nullptr)
 		{
-			variant_button->main_text_area->localisation_text = *rv->localisation_for_select_window;
+			variant_button->main_text_area->localisation_text = rv->localisation_for_select_window;
 		}
 
 		variant_button->id = id;

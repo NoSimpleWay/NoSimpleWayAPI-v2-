@@ -657,7 +657,7 @@ void EDataActionCollection::action_change_localisation_for_color_button(ETextAre
 		EntityButtonColorButton*
 		color_button = static_cast<EntityButtonColorButton*>(_text_area->parent_entity_for_text_area);
 
-		color_button->parent_color_collection->localised_name = ELocalisationText::generate_localisation(_text_area->original_text);
+		color_button->parent_color_collection->localised_name = ELocalisationText::generate_localization_with_base_name(_text_area->original_text);
 
 
 	}

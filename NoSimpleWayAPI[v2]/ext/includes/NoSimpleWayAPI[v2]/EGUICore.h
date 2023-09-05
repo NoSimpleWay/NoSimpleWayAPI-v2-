@@ -459,11 +459,12 @@ public:
 
 	ButtonGroupChangeAfterRemove change_after_remove = ButtonGroupChangeAfterRemove::CHANGE_ONLY_DELETED_ELEMENT;
 
-	bool block_need_remove = false;
-	bool need_refresh = false;
-	bool need_change = false;
-	bool need_recalculate_culling_lines = false;
-	bool swap_to_next = false;
+	bool block_need_remove				= false;
+	bool need_refresh					= false;
+	bool need_change					= false;
+	bool need_recalculate_culling_lines	= false;
+	bool swap_to_next					= false;
+	bool auto_superfocused				= false;
 
 	float scroll_x = (0.0f);
 	float scroll_y = (0.0f);

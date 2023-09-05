@@ -462,10 +462,10 @@ public:
 struct RouterVariant
 {
 public:
-	ELocalisationText*	localisation = nullptr;
+	ELocalisationText	router_localisation;
 	HSVRGBAColor*		color;
 	ETextureGabarite*	texture = nullptr;
-	ELocalisationText*	localisation_for_select_window;
+	ELocalisationText	localisation_for_select_window;
 
 	bool				do_not_delete_me = false;
 
@@ -498,6 +498,7 @@ public:
 	void select_variant(int _variant_id);
 	void select_variant_by_base_name(std::string& _base_name);
 	int search_id_by_base_name(std::string& _base_name);
+	int search_id_by_base_name_window_variant(std::string& _base_name);
 
 	std::string	return_base_text_from_selected_router();
 
@@ -519,6 +520,8 @@ public:
 
 	RouterVariant* add_router_variant_with_localization_key_and_color(std::string _key, float _r, float _g, float _b, float _a);
 	RouterVariant* add_router_variant_with_localization_key_color_and_icon(std::string _key, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon);
+	RouterVariant* add_router_variant_with_localization_color_and_icon(ELocalisationText* _ltext, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon);
+	//RouterVariant* add_router_variant_with_localization_color_and_icon(std::string _text, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon);
 
 	int height_division = 2;
 };

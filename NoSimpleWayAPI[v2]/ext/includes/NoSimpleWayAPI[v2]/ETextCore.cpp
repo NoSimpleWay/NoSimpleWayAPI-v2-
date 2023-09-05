@@ -1253,7 +1253,34 @@ void ETextArea::activate_this_text_area()
 		
 		if ((original_text == "") || (autoerase_text)) { change_text(""); }
 		
-		selected_glyph_position = font_glyph_list.size() - 1;
+		if (!font_glyph_list.empty())
+		{
+			float most_left = 10000.0f;
+			float most_right = -10000.0f;
+
+			//int selected_glyph = -1;
+
+			for (EFontGlyph* f_glyph : font_glyph_list)
+			{
+				if (f_glyph->world_position_x < most_left)	{ most_left = f_glyph->world_position_x; }
+				if (f_glyph->world_position_x > most_right)	{ most_right = f_glyph->world_position_x; }
+			}
+
+			if (EInputCore::ger_real_mouse_x() <= most_left)
+			{
+				selected_glyph_position = 0;
+			}
+			else
+			if (EInputCore::ger_real_mouse_x() >= most_right)
+			{
+				selected_glyph_position = font_glyph_list.size() - 1;
+			}
+		}
+
+		
+			
+
+		
 	}
 }
 
@@ -1916,11 +1943,25 @@ ELocalisationText ELocalisationText::get_localisation_by_key(std::string _key)
 	return ltext;
 }
 
-ELocalisationText ELocalisationText::generate_localisation(std::string _text)
+ELocalisationText ELocalisationText::generate_localization_with_base_name(std::string _text)
 {
 	ELocalisationText ltext;
 
 	ltext.base_name = _text;
+	for (int i = 0; i < NSW_languages_count; i++)
+	{
+		ltext.localisations[i] = _text;
+	}
+
+
+
+	return ltext;
+}
+
+ELocalisationText ELocalisationText::generate_localization_only_languages(std::string _text)
+{
+	ELocalisationText ltext;
+
 	for (int i = 0; i < NSW_languages_count; i++)
 	{
 		ltext.localisations[i] = _text;

@@ -104,4 +104,7 @@ namespace EInputCore
 
 	extern bool				mouse_button_pressed_once(int _button);
 	//extern float key_is_holded[512];
+
+	extern float			ger_real_mouse_x();
+	extern float			ger_real_mouse_y();
 }

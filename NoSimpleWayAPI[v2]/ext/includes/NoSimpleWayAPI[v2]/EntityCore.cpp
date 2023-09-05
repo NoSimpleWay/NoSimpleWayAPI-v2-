@@ -2391,11 +2391,15 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 			pointer_to_text_area->offset_border[BorderSide::RIGHT] = 0.0f;
 
 
-			if (router_variant_list[selected_variant]->localisation != nullptr)
+			//if (router_variant_list[selected_variant]->router_localisation != nullptr)
 			{
-				pointer_to_text_area->localisation_text = *router_variant_list[selected_variant]->localisation;
-				pointer_to_text_area->stored_color = *(router_variant_list[selected_variant]->color);
-				pointer_to_text_area->color = *(router_variant_list[selected_variant]->color);
+				pointer_to_text_area->localisation_text = router_variant_list[selected_variant]->router_localisation;
+
+				if (router_variant_list[selected_variant]->color != nullptr)
+				{
+					pointer_to_text_area->stored_color = *(router_variant_list[selected_variant]->color);
+					pointer_to_text_area->color = *(router_variant_list[selected_variant]->color);
+				}
 
 				pointer_to_text_area->change_text(pointer_to_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 			}
@@ -2419,19 +2423,36 @@ int EntityButtonVariantRouter::search_id_by_base_name(std::string& _base_name)
 
 	for (int i = 0; i < router_variant_list.size(); i++)
 	{
-		if (router_variant_list[i]->localisation->base_name == _base_name)
+		if (router_variant_list[i]->router_localisation.base_name == _base_name)
 		{
 			return i;
 		}
 
 		//id++;
 	}
-		return -1;
+	return -1;
+}
+
+int EntityButtonVariantRouter::search_id_by_base_name_window_variant(std::string& _base_name)
+{
+	//int id = 0;
+
+	for (int i = 0; i < router_variant_list.size(); i++)
+	{
+		if (router_variant_list[i]->localisation_for_select_window.base_name == _base_name)
+		{
+			return i;
+		}
+
+		//id++;
+	}
+
+	return -1;
 }
 
 std::string EntityButtonVariantRouter::return_base_text_from_selected_router()
 {
-	return router_variant_list[selected_variant]->localisation->base_name;
+	return router_variant_list[selected_variant]->router_localisation.base_name;
 }
 
 RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_key_and_color(std::string _key, float _r, float _g, float _b, float _a)
@@ -2439,7 +2460,7 @@ RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_k
 	RouterVariant*
 	router_variant = new RouterVariant();
 
-	router_variant->localisation = new ELocalisationText(ELocalisationText::get_localisation_by_key(_key));
+	router_variant->router_localisation = ELocalisationText::get_localisation_by_key(_key);
 
 	router_variant->color = new HSVRGBAColor();
 	router_variant->color->set_color_RGBA(_r, _g, _b, _a);
@@ -2454,11 +2475,33 @@ RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_k
 	RouterVariant*
 	router_variant = new RouterVariant();
 
-	router_variant->localisation = new ELocalisationText(ELocalisationText::get_localisation_by_key(_key));
+	router_variant->router_localisation = ELocalisationText::get_localisation_by_key(_key);
 
 	if (_key_for_window != "")
 	{
-		router_variant->localisation_for_select_window = new ELocalisationText(ELocalisationText::get_localisation_by_key(_key_for_window));
+		router_variant->localisation_for_select_window = ELocalisationText::get_localisation_by_key(_key_for_window);
+	}
+
+	router_variant->color = new HSVRGBAColor();
+	router_variant->color->set_color_RGBA(_r, _g, _b, _a);
+
+	router_variant_list.push_back(router_variant);
+
+	router_variant->texture = _icon;
+
+	return router_variant;
+}
+
+RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_color_and_icon(ELocalisationText* _ltext, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon)
+{
+	RouterVariant*
+	router_variant = new RouterVariant();
+
+	router_variant->router_localisation = *_ltext;
+
+	if (_key_for_window != "")
+	{
+		router_variant->localisation_for_select_window =ELocalisationText::get_localisation_by_key(_key_for_window);
 	}
 
 	router_variant->color = new HSVRGBAColor();
@@ -2476,9 +2519,9 @@ RouterVariant::~RouterVariant()
 	if (!do_not_delete_me)
 	{
 		//EInputCore::logger_simple_info("~RouterVariant");
-		if ((localisation_for_select_window != nullptr) && (localisation != localisation_for_select_window)){ delete localisation_for_select_window; }
-		if (localisation != nullptr)					{ delete localisation; localisation = nullptr;}
-		if (color != nullptr)							{ delete color; }
+		//if ((localisation_for_select_window != nullptr) && (router_localisation != localisation_for_select_window)){ delete localisation_for_select_window; }
+		//if (router_localisation != nullptr)					{ delete router_localisation; router_localisation = nullptr;}
+		//if (color != nullptr)							{ delete color; }
 		
 
 		//EInputCore::logger_simple_success("~RouterVariant deleted");

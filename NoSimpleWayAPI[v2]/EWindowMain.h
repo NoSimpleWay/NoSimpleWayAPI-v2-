@@ -26,6 +26,9 @@
 ///**/#include "NoSimpleWayAPI[v2]/ETextCore.h"
 //#endif
 
+#define NSW_LOOT_FILTER_MAX_VERSIONS 9
+#define NSW_LOOT_FILTER_VERSIONS_BY_DEFAULT 5
+
 
 
 constexpr int CLUSTER_DIM_X = 50;
@@ -81,6 +84,8 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_ray;
 
 	extern ETextureGabarite* texture_WARNING;
+
+	extern ETextureGabarite* texture_config_gear;
 }
 
 
@@ -272,10 +277,23 @@ class EButtonGroupTopControlSection : public EButtonGroup
 public:
 
 	//EDataContainer_Group_WholeFilterBlock*	pointer_to_whole_filter_block_data_container	= nullptr;
-	EButtonGroupFilterBlock* pointer_to_filter_block_group = nullptr;
+	//EButtonGroupFilterBlock* pointer_to_filter_block_group = nullptr;
 
 	EButtonGroupTopControlSection(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
+	
+
+	
+
+	//void draw_button_group() override;
+};
+
+class EButtonGroupPreviewBox : public EButtonGroup
+{
+public:
+	EButtonGroupPreviewBox(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	EButtonGroupFilterBlock* pointer_to_filter_block_group = nullptr;
 	float box_size_x = 160.0f;
 
 	ETextureGabarite* example_text_texture[2] =
@@ -304,7 +322,8 @@ public:
 	void clear_listed_segment();
 	static GameItemAttribute* get_suitable_game_item_attribute(std::string _name);
 
-	EButtonGroup* pointer_to_non_listed_segment;
+	EButtonGroup* pointer_to_whole_non_listed_segment;
+	EButtonGroup* pointer_to_workspace_non_listed_segment;
 
 	EButtonGroup* pointer_to_listed_segment_in_filter_block;
 	EButtonGroup* pointer_to_listed_attributes;
@@ -322,7 +341,7 @@ public:
 	EButtonGroup* pointer_to_ray_preview_segment;
 
 	EButtonGroup* pointer_to_top_control_block;
-	EButtonGroup* pointer_to_top_control_block_right_section;
+	EButtonGroup* pointer_preview_box_group;
 
 	EButtonGroup* pointer_to_ID_block;
 	EntityButton* id_button;
@@ -389,7 +408,7 @@ public:
 	//[2]"Ignore",
 	//[3]"Default",
 	//[4]"Focus"
-	EntityButtonVariantRouterForFilterBlock* version_routers[5] = { nullptr };
+	EntityButtonVariantRouterForFilterBlock* version_routers[NSW_LOOT_FILTER_MAX_VERSIONS] = { nullptr };
 
 
 
@@ -398,7 +417,7 @@ public:
 	bool	minimap_icon_color_suppressor_bool;
 
 	//EButtonGroupFilterBlockAsText*	target_filter_block_as_text_group;
-	void post_draw();
+	void post_draw() override;
 	void button_group_update(float _d) override;
 	void button_group_prechange();
 
@@ -660,6 +679,25 @@ public:
 	EButtonGroupFilterBlock* parent_filter_block;
 };
 
+
+
+static std::string loot_version_localization_key[NSW_LOOT_FILTER_VERSIONS_BY_DEFAULT]
+{
+	"version_name_very_soft",
+	"version_name_soft",
+	"version_name_default",
+	"version_name_strict",
+	"version_name_very_strict"
+};
+
+class EButtonGroupVersionControlConfigure : public EButtonGroup
+{
+public:
+	EButtonGroupVersionControlConfigure(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	EntityButton* pointer_to_version_name_button[NSW_LOOT_FILTER_MAX_VERSIONS];
+};
+
 //
 //class EDataContainer_Group_FilterBlockListedSegment : public EDataContainer
 //{
@@ -779,12 +817,14 @@ namespace EDataActionCollection
 	void action_add_new_undefined_attribute(Entity* _entity, ECustomData* _custom_data, float _d);
 
 	void action_select_this_attribute_tag(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_switch_loot_version_flag(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text
 	void action_type_search_filter_block_text(ETextArea* _text_area);
 	void action_refresh_loot_simulator_when_type(ETextArea* _text_area);
 	void action_set_unsave_changes_flag(ETextArea* _text_area);
+	void action_change_version_names(ETextArea* _text_area);
 
 
 
@@ -911,7 +951,7 @@ enum LootFilterVersionDescription
 
 };
 
-static std::string generate_filter_block_text(EButtonGroup* _button_group, FilterBlockSaveMode _save_mode);
+static std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mode);
 static std::string generate_color_palette_text();
 static std::string generate_filter_block_separator_text(EButtonGroupFilterBlockSeparator* _separator, FilterBlockSaveMode _save_mode);
 
@@ -976,6 +1016,8 @@ public:
 	static EButtonGroup*											pointer_to_battlepass;
 	static EButtonGroupFastMessage*									background_loading_info;
 	static EButtonGroupLootFilterErrors*							registered_group_filter_error_list;
+
+	static EButtonGroupVersionControlConfigure*						registered_group_loot_version_configure;
 
 
 	static std::string username;
