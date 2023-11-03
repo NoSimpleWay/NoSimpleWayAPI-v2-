@@ -1305,8 +1305,6 @@ void EDataActionCollection::action_draw_boolean_switcher(Entity* _entity, ECusto
 	auto data_container = static_cast <EDataContainer_Button_BoolSwitcher*> (_custom_data->data_container);
 
 
-	if (*data_container->target_value)
-	{
 		NS_EGraphicCore::set_active_color(1.0f, 1.0f, 1.0f, 1.0f);
 		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 		(
@@ -1316,29 +1314,13 @@ void EDataActionCollection::action_draw_boolean_switcher(Entity* _entity, ECusto
 			((EntityButton*)_entity)->button_gabarite->world_position_x,
 			((EntityButton*)_entity)->button_gabarite->world_position_y,
 
-			((EntityButton*)_entity)->button_gabarite->size_x,
+			((EntityButton*)_entity)->button_gabarite->size_y,
 			((EntityButton*)_entity)->button_gabarite->size_y,
 
-			data_container->texture_gabarite_on
+			(*data_container->target_value) ? (data_container->texture_gabarite_on) : (data_container->texture_gabarite_off)
 		);
-	}
-	else
-	{
-		NS_EGraphicCore::set_active_color(1.0f, 1.0f, 1.0f, 1.0f);
-		NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-		(
-			NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-			NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
-			((EntityButton*)_entity)->button_gabarite->world_position_x,
-			((EntityButton*)_entity)->button_gabarite->world_position_y,
 
-			((EntityButton*)_entity)->button_gabarite->size_x,
-			((EntityButton*)_entity)->button_gabarite->size_y,
-
-			data_container->texture_gabarite_off
-		);
-	}
 }
 
 void EDataActionCollection::action_draw_color_rectangle_for_group(EButtonGroup* _group)

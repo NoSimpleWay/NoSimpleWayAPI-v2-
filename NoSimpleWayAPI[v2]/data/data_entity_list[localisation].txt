@@ -1234,9 +1234,9 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
-	[tag]"key"			[value]"variant_continue"
-	[tag]"name EN"		[value]"Continue"
-	[tag]"name RU"		[value]"Продолжить"
+	[tag]"key"			[value]"variant_not_continue"
+	[tag]"name EN"		[value]"Not continue"
+	[tag]"name RU"		[value]"Не продолжить"
 	
 	
 	
@@ -1295,8 +1295,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	[tag]"key"			[value]"variant_mode_ignore"
 	[tag]"base name"	[value]"ignore"
-	[tag]"name EN"		[value]"Ignore"
-	[tag]"name RU"		[value]"Игнор"
+	[tag]"name EN"		[value]"Muffling"
+	[tag]"name RU"		[value]"Приглушение"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -1908,6 +1908,100 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Very strict"
 	[tag]"name RU"		[value]"Very strict"
 
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"remove_loot_version_pattern"
+	[tag]"name EN"		[value]"Delete this pattern"
+	[tag]"name RU"		[value]"Удалить этот шаблон"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"switcher_disable_minimap_elements"
+	[tag]"name EN"		[value]"Disable minimap elements"
+	[tag]"name RU"		[value]"Убрать элементы миникарты"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"switcher_disable_sound"
+	[tag]"name EN"		[value]"Disable sound"
+	[tag]"name RU"		[value]"Убрать звуки"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_icon_full_ignore"
+	[tag]"name EN"		[value]"Icon: full ignore"
+	[tag]"name RU"		[value]"Иконка: полный игнор"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_icon_soft_ignore"
+	[tag]"name EN"		[value]"Icon: soft muffling"
+	[tag]"name RU"		[value]"Иконка: мягкое приглушение"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_icon_ignore"
+	[tag]"name EN"		[value]"Icon: muffling"
+	[tag]"name RU"		[value]"Иконка: приглушение"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_icon_hide"
+	[tag]"name EN"		[value]"Icon: hide"
+	[tag]"name RU"		[value]"Иконка: скрыть"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_icon_default"
+	[tag]"name EN"		[value]"Icon: default"
+	[tag]"name RU"		[value]"Иконка: по умолчанию"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_icon_soft_focus"
+	[tag]"name EN"		[value]"Icon: soft focus"
+	[tag]"name RU"		[value]"Иконка: мягкий фокус"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_icon_focus"
+	[tag]"name EN"		[value]"Icon: focus"
+	[tag]"name RU"		[value]"Иконка: фокус"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"verion_pattern_focus_slider"
+	[tag]"name EN"		[value]"Focus power"
+	[tag]"name RU"		[value]"Фокусировка"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"switcher_full_ignore"
+	[tag]"name EN"		[value]"Full ignore"
+	[tag]"name RU"		[value]"Полное игнорирование"
 	
 	
 	

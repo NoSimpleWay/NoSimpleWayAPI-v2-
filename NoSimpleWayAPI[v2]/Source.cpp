@@ -118,8 +118,8 @@ void register_debug_structs()
 
 			router_variant->router_localisation	= DebugNamespace::NSW_registered_debug_struct[i].localisation_text;
 			router_variant->texture = DebugNamespace::NSW_registered_debug_struct[i].icon;
-			router_variant->color = new HSVRGBAColor();
-			router_variant->color->set_color_RGBA(0.5f, 0.4f, 0.3f, 1.0f);
+			router_variant->text_color = new HSVRGBAColor();
+			router_variant->text_color->set_color_RGBA(0.5f, 0.4f, 0.3f, 1.0f);
 
 			debug_button->router_variant_list.push_back(router_variant);
 			//
@@ -130,8 +130,8 @@ void register_debug_structs()
 			
 			router_variant->router_localisation	= DebugNamespace::NSW_registered_debug_struct[i].localisation_text;
 			router_variant->texture = DebugNamespace::NSW_registered_debug_struct[i].icon;
-			router_variant->color = new HSVRGBAColor();
-			router_variant->color->set_color_RGBA(0.2f, 1.0f, 0.4f, 1.0f);
+			router_variant->text_color = new HSVRGBAColor();
+			router_variant->text_color->set_color_RGBA(0.2f, 1.0f, 0.4f, 1.0f);
 
 
 			debug_button->router_variant_list.push_back(router_variant);
@@ -375,7 +375,7 @@ int main()
 			EButtonGroupConfirmAction::confirm_decline_group->pointer_to_confirm_button->stored_action = &EDataActionCollection::action_close_program;
 			EButtonGroupConfirmAction::confirm_decline_group->activate_move_to_foreground_and_center();
 
-			EButtonGroup::super_focus_on_this_group = EButtonGroupConfirmAction::confirm_decline_group;
+			EButtonGroupConfirmAction::confirm_decline_group->make_this_group_superfocused();
 
 			//float x = 0.0;
 		}
@@ -453,10 +453,10 @@ int main()
 		}
 
 		//if (EButtonGroup::super_focus_on_this_group != nullptr) { EButtonGroup::super_focus_on_this_group->highlight_this_group(); }
-		if ((EButtonGroup::super_focus_on_this_group != nullptr) && (!EButtonGroup::super_focus_on_this_group->is_this_group_active()))
-		{
-			EButtonGroup::super_focus_on_this_group = nullptr;
-		}
+		//if ((EButtonGroup::super_focus_on_this_group != nullptr) && (!EButtonGroup::super_focus_on_this_group->is_this_group_active()))
+		//{
+		//	EButtonGroup::super_focus_on_this_group = nullptr;
+		//}
 
 		//if (EInputCore::key_pressed_once(GLFW_KEY_LEFT_SHIFT))
 		//{

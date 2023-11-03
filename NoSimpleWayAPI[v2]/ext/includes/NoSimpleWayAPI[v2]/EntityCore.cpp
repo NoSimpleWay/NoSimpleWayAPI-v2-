@@ -1626,6 +1626,38 @@ void EntityButton::make_default_bool_switcher_button(ERegionGabarite* _region_ga
 //	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
 //}
 
+void EntityButton::make_default_bool_switcher_button_with_unedible_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite_on, ETextureGabarite* _gabarite_off, ELocalisationText _ltext, bool* _target_bool)
+{
+	make_default_button_with_unedible_text(_region_gabarite, _parent_group, _dap, _ltext);
+	main_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y;
+
+	auto data_container = new EDataContainer_Button_BoolSwitcher();
+
+
+	data_container->texture_gabarite_on = _gabarite_on;
+	data_container->texture_gabarite_off = _gabarite_off;
+
+	if (_target_bool != nullptr)
+	{
+		data_container->target_value = _target_bool;
+	}
+	else
+	{
+		//EInputCore::logger_simple_error("Target bool is NULL, generate new bool!");
+		data_container->target_value = new bool(true);
+	}
+
+
+
+
+	EntityButton::get_last_custom_data(this)->data_container = data_container;
+	EntityButton::get_last_custom_data(this)->actions_on_draw.insert
+	(
+		EntityButton::get_last_custom_data(this)->actions_on_draw.begin(),
+		&EDataActionCollection::action_draw_boolean_switcher
+	);
+}
+
 void EntityButton::make_as_default_router_variant_button(ERegionGabarite* _region_gabarite)
 {
 	make_as_default_button_with_icon_and_text(_region_gabarite, parent_button_group, &EDataActionCollection::action_rotate_variant, nullptr, "");
@@ -2395,10 +2427,10 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 			{
 				pointer_to_text_area->localisation_text = router_variant_list[selected_variant]->router_localisation;
 
-				if (router_variant_list[selected_variant]->color != nullptr)
+				if (router_variant_list[selected_variant]->text_color != nullptr)
 				{
-					pointer_to_text_area->stored_color = *(router_variant_list[selected_variant]->color);
-					pointer_to_text_area->color = *(router_variant_list[selected_variant]->color);
+					pointer_to_text_area->stored_color = *(router_variant_list[selected_variant]->text_color);
+					pointer_to_text_area->color = *(router_variant_list[selected_variant]->text_color);
 				}
 
 				pointer_to_text_area->change_text(pointer_to_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
@@ -2462,8 +2494,8 @@ RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_k
 
 	router_variant->router_localisation = ELocalisationText::get_localisation_by_key(_key);
 
-	router_variant->color = new HSVRGBAColor();
-	router_variant->color->set_color_RGBA(_r, _g, _b, _a);
+	router_variant->text_color = new HSVRGBAColor();
+	router_variant->text_color->set_color_RGBA(_r, _g, _b, _a);
 
 	router_variant_list.push_back(router_variant);
 
@@ -2482,8 +2514,8 @@ RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_k
 		router_variant->localisation_for_select_window = ELocalisationText::get_localisation_by_key(_key_for_window);
 	}
 
-	router_variant->color = new HSVRGBAColor();
-	router_variant->color->set_color_RGBA(_r, _g, _b, _a);
+	router_variant->text_color = new HSVRGBAColor();
+	router_variant->text_color->set_color_RGBA(_r, _g, _b, _a);
 
 	router_variant_list.push_back(router_variant);
 
@@ -2504,8 +2536,8 @@ RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_c
 		router_variant->localisation_for_select_window =ELocalisationText::get_localisation_by_key(_key_for_window);
 	}
 
-	router_variant->color = new HSVRGBAColor();
-	router_variant->color->set_color_RGBA(_r, _g, _b, _a);
+	router_variant->text_color = new HSVRGBAColor();
+	router_variant->text_color->set_color_RGBA(_r, _g, _b, _a);
 
 	router_variant_list.push_back(router_variant);
 

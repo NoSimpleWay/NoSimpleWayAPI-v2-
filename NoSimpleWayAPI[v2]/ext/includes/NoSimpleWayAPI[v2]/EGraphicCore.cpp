@@ -2898,6 +2898,8 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 			}
 			if (place_x >= 0) { break; }
 		}
+
+		//remove free space
 		//
 		for (int x = (ceil)(place_x / 4.0f) - 2; x < (ceil)((place_x + u_size_x) / 4.0f) + 2; x++)
 			for (int y = (ceil)(place_y / 4.0f) - 2; y < (ceil)((place_y + u_size_y) / 4.0f) + 2; y++)
@@ -3015,7 +3017,7 @@ void NS_EGraphicCore::complete_texture_gabarite(ETextureGabarite* _texture_gabar
 {
 
 	glEnable(GL_BLEND);
-	glBlendFuncSeparate(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA, GL_ONE);
+	glad_glBlendFuncSeparate(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA, GL_ONE);
 	glBlendEquation(GL_FUNC_ADD);
 
 	NS_EGraphicCore::switch_to_texture_atlas_draw_mode(_texture_gabarite->target_atlas);

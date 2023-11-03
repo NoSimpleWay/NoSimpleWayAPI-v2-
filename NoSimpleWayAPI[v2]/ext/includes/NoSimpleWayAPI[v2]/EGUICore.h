@@ -13,7 +13,7 @@ enum BrickStyleID
 	//NONE_WITH_BORDER	= -2,
 
 	//no bg
-	NONE				= -1,
+	NONE = -1,
 
 	//thick borders, moderate brightness of background
 	GROUP_DEFAULT,
@@ -45,26 +45,26 @@ constexpr bool NSW_APRIL_FOOL = false;
 class EBrickStyle
 {
 public:
-	ETextureGabarite*	main_texture = nullptr;
-	ETextureGabarite*	normal_map_texture = nullptr;
-	ETextureGabarite*	gloss_map_texture = nullptr;
+	ETextureGabarite* main_texture = nullptr;
+	ETextureGabarite* normal_map_texture = nullptr;
+	ETextureGabarite* gloss_map_texture = nullptr;
 
-	EGUIStyle*			parent_style = nullptr;
+	EGUIStyle* parent_style = nullptr;
 
 	std::string file_name = "Group_bg";
 
-	float offset_for_elements_left		= 0.0f;
-	float offset_for_elements_right		= 0.0f;
-	float offset_for_elements_bottom	= 0.0f;
-	float offset_for_elements_up		= 0.0f;
+	float offset_for_elements_left = 0.0f;
+	float offset_for_elements_right = 0.0f;
+	float offset_for_elements_bottom = 0.0f;
+	float offset_for_elements_up = 0.0f;
 
-	float border_texture_size_left		= 0.0f;
-	float border_texture_size_right		= 0.0f;
-	float border_texture_size_bottom	= 0.0f;
-	float border_texture_size_up		= 0.0f;
+	float border_texture_size_left = 0.0f;
+	float border_texture_size_right = 0.0f;
+	float border_texture_size_bottom = 0.0f;
+	float border_texture_size_up = 0.0f;
 
-	int subdivision_x			= 0;
-	int subdivision_y			= 0;
+	int subdivision_x = 0;
+	int subdivision_y = 0;
 
 	static void set_border_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
 	static void set_offset_size(EBrickStyle* _brick, float _left, float _right, float _bottom, float _up);
@@ -331,8 +331,8 @@ struct HighlightStruct
 
 	float highlight_color[4]{ 1.0f };
 
-	float max_time			= 1.0f;
-	float time_remaining	= 1.0f;
+	float max_time = 1.0f;
+	float time_remaining = 1.0f;
 	std::chrono::milliseconds highlight_timestamp;
 
 	HighlightID highlight_id = HighlightID::GREEN_INFO;
@@ -348,7 +348,7 @@ enum class ButtonGroupChangeAfterRemove
 	CHANGE_ROOT_GROUP
 };
 
-class EButtonGroupFastMessage;	
+class EButtonGroupFastMessage;
 class EButtonGroup
 {
 public:
@@ -369,6 +369,8 @@ public:
 	std::vector<EButtonGroupLine> button_line_list;
 
 	void recursive_set_suppressed();
+	void recursive_unsuppress();
+
 	bool is_blocked_by_superfocus();
 
 	bool group_is_suppressed = false;
@@ -438,10 +440,13 @@ public:
 	static EButtonGroup* focused_button_group_mouse_unpressed;
 	static EButtonGroup* focused_button_group_with_slider;
 	static EButtonGroup* catched_group_for_translation;
-	static EButtonGroup* super_focus_on_this_group;
-
+	//static EButtonGroup* super_focus_on_this_group;
+	static std::vector <EButtonGroup*> super_focus_list;
 
 	static EButtonGroupFastMessage* pointer_to_fast_message_group;
+
+	void make_this_group_superfocused();
+	void unmake_this_group_superfocused();
 
 	//MOVE GROUPS ORDER IN VECTOR
 	static EButtonGroup* vector_moving_group;
@@ -455,16 +460,16 @@ public:
 
 	static MoveVectorMethod move_vector_mode;
 
-	
+
 
 	ButtonGroupChangeAfterRemove change_after_remove = ButtonGroupChangeAfterRemove::CHANGE_ONLY_DELETED_ELEMENT;
 
-	bool block_need_remove				= false;
-	bool need_refresh					= false;
-	bool need_change					= false;
-	bool need_recalculate_culling_lines	= false;
-	bool swap_to_next					= false;
-	bool auto_superfocused				= false;
+	bool block_need_remove = false;
+	bool need_refresh = false;
+	bool need_change = false;
+	bool need_recalculate_culling_lines = false;
+	bool swap_to_next = false;
+	bool auto_superfocused = false;
 
 	float scroll_x = (0.0f);
 	float scroll_y = (0.0f);
@@ -476,13 +481,13 @@ public:
 	float additional_fake_y_point = 0.0f;
 	float additional_fake_start_offset = 0.0f;
 
-	float higher_culling_line_for_group		= 0.0f;
-	float lower_culling_line_for_group		= 0.0f;
+	float higher_culling_line_for_group = 0.0f;
+	float lower_culling_line_for_group = 0.0f;
 
-	float higher_culling_line_for_elements	= 0.0f;
-	float lower_culling_line_for_elements	= 0.0f;
+	float higher_culling_line_for_elements = 0.0f;
+	float lower_culling_line_for_elements = 0.0f;
 
-	float autodelete_time					= -1.0f;
+	float autodelete_time = -1.0f;
 
 	//float higher_culling_line_for_bg = 0.0f;
 	//float lower_culling_line_for_bg = 0.0f;
@@ -553,7 +558,7 @@ public:
 	void stretch_all_buttons();
 	void align_buttons_in_lines();
 	void calculate_world_coordinates_for_buttons();
-	
+
 	void resize_group_to_highest_point_y();
 	float get_child_total_y_size();
 	float get_highest_point_y_for_groups();
@@ -561,9 +566,9 @@ public:
 	void slide_to_this_group(EButtonGroup* _group);
 
 	void scroll_down(float _value);
-	void scroll_up	(float _value);
+	void scroll_up(float _value);
 
-	
+
 
 
 	void add_button_to_working_group(EntityButton* _button);
@@ -573,18 +578,18 @@ public:
 	bool can_resize_to_workspace_size_x = true;
 	bool can_resize_to_workspace_size_y = true;
 
-	float group_offset_for_content_bottom	= (0.0f);
-	float group_offset_for_content_up		= (0.0f);
+	float group_offset_for_content_bottom = (0.0f);
+	float group_offset_for_content_up = (0.0f);
 
-	float group_offset_for_content_left		= (0.0f);
-	float group_offset_for_content_right	= (0.0f);
-	
+	float group_offset_for_content_left = (0.0f);
+	float group_offset_for_content_right = (0.0f);
 
-	float group_border_texture_bottom		= (0.0f);
-	float group_border_texture_up			= (0.0f);
-				
-	float group_border_texture_left			= (0.0f);
-	float group_border_texture_right		= (0.0f);
+
+	float group_border_texture_bottom = (0.0f);
+	float group_border_texture_up = (0.0f);
+
+	float group_border_texture_left = (0.0f);
+	float group_border_texture_right = (0.0f);
 
 	std::vector<HighlightStruct> highlight_list;
 
@@ -653,25 +658,25 @@ public:
 
 	static bool catched_by_mouse(EButtonGroup* _group);
 
-	bool group_have_background			= true;
-	bool group_have_button_lines		= false;
-	bool can_be_focused					= true;
-	bool button_group_is_active			= true;
-	bool disable_gabarite				= false;
+	bool group_have_background = true;
+	bool group_have_button_lines = false;
+	bool can_be_focused = true;
+	bool button_group_is_active = true;
+	bool disable_gabarite = false;
 
-	bool force_new_line					= false;
-	bool parent_have_slider				= false;
-	bool need_redraw					= false;
-	bool can_be_stretched_by_child		= false;
+	bool force_new_line = false;
+	bool parent_have_slider = false;
+	bool need_redraw = false;
+	bool can_be_stretched_by_child = false;
 
-	bool stretch_x_by_parent_size		= false;
-	bool dynamic_size_y					= false;
+	bool stretch_x_by_parent_size = false;
+	bool dynamic_size_y = false;
 
-	bool have_slider					= false;
+	bool have_slider = false;
 
-	bool can_change_position_in_vector	= true;
+	bool can_change_position_in_vector = true;
 
-	bool dynamic_autosize_for_window	= false;
+	bool dynamic_autosize_for_window = false;
 
 	//ETextArea* text_area;
 	std::vector<EClickableArea*> clickable_area_list;
@@ -782,20 +787,20 @@ class EButtonGroupConfirmAction : public EButtonGroup
 public:
 	EButtonGroupConfirmAction(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	EntityButtonConfirmAction*	pointer_to_confirm_button;
-	EntityButtonConfirmAction*	pointer_to_decline_button;
+	EntityButtonConfirmAction* pointer_to_confirm_button;
+	EntityButtonConfirmAction* pointer_to_decline_button;
 
-	EButtonGroup*				pointer_to_workspace_part;
-	ETextArea*					pointer_to_description_text_area;
+	EButtonGroup* pointer_to_workspace_part;
+	ETextArea* pointer_to_description_text_area;
 
-	EButtonGroup*				group_invoker;
-	EntityButton*				button_invoker;
+	EButtonGroup* group_invoker;
+	EntityButton* button_invoker;
 
 	//data_action_pointer				action_on_accept;
 	//data_action_pointer				action_on_decline;
 
 	void								init_as_confirm_decline_group(EWindow* _window);
-	
+
 	//EButtonGroupConfirmAction::confirm_decline_group->pointer_to_confirm_button->stored_action = &EDataActionCollection::action_open_loot_filters_list_window;
 
 
@@ -813,25 +818,25 @@ enum StyleList
 #define _DEBUG_STRUCTS_ALREADY_DEFINED_
 
 
-	class EntityButtonDebugStructButton;
+class EntityButtonDebugStructButton;
 
 
-	struct EDebugStruct
-	{
-	public:
-		ELocalisationText	localisation_text;
-		int					selected_variant = 0;
-		ETextureGabarite*	icon;
+struct EDebugStruct
+{
+public:
+	ELocalisationText	localisation_text;
+	int					selected_variant = 0;
+	ETextureGabarite* icon;
 
-		EntityButtonDebugStructButton* associated_button_router;
-	};
+	EntityButtonDebugStructButton* associated_button_router;
+};
 
-	namespace DebugNamespace
-	{
-		extern EDebugStruct NSW_registered_debug_struct[DebugStructID::DEBUG_STRUCT_ID_LAST_ELEMENT];
-		extern EButtonGroup* NSW_pointer_to_debug_window;
-		extern bool is_debug_element_active(DebugStructID _id);
-	}
+namespace DebugNamespace
+{
+	extern EDebugStruct NSW_registered_debug_struct[DebugStructID::DEBUG_STRUCT_ID_LAST_ELEMENT];
+	extern EButtonGroup* NSW_pointer_to_debug_window;
+	extern bool is_debug_element_active(DebugStructID _id);
+}
 #endif
 
 

@@ -594,7 +594,7 @@ void ETextArea::generate_text()
 			x_adding += offset_border[BorderSide::LEFT];
 			x_adding += border_offset_left;
 
-			x_adding = (x_adding);
+			x_adding = round(x_adding);
 			//_adding = *region_gabarite->size_y * offset_by_gabarite_size_y + get_row_width(str) * offset_by_text_size_y;
 			//x_adding = 0.0f;
 

@@ -411,6 +411,20 @@ public:
 	);
 
 
+
+	void make_default_bool_switcher_button_with_unedible_text
+	(
+		ERegionGabarite*	_region_gabarite,
+		EButtonGroup*		_parent_group,
+		data_action_pointer	_dap,
+		ETextureGabarite*	_gabarite_on,
+		ETextureGabarite*	_gabarite_off,
+		ELocalisationText	_ltext,
+		bool* _target_bool = nullptr
+		//void (*data_action_pointer)(Entity*, ECustomData*, float)
+	);
+
+
 	void make_as_default_router_variant_button
 	(
 		ERegionGabarite* _region_gabarite
@@ -463,9 +477,14 @@ struct RouterVariant
 {
 public:
 	ELocalisationText	router_localisation;
-	HSVRGBAColor*		color;
-	ETextureGabarite*	texture = nullptr;
 	ELocalisationText	localisation_for_select_window;
+	HSVRGBAColor*		text_color;
+	
+	
+	ETextureGabarite*	texture = nullptr;
+	HSVRGBAColor*		icon_color;
+
+
 
 	bool				do_not_delete_me = false;
 
