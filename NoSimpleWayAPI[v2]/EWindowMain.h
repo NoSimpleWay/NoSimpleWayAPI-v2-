@@ -74,8 +74,8 @@ namespace LootFilterVersionPattern
 
 		bool						is_default					= false;
 
-		LootPatternParameterMode	show_hide_mode				= LootPatternParameterMode::DO_NOT_CHANGE;
-		LootPatternParameterMode	continue_mode				= LootPatternParameterMode::DO_NOT_CHANGE;
+		int	show_hide_mode			= (int)LootPatternParameterMode::DO_NOT_CHANGE;
+		int	continue_mode			= (int)LootPatternParameterMode::DO_NOT_CHANGE;
 
 		ETextureGabarite*			icon;
 
@@ -766,6 +766,8 @@ public:
 
 
 	EntityButtonVariantRouter*	button_router_icon;
+	EntityButtonVariantRouter*	button_router_continue;
+	EntityButtonVariantRouter*	button_router_show_hide;
 
 };
 

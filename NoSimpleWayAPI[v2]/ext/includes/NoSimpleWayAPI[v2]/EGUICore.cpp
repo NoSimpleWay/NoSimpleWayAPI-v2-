@@ -5206,7 +5206,7 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 		EGUIStyle::active_style
 	);
 	workspace_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-	workspace_group->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+	//workspace_group->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -5217,13 +5217,16 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 		EntityButtonVariantRouterSelector*
 			variant_button = new EntityButtonVariantRouterSelector();
 
-		std::string text = rv->router_localisation.localisations[ELocalisationText::active_localisation];
+		std::string
+			text = rv->router_localisation.localisations[ELocalisationText::active_localisation];
 
+		//set specific localisation [for window], if exist
 		if ((rv->localisation_for_select_window.localisations[ELocalisationText::active_localisation] != ""))
 		{
 			text = rv->localisation_for_select_window.localisations[ELocalisationText::active_localisation];
 		}
 
+		//create button for window
 		variant_button->make_as_default_button_with_icon_and_text
 		(
 			new ERegionGabarite(_router_button->button_gabarite->size_x, _router_button->button_gabarite->size_y),
@@ -5241,8 +5244,17 @@ EButtonGroupRouterVariant* EButtonGroupRouterVariant::create_router_variant_butt
 		variant_button->id = id;
 		variant_button->parent_router_group = main_group;
 
-		variant_button->main_text_area->stored_color = *rv->text_color;
-		variant_button->main_text_area->color = *rv->text_color;
+		if (rv->text_color != nullptr)
+		{
+			variant_button->main_text_area->stored_color = *rv->text_color;
+			variant_button->main_text_area->color = *rv->text_color;
+		}
+		else
+		{
+			variant_button->main_text_area->color.set_color_RGBA(0.9f, 0.8f, 0.7f, 1.0f);
+		}
+
+		
 
 		workspace_group->add_button_to_working_group(variant_button);
 

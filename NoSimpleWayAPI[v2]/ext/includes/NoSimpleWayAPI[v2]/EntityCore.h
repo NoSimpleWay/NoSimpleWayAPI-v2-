@@ -94,14 +94,14 @@ public:
 
 	static ESprite* get_last_sprite(Entity* _en);
 
-	bool entity_disabled			= false;
-	bool entity_need_remove			= false;
-	bool have_phantom_draw			= false;
-	bool be_visible_last_time		= false;
+	bool entity_disabled = false;
+	bool entity_need_remove = false;
+	bool have_phantom_draw = false;
+	bool be_visible_last_time = false;
 
-	static ECustomData*		get_last_custom_data(Entity* _entity);
-	static EClickableArea*	get_last_clickable_area(Entity* _entity);
-	static ETextArea*		get_last_text_area(Entity* _entity);
+	static ECustomData* get_last_custom_data(Entity* _entity);
+	static EClickableArea* get_last_clickable_area(Entity* _entity);
+	static ETextArea* get_last_text_area(Entity* _entity);
 
 	static void				add_text_area_to_last_clickable_region(EntityButton* _button, ETextArea* _text_area);
 
@@ -155,8 +155,8 @@ public:
 	virtual void	create_description();
 	void			init_description(EButtonGroup* _group);
 
-	EntityButton*	parent_button;
-	EClickableArea*	parent_clickable_area;
+	EntityButton* parent_button;
+	EClickableArea* parent_clickable_area;
 
 	std::vector<EStringReplacer> replacer_list;
 
@@ -167,7 +167,7 @@ struct DescriptionContainerDefault : public DescriptionContainer
 {
 public:
 	DescriptionContainerDefault(float _size_x, float _size_y) :DescriptionContainer(_size_x, _size_y) {};
-	
+
 	void create_description() override;
 };
 
@@ -210,44 +210,44 @@ public:
 	ButtonSearchMode				button_search_mode = ButtonSearchMode::DEFAULT;
 
 	NewLineMethod
-	new_line_method					= NewLineMethod::WHEN_OUT_OF_GABARITE;
+		new_line_method = NewLineMethod::WHEN_OUT_OF_GABARITE;
 
-	bool button_hidden_by_search	= false;
-	bool disable_force_field		= false;
-	bool fixed_position				= false;
-	bool force_draw					= true;
-	bool update_when_scissored		= false;
-	bool align_even_if_hidden		= false;
-	bool do_not_generate_bg			= false;
-	bool cannot_be_auto_deleted		= false;
-	bool can_be_stretched			= false;
-	bool have_simple_bg				= false;
+	bool button_hidden_by_search = false;
+	bool disable_force_field = false;
+	bool fixed_position = false;
+	bool force_draw = true;
+	bool update_when_scissored = false;
+	bool align_even_if_hidden = false;
+	bool do_not_generate_bg = false;
+	bool cannot_be_auto_deleted = false;
+	bool can_be_stretched = false;
+	bool have_simple_bg = false;
 	bool entity_is_active();
 
 	void destroy_all_vertex_buffer_data() override;
 
 	DescriptionContainer*
-	description_container			= nullptr;
+		description_container = nullptr;
 
-	float hover_time				= 0.0f;
-
-
-
-	float force_field_left			= 0.0f;
-	float force_field_right			= 0.0f;
-	float force_field_bottom		= 0.0f;
-	float force_field_up			= 0.0f;
+	float hover_time = 0.0f;
 
 
-	float highlight_time			= 0.0f;
-	float max_highlight_time		= 1.0f;
+
+	float force_field_left = 0.0f;
+	float force_field_right = 0.0f;
+	float force_field_bottom = 0.0f;
+	float force_field_up = 0.0f;
+
+
+	float highlight_time = 0.0f;
+	float max_highlight_time = 1.0f;
 	std::chrono::milliseconds		highlight_timestamp;
 	void set_highlight(float _set_time, float _max_time);
 
-	float base_size_x				= 10.0f;
-	float base_size_y				= 10.0f;
+	float base_size_x = 10.0f;
+	float base_size_y = 10.0f;
 
-	float max_stretch_factor		= 0.5f;
+	float max_stretch_factor = 0.5f;
 
 	ERegionGabarite* button_gabarite;
 
@@ -259,7 +259,7 @@ public:
 	EButtonGroup* parent_button_group;
 
 	std::vector<EHotKeyManager> hotkey_list;
-	
+
 
 	void add_hotkey(int _key_main, int _key_secondary);
 
@@ -317,13 +317,13 @@ public:
 
 	static EntityButtonColorButton* create_named_color_button
 	(
-		ERegionGabarite*				_region_gabarite,
-		EButtonGroup*					_parent_group,
-		EFont*							_font,
-		EGUIStyle*						_style,
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		EFont* _font,
+		EGUIStyle* _style,
 		ELocalisationText				_text,
-		HRA_color_collection*	_collection,
-		HSVRGBAColor*			_color,
+		HRA_color_collection* _collection,
+		HSVRGBAColor* _color,
 		ColorButtonMode					_mode
 	);
 
@@ -414,11 +414,11 @@ public:
 
 	void make_default_bool_switcher_button_with_unedible_text
 	(
-		ERegionGabarite*	_region_gabarite,
-		EButtonGroup*		_parent_group,
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
 		data_action_pointer	_dap,
-		ETextureGabarite*	_gabarite_on,
-		ETextureGabarite*	_gabarite_off,
+		ETextureGabarite* _gabarite_on,
+		ETextureGabarite* _gabarite_off,
 		ELocalisationText	_ltext,
 		bool* _target_bool = nullptr
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
@@ -444,7 +444,10 @@ public:
 	void draw_second_pass() override;
 
 	void update(float _d) override;
+
 	bool* suppressor = nullptr;
+	bool invert_suppression = false;
+
 	EntityButton* button_suppressor;
 
 	ETextArea* main_text_area;
@@ -478,17 +481,17 @@ struct RouterVariant
 public:
 	ELocalisationText	router_localisation;
 	ELocalisationText	localisation_for_select_window;
-	HSVRGBAColor*		text_color;
-	
-	
-	ETextureGabarite*	texture = nullptr;
-	HSVRGBAColor*		icon_color;
+	HSVRGBAColor* text_color;
+
+
+	ETextureGabarite* texture = nullptr;
+	HSVRGBAColor* icon_color;
 
 
 
 	bool				do_not_delete_me = false;
 
-	
+
 
 	~RouterVariant();
 
@@ -509,8 +512,8 @@ public:
 	int							selected_variant;
 	std::vector<RouterVariant*>	router_variant_list;
 
-	ESpriteLayer*	layer_with_icon;
-	ETextArea*		pointer_to_text_area;
+	ESpriteLayer* layer_with_icon;
+	ETextArea* pointer_to_text_area;
 
 
 
@@ -527,8 +530,8 @@ public:
 
 	std::vector<data_action_pointer>	action_on_choose_variant_from_window;
 
-	int* target_int_value	= nullptr;
-	bool* target_bool_value	= nullptr;
+	int* target_int_value = nullptr;
+	bool* target_bool_value = nullptr;
 	//void make_default_router_variant_button
 	//(
 	//	ERegionGabarite* _region_gabarite,
@@ -537,6 +540,7 @@ public:
 	//	//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	//);
 
+	RouterVariant* add_router_variant_by_text_and_color(std::string _text, float _r, float _g, float _b, float _a);
 	RouterVariant* add_router_variant_with_localization_key_and_color(std::string _key, float _r, float _g, float _b, float _a);
 	RouterVariant* add_router_variant_with_localization_key_color_and_icon(std::string _key, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon);
 	RouterVariant* add_router_variant_with_localization_color_and_icon(ELocalisationText* _ltext, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon);
@@ -608,10 +612,10 @@ public:
 class EntityButtonColorButton : public EntityButton
 {
 public:
-	HSVRGBAColor*			stored_color;
+	HSVRGBAColor* stored_color;
 	ColorButtonMode			selected_mode = ColorButtonMode::CBM_OPEN_WINDOW;
 	~EntityButtonColorButton();
-	HRA_color_collection*	parent_color_collection;
+	HRA_color_collection* parent_color_collection;
 };
 
 
@@ -659,8 +663,8 @@ public:
 
 	data_action_pointer stored_action;
 
-	EntityButton* target_entity_button	= nullptr;
-	ECustomData* target_custom_data		= nullptr;
+	EntityButton* target_entity_button = nullptr;
+	ECustomData* target_custom_data = nullptr;
 
 	int stored_localisation;
 

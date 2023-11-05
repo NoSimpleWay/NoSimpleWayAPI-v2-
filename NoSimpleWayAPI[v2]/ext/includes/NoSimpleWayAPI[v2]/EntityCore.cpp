@@ -18,7 +18,7 @@ void Entity::draw()
 {
 	if (entity_is_active())
 	{
-		{transfer_all_vertex_buffers_to_batcher();}
+		{transfer_all_vertex_buffers_to_batcher(); }
 
 
 		//custom data store clickable regions and text
@@ -37,7 +37,7 @@ void Entity::draw_second_pass()
 		if (!custom_data_list.empty())
 		{
 			for (ECustomData* c_data : custom_data_list)
-			if (c_data != nullptr) { c_data->draw_second_pass(); }
+				if (c_data != nullptr) { c_data->draw_second_pass(); }
 		}
 	}
 	else
@@ -50,17 +50,17 @@ void Entity::draw_second_pass()
 }
 
 void Entity::generate_vertex_buffer_for_all_sprite_layers()
-{	
+{
 	if (be_visible_last_time)
 	{
 		for (ECustomData* custom_data : custom_data_list)
-		for (EClickableArea* clickable_area:custom_data->clickable_area_list)
-		{
-			if (clickable_area->text_area != nullptr)
+			for (EClickableArea* clickable_area : custom_data->clickable_area_list)
 			{
-				clickable_area->text_area->change_text(clickable_area->text_area->original_text);
+				if (clickable_area->text_area != nullptr)
+				{
+					clickable_area->text_area->change_text(clickable_area->text_area->original_text);
+				}
 			}
-		}
 		if (!sprite_layer_list.empty())
 		{
 			for (ESpriteLayer* sl : sprite_layer_list)
@@ -104,11 +104,11 @@ void Entity::transfer_all_vertex_buffers_to_batcher()
 	if (!sprite_layer_list.empty())
 	{
 		for (ESpriteLayer* sl : sprite_layer_list)
-		if (sl != nullptr) {sl->transfer_vertex_buffer_to_batcher();}
+			if (sl != nullptr) { sl->transfer_vertex_buffer_to_batcher(); }
 	}
 
 
-	
+
 }
 
 void Entity::set_world_positions(float _x, float _y, float _z)
@@ -118,20 +118,22 @@ void Entity::set_world_positions(float _x, float _y, float _z)
 	world_position_z = _z;
 
 	if (!sprite_layer_list.empty())
-	for (ESpriteLayer* s_layer : sprite_layer_list)
-	if (s_layer != nullptr)
-	{s_layer->sprite_layer_set_world_position(world_position_x, world_position_y, world_position_z);}
+		for (ESpriteLayer* s_layer : sprite_layer_list)
+			if (s_layer != nullptr)
+			{
+				s_layer->sprite_layer_set_world_position(world_position_x, world_position_y, world_position_z);
+			}
 
 	for (ECustomData* c_data : custom_data_list)
-	if (c_data != nullptr)
-	{
-		for (EClickableArea* clickable_area : c_data->clickable_area_list)
-		if (clickable_area != nullptr)
-		//
+		if (c_data != nullptr)
 		{
-			clickable_area->clickable_region_set_world_positions(world_position_x, world_position_y, world_position_z);
+			for (EClickableArea* clickable_area : c_data->clickable_area_list)
+				if (clickable_area != nullptr)
+					//
+				{
+					clickable_area->clickable_region_set_world_positions(world_position_x, world_position_y, world_position_z);
+				}
 		}
-	}
 }
 
 void Entity::set_world_position_w(ERegionGabarite* _region_gabarite)
@@ -183,19 +185,19 @@ void Entity::destroy_all_vertex_buffer_data()
 		s_layer->destroy_vertex_buffer();
 	}
 
-	for (ECustomData*		c_data:		custom_data_list)
-	for (EClickableArea*	c_area:		c_data->clickable_area_list)
-	{ 
-		if (c_area->text_area != nullptr)
+	for (ECustomData* c_data : custom_data_list)
+		for (EClickableArea* c_area : c_data->clickable_area_list)
 		{
-			c_area->text_area->sprite_layer->destroy_vertex_buffer();
-		}
+			if (c_area->text_area != nullptr)
+			{
+				c_area->text_area->sprite_layer->destroy_vertex_buffer();
+			}
 
-		for (ESpriteLayer*		s_layer:	c_area->sprite_layer_list)
-		{
-			s_layer->destroy_vertex_buffer();
+			for (ESpriteLayer* s_layer : c_area->sprite_layer_list)
+			{
+				s_layer->destroy_vertex_buffer();
+			}
 		}
-	}
 }
 
 void Entity::translate_entity(float _x, float _y, float _z, bool _move_positions)
@@ -220,13 +222,13 @@ void Entity::translate_entity(float _x, float _y, float _z, bool _move_positions
 void Entity::translate_sprite_layer(float _x, float _y, float _z, bool _move_locals)
 {
 	for (ESpriteLayer* s_layer : sprite_layer_list)
-	if (s_layer != nullptr) {s_layer->translate_sprite_layer(_x, _y, _z, false);}
+		if (s_layer != nullptr) { s_layer->translate_sprite_layer(_x, _y, _z, false); }
 }
 
 void Entity::translate_custom_data(float _x, float _y, float _z, bool _move_locals)
 {
 	for (ECustomData* c_data : custom_data_list)
-	if (c_data != nullptr) {c_data->translate_custom_data(_x, _y, _z, false);}
+		if (c_data != nullptr) { c_data->translate_custom_data(_x, _y, _z, false); }
 }
 
 bool Entity::entity_is_active()
@@ -239,11 +241,11 @@ void Entity::update(float _d)
 	//translate_entity(EInputCore::MOUSE_SPEED_X, EInputCore::MOUSE_SPEED_Y, 0.0f);
 
 	if (entity_is_active())
-	for (ECustomData* c_data : custom_data_list)
-	if (c_data != nullptr)
-	{
-		c_data->update(_d);
-	}
+		for (ECustomData* c_data : custom_data_list)
+			if (c_data != nullptr)
+			{
+				c_data->update(_d);
+			}
 }
 
 Entity::Entity()
@@ -270,7 +272,7 @@ Entity::~Entity()
 		if (debug_deleting)EInputCore::logger_simple_info("start deleting custom data");
 
 		//std::vector<ECustomData*>::iterator ib = custom_data_list.begin(), ie = custom_data_list.end();
-		for (ECustomData* custom_data:custom_data_list)
+		for (ECustomData* custom_data : custom_data_list)
 		{
 			if (debug_deleting)EInputCore::logger_simple_info("try delete custom data");
 			if (!disable_deleting)
@@ -291,14 +293,14 @@ Entity::~Entity()
 
 
 	}
-	
+
 
 	if (!sprite_layer_list.empty())
 	{
 		if (debug_deleting)EInputCore::logger_simple_info("start deleting sprite layers");
-		
-		for (ESpriteLayer* sl:sprite_layer_list)
-		{ 
+
+		for (ESpriteLayer* sl : sprite_layer_list)
+		{
 			if (debug_deleting)EInputCore::logger_simple_info("try delete sprite layer");
 			if (!disable_deleting)
 			{
@@ -336,13 +338,13 @@ ESprite* Entity::get_sprite_from_data(unsigned int _data_id, unsigned int _layer
 ESpriteLayer* Entity::get_sprite_layer_by_id(unsigned int _id)
 {
 	if
-	(
-		(!sprite_layer_list.empty())
-		&&
-		(_id >= 0)
-		&&
-		(_id < sprite_layer_list.size())
-	)
+		(
+			(!sprite_layer_list.empty())
+			&&
+			(_id >= 0)
+			&&
+			(_id < sprite_layer_list.size())
+			)
 	{
 		return sprite_layer_list[_id];
 	}
@@ -359,17 +361,17 @@ ESprite* Entity::get_sprite_from_entity(unsigned int _layer_id, unsigned int _fr
 
 	//if (!sprite_layer_list.empty()) { sprite_layer =}
 	if
-	(
-		(_CHECK_VECTOR_BOUND(sprite_layer_list, _layer_id))
-		&&
-		(_CHECK_VECTOR_BOUND(sprite_layer_list[_layer_id]->sprite_frame_list, _frame))
-	)
+		(
+			(_CHECK_VECTOR_BOUND(sprite_layer_list, _layer_id))
+			&&
+			(_CHECK_VECTOR_BOUND(sprite_layer_list[_layer_id]->sprite_frame_list, _frame))
+			)
 	{
 		return sprite_layer_list[_layer_id]->sprite_frame_list[_frame]->sprite_list[_frame_id];
 	}
 
-		//if (target_sprite_frame != nullptr)
-		//{return target_sprite_frame->sprite_list[_frame_id];}
+	//if (target_sprite_frame != nullptr)
+	//{return target_sprite_frame->sprite_list[_frame_id];}
 
 	return nullptr;
 }
@@ -377,24 +379,28 @@ ESprite* Entity::get_sprite_from_entity(unsigned int _layer_id, unsigned int _fr
 ESpriteFrame* Entity::get_sprite_frame_from_layer(ESpriteLayer* _layer, unsigned int _frame_id)
 {
 	if
-	(
-		(_layer != nullptr)
-		&&
-		(_CHECK_VECTOR_BOUND(_layer->sprite_frame_list, _frame_id))
-	)
-	{return _layer->sprite_frame_list[_frame_id]; }
+		(
+			(_layer != nullptr)
+			&&
+			(_CHECK_VECTOR_BOUND(_layer->sprite_frame_list, _frame_id))
+			)
+	{
+		return _layer->sprite_frame_list[_frame_id];
+	}
 	else
-	{return nullptr;}
+	{
+		return nullptr;
+	}
 }
 
 ESprite* Entity::get_sprite_from_sprite_frame(ESpriteFrame* _frame, unsigned int _id)
 {
 	if
-	(
-		(_frame != nullptr)
-		&&
-		(_CHECK_VECTOR_BOUND(_frame->sprite_list, _id))
-	)
+		(
+			(_frame != nullptr)
+			&&
+			(_CHECK_VECTOR_BOUND(_frame->sprite_list, _id))
+			)
 	{
 		return _frame->sprite_list[_id];
 	}
@@ -405,31 +411,39 @@ ESprite* Entity::get_sprite_from_sprite_frame(ESpriteFrame* _frame, unsigned int
 ESprite* Entity::get_last_sprite(Entity* _entity)
 {
 	if
-	(
-		(_entity != nullptr)
-		&&
-		(!_entity->sprite_layer_list.empty())
-		&&
-		(!_entity->sprite_layer_list.back()->sprite_frame_list.empty())
-		&&
-		(!_entity->sprite_layer_list.back()->sprite_frame_list.back()->sprite_list.empty())
-	)
-	{return _entity->sprite_layer_list.back()->sprite_frame_list.back()->sprite_list.back(); }
+		(
+			(_entity != nullptr)
+			&&
+			(!_entity->sprite_layer_list.empty())
+			&&
+			(!_entity->sprite_layer_list.back()->sprite_frame_list.empty())
+			&&
+			(!_entity->sprite_layer_list.back()->sprite_frame_list.back()->sprite_list.empty())
+			)
+	{
+		return _entity->sprite_layer_list.back()->sprite_frame_list.back()->sprite_list.back();
+	}
 	else
-	{return nullptr;}
+	{
+		return nullptr;
+	}
 }
 
 ECustomData* Entity::get_last_custom_data(Entity* _entity)
 {
 	if
-	(
-		(_entity != nullptr)
-		&&
-		(!_entity->custom_data_list.empty())
-	)
-	{return _entity->custom_data_list.back(); }
+		(
+			(_entity != nullptr)
+			&&
+			(!_entity->custom_data_list.empty())
+			)
+	{
+		return _entity->custom_data_list.back();
+	}
 	else
-	{return nullptr;}
+	{
+		return nullptr;
+	}
 }
 
 EClickableArea* Entity::get_last_clickable_area(Entity* _entity)
@@ -437,20 +451,24 @@ EClickableArea* Entity::get_last_clickable_area(Entity* _entity)
 	ECustomData* last_data = Entity::get_last_custom_data(_entity);
 
 	if
-	(
-		( last_data != nullptr )
-		&&
-		( !last_data->clickable_area_list.empty() )
-	)
-	{ return last_data->clickable_area_list.back(); }
+		(
+			(last_data != nullptr)
+			&&
+			(!last_data->clickable_area_list.empty())
+			)
+	{
+		return last_data->clickable_area_list.back();
+	}
 	else
-	{ return nullptr; }
+	{
+		return nullptr;
+	}
 }
 
 ETextArea* Entity::get_last_text_area(Entity* _entity)
 {
 	EClickableArea* last_clickable_area = get_last_clickable_area(_entity);
-	
+
 	if (last_clickable_area != nullptr)
 	{
 		//TextArea* last_text_area =
@@ -581,7 +599,7 @@ void EntityButton::button_generate_brick_bg(EntityButton* _button, EGUIStyle* _s
 
 void EntityButton::add_default_description_by_key(std::string _key)
 {
-	
+
 	description_container = new DescriptionContainerDefault(800.0f, 120.0f);
 	description_container->localisation_text = ELocalisationText::get_localisation_by_key(_key);
 	description_container->parent_button = this;
@@ -606,11 +624,11 @@ void EntityButton::init(ERegionGabarite* _region_gabarite, EButtonGroup* _parent
 
 void EntityButton::add_default_custom_data(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_row)
 {
-	init (_region_gabarite, _parent_row);
-	ECustomData*	jc_custom_data					= new ECustomData();
-					jc_custom_data->parent_entity	= this;
+	init(_region_gabarite, _parent_row);
+	ECustomData* jc_custom_data = new ECustomData();
+	jc_custom_data->parent_entity = this;
 
-					//*jc_custom_data->is_second_pass = true;
+	//*jc_custom_data->is_second_pass = true;
 	main_custom_data = jc_custom_data;
 	custom_data_list.push_back(jc_custom_data);
 }
@@ -631,9 +649,9 @@ void EntityButton::make_as_default_clickable_button(ERegionGabarite* _region_gab
 
 	jc_clickable_area->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
 	if (_dap != nullptr) { jc_clickable_area->actions_on_click_list.push_back(_dap); }
-	
+
 	ECustomData*
-	last_data = Entity::get_last_custom_data(this);
+		last_data = Entity::get_last_custom_data(this);
 
 	last_data->clickable_area_list.push_back(jc_clickable_area);
 }
@@ -696,60 +714,60 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 
 EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EDataEntity* _data_entity, EFont* _font, bool _can_be_deleted)
 {
-		EntityButtonWideItem* jc_button = new EntityButtonWideItem();
+	EntityButtonWideItem* jc_button = new EntityButtonWideItem();
 
-		jc_button->make_as_default_clickable_button
-		(
-			_region_gabarite,
-			_parent_group,
-			&EDataActionCollection::action_out_main_text_area
-		);
-		jc_button->can_be_stretched = true;
+	jc_button->make_as_default_clickable_button
+	(
+		_region_gabarite,
+		_parent_group,
+		&EDataActionCollection::action_out_main_text_area
+	);
+	jc_button->can_be_stretched = true;
 
-		EDataContainer_DataEntityHolder*
+	EDataContainer_DataEntityHolder*
 		data_holder = new EDataContainer_DataEntityHolder();
-		data_holder->stored_data_entity = _data_entity;
-		EntityButton::get_last_custom_data(jc_button)->data_container = data_holder;
-		//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_invoke_data_entity_group_action);
+	data_holder->stored_data_entity = _data_entity;
+	EntityButton::get_last_custom_data(jc_button)->data_container = data_holder;
+	//EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_invoke_data_entity_group_action);
 
-		jc_button->pointer_to_data_entity = _data_entity;
+	jc_button->pointer_to_data_entity = _data_entity;
 
-		//delete action on right click
-		//Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
-
-		
-		//_parent_group->button_list.push_back(jc_button);
+	//delete action on right click
+	//Entity::get_last_clickable_area(jc_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_delete_entity);
 
 
-		//create text area
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		ETextArea*
+	//_parent_group->button_list.push_back(jc_button);
+
+
+	//create text area
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	ETextArea*
 		jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, ELocalisationText::empty_localisation);
-		jc_text_area->offset_by_gabarite_size_x = 0.0;
-		jc_text_area->offset_by_text_size_x = 0.0;
+	jc_text_area->offset_by_gabarite_size_x = 0.0;
+	jc_text_area->offset_by_text_size_x = 0.0;
 
-		jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y;
+	jc_text_area->offset_border[BorderSide::LEFT] = _region_gabarite->size_y;
 
-		jc_text_area->can_be_edited = false;
-		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+	jc_text_area->can_be_edited = false;
+	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
 
-		jc_button->main_text_area = jc_text_area;
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		ESpriteLayer* second_button_layer = nullptr;
-		if (_data_entity != nullptr)
+	jc_button->main_text_area = jc_text_area;
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	ESpriteLayer* second_button_layer = nullptr;
+	if (_data_entity != nullptr)
+	{
+
+
+		/*jc_button->localised_name.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
+		jc_button->localised_name.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+		jc_button->localised_name.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
+
+		if (jc_button->localised_name.base_name == "")
 		{
+			jc_button->localised_name.base_name = jc_button->localised_name.localisations[NSW_localisation_EN];
+		}*/
 
-			
-			/*jc_button->localised_name.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
-			jc_button->localised_name.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
-			jc_button->localised_name.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
-
-			if (jc_button->localised_name.base_name == "")
-			{
-				jc_button->localised_name.base_name = jc_button->localised_name.localisations[NSW_localisation_EN];
-			}*/
-
-			ETextureGabarite*
+		ETextureGabarite*
 			item_icon =
 			(DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity) != "")
 			?
@@ -757,179 +775,179 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 			:
 			(nullptr);
 
-			float resize_factor = 0.0f;
-			float offset_x = 0.0f;
-			float offset_y = 0.0f;
+		float resize_factor = 0.0f;
+		float offset_x = 0.0f;
+		float offset_y = 0.0f;
 
-			if (item_icon != nullptr)
-			{
-				resize_factor = (_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up - 6.0f) / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
-				resize_factor = min(resize_factor, 1.0f);
+		if (item_icon != nullptr)
+		{
+			resize_factor = (_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up - 6.0f) / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
+			resize_factor = min(resize_factor, 1.0f);
 
-				offset_x = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
-				offset_y = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
+			offset_x = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
+			offset_y = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
 
-				second_button_layer =
-					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-					(
-						item_icon,
+			second_button_layer =
+				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+				(
+					item_icon,
 
-						_parent_group->group_offset_for_content_left + offset_x,
-						_parent_group->group_offset_for_content_bottom + offset_y,
-						3.0f,
+					_parent_group->group_offset_for_content_left + offset_x,
+					_parent_group->group_offset_for_content_bottom + offset_y,
+					3.0f,
 
-						item_icon->size_x_in_pixels * resize_factor,
-						item_icon->size_y_in_pixels * resize_factor,
-						0.0f
-					);
+					item_icon->size_x_in_pixels * resize_factor,
+					item_icon->size_y_in_pixels * resize_factor,
+					0.0f
+				);
 
-				jc_button->sprite_layer_list.push_back(second_button_layer);
+			jc_button->sprite_layer_list.push_back(second_button_layer);
 
-				//second_button_layer->make_as_PBR();
-			}
-		
+			//second_button_layer->make_as_PBR();
+		}
 
-			
 
-			jc_text_area->localisation_text.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
-			jc_text_area->localisation_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
 
-			jc_text_area->change_text(jc_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 
-			//////localistation//////
-			std::string base_name_value = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
+		jc_text_area->localisation_text.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+		jc_text_area->localisation_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
 
-			//if base name exist, set
-			if (base_name_value != "")
-			{
-				jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
-			}
-			else//use english localisation
-			{
-				jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
-			}
+		jc_text_area->change_text(jc_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 
-			if
+		//////localistation//////
+		std::string base_name_value = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
+
+		//if base name exist, set
+		if (base_name_value != "")
+		{
+			jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
+		}
+		else//use english localisation
+		{
+			jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+		}
+
+		if
 			(
 				(_can_be_deleted)
 				&&
 				(DataEntityUtils::is_exist_tag_by_name_and_value(0, "explicit tag", "base name collision", _data_entity))
-			)
-			{
-				jc_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = jc_button->main_text_area->localisation_text.base_name;
-				jc_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = jc_button->main_text_area->localisation_text.base_name;
-
-				jc_button->main_text_area->change_text(jc_button->main_text_area->localisation_text.base_name);
-			}
-
-			////////////////////////
-		}
-		else
+				)
 		{
-			ETextureGabarite* item_icon = NS_EGraphicCore::load_from_textures_folder("undefined_item");
-			NS_EGraphicCore::complete_texture_gabarite(item_icon);
+			jc_button->main_text_area->localisation_text.localisations[NSW_localisation_EN] = jc_button->main_text_area->localisation_text.base_name;
+			jc_button->main_text_area->localisation_text.localisations[NSW_localisation_RU] = jc_button->main_text_area->localisation_text.base_name;
 
-			float resize_factor = 0.0f;
-			float offset_x = 0.0f;
-			float offset_y = 0.0f;
-
-			if (item_icon != nullptr)
-			{
-
-				//jc_button->localised_name.generate_localisation("")
-
-				resize_factor = (_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up - 6.0f) / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
-				resize_factor = min(resize_factor, 1.0f);
-
-				offset_x = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
-				offset_y = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
-
-				second_button_layer =
-					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-					(
-						item_icon,
-
-						_parent_group->group_offset_for_content_left + offset_x,
-						_parent_group->group_offset_for_content_bottom + offset_y,
-						3.0f,
-
-						item_icon->size_x_in_pixels * resize_factor,
-						item_icon->size_y_in_pixels * resize_factor,
-						0.0f
-					);
-
-				jc_button->sprite_layer_list.push_back(second_button_layer);
-
-				//second_button_layer->make_as_PBR();
-			}
+			jc_button->main_text_area->change_text(jc_button->main_text_area->localisation_text.base_name);
 		}
 
+		////////////////////////
+	}
+	else
+	{
+		ETextureGabarite* item_icon = NS_EGraphicCore::load_from_textures_folder("undefined_item");
+		NS_EGraphicCore::complete_texture_gabarite(item_icon);
 
-		if (_can_be_deleted)
+		float resize_factor = 0.0f;
+		float offset_x = 0.0f;
+		float offset_y = 0.0f;
+
+		if (item_icon != nullptr)
 		{
-			//add new clickable area (close X)
-			EClickableArea*
-				close_clickable_area = EClickableArea::create_default_clickable_region
+
+			//jc_button->localised_name.generate_localisation("")
+
+			resize_factor = (_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up - 6.0f) / max(item_icon->size_x_in_pixels, item_icon->size_y_in_pixels);
+			resize_factor = min(resize_factor, 1.0f);
+
+			offset_x = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_x_in_pixels * resize_factor) / 2.0f;
+			offset_y = ((_region_gabarite->size_y - _parent_group->group_offset_for_content_bottom - _parent_group->group_offset_for_content_up) - item_icon->size_y_in_pixels * resize_factor) / 2.0f;
+
+			second_button_layer =
+				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
 				(
-					new ERegionGabarite(20.0f, 20.0f),
-					jc_button,
-					EntityButton::get_last_custom_data(jc_button)
+					item_icon,
+
+					_parent_group->group_offset_for_content_left + offset_x,
+					_parent_group->group_offset_for_content_bottom + offset_y,
+					3.0f,
+
+					item_icon->size_x_in_pixels * resize_factor,
+					item_icon->size_y_in_pixels * resize_factor,
+					0.0f
 				);
 
-			jc_button->pointer_to_close_area = close_clickable_area;
-			close_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_delete_entity);
+			jc_button->sprite_layer_list.push_back(second_button_layer);
 
-			close_clickable_area->region_gabarite->offset_by_parent_size_x = 1.0f;
-			close_clickable_area->region_gabarite->offset_by_parent_size_y = 1.0f;
-
-			close_clickable_area->region_gabarite->offset_by_size_x = -1.0f;
-			close_clickable_area->region_gabarite->offset_by_size_y = -1.0f;
-
-			close_clickable_area->region_gabarite->offset_by_pixels_x = -3.0f;
-			close_clickable_area->region_gabarite->offset_by_pixels_y = -3.0f;
-
-			close_clickable_area->draw_only_is_specific_region_overlapped = jc_button->main_clickable_area->region_gabarite;
-
-			jc_button->main_custom_data->clickable_area_list.push_back(close_clickable_area);
-			jc_button->main_clickable_area->region_gabarite->add_child_to_this_region(close_clickable_area->region_gabarite);
+			//second_button_layer->make_as_PBR();
+		}
+	}
 
 
-			//////////////////////////////////
-			ETextureGabarite*
+	if (_can_be_deleted)
+	{
+		//add new clickable area (close X)
+		EClickableArea*
+			close_clickable_area = EClickableArea::create_default_clickable_region
+			(
+				new ERegionGabarite(20.0f, 20.0f),
+				jc_button,
+				EntityButton::get_last_custom_data(jc_button)
+			);
+
+		jc_button->pointer_to_close_area = close_clickable_area;
+		close_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_delete_entity);
+
+		close_clickable_area->region_gabarite->offset_by_parent_size_x = 1.0f;
+		close_clickable_area->region_gabarite->offset_by_parent_size_y = 1.0f;
+
+		close_clickable_area->region_gabarite->offset_by_size_x = -1.0f;
+		close_clickable_area->region_gabarite->offset_by_size_y = -1.0f;
+
+		close_clickable_area->region_gabarite->offset_by_pixels_x = -3.0f;
+		close_clickable_area->region_gabarite->offset_by_pixels_y = -3.0f;
+
+		close_clickable_area->draw_only_is_specific_region_overlapped = jc_button->main_clickable_area->region_gabarite;
+
+		jc_button->main_custom_data->clickable_area_list.push_back(close_clickable_area);
+		jc_button->main_clickable_area->region_gabarite->add_child_to_this_region(close_clickable_area->region_gabarite);
+
+
+		//////////////////////////////////
+		ETextureGabarite*
 			close_icon = NS_DefaultGabarites::texture_close_circle;
 
-			float resize_factor = 0.0f;
-			float offset_x = 0.0f;
-			float offset_y = 0.0f;
-			{
-				resize_factor = (close_clickable_area->region_gabarite->size_y) / max(close_icon->size_x_in_pixels, close_icon->size_y_in_pixels);
-				resize_factor = min(resize_factor, 1.0f);
+		float resize_factor = 0.0f;
+		float offset_x = 0.0f;
+		float offset_y = 0.0f;
+		{
+			resize_factor = (close_clickable_area->region_gabarite->size_y) / max(close_icon->size_x_in_pixels, close_icon->size_y_in_pixels);
+			resize_factor = min(resize_factor, 1.0f);
 
-				offset_x = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_x_in_pixels * resize_factor) / 2.0f;
-				offset_y = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_y_in_pixels * resize_factor) / 2.0f;
+			offset_x = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_x_in_pixels * resize_factor) / 2.0f;
+			offset_y = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_y_in_pixels * resize_factor) / 2.0f;
 
-				ESpriteLayer* third_sprite_layer =
-					ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-					(
-						close_icon,
+			ESpriteLayer* third_sprite_layer =
+				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+				(
+					close_icon,
 
-						0.0f,
-						0.0f,
-						0.0f,
+					0.0f,
+					0.0f,
+					0.0f,
 
-						close_icon->size_x_in_pixels * resize_factor,
-						close_icon->size_y_in_pixels * resize_factor,
-						0.0f
-					);
+					close_icon->size_x_in_pixels * resize_factor,
+					close_icon->size_y_in_pixels * resize_factor,
+					0.0f
+				);
 
-				close_clickable_area->sprite_layer_list.push_back(third_sprite_layer);
+			close_clickable_area->sprite_layer_list.push_back(third_sprite_layer);
 
-				//second_button_layer->make_as_PBR();
-			}
-			//////////////////////////////////
+			//second_button_layer->make_as_PBR();
 		}
+		//////////////////////////////////
+	}
 
-		return jc_button;
+	return jc_button;
 }
 
 EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, EFont* _font, EGUIStyle* _style, ELocalisationText _ltext)
@@ -944,21 +962,21 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	);
 
 	EDataContainer_VerticalNamedSlider*
-	data = new EDataContainer_VerticalNamedSlider();
+		data = new EDataContainer_VerticalNamedSlider();
 	EntityButton::get_last_custom_data(jc_button)->data_container = data;
 	//data->slider_style = _style;
 	data->operable_area_size_x = _region_gabarite->size_x - _style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_x_in_pixels;
 
 	EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_update_horizontal_named_slider);
 	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_horizontal_named_slider);
-	
+
 	//jc_button->action_on_generate_vertex_buffer.push_back(&action_generate_brick_bg_for_button);
 	jc_button->action_on_generate_vertex_buffer.push_back(&action_generate_vertex_for_horizontal_named_slider);
 
 	//SLIDER LINE
 	{
 		ESpriteLayer*
-		brick_line_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
+			brick_line_layer = ESpriteLayer::create_default_sprite_layer(nullptr);
 
 		data->pointer_to_brick_line_sprite_layer = brick_line_layer;
 		jc_button->sprite_layer_list.push_back(brick_line_layer);
@@ -967,7 +985,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	//DIGIT SECTION
 	{
 		ESpriteLayer*
-		digit_section = ESpriteLayer::create_default_sprite_layer(nullptr);
+			digit_section = ESpriteLayer::create_default_sprite_layer(nullptr);
 		digit_section->offset_x = 0.0f;
 		data->pointer_to_digit_section_sprite_layer = digit_section;
 		jc_button->sprite_layer_list.push_back(digit_section);
@@ -1019,16 +1037,16 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	jc_button->main_custom_data->clickable_area_list.push_back(clickable_area_for_digit_section);
 
 	ETextArea*
-	text_area_digit_segment = ETextArea::create_centered_to_left_text_area(clickable_area_for_digit_section, _font, ELocalisationText::empty_localisation);
+		text_area_digit_segment = ETextArea::create_centered_to_left_text_area(clickable_area_for_digit_section, _font, ELocalisationText::empty_localisation);
 	//text_area_digit_segment->offset_border[BorderSide::LEFT] = _style->brick_style[BrickStyleID::BUTTON_BG].offset_for_elements_left * 0.0f;
 
 	text_area_digit_segment->can_be_edited = true;
 	text_area_digit_segment->can_change_localisation = true;
-	
+
 	//text_area_digit_segment->autoerase_text = true;
 
 	data->pointer_to_digit_text_area = text_area_digit_segment;
-	
+
 
 	Entity::add_text_area_to_last_clickable_region(jc_button, text_area_digit_segment);
 
@@ -1041,13 +1059,13 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 
 EntityButtonColorButton* EntityButton::create_named_color_button
 (
-	ERegionGabarite*				_region_gabarite,
-	EButtonGroup*					_parent_group,
-	EFont*							_font,
-	EGUIStyle*						_style,
+	ERegionGabarite* _region_gabarite,
+	EButtonGroup* _parent_group,
+	EFont* _font,
+	EGUIStyle* _style,
 	ELocalisationText				_text,
-	HRA_color_collection*			_color_collection,
-	HSVRGBAColor*					_color,
+	HRA_color_collection* _color_collection,
+	HSVRGBAColor* _color,
 	ColorButtonMode					_mode
 )
 {
@@ -1080,12 +1098,14 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	ETextArea*
-	jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
-	jc_text_area->forbide_new_line		= true;
-	jc_text_area->forbide_outbounding	= true;
+		jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
+	jc_text_area->forbide_new_line = true;
+	jc_text_area->forbide_outbounding = true;
 
 	if (_mode == ColorButtonMode::CBM_SELECT_COLOR)
-	{ jc_text_area->forcibly_create_glyph = true; }
+	{
+		jc_text_area->forcibly_create_glyph = true;
+	}
 
 	jc_text_area->offset_by_gabarite_size_x = 0.0;
 	jc_text_area->offset_by_text_size_x = 0.0;
@@ -1099,15 +1119,15 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 	jc_text_area->localisation_text = _text;
 	jc_text_area->can_be_edited = false;
 	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
-	
-	
+
+
 
 	jc_button->main_text_area = jc_text_area;
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	if (_mode == ColorButtonMode::CBM_SELECT_COLOR)
 	{
 		jc_button->main_clickable_area->actions_on_right_click_list.push_back(&EDataActionCollection::action_active_text_area);
-		
+
 		jc_text_area->action_on_change_text.push_back(&EDataActionCollection::action_change_localisation_for_color_button);
 		jc_text_area->action_on_finalize_text.push_back(&EDataActionCollection::action_deactive_text_area);
 
@@ -1166,7 +1186,7 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 
 
 
-	
+
 
 
 	return jc_button;
@@ -1192,7 +1212,7 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 
 
 	jc_clickable_area->can_catch_side[ClickableRegionSides::CRS_SIDE_BODY] = true;
-	
+
 	ECustomData* last_data = Entity::get_last_custom_data(jc_button);
 	//last_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
 
@@ -1226,7 +1246,7 @@ EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _regio
 	);
 
 	jc_clickable_area->sprite_layer_list.push_back(jc_sprite_layer);
-	
+
 	ETextArea* jc_text_area = ETextArea::create_centered_to_right_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "1.0");
 	jc_text_area->offset_border[BorderSide::RIGHT] = 6.0f;
 	jc_text_area->can_be_edited = false;
@@ -1269,7 +1289,7 @@ EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _re
 	//draw
 	last_data->actions_on_draw.push_back(&EDataActionCollection::action_draw_crosshair_slider);
 	//last_data->actions_on_draw.push_back(&EDataActionCollection::action_highlight_button_if_overlap);
-	
+
 
 	last_data->clickable_area_list.push_back(jc_clickable_area);
 
@@ -1295,11 +1315,11 @@ EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _re
 			_region_gabarite->size_y,
 			0.0f
 		);
-		
+
 		jc_clickable_area->sprite_layer_list.push_back(jc_sprite_layer);
 	}
 
-	
+
 
 	//ETextArea* jc_text_area = ETextArea::create_centered_to_right_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], "1.0");
 	//jc_text_area->offset_border[BorderSide::RIGHT] = 6.0f;
@@ -1318,7 +1338,7 @@ EntityButton* EntityButton::create_default_crosshair_slider(ERegionGabarite* _re
 
 void EntityButton::make_default_button_with_unedible_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ELocalisationText _ltext)
 {
-	
+
 
 	make_as_default_clickable_button
 	(
@@ -1329,8 +1349,8 @@ void EntityButton::make_default_button_with_unedible_text(ERegionGabarite* _regi
 
 
 	ETextArea*
-	jc_text_area = ETextArea::create_centered_text_area
-	(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _ltext);
+		jc_text_area = ETextArea::create_centered_text_area
+		(EntityButton::get_last_clickable_area(this), EFont::font_list[0], _ltext);
 
 	jc_text_area->change_text(_ltext.localisations[ELocalisationText::active_localisation]);
 
@@ -1344,11 +1364,11 @@ void EntityButton::make_default_button_with_edible_text(ERegionGabarite* _region
 {
 
 	make_as_default_clickable_button
-		(
-			_region_gabarite,
-			_parent_group,
-			_dap
-		);
+	(
+		_region_gabarite,
+		_parent_group,
+		_dap
+	);
 
 
 	ETextArea*
@@ -1368,21 +1388,21 @@ void EntityButton::make_as_default_button_with_icon(ERegionGabarite* _region_gab
 
 
 	make_as_default_clickable_button(_region_gabarite, _parent_group, _dap);
-	
+
 	float region_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
 
 	if (_texture_gabarite != nullptr)
 	{
 
 		EBrickStyle*
-		brick_style = &parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG];
+			brick_style = &parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG];
 
 		float
-		resize_factor = 1.0f;
+			resize_factor = 1.0f;
 
 		float
-		icon_size = max(_texture_gabarite->size_x_in_pixels, _texture_gabarite->size_y_in_pixels);
-		
+			icon_size = max(_texture_gabarite->size_x_in_pixels, _texture_gabarite->size_y_in_pixels);
+
 
 		//region_size -=  brick_style->offset_for_elements_bottom + brick_style->offset_for_elements_up;
 
@@ -1454,9 +1474,9 @@ void EntityButton::make_as_default_button_with_full_icon(ERegionGabarite* _regio
 void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite, std::string _text)
 {
 	make_as_default_clickable_button(_region_gabarite, _parent_group, _dap);
-	
+
 	float
-	region_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
+		region_size = min(_region_gabarite->size_x, _region_gabarite->size_y);
 
 	region_size -= parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].border_texture_size_bottom;
 	region_size -= parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG].border_texture_size_up;
@@ -1464,13 +1484,13 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 	if (_gabarite != nullptr)
 	{
 		int
-		icon_size = max(_gabarite->size_x_in_pixels, _gabarite->size_y_in_pixels);
+			icon_size = max(_gabarite->size_x_in_pixels, _gabarite->size_y_in_pixels);
 		icon_size = max(icon_size, 4.0f);
 
 
 
 		float
-		resize_factor = region_size / icon_size;
+			resize_factor = region_size / icon_size;
 		resize_factor = min(resize_factor, 1.0f);
 
 		float icon_size_x = round(_gabarite->size_x_in_pixels * resize_factor);
@@ -1532,9 +1552,9 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 	}
 
 	main_text_area = jc_text_area;
-	
 
-	
+
+
 
 	jc_text_area->change_text(_text);
 
@@ -1545,9 +1565,9 @@ void EntityButton::make_as_default_button_with_icon_and_text(ERegionGabarite* _r
 void EntityButton::make_as_default_button_with_icon_and_localisation_by_key(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, data_action_pointer _dap, ETextureGabarite* _gabarite, std::string _key)
 {
 	ELocalisationText
-	l_text = ELocalisationText(ELocalisationText::get_localisation_by_key(_key));
+		l_text = ELocalisationText(ELocalisationText::get_localisation_by_key(_key));
 
-	
+
 
 	make_as_default_button_with_icon_and_text
 	(
@@ -1559,7 +1579,7 @@ void EntityButton::make_as_default_button_with_icon_and_localisation_by_key(EReg
 	);
 
 
-	
+
 	main_text_area->localisation_text = l_text;
 
 }
@@ -1572,7 +1592,7 @@ void EntityButton::make_default_bool_switcher_button(ERegionGabarite* _region_ga
 
 	auto data_container = new EDataContainer_Button_BoolSwitcher();
 
-	
+
 	data_container->texture_gabarite_on = _gabarite_on;
 	data_container->texture_gabarite_off = _gabarite_off;
 
@@ -1662,8 +1682,8 @@ void EntityButton::make_as_default_router_variant_button(ERegionGabarite* _regio
 {
 	make_as_default_button_with_icon_and_text(_region_gabarite, parent_button_group, &EDataActionCollection::action_rotate_variant, nullptr, "");
 
-	static_cast<EntityButtonVariantRouter*>(this)->layer_with_icon		= sprite_layer_list.back();
-	static_cast<EntityButtonVariantRouter*>(this)->pointer_to_text_area	= main_text_area;
+	static_cast<EntityButtonVariantRouter*>(this)->layer_with_icon = sprite_layer_list.back();
+	static_cast<EntityButtonVariantRouter*>(this)->pointer_to_text_area = main_text_area;
 
 	main_text_area->can_be_edited = false;
 }
@@ -1671,7 +1691,7 @@ void EntityButton::make_as_default_router_variant_button(ERegionGabarite* _regio
 EClickableArea* EntityButton::create_clickable_region_witch_sprtite_layer_and_icon(ERegionGabarite* _region_gabarite, ETextureGabarite* _icon, data_action_pointer _action)
 {
 	EClickableArea*
-	new_clickable_region = EClickableArea::create_default_clickable_region
+		new_clickable_region = EClickableArea::create_default_clickable_region
 		(
 			_region_gabarite,
 			this,
@@ -1709,18 +1729,18 @@ EClickableArea* EntityButton::create_clickable_region_witch_sprtite_layer_and_ic
 		offset_y = ((new_clickable_region->region_gabarite->size_y) - _icon->size_y_in_pixels * resize_factor) / 2.0f;
 
 		ESpriteLayer* new_sprite_layer =
-		ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-		(
-			_icon,
+			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+			(
+				_icon,
 
-			0.0f,
-			0.0f,
-			0.0f,
+				0.0f,
+				0.0f,
+				0.0f,
 
-			_icon->size_x_in_pixels * resize_factor,
-			_icon->size_y_in_pixels * resize_factor,
-			0.0f
-		);
+				_icon->size_x_in_pixels * resize_factor,
+				_icon->size_y_in_pixels * resize_factor,
+				0.0f
+			);
 
 		new_clickable_region->sprite_layer_list.push_back(new_sprite_layer);
 
@@ -1733,9 +1753,9 @@ EClickableArea* EntityButton::create_clickable_region_witch_sprtite_layer_and_ic
 
 EClickableArea* EntityButton::add_close_circle(data_action_pointer _dap)
 {
-	
-		//add new clickable area (close X)
-		EClickableArea*
+
+	//add new clickable area (close X)
+	EClickableArea*
 		close_clickable_area = EClickableArea::create_default_clickable_region
 		(
 			new ERegionGabarite(20.0f, 20.0f),
@@ -1743,59 +1763,59 @@ EClickableArea* EntityButton::add_close_circle(data_action_pointer _dap)
 			EntityButton::get_last_custom_data(this)
 		);
 
-		if (_dap != nullptr)
-		{
-			close_clickable_area->actions_on_click_list.push_back(_dap);
-		}
+	if (_dap != nullptr)
+	{
+		close_clickable_area->actions_on_click_list.push_back(_dap);
+	}
 
-		close_clickable_area->region_gabarite->offset_by_parent_size_x = 1.0f;
-		close_clickable_area->region_gabarite->offset_by_parent_size_y = 1.0f;
+	close_clickable_area->region_gabarite->offset_by_parent_size_x = 1.0f;
+	close_clickable_area->region_gabarite->offset_by_parent_size_y = 1.0f;
 
-		close_clickable_area->region_gabarite->offset_by_size_x = -1.0f;
-		close_clickable_area->region_gabarite->offset_by_size_y = -1.0f;
+	close_clickable_area->region_gabarite->offset_by_size_x = -1.0f;
+	close_clickable_area->region_gabarite->offset_by_size_y = -1.0f;
 
-		close_clickable_area->region_gabarite->offset_by_pixels_x = -3.0f;
-		close_clickable_area->region_gabarite->offset_by_pixels_y = -3.0f;
+	close_clickable_area->region_gabarite->offset_by_pixels_x = -3.0f;
+	close_clickable_area->region_gabarite->offset_by_pixels_y = -3.0f;
 
-		close_clickable_area->draw_only_is_specific_region_overlapped = this->main_clickable_area->region_gabarite;
+	close_clickable_area->draw_only_is_specific_region_overlapped = this->main_clickable_area->region_gabarite;
 
-		this->main_custom_data->clickable_area_list.push_back(close_clickable_area);
-		this->main_clickable_area->region_gabarite->add_child_to_this_region(close_clickable_area->region_gabarite);
+	this->main_custom_data->clickable_area_list.push_back(close_clickable_area);
+	this->main_clickable_area->region_gabarite->add_child_to_this_region(close_clickable_area->region_gabarite);
 
 
-		//////////////////////////////////
-		ETextureGabarite*
-			close_icon = NS_DefaultGabarites::texture_close_circle;
+	//////////////////////////////////
+	ETextureGabarite*
+		close_icon = NS_DefaultGabarites::texture_close_circle;
 
-		float resize_factor = 0.0f;
-		float offset_x = 0.0f;
-		float offset_y = 0.0f;
-		{
-			resize_factor = (close_clickable_area->region_gabarite->size_y) / max(close_icon->size_x_in_pixels, close_icon->size_y_in_pixels);
-			resize_factor = min(resize_factor, 1.0f);
+	float resize_factor = 0.0f;
+	float offset_x = 0.0f;
+	float offset_y = 0.0f;
+	{
+		resize_factor = (close_clickable_area->region_gabarite->size_y) / max(close_icon->size_x_in_pixels, close_icon->size_y_in_pixels);
+		resize_factor = min(resize_factor, 1.0f);
 
-			offset_x = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_x_in_pixels * resize_factor) / 2.0f;
-			offset_y = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_y_in_pixels * resize_factor) / 2.0f;
+		offset_x = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_x_in_pixels * resize_factor) / 2.0f;
+		offset_y = ((close_clickable_area->region_gabarite->size_y) - close_icon->size_y_in_pixels * resize_factor) / 2.0f;
 
-			ESpriteLayer* third_sprite_layer =
-				ESpriteLayer::create_default_sprite_layer_with_size_and_offset
-				(
-					close_icon,
+		ESpriteLayer* third_sprite_layer =
+			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
+			(
+				close_icon,
 
-					0.0f,
-					0.0f,
-					0.0f,
+				0.0f,
+				0.0f,
+				0.0f,
 
-					close_icon->size_x_in_pixels * resize_factor,
-					close_icon->size_y_in_pixels * resize_factor,
-					0.0f
-				);
+				close_icon->size_x_in_pixels * resize_factor,
+				close_icon->size_y_in_pixels * resize_factor,
+				0.0f
+			);
 
-			close_clickable_area->sprite_layer_list.push_back(third_sprite_layer);
+		close_clickable_area->sprite_layer_list.push_back(third_sprite_layer);
 
-			//second_button_layer->make_as_PBR();
-		}
-		//////////////////////////////////
+		//second_button_layer->make_as_PBR();
+	}
+	//////////////////////////////////
 
 	return close_clickable_area;
 }
@@ -1809,13 +1829,13 @@ bool EntityButton::button_in_culling_gabarites()
 {
 	//return true;
 	if (parent_button_group == nullptr) { return false; }
-	
+
 	return
-	(
-		(world_position_y + button_gabarite->phantom_translate_y <= parent_button_group->higher_culling_line_for_group)
-		&&
-		(world_position_y + button_gabarite->phantom_translate_y + button_gabarite->size_y >= parent_button_group->lower_culling_line_for_group)
-	);
+		(
+			(world_position_y + button_gabarite->phantom_translate_y <= parent_button_group->higher_culling_line_for_group)
+			&&
+			(world_position_y + button_gabarite->phantom_translate_y + button_gabarite->size_y >= parent_button_group->lower_culling_line_for_group)
+			);
 }
 
 
@@ -1846,9 +1866,14 @@ void EntityButton::draw()
 
 	Entity::draw();
 
-	
 
-	if ((suppressor != nullptr) && (!*suppressor))
+
+	if
+		(
+			(suppressor != nullptr)
+			&&
+			(!(*suppressor ^ invert_suppression))//T^F F^T
+			)
 	{
 		NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_DARK_GREY, 0.85f);
 		ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
@@ -1900,13 +1925,13 @@ void EntityButton::draw_second_pass()
 	Entity::draw_second_pass();
 
 	if
-	(
-		(button_suppressor != nullptr)
-		&&
-		(EClickableArea::active_clickable_region == main_clickable_area)
-		&&
-		(!*suppressor)
-	)
+		(
+			(button_suppressor != nullptr)
+			&&
+			(EClickableArea::active_clickable_region == main_clickable_area)
+			&&
+			(!(*suppressor ^ invert_suppression))
+			)
 	{
 		unsigned long long timer = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 		//EInputCore::logger_param("timer", timer % 100);
@@ -1939,39 +1964,41 @@ void EntityButton::update(float _d)
 {
 	//if ((suppressor == nullptr) || (*suppressor))
 	//{
-		Entity::update(_d);
+	Entity::update(_d);
 
-		
-		if (highlight_time > 0.0f)
+
+	if (highlight_time > 0.0f)
+	{
+		using namespace std::chrono;
+		milliseconds ms = duration_cast<milliseconds>(system_clock::now().time_since_epoch());
+
+		if (ms - highlight_timestamp > (milliseconds)(1000)) { highlight_time = 0.0f; }
+		highlight_time -= _d;
+	}
+
+	if ((main_clickable_area != nullptr) && (main_clickable_area->hover_time >= 0.50f) && (description_container != nullptr))
+	{
+		if (attached_description == nullptr)
 		{
-			using namespace std::chrono;
-			milliseconds ms = duration_cast<milliseconds>(system_clock::now().time_since_epoch());
-
-			if (ms - highlight_timestamp > (milliseconds)(1000)) { highlight_time = 0.0f; }
-			highlight_time -= _d;
+			description_container->create_description();
 		}
 
-		if ((main_clickable_area != nullptr) && (main_clickable_area->hover_time >= 0.50f) && (description_container != nullptr))
-		{
-			if (attached_description == nullptr)
-			{
-				description_container->create_description();
-			}
+		attached_description->autodelete_time = 0.1f;
+	}
 
-			attached_description->autodelete_time = 0.1f;
-		}
-
-		if
+	if
 		(
 			(attached_description != nullptr)
 			&&
 			(!button_gabarite->overlapped_by_mouse())
-		)
-		{destroy_attached_description();}
+			)
+	{
+		destroy_attached_description();
+	}
 
-		for (EHotKeyManager hotkey : hotkey_list)
-		{
-			if
+	for (EHotKeyManager hotkey : hotkey_list)
+	{
+		if
 			(
 				(hotkey.parent_button != nullptr)
 				&&
@@ -1980,29 +2007,29 @@ void EntityButton::update(float _d)
 						(hotkey.require_main_button > 0)
 						&&
 						(EInputCore::key_pressed(hotkey.require_main_button))
-					)
+						)
 					&&
 					(
 						(hotkey.require_main_button <= 0)
 						||
 						(EInputCore::key_pressed_once(hotkey.require_secondare_button))
+						)
 					)
 				)
-			)
-			{
-				for (ECustomData* cd:custom_data_list)
-				for (EClickableArea* ca:cd->clickable_area_list)
-				for (data_action_pointer dap : ca->actions_on_click_list)
-				if
-				(
-					(dap != nullptr)
-				)
-				{
-					EInputCore::logger_simple_info("call [actions on click list]");
-					dap(this, cd, _d);
-				}
-			}
+		{
+			for (ECustomData* cd : custom_data_list)
+				for (EClickableArea* ca : cd->clickable_area_list)
+					for (data_action_pointer dap : ca->actions_on_click_list)
+						if
+							(
+								(dap != nullptr)
+								)
+						{
+							EInputCore::logger_simple_info("call [actions on click list]");
+							dap(this, cd, _d);
+						}
 		}
+	}
 	//}
 }
 
@@ -2041,7 +2068,7 @@ EntityButton::~EntityButton()
 	action_on_generate_vertex_buffer.clear();
 	action_on_generate_vertex_buffer.shrink_to_fit();
 	if (debug_deleting) EInputCore::logger_simple_success("clear and shrink action on change style");
-	
+
 	if (description_container != nullptr)
 	{
 		delete description_container;
@@ -2076,12 +2103,12 @@ void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style)
 
 	//offset by button_group
 	float total_group_height
-	=
-	_but->parent_button_group->region_gabarite->size_y
-	-
-	_but->parent_button_group->group_offset_for_content_bottom
-	-
-	_but->parent_button_group->group_offset_for_content_up;
+		=
+		_but->parent_button_group->region_gabarite->size_y
+		-
+		_but->parent_button_group->group_offset_for_content_bottom
+		-
+		_but->parent_button_group->group_offset_for_content_up;
 
 	//float current_height_percent
 	//=
@@ -2131,20 +2158,20 @@ void action_generate_vertex_slider(EntityButton* _but, EGUIStyle* _style)
 	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y = _style->brick_style[BrickStyleID::SLIDER_ACTIVE].main_texture->size_y_in_pixels;
 
 	_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->offset_y
-	=
-	round
-	(
+		=
+		round
 		(
-			total_group_height
-			-
-			_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y
+			(
+				total_group_height
+				-
+				_but->custom_data_list[0]->clickable_area_list[0]->region_gabarite->size_y
+				)
+			*
+			*(((EDataContainerScrollBar*)_but->custom_data_list[0]->data_container)->current_percent)
+			+
+			_but->parent_button_group->group_offset_for_content_bottom
 		)
-		*
-		*(((EDataContainerScrollBar*)_but->custom_data_list[0]->data_container)->current_percent)
-		+
-		_but->parent_button_group->group_offset_for_content_bottom
-	)
-	;
+		;
 
 	//change clickable region size y
 
@@ -2241,12 +2268,12 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 
 	//offset by button_group
 	float total_group_height
-	=
-	_but->parent_button_group->region_gabarite->size_y
-	-
-	_but->parent_button_group->group_offset_for_content_bottom
-	-
-	_but->parent_button_group->group_offset_for_content_up;
+		=
+		_but->parent_button_group->region_gabarite->size_y
+		-
+		_but->parent_button_group->group_offset_for_content_bottom
+		-
+		_but->parent_button_group->group_offset_for_content_up;
 
 
 	ERegionGabarite::temporary_gabarite->set_region_offset_and_size
@@ -2290,7 +2317,7 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 	_but->button_gabarite->size_y = total_group_height;
 
 	EntityButtonVerticalSlider*
-	slider = static_cast<EntityButtonVerticalSlider*>(_but);
+		slider = static_cast<EntityButtonVerticalSlider*>(_but);
 	slider->workspace_height = total_group_height - _style->brick_style[BrickStyleID::SLIDER_ACTIVE].main_texture->size_y_in_pixels;
 	slider->brick_style_active_slider = &_style->brick_style[BrickStyleID::SLIDER_ACTIVE];
 	slider->slider_inactive = &_style->brick_style[BrickStyleID::SLIDER_INACTIVE];
@@ -2303,14 +2330,14 @@ void action_generate_vertex_for_vertical_slider(EntityButton* _but, EGUIStyle* _
 		slider->max_value = min(slider->max_value, 0.0f);
 	}
 	else
-	if (_but->parent_button_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
-	{
-		slider->min_value = (_but->parent_button_group->final_highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->group_offset_for_content_up);
-		slider->min_value = max(slider->min_value, 0.0f);
+		if (_but->parent_button_group->child_align_direction == ChildElementsAlignDirection::TOP_TO_BOTTOM)
+		{
+			slider->min_value = (_but->parent_button_group->final_highest_point_y - _but->parent_button_group->region_gabarite->size_y + _but->parent_button_group->group_offset_for_content_up);
+			slider->min_value = max(slider->min_value, 0.0f);
 
-		slider->max_value = 0.0f;
+			slider->max_value = 0.0f;
 
-	}
+		}
 }
 
 
@@ -2328,11 +2355,11 @@ EntityButtonVariantRouter::~EntityButtonVariantRouter()
 	}
 
 	if (!disable_deleting)
-	for (RouterVariant* rv : router_variant_list)
-	if (rv != nullptr)
-	{
-		delete rv;
-	}
+		for (RouterVariant* rv : router_variant_list)
+			if (rv != nullptr)
+			{
+				delete rv;
+			}
 	router_variant_list.clear();
 	router_variant_list.shrink_to_fit();
 
@@ -2356,36 +2383,36 @@ void EntityButtonVariantRouter::select_variant(int _variant_id)
 			{
 
 				EBrickStyle*
-				brick_style = &parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG];
+					brick_style = &parent_button_group->selected_style->brick_style[BrickStyleID::BUTTON_BG];
 
 				float
-				texture_size
-				=
-				max
-				(
-					router_variant_list[selected_variant]->texture->size_x_in_pixels,
-					router_variant_list[selected_variant]->texture->size_y_in_pixels
-				);
+					texture_size
+					=
+					max
+					(
+						router_variant_list[selected_variant]->texture->size_x_in_pixels,
+						router_variant_list[selected_variant]->texture->size_y_in_pixels
+					);
 
-				float 
-				available_region_size = min(button_gabarite->size_x, button_gabarite->size_y);
+				float
+					available_region_size = min(button_gabarite->size_x, button_gabarite->size_y);
 
 				available_region_size -= brick_style->border_texture_size_bottom;
 				available_region_size -= brick_style->border_texture_size_up;
 				//layer_with_icon->sprite_frame_list[0]->sprite_list[0]->main_texture = router_variant_list[selected_variant].texture;
 
 				float
-				resize_factor = available_region_size / texture_size;
+					resize_factor = available_region_size / texture_size;
 
 				float
-				final_icon_size_x = router_variant_list[selected_variant]->texture->size_x_in_pixels * resize_factor;
+					final_icon_size_x = router_variant_list[selected_variant]->texture->size_x_in_pixels * resize_factor;
 
 				float
-				final_icon_size_y = router_variant_list[selected_variant]->texture->size_y_in_pixels * resize_factor;
+					final_icon_size_y = router_variant_list[selected_variant]->texture->size_y_in_pixels * resize_factor;
 
-				float offset_x = brick_style->border_texture_size_left		+ (available_region_size - final_icon_size_x) / 2.0f;
-				float offset_y = brick_style->border_texture_size_bottom	+ (available_region_size - final_icon_size_y) / 2.0f;
-				
+				float offset_x = brick_style->border_texture_size_left + (available_region_size - final_icon_size_x) / 2.0f;
+				float offset_y = brick_style->border_texture_size_bottom + (available_region_size - final_icon_size_y) / 2.0f;
+
 				//float resize_factor =
 				//	min
 				//	(
@@ -2487,10 +2514,25 @@ std::string EntityButtonVariantRouter::return_base_text_from_selected_router()
 	return router_variant_list[selected_variant]->router_localisation.base_name;
 }
 
-RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_key_and_color(std::string _key, float _r, float _g, float _b, float _a)
+RouterVariant* EntityButtonVariantRouter::add_router_variant_by_text_and_color(std::string _text, float _r, float _g, float _b, float _a)
 {
 	RouterVariant*
 	router_variant = new RouterVariant();
+
+	router_variant->router_localisation = ELocalisationText::generate_localization_with_base_name(_text);
+
+	router_variant->text_color = new HSVRGBAColor();
+	router_variant->text_color->set_color_RGBA(_r, _g, _b, _a);
+
+	router_variant_list.push_back(router_variant);
+
+	return router_variant;
+}
+
+RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_key_and_color(std::string _key, float _r, float _g, float _b, float _a)
+{
+	RouterVariant*
+		router_variant = new RouterVariant();
 
 	router_variant->router_localisation = ELocalisationText::get_localisation_by_key(_key);
 
@@ -2505,7 +2547,7 @@ RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_k
 RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_key_color_and_icon(std::string _key, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon)
 {
 	RouterVariant*
-	router_variant = new RouterVariant();
+		router_variant = new RouterVariant();
 
 	router_variant->router_localisation = ELocalisationText::get_localisation_by_key(_key);
 
@@ -2527,13 +2569,13 @@ RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_k
 RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_color_and_icon(ELocalisationText* _ltext, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon)
 {
 	RouterVariant*
-	router_variant = new RouterVariant();
+		router_variant = new RouterVariant();
 
 	router_variant->router_localisation = *_ltext;
 
 	if (_key_for_window != "")
 	{
-		router_variant->localisation_for_select_window =ELocalisationText::get_localisation_by_key(_key_for_window);
+		router_variant->localisation_for_select_window = ELocalisationText::get_localisation_by_key(_key_for_window);
 	}
 
 	router_variant->text_color = new HSVRGBAColor();
@@ -2554,7 +2596,7 @@ RouterVariant::~RouterVariant()
 		//if ((localisation_for_select_window != nullptr) && (router_localisation != localisation_for_select_window)){ delete localisation_for_select_window; }
 		//if (router_localisation != nullptr)					{ delete router_localisation; router_localisation = nullptr;}
 		//if (color != nullptr)							{ delete color; }
-		
+
 
 		//EInputCore::logger_simple_success("~RouterVariant deleted");
 	}
@@ -2630,23 +2672,23 @@ void DescriptionContainer::create_description()
 
 void DescriptionContainer::init_description(EButtonGroup* _group)
 {
-	float borders_size_x = _group->group_offset_for_content_left		+ _group->group_offset_for_content_right;
-	float borders_size_y = _group->group_offset_for_content_bottom	+ _group->group_offset_for_content_up;
+	float borders_size_x = _group->group_offset_for_content_left + _group->group_offset_for_content_right;
+	float borders_size_y = _group->group_offset_for_content_bottom + _group->group_offset_for_content_up;
 
 	_group->region_gabarite->offset_x = max(parent_button->button_gabarite->world_position_x, borders_size_x + 3.0f);
 	_group->region_gabarite->offset_x = min(_group->region_gabarite->offset_x, NS_EGraphicCore::SCREEN_WIDTH / NS_EGraphicCore::current_zoom - _group->region_gabarite->size_x - borders_size_x - 3.0f);
-	
+
 	if (parent_button->button_gabarite->world_position_y + parent_button->button_gabarite->size_y + size_y + borders_size_y + 6.0f <= NS_EGraphicCore::SCREEN_HEIGHT / NS_EGraphicCore::current_zoom)
 	{
 		_group->region_gabarite->offset_y
-		=
-		parent_button->button_gabarite->world_position_y
-		+
-		parent_button->button_gabarite->size_y
-		+
-		borders_size_y
-		+
-		3.0f;
+			=
+			parent_button->button_gabarite->world_position_y
+			+
+			parent_button->button_gabarite->size_y
+			+
+			borders_size_y
+			+
+			3.0f;
 	}
 	else
 	{
@@ -2663,25 +2705,25 @@ void DescriptionContainerDefault::create_description()
 
 	if (parent_button != nullptr)
 	{
-		
+
 		EButtonGroup*
-		description_group = new EButtonGroup
-		(
-			new ERegionGabarite
+			description_group = new EButtonGroup
 			(
-				size_x,
-				size_y
-			)
-		);
+				new ERegionGabarite
+				(
+					size_x,
+					size_y
+				)
+			);
 
 		description_group->init_as_root_group(parent_button->parent_button_group->root_group->parent_window);
 		description_group->need_refresh = true;
 
-		
+
 		if (!replacer_list.empty())
 		{
 			ELocalisationText
-			temp_ltext = localisation_text;
+				temp_ltext = localisation_text;
 
 			for (int i = 0; i < NSW_languages_count; i++)
 			{
@@ -2757,7 +2799,7 @@ void DescriptionContainerHelpDescriptionImage::create_description()
 		description_group->need_refresh = true;
 
 		EntityButton*
-		texture_button = new EntityButton();
+			texture_button = new EntityButton();
 		description_group->add_button_to_working_group(texture_button);
 
 		texture_button->make_as_default_button_with_full_icon

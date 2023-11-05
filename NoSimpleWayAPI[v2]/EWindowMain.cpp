@@ -1605,257 +1605,84 @@ void EDataActionCollection::action_shrink_all_separators(Entity* _entity, ECusto
 void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EntityButton*
-		entity_button = static_cast<EntityButton*>(_entity);
+	entity_button = static_cast<EntityButton*>(_entity);
 
 	EntityButtonLootItem*
-		loot_button = static_cast<EntityButtonLootItem*>(_entity);
+	loot_button = static_cast<EntityButtonLootItem*>(_entity);
 
 	HSVRGBAColor*
-		target_temp_color = &EButtonGroupLootSimulator::temp_color;
+	target_temp_color = &EButtonGroupLootSimulator::temp_color;
 
-	int selected_version_router = EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant;
+	int
+	selected_loot_filter_version = EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant;
+
+	int
+	selected_pattern_variant = -1;
+
+
+	LootFilterVersionPattern::PatternStruct*
+	target_version_pattern = nullptr;
+
 
 	if
-	(
+	(	(entity_button->entity_is_active())
+		&&
 		(loot_button != nullptr)
 		&&
-		(
-			(entity_button->entity_is_active())
-			&&
-			(!loot_button->matched_filter_blocks.empty())
-			&&
-			(loot_button->matched_show_hide_block != nullptr)
-			&&
-			(
-				(
-					(loot_button->matched_show_hide_block->button_show_hide->selected_variant == 1)//show by filter block
-					&&
-					(loot_button->matched_show_hide_block->version_routers[selected_version_router]->selected_variant != 1)//not forcebly hidden by version control
-				)
-				||
-				(EButtonGroupLootSimulator::show_hidden)
-			)
-		)
-		||
-		(loot_button->stored_game_item->warn_when_hidden)
+		(loot_button->matched_show_hide_block != nullptr)
+		&&
+		(!loot_button->matched_filter_blocks.empty())
+		&&
+		(loot_button->matched_show_hide_block != nullptr)
 	)
 	{
-		if
-			(
-				(loot_button->matched_text_color != nullptr)
-				&&
-				(
-					(loot_button->main_text_area->stored_color.r != (*loot_button->matched_text_color)->r)
-					||
-					(loot_button->main_text_area->stored_color.g != (*loot_button->matched_text_color)->g)
-					||
-					(loot_button->main_text_area->stored_color.b != (*loot_button->matched_text_color)->b)
-					||
-					(loot_button->main_text_area->stored_color.a != (*loot_button->matched_text_color)->a)
-					)
-				)
-		{
-			loot_button->main_text_area->set_color(*loot_button->matched_text_color);
-			loot_button->main_text_area->generate_text();
-		}
+		selected_pattern_variant = loot_button->matched_show_hide_block->version_routers[selected_loot_filter_version]->selected_variant;
 
-		//BG
-		if (loot_button->matched_bg_color != nullptr)
-		{
-			target_temp_color->set_color(*loot_button->matched_bg_color);
-			EWindowMain::set_color_version(target_temp_color, loot_button->matched_bg_color_block->version_routers[selected_version_router]->selected_variant);
-			NS_EGraphicCore::set_active_color(target_temp_color);
-
-			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
-			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-			(
-				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-				//x pos
-				entity_button->button_gabarite->world_position_x,
-
-				//y pos
-				entity_button->button_gabarite->world_position_y,
-
-				entity_button->button_gabarite->size_x,
-				entity_button->button_gabarite->size_y,
-
-				NS_DefaultGabarites::texture_gabarite_white_pixel
-			);
-
-		}
-		else
-		{
-			//NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
-		}
-
-		
-
-
-
-
-		//		RAMA
-		if (loot_button->matched_rama_color != nullptr)
-		{
-			target_temp_color->set_color(*loot_button->matched_rama_color);
-			EWindowMain::set_color_version(target_temp_color, loot_button->matched_rama_color_block->version_routers[selected_version_router]->selected_variant);
-			NS_EGraphicCore::set_active_color(target_temp_color);
-
-			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
-			NS_ERenderCollection::add_data_to_vertex_buffer_rama
-			(
-				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-				//x pos
-				entity_button->button_gabarite->world_position_x,
-
-				//y pos
-				entity_button->button_gabarite->world_position_y,
-
-				entity_button->button_gabarite->size_x,
-				entity_button->button_gabarite->size_y,
-
-				3.0f,
-
-				NS_DefaultGabarites::texture_gabarite_white_pixel
-			);
-		}
-		else
-		{
-			//NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_RED);
-		}
-
-		
-
-
-
-
+		target_version_pattern = &(LootFilterVersionPattern::registered_loot_filter_version_patterns[selected_pattern_variant]);
 
 		if
 		(
-			//if block hidden by any way
-			(loot_button != nullptr)
-			&&
-			(loot_button->matched_show_hide_block != nullptr)
-			&&
-			(
-				(loot_button->matched_show_hide_block->button_show_hide->selected_variant != 1)//hidden by filter block
-				||
-				(loot_button->matched_show_hide_block->version_routers[selected_version_router]->selected_variant == 1)//forcebly hidden by version control
-			)
-			&&//and warn when item hidden
 			(loot_button->stored_game_item->warn_when_hidden)
-
+			||
+			(EButtonGroupLootSimulator::show_hidden)
+			||
+			(target_version_pattern->show_hide_mode == (int)(LootFilterVersionPattern::LootPatternParameterMode::FORCIBLY_ENABLE))
+			||
+			(
+				(loot_button->matched_show_hide_block->button_show_hide->selected_variant == 1)//show by filter block
+				&&
+				(target_version_pattern->show_hide_mode != (int)(LootFilterVersionPattern::LootPatternParameterMode::FORCIBLY_DISABLE))//not forcebly hidden by version control
+			)
 		)
 		{
 
-			//WARNING BG
-			if (EWindowMain::loot_simulator_button_group->warning_sign_show_flag)
-			{
-				target_temp_color->set_color_RGBA(1.0f, 0.0f, 0.0f, 0.75f);
-			}
-			else
-			{
-				target_temp_color->set_color_RGBA(1.0f, 1.0f, 1.0f, 0.9f);
-			}
-			EWindowMain::set_color_version(target_temp_color, loot_button->matched_bg_color_block->version_routers[selected_version_router]->selected_variant);
-			NS_EGraphicCore::set_active_color(target_temp_color);
-
-			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
-			NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-			(
-				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-				//x pos
-				entity_button->button_gabarite->world_position_x,
-
-				//y pos
-				entity_button->button_gabarite->world_position_y,
-
-				entity_button->button_gabarite->size_x,
-				entity_button->button_gabarite->size_y,
-
-				NS_DefaultGabarites::texture_gabarite_white_pixel
-			);
-
-
-			//WARNING RAMA
-			
-			if (EWindowMain::loot_simulator_button_group->warning_sign_show_flag)
-			{
-				target_temp_color->set_color_RGBA(1.0f, 1.0f, 0.0f, 1.0f);
-			}
-			else
-			{
-				target_temp_color->set_color_RGBA(1.0f, 0.0f, 0.0f, 0.85f);
-			}
-			EWindowMain::set_color_version(target_temp_color, loot_button->matched_rama_color_block->version_routers[selected_version_router]->selected_variant);
-			NS_EGraphicCore::set_active_color(target_temp_color);
-
-			ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
-			NS_ERenderCollection::add_data_to_vertex_buffer_rama
-			(
-				NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-				//x pos
-				entity_button->button_gabarite->world_position_x,
-
-				//y pos
-				entity_button->button_gabarite->world_position_y,
-
-				entity_button->button_gabarite->size_x,
-				entity_button->button_gabarite->size_y,
-
-				6.0f,
-
-				NS_DefaultGabarites::texture_gabarite_white_pixel
-			);
-
-			{
-				float size_multiplier = 1.0f;
-				ETextureGabarite*
-				texture_gabarite = NS_DefaultGabarites::texture_WARNING;
-
-				NS_EGraphicCore::set_active_color(1.0f, 1.0f, 1.0f, 1.0f);
-				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
-				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
-				(
-					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
-					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
-
-					//x pos
-					entity_button->button_gabarite->world_position_x - texture_gabarite->size_x_in_pixels * 0.5f,
-
-					//y pos
-					entity_button->button_gabarite->world_position_y,
-
-					texture_gabarite->size_x_in_pixels * size_multiplier,
-					texture_gabarite->size_y_in_pixels * size_multiplier,
-
-					texture_gabarite
-				);
-			}
-		}
-		else
-		{
-			//		MINIMAP ICON
+			//is color changed?
 			if
-			(
-				(loot_button->matched_minimap_icon_color != nullptr)
-				&&
-				(loot_button->matched_minimap_icon_block != nullptr)
-				&&
-				(loot_button->matched_minimap_icon_block->pointer_to_forcibly_disable_minimap_icon_variant_button->selected_variant == 0)
-			)
+				(
+					(loot_button->matched_text_color != nullptr)
+					&&
+					(
+						(loot_button->main_text_area->stored_color.r != (*loot_button->matched_text_color)->r)
+						||
+						(loot_button->main_text_area->stored_color.g != (*loot_button->matched_text_color)->g)
+						||
+						(loot_button->main_text_area->stored_color.b != (*loot_button->matched_text_color)->b)
+						||
+						(loot_button->main_text_area->stored_color.a != (*loot_button->matched_text_color)->a)
+						)
+					)
 			{
-				float size_multiplier = 1.0f - loot_button->matched_minimap_icon_size->selected_variant * 0.25;
-				ETextureGabarite* texture_gabarite = loot_button->matched_minimap_icon_shape->router_variant_list[loot_button->matched_minimap_icon_shape->selected_variant]->texture;
+				loot_button->main_text_area->set_color(*loot_button->matched_text_color);
+				loot_button->main_text_area->generate_text();
+			}
 
-				NS_EGraphicCore::set_active_color(loot_button->matched_minimap_icon_color->router_variant_list[loot_button->matched_minimap_icon_color->selected_variant]->text_color);
+			//BG
+			if (loot_button->matched_bg_color != nullptr)
+			{
+				target_temp_color->set_color(*loot_button->matched_bg_color);
+				EWindowMain::set_color_version(target_temp_color, loot_button->matched_bg_color_block->version_routers[selected_loot_filter_version]->selected_variant);
+				NS_EGraphicCore::set_active_color(target_temp_color);
+
 				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
 				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
 				(
@@ -1868,14 +1695,207 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 					//y pos
 					entity_button->button_gabarite->world_position_y,
 
-					texture_gabarite->size_x_in_pixels * size_multiplier + 4.0f,
-					texture_gabarite->size_y_in_pixels * size_multiplier + 4.0f,
+					entity_button->button_gabarite->size_x,
+					entity_button->button_gabarite->size_y,
 
-					texture_gabarite
+					NS_DefaultGabarites::texture_gabarite_white_pixel
 				);
+
+			}
+			else
+			{
+				//NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_WHITE);
+			}
+
+
+
+
+
+
+			//		RAMA
+			if (loot_button->matched_rama_color != nullptr)
+			{
+				target_temp_color->set_color(*loot_button->matched_rama_color);
+				EWindowMain::set_color_version(target_temp_color, loot_button->matched_rama_color_block->version_routers[selected_loot_filter_version]->selected_variant);
+				NS_EGraphicCore::set_active_color(target_temp_color);
+
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+				NS_ERenderCollection::add_data_to_vertex_buffer_rama
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+					//x pos
+					entity_button->button_gabarite->world_position_x,
+
+					//y pos
+					entity_button->button_gabarite->world_position_y,
+
+					entity_button->button_gabarite->size_x,
+					entity_button->button_gabarite->size_y,
+
+					3.0f,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+			}
+			else
+			{
+				//NS_EGraphicCore::set_active_color(NS_EColorUtils::COLOR_RED);
+			}
+
+
+
+
+
+
+
+			if
+				(
+					//if block hidden by any way
+					(loot_button != nullptr)
+					&&
+					(loot_button->matched_show_hide_block != nullptr)
+					&&
+					(
+						(loot_button->matched_show_hide_block->button_show_hide->selected_variant != 1)//hidden by filter block
+						||
+						(loot_button->matched_show_hide_block->version_routers[selected_loot_filter_version]->selected_variant == 1)//forcebly hidden by version control
+						)
+					&&//and warn when item hidden
+					(loot_button->stored_game_item->warn_when_hidden)
+
+					)
+			{
+
+				//WARNING BG
+				if (EWindowMain::loot_simulator_button_group->warning_sign_show_flag)
+				{
+					target_temp_color->set_color_RGBA(1.0f, 0.0f, 0.0f, 0.75f);
+				}
+				else
+				{
+					target_temp_color->set_color_RGBA(1.0f, 1.0f, 1.0f, 0.9f);
+				}
+				EWindowMain::set_color_version(target_temp_color, loot_button->matched_bg_color_block->version_routers[selected_loot_filter_version]->selected_variant);
+				NS_EGraphicCore::set_active_color(target_temp_color);
+
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+				NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+					//x pos
+					entity_button->button_gabarite->world_position_x,
+
+					//y pos
+					entity_button->button_gabarite->world_position_y,
+
+					entity_button->button_gabarite->size_x,
+					entity_button->button_gabarite->size_y,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+
+
+				//WARNING RAMA
+
+				if (EWindowMain::loot_simulator_button_group->warning_sign_show_flag)
+				{
+					target_temp_color->set_color_RGBA(1.0f, 1.0f, 0.0f, 1.0f);
+				}
+				else
+				{
+					target_temp_color->set_color_RGBA(1.0f, 0.0f, 0.0f, 0.85f);
+				}
+				EWindowMain::set_color_version(target_temp_color, loot_button->matched_rama_color_block->version_routers[selected_loot_filter_version]->selected_variant);
+				NS_EGraphicCore::set_active_color(target_temp_color);
+
+				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 4);
+				NS_ERenderCollection::add_data_to_vertex_buffer_rama
+				(
+					NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+					NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+					//x pos
+					entity_button->button_gabarite->world_position_x,
+
+					//y pos
+					entity_button->button_gabarite->world_position_y,
+
+					entity_button->button_gabarite->size_x,
+					entity_button->button_gabarite->size_y,
+
+					6.0f,
+
+					NS_DefaultGabarites::texture_gabarite_white_pixel
+				);
+
+				{
+					float size_multiplier = 1.0f;
+					ETextureGabarite*
+						texture_gabarite = NS_DefaultGabarites::texture_WARNING;
+
+					NS_EGraphicCore::set_active_color(1.0f, 1.0f, 1.0f, 1.0f);
+					ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+					NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+					(
+						NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+						NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+						//x pos
+						entity_button->button_gabarite->world_position_x - texture_gabarite->size_x_in_pixels * 0.5f,
+
+						//y pos
+						entity_button->button_gabarite->world_position_y,
+
+						texture_gabarite->size_x_in_pixels * size_multiplier,
+						texture_gabarite->size_y_in_pixels * size_multiplier,
+
+						texture_gabarite
+					);
+				}
+			}
+			else
+			{
+				//		MINIMAP ICON
+				if
+					(
+						(loot_button->matched_minimap_icon_color != nullptr)
+						&&
+						(loot_button->matched_minimap_icon_block != nullptr)
+						&&
+						(loot_button->matched_minimap_icon_block->pointer_to_forcibly_disable_minimap_icon_variant_button->selected_variant == 0)
+						)
+				{
+					float size_multiplier = 1.0f - loot_button->matched_minimap_icon_size->selected_variant * 0.25;
+					ETextureGabarite* texture_gabarite = loot_button->matched_minimap_icon_shape->router_variant_list[loot_button->matched_minimap_icon_shape->selected_variant]->texture;
+
+					NS_EGraphicCore::set_active_color(loot_button->matched_minimap_icon_color->router_variant_list[loot_button->matched_minimap_icon_color->selected_variant]->text_color);
+					ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
+					NS_ERenderCollection::add_data_to_vertex_buffer_textured_rectangle_with_custom_size
+					(
+						NS_EGraphicCore::default_batcher_for_drawing->vertex_buffer,
+						NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
+
+						//x pos
+						entity_button->button_gabarite->world_position_x,
+
+						//y pos
+						entity_button->button_gabarite->world_position_y,
+
+						texture_gabarite->size_x_in_pixels * size_multiplier + 4.0f,
+						texture_gabarite->size_y_in_pixels * size_multiplier + 4.0f,
+
+						texture_gabarite
+					);
+				}
 			}
 		}
 	}
+
+	
 }
 
 void EDataActionCollection::action_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -2244,14 +2264,21 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 			if (true/*fatruelse*/)
 			{
 				int selected_version_router = EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant;
+
+				LootFilterVersionPattern::PatternStruct*
+				target_version_pattern = &(LootFilterVersionPattern::registered_loot_filter_version_patterns[selected_version_router]);
 				//		WARNING PART FOR HIDDEN_BY_MISTAKE
 				if
 				(
 					//if block hidden by any way
 					(
-						(loot_button->matched_show_hide_block->button_show_hide->selected_variant != 1)//hidden by filter block
-						||
-						(loot_button->matched_show_hide_block->version_routers[selected_version_router]->selected_variant == 1)//forcebly hidden by version control
+						(target_version_pattern->show_hide_mode != (int)(LootFilterVersionPattern::LootPatternParameterMode::FORCIBLY_ENABLE))
+						&&
+						(
+							(loot_button->matched_show_hide_block->button_show_hide->selected_variant != 1)//hidden by filter block
+							||
+							(target_version_pattern->show_hide_mode == (int)(LootFilterVersionPattern::LootPatternParameterMode::FORCIBLY_DISABLE))
+						)//forcebly hidden by version control
 					)
 					&&//and warn when item hidden
 					(loot_button->stored_game_item->warn_when_hidden)
@@ -2687,6 +2714,49 @@ void EDataActionCollection::action_select_this_attribute_tag(Entity* _entity, EC
 void EDataActionCollection::action_switch_loot_version_flag(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::loot_filter_editor->need_refresh = true;
+
+	EntityButtonVariantRouter*
+	version_router = EWindowMain::loot_simulator_button_group->pointer_to_target_loot_filter_version_button;
+
+
+	//refresh loot simulator version router button
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	for (RouterVariant* rv : version_router->router_variant_list)
+	if (rv != nullptr)
+	{
+		delete rv;
+	}
+
+	version_router->router_variant_list.clear();
+
+	for (int i = 0; i < NSW_LOOT_FILTER_MAX_VERSIONS; i++)
+	if (LootFilterVersionPattern::NSW_LOOT_FILTER_VERSION_ACTIVE[i])
+	{
+		version_router->add_router_variant_by_text_and_color(LootFilterVersionPattern::NSW_LOOT_VERSION_NAME[i], 0.9f, 0.8f, 0.7f, 1.0f);
+	}
+
+
+	if (version_router->router_variant_list.empty())
+	{
+		version_router->add_router_variant_by_text_and_color("<?>", 0.92f, 0.75f, 0.5f, 1.0f);
+
+		if (version_router->suppressor == nullptr)
+		{
+			version_router->suppressor = new bool(false);
+		}
+		else
+		{
+			*version_router->suppressor = false;
+		}
+	}
+	else
+	{
+		delete version_router->suppressor;
+		version_router->suppressor = nullptr;
+	}
+		
+	version_router->select_variant(0);
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 
 void EDataActionCollection::action_select_loot_filter_version_pattern(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -2694,11 +2764,14 @@ void EDataActionCollection::action_select_loot_filter_version_pattern(Entity* _e
 	EntityButtonLootfilterVersionPattern*
 	but = static_cast<EntityButtonLootfilterVersionPattern*> (_entity);
 
-	LootFilterVersionPattern::PatternStruct* target_pattern_struct = but->attached_pattern;
+	LootFilterVersionPattern::PatternStruct*
+	target_pattern_struct = but->attached_pattern;
 
 	but->parent_button_group->selected_button = but;
 
 	*(EWindowMain::registered_group_loot_version_configure->button_remove->suppressor) = !target_pattern_struct->is_default;
+
+	EWindowMain::registered_group_loot_version_configure->part_with_pattern_configure->recursive_unsuppress();
 
 	EDataContainer_Button_BoolSwitcher*
 	data;
@@ -2747,12 +2820,32 @@ void EDataActionCollection::action_select_loot_filter_version_pattern(Entity* _e
 	EWindowMain::registered_group_loot_version_configure->button_focus_slider->suppressor						= target_bool_suppressor;
 	EWindowMain::registered_group_loot_version_configure->button_focus_slider->button_suppressor				= switcher_button_suppressor;
 
-	//button:[slider] focus value
+	//button:[slider] icon
 	EWindowMain::registered_group_loot_version_configure->button_router_icon->suppressor						= target_bool_suppressor;
 	EWindowMain::registered_group_loot_version_configure->button_router_icon->button_suppressor					= switcher_button_suppressor;
+
+	//button:[slider] router continue
+	EWindowMain::registered_group_loot_version_configure->button_router_continue->suppressor					= target_bool_suppressor;
+	EWindowMain::registered_group_loot_version_configure->button_router_continue->button_suppressor				= switcher_button_suppressor;
+
+	//button:[slider] router show/hide
+	EWindowMain::registered_group_loot_version_configure->button_router_show_hide->suppressor					= target_bool_suppressor;
+	EWindowMain::registered_group_loot_version_configure->button_router_show_hide->button_suppressor			= switcher_button_suppressor;
 	/////////////////////////////////////////////////////////////////
 	
+
+
+	//set target int in router buttons
+	EWindowMain::registered_group_loot_version_configure->button_router_continue->target_int_value	= &(target_pattern_struct->continue_mode);
+	EWindowMain::registered_group_loot_version_configure->button_router_show_hide->target_int_value	= &(target_pattern_struct->show_hide_mode);
+
+	EWindowMain::registered_group_loot_version_configure->button_router_continue->select_variant	(target_pattern_struct->continue_mode);
+	EWindowMain::registered_group_loot_version_configure->button_router_show_hide->select_variant	(target_pattern_struct->show_hide_mode);
 	
+
+
+
+
 	
 	EDataContainer_VerticalNamedSlider*
 	slider_data =
@@ -2828,6 +2921,20 @@ void EDataActionCollection::action_set_unsave_changes_flag(ETextArea* _text_area
 void EDataActionCollection::action_change_version_names(ETextArea* _text_area)
 {
 	EWindowMain::loot_filter_editor->need_refresh = true;
+
+	int suitable_id = -1;
+	for (int i = 0; i < NSW_LOOT_FILTER_MAX_VERSIONS; i++)
+	{
+		if (EWindowMain::registered_group_loot_version_configure->pointer_to_version_name_button[i] == _text_area->parent_entity_for_text_area)
+		{
+			suitable_id = i;
+		}
+	}
+
+	if (suitable_id != -1)
+	{
+		LootFilterVersionPattern::NSW_LOOT_VERSION_NAME[suitable_id] = _text_area->original_text;
+	}
 
 	_text_area->localisation_text = ELocalisationText::generate_localization_only_languages(_text_area->original_text);
 }
@@ -4056,9 +4163,9 @@ EWindowMain::EWindowMain()
 
 	//LOOT VERSION CONFIGURATOR
 	{
-		registered_group_loot_version_configure = new EButtonGroupVersionControlConfigure(new ERegionGabarite(700.0f, 260.0f));
+		registered_group_loot_version_configure = new EButtonGroupVersionControlConfigure(new ERegionGabarite(700.0f, 320.0f));
 		registered_group_loot_version_configure->init_as_root_group(this);
-		//registered_group_loot_version_configure->auto_superfocused = true;
+		registered_group_loot_version_configure->auto_superfocused = true;
 
 		registered_group_loot_version_configure->actions_on_close.push_back(&EDataActionCollection::action_on_closing_loot_versions_window);
 
@@ -4131,7 +4238,7 @@ EWindowMain::EWindowMain()
 						NSW_dynamic_autosize
 					);
 
-				loot_filter_verion_pattern_list->have_rama = true;
+				//loot_filter_verion_pattern_list->have_rama = true;
 
 				registered_group_loot_version_configure->part_with_pattern_list = loot_filter_verion_pattern_list;
 				//////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -4206,7 +4313,8 @@ EWindowMain::EWindowMain()
 				EDataActionCollection::action_switch_boolean_value,
 				NS_DefaultGabarites::texture_bool_switcher_activated_box,
 				NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
-				version_button->suppressor
+				&(LootFilterVersionPattern::NSW_LOOT_FILTER_VERSION_ACTIVE[i])
+
 			);
 			version_suppressor_button->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_switch_loot_version_flag);
 
@@ -4214,10 +4322,16 @@ EWindowMain::EWindowMain()
 			version_suppressor_button->new_line_method = NewLineMethod::FORBIDDEN;
 			left_part_for_filter_versions->add_button_to_working_group(version_suppressor_button);
 
-			*version_button->suppressor = LootFilterVersionPattern::NSW_LOOT_FILTER_VERSION_ACTIVE[i];
+			version_button->suppressor = &LootFilterVersionPattern::NSW_LOOT_FILTER_VERSION_ACTIVE[i];
 
 			registered_group_loot_version_configure->pointer_to_version_name_button_switcher[i] = version_suppressor_button;
 		}
+
+
+
+
+
+
 
 		float offset_left_for_buttons = 4.0f;
 		for (int i = 0; i < NSW_LOOT_DEFAULT_VERSION_PATTERN_MAX; i++)
@@ -4260,7 +4374,11 @@ EWindowMain::EWindowMain()
 			ELocalisationText::get_localisation_by_key("remove_loot_version_pattern")
 		);
 
-		button_remove_pattern->suppressor = new bool(false);
+		button_remove_pattern->suppressor = new bool(true);
+
+
+		button_remove_pattern->main_text_area->offset_by_gabarite_size_x = 0.0f;
+		button_remove_pattern->main_text_area->offset_by_text_size_x = 0.0f;
 
 		button_remove_pattern->force_field_left	= offset_left_for_buttons;
 		button_remove_pattern->force_field_up	= 8.0f;
@@ -4290,9 +4408,16 @@ EWindowMain::EWindowMain()
 		);
 		button_full_ignore->main_text_area->set_color(0.9f, 0.45f, 0.225f, 1.0f);
 
+		button_full_ignore->main_text_area->offset_by_gabarite_size_x = 0.0f;
+		button_full_ignore->main_text_area->offset_by_text_size_x = 0.0f;
+
+
 		button_full_ignore->force_field_left = offset_left_for_buttons;
-		button_full_ignore->force_field_bottom = 8.0f;
+		button_full_ignore->force_field_bottom	= 4.0f;
+		button_full_ignore->force_field_up		= 8.0f;
+
 		button_full_ignore->can_be_stretched = true;
+
 
 		loot_filter_verion_configure->add_button_to_working_group(button_full_ignore);
 
@@ -4315,8 +4440,13 @@ EWindowMain::EWindowMain()
 			ELocalisationText::get_localisation_by_key("switcher_disable_minimap_elements")
 		);
 
+		button_disable_minimap_elements->main_text_area->offset_by_gabarite_size_x = 0.0f;
+		button_disable_minimap_elements->main_text_area->offset_by_text_size_x = 0.0f;
+
+
 		button_disable_minimap_elements->force_field_left = offset_left_for_buttons;
 		button_disable_minimap_elements->can_be_stretched = true;
+		button_disable_minimap_elements->invert_suppression = true;
 
 		loot_filter_verion_configure->add_button_to_working_group(button_disable_minimap_elements);
 
@@ -4340,8 +4470,13 @@ EWindowMain::EWindowMain()
 			ELocalisationText::get_localisation_by_key("switcher_disable_sound")
 		);
 
+		button_disable_sound_elements->main_text_area->offset_by_gabarite_size_x	= 0.0f;
+		button_disable_sound_elements->main_text_area->offset_by_text_size_x		= 0.0f;
+
 		button_disable_sound_elements->force_field_left = offset_left_for_buttons;
+		button_disable_sound_elements->force_field_up = 4.0f;
 		button_disable_sound_elements->can_be_stretched = true;
+		button_disable_sound_elements->invert_suppression = true;
 
 		loot_filter_verion_configure->add_button_to_working_group(button_disable_sound_elements);
 
@@ -4351,33 +4486,7 @@ EWindowMain::EWindowMain()
 
 
 
-		//	button icon	//////////////////////////////////////////////////////////////////////////
-		EntityButtonVariantRouter*
-		button_router_pattern_icon = new EntityButtonVariantRouter();
-
-		button_router_pattern_icon->force_field_left = offset_left_for_buttons;
-
-		loot_filter_verion_configure->add_button_to_working_group(button_router_pattern_icon);
-		button_router_pattern_icon->make_as_default_router_variant_button(new ERegionGabarite(150.0f, 22.0f));
-
-		button_router_pattern_icon->can_be_stretched = true;
-		button_router_pattern_icon->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
-
-		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_full_ignore",		"version_icon_full_ignore",		0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_full_ignore"));
-		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_soft_ignore",		"version_icon_soft_ignore",		0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_soft_ignore"));
-		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_ignore",			"version_icon_ignore",			0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_strong_ignore"));
-		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_hide",			"version_icon_hide",			0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_hide"));
-
-		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_default",			"version_icon_default",			0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_default"));
 		
-		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_soft_focus",		"version_icon_soft_focus",		0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_soft_focus"));
-		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_focus",			"version_icon_focus",			0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_strong_focus"));
-		
-		button_router_pattern_icon->select_variant(0);
-
-
-		registered_group_loot_version_configure->button_router_icon = button_router_pattern_icon;
-		//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -4385,15 +4494,19 @@ EWindowMain::EWindowMain()
 		//	focus slider	//////////////////////////////////////////////////////////////////////////
 		EntityButton* focus_slider = EntityButton::create_horizontal_named_slider
 		(
-
 			new ERegionGabarite(150.0f, 38.0f),
 			loot_filter_verion_configure,
 			EFont::font_list[0],
 			EGUIStyle::active_style,
 			ELocalisationText::get_localisation_by_key("verion_pattern_focus_slider")
 		);
+
+		focus_slider->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_refresh_loot_simulator_sizes);
+
 		focus_slider->can_be_stretched = true;
-		
+		focus_slider->invert_suppression = true;
+		focus_slider->force_field_left = offset_left_for_buttons;
+
 		EDataContainer_VerticalNamedSlider*
 		slider_data = static_cast<EDataContainer_VerticalNamedSlider*>(focus_slider->main_custom_data->data_container);
 		
@@ -4406,6 +4519,90 @@ EWindowMain::EWindowMain()
 
 		registered_group_loot_version_configure->button_focus_slider = focus_slider;
 		/////////////////////////////////////////////////////////////////////////////////////////
+
+
+		{
+			//	forcibly continue	//////////////////////////////////////////////////////////////////////////
+			EntityButtonVariantRouter*
+			button_router_continue_action = new EntityButtonVariantRouter();
+
+			button_router_continue_action->force_field_left = offset_left_for_buttons;
+			button_router_continue_action->force_field_bottom = 4.0f;
+
+			loot_filter_verion_configure->add_button_to_working_group(button_router_continue_action);
+			button_router_continue_action->make_as_default_router_variant_button(new ERegionGabarite(150.0f, 32.0f));
+
+			button_router_continue_action->can_be_stretched = true;
+			button_router_continue_action->invert_suppression = true;
+
+			button_router_continue_action->add_router_variant_with_localization_key_and_color("version_continue_do_not_change",		0.9f, 0.8f, 0.7f, 1.0f);
+			button_router_continue_action->add_router_variant_with_localization_key_and_color("version_continue_forcibly_enable",	0.5f, 0.8f, 0.5f, 1.0f);
+			button_router_continue_action->add_router_variant_with_localization_key_and_color("version_continue_forcibly_disable",	0.9f, 0.5f, 0.5f, 1.0f);
+
+			button_router_continue_action->select_variant(0);
+
+
+			registered_group_loot_version_configure->button_router_continue = button_router_continue_action;
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		}
+
+
+		{
+			//	forcibly hide	//////////////////////////////////////////////////////////////////////////
+			EntityButtonVariantRouter*
+			button_router_show_hide_action = new EntityButtonVariantRouter();
+
+			button_router_show_hide_action->force_field_left = offset_left_for_buttons;
+			//button_router_show_hide_action->force_field_bottom = 4.0f;
+
+			loot_filter_verion_configure->add_button_to_working_group(button_router_show_hide_action);
+			button_router_show_hide_action->make_as_default_router_variant_button(new ERegionGabarite(150.0f, 32.0f));
+
+			button_router_show_hide_action->can_be_stretched = true;
+			button_router_show_hide_action->invert_suppression = true;
+
+			button_router_show_hide_action->add_router_variant_with_localization_key_and_color("version_show_hide_do_not_change",		0.9f, 0.8f, 0.7f, 1.0f);
+			button_router_show_hide_action->add_router_variant_with_localization_key_and_color("version_show_hide_forcibly_enable",		0.5f, 0.8f, 0.5f, 1.0f);
+			button_router_show_hide_action->add_router_variant_with_localization_key_and_color("version_show_hide_forcibly_disable",	0.9f, 0.5f, 0.5f, 1.0f);
+
+			button_router_show_hide_action->select_variant(0);
+
+
+			registered_group_loot_version_configure->button_router_show_hide = button_router_show_hide_action;
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		}
+
+
+
+		//	button icon	//////////////////////////////////////////////////////////////////////////
+		EntityButtonVariantRouter*
+		button_router_pattern_icon = new EntityButtonVariantRouter();
+
+		button_router_pattern_icon->force_field_left = offset_left_for_buttons;
+		button_router_pattern_icon->force_field_bottom = 4.0f;
+
+		loot_filter_verion_configure->add_button_to_working_group(button_router_pattern_icon);
+		button_router_pattern_icon->make_as_default_router_variant_button(new ERegionGabarite(150.0f, 22.0f));
+
+		button_router_pattern_icon->can_be_stretched = true;
+		button_router_pattern_icon->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
+		button_router_pattern_icon->invert_suppression = true;
+
+		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_full_ignore", "version_icon_full_ignore", 0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_full_ignore"));
+		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_soft_ignore", "version_icon_soft_ignore", 0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_soft_ignore"));
+		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_ignore", "version_icon_ignore", 0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_strong_ignore"));
+		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_hide", "version_icon_hide", 0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_hide"));
+
+		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_default", "version_icon_default", 0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_default"));
+
+		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_soft_focus", "version_icon_soft_focus", 0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_soft_focus"));
+		button_router_pattern_icon->add_router_variant_with_localization_key_color_and_icon("version_icon_focus", "version_icon_focus", 0.9f, 0.8f, 0.7f, 1.0f, NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_strong_focus"));
+
+		button_router_pattern_icon->select_variant(0);
+
+
+		registered_group_loot_version_configure->button_router_icon = button_router_pattern_icon;
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		
 	}
@@ -5300,6 +5497,7 @@ EWindowMain::EWindowMain()
 		{
 			EntityButtonVariantRouter*
 				variant_router_button = new EntityButtonVariantRouter();
+
 			whole_loot_simulator_group->pointer_to_target_loot_filter_version_button = variant_router_button;
 
 			variant_router_button->make_as_default_button_with_icon
@@ -5309,9 +5507,12 @@ EWindowMain::EWindowMain()
 				&EDataActionCollection::action_rotate_variant,
 				nullptr
 			);
+
+			variant_router_button->rotate_variant_mode = RotateVariantMode::OPEN_CHOOSE_WINDOW;
 			variant_router_button->add_default_description_by_key("description_which_what_loot_filter_version_must_be_used");
 
-			variant_router_button->custom_data_list.back()->clickable_area_list.back()->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+			//variant_router_button->custom_data_list.back()->clickable_area_list.back()->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+			variant_router_button->action_on_choose_variant_from_window.push_back(&EDataActionCollection::action_refresh_loot_simulator);
 
 			variant_router_button->layer_with_icon = variant_router_button->sprite_layer_list.back();
 			//
@@ -15902,7 +16103,7 @@ void EWindowMain::register_loot_filter_version_patterns()
 	//[3] variant_mode_default
 	//[4] variant_mode_very_focus
 
-	//[0]
+	//[0]	FULL IGNORE
 	active_pattern = &(LootFilterVersionPattern::registered_loot_filter_version_patterns[0]);
 		active_pattern->localised_name = ELocalisationText::get_localisation_by_key("variant_mode_full_ignore");
 		active_pattern->icon = NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_full_ignore");
@@ -15910,15 +16111,16 @@ void EWindowMain::register_loot_filter_version_patterns()
 		active_pattern->disable_sound				= true;
 		active_pattern->focus_multiplier			= 0.25f;
 
-	//[1]
+	//[1]	HIDE
 	active_pattern = &(LootFilterVersionPattern::registered_loot_filter_version_patterns[1]);
 		active_pattern->localised_name = ELocalisationText::get_localisation_by_key("variant_mode_hide");
 		active_pattern->icon = NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_hide");
 		active_pattern->disable_minimap_elements	= true;
 		active_pattern->disable_sound				= true;
 		active_pattern->focus_multiplier			= 0.25f;
+		active_pattern->show_hide_mode				= (int)(LootFilterVersionPattern::LootPatternParameterMode::FORCIBLY_DISABLE);
 
-	//[2]
+	//[2]	LOW FOCUS
 	active_pattern = &(LootFilterVersionPattern::registered_loot_filter_version_patterns[2]);
 		active_pattern->localised_name = ELocalisationText::get_localisation_by_key("variant_mode_ignore");
 		active_pattern->icon = NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_strong_ignore");
@@ -15926,7 +16128,7 @@ void EWindowMain::register_loot_filter_version_patterns()
 		active_pattern->disable_sound				= true;
 		active_pattern->focus_multiplier			= 0.65f;
 
-	//[3]
+	//[3]	DEFAULT
 	active_pattern = &(LootFilterVersionPattern::registered_loot_filter_version_patterns[3]);
 		active_pattern->localised_name = ELocalisationText::get_localisation_by_key("variant_mode_default");
 		active_pattern->icon = NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_default");
@@ -15935,7 +16137,7 @@ void EWindowMain::register_loot_filter_version_patterns()
 		active_pattern->disable_sound				= false;
 		active_pattern->focus_multiplier			= 1.00f;
 
-	//[4]
+	//[4]	HIGH FOCUS
 	active_pattern = &(LootFilterVersionPattern::registered_loot_filter_version_patterns[4]);
 		active_pattern->localised_name = ELocalisationText::get_localisation_by_key("variant_mode_very_focus");
 		active_pattern->icon = NS_EGraphicCore::load_from_textures_folder("loot_versions/loot_version_strong_focus");
@@ -27757,7 +27959,14 @@ void EButtonGroupLootSimulator::refresh_button_sizes()
 
 		if (loot_item->matched_size_block != nullptr)
 		{
-			if
+			int
+			selected_pattern_variant
+			=
+			loot_item->matched_size_block->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant;
+
+			size_multiplier *= LootFilterVersionPattern::registered_loot_filter_version_patterns[selected_pattern_variant].focus_multiplier;
+			
+			/*if
 				(
 					(loot_item->matched_size_block->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant == 1)
 					||
@@ -27767,10 +27976,10 @@ void EButtonGroupLootSimulator::refresh_button_sizes()
 				size_multiplier *= 0.6f;
 			}
 			else
-				if (loot_item->matched_size_block->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant == 4)
-				{
-					size_multiplier *= 1.5f;
-				}
+			if (loot_item->matched_size_block->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant == 4)
+			{
+				size_multiplier *= 1.5f;
+			}*/
 		}
 
 		float additional_left_space = 0.0f;
@@ -27869,7 +28078,19 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 	bool is_matched = true;
 
 	//for (EGameItemAttributeContainer attribute_container : _game_item->attribute_container_list)
-	if (_filter_block->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant == 0) { return false; }
+	int
+	version_select			= _filter_block->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant;
+	
+	LootFilterVersionPattern::PatternStruct*
+	target_version_pattern	= &(LootFilterVersionPattern::registered_loot_filter_version_patterns[version_select]);
+		
+	//if (version_select == 0) { return false; }
+	//if (LootFilterVersionPattern::registered_loot_filter_version_patterns[version_select].full_ignore_mode) { return false; }
+
+
+	//full ignored blocks cannot be matched
+	if (target_version_pattern->full_ignore_mode) { return false; }
+
 
 
 	{
@@ -28545,35 +28766,66 @@ void EButtonGroupLootSimulator::button_group_update(float _d)
 		//if (show_hidden) { show_hidden_cooldown += 0.75f; }
 		//else { show_hidden_cooldown += 0.25f; }
 
+		int
+		version_selected = 0;
+
+		bool
+		loot_is_visible = true;
+
+		LootFilterVersionPattern::PatternStruct*
+		target_version_pattern = nullptr;
+
 		for (EntityButton* button : pointer_to_loot_buttons_segment->workspace_button_list)
 		{
 			EntityButtonLootItem*
-			loot_button = static_cast<EntityButtonLootItem*>(button);
+			loot_button				= static_cast<EntityButtonLootItem*>(button);
 
+			version_selected		= loot_button->matched_show_hide_block->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant;
+			target_version_pattern	= &(LootFilterVersionPattern::registered_loot_filter_version_patterns[version_selected]);
+			
+			if (loot_button->matched_show_hide_block != nullptr)
+			{
+				loot_is_visible =
+				(
+					//full ignored
+					(!target_version_pattern->full_ignore_mode)
+					&&
+					//if forcibly enabled, loot always not hiden
+					(
+						(target_version_pattern->show_hide_mode == (int)(LootFilterVersionPattern::LootPatternParameterMode::FORCIBLY_ENABLE))
+						||
+						(
+							//block selected as show
+							(loot_button->matched_show_hide_block->button_show_hide->selected_variant == 1)//selected show variant on filter block
+							&&
+							//filter pattern NOT [forcibly hidden]
+							(target_version_pattern->show_hide_mode != (int)(LootFilterVersionPattern::LootPatternParameterMode::FORCIBLY_DISABLE))
+						)
+					)
+				);
+			}
+			else
+			{
+				loot_is_visible = false;
+			}
+
+			//loot_is_visible = true;
+
+			//loot show or hide?
 			button->entity_disabled =
 			!(
-				(loot_button->matched_show_hide_block != nullptr)
-				&&
-				(
-					(loot_button->matched_show_hide_block->button_show_hide->selected_variant == 1)
-					&&
-					(loot_button->matched_show_hide_block->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant != 1)
-				)
+				(loot_is_visible)//filter block set up show, or version pattern always show
 				||
-				(show_hidden)
+				(show_hidden)//alt button pressed
 				||
-				(loot_button->stored_game_item->warn_when_hidden)
+				(loot_button->stored_game_item->warn_when_hidden)//item always show
 			);
 
+
+			//WARN WHEN HIDDEN
 			if
 			(
-				(loot_button->matched_show_hide_block != nullptr)
-				&&
-				(
-					(loot_button->matched_show_hide_block->button_show_hide->selected_variant == 0)
-					||
-					(loot_button->matched_show_hide_block->version_routers[EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant]->selected_variant <= 1)
-				)
+				(!loot_is_visible)//loot hidden
 				&&
 				(loot_button->stored_game_item->warn_when_hidden)
 				&&

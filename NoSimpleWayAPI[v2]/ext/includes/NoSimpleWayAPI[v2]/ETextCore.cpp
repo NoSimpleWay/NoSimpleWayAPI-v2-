@@ -558,9 +558,12 @@ void ETextArea::generate_text()
 		y_adding += (font->base * row.size() - 0.0f) * offset_by_text_size_y * font_scale;
 
 		y_adding += border_offset_bottom;
-		y_adding += font->base * font_scale * (row.size() - 1);
+		y_adding += font->base * font_scale * float(row.size() - 1);
 		
-		y_adding = round(y_adding);
+		if ((font_scale >= 0.99f) && (font_scale <= 1.01f))
+		{
+			y_adding = round(y_adding);
+		}
 
 		//for (std::string* str : row)
 		//for (int i = row.size() - 1; i >= 0; i--)
@@ -594,7 +597,10 @@ void ETextArea::generate_text()
 			x_adding += offset_border[BorderSide::LEFT];
 			x_adding += border_offset_left;
 
-			x_adding = round(x_adding);
+			if ((font_scale >= 0.99f) && (font_scale <= 1.01f))
+			{
+				x_adding = round(x_adding);
+			}
 			//_adding = *region_gabarite->size_y * offset_by_gabarite_size_y + get_row_width(str) * offset_by_text_size_y;
 			//x_adding = 0.0f;
 
@@ -602,7 +608,14 @@ void ETextArea::generate_text()
 			float py = 0.5f / NS_EGraphicCore::default_texture_atlas->get_atlas_size_y();
 			
 			//background line
-			if (text_have_background)
+			if
+			(
+				(text_have_background)
+				&&
+				(*str != " ")
+				&&
+				(*str != "")
+			)
 			{
 				ERenderBatcher::if_have_space_for_data(sprite_layer->batcher, 1);
 				NS_EGraphicCore::set_active_color_custom_alpha(NS_EColorUtils::COLOR_BLACK, 0.9f);
@@ -1832,13 +1845,13 @@ void ETextArea::update_localisation()
 bool ETextArea::can_get_access_to_group_style()
 {
 	if
-		(
-			(parent_entity_for_text_area != nullptr)
-			&&
-			(parent_entity_for_text_area->parent_button_group != nullptr)
-			&&
-			(parent_entity_for_text_area->parent_button_group->selected_style != nullptr)
-			)
+	(
+		(parent_entity_for_text_area != nullptr)
+		&&
+		(parent_entity_for_text_area->parent_button_group != nullptr)
+		&&
+		(parent_entity_for_text_area->parent_button_group->selected_style != nullptr)
+	)
 	{
 		return true;
 	}

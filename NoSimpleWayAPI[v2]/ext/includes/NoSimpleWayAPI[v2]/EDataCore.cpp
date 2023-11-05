@@ -1303,6 +1303,8 @@ void EDataActionCollection::action_resize_to_full_window_only_x(EButtonGroup* _g
 void EDataActionCollection::action_draw_boolean_switcher(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	auto data_container = static_cast <EDataContainer_Button_BoolSwitcher*> (_custom_data->data_container);
+	bool highlight = *data_container->target_value;
+	if (data_container->reverse_mode) { highlight = !highlight; }
 
 
 		NS_EGraphicCore::set_active_color(1.0f, 1.0f, 1.0f, 1.0f);
@@ -1317,7 +1319,7 @@ void EDataActionCollection::action_draw_boolean_switcher(Entity* _entity, ECusto
 			((EntityButton*)_entity)->button_gabarite->size_y,
 			((EntityButton*)_entity)->button_gabarite->size_y,
 
-			(*data_container->target_value) ? (data_container->texture_gabarite_on) : (data_container->texture_gabarite_off)
+			(highlight) ? (data_container->texture_gabarite_on) : (data_container->texture_gabarite_off)
 		);
 
 
@@ -1667,6 +1669,11 @@ void EDataActionCollection::action_rotate_variant(Entity* _entity, ECustomData* 
 	if (button_variant_router->target_bool_value != nullptr)
 	{
 		*button_variant_router->target_bool_value = (bool)(button_variant_router->selected_variant);
+	}
+
+	if (button_variant_router->target_int_value != nullptr)
+	{
+		*button_variant_router->target_int_value = button_variant_router->selected_variant;
 	}
 }
 

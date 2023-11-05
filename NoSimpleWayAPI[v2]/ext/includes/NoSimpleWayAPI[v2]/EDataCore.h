@@ -556,6 +556,7 @@ public:
 	ETextureGabarite* texture_gabarite_off;
 
 	bool* target_value;
+	bool reverse_mode = false;
 };
 
 

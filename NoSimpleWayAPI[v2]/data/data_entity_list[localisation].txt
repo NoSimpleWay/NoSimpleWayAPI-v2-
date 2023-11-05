@@ -2005,3 +2005,60 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_continue_do_not_change"
+	[tag]"name EN"		[value]"Continue parameter:\nDo not change"
+	[tag]"name RU"		[value]"Параметр 'продолжить':\nНе менять"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_continue_forcibly_enable"
+	[tag]"name EN"		[value]"Continue parameter:\nForcibly  enable"
+	[tag]"name RU"		[value]"Параметр 'продолжить':\nНасильно включить"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_continue_forcibly_disable"
+	[tag]"name EN"		[value]"Continue parameter:\nForcibly  disable"
+	[tag]"name RU"		[value]"Параметр 'продолжить':\nНасильно выключить"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_show_hide_do_not_change"
+	[tag]"name EN"		[value]"Show/hide parameter:\nDo not change"
+	[tag]"name RU"		[value]"Параметр 'показать/скрыть':\nНе менять"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_show_hide_forcibly_enable"
+	[tag]"name EN"		[value]"Show/hide parameter:\nForcibly  enable"
+	[tag]"name RU"		[value]"Параметр 'показать/скрыть':\nНасильно включить"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"version_show_hide_forcibly_disable"
+	[tag]"name EN"		[value]"Show/hide parameter:\nForcibly  disable"
+	[tag]"name RU"		[value]"Параметр 'показать/скрыть':\nНасильно выключить"
+	
+	
+	
+	
+	
+	
+	
+	
+	
