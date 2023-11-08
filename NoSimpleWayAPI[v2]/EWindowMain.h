@@ -64,26 +64,30 @@ namespace LootFilterVersionPattern
 	{
 	public:
 		ELocalisationText			localised_name;
+		std::string					key_for_localisation;
 
-		float						focus_multiplier			= 1.0f;
-		
-		bool						pattern_is_active			= true;
-		bool						disable_sound				= false;
-		bool						disable_minimap_elements	= false;
-		bool						full_ignore_mode			= false;
+		float						focus_multiplier = 1.0f;
 
-		bool						is_default					= false;
+		bool						pattern_is_active = true;
+		bool						disable_sound = false;
+		bool						disable_minimap_elements = false;
+		bool						full_ignore_mode = false;
 
-		int	show_hide_mode			= (int)LootPatternParameterMode::DO_NOT_CHANGE;
-		int	continue_mode			= (int)LootPatternParameterMode::DO_NOT_CHANGE;
+		bool						is_default = false;
 
-		ETextureGabarite*			icon;
+		HSVRGBAColor				default_text_color;
+		HSVRGBAColor* color_pointer;
+
+		int	show_hide_mode = (int)LootPatternParameterMode::DO_NOT_CHANGE;
+		int	continue_mode = (int)LootPatternParameterMode::DO_NOT_CHANGE;
+
+		ETextureGabarite* icon;
 
 
 	};
 
 
-	static std::vector<PatternStruct> registered_loot_filter_version_patterns = std::vector<PatternStruct>(NSW_LOOT_DEFAULT_VERSION_PATTERN_MAX);
+	static std::vector<PatternStruct*> registered_loot_filter_version_patterns;
 }
 
 
@@ -201,15 +205,15 @@ public:
 class EntityButtonFilterRule : public EntityButton
 {
 public:
-	EFilterRule*								target_filter_rule;
-	EDataContainer_Group_DataEntitiesSearch*	target_data_container;
+	EFilterRule* target_filter_rule;
+	EDataContainer_Group_DataEntitiesSearch* target_data_container;
 
-	bool										is_folder			= false;
-	bool										is_expanded			= false;
-	bool										hidden_by_folder	= false;
+	bool										is_folder = false;
+	bool										is_expanded = false;
+	bool										hidden_by_folder = false;
 
-	std::string									folder_named_id		= "";
-	EntityButtonFilterRule*						parent_folder;
+	std::string									folder_named_id = "";
+	EntityButtonFilterRule* parent_folder;
 	std::vector< EntityButtonFilterRule*>		child_button_list;
 
 	bool entity_is_active() override;
@@ -231,8 +235,8 @@ public:
 class EntityButtonVariantRouterForFilterBlock : public EntityButtonVariantRouter
 {
 public:
-	EButtonGroupFilterBlock*	parent_filter_block;
-	GameItemAttribute*			used_filter_block_attribute;
+	EButtonGroupFilterBlock* parent_filter_block;
+	GameItemAttribute* used_filter_block_attribute;
 	~EntityButtonVariantRouterForFilterBlock();
 
 };
@@ -256,7 +260,7 @@ public:
 class EntityButtonVariantRouterLootFilterVerions : public EntityButtonVariantRouterForFilterBlock
 {
 public:
-	
+
 };
 
 class EntityButtonFilterBlockTab : public EntityButton
@@ -303,9 +307,9 @@ class EButtonGroupListedBlock;
 class EntityButtonAttributeTab : public EntityButton
 {
 public:
-	EButtonGroup*				target_listed_block;
-	EButtonGroupListedBlock*	target_whole_listed_block;
-	EButtonGroupFilterBlock*	parent_filter_block;
+	EButtonGroup* target_listed_block;
+	EButtonGroupListedBlock* target_whole_listed_block;
+	EButtonGroupFilterBlock* parent_filter_block;
 };
 
 
@@ -334,9 +338,9 @@ public:
 
 	EButtonGroupTopControlSection(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	
 
-	
+
+
 
 	//void draw_button_group() override;
 };
@@ -403,7 +407,7 @@ public:
 	EButtonGroup* pointer_to_control_group_mid_versions;
 	EButtonGroup* pointer_to_control_group_mid_show_hide_cosmetic;
 
-	
+
 
 	//color section
 	EntityButtonColorButton* pointer_to_color_button[3];
@@ -413,8 +417,8 @@ public:
 	HSVRGBAColor** pointer_to_HRA_color[3];
 
 	//font size
-	EntityButton*				text_size_button;
-	EntityButtonVariantRouter*	text_size_router_button;
+	EntityButton* text_size_button;
+	EntityButtonVariantRouter* text_size_router_button;
 	bool	text_size_bool = true;
 	float	text_size = 30.0f;
 
@@ -431,8 +435,8 @@ public:
 	EntityButton* user_sound_volume_button;
 	EntityButton* ingame_sound_volume_button;
 
-	float	user_sound_volume_value		= 1.0f;
-	float	ingame_sound_volume_value	= 1.0f;
+	float	user_sound_volume_value = 1.0f;
+	float	ingame_sound_volume_value = 1.0f;
 
 
 	EntityButtonVariantRouterForFilterBlock* pointer_to_positional_variant_button;
@@ -483,6 +487,7 @@ public:
 	bool is_base_filter_block = false;
 
 	void refresh_version_router_button();
+	void reselect_specific_variant_on_version_routers(int _target_variant);
 };
 
 
@@ -586,9 +591,9 @@ public:
 
 	float MF_factor = 1.0f;
 
-	bool	delayed_execution		= false;
-	bool	warning_sign_show_flag	= false;
-	float	warning_cooldown		= 1.0f;
+	bool	delayed_execution = false;
+	bool	warning_sign_show_flag = false;
+	float	warning_cooldown = 1.0f;
 	//void button_group_update(float _d) override;
 
 	static EButtonGroup* pointer_to_loot_buttons_segment;
@@ -706,7 +711,7 @@ class EButtonGroupSocketPreview : public EButtonGroup
 {
 public:
 	EButtonGroupSocketPreview(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
-	
+
 	ETextureGabarite* icon_texture{};
 	EGameItem* stored_game_item{};
 
@@ -717,7 +722,7 @@ class EButtonGroupListedBlock : public EButtonGroup
 {
 public:
 	EButtonGroupListedBlock(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
-	
+
 	EntityButtonForFilterBlock* pointer_to_undefined_attribute_field;
 
 	EButtonGroup* section_for_wide_item_buttons;
@@ -726,7 +731,7 @@ public:
 	EntityButtonVariantRouterForFilterBlock* matching_mode_router_button;
 
 	std::string				filter_attribute_name;
-	GameItemAttribute*		associated_item_attribute;
+	GameItemAttribute* associated_item_attribute;
 
 	//EntityButton*			button_with;
 	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
@@ -750,24 +755,29 @@ class EButtonGroupVersionControlConfigure : public EButtonGroup
 public:
 	EButtonGroupVersionControlConfigure(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
-	EntityButton*				pointer_to_version_name_button			[NSW_LOOT_FILTER_MAX_VERSIONS];
-	EntityButton*				pointer_to_version_name_button_switcher	[NSW_LOOT_FILTER_MAX_VERSIONS];
-
-	EButtonGroup*				part_with_pattern_list;
-	EButtonGroup*				part_with_pattern_configure;
-
-	EntityButton*				button_disable_minimap_elements;
-	EntityButton*				button_disable_sound;
-	EntityButton*				button_full_ignore;
-	EntityButton*				button_focus_slider;
-
-	EntityButton*				button_remove;
+	EntityButton* pointer_to_version_name_button[NSW_LOOT_FILTER_MAX_VERSIONS];
+	EntityButton* pointer_to_version_name_button_switcher[NSW_LOOT_FILTER_MAX_VERSIONS];
 
 
+	EButtonGroup* part_with_pattern_list;
+	EButtonGroup* part_with_pattern_configure;
 
-	EntityButtonVariantRouter*	button_router_icon;
-	EntityButtonVariantRouter*	button_router_continue;
-	EntityButtonVariantRouter*	button_router_show_hide;
+	EntityButton* button_disable_minimap_elements;
+	EntityButton* button_disable_sound;
+	EntityButton* button_full_ignore;
+	EntityButton* button_focus_slider;
+
+	EntityButton* button_new_pattern;
+
+	EntityButton* button_remove;
+	EntityButtonColorButton* button_text_color;
+
+
+	EntityButtonVariantRouter* button_router_icon;
+	EntityButtonVariantRouter* button_router_continue;
+	EntityButtonVariantRouter* button_router_show_hide;
+
+
 
 };
 
@@ -887,22 +897,27 @@ namespace EDataActionCollection
 	void action_open_confirm_decline_window_for_autogenerated_loot_filter(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_confirm_open_autogenerated_loot_filter(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_add_new_undefined_attribute			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_add_new_undefined_attribute(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_select_this_attribute_tag			(Entity* _entity, ECustomData* _custom_data, float _d);
-	void action_switch_loot_version_flag			(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_this_attribute_tag(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_switch_loot_version_flag(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
-	void action_select_loot_filter_version_pattern	(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_loot_filter_version_pattern(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_delete_selected_filter_version_pattern(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_create_new_loot_version_pattern(Entity* _entity, ECustomData* _custom_data, float _d);
+
 	//void action_select_loot_filter_pattern			(Entity* _entity, ECustomData* _custom_data, float _d);
-	
-	
+
+
 
 	//type text
 	void action_type_search_filter_block_text(ETextArea* _text_area);
 	void action_refresh_loot_simulator_when_type(ETextArea* _text_area);
 	void action_set_unsave_changes_flag(ETextArea* _text_area);
 	void action_change_version_names(ETextArea* _text_area);
+	void action_change_version_pattern_name(ETextArea* _text_area);
 
 
 
@@ -910,7 +925,7 @@ namespace EDataActionCollection
 	void action_multisave_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_save_lootfilter(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	
+
 	//void 
 
 	//close button grup
@@ -946,7 +961,7 @@ enum FilterAttributeValueType
 	FILTER_ATTRIBUTE_VALUE_TYPE_ENABLE_DROP_SOUND_IF_ALERT,
 	FILTER_ATTRIBUTE_VALUE_TYPE_RAY,
 	FILTER_ATTRIBUTE_VALUE_TYPE_CONTINUE,
-	
+
 
 	FILTER_ATTRIBUTE_VALUE_CONFIG_VERSIONS,
 	FILTER_ATTRIBUTE_VALUE_CONFIG_COLOR_COLLECTION,
@@ -986,9 +1001,9 @@ public:
 	ELocalisationText			localisation;
 	FilterAttributeType			filter_attribute_type;
 	FilterAttributeValueType	filter_attribute_value_type;
-	EFilterRule*				filter_rule;
+	EFilterRule* filter_rule;
 
-	ETextureGabarite*			icon;
+	ETextureGabarite* icon;
 
 	bool have_operator = false;
 	bool have_input_field_for_listed = false;
@@ -997,8 +1012,8 @@ public:
 	int							attribute_tab_priority = 0;
 
 	std::string					data_entity_tag_filtration;
-	std::string					header_localistaion_key			= "";
-	std::string					description_localisation_key	= "";
+	std::string					header_localistaion_key = "";
+	std::string					description_localisation_key = "";
 
 	bool						always_present;
 	float						button_x_size_override = 0.0f;
@@ -1064,8 +1079,14 @@ public:
 
 	//ECluster* cluster_array[CLUSTER_DIM_X][CLUSTER_DIM_Y];
 
+	void register_loot_version_names();
+
 	EWindowMain();
+
 	void load_config_from_disc();
+	void load_config_from_disc_for_filter_version();
+	void load_config_from_disc_for_filter_version_patterns();
+
 	void preload_textures();
 	void register_rarities();
 	void register_alternate_qualities();
@@ -1078,29 +1099,29 @@ public:
 	static EWindowMain* link_to_main_window;
 
 	//registered button groups
-	static EButtonGroup*											select_rarity_button_group;
-	static EButtonGroup*											select_quality_button_group;
-	static EButtonGroupFilterBlockEditor*							loot_filter_editor;
-	static EButtonGroup*											world_parameters;
-	static EButtonGroup*											tab_list_group;
-	static EButtonGroupNewLootFilter*								create_new_loot_filter_group;
-	static EButtonGroupDataEntity*									data_entity_filter;
-	static EButtonGroupBottomFilterBlockControl*					bottom_filter_block_control;
-	static EButtonGroupLootSimulator*								loot_simulator_button_group;
-	static EButtonGroupFilterEditorTopHeader*						header_line;
-	static EButtonGroupLootFilterList*								existing_loot_filter_list;
+	static EButtonGroup* select_rarity_button_group;
+	static EButtonGroup* select_quality_button_group;
+	static EButtonGroupFilterBlockEditor* loot_filter_editor;
+	static EButtonGroup* world_parameters;
+	static EButtonGroup* tab_list_group;
+	static EButtonGroupNewLootFilter* create_new_loot_filter_group;
+	static EButtonGroupDataEntity* data_entity_filter;
+	static EButtonGroupBottomFilterBlockControl* bottom_filter_block_control;
+	static EButtonGroupLootSimulator* loot_simulator_button_group;
+	static EButtonGroupFilterEditorTopHeader* header_line;
+	static EButtonGroupLootFilterList* existing_loot_filter_list;
 
-	static EButtonGroupConfirmActionOpenAutogeneratedLootFilter*	confirm_load_autogenerated_block;
-	static EButtonGroupConfirmActionDelete*							confirm_deletion_group;
+	static EButtonGroupConfirmActionOpenAutogeneratedLootFilter* confirm_load_autogenerated_block;
+	static EButtonGroupConfirmActionDelete* confirm_deletion_group;
 
-	static EButtonGroup*											info_button_group;
-	static EButtonGroup*											style_list_group;
-	static EButtonGroup*											pointer_to_joke_AD;
-	static EButtonGroup*											pointer_to_battlepass;
-	static EButtonGroupFastMessage*									background_loading_info;
-	static EButtonGroupLootFilterErrors*							registered_group_filter_error_list;
+	static EButtonGroup* info_button_group;
+	static EButtonGroup* style_list_group;
+	static EButtonGroup* pointer_to_joke_AD;
+	static EButtonGroup* pointer_to_battlepass;
+	static EButtonGroupFastMessage* background_loading_info;
+	static EButtonGroupLootFilterErrors* registered_group_filter_error_list;
 
-	static EButtonGroupVersionControlConfigure*						registered_group_loot_version_configure;
+	static EButtonGroupVersionControlConfigure* registered_group_loot_version_configure;
 
 
 	static std::string username;
@@ -1112,7 +1133,10 @@ public:
 	static void										load_ingame_sound_list();
 
 	static bool										text_is_condition(std::string& buffer_text);
+
 	static bool										first_time_open;
+	static bool										have_no_loot_version_config;
+	static bool										have_no_loot_version_pattern_config;
 
 	static void										open_loot_filter(std::string _full_path, LootFilterOpenMode _loot_filter_mode);
 
@@ -1120,7 +1144,7 @@ public:
 
 
 
-	static EntityButtonVariantRouterForFilterBlock*	create_show_hide_button();
+	static EntityButtonVariantRouterForFilterBlock* create_show_hide_button();
 
 
 
@@ -1158,16 +1182,16 @@ public:
 	//BOSS LOOT FOLDER
 	static void register_new_folder_boss_loot();
 	////////////////////////////////////////////////////////////////////////
-	
-	
-	
+
+
+
 	//DIVINATIONS FOLDER
 	static void register_pattern_folder_divinations();
-		static void register_pattern_divinations_expensive();
-		static void register_pattern_divinations_rare();
-		static void register_pattern_divinations_moderate();
-		static void register_pattern_divinations_cheap();
-		static void register_pattern_divinations_trash();
+	static void register_pattern_divinations_expensive();
+	static void register_pattern_divinations_rare();
+	static void register_pattern_divinations_moderate();
+	static void register_pattern_divinations_cheap();
+	static void register_pattern_divinations_trash();
 	////////////////////////////////////////////////////////////////////////
 
 
@@ -1185,13 +1209,13 @@ public:
 
 	//MAPS FOLDER
 	static void register_new_folder_map_items();
-		static void register_pattern_scouting_report();
-		static void register_pattern_set_fragment();
-		static void register_pattern_reliquary_keys();
-		static void register_pattern_scarabs();
-		static void register_pattern_all_map_fragments();
-		static void register_pattern_map_splinters();
-		static void register_pattern_maps();
+	static void register_pattern_scouting_report();
+	static void register_pattern_set_fragment();
+	static void register_pattern_reliquary_keys();
+	static void register_pattern_scarabs();
+	static void register_pattern_all_map_fragments();
+	static void register_pattern_map_splinters();
+	static void register_pattern_maps();
 	////////////////////////////////////////////////////////////////////////
 
 
@@ -1211,28 +1235,28 @@ public:
 	//UNIQUES FOLDER
 	static void register_new_folder_uniques();
 	////////////////////////////////////////////////////////////////////////
-	
+
 
 
 	//HEIST FOLDER
 	static void register_new_folder_heist_items();
 	////////////////////////////////////////////////////////////////////////
-	
-	
-	
+
+
+
 	//EQUIP FOLDER
 	static void register_new_folder_equip();
 	static void register_pattern_gloves_helmets_boots_body_jewelry();
 	static void register_pattern_runic_base();
 	////////////////////////////////////////////////////////////////////////
-	
+
 
 
 	static void register_pattern_all_equip();
 	//static void register_pattern_all_equip();
 	static void register_pattern_top_tier_bases();
 	////////////////////////////////////////////////////////////////////////
-	
+
 
 
 	//DELIRIUM ORBS FOLDER
@@ -1252,46 +1276,46 @@ public:
 	//CURRENCY SHARDS FOLDER
 	static void register_new_folder_currency_shards();
 	////////////////////////////////////////////////////////////////////////
-	
-	
-	
+
+
+
 	//OILS FOLDER
 	static void register_new_folder_oils();
 	////////////////////////////////////////////////////////////////////////
-	
-	
-	
+
+
+
 	//UNUSUAL CURRENCY FOLDER
 	static void register_new_folder_unusual_currency();
-		static void register_pattern_harvest_items();
-		static void register_pattern_expedition_currency();
-		static void register_pattern_eldritch_currency();
-		static void register_pattern_delirium_orbs();
-		static void register_pattern_oils_and_catalysts();
-		static void register_pattern_essences();
-		static void register_pattern_incubators();
-		static void register_pattern_currencies_shard();
-		static void register_pattern_tainted_currencies();
-		static void register_embers_and_ichors();
-		static void register_pattern_guardian_orbs();
+	static void register_pattern_harvest_items();
+	static void register_pattern_expedition_currency();
+	static void register_pattern_eldritch_currency();
+	static void register_pattern_delirium_orbs();
+	static void register_pattern_oils_and_catalysts();
+	static void register_pattern_essences();
+	static void register_pattern_incubators();
+	static void register_pattern_currencies_shard();
+	static void register_pattern_tainted_currencies();
+	static void register_embers_and_ichors();
+	static void register_pattern_guardian_orbs();
 	////////////////////////////////////////////////////////////////////////
-	
+
 
 
 	//BASIC CURRENCY FOLDER
 	static void register_new_folder_basic_currency();
-		static void register_pattern_rare_currencies();
-		static void register_pattern_good_currencies();
-		static void register_pattern_cheap_currencies();
-		static void register_pattern_trash_currencies();
+	static void register_pattern_rare_currencies();
+	static void register_pattern_good_currencies();
+	static void register_pattern_cheap_currencies();
+	static void register_pattern_trash_currencies();
 	////////////////////////////////////////////////////////////////////////
 
 
 
 	//FAST CHECK
 	static void register_fast_check_folder();
-		static void register_valuable_items();
-		static void register_trash_items();
+	static void register_valuable_items();
+	static void register_trash_items();
 	////////////////////////////////////////////////////////////////////////
 	//unused
 	static void register_pattern_basic_currencies();
@@ -1305,44 +1329,46 @@ public:
 
 	//CRUCIBLE FOLDER
 	static void register_new_folder_crucible_items();
-		static void register_crubible_deleted_items();
-		static void register_crubible_changed_items();
+	static void register_crubible_deleted_items();
+	static void register_crubible_changed_items();
 
-		static void register_crubible_deleted_attributes();
+	static void register_crubible_deleted_attributes();
 
-		static void register_crubible_items_with_passive_tree();
-		static void register_crubible_currency();
-		static void register_crubible_divinations();
+	static void register_crubible_items_with_passive_tree();
+	static void register_crubible_currency();
+	static void register_crubible_divinations();
 	////////////////////////////////////////////////////////////////////////
 
 
 
 
 	//ANCESTOR TRIAL FOLDER
-		static void register_new_folder_ancestors_items();
+	static void register_new_folder_ancestors_items();
 
-		static void register_ancestors_deleted_items();
-		static void register_ancestors_changed_items();
-		static void register_ancestors_divinations();
+	static void register_ancestors_deleted_items();
+	static void register_ancestors_changed_items();
+	static void register_ancestors_divinations();
 
-		static void register_ancestors_small_tattoo();
-		static void register_ancestors_honoured_tattoo();
-		static void register_ancestors_loyalty_tattoo();
+	static void register_ancestors_small_tattoo();
+	static void register_ancestors_honoured_tattoo();
+	static void register_ancestors_loyalty_tattoo();
 
-		static void register_ancestors_currency();
+	static void register_ancestors_currency();
 
-		static void register_ancestors_sanctum_items();
+	static void register_ancestors_sanctum_items();
 
-		static void register_ancestors_omens();
+	static void register_ancestors_omens();
 
-		////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////
 
-		
+
 	static void set_color_version(HSVRGBAColor* _target_color, int _selected_mode);
 	static void make_unsaved_loot_filter_changes();
 	static void remove_unsave_changes_flag_from_tab();
 
 	static void save_config_file();
+	static void save_config_file_for_loot_versions();
+	static void save_config_file_for_loot_version_patterns();
 
 	void action_on_close() override;
 };
@@ -1484,16 +1510,16 @@ class LootSimulatorPattern;
 class EntityButtonLootPatternSelector : public EntityButton
 {
 public:
-	LootSimulatorPattern*				target_pattern;
+	LootSimulatorPattern* target_pattern;
 
 	bool								is_folder;
 	bool								hidden_by_folder;
 	bool								folder_is_expanded = false;
 
 	LootPatternFolderEnum				folder_enum;
-	EntityButtonLootPatternSelector*	parent_folder_button;
-	
-	EButtonGroup*						target_loot_pattern_button_group;
+	EntityButtonLootPatternSelector* parent_folder_button;
+
+	EButtonGroup* target_loot_pattern_button_group;
 
 	bool entity_is_active() override;
 };
@@ -1714,7 +1740,7 @@ class LootSimulatorPattern
 {
 public:
 	ELocalisationText							localised_name;
-	ETextureGabarite*							icon;
+	ETextureGabarite* icon;
 	LootPatternFolderEnum						folder_enum;
 
 	LootSimulatorPattern();
@@ -1726,9 +1752,9 @@ public:
 
 	bool										additional_force_field_for_buttons = false;
 	//static void								refresh_loot_simulator();
-	bool										always_show			= false;
-	bool										is_folder			= false;
-	bool										have_force_field	= false;
+	bool										always_show = false;
+	bool										is_folder = false;
+	bool										have_force_field = false;
 
 
 };

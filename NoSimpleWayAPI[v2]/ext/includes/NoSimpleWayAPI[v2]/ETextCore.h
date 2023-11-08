@@ -315,6 +315,8 @@ public:
 	void set_color(HSVRGBAColor* _color);
 	void set_color(float _r, float _g, float _b, float _a);
 
+	void set_align_to_left_middle();
+
 	float type_cooldown = 0.0f;
 };
 

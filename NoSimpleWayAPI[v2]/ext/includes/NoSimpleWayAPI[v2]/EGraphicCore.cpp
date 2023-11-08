@@ -2860,6 +2860,8 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 	int
 	index = EStringUtils::get_id_by_hash(_full_path);
 
+
+
 	for (ETextureGabarite* g : NS_EGraphicCore::texture_gabarites_list[index])
 	{
 		if (g->get_full_path() == _full_path)
@@ -2972,6 +2974,11 @@ ETextureGabarite* NS_EGraphicCore::put_texture_to_atlas(std::string _full_path, 
 
 	//glActiveTexture(GL_TEXTURE0);
 	//glBindTexture(GL_TEXTURE_2D, NS_EGraphicCore::default_texture_atlas->get_colorbuffer());
+
+	if (_full_path == "data/textures/loot_version_strong_ignore.png")
+	{
+		duplicate_gabarite = duplicate_gabarite;
+	}
 
 	NS_EGraphicCore::current_zoom = stored_zoom;
 	return new_gabarite;

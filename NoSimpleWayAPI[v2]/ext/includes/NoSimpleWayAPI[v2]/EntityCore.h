@@ -517,10 +517,21 @@ public:
 
 
 
-	void select_variant(int _variant_id);
-	void select_variant_by_base_name(std::string& _base_name);
-	int search_id_by_base_name(std::string& _base_name);
-	int search_id_by_base_name_window_variant(std::string& _base_name);
+	void	select_variant(int _variant_id);
+	
+	void	select_variant_by_icon(ETextureGabarite* _icon);
+
+	void	select_variant_by_base_name(std::string& _base_name);
+	int		search_id_by_base_name(std::string& _base_name);
+
+	void	select_variant_by_base_name_from_window_buttons(std::string& _base_name);
+	int		search_id_by_base_name_window_variant(std::string& _base_name);
+
+
+	void reselect_variant();
+
+	
+	
 
 	std::string	return_base_text_from_selected_router();
 
@@ -612,10 +623,14 @@ public:
 class EntityButtonColorButton : public EntityButton
 {
 public:
-	HSVRGBAColor* stored_color;
-	ColorButtonMode			selected_mode = ColorButtonMode::CBM_OPEN_WINDOW;
+	HSVRGBAColor*				stored_color;
+	ColorButtonMode				selected_mode = ColorButtonMode::CBM_OPEN_WINDOW;
+
+	HRA_color_collection*		parent_color_collection;
+
+	std::vector<EntityButton*>	list_of_forcibly_redrawing_buttons;
+
 	~EntityButtonColorButton();
-	HRA_color_collection* parent_color_collection;
 };
 
 

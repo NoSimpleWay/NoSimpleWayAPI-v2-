@@ -681,9 +681,9 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 	{
 		
 
-		EntityButtonColorButton*			clicked_button	= static_cast<EntityButtonColorButton*>(_entity);
-		EDataContainer_Group_ColorEditor*	group_data		= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
-		EntityButtonColorButton*			target_button	= group_data->target_color_button;
+		EntityButtonColorButton*			clicked_button			= static_cast<EntityButtonColorButton*>(_entity);
+		EDataContainer_Group_ColorEditor*	group_data				= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
+		EntityButtonColorButton*			target_button_for_group	= group_data->target_color_button;
 
 		//clicked_button->parent_button_group->selected_button = clicked_button;
 		clicked_button->parent_button_group->select_this_button(clicked_button);
@@ -691,8 +691,6 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 		//set target button to button group
 		if (clicked_button->selected_mode == ColorButtonMode::CBM_OPEN_WINDOW)
 		{
-			EButtonGroup::color_editor_group->activate_move_to_foreground_and_center();
-
 			group_data->pointer_to_color_collection_sector->selected_button = nullptr;
 			group_data->target_color_button = clicked_button;
 
@@ -711,8 +709,10 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 			//	EInputCore::logger_simple_error("pointer to color group is null!");
 			//}
 
-			target_button = group_data->target_color_button;
-			group_data->work_color = target_button->stored_color;
+			target_button_for_group = group_data->target_color_button;
+			group_data->work_color = target_button_for_group->stored_color;
+
+			EButtonGroup::color_editor_group->activate_move_to_foreground_and_center();
 		}
 
 		//color data container from target button
@@ -724,7 +724,7 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 
 
 		//set new color to master_button
-		if ((clicked_button->selected_mode == ColorButtonMode::CBM_SELECT_COLOR) && (target_button->stored_color != nullptr))
+		if ((clicked_button->selected_mode == ColorButtonMode::CBM_SELECT_COLOR) && (target_button_for_group->stored_color != nullptr))
 		{
 			if
 			(
@@ -738,24 +738,24 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 			)
 			{
 				//if color not from collection, remove personal color
-				if (!target_button->stored_color->is_from_collection)
+				if (!target_button_for_group->stored_color->is_from_collection)
 				{
-					target_button->stored_color->is_from_collection = true;
-					if (!disable_deleting) { delete target_button->stored_color; }
+					target_button_for_group->stored_color->is_from_collection = true;
+					if (!disable_deleting) { delete target_button_for_group->stored_color; }
 				}
 
 				//pointer to this color already exist in color collection pointers list?
 				bool pointer_to_color_already_exist = false;
 				for (HSVRGBAColor* HRA_color : clicked_button->parent_color_collection->pointers_to_this_collection)
 				{
-					if (HRA_color == target_button->stored_color) { pointer_to_color_already_exist = true; break; }
+					if (HRA_color == target_button_for_group->stored_color) { pointer_to_color_already_exist = true; break; }
 				}
 
 				//add this color to pointer list
 				if (!pointer_to_color_already_exist)
-				{ clicked_button->parent_color_collection->pointers_to_this_collection.push_back(target_button->stored_color); }
+				{ clicked_button->parent_color_collection->pointers_to_this_collection.push_back(target_button_for_group->stored_color); }
 
-				target_button->stored_color = clicked_button->stored_color;
+				target_button_for_group->stored_color = clicked_button->stored_color;
 
 				group_data->pointer_to_color_collection_sector->selected_button = static_cast<EntityButton*>(_entity);
 				group_data->work_color = clicked_button->stored_color;
@@ -763,20 +763,20 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 			else
 			{
 				//if color from collection, create personal color
-				if (target_button != nullptr)
+				if (target_button_for_group != nullptr)
 				{
-					if (target_button->stored_color->is_from_collection)
+					if (target_button_for_group->stored_color->is_from_collection)
 					{
-						target_button->stored_color = new HSVRGBAColor();
-						target_button->stored_color->is_from_collection = false;
+						target_button_for_group->stored_color = new HSVRGBAColor();
+						target_button_for_group->stored_color->is_from_collection = false;
 					}
 
-					target_button->stored_color->set_color(clicked_button->stored_color);
+					target_button_for_group->stored_color->set_color(clicked_button->stored_color);
 					//button_data->stored_color->set_color(button_data->stored_color);
 
 					group_data->pointer_to_color_collection_sector->selected_button = nullptr;
 
-					group_data->work_color = target_button->stored_color;
+					group_data->work_color = target_button_for_group->stored_color;
 				}
 			}
 		}
@@ -1247,6 +1247,24 @@ void EDataActionCollection::action_convert_HSV_to_RGB(EButtonGroup* _group)
 {
 	//EInputCore::logger_simple_info("?");
 	Helper::hsv2rgb(static_cast<EDataContainer_Group_ColorEditor*>(_group->data_container)->work_color);
+}
+
+void EDataActionCollection::action_forcibly_redraw_specific_buttons(EButtonGroup* _group)
+{
+	EDataContainer_Group_ColorEditor*
+	data = static_cast<EDataContainer_Group_ColorEditor*>(_group->data_container);
+
+	if (data->target_color_button != nullptr)
+	{
+		EntityButtonColorButton*
+		color_button = static_cast<EntityButtonColorButton*>(data->target_color_button);
+
+
+		for (EntityButton* but : color_button->list_of_forcibly_redrawing_buttons)
+		{
+			but->have_phantom_draw = true;
+		}
+	}
 }
 
 void EDataActionCollection::action_set_new_color_to_button(EButtonGroup* _group)

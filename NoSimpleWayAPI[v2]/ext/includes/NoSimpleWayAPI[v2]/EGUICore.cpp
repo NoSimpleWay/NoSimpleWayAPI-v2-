@@ -133,8 +133,7 @@ void EWindow::GUI_update_default(float _d)
 					(!EButtonGroup::parent_vector_moving_group->group_list[i]->is_blocked_by_superfocus())
 					&&
 					(EButtonGroup::catched_by_mouse(EButtonGroup::parent_vector_moving_group->group_list[i]))
-
-					)
+				)
 			{
 				catched_group = EButtonGroup::parent_vector_moving_group->group_list[i];
 			}
@@ -825,11 +824,11 @@ void EButtonGroup::button_group_update(float _d)
 	//invisible elements become visible
 
 	if
-		(
-			(EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
-			&&
-			(EButtonGroup::focused_button_group_mouse_unpressed == this)
-			)
+	(
+		(EInputCore::key_pressed(GLFW_KEY_LEFT_ALT))
+		&&
+		(EButtonGroup::focused_button_group_mouse_unpressed == this)
+	)
 	{
 		float dir = 0.0f;
 
@@ -1047,15 +1046,21 @@ void EButtonGroup::button_group_update(float _d)
 
 				//update
 				if
+				(
 					(
-						(
-							(!group_is_suppressed)
-							||
-							(but == slider)
-							)
-						&&
-						(!is_blocked_by_superfocus())
-						)
+						(!group_is_suppressed)
+						||
+						(but == slider)
+					)
+					&&
+					(!is_blocked_by_superfocus())
+					&&
+					(
+						(but->suppressor == nullptr)
+						||
+						(*but->suppressor ^ but->invert_suppression)
+					)
+				)
 				{
 					but->update(_d);
 				}
@@ -4566,15 +4571,19 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 	main_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
 	main_group->actions_on_draw.push_back(&EDataActionCollection::action_draw_color_rectangle_for_group);
+
 	main_group->actions_on_update.push_back(&EDataActionCollection::action_convert_HSV_to_RGB);
+	main_group->actions_on_update.push_back(&EDataActionCollection::action_forcibly_redraw_specific_buttons);
 
 
 	EButtonGroup*
-		workspace_group = main_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), _style);
+	workspace_group = main_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), _style);
 	workspace_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 	main_group->add_caption_by_localistation_key("window_header_color_editor");
 
-	EDataContainer_Group_ColorEditor* data = new EDataContainer_Group_ColorEditor();
+	EDataContainer_Group_ColorEditor*
+	data = new EDataContainer_Group_ColorEditor();
+
 	data->work_color = HRA_color;
 	//
 	//data->pointer_to_H		= new float(1.0f);

@@ -1452,7 +1452,8 @@ void ETextArea::set_region(ETextArea* _text_area, ERegionGabarite* _region_gabar
 
 ETextArea* ETextArea::create_base_text_area(EClickableArea* _region_gabarite, EFont* _font, ELocalisationText _ltext)
 {
-	ETextArea* jc_text_area = new ETextArea(_region_gabarite, _font, _ltext.localisations[ELocalisationText::active_localisation]);
+	ETextArea*
+	jc_text_area = new ETextArea(_region_gabarite, _font, _ltext.localisations[ELocalisationText::active_localisation]);
 	jc_text_area->localisation_text = _ltext;
 
 
@@ -1898,6 +1899,16 @@ void ETextArea::set_color(float _r, float _g, float _b, float _a)
 {
 	stored_color.set_color_RGBA(_r, _g, _b, _a);
 	color.set_color_RGBA(_r, _g, _b, _a);
+}
+
+void ETextArea::set_align_to_left_middle()
+{
+	offset_by_gabarite_size_x = 0.0f;
+	offset_by_gabarite_size_y = 0.5f;
+
+	offset_by_text_size_x = 0.0f;
+	offset_by_text_size_y = -0.5f;
+
 }
 
 EFontGlyph::EFontGlyph(char _sym, float _pos_x, float _pos_y, float _size_x, float _size_y)

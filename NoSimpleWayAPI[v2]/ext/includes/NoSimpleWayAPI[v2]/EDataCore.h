@@ -644,6 +644,7 @@ namespace EDataActionCollection
 
 	//update
 	void action_convert_HSV_to_RGB(EButtonGroup* _group);
+	void action_forcibly_redraw_specific_buttons(EButtonGroup* _group);
 
 	//select
 	void action_set_new_color_to_button(EButtonGroup* _group);
