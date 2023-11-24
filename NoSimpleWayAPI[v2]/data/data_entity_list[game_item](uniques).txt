@@ -207,8 +207,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"boss drop"
+	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Breach loot"
+	[tag]"item tag"		[value]"Loot source: Tul"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -547,8 +548,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"boss drop"
+	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Breach loot"
+	[tag]"item tag"		[value]"Loot source: Xoph"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -1347,6 +1349,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Uul-Netol"
+	[tag]"item tag"		[value]"Loot source: Uber Breach"
 	
 	[tag]"worth"		[value]"Very expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -1589,7 +1594,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"boss drop"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Elder"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -1770,7 +1776,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"boss drop"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Maven"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1789,7 +1796,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"boss drop"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Maven"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -1808,7 +1816,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"boss drop"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Maven"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -2337,7 +2346,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"boss drop"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Sirus"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -2562,7 +2572,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Elder drop"
+	[tag]"item tag"		[value]"Loot source: Uber Elder"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
@@ -2584,7 +2594,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Delve architect drop"
+	[tag]"item tag"		[value]"Loot source: Delve Architect"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
@@ -2605,7 +2615,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Delve lich drop"
+	[tag]"item tag"		[value]"Loot source: Delve Lich"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
@@ -2626,7 +2636,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Delve aul drop"
+	[tag]"item tag"		[value]"Loot source: Delve Aul"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
@@ -2829,7 +2839,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Delve architect drop"
+	[tag]"item tag"		[value]"Loot source: Delve Architect"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Good for start"
@@ -2851,7 +2861,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Delve lich drop"
+	[tag]"item tag"		[value]"Loot source: Delve Lich"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Good for start"
@@ -2873,7 +2883,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Delve aul drop"
+	[tag]"item tag"		[value]"Loot source: Delve Aul"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Good for start"
@@ -3110,7 +3120,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Eater drop"
+	[tag]"item tag"		[value]"Loot source: Uber Eater"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Good for start"
@@ -3153,7 +3163,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Delve architect drop"
+	[tag]"item tag"		[value]"Loot source: Delve Architect"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
@@ -3174,7 +3184,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Delve aul drop"
+	[tag]"item tag"		[value]"Loot source: Delve Aul"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
@@ -3196,7 +3206,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Delve lich drop"
+	[tag]"item tag"		[value]"Loot source: Delve Lich"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
@@ -3365,7 +3375,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Atziri drop"
-	[tag]"item tag"		[value]"Uber Atziri drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
@@ -3930,6 +3940,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Uber Elder"
 	
 	[tag]"worth"		[value]"Moderate"
 		
@@ -3947,7 +3958,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Small exarch drop"
+	[tag]"item tag"		[value]"Loot source: Small Exarch"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
@@ -4105,6 +4116,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Uber Elder"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -4407,8 +4419,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"boss drop"
+	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Breach loot"
+	[tag]"item tag"		[value]"Loot source: Xoph"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -4704,6 +4717,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Breach drop"
+	[tag]"item tag"		[value]"Loot source: Esh"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -6197,7 +6211,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Cortex drop"
+	[tag]"item tag"		[value]"Loot source: Cortex"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -6243,7 +6257,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Atziri drop"
+	[tag]"item tag"		[value]"Loot source: Atziri"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -6263,7 +6277,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Ultimatum drop"
+	[tag]"item tag"		[value]"Loot source: Ultimatum"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -6337,6 +6351,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Delve drop"
+	[tag]"item tag"		[value]"Loot source: Delve Architect"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -6387,7 +6402,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Elder drop"
+	[tag]"item tag"		[value]"Loot source: Elder"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -6555,7 +6570,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Phoenix drop"
+	[tag]"item tag"		[value]"Loot source: Phoenix"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -6728,7 +6743,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Sirus drop"
+	[tag]"item tag"		[value]"Loot source: Sirus"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -7271,7 +7286,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Elder drop"
+	[tag]"item tag"		[value]"Loot source: Elder"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -7316,7 +7331,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Catarina drop"
+	[tag]"item tag"		[value]"Loot source: Catarina"
 	[tag]"item tag"		[value]"Syndicate drop"
 	
 	[tag]"worth"		[value]"Rare"
@@ -7553,7 +7568,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Atziri drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -7574,7 +7589,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Atziri drop"
+	[tag]"item tag"		[value]"Loot source: Atziri"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -7703,7 +7718,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Searing Exarch drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -7956,7 +7971,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Breach drop"
-	[tag]"item tag"		[value]"Uul-Netol drop"
+	[tag]"item tag"		[value]"Loot source: Uul-Netol"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -7976,7 +7991,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Atziri drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -8260,7 +8275,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Minotaur drop"
+	[tag]"item tag"		[value]"Loot source: Minotaur"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -8283,8 +8298,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Minotaur drop"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -8612,6 +8625,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Opal Wand"
+	[tag]"name EN"		[value]"Tulborn"
+	[tag]"name RU"		[value]"Óçû Òóë"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Breach drop"
+	[tag]"item tag"		[value]"Loot source: Tul"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -9420,7 +9455,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Heist drop"
+	[tag]"item tag"		[value]"Loot source: Heist"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -9725,7 +9760,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Tul drop"
+	[tag]"item tag"		[value]"Loot source: Tul"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -10001,7 +10036,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Syndicate drop"
-	[tag]"item tag"		[value]"Catarina drop"
+	[tag]"item tag"		[value]"Loot source: Catarina"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -10078,7 +10113,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Craiceann drop"
+	[tag]"item tag"		[value]"Loot source: Craiceann"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -10194,7 +10229,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Fenumus drop"
+	[tag]"item tag"		[value]"Loot source: Fenumus"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -10261,7 +10296,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Abyss drop"
+	[tag]"item tag"		[value]"Loot source: Abyss"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -10285,7 +10320,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Saqawal drop"
+	[tag]"item tag"		[value]"Loot source: Saqawal"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -10352,7 +10387,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Elder drop"
+	[tag]"item tag"		[value]"Loot source: Uber Elder"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -10397,8 +10432,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Synthesis drop"
-	[tag]"item tag"		[value]"Venarius drop"
+	[tag]"item tag"		[value]"Loot source: Synthesis"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -10465,7 +10499,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Maven drop"
+	[tag]"item tag"		[value]"Loot source: Maven"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -10511,7 +10545,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Farrul drop"
+	[tag]"item tag"		[value]"Loot source: Farrul"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -10621,7 +10655,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Abyss drop"
+	[tag]"item tag"		[value]"Loot source: Abyss"
 	
 	[tag]"worth"		[value]"Very expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -10644,7 +10678,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Legion drop"
+	[tag]"item tag"		[value]"Loot source: Legion"
 	
 	[tag]"worth"		[value]"Very expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -11196,7 +11230,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Breach drop"
-	[tag]"item tag"		[value]"Uul-Netol drop"
+	[tag]"item tag"		[value]"Loot source: Uul-Netol"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -11239,7 +11273,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Exarch drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -11303,7 +11337,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Shaper drop"
+	[tag]"item tag"		[value]"Loot source: Shaper"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -11328,7 +11362,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Saqawal drop"
+	[tag]"item tag"		[value]"Loot source: Saqawal"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -11376,7 +11410,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Farrul drop"
+	[tag]"item tag"		[value]"Loot source: Farrul"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -11400,7 +11434,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Abyss drop"
+	[tag]"item tag"		[value]"Loot source: Abyss"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -11426,7 +11460,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Craiceann drop"
+	[tag]"item tag"		[value]"Loot source: Craiceann"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -11508,7 +11542,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Expedition drop"
+	[tag]"item tag"		[value]"Loot source: Expedition"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -11529,7 +11563,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Fenumus drop"
+	[tag]"item tag"		[value]"Loot source: Fenumus"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -11549,8 +11583,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Expedition drop"
-	[tag]"item tag"		[value]"Vorana drop"
+	[tag]"item tag"		[value]"Loot source: Expedition"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -11570,7 +11603,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Doryani's Machinarium drop"
+	[tag]"item tag"		[value]"Loot source: Doryani"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -11590,7 +11623,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Doryani's Machinarium drop"
+	[tag]"item tag"		[value]"Loot source: Doryani"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -11610,7 +11643,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Doryani's Machinarium drop"
+	[tag]"item tag"		[value]"Loot source: Doryani"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -11649,7 +11682,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Atziri drop"
+	[tag]"item tag"		[value]"Loot source: Atziri"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -11690,7 +11723,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Ultimatum drop"
+	[tag]"item tag"		[value]"Loot source: Ultimatum"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -11731,7 +11764,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Maven drop"
+	[tag]"item tag"		[value]"Loot source: Maven"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -11794,7 +11827,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Exarch drop"
+	[tag]"item tag"		[value]"Loot source: Uber Exarch"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -12601,7 +12634,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Elder drop"
+	[tag]"item tag"		[value]"Loot source: Elder"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -12663,7 +12696,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Abyss drop"
+	[tag]"item tag"		[value]"Loot source: Abyss"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -12745,8 +12778,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Expedition drop"
-	[tag]"item tag"		[value]"Medved drop"
+	[tag]"item tag"		[value]"Loot source: Expedition"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -12829,7 +12861,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Farrul drop"
+	[tag]"item tag"		[value]"Loot source: Farrul"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -12996,7 +13028,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Saqawal drop"
+	[tag]"item tag"		[value]"Loot source: Saqawal"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -13061,7 +13093,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Fenumus drop"
+	[tag]"item tag"		[value]"Loot source: Fenumus"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -13084,7 +13116,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Craiceann drop"
+	[tag]"item tag"		[value]"Loot source: Craiceann"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -13106,8 +13138,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Kurgal drop drop"
+	[tag]"item tag"		[value]"Loot source: Delve Lich"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -13172,7 +13203,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Sirus drop"
+	[tag]"item tag"		[value]"Loot source: Sirus"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -13195,7 +13226,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Atziri drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -13218,7 +13249,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Uber drop"
+	[tag]"item tag"		[value]"Loot source: Uber Uber Elder"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -13284,7 +13315,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Shaper drop"
+	[tag]"item tag"		[value]"Loot source: Uber Shaper"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -13329,7 +13360,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Unlimatum drop"
+	[tag]"item tag"		[value]"Loot source: Ultimatum"
 	
 	[tag]"worth"		[value]"Very Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -14220,8 +14251,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Harvest drop"
-	[tag]"item tag"		[value]"Janaar drop"
+	[tag]"item tag"		[value]"Loot source: Harvest"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -14279,7 +14309,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Atziri drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -14318,7 +14348,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Black Star drop"
+	[tag]"item tag"		[value]"Loot source: Small Exarch"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -14338,7 +14368,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Abyss drop"
+	[tag]"item tag"		[value]"Loot source: Abyss"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -14377,8 +14407,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Kurgal drop"
+	[tag]"item tag"		[value]"Loot source: Delve Lich"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -14457,7 +14486,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Fenumus drop"
+	[tag]"item tag"		[value]"Loot source: Fenumus"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -14477,7 +14506,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Shaper drop"
+	[tag]"item tag"		[value]"Loot source: Uber Shaper"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -14517,7 +14546,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Craiceann drop"
+	[tag]"item tag"		[value]"Loot source: Craiceann"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -14595,7 +14624,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Breach drop"
-	[tag]"item tag"		[value]"Xoph drop"
+	[tag]"item tag"		[value]"Loot source: Xoph"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -14640,8 +14669,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Expedition drop"
-	[tag]"item tag"		[value]"Olroth drop"
+	[tag]"item tag"		[value]"Loot source: Expedition"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -14768,7 +14796,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Synthesis boss drop"
+	[tag]"item tag"		[value]"Loot source: Synthesis"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -14791,7 +14819,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Farrul drop"
+	[tag]"item tag"		[value]"Loot source: Farrul"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -14857,7 +14885,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
-	[tag]"item tag"		[value]"Saqawal drop"
+	[tag]"item tag"		[value]"Loot source: Saqawal"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -14879,7 +14907,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Maven drop"
+	[tag]"item tag"		[value]"Loot source: Maven"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -14965,7 +14993,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Sirus drop"
+	[tag]"item tag"		[value]"Loot source: Sirus"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -14987,7 +15015,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Atzoatl drop"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -15051,7 +15078,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Elder drop"
+	[tag]"item tag"		[value]"Loot source: Uber Elder"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -15073,8 +15100,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Harvest drop"
-	[tag]"item tag"		[value]"Oshabi drop"
+	[tag]"item tag"		[value]"Loot source: Harvest"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -15096,8 +15122,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Delve drop"
-	[tag]"item tag"		[value]"Aul drop"
+	[tag]"item tag"		[value]"Loot source: Delve Aul"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -15141,7 +15166,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Syndicate drop"
-	[tag]"item tag"		[value]"Catarina drop"
+	[tag]"item tag"		[value]"Loot source: Catarina"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -15495,7 +15520,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Elder drop"
+	[tag]"item tag"		[value]"Loot source: Uber Elder"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -16248,7 +16273,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Breach drop"
-	[tag]"item tag"		[value]"Esh drop"
+	[tag]"item tag"		[value]"Loot source: Esh"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -16352,7 +16377,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Synthesis boss drop"
+	[tag]"item tag"		[value]"Loot source: Synthesis"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -16378,7 +16403,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Exarch drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -16405,7 +16430,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Syndicate drop"
-	[tag]"item tag"		[value]"Catarina drop"
+	[tag]"item tag"		[value]"Loot source: Catarina"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -16804,7 +16829,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Breach drop"
-	[tag]"item tag"		[value]"Uul-Netol drop"
+	[tag]"item tag"		[value]"Loot source: Uul-Netol"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -16827,7 +16852,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Uber Atziri drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -16872,7 +16897,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Ultimatum drop"
+	[tag]"item tag"		[value]"Loot source: Ultimatum"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -17085,8 +17110,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Expedition drop"
-	[tag]"item tag"		[value]"Vorana drop"
+	[tag]"item tag"		[value]"Loot source: Expedition"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -17233,8 +17257,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Atzoatl drop"
-	[tag]"item tag"		[value]"Omnitect drop"
+	[tag]"item tag"		[value]"Loot source: Atzoatl"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -17320,7 +17343,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Shaper drop"
+	[tag]"item tag"		[value]"Loot source: Shaper"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -17420,7 +17443,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Syndicate drop"
-	[tag]"item tag"		[value]"Catarina drop"
+	[tag]"item tag"		[value]"Loot source: Catarina"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -17519,7 +17542,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Synthesis drop"
-	[tag]"item tag"		[value]"Cortex drop"
+	[tag]"item tag"		[value]"Loot source: Cortex"
 	
 	[tag]"worth"		[value]"Expensive"
 	

@@ -600,6 +600,7 @@ public:
 	static EButtonGroup* pointer_to_patterns_buttons_segment;
 	static EButtonGroup* pointer_to_right_side_info_buttons;
 	static EButtonGroup* pointer_to_warning_group;
+	static EButtonGroup* pointer_to_flag_configurator_group;
 
 	static EntityButtonVariantRouter* pointer_to_target_loot_filter_version_button;
 	static EntityButton* pointer_to_input_area_level_button;
@@ -883,7 +884,7 @@ namespace EDataActionCollection
 	void action_select_loot_item_button(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_highlight_stored_block(Entity* _entity, ECustomData* _custom_data, float _d);
 
-	void action_add_items_from_this_loot_pattern(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_generate_items_from_this_loot_pattern(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_switch_pattern_folder_state(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_create_or_delete_description_on_hover(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_and_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -1163,6 +1164,10 @@ public:
 	static								std::vector<ENamedSound*> custom_sound_list;
 	static bool							filter_block_contains_this_text(EButtonGroupFilterBlock* _target_filter_block, std::string* _text);
 	//static bool disable_deleting = true;
+
+	static std::vector<EDataEntity*>			registered_data_entity_game_item_list;
+	static void									add_game_item_data_entity_to_list();
+	
 
 	static std::vector <EButtonGroupFilterBlockEditor*> filter_block_tabs;
 	static int selected_filter_tab_id;
@@ -1539,12 +1544,29 @@ public:
 
 
 class GameItemAttribute;
-struct LootSimulatorTagFilter
+
+struct DETF_Value
 {
 public:
-	std::string					target_tag;
-	std::vector<std::string>	suitable_values;
-	std::vector<std::string>	banned_tags;
+	std::string			target_value;
+	ELocalisationText	localised_attribute_name;
+	bool				is_active = true;
+};
+
+struct DataEntityTagFilter
+{
+public:
+	std::string				target_tag;
+	bool					can_be_configured = true;
+	
+	//std::vector<std::string>	suitable_values;
+	//std::vector<std::string>	banned_tags;
+	
+	std::vector<DETF_Value>	suitable_values;
+	std::vector<DETF_Value>	banned_tags;
+
+	DataEntityTagFilter*	add_new_suitable_value	(std::string _value, ELocalisationText _ltext = ELocalisationText());
+	DataEntityTagFilter*	add_new_banned_value	(std::string _value, ELocalisationText _ltext = ELocalisationText());
 };
 
 
@@ -1715,7 +1737,7 @@ public:
 	bool									forceful_warn_when_hided = false;
 
 	ELocalisationText						filtered_by_exact_name;
-	std::vector<LootSimulatorTagFilter*>	filtered_by_tags;
+	std::vector<DataEntityTagFilter*>		filtered_by_tags;
 
 	ELocalisationText						localisation;
 	ETextureGabarite* icon;

@@ -80,6 +80,9 @@ int														EWindowMain::selected_filter_tab_id;
 RouterVariant* EWindowMain::registered_rarity_router_variants[NSW_registered_rarity_count];
 RouterVariant* EWindowMain::registered_alternate_gem_quality_router_variants[NSW_registered_altered_gem_quality_count];
 
+
+std::vector<EDataEntity*>								EWindowMain::registered_data_entity_game_item_list;
+
 std::vector < std::string>								EWindowMain::filter_text_lines;
 std::vector <EButtonGroupFilterBlockEditor*>			EWindowMain::filter_block_tabs = std::vector<EButtonGroupFilterBlockEditor*>(filter_tabs_count);
 
@@ -2077,17 +2080,90 @@ void EDataActionCollection::action_highlight_stored_block(Entity* _entity, ECust
 	}
 }
 
-void EDataActionCollection::action_add_items_from_this_loot_pattern(Entity* _entity, ECustomData* _custom_data, float _d)
+void EDataActionCollection::action_generate_items_from_this_loot_pattern(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EntityButtonLootPatternSelector*
-		patter_button = static_cast<EntityButtonLootPatternSelector*>(_entity);
+	patter_button = static_cast<EntityButtonLootPatternSelector*>(_entity);
 
 	EWindowMain::loot_simulator_button_group->seed = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 
 	EButtonGroupLootSimulator::pointer_to_patterns_buttons_segment->selected_button = patter_button;
 
-	LootSimulatorPattern::execute_loot_pattern(patter_button->target_pattern);
+	
 
+
+
+
+
+
+	EButtonGroupLootSimulator::pointer_to_flag_configurator_group->remove_all_workspace_buttons();
+
+	for (GameItemGenerator* lsp : patter_button->target_pattern->game_item_generator_list)
+	{
+		for (DataEntityTagFilter* tag_filter : lsp->filtered_by_tags)
+		if (tag_filter->can_be_configured)
+		for (int i = 0; i < tag_filter->suitable_values.size(); i++)
+		{
+			DETF_Value* detf = &tag_filter->suitable_values[i];
+
+			EntityButton* but = new EntityButton();
+
+			but->make_default_bool_switcher_button_with_unedible_text
+			(
+				new ERegionGabarite(150.0f, 22.0f),
+				EButtonGroupLootSimulator::pointer_to_flag_configurator_group,
+				EDataActionCollection::action_switch_boolean_value,
+				NS_DefaultGabarites::texture_bool_switcher_activated_box,
+				NS_DefaultGabarites::texture_bool_switcher_deactivated_box,
+				//detf->localised_attribute_name,
+				ELocalisationText::generate_localization_with_base_name(detf->target_value),
+				&(detf->is_active)
+			);
+			but->can_be_stretched = true;
+
+			but->main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_refresh_loot_simulator);
+
+			EButtonGroupLootSimulator::pointer_to_flag_configurator_group->add_button_to_working_group(but);
+			
+			
+
+			if (i == 0)
+			{
+				but->force_field_bottom = 8.0f;
+			}
+
+
+
+
+
+			
+
+		}
+
+		//add button caaption for game item generator
+		EntityButton*
+		but = new EntityButton();
+
+		but->make_default_button_with_unedible_text
+		(
+			new ERegionGabarite(150.0f, 22.0f),
+			EButtonGroupLootSimulator::pointer_to_flag_configurator_group,
+			nullptr,
+			ELocalisationText::generate_localization_with_base_name("NEW GENERATOR!")
+		);
+
+		but->have_simple_bg = true;
+		but->do_not_generate_bg = true;
+		but->can_be_stretched = true;
+		but->main_text_area->set_color(0.8f, 1.0f, 0.9f, 1.0f);
+
+		but->force_field_up = 16.0f;
+
+		EButtonGroupLootSimulator::pointer_to_flag_configurator_group->add_button_to_working_group(but);
+	}
+	
+	EWindowMain::loot_simulator_button_group->need_refresh = true;
+	LootSimulatorPattern::execute_loot_pattern(patter_button->target_pattern);
 
 }
 
@@ -3495,6 +3571,7 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/data_entity_list[localisation].txt");
 
 	ETextParser::split_data_entity_list_to_named_structs();
+	add_game_item_data_entity_to_list();
 
 	register_filter_rules();
 
@@ -5672,100 +5749,146 @@ EWindowMain::EWindowMain()
 		loot_simulator_button_group = whole_loot_simulator_group;
 		////////////////////////////////
 		EButtonGroup*
-			workspace_part = whole_loot_simulator_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);
+		workspace_part = whole_loot_simulator_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), EGUIStyle::active_style);
 
 		whole_loot_simulator_group->add_help_button(NS_EGraphicCore::load_from_textures_folder("buttons/button_info"), "description_help_info_loot_simulator");
 
 		whole_loot_simulator_group->add_caption_by_localistation_key("window_header_loot_simulator");
-		////////////////////////////////
+		
+		
+		
+		
+		//______MAIN SECTION______(BOTTOM)
+		/////////		BOTTOM SECTON FOR GENERATET LOOT BUTTONS AND WARN_WHEN_HIDDEN TEXT		//////////
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		EButtonGroup*
-			bottom_loot_part = new EButtonGroup(new ERegionGabarite(90.0f, 90.0f));
+		bottom_loot_part = new EButtonGroup(new ERegionGabarite(90.0f, 90.0f));
 		bottom_loot_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
 		bottom_loot_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 
 		workspace_part->add_group(bottom_loot_part);
 
-		////////////////////////////////
+		//______MAIN SECTION______(TOP)
+		/////////		CONTROL PART FOR BUTTONS WHICH CAN (FOR EXAMPLE) CHANGE LUCK> MADE ITEMS CORRUPTED AND ETC.		//////////
 		EButtonGroup*
-			top_control_part = new EButtonGroup(new ERegionGabarite(90.0f, 40.0f));
+		top_control_part = new EButtonGroup(new ERegionGabarite(90.0f, 40.0f));
 		top_control_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
 		top_control_part->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
 		workspace_part->add_group(top_control_part);
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+				//=HORIZONTAL=
+				// 
+				// 
+				// 
+				//_________CHILD_________
+				/////////		PATTERNS FOR LEFT SIDE (VERTICAL LIST OF REGISTERED PATTERNS)		//////////
+				EButtonGroup*
+				left_part_for_patterns = new EButtonGroup(new ERegionGabarite(250.0f, 500.0f));
+				left_part_for_patterns->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+				left_part_for_patterns->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 
-		/////////		PATTERNS		//////////
-		EButtonGroup*
-			left_part_for_patterns = new EButtonGroup(new ERegionGabarite(250.0f, 500.0f));
-		left_part_for_patterns->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
-		left_part_for_patterns->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+				//left_part_for_patterns->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
+		
+				whole_loot_simulator_group->pointer_to_patterns_buttons_segment = left_part_for_patterns;
 
-		//left_part_for_patterns->child_align_direction = ChildElementsAlignDirection::TOP_TO_BOTTOM;
+				bottom_loot_part->add_group(left_part_for_patterns);
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		whole_loot_simulator_group->pointer_to_patterns_buttons_segment = left_part_for_patterns;
-
-
-
-		bottom_loot_part->add_group(left_part_for_patterns);
-
-
-
-
-
-
-
-		/////////		MIDDLE LOOT CONTAINER		//////////
-		EButtonGroup*
-			middle_loot_and_warning_container = new EButtonGroup(new ERegionGabarite(10.0f, 10.0f));
-		middle_loot_and_warning_container->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
-		middle_loot_and_warning_container->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-		middle_loot_and_warning_container->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
-
-		bottom_loot_part->add_group(middle_loot_and_warning_container);
-
-
-
-
-
-
-		/////////		BOTTOM LOOT ITEM BUTTONS		//////////
-		EButtonGroup*
-			bottom_part_for_loot = new EButtonGroup(new ERegionGabarite(10.0f, 10.0f));
-		bottom_part_for_loot->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
-		bottom_part_for_loot->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
-		bottom_part_for_loot->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
-
-		middle_loot_and_warning_container->add_group(bottom_part_for_loot);
-
-		whole_loot_simulator_group->pointer_to_loot_buttons_segment = bottom_part_for_loot;
-
-		/////////		UPPER WARNING LOOT ITEM BUTTONS		//////////
-		EButtonGroup*
-			upper_part_for_warning = new EButtonGroup(new ERegionGabarite(10.0f, 30.0f));
-		upper_part_for_warning->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
-		upper_part_for_warning->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
-		upper_part_for_warning->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
-		upper_part_for_warning->button_group_is_active = false;
-		whole_loot_simulator_group->pointer_to_warning_group = upper_part_for_warning;
-
-		upper_part_for_warning->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("valuable_loot_hidden_warning"));
-		upper_part_for_warning->clickable_area_list.back()->text_area->font = EFont::font_list[1];
-		upper_part_for_warning->clickable_area_list.back()->text_area->set_color(NS_EColorUtils::COLOR_RED);
-
-		middle_loot_and_warning_container->add_group(upper_part_for_warning);
+				
+				/////////		FLAG TAGS		//////////
+				EButtonGroup*
+				flag_configurer_group = new EButtonGroup(new ERegionGabarite(160.0f, 10.0f));
+				flag_configurer_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+				flag_configurer_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+				bottom_loot_part->add_group(flag_configurer_group);
+				whole_loot_simulator_group->pointer_to_flag_configurator_group = flag_configurer_group;
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
 
 
-		/////////		USED BLOCKS INFO		//////////
-		EButtonGroup*
-			right_loot_part = new EButtonGroup(new ERegionGabarite(200.0f, 10.0f));
-		right_loot_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
-		right_loot_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
-		bottom_loot_part->add_group(right_loot_part);
-		whole_loot_simulator_group->pointer_to_right_side_info_buttons = right_loot_part;
+				
+				/////////		MIDDLE LOOT CONTAINER		//////////
+				EButtonGroup*
+				middle_loot_and_warning_container = new EButtonGroup(new ERegionGabarite(10.0f, 10.0f));
+				middle_loot_and_warning_container->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+				middle_loot_and_warning_container->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+				middle_loot_and_warning_container->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+
+				bottom_loot_part->add_group(middle_loot_and_warning_container);
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+								//_________CHILD_________
+								/////////		BOTTOM LOOT ITEM BUTTONS		//////////
+								EButtonGroup*
+									bottom_part_for_loot = new EButtonGroup(new ERegionGabarite(10.0f, 10.0f));
+								bottom_part_for_loot->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+								bottom_part_for_loot->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+								bottom_part_for_loot->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+
+								middle_loot_and_warning_container->add_group(bottom_part_for_loot);
+
+								whole_loot_simulator_group->pointer_to_loot_buttons_segment = bottom_part_for_loot;
+								////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+								/////////		UPPER WARNING LOOT ITEM BUTTONS		//////////
+								EButtonGroup*
+								upper_part_for_warning = new EButtonGroup(new ERegionGabarite(10.0f, 30.0f));
+								upper_part_for_warning->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+								upper_part_for_warning->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_static_autosize);
+								upper_part_for_warning->button_align_type = ButtonAlignType::BUTTON_ALIGN_MID;
+								upper_part_for_warning->button_group_is_active = false;
+								whole_loot_simulator_group->pointer_to_warning_group = upper_part_for_warning;
+
+								upper_part_for_warning->add_default_clickable_region_with_text_area(ELocalisationText::get_localisation_by_key("valuable_loot_hidden_warning"));
+								upper_part_for_warning->clickable_area_list.back()->text_area->font = EFont::font_list[1];
+								upper_part_for_warning->clickable_area_list.back()->text_area->set_color(NS_EColorUtils::COLOR_RED);
+
+								middle_loot_and_warning_container->add_group(upper_part_for_warning);
+								////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+				/////////		USED BLOCKS INF, RIGHT PART WHER USED CAN FIND ASSOTIATIONS BETWEEN COSMETIC ELEMENT AND FILTER BLOCK		//////////
+				EButtonGroup*
+				right_loot_part = new EButtonGroup(new ERegionGabarite(200.0f, 10.0f));
+				right_loot_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+				right_loot_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+				bottom_loot_part->add_group(right_loot_part);
+				whole_loot_simulator_group->pointer_to_right_side_info_buttons = right_loot_part;
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+				//END OF BUTTON GROUPS
+
+
+
+
+
+
+
+
+
 
 
 		if (false)
@@ -5796,7 +5919,7 @@ EWindowMain::EWindowMain()
 				(
 					new ERegionGabarite(230.0f, 40.0f),
 					left_part_for_patterns,
-					((!loot_pattern->is_folder) ? (&EDataActionCollection::action_add_items_from_this_loot_pattern) : (&EDataActionCollection::action_switch_pattern_folder_state)),
+					((!loot_pattern->is_folder) ? (&EDataActionCollection::action_generate_items_from_this_loot_pattern) : (&EDataActionCollection::action_switch_pattern_folder_state)),
 					loot_pattern->icon,
 					loot_pattern->localised_name.localisations[ELocalisationText::active_localisation]
 				);
@@ -11940,7 +12063,12 @@ void EWindowMain::register_filter_rules()
 		//filter by game item
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "explicit tag";
-		jc_filter->suitable_values_list.push_back("T1 bow");
+		jc_filter->suitable_values_list.push_back("T1");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "explicit tag";
+		jc_filter->suitable_values_list.push_back("Bow attribute");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
@@ -11968,7 +12096,12 @@ void EWindowMain::register_filter_rules()
 		//filter by game item
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "explicit tag";
-		jc_filter->suitable_values_list.push_back("T1 two-handed");
+		jc_filter->suitable_values_list.push_back("T1");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "explicit tag";
+		jc_filter->suitable_values_list.push_back("Two-handed attribute");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
@@ -11997,7 +12130,12 @@ void EWindowMain::register_filter_rules()
 		//filter by game item
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "explicit tag";
-		jc_filter->suitable_values_list.push_back("T1 one-hand");
+		jc_filter->suitable_values_list.push_back("T1");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "explicit tag";
+		jc_filter->suitable_values_list.push_back("One-hand attribute");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
@@ -12025,9 +12163,14 @@ void EWindowMain::register_filter_rules()
 		//filter by game item
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "explicit tag";
-		jc_filter->suitable_values_list.push_back("T1 wand");
-		jc_filter->suitable_values_list.push_back("T1 sceptre");
-		jc_filter->suitable_values_list.push_back("T1 rune dagger");
+		jc_filter->suitable_values_list.push_back("T1");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "explicit tag";
+		jc_filter->suitable_values_list.push_back("Wand attribute");
+		jc_filter->suitable_values_list.push_back("Sceptre attribute");
+		jc_filter->suitable_values_list.push_back("Rune dagger attribute");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
@@ -12052,10 +12195,15 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
-		//filter by game item
+			//filter by game item
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "explicit tag";
-		jc_filter->suitable_values_list.push_back("T1 body armours");
+		jc_filter->suitable_values_list.push_back("T1");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "explicit tag";
+		jc_filter->suitable_values_list.push_back("Body armour attribute");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
@@ -12084,9 +12232,14 @@ void EWindowMain::register_filter_rules()
 		//filter by game item
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "explicit tag";
-		jc_filter->suitable_values_list.push_back("T1 gloves");
-		jc_filter->suitable_values_list.push_back("T1 helmets");
-		jc_filter->suitable_values_list.push_back("T1 boots");
+		jc_filter->suitable_values_list.push_back("T1");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "explicit tag";
+		jc_filter->suitable_values_list.push_back("Gloves attribute");
+		jc_filter->suitable_values_list.push_back("Helmets attribute");
+		jc_filter->suitable_values_list.push_back("Boots attribute");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
@@ -12114,7 +12267,12 @@ void EWindowMain::register_filter_rules()
 		//filter by game item
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "explicit tag";
-		jc_filter->suitable_values_list.push_back("T1 shields");
+		jc_filter->suitable_values_list.push_back("T1");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "explicit tag";
+		jc_filter->suitable_values_list.push_back("Shields attribute");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
@@ -12139,12 +12297,17 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
-		//filter by game item
+	//filter by game item
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "explicit tag";
-		jc_filter->suitable_values_list.push_back("T1 amulets");
-		jc_filter->suitable_values_list.push_back("T1 belt");
-		jc_filter->suitable_values_list.push_back("T1 rings");
+		jc_filter->suitable_values_list.push_back("T1");
+		jc_filter_rule->required_tag_list.push_back(jc_filter);
+
+		jc_filter = new DataEntityFilter();
+		jc_filter->target_tag_name = "explicit tag";
+		jc_filter->suitable_values_list.push_back("Amulets attribute");
+		jc_filter->suitable_values_list.push_back("Belts attribute");
+		jc_filter->suitable_values_list.push_back("Rings attribute");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);
@@ -16465,6 +16628,28 @@ bool EWindowMain::filter_block_contains_this_text(EButtonGroupFilterBlock* _targ
 	return any_match;
 }
 
+void EWindowMain::add_game_item_data_entity_to_list()
+{
+	for (int i = 0; i < EDataEntity::data_entity_global_list.size(); i++)
+	{
+		EDataEntity*
+		data_entity = EDataEntity::data_entity_global_list[i];
+
+		if (data_entity != nullptr)
+		{
+			int index = 0;
+
+			std::string
+			data_type_name = DataEntityUtils::get_tag_value_by_name(0, "data type", data_entity);
+
+			if (data_type_name == "Game item")
+			{
+				EWindowMain::registered_data_entity_game_item_list.push_back(data_entity);
+			}
+		}
+	}
+}
+
 void EWindowMain::write_loot_filter_to_disc(std::string _full_path, std::string* _data)
 {
 	if
@@ -16837,25 +17022,25 @@ void EWindowMain::register_new_folder_gems()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Awakened gem");
+			tag_filter->add_new_suitable_value("Awakened gem");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Common");
+			tag_filter->add_new_suitable_value("Common");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
@@ -16891,25 +17076,25 @@ void EWindowMain::register_new_folder_gems()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Awakened gem");
+			tag_filter->add_new_suitable_value("Awakened gem");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Moderate");
+			tag_filter->add_new_suitable_value("Moderate");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
@@ -16947,25 +17132,25 @@ void EWindowMain::register_new_folder_gems()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Awakened gem");
+			tag_filter->add_new_suitable_value("Awakened gem");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Rare");
+			tag_filter->add_new_suitable_value("Rare");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
@@ -17003,26 +17188,26 @@ void EWindowMain::register_new_folder_gems()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Awakened gem");
+			tag_filter->add_new_suitable_value("Awakened gem");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Expensive");
-			tag_filter->suitable_values.push_back("Very expensive");
+			tag_filter->add_new_suitable_value("Expensive");
+			tag_filter->add_new_suitable_value("Very expensive");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_quality(0.0f, 20.0f, 2.0f);
@@ -17056,24 +17241,97 @@ void EWindowMain::register_new_folder_boss_loot()
 		/////////////////////////////			ITEM GENERATOR(UNIQUE BOSS LOOT)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
+			game_item_generator = new GameItemGenerator();
 			game_item_generator->generations_count = 1;
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 			game_item_generator->forceful_warn_when_hided = true;
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			//HIDDEN
+			DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Pinnacle boss loot");
+			tag_filter->add_new_suitable_value("Unique item");
+			tag_filter->can_be_configured = false;
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Piece of set");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_suitable_value("Boss drop");
+			tag_filter->can_be_configured = false;
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+			//
+
+
+
+			//ONE OF THE BOSS
+			tag_filter = new DataEntityTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->add_new_suitable_value("Loot source: Tul");
+			tag_filter->add_new_suitable_value("Loot source: Xoph");
+			tag_filter->add_new_suitable_value("Loot source: Uul-Netol");
+			tag_filter->add_new_suitable_value("Loot source: Ish");
+			tag_filter->add_new_suitable_value("Loot source: Chayula");
+
+			tag_filter->add_new_suitable_value("Loot source: Uber Breach");
+
+			tag_filter->add_new_suitable_value("Loot source: Elder");
+			tag_filter->add_new_suitable_value("Loot source: Maven");
+			tag_filter->add_new_suitable_value("Loot source: Sirus");
+			tag_filter->add_new_suitable_value("Loot source: Shaper");
+			tag_filter->add_new_suitable_value("Loot source: Eater");
+			tag_filter->add_new_suitable_value("Loot source: Exarch");
+			tag_filter->add_new_suitable_value("Loot source: Atziri");
+			tag_filter->add_new_suitable_value("Loot source: Small Exarch");
+			tag_filter->add_new_suitable_value("Loot source: Cortex");
+			tag_filter->add_new_suitable_value("Loot source: Ultimatum");
+
+			tag_filter->add_new_suitable_value("Loot source: Phoenix");
+			tag_filter->add_new_suitable_value("Loot source: Minotaur");
+			tag_filter->add_new_suitable_value("Loot source: Hydra");
+			tag_filter->add_new_suitable_value("Loot source: Chimera");
+
+			tag_filter->add_new_suitable_value("Loot source: Craiceann");
+			tag_filter->add_new_suitable_value("Loot source: Fenumus");
+			tag_filter->add_new_suitable_value("Loot source: Saqawal");
+			tag_filter->add_new_suitable_value("Loot source: Farrul");
+			tag_filter->add_new_suitable_value("Loot source: Synthesis");
+
+			tag_filter->add_new_suitable_value("Loot source: Abyss");
+			tag_filter->add_new_suitable_value("Loot source: Legion");
+			tag_filter->add_new_suitable_value("Loot source: Catarina");
+			tag_filter->add_new_suitable_value("Loot source: Expedition");
+			tag_filter->add_new_suitable_value("Loot source: Doryani");
+			tag_filter->add_new_suitable_value("Loot source: Harvest");
+			tag_filter->add_new_suitable_value("Loot source: Atzoatl");
+
+			tag_filter->add_new_suitable_value("Loot source: Uber Elder");
+			tag_filter->add_new_suitable_value("Loot source: Uber Maven");
+			tag_filter->add_new_suitable_value("Loot source: Uber Sirus");
+			tag_filter->add_new_suitable_value("Loot source: Uber Shaper");
+			tag_filter->add_new_suitable_value("Loot source: Uber Eater");
+			tag_filter->add_new_suitable_value("Loot source: Uber Exarch");
+			tag_filter->add_new_suitable_value("Loot source: Uber Atziri");
+
+			tag_filter->add_new_suitable_value("Loot source: Uber Uber Elder");
+
+			tag_filter->add_new_suitable_value("Loot source: Delve Architect");
+			tag_filter->add_new_suitable_value("Loot source: Delve Lich");
+			tag_filter->add_new_suitable_value("Loot source: Delve Aul");
+			//tag_filter->can_be_configured = false;
+			game_item_generator->filtered_by_tags.push_back(tag_filter);
+
+
+
+
+
+
+			tag_filter = new DataEntityTagFilter;
+			tag_filter->target_tag = "item tag";
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Piece of set");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(3.0f, 3.0f, 2.0f);
@@ -17090,22 +17348,22 @@ void EWindowMain::register_new_folder_boss_loot()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Pinnacle boss loot");
+			tag_filter->add_new_suitable_value("Pinnacle boss loot");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Piece of set");
-			tag_filter->suitable_values.push_back("Atlas Region Upgrade Item");
+			tag_filter->add_new_suitable_value("Piece of set");
+			tag_filter->add_new_suitable_value("Atlas Region Upgrade Item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		}
@@ -17152,22 +17410,22 @@ void EWindowMain::register_pattern_divinations_expensive()
 
 			game_item_generator->generations_count = 1;
 			game_item_generator->forceful_warn_when_hided = true;
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Cards");
+			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Expensive");
-			tag_filter->suitable_values.push_back("Very expensive");
+			tag_filter->add_new_suitable_value("Expensive");
+			tag_filter->add_new_suitable_value("Very expensive");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -17205,21 +17463,21 @@ void EWindowMain::register_pattern_divinations_rare()
 
 			game_item_generator->generations_count = 1;
 			game_item_generator->forceful_warn_when_hided = true;
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Cards");
+			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Rare");
+			tag_filter->add_new_suitable_value("Rare");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -17257,21 +17515,21 @@ void EWindowMain::register_pattern_divinations_moderate()
 
 			game_item_generator->generations_count = 1;
 			game_item_generator->forceful_warn_when_hided = true;
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Cards");
+			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Moderate");
+			tag_filter->add_new_suitable_value("Moderate");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -17308,21 +17566,21 @@ void EWindowMain::register_pattern_divinations_cheap()
 
 			game_item_generator->generations_count = 1;
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Cards");
+			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Common");
+			tag_filter->add_new_suitable_value("Common");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -17359,21 +17617,21 @@ void EWindowMain::register_pattern_divinations_trash()
 
 			game_item_generator->generations_count = 1;
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Cards");
+			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Trash");
+			tag_filter->add_new_suitable_value("Trash");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -17416,18 +17674,18 @@ void EWindowMain::register_pattern_flasks()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Utility Flasks");
-			tag_filter->suitable_values.push_back("Life Flasks");
-			tag_filter->suitable_values.push_back("Hybrid Flasks");
+			tag_filter->add_new_suitable_value("Utility Flasks");
+			tag_filter->add_new_suitable_value("Life Flasks");
+			tag_filter->add_new_suitable_value("Hybrid Flasks");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(0.0f, 1.0f, 3.0f);
@@ -17446,18 +17704,18 @@ void EWindowMain::register_pattern_flasks()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Utility Flasks");
-			tag_filter->suitable_values.push_back("Life Flasks");
-			tag_filter->suitable_values.push_back("Hybrid Flasks");
+			tag_filter->add_new_suitable_value("Utility Flasks");
+			tag_filter->add_new_suitable_value("Life Flasks");
+			tag_filter->add_new_suitable_value("Hybrid Flasks");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(3.0f, 3.0f, 3.0f);
@@ -17496,19 +17754,19 @@ void EWindowMain::register_new_folder_specific_items()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Incursion Items");
-			tag_filter->suitable_values.push_back("Memories");
-			tag_filter->suitable_values.push_back("Misc Map Items");
-			tag_filter->suitable_values.push_back("Quest Items");
+			tag_filter->add_new_suitable_value("Incursion Items");
+			tag_filter->add_new_suitable_value("Memories");
+			tag_filter->add_new_suitable_value("Misc Map Items");
+			tag_filter->add_new_suitable_value("Quest Items");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 		}
 
@@ -17538,21 +17796,21 @@ void EWindowMain::register_new_folder_specific_items()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Vial item");
+			tag_filter->add_new_suitable_value("Vial item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 		}
 
@@ -17600,16 +17858,16 @@ void EWindowMain::register_pattern_scouting_report()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Scouting Report");
+			tag_filter->add_new_suitable_value("Scouting Report");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 		}
 
@@ -17640,16 +17898,16 @@ void EWindowMain::register_pattern_set_fragment()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Piece of set");
+			tag_filter->add_new_suitable_value("Piece of set");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 		}
 
@@ -17680,16 +17938,16 @@ void EWindowMain::register_pattern_reliquary_keys()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Vault Keys");
+			tag_filter->add_new_suitable_value("Vault Keys");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 		}
 
@@ -17720,16 +17978,16 @@ void EWindowMain::register_pattern_scarabs()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Scarab item");
+			tag_filter->add_new_suitable_value("Scarab item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 		}
 
@@ -17760,16 +18018,16 @@ void EWindowMain::register_pattern_all_map_fragments()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Map Fragments");
+			tag_filter->add_new_suitable_value("Map Fragments");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 		}
 
@@ -17799,16 +18057,16 @@ void EWindowMain::register_pattern_map_splinters()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Splinter item");
+			tag_filter->add_new_suitable_value("Splinter item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
@@ -18117,16 +18375,16 @@ void EWindowMain::register_new_folder_delve_items()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Delve fossil");
+			tag_filter->add_new_suitable_value("Delve fossil");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 		}
 
@@ -18154,16 +18412,16 @@ void EWindowMain::register_new_folder_delve_items()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Delve resonator");
+			tag_filter->add_new_suitable_value("Delve resonator");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 		}
 
@@ -18193,16 +18451,16 @@ void EWindowMain::register_new_folder_delve_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
 			game_item_generator->random_selection_count = 1;
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Body armours");
+			tag_filter->add_new_suitable_value("Body armours");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
@@ -18246,16 +18504,16 @@ void EWindowMain::register_new_folder_delve_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
 			game_item_generator->random_selection_count = 1;
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Gloves");
+			tag_filter->add_new_suitable_value("Gloves");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			/////////////////////////////			EXPLICIT			/////////////////////////////////////////////
@@ -18295,16 +18553,16 @@ void EWindowMain::register_new_folder_delve_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
 			game_item_generator->random_selection_count = 1;
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Helmets");
+			tag_filter->add_new_suitable_value("Helmets");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
@@ -18348,16 +18606,16 @@ void EWindowMain::register_new_folder_delve_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
 			game_item_generator->random_selection_count = 1;
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Boots");
+			tag_filter->add_new_suitable_value("Boots");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
@@ -18402,16 +18660,16 @@ void EWindowMain::register_new_folder_delve_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
 			game_item_generator->random_selection_count = 1;
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Rings");
+			tag_filter->add_new_suitable_value("Rings");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			/////////////////////////////			CLASS			/////////////////////////////////////////////
@@ -18471,16 +18729,16 @@ void EWindowMain::register_new_folder_delve_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
 			game_item_generator->random_selection_count = 1;
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Belts");
+			tag_filter->add_new_suitable_value("Belts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			/////////////////////////////			CLASS			/////////////////////////////////////////////
@@ -18540,16 +18798,16 @@ void EWindowMain::register_new_folder_delve_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_RANDOM_COUNT_ERASE;
 			game_item_generator->random_selection_count = 1;
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Amulets");
+			tag_filter->add_new_suitable_value("Amulets");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			/////////////////////////////			CLASS			/////////////////////////////////////////////
@@ -18641,19 +18899,19 @@ void EWindowMain::register_new_folder_breach_items()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Breach item");
+			tag_filter->add_new_suitable_value("Breach item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Piece of set");
-			tag_filter->banned_tags.push_back("Splinter item");
-			tag_filter->banned_tags.push_back("Breach blessing");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Piece of set");
+			tag_filter->add_new_banned_value("Splinter item");
+			tag_filter->add_new_banned_value("Breach blessing");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -18680,16 +18938,16 @@ void EWindowMain::register_new_folder_breach_items()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Breach blessing");
+			tag_filter->add_new_suitable_value("Breach blessing");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			LootSimulatorPattern::registered_loot_simulater_pattern_list.push_back(loot_simulator_pattern);//register new pattern
@@ -18719,21 +18977,21 @@ void EWindowMain::register_new_folder_breach_items()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Breach item");
+			tag_filter->add_new_suitable_value("Breach item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Splinter item");
+			tag_filter->add_new_suitable_value("Splinter item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_quantity(0.0f, 3.0f, 2.0f);
@@ -18759,16 +19017,16 @@ void EWindowMain::register_new_folder_breach_items()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Breach unique item");
+			tag_filter->add_new_suitable_value("Breach unique item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			//GENERATORS
@@ -18811,26 +19069,26 @@ void EWindowMain::register_new_folder_breach_items()
 //			LootSimulatorTagFilter*
 //				tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "item tag";
-//			tag_filter->suitable_values.push_back("Item slot");
+//			tag_filter->add_new_suitable_value("Item slot");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
 //
 //			tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "base class";
-//			tag_filter->suitable_values.push_back("Gloves");
+//			tag_filter->add_new_suitable_value("Gloves");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
 //
 //			tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "item tag";
-//			tag_filter->banned_tags.push_back("Deleted");
-//			tag_filter->banned_tags.push_back("Heist base");
-//			tag_filter->banned_tags.push_back("Top tier base");
-//			tag_filter->banned_tags.push_back("Ritual base top");
-//			tag_filter->banned_tags.push_back("Ritual base medium");
-//			tag_filter->banned_tags.push_back("Ritual base low");
+//			tag_filter->add_new_banned_value("Deleted");
+//			tag_filter->add_new_banned_value("Heist base");
+//			tag_filter->add_new_banned_value("Top tier base");
+//			tag_filter->add_new_banned_value("Ritual base top");
+//			tag_filter->add_new_banned_value("Ritual base medium");
+//			tag_filter->add_new_banned_value("Ritual base low");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
@@ -18886,26 +19144,26 @@ void EWindowMain::register_new_folder_breach_items()
 //			LootSimulatorTagFilter*
 //				tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "item tag";
-//			tag_filter->suitable_values.push_back("Item slot");
+//			tag_filter->add_new_suitable_value("Item slot");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
 //
 //			tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "base class";
-//			tag_filter->suitable_values.push_back("Boots");
+//			tag_filter->add_new_suitable_value("Boots");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
 //
 //			tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "item tag";
-//			tag_filter->banned_tags.push_back("Deleted");
-//			tag_filter->banned_tags.push_back("Heist base");
-//			tag_filter->banned_tags.push_back("Top tier base");
-//			tag_filter->banned_tags.push_back("Ritual base top");
-//			tag_filter->banned_tags.push_back("Ritual base medium");
-//			tag_filter->banned_tags.push_back("Ritual base low");
+//			tag_filter->add_new_banned_value("Deleted");
+//			tag_filter->add_new_banned_value("Heist base");
+//			tag_filter->add_new_banned_value("Top tier base");
+//			tag_filter->add_new_banned_value("Ritual base top");
+//			tag_filter->add_new_banned_value("Ritual base medium");
+//			tag_filter->add_new_banned_value("Ritual base low");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
@@ -18988,26 +19246,26 @@ void EWindowMain::register_new_folder_breach_items()
 //			LootSimulatorTagFilter*
 //				tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "item tag";
-//			tag_filter->suitable_values.push_back("Item slot");
+//			tag_filter->add_new_suitable_value("Item slot");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
 //
 //			tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "base class";
-//			tag_filter->suitable_values.push_back("HELMETS");
+//			tag_filter->add_new_suitable_value("HELMETS");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
 //
 //			tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "item tag";
-//			tag_filter->banned_tags.push_back("Deleted");
-//			tag_filter->banned_tags.push_back("Heist base");
-//			tag_filter->banned_tags.push_back("Top tier base");
-//			tag_filter->banned_tags.push_back("Ritual base top");
-//			tag_filter->banned_tags.push_back("Ritual base medium");
-//			tag_filter->banned_tags.push_back("Ritual base low");
+//			tag_filter->add_new_banned_value("Deleted");
+//			tag_filter->add_new_banned_value("Heist base");
+//			tag_filter->add_new_banned_value("Top tier base");
+//			tag_filter->add_new_banned_value("Ritual base top");
+//			tag_filter->add_new_banned_value("Ritual base medium");
+//			tag_filter->add_new_banned_value("Ritual base low");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
@@ -19092,26 +19350,26 @@ void EWindowMain::register_new_folder_breach_items()
 //			LootSimulatorTagFilter*
 //				tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "item tag";
-//			tag_filter->suitable_values.push_back("Item slot");
+//			tag_filter->add_new_suitable_value("Item slot");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
 //
 //			tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "base class";
-//			tag_filter->suitable_values.push_back("Body Armours");
+//			tag_filter->add_new_suitable_value("Body Armours");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
 //
 //			tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "item tag";
-//			tag_filter->banned_tags.push_back("Deleted");
-//			tag_filter->banned_tags.push_back("Heist base");
-//			tag_filter->banned_tags.push_back("Top tier base");
-//			tag_filter->banned_tags.push_back("Ritual base top");
-//			tag_filter->banned_tags.push_back("Ritual base medium");
-//			tag_filter->banned_tags.push_back("Ritual base low");
+//			tag_filter->add_new_banned_value("Deleted");
+//			tag_filter->add_new_banned_value("Heist base");
+//			tag_filter->add_new_banned_value("Top tier base");
+//			tag_filter->add_new_banned_value("Ritual base top");
+//			tag_filter->add_new_banned_value("Ritual base medium");
+//			tag_filter->add_new_banned_value("Ritual base low");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
@@ -19194,23 +19452,23 @@ void EWindowMain::register_new_folder_breach_items()
 //			LootSimulatorTagFilter*
 //				tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "base class";
-//			tag_filter->suitable_values.push_back("Rings");
-//			tag_filter->suitable_values.push_back("Amulets");
-//			tag_filter->suitable_values.push_back("Belts");
+//			tag_filter->add_new_suitable_value("Rings");
+//			tag_filter->add_new_suitable_value("Amulets");
+//			tag_filter->add_new_suitable_value("Belts");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
 //
 //			tag_filter = new LootSimulatorTagFilter;
 //			tag_filter->target_tag = "item tag";
-//			tag_filter->banned_tags.push_back("Deleted");
-//			tag_filter->banned_tags.push_back("Heist base");
-//			tag_filter->banned_tags.push_back("Top tier base");
-//			tag_filter->banned_tags.push_back("Ritual base top");
-//			tag_filter->banned_tags.push_back("Ritual base medium");
-//			tag_filter->banned_tags.push_back("Ritual base low");
-//			tag_filter->banned_tags.push_back("Expensive base for unique");
-//			tag_filter->banned_tags.push_back("Rare base");
+//			tag_filter->add_new_banned_value("Deleted");
+//			tag_filter->add_new_banned_value("Heist base");
+//			tag_filter->add_new_banned_value("Top tier base");
+//			tag_filter->add_new_banned_value("Ritual base top");
+//			tag_filter->add_new_banned_value("Ritual base medium");
+//			tag_filter->add_new_banned_value("Ritual base low");
+//			tag_filter->add_new_banned_value("Expensive base for unique");
+//			tag_filter->add_new_banned_value("Rare base");
 //			game_item_generator->filtered_by_tags.push_back(tag_filter);
 //
 //
@@ -19287,25 +19545,25 @@ void EWindowMain::register_new_folder_uniques()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Unique item");
+			tag_filter->add_new_suitable_value("Unique item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Good for start");
+			tag_filter->add_new_suitable_value("Good for start");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Runic base");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19338,25 +19596,25 @@ void EWindowMain::register_new_folder_uniques()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Unique item");
+			tag_filter->add_new_suitable_value("Unique item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Trash");
+			tag_filter->add_new_suitable_value("Trash");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Runic base");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19389,25 +19647,25 @@ void EWindowMain::register_new_folder_uniques()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Unique item");
+			tag_filter->add_new_suitable_value("Unique item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Common");
+			tag_filter->add_new_suitable_value("Common");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Runic base");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19440,25 +19698,25 @@ void EWindowMain::register_new_folder_uniques()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Unique item");
+			tag_filter->add_new_suitable_value("Unique item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Moderate");
+			tag_filter->add_new_suitable_value("Moderate");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Runic base");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19491,25 +19749,25 @@ void EWindowMain::register_new_folder_uniques()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Unique item");
+			tag_filter->add_new_suitable_value("Unique item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Rare");
+			tag_filter->add_new_suitable_value("Rare");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Runic base");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19543,26 +19801,26 @@ void EWindowMain::register_new_folder_uniques()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Unique item");
+			tag_filter->add_new_suitable_value("Unique item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Expensive");
-			tag_filter->suitable_values.push_back("Very expensive");
+			tag_filter->add_new_suitable_value("Expensive");
+			tag_filter->add_new_suitable_value("Very expensive");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Runic base");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19616,18 +19874,18 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Gloves");
+			tag_filter->add_new_suitable_value("Gloves");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19662,18 +19920,18 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Boots");
+			tag_filter->add_new_suitable_value("Boots");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19708,19 +19966,19 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Helmets");
-			tag_filter->banned_tags.push_back("Runic base");
+			tag_filter->add_new_suitable_value("Helmets");
+			tag_filter->add_new_banned_value("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19755,18 +20013,18 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Body Armours");
+			tag_filter->add_new_suitable_value("Body Armours");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19798,22 +20056,22 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-				LootSimulatorTagFilter*
-					tag_filter = new LootSimulatorTagFilter;
+				DataEntityTagFilter*
+					tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "base class";
-				tag_filter->suitable_values.push_back("Two Hand Maces");
-				tag_filter->suitable_values.push_back("Two Hand Axes");
-				tag_filter->suitable_values.push_back("Two Hand Swords");
-				tag_filter->suitable_values.push_back("Warstaves");
+				tag_filter->add_new_suitable_value("Two Hand Maces");
+				tag_filter->add_new_suitable_value("Two Hand Axes");
+				tag_filter->add_new_suitable_value("Two Hand Swords");
+				tag_filter->add_new_suitable_value("Warstaves");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-				tag_filter = new LootSimulatorTagFilter;
+				tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "item tag";
-				tag_filter->banned_tags.push_back("Deleted");
-				tag_filter->banned_tags.push_back("Heist base");
-				tag_filter->banned_tags.push_back("Hidden item");
+				tag_filter->add_new_banned_value("Deleted");
+				tag_filter->add_new_banned_value("Heist base");
+				tag_filter->add_new_banned_value("Hidden item");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19848,19 +20106,19 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-				LootSimulatorTagFilter*
-					tag_filter = new LootSimulatorTagFilter;
+				DataEntityTagFilter*
+					tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "base class";
-				tag_filter->suitable_values.push_back("Bows");
+				tag_filter->add_new_suitable_value("Bows");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-				tag_filter = new LootSimulatorTagFilter;
+				tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "item tag";
-				tag_filter->banned_tags.push_back("Deleted");
-				tag_filter->banned_tags.push_back("Heist base");
-				tag_filter->banned_tags.push_back("Hidden item");
+				tag_filter->add_new_banned_value("Deleted");
+				tag_filter->add_new_banned_value("Heist base");
+				tag_filter->add_new_banned_value("Hidden item");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19882,18 +20140,18 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-				LootSimulatorTagFilter*
-					tag_filter = new LootSimulatorTagFilter;
+				DataEntityTagFilter*
+					tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "base class";
-				tag_filter->suitable_values.push_back("Quivers");
+				tag_filter->add_new_suitable_value("Quivers");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-				tag_filter = new LootSimulatorTagFilter;
+				tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "item tag";
-				tag_filter->banned_tags.push_back("Deleted");
-				tag_filter->banned_tags.push_back("Hidden item");
+				tag_filter->add_new_banned_value("Deleted");
+				tag_filter->add_new_banned_value("Hidden item");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19927,23 +20185,23 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-				LootSimulatorTagFilter*
-					tag_filter = new LootSimulatorTagFilter;
+				DataEntityTagFilter*
+					tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "base class";
-				tag_filter->suitable_values.push_back("One Hand Maces");
-				tag_filter->suitable_values.push_back("One Hand Axes");
-				tag_filter->suitable_values.push_back("One Hand Swords");
-				tag_filter->suitable_values.push_back("Claws");
-				tag_filter->suitable_values.push_back("Daggers");
+				tag_filter->add_new_suitable_value("One Hand Maces");
+				tag_filter->add_new_suitable_value("One Hand Axes");
+				tag_filter->add_new_suitable_value("One Hand Swords");
+				tag_filter->add_new_suitable_value("Claws");
+				tag_filter->add_new_suitable_value("Daggers");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-				tag_filter = new LootSimulatorTagFilter;
+				tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "item tag";
-				tag_filter->banned_tags.push_back("Deleted");
-				tag_filter->banned_tags.push_back("Heist base");
-				tag_filter->banned_tags.push_back("Hidden item");
+				tag_filter->add_new_banned_value("Deleted");
+				tag_filter->add_new_banned_value("Heist base");
+				tag_filter->add_new_banned_value("Hidden item");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -19978,21 +20236,21 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-				LootSimulatorTagFilter*
-					tag_filter = new LootSimulatorTagFilter;
+				DataEntityTagFilter*
+					tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "base class";
-				tag_filter->suitable_values.push_back("Wands");
-				tag_filter->suitable_values.push_back("Sceptres");
-				tag_filter->suitable_values.push_back("Rune daggers");
+				tag_filter->add_new_suitable_value("Wands");
+				tag_filter->add_new_suitable_value("Sceptres");
+				tag_filter->add_new_suitable_value("Rune daggers");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-				tag_filter = new LootSimulatorTagFilter;
+				tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "item tag";
-				tag_filter->banned_tags.push_back("Deleted");
-				tag_filter->banned_tags.push_back("Heist base");
-				tag_filter->banned_tags.push_back("Hidden item");
+				tag_filter->add_new_banned_value("Deleted");
+				tag_filter->add_new_banned_value("Heist base");
+				tag_filter->add_new_banned_value("Hidden item");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20027,19 +20285,19 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 				game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-				LootSimulatorTagFilter*
-					tag_filter = new LootSimulatorTagFilter;
+				DataEntityTagFilter*
+					tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "base class";
-				tag_filter->suitable_values.push_back("Shields");
+				tag_filter->add_new_suitable_value("Shields");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-				tag_filter = new LootSimulatorTagFilter;
+				tag_filter = new DataEntityTagFilter;
 				tag_filter->target_tag = "item tag";
-				tag_filter->banned_tags.push_back("Deleted");
-				tag_filter->banned_tags.push_back("Heist base");
-				tag_filter->banned_tags.push_back("Hidden item");
+				tag_filter->add_new_banned_value("Deleted");
+				tag_filter->add_new_banned_value("Heist base");
+				tag_filter->add_new_banned_value("Hidden item");
 				game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20083,21 +20341,21 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			game_item_generator->generations_count = 1;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Rings");
-			tag_filter->suitable_values.push_back("Amulets");
-			tag_filter->suitable_values.push_back("Belts");
+			tag_filter->add_new_suitable_value("Rings");
+			tag_filter->add_new_suitable_value("Amulets");
+			tag_filter->add_new_suitable_value("Belts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Non-default jewel");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Non-default jewel");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20133,20 +20391,20 @@ void EWindowMain::register_pattern_gloves_helmets_boots_body_jewelry()
 			game_item_generator->generations_count = 1;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Jewels");
-			tag_filter->suitable_values.push_back("Abyss Jewels");
+			tag_filter->add_new_suitable_value("Jewels");
+			tag_filter->add_new_suitable_value("Abyss Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Non-default jewel");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Non-default jewel");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20185,18 +20443,18 @@ void EWindowMain::register_pattern_runic_base()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Runic base");
+			tag_filter->add_new_suitable_value("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20234,31 +20492,31 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Heist base");
+			tag_filter->add_new_suitable_value("Heist base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("One Hand Maces");
-			tag_filter->suitable_values.push_back("One Hand Axes");
-			tag_filter->suitable_values.push_back("One Hand Swords");
-			tag_filter->suitable_values.push_back("Sceptres");
-			tag_filter->suitable_values.push_back("Wands");
-			tag_filter->suitable_values.push_back("Daggers");
-			tag_filter->suitable_values.push_back("Rune Daggers");
-			tag_filter->suitable_values.push_back("Claws");
-			tag_filter->suitable_values.push_back("Shields");
+			tag_filter->add_new_suitable_value("One Hand Maces");
+			tag_filter->add_new_suitable_value("One Hand Axes");
+			tag_filter->add_new_suitable_value("One Hand Swords");
+			tag_filter->add_new_suitable_value("Sceptres");
+			tag_filter->add_new_suitable_value("Wands");
+			tag_filter->add_new_suitable_value("Daggers");
+			tag_filter->add_new_suitable_value("Rune Daggers");
+			tag_filter->add_new_suitable_value("Claws");
+			tag_filter->add_new_suitable_value("Shields");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20278,31 +20536,31 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Heist base");
+			tag_filter->add_new_suitable_value("Heist base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Body Armours");
+			tag_filter->add_new_suitable_value("Body Armours");
 
-			tag_filter->suitable_values.push_back("Two Hand Axes");
-			tag_filter->suitable_values.push_back("Two Hand Swords");
-			tag_filter->suitable_values.push_back("Two Hand Maces");
+			tag_filter->add_new_suitable_value("Two Hand Axes");
+			tag_filter->add_new_suitable_value("Two Hand Swords");
+			tag_filter->add_new_suitable_value("Two Hand Maces");
 
-			tag_filter->suitable_values.push_back("Bows");
-			tag_filter->suitable_values.push_back("Staves");
-			tag_filter->suitable_values.push_back("Warstaves");
+			tag_filter->add_new_suitable_value("Bows");
+			tag_filter->add_new_suitable_value("Staves");
+			tag_filter->add_new_suitable_value("Warstaves");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20322,25 +20580,25 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Heist base");
+			tag_filter->add_new_suitable_value("Heist base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Rings");
-			tag_filter->suitable_values.push_back("Amulets");
-			tag_filter->suitable_values.push_back("Belts");
+			tag_filter->add_new_suitable_value("Rings");
+			tag_filter->add_new_suitable_value("Amulets");
+			tag_filter->add_new_suitable_value("Belts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20373,20 +20631,20 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Heist Cloaks");
-			tag_filter->suitable_values.push_back("Heist Gear");
-			tag_filter->suitable_values.push_back("Heist Brooches");
+			tag_filter->add_new_suitable_value("Heist Cloaks");
+			tag_filter->add_new_suitable_value("Heist Gear");
+			tag_filter->add_new_suitable_value("Heist Brooches");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20421,18 +20679,18 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Heist Target: Low value");
+			tag_filter->add_new_suitable_value("Heist Target: Low value");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20464,18 +20722,18 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Heist Target: Moderate value");
+			tag_filter->add_new_suitable_value("Heist Target: Moderate value");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20507,18 +20765,18 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Heist Target: High value");
+			tag_filter->add_new_suitable_value("Heist Target: High value");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20550,18 +20808,18 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Heist Target: Precious");
+			tag_filter->add_new_suitable_value("Heist Target: Precious");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20594,18 +20852,18 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Heist Target: Priceless");
+			tag_filter->add_new_suitable_value("Heist Target: Priceless");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20637,23 +20895,23 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Heist contracts");
+			tag_filter->add_new_suitable_value("Heist contracts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Quest Items");
+			tag_filter->add_new_suitable_value("Quest Items");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20685,20 +20943,20 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Contracts");
+			tag_filter->add_new_suitable_value("Contracts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20730,20 +20988,20 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Blueprints");
+			tag_filter->add_new_suitable_value("Blueprints");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20779,27 +21037,27 @@ void EWindowMain::register_pattern_all_equip()
 			game_item_generator->generations_count = 1;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
+			tag_filter->add_new_suitable_value("Item slot");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Gloves");
-			tag_filter->suitable_values.push_back("Boots");
-			tag_filter->suitable_values.push_back("Helmets");
+			tag_filter->add_new_suitable_value("Gloves");
+			tag_filter->add_new_suitable_value("Boots");
+			tag_filter->add_new_suitable_value("Helmets");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -20820,25 +21078,25 @@ void EWindowMain::register_pattern_all_equip()
 			game_item_generator->random_selection_count = 8;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Item slot");
+			tag_filter->add_new_suitable_value("Item slot");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Body Armours");
+			tag_filter->add_new_suitable_value("Body Armours");
 
-			tag_filter->suitable_values.push_back("Two Hand Axes");
-			tag_filter->suitable_values.push_back("Two Hand Swords");
-			tag_filter->suitable_values.push_back("Two Hand Maces");
+			tag_filter->add_new_suitable_value("Two Hand Axes");
+			tag_filter->add_new_suitable_value("Two Hand Swords");
+			tag_filter->add_new_suitable_value("Two Hand Maces");
 
-			tag_filter->suitable_values.push_back("Bows");
-			tag_filter->suitable_values.push_back("Staves");
-			tag_filter->suitable_values.push_back("Warstaves");
+			tag_filter->add_new_suitable_value("Bows");
+			tag_filter->add_new_suitable_value("Staves");
+			tag_filter->add_new_suitable_value("Warstaves");
 
 
 
@@ -20846,15 +21104,15 @@ void EWindowMain::register_pattern_all_equip()
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Heist base");
+			tag_filter->add_new_banned_value("Top tier base");
+			tag_filter->add_new_banned_value("Ritual base top");
+			tag_filter->add_new_banned_value("Ritual base medium");
+			tag_filter->add_new_banned_value("Ritual base low");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20874,27 +21132,27 @@ void EWindowMain::register_pattern_all_equip()
 			game_item_generator->generations_count = 1;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Rings");
-			tag_filter->suitable_values.push_back("Amulets");
-			tag_filter->suitable_values.push_back("Belts");
+			tag_filter->add_new_suitable_value("Rings");
+			tag_filter->add_new_suitable_value("Amulets");
+			tag_filter->add_new_suitable_value("Belts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Heist base");
-			tag_filter->banned_tags.push_back("Top tier base");
-			tag_filter->banned_tags.push_back("Ritual base top");
-			tag_filter->banned_tags.push_back("Ritual base medium");
-			tag_filter->banned_tags.push_back("Ritual base low");
-			tag_filter->banned_tags.push_back("Expensive base for unique");
-			tag_filter->banned_tags.push_back("Rare base");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Heist base");
+			tag_filter->add_new_banned_value("Top tier base");
+			tag_filter->add_new_banned_value("Ritual base top");
+			tag_filter->add_new_banned_value("Ritual base medium");
+			tag_filter->add_new_banned_value("Ritual base low");
+			tag_filter->add_new_banned_value("Expensive base for unique");
+			tag_filter->add_new_banned_value("Rare base");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20928,30 +21186,30 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 
 
-			LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Top tier base");
-			tag_filter->suitable_values.push_back("Rare base");
+			tag_filter->add_new_suitable_value("Top tier base");
+			tag_filter->add_new_suitable_value("Rare base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("One Hand Maces");
-			tag_filter->suitable_values.push_back("One Hand Axes");
-			tag_filter->suitable_values.push_back("One Hand Swords");
-			tag_filter->suitable_values.push_back("Sceptres");
-			tag_filter->suitable_values.push_back("Wands");
-			tag_filter->suitable_values.push_back("Daggers");
-			tag_filter->suitable_values.push_back("Rune Daggers");
-			tag_filter->suitable_values.push_back("Claws");
-			tag_filter->suitable_values.push_back("Shields");
+			tag_filter->add_new_suitable_value("One Hand Maces");
+			tag_filter->add_new_suitable_value("One Hand Axes");
+			tag_filter->add_new_suitable_value("One Hand Swords");
+			tag_filter->add_new_suitable_value("Sceptres");
+			tag_filter->add_new_suitable_value("Wands");
+			tag_filter->add_new_suitable_value("Daggers");
+			tag_filter->add_new_suitable_value("Rune Daggers");
+			tag_filter->add_new_suitable_value("Claws");
+			tag_filter->add_new_suitable_value("Shields");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -20970,24 +21228,24 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Top tier base");
-			tag_filter->suitable_values.push_back("Rare base");
+			tag_filter->add_new_suitable_value("Top tier base");
+			tag_filter->add_new_suitable_value("Rare base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Gloves");
-			tag_filter->suitable_values.push_back("Helmets");
-			tag_filter->suitable_values.push_back("Boots");
+			tag_filter->add_new_suitable_value("Gloves");
+			tag_filter->add_new_suitable_value("Helmets");
+			tag_filter->add_new_suitable_value("Boots");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21006,24 +21264,24 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Top tier base");
-			tag_filter->suitable_values.push_back("Rare base");
+			tag_filter->add_new_suitable_value("Top tier base");
+			tag_filter->add_new_suitable_value("Rare base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Rings");
-			tag_filter->suitable_values.push_back("Amulets");
-			tag_filter->suitable_values.push_back("Belts");
+			tag_filter->add_new_suitable_value("Rings");
+			tag_filter->add_new_suitable_value("Amulets");
+			tag_filter->add_new_suitable_value("Belts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21043,28 +21301,28 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Top tier base");
-			tag_filter->suitable_values.push_back("Rare base");
+			tag_filter->add_new_suitable_value("Top tier base");
+			tag_filter->add_new_suitable_value("Rare base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Body Armours");
-			tag_filter->suitable_values.push_back("Two Hand Axes");
-			tag_filter->suitable_values.push_back("Two Hand Maces");
-			tag_filter->suitable_values.push_back("Two Hand Swords");
-			tag_filter->suitable_values.push_back("Staves");
-			tag_filter->suitable_values.push_back("Warstaves");
-			tag_filter->suitable_values.push_back("Bows");
+			tag_filter->add_new_suitable_value("Body Armours");
+			tag_filter->add_new_suitable_value("Two Hand Axes");
+			tag_filter->add_new_suitable_value("Two Hand Maces");
+			tag_filter->add_new_suitable_value("Two Hand Swords");
+			tag_filter->add_new_suitable_value("Staves");
+			tag_filter->add_new_suitable_value("Warstaves");
+			tag_filter->add_new_suitable_value("Bows");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21089,7 +21347,7 @@ void EWindowMain::register_new_folder_delirium_orbs()
 	{
 
 		LootSimulatorPattern*
-			loot_simulator_pattern = new LootSimulatorPattern;
+		loot_simulator_pattern = new LootSimulatorPattern;
 
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_EN] = "Delirium orbs (expensive)";
 		loot_simulator_pattern->localised_name.localisations[NSW_localisation_RU] = "—феры делириума(дорогие)";
@@ -21099,23 +21357,23 @@ void EWindowMain::register_new_folder_delirium_orbs()
 		/////////////////////////////			ITEM GENERATOR (CHEAP CURRENCY SMALL STACK)			/////////////////////////////////////////////
 		{
 			GameItemGenerator*
-				game_item_generator = new GameItemGenerator();
+			game_item_generator = new GameItemGenerator();
 			game_item_generator->generations_count = 1;
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
 
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Delirium orb");
+			tag_filter->add_new_suitable_value("Delirium orb");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21146,16 +21404,16 @@ void EWindowMain::register_new_folder_delirium_orbs()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Delirium orb");
+			tag_filter->add_new_suitable_value("Delirium orb");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21191,21 +21449,21 @@ void EWindowMain::register_new_folder_catalysts()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Catalyst item");
+			tag_filter->add_new_suitable_value("Catalyst item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Trash");
+			tag_filter->add_new_suitable_value("Trash");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21236,21 +21494,21 @@ void EWindowMain::register_new_folder_catalysts()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Catalyst item");
+			tag_filter->add_new_suitable_value("Catalyst item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Common");
+			tag_filter->add_new_suitable_value("Common");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21281,21 +21539,21 @@ void EWindowMain::register_new_folder_catalysts()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Catalyst item");
+			tag_filter->add_new_suitable_value("Catalyst item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Moderate");
+			tag_filter->add_new_suitable_value("Moderate");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21327,16 +21585,16 @@ void EWindowMain::register_new_folder_catalysts()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Catalyst item");
+			tag_filter->add_new_suitable_value("Catalyst item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21372,21 +21630,21 @@ void EWindowMain::register_new_folder_incubators()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Incubators");
+			tag_filter->add_new_suitable_value("Incubators");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Trash");
+			tag_filter->add_new_suitable_value("Trash");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21418,21 +21676,21 @@ void EWindowMain::register_new_folder_incubators()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Incubators");
+			tag_filter->add_new_suitable_value("Incubators");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Common");
+			tag_filter->add_new_suitable_value("Common");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21464,21 +21722,21 @@ void EWindowMain::register_new_folder_incubators()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Incubators");
+			tag_filter->add_new_suitable_value("Incubators");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Moderate");
+			tag_filter->add_new_suitable_value("Moderate");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21510,23 +21768,23 @@ void EWindowMain::register_new_folder_incubators()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Incubators");
+			tag_filter->add_new_suitable_value("Incubators");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Rare");
-			tag_filter->suitable_values.push_back("Expensive");
-			tag_filter->suitable_values.push_back("Very expensive");
+			tag_filter->add_new_suitable_value("Rare");
+			tag_filter->add_new_suitable_value("Expensive");
+			tag_filter->add_new_suitable_value("Very expensive");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21558,16 +21816,16 @@ void EWindowMain::register_new_folder_incubators()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Incubators");
+			tag_filter->add_new_suitable_value("Incubators");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21605,21 +21863,21 @@ void EWindowMain::register_new_folder_currency_shards()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Currency shard");
+			tag_filter->add_new_suitable_value("Currency shard");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Trash");
+			tag_filter->add_new_suitable_value("Trash");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21650,21 +21908,21 @@ void EWindowMain::register_new_folder_currency_shards()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Currency shard");
+			tag_filter->add_new_suitable_value("Currency shard");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Common");
+			tag_filter->add_new_suitable_value("Common");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21695,21 +21953,21 @@ void EWindowMain::register_new_folder_currency_shards()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Currency shard");
+			tag_filter->add_new_suitable_value("Currency shard");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Moderate");
+			tag_filter->add_new_suitable_value("Moderate");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21740,23 +21998,23 @@ void EWindowMain::register_new_folder_currency_shards()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Currency shard");
+			tag_filter->add_new_suitable_value("Currency shard");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Rare");
-			tag_filter->suitable_values.push_back("Expensive");
-			tag_filter->suitable_values.push_back("Very expensive");
+			tag_filter->add_new_suitable_value("Rare");
+			tag_filter->add_new_suitable_value("Expensive");
+			tag_filter->add_new_suitable_value("Very expensive");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21787,16 +22045,16 @@ void EWindowMain::register_new_folder_currency_shards()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Currency shard");
+			tag_filter->add_new_suitable_value("Currency shard");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21832,21 +22090,21 @@ void EWindowMain::register_new_folder_oils()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Oil item");
+			tag_filter->add_new_suitable_value("Oil item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Trash");
+			tag_filter->add_new_suitable_value("Trash");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21877,21 +22135,21 @@ void EWindowMain::register_new_folder_oils()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Oil item");
+			tag_filter->add_new_suitable_value("Oil item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Common");
+			tag_filter->add_new_suitable_value("Common");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21922,21 +22180,21 @@ void EWindowMain::register_new_folder_oils()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Oil item");
+			tag_filter->add_new_suitable_value("Oil item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Moderate");
+			tag_filter->add_new_suitable_value("Moderate");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -21967,23 +22225,23 @@ void EWindowMain::register_new_folder_oils()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Oil item");
+			tag_filter->add_new_suitable_value("Oil item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Rare");
-			tag_filter->suitable_values.push_back("Expensive");
-			tag_filter->suitable_values.push_back("Very expensive");
+			tag_filter->add_new_suitable_value("Rare");
+			tag_filter->add_new_suitable_value("Expensive");
+			tag_filter->add_new_suitable_value("Very expensive");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22014,16 +22272,16 @@ void EWindowMain::register_new_folder_oils()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Special oil item");
+			tag_filter->add_new_suitable_value("Special oil item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22054,17 +22312,17 @@ void EWindowMain::register_new_folder_oils()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Special oil item");
-			tag_filter->suitable_values.push_back("Oil item");
+			tag_filter->add_new_suitable_value("Special oil item");
+			tag_filter->add_new_suitable_value("Oil item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22116,22 +22374,22 @@ void EWindowMain::register_pattern_harvest_items()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Harvest seed");
+			tag_filter->add_new_suitable_value("Harvest seed");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22164,22 +22422,22 @@ void EWindowMain::register_pattern_expedition_currency()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Expedition currency");
+			tag_filter->add_new_suitable_value("Expedition currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22196,16 +22454,16 @@ void EWindowMain::register_pattern_expedition_currency()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Expedition Logbooks");
+			tag_filter->add_new_suitable_value("Expedition Logbooks");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22238,22 +22496,22 @@ void EWindowMain::register_pattern_eldritch_currency()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Eldritch currency");
+			tag_filter->add_new_suitable_value("Eldritch currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22286,22 +22544,22 @@ void EWindowMain::register_pattern_delirium_orbs()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Delirium orb");
+			tag_filter->add_new_suitable_value("Delirium orb");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22335,23 +22593,23 @@ void EWindowMain::register_pattern_oils_and_catalysts()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Oil item");
+			tag_filter->add_new_suitable_value("Oil item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22383,23 +22641,23 @@ void EWindowMain::register_pattern_oils_and_catalysts()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Catalyst item");
+			tag_filter->add_new_suitable_value("Catalyst item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22433,23 +22691,23 @@ void EWindowMain::register_pattern_essences()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Essences");
+			tag_filter->add_new_suitable_value("Essences");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22482,16 +22740,16 @@ void EWindowMain::register_pattern_incubators()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Incubators");
+			tag_filter->add_new_suitable_value("Incubators");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22525,30 +22783,30 @@ void EWindowMain::register_pattern_currencies_shard()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			//tag_filter = new LootSimulatorTagFilter;
 			//tag_filter->target_tag = "worth";
-			//tag_filter->suitable_values.push_back("Rare");
-			//tag_filter->suitable_values.push_back("Expensive");
-			//tag_filter->suitable_values.push_back("Very expensive");
+			//tag_filter->add_new_suitable_value("Rare");
+			//tag_filter->add_new_suitable_value("Expensive");
+			//tag_filter->add_new_suitable_value("Very expensive");
 			//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Currency shard");
+			tag_filter->add_new_suitable_value("Currency shard");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22582,30 +22840,30 @@ void EWindowMain::register_pattern_tainted_currencies()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			//tag_filter = new LootSimulatorTagFilter;
 			//tag_filter->target_tag = "worth";
-			//tag_filter->suitable_values.push_back("Rare");
-			//tag_filter->suitable_values.push_back("Expensive");
-			//tag_filter->suitable_values.push_back("Very expensive");
+			//tag_filter->add_new_suitable_value("Rare");
+			//tag_filter->add_new_suitable_value("Expensive");
+			//tag_filter->add_new_suitable_value("Very expensive");
 			//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Tainted currency");
+			tag_filter->add_new_suitable_value("Tainted currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22639,31 +22897,31 @@ void EWindowMain::register_embers_and_ichors()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			//tag_filter = new LootSimulatorTagFilter;
 			//tag_filter->target_tag = "worth";
-			//tag_filter->suitable_values.push_back("Rare");
-			//tag_filter->suitable_values.push_back("Expensive");
-			//tag_filter->suitable_values.push_back("Very expensive");
+			//tag_filter->add_new_suitable_value("Rare");
+			//tag_filter->add_new_suitable_value("Expensive");
+			//tag_filter->add_new_suitable_value("Very expensive");
 			//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Ember item");
-			tag_filter->suitable_values.push_back("Ichor item");
+			tag_filter->add_new_suitable_value("Ember item");
+			tag_filter->add_new_suitable_value("Ichor item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22697,30 +22955,30 @@ void EWindowMain::register_pattern_guardian_orbs()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			//tag_filter = new LootSimulatorTagFilter;
 			//tag_filter->target_tag = "worth";
-			//tag_filter->suitable_values.push_back("Rare");
-			//tag_filter->suitable_values.push_back("Expensive");
-			//tag_filter->suitable_values.push_back("Very expensive");
+			//tag_filter->add_new_suitable_value("Rare");
+			//tag_filter->add_new_suitable_value("Expensive");
+			//tag_filter->add_new_suitable_value("Very expensive");
 			//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Guardian orb");
+			tag_filter->add_new_suitable_value("Guardian orb");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22754,35 +23012,35 @@ void EWindowMain::register_pattern_rare_currencies()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Rare");
-			tag_filter->suitable_values.push_back("Expensive");
-			tag_filter->suitable_values.push_back("Very expensive");
+			tag_filter->add_new_suitable_value("Rare");
+			tag_filter->add_new_suitable_value("Expensive");
+			tag_filter->add_new_suitable_value("Very expensive");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Basic currency");
+			tag_filter->add_new_suitable_value("Basic currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			//tag_filter = new LootSimulatorTagFilter;
 			//tag_filter->target_tag = "item tag";
-			//tag_filter->suitable_values.push_back("Basic currency");
+			//tag_filter->add_new_suitable_value("Basic currency");
 			//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22816,28 +23074,28 @@ void EWindowMain::register_pattern_good_currencies()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Moderate");
+			tag_filter->add_new_suitable_value("Moderate");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Basic currency");
+			tag_filter->add_new_suitable_value("Basic currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22871,27 +23129,27 @@ void EWindowMain::register_pattern_trash_currencies()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Trash");
+			tag_filter->add_new_suitable_value("Trash");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Basic currency");
+			tag_filter->add_new_suitable_value("Basic currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22926,27 +23184,27 @@ void EWindowMain::register_pattern_cheap_currencies()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "worth";
-			tag_filter->suitable_values.push_back("Common");
+			tag_filter->add_new_suitable_value("Common");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Basic currency");
+			tag_filter->add_new_suitable_value("Basic currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -22987,35 +23245,35 @@ void EWindowMain::register_valuable_items()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "base class";
-		tag_filter->suitable_values.push_back("Stackable Currency");
-		tag_filter->suitable_values.push_back("Currency");
-		tag_filter->suitable_values.push_back("Divinations");
-		tag_filter->suitable_values.push_back("Breachstones");
-		tag_filter->suitable_values.push_back("Memories");
-		tag_filter->suitable_values.push_back("Map Fragments");
-		tag_filter->suitable_values.push_back("Vault Keys");
+		tag_filter->add_new_suitable_value("Stackable Currency");
+		tag_filter->add_new_suitable_value("Currency");
+		tag_filter->add_new_suitable_value("Divinations");
+		tag_filter->add_new_suitable_value("Breachstones");
+		tag_filter->add_new_suitable_value("Memories");
+		tag_filter->add_new_suitable_value("Map Fragments");
+		tag_filter->add_new_suitable_value("Vault Keys");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "worth";
-		tag_filter->suitable_values.push_back("Rare");
-		tag_filter->suitable_values.push_back("Expensive");
-		tag_filter->suitable_values.push_back("Very expensive");
+		tag_filter->add_new_suitable_value("Rare");
+		tag_filter->add_new_suitable_value("Expensive");
+		tag_filter->add_new_suitable_value("Very expensive");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		//tag_filter = new LootSimulatorTagFilter;
 		//tag_filter->target_tag = "item tag";
-		//tag_filter->suitable_values.push_back("Basic currency");
+		//tag_filter->add_new_suitable_value("Basic currency");
 		//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->banned_tags.push_back("Deleted");
-		tag_filter->banned_tags.push_back("Hidden item");
+		tag_filter->add_new_banned_value("Deleted");
+		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -23032,24 +23290,24 @@ void EWindowMain::register_valuable_items()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "base class";
-		tag_filter->suitable_values.push_back("Quest items");
-		tag_filter->suitable_values.push_back("Incursion items");
-		tag_filter->suitable_values.push_back("Misc Map Items");
+		tag_filter->add_new_suitable_value("Quest items");
+		tag_filter->add_new_suitable_value("Incursion items");
+		tag_filter->add_new_suitable_value("Misc Map Items");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		//tag_filter = new LootSimulatorTagFilter;
 		//tag_filter->target_tag = "item tag";
-		//tag_filter->suitable_values.push_back("Basic currency");
+		//tag_filter->add_new_suitable_value("Basic currency");
 		//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->banned_tags.push_back("Deleted");
-		tag_filter->banned_tags.push_back("Hidden item");
+		tag_filter->add_new_banned_value("Deleted");
+		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -23067,27 +23325,27 @@ void EWindowMain::register_valuable_items()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "base class";
-		tag_filter->suitable_values.push_back("Two Hand Axes");
-		tag_filter->suitable_values.push_back("Two Hand Swords");
-		tag_filter->suitable_values.push_back("Two Hand Maces");
-		tag_filter->suitable_values.push_back("Warstaves");
-		tag_filter->suitable_values.push_back("Staves");
-		tag_filter->suitable_values.push_back("Bows");
+		tag_filter->add_new_suitable_value("Two Hand Axes");
+		tag_filter->add_new_suitable_value("Two Hand Swords");
+		tag_filter->add_new_suitable_value("Two Hand Maces");
+		tag_filter->add_new_suitable_value("Warstaves");
+		tag_filter->add_new_suitable_value("Staves");
+		tag_filter->add_new_suitable_value("Bows");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		//tag_filter = new LootSimulatorTagFilter;
 		//tag_filter->target_tag = "item tag";
-		//tag_filter->suitable_values.push_back("Basic currency");
+		//tag_filter->add_new_suitable_value("Basic currency");
 		//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->banned_tags.push_back("Deleted");
-		tag_filter->banned_tags.push_back("Hidden item");
+		tag_filter->add_new_banned_value("Deleted");
+		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -23106,28 +23364,28 @@ void EWindowMain::register_valuable_items()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->suitable_values.push_back("Unique item");
+		tag_filter->add_new_suitable_value("Unique item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "worth";
-		tag_filter->suitable_values.push_back("Rare");
-		tag_filter->suitable_values.push_back("Expensive");
-		tag_filter->suitable_values.push_back("Very expensive");
+		tag_filter->add_new_suitable_value("Rare");
+		tag_filter->add_new_suitable_value("Expensive");
+		tag_filter->add_new_suitable_value("Very expensive");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		//tag_filter = new LootSimulatorTagFilter;
 		//tag_filter->target_tag = "item tag";
-		//tag_filter->suitable_values.push_back("Basic currency");
+		//tag_filter->add_new_suitable_value("Basic currency");
 		//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->banned_tags.push_back("Deleted");
+		tag_filter->add_new_banned_value("Deleted");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -23252,33 +23510,33 @@ void EWindowMain::register_trash_items()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "base class";
-		tag_filter->suitable_values.push_back("Stackable Currency");
-		tag_filter->suitable_values.push_back("Currency");
-		tag_filter->suitable_values.push_back("Divinations");
-		tag_filter->suitable_values.push_back("Breachstones");
-		tag_filter->suitable_values.push_back("Memories");
-		tag_filter->suitable_values.push_back("Map Fragments");
-		tag_filter->suitable_values.push_back("Vault Keys");
+		tag_filter->add_new_suitable_value("Stackable Currency");
+		tag_filter->add_new_suitable_value("Currency");
+		tag_filter->add_new_suitable_value("Divinations");
+		tag_filter->add_new_suitable_value("Breachstones");
+		tag_filter->add_new_suitable_value("Memories");
+		tag_filter->add_new_suitable_value("Map Fragments");
+		tag_filter->add_new_suitable_value("Vault Keys");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "worth";
-		tag_filter->suitable_values.push_back("Trash");
+		tag_filter->add_new_suitable_value("Trash");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		//tag_filter = new LootSimulatorTagFilter;
 		//tag_filter->target_tag = "item tag";
-		//tag_filter->suitable_values.push_back("Basic currency");
+		//tag_filter->add_new_suitable_value("Basic currency");
 		//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->banned_tags.push_back("Deleted");
-		tag_filter->banned_tags.push_back("Hidden item");
+		tag_filter->add_new_banned_value("Deleted");
+		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -23295,59 +23553,59 @@ void EWindowMain::register_trash_items()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "base class";
 		//melee one hand
-		tag_filter->suitable_values.push_back("One Hand Maces");
-		tag_filter->suitable_values.push_back("One Hand Axes");
-		tag_filter->suitable_values.push_back("One Hand Swords");
-		tag_filter->suitable_values.push_back("Thrusting One Hand Swords");
-		tag_filter->suitable_values.push_back("Claws");
-		tag_filter->suitable_values.push_back("Daggers");
+		tag_filter->add_new_suitable_value("One Hand Maces");
+		tag_filter->add_new_suitable_value("One Hand Axes");
+		tag_filter->add_new_suitable_value("One Hand Swords");
+		tag_filter->add_new_suitable_value("Thrusting One Hand Swords");
+		tag_filter->add_new_suitable_value("Claws");
+		tag_filter->add_new_suitable_value("Daggers");
 
 		//caster one hand
-		tag_filter->suitable_values.push_back("Wands");
-		tag_filter->suitable_values.push_back("Sceptres");
-		tag_filter->suitable_values.push_back("Rune daggers");
+		tag_filter->add_new_suitable_value("Wands");
+		tag_filter->add_new_suitable_value("Sceptres");
+		tag_filter->add_new_suitable_value("Rune daggers");
 
 		//melee two hand
-		tag_filter->suitable_values.push_back("Two Hand Axes");
-		tag_filter->suitable_values.push_back("Two Hand Swords");
-		tag_filter->suitable_values.push_back("Two Hand Maces");
-		tag_filter->suitable_values.push_back("Wartaves");
+		tag_filter->add_new_suitable_value("Two Hand Axes");
+		tag_filter->add_new_suitable_value("Two Hand Swords");
+		tag_filter->add_new_suitable_value("Two Hand Maces");
+		tag_filter->add_new_suitable_value("Wartaves");
 
 		//caster two hand
-		tag_filter->suitable_values.push_back("Staves");
+		tag_filter->add_new_suitable_value("Staves");
 
 		//ranger two hand
-		tag_filter->suitable_values.push_back("Bows");
+		tag_filter->add_new_suitable_value("Bows");
 
 		//shields
-		tag_filter->suitable_values.push_back("Shields");
+		tag_filter->add_new_suitable_value("Shields");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "worth";
-		tag_filter->suitable_values.push_back("Trash");
+		tag_filter->add_new_suitable_value("Trash");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		//tag_filter = new LootSimulatorTagFilter;
 		//tag_filter->target_tag = "item tag";
-		//tag_filter->suitable_values.push_back("Basic currency");
+		//tag_filter->add_new_suitable_value("Basic currency");
 		//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
 
-		tag_filter->banned_tags.push_back("Deleted");
-		tag_filter->banned_tags.push_back("Hidden item");
-		tag_filter->banned_tags.push_back("Top tier base");
-		tag_filter->banned_tags.push_back("Rare base");
-		tag_filter->banned_tags.push_back("Good base for unique");
-		tag_filter->banned_tags.push_back("Expensive base for unique");
-		tag_filter->banned_tags.push_back("Heist base");
+		tag_filter->add_new_banned_value("Deleted");
+		tag_filter->add_new_banned_value("Hidden item");
+		tag_filter->add_new_banned_value("Top tier base");
+		tag_filter->add_new_banned_value("Rare base");
+		tag_filter->add_new_banned_value("Good base for unique");
+		tag_filter->add_new_banned_value("Expensive base for unique");
+		tag_filter->add_new_banned_value("Heist base");
 
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -23381,21 +23639,21 @@ void EWindowMain::register_pattern_basic_currencies()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->suitable_values.push_back("Basic currency");
+		tag_filter->add_new_suitable_value("Basic currency");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->suitable_values.push_back("World drop");
+		tag_filter->add_new_suitable_value("World drop");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->banned_tags.push_back("Deleted");
-		tag_filter->banned_tags.push_back("Hidden item");
+		tag_filter->add_new_banned_value("Deleted");
+		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -23427,17 +23685,17 @@ void EWindowMain::register_pattern_all_currencies()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "base class";
-		tag_filter->suitable_values.push_back("Stackable Currency");
-		tag_filter->suitable_values.push_back("Currency");
+		tag_filter->add_new_suitable_value("Stackable Currency");
+		tag_filter->add_new_suitable_value("Currency");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->banned_tags.push_back("Deleted");
-		tag_filter->banned_tags.push_back("Hidden item");
+		tag_filter->add_new_banned_value("Deleted");
+		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		game_item_generator->add_quantity(0.0f, 3.0f, 3.0f);
@@ -23470,10 +23728,10 @@ void EWindowMain::register_all_deleted_items()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->suitable_values.push_back("Deleted");
+		tag_filter->add_new_suitable_value("Deleted");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		game_item_generator->add_quantity(0.0f, 3.0f, 3.0f);
@@ -23542,47 +23800,47 @@ void EWindowMain::register_crubible_items_with_passive_tree()
 		//game_item_generator->random_selection_count = 8;
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "base class";
 
 		//melee one hand
-		tag_filter->suitable_values.push_back("One Hand Maces");
-		tag_filter->suitable_values.push_back("One Hand Axes");
-		tag_filter->suitable_values.push_back("One Hand Swords");
-		tag_filter->suitable_values.push_back("Thrusting One Hand Swords");
-		tag_filter->suitable_values.push_back("Claws");
-		tag_filter->suitable_values.push_back("Daggers");
+		tag_filter->add_new_suitable_value("One Hand Maces");
+		tag_filter->add_new_suitable_value("One Hand Axes");
+		tag_filter->add_new_suitable_value("One Hand Swords");
+		tag_filter->add_new_suitable_value("Thrusting One Hand Swords");
+		tag_filter->add_new_suitable_value("Claws");
+		tag_filter->add_new_suitable_value("Daggers");
 
 		//caster one hand
-		tag_filter->suitable_values.push_back("Wands");
-		tag_filter->suitable_values.push_back("Sceptres");
-		tag_filter->suitable_values.push_back("Rune daggers");
+		tag_filter->add_new_suitable_value("Wands");
+		tag_filter->add_new_suitable_value("Sceptres");
+		tag_filter->add_new_suitable_value("Rune daggers");
 
 		//melee two hand
-		tag_filter->suitable_values.push_back("Two Hand Axes");
-		tag_filter->suitable_values.push_back("Two Hand Swords");
-		tag_filter->suitable_values.push_back("Two Hand Maces");
-		tag_filter->suitable_values.push_back("Wartaves");
+		tag_filter->add_new_suitable_value("Two Hand Axes");
+		tag_filter->add_new_suitable_value("Two Hand Swords");
+		tag_filter->add_new_suitable_value("Two Hand Maces");
+		tag_filter->add_new_suitable_value("Wartaves");
 
 		//caster two hand
-		tag_filter->suitable_values.push_back("Staves");
+		tag_filter->add_new_suitable_value("Staves");
 
 		//ranger two hand
-		tag_filter->suitable_values.push_back("Bows");
+		tag_filter->add_new_suitable_value("Bows");
 
 		//shields
-		tag_filter->suitable_values.push_back("Shields");
+		tag_filter->add_new_suitable_value("Shields");
 
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->banned_tags.push_back("Deleted");
-		tag_filter->banned_tags.push_back("Heist base");
-		tag_filter->banned_tags.push_back("Hidden item");
+		tag_filter->add_new_banned_value("Deleted");
+		tag_filter->add_new_banned_value("Heist base");
+		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -23619,22 +23877,22 @@ void EWindowMain::register_crubible_currency()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Introduced: Crucible league");
+			tag_filter->add_new_suitable_value("Introduced: Crucible league");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -23669,21 +23927,21 @@ void EWindowMain::register_crubible_divinations()
 
 			game_item_generator->generations_count = 1;
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Cards");
+			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Introduced: Crucible league");
+			tag_filter->add_new_suitable_value("Introduced: Crucible league");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -23744,16 +24002,16 @@ void EWindowMain::register_ancestors_deleted_items()
 
 
 
-	LootSimulatorTagFilter*
-		tag_filter = new LootSimulatorTagFilter;
+	DataEntityTagFilter*
+		tag_filter = new DataEntityTagFilter;
 	tag_filter->target_tag = "item tag";
-	tag_filter->suitable_values.push_back("Deleted in Trial of the Ancestors");
+	tag_filter->add_new_suitable_value("Deleted in Trial of the Ancestors");
 	game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-	tag_filter = new LootSimulatorTagFilter;
+	tag_filter = new DataEntityTagFilter;
 	tag_filter->target_tag = "data type";
-	tag_filter->suitable_values.push_back("Game item");
+	tag_filter->add_new_suitable_value("Game item");
 	game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -23855,21 +24113,21 @@ void EWindowMain::register_ancestors_divinations()
 
 			game_item_generator->generations_count = 1;
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Divination Cards");
+			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Introduced: Trial of the Ancestors league");
+			tag_filter->add_new_suitable_value("Introduced: Trial of the Ancestors league");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -23910,22 +24168,22 @@ void EWindowMain::register_ancestors_small_tattoo()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Regular tattoo");
+			tag_filter->add_new_suitable_value("Regular tattoo");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -23960,22 +24218,22 @@ void EWindowMain::register_ancestors_honoured_tattoo()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Honoured tattoo");
+			tag_filter->add_new_suitable_value("Honoured tattoo");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -24010,22 +24268,22 @@ void EWindowMain::register_ancestors_loyalty_tattoo()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
-			tag_filter->suitable_values.push_back("Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
+			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Loyalty tattoo");
+			tag_filter->add_new_suitable_value("Loyalty tattoo");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -24060,25 +24318,25 @@ void EWindowMain::register_ancestors_currency()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Stackable Currency");
+			tag_filter->add_new_suitable_value("Stackable Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Introduced: Trial of the Ancestors league");
+			tag_filter->add_new_suitable_value("Introduced: Trial of the Ancestors league");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
-			tag_filter->banned_tags.push_back("Tattoo");
-			tag_filter->banned_tags.push_back("Omen");
-			tag_filter->banned_tags.push_back("Honourable tattoo");
-			tag_filter->banned_tags.push_back("Loyalty tattoo");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
+			tag_filter->add_new_banned_value("Tattoo");
+			tag_filter->add_new_banned_value("Omen");
+			tag_filter->add_new_banned_value("Honourable tattoo");
+			tag_filter->add_new_banned_value("Loyalty tattoo");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -24113,16 +24371,16 @@ void EWindowMain::register_ancestors_sanctum_items()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Sanctum item");
+			tag_filter->add_new_suitable_value("Sanctum item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -24157,16 +24415,16 @@ void EWindowMain::register_ancestors_omens()
 
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->suitable_values.push_back("Omen");
+			tag_filter->add_new_suitable_value("Omen");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -24197,16 +24455,16 @@ void EWindowMain::register_crubible_deleted_items()
 
 
 
-	LootSimulatorTagFilter*
-		tag_filter = new LootSimulatorTagFilter;
+	DataEntityTagFilter*
+		tag_filter = new DataEntityTagFilter;
 	tag_filter->target_tag = "item tag";
-	tag_filter->suitable_values.push_back("Deleted in Crucible");
+	tag_filter->add_new_suitable_value("Deleted in Crucible");
 	game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
-	tag_filter = new LootSimulatorTagFilter;
+	tag_filter = new DataEntityTagFilter;
 	tag_filter->target_tag = "data type";
-	tag_filter->suitable_values.push_back("Game item");
+	tag_filter->add_new_suitable_value("Game item");
 	game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
@@ -24237,17 +24495,17 @@ void EWindowMain::register_crubible_deleted_attributes()
 			game_item_generator->random_selection_count = 1;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Jewels");
+			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
-			tag_filter->banned_tags.push_back("Non-default jewel");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
+			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
@@ -24284,17 +24542,17 @@ void EWindowMain::register_crubible_deleted_attributes()
 			game_item_generator->random_selection_count = 1;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Jewels");
+			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
-			tag_filter->banned_tags.push_back("Non-default jewel");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
+			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
@@ -24331,17 +24589,17 @@ void EWindowMain::register_crubible_deleted_attributes()
 			game_item_generator->random_selection_count = 1;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Jewels");
+			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
-			tag_filter->banned_tags.push_back("Non-default jewel");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
+			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
@@ -24379,17 +24637,17 @@ void EWindowMain::register_crubible_deleted_attributes()
 			game_item_generator->random_selection_count = 1;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Jewels");
+			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
-			tag_filter->banned_tags.push_back("Non-default jewel");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
+			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
@@ -24427,17 +24685,17 @@ void EWindowMain::register_crubible_deleted_attributes()
 			game_item_generator->random_selection_count = 1;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Jewels");
+			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
-			tag_filter->banned_tags.push_back("Non-default jewel");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
+			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
@@ -24475,17 +24733,17 @@ void EWindowMain::register_crubible_deleted_attributes()
 			game_item_generator->random_selection_count = 1;
 
 
-			LootSimulatorTagFilter*
-				tag_filter = new LootSimulatorTagFilter;
+			DataEntityTagFilter*
+				tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "base class";
-			tag_filter->suitable_values.push_back("Jewels");
+			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-			tag_filter = new LootSimulatorTagFilter;
+			tag_filter = new DataEntityTagFilter;
 			tag_filter->target_tag = "item tag";
-			tag_filter->banned_tags.push_back("Deleted");
-			tag_filter->banned_tags.push_back("Hidden item");
-			tag_filter->banned_tags.push_back("Non-default jewel");
+			tag_filter->add_new_banned_value("Deleted");
+			tag_filter->add_new_banned_value("Hidden item");
+			tag_filter->add_new_banned_value("Non-default jewel");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			game_item_generator->add_rarity(1.0f, 2.0f, 3.0f);
@@ -24541,20 +24799,20 @@ void EWindowMain::register_crubible_changed_items()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "data type";
-		tag_filter->suitable_values.push_back("Game item");
+		tag_filter->add_new_suitable_value("Game item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->suitable_values.push_back("Changed in Crucible");
+		tag_filter->add_new_suitable_value("Changed in Crucible");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "base class";
-		tag_filter->banned_tags.push_back("Wands");
+		tag_filter->add_new_banned_value("Wands");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -24569,15 +24827,15 @@ void EWindowMain::register_crubible_changed_items()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "data type";
-		tag_filter->suitable_values.push_back("Game item");
+		tag_filter->add_new_suitable_value("Game item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "base class";
-		tag_filter->suitable_values.push_back("Vault Keys");
+		tag_filter->add_new_suitable_value("Vault Keys");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		loot_simulator_pattern->game_item_generator_list.push_back(game_item_generator);
@@ -24593,20 +24851,20 @@ void EWindowMain::register_crubible_changed_items()
 
 
 
-		LootSimulatorTagFilter*
-			tag_filter = new LootSimulatorTagFilter;
+		DataEntityTagFilter*
+			tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "data type";
-		tag_filter->suitable_values.push_back("Game item");
+		tag_filter->add_new_suitable_value("Game item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "item tag";
-		tag_filter->suitable_values.push_back("Changed in Crucible");
+		tag_filter->add_new_suitable_value("Changed in Crucible");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
-		tag_filter = new LootSimulatorTagFilter;
+		tag_filter = new DataEntityTagFilter;
 		tag_filter->target_tag = "base class";
-		tag_filter->suitable_values.push_back("Wands");
+		tag_filter->add_new_suitable_value("Wands");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		game_item_generator->add_rarity(0, 3, 2.0f);
@@ -27280,42 +27538,56 @@ void GameItemGenerator::generate_game_item_list(std::vector<EGameItem*>* _target
 		}
 		else
 		{
-			std::vector<EDataEntity*> generated_suitable_data_entity_item_vector;
+			std::vector<EDataEntity*>
+			generated_suitable_data_entity_item_vector;
 
 
 			if (!filtered_by_tags.empty())
 			{
-				for (EDataEntity* data_entity : EDataEntity::data_entity_global_list)
+				for (EDataEntity* data_entity : EWindowMain::registered_data_entity_game_item_list)
 				{
 					bool all_tag_filter_satisfied = true;
 					bool any_banned_tag_match = false;
 
-					for (LootSimulatorTagFilter* tag_filter : filtered_by_tags)
-						if (all_tag_filter_satisfied)
+					for (DataEntityTagFilter* tag_filter : filtered_by_tags)
+					if (all_tag_filter_satisfied)
+					{
+						if (!tag_filter->suitable_values.empty())
 						{
-							if (!tag_filter->suitable_values.empty())
+							all_tag_filter_satisfied = false;
+							
+							//bool at_least_one_active_tag_filter = false;
+
+							for (DETF_Value required_tag_value : tag_filter->suitable_values)
 							{
-								all_tag_filter_satisfied = false;
-								for (std::string required_tag_value : tag_filter->suitable_values)
+								//at_least_one_active_tag_filter |= required_tag_value.is_active;
+								
+								if
+								(
+									(required_tag_value.is_active)
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value(0, tag_filter->target_tag, required_tag_value.target_value, data_entity))
+								)
 								{
-									if (DataEntityUtils::is_exist_tag_by_name_and_value(0, tag_filter->target_tag, required_tag_value, data_entity))
-									{
-										all_tag_filter_satisfied = true;
-										break;
-									}
-
-									//if (!all_tag_filter_satisfied) { break; }
-								}
-							}
-
-							//if (!all_tag_filter_satisfied) { break; }
-							for (std::string banned_tag_value : tag_filter->banned_tags)
-								if (DataEntityUtils::is_exist_tag_by_name_and_value(0, tag_filter->target_tag, banned_tag_value, data_entity))
-								{
-									any_banned_tag_match = true;
+									all_tag_filter_satisfied = true;
 									break;
 								}
+
+								
+								//if (!all_tag_filter_satisfied) { break; }
+							}
+
+							//all_tag_filter_satisfied |= !at_least_one_active_tag_filter;
 						}
+
+						//if (!all_tag_filter_satisfied) { break; }
+						for (DETF_Value banned_tag_value : tag_filter->banned_tags)
+						if (DataEntityUtils::is_exist_tag_by_name_and_value(0, tag_filter->target_tag, banned_tag_value.target_value, data_entity))
+						{
+							any_banned_tag_match = true;
+							break;
+						}
+					}
 
 					if ((all_tag_filter_satisfied) && (!any_banned_tag_match))
 					{
@@ -28731,6 +29003,7 @@ EButtonGroup* EButtonGroupLootSimulator::pointer_to_loot_buttons_segment;
 EButtonGroup* EButtonGroupLootSimulator::pointer_to_patterns_buttons_segment;
 EButtonGroup* EButtonGroupLootSimulator::pointer_to_right_side_info_buttons;
 EButtonGroup* EButtonGroupLootSimulator::pointer_to_warning_group;
+EButtonGroup* EButtonGroupLootSimulator::pointer_to_flag_configurator_group;
 
 EntityButtonVariantRouter* EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button;
 EntityButton* EButtonGroupLootSimulator::pointer_to_input_area_level_button;
@@ -30523,4 +30796,30 @@ void EButtonGroupPreviewBox::draw_button_group()
 			}
 		}
 	}
+}
+
+DataEntityTagFilter* DataEntityTagFilter::add_new_suitable_value(std::string _value, ELocalisationText _ltext)
+{
+	DETF_Value
+	new_value;
+
+	new_value.target_value				= _value;
+	new_value.localised_attribute_name	= _ltext;
+
+	suitable_values.push_back(new_value);
+
+	return this;
+}
+
+DataEntityTagFilter* DataEntityTagFilter::add_new_banned_value(std::string _value, ELocalisationText _ltext)
+{
+	DETF_Value
+	new_value;
+
+	new_value.target_value				= _value;
+	new_value.localised_attribute_name	= _ltext;
+
+	banned_tags.push_back(new_value);
+
+	return this;
 }

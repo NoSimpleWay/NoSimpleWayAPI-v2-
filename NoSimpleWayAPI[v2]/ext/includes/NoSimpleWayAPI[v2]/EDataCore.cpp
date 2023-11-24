@@ -3190,7 +3190,7 @@ void ETextParser::split_data_entity_list_to_named_structs()
 	for (int i = 0; i < EDataEntity::data_entity_global_list.size(); i++)
 	{
 		EDataEntity*
-			data_entity = EDataEntity::data_entity_global_list[i];
+		data_entity = EDataEntity::data_entity_global_list[i];
 
 		if (data_entity != nullptr)
 		{
