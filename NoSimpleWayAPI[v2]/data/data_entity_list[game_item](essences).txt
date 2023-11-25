@@ -1,60 +1,76 @@
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Whispering Essence of"
+	[tag]"base name"	[value]"Whispering Essence[T7]"
+	[tag]"name EN"		[value]"Whispering Essence[T7]"
 	[tag]"name RU"		[value]"Шепчущая сущность"
 
 	[tag]"icon path"	[value]"Essence_whispering"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Muttering Essence of"
-	[tag]"name RU"		[value]"Бормочущая сущность"
+	[tag]"base name"	[value]"Muttering Essence"
+	[tag]"name EN"		[value]"Muttering Essence[T6]"
+	[tag]"name RU"		[value]"Бормочущая сущность[T6]"
 
 	[tag]"icon path"	[value]"Essence_muttering"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
 	
 	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Weeping Essence of"
-	[tag]"name RU"		[value]"Плачущая сущность"
+	[tag]"base name"	[value]"Weeping Essence"
+	[tag]"name EN"		[value]"Weeping Essence[T5]"
+	[tag]"name RU"		[value]"Плачущая сущность[T5]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+	[tag]"worth"		[value]"Common"
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Wailing Essence of"
-	[tag]"name RU"		[value]"Вопящая сущность"
+	[tag]"base name"	[value]"Wailing Essence"
+	[tag]"name EN"		[value]"Wailing Essence[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
 	
 	
 	
@@ -62,30 +78,38 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Screaming Essence of"
-	[tag]"name RU"		[value]"Кричащая сущность"
+	[tag]"base name"	[value]"Screaming Essence"
+	[tag]"name EN"		[value]"Screaming Essence[T3]"
+	[tag]"name RU"		[value]"Кричащая сущность[T3]"
 
 	[tag]"icon path"	[value]"Essence_screaming"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T3"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
 
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Shrieking Essence of"
-	[tag]"name RU"		[value]"Визжащая сущность"
+	[tag]"base name"	[value]"Shrieking Essence"
+	[tag]"name EN"		[value]"Shrieking Essence[T2]"
+	[tag]"name RU"		[value]"Визжащая сущность[T2]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-
+	
+	[tag]"item tag"		[value]"Essence tier: T2"
+	[tag]"worth"		[value]"Rare"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -94,15 +118,19 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Deafening Essence of"
-	[tag]"name RU"		[value]"Оглушающая сущность"
+	[tag]"base name"	[value]"Deafening Essence"
+	[tag]"name EN"		[value]"Deafening Essence[T1]"
+	[tag]"name RU"		[value]"Оглушающая сущность[T1]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-
+	
+	[tag]"item tag"		[value]"Essence tier: T1"
+	[tag]"worth"		[value]"Rare"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -129,6 +157,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
+	
+	[tag]"item tag"		[value]"Essence tier: T0"
+	[tag]"worth"		[value]"Rare"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -143,6 +175,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Essence tier: T0"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -158,6 +193,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Essence tier: T0"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -173,10 +211,18 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Essence tier: T0"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+
+
+
+
+
 
 
 
@@ -191,6 +237,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Essences"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Essence tier: special"
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

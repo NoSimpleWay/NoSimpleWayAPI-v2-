@@ -2135,3 +2135,121 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_trash"
+	[tag]"name EN"		[value]"Worth: Trah"
+	[tag]"name RU"		[value]"Мусор"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_common"
+	[tag]"name EN"		[value]"Worth: Common"
+	[tag]"name RU"		[value]"Дешёвое"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_moderate"
+	[tag]"name EN"		[value]"Worth: Moderate"
+	[tag]"name RU"		[value]"Недорогое"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_rare"
+	[tag]"name EN"		[value]"Worth: Rare"
+	[tag]"name RU"		[value]"Редкое"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_expensive"
+	[tag]"name EN"		[value]"Worth: Expensive"
+	[tag]"name RU"		[value]"Ценное"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_very_expensive"
+	[tag]"name EN"		[value]"Worth: Very expensive"
+	[tag]"name RU"		[value]"Очень ценное"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_essence_T7"
+	[tag]"name EN"		[value]"T7 Essence"
+	[tag]"name RU"		[value]"T7 Сущность"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_essence_T6"
+	[tag]"name EN"		[value]"T6 Essence"
+	[tag]"name RU"		[value]"T6 Сущность"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_essence_T5"
+	[tag]"name EN"		[value]"T5 Essence"
+	[tag]"name RU"		[value]"T5 Сущность"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_essence_T4"
+	[tag]"name EN"		[value]"T4 Essence"
+	[tag]"name RU"		[value]"T4 Сущность"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_essence_T3"
+	[tag]"name EN"		[value]"T3 Essence"
+	[tag]"name RU"		[value]"T3 Сущность"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_essence_T2"
+	[tag]"name EN"		[value]"T2 Essence"
+	[tag]"name RU"		[value]"T2 Сущность"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_essence_T1"
+	[tag]"name EN"		[value]"T1 Essence"
+	[tag]"name RU"		[value]"T1 Сущность"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_essence_T0"
+	[tag]"name EN"		[value]"T0 Essence"
+	[tag]"name RU"		[value]"T0 Сущность"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_essence_special"
+	[tag]"name EN"		[value]"Special essence"
+	[tag]"name RU"		[value]"Особые Сущности"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

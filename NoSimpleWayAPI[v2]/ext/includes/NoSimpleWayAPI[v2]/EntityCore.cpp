@@ -2605,7 +2605,7 @@ RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_k
 RouterVariant* EntityButtonVariantRouter::add_router_variant_with_localization_color_and_icon(ELocalisationText* _ltext, std::string _key_for_window, float _r, float _g, float _b, float _a, ETextureGabarite* _icon)
 {
 	RouterVariant*
-		router_variant = new RouterVariant();
+	router_variant = new RouterVariant();
 
 	router_variant->router_localisation = *_ltext;
 

@@ -263,6 +263,16 @@ public:
 
 };
 
+class LootSimulatorPattern;
+class DataEntityTagFilter;
+class EntityButtonVariantRouterPatternConfigurer : public EntityButtonVariantRouterForFilterBlock
+{
+public:
+	DataEntityTagFilter* target_tag_filter;
+	EButtonGroup* target_group_with_configurer_buttons;
+	std::vector<EntityButtonVariantRouterPatternConfigurer*>* router_button_vector_pointer;
+};
+
 class EntityButtonFilterBlockTab : public EntityButton
 {
 public:
@@ -911,6 +921,7 @@ namespace EDataActionCollection
 
 	//void action_select_loot_filter_pattern			(Entity* _entity, ECustomData* _custom_data, float _d);
 
+	void action_change_selection_of_tag_configurer(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 	//type text
@@ -1196,7 +1207,7 @@ public:
 	static void register_pattern_divinations_rare();
 	static void register_pattern_divinations_moderate();
 	static void register_pattern_divinations_cheap();
-	static void register_pattern_divinations_trash();
+	static void register_pattern_divinations_by_worth();
 	////////////////////////////////////////////////////////////////////////
 
 
@@ -1272,10 +1283,6 @@ public:
 	static void register_new_folder_catalysts();
 	////////////////////////////////////////////////////////////////////////
 
-	//INCUBATORS FOLDER
-	static void register_new_folder_incubators();
-	////////////////////////////////////////////////////////////////////////
-
 
 
 	//CURRENCY SHARDS FOLDER
@@ -1291,7 +1298,7 @@ public:
 
 
 	//UNUSUAL CURRENCY FOLDER
-	static void register_new_folder_unusual_currency();
+	static void register_new_folder_all_currency();
 	static void register_pattern_harvest_items();
 	static void register_pattern_expedition_currency();
 	static void register_pattern_eldritch_currency();
@@ -1312,7 +1319,7 @@ public:
 	static void register_pattern_rare_currencies();
 	static void register_pattern_good_currencies();
 	static void register_pattern_cheap_currencies();
-	static void register_pattern_trash_currencies();
+	static void register_pattern_basic_currencies();
 	////////////////////////////////////////////////////////////////////////
 
 
@@ -1323,7 +1330,7 @@ public:
 	static void register_trash_items();
 	////////////////////////////////////////////////////////////////////////
 	//unused
-	static void register_pattern_basic_currencies();
+	//static void register_pattern_basic_currencies();
 	static void register_pattern_all_currencies();
 	////////////////////////////////////////////////////////////////////////
 
@@ -1511,7 +1518,6 @@ enum LootPatternFolderEnum
 	SPECIAL_ITEMS
 };
 
-class LootSimulatorPattern;
 class EntityButtonLootPatternSelector : public EntityButton
 {
 public:
@@ -1548,7 +1554,7 @@ class GameItemAttribute;
 struct DETF_Value
 {
 public:
-	std::string			target_value;
+	std::string			target_value_key;
 	ELocalisationText	localised_attribute_name;
 	bool				is_active = true;
 };
@@ -1735,6 +1741,7 @@ public:
 	int										random_selection_count = 1;
 
 	bool									forceful_warn_when_hided = false;
+	bool									can_be_configured = true;
 
 	ELocalisationText						filtered_by_exact_name;
 	std::vector<DataEntityTagFilter*>		filtered_by_tags;
@@ -1755,6 +1762,9 @@ public:
 
 	void										add_flag_attrubite_by_name(std::string _attribute_name, float _chance_to_add);
 	void										add_class(ELocalisationText _attribute_localisation);
+
+	void										add_default_worth_tags(int _min, int _max);
+	void										add_default_worth_tags();
 
 };
 
@@ -1777,6 +1787,7 @@ public:
 	bool										always_show = false;
 	bool										is_folder = false;
 	bool										have_force_field = false;
+	bool										can_be_configured = true;
 
 
 };

@@ -1,26 +1,28 @@
 
 
 ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Tainted Blessing"
-	[tag]"name RU"		[value]"Порочное благословение"
-
-	[tag]"icon path"	[value]"TaintedBlessing"
-	[tag]"base class"	[value]"Stackable Currency"
+	[tag]"data type"		[value]"Game item"
 	
-	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Tainted currency"
+	[tag]"name EN"			[value]"Tainted Blessing"
+	[tag]"name RU"			[value]"Порочное благословение"
 	
-	[tag]"item tag"		[value]"Introduced: Scourge league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"icon path"		[value]"TaintedBlessing"
+	[tag]"base class"		[value]"Stackable Currency"
+		
+	[tag]"item tag"			[value]"Non-basic currency"
+	[tag]"item tag"			[value]"Tainted currency"
+		
+	[tag]"item tag"			[value]"Introduced: Scourge league"
+	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
 	
-	[tag]"drop level"	[value]"35"
+	[tag]"drop level"		[value]"35"
 	[tag]"stack multiplier"	[value]"0.2"
-	[tag]"max stack size"	[value]"1	0"
+	[tag]"max stack size"	[value]"10"
+	
+	[tag]"worth"			[value]"Rare"
 
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
+	[tag]"item width"		[value]"1"
+	[tag]"item height"		[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -40,6 +42,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"2"
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"20"
+	
+	[tag]"worth"			[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -62,6 +66,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"50"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"20"
+	
+	[tag]"worth"			[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -85,6 +91,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"20"
 
+	[tag]"worth"			[value]"Common"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
@@ -106,6 +114,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"35"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
+	
+	[tag]"worth"			[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -127,6 +137,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"2"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"20"
+	
+	[tag]"worth"			[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -148,6 +160,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"2"
 	[tag]"max stack size"	[value]"20"
+	
+	[tag]"worth"			[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -169,6 +183,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"3"
 	[tag]"max stack size"	[value]"40"
+	
+	[tag]"worth"			[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -191,6 +207,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"12"
 	[tag]"stack multiplier"	[value]"1"
 	[tag]"max stack size"	[value]"10"
+	
+	[tag]"worth"			[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -213,6 +231,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"68"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
+	
+	[tag]"worth"			[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

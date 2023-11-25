@@ -1667,6 +1667,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
@@ -2691,6 +2694,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"

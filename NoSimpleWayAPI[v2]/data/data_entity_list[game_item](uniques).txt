@@ -1256,10 +1256,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"World drop"
+
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Chayula"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -7029,7 +7030,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Chayula"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -8483,8 +8485,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Shaper drop"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Chayula"
 	
 	[tag]"worth"		[value]"Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -9611,6 +9613,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Common"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Simple Robe"
+	[tag]"name EN"		[value]"Skin of the Loyal"
+	[tag]"name RU"		[value]"Кожа верных"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Chayula"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	
 	
@@ -12757,7 +12781,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Shaper"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -18760,7 +18785,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Chayula"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -18855,7 +18881,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Chayula"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -19053,7 +19080,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Chayula"
 	
 	[tag]"worth"		[value]"Common"
 	
