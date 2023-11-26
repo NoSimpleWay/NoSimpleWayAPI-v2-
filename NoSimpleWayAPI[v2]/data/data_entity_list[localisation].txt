@@ -1301,7 +1301,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	[tag]"key"			[value]"variant_mode_default"
-	[tag]"base name"	[value]"default"
+	[tag]"base name"	[value]"standard"
 	[tag]"name EN"		[value]"Default"
 	[tag]"name RU"		[value]"Стандарт"
 	

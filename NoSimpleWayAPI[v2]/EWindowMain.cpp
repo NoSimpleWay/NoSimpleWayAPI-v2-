@@ -2139,7 +2139,7 @@ void EDataActionCollection::action_generate_items_from_this_loot_pattern(Entity*
 							but->add_router_variant_with_localization_color_and_icon(&detf->localised_attribute_name, "", 0.5f, 0.4f, 0.3f, 1.0f, nullptr);
 							but->add_router_variant_with_localization_color_and_icon(&detf->localised_attribute_name, "", 1.0f, 0.9f, 0.8f, 1.0f, nullptr);
 
-							but->select_variant(1);
+							but->select_variant((int)(detf->is_active));
 
 							but->target_bool_value = &(detf->is_active);
 
@@ -2845,7 +2845,7 @@ void EDataActionCollection::action_switch_loot_version_flag(Entity* _entity, ECu
 	EWindowMain::loot_filter_editor->need_refresh = true;
 
 	EntityButtonVariantRouter*
-		version_router = EWindowMain::loot_simulator_button_group->pointer_to_target_loot_filter_version_button;
+	version_router = EWindowMain::loot_simulator_button_group->pointer_to_target_loot_filter_version_button;
 
 
 	//refresh loot simulator version router button
@@ -6083,88 +6083,11 @@ EWindowMain::EWindowMain()
 			ELocalisationText local_text;
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-			//		router variant
-			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-			router_variant = new RouterVariant();
-			//
-
-			local_text.base_name = "Very soft";
-			local_text.localisations[NSW_localisation_EN] = "Loot filter version: Very soft";
-			local_text.localisations[NSW_localisation_RU] = "Версия лут фильтра: Стартовая";
-			router_variant->router_localisation = local_text;
-
-			router_variant->text_color = new HSVRGBAColor();
-			router_variant->text_color->set_color_RGBA(1.0f, 0.8f, 0.6f, 1.0f);
-
-			variant_router_button->router_variant_list.push_back(router_variant);
-			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-
-
-			//		router variant
-			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-			//router_variant = new RouterVariant();
-			//
-			router_variant = new RouterVariant();
-
-			local_text.base_name = "Soft";
-			local_text.localisations[NSW_localisation_EN] = "Loot filter version: Soft";
-			local_text.localisations[NSW_localisation_RU] = "Версия лут фильтра: Ранняя";
-			router_variant->router_localisation = local_text;
-
-			router_variant->text_color = new HSVRGBAColor();
-			router_variant->text_color->set_color_RGBA(0.5f, 1.0f, 0.75f, 1.0f);
-
-			variant_router_button->router_variant_list.push_back(router_variant);
-			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-			//		router variant
-			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-			router_variant = new RouterVariant();
-			//
-
-			local_text.base_name = "Default";
-			local_text.localisations[NSW_localisation_EN] = "Loot filter version: Default";
-			local_text.localisations[NSW_localisation_RU] = "Версия лут фильтра: Обычная";
-			router_variant->router_localisation = local_text;
-
-			router_variant->text_color = new HSVRGBAColor();
-			router_variant->text_color->set_color_RGBA(0.5f, 0.75f, 1.0f, 1.0f);
-
-			variant_router_button->router_variant_list.push_back(router_variant);
-			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-			//		router variant
-			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-			router_variant = new RouterVariant();
-			//
-
-			local_text.base_name = "Strict";
-			local_text.localisations[NSW_localisation_EN] = "Loot filter version: Strict";
-			local_text.localisations[NSW_localisation_RU] = "Версия лут фильтра: Строгая";
-			router_variant->router_localisation = local_text;
-
-			router_variant->text_color = new HSVRGBAColor();
-			router_variant->text_color->set_color_RGBA(1.0f, 0.5f, 1.0f, 1.0f);
-
-			variant_router_button->router_variant_list.push_back(router_variant);
-			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
-			//		router variant
-			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-			router_variant = new RouterVariant();
-			//
-
-			local_text.base_name = "Very strict";
-			local_text.localisations[NSW_localisation_EN] = "Loot filter version: Very strict";
-			local_text.localisations[NSW_localisation_RU] = "Версия лут фильтра: Очень строгая";
-			router_variant->router_localisation = local_text;
-
-			router_variant->text_color = new HSVRGBAColor();
-			router_variant->text_color->set_color_RGBA(1.0f, 0.75f, 0.35f, 1.0f);
-
-			variant_router_button->router_variant_list.push_back(router_variant);
-			/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
+			for (int i = 0; i < NSW_LOOT_FILTER_MAX_VERSIONS; i++)
+			if (LootFilterVersionPattern::NSW_LOOT_FILTER_VERSION_ACTIVE[i])
+			{
+				variant_router_button->add_router_variant_by_text_and_color(LootFilterVersionPattern::NSW_LOOT_VERSION_NAME[i], 0.9f, 0.8f, 0.7f, 1.0f);
+			}
 
 			variant_router_button->select_variant(0);
 
@@ -12211,8 +12134,8 @@ void EWindowMain::register_filter_rules()
 		jc_filter_rule->category_id = 2;
 
 		jc_filter_rule->localisation_text = new ELocalisationText();
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Tier 1 two-handed attributes";
-		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Тир 1 aтрибуты двуручек";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_EN] = "Tier 1 two-handed melee axe sword mace";
+		jc_filter_rule->localisation_text->localisations[NSW_localisation_RU] = "Тир 1 aтрибуты мили двуручек";
 		jc_filter_rule->tag = "Explicit";
 
 		//filter by game item
@@ -12264,7 +12187,7 @@ void EWindowMain::register_filter_rules()
 
 		jc_filter = new DataEntityFilter();
 		jc_filter->target_tag_name = "explicit tag";
-		jc_filter->suitable_values_list.push_back("One-hand attribute");
+		jc_filter->suitable_values_list.push_back("One-handed attribute");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 		EFilterRule::registered_filter_rules_for_list.push_back(jc_filter_rule);

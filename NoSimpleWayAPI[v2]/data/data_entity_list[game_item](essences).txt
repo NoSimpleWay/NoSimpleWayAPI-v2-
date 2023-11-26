@@ -1,65 +1,64 @@
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"base name"	[value]"Whispering Essence[T7]"
-	[tag]"name EN"		[value]"Whispering Essence[T7]"
-	[tag]"name RU"		[value]"Шепчущая сущность"
+	[tag]"base name"	[value]"Whispering Essence of Greed"
+	[tag]"name EN"		[value]"Whispering Essence of Greed[T1]"
+	[tag]"name RU"		[value]"Шепчущая сущность жадности[T1]"
 
 	[tag]"icon path"	[value]"Essence_whispering"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
-	[tag]"item tag"		[value]"Essence tier: T7"
+	[tag]"item tag"		[value]"Essence tier: T1"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Trash"
-
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"base name"	[value]"Muttering Essence"
-	[tag]"name EN"		[value]"Muttering Essence[T6]"
-	[tag]"name RU"		[value]"Бормочущая сущность[T6]"
+	[tag]"base name"	[value]"Muttering Essence of Greed"
+	[tag]"name EN"		[value]"Muttering Essence of Greed[T2]"
+	[tag]"name RU"		[value]"Бормочущая сущность жадности[T2]"
 
 	[tag]"icon path"	[value]"Essence_muttering"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
-	[tag]"item tag"		[value]"Essence tier: T6"
+	[tag]"item tag"		[value]"Essence tier: T2"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"worth"		[value]"Trash"
 	
-	
-	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"base name"	[value]"Weeping Essence"
-	[tag]"name EN"		[value]"Weeping Essence[T5]"
-	[tag]"name RU"		[value]"Плачущая сущность[T5]"
+	[tag]"base name"	[value]"Weeping Essence of Greed"
+	[tag]"name EN"		[value]"Weeping Essence of Greed[T3]"
+	[tag]"name RU"		[value]"Плачущая сущность жадности[T3]"
 
 	[tag]"icon path"	[value]"Essence_weepeng"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
-	[tag]"item tag"		[value]"Essence tier: T5"
+	[tag]"item tag"		[value]"Essence tier: T3"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Trash"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"base name"	[value]"Wailing Essence"
-	[tag]"name EN"		[value]"Wailing Essence[T4]"
-	[tag]"name RU"		[value]"Вопящая сущность[T4]"
+	[tag]"base name"	[value]"Wailing Essence of Greed"
+	[tag]"name EN"		[value]"Wailing Essence of Greed[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность жадности[T4]"
 
 	[tag]"icon path"	[value]"Essence_wailing"
 	[tag]"base class"	[value]"Currency"
@@ -72,17 +71,112 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Common"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Greed"
+	[tag]"name EN"		[value]"Screaming Essence of Greed[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность жадности[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Greed"
+	[tag]"name EN"		[value]"Shrieking Essence of Greed[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность жадности[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Greed"
+	[tag]"name EN"		[value]"Deafening Essence of Greed[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность жадности[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	
+	
+	
+	
+	
+	
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"base name"	[value]"Screaming Essence"
-	[tag]"name EN"		[value]"Screaming Essence[T3]"
-	[tag]"name RU"		[value]"Кричащая сущность[T3]"
+	[tag]"base name"	[value]"Whispering Essence of Contempt"
+	[tag]"name EN"		[value]"Whispering Essence of Contempt[T1]"
+	[tag]"name RU"		[value]"Шепчущая сущность презрения[T1]"
 
-	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"icon path"	[value]"Essence_whispering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Muttering Essence of Contempt"
+	[tag]"name EN"		[value]"Muttering Essence of Contempt[T2]"
+	[tag]"name RU"		[value]"Бормочущая сущность презрения[T2]"
+
+	[tag]"icon path"	[value]"Essence_muttering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Weeping Essence of Contempt"
+	[tag]"name EN"		[value]"Weeping Essence of Contempt[T3]"
+	[tag]"name RU"		[value]"Плачущая сущность презрения[T3]"
+
+	[tag]"icon path"	[value]"Essence_weepeng"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
@@ -91,55 +185,1748 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"worth"		[value]"Moderate"
-
-
+	[tag]"worth"		[value]"Trash"
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"base name"	[value]"Shrieking Essence"
-	[tag]"name EN"		[value]"Shrieking Essence[T2]"
-	[tag]"name RU"		[value]"Визжащая сущность[T2]"
+	[tag]"base name"	[value]"Wailing Essence of Contempt"
+	[tag]"name EN"		[value]"Wailing Essence of Contempt[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность презрения[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Contempt"
+	[tag]"name EN"		[value]"Screaming Essence of Contempt[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность презрения[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Contempt"
+	[tag]"name EN"		[value]"Shrieking Essence of Contempt[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность презрения[T6]"
 
 	[tag]"icon path"	[value]"Essence_shrieking"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-	
-	[tag]"item tag"		[value]"Essence tier: T2"
-	[tag]"worth"		[value]"Rare"
-	
+	[tag]"item tag"		[value]"Essence tier: T6"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+	[tag]"worth"		[value]"Moderate"
 	
-
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"base name"	[value]"Deafening Essence"
-	[tag]"name EN"		[value]"Deafening Essence[T1]"
-	[tag]"name RU"		[value]"Оглушающая сущность[T1]"
+	[tag]"base name"	[value]"Deafening Essence of Contempt"
+	[tag]"name EN"		[value]"Deafening Essence of Contempt[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность презрения[T7]"
 
 	[tag]"icon path"	[value]"Essence_deafening"
 	[tag]"base class"	[value]"Currency"
 	
 	[tag]"item tag"		[value]"Essences"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-	
-	[tag]"item tag"		[value]"Essence tier: T1"
-	[tag]"worth"		[value]"Rare"
-	
+	[tag]"item tag"		[value]"Essence tier: T7"
+
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Whispering Essence of Hatred"
+	[tag]"name EN"		[value]"Whispering Essence of Hatred[T1]"
+	[tag]"name RU"		[value]"Шепчущая сущность ненависти[T1]"
+
+	[tag]"icon path"	[value]"Essence_whispering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Muttering Essence of Hatred"
+	[tag]"name EN"		[value]"Muttering Essence of Hatred[T2]"
+	[tag]"name RU"		[value]"Бормочущая сущность ненависти[T2]"
+
+	[tag]"icon path"	[value]"Essence_muttering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Weeping Essence of Hatred"
+	[tag]"name EN"		[value]"Weeping Essence of Hatred[T3]"
+	[tag]"name RU"		[value]"Плачущая сущность ненависти[T3]"
+
+	[tag]"icon path"	[value]"Essence_weepeng"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T3"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Hatred"
+	[tag]"name EN"		[value]"Wailing Essence of Hatred[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность ненависти[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Hatred"
+	[tag]"name EN"		[value]"Screaming Essence of Hatred[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность ненависти[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Hatred"
+	[tag]"name EN"		[value]"Shrieking Essence of Hatred[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность ненависти[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Hatred"
+	[tag]"name EN"		[value]"Deafening Essence of Hatred[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность ненависти[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Whispering Essence of Woe"
+	[tag]"name EN"		[value]"Whispering Essence of Woe[T1]"
+	[tag]"name RU"		[value]"Шепчущая сущность скорби[T1]"
+
+	[tag]"icon path"	[value]"Essence_whispering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Muttering Essence of Woe"
+	[tag]"name EN"		[value]"Muttering Essence of Woe[T2]"
+	[tag]"name RU"		[value]"Бормочущая сущность скорби[T2]"
+
+	[tag]"icon path"	[value]"Essence_muttering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Weeping Essence of Woe"
+	[tag]"name EN"		[value]"Weeping Essence of Woe[T3]"
+	[tag]"name RU"		[value]"Плачущая сущность скорби[T3]"
+
+	[tag]"icon path"	[value]"Essence_weepeng"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T3"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Woe"
+	[tag]"name EN"		[value]"Wailing Essence of Woe[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность скорби[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Woe"
+	[tag]"name EN"		[value]"Screaming Essence of Woe[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность скорби[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Woe"
+	[tag]"name EN"		[value]"Shrieking Essence of Woe[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность скорби[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Woe"
+	[tag]"name EN"		[value]"Deafening Essence of Woe[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность скорби[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Muttering Essence of Fear"
+	[tag]"name EN"		[value]"Muttering Essence of Fear[T2]"
+	[tag]"name RU"		[value]"Бормочущая сущность страха[T2]"
+
+	[tag]"icon path"	[value]"Essence_muttering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Weeping Essence of Fear"
+	[tag]"name EN"		[value]"Weeping Essence of Fear[T3]"
+	[tag]"name RU"		[value]"Плачущая сущность страха[T3]"
+
+	[tag]"icon path"	[value]"Essence_weepeng"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T3"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Fear"
+	[tag]"name EN"		[value]"Wailing Essence of Fear[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность страха[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Fear"
+	[tag]"name EN"		[value]"Screaming Essence of Fear[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность страха[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Fear"
+	[tag]"name EN"		[value]"Shrieking Essence of Fear[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность страха[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Fear"
+	[tag]"name EN"		[value]"Deafening Essence of Fear[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность страха[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Muttering Essence of Anger"
+	[tag]"name EN"		[value]"Muttering Essence of Anger[T2]"
+	[tag]"name RU"		[value]"Бормочущая сущность злобы[T2]"
+
+	[tag]"icon path"	[value]"Essence_muttering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Weeping Essence of Anger"
+	[tag]"name EN"		[value]"Weeping Essence of Anger[T3]"
+	[tag]"name RU"		[value]"Плачущая сущность злобы[T3]"
+
+	[tag]"icon path"	[value]"Essence_weepeng"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T3"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Anger"
+	[tag]"name EN"		[value]"Wailing Essence of Anger[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность злобы[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Anger"
+	[tag]"name EN"		[value]"Screaming Essence of Anger[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность злобы[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Anger"
+	[tag]"name EN"		[value]"Shrieking Essence of Anger[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность злобы[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Anger"
+	[tag]"name EN"		[value]"Deafening Essence of Anger[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность злобы[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Muttering Essence of Torment"
+	[tag]"name EN"		[value]"Muttering Essence of Torment[T2]"
+	[tag]"name RU"		[value]"Бормочущая сущность мучения[T2]"
+
+	[tag]"icon path"	[value]"Essence_muttering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Weeping Essence of Torment"
+	[tag]"name EN"		[value]"Weeping Essence of Torment[T3]"
+	[tag]"name RU"		[value]"Плачущая сущность мучения[T3]"
+
+	[tag]"icon path"	[value]"Essence_weepeng"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T3"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Torment"
+	[tag]"name EN"		[value]"Wailing Essence of Torment[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность мучения[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Torment"
+	[tag]"name EN"		[value]"Screaming Essence of Torment[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность мучения[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Torment"
+	[tag]"name EN"		[value]"Shrieking Essence of Torment[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность мучения[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Torment"
+	[tag]"name EN"		[value]"Deafening Essence of Torment[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность мучения[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Muttering Essence of Sorrow"
+	[tag]"name EN"		[value]"Muttering Essence of Sorrow[T2]"
+	[tag]"name RU"		[value]"Бормочущая сущность печали[T2]"
+
+	[tag]"icon path"	[value]"Essence_muttering"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Weeping Essence of Sorrow"
+	[tag]"name EN"		[value]"Weeping Essence of Sorrow[T3]"
+	[tag]"name RU"		[value]"Плачущая сущность печали[T3]"
+
+	[tag]"icon path"	[value]"Essence_weepeng"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T3"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Sorrow"
+	[tag]"name EN"		[value]"Wailing Essence of Sorrow[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность печали[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Sorrow"
+	[tag]"name EN"		[value]"Screaming Essence of Sorrow[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность печали[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Sorrow"
+	[tag]"name EN"		[value]"Shrieking Essence of Sorrow[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность печали[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Sorrow"
+	[tag]"name EN"		[value]"Deafening Essence of Sorrow[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность печали[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Weeping Essence of Rage"
+	[tag]"name EN"		[value]"Weeping Essence of Rage[T3]"
+	[tag]"name RU"		[value]"Плачущая сущность ярости[T3]"
+
+	[tag]"icon path"	[value]"Essence_weepeng"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T3"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Rage"
+	[tag]"name EN"		[value]"Wailing Essence of Rage[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность ярости[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Rage"
+	[tag]"name EN"		[value]"Screaming Essence of Rage[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность ярости[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Rage"
+	[tag]"name EN"		[value]"Shrieking Essence of Rage[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность ярости[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Rage"
+	[tag]"name EN"		[value]"Deafening Essence of Rage[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность ярости[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Weeping Essence of Suffering"
+	[tag]"name EN"		[value]"Weeping Essence of Suffering[T3]"
+	[tag]"name RU"		[value]"Плачущая сущность страдания[T3]"
+
+	[tag]"icon path"	[value]"Essence_weepeng"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T3"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Suffering"
+	[tag]"name EN"		[value]"Wailing Essence of Suffering[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность страдания[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Suffering"
+	[tag]"name EN"		[value]"Screaming Essence of Suffering[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность страдания[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Suffering"
+	[tag]"name EN"		[value]"Shrieking Essence of Suffering[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность страдания[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Suffering"
+	[tag]"name EN"		[value]"Deafening Essence of Suffering[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность страдания[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	
 
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Weeping Essence of Wrath"
+	[tag]"name EN"		[value]"Weeping Essence of Wrath[T3]"
+	[tag]"name RU"		[value]"Плачущая сущность гнева[T3]"
+
+	[tag]"icon path"	[value]"Essence_weepeng"
+	[tag]"base class"	[value]"Currency"
 	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T3"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Wrath"
+	[tag]"name EN"		[value]"Wailing Essence of Wrath[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность гнева[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Wrath"
+	[tag]"name EN"		[value]"Screaming Essence of Wrath[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность гнева[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Wrath"
+	[tag]"name EN"		[value]"Shrieking Essence of Wrath[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность гнева[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Wrath"
+	[tag]"name EN"		[value]"Deafening Essence of Wrath[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность гнева[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Loathing"
+	[tag]"name EN"		[value]"Wailing Essence of Loathing[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность отвращения[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Loathing"
+	[tag]"name EN"		[value]"Screaming Essence of Loathing[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность отвращения[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Loathing"
+	[tag]"name EN"		[value]"Shrieking Essence of Loathing[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность отвращения[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Loathing"
+	[tag]"name EN"		[value]"Deafening Essence of Loathing[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность отвращения[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Zeal"
+	[tag]"name EN"		[value]"Wailing Essence of Zeal[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность усердия[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Zeal"
+	[tag]"name EN"		[value]"Screaming Essence of Zeal[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность усердия[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Zeal"
+	[tag]"name EN"		[value]"Shrieking Essence of Zeal[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность усердия[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Zeal"
+	[tag]"name EN"		[value]"Deafening Essence of Zeal[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность усердия[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Anguish"
+	[tag]"name EN"		[value]"Wailing Essence of Anguish[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность горя[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Anguish"
+	[tag]"name EN"		[value]"Screaming Essence of Anguish[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность горя[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Anguish"
+	[tag]"name EN"		[value]"Shrieking Essence of Anguish[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность горя[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Anguish"
+	[tag]"name EN"		[value]"Deafening Essence of Anguish[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность горя[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Wailing Essence of Spite"
+	[tag]"name EN"		[value]"Wailing Essence of Spite[T4]"
+	[tag]"name RU"		[value]"Вопящая сущность неприязни[T4]"
+
+	[tag]"icon path"	[value]"Essence_wailing"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Spite"
+	[tag]"name EN"		[value]"Screaming Essence of Spite[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность неприязни[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Spite"
+	[tag]"name EN"		[value]"Shrieking Essence of Spite[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность неприязни[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Spite"
+	[tag]"name EN"		[value]"Deafening Essence of Spite[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность неприязни[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Scorn"
+	[tag]"name EN"		[value]"Screaming Essence of Scorn[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность насмешки[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Scorn"
+	[tag]"name EN"		[value]"Shrieking Essence of Scorn[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность насмешки[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Scorn"
+	[tag]"name EN"		[value]"Deafening Essence of Scorn[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность насмешки[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Envy"
+	[tag]"name EN"		[value]"Screaming Essence of Envy[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность зависти[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Envy"
+	[tag]"name EN"		[value]"Shrieking Essence of Envy[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность зависти[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Envy"
+	[tag]"name EN"		[value]"Deafening Essence of Envy[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность зависти[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Misery"
+	[tag]"name EN"		[value]"Screaming Essence of Misery[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность тоски[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Misery"
+	[tag]"name EN"		[value]"Shrieking Essence of Misery[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность тоски[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Misery"
+	[tag]"name EN"		[value]"Deafening Essence of Misery[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность тоски[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Screaming Essence of Dread"
+	[tag]"name EN"		[value]"Screaming Essence of Dread[T5]"
+	[tag]"name RU"		[value]"Кричащая сущность жути[T5]"
+
+	[tag]"icon path"	[value]"Essence_screaming"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Shrieking Essence of Dread"
+	[tag]"name EN"		[value]"Shrieking Essence of Dread[T6]"
+	[tag]"name RU"		[value]"Визжащая сущность жути[T6]"
+
+	[tag]"icon path"	[value]"Essence_shrieking"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T6"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Deafening Essence of Dread"
+	[tag]"name EN"		[value]"Deafening Essence of Dread[T7]"
+	[tag]"name RU"		[value]"Оглушающая сущность жути[T7]"
+
+	[tag]"icon path"	[value]"Essence_deafening"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"Essences"
+	[tag]"item tag"		[value]"Essence tier: T7"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 	

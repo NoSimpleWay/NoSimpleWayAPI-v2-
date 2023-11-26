@@ -352,6 +352,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Redeemer's]Adds (6-8) to (9-11) Physical Damage if you've dealt a Critical Strike Recently"
 	[tag]"name RU"		[value]"[Освободительный]Добавляет от (6-8) до (9-11) физического урона, если вы недавно наносили критический удар"
 
+
+
+
+
+
+
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
@@ -360,7 +367,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"[of Splintering]Bow Attacks fire an additional Arrow"
 	[tag]"name RU"		[value]"[шипов]Атаки луками выпускают дополнительную стрелу"
-
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"Bow attribute"
+	[tag]"explicit tag"	[value]"Any damage type"
+	[tag]"explicit tag"	[value]"Any build type"
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
@@ -371,7 +383,16 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[множества]Атаки луками выпускают дополнительных стрел: 2"
 	
 	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Bow"
+	[tag]"explicit tag"	[value]"Bow attribute"
+	[tag]"explicit tag"	[value]"Any damage type"
+	[tag]"explicit tag"	[value]"Any build type"
+	
+	
+	
+	
+	
+	
+	
 
 	
 ADD_NEW_DATA_ENTITY
@@ -2383,9 +2404,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[кровопускания]Атаки имеют 20% шанс вызвать кровотечение (21-30)% увеличение урона от кровотечения"
 
 	[tag]"explicit tag"	[value]"T3"
-	[tag]"explicit tag"	[value]"Bow"
-	[tag]"explicit tag"	[value]"Two-hand"
-	[tag]"explicit tag"	[value]"One-hand"
+	[tag]"explicit tag"	[value]"Bow attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 	
 
 	
@@ -2398,9 +2419,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[кровопотери]Атаки имеют 25% шанс вызвать кровотечение (31-40)% увеличение урона от кровотечения"
 
 	[tag]"explicit tag"	[value]"T2"
-	[tag]"explicit tag"	[value]"Bow"
-	[tag]"explicit tag"	[value]"Two-hand"
-	[tag]"explicit tag"	[value]"One-hand"
+	[tag]"explicit tag"	[value]"Bow attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
@@ -2410,10 +2431,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[of Exsanguination]Attacks have 30% chance to cause Bleeding (41-50)% increased Damage with Bleeding"
 	[tag]"name RU"		[value]"[обескровливания]Атаки имеют 30% шанс вызвать кровотечение (41-50)% увеличение урона от кровотечения"
 
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Bow"
-	[tag]"explicit tag"	[value]"Two-hand"
-	[tag]"explicit tag"	[value]"One-hand"
+	[tag]"explicit tag"	[value]"Bow attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 
 	
 	
@@ -5469,95 +5489,139 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[of Rending](39-44)% increased Critical Strike Chance with Bows"
 	[tag]"name RU"		[value]"[сколопендры](39-44)% повышение шанса критического удара луками"
 
-	
+
+
+
+
+
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Ire"
-
-	[tag]"name EN"		[value]"[of Ire](10-14)% to Global Critical Strike Multiplier"
-	[tag]"name RU"		[value]"[вспыльчивости](10-14)% к глобальному множителю критического удара"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Ire"
 
 	[tag]"name EN"		[value]"[of Ire](8-12)% to Global Critical Strike Multiplier"
 	[tag]"name RU"		[value]"[вспыльчивости](8-12)% к глобальному множителю критического удара"
 
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"Amulet"
+	[tag]"explicit tag"	[value]"Any damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Ire"
+
+	[tag]"name EN"		[value]"[of Ire](13-19)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[вспыльчивости](13-19)% к глобальному множителю критического удара"
+
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"Amulet"
+	[tag]"explicit tag"	[value]"Any damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Ire"
+
+	[tag]"name EN"		[value]"[of Ire](10-14)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[вспыльчивости](10-14)% к глобальному множителю критического удара"
+
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"Any damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Anger"
 
 	[tag]"name EN"		[value]"[of Anger](15-19)% to Global Critical Strike Multiplier"
 	[tag]"name RU"		[value]"[злости](15-19)% к глобальному множителю критического удара"
 
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"Any damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Anger"
-
-	[tag]"name EN"		[value]"[of Anger](13-19)% to Global Critical Strike Multiplier"
-	[tag]"name RU"		[value]"[злости](13-19)% к глобальному множителю критического удара"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Rage"
 
 	[tag]"name EN"		[value]"[of Rage](20-24)% to Global Critical Strike Multiplier"
 	[tag]"name RU"		[value]"[гнева](20-24)% к глобальному множителю критического удара"
 
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"Amulet attribute"
+	
+	[tag]"explicit tag"	[value]"Any damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Rage"
-
-	[tag]"name EN"		[value]"[of Rage](20-24)% to Global Critical Strike Multiplier"
-	[tag]"name RU"		[value]"[гнева](20-24)% к глобальному множителю критического удара"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Fury"
 
 	[tag]"name EN"		[value]"[of Fury](25-29)% to Global Critical Strike Multiplier"
 	[tag]"name RU"		[value]"[ярости](25-29)% к глобальному множителю критического удара"
 
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"Any damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Fury"
-
-	[tag]"name EN"		[value]"[of Fury](25-29)% to Global Critical Strike Multiplier"
-	[tag]"name RU"		[value]"[ярости](25-29)% к глобальному множителю критического удара"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Ferocity"
 
 	[tag]"name EN"		[value]"[of Ferocity](30-34)% to Global Critical Strike Multiplier"
 	[tag]"name RU"		[value]"[свирепости](30-34)% к глобальному множителю критического удара"
-
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"Any damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Ferocity"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Destruction"
 
-	[tag]"name EN"		[value]"[of Ferocity](30-34)% to Global Critical Strike Multiplier"
-	[tag]"name RU"		[value]"[свирепости](30-34)% к глобальному множителю критического удара"
+	[tag]"name EN"		[value]"[of Destruction](35-38)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[разрушения](35-38)% к глобальному множителю критического удара"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"Amulet"
+	[tag]"explicit tag"	[value]"Any damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+	
+	
+
+
+
+
+
+
+
 
 	
 ADD_NEW_DATA_ENTITY
@@ -5598,22 +5662,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"[of the Conquest](14-16)% to Global Critical Strike Multiplier"
 	[tag]"name RU"		[value]"[завоевания](14-16)% к глобальному множителю критического удара"
+	
+	
+	
+	
+	
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Destruction"
 
-	[tag]"name EN"		[value]"[of Destruction](35-38)% to Global Critical Strike Multiplier"
-	[tag]"name RU"		[value]"[разрушения](35-38)% к глобальному множителю критического удара"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Bow attribute"
-	[tag]"explicit tag"	[value]"Staff attribute"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Amulet"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
@@ -9150,7 +9206,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"DoTMultiplier"
 	[tag]"base name"	[value]"of Dissolution"
 
 	[tag]"name EN"		[value]"[of Dissolution](24-26)% to Damage over Time Multiplier"
@@ -9158,15 +9214,13 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Bow attribute"
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
-	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 	[tag]"explicit tag"	[value]"Amulet"
 
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"DoTMultiplier"
 	[tag]"base name"	[value]"of Dissolution"
 
 	[tag]"name EN"		[value]"[of Dissolution](41-45)% to Damage over Time Multiplier"
@@ -9174,7 +9228,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Staff attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Two-handed attribute"
 
 	
@@ -11443,7 +11496,134 @@ ADD_NEW_DATA_ENTITY
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Shields attribute"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Catalysing"
+
+	[tag]"name EN"		[value]"[Catalysing](11-20)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Стихийный](11-20)% увеличение урона от стихий от умений атак"
 	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Infusing"
+
+	[tag]"name EN"		[value]"[Infusing](21-30)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Бушующий](21-30)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Empowering"
+
+	[tag]"name EN"		[value]"[Empowering](31-36)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Лютующий](31-36)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Unleashed"
+
+	[tag]"name EN"		[value]"[Unleashed](37-42)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Свирепствующий](37-42)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Overpowering"
+
+	[tag]"name EN"		[value]"[Overpowering](43-50)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Неистовствующий](43-50)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discharge"
+	[tag]"base name"	[value]"Devastating"
+
+	[tag]"name EN"		[value]"[Devastating](51-59)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Опустошающий](51-59)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"Specularity-Scroll"
@@ -11451,6 +11631,109 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"[Catalysing](19-34)% increased Elemental Damage with Attack Skills"
 	[tag]"name RU"		[value]"[Стихийный](19-34)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Infusing"
+
+	[tag]"name EN"		[value]"[Infusing](36-51)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Бушующий](36-51)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Empowering"
+
+	[tag]"name EN"		[value]"[Empowering](53-61)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Лютующий](53-61)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Unleashed"
+
+	[tag]"name EN"		[value]"[Unleashed](63-71)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Свирепствующий](63-71)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Overpowering"
+
+	[tag]"name EN"		[value]"[Overpowering](73-85)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Неистовствующий](73-85)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discharge"
+	[tag]"base name"	[value]"Devastating"
+
+	[tag]"name EN"		[value]"[Devastating](87-100)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Опустошающий](87-100)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Fire damage type"
+	[tag]"explicit tag"	[value]"Cold damage type"
+	[tag]"explicit tag"	[value]"Lightning damage type"
+	[tag]"explicit tag"	[value]"Attack build type"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	
 ADD_NEW_DATA_ENTITY
@@ -11462,192 +11745,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[Стихийный](5-10)% увеличение урона от стихий от умений атак"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Catalysing"
-
-	[tag]"name EN"		[value]"[Catalysing](11-20)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Стихийный](11-20)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Infusing"
-
-	[tag]"name EN"		[value]"[Infusing](36-51)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Бушующий](36-51)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Infusing"
-
-	[tag]"name EN"		[value]"[Infusing](21-30)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Бушующий](21-30)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Infusing"
-
-	[tag]"name EN"		[value]"[Infusing](11-20)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Бушующий](11-20)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Empowering"
-
-	[tag]"name EN"		[value]"[Empowering](31-36)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Лютующий](31-36)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Empowering"
-
-	[tag]"name EN"		[value]"[Empowering](21-30)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Лютующий](21-30)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Empowering"
-
-	[tag]"name EN"		[value]"[Empowering](53-61)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Лютующий](53-61)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Unleashed"
-
-	[tag]"name EN"		[value]"[Unleashed](37-42)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Свирепствующий](37-42)% увеличение урона от стихий от умений атак"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"rings attribute"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Unleashed"
-
-	[tag]"name EN"		[value]"[Unleashed](31-36)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Свирепствующий](31-36)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Unleashed"
-
-	[tag]"name EN"		[value]"[Unleashed](63-71)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Свирепствующий](63-71)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Redeemer's"
-	[tag]"icon path"	[value]"RedeemerInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Redeemer's](26-30)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Освободительный](26-30)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Redeemer's"
-	[tag]"icon path"	[value]"RedeemerInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Redeemer's](31-35)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Освободительный](31-35)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Redeemer's"
-	[tag]"icon path"	[value]"RedeemerInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Redeemer's](36-40)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Освободительный](36-40)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Overpowering"
-
-	[tag]"name EN"		[value]"[Overpowering](73-85)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Неистовствующий](73-85)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Overpowering"
-
-	[tag]"name EN"		[value]"[Overpowering](37-42)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Неистовствующий](37-42)% увеличение урона от стихий от умений атак"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Overpowering"
-
-	[tag]"name EN"		[value]"[Overpowering](43-50)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Неистовствующий](43-50)% увеличение урона от стихий от умений атак"
-	
-	[tag]"explicit tag"	[value]"T1 belt"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Devastating"
-
-	[tag]"name EN"		[value]"[Devastating](51-59)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Опустошающий](51-59)% увеличение урона от стихий от умений атак"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Devastating"
-
-	[tag]"name EN"		[value]"[Devastating](87-100)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Опустошающий](87-100)% увеличение урона от стихий от умений атак"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Bow attribute"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Devastating"
-
-	[tag]"name EN"		[value]"[Devastating](43-50)% increased Elemental Damage with Attack Skills"
-	[tag]"name RU"		[value]"[Опустошающий](43-50)% увеличение урона от стихий от умений атак"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -13873,9 +13970,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Boots attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Gloves attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Helmets attribute"
 	
 ADD_NEW_DATA_ENTITY
@@ -14037,14 +14132,14 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Blight"
 	[tag]"base name"	[value]"Malicious"
 
 	[tag]"name EN"		[value]"[Malicious]Adds (56-87) to (105-160) Chaos Damage"
 	[tag]"name RU"		[value]"[Коварный]Добавляет от (56-87) до (105-160) урона хаосом"
 	
 	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -14149,7 +14244,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Blight"
 	[tag]"base name"	[value]"Malicious"
 
 	[tag]"name EN"		[value]"[Malicious]Adds (98-149) to (183-280) Chaos Damage"
@@ -14157,7 +14252,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Bow attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Two-handed attribute"
 
 	
@@ -14274,14 +14368,26 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"FrostBlades"
 	[tag]"base name"	[value]"Crystalising"
 
 	[tag]"name EN"		[value]"[Crystalising]Adds (81-111) to (163-189) Cold Damage"
 	[tag]"name RU"		[value]"[Кристаллизующий]Добавляет от (81-111) до (163-189) урона от холода"
 	
 	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	
 ADD_NEW_DATA_ENTITY
@@ -14477,7 +14583,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"IceShot"
 	[tag]"base name"	[value]"Crystalising"
 
 	[tag]"name EN"		[value]"[Crystalising]Adds (149-204) to (300-348) Cold Damage"
@@ -14485,7 +14591,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Bow attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Two-handed attribute"
 
 	
@@ -14569,7 +14674,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Incision"
 
 	[tag]"name EN"		[value]"[of Incision](35-38)% increased Critical Strike Chance"
@@ -14577,10 +14682,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Bow attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Two-handed attribute"
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
@@ -15342,14 +15445,14 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"MoltenStrike"
 	[tag]"base name"	[value]"Carbonising"
 
 	[tag]"name EN"		[value]"[Carbonising]Adds (89-121) to (180-210) Fire Damage"
 	[tag]"name RU"		[value]"[Обугливающий]Добавляет от (89-121) до (180-210) урона от огня"
 	
 	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -15535,7 +15638,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"ExplosiveArrow"
 	[tag]"base name"	[value]"Carbonising"
 
 	[tag]"name EN"		[value]"[Carbonising]Adds (165-225) to (335-390) Fire Damage"
@@ -15543,6 +15646,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Bow attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -15606,7 +15710,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Empower_Support_inventory_icon"
 	[tag]"base name"	[value]"Sharpshooter's"
 
 	[tag]"name EN"		[value]"[Sharpshooter's]+2 to Level of Socketed Bow Gems"
@@ -15703,11 +15807,14 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Empower_Support_inventory_icon"
 	[tag]"base name"	[value]"Exemplary"
 
 	[tag]"name EN"		[value]"[Exemplary]+1 to Level of Socketed Gems"
 	[tag]"name RU"		[value]"[Образцовый]+1 к уровню размещённых камней"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Bow attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -15842,7 +15949,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Barrage"
 	[tag]"base name"	[value]"of Acclaim"
 
 	[tag]"name EN"		[value]"[of Acclaim](17-19)% increased Attack Speed"
@@ -15850,9 +15957,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Bow attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Sceptre attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Rune dagger attribute"
 
 	
@@ -15876,7 +15981,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Barrage"
 	[tag]"base name"	[value]"of Celebration"
 
 	[tag]"name EN"		[value]"[of Celebration](26-27)% increased Attack Speed"
@@ -15884,8 +15989,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Two-handed attribute"
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -16034,7 +16138,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Dictator's"
 
 	[tag]"name EN"		[value]"[Dictator's](75-79)% increased Physical Damage (175-200) to Accuracy Rating"
@@ -16045,7 +16149,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Two-handed attribute"
 	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -16558,14 +16662,14 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"LightningStrike"
 	[tag]"base name"	[value]"Vapourising"
 
 	[tag]"name EN"		[value]"[Vapourising]Adds (15-21) to (296-344) Lightning Damage"
 	[tag]"name RU"		[value]"[Испаряющий]Добавляет от (15-21) до (296-344) урона от молнии"
 	
 	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -16750,7 +16854,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"LightningArrow"
 	[tag]"base name"	[value]"Vapourising"
 
 	[tag]"name EN"		[value]"[Vapourising]Adds (28-38) to (549-638) Lightning Damage"
@@ -16758,7 +16862,6 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Bow attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Two-handed attribute"
 
 	
@@ -16866,14 +16969,14 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring]Adds (22-29) to (45-52) Physical Damage"
 	[tag]"name RU"		[value]"[Смертельный]Добавляет от (22-29) до (45-52) физического урона"
 	
 	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -16941,7 +17044,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Merciless"
 
 	[tag]"name EN"		[value]"[Merciless](170-179)% increased Physical Damage"
@@ -16949,10 +17052,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Bow attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Two-handed attribute"
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -17401,7 +17502,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring]Adds (34-47) to (72-84) Physical Damage"
@@ -21091,7 +21192,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring]Adds (17-23) to (34-39) Physical Damage to Attacks"
@@ -21100,7 +21201,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring]Adds (11-15) to (22-26) Physical Damage to Attacks"
@@ -21260,79 +21361,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[Охотничий](0.3-0.5)% от физического урона похищается в виде здоровья"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Seeping"
-
-	[tag]"name EN"		[value]"[of Seeping](26-35)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[просачивания](26-35)% к множителю физического постепенного урона"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Seeping"
+	
+	
+	
+	
 
-	[tag]"name EN"		[value]"[of Seeping](14-18)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[просачивания](14-18)% к множителю физического постепенного урона"
+
+
+
+
+
+
+
+
+
+
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Spilling"
 
-	[tag]"name EN"		[value]"[of Spilling](19-23)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[проливания](19-23)% к множителю физического постепенного урона"
 
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Spilling"
-
-	[tag]"name EN"		[value]"[of Spilling](36-45)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[проливания](36-45)% к множителю физического постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Phlebotomising"
-
-	[tag]"name EN"		[value]"[of Phlebotomising](24-28)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[вскрытия](24-28)% к множителю физического постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Phlebotomising"
-
-	[tag]"name EN"		[value]"[of Phlebotomising](46-55)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[вскрытия](46-55)% к множителю физического постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Hemorrhaging"
-
-	[tag]"name EN"		[value]"[of Hemorrhaging](29-33)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[кровоизлияния](29-33)% к множителю физического постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Hemorrhaging"
-
-	[tag]"name EN"		[value]"[of Hemorrhaging](56-65)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[кровоизлияния](56-65)% к множителю физического постепенного урона"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -21354,26 +21403,168 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[of the Hunt](11-15)% to Physical Damage over Time Multiplier"
 	[tag]"name RU"		[value]"[охоты](11-15)% к множителю физического постепенного урона"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Seeping"
+
+	[tag]"name EN"		[value]"[of Seeping](14-18)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[просачивания](14-18)% к множителю физического постепенного урона"
+
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"Wand attribute"
+	[tag]"explicit tag"	[value]"Summoner wand attribute"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Spilling"
+
+	[tag]"name EN"		[value]"[of Spilling](19-23)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[проливания](19-23)% к множителю физического постепенного урона"
+
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"Wand attribute"
+	[tag]"explicit tag"	[value]"Summoner wand attribute"
+
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Exsanguinating"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Phlebotomising"
 
-	[tag]"name EN"		[value]"[of Exsanguinating](66-75)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[обескровливания](66-75)% к множителю физического постепенного урона"
+	[tag]"name EN"		[value]"[of Phlebotomising](24-28)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[вскрытия](24-28)% к множителю физического постепенного урона"
 
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"Wand attribute"
+	[tag]"explicit tag"	[value]"Summoner wand attribute"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Hemorrhaging"
+
+	[tag]"name EN"		[value]"[of Hemorrhaging](29-33)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[кровоизлияния](29-33)% к множителю физического постепенного урона"
+
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"Wand attribute"
+	[tag]"explicit tag"	[value]"Summoner wand attribute"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Exsanguinate"
 	[tag]"base name"	[value]"of Exsanguinating"
 
 	[tag]"name EN"		[value]"[of Exsanguinating](34-38)% to Physical Damage over Time Multiplier"
 	[tag]"name RU"		[value]"[обескровливания](34-38)% к множителю физического постепенного урона"
 	
 	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-hand attribute"
+	[tag]"explicit tag"	[value]"Wand attribute"
+	[tag]"explicit tag"	[value]"Summoner wand attribute"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Seeping"
+
+	[tag]"name EN"		[value]"[of Seeping](26-35)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[просачивания](26-35)% к множителю физического постепенного урона"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"Staff attribute"
+	[tag]"explicit tag"	[value]"Warstaff attribute"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Spilling"
+
+	[tag]"name EN"		[value]"[of Spilling](36-45)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[проливания](36-45)% к множителю физического постепенного урона"
+
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"Staff attribute"
+	[tag]"explicit tag"	[value]"Warstaff attribute"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Phlebotomising"
+
+	[tag]"name EN"		[value]"[of Phlebotomising](46-55)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[вскрытия](46-55)% к множителю физического постепенного урона"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"Staff attribute"
+	[tag]"explicit tag"	[value]"Warstaff attribute"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Hemorrhaging"
+
+	[tag]"name EN"		[value]"[of Hemorrhaging](56-65)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[кровоизлияния](56-65)% к множителю физического постепенного урона"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"Staff attribute"
+	[tag]"explicit tag"	[value]"Warstaff attribute"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Exsanguinating"
+
+	[tag]"name EN"		[value]"[of Exsanguinating](66-75)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[обескровливания](66-75)% к множителю физического постепенного урона"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Staff attribute"
+	[tag]"explicit tag"	[value]"Warstaff attribute"
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	
 ADD_NEW_DATA_ENTITY
@@ -24520,15 +24711,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[of Unmaking](100-109)% increased Critical Strike Chance for Spells"
 	[tag]"name RU"		[value]"[небытия](100-109)% повышение шанса критического удара для чар"
 	
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Staff attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Sceptre attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Rune dagger attribute"
-	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Shields attribute"
 
 	
@@ -31689,7 +31875,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring](5-6) to (7-8) Added Physical Damage with Axe Attacks"
@@ -31734,7 +31920,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring](5-6) to (7-8) Added Physical Damage with Claw Attacks"
@@ -31779,7 +31965,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring](5-6) to (7-8) Added Physical Damage with Dagger Attacks"
@@ -31824,7 +32010,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring](5-6) to (7-8) Added Physical Damage with Mace or Sceptre Attacks"
@@ -31869,7 +32055,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring](5-6) to (7-8) Added Physical Damage with Staff Attacks"
@@ -31914,7 +32100,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring](5-6) to (7-8) Added Physical Damage with Sword Attacks"
@@ -31959,7 +32145,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring](5-6) to (7-8) Added Physical Damage with Wand Attacks"
@@ -33351,7 +33537,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring]Minions deal (23-26) to (33-39) additional Physical Damage"
@@ -33603,7 +33789,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring](5-6) to (7-8) Added Physical Damage with Bow Attacks"
@@ -34512,7 +34698,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring](15-17) to (20-24) Added Spell Physical Damage while Dual Wielding"
@@ -34566,7 +34752,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring](15-17) to (20-24) Added Spell Physical Damage while holding a Shield"
@@ -34620,7 +34806,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
 	[tag]"name EN"		[value]"[Flaring](15-17) to (20-24) Added Spell Physical Damage while wielding a Two Handed Weapon"
