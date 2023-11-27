@@ -205,16 +205,16 @@ public:
 class EntityButtonFilterRule : public EntityButton
 {
 public:
-	EFilterRule* target_filter_rule;
-	EDataContainer_Group_DataEntitiesSearch* target_data_container;
+	EFilterRule*								target_filter_rule;
+	EDataContainer_Group_DataEntitiesSearch*	target_data_container;
 
 	bool										is_folder = false;
 	bool										is_expanded = false;
 	bool										hidden_by_folder = false;
 
 	std::string									folder_named_id = "";
-	EntityButtonFilterRule* parent_folder;
-	std::vector< EntityButtonFilterRule*>		child_button_list;
+	EntityButtonFilterRule*						parent_folder;
+	std::vector<EntityButtonFilterRule*>		child_button_list;
 
 	bool entity_is_active() override;
 
@@ -265,12 +265,21 @@ public:
 
 class LootSimulatorPattern;
 class DataEntityTagFilter;
+
+
+enum class DETFConfigurerMode
+{
+	LOOT_GENERATOR_PATTERN,
+	DATA_ENTITY_FILTER
+};
 class EntityButtonVariantRouterPatternConfigurer : public EntityButtonVariantRouterForFilterBlock
 {
 public:
 	DataEntityTagFilter* target_tag_filter;
 	EButtonGroup* target_group_with_configurer_buttons;
 	std::vector<EntityButtonVariantRouterPatternConfigurer*>* router_button_vector_pointer;
+
+	DETFConfigurerMode DETF_mode = DETFConfigurerMode::LOOT_GENERATOR_PATTERN;
 };
 
 class EntityButtonFilterBlockTab : public EntityButton
@@ -569,8 +578,9 @@ public:
 	EntityButton* main_input_field;
 	EntityButton* add_as_item_button;
 
-	EButtonGroup* main_left_side = nullptr;
-	EButtonGroup* right_side_for_filters = nullptr;
+	EButtonGroup* main_left_side			= nullptr;
+	EButtonGroup* right_side_for_filters	= nullptr;
+	EButtonGroup* right_side_for_configure	= nullptr;
 
 	EButtonGroupDataEntity(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 
@@ -1551,29 +1561,20 @@ public:
 
 class GameItemAttribute;
 
-struct DETF_Value
-{
-public:
-	std::string			target_value_key;
-	ELocalisationText	localised_attribute_name;
-	bool				is_active = true;
-};
 
-struct DataEntityTagFilter
-{
-public:
-	std::string				target_tag;
-	bool					can_be_configured = true;
-	
-	//std::vector<std::string>	suitable_values;
-	//std::vector<std::string>	banned_tags;
-	
-	std::vector<DETF_Value>	suitable_values;
-	std::vector<DETF_Value>	banned_tags;
 
-	DataEntityTagFilter*	add_new_suitable_value	(std::string _value, ELocalisationText _ltext = ELocalisationText());
-	DataEntityTagFilter*	add_new_banned_value	(std::string _value, ELocalisationText _ltext = ELocalisationText());
-};
+
+#define ROUTER_BUTTON_VECTOR_SIZE 200
+namespace DataEntityFilterConfigurer
+{
+	extern void create_configurer_buttons(DataEntityTagFilter* _tag_filter, DETFConfigurerMode _mode, EButtonGroup* _target_group);
+
+	////////////////////////////////
+	extern std::vector <EntityButtonVariantRouterPatternConfigurer*> router_button_vector[ROUTER_BUTTON_VECTOR_SIZE];
+
+	extern int router_button_vector_id;
+	////////////////////////////////
+}
 
 
 struct GameAttributeGenerator

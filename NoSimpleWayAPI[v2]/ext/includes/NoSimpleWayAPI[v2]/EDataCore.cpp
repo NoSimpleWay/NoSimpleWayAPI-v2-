@@ -3597,154 +3597,166 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 	bool required_tag_match = true;
 	bool required_tag_value_match = true;
 	bool any_match_with_banned = false;
-
-	
-	if (true)
-	for (DataEntityFilter* banned_tag_filter : _filter_rule->banned_tag_list)
+	//if (EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
 	{
-		//potentially fail match
 
-		//2 ways to fail match:
-		//1) item have no required tag
-		//2) item have required tag, but value of this tag not math with no one suitable tag list
-		//EInputCore::logger_param("target_tag_name", banned_tag_filter->target_tag_name);
-		//EInputCore::logger_param("suitable_values_list", banned_tag_filter->suitable_values_list[0]);
-
-		//for every banned tag
-		for (EDataTag* data_entity_tag : _data_entity->tag_list)
-		{
-			tag_value = *data_entity_tag->tag_value_list[0];
-
-			//compare data entity tag and requaire tag from filter rule
-			if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, banned_tag_filter->target_tag_name)))
+		if (true)
+			for (DataEntityTagFilter banned_tag_filter : _filter_rule->banned_tag_list)
 			{
+				//potentially fail match
 
-				for (std::string suitable_str : banned_tag_filter->suitable_values_list)//one of suitable list
+				//2 ways to fail match:
+				//1) item have no required tag
+				//2) item have required tag, but value of this tag not math with no one suitable tag list
+				//EInputCore::logger_param("target_tag_name", banned_tag_filter->target_tag_name);
+				//EInputCore::logger_param("suitable_values_list", banned_tag_filter->suitable_values_list[0]);
+
+				//for every banned tag
+				for (EDataTag* data_entity_tag : _data_entity->tag_list)
 				{
-					//EInputCore::logger_param("data_entity_tag", tag_value);
-					
+					tag_value = *data_entity_tag->tag_value_list[0];
 
-					//if (suitable_str == "Deleted") { return false; }
-
-					if
-					(
-						//empty suitable text means 'any value suitable'
-						(suitable_str == "")
-						||
-						(EStringUtils::compare_ignoring_case(suitable_str, tag_value))
-					)
+					//compare data entity tag and require tag from filter rule
+					if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, banned_tag_filter.target_tag)))
 					{
-						//even one match with banned tag return false
-						return false;
-					}
-				}
-			}
-		}
 
-
-
-		//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
-	}
-
-	//search by input
-	if (_search_text != "")
-	{
-		search_text = EStringUtils::to_lower(_search_text);
-
-		//search by tags
-		if (search_text[0] == '*')
-		{
-			tag_search_mode = true;
-			search_text = search_text.substr(1);
-		}
-
-		//search by cost
-		if (search_text[0] == '$')
-		{
-			cost_search_mode = true;
-			search_text = search_text.substr(1);
-		}
-
-		for (EDataTag* data_entity_tag : _data_entity->tag_list)
-		if (!matched_by_input)
-		{
-			tag_value = EStringUtils::to_lower(*data_entity_tag->tag_value_list[0]);
-			//if (*data_entity_tag->tag_name == "name EN") {EInputCore::logger_param("name EN", ) }
-			if ((*data_entity_tag->tag_name == "base name") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-			else
-				if ((*data_entity_tag->tag_name == "name EN") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-				else
-					if ((*data_entity_tag->tag_name == "name RU") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-		}
-	}
-	else
-	{
-		matched_by_input = true;
-	}
-
-	//for every required tag
-	for (DataEntityFilter* required_tag_filter : _filter_rule->required_tag_list)
-		if ((required_tag_match) && (required_tag_value_match) && (matched_by_input))//if tag match still not failed
-		{
-			//potentially fail match
-			required_tag_match = false;
-			required_tag_value_match = false;
-			//2 ways to fail match:
-			//1) item have no required tag
-			//2) item have required tag, but value of this tag not math with no one suitable tag list
-
-
-			//for every required tag
-			for (EDataTag* data_entity_tag : _data_entity->tag_list)
-			{
-				tag_value = *data_entity_tag->tag_value_list[0];
-
-				//compare data entity tag and requaire tag from filter rule
-				if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, required_tag_filter->target_tag_name)))
-				{
-					required_tag_match = true;
-
-					//empty suitable list means what any value is acceptable
-					if (required_tag_filter->suitable_values_list.empty())
-					{
-						required_tag_value_match = true;
-					}
-					else
-						for (std::string suitable_str : required_tag_filter->suitable_values_list)//one of suitable list
+						for (DETF_Value suitable_str : banned_tag_filter.banned_tags)//one of suitable list
 						{
+							//EInputCore::logger_param("data_entity_tag", tag_value);
+
+
+							//if (suitable_str == "Deleted") { return false; }
+
 							if
 								(
 									//empty suitable text means 'any value suitable'
-									(suitable_str == "")
+									(suitable_str.target_value_key == "")
 									||
-									(EStringUtils::compare_ignoring_case(suitable_str, tag_value))
-								)
+									(EStringUtils::compare_ignoring_case(suitable_str.target_value_key, tag_value))
+									)
 							{
-								required_tag_value_match = true;
+								//even one match with banned tag return false
+								return false;
 							}
 						}
+					}
 				}
+
+
+
+				//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
 			}
 
+		//search by input
+		if (_search_text != "")
+		{
+			search_text = EStringUtils::to_lower(_search_text);
 
+			//search by tags
+			if (search_text[0] == '*')
+			{
+				tag_search_mode = true;
+				search_text = search_text.substr(1);
+			}
 
-			//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
+			//search by cost
+			if (search_text[0] == '$')
+			{
+				cost_search_mode = true;
+				search_text = search_text.substr(1);
+			}
+
+			for (EDataTag* data_entity_tag : _data_entity->tag_list)
+				if (!matched_by_input)
+				{
+					tag_value = EStringUtils::to_lower(*data_entity_tag->tag_value_list[0]);
+					//if (*data_entity_tag->tag_name == "name EN") {EInputCore::logger_param("name EN", ) }
+					if ((*data_entity_tag->tag_name == "base name") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+					else
+						if ((*data_entity_tag->tag_name == "name EN") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+						else
+							if ((*data_entity_tag->tag_name == "name RU") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+				}
+		}
+		else
+		{
+			matched_by_input = true;
 		}
 
+		//for every required tag
+		for (DataEntityTagFilter required_tag_filter : _filter_rule->required_tag_list)
+			if ((required_tag_match) && (required_tag_value_match) && (matched_by_input))//if tag match still not failed
+			{
+				//potentially fail match
+				required_tag_match = false;
+				required_tag_value_match = false;
+				//2 ways to fail match:
+				//1) item have no required tag
+				//2) item have required tag, but value of this tag not math with no one suitable tag list
 
+
+				//for every data entity tag
+				for (EDataTag* data_entity_tag : _data_entity->tag_list)
+				{
+					tag_value = *data_entity_tag->tag_value_list[0];
+
+					//compare data entity tag and requaire tag from filter rule
+					if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, required_tag_filter.target_tag)))
+					{
+						//EInputCore::logger_param("tag name", *data_entity_tag->tag_name);
+						required_tag_match = true;
+
+						//empty suitable list means what any value is acceptable
+						if (required_tag_filter.suitable_values.empty())
+						{
+							//EInputCore::logger_simple_info("set as suitable because required list id EMPTY");
+							required_tag_value_match = true;
+						}
+						else
+							for (DETF_Value suitable_DETF : required_tag_filter.suitable_values)//one of suitable list
+							{
+								if
+								(
+									//empty suitable text means 'any value suitable'
+									(suitable_DETF.is_active)
+									&&
+									(
+										(suitable_DETF.target_value_key == "")
+										||
+										(EStringUtils::compare_ignoring_case(suitable_DETF.target_value_key, tag_value))
+									)
+								)
+								{
+
+									//EInputCore::logger_param("suitable value", tag_value);
+
+									required_tag_value_match = true;
+
+									break;
+								}
+							}
+					}
+				}
+
+
+
+				//{ *but->disable_draw = false; } else { *but->disable_draw = true; }
+			}
+
+	}
 
 	return (matched_by_input && required_tag_match && required_tag_value_match);
 }
 
-void EFilterRule::add_default_banned_tag()
-{
-	//filter "item tag" by 
-	DataEntityFilter*
-	jc_filter = new DataEntityFilter();
-
-	jc_filter->target_tag_name = "item tag";
-	jc_filter->suitable_values_list.push_back("Deleted");
-
-	banned_tag_list.push_back(jc_filter);
-
-}
+//void EFilterRule::add_default_banned_tag()
+//{
+//	//filter "item tag" by 
+//	DataEntityFilter*
+//	jc_filter = new DataEntityFilter();
+//
+//	jc_filter->target_tag_name = "item tag";
+//	jc_filter->suitable_values_list.push_back("Deleted");
+//
+//	banned_tag_list.push_back(jc_filter);
+//
+//}

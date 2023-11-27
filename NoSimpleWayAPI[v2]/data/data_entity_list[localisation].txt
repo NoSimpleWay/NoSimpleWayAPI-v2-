@@ -2246,6 +2246,57 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_DoT_build"
+	[tag]"name EN"		[value]"DoT damage"
+	[tag]"name RU"		[value]"Постепенный урон"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_attacker_build"
+	[tag]"name EN"		[value]"Attack attributes"
+	[tag]"name RU"		[value]"Атрибуты атаки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_caster_build"
+	[tag]"name EN"		[value]"Caster attributes"
+	[tag]"name RU"		[value]"Атрибуты чар"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_summoner_build"
+	[tag]"name EN"		[value]"Summoner attributes"
+	[tag]"name RU"		[value]"Атрибуты приспешников"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_any_build"
+	[tag]"name EN"		[value]"Any attributes"
+	[tag]"name RU"		[value]"Все атрибуты"
+	
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_any_tier"
+	[tag]"name EN"		[value]"Any tier"
+	[tag]"name RU"		[value]"Все тиры"
+	
+
+	
+	
+	
+	
 	
 	
 	

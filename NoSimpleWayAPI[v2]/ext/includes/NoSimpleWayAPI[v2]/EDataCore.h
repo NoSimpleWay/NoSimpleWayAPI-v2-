@@ -325,12 +325,48 @@ enum RegisteredFilterRules
 
 
 
-struct DataEntityFilter
+//struct DataEntityFilter
+//{
+//public:
+//	std::string							target_tag_name = "";
+//	std::vector<std::string>			suitable_values_list;
+//};
+
+
+
+
+struct DETF_Value
 {
 public:
-	std::string							target_tag_name = "";
-	std::vector<std::string>			suitable_values_list;
+	std::string			target_value_key;
+	ELocalisationText	localised_attribute_name;
+	bool				is_active = true;
+	bool				always_suitable = false;
 };
+
+
+
+struct DataEntityTagFilter
+{
+public:
+	std::string				target_tag;
+	bool					can_be_configured = true;
+
+	//std::vector<std::string>	suitable_values;
+	//std::vector<std::string>	banned_tags;
+
+	std::vector<DETF_Value>	suitable_values;
+	std::vector<DETF_Value>	banned_tags;
+
+	DataEntityTagFilter* add_new_suitable_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
+	DataEntityTagFilter* add_new_banned_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
+
+
+
+
+	
+};
+
 
 class EFilterRule
 {
@@ -339,27 +375,37 @@ public:
 
 	std::string focused_by_data_type = "";
 
-	std::vector<DataEntityFilter*>		required_tag_list;
-	std::vector<DataEntityFilter*>		banned_tag_list;
+	//std::vector<DataEntityFilter*>		required_tag_list;
+	//std::vector<DataEntityFilter*>		banned_tag_list;
 
+	std::vector<DataEntityTagFilter>		required_tag_list;
+	std::vector<DataEntityTagFilter>		banned_tag_list;
+
+
+	
+
+
+	std::string							tag									= "";
+	float								min_y_size							= 100.0f;
+
+	data_action_pointer					stored_action_for_data_entity_group = nullptr;
+	unsigned int						category_id							= 0;
+
+	ETextureGabarite*					icon_texture;
+
+	bool								is_folder	= false;
+	std::string							named_id	= "";
+
+	//void								add_default_banned_tag();
+	
+	
+	
+	
+	
 	static	std::vector<EFilterRule*>	registered_global_filter_rules;
 	static	std::vector<EFilterRule*>	registered_filter_rules_for_list;
 
 	static bool matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule* _filter_rule, std::string _search_text);
-
-
-	std::string							tag = "";
-	float								min_y_size = 100.0f;
-
-	data_action_pointer					stored_action_for_data_entity_group;
-	unsigned int category_id				= 0;
-
-	ETextureGabarite* icon_texture;
-
-	bool		is_folder	= false;
-	std::string	named_id	= "";
-
-	void					add_default_banned_tag();
 };
 
 class EDataContainer_Group_DataEntitiesSearch : public EDataContainer
