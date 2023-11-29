@@ -21,6 +21,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist base"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Heist"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -42,6 +45,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -65,6 +70,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist base"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Heist"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -86,6 +94,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -107,6 +117,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -128,6 +140,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -149,6 +163,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -170,6 +186,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -192,6 +210,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Common"
 
@@ -213,6 +234,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -234,6 +258,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -255,6 +281,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -276,6 +305,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -299,6 +330,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -321,6 +355,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -341,6 +378,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Two-hand"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -362,6 +402,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -383,6 +425,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -404,6 +448,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -427,6 +474,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"League: heist"
 	[tag]"item tag"		[value]"Heist base"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Heist"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -448,6 +498,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -469,6 +521,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -490,6 +545,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -512,6 +569,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -533,5 +593,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Melee weapon"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"

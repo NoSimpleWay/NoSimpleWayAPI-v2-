@@ -16,6 +16,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base tier"	[value]"T5"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -38,6 +41,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Breach unique item"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T18"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -60,6 +66,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"base tier"	[value]"T7"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -80,6 +89,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T21"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -100,6 +112,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T14"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -120,6 +135,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T18"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -141,6 +159,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T18"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -162,6 +183,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T10"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -182,6 +206,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T15"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -205,6 +232,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist base"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Heist"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -225,6 +256,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T17"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -247,6 +282,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -270,6 +309,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist base"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Heist"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -291,6 +334,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T11"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -313,6 +359,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Expensive base for unique"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -333,6 +383,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T12"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -353,6 +406,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T22"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -375,6 +431,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -397,6 +457,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Top tier base"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"base tier"	[value]"T6"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -418,6 +481,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T20"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -439,6 +505,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T16"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -460,6 +529,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T16"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -480,6 +552,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Ranged weapon"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
+	[tag]"base tier"	[value]"T17"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -501,6 +577,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T13"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -524,6 +603,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist base"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Heist"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -545,6 +628,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Expensive base for unique"
+	[tag]"base tier"	[value]"T4"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -566,6 +652,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T8"
+	
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -587,5 +676,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Leveling item from ground"
 	[tag]"item tag"		[value]"Top tier base"
+	[tag]"base tier"	[value]"T9"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"

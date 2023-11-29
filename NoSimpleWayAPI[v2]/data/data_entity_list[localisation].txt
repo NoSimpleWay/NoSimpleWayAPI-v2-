@@ -2013,22 +2013,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"version_continue_do_not_change"
-	[tag]"name EN"		[value]"Continue:\nDo not change"
-	[tag]"name RU"		[value]"Продолжить:\nНе менять"
+	[tag]"name EN"		[value]"Continue: Do not change"
+	[tag]"name RU"		[value]"Продолжить: Не менять"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"version_continue_forcibly_enable"
-	[tag]"name EN"		[value]"Continue:\nForcibly  enable"
-	[tag]"name RU"		[value]"Продолжить:\nНасильно включить"
+	[tag]"name EN"		[value]"Continue: Forcibly  enable"
+	[tag]"name RU"		[value]"Продолжить: Насильно включить"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"version_continue_forcibly_disable"
-	[tag]"name EN"		[value]"Continue:\nForcibly  disable"
-	[tag]"name RU"		[value]"Продолжить:\nНасильно выключить"
+	[tag]"name EN"		[value]"Continue: Forcibly  disable"
+	[tag]"name RU"		[value]"Продолжить: Насильно выключить"
+	
+	
+	
 	
 	
 	
@@ -2037,22 +2040,22 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"version_show_hide_do_not_change"
-	[tag]"name EN"		[value]"Show/hide:\nDo not change"
-	[tag]"name RU"		[value]"Показать/скрыть:\nНе менять"
+	[tag]"name EN"		[value]"Show/hide: Do not change"
+	[tag]"name RU"		[value]"Показать/скрыть: Не менять"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"version_show_hide_forcibly_enable"
-	[tag]"name EN"		[value]"Show/hide:\nForcibly  enable"
-	[tag]"name RU"		[value]"Показать/скрыть:\nНасильно включить"
+	[tag]"name EN"		[value]"Show/hide: Forcibly  enable"
+	[tag]"name RU"		[value]"Показать/скрыть: Насильно включить"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"version_show_hide_forcibly_disable"
-	[tag]"name EN"		[value]"Show/hide:\nForcibly  disable"
-	[tag]"name RU"		[value]"Показать/скрыть:\nНасильно выключить"
+	[tag]"name EN"		[value]"Show/hide: Forcibly disable"
+	[tag]"name RU"		[value]"Показать/скрыть: Насильно выключить"
 	
 	
 	
@@ -2291,6 +2294,325 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"tag_any_tier"
 	[tag]"name EN"		[value]"Any tier"
 	[tag]"name RU"		[value]"Все тиры"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_any"
+	[tag]"name EN"		[value]"Any"
+	[tag]"name RU"		[value]"Любое"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_tier_acceptable"
+	[tag]"name EN"		[value]"Acceptable"
+	[tag]"name RU"		[value]"Приемлимое"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_tier_good"
+	[tag]"name EN"		[value]"Good"
+	[tag]"name RU"		[value]"Хорошее"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_tier_best"
+	[tag]"name EN"		[value]"Best"
+	[tag]"name RU"		[value]"Лучшее"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_tier_basic"
+	[tag]"name EN"		[value]"Basic"
+	[tag]"name RU"		[value]"Обычное"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_tier_ritual"
+	[tag]"name EN"		[value]"Rutial"
+	[tag]"name RU"		[value]"Ритуал"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_tier_heist"
+	[tag]"name EN"		[value]"Heist"
+	[tag]"name RU"		[value]"Кража"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_tier_breach"
+	[tag]"name EN"		[value]"Breach"
+	[tag]"name RU"		[value]"Разлом"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_tier_runic"
+	[tag]"name EN"		[value]"Runic"
+	[tag]"name RU"		[value]"Руническое"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_tier_boss"
+	[tag]"name EN"		[value]"Boss drop"
+	[tag]"name RU"		[value]"Дроп из босса"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_generator_equip"
+	[tag]"name EN"		[value]"Equip"
+	[tag]"name RU"		[value]"Экипировка"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_atlas_base"
+	[tag]"name EN"		[value]"Atlas base"
+	[tag]"name RU"		[value]"Атлас"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_gloves"
+	[tag]"name EN"		[value]"Gloves"
+	[tag]"name RU"		[value]"Перчатки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_helmets"
+	[tag]"name EN"		[value]"Helmets"
+	[tag]"name RU"		[value]"Шлемы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_boots"
+	[tag]"name EN"		[value]"Boots"
+	[tag]"name RU"		[value]"Сапоги"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_body_armours"
+	[tag]"name EN"		[value]"Body armours"
+	[tag]"name RU"		[value]"Доспехи"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_bows"
+	[tag]"name EN"		[value]"Bows"
+	[tag]"name RU"		[value]"Луки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_quivers"
+	[tag]"name EN"		[value]"Quivers"
+	[tag]"name RU"		[value]"Колчаны"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_two_hand_axes"
+	[tag]"name EN"		[value]"Two hand axes"
+	[tag]"name RU"		[value]"Двуручные топоры"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_two_hand_swords"
+	[tag]"name EN"		[value]"Two hand swords"
+	[tag]"name RU"		[value]"Двуручные мечи"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_two_hand_maces"
+	[tag]"name EN"		[value]"Two hand maces"
+	[tag]"name RU"		[value]"Двуручные дубины"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_staves"
+	[tag]"name EN"		[value]"Staves"
+	[tag]"name RU"		[value]"Посохи"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_warstaves"
+	[tag]"name EN"		[value]"Warstaves"
+	[tag]"name RU"		[value]"Боевые посохи"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_rings"
+	[tag]"name EN"		[value]"Rings"
+	[tag]"name RU"		[value]"Кольца"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_amulets"
+	[tag]"name EN"		[value]"Amulets"
+	[tag]"name RU"		[value]"Амулеты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_belts"
+	[tag]"name EN"		[value]"Belts"
+	[tag]"name RU"		[value]"Пояса"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_jewels"
+	[tag]"name EN"		[value]"Jewels"
+	[tag]"name RU"		[value]"Самоцветы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_abyss_jewels"
+	[tag]"name EN"		[value]"Abyss jewels"
+	[tag]"name RU"		[value]"Самоцветы Бездны"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_shields"
+	[tag]"name EN"		[value]"Shields"
+	[tag]"name RU"		[value]"Щиты"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_one_hand_axes"
+	[tag]"name EN"		[value]"One hand axes"
+	[tag]"name RU"		[value]"Одноручные топоры"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_one_hand_swords"
+	[tag]"name EN"		[value]"One hand swords"
+	[tag]"name RU"		[value]"Одноручные мечи"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_one_hand_maces"
+	[tag]"name EN"		[value]"One hand maces"
+	[tag]"name RU"		[value]"Одноручные дубины"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_daggers"
+	[tag]"name EN"		[value]"Daggers"
+	[tag]"name RU"		[value]"Кинжалы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_claws"
+	[tag]"name EN"		[value]"Claws"
+	[tag]"name RU"		[value]"Когти"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_sceptres"
+	[tag]"name EN"		[value]"Sceptres"
+	[tag]"name RU"		[value]"Скипетры"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_wands"
+	[tag]"name EN"		[value]"Wands"
+	[tag]"name RU"		[value]"Жезлы"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_rune_daggers"
+	[tag]"name EN"		[value]"Rune daggers"
+	[tag]"name RU"		[value]"Рунические кинжалы"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_runic_base"
+	[tag]"name EN"		[value]"Runic base"
+	[tag]"name RU"		[value]"Рунические"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_heist_base"
+	[tag]"name EN"		[value]"Runic base"
+	[tag]"name RU"		[value]"Кража"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_any_base"
+	[tag]"name EN"		[value]"Any base"
+	[tag]"name RU"		[value]"Любая"
 	
 
 	

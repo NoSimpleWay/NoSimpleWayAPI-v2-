@@ -7,6 +7,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"GhastlyEyeJewel"
 	[tag]"base class"	[value]"Abyss Jewels"
 	[tag]"item tag"		[value]"Expensive base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Abyss"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -23,6 +26,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Abyss Jewels"
 	
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Abyss"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -39,6 +45,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Abyss Jewels"
 	
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Abyss"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -55,6 +64,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Abyss Jewels"
 	
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Abyss"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

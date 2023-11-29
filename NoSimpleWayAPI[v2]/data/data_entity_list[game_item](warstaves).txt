@@ -6,9 +6,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Стержень способности"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -20,9 +21,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Крученый посох"
 
 	[tag]"icon path"	[value]"Serpentine_Staff_inventory_icon"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -34,9 +36,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Стержень допустимости"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Heist"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -48,9 +54,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Посох эзомита"
 
 	[tag]"icon path"	[value]"Iron_Staff_inventory_icon"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -62,9 +72,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Посох падшего"
 
 	[tag]"icon path"	[value]"Vile_Staff_inventory_icon"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base tier"	[value]"good"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -76,7 +90,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Крепкий посох"
 
 	[tag]"icon path"	[value]"Iron_Staff_inventory_icon"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
 
@@ -98,10 +112,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Посох судьи"
 
 	[tag]"icon path"	[value]"Vile_Staff_inventory_icon"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -113,10 +131,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Посох вихрей"
 
 	[tag]"icon path"	[value]"Serpentine_Staff_inventory_icon"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -128,9 +150,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Боевой посох"
 
 	[tag]"icon path"	[value]"Iron_Staff_inventory_icon"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -142,9 +165,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Стержень потенциала"
 
 	[tag]"icon path"	[value]"SuperStaff"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Heist"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -156,10 +183,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Змеиный посох"
 
 	[tag]"icon path"	[value]"Serpentine_Staff_inventory_icon"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -171,9 +202,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Посох нечистого"
 
 	[tag]"icon path"	[value]"Vile_Staff_inventory_icon"
-	[tag]"base class"	[value]"Warstaff"
+	[tag]"base class"	[value]"Warstaves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"

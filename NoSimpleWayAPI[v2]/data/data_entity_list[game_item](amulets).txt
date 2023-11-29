@@ -19,6 +19,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good amulet base"
 	[tag]"item tag"		[value]"Have implicit"
 	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
+	
 	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
@@ -44,6 +48,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
 	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
@@ -61,6 +68,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Heist base"
 	[tag]"item tag"		[value]"Have influence"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Heist"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -82,6 +92,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Rare base"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -106,6 +119,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good amulet base"
 	[tag]"item tag"		[value]"Have implicit"
 	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
 	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
@@ -119,8 +135,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Have implicit"
 	
-	[tag]"item width"	[value]"1"
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Talisman"
+	
 	[tag]"item height"	[value]"1"
+	[tag]"item width"	[value]"1"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -134,6 +153,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Amulets"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -150,6 +171,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Amulets"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -167,6 +190,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Talisman"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -196,6 +222,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -222,6 +251,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -242,6 +274,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Rare base"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Common"
 
@@ -267,6 +302,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
 	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
@@ -287,6 +325,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
+	[tag]"base family"	[value]"Basic"
+	
 	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
@@ -301,11 +341,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"worth"		[value]"Trash"
 
@@ -326,6 +368,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Have implicit"
 	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Heist"
+	
 	[tag]"worth"		[value]"Rare"
 
 ADD_NEW_DATA_ENTITY
@@ -338,6 +383,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Amulets"
 
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Talisman"
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -364,6 +413,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
 	[tag]"worth"		[value]"Trash"
 
 ADD_NEW_DATA_ENTITY
@@ -378,11 +430,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Jewelry"
 	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Talisman"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Talisman"
+	
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -399,6 +454,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Good for attack build"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -417,24 +474,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Expensive base for unique"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 	
-
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Seaglass Amulet"
-	[tag]"name RU"		[value]"Амулет из морского стекла"
-
-	[tag]"icon path"	[value]"seaglass_amulet"
-	[tag]"base class"	[value]"Amulets"
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Boss"
 	
-	[tag]"item tag"		[value]"Rare base"
-	[tag]"item tag"		[value]"Have implicit"
-	[tag]"item tag"		[value]"Good for attack build"
+	[tag]"item tag"		[value]"Always unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

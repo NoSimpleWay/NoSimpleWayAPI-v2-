@@ -63,6 +63,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Когти"
 	
 	[tag]"short name"	[value]"Claw"
+	
+	[tag]"max sockets"	[value]"3"
 
 	[tag]"icon path"	[value]"class_claws"
 	
@@ -71,6 +73,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Daggers"
 	[tag]"name RU"		[value]"Кинжалы"
+	
+	[tag]"max sockets"	[value]"3"
 	
 	[tag]"short name"	[value]"Dagger"
 
@@ -91,6 +95,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Жезлы"
 	
 	[tag]"short name"	[value]"Wand"
+	
+	[tag]"max sockets"	[value]"3"
 
 	[tag]"icon path"	[value]"class_wands"
 	
@@ -99,6 +105,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Sceptres"
 	[tag]"name RU"		[value]"Скипетры"
+	
+	[tag]"max sockets"	[value]"3"
 
 	[tag]"icon path"	[value]"class_sceptres"
 	
@@ -107,6 +115,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Rune Daggers"
 	[tag]"name RU"		[value]"Рунический кинжал"
+	
+	[tag]"max sockets"	[value]"3"
 
 	[tag]"icon path"	[value]"class_rune_dagger"
 	
@@ -124,6 +134,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Одноручные мечи"
 	
 	[tag]"short name"	[value]"One Hand Sword"
+	
+	[tag]"max sockets"	[value]"3"
 
 	[tag]"icon path"	[value]"class_one_hand_swords"
 
@@ -132,6 +144,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Thrusting One Hand Swords"
 	[tag]"name RU"		[value]"Шпаги"
+	
+	[tag]"max sockets"	[value]"3"
 
 	[tag]"icon path"	[value]"class_thrusting_one_hand_swords"
 	
@@ -142,6 +156,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Двуручные мечи"
 	
 	[tag]"short name"	[value]"Two Hand Sword"
+	
+	[tag]"max sockets"	[value]"6"
 
 	[tag]"icon path"	[value]"class_two_hand_sword"
 	
@@ -160,6 +176,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Одноручные топоры"
 	
 	[tag]"short name"	[value]"One Hand Axe"
+	
+	[tag]"max sockets"	[value]"3"
 
 	[tag]"icon path"	[value]"class_one_hand_axes"
 	
@@ -170,6 +188,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Двуручные топоры"
 	
 	[tag]"short name"	[value]"Two Hand Axe"
+	
+	[tag]"max sockets"	[value]"6"
 
 	[tag]"icon path"	[value]"class_two_hand_axes"
 	
@@ -186,6 +206,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Одноручные булавы"
 	
 	[tag]"short name"	[value]"One Hand Mace"
+	
+	[tag]"max sockets"	[value]"3"
 
 	[tag]"icon path"	[value]"class_one_hand_maces"
 	
@@ -196,6 +218,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Двуручные булавы"
 	
 	[tag]"short name"	[value]"Two Hand Mace"
+	
+	[tag]"max sockets"	[value]"6"
 
 	[tag]"icon path"	[value]"class_tho_hand_maces"
 	
@@ -214,6 +238,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Луки"
 	
 	[tag]"short name"	[value]"Bow"
+	
+	[tag]"max sockets"	[value]"6"
 
 	[tag]"icon path"	[value]"class_bows"
 
@@ -242,6 +268,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Посохи"
 	
 	[tag]"short name"	[value]"Staff"
+	
+	[tag]"max sockets"	[value]"6"
 
 	[tag]"icon path"	[value]"class_staves"
 	
@@ -250,6 +278,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Warstaves"
 	[tag]"name RU"		[value]"Воинский посох"
+	
+	[tag]"short name"	[value]"Warstaff"
+	
+	[tag]"max sockets"	[value]"6"
 
 	[tag]"icon path"	[value]"class_warstaves"
 	
@@ -272,6 +304,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Удочки"
 	
 	[tag]"short name"	[value]"Fishing Rod"
+	
+	[tag]"max sockets"	[value]"4"
 
 	[tag]"icon path"	[value]"FishingRod"
 	
@@ -300,6 +334,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Gloves"
 	[tag]"name RU"		[value]"Перчатки"
+	
+	[tag]"max sockets"	[value]"4"
 
 	[tag]"icon path"	[value]"class_gloves"
 
@@ -310,6 +346,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Шлемы"
 	
 	[tag]"short name"	[value]"Helmet"
+	
+	[tag]"max sockets"	[value]"4"
 
 	[tag]"icon path"	[value]"class_helmets"
 	
@@ -318,6 +356,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"Boots"
 	[tag]"name RU"		[value]"Обувь"
+	
+	[tag]"max sockets"	[value]"4"
 
 	[tag]"icon path"	[value]"class_boots"
 	
@@ -328,6 +368,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Нательные доспехи"
 	
 	[tag]"short name"	[value]"Body Armour"
+	
+	[tag]"max sockets"	[value]"6"
 
 	[tag]"icon path"	[value]"class_body_armours"
 	
@@ -340,6 +382,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Щиты"
 	
 	[tag]"short name"	[value]"Shield"
+	
+	[tag]"max sockets"	[value]"3"
 
 	[tag]"icon path"	[value]"class_shields"
 	

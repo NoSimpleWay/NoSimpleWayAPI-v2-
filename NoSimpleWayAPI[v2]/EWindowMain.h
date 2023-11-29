@@ -1187,6 +1187,8 @@ public:
 	//static bool disable_deleting = true;
 
 	static std::vector<EDataEntity*>			registered_data_entity_game_item_list;
+	static std::vector<EDataEntity*>			registered_data_entity_class_list;
+
 	static void									add_game_item_data_entity_to_list();
 	
 
@@ -1430,6 +1432,8 @@ public:
 	int sockets_count = 0;
 	int links_count = 0;
 
+	int max_sockets = 0;
+
 	int max_stack_size = 1;
 	float stack_multiplier = 1.0f;
 
@@ -1573,6 +1577,8 @@ namespace DataEntityFilterConfigurer
 	extern std::vector <EntityButtonVariantRouterPatternConfigurer*> router_button_vector[ROUTER_BUTTON_VECTOR_SIZE];
 
 	extern int router_button_vector_id;
+
+	extern void clear_router_vector();
 	////////////////////////////////
 }
 
@@ -1734,15 +1740,20 @@ enum class GameItemGeneratorMode
 struct GameItemGenerator
 {
 public:
+
 	GameItemGenerator();
+	GameItemGenerator(std::string _key);
 	int										generations_count = 1;
 	std::vector<GameAttributeGenerator*>	attribute_generators_list;
+
+	ELocalisationText						localised_name;
 
 	GameItemGeneratorMode					generator_mode = GameItemGeneratorMode::GAME_ITEM_GENERATOR_MODE_ALL;
 	int										random_selection_count = 1;
 
-	bool									forceful_warn_when_hided = false;
-	bool									can_be_configured = true;
+	bool									forceful_warn_when_hided	= false;
+	bool									can_be_configured			= true;
+	bool									indicate					= true;
 
 	ELocalisationText						filtered_by_exact_name;
 	std::vector<DataEntityTagFilter*>		filtered_by_tags;

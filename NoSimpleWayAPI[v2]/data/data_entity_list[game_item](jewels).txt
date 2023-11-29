@@ -11,6 +11,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-default jewel"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Expensive base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Cluster jewel"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -30,6 +33,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-default jewel"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Cluster jewel"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -49,6 +55,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-default jewel"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Cluster jewel"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -68,6 +77,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Expensive base for unique"
+	[tag]"item tag"		[value]"Always unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	[tag]"base family"	[value]"Boss"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -86,6 +100,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Breach unique item"
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -105,6 +122,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Breach unique item"
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -123,6 +143,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Breach unique item"
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -142,6 +165,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Moderate"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Legion"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -157,6 +183,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-default jewel"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Legion"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -172,6 +201,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Glorious_Vanity_inventory_icon"
 	[tag]"base class"	[value]"Jewels"
 	[tag]"item tag"		[value]"Non-default jewel"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Legion"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -187,6 +219,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-default jewel"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Legion"
 	
 	[tag]"worth"		[value]"Moderate"
 
@@ -205,6 +240,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-default jewel"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Legion"
+	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -222,6 +260,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-default jewel"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Legion"
 	
 	[tag]"worth"		[value]"Moderate"
 

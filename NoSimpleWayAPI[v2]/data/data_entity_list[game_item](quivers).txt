@@ -9,6 +9,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Blunt_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -22,6 +25,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Broadhead_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -35,6 +41,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Fire_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -48,6 +56,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Penetrating_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -61,6 +73,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Serrated_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -74,6 +88,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Sharktooth_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -86,6 +102,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Spike-Point_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -99,6 +119,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Two-Point_Arrow_Quiver_inventory_icon"
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -113,6 +135,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Feather_quiver"
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
@@ -129,6 +154,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
 	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
+	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"2"
@@ -144,6 +172,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
 	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
 	[tag]"item width"	[value]"2"
@@ -158,6 +189,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Heavy_quiver"
 	[tag]"base class"	[value]"Quivers"
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 
@@ -177,6 +211,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -192,6 +229,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	
 	[tag]"item tag"		[value]"Good for attack build"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"
@@ -208,6 +249,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
 	[tag]"item tag"		[value]"Good for attack build"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"3"

@@ -10,6 +10,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -24,6 +29,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -38,6 +48,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -53,6 +66,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Have implicit"
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -67,6 +82,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -81,6 +99,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -95,6 +116,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -109,9 +133,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"base tier"	[value]"T2"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Basic"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -123,6 +151,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -137,6 +168,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -151,9 +185,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
 	
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Good base for unique"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -169,6 +206,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -185,6 +225,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base family"	[value]"Basic"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -200,8 +242,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
 	
 	[tag]"item tag"		[value]"Heist base"
+	[tag]"base tier"	[value]"T1"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Heist"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -217,8 +264,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Item slot"
 	
 	[tag]"item tag"		[value]"Heist base"
+	[tag]"base tier"	[value]"T2"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Heist"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -234,8 +286,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Staves"
 	
 	[tag]"item tag"		[value]"Have implicit"
-	
+	[tag]"item tag"		[value]"Item slot"
 	[tag]"item tag"		[value]"Heist base"
+	[tag]"base tier"	[value]"T3"
+	
+	[tag]"base tier"	[value]"Acceptable"
+	[tag]"base family"	[value]"Heist"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

@@ -339,9 +339,15 @@ struct DETF_Value
 {
 public:
 	std::string			target_value_key;
+
+
 	ELocalisationText	localised_attribute_name;
-	bool				is_active = true;
+	HSVRGBAColor		text_color;
+
+
+	bool				is_active		= true;
 	bool				always_suitable = false;
+	bool				force_field		= false;
 };
 
 
@@ -350,7 +356,9 @@ struct DataEntityTagFilter
 {
 public:
 	std::string				target_tag;
-	bool					can_be_configured = true;
+	bool					can_be_configured	= true;
+	bool					merge_with_prev		= false;
+
 
 	//std::vector<std::string>	suitable_values;
 	//std::vector<std::string>	banned_tags;
@@ -361,6 +369,8 @@ public:
 	DataEntityTagFilter* add_new_suitable_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
 	DataEntityTagFilter* add_new_banned_value(std::string _value, ELocalisationText _ltext = ELocalisationText());
 
+	void set_text_color(float _r, float _g, float _b, float _a);
+	void add_force_field();
 
 
 
