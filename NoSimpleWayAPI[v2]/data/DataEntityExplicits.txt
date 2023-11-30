@@ -1,0 +1,1422 @@
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Squire's"
+
+	[tag]"name EN"		[value]"[Squire's](15-19)% increased Physical Damage (16-20) to Accuracy Rating"
+	[tag]"name RU"		[value]"[Велитский](15-19)% увеличение физического урона (16-20) к меткости"
+	
+	[tag]"explicit tag"	[value]"T8"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Journeyman's"
+
+	[tag]"name EN"		[value]"[Journeyman's](20-24)% increased Physical Damage (21-46) to Accuracy Rating"
+	[tag]"name RU"		[value]"[Триарский](20-24)% увеличение физического урона (21-46) к меткости"
+	
+	[tag]"explicit tag"	[value]"T7"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Reaver's"
+
+	[tag]"name EN"		[value]"[Reaver's](25-34)% increased Physical Damage (47-72) to Accuracy Rating"
+	[tag]"name RU"		[value]"[Гладиаторский](25-34)% увеличение физического урона (47-72) к меткости"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Mercenary's"
+
+	[tag]"name EN"		[value]"[Mercenary's](35-44)% increased Physical Damage (73-97) to Accuracy Rating"
+	[tag]"name RU"		[value]"[Деканский](35-44)% увеличение физического урона (73-97) к меткости"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Champion's"
+
+	[tag]"name EN"		[value]"[Champion's](45-54)% increased Physical Damage (98-123) to Accuracy Rating"
+	[tag]"name RU"		[value]"[Легионерский](45-54)% увеличение физического урона (98-123) к меткости"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Conqueror's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Conqueror's](55-64)% increased Physical Damage (124-149) to Accuracy Rating"
+	[tag]"name RU"		[value]"[Центурионский](55-64)% увеличение физического урона (124-149) к меткости"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Emperor's"
+
+	[tag]"name EN"		[value]"[Emperor's](65-74)% increased Physical Damage (150-174) to Accuracy Rating"
+	[tag]"name RU"		[value]"[Императорский](65-74)% увеличение физического урона (150-174) к меткости"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vulnerability"
+	[tag]"base name"	[value]"Dictator's"
+
+	[tag]"name EN"		[value]"[Dictator's](75-79)% increased Physical Damage (175-200) to Accuracy Rating"
+	[tag]"name RU"		[value]"[Диктаторский](75-79)% увеличение физического урона (175-200) к меткости"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Heavy"
+
+	[tag]"name EN"		[value]"[Heavy](40-49)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Увесистый](40-49)% увеличение физического урона"
+	
+	[tag]"explicit tag"	[value]"T8"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Serrated"
+
+	[tag]"name EN"		[value]"[Serrated](50-64)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Тяжелый](50-64)% увеличение физического урона"
+	
+	[tag]"explicit tag"	[value]"T7"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Wicked"
+
+	[tag]"name EN"		[value]"[Wicked](65-84)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Гнетущий](65-84)% увеличение физического урона"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Vicious"
+
+	[tag]"name EN"		[value]"[Vicious](85-109)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Злобный](85-109)% увеличение физического урона"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Bloodthirsty"
+
+	[tag]"name EN"		[value]"[Bloodthirsty](110-134)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Кровожадный](110-134)% увеличение физического урона"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Cruel"
+
+	[tag]"name EN"		[value]"[Cruel](135-154)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Жестокий](135-154)% увеличение физического урона"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Tyrannical"
+
+	[tag]"name EN"		[value]"[Tyrannical](155-169)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Тиранический](155-169)% увеличение физического урона"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vulnerability"
+	[tag]"base name"	[value]"Merciless"
+
+	[tag]"name EN"		[value]"[Merciless](170-179)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Безжалостный](170-179)% увеличение физического урона"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vulnerability"
+	[tag]"base name"	[value]"Glinting"
+
+	[tag]"name EN"		[value]"[Glinting]Adds 2 to (4-5) Physical Damage"
+	[tag]"name RU"		[value]"[Рассекающий]Добавляет от 2 до (4-5) физического урона"
+	
+	[tag]"explicit tag"	[value]"T9"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vulnerability"
+	[tag]"base name"	[value]"Burnished"
+
+	[tag]"name EN"		[value]"[Burnished]Adds (6-8) to (12-15) Physical Damage"
+	[tag]"name RU"		[value]"[Болезненный]Добавляет от (6-8) до (12-15) физического урона"
+	
+	[tag]"explicit tag"	[value]"T8"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vulnerability"
+	[tag]"base name"	[value]"Polished"
+
+	[tag]"name EN"		[value]"[Polished]Adds (10-13) to (21-25) Physical Damage"
+	[tag]"name RU"		[value]"[Ранящий]Добавляет от (10-13) до (21-25) физического урона"
+	
+	[tag]"explicit tag"	[value]"T7"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vulnerability"
+	[tag]"base name"	[value]"Honed"
+
+	[tag]"name EN"		[value]"[Honed]Adds (13-17) to (28-32) Physical Damage"
+	[tag]"name RU"		[value]"[Разрубающий]Добавляет от (13-17) до (28-32) физического урона"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vulnerability"
+	[tag]"base name"	[value]"Gleaming"
+
+	[tag]"name EN"		[value]"[Gleaming]Adds (16-22) to (35-40) Physical Damage"
+	[tag]"name RU"		[value]"[Калечащий]Добавляет от (16-22) до (35-40) физического урона"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vulnerability"
+	[tag]"base name"	[value]"Annealed"
+
+	[tag]"name EN"		[value]"[Annealed]Adds (20-28) to (43-51) Physical Damage"
+	[tag]"name RU"		[value]"[Убийственный]Добавляет от (20-28) до (43-51) физического урона"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vulnerability"
+	[tag]"base name"	[value]"Razor-sharp"
+
+	[tag]"name EN"		[value]"[Razor-sharp]Adds (25-33) to (52-61) Physical Damage"
+	[tag]"name RU"		[value]"[Карающий]Добавляет от (25-33) до (52-61) физического урона"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vulnerability"
+	[tag]"base name"	[value]"Tempered"
+
+	[tag]"name EN"		[value]"[Tempered]Adds (30-40) to (63-73) Physical Damage"
+	[tag]"name RU"		[value]"[Сокрушающий]Добавляет от (30-40) до (63-73) физического урона"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vulnerability"
+	[tag]"base name"	[value]"Flaring"
+
+	[tag]"name EN"		[value]"[Flaring]Adds (34-47) to (72-84) Physical Damage"
+	[tag]"name RU"		[value]"[Смертельный]Добавляет от (34-47) до (72-84) физического урона"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"damage type"	[value]"Physical"
+	[tag]"build type"	[value]"Attacker"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Heated"
+
+	[tag]"name EN"		[value]"[Heated]Adds (1-2) to (3-4) Fire Damage <one handed>\nAdds (3-5) to (6-7) Fire Damage <two handed>"
+	[tag]"name RU"		[value]"[Тёплый]Добавляет от (1-2) до (3-4) урона от огня <одноручки>\nДобавляет от (3-5) до (6-7) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T10"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Smouldering"
+
+	[tag]"name EN"		[value]"[Smouldering]Adds (8-10) to (15-18) Fire Damage <one handed>\nAdds (14-20) to (29-33) Fire Damage <two handed>"
+	[tag]"name RU"		[value]"[Нагревающий]Добавляет от (8-10) до (15-18) урона от огня <одноручки>\nДобавляет от (14-20) до (29-33) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T9"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Smoking"
+
+	[tag]"name EN"		[value]"[Smoking]Adds (12-17) to (25-29) Fire Damage <one handed>\nAdds (23-31) to (47-54) Fire Damage <two handed>"
+	[tag]"name RU"		[value]"[Жгучий]Добавляет от (12-17) до (25-29) урона от огня <одноручки>\nДобавляет от 23-31) до (47-54) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T8"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Burning"
+
+	[tag]"name EN"		[value]"[Burning]Adds (17-24) to (35-41) Fire Damage <one handed>\nAdds (45-61) to (91-106) Fire Damage <two handed>"
+	[tag]"name RU"		[value]"[Жаркий]Добавляет от (17-24) до (35-41) урона от огня <одноручки>\nДобавляет от (45-61) до (91-106) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T7"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Flaming"
+
+	[tag]"name EN"		[value]"[Flaming]Adds (24-33) to (49-57) Fire Damage <one handed>\nAdds (45-61) to (91-106) Fire Damage <two handed>"
+	[tag]"name RU"		[value]"[Обжигающий]Добавляет от (24-33) до (49-57) урона от огня <одноручки>\nДобавляет от (45-61) до (91-106) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Scorching"
+
+	[tag]"name EN"		[value]"[Scorching]Adds (34-46) to (68-80) Fire Damage <one handed>\nAdds (63-85) to (128-148) Fire Damage <two handed>"
+	[tag]"name RU"		[value]"[Опаляющий]Добавляет от (34-46) до (68-80) урона от огня <одноручки>\nДобавляет от (63-85) до (128-148) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Incinerating"
+
+	[tag]"name EN"		[value]"[Incinerating]Adds (46-62) to (93-107) Fire Damage <one handed>\nAdds (85-115) to (172-200) Fire Damage <two handed>"
+	[tag]"name RU"		[value]"[Горящий]Добавляет от (46-62) до (93-107) урона от огня <одноручки>\nДобавляет от (85-115) до (172-200) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Blasting"
+
+	[tag]"name EN"		[value]"[Blasting]Adds (59-81) to (120-140) Fire Damage <one handed>\nAdds (110-150) to (223-260) Fire Damage <two handed>"
+	[tag]"name RU"		[value]"[Пламенный]Добавляет от (59-81) до (120-140) урона от огня <одноручки>\nДобавляет от (110-150) до (223-260) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Cremating"
+
+	[tag]"name EN"		[value]"[Cremating]Adds (74-101) to (150-175) Fire Damage <one handed>\nAdds (137-188) to (279-325) Fire Damage <two handed>"
+	[tag]"name RU"		[value]"[Сжигающий]Добавляет от (74-101) до (150-175) урона от огня <одноручки>\nДобавляет от ((137-188) до (279-325) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"MoltenStrike"
+	[tag]"base name"	[value]"Carbonising"
+
+	[tag]"name EN"		[value]"[Carbonising]Adds (89-121) to (180-210) Fire Damage <one handed>\nAdds (165-225) to (335-390) Fire Damage <two handed>"
+	[tag]"name RU"		[value]"[Обугливающий]Добавляет от (89-121) до (180-210) урона от огня <одноручки>\nДобавляет от (165-225) до (335-390) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Attacker"
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofIce"
+	[tag]"base name"	[value]"Frosted"
+
+	[tag]"name EN"		[value]"[Frosted]Adds (1-2) to (3-4) Cold Damage <one handed>\nAdds (2-3) to (6-7) Cold Damage <two handed>"
+	[tag]"name RU"		[value]"[Прохладный]Добавляет от (1-2) до (3-4) урона от холода <одноручки>\nДобавляет от (2-3) to (6-7) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T10"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofIce"
+	[tag]"base name"	[value]"Chilled"
+
+	[tag]"name EN"		[value]"[Chilled]Adds (7-9) to (14-16) Cold Damage <one handed>\nAdds (12-17) to (26-30) Cold Damage <two handed>"
+	[tag]"name RU"		[value]"[Охлаждающий]Добавляет от (7-9) до (14-16) урона от холода <одноручки>\nДобавляет от (12-17) to (26-30) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T9"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofIce"
+	[tag]"base name"	[value]"Icy"
+
+	[tag]"name EN"		[value]"[Icy]Adds (11-15) to (23-26) Cold Damage <one handed>\nAdds (29-40) to (58-68) Cold Damage <two handed>"
+	[tag]"name RU"		[value]"[Остужающий]Добавляет от (11-15) до (23-26) урона от холода <одноручки>\nДобавляет от (29-40) to (58-68) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T8"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofIce"
+	[tag]"base name"	[value]"Frigid"
+
+	[tag]"name EN"		[value]"[Frigid]Adds (16-21) to (31-37) Cold Damage <one handed>\nAdds (29-40) to (58-68) Cold Damage <two handed>"
+	[tag]"name RU"		[value]"[Холодный]Добавляет от (16-21) до (31-37) урона от холода <одноручки>\nДобавляет от (29-40) to (58-68) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T7"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofIce"
+	[tag]"base name"	[value]"Freezing"
+
+	[tag]"name EN"		[value]"[Freezing]Adds (22-30) to (44-51) Cold Damage <one handed>\nAdds (41-55) to (81-95) Cold Damage <two handed>"
+	[tag]"name RU"		[value]"[Замораживающий]Добавляет от (22-30) до (44-51) урона от холода <одноручки>\nДобавляет от (41-55) to (81-95) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofIce"
+	[tag]"base name"	[value]"Frozen"
+
+	[tag]"name EN"		[value]"[Frozen]Adds (31-42) to (62-71) Cold Damage <one handed>\nAdds (57-77) to (114-132) Cold Damage <two handed>"
+	[tag]"name RU"		[value]"[Морозный]Добавляет от (31-42) до (62-71) урона от холода <одноручки>\nДобавляет от (57-77) to (114-132) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofIce"
+	[tag]"base name"	[value]"Glaciated"
+
+	[tag]"name EN"		[value]"[Glaciated]Adds (41-57) to (83-97) Cold Damage <one handed>\nAdds (77-104) to (154-178) Cold Damage <two handed>"
+	[tag]"name RU"		[value]"[Ледяной]Добавляет от (41-57) до (83-97) урона от холода <одноручки>\nДобавляет от (77-104) to (154-178) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofIce"
+	[tag]"base name"	[value]"Polar"
+
+	[tag]"name EN"		[value]"[Polar]Adds (54-74) to (108-126) Cold Damage <one handed>\nAdds (99-136) to (200-232) Cold Damage <two handed>"
+	[tag]"name RU"		[value]"[Обмораживающий]Добавляет от (54-74) до (108-126) урона от холода <одноручки>\nДобавляет от (99-136) to (200-232) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofIce"
+	[tag]"base name"	[value]"Entombing"
+
+	[tag]"name EN"		[value]"[Entombing]Adds (68-92) to (136-157) Cold Damage <one handed>\nAdds (124-170) to (250-290) Cold Damage <two handed>"
+	[tag]"name RU"		[value]"[Леденящий]Добавляет от (68-92) до (136-157) урона от холода <одноручки>\nДобавляет от (124-170) to (250-290) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"FrostBlades"
+	[tag]"base name"	[value]"Crystalising"
+
+	[tag]"name EN"		[value]"[Crystalising]Adds (81-111) to (163-189) Cold Damage <one handed>\nAdds (149-204) to (300-348) Cold Damage <two handed>"
+	[tag]"name RU"		[value]"[Кристаллизующий]Добавляет от (81-111) до (163-189) урона от холода <одноручки>\nДобавляет от (149-204) to (300-348) урона от огня <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Attacker"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Humming"
+
+	[tag]"name EN"		[value]"[Humming]Adds 1 to (5-6) Lightning Damage <one handed>\nAdds 2 to (10-11) Lightning Damage <two handed>"
+	[tag]"name RU"		[value]"[Покалывающий]Добавляет от 1 до (5-6) урона от молнии <одноручки>\nДобавляет от 2 до (10-11) урона от молнии <двуручки>"
+
+	[tag]"explicit tag"	[value]"T10"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Buzzing"
+
+	[tag]"name EN"		[value]"[Buzzing]Adds 2 to (25-29) Lightning Damage <one handed>\nAdds 2 to (10-11) Lightning Damage <two handed>"
+	[tag]"name RU"		[value]"[Потрескивающий]Добавляет от 2 до (25-29) урона от молнии <одноручки>\nДобавляет от 2 до (10-11) урона от молнии <двуручки>"
+
+	[tag]"explicit tag"	[value]"T9"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Snapping"
+
+	[tag]"name EN"		[value]"[Snapping]Adds 2 to (41–48) Lightning Damage <one handed>\nAdds 2 to (10-11) Lightning Damage <two handed>"
+	[tag]"name RU"		[value]"[Искристый]Добавляет от 2 до (41–48) урона от молнии <одноручки>\nДобавляет от 2 до (10-11) урона от молнии <двуручки>"
+
+	[tag]"explicit tag"	[value]"T8"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Crackling"
+
+	[tag]"name EN"		[value]"[Crackling]Adds 3 to (57-67) Lightning Damage <one handed>\nAdds 2 to (10-11) Lightning Damage <two handed>"
+	[tag]"name RU"		[value]"[Пульсирующий]Добавляет от 3 до (57-67) урона от молнии <одноручки>\nДобавляет от 2 до (10-11) урона от молнии <двуручки>"
+
+	[tag]"explicit tag"	[value]"T7"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Sparking"
+
+	[tag]"name EN"		[value]"[Sparking]Adds (4–5) to (80–94) Lightning Damage <one handed>\nAdds 2 to (10-11) Lightning Damage <two handed>"
+	[tag]"name RU"		[value]"[Искрящийся]Добавляет от (4–5) до (80–94) урона от молнии <одноручки>\nДобавляет от 2 до (10-11) урона от молнии <двуручки>"
+
+	[tag]"explicit tag"	[value]"T6"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Arcing"
+
+	[tag]"name EN"		[value]"[Arcing]Adds (5–8) to (112–131) Lightning Damage <one handed>\nAdds 2 to (10-11) Lightning Damage <two handed>"
+	[tag]"name RU"		[value]"[Громовой]Добавляет от  (5–8) до (112–131) урона от молнии <одноручки>\nДобавляет от 2 до (10-11) урона от молнии <двуручки>"
+
+	[tag]"explicit tag"	[value]"T5"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Shocking"
+
+	[tag]"name EN"		[value]"[Shocking]Adds (8–10) to (152–176) Lightning Damage <one handed>\nAdds 2 to (10-11) Lightning Damage <two handed>"
+	[tag]"name RU"		[value]"[Шоковый]Добавляет от (8–10) до (152–176) урона от молнии <одноручки>\nДобавляет от 2 до (10-11) урона от молнии <двуручки>"
+
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Discharging"
+
+	[tag]"name EN"		[value]"[Discharging]Adds (10–14) to (197–229) Lightning Damage <one handed>\nAdds 2 to (10-11) Lightning Damage <two handed>"
+	[tag]"name RU"		[value]"[Грозовой]Добавляет от (10–14) до (197–229) урона от молнии <одноручки>\nДобавляет от 2 до (10-11) урона от молнии <двуручки>"
+
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Electrocuting"
+
+	[tag]"name EN"		[value]"[Electrocuting]Adds (13–17) to (247–286) Lightning Damage <one handed>\nAdds 2 to (10-11) Lightning Damage <two handed>"
+	[tag]"name RU"		[value]"[Испепеляющий]Добавляет от (13–17) до (247–286) урона от молнии <одноручки>\nДобавляет от 2 до (10-11) урона от молнии <двуручки>"
+		
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"LightningArrow"
+	[tag]"base name"	[value]"Vapourising"
+
+	[tag]"name EN"		[value]"[Vapourising]Adds (15–21) to (296–344) Lightning Damage <one handed>\nAdds 2 to (10-11) Lightning Damage <two handed>"
+	[tag]"name RU"		[value]"[Испаряющий]Добавляет от (15–21) до (296–344) урона от молнии <одноручки>\nДобавляет от 2 до (10-11) урона от молнии <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Catalysing"
+
+	[tag]"name EN"		[value]"[Catalysing](11-20)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Стихийный](11-20)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+	[tag]"explicit tag"	[value]"Low usability"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Infusing"
+
+	[tag]"name EN"		[value]"[Infusing](21-30)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Бушующий](21-30)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+	[tag]"explicit tag"	[value]"Low usability"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Empowering"
+
+	[tag]"name EN"		[value]"[Empowering](31-36)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Лютующий](31-36)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+	[tag]"explicit tag"	[value]"Low usability"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Unleashed"
+
+	[tag]"name EN"		[value]"[Unleashed](37-42)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Свирепствующий](37-42)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+	[tag]"explicit tag"	[value]"Low usability"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Overpowering"
+
+	[tag]"name EN"		[value]"[Overpowering](43-50)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Неистовствующий](43-50)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+	[tag]"explicit tag"	[value]"Low usability"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discharge"
+	[tag]"base name"	[value]"Devastating"
+
+	[tag]"name EN"		[value]"[Devastating](51-59)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Опустошающий](51-59)% увеличение урона от стихий от умений атак"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Attacker"
+	
+	[tag]"explicit tag"	[value]"Low usability"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Empower_Support_inventory_icon"
+	[tag]"base name"	[value]"Paragon's"
+
+	[tag]"name EN"		[value]"[Paragon's]+1 to Level of Socketed Gems"
+	[tag]"name RU"		[value]"[Безупречный]+1 к уровню размещённых камней"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"damage type"	[value]"Chaos"
+	[tag]"damage type"	[value]"Physical"
+	
+	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
+	[tag]"build type"	[value]"DoT"
+	[tag]"build type"	[value]"Summoner"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Wither"
+	[tag]"base name"	[value]"Malicious"
+
+	[tag]"name EN"		[value]"[Malicious]Adds (56-87) to (105-160) Chaos Damage <one handed>\nAdds (98-149) to (183-280) Chaos Damage <two handed"
+	[tag]"name RU"		[value]"[Коварный]Добавляет от (56-87) до (105-160) урона хаосом <одноручки>\nДобавляет от (98-149) до (183-280) урона хаосом <двуручки>"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"damage type"	[value]"Chaos"
+	[tag]"build type"	[value]"Attacker"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Barrage"
+	[tag]"base name"	[value]"of Skill"
+
+	[tag]"name EN"		[value]"[of Skill](5-7)% increased Attack Speed\n[T1] for rings. [T4] for gloves. [T8] for weapon"
+	[tag]"name RU"		[value]"[навыка](5-7)% повышение скорости атаки\n[T1] для колец. [T4] для перчаток. [T8] для оружия"
+	
+	[tag]"explicit tag"	[value]"T8"
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Barrage"
+	[tag]"base name"	[value]"of Ease"
+
+	[tag]"name EN"		[value]"[of Skill](8-10)% increased Attack Speed\n[T3] for gloves. [T7] for weapon"
+	[tag]"name RU"		[value]"[навыка](8-10)% повышение скорости атаки\n[T3] для перчаток. [T7] для оружия"
+	
+	[tag]"explicit tag"	[value]"T7"
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Barrage"
+	[tag]"base name"	[value]"of Mastery"
+
+	[tag]"name EN"		[value]"[of Mastery](11-13)% increased Attack Speed\n[T2] for gloves. [T6] for weapon"
+	[tag]"name RU"		[value]"[мастерства](11-13)% повышение скорости атаки\n[T2] для перчаток. [T6] для оружия"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Barrage"
+	[tag]"base name"	[value]"of Renown"
+
+	[tag]"name EN"		[value]"[of Renown](14-16)% increased Attack Speed\n[T1] for gloves. [T5] for weapon"
+	[tag]"name RU"		[value]"[узнавания](14-16)% повышение скорости атаки\n[T1] для перчаток. [T5] для оружия"
+
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Barrage"
+	[tag]"base name"	[value]"of Acclaim"
+
+	[tag]"name EN"		[value]"[of Acclaim](17-19)% increased Attack Speed"
+	[tag]"name RU"		[value]"[известности](17-19)% повышение скорости атаки"
+	
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Barrage"
+	[tag]"base name"	[value]"of Fame"
+
+	[tag]"name EN"		[value]"[of Fame](20-22)% increased Attack Speed"
+	[tag]"name RU"		[value]"[славы](20-22)% повышение скорости атаки"
+	
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Barrage"
+	[tag]"base name"	[value]"of Infamy"
+
+	[tag]"name EN"		[value]"[of Infamy](23-25)% increased Attack Speed"
+	[tag]"name RU"		[value]"[рока](23-25)% повышение скорости атаки"
+	
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Attacker"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Barrage"
+	[tag]"base name"	[value]"of Celebration"
+
+	[tag]"name EN"		[value]"[of Celebration](26-27)% increased Attack Speed"
+	[tag]"name RU"		[value]"[триумфа](26-27)% повышение скорости атаки"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Needling"
+
+	[tag]"name EN"		[value]"[of Needling](10-14)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[овода](10-14)% повышение шанса критического удара"
+
+	[tag]"explicit tag"	[value]"T6"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Stinging"
+
+	[tag]"name EN"		[value]"[of Stinging](15-19)% increased Critical Strike Chance <weapon>\n(26–31)% increased Critical Strike Chance during Effect <flask>"
+	[tag]"name RU"		[value]"[осы](15-19)% повышение шанса критического удара <оружие>\n(26–31)% повышение шанса критического удара во время действия эффекта <флакон>"
+
+	[tag]"explicit tag"	[value]"T5"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Piercing"
+
+	[tag]"name EN"		[value]"[of Piercing](20-24)% increased Critical Strike Chance <weapon>\n(32–37)% increased Critical Strike Chance during Effect <flask>"
+	[tag]"name RU"		[value]"[шмеля](20-24)% повышение шанса критического удара <оружие>\n(32–37)% повышение шанса критического удара во время действия эффекта <флакон>"
+
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Puncturing"
+
+	[tag]"name EN"		[value]"[of Puncturing](25-29)% increased Critical Strike Chance <weapon>\n(38–43)% increased Critical Strike Chance during Effect <flask>"
+	[tag]"name RU"		[value]"[шершня](25-29)% повышение шанса критического удара <оружие>\n(38–43)% повышение шанса критического удара во время действия эффекта <флакон>"
+
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Penetrating"
+
+	[tag]"name EN"		[value]"[of Penetrating](30-34)% increased Critical Strike Chance <weapon>\n(44–49)% increased Critical Strike Chance during Effect <flask>"
+	[tag]"name RU"		[value]"[скорпиона](30-34)% повышение шанса критического удара <оружие>\n(44–49)% повышение шанса критического удара во время действия эффекта <флакон>"
+
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Incision"
+
+	[tag]"name EN"		[value]"[of Incision](35-38)% increased Critical Strike Chance <weapon>\n(50–55)% increased Critical Strike Chance during Effect <flask>"
+	[tag]"name RU"		[value]"[мантикоры](35-38)% повышение шанса критического удара <оружие>\n(50–55)% повышение шанса критического удара во время действия эффекта <флакон>"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Ire"
+
+	[tag]"name EN"		[value]"[of Ire](10-14)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[вспыльчивости](10-14)% к глобальному множителю критического удара"
+
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"build type"	[value]"Attacker"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Anger"
+
+	[tag]"name EN"		[value]"[of Anger](15-19)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[злости](15-19)% к глобальному множителю критического удара"
+
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Rage"
+
+	[tag]"name EN"		[value]"[of Rage](20-24)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[гнева](20-24)% к глобальному множителю критического удара"
+
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"Amulet attribute"
+	
+	[tag]"build type"	[value]"Attacker"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Fury"
+
+	[tag]"name EN"		[value]"[of Fury](25-29)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[ярости](25-29)% к глобальному множителю критического удара"
+
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Ferocity"
+
+	[tag]"name EN"		[value]"[of Ferocity](30-34)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[свирепости](30-34)% к глобальному множителю критического удара"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Destruction"
+
+	[tag]"name EN"		[value]"[of Destruction](35-38)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[разрушения](35-38)% к глобальному множителю критического удара"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"Amulet"
+	[tag]"build type"	[value]"Attacker"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Ire"
+
+	[tag]"name EN"		[value]"[of Ire](8-12)% to Critical Strike Multiplier with Bows"
+	[tag]"name RU"		[value]"[вспыльчивости](8-12)% к множителю критического удара луками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Anger"
+
+	[tag]"name EN"		[value]"[of Anger](13-19)% to Critical Strike Multiplier with Bows"
+	[tag]"name RU"		[value]"[злости](13-19)% к множителю критического удара луками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Rage"
+
+	[tag]"name EN"		[value]"[of Rage](20-24)% to Critical Strike Multiplier with Bows"
+	[tag]"name RU"		[value]"[гнева](20-24)% к множителю критического удара луками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Fury"
+
+	[tag]"name EN"		[value]"[of Fury](25-29)% to Critical Strike Multiplier with Bows"
+	[tag]"name RU"		[value]"[ярости](25-29)% к множителю критического удара луками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Ferocity"
+
+	[tag]"name EN"		[value]"[of Ferocity](30-34)% to Critical Strike Multiplier with Bows"
+	[tag]"name RU"		[value]"[свирепости](30-34)% к множителю критического удара луками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Destruction"
+
+	[tag]"name EN"		[value]"[of Destruction](35-38)% to Critical Strike Multiplier with Bows"
+	[tag]"name RU"		[value]"[разрушения](35-38)% к множителю критического удара луками"
+	
+	
