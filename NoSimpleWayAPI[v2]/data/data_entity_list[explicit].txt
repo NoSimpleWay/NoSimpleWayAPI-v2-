@@ -3716,80 +3716,6 @@ ADD_NEW_DATA_ENTITY
 
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Waning"
-
-	[tag]"name EN"		[value]"[of Waning](14-18)% to Chaos Damage over Time Multiplier\nOR\n(26-35)% to Chaos Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[ослабления](14-18)% к множителю постепенного урона хаосом\nИли\n(26-35)% к множителю постепенного урона хаосом"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Rune dagger"
-	[tag]"explicit tag"	[value]"Staff"
-	[tag]"explicit tag"	[value]"Sceptre"
-	[tag]"explicit tag"	[value]"Wand"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Wasting"
-
-	[tag]"name EN"		[value]"[of Wasting](19-23)% to Chaos Damage over Time Multiplier\nOR\n(36-45)% to Chaos Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[угасания](19-23)% к множителю постепенного урона хаосом\nИли\n(36-45)% к множителю постепенного урона хаосом"
-	
-	[tag]"explicit tag"	[value]"T4"
-	[tag]"explicit tag"	[value]"Rune dagger"
-	[tag]"explicit tag"	[value]"Staff"
-	[tag]"explicit tag"	[value]"Sceptre"
-	[tag]"explicit tag"	[value]"Wand"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Deteriorating"
-
-	[tag]"name EN"		[value]"[of Deteriorating](24-28)% to Chaos Damage over Time Multiplier\nOR\n(46-55)% to Chaos Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[изнашивания](24-28)% к множителю постепенного урона хаосом\nИли\n(46-55)% к множителю постепенного урона хаосом"
-	
-	[tag]"explicit tag"	[value]"T3"
-	[tag]"explicit tag"	[value]"Rune dagger"
-	[tag]"explicit tag"	[value]"Staff"
-	[tag]"explicit tag"	[value]"Sceptre"
-	[tag]"explicit tag"	[value]"Wand"
-
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Atrophying"
-
-	[tag]"name EN"		[value]"[of Atrophying](29-33)% to Chaos Damage over Time Multiplier\nOR\n(56-65)% to Chaos Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[изнурения](29-33)% к множителю постепенного урона хаосом\nИли\n(56-65)% к множителю постепенного урона хаосом"
-	
-	[tag]"explicit tag"	[value]"T2"
-	[tag]"explicit tag"	[value]"Rune dagger"
-	[tag]"explicit tag"	[value]"Staff"
-	[tag]"explicit tag"	[value]"Sceptre"
-	[tag]"explicit tag"	[value]"Wand"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Disintegrating"
-
-	[tag]"name EN"		[value]"[of Disintegrating](34-38)% to Chaos Damage over Time Multiplier(66-75)% to Chaos Damage over Time \nOR\n(56-65)% to Chaos Damage over Time Multiplier(66-75)% to Chaos Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[разложения](34-38)% к множителю постепенного урона хаосом\nИли\n(66-75)% к множителю постепенного урона хаосом"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Rune dagger"
-	[tag]"explicit tag"	[value]"Staff"
-	[tag]"explicit tag"	[value]"Sceptre"
-	[tag]"explicit tag"	[value]"Wand"
 	
 	
 	
@@ -4340,77 +4266,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[The Shaper's](0.3-0.5)% of Cold Damage Leeched as Life"
 	[tag]"name RU"		[value]"[Созданный](0.3-0.5)% урона от холода похищается в виде здоровья"
 
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Inclement"
 
-	[tag]"name EN"		[value]"[of the Inclement](26-35)% to Cold Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[суровости](26-35)% к множителю постепенного урона от холода"
 
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Inclement"
 
-	[tag]"name EN"		[value]"[of the Inclement](14-18)% to Cold Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[суровости](14-18)% к множителю постепенного урона от холода"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Bleak"
-
-	[tag]"name EN"		[value]"[of the Bleak](19-23)% to Cold Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[промозглости](19-23)% к множителю постепенного урона от холода"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Bleak"
-
-	[tag]"name EN"		[value]"[of the Bleak](36-45)% to Cold Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[промозглости](36-45)% к множителю постепенного урона от холода"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Boreal"
-
-	[tag]"name EN"		[value]"[of the Boreal](46-55)% to Cold Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[полюса](46-55)% к множителю постепенного урона от холода"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Boreal"
-
-	[tag]"name EN"		[value]"[of the Boreal](24-28)% to Cold Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[полюса](24-28)% к множителю постепенного урона от холода"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Gelid"
-
-	[tag]"name EN"		[value]"[of the Gelid](56-65)% to Cold Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[стужи](56-65)% к множителю постепенного урона от холода"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Gelid"
-
-	[tag]"name EN"		[value]"[of the Gelid](29-33)% to Cold Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[стужи](29-33)% к множителю постепенного урона от холода"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -4432,33 +4290,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[of Shaping](11-15)% to Cold Damage over Time Multiplier"
 	[tag]"name RU"		[value]"[изменения](11-15)% к множителю постепенного урона от холода"
 
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Heartstopping"
-
-	[tag]"name EN"		[value]"[of Heartstopping](34-38)% to Cold Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[арктики](34-38)% к множителю постепенного урона от холода"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Rune dagger attribute"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Heartstopping"
-
-	[tag]"name EN"		[value]"[of Heartstopping](66-75)% to Cold Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[арктики](66-75)% к множителю постепенного урона от холода"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -4634,427 +4465,10 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Zealotry"
-	[tag]"base name"	[value]"Apprentice's"
-
-	[tag]"name EN"		[value]"[Apprentice's](10-19)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Послушнический](10-19)% увеличение урона от чар"
-
-	[tag]"explicit tag"	[value]"T8"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"damage type"	[value]"Cold"
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Caster"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Zealotry"
-	[tag]"base name"	[value]"Adept's"
-
-	[tag]"name EN"		[value]"[Adept's](20-29)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Заколдованный](20-29)% увеличение урона от чар"
-
-	[tag]"explicit tag"	[value]"T7"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"damage type"	[value]"Cold"
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Caster"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Zealotry"
-	[tag]"base name"	[value]"Scholar's"
-
-	[tag]"name EN"		[value]"[Scholar's](30-39)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Зачарованный](30-39)% увеличение урона от чар"
-
-	[tag]"explicit tag"	[value]"T6"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"damage type"	[value]"Cold"
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Caster"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Zealotry"
-	[tag]"base name"	[value]"Professor's"
-
-	[tag]"name EN"		[value]"[Professor's](40-54)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Профессорский](40-54)% увеличение урона от чар"
-	
-	[tag]"explicit tag"	[value]"T5"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"damage type"	[value]"Cold"
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Caster"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Zealotry"
-	[tag]"base name"	[value]"Occultist's"
-
-	[tag]"name EN"		[value]"[Occultist's](55-69)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Оккультный](55-69)% увеличение урона от чар"
-
-	[tag]"explicit tag"	[value]"T4"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"damage type"	[value]"Cold"
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Caster"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Zealotry"
-	[tag]"base name"	[value]"Incanter's"
-
-	[tag]"name EN"		[value]"[Incanter's](70-84)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Чернокнижный](70-84)% увеличение урона от чар"
-
-	[tag]"explicit tag"	[value]"T3"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"damage type"	[value]"Cold"
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Caster"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Zealotry"
-	[tag]"base name"	[value]"Glyphic"
-
-	[tag]"name EN"		[value]"[Glyphic](85-99)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Глифический](85-99)% увеличение урона от чар"
-
-	[tag]"explicit tag"	[value]"T2"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"damage type"	[value]"Cold"
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Caster"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Zealotry"
-	[tag]"base name"	[value]"Runic"
-
-	[tag]"name EN"		[value]"[Runic](100-109)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Рунический](100-109)% увеличение урона от чар"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	[tag]"explicit tag"	[value]"Rune dagger attribute"
-	[tag]"explicit tag"	[value]"Shields attribute"
-
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"damage type"	[value]"Cold"
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Caster"
-	
-	
-	
-	
-	
-	
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Bane"
-	[tag]"base name"	[value]"Mad Lord's"
-
-	[tag]"name EN"		[value]"[Mad Lord's]+1 to Level of all Chaos Spell Skill Gems"
-	[tag]"name RU"		[value]"[Сумасшедший]+1 к уровню всех камней умений чар хаоса"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	[tag]"explicit tag"	[value]"Rune dagger attribute"
-	[tag]"explicit tag"	[value]"Shields attribute"
-	
-	[tag]"damage type"	[value]"Chaos"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-	[tag]"build type"	[value]"Summoner"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"IceTrap"
-	[tag]"base name"	[value]"Frost Singer's"
-
-	[tag]"name EN"		[value]"[Frost Singer's]+1 to Level of all Cold Spell Skill Gems"
-	[tag]"name RU"		[value]"[Поющий]+1 к уровню всех камней умений чар холода"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	[tag]"explicit tag"	[value]"Rune dagger attribute"
-	[tag]"explicit tag"	[value]"Shields attribute"
-	
-	[tag]"damage type"	[value]"Cold"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-	[tag]"build type"	[value]"Summoner"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Flameblast"
-	[tag]"base name"	[value]"Flame Shaper's"
-
-	[tag]"name EN"		[value]"[Flame Shaper's]+1 to Level of all Fire Spell Skill Gems"
-	[tag]"name RU"		[value]"[Лавовый]+1 к уровню всех камней умений чар огня"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	[tag]"explicit tag"	[value]"Rune dagger attribute"
-	[tag]"explicit tag"	[value]"Shields attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-	[tag]"build type"	[value]"Summoner"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"BallLightning"
-	[tag]"base name"	[value]"Thunderhand's"
-
-	[tag]"name EN"		[value]"[Thunderhand's]+1 to Level of all Lightning Spell Skill Gems"
-	[tag]"name RU"		[value]"[Рокочущий]+1 к уровню всех камней умений чар молнии"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	[tag]"explicit tag"	[value]"Rune dagger attribute"
-	[tag]"explicit tag"	[value]"Shields attribute"
-	
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"Summoner"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Pride"
-	[tag]"base name"	[value]"Lithomancer's"
-
-	[tag]"name EN"		[value]"[Lithomancer's]+1 to Level of all Physical Spell Skill Gems"
-	[tag]"name RU"		[value]"[Камнемантный]+1 к уровню всех камней умений физических чар"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	[tag]"explicit tag"	[value]"Rune dagger attribute"
-	[tag]"explicit tag"	[value]"Shields attribute"
-	
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-	[tag]"build type"	[value]"Summoner"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Discharge"
-	[tag]"base name"	[value]"Magister's"
-
-	[tag]"name EN"		[value]"[Magister's]+1 to Level of all Spell Skill Gems"
-	[tag]"name RU"		[value]"[Магистерский]+1 к уровню всех камней умений чар"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	[tag]"explicit tag"	[value]"Rune dagger attribute"
-	
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-	[tag]"build type"	[value]"Summoner"
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Anger"
-	[tag]"base name"	[value]"Searing"
-
-	[tag]"name EN"		[value]"[Searing](10-19)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Обжигающий](10-19)% увеличение урона от огня"
-
-	[tag]"explicit tag"	[value]"T8"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Anger"
-	[tag]"base name"	[value]"Sizzling"
-
-	[tag]"name EN"		[value]"[Sizzling](20-29)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Палящий](20-29)% увеличение урона от огня"
-
-	[tag]"explicit tag"	[value]"T7"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Anger"
-	[tag]"base name"	[value]"Blistering"
-
-	[tag]"name EN"		[value]"[Blistering](30-39)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Испепеляющий](30-39)% увеличение урона от огня"
-
-	[tag]"explicit tag"	[value]"T6"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Anger"
-	[tag]"base name"	[value]"Cauterising"
-
-	[tag]"name EN"		[value]"[Cauterising](40-54)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Прижигающий](40-54)% увеличение урона от огня"
-
-	[tag]"explicit tag"	[value]"T5"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Anger"
-	[tag]"base name"	[value]"Volcanic"
-
-	[tag]"name EN"		[value]"[Volcanic](55-69)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Вулканический](55-69)% увеличение урона от огня"
-
-	[tag]"explicit tag"	[value]"T4"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Anger"
-	[tag]"base name"	[value]"Magmatic"
-
-	[tag]"name EN"		[value]"[Magmatic](70-84)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Магматический](70-84)% увеличение урона от огня"
-
-	[tag]"explicit tag"	[value]"T3"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Anger"
-	[tag]"base name"	[value]"Pyroclastic"
-
-	[tag]"name EN"		[value]"[Pyroclastic](85-99)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Пирокластический](85-99)% увеличение урона от огня"
-
-	[tag]"explicit tag"	[value]"T2"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Fire"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Anger"
-	[tag]"base name"	[value]"Xoph's"
-
-	[tag]"name EN"		[value]"[Xoph's](100-109)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Раскалённый](100-109)% увеличение урона от огня"
 	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
 	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Shields attribute"
 	
 	
 	
@@ -5072,153 +4486,18 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Hatred"
-	[tag]"base name"	[value]"Bitter"
-
-	[tag]"name EN"		[value]"[Bitter](10-19)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Пощипывающий](10-19)% увеличение урона от холода"
-
-	[tag]"explicit tag"	[value]"T8"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Cold"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Hatred"
-	[tag]"base name"	[value]"Biting"
-
-	[tag]"name EN"		[value]"[Biting](20-29)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Кусачий](20-29)% увеличение урона от холода"
-
-	[tag]"explicit tag"	[value]"T7"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Cold"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Hatred"
-	[tag]"base name"	[value]"Alpine"
-
-	[tag]"name EN"		[value]"[Alpine](30-39)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Горный](30-39)% увеличение урона от холода"
-
-	[tag]"explicit tag"	[value]"T6"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Cold"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Hatred"
-	[tag]"base name"	[value]"Snowy"
-
-	[tag]"name EN"		[value]"[Snowy](40-54)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Заиндевевший](40-54)% увеличение урона от холода"
-
-	[tag]"explicit tag"	[value]"T5"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Cold"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Hatred"
-	[tag]"base name"	[value]"Hailing"
-
-	[tag]"name EN"		[value]"[Hailing](55-69)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Снежный](55-69)% увеличение урона от холода"
-
-	[tag]"explicit tag"	[value]"T4"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Cold"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Hatred"
-	[tag]"base name"	[value]"Crystalline"
-
-	[tag]"name EN"		[value]"[Crystalline](70-84)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Кристаллический](70-84)% увеличение урона от холода"
-
-	[tag]"explicit tag"	[value]"T3"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Cold"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Hatred"
-	[tag]"base name"	[value]"Cryomancer's"
-
-	[tag]"name EN"		[value]"[Cryomancer's](85-99)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Морозящий](85-99)% увеличение урона от холода"
-
-	[tag]"explicit tag"	[value]"T2"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Cold"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Hatred"
-	[tag]"base name"	[value]"Tul's"
-
-	[tag]"name EN"		[value]"[Tul's](100-109)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Заковывающий](100-109)% увеличение урона от холода"
-
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
 	
-	[tag]"damage type"	[value]"Cold"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
 	
 	
 	
 	
 	
 	
-
 	
 	
 	
@@ -5228,148 +4507,14 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Wrath"
-	[tag]"base name"	[value]"Charged"
-
-	[tag]"name EN"		[value]"[Charged](10-19)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Заряженный](10-19)% увеличение урона от молнии"
-	
-	[tag]"explicit tag"	[value]"T8"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Wrath"
-	[tag]"base name"	[value]"Hissing"
 
-	[tag]"name EN"		[value]"[Hissing](20-29)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Шипящий](20-29)% увеличение урона от молнии"
-	
-	[tag]"explicit tag"	[value]"T7"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Wrath"
-	[tag]"base name"	[value]"Bolting"
-
-	[tag]"name EN"		[value]"[Bolting](30-39)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Дергающий](30-39)% увеличение урона от молнии"
-	
-	[tag]"explicit tag"	[value]"T6"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Wrath"
-	[tag]"base name"	[value]"Coursing"
-
-	[tag]"name EN"		[value]"[Coursing](40-54)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Ударяющий](40-54)% увеличение урона от молнии"
-	
-	[tag]"explicit tag"	[value]"T5"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Wrath"
-	[tag]"base name"	[value]"Striking"
-
-	[tag]"name EN"		[value]"[Striking](55-69)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Разящий](55-69)% увеличение урона от молнии"
-	
-	[tag]"explicit tag"	[value]"T4"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Wrath"
-	[tag]"base name"	[value]"Smiting"
-
-	[tag]"name EN"		[value]"[Smiting](70-84)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Поражающий](70-84)% увеличение урона от молнии"
-	
-	[tag]"explicit tag"	[value]"T3"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Wrath"
-	[tag]"base name"	[value]"Ionising"
-
-	[tag]"name EN"		[value]"[Ionising](85-99)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Ионизирующий](85-99)% увеличение урона от молнии"
-	
-	[tag]"explicit tag"	[value]"T2"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Wrath"
-	[tag]"base name"	[value]"Esh's"
-
-	[tag]"name EN"		[value]"[Esh's](100-109)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Громящий](100-109)% увеличение урона от молнии"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	
-	[tag]"damage type"	[value]"Lightning"
-	[tag]"build type"	[value]"Attacker"
-	[tag]"build type"	[value]"Caster"
-	[tag]"build type"	[value]"DoT"
 	
 	
 	
@@ -9202,168 +8347,6 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Heated"
-
-	[tag]"name EN"		[value]"[Heated]Adds 1 to 2 Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Тёплый]Добавляет от 1 до 2 урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Heated"
-
-	[tag]"name EN"		[value]"[Heated]Adds (1-2) to 3 Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Тёплый]Добавляет от (1-2) до 3 урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Smouldering"
-
-	[tag]"name EN"		[value]"[Smouldering]Adds (3-5) to (7-8) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Нагревающий]Добавляет от (3-5) до (7-8) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Smouldering"
-
-	[tag]"name EN"		[value]"[Smouldering]Adds (5-7) to (10-12) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Нагревающий]Добавляет от (5-7) до (10-12) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Smoking"
-
-	[tag]"name EN"		[value]"[Smoking]Adds (8-10) to (15-18) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Жгучий]Добавляет от (8-10) до (15-18) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Smoking"
-
-	[tag]"name EN"		[value]"[Smoking]Adds (5-7) to (11-13) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Жгучий]Добавляет от (5-7) до (11-13) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Burning"
-
-	[tag]"name EN"		[value]"[Burning]Adds (7-10) to (15-18) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Жаркий]Добавляет от (7-10) до (15-18) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Burning"
-
-	[tag]"name EN"		[value]"[Burning]Adds (11-14) to (21-25) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Жаркий]Добавляет от (11-14) до (21-25) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Flaming"
-
-	[tag]"name EN"		[value]"[Flaming]Adds (13-18) to (27-31) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Обжигающий]Добавляет от (13-18) до (27-31) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Flaming"
-
-	[tag]"name EN"		[value]"[Flaming]Adds (9-12) to (19-22) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Обжигающий]Добавляет от (9-12) до (19-22) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Scorching"
-
-	[tag]"name EN"		[value]"[Scorching]Adds (11-15) to (23-27) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Опаляющий]Добавляет от (11-15) до (23-27) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Scorching"
-
-	[tag]"name EN"		[value]"[Scorching]Adds (17-22) to (33-38) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Опаляющий]Добавляет от (17-22) до (33-38) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Incinerating"
-
-	[tag]"name EN"		[value]"[Incinerating]Adds (13-18) to (27-31) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Горящий]Добавляет от (13-18) до (27-31) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Incinerating"
-
-	[tag]"name EN"		[value]"[Incinerating]Adds (20-27) to (40-47) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Горящий]Добавляет от (20-27) до (40-47) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Blasting"
-
-	[tag]"name EN"		[value]"[Blasting]Adds (27-35) to (53-62) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Пламенный]Добавляет от (27-35) до (53-62) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Blasting"
-
-	[tag]"name EN"		[value]"[Blasting]Adds (16-22) to (32-38) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Пламенный]Добавляет от (16-22) до (32-38) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Cremating"
-
-	[tag]"name EN"		[value]"[Cremating]Adds (37-50) to (74-87) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Сжигающий]Добавляет от (37-50) до (74-87) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Cremating"
-
-	[tag]"name EN"		[value]"[Cremating]Adds (19-25) to (39-45) Fire Damage to Attacks"
-	[tag]"name RU"		[value]"[Сжигающий]Добавляет от (19-25) до (39-45) урона от огня к атакам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of the Conquest"
 	[tag]"explicit tag"	[value]"base name collision"
 
@@ -9411,76 +8394,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[Древний](0.3-0.5)% урона от огня похищается в виде здоровья"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Earnest"
-
-	[tag]"name EN"		[value]"[of the Earnest](14-18)% to Fire Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[горячности](14-18)% к множителю постепенного урона от огня"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Earnest"
-
-	[tag]"name EN"		[value]"[of the Earnest](26-35)% to Fire Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[горячности](26-35)% к множителю постепенного урона от огня"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Fervid"
-
-	[tag]"name EN"		[value]"[of the Fervid](19-23)% to Fire Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[пылкости](19-23)% к множителю постепенного урона от огня"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Fervid"
-
-	[tag]"name EN"		[value]"[of the Fervid](36-45)% to Fire Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[пылкости](36-45)% к множителю постепенного урона от огня"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Ardent"
 
-	[tag]"name EN"		[value]"[of the Ardent](46-55)% to Fire Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[ретивости](46-55)% к множителю постепенного урона от огня"
 
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Ardent"
-
-	[tag]"name EN"		[value]"[of the Ardent](24-28)% to Fire Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[ретивости](24-28)% к множителю постепенного урона от огня"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Zealous"
-
-	[tag]"name EN"		[value]"[of the Zealous](29-33)% to Fire Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[ревности](29-33)% к множителю постепенного урона от огня"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Zealous"
-
-	[tag]"name EN"		[value]"[of the Zealous](56-65)% to Fire Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[ревности](56-65)% к множителю постепенного урона от огня"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -9503,32 +8422,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[охоты](11-15)% к множителю постепенного урона от огня"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Fanatical"
-
-	[tag]"name EN"		[value]"[of the Fanatical](34-38)% to Fire Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[фанатизма](34-38)% к множителю постепенного урона от огня"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Sceptre attribute"
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Rune dagger attribute"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of the Fanatical"
-
-	[tag]"name EN"		[value]"[of the Fanatical](66-75)% to Fire Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[фанатизма](66-75)% к множителю постепенного урона от огня"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -10556,103 +9449,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[изменения](16-20)% повышение скорости перезарядки умений"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Acrimony"
-
-	[tag]"name EN"		[value]"[of Acrimony](16-21)% to Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[желчи](16-21)% к множителю постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Acrimony"
-
-	[tag]"name EN"		[value]"[of Acrimony](7-11)% to Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[желчи](7-11)% к множителю постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Dispersion"
-
-	[tag]"name EN"		[value]"[of Dispersion](24-29)% to Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[рассеивания](24-29)% к множителю постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Dispersion"
-
-	[tag]"name EN"		[value]"[of Dispersion](12-15)% to Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[рассеивания](12-15)% к множителю постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Liquefaction"
-
-	[tag]"name EN"		[value]"[of Liquefaction](31-35)% to Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[сжижения](31-35)% к множителю постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Liquefaction"
-
-	[tag]"name EN"		[value]"[of Liquefaction](16-19)% to Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[сжижения](16-19)% к множителю постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Melting"
-
-	[tag]"name EN"		[value]"[of Melting](20-23)% to Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[расплавления](20-23)% к множителю постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Melting"
-
-	[tag]"name EN"		[value]"[of Melting](36-40)% to Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[расплавления](36-40)% к множителю постепенного урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"DoTMultiplier"
-	[tag]"base name"	[value]"of Dissolution"
-
-	[tag]"name EN"		[value]"[of Dissolution](24-26)% to Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[растворения](24-26)% к множителю постепенного урона"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Bow attribute"
-	[tag]"explicit tag"	[value]"One-handed attribute"
-	[tag]"explicit tag"	[value]"Amulet"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"DoTMultiplier"
-	[tag]"base name"	[value]"of Dissolution"
-
-	[tag]"name EN"		[value]"[of Dissolution](41-45)% to Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[растворения](41-45)% к множителю постепенного урона"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -10900,95 +9696,20 @@ ADD_NEW_DATA_ENTITY
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Amulet"
 
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Mad Lord's"
-
-	[tag]"name EN"		[value]"[Mad Lord's](1-2) to Level of all Chaos Spell Skill Gems"
-	[tag]"name RU"		[value]"[Сумасшедший](1-2) к уровню всех камней умений чар хаоса"
 
 
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Splintermind's"
 
-	[tag]"name EN"		[value]"[Splintermind's]+3 to Level of all Chaos Spell Skill Gems"
-	[tag]"name RU"		[value]"[Бессознательный]+3 к уровню всех камней умений чар хаоса"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
 
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Frost Singer's"
 
-	[tag]"name EN"		[value]"[Frost Singer's](1-2) to Level of all Cold Spell Skill Gems"
-	[tag]"name RU"		[value]"[Поющий](1-2) к уровню всех камней умений чар холода"
+
+
 
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Winter Beckoner's"
 
-	[tag]"name EN"		[value]"[Winter Beckoner's]+3 to Level of all Cold Spell Skill Gems"
-	[tag]"name RU"		[value]"[Звенящий]+3 к уровню всех камней умений чар холода"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Flame Shaper's"
-
-	[tag]"name EN"		[value]"[Flame Shaper's](1-2) to Level of all Fire Spell Skill Gems"
-	[tag]"name RU"		[value]"[Лавовый](1-2) к уровню всех камней умений чар огня"
-
 	
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Lava Conjurer's"
-
-	[tag]"name EN"		[value]"[Lava Conjurer's]+3 to Level of all Fire Spell Skill Gems"
-	[tag]"name RU"		[value]"[Расплавленный]+3 к уровню всех камней умений чар огня"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
-
-	
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Thunderhand's"
-
-	[tag]"name EN"		[value]"[Thunderhand's](1-2) to Level of all Lightning Spell Skill Gems"
-	[tag]"name RU"		[value]"[Рокочущий](1-2) к уровню всех камней умений чар молнии"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Tempest Master's"
-
-	[tag]"name EN"		[value]"[Tempest Master's]+3 to Level of all Lightning Spell Skill Gems"
-	[tag]"name RU"		[value]"[Грохочущий]+3 к уровню всех камней умений чар молнии"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -11002,18 +9723,6 @@ ADD_NEW_DATA_ENTITY
 
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Martinet's"
-
-	[tag]"name EN"		[value]"[Martinet's]+1 to Level of all Minion Skill Gems"
-	[tag]"name RU"		[value]"[Исправительный]+1 к уровню всех камней умений приспешников"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Shields attribute"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
@@ -11026,39 +9735,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Helmets attribute"
 
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Lithomancer's"
-
-	[tag]"name EN"		[value]"[Lithomancer's](1-2) to Level of all Physical Spell Skill Gems"
-	[tag]"name RU"		[value]"[Камнемантный](1-2) к уровню всех камней умений физических чар"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Tecton's"
-
-	[tag]"name EN"		[value]"[Tecton's]+3 to Level of all Physical Spell Skill Gems"
-	[tag]"name RU"		[value]"[Тектонический]+3 к уровню всех камней умений физических чар"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Magister's"
-
-	[tag]"name EN"		[value]"[Magister's](1-2) to Level of all Spell Skill Gems"
-	[tag]"name RU"		[value]"[Магистерский](1-2) к уровню всех камней умений чар"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
 
 	
 
@@ -16424,22 +15101,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[Крестовый]+2 к уровню размещённых камней молнии"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Combatant's"
-
-	[tag]"name EN"		[value]"[Combatant's]+1 to Level of Socketed Melee Gems"
-	[tag]"name RU"		[value]"[Воинственный]+1 к уровню размещённых камней ближнего боя"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Weaponmaster's"
-
-	[tag]"name EN"		[value]"[Weaponmaster's]+2 to Level of Socketed Melee Gems"
-	[tag]"name RU"		[value]"[Рыцарский]+2 к уровню размещённых камней ближнего боя"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -19181,76 +17844,75 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[крестоносца]+2 к минимуму зарядов энергии"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Motivation"
-
-	[tag]"name EN"		[value]"[of Motivation]Minions have (5-7)% increased Attack and Cast Speed"
-	[tag]"name RU"		[value]"[поощрения]Приспешники имеют (5-7)% повышение скорости атаки и сотворения чар"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Coercion"
-
-	[tag]"name EN"		[value]"[of Coercion]Minions have (8-10)% increased Attack and Cast Speed"
-	[tag]"name RU"		[value]"[понуждения]Приспешники имеют (8-10)% повышение скорости атаки и сотворения чар"
-
 	
+	
+	
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Incitation"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
 
-	[tag]"name EN"		[value]"[of Incitation]Minions have (11-13)% increased Attack and Cast Speed"
-	[tag]"name RU"		[value]"[натравления]Приспешники имеют (11-13)% повышение скорости атаки и сотворения чар"
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (18-22)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (18-22)% увеличение урона"
 
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Agitation"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
 
-	[tag]"name EN"		[value]"[of Agitation]Minions have (14-16)% increased Attack and Cast Speed"
-	[tag]"name RU"		[value]"[провоцирования]Приспешники имеют (14-16)% повышение скорости атаки и сотворения чар"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"rings attribute"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Instigation"
-
-	[tag]"name EN"		[value]"[of Instigation]Minions have (17-19)% increased Attack and Cast Speed"
-	[tag]"name RU"		[value]"[раздражения]Приспешники имеют (17-19)% повышение скорости атаки и сотворения чар"
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (15-17)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (15-17)% увеличение урона"
 
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Provocation"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
 
-	[tag]"name EN"		[value]"[of Provocation]Minions have (20-22)% increased Attack and Cast Speed"
-	[tag]"name RU"		[value]"[распаления]Приспешники имеют (20-22)% повышение скорости атаки и сотворения чар"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (23-26)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (23-26)% увеличение урона"
 
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Infuriation"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
 
-	[tag]"name EN"		[value]"[of Infuriation]Minions have (23-25)% increased Attack and Cast Speed"
-	[tag]"name RU"		[value]"[разъярения]Приспешники имеют (23-25)% повышение скорости атаки и сотворения чар"
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (27-30)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (27-30)% увеличение урона"
+
 	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (18-21)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (18-21)% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (22-25)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (22-25)% увеличение урона"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -19366,195 +18028,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"explicit tag"	[value]"T1"
 	[tag]"explicit tag"	[value]"Wand attribute"
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Baroness's"
-
-	[tag]"name EN"		[value]"[Baroness's]Minions deal (5-10)% increased Damage"
-	[tag]"name RU"		[value]"[Баронский]Приспешники имеют (5-10)% увеличение урона"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Viscountess's"
-
-	[tag]"name EN"		[value]"[Viscountess's]Minions deal (11-20)% increased Damage"
-	[tag]"name RU"		[value]"[Виконтский]Приспешники имеют (11-20)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Marchioness's"
-
-	[tag]"name EN"		[value]"[Marchioness's]Minions deal (21-30)% increased Damage"
-	[tag]"name RU"		[value]"[Маркизский]Приспешники имеют (21-30)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Countess's"
-
-	[tag]"name EN"		[value]"[Countess's]Minions deal (31-36)% increased Damage"
-	[tag]"name RU"		[value]"[Графский]Приспешники имеют (31-36)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Redeemer's"
-	[tag]"icon path"	[value]"RedeemerInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Redeemer's]Minions deal (18-22)% increased Damage"
-	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (18-22)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Redeemer's"
-	[tag]"icon path"	[value]"RedeemerInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Redeemer's]Minions deal (15-17)% increased Damage"
-	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (15-17)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Redeemer's"
-	[tag]"icon path"	[value]"RedeemerInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Redeemer's]Minions deal (23-26)% increased Damage"
-	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (23-26)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Redeemer's"
-	[tag]"icon path"	[value]"RedeemerInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Redeemer's]Minions deal (27-30)% increased Damage"
-	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (27-30)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Redeemer's"
-	[tag]"icon path"	[value]"RedeemerInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Redeemer's]Minions deal (18-21)% increased Damage"
-	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (18-21)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Redeemer's"
-	[tag]"icon path"	[value]"RedeemerInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Redeemer's]Minions deal (22-25)% increased Damage"
-	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (22-25)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Duchess's"
-
-	[tag]"name EN"		[value]"[Duchess's]Minions deal (37-42)% increased Damage"
-	[tag]"name RU"		[value]"[Герцогский]Приспешники имеют (37-42)% увеличение урона"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"rings attribute"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Baroness's"
-
-	[tag]"name EN"		[value]"[Baroness's]Minions deal (10-19)% increased Damage"
-	[tag]"name RU"		[value]"[Баронский]Приспешники имеют (10-19)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Viscountess's"
-
-	[tag]"name EN"		[value]"[Viscountess's]Minions deal (20-29)% increased Damage"
-	[tag]"name RU"		[value]"[Виконтский]Приспешники имеют (20-29)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Marchioness's"
-
-	[tag]"name EN"		[value]"[Marchioness's]Minions deal (30-39)% increased Damage"
-	[tag]"name RU"		[value]"[Маркизский]Приспешники имеют (30-39)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Countess's"
-
-	[tag]"name EN"		[value]"[Countess's]Minions deal (40-54)% increased Damage"
-	[tag]"name RU"		[value]"[Графский]Приспешники имеют (40-54)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Duchess's"
-
-	[tag]"name EN"		[value]"[Duchess's]Minions deal (55-69)% increased Damage"
-	[tag]"name RU"		[value]"[Герцогский]Приспешники имеют (55-69)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Princess's"
-
-	[tag]"name EN"		[value]"[Princess's]Minions deal (70-84)% increased Damage"
-	[tag]"name RU"		[value]"[Эрцгерцогский]Приспешники имеют (70-84)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Queen's"
-
-	[tag]"name EN"		[value]"[Queen's]Minions deal (85-99)% increased Damage"
-	[tag]"name RU"		[value]"[Королевский]Приспешники имеют (85-99)% увеличение урона"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Empress's"
-
-	[tag]"name EN"		[value]"[Empress's]Minions deal (100-109)% increased Damage"
-	[tag]"name RU"		[value]"[Императорский]Приспешники имеют (100-109)% увеличение урона"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Shields attribute"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -21510,145 +19985,6 @@ ADD_NEW_DATA_ENTITY
 
 
 
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Exsanguinate"
-	[tag]"base name"	[value]"of Seeping"
-
-	[tag]"name EN"		[value]"[of Seeping](14-18)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[просачивания](14-18)% к множителю физического постепенного урона"
-
-	[tag]"explicit tag"	[value]"T5"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Summoner wand attribute"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Exsanguinate"
-	[tag]"base name"	[value]"of Spilling"
-
-	[tag]"name EN"		[value]"[of Spilling](19-23)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[проливания](19-23)% к множителю физического постепенного урона"
-
-	[tag]"explicit tag"	[value]"T4"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Summoner wand attribute"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Exsanguinate"
-	[tag]"base name"	[value]"of Phlebotomising"
-
-	[tag]"name EN"		[value]"[of Phlebotomising](24-28)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[вскрытия](24-28)% к множителю физического постепенного урона"
-
-	[tag]"explicit tag"	[value]"T3"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Summoner wand attribute"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Exsanguinate"
-	[tag]"base name"	[value]"of Hemorrhaging"
-
-	[tag]"name EN"		[value]"[of Hemorrhaging](29-33)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[кровоизлияния](29-33)% к множителю физического постепенного урона"
-
-	[tag]"explicit tag"	[value]"T2"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Summoner wand attribute"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Exsanguinate"
-	[tag]"base name"	[value]"of Exsanguinating"
-
-	[tag]"name EN"		[value]"[of Exsanguinating](34-38)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[обескровливания](34-38)% к множителю физического постепенного урона"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Wand attribute"
-	[tag]"explicit tag"	[value]"Summoner wand attribute"
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Exsanguinate"
-	[tag]"base name"	[value]"of Seeping"
-
-	[tag]"name EN"		[value]"[of Seeping](26-35)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[просачивания](26-35)% к множителю физического постепенного урона"
-	
-	[tag]"explicit tag"	[value]"T5"
-	[tag]"explicit tag"	[value]"Staff attribute"
-	[tag]"explicit tag"	[value]"Warstaff attribute"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Exsanguinate"
-	[tag]"base name"	[value]"of Spilling"
-
-	[tag]"name EN"		[value]"[of Spilling](36-45)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[проливания](36-45)% к множителю физического постепенного урона"
-
-	[tag]"explicit tag"	[value]"T4"
-	[tag]"explicit tag"	[value]"Staff attribute"
-	[tag]"explicit tag"	[value]"Warstaff attribute"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Exsanguinate"
-	[tag]"base name"	[value]"of Phlebotomising"
-
-	[tag]"name EN"		[value]"[of Phlebotomising](46-55)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[вскрытия](46-55)% к множителю физического постепенного урона"
-	
-	[tag]"explicit tag"	[value]"T3"
-	[tag]"explicit tag"	[value]"Staff attribute"
-	[tag]"explicit tag"	[value]"Warstaff attribute"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Exsanguinate"
-	[tag]"base name"	[value]"of Hemorrhaging"
-
-	[tag]"name EN"		[value]"[of Hemorrhaging](56-65)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[кровоизлияния](56-65)% к множителю физического постепенного урона"
-	
-	[tag]"explicit tag"	[value]"T2"
-	[tag]"explicit tag"	[value]"Staff attribute"
-	[tag]"explicit tag"	[value]"Warstaff attribute"
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Exsanguinate"
-	[tag]"base name"	[value]"of Exsanguinating"
-
-	[tag]"name EN"		[value]"[of Exsanguinating](66-75)% to Physical Damage over Time Multiplier"
-	[tag]"name RU"		[value]"[обескровливания](66-75)% к множителю физического постепенного урона"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
-	[tag]"explicit tag"	[value]"Warstaff attribute"
-
-
-	
-	
 	
 	
 	
@@ -23610,146 +21946,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[Освободительный]Добавляет от (26-34) до (52-60) урона от холода к чарам Урон пробивает (5-7)% сопротивления холоду"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Frosted"
-
-	[tag]"name EN"		[value]"[Frosted]Adds (1-2) to (3-4) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Прохладный]Добавляет от (1-2) до (3-4) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Chilled"
-
-	[tag]"name EN"		[value]"[Chilled]Adds (8-10) to (15-18) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Охлаждающий]Добавляет от (8-10) до (15-18) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Icy"
-
-	[tag]"name EN"		[value]"[Icy]Adds (12-15) to (23-28) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Остужающий]Добавляет от (12-15) до (23-28) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Frigid"
-
-	[tag]"name EN"		[value]"[Frigid]Adds (16-22) to (33-38) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Холодный]Добавляет от (16-22) до (33-38) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Freezing"
-
-	[tag]"name EN"		[value]"[Freezing]Adds (24-30) to (45-53) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Замораживающий]Добавляет от (24-30) до (45-53) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Frozen"
-
-	[tag]"name EN"		[value]"[Frozen]Adds (30-40) to (59-69) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Морозный]Добавляет от (30-40) до (59-69) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Glaciated"
-
-	[tag]"name EN"		[value]"[Glaciated]Adds (39-52) to (77-90) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Ледяной]Добавляет от (39-52) до (77-90) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Polar"
-
-	[tag]"name EN"		[value]"[Polar]Adds (49-64) to (96-113) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Обмораживающий]Добавляет от (49-64) до (96-113) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Entombing"
-
-	[tag]"name EN"		[value]"[Entombing]Adds (61-81) to (120-140) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Леденящий]Добавляет от (61-81) до (120-140) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"Hunter's"
-	[tag]"icon path"	[value]"HunterInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Hunter's]Adds (14-18) to (27-32) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Охотничий]Добавляет от (14-18) до (27-32) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Shaper's"
-	[tag]"icon path"	[value]"ShaperInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Shaper's]Adds (14-18) to (27-32) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Созданный]Добавляет от (14-18) до (27-32) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"Hunter's"
-	[tag]"icon path"	[value]"HunterInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Hunter's]Adds (17-23) to (34-40) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Охотничий]Добавляет от (17-23) до (34-40) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Shaper's"
-	[tag]"icon path"	[value]"ShaperInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Shaper's]Adds (17-23) to (34-40) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Созданный]Добавляет от (17-23) до (34-40) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"Hunter's"
-	[tag]"icon path"	[value]"HunterInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Hunter's]Adds (21-28) to (41-48) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Охотничий]Добавляет от (21-28) до (41-48) урона от холода к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Shaper's"
-	[tag]"icon path"	[value]"ShaperInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Shaper's]Adds (21-28) to (41-48) Cold Damage to Spells"
-	[tag]"name RU"		[value]"[Созданный]Добавляет от (21-28) до (41-48) урона от холода к чарам"
-
 
 
 
@@ -24120,256 +22316,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[Покалывающий]Добавляет от 1 до (6-7) урона от молнии к чарам"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Buzzing"
-
-	[tag]"name EN"		[value]"[Buzzing]Adds (1-3) to (32-34) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Потрескивающий]Добавляет от (1-3) до (32-34) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Snapping"
-
-	[tag]"name EN"		[value]"[Snapping]Adds (1-4) to (49-52) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Искристый]Добавляет от (1-4) до (49-52) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Crackling"
-
-	[tag]"name EN"		[value]"[Crackling]Adds (2-5) to (69-73) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Пульсирующий]Добавляет от (2-5) до (69-73) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Sparking"
-
-	[tag]"name EN"		[value]"[Sparking]Adds (2-8) to (97-102) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Искрящийся]Добавляет от (2-8) до (97-102) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Arcing"
-
-	[tag]"name EN"		[value]"[Arcing]Adds (3-10) to (126-133) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Громовой]Добавляет от (3-10) до (126-133) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Shocking"
-
-	[tag]"name EN"		[value]"[Shocking]Adds (5-12) to (164-173) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Шоковый]Добавляет от (5-12) до (164-173) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Discharging"
-
-	[tag]"name EN"		[value]"[Discharging]Adds (5-17) to (204-216) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Грозовой]Добавляет от (5-17) до (204-216) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Electrocuting"
-
-	[tag]"name EN"		[value]"[Electrocuting]Adds (7-20) to (255-270) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Испепеляющий]Добавляет от (7-20) до (255-270) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"Hunter's"
-	[tag]"icon path"	[value]"HunterInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Hunter's]Adds (2-5) to (58-61) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Охотничий]Добавляет от (2-5) до (58-61) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Shaper's"
-	[tag]"icon path"	[value]"ShaperInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Shaper's]Adds (2-5) to (58-61) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Созданный]Добавляет от (2-5) до (58-61) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"Hunter's"
-	[tag]"icon path"	[value]"HunterInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Hunter's]Adds (2-6) to (73-77) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Охотничий]Добавляет от (2-6) до (73-77) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Shaper's"
-	[tag]"icon path"	[value]"ShaperInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Shaper's]Adds (2-6) to (73-77) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Созданный]Добавляет от (2-6) до (73-77) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"Hunter's"
-	[tag]"icon path"	[value]"HunterInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Hunter's]Adds (2-7) to (88-93) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Охотничий]Добавляет от (2-7) до (88-93) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Shaper's"
-	[tag]"icon path"	[value]"ShaperInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Shaper's]Adds (2-7) to (88-93) Lightning Damage to Spells"
-	[tag]"name RU"		[value]"[Созданный]Добавляет от (2-7) до (88-93) урона от молнии к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Elder's"
-	[tag]"icon path"	[value]"ElderInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Elder's]Adds (37-49) to (75-86) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Древний]Добавляет от (37-49) до (75-86) физического урона к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"Hunter's"
-	[tag]"icon path"	[value]"HunterInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Hunter's]Adds (17-22) to (33-39) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Охотничий]Добавляет от (17-22) до (33-39) физического урона к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Elder's"
-	[tag]"icon path"	[value]"ElderInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Elder's]Adds (17-22) to (33-39) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Древний]Добавляет от (17-22) до (33-39) физического урона к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Elder's"
-	[tag]"icon path"	[value]"ElderInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Elder's]Adds (22-31) to (46-53) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Древний]Добавляет от (22-31) до (46-53) физического урона к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"Hunter's"
-	[tag]"icon path"	[value]"HunterInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Hunter's]Adds (21-28) to (42-49) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Охотничий]Добавляет от (21-28) до (42-49) физического урона к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"Hunter's"
-	[tag]"icon path"	[value]"HunterInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[Hunter's]Adds (25-34) to (51-59) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Охотничий]Добавляет от (25-34) до (51-59) физического урона к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Elder's"
-	[tag]"icon path"	[value]"ElderInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Elder's]Adds (21-28) to (42-49) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Древний]Добавляет от (21-28) до (42-49) физического урона к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Elder's"
-	[tag]"icon path"	[value]"ElderInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Elder's]Adds (44-58) to (88-103) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Древний]Добавляет от (44-58) до (88-103) физического урона к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Elder's"
-	[tag]"icon path"	[value]"ElderInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Elder's]Adds (28-37) to (55-64) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Древний]Добавляет от (28-37) до (55-64) физического урона к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Elder's"
-	[tag]"icon path"	[value]"ElderInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Elder's]Adds (60-73) to (108-122) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Древний]Добавляет от (60-73) до (108-122) физического урона к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Elder's"
-	[tag]"icon path"	[value]"ElderInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Elder's]Adds (32-44) to (66-76) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Древний]Добавляет от (32-44) до (66-76) физического урона к чарам"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"base name"	[value]"The Elder's"
-	[tag]"icon path"	[value]"ElderInfluence"
-	[tag]"explicit tag"	[value]"base name collision"
-
-	[tag]"name EN"		[value]"[The Elder's]Adds (25-34) to (51-59) Physical Damage to Spells"
-	[tag]"name RU"		[value]"[Древний]Добавляет от (25-34) до (51-59) физического урона к чарам"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -25780,299 +23726,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Advanced Traps (17-20)% increased Trap Throwing Speed"
 	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Улучшенными ловушками 20 уровня (17-20)% повышение скорости броска ловушки"
 
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Bitter"
-
-	[tag]"name EN"		[value]"[Bitter](15-29)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Пощипывающий](15-29)% увеличение урона от холода"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Biting"
-
-	[tag]"name EN"		[value]"[Biting](30-44)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Кусачий](30-44)% увеличение урона от холода"
 
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Alpine"
-
-	[tag]"name EN"		[value]"[Alpine](45-59)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Заиндевевший](45-59)% увеличение урона от холода"
-
 	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Snowy"
-
-	[tag]"name EN"		[value]"[Snowy](60-84)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Снежный](60-84)% увеличение урона от холода"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Hailing"
-
-	[tag]"name EN"		[value]"[Hailing](85-104)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Трескучий](85-104)% увеличение урона от холода"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Crystalline"
-
-	[tag]"name EN"		[value]"[Crystalline](105-124)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Кристаллический](105-124)% увеличение урона от холода"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Cryomancer's"
-
-	[tag]"name EN"		[value]"[Cryomancer's](125-149)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Морозящий](125-149)% увеличение урона от холода"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Tul's"
-
-	[tag]"name EN"		[value]"[Tul's](150-164)% increased Cold Damage"
-	[tag]"name RU"		[value]"[Заковывающий](150-164)% увеличение урона от холода"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Searing"
-
-	[tag]"name EN"		[value]"[Searing](15-29)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Обжигающий](15-29)% увеличение урона от огня"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Sizzling"
-
-	[tag]"name EN"		[value]"[Sizzling](30-44)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Палящий](30-44)% увеличение урона от огня"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Blistering"
-
-	[tag]"name EN"		[value]"[Blistering](45-59)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Испепеляющий](45-59)% увеличение урона от огня"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Cauterising"
-
-	[tag]"name EN"		[value]"[Cauterising](60-84)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Прижигающий](60-84)% увеличение урона от огня"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Volcanic"
-
-	[tag]"name EN"		[value]"[Volcanic](85-104)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Вулканический](85-104)% увеличение урона от огня"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Magmatic"
-
-	[tag]"name EN"		[value]"[Magmatic](105-124)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Магматический](105-124)% увеличение урона от огня"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Pyroclastic"
-
-	[tag]"name EN"		[value]"[Pyroclastic](125-149)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Пирокластический](125-149)% увеличение урона от огня"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Xoph's"
-
-	[tag]"name EN"		[value]"[Xoph's](150-164)% increased Fire Damage"
-	[tag]"name RU"		[value]"[Раскалённый](150-164)% увеличение урона от огня"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Charged"
-
-	[tag]"name EN"		[value]"[Charged](15-29)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Заряженный](15-29)% увеличение урона от молнии"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Hissing"
-
-	[tag]"name EN"		[value]"[Hissing](30-44)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Шипящий](30-44)% увеличение урона от молнии"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Bolting"
-
-	[tag]"name EN"		[value]"[Bolting](45-59)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Дергающий](45-59)% увеличение урона от молнии"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Coursing"
-
-	[tag]"name EN"		[value]"[Coursing](60-84)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Ударяющий](60-84)% увеличение урона от молнии"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Striking"
-
-	[tag]"name EN"		[value]"[Striking](85-104)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Разящий](85-104)% увеличение урона от молнии"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Smiting"
-
-	[tag]"name EN"		[value]"[Smiting](105-124)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Поражающий](105-124)% увеличение урона от молнии"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Ionising"
-
-	[tag]"name EN"		[value]"[Ionising](125-149)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Ионизирующий](125-149)% увеличение урона от молнии"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Esh's"
-
-	[tag]"name EN"		[value]"[Esh's](150-164)% increased Lightning Damage"
-	[tag]"name RU"		[value]"[Громящий](150-164)% увеличение урона от молнии"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Apprentice's"
-
-	[tag]"name EN"		[value]"[Apprentice's](15-29)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Послушнический](15-29)% увеличение урона от чар"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Adept's"
-
-	[tag]"name EN"		[value]"[Adept's](30-44)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Заколдованный](30-44)% увеличение урона от чар"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Scholar's"
-
-	[tag]"name EN"		[value]"[Scholar's](45-59)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Зачарованный](45-59)% увеличение урона от чар"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Professor's"
-
-	[tag]"name EN"		[value]"[Professor's](60-84)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Профессорский](60-84)% увеличение урона от чар"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Occultist's"
-
-	[tag]"name EN"		[value]"[Occultist's](85-104)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Оккультный](85-104)% увеличение урона от чар"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Incanter's"
-
-	[tag]"name EN"		[value]"[Incanter's](105-124)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Чернокнижный](105-124)% увеличение урона от чар"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Glyphic"
-
-	[tag]"name EN"		[value]"[Glyphic](125-149)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Глифический](125-149)% увеличение урона от чар"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"Runic"
-
-	[tag]"name EN"		[value]"[Runic](150-164)% increased Spell Damage"
-	[tag]"name RU"		[value]"[Рунический](150-164)% увеличение урона от чар"
-	
-	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Staff attribute"
 
 	
 ADD_NEW_DATA_ENTITY
