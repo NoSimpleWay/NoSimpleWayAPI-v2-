@@ -1,0 +1,2142 @@
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (2-3) to (4-5) Cold Damage to Attacks with this Weapon per 10 Dexterity"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (2-3) до (4-5) урона от холода к атакам этим оружием за каждые 10 ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (1-2) to (3-4) Cold Damage to Attacks with this Weapon per 10 Dexterity"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (1-2) до (3-4) урона от холода к атакам этим оружием за каждые 10 ловкости"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (2-3) to (4-5) Fire Damage to Attacks with this Weapon per 10 Strength"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (2-3) до (4-5) урона от огня к атакам этим оружием за каждые 10 силы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (1-2) to (3-4) Fire Damage to Attacks with this Weapon per 10 Strength"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (1-2) до (3-4) урона от огня к атакам этим оружием за каждые 10 силы"
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds 1 to (7-8) Lightning Damage to Attacks with this Weapon per 10 Intelligence"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от 1 до (7-8) урона от молнии к атакам этим оружием за каждые 10 интеллекта"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds 1 to (5-6) Lightning Damage to Attacks with this Weapon per 10 Intelligence"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от 1 до (5-6) урона от молнии к атакам этим оружием за каждые 10 интеллекта"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Attacks have (0.5-1)% to Critical Strike Chance"
+	[tag]"name RU"		[value]"[охоты]Атаки имеют (0.5-1)% к шансу критического удара"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Attacks have (1.1-1.5)% to Critical Strike Chance"
+	[tag]"name RU"		[value]"[охоты]Атаки имеют (1.1-1.5)% к шансу критического удара"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](0.5-1)% to Spell Critical Strike Chance"
+	[tag]"name RU"		[value]"[охоты](0.5-1)% к шансу критического удара чарами"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](1.1-1.5)% to Spell Critical Strike Chance"
+	[tag]"name RU"		[value]"[охоты](1.1-1.5)% к шансу критического удара чарами"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]You can apply an additional Curse"
+	[tag]"name RU"		[value]"[Охотничий]Вы можете наложить дополнительное проклятие"
+
+	
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Projectiles Pierce an additional Target"
+	[tag]"name RU"		[value]"[Охотничий]Снаряды пронзают дополнительную цель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Projectiles Pierce 2 additional Targets"
+	[tag]"name RU"		[value]"[Охотничий]Снаряды пронзают 2 дополнительных цели(-ей)"
+
+
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](17-21)% increased Area of Effect if you've Killed Recently"
+	[tag]"name RU"		[value]"[охоты](17-21)% увеличение области действия, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](27-31)% increased Area of Effect if you've Killed Recently"
+	[tag]"name RU"		[value]"[охоты](27-31)% увеличение области действия, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](22-25)% increased Area of Effect if you've Killed Recently"
+	[tag]"name RU"		[value]"[охоты](22-25)% увеличение области действия, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](32-35)% increased Area of Effect if you've Killed Recently"
+	[tag]"name RU"		[value]"[охоты](32-35)% увеличение области действия, если вы недавно совершали убийство"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Overwhelm (8-11)% Physical Damage Reduction"
+	[tag]"name RU"		[value]"[охоты]Подавляет (8-11)% уменьшения получаемого физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Overwhelm (13-16)% Physical Damage Reduction"
+	[tag]"name RU"		[value]"[охоты]Подавляет (13-16)% уменьшения получаемого физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Overwhelm (7-8)% Physical Damage Reduction"
+	[tag]"name RU"		[value]"[охоты]Подавляет (7-8)% уменьшения получаемого физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Overwhelm (9-10)% Physical Damage Reduction"
+	[tag]"name RU"		[value]"[охоты]Подавляет (9-10)% уменьшения получаемого физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Overwhelm (17-20)% Physical Damage Reduction"
+	[tag]"name RU"		[value]"[охоты]Подавляет (17-20)% уменьшения получаемого физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Overwhelm (12-15)% Physical Damage Reduction"
+	[tag]"name RU"		[value]"[охоты]Подавляет (12-15)% уменьшения получаемого физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](13-16)% chance to Impale Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[Охотничий](13-16)% шанс наложить на врагов Прокол при нанесении удара атаками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](17-20)% chance to Impale Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[Охотничий](17-20)% шанс наложить на врагов Прокол при нанесении удара атаками"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](41-50)% chance to Avoid being Poisoned (41-50)% chance to Avoid Bleeding"
+	[tag]"name RU"		[value]"[охоты](41-50)% шанс избежать отравления (41-50)% шанс избежать кровотечения"
+
+	
+	
+	
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](8-14)% increased Cast Speed during any Flask Effect"
+	[tag]"name RU"		[value]"[охоты](8-14)% повышение скорости сотворения чар во время действия эффекта любого флакона"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](7-10)% chance to Intimidate Enemies for 4 seconds on Hit"
+	[tag]"name RU"		[value]"[Охотничий](7-10)% шанс устрашить врагов на 4 секунды при нанесении удара"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](7-11)% chance to Unnerve Enemies for 4 seconds on Hit"
+	[tag]"name RU"		[value]"[охоты](7-11)% шанс обескуражить врагов на 4 секунды при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](12-15)% chance to Unnerve Enemies for 4 seconds on Hit"
+	[tag]"name RU"		[value]"[охоты](12-15)% шанс обескуражить врагов на 4 секунды при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](7-10)% chance to Unnerve Enemies for 4 seconds on Hit"
+	[tag]"name RU"		[value]"[Охотничий](7-10)% шанс обескуражить врагов на 4 секунды при нанесении удара"
+
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](0.3-0.5)% of Chaos Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Охотничий](0.3-0.5)% урона хаосом похищается в виде здоровья"
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](11-15)% to Chaos Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[охоты](11-15)% к множителю постепенного урона хаосом"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](16-20)% to Chaos Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[охоты](16-20)% к множителю постепенного урона хаосом"
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](16-20)% to Chaos Damage over Time Multiplier with Attack Skills"
+	[tag]"name RU"		[value]"[охоты](16-20)% к множителю постепенного урона хаосом умениями атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](21-25)% to Chaos Damage over Time Multiplier with Attack Skills"
+	[tag]"name RU"		[value]"[охоты](21-25)% к множителю постепенного урона хаосом умениями атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](100-109)% increased Chaos Damage over Time"
+	[tag]"name RU"		[value]"[Охотничий](100-109)% увеличение постепенного урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](60-69)% increased Chaos Damage over Time"
+	[tag]"name RU"		[value]"[Охотничий](60-69)% увеличение постепенного урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](110-119)% increased Chaos Damage over Time"
+	[tag]"name RU"		[value]"[Охотничий](110-119)% увеличение постепенного урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](70-79)% increased Chaos Damage over Time"
+	[tag]"name RU"		[value]"[Охотничий](70-79)% увеличение постепенного урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](120-129)% increased Chaos Damage over Time"
+	[tag]"name RU"		[value]"[Охотничий](120-129)% увеличение постепенного урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](80-89)% increased Chaos Damage over Time"
+	[tag]"name RU"		[value]"[Охотничий](80-89)% увеличение постепенного урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](130-134)% increased Chaos Damage over Time"
+	[tag]"name RU"		[value]"[Охотничий](130-134)% увеличение постепенного урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](90-94)% increased Chaos Damage over Time"
+	[tag]"name RU"		[value]"[Охотничий](90-94)% увеличение постепенного урона хаосом"
+
+	
+	
+	
+	
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](11-15)% to Cold Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[охоты](11-15)% к множителю постепенного урона от холода"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](16-20)% to Cold Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[охоты](16-20)% к множителю постепенного урона от холода"
+
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Curse Enemies with Despair on Hit, with 40% increased Effect"
+	[tag]"name RU"		[value]"[охоты]При нанесении удара проклинает врагов Отчаянием с усиленным на 40% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Curse Enemies with Despair on Hit, with 20% increased Effect"
+	[tag]"name RU"		[value]"[охоты]При нанесении удара проклинает врагов Отчаянием с усиленным на 20% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Curse Enemies with Despair on Hit, with 32% increased Effect"
+	[tag]"name RU"		[value]"[охоты]При нанесении удара проклинает врагов Отчаянием с усиленным на 32% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Curse Enemies with Elemental Weakness on Hit, with 20% increased Effect"
+	[tag]"name RU"		[value]"[охоты]При нанесении удара проклинает врагов Уязвимостью к стихиям с усиленным на 20% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Curse Enemies with Elemental Weakness on Hit, with 32% increased Effect"
+	[tag]"name RU"		[value]"[охоты]При нанесении удара проклинает врагов Уязвимостью к стихиям с усиленным на 32% эффектом"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](6-4)% reduced Damage taken from Damage Over Time"
+	[tag]"name RU"		[value]"[охоты](6-4)% уменьшение получаемого постепенного урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](10-7)% reduced Damage taken from Damage Over Time"
+	[tag]"name RU"		[value]"[охоты](10-7)% уменьшение получаемого постепенного урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Unaffected by Desecrated Ground"
+	[tag]"name RU"		[value]"[Охотничий]Невосприимчивость к эффекту оскверненной земли"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Socketed Gems have 20% increased Reservation Efficiency"
+	[tag]"name RU"		[value]"[охоты]Размещенные камни имеют 20% увеличение эффективности удержания ресурсов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Socketed Gems have 30% increased Reservation Efficiency"
+	[tag]"name RU"		[value]"[охоты]Размещенные камни имеют 30% увеличение эффективности удержания ресурсов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Damage Penetrates (3-4)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Охотничий]Урон пробивает (3-4)% сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Damage Penetrates 4% Elemental Resistances"
+	[tag]"name RU"		[value]"[Охотничий]Урон пробивает 4% сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Damage Penetrates (7-8)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Охотничий]Урон пробивает (7-8)% сопротивления стихиям"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Damage Penetrates (9-10)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Охотничий]Урон пробивает (9-10)% сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Damage Penetrates 5% Elemental Resistances"
+	[tag]"name RU"		[value]"[Охотничий]Урон пробивает 5% сопротивления стихиям"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Damage Penetrates (11-12)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Охотничий]Урон пробивает (11-12)% сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Damage Penetrates 6% Elemental Resistances"
+	[tag]"name RU"		[value]"[Охотничий]Урон пробивает 6% сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Damage Penetrates (5-6)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Охотничий]Урон пробивает (5-6)% сопротивления стихиям"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Exerted Attacks deal (25-27)% increased Damage"
+	[tag]"name RU"		[value]"[Охотничий]Улучшенные атаки наносят увеличенный на (25-27)% урон"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Exerted Attacks deal (28-31)% increased Damage"
+	[tag]"name RU"		[value]"[Охотничий]Улучшенные атаки наносят увеличенный на (28-31)% урон"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Exerted Attacks deal (32-35)% increased Damage"
+	[tag]"name RU"		[value]"[Охотничий]Улучшенные атаки наносят увеличенный на (32-35)% урон"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](2-3)% increased Experience gain"
+	[tag]"name RU"		[value]"[Охотничий](2-3)% увеличение получаемого опыта"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Bleeding you inflict deals Damage (7-9)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенное вами кровотечение наносит урон на (7-9)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Bleeding you inflict deals Damage (18-21)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенное вами кровотечение наносит урон на (18-21)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Bleeding you inflict deals Damage (8-12)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенное вами кровотечение наносит урон на (8-12)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Bleeding you inflict deals Damage (22-25)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенное вами кровотечение наносит урон на (22-25)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Bleeding you inflict deals Damage (10-12)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенное вами кровотечение наносит урон на (10-12)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Bleeding you inflict deals Damage (13-15)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенное вами кровотечение наносит урон на (13-15)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Ignites you inflict deal Damage (8-12)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенные вами поджоги наносят урон на (8-12)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Ignites you inflict deal Damage (7-9)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенные вами поджоги наносят урон на (7-9)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Ignites you inflict deal Damage (18-21)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенные вами поджоги наносят урон на (18-21)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Ignites you inflict deal Damage (22-25)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенные вами поджоги наносят урон на (22-25)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Ignites you inflict deal Damage (13-15)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенные вами поджоги наносят урон на (13-15)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Ignites you inflict deal Damage (10-12)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенные вами поджоги наносят урон на (10-12)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Poisons you inflict deal Damage (8-12)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенный вами яд наносит урон на (8-12)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Poisons you inflict deal Damage (7-9)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенный вами яд наносит урон на (7-9)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Poisons you inflict deal Damage (18-21)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенный вами яд наносит урон на (18-21)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Poisons you inflict deal Damage (10-12)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенный вами яд наносит урон на (10-12)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Poisons you inflict deal Damage (13-15)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенный вами яд наносит урон на (13-15)% быстрее"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Poisons you inflict deal Damage (22-25)% faster"
+	[tag]"name RU"		[value]"[охоты]Наложенный вами яд наносит урон на (22-25)% быстрее"
+
+	
+
+
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](11-15)% to Fire Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[охоты](11-15)% к множителю постепенного урона от огня"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](16-20)% to Fire Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[охоты](16-20)% к множителю постепенного урона от огня"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](16-20)% to Fire Damage over Time Multiplier with Attack Skills"
+	[tag]"name RU"		[value]"[охоты](16-20)% к множителю постепенного урона от огня умениями атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](21-25)% to Fire Damage over Time Multiplier with Attack Skills"
+	[tag]"name RU"		[value]"[охоты](21-25)% к множителю постепенного урона от огня умениями атак"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](6-10)% chance for Flasks you use to not consume Charges"
+	[tag]"name RU"		[value]"[Охотничий](6-10)% шанс сохранить заряды флаконов при их использовании"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Gain a Flask Charge when you deal a Critical Strike"
+	[tag]"name RU"		[value]"[Охотничий]Дарует заряд флакона, когда вы наносите критический удар"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Gain an Endurance, Frenzy or Power charge when you Block"
+	[tag]"name RU"		[value]"[охоты]Дарует заряд выносливости, ярости или энергии при блоке"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Items and Gems have (10-5)% reduced Attribute Requirements"
+	[tag]"name RU"		[value]"[охоты]Предметы и камни имеют (10-5)% понижение требований к характеристикам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Items and Gems have (15-11)% reduced Attribute Requirements"
+	[tag]"name RU"		[value]"[охоты]Предметы и камни имеют (15-11)% понижение требований к характеристикам"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](10-12)% increased Duration of Ailments on Enemies"
+	[tag]"name RU"		[value]"[Охотничий](10-12)% увеличение длительности состояний на врагах"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](13-15)% increased Duration of Ailments on Enemies"
+	[tag]"name RU"		[value]"[Охотничий](13-15)% увеличение длительности состояний на врагах"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](16-20)% increased Chaos Damage"
+	[tag]"name RU"		[value]"[Охотничий](16-20)% увеличение урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](21-25)% increased Chaos Damage"
+	[tag]"name RU"		[value]"[Охотничий](21-25)% увеличение урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](26-30)% increased Chaos Damage"
+	[tag]"name RU"		[value]"[Охотничий](26-30)% увеличение урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Gain (10-15) Life per Enemy Hit with Attacks"
+	[tag]"name RU"		[value]"[Охотничий](10-15) здоровья за каждый удар атаками по врагу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Gain (16-20) Life per Enemy Hit with Attacks"
+	[tag]"name RU"		[value]"[Охотничий](16-20) здоровья за каждый удар атаками по врагу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Hits with this Weapon Overwhelm (13-16)% Physical Damage Reduction"
+	[tag]"name RU"		[value]"[охоты]Удары этим оружием подавляют (13-16)% уменьшения получаемого физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Hits with this Weapon Overwhelm (13-16)% Physical Damage Reduction"
+	[tag]"name RU"		[value]"[охоты]Удары этим оружием подавляют (13-16)% уменьшения получаемого физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Hits with this Weapon Overwhelm (17-20)% Physical Damage Reduction"
+	[tag]"name RU"		[value]"[охоты]Удары этим оружием подавляют (17-20)% уменьшения получаемого физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Hits with this Weapon Overwhelm (17-20)% Physical Damage Reduction"
+	[tag]"name RU"		[value]"[охоты]Удары этим оружием подавляют (17-20)% уменьшения получаемого физического урона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](7-11)% chance to Intimidate Enemies for 4 seconds on Hit"
+	[tag]"name RU"		[value]"[охоты](7-11)% шанс при нанесении удара устрашить врагов на 4 секунды"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](12-15)% chance to Intimidate Enemies for 4 seconds on Hit"
+	[tag]"name RU"		[value]"[охоты](12-15)% шанс при нанесении удара устрашить врагов на 4 секунды"
+
+	
+	
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (9-13) to (21-24) Chaos Damage Attacks with this Weapon Penetrate (4-6)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (9-13) до (21-24) урона хаосом Атаки этим оружием пробивают (4-6)% сопротивления хаосу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (5-7) to (11-13) Chaos Damage Attacks with this Weapon Penetrate (4-6)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (5-7) до (11-13) урона хаосом Атаки этим оружием пробивают (4-6)% сопротивления хаосу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (9-11) to (17-20) Chaos Damage Attacks with this Weapon Penetrate (4-6)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (9-11) до (17-20) урона хаосом Атаки этим оружием пробивают (4-6)% сопротивления хаосу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (16-21) to (32-37) Chaos Damage Attacks with this Weapon Penetrate (4-6)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (16-21) до (32-37) урона хаосом Атаки этим оружием пробивают (4-6)% сопротивления хаосу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (22-29) to (44-52) Chaos Damage Attacks with this Weapon Penetrate (4-6)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (22-29) до (44-52) урона хаосом Атаки этим оружием пробивают (4-6)% сопротивления хаосу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (12-16) to (24-28) Chaos Damage Attacks with this Weapon Penetrate (4-6)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (12-16) до (24-28) урона хаосом Атаки этим оружием пробивают (4-6)% сопротивления хаосу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (28-37) to (57-65) Chaos Damage Attacks with this Weapon Penetrate (4-6)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (28-37) до (57-65) урона хаосом Атаки этим оружием пробивают (4-6)% сопротивления хаосу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (15-20) to (30-35) Chaos Damage Attacks with this Weapon Penetrate (4-6)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (15-20) до (30-35) урона хаосом Атаки этим оружием пробивают (4-6)% сопротивления хаосу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (35-48) to (72-81) Chaos Damage Attacks with this Weapon Penetrate (4-6)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (35-48) до (72-81) урона хаосом Атаки этим оружием пробивают (4-6)% сопротивления хаосу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (18-25) to (38-44) Chaos Damage Attacks with this Weapon Penetrate (4-6)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (18-25) до (38-44) урона хаосом Атаки этим оружием пробивают (4-6)% сопротивления хаосу"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Attacks with this Weapon Penetrate (6-7)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Атаки этим оружием пробивают (6-7)% сопротивления хаосу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Attacks with this Weapon Penetrate (8-9)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Атаки этим оружием пробивают (8-9)% сопротивления хаосу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Attacks with this Weapon Penetrate (10-12)% Chaos Resistance"
+	[tag]"name RU"		[value]"[Охотничий]Атаки этим оружием пробивают (10-12)% сопротивления хаосу"
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Attacks with this Weapon Penetrate (6-7)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Охотничий]Атаки этим оружием пробивают (6-7)% вражеского сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Attacks with this Weapon Penetrate (8-9)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Охотничий]Атаки этим оружием пробивают (8-9)% вражеского сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Attacks with this Weapon Penetrate (10-12)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Охотничий]Атаки этим оружием пробивают (10-12)% вражеского сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]+2 to Level of Socketed Chaos Gems"
+	[tag]"name RU"		[value]"[Охотничий]+2 к уровню размещённых камней хаоса"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](25-34)% increased Physical Damage Projectiles Pierce an additional Target"
+	[tag]"name RU"		[value]"[Охотничий](25-34)% увеличение физического урона Снаряды пронзают дополнительную цель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](35-44)% increased Physical Damage Projectiles Pierce an additional Target"
+	[tag]"name RU"		[value]"[Охотничий](35-44)% увеличение физического урона Снаряды пронзают дополнительную цель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](45-54)% increased Physical Damage Projectiles Pierce an additional Target"
+	[tag]"name RU"		[value]"[Охотничий](45-54)% увеличение физического урона Снаряды пронзают дополнительную цель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](55-64)% increased Physical Damage Projectiles Pierce an additional Target"
+	[tag]"name RU"		[value]"[Охотничий](55-64)% увеличение физического урона Снаряды пронзают дополнительную цель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](65-69)% increased Physical Damage Projectiles Pierce an additional Target"
+	[tag]"name RU"		[value]"[Охотничий](65-69)% увеличение физического урона Снаряды пронзают дополнительную цель"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Malevolence has (48-54)% increased Aura Effect"
+	[tag]"name RU"		[value]"[охоты](48-54)% усиление эффекта ауры Злорадства"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Malevolence has (28-33)% increased Aura Effect"
+	[tag]"name RU"		[value]"[охоты](28-33)% усиление эффекта ауры Злорадства"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Malevolence has (55-60)% increased Aura Effect"
+	[tag]"name RU"		[value]"[охоты](55-60)% усиление эффекта ауры Злорадства"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Malevolence has (34-40)% increased Aura Effect"
+	[tag]"name RU"		[value]"[охоты](34-40)% усиление эффекта ауры Злорадства"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Malevolence has (40-50)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[охоты](40-50)% увеличение эффективности удержания маны Злорадством"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Gain (3-5) Mana per Enemy Hit with Attacks"
+	[tag]"name RU"		[value]"[Охотничий]Дарует (3-5) маны за каждого пораженного атаками врага"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](5-8)% increased maximum Life"
+	[tag]"name RU"		[value]"[Охотничий](5-8)% увеличение максимума здоровья"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](3-6)% increased maximum Life"
+	[tag]"name RU"		[value]"[Охотничий](3-6)% увеличение максимума здоровья"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](7-10)% increased maximum Life"
+	[tag]"name RU"		[value]"[Охотничий](7-10)% увеличение максимума здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](9-12)% increased maximum Life"
+	[tag]"name RU"		[value]"[Охотничий](9-12)% увеличение максимума здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](6-10)% increased Movement Speed during any Flask Effect"
+	[tag]"name RU"		[value]"[охоты](6-10)% повышение скорости передвижения во время действия эффекта любого флакона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](3-6)% increased Movement Speed"
+	[tag]"name RU"		[value]"[Охотничий](3-6)% повышение скорости передвижения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](7-10)% increased Movement Speed"
+	[tag]"name RU"		[value]"[Охотничий](7-10)% повышение скорости передвижения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]Nearby Enemies have -9% to Chaos Resistance"
+	[tag]"name RU"		[value]"[охоты]Ближайшие враги имеют -9% к сопротивлению хаосу"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](16-20)% increased effect of Offerings"
+	[tag]"name RU"		[value]"[охоты](16-20)% усиление эффекта Подношений"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](21-25)% increased effect of Offerings"
+	[tag]"name RU"		[value]"[охоты](21-25)% усиление эффекта Подношений"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](6-9)% increased Attributes"
+	[tag]"name RU"		[value]"[охоты](6-9)% увеличение характеристик"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](10-12)% increased Attributes"
+	[tag]"name RU"		[value]"[охоты](10-12)% увеличение характеристик"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](6-8)% increased Dexterity"
+	[tag]"name RU"		[value]"[охоты](6-8)% повышение ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](9-10)% increased Dexterity"
+	[tag]"name RU"		[value]"[охоты](9-10)% повышение ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](6-8)% increased Intelligence"
+	[tag]"name RU"		[value]"[охоты](6-8)% повышение интеллекта"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](9-10)% increased Intelligence"
+	[tag]"name RU"		[value]"[охоты](9-10)% повышение интеллекта"
+
+	
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](6-8)% increased Strength"
+	[tag]"name RU"		[value]"[охоты](6-8)% повышение силы"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](9-10)% increased Strength"
+	[tag]"name RU"		[value]"[охоты](9-10)% повышение силы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](-35--25) Physical Damage taken from Attack Hits"
+	[tag]"name RU"		[value]"[охоты](-35--25) входящего физического урона при получении удара от атак"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](-45--36) Physical Damage taken from Attack Hits"
+	[tag]"name RU"		[value]"[охоты](-45--36) входящего физического урона при получении удара от атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](16-20)% of Physical Damage Converted to Chaos Damage"
+	[tag]"name RU"		[value]"[охоты](16-20)% физического урона становится уроном хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](21-25)% of Physical Damage Converted to Chaos Damage"
+	[tag]"name RU"		[value]"[охоты](21-25)% физического урона становится уроном хаосом"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](0.3-0.5)% of Physical Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Охотничий](0.3-0.5)% от физического урона похищается в виде здоровья"
+
+	
+
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](11-15)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[охоты](11-15)% к множителю физического постепенного урона"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](16-20)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[охоты](16-20)% к множителю физического постепенного урона"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](16-20)% to Physical Damage over Time Multiplier with Attack Skills"
+	[tag]"name RU"		[value]"[охоты](16-20)% к множителю постепенного физического урона умениями атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](21-25)% to Physical Damage over Time Multiplier with Attack Skills"
+	[tag]"name RU"		[value]"[охоты](21-25)% к множителю постепенного физического урона умениями атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](5-10)% of Physical Damage from Hits taken as Chaos Damage"
+	[tag]"name RU"		[value]"[Охотничий](5-10)% получаемого физического урона от ударов становится уроном хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's](11-15)% of Physical Damage from Hits taken as Chaos Damage"
+	[tag]"name RU"		[value]"[Охотничий](11-15)% получаемого физического урона от ударов становится уроном хаосом"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](5-6)% increased Poison Duration (8-12)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[охоты](5-6)% увеличение длительности яда (8-12)% увеличение урона от яда"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](7-8)% increased Poison Duration (13-17)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[охоты](7-8)% увеличение длительности яда (13-17)% увеличение урона от яда"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](9-10)% increased Poison Duration (18-22)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[охоты](9-10)% увеличение длительности яда (18-22)% увеличение урона от яда"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]15% chance to Poison on Hit (15-25)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[охоты]15% шанс отравить при нанесении удара (15-25)% увеличение урона от яда"
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]20% chance to Poison on Hit (26-30)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[охоты]20% шанс отравить при нанесении удара (26-30)% увеличение урона от яда"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](3-6)% chance to gain a Power, Frenzy or Endurance Charge on Kill"
+	[tag]"name RU"		[value]"[охоты](3-6)% шанс получить заряд энергии, ярости или выносливости при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](7-10)% chance to gain a Power, Frenzy or Endurance Charge on Kill"
+	[tag]"name RU"		[value]"[охоты](7-10)% шанс получить заряд энергии, ярости или выносливости при убийстве"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]You and your Minions take (45-31)% reduced Reflected Elemental Damage"
+	[tag]"name RU"		[value]"[Охотничий]Вы и ваши приспешники получаете уменьшенный на (45-31)% отраженный урон от стихий"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]You and your Minions take (45-31)% reduced Reflected Physical Damage"
+	[tag]"name RU"		[value]"[Охотничий]Вы и ваши приспешники получаете уменьшенный на (45-31)% отраженный физический урон"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]You and your Minions take (55-46)% reduced Reflected Physical Damage"
+	[tag]"name RU"		[value]"[Охотничий]Вы и ваши приспешники получаете уменьшенный на (55-46)% отраженный физический урон"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Every 4 seconds, Regenerate 15% of Life over one second"
+	[tag]"name RU"		[value]"[Охотничий]Каждые 4 секунды регенерирует 15% здоровья в течение 1 секунды"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]You have Chilling Conflux for 3 seconds every 8 seconds"
+	[tag]"name RU"		[value]"[охоты]Каждые 8 секунд вы получаете Охлаждающее слияние на 3 секунды"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]You have Igniting Conflux for 3 seconds every 8 seconds"
+	[tag]"name RU"		[value]"[охоты]Каждые 8 секунд вы получаете Поджигающее слияние на 3 секунды"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]You have Shocking Conflux for 3 seconds every 8 seconds"
+	[tag]"name RU"		[value]"[охоты]Каждые 8 секунд вы получаете Шоковое слияние на 3 секунды"
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (14-18) to (27-32) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (14-18) до (27-32) урона хаосом к чарам"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (17-23) to (34-40) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (17-23) до (34-40) урона хаосом к чарам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (21-28) to (41-48) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (21-28) до (41-48) урона хаосом к чарам"
+
+	
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (17-22) to (33-39) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (17-22) до (33-39) урона от огня к чарам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (21-28) to (42-49) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (21-28) до (42-49) урона от огня к чарам"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Adds (25-34) to (51-59) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Охотничий]Добавляет от (25-34) до (51-59) урона от огня к чарам"
+
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]1% increased Spell Damage per 10 Intelligence"
+	[tag]"name RU"		[value]"[Охотничий]1% увеличение урона от чар за 10 интеллекта"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]1% increased Spell Damage per 10 Strength"
+	[tag]"name RU"		[value]"[Охотничий]1% увеличение урона от чар за каждые 10 силы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]1% increased Spell Damage per 16 Dexterity"
+	[tag]"name RU"		[value]"[Охотничий]1% увеличение урона от чар за каждые 16 ловкости"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]1% increased Spell Damage per 16 Intelligence"
+	[tag]"name RU"		[value]"[Охотничий]1% увеличение урона от чар за каждые 16 интеллекта"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]1% increased Spell Damage per 16 Strength"
+	[tag]"name RU"		[value]"[Охотничий]1% увеличение урона от чар за каждые 16 силы"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Hunter's"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Hunter's]Strike Skills target 1 additional nearby Enemy"
+	[tag]"name RU"		[value]"[Охотничий]Умения ударов выбирают целью 1 дополнительного ближайшего врага"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt]You have Tailwind if you have dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[охоты]На вас действует Попутный ветер, если недавно вы наносили критический удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](35-40)% increased Warcry Cooldown Recovery Rate"
+	[tag]"name RU"		[value]"[охоты](35-40)% повышение скорости перезарядки боевых кличей"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](17-21)% increased Warcry Cooldown Recovery Rate"
+	[tag]"name RU"		[value]"[охоты](17-21)% повышение скорости перезарядки боевых кличей"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](41-45)% increased Warcry Cooldown Recovery Rate"
+	[tag]"name RU"		[value]"[охоты](41-45)% повышение скорости перезарядки боевых кличей"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Hunt"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Hunt](22-25)% increased Warcry Cooldown Recovery Rate"
+	[tag]"name RU"		[value]"[охоты](22-25)% повышение скорости перезарядки боевых кличей"
+
+
+	

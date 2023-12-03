@@ -1,0 +1,2372 @@
+
+	
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](26-30)% increased Area of Effect if you have Stunned an Enemy Recently"
+	[tag]"name RU"		[value]"[крестоносца](26-30)% увеличение области действия, если вы недавно оглушали врага"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](36-40)% increased Area of Effect if you have Stunned an Enemy Recently"
+	[tag]"name RU"		[value]"[крестоносца](36-40)% увеличение области действия, если вы недавно оглушали врага"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](31-35)% increased Area of Effect if you have Stunned an Enemy Recently"
+	[tag]"name RU"		[value]"[крестоносца](31-35)% увеличение области действия, если вы недавно оглушали врага"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](41-45)% increased Area of Effect if you have Stunned an Enemy Recently"
+	[tag]"name RU"		[value]"[крестоносца](41-45)% увеличение области действия, если вы недавно оглушали врага"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](10-12)% increased Attack Speed while Fortified"
+	[tag]"name RU"		[value]"[крестоносца](10-12)% повышение скорости атаки под действием Укрепления"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](20-22)% increased Attack Speed while Fortified"
+	[tag]"name RU"		[value]"[крестоносца](20-22)% повышение скорости атаки под действием Укрепления"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](13-15)% increased Attack Speed while Fortified"
+	[tag]"name RU"		[value]"[крестоносца](13-15)% повышение скорости атаки под действием Укрепления"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](23-25)% increased Attack Speed while Fortified"
+	[tag]"name RU"		[value]"[крестоносца](23-25)% повышение скорости атаки под действием Укрепления"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](5-6)% chance to Taunt Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[крестоносца](5-6)% шанс спровоцировать врагов при нанесении удара атаками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](7-8)% chance to Taunt Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[крестоносца](7-8)% шанс спровоцировать врагов при нанесении удара атаками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](9-10)% chance to Taunt Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[крестоносца](9-10)% шанс спровоцировать врагов при нанесении удара атаками"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](51-60)% chance to Avoid being Frozen"
+	[tag]"name RU"		[value]"[крестоносца](51-60)% шанс избежать заморозки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](51-60)% chance to Avoid being Ignited"
+	[tag]"name RU"		[value]"[крестоносца](51-60)% шанс избежать поджога"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](21-25)% chance to Avoid interruption from Stuns while Casting"
+	[tag]"name RU"		[value]"[крестоносца](21-25)% шанс избежать прерывание от оглушения при сотворении чар"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](26-30)% chance to Avoid interruption from Stuns while Casting"
+	[tag]"name RU"		[value]"[крестоносца](26-30)% шанс избежать прерывание от оглушения при сотворении чар"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](31-35)% chance to Avoid interruption from Stuns while Casting"
+	[tag]"name RU"		[value]"[крестоносца](31-35)% шанс избежать прерывание от оглушения при сотворении чар"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](51-60)% chance to Avoid being Shocked"
+	[tag]"name RU"		[value]"[крестоносца](51-60)% шанс избежать шока"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](25-40)% chance to Chill Attackers for 4 seconds on Block"
+	[tag]"name RU"		[value]"[крестоносца](25-40)% шанс наложить охлаждение на 4 секунды на атакующих врагов при блоке"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](41-50)% chance to Chill Attackers for 4 seconds on Block"
+	[tag]"name RU"		[value]"[крестоносца](41-50)% шанс наложить охлаждение на 4 секунды на атакующих врагов при блоке"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](25-40)% chance to Shock Attackers for 4 seconds on Block"
+	[tag]"name RU"		[value]"[крестоносца](25-40)% шанс наложить шок на атакующих на 4 секунды при блоке"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](41-50)% chance to Shock Attackers for 4 seconds on Block"
+	[tag]"name RU"		[value]"[крестоносца](41-50)% шанс наложить шок на атакующих на 4 секунды при блоке"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Curse Enemies with Conductivity on Hit, with 20% increased Effect"
+	[tag]"name RU"		[value]"[крестоносца]При нанесении удара проклинает врагов Проводимостью с усиленным на 20% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Curse Enemies with Conductivity on Hit, with 40% increased Effect"
+	[tag]"name RU"		[value]"[крестоносца]При нанесении удара проклинает врагов Проводимостью с усиленным на 40% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Curse Enemies with Conductivity on Hit, with 32% increased Effect"
+	[tag]"name RU"		[value]"[крестоносца]При нанесении удара проклинает врагов Проводимостью с усиленным на 32% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]You have Consecrated Ground around you while stationary"
+	[tag]"name RU"		[value]"[Крестовый]Пока вы находитесь на одном месте, вокруг вас создаётся освящённая земля"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](18-21)% of Physical Damage Converted to Cold Damage"
+	[tag]"name RU"		[value]"[Крестовый](18-21)% физического урона становится уроном от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](23-26)% of Physical Damage Converted to Cold Damage"
+	[tag]"name RU"		[value]"[крестоносца](23-26)% физического урона становится уроном от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](27-30)% of Physical Damage Converted to Cold Damage"
+	[tag]"name RU"		[value]"[крестоносца](27-30)% физического урона становится уроном от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](22-25)% of Physical Damage Converted to Cold Damage"
+	[tag]"name RU"		[value]"[Крестовый](22-25)% физического урона становится уроном от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](18-21)% of Physical Damage Converted to Fire Damage"
+	[tag]"name RU"		[value]"[Крестовый](18-21)% физического урона становится уроном от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](23-26)% of Physical Damage Converted to Fire Damage"
+	[tag]"name RU"		[value]"[крестоносца](23-26)% физического урона становится уроном от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](22-25)% of Physical Damage Converted to Fire Damage"
+	[tag]"name RU"		[value]"[Крестовый](22-25)% физического урона становится уроном от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](27-30)% of Physical Damage Converted to Fire Damage"
+	[tag]"name RU"		[value]"[крестоносца](27-30)% физического урона становится уроном от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](23-26)% of Physical Damage Converted to Lightning Damage"
+	[tag]"name RU"		[value]"[крестоносца](23-26)% физического урона становится уроном от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](18-21)% of Physical Damage Converted to Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый](18-21)% физического урона становится уроном от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](22-25)% of Physical Damage Converted to Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый](22-25)% физического урона становится уроном от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](27-30)% of Physical Damage Converted to Lightning Damage"
+	[tag]"name RU"		[value]"[крестоносца](27-30)% физического урона становится уроном от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](30-34)% increased Critical Strike Chance against Shocked Enemies"
+	[tag]"name RU"		[value]"[Крестовый](30-34)% повышение шанса критического удара по поражённым шоком врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](35-39)% increased Critical Strike Chance against Shocked Enemies"
+	[tag]"name RU"		[value]"[Крестовый](35-39)% повышение шанса критического удара по поражённым шоком врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](40-45)% increased Critical Strike Chance against Shocked Enemies"
+	[tag]"name RU"		[value]"[Крестовый](40-45)% повышение шанса критического удара по поражённым шоком врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](16-20)% increased Global Critical Strike Chance"
+	[tag]"name RU"		[value]"[крестоносца](16-20)% повышение глобального шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](15-17)% increased Global Critical Strike Chance"
+	[tag]"name RU"		[value]"[крестоносца](15-17)% повышение глобального шанса критического удара"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](21-25)% increased Global Critical Strike Chance"
+	[tag]"name RU"		[value]"[крестоносца](21-25)% повышение глобального шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](18-21)% increased Global Critical Strike Chance"
+	[tag]"name RU"		[value]"[крестоносца](18-21)% повышение глобального шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](26-30)% increased Global Critical Strike Chance"
+	[tag]"name RU"		[value]"[крестоносца](26-30)% повышение глобального шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](22-25)% increased Global Critical Strike Chance"
+	[tag]"name RU"		[value]"[крестоносца](22-25)% повышение глобального шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](31-40)% increased Critical Strike Chance if you have Killed Recently"
+	[tag]"name RU"		[value]"[крестоносца](31-40)% повышение шанса критического удара, если вы недавно совершали убийство"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](41-50)% increased Critical Strike Chance if you have Killed Recently"
+	[tag]"name RU"		[value]"[крестоносца](41-50)% повышение шанса критического удара, если вы недавно совершали убийство"
+
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]1% increased Damage per 15 Intelligence"
+	[tag]"name RU"		[value]"[Крестовый]1% увеличение урона за каждые 15 интеллекта"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]1% increased Damage per 1% Chance to Block Attack Damage"
+	[tag]"name RU"		[value]"[Крестовый]1% увеличение урона за каждый 1% шанса блокировать урон от атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](18-22)% increased Damage while Leeching"
+	[tag]"name RU"		[value]"[крестоносца](18-22)% увеличение урона во время похищения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](32-36)% increased Damage while Leeching"
+	[tag]"name RU"		[value]"[крестоносца](32-36)% увеличение урона во время похищения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](37-41)% increased Damage while Leeching"
+	[tag]"name RU"		[value]"[крестоносца](37-41)% увеличение урона во время похищения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](23-26)% increased Damage while Leeching"
+	[tag]"name RU"		[value]"[крестоносца](23-26)% увеличение урона во время похищения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](42-45)% increased Damage while Leeching"
+	[tag]"name RU"		[value]"[крестоносца](42-45)% увеличение урона во время похищения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](27-30)% increased Damage while Leeching"
+	[tag]"name RU"		[value]"[крестоносца](27-30)% увеличение урона во время похищения"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Discipline has (50-60)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[крестоносца](50-60)% повышение эффективности удержания маны Дисциплиной"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Socketed Gems Chain 1 additional times"
+	[tag]"name RU"		[value]"[крестоносца]Размещённые камни поражают целей по цепи: 1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Projectiles from Socketed Gems Fork"
+	[tag]"name RU"		[value]"[крестоносца]Снаряды от размещенных камней разветвляются"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Enemies you Kill have a (11-20)% chance to Explode, dealing a tenth of their maximum Life as Physical Damage"
+	[tag]"name RU"		[value]"[Крестовый]Убитые вами враги с (11-20)% шансом взрываются, нанося десятую часть их максимума здоровья в виде физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Enemies you Kill have a (21-30)% chance to Explode, dealing a tenth of their maximum Life as Physical Damage"
+	[tag]"name RU"		[value]"[Крестовый]Убитые вами враги с (21-30)% шансом взрываются, нанося десятую часть их максимума здоровья в виде физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](8-11)% increased Energy Shield Recovery rate"
+	[tag]"name RU"		[value]"[крестоносца](8-11)% повышение скорости восстановления энергетического щита"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](7-9)% increased Energy Shield Recovery rate"
+	[tag]"name RU"		[value]"[крестоносца](7-9)% повышение скорости восстановления энергетического щита"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](10-12)% increased Energy Shield Recovery rate"
+	[tag]"name RU"		[value]"[крестоносца](10-12)% повышение скорости восстановления энергетического щита"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](12-15)% increased Energy Shield Recovery rate"
+	[tag]"name RU"		[value]"[крестоносца](12-15)% повышение скорости восстановления энергетического щита"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Allaying"
+
+	[tag]"name EN"		[value]"[of Allaying](24-26)% increased Energy Shield Recharge Rate"
+	[tag]"name RU"		[value]"[смягчения](24-26)% повышение скорости перезарядки энергетического щита"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Melee Hits which Stun have (8-12)% chance to Fortify"
+	[tag]"name RU"		[value]"[Крестовый]Оглушающие удары в ближнем бою с (8-12)% шансом могут наложить Укрепление"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](11-20)% chance to Gain Arcane Surge when you deal a Critical Strike"
+	[tag]"name RU"		[value]"[крестоносца](11-20)% шанс получить Колдовской выброс, когда вы наносите критический удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](21-30)% chance to Gain Arcane Surge when you deal a Critical Strike"
+	[tag]"name RU"		[value]"[крестоносца](21-30)% шанс получить Колдовской выброс, когда вы наносите критический удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]1 to (6-8) Lightning Damage per Power Charge"
+	[tag]"name RU"		[value]"[Крестовый]От 1 до (6-8) урона от молнии за заряд энергии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](1-2) to (9-11) Lightning Damage per Power Charge"
+	[tag]"name RU"		[value]"[Крестовый]От (1-2) до (9-11) урона от молнии за заряд энергии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](10-15)% increased Cooldown Recovery Rate"
+	[tag]"name RU"		[value]"[крестоносца](10-15)% повышение скорости перезарядки умений"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](6-10)% increased Cooldown Recovery Rate"
+	[tag]"name RU"		[value]"[крестоносца](6-10)% повышение скорости перезарядки умений"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](11-15)% increased Cooldown Recovery Rate"
+	[tag]"name RU"		[value]"[крестоносца](11-15)% повышение скорости перезарядки умений"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](16-20)% increased Cooldown Recovery Rate"
+	[tag]"name RU"		[value]"[крестоносца](16-20)% повышение скорости перезарядки умений"
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](7-9)% increased maximum Energy Shield"
+	[tag]"name RU"		[value]"[Крестовый](7-9)% увеличение максимума энергетического щита"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](10-12)% increased maximum Energy Shield"
+	[tag]"name RU"		[value]"[Крестовый](10-12)% увеличение максимума энергетического щита"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](13-15)% increased maximum Energy Shield"
+	[tag]"name RU"		[value]"[Крестовый](13-15)% увеличение максимума энергетического щита"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](25-29)% increased Impale Effect"
+	[tag]"name RU"		[value]"[крестоносца](25-29)% усиление эффекта Прокола"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](12-16)% increased Impale Effect"
+	[tag]"name RU"		[value]"[крестоносца](12-16)% усиление эффекта Прокола"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](30-34)% increased Impale Effect"
+	[tag]"name RU"		[value]"[крестоносца](30-34)% усиление эффекта Прокола"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](17-21)% increased Impale Effect"
+	[tag]"name RU"		[value]"[крестоносца](17-21)% усиление эффекта Прокола"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](22-25)% increased Impale Effect"
+	[tag]"name RU"		[value]"[крестоносца](22-25)% усиление эффекта Прокола"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](35-38)% increased Impale Effect"
+	[tag]"name RU"		[value]"[крестоносца](35-38)% усиление эффекта Прокола"
+
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](5-7)% increased Damage per Power Charge"
+	[tag]"name RU"		[value]"[крестоносца](5-7)% увеличение урона за заряд энергии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](3-4)% increased Damage per Power Charge"
+	[tag]"name RU"		[value]"[Крестовый](3-4)% увеличение урона за заряд энергии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](10-13)% increased Damage per Power Charge"
+	[tag]"name RU"		[value]"[крестоносца](10-13)% увеличение урона за заряд энергии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](14-17)% increased Damage per Power Charge"
+	[tag]"name RU"		[value]"[крестоносца](14-17)% увеличение урона за заряд энергии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](8-10)% increased Damage per Power Charge"
+	[tag]"name RU"		[value]"[крестоносца](8-10)% увеличение урона за заряд энергии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](5-6)% increased Damage per Power Charge"
+	[tag]"name RU"		[value]"[Крестовый](5-6)% увеличение урона за заряд энергии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](35-40)% increased total Recovery per second from Life Leech"
+	[tag]"name RU"		[value]"[Крестовый](35-40)% увеличение итогового восстановления в секунду от похищения здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](41-45)% increased total Recovery per second from Life Leech"
+	[tag]"name RU"		[value]"[Крестовый](41-45)% увеличение итогового восстановления в секунду от похищения здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](46-50)% increased total Recovery per second from Life Leech"
+	[tag]"name RU"		[value]"[Крестовый](46-50)% увеличение итогового восстановления в секунду от похищения здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (8-12) Life per Enemy Hit with Spells"
+	[tag]"name RU"		[value]"[Крестовый](8-12) здоровья за каждый удар чарами по врагу"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (13-15) Life per Enemy Hit with Spells"
+	[tag]"name RU"		[value]"[Крестовый](13-15) здоровья за каждый удар чарами по врагу"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](0.2-0.4)% of Lightning Damage Leeched as Energy Shield"
+	[tag]"name RU"		[value]"[Крестовый](0.2-0.4)% урона от молнии похищается в виде энергетического щита"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](0.3-0.5)% of Lightning Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Крестовый](0.3-0.5)% урона от молнии похищается в виде здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](16-20)% increased Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый](16-20)% увеличение урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](21-25)% increased Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый](21-25)% увеличение урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](26-30)% increased Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый](26-30)% увеличение урона от молнии"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](11-15)% chance to inflict Lightning Exposure on Hit"
+	[tag]"name RU"		[value]"[крестоносца](11-15)% шанс наложить восприимчивость к молнии при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](16-20)% chance to inflict Lightning Exposure on Hit"
+	[tag]"name RU"		[value]"[крестоносца](16-20)% шанс наложить восприимчивость к молнии при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Damage Penetrates (10-11)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Урон пробивает (10-11)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Damage Penetrates (4-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Урон пробивает (4-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Damage Penetrates 6% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Урон пробивает 6% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Damage Penetrates (12-13)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Урон пробивает (12-13)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Damage Penetrates 7% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Урон пробивает 7% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Damage Penetrates (14-15)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Урон пробивает (14-15)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Damage Penetrates 8% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Урон пробивает 8% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Damage Penetrates (8-10)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Урон пробивает (8-10)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]+2 to Level of Socketed Lightning Gems"
+	[tag]"name RU"		[value]"[Крестовый]+2 к уровню размещённых камней молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](25-34)% increased Physical Damage (8-10)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[Крестовый](25-34)% увеличение физического урона (8-10)% повышение шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](35-44)% increased Physical Damage (8-10)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[Крестовый](35-44)% увеличение физического урона (8-10)% повышение шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](45-54)% increased Physical Damage (8-10)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[Крестовый](45-54)% увеличение физического урона (8-10)% повышение шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](55-64)% increased Physical Damage (8-10)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[Крестовый](55-64)% увеличение физического урона (8-10)% повышение шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](65-69)% increased Physical Damage (8-10)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[Крестовый](65-69)% увеличение физического урона (8-10)% повышение шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](25-34)% increased Physical Damage 0.6% of Physical Attack Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Крестовый](25-34)% увеличение физического урона 0.6% физического урона от атак похищается в виде здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](35-44)% increased Physical Damage 0.6% of Physical Attack Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Крестовый](35-44)% увеличение физического урона 0.6% физического урона от атак похищается в виде здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](45-54)% increased Physical Damage 0.6% of Physical Attack Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Крестовый](45-54)% увеличение физического урона 0.6% физического урона от атак похищается в виде здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](55-64)% increased Physical Damage 0.6% of Physical Attack Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Крестовый](55-64)% увеличение физического урона 0.6% физического урона от атак похищается в виде здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](65-69)% increased Physical Damage 0.6% of Physical Attack Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Крестовый](65-69)% увеличение физического урона 0.6% физического урона от атак похищается в виде здоровья"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](25-34)% increased Physical Damage (20-25)% increased Projectile Speed"
+	[tag]"name RU"		[value]"[Крестовый](25-34)% увеличение физического урона (20-25)% повышение скорости снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](35-44)% increased Physical Damage (20-25)% increased Projectile Speed"
+	[tag]"name RU"		[value]"[Крестовый](35-44)% увеличение физического урона (20-25)% повышение скорости снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](45-54)% increased Physical Damage (20-25)% increased Projectile Speed"
+	[tag]"name RU"		[value]"[Крестовый](45-54)% увеличение физического урона (20-25)% повышение скорости снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](55-64)% increased Physical Damage (20-25)% increased Projectile Speed"
+	[tag]"name RU"		[value]"[Крестовый](55-64)% увеличение физического урона (20-25)% повышение скорости снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](65-69)% increased Physical Damage (20-25)% increased Projectile Speed"
+	[tag]"name RU"		[value]"[Крестовый](65-69)% увеличение физического урона (20-25)% повышение скорости снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](25-34)% increased Physical Damage (6-8)% reduced Enemy Stun Threshold"
+	[tag]"name RU"		[value]"[Крестовый](25-34)% увеличение физического урона (6-8)% снижение порога оглушения врагов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](35-44)% increased Physical Damage (6-8)% reduced Enemy Stun Threshold"
+	[tag]"name RU"		[value]"[Крестовый](35-44)% увеличение физического урона (6-8)% снижение порога оглушения врагов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](45-54)% increased Physical Damage (6-8)% reduced Enemy Stun Threshold"
+	[tag]"name RU"		[value]"[Крестовый](45-54)% увеличение физического урона (6-8)% снижение порога оглушения врагов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](55-64)% increased Physical Damage (6-8)% reduced Enemy Stun Threshold"
+	[tag]"name RU"		[value]"[Крестовый](55-64)% увеличение физического урона (6-8)% снижение порога оглушения врагов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](65-69)% increased Physical Damage (6-8)% reduced Enemy Stun Threshold"
+	[tag]"name RU"		[value]"[Крестовый](65-69)% увеличение физического урона (6-8)% снижение порога оглушения врагов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds 2 to (25-29) Lightning Damage Attacks with this Weapon Penetrate (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от 2 до (25-29) урона от молнии Атаки этим оружием пробивают (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds 3 to (46-53) Lightning Damage Attacks with this Weapon Penetrate (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от 3 до (46-53) урона от молнии Атаки этим оружием пробивают (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (1-4) to (40-45) Lightning Damage Attacks with this Weapon Penetrate (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (1-4) до (40-45) урона от молнии Атаки этим оружием пробивают (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (2-7) to (74-84) Lightning Damage Attacks with this Weapon Penetrate (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (2-7) до (74-84) урона от молнии Атаки этим оружием пробивают (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (3-9) to (102-117) Lightning Damage Attacks with this Weapon Penetrate (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (3-9) до (102-117) урона от молнии Атаки этим оружием пробивают (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (2-5) to (55-63) Lightning Damage Attacks with this Weapon Penetrate (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (2-5) до (55-63) урона от молнии Атаки этим оружием пробивают (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (3-12) to (130-146) Lightning Damage Attacks with this Weapon Penetrate (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (3-12) до (130-146) урона от молнии Атаки этим оружием пробивают (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (2-6) to (70-79) Lightning Damage Attacks with this Weapon Penetrate (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (2-6) до (70-79) урона от молнии Атаки этим оружием пробивают (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (6-15) to (165-183) Lightning Damage Attacks with this Weapon Penetrate (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (6-15) до (165-183) урона от молнии Атаки этим оружием пробивают (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (3-8) to (89-99) Lightning Damage Attacks with this Weapon Penetrate (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (3-8) до (89-99) урона от молнии Атаки этим оружием пробивают (5-7)% сопротивления молнии"
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Attacks with this Weapon Penetrate (9-10)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Атаки этим оружием пробивают (9-10)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Attacks with this Weapon Penetrate (11-12)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Атаки этим оружием пробивают (11-12)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Attacks with this Weapon Penetrate (13-15)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Атаки этим оружием пробивают (13-15)% сопротивления молнии"
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]+1% to maximum Cold Resistance"
+	[tag]"name RU"		[value]"[крестоносца]+1% к максимальному сопротивлению холоду"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]+2% to maximum Cold Resistance"
+	[tag]"name RU"		[value]"[крестоносца]+2% к максимальному сопротивлению холоду"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](15-25)% increased Maximum total Energy Shield Recovery per second from Leech"
+	[tag]"name RU"		[value]"[Крестовый](15-25)% увеличение максимального итогового восстановления энергетического щита в секунду от похищения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]15% increased Maximum total Energy Shield Recovery per second from Leech"
+	[tag]"name RU"		[value]"[Крестовый]15% увеличение максимального итогового восстановления энергетического щита в секунду от похищения"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Recover (3-4)% of Energy Shield on Kill"
+	[tag]"name RU"		[value]"[крестоносца]Восстанавливает (3-4)% энергетического щита при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Recover (5-6)% of Energy Shield on Kill"
+	[tag]"name RU"		[value]"[крестоносца]Восстанавливает (5-6)% энергетического щита при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]+1% to maximum Fire Resistance"
+	[tag]"name RU"		[value]"[крестоносца]+1% к максимальному сопротивлению огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]+2% to maximum Fire Resistance"
+	[tag]"name RU"		[value]"[крестоносца]+2% к максимальному сопротивлению огню"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](15-25)% increased Maximum total Life Recovery per second from Leech"
+	[tag]"name RU"		[value]"[Крестовый](15-25)% увеличение максимального итогового восстановления здоровья в секунду от похищения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]10% increased Maximum total Life Recovery per second from Leech"
+	[tag]"name RU"		[value]"[Крестовый]10% увеличение максимального итогового восстановления здоровья в секунду от похищения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]+1% to maximum Lightning Resistance"
+	[tag]"name RU"		[value]"[крестоносца]+1% к максимальному сопротивлению молнии"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]+2% to maximum Lightning Resistance"
+	[tag]"name RU"		[value]"[крестоносца]+2% к максимальному сопротивлению молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](9-11)% increased maximum Mana"
+	[tag]"name RU"		[value]"[Крестовый](9-11)% увеличение максимума маны"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](12-15)% increased maximum Mana"
+	[tag]"name RU"		[value]"[Крестовый](12-15)% увеличение максимума маны"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]+2% to maximum Chance to Block Spell Damage"
+	[tag]"name RU"		[value]"[крестоносца]+2% к максимальному шансу блокировать урон от чар"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]+1 to Minimum Power Charges"
+	[tag]"name RU"		[value]"[крестоносца]+1 к минимуму зарядов энергии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]+2 to Minimum Power Charges"
+	[tag]"name RU"		[value]"[крестоносца]+2 к минимуму зарядов энергии"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Nearby Enemies have -9% to Lightning Resistance"
+	[tag]"name RU"		[value]"[крестоносца]Ближайшие враги имеют -9% к сопротивлению молнии"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](5-8)% increased Intelligence"
+	[tag]"name RU"		[value]"[крестоносца](5-8)% повышение интеллекта"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](9-12)% increased Intelligence"
+	[tag]"name RU"		[value]"[крестоносца](9-12)% повышение интеллекта"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (7-12)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый]Дарует (7-12)% от физического урона в виде дополнительного урона от молнии"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (5-10)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый]Дарует (5-10)% от физического урона в виде дополнительного урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (3-5)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый]Дарует (3-5)% от физического урона в виде дополнительного урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (16-20)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый]Дарует (16-20)% от физического урона в виде дополнительного урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (21-26)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый]Дарует (21-26)% от физического урона в виде дополнительного урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (13-17)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый]Дарует (13-17)% от физического урона в виде дополнительного урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (11-15)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый]Дарует (11-15)% от физического урона в виде дополнительного урона от молнии"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (6-8)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый]Дарует (6-8)% от физического урона в виде дополнительного урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (27-30)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый]Дарует (27-30)% от физического урона в виде дополнительного урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Gain (18-20)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый]Дарует (18-20)% от физического урона в виде дополнительного урона от молнии"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Gain (7-8)% of Physical Damage as Extra Damage of a random Element"
+	[tag]"name RU"		[value]"[крестоносца]Дарует (7-8)% физического урона в виде дополнительного урона от случайной стихии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Gain (9-11)% of Physical Damage as Extra Damage of a random Element"
+	[tag]"name RU"		[value]"[крестоносца]Дарует (9-11)% физического урона в виде дополнительного урона от случайной стихии"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Gain (12-15)% of Physical Damage as Extra Damage of a random Element"
+	[tag]"name RU"		[value]"[крестоносца]Дарует (12-15)% физического урона в виде дополнительного урона от случайной стихии"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](4-6)% of Physical Damage from Hits taken as Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый](4-6)% получаемого физического урона от ударов становится уроном от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](5-10)% of Physical Damage from Hits taken as Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый](5-10)% получаемого физического урона от ударов становится уроном от молнии"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](7-10)% of Physical Damage from Hits taken as Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый](7-10)% получаемого физического урона от ударов становится уроном от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](11-15)% of Physical Damage from Hits taken as Lightning Damage"
+	[tag]"name RU"		[value]"[Крестовый](11-15)% получаемого физического урона от ударов становится уроном от молнии"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]15% chance to gain a Power Charge on Critical Strike"
+	[tag]"name RU"		[value]"[крестоносца]15% шанс получить заряд энергии при нанесении критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Projectiles deal (15-20)% increased Damage for each Enemy Pierced"
+	[tag]"name RU"		[value]"[крестоносца]Снаряды наносят увеличенный на (15-20)% урон за каждого пронзённого врага"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Projectiles deal (21-25)% increased Damage for each Enemy Pierced"
+	[tag]"name RU"		[value]"[крестоносца]Снаряды наносят увеличенный на (21-25)% урон за каждого пронзённого врага"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Projectiles deal (26-30)% increased Damage for each Enemy Pierced"
+	[tag]"name RU"		[value]"[крестоносца]Снаряды наносят увеличенный на (26-30)% урон за каждого пронзённого врага"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Purity of Lightning has (50-60)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[крестоносца](50-60)% увеличение эффективности удержания маны Спасением от молний"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Recover (3-5)% of Energy Shield when you Block"
+	[tag]"name RU"		[value]"[крестоносца]Восстанавливает (3-5)% энергетического щита при блоке"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](51-60)% reduced Ignite Duration on you"
+	[tag]"name RU"		[value]"[крестоносца](51-60)% уменьшение длительности поджога на вас"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](40-35)% reduced Effect of Curses on you"
+	[tag]"name RU"		[value]"[крестоносца](40-35)% ослабление эффектов проклятий на вас"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](51-60)% reduced Freeze Duration on you"
+	[tag]"name RU"		[value]"[крестоносца](51-60)% уменьшение длительности заморозки на вас"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](60-51)% reduced Effect of Shock on you"
+	[tag]"name RU"		[value]"[крестоносца](60-51)% ослабление эффекта шока на вас"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Remove Shock when you use a Flask"
+	[tag]"name RU"		[value]"[крестоносца]Снимает шок при использовании флакона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Unaffected by Shocked Ground"
+	[tag]"name RU"		[value]"[Крестовый]Невосприимчивость к эффекту заряженной земли"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (1-2) to (21-22) Lightning Damage to Spells Damage Penetrates 4% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (1-2) до (21-22) урона от молнии к чарам Урон пробивает 4% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (1-3) to (32-34) Lightning Damage to Spells Damage Penetrates (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (1-3) до (32-34) урона от молнии к чарам Урон пробивает (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (1-4) to (49-52) Lightning Damage to Spells Damage Penetrates (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (1-4) до (49-52) урона от молнии к чарам Урон пробивает (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (1-3) to (33-35) Lightning Damage to Spells Damage Penetrates 4% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (1-3) до (33-35) урона от молнии к чарам Урон пробивает 4% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (2-6) to (69-73) Lightning Damage to Spells Damage Penetrates (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (2-6) до (69-73) урона от молнии к чарам Урон пробивает (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (1-4) to (46-49) Lightning Damage to Spells Damage Penetrates 4% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (1-4) до (46-49) урона от молнии к чарам Урон пробивает 4% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (2-5) to (58-61) Lightning Damage to Spells Damage Penetrates 4% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (2-5) до (58-61) урона от молнии к чарам Урон пробивает 4% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (2-7) to (87-92) Lightning Damage to Spells Damage Penetrates (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (2-7) до (87-92) урона от молнии к чарам Урон пробивает (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (3-9) to (109-115) Lightning Damage to Spells Damage Penetrates (5-7)% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (3-9) до (109-115) урона от молнии к чарам Урон пробивает (5-7)% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (2-6) to (73-77) Lightning Damage to Spells Damage Penetrates 4% Lightning Resistance"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (2-6) до (73-77) урона от молнии к чарам Урон пробивает 4% сопротивления молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](7-9)% Chance to Block Spell Damage if you have Blocked Spell Damage Recently"
+	[tag]"name RU"		[value]"[крестоносца](7-9)% шанс блокировать урон от чар, если вы недавно блокировали урон от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](10-12)% Chance to Block Spell Damage if you have Blocked Spell Damage Recently"
+	[tag]"name RU"		[value]"[крестоносца](10-12)% шанс блокировать урон от чар, если вы недавно блокировали урон от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](4-5)% Chance to Block Spell Damage"
+	[tag]"name RU"		[value]"[крестоносца](4-5)% шанс блокировать урон от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](3-4)% Chance to Block Spell Damage"
+	[tag]"name RU"		[value]"[крестоносца](3-4)% шанс блокировать урон от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](5-6)% Chance to Block Spell Damage"
+	[tag]"name RU"		[value]"[крестоносца](5-6)% шанс блокировать урон от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](6-7)% Chance to Block Spell Damage"
+	[tag]"name RU"		[value]"[крестоносца](6-7)% шанс блокировать урон от чар"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](15-17)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Крестовый](15-17)% увеличение урона от чар"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](18-21)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Крестовый](18-21)% увеличение урона от чар"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's](22-25)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Крестовый](22-25)% увеличение урона от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](20-25)% increased Spell Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[крестоносца](20-25)% увеличение урона от чар во время действия эффекта любого флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](26-30)% increased Spell Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[крестоносца](26-30)% увеличение урона от чар во время действия эффекта любого флакона"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](31-35)% increased Spell Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[крестоносца](31-35)% увеличение урона от чар во время действия эффекта любого флакона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](21-25)% reduced Enemy Stun Threshold (21-25)% increased Stun Duration on Enemies"
+	[tag]"name RU"		[value]"[крестоносца](21-25)% снижение порога оглушения врагов (21-25)% увеличение длительности оглушения на врагах"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](11-15)% reduced Enemy Stun Threshold (11-15)% increased Stun Duration on Enemies"
+	[tag]"name RU"		[value]"[крестоносца](11-15)% снижение порога оглушения врагов (11-15)% увеличение длительности оглушения на врагах"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](26-30)% reduced Enemy Stun Threshold (26-30)% increased Stun Duration on Enemies"
+	[tag]"name RU"		[value]"[крестоносца](26-30)% снижение порога оглушения врагов (26-30)% увеличение длительности оглушения на врагах"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](16-20)% reduced Enemy Stun Threshold (16-20)% increased Stun Duration on Enemies"
+	[tag]"name RU"		[value]"[крестоносца](16-20)% снижение порога оглушения врагов (16-20)% увеличение длительности оглушения на врагах"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](18-21)% increased Warcry Buff Effect"
+	[tag]"name RU"		[value]"[крестоносца](18-21)% усиление положительного эффекта боевого клича"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade](22-25)% increased Warcry Buff Effect"
+	[tag]"name RU"		[value]"[крестоносца](22-25)% усиление положительного эффекта боевого клича"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Wrath has (48-54)% increased Aura Effect"
+	[tag]"name RU"		[value]"[крестоносца](48-54)% усиление эффекта ауры Грозного гнева"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Wrath has (28-33)% increased Aura Effect"
+	[tag]"name RU"		[value]"[крестоносца](28-33)% усиление эффекта ауры Грозного гнева"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Wrath has (55-60)% increased Aura Effect"
+	[tag]"name RU"		[value]"[крестоносца](55-60)% усиление эффекта ауры Грозного гнева"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Wrath has (34-40)% increased Aura Effect"
+	[tag]"name RU"		[value]"[крестоносца](34-40)% усиление эффекта ауры Грозного гнева"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Wrath has (40-50)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[крестоносца](40-50)% увеличение эффективности удержания маны Грозным гневом"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Zealotry has (28-33)% increased Aura Effect"
+	[tag]"name RU"		[value]"[крестоносца](28-33)% усиление эффекта ауры Фанатизма"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Zealotry has (48-54)% increased Aura Effect"
+	[tag]"name RU"		[value]"[крестоносца](48-54)% усиление эффекта ауры Фанатизма"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Zealotry has (34-40)% increased Aura Effect"
+	[tag]"name RU"		[value]"[крестоносца](34-40)% усиление эффекта ауры Фанатизма"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Zealotry has (55-60)% increased Aura Effect"
+	[tag]"name RU"		[value]"[крестоносца](55-60)% усиление эффекта ауры Фанатизма"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Crusade"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Crusade]Zealotry has (40-50)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[крестоносца](40-50)% увеличение эффективности удержания маны Фанатизмом"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (3-7) to (68-73) Lightning Damage against Shocked Enemies"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (3-7) до (68-73) урона от молнии по поражённым шоком врагам"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Crusader's"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Crusader's]Adds (4-8) to (82-86) Lightning Damage against Shocked Enemies"
+	[tag]"name RU"		[value]"[Крестовый]Добавляет от (4-8) до (82-86) урона от молнии по поражённым шоком врагам"
+
+	

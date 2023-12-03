@@ -1,0 +1,3052 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"IntimidatingCry"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Grants Level 22 Intimidating Cry Skill"
+	[tag]"name RU"		[value]"[Созданный]Дарует умение Устрашающий клич 22 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]5% increased Accuracy Rating per Frenzy Charge (20-25)% chance to gain a Frenzy Charge when you Block"
+	[tag]"name RU"		[value]"[изменения]5% повышение меткости за заряд ярости (20-25)% шанс получить заряд ярости при блоке"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Adds (1-2) to (3-4) Cold Damage to Attacks with this Weapon per 10 Dexterity"
+	[tag]"name RU"		[value]"[Созданный]Добавляет от (1-2) до (3-4) урона от холода к атакам этим оружием за каждые 10 ловкости"
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Adds (2-3) to (4-5) Cold Damage to Attacks with this Weapon per 10 Dexterity"
+	[tag]"name RU"		[value]"[Созданный]Добавляет от (2-3) до (4-5) урона от холода к атакам этим оружием за каждые 10 ловкости"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Adds (2-3) to (4-5) Fire Damage to Attacks with this Weapon per 10 Strength"
+	[tag]"name RU"		[value]"[Созданный]Добавляет от (2-3) до (4-5) урона от огня к атакам этим оружием за каждые 10 силы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Adds (1-2) to (3-4) Fire Damage to Attacks with this Weapon per 10 Strength"
+	[tag]"name RU"		[value]"[Созданный]Добавляет от (1-2) до (3-4) урона от огня к атакам этим оружием за каждые 10 силы"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Adds 1 to (7-8) Lightning Damage to Attacks with this Weapon per 10 Intelligence"
+	[tag]"name RU"		[value]"[Созданный]Добавляет от 1 до (7-8) урона от молнии к атакам этим оружием за каждые 10 интеллекта"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Adds 1 to (5-6) Lightning Damage to Attacks with this Weapon per 10 Intelligence"
+	[tag]"name RU"		[value]"[Созданный]Добавляет от 1 до (5-6) урона от молнии к атакам этим оружием за каждые 10 интеллекта"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Regenerate (3-5) Mana per second"
+	[tag]"name RU"		[value]"[изменения](3-5) регенерации маны в секунду"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Regenerate (6-8) Mana per second"
+	[tag]"name RU"		[value]"[изменения](6-8) регенерации маны в секунду"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](0.5-1)% to Spell Critical Strike Chance"
+	[tag]"name RU"		[value]"[изменения](0.5-1)% к шансу критического удара чарами"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](1.1-1.5)% to Spell Critical Strike Chance"
+	[tag]"name RU"		[value]"[изменения](1.1-1.5)% к шансу критического удара чарами"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Projectiles Pierce an additional Target"
+	[tag]"name RU"		[value]"[изменения]Снаряды пронзают дополнительную цель"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Projectiles Pierce 2 additional Targets"
+	[tag]"name RU"		[value]"[изменения]Снаряды пронзают 2 дополнительных цели(-ей)"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]+1 to maximum number of Summoned Totems"
+	[tag]"name RU"		[value]"[Созданный]+1 к максимальному количеству установленных тотемов"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 16 Increased Area of Effect (7-9)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Расширенной областью действия 16 уровня (7-9)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 18 Increased Area of Effect (10-12)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Расширенной областью действия 18 уровня (10-12)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 20 Increased Area of Effect (13-15)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Расширенной областью действия 20 уровня (13-15)% увеличение области действия"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](17-19)% increased Attack Speed (4-6)% chance to deal Double Damage"
+	[tag]"name RU"		[value]"[изменения](17-19)% повышение скорости атаки (4-6)% шанс нанести двойной урон"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](8-10)% increased Attack Speed (4-6)% chance to deal Double Damage"
+	[tag]"name RU"		[value]"[изменения](8-10)% повышение скорости атаки (4-6)% шанс нанести двойной урон"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](20-21)% increased Attack Speed (4-6)% chance to deal Double Damage"
+	[tag]"name RU"		[value]"[изменения](20-21)% повышение скорости атаки (4-6)% шанс нанести двойной урон"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](11-12)% increased Attack Speed (4-6)% chance to deal Double Damage"
+	[tag]"name RU"		[value]"[изменения](11-12)% повышение скорости атаки (4-6)% шанс нанести двойной урон"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](5-6)% chance to Blind Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[изменения](5-6)% шанс ослепить врагов при нанесении удара атаками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](5-6)% chance to Blind Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[Древнего](5-6)% шанс ослепить врагов при нанесении удара атаками"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](7-8)% chance to Blind Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[изменения](7-8)% шанс ослепить врагов при нанесении удара атаками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](9-10)% chance to Blind Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[изменения](9-10)% шанс ослепить врагов при нанесении удара атаками"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](31-35)% chance to Avoid Elemental Ailments"
+	[tag]"name RU"		[value]"[изменения](31-35)% шанс избежать стихийного состояния"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](15-20)% chance to Avoid interruption from Stuns while Casting"
+	[tag]"name RU"		[value]"[изменения](15-20)% шанс избежать прерывание от оглушения при сотворении чар"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](21-25)% chance to Avoid interruption from Stuns while Casting"
+	[tag]"name RU"		[value]"[изменения](21-25)% шанс избежать прерывание от оглушения при сотворении чар"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](26-30)% chance to Avoid interruption from Stuns while Casting"
+	[tag]"name RU"		[value]"[изменения](26-30)% шанс избежать прерывание от оглушения при сотворении чар"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are supported by Level 16 Blind (5-6)% Global chance to Blind Enemies on hit"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ослеплением 16 уровня (5-6)% глобальный шанс ослепить врага при нанесении удара"
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are supported by Level 18 Blind (7-8)% Global chance to Blind Enemies on hit"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ослеплением 18 уровня (7-8)% глобальный шанс ослепить врага при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are supported by Level 20 Blind (9-10)% Global chance to Blind Enemies on hit"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ослеплением 20 уровня (9-10)% глобальный шанс ослепить врага при нанесении удара"
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](2-4)% Chance to Block Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[изменения](2-4)% шанс блокировать урон от атак с парным оружием в руках"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](5-7)% Chance to Block Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[изменения](5-7)% шанс блокировать урон от атак с парным оружием в руках"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](8-9)% Chance to Block Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[изменения](8-9)% шанс блокировать урон от атак с парным оружием в руках"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Unaffected by Burning Ground"
+	[tag]"name RU"		[value]"[Созданный]Невосприимчивость к эффекту горящей земли"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](8-14)% increased Cast Speed during any Flask Effect"
+	[tag]"name RU"		[value]"[изменения](8-14)% повышение скорости сотворения чар во время действия эффекта любого флакона"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](6-9)% chance to avoid Projectiles"
+	[tag]"name RU"		[value]"[изменения](6-9)% шанс избежать снаряда"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](10-12)% chance to avoid Projectiles"
+	[tag]"name RU"		[value]"[изменения](10-12)% шанс избежать снаряда"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](25-40)% chance to Chill Attackers for 4 seconds on Block"
+	[tag]"name RU"		[value]"[изменения](25-40)% шанс наложить охлаждение на 4 секунды на атакующих врагов при блоке"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](41-50)% chance to Chill Attackers for 4 seconds on Block"
+	[tag]"name RU"		[value]"[изменения](41-50)% шанс наложить охлаждение на 4 секунды на атакующих врагов при блоке"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Adds (17-23) to (35-41) Cold Damage against Chilled or Frozen Enemies"
+	[tag]"name RU"		[value]"[Созданный]Добавляет от (17-23) до (35-41) урона от холода по охлаждённым или замороженным врагам"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Adds (20-26) to (41-48) Cold Damage against Chilled or Frozen Enemies"
+	[tag]"name RU"		[value]"[Созданный]Добавляет от (20-26) до (41-48) урона от холода по охлаждённым или замороженным врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Elemental Proliferation (5-7)% chance to Freeze, Shock and Ignite"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Разгулом стихий 18 уровня (5-7)% шанс наложить заморозку, шок и поджог"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Elemental Proliferation (8-10)% chance to Freeze, Shock and Ignite"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Разгулом стихий 20 уровня (8-10)% шанс наложить заморозку, шок и поджог"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Maim 15% chance to Maim on Hit"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Увечьем 18 уровня 15% шанс изувечить при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Maim 20% chance to Maim on Hit"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Увечьем 20 уровня 20% шанс изувечить при нанесении удара"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Adds (3-7) to (68-73) Lightning Damage against Shocked Enemies"
+	[tag]"name RU"		[value]"[Созданный]Добавляет от (3-7) до (68-73) урона от молнии по поражённым шоком врагам"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Adds (4-8) to (82-86) Lightning Damage against Shocked Enemies"
+	[tag]"name RU"		[value]"[Созданный]Добавляет от (4-8) до (82-86) урона от молнии по поражённым шоком врагам"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](25-40)% chance to Shock Attackers for 4 seconds on Block"
+	[tag]"name RU"		[value]"[изменения](25-40)% шанс наложить шок на атакующих на 4 секунды при блоке"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](41-50)% chance to Shock Attackers for 4 seconds on Block"
+	[tag]"name RU"		[value]"[изменения](41-50)% шанс наложить шок на атакующих на 4 секунды при блоке"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 16 Hypothermia (8-12)% increased Effect of Cold Ailments"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Переохлаждением 16 уровня (8-12)% усиление эффектов состояний холода"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Hypothermia (13-16)% increased Effect of Cold Ailments"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Переохлаждением 18 уровня (13-16)% усиление эффектов состояний холода"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Hypothermia (17-20)% increased Effect of Cold Ailments"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Переохлаждением 20 уровня (17-20)% усиление эффектов состояний холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Unaffected by Chilled Ground"
+	[tag]"name RU"		[value]"[Созданный]Невосприимчивость к эффекту замерзшей земли"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Grants Level 22 Clarity Skill"
+	[tag]"name RU"		[value]"[изменения]Дарует умение Ясность ума 22 уровня"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](0.3-0.5)% of Cold Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Созданный](0.3-0.5)% урона от холода похищается в виде здоровья"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](11-15)% to Cold Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[изменения](11-15)% к множителю постепенного урона от холода"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](16-20)% to Cold Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[изменения](16-20)% к множителю постепенного урона от холода"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 16 Cold Penetration (45-52)% increased Cold Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Пронизывающим холодом 16 уровня (45-52)% увеличение урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 18 Cold Penetration (53-56)% increased Cold Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Пронизывающим холодом 18 уровня (53-56)% увеличение урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 20 Cold Penetration (57-60)% increased Cold Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Пронизывающим холодом 20 уровня (57-60)% увеличение урона от холода"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](80-100)% increased Critical Strike Chance against Blinded Enemies"
+	[tag]"name RU"		[value]"[изменения](80-100)% повышение шанса критического удара по ослепленным врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](22-25)% to Global Critical Strike Multiplier (5-8)% chance to gain a Power Charge on Critical Strike"
+	[tag]"name RU"		[value]"[изменения](22-25)% к глобальному множителю критического удара (5-8)% шанс получить заряд энергии при нанесении критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](26-29)% to Global Critical Strike Multiplier (9-10)% chance to gain a Power Charge on Critical Strike"
+	[tag]"name RU"		[value]"[изменения](26-29)% к глобальному множителю критического удара (9-10)% шанс получить заряд энергии при нанесении критического удара"
+
+	
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](10-15)% increased Global Critical Strike Chance"
+	[tag]"name RU"		[value]"[изменения](10-15)% повышение глобального шанса критического удара"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](16-20)% increased Global Critical Strike Chance"
+	[tag]"name RU"		[value]"[изменения](16-20)% повышение глобального шанса критического удара"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](21-25)% increased Global Critical Strike Chance"
+	[tag]"name RU"		[value]"[изменения](21-25)% повышение глобального шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](80-100)% increased Critical Strike Chance if you have Killed Recently"
+	[tag]"name RU"		[value]"[изменения](80-100)% повышение шанса критического удара, если вы недавно совершали убийство"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](15-25)% to Global Critical Strike Multiplier (80-100)% increased Critical Strike Chance if you haven't dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[изменения](15-25)% к глобальному множителю критического удара (80-100)% повышение шанса критического удара, если вы недавно не наносили критический удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Increased Critical Strikes (60-74)% increased Critical Strike Chance for Spells"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Учащением критических ударов 18 уровня (60-74)% повышение шанса критического удара для чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Increased Critical Strikes (75-82)% increased Critical Strike Chance for Spells"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Учащением критических ударов 20 уровня (75-82)% повышение шанса критического удара для чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](60-74)% increased Critical Strike Chance for Spells 10% chance to gain a Power Charge on Critical Strike"
+	[tag]"name RU"		[value]"[изменения](60-74)% повышение шанса критического удара для чар 10% шанс получить заряд энергии при нанесении критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](75-82)% increased Critical Strike Chance for Spells 10% chance to gain a Power Charge on Critical Strike"
+	[tag]"name RU"		[value]"[изменения](75-82)% повышение шанса критического удара для чар 10% шанс получить заряд энергии при нанесении критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Increased Critical Strikes (22-25)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Учащением критических ударов 18 уровня (22-25)% повышение шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Increased Critical Strikes (26-29)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Учащением критических ударов 20 уровня (26-29)% повышение шанса критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](22-25)% increased Critical Strike Chance 50% increased Critical Strike Chance if you have Killed Recently"
+	[tag]"name RU"		[value]"[изменения](22-25)% повышение шанса критического удара 50% повышение шанса критического удара, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](26-29)% increased Critical Strike Chance 50% increased Critical Strike Chance if you have Killed Recently"
+	[tag]"name RU"		[value]"[изменения](26-29)% повышение шанса критического удара 50% повышение шанса критического удара, если вы недавно совершали убийство"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](50-60)% to Critical Strike Multiplier against Enemies that are on Full Life"
+	[tag]"name RU"		[value]"[изменения](50-60)% к множителю критического удара по врагам с полным здоровьем"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]+5% Chance to Block Attack Damage while wielding a Staff (35-45)% to Critical Strike Multiplier if you have Blocked Recently"
+	[tag]"name RU"		[value]"[изменения]+5% шанс блокировать урон от атак с посохом в руках (35-45)% к множителю критического удара, если вы недавно блокировали удар"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]1% increased Damage per 15 Dexterity"
+	[tag]"name RU"		[value]"[Созданный]1% увеличение урона за каждые 15 ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]1% increased Damage per 15 Intelligence"
+	[tag]"name RU"		[value]"[Созданный]1% увеличение урона за каждые 15 интеллекта"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Grants Level 20 Decoy Totem Skill"
+	[tag]"name RU"		[value]"[изменения]Дарует умение Тотем-приманка 20 уровня"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Grants Level 22 Determination Skill"
+	[tag]"name RU"		[value]"[изменения]Дарует умение Решимость 22 уровня"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Grants Level 22 Discipline Skill"
+	[tag]"name RU"		[value]"[изменения]Дарует умение Дисциплина 22 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Movement Skills Cost no Mana"
+	[tag]"name RU"		[value]"[изменения]Размещенные умения движения не расходуют ману"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems have 20% increased Reservation Efficiency"
+	[tag]"name RU"		[value]"[изменения]Размещенные камни имеют 20% увеличение эффективности удержания ресурсов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems have 30% increased Reservation Efficiency"
+	[tag]"name RU"		[value]"[изменения]Размещенные камни имеют 30% увеличение эффективности удержания ресурсов"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems Chain 1 additional times"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни поражают целей по цепи: 1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 15 Mana Leech"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Вытягиванием маны 15 уровня"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](11-15)% increased Elemental Damage"
+	[tag]"name RU"		[value]"[Созданный](11-15)% увеличение урона от стихий"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](16-20)% increased Elemental Damage"
+	[tag]"name RU"		[value]"[Созданный](16-20)% увеличение урона от стихий"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](21-25)% increased Elemental Damage"
+	[tag]"name RU"		[value]"[Созданный](21-25)% увеличение урона от стихий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (5-6)% of Elemental Damage as Extra Chaos Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (5-6)% от урона от стихий в виде дополнительного урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (10-12)% of Elemental Damage as Extra Chaos Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (10-12)% от урона от стихий в виде дополнительного урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (7-8)% of Elemental Damage as Extra Chaos Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (7-8)% от урона от стихий в виде дополнительного урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (13-15)% of Elemental Damage as Extra Chaos Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (13-15)% от урона от стихий в виде дополнительного урона хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 16 Elemental Focus (45-52)% increased Elemental Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Концентрацией стихий 16 уровня (45-52)% увеличение урона от стихий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 18 Elemental Focus (53-56)% increased Elemental Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Концентрацией стихий 18 уровня (53-56)% увеличение урона от стихий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 20 Elemental Focus (57-60)% increased Elemental Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Концентрацией стихий 20 уровня (57-60)% увеличение урона от стихий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Damage Penetrates (7-8)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Созданный]Урон пробивает (7-8)% сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Damage Penetrates (4-7)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Созданный]Урон пробивает (4-7)% сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Damage Penetrates 4% Elemental Resistances"
+	[tag]"name RU"		[value]"[Созданный]Урон пробивает 4% сопротивления стихиям"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Damage Penetrates 5% Elemental Resistances"
+	[tag]"name RU"		[value]"[Созданный]Урон пробивает 5% сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Damage Penetrates (9-10)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Созданный]Урон пробивает (9-10)% сопротивления стихиям"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Damage Penetrates (11-12)% Elemental Resistances"
+	[tag]"name RU"		[value]"[Созданный]Урон пробивает (11-12)% сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Damage Penetrates 6% Elemental Resistances"
+	[tag]"name RU"		[value]"[Созданный]Урон пробивает 6% сопротивления стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Enemies Killed with Attack or Spell Hits Explode, dealing 5% of their Life as Fire Damage"
+	[tag]"name RU"		[value]"[изменения]Убитые ударами от атак или чар враги взрываются, нанося 5% от их здоровья в виде урона от огня"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Enemies have 20% reduced Evasion if you have Hit them Recently"
+	[tag]"name RU"		[value]"[изменения]Враги имеют 20% уменьшение уклонения, если вы недавно наносили по ним удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](7-9)% increased Energy Shield Recovery rate"
+	[tag]"name RU"		[value]"[изменения](7-9)% повышение скорости восстановления энергетического щита"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](10-12)% increased Energy Shield Recovery rate"
+	[tag]"name RU"		[value]"[изменения](10-12)% повышение скорости восстановления энергетического щита"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](2-3)% increased Experience gain"
+	[tag]"name RU"		[value]"[Созданный](2-3)% увеличение получаемого опыта"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](11-15)% to Fire Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[изменения](11-15)% к множителю постепенного урона от огня"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](16-20)% to Fire Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[изменения](16-20)% к множителю постепенного урона от огня"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](4-6)% chance to gain a Frenzy Charge on Kill"
+	[tag]"name RU"		[value]"[Созданный](4-6)% шанс получить заряд ярости при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](7-10)% chance to gain a Frenzy Charge on Kill"
+	[tag]"name RU"		[value]"[Созданный](7-10)% шанс получить заряд ярости при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](15-20)% increased Critical Strike Chance (5-10)% chance to gain an Endurance Charge on Critical Strike"
+	[tag]"name RU"		[value]"[изменения](15-20)% повышение шанса критического удара (5-10)% шанс получить заряд выносливости при нанесении критического удара"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](15-30)% chance to gain an Endurance Charge when you Taunt an Enemy"
+	[tag]"name RU"		[value]"[изменения](15-30)% шанс получить заряд выносливости, когда вы провоцируете врага"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Melee Hits which Stun have (10-20)% chance to Fortify"
+	[tag]"name RU"		[value]"[изменения]Оглушающие удары в ближнем бою с (10-20)% шансом могут наложить Укрепление"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Gain an Endurance, Frenzy or Power charge when you Block"
+	[tag]"name RU"		[value]"[изменения]Дарует заряд выносливости, ярости или энергии при блоке"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](10-15)% increased Cooldown Recovery Rate"
+	[tag]"name RU"		[value]"[изменения](10-15)% повышение скорости перезарядки умений"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](10-15)% increased Cooldown Recovery Rate"
+	[tag]"name RU"		[value]"[изменения](10-15)% повышение скорости перезарядки умений"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](16-20)% increased Cooldown Recovery Rate"
+	[tag]"name RU"		[value]"[изменения](16-20)% повышение скорости перезарядки умений"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Items and Gems have (10-5)% reduced Attribute Requirements"
+	[tag]"name RU"		[value]"[изменения]Предметы и камни имеют (10-5)% понижение требований к характеристикам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Items and Gems have (15-11)% reduced Attribute Requirements"
+	[tag]"name RU"		[value]"[изменения]Предметы и камни имеют (15-11)% понижение требований к характеристикам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Attacks have 15% chance to Maim on Hit"
+	[tag]"name RU"		[value]"[изменения]Атаки имеют 15% шанс изувечить при нанесении удара"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Attacks have 20% chance to Maim on Hit"
+	[tag]"name RU"		[value]"[изменения]Атаки имеют 20% шанс изувечить при нанесении удара"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Grants Level 22 Grace Skill"
+	[tag]"name RU"		[value]"[изменения]Дарует умение Грация 22 уровня"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Grants Level 22 Haste Skill"
+	[tag]"name RU"		[value]"[изменения]Дарует умение Спешка 22 уровня"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Grants Level 22 Herald of Ice Skill"
+	[tag]"name RU"		[value]"[изменения]Дарует умение Вестник льда 22 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Grants Level 22 Herald of Thunder Skill"
+	[tag]"name RU"		[value]"[изменения]Дарует умение Вестник грома 22 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Faster Casting (15-17)% increased Cast Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ускоренным сотворением чар 18 уровня (15-17)% повышение скорости сотворения чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Faster Casting (18-20)% increased Cast Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ускоренным сотворением чар 20 уровня (18-20)% повышение скорости сотворения чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 16 Faster Casting (7-9)% increased Cast Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ускоренным сотворением чар 16 уровня (7-9)% повышение скорости сотворения чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Faster Casting (10-12)% increased Cast Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ускоренным сотворением чар 18 уровня (10-12)% повышение скорости сотворения чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Faster Casting (13-14)% increased Cast Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ускоренным сотворением чар 20 уровня (13-14)% повышение скорости сотворения чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](15-17)% increased Cast Speed 20% increased Cast Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[изменения](15-17)% повышение скорости сотворения чар 20% повышение скорости сотворения чар, если недавно вы совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](18-20)% increased Cast Speed 20% increased Cast Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[изменения](18-20)% повышение скорости сотворения чар 20% повышение скорости сотворения чар, если недавно вы совершали убийство"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]+1 to Maximum Power Charges"
+	[tag]"name RU"		[value]"[изменения]+1 к максимуму зарядов энергии"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are supported by Level 18 Elemental Damage with Attacks (28-32)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Уроном от стихий атаками 18 уровня (28-32)% увеличение урона от стихий от умений атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are supported by Level 20 Elemental Damage with Attacks (33-37)% increased Elemental Damage with Attack Skills"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Уроном от стихий атаками 20 уровня (33-37)% увеличение урона от стихий от умений атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](4-7)% increased Quantity of Items found"
+	[tag]"name RU"		[value]"[изменения](4-7)% увеличение количества найденных предметов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](8-10)% increased Quantity of Items found"
+	[tag]"name RU"		[value]"[изменения](8-10)% увеличение количества найденных предметов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (8-12) Life per Enemy Hit with Spells"
+	[tag]"name RU"		[value]"[Созданный](8-12) здоровья за каждый удар чарами по врагу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (13-15) Life per Enemy Hit with Spells"
+	[tag]"name RU"		[value]"[Созданный](13-15) здоровья за каждый удар чарами по врагу"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](0.3-0.5)% of Lightning Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Созданный](0.3-0.5)% урона от молнии похищается в виде здоровья"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 16 Lightning Penetration (45-52)% increased Lightning Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Пронизывающими молниями 16 уровня (45-52)% увеличение урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 18 Lightning Penetration (53-56)% increased Lightning Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Пронизывающими молниями 18 уровня (53-56)% увеличение урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 20 Lightning Penetration (57-60)% increased Lightning Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Пронизывающими молниями 20 уровня (57-60)% увеличение урона от молнии"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]+1 to Level of Socketed Active Skill Gems"
+	[tag]"name RU"		[value]"[Созданный]+1 к уровню размещённых камней активных умений"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Faster Attacks (8-10)% increased Attack Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ускорением атак 18 уровня (8-10)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Faster Attacks (17-19)% increased Attack Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ускорением атак 18 уровня (17-19)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Faster Attacks (11-12)% increased Attack Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ускорением атак 20 уровня (11-12)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Faster Attacks (20-21)% increased Attack Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ускорением атак 20 уровня (20-21)% повышение скорости атаки"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 16 Added Fire Damage (101-115)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Уроном огнем 16 уровня (101-115)% увеличение физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 18 Added Fire Damage (116-126)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Уроном огнем 18 уровня (116-126)% увеличение физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 20 Added Fire Damage (127-134)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Уроном огнем 20 уровня (127-134)% увеличение физического урона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (2-3) Mana per Enemy Hit with Attacks"
+	[tag]"name RU"		[value]"[Созданный]Дарует (2-3) маны за каждого пораженного атаками врага"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (2-3) Mana per Enemy Hit with Spells"
+	[tag]"name RU"		[value]"[Созданный]Дарует (2-3) маны за каждого пораженного чарами врага"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](7-9)% increased Mana Recovery rate"
+	[tag]"name RU"		[value]"[изменения](7-9)% повышение скорости восстановления маны"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](10-12)% increased Mana Recovery rate"
+	[tag]"name RU"		[value]"[изменения](10-12)% повышение скорости восстановления маны"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](41-55)% increased Mana Regeneration Rate"
+	[tag]"name RU"		[value]"[изменения](41-55)% повышение скорости регенерации маны"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](56-70)% increased Mana Regeneration Rate"
+	[tag]"name RU"		[value]"[изменения](56-70)% повышение скорости регенерации маны"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](6-10)% increased Mana Reservation Efficiency of Skills"
+	[tag]"name RU"		[value]"[изменения](6-10)% увеличение эффективности удержания маны умениями"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]+2% to maximum Chance to Block Attack Damage"
+	[tag]"name RU"		[value]"[изменения]+2% к максимальному шансу блокировать урон от атак"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]+1 to Maximum Endurance Charges"
+	[tag]"name RU"		[value]"[изменения]+1 к максимуму зарядов выносливости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](21-25)% increased Energy Shield from Body Armour"
+	[tag]"name RU"		[value]"[Созданный](21-25)% увеличение энергетического щита от нательного доспеха"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](26-30)% increased Energy Shield from Body Armour"
+	[tag]"name RU"		[value]"[Созданный](26-30)% увеличение энергетического щита от нательного доспеха"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Recover (3-4)% of Energy Shield on Kill"
+	[tag]"name RU"		[value]"[изменения]Восстанавливает (3-4)% энергетического щита при убийстве"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Recover (5-6)% of Energy Shield on Kill"
+	[tag]"name RU"		[value]"[изменения]Восстанавливает (5-6)% энергетического щита при убийстве"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]+1 to Maximum Frenzy Charges"
+	[tag]"name RU"		[value]"[изменения]+1 к максимуму зарядов ярости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](9-11)% increased maximum Mana"
+	[tag]"name RU"		[value]"[Созданный](9-11)% увеличение максимума маны"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](12-15)% increased maximum Mana"
+	[tag]"name RU"		[value]"[Созданный](12-15)% увеличение максимума маны"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Recover (3-4)% of Mana on Kill"
+	[tag]"name RU"		[value]"[изменения]Восстанавливает (3-4)% маны при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Recover (5-6)% of Mana on Kill"
+	[tag]"name RU"		[value]"[изменения]Восстанавливает (5-6)% маны при убийстве"
+
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Blastchain Mine (20-25)% increased Mine Damage"
+	[tag]"name RU"		[value]"[изменения]Размещенные камни усилены Цепным подрывом 18 уровня (20-25)% увеличение урона от мин"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Blastchain Mine (26-30)% increased Mine Damage"
+	[tag]"name RU"		[value]"[изменения]Размещенные камни усилены Цепным подрывом 20 уровня (26-30)% увеличение урона от мин"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 22 Blastchain Mine (31-35)% increased Mine Damage"
+	[tag]"name RU"		[value]"[изменения]Размещенные камни усилены Цепным подрывом 22 уровня (31-35)% увеличение урона от мин"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 16 Trap And Mine Damage (20-25)% increased Mine Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Уроном ловушек и мин 16 уровня (20-25)% увеличение урона от мин"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Trap And Mine Damage (26-30)% increased Mine Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Уроном ловушек и мин 18 уровня (26-30)% увеличение урона от мин"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Trap And Mine Damage (31-35)% increased Mine Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Уроном ловушек и мин 20 уровня (31-35)% увеличение урона от мин"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Hits with Melee Movement Skills have (30-50)% chance to Fortify"
+	[tag]"name RU"		[value]"[изменения]Удары умениями передвижения ближнего боя имеют (30-50)% шанс Укрепления"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](6-10)% increased Movement Speed during any Flask Effect"
+	[tag]"name RU"		[value]"[изменения](6-10)% повышение скорости передвижения во время действия эффекта любого флакона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](4-6)% increased Movement Speed"
+	[tag]"name RU"		[value]"[Созданный](4-6)% повышение скорости передвижения"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](3-6)% increased Movement Speed"
+	[tag]"name RU"		[value]"[Созданный](3-6)% повышение скорости передвижения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](3-6)% increased Movement Speed"
+	[tag]"name RU"		[value]"[изменения](3-6)% повышение скорости передвижения"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](7-10)% increased Movement Speed"
+	[tag]"name RU"		[value]"[Созданный](7-10)% повышение скорости передвижения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](7-10)% increased Movement Speed"
+	[tag]"name RU"		[value]"[изменения](7-10)% повышение скорости передвижения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](7-8)% increased Movement Speed"
+	[tag]"name RU"		[value]"[Созданный](7-8)% повышение скорости передвижения"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Nearby Enemies take 6% increased Elemental Damage"
+	[tag]"name RU"		[value]"[изменения]Ближайшие враги получают увеличенный на 6% урон от стихий"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](5-6)% chance to gain Onslaught for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[изменения](5-6)% шанс получить эффект Боевой раж на 4 секунды при убийстве"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](7-8)% chance to gain Onslaught for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[изменения](7-8)% шанс получить эффект Боевой раж на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](9-10)% chance to gain Onslaught for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[изменения](9-10)% шанс получить эффект Боевой раж на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](6-9)% increased Attributes"
+	[tag]"name RU"		[value]"[изменения](6-9)% увеличение характеристик"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](5-8)% increased Intelligence"
+	[tag]"name RU"		[value]"[изменения](5-8)% повышение интеллекта"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](9-12)% increased Intelligence"
+	[tag]"name RU"		[value]"[изменения](9-12)% повышение интеллекта"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (7-12)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (7-12)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (5-10)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (5-10)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (8-11)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (8-11)% от физического урона в виде дополнительного урона от холода"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (11-15)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (11-15)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (13-17)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (13-17)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (12-15)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (12-15)% от физического урона в виде дополнительного урона от холода"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (18-20)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (18-20)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (7-12)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (7-12)% от физического урона в виде дополнительного урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (13-17)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (13-17)% от физического урона в виде дополнительного урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (18-20)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (18-20)% от физического урона в виде дополнительного урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (7-12)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (7-12)% от физического урона в виде дополнительного урона от молнии"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (8-11)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (8-11)% от физического урона в виде дополнительного урона от молнии"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (12-15)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (12-15)% от физического урона в виде дополнительного урона от молнии"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (13-17)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (13-17)% от физического урона в виде дополнительного урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Gain (18-20)% of Physical Damage as Extra Lightning Damage"
+	[tag]"name RU"		[value]"[Созданный]Дарует (18-20)% от физического урона в виде дополнительного урона от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](-35--25) Physical Damage taken from Attack Hits"
+	[tag]"name RU"		[value]"[изменения](-35--25) входящего физического урона при получении удара от атак"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](-45--36) Physical Damage taken from Attack Hits"
+	[tag]"name RU"		[value]"[изменения](-45--36) входящего физического урона при получении удара от атак"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Gain (7-9)% of Physical Damage as Extra Damage of a random Element"
+	[tag]"name RU"		[value]"[изменения]Дарует (7-9)% физического урона в виде дополнительного урона от случайной стихии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Gain (10-12)% of Physical Damage as Extra Damage of a random Element"
+	[tag]"name RU"		[value]"[изменения]Дарует (10-12)% физического урона в виде дополнительного урона от случайной стихии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Gain (13-15)% of Physical Damage as Extra Damage of a random Element"
+	[tag]"name RU"		[value]"[изменения]Дарует (13-15)% физического урона в виде дополнительного урона от случайной стихии"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](5-10)% of Physical Damage from Hits taken as Cold Damage"
+	[tag]"name RU"		[value]"[Созданный](5-10)% получаемого физического урона от ударов становится уроном от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](11-15)% of Physical Damage from Hits taken as Cold Damage"
+	[tag]"name RU"		[value]"[Созданный](11-15)% получаемого физического урона от ударов становится уроном от холода"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](5-10)% of Physical Damage from Hits taken as Lightning Damage"
+	[tag]"name RU"		[value]"[Созданный](5-10)% получаемого физического урона от ударов становится уроном от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](11-15)% of Physical Damage from Hits taken as Lightning Damage"
+	[tag]"name RU"		[value]"[Созданный](11-15)% получаемого физического урона от ударов становится уроном от молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Chance to Poison (19-23)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[изменения]Размещенные камни усилены Шансом отравить 18 уровня (19-23)% увеличение урона от яда"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Chance to Poison (24-26)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[изменения]Размещенные камни усилены Шансом отравить 20 уровня (24-26)% увеличение урона от яда"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](4-6)% chance to gain a Power Charge on Kill"
+	[tag]"name RU"		[value]"[Созданный](4-6)% шанс получить заряд энергии при убийстве"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's](7-10)% chance to gain a Power Charge on Kill"
+	[tag]"name RU"		[value]"[Созданный](7-10)% шанс получить заряд энергии при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Gain a Power Charge after Spending a total of 200 Mana"
+	[tag]"name RU"		[value]"[изменения]Дарует заряд энергии после расхода 200 маны"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](3-6)% chance to gain a Power, Frenzy or Endurance Charge on Kill"
+	[tag]"name RU"		[value]"[изменения](3-6)% шанс получить заряд энергии, ярости или выносливости при убийстве"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](7-10)% chance to gain a Power, Frenzy or Endurance Charge on Kill"
+	[tag]"name RU"		[value]"[изменения](7-10)% шанс получить заряд энергии, ярости или выносливости при убийстве"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Projectiles deal (20-30)% increased Damage for each Enemy Pierced"
+	[tag]"name RU"		[value]"[изменения]Снаряды наносят увеличенный на (20-30)% урон за каждого пронзённого врага"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 16 Slower Projectiles (15-18)% increased Projectile Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Замедленными снарядами 16 уровня (15-18)% увеличение урона снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 18 Slower Projectiles (19-22)% increased Projectile Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Замедленными снарядами 18 уровня (19-22)% увеличение урона снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 20 Slower Projectiles (23-25)% increased Projectile Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Замедленными снарядами 20 уровня (23-25)% увеличение урона снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Recover (3-5)% of Energy Shield when you Block"
+	[tag]"name RU"		[value]"[изменения]Восстанавливает (3-5)% энергетического щита при блоке"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Recover (3-5)% of Life when you Block"
+	[tag]"name RU"		[value]"[изменения]Восстанавливает (3-5)% здоровья при блоке"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Recover (3-5)% of your maximum Mana when you Block"
+	[tag]"name RU"		[value]"[изменения]Восстанавливает (3-5)% от вашего максимума маны при блоке"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](40-35)% reduced Effect of Curses on you"
+	[tag]"name RU"		[value]"[изменения](40-35)% ослабление эффектов проклятий на вас"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]You and your Minions take 100% reduced Reflected Elemental Damage"
+	[tag]"name RU"		[value]"[Созданный]Вы и ваши приспешники получаете уменьшенный на 100% отраженный урон от стихий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]You and your Minions take (45-31)% reduced Reflected Elemental Damage"
+	[tag]"name RU"		[value]"[Созданный]Вы и ваши приспешники получаете уменьшенный на (45-31)% отраженный урон от стихий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]You and your Minions take (55-46)% reduced Reflected Elemental Damage"
+	[tag]"name RU"		[value]"[Созданный]Вы и ваши приспешники получаете уменьшенный на (55-46)% отраженный урон от стихий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Remove Chill and Freeze when you use a Flask"
+	[tag]"name RU"		[value]"[изменения]Снимает охлаждение и заморозку при использовании флакона"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Remove Shock when you use a Flask"
+	[tag]"name RU"		[value]"[изменения]Снимает шок при использовании флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 16 Innervate (8-12)% increased Effect of Lightning Ailments"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Возбуждением 16 уровня (8-12)% усиление эффектов состояний молнии"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Innervate (13-16)% increased Effect of Lightning Ailments"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Возбуждением 18 уровня (13-16)% усиление эффектов состояний молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Innervate (17-20)% increased Effect of Lightning Ailments"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Возбуждением 20 уровня (17-20)% усиление эффектов состояний молнии"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Skills deal 20% more Attack Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые умения наносят на 20% больше урона от атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Skills deal 40% more Attack Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые умения наносят на 40% больше урона от атак"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Spells have +30% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[изменения]+30% к множителю критического удара размещённых чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Spells have +50% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[изменения]+50% к множителю критического удара размещённых чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Spells have +70% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[изменения]+70% к множителю критического удара размещённых чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Spells have +1% to Critical Strike Chance"
+	[tag]"name RU"		[value]"[изменения]+1% к шансу критического удара размещённых чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Spells have +2% to Critical Strike Chance"
+	[tag]"name RU"		[value]"[изменения]+2% к шансу критического удара размещённых чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Spells have +3% to Critical Strike Chance"
+	[tag]"name RU"		[value]"[изменения]+3% к шансу критического удара размещённых чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Skills deal 20% more Spell Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые умения наносят на 20% больше урона от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Skills deal 40% more Spell Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые умения наносят на 40% больше урона от чар"
+
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](4-5)% Chance to Block Spell Damage"
+	[tag]"name RU"		[value]"[изменения](4-5)% шанс блокировать урон от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](6-7)% Chance to Block Spell Damage"
+	[tag]"name RU"		[value]"[изменения](6-7)% шанс блокировать урон от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](20-25)% increased Spell Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[изменения](20-25)% увеличение урона от чар во время действия эффекта любого флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](26-30)% increased Spell Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[изменения](26-30)% увеличение урона от чар во время действия эффекта любого флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](31-35)% increased Spell Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[изменения](31-35)% увеличение урона от чар во время действия эффекта любого флакона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping](20-30)% reduced Enemy Stun Threshold (20-30)% increased Stun Duration on Enemies"
+	[tag]"name RU"		[value]"[изменения](20-30)% снижение порога оглушения врагов (20-30)% увеличение длительности оглушения на врагах"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 1 Arcane Surge"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Колдовским выбросом 1 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are supported by Level 18 Cast On Critical Strike"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Сотворением чар при критическом ударе 18 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are supported by Level 20 Cast On Critical Strike"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Сотворением чар при критическом ударе 20 уровня"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 18 Cast On Melee Kill"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Сотворением чар при убийстве в ближнем бою 18 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 20 Cast On Melee Kill"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Сотворением чар при убийстве в ближнем бою 20 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 18 Cast While Channelling"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Сотворением чар при поддержании 18 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 20 Cast While Channelling"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Сотворением чар при поддержании 20 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 10 Item Rarity (8-12)% increased Rarity of Items found from Slain Unique Enemies"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Редкостью предметов 10 уровня (8-12)% повышение редкости предметов, выпадающих из убитых уникальных врагов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 15 Item Rarity (13-18)% increased Rarity of Items found from Slain Unique Enemies"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Редкостью предметов 15 уровня (13-18)% повышение редкости предметов, выпадающих из убитых уникальных врагов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are supported by Level 15 Life Leech"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Похищением здоровья 15 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are supported by Level 16 Melee Splash (23-27)% increased Area Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Раскатистым ударом 16 уровня (23-27)% увеличение урона по области"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are supported by Level 18 Melee Splash (28-32)% increased Area Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Раскатистым ударом 18 уровня (28-32)% увеличение урона по области"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are supported by Level 20 Melee Splash (33-37)% increased Area Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Раскатистым ударом 20 уровня (33-37)% увеличение урона по области"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 16 Spell Cascade (5-8)% increased Area of Effect"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Каскадом чар 16 уровня (5-8)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Spell Cascade (9-12)% increased Area of Effect"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Каскадом чар 18 уровня (9-12)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Spell Cascade (13-15)% increased Area of Effect"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Каскадом чар 20 уровня (13-15)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 16 Volley (15-18)% increased Projectile Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камени усилены Залпом 16 уровня (15-18)% повышение скорости снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Volley (19-22)% increased Projectile Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камени усилены Залпом 18 уровня (19-22)% повышение скорости снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Volley (23-25)% increased Projectile Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камени усилены Залпом 20 уровня (23-25)% повышение скорости снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Ballista Totem (20-25)% increased Totem Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Тотемом-баллистой 18 уровня (20-25)% увеличение урона тотемов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Ballista Totem (26-30)% increased Totem Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Тотемом-баллистой 20 уровня (26-30)% увеличение урона тотемов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 22 Ballista Totem (31-35)% increased Totem Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Тотемом-баллистой 22 уровня (31-35)% увеличение урона тотемов"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Ballista Totem (8-12)% increased Totem Placement speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Тотемом-баллистой 18 уровня (8-12)% повышение скорости установки тотемов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Ballista Totem (13-16)% increased Totem Placement speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Тотемом-баллистой 20 уровня (13-16)% повышение скорости установки тотемов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 22 Ballista Totem (17-20)% increased Totem Placement speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Тотемом-баллистой 22 уровня (17-20)% повышение скорости установки тотемов"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 16 Advanced Traps (20-25)% increased Trap Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Улучшенными ловушками 16 уровня (20-25)% увеличение урона от ловушек"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Advanced Traps (26-30)% increased Trap Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Улучшенными ловушками 18 уровня (26-30)% увеличение урона от ловушек"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Advanced Traps (31-35)% increased Trap Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Улучшенными ловушками 20 уровня (31-35)% увеличение урона от ловушек"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 16 Trap And Mine Damage (20-25)% increased Trap Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Уроном ловушек и мин 16 уровня (20-25)% увеличение урона от ловушек"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Trap And Mine Damage (26-30)% increased Trap Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Уроном ловушек и мин 18 уровня (26-30)% увеличение урона от ловушек"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Trap And Mine Damage (31-35)% increased Trap Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Уроном ловушек и мин 20 уровня (31-35)% увеличение урона от ловушек"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Trap (20-25)% increased Trap Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ловушкой 18 уровня (20-25)% увеличение урона от ловушек"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Trap (26-30)% increased Trap Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ловушкой 20 уровня (26-30)% увеличение урона от ловушек"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 22 Trap (31-35)% increased Trap Damage"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Ловушкой 22 уровня (31-35)% увеличение урона от ловушек"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 16 Advanced Traps (8-12)% increased Trap Throwing Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Улучшенными ловушками 16 уровня (8-12)% повышение скорости броска ловушки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 18 Advanced Traps (13-16)% increased Trap Throwing Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Улучшенными ловушками 18 уровня (13-16)% повышение скорости броска ловушки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Socketed Gems are Supported by Level 20 Advanced Traps (17-20)% increased Trap Throwing Speed"
+	[tag]"name RU"		[value]"[изменения]Размещённые камни усилены Улучшенными ловушками 20 уровня (17-20)% повышение скорости броска ловушки"
+
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Shaping"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Shaping]Grants Level 22 Vitality Skill"
+	[tag]"name RU"		[value]"[изменения]Дарует умение Живучесть 22 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 16 Controlled Destruction (45-52)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Контролируемым разрушением 16 уровня (45-52)% увеличение урона от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 18 Controlled Destruction (53-56)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Контролируемым разрушением 18 уровня (53-56)% увеличение урона от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Shaper's"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Shaper's]Socketed Gems are Supported by Level 20 Controlled Destruction (57-60)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Созданный]Размещённые камни усилены Контролируемым разрушением 20 уровня (57-60)% увеличение урона от чар"
+
+	
+	
+
+

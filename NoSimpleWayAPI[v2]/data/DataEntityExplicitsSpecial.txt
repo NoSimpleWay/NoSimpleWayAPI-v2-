@@ -1,0 +1,548 @@
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"veiled"
+	[tag]"base name"	[value]"Chosen"
+
+	[tag]"name EN"		[value]"[Chosen]Veiled modifier"
+	[tag]"name RU"		[value]"[Избранный]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"veiled"
+	[tag]"base name"	[value]"of the Order"
+	
+	[tag]"name EN"		[value]"[of the Order]Veiled modifier"
+	[tag]"name RU"		[value]"[Ордена]Завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"catarina"
+	[tag]"base name"	[value]"Catarina's"
+
+	[tag]"name EN"		[value]"[Catarina's]Veiled modifier"
+	[tag]"name RU"		[value]"[Усиленный Катариной]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"catarina"
+	[tag]"base name"	[value]"Catarina's Veiled"
+
+	[tag]"name EN"		[value]"[Catarina's Veiled]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Катарины]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"elreon"
+	[tag]"base name"	[value]"Elreon's"
+
+	[tag]"name EN"		[value]"[Elreon's]Veiled modifier"
+	[tag]"name RU"		[value]"[Усиленный Элреоном]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"elreon"
+	[tag]"base name"	[value]"Elreon's Veiled"
+
+	[tag]"name EN"		[value]"[Elreon's Veiled]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Элреона]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"gravicius"
+	[tag]"base name"	[value]"Gravicius'"
+
+	[tag]"name EN"		[value]"[Gravicius']Veiled modifier"
+	[tag]"name RU"		[value]"[Усиленный Гравицием]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"gravicius"
+	[tag]"base name"	[value]"Gravicius' Veiled"
+
+	[tag]"name EN"		[value]"[Gravicius' Veiled]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Гравицием]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"haku"
+	[tag]"base name"	[value]"Haku's"
+
+	[tag]"name EN"		[value]"[Haku's]Veiled modifier"
+	[tag]"name RU"		[value]"[Усиленный Хаку]Завуалированное свойство"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"haku"
+	[tag]"base name"	[value]"Haku's Veiled"
+
+	[tag]"name EN"		[value]"[Haku's Veiled]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Хаку]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"it"
+	[tag]"base name"	[value]"It's"
+
+	[tag]"name EN"		[value]"[It's]Veiled modifier"
+	[tag]"name RU"		[value]"[Того что сбежало]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"it"
+	[tag]"base name"	[value]"It That Fled's Veiled"
+
+	[tag]"name EN"		[value]"[It That Fled's Veiled]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Того что сбежало]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"jorgin"
+	[tag]"base name"	[value]"Jorgin's"
+
+	[tag]"name EN"		[value]"[Jorgin's]Veiled modifier"
+	[tag]"name RU"		[value]"[Йоргина]Завуалированное свойство"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"jorgin"
+	[tag]"base name"	[value]"of Jorgin's Veil"
+
+	[tag]"name EN"		[value]"[of Jorgin's Veil]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Йоргина]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"korell"
+	[tag]"base name"	[value]"Korell's"
+
+	[tag]"name EN"		[value]"[Korell's]Veiled modifier"
+	[tag]"name RU"		[value]"[Усиленный Кореллом]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"korell"
+	[tag]"base name"	[value]"Korell's Veiled"
+
+	[tag]"name EN"		[value]"[Korell's Veiled]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Кореллом]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"leo"
+	[tag]"base name"	[value]"Leo's"
+
+	[tag]"name EN"		[value]"[Leo's]Veiled modifier"
+	[tag]"name RU"		[value]"[Усиленный Лео]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"leo"
+	[tag]"base name"	[value]"Leo's Veiled"
+
+	[tag]"name EN"		[value]"[Leo's Veiled]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Лео]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"aisling"
+	[tag]"base name"	[value]"of Aisling"
+
+	[tag]"name EN"		[value]"[of Aisling]Veiled modifier"
+	[tag]"name RU"		[value]"[Ашлинг]Завуалированное свойство"
+	[tag]"Fuck you"		[value]"Thank's for ruining my stuff"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"aisling"
+	[tag]"base name"	[value]"of Aisling's Veil"
+
+	[tag]"name EN"		[value]"[of Aisling's Veil]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Ашлинг]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"cameria"
+	[tag]"base name"	[value]"of Cameria"
+
+	[tag]"name EN"		[value]"[of Cameria]Veiled modifier"
+	[tag]"name RU"		[value]"[Камерии]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"cameria"
+	[tag]"base name"	[value]"of Cameria's Veil"
+
+	[tag]"name EN"		[value]"[of Cameria's Veil]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Камерии]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"hillock"
+	[tag]"base name"	[value]"of Hillock"
+
+	[tag]"name EN"		[value]"[of Hillock]Veiled modifier"
+	[tag]"name RU"		[value]"[Хиллока]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"hillock"
+	[tag]"base name"	[value]"of Hillock's Veil"
+
+	[tag]"name EN"		[value]"[of Hillock's Veil]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Хиллока]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"janus"
+	[tag]"base name"	[value]"of Janus"
+
+	[tag]"name EN"		[value]"[of Janus]Veiled modifier"
+	[tag]"name RU"		[value]"[Януса]Завуалированное свойство"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"janus"
+	[tag]"base name"	[value]"of Janus' Veil"
+
+	[tag]"name EN"		[value]"[of Janus' Veil]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Януса]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"riker"
+	[tag]"base name"	[value]"of Riker"
+
+	[tag]"name EN"		[value]"[of Riker]Veiled modifier"
+	[tag]"name RU"		[value]"[Райкера]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"riker"
+	[tag]"base name"	[value]"of Riker's Veil"
+
+	[tag]"name EN"		[value]"[of Riker's Veil]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Райкера]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"rin"
+	[tag]"base name"	[value]"Rin's"
+
+	[tag]"name EN"		[value]"[Rin's]Veiled modifier"
+	[tag]"name RU"		[value]"[Усиленный Рин]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"rin"
+	[tag]"base name"	[value]"Rin's Veiled"
+
+	[tag]"name EN"		[value]"[Rin's Veiled]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Рин]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"tora"
+	[tag]"base name"	[value]"Tora's"
+
+	[tag]"name EN"		[value]"[Tora's]Veiled modifier"
+	[tag]"name RU"		[value]"[Усиленный Торой]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"tora"
+	[tag]"base name"	[value]"Tora's Veiled"
+
+	[tag]"name EN"		[value]"[Tora's Veiled]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Торы]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"vagan"
+	[tag]"base name"	[value]"Vagan's"
+
+	[tag]"name EN"		[value]"[Vagan's]Veiled modifier"
+	[tag]"name RU"		[value]"[Усиленный Ваганом]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"vagan"
+	[tag]"base name"	[value]"Vagan's Veiled"
+
+	[tag]"name EN"		[value]"[Vagan's Veiled]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Вагана]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"vorici"
+	[tag]"base name"	[value]"Vorici's"
+
+	[tag]"name EN"		[value]"[Vorici's]Veiled modifier"
+	[tag]"name RU"		[value]"[Усиленный Воричи]Завуалированное свойство"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"vorici"
+	[tag]"base name"	[value]"Vorici's Veiled"
+
+	[tag]"name EN"		[value]"[Vorici's Veiled]Veiled modifier"
+	[tag]"name RU"		[value]"[вуали Воричи]Неопознанное завуалированное свойство"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"essence_explicit"
+	[tag]"base name"	[value]"Essence"
+
+	[tag]"name EN"		[value]"[Essence]"
+	[tag]"name RU"		[value]"[Сущности]"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"veiled"
+	[tag]"base name"	[value]"of the Veil"
+
+	[tag]"name EN"		[value]"[of the Veil]Undefined veiled modifier(suffix)"
+	[tag]"name RU"		[value]"[вуали]Неопознанное завуалированное свойство(суффикс)"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"veiled"
+	[tag]"base name"	[value]"Veiled"
+
+	[tag]"name EN"		[value]"[Veiled]Undefined veiled modifier(prefix)"
+	[tag]"name RU"		[value]"[завуалированный]Неопознанное завуалированное свойство(префикс)"
+	
+	[tag]"explicit tag"	[value]"Undefined veil"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"incursion"
+	[tag]"base name"	[value]"Citaqualotl's"
+
+	[tag]"name EN"		[value]"[Citaqualotl's]Incursion attribute"
+	[tag]"name RU"		[value]"[Плодовитый]Атрибут вмешательства"
+	
+	[tag]"explicit tag"	[value]"Incursion"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"incursion"
+	[tag]"base name"	[value]"Guatelitzi's"
+
+	[tag]"name EN"		[value]"[Guatelitzi's]Incursion attribute"
+	[tag]"name RU"		[value]"[Церемониальный]Атрибут вмешательства"
+	
+	[tag]"explicit tag"	[value]"Incursion"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"incursion"
+	[tag]"base name"	[value]"Matatl's"
+
+	[tag]"name EN"		[value]"[Matatl's]Incursion attribute"
+	[tag]"name RU"		[value]"[Прозрачный]Атрибут вмешательства"
+	
+	[tag]"explicit tag"	[value]"Incursion"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"incursion"
+	[tag]"base name"	[value]"of Citaqualotl"
+
+	[tag]"name EN"		[value]"[of Citaqualotl]Incursion attribute"
+	[tag]"name RU"		[value]"[Ситаквалотля]Атрибут вмешательства"
+	
+	[tag]"explicit tag"	[value]"Incursion"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"incursion"
+	[tag]"base name"	[value]"of Guatelitzi"
+
+	[tag]"name EN"		[value]"[of Guatelitzi]Incursion attribute"
+	[tag]"name RU"		[value]"[Гвателитзи]Атрибут вмешательства"
+	
+	[tag]"explicit tag"	[value]"Incursion"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"incursion"
+	[tag]"base name"	[value]"of Matatl"
+
+	[tag]"name EN"		[value]"[of Matatl]Incursion attribute"
+	[tag]"name RU"		[value]"[Мататля]Атрибут вмешательства"
+	
+	[tag]"explicit tag"	[value]"Incursion"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"incursion"
+	[tag]"base name"	[value]"of Puhuarte"
+
+	[tag]"name EN"		[value]"[of Puhuarte]Incursion attribute"
+	[tag]"name RU"		[value]"[Пухварте]Атрибут вмешательства"
+	
+	[tag]"explicit tag"	[value]"Incursion"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"incursion"
+	[tag]"base name"	[value]"of Tacati"
+
+	[tag]"name EN"		[value]"[of Tacati]Incursion attribute"
+	[tag]"name RU"		[value]"[Такати]Атрибут вмешательства"
+	
+	[tag]"explicit tag"	[value]"Incursion"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"incursion"
+	[tag]"base name"	[value]"Tacati's"
+
+	[tag]"name EN"		[value]"[Tacati's]Incursion attribute"
+	[tag]"name RU"		[value]"[Токсичный]Атрибут вмешательства"
+	
+	[tag]"explicit tag"	[value]"Incursion"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"incursion"
+	[tag]"base name"	[value]"Topotante's"
+
+	[tag]"name EN"		[value]"[Topotante's]Incursion attribute"
+	[tag]"name RU"		[value]"[Буревой]Атрибут вмешательства"
+	
+	[tag]"explicit tag"	[value]"Incursion"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"incursion"
+	[tag]"base name"	[value]"Xopec's"
+
+	[tag]"name EN"		[value]"[Xopec's]Incursion attribute"
+	[tag]"name RU"		[value]"[Духовный]Атрибут вмешательства"
+	
+	[tag]"explicit tag"	[value]"Incursion"
+	

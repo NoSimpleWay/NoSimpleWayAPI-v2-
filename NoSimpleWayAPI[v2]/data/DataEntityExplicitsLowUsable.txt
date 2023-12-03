@@ -1,0 +1,529 @@
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Thorny"
+
+	[tag]"name EN"		[value]"[Thorny]Reflects (1-4) Physical Damage to Melee Attackers"
+	[tag]"name RU"		[value]"[Шипастый]Отражает (1-4) физического урона атакующим в ближнем бою"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Spiny"
+
+	[tag]"name EN"		[value]"[Spiny]Reflects (5-10) Physical Damage to Melee Attackers"
+	[tag]"name RU"		[value]"[Колючий]Отражает (5-10) физического урона атакующим в ближнем бою"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Barbed"
+
+	[tag]"name EN"		[value]"[Barbed]Reflects (11-24) Physical Damage to Melee Attackers"
+	[tag]"name RU"		[value]"[Игольчатый]Отражает (11-24) физического урона атакующим в ближнем бою"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Jagged"
+
+	[tag]"name EN"		[value]"[Jagged]Reflects (25-50) Physical Damage to Melee Attackers"
+	[tag]"name RU"		[value]"[Зазубренный]Отражает (25-50) физического урона атакующим в ближнем бою"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Small_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Restoring"
+
+	[tag]"name EN"		[value]"[Restoring](5-10)% increased Flask Life Recovery rate"
+	[tag]"name RU"		[value]"[Восполняющий](5-10)% повышение скорости восстановления здоровья от флакона"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"Belt"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Medium_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Recovering"
+
+	[tag]"name EN"		[value]"[Recovering](11-16)% increased Flask Life Recovery rate"
+	[tag]"name RU"		[value]"[Восстанавливающий](11-16)% повышение скорости восстановления здоровья от флакона"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"Belt"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Large_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Renewing"
+
+	[tag]"name EN"		[value]"[Renewing](17-22)% increased Flask Life Recovery rate"
+	[tag]"name RU"		[value]"[Обновляющий](17-22)% повышение скорости восстановления здоровья от флакона"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"Belt"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Greater_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Refreshing"
+
+	[tag]"name EN"		[value]"[Refreshing](23-28)% increased Flask Life Recovery rate"
+	[tag]"name RU"		[value]"[Освежающий](23-28)% повышение скорости восстановления здоровья от флакона"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"Belt"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Divine_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Rejuvenating"
+
+	[tag]"name EN"		[value]"[Rejuvenating](29-34)% increased Flask Life Recovery rate"
+	[tag]"name RU"		[value]"[Омолаживающий](29-34)% повышение скорости восстановления здоровья от флакона"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"Belt"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Regenerating"
+
+	[tag]"name EN"		[value]"[Regenerating](35-40)% increased Flask Life Recovery rate"
+	[tag]"name RU"		[value]"[Регенерирующий](35-40)% повышение скорости восстановления здоровья от флакона"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Belt"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Small_Mana_Flask_inventory_icon"
+	[tag]"base name"	[value]"Affecting"
+
+	[tag]"name EN"		[value]"[Affecting](5-10)% increased Flask Mana Recovery rate"
+	[tag]"name RU"		[value]"[Влияющий](5-10)% повышение скорости восстановления маны от флакона"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"Belt"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Medium_Mana_Flask_inventory_icon"
+	[tag]"base name"	[value]"Stirring"
+
+	[tag]"name EN"		[value]"[Stirring](11-16)% increased Flask Mana Recovery rate"
+	[tag]"name RU"		[value]"[Потрясающий](11-16)% повышение скорости восстановления маны от флакона"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"Belt"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Hallowed_Mana_Flask_inventory_icon"
+	[tag]"base name"	[value]"Heartening"
+
+	[tag]"name EN"		[value]"[Heartening](17-22)% increased Flask Mana Recovery rate"
+	[tag]"name RU"		[value]"[Ободряющий](17-22)% повышение скорости восстановления маны от флакона"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"Belt"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Sanctified_Mana_Flask_inventory_icon"
+	[tag]"base name"	[value]"Exciting"
+
+	[tag]"name EN"		[value]"[Exciting](23-28)% increased Flask Mana Recovery rate"
+	[tag]"name RU"		[value]"[Волнующий](23-28)% повышение скорости восстановления маны от флакона"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"Belt"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Divine_Mana_Flask_inventory_icon"
+	[tag]"base name"	[value]"Galvanizing"
+
+	[tag]"name EN"		[value]"[Galvanizing](29-34)% increased Flask Mana Recovery rate"
+	[tag]"name RU"		[value]"[Возбуждающий](29-34)% повышение скорости восстановления маны от флакона"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"Belt"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Mana_Flask_inventory_icon"
+	[tag]"base name"	[value]"Inspiring"
+
+	[tag]"name EN"		[value]"[Inspiring](35-40)% increased Flask Mana Recovery rate"
+	[tag]"name RU"		[value]"[Будоражащий](35-40)% повышение скорости восстановления маны от флакона"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Belt"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Bloodletting"
+
+	[tag]"name EN"		[value]"[of Bloodletting]Attacks have 20% chance to cause Bleeding (21-30)% increased Damage with Bleeding"
+	[tag]"name RU"		[value]"[кровопускания]Атаки имеют 20% шанс вызвать кровотечение (21-30)% увеличение урона от кровотечения"
+
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"Bow attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Haemophilia"
+
+	[tag]"name EN"		[value]"[of Haemophilia]Attacks have 25% chance to cause Bleeding (31-40)% increased Damage with Bleeding"
+	[tag]"name RU"		[value]"[кровопотери]Атаки имеют 25% шанс вызвать кровотечение (31-40)% увеличение урона от кровотечения"
+
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"Bow attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Exsanguinate"
+	[tag]"base name"	[value]"of Exsanguination"
+
+	[tag]"name EN"		[value]"[of Exsanguination]Attacks have 30% chance to cause Bleeding (41-50)% increased Damage with Bleeding"
+	[tag]"name RU"		[value]"[обескровливания]Атаки имеют 30% шанс вызвать кровотечение (41-50)% увеличение урона от кровотечения"
+
+	[tag]"explicit tag"	[value]"Bow attribute"
+	[tag]"explicit tag"	[value]"Two-handed attribute"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Freezing"
+
+	[tag]"name EN"		[value]"[of Freezing]20% chance to Freeze"
+	[tag]"name RU"		[value]"[заморозки]20% шанс заморозить"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Freezing"
+
+	[tag]"name EN"		[value]"[of Freezing]10% chance to Freeze"
+	[tag]"name RU"		[value]"[заморозки]10% шанс заморозить"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Bleakness"
+
+	[tag]"name EN"		[value]"[of Bleakness]25% chance to Freeze"
+	[tag]"name RU"		[value]"[промозглости]25% шанс заморозить"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Bleakness"
+
+	[tag]"name EN"		[value]"[of Bleakness]15% chance to Freeze"
+	[tag]"name RU"		[value]"[промозглости]15% шанс заморозить"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Hyperboreal"
+
+	[tag]"name EN"		[value]"[of the Hyperboreal]20% chance to Freeze"
+	[tag]"name RU"		[value]"[Гипербореи]20% шанс заморозить"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Hyperboreal"
+
+	[tag]"name EN"		[value]"[of the Hyperboreal]30% chance to Freeze"
+	[tag]"name RU"		[value]"[Гипербореи]30% шанс заморозить"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Ignition"
+
+	[tag]"name EN"		[value]"[of Ignition]20% chance to Ignite"
+	[tag]"name RU"		[value]"[поджога]20% шанс поджечь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Ignition"
+
+	[tag]"name EN"		[value]"[of Ignition]10% chance to Ignite"
+	[tag]"name RU"		[value]"[поджога]10% шанс поджечь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Combustion"
+
+	[tag]"name EN"		[value]"[of Combustion]15% chance to Ignite"
+	[tag]"name RU"		[value]"[возгорания]15% шанс поджечь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Combustion"
+
+	[tag]"name EN"		[value]"[of Combustion]25% chance to Ignite"
+	[tag]"name RU"		[value]"[возгорания]25% шанс поджечь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Conflagration"
+
+	[tag]"name EN"		[value]"[of Conflagration]20% chance to Ignite"
+	[tag]"name RU"		[value]"[воспламенения]20% шанс поджечь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Conflagration"
+
+	[tag]"name EN"		[value]"[of Conflagration]30% chance to Ignite"
+	[tag]"name RU"		[value]"[воспламенения]30% шанс поджечь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Shocking"
+
+	[tag]"name EN"		[value]"[of Shocking]20% chance to Shock"
+	[tag]"name RU"		[value]"[шока]20% шанс наложить шок"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Shocking"
+
+	[tag]"name EN"		[value]"[of Shocking]10% chance to Shock"
+	[tag]"name RU"		[value]"[шока]10% шанс наложить шок"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Zapping"
+
+	[tag]"name EN"		[value]"[of Zapping]15% chance to Shock"
+	[tag]"name RU"		[value]"[искристости]15% шанс наложить шок"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Zapping"
+
+	[tag]"name EN"		[value]"[of Zapping]25% chance to Shock"
+	[tag]"name RU"		[value]"[искристости]25% шанс наложить шок"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Electrocution"
+
+	[tag]"name EN"		[value]"[of Electrocution]20% chance to Shock"
+	[tag]"name RU"		[value]"[испепеления]20% шанс наложить шок"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Electrocution"
+
+	[tag]"name EN"		[value]"[of Electrocution]30% chance to Shock"
+	[tag]"name RU"		[value]"[испепеления]30% шанс наложить шок"
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Snow"
+
+	[tag]"name EN"		[value]"[of Snow](3-7)% increased Cold Damage"
+	[tag]"name RU"		[value]"[снега](3-7)% увеличение урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Sleet"
+
+	[tag]"name EN"		[value]"[of Sleet](8-12)% increased Cold Damage"
+	[tag]"name RU"		[value]"[наледи](8-12)% увеличение урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Ice"
+
+	[tag]"name EN"		[value]"[of Ice](13-17)% increased Cold Damage"
+	[tag]"name RU"		[value]"[льда](13-17)% увеличение урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Rime"
+
+	[tag]"name EN"		[value]"[of Rime](18-22)% increased Cold Damage"
+	[tag]"name RU"		[value]"[инея](18-22)% увеличение урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Floe"
+
+	[tag]"name EN"		[value]"[of Floe](23-26)% increased Cold Damage"
+	[tag]"name RU"		[value]"[мороза](23-26)% увеличение урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Glaciation"
+
+	[tag]"name EN"		[value]"[of Glaciation](27-30)% increased Cold Damage"
+	[tag]"name RU"		[value]"[ледника](27-30)% увеличение урона от холода"
+
+	

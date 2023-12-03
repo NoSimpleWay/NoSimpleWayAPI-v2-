@@ -1,0 +1,2708 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]8 to 12 Added Cold Damage per Frenzy Charge"
+	[tag]"name RU"		[value]"[Древний]Добавляет от 8 до 12 урона от холода за заряд ярости"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](20-25)% chance to gain an Endurance Charge when you Block +1% Chance to Block Attack Damage per Endurance Charge"
+	[tag]"name RU"		[value]"[Древнего](20-25)% шанс получить заряд выносливости при блоке +1% шанс блокировать урон от атак за заряд выносливости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](2-3)% Chance to Block Attack Damage if there are at least 5 nearby Enemies"
+	[tag]"name RU"		[value]"[Древнего](2-3)% шанс блокировать урон от атак, если поблизости минимум 5 врагов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](4-5)% Chance to Block Attack Damage if there are at least 5 nearby Enemies"
+	[tag]"name RU"		[value]"[Древнего](4-5)% шанс блокировать урон от атак, если поблизости минимум 5 врагов"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Attacks have (0.5-1)% to Critical Strike Chance"
+	[tag]"name RU"		[value]"[Древнего]Атаки имеют (0.5-1)% к шансу критического удара"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Attacks have (1.1-1.5)% to Critical Strike Chance"
+	[tag]"name RU"		[value]"[Древнего]Атаки имеют (1.1-1.5)% к шансу критического удара"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Projectiles Pierce an additional Target"
+	[tag]"name RU"		[value]"[Древний]Снаряды пронзают дополнительную цель"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Skills fire an additional Projectile"
+	[tag]"name RU"		[value]"[Древнего]Умения выпускают дополнительный снаряд"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](13-15)% to all Elemental Resistances"
+	[tag]"name RU"		[value]"[Древнего](13-15)% к сопротивлению всем стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](16-18)% to all Elemental Resistances"
+	[tag]"name RU"		[value]"[Древнего](16-18)% к сопротивлению всем стихиям"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Grants Level 22 Anger Skill"
+	[tag]"name RU"		[value]"[Древнего]Дарует умение Жгучая злоба 22 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 16 Concentrated Effect (15-18)% increased Area Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Средоточием 16 уровня (15-18)% увеличение урона по области"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 18 Concentrated Effect (19-22)% increased Area Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Средоточием 18 уровня (19-22)% увеличение урона по области"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 20 Concentrated Effect (23-25)% increased Area Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Средоточием 20 уровня (23-25)% увеличение урона по области"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](7-9)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Древний](7-9)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](5-10)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Древнего](5-10)% увеличение области действия"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](10-12)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Древний](10-12)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](11-15)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Древнего](11-15)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](13-15)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Древний](13-15)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](16-20)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Древнего](16-20)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](25-35)% increased Area of Effect if you have Stunned an Enemy Recently"
+	[tag]"name RU"		[value]"[Древнего](25-35)% увеличение области действия, если вы недавно оглушали врага"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]3% increased Area of Effect per 50 Strength"
+	[tag]"name RU"		[value]"[Древнего]3% увеличение области действия за каждые 50 силы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]5% increased Area of Effect per Endurance Charge"
+	[tag]"name RU"		[value]"[Древнего]5% увеличение области действия за заряд выносливости"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](8-14)% increased Attack Speed during any Flask Effect"
+	[tag]"name RU"		[value]"[Древнего](8-14)% повышение скорости атаки во время действия эффекта любого флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](8-10)% increased Attack Speed 20% increased Attack Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[Древнего](8-10)% повышение скорости атаки 20% повышение скорости атаки, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](17-19)% increased Attack Speed 20% increased Attack Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[Древнего](17-19)% повышение скорости атаки 20% повышение скорости атаки, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](20-21)% increased Attack Speed 20% increased Attack Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[Древнего](20-21)% повышение скорости атаки 20% повышение скорости атаки, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](11-12)% increased Attack Speed 20% increased Attack Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[Древнего](11-12)% повышение скорости атаки 20% повышение скорости атаки, если вы недавно совершали убийство"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](7-8)% chance to Blind Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[Древнего](7-8)% шанс ослепить врагов при нанесении удара атаками"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](9-10)% chance to Blind Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[Древнего](9-10)% шанс ослепить врагов при нанесении удара атаками"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](31-35)% chance to Avoid being Stunned"
+	[tag]"name RU"		[value]"[Древнего](31-35)% шанс избежать оглушения"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Attacks have 10% chance to cause Bleeding (15-25)% increased Damage with Bleeding"
+	[tag]"name RU"		[value]"[Древнего]Атаки имеют 10% шанс вызвать кровотечение (15-25)% увеличение урона от кровотечения"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Attacks have 15% chance to cause Bleeding (26-30)% increased Damage with Bleeding"
+	[tag]"name RU"		[value]"[Древнего]Атаки имеют 15% шанс вызвать кровотечение (26-30)% увеличение урона от кровотечения"
+
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 16 Chance To Bleed (20-25)% increased Damage with Bleeding"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Шансом кровотечения 16 уровня (20-25)% увеличение урона от кровотечения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Chance To Bleed (26-30)% increased Damage with Bleeding"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Шансом кровотечения 18 уровня (26-30)% увеличение урона от кровотечения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Chance To Bleed (31-35)% increased Damage with Bleeding"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Шансом кровотечения 20 уровня (31-35)% увеличение урона от кровотечения"
+
+	
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](2-3)% Chance to Block Attack Damage"
+	[tag]"name RU"		[value]"[Древнего](2-3)% шанс блокировать урон от атак"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](4-5)% Chance to Block Attack Damage"
+	[tag]"name RU"		[value]"[Древнего](4-5)% шанс блокировать урон от атак"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 16 Burning Damage (20-25)% increased Burning Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Уроном от горения 16 уровня (20-25)% увеличение урона от горения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Burning Damage (26-30)% increased Burning Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Уроном от горения 18 уровня (26-30)% увеличение урона от горения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Burning Damage (31-35)% increased Burning Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Уроном от горения 20 уровня (31-35)% увеличение урона от горения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Chance To Bleed 10% chance to cause Bleeding on Hit"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Шансом кровотечения 18 уровня 10% шанс наложить кровотечение при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Chance To Bleed 15% chance to cause Bleeding on Hit"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Шансом кровотечения 20 уровня 15% шанс наложить кровотечение при нанесении удара"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Unbound Ailments (5-7)% chance to Freeze, Shock and Ignite"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Безграничными состояниями 18 уровня (5-7)% шанс наложить заморозку, шок и поджог"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Unbound Ailments (8-10)% chance to Freeze, Shock and Ignite"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Безграничными состояниями 20 уровня (8-10)% шанс наложить заморозку, шок и поджог"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (19-26) to (38-46) Fire Damage against Ignited Enemies"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (19-26) до (38-46) урона от огня по подожжённым врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (23-30) to (47-54) Fire Damage against Ignited Enemies"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (23-30) до (47-54) урона от огня по подожжённым врагам"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Chance to Poison 15% chance to Poison on Hit"
+	[tag]"name RU"		[value]"[Древнего]Размещенные камни усилены Шансом отравить 18 уровня 15% шанс отравить при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Chance to Poison 20% chance to Poison on Hit"
+	[tag]"name RU"		[value]"[Древнего]Размещенные камни усилены Шансом отравить 20 уровня 20% шанс отравить при нанесении удара"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](11-20)% chance to Defend with 200% of Armour"
+	[tag]"name RU"		[value]"[Древний](11-20)% шанс на защиту с удвоенной броней"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](21-30)% chance to Defend with 200% of Armour"
+	[tag]"name RU"		[value]"[Древний](21-30)% шанс на защиту с удвоенной броней"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](5-6)% chance to gain Phasing for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[Древнего](5-6)% шанс войти в Форму призрака на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](7-8)% chance to gain Phasing for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[Древнего](7-8)% шанс войти в Форму призрака на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](9-10)% chance to gain Phasing for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[Древнего](9-10)% шанс войти в Форму призрака на 4 секунды при убийстве"
+
+
+
+
+
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](11-15)% to Chaos Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[Древнего](11-15)% к множителю постепенного урона хаосом"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](16-20)% to Chaos Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[Древнего](16-20)% к множителю постепенного урона хаосом"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](20-25)% to Chaos Resistance during any Flask Effect"
+	[tag]"name RU"		[value]"[Древнего](20-25)% к сопротивлению хаосу во время действия эффекта любого флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](26-30)% to Chaos Resistance during any Flask Effect"
+	[tag]"name RU"		[value]"[Древнего](26-30)% к сопротивлению хаосу во время действия эффекта любого флакона"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](80-100)% increased Critical Strike Chance against Poisoned Enemies"
+	[tag]"name RU"		[value]"[Древнего](80-100)% повышение шанса критического удара по отравленным врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](22-25)% increased Critical Strike Chance +50% to Critical Strike Multiplier if you haven't dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[Древнего](22-25)% повышение шанса критического удара +50% к множителю критического удара, если вы недавно не наносили критический удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](26-29)% increased Critical Strike Chance +50% to Critical Strike Multiplier if you haven't dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[Древнего](26-29)% повышение шанса критического удара +50% к множителю критического удара, если вы недавно не наносили критический удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](8-12)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Древнего](8-12)% к глобальному множителю критического удара"
+
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](13-16)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Древнего](13-16)% к глобальному множителю критического удара"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](17-20)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Древнего](17-20)% к глобальному множителю критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are supported by Level 18 Increased Critical Damage (22-25)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни улучшены Усилением критических ударов 18 уровня (22-25)% к глобальному множителю критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are supported by Level 20 Increased Critical Damage (26-29)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни улучшены Усилением критических ударов 20 уровня (26-29)% к глобальному множителю критического удара"
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Culling Strike"
+	[tag]"name RU"		[value]"[Древнего]Добивание"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](30-49)% increased Physical Damage Hits with this Weapon have Culling Strike against Bleeding Enemies"
+	[tag]"name RU"		[value]"[Древнего](30-49)% увеличение физического урона Удары этим оружием по истекающим кровью врагам имеют эффект Добивания"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]1% increased Damage per 15 Strength"
+	[tag]"name RU"		[value]"[Древний]1% увеличение урона за каждые 15 силы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]1% increased Damage per 1% Chance to Block Attack Damage"
+	[tag]"name RU"		[value]"[Древний]1% увеличение урона за каждый 1% шанса блокировать урон от атак"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Unaffected by Desecrated Ground"
+	[tag]"name RU"		[value]"[Древний]Невосприимчивость к эффекту оскверненной земли"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 20 Fortify"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Укреплением 20 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](23-27)% increased Physical Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[Древнего](23-27)% увеличение физического урона от атак с парным оружием в руках"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](28-32)% increased Physical Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[Древнего](28-32)% увеличение физического урона от атак с парным оружием в руках"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](33-37)% increased Physical Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[Древнего](33-37)% увеличение физического урона от атак с парным оружием в руках"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](4-6)% chance to gain an Endurance Charge on Kill"
+	[tag]"name RU"		[value]"[Древний](4-6)% шанс получить заряд выносливости при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](7-10)% chance to gain an Endurance Charge on Kill"
+	[tag]"name RU"		[value]"[Древний](7-10)% шанс получить заряд выносливости при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Grants Level 22 Enduring Cry Skill"
+	[tag]"name RU"		[value]"[Древний]Дарует умение Клич стойкости 22 уровня"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](0.3-0.5)% of Fire Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Древний](0.3-0.5)% урона от огня похищается в виде здоровья"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 16 Fire Penetration (45-52)% increased Fire Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Пронизывающим жаром 16 уровня (45-52)% увеличение урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 18 Fire Penetration (53-56)% increased Fire Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Пронизывающим жаром 18 уровня (53-56)% увеличение урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 20 Fire Penetration (57-60)% increased Fire Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Пронизывающим жаром 20 уровня (57-60)% увеличение урона от огня"
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](6-10)% chance for Flasks you use to not consume Charges"
+	[tag]"name RU"		[value]"[Древний](6-10)% шанс сохранить заряды флаконов при их использовании"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Melee Hits which Stun have (8-12)% chance to Fortify"
+	[tag]"name RU"		[value]"[Древний]Оглушающие удары в ближнем бою с (8-12)% шансом могут наложить Укрепление"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](3-5)% chance to gain a Frenzy Charge when you Hit a Rare or Unique Enemy"
+	[tag]"name RU"		[value]"[Древнего](3-5)% шанс получить заряд ярости при нанесении удара по редкому или уникальному врагу"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](4-6)% chance to gain a Frenzy Charge on Kill"
+	[tag]"name RU"		[value]"[Древний](4-6)% шанс получить заряд ярости при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](7-10)% chance to gain a Frenzy Charge on Kill"
+	[tag]"name RU"		[value]"[Древний](7-10)% шанс получить заряд ярости при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](500-650) Armour if you've Blocked Recently"
+	[tag]"name RU"		[value]"[Древний](500-650) брони, если вы недавно блокировали удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](651-800) Armour if you've Blocked Recently"
+	[tag]"name RU"		[value]"[Древний](651-800) брони, если вы недавно блокировали удар"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](5-10)% chance to gain an Endurance Charge when you Hit a Bleeding Enemy"
+	[tag]"name RU"		[value]"[Древнего](5-10)% шанс получить заряд выносливости при нанесении удара по истекающему кровью врагу"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Gain an Endurance Charge every 4 seconds while Stationary"
+	[tag]"name RU"		[value]"[Древнего]Дарует заряд выносливости каждые 4 секунды при нахождении на одном месте"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]When you Kill a Rare Monster, (15-20)% chance to gain one of its Modifiers for 10 seconds"
+	[tag]"name RU"		[value]"[Древнего]Когда вы убиваете редкого монстра, вы имеете (15-20)% шанс получить одно из его свойств на 10 секунд"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Grants Level 15 Envy Skill"
+	[tag]"name RU"		[value]"[Древнего]Дает умение Зависть 15 уровня"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Grants Level 22 Hatred Skill"
+	[tag]"name RU"		[value]"[Древнего]Дарует умение Холодная ненависть 22 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Grants Level 22 Herald of Ash Skill"
+	[tag]"name RU"		[value]"[Древнего]Дарует умение Вестник пепла 22 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 16 Immolate (8-12)% increased Ignite Duration on Enemies"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Жертвенностью 16 уровня (8-12)% увеличение длительности поджога на врагах"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Immolate (13-16)% increased Ignite Duration on Enemies"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Жертвенностью 18 уровня (13-16)% увеличение длительности поджога на врагах"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Immolate (17-20)% increased Ignite Duration on Enemies"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Жертвенностью 20 уровня (17-20)% увеличение длительности поджога на врагах"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]1% increased Projectile Attack Damage per 200 Accuracy Rating"
+	[tag]"name RU"		[value]"[Древнего]1% увеличение урона от атак снарядами за каждые 200 меткости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](6-10)% increased Global Accuracy Rating"
+	[tag]"name RU"		[value]"[Древнего](6-10)% повышение глобальной меткости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](11-15)% increased Global Accuracy Rating"
+	[tag]"name RU"		[value]"[Древнего](11-15)% повышение глобальной меткости"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](16-20)% increased Global Accuracy Rating"
+	[tag]"name RU"		[value]"[Древнего](16-20)% повышение глобальной меткости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are supported by Level 16 Additional Accuracy (6-10)% increased Global Accuracy Rating"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Меткостью 16 уровня (6-10)% повышение глобальной меткости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are supported by Level 18 Additional Accuracy (11-15)% increased Global Accuracy Rating"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Меткостью 18 уровня (11-15)% повышение глобальной меткости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are supported by Level 20 Additional Accuracy (16-20)% increased Global Accuracy Rating"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Меткостью 20 уровня (16-20)% повышение глобальной меткости"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](7-9)% increased Attack and Cast Speed"
+	[tag]"name RU"		[value]"[Древнего](7-9)% повышение скорости атаки и сотворения чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](10-12)% increased Attack and Cast Speed"
+	[tag]"name RU"		[value]"[Древнего](10-12)% повышение скорости атаки и сотворения чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](13-14)% increased Attack and Cast Speed"
+	[tag]"name RU"		[value]"[Древнего](13-14)% повышение скорости атаки и сотворения чар"
+
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](7-13)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Древнего](7-13)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 16 Faster Attacks (7-9)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Ускорением атак 16 уровня (7-9)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Faster Attacks (10-12)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Ускорением атак 18 уровня (10-12)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Faster Attacks (13-14)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Ускорением атак 20 уровня (13-14)% повышение скорости атаки"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Spell Echo (15-17)% increased Cast Speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Эхом магии 18 уровня (15-17)% повышение скорости сотворения чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Spell Echo (18-20)% increased Cast Speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Эхом магии 20 уровня (18-20)% повышение скорости сотворения чар"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](15-17)% increased Cast Speed (15-25)% chance to Avoid interruption from Stuns while Casting"
+	[tag]"name RU"		[value]"[Древнего](15-17)% повышение скорости сотворения чар (15-25)% шанс избежать прерывание от оглушения при сотворении чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](18-20)% increased Cast Speed (26-35)% chance to Avoid interruption from Stuns while Casting"
+	[tag]"name RU"		[value]"[Древнего](18-20)% повышение скорости сотворения чар (26-35)% шанс избежать прерывание от оглушения при сотворении чар"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](5-10)% increased Damage per Power Charge"
+	[tag]"name RU"		[value]"[Древнего](5-10)% увеличение урона за заряд энергии"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Gain (35-50) Life per Blinded Enemy Hit with this Weapon"
+	[tag]"name RU"		[value]"[Древнего]Дарует (35-50) здоровья за каждого ослепленного этим оружием врага"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Gain (10-15) Life per Enemy Hit with Attacks"
+	[tag]"name RU"		[value]"[Древний](10-15) здоровья за каждый удар атаками по врагу"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Gain (16-20) Life per Enemy Hit with Attacks"
+	[tag]"name RU"		[value]"[Древний](16-20) здоровья за каждый удар атаками по врагу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](7-9)% increased Life Recovery rate"
+	[tag]"name RU"		[value]"[Древнего](7-9)% повышение скорости восстановления здоровья"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](10-12)% increased Life Recovery rate"
+	[tag]"name RU"		[value]"[Древнего](10-12)% повышение скорости восстановления здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](37-42)% to Damage over Time Multiplier for Bleeding from Hits with this Weapon"
+	[tag]"name RU"		[value]"[Древний](37-42)% к множителю постепенного урона от кровотечения, наложенного ударами этим оружием"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](43-50)% to Damage over Time Multiplier for Bleeding from Hits with this Weapon"
+	[tag]"name RU"		[value]"[Древний](43-50)% к множителю постепенного урона от кровотечения, наложенного ударами этим оружием"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](51-59)% to Damage over Time Multiplier for Bleeding from Hits with this Weapon"
+	[tag]"name RU"		[value]"[Древний](51-59)% к множителю постепенного урона от кровотечения, наложенного ударами этим оружием"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]+1 to Level of Socketed Support Gems"
+	[tag]"name RU"		[value]"[Древний]+1 к уровню размещённых камней поддержки"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are supported by Level 18 Multistrike (17-19)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Градом ударов 18 уровня (17-19)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are supported by Level 20 Multistrike (20-21)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Градом ударов 20 уровня (20-21)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Onslaught (8-10)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Боевым ражем 18 уровня (8-10)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Onslaught (11-12)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Боевым ражем 20 уровня (11-12)% повышение скорости атаки"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 16 Brutality (101-115)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Жестокостью 16 уровня (101-115)% увеличение физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 18 Brutality (116-126)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Жестокостью 18 уровня (116-126)% увеличение физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 20 Brutality (127-134)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Жестокостью 20 уровня (127-134)% увеличение физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 16 Melee Physical Damage (101-115)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Физическим урон ближнего боя 16 уровня (101-115)% увеличение физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 18 Melee Physical Damage (116-126)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Физическим урон ближнего боя 18 уровня (116-126)% увеличение физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 20 Melee Physical Damage (127-134)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Физическим урон ближнего боя 20 уровня (127-134)% увеличение физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 16 Ruthless (101-115)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Беспощадностью 16 уровня (101-115)% увеличение физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 18 Ruthless (116-126)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Беспощадностью 18 уровня (116-126)% увеличение физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 20 Ruthless (127-134)% increased Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Беспощадностью 20 уровня (127-134)% увеличение физического урона"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](37-42)% to Damage over Time Multiplier for Poison inflicted with this Weapon"
+	[tag]"name RU"		[value]"[Древний](37-42)% к множителю постепенного урона от яда, наложенного этим оружием"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](43-50)% to Damage over Time Multiplier for Poison inflicted with this Weapon"
+	[tag]"name RU"		[value]"[Древний](43-50)% к множителю постепенного урона от яда, наложенного этим оружием"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](51-59)% to Damage over Time Multiplier for Poison inflicted with this Weapon"
+	[tag]"name RU"		[value]"[Древний](51-59)% к множителю постепенного урона от яда, наложенного этим оружием"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]+1 to Weapon Range"
+	[tag]"name RU"		[value]"[Древнего]+1 к дальности оружия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]+2 to Weapon Range"
+	[tag]"name RU"		[value]"[Древнего]+2 к дальности оружия"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Gain (2-3) Mana per Enemy Hit with Attacks"
+	[tag]"name RU"		[value]"[Древний]Дарует (2-3) маны за каждого пораженного атаками врага"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](4-7)% increased maximum Life"
+	[tag]"name RU"		[value]"[Древний](4-7)% увеличение максимума здоровья"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](5-8)% increased maximum Life"
+	[tag]"name RU"		[value]"[Древний](5-8)% увеличение максимума здоровья"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](3-6)% increased maximum Life"
+	[tag]"name RU"		[value]"[Древний](3-6)% увеличение максимума здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](8-10)% increased maximum Life"
+	[tag]"name RU"		[value]"[Древний](8-10)% увеличение максимума здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](7-10)% increased maximum Life"
+	[tag]"name RU"		[value]"[Древний](7-10)% увеличение максимума здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](9-12)% increased maximum Life"
+	[tag]"name RU"		[value]"[Древний](9-12)% увеличение максимума здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](15-25)% increased Maximum total Life Recovery per second from Leech"
+	[tag]"name RU"		[value]"[Древний](15-25)% увеличение максимального итогового восстановления здоровья в секунду от похищения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Recover (3-4)% of Life on Kill"
+	[tag]"name RU"		[value]"[Древнего]Восстанавливает (3-4)% здоровья при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Recover (5-6)% of Life on Kill"
+	[tag]"name RU"		[value]"[Древнего]Восстанавливает (5-6)% здоровья при убийстве"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](9-11)% increased maximum Mana"
+	[tag]"name RU"		[value]"[Древний](9-11)% увеличение максимума маны"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](12-15)% increased maximum Mana"
+	[tag]"name RU"		[value]"[Древний](12-15)% увеличение максимума маны"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]+1 to maximum number of Skeletons"
+	[tag]"name RU"		[value]"[Древний]+1 к максимальному числу скелетов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]+1 to maximum number of Raised Zombies"
+	[tag]"name RU"		[value]"[Древний]+1 к максимальному числу зомби"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](13-16)% increased Melee Damage +2 to Melee Strike Range"
+	[tag]"name RU"		[value]"[Древнего](13-16)% увеличение урона в ближнем бою +2 к дальности ударов ближнего боя"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](20-25)% increased Melee Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[Древнего](20-25)% увеличение урона в ближнем бою во время действия эффекта любого флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](26-30)% increased Melee Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[Древнего](26-30)% увеличение урона в ближнем бою во время действия эффекта любого флакона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](31-35)% increased Melee Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[Древнего](31-35)% увеличение урона в ближнем бою во время действия эффекта любого флакона"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](1-2) to Melee Strike Range if you have Killed Recently"
+	[tag]"name RU"		[value]"[Древнего](1-2) к дальности ударов ближнего боя, если недавно вы совершали убийство"
+
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 16 Minion Damage Minions deal (15-18)% increased Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Уроном приспешников 16 уровня Приспешники имеют (15-18)% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 18 Minion Damage Minions deal (19-22)% increased Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Уроном приспешников 18 уровня Приспешники имеют (19-22)% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 20 Minion Damage Minions deal (23-25)% increased Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Уроном приспешников 20 уровня Приспешники имеют (23-25)% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]+1 to Level of all Raise Spectre Gems"
+	[tag]"name RU"		[value]"[Древнего]+1 к уровню всех камней Сотворение призрака"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 16 Minion Life Minions have (15-18)% increased maximum Life"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Здоровьем приспешников 16 уровня Приспешники имеют (15-18)% увеличение максимума здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 18 Minion Life Minions have (19-22)% increased maximum Life"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Здоровьем приспешников 18 уровня Приспешники имеют (19-22)% увеличение максимума здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 20 Minion Life Minions have (23-25)% increased maximum Life"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Здоровьем приспешников 20 уровня Приспешники имеют (23-25)% увеличение максимума здоровья"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Nearby Enemies take 9% increased Physical Damage"
+	[tag]"name RU"		[value]"[Древнего]Ближайшие враги получают увеличенный на 9% физический урон"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Gain (3-5)% of Non-Chaos Damage as extra Chaos Damage"
+	[tag]"name RU"		[value]"[Древний]Наносит (3-5)% от урона не-хаосом в виде дополнительного урона хаосом"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](6-9)% increased Attributes"
+	[tag]"name RU"		[value]"[Древнего](6-9)% увеличение характеристик"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](10-12)% increased Attributes"
+	[tag]"name RU"		[value]"[Древнего](10-12)% увеличение характеристик"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](5-8)% increased Dexterity"
+	[tag]"name RU"		[value]"[Древнего](5-8)% повышение ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](5-8)% increased Strength"
+	[tag]"name RU"		[value]"[Древнего](5-8)% повышение силы"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](9-12)% increased Strength"
+	[tag]"name RU"		[value]"[Древнего](9-12)% повышение силы"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Gain (8-11)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Древний]Дарует (8-11)% от физического урона в виде дополнительного урона от огня"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Gain (12-15)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Древний]Дарует (12-15)% от физического урона в виде дополнительного урона от огня"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](10-15)% of Physical Damage Converted to Chaos Damage"
+	[tag]"name RU"		[value]"[Древнего](10-15)% физического урона становится уроном хаосом"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](16-20)% of Physical Damage Converted to Chaos Damage"
+	[tag]"name RU"		[value]"[Древнего](16-20)% физического урона становится уроном хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](21-25)% of Physical Damage Converted to Chaos Damage"
+	[tag]"name RU"		[value]"[Древнего](21-25)% физического урона становится уроном хаосом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](0.3-0.5)% of Physical Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Древний](0.3-0.5)% от физического урона похищается в виде здоровья"
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](11-15)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[Древнего](11-15)% к множителю физического постепенного урона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](16-20)% to Physical Damage over Time Multiplier"
+	[tag]"name RU"		[value]"[Древнего](16-20)% к множителю физического постепенного урона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](16-20)% increased Global Physical Damage"
+	[tag]"name RU"		[value]"[Древний](16-20)% увеличение глобального физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](21-25)% increased Global Physical Damage"
+	[tag]"name RU"		[value]"[Древний](21-25)% увеличение глобального физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](26-30)% increased Global Physical Damage"
+	[tag]"name RU"		[value]"[Древний](26-30)% увеличение глобального физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](5-10)% of Physical Damage from Hits taken as Fire Damage"
+	[tag]"name RU"		[value]"[Древний](5-10)% получаемого физического урона от ударов становится уроном от огня"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's](11-15)% of Physical Damage from Hits taken as Fire Damage"
+	[tag]"name RU"		[value]"[Древний](11-15)% получаемого физического урона от ударов становится уроном от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 16 Chance to Poison (20-25)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[Древнего]Размещенные камни усилены Шансом отравить 16 уровня (20-25)% увеличение урона от яда"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Chance to Poison (26-30)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[Древнего]Размещенные камни усилены Шансом отравить 18 уровня (26-30)% увеличение урона от яда"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Chance to Poison (31-35)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[Древнего]Размещенные камни усилены Шансом отравить 20 уровня (31-35)% увеличение урона от яда"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Critical Strike Affliction (6-9)% increased Poison Duration"
+	[tag]"name RU"		[value]"[Древнего]Размещенные камни усилены Критическими ударами состояниями 18 уровня (6-9)% увеличение длительности яда"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Critical Strike Affliction (10-14)% increased Poison Duration"
+	[tag]"name RU"		[value]"[Древнего]Размещенные камни усилены Критическими ударами состояниями 20 уровня (10-14)% увеличение длительности яда"
+
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]15% chance to Poison on Hit (15-25)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[Древнего]15% шанс отравить при нанесении удара (15-25)% увеличение урона от яда"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]20% chance to Poison on Hit (26-30)% increased Damage with Poison"
+	[tag]"name RU"		[value]"[Древнего]20% шанс отравить при нанесении удара (26-30)% увеличение урона от яда"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]+5% Chance to Block Attack Damage while wielding a Staff 25% chance to gain a Power Charge when you Block"
+	[tag]"name RU"		[value]"[Древнего]+5% шанс блокировать урон от атак с посохом в руках 25% шанс получить заряд энергии при блоке"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](20-25)% increased Projectile Attack Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[Древнего](20-25)% увеличение урона от атак снарядами во время действия эффекта любого флакона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](26-30)% increased Projectile Attack Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[Древнего](26-30)% увеличение урона от атак снарядами во время действия эффекта любого флакона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](31-35)% increased Projectile Attack Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[Древнего](31-35)% увеличение урона от атак снарядами во время действия эффекта любого флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are supported by Level 16 Faster Projectiles (15-20)% increased Projectile Speed"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Ускорением снарядов 16 уровня (15-20)% повышение скорости снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are supported by Level 18 Faster Projectiles (21-25)% increased Projectile Speed"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Ускорением снарядов 18 уровня (21-25)% повышение скорости снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are supported by Level 20 Faster Projectiles (26-30)% increased Projectile Speed"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Ускорением снарядов 20 уровня (26-30)% повышение скорости снарядов"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Grants Level 22 Rallying Cry Skill"
+	[tag]"name RU"		[value]"[Древний]Дарует умение Клич сплочения 22 уровня"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]You and your Minions take 100% reduced Reflected Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Вы и ваши приспешники получаете уменьшенный на 100% отраженный физический урон"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]You and your Minions take (45-31)% reduced Reflected Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Вы и ваши приспешники получаете уменьшенный на (45-31)% отраженный физический урон"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]You and your Minions take (55-46)% reduced Reflected Physical Damage"
+	[tag]"name RU"		[value]"[Древний]Вы и ваши приспешники получаете уменьшенный на (55-46)% отраженный физический урон"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Removes Bleeding when you use a Warcry"
+	[tag]"name RU"		[value]"[Древнего]Снимает кровотечение при применении боевого клича"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Remove Ignite and Burning when you use a Flask"
+	[tag]"name RU"		[value]"[Древнего]Снимает поджог и горение при использовании флакона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Unaffected by Shocked Ground"
+	[tag]"name RU"		[value]"[Древний]Невосприимчивость к эффекту заряженной земли"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 15 Increased Duration (10-15)% increased Skill Effect Duration"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Продлением 15 уровня (10-15)% увеличение длительности эффекта умения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Attacks have +30% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Древнего]+30% к множителю критического удара размещённых атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Attacks have +50% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Древнего]+50% к множителю критического удара размещённых атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Attacks have +70% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Древнего]+70% к множителю критического удара размещённых атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Attacks have +1% to Critical Strike Chance"
+	[tag]"name RU"		[value]"[Древнего]+1% к шансу критического удара размещённых атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Attacks have +2% to Critical Strike Chance"
+	[tag]"name RU"		[value]"[Древнего]+2% к шансу критического удара размещённых атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Attacks have +3% to Critical Strike Chance"
+	[tag]"name RU"		[value]"[Древнего]+3% к шансу критического удара размещённых атак"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (37-49) to (75-86) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (37-49) до (75-86) урона хаосом к чарам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (14-18) to (27-32) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (14-18) до (27-32) урона хаосом к чарам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (22-31) to (46-53) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (22-31) до (46-53) урона хаосом к чарам"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (17-23) to (34-40) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (17-23) до (34-40) урона хаосом к чарам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (28-37) to (55-64) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (28-37) до (55-64) урона хаосом к чарам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (44-58) to (88-103) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (44-58) до (88-103) урона хаосом к чарам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (60-73) to (108-122) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (60-73) до (108-122) урона хаосом к чарам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (32-44) to (66-76) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (32-44) до (66-76) урона хаосом к чарам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (21-28) to (41-48) Chaos Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (21-28) до (41-48) урона хаосом к чарам"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (17-22) to (33-39) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (17-22) до (33-39) урона от огня к чарам"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (21-28) to (42-49) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (21-28) до (42-49) урона от огня к чарам"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Adds (25-34) to (51-59) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Древний]Добавляет от (25-34) до (51-59) урона от огня к чарам"
+
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]+5% Chance to Block Attack Damage while wielding a Staff (8-12)% Chance to Block Spell Damage"
+	[tag]"name RU"		[value]"[Древнего]+5% шанс блокировать урон от атак с посохом в руках (8-12)% шанс блокировать урон от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](3-4)% Chance to Block Spell Damage"
+	[tag]"name RU"		[value]"[Древнего](3-4)% шанс блокировать урон от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](5-6)% Chance to Block Spell Damage"
+	[tag]"name RU"		[value]"[Древнего](5-6)% шанс блокировать урон от чар"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]1% increased Spell Damage per 10 Intelligence"
+	[tag]"name RU"		[value]"[Древний]1% увеличение урона от чар за 10 интеллекта"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]1% increased Spell Damage per 10 Strength"
+	[tag]"name RU"		[value]"[Древний]1% увеличение урона от чар за каждые 10 силы"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]1% increased Spell Damage per 16 Dexterity"
+	[tag]"name RU"		[value]"[Древний]1% увеличение урона от чар за каждые 16 ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]1% increased Spell Damage per 16 Intelligence"
+	[tag]"name RU"		[value]"[Древний]1% увеличение урона от чар за каждые 16 интеллекта"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]1% increased Spell Damage per 16 Strength"
+	[tag]"name RU"		[value]"[Древний]1% увеличение урона от чар за каждые 16 силы"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 5 Cast when Damage Taken"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Сотворением чар при получении урона 5 уровня"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 10 Endurance Charge on Melee Stun"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Зарядом выносливости при оглушении в ближнем бою 10 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 1 Fortify"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Укреплением 1 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 16 Increased Area of Effect (23-27)% increased Area Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Расширенной областью действия 16 уровня (23-27)% увеличение урона по области"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Increased Area of Effect (28-32)% increased Area Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Расширенной областью действия 18 уровня (28-32)% увеличение урона по области"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Increased Area of Effect (33-37)% increased Area Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Расширенной областью действия 20 уровня (33-37)% увеличение урона по области"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 1 Inspiration"
+	[tag]"name RU"		[value]"[Древний]Размещенные камни усилены Вдохновением 1 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 20 Less Duration"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Сокращением 20 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 16 Lesser Multiple Projectiles (15-20)% increased Projectile Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Дополнительными снарядами 16 уровня (15-20)% увеличение урона снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Lesser Multiple Projectiles (21-25)% increased Projectile Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Дополнительными снарядами 18 уровня (21-25)% увеличение урона снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Lesser Multiple Projectiles (26-30)% increased Projectile Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Дополнительными снарядами 20 уровня (26-30)% увеличение урона снарядов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 10 Onslaught"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Боевым ражем 10 уровня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 10 Power Charge On Critical Strike"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Зарядом энергии при критическом ударе 10 уровня"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 16 Ancestral Call (5-8)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Зовом предков 16 уровня (5-8)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Ancestral Call (9-12)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Зовом предков 18 уровня (9-12)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Ancestral Call (13-15)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Зовом предков 20 уровня (13-15)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Spell Totem (20-25)% increased Totem Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Колдующим тотемом 18 уровня (20-25)% увеличение урона тотемов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Spell Totem (26-30)% increased Totem Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Колдующим тотемом 20 уровня (26-30)% увеличение урона тотемов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 22 Spell Totem (31-35)% increased Totem Damage"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Колдующим тотемом 22 уровня (31-35)% увеличение урона тотемов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 18 Spell Totem (8-12)% increased Totem Placement speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Колдующим тотемом 18 уровня (8-12)% повышение скорости установки тотемов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 20 Spell Totem (13-16)% increased Totem Placement speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Колдующим тотемом 20 уровня (13-16)% повышение скорости установки тотемов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Socketed Gems are Supported by Level 22 Spell Totem (17-20)% increased Totem Placement speed"
+	[tag]"name RU"		[value]"[Древнего]Размещённые камни усилены Колдующим тотемом 22 уровня (17-20)% повышение скорости установки тотемов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](5-6)% chance to gain Unholy Might for 3 seconds on Kill"
+	[tag]"name RU"		[value]"[Древнего](5-6)% шанс получить Нечестивое могущество на 3 секунды при убийстве"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](7-8)% chance to gain Unholy Might for 3 seconds on Kill"
+	[tag]"name RU"		[value]"[Древнего](7-8)% шанс получить Нечестивое могущество на 3 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder](9-10)% chance to gain Unholy Might for 3 seconds on Kill"
+	[tag]"name RU"		[value]"[Древнего](9-10)% шанс получить Нечестивое могущество на 3 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 16 Efficacy (45-52)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Эффективностью 16 уровня (45-52)% увеличение урона от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 18 Efficacy (53-56)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Эффективностью 18 уровня (53-56)% увеличение урона от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"The Elder's"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[The Elder's]Socketed Gems are Supported by Level 20 Efficacy (57-60)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Древний]Размещённые камни усилены Эффективностью 20 уровня (57-60)% увеличение урона от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of the Elder"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Elder]Grants Level 22 Wrath Skill"
+	[tag]"name RU"		[value]"[Древнего]Дарует умение Грозный гнев 22 уровня"
+
+	

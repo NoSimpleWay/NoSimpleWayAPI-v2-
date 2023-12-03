@@ -1,0 +1,2188 @@
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (16-20) to (22-25) Cold Damage if you've dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (16-20) до (22-25) урона от холода, если вы недавно наносили критический удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (20-25) to (26-35) Cold Damage if you've dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (20-25) до (26-35) урона от холода, если вы недавно наносили критический удар"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](2-3) to (4-5) Added Cold Damage per Frenzy Charge"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (2-3) до (4-5) урона от холода за заряд ярости"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](3-4) to (6-7) Added Cold Damage per Frenzy Charge"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (3-4) до (6-7) урона от холода за заряд ярости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (16-20) to (22-25) Fire Damage if you've dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (16-20) до (22-25) урона от огня, если вы недавно наносили критический удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (20-25) to (26-35) Fire Damage if you've dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (20-25) до (26-35) урона от огня, если вы недавно наносили критический удар"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds 1 to (41-47) Lightning Damage if you've dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от 1 до (41-47) урона от молнии, если вы недавно наносили критический удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds 1 to (48-60) Lightning Damage if you've dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от 1 до (48-60) урона от молнии, если вы недавно наносили критический удар"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Regenerate (3-5) Mana per second"
+	[tag]"name RU"		[value]"[искупления](3-5) регенерации маны в секунду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Regenerate (6-8) Mana per second"
+	[tag]"name RU"		[value]"[искупления](6-8) регенерации маны в секунду"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (4-5) to (6-8) Physical Damage if you've dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (4-5) до (6-8) физического урона, если вы недавно наносили критический удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (6-8) to (9-11) Physical Damage if you've dealt a Critical Strike Recently"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (6-8) до (9-11) физического урона, если вы недавно наносили критический удар"
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-14)% increased Attack Speed during any Flask Effect"
+	[tag]"name RU"		[value]"[искупления](8-14)% повышение скорости атаки во время действия эффекта любого флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-12)% increased Attack Speed if you've been Hit Recently"
+	[tag]"name RU"		[value]"[искупления](8-12)% повышение скорости атаки, если вы недавно получали удар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](15-18)% chance to Blind Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[искупления](15-18)% шанс ослепить врагов при нанесении удара атаками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](19-22)% chance to Blind Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[искупления](19-22)% шанс ослепить врагов при нанесении удара атаками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](23-25)% chance to Blind Enemies on Hit with Attacks"
+	[tag]"name RU"		[value]"[искупления](23-25)% шанс ослепить врагов при нанесении удара атаками"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](5-7)% increased effect of Non-Curse Auras from your Skills"
+	[tag]"name RU"		[value]"[искупления](5-7)% усиление эффекта аур не-проклятий от ваших умений"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](15-20)% increased effect of Non-Curse Auras from your Skills"
+	[tag]"name RU"		[value]"[искупления](15-20)% усиление эффекта аур не-проклятий от ваших умений"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-10)% increased effect of Non-Curse Auras from your Skills"
+	[tag]"name RU"		[value]"[искупления](8-10)% усиление эффекта аур не-проклятий от ваших умений"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](21-25)% increased effect of Non-Curse Auras from your Skills"
+	[tag]"name RU"		[value]"[искупления](21-25)% усиление эффекта аур не-проклятий от ваших умений"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](2-4)% Chance to Block Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[искупления](2-4)% шанс блокировать урон от атак с парным оружием в руках"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](5-7)% Chance to Block Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[искупления](5-7)% шанс блокировать урон от атак с парным оружием в руках"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-9)% Chance to Block Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[искупления](8-9)% шанс блокировать урон от атак с парным оружием в руках"
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](23-26)% increased Cast Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[искупления](23-26)% повышение скорости сотворения чар, если недавно вы совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](13-16)% increased Cast Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[искупления](13-16)% повышение скорости сотворения чар, если недавно вы совершали убийство"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](27-30)% increased Cast Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[искупления](27-30)% повышение скорости сотворения чар, если недавно вы совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](17-20)% increased Cast Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[искупления](17-20)% повышение скорости сотворения чар, если недавно вы совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](17-21)% chance to double Stun Duration"
+	[tag]"name RU"		[value]"[искупления](17-21)% шанс удвоить длительность оглушения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](7-11)% chance to double Stun Duration"
+	[tag]"name RU"		[value]"[искупления](7-11)% шанс удвоить длительность оглушения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](12-15)% chance to double Stun Duration"
+	[tag]"name RU"		[value]"[искупления](12-15)% шанс удвоить длительность оглушения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](22-25)% chance to double Stun Duration"
+	[tag]"name RU"		[value]"[искупления](22-25)% шанс удвоить длительность оглушения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](6-9)% chance to avoid Projectiles"
+	[tag]"name RU"		[value]"[искупления](6-9)% шанс избежать снаряда"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](10-12)% chance to avoid Projectiles"
+	[tag]"name RU"		[value]"[искупления](10-12)% шанс избежать снаряда"
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](10-12)% Chance to Block Attack Damage if you were Damaged by a Hit Recently"
+	[tag]"name RU"		[value]"[искупления](10-12)% шанс блокировать урон от атак, если вы недавно получали урон от удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](13-15)% Chance to Block Attack Damage if you were Damaged by a Hit Recently"
+	[tag]"name RU"		[value]"[искупления](13-15)% шанс блокировать урон от атак, если вы недавно получали урон от удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (17-23) to (35-41) Cold Damage against Chilled or Frozen Enemies"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (17-23) до (35-41) урона от холода по охлаждённым или замороженным врагам"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (20-26) to (41-48) Cold Damage against Chilled or Frozen Enemies"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (20-26) до (41-48) урона от холода по охлаждённым или замороженным врагам"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](5-7)% chance to gain Onslaught for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[искупления](5-7)% шанс получить эффект Боевого ража на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-10)% chance to gain Onslaught for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[искупления](8-10)% шанс получить эффект Боевого ража на 4 секунды при убийстве"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Unaffected by Chilled Ground"
+	[tag]"name RU"		[value]"[Освободительный]Невосприимчивость к эффекту замерзшей земли"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](0.2-0.4)% of Cold Damage Leeched as Energy Shield"
+	[tag]"name RU"		[value]"[Освободительный](0.2-0.4)% урона от холода похищается в виде энергетического щита"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](0.3-0.5)% of Cold Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Освободительный](0.3-0.5)% урона от холода похищается в виде здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](16-20)% increased Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный](16-20)% увеличение урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](21-25)% increased Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный](21-25)% увеличение урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](26-30)% increased Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный](26-30)% увеличение урона от холода"
+
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](11-15)% chance to inflict Cold Exposure on Hit"
+	[tag]"name RU"		[value]"[искупления](11-15)% шанс наложить восприимчивость к холоду при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](16-20)% chance to inflict Cold Exposure on Hit"
+	[tag]"name RU"		[value]"[искупления](16-20)% шанс наложить восприимчивость к холоду при нанесении удара"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Damage Penetrates (10-11)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Урон пробивает (10-11)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Damage Penetrates 6% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Урон пробивает 6% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Damage Penetrates (4-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Урон пробивает (4-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Damage Penetrates (12-13)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Урон пробивает (12-13)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Damage Penetrates 7% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Урон пробивает 7% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Damage Penetrates 8% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Урон пробивает 8% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Damage Penetrates (14-15)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Урон пробивает (14-15)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Damage Penetrates (8-10)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Урон пробивает (8-10)% сопротивления холоду"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-11)% increased Effect of your Curses"
+	[tag]"name RU"		[value]"[искупления](8-11)% усиление эффекта ваших проклятий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](12-15)% increased Effect of your Curses"
+	[tag]"name RU"		[value]"[искупления](12-15)% усиление эффекта ваших проклятий"
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](26-30)% increased Damage with Hits against Chilled Enemies"
+	[tag]"name RU"		[value]"[Освободительный](26-30)% увеличение урона от ударов по охлаждённым врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](31-35)% increased Damage with Hits against Chilled Enemies"
+	[tag]"name RU"		[value]"[Освободительный](31-35)% увеличение урона от ударов по охлаждённым врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](36-40)% increased Damage with Hits against Chilled Enemies"
+	[tag]"name RU"		[value]"[Освободительный](36-40)% увеличение урона от ударов по охлаждённым врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]1% increased Damage per 15 Dexterity"
+	[tag]"name RU"		[value]"[Освободительный]1% увеличение урона за каждые 15 ловкости"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](5-7)% increased Damage per Frenzy Charge"
+	[tag]"name RU"		[value]"[искупления](5-7)% увеличение урона за заряд ярости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](3-4)% increased Damage per Frenzy Charge"
+	[tag]"name RU"		[value]"[Освободительный](3-4)% увеличение урона за заряд ярости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-10)% increased Damage per Frenzy Charge"
+	[tag]"name RU"		[value]"[искупления](8-10)% увеличение урона за заряд ярости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](5-6)% increased Damage per Frenzy Charge"
+	[tag]"name RU"		[value]"[Освободительный](5-6)% увеличение урона за заряд ярости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](5-7)% chance to deal Double Damage if you have Stunned an Enemy Recently"
+	[tag]"name RU"		[value]"[искупления](5-7)% шанс нанести двойной урон, если недавно вы оглушали врага"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-10)% chance to deal Double Damage if you have Stunned an Enemy Recently"
+	[tag]"name RU"		[value]"[искупления](8-10)% шанс нанести двойной урон, если недавно вы оглушали врага"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](5-10)% chance to gain Elusive on Critical Strike"
+	[tag]"name RU"		[value]"[Освободительный](5-10)% шанс получить Неуловимость при нанесении критического удара"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](4-6)% chance to gain an Endurance Charge on Kill"
+	[tag]"name RU"		[value]"[Освободительный](4-6)% шанс получить заряд выносливости при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](7-10)% chance to gain an Endurance Charge on Kill"
+	[tag]"name RU"		[value]"[Освободительный](7-10)% шанс получить заряд выносливости при убийстве"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Enemies Killed with Attack or Spell Hits Explode, dealing 5% of their Life as Fire Damage"
+	[tag]"name RU"		[value]"[искупления]Убитые ударами от атак или чар враги взрываются, нанося 5% от их здоровья в виде урона от огня"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-12)% increased Freeze Duration on Enemies (6-8)% chance to Freeze"
+	[tag]"name RU"		[value]"[искупления](8-12)% увеличение длительности заморозки на врагах (6-8)% шанс заморозить"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](13-15)% increased Freeze Duration on Enemies (6-8)% chance to Freeze"
+	[tag]"name RU"		[value]"[искупления](13-15)% увеличение длительности заморозки на врагах (6-8)% шанс заморозить"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]10% chance to gain a Frenzy Charge on Hit"
+	[tag]"name RU"		[value]"[искупления]10% шанс получить заряд ярости при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](4-6)% chance to gain a Frenzy Charge on Kill"
+	[tag]"name RU"		[value]"[Освободительный](4-6)% шанс получить заряд ярости при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](7-10)% chance to gain a Frenzy Charge on Kill"
+	[tag]"name RU"		[value]"[Освободительный](7-10)% шанс получить заряд ярости при убийстве"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Curse Enemies with Frostbite on Hit, with 20% increased Effect"
+	[tag]"name RU"		[value]"[искупления]При нанесении удара проклинает врагов Обморожением с усиленным на 20% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Curse Enemies with Frostbite on Hit, with 40% increased Effect"
+	[tag]"name RU"		[value]"[искупления]При нанесении удара проклинает врагов Обморожением с усиленным на 40% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Curse Enemies with Frostbite on Hit, with 32% increased Effect"
+	[tag]"name RU"		[value]"[искупления]При нанесении удара проклинает врагов Обморожением с усиленным на 32% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-11)% Global chance to Blind Enemies on hit"
+	[tag]"name RU"		[value]"[искупления](8-11)% глобальный шанс ослепить врага при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](12-15)% Global chance to Blind Enemies on hit"
+	[tag]"name RU"		[value]"[искупления](12-15)% глобальный шанс ослепить врага при нанесении удара"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](7-9)% increased Evasion Rating"
+	[tag]"name RU"		[value]"[Освободительный](7-9)% увеличение уклонения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](10-12)% increased Evasion Rating"
+	[tag]"name RU"		[value]"[Освободительный](10-12)% увеличение уклонения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](13-15)% increased Evasion Rating"
+	[tag]"name RU"		[value]"[Освободительный](13-15)% увеличение уклонения"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Grace has (40-50)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[искупления](40-50)% увеличение эффективности удержания маны Грацией"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Hatred has (28-33)% increased Aura Effect"
+	[tag]"name RU"		[value]"[искупления](28-33)% усиление эффекта ауры Холодной ненависти"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Hatred has (48-54)% increased Aura Effect"
+	[tag]"name RU"		[value]"[искупления](48-54)% усиление эффекта ауры Холодной ненависти"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Hatred has (55-60)% increased Aura Effect"
+	[tag]"name RU"		[value]"[искупления](55-60)% усиление эффекта ауры Холодной ненависти"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Hatred has (34-40)% increased Aura Effect"
+	[tag]"name RU"		[value]"[искупления](34-40)% усиление эффекта ауры Холодной ненависти"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Hatred has (40-50)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[искупления](40-50)% увеличение эффективности удержания маны Холодной ненавистью"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](15-17)% increased Burning Damage (6-8)% chance to Ignite"
+	[tag]"name RU"		[value]"[искупления](15-17)% увеличение урона от горения (6-8)% шанс поджечь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](18-20)% increased Burning Damage (6-8)% chance to Ignite"
+	[tag]"name RU"		[value]"[искупления](18-20)% увеличение урона от горения (6-8)% шанс поджечь"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](12-15)% increased Global Accuracy Rating"
+	[tag]"name RU"		[value]"[искупления](12-15)% повышение глобальной меткости"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](16-20)% increased Global Accuracy Rating"
+	[tag]"name RU"		[value]"[искупления](16-20)% повышение глобальной меткости"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](30-34)% increased Effect of Non-Damaging Ailments"
+	[tag]"name RU"		[value]"[искупления](30-34)% усиление эффекта не наносящих урон состояний"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](15-20)% increased Effect of Non-Damaging Ailments"
+	[tag]"name RU"		[value]"[искупления](15-20)% усиление эффекта не наносящих урон состояний"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](35-40)% increased Effect of Non-Damaging Ailments"
+	[tag]"name RU"		[value]"[искупления](35-40)% усиление эффекта не наносящих урон состояний"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](21-25)% increased Effect of Non-Damaging Ailments"
+	[tag]"name RU"		[value]"[искупления](21-25)% усиление эффекта не наносящих урон состояний"
+
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Casting"
+
+	[tag]"name EN"		[value]"[of Casting](24-28)% increased Cast Speed"
+	[tag]"name RU"		[value]"[сотворения чар](24-28)% повышение скорости сотворения чар"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Auras from your Skills grant 2% increased Damage to you and Allies"
+	[tag]"name RU"		[value]"[искупления]Ауры от ваших умений даруют вам и вашим союзникам 2% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Auras from your Skills grant 4% increased Damage to you and Allies"
+	[tag]"name RU"		[value]"[искупления]Ауры от ваших умений даруют вам и вашим союзникам 4% увеличение урона"
+
+	
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (7-9) to (14-16) Cold Damage Attacks with this Weapon Penetrate (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (7-9) до (14-16) урона от холода Атаки этим оружием пробивают (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (13-16) to (26-30) Cold Damage Attacks with this Weapon Penetrate (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (13-16) до (26-30) урона от холода Атаки этим оружием пробивают (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (11-14) to (22-25) Cold Damage Attacks with this Weapon Penetrate (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (11-14) до (22-25) урона от холода Атаки этим оружием пробивают (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (21-26) to (41-46) Cold Damage Attacks with this Weapon Penetrate (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (21-26) до (41-46) урона от холода Атаки этим оружием пробивают (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (15-20) to (30-35) Cold Damage Attacks with this Weapon Penetrate (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (15-20) до (30-35) урона от холода Атаки этим оружием пробивают (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (28-37) to (56-65) Cold Damage Attacks with this Weapon Penetrate (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (28-37) до (56-65) урона от холода Атаки этим оружием пробивают (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (19-25) to (38-44) Cold Damage Attacks with this Weapon Penetrate (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (19-25) до (38-44) урона от холода Атаки этим оружием пробивают (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (35-46) to (71-81) Cold Damage Attacks with this Weapon Penetrate (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (35-46) до (71-81) урона от холода Атаки этим оружием пробивают (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (23-32) to (48-55) Cold Damage Attacks with this Weapon Penetrate (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (23-32) до (48-55) урона от холода Атаки этим оружием пробивают (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (43-59) to (89-102) Cold Damage Attacks with this Weapon Penetrate (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (43-59) до (89-102) урона от холода Атаки этим оружием пробивают (5-7)% сопротивления холоду"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Attacks with this Weapon Penetrate (9-10)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Атаки этим оружием пробивают (9-10)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Attacks with this Weapon Penetrate (11-12)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Атаки этим оружием пробивают (11-12)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Attacks with this Weapon Penetrate (13-15)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Атаки этим оружием пробивают (13-15)% сопротивления холоду"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]+2 to Level of Socketed Cold Gems"
+	[tag]"name RU"		[value]"[Освободительный]+2 к уровню размещённых камней холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]+1 to Level of Socketed Support Gems"
+	[tag]"name RU"		[value]"[Освободительный]+1 к уровню размещённых камней поддержки"
+
+	
+	
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](7-9)% increased Mana Recovery rate"
+	[tag]"name RU"		[value]"[искупления](7-9)% повышение скорости восстановления маны"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-11)% increased Mana Recovery rate"
+	[tag]"name RU"		[value]"[искупления](8-11)% повышение скорости восстановления маны"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](10-12)% increased Mana Recovery rate"
+	[tag]"name RU"		[value]"[искупления](10-12)% повышение скорости восстановления маны"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](12-15)% increased Mana Recovery rate"
+	[tag]"name RU"		[value]"[искупления](12-15)% повышение скорости восстановления маны"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](4-6)% increased Mana Reservation Efficiency of Skills"
+	[tag]"name RU"		[value]"[искупления](4-6)% увеличение эффективности удержания маны умениями"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](7-10)% increased Mana Reservation Efficiency of Skills"
+	[tag]"name RU"		[value]"[искупления](7-10)% увеличение эффективности удержания маны умениями"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Recover (3-4)% of Mana on Kill"
+	[tag]"name RU"		[value]"[искупления]Восстанавливает (3-4)% маны при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Recover (5-6)% of Mana on Kill"
+	[tag]"name RU"		[value]"[искупления]Восстанавливает (5-6)% маны при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]+1 to Minimum Frenzy Charges"
+	[tag]"name RU"		[value]"[искупления]+1 к минимуму зарядов ярости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]+2 to Minimum Frenzy Charges"
+	[tag]"name RU"		[value]"[искупления]+2 к минимуму зарядов ярости"
+
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (18-22)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (18-22)% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (15-17)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (15-17)% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (23-26)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (23-26)% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (27-30)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (27-30)% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (18-21)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (18-21)% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Convocation"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Minions deal (22-25)% increased Damage"
+	[tag]"name RU"		[value]"[Освободительный]Приспешники имеют (22-25)% увеличение урона"
+
+	
+
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](10-12)% increased Movement Speed if you've Hit an Enemy Recently"
+	[tag]"name RU"		[value]"[искупления](10-12)% повышение скорости передвижения, если вы недавно наносили удар по врагу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](5-7)% increased Movement Speed if you've Hit an Enemy Recently"
+	[tag]"name RU"		[value]"[искупления](5-7)% повышение скорости передвижения, если вы недавно наносили удар по врагу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](13-15)% increased Movement Speed if you've Hit an Enemy Recently"
+	[tag]"name RU"		[value]"[искупления](13-15)% повышение скорости передвижения, если вы недавно наносили удар по врагу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-10)% increased Movement Speed if you've Hit an Enemy Recently"
+	[tag]"name RU"		[value]"[искупления](8-10)% повышение скорости передвижения, если вы недавно наносили удар по врагу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](3-6)% increased Movement Speed"
+	[tag]"name RU"		[value]"[искупления](3-6)% повышение скорости передвижения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](7-10)% increased Movement Speed"
+	[tag]"name RU"		[value]"[искупления](7-10)% повышение скорости передвижения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Nearby Enemies are Blinded"
+	[tag]"name RU"		[value]"[Освободительный]Ближайшие враги получают ослепление"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Nearby Enemies have -9% to Cold Resistance"
+	[tag]"name RU"		[value]"[искупления]Ближайшие враги имеют -9% к сопротивлению холоду"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](15-18)% chance to gain Onslaught for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[искупления](15-18)% шанс получить эффект Боевой раж на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](19-22)% chance to gain Onslaught for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[искупления](19-22)% шанс получить эффект Боевой раж на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](23-25)% chance to gain Onslaught for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[искупления](23-25)% шанс получить эффект Боевой раж на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](5-8)% increased Dexterity"
+	[tag]"name RU"		[value]"[искупления](5-8)% повышение ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](9-12)% increased Dexterity"
+	[tag]"name RU"		[value]"[искупления](9-12)% повышение ловкости"
+
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Gain (3-5)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный]Дарует (3-5)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Gain (16-20)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный]Дарует (16-20)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Gain (5-10)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный]Дарует (5-10)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Gain (7-12)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный]Дарует (7-12)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Gain (13-17)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный]Дарует (13-17)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Gain (21-26)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный]Дарует (21-26)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Gain (6-8)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный]Дарует (6-8)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Gain (11-15)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный]Дарует (11-15)% от физического урона в виде дополнительного урона от холода"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Gain (27-30)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный]Дарует (27-30)% от физического урона в виде дополнительного урона от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Gain (18-20)% of Physical Damage as Extra Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный]Дарует (18-20)% от физического урона в виде дополнительного урона от холода"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](5-7)% chance to Avoid Physical Damage from Hits"
+	[tag]"name RU"		[value]"[искупления](5-7)% шанс избежать физического урона от ударов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](8-10)% chance to Avoid Physical Damage from Hits"
+	[tag]"name RU"		[value]"[искупления](8-10)% шанс избежать физического урона от ударов"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](4-6)% of Physical Damage from Hits taken as Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный](4-6)% получаемого физического урона от ударов становится уроном от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](5-10)% of Physical Damage from Hits taken as Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный](5-10)% получаемого физического урона от ударов становится уроном от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](11-15)% of Physical Damage from Hits taken as Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный](11-15)% получаемого физического урона от ударов становится уроном от холода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](7-10)% of Physical Damage from Hits taken as Cold Damage"
+	[tag]"name RU"		[value]"[Освободительный](7-10)% получаемого физического урона от ударов становится уроном от холода"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](4-6)% chance to gain a Power Charge on Kill"
+	[tag]"name RU"		[value]"[Освободительный](4-6)% шанс получить заряд энергии при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](7-10)% chance to gain a Power Charge on Kill"
+	[tag]"name RU"		[value]"[Освободительный](7-10)% шанс получить заряд энергии при убийстве"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](15-17)% increased Projectile Attack Damage"
+	[tag]"name RU"		[value]"[Освободительный](15-17)% увеличение урона от атак снарядами"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](18-21)% increased Projectile Attack Damage"
+	[tag]"name RU"		[value]"[Освободительный](18-21)% увеличение урона от атак снарядами"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's](22-25)% increased Projectile Attack Damage"
+	[tag]"name RU"		[value]"[Освободительный](22-25)% увеличение урона от атак снарядами"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](20-25)% increased Projectile Attack Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[искупления](20-25)% увеличение урона от атак снарядами во время действия эффекта любого флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](26-30)% increased Projectile Attack Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[искупления](26-30)% увеличение урона от атак снарядами во время действия эффекта любого флакона"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](31-35)% increased Projectile Attack Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[искупления](31-35)% увеличение урона от атак снарядами во время действия эффекта любого флакона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Purity of Ice has (50-60)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[искупления](50-60)% увеличение эффективности удержания маны Спасением от холода"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Recover (3-5)% of your maximum Mana when you Block"
+	[tag]"name RU"		[value]"[искупления]Восстанавливает (3-5)% от вашего максимума маны при блоке"
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]You and your Minions take 100% reduced Reflected Elemental Damage"
+	[tag]"name RU"		[value]"[Освободительный]Вы и ваши приспешники получаете уменьшенный на 100% отраженный урон от стихий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Remove Chill and Freeze when you use a Flask"
+	[tag]"name RU"		[value]"[искупления]Снимает охлаждение и заморозку при использовании флакона"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](6-8)% chance to Shock (8-12)% increased Effect of Lightning Ailments"
+	[tag]"name RU"		[value]"[искупления](6-8)% шанс наложить шок (8-12)% усиление эффектов состояний молнии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](6-8)% chance to Shock (13-15)% increased Effect of Lightning Ailments"
+	[tag]"name RU"		[value]"[искупления](6-8)% шанс наложить шок (13-15)% усиление эффектов состояний молнии"
+
+	
+	
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (8-10) to (15-18) Cold Damage to Spells Damage Penetrates (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (8-10) до (15-18) урона от холода к чарам Урон пробивает (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (5-7) to (10-12) Cold Damage to Spells Damage Penetrates 4% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (5-7) до (10-12) урона от холода к чарам Урон пробивает 4% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (8-10) to (16-18) Cold Damage to Spells Damage Penetrates 4% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (8-10) до (16-18) урона от холода к чарам Урон пробивает 4% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (12-16) to (23-27) Cold Damage to Spells Damage Penetrates (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (12-16) до (23-27) урона от холода к чарам Урон пробивает (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (16-22) to (33-38) Cold Damage to Spells Damage Penetrates (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (16-22) до (33-38) урона от холода к чарам Урон пробивает (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (11-15) to (22-25) Cold Damage to Spells Damage Penetrates 4% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (11-15) до (22-25) урона от холода к чарам Урон пробивает 4% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (21-27) to (41-48) Cold Damage to Spells Damage Penetrates (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (21-27) до (41-48) урона от холода к чарам Урон пробивает (5-7)% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (14-18) to (27-32) Cold Damage to Spells Damage Penetrates 4% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (14-18) до (27-32) урона от холода к чарам Урон пробивает 4% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (17-23) to (34-40) Cold Damage to Spells Damage Penetrates 4% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (17-23) до (34-40) урона от холода к чарам Урон пробивает 4% сопротивления холоду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Adds (26-34) to (52-60) Cold Damage to Spells Damage Penetrates (5-7)% Cold Resistance"
+	[tag]"name RU"		[value]"[Освободительный]Добавляет от (26-34) до (52-60) урона от холода к чарам Урон пробивает (5-7)% сопротивления холоду"
+
+	
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](10-12)% Chance to Block Spell Damage if you were Damaged by a Hit Recently"
+	[tag]"name RU"		[value]"[искупления](10-12)% шанс блокировать урон от чар, если вы недавно получали урон от удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](13-15)% Chance to Block Spell Damage if you were Damaged by a Hit Recently"
+	[tag]"name RU"		[value]"[искупления](13-15)% шанс блокировать урон от чар, если вы недавно получали урон от удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Prevent +2% of Suppressed Spell Damage"
+	[tag]"name RU"		[value]"[искупления]Предотвращает получение +2% урона от подавленных чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Redeemer's"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Redeemer's]Skills supported by Unleash have +1 to maximum number of Seals"
+	[tag]"name RU"		[value]"[Освободительный]Усиленные Высвобождением умения имеют +1 к максимуму Печатей"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Spells have a (10-11)% chance to deal Double Damage"
+	[tag]"name RU"		[value]"[искупления](10-11)% шанс нанести двойной урон чарами"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Spells have a (4-5)% chance to deal Double Damage"
+	[tag]"name RU"		[value]"[искупления](4-5)% шанс нанести двойной урон чарами"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Spells have a (6-7)% chance to deal Double Damage"
+	[tag]"name RU"		[value]"[искупления](6-7)% шанс нанести двойной урон чарами"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption]Spells have a (12-14)% chance to deal Double Damage"
+	[tag]"name RU"		[value]"[искупления](12-14)% шанс нанести двойной урон чарами"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](21-25)% increased Warcry Speed"
+	[tag]"name RU"		[value]"[искупления](21-25)% повышение скорости применения боевых кличей"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](26-30)% increased Warcry Speed"
+	[tag]"name RU"		[value]"[искупления](26-30)% повышение скорости применения боевых кличей"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Redemption"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of Redemption](31-35)% increased Warcry Speed"
+	[tag]"name RU"		[value]"[искупления](31-35)% повышение скорости применения боевых кличей"
+
+	

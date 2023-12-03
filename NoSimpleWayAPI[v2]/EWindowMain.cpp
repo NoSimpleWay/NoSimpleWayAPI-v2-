@@ -3652,7 +3652,10 @@ EWindowMain::EWindowMain()
 
 	ETextParser::data_entity_parse_file("data/data_entity_list[influence].txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[base_class].txt");
+
 	ETextParser::data_entity_parse_file("data/data_entity_list[explicit].txt");
+	ETextParser::data_entity_parse_file("data/DataEntityExplicits.txt");
+
 	ETextParser::data_entity_parse_file("data/data_entity_list[enchantment].txt");
 
 	ETextParser::data_entity_parse_file("data/data_entity_list[localisation].txt");
@@ -12171,6 +12174,9 @@ void EWindowMain::register_filter_rules()
 		jc_filter.add_new_suitable_value("Attacker",	ELocalisationText::get_localisation_by_key("tag_attacker_build"));
 		jc_filter.add_new_suitable_value("Caster",		ELocalisationText::get_localisation_by_key("tag_caster_build"));
 		jc_filter.add_new_suitable_value("Summoner",	ELocalisationText::get_localisation_by_key("tag_summoner_build"));
+		jc_filter.add_new_suitable_value("Defence",		ELocalisationText::get_localisation_by_key("tag_defence"));
+		jc_filter.add_new_suitable_value("Resistance",	ELocalisationText::get_localisation_by_key("tag_resistance"));
+		jc_filter.add_new_suitable_value("Феекшигеу",	ELocalisationText::get_localisation_by_key("tag_attributes"));
 		jc_filter.add_new_suitable_value("",			ELocalisationText::get_localisation_by_key("tag_any_build"));
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
@@ -26127,9 +26133,16 @@ void GameAttributeGenerator::execute_generation(EGameItem* _game_item)
 
 void GameAttributeGeneratorMinMaxInt::execute_generation(EGameItem* _game_item)
 {
-	int generated_value = min_value + round((max_value - min_value) * pow((rand() % 101) / 100.0f, generator_pow));
+	if (!DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Always unique", _game_item->stored_data_entity))
+	{
+		int generated_value = min_value + round((max_value - min_value) * pow((rand() % 101) / 100.0f, generator_pow));
 
-	target_attribute_container->attribute_value_int = generated_value;
+		target_attribute_container->attribute_value_int = generated_value;
+	}
+	else
+	{
+		target_attribute_container->attribute_value_int = 3;
+	}
 
 	//GameAttributeGenerator::execute_generation(_game_item);
 
@@ -26426,6 +26439,8 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 						std::string
 						sockets_text = DataEntityUtils::get_tag_value_by_name(0, "max sockets", d_entity);
 
+
+
 						if (sockets_text != "") { _game_item->max_sockets = EStringUtils::safe_convert_string_to_number(sockets_text, 0, 6); }
 
 						if
@@ -26535,6 +26550,12 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 
 
 				//EInputCore::logger_param("width", attribute_container.attribute_value);
+			}
+
+			//CHECK IS ITEM ALWAYS UNIQUE
+			if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Always unique", _game_item->stored_data_entity))
+			{
+				_game_item->rarity = 3;
 			}
 		}
 		else//undefined item
@@ -28821,11 +28842,12 @@ void GameAttributeGeneratorBoolFlag::execute_generation(EGameItem* _game_item)
 
 void GameAttributeGeneratorRarity::execute_generation(EGameItem* _game_item)
 {
-	generator_pow = base_pow / EWindowMain::loot_simulator_button_group->MF_factor;
+	
+		generator_pow = base_pow / EWindowMain::loot_simulator_button_group->MF_factor;
 
-	GameAttributeGeneratorMinMaxInt::execute_generation(_game_item);
+		GameAttributeGeneratorMinMaxInt::execute_generation(_game_item);
 
-	_game_item->rarity = target_attribute_container->attribute_value_int;
+		_game_item->rarity = target_attribute_container->attribute_value_int; 
 }
 
 void DescriptionContainerSeparatorExample::create_description()

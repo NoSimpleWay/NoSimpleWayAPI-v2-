@@ -1,0 +1,2405 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Skills fire an additional Projectile"
+	[tag]"name RU"		[value]"[завоевания]Умения выпускают дополнительный снаряд"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](10-12)% to all Elemental Resistances"
+	[tag]"name RU"		[value]"[завоевания](10-12)% к сопротивлению всем стихиям"
+		
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](13-15)% to all Elemental Resistances"
+	[tag]"name RU"		[value]"[завоевания](13-15)% к сопротивлению всем стихиям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](16-18)% to all Elemental Resistances"
+	[tag]"name RU"		[value]"[завоевания](16-18)% к сопротивлению всем стихиям"
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Anger has (28-33)% increased Aura Effect"
+	[tag]"name RU"		[value]"[завоевания](28-33)% усиление эффекта ауры Жгучей злобы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Anger has (48-54)% increased Aura Effect"
+	[tag]"name RU"		[value]"[завоевания](48-54)% усиление эффекта ауры Жгучей злобы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Anger has (34-40)% increased Aura Effect"
+	[tag]"name RU"		[value]"[завоевания](34-40)% усиление эффекта ауры Жгучей злобы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Anger has (55-60)% increased Aura Effect"
+	[tag]"name RU"		[value]"[завоевания](55-60)% усиление эффекта ауры Жгучей злобы"
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Anger has (40-50)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[завоевания](40-50)% увеличение эффективности удержания маны Жгучей злобой"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](5-6)% Chance to Block Attack Damage if you have Blocked Attack Damage Recently"
+	[tag]"name RU"		[value]"[завоевания](5-6)% шанс блокировать урон от атак, если вы недавно блокировали урон от атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](7-8)% Chance to Block Attack Damage if you have Blocked Attack Damage Recently"
+	[tag]"name RU"		[value]"[завоевания](7-8)% шанс блокировать урон от атак, если вы недавно блокировали урон от атак"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](23-26)% increased Attack Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[завоевания](23-26)% повышение скорости атаки, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](13-16)% increased Attack Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[завоевания](13-16)% повышение скорости атаки, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](27-30)% increased Attack Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[завоевания](27-30)% повышение скорости атаки, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](17-20)% increased Attack Speed if you've Killed Recently"
+	[tag]"name RU"		[value]"[завоевания](17-20)% повышение скорости атаки, если вы недавно совершали убийство"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](31-35)% chance to Avoid being Stunned"
+	[tag]"name RU"		[value]"[завоевания](31-35)% шанс избежать оглушения"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Regenerate 0.3% of Mana per second"
+	[tag]"name RU"		[value]"[завоевания]Регенерация 0.3% маны в секунду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Regenerate 0.7% of Mana per second"
+	[tag]"name RU"		[value]"[завоевания]Регенерация 0.7% маны в секунду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Regenerate 0.8% of Mana per second"
+	[tag]"name RU"		[value]"[завоевания]Регенерация 0.8% маны в секунду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Regenerate 0.4% of Mana per second"
+	[tag]"name RU"		[value]"[завоевания]Регенерация 0.4% маны в секунду"
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](8-12)% increased Damage with Bleeding (5-6)% increased Bleeding Duration"
+	[tag]"name RU"		[value]"[завоевания](8-12)% увеличение урона от кровотечения (5-6)% увеличение длительности кровотечения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](13-17)% increased Damage with Bleeding (7-8)% increased Bleeding Duration"
+	[tag]"name RU"		[value]"[завоевания](13-17)% увеличение урона от кровотечения (7-8)% увеличение длительности кровотечения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](18-22)% increased Damage with Bleeding (9-10)% increased Bleeding Duration"
+	[tag]"name RU"		[value]"[завоевания](18-22)% увеличение урона от кровотечения (9-10)% увеличение длительности кровотечения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Attacks have 10% chance to cause Bleeding (15-25)% increased Damage with Bleeding"
+	[tag]"name RU"		[value]"[завоевания]Атаки имеют 10% шанс вызвать кровотечение (15-25)% увеличение урона от кровотечения"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Attacks have 15% chance to cause Bleeding (26-30)% increased Damage with Bleeding"
+	[tag]"name RU"		[value]"[завоевания]Атаки имеют 15% шанс вызвать кровотечение (26-30)% увеличение урона от кровотечения"
+
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](2-3)% Chance to Block Attack Damage"
+	[tag]"name RU"		[value]"[завоевания](2-3)% шанс блокировать урон от атак"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](4-5)% Chance to Block Attack Damage"
+	[tag]"name RU"		[value]"[завоевания](4-5)% шанс блокировать урон от атак"
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](15-18)% chance to gain Phasing for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[завоевания](15-18)% шанс войти в Форму призрака на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](5-6)% chance to gain Phasing for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[завоевания](5-6)% шанс войти в Форму призрака на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](19-22)% chance to gain Phasing for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[завоевания](19-22)% шанс войти в Форму призрака на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](7-8)% chance to gain Phasing for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[завоевания](7-8)% шанс войти в Форму призрака на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](9-10)% chance to gain Phasing for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[завоевания](9-10)% шанс войти в Форму призрака на 4 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](23-25)% chance to gain Phasing for 4 seconds on Kill"
+	[tag]"name RU"		[value]"[завоевания](23-25)% шанс войти в Форму призрака на 4 секунды при убийстве"
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](5-7)% chance to Avoid Cold Damage from Hits"
+	[tag]"name RU"		[value]"[завоевания](5-7)% шанс избежать урона от холода от ударов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](8-10)% chance to Avoid Cold Damage from Hits"
+	[tag]"name RU"		[value]"[завоевания](8-10)% шанс избежать урона от холода от ударов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](14-16)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[завоевания](14-16)% к глобальному множителю критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](11-13)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[завоевания](11-13)% к глобальному множителю критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](14-16)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[завоевания](14-16)% к глобальному множителю критического удара"
+	
+	
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](17-19)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[завоевания](17-19)% к глобальному множителю критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](17-20)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[завоевания](17-20)% к глобальному множителю критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](20-22)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[завоевания](20-22)% к глобальному множителю критического удара"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](41-50)% to Critical Strike Multiplier against Enemies that are on Full Life"
+	[tag]"name RU"		[value]"[завоевания](41-50)% к множителю критического удара по врагам с полным здоровьем"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](51-60)% to Critical Strike Multiplier against Enemies that are on Full Life"
+	[tag]"name RU"		[value]"[завоевания](51-60)% к множителю критического удара по врагам с полным здоровьем"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](26-30)% to Critical Strike Multiplier if you've Killed Recently"
+	[tag]"name RU"		[value]"[завоевания](26-30)% к множителю критического удара, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](31-35)% to Critical Strike Multiplier if you've Killed Recently"
+	[tag]"name RU"		[value]"[завоевания](31-35)% к множителю критического удара, если вы недавно совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Culling Strike"
+	[tag]"name RU"		[value]"[завоевания]Добивание"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](22-27) to (41-46) added Fire Damage against Burning Enemies"
+	[tag]"name RU"		[value]"[Военный]От (22-27) до (41-46) дополнительного урона от огня по горящим врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](28-32) to (47-51) added Fire Damage against Burning Enemies"
+	[tag]"name RU"		[value]"[Военный]От (28-32) до (47-51) дополнительного урона от огня по горящим врагам"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](33-39) to (52-55) added Fire Damage against Burning Enemies"
+	[tag]"name RU"		[value]"[Военный]От (33-39) до (52-55) дополнительного урона от огня по горящим врагам"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](11-15)% increased Damage"
+	[tag]"name RU"		[value]"[Военный](11-15)% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](16-20)% increased Damage"
+	[tag]"name RU"		[value]"[Военный](16-20)% увеличение урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](21-25)% increased Damage"
+	[tag]"name RU"		[value]"[Военный](21-25)% увеличение урона"
+
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](7-9)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Военный](7-9)% увеличение области действия"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](10-12)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Военный](10-12)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](13-15)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Военный](13-15)% увеличение области действия"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](60-69)% increased Burning Damage"
+	[tag]"name RU"		[value]"[Военный](60-69)% увеличение урона от горения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](100-109)% increased Burning Damage"
+	[tag]"name RU"		[value]"[Военный](100-109)% увеличение урона от горения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](110-119)% increased Burning Damage"
+	[tag]"name RU"		[value]"[Военный](110-119)% увеличение урона от горения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](70-79)% increased Burning Damage"
+	[tag]"name RU"		[value]"[Военный](70-79)% увеличение урона от горения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](120-129)% increased Burning Damage"
+	[tag]"name RU"		[value]"[Военный](120-129)% увеличение урона от горения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](80-89)% increased Burning Damage"
+	[tag]"name RU"		[value]"[Военный](80-89)% увеличение урона от горения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](90-94)% increased Burning Damage"
+	[tag]"name RU"		[value]"[Военный](90-94)% увеличение урона от горения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](130-134)% increased Burning Damage"
+	[tag]"name RU"		[value]"[Военный](130-134)% увеличение урона от горения"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Unaffected by Burning Ground"
+	[tag]"name RU"		[value]"[Военный]Невосприимчивость к эффекту горящей земли"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (19-26) to (38-46) Fire Damage against Ignited Enemies"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (19-26) до (38-46) урона от огня по подожжённым врагам"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (23-30) to (47-54) Fire Damage against Ignited Enemies"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (23-30) до (47-54) урона от огня по подожжённым врагам"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Curse Enemies with Vulnerability on Hit, with 20% increased Effect"
+	[tag]"name RU"		[value]"[завоевания]При нанесении удара проклинает врагов Беззащитностью с усиленным на 20% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Curse Enemies with Vulnerability on Hit, with 32% increased Effect"
+	[tag]"name RU"		[value]"[завоевания]При нанесении удара проклинает врагов Беззащитностью с усиленным на 32% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]1% increased Damage per 15 Strength"
+	[tag]"name RU"		[value]"[Военный]1% увеличение урона за каждые 15 силы"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](5-7)% increased Damage per Endurance Charge"
+	[tag]"name RU"		[value]"[завоевания](5-7)% увеличение урона за заряд выносливости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](10-13)% increased Damage per Endurance Charge"
+	[tag]"name RU"		[value]"[завоевания](10-13)% увеличение урона за заряд выносливости"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](3-4)% increased Damage per Endurance Charge"
+	[tag]"name RU"		[value]"[Военный](3-4)% увеличение урона за заряд выносливости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](14-17)% increased Damage per Endurance Charge"
+	[tag]"name RU"		[value]"[завоевания](14-17)% увеличение урона за заряд выносливости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](8-10)% increased Damage per Endurance Charge"
+	[tag]"name RU"		[value]"[завоевания](8-10)% увеличение урона за заряд выносливости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](5-6)% increased Damage per Endurance Charge"
+	[tag]"name RU"		[value]"[Военный](5-6)% увеличение урона за заряд выносливости"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](18-22)% increased Damage over Time"
+	[tag]"name RU"		[value]"[Военный](18-22)% увеличение постепенного урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](23-26)% increased Damage over Time"
+	[tag]"name RU"		[value]"[Военный](23-26)% увеличение постепенного урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](27-30)% increased Damage over Time"
+	[tag]"name RU"		[value]"[Военный](27-30)% увеличение постепенного урона"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Determination has (40-50)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[завоевания](40-50)% увеличение эффективности удержания маны Решимостью"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](23-27)% increased Physical Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[завоевания](23-27)% увеличение физического урона от атак с парным оружием в руках"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](28-32)% increased Physical Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[завоевания](28-32)% увеличение физического урона от атак с парным оружием в руках"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](33-37)% increased Physical Attack Damage while Dual Wielding"
+	[tag]"name RU"		[value]"[завоевания](33-37)% увеличение физического урона от атак с парным оружием в руках"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](12-14)% increased Elemental Damage"
+	[tag]"name RU"		[value]"[Военный](12-14)% увеличение урона от стихий"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](15-18)% increased Elemental Damage"
+	[tag]"name RU"		[value]"[Военный](15-18)% увеличение урона от стихий"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](19-22)% increased Elemental Damage"
+	[tag]"name RU"		[value]"[Военный](19-22)% увеличение урона от стихий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Gain 1 Endurance Charge every second if you've been Hit Recently"
+	[tag]"name RU"		[value]"[завоевания]Дарует зарядов выносливости каждую секунду, если вы недавно получали удар: 1"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](5-7)% chance to Avoid Fire Damage from Hits"
+	[tag]"name RU"		[value]"[завоевания](5-7)% шанс избежать урона от огня от ударов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](8-10)% chance to Avoid Fire Damage from Hits"
+	[tag]"name RU"		[value]"[завоевания](8-10)% шанс избежать урона от огня от ударов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](0.2-0.4)% of Fire Damage Leeched as Energy Shield"
+	[tag]"name RU"		[value]"[Военный](0.2-0.4)% урона от огня похищается в виде энергетического щита"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](0.3-0.5)% of Fire Damage Leeched as Life"
+	[tag]"name RU"		[value]"[Военный](0.3-0.5)% урона от огня похищается в виде здоровья"
+
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](16-20)% increased Fire Damage"
+	[tag]"name RU"		[value]"[Военный](16-20)% увеличение урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](21-25)% increased Fire Damage"
+	[tag]"name RU"		[value]"[Военный](21-25)% увеличение урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](26-30)% increased Fire Damage"
+	[tag]"name RU"		[value]"[Военный](26-30)% увеличение урона от огня"
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](11-15)% chance to inflict Fire Exposure on Hit"
+	[tag]"name RU"		[value]"[завоевания](11-15)% шанс наложить восприимчивость к огню при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](16-20)% chance to inflict Fire Exposure on Hit"
+	[tag]"name RU"		[value]"[завоевания](16-20)% шанс наложить восприимчивость к огню при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Damage Penetrates 6% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Урон пробивает 6% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Damage Penetrates (10-11)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Урон пробивает (10-11)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Damage Penetrates (4-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Урон пробивает (4-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Damage Penetrates (12-13)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Урон пробивает (12-13)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Damage Penetrates 7% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Урон пробивает 7% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Damage Penetrates (14-15)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Урон пробивает (14-15)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Damage Penetrates 8% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Урон пробивает 8% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Damage Penetrates (8-10)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Урон пробивает (8-10)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Curse Enemies with Flammability on Hit, with 20% increased Effect"
+	[tag]"name RU"		[value]"[завоевания]При нанесении удара проклинает врагов Горючестью с усиленным на 20% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Curse Enemies with Flammability on Hit, with 40% increased Effect"
+	[tag]"name RU"		[value]"[завоевания]При нанесении удара проклинает врагов Горючестью с усиленным на 40% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Curse Enemies with Flammability on Hit, with 32% increased Effect"
+	[tag]"name RU"		[value]"[завоевания]При нанесении удара проклинает врагов Горючестью с усиленным на 32% эффектом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Gain Accuracy Rating equal to your Strength"
+	[tag]"name RU"		[value]"[завоевания]Дарует меткость, равную вашей силе"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]When you Kill a Rare Monster, (21-30)% chance to gain one of its Modifiers for 10 seconds"
+	[tag]"name RU"		[value]"[завоевания]Когда вы убиваете редкого монстра, вы имеете (21-30)% шанс получить одно из его свойств на 10 секунд"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]When you Kill a Rare Monster, (31-40)% chance to gain one of its Modifiers for 10 seconds"
+	[tag]"name RU"		[value]"[завоевания]Когда вы убиваете редкого монстра, вы имеете (31-40)% шанс получить одно из его свойств на 10 секунд"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](2-3) to (4-5) Fire Damage per Endurance Charge"
+	[tag]"name RU"		[value]"[Военный]От (2-3) до (4-5) урона от огня за заряд выносливости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](3-4) to (6-7) Fire Damage per Endurance Charge"
+	[tag]"name RU"		[value]"[Военный]От (3-4) до (6-7) урона от огня за заряд выносливости"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Attacks have 15% chance to Maim on Hit"
+	[tag]"name RU"		[value]"[завоевания]Атаки имеют 15% шанс изувечить при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Attacks have 20% chance to Maim on Hit"
+	[tag]"name RU"		[value]"[завоевания]Атаки имеют 20% шанс изувечить при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](7-9)% increased Armour"
+	[tag]"name RU"		[value]"[Военный](7-9)% повышение брони"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](10-12)% increased Armour"
+	[tag]"name RU"		[value]"[Военный](10-12)% повышение брони"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](13-15)% increased Armour"
+	[tag]"name RU"		[value]"[Военный](13-15)% повышение брони"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]+1 to Maximum Power Charges"
+	[tag]"name RU"		[value]"[Военный]+1 к максимуму зарядов энергии"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](8-11)% increased Life Recovery rate"
+	[tag]"name RU"		[value]"[завоевания](8-11)% повышение скорости восстановления здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](7-9)% increased Life Recovery rate"
+	[tag]"name RU"		[value]"[завоевания](7-9)% повышение скорости восстановления здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](10-12)% increased Life Recovery rate"
+	[tag]"name RU"		[value]"[завоевания](10-12)% повышение скорости восстановления здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](12-15)% increased Life Recovery rate"
+	[tag]"name RU"		[value]"[завоевания](12-15)% повышение скорости восстановления здоровья"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](5-7)% chance to Avoid Lightning Damage from Hits"
+	[tag]"name RU"		[value]"[завоевания](5-7)% шанс избежать урона от молнии от ударов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](8-10)% chance to Avoid Lightning Damage from Hits"
+	[tag]"name RU"		[value]"[завоевания](8-10)% шанс избежать урона от молнии от ударов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](10-13)% increased Physical Damage 10% chance to Maim on Hit"
+	[tag]"name RU"		[value]"[завоевания](10-13)% увеличение физического урона 10% шанс изувечить при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](14-16)% increased Physical Damage 15% chance to Maim on Hit"
+	[tag]"name RU"		[value]"[завоевания](14-16)% увеличение физического урона 15% шанс изувечить при нанесении удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](17-20)% increased Physical Damage 20% chance to Maim on Hit"
+	[tag]"name RU"		[value]"[завоевания](17-20)% увеличение физического урона 20% шанс изувечить при нанесении удара"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (15-19) to (28-34) Fire Damage Attacks with this Weapon Penetrate (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (15-19) до (28-34) урона от огня Атаки этим оружием пробивают (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (8-10) to (15-18) Fire Damage Attacks with this Weapon Penetrate (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (8-10) до (15-18) урона от огня Атаки этим оружием пробивают (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (12-16) to (24-28) Fire Damage Attacks with this Weapon Penetrate (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (12-16) до (24-28) урона от огня Атаки этим оружием пробивают (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (22-30) to (44-52) Fire Damage Attacks with this Weapon Penetrate (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (22-30) до (44-52) урона от огня Атаки этим оружием пробивают (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (31-41) to (61-72) Fire Damage Attacks with this Weapon Penetrate (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (31-41) до (61-72) урона от огня Атаки этим оружием пробивают (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (17-22) to (33-39) Fire Damage Attacks with this Weapon Penetrate (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (17-22) до (33-39) урона от огня Атаки этим оружием пробивают (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (39-52) to (78-90) Fire Damage Attacks with this Weapon Penetrate (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (39-52) до (78-90) урона от огня Атаки этим оружием пробивают (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (21-28) to (42-49) Fire Damage Attacks with this Weapon Penetrate (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (21-28) до (42-49) урона от огня Атаки этим оружием пробивают (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (26-35) to (53-61) Fire Damage Attacks with this Weapon Penetrate (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (26-35) до (53-61) урона от огня Атаки этим оружием пробивают (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (49-65) to (99-114) Fire Damage Attacks with this Weapon Penetrate (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (49-65) до (99-114) урона от огня Атаки этим оружием пробивают (5-7)% сопротивления огню"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Attacks with this Weapon Penetrate (9-10)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Атаки этим оружием пробивают (9-10)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Attacks with this Weapon Penetrate (11-12)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Атаки этим оружием пробивают (11-12)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Attacks with this Weapon Penetrate (13-15)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Атаки этим оружием пробивают (13-15)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]+1 to Level of Socketed Active Skill Gems"
+	[tag]"name RU"		[value]"[Военный]+1 к уровню размещённых камней активных умений"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]+2 to Level of Socketed Fire Gems"
+	[tag]"name RU"		[value]"[Военный]+2 к уровню размещённых камней огня"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](25-34)% increased Physical Damage (10-15)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Военный](25-34)% увеличение физического урона (10-15)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](35-44)% increased Physical Damage (10-15)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Военный](35-44)% увеличение физического урона (10-15)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](45-54)% increased Physical Damage (10-15)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Военный](45-54)% увеличение физического урона (10-15)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](55-64)% increased Physical Damage (10-15)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Военный](55-64)% увеличение физического урона (10-15)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](65-69)% increased Physical Damage (10-15)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Военный](65-69)% увеличение физического урона (10-15)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](25-34)% increased Physical Damage (3-4)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Военный](25-34)% увеличение физического урона (3-4)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](35-44)% increased Physical Damage (3-4)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Военный](35-44)% увеличение физического урона (3-4)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](45-54)% increased Physical Damage (3-4)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Военный](45-54)% увеличение физического урона (3-4)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](55-64)% increased Physical Damage (3-4)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Военный](55-64)% увеличение физического урона (3-4)% повышение скорости атаки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](65-69)% increased Physical Damage (3-4)% increased Attack Speed"
+	[tag]"name RU"		[value]"[Военный](65-69)% увеличение физического урона (3-4)% повышение скорости атаки"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](25-34)% increased Physical Damage (10-15)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Военный](25-34)% увеличение физического урона (10-15)% к глобальному множителю критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](35-44)% increased Physical Damage (10-15)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Военный](35-44)% увеличение физического урона (10-15)% к глобальному множителю критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](45-54)% increased Physical Damage (10-15)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Военный](45-54)% увеличение физического урона (10-15)% к глобальному множителю критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](55-64)% increased Physical Damage (10-15)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Военный](55-64)% увеличение физического урона (10-15)% к глобальному множителю критического удара"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](65-69)% increased Physical Damage (10-15)% to Global Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[Военный](65-69)% увеличение физического урона (10-15)% к глобальному множителю критического удара"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]+2 to Weapon Range"
+	[tag]"name RU"		[value]"[завоевания]+2 к дальности оружия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]+3 to Weapon Range"
+	[tag]"name RU"		[value]"[завоевания]+3 к дальности оружия"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](41-55)% increased Mana Regeneration Rate"
+	[tag]"name RU"		[value]"[завоевания](41-55)% повышение скорости регенерации маны"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](56-70)% increased Mana Regeneration Rate"
+	[tag]"name RU"		[value]"[завоевания](56-70)% повышение скорости регенерации маны"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]+2% to maximum Chance to Block Attack Damage"
+	[tag]"name RU"		[value]"[завоевания]+2% к максимальному шансу блокировать урон от атак"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]+1 to Maximum Endurance Charges"
+	[tag]"name RU"		[value]"[Военный]+1 к максимуму зарядов выносливости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]+1 to Maximum Frenzy Charges"
+	[tag]"name RU"		[value]"[Военный]+1 к максимуму зарядов ярости"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Recover (3-4)% of Life on Kill"
+	[tag]"name RU"		[value]"[завоевания]Восстанавливает (3-4)% здоровья при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Recover (5-6)% of Life on Kill"
+	[tag]"name RU"		[value]"[завоевания]Восстанавливает (5-6)% здоровья при убийстве"
+"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](15-17)% increased Melee Damage"
+	[tag]"name RU"		[value]"[Военный](15-17)% увеличение урона в ближнем бою"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](18-22)% increased Melee Damage"
+	[tag]"name RU"		[value]"[Военный](18-22)% увеличение урона в ближнем бою"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](23-26)% increased Melee Damage"
+	[tag]"name RU"		[value]"[Военный](23-26)% увеличение урона в ближнем бою"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](27-30)% increased Melee Damage"
+	[tag]"name RU"		[value]"[Военный](27-30)% увеличение урона в ближнем бою"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](18-21)% increased Melee Damage"
+	[tag]"name RU"		[value]"[Военный](18-21)% увеличение урона в ближнем бою"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](22-25)% increased Melee Damage"
+	[tag]"name RU"		[value]"[Военный](22-25)% увеличение урона в ближнем бою"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](20-25)% increased Melee Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[завоевания](20-25)% увеличение урона в ближнем бою во время действия эффекта любого флакона"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](26-30)% increased Melee Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[завоевания](26-30)% увеличение урона в ближнем бою во время действия эффекта любого флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](31-35)% increased Melee Damage during any Flask Effect"
+	[tag]"name RU"		[value]"[завоевания](31-35)% увеличение урона в ближнем бою во время действия эффекта любого флакона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]+2 to Melee Strike Range"
+	[tag]"name RU"		[value]"[завоевания]+2 к дальности ударов ближнего боя"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]+2 to Melee Strike Range if you have Killed Recently"
+	[tag]"name RU"		[value]"[завоевания]+2 к дальности ударов ближнего боя, если недавно вы совершали убийство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]+3 to Melee Strike Range if you have Killed Recently"
+	[tag]"name RU"		[value]"[завоевания]+3 к дальности ударов ближнего боя, если недавно вы совершали убийство"
+
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]+1 to Minimum Endurance Charges"
+	[tag]"name RU"		[value]"[завоевания]+1 к минимуму зарядов выносливости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]+2 to Minimum Endurance Charges"
+	[tag]"name RU"		[value]"[завоевания]+2 к минимуму зарядов выносливости"
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Minions have (21-26)% increased maximum Life"
+	[tag]"name RU"		[value]"[завоевания]Приспешники имеют (21-26)% увеличение максимума здоровья"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Minions have (27-30)% increased maximum Life"
+	[tag]"name RU"		[value]"[завоевания]Приспешники имеют (27-30)% увеличение максимума здоровья"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Nearby Enemies have -9% to Fire Resistance"
+	[tag]"name RU"		[value]"[завоевания]Ближайшие враги имеют -9% к сопротивлению огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](5-8)% increased Strength"
+	[tag]"name RU"		[value]"[завоевания](5-8)% повышение силы"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](9-12)% increased Strength"
+	[tag]"name RU"		[value]"[завоевания](9-12)% повышение силы"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Gain (3-5)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Военный]Дарует (3-5)% от физического урона в виде дополнительного урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Gain (5-10)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Военный]Дарует (5-10)% от физического урона в виде дополнительного урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Gain (7-12)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Военный]Дарует (7-12)% от физического урона в виде дополнительного урона от огня"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Gain (16-20)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Военный]Дарует (16-20)% от физического урона в виде дополнительного урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Gain (13-17)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Военный]Дарует (13-17)% от физического урона в виде дополнительного урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Gain (21-26)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Военный]Дарует (21-26)% от физического урона в виде дополнительного урона от огня"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Gain (11-15)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Военный]Дарует (11-15)% от физического урона в виде дополнительного урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Gain (6-8)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Военный]Дарует (6-8)% от физического урона в виде дополнительного урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Gain (27-30)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Военный]Дарует (27-30)% от физического урона в виде дополнительного урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Gain (18-20)% of Physical Damage as Extra Fire Damage"
+	[tag]"name RU"		[value]"[Военный]Дарует (18-20)% от физического урона в виде дополнительного урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](100-109)% increased Physical Damage over Time"
+	[tag]"name RU"		[value]"[Военный](100-109)% увеличение постепенного физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](60-69)% increased Physical Damage over Time"
+	[tag]"name RU"		[value]"[Военный](60-69)% увеличение постепенного физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](110-119)% increased Physical Damage over Time"
+	[tag]"name RU"		[value]"[Военный](110-119)% увеличение постепенного физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](70-79)% increased Physical Damage over Time"
+	[tag]"name RU"		[value]"[Военный](70-79)% увеличение постепенного физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](120-129)% increased Physical Damage over Time"
+	[tag]"name RU"		[value]"[Военный](120-129)% увеличение постепенного физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](80-89)% increased Physical Damage over Time"
+	[tag]"name RU"		[value]"[Военный](80-89)% увеличение постепенного физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](130-134)% increased Physical Damage over Time"
+	[tag]"name RU"		[value]"[Военный](130-134)% увеличение постепенного физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](90-94)% increased Physical Damage over Time"
+	[tag]"name RU"		[value]"[Военный](90-94)% увеличение постепенного физического урона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](5-10)% of Physical Damage from Hits taken as Fire Damage"
+	[tag]"name RU"		[value]"[Военный](5-10)% получаемого физического урона от ударов становится уроном от огня"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](4-6)% of Physical Damage from Hits taken as Fire Damage"
+	[tag]"name RU"		[value]"[Военный](4-6)% получаемого физического урона от ударов становится уроном от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](11-15)% of Physical Damage from Hits taken as Fire Damage"
+	[tag]"name RU"		[value]"[Военный](11-15)% получаемого физического урона от ударов становится уроном от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](7-10)% of Physical Damage from Hits taken as Fire Damage"
+	[tag]"name RU"		[value]"[Военный](7-10)% получаемого физического урона от ударов становится уроном от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Pride has (40-50)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[завоевания](40-50)% увеличение эффективности удержания маны Гордостью"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](18-22)% increased Projectile Attack Damage"
+	[tag]"name RU"		[value]"[Военный](18-22)% увеличение урона от атак снарядами"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](23-26)% increased Projectile Attack Damage"
+	[tag]"name RU"		[value]"[Военный](23-26)% увеличение урона от атак снарядами"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](27-30)% increased Projectile Attack Damage"
+	[tag]"name RU"		[value]"[Военный](27-30)% увеличение урона от атак снарядами"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Purity of Fire has (50-60)% increased Mana Reservation Efficiency"
+	[tag]"name RU"		[value]"[завоевания](50-60)% увеличение эффективности удержания маны Спасением от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Recover (3-5)% of Life when you Block"
+	[tag]"name RU"		[value]"[завоевания]Восстанавливает (3-5)% здоровья при блоке"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]You and your Minions take 100% reduced Reflected Physical Damage"
+	[tag]"name RU"		[value]"[Военный]Вы и ваши приспешники получаете уменьшенный на 100% отраженный физический урон"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Remove Ignite and Burning when you use a Flask"
+	[tag]"name RU"		[value]"[завоевания]Снимает поджог и горение при использовании флакона"
+
+	
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (8-11) to (17-19) Fire Damage to Spells Damage Penetrates (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (8-11) до (17-19) урона от огня к чарам Урон пробивает (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (6-8) to (12-14) Fire Damage to Spells Damage Penetrates 4% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (6-8) до (12-14) урона от огня к чарам Урон пробивает 4% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (10-13) to (19-22) Fire Damage to Spells Damage Penetrates 4% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (10-13) до (19-22) урона от огня к чарам Урон пробивает 4% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (13-17) to (26-30) Fire Damage to Spells Damage Penetrates (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (13-17) до (26-30) урона от огня к чарам Урон пробивает (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (18-24) to (36-42) Fire Damage to Spells Damage Penetrates (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (18-24) до (36-42) урона от огня к чарам Урон пробивает (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (13-18) to (27-31) Fire Damage to Spells Damage Penetrates 4% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (13-18) до (27-31) урона от огня к чарам Урон пробивает 4% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (23-30) to (45-53) Fire Damage to Spells Damage Penetrates (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (23-30) до (45-53) урона от огня к чарам Урон пробивает (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (17-22) to (33-39) Fire Damage to Spells Damage Penetrates 4% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (17-22) до (33-39) урона от огня к чарам Урон пробивает 4% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (28-38) to (57-66) Fire Damage to Spells Damage Penetrates (5-7)% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (28-38) до (57-66) урона от огня к чарам Урон пробивает (5-7)% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Adds (21-28) to (42-49) Fire Damage to Spells Damage Penetrates 4% Fire Resistance"
+	[tag]"name RU"		[value]"[Военный]Добавляет от (21-28) до (42-49) урона от огня к чарам Урон пробивает 4% сопротивления огню"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](18-22)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Военный](18-22)% увеличение урона от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](23-26)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Военный](23-26)% увеличение урона от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's](27-30)% increased Spell Damage"
+	[tag]"name RU"		[value]"[Военный](27-30)% увеличение урона от чар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](15-18)% chance to gain Unholy Might for 3 seconds on Kill"
+	[tag]"name RU"		[value]"[завоевания](15-18)% шанс получить Нечестивое могущество на 3 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](19-22)% chance to gain Unholy Might for 3 seconds on Kill"
+	[tag]"name RU"		[value]"[завоевания](19-22)% шанс получить Нечестивое могущество на 3 секунды при убийстве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest](23-25)% chance to gain Unholy Might for 3 seconds on Kill"
+	[tag]"name RU"		[value]"[завоевания](23-25)% шанс получить Нечестивое могущество на 3 секунды при убийстве"
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Warcry Skills have (21-25)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Военный]Боевые кличи имеют (21-25)% увеличение области действия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Warlord's"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Warlord's]Warcry Skills have (26-30)% increased Area of Effect"
+	[tag]"name RU"		[value]"[Военный]Боевые кличи имеют (26-30)% увеличение области действия"
+
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Socketed Attacks have -15 to Total Mana Cost"
+	[tag]"name RU"		[value]"[завоевания]-15 к итоговому расходу маны размещёнными атаками"
+
+	

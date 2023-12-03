@@ -1,0 +1,2914 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Adrenaline"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Адреналин"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Advance Guard"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Оборона наступлением"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Aerialist"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Акробат"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Aerodynamics"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Аэродинамика"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Agent of Destruction"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Посредник разрушения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Aggressive Defence"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Агрессивная оборона"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Alchemist"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Алхимик"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Ancestral Echo"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Эхо предков"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Ancestral Guidance"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Наставление предков"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Ancestral Inspiration"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Вдохновение предков"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Ancestral Might"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Мощь предков"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Ancestral Preservation"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Охрана предков"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Ancestral Reach"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Охват предков"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Antifreeze"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Незамораживаемость"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Antivenom"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Противояд"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Arcane Adept"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Адепт колдовства"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Arcane Heroism"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Колдовская доблесть"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Arcane Pyrotechnics"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Колдовская пиротехника"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Arcing Shot"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Искристый выстрел"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Assert Dominance"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Утвержденное господство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Astonishing Affliction"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Удивительный недуг"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Basics of Pain"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Основы боли"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Battle-Hardened"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Закаленный в битве"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Battlefield Dominator"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Повелитель поля боя"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Blacksmith"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Кузнец"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Blanketed Snow"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Снежное покрывало"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Blast-Freeze"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Взрывной мороз"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Blessed"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Благословенный"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Blessed Rebirth"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Благословенное возрождение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Blizzard Caller"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Зовущий метель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Blood Artist"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Художник кровью"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Bloodscent"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Запах крови"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Blowback"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Отдача"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Bodyguards"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Телохранители"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Born of Chaos"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Рожденный из хаоса"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Brand Loyalty"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Верность печатям"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Brewed for Potency"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Подготовленный потенциал"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Broadside"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Бортовой залп"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Brush with Death"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Игры со смертью"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Brutal Infamy"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Жестокая резня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Burden Projection"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Гнетущий посыл"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Burning Bright"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Яркое зарево"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Calamitous"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Пагубность"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Call to the Slaughter"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Призыв к бойне"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Capacitor"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Накопитель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Careful Handling"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Тщательная обработка"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Chilling Presence"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Леденящее присутствие"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Chip Away"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Устранение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Circling Oblivion"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Окружающее забвение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Clarity of Purpose"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Ясность цели"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Cold-Blooded Killer"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Хладнокровный убийца"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Cold Conduction"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Холодная проводимость"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Cold to the Core"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Мороз до костей"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Combat Rhythm"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Боевой ритм"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Compound Injury"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Сложная травма"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Conjured Wall"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Сотворенная стена"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Conservation of Energy"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Сохранение энергии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Cooked Alive"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Приготовленный заживо"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Corrosive Elements"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Агрессивные стихии"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Cremator"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Сжигатель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Cry Wolf"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Волчий вой"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Cult-Leader"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Лидер культа"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Daring Ideas"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Смелые идеи"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Doedre's Spite"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Злоба Доэдре"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Dark Ideation"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Темное воплощение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Dark Messenger"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Темный посланник"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Darting Movements"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Резкие движения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Deadly Repartee"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Смертельная находчивость"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Deep Chill"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Глубокое охлаждение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Devastator"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Разрушитель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Disciples"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Последователи"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Disease Vector"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Переносчик болезни"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Disorienting Display"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Отвлекающий маневр"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Disorienting Wounds"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Дизориентирующие раны"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Distilled Perfection"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Очищенное совершенство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Doedre's Apathy"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Апатия Доэдре"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Doedre's Gluttony"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Ненасытность Доэдре"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Doryani's Lesson"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Урок Дориани"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Dragon Hunter"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Охотник на драконов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Dread March"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Марш страха"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Drive the Destruction"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Разрушительная горячность"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Eldritch Inspiration"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Жуткое вдохновение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Elegant Form"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Элегантная форма"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Empowered Envoy"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Эмиссар"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Endbringer"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Вестник исхода"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Enduring Composure"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Стойкое хладнокровие"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Enduring Focus"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Стойкое средоточие"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Enduring Ward"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Выносливый хранитель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Energy From Naught"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Энергия из ничего"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Essence Rush"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Прилив духа"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Eternal Suffering"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Вечные страдания"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Evil Eye"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Сглаз"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Expansive Might"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Обширная мощь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Expendability"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Одноразовость"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Expert Sabotage"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Умелая диверсия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Exploit Weakness"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Использование слабостей"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Explosive Force"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Взрывная сила"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Exposure Therapy"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Длительная терапия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Eye of the Storm"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Око бури"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Eye to Eye"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - С глазу на глаз"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Fan of Blades"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Веер клинков"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Fan the Flames"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Раздувшееся пламя"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Fasting"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Голодание"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Fearsome Warrior"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Грозный воин"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Feasting Fiends"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Пирующая нечисть"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Feast of Flesh"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Пир плоти"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Feed the Fury"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Подпитка гнева"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Fettle"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Хорошая форма"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Fire Attunement"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - В гармонии с огнем"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Spiteful Presence"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Злобное присутствие"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Flexible Sentry"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Гибкий страж"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Flow of Life"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Течение жизни"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Follow-Through"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Последствия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Force Multiplier"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Множитель силы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Fuel the Fight"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Топливо для битвы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Furious Assault"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Неистовое наступление"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Genius"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Гений"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Gladiator's Fortitude"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Стойкость гладиатора"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Graceful Execution"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Изящное исполнение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Grand Design"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Великолепный план"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Grim Oath"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Мрачная клятва"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Introspection"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Самоанализ"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Guerilla Tactics"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Партизанская тактика"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Haemorrhage"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Кровоизлияние"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Haunting Shout"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Устрашающий крик"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Heart of Iron"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Железное сердце"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Heavy Hitter"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Тяжелые удары"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Heraldry"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Геральдика"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Hex Breaker"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Чаролом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Hibernator"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Морозостойкий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Hit and Run"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Бей и беги"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Holistic Health"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Целостность"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Holy Conquest"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Святое завоевание"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Hound's Mark"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Метка гончей"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Hulking Corpses"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Неуклюжие мертвецы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Improvisor"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Импровизатор"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Insatiable Killer"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Ненасытный убийца"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Inspired Oppression"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Вдохновленное угнетение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Insulated"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Изолированный"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Invigorating Portents"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Бодрящие знамения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Iron Breaker"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Железный сокрушитель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Lasting Impression"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Неизгладимое впечатление"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Lead By Example"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Подающий пример"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Life from Death"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Жизнь из смерти"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Liquid Inspiration"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Жидкое вдохновение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Lord of Drought"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Повелитель засухи"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Low Tolerance"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Слабый иммунитет"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Mage Bane"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Погибель магов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Mage Hunter"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Охотник на магов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Magnifier"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Увеличитель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Martial Mastery"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Боевое Мастерство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Martial Momentum"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Боевой импульс"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Martial Prowess"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Боевая доблесть"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Master of the Maelstrom"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Повелитель бури"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Master of Command"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Прирожденный командир"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Master of Fear"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Мастер страха"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Master of Fire"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Мастер огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Master the Fundamentals"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Мастер основ"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Mender's Wellspring"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Восстанавливающий источник"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Militarism"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Милитаризм"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Mindfulness"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Осознанность"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Misery Everlasting"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Вечное несчастье"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Mob Mentality"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Стадное чувство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Molten One's Mark"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Метка Расплавленного"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Mystical Ward"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Мистическая защита"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Natural Vigour"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Природная энергия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Non-Flammable"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Невоспламеняющийся"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Numbing Elixir"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Притупляющий эликсир"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is One with the Shield"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Щитоносец"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Openness"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Открытость"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Opportunistic Fusilade"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Пальба наудачу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Overlord"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Повелитель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Overshock"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Избыточный шок"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Overwhelming Malice"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Подавляющая злоба"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Paralysis"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Паралич"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Peace Amidst Chaos"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Мир среди хаоса"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Peak Vigour"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Пик силы"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Phlebotomist"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Флеботомист"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Powerful Assault"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Мощное наступление"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Powerful Ward"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Могучий хранитель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Practiced Caster"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Умелый чародей"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Destructive Aspect"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Аспект разрушения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Precise Focus"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Меткое средоточие"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Precise Retaliation"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Точное возмездие"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Pressure Points"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Болевые точки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Primordial Bond"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Первобытная связь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Prismatic Carapace"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Радужный панцирь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Prismatic Dance"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Радужный танец"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Prismatic Heart"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Радужное сердце"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Prodigious Defence"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Потрясающая защита"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Provocateur"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Провокатор"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Pure Agony"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Чистая агония"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Pure Aptitude"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Чистые наклонности"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Electric Presence"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Громовое присутствие"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Pure Guile"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Чистое коварство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Pure Might"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Чистая мощь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Purposeful Harbinger"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Целеустремленный предвестник"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Quick Getaway"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Быстрое бегство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Quick and Deadly"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Убийственно быстрый"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Rapid Infusion"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Быстрое вливание"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Rattling Bellow"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Грохочущий рев"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Raze and Pillage"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Грабь и разоряй"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Readiness"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Готовность"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Remarkable"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Впечатляющий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Rend"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Рваная рана"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Renewal"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Обновление"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Repeater"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Повторитель"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Replenishing Presence"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Восполняющее присутствие"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Riot Queller"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Подавитель бунта"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Rot-Resistant"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Гнилостойкий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Rote Reinforcement"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Постоянная поддержка"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Rotten Claws"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Гнилые когти"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Run Through"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Пробежка"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Sadist"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Садист"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Sage"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Мудрец"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Sap Psyche"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Истощение души"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Savage Response"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Жестокий ответ"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Savour the Moment"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Наслаждение моментом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Scintillating Idea"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Искрометная идея"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Seal Mender"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Хранитель печати"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Second Skin"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Вторая кожа"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Seeker Runes"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Ищущие руны"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Self-Control"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Самоконтроль"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Self-Fulfilling Prophecy"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Самоисполняющееся пророчество"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Septic Spells"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Заражающие чары"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Set and Forget"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Сделать и забыть"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Shifting Shadow"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Изменчивая тень"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Shrieking Bolts"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Кричащие снаряды"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Skeletal Atrophy"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Костное истощение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Skullbreaker"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Ломатель черепов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Sleepless Sentries"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Неспящие часовые"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Smite the Weak"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Покарай слабых"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Smoking Remains"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Дымящиеся останки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Snaring Spirits"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Опутывающие духи"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Snowstorm"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Снежная буря"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Special Reserve"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Специальный запас"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Spiked Concoction"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Шипастое варево"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Spring Back"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Успешное возвращение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Volatile Presence"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Взрывное присутствие"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Steady Torment"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Стойкие мучения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Stoic Focus"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Стоическое средоточие"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Storm Drinker"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Пожинающий бурю"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Stormrider"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Оседлавший грозу"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Storm's Hand"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Длань шторма"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Streamlined"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Рационализм"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Strike Leader"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Предводитель бунта"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Stubborn Student"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Упёртый воспитанник"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Student of Decay"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Адепт разложения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Sublime Form"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Возвышенная форма"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Sublime Sensation"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Возвышенные ощущения"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Mortifying Aspect"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Аспект подавления"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Surefooted Striker"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Нападающий"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Surging Vitality"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Бурная живучесть"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Surprise Sabotage"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Внезапная диверсия"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Tempered Arrowheads"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Закаленные наконечники"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Tempt the Storm"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Искушение бури"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Thaumophage"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Чаромант"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Thunderstruck"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Пораженный громом"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Titanic Swings"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Титанические взмахи"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Touch of Cruelty"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Толика жестокости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Towering Threat"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Возрастающая угроза"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Uncompromising"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Бескомпромиссный"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Unholy Grace"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Нечестивая милость"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Unspeakable Gifts"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Несказанные дары"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Untouchable"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Неприкасаемый"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Unwavering Focus"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Непоколебимое средоточие"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Unwaveringly Evil"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Непоколебимое зло"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Vast Power"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Огромная сила"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Righteous Path"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Праведный путь"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Veteran Defender"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Бывалый защитник"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Vicious Bite"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Яростный укус"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Vicious Guard"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Жестокий охранник"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Vicious Skewering"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Яростное пронзание"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Victim Maker"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Жертводел"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Vile Reinvigoration"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Мерзкое оживление"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Vital Focus"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Сосредоточенное восстановление"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Vivid Hues"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Насыщенные оттенки"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Wall of Muscle"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Стена мышц"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Forbidden Words"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Запретные слова"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Warning Call"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Предупреждающий зов"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Wasting Affliction"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Истощающий недуг"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Weight Advantage"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Преимущество в весе"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Inevitable Doom"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Неизбежный Рок"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Wicked Pall"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Злобная пелена"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"of Significance"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+
+	[tag]"name EN"		[value]"[of Significance]1 Added Passive Skill is Widespread Destruction"
+	[tag]"name RU"		[value]"[существенности]1 добавленное пассивное умение - Всеобъемлющее разрушение"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Will Shaper"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Ваятель воли"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Wind-up"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Разогрев"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Frantic Aspect"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Аспект неистовости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Winter Prowler"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Зимний скиталец"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Wish for Death"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Желание смерти"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Wizardry"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Волшебство"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Wound Aggravation"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Усугубление ран"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"base name"	[value]"Notable"
+	[tag]"icon path"	[value]"NotableMediumClusterJewel"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[Notable]1 Added Passive Skill is Wrapped in Flame"
+	[tag]"name RU"		[value]"[Значимый]1 добавленное пассивное умение - Окутанный пламенем"
+
+	[tag]"icon path"	[value]"Active"

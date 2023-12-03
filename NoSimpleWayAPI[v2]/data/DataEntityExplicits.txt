@@ -2,7 +2,7 @@
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Squire's"
 
 	[tag]"name EN"		[value]"[Squire's](15-19)% increased Physical Damage (16-20) to Accuracy Rating"
@@ -18,7 +18,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Journeyman's"
 
 	[tag]"name EN"		[value]"[Journeyman's](20-24)% increased Physical Damage (21-46) to Accuracy Rating"
@@ -34,7 +34,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Reaver's"
 
 	[tag]"name EN"		[value]"[Reaver's](25-34)% increased Physical Damage (47-72) to Accuracy Rating"
@@ -50,7 +50,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Mercenary's"
 
 	[tag]"name EN"		[value]"[Mercenary's](35-44)% increased Physical Damage (73-97) to Accuracy Rating"
@@ -66,7 +66,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Champion's"
 
 	[tag]"name EN"		[value]"[Champion's](45-54)% increased Physical Damage (98-123) to Accuracy Rating"
@@ -82,7 +82,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Conqueror's"
 	[tag]"explicit tag"	[value]"base name collision"
 
@@ -99,7 +99,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Emperor's"
 
 	[tag]"name EN"		[value]"[Emperor's](65-74)% increased Physical Damage (150-174) to Accuracy Rating"
@@ -146,7 +146,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Heavy"
 
 	[tag]"name EN"		[value]"[Heavy](40-49)% increased Physical Damage"
@@ -159,7 +159,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Serrated"
 
 	[tag]"name EN"		[value]"[Serrated](50-64)% increased Physical Damage"
@@ -172,7 +172,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Wicked"
 
 	[tag]"name EN"		[value]"[Wicked](65-84)% increased Physical Damage"
@@ -185,7 +185,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Vicious"
 
 	[tag]"name EN"		[value]"[Vicious](85-109)% increased Physical Damage"
@@ -198,7 +198,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Bloodthirsty"
 
 	[tag]"name EN"		[value]"[Bloodthirsty](110-134)% increased Physical Damage"
@@ -211,7 +211,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Cruel"
 
 	[tag]"name EN"		[value]"[Cruel](135-154)% increased Physical Damage"
@@ -224,7 +224,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Tyrannical"
 
 	[tag]"name EN"		[value]"[Tyrannical](155-169)% increased Physical Damage"
@@ -265,12 +265,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Glinting"
 
-	[tag]"name EN"		[value]"[Glinting]Adds 2 to (4-5) Physical Damage"
-	[tag]"name RU"		[value]"[Рассекающий]Добавляет от 2 до (4-5) физического урона"
+	[tag]"name EN"		[value]"[Glinting]Adds [T9] Physical Damage to weapon or attacks"
+	[tag]"name RU"		[value]"[Рассекающий]Добавляет [T9] физический урон к оружию или атакам"
 	
 	[tag]"explicit tag"	[value]"T9"
-	[tag]"explicit tag"	[value]"One-handed attribute"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	
 	[tag]"damage type"	[value]"Physical"
 	[tag]"build type"	[value]"Attacker"
@@ -281,12 +279,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Burnished"
 
-	[tag]"name EN"		[value]"[Burnished]Adds (6-8) to (12-15) Physical Damage"
-	[tag]"name RU"		[value]"[Болезненный]Добавляет от (6-8) до (12-15) физического урона"
+	[tag]"name EN"		[value]"[Burnished]Adds [T8] Physical Damage to weapon or attacks"
+	[tag]"name RU"		[value]"[Болезненный]Добавляет [T8] физический урон к оружию или атакам"
 	
 	[tag]"explicit tag"	[value]"T8"
-	[tag]"explicit tag"	[value]"One-handed attribute"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	
 	[tag]"damage type"	[value]"Physical"
 	[tag]"build type"	[value]"Attacker"
@@ -297,12 +293,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Polished"
 
-	[tag]"name EN"		[value]"[Polished]Adds (10-13) to (21-25) Physical Damage"
-	[tag]"name RU"		[value]"[Ранящий]Добавляет от (10-13) до (21-25) физического урона"
+	[tag]"name EN"		[value]"[Polished]Adds [T7] Physical Damage to weapon or attacks"
+	[tag]"name RU"		[value]"[Ранящий]Добавляет [T7] физический урон к оружию или атакам"
 	
 	[tag]"explicit tag"	[value]"T7"
-	[tag]"explicit tag"	[value]"One-handed attribute"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	
 	[tag]"damage type"	[value]"Physical"
 	[tag]"build type"	[value]"Attacker"
@@ -313,12 +307,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Honed"
 
-	[tag]"name EN"		[value]"[Honed]Adds (13-17) to (28-32) Physical Damage"
-	[tag]"name RU"		[value]"[Разрубающий]Добавляет от (13-17) до (28-32) физического урона"
+	[tag]"name EN"		[value]"[Honed]Adds [T6] Physical Damage to weapon or attacks\n(6-8)% increased Trap Throwing Speed"
+	[tag]"name RU"		[value]"[Разрубающий]Добавляет [T6] физический урон к оружию или атакам\n(6-8)% повышение скорости броска ловушки"
 	
 	[tag]"explicit tag"	[value]"T6"
-	[tag]"explicit tag"	[value]"One-handed attribute"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	
 	[tag]"damage type"	[value]"Physical"
 	[tag]"build type"	[value]"Attacker"
@@ -329,12 +321,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Gleaming"
 
-	[tag]"name EN"		[value]"[Gleaming]Adds (16-22) to (35-40) Physical Damage"
-	[tag]"name RU"		[value]"[Калечащий]Добавляет от (16-22) до (35-40) физического урона"
+	[tag]"name EN"		[value]"[Gleaming]Adds [T5] Physical Damage to weapon or attacks"
+	[tag]"name RU"		[value]"[Калечащий]Добавляет [T5] физический урон к оружию или атакам"
 	
 	[tag]"explicit tag"	[value]"T5"
-	[tag]"explicit tag"	[value]"One-handed attribute"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	
 	[tag]"damage type"	[value]"Physical"
 	[tag]"build type"	[value]"Attacker"
@@ -345,12 +335,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Annealed"
 
-	[tag]"name EN"		[value]"[Annealed]Adds (20-28) to (43-51) Physical Damage"
-	[tag]"name RU"		[value]"[Убийственный]Добавляет от (20-28) до (43-51) физического урона"
+	[tag]"name EN"		[value]"[Annealed]Adds [T4] Physical Damage to weapon or attacks"
+	[tag]"name RU"		[value]"[Убийственный]Добавляет [T4] физический урон к оружию или атакам"
 	
 	[tag]"explicit tag"	[value]"T4"
-	[tag]"explicit tag"	[value]"One-handed attribute"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	
 	[tag]"damage type"	[value]"Physical"
 	[tag]"build type"	[value]"Attacker"
@@ -361,12 +349,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Razor-sharp"
 
-	[tag]"name EN"		[value]"[Razor-sharp]Adds (25-33) to (52-61) Physical Damage"
-	[tag]"name RU"		[value]"[Карающий]Добавляет от (25-33) до (52-61) физического урона"
+	[tag]"name EN"		[value]"[Razor-sharp]Adds [T3] Physical Damage to weapon or attacks"
+	[tag]"name RU"		[value]"[Карающий]Добавляет [T3] физический урон к оружию или атакам"
 	
 	[tag]"explicit tag"	[value]"T3"
-	[tag]"explicit tag"	[value]"One-handed attribute"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	
 	[tag]"damage type"	[value]"Physical"
 	[tag]"build type"	[value]"Attacker"
@@ -377,12 +363,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Tempered"
 
-	[tag]"name EN"		[value]"[Tempered]Adds (30-40) to (63-73) Physical Damage"
-	[tag]"name RU"		[value]"[Сокрушающий]Добавляет от (30-40) до (63-73) физического урона"
+	[tag]"name EN"		[value]"[Tempered]Adds [T2] Physical Damage to weapon or attacks"
+	[tag]"name RU"		[value]"[Сокрушающий]Добавляет [T2] физический урон к оружию или атакам"
 	
 	[tag]"explicit tag"	[value]"T2"
-	[tag]"explicit tag"	[value]"One-handed attribute"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	
 	[tag]"damage type"	[value]"Physical"
 	[tag]"build type"	[value]"Attacker"
@@ -392,12 +376,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Vulnerability"
 	[tag]"base name"	[value]"Flaring"
 
-	[tag]"name EN"		[value]"[Flaring]Adds (34-47) to (72-84) Physical Damage"
-	[tag]"name RU"		[value]"[Смертельный]Добавляет от (34-47) до (72-84) физического урона"
+	[tag]"name EN"		[value]"[Flaring]Adds [T1] Physical Damage to weapon or attacks"
+	[tag]"name RU"		[value]"[Смертельный]Добавляет [T1] физический урон к оружию или атакам"
 	
 	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-handed attribute"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	
 	[tag]"damage type"	[value]"Physical"
 	[tag]"build type"	[value]"Attacker"
@@ -597,14 +579,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"HeraldofIce"
 	[tag]"base name"	[value]"Frosted"
 
-	[tag]"name EN"		[value]"[Frosted]Adds (1-2) to (3-4) Cold Damage <one handed>\nAdds (2-3) to (6-7) Cold Damage <two handed>"
-	[tag]"name RU"		[value]"[Прохладный]Добавляет от (1-2) до (3-4) урона от холода <одноручки>\nДобавляет от (2-3) to (6-7) урона от огня <двуручки>"
+	[tag]"name EN"		[value]"[Frosted]Adds T10 cold damage to attacks or weapon\nAdds T9 cold damage to spells"
+	[tag]"name RU"		[value]"[Прохладный]Добавляет T10 урон холодом к оружию или атакам\n Добавляет T9 урон холодом к чарам"
 	
 	[tag]"explicit tag"	[value]"T10"
-	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"T9"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
 	
 	[tag]"damage type"	[value]"Cold"
 	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -612,14 +597,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"HeraldofIce"
 	[tag]"base name"	[value]"Chilled"
 
-	[tag]"name EN"		[value]"[Chilled]Adds (7-9) to (14-16) Cold Damage <one handed>\nAdds (12-17) to (26-30) Cold Damage <two handed>"
-	[tag]"name RU"		[value]"[Охлаждающий]Добавляет от (7-9) до (14-16) урона от холода <одноручки>\nДобавляет от (12-17) to (26-30) урона от огня <двуручки>"
+	[tag]"name EN"		[value]"[Chilled]Adds T9 cold damage to attacks or weapon\nAdds T8 cold damage to spells"
+	[tag]"name RU"		[value]"[Охлаждающий]Добавляет T9 урон холодом к оружию или атакам\n Добавляет T8 урон холодом к чарам"
 	
 	[tag]"explicit tag"	[value]"T9"
-	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"T8"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
 	
 	[tag]"damage type"	[value]"Cold"
 	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -627,14 +615,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"HeraldofIce"
 	[tag]"base name"	[value]"Icy"
 
-	[tag]"name EN"		[value]"[Icy]Adds (11-15) to (23-26) Cold Damage <one handed>\nAdds (29-40) to (58-68) Cold Damage <two handed>"
-	[tag]"name RU"		[value]"[Остужающий]Добавляет от (11-15) до (23-26) урона от холода <одноручки>\nДобавляет от (29-40) to (58-68) урона от огня <двуручки>"
+	[tag]"name EN"		[value]"[Icy]Adds T8 cold damage to attacks or weapon\nAdds T7 cold damage to spells"
+	[tag]"name RU"		[value]"[Остужающий]Добавляет T8 урон холодом к оружию или атакам\n Добавляет T7 урон холодом к чарам"
 	
 	[tag]"explicit tag"	[value]"T8"
-	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"T7"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
 	
 	[tag]"damage type"	[value]"Cold"
 	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -642,14 +633,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"HeraldofIce"
 	[tag]"base name"	[value]"Frigid"
 
-	[tag]"name EN"		[value]"[Frigid]Adds (16-21) to (31-37) Cold Damage <one handed>\nAdds (29-40) to (58-68) Cold Damage <two handed>"
-	[tag]"name RU"		[value]"[Холодный]Добавляет от (16-21) до (31-37) урона от холода <одноручки>\nДобавляет от (29-40) to (58-68) урона от огня <двуручки>"
+	[tag]"name EN"		[value]"[Frigid]Adds T7 cold damage to attacks or weapon\nAdds T6 cold damage to spells"
+	[tag]"name RU"		[value]"[Холодный]Добавляет T7 урон холодом к оружию или атакам\n Добавляет T6 урон холодом к чарам"
 	
 	[tag]"explicit tag"	[value]"T7"
-	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"T6"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
 	
 	[tag]"damage type"	[value]"Cold"
 	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -657,14 +651,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"HeraldofIce"
 	[tag]"base name"	[value]"Freezing"
 
-	[tag]"name EN"		[value]"[Freezing]Adds (22-30) to (44-51) Cold Damage <one handed>\nAdds (41-55) to (81-95) Cold Damage <two handed>"
-	[tag]"name RU"		[value]"[Замораживающий]Добавляет от (22-30) до (44-51) урона от холода <одноручки>\nДобавляет от (41-55) to (81-95) урона от огня <двуручки>"
+	[tag]"name EN"		[value]"[Freezing]Adds T6 cold damage to attacks or weapon\nAdds T5 cold damage to spells"
+	[tag]"name RU"		[value]"[Замораживающий]Добавляет T6 урон холодом к оружию или атакам\n Добавляет T5 урон холодом к чарам"
 	
 	[tag]"explicit tag"	[value]"T6"
-	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"T5"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
 	
 	[tag]"damage type"	[value]"Cold"
 	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -672,14 +669,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"HeraldofIce"
 	[tag]"base name"	[value]"Frozen"
 
-	[tag]"name EN"		[value]"[Frozen]Adds (31-42) to (62-71) Cold Damage <one handed>\nAdds (57-77) to (114-132) Cold Damage <two handed>"
-	[tag]"name RU"		[value]"[Морозный]Добавляет от (31-42) до (62-71) урона от холода <одноручки>\nДобавляет от (57-77) to (114-132) урона от огня <двуручки>"
+	[tag]"name EN"		[value]"[Frozen]Adds T5 cold damage to attacks or weapon\nAdds T4 cold damage to spells"
+	[tag]"name RU"		[value]"[Морозный]Добавляет T5 урон холодом к оружию или атакам\n Добавляет T4 урон холодом к чарам"
 	
 	[tag]"explicit tag"	[value]"T5"
-	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
 	
 	[tag]"damage type"	[value]"Cold"
 	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -687,14 +687,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"HeraldofIce"
 	[tag]"base name"	[value]"Glaciated"
 
-	[tag]"name EN"		[value]"[Glaciated]Adds (41-57) to (83-97) Cold Damage <one handed>\nAdds (77-104) to (154-178) Cold Damage <two handed>"
-	[tag]"name RU"		[value]"[Ледяной]Добавляет от (41-57) до (83-97) урона от холода <одноручки>\nДобавляет от (77-104) to (154-178) урона от огня <двуручки>"
+	[tag]"name EN"		[value]"[Glaciated]Adds T4 cold damage to attacks or weapon\nAdds T3 cold damage to spells"
+	[tag]"name RU"		[value]"[Ледяной]Добавляет T4 урон холодом к оружию или атакам\n Добавляет T3 урон холодом к чарам"
 	
 	[tag]"explicit tag"	[value]"T4"
-	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
 	
 	[tag]"damage type"	[value]"Cold"
 	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -702,14 +705,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"HeraldofIce"
 	[tag]"base name"	[value]"Polar"
 
-	[tag]"name EN"		[value]"[Polar]Adds (54-74) to (108-126) Cold Damage <one handed>\nAdds (99-136) to (200-232) Cold Damage <two handed>"
-	[tag]"name RU"		[value]"[Обмораживающий]Добавляет от (54-74) до (108-126) урона от холода <одноручки>\nДобавляет от (99-136) to (200-232) урона от огня <двуручки>"
+	[tag]"name EN"		[value]"[Polar]Adds T3 cold damage to attacks or weapon\nAdds T2 cold damage to spells"
+	[tag]"name RU"		[value]"[Обмораживающий]Добавляет T3 урон холодом к оружию или атакам\n Добавляет T2 урон холодом к чарам"
 	
 	[tag]"explicit tag"	[value]"T3"
-	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
 	
 	[tag]"damage type"	[value]"Cold"
 	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -717,14 +723,17 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"HeraldofIce"
 	[tag]"base name"	[value]"Entombing"
 
-	[tag]"name EN"		[value]"[Entombing]Adds (68-92) to (136-157) Cold Damage <one handed>\nAdds (124-170) to (250-290) Cold Damage <two handed>"
-	[tag]"name RU"		[value]"[Леденящий]Добавляет от (68-92) до (136-157) урона от холода <одноручки>\nДобавляет от (124-170) to (250-290) урона от огня <двуручки>"
+	[tag]"name EN"		[value]"[Entombing]Adds T2 cold damage to attacks or weapon\nAdds T1 cold damage to spells"
+	[tag]"name RU"		[value]"[Леденящий]Добавляет T2 урон холодом к оружию или атакам\n Добавляет T1 урон холодом к чарам"
 	
 	[tag]"explicit tag"	[value]"T2"
-	[tag]"explicit tag"	[value]"One-handed attribute"
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
 	
 	[tag]"damage type"	[value]"Cold"
 	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
 
 	
 ADD_NEW_DATA_ENTITY
@@ -732,11 +741,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"FrostBlades"
 	[tag]"base name"	[value]"Crystalising"
 
-	[tag]"name EN"		[value]"[Crystalising]Adds (81-111) to (163-189) Cold Damage <one handed>\nAdds (149-204) to (300-348) Cold Damage <two handed>"
-	[tag]"name RU"		[value]"[Кристаллизующий]Добавляет от (81-111) до (163-189) урона от холода <одноручки>\nДобавляет от (149-204) to (300-348) урона от огня <двуручки>"
+	[tag]"name EN"		[value]"[Crystalising]Adds T1 cold damage to attacks or weapon"
+	[tag]"name RU"		[value]"[Кристаллизующий]Добавляет T1 урон холодом к оружию или атакам"
 	
 	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
 	
 	[tag]"damage type"	[value]"Cold"
 	[tag]"build type"	[value]"Attacker"
@@ -907,7 +917,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Discharge"
 	[tag]"base name"	[value]"Catalysing"
 
 	[tag]"name EN"		[value]"[Catalysing](11-20)% increased Elemental Damage with Attack Skills"
@@ -925,7 +935,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Discharge"
 	[tag]"base name"	[value]"Infusing"
 
 	[tag]"name EN"		[value]"[Infusing](21-30)% increased Elemental Damage with Attack Skills"
@@ -943,7 +953,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Discharge"
 	[tag]"base name"	[value]"Empowering"
 
 	[tag]"name EN"		[value]"[Empowering](31-36)% increased Elemental Damage with Attack Skills"
@@ -962,7 +972,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Discharge"
 	[tag]"base name"	[value]"Unleashed"
 
 	[tag]"name EN"		[value]"[Unleashed](37-42)% increased Elemental Damage with Attack Skills"
@@ -980,7 +990,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Discharge"
 	[tag]"base name"	[value]"Overpowering"
 
 	[tag]"name EN"		[value]"[Overpowering](43-50)% increased Elemental Damage with Attack Skills"
@@ -1208,108 +1218,102 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"[овода](10-14)% повышение шанса критического удара"
 
 	[tag]"explicit tag"	[value]"T6"
-	
 	[tag]"build type"	[value]"Attacker"
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Stinging"
 
-	[tag]"name EN"		[value]"[of Stinging](15-19)% increased Critical Strike Chance <weapon>\n(26–31)% increased Critical Strike Chance during Effect <flask>"
-	[tag]"name RU"		[value]"[осы](15-19)% повышение шанса критического удара <оружие>\n(26–31)% повышение шанса критического удара во время действия эффекта <флакон>"
-
+	[tag]"name EN"		[value]"[of Stinging][T5]Flask, jewel or weapon crit modifier"
+	[tag]"name RU"		[value]"[осы][T5]Критические модификаторы флакона, самоцвета, или оружия"
+	
 	[tag]"explicit tag"	[value]"T5"
-	
 	[tag]"build type"	[value]"Attacker"
-	
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Piercing"
 
-	[tag]"name EN"		[value]"[of Piercing](20-24)% increased Critical Strike Chance <weapon>\n(32–37)% increased Critical Strike Chance during Effect <flask>"
-	[tag]"name RU"		[value]"[шмеля](20-24)% повышение шанса критического удара <оружие>\n(32–37)% повышение шанса критического удара во время действия эффекта <флакон>"
-
+	[tag]"name EN"		[value]"[of Piercing][T4]Flask, jewel or weapon crit modifier"
+	[tag]"name RU"		[value]"[шмеля][T4]Критические модификаторы флакона, самоцвета, или оружия"
+	
 	[tag]"explicit tag"	[value]"T4"
-	
 	[tag]"build type"	[value]"Attacker"
-	
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"PowerCharge"
-	[tag]"base name"	[value]"of Puncturing"
+	[tag]"base name"	[value]"of Rupturing"
 
-	[tag]"name EN"		[value]"[of Puncturing](25-29)% increased Critical Strike Chance <weapon>\n(38–43)% increased Critical Strike Chance during Effect <flask>"
-	[tag]"name RU"		[value]"[шершня](25-29)% повышение шанса критического удара <оружие>\n(38–43)% повышение шанса критического удара во время действия эффекта <флакон>"
-
+	[tag]"name EN"		[value]"[of Rupturing][T3]Flask, jewel or weapon crit modifier"
+	[tag]"name RU"		[value]"[шершня][T3]Критические модификаторы флакона, самоцвета, или оружия"
+	
 	[tag]"explicit tag"	[value]"T3"
-	
 	[tag]"build type"	[value]"Attacker"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Penetrating"
 
-	[tag]"name EN"		[value]"[of Penetrating](30-34)% increased Critical Strike Chance <weapon>\n(44–49)% increased Critical Strike Chance during Effect <flask>"
-	[tag]"name RU"		[value]"[скорпиона](30-34)% повышение шанса критического удара <оружие>\n(44–49)% повышение шанса критического удара во время действия эффекта <флакон>"
-
+	[tag]"name EN"		[value]"[of Penetrating][T2]Flask, jewel or weapon crit modifier"
+	[tag]"name RU"		[value]"[скорпиона][T2]Критические модификаторы флакона, самоцвета, или оружия"
+	
 	[tag]"explicit tag"	[value]"T2"
-	
 	[tag]"build type"	[value]"Attacker"
-	
+
+
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"icon path"	[value]"Specularity-Scroll"
 	[tag]"base name"	[value]"of Incision"
 
-	[tag]"name EN"		[value]"[of Incision](35-38)% increased Critical Strike Chance <weapon>\n(50–55)% increased Critical Strike Chance during Effect <flask>"
-	[tag]"name RU"		[value]"[мантикоры](35-38)% повышение шанса критического удара <оружие>\n(50–55)% повышение шанса критического удара во время действия эффекта <флакон>"
+	[tag]"name EN"		[value]"[of Incision][T1]Flask, jewel or weapon crit modifier"
+	[tag]"name RU"		[value]"[мантикоры][T1]Критические модификаторы флакона, самоцвета, или оружия"
 	
 	[tag]"explicit tag"	[value]"T1"
-	
 	[tag]"build type"	[value]"Attacker"
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Ire"
 
-	[tag]"name EN"		[value]"[of Ire](10-14)% to Global Critical Strike Multiplier"
-	[tag]"name RU"		[value]"[вспыльчивости](10-14)% к глобальному множителю критического удара"
+	[tag]"name EN"		[value]"[of Ire][T6] crit multi <amulets/weapon>\nAdded Small Passive Skills also grant: +1% to Critical Strike Multiplier <T3 cluster>"
+	[tag]"name RU"		[value]"[вспыльчивости](8-12)% к глобальному множителю критического удара"
 
 	[tag]"explicit tag"	[value]"T6"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	[tag]"build type"	[value]"Attacker"
-	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Anger"
 
-	[tag]"name EN"		[value]"[of Anger](15-19)% to Global Critical Strike Multiplier"
+	[tag]"name EN"		[value]"[of Anger][T5] crit multi <amulets/weapon>\nAdded Small Passive Skills also grant: +2% to Critical Strike Multiplier <T2 cluster>"
 	[tag]"name RU"		[value]"[злости](15-19)% к глобальному множителю критического удара"
 
 	[tag]"explicit tag"	[value]"T5"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	[tag]"build type"	[value]"Attacker"
 	
 ADD_NEW_DATA_ENTITY
@@ -1317,26 +1321,21 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Rage"
 
-	[tag]"name EN"		[value]"[of Rage](20-24)% to Global Critical Strike Multiplier"
+	[tag]"name EN"		[value]"[of Rage][T4] crit multi <amulets/weapon>\nAdded Small Passive Skills also grant: +3% to Critical Strike Multiplier <T1 cluster>"
 	[tag]"name RU"		[value]"[гнева](20-24)% к глобальному множителю критического удара"
 
 	[tag]"explicit tag"	[value]"T4"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
-	[tag]"explicit tag"	[value]"Amulet attribute"
-	
 	[tag]"build type"	[value]"Attacker"
-	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Fury"
 
-	[tag]"name EN"		[value]"[of Fury](25-29)% to Global Critical Strike Multiplier"
+	[tag]"name EN"		[value]"[of Fury][T3] crit multi <amulets/weapon>"
 	[tag]"name RU"		[value]"[ярости](25-29)% к глобальному множителю критического удара"
 
 	[tag]"explicit tag"	[value]"T3"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	[tag]"build type"	[value]"Attacker"
 	
 ADD_NEW_DATA_ENTITY
@@ -1344,11 +1343,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Ferocity"
 
-	[tag]"name EN"		[value]"[of Ferocity](30-34)% to Global Critical Strike Multiplier"
+	[tag]"name EN"		[value]"[of Ferocity][T2] crit multi <amulets/weapon>"
 	[tag]"name RU"		[value]"[свирепости](30-34)% к глобальному множителю критического удара"
-	
+
 	[tag]"explicit tag"	[value]"T2"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
 	[tag]"build type"	[value]"Attacker"
 	
 ADD_NEW_DATA_ENTITY
@@ -1356,69 +1354,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"PowerCharge"
 	[tag]"base name"	[value]"of Destruction"
 
-	[tag]"name EN"		[value]"[of Destruction](35-38)% to Global Critical Strike Multiplier"
+	[tag]"name EN"		[value]"[of Destruction][T1] crit multi <amulets/weapon>"
 	[tag]"name RU"		[value]"[разрушения](35-38)% к глобальному множителю критического удара"
-	
+
 	[tag]"explicit tag"	[value]"T1"
-	[tag]"explicit tag"	[value]"Two-handed attribute"
-	[tag]"explicit tag"	[value]"Amulet"
 	[tag]"build type"	[value]"Attacker"
 	
-	
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Ire"
 
-	[tag]"name EN"		[value]"[of Ire](8-12)% to Critical Strike Multiplier with Bows"
-	[tag]"name RU"		[value]"[вспыльчивости](8-12)% к множителю критического удара луками"
 
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Anger"
-
-	[tag]"name EN"		[value]"[of Anger](13-19)% to Critical Strike Multiplier with Bows"
-	[tag]"name RU"		[value]"[злости](13-19)% к множителю критического удара луками"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Rage"
-
-	[tag]"name EN"		[value]"[of Rage](20-24)% to Critical Strike Multiplier with Bows"
-	[tag]"name RU"		[value]"[гнева](20-24)% к множителю критического удара луками"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Fury"
-
-	[tag]"name EN"		[value]"[of Fury](25-29)% to Critical Strike Multiplier with Bows"
-	[tag]"name RU"		[value]"[ярости](25-29)% к множителю критического удара луками"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Ferocity"
-
-	[tag]"name EN"		[value]"[of Ferocity](30-34)% to Critical Strike Multiplier with Bows"
-	[tag]"name RU"		[value]"[свирепости](30-34)% к множителю критического удара луками"
-
-	
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
-	[tag]"base name"	[value]"of Destruction"
-
-	[tag]"name EN"		[value]"[of Destruction](35-38)% to Critical Strike Multiplier with Bows"
-	[tag]"name RU"		[value]"[разрушения](35-38)% к множителю критического удара луками"
-	
 	
 	
 	
@@ -2343,7 +2286,7 @@ ADD_NEW_DATA_ENTITY
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Empower_Support_inventory_icon"
 	[tag]"base name"	[value]"Magister's"
 
 	[tag]"name EN"		[value]"[Magister's]+1 to Level of all Spell Skill Gems <T1 one hand>/n+(1-2) to Level of all Spell Skill Gems <T2 staves>"
@@ -2381,7 +2324,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"Empower_Support_inventory_icon"
 	[tag]"base name"	[value]"Lava Conjurer's"
 
 	[tag]"name EN"		[value]"[Lava Conjurer's]+3 to Level of all Fire Spell Skill Gems"
@@ -2608,7 +2551,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"SummonSkeletons"
 	[tag]"base name"	[value]"Baroness's"
 
 	[tag]"name EN"		[value]"[Baroness's]Minions deal (10-19)% increased Damage <T8 wand/shield>/nMinions deal (5-10)% increased Damage <T5 ring>"
@@ -2622,7 +2565,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"SummonSkeletons"
 	[tag]"base name"	[value]"Viscountess's"
 
 	[tag]"name EN"		[value]"[Viscountess's]Minions deal (20-29)% increased Damage <T7 wand/shield>/nMinions deal (11-20)% increased Damage <T4 ring>"
@@ -2636,7 +2579,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"SummonSkeletons"
 	[tag]"base name"	[value]"Marchioness's"
 
 	[tag]"name EN"		[value]"[Marchioness's]Minions deal (30-39)% increased Damage <T6 wand/shield>/nMinions deal (21-30)% increased Damage <T3 ring>"
@@ -2650,7 +2593,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"SummonSkeletons"
 	[tag]"base name"	[value]"Countess's"
 
 	[tag]"name EN"		[value]"[Countess's]Minions deal (40-54)% increased Damage <T5 wand/shield>/nMinions deal (31-36)% increased Damage <T2 ring>"
@@ -2666,7 +2609,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"SummonSkeletons"
 	[tag]"base name"	[value]"Duchess's"
 
 	[tag]"name EN"		[value]"[Duchess's]Minions deal (55-69)% increased Damage <T5 wand/shield>/nMinions deal (37-42)% increased Damage <T1 ring>"
@@ -2682,7 +2625,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"SummonSkeletons"
 	[tag]"base name"	[value]"Princess's"
 
 	[tag]"name EN"		[value]"[Princess's]Minions deal (70-84)% increased Damage"
@@ -2697,7 +2640,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"SummonSkeletons"
 	[tag]"base name"	[value]"Queen's"
 
 	[tag]"name EN"		[value]"[Queen's]Minions deal (85-99)% increased Damage"
@@ -2712,7 +2655,7 @@ ADD_NEW_DATA_ENTITY
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
-	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"icon path"	[value]"SummonSkeletons"
 	[tag]"base name"	[value]"Empress's"
 
 	[tag]"name EN"		[value]"[Empress's]Minions deal (100-109)% increased Damage"
@@ -2856,3 +2799,2361 @@ ADD_NEW_DATA_ENTITY
 	[tag]"explicit tag"	[value]"Tier collision"
 	
 	[tag]"build type"	[value]"Summoner"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Luck"
+
+	[tag]"name EN"		[value]"[of Luck]Minions have (10-19)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[удачи]Приспешники имеют (10-19)% повышение шанса критического удара"
+	
+	[tag]"explicit tag"	[value]"T6"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Fortune"
+
+	[tag]"name EN"		[value]"[of Fortune]Minions have (20-39)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[судьбы]Приспешники имеют (20-39)% повышение шанса критического удара"
+	
+	[tag]"explicit tag"	[value]"T5"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Providence"
+
+	[tag]"name EN"		[value]"[of Providence]Minions have (40-59)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[провидения]Приспешники имеют (40-59)% повышение шанса критического удара"
+	
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Serendipity"
+
+	[tag]"name EN"		[value]"[of Serendipity]Minions have (60-79)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[прозорливости]Приспешники имеют (60-79)% повышение шанса критического удара"
+	
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Determinism"
+
+	[tag]"name EN"		[value]"[of Determinism]Minions have (80-99)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[предопределенности]Приспешники имеют (80-99)% повышение шанса критического удара"
+	
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Destiny"
+
+	[tag]"name EN"		[value]"[of Destiny]Minions have (100-109)% increased Critical Strike Chance"
+	[tag]"name RU"		[value]"[предназначения]Приспешники имеют (100-109)% повышение шанса критического удара"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of the Foray"
+
+	[tag]"name EN"		[value]"[of the Foray]Minions have (10-14)% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[набега]Приспешники имеют (10-14)% к множителю критического удара"
+	
+	[tag]"explicit tag"	[value]"T6"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of the Horde"
+
+	[tag]"name EN"		[value]"[of the Horde]Minions have (15-19)% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[орды]Приспешники имеют (15-19)% к множителю критического удара"
+	
+	[tag]"explicit tag"	[value]"T5"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of the Throng"
+
+	[tag]"name EN"		[value]"[of the Throng]Minions have (20-24)% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[толпы]Приспешники имеют (20-24)% к множителю критического удара"
+	
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of the Swarm"
+
+	[tag]"name EN"		[value]"[of the Swarm]Minions have (25-29)% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[роя]Приспешники имеют (25-29)% к множителю критического удара"
+	
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of the Invasion"
+
+	[tag]"name EN"		[value]"[of the Invasion]Minions have (30-34)% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[нашествия]Приспешники имеют (30-34)% к множителю критического удара"
+	
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of the Legion"
+
+	[tag]"name EN"		[value]"[of the Legion]Minions have (35-38)% to Critical Strike Multiplier"
+	[tag]"name RU"		[value]"[легиона]Приспешники имеют (35-38)% к множителю критического удара"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Hale"
+
+	[tag]"name EN"		[value]"[Hale](21-25) to maximum Life\n<T13 body armour> <T11 shields> <T10 unset ring/quiver/wand> <T9 gloves/boots/helmets/amulets> <T8 ring> <T4 jewel>"
+	[tag]"name RU"		[value]"[Здоровый](21-25) к максимуму здоровья\n<T13 доспехи> <T11 щиты> <T10 кольцо без камня/колчаны> <T9 перчатки/шлемы/сапоги/амулеты> <T8 кольца> <T4 самоцветы>"
+	
+	[tag]"explicit tag"	[value]"T13 body armour"
+	[tag]"explicit tag"	[value]"T11 shields"
+	[tag]"explicit tag"	[value]"T10 unset rings"
+	[tag]"explicit tag"	[value]"T10 quivers"
+	[tag]"explicit tag"	[value]"T8 rings"
+	[tag]"explicit tag"	[value]"T4 jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Healthy"
+
+	[tag]"name EN"		[value]"[Healthy](26-30) to maximum Life\n<T12 body armour> <T10 shields> <T9 unset ring/quiver/wand> <T8 gloves/boots/helmets/amulets> <T7 ring> <T3 jewel>"
+	[tag]"name RU"		[value]"[Здравый](26-30) к максимуму здоровья\n<T12 доспехи> <T10 щиты> <T9 кольцо без камня/колчаны> <T8 перчатки/шлемы/сапоги/амулеты> <T7 кольца> <T3 самоцветы>"
+	
+	[tag]"explicit tag"	[value]"T12 body armour"
+	[tag]"explicit tag"	[value]"T10 shields"
+	[tag]"explicit tag"	[value]"T9 unset rings"
+	[tag]"explicit tag"	[value]"T9 quivers"
+	[tag]"explicit tag"	[value]"T7 rings"
+	[tag]"explicit tag"	[value]"T3 jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Sanguine"
+
+	[tag]"name EN"		[value]"[Sanguine](31-35) to maximum Life\n<T11 body armour> <T9 shields> <T8 unset ring/quiver/wand> <T7 gloves/boots/helmets/amulets> <T6 ring> <T2 jewel>"
+	[tag]"name RU"		[value]"[Крепкий](31-35) к максимуму здоровья\n<T11 доспехи<T9 щиты> <T8 кольцо без камня/колчаны> <T7 перчатки/шлемы/сапоги/амулеты> <T6 кольца> <T2 самоцветы>"
+
+	[tag]"explicit tag"	[value]"T11 body armour"
+	[tag]"explicit tag"	[value]"T9 shields"
+	[tag]"explicit tag"	[value]"T8 unset rings"
+	[tag]"explicit tag"	[value]"T8 quivers"
+	[tag]"explicit tag"	[value]"T6 rings"
+	[tag]"explicit tag"	[value]"T2 jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Stalwart"
+
+	[tag]"name EN"		[value]"[Stalwart](36-40) to maximum Life\n<T10 body armour> <T8 shields> <T7 unset ring/quiver/wand> <T6 gloves/boots/helmets/amulets> <T5 ring> <T1 jewel>"
+	[tag]"name RU"		[value]"[Стойкий](36-40) к максимуму здоровья\n<T10 доспехи<T8 щиты> <T7 кольцо без камня/колчаны> <T6 перчатки/шлемы/сапоги/амулеты> <T5 кольца> <T1 самоцветы>"
+	
+	[tag]"explicit tag"	[value]"T10 body armour"
+	[tag]"explicit tag"	[value]"T8 shields"
+	[tag]"explicit tag"	[value]"T7 unset rings"
+	[tag]"explicit tag"	[value]"T7 quivers"
+	[tag]"explicit tag"	[value]"T5 rings"
+	[tag]"explicit tag"	[value]"T1 jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Stout"
+
+	[tag]"name EN"		[value]"[Stout](40-49) to maximum Life\n<T9 body armour> <T7 shields> <T6 unset ring/quiver/wand> <T5 gloves/boots/helmets/amulets> <T4 ring>"
+	[tag]"name RU"		[value]"[Могучий](40-49) к максимуму здоровья\n<T9 доспехи<T7 щиты> <T6 кольцо без камня/колчаны> <T5 перчатки/шлемы/сапоги/амулеты> <T4 кольца>"
+
+	[tag]"explicit tag"	[value]"T9 body armour"
+	[tag]"explicit tag"	[value]"T7 shields"
+	[tag]"explicit tag"	[value]"T6 unset rings"
+	[tag]"explicit tag"	[value]"T6 quivers"
+	[tag]"explicit tag"	[value]"T4 rings"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Robust"
+
+	[tag]"name EN"		[value]"[Robust](50-59) to maximum Life\n<T8 body armour> <T6 shields> <T5 unset ring/quiver/wand> <T4 gloves/boots/helmets/amulets> <T3 ring>"
+	[tag]"name RU"		[value]"[Мощный](50-59) к максимуму здоровья\n<T8 доспехи<T6 щиты> <T5 кольцо без камня/колчаны> <T4 перчатки/шлемы/сапоги/амулеты> <T3 кольца>"
+
+	[tag]"explicit tag"	[value]"T8 body armour"
+	[tag]"explicit tag"	[value]"T6 shields"
+	[tag]"explicit tag"	[value]"T5 unset rings"
+	[tag]"explicit tag"	[value]"T5 quivers"
+	[tag]"explicit tag"	[value]"T3 rings"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Rotund"
+
+	[tag]"name EN"		[value]"[Rotund](60-69) to maximum Life\n<T7 body armour> <T5 shields> <T4 unset ring/quiver/wand> <T3 gloves/boots/helmets/amulets> <T2 ring>"
+	[tag]"name RU"		[value]"[Массивный](60-69) к максимуму здоровья\n<T7 доспехи<T5 щиты> <T4 кольцо без камня/колчаны> <T3 перчатки/шлемы/сапоги/амулеты> <T2 кольца>"
+
+	[tag]"explicit tag"	[value]"T7 body armour"
+	[tag]"explicit tag"	[value]"T5 shields"
+	[tag]"explicit tag"	[value]"T4 unset rings"
+	[tag]"explicit tag"	[value]"T4 quivers"
+	[tag]"explicit tag"	[value]"T2 rings"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Virile"
+
+	[tag]"name EN"		[value]"[Virile](70-79) to maximum Life\n<T6 body armour> <T4 shields> <T3 unset ring/quiver/wand> <T2 gloves/boots/helmets/amulets> <T1 ring>"
+	[tag]"name RU"		[value]"[Сильный](70-79) к максимуму здоровья\n<T6 доспехи<T4 щиты> <T3 кольцо без камня/колчаны> <T2 перчатки/шлемы/сапоги/амулеты> <T1 кольца>"
+	
+	[tag]"explicit tag"	[value]"T6 body armour"
+	[tag]"explicit tag"	[value]"T4 shields"
+	[tag]"explicit tag"	[value]"T3 unset rings"
+	[tag]"explicit tag"	[value]"T3 quivers"
+	[tag]"explicit tag"	[value]"T1 rings"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Athlete's"
+
+	[tag]"name EN"		[value]"[Athlete's](80-89) to maximum Life\n<T5 body armour> <T3 shields> <T2 unset ring/quiver/wand> <T1 gloves/boots/helmets/amulets>"
+	[tag]"name RU"		[value]"[Выносливый](80-89) к максимуму здоровья\n<T5 доспехи<T3 щиты> <T2 кольцо без камня/колчаны> <T1 перчатки/шлемы/сапоги/амулеты>"
+	
+	[tag]"explicit tag"	[value]"T5 body armour"
+	[tag]"explicit tag"	[value]"T3 shields"
+	[tag]"explicit tag"	[value]"T2 unset rings"
+	[tag]"explicit tag"	[value]"T2 quivers"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Fecund"
+
+	[tag]"name EN"		[value]"[Fecund](90-99) to maximum Life\n<T4 body armour> <T2 shields> <T1 unset ring/quiver/wand>"
+	[tag]"name RU"		[value]"[Живучий](90-99) к максимуму здоровья\n<T4 доспехи<T2 щиты> <T1 кольцо без камня/колчаны>"
+	
+	[tag]"explicit tag"	[value]"T4 body armour"
+	[tag]"explicit tag"	[value]"T2 shields"
+	[tag]"explicit tag"	[value]"T1 unset rings"
+	[tag]"explicit tag"	[value]"T1 quivers"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Vigorous"
+
+	[tag]"name EN"		[value]"[Vigorous](100-109) to maximum Life\n<T3 body armour> <T1 shields>"
+	[tag]"name RU"		[value]"[Бессмертный](100-109) к максимуму здоровья\n<T3 доспехи<T1 щиты>"
+	
+	[tag]"explicit tag"	[value]"T3 body armour"
+	[tag]"explicit tag"	[value]"T1 shields"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Rapturous"
+
+	[tag]"name EN"		[value]"[Rapturous](110-119) to maximum Life\n<T2 body armour>"
+	[tag]"name RU"		[value]"[Нетленный](110-119) к максимуму здоровья\n<T2 доспехи"
+	
+	[tag]"explicit tag"	[value]"T2 body armour"
+	
+	[tag]"build type"	[value]"Defence"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Eternal_Life_Flask_inventory_icon"
+	[tag]"base name"	[value]"Prime"
+
+	[tag]"name EN"		[value]"[Prime](120-129) to maximum Life\n<T1 body armour>"
+	[tag]"name RU"		[value]"[Вечный](120-129) к максимуму здоровья\n<T1 доспехи"
+	
+	[tag]"explicit tag"	[value]"T1 body armour"
+	
+	[tag]"build type"	[value]"Defence"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Empower_Support_inventory_icon"
+	[tag]"base name"	[value]"Exemplary"
+
+	[tag]"name EN"		[value]"[Exemplary]+1 to Level of Socketed Gems"
+	[tag]"name RU"		[value]"[Образцовый]+1 к уровню размещённых камней"
+	
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"damage type"	[value]"Chaos"
+	[tag]"damage type"	[value]"Physical"
+	
+	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
+	[tag]"build type"	[value]"DoT"
+	[tag]"build type"	[value]"Summoner"
+
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Empower_Support_inventory_icon"
+	[tag]"base name"	[value]"Quintessential"
+
+	[tag]"name EN"		[value]"[Quintessential]+2 to Level of Socketed Gems"
+	[tag]"name RU"		[value]"[Совершенный]+2 к уровню размещённых камней"
+	
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"damage type"	[value]"Chaos"
+	[tag]"damage type"	[value]"Physical"
+	
+	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
+	[tag]"build type"	[value]"DoT"
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Empower_Support_inventory_icon"
+	[tag]"base name"	[value]"Flawless"
+
+	[tag]"name EN"		[value]"[Flawless]+3 to Level of Socketed Gems"
+	[tag]"name RU"		[value]"[Безукоризненный]+3 к уровню размещённых камней"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"damage type"	[value]"Chaos"
+	[tag]"damage type"	[value]"Physical"
+	
+	[tag]"build type"	[value]"Attacker"
+	[tag]"build type"	[value]"Caster"
+	[tag]"build type"	[value]"DoT"
+	[tag]"build type"	[value]"Summoner"	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vitality"
+	[tag]"base name"	[value]"of the Newt"
+
+	[tag]"name EN"		[value]"[of the Newt]Regenerate (1-2) Life per second\n<T11 body armour> <T10 shields> <T9 unset ring> <T8 gloves/boots/helmets/amulets> <T7 ring> <T3 jewel>"
+	[tag]"name RU"		[value]"[тритона]Регенерация (1-2) здоровья в секунду"
+
+	[tag]"explicit tag"	[value]"T11 body armour"
+	[tag]"explicit tag"	[value]"T10 shields"
+	[tag]"explicit tag"	[value]"T9 unset rings"
+	[tag]"explicit tag"	[value]"T8 quivers"
+	[tag]"explicit tag"	[value]"T7 rings"
+	[tag]"explicit tag"	[value]"T3 jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vitality"
+	[tag]"base name"	[value]"of the Lizard"
+
+	[tag]"name EN"		[value]"[of the Lizard]Regenerate (2.1-8) Life per second\n<T10 body armour> <T9 shields> <T8 unset ring> <T7 gloves/boots/helmets/amulets> <T6 ring> <T2 jewel>"
+	[tag]"name RU"		[value]"[ящерицы]Регенерация (2.1-8) здоровья в секунду"
+
+	[tag]"explicit tag"	[value]"T11 body armour"
+	[tag]"explicit tag"	[value]"T10 shields"
+	[tag]"explicit tag"	[value]"T9 unset rings"
+	[tag]"explicit tag"	[value]"T8 quivers"
+	[tag]"explicit tag"	[value]"T7 rings"
+	[tag]"explicit tag"	[value]"T3 jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vitality"
+	[tag]"base name"	[value]"of the Flatworm"
+
+	[tag]"name EN"		[value]"[of the Flatworm]Regenerate (8.1-16) Life per second\n<T9 body armour> <T8 shields> <T7 unset ring> <T6 gloves/boots/helmets/amulets> <T5 ring> <T1 jewel>"
+	[tag]"name RU"		[value]"[плоского червя]Регенерация (8.1-16) здоровья в секунду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vitality"
+	[tag]"base name"	[value]"of the Starfish"
+
+	[tag]"name EN"		[value]"[of the Starfish]Regenerate (16.1-24) Life per second\n<T8 body armour> <T7 shields> <T6 unset ring> <T5 gloves/boots/helmets/amulets> <T4 ring>"
+	[tag]"name RU"		[value]"[морской звезды]Регенерация (16.1-24) здоровья в секунду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vitality"
+	[tag]"base name"	[value]"of the Hydra"
+
+	[tag]"name EN"		[value]"[of the Hydra]Regenerate (24.1-32) Life per second\n<T7 body armour> <T6 shields> <T5 unset ring> <T4 gloves/boots/helmets/amulets> <T3 ring>"
+	[tag]"name RU"		[value]"[гидры]Регенерация (24.1-32) здоровья в секунду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vitality"
+	[tag]"base name"	[value]"of the Troll"
+
+	[tag]"name EN"		[value]"[of the Troll]Regenerate (32.1-48) Life per second\n<T6 body armour> <T5 shields> <T4 unset ring> <T3 gloves/boots/helmets/amulets> <T2 ring>"
+	[tag]"name RU"		[value]"[тролля]Регенерация (32.1-48) здоровья в секунду"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vitality"
+	[tag]"base name"	[value]"of Ryslatha"
+
+	[tag]"name EN"		[value]"[of Ryslatha]Regenerate (48.1-64) Life per second\n<T5 body armour> <T4 shields> <T3 unset ring> <T2 gloves/boots/helmets/amulets> <T1 ring>"
+	[tag]"name RU"		[value]"[Рюслаты]Регенерация (48.1-64) здоровья в секунду"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"rings attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vitality"
+	[tag]"base name"	[value]"of the Phoenix"
+
+	[tag]"name EN"		[value]"[of the Phoenix]Regenerate (64.1-96) Life per second\n<T4 body armour> <T3 shields> <T2 unset ring> <T1 gloves/boots/helmets/amulets>"
+	[tag]"name RU"		[value]"[Феникса]Регенерация (64.1-96) здоровья в секунду"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Boots attribute"
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Gloves attribute"
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Helmets attribute"
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Amulet"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vitality"
+	[tag]"base name"	[value]"of Recuperation"
+
+	[tag]"name EN"		[value]"[of Recuperation]Regenerate (96.1-128) Life per second\n<T3 body armour> <T2 shields> <T1 unset ring>"
+	[tag]"name RU"		[value]"[восполнения]Регенерация (96.1-128) здоровья в секунду"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Boots attribute"
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Gloves attribute"
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Helmets attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vitality"
+	[tag]"base name"	[value]"of Life-giving"
+
+	[tag]"name EN"		[value]"[of Life-giving]Regenerate (128.1-152) Life per second\n<T2 body armour> <T1 shields>"
+	[tag]"name RU"		[value]"[жизнедарения]Регенерация (128.1-152) здоровья в секунду"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Shields attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Vitality"
+	[tag]"base name"	[value]"of Convalescence"
+
+	[tag]"name EN"		[value]"[of Convalescence]Regenerate (152.1-176) Life per second\n<T1 body armour>"
+	[tag]"name RU"		[value]"[выздоровления]Регенерация (152.1-176) здоровья в секунду"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of the Administrator"
+
+	[tag]"name EN"		[value]"[of the Administrator]Minions have (13-17)% increased maximum Life <T4 rings> <T7 shields>"
+	[tag]"name RU"		[value]"[попечителя]Приспешники имеют (13-17)% увеличение максимума здоровья <T4 кольца> <T7 щиты>"
+	
+	[tag]"explicit tag"	[value]"T7"
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of the Rector"
+
+	[tag]"name EN"		[value]"[of the Rector]Minions have (18-22)% increased maximum Life <T3 rings> <T6 shields>"
+	[tag]"name RU"		[value]"[владетеля]Приспешники имеют (18-22)% увеличение максимума здоровья <T3 кольца> <T6 щиты>"
+
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of the Overseer"
+
+	[tag]"name EN"		[value]"[of the Overseer]Minions have (23-27)% increased maximum Life <T2 rings> <T5 shields>"
+	[tag]"name RU"		[value]"[смотрителя]Приспешники имеют (23-27)% увеличение максимума здоровья <T2 кольца> <T5 щиты>"
+
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of the Taskmaster"
+
+	[tag]"name EN"		[value]"[of the Taskmaster]Minions have (28-32)% increased maximum Life <T1 rings> <T4 shields>"
+	[tag]"name RU"		[value]"[надзирателя]Приспешники имеют (28-32)% увеличение максимума здоровья <T1 кольца> <T4 щиты>"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of the Slavedriver"
+
+	[tag]"name EN"		[value]"[of the Slavedriver]Minions have (33-36)% increased maximum Life"
+	[tag]"name RU"		[value]"[эксплуататора]Приспешники имеют (33-36)% увеличение максимума здоровья"
+
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of the Conquest"
+	[tag]"explicit tag"	[value]"base name collision"
+
+	[tag]"name EN"		[value]"[of the Conquest]Minions have (31-35)% increased maximum Life"
+	[tag]"name RU"		[value]"[завоевания]Приспешники имеют (31-35)% увеличение 	максимума здоровья"
+
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of Adjustment"
+
+	[tag]"name EN"		[value]"[of Adjustment]Minions have (11-15)% to all Elemental Resistances"
+	[tag]"name RU"		[value]"[приноровления]Приспешники имеют (11-15)% к сопротивлению всем стихиям"
+
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of Acclimatisation"
+
+	[tag]"name EN"		[value]"[of Acclimatisation]Minions have (16-20)% to all Elemental Resistances"
+	[tag]"name RU"		[value]"[приспособления]Приспешники имеют (16-20)% к сопротивлению всем стихиям"
+
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of Adaptation"
+
+	[tag]"name EN"		[value]"[of Adaptation]Minions have (21-23)% to all Elemental Resistances"
+	[tag]"name RU"		[value]"[адаптации]Приспешники имеют (21-23)% к сопротивлению всем стихиям"
+
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of Evolution"
+
+	[tag]"name EN"		[value]"[of Evolution]Minions have (24-26)% to all Elemental Resistances"
+	[tag]"name RU"		[value]"[эволюции]Приспешники имеют (24-26)% к сопротивлению всем стихиям"
+
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of Metamorphosis"
+
+	[tag]"name EN"		[value]"[of Metamorphosis]Minions have (27-30)% to all Elemental Resistances"
+	[tag]"name RU"		[value]"[метаморфоза]Приспешники имеют (27-30)% к сопротивлению всем стихиям"
+
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of Impermeability"
+
+	[tag]"name EN"		[value]"[of Impermeability]Minions have (3-4)% to all maximum Elemental Resistances"
+	[tag]"name RU"		[value]"[непроницаемости]Приспешники имеют (3-4)% к максимуму сопротивления всем стихиям"
+
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of Countervailing"
+
+	[tag]"name EN"		[value]"[of Countervailing]Minions have (5-6)% to all maximum Elemental Resistances"
+	[tag]"name RU"		[value]"[противодействия]Приспешники имеют (5-6)% к максимуму сопротивления всем стихиям"
+
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of Imperviousness"
+
+	[tag]"name EN"		[value]"[of Imperviousness]Minions have (7-8)% to all maximum Elemental Resistances"
+	[tag]"name RU"		[value]"[невосприимчивости]Приспешники имеют (7-8)% к максимуму сопротивления всем стихиям"
+
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of the Guard"
+
+	[tag]"name EN"		[value]"[of the Guard]Minions have (7-9)% additional Physical Damage Reduction"
+	[tag]"name RU"		[value]"[стражи]Приспешники имеют (7-9)% дополнительного уменьшения получаемого физического урона"
+
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of the Brigade"
+
+	[tag]"name EN"		[value]"[of the Brigade]Minions have (10-12)% additional Physical Damage Reduction"
+	[tag]"name RU"		[value]"[бригады]Приспешники имеют (10-12)% дополнительного уменьшения получаемого физического урона"
+
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Summoner"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"SummonSkeletons"
+	[tag]"base name"	[value]"of the Phalanx"
+
+	[tag]"name EN"		[value]"[of the Phalanx]Minions have (13-15)% additional Physical Damage Reduction"
+	[tag]"name RU"		[value]"[фаланги]Приспешники имеют (13-15)% дополнительного уменьшения получаемого физического урона"
+
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Summoner"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"RighteousFire"
+	[tag]"base name"	[value]"of Burning"
+
+	[tag]"name EN"		[value]"[of Burning]\n(26-30)% increased Burning Damage\nOR\n(31-40)% increased Burning Damage"
+	[tag]"name RU"		[value]"[горения]\n(26-30)% увеличение урона от горения\nИЛИ\n(31-40)% увеличение урона от горения"
+	
+	
+	[tag]"explicit tag"	[value]"Staff"
+	[tag]"explicit tag"	[value]"Wand"
+	[tag]"explicit tag"	[value]"Sceptre"
+	
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"DoT"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"RighteousFire"
+	[tag]"base name"	[value]"of Combusting"
+
+	[tag]"name EN"		[value]"[of Combusting]\n(31-35)% increased Burning Damage\nOR\n(45-50)% increased Burning Damage"
+	[tag]"name RU"		[value]"[возгорания]\n(31-35)% увеличение урона от горения\nИЛИ\n(45-50)% увеличение урона от горения"
+	
+	[tag]"explicit tag"	[value]"Staff"
+	[tag]"explicit tag"	[value]"Wand"
+	[tag]"explicit tag"	[value]"Sceptre"
+	
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"DoT"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"RighteousFire"
+	[tag]"base name"	[value]"of Conflagrating"
+
+	[tag]"name EN"		[value]"[of Conflagrating]\n(36-40)% increased Burning Damage\nOR\n(51-60)% increased Burning Damage"
+	[tag]"name RU"		[value]"[воспламенения]\n(36-40)% увеличение урона от горения\nИЛИ\n(51-60)% увеличение урона от горения"
+	
+	[tag]"explicit tag"	[value]"Staff"
+	[tag]"explicit tag"	[value]"Wand"
+	[tag]"explicit tag"	[value]"Sceptre"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"DoT"
+	
+
+	
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"TornadoShot"
+	[tag]"base name"	[value]"of Splintering"
+
+	[tag]"name EN"		[value]"[of Splintering]Bow Attacks fire an additional Arrow"
+	[tag]"name RU"		[value]"[шипов]Атаки луками выпускают дополнительную стрелу"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"damage type"	[value]"All"
+	[tag]"build type"	[value]"Attacker"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"TornadoShot"
+	[tag]"base name"	[value]"of Many"
+
+	[tag]"name EN"		[value]"[of Many]Bow Attacks fire 2 additional Arrows"
+	[tag]"name RU"		[value]"[множества]Атаки луками выпускают дополнительных стрел: 2"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"damage type"	[value]"All"
+	[tag]"build type"	[value]"Attacker"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"attribute_all"
+	[tag]"base name"	[value]"of the Clouds"
+
+	[tag]"name EN"		[value]"[of the Clouds](1-4) to all Attributes <T4 rings> <T8 amulets>"
+	[tag]"name RU"		[value]"[облаков](1-4) ко всем характеристикам <T4 кольца> <T8 амулеты>"
+
+	[tag]"explicit tag"	[value]"T4 rings"
+	[tag]"explicit tag"	[value]"T8 amulets"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"attribute_all"
+	[tag]"base name"	[value]"of the Sky"
+
+	[tag]"name EN"		[value]"[of the Sky](5-8) to all Attributes <T3 rings> <T7 amulets>"
+	[tag]"name RU"		[value]"[неба](5-8) ко всем характеристикам <T3 кольца> <T7 амулеты>"
+
+	[tag]"explicit tag"	[value]"T3 rings"
+	[tag]"explicit tag"	[value]"T7 amulets"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"attribute_all"
+	[tag]"base name"	[value]"of the Meteor"
+
+	[tag]"name EN"		[value]"[of the Meteor](9-12) to all Attributes <T2 rings> <T6 amulets>"
+	[tag]"name RU"		[value]"[метеора](9-12) ко всем характеристикам <T2 кольца> <T6 амулеты>"
+
+	[tag]"explicit tag"	[value]"T2 rings"
+	[tag]"explicit tag"	[value]"T6 amulets"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"attribute_all"
+	[tag]"base name"	[value]"of the Comet"
+
+	[tag]"name EN"		[value]"[of the Comet](13-16) to all Attributes <T1 rings> <T5 amulets>"
+	[tag]"name RU"		[value]"[кометы](13-16) ко всем характеристикам <T1 кольца> <T5 амулеты>"
+
+	[tag]"explicit tag"	[value]"T1 rings"
+	[tag]"explicit tag"	[value]"T5 amulets"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"attribute_all"
+	[tag]"base name"	[value]"of the Heavens"
+
+	[tag]"name EN"		[value]"[of the Heavens](17-20) to all Attributes"
+	[tag]"name RU"		[value]"[солнца](17-20) ко всем характеристикам"
+
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"build type"	[value]"Attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"attribute_all"
+	[tag]"base name"	[value]"of the Galaxy"
+
+	[tag]"name EN"		[value]"[of the Galaxy](21-24) to all Attributes"
+	[tag]"name RU"		[value]"[галактики](21-24) ко всем характеристикам"
+
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"attribute_all"
+	[tag]"base name"	[value]"of the Universe"
+
+	[tag]"name EN"		[value]"[of the Universe](25-28) to all Attributes"
+	[tag]"name RU"		[value]"[вселенной](25-28) ко всем характеристикам"
+	
+	[tag]"explicit tag"	[value]"T3 for amulets"
+	[tag]"explicit tag"	[value]"Amulet"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"attribute_all"
+	[tag]"base name"	[value]"of the Infinite"
+
+	[tag]"name EN"		[value]"[of the Infinite](29-32) to all Attributes"
+	[tag]"name RU"		[value]"[бесконечности](29-32) ко всем характеристикам"
+
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Attribute"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"attribute_all"
+	[tag]"base name"	[value]"of the Multiverse"
+
+	[tag]"name EN"		[value]"[of the Multiverse](33-35) to all Attributes"
+	[tag]"name RU"		[value]"[многомирья](33-35) ко всем характеристикам"
+
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Attribute"
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofElements"
+	[tag]"base name"	[value]"of the Crystal"
+
+	[tag]"name EN"		[value]"[of the Crystal](3-5)% to all Elemental Resistances <T5 rings> <T6 amulets/shields>"
+	[tag]"name RU"		[value]"[кристалла](3-5)% к сопротивлению всем стихиям <T5 кольца> <T6 амулеты/щиты>"
+
+	[tag]"explicit tag"	[value]"T5 rings"
+	[tag]"explicit tag"	[value]"T6 amulets"
+	[tag]"explicit tag"	[value]"T6 shields"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"T5"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
+	
+	[tag]"build type"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofElements"
+	[tag]"base name"	[value]"of the Prism"
+
+	[tag]"name EN"		[value]"[of the Prism](6-8)% to all Elemental Resistances <T4 rings> <T5 amulets/shields>"
+	[tag]"name RU"		[value]"[призмы](6-8)% к сопротивлению всем стихиям <T4 кольца> <T5 амулеты/щиты>"
+
+	[tag]"explicit tag"	[value]"T4 rings"
+	[tag]"explicit tag"	[value]"T6 amulets"
+	[tag]"explicit tag"	[value]"T6 shields"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
+	
+	[tag]"build type"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofElements"
+	[tag]"base name"	[value]"of the Kaleidoscope"
+
+	[tag]"name EN"		[value]"[of the Kaleidoscope](9-11)% to all Elemental Resistances <T3 rings> <T4 amulets/shields>"
+	[tag]"name RU"		[value]"[калейдоскопа](9-11)% к сопротивлению всем стихиям <T3 кольца> <T4 амулеты/щиты>"
+
+	[tag]"explicit tag"	[value]"T3 rings"
+	[tag]"explicit tag"	[value]"T2 amulets"
+	[tag]"explicit tag"	[value]"T2 shields"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
+	
+	[tag]"build type"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofElements"
+	[tag]"base name"	[value]"of Variegation"
+
+	[tag]"name EN"		[value]"[of Variegation](12-14)% to all Elemental Resistances <T2 rings> <T3 amulets/shields>"
+	[tag]"name RU"		[value]"[мозаики](12-14)% к сопротивлению всем стихиям <T2 кольца> <T3 амулеты/щиты>"
+
+	[tag]"explicit tag"	[value]"T2 rings"
+	[tag]"explicit tag"	[value]"T1 amulets"
+	[tag]"explicit tag"	[value]"T1 shields"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
+	
+	[tag]"build type"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofElements"
+	[tag]"base name"	[value]"of the Rainbow"
+
+	[tag]"name EN"		[value]"[of the Rainbow](15-16)% to all Elemental Resistances <T1 rings> <T2 amulets/shields>"
+	[tag]"name RU"		[value]"[радуги](15-16)% к сопротивлению всем стихиям <T1 кольца> <T2 амулеты/щиты>"
+
+	[tag]"explicit tag"	[value]"T1 amulets"
+	[tag]"explicit tag"	[value]"T1 shields"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"explicit tag"	[value]"Soft tier collision"
+	
+	[tag]"build type"	[value]"Resistance"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofElements"
+	[tag]"base name"	[value]"of the Span"
+
+	[tag]"name EN"		[value]"[of the Span](17-18)% to all Elemental Resistances"
+	[tag]"name RU"		[value]"[переливов](17-18)% к сопротивлению всем стихиям"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Resistance"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"ShieldCharge"
+	[tag]"base name"	[value]"of Stoicism"
+
+	[tag]"name EN"		[value]"[of Stoicism](16-20)% chance to Avoid Elemental Ailments"
+	[tag]"name RU"		[value]"[решимости](16-20)% шанс избежать стихийного состояния"
+	
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"build type"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"ShieldCharge"
+	[tag]"base name"	[value]"of Resolve"
+
+	[tag]"name EN"		[value]"[of Resolve](21-25)% chance to Avoid Elemental Ailments"
+	[tag]"name RU"		[value]"[непоколебимости](21-25)% шанс избежать стихийного состояния"
+	
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"ShieldCharge"
+	[tag]"base name"	[value]"of Fortitude"
+
+	[tag]"name EN"		[value]"[of Fortitude](26-30)% chance to Avoid Elemental Ailments"
+	[tag]"name RU"		[value]"[стойкости](26-30)% шанс избежать стихийного состояния"
+
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Resistance"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"ShieldCharge"
+	[tag]"base name"	[value]"of Will"
+
+	[tag]"name EN"		[value]"[of Will](31-35)% chance to Avoid Elemental Ailments"
+	[tag]"name RU"		[value]"[воли](31-35)% шанс избежать стихийного состояния"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Resistance"
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"UtilityFlask"
+	[tag]"base name"	[value]"of Refilling"
+
+	[tag]"name EN"		[value]"[of Refilling](5-10)% increased Flask Charges gained <T7 belts>\nAdded Small Passive Skills also grant: 1% increased Flask Charges gained <T3 clusters>"
+	[tag]"name RU"		[value]"[наполнения](5-10)% увеличение получаемого количества зарядов флакона"
+
+	[tag]"explicit tag"	[value]"T7 belt"
+	[tag]"explicit tag"	[value]"T3 cluster"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Flask"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"UtilityFlask"
+	[tag]"base name"	[value]"of Restocking"
+
+	[tag]"name EN"		[value]"[of Restocking](11-16)% increased Flask Charges gained"
+	[tag]"name RU"		[value]"[возобновления](11-16)% увеличение получаемого количества зарядов флакона"
+
+	[tag]"explicit tag"	[value]"T6"
+	
+	[tag]"build type"	[value]"Flask"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"UtilityFlask"
+	[tag]"base name"	[value]"of Replenishing"
+
+	[tag]"name EN"		[value]"[of Replenishing](17-22)% increased Flask Charges gained"
+	[tag]"name RU"		[value]"[снабжения](17-22)% увеличение получаемого количества зарядов флакона"
+
+	[tag]"explicit tag"	[value]"T5"
+	
+	[tag]"build type"	[value]"Flask"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"UtilityFlask"
+	[tag]"base name"	[value]"of Pouring"
+
+	[tag]"name EN"		[value]"[of Pouring](23-28)% increased Flask Charges gained"
+	[tag]"name RU"		[value]"[прилива](23-28)% увеличение получаемого количества зарядов флакона"
+
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"build type"	[value]"Flask"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"UtilityFlask"
+	[tag]"base name"	[value]"of Brimming"
+
+	[tag]"name EN"		[value]"[of Overflowing](29-34)% increased Flask Charges gained <T3 belts>\nAdded Small Passive Skills also grant: 2% increased Flask Charges gained <T2 clusters>"
+	[tag]"name RU"		[value]"[переполнения](29-34)% увеличение получаемого количества зарядов флакона\nИЛИ\nДобавленные малые пассивные умения также даруют: 2% увеличение получаемого количества зарядов флакона"
+	
+	[tag]"explicit tag"	[value]"T3 belt"
+	[tag]"explicit tag"	[value]"T2 cluster"
+	[tag]"explicit tag"	[value]"Soft tier collision"
+	
+	[tag]"build type"	[value]"Flask"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"UtilityFlask"
+	[tag]"base name"	[value]"of Overflowing"
+
+	[tag]"name EN"		[value]"[of Overflowing](35-40)% increased Flask Charges gained <T2 belts>\nAdded Small Passive Skills also grant: 3% increased Flask Charges gained <T1 clusters>"
+	[tag]"name RU"		[value]"[переполнения](35-40)% увеличение получаемого количества зарядов флакона\nИЛИ\nДобавленные малые пассивные умения также даруют: 3% увеличение получаемого количества зарядов флакона"
+	
+	[tag]"explicit tag"	[value]"T2 belt"
+	[tag]"explicit tag"	[value]"T1 cluster"
+	[tag]"explicit tag"	[value]"Soft tier collision"
+	
+	[tag]"build type"	[value]"Flask"
+	
+	[tag]"build type"	[value]"Flask"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"UtilityFlask"
+	[tag]"base name"	[value]"of Sipping"
+
+	[tag]"name EN"		[value]"[of Sipping][T4](4-9)% increased Flask Effect Duration\nOR\n[T1](20-10)% reduced Flask Charges used"
+	[tag]"name RU"		[value]"[мелких глотков][T4](4-9)% увеличение длительности эффекта флакона\nИЛИ\n[T1](20-10)% уменьшение используемого количества зарядов флакона"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Flask"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"UtilityFlask"
+	[tag]"base name"	[value]"of Tasting"
+
+	[tag]"name EN"		[value]"[of Tasting](10-15)% increased Flask Effect Duration"
+	[tag]"name RU"		[value]"[пробы](10-15)% увеличение длительности эффекта флакона"
+	
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"build type"	[value]"Flask"
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"UtilityFlask"
+	[tag]"base name"	[value]"of Savouring"
+
+	[tag]"name EN"		[value]"[of Savouring](16-21)% increased Flask Effect Duration"
+	[tag]"name RU"		[value]"[вкуса](16-21)% увеличение длительности эффекта флакона"
+	
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Flask"
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"UtilityFlask"
+	[tag]"base name"	[value]"of Relishing"
+
+	[tag]"name EN"		[value]"[of Relishing](22-27)% increased Flask Effect Duration"
+	[tag]"name RU"		[value]"[упивания](22-27)% увеличение длительности эффекта флакона"
+	
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Flask"
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"UtilityFlask"
+	[tag]"base name"	[value]"of Reveling"
+
+	[tag]"name EN"		[value]"[of Reveling](28-33)% increased Flask Effect Duration"
+	[tag]"name RU"		[value]"[пиршества](28-33)% увеличение длительности эффекта флакона"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Flask"
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Suppress"
+	[tag]"base name"	[value]"of Rebuttal"
+
+	[tag]"name EN"		[value]"[of Rebuttal](5-6)% chance to Suppress Spell Damage <T5 gloves/helmets/boots>\n(8-10)% chance to Suppress Spell Damage <T5 body armours/shields>"
+	[tag]"name RU"		[value]"[опровержения](5-6)% шанс подавить урон от чар <T5 перчатки/шлемы/сапоги>\n(8-10)% шанс подавить урон от чар <T5 нагрудная броня/щиты>"
+
+	[tag]"explicit tag"	[value]"T5"
+	
+	[tag]"build type"	[value]"Defence"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Suppress"
+	[tag]"base name"	[value]"of Snuffing"
+
+	[tag]"name EN"		[value]"[of Snuffing](7-8)% chance to Suppress Spell Damage <T4 gloves/helmets/boots>\n(11-13)% chance to Suppress Spell Damage <T4 body armours/shields>"
+	[tag]"name RU"		[value]"[возражения](7-8)% шанс подавить урон от чар\nИЛИ\n(11-13)% шанс подавить урон от чар <T4 перчатки/шлемы/сапоги>\n(11-13)% шанс подавить урон от чар <T4 нагрудная броня/щиты>"
+	
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"build type"	[value]"Defence"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Suppress"
+	[tag]"base name"	[value]"of Revoking"
+
+	[tag]"name EN"		[value]"[of Revoking](9-10)% chance to Suppress Spell Damage <T3 gloves/helmets/boots>\n(14-16)% chance to Suppress Spell Damage <T3 body armours/shields>"
+	[tag]"name RU"		[value]"[отказа](9-10)% шанс подавить урон от чар\nИЛИ\n(14-16)% шанс подавить урон от чар <T3 перчатки/шлемы/сапоги>\n(14-16)% шанс подавить урон от чар <T3 нагрудная броня/щиты>"
+
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Defence"
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Suppress"
+	[tag]"base name"	[value]"of Abjuration"
+
+	[tag]"name EN"		[value]"[of Abjuration](11-12)% chance to Suppress Spell Damage <T2 gloves/helmets/boots>\n(17-19)% chance to Suppress Spell Damage <T2 body armours/shields>"
+	[tag]"name RU"		[value]"[отречения](11-12)% шанс подавить урон от чар\nИЛИ\n(17-19)% шанс подавить урон от чар <T2 перчатки/шлемы/сапоги>\n(17-19)% шанс подавить урон от чар <T2 нагрудная броня/щиты>"
+
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Defence"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Suppress"
+	[tag]"base name"	[value]"of Nullification"
+
+
+	[tag]"name EN"		[value]"[of Abjuration](13-14)% chance to Suppress Spell Damage <T5 gloves/helmets/boots>\n(20-22)% chance to Suppress Spell Damage <T5 body armours/shields>"
+	[tag]"name RU"		[value]"[отречения](13-14)% шанс подавить урон от чар\nИЛИ\n(20-22)% шанс подавить урон от чар <T1 перчатки/шлемы/сапоги>\n(20-22)% шанс подавить урон от чар <T1 нагрудная броня/щиты>"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Defence"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Bane"
+	[tag]"base name"	[value]"Malicious"
+
+	[tag]"name EN"		[value]"[Malicious]Adds (27-41) to (55-69) Chaos Damage to Attacks"
+	[tag]"name RU"		[value]"[Коварный]Добавляет от (27-41) до (55-69) урона хаосом к атакам"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"Quiver"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Bane"
+	[tag]"base name"	[value]"of the Lost"
+
+	[tag]"name EN"		[value]"[of the Lost](5-10)% to Chaos Resistance <T6 non-jewel>\nAdded Small Passive Skills also grant: +3% to Chaos Resistance <T6 cluster jewel>"
+	[tag]"name RU"		[value]"[заблудшего](5-10)% к сопротивлению хаосу <T6 не кластер>\nДобавленные малые пассивные умения также даруют: +3% к сопротивлению хаосу <T6 кластер>"
+
+	[tag]"explicit tag"	[value]"T6"
+	
+	[tag]"damage type"	[value]"Chaos"
+	[tag]"explicit tag"	[value]"Resistance"
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Bane"
+	[tag]"base name"	[value]"of Banishment"
+
+	[tag]"name EN"		[value]"[of Banishment](11-15)% to Chaos Resistance <T5 non-jewel>\nAdded Small Passive Skills also grant: +4% to Chaos Resistance <T5 cluster jewel>"
+	[tag]"name RU"		[value]"[лишённого](11-15)% к сопротивлению хаосу <T5 не кластер>\nДобавленные малые пассивные умения также даруют: +3% к сопротивлению хаосу <T5 кластер>"
+
+	[tag]"explicit tag"	[value]"T5"
+	
+	[tag]"damage type"	[value]"Chaos"
+	[tag]"explicit tag"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Bane"
+	[tag]"base name"	[value]"of Eviction"
+
+	[tag]"name EN"		[value]"[of Eviction](16-20)% to Chaos Resistance <T4 non-jewel>\nAdded Small Passive Skills also grant: +5% to Chaos Resistance <T4 cluster jewel>"
+	[tag]"name RU"		[value]"[отвергнутого](16-20)% к сопротивлению хаосу <T4 не кластер>\nДобавленные малые пассивные умения также даруют: +3% к сопротивлению хаосу <T4 кластер>"
+
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"damage type"	[value]"Chaos"
+	[tag]"explicit tag"	[value]"Resistance"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Bane"
+	[tag]"base name"	[value]"of Expulsion"
+
+	[tag]"name EN"		[value]"[of Expulsion](21-25)% to Chaos Resistance <T3 non-jewel>\nAdded Small Passive Skills also grant: +6% to Chaos Resistance <T3 cluster jewel>"
+	[tag]"name RU"		[value]"[ссыльного](21-25)% к сопротивлению хаосу <T3 не кластер>\nДобавленные малые пассивные умения также даруют: +3% к сопротивлению хаосу <T3 кластер>"
+
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"damage type"	[value]"Chaos"
+	[tag]"explicit tag"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Bane"
+	[tag]"base name"	[value]"of Exile"
+
+	[tag]"name EN"		[value]"[of Exile](26-30)% to Chaos Resistance <T2 non-jewel>\nAdded Small Passive Skills also grant: +7% to Chaos Resistance <T2 cluster jewel>"
+	[tag]"name RU"		[value]"[изгнанного](26-30)% к сопротивлению хаосу <T2 не кластер>\nДобавленные малые пассивные умения также даруют: +3% к сопротивлению хаосу <T2 кластер>"
+
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"damage type"	[value]"Chaos"
+	[tag]"explicit tag"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Bane"
+	[tag]"base name"	[value]"of Bameth"
+
+	[tag]"name EN"		[value]"[of Bameth](31-35)% to Chaos Resistance"
+	[tag]"name RU"		[value]"[Бэмита](31-35)% к сопротивлению хаосу"
+
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"damage type"	[value]"Chaos"
+	[tag]"explicit tag"	[value]"Resistance"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Heated"
+
+	[tag]"name EN"		[value]"[Heated]Adds (1-2) to (3-4) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Тёплый]Добавляет от (1-2) до (3-4) урона от огня к чарам"
+	
+	[tag]"explicit tag"	[value]"T9"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Casters"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Smouldering"
+
+	[tag]"name EN"		[value]"[Smouldering]Adds (6-8) to (12-14) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Нагревающий]Добавляет от (6-8) до (12-14) урона от огня к чарам"
+	
+	[tag]"explicit tag"	[value]"T8"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Casters"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Smoking"
+
+	[tag]"name EN"		[value]"[Smoking]Adds (10-12) to (19-23) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Жгучий]Добавляет от (10-12) до (19-23) урона от огня к чарам"
+	
+	[tag]"explicit tag"	[value]"T7"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Casters"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Burning"
+
+	[tag]"name EN"		[value]"[Burning]Adds (13-18) to (27-31) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Жаркий]Добавляет от (13-18) до (27-31) урона от огня к чарам"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Casters"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Flaming"
+
+	[tag]"name EN"		[value]"[Flaming]Adds (19-25) to (37-44) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Обжигающий]Добавляет от (19-25) до (37-44) урона от огня к чарам"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Casters"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Scorching"
+
+	[tag]"name EN"		[value]"[Scorching]Adds (24-33) to (48-57) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Опаляющий]Добавляет от (24-33) до (48-57) урона от огня к чарам"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Casters"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Incinerating"
+
+	[tag]"name EN"		[value]"[Incinerating]Adds (31-42) to (64-73) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Горящий]Добавляет от (31-42) до (64-73) урона от огня к чарам"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Casters"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Blasting"
+
+	[tag]"name EN"		[value]"[Blasting]Adds (40-52) to (79-91) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Пламенный]Добавляет от (40-52) до (79-91) урона от огня к чарам"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Casters"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofAsh"
+	[tag]"base name"	[value]"Cremating"
+
+	[tag]"name EN"		[value]"[Cremating]Adds (49-66) to (98-115) Fire Damage to Spells"
+	[tag]"name RU"		[value]"[Сжигающий]Добавляет от (49-66) до (98-115) урона от огня к чарам"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Fire"
+	[tag]"build type"	[value]"Casters"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Humming"
+
+	[tag]"name EN"		[value]"[Humming]Adds 1 to (4-5) Lightning Damage to Spells"
+	[tag]"name RU"		[value]"[Покалывающий]Добавляет от 1 до (4-5) урона от молнии к чарам"
+	
+	[tag]"explicit tag"	[value]"T9"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Buzzing"
+
+	[tag]"name EN"		[value]"[Buzzing]Adds (1-2) to (21-22) Lightning Damage to Spells"
+	[tag]"name RU"		[value]"[Потрескивающий]Добавляет от (1-2) до (21-22) урона от молнии к чарам"
+	
+	[tag]"explicit tag"	[value]"T8"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Snapping"
+
+	[tag]"name EN"		[value]"[Snapping]Adds (1-2) to (33-35) Lightning Damage to Spells"
+	[tag]"name RU"		[value]"[Искристый]Добавляет от (1-2) до (33-35) урона от молнии к чарам"
+	
+	[tag]"explicit tag"	[value]"T7"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Crackling"
+
+	[tag]"name EN"		[value]"[Crackling]Adds (1-4) to (46-48) Lightning Damage to Spells"
+	[tag]"name RU"		[value]"[Пульсирующий]Добавляет от (1-4) до (46-48) урона от молнии к чарам"
+	
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Sparking"
+
+	[tag]"name EN"		[value]"[Sparking]Adds (2-5) to (64-68) Lightning Damage to Spells"
+	[tag]"name RU"		[value]"[Искрящийся]Добавляет от (2-5) до (64-68) урона от молнии к чарам"
+	
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Arcing"
+
+	[tag]"name EN"		[value]"[Arcing]Adds (2-7) to (84-88) Lightning Damage to Spells"
+	[tag]"name RU"		[value]"[Громовой]Добавляет от (2-7) до (84-88) урона от молнии к чарам"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Shocking"
+
+	[tag]"name EN"		[value]"[Shocking]Adds (2-9) to (109-115) Lightning Damage to Spells"
+	[tag]"name RU"		[value]"[Шоковый]Добавляет от (2-9) до (109-115) урона от молнии к чарам"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Discharging"
+
+	[tag]"name EN"		[value]"[Discharging]Adds (4-11) to (136-144) Lightning Damage to Spells"
+	[tag]"name RU"		[value]"[Грозовой]Добавляет от (4-11) до (136-144) урона от молнии к чарам"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HeraldofThunder"
+	[tag]"base name"	[value]"Electrocuting"
+
+	[tag]"name EN"		[value]"[Electrocuting]Adds (4-14) to (170-179) Lightning Damage to Spells"
+	[tag]"name RU"		[value]"[Испепеляющий]Добавляет от (4-14) до (170-179) урона от молнии к чарам"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"One-handed attribute"
+	
+	[tag]"damage type"	[value]"Lightning"
+	[tag]"build type"	[value]"Caster"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Haste"
+	[tag]"base name"	[value]"of Talent"
+
+	[tag]"name EN"		[value]"[of Talent](5-8)% increased Cast Speed <T7 one hand> <T3 rings>\n(8–13)% increased Cast Speed <T7 staves>"
+	[tag]"name RU"		[value]"[моторики](5-8)% повышение скорости сотворения чар\n<T7 одноручки><T3 кольца>"
+	
+	[tag]"explicit tag"	[value]"T7 one hand"
+	[tag]"explicit tag"	[value]"T7 staves"
+	[tag]"explicit tag"	[value]"T3 rings"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Caster"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Haste"
+	[tag]"base name"	[value]"of Nimbleness"
+
+	[tag]"name EN"		[value]"[of Nimbleness](9-12)% increased Cast Speed <T6 one hand> <T2 rings>\n(14–19)% increased Cast Speed <T6 staves>"
+	[tag]"name RU"		[value]"[сноровки](9-12)% повышение скорости сотворения чар\n<T6 одноручки> <T2 кольца>"
+	
+	[tag]"explicit tag"	[value]"T6 one hand"
+	[tag]"explicit tag"	[value]"T6 staves"
+	[tag]"explicit tag"	[value]"T2 rings"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Caster"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Haste"
+	[tag]"base name"	[value]"of Expertise"
+
+	[tag]"name EN"		[value]"[of Expertise](13-16)% increased Cast Speed <T5 one hand> <T1 rings>\n(20–25)% increased Cast Speed <T5 staves>"
+	[tag]"name RU"		[value]"[умения](13-16)% повышение скорости сотворения чар\n<T5 одноручки> <T1 кольца>\n(20–25)% повышение скорости сотворения чар <T5 посохи>"
+	
+	[tag]"explicit tag"	[value]"T5 one hand"
+	[tag]"explicit tag"	[value]"T5 staves"
+	[tag]"explicit tag"	[value]"T2 rings"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Caster"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Haste"
+	[tag]"base name"	[value]"of Legerdemain"
+
+	[tag]"name EN"		[value]"[of Legerdemain](17-20)% increased Cast Speed <T4 one hand>\n(26-31)% increased Cast Speed <T4 staves>"
+	[tag]"name RU"		[value]"[таланта](17-20)% повышение скорости сотворения чар\n<T4 одноручки>\n(26-31)% повышение скорости сотворения чар <T4 посохи>"
+	
+	[tag]"explicit tag"	[value]"T4 one hand"
+	[tag]"explicit tag"	[value]"T4 staves"
+	[tag]"explicit tag"	[value]"T1 rings"
+	
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+	[tag]"build type"	[value]"Caster"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Haste"
+	[tag]"base name"	[value]"of Prestidigitation"
+
+	[tag]"name EN"		[value]"[of Prestidigitation](21-24)% increased Cast Speed <T3 one hand>\n(32-37)% increased Cast Speed <T3 staves>"
+	[tag]"name RU"		[value]"[боевого мага](21-24)% повышение скорости сотворения чар\n<T1 одноручки>\n(32-37)% повышение скорости сотворения чар <T3 посохи>"
+
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Caster"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Haste"
+	[tag]"base name"	[value]"of Sortilege"
+
+	[tag]"name EN"		[value]"[of Sortilege](25-28)% increased Cast Speed <T2 one hand>\n(38-43)% increased Cast Speed <T2 staves>"
+	[tag]"name RU"		[value]"[боевого архимага](25-28)% повышение скорости сотворения чар\n<T1 одноручки>\n(38-43)% повышение скорости сотворения чар <T5 посохи>"
+
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Caster"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Haste"
+	[tag]"base name"	[value]"of Finesse"
+
+	[tag]"name EN"		[value]"[of Finesse](29-32)% increased Cast Speed <T2 one hand>\n(44-49)% increased Cast Speed <T1 staves>"
+	[tag]"name RU"		[value]"[боевого архимага](29-32)% повышение скорости сотворения чар <T1 одноручки>\n(44-49)% повышение скорости сотворения чар <T5 посохи>"
+
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"build type"	[value]"Caster"
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Menace"
+
+	[tag]"name EN"		[value]"[of Menace](10-19)% increased Critical Strike Chance for Spells<T6 staves>\n(8-12)% increased Global Critical Strike Chance <T? jewels>"
+	[tag]"name RU"		[value]"[напасти](10-19)% повышение шанса критического удара для чар <T6 staves>\n(8-12)% повышение глобального шанса критического удара <T? самоцветы>"
+	
+	[tag]"explicit tag"	[value]"T6"
+	
+	[tag]"explicit tag"	[value]"Jewel mod"
+	
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Havoc"
+
+	[tag]"name EN"		[value]"[of Havoc](20-39)% increased Critical Strike Chance for Spells"
+	[tag]"name RU"		[value]"[погрома](20-39)% повышение шанса критического удара для чар"
+	
+	[tag]"explicit tag"	[value]"T5"
+	
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Disaster"
+
+	[tag]"name EN"		[value]"[of Disaster](40-59)% increased Critical Strike Chance for Spells"
+	[tag]"name RU"		[value]"[разрухи](40-59)% повышение шанса критического удара для чар"
+	
+	[tag]"explicit tag"	[value]"T4"
+	
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Calamity"
+
+	[tag]"name EN"		[value]"[of Calamity](60-79)% increased Critical Strike Chance for Spells"
+	[tag]"name RU"		[value]"[бедствия](60-79)% повышение шанса критического удара для чар"
+	
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Ruin"
+
+	[tag]"name EN"		[value]"[of Ruin](80-99)% increased Critical Strike Chance for Spells"
+	[tag]"name RU"		[value]"[катастрофы](80-99)% повышение шанса критического удара для чар"
+	
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Caster"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PowerCharge"
+	[tag]"base name"	[value]"of Unmaking"
+
+	[tag]"name EN"		[value]"[of Unmaking](100-109)% increased Critical Strike Chance for Spells\n(12-15)% to Critical Strike Multiplier for Spell Damage"
+	[tag]"name RU"		[value]"[небытия](100-109)% повышение шанса критического удара для чар\n(12-15)% к множителю критического удара для урона чарами"
+	
+	[tag]"explicit tag"	[value]"T1"
+	
+	[tag]"explicit tag"	[value]"Jewel mod"
+	
+	[tag]"build type"	[value]"Caster"
+
+
+
+
+
+
+
+
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Mysticism"
+
+	[tag]"name EN"		[value]"[of Mysticism](10-12)% increased Spell Damage"
+	[tag]"name RU"		[value]"[мистики](10-12)% увеличение урона от чар"
+	
+	[tag]"explicit tag"	[value]"Jewel mod"
+	
+	[tag]"build type"	[value]"Caster"
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofIce"
+	[tag]"base name"	[value]"of the Inuit"
+
+	[tag]"name EN"		[value]"[of the Inuit](6-11)% to Cold Resistance"
+	[tag]"name RU"		[value]"[чукчи](6-11)% к сопротивлению холоду"
+	
+	[tag]"explicit tag"	[value]"T8"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofIce"
+	[tag]"base name"	[value]"of the Seal"
+
+	[tag]"name EN"		[value]"[of the Seal](12-17)% to Cold Resistance"
+	[tag]"name RU"		[value]"[тюленя](12-17)% к сопротивлению холоду"
+	
+	[tag]"explicit tag"	[value]"T7"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofIce"
+	[tag]"base name"	[value]"of the Penguin"
+
+	[tag]"name EN"		[value]"[of the Penguin](18-23)% to Cold Resistance"
+	[tag]"name RU"		[value]"[пингвина](18-23)% к сопротивлению холоду"
+
+	[tag]"explicit tag"	[value]"T6"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Resistance"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofIce"
+	[tag]"base name"	[value]"of the Yeti"
+
+	[tag]"name EN"		[value]"[of the Yeti](24-29)% to Cold Resistance"
+	[tag]"name RU"		[value]"[йети](24-29)% к сопротивлению холоду"
+
+	[tag]"explicit tag"	[value]"T5"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Resistance"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofIce"
+	[tag]"base name"	[value]"of the Walrus"
+
+	[tag]"name EN"		[value]"[of the Walrus](30-35)% to Cold Resistance"
+	[tag]"name RU"		[value]"[моржа](30-35)% к сопротивлению холоду"
+	
+	[tag]"explicit tag"	[value]"T4"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofIce"
+	[tag]"base name"	[value]"of the Polar Bear"
+
+	[tag]"name EN"		[value]"[of the Polar Bear](36-41)% to Cold Resistance"
+	[tag]"name RU"		[value]"[белого медведя](36-41)% к сопротивлению холоду"
+	
+	[tag]"explicit tag"	[value]"T3"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofIce"
+	[tag]"base name"	[value]"of the Ice"
+
+	[tag]"name EN"		[value]"[of the Ice](42-45)% to Cold Resistance"
+	[tag]"name RU"		[value]"[айсберга](42-45)% к сопротивлению холоду"
+	
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Resistance"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"PurityofIce"
+	[tag]"base name"	[value]"of Haast"
+
+	[tag]"name EN"		[value]"[of Haast](46-48)% to Cold Resistance"
+	[tag]"name RU"		[value]"[Хааста](46-48)% к сопротивлению холоду"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"damage type"	[value]"Cold"
+	[tag]"build type"	[value]"Resistance"
+	
+
+
+	
+	

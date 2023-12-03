@@ -2614,6 +2614,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Any base"
 	[tag]"name RU"		[value]"Любая"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_defence"
+	[tag]"name EN"		[value]"Defences"
+	[tag]"name RU"		[value]"Защита"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_resistance"
+	[tag]"name EN"		[value]"Resistances"
+	[tag]"name RU"		[value]"Сопротивления"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_attributes"
+	[tag]"name EN"		[value]"Attributes"
+	[tag]"name RU"		[value]"Аттрибуты"
+	
 
 	
 	
