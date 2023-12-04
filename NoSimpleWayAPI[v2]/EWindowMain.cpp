@@ -3653,15 +3653,25 @@ EWindowMain::EWindowMain()
 	ETextParser::data_entity_parse_file("data/data_entity_list[influence].txt");
 	ETextParser::data_entity_parse_file("data/data_entity_list[base_class].txt");
 
-	ETextParser::data_entity_parse_file("data/data_entity_list[explicit].txt");
-	ETextParser::data_entity_parse_file("data/DataEntityExplicits.txt");
-	ETextParser::data_entity_parse_file("data/DataEntityExplicitsLowUsable.txt");
+	//ETextParser::data_entity_parse_file("data/data_entity_list[explicit].txt");
+	//ETextParser::data_entity_parse_file("data/DataEntityExplicits.txt");
+	//ETextParser::data_entity_parse_file("data/DataEntityExplicitsLowUsable.txt");
 
 	ETextParser::data_entity_parse_file("data/data_entity_list[enchantment].txt");
 
 	ETextParser::data_entity_parse_file("data/data_entity_list[localisation].txt");
 
+
+	parse_raw_explicit_table();
+
+
+
 	ETextParser::split_data_entity_list_to_named_structs();
+
+
+	
+
+
 	add_game_item_data_entity_to_list();
 
 	register_filter_rules();
@@ -8189,6 +8199,42 @@ EWindowMain::EWindowMain()
 
 }
 
+std::vector<RawDataEntity> raw_data_entity_list;
+
+void EWindowMain::parse_raw_explicit_table()
+{
+	std::ifstream file;
+	std::string str;
+
+	file.open("data/RawExplicitsTable.txt");
+
+	RawDataEntity
+	new_raw_entity;
+
+	EDataTag
+		new_tag;
+
+	while (std::getline(file, str))
+	{
+		EStringUtils::split_line_to_array(str);
+		
+		if (EStringUtils::string_array[0] != "\t")
+		{
+			new_raw_entity	= RawDataEntity();
+			new_tag			= EDataTag();
+			new_tag.tag_name = new std::string(EStringUtils::string_array[0]);
+
+			new_raw_entity.tag_list.push_back(new_tag);
+
+			raw_data_entity_list.push_back(new_raw_entity);
+		}
+
+		
+	}
+
+	file.close();
+}
+
 void EWindowMain::load_config_from_disc()
 {
 	if (std::filesystem::exists(path_of_exile_folder + "DaDEditorConfig.config"))
@@ -8257,6 +8303,8 @@ void EWindowMain::load_config_from_disc()
 				version_id++;
 			}
 		}
+
+		file.close();
 	}
 	else
 	{

@@ -1091,6 +1091,15 @@ enum class LootFilterOpenMode
 };
 
 
+struct RawDataEntity
+{
+public:
+	bool collision = false;
+	std::vector <EDataTag> tag_list;
+
+	static std::vector<RawDataEntity> raw_data_entity_list;
+};
+
 constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow
 {
@@ -1104,6 +1113,8 @@ public:
 	void register_loot_version_names();
 
 	EWindowMain();
+
+	void parse_raw_explicit_table();
 
 	void load_config_from_disc();
 	void load_config_from_disc_for_filter_version();
