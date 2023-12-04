@@ -3182,9 +3182,14 @@ void ETextParser::split_data_entity_list_to_named_structs()
 	DataEntityNamedStruct* target_named_struct	= nullptr;\
 	std::string data_type_name					= "";
 	std::string data_entity_name				= "";
+	std::string base_name						= "";
 
 	int arr[256] = {};
-	
+
+	std::string
+	explicit_array[2048];
+
+	int collision_count[2048]{};
 
 	//for (EDataEntity* data_entity : EDataEntity::data_entity_global_list)
 	for (int i = 0; i < EDataEntity::data_entity_global_list.size(); i++)
@@ -3196,7 +3201,8 @@ void ETextParser::split_data_entity_list_to_named_structs()
 		{
 			int index = 0;
 
-			data_type_name = DataEntityUtils::get_tag_value_by_name(0, "data type", data_entity);
+			data_type_name	= DataEntityUtils::get_tag_value_by_name(0, "data type", data_entity);
+			base_name		= DataEntityUtils::get_tag_value_by_name(0, "base name", data_entity);
 
 			data_entity_name = DataEntityUtils::get_tag_value_by_name(0, "key", data_entity);
 
@@ -3218,6 +3224,53 @@ void ETextParser::split_data_entity_list_to_named_structs()
 			if (data_type_name != "")
 			{
 				EDataEntity::data_entity_hash_struct.data_entity_list[index].push_back(data_entity);
+
+
+				
+
+				if (data_type_name == "Explicit")
+				{
+					
+					for (int i = 0; i < 2048; i++)
+					{
+						
+						if (base_name == explicit_array[i])
+						{
+							collision_count[i]++;
+							break;
+
+						}
+						else
+						if (explicit_array[i] == "")
+						{
+							explicit_array[i] = base_name;
+							break;
+						}
+					}
+
+					
+					std::ofstream writabro;
+					writabro.open("-ExplicitCollisionCheck-.txt");
+						for (int i = 0; i < 2048; i++)
+						{
+							if (explicit_array[i] != "")
+							{
+								writabro << explicit_array[i];
+								
+								if (collision_count[i] > 0)
+								{
+									writabro << "\t[" << std::to_string(collision_count[i]) << "]";
+								}
+								else
+								{
+									writabro << "\tno collision";
+								}
+
+								writabro << std::endl;
+							}
+						}
+					writabro.close();
+				}
 			}
 		}
 		else

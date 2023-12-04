@@ -3655,6 +3655,7 @@ EWindowMain::EWindowMain()
 
 	ETextParser::data_entity_parse_file("data/data_entity_list[explicit].txt");
 	ETextParser::data_entity_parse_file("data/DataEntityExplicits.txt");
+	ETextParser::data_entity_parse_file("data/DataEntityExplicitsLowUsable.txt");
 
 	ETextParser::data_entity_parse_file("data/data_entity_list[enchantment].txt");
 

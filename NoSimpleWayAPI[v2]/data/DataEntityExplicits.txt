@@ -3009,7 +3009,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Hale](21-25) to maximum Life\n<T13 body armour> <T11 shields> <T10 unset ring/quiver/wand> <T9 gloves/boots/helmets/amulets> <T8 ring> <T4 jewel>"
 	[tag]"name RU"		[value]"[Здоровый](21-25) к максимуму здоровья\n<T13 доспехи> <T11 щиты> <T10 кольцо без камня/колчаны> <T9 перчатки/шлемы/сапоги/амулеты> <T8 кольца> <T4 самоцветы>"
 	
-	[tag]"explicit tag"	[value]"T13 body armour"
+	[tag]"explicit tag"	[value]"T13 body armours"
 	[tag]"explicit tag"	[value]"T11 shields"
 	[tag]"explicit tag"	[value]"T10 unset rings"
 	[tag]"explicit tag"	[value]"T10 quivers"
@@ -3028,7 +3028,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Healthy](26-30) to maximum Life\n<T12 body armour> <T10 shields> <T9 unset ring/quiver/wand> <T8 gloves/boots/helmets/amulets> <T7 ring> <T3 jewel>"
 	[tag]"name RU"		[value]"[Здравый](26-30) к максимуму здоровья\n<T12 доспехи> <T10 щиты> <T9 кольцо без камня/колчаны> <T8 перчатки/шлемы/сапоги/амулеты> <T7 кольца> <T3 самоцветы>"
 	
-	[tag]"explicit tag"	[value]"T12 body armour"
+	[tag]"explicit tag"	[value]"T12 body armours"
 	[tag]"explicit tag"	[value]"T10 shields"
 	[tag]"explicit tag"	[value]"T9 unset rings"
 	[tag]"explicit tag"	[value]"T9 quivers"
@@ -3047,7 +3047,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Sanguine](31-35) to maximum Life\n<T11 body armour> <T9 shields> <T8 unset ring/quiver/wand> <T7 gloves/boots/helmets/amulets> <T6 ring> <T2 jewel>"
 	[tag]"name RU"		[value]"[Крепкий](31-35) к максимуму здоровья\n<T11 доспехи<T9 щиты> <T8 кольцо без камня/колчаны> <T7 перчатки/шлемы/сапоги/амулеты> <T6 кольца> <T2 самоцветы>"
 
-	[tag]"explicit tag"	[value]"T11 body armour"
+	[tag]"explicit tag"	[value]"T11 body armours"
 	[tag]"explicit tag"	[value]"T9 shields"
 	[tag]"explicit tag"	[value]"T8 unset rings"
 	[tag]"explicit tag"	[value]"T8 quivers"
@@ -3065,7 +3065,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Stalwart](36-40) to maximum Life\n<T10 body armour> <T8 shields> <T7 unset ring/quiver/wand> <T6 gloves/boots/helmets/amulets> <T5 ring> <T1 jewel>"
 	[tag]"name RU"		[value]"[Стойкий](36-40) к максимуму здоровья\n<T10 доспехи<T8 щиты> <T7 кольцо без камня/колчаны> <T6 перчатки/шлемы/сапоги/амулеты> <T5 кольца> <T1 самоцветы>"
 	
-	[tag]"explicit tag"	[value]"T10 body armour"
+	[tag]"explicit tag"	[value]"T10 body armours"
 	[tag]"explicit tag"	[value]"T8 shields"
 	[tag]"explicit tag"	[value]"T7 unset rings"
 	[tag]"explicit tag"	[value]"T7 quivers"
@@ -3087,7 +3087,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Stout](40-49) to maximum Life\n<T9 body armour> <T7 shields> <T6 unset ring/quiver/wand> <T5 gloves/boots/helmets/amulets> <T4 ring>"
 	[tag]"name RU"		[value]"[Могучий](40-49) к максимуму здоровья\n<T9 доспехи<T7 щиты> <T6 кольцо без камня/колчаны> <T5 перчатки/шлемы/сапоги/амулеты> <T4 кольца>"
 
-	[tag]"explicit tag"	[value]"T9 body armour"
+	[tag]"explicit tag"	[value]"T9 body armours"
 	[tag]"explicit tag"	[value]"T7 shields"
 	[tag]"explicit tag"	[value]"T6 unset rings"
 	[tag]"explicit tag"	[value]"T6 quivers"
@@ -3104,7 +3104,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Robust](50-59) to maximum Life\n<T8 body armour> <T6 shields> <T5 unset ring/quiver/wand> <T4 gloves/boots/helmets/amulets> <T3 ring>"
 	[tag]"name RU"		[value]"[Мощный](50-59) к максимуму здоровья\n<T8 доспехи<T6 щиты> <T5 кольцо без камня/колчаны> <T4 перчатки/шлемы/сапоги/амулеты> <T3 кольца>"
 
-	[tag]"explicit tag"	[value]"T8 body armour"
+	[tag]"explicit tag"	[value]"T8 body armours"
 	[tag]"explicit tag"	[value]"T6 shields"
 	[tag]"explicit tag"	[value]"T5 unset rings"
 	[tag]"explicit tag"	[value]"T5 quivers"
@@ -3121,7 +3121,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Rotund](60-69) to maximum Life\n<T7 body armour> <T5 shields> <T4 unset ring/quiver/wand> <T3 gloves/boots/helmets/amulets> <T2 ring>"
 	[tag]"name RU"		[value]"[Массивный](60-69) к максимуму здоровья\n<T7 доспехи<T5 щиты> <T4 кольцо без камня/колчаны> <T3 перчатки/шлемы/сапоги/амулеты> <T2 кольца>"
 
-	[tag]"explicit tag"	[value]"T7 body armour"
+	[tag]"explicit tag"	[value]"T7 body armours"
 	[tag]"explicit tag"	[value]"T5 shields"
 	[tag]"explicit tag"	[value]"T4 unset rings"
 	[tag]"explicit tag"	[value]"T4 quivers"
@@ -3138,7 +3138,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Virile](70-79) to maximum Life\n<T6 body armour> <T4 shields> <T3 unset ring/quiver/wand> <T2 gloves/boots/helmets/amulets> <T1 ring>"
 	[tag]"name RU"		[value]"[Сильный](70-79) к максимуму здоровья\n<T6 доспехи<T4 щиты> <T3 кольцо без камня/колчаны> <T2 перчатки/шлемы/сапоги/амулеты> <T1 кольца>"
 	
-	[tag]"explicit tag"	[value]"T6 body armour"
+	[tag]"explicit tag"	[value]"T6 body armours"
 	[tag]"explicit tag"	[value]"T4 shields"
 	[tag]"explicit tag"	[value]"T3 unset rings"
 	[tag]"explicit tag"	[value]"T3 quivers"
@@ -3156,7 +3156,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Athlete's](80-89) to maximum Life\n<T5 body armour> <T3 shields> <T2 unset ring/quiver/wand> <T1 gloves/boots/helmets/amulets>"
 	[tag]"name RU"		[value]"[Выносливый](80-89) к максимуму здоровья\n<T5 доспехи<T3 щиты> <T2 кольцо без камня/колчаны> <T1 перчатки/шлемы/сапоги/амулеты>"
 	
-	[tag]"explicit tag"	[value]"T5 body armour"
+	[tag]"explicit tag"	[value]"T5 body armours"
 	[tag]"explicit tag"	[value]"T3 shields"
 	[tag]"explicit tag"	[value]"T2 unset rings"
 	[tag]"explicit tag"	[value]"T2 quivers"
@@ -3173,7 +3173,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Fecund](90-99) to maximum Life\n<T4 body armour> <T2 shields> <T1 unset ring/quiver/wand>"
 	[tag]"name RU"		[value]"[Живучий](90-99) к максимуму здоровья\n<T4 доспехи<T2 щиты> <T1 кольцо без камня/колчаны>"
 	
-	[tag]"explicit tag"	[value]"T4 body armour"
+	[tag]"explicit tag"	[value]"T4 body armours"
 	[tag]"explicit tag"	[value]"T2 shields"
 	[tag]"explicit tag"	[value]"T1 unset rings"
 	[tag]"explicit tag"	[value]"T1 quivers"
@@ -3190,7 +3190,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Vigorous](100-109) to maximum Life\n<T3 body armour> <T1 shields>"
 	[tag]"name RU"		[value]"[Бессмертный](100-109) к максимуму здоровья\n<T3 доспехи<T1 щиты>"
 	
-	[tag]"explicit tag"	[value]"T3 body armour"
+	[tag]"explicit tag"	[value]"T3 body armours"
 	[tag]"explicit tag"	[value]"T1 shields"
 	
 	[tag]"build type"	[value]"Defence"
@@ -3205,7 +3205,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Rapturous](110-119) to maximum Life\n<T2 body armour>"
 	[tag]"name RU"		[value]"[Нетленный](110-119) к максимуму здоровья\n<T2 доспехи"
 	
-	[tag]"explicit tag"	[value]"T2 body armour"
+	[tag]"explicit tag"	[value]"T2 body armours"
 	
 	[tag]"build type"	[value]"Defence"
 	
@@ -3217,7 +3217,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[Prime](120-129) to maximum Life\n<T1 body armour>"
 	[tag]"name RU"		[value]"[Вечный](120-129) к максимуму здоровья\n<T1 доспехи"
 	
-	[tag]"explicit tag"	[value]"T1 body armour"
+	[tag]"explicit tag"	[value]"T1 body armours"
 	
 	[tag]"build type"	[value]"Defence"
 	
@@ -3320,7 +3320,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[of the Newt]Regenerate (1-2) Life per second\n<T11 body armour> <T10 shields> <T9 unset ring> <T8 gloves/boots/helmets/amulets> <T7 ring> <T3 jewel>"
 	[tag]"name RU"		[value]"[тритона]Регенерация (1-2) здоровья в секунду"
 
-	[tag]"explicit tag"	[value]"T11 body armour"
+	[tag]"explicit tag"	[value]"T11 body armours"
 	[tag]"explicit tag"	[value]"T10 shields"
 	[tag]"explicit tag"	[value]"T9 unset rings"
 	[tag]"explicit tag"	[value]"T8 quivers"
@@ -3338,7 +3338,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"[of the Lizard]Regenerate (2.1-8) Life per second\n<T10 body armour> <T9 shields> <T8 unset ring> <T7 gloves/boots/helmets/amulets> <T6 ring> <T2 jewel>"
 	[tag]"name RU"		[value]"[ящерицы]Регенерация (2.1-8) здоровья в секунду"
 
-	[tag]"explicit tag"	[value]"T11 body armour"
+	[tag]"explicit tag"	[value]"T11 body armours"
 	[tag]"explicit tag"	[value]"T10 shields"
 	[tag]"explicit tag"	[value]"T9 unset rings"
 	[tag]"explicit tag"	[value]"T8 quivers"
@@ -5157,3 +5157,552 @@ ADD_NEW_DATA_ENTITY
 
 	
 	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Mongoose"
+
+	[tag]"name EN"		[value]"[of the Mongoose](8-12) to Dexterity <T9 jewellery/body armour/shields> <T10 gloves/quivers>\n(2-3 to dexterity) <T5 cluster>"
+	[tag]"name RU"		[value]"[мангуста](8-12) к ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Lynx"
+
+	[tag]"name EN"		[value]"[of the Lynx](13-17) to Dexterity <T8 jewellery/body armour/shields> <T9 gloves/quivers>\n(4-5 to dexterity) <T4 cluster>   (9-11 movement speed)<T2 flasks>"
+	[tag]"name RU"		[value]"[рыси](13-17) к ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Fox"
+
+	[tag]"name EN"		[value]"[of the Fox](18-22) to Dexterity <T7 jewellery/body armour/shields> <T8 gloves/quivers>\n(6-8 to dexterity) <T3 cluster>    ((52-48)% reduced Effect of Chill)<T3 flasks>"
+	[tag]"name RU"		[value]"[лисы](18-22) к ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Falcon"
+
+	[tag]"name EN"		[value]"[of the Falcon](23-27) to Dexterity <T6 jewellery/body armour/shields> <T7 gloves/quivers>\n(9-11 to deterity) <T2 cluster>    ((9-11)% increased Attack Speed)<T3 flasks>"
+	[tag]"name RU"		[value]"[сокола](23-27) к ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Panther"
+
+	[tag]"name EN"		[value]"[of the Panther](28-32) to Dexterity <T5 jewellery/body armour/shields> <T6 gloves/quivers>\n(12-14 to dexterity) <T1 cluster>"
+	[tag]"name RU"		[value]"[пантеры](28-32) к ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Leopard"
+
+	[tag]"name EN"		[value]"[of the Leopard](33-37) to Dexterity <T4 jewellery/body armour/shields> <T5 gloves/quivers>"
+	[tag]"name RU"		[value]"[леопарда](33-37) к ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Jaguar"
+
+	[tag]"name EN"		[value]"[of the Jaguar](38-42) to Dexterity <T3 jewellery/body armour/shields> <T4 gloves/quivers>"
+	[tag]"name RU"		[value]"[ягуара](38-42) к ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Phantom"
+
+	[tag]"name EN"		[value]"[of the Phantom](43-50) to Dexterity <T2 jewellery/body armour/shields> <T3 gloves/quivers>"
+	[tag]"name RU"		[value]"[призрака](43-50) к ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Wind"
+
+	[tag]"name EN"		[value]"[of the Wind](51-55) to Dexterity <T1 jewellery/body armour/shields> <T2 gloves/quivers>"
+	[tag]"name RU"		[value]"[ветра](51-55) к ловкости"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of the Blur"
+
+	[tag]"name EN"		[value]"[of the Blur](56-60) to Dexterity <T1 gloves/quivers>"
+	[tag]"name RU"		[value]"[тумана](56-60) к ловкости"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Shining"
+
+	[tag]"name EN"		[value]"[Shining](3-5) to maximum Energy Shield <T10 shields> <T11 body armours>\n (1-3) to maximum Energy Shield <T12 belts/amulets> <T11 rings>\n+(21–25) to maximum Energy Shield <T4 самоцвет бездны>"
+	[tag]"name RU"		[value]"[Тлеющий](3-5) к максимуму энергетического щита <T10 щиты> <T11 нагрудные доспехи>\n (1-3) к максимуму энергетического щита <T12 пояса/амулеты> <T11 rings>\n+(21–25) к максимуму энергетического щита <T4 abyss jewels>"
+
+	[tag]"explicit tag"	[value]"T10 shields"
+	[tag]"explicit tag"	[value]"T11 body armours"
+	[tag]"explicit tag"	[value]"T12 belts"
+	[tag]"explicit tag"	[value]"T12 amulets"
+	[tag]"explicit tag"	[value]"T11 rings"
+	[tag]"explicit tag"	[value]"T4 abyss jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Glimmering"
+
+	[tag]"name EN"		[value]"[Glimmering](6-11) to maximum Energy Shield <T9 shields> <T10 body armours>\n (4-8) to maximum Energy Shield <T11 belts/amulets> <T10 rings>\n+(26-30) to maximum Energy Shield <T3 abyss jewels>"
+	[tag]"name RU"		[value]"[Мерцающий](6-11) к максимуму энергетического щита <T9 щиты> <T10 нагрудные доспехи>\n (4-8) к максимуму энергетического щита <T11 пояса/амулеты> <T10 rings>\n+(26-30) к максимуму энергетического щита <T3 самоцвет бездны>"
+
+	[tag]"explicit tag"	[value]"T9 shields"
+	[tag]"explicit tag"	[value]"T10 body armours"
+	[tag]"explicit tag"	[value]"T11 belts"
+	[tag]"explicit tag"	[value]"T11 amulets"
+	[tag]"explicit tag"	[value]"T10 rings"
+	[tag]"explicit tag"	[value]"T3 abyss jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Glittering"
+
+	[tag]"name EN"		[value]"[Glittering](12-16) to maximum Energy Shield <T8 shields> <T9 body armours>\n (9-12) to maximum Energy Shield <T10 belts/amulets> <T9 rings>\n+(31-35) to maximum Energy Shield <T2 abyss jewels>"
+	[tag]"name RU"		[value]"[Переливающийся](12-16) к максимуму энергетического щита <T8 щиты> <T9 нагрудные доспехи>\n (9-12) к максимуму энергетического щита <T10 пояса/амулеты> <T9 rings>\n+(31-35) к максимуму энергетического щита <T2 самоцвет бездны>"
+
+	[tag]"explicit tag"	[value]"T8 shields"
+	[tag]"explicit tag"	[value]"T9 body armours"
+	[tag]"explicit tag"	[value]"T10 belts"
+	[tag]"explicit tag"	[value]"T10 amulets"
+	[tag]"explicit tag"	[value]"T9 rings"
+	[tag]"explicit tag"	[value]"T2 abyss jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Glowing"
+
+	[tag]"name EN"		[value]"[Glowing](17-23) to maximum Energy Shield <T7 shields> <T8 body armours>\n (13–15) to maximum Energy Shield <T9 belts/amulets> <T8 rings>\n+(36-40) to maximum Energy Shield <T1 abyss jewels>"
+	[tag]"name RU"		[value]"[Яркий](17-23) к максимуму энергетического щита <T7 щиты> <T8 нагрудные доспехи>\n (13–15) к максимуму энергетического щита <T9 пояса/амулеты> <T8 rings>\n+(36-40) к максимуму энергетического щита <T1 самоцвет бездны>"
+
+	[tag]"explicit tag"	[value]"T7 shields"
+	[tag]"explicit tag"	[value]"T8 body armours"
+	[tag]"explicit tag"	[value]"T9 belts"
+	[tag]"explicit tag"	[value]"T9 amulets"
+	[tag]"explicit tag"	[value]"T8 rings"
+	[tag]"explicit tag"	[value]"T1 abyss jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Radiating"
+
+	[tag]"name EN"		[value]"[Radiating](24-30) to maximum Energy Shield <T6 shields> <T7 body armours>\n (16-19) to maximum Energy Shield <T8 belts/amulets> <T7 rings>"
+	[tag]"name RU"		[value]"[Блестящий](24-30) к максимуму энергетического щита <T6 щиты> <T7 нагрудные доспехи>\n (16-19) к максимуму энергетического щита <T8 пояса/амулеты> <T7 rings>"
+
+	[tag]"explicit tag"	[value]"T6 shields"
+	[tag]"explicit tag"	[value]"T7 body armours"
+	[tag]"explicit tag"	[value]"T8 belts"
+	[tag]"explicit tag"	[value]"T8 amulets"
+	[tag]"explicit tag"	[value]"T7 rings"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Pulsing"
+
+	[tag]"name EN"		[value]"[Pulsing](31-38) to maximum Energy Shield <T5 shields> <T6 body armours>\n (20-22) to maximum Energy Shield <T7 belts/amulets> <T6 rings>"
+	[tag]"name RU"		[value]"[Светящийся](31-38) к максимуму энергетического щита <T5 щиты> <T6 нагрудные доспехи>\n (20-22) к максимуму энергетического щита <T7 пояса/амулеты> <T6 rings>"
+
+	[tag]"explicit tag"	[value]"T5 shields"
+	[tag]"explicit tag"	[value]"T6 body armours"
+	[tag]"explicit tag"	[value]"T7 belts"
+	[tag]"explicit tag"	[value]"T7 amulets"
+	[tag]"explicit tag"	[value]"T6 rings"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Seething"
+
+	[tag]"name EN"		[value]"[Seething](39-49) to maximum Energy Shield <T4 shields> <T5 body armours>\n (23-26) to maximum Energy Shield <T6 belts/amulets> <T5 rings>"
+	[tag]"name RU"		[value]"[Сияющий](39-49) к максимуму энергетического щита <T4 щиты> <T5 нагрудные доспехи>\n (23-26) к максимуму энергетического щита <T6 пояса/амулеты> <T5 rings>"
+
+	[tag]"explicit tag"	[value]"T4 shields"
+	[tag]"explicit tag"	[value]"T5 body armours"
+	[tag]"explicit tag"	[value]"T6 belts"
+	[tag]"explicit tag"	[value]"T6 amulets"
+	[tag]"explicit tag"	[value]"T5 rings"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Blazing"
+
+	[tag]"name EN"		[value]"[Blazing](50-61) to maximum Energy Shield <T3 shields> <T4 body armours>\n (27-31) to maximum Energy Shield <T5 belts/amulets> <T4 rings>"
+	[tag]"name RU"		[value]"[Сверкающий](50-61) к максимуму энергетического щита <T3 щиты> <T4 нагрудные доспехи>\n (27-31) к максимуму энергетического щита <T5 пояса/амулеты> <T4 rings>"
+
+	[tag]"explicit tag"	[value]"T3 shields"
+	[tag]"explicit tag"	[value]"T4 body armours"
+	[tag]"explicit tag"	[value]"T5 belts"
+	[tag]"explicit tag"	[value]"T5 amulets"
+	[tag]"explicit tag"	[value]"T4 rings"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Scintillating"
+
+	[tag]"name EN"		[value]"[Scintillating](62-76) to maximum Energy Shield <T2 shields> <T3 body armours>\n (32-37) to maximum Energy Shield <T4 belts/amulets> <T3 rings>"
+	[tag]"name RU"		[value]"[Лучистый](62-76) к максимуму энергетического щита <T2 щиты> <T3 нагрудные доспехи>\n (32-37) к максимуму энергетического щита <T4 пояса/амулеты> <T3 rings>"
+
+	[tag]"explicit tag"	[value]"T2 shields"
+	[tag]"explicit tag"	[value]"T3 body armours"
+	[tag]"explicit tag"	[value]"T4 belts"
+	[tag]"explicit tag"	[value]"T4 amulets"
+	[tag]"explicit tag"	[value]"T3 rings"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Incandescent"
+
+	[tag]"name EN"		[value]"[Incandescent](77-90) to maximum Energy Shield <T1 shields> <T2 body armours>\n (38-43) to maximum Energy Shield <T3 belts/amulets> <T2 rings>"
+	[tag]"name RU"		[value]"[Пульсирующий](77-90) к максимуму энергетического щита <T1 щиты> <T2 нагрудные доспехи>\n (38-43) к максимуму энергетического щита <T3 пояса/амулеты> <T2 rings>"
+
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"T2"
+	[tag]"explicit tag"	[value]"T3"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Soft tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Resplendent"
+
+	[tag]"name EN"		[value]"[Resplendent](91-100) to maximum Energy Shield <T1 body armours>\n (44-47) to maximum Energy Shield <T2 belts/amulets> <T1 rings>"
+	[tag]"name RU"		[value]"[Ослепительный](91-100) к максимуму энергетического щита <T1 нагрудные доспехи>\n (44-47) к максимуму энергетического щита <T2 пояса/амулеты> <T1 rings>"
+	
+	[tag]"explicit tag"	[value]"T1"
+	[tag]"explicit tag"	[value]"T2"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Soft tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Discipline"
+	[tag]"base name"	[value]"Искрящийся"
+
+	[tag]"name EN"		[value]"[Dazzling](48-51) to maximum Energy Shield <T1 belts/amulets>"
+	[tag]"name RU"		[value]"[Ослепительный](48-51) к максимуму энергетического щита <T1 пояса/амулеты>"	
+	
+	[tag]"explicit tag"	[value]"T1 belts"
+	[tag]"explicit tag"	[value]"T1 amulets"
+	
+	[tag]"build type"	[value]"Defence"
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Agile"
+
+	[tag]"name EN"		[value]"[Agile]Evasion Rating <T11 body armours> <T10 shields> <T8 helmets> <T7 gloves/boots/rings/amulets> <T4 abyss jewel>"
+	[tag]"name RU"		[value]"[Ловкий]Уклонение <T11 нагрудные доспехи> <T10 щиты> <T8 шлемы> <T7 перчатки/сапоги/кольца/амулеты> <T4 самоцветы бездны>"
+	
+	[tag]"explicit tag"	[value]"T11 body armours"
+	[tag]"explicit tag"	[value]"T10 shields"
+	[tag]"explicit tag"	[value]"T8 helmets"
+	[tag]"explicit tag"	[value]"T7 gloves"
+	[tag]"explicit tag"	[value]"T7 boots"
+	[tag]"explicit tag"	[value]"T7 rings"
+	[tag]"explicit tag"	[value]"T7 amulets"
+	[tag]"explicit tag"	[value]"T4 abyss jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Dancer's"
+
+	[tag]"name EN"		[value]"[Dancer's]Evasion Rating <T10 body armours> <T9 shields> <T7 helmets> <T6 gloves/boots/rings/amulets> <T3 abyss jewel>"
+	[tag]"name RU"		[value]"[Проворный]Уклонение <T10 нагрудные доспехи> <T9 щиты> <T7 шлемы> <T6 перчатки/сапоги/кольца/амулеты> <T3 самоцветы бездны>"
+
+	[tag]"explicit tag"	[value]"T10 body armours"
+	[tag]"explicit tag"	[value]"T9 shields"
+	[tag]"explicit tag"	[value]"T7 helmets"
+	[tag]"explicit tag"	[value]"T6 gloves"
+	[tag]"explicit tag"	[value]"T6 boots"
+	[tag]"explicit tag"	[value]"T6 rings"
+	[tag]"explicit tag"	[value]"T6 amulets"
+	[tag]"explicit tag"	[value]"T3 abyss jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Acrobat's"
+
+	[tag]"name EN"		[value]"[Acrobat's]Evasion Rating <T9 body armours> <T8 shields> <T6 helmets> <T5 gloves/boots/rings/amulets> <T2 abyss jewel>"
+	[tag]"name RU"		[value]"[Гибкий]Уклонение <T9 нагрудные доспехи> <T8 щиты> <T6 шлемы> <T5 перчатки/сапоги/кольца/амулеты> <T2 самоцветы бездны>"
+
+	[tag]"explicit tag"	[value]"T9 body armours"
+	[tag]"explicit tag"	[value]"T8 shields"
+	[tag]"explicit tag"	[value]"T6 helmets"
+	[tag]"explicit tag"	[value]"T5 gloves"
+	[tag]"explicit tag"	[value]"T5 boots"
+	[tag]"explicit tag"	[value]"T5 rings"
+	[tag]"explicit tag"	[value]"T5 amulets"
+	[tag]"explicit tag"	[value]"T2 abyss jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Fleet"
+
+	[tag]"name EN"		[value]"[Fleet]Evasion Rating <T8 body armours> <T7 shields> <T5 helmets> <T4 gloves/boots/rings/amulets> <T1 abyss jewel>"
+	[tag]"name RU"		[value]"[Подвижный]Уклонение <T8 нагрудные доспехи> <T7 щиты> <T5 шлемы> <T4 перчатки/сапоги/кольца/амулеты> <T1 самоцветы бездны>"
+
+	[tag]"explicit tag"	[value]"T8 body armours"
+	[tag]"explicit tag"	[value]"T7 shields"
+	[tag]"explicit tag"	[value]"T5 helmets"
+	[tag]"explicit tag"	[value]"T4 gloves"
+	[tag]"explicit tag"	[value]"T4 boots"
+	[tag]"explicit tag"	[value]"T4 rings"
+	[tag]"explicit tag"	[value]"T4 amulets"
+	[tag]"explicit tag"	[value]"T1 abyss jewels"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Blurred"
+
+	[tag]"name EN"		[value]"[Blurred]Evasion Rating <T7 body armours> <T6 shields> <T4 helmets> <T3 gloves/boots/rings/amulets>"
+	[tag]"name RU"		[value]"[Юркий]Уклонение <T7 нагрудные доспехи> <T6 щиты> <T4 шлемы> <T3 перчатки/сапоги/кольца/амулеты>"
+
+	[tag]"explicit tag"	[value]"T7 body armours"
+	[tag]"explicit tag"	[value]"T6 shields"
+	[tag]"explicit tag"	[value]"T4 helmets"
+	[tag]"explicit tag"	[value]"T3 gloves"
+	[tag]"explicit tag"	[value]"T3 boots"
+	[tag]"explicit tag"	[value]"T3 rings"
+	[tag]"explicit tag"	[value]"T3 amulets"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Phased"
+
+	[tag]"name EN"		[value]"[Phased]Evasion Rating <T6 body armours> <T5 shields> <T3 helmets> <T2 gloves/boots/rings/amulets>"
+	[tag]"name RU"		[value]"[Верткий]Уклонение <T6 нагрудные доспехи> <T5 щиты> <T3 шлемы> <T2 перчатки/сапоги/кольца/амулеты>"
+
+	[tag]"explicit tag"	[value]"T6 body armours"
+	[tag]"explicit tag"	[value]"T5 shields"
+	[tag]"explicit tag"	[value]"T3 helmets"
+	[tag]"explicit tag"	[value]"T2 gloves"
+	[tag]"explicit tag"	[value]"T2 boots"
+	[tag]"explicit tag"	[value]"T2 rings"
+	[tag]"explicit tag"	[value]"T2 amulets"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Vaporous"
+
+	[tag]"name EN"		[value]"[Vaporous]Evasion Rating <T5 body armours> <T4 shields> <T2 helmets> <T1 gloves/boots/rings/amulets>"
+	[tag]"name RU"		[value]"[Ускользающий]Уклонение <T5 нагрудные доспехи> <T4 щиты> <T2 шлемы> <T1 перчатки/сапоги/кольца/амулеты>"
+
+	[tag]"explicit tag"	[value]"T5 body armours"
+	[tag]"explicit tag"	[value]"T4 shields"
+	[tag]"explicit tag"	[value]"T2 helmets"
+	[tag]"explicit tag"	[value]"T1 gloves"
+	[tag]"explicit tag"	[value]"T1 boots"
+	[tag]"explicit tag"	[value]"T1 rings"
+	[tag]"explicit tag"	[value]"T1 amulets"
+	
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Elusory"
+
+	[tag]"name EN"		[value]"[Elusory]Evasion Rating <T4 body armours> <T3 shields> <T1 helmets>"
+	[tag]"name RU"		[value]"[Шустрый]Уклонение <T4 нагрудные доспехи> <T3 щиты> <T1 шлемы>"
+
+	[tag]"explicit tag"	[value]"T4 body armours"
+	[tag]"explicit tag"	[value]"T3 shields"
+	[tag]"explicit tag"	[value]"T1 helmets"
+
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Adroit"
+
+	[tag]"name EN"		[value]"[Adroit]Evasion Rating <T3 body armours> <T2 shields>"
+	[tag]"name RU"		[value]"[Прыткий]Уклонение <T3 нагрудные доспехи> <T2 щиты>"
+
+	[tag]"explicit tag"	[value]"T3 body armours"
+	[tag]"explicit tag"	[value]"T2 shields"
+
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Soft tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Lissome"
+
+	[tag]"name EN"		[value]"[Lissome]Evasion Rating <T2 body armours> <T1 shields>"
+	[tag]"name RU"		[value]"[Вертлявый]Уклонение <T2 нагрудные доспехи> <T1 щиты>"
+
+	[tag]"explicit tag"	[value]"T2 body armours"
+	[tag]"explicit tag"	[value]"T1 shields"
+
+	[tag]"build type"	[value]"Defence"
+	[tag]"explicit tag"	[value]"Soft tier collision"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"Fugitive"
+
+	[tag]"name EN"		[value]"[Fugitive]Evasion Rating <T1 body armours>"
+	[tag]"name RU"		[value]"[Летучий]Уклонение <T1 нагрудные доспехи>"
+
+	[tag]"explicit tag"	[value]"T1 body armours"
+
+	[tag]"build type"	[value]"Defence"

@@ -525,5 +525,60 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"name EN"		[value]"[of Glaciation](27-30)% increased Cold Damage"
 	[tag]"name RU"		[value]"[ледника](27-30)% увеличение урона от холода"
+	
+	
+	
 
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Embers"
+
+	[tag]"name EN"		[value]"[of Embers](3-7)% increased Fire Damage"
+	[tag]"name RU"		[value]"[золы](3-7)% увеличение урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Coals"
+
+	[tag]"name EN"		[value]"[of Coals](8-12)% increased Fire Damage"
+	[tag]"name RU"		[value]"[углей](8-12)% увеличение урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Cinders"
+
+	[tag]"name EN"		[value]"[of Cinders](13-17)% increased Fire Damage"
+	[tag]"name RU"		[value]"[гари](13-17)% увеличение урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Flames"
+
+	[tag]"name EN"		[value]"[of Flames](18-22)% increased Fire Damage"
+	[tag]"name RU"		[value]"[огня](18-22)% увеличение урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Immolation"
+
+	[tag]"name EN"		[value]"[of Immolation](23-26)% increased Fire Damage"
+	[tag]"name RU"		[value]"[пламени](23-26)% увеличение урона от огня"
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Specularity-Scroll"
+	[tag]"base name"	[value]"of Ashes"
+
+	[tag]"name EN"		[value]"[of Ashes](27-30)% increased Fire Damage"
+	[tag]"name RU"		[value]"[сожжения](27-30)% увеличение урона от огня"
