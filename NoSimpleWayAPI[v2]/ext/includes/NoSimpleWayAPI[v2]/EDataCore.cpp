@@ -3554,7 +3554,7 @@ int EStringUtils::safe_convert_string_to_number(std::string _text, int _min, int
 }
 
 const int PRIME_CONST = 431;
-void EStringUtils::split_line_to_array(std::string _line)
+void EStringUtils::split_line_to_array(std::string _line, bool _ignore_spaces)
 {
 	for (int i = 0; i < 512; i++) { string_array[i] = ""; }
 
@@ -3579,7 +3579,7 @@ void EStringUtils::split_line_to_array(std::string _line)
 
 		if
 		(
-			((sym == ' ') && (!space_is_not_separator))
+			((sym == ' ') && (!space_is_not_separator) && (!_ignore_spaces))
 			||
 			(sym == '\t')
 			||
@@ -3597,6 +3597,8 @@ void EStringUtils::split_line_to_array(std::string _line)
 				(i + 1 >= _line.length())
 				&&
 				(sym != '"')
+				&&
+				(sym != '\t')
 			)
 			{ buffer += sym; }
 

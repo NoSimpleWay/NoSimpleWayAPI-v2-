@@ -2432,6 +2432,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Body armours"
 	[tag]"name RU"		[value]"Доспехи"
 	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
@@ -2634,6 +2636,16 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"tag_attributes"
 	[tag]"name EN"		[value]"Attributes"
 	[tag]"name RU"		[value]"Аттрибуты"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_damage"
+	[tag]"name EN"		[value]"Damage"
+	[tag]"name RU"		[value]"Урон"
 	
 
 	

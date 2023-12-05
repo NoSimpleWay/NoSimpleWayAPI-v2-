@@ -1,24 +1,252 @@
-Notable	no collision
-of Rending	no collision
-of Bandaging	no collision
-of Stitching	no collision
-of Suturing	no collision
-of Fleshbinding	no collision
-Acute	no collision
-Trenchant	no collision
-Perforating	no collision
-Incisive	no collision
-Lacerating	no collision
-Impaling	no collision
-of Enlivening	no collision
-of Zest	no collision
-of Galvanising	no collision
-of Vigour	no collision
-of Second Wind	no collision
-of Diffusion	no collision
-of Dispersal	no collision
-of Buffering	no collision
-of Ardour	no collision
+Squire's	no collision
+Journeyman's	no collision
+Reaver's	no collision
+Mercenary's	no collision
+Champion's	no collision
+Conqueror's	no collision
+Emperor's	no collision
+Dictator's	no collision
+Heavy	no collision
+Serrated	no collision
+Wicked	no collision
+Vicious	no collision
+Bloodthirsty	no collision
+Cruel	no collision
+Tyrannical	no collision
+Merciless	no collision
+Glinting	[4]
+Burnished	[4]
+Polished	[4]
+Honed	[4]
+Gleaming	[4]
+Annealed	[4]
+Razor-sharp	[3]
+Tempered	[3]
+Flaring	[3]
+Heated	[6]
+Smouldering	[6]
+Smoking	[6]
+Burning	[6]
+Flaming	[6]
+Scorching	[6]
+Incinerating	[6]
+Blasting	[6]
+Cremating	[5]
+Carbonising	[1]
+Frosted	[5]
+Chilled	[5]
+Icy	[5]
+Frigid	[5]
+Freezing	[5]
+Frozen	[5]
+Glaciated	[5]
+Polar	[5]
+Entombing	[5]
+Crystalising	[1]
+Humming	[6]
+Buzzing	[5]
+Snapping	[5]
+Crackling	[5]
+Sparking	[5]
+Arcing	[5]
+Shocking	[5]
+Discharging	[5]
+Electrocuting	[5]
+Vapourising	[1]
+Catalysing	[3]
+Infusing	[3]
+Empowering	[3]
+Unleashed	[3]
+Overpowering	[3]
+Devastating	[2]
+Malicious	[2]
+of Skill	[2]
+of Ease	[2]
+of Mastery	[2]
+of Renown	[1]
+of Acclaim	[1]
+of Fame	no collision
+of Infamy	no collision
+of Celebration	no collision
+of Needling	[1]
+of Stinging	[1]
+of Piercing	[1]
+of Puncturing	no collision
+of Penetrating	[1]
+of Incision	[1]
+of Ire	[2]
+of Anger	[2]
+of Rage	[1]
+of Fury	[1]
+of Ferocity	[1]
+of Destruction	[1]
+of Acrimony	[2]
+of Dispersion	[2]
+of Liquefaction	[2]
+of Melting	[2]
+of Dissolution	[2]
+of Waning	[1]
+of Wasting	[1]
+of Deteriorating	[1]
+of Atrophying	[1]
+of Disintegrating	[1]
+Apprentice's	[1]
+Adept's	[1]
+Scholar's	[1]
+Professor's	[1]
+Occultist's	[1]
+Incanter's	[1]
+Glyphic	[1]
+Runic	[1]
+Searing	[1]
+Sizzling	[1]
+Blistering	[1]
+Cauterising	[1]
+Volcanic	[1]
+Magmatic	[1]
+Pyroclastic	[1]
+Xoph's	[1]
+Bitter	[1]
+Biting	[1]
+Alpine	[1]
+Snowy	[1]
+Hailing	[1]
+Crystalline	[1]
+Cryomancer's	[1]
+Tul's	[1]
+Charged	[1]
+Hissing	[1]
+Bolting	[1]
+Coursing	[1]
+Striking	[1]
+Smiting	[1]
+Ionising	[1]
+Esh's	[1]
+Magister's	[1]
+Flame Shaper's	[1]
+Frost Singer's	[1]
+Thunderhand's	[1]
+Mad Lord's	[1]
+Lithomancer's	[1]
+of Talent	[3]
+of Nimbleness	[3]
+of Expertise	[3]
+of Legerdemain	[2]
+of Prestidigitation	[1]
+of Sortilege	[1]
+of Finesse	[1]
+of Menace	no collision
+of Havoc	no collision
+of Disaster	no collision
+of Calamity	no collision
+of Ruin	no collision
+of Unmaking	no collision
+of Burning	[1]
+of Combusting	[1]
+of Conflagrating	[1]
+of the Inclement	[1]
+of the Bleak	[1]
+of the Boreal	[1]
+of the Gelid	[1]
+of Heartstopping	[1]
+of the Earnest	[1]
+of the Fervid	[1]
+of the Ardent	[1]
+of the Zealous	[1]
+of the Fanatical	[1]
+of Seeping	[1]
+of Spilling	[1]
+of Phlebotomising	[1]
+of Hemorrhaging	[1]
+of Exsanguinating	[1]
+Paragon's	[1]
+Fletcher's	no collision
+Sharpshooter's	no collision
+of Splintering	[1]
+of Many	no collision
+Lava Conjurer's	no collision
+Winter Beckoner's	no collision
+Tempest Master's	no collision
+Splintermind's	no collision
+Tecton's	no collision
+Combatant's	no collision
+Weaponmaster's	no collision
+Hale	[4]
+Healthy	[4]
+Sanguine	[4]
+Stalwart	[4]
+Stout	[4]
+Robust	[4]
+Rotund	[4]
+Virile	[4]
+Athlete's	[3]
+Shining	[5]
+Glimmering	[5]
+Glittering	[5]
+Glowing	[5]
+Radiating	[5]
+Pulsing	[5]
+Seething	[5]
+Blazing	[4]
+Scintillating	[3]
+Incandescent	[3]
+Resplendent	[2]
+Dazzling	no collision
+Magpie's	no collision
+Pirate's	no collision
+Dragon's	no collision
+Perandus'	no collision
+Exalter's	no collision
+Vulcanist's	no collision
+Rimedweller's	no collision
+Stormbrewer's	no collision
+Behemoth's	no collision
+Provocateur's	no collision
+of the Brute	[1]
+of the Wrestler	[1]
+of the Bear	[1]
+of the Lion	[1]
+of the Gorilla	[1]
+of the Goliath	[1]
+of the Leviathan	[1]
+of the Titan	[1]
+of the Gods	[1]
+of the Mongoose	[1]
+of the Lynx	[1]
+of the Fox	[1]
+of the Falcon	[1]
+of the Panther	[1]
+of the Leopard	[1]
+of the Jaguar	[1]
+of the Phantom	[1]
+of the Wind	[1]
+of the Pupil	[1]
+of the Student	[1]
+of the Prodigy	[1]
+of the Augur	[1]
+of the Philosopher	[1]
+of the Sage	[1]
+of the Savant	[1]
+of the Virtuoso	[1]
+of the Genius	[1]
+of the Clouds	[1]
+of the Sky	[1]
+of the Meteor	[1]
+of the Comet	[1]
+of the Heavens	no collision
+of the Galaxy	no collision
+of the Universe	no collision
+of the Infinite	no collision
+of the Multiverse	no collision
+of Plunder	no collision
+of Raiding	no collision
+of Archaeology	no collision
+of Excavation	no collision
+of Steadiness	[1]
+of Precision	[1]
+of the Sniper	[1]
+of the Marksman	[1]
+of the Ranger	[1]
 of the Whelpling	no collision
 of the Salamander	no collision
 of the Drake	no collision
@@ -27,131 +255,14 @@ of the Furnace	no collision
 of the Volcano	no collision
 of the Magma	no collision
 of Tzteosh	no collision
-of Snaring	no collision
-Filigree	no collision
-Alluring	no collision
-Calming	no collision
-of Fascination	no collision
-Distilling	no collision
-Condensing	no collision
-Magnifying	no collision
-of Repairing	no collision
-of Resurgence	no collision
-of Renewal	no collision
-of Revival	no collision
-of Rebounding	no collision
-of Revitalization	no collision
-Provocateur's	no collision
-Rimedweller's	no collision
-Protective	[1]
-Strong-Willed	[1]
-Resolute	[1]
-Fearless	[1]
-Dauntless	[1]
-Indomitable	[1]
-Unassailable	[1]
-Agile	[1]
-Vulcanist's	no collision
-Taskmaster's	no collision
-Overseer's	no collision
-Stormbrewer's	no collision
-Reinforced	[1]
-Layered	[1]
-Lobstered	[1]
-Buttressed	[1]
-Thickened	[2]
-Girded	[1]
-Impregnable	[1]
-Behemoth's	no collision
-Exalter's	no collision
-of Steadiness	[2]
-of Precision	[2]
-of the Sniper	[1]
-of the Marksman	[2]
-of the Ranger	[2]
-of Lioneye	[1]
-of Grandmastery	no collision
-Hale	[1]
-Healthy	[1]
-Sanguine	[1]
-Stalwart	[1]
-Beryl	[3]
-Cobalt	[3]
-Azure	[3]
-Sapphire	[3]
-Cerulean	[2]
-Aqua	[2]
-Opalescent	[2]
-Gentian	[2]
-Chalybeous	[2]
-Mazarine	[2]
-Blue	[2]
-Zaffre	[2]
-Ultramarine	no collision
-of Intercepting	no collision
-of Walling	no collision
-of Blocking	no collision
-of the Stalwart	no collision
-of the Buttress	no collision
-of the Sentinel	no collision
-of the Citadel	no collision
-Catalysing	[2]
-Infusing	[1]
-Empowering	[1]
-Unleashed	[1]
-Overpowering	[1]
-Devastating	[1]
-of the Pupil	[1]
-of the Student	no collision
-of the Prodigy	no collision
-of the Augur	no collision
-of the Philosopher	no collision
-of the Sage	no collision
-of the Savant	no collision
-of the Virtuoso	no collision
-of the Genius	no collision
-of the Polymath	no collision
-of Plunder	no collision
-of Raiding	[1]
-of Archaeology	no collision
-of Excavation	no collision
-Magpie's	no collision
-Pirate's	no collision
-Dragon's	no collision
-Perandus'	no collision
-of Rejuvenation	[2]
-of Restoration	[1]
-of Regrowth	[1]
-of Nourishment	no collision
-of Success	no collision
-of Victory	no collision
-of Triumph	no collision
-Remora's	[1]
-Lamprey's	[1]
-Vampire's	[1]
-of Esprit	no collision
-of Perpetuity	no collision
-of Vivification	no collision
-of Youth	no collision
-of Everlasting	no collision
-of Shining	[1]
-of Light	[1]
-of Radiance	[1]
-Humming	[6]
-Buzzing	[3]
-Snapping	[3]
-Crackling	[3]
-Sparking	[4]
-Arcing	[4]
-Shocking	[4]
-Discharging	[4]
-Electrocuting	[4]
-of Sparks	no collision
-of Static	[1]
-of Electricity	[1]
-of Voltage	[1]
-of Discharge	[1]
-of Arcing	[1]
+of the Inuit	no collision
+of the Seal	no collision
+of the Penguin	no collision
+of the Yeti	no collision
+of the Walrus	no collision
+of the Polar Bear	no collision
+of the Ice	no collision
+of Haast	no collision
 of the Cloud	no collision
 of the Squall	no collision
 of the Storm	no collision
@@ -160,975 +271,303 @@ of the Tempest	no collision
 of the Maelstrom	no collision
 of the Lightning	no collision
 of Ephij	no collision
-Infixed	no collision
-Ingrained	no collision
-Instilled	no collision
-Infused	no collision
-Inculcated	no collision
-Interpolated	no collision
-Inspired	no collision
-Interpermeated	no collision
-Pixie's	[1]
-Gremlin's	[1]
-Boggart's	[1]
-Naga's	[1]
-Djinn's	[1]
-Seraphim's	[1]
-Scrapper's	no collision
-Brawler's	no collision
-Fencer's	no collision
-Gladiator's	[1]
-Duelist's	no collision
-Hero's	no collision
-Legend's	no collision
-Victor's	no collision
-Shadowy	[1]
-Ethereal	[1]
-Unworldly	[1]
-Ephemeral	[1]
-Evanescent	[1]
-Unreal	[1]
-Incorporeal	[1]
-Mosquito's	[2]
-Moth's	[2]
-Butterfly's	[2]
-Wasp's	[2]
-Dragonfly's	[2]
-Hummingbird's	[2]
-Beetle's	[1]
-Crab's	[1]
-Armadillo's	[1]
-Rhino's	[1]
-Elephant's	[1]
-Mammoth's	[1]
-of the Worthy	no collision
-of the Apt	no collision
-Blessed	no collision
-Anointed	no collision
-Sanctified	no collision
-Hallowed	no collision
-Beatified	no collision
-Consecrated	no collision
-Saintly	no collision
-Godly	no collision
-Supple	no collision
-Pliant	no collision
-Flexible	no collision
-Durable	no collision
-Sturdy	no collision
-Resilient	no collision
-Adaptable	no collision
-Versatile	no collision
-Oyster's	no collision
-Urchin's	no collision
-Nautilus's	no collision
-Crocodile's	no collision
-Monk's	no collision
-Prior's	no collision
-Abbot's	no collision
-Exarch's	no collision
-Acolyte's	no collision
-Deacon's	no collision
-Priest's	no collision
-Bishop's	no collision
-Will-o-wisp's	no collision
-Nymph's	no collision
-Sylph's	no collision
-Cherub's	no collision
-Spirit's	no collision
-Eidolon's	no collision
-Apparition's	no collision
-Phantasm's	[1]
-Flea's	no collision
-Fawn's	no collision
-Ram's	no collision
-Ibex's	no collision
-Annest's	no collision
-Owen's	no collision
-Gwayne's	no collision
-Cadigan's	no collision
-Unfaltering	no collision
-Illusory	no collision
-Shade's	no collision
-Ghost's	no collision
-Spectre's	no collision
-Wraith's	no collision
-Nightmare's	no collision
-Mirage's	no collision
-Illusion's	no collision
-Fletcher's	no collision
-Sharpshooter's	no collision
-Nihilist's	no collision
-Anarchist's	no collision
-Frost Weaver's	no collision
-Winterbringer's	no collision
-Flame Spinner's	no collision
-Lava Caller's	no collision
-Thunder Lord's	no collision
-Tempest King's	no collision
-Lacquered	[1]
-Studded	[1]
-Ribbed	[1]
-Fortified	[1]
-Plated	[1]
-Carapaced	[1]
-Encased	[1]
-Enveloped	[1]
-Abating	no collision
-Unmoving	no collision
-Impervious	no collision
-Impenetrable	no collision
-Farrier's	no collision
-Brownsmith's	no collision
-Coppersmith's	no collision
-Blacksmith's	no collision
-Silversmith's	no collision
-Goldsmith's	no collision
-Whitesmith's	no collision
-Engraver's	no collision
-Runesmith's	no collision
-Runemaster's	no collision
-Artificer's	no collision
-Improved	no collision
-Enhanced	no collision
-Bolstered	no collision
-Elegant	no collision
-Exquisite	no collision
-Masterwork	no collision
-Chiseled	no collision
-Etched	no collision
-Engraved	no collision
-Embedded	no collision
-Inscribed	no collision
-Lettered	no collision
-Runed	no collision
-Calligraphic	no collision
-of Absorption	[1]
-of Osmosis	no collision
-of Consumption	no collision
-Thirsty	[1]
-Parched	no collision
-of Excitement	no collision
-of Joy	no collision
-of Elation	no collision
-of Bliss	no collision
-of Euphoria	no collision
-of Nirvana	no collision
-of Regularity	no collision
-of Concord	no collision
-of Harmony	[1]
-of Furs	no collision
-of the Tundra	no collision
-of the Mammoth	no collision
-of the Bushfire	no collision
-of the Molten Core	no collision
-of the Solar Storm	no collision
-of Impedance	no collision
-of Shockproofing	no collision
-of the Lightning Rod	[1]
-of the Sempiternal	no collision
-of the Deathless	no collision
-Baron's	no collision
-Viscount's	no collision
-Marquess's	no collision
-Count's	no collision
-Duke's	no collision
-Prince's	no collision
-King's	no collision
-of the Instructor	no collision
-of the Tutor	no collision
-of the Commander	no collision
-of the Magnate	no collision
-of the Ruler	no collision
-of the Monarch	no collision
-of the Despot	no collision
-of Coordination	no collision
-of Collaboration	no collision
-of Integration	no collision
-of Orchestration	no collision
-Runner's	no collision
-Sprinter's	[1]
-Stallion's	no collision
-Gazelle's	no collision
-Cheetah's	no collision
-Hellion's	no collision
-of Poison	no collision
-of Venom	[2]
-of Virulence	no collision
-of Darting	no collision
-of Flight	no collision
-of Propulsion	no collision
-of the Zephyr	no collision
-of the Gale	no collision
-of Dulling	no collision
-of Deadening	no collision
-of Interference	[2]
-of Obstruction	[2]
-of the Watchman	no collision
-of the Sentry	no collision
-of the Keeper	no collision
-of the Protector	no collision
-of the Conservator	no collision
-Heated	[11]
-Smouldering	[2]
-Smoking	[2]
-Burning	[2]
-Flaming	[12]
-Scorching	[11]
-Incinerating	[12]
-Blasting	[11]
-Cremating	[11]
-of the Barrier	no collision
-of the Bulwark	no collision
-of the Barricade	no collision
-of the Bastion	no collision
-Chanter's	no collision
-Mage's	[2]
-Sorcerer's	[1]
-Thaumaturgist's	no collision
-Wizard's	[3]
-of the Brute	no collision
-of the Wrestler	no collision
-of the Bear	[1]
-of the Lion	no collision
-of the Gorilla	no collision
-of the Goliath	no collision
-of the Leviathan	no collision
-of the Titan	no collision
-of the Gods	no collision
-of the Godslayer	no collision
-of Impact	no collision
-of Dazing	no collision
-of Stunning	[1]
-of Slamming	no collision
-of Staggering	no collision
-of Thick Skin	no collision
-of Stone Skin	no collision
-of Iron Skin	no collision
-of Steel Skin	no collision
-of Adamantite Skin	no collision
-of Corundum Skin	no collision
-of the Pugilist	no collision
-of the Brawler	no collision
-of the Boxer	no collision
-of the Combatant	no collision
-of the Gladiator	no collision
-Caster's	[1]
-Conjuror's	[1]
-Warlock's	[1]
-Archmage's	[1]
-Lich's	[1]
-of Artifice	no collision
-of Etching	no collision
-of Engraving	no collision
-of Inscription	no collision
-of Runes	[1]
-of Sealing	no collision
-of Alleviation	no collision
-of Allaying	no collision
-of Assuaging	no collision
-of the Lizard	[1]
-of the Skink	no collision
-of the Iguana	no collision
-of the Abalone	no collision
-of the Tortoise	no collision
-of the Pangolin	no collision
-of the Armadillo	no collision
-of Bloodshed	no collision
-of Gore	no collision
-of Carnage	no collision
-of Butchery	no collision
-of Bloodletting	[2]
-of the Eagle	no collision
-of the Dove	no collision
-of the Orca	no collision
-of the Sea Lion	no collision
-of the Narwhal	no collision
-of the Beluga	no collision
-of the Seal	[1]
-of the Guppy	no collision
-of the Goldfish	no collision
-of the Carp	no collision
-of the Catfish	no collision
-of the Sunfish	no collision
-of Tree Moss	no collision
-of Turf Moss	no collision
-of Tooth Moss	no collision
-of Plume Moss	no collision
-of Bog Moss	no collision
-of Composure	no collision
-of Surefootedness	no collision
-of Persistence	no collision
-of Relentlessness	no collision
-of Tenaciousness	no collision
-of the Albatross	no collision
-of the Hummingbird	no collision
-of the Horsefly	no collision
-of the Rabbit	no collision
-of the Cat	no collision
-of the Sable	no collision
-of the Petrel	no collision
-of the Mockingbird	no collision
-of the Curlew	no collision
-of the Kakapo	no collision
-of the Owl	no collision
-of the Gazelle	no collision
-of the Antelope	no collision
-of the Ibex	no collision
-of the Impala	no collision
-of Foisting	no collision
-of Imposing	no collision
-of Wreaking	no collision
-of Infliction	no collision
-of the Hare	no collision
-of the Cheetah	no collision
-of the Crystal	[1]
-of the Prism	[1]
-of the Kaleidoscope	[1]
-of Variegation	[1]
-of the Rainbow	[1]
-of the Plover	no collision
-of the Sandpiper	no collision
-of the Cormorant	no collision
-of the Sanderling	no collision
-of the Heron	no collision
-of Diverting	no collision
-of Depletion	no collision
-of Tapping	no collision
-of Siphoning	no collision
-of Draining	no collision
-of Stiffness	no collision
-of Bracing	no collision
-of Ballast	no collision
-of Counterpoise	no collision
-of Stabilisation	no collision
-of Runegleaming	no collision
-of Runeshining	no collision
-of Runeflaring	no collision
-of Runeblazing	no collision
-Medic's	no collision
-Physician's	no collision
-Doctor's	no collision
-Specialist's	no collision
-Surgeon's	no collision
-Apprentice's	[1]
-Scholar's	[1]
-Practitioner's	no collision
-Brewer's	no collision
-Chemist's	no collision
-of Convection	no collision
-of Thermodynamics	no collision
-of Entropy	[1]
-of Thawing	no collision
-of Warding	no collision
-Enduring	no collision
-Abecedarian's	no collision
-Dabbler's	no collision
-Alchemist's	no collision
-Impairing	no collision
-Dizzying	no collision
-Depleting	no collision
-Vitiating	no collision
-Sapping	no collision
-Aged	no collision
-Fermented	no collision
-Congealed	no collision
-Turbid	no collision
-Caustic	no collision
-Wide	no collision
-Plentiful	no collision
-Bountiful	no collision
-Abundant	no collision
-Ample	no collision
-of the Deer	no collision
-of the Walrus	[1]
-of the Penguin	[1]
-Seething	[1]
-Transgressor's	no collision
-Masochist's	no collision
-Flagellant's	no collision
-of the Novice	no collision
-of the Acolyte	no collision
-of the Summoner	no collision
-of the Conjurer	no collision
-of the Necromancer	no collision
-of Damping	no collision
-of Quashing	no collision
-of Quelling	no collision
-of Quenching	no collision
-of the Urchin	no collision
-of the Mussel	no collision
-of the Starfish	[1]
-Constant	no collision
-Continuous	no collision
-Endless	no collision
-Bottomless	no collision
-Perpetual	no collision
-Nitrate	no collision
-Dolomite	no collision
-Kieserite	no collision
-Kainite	no collision
-Gypsum	no collision
-Substantial	no collision
-Opaque	no collision
-Full-bodied	no collision
-Concentrated	no collision
-Saturated	no collision
-Prudent	no collision
-Prepared	no collision
-Wary	no collision
-Careful	no collision
-Cautious	no collision
-Doled	no collision
-Provisioned	no collision
-Measured	no collision
-Allocated	no collision
-Rationed	no collision
-Undiluted	no collision
-Viscous	no collision
-Condensed	no collision
-Catalysed	no collision
-Startled	no collision
-Frightened	no collision
-Alarmed	no collision
-Terrified	no collision
-Panicked	no collision
-Foreboding	no collision
-Simmering	no collision
-Ebullient	no collision
-Effusive	no collision
-Effervescent	no collision
-Bubbling	no collision
-of the Antitoxin	no collision
-of the Remedy	no collision
-of the Cure	no collision
-of the Antidote	no collision
-of the Skunk	no collision
-of the Hedgehog	no collision
-of the Opossum	no collision
-of Earthing	no collision
-of Grounding	[2]
-of Insulation	[3]
-of the Dielectric	no collision
-of the Conger	no collision
-of the Moray	no collision
-of the Eel	no collision
-Investigator's	no collision
-Analyst's	no collision
-Examiner's	no collision
-Clinician's	no collision
-Experimenter's	no collision
-of Movement	no collision
-of Motion	no collision
-of Freedom	no collision
-of Liberation	no collision
-of the Initiate	no collision
-of the Mage	no collision
-of the Arcanist	no collision
-of the Sorcerer	no collision
-of Abundance	no collision
-of Plenty	no collision
-of Bounty	no collision
-of Incessance	no collision
-of Perenniality	no collision
-of Occlusion	[1]
-of Restraint	[1]
-Name	no collision
-of Deadliness	no collision
-of Adaption	[1]
-of Resistance	[1]
-of Blasting	no collision
-of Zeal	no collision
-Harmonic	no collision
-Charging	no collision
-Cleaving	no collision
-of Bleeding	no collision
-of Haemophilia	[1]
-Parrying	no collision
-Shielding	no collision
-Deflecting	no collision
-Volleying	no collision
-of Combusting	[1]
-Resonant	no collision
-Warding	no collision
-Wright's	no collision
-Chaotic	no collision
-of Atrophy	no collision
-of Order	[1]
-Ripping	no collision
-Avalanching	no collision
-Arctic	no collision
-Chilling	no collision
-of Gelidity	no collision
-Cryomantic	no collision
-of Shelter	[1]
-of the Beast	[1]
-of Potency	[1]
-of Hexwarding	no collision
-Slicing	no collision
-of Wounding	no collision
-Flanking	no collision
-of Dexterity	[1]
-of Cunning	[1]
-Technical	no collision
-Puncturing	no collision
-Dissipating	no collision
-of the Apocalypse	no collision
-of the Elements	no collision
-Serene	no collision
-Shimmering	no collision
-of Focus	no collision
-Fevered	no collision
-Decrepifying	no collision
-of the Hearth	[1]
-Infernal	no collision
-of Zealousness	no collision
-Pyromantic	no collision
-of the Dragon	[1]
-of Freezing	[2]
-of Burning	[1]
-of Impaling	no collision
-Armoured	no collision
-of Berserking	[1]
-Sinister	no collision
-Fierce	no collision
-of Enchanting	[1]
-Savage	no collision
-Lethal	no collision
-Evasive	no collision
-Brutal	no collision
-Energetic	no collision
-Soldier's	no collision
-of Soaring	no collision
-Judging	no collision
-Vicious	[1]
-Champion's	[1]
-Cruel	[1]
-of Intelligence	[1]
-of Fending	no collision
-Hungering	no collision
-of Infusion	no collision
-Thundering	no collision
-Surging	no collision
-Electromantic	no collision
-Beating	no collision
-of Efficiency	no collision
-Thirsting	no collision
-of Weight	no collision
-of Demolishing	no collision
-of Combat	no collision
-Sabotage	no collision
-Arming	no collision
-of Training	no collision
-Leadership	no collision
-of Resilience	no collision
-Master's	no collision
-Harming	no collision
-Bandit's	no collision
-Vivid	no collision
-Enlightened	no collision
-Sharpened	no collision
-of Exsanguinating	[1]
-of Poisoning	no collision
-of Archery	no collision
-Thwarting	no collision
-Battlemage's	no collision
-of Shocking	[3]
-of Annihilation	no collision
-Blunt	no collision
-Halting	no collision
-of Recovery	no collision
-Fencing	no collision
-Shaman's	no collision
-Carved	no collision
-Trapping	no collision
-Sundering	no collision
-Warrior's	no collision
-Jinxing	no collision
-of Chilling	no collision
-of Combustion	[2]
-Tainted	[3]
-Clouded	[3]
-Darkened	[3]
-Malignant	[3]
-Vile	[3]
-of Malevolence	no collision
-of Malice	no collision
-of Sin	no collision
-Frosted	[9]
-Freezing	[9]
-Frozen	[9]
-Glaciated	[9]
-Polar	[9]
-Entombing	[9]
-of Sleet	[1]
-of Ice	[1]
-of Rime	[1]
-of Floe	[1]
-of Glaciation	[1]
-Energising	no collision
-Inspirational	no collision
-Resonating	no collision
-of Opportunity	no collision
-of Blinding	[1]
-of Taunting	[1]
-of Extinguishing	[1]
-of Fireproofing	no collision
-of Inflammability	no collision
-of Insulating	[1]
-of Unwavering	[1]
-of Poise	no collision
-of Balance	no collision
-of Abuse	no collision
-of Retaliation	no collision
-of Mending	[1]
-of the Tourniquet	no collision
-of the Stemming	no collision
-of Warming	[1]
-of Heating	no collision
-of Tolerance	[1]
-of Immunity	no collision
-of Guarding	no collision
-of Unholy Might	[1]
-of Phasing	[1]
-of Preparation	no collision
-of the Assassin	no collision
-Murmuring	no collision
-Foul-tongued	no collision
-of the Slayer	no collision
-Degenerative	[2]
-Deleterious	[2]
-of the Inquisitor	no collision
-of Banishing	no collision
-of Clouding	no collision
-of the Sanctum	no collision
-of Escape	no collision
-of Enervation	no collision
-of Daunting	no collision
-of Mangling	no collision
-of Languishing	no collision
-of Maneuvering	no collision
-Captivating	no collision
-Beautiful	no collision
-Breathtaking	no collision
-Fuelling	no collision
-Lively	no collision
-Exuberant	no collision
-Facilitating	no collision
-Expediting	no collision
-Skewering	no collision
-Lancing	no collision
-of the Deadeye	no collision
-of the Guardian	no collision
-Youthful	no collision
-Spirited	no collision
-Vivacious	no collision
-of Vivaciousness	no collision
-of Praxis	no collision
-of Suggestion	no collision
-of Instruction	no collision
-of Command	no collision
-Malicious	[2]
-Potent	no collision
-Powerful	no collision
-Squire's	no collision
-Journeyman's	no collision
-Reaver's	no collision
-Mercenary's	no collision
-Conqueror's	no collision
-Emperor's	no collision
-Dictator's	no collision
-Heavy	no collision
-Serrated	no collision
-Wicked	no collision
-Bloodthirsty	no collision
-Tyrannical	no collision
-Merciless	no collision
-Glinting	no collision
-Burnished	no collision
-Polished	no collision
-Honed	no collision
-Gleaming	no collision
-Annealed	no collision
-Razor-sharp	no collision
-Tempered	no collision
-Flaring	no collision
-Carbonising	no collision
-Chilled	no collision
-Icy	no collision
-Frigid	no collision
-Crystalising	no collision
-Vapourising	no collision
-Paragon's	no collision
-of Skill	no collision
-of Ease	no collision
-of Mastery	no collision
-of Renown	no collision
-of Acclaim	no collision
-of Fame	no collision
-of Infamy	no collision
-of Celebration	no collision
-of Needling	no collision
-of Stinging	no collision
-of Piercing	no collision
-of Rupturing	no collision
-of Penetrating	no collision
-of Incision	no collision
-of Ire	no collision
-of Anger	no collision
-of Rage	no collision
-of Fury	no collision
-of Ferocity	no collision
-of Destruction	no collision
-of Acrimony	no collision
-of Dispersion	no collision
-of Liquefaction	no collision
-of Melting	no collision
-of Dissolution	no collision
-of Waning	no collision
-of Wasting	no collision
-of Deteriorating	no collision
-of Atrophying	no collision
-of Disintegrating	no collision
-of the Inclement	no collision
-of the Bleak	no collision
-of the Boreal	no collision
-of the Gelid	no collision
-of Heartstopping	no collision
-of the Earnest	no collision
-of the Fervid	no collision
-of the Ardent	no collision
-of the Zealous	no collision
-of the Fanatical	no collision
-of Seeping	no collision
-of Spilling	no collision
-of Phlebotomising	no collision
-of Hemorrhaging	no collision
-Adept's	no collision
-Professor's	no collision
-Occultist's	no collision
-Incanter's	no collision
-Glyphic	no collision
-Runic	no collision
-Searing	no collision
-Sizzling	no collision
-Blistering	no collision
-Cauterising	no collision
-Volcanic	no collision
-Magmatic	no collision
-Pyroclastic	no collision
-Xoph's	no collision
-Bitter	no collision
-Biting	no collision
-Alpine	no collision
-Snowy	no collision
-Hailing	no collision
-Crystalline	no collision
-Cryomancer's	no collision
-Tul's	no collision
-Charged	no collision
-Hissing	no collision
-Bolting	no collision
-Coursing	no collision
-Striking	no collision
-Smiting	no collision
-Ionising	no collision
-Esh's	no collision
-Magister's	no collision
-Flame Shaper's	no collision
-Lava Conjurer's	no collision
-Frost Singer's	[1]
-Thunderhand's	no collision
-Mad Lord's	no collision
-Lithomancer's	no collision
-Winter Beckoner's	no collision
-Tempest Master's	no collision
-Splintermind's	no collision
-Tecton's	no collision
-Combatant's	no collision
-Weaponmaster's	no collision
-Baroness's	no collision
-Viscountess's	no collision
-Marchioness's	no collision
-Countess's	no collision
-Duchess's	no collision
-Princess's	no collision
-Queen's	no collision
-Empress's	no collision
-Martinet's	no collision
-of Motivation	no collision
-of Coercion	no collision
-of Incitation	no collision
-of Agitation	no collision
-of Instigation	no collision
-of Provocation	no collision
-of Infuriation	no collision
-of Luck	no collision
-of Fortune	no collision
-of Providence	no collision
-of Serendipity	no collision
-of Determinism	no collision
-of Destiny	no collision
-of the Foray	no collision
-of the Horde	no collision
-of the Throng	no collision
-of the Swarm	no collision
-of the Invasion	no collision
-of the Legion	no collision
-Stout	no collision
-Robust	no collision
-Rotund	no collision
-Virile	no collision
-Athlete's	no collision
-Fecund	no collision
-Vigorous	no collision
-Rapturous	no collision
-Prime	no collision
-Exemplary	no collision
-Quintessential	no collision
-Flawless	no collision
-of the Newt	no collision
-of the Flatworm	no collision
-of the Hydra	no collision
-of the Troll	no collision
-of Ryslatha	no collision
-of the Phoenix	no collision
-of Recuperation	no collision
-of Life-giving	no collision
-of Convalescence	no collision
-of the Administrator	no collision
-of the Rector	no collision
-of the Overseer	no collision
-of the Taskmaster	no collision
-of the Slavedriver	no collision
-of the Conquest	no collision
-of Adjustment	no collision
-of Acclimatisation	no collision
-of Adaptation	no collision
-of Evolution	no collision
-of Metamorphosis	no collision
-of Impermeability	no collision
-of Countervailing	no collision
-of Imperviousness	no collision
-of the Guard	no collision
-of the Brigade	no collision
-of the Phalanx	no collision
-of Conflagrating	no collision
-of Splintering	no collision
-of Many	no collision
-of the Clouds	no collision
-of the Sky	no collision
-of the Meteor	no collision
-of the Comet	no collision
-of the Heavens	no collision
-of the Galaxy	no collision
-of the Universe	no collision
-of the Infinite	no collision
-of the Multiverse	no collision
-of the Span	no collision
-of Stoicism	no collision
-of Resolve	no collision
-of Fortitude	no collision
-of Will	no collision
-of Refilling	no collision
-of Restocking	no collision
-of Replenishing	no collision
-of Pouring	no collision
-of Brimming	no collision
-of Overflowing	no collision
-of Sipping	no collision
-of Tasting	no collision
-of Savouring	no collision
-of Relishing	no collision
-of Reveling	no collision
-of Rebuttal	no collision
-of Snuffing	no collision
-of Revoking	no collision
-of Abjuration	no collision
-of Nullification	no collision
 of the Lost	no collision
 of Banishment	no collision
 of Eviction	no collision
 of Expulsion	no collision
 of Exile	no collision
 of Bameth	no collision
-of Talent	no collision
-of Nimbleness	no collision
-of Expertise	no collision
-of Legerdemain	no collision
-of Prestidigitation	no collision
-of Sortilege	no collision
-of Finesse	no collision
-of Menace	no collision
-of Havoc	no collision
-of Disaster	no collision
-of Calamity	no collision
-of Ruin	no collision
-of Unmaking	no collision
-of Mysticism	no collision
-of the Inuit	no collision
-of the Yeti	no collision
-of the Polar Bear	no collision
-of the Ice	no collision
-of Haast	no collision
-of the Mongoose	no collision
-of the Lynx	no collision
-of the Fox	no collision
-of the Falcon	no collision
-of the Panther	no collision
-of the Leopard	no collision
-of the Jaguar	no collision
-of the Phantom	no collision
-of the Wind	no collision
+of the Crystal	[1]
+of the Prism	[1]
+of the Kaleidoscope	[1]
+of Variegation	[1]
+of the Rainbow	[1]
+of the Span	no collision
+Fecund	[2]
+Exemplary	no collision
+Quintessential	no collision
+Flawless	no collision
+of the Newt	[4]
+of the Lizard	[4]
+of the Flatworm	[4]
+of the Starfish	[4]
+of the Hydra	[4]
+of the Troll	[4]
+of Ryslatha	[4]
+of the Phoenix	[3]
+of Recuperation	[2]
+Baroness's	no collision
+Viscountess's	no collision
+Marchioness's	no collision
+Countess's	no collision
+Duchess's	no collision
+of Motivation	no collision
+of Coercion	no collision
+of Incitation	no collision
+of Agitation	no collision
+of the Administrator	no collision
+of the Rector	no collision
+of the Overseer	no collision
+of the Taskmaster	no collision
+of Coordination	no collision
+of Collaboration	no collision
+of Integration	no collision
+of Orchestration	no collision
+of Harmony	[1]
+of Adjustment	no collision
+of Acclimatisation	no collision
+of Adaptation	no collision
+of Evolution	no collision
+of Metamorphosis	no collision
+of Bandaging	no collision
+of Stitching	no collision
+of Suturing	no collision
+of Fleshbinding	no collision
+Lacquered	[4]
+Studded	[4]
+Ribbed	[4]
+Fortified	[4]
+Plated	[4]
+Carapaced	[4]
+Encased	[4]
+Enveloped	[3]
+Distilling	no collision
+Condensing	no collision
+Magnifying	no collision
+of the Godslayer	no collision
+of Refilling	no collision
+of Restocking	no collision
+of Replenishing	no collision
+of Pouring	no collision
+of Brimming	no collision
+of Overflowing	no collision
+of Sipping	[1]
+of Tasting	no collision
+of Savouring	no collision
+of Relishing	no collision
+of Reveling	no collision
+Reinforced	[1]
+Layered	[1]
+Lobstered	[1]
+Buttressed	[1]
+Thickened	[1]
+Girded	[1]
+Impregnable	[1]
+Oyster's	[3]
+Urchin's	[3]
 of the Blur	no collision
-Shining	no collision
-Glimmering	no collision
-Glittering	no collision
-Glowing	no collision
-Radiating	no collision
-Pulsing	no collision
-Blazing	no collision
-Scintillating	no collision
-Incandescent	no collision
-Resplendent	no collision
-Искрящийся	no collision
-Dancer's	no collision
-Acrobat's	no collision
-Fleet	no collision
-Blurred	no collision
-Phased	no collision
-Vaporous	no collision
-Elusory	no collision
-Adroit	no collision
-Lissome	no collision
+of Grandmastery	no collision
+of Lioneye	no collision
+of Esprit	no collision
+of Perpetuity	no collision
+of Vivification	no collision
+of Youth	no collision
+of Everlasting	no collision
+Shade's	[1]
+Ghost's	[1]
+Spectre's	[1]
+Wraith's	[1]
+Phantasm's	[2]
+Nightmare's	[1]
+Mirage's	[1]
+Agile	[3]
+Dancer's	[3]
+Acrobat's	[3]
+Fleet	[3]
+Blurred	[3]
+Phased	[3]
+Vaporous	[3]
+Flea's	[2]
+Fawn's	[2]
+of Rebuttal	[1]
+of Snuffing	[1]
+of Revoking	[1]
+of Abjuration	[1]
+of Nullification	[1]
+Protective	[1]
+Strong-Willed	[1]
+Resolute	[1]
+Fearless	[1]
+Dauntless	[1]
+Indomitable	[1]
+Unassailable	[1]
+Scrapper's	[1]
+Brawler's	[1]
+Fencer's	[1]
+Gladiator's	[1]
+Duelist's	[1]
+Hero's	[1]
+Legend's	[1]
+Supple	[3]
+Pliant	[3]
+Flexible	[3]
+Durable	[3]
+Infixed	[1]
+Ingrained	[1]
+Instilled	[1]
+Infused	[1]
+Inculcated	[1]
+Interpolated	[1]
+Inspired	[1]
+Blessed	[3]
+Anointed	[3]
+Sanctified	[3]
+Hallowed	[3]
+Monk's	[2]
+Prior's	[2]
+Shadowy	[2]
+Ethereal	[2]
+Unworldly	[2]
+Ephemeral	[1]
+Evanescent	[2]
+Unreal	[2]
+Illusory	[2]
+Will-o-wisp's	[4]
+Nymph's	[4]
+Sylph's	[4]
+Cherub's	[4]
+Runner's	no collision
+Sprinter's	no collision
+Stallion's	no collision
+Gazelle's	no collision
+Cheetah's	no collision
+Vigorous	[1]
+Rapturous	no collision
+Prime	no collision
+Impenetrable	no collision
+Abating	[1]
+Unmoving	[1]
+Impervious	no collision
+Nautilus's	[1]
+Crocodile's	no collision
+of Life-giving	[1]
+of Convalescence	no collision
+of the Watchman	no collision
+of the Sentry	no collision
+of the Keeper	no collision
+of the Protector	no collision
+of the Conservator	no collision
+Illusion's	no collision
+Elusory	[2]
+Adroit	[1]
+Lissome	[1]
 Fugitive	no collision
-Thorny	no collision
-Spiny	no collision
-Barbed	no collision
-Jagged	no collision
-Restoring	no collision
-Recovering	no collision
-Renewing	no collision
-Refreshing	no collision
-Rejuvenating	no collision
-Regenerating	no collision
-Affecting	no collision
-Stirring	no collision
-Heartening	no collision
-Exciting	no collision
-Galvanizing	no collision
-Inspiring	no collision
-of Exsanguination	no collision
-of Bleakness	[1]
-of the Hyperboreal	[1]
-of Ignition	[1]
-of Conflagration	[1]
-of Zapping	[1]
-of Electrocution	[1]
-of Snow	no collision
-of Embers	no collision
-of Coals	no collision
-of Cinders	no collision
-of Flames	no collision
-of Immolation	no collision
-of Ashes	no collision
+Ram's	[1]
+Ibex's	no collision
+Unfaltering	no collision
+Abbot's	[1]
+Exarch's	no collision
+Victor's	no collision
+Sturdy	[2]
+Resilient	[1]
+Adaptable	[1]
+Versatile	no collision
+Interpermeated	no collision
+Beatified	[2]
+Consecrated	[1]
+Saintly	[1]
+Godly	no collision
+Incorporeal	no collision
+Spirit's	[2]
+Eidolon's	[1]
+Apparition's	[1]
+Taskmaster's	no collision
+Overseer's	no collision
+of the Polymath	no collision
+Acute	no collision
+Trenchant	no collision
+Perforating	no collision
+Incisive	no collision
+Lacerating	no collision
+Impaling	no collision
+of Rupturing	no collision
+of Rending	no collision
+of Darting	no collision
+of Flight	no collision
+of Propulsion	no collision
+of the Zephyr	no collision
+of the Gale	no collision
+of Intercepting	no collision
+of Walling	no collision
+of Blocking	no collision
+of the Stalwart	no collision
+of the Buttress	no collision
+of the Sentinel	no collision
+of the Citadel	no collision
+of Repairing	no collision
+of Resurgence	no collision
+of Renewal	no collision
+of Revival	no collision
+of Rebounding	no collision
+of Revitalization	no collision
+of Stoicism	no collision
+of Resolve	no collision
+of Fortitude	no collision
+of Will	no collision
+of Dulling	no collision
+of Deadening	no collision
+of Interference	no collision
+of Obstruction	no collision
+of the Bushfire	no collision
+of the Molten Core	no collision
+of the Solar Storm	no collision
+of Furs	no collision
+of the Tundra	no collision
+of the Mammoth	no collision
+of Impedance	no collision
+of Shockproofing	no collision
+of the Lightning Rod	no collision
+of Regularity	no collision
+of Concord	no collision
+of the Sempiternal	no collision
+of the Deathless	no collision
+Chosen	no collision
+of the Order	no collision
+Catarina's	no collision
+Catarina's Veiled	no collision
+Elreon's	no collision
+Elreon's Veiled	no collision
+Gravicius'	no collision
+Gravicius' Veiled	no collision
+Haku's	no collision
+Haku's Veiled	no collision
+It's	no collision
+It That Fled's Veiled	no collision
+Jorgin's	no collision
+of Jorgin's Veil	no collision
+Korell's	no collision
+Korell's Veiled	no collision
+Leo's	no collision
+Leo's Veiled	no collision
+of Aisling	no collision
+of Aisling's Veil	no collision
+of Cameria	no collision
+of Cameria's Veil	no collision
+of Hillock	no collision
+of Hillock's Veil	no collision
+of Janus	no collision
+of Janus' Veil	no collision
+of Riker	no collision
+of Riker's Veil	no collision
+Rin's	no collision
+Rin's Veiled	no collision
+Tora's	no collision
+Tora's Veiled	no collision
+Vagan's	no collision
+Vagan's Veiled	no collision
+Vorici's	no collision
+Vorici's Veiled	no collision
+Essence	no collision
+of the Veil	no collision
+Veiled	no collision
+Citaqualotl's	no collision
+Guatelitzi's	no collision
+Matatl's	no collision
+of Citaqualotl	no collision
+of Guatelitzi	no collision
+of Matatl	no collision
+of Puhuarte	no collision
+of Tacati	no collision
+Tacati's	no collision
+Topotante's	no collision
+Xopec's	no collision

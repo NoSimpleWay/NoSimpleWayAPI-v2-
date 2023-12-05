@@ -546,3 +546,221 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"explicit tag"	[value]"Incursion"
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"base name"	[value]"The Shaper's"
+
+	[tag]"name EN"		[value]"[The Shaper's]Shaper Prefix"
+	[tag]"name RU"		[value]"[Созданный]Префикс Шейпера"
+	
+	[tag]"explicit tag"	[value]"Influence"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"ShaperInfluence"
+	[tag]"base name"	[value]"of Shaping"
+
+	[tag]"name EN"		[value]"[of Shaping]Shaper Suffix"
+	[tag]"name RU"		[value]"[изменения]Суффикс Шейпера"
+	
+	[tag]"explicit tag"	[value]"Influence"
+
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"base name"	[value]"The Elder's"
+
+	[tag]"name EN"		[value]"[The Elder's]Elder Prefix"
+	[tag]"name RU"		[value]"[Древний]Префикс Элдера"
+	
+	[tag]"explicit tag"	[value]"Influence"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"ElderInfluence"
+	[tag]"base name"	[value]"of the Elder"
+
+	[tag]"name EN"		[value]"[of the Elder]Elder Suffix"
+	[tag]"name RU"		[value]"[Древнего]Суффикс Элдера"
+	
+	[tag]"explicit tag"	[value]"Influence"
+
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"CrusaderInfluence"
+	[tag]"base name"	[value]"Crusader's"
+
+	[tag]"name EN"		[value]"[Crusader's]Crusader Prefix"
+	[tag]"name RU"		[value]"[Крестовый]Префикс Крестоносца"
+	
+	[tag]"explicit tag"	[value]"Influence"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"CrusaderInfluence"
+	[tag]"base name"	[value]"of the Crusade"
+
+	[tag]"name EN"		[value]"[of the Crusade]Crusader Suffix"
+	[tag]"name RU"		[value]"[крестоносца]Суффикс Крестоносца"
+	
+	[tag]"explicit tag"	[value]"Influence"
+
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"base name"	[value]"Redeemer's"
+
+	[tag]"name EN"		[value]"[Redeemer's]Redeemer's Prefix"
+	[tag]"name RU"		[value]"[Освободительный]Префикс Искупительницы"
+	
+	[tag]"explicit tag"	[value]"Influence"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"RedeemerInfluence"
+	[tag]"base name"	[value]"of Redemption"
+
+	[tag]"name EN"		[value]"[of Redemption]Redeemer's Suffix"
+	[tag]"name RU"		[value]"[искупления]Суффикс Искупительницы"
+	
+	[tag]"explicit tag"	[value]"Influence"
+
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"base name"	[value]"Hunter's"
+
+	[tag]"name EN"		[value]"[Hunter's]Hunter's Prefix"
+	[tag]"name RU"		[value]"[Охотничий]Префикс Охотника"
+	
+	[tag]"explicit tag"	[value]"Influence"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"HunterInfluence"
+	[tag]"base name"	[value]"of the Hunt"
+
+	[tag]"name EN"		[value]"[of the Hunt]Hunter's Suffix"
+	[tag]"name RU"		[value]"[охоты]Суффикс Охотника"
+	
+	[tag]"explicit tag"	[value]"Influence"
+
+	
+	
+
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"base name"	[value]"Warlord's"
+
+	[tag]"name EN"		[value]"[Warlord's]Warlord's Prefix"
+	[tag]"name RU"		[value]"[Военный]Префикс Вождя"
+	
+	[tag]"explicit tag"	[value]"Influence"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"WarlordInfluence"
+	[tag]"base name"	[value]"of the Conquest"
+
+	[tag]"name EN"		[value]"[of the Conquest]Warlord's Suffix"
+	[tag]"name RU"		[value]"[завоевания]Суффикс Вождя"
+	
+	[tag]"explicit tag"	[value]"Influence"
+
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Delve"
+	[tag]"base name"	[value]"Subterranean"
+
+	[tag]"name EN"		[value]"[Subterranean]Delve Prefix"
+	[tag]"name RU"		[value]"[Подземный]Префикс шахты"
+	
+	[tag]"explicit tag"	[value]"Influence"
+		
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+	[tag]"icon path"	[value]"Delve"
+	[tag]"base name"	[value]"of the Underground"
+
+	[tag]"name EN"		[value]"[of the Conquest]Delve Suffix"
+	[tag]"name RU"		[value]"[подземелья]Суффикс шахты"
+	
+	[tag]"explicit tag"	[value]"Other"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"icon path"	[value]"essence_explicit"
+	
+	[tag]"base name"	[value]"Essences"
+
+	[tag]"name EN"		[value]"[Essences]Essence Prefix"
+	[tag]"name RU"		[value]"[Сущностный]Префикс эссенции"
+	
+	[tag]"explicit tag"	[value]"Other"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Explicit"
+
+	[tag]"icon path"	[value]"essence_explicit"
+	
+	[tag]"base name"	[value]"of the Essence"
+
+	[tag]"name EN"		[value]"[of the Essence]Essence Suffix"
+	[tag]"name RU"		[value]"[сущности]Суффикс эссенции"
+	
+	[tag]"explicit tag"	[value]"Other"
+	
+	
+	

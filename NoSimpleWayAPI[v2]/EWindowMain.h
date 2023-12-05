@@ -1091,13 +1091,24 @@ enum class LootFilterOpenMode
 };
 
 
-struct RawDataEntity
+struct RawExplicitDataEntity
 {
 public:
-	bool collision = false;
-	std::vector <EDataTag> tag_list;
+	bool duplicate = false;
 
-	static std::vector<RawDataEntity> raw_data_entity_list;
+
+	std::vector					<std::string>	class_list;
+	std::string					tier;
+	
+	std::string					required_level;
+
+
+	std::vector<std::string>	tag_type_list;
+
+	ELocalisationText			mod_description;
+	ELocalisationText			mod_name;
+
+	static std::vector<RawExplicitDataEntity> raw_data_entity_list;
 };
 
 constexpr int filter_tabs_count = 5;
