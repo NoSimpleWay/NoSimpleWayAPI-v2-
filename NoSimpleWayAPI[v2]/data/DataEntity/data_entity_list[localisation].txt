@@ -2142,7 +2142,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"tag_trash"
-	[tag]"name EN"		[value]"Worth: Trah"
+	[tag]"name EN"		[value]"Worth: Trash"
 	[tag]"name RU"		[value]"Мусор"
 	
 ADD_NEW_DATA_ENTITY
@@ -2312,22 +2312,22 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"tag_tier_acceptable"
-	[tag]"name EN"		[value]"Acceptable"
-	[tag]"name RU"		[value]"Приемлимое"
+	[tag]"name EN"		[value]"Tier: Acceptable"
+	[tag]"name RU"		[value]"Тир: Приемлимое"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"tag_tier_good"
-	[tag]"name EN"		[value]"Good"
-	[tag]"name RU"		[value]"Хорошее"
+	[tag]"name EN"		[value]"Tier: Good"
+	[tag]"name RU"		[value]"Тир: Хорошее"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"tag_tier_best"
-	[tag]"name EN"		[value]"Best"
-	[tag]"name RU"		[value]"Лучшее"
+	[tag]"name EN"		[value]"Tier: Best"
+	[tag]"name RU"		[value]"Тир: Лучшее"
 	
 	
 	
@@ -2646,6 +2646,152 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"tag_damage"
 	[tag]"name EN"		[value]"Damage"
 	[tag]"name RU"		[value]"Урон"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_price_priceless"
+	[tag]"name EN"		[value]"Price: Priceless"
+	[tag]"name RU"		[value]"Ценность: Бесценный"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_price_precious"
+	[tag]"name EN"		[value]"Price: Precious"
+	[tag]"name RU"		[value]"Ценность: Очень высокая"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_price_high"
+	[tag]"name EN"		[value]"Price: High"
+	[tag]"name RU"		[value]"Ценность: Высокая"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_price_moderate"
+	[tag]"name EN"		[value]"Price: Moderate"
+	[tag]"name RU"		[value]"Ценность: Средняя"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_price_low"
+	[tag]"name EN"		[value]"Price: Low"
+	[tag]"name RU"		[value]"Ценность: Низкая"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_heist_cloaks"
+	[tag]"name EN"		[value]"Cloaks"
+	[tag]"name RU"		[value]"Накидки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_heist_gear"
+	[tag]"name EN"		[value]"Gear"
+	[tag]"name RU"		[value]"Принадлежности"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_heist_brooches"
+	[tag]"name EN"		[value]"Brooches"
+	[tag]"name RU"		[value]"Броши"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_heist_tool"
+	[tag]"name EN"		[value]"Tools"
+	[tag]"name RU"		[value]"Инструменты"
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_heist_level_2"
+	[tag]"name EN"		[value]"Level: 2 (worst)"
+	[tag]"name RU"		[value]"Уровень: 2 (худший)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_heist_level_3"
+	[tag]"name EN"		[value]"Level: 3"
+	[tag]"name RU"		[value]"Уровень: 3"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_heist_level_4"
+	[tag]"name EN"		[value]"Level: 4"
+	[tag]"name RU"		[value]"Уровень: 4"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_heist_level_5"
+	[tag]"name EN"		[value]"Level: 5 (best)"
+	[tag]"name RU"		[value]"Уровень: 5 (лучший)"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_map_fragments"
+	[tag]"name EN"		[value]"Map fragments"
+	[tag]"name RU"		[value]"Фрагменты карт"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_map_stackable_currency"
+	[tag]"name EN"		[value]"Currency"
+	[tag]"name RU"		[value]"Валюта"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_map_divination_cards"
+	[tag]"name EN"		[value]"Divination cards"
+	[tag]"name RU"		[value]"Гадальные карты"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_map_vault_keys"
+	[tag]"name EN"		[value]"Vault keys"
+	[tag]"name RU"		[value]"Ключи реликвария"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_map_item_piece"
+	[tag]"name EN"		[value]"Item piece"
+	[tag]"name RU"		[value]"Фрагмент предмета"
+	
+	
+	
+	
+	
 	
 
 	

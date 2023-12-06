@@ -43,7 +43,7 @@ Glaciated	[5]
 Polar	[5]
 Entombing	[5]
 Crystalising	[1]
-Humming	[6]
+Humming	[5]
 Buzzing	[5]
 Snapping	[5]
 Crackling	[5]
@@ -159,7 +159,7 @@ of Spilling	[1]
 of Phlebotomising	[1]
 of Hemorrhaging	[1]
 of Exsanguinating	[1]
-Paragon's	[1]
+Paragon's	no collision
 Fletcher's	no collision
 Sharpshooter's	no collision
 of Splintering	[1]
@@ -422,10 +422,10 @@ Ephemeral	[1]
 Evanescent	[2]
 Unreal	[2]
 Illusory	[2]
-Will-o-wisp's	[4]
-Nymph's	[4]
-Sylph's	[4]
-Cherub's	[4]
+Will-o-wisp's	[3]
+Nymph's	[3]
+Sylph's	[3]
+Cherub's	[3]
 Runner's	no collision
 Sprinter's	no collision
 Stallion's	no collision
@@ -571,3 +571,19 @@ of Tacati	no collision
 Tacati's	no collision
 Topotante's	no collision
 Xopec's	no collision
+The Shaper's	no collision
+of Shaping	no collision
+The Elder's	no collision
+of the Elder	no collision
+Crusader's	no collision
+of the Crusade	no collision
+Redeemer's	no collision
+of Redemption	no collision
+Hunter's	no collision
+of the Hunt	no collision
+Warlord's	no collision
+of the Conquest	no collision
+Subterranean	no collision
+of the Underground	no collision
+Essences	no collision
+of the Essence	no collision

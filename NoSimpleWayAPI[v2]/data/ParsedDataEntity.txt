@@ -4715,7 +4715,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 
-	[tag]"icon path"	[value]"HeraldOfAsh"
+	[tag]"icon path"	[value]"HeraldOfFire"
 
 	[tag]"base name"	[value]"Heated"
 	[tag]"name EN"	[value]"Adds (3-5) to (6-7) Fire Damage"
@@ -4739,7 +4739,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 
-	[tag]"icon path"	[value]"HeraldOfAsh"
+	[tag]"icon path"	[value]"HeraldOfFire"
 
 	[tag]"base name"	[value]"Smouldering"
 	[tag]"name EN"	[value]"Adds (14-20) to (29-33) Fire Damage"
@@ -4763,7 +4763,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 
-	[tag]"icon path"	[value]"HeraldOfAsh"
+	[tag]"icon path"	[value]"HeraldOfFire"
 
 	[tag]"base name"	[value]"Smoking"
 	[tag]"name EN"	[value]"Adds (23-31) to (47-54) Fire Damage"
@@ -4787,7 +4787,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 
-	[tag]"icon path"	[value]"HeraldOfAsh"
+	[tag]"icon path"	[value]"HeraldOfFire"
 
 	[tag]"base name"	[value]"Burning"
 	[tag]"name EN"	[value]"Adds (32-44) to (65-76) Fire Damage"
@@ -4811,7 +4811,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 
-	[tag]"icon path"	[value]"HeraldOfAsh"
+	[tag]"icon path"	[value]"HeraldOfFire"
 
 	[tag]"base name"	[value]"Flaming"
 	[tag]"name EN"	[value]"Adds (45-61) to (91-106) Fire Damage"
@@ -4835,7 +4835,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 
-	[tag]"icon path"	[value]"HeraldOfAsh"
+	[tag]"icon path"	[value]"HeraldOfFire"
 
 	[tag]"base name"	[value]"Scorching"
 	[tag]"name EN"	[value]"Adds (63-85) to (128-148) Fire Damage"
@@ -4859,7 +4859,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 
-	[tag]"icon path"	[value]"HeraldOfAsh"
+	[tag]"icon path"	[value]"HeraldOfFire"
 
 	[tag]"base name"	[value]"Incinerating"
 	[tag]"name EN"	[value]"Adds (85-115) to (172-200) Fire Damage"
@@ -4883,7 +4883,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 
-	[tag]"icon path"	[value]"HeraldOfAsh"
+	[tag]"icon path"	[value]"HeraldOfFire"
 
 	[tag]"base name"	[value]"Blasting"
 	[tag]"name EN"	[value]"Adds (110-150) to (223-260) Fire Damage"
@@ -4907,7 +4907,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 
-	[tag]"icon path"	[value]"HeraldOfAsh"
+	[tag]"icon path"	[value]"HeraldOfFire"
 
 	[tag]"base name"	[value]"Cremating"
 	[tag]"name EN"	[value]"Adds (137-188) to (279-325) Fire Damage"
@@ -4931,7 +4931,7 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Explicit"
 
-	[tag]"icon path"	[value]"HeraldOfAsh"
+	[tag]"icon path"	[value]"HeraldOfFire"
 
 	[tag]"base name"	[value]"Carbonising"
 	[tag]"name EN"	[value]"Adds (165-225) to (335-390) Fire Damage"

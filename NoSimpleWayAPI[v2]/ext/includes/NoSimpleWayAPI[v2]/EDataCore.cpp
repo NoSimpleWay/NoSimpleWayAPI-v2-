@@ -3683,12 +3683,12 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 							//if (suitable_str == "Deleted") { return false; }
 
 							if
-								(
+							(
 									//empty suitable text means 'any value suitable'
 									(suitable_str.target_value_key == "")
 									||
 									(EStringUtils::compare_ignoring_case(suitable_str.target_value_key, tag_value))
-									)
+							)
 							{
 								//even one match with banned tag return false
 								return false;

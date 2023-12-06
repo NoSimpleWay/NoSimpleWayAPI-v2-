@@ -1,11 +1,24 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
 
+	[tag]"name EN"		[value]"Delirium Orb"
+	[tag]"name RU"		[value]"Cфера Делириума"
+
+	[tag]"icon path"	[value]"DeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
 	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+		
+	[tag]"worth"		[value]"Common"
 	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
 	
-	
-	
-	
-	ADD_NEW_DATA_ENTITY
+
+ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Diviner's Delirium Orb"
@@ -18,7 +31,7 @@
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 		
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -38,7 +51,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delirium orb"
 	[tag]"item tag"		[value]"Non-basic currency"
 		
-	[tag]"worth"		[value]"Moderate"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -110,12 +123,16 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name EN"		[value]"Imperial Delirium Orb"
 	[tag]"name RU"		[value]"Имперская сфера Делириума"
 
-	[tag]"icon path"	[value]"DeliriumOrbUnknown"
+	[tag]"icon path"	[value]"ImperialDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Delirium orb"
 	[tag]"item tag"		[value]"Non-basic currency"
 		
+		
+	[tag]"item tag"		[value]"Deleted"
+	
+	
 	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"1"
@@ -174,10 +191,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Delirium orb"
 	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 		
-	[tag]"worth"		[value]"Moderate"
-	
-	[tag]"item tag"		[value]"Deleted"
+	[tag]"worth"		[value]"Common"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -217,7 +233,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 		
-	[tag]"worth"		[value]"Rare"
+	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -332,14 +348,16 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Amorphous Delirium Orb"
-	[tag]"name RU"		[value]"Аморфная сфера Делириума"
+	[tag]"name EN"		[value]"Challenging Delirium Orb"
+	[tag]"name RU"		[value]"Испытующая сфера Делириума"
 
-	[tag]"icon path"	[value]"DeliriumOrbUnknown"
+	[tag]"icon path"	[value]"ChallengingDeliriumOrb"
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Delirium orb"
 	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction League"
 		
 	[tag]"worth"		[value]"Common"
 	

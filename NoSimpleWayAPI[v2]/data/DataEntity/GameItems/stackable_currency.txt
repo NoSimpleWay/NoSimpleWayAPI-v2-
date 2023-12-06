@@ -482,9 +482,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Boss loot"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Sirus"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -600,9 +601,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss loot"
 	
 	
-	
 	[tag]"item tag"		[value]"League: Ritual"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Loot source: Uber Shaper"
+	[tag]"item tag"		[value]"Loot source: Elder"
+	[tag]"item tag"		[value]"Loot source: Sirus"
+	[tag]"item tag"		[value]"Boss drop"
+	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Expensive"
@@ -4150,6 +4156,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Elevated Sextant"
+	[tag]"name RU"		[value]"Возвышенный секстант"
+
+	[tag]"icon path"	[value]"Elevated_Sextant_inventory_icon"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Loot source: Maven"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Boss drop"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"League: Ritual"
+	[tag]"item tag"		[value]"Boss loot"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Awakened Sextant"
+	[tag]"name RU"		[value]"Пробужденный секстант"
+
+	[tag]"icon path"	[value]"AwakenedSextant"
+	[tag]"base class"	[value]"Currency"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Basic currency"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

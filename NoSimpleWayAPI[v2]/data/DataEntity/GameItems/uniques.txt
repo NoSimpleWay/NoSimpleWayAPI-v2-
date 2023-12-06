@@ -391,9 +391,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"item tag"		[value]"Loot source: Esh"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -410,9 +412,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"item tag"		[value]"Loot source: Esh"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -1161,6 +1165,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
+	[tag]"item tag"		[value]"Loot source: Delve Aul"
+	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
@@ -1177,9 +1183,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Chayula"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -1260,7 +1267,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Loot source: Chayula"
+	[tag]"item tag"		[value]"Loot source: Shaper"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -1277,9 +1284,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Elder"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -1347,11 +1355,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Loot source: Uul-Netol"
 	[tag]"item tag"		[value]"Loot source: Uber Breach"
 	
 	[tag]"worth"		[value]"Very expensive"
@@ -2286,9 +2292,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"item tag"		[value]"Loot source: Abyss"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -2619,6 +2628,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Delve Lich"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -2863,6 +2873,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Delve drop"
 	[tag]"item tag"		[value]"Loot source: Delve Lich"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Good for start"
@@ -2887,7 +2898,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Delve Aul"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -4568,9 +4580,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Elder"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -7035,6 +7048,26 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Moderate"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cutlass"
+	[tag]"name EN"		[value]"United in Dream"
+	[tag]"name RU"		[value]"Слившиеся во сне"
+
+	[tag]"icon path"	[value]"SuperBlade"
+	[tag]"base class"	[value]"One Handed Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Uber Breach"
+	
+	[tag]"worth"		[value]"Moderate"
+	
 	
 	
 	
@@ -7288,7 +7321,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Loot source: Elder"
+	[tag]"item tag"		[value]"Loot source: Uber Elder"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -8486,7 +8519,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Loot source: Chayula"
+	[tag]"item tag"		[value]"Loot source: Shaper"
 	
 	[tag]"worth"		[value]"Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -8629,6 +8662,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Tornado Wand"
+	[tag]"name EN"		[value]"Shimmeron"
+	[tag]"name RU"		[value]"Звёздный блеск"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Elder"
+	[tag]"item tag"		[value]"Boss drop"
+	
+	[tag]"worth"		[value]"Common"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -9636,6 +9691,26 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Rare"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Simple Robe"
+	[tag]"name EN"		[value]"Skin of the Lords"
+	[tag]"name RU"		[value]"Кожа повелителей"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Uber Breach"
+	
+	[tag]"worth"		[value]"Rare"
+	
 	
 	
 	
@@ -10264,7 +10339,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"base name"	[value]"Saint's Hauberk"
-	[tag]"name EN"		[value]"Doryani's Prototype"
+	[tag]"name EN"		[value]"	ani's Prototype"
 	[tag]"name RU"		[value]"Прототип Дориани"
 
 	[tag]"icon path"	[value]"SuperChest"
@@ -14531,7 +14606,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
-	[tag]"item tag"		[value]"Loot source: Uber Shaper"
+	[tag]"item tag"		[value]"Loot source: Shaper"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -14924,7 +14999,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Вуаль Вириди"
 
 	[tag]"icon path"	[value]"SuperHelmet"
-	[tag]"base class"	[value]"Helmets"	
+	[tag]"base class"	[value]"Helmets"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"2"
@@ -15149,6 +15224,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Delve Aul"
 	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"worth"		[value]"Rare"
 	
 	
@@ -15192,6 +15269,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Syndicate drop"
 	[tag]"item tag"		[value]"Loot source: Catarina"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -16926,6 +17004,27 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Expensive"
 	
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Doryani's Machinarium"
+	[tag]"name EN"		[value]"Doryani's Machinarium"
+	[tag]"name RU"		[value]"Машинариум Дориани"
+
+	[tag]"icon path"	[value]"Map"
+	[tag]"base class"	[value]"Maps"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Delve Architect"
+	
+	[tag]"worth"		[value]"Expensive"
+	
 	
 	
 	
@@ -16986,7 +17085,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Uber Maven"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Very expensive"
 	
@@ -17031,7 +17133,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Sirus"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Very Expensive"
 	
@@ -17810,7 +17914,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Loot source: Uber Breach"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -17831,7 +17938,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Loot source: Abyss"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -17853,7 +17962,11 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Loot source: Elder"
+	[tag]"item tag"		[value]"Loot source: Uber Elder"
+	[tag]"item tag"		[value]"Loot source: Uber Uber Elder"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -18007,7 +18120,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Uber Shaper"
+	[tag]"item tag"		[value]"Loot source: Uber Uber Elder"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -18029,7 +18145,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Loot source: Uber Breach"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -18117,7 +18236,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Loot source: Maven"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -18234,7 +18354,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Loot source: Uber Breach"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -18424,7 +18547,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Loot source: Abyss"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -18557,7 +18682,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Sirus"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -18595,7 +18722,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Loot source: Abyss"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -18614,7 +18744,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Loot source: Abyss"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -19445,4 +19578,94 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Trash"
 	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Aspect"
+	[tag]"name EN"		[value]"Victorious Fate"
+	[tag]"name RU"		[value]"Победоносная судьба"
+
+	[tag]"icon path"	[value]"VictoriousFate"
+	[tag]"base class"	[value]"Item Piece"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
+	[tag]"item tag"		[value]"Boss drop"
+	
+	[tag]"worth"		[value]"Rare"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Aspect"
+	[tag]"name EN"		[value]"Ignominious Fate"
+	[tag]"name RU"		[value]"Бесславная судьба"
+
+	[tag]"icon path"	[value]"VictoriousFate"
+	[tag]"base class"	[value]"Item Piece"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Vaal Temple"
+	[tag]"item tag"		[value]"Boss drop"
+	
+	[tag]"worth"		[value]"Rare"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Aspect"
+	[tag]"name EN"		[value]"Will of Chaos"
+	[tag]"name RU"		[value]"Воля Хаоса"
+
+	[tag]"icon path"	[value]"WillofChaos"
+	[tag]"base class"	[value]"Item Piece"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Atzoatl"
+	[tag]"item tag"		[value]"Boss drop"
+	
+	[tag]"worth"		[value]"Rare"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Vaal Aspect"
+	[tag]"name EN"		[value]"Deadly End"
+	[tag]"name RU"		[value]"Смертельный конец"
+
+	[tag]"icon path"	[value]"DeadlyEnd"
+	[tag]"base class"	[value]"Item Piece"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Delve Architect"
+	[tag]"item tag"		[value]"Boss drop"
+	
+	[tag]"worth"		[value]"Rare"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	

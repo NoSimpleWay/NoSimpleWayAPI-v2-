@@ -22,6 +22,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	
+	[tag]"item tag"		[value]"Loot source: Sirus"
+	[tag]"item tag"		[value]"Boss drop"
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item width"	[value]"1"
@@ -651,6 +654,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
+	[tag]"item tag"		[value]"Loot source: Delve Aul"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"worth"		[value]"Expensive"
 
 	[tag]"item width"	[value]"1"
@@ -746,6 +754,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
+	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Boss drop"
+	
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -1471,6 +1483,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Loot source: Catarina"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1671,6 +1687,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Loot source: Esh"
+	[tag]"item tag"		[value]"Loot source: Tul"
+	[tag]"item tag"		[value]"Loot source: Uul-Netol"
+	[tag]"item tag"		[value]"Loot source: Xoph"
+	[tag]"item tag"		[value]"Loot source: Chayula"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 
@@ -1985,6 +2008,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Very expensive"
+	
+	[tag]"item tag"		[value]"Loot source: Uber Elder"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 
@@ -2697,6 +2723,13 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	
+	[tag]"item tag"		[value]"Loot source: Chayula"
+	[tag]"item tag"		[value]"Loot source: Esh"
+	[tag]"item tag"		[value]"Loot source: Tul"
+	[tag]"item tag"		[value]"Loot source: Uul-Netol"
+	[tag]"item tag"		[value]"Loot source: Xoph"
+	[tag]"item tag"		[value]"Boss drop"
+	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -2984,6 +3017,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
+	[tag]"item tag"		[value]"Loot source: Elder"
+	[tag]"item tag"		[value]"Boss drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3908,6 +3943,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Loot source: Abyss"
+	[tag]"item tag"		[value]"Boss drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -4359,6 +4397,9 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	[tag]"item tag"		[value]"Loot source: Chayula"
+	[tag]"item tag"		[value]"Boss drop"
+	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5234,6 +5275,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
+	[tag]"item tag"		[value]"Loot source: Delve Aul"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5266,6 +5312,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Forbidden Sanctum league"
+	
+	[tag]"item tag"		[value]"Loot source: Maven"
+	[tag]"item tag"		[value]"Loot source: Elder"
+	[tag]"item tag"		[value]"Loot source: Eater"
+	[tag]"item tag"		[value]"Loot source: Exarch"
+	[tag]"item tag"		[value]"Boss drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5667,9 +5719,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Loot source: Delve Lich"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	[tag]"item tag"		[value]"Boss drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

@@ -791,7 +791,15 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Base Class"
 
-	[tag]"name EN"		[value]"Piece"
+	[tag]"name EN"		[value]"Pantheon Soul"
+	[tag]"name RU"		[value]"Душа Пантеона"
+
+	[tag]"icon path"	[value]"Divine_Vessel_inventory_icon"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Item Piece"
 	[tag]"name RU"		[value]"Часть"
 
 	[tag]"icon path"	[value]"Piece"

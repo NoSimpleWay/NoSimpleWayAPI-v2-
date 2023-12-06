@@ -1,0 +1,12 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Vaal Aspect"
+	[tag]"name RU"		[value]"Аспект Ваал"
+	
+	[tag]"base class"	[value]"Item Piece"
+
+	[tag]"icon path"	[value]"Vaal_Orb_inventory_icon"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

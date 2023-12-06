@@ -16,8 +16,7 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
-
+	
 	[tag]"worth"		[value]"Trash"
 	
 ADD_NEW_DATA_ENTITY
@@ -36,6 +35,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+	[tag]"worth"		[value]"Moderate"
+	
 	[tag]"drop level"	[value]"1"
 	
 ADD_NEW_DATA_ENTITY
@@ -52,6 +53,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -90,6 +93,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -108,6 +113,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -126,6 +133,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -144,6 +153,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -199,6 +210,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
+	[tag]"worth"		[value]"Expensive"
+	
 	[tag]"drop level"	[value]"1"
 
 	[tag]"item width"	[value]"1"
@@ -219,6 +232,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -237,6 +252,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -255,6 +272,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -272,6 +291,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve item"
 	[tag]"item tag"		[value]"Delve fossil"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"drop level"	[value]"1"
 
@@ -292,6 +313,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -310,6 +333,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -328,6 +353,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -346,6 +373,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Trash"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -364,6 +393,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -382,6 +413,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -400,6 +433,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -418,6 +453,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -438,6 +475,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -456,6 +495,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delve fossil"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Common"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -480,6 +521,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -504,6 +547,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	
 	[tag]"drop level"	[value]"1"
+	
+	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

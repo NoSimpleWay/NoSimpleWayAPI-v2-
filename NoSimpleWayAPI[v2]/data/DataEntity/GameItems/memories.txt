@@ -6,7 +6,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Воспоминание Альвы"
 
 	[tag]"icon path"	[value]"AlvaMemoryItem"
-	[tag]"base class"	[value]"Memory"
+	[tag]"base class"	[value]"Memories"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
@@ -23,7 +23,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Воспоминание Эйнара"
 
 	[tag]"icon path"	[value]"EinharMemoryItem"
-	[tag]"base class"	[value]"Memory"
+	[tag]"base class"	[value]"Memories"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
@@ -41,7 +41,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Воспоминание Кирака"
 
 	[tag]"icon path"	[value]"KiracMemoryItem"
-	[tag]"base class"	[value]"Memory"
+	[tag]"base class"	[value]"Memories"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"
@@ -58,7 +58,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Воспоминание Нико"
 
 	[tag]"icon path"	[value]"NikoMemoryItem"
-	[tag]"base class"	[value]"Memory"
+	[tag]"base class"	[value]"Memories"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"World drop"

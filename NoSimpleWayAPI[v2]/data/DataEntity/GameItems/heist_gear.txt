@@ -1,51 +1,37 @@
-
-
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Aggregator Charm"
-	[tag]"name RU"		[value]"Накопительный оберег"
+	[tag]"name EN"		[value]"Rough Sharpening Stone"
+	[tag]"name RU"		[value]"Грубый оселок"
 
-	[tag]"icon path"	[value]"Charm"
+	[tag]"icon path"	[value]"Sharpstone"
 	[tag]"base class"	[value]"Heist Gear"
 	
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist gear"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Burst Band"
-	[tag]"name RU"		[value]"Высвобождающее ожерелье"
-
-	[tag]"icon path"	[value]"Ward"
-	[tag]"base class"	[value]"Heist Gear"
 	
-	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Best heist gear"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"heist level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Conduit Line"
-	[tag]"name RU"		[value]"Проводящая цепочка"
+	[tag]"name EN"		[value]"Standard Sharpening Stone"
+	[tag]"name RU"		[value]"Обычный оселок"
 
-	[tag]"icon path"	[value]"Ward"
+	[tag]"icon path"	[value]"Sharpstone"
 	[tag]"base class"	[value]"Heist Gear"
 	
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist gear"
+	
+	[tag]"heist level"	[value]"3"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -57,66 +43,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist gear"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Flanged Arrowhead"
-	[tag]"name RU"		[value]"Рубчатый наконечник"
-
-	[tag]"icon path"	[value]"Arrow"
-	[tag]"base class"	[value]"Heist Gear"
 	
-	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist gear"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Focal Stone"
-	[tag]"name RU"		[value]"Фокусирующий камень"
-
-	[tag]"icon path"	[value]"Stone"
-	[tag]"base class"	[value]"Heist Gear"
-	
-	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist gear"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Fragmenting Arrowhead"
-	[tag]"name RU"		[value]"Раскалывающий наконечник"
-
-	[tag]"icon path"	[value]"Arrow"
-	[tag]"base class"	[value]"Heist Gear"
-	
-	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist gear"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Hollowpoint Arrowhead"
-	[tag]"name RU"		[value]"Сминающий наконечник"
-
-	[tag]"icon path"	[value]"Arrow"
-	[tag]"base class"	[value]"Heist Gear"
-	
-	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist gear"
+	[tag]"heist level"	[value]"4"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -136,6 +64,83 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	[tag]"heist level"	[value]"5"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Flanged Arrowhead"
+	[tag]"name RU"		[value]"Рубчатый наконечник"
+
+	[tag]"icon path"	[value]"Arrow"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist gear"
+	
+	[tag]"heist level"	[value]"2"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fragmenting Arrowhead"
+	[tag]"name RU"		[value]"Раскалывающий наконечник"
+
+	[tag]"icon path"	[value]"Arrow"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist gear"
+	
+	[tag]"heist level"	[value]"3"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hollowpoint Arrowhead"
+	[tag]"name RU"		[value]"Сминающий наконечник"
+
+	[tag]"icon path"	[value]"Arrow"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist gear"
+	
+	[tag]"heist level"	[value]"4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -149,6 +154,47 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Best heist gear"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"heist level"	[value]"5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Focal Stone"
+	[tag]"name RU"		[value]"Фокусирующий камень"
+
+	[tag]"icon path"	[value]"Stone"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist gear"
+	
+	[tag]"heist level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -156,14 +202,16 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Rough Sharpening Stone"
-	[tag]"name RU"		[value]"Грубый оселок"
+	[tag]"name EN"		[value]"Conduit Line"
+	[tag]"name RU"		[value]"Проводящая цепочка"
 
-	[tag]"icon path"	[value]"Sharpstone"
+	[tag]"icon path"	[value]"Ward"
 	[tag]"base class"	[value]"Heist Gear"
 	
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist gear"
+	
+	[tag]"heist level"	[value]"3"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -171,14 +219,34 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
-	[tag]"name EN"		[value]"Standard Sharpening Stone"
-	[tag]"name RU"		[value]"Обычный оселок"
+	[tag]"name EN"		[value]"Aggregator Charm"
+	[tag]"name RU"		[value]"Накопительный оберег"
 
-	[tag]"icon path"	[value]"Sharpstone"
+	[tag]"icon path"	[value]"Charm"
 	[tag]"base class"	[value]"Heist Gear"
 	
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Heist gear"
+	
+	[tag]"heist level"	[value]"4"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Burst Band"
+	[tag]"name RU"		[value]"Высвобождающее ожерелье"
+
+	[tag]"icon path"	[value]"Ward"
+	[tag]"base class"	[value]"Heist Gear"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Best heist gear"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"heist level"	[value]"5"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

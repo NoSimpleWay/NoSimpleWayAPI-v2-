@@ -277,6 +277,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss loot"
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Loot source: Maven"
+	[tag]"item tag"		[value]"Loot source: Uber Maven"
 	[tag]"item tag"		[value]"Eldritch currency"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	

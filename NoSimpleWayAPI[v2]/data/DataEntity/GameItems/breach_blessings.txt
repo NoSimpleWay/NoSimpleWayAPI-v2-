@@ -14,6 +14,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Breach blessing"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Chayula"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -36,6 +37,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Breach blessing"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Esh"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -58,6 +60,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Breach blessing"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Tul"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -80,6 +83,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Breach blessing"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Uul-Netol"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -102,6 +106,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Breach blessing"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Xoph"
 	
 	[tag]"worth"		[value]"Rare"
 	

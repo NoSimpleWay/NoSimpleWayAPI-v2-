@@ -1101,12 +1101,14 @@ public:
 	std::string					tier;
 	
 	std::string					required_level;
+	std::string					icon_text;
 
 
 	std::vector<std::string>	tag_type_list;
 
 	ELocalisationText			mod_description;
 	ELocalisationText			mod_name;
+
 
 	static std::vector<RawExplicitDataEntity> raw_data_entity_list;
 };
@@ -1283,7 +1285,7 @@ public:
 
 
 	//UNIQUES FOLDER
-	static void register_new_folder_uniques();
+	static void register_new_pattern_uniques();
 	////////////////////////////////////////////////////////////////////////
 
 

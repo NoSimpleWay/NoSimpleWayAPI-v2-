@@ -144,6 +144,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Elder"
+	[tag]"item tag"		[value]"Boss drop"
+		
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -189,6 +193,11 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Boss drop"
+		
+	[tag]"worth"		[value]"Rare"
+	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
@@ -220,6 +229,11 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Boss drop"
+		
+	[tag]"worth"		[value]"Rare"
+	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
@@ -237,6 +251,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Elder"
+	[tag]"item tag"		[value]"Boss drop"
+		
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -252,6 +270,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Boss drop"
+		
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -267,6 +289,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Boss drop"
+		
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -282,6 +308,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Boss drop"
+		
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -297,6 +327,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Boss drop"
+		
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -313,6 +347,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -328,6 +364,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -343,6 +381,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -358,6 +398,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -373,6 +415,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -388,6 +432,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 
@@ -417,6 +463,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -432,6 +480,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -447,6 +497,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -462,6 +514,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -477,6 +531,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -494,6 +550,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -509,6 +567,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -598,6 +658,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -613,6 +675,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -628,6 +692,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -643,6 +709,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -658,6 +726,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -673,6 +743,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -688,6 +760,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -703,6 +777,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -718,6 +794,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -733,6 +811,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -748,6 +828,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -763,6 +845,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -778,6 +862,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -793,6 +879,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -822,6 +910,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -836,6 +926,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -850,6 +942,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -864,6 +958,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -878,6 +974,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -892,6 +990,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -906,6 +1006,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -920,6 +1022,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -934,6 +1038,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -948,6 +1054,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -962,6 +1070,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -976,6 +1086,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -990,6 +1102,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1004,6 +1118,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1018,6 +1134,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1116,9 +1234,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Winged_Scarab"
 	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1134,6 +1256,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1149,6 +1273,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1164,6 +1290,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1179,6 +1307,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1194,6 +1324,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1209,6 +1341,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1224,6 +1358,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1239,6 +1375,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1254,6 +1392,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1269,6 +1409,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1284,6 +1426,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1299,6 +1443,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1314,6 +1460,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1329,6 +1477,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2176,7 +2326,11 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
+	[tag]"item tag"		[value]"Loot source: Uber Uber Elder"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Boss drop"
+		
+	[tag]"worth"		[value]"Rare"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2389,6 +2543,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	
+	[tag]"scarab tier"	[value]"Rusted"
+	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 
 	[tag]"item width"	[value]"1"
@@ -2407,6 +2563,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2424,6 +2582,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2441,6 +2601,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2459,7 +2621,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2475,6 +2638,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2490,6 +2655,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2505,6 +2672,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2519,6 +2688,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2534,6 +2705,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Polished"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2549,6 +2722,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2564,6 +2739,8 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

@@ -1,20 +1,4 @@
 
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Enamel Brooch"
-	[tag]"name RU"		[value]"Глянцевая брошь"
-
-	[tag]"icon path"	[value]"Brooch"
-	[tag]"base class"	[value]"Heist Brooch"
-	
-	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist brooch"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
-
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -22,11 +6,30 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Амальгамированная брошь"
 
 	[tag]"icon path"	[value]"Brooch"
-	[tag]"base class"	[value]"Heist Brooch"
+	[tag]"base class"	[value]"Heist Brooches"
 	
 	[tag]"item tag"		[value]"League: Heist"
 	[tag]"item tag"		[value]"Best heist brooch"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"heist level"	[value]"5"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Enamel Brooch"
+	[tag]"name RU"		[value]"Глянцевая брошь"
+
+	[tag]"icon path"	[value]"Brooch"
+	[tag]"base class"	[value]"Heist Brooches"
+	
+	[tag]"item tag"		[value]"League: Heist"
+	[tag]"item tag"		[value]"Heist Brooches"
+	
+	[tag]"heist level"	[value]"4"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -38,10 +41,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотая брошь"
 
 	[tag]"icon path"	[value]"Brooch"
-	[tag]"base class"	[value]"Heist Brooch"
+	[tag]"base class"	[value]"Heist Brooches"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist brooch"
+	[tag]"item tag"		[value]"Heist Brooches"
+	
+	[tag]"heist level"	[value]"3"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -53,10 +58,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Серебряная брошь"
 
 	[tag]"icon path"	[value]"Brooch"
-	[tag]"base class"	[value]"Heist Brooch"
+	[tag]"base class"	[value]"Heist Brooches"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist brooch"
+	[tag]"item tag"		[value]"Heist Brooches"
+	
+	[tag]"heist level"	[value]"2"
+	
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

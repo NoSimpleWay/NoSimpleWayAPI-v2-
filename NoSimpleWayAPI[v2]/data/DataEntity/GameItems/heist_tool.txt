@@ -7,10 +7,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Lockpick"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -23,10 +25,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Lockpick"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"3"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -39,10 +43,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Lockpick"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"4"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -55,15 +61,28 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Lockpick"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 	[tag]"item tag"		[value]"Best heist tool"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"heist level"	[value]"5"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -73,10 +92,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Bracers"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -89,10 +110,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Bracers"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"3"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -105,10 +128,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Bracers"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"4"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -121,15 +146,30 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Bracers"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 	[tag]"item tag"		[value]"Best heist tool"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"heist level"	[value]"5"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -139,10 +179,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Charm"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -155,10 +197,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Charm"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"3"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -171,10 +215,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Charm"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"4"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -187,15 +233,31 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Charm"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 	[tag]"item tag"		[value]"Best heist tool"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"heist level"	[value]"5"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -205,13 +267,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Powder"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -220,10 +285,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Powder"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"3"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -236,13 +303,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Powder"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"4"
 		
 	[tag]"worth"		[value]"Trash"
 
@@ -254,15 +323,32 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Powder"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 	[tag]"item tag"		[value]"Best heist tool"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"heist level"	[value]"5"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -271,10 +357,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Ward"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -287,10 +375,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Ward"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"3"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -302,10 +392,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Ward"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"4"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -318,15 +410,33 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Ward"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 	[tag]"item tag"		[value]"Best heist tool"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"heist level"	[value]"5"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -336,13 +446,16 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Key"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"2"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -351,10 +464,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Key"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"3"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -367,10 +482,12 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Key"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
+	
+	[tag]"heist level"	[value]"4"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -383,15 +500,31 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Key"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 	[tag]"item tag"		[value]"Best heist tool"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"heist level"	[value]"5"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 
@@ -403,13 +536,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sole"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 
 		
 	[tag]"worth"		[value]"Trash"
@@ -422,10 +555,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sole"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -438,10 +571,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sole"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -454,15 +587,33 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Sole"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 	[tag]"item tag"		[value]"Best heist tool"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -472,10 +623,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Mask"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -488,10 +639,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Mask"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -504,10 +655,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Mask"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -520,15 +671,29 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Mask"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 	[tag]"item tag"		[value]"Best heist tool"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -538,10 +703,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Drill"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -554,10 +719,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Drill"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -570,10 +735,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Firetorch"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -588,10 +753,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Firetorch"
 	[tag]"base class"	[value]"Heist Tools"
-	[tag]"short name"	[value]"Heist Tool"
+	[tag]"short name"	[value]"Heist tools"
 	
 	[tag]"item tag"		[value]"League: Heist"
-	[tag]"item tag"		[value]"Heist tool"
+	[tag]"item tag"		[value]"Heist tools"
 	[tag]"item tag"		[value]"Best heist tool"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 
