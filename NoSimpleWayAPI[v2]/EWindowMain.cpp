@@ -832,8 +832,13 @@ void EDataActionCollection::action_add_new_filter_block(Entity* _entity, ECustom
 
 void EDataActionCollection::action_open_custom_sound_list(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	EButtonGroup::sound_list_group->stored_sound_type_enum = NSW_StoredSoundsType::CUSTOM_USER_SOUND;
+
 	EButtonGroup::sound_list_group->target_sound_button = static_cast<EntityButtonFilterSound*>(_entity);
 	EButtonGroup::sound_list_group->activate_move_to_foreground_and_center();
+
+	EntityButtonFilterSound*
+	clicked_sound_button = static_cast<EntityButtonFilterSound*>(_entity);
 
 
 
@@ -844,26 +849,17 @@ void EDataActionCollection::action_open_custom_sound_list(Entity* _entity, ECust
 
 	EButtonGroup::sound_list_group->refresh_sound_list();
 	EButtonGroup::sound_list_group->need_refresh = true;
-
-	for (EntityButton* but : EButtonGroup::sound_list_group->part_with_list->workspace_button_list)
-	{
-		EntityButtonFilterSound*
-			sound_button = static_cast<EntityButtonFilterSound*>(but);
-
-		if (sound_button->stored_named_sound == static_cast<EntityButtonFilterSound*>(_entity)->stored_named_sound)
-		{
-			EButtonGroup::sound_list_group->part_with_list->select_this_button(sound_button);
-			EButtonGroup::sound_list_group->part_with_list->scroll_to_this_button(sound_button);
-
-			break;
-		}
-	}
 }
 
 void EDataActionCollection::action_open_ingame_sound_list(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	EButtonGroup::sound_list_group->stored_sound_type_enum = NSW_StoredSoundsType::INGAME_SOUNDS;
+
 	EButtonGroup::sound_list_group->target_sound_button = static_cast<EntityButtonFilterSound*>(_entity);
 	EButtonGroup::sound_list_group->activate_move_to_foreground_and_center();
+
+	EntityButtonFilterSound*
+	clicked_sound_button = static_cast<EntityButtonFilterSound*>(_entity);
 
 	EButtonGroup::sound_list_group->action_on_select_for_button = &EDataActionCollection::action_select_this_sound_for_target_button;
 	//EWindowMain::load_custom_sound_list();
@@ -872,46 +868,58 @@ void EDataActionCollection::action_open_ingame_sound_list(Entity* _entity, ECust
 
 	EButtonGroup::sound_list_group->refresh_sound_list();
 	EButtonGroup::sound_list_group->need_refresh = true;
-
-	for (EntityButton* but : EButtonGroup::sound_list_group->part_with_list->workspace_button_list)
-	{
-		EntityButtonFilterSound*
-			sound_button = static_cast<EntityButtonFilterSound*>(but);
-
-		if (sound_button->stored_named_sound == static_cast<EntityButtonFilterSound*>(_entity)->stored_named_sound)
-		{
-			EButtonGroup::sound_list_group->part_with_list->select_this_button(sound_button);
-			EButtonGroup::sound_list_group->part_with_list->scroll_to_this_button(sound_button);
-
-			break;
-		}
-	}
 }
 
 void EDataActionCollection::action_play_attached_sound(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	if
-		(
-			(static_cast<EntityButtonFilterSound*>(_entity)->stored_named_sound != nullptr)
-			&&
-			(static_cast<EntityButtonFilterSound*>(_entity)->stored_named_sound->sound != nullptr)
-			)
+	EntityButtonFilterSound* sound_button = static_cast<EntityButtonFilterSound*>(_entity);
+
+	if (sound_button->named_sound_vector.empty())
 	{
-		static_cast<EntityButtonFilterSound*>(_entity)->stored_named_sound->sound->setDefaultVolume(0.2f);
-		if (ESound::engine != nullptr) { ESound::engine->play2D(((EntityButtonFilterSound*)_entity)->stored_named_sound->sound); }
+		EInputCore::logger_simple_error("<named_sound_vector> is EMPTY!");
 	}
 	else
 	{
-		if (static_cast<EntityButtonFilterSound*>(_entity)->stored_named_sound == nullptr)
+		ENamedSound*
+		random_sound;
+
+		random_sound = sound_button->named_sound_vector[rand() % sound_button->named_sound_vector.size()];
+
+		if (random_sound == nullptr)
 		{
-			EInputCore::logger_simple_error("target named sound is NULL!");
+			EInputCore::logger_simple_error("<random_sound> is NULL!");
+		}
+		else
+		if (random_sound->sound == nullptr)
+		{
+			EInputCore::logger_simple_error("<sound> in <ENamedSound> is NULL!");
+		}
+		else
+		if (ESound::engine == nullptr)
+		{
+			EInputCore::logger_simple_error("Sound engine dont work!");
 		}
 		else
 		{
-			if (static_cast<EntityButtonFilterSound*>(_entity)->stored_named_sound->sound == nullptr)
+			float sound_multiplier = 1.0f;
+
+			if (sound_button->parent_filter_block != nullptr)
 			{
-				EInputCore::logger_simple_error("stored sound is NULL!");
+				if (EButtonGroup::sound_list_group->stored_sound_type_enum == NSW_StoredSoundsType::INGAME_SOUNDS)
+				{
+					sound_multiplier = sound_button->parent_filter_block->ingame_sound_volume_value;
+				}
+				else
+				{
+					sound_multiplier = sound_button->parent_filter_block->user_sound_volume_value;
+				}
 			}
+
+			random_sound->sound->setDefaultVolume (0.01f * sound_multiplier);
+
+
+			ESound::engine->play2D(random_sound->sound);
+			
 		}
 	}
 }
@@ -927,7 +935,10 @@ void EDataActionCollection::action_invoke_button_action_in_sound_group(Entity* _
 			sound_button->target_sound_group->action_on_select_for_button(sound_button, _custom_data, _d);
 		}
 
-		sound_button->target_sound_group->close_this_group();
+		if ((sound_button->target_sound_group != nullptr) && (sound_button->target_sound_group->stored_sound_type_enum != NSW_StoredSoundsType::CUSTOM_USER_SOUND))
+		{
+			sound_button->target_sound_group->close_this_group();
+		}
 	}
 }
 
@@ -963,15 +974,46 @@ void EDataActionCollection::action_show_hide_cosmetic_blocks(Entity* _entity, EC
 void EDataActionCollection::action_select_this_sound_for_target_button(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	EWindowMain::make_unsaved_loot_filter_changes();
-	EButtonGroupSoundList*
-		sound_group = EButtonGroup::sound_list_group;
 
-	if
-		(
-			(sound_group->target_sound_button != nullptr)
-			)
+	EntityButtonFilterSound*
+	sound_button = static_cast<EntityButtonFilterSound*>(_entity);
+
+	EButtonGroupSoundList*
+	sound_group = EButtonGroup::sound_list_group;
+
+	std::vector<ENamedSound*>* pointer_to_target_named_sound = &(sound_group->target_sound_button->named_sound_vector);
+
+	if (sound_button->named_sound_vector.empty())
 	{
-		sound_group->target_sound_button->stored_named_sound = static_cast<EntityButtonFilterSound*>(_entity)->stored_named_sound;
+		EInputCore::logger_simple_error("Cannot set sound because sound_vector in this button is EMPTY!");
+	}
+	else
+	if (sound_group->target_sound_button != nullptr)
+	{
+		if (sound_group->stored_sound_type_enum == NSW_StoredSoundsType::INGAME_SOUNDS)
+		{
+			//push sound to vector
+			if (sound_group->target_sound_button->named_sound_vector.empty())
+			{
+				(*pointer_to_target_named_sound).push_back(sound_button->named_sound_vector[0]);
+			}
+			else//replace existing sound in vector
+			{
+				(*pointer_to_target_named_sound)[0] = sound_button->named_sound_vector[0];
+			}
+
+			EButtonGroup::sound_list_group->set_colors_to_registered_buttons();
+		}
+		else
+		if (sound_group->stored_sound_type_enum == NSW_StoredSoundsType::CUSTOM_USER_SOUND)
+		{
+			(*pointer_to_target_named_sound).push_back(sound_button->named_sound_vector[0]);
+
+			EButtonGroup::sound_list_group->add_selected_button_to_right_side(sound_button->named_sound_vector[0]);
+			
+			EButtonGroup::sound_list_group->set_colors_to_registered_buttons();
+			EButtonGroup::sound_list_group->part_with_registered_sound->need_change = true;
+		}
 	}
 
 }
@@ -3232,6 +3274,41 @@ void EDataActionCollection::action_change_selection_of_tag_configurer(Entity* _e
 			(static_cast<EDataContainer_Group_DataEntitiesSearch*>(EWindowMain::data_entity_filter->data_container)->pointer_to_search_bar->main_text_area);
 			//EDataActionCollection::action_type_search_filter_block_text(EWindowMain::bottom_filter_block_control->search_button->main_text_area);
 		}
+}
+
+void EDataActionCollection::action_remove_this_random_user_sound(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+	EWindowMain::make_unsaved_loot_filter_changes();
+	EntityButtonFilterSound*
+	sound_button = static_cast<EntityButtonFilterSound*>(_entity);
+
+	sound_button->entity_need_remove = true;
+	if (EButtonGroup::sound_list_group->target_sound_button != nullptr)
+	{
+		for (int j = 0; j < EButtonGroup::sound_list_group->target_sound_button->named_sound_vector.size(); j++)
+		for (int i = 0; i < sound_button->named_sound_vector.size(); i++)
+		if (EButtonGroup::sound_list_group->target_sound_button->named_sound_vector[j] == sound_button->named_sound_vector[i])
+		{
+			EButtonGroup::sound_list_group->target_sound_button->named_sound_vector.erase
+			(
+				EButtonGroup::sound_list_group->target_sound_button->named_sound_vector.begin() + j
+			);
+
+			j--;
+
+			sound_button->named_sound_vector.erase(sound_button->named_sound_vector.begin() + i);
+			break;
+		}
+	}
+
+	if (EButtonGroup::sound_list_group->target_sound_button->named_sound_vector.empty())
+	{
+		EButtonGroup::sound_list_group->target_sound_button->parent_filter_block->custom_sound_suppressor_bool = false;
+	}
+
+	EButtonGroup::sound_list_group->set_colors_to_registered_buttons();
+	EButtonGroup::sound_list_group->need_refresh = true;
+
 }
 
 //void EDataActionCollection::action_select_loot_filter_pattern(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -7066,9 +7143,10 @@ EWindowMain::EWindowMain()
 		EWindowMain::load_custom_sound_list();
 
 		EButtonGroupSoundList*
-			main_sound_group = new EButtonGroupSoundList(new ERegionGabarite(512.0f, 256.0f, 1020.0f, 512.0f));
+		main_sound_group = new EButtonGroupSoundList(new ERegionGabarite(512.0f, 256.0f, 1020.0f, 512.0f));
 		main_sound_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DARKEN, bgroup_with_slider);
 		main_sound_group->button_group_is_active = false;
+		main_sound_group->auto_superfocused = true;
 
 		EButtonGroup::sound_list_group = main_sound_group;
 		EButtonGroup::sound_list_group->action_on_select_for_button = &EDataActionCollection::action_select_this_sound_for_target_button;
@@ -7091,16 +7169,39 @@ EWindowMain::EWindowMain()
 			EGUIStyle::active_style
 		)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 		main_sound_group->add_caption_by_localistation_key("window_header_select_sound");
-		///////////////		SOUNDS LIST PART		///////////////
+		///////////////		MAIN SOUNDS LIST PART		///////////////
 		EButtonGroup* sound_list_part = sound_list_workspace_part->add_group
 		(
 			EButtonGroup::create_default_button_group
 			(
 				new ERegionGabarite(1.0f, 1.0f),
 				EGUIStyle::active_style
-			)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
+			)->set_parameters(ChildAlignMode::ALIGN_HORIZONTAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
 		);
 		//
+				///////////////		LEFT SOUNDS LIST PART		///////////////
+				EButtonGroup* left_sound_list_part = sound_list_part->add_group
+				(
+					EButtonGroup::create_default_button_group
+					(
+						new ERegionGabarite(1.0f, 1.0f),
+						EGUIStyle::active_style
+					)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize)
+				);
+
+				left_sound_list_part->button_size_x_override = 300.0f;
+				//
+
+				///////////////		RIGHT SELECTED SOUNDS LIST PART		///////////////
+				EButtonGroup* right_selected_sound_list_part = sound_list_part->add_group
+				(
+					EButtonGroup::create_default_button_group
+					(
+						new ERegionGabarite(220.0f, 1.0f),
+						EGUIStyle::active_style
+					)->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize)
+				);
+				//
 
 		///////////////		SEARCH INPUT PART		///////////////
 		EButtonGroup* search_input_part = sound_list_workspace_part->add_group
@@ -7138,7 +7239,8 @@ EWindowMain::EWindowMain()
 
 
 		/// set data parameters
-		main_sound_group->part_with_list = sound_list_part;
+		main_sound_group->part_with_registered_sound	= left_sound_list_part;
+		main_sound_group->part_with_selected_sound		= right_selected_sound_list_part;
 
 
 
@@ -13409,6 +13511,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		//sound_button->force_field_up = 4.0f;
 		sound_button->can_be_stretched = true;
 
+		sound_button->parent_filter_block = whole_filter_block_group;
+
 		sound_button->create_clickable_region_witch_sprtite_layer_and_icon
 		(
 			new ERegionGabarite(20.0f, 20.0f),
@@ -13571,6 +13675,8 @@ EButtonGroupFilterBlock* EWindowMain::create_filter_block(EButtonGroup* _target_
 		sound_button->new_line_method = NewLineMethod::FORBIDDEN;
 		sound_button->add_default_description_by_key("description_user_sound");
 		sound_button->force_field_left = 4.0f;
+
+		sound_button->parent_filter_block = whole_filter_block_group;
 
 		sound_button->create_clickable_region_witch_sprtite_layer_and_icon
 		(
@@ -16059,28 +16165,64 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 									//parameter order - name
 									if (data_part == 2)
 									{
-										ENamedSound* matched_named_sound = nullptr;
+										ENamedSound*
+										matched_named_sound = nullptr;
+
+
+									
+
 
 										if (buffer_text != "none")
 										{
-											for (ENamedSound* named_sound : EWindowMain::custom_sound_list)
-												if (named_sound->localisation_text.base_name == buffer_text)
-												{
-													//EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
+											std::string
+											sound_name_buffer = "";
 
-													matched_named_sound = named_sound;
+											std::vector<std::string>
+											sound_name_vector;
+
+											for (int z = 0; z < buffer_text.length(); z++)
+											{
+												char
+												ch = buffer_text[z];
+
+												if (ch != ';')
+												{
+													sound_name_buffer += ch;
 												}
 
-											if
+												if
+												(
+													(ch == ';')
+													||
+													(z >= buffer_text.length() - 1)
+												)
+												{
+													sound_name_vector.push_back(sound_name_buffer);
+													sound_name_buffer = "";
+												}
+											}
+
+												if
 												(
 													(jc_filter_block != nullptr)
 													&&
 													(jc_filter_block->pointer_to_custom_sound_button != nullptr)
-													)
-											{
-												jc_filter_block->pointer_to_custom_sound_button->stored_named_sound = matched_named_sound;
-												if (!comment_mode) { jc_filter_block->custom_sound_suppressor_bool = true; }
-											}
+												)
+												{
+													
+													for (std::string sound_names : sound_name_vector)
+													for (ENamedSound* named_sound : EWindowMain::custom_sound_list)
+													if (named_sound->localisation_text.base_name == sound_names)
+													{
+														//EInputCore::logger_param("matched sound", named_sound->localisation_text.base_name);
+														//matched_named_sound = named_sound;
+														jc_filter_block->pointer_to_custom_sound_button->named_sound_vector.push_back(named_sound);
+															
+														if (!comment_mode) { jc_filter_block->custom_sound_suppressor_bool = true; }
+													}
+												}
+
+												
 										}
 										else//disable sound
 										{
@@ -16134,7 +16276,15 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 
 												if (jc_filter_block != nullptr)
 												{
-													jc_filter_block->pointer_to_game_sound_button->stored_named_sound = matched_named_sound;
+													if (jc_filter_block->pointer_to_game_sound_button->named_sound_vector.empty())
+													{
+														jc_filter_block->pointer_to_game_sound_button->named_sound_vector.push_back(matched_named_sound);
+													}
+													else
+													{
+														jc_filter_block->pointer_to_game_sound_button->named_sound_vector[0] = matched_named_sound;
+													}
+
 													if (!comment_mode) { jc_filter_block->game_sound_suppressor_bool = true; }
 
 													jc_filter_block->pointer_to_forcibly_disable_ingame_sound_variant_button->select_variant(0);
@@ -16495,7 +16645,7 @@ void EWindowMain::register_pattern_folder(std::string _localisation_key, std::st
 void EWindowMain::register_filter_rule_folder(std::string _named_id, std::string _tag, std::string _localisation_key, std::string _icon_path)
 {
 	EFilterRule*
-		jc_filter_rule = new EFilterRule();
+	jc_filter_rule = new EFilterRule();
 	jc_filter_rule->is_folder = true;
 	jc_filter_rule->named_id = _named_id;
 
@@ -24751,11 +24901,11 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 		{
 			//		USER SOUND
 			if
-				(
-					(whole_block_data->pointer_to_custom_sound_button->stored_named_sound != nullptr)
-					||
-					(whole_block_data->pointer_to_forcibly_disable_user_sound_variant_button->selected_variant == 1)//forcibly disabled sound
-					)
+			(
+				(!whole_block_data->pointer_to_custom_sound_button->named_sound_vector.empty())
+				||
+				(whole_block_data->pointer_to_forcibly_disable_user_sound_variant_button->selected_variant == 1)//forcibly disabled sound
+			)
 			{
 				result_string += '\t';
 				if
@@ -24783,7 +24933,25 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 
 				if (whole_block_data->pointer_to_forcibly_disable_user_sound_variant_button->selected_variant == 0)
 				{
-					result_string += " \"" + whole_block_data->pointer_to_custom_sound_button->stored_named_sound->localisation_text.base_name + '"';
+					int
+					id = 0;
+
+					//open bracket
+					result_string += " \"";
+
+					//insert every name of NamedSound
+					for (ENamedSound* named_sound : whole_block_data->pointer_to_custom_sound_button->named_sound_vector)
+					{
+						if (id > 0) { result_string += ";"; }
+						
+						result_string += named_sound->localisation_text.base_name;
+
+						id++;
+					}
+
+					//close bracket
+					result_string += '"';
+
 					result_string += ' ' + std::to_string(int(round(whole_block_data->user_sound_volume_value * 100.0f)));
 				}
 				else
@@ -24801,11 +24969,11 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 
 			//		INGAME SOUNDS
 			if
-				(
-					(whole_block_data->pointer_to_game_sound_button->stored_named_sound != nullptr)
-					||
-					(whole_block_data->pointer_to_forcibly_disable_ingame_sound_variant_button->selected_variant == 1)//forcibly disabled sound
-					)
+			(
+				(!whole_block_data->pointer_to_game_sound_button->named_sound_vector.empty())
+				||
+				(whole_block_data->pointer_to_forcibly_disable_ingame_sound_variant_button->selected_variant == 1)//forcibly disabled sound
+			)
 			{
 				result_string += '\t';
 				if
@@ -24823,12 +24991,12 @@ std::string generate_filter_block_text(EButtonGroup* _button_group, int _save_mo
 				//non forcibly disabled sound
 				if (whole_block_data->pointer_to_forcibly_disable_ingame_sound_variant_button->selected_variant == 0)
 				{
-					if (whole_block_data->pointer_to_game_sound_button->stored_named_sound != nullptr)
+					if (whole_block_data->pointer_to_game_sound_button->named_sound_vector[0] != nullptr)
 					{
 						if (whole_block_data->pointer_to_positional_variant_button->selected_variant == 1) { result_string += "Positional"; }
 
 
-						result_string += ' ' + whole_block_data->pointer_to_game_sound_button->stored_named_sound->localisation_text.base_name;
+						result_string += ' ' + whole_block_data->pointer_to_game_sound_button->named_sound_vector[0]->localisation_text.base_name;
 						result_string += ' ' + std::to_string(int(round(whole_block_data->ingame_sound_volume_value * 100.0f)));
 
 					}
@@ -25622,20 +25790,37 @@ EButtonGroupFilterBlockAsText* EButtonGroupFilterBlockAsText::create_filter_bloc
 
 void EButtonGroupSoundList::refresh_sound_list()
 {
-	part_with_list->remove_all_workspace_buttons();
+	part_with_selected_sound->button_group_is_active = (stored_sound_type_enum == NSW_StoredSoundsType::CUSTOM_USER_SOUND);
+
+	part_with_registered_sound->remove_all_workspace_buttons();
+	part_with_selected_sound->remove_all_workspace_buttons();
 
 	if (pointer_to_sound_list != nullptr)
 	{
+		if (stored_sound_type_enum == NSW_StoredSoundsType::CUSTOM_USER_SOUND)
+		{
+			EntityButtonFilterSound*
+			selected_sound_button;
+
+			for (ENamedSound* n_sound : target_sound_button->named_sound_vector)
+			{
+				EButtonGroup::sound_list_group->add_selected_button_to_right_side(n_sound);
+			}
+		}
+
 		for (ENamedSound* n_sound : *pointer_to_sound_list)
 		{
 			EntityButtonFilterSound* sound_button = new EntityButtonFilterSound();
 			sound_button->make_default_button_with_unedible_text
 			(
-				new ERegionGabarite(325.0f, 32.0f),
-				part_with_list,
+				new ERegionGabarite(300.0f, 32.0f),
+				part_with_registered_sound,
 				&EDataActionCollection::action_invoke_button_action_in_sound_group,
 				n_sound->localisation_text
 			);
+
+			sound_button->can_be_stretched = true;
+			sound_button->max_stretch_factor = 1.1f;
 
 			sound_button->create_clickable_region_witch_sprtite_layer_and_icon
 			(
@@ -25646,17 +25831,87 @@ void EButtonGroupSoundList::refresh_sound_list()
 
 			sound_button->main_text_area->localisation_text = n_sound->localisation_text;
 			sound_button->full_path = n_sound->full_path;
-			sound_button->stored_named_sound = n_sound;
+
+			sound_button->parent_filter_block = EButtonGroup::sound_list_group->target_sound_button->parent_filter_block;
+
+			if (sound_button->named_sound_vector.empty())
+			{
+				sound_button->named_sound_vector.push_back(n_sound);
+			}
+			else
+			{
+				sound_button->named_sound_vector[0] = n_sound;
+			}
+
 			sound_button->target_sound_group = EButtonGroup::sound_list_group;
 
 			//Entity::get_last_clickable_area(sound_button)->actions_on_right_click_list.push_back(&EDataActionCollection::action_play_attached_sound);
 
-			part_with_list->add_button_to_working_group(sound_button);
+			part_with_registered_sound->add_button_to_working_group(sound_button);
 		}
 	}
 	else
 	{
 		EInputCore::logger_simple_error("pointer to sound list is NULL!");
+	}
+
+	set_colors_to_registered_buttons();
+}
+
+void EButtonGroupSoundList::add_selected_button_to_right_side(ENamedSound* _named_sound)
+{
+	EntityButtonFilterSound*
+	selected_sound_button;
+
+	selected_sound_button = new EntityButtonFilterSound();
+
+	selected_sound_button->make_default_button_with_unedible_text
+	(
+		new ERegionGabarite(200.0f, 32.0f),
+		part_with_registered_sound,
+		&EDataActionCollection::action_invoke_button_action_in_sound_group,
+		_named_sound->localisation_text
+	);
+	selected_sound_button->can_be_stretched = true;
+
+	selected_sound_button->create_clickable_region_witch_sprtite_layer_and_icon
+	(
+		new ERegionGabarite(32.0f, 32.0f),
+		NS_EGraphicCore::load_from_textures_folder("buttons/play_button"),
+		&EDataActionCollection::action_play_attached_sound
+	);
+
+	selected_sound_button->named_sound_vector.push_back(_named_sound);
+	selected_sound_button->main_text_area->localisation_text = _named_sound->localisation_text;
+	selected_sound_button->full_path = _named_sound->full_path;
+
+	selected_sound_button->parent_filter_block = EButtonGroup::sound_list_group->target_sound_button->parent_filter_block;
+
+	selected_sound_button->add_close_circle(EDataActionCollection::action_remove_this_random_user_sound);
+
+	part_with_selected_sound->add_button_to_working_group(selected_sound_button);
+
+	EButtonGroup::sound_list_group->target_sound_button->parent_filter_block->custom_sound_suppressor_bool = true;
+	EButtonGroup::sound_list_group->need_refresh = true;
+	set_colors_to_registered_buttons();
+}
+
+void EButtonGroupSoundList::set_colors_to_registered_buttons()
+{
+	if (EButtonGroup::sound_list_group->target_sound_button != nullptr)
+	{
+		for (EntityButton* but : EButtonGroup::sound_list_group->part_with_registered_sound->workspace_button_list)
+		{
+			EntityButtonFilterSound*
+			registered_sound_button = static_cast<EntityButtonFilterSound*>(but);
+			registered_sound_button->main_text_area->set_color(1.0f, 0.9f, 0.8f, 1.0f);
+
+			for (ENamedSound* clicked_named_sound : EButtonGroup::sound_list_group->target_sound_button->named_sound_vector)
+				if (clicked_named_sound == registered_sound_button->named_sound_vector.front())
+				{
+					registered_sound_button->main_text_area->set_color(0.6f, 1.0f, 0.3f, 1.0f);
+				}
+		}
 	}
 }
 
@@ -25674,6 +25929,8 @@ EntityButtonFilterSound::~EntityButtonFilterSound()
 		EInputCore::logger_simple_info("deleting EntityButtonVariantRouterForFilterBlock");
 	}
 }
+
+
 
 EntityButtonForListedSegment::EntityButtonForListedSegment()
 {

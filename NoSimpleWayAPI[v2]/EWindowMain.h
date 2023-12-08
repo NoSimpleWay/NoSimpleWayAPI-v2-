@@ -223,10 +223,13 @@ public:
 class EntityButtonFilterSound : public EntityButtonForFilterBlock
 {
 public:
-	ENamedSound* stored_named_sound;
+	//ENamedSound*				stored_named_sound;
+	std::vector <ENamedSound*>	named_sound_vector;
 	//irrklang::ISoundSource* target_sound;
 	std::string				full_path;
 	EButtonGroupSoundList* target_sound_group;
+
+	EntityButtonFilterSound* master_button_pointer;
 	~EntityButtonFilterSound();
 
 
@@ -556,10 +559,17 @@ class EButtonGroupFilterBlockAsText : public EButtonGroup
 	static EButtonGroupFilterBlockAsText* create_filter_block_as_text_group(EButtonGroupFilterBlock* _target_filter_block);
 };
 
+enum class NSW_StoredSoundsType
+{
+	INGAME_SOUNDS,
+	CUSTOM_USER_SOUND
+};
+
 class EButtonGroupSoundList : public EButtonGroup
 {
 public:
-	EButtonGroup* part_with_list;
+	EButtonGroup* part_with_registered_sound;
+	EButtonGroup* part_with_selected_sound;
 	ETextArea* input_field;
 
 	EButtonGroupSoundList(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
@@ -567,9 +577,16 @@ public:
 	std::vector<ENamedSound*>* pointer_to_sound_list;
 
 	data_action_pointer			action_on_select_for_button;
-	EntityButtonFilterSound* target_sound_button;
+	EntityButtonFilterSound*	target_sound_button;
+
+	NSW_StoredSoundsType
+	stored_sound_type_enum = NSW_StoredSoundsType::INGAME_SOUNDS;
+
+
 	//EntityButton
 	void refresh_sound_list();
+	void add_selected_button_to_right_side(ENamedSound* _named_sound);
+	void set_colors_to_registered_buttons();
 };
 
 class EButtonGroupDataEntity : public EButtonGroup
@@ -952,6 +969,23 @@ namespace EDataActionCollection
 	void action_change_selection_of_tag_configurer(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
+
+	void action_remove_this_random_user_sound(Entity* _entity, ECustomData* _custom_data, float _d);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	//type text
 	void action_type_search_filter_block_text(ETextArea* _text_area);
 	void action_refresh_loot_simulator_when_type(ETextArea* _text_area);
@@ -967,6 +1001,10 @@ namespace EDataActionCollection
 
 
 	//void 
+
+
+
+
 
 	//close button grup
 	void action_on_closing_loot_versions_window(EButtonGroup* _group);

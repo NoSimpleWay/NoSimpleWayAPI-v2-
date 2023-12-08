@@ -2,7 +2,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Vaal Aspect"
-	[tag]"name RU"		[value]"РђСЃРїРµРєС‚ Р’Р°Р°Р»"
+	[tag]"name RU"		[value]"Аспект Ваал"
 	
 	[tag]"base class"	[value]"Item Piece"
 
@@ -15,7 +15,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"name EN"		[value]"Ultimatum Aspect"
-	[tag]"name RU"		[value]"РђСЃРїРµРєС‚ РЈР»СЊС‚РёРјР°С‚СѓРјР°"
+	[tag]"name RU"		[value]"Аспект Ультиматума"
 	
 	[tag]"base class"	[value]"Item Piece"
 
