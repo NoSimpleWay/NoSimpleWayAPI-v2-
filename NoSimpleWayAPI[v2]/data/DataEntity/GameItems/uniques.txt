@@ -748,9 +748,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 		
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -1204,9 +1207,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
 	
 	[tag]"worth"		[value]"Very Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -1223,10 +1229,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Small Exarch"
+	[tag]"item tag"		[value]"Loot source: Small Eater"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -1243,10 +1252,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
-	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
 	
 	[tag]"worth"		[value]"Very Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -1986,9 +1996,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"1"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Atziri"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -3388,7 +3400,8 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Atziri drop"
-	[tag]"item tag"		[value]"Loot source: Uber Atziri"
+	[tag]"item tag"		[value]"Loot source: Atziri"
+	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
@@ -4411,9 +4424,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
 	
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -6752,7 +6768,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"One Handed Sword"	
 
 	[tag]"item width"	[value]"2"
-	[tag]"item height"	[value]"3"
+	[tag]"item height"	[value]"3"	
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
@@ -7602,11 +7618,12 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Rare"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -8025,11 +8042,12 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Rare"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	
 	
@@ -10160,7 +10178,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -10532,6 +10552,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Synthesis"
+	[tag]"item tag"		[value]"Loot source: Cortex"
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -11262,7 +11283,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -11925,6 +11949,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Uber Exarch"
 	
@@ -12919,7 +12944,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Small Eater"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -12939,7 +12967,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Small Eater"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -13149,7 +13180,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Cortex"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -14408,6 +14441,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 	
@@ -16954,8 +16988,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Uber Atziri"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -17065,7 +17101,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Atziri"
 	
 	[tag]"worth"		[value]"Common"
 	
@@ -17672,6 +17710,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Synthesis drop"
 	[tag]"item tag"		[value]"Loot source: Cortex"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -17788,7 +17827,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Uber Cortex"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -18010,7 +18052,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -18029,10 +18074,14 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Eater"
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -18471,7 +18520,10 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -18703,9 +18755,11 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"worth"		[value]"Moderate"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
+	
+	[tag]"worth"		[value]"Rare"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"

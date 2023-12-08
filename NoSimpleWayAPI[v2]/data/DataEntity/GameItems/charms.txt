@@ -1,0 +1,53 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ursine Charm"
+	[tag]"name RU"		[value]"Медвежий оберег"
+
+	[tag]"icon path"	[value]"UrsineCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Lupine Charm"
+	[tag]"name RU"		[value]"Волчий оберег"
+
+	[tag]"icon path"	[value]"LupineCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Corvine Charm"
+	[tag]"name RU"		[value]"Вороний оберег"
+
+	[tag]"icon path"	[value]"CorvineCharm"
+	[tag]"base class"	[value]"Charms"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"

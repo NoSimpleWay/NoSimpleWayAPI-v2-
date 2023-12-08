@@ -21,9 +21,13 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
-	
-	[tag]"item tag"		[value]"Loot source: Sirus"
+
 	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
+	[tag]"item tag"		[value]"Loot source: Baran"
+	[tag]"item tag"		[value]"Loot source: Drox"
+	[tag]"item tag"		[value]"Loot source: Veritania"
+	[tag]"item tag"		[value]"Loot source: Sirus"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -507,6 +511,10 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
+	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -538,6 +546,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Small Eater"
+	[tag]"item tag"		[value]"Boss drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1327,6 +1339,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"League: Ritual"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Veritania"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1513,6 +1528,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Loot source: Chimera"
+	[tag]"item tag"		[value]"Loot source: Minotaur"
+	[tag]"item tag"		[value]"Loot source: Hydra"
+	[tag]"item tag"		[value]"Loot source: Phoenix"
+	[tag]"item tag"		[value]"Boss drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1790,6 +1811,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Expensive"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Baran"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -4149,6 +4173,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Drox"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -4820,6 +4847,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Atziri"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5015,6 +5045,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
+	[tag]"item tag"		[value]"Loot source: Baran"
+	[tag]"item tag"		[value]"Loot source: Drox"
+	[tag]"item tag"		[value]"Loot source: Veritania"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5092,6 +5128,15 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
+	[tag]"item tag"		[value]"Loot source: Baran"
+	[tag]"item tag"		[value]"Loot source: Drox"
+	[tag]"item tag"		[value]"Loot source: Veritania"
+	[tag]"item tag"		[value]"Loot source: Sirus"
+	[tag]"item tag"		[value]"Loot source: Cortex"
+	
 	[tag]"worth"		[value]"Moderate"
 
 	[tag]"item width"	[value]"1"
@@ -5211,6 +5256,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
 	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
+	[tag]"item tag"		[value]"Loot source: Baran"
+	[tag]"item tag"		[value]"Loot source: Drox"
+	[tag]"item tag"		[value]"Loot source: Veritania"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5756,6 +5807,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
+	[tag]"item tag"		[value]"Loot source: Baran"
+	[tag]"item tag"		[value]"Loot source: Drox"
+	[tag]"item tag"		[value]"Loot source: Veritania"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -5843,6 +5900,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"icon path"	[value]"Card"
 	[tag]"base class"	[value]"Divination Cards"
+	
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Cortex"
+	
 	[tag]"worth"		[value]"Rare"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
@@ -5975,6 +6037,74 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Moderate"
 	
 	[tag]"item tag"		[value]"Introduced: Crucible league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"I See Brothers"
+	[tag]"name RU"		[value]"Я вижу братьев"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Assassin's Gift"
+	[tag]"name RU"		[value]"Подарок убийцы"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eldritch Perfection"
+	[tag]"name RU"		[value]"Мистический идеал"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Who Asked"
+	[tag]"name RU"		[value]"Просители"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Rare"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

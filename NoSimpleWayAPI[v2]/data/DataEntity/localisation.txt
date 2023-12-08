@@ -867,6 +867,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"description_loot_filter_errors"
 	[tag]"name EN"		[value]"This loot filter loaded with errors:"
 	[tag]"name RU"		[value]"Этот лутфильтр загружен с ошибками"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"description_loot_filter_no_errors"
+	[tag]"name EN"		[value]"You loot filter have no errors."
+	[tag]"name RU"		[value]"Этот лут фильтр загружен без ошибок."
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -895,6 +902,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"loot_pattern_folder_ancestors"
 	[tag]"name EN"		[value]"Category:\nTrial of the Ancestors"
 	[tag]"name RU"		[value]"Категория:\nИспытание предков"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"loot_pattern_folder_affliction"
+	[tag]"name EN"		[value]"Category:\nAffliction"
+	[tag]"name RU"		[value]"Категория:\nЗаклятье"
 	
 	
 	
@@ -1044,9 +1057,23 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"rule_folder_currency"
+	[tag]"name EN"		[value]"Category:\nCurrencies"
+	[tag]"name RU"		[value]"Категория:\nВалюта"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"rule_folder_heist_tools"
 	[tag]"name EN"		[value]"Category:\nHeist tools"
 	[tag]"name RU"		[value]"Категория:\nИнструменты кражи"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_heist_items"
+	[tag]"name EN"		[value]"Category:\nHeist items"
+	[tag]"name RU"		[value]"Категория:\Предметы кражи"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -1354,6 +1381,13 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
+	[tag]"key"			[value]"button_text_error_list"
+	[tag]"name EN"		[value]"Error list"
+	[tag]"name RU"		[value]"Список ошибок"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
 	[tag]"key"			[value]"button_text_world_parameters"
 	[tag]"name EN"		[value]"World parameters"
 	[tag]"name RU"		[value]"Параметры окружения"
@@ -1500,6 +1534,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"attribute_description_gem_have_alternate_qualitry"
 	[tag]"name EN"		[value]"Condition: gem have any non-default quality (Anomalous, Divergent, Phantasmal)"
 	[tag]"name RU"		[value]"Условие: камень имеет любое нестандартное качество (Аномальное, Искривлённое, Фантомное)"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"attribute_description_gem_have_transfigured_quality"
+	[tag]"name EN"		[value]"Condition: gem transfigured.\nTransfigured gems can be obtained from labyrinth gem workbench"
+	[tag]"name RU"		[value]"Условие: камень преобразован.\nПреображённые камни можно получить при помощи верстака лабиринта"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -1821,6 +1862,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"rule_folder_ancestral"
 	[tag]"name EN"		[value]"Trial of the ancestors:\nnew items"
 	[tag]"name RU"		[value]"Испытание предков:\nновые предметы"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"rule_folder_affliction"
+	[tag]"name EN"		[value]"Affliction:\nnew items"
+	[tag]"name RU"		[value]"Заклятье:\nновые предметы"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
@@ -2020,15 +2067,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"version_continue_forcibly_enable"
-	[tag]"name EN"		[value]"Continue: Forcibly  enable"
-	[tag]"name RU"		[value]"Продолжить: Насильно включить"
+	[tag]"name EN"		[value]"Continue: Enable"
+	[tag]"name RU"		[value]"Продолжить: Включить"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"version_continue_forcibly_disable"
-	[tag]"name EN"		[value]"Continue: Forcibly  disable"
-	[tag]"name RU"		[value]"Продолжить: Насильно выключить"
+	[tag]"name EN"		[value]"Continue: Disable"
+	[tag]"name RU"		[value]"Продолжить: Выключить"
 	
 	
 	
@@ -2047,15 +2094,15 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"version_show_hide_forcibly_enable"
-	[tag]"name EN"		[value]"Show/hide: Forcibly  enable"
-	[tag]"name RU"		[value]"Показать/скрыть: Насильно включить"
+	[tag]"name EN"		[value]"Show/hide: Enable"
+	[tag]"name RU"		[value]"Показать/скрыть: Включить"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"version_show_hide_forcibly_disable"
-	[tag]"name EN"		[value]"Show/hide: Forcibly disable"
-	[tag]"name RU"		[value]"Показать/скрыть: Насильно выключить"
+	[tag]"name EN"		[value]"Show/hide: Disable"
+	[tag]"name RU"		[value]"Показать/скрыть: Выключить"
 	
 	
 	
@@ -2781,12 +2828,113 @@ ADD_NEW_DATA_ENTITY
 	[tag]"key"			[value]"tag_map_vault_keys"
 	[tag]"name EN"		[value]"Vault keys"
 	[tag]"name RU"		[value]"Ключи реликвария"
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Localisation"
 	
 	[tag]"key"			[value]"tag_map_item_piece"
 	[tag]"name EN"		[value]"Item piece"
 	[tag]"name RU"		[value]"Фрагмент предмета"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_attack"
+	[tag]"name EN"		[value]"Attack"
+	[tag]"name RU"		[value]"Атаки"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_caster"
+	[tag]"name EN"		[value]"Caster"
+	[tag]"name RU"		[value]"Кастер"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_elemental"
+	[tag]"name EN"		[value]"Elemental"
+	[tag]"name RU"		[value]"Стихии"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_physical"
+	[tag]"name EN"		[value]"Physical"
+	[tag]"name RU"		[value]"Физический"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_fire"
+	[tag]"name EN"		[value]"Fire"
+	[tag]"name RU"		[value]"Огонь"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_cold"
+	[tag]"name EN"		[value]"Cold"
+	[tag]"name RU"		[value]"Холод"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_lightning"
+	[tag]"name EN"		[value]"Lightning"
+	[tag]"name RU"		[value]"Молния"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_chaos"
+	[tag]"name EN"		[value]"Chaos"
+	[tag]"name RU"		[value]"Хаос"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_attribute"
+	[tag]"name EN"		[value]"Attributes"
+	[tag]"name RU"		[value]"Атрибуты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_speed"
+	[tag]"name EN"		[value]"Speed"
+	[tag]"name RU"		[value]"Скорость"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_critical"
+	[tag]"name EN"		[value]"Critical"
+	[tag]"name RU"		[value]"Криты"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_resistance"
+	[tag]"name EN"		[value]"Resistances"
+	[tag]"name RU"		[value]"Сопротивления"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_minions"
+	[tag]"name EN"		[value]"Minions"
+	[tag]"name RU"		[value]"Приспешники"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"tag_gem"
+	[tag]"name EN"		[value]"Gems"
+	[tag]"name RU"		[value]"Камни"
 	
 	
 	

@@ -598,7 +598,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Boss drop"
 	
 	
 	[tag]"item tag"		[value]"League: Ritual"
@@ -652,9 +652,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Boss loot"
 	[tag]"item tag"		[value]"Guardian orb"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
 	
 	[tag]"worth"		[value]"Expensive"
 	
@@ -675,10 +677,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Boss loot"
 	[tag]"item tag"		[value]"Guardian orb"
 	[tag]"worth"		[value]"Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Veritania"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -697,10 +701,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Boss loot"
 	[tag]"item tag"		[value]"Guardian orb"
 	[tag]"worth"		[value]"Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Drox"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -721,9 +727,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Expensive"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Boss loot"
 	[tag]"item tag"		[value]"Guardian orb"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Baran"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.1"
@@ -1512,7 +1520,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -3808,6 +3818,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
+	
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
@@ -3831,6 +3845,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
@@ -3853,6 +3869,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -3880,6 +3898,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -3899,6 +3919,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -3923,6 +3945,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
@@ -3945,6 +3970,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -3969,6 +3996,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
@@ -3991,6 +4020,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -4015,6 +4046,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
@@ -4037,6 +4070,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -4061,6 +4097,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
@@ -4083,6 +4122,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -4107,6 +4149,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
@@ -4130,6 +4174,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
 	
+	[tag]"item tag"		[value]"Returned if Affliction"
+	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
 	[tag]"max stack size"	[value]"10"
@@ -4152,6 +4198,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Trial of the Ancestors league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Omen"
+	
+	[tag]"item tag"		[value]"Returned if Affliction"
 	
 	[tag]"drop level"	[value]"1"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -4180,7 +4228,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"League: Ritual"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Boss drop"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"

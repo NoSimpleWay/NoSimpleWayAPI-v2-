@@ -1,0 +1,1677 @@
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Hydra"
+	[tag]"name RU"		[value]"Несовершенная гидра"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hydra"
+	[tag]"name RU"		[value]"Гидра"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Hydra"
+	[tag]"name RU"		[value]"Совершенная гидра"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Frozen Cannibal"
+	[tag]"name RU"		[value]"Несовершенный мёрзлый людоед"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Frozen Cannibal"
+	[tag]"name RU"		[value]"Мёрзлый людоед"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Frozen Cannibal"
+	[tag]"name RU"		[value]"Совершенный мёрзлый людоед"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Fiery Cannibal"
+	[tag]"name RU"		[value]"Несовершенный огненный людоед"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fiery Cannibal"
+	[tag]"name RU"		[value]"Огненный людоед"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Fiery Cannibal"
+	[tag]"name RU"		[value]"Совершенный огненный людоед"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Dark Marionette"
+	[tag]"name RU"		[value]"Несовершенная тёмная марионетка"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dark Marionette"
+	[tag]"name RU"		[value]"Тёмная марионетка"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dark Marionette"
+	[tag]"name RU"		[value]"Совершенная тёмная марионетка"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Naval Officer"
+	[tag]"name RU"		[value]"Несовершенный морской офицер"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Naval Officer"
+	[tag]"name RU"		[value]"Морской офицер"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Naval Officer"
+	[tag]"name RU"		[value]"Совершенный морской офицер"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Dancing Sword"
+	[tag]"name RU"		[value]"Несовершенный танцующий меч"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dancing Sword"
+	[tag]"name RU"		[value]"Танцующий меч"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Dancing Sword"
+	[tag]"name RU"		[value]"Совершенный танцующий меч"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Needle Horror"
+	[tag]"name RU"		[value]"Несовершенный игольчатый ужас"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Needle Horror"
+	[tag]"name RU"		[value]"Игольчатый ужас"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Needle Horror"
+	[tag]"name RU"		[value]"Совершенный игольчатый ужас"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Serpent Warrior"
+	[tag]"name RU"		[value]"Несовершенный змеевоин"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Serpent Warrior"
+	[tag]"name RU"		[value]"Змеевоин"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Serpent Warrior"
+	[tag]"name RU"		[value]"Совершенный змеевоин"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Pain Artist"
+	[tag]"name RU"		[value]"Несовершенный художник боли"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Pain Artist"
+	[tag]"name RU"		[value]"Художник боли"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Pain Artist"
+	[tag]"name RU"		[value]"Совершенный художник боли"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Sawblade Horror"
+	[tag]"name RU"		[value]"Совершенный художник боли"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sawblade Horror"
+	[tag]"name RU"		[value]"Пилорукий ужас"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Sawblade Horror"
+	[tag]"name RU"		[value]"Совершенный пилорукий ужас"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Blood Demon"
+	[tag]"name RU"		[value]"Несовершенный кровавый демон"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blood Demon"
+	[tag]"name RU"		[value]"Кровавый демон"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Blood Demon"
+	[tag]"name RU"		[value]"Совершенный кровавый демон"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Slashing Horror"
+	[tag]"name RU"		[value]"Несовершенный секущий ужас"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Slashing Horror"
+	[tag]"name RU"		[value]"Секущий ужас"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Slashing Horror"
+	[tag]"name RU"		[value]"Совершенный секущий ужас"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Druidic Alchemist"
+	[tag]"name RU"		[value]"Несовершенный друидский алхимик"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Druidic Alchemist"
+	[tag]"name RU"		[value]"Друидский алхимик"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Druidic Alchemist"
+	[tag]"name RU"		[value]"Совершенный друидский алхимик"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Blasphemer"
+	[tag]"name RU"		[value]"Несовершенный богохульник"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blasphemer"
+	[tag]"name RU"		[value]"Богохульник"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Blasphemer"
+	[tag]"name RU"		[value]"Совершенный богохульник"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Judgemental Spirit"
+	[tag]"name RU"		[value]"Несовершенный Дух суда"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Judgemental Spirit"
+	[tag]"name RU"		[value]"Дух суда"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Judgemental Spirit"
+	[tag]"name RU"		[value]"Совершенный Дух суда"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Primal Thunderbird"
+	[tag]"name RU"		[value]"Несовершенная первобытная громовая птица"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Primal Thunderbird"
+	[tag]"name RU"		[value]"Первобытная громовая птица"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Primal Thunderbird"
+	[tag]"name RU"		[value]"Совершенная первобытная громовая птица"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Spirit of Fortune"
+	[tag]"name RU"		[value]"Несовершенный Дух удачи"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Spirit of Fortune"
+	[tag]"name RU"		[value]"Дух удачи"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Spirit of Fortune"
+	[tag]"name RU"		[value]"Совершенный Дух удачи"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Primal Demiurge"
+	[tag]"name RU"		[value]"Несовершенный первобытный демиург"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Primal Demiurge"
+	[tag]"name RU"		[value]"Первобытный демиург"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Primal Demiurge"
+	[tag]"name RU"		[value]"Совершенный первобытный демиург"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Runic Skeleton"
+	[tag]"name RU"		[value]"Несовершенный рунический скелет"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Runic Skeleton"
+	[tag]"name RU"		[value]"Рунический скелет"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Runic Skeleton"
+	[tag]"name RU"		[value]"Совершенный рунический скелет"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Warlord"
+	[tag]"name RU"		[value]"Несовершенный вождь"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Warlord"
+	[tag]"name RU"		[value]"Вождь"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Warlord"
+	[tag]"name RU"		[value]"Совершенный вождь"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Dark Reaper"
+	[tag]"name RU"		[value]"Несовершенный тёмный жнец"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Dark Reaper"
+	[tag]"name RU"		[value]"Тёмный жнец"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Dark Reaper"
+	[tag]"name RU"		[value]"Совершенный тёмный жнец"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Hulking Miscreation"
+	[tag]"name RU"		[value]"Несовершенный сотворённый увалень"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Hulking Miscreation"
+	[tag]"name RU"		[value]"Сотворённый увалень"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Hulking Miscreation"
+	[tag]"name RU"		[value]"Совершенный сотворённый увалень"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Sanguimancer Demon"
+	[tag]"name RU"		[value]"Несовершенный демон-кровомант"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Sanguimancer Demon"
+	[tag]"name RU"		[value]"Демон-кровомант"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Sanguimancer Demon"
+	[tag]"name RU"		[value]"Совершенный демон-кровомант"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Spider Matriarch"
+	[tag]"name RU"		[value]"Несовершенная паучиха-матриарх"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Spider Matriarch"
+	[tag]"name RU"		[value]"Паучиха-матриарх"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Spider Matriarch"
+	[tag]"name RU"		[value]"Совершенная паучиха-матриарх"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Half-remembered Goliath"
+	[tag]"name RU"		[value]"Несовершенный полузабытый исполин"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Half-remembered Goliath"
+	[tag]"name RU"		[value]"Полузабытый исполин"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Half-remembered Goliath"
+	[tag]"name RU"		[value]"Совершенный полузабытый исполин"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Meatsack"
+	[tag]"name RU"		[value]"Несовершенный кусок мяса"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Meatsack"
+	[tag]"name RU"		[value]"Кусок мяса"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Meatsack"
+	[tag]"name RU"		[value]"Совершенный кусок мяса"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Eldritch Eye"
+	[tag]"name RU"		[value]"Несовершенный жуткий глаз"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Eldritch Eye"
+	[tag]"name RU"		[value]"Жуткий глаз"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Eldritch Eye"
+	[tag]"name RU"		[value]"Совершенный жуткий глаз"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Forest Tiger"
+	[tag]"name RU"		[value]"Несовершенный лесной тигр"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Forest Tiger"
+	[tag]"name RU"		[value]"Несовершенный лесной тигр"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Forest Tiger"
+	[tag]"name RU"		[value]"Совершенный лесной тигр"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Guardian Turtle"
+	[tag]"name RU"		[value]"Несовершенная охраняющая черепаха"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Guardian Turtle"
+	[tag]"name RU"		[value]"Охраняющая черепаха"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Guardian Turtle"
+	[tag]"name RU"		[value]"Совершенная охраняющая черепаха"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Shadow Construct"
+	[tag]"name RU"		[value]"Несовершенный тёмный механизм"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Shadow Construct"
+	[tag]"name RU"		[value]"Тёмный механизм"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Shadow Construct"
+	[tag]"name RU"		[value]"Совершенный тёмный механизм"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Imperfect Forest Warrior"
+	[tag]"name RU"		[value]"Несовершенный воин леса"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Forest Warrior"
+	[tag]"name RU"		[value]"Воин леса"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Perfect Forest Warrior"
+	[tag]"name RU"		[value]"Совершенный воин леса"
+
+	[tag]"icon path"	[value]"Corpse"
+	[tag]"base class"	[value]"Corpses"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Rare"
+	
+	
+	

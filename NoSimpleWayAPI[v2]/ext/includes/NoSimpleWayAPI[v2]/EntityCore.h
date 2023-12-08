@@ -167,7 +167,7 @@ struct DescriptionContainerDefault : public DescriptionContainer
 {
 public:
 	DescriptionContainerDefault(float _size_x, float _size_y) :DescriptionContainer(_size_x, _size_y) {};
-
+	virtual ~DescriptionContainerDefault();
 	void create_description() override;
 };
 
@@ -227,7 +227,7 @@ public:
 	void destroy_all_vertex_buffer_data() override;
 
 	DescriptionContainer*
-		description_container = nullptr;
+	description_container = nullptr;
 
 	float hover_time = 0.0f;
 
@@ -468,6 +468,8 @@ public:
 	};
 
 	ETextureGabarite* stored_image[NSW_languages_count] = { nullptr };
+
+	virtual ~DescriptionContainerHelpDescriptionImage();
 
 	void create_description() override;
 };

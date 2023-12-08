@@ -296,11 +296,11 @@ of the Troll	[4]
 of Ryslatha	[4]
 of the Phoenix	[3]
 of Recuperation	[2]
-Baroness's	no collision
-Viscountess's	no collision
-Marchioness's	no collision
-Countess's	no collision
-Duchess's	no collision
+Baroness's	[1]
+Viscountess's	[1]
+Marchioness's	[1]
+Countess's	[1]
+Duchess's	[1]
 of Motivation	no collision
 of Coercion	no collision
 of Incitation	no collision
@@ -521,6 +521,13 @@ of Regularity	no collision
 of Concord	no collision
 of the Sempiternal	no collision
 of the Deathless	no collision
+of Impermeability	no collision
+of Countervailing	no collision
+of Imperviousness	no collision
+Martinet's	no collision
+Princess's	no collision
+Queen's	no collision
+Empress's	no collision
 Chosen	no collision
 of the Order	no collision
 Catarina's	no collision
@@ -548,6 +555,8 @@ of Hillock's Veil	no collision
 of Janus	no collision
 of Janus' Veil	no collision
 of Riker	no collision
+Riker	no collision
+Guff's Veiled	no collision
 of Riker's Veil	no collision
 Rin's	no collision
 Rin's Veiled	no collision

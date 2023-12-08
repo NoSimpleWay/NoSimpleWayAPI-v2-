@@ -482,3 +482,22 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Focused Amulet"
+	[tag]"name RU"		[value]"Направленный амулет"
+
+	[tag]"icon path"	[value]"FocusAmulet"
+	[tag]"base class"	[value]"Amulets"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Have implicit"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

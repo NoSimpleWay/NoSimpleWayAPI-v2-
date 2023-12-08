@@ -386,6 +386,49 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Iolite Ring"
+	[tag]"name RU"		[value]"Иолитовое кольцо"
+
+	[tag]"icon path"	[value]"IoliteRing"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Rare base"
+	[tag]"worth"		[value]"Common"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Bone Ring"
+	[tag]"name RU"		[value]"Костяное кольцо"
+
+	[tag]"icon path"	[value]"BoneRing"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+	[tag]"item tag"		[value]"Item for summoners"
+	[tag]"item tag"		[value]"Rings"
+	[tag]"item tag"		[value]"Good ring base"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Best"
+	[tag]"base family"	[value]"Basic"
+	
+	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -424,7 +467,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
-	[tag]"item tag"		[value]"Deleted"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -442,7 +484,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item height"	[value]"1"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
-	[tag]"item tag"		[value]"Deleted"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -455,8 +496,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"ShadowedRing"
 	
 	[tag]"base class"	[value]"Ring"
-	[tag]"item tag"		[value]"Deleted"
-
+	
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
 	
@@ -473,7 +513,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"icon path"	[value]"TenebrousRing"
 	
 	[tag]"base class"	[value]"Ring"
-	[tag]"item tag"		[value]"Deleted"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -484,50 +523,9 @@ ADD_NEW_DATA_ENTITY
 	
 
 
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Iolite Ring"
-	[tag]"name RU"		[value]"Иолитовое кольцо"
-
-	[tag]"icon path"	[value]"IoliteRing"
-	[tag]"base class"	[value]"Rings"
-	
-	[tag]"item tag"		[value]"Rare base"
-	[tag]"worth"		[value]"Common"
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 	
 
 
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Bone Ring"
-	[tag]"name RU"		[value]"Костяное кольцо"
-
-	[tag]"icon path"	[value]"BoneRing"
-	[tag]"base class"	[value]"Rings"
-	
-	[tag]"item tag"		[value]"Introduced: Kalandra league"
-	[tag]"item tag"		[value]"Item for summoners"
-	[tag]"item tag"		[value]"Rings"
-	[tag]"item tag"		[value]"Good ring base"
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Best"
-	[tag]"base family"	[value]"Basic"
-	
-	[tag]"worth"		[value]"Trash"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -541,9 +539,79 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
 	[tag]"item tag"		[value]"Item for summoners"
 	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"Deleted"
 	
 	[tag]"worth"		[value]"Trash"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Golden Hoop"
+	[tag]"name RU"		[value]"Золотой обруч"
+
+	[tag]"icon path"	[value]"Demigod's_Eye_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"worth"		[value]"Very expensive"
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Composite Ring"
+	[tag]"name RU"		[value]"Составное кольцо"
+
+	[tag]"icon path"	[value]"AfflictionTempPic"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Manifold Ring"
+	[tag]"name RU"		[value]"Клапанное кольцо"
+
+	[tag]"icon path"	[value]"AfflictionTempPic"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ratcheting Ring"
+	[tag]"name RU"		[value]"Зубчатое кольцо"
+
+	[tag]"icon path"	[value]"AfflictionTempPic"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Helical Ring"
+	[tag]"name RU"		[value]"Спиральное кольцо"
+
+	[tag]"icon path"	[value]"AfflictionTempPic"
+	[tag]"base class"	[value]"Rings"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

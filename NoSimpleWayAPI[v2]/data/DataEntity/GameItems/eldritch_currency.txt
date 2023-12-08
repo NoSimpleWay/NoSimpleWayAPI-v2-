@@ -81,10 +81,13 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Boss loot"
 	[tag]"item tag"		[value]"Eldritch currency"
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
+	
 	[tag]"item tag"		[value]"Ember item"
 	
 	[tag]"drop level"	[value]"81"
@@ -185,11 +188,14 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Eldritch currency"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Ichor item"
+
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Eater"
 	
 	[tag]"worth"		[value]"Rare"
 	
@@ -213,7 +219,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Eldritch currency"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
+	[tag]"item tag"		[value]"Loot source: Eater"
 	
 	[tag]"drop level"	[value]"78"
 	[tag]"stack multiplier"	[value]"1"
@@ -234,7 +244,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"			[value]"Non-basic currency"
 	[tag]"item tag"			[value]"Introduced: Archnemesis league"
 	[tag]"item tag"			[value]"Eldritch currency"
-	[tag]"item tag"			[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
+	[tag]"item tag"		[value]"Loot source: Eater"
 	
 	[tag]"drop level"		[value]"78"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -255,7 +269,11 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Non-basic currency"
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Eldritch currency"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
+	[tag]"item tag"		[value]"Loot source: Eater"
 	
 	[tag]"drop level"	[value]"78"
 	[tag]"stack multiplier"	[value]"0.5"
@@ -274,7 +292,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Stackable Currency"
 	
 	[tag]"item tag"		[value]"Non-basic currency"
-	[tag]"item tag"		[value]"Boss loot"
+	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
 	[tag]"item tag"		[value]"Pinnacle boss loot"
 	[tag]"item tag"		[value]"Loot source: Maven"

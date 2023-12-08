@@ -326,6 +326,9 @@ class EButtonGroupListedBlock;
 class EntityButtonAttributeTab : public EntityButton
 {
 public:
+	bool			is_undefined = false;
+	std::string		undefined_value = "";
+
 	EButtonGroup* target_listed_block;
 	EButtonGroupListedBlock* target_whole_listed_block;
 	EButtonGroupFilterBlock* parent_filter_block;
@@ -698,9 +701,15 @@ public:
 	EButtonGroupLootFilterErrors(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
 	~EButtonGroupLootFilterErrors();
 
-	EButtonGroup* part_with_buttons = nullptr;
+	EButtonGroup*	part_with_buttons = nullptr;
+	ETextArea*		status_text_area;
 
 	std::vector< LootFilterError*> error_struct_list;
+
+	static void check_errors();
+
+	void set_status_error();
+	void set_status_fine();
 
 };
 
@@ -711,6 +720,7 @@ struct DescriptionContainerSeparatorExample : public DescriptionContainer
 {
 public:
 	DescriptionContainerSeparatorExample(float _size_x, float _size_y) :DescriptionContainer(_size_x, _size_y) {};
+	virtual ~DescriptionContainerSeparatorExample();
 
 	void create_description() override;
 };
@@ -801,6 +811,11 @@ public:
 
 
 };
+//
+//class EButtonGroupErrorList : public EButtonGroup
+//{
+//
+//};
 
 //
 //class EDataContainer_Group_FilterBlockListedSegment : public EDataContainer
@@ -907,7 +922,10 @@ namespace EDataActionCollection
 	void action_generate_items_from_this_loot_pattern(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_switch_pattern_folder_state(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_create_or_delete_description_on_hover(Entity* _entity, ECustomData* _custom_data, float _d);
+
 	void action_open_and_refresh_loot_simulator(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_and_refresh_error_list(Entity* _entity, ECustomData* _custom_data, float _d);
+
 	void action_change_localisation(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_remove_wide_button(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_make_unsave_filter_block_changes(Entity* _entity, ECustomData* _custom_data, float _d);
@@ -1147,7 +1165,7 @@ public:
 	//registered button groups
 	static EButtonGroup* select_rarity_button_group;
 	static EButtonGroup* select_quality_button_group;
-	static EButtonGroupFilterBlockEditor* loot_filter_editor;
+	static EButtonGroupFilterBlockEditor* active_loot_filter_editor;
 	static EButtonGroup* world_parameters;
 	static EButtonGroup* tab_list_group;
 	static EButtonGroupNewLootFilter* create_new_loot_filter_group;
@@ -1406,6 +1424,24 @@ public:
 	static void register_ancestors_sanctum_items();
 
 	static void register_ancestors_omens();
+
+	////////////////////////////////////////////////////////////////////////
+
+
+	//AFFLICTION TRIAL FOLDER
+	static void register_new_folder_affliction_items();
+
+	static void register_affliction_deleted_items();
+	static void register_affliction_changed_items();
+	static void register_affliction_divinations();
+
+	static void register_affliction_currency();
+
+	static void register_affliction_omens();
+	static void register_affliction_bases();
+	static void register_affliction_tinctures();
+	static void register_affliction_charms();
+	static void register_affliction_corpses();
 
 	////////////////////////////////////////////////////////////////////////
 

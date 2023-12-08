@@ -12,6 +12,27 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Heist"
+	
+	[tag]"item tag"		[value]"Heist base"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Congregator Wand"
+	[tag]"name RU"		[value]"Накопляющий жезл"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wands"
+	
+	[tag]"item tag"		[value]"Have implicit"
+	
+	[tag]"base tier"	[value]"Good"
+	[tag]"base family"	[value]"Heist"
+	
+	[tag]"item tag"		[value]"Heist base"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -29,9 +50,24 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Acceptable"
 	[tag]"base family"	[value]"Heist"
+	
+	[tag]"item tag"		[value]"Heist base"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -50,23 +86,6 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"3"
-
-ADD_NEW_DATA_ENTITY
-	[tag]"data type"	[value]"Game item"
-
-	[tag]"name EN"		[value]"Congregator Wand"
-	[tag]"name RU"		[value]"Накопляющий жезл"
-
-	[tag]"icon path"	[value]"SuperWand"
-	[tag]"base class"	[value]"Wands"
-	
-	[tag]"item tag"		[value]"Have implicit"
-	
-	[tag]"base tier"	[value]"Good"
-	[tag]"base family"	[value]"Heist"
-
-	[tag]"item width"	[value]"1"
-	[tag]"item height"	[value]"1"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"

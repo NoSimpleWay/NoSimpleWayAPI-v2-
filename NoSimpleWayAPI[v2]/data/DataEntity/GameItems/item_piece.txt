@@ -10,3 +10,18 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ultimatum Aspect"
+	[tag]"name RU"		[value]"Аспект Ультиматума"
+	
+	[tag]"base class"	[value]"Item Piece"
+
+	[tag]"icon path"	[value]"UltimatumAspect"
+	[tag]"icon path"	[value]"Deleted"
+	[tag]"icon path"	[value]"Deleted in Affliction"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

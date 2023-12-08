@@ -127,7 +127,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Elder Guardian"
+	[tag]"item tag"		[value]"Boss drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -162,7 +165,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Elder Guardian"
+	[tag]"item tag"		[value]"Boss drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -177,7 +183,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Elder Guardian"
+	[tag]"item tag"		[value]"Boss drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -213,7 +222,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"item tag"		[value]"Loot source: Elder Guardian"
+	[tag]"item tag"		[value]"Boss drop"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -269,8 +281,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Loot source: Chimera"
 	[tag]"item tag"		[value]"Boss drop"
 		
 	[tag]"worth"		[value]"Rare"
@@ -288,8 +301,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Loot source: Hydra"
 	[tag]"item tag"		[value]"Boss drop"
 		
 	[tag]"worth"		[value]"Rare"
@@ -307,8 +321,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Loot source: Minotaur"
 	[tag]"item tag"		[value]"Boss drop"
 		
 	[tag]"worth"		[value]"Rare"
@@ -326,8 +341,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
-	[tag]"item tag"		[value]"Loot source: Shaper"
+	[tag]"item tag"		[value]"Loot source: Phoenix"
 	[tag]"item tag"		[value]"Boss drop"
 		
 	[tag]"worth"		[value]"Rare"
@@ -479,7 +495,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"scarab tier"	[value]"Gilded"
 
@@ -598,6 +616,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -613,6 +634,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -628,6 +652,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -643,6 +670,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Uber Atziri"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -810,7 +840,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"scarab tier"	[value]"Polished"
 
@@ -1055,6 +1087,11 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item tag"		[value]"Scarab item"
 	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	
+	
+	
 	[tag]"scarab tier"	[value]"Rusted"
 
 	[tag]"item width"	[value]"1"
@@ -1070,6 +1107,26 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"scarab tier"	[value]"Rusted"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rusted Ultimatum Scarab"
+	[tag]"name RU"		[value]"Ржавый скарабей Ультиматума"
+
+	[tag]"icon path"	[value]"Rusted_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+	
+	
 	
 	[tag]"scarab tier"	[value]"Rusted"
 
@@ -1151,6 +1208,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Atziri"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1165,6 +1225,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Atziri"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1179,6 +1242,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Atziri"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -1190,6 +1256,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Жертва в Полдень"
 	
 	[tag]"item tag"		[value]"Piece of set"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Atziri"
 
 	[tag]"icon path"	[value]"Sacrifice_at_Noon_inventory_icon"
 	[tag]"base class"	[value]"Map Fragments"
@@ -1391,7 +1460,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 
 	[tag]"item tag"		[value]"Scarab item"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	[tag]"scarab tier"	[value]"Winged"
 
@@ -2241,6 +2312,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Al-Hezmin"
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -2258,6 +2332,9 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Map Fragments"
 	
 	[tag]"item tag"		[value]"Introduced: Archnemesis league"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Baran"
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -2278,6 +2355,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Drox"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2295,6 +2375,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Piece of set"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Veritania"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -2572,6 +2655,27 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
+	[tag]"name EN"		[value]"Polished Ultimatum Scarab"
+	[tag]"name RU"		[value]"Гладкий скарабей Ультиматума"
+
+	[tag]"icon path"	[value]"Polished_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+	
+	[tag]"scarab tier"	[value]"Polished"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
 	[tag]"name EN"		[value]"Gilded Expedition Scarab"
 	[tag]"name RU"		[value]"Золочёный скарабей Экспедиции"
 
@@ -2591,6 +2695,25 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
+	[tag]"name EN"		[value]"Gilded Ultimatum Scarab"
+	[tag]"name RU"		[value]"Золочёный скарабей Ультиматума"
+
+	[tag]"icon path"	[value]"Gilded_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+	
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Gilded"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
 	[tag]"name EN"		[value]"Winged Expedition Scarab"
 	[tag]"name RU"		[value]"Крылатый скарабей Экспедиции"
 
@@ -2600,6 +2723,24 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Scarab item"
 	
 	[tag]"item tag"		[value]"Introduced: Scourge league"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"scarab tier"	[value]"Winged"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Winged Ultimatum Scarab"
+	[tag]"name RU"		[value]"Крылатый скарабей Ультиматума"
+
+	[tag]"icon path"	[value]"Winged_Scarab"
+	[tag]"base class"	[value]"Map Fragments"
+
+	[tag]"item tag"		[value]"Scarab item"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	[tag]"scarab tier"	[value]"Winged"

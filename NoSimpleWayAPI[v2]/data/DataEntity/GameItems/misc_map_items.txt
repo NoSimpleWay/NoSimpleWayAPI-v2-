@@ -55,8 +55,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Vault Keys"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
-	[tag]"item tag"		[value]"World drop"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Exarch"
 	
 	[tag]"worth"		[value]"Rare"
 
@@ -111,8 +113,10 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Vault Keys"
 	
 	[tag]"item tag"		[value]"Introduced: Kalandra league"
-	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Cortex"
 	
 	[tag]"worth"		[value]"Rare"
 

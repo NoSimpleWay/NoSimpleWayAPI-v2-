@@ -11,6 +11,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Metamorph Sample"
 	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Always unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -25,6 +27,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Metamorph Sample"
 	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Always unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -39,6 +43,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Metamorph Sample"
 	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Always unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -53,6 +59,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Metamorph Sample"
 	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Always unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -67,6 +75,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base class"	[value]"Metamorph Sample"
 	
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
+	[tag]"item tag"		[value]"Always unique"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

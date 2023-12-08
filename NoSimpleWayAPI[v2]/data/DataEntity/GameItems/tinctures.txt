@@ -1,0 +1,97 @@
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Oakbranch Tincture"
+	[tag]"name RU"		[value]"Микстура из дубовой ветви"
+
+	[tag]"icon path"	[value]"SubduingOakbranchTinctureoftheChase"
+	[tag]"base class"	[value]"Tincture"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ironwood Tincture"
+	[tag]"name RU"		[value]"Микстура из железного дерева"
+
+	[tag]"icon path"	[value]"DroopingIronwoodTinctureofPoaching"
+	[tag]"base class"	[value]"Tincture"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Ashbark Tincture"
+	[tag]"name RU"		[value]"Микстура из коры ясеня"
+
+	[tag]"icon path"	[value]"AshbarkTincturePic"
+	[tag]"base class"	[value]"Tincture"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fulgurite Tincture"
+	[tag]"name RU"		[value]"Микстура из фульгурита"
+
+	[tag]"icon path"	[value]"FulguriteTincturePic"
+	[tag]"base class"	[value]"Tincture"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Poisonberry Tincture"
+	[tag]"name RU"		[value]"Микстура из паслёна"
+
+	[tag]"icon path"	[value]"PoisonberryTincturePic"
+	[tag]"base class"	[value]"Tincture"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Rosethorn Tincture"
+	[tag]"name RU"		[value]"Микстура из розового шипа"
+
+	[tag]"icon path"	[value]"UnKnownTincturePic"
+	[tag]"base class"	[value]"Tincture"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Borealwood Tincture"
+	[tag]"name RU"		[value]"Микстура из северной древесины"
+
+	[tag]"icon path"	[value]"UnKnownTincturePic"
+	[tag]"base class"	[value]"Tincture"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Blood Sap Tincture"
+	[tag]"name RU"		[value]"Микстура из кровавой живицы"
+
+	[tag]"icon path"	[value]"UnKnownTincturePic"
+	[tag]"base class"	[value]"Tincture"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+	

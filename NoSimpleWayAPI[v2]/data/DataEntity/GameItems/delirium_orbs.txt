@@ -131,6 +131,7 @@ ADD_NEW_DATA_ENTITY
 		
 		
 	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
 	
 	
 	[tag]"worth"		[value]"Common"
@@ -357,7 +358,29 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Delirium orb"
 	[tag]"item tag"		[value]"Non-basic currency"
 	
-	[tag]"item tag"		[value]"Introduced: Affliction League"
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+		
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Amorphous Delirium Orb"
+	[tag]"name RU"		[value]"Аморфная сфера Делириума"
+
+	[tag]"icon path"	[value]"AmorphousDeliriumOrb"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Delirium orb"
+	[tag]"item tag"		[value]"Non-basic currency"
+	
+	[tag]"item tag"		[value]"Deleted"
+	[tag]"item tag"		[value]"Deleted in Affliction"
 		
 	[tag]"worth"		[value]"Common"
 	

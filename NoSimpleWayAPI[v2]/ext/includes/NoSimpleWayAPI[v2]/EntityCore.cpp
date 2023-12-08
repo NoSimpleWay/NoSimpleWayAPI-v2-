@@ -557,8 +557,12 @@ void EntityButton::destroy_attached_description()
 				finder
 			);
 
-			if (!disable_deleting) {
-				delete attached_description;
+			if (!disable_deleting)
+			{
+				//delete attached_description;
+				attached_description->block_need_remove = true;
+				
+				//attached_description = nullptr;
 			}
 		}
 
@@ -1989,11 +1993,11 @@ void EntityButton::update(float _d)
 	}
 
 	if
-		(
+	(
 			(attached_description != nullptr)
 			&&
 			(!button_gabarite->overlapped_by_mouse())
-			)
+	)
 	{
 		destroy_attached_description();
 	}
@@ -2076,9 +2080,12 @@ EntityButton::~EntityButton()
 		delete description_container;
 	}
 
+	//this;
+
 	if (attached_description != nullptr)
 	{
-		delete attached_description;
+		//delete attached_description;
+		attached_description->block_need_remove = true;
 	}
 	//EInputCore::logger_simple_try("delete entity button");
 
@@ -2734,6 +2741,10 @@ void DescriptionContainer::init_description(EButtonGroup* _group)
 
 }
 
+DescriptionContainerDefault::~DescriptionContainerDefault()
+{
+}
+
 void DescriptionContainerDefault::create_description()
 {
 	//EInputCore::logger_simple_info("@");
@@ -2811,6 +2822,10 @@ void DescriptionContainerDefault::create_description()
 
 		init_description(description_group);
 	}
+}
+
+DescriptionContainerHelpDescriptionImage::~DescriptionContainerHelpDescriptionImage()
+{
 }
 
 void DescriptionContainerHelpDescriptionImage::create_description()

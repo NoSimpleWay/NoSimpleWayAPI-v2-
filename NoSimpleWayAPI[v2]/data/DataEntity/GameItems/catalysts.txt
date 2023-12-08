@@ -197,3 +197,24 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Tainted Catalyst"
+	[tag]"name RU"		[value]"Порочный катализатор"
+
+	[tag]"icon path"	[value]"TaintedCatalyst"
+	[tag]"base class"	[value]"Stackable Currency"
+	
+	[tag]"item tag"		[value]"Non-basic currency"
+	[tag]"item tag"		[value]"Catalyst item"
+		
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"drop level"	[value]"1"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"

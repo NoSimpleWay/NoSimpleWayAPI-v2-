@@ -953,3 +953,31 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Священные реликвии"
 
 	[tag]"icon path"	[value]"forbidden_tome"
+	
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Tincture"
+	[tag]"name RU"		[value]"Микстуры"
+
+	[tag]"icon path"	[value]"DroopingIronwoodTinctureofPoaching"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Charms"
+	[tag]"name RU"		[value]"Обереги"
+
+	[tag]"icon path"	[value]"UrsineCharm"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Base Class"
+
+	[tag]"name EN"		[value]"Corpses"
+	[tag]"name RU"		[value]"Трупы"
+
+	[tag]"icon path"	[value]"Corpse"
