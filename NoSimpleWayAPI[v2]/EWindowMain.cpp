@@ -1869,7 +1869,16 @@ void EDataActionCollection::action_draw_loot_button(Entity* _entity, ECustomData
 				{
 					target_temp_color->set_color_RGBA(1.0f, 1.0f, 1.0f, 0.9f);
 				}
-				EWindowMain::set_color_version(target_temp_color, loot_button->matched_bg_color_block->version_routers[selected_loot_filter_version]->selected_variant);
+
+				if (loot_button->matched_bg_color_block != nullptr)
+				{
+					EWindowMain::set_color_version(target_temp_color, loot_button->matched_bg_color_block->version_routers[selected_loot_filter_version]->selected_variant);
+				}
+				else
+				{
+
+				}
+
 				NS_EGraphicCore::set_active_color(target_temp_color);
 
 				ERenderBatcher::if_have_space_for_data(NS_EGraphicCore::default_batcher_for_drawing, 1);
