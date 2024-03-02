@@ -83,6 +83,15 @@ Show
 	#SetFontSize 32
 	#MinimapIcon 0 Red Circle
 	#PlayEffect Red
+	
+Show
+	#config_VersionControl standart standart standart standart standart
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 74 230 58 255
+	SetBorderColor 0 0 0 0
+	#SetFontSize 32
+	#MinimapIcon 0 Red Circle
+	#PlayEffect Red
 
 
 

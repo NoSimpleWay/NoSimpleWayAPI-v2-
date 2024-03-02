@@ -655,7 +655,7 @@ void EntityButton::make_as_default_clickable_button(ERegionGabarite* _region_gab
 	if (_dap != nullptr) { jc_clickable_area->actions_on_click_list.push_back(_dap); }
 
 	ECustomData*
-		last_data = Entity::get_last_custom_data(this);
+	last_data = Entity::get_last_custom_data(this);
 
 	last_data->clickable_area_list.push_back(jc_clickable_area);
 }
@@ -966,13 +966,16 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	);
 
 	EDataContainer_VerticalNamedSlider*
-		data = new EDataContainer_VerticalNamedSlider();
-	EntityButton::get_last_custom_data(jc_button)->data_container = data;
+	data = new EDataContainer_VerticalNamedSlider();
+
+	//jc_button->main_custom_data = EntityButton::get_last_custom_data(jc_button);
+
+	jc_button->main_custom_data->data_container = data;
 	//data->slider_style = _style;
 	data->operable_area_size_x = _region_gabarite->size_x - _style->brick_style[BrickStyleID::ROUND_SLIDER].main_texture->size_x_in_pixels;
 
-	EntityButton::get_last_custom_data(jc_button)->actions_on_update.push_back(&EDataActionCollection::action_update_horizontal_named_slider);
-	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_horizontal_named_slider);
+	jc_button->main_custom_data->actions_on_update.push_back(&EDataActionCollection::action_update_horizontal_named_slider);
+	jc_button->main_custom_data->actions_on_draw.push_back(&EDataActionCollection::action_draw_horizontal_named_slider);
 
 	//jc_button->action_on_generate_vertex_buffer.push_back(&action_generate_brick_bg_for_button);
 	jc_button->action_on_generate_vertex_buffer.push_back(&action_generate_vertex_for_horizontal_named_slider);
@@ -1061,7 +1064,7 @@ EntityButton* EntityButton::create_horizontal_named_slider(ERegionGabarite* _reg
 	return jc_button;
 }
 
-EntityButtonColorButton* EntityButton::create_named_color_button
+void EntityButtonColorButton::make_as_named_color_button
 (
 	ERegionGabarite*		_region_gabarite,
 	EButtonGroup*			_parent_group,
@@ -1075,12 +1078,12 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 {
 
 
-	EntityButtonColorButton*
-	jc_button = new EntityButtonColorButton();
+	//EntityButtonColorButton
+	//jc_button;
 
-	jc_button->parent_color_collection = _color_collection;
+	parent_color_collection = _color_collection;
 
-	jc_button->make_as_default_clickable_button
+	make_as_default_clickable_button
 	(
 		_region_gabarite,
 		_parent_group,
@@ -1092,19 +1095,23 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 	//EDataContainer_Button_StoreColor* data = new EDataContainer_Button_StoreColor();
 	//if (!data->stored_color->is_from_collection)
 	//EntityButton::get_last_custom_data(jc_button)->data_container = data;
-	jc_button->stored_color = _color;
-	jc_button->selected_mode = _mode;
+	stored_color = _color;
+	selected_mode = _mode;
 
 	//std::cout << data->stored_color << std::endl;
 
-	EntityButton::get_last_custom_data(jc_button)->actions_on_draw.push_back(&EDataActionCollection::action_draw_stored_color_as_box);
-	EntityButton::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_open_color_group);
+	EntityButton::get_last_custom_data(this)->actions_on_draw.push_back(&EDataActionCollection::action_draw_stored_color_as_box);
+	
+	if (_mode == ColorButtonMode::CBM_CUSTOM)
+	{
+		EntityButton::get_last_clickable_area(this)->actions_on_click_list.push_back(&EDataActionCollection::action_open_color_group);
+	}
 
 
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	ETextArea*
-	jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(jc_button), _font, _text);
+	jc_text_area = ETextArea::create_centered_to_left_text_area(Entity::get_last_clickable_area(this), _font, _text);
 	jc_text_area->forbide_new_line = true;
 	jc_text_area->forbide_outbounding = true;
 
@@ -1124,20 +1131,20 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 	jc_text_area->change_text(_text.localisations[ELocalisationText::active_localisation]);
 	jc_text_area->localisation_text = _text;
 	jc_text_area->can_be_edited = false;
-	Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
+	Entity::add_text_area_to_last_clickable_region(this, jc_text_area);
 
 
 
-	jc_button->main_text_area = jc_text_area;
+	main_text_area = jc_text_area;
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	if (_mode == ColorButtonMode::CBM_SELECT_COLOR)
 	{
-		jc_button->main_clickable_area->actions_on_right_click_list.push_back(&EDataActionCollection::action_active_text_area);
+		main_clickable_area->actions_on_right_click_list.push_back(&EDataActionCollection::action_active_text_area);
 
 		jc_text_area->action_on_change_text.push_back(&EDataActionCollection::action_change_localisation_for_color_button);
 		jc_text_area->action_on_finalize_text.push_back(&EDataActionCollection::action_deactive_text_area);
 
-		jc_button->add_default_description_by_key("description_color_selector");
+		add_default_description_by_key("description_color_selector");
 
 
 
@@ -1151,8 +1158,8 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 			close_clickable_area = EClickableArea::create_default_clickable_region
 			(
 				new ERegionGabarite(16.0f, 16.0f),
-				jc_button,
-				EntityButton::get_last_custom_data(jc_button)
+				this,
+				EntityButton::get_last_custom_data(this)
 			);
 
 		//jc_button->pointer_to_close_area = close_clickable_area;
@@ -1167,10 +1174,10 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 		close_clickable_area->region_gabarite->offset_by_pixels_x = -3.0f;
 		close_clickable_area->region_gabarite->offset_by_pixels_y = -3.0f;
 
-		close_clickable_area->draw_only_is_specific_region_overlapped = jc_button->main_clickable_area->region_gabarite;
+		close_clickable_area->draw_only_is_specific_region_overlapped = main_clickable_area->region_gabarite;
 
-		jc_button->main_custom_data->clickable_area_list.push_back(close_clickable_area);
-		jc_button->main_clickable_area->region_gabarite->add_child_to_this_region(close_clickable_area->region_gabarite);
+		main_custom_data->clickable_area_list.push_back(close_clickable_area);
+		main_clickable_area->region_gabarite->add_child_to_this_region(close_clickable_area->region_gabarite);
 
 		ESpriteLayer* third_sprite_layer =
 			ESpriteLayer::create_default_sprite_layer_with_size_and_offset
@@ -1195,7 +1202,7 @@ EntityButtonColorButton* EntityButton::create_named_color_button
 
 
 
-	return jc_button;
+	//return jc_button;
 }
 
 EntityButton* EntityButton::create_default_radial_button(ERegionGabarite* _region_gabarite, EButtonGroup* _parent_group, std::string _text)

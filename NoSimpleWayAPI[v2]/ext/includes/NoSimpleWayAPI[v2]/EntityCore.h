@@ -315,17 +315,7 @@ public:
 		//void (*data_action_pointer)(Entity*, ECustomData*, float)
 	);
 
-	static EntityButtonColorButton* create_named_color_button
-	(
-		ERegionGabarite* _region_gabarite,
-		EButtonGroup* _parent_group,
-		EFont* _font,
-		EGUIStyle* _style,
-		ELocalisationText				_text,
-		HRA_color_collection* _collection,
-		HSVRGBAColor* _color,
-		ColorButtonMode					_mode
-	);
+
 
 	static EntityButton* create_default_radial_button
 	(
@@ -632,7 +622,19 @@ public:
 
 	std::vector<EntityButton*>	list_of_forcibly_redrawing_buttons;
 
-	~EntityButtonColorButton();
+	void make_as_named_color_button
+	(
+		ERegionGabarite* _region_gabarite,
+		EButtonGroup* _parent_group,
+		EFont* _font,
+		EGUIStyle* _style,
+		ELocalisationText				_text,
+		HRA_color_collection* _collection,
+		HSVRGBAColor* _color,
+		ColorButtonMode					_mode
+	);
+
+	virtual ~EntityButtonColorButton();
 };
 
 

@@ -44,6 +44,9 @@ constexpr float NSW_additional_y_force_field_for_separator = 16.0f;
 
 
 
+
+
+
 namespace LootFilterVersionPattern
 {
 
@@ -337,6 +340,14 @@ public:
 	EButtonGroupFilterBlock* parent_filter_block;
 };
 
+class EntityButtonColorButtonForFilterBlock;
+class EntityButtonCosmeticElement : public EntityButton
+{
+public:
+	HSVRGBAColor*							target_color;
+	EntityButtonColorButtonForFilterBlock*	assigned_color_button_from_filter_block;
+};
+
 
 
 
@@ -435,7 +446,7 @@ public:
 
 
 	//color section
-	EntityButtonColorButton* pointer_to_color_button[3];
+	EntityButtonColorButtonForFilterBlock* pointer_to_color_button[3];
 	EntityButton* pointer_to_color_check_button[3];
 
 	bool	color_check[3]{ true, true, true };
@@ -828,6 +839,37 @@ public:
 
 
 };
+
+class EntityButtonColorButtonForFilterBlock;
+class EButtonGroupFilterBlockColors : public EButtonGroup
+{
+public:
+	EButtonGroupFilterBlockColors(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	EButtonGroup*					pointer_to_preview_group;
+	EButtonGroup*					pointer_to_cosmetic_element_group;
+	EButtonGroup*					pointer_to_hair_slider_group;
+	EButtonGroup*					pointer_to_VA_slider_group;
+
+	EButtonGroup*					pointer_to_color_pattern_group;
+
+
+
+	EntityButtonCosmeticElement*	cosmetic_element_button_rama;
+	EntityButtonCosmeticElement*	cosmetic_element_button_text;
+	EntityButtonCosmeticElement*	cosmetic_element_button_bg;
+
+	EntityButton*					color_hair_slider_hue_saturation;
+	EntityButton*					color_slider_value;
+	EntityButton*					color_slider_alpha;
+
+	HSVRGBAColor*					target_color;
+
+	void draw_button_group() override;
+	void assign_colors(HSVRGBAColor* _color);
+	void generate_color_pattern_buttons();
+};
+
 //
 //class EButtonGroupErrorList : public EButtonGroup
 //{
@@ -849,6 +891,14 @@ public:
 //	EDataContainer_Group_StoreFilterRuleForDataEntitySearcher* data_container_with_filter_rule;
 //	EntityButtonForFilterBlock* input_field;
 //};
+
+namespace NSWRegisteredButtonGroups
+{
+	static EButtonGroupFilterBlockColors* filter_block_colors;
+
+	static void register_filter_block_colors_group();
+
+}
 
 namespace EDataActionCollection
 {
@@ -971,6 +1021,8 @@ namespace EDataActionCollection
 
 
 	void action_remove_this_random_user_sound(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_open_filter_block_color_editor(Entity* _entity, ECustomData* _custom_data, float _d);
+	void action_select_cosmetic_element(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
@@ -1180,6 +1232,8 @@ public:
 	//ECluster* cluster_array[CLUSTER_DIM_X][CLUSTER_DIM_Y];
 
 	void register_loot_version_names();
+
+	void get_poe_ninja_api_prices();
 
 	EWindowMain();
 
@@ -1484,7 +1538,9 @@ public:
 	////////////////////////////////////////////////////////////////////////
 
 
-	static void set_color_version(HSVRGBAColor* _target_color, int _selected_mode);
+	static void set_color_version	(HSVRGBAColor* _target_color, int _selected_mode);
+	static void set_color_focus		(HSVRGBAColor* _target_color, float _focus);
+
 	static void make_unsaved_loot_filter_changes();
 	static void remove_unsave_changes_flag_from_tab();
 
@@ -1655,6 +1711,14 @@ public:
 };
 
 
+class EntityButtonColorButtonForFilterBlock : public EntityButtonColorButton
+{
+public:
+	EntityButtonCosmeticElement*		assigned_cosmetic_element_button;
+	EButtonGroupFilterBlock*			master_block;
+
+	~EntityButtonColorButtonForFilterBlock();
+};
 
 
 

@@ -1539,7 +1539,10 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 
 	HRA_collection->localised_name = l_text;
 
-	EntityButtonColorButton* jc_button = EntityButton::create_named_color_button
+	EntityButtonColorButton*
+	jc_button = new EntityButtonColorButton();
+
+	jc_button->make_as_named_color_button
 	(
 		//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
@@ -1552,6 +1555,7 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 		&HRA_collection->target_color,
 		ColorButtonMode::CBM_SELECT_COLOR
 	);
+
 	//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
 	group_data->pointer_to_color_collection_sector->add_button_to_working_group(jc_button);
 	EButtonGroup::refresh_button_group(root_group);
