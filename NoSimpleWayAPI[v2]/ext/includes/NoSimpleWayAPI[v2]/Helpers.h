@@ -6,7 +6,9 @@
 enum class ColorButtonMode
 {
 	CBM_OPEN_WINDOW,
-	CBM_SELECT_COLOR
+	CBM_SELECT_COLOR,
+	CBM_CUSTOM//,
+	//CBM_NONE
 
 };
 

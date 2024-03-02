@@ -2941,6 +2941,33 @@ ADD_NEW_DATA_ENTITY
 	
 	
 	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"cosmetic_element_bg"
+	[tag]"name EN"		[value]"Background"
+	[tag]"name RU"		[value]"Фон"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"cosmetic_element_text"
+	[tag]"name EN"		[value]"Text"
+	[tag]"name RU"		[value]"Текст"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Localisation"
+	
+	[tag]"key"			[value]"cosmetic_element_rama"
+	[tag]"name EN"		[value]"Rama"
+	[tag]"name RU"		[value]"Рамка"
+	
+	
+	
+	
+	
+	
 
 	
 	

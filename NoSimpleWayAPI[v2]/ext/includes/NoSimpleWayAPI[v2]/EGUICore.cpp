@@ -754,6 +754,10 @@ void EButtonGroup::destroy_all_vertex_buffer_data()
 
 	for (EntityButton* but : all_button_list)
 	{
+		if ((!but->sprite_layer_list.empty())&&(but->sprite_layer_list[0]->total_capacity > 100000))
+		{
+			but = but;
+		}
 		but->destroy_all_vertex_buffer_data();
 	}
 
@@ -4712,6 +4716,7 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 	data->pointer_to_color_collection_sector = color_collection_segment;
 	color_collection_segment->actions_on_select_button.push_back(&EDataActionCollection::action_set_new_color_to_button);
 
+	if (false)
 	for (int i = 0; i < Helper::registered_color_list.size(); i++)
 	{
 		// // // // // // //// // // // // // //// // // // // // //
@@ -4725,19 +4730,22 @@ EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, 
 
 		//std::cout << Helper::registered_color_list[0] << std::endl;
 		EntityButtonColorButton*
-			color_button = EntityButton::create_named_color_button
-			(
-				//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+		color_button = new EntityButtonColorButton
+		();
 
-				new ERegionGabarite(150.0f, 38.0f),
-				color_collection_segment,
-				EFont::font_list[0],
-				EGUIStyle::active_style,
-				HRA_collection->localised_name,
-				HRA_collection,
-				HRA_color,
-				ColorButtonMode::CBM_SELECT_COLOR
-			);
+		color_button->make_as_named_color_button
+		(
+			//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
+
+			new ERegionGabarite(150.0f, 38.0f),
+			color_collection_segment,
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			HRA_collection->localised_name,
+			HRA_collection,
+			HRA_color,
+			ColorButtonMode::CBM_SELECT_COLOR
+		);
 
 		//std::cout << HRA_color << std::endl;
 		//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
