@@ -36,7 +36,10 @@
 #include <experimental/filesystem>
 
 
-
+namespace LootFilterVersionPattern
+{
+	std::vector<PatternStruct*> registered_loot_filter_version_patterns;
+}
 
 //class Entity;
 EWindowMain* EWindowMain::link_to_main_window;
@@ -2425,12 +2428,15 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 
 
 
-			if (true/*fatruelse*/)
+			if ((true/*fatruelse*/) && (loot_button->matched_show_hide_block != nullptr))
 			{
 				int selected_version_router = EButtonGroupLootSimulator::pointer_to_target_loot_filter_version_button->selected_variant;
 
+				//loot_button->matched_show_hide_block
+				//LootFilterVersionPattern::PatternStruct*
+				//target_version_pattern = LootFilterVersionPattern::registered_loot_filter_version_patterns[selected_version_router];
 				LootFilterVersionPattern::PatternStruct*
-					target_version_pattern = LootFilterVersionPattern::registered_loot_filter_version_patterns[selected_version_router];
+				target_version_pattern = LootFilterVersionPattern::registered_loot_filter_version_patterns[loot_button->matched_show_hide_block->version_routers[selected_version_router]->selected_variant];
 				//		WARNING PART FOR HIDDEN_BY_MISTAKE
 				if
 					(
@@ -2446,7 +2452,7 @@ void EDataActionCollection::action_create_or_delete_description_on_hover(Entity*
 							)
 						&&//and warn when item hidden
 						(loot_button->stored_game_item->warn_when_hidden)
-						)
+					)
 				{
 
 					EButtonGroup*
@@ -8722,6 +8728,7 @@ void EWindowMain::load_config_from_disc_for_filter_version_patterns()
 			{
 				last_pattern = new LootFilterVersionPattern::PatternStruct();
 				LootFilterVersionPattern::registered_loot_filter_version_patterns.push_back(last_pattern);
+				EInputCore::logger_param("!", LootFilterVersionPattern::registered_loot_filter_version_patterns.size());
 			}
 			else
 				if (otebis == "localised_name")
@@ -12364,7 +12371,7 @@ void EWindowMain::load_custom_sound_list()
 
 		if
 			(
-				(sound_name.length() >= 8)
+				(sound_name.length() >= 4)
 				&&
 				(
 					(EStringUtils::to_lower(sound_name.substr(sound_name.length() - 4, 4)) == ".mp3")

@@ -87,7 +87,7 @@ namespace LootFilterVersionPattern
 	};
 
 
-	static std::vector<PatternStruct*> registered_loot_filter_version_patterns;
+	extern std::vector<PatternStruct*> registered_loot_filter_version_patterns;
 }
 
 

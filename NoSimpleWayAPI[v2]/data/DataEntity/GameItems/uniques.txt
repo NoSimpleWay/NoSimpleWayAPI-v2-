@@ -12945,7 +12945,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Small Eater"
 	[tag]"item tag"		[value]"Boss drop"
 	
@@ -12968,7 +12967,6 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	[tag]"item tag"		[value]"Loot source: Small Eater"
 	[tag]"item tag"		[value]"Boss drop"
 	
@@ -17736,7 +17734,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Голоса"
 
 	[tag]"icon path"	[value]"NotableLargeClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17757,7 +17755,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Господство императора"
 
 	[tag]"icon path"	[value]"Prismatic_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17778,7 +17776,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Могущество императора"
 
 	[tag]"icon path"	[value]"Prismatic_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17799,7 +17797,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Остроумие императора"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17820,7 +17818,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Рациональная доктрина"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17844,7 +17842,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Коварство императора"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17865,7 +17863,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Крепостное обязательство"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17886,7 +17884,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Неестественный инстинкт"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17907,7 +17905,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Грозовой покров"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17928,7 +17926,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Падение Львиного глаза"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17949,7 +17947,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Зеленый кошмар"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -17997,7 +17995,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Глаз хранителя"
 
 	[tag]"icon path"	[value]"Prismatic_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18023,7 +18021,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Кровавый рубец"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18045,7 +18043,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Запретное пламя"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18070,7 +18068,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Запретная плоть"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18096,7 +18094,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Незыблемая сила"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18118,7 +18116,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Оживляющее обязательство"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18140,7 +18138,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Град обломков"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18162,7 +18160,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Возвышенный образ"
 
 	[tag]"icon path"	[value]"Prismatic_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18187,7 +18185,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Красный кошмар"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18212,7 +18210,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Смертельная гордость"
 
 	[tag]"icon path"	[value]"Lethal_Pride_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18234,7 +18232,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дальновидность предков"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18256,7 +18254,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Жестокая сдержанность"
 
 	[tag]"icon path"	[value]"Brutal_Restraint_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18278,7 +18276,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Фантастическое спасение"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18301,7 +18299,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Озарение"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18320,7 +18318,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Воинственная вера"
 
 	[tag]"icon path"	[value]"Militant_Faith_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18339,7 +18337,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Первородная мощь"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18358,7 +18356,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Перенятый опыт"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18377,7 +18375,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бесконечная горесть"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18396,7 +18394,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Синий кошмар"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18418,7 +18416,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мысли о бое"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18437,7 +18435,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Внутренние силы"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18456,7 +18454,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мысли о бое"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18475,7 +18473,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Изящный эготизм"
 
 	[tag]"icon path"	[value]"Elegant_Hubris_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18494,7 +18492,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Великий образ"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18513,7 +18511,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Слияние плоти"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18535,7 +18533,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Возмездие мёртвых"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18554,7 +18552,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мания величия"
 
 	[tag]"icon path"	[value]"NotableMediumClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18573,7 +18571,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Великий образ"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18613,7 +18611,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бурлящая ярость"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18632,7 +18630,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Мысли о бое"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18651,7 +18649,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Блистательное тщеславие"
 
 	[tag]"icon path"	[value]"Glorious_Vanity_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18670,7 +18668,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Великий образ"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18689,7 +18687,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Без ничего"
 
 	[tag]"icon path"	[value]"NotableSmallClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18708,7 +18706,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Камень внутренней сути"
 
 	[tag]"icon path"	[value]"Prismatic_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18727,7 +18725,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Нить надежды"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18748,7 +18746,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Растворение плоти"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18813,7 +18811,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Неутолимый голод"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18832,7 +18830,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Первородная гармония"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18851,7 +18849,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Healthy Mind"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18870,7 +18868,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Природное родство"
 
 	[tag]"icon path"	[value]"NotableSmallClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18889,7 +18887,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Сила кротких"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18908,7 +18906,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Первородное господство"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18927,7 +18925,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Чистый талант"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18946,7 +18944,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Раздвоение личности"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18965,7 +18963,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Зеленый сон"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -18985,7 +18983,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Допрос"
 
 	[tag]"icon path"	[value]"NotableSmallClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19004,7 +19002,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"В прах"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19023,7 +19021,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Ведьмина погибель"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19042,7 +19040,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Энергетическая броня"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19061,7 +19059,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Красный сон"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19081,7 +19079,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Катастрофические видения"
 
 	[tag]"icon path"	[value]"NotableSmallClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19100,7 +19098,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Холод скверны"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19120,7 +19118,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Горячечный бред"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19140,7 +19138,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Песть Пламени"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19160,7 +19158,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Скрытый потенциал"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19180,7 +19178,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Учение Китавы"
 
 	[tag]"icon path"	[value]"NotableSmallClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19200,7 +19198,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Дерзкая защита"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19220,7 +19218,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Самобичевание"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19240,7 +19238,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Фитиль души"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19260,7 +19258,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Синий сон"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19281,7 +19279,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Осада"
 
 	[tag]"icon path"	[value]"NotableSmallClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19301,7 +19299,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Правление Атзири"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19321,7 +19319,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Осторожное планирование"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19341,7 +19339,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Закалённый дух"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19361,7 +19359,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Авангард"
 
 	[tag]"icon path"	[value]"NotableSmallClusterJewel"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19381,7 +19379,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Золотое правило"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19401,7 +19399,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Силовой подход"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19421,7 +19419,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Упорное обучение"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19441,7 +19439,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Изобретательность"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19461,7 +19459,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Плавность движений"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19481,7 +19479,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Инерция"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19501,7 +19499,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Миролюбие"
 
 	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19521,7 +19519,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Закалённая плоть"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19541,7 +19539,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Закалённый разум"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19561,7 +19559,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Бессилие"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19581,7 +19579,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Немощь"
 
 	[tag]"icon path"	[value]"Crimson_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19601,7 +19599,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Низший режим"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
@@ -19621,7 +19619,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"name RU"		[value]"Пиковый режим"
 
 	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
-	[tag]"base class"	[value]"Jewel"
+	[tag]"base class"	[value]"Jewels"
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"

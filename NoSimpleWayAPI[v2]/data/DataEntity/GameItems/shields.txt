@@ -800,7 +800,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Defence: armour"
 	[tag]"item tag"		[value]"Defence: evasion"
 	[tag]"item tag"		[value]"Have implicit"
-	[tag]"item tag"		[value]"Good base for unique"
+	[tag]"item tag"		[value]"Expensive base for unique"
 	[tag]"base armour min"	[value]"148"
 	[tag]"base armour max"	[value]"170"
 	[tag]"base evasion min"	[value]"148"
