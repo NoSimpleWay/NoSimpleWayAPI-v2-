@@ -3385,6 +3385,10 @@ void EDataActionCollection::action_select_cosmetic_element(Entity* _entity, ECus
 	NSWRegisteredButtonGroups::filter_block_colors->assign_colors(cosmetic_element_button->target_color);
 }
 
+void EDataActionCollection::action_create_color_pattern_for_filter_block_color_editor(Entity* _entity, ECustomData* _custom_data, float _d)
+{
+}
+
 //void EDataActionCollection::action_select_loot_filter_pattern(Entity* _entity, ECustomData* _custom_data, float _d)
 //{
 //}
@@ -3656,16 +3660,21 @@ size_t write_to_string(void* ptr, size_t size, size_t count, void* stream)
 
 void EWindowMain::get_poe_ninja_api_prices()
 {
+	std::cout << "Read poe.ninja API!\r\n";
 
 	CURL*		curl;
 	CURLcode	code;
-	std::string	url = "https://poe.ninja/api/data/currencyoverview?league=Affliction&type=Currency";
+
+
+
+
 
 	curl = curl_easy_init();
-
 	//curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 
 	std::string	url_content;
+
+	std::string	url = "https://poe.ninja/api/data/itemoverview?league=Affliction&type=UniqueJewel";
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
@@ -3676,57 +3685,214 @@ void EWindowMain::get_poe_ninja_api_prices()
 	{
 		std::cout << "Something failed!\r\n";
 	}
+	else
+	{
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES);
+		url_content = "";
+	}
+
+
+
+
+
+
+	url = "https://poe.ninja/api/data/itemoverview?league=Affliction&type=UniqueFlask";
+	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+
+	code = curl_easy_perform(curl);
+
+	if (code != CURLE_OK)
+	{
+		std::cout << "Something failed!\r\n";
+	}
+	else
+	{
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES);
+		url_content = "";
+	}
+
+
+
+
+	url = "https://poe.ninja/api/data/itemoverview?league=Affliction&type=UniqueWeapon";
+	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+
+	code = curl_easy_perform(curl);
+
+	if (code != CURLE_OK)
+	{
+		std::cout << "Something failed!\r\n";
+	}
+	else
+	{
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES);
+		url_content = "";
+	}
+	
+
+
+
+
+
+	url = "https://poe.ninja/api/data/itemoverview?league=Affliction&type=UniqueArmour";
+	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+
+	code = curl_easy_perform(curl);
+
+	if (code != CURLE_OK)
+	{
+		std::cout << "Something failed!\r\n";
+	}
+	else
+	{
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES);
+		url_content = "";
+	}
+
+
+
+	
+
+	url = "https://poe.ninja/api/data/itemoverview?league=Affliction&type=UniqueAccessory";
+	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+
+	code = curl_easy_perform(curl);
+
+	if (code != CURLE_OK)
+	{
+		std::cout << "Something failed!\r\n";
+	}
+	else
+	{
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::UNIQUES);
+		url_content = "";
+	}
+
+
+
+	
+
+	url = "https://poe.ninja/api/data/itemoverview?league=Affliction&type=DivinationCard";
+	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &url_content);
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_to_string);
+
+	code = curl_easy_perform(curl);
+
+	if (code != CURLE_OK)
+	{
+		std::cout << "Something failed!\r\n";
+	}
+	else
+	{
+		
+		parse_json_from_poe_ninja(url_content, PoeNinjaAPIMode::DIVINATIONS);
+		url_content = "";
+	}
+
+
+
+
 
 	curl_easy_cleanup(curl);
 
+	
+
+
+}
+
+void EWindowMain::parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAPIMode _mode)
+{
 	//	PARSER
 	//########################################
 	bool raw_read_mode = false;
 	//bool read_as_parameter = true;
 	int read_mode = 0;
 	int depth = 0;
+	int links = 0;
+	int count = 0;
 
 	std::string buff = "", param = "", value = "";
-	std::string read_buffer[16]{""};
+	std::string read_buffer[16]{ "" };
 
-	std::string currency_name = "";
-	float currency_value = 0;
+	std::string item_name = "";
+	std::string details_id = "";
+	float item_value = 0;
 
-	for (int i = 0; i < url_content.length(); i++)
+	bool is_banned = false;
+
+	static std::string banned_detail_id[]
 	{
-		char chr = url_content.at(i);
+		"asphyxias-wrath-two-point-arrow-quiver",
+		""
+	};
+
+
+	//reset cost of all uniques
+	if (_mode == PoeNinjaAPIMode::UNIQUES)
+	{
+		for (int i = 0; i < EWindowMain::registered_data_entity_game_item_list.size(); i++)
+		{
+			EDataEntity*
+			data_entity = EWindowMain::registered_data_entity_game_item_list[i];
+
+			if (DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Unique item", data_entity))
+			{
+				for (EDataTag* tag : data_entity->tag_list)
+				{
+					if (tag->tag_name.ID == ERegisteredStrings::worth.ID)
+					{
+						tag->tag_value_list[0] = ERegisteredStrings::trash;
+					}
+				}
+			}
+		}
+	}
+
+
+	for (int i = 0; i < _url_content.length(); i++)
+	{
+		char chr = _url_content.at(i);
 
 		if (chr == '"') { raw_read_mode = !raw_read_mode; }
 
 		//add char to buff
 		if
-		(
 			(
-				((chr != '{') && (chr != '}') && (chr != ':') && (chr != ','))
-				||
-				(raw_read_mode)
-			)
-			&&
-			(chr != '"')
-		)
+				(
+					((chr != '{') && (chr != '}') && (chr != ':') && (chr != ','))
+					||
+					(raw_read_mode)
+					)
+				&&
+				(chr != '"')
+				)
 		{
 			buff += chr;
 		}
 
-		
+
 
 		if (chr == '{') { depth++; }
 		if (chr == '}') { depth--; }
 
 		//finalize buff, read to param or value
 		if
-		(
 			(
-				((chr == '{') || (chr == '}') || (chr == ':') || (chr == ','))
-				&&
-				(!raw_read_mode)
-			)
-		)
+				(
+					((chr == '{') || (chr == '}') || (chr == ':') || (chr == ','))
+					&&
+					(!raw_read_mode)
+					)
+				)
 		{
 			read_buffer[read_mode] = buff;
 			//read_mode++;
@@ -3737,16 +3903,212 @@ void EWindowMain::get_poe_ninja_api_prices()
 				EInputCore::logger_param(read_buffer[0], read_buffer[1]);
 			}*/
 
-			if ((read_buffer[0] == "currencyTypeName") && (read_mode == 1))
+			if
+			(
+				(
+					((read_buffer[0] == "currencyTypeName")	&& (_mode == PoeNinjaAPIMode::CURRENCY))
+					||
+					(
+						(read_buffer[0] == "name")
+						&&
+						(
+							(_mode == PoeNinjaAPIMode::UNIQUES)
+							||
+							(_mode == PoeNinjaAPIMode::DIVINATIONS)
+						)
+					)
+				)
+				&& (read_mode == 1)
+			)
 			{
-				currency_name = read_buffer[1];
+				links = 0;
+				count = 0;
+				is_banned = false;
+
+				details_id = "";
+				item_name = read_buffer[1];
 			}
-			
-			if ((read_buffer[0] == "chaosEquivalent") && (read_mode == 1))
+
+			//links
+			if
+			(
+				(read_buffer[0] == "links")
+				&&
+				(_mode == PoeNinjaAPIMode::UNIQUES)
+				&&
+				(read_mode == 1)
+			)
 			{
-				currency_value = std::stof(read_buffer[1]);
+				links = EStringUtils::safe_convert_string_to_number(read_buffer[1], 0, 6);
+			}
+
+			//count
+			if
+			(
+				(read_buffer[0] == "listingCount")
+				&&
+				(read_mode == 1)
+			)
+			{
+				count = EStringUtils::safe_convert_string_to_number(read_buffer[1], 0, 999999);
+			}
+
+			//detailsId
+			if
+			(
+				(read_buffer[0] == "detailsId")
+				&&
+				(read_mode == 1)
+			)
+			{
+				details_id =read_buffer[1];
+			}
+
+			if
+			(
+				(
+					((read_buffer[0] == "chaosEquivalent")	&& (_mode == PoeNinjaAPIMode::CURRENCY))
+					||
+					(
+						(read_buffer[0] == "chaosValue")
+						&&
+						(
+							(_mode == PoeNinjaAPIMode::UNIQUES)
+							||
+							(_mode == PoeNinjaAPIMode::DIVINATIONS)
+						)
+					)
+					
+				)
+				&&
+				(read_mode == 1)
+			)
+			{
+				item_value = std::stof(read_buffer[1]);
+
+				//EInputCore::logger_param(item_name, item_value);
 				
-				EInputCore::logger_param(currency_name, currency_value);
+				bool existed_item = false;
+
+				
+
+				for (int k = 0; k < 1000; k++)
+				{
+					if (banned_detail_id[k] == "") { break; }
+					if (banned_detail_id[k] == details_id) { is_banned = true; break; }
+				}
+
+				//only 1-4 links, if that weapon or armour
+				if
+				(
+					((links <= 4) || (_mode != PoeNinjaAPIMode::UNIQUES))
+					&&
+					(!is_banned)
+				)
+				{
+					for (int i = 0; i < EWindowMain::registered_data_entity_game_item_list.size(); i++)
+					{
+						EDataEntity*
+							data_entity = EWindowMain::registered_data_entity_game_item_list[i];
+
+
+
+						//set new
+						if
+							(
+								(
+									(_mode == PoeNinjaAPIMode::UNIQUES)
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Unique item", data_entity))
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "name EN", item_name, data_entity))
+									)
+								||
+								(
+									((_mode == PoeNinjaAPIMode::DIVINATIONS))
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "base class", "Divination Cards", data_entity))
+									&&
+									(DataEntityUtils::is_exist_tag_by_name_and_value(0, "name EN", item_name, data_entity))
+									)
+								)
+						{
+							existed_item = true;
+							for (EDataTag* tag : data_entity->tag_list)
+							{
+								if (tag->tag_name.ID == ERegisteredStrings::worth.ID)
+								{
+									std::string
+										stack_multiplier_text = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::stack_multiplier, data_entity);
+
+									int stack_multiplier = 0;
+
+									if (_mode == PoeNinjaAPIMode::CURRENCY)
+									{
+										if (stack_multiplier_text != "")
+										{
+											stack_multiplier = EStringUtils::safe_convert_string_to_number(stack_multiplier_text, 0, 99999);
+										}
+									}
+									else
+									{
+										stack_multiplier = 1;
+									}
+
+									int total_cost = round(item_value * (float)stack_multiplier);
+
+
+									if (total_cost <= 1)
+									{
+										tag->tag_value_list[0] = ERegisteredStrings::trash;
+									}
+									else
+										if (total_cost <= 3)
+										{
+											tag->tag_value_list[0] = ERegisteredStrings::common;
+										}
+										else
+											if (total_cost <= 10)
+											{
+												tag->tag_value_list[0] = ERegisteredStrings::moderate;
+											}
+											else
+												if (total_cost <= 50)
+												{
+													tag->tag_value_list[0] = ERegisteredStrings::rare;
+												}
+												else
+													if (total_cost <= 200)
+													{
+														tag->tag_value_list[0] = ERegisteredStrings::expensive;
+													}
+													else
+													{
+														tag->tag_value_list[0] = ERegisteredStrings::very_expensive;
+													}
+
+									//if ((_mode == PoeNinjaAPIMode::DIVINATIONS))
+									{
+										EInputCore::logger_param(item_name + " new worth: ", tag->tag_value_list[0].string_value);
+									}
+
+									break;
+								}
+							}
+
+							break;
+						}
+
+
+					}
+
+					if (!existed_item)
+					{
+						EInputCore::logger_simple_error(item_name);
+					}
+				}
+
+
 			}
 
 
@@ -3757,14 +4119,14 @@ void EWindowMain::get_poe_ninja_api_prices()
 		{
 			read_mode = 0;
 
+			//links = 0;
+
 			for (int k = 0; k < 16; k++)
 			{
 				read_buffer[k] = "";
 			}
 		}
 	}
-
-
 }
 
 //CONSTRUCTOR
@@ -3799,7 +4161,7 @@ EWindowMain::EWindowMain()
 
 
 
-	get_poe_ninja_api_prices();
+	
 
 
 
@@ -3990,7 +4352,6 @@ EWindowMain::EWindowMain()
 
 
 
-
 	add_game_item_data_entity_to_list();
 
 	register_filter_rules();
@@ -4006,6 +4367,7 @@ EWindowMain::EWindowMain()
 	register_loot_simulator_patterns();
 
 
+	get_poe_ninja_api_prices();
 
 
 	Entity* jc_entity = new Entity();
@@ -4157,20 +4519,15 @@ EWindowMain::EWindowMain()
 	//color editor
 	if (true)
 	{
-		main_button_group = EButtonGroup::create_color_editor_group(new ERegionGabarite(200.0f, 200.0f, 980.0f, 420.0f), EGUIStyle::active_style);
-		//main_button_group = new EButtonGroup(new ERegionGabarite(200.0f, 200.0f, 980.0f, 420.0f));
-		//main_button_group->init_as_root_group(this);
-		main_button_group->parent_window = this;
-		main_button_group->button_group_is_active = false;
-		main_button_group->auto_superfocused = true;
+		EButtonGroupSimpleColorEditor*
+		simple_color_editor = EButtonGroupSimpleColorEditor::create_color_editor_group(new ERegionGabarite(350.0f, 260.0f), EGUIStyle::active_style, this);
 
-		EButtonGroup::color_editor_group = main_button_group;
+		EButtonGroupSimpleColorEditor::registered_color_editor_group = simple_color_editor;
 
 		//main_button_group->can_be_moved = true;
 
-		button_group_list.push_back(main_button_group);
-		//EButtonGroup::refresh_button_group(main_button_group);
-		main_button_group->need_refresh = true;
+		button_group_list.push_back(simple_color_editor);
+		simple_color_editor->need_refresh = true;
 
 
 	}
@@ -4362,10 +4719,10 @@ EWindowMain::EWindowMain()
 		{
 			if
 				(
-					EStringUtils::to_lower(DataEntityUtils::get_tag_value_by_name(0, "data type", de))
+					EStringUtils::to_lower(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::data_type, de))
 					==
 					"gem"
-					)
+				)
 			{
 				suitable_data_entity_list.push_back(de);
 			}
@@ -4482,7 +4839,7 @@ EWindowMain::EWindowMain()
 						);
 
 						std::string
-							path_to_icon = DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_global_list[rand() % EDataEntity::data_entity_global_list.size()]);
+						path_to_icon = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::icon_path, EDataEntity::data_entity_global_list[rand() % EDataEntity::data_entity_global_list.size()]);
 
 						if (path_to_icon != "")
 						{
@@ -4692,7 +5049,7 @@ EWindowMain::EWindowMain()
 					group_for_imitation_buttons->add_button_to_working_group(button_simulator);
 
 					std::string
-						path_to_icon = DataEntityUtils::get_tag_value_by_name(0, "icon path", EDataEntity::data_entity_global_list[rand() % EDataEntity::data_entity_global_list.size()]);
+						path_to_icon = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::icon_path, EDataEntity::data_entity_global_list[rand() % EDataEntity::data_entity_global_list.size()]);
 
 					button_simulator->make_as_default_button_with_icon
 					(
@@ -5535,8 +5892,8 @@ EWindowMain::EWindowMain()
 
 		////////////////////////////////////////////////////////
 		DataEntityTagFilter
-			data_entity_filter;
-		data_entity_filter.target_tag = "data type";
+		data_entity_filter;
+		data_entity_filter.target_tag.set_tag_ID_by_string("data type");
 		data_entity_filter.add_new_suitable_value("Game item");
 
 		EFilterRule*
@@ -7887,7 +8244,7 @@ EWindowMain::EWindowMain()
 	}
 
 
-	NSWRegisteredButtonGroups::register_filter_block_colors_group();
+	NSWRegisteredButtonGroups::register_filter_block_colors_group_for_filter_block();
 
 
 	////////////////////////////////////////////////////////////////
@@ -8718,7 +9075,7 @@ void EWindowMain::parse_raw_explicit_table()
 			//no duplicates, unique data_entity
 			if (duplicate_id == -1)
 			{
-				new_tag.tag_name = new std::string(EStringUtils::string_array[0]);
+				new_tag.tag_name.set_tag_ID_by_string(EStringUtils::string_array[0]);
 
 				new_raw_entity.mod_name.localisations[NSW_localisation_EN] = raw_mod_name_EN;
 				new_raw_entity.mod_name.localisations[NSW_localisation_RU] = raw_mod_name_RU;
@@ -8841,7 +9198,7 @@ void EWindowMain::load_config_from_disc()
 			{
 				//for (HRA_color_collection* color_collection : Helper::registered_color_list)
 				HRA_color_collection*
-					color_collection = new HRA_color_collection();
+				color_collection = new HRA_color_collection();
 				Helper::registered_color_list.push_back(color_collection);
 
 				color_collection->target_color.r = EStringUtils::safe_convert_string_to_number(EStringUtils::string_array[1], 0, 255) / 255.0f;
@@ -10473,7 +10830,7 @@ void EWindowMain::register_filter_rules()
 	jc_filter_rule->stored_action_for_data_entity_group = &EDataActionCollection::action_add_wide_item_to_group_receiver;
 
 	jc_filter = DataEntityTagFilter();
-	jc_filter.target_tag = "data type";
+	jc_filter.target_tag.set_tag_ID_by_string("data type");
 	jc_filter.add_new_suitable_value("Game item");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 
@@ -10496,7 +10853,7 @@ void EWindowMain::register_filter_rules()
 
 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Base Class");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_BASE_CLASS] = jc_filter_rule;
@@ -10514,7 +10871,7 @@ void EWindowMain::register_filter_rules()
 
 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Influence");
 
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
@@ -10530,7 +10887,7 @@ void EWindowMain::register_filter_rules()
 
 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Gem");
 
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
@@ -10547,7 +10904,7 @@ void EWindowMain::register_filter_rules()
 
 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Explicit");
 
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
@@ -10564,7 +10921,7 @@ void EWindowMain::register_filter_rules()
 
 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Cluster passive");
 
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
@@ -10581,7 +10938,7 @@ void EWindowMain::register_filter_rules()
 
 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Enchantment");
 
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
@@ -10610,14 +10967,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Base Class");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//DELETED
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -10639,14 +10996,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Base Class");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "name EN";
+		jc_filter.target_tag.set_tag_ID_by_string("name EN");
 		jc_filter.add_new_suitable_value("Helmets");
 		jc_filter.add_new_suitable_value("Gloves");
 		jc_filter.add_new_suitable_value("Boots");
@@ -10684,7 +11041,7 @@ void EWindowMain::register_filter_rules()
 
 		//DELETED
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -10722,14 +11079,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Influence");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//DELETED
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -10755,14 +11112,14 @@ void EWindowMain::register_filter_rules()
 
 	//filter by game item
 	jc_filter = DataEntityTagFilter();
-	jc_filter.target_tag = "data type";
+	jc_filter.target_tag.set_tag_ID_by_string("data type");
 	jc_filter.add_new_suitable_value("Enchantment");
 	jc_filter_rule->required_tag_list.push_back(jc_filter);
 	//
 
 	//DELETED
 	jc_filter = DataEntityTagFilter();
-	jc_filter.target_tag = "item tag";
+	jc_filter.target_tag.set_tag_ID_by_string("item tag");
 	jc_filter.add_new_banned_value("Deleted");
 	jc_filter.add_new_banned_value("Hidden item");
 	jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -10787,14 +11144,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Cluster passive");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//DELETED
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -10825,14 +11182,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//DELETED
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -10854,20 +11211,20 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Deleted");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
 		//HIDDEN
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
 		//
@@ -10890,28 +11247,28 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "base class";
+		jc_filter.target_tag.set_tag_ID_by_string("base class");
 		jc_filter.add_new_suitable_value("Divination cards");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Introduced: Affliction league");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -10936,14 +11293,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "base class";
+		jc_filter.target_tag.set_tag_ID_by_string("base class");
 		jc_filter.add_new_suitable_value("Stackable currency");
 		jc_filter.add_new_suitable_value("Incubators");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
@@ -10951,7 +11308,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Introduced: Affliction league");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -10959,7 +11316,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter.add_new_banned_value("Omen");
@@ -10987,14 +11344,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "base class";
+		jc_filter.target_tag.set_tag_ID_by_string("base class");
 		jc_filter.add_new_suitable_value("Rings");
 		jc_filter.add_new_suitable_value("Amulets");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
@@ -11002,7 +11359,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Introduced: Affliction league");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -11010,7 +11367,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -11034,14 +11391,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "base class";
+		jc_filter.target_tag.set_tag_ID_by_string("base class");
 		jc_filter.add_new_suitable_value("Tincture");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -11049,7 +11406,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -11073,28 +11430,28 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "base class";
+		jc_filter.target_tag.set_tag_ID_by_string("base class");
 		jc_filter.add_new_suitable_value("Charms");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -11118,28 +11475,28 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "base class";
+		jc_filter.target_tag.set_tag_ID_by_string("base class");
 		jc_filter.add_new_suitable_value("Corpses");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -11514,21 +11871,21 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "base class";
+		jc_filter.target_tag.set_tag_ID_by_string("base class");
 		jc_filter.add_new_suitable_value("Divination cards");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by class "divination"
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "worth";
+		jc_filter.target_tag.set_tag_ID_by_string("worth");
 		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
 		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
 		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
@@ -11562,7 +11919,7 @@ void EWindowMain::register_filter_rules()
 
 		jc_filter = DataEntityTagFilter();
 		jc_filter.can_be_configured = false;
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -11570,20 +11927,20 @@ void EWindowMain::register_filter_rules()
 
 		jc_filter = DataEntityTagFilter();
 		jc_filter.can_be_configured = false;
-		jc_filter.target_tag = "base class";
+		jc_filter.target_tag.set_tag_ID_by_string("base class");
 		jc_filter.add_new_suitable_value("Stackable currency");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		jc_filter = DataEntityTagFilter();
 		jc_filter.can_be_configured = false;
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Basic currency");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "worth";
+		jc_filter.target_tag.set_tag_ID_by_string("worth");
 		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
 		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
 		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
@@ -11613,7 +11970,7 @@ void EWindowMain::register_filter_rules()
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
 		jc_filter.can_be_configured = false;
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -11621,7 +11978,7 @@ void EWindowMain::register_filter_rules()
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
 		jc_filter.can_be_configured = false;
-		jc_filter.target_tag = "base class";
+		jc_filter.target_tag.set_tag_ID_by_string("base class");
 		jc_filter.add_new_suitable_value("Incubators");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -11629,7 +11986,7 @@ void EWindowMain::register_filter_rules()
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
 		jc_filter.can_be_configured = false;
-		jc_filter.target_tag = "worth";
+		jc_filter.target_tag.set_tag_ID_by_string("worth");
 		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
 		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
 		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
@@ -11658,21 +12015,21 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Oil item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "worth";
+		jc_filter.target_tag.set_tag_ID_by_string("worth");
 		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
 		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
 		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
@@ -11705,7 +12062,7 @@ void EWindowMain::register_filter_rules()
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
 		jc_filter.can_be_configured = false;
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -11713,14 +12070,14 @@ void EWindowMain::register_filter_rules()
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
 		jc_filter.can_be_configured = false;
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Catalyst item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "worth";
+		jc_filter.target_tag.set_tag_ID_by_string("worth");
 		jc_filter.add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash"));
 		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
 		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
@@ -11752,14 +12109,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "base class";
+		jc_filter.target_tag.set_tag_ID_by_string("base class");
 		jc_filter.add_new_suitable_value("Heist Cloaks", ELocalisationText::get_localisation_by_key("tag_heist_cloaks"));
 		jc_filter.add_new_suitable_value("Heist Gear", ELocalisationText::get_localisation_by_key("tag_heist_gear"));
 		jc_filter.add_new_suitable_value("Heist Brooches", ELocalisationText::get_localisation_by_key("tag_heist_brooches"));
@@ -11769,7 +12126,7 @@ void EWindowMain::register_filter_rules()
 
 		// //filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "heist level";
+		jc_filter.target_tag.set_tag_ID_by_string("heist level");
 		jc_filter.add_new_suitable_value("2", ELocalisationText::get_localisation_by_key("tag_heist_level_2"));
 		jc_filter.add_new_suitable_value("3", ELocalisationText::get_localisation_by_key("tag_heist_level_3"));
 		jc_filter.add_new_suitable_value("4", ELocalisationText::get_localisation_by_key("tag_heist_level_4"));
@@ -11779,7 +12136,7 @@ void EWindowMain::register_filter_rules()
 
 		//DELETED
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -11810,14 +12167,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "heist price";
+		jc_filter.target_tag.set_tag_ID_by_string("heist price");
 		jc_filter.add_new_suitable_value("Low", ELocalisationText::get_localisation_by_key("tag_price_low"));			jc_filter.set_text_color(0.6f, 0.55f, 0.5f, 1.0f);
 		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_price_moderate"));		jc_filter.set_text_color(0.5f, 1.0f, 0.7f, 1.0f);
 		jc_filter.add_new_suitable_value("High", ELocalisationText::get_localisation_by_key("tag_price_high"));			jc_filter.set_text_color(0.5f, 0.7f, 1.0f, 1.0f);
@@ -11829,7 +12186,7 @@ void EWindowMain::register_filter_rules()
 
 		//DELETED
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -11863,14 +12220,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "Base tier";
+		jc_filter.target_tag.set_tag_ID_by_string("Base tier");
 		jc_filter.add_new_suitable_value("Acceptable", ELocalisationText::get_localisation_by_key("tag_tier_acceptable"));				jc_filter.set_text_color(0.60f, 0.65f, 0.70f, 1.0f);
 		jc_filter.add_new_suitable_value("Good", ELocalisationText::get_localisation_by_key("tag_tier_good"));					jc_filter.set_text_color(0.60f, 1.00f, 0.70f, 1.0f);
 		jc_filter.add_new_suitable_value("Best", ELocalisationText::get_localisation_by_key("tag_tier_best"));					jc_filter.set_text_color(1.00f, 0.80f, 0.60f, 1.0f);
@@ -11882,7 +12239,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "base family";
+		jc_filter.target_tag.set_tag_ID_by_string("base family");
 		jc_filter.add_new_suitable_value("Basic", ELocalisationText::get_localisation_by_key("tag_tier_basic"));
 		jc_filter.add_new_suitable_value("Ritual", ELocalisationText::get_localisation_by_key("tag_tier_ritual"));
 		jc_filter.add_new_suitable_value("Heist", ELocalisationText::get_localisation_by_key("tag_tier_heist"));
@@ -11899,7 +12256,7 @@ void EWindowMain::register_filter_rules()
 
 		//DELETED
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_banned_value("Deleted");
 		jc_filter.add_new_banned_value("Hidden item");
 		jc_filter_rule->banned_tag_list.push_back(jc_filter);
@@ -11926,7 +12283,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Good base for unique");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -11952,7 +12309,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Expensive base for unique");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -11983,14 +12340,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("League: Heist");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -12015,14 +12372,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("League: Ritual");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -12047,14 +12404,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Introduced: Scourge league");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -12079,14 +12436,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Introduced: Archnemesis league");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -12111,14 +12468,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Introduced: Kalandra league");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -12143,14 +12500,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Introduced: Forbidden Sanctum league");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -12178,21 +12535,21 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Game item");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "item tag";
+		jc_filter.target_tag.set_tag_ID_by_string("item tag");
 		jc_filter.add_new_suitable_value("Awakened gem");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter "item tag" by 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "worth";
+		jc_filter.target_tag.set_tag_ID_by_string("worth");
 		jc_filter.add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common"));
 		jc_filter.add_new_suitable_value("Moderate", ELocalisationText::get_localisation_by_key("tag_moderate"));
 		jc_filter.add_new_suitable_value("Rare", ELocalisationText::get_localisation_by_key("tag_rare"));
@@ -12232,7 +12589,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Explicit");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
@@ -12256,14 +12613,14 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Explicit");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "explicit tag";
+		jc_filter.target_tag.set_tag_ID_by_string("explicit tag");
 		jc_filter.add_new_suitable_value("Undefined veil");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
@@ -12285,14 +12642,14 @@ void EWindowMain::register_filter_rules()
 		//filter by game item
 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Explicit");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "explicit tag";
+		jc_filter.target_tag.set_tag_ID_by_string("explicit tag");
 		jc_filter.add_new_suitable_value("Incursion");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
@@ -12314,14 +12671,14 @@ void EWindowMain::register_filter_rules()
 		//filter by game item
 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Explicit");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 		//
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "explicit tag";
+		jc_filter.target_tag.set_tag_ID_by_string("explicit tag");
 		jc_filter.add_new_suitable_value("Other");
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
 
@@ -12343,7 +12700,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "data type";
+		jc_filter.target_tag.set_tag_ID_by_string("data type");
 		jc_filter.add_new_suitable_value("Explicit");
 		jc_filter.can_be_configured = false;
 		jc_filter_rule->required_tag_list.push_back(jc_filter);
@@ -12351,7 +12708,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "tier";
+		jc_filter.target_tag.set_tag_ID_by_string("tier");
 		jc_filter.add_new_suitable_value("1");
 		jc_filter.add_new_suitable_value("2");
 		jc_filter.add_new_suitable_value("3");
@@ -12363,7 +12720,7 @@ void EWindowMain::register_filter_rules()
 
 		//filter by game item
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "attribute tag";
+		jc_filter.target_tag.set_tag_ID_by_string("attribute tag");
 		//jc_filter.add_new_suitable_value("damage", ELocalisationText::get_localisation_by_key("tag_damage"));
 		//jc_filter.add_new_suitable_value("resource", ELocalisationText::get_localisation_by_key("tag_resource"));
 		//jc_filter.add_new_suitable_value("mana",				ELocalisationText::get_localisation_by_key("tag_mana"));
@@ -12392,7 +12749,7 @@ void EWindowMain::register_filter_rules()
 
 
 		jc_filter = DataEntityTagFilter();
-		jc_filter.target_tag = "suitable class";
+		jc_filter.target_tag.set_tag_ID_by_string("suitable class");
 		jc_filter.add_new_suitable_value("Gloves", ELocalisationText::get_localisation_by_key("tag_gloves"));				jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
 		jc_filter.add_new_suitable_value("Helmets", ELocalisationText::get_localisation_by_key("tag_helmets"));				jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
 		jc_filter.add_new_suitable_value("Boots", ELocalisationText::get_localisation_by_key("tag_boots"));					jc_filter.set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
@@ -16265,11 +16622,11 @@ void EWindowMain::parse_filter_text_lines(EButtonGroupFilterBlock* _target_filte
 												(!DataEntityUtils::is_exist_tag_by_name_and_value(0, "item tag", "Hidden item", de))
 												&&
 												(
-													(DataEntityUtils::get_tag_value_by_name(0, "name EN", de) == buffer_text)
+													(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, de) == buffer_text)
 													||
-													(DataEntityUtils::get_tag_value_by_name(0, "base name", de) == buffer_text)
+													(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, de) == buffer_text)
 													||
-													(DataEntityUtils::get_tag_value_by_name(0, "short name", de) == buffer_text)
+													(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::short_name, de) == buffer_text)
 													)
 												&&
 												(EFilterRule::matched_by_filter_rule(de, filter_rule, ""))
@@ -16852,7 +17209,7 @@ void EWindowMain::add_game_item_data_entity_to_list()
 			int index = 0;
 
 			std::string
-				data_type_name = DataEntityUtils::get_tag_value_by_name(0, "data type", data_entity);
+				data_type_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::data_type, data_entity);
 
 			if (data_type_name == "Game item")
 			{
@@ -17237,7 +17594,7 @@ void EWindowMain::register_new_folder_gems()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Awakened gem");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -17248,7 +17605,7 @@ void EWindowMain::register_new_folder_gems()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -17293,7 +17650,7 @@ void EWindowMain::register_new_folder_boss_loot()
 			//ONLY BOSS DROP
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;							tag_filter->can_be_configured = false;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Boss drop");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 			//
@@ -17302,7 +17659,7 @@ void EWindowMain::register_new_folder_boss_loot()
 
 			//UNIQUES, FRAGMENTS, CURRENCY, ...
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Unique item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 			//
@@ -17317,7 +17674,7 @@ void EWindowMain::register_new_folder_boss_loot()
 			if (false)
 			{
 				tag_filter = new DataEntityTagFilter;
-				tag_filter->target_tag = "item tag";
+				tag_filter->target_tag.set_tag_ID_by_string("item tag");
 				tag_filter->add_new_suitable_value("Loot source: Tul");
 				tag_filter->add_new_suitable_value("Loot source: Xoph");
 				tag_filter->add_new_suitable_value("Loot source: Uul-Netol");
@@ -17381,7 +17738,7 @@ void EWindowMain::register_new_folder_boss_loot()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -17415,7 +17772,7 @@ void EWindowMain::register_new_folder_boss_loot()
 			//ONLY BOSS DROP
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;							tag_filter->can_be_configured = false;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Boss drop");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 			//
@@ -17424,7 +17781,7 @@ void EWindowMain::register_new_folder_boss_loot()
 
 			//UNIQUES, FRAGMENTS, CURRENCY, ...
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Map Fragments", ELocalisationText::get_localisation_by_key("tag_map_fragments"));
 			tag_filter->add_new_suitable_value("Stackable Currency", ELocalisationText::get_localisation_by_key("tag_map_stackable_currency"));
 			tag_filter->add_new_suitable_value("Divination Cards", ELocalisationText::get_localisation_by_key("tag_map_divination_cards"));
@@ -17443,7 +17800,7 @@ void EWindowMain::register_new_folder_boss_loot()
 			if (false)
 			{
 				tag_filter = new DataEntityTagFilter;
-				tag_filter->target_tag = "item tag";
+				tag_filter->target_tag.set_tag_ID_by_string("item tag");
 				tag_filter->add_new_suitable_value("Loot source: Tul");
 				tag_filter->add_new_suitable_value("Loot source: Xoph");
 				tag_filter->add_new_suitable_value("Loot source: Uul-Netol");
@@ -17507,7 +17864,7 @@ void EWindowMain::register_new_folder_boss_loot()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -17553,18 +17910,18 @@ void EWindowMain::register_pattern_divinations_expensive()
 			game_item_generator->forceful_warn_when_hided = true;
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "worth";
+			tag_filter->target_tag.set_tag_ID_by_string("worth");
 			tag_filter->add_new_suitable_value("Expensive");
 			tag_filter->add_new_suitable_value("Very expensive");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -17606,17 +17963,17 @@ void EWindowMain::register_pattern_divinations_rare()
 			game_item_generator->forceful_warn_when_hided = true;
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "worth";
+			tag_filter->target_tag.set_tag_ID_by_string("worth");
 			tag_filter->add_new_suitable_value("Rare");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -17658,17 +18015,17 @@ void EWindowMain::register_pattern_divinations_moderate()
 			game_item_generator->forceful_warn_when_hided = true;
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "worth";
+			tag_filter->target_tag.set_tag_ID_by_string("worth");
 			tag_filter->add_new_suitable_value("Moderate");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -17709,17 +18066,17 @@ void EWindowMain::register_pattern_divinations_cheap()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "worth";
+			tag_filter->target_tag.set_tag_ID_by_string("worth");
 			tag_filter->add_new_suitable_value("Common");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -17760,7 +18117,7 @@ void EWindowMain::register_pattern_divinations_by_worth()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -17768,7 +18125,7 @@ void EWindowMain::register_pattern_divinations_by_worth()
 			game_item_generator->add_default_worth_tags();
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -17815,14 +18172,14 @@ void EWindowMain::register_pattern_flasks()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Utility Flasks");
 			tag_filter->add_new_suitable_value("Life Flasks");
 			tag_filter->add_new_suitable_value("Hybrid Flasks");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -17845,14 +18202,14 @@ void EWindowMain::register_pattern_flasks()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Utility Flasks");
 			tag_filter->add_new_suitable_value("Life Flasks");
 			tag_filter->add_new_suitable_value("Hybrid Flasks");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -17895,7 +18252,7 @@ void EWindowMain::register_new_folder_specific_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Incursion Items");
 			tag_filter->add_new_suitable_value("Memories");
 			tag_filter->add_new_suitable_value("Misc Map Items");
@@ -17903,7 +18260,7 @@ void EWindowMain::register_new_folder_specific_items()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -17938,17 +18295,17 @@ void EWindowMain::register_new_folder_specific_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Vial item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18001,12 +18358,12 @@ void EWindowMain::register_pattern_scouting_report()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Scouting Report");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18042,12 +18399,12 @@ void EWindowMain::register_pattern_set_fragment()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Piece of set");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18083,12 +18440,12 @@ void EWindowMain::register_pattern_reliquary_keys()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Vault Keys");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18124,12 +18481,12 @@ void EWindowMain::register_pattern_scarabs()
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
 			tag_filter->can_be_configured = false;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Scarab item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "scarab tier";
+			tag_filter->target_tag.set_tag_ID_by_string("scarab tier");
 			tag_filter->add_new_suitable_value("Rusted");				tag_filter->set_text_color(0.9f, 0.6f, 0.3f, 1.0f);
 			tag_filter->add_new_suitable_value("Polished");				tag_filter->set_text_color(0.5f, 0.8f, 0.9f, 1.0f);
 			tag_filter->add_new_suitable_value("Gilded");				tag_filter->set_text_color(0.9f, 0.8f, 0.5f, 1.0f);
@@ -18137,7 +18494,7 @@ void EWindowMain::register_pattern_scarabs()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18173,12 +18530,12 @@ void EWindowMain::register_pattern_all_map_fragments()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Map Fragments");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18213,12 +18570,12 @@ void EWindowMain::register_pattern_map_splinters()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Splinter item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18532,7 +18889,7 @@ void EWindowMain::register_new_folder_delve_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Delve fossil");
 			tag_filter->can_be_configured = false;
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18540,7 +18897,7 @@ void EWindowMain::register_new_folder_delve_items()
 			game_item_generator->add_default_worth_tags(0, 4);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18577,12 +18934,12 @@ void EWindowMain::register_new_folder_delve_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Delve resonator");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18619,12 +18976,12 @@ void EWindowMain::register_new_folder_delve_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Body armours");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18672,12 +19029,12 @@ void EWindowMain::register_new_folder_delve_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Gloves");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18721,12 +19078,12 @@ void EWindowMain::register_new_folder_delve_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Helmets");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18774,12 +19131,12 @@ void EWindowMain::register_new_folder_delve_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Boots");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18828,12 +19185,12 @@ void EWindowMain::register_new_folder_delve_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Rings");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18897,12 +19254,12 @@ void EWindowMain::register_new_folder_delve_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Belts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -18966,12 +19323,12 @@ void EWindowMain::register_new_folder_delve_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Amulets");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -19071,12 +19428,12 @@ void EWindowMain::register_new_folder_breach_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Breach item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Piece of set");
 			tag_filter->add_new_banned_value("Splinter item");
@@ -19114,12 +19471,12 @@ void EWindowMain::register_new_folder_breach_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Breach blessing");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -19157,17 +19514,17 @@ void EWindowMain::register_new_folder_breach_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Breach item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Splinter item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -19203,12 +19560,12 @@ void EWindowMain::register_new_folder_breach_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Breach unique item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -19732,14 +20089,14 @@ void EWindowMain::register_new_pattern_uniques()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Unique item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Good for start");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -19747,7 +20104,7 @@ void EWindowMain::register_new_pattern_uniques()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -19785,7 +20142,7 @@ void EWindowMain::register_new_pattern_uniques()
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
 			tag_filter->can_be_configured = false;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Unique item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -19797,7 +20154,7 @@ void EWindowMain::register_new_pattern_uniques()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Runic base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -19857,12 +20214,12 @@ void EWindowMain::register_new_folder_heist_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Heist base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 
 			tag_filter->add_new_suitable_value("Two Hand Axes");
 			tag_filter->add_new_suitable_value("Two Hand Swords");
@@ -19888,7 +20245,7 @@ void EWindowMain::register_new_folder_heist_items()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -19928,7 +20285,7 @@ void EWindowMain::register_new_folder_heist_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Heist Cloaks", ELocalisationText::get_localisation_by_key("tag_heist_cloaks"));
 			tag_filter->add_new_suitable_value("Heist Gear", ELocalisationText::get_localisation_by_key("tag_heist_gear"));
 			tag_filter->add_new_suitable_value("Heist Brooches", ELocalisationText::get_localisation_by_key("tag_heist_brooches"));
@@ -19936,7 +20293,7 @@ void EWindowMain::register_new_folder_heist_items()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "heist level";
+			tag_filter->target_tag.set_tag_ID_by_string("heist level");
 			tag_filter->add_new_suitable_value("2", ELocalisationText::get_localisation_by_key("tag_heist_level_2"));
 			tag_filter->add_new_suitable_value("3", ELocalisationText::get_localisation_by_key("tag_heist_level_3"));
 			tag_filter->add_new_suitable_value("4", ELocalisationText::get_localisation_by_key("tag_heist_level_4"));
@@ -19946,7 +20303,7 @@ void EWindowMain::register_new_folder_heist_items()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -19985,7 +20342,7 @@ void EWindowMain::register_new_folder_heist_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "heist price";
+			tag_filter->target_tag.set_tag_ID_by_string("heist price");
 			tag_filter->add_new_suitable_value("Priceless", ELocalisationText::get_localisation_by_key("tag_price_priceless"));
 			tag_filter->add_new_suitable_value("Precious", ELocalisationText::get_localisation_by_key("tag_price_precious"));
 			tag_filter->add_new_suitable_value("High", ELocalisationText::get_localisation_by_key("tag_price_high"));
@@ -19996,7 +20353,7 @@ void EWindowMain::register_new_folder_heist_items()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20034,19 +20391,19 @@ void EWindowMain::register_new_folder_heist_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Heist contract");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Quest Items");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20084,7 +20441,7 @@ void EWindowMain::register_new_folder_heist_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Contracts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -20093,7 +20450,7 @@ void EWindowMain::register_new_folder_heist_items()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20131,7 +20488,7 @@ void EWindowMain::register_new_folder_heist_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Blueprints");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -20140,7 +20497,7 @@ void EWindowMain::register_new_folder_heist_items()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20182,13 +20539,13 @@ void EWindowMain::register_pattern_all_equip()
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
 			//tag_filter->merge_with_prev = true;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 
 			tag_filter->add_new_suitable_value("Gloves", ELocalisationText::get_localisation_by_key("tag_gloves"));				tag_filter->set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-			tag_filter->add_new_suitable_value("Helmets", ELocalisationText::get_localisation_by_key("tag_helmets"));				tag_filter->set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+			tag_filter->add_new_suitable_value("Helmets", ELocalisationText::get_localisation_by_key("tag_helmets"));			tag_filter->set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
 			tag_filter->add_new_suitable_value("Boots", ELocalisationText::get_localisation_by_key("tag_boots"));				tag_filter->set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-			tag_filter->add_new_suitable_value("Body Armours", ELocalisationText::get_localisation_by_key("tag_body_armours"));		tag_filter->set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
-			tag_filter->add_new_suitable_value("Shields", ELocalisationText::get_localisation_by_key("tag_shields"));				tag_filter->set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+			tag_filter->add_new_suitable_value("Body Armours", ELocalisationText::get_localisation_by_key("tag_body_armours"));	tag_filter->set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
+			tag_filter->add_new_suitable_value("Shields", ELocalisationText::get_localisation_by_key("tag_shields"));			tag_filter->set_text_color(1.0f, 0.9f, 0.8f, 1.0f);
 			tag_filter->add_force_field();
 
 
@@ -20238,7 +20595,7 @@ void EWindowMain::register_pattern_all_equip()
 
 			tag_filter = new DataEntityTagFilter;
 			//tag_filter->merge_with_prev = true;
-			tag_filter->target_tag = "base tier";
+			tag_filter->target_tag.set_tag_ID_by_string("base tier");
 			tag_filter->add_new_suitable_value("Acceptable", ELocalisationText::get_localisation_by_key("tag_tier_acceptable"));		tag_filter->set_text_color(0.60f, 0.65f, 0.70f, 1.0f);
 			tag_filter->add_new_suitable_value("Good", ELocalisationText::get_localisation_by_key("tag_tier_good"));			tag_filter->set_text_color(0.60f, 1.00f, 0.70f, 1.0f);
 			tag_filter->add_new_suitable_value("Best", ELocalisationText::get_localisation_by_key("tag_tier_best"));			tag_filter->set_text_color(1.00f, 0.80f, 0.60f, 1.0f);
@@ -20255,7 +20612,7 @@ void EWindowMain::register_pattern_all_equip()
 
 			tag_filter = new DataEntityTagFilter;
 			//tag_filter->merge_with_prev = true;
-			tag_filter->target_tag = "base family";
+			tag_filter->target_tag.set_tag_ID_by_string("base family");
 
 			tag_filter->add_new_suitable_value("Basic", ELocalisationText::get_localisation_by_key("tag_tier_basic"));
 			tag_filter->add_new_suitable_value("Ritual", ELocalisationText::get_localisation_by_key("tag_tier_ritual"));
@@ -20291,7 +20648,7 @@ void EWindowMain::register_pattern_all_equip()
 
 			tag_filter = new DataEntityTagFilter;
 			tag_filter->can_be_configured = false;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 
@@ -20331,13 +20688,13 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Top tier base");
 			tag_filter->add_new_suitable_value("Rare base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("One Hand Maces");
 			tag_filter->add_new_suitable_value("One Hand Axes");
 			tag_filter->add_new_suitable_value("One Hand Swords");
@@ -20350,7 +20707,7 @@ void EWindowMain::register_pattern_top_tier_bases()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20373,20 +20730,20 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Top tier base");
 			tag_filter->add_new_suitable_value("Rare base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Gloves");
 			tag_filter->add_new_suitable_value("Helmets");
 			tag_filter->add_new_suitable_value("Boots");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20409,20 +20766,20 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Top tier base");
 			tag_filter->add_new_suitable_value("Rare base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Rings");
 			tag_filter->add_new_suitable_value("Amulets");
 			tag_filter->add_new_suitable_value("Belts");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20446,13 +20803,13 @@ void EWindowMain::register_pattern_top_tier_bases()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Top tier base");
 			tag_filter->add_new_suitable_value("Rare base");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Body Armours");
 			tag_filter->add_new_suitable_value("Two Hand Axes");
 			tag_filter->add_new_suitable_value("Two Hand Maces");
@@ -20463,7 +20820,7 @@ void EWindowMain::register_pattern_top_tier_bases()
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20509,12 +20866,12 @@ void EWindowMain::register_new_folder_delirium_orbs()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Delirium orb");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20549,12 +20906,12 @@ void EWindowMain::register_new_folder_delirium_orbs()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Delirium orb");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20595,7 +20952,7 @@ void EWindowMain::register_new_folder_catalysts()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Catalyst item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20605,7 +20962,7 @@ void EWindowMain::register_new_folder_catalysts()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20645,7 +21002,7 @@ void EWindowMain::register_pattern_incubators()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Incubators");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20655,7 +21012,7 @@ void EWindowMain::register_pattern_incubators()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20698,7 +21055,7 @@ void EWindowMain::register_new_folder_currency_shards()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Currency shard");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20708,7 +21065,7 @@ void EWindowMain::register_new_folder_currency_shards()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20750,7 +21107,7 @@ void EWindowMain::register_new_folder_oils()
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
 			tag_filter->can_be_configured = false;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Special oil item");
 			tag_filter->add_new_suitable_value("Oil item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20760,7 +21117,7 @@ void EWindowMain::register_new_folder_oils()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20824,18 +21181,18 @@ void EWindowMain::register_pattern_harvest_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Harvest seed");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20873,18 +21230,18 @@ void EWindowMain::register_pattern_expedition_currency()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Expedition currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20905,12 +21262,12 @@ void EWindowMain::register_pattern_expedition_currency()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Expedition Logbooks");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20947,13 +21304,13 @@ void EWindowMain::register_pattern_eldritch_currency()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Eldritch currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20962,7 +21319,7 @@ void EWindowMain::register_pattern_eldritch_currency()
 			game_item_generator->add_default_worth_tags(1, 3);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -20999,13 +21356,13 @@ void EWindowMain::register_pattern_delirium_orbs()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->can_be_configured = false;
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Delirium orb");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21013,7 +21370,7 @@ void EWindowMain::register_pattern_delirium_orbs()
 			game_item_generator->add_default_worth_tags(1, 3);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21051,19 +21408,19 @@ void EWindowMain::register_pattern_oils_and_catalysts()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Oil item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21099,19 +21456,19 @@ void EWindowMain::register_pattern_oils_and_catalysts()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Catalyst item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21149,14 +21506,14 @@ void EWindowMain::register_pattern_essences()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Essences");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21166,7 +21523,7 @@ void EWindowMain::register_pattern_essences()
 			if (false)
 			{
 				tag_filter = new DataEntityTagFilter;
-				tag_filter->target_tag = "item tag";
+				tag_filter->target_tag.set_tag_ID_by_string("item tag");
 				tag_filter->can_be_configured = false;
 				tag_filter->add_new_suitable_value("Essence tier: T7", ELocalisationText::get_localisation_by_key("tag_essence_T7"));
 				tag_filter->add_new_suitable_value("Essence tier: T6", ELocalisationText::get_localisation_by_key("tag_essence_T6"));
@@ -21182,7 +21539,7 @@ void EWindowMain::register_pattern_essences()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21220,7 +21577,7 @@ void EWindowMain::register_pattern_currencies_shard()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21233,13 +21590,13 @@ void EWindowMain::register_pattern_currencies_shard()
 			//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Currency shard");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21277,7 +21634,7 @@ void EWindowMain::register_pattern_tainted_currencies()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
@@ -21291,7 +21648,7 @@ void EWindowMain::register_pattern_tainted_currencies()
 			//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->can_be_configured = false;
 			tag_filter->add_new_suitable_value("Tainted currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21303,7 +21660,7 @@ void EWindowMain::register_pattern_tainted_currencies()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21341,7 +21698,7 @@ void EWindowMain::register_embers_and_ichors()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21354,14 +21711,14 @@ void EWindowMain::register_embers_and_ichors()
 			//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Ember item");
 			tag_filter->add_new_suitable_value("Ichor item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21403,7 +21760,7 @@ void EWindowMain::register_pattern_guardian_orbs()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21416,13 +21773,13 @@ void EWindowMain::register_pattern_guardian_orbs()
 			//game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Guardian orb");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21460,20 +21817,20 @@ void EWindowMain::register_pattern_rare_currencies()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "worth";
+			tag_filter->target_tag.set_tag_ID_by_string("worth");
 			tag_filter->add_new_suitable_value("Rare");
 			tag_filter->add_new_suitable_value("Expensive");
 			tag_filter->add_new_suitable_value("Very expensive");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Basic currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -21484,7 +21841,7 @@ void EWindowMain::register_pattern_rare_currencies()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21522,24 +21879,24 @@ void EWindowMain::register_pattern_good_currencies()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "worth";
+			tag_filter->target_tag.set_tag_ID_by_string("worth");
 			tag_filter->add_new_suitable_value("Moderate");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Basic currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21579,7 +21936,7 @@ void EWindowMain::register_pattern_basic_currencies()
 				tag_filter = new DataEntityTagFilter;
 			tag_filter->can_be_configured = false;
 
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21591,7 +21948,7 @@ void EWindowMain::register_pattern_basic_currencies()
 
 			tag_filter = new DataEntityTagFilter;
 			tag_filter->can_be_configured = false;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Basic currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -21610,7 +21967,7 @@ void EWindowMain::register_pattern_basic_currencies()
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21649,23 +22006,23 @@ void EWindowMain::register_pattern_cheap_currencies()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "worth";
+			tag_filter->target_tag.set_tag_ID_by_string("worth");
 			tag_filter->add_new_suitable_value("Common");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Basic currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21710,7 +22067,7 @@ void EWindowMain::register_valuable_items()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "base class";
+		tag_filter->target_tag.set_tag_ID_by_string("base class");
 		tag_filter->add_new_suitable_value("Stackable Currency");
 		tag_filter->add_new_suitable_value("Currency");
 		tag_filter->add_new_suitable_value("Divinations");
@@ -21721,7 +22078,7 @@ void EWindowMain::register_valuable_items()
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "worth";
+		tag_filter->target_tag.set_tag_ID_by_string("worth");
 		tag_filter->add_new_suitable_value("Rare");
 		tag_filter->add_new_suitable_value("Expensive");
 		tag_filter->add_new_suitable_value("Very expensive");
@@ -21734,7 +22091,7 @@ void EWindowMain::register_valuable_items()
 
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 		tag_filter->add_new_banned_value("Deleted");
 		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21755,7 +22112,7 @@ void EWindowMain::register_valuable_items()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "base class";
+		tag_filter->target_tag.set_tag_ID_by_string("base class");
 		tag_filter->add_new_suitable_value("Quest items");
 		tag_filter->add_new_suitable_value("Incursion items");
 		tag_filter->add_new_suitable_value("Misc Map Items");
@@ -21768,7 +22125,7 @@ void EWindowMain::register_valuable_items()
 
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 		tag_filter->add_new_banned_value("Deleted");
 		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21790,7 +22147,7 @@ void EWindowMain::register_valuable_items()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "base class";
+		tag_filter->target_tag.set_tag_ID_by_string("base class");
 		tag_filter->add_new_suitable_value("Two Hand Axes");
 		tag_filter->add_new_suitable_value("Two Hand Swords");
 		tag_filter->add_new_suitable_value("Two Hand Maces");
@@ -21806,7 +22163,7 @@ void EWindowMain::register_valuable_items()
 
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 		tag_filter->add_new_banned_value("Deleted");
 		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -21829,12 +22186,12 @@ void EWindowMain::register_valuable_items()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 		tag_filter->add_new_suitable_value("Unique item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "worth";
+		tag_filter->target_tag.set_tag_ID_by_string("worth");
 		tag_filter->add_new_suitable_value("Rare");
 		tag_filter->add_new_suitable_value("Expensive");
 		tag_filter->add_new_suitable_value("Very expensive");
@@ -21847,7 +22204,7 @@ void EWindowMain::register_valuable_items()
 
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 		tag_filter->add_new_banned_value("Deleted");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -21975,7 +22332,7 @@ void EWindowMain::register_trash_items()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "base class";
+		tag_filter->target_tag.set_tag_ID_by_string("base class");
 		tag_filter->add_new_suitable_value("Stackable Currency");
 		tag_filter->add_new_suitable_value("Currency");
 		tag_filter->add_new_suitable_value("Divinations");
@@ -21986,7 +22343,7 @@ void EWindowMain::register_trash_items()
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "worth";
+		tag_filter->target_tag.set_tag_ID_by_string("worth");
 		tag_filter->add_new_suitable_value("Trash");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -21997,7 +22354,7 @@ void EWindowMain::register_trash_items()
 
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 		tag_filter->add_new_banned_value("Deleted");
 		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -22018,7 +22375,7 @@ void EWindowMain::register_trash_items()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "base class";
+		tag_filter->target_tag.set_tag_ID_by_string("base class");
 		//melee one hand
 		tag_filter->add_new_suitable_value("One Hand Maces");
 		tag_filter->add_new_suitable_value("One Hand Axes");
@@ -22049,7 +22406,7 @@ void EWindowMain::register_trash_items()
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "worth";
+		tag_filter->target_tag.set_tag_ID_by_string("worth");
 		tag_filter->add_new_suitable_value("Trash");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -22060,7 +22417,7 @@ void EWindowMain::register_trash_items()
 
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 
 		tag_filter->add_new_banned_value("Deleted");
 		tag_filter->add_new_banned_value("Hidden item");
@@ -22150,13 +22507,13 @@ void EWindowMain::register_pattern_all_currencies()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "base class";
+		tag_filter->target_tag.set_tag_ID_by_string("base class");
 		tag_filter->add_new_suitable_value("Stackable Currency");
 		tag_filter->add_new_suitable_value("Currency");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 		tag_filter->add_new_banned_value("Deleted");
 		tag_filter->add_new_banned_value("Hidden item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -22193,7 +22550,7 @@ void EWindowMain::register_all_deleted_items()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 		tag_filter->add_new_suitable_value("Deleted");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -22265,7 +22622,7 @@ void EWindowMain::register_crubible_items_with_passive_tree()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "base class";
+		tag_filter->target_tag.set_tag_ID_by_string("base class");
 
 		//melee one hand
 		tag_filter->add_new_suitable_value("One Hand Maces");
@@ -22300,7 +22657,7 @@ void EWindowMain::register_crubible_items_with_passive_tree()
 
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 		tag_filter->add_new_banned_value("Deleted");
 		tag_filter->add_new_banned_value("Heist base");
 		tag_filter->add_new_banned_value("Hidden item");
@@ -22342,18 +22699,18 @@ void EWindowMain::register_crubible_currency()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Introduced: Crucible league");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -22392,17 +22749,17 @@ void EWindowMain::register_crubible_divinations()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Introduced: Crucible league");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -22467,13 +22824,13 @@ void EWindowMain::register_ancestors_deleted_items()
 
 	DataEntityTagFilter*
 		tag_filter = new DataEntityTagFilter;
-	tag_filter->target_tag = "item tag";
+	tag_filter->target_tag.set_tag_ID_by_string("item tag");
 	tag_filter->add_new_suitable_value("Deleted in Trial of the Ancestors");
 	game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 	tag_filter = new DataEntityTagFilter;
-	tag_filter->target_tag = "data type";
+	tag_filter->target_tag.set_tag_ID_by_string("data type");
 	tag_filter->add_new_suitable_value("Game item");
 	game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -22578,17 +22935,17 @@ void EWindowMain::register_ancestors_divinations()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Introduced: Trial of the Ancestors league");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -22633,18 +22990,18 @@ void EWindowMain::register_ancestors_small_tattoo()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Regular tattoo");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -22683,18 +23040,18 @@ void EWindowMain::register_ancestors_honoured_tattoo()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Honoured tattoo");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -22733,18 +23090,18 @@ void EWindowMain::register_ancestors_loyalty_tattoo()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Loyalty tattoo");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -22783,17 +23140,17 @@ void EWindowMain::register_ancestors_currency()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Introduced: Trial of the Ancestors league");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			tag_filter->add_new_banned_value("Tattoo");
@@ -22836,12 +23193,12 @@ void EWindowMain::register_ancestors_sanctum_items()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Sanctum item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -22880,12 +23237,12 @@ void EWindowMain::register_ancestors_omens()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Omen");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -22940,13 +23297,13 @@ void EWindowMain::register_affliction_deleted_items()
 
 	DataEntityTagFilter*
 		tag_filter = new DataEntityTagFilter;
-	tag_filter->target_tag = "item tag";
+	tag_filter->target_tag.set_tag_ID_by_string("item tag");
 	tag_filter->add_new_suitable_value("Deleted in Affliction");
 	game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 	tag_filter = new DataEntityTagFilter;
-	tag_filter->target_tag = "data type";
+	tag_filter->target_tag.set_tag_ID_by_string("data type");
 	tag_filter->add_new_suitable_value("Game item");
 	game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -22984,17 +23341,17 @@ void EWindowMain::register_affliction_divinations()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Divination Cards");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Introduced: Affliction league");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -23039,18 +23396,18 @@ void EWindowMain::register_affliction_currency()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Stackable Currency");
 			tag_filter->add_new_suitable_value("Incubators");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Introduced: Affliction league");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			tag_filter->add_new_banned_value("Tattoo");
@@ -23093,18 +23450,18 @@ void EWindowMain::register_affliction_omens()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Omen");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Returned if Affliction");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -23143,19 +23500,19 @@ void EWindowMain::register_affliction_bases()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Rings");
 			tag_filter->add_new_suitable_value("Amulets");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_suitable_value("Introduced: Affliction league");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -23193,12 +23550,12 @@ void EWindowMain::register_affliction_tinctures()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Tincture");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -23236,12 +23593,12 @@ void EWindowMain::register_affliction_charms()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Charms");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -23279,12 +23636,12 @@ void EWindowMain::register_affliction_corpses()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Corpses");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
@@ -23318,13 +23675,13 @@ void EWindowMain::register_crubible_deleted_items()
 
 	DataEntityTagFilter*
 		tag_filter = new DataEntityTagFilter;
-	tag_filter->target_tag = "item tag";
+	tag_filter->target_tag.set_tag_ID_by_string("item tag");
 	tag_filter->add_new_suitable_value("Deleted in Crucible");
 	game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 
 	tag_filter = new DataEntityTagFilter;
-	tag_filter->target_tag = "data type";
+	tag_filter->target_tag.set_tag_ID_by_string("data type");
 	tag_filter->add_new_suitable_value("Game item");
 	game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -23358,12 +23715,12 @@ void EWindowMain::register_crubible_deleted_attributes()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			tag_filter->add_new_banned_value("Non-default jewel");
@@ -23405,12 +23762,12 @@ void EWindowMain::register_crubible_deleted_attributes()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			tag_filter->add_new_banned_value("Non-default jewel");
@@ -23452,12 +23809,12 @@ void EWindowMain::register_crubible_deleted_attributes()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			tag_filter->add_new_banned_value("Non-default jewel");
@@ -23500,12 +23857,12 @@ void EWindowMain::register_crubible_deleted_attributes()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			tag_filter->add_new_banned_value("Non-default jewel");
@@ -23548,12 +23905,12 @@ void EWindowMain::register_crubible_deleted_attributes()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			tag_filter->add_new_banned_value("Non-default jewel");
@@ -23596,12 +23953,12 @@ void EWindowMain::register_crubible_deleted_attributes()
 
 			DataEntityTagFilter*
 				tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "base class";
+			tag_filter->target_tag.set_tag_ID_by_string("base class");
 			tag_filter->add_new_suitable_value("Jewels");
 			game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 			tag_filter = new DataEntityTagFilter;
-			tag_filter->target_tag = "item tag";
+			tag_filter->target_tag.set_tag_ID_by_string("item tag");
 			tag_filter->add_new_banned_value("Deleted");
 			tag_filter->add_new_banned_value("Hidden item");
 			tag_filter->add_new_banned_value("Non-default jewel");
@@ -23662,17 +24019,17 @@ void EWindowMain::register_crubible_changed_items()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "data type";
+		tag_filter->target_tag.set_tag_ID_by_string("data type");
 		tag_filter->add_new_suitable_value("Game item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 		tag_filter->add_new_suitable_value("Changed in Crucible");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "base class";
+		tag_filter->target_tag.set_tag_ID_by_string("base class");
 		tag_filter->add_new_banned_value("Wands");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -23690,12 +24047,12 @@ void EWindowMain::register_crubible_changed_items()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "data type";
+		tag_filter->target_tag.set_tag_ID_by_string("data type");
 		tag_filter->add_new_suitable_value("Game item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "base class";
+		tag_filter->target_tag.set_tag_ID_by_string("base class");
 		tag_filter->add_new_suitable_value("Vault Keys");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -23714,17 +24071,17 @@ void EWindowMain::register_crubible_changed_items()
 
 		DataEntityTagFilter*
 			tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "data type";
+		tag_filter->target_tag.set_tag_ID_by_string("data type");
 		tag_filter->add_new_suitable_value("Game item");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "item tag";
+		tag_filter->target_tag.set_tag_ID_by_string("item tag");
 		tag_filter->add_new_suitable_value("Changed in Crucible");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
 		tag_filter = new DataEntityTagFilter;
-		tag_filter->target_tag = "base class";
+		tag_filter->target_tag.set_tag_ID_by_string("base class");
 		tag_filter->add_new_suitable_value("Wands");
 		game_item_generator->filtered_by_tags.push_back(tag_filter);
 
@@ -26510,9 +26867,9 @@ void GameItemGenerator::generate_game_item_list(std::vector<EGameItem*>* _target
 				if
 					(
 						(
-							(DataEntityUtils::get_tag_value_by_name(0, "name EN", de) == filtered_by_exact_name.localisations[NSW_localisation_EN])
+							(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, de) == filtered_by_exact_name.localisations[NSW_localisation_EN])
 							||
-							(DataEntityUtils::get_tag_value_by_name(0, "base name", de) == filtered_by_exact_name.base_name)
+							(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, de) == filtered_by_exact_name.base_name)
 							)
 						&&
 						(EFilterRule::matched_by_filter_rule(de, EFilterRule::registered_global_filter_rules[RegisteredFilterRules::FILTER_RULE_OBTAINABLE_GAME_ITEM], ""))
@@ -26573,11 +26930,11 @@ void GameItemGenerator::generate_game_item_list(std::vector<EGameItem*>* _target
 											(
 												(required_tag_value.always_suitable)
 												||
-												(required_tag_value.target_value_key == "")
+												(required_tag_value.target_value_key.is_empty)
 												||
-												(DataEntityUtils::is_exist_tag_by_name_and_value(0, tag_filter->target_tag, required_tag_value.target_value_key, data_entity))
-												)
+												(DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &tag_filter->target_tag, &required_tag_value.target_value_key, data_entity))
 											)
+										)
 									{
 										all_tag_filter_satisfied = true;
 										break;
@@ -26592,7 +26949,7 @@ void GameItemGenerator::generate_game_item_list(std::vector<EGameItem*>* _target
 
 							//if (!all_tag_filter_satisfied) { break; }
 							for (DETF_Value banned_tag_value : tag_filter->banned_tags)
-								if (DataEntityUtils::is_exist_tag_by_name_and_value(0, tag_filter->target_tag, banned_tag_value.target_value_key, data_entity))
+								if (DataEntityUtils::is_exist_tag_by_name_and_value_ID(0, &tag_filter->target_tag, &banned_tag_value.target_value_key, data_entity))
 								{
 									any_banned_tag_match = true;
 									break;
@@ -26676,28 +27033,28 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 
 			//STACK SIZE AND MAX STACK
 			std::string
-				max_stack_value = DataEntityUtils::get_tag_value_by_name(0, "max stack size", _game_item->stored_data_entity);
+				max_stack_value = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::max_stack_size, _game_item->stored_data_entity);
 
 			std::string
-				stack_multiplier_value = DataEntityUtils::get_tag_value_by_name(0, "stack multiplier", _game_item->stored_data_entity);
+				stack_multiplier_value = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::stack_multiplier, _game_item->stored_data_entity);
 
 
 			if (max_stack_value != "") { _game_item->max_stack_size = std::stof(max_stack_value); }
 			if (stack_multiplier_value != "") { _game_item->stack_multiplier = std::stof(stack_multiplier_value); }
 
 
-			_game_item->icon = NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _game_item->stored_data_entity));
+			_game_item->icon = NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::icon_path, _game_item->stored_data_entity));
 
 			//BASE NAME AND LOCALISED NAMES
-			_game_item->localised_name.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", _game_item->stored_data_entity);
+			_game_item->localised_name.base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, _game_item->stored_data_entity);
 
 			if (_game_item->localised_name.base_name == "")
 			{
-				_game_item->localised_name.base_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", _game_item->stored_data_entity);
+				_game_item->localised_name.base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, _game_item->stored_data_entity);
 			}
 
-			_game_item->localised_name.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _game_item->stored_data_entity);
-			_game_item->localised_name.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _game_item->stored_data_entity);
+			_game_item->localised_name.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, _game_item->stored_data_entity);
+			_game_item->localised_name.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_RU, _game_item->stored_data_entity);
 
 			//WARN WHEN HIDDEN
 			if
@@ -26729,11 +27086,11 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 			}
 
 			//default attributes [BASE CLASS]
-			if (DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity) != "")
+			if (DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_class, _game_item->stored_data_entity) != "")
 			{
 
 				std::string
-					raw_class_name_in_item = DataEntityUtils::get_tag_value_by_name(0, "base class", _game_item->stored_data_entity);
+					raw_class_name_in_item = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_class, _game_item->stored_data_entity);
 
 				//try search data entity by exact match
 				std::vector<EDataEntity*>*
@@ -26758,13 +27115,13 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 						//try get base name
 
 
-						class_EN_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", d_entity);
+						class_EN_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, d_entity);
 
-						short_name = DataEntityUtils::get_tag_value_by_name(0, "short name", d_entity);
+						short_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::short_name, d_entity);
 
 
 						std::string
-							sockets_text = DataEntityUtils::get_tag_value_by_name(0, "max sockets", d_entity);
+							sockets_text = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::max_sockets, d_entity);
 
 
 
@@ -26779,7 +27136,7 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 						{
 							l_text.base_name = class_EN_name;
 							l_text.localisations[NSW_localisation_EN] = class_EN_name;
-							l_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", d_entity);
+							l_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_RU, d_entity);
 
 							suitable_data_entity_searched = true;
 							break;
@@ -27090,14 +27447,14 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 
 
 		//default attributes [Base ward]
-		if (DataEntityUtils::get_tag_value_by_name(0, "base ward min", _game_item->stored_data_entity) != "")
+		if (DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_ward_min, _game_item->stored_data_entity) != "")
 		{
 			EGameItemAttributeContainer
 				game_item_attribute_container;
 
 			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_WARD];
-			int min_ward = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base ward min", _game_item->stored_data_entity), 0, 99999);
-			int max_ward = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base ward max", _game_item->stored_data_entity), 0, 99999);
+			int min_ward = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_ward_min, _game_item->stored_data_entity), 0, 99999);
+			int max_ward = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_ward_max, _game_item->stored_data_entity), 0, 99999);
 
 			int random_ward = round(min_ward + (max_ward - min_ward) * (float(rand() % 100) / 100.0f));
 			game_item_attribute_container.attribute_value_int = random_ward;
@@ -27108,14 +27465,14 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 		}
 
 		//default attributes [Base armour]
-		if (DataEntityUtils::get_tag_value_by_name(0, "base armour min", _game_item->stored_data_entity) != "")
+		if (DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_armour_min, _game_item->stored_data_entity) != "")
 		{
 			EGameItemAttributeContainer
 				game_item_attribute_container;
 
 			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_ARMOUR];
-			int min_armour = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base armour min", _game_item->stored_data_entity), 0, 99999);
-			int max_armour = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base armour max", _game_item->stored_data_entity), 0, 99999);
+			int min_armour = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_armour_min, _game_item->stored_data_entity), 0, 99999);
+			int max_armour = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_armour_max, _game_item->stored_data_entity), 0, 99999);
 
 			int random_armour = round(min_armour + (max_armour - min_armour) * (float(rand() % 100) / 100.0f));
 			game_item_attribute_container.attribute_value_int = random_armour;
@@ -27126,14 +27483,14 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 		}
 
 		//default attributes [Base evasion]
-		if (DataEntityUtils::get_tag_value_by_name(0, "base evasion min", _game_item->stored_data_entity) != "")
+		if (DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_evasion_min, _game_item->stored_data_entity) != "")
 		{
 			EGameItemAttributeContainer
 				game_item_attribute_container;
 
 			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_EVASION];
-			int min_evasion = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base evasion min", _game_item->stored_data_entity), 0, 99999);
-			int max_evasion = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base evasion max", _game_item->stored_data_entity), 0, 99999);
+			int min_evasion = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_evasion_min, _game_item->stored_data_entity), 0, 99999);
+			int max_evasion = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_evasion_max, _game_item->stored_data_entity), 0, 99999);
 
 			int random_evasion = round(min_evasion + (max_evasion - min_evasion) * (float(rand() % 100) / 100.0f));
 			game_item_attribute_container.attribute_value_int = random_evasion;
@@ -27144,14 +27501,14 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 		}
 
 		//default attributes [Base energy shield]
-		if (DataEntityUtils::get_tag_value_by_name(0, "base energy shield min", _game_item->stored_data_entity) != "")
+		if (DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_energy_shield_min, _game_item->stored_data_entity) != "")
 		{
 			EGameItemAttributeContainer
 				game_item_attribute_container;
 
 			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_BASE_ENERGY_SHIELD];
-			int min_energy_shield = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base energy shield min", _game_item->stored_data_entity), 0, 99999);
-			int max_energy_shield = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name(0, "base energy shield max", _game_item->stored_data_entity), 0, 99999);
+			int min_energy_shield = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_energy_shield_min, _game_item->stored_data_entity), 0, 99999);
+			int max_energy_shield = EStringUtils::safe_convert_string_to_number(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_energy_shield_max, _game_item->stored_data_entity), 0, 99999);
 
 			int random_energy_shield = round(min_energy_shield + (max_energy_shield - min_energy_shield) * (float(rand() % 100) / 100.0f));
 			game_item_attribute_container.attribute_value_int = random_energy_shield;
@@ -27176,13 +27533,13 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 		}
 
 		//default attributes [HEIGHT]
-		if (DataEntityUtils::get_tag_value_by_name(0, "item height", _game_item->stored_data_entity) != "")
+		if (DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::item_height, _game_item->stored_data_entity) != "")
 		{
 			EGameItemAttributeContainer
 				game_item_attribute_container;
 
 			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_HEIGHT];
-			game_item_attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item height", _game_item->stored_data_entity));
+			game_item_attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::item_height, _game_item->stored_data_entity));
 
 			_game_item->attribute_container_list.push_back(game_item_attribute_container);
 
@@ -27190,13 +27547,13 @@ void GameItemGenerator::init_game_item(EGameItem* _game_item)
 		}
 
 		//default attributes [WIDTH]
-		if (DataEntityUtils::get_tag_value_by_name(0, "item width", _game_item->stored_data_entity) != "")
+		if (DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::item_width, _game_item->stored_data_entity) != "")
 		{
 			EGameItemAttributeContainer
 				game_item_attribute_container;
 
 			game_item_attribute_container.target_attribute = GameItemAttribute::default_game_attribute[DefaultGameAttributeEnum::GAME_ATTRIBUTE_WIDTH];
-			game_item_attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name(0, "item width", _game_item->stored_data_entity));
+			game_item_attribute_container.attribute_value_int = std::stoi(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::item_width, _game_item->stored_data_entity));
 
 			_game_item->attribute_container_list.push_back(game_item_attribute_container);
 
@@ -27354,7 +27711,7 @@ void GameItemGenerator::add_default_worth_tags(int _min, int _max)
 	DataEntityTagFilter*
 		tag_filter = new DataEntityTagFilter;
 
-	tag_filter->target_tag = "worth";
+	tag_filter->target_tag.set_tag_ID_by_string("worth");
 
 	if ((_min <= 0) && (_max >= 0)) { tag_filter->add_new_suitable_value("Trash", ELocalisationText::get_localisation_by_key("tag_trash")); }
 	if ((_min <= 1) && (_max >= 1)) { tag_filter->add_new_suitable_value("Common", ELocalisationText::get_localisation_by_key("tag_common")); }
@@ -28407,11 +28764,11 @@ bool EButtonGroupLootSimulator::this_group_is_matched(EntityButtonLootItem* _loo
 							//		GET ITEM NAME (FROM FILTER BLOCK)
 							if (data_container_entity->stored_data_entity != nullptr)
 							{
-								filter_block_button_attribute_name = DataEntityUtils::get_tag_value_by_name(0, "base name", data_container_entity->stored_data_entity);
+								filter_block_button_attribute_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, data_container_entity->stored_data_entity);
 
 								if (filter_block_button_attribute_name == "")
 								{
-									filter_block_button_attribute_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", data_container_entity->stored_data_entity);
+									filter_block_button_attribute_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, data_container_entity->stored_data_entity);
 								}
 							}
 							else
@@ -28811,7 +29168,7 @@ void EButtonGroupLootSimulator::button_group_update(float _d)
 		delayed_execution = false;
 
 		EntityButtonLootPatternSelector*
-			patter_button = static_cast<EntityButtonLootPatternSelector*>(pointer_to_patterns_buttons_segment->selected_button);
+		patter_button = static_cast<EntityButtonLootPatternSelector*>(pointer_to_patterns_buttons_segment->selected_button);
 
 		LootSimulatorPattern::execute_loot_pattern(patter_button->target_pattern);
 	}
@@ -29995,9 +30352,9 @@ void EButtonGroupPreviewBox::draw_button_group()
 DataEntityTagFilter* DataEntityTagFilter::add_new_suitable_value(std::string _value, ELocalisationText _ltext)
 {
 	DETF_Value
-		new_value;
+	new_value;
 
-	new_value.target_value_key = _value;
+	new_value.target_value_key.set_tag_ID_by_string(_value);
 	new_value.localised_attribute_name = _ltext;
 
 	new_value.text_color.set_color_RGBA(1.0f, 0.9f, 0.8f, 1.0f);
@@ -30017,6 +30374,54 @@ void DataEntityTagFilter::add_force_field()
 	suitable_values.back().force_field = true;
 }
 
+ID_string ID_string::register_new_ID_by_string(std::string _string)
+{
+	for (int i = 0; i < ID_string_array_size; i++)
+	{
+		if (registered_ID_strings[i].is_empty)
+		{
+			ID_string::register_new_ID_string(i, _string);
+
+			return registered_ID_strings[i];
+		}
+	}
+
+	ID_string
+	empty_ID_string;
+
+	empty_ID_string.is_empty = true;
+
+	return empty_ID_string;
+}
+
+void ID_string::set_tag_ID_by_string(std::string _string)
+{
+	for (int i = 0; i < ID_string_array_size; i++)
+	{
+		//search for registered strings
+		if (registered_ID_strings[i].string_value == _string)
+		{
+			ID = i;
+			string_value = _string;
+			is_empty = false;
+
+			break;
+		}
+
+		//create new one
+		if (registered_ID_strings[i].is_empty)
+		{
+			ID = i;
+			string_value = _string;
+			is_empty = false;
+
+			register_new_ID_string(i, _string);
+
+			break;
+		}
+	}
+}
+
 
 
 
@@ -30025,7 +30430,7 @@ DataEntityTagFilter* DataEntityTagFilter::add_new_banned_value(std::string _valu
 	DETF_Value
 		new_value;
 
-	new_value.target_value_key = _value;
+	new_value.target_value_key.set_tag_ID_by_string(_value);
 	new_value.localised_attribute_name = _ltext;
 
 	new_value.text_color.set_color_RGBA(1.0f, 0.5f, 0.25f, 1.0f);
@@ -30073,7 +30478,7 @@ void DataEntityFilterConfigurer::create_configurer_buttons(DataEntityTagFilter* 
 
 			if (detf->localised_attribute_name.localisations[NSW_localisation_EN] == "")
 			{
-				detf->localised_attribute_name = ELocalisationText::generate_localization_with_base_name(detf->target_value_key);
+				detf->localised_attribute_name = ELocalisationText::generate_localization_with_base_name(detf->target_value_key.string_value);
 			}
 
 			last_button->make_as_default_router_variant_button(new ERegionGabarite(150.0f, 22.0f));
@@ -30168,10 +30573,10 @@ void DataEntityFilterConfigurer::clear_router_vector()
 	}
 }
 
-void NSWRegisteredButtonGroups::register_filter_block_colors_group()
+void NSWRegisteredButtonGroups::register_filter_block_colors_group_for_filter_block()
 {
 
-	filter_block_colors = new EButtonGroupFilterBlockColors(new ERegionGabarite(300.0f, 350.0f));
+	filter_block_colors = new EButtonGroupFilterBlockColors(new ERegionGabarite(350.0f, 350.0f));
 
 	filter_block_colors->auto_superfocused = true;
 
@@ -30188,7 +30593,7 @@ void NSWRegisteredButtonGroups::register_filter_block_colors_group()
 	//left size for configure
 	////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
-		left_part = workspace_part->add_group(new EButtonGroup(new ERegionGabarite(150.0f, 256.0f)));
+	left_part = workspace_part->add_group(new EButtonGroup(new ERegionGabarite(150.0f, 256.0f)));
 	left_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
 	left_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
 	////////////////////////////////////////////////////////////////////////////
@@ -30225,7 +30630,7 @@ void NSWRegisteredButtonGroups::register_filter_block_colors_group()
 	////////////////////////////////////////////////////////////////////////////
 	EButtonGroup*
 	preview_box_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 32.0f), EGUIStyle::active_style));
-	preview_box_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+	preview_box_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
 
 	filter_block_colors->pointer_to_preview_group = preview_box_part;
 	////////////////////////////////////////////////////////////////////////////
@@ -30247,9 +30652,9 @@ void NSWRegisteredButtonGroups::register_filter_block_colors_group()
 			//bottom group for control
 			////////////////////////////////////////////////////////////////////////////
 			EButtonGroup*
-			color_patter_control_part = right_part->add_group(new EButtonGroup(new ERegionGabarite(150.0f, 25.0f)));
-			color_patter_control_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
-			color_patter_control_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+			color_pattern_control_part = right_part->add_group(new EButtonGroup(new ERegionGabarite(150.0f, 25.0f)));
+			color_pattern_control_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+			color_pattern_control_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
 			////////////////////////////////////////////////////////////////////////////
 			
 			//up group for color patterns
@@ -30402,10 +30807,35 @@ void NSWRegisteredButtonGroups::register_filter_block_colors_group()
 	filter_block_colors->cosmetic_element_button_rama = cosmetic_element_button;
 
 
+
+
+
+
+
+
+
+	EntityButtonNewColorPattern*
+	new_color_button = new EntityButtonNewColorPattern();
+	new_color_button->make_default_button_with_unedible_text
+	(
+		new ERegionGabarite(150.0f, 20.0f),
+		color_pattern_control_part,
+		&EDataActionCollection::action_create_new_color,
+		ELocalisationText::get_localisation_by_key("button_create_color_pattern")
+
+	);
+	new_color_button->can_be_stretched = true;
+
+	new_color_button->target_button_group = color_patterns_button_group;
+	new_color_button->pointer_to_color = &(filter_block_colors->target_color);
+
+	color_pattern_control_part->add_button_to_working_group(new_color_button);
+
+
 	filter_block_colors->generate_color_pattern_buttons();
 
 
-	filter_block_colors->activate_move_to_foreground_and_center();
+	//filter_block_colors->activate_move_to_foreground_and_center();
 }
 
 void EButtonGroupFilterBlockColors::draw_button_group()
@@ -30421,7 +30851,7 @@ void EButtonGroupFilterBlockColors::draw_button_group()
 		float pos_x = pointer_to_preview_group->region_gabarite->world_position_x;
 		float pos_y = pointer_to_preview_group->region_gabarite->world_position_y;
 		float size_x = pointer_to_preview_group->region_gabarite->size_x;
-		float size_y = pointer_to_preview_group->region_gabarite->size_y;
+		float size_y = pointer_to_preview_group->region_gabarite->size_y - pointer_to_preview_group->group_border_texture_bottom - pointer_to_preview_group->group_border_texture_up;
 
 		EntityButtonCosmeticElement*
 			selected_cosmetic_button = static_cast<EntityButtonCosmeticElement*>(pointer_to_cosmetic_element_group->selected_button);
@@ -30464,13 +30894,13 @@ void EButtonGroupFilterBlockColors::draw_button_group()
 				NS_EGraphicCore::default_batcher_for_drawing->last_vertice_buffer_index,
 
 				//x pos
-				pos_x + (size_x - NS_DefaultGabarites::texture_example_text_for_preview_box->size_x_in_pixels) / 2.0f,
+				pos_x + (size_x - NS_DefaultGabarites::texture_example_text_for_preview_box->size_x_in_pixels * 0.85f) / 2.0f,
 
 				//y pos
-				pos_y + (size_y - NS_DefaultGabarites::texture_example_text_for_preview_box->size_y_in_pixels) / 2.0f,
+				pos_y + (size_y - NS_DefaultGabarites::texture_example_text_for_preview_box->size_y_in_pixels * 0.85f) / 2.0f,
 
-				NS_DefaultGabarites::texture_example_text_for_preview_box->size_x_in_pixels,
-				NS_DefaultGabarites::texture_example_text_for_preview_box->size_y_in_pixels,
+				NS_DefaultGabarites::texture_example_text_for_preview_box->size_x_in_pixels * 0.85f,
+				NS_DefaultGabarites::texture_example_text_for_preview_box->size_y_in_pixels * 0.85f,
 
 				NS_DefaultGabarites::texture_example_text_for_preview_box
 			);
@@ -30505,34 +30935,40 @@ void EButtonGroupFilterBlockColors::draw_button_group()
 	}
 }
 
-void EButtonGroupFilterBlockColors::assign_colors(HSVRGBAColor* _color)
+void EButtonGroupSimpleColorEditor::assign_colors(HSVRGBAColor* _color)
 {
+
+	//EInputCore::logger_simple_info("Color asigned!");
+
 	EDataContainer_VerticalNamedSlider*
-		slider_data = nullptr;
+	slider_data = nullptr;
 
 	EDataContainer_CrosshairSlider*
-		crosshair_data = nullptr;
+	crosshair_data = nullptr;
 
-	NSWRegisteredButtonGroups::filter_block_colors->target_color = _color;
+	target_color = _color;
 
 	Helper::rgb2hsv(_color);
 
 	//CROSSHAIR SLIDER
-	crosshair_data = static_cast<EDataContainer_CrosshairSlider*>(NSWRegisteredButtonGroups::filter_block_colors->color_hair_slider_hue_saturation->main_custom_data->data_container);
+	crosshair_data = static_cast<EDataContainer_CrosshairSlider*>(color_hair_slider_hue_saturation->main_custom_data->data_container);
 
 	crosshair_data->target_pointer_x = &(_color->h);
 	crosshair_data->target_pointer_y = &(_color->s);
 
 
 	//VALUE AND ALPHA
-	slider_data = static_cast<EDataContainer_VerticalNamedSlider*>(NSWRegisteredButtonGroups::filter_block_colors->color_slider_value->main_custom_data->data_container);
+	slider_data = static_cast<EDataContainer_VerticalNamedSlider*>(color_slider_value->main_custom_data->data_container);
 	slider_data->pointer_to_value = &(_color->v);
 
-	slider_data = static_cast<EDataContainer_VerticalNamedSlider*>(NSWRegisteredButtonGroups::filter_block_colors->color_slider_alpha->main_custom_data->data_container);
+	slider_data = static_cast<EDataContainer_VerticalNamedSlider*>(color_slider_alpha->main_custom_data->data_container);
 	slider_data->pointer_to_value = &(_color->a);
+
+	//std::cout << "group H pointer " << crosshair_data->target_pointer_x << std::endl;
+	//std::cout << "color H pointer " << &(_color->h) << std::endl;
 }
 
-void EButtonGroupFilterBlockColors::generate_color_pattern_buttons()
+void EButtonGroupSimpleColorEditor::generate_color_pattern_buttons()
 {
 	for (int i = 0; i < Helper::registered_color_list.size(); i++)
 	{
@@ -30547,8 +30983,7 @@ void EButtonGroupFilterBlockColors::generate_color_pattern_buttons()
 
 		//std::cout << Helper::registered_color_list[0] << std::endl;
 		EntityButtonColorButton*
-		color_button = new EntityButtonColorButton
-		();
+		color_button = new EntityButtonColorButton();
 
 		color_button->make_as_named_color_button
 		(
@@ -30564,11 +30999,27 @@ void EButtonGroupFilterBlockColors::generate_color_pattern_buttons()
 			ColorButtonMode::CBM_SELECT_COLOR
 		);
 		color_button->can_be_stretched = true;
+		color_button->target_color_pointer = &target_color;
 		//std::cout << HRA_color << std::endl;
 		//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
 
 		pointer_to_color_pattern_group->add_button_to_working_group(color_button);
 		// // // // // // //// // // // // // //// // // // // // //
+	}
+}
+
+void EButtonGroupSimpleColorEditor::button_group_update(float _d)
+{
+	EButtonGroup::button_group_update(_d);
+	
+	if
+	(
+		(EInputCore::MOUSE_BUTTON_LEFT)
+		&&
+		(target_color != nullptr)
+	)
+	{
+		Helper::hsv2rgb(target_color);
 	}
 }
 

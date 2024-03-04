@@ -685,8 +685,7 @@ EntityButton* EntityButton::create_item_button(ERegionGabarite* _region_gabarite
 
 	ETextureGabarite* item_icon
 		=
-		NS_EGraphicCore::load_from_textures_folder
-		("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity));
+		NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::icon_path, _data_entity));
 
 	if (item_icon != nullptr)
 	{
@@ -773,9 +772,9 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 
 		ETextureGabarite*
 			item_icon =
-			(DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity) != "")
+			(DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::icon_path, _data_entity) != "")
 			?
-			(NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name(0, "icon path", _data_entity)))
+			(NS_EGraphicCore::load_from_textures_folder("icons/" + DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::icon_path, _data_entity)))
 			:
 			(nullptr);
 
@@ -813,22 +812,22 @@ EntityButtonWideItem* EntityButtonWideItem::create_wide_item_button(ERegionGabar
 
 
 
-		jc_text_area->localisation_text.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
-		jc_text_area->localisation_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", _data_entity);
+		jc_text_area->localisation_text.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, _data_entity);
+		jc_text_area->localisation_text.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_RU, _data_entity);
 
 		jc_text_area->change_text(jc_text_area->localisation_text.localisations[ELocalisationText::active_localisation]);
 
 		//////localistation//////
-		std::string base_name_value = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
+		std::string base_name_value = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, _data_entity);
 
 		//if base name exist, set
 		if (base_name_value != "")
 		{
-			jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", _data_entity);
+			jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, _data_entity);
 		}
 		else//use english localisation
 		{
-			jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", _data_entity);
+			jc_text_area->localisation_text.base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, _data_entity);
 		}
 
 		if
@@ -1102,7 +1101,7 @@ void EntityButtonColorButton::make_as_named_color_button
 
 	EntityButton::get_last_custom_data(this)->actions_on_draw.push_back(&EDataActionCollection::action_draw_stored_color_as_box);
 	
-	if (_mode == ColorButtonMode::CBM_CUSTOM)
+	if (_mode == ColorButtonMode::CBM_OPEN_WINDOW)
 	{
 		EntityButton::get_last_clickable_area(this)->actions_on_click_list.push_back(&EDataActionCollection::action_open_color_group);
 	}
@@ -1140,6 +1139,7 @@ void EntityButtonColorButton::make_as_named_color_button
 	if (_mode == ColorButtonMode::CBM_SELECT_COLOR)
 	{
 		main_clickable_area->actions_on_right_click_list.push_back(&EDataActionCollection::action_active_text_area);
+		main_clickable_area->actions_on_click_list.push_back(&EDataActionCollection::action_transfer_pointer_to_color_data_container);
 
 		jc_text_area->action_on_change_text.push_back(&EDataActionCollection::action_change_localisation_for_color_button);
 		jc_text_area->action_on_finalize_text.push_back(&EDataActionCollection::action_deactive_text_area);
@@ -2886,4 +2886,12 @@ EStringReplacer::EStringReplacer(std::string _what_replaced, std::string _result
 {
 	what_replaced = _what_replaced;
 	result_string = _result_string;
+}
+
+EntityButtonNewColorPattern::EntityButtonNewColorPattern()
+{
+}
+
+EntityButtonNewColorPattern::~EntityButtonNewColorPattern()
+{
 }

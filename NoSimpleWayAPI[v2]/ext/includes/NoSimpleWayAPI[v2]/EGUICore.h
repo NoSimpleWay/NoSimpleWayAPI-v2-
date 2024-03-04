@@ -626,7 +626,7 @@ public:
 	//[no bg], focusable, slider
 	static EButtonGroup* create_button_group_without_bg(ERegionGabarite* _region, EGUIStyle* _style);
 
-	static EButtonGroup* create_color_editor_group(ERegionGabarite* _region, EGUIStyle* _style);
+	
 
 	EButtonGroup* add_close_group_and_return_workspace_group(ERegionGabarite* _region, EGUIStyle* _style);
 	void add_caption_by_localistation_key(std::string _key);
@@ -695,7 +695,7 @@ public:
 
 	//static fuck_you_leatherman
 
-	static EButtonGroup* color_editor_group;
+	
 	static EButtonGroup* add_content_to_filter_block_group;
 
 
@@ -806,6 +806,44 @@ public:
 
 	static EButtonGroupConfirmAction* confirm_decline_group;
 };
+
+
+
+class EButtonGroupSimpleColorEditor : public EButtonGroup
+{
+public:
+	EButtonGroupSimpleColorEditor(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+
+	EButtonGroup* pointer_to_preview_group;
+	EButtonGroup* pointer_to_hair_slider_group;
+	EButtonGroup* pointer_to_VA_slider_group;
+
+	EButtonGroup* pointer_to_color_pattern_group;
+
+
+	EntityButton* color_hair_slider_hue_saturation;
+	EntityButton* color_slider_value;
+	EntityButton* color_slider_alpha;
+
+
+
+
+	EntityButton* opened_by_this_button;
+
+	HSVRGBAColor* target_color;
+
+	//void draw_button_group() override;
+	void assign_colors(HSVRGBAColor* _color);
+	void generate_color_pattern_buttons();
+	void button_group_update(float _d) override;
+
+	static EButtonGroupSimpleColorEditor* create_color_editor_group(ERegionGabarite* _region, EGUIStyle* _style, EWindow* _window);
+	static EButtonGroupSimpleColorEditor* registered_color_editor_group;
+};
+
+
+
+
 
 enum StyleList
 {

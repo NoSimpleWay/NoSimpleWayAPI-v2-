@@ -12,10 +12,10 @@ std::string DataEntityUtils::get_tag_value_by_name(int _id, std::string _name, E
 {
 	for (EDataTag* data_tag : _data_entity->tag_list)
 	{
-		if (*data_tag->tag_name == _name)
+		if (data_tag->tag_name.string_value == _name)
 		{
 			if (_id < data_tag->tag_value_list.size())
-			{return *data_tag->tag_value_list.at(_id);}
+			{return data_tag->tag_value_list.at(_id).string_value;}
 			else
 			{return "";}
 		}
@@ -29,8 +29,42 @@ bool DataEntityUtils::is_exist_tag_by_name_and_value(int _id, std::string _name,
 {
 	for (EDataTag* data_tag : _data_entity->tag_list)
 	{
-		if ((*data_tag->tag_name == _name) && (*data_tag->tag_value_list[_id] == _value))
+		if ((data_tag->tag_name.string_value == _name) && (data_tag->tag_value_list[_id].string_value == _value))
 		{
+			return true;
+		}
+	}
+	return false;
+}
+
+std::string DataEntityUtils::get_tag_value_by_name_ID(int _id, ID_string* _name, EDataEntity* _data_entity)
+{
+	for (EDataTag* data_tag : _data_entity->tag_list)
+	{
+		if (data_tag->tag_name.ID == _name->ID)
+		{
+			if (_id < data_tag->tag_value_list.size())
+			{
+				return data_tag->tag_value_list.at(_id).string_value;
+			}
+			else
+			{
+				return "";
+			}
+		}
+
+	}
+
+	return "";
+}
+
+bool DataEntityUtils::is_exist_tag_by_name_and_value_ID(int _id, ID_string* _name, ID_string* _value, EDataEntity* _data_entity)
+{
+	for (EDataTag* data_tag : _data_entity->tag_list)
+	{
+		if ((data_tag->tag_name.ID == _name->ID) && (data_tag->tag_value_list[_id].ID == _value->ID))
+		{
+			//std::cout << "tag [" << data_tag->tag_name.string_value << "]<" << data_tag->tag_name.ID << ">" << " with value [" << data_tag->tag_value_list[_id].string_value << "]<" << data_tag->tag_value_list[_id].ID << "> is exist" << std::endl;;
 			return true;
 		}
 	}

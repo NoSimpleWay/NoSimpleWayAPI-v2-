@@ -333,12 +333,64 @@ enum RegisteredFilterRules
 //};
 
 
+constexpr unsigned int ID_string_array_size = 65535;
+struct ID_string
+{
+	bool is_empty						= true;
+	unsigned short int	ID				= 0;
+	std::string			string_value	= "";
+	
+	static void			register_new_ID_string(int _id, std::string _string);
+	static ID_string	register_new_ID_by_string(std::string _string);
+
+	static ID_string registered_ID_strings[ID_string_array_size];
+
+
+	void set_tag_ID_by_string(std::string _string);
+};
+
+namespace ERegisteredStrings
+{
+	extern ID_string data_type;
+	extern ID_string icon_path;
+	extern ID_string name_EN;
+	extern ID_string name_RU;
+	extern ID_string base_name;
+	extern ID_string base_class;
+	extern ID_string short_name;
+	extern ID_string max_stack_size;
+	extern ID_string stack_multiplier;
+	extern ID_string max_sockets;
+	extern ID_string base_ward_min;
+	extern ID_string base_ward_max;
+	extern ID_string base_armour_min;
+	extern ID_string base_armour_max;
+	extern ID_string base_evasion_min;
+	extern ID_string base_evasion_max;
+	extern ID_string base_energy_shield_min;
+	extern ID_string base_energy_shield_max;
+	extern ID_string item_height;
+	extern ID_string item_width;
+	extern ID_string key;
+	extern ID_string worth;
+
+	extern ID_string trash;
+	extern ID_string common;
+	extern ID_string moderate;
+	extern ID_string rare;
+	extern ID_string expensive;
+	extern ID_string very_expensive;
+}
+
+
+
+
 
 
 struct DETF_Value
 {
 public:
-	std::string			target_value_key;
+	ID_string			target_value_key;
 
 
 	ELocalisationText	localised_attribute_name;
@@ -355,7 +407,7 @@ public:
 struct DataEntityTagFilter
 {
 public:
-	std::string				target_tag;
+	ID_string				target_tag;
 	bool					can_be_configured	= true;
 	bool					merge_with_prev		= false;
 
@@ -371,6 +423,8 @@ public:
 
 	void set_text_color(float _r, float _g, float _b, float _a);
 	void add_force_field();
+
+	
 
 
 

@@ -616,6 +616,8 @@ class EntityButtonColorButton : public EntityButton
 {
 public:
 	HSVRGBAColor*				stored_color;
+	HSVRGBAColor**				target_color_pointer;
+
 	ColorButtonMode				selected_mode = ColorButtonMode::CBM_OPEN_WINDOW;
 
 	HRA_color_collection*		parent_color_collection;
@@ -696,6 +698,18 @@ public:
 	~EntityButtonOpenURL();
 
 	std::string stored_url;
+
+};
+
+class EntityButtonNewColorPattern : public EntityButton
+{
+public:
+	EntityButtonNewColorPattern();
+	~EntityButtonNewColorPattern();
+
+	HSVRGBAColor** pointer_to_color;
+
+	EButtonGroup* target_button_group = nullptr;
 
 };
 

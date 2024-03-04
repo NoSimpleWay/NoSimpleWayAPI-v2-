@@ -34,6 +34,41 @@ EClickableArea* EClickableArea::active_clickable_region = nullptr;
 
 ERegionGabarite* ERegionGabarite::temporary_gabarite = new ERegionGabarite();
 
+ID_string ID_string::registered_ID_strings[ID_string_array_size];
+
+namespace ERegisteredStrings
+{
+	ID_string data_type					= ID_string::register_new_ID_by_string("data type");
+	ID_string icon_path					= ID_string::register_new_ID_by_string("icon path");
+	ID_string name_EN					= ID_string::register_new_ID_by_string("name EN");
+	ID_string name_RU					= ID_string::register_new_ID_by_string("name RU");
+	ID_string base_name					= ID_string::register_new_ID_by_string("base name");
+	ID_string base_class				= ID_string::register_new_ID_by_string("base class");
+	ID_string short_name				= ID_string::register_new_ID_by_string("short name");
+	ID_string max_stack_size			= ID_string::register_new_ID_by_string("max stack size");
+	ID_string stack_multiplier			= ID_string::register_new_ID_by_string("stack multiplier");
+	ID_string max_sockets				= ID_string::register_new_ID_by_string("max sockets");
+	ID_string base_ward_min				= ID_string::register_new_ID_by_string("base ward min");
+	ID_string base_ward_max				= ID_string::register_new_ID_by_string("base ward max");
+	ID_string base_armour_min			= ID_string::register_new_ID_by_string("base armour min");
+	ID_string base_armour_max			= ID_string::register_new_ID_by_string("base armour max");
+	ID_string base_evasion_min			= ID_string::register_new_ID_by_string("base evasion min");
+	ID_string base_evasion_max			= ID_string::register_new_ID_by_string("base evasion max");
+	ID_string base_energy_shield_min	= ID_string::register_new_ID_by_string("base energy shield min");
+	ID_string base_energy_shield_max	= ID_string::register_new_ID_by_string("base energy shield max");
+	ID_string item_height				= ID_string::register_new_ID_by_string("item height");
+	ID_string item_width				= ID_string::register_new_ID_by_string("item width");
+	ID_string key						= ID_string::register_new_ID_by_string("key");
+	ID_string worth						= ID_string::register_new_ID_by_string("worth");
+
+	ID_string trash						= ID_string::register_new_ID_by_string("Trash");
+	ID_string common					= ID_string::register_new_ID_by_string("Common");
+	ID_string moderate					= ID_string::register_new_ID_by_string("Moderate");
+	ID_string rare						= ID_string::register_new_ID_by_string("Rare");
+	ID_string expensive					= ID_string::register_new_ID_by_string("Expensive");
+	ID_string very_expensive			= ID_string::register_new_ID_by_string("Very expensive");
+}
+
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)
 {
 	//if (EDataCore::overlapped_by_mouse()
@@ -682,113 +717,20 @@ void EDataActionCollection::action_open_color_group(Entity* _entity, ECustomData
 		
 
 		EntityButtonColorButton*			clicked_button			= static_cast<EntityButtonColorButton*>(_entity);
-		EDataContainer_Group_ColorEditor*	group_data				= static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container);
-		EntityButtonColorButton*			target_button_for_group	= group_data->target_color_button;
-
+		EButtonGroupSimpleColorEditor*		color_group				= EButtonGroupSimpleColorEditor::registered_color_editor_group;
+		HSVRGBAColor*						group_color				= color_group->target_color;
+		HSVRGBAColor*						button_color			= clicked_button->stored_color;
 		//clicked_button->parent_button_group->selected_button = clicked_button;
 		clicked_button->parent_button_group->select_this_button(clicked_button);
 
 		//set target button to button group
-		if (clicked_button->selected_mode == ColorButtonMode::CBM_OPEN_WINDOW)
-		{
-			group_data->pointer_to_color_collection_sector->selected_button = nullptr;
-			group_data->target_color_button = clicked_button;
-
-			//if (group_data->pointer_to_color_collection_sector != nullptr)
-			//	for (EntityButton* but : group_data->pointer_to_color_collection_sector->workspace_button_list)
-			//	{
-			//		//color collection on color editor								button which open editor
-			//		if (static_cast<EntityButtonColorButton*>(but)->stored_color == clicked_button->stored_color)
-			//		{
-			//			group_data->pointer_to_color_collection_sector->selected_button = but;
-			//			break;
-			//		}
-			//	}
-			//else
-			//{
-			//	EInputCore::logger_simple_error("pointer to color group is null!");
-			//}
-
-			target_button_for_group = group_data->target_color_button;
-			group_data->work_color = target_button_for_group->stored_color;
-
-			EButtonGroup::color_editor_group->activate_move_to_foreground_and_center();
-		}
-
-		//color data container from target button
-		//if (group_data->target_data_container_with_color != nullptr)
-		//{
-			//master_color = group_data->target_data_container_with_color->stored_color;
-		//}
 
 
+		color_group->assign_colors(clicked_button->stored_color);
+		color_group->opened_by_this_button	= clicked_button;
 
-		//set new color to master_button
-		if ((clicked_button->selected_mode == ColorButtonMode::CBM_SELECT_COLOR) && (target_button_for_group->stored_color != nullptr))
-		{
-			if
-			(
-				(
-					(EInputCore::key_pressed(GLFW_KEY_LEFT_SHIFT))
-					||
-					(EInputCore::key_pressed(GLFW_KEY_RIGHT_SHIFT))
-				)
-				&&
-				(false)
-			)
-			{
-				//if color not from collection, remove personal color
-				if (!target_button_for_group->stored_color->is_from_collection)
-				{
-					target_button_for_group->stored_color->is_from_collection = true;
-					if (!disable_deleting) { delete target_button_for_group->stored_color; }
-				}
-
-				//pointer to this color already exist in color collection pointers list?
-				bool pointer_to_color_already_exist = false;
-				for (HSVRGBAColor* HRA_color : clicked_button->parent_color_collection->pointers_to_this_collection)
-				{
-					if (HRA_color == target_button_for_group->stored_color) { pointer_to_color_already_exist = true; break; }
-				}
-
-				//add this color to pointer list
-				if (!pointer_to_color_already_exist)
-				{ clicked_button->parent_color_collection->pointers_to_this_collection.push_back(target_button_for_group->stored_color); }
-
-				target_button_for_group->stored_color = clicked_button->stored_color;
-
-				group_data->pointer_to_color_collection_sector->selected_button = static_cast<EntityButton*>(_entity);
-				group_data->work_color = clicked_button->stored_color;
-			}
-			else
-			{
-				//if color from collection, create personal color
-				if (target_button_for_group != nullptr)
-				{
-					if (target_button_for_group->stored_color->is_from_collection)
-					{
-						target_button_for_group->stored_color = new HSVRGBAColor();
-						target_button_for_group->stored_color->is_from_collection = false;
-					}
-
-					target_button_for_group->stored_color->set_color(clicked_button->stored_color);
-					//button_data->stored_color->set_color(button_data->stored_color);
-
-					group_data->pointer_to_color_collection_sector->selected_button = nullptr;
-
-					group_data->work_color = target_button_for_group->stored_color;
-				}
-			}
-		}
-
-		//set work color from button
-
-
-		group_data->crosshair_slider_data_container->target_pointer_x = &group_data->work_color->h;
-		group_data->crosshair_slider_data_container->target_pointer_y = &group_data->work_color->s;
-
-		group_data->slider_data_value_container->pointer_to_value = &group_data->work_color->v;
-		group_data->slider_data_alpha_container->pointer_to_value = &group_data->work_color->a;
+		EButtonGroupSimpleColorEditor::registered_color_editor_group->activate_move_to_foreground_and_center();
+		
 
 
 
@@ -1457,9 +1399,26 @@ void EDataActionCollection::action_delete_vertical_router_variants_group(EButton
 
 void EDataActionCollection::action_transfer_pointer_to_color_data_container(Entity* _entity, ECustomData* _custom_data, float _d)
 {
-	static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container)->target_color_button
-	=
-	static_cast<EntityButtonColorButton*>(_entity);
+	//static_cast<EDataContainer_Group_ColorEditor*>(EButtonGroup::color_editor_group->data_container)->target_color_button
+	//=
+	//static_cast<EntityButtonColorButton*>(_entity);
+
+	EntityButtonColorButton*
+	color_button = static_cast<EntityButtonColorButton*>(_entity);
+
+	if
+	(
+		(color_button->target_color_pointer != nullptr)
+		&&
+		(*(color_button->target_color_pointer) != nullptr)
+	)
+	{
+		//HSVRGBAColor *color = *(color_button->target_color_pointer);
+
+		//color->
+		(*(color_button->target_color_pointer))->set_color(color_button->stored_color);
+	}
+
 }
 
 void EDataActionCollection::action_unbing_color(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -1503,20 +1462,19 @@ void EDataActionCollection::action_unbing_color(Entity* _entity, ECustomData* _c
 class EntityButtonColorButton;
 void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData* _custom_data, float _d)
 {
+	EntityButtonNewColorPattern*
+	pattern_button = static_cast<EntityButtonNewColorPattern*>(_entity);
 
-	EButtonGroup* parent_group = static_cast<EntityButton*>(_entity)->parent_button_group;
-	EButtonGroup* root_group = parent_group->root_group;
-	EDataContainer_Group_ColorEditor* group_data = static_cast<EDataContainer_Group_ColorEditor*>(root_group->data_container);
-	EntityButtonColorButton* button_data = group_data->target_color_button;
+	
 
 	//get current color
-	HSVRGBAColor* original_color = group_data->work_color;
+	HSVRGBAColor* editor_color = *(pattern_button->pointer_to_color);
 
 	//create non-binded color
 	HSVRGBAColor			HRA_color;
 	HRA_color_collection*	HRA_collection = new HRA_color_collection();
 
-	HRA_color.set_color(original_color);//apply old color to non-binded
+	HRA_color.set_color(editor_color);//apply old color to non-binded
 	HRA_collection->target_color = HRA_color;
 
 	//button_data->stored_color = &HRA_color;
@@ -1546,8 +1504,8 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 	(
 		//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
-		new ERegionGabarite(150.0f, 38.0f),
-		group_data->pointer_to_color_collection_sector,
+		new ERegionGabarite(pattern_button->target_button_group->region_gabarite->size_x - 20.0f, 38.0f),
+		pattern_button->target_button_group,
 		EFont::font_list[0],
 		EGUIStyle::active_style,
 		l_text,
@@ -1555,11 +1513,11 @@ void EDataActionCollection::action_create_new_color(Entity* _entity, ECustomData
 		&HRA_collection->target_color,
 		ColorButtonMode::CBM_SELECT_COLOR
 	);
-
+	jc_button->can_be_stretched = true;
 	//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
-	group_data->pointer_to_color_collection_sector->add_button_to_working_group(jc_button);
-	EButtonGroup::refresh_button_group(root_group);
-	root_group->need_refresh = true;//
+	pattern_button->target_button_group->add_button_to_working_group(jc_button);
+	//EButtonGroup::refresh_button_group(pattern_button->target_button_group->root_group);
+	pattern_button->target_button_group->root_group->need_refresh = true;//
 
 	//group_data->pointer_to_color_collection_group->selected_button = jc_button;
 
@@ -3205,14 +3163,14 @@ void ETextParser::split_data_entity_list_to_named_structs()
 		{
 			int index = 0;
 
-			data_type_name	= DataEntityUtils::get_tag_value_by_name(0, "data type", data_entity);
-			base_name		= DataEntityUtils::get_tag_value_by_name(0, "base name", data_entity);
+			data_type_name	= DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::data_type, data_entity);
+			base_name		= DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, data_entity);
 
-			data_entity_name = DataEntityUtils::get_tag_value_by_name(0, "key", data_entity);
+			data_entity_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::key, data_entity);
 
 
-			if (data_entity_name == "") { data_entity_name = DataEntityUtils::get_tag_value_by_name(0, "base name", data_entity); }
-			if (data_entity_name == "") { data_entity_name = DataEntityUtils::get_tag_value_by_name(0, "name EN", data_entity); }
+			if (data_entity_name == "") { data_entity_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, data_entity); }
+			if (data_entity_name == "") { data_entity_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, data_entity); }
 
 			if (data_entity_name != "")
 			{
@@ -3310,14 +3268,20 @@ void ETextParser::do_action(std::string _action_text, std::string _value)
 		if (_action_text == "tag")
 		{
 			last_created_data_tag = new EDataTag();
-			*last_created_data_tag->tag_name = _value;
+			last_created_data_tag->tag_name.set_tag_ID_by_string(_value);
 
 			last_created_data_entity->tag_list.push_back(last_created_data_tag);
 		}
 		else
 			if (_action_text == "value")
 			{
-				last_created_data_tag->tag_value_list.push_back(new std::string(_value));
+				//last_created_data_tag->tag_value_list.push_back(new std::string(_value));
+				ID_string
+				new_ID_string;
+
+				new_ID_string.set_tag_ID_by_string(_value);
+
+				last_created_data_tag->tag_value_list.push_back(new_ID_string);
 			}
 }
 
@@ -3646,6 +3610,8 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 	std::string tag_value = "";
 	std::string search_text = "";
 
+	int tag_ID = -1;
+
 	bool tag_search_mode = false;
 	bool cost_search_mode = false;
 
@@ -3673,10 +3639,13 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 				//for every banned tag
 				for (EDataTag* data_entity_tag : _data_entity->tag_list)
 				{
-					tag_value = *data_entity_tag->tag_value_list[0];
+					tag_ID = data_entity_tag->tag_value_list[0].ID;
+
+					//tag_value = *data_entity_tag->tag_value_list[0];
 
 					//compare data entity tag and require tag from filter rule
-					if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, banned_tag_filter.target_tag)))
+					//if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, banned_tag_filter.target_tag)))
+					if (data_entity_tag->tag_name.ID == banned_tag_filter.target_tag.ID)
 					{
 
 						for (DETF_Value suitable_str : banned_tag_filter.banned_tags)//one of suitable list
@@ -3689,9 +3658,9 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 							if
 							(
 									//empty suitable text means 'any value suitable'
-									(suitable_str.target_value_key == "")
+									(suitable_str.target_value_key.is_empty)
 									||
-									(EStringUtils::compare_ignoring_case(suitable_str.target_value_key, tag_value))
+									(suitable_str.target_value_key.ID == tag_ID)
 							)
 							{
 								//even one match with banned tag return false
@@ -3711,31 +3680,31 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 		{
 			search_text = EStringUtils::to_lower(_search_text);
 
-			//search by tags
-			if (search_text[0] == '*')
-			{
-				tag_search_mode = true;
-				search_text = search_text.substr(1);
-			}
+			////search by tags
+			//if (search_text[0] == '*')
+			//{
+			//	tag_search_mode = true;
+			//	search_text = search_text.substr(1);
+			//}
 
-			//search by cost
-			if (search_text[0] == '$')
-			{
-				cost_search_mode = true;
-				search_text = search_text.substr(1);
-			}
+			////search by cost
+			//if (search_text[0] == '$')
+			//{
+			//	cost_search_mode = true;
+			//	search_text = search_text.substr(1);
+			//}
 
-			for (EDataTag* data_entity_tag : _data_entity->tag_list)
-				if (!matched_by_input)
-				{
-					tag_value = EStringUtils::to_lower(*data_entity_tag->tag_value_list[0]);
-					//if (*data_entity_tag->tag_name == "name EN") {EInputCore::logger_param("name EN", ) }
-					if ((*data_entity_tag->tag_name == "base name") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-					else
-						if ((*data_entity_tag->tag_name == "name EN") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-						else
-							if ((*data_entity_tag->tag_name == "name RU") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-				}
+			//for (EDataTag* data_entity_tag : _data_entity->tag_list)
+			//	if (!matched_by_input)
+			//	{
+			//		tag_value = EStringUtils::to_lower(*data_entity_tag->tag_value_list[0]);
+			//		//if (*data_entity_tag->tag_name == "name EN") {EInputCore::logger_param("name EN", ) }
+			//		if ((*data_entity_tag->tag_name == "base name") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+			//		else
+			//			if ((*data_entity_tag->tag_name == "name EN") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+			//			else
+			//				if ((*data_entity_tag->tag_name == "name RU") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+			//	}
 		}
 		else
 		{
@@ -3757,10 +3726,12 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 				//for every data entity tag
 				for (EDataTag* data_entity_tag : _data_entity->tag_list)
 				{
-					tag_value = *data_entity_tag->tag_value_list[0];
+					tag_ID = data_entity_tag->tag_value_list[0].ID;
+					//tag_value = *data_entity_tag->tag_value_list[0];
 
 					//compare data entity tag and requaire tag from filter rule
-					if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, required_tag_filter.target_tag)))
+					//if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, required_tag_filter.target_tag)))
+					if (data_entity_tag->tag_name.ID == required_tag_filter.target_tag.ID)
 					{
 						//EInputCore::logger_param("tag name", *data_entity_tag->tag_name);
 						required_tag_match = true;
@@ -3780,9 +3751,9 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 									(suitable_DETF.is_active)
 									&&
 									(
-										(suitable_DETF.target_value_key == "")
+										(suitable_DETF.target_value_key.is_empty)
 										||
-										(EStringUtils::compare_ignoring_case(suitable_DETF.target_value_key, tag_value))
+										(suitable_DETF.target_value_key.ID == tag_ID)
 									)
 								)
 								{
@@ -3820,3 +3791,10 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 //
 //}
 
+void ID_string::register_new_ID_string(int _id, std::string _string)
+{
+	
+		ID_string::registered_ID_strings[_id].is_empty = false;
+		ID_string::registered_ID_strings[_id].string_value = _string;
+		ID_string::registered_ID_strings[_id].ID = _id;
+}

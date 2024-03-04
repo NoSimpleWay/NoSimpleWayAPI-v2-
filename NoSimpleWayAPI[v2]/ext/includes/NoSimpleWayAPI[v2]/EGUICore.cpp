@@ -36,7 +36,6 @@ EButtonGroupConfirmAction* EButtonGroupConfirmAction::confirm_decline_group = nu
 EButtonGroup* EButtonGroup::focused_button_group_with_slider = nullptr;
 
 
-EButtonGroup* EButtonGroup::color_editor_group = nullptr;
 EButtonGroup* EButtonGroup::add_content_to_filter_block_group = nullptr;
 
 
@@ -4566,195 +4565,203 @@ EButtonGroup* EButtonGroup::create_button_group_without_bg(ERegionGabarite* _reg
 	return just_created_button_group;
 }
 
-EButtonGroup* EButtonGroup::create_color_editor_group(ERegionGabarite* _region, EGUIStyle* _style)
+EButtonGroupSimpleColorEditor* EButtonGroupSimpleColorEditor::registered_color_editor_group = nullptr;
+EButtonGroupSimpleColorEditor* EButtonGroupSimpleColorEditor::create_color_editor_group(ERegionGabarite* _region, EGUIStyle* _style, EWindow* _window)
 {
-	EButtonGroup* main_group = create_root_button_group(_region, _style);
-	main_group->root_group = main_group;
-	HSVRGBAColor* HRA_color = &Helper::registered_color_list[rand() % Helper::registered_color_list.size()]->target_color;
+	EButtonGroupSimpleColorEditor*
+	color_editor_group = new EButtonGroupSimpleColorEditor(_region);
+
+	color_editor_group->auto_superfocused = true;
 
 
-	main_group->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
-	main_group->actions_on_draw.push_back(&EDataActionCollection::action_draw_color_rectangle_for_group);
+	color_editor_group->init_as_root_group(_window);
 
-	main_group->actions_on_update.push_back(&EDataActionCollection::action_convert_HSV_to_RGB);
-	main_group->actions_on_update.push_back(&EDataActionCollection::action_forcibly_redraw_specific_buttons);
-
+	EDataContainer_VerticalNamedSlider* pointer_to_data;
 
 	EButtonGroup*
-	workspace_group = main_group->add_close_group_and_return_workspace_group(new ERegionGabarite(20.0f, 20.0f), _style);
-	workspace_group->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-	main_group->add_caption_by_localistation_key("window_header_color_editor");
+		workspace_part = color_editor_group->add_close_group_and_return_workspace_group(new ERegionGabarite(100.0f, 20.0f), EGUIStyle::active_style);
+	workspace_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
 
-	EDataContainer_Group_ColorEditor*
-	data = new EDataContainer_Group_ColorEditor();
-
-	data->work_color = HRA_color;
-	//
-	//data->pointer_to_H		= new float(1.0f);
-	//data->pointer_to_S		= new float(1.0f);
-	//data->pointer_to_V		= new float(1.0f);
-	//data->pointer_to_alpha	= new float(1.0f);
-
-	main_group->data_container = data;
-
-	//**********************************************************************************************************************************************
-	//**********************************************************************************************************************************************
-	EButtonGroup* left_part = workspace_group->add_group(create_default_button_group(new ERegionGabarite(265.0f, 285.0f), _style));
-	left_part->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
-	left_part->stretch_x_by_parent_size = false;
-	left_part->dynamic_size_y = true;
+	//GROUP HORIZONTAL left		colors configurer [hair slier][named sliders]
+	////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+	left_part = workspace_part->add_group(new EButtonGroup(new ERegionGabarite(150.0f, 256.0f)));
+	left_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_without_slider);
+	left_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_static_autosize, NSW_dynamic_autosize);
+	////////////////////////////////////////////////////////////////////////////
 
 
-	//**********************************************************************************************************************************************
-	EButtonGroup* value_and_alpha_part = left_part->add_group(create_default_button_group(new ERegionGabarite(265.0f, 100.0f), _style));
-	value_and_alpha_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-	value_and_alpha_part->stretch_x_by_parent_size = true;
-	value_and_alpha_part->dynamic_size_y = true;
 
-	// // // // // // //
+
+	//GROUP	VERICAL bottom		[Value]	[Alpha]
+	////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+	value_alpha_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 70.0f), EGUIStyle::active_style));
+	value_alpha_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+	color_editor_group->pointer_to_VA_slider_group = value_alpha_part;
+	////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+	//GROUP	VERICAL top			[hair slider->(Hue) (Saturation)]
+	////////////////////////////////////////////////////////////////////////////
+	EButtonGroup*
+	hair_HS_slider_part = left_part->add_group(EButtonGroup::create_button_group_without_bg(new ERegionGabarite(150.0f, 150.0f), EGUIStyle::active_style));
+	hair_HS_slider_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_without_slider);
+	hair_HS_slider_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+
+	color_editor_group->pointer_to_hair_slider_group = hair_HS_slider_part;
+	////////////////////////////////////////////////////////////////////////////
+
+
+			//GROUP VERICAL right	color patterns
+			////////////////////////////////////////////////////////////////////////////
+			EButtonGroup*
+			right_part = workspace_part->add_group(new EButtonGroup(new ERegionGabarite(150.0f, 256.0f)));
+			right_part->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+			right_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+			////////////////////////////////////////////////////////////////////////////
+
+					//GROUP VERTICAL bottom		control buttons
+					////////////////////////////////////////////////////////////////////////////
+					EButtonGroup*
+					color_pattern_control_part = right_part->add_group(new EButtonGroup(new ERegionGabarite(150.0f, 25.0f)));
+					color_pattern_control_part->init_button_group(EGUIStyle::active_style, BrickStyleID::NONE, bgroup_with_slider);
+					color_pattern_control_part->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_static_autosize);
+					////////////////////////////////////////////////////////////////////////////
+
+					//GROUP VERTICAL up			color pattern buttons
+					////////////////////////////////////////////////////////////////////////////
+					EButtonGroup*
+					color_patterns_button_group = right_part->add_group(new EButtonGroup(new ERegionGabarite(150.0f, 25.0f)));
+					color_patterns_button_group->init_button_group(EGUIStyle::active_style, BrickStyleID::GROUP_DEFAULT, bgroup_with_slider);
+					color_patterns_button_group->set_parameters(ChildAlignMode::ALIGN_VERTICAL, NSW_dynamic_autosize, NSW_dynamic_autosize);
+
+					color_editor_group->pointer_to_color_pattern_group = color_patterns_button_group;
+					////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+	//add group to group list
+	color_editor_group->need_refresh = true;
+
+
+
+	////////////////////////////////////////////////////////////////////////////
+	//buttons for SA group
+	////////////////////////////////////////////////////////////////////////////
+	
+	//ALPHA
+	////////////////////////////////////////////////////////////////////////////
 	EntityButton*
-		jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_a"));
-	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->a;
-	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
-	value_and_alpha_part->add_button_to_working_group(jc_button);
-
-	data->slider_data_alpha_container = static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container);
-	// // // // // // //
-
-	// // // // // // //
-
-	jc_button = EntityButton::create_horizontal_named_slider(new ERegionGabarite(240.0f, 40.0f), value_and_alpha_part, EFont::font_list[0], EGUIStyle::active_style, ELocalisationText::get_localisation_by_key("slider_color_v"));
-	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->pointer_to_value = &HRA_color->v;
-	static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container)->max_value = 1.0f;
-	value_and_alpha_part->add_button_to_working_group(jc_button);
-
-	data->slider_data_value_container = static_cast<EDataContainer_VerticalNamedSlider*>(EntityButton::get_last_custom_data(jc_button)->data_container);
-	// // // // // // //
-
-
-//**********************************************************************************************************************************************
-	EButtonGroup* hue_part = left_part->add_group(create_default_button_group(new ERegionGabarite(265.0f, 260.0f), _style));
-	hue_part->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-	hue_part->stretch_x_by_parent_size = true;
-	hue_part->dynamic_size_y = false;
-
-	// // // // // // //
-	jc_button = EntityButton::create_default_crosshair_slider
+	alpha_slider = EntityButton::create_horizontal_named_slider
 	(
-		new ERegionGabarite(256.0f, 256.0f),
-		hue_part,
-		&HRA_color->h,
-		&HRA_color->s,
-		"hue_saturation"
-	);
-	jc_button->can_be_stretched = true;
 
-	EDataContainer_CrosshairSlider* crosshair_data = (EDataContainer_CrosshairSlider*)EntityButton::get_last_custom_data(jc_button)->data_container;
+		new ERegionGabarite(350.0f, 35.0f),
+		value_alpha_part,
+		EFont::font_list[0],
+		EGUIStyle::active_style,
+		ELocalisationText::get_localisation_by_key("slider_color_a")
+	);
+	color_editor_group->color_slider_alpha = alpha_slider;
+
+	alpha_slider->can_be_stretched = true;
+	pointer_to_data = static_cast<EDataContainer_VerticalNamedSlider*>(alpha_slider->main_custom_data->data_container);
+
+	pointer_to_data->pointer_to_value = new float(1.0f);
+	pointer_to_data->min_value = 0.0f;
+	pointer_to_data->mid_value = 0.5f;
+	pointer_to_data->max_value = 1.0f;
+
+	value_alpha_part->add_button_to_working_group(alpha_slider);
+	////////////////////////////////////////////////////////////////////////////
+
+
+	//VALUE
+	////////////////////////////////////////////////////////////////////////////
+	EntityButton*
+		value_slider = EntityButton::create_horizontal_named_slider
+		(
+
+			new ERegionGabarite(350.0f, 35.0f),
+			value_alpha_part,
+			EFont::font_list[0],
+			EGUIStyle::active_style,
+			ELocalisationText::get_localisation_by_key("slider_color_v")
+		);
+	color_editor_group->color_slider_value = value_slider;
+
+	value_slider->can_be_stretched = true;
+	pointer_to_data = static_cast<EDataContainer_VerticalNamedSlider*>(value_slider->main_custom_data->data_container);
+
+	pointer_to_data->pointer_to_value = new float(1.0f);
+	pointer_to_data->min_value = 0.0f;
+	pointer_to_data->mid_value = 0.5f;
+	pointer_to_data->max_value = 1.0f;
+
+	value_alpha_part->add_button_to_working_group(value_slider);
+	////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+	//CROSSHAIR HUE SATURATION
+	////////////////////////////////////////////////////////////////////////////
+	EntityButton*
+		crosshair_slider = EntityButton::create_default_crosshair_slider
+		(
+			new ERegionGabarite(150.0f, 150.0f),
+			hair_HS_slider_part,
+			new float(180.0f),
+			new float(0.55f),
+			"hue_saturation"
+		);
+	crosshair_slider->can_be_stretched = true;
+	color_editor_group->color_hair_slider_hue_saturation = crosshair_slider;
+
+	EDataContainer_CrosshairSlider* crosshair_data = (EDataContainer_CrosshairSlider*)EntityButton::get_last_custom_data(crosshair_slider)->data_container;
 	crosshair_data->min_x = 0.0f;
 	crosshair_data->max_x = 360.0f;
 
 	crosshair_data->min_y = 0.0f;
 	crosshair_data->max_y = 1.0f;
 
-	data->crosshair_slider_data_container = crosshair_data;
-
-	hue_part->add_button_to_working_group(jc_button);
-	// // // // // // //
+	hair_HS_slider_part->add_button_to_working_group(crosshair_slider);
+	////////////////////////////////////////////////////////////////////////////
 
 
-	//**********************************************************************************************************************************************
-	//**********************************************************************************************************************************************
-	EButtonGroup* color_box = workspace_group->add_group(create_default_button_group(new ERegionGabarite(35.0f, 10.0f), _style));
-	//right_part->debug_translation = true;
-	color_box->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-	color_box->stretch_x_by_parent_size = false;
-	color_box->dynamic_size_y = true;
-	data->pointer_to_color_box_sector = color_box;
+	//CREATE NEW COLOR PATTERN
+	////////////////////////////////////////////////////////////////////////////
+	EntityButtonNewColorPattern*
+	new_color_button = new EntityButtonNewColorPattern();
+	new_color_button->make_default_button_with_unedible_text
+	(
+		new ERegionGabarite(150.0f, 20.0f),
+		color_pattern_control_part,
+		&EDataActionCollection::action_create_new_color,
+		ELocalisationText::get_localisation_by_key("button_create_color_pattern")
 
-	//**********************************************************************************************************************************************
-	//**********************************************************************************************************************************************
-	EButtonGroup* color_collection_frame = workspace_group->add_group(create_default_button_group(new ERegionGabarite(256.0f, 100.0f), _style));
-	//right_part->debug_translation = true;
-	color_collection_frame->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
-	color_collection_frame->stretch_x_by_parent_size = true;
-	color_collection_frame->dynamic_size_y = true;
+	);
+	new_color_button->can_be_stretched = true;
 
+	new_color_button->target_button_group = color_patterns_button_group;
+	new_color_button->pointer_to_color = &(color_editor_group->target_color);
 
-	EButtonGroup* control_button_segment = color_collection_frame->add_group(create_default_button_group(new ERegionGabarite(256.0f, 50.0f), _style));
-	control_button_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
-	control_button_segment->stretch_x_by_parent_size = true;
-	control_button_segment->dynamic_size_y = false;
-
-	//button "unbind color"
-	//jc_button = new EntityButton();
-	//jc_button->make_as_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_unbing_color);
-
-	//ETextArea* jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], ELocalisationText::get_localisation_by_key("button_unbind_pattern"));
-	//jc_text_area->can_be_edited = false;
-	//Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
-	//control_button_segment->add_button_to_working_group(jc_button);
-
-	//button "register new color"
-	{
-		jc_button = new EntityButton();
-		jc_button->make_as_default_clickable_button(new ERegionGabarite(180.0f, 30.0f), control_button_segment, &EDataActionCollection::action_create_new_color);
-
-		ETextArea*
-			jc_text_area = ETextArea::create_centered_text_area(Entity::get_last_clickable_area(jc_button), EFont::font_list[0], ELocalisationText::get_localisation_by_key("button_create_color_pattern"));
-		jc_text_area->can_be_edited = false;
-		Entity::add_text_area_to_last_clickable_region(jc_button, jc_text_area);
-		control_button_segment->add_button_to_working_group(jc_button);
-	}
+	color_pattern_control_part->add_button_to_working_group(new_color_button);
 
 
+	color_editor_group->generate_color_pattern_buttons();
 
-	EButtonGroup*
-		color_collection_segment = color_collection_frame->add_group(create_default_button_group(new ERegionGabarite(256.0f, 40.0f), _style));
-	color_collection_segment->child_align_mode = ChildAlignMode::ALIGN_VERTICAL;
-	color_collection_segment->stretch_x_by_parent_size = true;
-	color_collection_segment->dynamic_size_y = true;
-	data->pointer_to_color_collection_sector = color_collection_segment;
-	color_collection_segment->actions_on_select_button.push_back(&EDataActionCollection::action_set_new_color_to_button);
-
-	if (false)
-	for (int i = 0; i < Helper::registered_color_list.size(); i++)
-	{
-		// // // // // // //// // // // // // //// // // // // // //
-		HRA_color_collection* HRA_collection = Helper::registered_color_list[i];
-		HSVRGBAColor* HRA_color = &HRA_collection->target_color;
-		//HRA_color->h = rand() % 360;
-		//HRA_color->s = 1.0f - pow((rand() % 100) / 100.0f, 1.0);
-		//HRA_color->v = 1.0f - pow((rand() % 100) / 100.0f, 3.0);
-		//HRA_color->a = 1.0f - pow((rand() % 100) / 100.0f, 4.0);
-
-
-		//std::cout << Helper::registered_color_list[0] << std::endl;
-		EntityButtonColorButton*
-		color_button = new EntityButtonColorButton
-		();
-
-		color_button->make_as_named_color_button
-		(
-			//*color_collection->child_align_mode = ChildAlignMode::ALIGN_HORIZONTAL;
-
-			new ERegionGabarite(150.0f, 38.0f),
-			color_collection_segment,
-			EFont::font_list[0],
-			EGUIStyle::active_style,
-			HRA_collection->localised_name,
-			HRA_collection,
-			HRA_color,
-			ColorButtonMode::CBM_SELECT_COLOR
-		);
-
-		//std::cout << HRA_color << std::endl;
-		//Entity::get_last_clickable_area(jc_button)->actions_on_click_list.push_back(&EDataActionCollection::action_select_this_button);
-
-		color_collection_segment->add_button_to_working_group(color_button);
-		// // // // // // //// // // // // // //// // // // // // //
-	}
-
-	return main_group;
+	return color_editor_group;
 }
 
 EButtonGroup* EButtonGroup::add_close_group_and_return_workspace_group(ERegionGabarite* _region, EGUIStyle* _style)

@@ -17,6 +17,25 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Trash"
 	
+	ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Coral Amulet"
+	[tag]"name EN"		[value]"Ikiaho's Promise"
+	[tag]"name RU"		[value]"Обещание Икиао"
+
+	[tag]"icon path"	[value]"Coral_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -103,6 +122,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Paua Amulet"
+	[tag]"name EN"		[value]"Defiance of Destiny"
+	[tag]"name RU"		[value]"Противление судьбе"
+
+	[tag]"icon path"	[value]"Paua_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Expensive"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -448,6 +486,24 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	
 	[tag]"worth"		[value]"Moderate"
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Gold Amulet"
+	[tag]"name EN"		[value]"The Untouched Soul"
+	[tag]"name RU"		[value]"Нетронутая душа"
+
+	[tag]"icon path"	[value]"Gold_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Loot source: Affliction"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -880,6 +936,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	
 	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Agate Amulet"
+	[tag]"name EN"		[value]"Eternal Damnation"
+	[tag]"name RU"		[value]"Вечное проклятье"
+
+	[tag]"icon path"	[value]"Agate_Amulet_inventory_icon"
+	[tag]"base class"	[value]"Amulets"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Loot source: Sanctum"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Very expensive"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -1666,6 +1741,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"base name"	[value]"Cloth Belt"
+	[tag]"name EN"		[value]"Bound Fate"
+	[tag]"name RU"		[value]"Связанная судьба"
+
+	[tag]"icon path"	[value]"Cloth_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cloth Belt"
 	[tag]"name EN"		[value]"Perandus Blazon"
 	[tag]"name RU"		[value]"Герб рода Перандус"
 
@@ -1865,6 +1959,44 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Heavy Belt"
+	[tag]"name EN"		[value]"Bisco's Leash"
+	[tag]"name RU"		[value]"Привязь Биско"
+
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Heavy Belt"
+	[tag]"name EN"		[value]"Kaom's Binding"
+	[tag]"name RU"		[value]"Путы Каома"
+
+	[tag]"icon path"	[value]"Heavy_Belt_inventory_icon"
+	[tag]"base class"	[value]"Belts"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Common"
 
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -2700,6 +2832,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"base name"	[value]"Amethyst Ring"
+	[tag]"name EN"		[value]"Original Sin"
+	[tag]"name RU"		[value]"Первородный грех"
+
+	[tag]"icon path"	[value]"Amethyst_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Loot source: Sanctum"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Very Expensive"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Amethyst Ring"
 	[tag]"name EN"		[value]"Ming's Heart"
 	[tag]"name RU"		[value]"Сердце Мина"
 
@@ -2964,6 +3115,26 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	
 	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Iron Ring"
+	[tag]"name EN"		[value]"Circle of Guilt"
+	[tag]"name RU"		[value]"Обод вины"
+
+	[tag]"icon path"	[value]"Iron_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Loot source: Synthesis"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Moderate"
 		
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3665,8 +3836,8 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"base name"	[value]"Moonstone Ring"
-	[tag]"name EN"		[value]"Valyrium"
-	[tag]"name RU"		[value]"Валириум"
+	[tag]"name EN"		[value]"Tawhanuku's Timing"
+	[tag]"name RU"		[value]"Точность Тавануку"
 
 	[tag]"icon path"	[value]"Moonstone_Ring_inventory_icon"
 	[tag]"base class"	[value]"Rings"
@@ -3678,7 +3849,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	
-	[tag]"worth"		[value]"Common"
+	[tag]"worth"		[value]"Trash"
 		
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -3757,6 +3928,25 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Moonstone Ring"
+	[tag]"name EN"		[value]"Valyrium"
+	[tag]"name RU"		[value]"Валириум"
+
+	[tag]"icon path"	[value]"Moonstone_Ring_inventory_icon"
+	[tag]"base class"	[value]"Rings"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	
+	[tag]"worth"		[value]"Trash"
 		
 		
 		
@@ -4216,6 +4406,26 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	
 	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crude Bow"
+	[tag]"name EN"		[value]"Silverbranch"
+	[tag]"name RU"		[value]"Серебряная ветвь"
+
+	[tag]"icon path"	[value]"Crude_Bow_inventory_icon"
+	[tag]"base class"	[value]"Bows"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
 	
 	
 	
@@ -5139,7 +5349,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"base name"	[value]"Imperial Skean"
-	[tag]"name EN"		[value]"White wind"
+	[tag]"name EN"		[value]"White Wind"
 	[tag]"name RU"		[value]"Белый ветер"
 
 	[tag]"icon path"	[value]"SuperDagger"
@@ -5153,6 +5363,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Royal Skean"
+	[tag]"name EN"		[value]"Heartbreaker"
+	[tag]"name RU"		[value]"Губитель сердец"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Rune Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -5247,6 +5476,26 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ambusher"
+	[tag]"name EN"		[value]"The Hidden Blade"
+	[tag]"name RU"		[value]"Спрятанный клинок"
+
+	[tag]"icon path"	[value]"SuperDagger"
+	[tag]"base class"	[value]"Dagger"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Heist"
+	
+	[tag]"worth"		[value]"Moderate"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -5701,18 +5950,12 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
 	
 	
-	
-	
-	
-	
-	
-	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"base name"	[value]"Royal Sceptre"
-	[tag]"name EN"		[value]"Soul Taker"
-	[tag]"name RU"		[value]"Сборщик душ"
+	[tag]"name EN"		[value]"The Black Cane"
+	[tag]"name RU"		[value]"Чёрная трость"
 
 	[tag]"icon path"	[value]"SuperSceptre"
 	[tag]"base class"	[value]"Sceptre"	
@@ -5723,6 +5966,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Trash"
 	
@@ -5956,6 +6200,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Karui Sceptre"
+	[tag]"name EN"		[value]"Учение Мааты"
+	[tag]"name RU"		[value]"Рука смерти"
+
+	[tag]"icon path"	[value]"SuperHammer"
+	[tag]"base class"	[value]"One Handed Mace"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	
 	
@@ -6461,6 +6724,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Trash"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Graceful Sword"
+	[tag]"name EN"		[value]"Nametaker"
+	[tag]"name RU"		[value]"Собиратель имён"
+
+	[tag]"icon path"	[value]"SuperBlade"
+	[tag]"base class"	[value]"One Handed Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Affliction"
+	
+	[tag]"worth"		[value]"Common"
 	
 	
 	
@@ -7207,7 +7491,63 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Trash"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Royal Staff"
+	[tag]"name EN"		[value]"The Stormheart"
+	[tag]"name RU"		[value]"Сердце бури"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Staff"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
 	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Engraved Greatsword"
+	[tag]"name EN"		[value]"Rakiata's Dance"
+	[tag]"name RU"		[value]"Танец Ракиаты"
+
+	[tag]"icon path"	[value]"SuperTwoHandSword"
+	[tag]"base class"	[value]"Two Hand Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Charan's Sword"
+	[tag]"name EN"		[value]"Oni-Goroshi"
+	[tag]"name RU"		[value]"Они-Гороси"
+
+	[tag]"icon path"	[value]"SuperBlade"
+	[tag]"base class"	[value]"One Handed Sword"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Hillok"
+	
+	[tag]"worth"		[value]"Very expensive"
 	
 	
 	
@@ -7273,6 +7613,46 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Foul Staff"
+	[tag]"name EN"		[value]"The Winds of Fate"
+	[tag]"name RU"		[value]"Ветра судьбы"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Warstaff"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Sanctum"
+	
+	[tag]"worth"		[value]"Very Expensive"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ezomyte Staff"
+	[tag]"name EN"		[value]"The Fulcrum"
+	[tag]"name RU"		[value]"Центр вращения"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Warstaff"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Heist"
+	
+	[tag]"worth"		[value]"Very expensive"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -7476,6 +7856,26 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Primordial Staff"
+	[tag]"name EN"		[value]"The Burden of Shadows"
+	[tag]"name RU"		[value]"Гнёт теней"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Staff"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Affliction"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	
 	
@@ -7745,6 +8145,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"World drop"
 	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Highborn Staff"
+	[tag]"name EN"		[value]"Witchhunter's Judgment"
+	[tag]"name RU"		[value]"Правосудие охотника на ведьм"
+
+	[tag]"icon path"	[value]"SuperStaff"
+	[tag]"base class"	[value]"Staff"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Harvest"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -8146,6 +8567,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Karui Maul"
+	[tag]"name EN"		[value]"Marohi Erqi"
+	[tag]"name RU"		[value]"Марохи Эрки"
+
+	[tag]"icon path"	[value]"SuperTwoHandedMace"
+	[tag]"base class"	[value]"Two Hand Mace"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"4"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	
 	
@@ -8681,6 +9121,102 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Trash"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Omen Wand"
+	[tag]"name EN"		[value]"Apep's Rage"
+	[tag]"name RU"		[value]"Бешенство Апепа"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Driftwood Wand"
+	[tag]"name EN"		[value]"Lifesprig"
+	[tag]"name RU"		[value]"Живой побег"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sage Wand"
+	[tag]"name EN"		[value]"Shade of Solaris"
+	[tag]"name RU"		[value]"Тень Солярис"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Prophecy Wand"
+	[tag]"name EN"		[value]"Void Battery"
+	[tag]"name RU"		[value]"Накопитель пустоты"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sage Wand"
+	[tag]"name EN"		[value]"Relic of the Pact"
+	[tag]"name RU"		[value]"Реликвия соглашения"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Ultimatum"
+	
+	[tag]"worth"		[value]"Rare"
+	
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -8903,6 +9439,26 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Trash"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Carved Wand"
+	[tag]"name EN"		[value]"The Poet's Pen"
+	[tag]"name RU"		[value]"Перо поэта"
+
+	[tag]"icon path"	[value]"SuperWand"
+	[tag]"base class"	[value]"Wand"	
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Rare"
 	
 	
 	
@@ -9154,6 +9710,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Colosseum Plate"
+	[tag]"name EN"		[value]"Pragmatism"
+	[tag]"name RU"		[value]"Прагматизм"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Affliction"
+	
+	[tag]"worth"		[value]"Common"
 	
 	
 	
@@ -10359,7 +10934,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"base name"	[value]"Saint's Hauberk"
-	[tag]"name EN"		[value]"	ani's Prototype"
+	[tag]"name EN"		[value]"Doryani's Prototype"
 	[tag]"name RU"		[value]"Прототип Дориани"
 
 	[tag]"icon path"	[value]"SuperChest"
@@ -10372,8 +10947,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"worth"		[value]"Rare"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"worth"		[value]"Common"
 	
 	
 	
@@ -10578,6 +11152,25 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Rare"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Majestic Plate"
+	[tag]"name EN"		[value]"Utula's Hunger"
+	[tag]"name RU"		[value]"Голод Утулы"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
 	
 	
 	
@@ -11068,6 +11661,25 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
+	[tag]"base name"	[value]"Velvet Slippers"
+	[tag]"name EN"		[value]"Wondertrap"
+	[tag]"name RU"		[value]"Ведущие к чудесам"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
 	[tag]"base name"	[value]"Legion Boots"
 	[tag]"name EN"		[value]"Gang's Momentum"
 	[tag]"name RU"		[value]"Кураж Ганга"
@@ -11222,6 +11834,30 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ancient Greaves"
+	[tag]"name EN"		[value]"Kahuturoa's Certainty"
+	[tag]"name RU"		[value]"Убеждённость Кахутуруа"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+	
 	
 	
 	
@@ -11486,6 +12122,26 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Beast drop"
 	[tag]"item tag"		[value]"Loot source: Saqawal"
+	
+	[tag]"worth"		[value]"Moderate"
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Hydrascale Boots"
+	[tag]"name EN"		[value]"Gamblesprint"
+	[tag]"name RU"		[value]"Дух азарта"
+
+	[tag]"icon path"	[value]"SuperBoots"
+	[tag]"base class"	[value]"Boots"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Ultimatum"
 	
 	[tag]"worth"		[value]"Moderate"
 	
@@ -11991,7 +12647,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"Uber lab drop"
+	[tag]"item tag"		[value]"Loot source: Uber lab"
 	
 	[tag]"worth"		[value]"Expensive"
 	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
@@ -12885,6 +13541,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Loot source: Shaper"
 	
 	[tag]"worth"		[value]"Moderate"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crusader Gloves"
+	[tag]"name EN"		[value]"Repentance"
+	[tag]"name RU"		[value]"Покаяние"
+
+	[tag]"icon path"	[value]"SuperGloves"
+	[tag]"base class"	[value]"Gloves"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -13867,6 +14542,25 @@ ADD_NEW_DATA_ENTITY
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
+	[tag]"base name"	[value]"Regicide Mask"
+	[tag]"name EN"		[value]"Akoya's Gaze"
+	[tag]"name RU"		[value]"Взгляд Акойи"
+
+	[tag]"icon path"	[value]"SuperHelmet"
+	[tag]"base class"	[value]"Helmets"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
 	[tag]"base name"	[value]"Great Crown"
 	[tag]"name EN"		[value]"Geofri's Crest"
 	[tag]"name RU"		[value]"Шлем Джофри"
@@ -13998,6 +14692,32 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Visored Sallet"
+	[tag]"name EN"		[value]"The Trickster's Smile"
+	[tag]"name RU"		[value]"Улыбка плута"
+
+	[tag]"icon path"	[value]"SuperHelmet"
+	[tag]"base class"	[value]"Helmets"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -14720,6 +15440,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Common"
 	
+	
+	
+	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
@@ -14738,6 +15461,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"World drop"
 	
 	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sinner Tricorne"
+	[tag]"name EN"		[value]"Alpha's Howl"
+	[tag]"name RU"		[value]"Вой альфы"
+
+	[tag]"icon path"	[value]"SuperHelmet"
+	[tag]"base class"	[value]"Helmets"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Common"
+	
+	
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -15306,6 +16051,27 @@ ADD_NEW_DATA_ENTITY
 	[tag]"worth"		[value]"Rare"
 	
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Necromancer Circlet"
+	[tag]"name EN"		[value]"Sandstorm Visage"
+	[tag]"name RU"		[value]"Образ песчаной бури"
+
+	[tag]"icon path"	[value]"SuperHelmet"
+	[tag]"base class"	[value]"Helmets"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Sanctum"
+	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	
+	[tag]"worth"		[value]"Very expensive"
+	
+	
 	
 	
 	
@@ -15553,6 +16319,26 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Common"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Sharktooth Arrow Quiver"
+	[tag]"name EN"		[value]"Ahuana's Bite"
+	[tag]"name RU"		[value]"Укус Ахваны"
+
+	[tag]"icon path"	[value]"SuperQuiver"
+	[tag]"base class"	[value]"Quiver"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	
+	[tag]"worth"		[value]"Trash"
+	
 	
 	
 ADD_NEW_DATA_ENTITY
@@ -15702,6 +16488,25 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Trash"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Maple Round Shield"
+	[tag]"name EN"		[value]"The Flawed Refuge"
+	[tag]"name RU"		[value]"Приют с изъяном"
+
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Affliction"
+	
+	[tag]"worth"		[value]"Common"
+	
 	
 	
 	
@@ -15778,6 +16583,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base name"	[value]"Vaal Buckler"
 	[tag]"name EN"		[value]"Thousand Teeth Temu"
 	[tag]"name RU"		[value]"Тысячезубый Тему"
+
+	[tag]"icon path"	[value]"SuperShield"
+	[tag]"base class"	[value]"Shield"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Trash"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Ironwood Buckler"
+	[tag]"name EN"		[value]"Kiloava's Bluster"
+	[tag]"name RU"		[value]"Бахвальство Килоавы"
 
 	[tag]"icon path"	[value]"SuperShield"
 	[tag]"base class"	[value]"Shield"
@@ -17363,6 +18187,25 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Common"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Grand Mana Flask"
+	[tag]"name EN"		[value]"Zerphi's Last Breath"
+	[tag]"name RU"		[value]"Последний вздох Зерфи"
+
+	[tag]"icon path"	[value]"Grand_Mana_Flask_inventory_icon"
+	[tag]"base class"	[value]"mana Flask"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"2"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Moderate"
+	
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17787,7 +18630,45 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"worth"		[value]"Very expensive"
 	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Crimson Jewel"
+	[tag]"name EN"		[value]"That Which Was Taken"
+	[tag]"name RU"		[value]"Присвоенное"
+
+	[tag]"icon path"	[value]"Prismatic_Jewel_inventory_icon"
+	[tag]"base class"	[value]"Jewels"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
 	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Affliction"
+	
+	[tag]"worth"		[value]"Expensive"
+	
+	
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Cobalt Jewel"
+	[tag]"name EN"		[value]"Emperor's Wit"
+	[tag]"name RU"		[value]"Остроумие императора"
+
+	[tag]"icon path"	[value]"Cobalt_Jewel_inventory_icon"
+	[tag]"base class"	[value]"Jewels"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	
+	[tag]"worth"		[value]"Very expensive"
 	
 ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
@@ -17838,6 +18719,25 @@ ADD_NEW_DATA_ENTITY
 	[tag]"data type"	[value]"Game item"
 
 	[tag]"base name"	[value]"Viridian Jewel"
+	[tag]"name EN"		[value]"The Balance of Terror"
+	[tag]"name RU"		[value]"Равновесие ужаса"
+
+	[tag]"icon path"	[value]"Viridian_Jewel_inventory_icon"
+	[tag]"base class"	[value]"Jewels"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Loot source: Sanctum"
+	
+	[tag]"worth"		[value]"Rare"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Viridian Jewel"
 	[tag]"name EN"		[value]"Emperor's Cunning"
 	[tag]"name RU"		[value]"Коварство императора"
 
@@ -17849,9 +18749,9 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
-	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Loot source: Uber lab"
 	
-	[tag]"worth"		[value]"Expensive"
+	[tag]"worth"		[value]"Very expensive"
 	
 	
 	

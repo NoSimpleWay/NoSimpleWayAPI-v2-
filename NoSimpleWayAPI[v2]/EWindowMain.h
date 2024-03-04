@@ -99,16 +99,16 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_example_text_for_preview_box;
 	extern ETextureGabarite* texture_example_text_for_preview_box_half;
 	extern ETextureGabarite* texture_example_text_bg_for_preview_box;
-
+	
 	extern ETextureGabarite* texture_loot_version_full_ignore;
 	extern ETextureGabarite* texture_loot_version_hide;
 	extern ETextureGabarite* texture_loot_version_ignore;
 	extern ETextureGabarite* texture_loot_version_default;
 	extern ETextureGabarite* texture_loot_version_focus;
-
+	
 	extern ETextureGabarite* texture_show_hide_visual_editor;
 	extern ETextureGabarite* texture_show_hide_visual_editor_deactivate;
-
+	
 	extern ETextureGabarite* texture_minimap_shape_circle;
 	extern ETextureGabarite* texture_minimap_shape_diamond;
 	extern ETextureGabarite* texture_minimap_shape_hexagon;
@@ -121,24 +121,24 @@ namespace NS_DefaultGabarites
 	extern ETextureGabarite* texture_minimap_shape_kite;
 	extern ETextureGabarite* texture_minimap_shape_pentagon;
 	extern ETextureGabarite* texture_minimap_shape_upside_down_house;
-
+	
 	extern ETextureGabarite* texture_help_description_exact_match[2];
-
+	
 	extern ETextureGabarite* texture_button_plus;
-
+	
 	extern ETextureGabarite* texture_button_move_up;
 	extern ETextureGabarite* texture_button_move_down;
 	extern ETextureGabarite* texture_button_move;
 	extern ETextureGabarite* texture_button_move_small;
-
+	
 	extern ETextureGabarite* texture_button_cut;
-
+	
 	extern ETextureGabarite* texture_button_remove_filter_block;
-
+	
 	extern ETextureGabarite* texture_ray;
-
+	
 	extern ETextureGabarite* texture_WARNING;
-
+	
 	extern ETextureGabarite* texture_config_gear;
 }
 
@@ -841,33 +841,23 @@ public:
 };
 
 class EntityButtonColorButtonForFilterBlock;
-class EButtonGroupFilterBlockColors : public EButtonGroup
+
+
+
+class EButtonGroupFilterBlockColors : public EButtonGroupSimpleColorEditor
 {
 public:
-	EButtonGroupFilterBlockColors(ERegionGabarite* _gabarite) :EButtonGroup(_gabarite) {};
+	EButtonGroupFilterBlockColors(ERegionGabarite* _gabarite) :EButtonGroupSimpleColorEditor(_gabarite) {};
 
-	EButtonGroup*					pointer_to_preview_group;
 	EButtonGroup*					pointer_to_cosmetic_element_group;
-	EButtonGroup*					pointer_to_hair_slider_group;
-	EButtonGroup*					pointer_to_VA_slider_group;
-
-	EButtonGroup*					pointer_to_color_pattern_group;
-
-
 
 	EntityButtonCosmeticElement*	cosmetic_element_button_rama;
 	EntityButtonCosmeticElement*	cosmetic_element_button_text;
 	EntityButtonCosmeticElement*	cosmetic_element_button_bg;
 
-	EntityButton*					color_hair_slider_hue_saturation;
-	EntityButton*					color_slider_value;
-	EntityButton*					color_slider_alpha;
-
-	HSVRGBAColor*					target_color;
-
 	void draw_button_group() override;
-	void assign_colors(HSVRGBAColor* _color);
-	void generate_color_pattern_buttons();
+	//void assign_colors(HSVRGBAColor* _color);
+	//void generate_color_pattern_buttons();
 };
 
 //
@@ -896,7 +886,7 @@ namespace NSWRegisteredButtonGroups
 {
 	static EButtonGroupFilterBlockColors* filter_block_colors;
 
-	static void register_filter_block_colors_group();
+	static void register_filter_block_colors_group_for_filter_block();
 
 }
 
@@ -1023,6 +1013,8 @@ namespace EDataActionCollection
 	void action_remove_this_random_user_sound(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_open_filter_block_color_editor(Entity* _entity, ECustomData* _custom_data, float _d);
 	void action_select_cosmetic_element(Entity* _entity, ECustomData* _custom_data, float _d);
+
+	void action_create_color_pattern_for_filter_block_color_editor(Entity* _entity, ECustomData* _custom_data, float _d);
 
 
 
@@ -1221,6 +1213,12 @@ public:
 	static std::vector<RawExplicitDataEntity> raw_data_entity_list;
 };
 
+enum class PoeNinjaAPIMode
+{
+	CURRENCY,
+	UNIQUES,
+	DIVINATIONS,
+};
 constexpr int filter_tabs_count = 5;
 class EWindowMain : public EWindow
 {
@@ -1233,7 +1231,9 @@ public:
 
 	void register_loot_version_names();
 
+	
 	void get_poe_ninja_api_prices();
+	void parse_json_from_poe_ninja(std::string _url_content, PoeNinjaAPIMode _mode);
 
 	EWindowMain();
 

@@ -1938,7 +1938,7 @@ ELocalisationText ELocalisationText::get_localisation_by_key(std::string _key)
 	{
 
 		std::string
-		key_value = DataEntityUtils::get_tag_value_by_name(0, "key", de);
+		key_value = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::key, de);
 
 		if (key_value == _key)
 		{
@@ -1946,9 +1946,9 @@ ELocalisationText ELocalisationText::get_localisation_by_key(std::string _key)
 			ltext;
 
 			ltext.stored_key = _key;
-			ltext.base_name = DataEntityUtils::get_tag_value_by_name(0, "base name", de);
-			ltext.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name(0, "name EN", de);
-			ltext.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name(0, "name RU", de);
+			ltext.base_name = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::base_name, de);
+			ltext.localisations[NSW_localisation_EN] = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_EN, de);
+			ltext.localisations[NSW_localisation_RU] = DataEntityUtils::get_tag_value_by_name_ID(0, &ERegisteredStrings::name_RU, de);
 
 			return ltext;
 		}

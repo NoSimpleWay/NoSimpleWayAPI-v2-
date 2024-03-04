@@ -6108,3 +6108,48 @@ ADD_NEW_DATA_ENTITY
 
 	[tag]"item width"	[value]"1"
 	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Fire Of Unknown Origin"
+	[tag]"name RU"		[value]"Огонь незнамо откуда"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Very expensive"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Endless Night"
+	[tag]"name RU"		[value]"Бесконечная ночь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Moderate"
+	
+	[tag]"item tag"		[value]"Introduced: Affliction league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Broken Truce"
+	[tag]"name RU"		[value]"Бесконечная ночь"
+
+	[tag]"icon path"	[value]"Card"
+	[tag]"base class"	[value]"Divination Cards"
+	[tag]"worth"		[value]"Common"
+	
+	[tag]"item tag"		[value]"Introduced: Kalandra league"
+
+	[tag]"item width"	[value]"1"
+	[tag]"item height"	[value]"1"
