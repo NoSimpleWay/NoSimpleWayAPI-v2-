@@ -61,6 +61,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"Best"
 	[tag]"base family"	[value]"Basic"
+	[tag]"item tag"		[value]"Expensive base for unique"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"
@@ -79,6 +80,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"base tier"	[value]"good"
 	[tag]"base family"	[value]"Basic"
+	[tag]"item tag"		[value]"Expensive base for unique"
 
 	[tag]"item width"	[value]"2"
 	[tag]"item height"	[value]"4"

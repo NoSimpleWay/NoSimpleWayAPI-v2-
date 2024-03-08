@@ -1254,3 +1254,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"base family"	[value]"Basic"
 		
 	[tag]"worth"		[value]"Trash"
+
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"name EN"		[value]"Charan's Sword"
+	[tag]"name RU"		[value]"Меч Чарана"
+
+	[tag]"icon path"	[value]"CharanSword"
+	[tag]"base class"	[value]"One Hand Swords"
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Item for melee"
+	[tag]"item tag"		[value]"One-hand"
+	[tag]"item tag"		[value]"Item slot"
+	[tag]"item tag"		[value]"Melee weapon"
+	[tag]"item tag"		[value]"Have implicit"
+	[tag]"item tag"		[value]"Boss drop"
+	[tag]"item tag"		[value]"Loot source: Hillok"
+	[tag]"item tag"		[value]"Expensive base for unique"
+	
+	[tag]"base family"	[value]"Basic"
+		
+	[tag]"worth"		[value]"Rare"

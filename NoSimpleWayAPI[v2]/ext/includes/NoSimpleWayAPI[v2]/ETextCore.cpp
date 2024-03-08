@@ -1934,7 +1934,9 @@ ELocalisationText::ELocalisationText()
 ELocalisationText ELocalisationText::empty_localisation;
 ELocalisationText ELocalisationText::get_localisation_by_key(std::string _key)
 {
-	for (EDataEntity* de : EDataEntity::data_entity_hash_struct.data_entity_list[EStringUtils::get_id_by_hash(_key)])
+	int hashed = EStringUtils::get_id_by_hash(_key);
+
+	for (EDataEntity* de : EDataEntity::data_entity_hash_struct.data_entity_list[hashed])
 	{
 
 		std::string
@@ -1994,6 +1996,14 @@ ELocalisationText ELocalisationText::generate_localization_only_languages(std::s
 
 
 	return ltext;
+}
+
+void ELocalisationText::add_localisation_text_from_another(std::string _prefix, ELocalisationText* _ltext)
+{
+	for (int i = 0; i < NSW_languages_count; i++)
+	{
+		localisations[i] += _prefix + _ltext->localisations[i];
+	}
 }
 
 void ELocalisationText::add_text_to_all_languages(std::string _text)

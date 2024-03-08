@@ -6289,8 +6289,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"World drop"
 	
-	[tag]"worth"		[value]"Rare"
-	[tag]"item tag"		[value]"WARN WHEN HIDDEN"
+	[tag]"worth"		[value]"Moderate"
 	
 	
 	
@@ -7545,6 +7544,7 @@ ADD_NEW_DATA_ENTITY
 	
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"Boss drop"
 	[tag]"item tag"		[value]"Loot source: Hillok"
 	
 	[tag]"worth"		[value]"Very expensive"
@@ -10261,6 +10261,28 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Good for start"
 	
 	[tag]"worth"		[value]"Common"
+	
+ADD_NEW_DATA_ENTITY
+	[tag]"data type"	[value]"Game item"
+
+	[tag]"base name"	[value]"Simple Robe"
+	[tag]"name EN"		[value]"Tabula Rasa"
+	[tag]"name RU"		[value]"Табула раса"
+
+	[tag]"icon path"	[value]"SuperChest"
+	[tag]"base class"	[value]"Body Armour"	
+
+	[tag]"item width"	[value]"2"
+	[tag]"item height"	[value]"3"
+	
+	[tag]"item tag"		[value]"Hidden item"
+	[tag]"item tag"		[value]"Unique item"
+	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"Good for start"
+	[tag]"item tag"		[value]"All sockets white"
+	[tag]"item tag"		[value]"Always 6-linked"
+	
+	[tag]"worth"		[value]"Moderate"
 	
 	
 	
@@ -17902,6 +17924,7 @@ ADD_NEW_DATA_ENTITY
 	[tag]"item tag"		[value]"Hidden item"
 	[tag]"item tag"		[value]"Unique item"
 	[tag]"item tag"		[value]"World drop"
+	[tag]"item tag"		[value]"All sockets white"
 	
 	[tag]"worth"		[value]"Expensive"
 	

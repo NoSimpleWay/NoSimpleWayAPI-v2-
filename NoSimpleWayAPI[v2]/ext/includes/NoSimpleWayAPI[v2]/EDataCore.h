@@ -334,6 +334,7 @@ enum RegisteredFilterRules
 
 
 constexpr unsigned int ID_string_array_size = 65535;
+constexpr unsigned int ID_string_array_size_for_hash = ID_string_array_size/16;
 struct ID_string
 {
 	bool is_empty						= true;
@@ -341,12 +342,14 @@ struct ID_string
 	std::string			string_value	= "";
 	
 	static void			register_new_ID_string(int _id, std::string _string);
-	static ID_string	register_new_ID_by_string(std::string _string);
+	static ID_string	register_new_unique_ID_by_key(std::string _string);
 
-	static ID_string registered_ID_strings[ID_string_array_size];
+	//static ID_string GLOBAL_registered_ID_strings[ID_string_array_size];
+	static ID_string HASHED_registered_ID_strings[256][ID_string_array_size_for_hash];
+	static unsigned int last_registered_id;
 
 
-	void set_tag_ID_by_string(std::string _string);
+	void register_new_string_ID_by_string(std::string _string);
 };
 
 namespace ERegisteredStrings
@@ -373,6 +376,7 @@ namespace ERegisteredStrings
 	extern ID_string item_width;
 	extern ID_string key;
 	extern ID_string worth;
+	extern ID_string base_worth;
 
 	extern ID_string trash;
 	extern ID_string common;
@@ -380,6 +384,10 @@ namespace ERegisteredStrings
 	extern ID_string rare;
 	extern ID_string expensive;
 	extern ID_string very_expensive;
+
+	extern ID_string item_tag;
+	extern ID_string all_sockets_white;
+	extern ID_string always_six_linked;
 }
 
 

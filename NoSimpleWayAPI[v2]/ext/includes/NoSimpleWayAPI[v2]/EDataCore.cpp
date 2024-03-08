@@ -34,39 +34,45 @@ EClickableArea* EClickableArea::active_clickable_region = nullptr;
 
 ERegionGabarite* ERegionGabarite::temporary_gabarite = new ERegionGabarite();
 
-ID_string ID_string::registered_ID_strings[ID_string_array_size];
+ID_string ID_string::HASHED_registered_ID_strings[256][ID_string_array_size_for_hash];
+unsigned int ID_string::last_registered_id = 0;
 
 namespace ERegisteredStrings
 {
-	ID_string data_type					= ID_string::register_new_ID_by_string("data type");
-	ID_string icon_path					= ID_string::register_new_ID_by_string("icon path");
-	ID_string name_EN					= ID_string::register_new_ID_by_string("name EN");
-	ID_string name_RU					= ID_string::register_new_ID_by_string("name RU");
-	ID_string base_name					= ID_string::register_new_ID_by_string("base name");
-	ID_string base_class				= ID_string::register_new_ID_by_string("base class");
-	ID_string short_name				= ID_string::register_new_ID_by_string("short name");
-	ID_string max_stack_size			= ID_string::register_new_ID_by_string("max stack size");
-	ID_string stack_multiplier			= ID_string::register_new_ID_by_string("stack multiplier");
-	ID_string max_sockets				= ID_string::register_new_ID_by_string("max sockets");
-	ID_string base_ward_min				= ID_string::register_new_ID_by_string("base ward min");
-	ID_string base_ward_max				= ID_string::register_new_ID_by_string("base ward max");
-	ID_string base_armour_min			= ID_string::register_new_ID_by_string("base armour min");
-	ID_string base_armour_max			= ID_string::register_new_ID_by_string("base armour max");
-	ID_string base_evasion_min			= ID_string::register_new_ID_by_string("base evasion min");
-	ID_string base_evasion_max			= ID_string::register_new_ID_by_string("base evasion max");
-	ID_string base_energy_shield_min	= ID_string::register_new_ID_by_string("base energy shield min");
-	ID_string base_energy_shield_max	= ID_string::register_new_ID_by_string("base energy shield max");
-	ID_string item_height				= ID_string::register_new_ID_by_string("item height");
-	ID_string item_width				= ID_string::register_new_ID_by_string("item width");
-	ID_string key						= ID_string::register_new_ID_by_string("key");
-	ID_string worth						= ID_string::register_new_ID_by_string("worth");
+	ID_string data_type					= ID_string::register_new_unique_ID_by_key("data type");
+	ID_string icon_path					= ID_string::register_new_unique_ID_by_key("icon path");
+	ID_string name_EN					= ID_string::register_new_unique_ID_by_key("name EN");
+	ID_string name_RU					= ID_string::register_new_unique_ID_by_key("name RU");
+	ID_string base_name					= ID_string::register_new_unique_ID_by_key("base name");
+	ID_string base_class				= ID_string::register_new_unique_ID_by_key("base class");
+	ID_string short_name				= ID_string::register_new_unique_ID_by_key("short name");
+	ID_string max_stack_size			= ID_string::register_new_unique_ID_by_key("max stack size");
+	ID_string stack_multiplier			= ID_string::register_new_unique_ID_by_key("stack multiplier");
+	ID_string max_sockets				= ID_string::register_new_unique_ID_by_key("max sockets");
+	ID_string base_ward_min				= ID_string::register_new_unique_ID_by_key("base ward min");
+	ID_string base_ward_max				= ID_string::register_new_unique_ID_by_key("base ward max");
+	ID_string base_armour_min			= ID_string::register_new_unique_ID_by_key("base armour min");
+	ID_string base_armour_max			= ID_string::register_new_unique_ID_by_key("base armour max");
+	ID_string base_evasion_min			= ID_string::register_new_unique_ID_by_key("base evasion min");
+	ID_string base_evasion_max			= ID_string::register_new_unique_ID_by_key("base evasion max");
+	ID_string base_energy_shield_min	= ID_string::register_new_unique_ID_by_key("base energy shield min");
+	ID_string base_energy_shield_max	= ID_string::register_new_unique_ID_by_key("base energy shield max");
+	ID_string item_height				= ID_string::register_new_unique_ID_by_key("item height");
+	ID_string item_width				= ID_string::register_new_unique_ID_by_key("item width");
+	ID_string key						= ID_string::register_new_unique_ID_by_key("key");
+	ID_string worth						= ID_string::register_new_unique_ID_by_key("worth");
+	ID_string base_worth				= ID_string::register_new_unique_ID_by_key("base worth");
 
-	ID_string trash						= ID_string::register_new_ID_by_string("Trash");
-	ID_string common					= ID_string::register_new_ID_by_string("Common");
-	ID_string moderate					= ID_string::register_new_ID_by_string("Moderate");
-	ID_string rare						= ID_string::register_new_ID_by_string("Rare");
-	ID_string expensive					= ID_string::register_new_ID_by_string("Expensive");
-	ID_string very_expensive			= ID_string::register_new_ID_by_string("Very expensive");
+	ID_string trash						= ID_string::register_new_unique_ID_by_key("Trash");
+	ID_string common					= ID_string::register_new_unique_ID_by_key("Common");
+	ID_string moderate					= ID_string::register_new_unique_ID_by_key("Moderate");
+	ID_string rare						= ID_string::register_new_unique_ID_by_key("Rare");
+	ID_string expensive					= ID_string::register_new_unique_ID_by_key("Expensive");
+	ID_string very_expensive			= ID_string::register_new_unique_ID_by_key("Very expensive");
+
+	ID_string item_tag					= ID_string::register_new_unique_ID_by_key("item tag");
+	ID_string all_sockets_white			= ID_string::register_new_unique_ID_by_key("All sockets white");
+	ID_string always_six_linked			= ID_string::register_new_unique_ID_by_key("Always 6-linked");
 }
 
 void EDataActionCollection::action_log_text(Entity* _entity, ECustomData* _custom_data, float _d)
@@ -3063,6 +3069,8 @@ void ETextParser::data_entity_parse_file(std::string _file)
 	//	EInputCore::logger_simple_info("-------");
 	//}
 	//EInputCore::logger_simple_info("");
+
+	std::cout << green << "Loaded and parsed: <" << yellow << _file << green << ">" << std::endl;
 }
 
 void ETextParser::data_read_explicit_file_and_generate_data_entity(std::string _file)
@@ -3243,10 +3251,10 @@ void ETextParser::split_data_entity_list_to_named_structs()
 	}
 	
 
-	for (int i = 0; i < 256; i++)
+	/*for (int i = 0; i < 256; i++)
 	{
-		EInputCore::logger_param("id [" + std::to_string(i) + "]", arr[i]);
-	}
+		EInputCore::logger_param("data entity id [" + std::to_string(i) + "]", arr[i]);
+	}*/
 }
 
 
@@ -3268,7 +3276,7 @@ void ETextParser::do_action(std::string _action_text, std::string _value)
 		if (_action_text == "tag")
 		{
 			last_created_data_tag = new EDataTag();
-			last_created_data_tag->tag_name.set_tag_ID_by_string(_value);
+			last_created_data_tag->tag_name.register_new_string_ID_by_string(_value);
 
 			last_created_data_entity->tag_list.push_back(last_created_data_tag);
 		}
@@ -3279,7 +3287,7 @@ void ETextParser::do_action(std::string _action_text, std::string _value)
 				ID_string
 				new_ID_string;
 
-				new_ID_string.set_tag_ID_by_string(_value);
+				new_ID_string.register_new_string_ID_by_string(_value);
 
 				last_created_data_tag->tag_value_list.push_back(new_ID_string);
 			}
@@ -3521,7 +3529,7 @@ int EStringUtils::safe_convert_string_to_number(std::string _text, int _min, int
 	
 }
 
-const int PRIME_CONST = 431;
+const int PRIME_CONST = 4626623;
 void EStringUtils::split_line_to_array(std::string _line, bool _ignore_spaces)
 {
 	for (int i = 0; i < 512; i++) { string_array[i] = ""; }
@@ -3589,7 +3597,7 @@ int EStringUtils::hashFunction(std::string _input)
 
 	for (int i = 0; i < _input.length(); i++)
 	{
-		hashCode += (_input[i] * (int)pow(PRIME_CONST, i) % 1337) ;
+		hashCode += (_input[i] * (int)pow(PRIME_CONST, i) % 2731) ;
 	}
 
 	return hashCode % 278;
@@ -3694,17 +3702,17 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 			//	search_text = search_text.substr(1);
 			//}
 
-			//for (EDataTag* data_entity_tag : _data_entity->tag_list)
-			//	if (!matched_by_input)
-			//	{
-			//		tag_value = EStringUtils::to_lower(*data_entity_tag->tag_value_list[0]);
-			//		//if (*data_entity_tag->tag_name == "name EN") {EInputCore::logger_param("name EN", ) }
-			//		if ((*data_entity_tag->tag_name == "base name") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-			//		else
-			//			if ((*data_entity_tag->tag_name == "name EN") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-			//			else
-			//				if ((*data_entity_tag->tag_name == "name RU") && (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
-			//	}
+			for (EDataTag* data_entity_tag : _data_entity->tag_list)
+				if (!matched_by_input)
+				{
+					tag_value = EStringUtils::to_lower(data_entity_tag->tag_value_list[0].string_value);
+					//if (*data_entity_tag->tag_name == "name EN") {EInputCore::logger_param("name EN", ) }
+					if ((data_entity_tag->tag_name.ID == ERegisteredStrings::base_name.ID)	&& (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+					else
+					if ((data_entity_tag->tag_name.ID == ERegisteredStrings::name_EN.ID)	&& (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+					else
+					if ((data_entity_tag->tag_name.ID == ERegisteredStrings::name_RU.ID)	&& (tag_value.find(search_text) != std::string::npos)) { matched_by_input = true; }
+				}
 		}
 		else
 		{
@@ -3733,13 +3741,13 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 					//if ((EStringUtils::compare_ignoring_case(*data_entity_tag->tag_name, required_tag_filter.target_tag)))
 					if (data_entity_tag->tag_name.ID == required_tag_filter.target_tag.ID)
 					{
-						//EInputCore::logger_param("tag name", *data_entity_tag->tag_name);
+						//EInputCore::logger_param("tag name", data_entity_tag->tag_name.string_value);
 						required_tag_match = true;
 
 						//empty suitable list means what any value is acceptable
 						if (required_tag_filter.suitable_values.empty())
 						{
-							//EInputCore::logger_simple_info("set as suitable because required list id EMPTY");
+							EInputCore::logger_simple_info("set as suitable because required list id EMPTY");
 							required_tag_value_match = true;
 						}
 						else
@@ -3753,7 +3761,7 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 									(
 										(suitable_DETF.target_value_key.is_empty)
 										||
-										(suitable_DETF.target_value_key.ID == tag_ID)
+										(suitable_DETF.target_value_key.ID == data_entity_tag->tag_value_list[0].ID)
 									)
 								)
 								{
@@ -3775,7 +3783,7 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 
 	}
 
-	return (matched_by_input && required_tag_match && required_tag_value_match);
+	return (matched_by_input && required_tag_match && (required_tag_value_match));
 }
 
 //void EFilterRule::add_default_banned_tag()
@@ -3793,8 +3801,12 @@ bool EFilterRule::matched_by_filter_rule(EDataEntity* _data_entity, EFilterRule*
 
 void ID_string::register_new_ID_string(int _id, std::string _string)
 {
-	
-		ID_string::registered_ID_strings[_id].is_empty = false;
-		ID_string::registered_ID_strings[_id].string_value = _string;
-		ID_string::registered_ID_strings[_id].ID = _id;
+
+	int
+	hash_id = EStringUtils::get_id_by_hash(EStringUtils::to_lower(_string));
+
+	ID_string::HASHED_registered_ID_strings[hash_id][_id].is_empty = false;
+	ID_string::HASHED_registered_ID_strings[hash_id][_id].string_value = _string;
+	ID_string::HASHED_registered_ID_strings[hash_id][_id].ID = last_registered_id;
+	last_registered_id++;
 }

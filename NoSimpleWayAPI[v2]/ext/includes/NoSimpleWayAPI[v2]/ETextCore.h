@@ -28,6 +28,8 @@ public:
 	static ELocalisationText generate_localization_with_base_name(std::string _text);
 	static ELocalisationText generate_localization_only_languages(std::string _text);
 
+	void add_localisation_text_from_another(std::string _prefix, ELocalisationText* _ltext);
+
 	void add_text_to_all_languages(std::string _text);
 };
 #endif

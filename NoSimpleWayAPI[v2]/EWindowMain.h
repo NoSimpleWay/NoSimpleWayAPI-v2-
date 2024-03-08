@@ -1586,7 +1586,7 @@ public:
 	int sockets_count = 0;
 	int links_count = 0;
 
-	int max_sockets = 0;
+	int max_available_sockets = 0;
 
 	int max_stack_size = 1;
 	float stack_multiplier = 1.0f;
